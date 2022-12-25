@@ -6,15 +6,14 @@ archive/issues_009527.json:
     "body": "Assignee: @jasongrout\n\nCC:  @malb\n\nWhen doing `sage -sh`, the result is very, very confusing, since it has the SAGE_ROOT path displayed unlabeled, which causes confusion, and does not show the current path, which also causes confusion.  This patch adds a label and the current path, to help reduce confusion some.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9527\n\n",
     "created_at": "2010-07-17T11:55:26Z",
     "labels": [
-        "misc",
-        "minor",
-        "enhancement"
+        "component: misc",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "improve \"sage -sh\" prompt so it doesn't confuse everybody",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9527",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @jasongrout
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9527
 
 ---
 
-archive/issue_comments_091649.json:
+archive/issue_comments_091495.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-17T12:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91649",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91495",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_091650.json:
+archive/issue_comments_091496.json:
 ```json
 {
     "body": "Attachment [trac_9527.patch](tarball://root/attachments/some-uuid/ticket9527/trac_9527.patch) by @williamstein created at 2010-07-17 13:03:03\n\nfix SAGE_ROOT (a separate bug, I guess)",
     "created_at": "2010-07-17T13:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91650",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91496",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -69,15 +68,15 @@ fix SAGE_ROOT (a separate bug, I guess)
 
 ---
 
-archive/issue_comments_091651.json:
+archive/issue_comments_091497.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-17T13:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91651",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91497",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_091652.json:
+archive/issue_comments_091498.json:
 ```json
 {
     "body": "The patch looks fine. I'd have preferred to have my PS1 to be embedded in the new PS1, i.e. something like this:\n\n\n```\nthis_is_my_prompt$ sage -sh\nSAGE_ROOT=/usr/local/sage-4.3\n(sage subshell) this_is_my_prompt$\n\n\n```\n\nBut it seems this just doesn't work (I tried). This new one is definitely an improvement thus I'll give it a positive review.",
     "created_at": "2010-07-17T13:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91652",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91498",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -116,15 +115,15 @@ But it seems this just doesn't work (I tried). This new one is definitely an imp
 
 ---
 
-archive/issue_comments_091653.json:
+archive/issue_comments_091499.json:
 ```json
 {
     "body": "Replying to [comment:2 malb]:\n> The patch looks fine. I'd have preferred to have my PS1 to be embedded in the new PS1, i.e. something like this:\n> \n> {{{\n> this_is_my_prompt$ sage -sh\n> SAGE_ROOT=/usr/local/sage-4.3\n> (sage subshell) this_is_my_prompt$\n> \n> \n> }}}\n> But it seems this just doesn't work (I tried). \n\nI tried too, but couldn't figure it out. This patch is meant to be a big improvement, that's all.",
     "created_at": "2010-07-17T13:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91653",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91499",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -146,15 +145,15 @@ I tried too, but couldn't figure it out. This patch is meant to be a big improve
 
 ---
 
-archive/issue_comments_091654.json:
+archive/issue_comments_091500.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-22T23:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91654",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/9527#issuecomment-91500",
+    "user": "https://github.com/dandrake"
 }
 ```
 

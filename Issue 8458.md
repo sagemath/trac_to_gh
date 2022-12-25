@@ -6,15 +6,14 @@ archive/issues_008458.json:
     "body": "Assignee: @rlmill\n\nCC:  brunellus\n\nFrom [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/4f822bba45432f7b):\n\n```\nSo, what you are saying is that the iterator for graphs() does not\nreturn independent graphs which can be changed without affecting the\nothers.\nThat does explain what I am seeing and is consistent with Pat\nLeSmith's suggested workaround.\n\nShould this property of the iterators to the generated graphs be\ndocumented?\n\nSo, I think I will try making a copy of just the graphs I want to\nchange or use the list() trick. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8458\n\n",
     "created_at": "2010-03-06T19:18:00Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "iterator for graphs() doesn't return independent graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8458",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: @rlmill
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8458
 
 ---
 
-archive/issue_comments_076130.json:
+archive/issue_comments_076004.json:
 ```json
 {
     "body": "This is an unintended consequence of the fact that when the `graphs(n)` iterator yields a graph, it does not first make a copy. The method of generating graphs is to add on to previously generated graphs in a well-chosen way, and I did not think to make a copy of the graph before having the iterator yield it.\n\nThis shouldn't just be documented, but in fact I think this should be an option to `graphs(n)`. If someone will not modify the graphs in the loop, they can get the speed advantage of not making copies, and someone else who wants to modify them can have the iterator make copies on the fly.",
     "created_at": "2010-03-06T19:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76130",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76004",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -66,15 +65,15 @@ This shouldn't just be documented, but in fact I think this should be an option 
 
 ---
 
-archive/issue_comments_076131.json:
+archive/issue_comments_076005.json:
 ```json
 {
     "body": "I agree with rlm.  I think the default should be to return a copy of the graph, with an optional argument to return the actual graph.",
     "created_at": "2010-03-09T03:36:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76131",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76005",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -84,15 +83,15 @@ I agree with rlm.  I think the default should be to return a copy of the graph, 
 
 ---
 
-archive/issue_comments_076132.json:
+archive/issue_comments_076006.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-01-03T23:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76132",
-    "user": "brunellus"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76006",
+    "user": "https://trac.sagemath.org/admin/accounts/users/brunellus"
 }
 ```
 
@@ -102,15 +101,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_076133.json:
+archive/issue_comments_076007.json:
 ```json
 {
     "body": "Attachment [trac_8458_independent_graphs.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458_independent_graphs.patch) by brunellus created at 2012-01-03 23:10:53\n\nI corrected the main generator. There are several specialized (e.g. tree generator) but I don't think the same problem arises in any of them. Do you agree?",
     "created_at": "2012-01-03T23:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76133",
-    "user": "brunellus"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76007",
+    "user": "https://trac.sagemath.org/admin/accounts/users/brunellus"
 }
 ```
 
@@ -122,15 +121,15 @@ I corrected the main generator. There are several specialized (e.g. tree generat
 
 ---
 
-archive/issue_comments_076134.json:
+archive/issue_comments_076008.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2012-01-29T18:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76134",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76008",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -140,15 +139,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_076135.json:
+archive/issue_comments_076009.json:
 ```json
 {
     "body": "Helloooooo !!!\n\nThis is a good patch, but I do not think the documentation is very clear. What would you think of changing the new argument's name to \"return_copies\" or \"graph_copy\" ? To be honest I took me 2 minutes to understand that this message's title did not mean \"The independent graph is not returned by graphs(n)\" `:-p`\n\nEither way, with a name like \"independent\" it is not very clear that there may be performances issues hidden in this argument.\n\nHere's what I would write. Of course, it's just my advice, so take or leave whatever you want :\n\n\n```\n- ``copy_graphs`` (boolean) -- If set to ``True`` (default) this method makes copies of the graphs before returning them. If set to ``False`` the method returns the graph it is working on. The second alternative is faster, but modifying any of the graph instances returned by the method may break the function's behaviour, as it is using these graphs to compute the next ones : only use ``copy_graph = False`` when you stick to *reading* the graphs returned.\n```\n\n\nPlease tell me what you think `:-)`\n\nNathann",
     "created_at": "2012-01-29T18:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76135",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76009",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -174,15 +173,15 @@ Nathann
 
 ---
 
-archive/issue_comments_076136.json:
+archive/issue_comments_076010.json:
 ```json
 {
     "body": "Arg.... It's all written on one line. Stupid me. Here it is :\n\n```\n- ``copy_graphs`` (boolean) -- If set to ``True`` (default)\n   this method makes copies of the graphs before returning \n   them. If set to ``False`` the method returns the graph it\n   is working on. The second alternative is faster, but modifying\n   any of the graph instances returned by the method may break\n   the function's behaviour, as it is using these graphs to \n   compute the next ones : only use ``copy_graph = False`` when\n   you stick to *reading* the graphs returned.\n```\n",
     "created_at": "2012-01-29T18:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76136",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76010",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -204,15 +203,15 @@ Arg.... It's all written on one line. Stupid me. Here it is :
 
 ---
 
-archive/issue_comments_076137.json:
+archive/issue_comments_076011.json:
 ```json
 {
     "body": "Can I suggest `copy=True`, which is shorter and just as clear in the context?",
     "created_at": "2012-01-30T12:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76137",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76011",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -222,15 +221,15 @@ Can I suggest `copy=True`, which is shorter and just as clear in the context?
 
 ---
 
-archive/issue_comments_076138.json:
+archive/issue_comments_076012.json:
 ```json
 {
     "body": "> Can I suggest `copy=True`, which is shorter and just as clear in the context?\n\n`>_<`\n\nOf course... Much more natural `:-D`\n\nThanks !!\n\nNathann",
     "created_at": "2012-01-30T12:39:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76138",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76012",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -248,15 +247,15 @@ Nathann
 
 ---
 
-archive/issue_comments_076139.json:
+archive/issue_comments_076013.json:
 ```json
 {
     "body": "Attachment [trac_8458_independent_graphs.2.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458_independent_graphs.2.patch) by brunellus created at 2012-01-31 12:34:03\n\nIf you think that \"copy\" is better, I don't mind. I thought that a consumer of the library doesn't care about what is the way we create the graphs (that we copy them), so the relevant property of the output is rather independence. The proposed description is also good.",
     "created_at": "2012-01-31T12:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76139",
-    "user": "brunellus"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76013",
+    "user": "https://trac.sagemath.org/admin/accounts/users/brunellus"
 }
 ```
 
@@ -268,15 +267,15 @@ If you think that "copy" is better, I don't mind. I thought that a consumer of t
 
 ---
 
-archive/issue_comments_076140.json:
+archive/issue_comments_076014.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2012-01-31T12:34:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76140",
-    "user": "brunellus"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76014",
+    "user": "https://trac.sagemath.org/admin/accounts/users/brunellus"
 }
 ```
 
@@ -286,15 +285,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_076141.json:
+archive/issue_comments_076015.json:
 ```json
 {
     "body": "Hellooooooo !!!\n\nWell, with a keyword like \"independent\" the user needs to read the documentation to understand what it precisely means. And with \"copy\" he also knows that there is some complexity question hidden in there `:-)`",
     "created_at": "2012-01-31T14:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76141",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76015",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -306,15 +305,15 @@ Well, with a keyword like "independent" the user needs to read the documentation
 
 ---
 
-archive/issue_comments_076142.json:
+archive/issue_comments_076016.json:
 ```json
 {
     "body": "(for me the patch is ok, but it does not apply on 5.0-beta1. I just reinstalled it, so it seems genuine `:-)`)\n\nNathann",
     "created_at": "2012-01-31T17:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76142",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76016",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -326,15 +325,15 @@ Nathann
 
 ---
 
-archive/issue_comments_076143.json:
+archive/issue_comments_076017.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2012-01-31T17:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76143",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76017",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -344,15 +343,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_076144.json:
+archive/issue_comments_076018.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-01-31T17:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76144",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76018",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -362,15 +361,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_076145.json:
+archive/issue_comments_076019.json:
 ```json
 {
     "body": "Well, I do not like to set tickets back to \"needs work\" in such cases... Here is the same patch rebased on beta1. If it's fine with you too, you can set the ticket to positive_review `:-)`\n\nNathann",
     "created_at": "2012-01-31T17:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76145",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76019",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -382,15 +381,15 @@ Nathann
 
 ---
 
-archive/issue_comments_076146.json:
+archive/issue_comments_076020.json:
 ```json
 {
     "body": "Attachment [trac_8458.patch](tarball://root/attachments/some-uuid/ticket8458/trac_8458.patch) by @nathanncohen created at 2012-01-31 17:44:47",
     "created_at": "2012-01-31T17:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76146",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76020",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -400,15 +399,15 @@ Attachment [trac_8458.patch](tarball://root/attachments/some-uuid/ticket8458/tra
 
 ---
 
-archive/issue_comments_076147.json:
+archive/issue_comments_076021.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-02-03T13:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76147",
-    "user": "brunellus"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76021",
+    "user": "https://trac.sagemath.org/admin/accounts/users/brunellus"
 }
 ```
 
@@ -418,15 +417,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_076148.json:
+archive/issue_comments_076022.json:
 ```json
 {
     "body": "Thank you. :-)",
     "created_at": "2012-02-03T13:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76148",
-    "user": "brunellus"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76022",
+    "user": "https://trac.sagemath.org/admin/accounts/users/brunellus"
 }
 ```
 
@@ -436,15 +435,15 @@ Thank you. :-)
 
 ---
 
-archive/issue_comments_076149.json:
+archive/issue_comments_076023.json:
 ```json
 {
     "body": "Luk\u00e1\u0161: in the future try to remember to add yourself as Author.",
     "created_at": "2012-02-06T15:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76149",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76023",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -454,15 +453,15 @@ Lukáš: in the future try to remember to add yourself as Author.
 
 ---
 
-archive/issue_comments_076150.json:
+archive/issue_comments_076024.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2012-02-06T21:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76150",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8458#issuecomment-76024",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

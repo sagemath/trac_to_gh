@@ -6,15 +6,13 @@ archive/issues_000818.json:
     "body": "Assignee: somebody\n\nI rewrote the prod function in Cython.  Some timings illustrating the improvement:\n\nBEFORE:\nsage: l=[1]*15\nsage: time for i in xrange(10000): _=prod(l)\nCPU times: user 0.18 s, sys: 0.01 s, total: 0.19 s\nWall time: 0.19\n\nAFTER:\nsage: l=[1]*15\nsage: time for i in xrange(10000): _=prod(l)\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06\n\nThose times make it look pretty good, but most real-world multiplications are very dominated by the actual arithmetic.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/818\n\n",
     "created_at": "2007-10-04T01:33:44Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "Convert of prod to Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/818",
-    "user": "jbmohler"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 Assignee: somebody
@@ -44,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/818
 
 ---
 
-archive/issue_comments_005080.json:
+archive/issue_comments_005064.json:
 ```json
 {
     "body": "Attachment [prod.hg](tarball://root/attachments/some-uuid/ticket818/prod.hg) by jbmohler created at 2007-10-04 01:34:05\n\nconvert to cython bundle",
     "created_at": "2007-10-04T01:34:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/818#issuecomment-5080",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/818#issuecomment-5064",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -64,15 +62,15 @@ convert to cython bundle
 
 ---
 
-archive/issue_comments_005081.json:
+archive/issue_comments_005065.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-04T18:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/818#issuecomment-5081",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/818#issuecomment-5065",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_004419.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe following fails \n\n```\nsage: p = gap(Permutation('(1,2,3)'))\nsage: q = gap(Permutation([()]))\nsage: gap.Group([p, q])\n```\n\nbecause \n\n```\nsage: gap(Permutation((1,2,3)))\n[ 2 3 1 ]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4419\n\n",
     "created_at": "2008-11-02T00:17:11Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004419.json:
     "title": "[with patch, needs review] conversion of Permutations to GAP not implemented",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4419",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -45,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4419
 
 ---
 
-archive/issue_comments_032496.json:
+archive/issue_comments_032433.json:
 ```json
 {
     "body": "Attachment [trac_4419.patch](tarball://root/attachments/some-uuid/ticket4419/trac_4419.patch) by @wdjoyner created at 2008-11-02 01:57:42\n\nI don't see how this fixes the original problem. I get this:\n\n\n```\nsage: p = gap(Permutation('(1,2,3)'))                                                                                              \nsage: q = gap(Permutation('()'))                                                                                       \n---------------------------------------------------------------------------                                            \nValueError                                Traceback (most recent call last)\n<snip>\n\n\nValueError: invalid literal for int() with base 10: ''\n```\n\n\nand this:\n\n\n```\nsage: q = gap(Permutation(()))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<snip>\n\nTypeError: not enough arguments for format string\n```\n\n\nIt seems to me you want Permutation to work like\nPermutationGroupElement does here:\n\n```\nsage: p = gap(PermutationGroupElement('(1,2,3)'))\nsage: q = gap(PermutationGroupElement('()'))\nsage: gap.Group([p, q])\nGroup( [ (1,2,3), () ] )\nsage: gap.Group([p]) == gap.Group([p, q])\nTrue\n```\n\nIs that correct?",
     "created_at": "2008-11-02T01:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32496",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32433",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -105,15 +105,15 @@ Is that correct?
 
 ---
 
-archive/issue_comments_032497.json:
+archive/issue_comments_032434.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-11-02T03:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32497",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32434",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -123,15 +123,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_032498.json:
+archive/issue_comments_032435.json:
 ```json
 {
     "body": "Actually, the original issue was this:\n\n\n```\nsage: p = gap(Permutation('(1,2,3)'))\nsage: q = gap(Permutation([()]))\nsage: gap.Group([p, q])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n```\n\n\nThose things that you encountered are \"bugs\" in the constructor of Permutation.  I always construct Permutations from their list notation.",
     "created_at": "2008-11-02T03:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32498",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32435",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -153,15 +153,15 @@ Those things that you encountered are "bugs" in the constructor of Permutation. 
 
 ---
 
-archive/issue_comments_032499.json:
+archive/issue_comments_032436.json:
 ```json
 {
     "body": "This patch should get a positive review because it fixes the conversion to gap problem:\n\n\n```\nsage: p = Permutation('(1,2,3)')\nsage: q = Permutation([()])\nsage: gap.Group([p,q])\nGroup( [ (1,2,3), () ] )\n```\n\n\nThe other issues noticed by wdj are problems with the Permutations constructor function, and I will open a new ticket for them.",
     "created_at": "2008-11-20T20:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32499",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32436",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -182,15 +182,15 @@ The other issues noticed by wdj are problems with the Permutations constructor f
 
 ---
 
-archive/issue_comments_032500.json:
+archive/issue_comments_032437.json:
 ```json
 {
     "body": "The new ticket is here: #4569",
     "created_at": "2008-11-20T20:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32500",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32437",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -200,15 +200,15 @@ The new ticket is here: #4569
 
 ---
 
-archive/issue_comments_032501.json:
+archive/issue_comments_032438.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-21T10:56:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32501",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32438",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -218,15 +218,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_032502.json:
+archive/issue_comments_032439.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1.alpha0",
     "created_at": "2008-11-21T10:56:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32502",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4419#issuecomment-32439",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

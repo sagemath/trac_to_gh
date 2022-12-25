@@ -6,15 +6,13 @@ archive/issues_009795.json:
     "body": "Assignee: jason, was\n\nCC:  @kcrisman\n\nSee http://ask.sagemath.org/question/54/how-to-get-the-diagonal-of-a-matrix\n\nIssue created by migration from https://trac.sagemath.org/ticket/9796\n\n",
     "created_at": "2010-08-24T15:54:40Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Add a \"diagonal\" method for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9795",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: jason, was
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9796
 
 ---
 
-archive/issue_comments_096167.json:
+archive/issue_comments_096008.json:
 ```json
 {
     "body": "Attachment [trac_9796-matrix-diagonal-elements.patch](tarball://root/attachments/some-uuid/ticket9796/trac_9796-matrix-diagonal-elements.patch) by @rbeezer created at 2011-01-13 04:29:05",
     "created_at": "2011-01-13T04:29:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96167",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96008",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -49,15 +47,15 @@ Attachment [trac_9796-matrix-diagonal-elements.patch](tarball://root/attachments
 
 ---
 
-archive/issue_comments_096168.json:
+archive/issue_comments_096009.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-01-29T03:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96168",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96009",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -67,15 +65,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_096169.json:
+archive/issue_comments_096010.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"beginner\".",
     "created_at": "2011-01-29T03:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96169",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96010",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing keywords from "" to "beginner".
 
 ---
 
-archive/issue_comments_096170.json:
+archive/issue_comments_096011.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-02-04T22:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96170",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96011",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -103,15 +101,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_096171.json:
+archive/issue_comments_096012.json:
 ```json
 {
     "body": "This looks good.  Running:\n\n```\nsage -testall -long\n```\n\ngives that all doctests pass except five unrelated tests (in sage/plot/plot3d/tachyon.py and sage/plot/plot3d/base.pyx) that also fail in an unpatched copy of Sage (version 4.6.1, built from source on 64-bit Linux).",
     "created_at": "2011-02-04T22:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96171",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96012",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -127,15 +125,15 @@ gives that all doctests pass except five unrelated tests (in sage/plot/plot3d/ta
 
 ---
 
-archive/issue_comments_096172.json:
+archive/issue_comments_096013.json:
 ```json
 {
     "body": "Replying to [comment:3 tomc]:\n\nThanks for the review, Tom - the help is appreciated.\n\nRob",
     "created_at": "2011-02-05T23:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96172",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96013",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -149,15 +147,15 @@ Rob
 
 ---
 
-archive/issue_comments_096173.json:
+archive/issue_comments_096014.json:
 ```json
 {
     "body": "I hope it's okay that I 'guessed' the reviewer's name from the trac main page!",
     "created_at": "2011-02-06T01:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96173",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96014",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -167,15 +165,15 @@ I hope it's okay that I 'guessed' the reviewer's name from the trac main page!
 
 ---
 
-archive/issue_comments_096174.json:
+archive/issue_comments_096015.json:
 ```json
 {
     "body": "Replying to [comment:5 kcrisman]:\n> I hope it's okay that I 'guessed' the reviewer's name from the trac main page!\n\nI suppose so, I do that all the time.",
     "created_at": "2011-02-07T08:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96174",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96015",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -188,15 +186,15 @@ I suppose so, I do that all the time.
 
 ---
 
-archive/issue_comments_096175.json:
+archive/issue_comments_096016.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-02-16T08:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96175",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9795#issuecomment-96016",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

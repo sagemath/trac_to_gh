@@ -6,15 +6,14 @@ archive/issues_000230.json:
     "body": "Assignee: boothby\n\nIf in a notebook I use:\n\n```\n%sh\ncat > hello.spyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\nand then\n\n```\nload \"hello.spyx\"\n```\n\nthe notebook hangs. In the server log I get:\n\n```\n  ...\n  File \"/usr/local/sage/default/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 957, in _load_file\n    t = self.do_sage_extensions_preparsing(t,\nUnboundLocalError: local variable 't' referenced before assignment\n```\n\nThis is not due to the file not being found: If I try to load or attach a non-existent file, I get an appropriate error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/230\n\n",
     "created_at": "2007-01-29T19:12:08Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "Notebook \"load\" or \"attach\" does not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/230",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 Assignee: boothby
@@ -57,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/230
 
 ---
 
-archive/issue_comments_001021.json:
+archive/issue_comments_001018.json:
 ```json
 {
     "body": "Now, instead of an error, one gets a not implemented error.  I've changed this from\ndefect to feature request. \n\nNote the correct input should be:\n\n\n```\n%sh\ncd\ncat > hello.spyx << EOF\ndef hello(name):\n    \"\"\"\n    Print hello with the given name.\n    \"\"\"\n    print(\"Hello %s\"%name)\nEOF\n```\n\n\n```\nload \"hello.spyx\"\n```\n",
     "created_at": "2007-08-16T05:19:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1021",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1018",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -97,15 +96,15 @@ load "hello.spyx"
 
 ---
 
-archive/issue_comments_001022.json:
+archive/issue_comments_001019.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-08-16T05:19:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1022",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1019",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -115,15 +114,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_001023.json:
+archive/issue_comments_001020.json:
 ```json
 {
     "body": "I can reproduce the problem, but the error message has changed:\n\n```\nload \"hello.spyx\"\nError loading /tmp/Work2/sage-2.8.1/sage-2.8.1/hello.spyx -- file not\nfound\n```\n\n\nThe spyx file can actually be found in $SAGE_ROOT/data/extcode/sage/hello.spyx\n\nThis bug also seems to be duplicate of #236.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-21T12:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1023",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1020",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -148,15 +147,15 @@ Michael
 
 ---
 
-archive/issue_comments_001024.json:
+archive/issue_comments_001021.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2007-09-06T22:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1024",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/230#issuecomment-1021",
+    "user": "https://github.com/williamstein"
 }
 ```
 

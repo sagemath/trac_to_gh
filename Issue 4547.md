@@ -6,15 +6,14 @@ archive/issues_004547.json:
     "body": "Assignee: boothby\n\nCC:  @jasongrout\n\nThis causes Apache rewriting for example to just display plain text instead of HTML.  This hasn't been an issue because browsers are relatively smart about dealing with unspecified Content-Types.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4547\n\n",
     "created_at": "2008-11-19T15:01:12Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "The Sage Notebook doesn't specify the Content-Type header in its responses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4547",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: boothby
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4547
 
 ---
 
-archive/issue_comments_034058.json:
+archive/issue_comments_033992.json:
 ```json
 {
     "body": "I attached a patch (which may or may not apply to the current version) which only fixes the problem for HTML pages.  CSS, Javascript, etc. should also be handled.",
     "created_at": "2008-11-19T15:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34058",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-33992",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ I attached a patch (which may or may not apply to the current version) which onl
 
 ---
 
-archive/issue_comments_034059.json:
+archive/issue_comments_033993.json:
 ```json
 {
     "body": "This *has* been an issue.   I have been working around by putting this in my httpd.conf:\n\n```\n\n<VirtualHost *>\n        ServerName sagenb.org\n        ProxyPass    / http://sagenb.org:8000/\n        ProxyPassReverse / http://sagenb.org:8000/\n\n        <Location />\n           DefaultType text/html\n        </Location>\n</VirtualHost>\n\n\n```\n",
     "created_at": "2008-11-20T05:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34059",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-33993",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -83,15 +82,15 @@ This *has* been an issue.   I have been working around by putting this in my htt
 
 ---
 
-archive/issue_comments_034060.json:
+archive/issue_comments_033994.json:
 ```json
 {
     "body": "I rebased Mike's patch against 3.3.alpha6, and added a \"charset: utf-8\" bit; this ticket is in some sense the other half of #5211.\n\nThis ticket was originally motivated by Apache rewriting; I'm here because some users have UTF-8 text in their worksheets and browsers are not always figuring out the correct encoding. If my patch fixes the encoding/browser problems, perhaps we should merge this ticket and open another for adding Content-Type headers to CSS, Javascript, and so on.",
     "created_at": "2009-02-10T09:42:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34060",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-33994",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -103,15 +102,15 @@ This ticket was originally motivated by Apache rewriting; I'm here because some 
 
 ---
 
-archive/issue_comments_034061.json:
+archive/issue_comments_033995.json:
 ```json
 {
     "body": "Since you rebased the patch please change the summary to \"needs review\" as I just did. Otherwise it will just bitrot since no one will know it is even there :(\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T09:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34061",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-33995",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -125,15 +124,15 @@ Michael
 
 ---
 
-archive/issue_comments_034062.json:
+archive/issue_comments_033996.json:
 ```json
 {
     "body": "Well, looking around further into the ticket history it seems that additional work is needed. But if this patch does get a positive review I would recommend to open another ticket to deal with CSS and javasscript encoding settings, even though this is somewhat less pressing (who adds  utf-8 characters into CSS or javasscript?).\n\nMike: any take on this?\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T09:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34062",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-33996",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -149,15 +148,15 @@ Michael
 
 ---
 
-archive/issue_comments_034063.json:
+archive/issue_comments_033997.json:
 ```json
 {
     "body": "I've rebased the patch against 3.4.alpha0 -- that's \"trac_4547-ddrake.2.patch\", which is the only one of the three patches which needs to be applied.",
     "created_at": "2009-03-02T06:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34063",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-33997",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -167,15 +166,15 @@ I've rebased the patch against 3.4.alpha0 -- that's "trac_4547-ddrake.2.patch", 
 
 ---
 
-archive/issue_comments_034064.json:
+archive/issue_comments_033998.json:
 ```json
 {
     "body": "apply trac-4547_3.patch",
     "created_at": "2009-03-16T20:15:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34064",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-33998",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -185,15 +184,15 @@ apply trac-4547_3.patch
 
 ---
 
-archive/issue_comments_034065.json:
+archive/issue_comments_033999.json:
 ```json
 {
     "body": "Depends on #4135",
     "created_at": "2009-03-16T20:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34065",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-33999",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -203,15 +202,15 @@ Depends on #4135
 
 ---
 
-archive/issue_comments_034066.json:
+archive/issue_comments_034000.json:
 ```json
 {
     "body": "I've noticed that some javascript and css doesn't have content-type headers being sent (but some do); should we open separate tickets for those as well?\n\nAlso, Timothy, can you take a look at #5211 as well? That adds a http-equiv header to the html itself, just to make sure browsers really do understand that we're sending utf8.",
     "created_at": "2009-03-16T23:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34066",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34000",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -223,15 +222,15 @@ Also, Timothy, can you take a look at #5211 as well? That adds a http-equiv head
 
 ---
 
-archive/issue_comments_034067.json:
+archive/issue_comments_034001.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-03-19T12:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34067",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34001",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -241,15 +240,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_034068.json:
+archive/issue_comments_034002.json:
 ```json
 {
     "body": "I've attached trac_4547.patch which applies cleanly against 3.4.  Note that this patch DOES NOT depend on #4135.\n\nWe should open new tickets for CSS / Javascript / etc.",
     "created_at": "2009-03-19T12:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34068",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34002",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -261,15 +260,15 @@ We should open new tickets for CSS / Javascript / etc.
 
 ---
 
-archive/issue_comments_034069.json:
+archive/issue_comments_034003.json:
 ```json
 {
     "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-03-19T12:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34069",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34003",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -279,15 +278,15 @@ Changing assignee from boothby to @mwhansen.
 
 ---
 
-archive/issue_comments_034070.json:
+archive/issue_comments_034004.json:
 ```json
 {
     "body": "This patch requires two trivial fixes unless these are provided via some other patch as a dependency:\n\n```\nsage-3.4.1.alpha0$ ./sage -t -long devel/sage/sage/server/notebook/twist.py \nsage -t -long \"devel/sage/sage/server/notebook/twist.py\"    \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/server/notebook/twist.py\", line 139:\n    sage: response.headers\nExpected:\n    <Headers: Raw: {'content-type': ['text/html']} Parsed: {'content-type': <RecalcNeeded>}>\nGot:\n    <Headers: Raw: {'content-type': ['text/html; charset=utf-8']} Parsed: {'content-type': <RecalcNeeded>}>\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.alpha0/devel/sage/sage/server/notebook/twist.py\", line 1511:\n    sage: E.render(None)\nExpected:\n    <twisted.web2.HTMLResponse code=200, streamlen=...>\nGot:\n    <twisted.web2.http.Response code=200, streamlen=240>\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T18:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34070",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34004",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -322,15 +321,15 @@ Michael
 
 ---
 
-archive/issue_comments_034071.json:
+archive/issue_comments_034005.json:
 ```json
 {
     "body": "Attachment [trac_4547.patch](tarball://root/attachments/some-uuid/ticket4547/trac_4547.patch) by mabshoff created at 2009-03-23 21:52:13\n\nUpdate version of mhansen's patch that does pass doctests",
     "created_at": "2009-03-23T21:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34071",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34005",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -342,15 +341,15 @@ Update version of mhansen's patch that does pass doctests
 
 ---
 
-archive/issue_comments_034072.json:
+archive/issue_comments_034006.json:
 ```json
 {
     "body": "How on earth can this patch get a positive review when it doesn't even pass doctests for the file it patches?\n\nI have update mhansen's patch to pass doctests.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T21:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34072",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34006",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -366,15 +365,15 @@ Michael
 
 ---
 
-archive/issue_comments_034073.json:
+archive/issue_comments_034007.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T21:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34073",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34007",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -388,15 +387,15 @@ Michael
 
 ---
 
-archive/issue_comments_034074.json:
+archive/issue_comments_034008.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-23T21:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4547",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34074",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4547#issuecomment-34008",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003038.json:
     "body": "Assignee: @timabbott\n\nAttached is the patch needed to get sage to build with a packaged polybori and zn_poly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3038\n\n",
     "created_at": "2008-04-27T02:15:40Z",
     "labels": [
-        "debian-package",
-        "blocker",
-        "enhancement"
+        "component: debian-package",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "[with patch; needs review] SAGE setup.py fixes for using Debian packaged polybori, zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3038",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3038
 
 ---
 
-archive/issue_comments_020906.json:
+archive/issue_comments_020863.json:
 ```json
 {
     "body": "Attachment [sage-include-dirs.patch](tarball://root/attachments/some-uuid/ticket3038/sage-include-dirs.patch) by @timabbott created at 2008-04-27 02:15:45",
     "created_at": "2008-04-27T02:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20906",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20863",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [sage-include-dirs.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_020907.json:
+archive/issue_comments_020864.json:
 ```json
 {
     "body": "Patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-27T02:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20907",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20864",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Michael
 
 ---
 
-archive/issue_comments_020908.json:
+archive/issue_comments_020865.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.alpha1",
     "created_at": "2008-04-27T02:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20908",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20865",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +86,15 @@ Merged in Sage 3.0.1.alpha1
 
 ---
 
-archive/issue_comments_020909.json:
+archive/issue_comments_020866.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-27T02:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20909",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3038#issuecomment-20866",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

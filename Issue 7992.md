@@ -6,14 +6,13 @@ archive/issues_007992.json:
     "body": "Assignee: @JohnCremona\n\n`A 2-descent didn't not complete successfully`\n\nIssue created by migration from https://trac.sagemath.org/ticket/7992\n\n",
     "created_at": "2010-01-19T04:46:19Z",
     "labels": [
-        "elliptic curves",
-        "major",
+        "component: elliptic curves",
         "bug"
     ],
     "title": "typo in sage/libs/mwrank/interface.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7992",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @JohnCremona
@@ -28,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7992
 
 ---
 
-archive/issue_comments_069800.json:
+archive/issue_comments_069680.json:
 ```json
 {
     "body": "Applies to 4.3.1.rc0",
     "created_at": "2010-01-19T09:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69800",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69680",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -46,15 +45,15 @@ Applies to 4.3.1.rc0
 
 ---
 
-archive/issue_comments_069801.json:
+archive/issue_comments_069681.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-01-19T09:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69801",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69681",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -64,15 +63,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_069802.json:
+archive/issue_comments_069682.json:
 ```json
 {
     "body": "Attachment [trac_7992-typo.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.patch) by @JohnCremona created at 2010-01-19 09:22:05\n\nPatch attached.  As far as I can see this message does not appear in a doctest.  Which means that I should add a doctest for it, hence not ready for review yet.",
     "created_at": "2010-01-19T09:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69802",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69682",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -84,15 +83,15 @@ Patch attached.  As far as I can see this message does not appear in a doctest. 
 
 ---
 
-archive/issue_comments_069803.json:
+archive/issue_comments_069683.json:
 ```json
 {
     "body": "replaces previous",
     "created_at": "2010-01-19T09:35:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69803",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69683",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -102,15 +101,15 @@ replaces previous
 
 ---
 
-archive/issue_comments_069804.json:
+archive/issue_comments_069684.json:
 ```json
 {
     "body": "Attachment [trac_7992-typo.2.patch](tarball://root/attachments/some-uuid/ticket7992/trac_7992-typo.2.patch) by @JohnCremona created at 2010-01-19 09:38:00\n\nNew patch adds doctest (one showing failure and one ok).\n\nI don't know why the output of the RuntimeError does not include the string (the one where the typo was fixed).  Maybe the review does?",
     "created_at": "2010-01-19T09:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69804",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69684",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -124,15 +123,15 @@ I don't know why the output of the RuntimeError does not include the string (the
 
 ---
 
-archive/issue_comments_069805.json:
+archive/issue_comments_069685.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-01-19T09:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69805",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69685",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -142,15 +141,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_069806.json:
+archive/issue_comments_069686.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-19T09:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69806",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69686",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -160,15 +159,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_069807.json:
+archive/issue_comments_069687.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-19T20:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69807",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69687",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -178,15 +177,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069808.json:
+archive/issue_comments_069688.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-19T20:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69808",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7992#issuecomment-69688",
+    "user": "https://github.com/rlmill"
 }
 ```
 

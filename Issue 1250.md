@@ -6,15 +6,14 @@ archive/issues_001250.json:
     "body": "Assignee: @malb\n\neasy fix.  use _sig_on / _sig_off. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1250\n\n",
     "created_at": "2007-11-23T21:28:21Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "[with patch] multivariate polynomial factorization -- control-c to cancel out doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1250",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @malb
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1250
 
 ---
 
-archive/issue_comments_007828.json:
+archive/issue_comments_007805.json:
 ```json
 {
     "body": "Attachment [trac1250.patch](tarball://root/attachments/some-uuid/ticket1250/trac1250.patch) by @williamstein created at 2007-11-23 21:30:33",
     "created_at": "2007-11-23T21:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1250",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1250#issuecomment-7828",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1250#issuecomment-7805",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac1250.patch](tarball://root/attachments/some-uuid/ticket1250/trac
 
 ---
 
-archive/issue_comments_007829.json:
+archive/issue_comments_007806.json:
 ```json
 {
     "body": "Merged in 2.8.14.rc0.",
     "created_at": "2007-11-24T10:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1250",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1250#issuecomment-7829",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1250#issuecomment-7806",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -65,15 +64,15 @@ Merged in 2.8.14.rc0.
 
 ---
 
-archive/issue_comments_007830.json:
+archive/issue_comments_007807.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-24T10:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1250",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1250#issuecomment-7830",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1250#issuecomment-7807",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

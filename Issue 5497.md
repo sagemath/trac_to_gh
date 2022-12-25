@@ -6,7 +6,7 @@ archive/issues_005497.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nCurrently the user can edit/start the same worksheet multiple times. This is bad.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5497\n\n",
     "created_at": "2009-03-12T04:18:37Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005497.json:
     "title": "notebook: make sure each worksheet can only run once",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5497",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: boothby
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5497
 
 ---
 
-archive/issue_comments_042702.json:
+archive/issue_comments_042619.json:
 ```json
 {
     "body": "I think #7254 (and #7362) address the problem.  Should we close this ticket?",
     "created_at": "2009-11-01T01:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42702",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42619",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -53,15 +53,15 @@ I think #7254 (and #7362) address the problem.  Should we close this ticket?
 
 ---
 
-archive/issue_comments_042703.json:
+archive/issue_comments_042620.json:
 ```json
 {
     "body": "As stated by mpatel, #7254 and #7362 already address this problem. Please close this.",
     "created_at": "2009-11-15T12:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42703",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42620",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -71,15 +71,15 @@ As stated by mpatel, #7254 and #7362 already address this problem. Please close 
 
 ---
 
-archive/issue_comments_042704.json:
+archive/issue_comments_042621.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-11-15T13:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42704",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5497#issuecomment-42621",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

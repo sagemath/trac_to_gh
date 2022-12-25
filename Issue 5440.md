@@ -6,7 +6,7 @@ archive/issues_005440.json:
     "body": "Assignee: boothby\n\nIn the notebook, if one does:\n\n  %magma \n  quit;\n\nthen\n\n  %magma\n  1+1\n\none gets an error (the terminated magma process \napparently does not get restarted).\n\nIt works fine in the shell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5440\n\n",
     "created_at": "2009-03-05T16:26:39Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005440.json:
     "title": "Failure to restart %magma in notebook.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5440",
-    "user": "kohel"
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 Assignee: boothby
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5440
 
 ---
 
-archive/issue_comments_042081.json:
+archive/issue_comments_041999.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-03-29T02:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5440#issuecomment-42081",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5440#issuecomment-41999",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -60,15 +60,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_042082.json:
+archive/issue_comments_042000.json:
 ```json
 {
     "body": "Closing deprecated notebook tickets",
     "created_at": "2020-03-29T02:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5440#issuecomment-42082",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5440#issuecomment-42000",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

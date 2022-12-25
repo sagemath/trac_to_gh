@@ -6,15 +6,13 @@ archive/issues_000634.json:
     "body": "Assignee: mabshoff\n\nTitel says it all.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/634\n\n",
     "created_at": "2007-09-10T04:06:28Z",
     "labels": [
-        "interfaces",
-        "major",
-        "enhancement"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "Implement \"sage -experimental\" analog to \"sage -optional\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/634",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/634
 
 ---
 
-archive/issue_comments_003263.json:
+archive/issue_comments_003250.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-10T04:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3263",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3250",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_003264.json:
+archive/issue_comments_003251.json:
 ```json
 {
     "body": "To do this:\n\n1. Rename local/bin/sage-list-optional to something like local/bin/sage-list-packages, and change it slightly (change the word \"optional\" to sys.argv[1])\n\n2. Make sage-list-optional just be the 2-line program\n         sage-list-packages optional\n\n3. Then sage -experimental and sage -standard are both very easy.  Also implement standard_packages() and experimental_packages() as saag functions, kind of like optional_packages() right now.",
     "created_at": "2007-09-10T22:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3264",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3251",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -76,15 +74,15 @@ To do this:
 
 ---
 
-archive/issue_comments_003265.json:
+archive/issue_comments_003252.json:
 ```json
 {
     "body": "Well, I haven't done the above, but at\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/sage-2.8.4.1-add_-experimental_flag.patch\n\nyou can find the version that does code duplication for now.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-13T03:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3265",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3252",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -102,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_003266.json:
+archive/issue_comments_003253.json:
 ```json
 {
     "body": "I've merged the above in for sage-2.8.4.2.  For sage-2.9 you could remove the code duplication.",
     "created_at": "2007-09-13T05:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3266",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3253",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -120,15 +118,15 @@ I've merged the above in for sage-2.8.4.2.  For sage-2.9 you could remove the co
 
 ---
 
-archive/issue_comments_003267.json:
+archive/issue_comments_003254.json:
 ```json
 {
     "body": "Okay, here is the code merge for the sage scripts:\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-add_-standard-option-to-sage-sage.patch\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-factor-out-package-listing-code.patch\n\nNow 3) is left. I will do that probably later today.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-15T12:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3267",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3254",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -147,15 +145,15 @@ Michael
 
 ---
 
-archive/issue_comments_003268.json:
+archive/issue_comments_003255.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-15T20:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3268",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3255",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -165,15 +163,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_003269.json:
+archive/issue_comments_003256.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-09-15T20:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3269",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3256",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -183,15 +181,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_003270.json:
+archive/issue_comments_003257.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-09-15T20:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3270",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3257",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -201,15 +199,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_003271.json:
+archive/issue_comments_003258.json:
 ```json
 {
     "body": "And the python bit of the bugfix:\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-import-experimental-and-standard-in-all.py.patch\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-add-experimental-and-standard-to-package.py.patch\n\nCheers,\n\nMichael",
     "created_at": "2007-09-15T22:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3271",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3258",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -226,15 +224,15 @@ Michael
 
 ---
 
-archive/issue_comments_003272.json:
+archive/issue_comments_003259.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-15T22:44:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/634",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3272",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/634#issuecomment-3259",
+    "user": "https://github.com/williamstein"
 }
 ```
 

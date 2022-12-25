@@ -6,15 +6,14 @@ archive/issues_008776.json:
     "body": "Assignee: jason, was\n\nCC:  @kcrisman schymans @JohnCremona\n\nI think Cremona's email says it best:\n\n```\nFor the first time, I just tried using the \"Undo\" function on a\nworksheet since I had messed something up.  But all the revisions I\nwas offered, even those from a day ago, look the same as the current\nversion!\n\nThis is 4.3.5 running on a 64-bit ubuntu server.\n\nI have found it very useful that my students can work on something in\na worksheet owned by them, and then share it with me, so that when\nthey come to see me to talk about it we can go through it in detail on\nmy own computer at our meeting.  (This is really a fantastic feature).\n But just now I was having a look at a student's worksheet the day\nbefore our meeting, and made some changed to it which I later\nregretted and tried to revert.  Without success....\n\nAny suggestions welcome!\n\nJohn Cremona\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8776\n\n",
     "created_at": "2010-04-27T04:38:16Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook: sage notebook undo doesn't really work, due to not enough (=no) automatic snapshots, or other bugs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8776",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: jason, was
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8776
 
 ---
 
-archive/issue_comments_080344.json:
+archive/issue_comments_080212.json:
 ```json
 {
     "body": "Depends on #9428. Fixes the given issue.",
     "created_at": "2010-09-10T03:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80344",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80212",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -71,15 +70,15 @@ Depends on #9428. Fixes the given issue.
 
 ---
 
-archive/issue_comments_080345.json:
+archive/issue_comments_080213.json:
 ```json
 {
     "body": "Attachment [trac_8776-sagenb-undo.2.patch](tarball://root/attachments/some-uuid/ticket8776/trac_8776-sagenb-undo.2.patch) by @TimDumol created at 2010-09-11 02:50:14\n\nDepends on #9428. Rebase on new #9428. Replaces previous version.",
     "created_at": "2010-09-11T02:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80345",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80213",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -91,15 +90,15 @@ Depends on #9428. Rebase on new #9428. Replaces previous version.
 
 ---
 
-archive/issue_comments_080346.json:
+archive/issue_comments_080214.json:
 ```json
 {
     "body": "Will it be relatively easy to remove the dependency on #9428?  I would imagine so.  Also, this has been reported upstream at [this link](http://code.google.com/p/sagenb/issues/detail?id=59).",
     "created_at": "2011-10-11T15:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80346",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80214",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -109,15 +108,15 @@ Will it be relatively easy to remove the dependency on #9428?  I would imagine s
 
 ---
 
-archive/issue_comments_080347.json:
+archive/issue_comments_080215.json:
 ```json
 {
     "body": "Maybe it was a stupid thing to try, but the patch does not apply to sage 4.7.1. Here is the output I get:\n\n\n```\nsage: hg_sage.apply(\"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\")\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg import   \"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\"\napplying /home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\ninternal patcher failed\nplease report details to http://mercurial.selenic.com/bts/\nor mercurial@selenic.com\n/home/uname/Programs/sage-test/local/bin/patch: **** Only garbage was found in the patch input.\nabort: patch command failed: exited with status 512\n```\n\n\nIs this a problem with mercurial as suggested in the output, or with the patch under the current sage?\n\nCheers\nStan",
     "created_at": "2011-10-12T07:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80347",
-    "user": "schymans"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80215",
+    "user": "https://trac.sagemath.org/admin/accounts/users/schymans"
 }
 ```
 
@@ -147,15 +146,15 @@ Stan
 
 ---
 
-archive/issue_comments_080348.json:
+archive/issue_comments_080216.json:
 ```json
 {
     "body": "?  What is `/home/uname/Downloads`?    \n\nOh, I see what happened.  You applied the file you found at [http://trac.sagemath.org/sage_trac/attachment/ticket/8776/trac_8776-sagenb-undo.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8776/trac_8776-sagenb-undo.2.patch), but it turns out that is really an HTML file.  What you want is the **raw** patch, which is at [http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8776/trac_8776-sagenb-undo.2.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8776/trac_8776-sagenb-undo.2.patch).  That is the little \"download\" graphic next to the name of the patch in the list of attachments to this ticket.  You might as well try this one, though I doubt it will apply either :)  But it's worth trying!",
     "created_at": "2011-10-12T12:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80348",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80216",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -167,15 +166,15 @@ Oh, I see what happened.  You applied the file you found at [http://trac.sagemat
 
 ---
 
-archive/issue_comments_080349.json:
+archive/issue_comments_080217.json:
 ```json
 {
     "body": "Thanks, Jason!\n\nI did as you said and the result was as predicted: the patch failed to apply, but maybe for the wrong reasons again. Does the following error message help?\n\n\n```\nsage: hg_sage.apply(\"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\")\napplying /home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\nunable to find 'sagenb/notebook/worksheet.py' for patching\n3 out of 3 hunks FAILED -- saving rejects to file sagenb/notebook/worksheet.py.rej\nabort: patch failed to apply\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg status\ncd \"/home/uname/Programs/sage-test/devel/sage\" && hg import   \"/home/uname/Downloads/sage/trac_8776-sagenb-undo.2.patch\"\n\n```\n\n/home/uname/Programs/sage-test is my sage directory, in which I created a clone called sage-test. I tried to apply the patch to the clone, which should be in /home/uname/Programs/sage-test/devel/sage-test/..., but there is indeed no worksheet.py.\n\nI found worksheet.py in ~/Programs/sage-test/devel/sagenb/sagenb/notebook/ (note the nested sagenb/sagenb/), whereas the directory ~/Programs/sage-test/devel/sage-test/sagenb/notebook/ in my sandbox only contains worksheet.py.rej. There is also no ~/Programs/sage-test/devel/sage-test/sagenb/sagenb/, so the clone does not seem to have the same directory structure as the original. Anyway, even if I try to apply the patch to the main branch, I get the same error message, probably because it is looking in devel/sagenb/notebook/ and not in devel/sagenb/sagenb/notebook/. I'm confused.",
     "created_at": "2011-10-13T08:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80349",
-    "user": "schymans"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80217",
+    "user": "https://trac.sagemath.org/admin/accounts/users/schymans"
 }
 ```
 
@@ -204,15 +203,15 @@ I found worksheet.py in ~/Programs/sage-test/devel/sagenb/sagenb/notebook/ (note
 
 ---
 
-archive/issue_comments_080350.json:
+archive/issue_comments_080218.json:
 ```json
 {
     "body": "> Thanks, Jason!\n\nThis is kcrisman :)\n\n> I did as you said and the result was as predicted: the patch failed to apply, but maybe for the wrong reasons again. Does the following error message help?\n\nYes, because you didn't follow my instructions exactly ;-) though those were on the sage-notebook list, not this ticket.\n\n* Log in to a command line Sage.\n* type **exactly** the following:\n\n```\nhg_sagenb.import_patch(\"http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8776/trac_8776-sagenb-undo.2.patch\")\n```\n\n   and see what happens.  \n\nNote the \"hg_sagenb\" instead of \"hg_sage\".  We moved a lot of stuff outside of the devel/sage/ directory into the devel/sagenb directory a while ago, so this is necessary.  Hopefully this will at least give a more informative message.  Thanks for trying it out - you're on your way to becoming a Sage developer!",
     "created_at": "2011-10-13T13:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80350",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80218",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -239,15 +238,15 @@ Note the "hg_sagenb" instead of "hg_sage".  We moved a lot of stuff outside of t
 
 ---
 
-archive/issue_comments_080351.json:
+archive/issue_comments_080219.json:
 ```json
 {
     "body": "I still don't understand why downloading the raw patch and then patching did not work, whereas using the link did, but thanks for the explicit tip, kcrisman! Here is the output:\n\n\n```\napplying /home/uname/.sage/temp/cname/14067/tmp_0.patch\npatching file sagenb/notebook/worksheet.py\nHunk #3 succeeded at 1986 with fuzz 2 (offset -8 lines).\n\n```\n\nDoes this imply that the patch is applied now? If it does, then it also implies that the patch does not solve the issue of identical snapshots, as they are still all identical if I create a few while making changes to a worksheet.",
     "created_at": "2011-10-13T14:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80351",
-    "user": "schymans"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80219",
+    "user": "https://trac.sagemath.org/admin/accounts/users/schymans"
 }
 ```
 
@@ -267,15 +266,15 @@ Does this imply that the patch is applied now? If it does, then it also implies 
 
 ---
 
-archive/issue_comments_080352.json:
+archive/issue_comments_080220.json:
 ```json
 {
     "body": "Yes, the patch should be applied.  However, you may still have to build Sage again.  Do the following (this is also in the devel instructions).\n\n* Quit Sage.\n* Instead of calling Sage however you usually do (e.g., \n\n``` \n/path/to/sage\n```\n\n   do \n\n```\n/path/to/sage -br\n```\n\n* Now open the notebook from within Sage again (e.g, with \n\n```\nsage: notebook()\n```\n\n   and see what happens.  I give no guarantees!  But at least it's worth trying.",
     "created_at": "2011-10-13T14:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80352",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80220",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -306,15 +305,15 @@ sage: notebook()
 
 ---
 
-archive/issue_comments_080353.json:
+archive/issue_comments_080221.json:
 ```json
 {
     "body": "I already rebuilt it using ./sage -b (as suggested in the devel instructions), but I tried again using ./sage -br. No change, all snapshots are still identical. \n\nIs it normal that sage-0.0.0-py2.6.egg-info is re-built every time, or does it imply that the patch was not fully applied and lingers somewhere in the queue? Is there a way to check from within sage that the new code is actually used? E.g. by typing \"sagenb-undo??\" or something along these lines?",
     "created_at": "2011-10-13T14:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80353",
-    "user": "schymans"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/schymans"
 }
 ```
 
@@ -326,15 +325,15 @@ Is it normal that sage-0.0.0-py2.6.egg-info is re-built every time, or does it i
 
 ---
 
-archive/issue_comments_080354.json:
+archive/issue_comments_080222.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-10-13T15:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80354",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80222",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -344,15 +343,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080355.json:
+archive/issue_comments_080223.json:
 ```json
 {
     "body": "Replying to [comment:10 schymans]:\n> I already rebuilt it using ./sage -b (as suggested in the devel instructions), but I tried again using ./sage -br. No change, all snapshots are still identical. \n\nOkay, good to know.  I assume that you are referring to snapshots \"created\" *after* the time you applied the patch; obviously, previous snapshots wouldn't magically change!\n\n> Is it normal that sage-0.0.0-py2.6.egg-info is re-built every time, or does it imply that the patch was not fully applied and lingers somewhere in the queue? Is there a way to check from within sage that the new code is actually used? E.g. by typing \"sagenb-undo??\" or something along these lines?\n\nNo, this is actually what is supposed to happen.   I wouldn't worry about whether the code is used; that's the job of those writing patches :)",
     "created_at": "2011-10-13T15:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80355",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80223",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -369,15 +368,15 @@ No, this is actually what is supposed to happen.   I wouldn't worry about whethe
 
 ---
 
-archive/issue_comments_080356.json:
+archive/issue_comments_080224.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-10-13T15:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80356",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80224",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -387,15 +386,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_080357.json:
+archive/issue_comments_080225.json:
 ```json
 {
     "body": "To be precise, whenever I create a new snapshot, before or after applying the patch, all snapshots indeed magically change and become identical to the most recent one.",
     "created_at": "2011-10-13T20:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80357",
-    "user": "schymans"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80225",
+    "user": "https://trac.sagemath.org/admin/accounts/users/schymans"
 }
 ```
 
@@ -405,15 +404,15 @@ To be precise, whenever I create a new snapshot, before or after applying the pa
 
 ---
 
-archive/issue_comments_080358.json:
+archive/issue_comments_080226.json:
 ```json
 {
     "body": "Sage 5.0 is out and magically the milestone for this ticket has changed from 5.0 to 5.1. This bug is really annoying to me and in fact the button \"Undo\" and the \"Revisions\" are grossly misleading, as they lure the user into a false sense of security. Does anyone have an idea where to look for the problem and how it could be solved?",
     "created_at": "2012-05-24T13:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80358",
-    "user": "schymans"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80226",
+    "user": "https://trac.sagemath.org/admin/accounts/users/schymans"
 }
 ```
 
@@ -423,15 +422,15 @@ Sage 5.0 is out and magically the milestone for this ticket has changed from 5.0
 
 ---
 
-archive/issue_comments_080359.json:
+archive/issue_comments_080227.json:
 ```json
 {
     "body": "I have reported this at https://github.com/sagemath/sagenb/issues/236 - eventually I should go sift through the Google code bug reports too.  But this is one of the very few things I think really makes the notebook unusable for certain people - it's fine for most of my and other more casual needs, but without revision control at the very least we can have revisions that actually work!\n\nThat said, I don't know that the current code here will have anything useful with the flask notebook - but who knows?",
     "created_at": "2014-09-18T16:33:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80359",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80227",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -443,15 +442,15 @@ That said, I don't know that the current code here will have anything useful wit
 
 ---
 
-archive/issue_comments_080360.json:
+archive/issue_comments_080228.json:
 ```json
 {
     "body": "Big news - the problem is not that the snapshots aren't there, but rather that the snapshot actually unpacked must always be the last one.  All your revisions are there!  We just have to figure out why the correct snapshots aren't being shown.  And I think I know why...",
     "created_at": "2014-09-18T18:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80360",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80228",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -461,15 +460,15 @@ Big news - the problem is not that the snapshots aren't there, but rather that t
 
 ---
 
-archive/issue_comments_080361.json:
+archive/issue_comments_080229.json:
 ```json
 {
     "body": "This has now been merged in sagenb inside Sage, 0.11.0 I believe.",
     "created_at": "2014-12-10T18:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80361",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80229",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -479,15 +478,15 @@ This has now been merged in sagenb inside Sage, 0.11.0 I believe.
 
 ---
 
-archive/issue_comments_080362.json:
+archive/issue_comments_080230.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2014-12-10T18:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80362",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80230",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -497,15 +496,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_080363.json:
+archive/issue_comments_080231.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2014-12-11T18:35:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80363",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8776#issuecomment-80231",
+    "user": "https://github.com/vbraun"
 }
 ```
 

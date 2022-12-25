@@ -6,7 +6,7 @@ archive/issues_004473.json:
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4473\n\n",
     "created_at": "2008-11-09T03:13:41Z",
     "labels": [
-        "misc",
+        "component: misc",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004473.json:
     "title": "[with patch; needs review] loading file.sage that has a line \"load foo.py\" is broken due to a missing import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4473",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4473
 
 ---
 
-archive/issue_comments_033039.json:
+archive/issue_comments_032974.json:
 ```json
 {
     "body": "Attachment [sage-4473.patch](tarball://root/attachments/some-uuid/ticket4473/sage-4473.patch) by @williamstein created at 2008-11-09 03:17:47",
     "created_at": "2008-11-09T03:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-33039",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-32974",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +49,15 @@ Attachment [sage-4473.patch](tarball://root/attachments/some-uuid/ticket4473/sag
 
 ---
 
-archive/issue_comments_033040.json:
+archive/issue_comments_032975.json:
 ```json
 {
     "body": "To test this, make a file foo.sage with\n\n```\nload a.py\n```\n\nin it, and make a.py an empty file.   Then try\n\n\n```\nsage: load foo.sage\n```\n\n\nand see that you don't get a big nasty printout.",
     "created_at": "2008-11-09T03:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-33040",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-32975",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -81,15 +81,15 @@ and see that you don't get a big nasty printout.
 
 ---
 
-archive/issue_comments_033041.json:
+archive/issue_comments_032976.json:
 ```json
 {
     "body": "Nice catch. Positive review, we had to fix similar issues once we had updated to IPython 0.8.4.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-09T07:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-33041",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-32976",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -103,15 +103,15 @@ Michael
 
 ---
 
-archive/issue_comments_033042.json:
+archive/issue_comments_032977.json:
 ```json
 {
     "body": "Merged in Sage 3.2.rc0",
     "created_at": "2008-11-09T08:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-33042",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-32977",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +121,15 @@ Merged in Sage 3.2.rc0
 
 ---
 
-archive/issue_comments_033043.json:
+archive/issue_comments_032978.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-09T08:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-33043",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4473#issuecomment-32978",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

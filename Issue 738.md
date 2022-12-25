@@ -6,15 +6,14 @@ archive/issues_000738.json:
     "body": "Assignee: @robertwb\n\n\n```\nThere's a bug in matrix2.pyx which is making my new\nPolynomial_integer_dense class fail some doctests.\n\nWhen you run this command:\n\n       matrix(ZZ,3,range(9))._charpoly_hessenberg('Z')\n\nthen on line 992 of matrix2.pyx, the list v contains Rationals even\nthough the polynomial constructor (for base ring Z) is called with\ncheck=False.\n\nAnd to answer your next question:\n\nsage: R.<x> = PolynomialRing(ZZ)\nsage: R([1/2, 3/4, 5/6, 7/8], check=False)\n7*x^3 + 5*x^2 + 3*x + 1\n\n!!!\n\nI'm sure one of you can fix this much faster than I can....\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/738\n\n",
     "created_at": "2007-09-22T21:58:39Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5.1",
     "title": "probably easy-to-fix bug in matrix2.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/738",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @robertwb
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/738
 
 ---
 
-archive/issue_comments_004322.json:
+archive/issue_comments_004308.json:
 ```json
 {
     "body": "Changing assignee from @robertwb to dmharvey.",
     "created_at": "2007-09-23T18:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/738",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4322",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4308",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -70,15 +69,15 @@ Changing assignee from @robertwb to dmharvey.
 
 ---
 
-archive/issue_comments_004323.json:
+archive/issue_comments_004309.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-23T18:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/738",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4323",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4309",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -88,15 +87,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_004324.json:
+archive/issue_comments_004310.json:
 ```json
 {
     "body": "Attachment [patch-738.hg](tarball://root/attachments/some-uuid/ticket738/patch-738.hg) by dmharvey created at 2007-09-23 21:36:49\n\nfixes this bug",
     "created_at": "2007-09-23T21:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/738",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4324",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4310",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -108,15 +107,15 @@ fixes this bug
 
 ---
 
-archive/issue_comments_004325.json:
+archive/issue_comments_004311.json:
 ```json
 {
     "body": "note: I uploaded a patch for #528 which includes the above patch",
     "created_at": "2007-09-23T23:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/738",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4325",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4311",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -126,15 +125,15 @@ note: I uploaded a patch for #528 which includes the above patch
 
 ---
 
-archive/issue_comments_004326.json:
+archive/issue_comments_004312.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-23T23:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/738",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4326",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/738#issuecomment-4312",
+    "user": "https://github.com/williamstein"
 }
 ```
 

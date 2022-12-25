@@ -6,7 +6,7 @@ archive/issues_004762.json:
     "body": "Assignee: @craigcitro\n\nI was looking at generators of various different congruence subgroups, and got the following error:\n\n\n```\nsage: Gamma0(5).generators()[0]\n\n[1 1]\n[0 1]\n\nsage: Gamma0(5).generators()[0] in Gamma0(7)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/ljpk/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/groups/group.so in sage.groups.group.Group.__contains__ (sage/groups/group.c:1034)()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/congroup.pyc in __call__(self, x, check)\n   1654         if isinstance(x, CongruenceSubgroupElement) and x.parent() == self:\n   1655             return x\n-> 1656         x = CongruenceSubgroupElement(self, x, check=check)\n   1657         if not check:\n   1658             return x\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/congroup_element.pyc in __init__(self, parent, x, check)\n     46             if not congroup.is_CongruenceSubgroup(parent):\n     47                 raise TypeError, \"parent (= %s) must be a congruence subgroup\"%parent\n---> 48             x = M2Z(x)\n     49             if x.determinant() != 1:\n     50                 raise ValueError, \"matrix must have determinant 1\"\n\n/home/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)\n    306             entries = 0\n    307\n--> 308         if entries == 0 and hasattr(self, '__zero_matrix'):\n    309             return self.zero_matrix()\n    310\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:5247)()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:4954)()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/congroup.pyc in __call__(self, x, check)\n   1654         if isinstance(x, CongruenceSubgroupElement) and x.parent() == self:\n   1655             return x\n-> 1656         x = CongruenceSubgroupElement(self, x, check=check)\n   1657         if not check:\n   1658             return x\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/congroup_element.pyc in __init__(self, parent, x, check)\n     48             x = M2Z(x)\n     49             if x.determinant() != 1:\n---> 50                 raise ValueError, \"matrix must have determinant 1\"\n     51             x.set_immutable()\n     52\n\nValueError: matrix must have determinant 1\n```\n\n\nIt might be correct not to allow coercions from one congruence subgroup to another, but the matrix *does* have determinant 1, so the error message should be changed to one that is more suitable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4762\n\n",
     "created_at": "2008-12-11T19:43:52Z",
     "labels": [
-        "modular forms",
+        "component: modular forms",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004762.json:
     "title": "Odd error message for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4762",
-    "user": "ljpk"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
 Assignee: @craigcitro
@@ -89,15 +89,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4762
 
 ---
 
-archive/issue_comments_036094.json:
+archive/issue_comments_036023.json:
 ```json
 {
     "body": "This error message also comes up for groups which genuinely are subgroups of one another:\n\n\n```\nsage: Gamma0(2).is_subgroup(SL2Z)\nTrue\nsage: Gamma0(2)([1,0,0,1]) in SL2Z\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/ljpk/congroup_upper.py in <module>()\n----> 1\n      2\n      3\n      4\n      5\n\n/home/was/s/local/lib/python2.5/site-packages/sage/groups/group.so in sage.groups.group.Group.__contains__ (sage/groups/group.c:1034)()\n     46\n     47\n---> 48\n     49\n     50\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/congroup.pyc in __call__(self, x, check)\n   1654         if isinstance(x, CongruenceSubgroupElement) and x.parent() == self:\n   1655             return x\n-> 1656         x = CongruenceSubgroupElement(self, x, check=check)\n   1657         if not check:\n   1658             return x\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/congroup_element.pyc in __init__(self, parent, x, check)\n     46             if not congroup.is_CongruenceSubgroup(parent):\n     47                 raise TypeError, \"parent (= %s) must be a congruence subgroup\"%parent\n---> 48             x = M2Z(x)\n     49             if x.determinant() != 1:\n     50                 raise ValueError, \"matrix must have determinant 1\"\n\n/home/was/s/local/lib/python2.5/site-packages/sage/matrix/matrix_space.pyc in __call__(self, entries, coerce, copy, rows)\n    306             entries = 0\n    307\n--> 308         if entries == 0 and hasattr(self, '__zero_matrix'):\n    309             return self.zero_matrix()\n    310\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element.__richcmp__ (sage/structure/element.c:5247)()\n    556\n    557\n--> 558\n    559\n    560\n\n/home/was/s/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.Element._richcmp (sage/structure/element.c:4954)()\n    516\n    517\n--> 518\n    519\n    520\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/congroup.pyc in __call__(self, x, check)\n   1654         if isinstance(x, CongruenceSubgroupElement) and x.parent() == self:\n   1655             return x\n-> 1656         x = CongruenceSubgroupElement(self, x, check=check)\n   1657         if not check:\n   1658             return x\n\n/home/was/s/local/lib/python2.5/site-packages/sage/modular/congroup_element.pyc in __init__(self, parent, x, check)\n     48             x = M2Z(x)\n     49             if x.determinant() != 1:\n---> 50                 raise ValueError, \"matrix must have determinant 1\"\n     51             x.set_immutable()\n     52\n\nValueError: matrix must have determinant 1\n\n```\n",
     "created_at": "2008-12-12T12:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36094",
-    "user": "ljpk"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36023",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
 
@@ -183,15 +183,15 @@ ValueError: matrix must have determinant 1
 
 ---
 
-archive/issue_comments_036095.json:
+archive/issue_comments_036024.json:
 ```json
 {
     "body": "Attachment [trac_4762.patch](tarball://root/attachments/some-uuid/ticket4762/trac_4762.patch) by @aghitza created at 2008-12-14 00:00:21",
     "created_at": "2008-12-14T00:00:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36095",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36024",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -201,15 +201,15 @@ Attachment [trac_4762.patch](tarball://root/attachments/some-uuid/ticket4762/tra
 
 ---
 
-archive/issue_comments_036096.json:
+archive/issue_comments_036025.json:
 ```json
 {
     "body": "This is due to two underlying problems:\n\n* coercing an element of a congruence subgroup into the set of 2x2 integer matrices is broken\n* if g is an element of a congruence subgroup, testing g == 0 is broken\n\nThe attached patch fixes both issues.  Note that if CongruenceSubgroup were to inherit from MatrixGroup (which it probably should?), then the first problem would just go away.",
     "created_at": "2008-12-14T00:01:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36096",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36025",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -224,15 +224,15 @@ The attached patch fixes both issues.  Note that if CongruenceSubgroup were to i
 
 ---
 
-archive/issue_comments_036097.json:
+archive/issue_comments_036026.json:
 ```json
 {
     "body": "Patch looks good, but there are still some troubles in the code. Here's an example:\n\n\n```\nsage: G = Gamma0(5)\n\nsage: G.0 in SL2Z\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (131, 0))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/craigcitro/.sage/temp/sharma.local/18290/_Users_craigcitro__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/sage/local/lib/python2.5/site-packages/sage/groups/group.so in sage.groups.group.Group.__contains__ (sage/groups/group.c:1034)()\n     46 \n     47 \n---> 48 \n     49 \n     50 \n\n/sage/local/lib/python2.5/site-packages/sage/modular/congroup.pyc in __call__(self, x, check)\n   1665         if isinstance(x, CongruenceSubgroupElement) and x.parent() == self:\n   1666             return x\n-> 1667         x = CongruenceSubgroupElement(self, x, check=check)\n   1668         if not check:\n   1669             return x\n\n/sage/local/lib/python2.5/site-packages/sage/modular/congroup_element.pyc in __init__(self, parent, x, check)\n     49             if x.determinant() != 1:\n     50                 raise TypeError, \"matrix must have determinant 1\"\n---> 51             x.set_immutable()\n     52 \n     53         MultiplicativeGroupElement.__init__(self, parent)\n\n/sage/local/lib/python2.5/site-packages/sage/matrix/matrix0.so in sage.matrix.matrix0.Matrix.set_immutable (sage/matrix/matrix0.c:3464)()\n    407 \n    408 \n--> 409 \n    410 \n    411 \n\nAttributeError: 'NoneType' object has no attribute 'set_immutable'\n\nsage:\n```\n\n\nI'm",
     "created_at": "2008-12-16T06:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36097",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36026",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -297,15 +297,15 @@ I'm
 
 ---
 
-archive/issue_comments_036098.json:
+archive/issue_comments_036027.json:
 ```json
 {
     "body": "I'm attaching an additional patch that fixes the issue reported by Craig, and doctests it.",
     "created_at": "2008-12-20T12:58:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36098",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36027",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -315,15 +315,15 @@ I'm attaching an additional patch that fixes the issue reported by Craig, and do
 
 ---
 
-archive/issue_comments_036099.json:
+archive/issue_comments_036028.json:
 ```json
 {
     "body": "apply after the previous patch",
     "created_at": "2008-12-20T12:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36099",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36028",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -333,15 +333,15 @@ apply after the previous patch
 
 ---
 
-archive/issue_comments_036100.json:
+archive/issue_comments_036029.json:
 ```json
 {
     "body": "Attachment [trac_4762_fix.patch](tarball://root/attachments/some-uuid/ticket4762/trac_4762_fix.patch) by @ncalexan created at 2009-01-21 08:00:19\n\nThis is fine by me, but the congruence subgroup code really needs to be migrated to the new coercion model -- see #5048.",
     "created_at": "2009-01-21T08:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36100",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36029",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -353,15 +353,15 @@ This is fine by me, but the congruence subgroup code really needs to be migrated
 
 ---
 
-archive/issue_comments_036101.json:
+archive/issue_comments_036030.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha1\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T10:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36101",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36030",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -375,15 +375,15 @@ Michael
 
 ---
 
-archive/issue_comments_036102.json:
+archive/issue_comments_036031.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-23T10:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36102",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4762#issuecomment-36031",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

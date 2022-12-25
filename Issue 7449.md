@@ -6,15 +6,14 @@ archive/issues_007449.json:
     "body": "Assignee: mvngu\n\nCC:  @hivert @nthiery\n\nKeywords: doc\n\nIf I type\n\n```\nsage: MS = MatrixSpace(QQ,6,6,sparse=True); MS\nFull MatrixSpace of 6 by 6 sparse matrices over Rational Field\nsage: MS?\n```\n\nThen sage hangs eating all the memory. I don't have the less idea why it happens with `MatrixSpace`. I didn't try very hard but I can't manage any other request with the same effect. I checked that this is not a problem of installation on my computer: It happens as well on boxen. Though, on the contrary to my own computer, I didn't check that it effectively eat all the memory on boxen ;-)\n\nCheers,\n\nFlorent\n  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7449\n\n",
     "created_at": "2009-11-12T21:49:17Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Some doc request hangs sage eating all memory.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7449",
-    "user": "@hivert"
+    "user": "https://github.com/hivert"
 }
 ```
 Assignee: mvngu
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7449
 
 ---
 
-archive/issue_comments_062742.json:
+archive/issue_comments_062627.json:
 ```json
 {
     "body": "I can confirm this bug on the command line.  However, not interestingly that it does *not* happen in the Sage notebook.  So it is an Ipython bug.\n\nhttp://wstein.org/home/wstein/patches/trac_7449.png",
     "created_at": "2009-11-13T06:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62742",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62627",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -66,15 +65,15 @@ http://wstein.org/home/wstein/patches/trac_7449.png
 
 ---
 
-archive/issue_comments_062743.json:
+archive/issue_comments_062628.json:
 ```json
 {
     "body": "Replying to [comment:1 was]:\n> I can confirm this bug on the command line.  However, not interestingly that it does *not* happen in the Sage notebook.  So it is an Ipython bug.\n> \n> http://wstein.org/home/wstein/patches/trac_7449.png\n\nSo what should we do ? Try to figure out a smaller file that triggers the problem and report to the ipython community ? I've no idea how to debug ipython. Any better suggestion ?",
     "created_at": "2009-11-13T08:07:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62743",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62628",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -89,15 +88,15 @@ So what should we do ? Try to figure out a smaller file that triggers the proble
 
 ---
 
-archive/issue_comments_062744.json:
+archive/issue_comments_062629.json:
 ```json
 {
     "body": "Fernando Perez solved the problem:\n\n```\n\nOn Mon, Nov 16, 2009 at 2:31 AM, Fernando Perez\n<> wrote:\n> The fact that Ctrl-C cleanly stops the crazy loop *without* a\n> KeyboardInterrupt makes me think that ipython is trying to introspect\n> the MS object and some C code is going into a mad loop (otherwise we'd\n> see the Python signal handler showing a traceback).  Do you have any\n> other bugs related to this type of object that sound along those\n> lines?\n\nHalf-right. IPython is swallowing the kbd interrupt, but the bug is in\nsage, it's the fact that len(MS) never returns:\n\nsage: MS = MatrixSpace(QQ,6,6,sparse=True); MS\nFull MatrixSpace of 6 by 6 sparse matrices over Rational Field\nsage: len(MS)\n^C---------------------------------------------------------------------------\nKeyboardInterrupt                         Traceback (most recent call last)\n\n/home/fperez/ipython/repo/kernel-config-lp/docs/<ipython console> in <module>()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/structure/parent.so\nin sage.structure.parent.Parent.__len__\n(sage/structure/parent.c:5533)()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/structure/parent.so\nin sage.structure.parent.Parent.list (sage/structure/parent.c:4995)()\n\n/opt/sage/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc\nin __iter__(self)\n   751             while True:\n   752                 for iv in\nsage.combinat.integer_vector.IntegerVectors(weight,\nnumber_of_entries):\n--> 753                     yield self(entries=[base_elements[i] for i\nin iv], rows=True)\n   754\n   755                 weight += 1\n\n/opt/sage/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc\nin __call__(self, entries, coerce, copy, rows)\n   371             copy = False\n   372         elif self.__is_sparse and isinstance(entries, (list, tuple)):\n--> 373             entries = list_to_dict(entries, self.__nrows,\nself.__ncols, rows=rows)\n   374             coerce = True\n   375             copy = False\n\n/opt/sage/local/lib/python2.6/site-packages/sage/matrix/matrix_space.pyc\nin list_to_dict(entries, nrows, ncols, rows)\n  1240                 d[(row,col)] = x\n  1241             else:\n-> 1242                 d[(col,row)] = x\n  1243     return d\n  1244\n\n/opt/sage/local/lib/python2.6/site-packages/sage/interfaces/get_sigs.pyc\nin my_sigint(x, n)\n     7\n     8 def my_sigint(x, n):\n----> 9     raise KeyboardInterrupt\n    10\n    11 def my_sigfpe(x, n):\n\nKeyboardInterrupt:\n\n\nIt seems that the ms object implements __len__, but this function\nnever returns.  It's just that ipython was calling len() on it.\n\nCheers,\n\nf\n```\n",
     "created_at": "2009-11-16T17:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62744",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62629",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -184,15 +183,15 @@ f
 
 ---
 
-archive/issue_comments_062745.json:
+archive/issue_comments_062630.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-16T17:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62745",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62630",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -202,15 +201,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062746.json:
+archive/issue_comments_062631.json:
 ```json
 {
     "body": "Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/sagelib_7449.patch) by @williamstein created at 2009-11-16 17:26:32",
     "created_at": "2009-11-16T17:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62746",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62631",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -220,15 +219,15 @@ Attachment [sagelib_7449.patch](tarball://root/attachments/some-uuid/ticket7449/
 
 ---
 
-archive/issue_comments_062747.json:
+archive/issue_comments_062632.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-16T17:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62747",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62632",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -238,15 +237,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062748.json:
+archive/issue_comments_062633.json:
 ```json
 {
     "body": "Replying to [comment:3 was]:\n\n> It seems that the ms object implements __len__, but this function\n> never returns.  It's just that ipython was calling len() on it.\n\nGood remark ! This indicate that there should be a generic test in the base category `Objects()` checking that for the current object `__len__` is either not defined either returns a correct `int` object or else raise an exception. Any other behavior (loop, returning a sage Integer or any fancy object should be reported as an error).\n\nThose bugs seems therefore catchable by `TestSuite` if the object correctly inherits from the good category. I'll try it.\n\nOtherwise positive review.\n\nCheers,\n\nFlorent",
     "created_at": "2009-11-16T17:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62748",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62633",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -269,15 +268,15 @@ Florent
 
 ---
 
-archive/issue_comments_062749.json:
+archive/issue_comments_062634.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-17T06:05:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62749",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7449#issuecomment-62634",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

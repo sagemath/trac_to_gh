@@ -6,15 +6,14 @@ archive/issues_000780.json:
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\n\n```\nHi,\n\nThis is a quick and possibly not so useful answer. \n(1) I think you're running into a bug in Maxima (hence Sage) below, since\nyour assumption should be passed through.  It's pretty hard for us Sage\ndevelopers to fix bugs in Maxima, unfortunately.   Nonetheless, we are\nvery thankful for the bug report.\n\n(2) Possibly doing the following workaround would be OK for you, i.e.,\njust compute the definite integral you want by computing an antiderivative\nand use the fundamental theorem of calculus:\n\nsage: x,y=var('x,y')\nsage: f = log(x^2+y^2)\nsage: integrate(f,x)\nx*log(y^2 + x^2) - 2*(x - atan(x/y)*y)\nsage: g = integrate(f,x)\nsage: h = g(x=1.) - g(x=0.0001415); h    # this is what you want.\n1.00000000000000*log(y^2 + 1.00000000000000) - 0.0001415000000000000000*log(y^2 + 0.000000020022250000000000000000) - 2*(1.00000000000000 - atan(1.00000000000000/y)*y) + 2*(0.0001415000000000000000 - atan(0.0001415000000000000000/y)*y)\nsage: h(y=5)\n3.231596665591034\n\nOn 10/1/07, Eliz <elyip@comcast.net> wrote:\n> \n> Attached is the 'edit' view of my worksheet.  When I changed the lower\n> bound of the definite integral from 0.0001415 to  0.0001414, we got\n> into trouble.\n> \n> Elizabeth\n> ------------------------------------------------------------------------------------------------------------\n> integration_exercise\n> system:sage\n> \n> {{{id=0|\n> x,y=var('x,y')\n> f=log(x^2+y^2)\n> integrate(f,x)\n> ///\n> x*log(y^2 + x^2) - 2*(x - atan(x/y)*y)\n> }}}\n> \n> {{{id=11|\n> assume(y^2>1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=16|\n> assume(y^2<1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=17|\n> assume(y^2==1)\n> integrate(f,x,0.0001415,1.)\n> ///\n> 1.00000000000000*log(1.00000000000000*y^2 + 1.00000000000000) -\n> 0.0001415000000000000000*log(1.00000000000000*y^2 +\n> 0.000000020022250000000000000000) +\n> 2.00000000000000*atan(1.00000000000000/y)*y -\n> 2.00000000000000*atan(0.0001415000000000000000/y)*y - 1.99971700000000\n> }}}\n> \n> {{{id=19|\n> assume(y^2>1)\n> integrate(f,x,0.0001414,1.)\n> ///\n> Traceback (most recent call last):\n>   File \"<stdin>\", line 1, in <module>\n>   File \"/home/yip/sage_notebook/worksheets/admin/10/code/47.py\", line\n> 5, in <module>\n>     exec\n> compile(ur'integrate(f,x,RealNumber(\\u00270.0001414\\u0027),RealNumber(\\u00271.\\u0027))'\n> + '\\n', '', 'single')\n>   File \"/local/sage-2.8.5.1/data/extcode/sage/\", line 1, in <module>\n> \n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> calculus/functional.py\", line 175, in integral\n>     return f.integral(*args, **kwds)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> calculus/calculus.py\", line 1652, in integral\n>     return self.parent()(self._maxima_().integrate(v, a, b))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/maxima.py\", line 1391, in integral\n>     return I(var, min, max)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 884, in __call__\n>     return self._obj.parent().function_call(self._name, [self._obj] +\n> list(args))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 831, in function_call\n>     return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in\n> args])))\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 733, in new\n>     return self(code)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/maxima.py\", line 376, in __call__\n>     return Expect.__call__(self, x)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 678, in __call__\n>     return cls(self, x)\n>   File \"/local/sage-2.8.5.1/local/lib/python2.5/site-packages/sage/\n> interfaces/expect.py\", line 919, in __init__\n>     raise TypeError, x\n> TypeError: Computation failed since Maxima requested additional\n> constraints (use assume):\n> Is  (y-1)*(y+1)  positive, negative, or zero?\n> }}}\n> \n> {{{id=20|\n> \n> }}}\n> \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/780\n\n",
     "created_at": "2007-10-02T02:10:15Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "calculus integration failing due to maxima interacting when it shouldn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/780",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -159,15 +158,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/780
 
 ---
 
-archive/issue_comments_004655.json:
+archive/issue_comments_004639.json:
 ```json
 {
     "body": "The solution might be to make the pexpect interface interaction with maxima even more sophisticated or -- even better -- replicate the whole bug directly in maxima and report it to the maxima list (I'm too lazy to do so\nright now).",
     "created_at": "2007-10-02T02:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4655",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4639",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -178,15 +177,15 @@ right now).
 
 ---
 
-archive/issue_comments_004656.json:
+archive/issue_comments_004640.json:
 ```json
 {
     "body": "Submitted bug report to the maxima list, see\n\nhttps://sourceforge.net/tracker/?func=detail&atid=104933&aid=1899352&group_id=4933",
     "created_at": "2008-02-22T05:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4656",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4640",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -198,15 +197,15 @@ https://sourceforge.net/tracker/?func=detail&atid=104933&aid=1899352&group_id=49
 
 ---
 
-archive/issue_comments_004657.json:
+archive/issue_comments_004641.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-16T20:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4657",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4641",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -216,15 +215,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_004658.json:
+archive/issue_comments_004642.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-16T20:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4658",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4642",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -234,15 +233,15 @@ Changing assignee from @williamstein to @garyfurnish.
 
 ---
 
-archive/issue_comments_004659.json:
+archive/issue_comments_004643.json:
 ```json
 {
     "body": "Somebody on the maxima list responded:\n\n```\nDate: 2008-02-22 06:16\nSender: rtoy\nLogged In: YES \nuser_id=28849\nOriginator: NO\n\nNote that is((y-1)*(y+1)>0) returns unknown.  If you say assume(y>1),\nintegrate doesn't ask about that anymore. But it still asks about\ny^2+x^2+2*x+1.  It should know that x > 0 and y > 0 here.\n```\n",
     "created_at": "2008-03-16T21:04:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4659",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4643",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -265,15 +264,15 @@ y^2+x^2+2*x+1.  It should know that x > 0 and y > 0 here.
 
 ---
 
-archive/issue_comments_004660.json:
+archive/issue_comments_004644.json:
 ```json
 {
     "body": "I've noticed this many times when running my integration tests. Axiom handles these kinds of integrals by returning multiple solutions. Maxima could do the same and that's what I think is the best solution.\n\nOne possible solution on the Sage side would be to add optional parameters to answer the questions. So, the first time one tries the integral, you get the trackback so you re-run the integration with an added parameter to answer the question (or series of questions for problems with several branches). \n\nSince the questions are yes/no based, another option arises, that is more difficult to implement but better for the user. This would be to have an option for Sage to build up the branches by re-running the integration answering the questions automatically and noting the solution and the question+answer.\n\nBoth of these Sage solutions require improvements to the pexpect interface which are likely non-trivial.",
     "created_at": "2008-11-27T08:33:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4660",
-    "user": "@tjl"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4644",
+    "user": "https://github.com/tjl"
 }
 ```
 
@@ -289,15 +288,15 @@ Both of these Sage solutions require improvements to the pexpect interface which
 
 ---
 
-archive/issue_comments_004661.json:
+archive/issue_comments_004645.json:
 ```json
 {
     "body": "It should be pointed out that:\n\n1. Changing the left endpoint from 0.0001415 to 0.0001414 caused the error in this case. Mysteriously, doing the endpoint 0.0001415 in maxima_console() still has two questions for you, but Sage nonetheless answers it!\n\n2. assume((y-1)*(y+1)>0) or whatever doesn't work -  and even if it did, Maxima does have an actual bug in not recognizing that x is positive from the integral we wanted to calculate.  So a question-and-answer framework, while definitely helpful, wouldn't solve this particular issue.",
     "created_at": "2009-01-29T16:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4661",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4645",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -311,15 +310,15 @@ It should be pointed out that:
 
 ---
 
-archive/issue_comments_004662.json:
+archive/issue_comments_004646.json:
 ```json
 {
     "body": "Note that the Maxima bug seems to have been fixed, see\n\nhttps://sourceforge.net/tracker/?func=detail&atid=104933&aid=1899352&group_id=4933",
     "created_at": "2009-06-13T03:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4662",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4646",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -331,15 +330,15 @@ https://sourceforge.net/tracker/?func=detail&atid=104933&aid=1899352&group_id=49
 
 ---
 
-archive/issue_comments_004663.json:
+archive/issue_comments_004647.json:
 ```json
 {
     "body": "Changing assignee from @garyfurnish to @aghitza.",
     "created_at": "2009-08-24T09:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4663",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4647",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -349,15 +348,15 @@ Changing assignee from @garyfurnish to @aghitza.
 
 ---
 
-archive/issue_comments_004664.json:
+archive/issue_comments_004648.json:
 ```json
 {
     "body": "This is fixed by the spkg and patch at #6699.  I will put up a patch with a doctest verifying this when #6699 gets merged.",
     "created_at": "2009-08-24T09:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4664",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4648",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -367,15 +366,15 @@ This is fixed by the spkg and patch at #6699.  I will put up a patch with a doct
 
 ---
 
-archive/issue_comments_004665.json:
+archive/issue_comments_004649.json:
 ```json
 {
     "body": "Changing status from assigned to new.",
     "created_at": "2009-08-24T09:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4665",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4649",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -385,15 +384,15 @@ Changing status from assigned to new.
 
 ---
 
-archive/issue_comments_004666.json:
+archive/issue_comments_004650.json:
 ```json
 {
     "body": "Attachment [trac_780-maxima_integral.patch](tarball://root/attachments/some-uuid/ticket780/trac_780-maxima_integral.patch) by @burcin created at 2009-09-22 20:11:32\n\nattachment:trac_780-maxima_integral.patch adds doctests to show that this is fixed.\n\nAlex, many thanks for your work on updating maxima. I'm trying to get as many symbolics/calculus tickets closed as possible for this release now.",
     "created_at": "2009-09-22T20:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4666",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4650",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -407,15 +406,15 @@ Alex, many thanks for your work on updating maxima. I'm trying to get as many sy
 
 ---
 
-archive/issue_comments_004667.json:
+archive/issue_comments_004651.json:
 ```json
 {
     "body": "All tests passed!\n\nYes, also thanks!  Incidentally, I would be happy to help with updating Maxima as needed, now that I've read the spkg documentation in the developer's guide, because there are always new improvements.",
     "created_at": "2009-09-22T20:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4667",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4651",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -427,15 +426,15 @@ Yes, also thanks!  Incidentally, I would be happy to help with updating Maxima a
 
 ---
 
-archive/issue_comments_004668.json:
+archive/issue_comments_004652.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-22T23:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4668",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4652",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -445,15 +444,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_004669.json:
+archive/issue_comments_004653.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
     "created_at": "2009-09-27T09:39:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4669",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/780#issuecomment-4653",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

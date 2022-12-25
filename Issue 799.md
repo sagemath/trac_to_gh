@@ -6,15 +6,14 @@ archive/issues_000799.json:
     "body": "Assignee: @williamstein\n\n\n```\n\nI think I may have found a bug.\n\nWhen using Tachyon and defining a texture, the seventh parameter you\ncan set is texfunc.\nIf that value is set to anything but zero, then no picture is\ngenerated.\n\nAs an example:\n\nt = Tachyon(xres=800, yres=600, camera_center=(2,7,4),\nlook_at=(2,0,0), raydepth=24)\nt.light((10,3,4), 1, (1,1,1))\nt.light((10,-3,4), 1, (1,1,1))\nt.texture('black', color=(0,0,0))\nt.texture('mirror', ambient=0.05, diffuse=0.05, specular=.9,\nopacity=1.0, color=(.9,.9,.9))\nt.texture('grey', color=(.8,.8,.8), texfunc=0)\nt.plane((0,0,0),(0,0,1),'grey')\nt.cylinder((0,0,0),(1,0,0),.013,'black')\nt.cylinder((0,0,0),(0,1,0),.013,'black')\nt.sphere((4,-1,1), 1, 'mirror')\nt.save()\n\nThe above produces a nice picture.  If you change to \"texfunc=2\" in\nline 6, then there is no output.\n\nTexfunc should have the following allowed values\n\nValue for TEXFUNC    Mapping and Texture Description\n-----------------\n----------------------------------------------------------------\n     0              No special texture, plain shading\n     1              3D checkerboard function, like a rubik's cube\n     2              Grit Texture, randomized surface color\n     3              3D marble texture, uses object's base color\n     4              3D wood texture, light and dark brown, not very\ngood yet\n     5              3D gradient noise function (can't remember what\nit look like\n     6              Don't remember\n     7              Cylindrical Image Map, requires ppm filename\n     8              Spherical Image Map, requires ppm filename\n     9              Planar Image Map, requires ppm filename\n\nI'm sorry if this is really a bug in Tachyon and not a problem with\nhow Sage talks with Tachyon.  I am just not (yet) skilled enough to\ntell the difference.  I need to figure out how to run Tachyon stand-\nalone and see if the bug still exists.  But, I don't know how yet.\nSo, my apologies if this should be reported to the Tachyon developers.\n```\n\n\nMany thanks for your bug report. \n\nBy the way, even if it is a Tachyon bug, we really want to know about\nit, so we can program around it and/or fix it.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/799\n\n",
     "created_at": "2007-10-03T06:25:14Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "tachyon bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/799",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -89,15 +88,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/799
 
 ---
 
-archive/issue_comments_004819.json:
+archive/issue_comments_004803.json:
 ```json
 {
     "body": "\n```\nFrom Leif Hille \n\nI dunno if this is the right way to comment on bugs however, I ran into the same problem as the ticket's author. This \"bug\" ticket is part bug, part user error (or poor documentation).  \n\n(1) The user error part: In order to create a texture using a number other than zero, you have to pass in a .texfunc() object.  \n\n(2) The bug part: There is a problem with the plot/tachyon.py function that prevents additional key parameters from being passed in.  \n\nExplanation:\n    t.texture('grey', color=(.5,.5,.5), texfunc=0)  --> this works\n    t.texture('dk_grey', color=(0.8,0.8,0.8),textfunc=1) --> this causes subsequent t.show() command to fail.  \n\nSolution:\n(1) While the t.texture(...) function allows for 'texfunc=0' as an argument, for any number greater than 0, it expects a texfunc object.\n\nie:\nr=t.texfunc(2)\nt.texture('grey', color=(.5,.5,.5), texfunc=r)\n\nThis is not evident from the inline help & the interface doesn't complain when it's passed bad input - it just fails when t.show() is called (verbose mode reveals the tachyon parser's complaints).\n\n(2) The bug is that some of the predefined numbered textures require additional string input (eg. a file name for a texture map image/data) immediately after the texture number.  The texture number is passed in as a number.  I've made a workaround, making the \"type\" parameter into a string(see changes below), allowing for filenames to be specified when the texture number calls for it.  This is still a little troublesome in that because it's not obvious to me how to reference filenames of graphics created within Sage (maybe there should there be a toplevel \"fileref\" method to get a filesystem path reference to existing graphic image or dataset).  The same filereference problem presents if the user wants to use another graphic or datafile as a texture map.  \n\n##from : .../plot/tachyon.py...\n class Texfunc:\n  def __init__(self, type=0,center=(0,0,0), rotate=(0,0,0), scale=(1,1,1)):\n     self._type = type\n     self._center = center\n     self._rotate = rotate\n     self._scale = scale\n\n  def str(self):\n     if type == 0:\n          return \"0\"\n#  Old Code\n#     return \"\"\"%d center %s rotate %s scale %s\"\"\"%(self._type,          # <-- number\n#                                                   >tostr(self._center),\n#                                                   >tostr(self._rotate),\n#                                                    tostr(self._scale))\n# new code:\n     return \"\"\"%s center %s rotate %s scale %s\"\"\"%(tostr(self._type),          # <-- string\n                                                   >tostr(self._center),\n                                                   >tostr(self._rotate),\n                                                    tostr(self._scale))\n```\n",
     "created_at": "2007-11-28T13:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4819",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4803",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -154,15 +153,15 @@ This is not evident from the inline help & the interface doesn't complain when i
 
 ---
 
-archive/issue_comments_004820.json:
+archive/issue_comments_004804.json:
 ```json
 {
     "body": "Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part1.patch) by @williamstein created at 2007-12-02 06:05:24",
     "created_at": "2007-12-02T06:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4820",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4804",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -172,15 +171,15 @@ Attachment [trac799-part1.patch](tarball://root/attachments/some-uuid/ticket799/
 
 ---
 
-archive/issue_comments_004821.json:
+archive/issue_comments_004805.json:
 ```json
 {
     "body": "Attachment [trac799-part2.patch](tarball://root/attachments/some-uuid/ticket799/trac799-part2.patch) by @williamstein created at 2007-12-02 06:09:17",
     "created_at": "2007-12-02T06:09:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4821",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4805",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -190,15 +189,15 @@ Attachment [trac799-part2.patch](tarball://root/attachments/some-uuid/ticket799/
 
 ---
 
-archive/issue_comments_004822.json:
+archive/issue_comments_004806.json:
 ```json
 {
     "body": "These patches are definitely an improvement, and should go in.\n\nThere's still some more work to be done (documentation at least, perhaps some code too) to be able to use the full power of tachyon (like texture maps); but that can wait for later.",
     "created_at": "2007-12-02T07:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4822",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4806",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -210,15 +209,15 @@ There's still some more work to be done (documentation at least, perhaps some co
 
 ---
 
-archive/issue_comments_004823.json:
+archive/issue_comments_004807.json:
 ```json
 {
     "body": "Merged in 2.8.15.alpha2.",
     "created_at": "2007-12-02T07:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4823",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4807",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -228,15 +227,15 @@ Merged in 2.8.15.alpha2.
 
 ---
 
-archive/issue_comments_004824.json:
+archive/issue_comments_004808.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-02T07:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/799",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4824",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/799#issuecomment-4808",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

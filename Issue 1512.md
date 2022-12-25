@@ -6,15 +6,13 @@ archive/issues_001512.json:
     "body": "Assignee: @williamstein\n\n\n```\n\nWilliam Stein wrote:\n> On Dec 14, 2007 9:28 AM, Ted Kosan <ted.kosan@gmail.com> wrote:\n>> Jason wrote:\n>>\n>>> What about writing an openoffice function that converts an expression to\n>>> openoffice equation format?  For example, the above output is:\n>>>\n>>> {cos(1)} over {sin(1)} - {(sin(1)^2 + cos(1)^2) cdot (x-1)} over\n>>> {sin(1)^2} + {(cos(1) cdot sin(1)^2 + cos(1)^3) cdot ((x-1)^2)} over\n>>> {sin(1)^3}\n>>>\n>>> (just paste that into the equation editor of openoffice and the equation\n>>> pops up in your document).\n>>>\n>>> The syntax is looser than latex, but I think it's probably doable and\n>>> probably just a modification of the latex function.  While it might be\n>>> nice to insist on everyone downloading a latex macro and learning a bit\n>>> of latex, having an openoffice export function makes Sage that much more\n>>> accessible.\n>> I am in the process of writing educational materials which show high\n>> school students how to use SAGE with OpenOffice to create technical\n>> documents and an OpenOffice export function would be very helpful for\n>> this.  Does anyone have a feel for how difficult it would be to write\n>> a function like this?\n>\n> What needs to be done is to write in Python a latex --> open office format\n> converter, probably with a bunch of regexp's, etc.  How hard is that?\n\nTo get someone started, here are the rules I used above, with a bit of\nextra grouping (the {} brace pairs) to make sure things work out all right.\n\n\\frac{a}{b} -> {{a} over {b}}\n\n\\sin -> sin\n\n\\cos -> cos\n\n\\cdot -> cdot\n\nalso, I saw that:\n\n\\left( -> left (\n\\right) -> right )\n\netc.\n\nWhoever does it might click through the openoffice equation toolbar\nwhich gives the openoffice code for the various symbols.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1512\n\n",
     "created_at": "2007-12-14T21:20:43Z",
     "labels": [
-        "interfaces",
-        "major",
-        "enhancement"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "write sage --> open_office converter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1512",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -81,15 +79,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1512
 
 ---
 
-archive/issue_comments_009695.json:
+archive/issue_comments_009670.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to tkosan.",
     "created_at": "2007-12-16T08:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1512#issuecomment-9695",
-    "user": "tkosan"
+    "url": "https://github.com/sagemath/sagetest/issues/1512#issuecomment-9670",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tkosan"
 }
 ```
 
@@ -99,15 +97,15 @@ Changing assignee from @williamstein to tkosan.
 
 ---
 
-archive/issue_comments_009696.json:
+archive/issue_comments_009671.json:
 ```json
 {
     "body": "Doesn't use OOo MathML inside the ODF document? You can import MathML in OOo this way:\n\nWriter -> Insert -> Object -> Formula - then there: Open -> MathML 1.01\n\nSo I would suggest to write a **formula to MathML converter**, since this could be also used inside e.g. HTML pages. (firefox renders them ...)",
     "created_at": "2008-01-18T21:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1512#issuecomment-9696",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1512#issuecomment-9671",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -121,15 +119,15 @@ So I would suggest to write a **formula to MathML converter**, since this could 
 
 ---
 
-archive/issue_comments_009697.json:
+archive/issue_comments_009672.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-02-21T07:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1512#issuecomment-9697",
-    "user": "tkosan"
+    "url": "https://github.com/sagemath/sagetest/issues/1512#issuecomment-9672",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tkosan"
 }
 ```
 
@@ -139,15 +137,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_009698.json:
+archive/issue_comments_009673.json:
 ```json
 {
     "body": "The next major release of OpenOffice will have LaTeX capabilities so a LaTeX to open_office converter will not be needed.",
     "created_at": "2008-02-21T07:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1512#issuecomment-9698",
-    "user": "tkosan"
+    "url": "https://github.com/sagemath/sagetest/issues/1512#issuecomment-9673",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tkosan"
 }
 ```
 

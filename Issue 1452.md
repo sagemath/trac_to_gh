@@ -6,15 +6,14 @@ archive/issues_001452.json:
     "body": "Assignee: @mwhansen\n\nCC:  @wdjoyner\n\nRunning doctests on permgroup.py complains that file `id120.z` is missing. Indeed it is!\n\nIssue created by migration from https://trac.sagemath.org/ticket/1452\n\n",
     "created_at": "2007-12-10T19:29:19Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "GAP - id120.z file missing (?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1452",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @mwhansen
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1452
 
 ---
 
-archive/issue_comments_009348.json:
+archive/issue_comments_009323.json:
 ```json
 {
     "body": "Related to #950",
     "created_at": "2007-12-11T17:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9348",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9323",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -49,15 +48,15 @@ Related to #950
 
 ---
 
-archive/issue_comments_009349.json:
+archive/issue_comments_009324.json:
 ```json
 {
     "body": "NOTE!\n\nI forgot to mention, but this particular code has **HORRIBLE** memory leaks, and so in general it is a **very bad** idea to link this particular code in dynamically. Its executable files should be called directly, so that the leaks are gone as soon as it is finished. So I suppose this needs some more autoconf work...",
     "created_at": "2007-12-19T06:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9349",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9324",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -69,15 +68,15 @@ I forgot to mention, but this particular code has **HORRIBLE** memory leaks, and
 
 ---
 
-archive/issue_comments_009350.json:
+archive/issue_comments_009325.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-03-22T01:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9350",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +86,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_009351.json:
+archive/issue_comments_009326.json:
 ```json
 {
     "body": "This is a dupe of #2641 which also updates Guava to the 3.3 release.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-22T01:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9351",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9326",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +108,15 @@ Michael
 
 ---
 
-archive/issue_comments_009352.json:
+archive/issue_comments_009327.json:
 ```json
 {
     "body": "Resolution changed from duplicate to ",
     "created_at": "2008-03-30T18:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9352",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9327",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -127,15 +126,15 @@ Resolution changed from duplicate to
 
 ---
 
-archive/issue_comments_009353.json:
+archive/issue_comments_009328.json:
 ```json
 {
     "body": "Changing component from combinatorics to coding theory.",
     "created_at": "2008-03-30T18:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9353",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9328",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -145,15 +144,15 @@ Changing component from combinatorics to coding theory.
 
 ---
 
-archive/issue_comments_009354.json:
+archive/issue_comments_009329.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-03-30T18:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9354",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9329",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -163,15 +162,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_009355.json:
+archive/issue_comments_009330.json:
 ```json
 {
     "body": "Actually, #2641 doesn't seem to quite fix the problem. Although the compiler outputs the line:\n\n```\ngcc -O2 -o desauto \\\n\t  desauto.o addsgen.o bitmanp.o cdesauto.o chbase.o cmatauto.o \\\n\t  code.o compcrep.o compsg.o copy.o cparstab.o cstborb.o cstrbas.o \\\n\t  errmesg.o essentia.o factor.o field.o inform.o matrix.o new.o \\\n\t  oldcopy.o optsvec.o orbit.o orbrefn.o partn.o permgrp.o permut.o \\\n\t  primes.o ptstbref.o randgrp.o randschr.o readdes.o readgrp.o \\\n\t  readper.o rprique.o storage.o token.o util.o\n```\n\nThe output must be getting clobbered somewhere. I'm looking for it now...",
     "created_at": "2008-03-30T18:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9355",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9330",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -193,15 +192,15 @@ The output must be getting clobbered somewhere. I'm looking for it now...
 
 ---
 
-archive/issue_comments_009356.json:
+archive/issue_comments_009331.json:
 ```json
 {
     "body": "If I run `./configure` in the `src` directory, and then `./configure` and `make` in the guava directory, then the appropriate files show up.\n\n(A separate issue I notice is that other programs in Leon's code aren't compiled, such as `setstab`, and none of the `.sh` routines are moved anywhere.)",
     "created_at": "2008-03-30T18:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9356",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9331",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -213,15 +212,15 @@ If I run `./configure` in the `src` directory, and then `./configure` and `make`
 
 ---
 
-archive/issue_comments_009357.json:
+archive/issue_comments_009332.json:
 ```json
 {
     "body": "Changing status from reopened to new.",
     "created_at": "2008-03-30T18:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9357",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9332",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -231,15 +230,15 @@ Changing status from reopened to new.
 
 ---
 
-archive/issue_comments_009358.json:
+archive/issue_comments_009333.json:
 ```json
 {
     "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2008-03-30T18:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9358",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9333",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -249,15 +248,15 @@ Changing assignee from @mwhansen to @rlmill.
 
 ---
 
-archive/issue_comments_009359.json:
+archive/issue_comments_009334.json:
 ```json
 {
     "body": "I think two things need to happen.\n\n1. Either Guava should be updated to compile all of Leon, or Leon should be made its own spkg (in non-dynamic mode for now), since maybe some of Leon's functionality isn't specific to coding theory.\n\n2. Either way, the `spkg-install` for gap-4.4.10 needs to be updated to copy the pieces of Leon that do get compiled to the corresponding place in `$SAGE_LOCAL/lib`.",
     "created_at": "2008-03-30T19:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9359",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9334",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -271,15 +270,15 @@ I think two things need to happen.
 
 ---
 
-archive/issue_comments_009360.json:
+archive/issue_comments_009335.json:
 ```json
 {
     "body": "I'd be happy to make a new version of GUAVA which modifies the configure file so that \"all of Leon\" is compiled. \nI don't see why this is a defect though. Not trying to argue, just wondering what's the deal?\nAlso, I'm wondering if there is anything preventing Leon's (compiled) code from being used in SAGE as it is. At one point, there was an argument that the memory leaks barred this. With Brouwer's patch, perhaps this is fixed now?",
     "created_at": "2008-03-30T19:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9360",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9335",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -291,15 +290,15 @@ Also, I'm wondering if there is anything preventing Leon's (compiled) code from 
 
 ---
 
-archive/issue_comments_009361.json:
+archive/issue_comments_009336.json:
 ```json
 {
     "body": "Why was this reopened? The Guava ticket covers this problem.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-30T19:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9361",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9336",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -313,15 +312,15 @@ Michael
 
 ---
 
-archive/issue_comments_009362.json:
+archive/issue_comments_009337.json:
 ```json
 {
     "body": "Because there are substantial parts of Leon's programs missing from the install. Will post spkg later tonight.",
     "created_at": "2008-03-30T20:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9362",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9337",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -331,15 +330,15 @@ Because there are substantial parts of Leon's programs missing from the install.
 
 ---
 
-archive/issue_comments_009363.json:
+archive/issue_comments_009338.json:
 ```json
 {
     "body": "OK, here's the full deal:\n\n1. `Makefile.in` in `gap-4.4.10.p3/src/pkg/guava3.3` lists only the programs `desauto` and `wtdist`, while the `Makefile` in `gap-4.4.10.p3/src/pkg/guava3.3/src/leon/src` contains instructions and dependencies for all the programs, including `setstab` (set stabilizer), `cent` (centralizer and conjugacy), etc.\n\n2. There are a number of `.sh` files in `gap-4.4.10.p3/src/pkg/guava3.3/src/leon/src` which make calling the other programs for more questions easy.\n\n3. The issue of memory leaks prevented Leon being used as a dynamically linked library. Compiling them as they are here is perfectly fine, since the process quits as soon as the computation is done. The only problem is overhead.\n\n4. There are also certain no-no's which I figured out the better way to do when linking Leon in dynamically, but that never made it back to Guava proper. For example, in `Makefile.in`, mentioned above, there is the line `DEFINES = -DINT_SIZE=32`, when obviously the right way to do this is to get configure to tell you.\n\nWith David's permission, I'd like to fix all of these up for Guava 3.3.1, or 3.4 or something. In addition, I'd like to fix up the spkg-install to make all of Leon's programs a little more easily accessible from Sage.",
     "created_at": "2008-03-30T22:40:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9363",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9338",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -359,15 +358,15 @@ With David's permission, I'd like to fix all of these up for Guava 3.3.1, or 3.4
 
 ---
 
-archive/issue_comments_009364.json:
+archive/issue_comments_009339.json:
 ```json
 {
     "body": "PS - I should mention that originally I wasn't finding desauto or wtdist at all, and they *are* actually put somewhere, but my \"spotlight\" did not find them. Now I am using Google desktop.......",
     "created_at": "2008-03-30T22:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9364",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9339",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -377,15 +376,15 @@ PS - I should mention that originally I wasn't finding desauto or wtdist at all,
 
 ---
 
-archive/issue_comments_009365.json:
+archive/issue_comments_009340.json:
 ```json
 {
     "body": "Yes, please go ahead and fix all these, but please use 3.4 as the next version\nnumber instead of 3.3.1. Thanks! Let me know where the new tarball is so I can post it to the Guava webpage.",
     "created_at": "2008-03-30T22:52:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9365",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9340",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -396,15 +395,15 @@ number instead of 3.3.1. Thanks! Let me know where the new tarball is so I can p
 
 ---
 
-archive/issue_comments_009366.json:
+archive/issue_comments_009341.json:
 ```json
 {
     "body": "Latest Guava tarball here:\n\nhttp://sage.math.washington.edu/home/rlmill/guava3.4.tar\n\nLatest GAP package here:\n\nhttp://sage.math.washington.edu/home/rlmill/gap-4.4.10.p4.spkg\n\nWithin Guava, this ensures that all of Leon's programs are compiled, and makes sure that they are available in `bin/leon`, together with the shell scripts. I have also left the desauto and wtdist execs where they were for backwards compatibility.\n\nThe latest GAP package (I checked in David's p3 changes to the hg repo, as well as my own changes) makes sure that all the binaries from Guava are copied to `$SAGE_LOCAL/lib/gap-4.4.10/pkg/guava-3.4/bin`. The guava tarball is not necessary for Sage - its contents are contained in the GAP spkg.",
     "created_at": "2008-03-31T02:19:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9366",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9341",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -424,15 +423,15 @@ The latest GAP package (I checked in David's p3 changes to the hg repo, as well 
 
 ---
 
-archive/issue_comments_009367.json:
+archive/issue_comments_009342.json:
 ```json
 {
     "body": "Somebody has been adding crap files to the spkg again:\n\n```\n.hg\n._.hg\n.hgignore\n._.hgignore\npatches\n._patches\n._spkg-install\nspkg-install\n._SPKG.txt\nSPKG.txt\nsrc\n._src\n```\n\nI did skip the 1,200 others. But I will remove all those crap files.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-31T20:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9367",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9342",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -463,15 +462,15 @@ Michael
 
 ---
 
-archive/issue_comments_009368.json:
+archive/issue_comments_009343.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-31T20:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9368",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9343",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -481,15 +480,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009369.json:
+archive/issue_comments_009344.json:
 ```json
 {
     "body": "Merged the cleaned up gap.spkg in Sage 3.0.alpha0",
     "created_at": "2008-03-31T20:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9369",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1452#issuecomment-9344",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_003525.json:
     "body": "Assignee: @williamstein\n\nTake the static page at http://timothyclemans.com/nb_homepage/ and merge it into the Sage Notebook code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3525\n\n",
     "created_at": "2008-06-28T06:40:47Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- new welcome page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3525",
-    "user": "TimothyClemans"
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3525
 
 ---
 
-archive/issue_comments_024850.json:
+archive/issue_comments_024801.json:
 ```json
 {
     "body": "Attachment [extcode-3525.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525.patch) by TimothyClemans created at 2008-06-28 08:06:35",
     "created_at": "2008-06-28T08:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24850",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24801",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [extcode-3525.patch](tarball://root/attachments/some-uuid/ticket3525/
 
 ---
 
-archive/issue_comments_024851.json:
+archive/issue_comments_024802.json:
 ```json
 {
     "body": "Changing component from number theory to notebook.",
     "created_at": "2008-06-28T08:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24851",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24802",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -65,15 +63,15 @@ Changing component from number theory to notebook.
 
 ---
 
-archive/issue_comments_024852.json:
+archive/issue_comments_024803.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to TimothyClemans.",
     "created_at": "2008-06-28T08:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24852",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24803",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -83,15 +81,15 @@ Changing assignee from @williamstein to TimothyClemans.
 
 ---
 
-archive/issue_comments_024853.json:
+archive/issue_comments_024804.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-06-28T08:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24853",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24804",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -101,15 +99,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_024854.json:
+archive/issue_comments_024805.json:
 ```json
 {
     "body": "Attachment [sage-3525.patch](tarball://root/attachments/some-uuid/ticket3525/sage-3525.patch) by TimothyClemans created at 2008-06-28 08:07:56",
     "created_at": "2008-06-28T08:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24854",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24805",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -119,15 +117,15 @@ Attachment [sage-3525.patch](tarball://root/attachments/some-uuid/ticket3525/sag
 
 ---
 
-archive/issue_comments_024855.json:
+archive/issue_comments_024806.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_wstein\".",
     "created_at": "2008-06-28T08:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24855",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24806",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -137,15 +135,15 @@ Changing keywords from "" to "editor_wstein".
 
 ---
 
-archive/issue_comments_024856.json:
+archive/issue_comments_024807.json:
 ```json
 {
     "body": "From Harald Schilly:\n\n\n```\nLooks good, yes. Just small remarks what I would change...\n\n1) The border around the sign-in formular is thin. Why not the same as\nthose two below? I would suggest to make all three borders small...\n\n2) The top header is an image. The serif-italic letters don't look\nvery well on my screen. (no subpixel hinting compared to directly\nrendered italic letters on my lcd) .. I would suggest to not use an\nimage, just the text string with a fixed font size (16pt?, italic,\nserif) and absolute placement.\n\n3) The forgot password page does not exist. I think, it should look\nthe same, except the login box and the middle content replaced by an\nexplanation and so on.\n\n4) maybe less screenshots (just a 3x2 matrix) but with larger images?\nso that someone could see more!\n\n5) it's not xhtml valid\nI strongly suggest to use xhtml transitional, since this is better for\ncompatibility and browsers like ie6 work better with that. xhtml\nstrict is just some sort of a more theoretical wish that will never\ncome true ;)\nbut anyways, ending a formular input tag with /> is not ok. browsers\ndon't understand real xml ...\n\n6) maybe more margin-borders on the left and right side of the middle\ncontent, to give everything a bit more \"air\" so that it looks less\ntight...\n\ngreetings Harald\n\n\nOn Sat, Jun 28, 2008 at 08:38, William Stein <wstein@gmail.com> wrote:\n> What do you think of\n>\n> http://timothyclemans.com/nb_homepage/\n>\n> --\n> William Stein\n> Associate Professor of Mathematics\n> University of Washington\n> http://wstein.org\n>\n```\n",
     "created_at": "2008-06-28T10:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24856",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24807",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -204,15 +202,15 @@ On Sat, Jun 28, 2008 at 08:38, William Stein <wstein@gmail.com> wrote:
 
 ---
 
-archive/issue_comments_024857.json:
+archive/issue_comments_024808.json:
 ```json
 {
     "body": "used Tidy to deal with point 5 of Harald's criticism",
     "created_at": "2008-06-28T10:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24857",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24808",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -222,15 +220,15 @@ used Tidy to deal with point 5 of Harald's criticism
 
 ---
 
-archive/issue_comments_024858.json:
+archive/issue_comments_024809.json:
 ```json
 {
     "body": "Attachment [extcode-3525_2.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_2.patch) by @williamstein created at 2008-06-28 12:30:57",
     "created_at": "2008-06-28T12:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24858",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24809",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -240,15 +238,15 @@ Attachment [extcode-3525_2.patch](tarball://root/attachments/some-uuid/ticket352
 
 ---
 
-archive/issue_comments_024859.json:
+archive/issue_comments_024810.json:
 ```json
 {
     "body": "Regarding the negative review could you tell me if you want all of Harald's suggestions implemented? \n\n1) I can do easily by switching in the css which background is called for a:link and a:hover\n\n2) Maybe do this in another ticket if others also complain\n\n3) A very minimalistic \"account recovery\" page will be in sage-3.0.4. Anything regarding it should be a different ticket\n\n4) I don't want to change them because A) I like it the way it is B) it would be very time consuming for me\n\n5) Done\n\n6) Sure",
     "created_at": "2008-06-28T14:04:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24859",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24810",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -270,15 +268,15 @@ Regarding the negative review could you tell me if you want all of Harald's sugg
 
 ---
 
-archive/issue_comments_024860.json:
+archive/issue_comments_024811.json:
 ```json
 {
     "body": "For a positive review it is enough to do 1, 5, 6.",
     "created_at": "2008-06-28T14:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24860",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24811",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -288,15 +286,15 @@ For a positive review it is enough to do 1, 5, 6.
 
 ---
 
-archive/issue_comments_024861.json:
+archive/issue_comments_024812.json:
 ```json
 {
     "body": "Attachment [extcode-3525_3.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_3.patch) by TimothyClemans created at 2008-06-28 14:52:42\n\nmargins increased blue line under interactive computer programming changed to reflect new margins\n\nBorder for \"Sign up\" and \"Published worksheets\" is now 1px.",
     "created_at": "2008-06-28T14:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24861",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24812",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -310,15 +308,15 @@ Border for "Sign up" and "Published worksheets" is now 1px.
 
 ---
 
-archive/issue_comments_024862.json:
+archive/issue_comments_024813.json:
 ```json
 {
     "body": "Attachment [extcode-3525_4.patch](tarball://root/attachments/some-uuid/ticket3525/extcode-3525_4.patch) by TimothyClemans created at 2008-06-28 14:58:59\n\nforgot to change which images are preloaded (the ones for signup and published worksheets)",
     "created_at": "2008-06-28T14:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24862",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24813",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -330,15 +328,15 @@ forgot to change which images are preloaded (the ones for signup and published w
 
 ---
 
-archive/issue_comments_024863.json:
+archive/issue_comments_024814.json:
 ```json
 {
     "body": "In extcode-3525_3.patch I see \n\n\n```\ndiff -r 84e3731cc21b -r 40c4b0aa9491 notebook/images/head.gif\nBinary file notebook/images/head.gif has changed\n```\n\n\nIs the actual image stored in the patch? If not then how do I put package images for inclusion?",
     "created_at": "2008-06-28T21:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24863",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24814",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -357,15 +355,15 @@ Is the actual image stored in the patch? If not then how do I put package images
 
 ---
 
-archive/issue_comments_024864.json:
+archive/issue_comments_024815.json:
 ```json
 {
     "body": "extcode_combined.patch is a git style patch that should contained the required images",
     "created_at": "2008-07-06T02:37:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24864",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24815",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -375,15 +373,15 @@ extcode_combined.patch is a git style patch that should contained the required i
 
 ---
 
-archive/issue_comments_024865.json:
+archive/issue_comments_024816.json:
 ```json
 {
     "body": "Attachment [extcode_combined.patch](tarball://root/attachments/some-uuid/ticket3525/extcode_combined.patch) by TimothyClemans created at 2008-07-07 22:45:15\n\nThe combined extcode patch is mess. Various fixes aren't in the patch ...",
     "created_at": "2008-07-07T22:45:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24865",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24816",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -395,15 +393,15 @@ The combined extcode patch is mess. Various fixes aren't in the patch ...
 
 ---
 
-archive/issue_comments_024866.json:
+archive/issue_comments_024817.json:
 ```json
 {
     "body": "What is the status of this patch, Timothy?",
     "created_at": "2010-08-27T15:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24866",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24817",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -413,15 +411,15 @@ What is the status of this patch, Timothy?
 
 ---
 
-archive/issue_comments_024867.json:
+archive/issue_comments_024818.json:
 ```json
 {
     "body": "Changing keywords from \"editor_wstein\" to \"editor_wstein, stale\".",
     "created_at": "2010-08-27T15:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24867",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24818",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -431,15 +429,15 @@ Changing keywords from "editor_wstein" to "editor_wstein, stale".
 
 ---
 
-archive/issue_comments_024868.json:
+archive/issue_comments_024819.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2014-09-17T18:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24868",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24819",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -449,15 +447,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_024869.json:
+archive/issue_comments_024820.json:
 ```json
 {
     "body": "This is not a bad idea in general, but at this point the discussion about looks are subsumed into ideas about \"newUI\" and \"themes\" upstream.  Any new welcome page discussion should arrive there.  Sadly, wontfix is probably most appropriate for this six-year-old ticket.",
     "created_at": "2014-09-17T18:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24869",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24820",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -467,15 +465,15 @@ This is not a bad idea in general, but at this point the discussion about looks 
 
 ---
 
-archive/issue_comments_024870.json:
+archive/issue_comments_024821.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2014-09-18T17:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24870",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/3525#issuecomment-24821",
+    "user": "https://github.com/vbraun"
 }
 ```
 

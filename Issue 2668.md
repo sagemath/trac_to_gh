@@ -6,7 +6,7 @@ archive/issues_002668.json:
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: QQbar AA loads dumps save\n\n\n```\nsage: loads(dumps(QQbar.zeta(5))) == QQbar.zeta(5)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/sage_object.pyx in sage.structure.sage_object.loads()\n\n<type 'exceptions.RuntimeError'>: __new__() takes exactly 3 arguments (1 given)\ninvalid data stream\ninvalid load key, 'x'.\nUnable to load pickled data.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2668\n\n",
     "created_at": "2008-03-25T21:42:47Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002668.json:
     "title": "loads/dumps do not work with QQbar and AA",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2668",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -48,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2668
 
 ---
 
-archive/issue_comments_018367.json:
+archive/issue_comments_018328.json:
 ```json
 {
     "body": "Attachment [2668-ncalexan-QQbar-pickle-1.patch](tarball://root/attachments/some-uuid/ticket2668/2668-ncalexan-QQbar-pickle-1.patch) by @ncalexan created at 2008-03-26 18:57:36",
     "created_at": "2008-03-26T18:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18367",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18328",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -66,15 +66,15 @@ Attachment [2668-ncalexan-QQbar-pickle-1.patch](tarball://root/attachments/some-
 
 ---
 
-archive/issue_comments_018368.json:
+archive/issue_comments_018329.json:
 ```json
 {
     "body": "Mmmh, I think it is customary to use `loads(dumps(t)) == t` - you should check if `coverage` picks up on those doctests. It does usually complain if the `loads(dumps())` test isn't define since it pickling is required for DSage to work. Otherwise the patch looks nice, but cwitty should be the one to referee this.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-28T13:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18368",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18329",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -88,15 +88,15 @@ Michael
 
 ---
 
-archive/issue_comments_018369.json:
+archive/issue_comments_018330.json:
 ```json
 {
     "body": "Attachment [2668-qqbar-pickle-referee.patch](tarball://root/attachments/some-uuid/ticket2668/2668-qqbar-pickle-referee.patch) by cwitty created at 2008-03-28 14:45:58",
     "created_at": "2008-03-28T14:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18369",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18330",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -106,15 +106,15 @@ Attachment [2668-qqbar-pickle-referee.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_018370.json:
+archive/issue_comments_018331.json:
 ```json
 {
     "body": "Looks good.  \"sage -coverage\" does want doctests for `__reduce__` methods, so I copied Nick's doctests from the module header into the `__reduce__` methods in my attached patch.\n\nApply both patches.",
     "created_at": "2008-03-28T14:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18370",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18331",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -126,15 +126,15 @@ Apply both patches.
 
 ---
 
-archive/issue_comments_018371.json:
+archive/issue_comments_018332.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpah2",
     "created_at": "2008-03-28T18:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18371",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18332",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -144,15 +144,15 @@ Merged in Sage 2.11.alpah2
 
 ---
 
-archive/issue_comments_018372.json:
+archive/issue_comments_018333.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-28T18:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2668",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18372",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2668#issuecomment-18333",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

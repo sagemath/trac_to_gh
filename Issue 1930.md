@@ -6,7 +6,7 @@ archive/issues_001930.json:
     "body": "Assignee: mabshoff\n\nsubject says it all, a updated spkg is coming.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1930\n\n",
     "created_at": "2008-01-26T08:05:42Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001930.json:
     "title": "Sage 2.10.1.alpha2: R is broken for parallel make, rpy is broken for fresh installs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1930",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1930
 
 ---
 
-archive/issue_comments_012247.json:
+archive/issue_comments_012217.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc0/r-2.6.1.p11.spkg\n\nfixed the issue. There is a spkg-check failure, which is now #1936.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-26T10:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1930#issuecomment-12247",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1930#issuecomment-12217",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -59,15 +59,15 @@ Michael
 
 ---
 
-archive/issue_comments_012248.json:
+archive/issue_comments_012218.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-26T10:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1930#issuecomment-12248",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1930#issuecomment-12218",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +77,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_012249.json:
+archive/issue_comments_012219.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc0",
     "created_at": "2008-01-26T10:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1930#issuecomment-12249",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1930#issuecomment-12219",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -95,15 +95,15 @@ Merged in Sage 2.10.1.rc0
 
 ---
 
-archive/issue_comments_012250.json:
+archive/issue_comments_012220.json:
 ```json
 {
     "body": "Another updated r.spkg (which is also merged in 2.10.1.rc0) is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc0/r-2.6.1.p12.spkg\n\nIt removes the tar.gzs in Recommended and shrinks the spkgs by 3 mb. Once we build the recommended extensions we need to add the tar.gzs back.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-26T11:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1930#issuecomment-12250",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1930#issuecomment-12220",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

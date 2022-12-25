@@ -6,15 +6,14 @@ archive/issues_004366.json:
     "body": "Assignee: somebody\n\nCC:  @robertwb\n\nHi, Emmanuel Thom\u00e9 noted that\nthere is a speed/system call activity regression in between Sage 3.0.5 and 3.1.3.\nIf in Sage 3.1.3/3.1.4/3.2.alpha0 one issues something like\n\n```\nsage: time for i in range(10): float(1)/2\n```\n\nand looks at the same at the system call activity of this python \"sage.bin\" process (in another terminal with something like \"strace -p 'pidof sage.bin' -e trace='stat'\" under Linux, or using \"sudo fs_usage 4711\" under Mac OS X, 4711 being the sage.bin pid gotten e.g. via the activity tool), then one sees:\n\nThe (sage/python) sys.path is searched by the system call \"stat\" for \"coerce.pyx\", \"coerce_maps.pyx\", \"parent.pyx\" and \"integer.pyx\" many times, that whole path, and over and over again.\n\nThis does not happen under Sage 3.0.5.\n\nWillem Jan Palenstijn proposed this code fragment, which triggers the behaviour in Sage 3.2.alpha0, too:\n\n```\nsage: cm=sage.structure.element.get_coercion_model()\nsage: cm.canonical_coercion(float(1),1)\n```\n\nand noted that\n\n\"This seems to be the _record_exception() function in the coercion model.\"\n\n(See also the recent sage_devel thread started by Emmanuel Thom\u00e9 about this.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4366\n\n",
     "created_at": "2008-10-24T21:05:30Z",
     "labels": [
-        "coercion",
-        "major",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "sys.path is searched (\"stat\"ed) for *.pyx-files insanely often",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4366",
-    "user": "GeorgSWeber"
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 Assignee: somebody
@@ -57,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4366
 
 ---
 
-archive/issue_comments_032070.json:
+archive/issue_comments_032007.json:
 ```json
 {
     "body": "Changing assignee from somebody to GeorgSWeber.",
     "created_at": "2008-10-26T21:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32070",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32007",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -75,15 +74,15 @@ Changing assignee from somebody to GeorgSWeber.
 
 ---
 
-archive/issue_comments_032071.json:
+archive/issue_comments_032008.json:
 ```json
 {
     "body": "I know now how to change the code so that when we had before:\n\n```\nsage: time for i in range(10^4): float(1)/2\nCPU times: user 17.72 s, sys: 13.44 s, total: 31.16 s\nWall time: 31.20 s\n```\n\nthen after the changes we get:\n\n```\nsage: time for i in range(10^4): float(1)/2\nCPU times: user 0.37 s, sys: 0.00 s, total: 0.37 s\nWall time: 0.37 s\n```\n\nwhich is quite impressive, I think (the sys time is used up only by these insanely many calls to \"stat\")!\n\nEssentially all one has to do is not to call \"sys.exc_info()\" in \"_record_exception\" (file: sage/structure/coerce.pyx) unless you really want to do so. But to fix that nicely (e.g. not leaving a broken doctest) will take me another evening or two.",
     "created_at": "2008-10-26T21:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32071",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32008",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -111,15 +110,15 @@ Essentially all one has to do is not to call "sys.exc_info()" in "_record_except
 
 ---
 
-archive/issue_comments_032072.json:
+archive/issue_comments_032009.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-10-26T21:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32072",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32009",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -129,15 +128,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_032073.json:
+archive/issue_comments_032010.json:
 ```json
 {
     "body": "Very, very nice. Any chance that RobertWB might have some clue here? I would really like to have this fixed in 3.2 :)\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T21:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32073",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32010",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -151,15 +150,15 @@ Michael
 
 ---
 
-archive/issue_comments_032074.json:
+archive/issue_comments_032011.json:
 ```json
 {
     "body": "Coincidentally, I just responded to this thread on sage-devel. I'll repost here \n\n\n```\nThanks for tracking this down. Just out of curiosity, how does one decide if one \"really wants to.\" Ideally one could snapshot the traceback without touching every file involved.\n\nBTW, using RDF rather than float will be 10x faster in this case even after your speedup.\n\nsage: sage: time for i in range(10^4): RDF(1)/2\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n\n- Robert\n\n```\n\n\nThe point is that when something goes wrong, one wants to be able to ask \"what happened\" which is why these tracebacks are stored. Re-running the command may not give you all the information because of the caching involved. Is there a better way to get the traceback information than invoking sys.exc_info?",
     "created_at": "2008-10-27T16:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32074",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32011",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -186,15 +185,15 @@ The point is that when something goes wrong, one wants to be able to ask "what h
 
 ---
 
-archive/issue_comments_032075.json:
+archive/issue_comments_032012.json:
 ```json
 {
     "body": "Attachment [sagetrac-4366-first.patch](tarball://root/attachments/some-uuid/ticket4366/sagetrac-4366-first.patch) by GeorgSWeber created at 2008-10-27 23:14:21",
     "created_at": "2008-10-27T23:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32075",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32012",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -204,15 +203,15 @@ Attachment [sagetrac-4366-first.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_032076.json:
+archive/issue_comments_032013.json:
 ```json
 {
     "body": "Oops,\nI had cached this page in my browser so your point about caching completely went past me up to now.\n\nHmmmmmm.\n\nMy first feeling about this that whenever one gets a such failure, it is important to be able to reproduce it. If so, then this means you can \"rerun\" the code.\nIf not, then you are hunting some \"sporadic\" phantom.\nIn that case, one should have \"enabled the exception stack\" all the time.\n\nBut for everyday usage of Sage, it might be allowable to have this feature disabled, considering its costs. \n\nCheers,\ngsw",
     "created_at": "2008-10-27T23:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32076",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32013",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -234,15 +233,15 @@ gsw
 
 ---
 
-archive/issue_comments_032077.json:
+archive/issue_comments_032014.json:
 ```json
 {
     "body": "The coercion model caching what the right action is is essential to its speed, so the behavior remains the same but it remembers to not go down (all) the failed code paths the next time around. The only exceptions are float+ZZ and float+QQ. There's a ticket to handle these better. \n\nOne should be able to cache the exceptions *without* stating every file in the path, and I think this is what we should do.",
     "created_at": "2008-10-28T00:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32077",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32014",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -254,15 +253,15 @@ One should be able to cache the exceptions *without* stating every file in the p
 
 ---
 
-archive/issue_comments_032078.json:
+archive/issue_comments_032015.json:
 ```json
 {
     "body": "Replying to [comment:7 robertwb]:\n> The coercion model caching what the right action is is essential to its speed, so the behavior remains the same but it remembers to not go down (all) the failed code paths the next time around. The only exceptions are float+ZZ and float+QQ. There's a ticket to handle these better. \n\nWhich ticket would that be?\n\n> One should be able to cache the exceptions *without* stating every file in the path, and I think this is what we should do. \n\nI agree. The patch might solve the problem, but Robert's suggestion to solve the problem should be preferred.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-28T02:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32078",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32015",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -283,15 +282,15 @@ Michael
 
 ---
 
-archive/issue_comments_032079.json:
+archive/issue_comments_032016.json:
 ```json
 {
     "body": "Attachment [4366-coercion-traceback.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback.patch) by @robertwb created at 2008-10-28 06:56:09\n\napply this patch only",
     "created_at": "2008-10-28T06:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32079",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32016",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -303,15 +302,15 @@ apply this patch only
 
 ---
 
-archive/issue_comments_032080.json:
+archive/issue_comments_032017.json:
 ```json
 {
     "body": "As it turns out, it's the formating of the exceptions that's expensive, not the call to sys.exc_info. This is good news for us, as we can defer that to later. See attached patch.",
     "created_at": "2008-10-28T06:57:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32080",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32017",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -321,15 +320,15 @@ As it turns out, it's the formating of the exceptions that's expensive, not the 
 
 ---
 
-archive/issue_comments_032081.json:
+archive/issue_comments_032018.json:
 ```json
 {
     "body": "The aforementioned tickets would be #3938 and #2898",
     "created_at": "2008-10-28T06:59:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32081",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32018",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -339,15 +338,15 @@ The aforementioned tickets would be #3938 and #2898
 
 ---
 
-archive/issue_comments_032082.json:
+archive/issue_comments_032019.json:
 ```json
 {
     "body": "Excellent!\nAnd this is how solutions evolve:\n1. primitive (just comment out the last line of _record_exception)\n2. complicated (my patch)\n3. simple (Robert's patch)\n\nI have to go to work now, but I'll try hard to run and review the patch this evening.\n(It looks perfect at first sight.)\n\nCheers,\ngsw",
     "created_at": "2008-10-28T08:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32082",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32019",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -367,15 +366,15 @@ gsw
 
 ---
 
-archive/issue_comments_032083.json:
+archive/issue_comments_032020.json:
 ```json
 {
     "body": "With RobertWB's patch applied I am seeing one easy to fix doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha2$ ./sage -t -long devel/sage/sage/structure/coerce.pyx\nsage -t -long devel/sage/sage/structure/coerce.pyx          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha2/tmp/coerce.py\", line 331:\n    sage: cm.exception_stack()\nExpected:\n    [(<type 'exceptions.TypeError'>,  TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",),  <traceback object at ...>)]\nGot:\n    [(<type 'exceptions.TypeError'>, TypeError(\"BUG: the base_extend method must be defined for 'Monoid of ideals of Integer Ring' (class '<class 'sage.rings.ideal_monoid.IdealMonoid_c'>')\",), <traceback object at 0x2b75e90e8ef0>), (<type 'exceptions.TypeError'>, TypeError(\"no common canonical parent for objects with parents: 'Rational Field' and 'Finite Field of size 3'\",), <traceback object at 0x2b75fd781950>)]\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_9\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.alpha2/tmp/.doctest_coerce.py\n\t [2.9 s]\nexit code: 1024\n```\n",
     "created_at": "2008-10-28T12:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32083",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32020",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -405,15 +404,15 @@ exit code: 1024
 
 ---
 
-archive/issue_comments_032084.json:
+archive/issue_comments_032021.json:
 ```json
 {
     "body": "Ah, yes. That fix is fine to make (I saw it on my end, but thought it was due to an earlier patch I had in my repo changing some stuff).",
     "created_at": "2008-10-28T17:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32084",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32021",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -423,15 +422,15 @@ Ah, yes. That fix is fine to make (I saw it on my end, but thought it was due to
 
 ---
 
-archive/issue_comments_032085.json:
+archive/issue_comments_032022.json:
 ```json
 {
     "body": "Attachment [4366-coercion-traceback-fixed.patch](tarball://root/attachments/some-uuid/ticket4366/4366-coercion-traceback-fixed.patch) by GeorgSWeber created at 2008-10-28 20:41:11\n\napply this patch only",
     "created_at": "2008-10-28T20:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32085",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32022",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -443,15 +442,15 @@ apply this patch only
 
 ---
 
-archive/issue_comments_032086.json:
+archive/issue_comments_032023.json:
 ```json
 {
     "body": "Yep, this does the job.\n\nSince I had trouble to get hg / mercurial queues to produce me another patch on top of Robert's original patch (telling me \"abort: cannot commit over an applied mq patch\" in the course), I just hacked that single line to be fixed in Robert's patch and loaded up the result.\n\n(I'll find out how to do it correctly as soon as I did send this comment ...)\n\n`@`Robert:\n\nPlease take care with this hacked patch and your personal hg repo, the hacked patch still contains your original hg Node ID / parent strings ...\n\nCheers, gsw",
     "created_at": "2008-10-28T20:53:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32086",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32023",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -471,15 +470,15 @@ Cheers, gsw
 
 ---
 
-archive/issue_comments_032087.json:
+archive/issue_comments_032024.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-28T21:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32087",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32024",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -489,15 +488,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_032088.json:
+archive/issue_comments_032025.json:
 ```json
 {
     "body": "Merged 4366-coercion-traceback-fixed.patch in Sage 3.2.alpha2",
     "created_at": "2008-10-28T21:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4366",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32088",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4366#issuecomment-32025",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

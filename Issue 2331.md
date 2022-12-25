@@ -6,15 +6,14 @@ archive/issues_002331.json:
     "body": "Assignee: @malb\n\n* the superclass injection trick is a bad design decision\n* derivatives don't need to be handled by Singular\n* the `have_ring` option should go, because we don't need this dirty speed improvement anymore (we have libSingular)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2331\n\n",
     "created_at": "2008-02-27T11:04:18Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Polynomial_singular_repr is pretty messed up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2331",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2331
 
 ---
 
-archive/issue_comments_015592.json:
+archive/issue_comments_015557.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-20T15:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15592",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15557",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_015593.json:
+archive/issue_comments_015558.json:
 ```json
 {
     "body": "This is an enhancement.",
     "created_at": "2009-01-22T20:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15593",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15558",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -67,15 +66,15 @@ This is an enhancement.
 
 ---
 
-archive/issue_comments_015594.json:
+archive/issue_comments_015559.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-22T20:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15594",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15559",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_015595.json:
+archive/issue_comments_015560.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2022-06-05T05:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15595",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15560",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_015596.json:
+archive/issue_comments_015561.json:
 ```json
 {
     "body": "Item (3) is handled in #33949. The objectives of the other items are not clear and perhaps not valid after 14 years.",
     "created_at": "2022-06-05T05:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15596",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15561",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -121,15 +120,15 @@ Item (3) is handled in #33949. The objectives of the other items are not clear a
 
 ---
 
-archive/issue_comments_015597.json:
+archive/issue_comments_015562.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2022-06-16T20:11:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15597",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15562",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -139,15 +138,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_015598.json:
+archive/issue_comments_015563.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2022-08-02T06:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15598",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/2331#issuecomment-15563",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 

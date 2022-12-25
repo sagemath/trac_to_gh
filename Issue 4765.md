@@ -6,15 +6,14 @@ archive/issues_004765.json:
     "body": "Assignee: mabshoff\n\n\n```\nsage -t -long \"devel/sage/sage/rings/number_field/number_field_morphisms.pyx\"\n**********************************************************************\nFile \"/Users/mabshoff/sage-3.2.2.alpha1/devel/sage/sage/rings/number_field/number_field_morphisms.pyx\", line 214, in __main__.example_10\nFailed example:\n    matching_root(x**Integer(3)-Integer(1), CDF.gen(0))###line 227:_sage_    >>> matching_root(x^3-1, CDF.0)\nExpected:\n    -0.500000000000000 + 0.86602540378443...*I\nGot:\n    -0.500000000000001 + 0.866025403784439*I\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4765\n\n",
     "created_at": "2008-12-12T03:42:00Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Sage 3.2.2.alpha1: numerical noise in sage/rings/number_field/number_field_morphisms.pyx on OSX 10.4/G5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4765",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4765
 
 ---
 
-archive/issue_comments_036110.json:
+archive/issue_comments_036039.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-12T03:42:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36110",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36039",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -60,15 +59,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_036111.json:
+archive/issue_comments_036040.json:
 ```json
 {
     "body": "Attachment [trac_4765.patch](tarball://root/attachments/some-uuid/ticket4765/trac_4765.patch) by mabshoff created at 2008-12-12 13:52:50",
     "created_at": "2008-12-12T13:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36111",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36040",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -78,15 +77,15 @@ Attachment [trac_4765.patch](tarball://root/attachments/some-uuid/ticket4765/tra
 
 ---
 
-archive/issue_comments_036112.json:
+archive/issue_comments_036041.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-12-12T13:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36112",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36041",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -96,15 +95,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_036113.json:
+archive/issue_comments_036042.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.alpha2",
     "created_at": "2008-12-12T14:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36113",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36042",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +113,15 @@ Merged in Sage 3.2.2.alpha2
 
 ---
 
-archive/issue_comments_036114.json:
+archive/issue_comments_036043.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-12T14:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36114",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4765#issuecomment-36043",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

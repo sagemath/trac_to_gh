@@ -6,15 +6,14 @@ archive/issues_002610.json:
     "body": "Assignee: tba\n\n\n```\nHello,\n\nI think on\nhttp://www.sagemath.org/emacs/\na line, which connects the \".sage\" file-extension with python-mode,\nlike\n\n(setq auto-mode-alist (cons '(\"\\\\.sage\\\\'\" . python-mode) auto-mode-\nalist))\n\nis missing.\n\nWith best regards,\nLars Fischer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2610\n\n",
     "created_at": "2008-03-20T10:34:06Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "emacs -- fix typo in sagemath.org website",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2610",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2610
 
 ---
 
-archive/issue_comments_017914.json:
+archive/issue_comments_017876.json:
 ```json
 {
     "body": "Done - can somebody confirm this, so it can be closed?\n\nCheers,\n\nMichael",
     "created_at": "2008-03-20T11:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2610",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17914",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17876",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -68,15 +67,15 @@ Michael
 
 ---
 
-archive/issue_comments_017915.json:
+archive/issue_comments_017877.json:
 ```json
 {
     "body": "Changing assignee from tba to mabshoff.",
     "created_at": "2008-03-20T11:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2610",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17915",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17877",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -86,15 +85,15 @@ Changing assignee from tba to mabshoff.
 
 ---
 
-archive/issue_comments_017916.json:
+archive/issue_comments_017878.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-20T11:10:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2610",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17916",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17878",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -104,15 +103,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_017917.json:
+archive/issue_comments_017879.json:
 ```json
 {
     "body": "Fix confirmed",
     "created_at": "2008-03-20T11:11:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2610",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17917",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17879",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -122,15 +121,15 @@ Fix confirmed
 
 ---
 
-archive/issue_comments_017918.json:
+archive/issue_comments_017880.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-20T11:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2610",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17918",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17880",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -140,15 +139,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_017919.json:
+archive/issue_comments_017881.json:
 ```json
 {
     "body": "Ok, I can close this now since it has been confirmed.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-20T11:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2610",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17919",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2610#issuecomment-17881",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

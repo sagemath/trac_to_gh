@@ -6,15 +6,13 @@ archive/issues_003216.json:
     "body": "Assignee: timothyclemans\n\nWarning patch will depend on #3213 because user.py was modified for it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3216\n\n",
     "created_at": "2008-05-16T04:34:16Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- doctests for user.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3216",
-    "user": "TimothyClemans"
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: timothyclemans
@@ -30,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3216
 
 ---
 
-archive/issue_comments_022268.json:
+archive/issue_comments_022221.json:
 ```json
 {
     "body": "Attachment [3216.patch](tarball://root/attachments/some-uuid/ticket3216/3216.patch) by TimothyClemans created at 2008-05-16 05:38:02",
     "created_at": "2008-05-16T05:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22268",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -48,15 +46,15 @@ Attachment [3216.patch](tarball://root/attachments/some-uuid/ticket3216/3216.pat
 
 ---
 
-archive/issue_comments_022269.json:
+archive/issue_comments_022222.json:
 ```json
 {
     "body": "REVIEW:\n\nEven after the patch there is a nodoctest at the top of the file.  That turns off doctesting. \nI think this may have mislead you into thinking the doctests work.  Could you please delete\nnodoctest from the file, then fix all the doctest failures.  Thanks!\n\n```\nteragon-2:notebook was$ sage -t user.py \nsage -t  devel/sage-bugday12/sage/server/notebook/user.py   **********************************************************************\nFile \"/Users/was/build/build/sage-3.0.1/tmp/user.py\", line 72:\n    sage: user.set_password(self, 'Crrc!')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/build/sage-3.0.1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[4]>\", line 1, in <module>\n        user.set_password(self, 'Crrc!')###line 72:\n    sage: user.set_password(self, 'Crrc!')\n    NameError: name 'self' is not defined\n**********************************************************************\nFile \"/Users/was/build/build/sage-3.0.1/tmp/user.py\", line 73:\n    sage: old != user.password()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/was/build/build/sage-3.0.1/tmp/user.py\", line 85:\n    sage: user.set_hashed_password(self, 'Crrc!')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/build/sage-3.0.1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[3]>\", line 1, in <module>\n        user.set_hashed_password(self, 'Crrc!')###line 85:\n    sage: user.set_hashed_password(self, 'Crrc!')\n    NameError: name 'self' is not defined\n**********************************************************************\nFile \"/Users/was/build/build/sage-3.0.1/tmp/user.py\", line 86:\n    sage: user.password()\nExpected:\n    'Crrc!'\nGot:\n    'aamxw5LCYcWY.'\n**********************************************************************\nFile \"/Users/was/build/build/sage-3.0.1/tmp/user.py\", line 104:\n    sage: user.get_email()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/build/sage-3.0.1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[3]>\", line 1, in <module>\n        user.get_email()###line 104:\n    sage: user.get_email()\n    AttributeError: UserConfiguration instance has no attribute 'get_email'\n**********************************************************************\nFile \"/Users/was/build/build/sage-3.0.1/tmp/user.py\", line 106:\n    sage: user.set_email('bob@ilovepizza.gov')\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/build/sage-3.0.1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[4]>\", line 1, in <module>\n        user.set_email('bob@ilovepizza.gov')###line 106:\n    sage: user.set_email('bob@ilovepizza.gov')\n    AttributeError: UserConfiguration instance has no attribute 'set_email'\n**********************************************************************\nFile \"/Users/was/build/build/sage-3.0.1/tmp/user.py\", line 107:\n    sage: user.get_email()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/build/sage-3.0.1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[5]>\", line 1, in <module>\n        user.get_email()###line 107:\n    sage: user.get_email()\n    AttributeError: UserConfiguration instance has no attribute 'get_email'\n**********************************************************************\n3 items had failures:\n   2 of   6 in __main__.example_4\n   2 of   5 in __main__.example_5\n   3 of   6 in __main__.example_7\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /Users/was/build/build/sage-3.0.1/tmp/.doctest_user.py\n\t [2.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage-bugday12/sage/server/notebook/user.py\nTotal time for all tests: 2.2 seconds\nteragon-2:notebook was$ \n```\n",
     "created_at": "2008-05-19T04:55:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22269",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22222",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -161,15 +159,15 @@ teragon-2:notebook was$
 
 ---
 
-archive/issue_comments_022270.json:
+archive/issue_comments_022223.json:
 ```json
 {
     "body": "Attachment [3216_2.patch](tarball://root/attachments/some-uuid/ticket3216/3216_2.patch) by TimothyClemans created at 2008-05-19 18:58:51",
     "created_at": "2008-05-19T18:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22270",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22223",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -179,15 +177,15 @@ Attachment [3216_2.patch](tarball://root/attachments/some-uuid/ticket3216/3216_2
 
 ---
 
-archive/issue_comments_022271.json:
+archive/issue_comments_022224.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_wstein\".",
     "created_at": "2008-06-15T21:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22271",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22224",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -197,15 +195,15 @@ Changing keywords from "" to "editor_wstein".
 
 ---
 
-archive/issue_comments_022272.json:
+archive/issue_comments_022225.json:
 ```json
 {
     "body": "apply all three patches including this one, which makes things professional instead of \"pizza\"",
     "created_at": "2008-06-16T04:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22272",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22225",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -215,15 +213,15 @@ apply all three patches including this one, which makes things professional inst
 
 ---
 
-archive/issue_comments_022273.json:
+archive/issue_comments_022226.json:
 ```json
 {
     "body": "Attachment [sage-3216-prof.patch](tarball://root/attachments/some-uuid/ticket3216/sage-3216-prof.patch) by @williamstein created at 2008-06-16 04:45:44",
     "created_at": "2008-06-16T04:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22273",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22226",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -233,15 +231,15 @@ Attachment [sage-3216-prof.patch](tarball://root/attachments/some-uuid/ticket321
 
 ---
 
-archive/issue_comments_022274.json:
+archive/issue_comments_022227.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha0",
     "created_at": "2008-06-23T12:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22274",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22227",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -251,15 +249,15 @@ Merged in Sage 3.0.4.alpha0
 
 ---
 
-archive/issue_comments_022275.json:
+archive/issue_comments_022228.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-23T12:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22275",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3216#issuecomment-22228",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

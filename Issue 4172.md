@@ -6,15 +6,14 @@ archive/issues_004172.json:
     "body": "Assignee: mabshoff\n\n\n```\nsage: import gc\nsage: gc.isenabled()\nTrue\nsage: %timeit raise RuntimeError, \"test\"\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/Volumes/Place/anakha/Applications/sage/devel/sage-tri/sage/geometry/<ipython console> in <module>()\n\n/Volumes/Place/anakha/Applications/sage/local/lib/python2.5/site-packages/IPython/iplib.py in ipmagic(self, arg_s)\n    946         else:\n    947             magic_args = self.var_expand(magic_args,1)\n--> 948             return fn(magic_args)\n    949 \n    950     def ipalias(self,arg_s):\n\n/Volumes/Place/anakha/Applications/sage/local/lib/python2.5/site-packages/IPython/Magic.py in magic_timeit(self, parameter_s)\n   1779             for i in range(1, 10):\n   1780                 number *= 10\n-> 1781                 if timer.timeit(number) >= 0.2:\n   1782                     break\n   1783         \n\n/Volumes/Place/anakha/Applications/sage/local/lib/python/timeit.py in timeit(self, number)\n    159         gcold = gc.isenabled()\n    160         gc.disable()\n--> 161         timing = self.inner(it, self.timer)\n    162         if gcold:\n    163             gc.enable()\n\n/Volumes/Place/anakha/Applications/sage/devel/sage-tri/sage/geometry/<magic-timeit> in inner(_it, _timer)\n\nRuntimeError: test\nsage: gc.isenabled()\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4172\n\n",
     "created_at": "2008-09-23T05:44:42Z",
     "labels": [
-        "memleak",
-        "major",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "exception in timeit permanetly disables gc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4172",
-    "user": "anakha"
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 Assignee: mabshoff
@@ -67,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4172
 
 ---
 
-archive/issue_comments_030276.json:
+archive/issue_comments_030215.json:
 ```json
 {
     "body": "Patch is up at #4353",
     "created_at": "2008-10-23T21:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4172",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4172#issuecomment-30276",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4172#issuecomment-30215",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +84,15 @@ Patch is up at #4353
 
 ---
 
-archive/issue_comments_030277.json:
+archive/issue_comments_030216.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-10-23T21:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4172",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4172#issuecomment-30277",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4172#issuecomment-30216",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

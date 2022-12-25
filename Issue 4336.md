@@ -6,7 +6,7 @@ archive/issues_004336.json:
     "body": "Assignee: cwitty\n\nCC:  @robertwb\n\nKeywords: attachments, cython\n\nI attached a pyx-file:\n\n```\nsage: attach f5.pyx\nCompiling /home/king/Projekte/f5/f5.pyx...\n```\n\n\nThen I changed the file on the disk, and pressed the `Enter` key in Sage. This should result in a recompilation of `f5.pyx`, but instead I got this traceback:\n\n```\nsage:\nCompiling /home/king/Projekte/f5/f5.pyx...\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/misc/interpreter.pyc in sage_prefilter(self, block, continuation)\n    394         for i in range(len(B)):\n    395             L = B[i]\n--> 396             M = do_prefilter_paste(L, continuation or (not first))\n    397             first = False\n    398             # The L[:len(L)-len(L.lstrip())]  business here preserves\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/misc/interpreter.pyc in do_prefilter_paste(line, continuation)\n    190                         _ip.runlines('%%run -i \"%s\"'%preparse_file_named(F))\n    191                     elif F.endswith('.spyx') or F.endswith('.pyx'):\n--> 192                         X = load_cython(F)\n    193                         __IPYTHON__.push(X)\n    194                     else:\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/misc/interpreter.pyc in load_cython(name)\n    340     cur = os.path.abspath(os.curdir)\n    341     try:\n--> 342         mod, dir  = cython.cython(name, compile_message=True, use_cache=True)\n    343     except (IOError, OSError, RuntimeError), msg:\n    344         print \"Error compiling cython file:\\n%s\"%msg\n\n/home/king/SAGE/devel/sage-3.1.4/local/lib/python2.5/site-packages/sage/misc/cython.pyc in cython(filename, verbose, compile_message, use_cache, create_local_c_file, annotate, sage_namespace, create_local_so_file)\n    311                                         for fname in additional_source_files])\n    312\n--> 313     pyx = '%s/%s.pyx'%(build_dir, name)\n    314     open(pyx,'w').write(F)\n    315     setup=\"\"\"\n\nUnboundLocalError: local variable 'name' referenced before assignment\n```\n\n\nAfterwards, leaving Sage was impossible using `quit` -- I got the same traceback again and had to quit with `Ctrl-D`.\n\nI think the problem is in lines 299-311 of `cython.py`, which is\n\n```\n    if create_local_so_file:\n        name = base\n    else:\n        global sequence_number\n        if not sequence_number.has_key(base):\n            sequence_number[base] = 0\n            name = '%s_%s'%(base, sequence_number[base])\n\n            # increment the sequence number so will use a different one next time.\n            sequence_number[base] += 1\n\n    additional_source_files = \",\".join([\"'\"+os.path.abspath(os.curdir)+\"/\"+fname+\"'\" \\\n                                        for fname in additional_source_files])\n```\n\n\nIf I'm not mistaken, there is a wrong indentation, and it should be\n\n```\n    if create_local_so_file:\n        name = base\n    else:\n        global sequence_number\n        if not sequence_number.has_key(base):\n            sequence_number[base] = 0\n        name = '%s_%s'%(base, sequence_number[base])\n\n        # increment the sequence number so will use a different one next time.\n        sequence_number[base] += 1\n\n    additional_source_files = \",\".join([\"'\"+os.path.abspath(os.curdir)+\"/\"+fname+\"'\" \\\n                                        for fname in additional_source_files])\n```\n\n\nProblem 1: I have no idea how I can force Sage to use the modified `cython.py`, hence I can not test my changes. \n\nProblem 2: `hg_sage.commit()` did not work, since it claimed that nothing was changed (although `cython.py` did change). So, no patch.\n\nCan you give me a solution to Problems 1 and 2? And does my suggested solution works?\nCheers\n      Simon\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4336\n\n",
     "created_at": "2008-10-22T16:36:08Z",
     "labels": [
-        "misc",
+        "component: misc",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004336.json:
     "title": "[with suggested solution] Bug in handling attached pyx-files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4336",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: cwitty
@@ -128,15 +128,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4336
 
 ---
 
-archive/issue_comments_031798.json:
+archive/issue_comments_031736.json:
 ```json
 {
     "body": "Added RobertWB to the CC since he worked on the Cython recompilation patch. \n\nSimon: Are you sure you edited the right cython.py - there are several copies in the tree.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-22T19:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31798",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31736",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -152,15 +152,15 @@ Michael
 
 ---
 
-archive/issue_comments_031799.json:
+archive/issue_comments_031737.json:
 ```json
 {
     "body": "Dear Michael,\n\nReplying to [comment:1 mabshoff]:\n> Simon: Are you sure you edited the right cython.py - there are several copies in the tree.\n\nI chose local/lib/python2.5/site-packages/sage/misc/cython.py\n\nWhich should I take instead?",
     "created_at": "2008-10-22T19:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31799",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31737",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -177,15 +177,15 @@ Which should I take instead?
 
 ---
 
-archive/issue_comments_031800.json:
+archive/issue_comments_031738.json:
 ```json
 {
     "body": "Replying to [comment:2 SimonKing]:\n> Dear Michael,\n> \n> Replying to [comment:1 mabshoff]:\n> > Simon: Are you sure you edited the right cython.py - there are several copies in the tree.\n> \n> I chose local/lib/python2.5/site-packages/sage/misc/cython.py\n> \n> Which should I take instead?\n\nTake the one in $SAGE_ROOT/devel/sage/..\n\nCheers,\n\nMichael",
     "created_at": "2008-10-22T19:19:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31800",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31738",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -209,15 +209,15 @@ Michael
 
 ---
 
-archive/issue_comments_031801.json:
+archive/issue_comments_031739.json:
 ```json
 {
     "body": "Dear Michael, dear Robert,\n\nReplying to [comment:3 mabshoff]:\n> > Which should I take instead?\n> \n> Take the one in $SAGE_ROOT/devel/sage/..\n\nDid already. It works, the traceback disappears. Patch'll follow!\n\nCheers,\n    Simon",
     "created_at": "2008-10-22T19:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31801",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31739",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -237,15 +237,15 @@ Cheers,
 
 ---
 
-archive/issue_comments_031802.json:
+archive/issue_comments_031740.json:
 ```json
 {
     "body": "Attachment [attach_bugfix.patch](tarball://root/attachments/some-uuid/ticket4336/attach_bugfix.patch) by @simon-king-jena created at 2008-10-22 19:27:02\n\nFixes a bug that occurs when an attached .pyx file is changed",
     "created_at": "2008-10-22T19:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31802",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31740",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -257,15 +257,15 @@ Fixes a bug that occurs when an attached .pyx file is changed
 
 ---
 
-archive/issue_comments_031803.json:
+archive/issue_comments_031741.json:
 ```json
 {
     "body": "Simon's patch is correct. This was actually broken by the patch in #4238.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-27T02:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31803",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31741",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -279,15 +279,15 @@ Michael
 
 ---
 
-archive/issue_comments_031804.json:
+archive/issue_comments_031742.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-27T02:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31804",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31742",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -297,15 +297,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_031805.json:
+archive/issue_comments_031743.json:
 ```json
 {
     "body": "Merged in Sage 3.2.alpha1",
     "created_at": "2008-10-27T02:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31805",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4336#issuecomment-31743",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

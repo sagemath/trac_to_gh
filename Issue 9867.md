@@ -6,15 +6,13 @@ archive/issues_009867.json:
     "body": "Assignee: jason, was\n\nCC:  @jasongrout\n\nThe highest-level ResT files for 3d plotting are ... not so informative.  See for instance [this](http://www.sagemath.org/doc/reference/sage/plot/plot3d/examples.html) page.\n\nThis ticket would make the top-level 3d plotting page look as nice as [this](http://www.sagemath.org/doc/reference/sage/plot/plot.html) one, with lots of discussion about options - and in particular putting text on a 3D plot, since [this](http://groups.google.com/group/sage-support/browse_thread/thread/46b1fef4c02dc650/c25cdb155dcccc56?show_docid=c25cdb155dcccc56&pli=1) thread mentioned it.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9868\n\n",
     "created_at": "2010-09-07T16:13:55Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Improve plot3d documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9867",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: jason, was
@@ -34,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9868
 
 ---
 
-archive/issue_comments_097487.json:
+archive/issue_comments_097325.json:
 ```json
 {
     "body": "As a different ticket, we should make text work with 2d or 3d plots, like most other plotting functions do.",
     "created_at": "2010-09-07T16:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97487",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97325",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -52,15 +50,15 @@ As a different ticket, we should make text work with 2d or 3d plots, like most o
 
 ---
 
-archive/issue_comments_097488.json:
+archive/issue_comments_097326.json:
 ```json
 {
     "body": "Replying to [comment:1 jason]:\n> As a different ticket, we should make text work with 2d or 3d plots, like most other plotting functions do.\nCan you clarify what you mean by that?  Do you mean a `.3d()` method (or whatever it's called)?  Or do you mean like how `point` or `line` know whether there are two or three coordinates?",
     "created_at": "2010-09-07T16:19:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97488",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97326",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -72,15 +70,15 @@ Can you clarify what you mean by that?  Do you mean a `.3d()` method (or whateve
 
 ---
 
-archive/issue_comments_097489.json:
+archive/issue_comments_097327.json:
 ```json
 {
     "body": "Make text() behave like point() or line().",
     "created_at": "2010-09-07T16:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97489",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9867#issuecomment-97327",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

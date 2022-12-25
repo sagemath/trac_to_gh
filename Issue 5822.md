@@ -6,15 +6,14 @@ archive/issues_005822.json:
     "body": "Assignee: @williamstein\n\nCC:  @robertwb @craigcitro\n\nIt would be very useful if for a congruence subgroup G and an integer d coprime to the level N of G, one could compute the action on cusps (modulo G) of `tau_d \\in Gal(Q(zeta_N)/Q)`.   This action is described on page 12 of Steven's \"Arithmetic on Modular Curves\". \n\nNote that Sage does not have a data type for \"equivalence classes of cusps\" yet, and the action is only well defined on equivalence classes.  However, one easy thing to implement (hopefully) is a function so that if G is a congruence subgroup, then we have\n\n```\nsage: G.galois_action_on_cusps(d, alpha)\n```\n\nwhich returns a cusp beta that is in the class of tau_d([alpha]).\n\nLater when there is a data structure for equivalence classes of cusps, and also one for these Galois groups (as abstract groups), then that will call the above function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5822\n\n",
     "created_at": "2009-04-19T03:54:35Z",
     "labels": [
-        "number theory",
-        "minor",
-        "enhancement"
+        "component: number theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's \"Arithmetic on Modular Curves\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5822",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5822
 
 ---
 
-archive/issue_comments_045751.json:
+archive/issue_comments_045664.json:
 ```json
 {
     "body": "Attachment [trac_5822.patch](tarball://root/attachments/some-uuid/ticket5822/trac_5822.patch) by @williamstein created at 2009-04-19 06:01:46",
     "created_at": "2009-04-19T06:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45751",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45664",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -59,15 +58,15 @@ Attachment [trac_5822.patch](tarball://root/attachments/some-uuid/ticket5822/tra
 
 ---
 
-archive/issue_comments_045752.json:
+archive/issue_comments_045665.json:
 ```json
 {
     "body": "NOTE: What I ended up implementing doesn't have an API exactly the same as the description in the ticket.  Please read the patch to see how to use it.",
     "created_at": "2009-04-19T06:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45752",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45665",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,15 +76,15 @@ NOTE: What I ended up implementing doesn't have an API exactly the same as the d
 
 ---
 
-archive/issue_comments_045753.json:
+archive/issue_comments_045666.json:
 ```json
 {
     "body": "Just a quick comment: Maite Aranes and I have been implementing number field cusps, and we decided not to have a class for cusp equivalence classes modulo a congruence subgroup, the reason being that there was no such class over Q.  So if the consensus is that such a class should exist, we'll include it over number fields too.\n\nOur NFcusps code has not yet been put out to review, but probably should be soon - -it has had a lot os spinoffs in number field utilities, which have all now been merged.",
     "created_at": "2009-04-20T08:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45753",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45666",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -97,15 +96,15 @@ Our NFcusps code has not yet been put out to review, but probably should be soon
 
 ---
 
-archive/issue_comments_045754.json:
+archive/issue_comments_045667.json:
 ```json
 {
     "body": "Positive review:  applies ok to 3.4.1.rc3, does what it says and works.\n\nComment:  OK, so this is how Galois acts, but would it not be a good idea to also mention that this gives the action of the so-called diamond operators?   i.e. the standard operation of `(Z/NZ)^* = Gamma_0(N)/Gamma_1(N)` ?  I looked to see if they were already defined, e.g. on ManinSymbols, but the only reference to \"diamond\" which search_src() revealed was a reference to the book by D & Shurman!\n\nI would know the answer to the above if I had got further through the modular/modsym directory on the last docday, but doing just two files took up all the time I had.  And now term has started.",
     "created_at": "2009-04-20T10:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45754",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45667",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -119,15 +118,15 @@ I would know the answer to the above if I had got further through the modular/mo
 
 ---
 
-archive/issue_comments_045755.json:
+archive/issue_comments_045668.json:
 ```json
 {
     "body": "> Just a quick comment: Maite Aranes and I have been implementing number \n> field cusps, and we decided not to have a class for cusp equivalence \n> classes modulo a congruence subgroup, the reason being that there \n> was no such class over Q. So if the consensus is that such a class \n> should exist, we'll include it over number fields too. \n\nI think it would be very natural to have a class for the set of cusps modulo a congruence subgroup.   The only reason Sage doesn't have that now is that I didn't have time yet to implement it.",
     "created_at": "2009-04-20T15:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45755",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45668",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -143,15 +142,15 @@ I think it would be very natural to have a class for the set of cusps modulo a c
 
 ---
 
-archive/issue_comments_045756.json:
+archive/issue_comments_045669.json:
 ```json
 {
     "body": "Merged in Sage 3.4.2.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-23T07:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45756",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45669",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -165,15 +164,15 @@ Michael
 
 ---
 
-archive/issue_comments_045757.json:
+archive/issue_comments_045670.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-23T07:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45757",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5822#issuecomment-45670",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_005685.json:
     "body": "Assignee: somebody\n\nKeywords: nth root rational integer\n\nAs discussed here: http://groups.google.co.uk/group/sage-nt/browse_thread/thread/4c6e60b6a20cabae#\n\nI do not like this inconsistency between ZZ and QQ:\n\n\n```\nsage: a=ZZ(8)\nsage: a.nth_root(3)\n2\nsage: b=QQ(8)\nsage: b.nth_root(3)\n2\nsage: a.nth_root(2)\n2\nsage: b.nth_root(2)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/masgaj/.sage/temp/host_56_150/13463/_home_masgaj_sage_egros_sage_5.py\nin <module>()\n\n/local/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/rational.so\nin sage.rings.rational.Rational.nth_root\n(sage/rings/rational.c:8888)()\n\nValueError: not a perfect nth power\n```\n\n\nI cannot think of a reason why we have an nth_root function on\nintegers which silently truncates a real root for positive argument\nand gives a ValueError for negative ones.\n\nThe attached ticket deals with this, and at the same time adds a couple of extra utilities which I needed for rational numbers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5685\n\n",
     "created_at": "2009-04-04T20:55:32Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "enhanced nth_root in ZZ and QQ and related utilities",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5685",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: somebody
@@ -64,15 +62,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5685
 
 ---
 
-archive/issue_comments_044451.json:
+archive/issue_comments_044366.json:
 ```json
 {
     "body": "Applies to 3.4.1.alpha0",
     "created_at": "2009-04-04T20:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44451",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44366",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -82,15 +80,15 @@ Applies to 3.4.1.alpha0
 
 ---
 
-archive/issue_comments_044452.json:
+archive/issue_comments_044367.json:
 ```json
 {
     "body": "Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket5685/nth_root.patch) by @JohnCremona created at 2009-04-04 20:56:52",
     "created_at": "2009-04-04T20:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44452",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44367",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -100,15 +98,15 @@ Attachment [nth_root.patch](tarball://root/attachments/some-uuid/ticket5685/nth_
 
 ---
 
-archive/issue_comments_044453.json:
+archive/issue_comments_044368.json:
 ```json
 {
     "body": "* The new code you added to extended_integer_ring.py is this:\n\n```\n \t199\t    def nth_root(self, n, truncate_mode=0): \n \t200\t        temp = Integer.nth_root(self, n, truncate_mode) \n \t201\t        if truncate_mode: \n \t202\t            return self.parent()(temp[0]), temp[1]\n```\n\nThere is no documentation or docstring or doctests.\n\n* In integer.pyx:\n\n```\ndef nth_root(self, int n, int truncate_mode=0): \n```\n\nShould the truncate_mode be of type bint (=boolean int)?\n\nOtherwise, I like this patch. \n\n -- William",
     "created_at": "2009-04-10T14:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44453",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44368",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -139,15 +137,15 @@ Otherwise, I like this patch.
 
 ---
 
-archive/issue_comments_044454.json:
+archive/issue_comments_044369.json:
 ```json
 {
     "body": "Thanks for the review (and implied joke!).  I will add tests, and change int to bint (which I did not know about...)",
     "created_at": "2009-04-10T14:54:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44454",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44369",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -157,15 +155,15 @@ Thanks for the review (and implied joke!).  I will add tests, and change int to 
 
 ---
 
-archive/issue_comments_044455.json:
+archive/issue_comments_044370.json:
 ```json
 {
     "body": "Attachment [trac_5685.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685.patch) by @JohnCremona created at 2009-04-10 15:28:18\n\nI have added a new patch which replaces the previous one and adds a docstring as requested, and changes the int type to bint.  I wanted to add a doctest which tests the nth_root() function on an Infinite value, but totally failed to construct such a value in the correct class.  This could be revisited when the person who wrote this class documents some more basic things like that.",
     "created_at": "2009-04-10T15:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44455",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44370",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -177,15 +175,15 @@ I have added a new patch which replaces the previous one and adds a docstring as
 
 ---
 
-archive/issue_comments_044456.json:
+archive/issue_comments_044371.json:
 ```json
 {
     "body": "I'm fine with this patch.  John, if you want to polish it some more, this error message reads funny:\n\n\n```\nsage: a = 9\nsage: a.nth_root(3)\n...\nValueError: 9 is not an 3'th power\n```\n",
     "created_at": "2009-04-12T04:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44456",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44371",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -204,15 +202,15 @@ ValueError: 9 is not an 3'th power
 
 ---
 
-archive/issue_comments_044457.json:
+archive/issue_comments_044372.json:
 ```json
 {
     "body": "Apply all three patches",
     "created_at": "2009-04-12T10:36:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44457",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44372",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -222,15 +220,15 @@ Apply all three patches
 
 ---
 
-archive/issue_comments_044458.json:
+archive/issue_comments_044373.json:
 ```json
 {
     "body": "Attachment [trac_5685_extra.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_extra.patch) by @JohnCremona created at 2009-04-12 10:38:05\n\nThe extra patch does the suggested polishing, by adding a method to the integer class, ordinal_str(), which adds the correct suffix ('st', 'nd', 'th'), and then uses that.  I knew of one other place where similar messages were output in rings/number_fields/order.py and changed that too.  I hope I got it right!  Suitable doctests have been added.\n\nI made the 3rd patch based on 3.4.1.rc2 + the first patch, forgetting the second, so I hope it applies ok.",
     "created_at": "2009-04-12T10:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44458",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44373",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -244,15 +242,15 @@ I made the 3rd patch based on 3.4.1.rc2 + the first patch, forgetting the second
 
 ---
 
-archive/issue_comments_044459.json:
+archive/issue_comments_044374.json:
 ```json
 {
     "body": "Hmm, this patch set depends on the existence of sage/rings/extended_integer_ring.py which was removed in #5735. Could you rebase these three patches or is the removal of that file an issue? \n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T06:08:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44459",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -266,15 +264,15 @@ Michael
 
 ---
 
-archive/issue_comments_044460.json:
+archive/issue_comments_044375.json:
 ```json
 {
     "body": "Replying to [comment:7 mabshoff]:\n> Hmm, this patch set depends on the existence of sage/rings/extended_integer_ring.py which was removed in #5735. Could you rebase these three patches or is the removal of that file an issue? \n> \n> Cheers,\n> \n> Michael\nThat should not be an issue at all, just ignore the bit of the patch which touches the removed file.  I can do it but not right now, duty calls.   John",
     "created_at": "2009-04-13T09:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44460",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44375",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -290,15 +288,15 @@ That should not be an issue at all, just ignore the bit of the patch which touch
 
 ---
 
-archive/issue_comments_044461.json:
+archive/issue_comments_044376.json:
 ```json
 {
     "body": "Replying to [comment:8 cremona]:\n\nHi John,\n\n> That should not be an issue at all, just ignore the bit of the patch which touches the removed file.  I can do it but not right now, duty calls.   John\n\nOk, I will take care of this in the morning. I know also know why RobertWB's patch at #5735 had rejection issues since he must have had this patch in his que.\n\nI am reinstating the positive review and will merge all three patches into one modulo the changes for files that no longer exist.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T09:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44461",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44376",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -320,15 +318,15 @@ Michael
 
 ---
 
-archive/issue_comments_044462.json:
+archive/issue_comments_044377.json:
 ```json
 {
     "body": "replace ALL the above, apply after #5735 patches",
     "created_at": "2009-04-13T13:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44462",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44377",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -338,15 +336,15 @@ replace ALL the above, apply after #5735 patches
 
 ---
 
-archive/issue_comments_044463.json:
+archive/issue_comments_044378.json:
 ```json
 {
     "body": "Attachment [trac_5685_new.patch](tarball://root/attachments/some-uuid/ticket5685/trac_5685_new.patch) by @JohnCremona created at 2009-04-13 13:37:14\n\nI have uploaded a new rebased patch replacing all three (in fact the first was already subsumed into the second), based on 3.4.1.rc2 + patches at #5735 (deleteding extended_integer, extended_rational).  Hope this works ok.",
     "created_at": "2009-04-13T13:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44463",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44378",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -358,15 +356,15 @@ I have uploaded a new rebased patch replacing all three (in fact the first was a
 
 ---
 
-archive/issue_comments_044464.json:
+archive/issue_comments_044379.json:
 ```json
 {
     "body": "Hmm, I am not sure what happened, but only the latest rebased patch has some rejection issues in integer.pyx: \n\n```\nsage-3.4.1.rc3/devel/sage$ patch -p1 --dry-run < trac_5685_new.patch \npatching file sage/rings/integer.pyx\npatching file sage/rings/qqbar.py\npatching file sage/rings/rational.pyx\npatching file sage/schemes/elliptic_curves/ell_rational_field.py\npatching file sage/rings/integer.pyx\nHunk #2 FAILED at 1538.\nHunk #3 succeeded at 1564 (offset -13 lines).\nHunk #4 FAILED at 1604.\n2 out of 4 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\npatching file sage/rings/number_field/order.py\npatching file sage/rings/rational.pyx\nHunk #1 succeeded at 1218 (offset -37 lines).\nHunk #2 succeeded at 1242 (offset -37 lines).\n```\n\n\nI will poke around later and see what the problem is.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T22:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44464",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44379",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -400,15 +398,15 @@ Michael
 
 ---
 
-archive/issue_comments_044465.json:
+archive/issue_comments_044380.json:
 ```json
 {
     "body": "Replying to [comment:11 mabshoff]:\n> Hmm, I am not sure what happened, but only the latest rebased patch has some rejection issues in integer.pyx: \n> {{{\n> sage-3.4.1.rc3/devel/sage$ patch -p1 --dry-run < trac_5685_new.patch \n> patching file sage/rings/integer.pyx\n> patching file sage/rings/qqbar.py\n> patching file sage/rings/rational.pyx\n> patching file sage/schemes/elliptic_curves/ell_rational_field.py\n> patching file sage/rings/integer.pyx\n> Hunk #2 FAILED at 1538.\n> Hunk #3 succeeded at 1564 (offset -13 lines).\n> Hunk #4 FAILED at 1604.\n> 2 out of 4 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\n> patching file sage/rings/number_field/order.py\n> patching file sage/rings/rational.pyx\n> Hunk #1 succeeded at 1218 (offset -37 lines).\n> Hunk #2 succeeded at 1242 (offset -37 lines).\n> }}}\n> \n> I will poke around later and see what the problem is.\n> \n> Cheers,\n> \n> Michael\n\nIt must be something else merged since 3.4.1.rc2 since I just tried again and had no problems with 3.4.1.rc2 + 5735 patches + the latest one here.",
     "created_at": "2009-04-14T11:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44465",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44380",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -443,15 +441,15 @@ It must be something else merged since 3.4.1.rc2 since I just tried again and ha
 
 ---
 
-archive/issue_comments_044466.json:
+archive/issue_comments_044381.json:
 ```json
 {
     "body": "Hi John,\n\nI checked and I did not merge any patch into rc3 so far that touches integer.pyx. It is a problem with patch and not hg, i.e. a hg patch can (and does in this case) contain multiple diff for a file, so running it with --dry-run will not work. My apologies about being dumb in this case, but I am testing the patch right now and will merge it in case it doctests.\n\nCheers,\n\nMihcael",
     "created_at": "2009-04-15T00:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44466",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44381",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -467,15 +465,15 @@ Mihcael
 
 ---
 
-archive/issue_comments_044467.json:
+archive/issue_comments_044382.json:
 ```json
 {
     "body": "Merged trac_5685_new.patch in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-15T00:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44467",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44382",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -489,15 +487,15 @@ Michael
 
 ---
 
-archive/issue_comments_044468.json:
+archive/issue_comments_044383.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-15T00:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44468",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44383",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -507,15 +505,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_044469.json:
+archive/issue_comments_044384.json:
 ```json
 {
     "body": "Replying to [comment:14 mabshoff]:\n> Merged trac_5685_new.patch in Sage 3.4.1.rc3.\n> \n> Cheers,\n> \n> Michael\n\nThanks -- I hope I was not doing anything wrong in making the patch -- I used hg queues to combine the earlier ones and add the new stuff, but did not do a \"hg qfold\" as I think I should have done.  Sorry.",
     "created_at": "2009-04-15T08:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5685",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44469",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5685#issuecomment-44384",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 

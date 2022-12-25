@@ -6,15 +6,14 @@ archive/issues_008255.json:
     "body": "Assignee: tbd\n\nThe SageTeX spkg shipped in 4.3.2 has a slightly broken spkg-check: if LaTeX is present, but the tkz-berge.sty file isn't, the example file included with SageTeX cannot be typeset and spkg-check fails. Since I don't assume the user has LaTeX installed, I shouldn't assume that tkz-berge.sty is either.\n\nThere are also some documentation fixes, including notably an \"egrep\" which should be \"egrep -v\"!\n\nFinally, the license for the documentation is now CC BY-SA; I've dropped the noncommercial clause.\n\nThe new spkg is version 2.2.3.p0 in http://sage.math.washington.edu/home/drake/code/sage/st/ . The last version of the spkg is available in the same place, for ease of reviewing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8255\n\n",
     "created_at": "2010-02-13T13:42:58Z",
     "labels": [
-        "spkg-check",
-        "major",
+        "component: spkg-check",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "update SageTeX spkg to 2.2.3.p0 to fix spkg-check script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8255",
-    "user": "@dandrake"
+    "user": "https://github.com/dandrake"
 }
 ```
 Assignee: tbd
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8255
 
 ---
 
-archive/issue_comments_073045.json:
+archive/issue_comments_072922.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-13T13:43:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73045",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72922",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -53,15 +52,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_073046.json:
+archive/issue_comments_072923.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-02-15T06:25:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73046",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72923",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -71,15 +70,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_073047.json:
+archive/issue_comments_072924.json:
 ```json
 {
     "body": "Could you modify the file `spkg-check` to conform to the portability issues at #8255? For example, the following line in `spkg-check` is not recommended:\n\n```\nif [ \"$(which latex)\" -a \"$(kpsewhich tkz-berge.sty)\" ]\n```\n",
     "created_at": "2010-02-15T06:25:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73047",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72924",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -94,15 +93,15 @@ if [ "$(which latex)" -a "$(kpsewhich tkz-berge.sty)" ]
 
 ---
 
-archive/issue_comments_073048.json:
+archive/issue_comments_072925.json:
 ```json
 {
     "body": "Replying to [comment:2 mvngu]:\n> Could you modify the file `spkg-check` to conform to the portability issues at #8255?\n\nI'm guessing you didn't mean to refer to *this* ticket... :)",
     "created_at": "2010-02-15T09:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73048",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72925",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -115,15 +114,15 @@ I'm guessing you didn't mean to refer to *this* ticket... :)
 
 ---
 
-archive/issue_comments_073049.json:
+archive/issue_comments_072926.json:
 ```json
 {
     "body": "Replying to [comment:3 ddrake]:\n> I'm guessing you didn't mean to refer to *this* ticket... :)\n\nLet's pretend I was referring to #7632 :-)",
     "created_at": "2010-02-15T09:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73049",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72926",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -136,15 +135,15 @@ Let's pretend I was referring to #7632 :-)
 
 ---
 
-archive/issue_comments_073050.json:
+archive/issue_comments_072927.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-15T10:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73050",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72927",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -154,15 +153,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_073051.json:
+archive/issue_comments_072928.json:
 ```json
 {
     "body": "Thanks for the link. Ironically, I put in \"-a\" in an effort to be more portable...thanks for setting me straight. I've replaced the spkg with an updated one. Please review.",
     "created_at": "2010-02-15T10:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73051",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72928",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -172,15 +171,15 @@ Thanks for the link. Ironically, I put in "-a" in an effort to be more portable.
 
 ---
 
-archive/issue_comments_073052.json:
+archive/issue_comments_072929.json:
 ```json
 {
     "body": "I had something like this in mind:\n\n```diff\ndiff -r 2d39ee3a7530 -r e739e330a66a spkg-check\n--- a/spkg-check\n+++ b/spkg-check\n@@ -29,8 +29,7 @@\n     fi\n }\n \n-if [ \"$(which latex)\" && \"$(kpsewhich tkz-berge.sty)\" ]\n-then\n+if [ \"$(which latex)\" ] && [ \"$(kpsewhich tkz-berge.sty)\" ]; then\n     cd src\n \n     typeset example.tex\n```\n\nIt would be good if the ticket number is referenced in the hg log.",
     "created_at": "2010-02-20T15:36:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73052",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72929",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -208,15 +207,15 @@ It would be good if the ticket number is referenced in the hg log.
 
 ---
 
-archive/issue_comments_073053.json:
+archive/issue_comments_072930.json:
 ```json
 {
     "body": "Okay, fixed. New version reflects your suggestions.\n\nBTW, how did you get that diff in your comment?",
     "created_at": "2010-02-21T06:38:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73053",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72930",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -228,15 +227,15 @@ BTW, how did you get that diff in your comment?
 
 ---
 
-archive/issue_comments_073054.json:
+archive/issue_comments_072931.json:
 ```json
 {
     "body": "Replying to [comment:7 ddrake]:\n> BTW, how did you get that diff in your comment? \n\nSee the [Wiki Processors](http://trac.sagemath.org/sage_trac/wiki/WikiProcessors) section.",
     "created_at": "2010-02-21T08:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73054",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72931",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -249,15 +248,15 @@ See the [Wiki Processors](http://trac.sagemath.org/sage_trac/wiki/WikiProcessors
 
 ---
 
-archive/issue_comments_073055.json:
+archive/issue_comments_072932.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-03-01T23:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73055",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72932",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -267,15 +266,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_073056.json:
+archive/issue_comments_072933.json:
 ```json
 {
     "body": "spkg-check tests whether latex is present, and then it actually runs pdflatex.  I suppose that anyone who has latex will have pdflatex also, but I think this should be fixed anyway: if latex is not found, sage-check exits gracefully, but in the unlikely event that latex is found but pdflatex isn't, then I get\n\n```\nRunning the test suite.\n./spkg-check: line 10: pdflatex: command not found\nError typesetting example.tex! To fully test SageTeX, make sure\nLaTeX can find sagetex.sty, and that TikZ (version 2.00\nor newer), tkz-berge.sty and tkz-graph.sty is installed.\n*************************************\nError testing package ** sagetex-2.2.3.p0 **\n*************************************\n```\n\nCan we run latex instead of pdflatex?  Otherwise, change \"which latex\" to \"which pdflatex\", and maybe change the error message from \"LaTeX isn't installed\" to \"PDFLaTeX isn't installed\"?\n\nAlso, something is wrong with the shell script on Solaris but I don't know what.  If I log into t2.math.washington.edu and try installing with SAGE_CHECK equal to 1, then I get the bad error message even though latex is not found.  Maybe this is because on many systems, 'which latex' produces nothing if latex isn't found, but on t2, 'which latex' does this:\n\n$ which latex                                          \nno latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin",
     "created_at": "2010-03-01T23:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73056",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72933",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -303,15 +302,15 @@ no latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/cc
 
 ---
 
-archive/issue_comments_073057.json:
+archive/issue_comments_072934.json:
 ```json
 {
     "body": "Replying to [comment:9 jhpalmieri]:\n> spkg-check tests whether latex is present, and then it actually runs pdflatex.  I suppose that anyone who has latex will have pdflatex also, but I think this should be fixed anyway:\n\nIn TeXLive (and teTeX), \"latex\" and \"pdflatex\" are just symlinks to pdftex (or pdfetex), so it seems really unlikely that someone would have \"latex\" but not \"pdflatex\". But your idea is correct; I'll change it.\n\nBy the way, is that a real example? Do you have a system with latex but not pdflatex? I'm curious to know about it.\n\n> Also, something is wrong with the shell script on Solaris but I don't know what.  If I log into t2.math.washington.edu and try installing with SAGE_CHECK equal to 1, then I get the bad error message even though latex is not found.  Maybe this is because on many systems, 'which latex' produces nothing if latex isn't found, but on t2, 'which latex' does this:\n> \n> $ which latex                                          \n> no latex in /usr/local/gcc-4.4.1-sun-linker/bin /usr/local/bin2 /usr/bin /usr/ccs/bin /usr/local/bin /usr/sfw/bin /bin /usr/sbin\n\nThis is a more serious problem. I'll look into it. Hopefully it gives a useful return code or something.",
     "created_at": "2010-03-02T00:15:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73057",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72934",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -333,15 +332,15 @@ This is a more serious problem. I'll look into it. Hopefully it gives a useful r
 
 ---
 
-archive/issue_comments_073058.json:
+archive/issue_comments_072935.json:
 ```json
 {
     "body": "Replying to [comment:10 ddrake]:\n> By the way, is that a real example? Do you have a system with latex but not pdflatex? I'm curious to know about it.\n\nIt was a contrived example: I renamed pdflatex temporarily but kept latex around.",
     "created_at": "2010-03-02T00:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73058",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72935",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -354,15 +353,15 @@ It was a contrived example: I renamed pdflatex temporarily but kept latex around
 
 ---
 
-archive/issue_comments_073059.json:
+archive/issue_comments_072936.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-02T02:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73059",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72936",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -372,15 +371,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_073060.json:
+archive/issue_comments_072937.json:
 ```json
 {
     "body": "New spkg up for review at http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.2.3.p0.spkg.\n\nThe spkg-check script now simply tries running latex and kpsewhich, and checks the return code to see if it worked. I think this is more portable, as returning 0 for success is pretty standard. It also uses \"latex\" throughout, and doesn't use \"pdflatex\".",
     "created_at": "2010-03-02T02:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73060",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72937",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -392,15 +391,15 @@ The spkg-check script now simply tries running latex and kpsewhich, and checks t
 
 ---
 
-archive/issue_comments_073061.json:
+archive/issue_comments_072938.json:
 ```json
 {
     "body": "Looks good to me.  It works on systems on which latex and/or tkz-berge.sty is not installed.  I also created a bug in the file example.tex and rebuilt the spkg, and indeed, it didn't pass tests.\n\nTested on sage.math, a Mac running OS X 10.6, and t2.math.",
     "created_at": "2010-03-02T02:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73061",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72938",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -412,15 +411,15 @@ Tested on sage.math, a Mac running OS X 10.6, and t2.math.
 
 ---
 
-archive/issue_comments_073062.json:
+archive/issue_comments_072939.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-02T02:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73062",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72939",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -430,15 +429,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_073063.json:
+archive/issue_comments_072940.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-03T15:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73063",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72940",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -448,15 +447,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_073064.json:
+archive/issue_comments_072941.json:
 ```json
 {
     "body": "Merged [sagetex-2.2.3.p0.spkg](http://sage.math.washington.edu/home/drake/code/sage/st/sagetex-2.2.3.p0.spkg) in the standard spkg repository.",
     "created_at": "2010-03-03T15:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-73064",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8255#issuecomment-72941",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

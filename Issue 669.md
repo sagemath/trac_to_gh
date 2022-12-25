@@ -6,15 +6,14 @@ archive/issues_000669.json:
     "body": "Assignee: @williamstein\n\nKeywords: Solaris 10, doctest\n\n\n```\nsage -t  functions/constants.py                             **********************************************************************\nFile \"constants.py\", line 498:\n    sage: 1e8*I\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[10]>\", line 1, in <module>\n        RealNumber('1e8')*I###line 498:\n    sage: 1e8*I\n      File \"sage_object.pyx\", line 87, in sage_object.SageObject.__repr__\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2883, in _repr_\n        return self.simplify()._repr_(simplify=False)\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 2038, in simplify\n        S = evaled_symbolic_expression_from_maxima_string(self._maxima_init_())\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4966, in evaled_symbolic_expression_from_maxima_string\n        return symbolic_expression_from_maxima_string(maxima.eval(x))\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4940, in symbolic_expression_from_maxima_string\n        w = sage_eval(s, syms)\n      File \"/export/home/mabshoff/sage-2.8.4.2/local/lib/python2.5/site-packages/sage/misc/sage_eval.py\", line 110, in sage_eval\n        return eval(p, sage.all.__dict__, locals)\n      File \"<string>\", line 1, in <module>\n      File \"real_mpfr.pyx\", line 2711, in real_mpfr.create_RealNumber\n      File \"real_mpfr.pyx\", line 610, in real_mpfr.RealNumber.__init__\n      File \"real_mpfr.pyx\", line 659, in real_mpfr.RealNumber._set\n    TypeError: Unable to convert x (='1.e') to real number.\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/669\n\n",
     "created_at": "2007-09-17T00:29:53Z",
     "labels": [
-        "packages",
-        "major",
+        "component: packages",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Solaris 10: functions/constants.py doctests failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/669",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -61,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/669
 
 ---
 
-archive/issue_comments_003467.json:
+archive/issue_comments_003454.json:
 ```json
 {
     "body": "Changing component from packages to doctest.",
     "created_at": "2007-09-17T01:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/669#issuecomment-3467",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/669#issuecomment-3454",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +78,15 @@ Changing component from packages to doctest.
 
 ---
 
-archive/issue_comments_003468.json:
+archive/issue_comments_003455.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to failure.",
     "created_at": "2007-09-17T01:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/669#issuecomment-3468",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/669#issuecomment-3455",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -97,15 +96,15 @@ Changing assignee from @williamstein to failure.
 
 ---
 
-archive/issue_comments_003469.json:
+archive/issue_comments_003456.json:
 ```json
 {
     "body": "This has been fixed a while ago.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-21T18:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/669#issuecomment-3469",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/669#issuecomment-3456",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +118,15 @@ Michael
 
 ---
 
-archive/issue_comments_003470.json:
+archive/issue_comments_003457.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-21T18:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/669#issuecomment-3470",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/669#issuecomment-3457",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

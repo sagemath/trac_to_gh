@@ -6,15 +6,14 @@ archive/issues_002792.json:
     "body": "Assignee: @malb\n\nCC:  @robertwb\n\nSee https://bugs.launchpad.net/bugs/151575 for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2792\n\n",
     "created_at": "2008-04-03T10:23:16Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] remove workaround for non-existing Cython bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2792",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2792
 
 ---
 
-archive/issue_comments_019175.json:
+archive/issue_comments_019134.json:
 ```json
 {
     "body": "Attachment [remove_stupid_workaround.patch](tarball://root/attachments/some-uuid/ticket2792/remove_stupid_workaround.patch) by mabshoff created at 2008-04-03 11:09:22\n\nThe patch does the right thing and there is no change in functionality. Compilation and dcotests pass. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-03T11:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2792#issuecomment-19175",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2792#issuecomment-19134",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +54,15 @@ Michael
 
 ---
 
-archive/issue_comments_019176.json:
+archive/issue_comments_019135.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha1",
     "created_at": "2008-04-03T11:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2792#issuecomment-19176",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2792#issuecomment-19135",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -73,15 +72,15 @@ Merged in Sage 3.0.alpha1
 
 ---
 
-archive/issue_comments_019177.json:
+archive/issue_comments_019136.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-03T11:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2792#issuecomment-19177",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2792#issuecomment-19136",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

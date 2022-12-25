@@ -6,15 +6,14 @@ archive/issues_000777.json:
     "body": "Assignee: somebody\n\nCC:  @mwhansen\n\nKeywords: sign\n\nShould the following function exist globally?\n\n```\ndef sign(x):\n    if x > 0:\n        return 1\n    if x < 0:\n        return -1\n    return 0\n```\n\nI'm not sure if this is identical to\n\n```\ndef sign(x):\n    return x.__cmp__(0)\n```\n\nI'm also ambivalent as to whether this function is called \"sign\", \"signum\", or \"sgn\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/777\n\n",
     "created_at": "2007-10-02T00:40:40Z",
     "labels": [
-        "basic arithmetic",
-        "minor",
-        "enhancement"
+        "component: basic arithmetic",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sign function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/777",
-    "user": "@kedlaya"
+    "user": "https://github.com/kedlaya"
 }
 ```
 Assignee: somebody
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/777
 
 ---
 
-archive/issue_comments_004637.json:
+archive/issue_comments_004621.json:
 ```json
 {
     "body": "To release manager: note that this should be closed - see comment in #6803.",
     "created_at": "2009-08-26T15:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/777",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4637",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4621",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -69,15 +68,15 @@ To release manager: note that this should be closed - see comment in #6803.
 
 ---
 
-archive/issue_comments_004638.json:
+archive/issue_comments_004622.json:
 ```json
 {
     "body": "To clarify: we already have:\n\n```\nsage: sgn(1)\n1\nsage: sgn(-4)\n-1\n```\n\nso this ticket should be closed, presumably as a duplicate.",
     "created_at": "2009-11-10T15:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/777",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4638",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4622",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -96,15 +95,15 @@ so this ticket should be closed, presumably as a duplicate.
 
 ---
 
-archive/issue_comments_004639.json:
+archive/issue_comments_004623.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-11-10T16:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/777",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4639",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/777#issuecomment-4623",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

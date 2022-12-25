@@ -6,7 +6,7 @@ archive/issues_006073.json:
     "body": "Assignee: tba\n\nIn the developer guide, in the \"Coding in other languages\" section, it says that Cython pyx files should be added to setup.py, but they should really be added to module_list.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6073\n\n",
     "created_at": "2009-05-18T18:09:02Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006073.json:
     "title": "Developer guide somewhat wrong about cython extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6073",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: tba
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6073
 
 ---
 
-archive/issue_comments_048348.json:
+archive/issue_comments_048256.json:
 ```json
 {
     "body": "I think the information about module_list.py is in the paragraph before the one you're mentioning.  Here's a patch which tries to clarify things a bit, and adds some new information.",
     "created_at": "2009-06-10T21:50:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6073",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48348",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48256",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -47,15 +47,15 @@ I think the information about module_list.py is in the paragraph before the one 
 
 ---
 
-archive/issue_comments_048349.json:
+archive/issue_comments_048257.json:
 ```json
 {
     "body": "Attachment [trac_6073.patch](tarball://root/attachments/some-uuid/ticket6073/trac_6073.patch) by @wdjoyner created at 2009-06-19 21:59:46\n\nThis patch applies fine and the command \"/sage -docbuild developer html\" builts the docs without error. The addition clarifies and improves the documentation as advertised.",
     "created_at": "2009-06-19T21:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6073",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48349",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48257",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -67,15 +67,15 @@ This patch applies fine and the command "/sage -docbuild developer html" builts 
 
 ---
 
-archive/issue_comments_048350.json:
+archive/issue_comments_048258.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-24T10:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6073",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48350",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6073#issuecomment-48258",
+    "user": "https://github.com/rlmill"
 }
 ```
 

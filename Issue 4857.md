@@ -6,15 +6,14 @@ archive/issues_004857.json:
     "body": "Assignee: GeorgSWeber\n\n(see also the respective thread at sage-devel)\n\nAlthough this spkg is pretty small, putting it in a trac ticket is probably not the best idea. But currently, I haven't got access to any other web space where I could place it.\n\nInstall with \"sage -i exampleclib-1.0.0.spkg\"; the documentation is the under\n\n$SAGE_ROOT/devel/exampleclib/src/README.txt\n\n$SAGE_ROOT/devel/exampleclib/src/doc/*\n\nIssue created by migration from https://trac.sagemath.org/ticket/4857\n\n",
     "created_at": "2008-12-23T10:07:43Z",
     "labels": [
-        "experimental package",
-        "minor",
-        "enhancement"
+        "component: experimental package",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with spkg, needs discussion] Example C Library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4857",
-    "user": "GeorgSWeber"
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 Assignee: GeorgSWeber
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4857
 
 ---
 
-archive/issue_comments_036811.json:
+archive/issue_comments_036739.json:
 ```json
 {
     "body": "-1 by a wide margin. This spkg does numerous things badly and introduces many \"features\" we don't need or are completely overdesigned. The idea about spkg-install and its friends is KISS and this certainly isn't it.\n\nThe place to have this is not trac either.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-23T10:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36811",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36739",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -61,15 +60,15 @@ Michael
 
 ---
 
-archive/issue_comments_036812.json:
+archive/issue_comments_036740.json:
 ```json
 {
     "body": "I have removed the attached spkg. It can now be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/exampleclib-1.0.0.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-12-23T10:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36812",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36740",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Michael
 
 ---
 
-archive/issue_comments_036813.json:
+archive/issue_comments_036741.json:
 ```json
 {
     "body": "Attachment [4857-scripts.patch](tarball://root/attachments/some-uuid/ticket4857/4857-scripts.patch) by GeorgSWeber created at 2008-12-30 12:31:50\n\na new script \"sage-create-spkg\" to go in the scripts repo /local/bin",
     "created_at": "2008-12-30T12:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36813",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36741",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -105,15 +104,15 @@ a new script "sage-create-spkg" to go in the scripts repo /local/bin
 
 ---
 
-archive/issue_comments_036814.json:
+archive/issue_comments_036742.json:
 ```json
 {
     "body": "Attachment [4857-examples.patch](tarball://root/attachments/some-uuid/ticket4857/4857-examples.patch) by GeorgSWeber created at 2008-12-30 12:34:29\n\ntwo example \"upstream src\" packages (sample spkg input) to go in the examples/ repo",
     "created_at": "2008-12-30T12:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36814",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36742",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -125,15 +124,15 @@ two example "upstream src" packages (sample spkg input) to go in the examples/ r
 
 ---
 
-archive/issue_comments_036815.json:
+archive/issue_comments_036743.json:
 ```json
 {
     "body": "rewritten and enhanced chapter about spkg in prog.tex resp. the doc/ repo (probably rather easily rebased after the ReST move)",
     "created_at": "2008-12-30T12:36:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36815",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36743",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -143,15 +142,15 @@ rewritten and enhanced chapter about spkg in prog.tex resp. the doc/ repo (proba
 
 ---
 
-archive/issue_comments_036816.json:
+archive/issue_comments_036744.json:
 ```json
 {
     "body": "Changing component from experimental package to documentation.",
     "created_at": "2008-12-30T12:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36816",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36744",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -161,15 +160,15 @@ Changing component from experimental package to documentation.
 
 ---
 
-archive/issue_comments_036817.json:
+archive/issue_comments_036745.json:
 ```json
 {
     "body": "Attachment [4857-doc.patch](tarball://root/attachments/some-uuid/ticket4857/4857-doc.patch) by GeorgSWeber created at 2008-12-30 12:47:53\n\nThe current documentation in the Sage Developer's Guide says in Chapter 2, subsection 8.1, item (f) about Creating a New spkg: ... Post a copy on the Sage trac server ...\n\nThis is outdated. I took the opportunitiy to rewrite subsection 8.1, add two subsections 8.2 and 8.3, and assemble two live examples (to go under the examples directory) and a script \"sage-create-spkg\" which e.g. creates a template SPKG.txt and the mandatory hg repo. The script called on the examples result in working spkg, that install fine.\n\nWell, at least at the author's Mac. So it would be good if the referee could use and test it on a Linux machine.\n\nThe contents are based on a discussion with Michael Abshoff on sage-devel, half of the credit (at least) goes to him. All the remaining mistakes are mine, of course :-)",
     "created_at": "2008-12-30T12:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36817",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36745",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -187,15 +186,15 @@ The contents are based on a discussion with Michael Abshoff on sage-devel, half 
 
 ---
 
-archive/issue_comments_036818.json:
+archive/issue_comments_036746.json:
 ```json
 {
     "body": "MABSHOFF:\n\n\"I think in its current form 4857-examples.patch should not go in, in\nfact it shouldn't go in at all IMHO.\n\n4857-scripts.patch is too complicated IMHO, but salvageable.\"\n\nSo I change this to \"needs work\".",
     "created_at": "2009-03-16T10:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36818",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36746",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -212,15 +211,15 @@ So I change this to "needs work".
 
 ---
 
-archive/issue_comments_036819.json:
+archive/issue_comments_036747.json:
 ```json
 {
     "body": "See #5990 for a closely related ticket -- a patch to the documentation, based in large part on 4857-doc.patch.",
     "created_at": "2009-05-05T18:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36819",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36747",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -230,15 +229,15 @@ See #5990 for a closely related ticket -- a patch to the documentation, based in
 
 ---
 
-archive/issue_comments_036820.json:
+archive/issue_comments_036748.json:
 ```json
 {
     "body": "Documentation on producing a new spkg is already in the Developers' Guide in the form of the section [Producing New Sage Packages](http://www.sagemath.org/doc/developer/producing_spkgs.html). Tickets #8079 and #8104 add documentation on patching an existing spkg. So I think the subject of this ticket can be changed to something else other than documentation on producing spkg's.",
     "created_at": "2010-02-02T06:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36820",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36748",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -248,15 +247,15 @@ Documentation on producing a new spkg is already in the Developers' Guide in the
 
 ---
 
-archive/issue_comments_036821.json:
+archive/issue_comments_036749.json:
 ```json
 {
     "body": "Obsolete by the git transition.",
     "created_at": "2014-09-02T09:06:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36821",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36749",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -266,15 +265,15 @@ Obsolete by the git transition.
 
 ---
 
-archive/issue_comments_036822.json:
+archive/issue_comments_036750.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2014-09-02T09:06:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36822",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36750",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -284,15 +283,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_036823.json:
+archive/issue_comments_036751.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2014-09-09T14:53:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4857",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36823",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/4857#issuecomment-36751",
+    "user": "https://github.com/vbraun"
 }
 ```
 

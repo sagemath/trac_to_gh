@@ -6,7 +6,7 @@ archive/issues_006242.json:
     "body": "Assignee: @williamstein\n\n\n```\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [44.5 s]\nexit code: 768\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\n\nwstein@bsd:~/build/sage-4.0.1$ ./sage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"\nsage -t  \"devel/sage/doc/en/bordeaux_2008/birds_other.rst\"  \n         [39.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.5 seconds\nwstein@bsd:~/build/sage-4.0.1$ \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6242\n\n",
     "created_at": "2009-06-07T13:36:47Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006242.json:
     "title": "*long* birds_other.rst doctest fails with mysterious error repeatedly on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6242",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -53,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6242
 
 ---
 
-archive/issue_comments_049850.json:
+archive/issue_comments_049754.json:
 ```json
 {
     "body": "The failure does not happen in --verbose mode. :-(",
     "created_at": "2009-06-07T13:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49850",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49754",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -71,15 +71,15 @@ The failure does not happen in --verbose mode. :-(
 
 ---
 
-archive/issue_comments_049851.json:
+archive/issue_comments_049755.json:
 ```json
 {
     "body": "This happens very sporadically, and is triggered by the parallel bernoulli number code by David Harvey.",
     "created_at": "2009-06-15T23:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49851",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49755",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +89,15 @@ This happens very sporadically, and is triggered by the parallel bernoulli numbe
 
 ---
 
-archive/issue_comments_049852.json:
+archive/issue_comments_049756.json:
 ```json
 {
     "body": "Changing priority from blocker to critical.",
     "created_at": "2009-06-15T23:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49852",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49756",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -107,15 +107,15 @@ Changing priority from blocker to critical.
 
 ---
 
-archive/issue_comments_049853.json:
+archive/issue_comments_049757.json:
 ```json
 {
     "body": "This is a duplicate of #6304, where David Harvey has made some more specific comments about what's causing this.",
     "created_at": "2009-06-19T04:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49853",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49757",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -125,15 +125,15 @@ This is a duplicate of #6304, where David Harvey has made some more specific com
 
 ---
 
-archive/issue_comments_049854.json:
+archive/issue_comments_049758.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-06-19T04:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6242",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49854",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6242#issuecomment-49758",
+    "user": "https://github.com/craigcitro"
 }
 ```
 

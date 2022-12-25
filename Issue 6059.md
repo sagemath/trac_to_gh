@@ -6,15 +6,14 @@ archive/issues_006059.json:
     "body": "Assignee: @tornaria\n\nCC:  @JohnCremona\n\nKeywords: regression\n\nThe following hilbert symbol computation\n\n```\nsage: a=(next_prime(10**22)*next_prime(10**23))\nsage: time hilbert_symbol(a,-1,2)\nCPU times: user 0.62 s, sys: 0.06 s, total: 0.68 s\nWall time: 0.68 s\n1\n```\n\nused to be almost instant before the patch in #5834 (in 4.0.alpha0).\n\nThe patch extends hilbert_symbol to work with rationals, by using the `squarefree_part()` function. However, that function needs to factor. Fortunately, we don't need the actual squarefree part to compute the hilbert symbol, rather we could use `numerator()*denominator()` to achieve the same result; the hilbert symbol can thus be computed without factoring.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6059\n\n",
     "created_at": "2009-05-17T22:54:54Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "speed regresion in hilbert_symbol after #5834",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6059",
-    "user": "@tornaria"
+    "user": "https://github.com/tornaria"
 }
 ```
 Assignee: @tornaria
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6059
 
 ---
 
-archive/issue_comments_048240.json:
+archive/issue_comments_048149.json:
 ```json
 {
     "body": "Since this fixes a speed regression, and the patch is really simple, I think it's good if it can make it into 4.0.",
     "created_at": "2009-05-18T02:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48240",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48149",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -64,15 +63,15 @@ Since this fixes a speed regression, and the patch is really simple, I think it'
 
 ---
 
-archive/issue_comments_048241.json:
+archive/issue_comments_048150.json:
 ```json
 {
     "body": "Attachment [trac_6059.patch](tarball://root/attachments/some-uuid/ticket6059/trac_6059.patch) by @tornaria created at 2009-05-18 03:15:14\n\nFix speed regression in hilbert_symbol (revised)",
     "created_at": "2009-05-18T03:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48241",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48150",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -84,15 +83,15 @@ Fix speed regression in hilbert_symbol (revised)
 
 ---
 
-archive/issue_comments_048242.json:
+archive/issue_comments_048151.json:
 ```json
 {
     "body": "I screwed it up the first version, because I was trying to avoid overhead. The original code, good for integers only (before #5834) was:\n\n```\na = ZZ(a)\n```\n\nMy first version was\n\n```\na = ZZ(a.numerator() * a.denominator())\n```\n\nwhich breaks when `a` is a (python) `int`. The new version is\n\n```\na = QQ(a).numerator() * QQ(a).denominator()\n```\n\nwhich should be safe for all purposes (my first version was in between).\n\nIndeed, I'm a bit concerned about overhead. Compare the trivial\n\n```\nsage: timeit(\"hilbert_symbol(1,1,-1)\")\n625 loops, best of 3: 10.3 \u00b5s per loop\n```\n\nusing the original code (only good for integers) vs.\n\n```\nsage: timeit(\"hilbert_symbol(1,1,-1)\")\n625 loops, best of 3: 19.1 \u00b5s per loop\n```\n\nwith the new code (good for rationals).\n\nAnd check out the speed of the actual computation:\n\n```\nsage: a = ZZ.random_element(10^50)\nsage: b = ZZ.random_element(10^50)\nsage: p = next_prime(ZZ.random_element(10^50))\nsage: timeit(\"pari(a).hilbert(b,p)\")\n625 loops, best of 3: 3.13 \u00b5s per loop\n```\n\n\nIs there a standard/suggested way of writing the preamble of a function (where parameters are checked, coerced, etc) to minimize overhead in a fast path?\n(I guess this is what one buys with a dynamic language... and moving this to cython could help if really necessary).",
     "created_at": "2009-05-18T03:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48242",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48151",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -150,15 +149,15 @@ Is there a standard/suggested way of writing the preamble of a function (where p
 
 ---
 
-archive/issue_comments_048243.json:
+archive/issue_comments_048152.json:
 ```json
 {
     "body": "Looks good to me.  Sorry about the regression which was my fault.  I needed an integer in the same square class as a (and b) and did the obvious thing without thinking about the conseqences regarding factorization.\n\nWould it be better to check for integrality, since if a and b are integral then using ZZ(a), ZZ(b) would save the conversion to rational and back?  i.e. do something like try: a=ZZ(a); b=ZZ(b) first.",
     "created_at": "2009-05-18T09:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48243",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48152",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -170,15 +169,15 @@ Would it be better to check for integrality, since if a and b are integral then 
 
 ---
 
-archive/issue_comments_048244.json:
+archive/issue_comments_048153.json:
 ```json
 {
     "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-18T15:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48244",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48153",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -192,15 +191,15 @@ Michael
 
 ---
 
-archive/issue_comments_048245.json:
+archive/issue_comments_048154.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-18T15:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48245",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6059#issuecomment-48154",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

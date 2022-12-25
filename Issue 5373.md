@@ -6,7 +6,7 @@ archive/issues_005373.json:
     "body": "Assignee: tba\n\n\n```\n$ mv ~/sage/devel/sage/doc/output/html ~/sage/devel/sage/doc/output/jason\n\n$ sage -docbuild website html\nsphinx-build -b html -d\n/home/jason/sage/devel/sage/doc/output/doctrees/en/website   .\n/home/jason/sage/devel/sage/doc/output/html/en/website\nSphinx v0.5.1, building html\nloading pickled environment... done\nbuilding [html]: targets for 1 source files that are out of date\nupdating environment: 0 added, 0 changed, 0 removed\npreparing documents... WARNING: html_favicon is not an .ico file\ndone\nwriting output... index\nwriting additional files... genindex search index\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 1 warning.\nBuild finished.  The built documents can be found in\n/home/jason/sage/devel/sage/doc/output/html/en/website\n\nThen I try to build it again:\n\n$ sage -docbuild website html\nsphinx-build -b html -d\n/home/jason/sage/devel/sage/doc/output/doctrees/en/website   .\n/home/jason/sage/devel/sage/doc/output/html/en/website\nSphinx v0.5.1, building html\nloading pickled environment... done\nbuilding [html]: targets for 0 source files that are out of date\nupdating environment: 0 added, 0 changed, 0 removed\nno targets are out of date.\nBuild finished.  The built documents can be found in\n/home/jason/sage/devel/sage/doc/output/html/en/website\nTraceback (most recent call last):\n  File \"/home/jason/sage/devel/sage/doc/common/builder.py\", line 674,\nin <module>\n    getattr(get_builder(name), type)(*args)\n  File \"/home/jason/sage/devel/sage/doc/common/builder.py\", line 291,\nin html\n    os.path.realpath(os.path.join(html_output_dir, '..')))\n  File \"/home/jason/sage/devel/sage/doc/common/builder.py\", line 101,\nin copytree\n    raise StandardError, errors\nStandardError:\n[('/home/jason/sage/devel/sage/doc/output/html/en/website/_static',\n'/home/jason/sage/devel/sage-main/doc/output/html/en/_static', \"[Errno\n17] File exists:\n'/home/jason/sage/devel/sage-main/doc/output/html/en/_static'\"),\n('/home/jason/sage/devel/sage/doc/output/html/en/website/_sources',\n'/home/jason/sage/devel/sage-main/doc/output/html/en/_sources', \"[Errno\n17] File exists:\n'/home/jason/sage/devel/sage-main/doc/output/html/en/_sources'\")]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5373\n\n",
     "created_at": "2009-02-25T18:43:24Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005373.json:
     "title": "[with patch, needs review] fix problem in builder.copytree",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5373",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tba
@@ -86,15 +86,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5373
 
 ---
 
-archive/issue_comments_041386.json:
+archive/issue_comments_041304.json:
 ```json
 {
     "body": "Attachment [trac_5373.patch](tarball://root/attachments/some-uuid/ticket5373/trac_5373.patch) by @mwhansen created at 2009-02-25 18:43:54",
     "created_at": "2009-02-25T18:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41386",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41304",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -104,15 +104,15 @@ Attachment [trac_5373.patch](tarball://root/attachments/some-uuid/ticket5373/tra
 
 ---
 
-archive/issue_comments_041387.json:
+archive/issue_comments_041305.json:
 ```json
 {
     "body": "The main thing was to make it so that copytree calls itself instead of shutil.copytree.  I fixed the problem with \"Error\" by making it shutil.Error.",
     "created_at": "2009-02-25T18:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41387",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41305",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -122,15 +122,15 @@ The main thing was to make it so that copytree calls itself instead of shutil.co
 
 ---
 
-archive/issue_comments_041388.json:
+archive/issue_comments_041306.json:
 ```json
 {
     "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-02-25T18:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41388",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41306",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -140,15 +140,15 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
-archive/issue_comments_041389.json:
+archive/issue_comments_041307.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-25T18:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41389",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41307",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -158,15 +158,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_041390.json:
+archive/issue_comments_041308.json:
 ```json
 {
     "body": "Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-01T02:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41390",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41308",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -180,15 +180,15 @@ Michael
 
 ---
 
-archive/issue_comments_041391.json:
+archive/issue_comments_041309.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-01T02:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41391",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41309",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -198,15 +198,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_041392.json:
+archive/issue_comments_041310.json:
 ```json
 {
     "body": "Merged in Sage 3.4.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-01T02:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5373",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41392",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5373#issuecomment-41310",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_006982.json:
     "body": "Assignee: tbd\n\n* atlas --  require systemwide lapack installed\n\n  * linbox -- use systemwide lapack\n\nIssue created by migration from https://trac.sagemath.org/ticket/6982\n\n",
     "created_at": "2009-09-22T05:01:18Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "cygwin port: atlas and linbox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6982",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6982
 
 ---
 
-archive/issue_comments_057748.json:
+archive/issue_comments_057640.json:
 ```json
 {
     "body": "Here are the spkgs:\n\n* http://sage.math.washington.edu/home/wstein/patches/atlas-3.8.3.p8.spkg\n\n* http://sage.math.washington.edu/home/wstein/patches/linbox-1.1.6.p1.spkg",
     "created_at": "2009-09-22T05:21:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57748",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57640",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -53,15 +52,15 @@ Here are the spkgs:
 
 ---
 
-archive/issue_comments_057749.json:
+archive/issue_comments_057641.json:
 ```json
 {
     "body": "The packages seem ok to me, both provide good error messages if cygwin atlas is not installed.",
     "created_at": "2009-09-22T05:48:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57749",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57641",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -71,15 +70,15 @@ The packages seem ok to me, both provide good error messages if cygwin atlas is 
 
 ---
 
-archive/issue_comments_057750.json:
+archive/issue_comments_057642.json:
 ```json
 {
     "body": "New ATLAS package up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/atlas-3.8.3.p9.spkg\n\nThe changes from .p8 are:\n\n* Remove the junk files `spkg-install~` and `SPKG.txt~`.\n* Add the following line to `.hgignore`\n {{{\npatches\n }}}\n so that everything under the directory `patches/` would be ignored.",
     "created_at": "2009-09-27T01:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57750",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57642",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -100,15 +99,15 @@ patches
 
 ---
 
-archive/issue_comments_057751.json:
+archive/issue_comments_057643.json:
 ```json
 {
     "body": "New LinBox package up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/linbox-1.1.6.p2.spkg\n\nThe only change from .p1 is:\n\n* Remove the junk file `spkg-install~`.",
     "created_at": "2009-09-27T01:12:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57751",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57643",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -124,15 +123,15 @@ The only change from .p1 is:
 
 ---
 
-archive/issue_comments_057752.json:
+archive/issue_comments_057644.json:
 ```json
 {
     "body": "See my report at #6849.",
     "created_at": "2009-09-27T03:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57752",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57644",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -142,15 +141,15 @@ See my report at #6849.
 
 ---
 
-archive/issue_comments_057753.json:
+archive/issue_comments_057645.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-27T03:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57753",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57645",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -160,15 +159,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_057754.json:
+archive/issue_comments_057646.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
     "created_at": "2009-09-27T11:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57754",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6982#issuecomment-57646",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

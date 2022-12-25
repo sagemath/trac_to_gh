@@ -6,7 +6,7 @@ archive/issues_007937.json:
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol @williamstein\n\nThe SASS source files from ticket #7269 are missing from [sagenb-0.5.spkg](http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.5.spkg):\n\n```sh\nhg stat\n! sass/config.rb\n! sass/readme.txt\n! sass/src/account_settings.sass\n! sass/src/main.sass\n! sass/src/master.sass\n! sass/src/partials/_mixins.sass\n! sass/src/registration.sass\n! sass/src/test_report.sass\n! sass/src/typography/_base.sass\n! sass/src/user_management.sass\n? release_notes.txt\n? setup.cfg\n```\n\nI think we just need to patch the `MANIFEST.in`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7937\n\n",
     "created_at": "2010-01-15T18:49:44Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007937.json:
     "title": "Add SASS files to MANIFEST.in",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7937",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: @williamstein
@@ -49,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7937
 
 ---
 
-archive/issue_comments_069207.json:
+archive/issue_comments_069088.json:
 ```json
 {
     "body": "Updates `MANIFEST.in` for #7269.  Does *not* include the missing files.  sagenb repo.",
     "created_at": "2010-01-15T19:18:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69207",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69088",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -67,15 +67,15 @@ Updates `MANIFEST.in` for #7269.  Does *not* include the missing files.  sagenb 
 
 ---
 
-archive/issue_comments_069208.json:
+archive/issue_comments_069089.json:
 ```json
 {
     "body": "Attachment [trac_7937-sass_manifest.patch](tarball://root/attachments/some-uuid/ticket7937/trac_7937-sass_manifest.patch) by @qed777 created at 2010-01-15 19:20:11",
     "created_at": "2010-01-15T19:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69208",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69089",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -85,15 +85,15 @@ Attachment [trac_7937-sass_manifest.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_069209.json:
+archive/issue_comments_069090.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-15T19:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69209",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69090",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -103,15 +103,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069210.json:
+archive/issue_comments_069091.json:
 ```json
 {
     "body": "LGTM. Nice catch.",
     "created_at": "2010-01-17T09:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69210",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69091",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -121,15 +121,15 @@ LGTM. Nice catch.
 
 ---
 
-archive/issue_comments_069211.json:
+archive/issue_comments_069092.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-17T09:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69211",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69092",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -139,15 +139,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069212.json:
+archive/issue_comments_069093.json:
 ```json
 {
     "body": "Changing priority from minor to critical.",
     "created_at": "2010-01-17T09:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69212",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69093",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -157,15 +157,15 @@ Changing priority from minor to critical.
 
 ---
 
-archive/issue_comments_069213.json:
+archive/issue_comments_069094.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-19T05:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69213",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7937#issuecomment-69094",
+    "user": "https://github.com/rlmill"
 }
 ```
 

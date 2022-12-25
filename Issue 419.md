@@ -6,14 +6,12 @@ archive/issues_000419.json:
     "body": "Assignee: @williamstein\n\nConsider\n\n\n```\nsage: P.<x,y> = PolynomialRing(GF(2),2)\nsage: A = Matrix(P,2,2,[1,x,x,x+1]); A\n\n[    1     x]\n[    x x + 1]\n\n```\n\n\n`A.echelon_form()` returns the identity matrix because it computes the reduced echelon form over a fraction field and not over the polynomial ring.  However, SINGULAR has a (educational == slow) `rowred` command to perform row reduction as far as this is possible over the polynomial ring. This behaviour is desired in several applications and thus it should be ported to SAGE.\n\nIn fact, I've got an implementation/port of this already (c.f. https://sage.math.washington.edu:8102/home/pub/35/) it just needs to be named and included with SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/419\n\n",
     "created_at": "2007-08-10T15:26:18Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "title": "row reduction for matrices over multivariate polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/419",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @williamstein
@@ -43,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/419
 
 ---
 
-archive/issue_comments_002108.json:
+archive/issue_comments_002099.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-10T19:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/419#issuecomment-2108",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/419#issuecomment-2099",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -61,15 +59,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002109.json:
+archive/issue_comments_002100.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-08-10T19:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/419#issuecomment-2109",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/419#issuecomment-2100",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -79,15 +77,15 @@ Changing assignee from @williamstein to @malb.
 
 ---
 
-archive/issue_comments_002110.json:
+archive/issue_comments_002101.json:
 ```json
 {
     "body": "fixed in 2.8.3",
     "created_at": "2007-09-03T13:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/419#issuecomment-2110",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/419#issuecomment-2101",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -97,15 +95,15 @@ fixed in 2.8.3
 
 ---
 
-archive/issue_comments_002111.json:
+archive/issue_comments_002102.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-03T13:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/419",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/419#issuecomment-2111",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/419#issuecomment-2102",
+    "user": "https://github.com/malb"
 }
 ```
 

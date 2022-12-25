@@ -6,7 +6,7 @@ archive/issues_004950.json:
     "body": "Assignee: mabshoff\n\n\n```\nMichael: Only one has failed to build so far -- mandriva 32-bit.   It\nfails thus, and as you can see below, the numpy install fails maybe\ndue to an ATLAS issue.  This is actually a pretty serious build issue,\nand should go in trac, if you agree:\n\ngcc version 4.3.2 (GCC)\n****************************************************\n============================================================================\nBUILDING MATPLOTLIB\n           matplotlib: 0.98.3\n               python: 2.5.2 (r252:60911, Jan  6 2009, 18:03:10)  [GCC\n                       4.3.2]\n             platform: linux2\n\nREQUIRED DEPENDENCIES\n                numpy: no\n                       * You must install numpy 1.1 or later to build\n                       * matplotlib.\nError building matplotlib package.\nCommand exited with non-zero status 1\n0.08user 0.44system 0:12.28elapsed 4%CPU (0avgtext+0avgdata 0maxresident)k\n42304inputs+360outputs (17major+4611minor)pagefaults 0swaps\nsage: An error occurred while installing matplotlib-0.98.3.p4\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/build/mandriva32/build/sage-3.2.3/install.log.\nDescribe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wstein/build/mandriva32/build/sage-3.2.3/spkg/build/matplotlib-0.98.3.p4\nand type 'make'.\nInstead type \"/home/wstein/build/mandriva32/build/sage-3.2.3/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wstein/build/mandriva32/build/sage-3.2.3/spkg/build/matplotlib-0.98.3.p4\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/matplotlib-0.98.3.p4] Error 1\nmake[1]: Leaving directory `/home/wstein/build/mandriva32/build/sage-3.2.3/spkg'\nCommand exited with non-zero status 2\n2.83user 6.96system 23:46.58elapsed 0%CPU (0avgtext+0avgdata 0maxresident)k\n52520inputs+41128outputs (22major+14379minor)pagefaults 0swaps\n\nNOTE THAT:\n\nwstein@mandriva32:~/build/mandriva32/build/sage-3.2.3$ ./sage -python\nPython 2.5.2 (r252:60911, Jan  6 2009, 18:03:10)\n[GCC 4.3.2] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import numpy\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/wstein/build/mandriva32/build/sage-3.2.3/local/lib/python2.5/site-packages/numpy/__init__.py\",\nline 138, in <module>\n   import linalg\n File \"/home/wstein/build/mandriva32/build/sage-3.2.3/local/lib/python2.5/site-packages/numpy/linalg/__init__.py\",\nline 47, in <module>\n   from linalg import *\n File \"/home/wstein/build/mandriva32/build/sage-3.2.3/local/lib/python2.5/site-packages/numpy/linalg/linalg.py\",\nline 29, in <module>\n   from numpy.linalg import lapack_lite\nImportError: /home/wstein/build/mandriva32/build/sage-3.2.3/local/lib/liblapack.so:\nundefined symbol: zhpr_\n\n```\n\n\nI made this a blocker since Mandriva is in our \"officially supported\" list according to README.txt\n\nIssue created by migration from https://trac.sagemath.org/ticket/4950\n\n",
     "created_at": "2009-01-07T15:53:41Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004950.json:
     "title": "Sage-3.2.3 won't build on mandriva 32-bit due to an issue with numpy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4950",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -96,15 +96,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4950
 
 ---
 
-archive/issue_comments_037653.json:
+archive/issue_comments_037581.json:
 ```json
 {
     "body": "William,\n\nwasn't this a nohup problem? What is the status here?\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T15:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37653",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -120,15 +120,15 @@ Michael
 
 ---
 
-archive/issue_comments_037654.json:
+archive/issue_comments_037582.json:
 ```json
 {
     "body": "This will either come out in testing of 3.3.rc1 on the build farm as fixed or we will need to fix it, so move it against 3.3\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T05:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37654",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -142,15 +142,15 @@ Michael
 
 ---
 
-archive/issue_comments_037655.json:
+archive/issue_comments_037583.json:
 ```json
 {
     "body": "I don't care about this enough to keep this a blocker against 3.4, so make this critical against 3.4.1. This is an interaction between nohup and gcc, so it is an upstream bug.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-01T02:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37655",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -164,15 +164,15 @@ Michael
 
 ---
 
-archive/issue_comments_037656.json:
+archive/issue_comments_037584.json:
 ```json
 {
     "body": "Changing priority from blocker to critical.",
     "created_at": "2009-03-01T02:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37656",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37584",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -182,15 +182,15 @@ Changing priority from blocker to critical.
 
 ---
 
-archive/issue_comments_037657.json:
+archive/issue_comments_037585.json:
 ```json
 {
     "body": "I have the same problem on Fedora 12 (64bit) with matplotlib version 0.99.1 and Sage 4.3.5\n\nRegards\nThomas",
     "created_at": "2010-04-05T21:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37657",
-    "user": "thisch"
+    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37585",
+    "user": "https://trac.sagemath.org/admin/accounts/users/thisch"
 }
 ```
 
@@ -203,15 +203,15 @@ Thomas
 
 ---
 
-archive/issue_comments_037658.json:
+archive/issue_comments_037586.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-11-28T11:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37658",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37586",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -221,15 +221,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_037659.json:
+archive/issue_comments_037587.json:
 ```json
 {
     "body": "Closing as obsolete...",
     "created_at": "2013-11-28T11:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37659",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4950#issuecomment-37587",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

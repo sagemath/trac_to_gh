@@ -6,7 +6,7 @@ archive/issues_004603.json:
     "body": "Assignee: tba\n\nKeywords: typos, sage/categories\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4603\n\n",
     "created_at": "2008-11-24T10:33:07Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004603.json:
     "title": "trivial typos in files under sage/categories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4603",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tba
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4603
 
 ---
 
-archive/issue_comments_034504.json:
+archive/issue_comments_034437.json:
 ```json
 {
     "body": "Attachment [trac_4603.patch](tarball://root/attachments/some-uuid/ticket4603/trac_4603.patch) by mvngu created at 2008-11-24 10:34:02\n\nfixes typos in files under the directory sage/categories",
     "created_at": "2008-11-24T10:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4603",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34504",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34437",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -51,15 +51,15 @@ fixes typos in files under the directory sage/categories
 
 ---
 
-archive/issue_comments_034505.json:
+archive/issue_comments_034438.json:
 ```json
 {
     "body": "The patch **trac_4603.patch** was created using sage-3.2.",
     "created_at": "2008-11-24T10:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4603",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34505",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34438",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -69,15 +69,15 @@ The patch **trac_4603.patch** was created using sage-3.2.
 
 ---
 
-archive/issue_comments_034506.json:
+archive/issue_comments_034439.json:
 ```json
 {
     "body": "Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-24T12:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4603",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34506",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34439",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +91,15 @@ Michael
 
 ---
 
-archive/issue_comments_034507.json:
+archive/issue_comments_034440.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-24T19:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4603",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34507",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34440",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +109,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_034508.json:
+archive/issue_comments_034441.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1alpha1",
     "created_at": "2008-11-24T19:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4603",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34508",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4603#issuecomment-34441",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

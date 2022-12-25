@@ -6,7 +6,7 @@ archive/issues_006483.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nIn Firefox 3.5 on Linux, jsMath's `cmmi10` font appears to be decoded improperly.  Try this [test](http://www.math.union.edu/~dpvc/jsMath/symbols/cmmi10.html).  Other fonts seem fine.\n\nSee [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/61bf1226d39ecf1d/c330223e1970d9c6?#c330223e1970d9c6) for more.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6483\n\n",
     "created_at": "2009-07-08T13:26:34Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006483.json:
     "title": "jsmath font broken in Firefox 3.5 on Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6483",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: boothby
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6483
 
 ---
 
-archive/issue_comments_052411.json:
+archive/issue_comments_052313.json:
 ```json
 {
     "body": "$SAGE_ROOT/local/notebook/javascript/jsmath/cmmi10.js",
     "created_at": "2009-07-08T13:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52411",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52313",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -51,15 +51,15 @@ $SAGE_ROOT/local/notebook/javascript/jsmath/cmmi10.js
 
 ---
 
-archive/issue_comments_052412.json:
+archive/issue_comments_052314.json:
 ```json
 {
     "body": "Attachment [cmmi10.txt](tarball://root/attachments/some-uuid/ticket6483/cmmi10.txt) by @qed777 created at 2009-07-08 13:32:33\n\nTest worksheet.",
     "created_at": "2009-07-08T13:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52412",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52314",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -71,15 +71,15 @@ Test worksheet.
 
 ---
 
-archive/issue_comments_052413.json:
+archive/issue_comments_052315.json:
 ```json
 {
     "body": "I've attached a preliminary workaround.  Suggested directions:\n\n* Save `cmmi10.js` as `$SAGE_ROOT/local/notebook/javascript/jsmath/cmmi10.js`\n* Around line 1750 of `$SAGE_ROOT/devel/sage/sage/server/notebook/notebook.py`, replace\n\n```\n            head += '<script type=\"text/javascript\" src=\"/javascript_local/jsmath/jsMath.js\"></script>\\n'\n```\n\nwith\n\n```\n            head += '<script type=\"text/javascript\" src=\"/javascript_local/jsmath/jsMath.js\"></script>\\n'\n            head += '<script type=\"text/javascript\">jsMath.Setup.UserEvent[\"pre-font\"] = function () { jsMath.Setup.Script(\"cmmi10.js\"); };</script>\\n'\n```\n\n* `sage -br`\n* Optional tests: Load and execute `cmmi10.txt` as a worksheet in the notebook.\n\nThis seems to work for me, but I haven't accounted for every character.  Feel free to improve the code or tests!",
     "created_at": "2009-07-08T13:48:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52413",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52315",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -108,15 +108,15 @@ This seems to work for me, but I haven't accounted for every character.  Feel fr
 
 ---
 
-archive/issue_comments_052414.json:
+archive/issue_comments_052316.json:
 ```json
 {
     "body": "Note: This approach substitutes the font `cmmi10` for `jsMath-cmmi10`, which, for some reason, Firefox 3.5 is unable to decode properly.  It may help to check the system for `cmmi10.ttf`.  The relevant Fedora 10 package is `mathml-fonts`.\n\nSome Unicode links:\n\n[Symbols](http://www.unicode.org/charts/symbols.html)\n\n[UTF-8 conversion tool](http://www.unicode.org/charts/symbols.html)\n\n[Index, search, categories](http://www.fileformat.info/info/unicode/index.htm)",
     "created_at": "2009-07-08T14:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52414",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52316",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -134,15 +134,15 @@ Some Unicode links:
 
 ---
 
-archive/issue_comments_052415.json:
+archive/issue_comments_052317.json:
 ```json
 {
     "body": "That should be [UTF-8 conversion tool](http://www.ltg.ed.ac.uk/~richard/utf-8.cgi).",
     "created_at": "2009-07-08T14:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52415",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52317",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -152,15 +152,15 @@ That should be [UTF-8 conversion tool](http://www.ltg.ed.ac.uk/~richard/utf-8.cg
 
 ---
 
-archive/issue_comments_052416.json:
+archive/issue_comments_052318.json:
 ```json
 {
     "body": "Davide has updated his fonts at http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html to include a special one from Firefox 3.5 on Linux.  I've been using his special font, and it seems to work great.",
     "created_at": "2009-07-18T20:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52416",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52318",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -170,15 +170,15 @@ Davide has updated his fonts at http://www.math.union.edu/~dpvc/jsMath/download/
 
 ---
 
-archive/issue_comments_052417.json:
+archive/issue_comments_052319.json:
 ```json
 {
     "body": "I've also asked Davide of his opinion of this workaround, as compared to downloading the new font he created.  I'll post here what he says if he does not post directly to sage-devel.",
     "created_at": "2009-07-18T20:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52417",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52319",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -188,15 +188,15 @@ I've also asked Davide of his opinion of this workaround, as compared to downloa
 
 ---
 
-archive/issue_comments_052418.json:
+archive/issue_comments_052320.json:
 ```json
 {
     "body": "Using the new font, I think, is a much better *solution*.  I view the workaround mainly as a byproduct of trying to learn a bit more about how jsMath works.  Its modular design and lazy-loading feature, in particular, could be useful examples for other projects.  Then again, I'm more of a library user than a writer.\n\nPlease feel free to close this ticket.",
     "created_at": "2009-07-19T04:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52418",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52320",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -208,15 +208,15 @@ Please feel free to close this ticket.
 
 ---
 
-archive/issue_comments_052419.json:
+archive/issue_comments_052321.json:
 ```json
 {
     "body": "Can someone invalidate this ticket?  I apparently don't have permissions to close it.",
     "created_at": "2009-07-19T07:20:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52419",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52321",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -226,15 +226,15 @@ Can someone invalidate this ticket?  I apparently don't have permissions to clos
 
 ---
 
-archive/issue_comments_052420.json:
+archive/issue_comments_052322.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-10-01T05:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52420",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52322",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -244,15 +244,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_052421.json:
+archive/issue_comments_052323.json:
 ```json
 {
     "body": "Closing this as invalid. Use the latest jsMath fonts from http://www.math.union.edu/~dpvc/jsMath/download/jsMath-fonts.html.",
     "created_at": "2009-10-01T05:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52421",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6483#issuecomment-52323",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

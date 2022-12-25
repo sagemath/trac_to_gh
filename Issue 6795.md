@@ -6,15 +6,14 @@ archive/issues_006795.json:
     "body": "Assignee: @williamstein\n\nKeywords: maxima\n\nOn Solaris (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4 (see trac #6564); Maxima version 5.19.1 (see trac #6699). Updated spkgs can be found here. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4/\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.1/\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nsage -t  \"devel/sage/sage/interfaces/expect.py\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/sage/interfaces/expect.py\", line 805:\n    sage: print sage0.eval(\"alarm(1); singular._expect_expr('1')\")\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_15[9]>\", line 1, in <module>\n        print sage0.eval(\"alarm(1); singular._expect_expr('1')\")###line 805:\n    sage: print sage0.eval(\"alarm(1); singular._expect_expr('1')\")\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/sage0.py\", line 325, in eval\n        return Expect.eval(self, line, **kwds).strip()\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/expect.py\", line 980, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/expect.py\", line 634, in _eval_line\n        self._start()\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/expect.py\", line 469, in _start\n        raise RuntimeError, \"Unable to start %s\"%self.__name\n    RuntimeError: Unable to start sage\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_15\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_expect.py\n         [153.2 s]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6795\n\n",
     "created_at": "2009-08-21T07:22:07Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "doctest failure in sage/sage/interfaces/expect.py due to upgrade to Maxima 5.19.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6795",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: @williamstein
@@ -84,15 +83,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6795
 
 ---
 
-archive/issue_comments_055978.json:
+archive/issue_comments_055876.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2009-12-17T20:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6795#issuecomment-55978",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6795#issuecomment-55876",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -102,15 +101,15 @@ Resolution: worksforme
 
 ---
 
-archive/issue_comments_055979.json:
+archive/issue_comments_055877.json:
 ```json
 {
     "body": "I am closing this as `worksforme`. We've gone several releases with maxima-5.19.1, who knows what the problem that prevented Sage from starting as in the description was.",
     "created_at": "2009-12-17T20:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6795",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6795#issuecomment-55979",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6795#issuecomment-55877",
+    "user": "https://github.com/burcin"
 }
 ```
 

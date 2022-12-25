@@ -6,7 +6,7 @@ archive/issues_009388.json:
     "body": "Assignee: GeorgSWeber\n\nCC:  @rlmill\n\nThe current makefile for the rubiks spkg.\n\nThe makefile erroneously assumes that \"mktemp\" can be run with no arguments.  This is not the case on, at least, recent versions of Mac OS X.\n\nThe probable fix is to run \"mktemp\" with a template filename.  See the man page for details.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9388\n\n",
     "created_at": "2010-06-30T00:53:16Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009388.json:
     "title": "Fix rubiks makefile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9388",
-    "user": "justin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 Assignee: GeorgSWeber
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9388
 
 ---
 
-archive/issue_comments_089355.json:
+archive/issue_comments_089213.json:
 ```json
 {
     "body": "Attachment [9388.patch](tarball://root/attachments/some-uuid/ticket9388/9388.patch) by justin created at 2010-06-30 03:57:11\n\nPatch for rubiks' \"spkg-install\" script",
     "created_at": "2010-06-30T03:57:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89355",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89213",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -56,15 +56,15 @@ Patch for rubiks' "spkg-install" script
 
 ---
 
-archive/issue_comments_089356.json:
+archive/issue_comments_089214.json:
 ```json
 {
     "body": "Updated spkg (new \"spkg-install\")",
     "created_at": "2010-06-30T03:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89356",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89214",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -74,15 +74,15 @@ Updated spkg (new "spkg-install")
 
 ---
 
-archive/issue_comments_089357.json:
+archive/issue_comments_089215.json:
 ```json
 {
     "body": "Attachment [rubiks-20070912.p12.spkg](tarball://root/attachments/some-uuid/ticket9388/rubiks-20070912.p12.spkg) by justin created at 2010-06-30 04:01:04\n\nThe patch file is just the fix for the file \"spkg-install\".  The \"spkg\" is a new spkg file with the changed \"spkg-install\" script.",
     "created_at": "2010-06-30T04:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89357",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89215",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -94,15 +94,15 @@ The patch file is just the fix for the file "spkg-install".  The "spkg" is a new
 
 ---
 
-archive/issue_comments_089358.json:
+archive/issue_comments_089216.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-30T04:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89358",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89216",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -112,15 +112,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_089359.json:
+archive/issue_comments_089217.json:
 ```json
 {
     "body": "Hi Jason, \nthere's a few problems with this. \n* There's no SPKG.txt entry to show what was changed. \n* Patches should not be attached to the trac server, but instead given to a location where they can be found. \n* Having looked into this more, 'mktemp' is not defined by POSIX so is not portable. We might find this screws up the FreeBSD port. \n\nI'll create another which avoid using it completely. \n\nGive me 15 minutes. \n\nDave",
     "created_at": "2010-06-30T10:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89359",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89217",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -140,15 +140,15 @@ Dave
 
 ---
 
-archive/issue_comments_089360.json:
+archive/issue_comments_089218.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-30T10:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89360",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89218",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -158,15 +158,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_089361.json:
+archive/issue_comments_089219.json:
 ```json
 {
     "body": "Sorry, Justin, not Jason. \n\nA portable fix is coming up very soon. \n\nDave",
     "created_at": "2010-06-30T10:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89361",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89219",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -180,15 +180,15 @@ Dave
 
 ---
 
-archive/issue_comments_089362.json:
+archive/issue_comments_089220.json:
 ```json
 {
     "body": "Here's a link to the next package, which has an updated SPKG.txt file and avoids the use of mktemp at all. \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/rubiks-20070912.p12.spkg",
     "created_at": "2010-06-30T11:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89362",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89220",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -200,15 +200,15 @@ http://boxen.math.washington.edu/home/kirkby/patches/rubiks-20070912.p12.spkg
 
 ---
 
-archive/issue_comments_089363.json:
+archive/issue_comments_089221.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-30T11:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89363",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -218,15 +218,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_089364.json:
+archive/issue_comments_089222.json:
 ```json
 {
     "body": "Mercurial patch which fully solves the rubiks makefile problem using only POSIX commands.",
     "created_at": "2010-06-30T11:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89364",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89222",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -236,15 +236,15 @@ Mercurial patch which fully solves the rubiks makefile problem using only POSIX 
 
 ---
 
-archive/issue_comments_089365.json:
+archive/issue_comments_089223.json:
 ```json
 {
     "body": "Attachment [9388-fix-Rubiks-portably.patch](tarball://root/attachments/some-uuid/ticket9388/9388-fix-Rubiks-portably.patch) by @rlmill created at 2010-07-01 17:50:23\n\nDavid --- While credit for individual patches by definition goes to those who make them, the author block is for credit in the release notes, which should go to anyone who helped move the fix towards its final form. I think that Justin still deserves credit here for helping to hunt down the problem in the first place.\n\nIt might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.",
     "created_at": "2010-07-01T17:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89365",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89223",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -258,15 +258,15 @@ It might be that we're coming from different contexts, but it strikes me as rude
 
 ---
 
-archive/issue_comments_089366.json:
+archive/issue_comments_089224.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-01T17:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89366",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89224",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -276,15 +276,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_089367.json:
+archive/issue_comments_089225.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-01T18:14:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89367",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89225",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -294,15 +294,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_089368.json:
+archive/issue_comments_089226.json:
 ```json
 {
     "body": "Replying to [comment:6 rlm]:\n\n> It might be that we're coming from different contexts, but it strikes me as rude to remove someone from the author block.\n\nThat certainly was not my intension. I was coming it from the point that an author could not review it, and it would make it possible for Justin to review it. \nIf you look at a comment on sage-devel today, I specifically asked Francois to remove me from an author or #9097 since he had another idea on this, then I would be able to review it. \n\nSorry if I caused any offense to Justin or yourself - that was certainly not my intension. \n\nDave",
     "created_at": "2010-07-01T18:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89368",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89226",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -321,15 +321,15 @@ Dave
 
 ---
 
-archive/issue_comments_089369.json:
+archive/issue_comments_089227.json:
 ```json
 {
     "body": "Replying to [comment:8 drkirkby]:\n> That certainly was not my intension. I was coming it from the point that an author could not review it, and it would make it possible for Justin to review it. \n> If you look at a comment on sage-devel today, I specifically asked Francois to remove me from an author or #9097 since he had another idea on this, then I would be able to review it. \n\nI frequently see the same two people listed as author and reviewer. Often there are multiple patches, with (author, reviewer) switching between persons (a,b) and (b,a), for one example. I am sure you did not intend anything rude, I just wanted to bring it up to avoid misunderstanding. The author and reviewer fields on the trac server should be the union of anyone who feels that they have contributed to that part of the process. The only rule to follow strictly is that the author of a patch cannot review that patch, but as you have seen, trac tickets frequently become pretty complicated. One applies that rule patch by patch, not ticket by ticket.\n\n> \n> Sorry if I caused any offense to Justin or yourself - that was certainly not my intension. \n> \n\nThere is no offense here.\n\nCheers!\n-- RLM",
     "created_at": "2010-07-01T20:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9388",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89369",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9388#issuecomment-89227",
+    "user": "https://github.com/rlmill"
 }
 ```
 

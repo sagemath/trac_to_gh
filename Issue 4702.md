@@ -6,15 +6,13 @@ archive/issues_004702.json:
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\nKeywords: magma interface\n\nA drop in the bucket, but a useful drop.  Vectors and modules, inexact fields, conversions from sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4702\n\n",
     "created_at": "2008-12-05T00:39:40Z",
     "labels": [
-        "interfaces",
-        "major",
-        "enhancement"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "improve magma interface coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4702",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4702
 
 ---
 
-archive/issue_comments_035421.json:
+archive/issue_comments_035352.json:
 ```json
 {
     "body": "Attachment [4702-extcode-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-magma.patch) by @ncalexan created at 2008-12-05 00:40:15",
     "created_at": "2008-12-05T00:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35421",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35352",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -51,15 +49,15 @@ Attachment [4702-extcode-magma.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_035422.json:
+archive/issue_comments_035353.json:
 ```json
 {
     "body": "Attachment [4702-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-magma.patch) by @ncalexan created at 2008-12-05 00:41:27",
     "created_at": "2008-12-05T00:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35422",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35353",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -69,15 +67,15 @@ Attachment [4702-magma.patch](tarball://root/attachments/some-uuid/ticket4702/47
 
 ---
 
-archive/issue_comments_035423.json:
+archive/issue_comments_035354.json:
 ```json
 {
     "body": "REFEREE REPORT:\n\nAll the code looks good.  I doctested the whole tree and there are several doctests failures in free_module.py, but no other doctest failures.  \n\nNick, could you \"explain\" this behavior\n\n```\nsage: a = RR(pi)\nsage: a\n3.14159265358979\nsage: magma(a)\n3.14159265358979\nsage: a = RR(pi)\nsage: b = magma(a)\nsage: b\n3.14159265358979\nsage: b.Parent()\nReal field of precision 15\nsage: b._sage_()\n3.1415926535898\nsage: b._sage_().parent()\nReal Field with 49 bits of precision\n```\n\nI.e., why precision is lost in going back and forth.  Technically, it's not a priori necessary to loose bits, is it? \n\nAnother remark -- the MagmaElement objects all have a sage method, so you can do\n\n```\nsage: b.sage()\n```\n\ninstead of `b._sage_()` in doctests, which likely sets a better example.\n\nThis is a superb patch.  I read carefully through the rest and I'm happy with\neverything.  I just want a short discussion about precision issues (going back and forth) and strategies, and fixing of the free_module.py doctests.\n\nBy the way, Sage numbers I think don't print all their decimal digits by default.  This a feature that Carl Witty added about a year ago, and may be responsible for the precision loss going back and forth.\n\nWilliam",
     "created_at": "2008-12-05T02:13:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35423",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35354",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -126,15 +124,15 @@ William
 
 ---
 
-archive/issue_comments_035424.json:
+archive/issue_comments_035355.json:
 ```json
 {
     "body": "Attachment [trac_4702-rebase_and_fix_doctests.patch](tarball://root/attachments/some-uuid/ticket4702/trac_4702-rebase_and_fix_doctests.patch) by @williamstein created at 2008-12-05 02:21:37\n\ni made this since for doctesting purposes I wanted to (1) leave nick's code in place and (2) have a clean doctesting slate.  It's his patch rebased to apply after my #4701 and with all his doctests \"fixed\" to give the output they give.  Obviously after reading my referee report it's possible nick will change his mind about his implementation, and not want that output.",
     "created_at": "2008-12-05T02:21:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35424",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35355",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -146,15 +144,15 @@ i made this since for doctesting purposes I wanted to (1) leave nick's code in p
 
 ---
 
-archive/issue_comments_035425.json:
+archive/issue_comments_035356.json:
 ```json
 {
     "body": "Attachment [4702-ncalexan-magma-updates-2.patch](tarball://root/attachments/some-uuid/ticket4702/4702-ncalexan-magma-updates-2.patch) by @ncalexan created at 2008-12-05 05:38:34\n\nI wasn't testing free_module.py correctly, so that's fixed.\n\nI have made sure we lose no precision in the rings.  I talked to Carl Witty about truncating; we shouldn't do it, but Magma seems to do it anyway:\n\n\n```\nsage: a = 61/3.0; a\n20.3333333333333\nsage: a.str(truncate=False)\n'20.333333333333332'\nsage: magma(a).sage()\n20.3333333333333\nsage: magma(a).sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332')\n20.3333333333333\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').sage().str(truncate=False)\n'20.333333333333300'\nsage: magma('RealField(53 : Bits := true)!20.333333333333332').Sage()\nRealField(53)(20.3333333333333)\n```\n\n\nIt's coming back from Magma truncated, and I have no idea how to make Magma print it without truncation.  I say we leave it as is -- losing a bit or three at the end is not a huge concern for me.",
     "created_at": "2008-12-05T05:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35425",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35356",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -189,15 +187,15 @@ It's coming back from Magma truncated, and I have no idea how to make Magma prin
 
 ---
 
-archive/issue_comments_035426.json:
+archive/issue_comments_035357.json:
 ```json
 {
     "body": "Attachment [4702-extcode-magma.2.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-magma.2.patch) by @ncalexan created at 2008-12-05 05:39:45\n\nBoth 4702-ncalexan-magma-updates-2.patch and 4702-extcode-magma.2.patch apply fresh.",
     "created_at": "2008-12-05T05:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35426",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35357",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -209,15 +207,15 @@ Both 4702-ncalexan-magma-updates-2.patch and 4702-extcode-magma.2.patch apply fr
 
 ---
 
-archive/issue_comments_035427.json:
+archive/issue_comments_035358.json:
 ```json
 {
     "body": "Attachment [4702-extcode-ncalexan-magma.patch](tarball://root/attachments/some-uuid/ticket4702/4702-extcode-ncalexan-magma.patch) by @williamstein created at 2008-12-05 06:16:09\n\nPositive review!\n\nMabshoff, apply exactly these two patches:\n\n```\n4702-ncalexan-magma-updates-2.patch\n4702-extcode-ncalexan-magma.patch\n```\n",
     "created_at": "2008-12-05T06:16:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35427",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35358",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -237,15 +235,15 @@ Mabshoff, apply exactly these two patches:
 
 ---
 
-archive/issue_comments_035428.json:
+archive/issue_comments_035359.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-05T09:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35428",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35359",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -255,15 +253,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_035429.json:
+archive/issue_comments_035360.json:
 ```json
 {
     "body": "Merged 4702-ncalexan-magma-updates-2.patch and 4702-extcode-magma.2.patch in Sage 3.2.2.alpha0.\n\nNick: your patches were both diffs and I caught this only once I have merged 4702-ncalexan-magma-updates-2.patch. Please make sure to post hg patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-05T09:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35429",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35360",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -279,15 +277,15 @@ Michael
 
 ---
 
-archive/issue_comments_035430.json:
+archive/issue_comments_035361.json:
 ```json
 {
     "body": "I just noticed that I merged the wrong patch, so I am reverting 4702-extcode-magma.2.patch and merging 4702-extcode-ncalexan-magma.patch instead.",
     "created_at": "2008-12-07T08:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35430",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4702#issuecomment-35361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

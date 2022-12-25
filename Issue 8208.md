@@ -6,7 +6,7 @@ archive/issues_008208.json:
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @williamstein\n\nFollow-up to #7786.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8208\n\n",
     "created_at": "2010-02-07T16:20:18Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008208.json:
     "title": "Click \"No\" actually publishes a worksheet in SageNB 0.7.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8208",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8208
 
 ---
 
-archive/issue_comments_072383.json:
+archive/issue_comments_072261.json:
 ```json
 {
     "body": "Revert to pre-#7786 buttons.  sagenb repo.",
     "created_at": "2010-02-07T16:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72383",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72261",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -49,15 +49,15 @@ Revert to pre-#7786 buttons.  sagenb repo.
 
 ---
 
-archive/issue_comments_072384.json:
+archive/issue_comments_072262.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-07T16:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72384",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72262",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072385.json:
+archive/issue_comments_072263.json:
 ```json
 {
     "body": "Attachment [trac_8208-publish_buttons.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-publish_buttons.patch) by @qed777 created at 2010-02-07 16:22:37",
     "created_at": "2010-02-07T16:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72385",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72263",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -85,15 +85,15 @@ Attachment [trac_8208-publish_buttons.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_072386.json:
+archive/issue_comments_072264.json:
 ```json
 {
     "body": "We need to fix the Selenium tests, too.",
     "created_at": "2010-02-07T16:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72386",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72264",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -103,15 +103,15 @@ We need to fix the Selenium tests, too.
 
 ---
 
-archive/issue_comments_072387.json:
+archive/issue_comments_072265.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-02-07T16:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72387",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72265",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -121,15 +121,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_072388.json:
+archive/issue_comments_072266.json:
 ```json
 {
     "body": "ERROR: test_3960 (sagenb.testing.tests.test_accounts.TestAccounts)\nERROR: test_7433 (sagenb.testing.tests.test_worksheet.TestWorksheet)\nERROR: test_7428 (sagenb.testing.tests.test_worksheet_list.TestWorksheetList)\nERROR: test_7444 (sagenb.testing.tests.test_worksheet_list.TestWorksheetList)\n\nException: ERROR: Element //button[text()='Yes'] not found\n\nOr maybe we can fix the buttons in another way.",
     "created_at": "2010-02-07T16:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72388",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72266",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -146,15 +146,15 @@ Or maybe we can fix the buttons in another way.
 
 ---
 
-archive/issue_comments_072389.json:
+archive/issue_comments_072267.json:
 ```json
 {
     "body": "We should also check that all of the publish buttons work in WebKit browsers.",
     "created_at": "2010-02-07T16:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72389",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72267",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -164,15 +164,15 @@ We should also check that all of the publish buttons work in WebKit browsers.
 
 ---
 
-archive/issue_comments_072390.json:
+archive/issue_comments_072268.json:
 ```json
 {
     "body": "I did test this patch, and it definitely *works* irregardless of the test issue.  I'll likely apply this to sagenb.org.  I was going to give it a positive review, but obviously the selenium test failure is an issue.",
     "created_at": "2010-02-07T17:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72390",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72268",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -182,15 +182,15 @@ I did test this patch, and it definitely *works* irregardless of the test issue.
 
 ---
 
-archive/issue_comments_072391.json:
+archive/issue_comments_072269.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-07T23:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72391",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72269",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -200,15 +200,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_072392.json:
+archive/issue_comments_072270.json:
 ```json
 {
     "body": "I added a selenium test (test_8208).  Here's the output without the fix\n\n```\ntest_3960 (tests.test_accounts.TestAccounts) ... ok\ntest_4050 (tests.test_accounts.TestAccounts) ... ok\ntest_4088 (tests.test_accounts.TestAccounts) ... ok\ntest_3711 (tests.test_worksheet.TestWorksheet) ... ok\ntest_3957 (tests.test_worksheet.TestWorksheet) ... ok\ntest_7341 (tests.test_worksheet.TestWorksheet) ... ok\ntest_7433 (tests.test_worksheet.TestWorksheet) ... ok\ntest_7434 (tests.test_worksheet.TestWorksheet) ... ok\ntest_8208 (tests.test_worksheet.TestWorksheet) ... FAIL\ntest_edit (tests.test_worksheet.TestWorksheet) ... ok\ntest_operations1 (tests.test_worksheet.TestWorksheet) ... ok\ntest_simple_evaluation (tests.test_worksheet.TestWorksheet) ... ok\ntest_7428 (tests.test_worksheet_list.TestWorksheetList) ... ok\ntest_7444 (tests.test_worksheet_list.TestWorksheetList) ... ok\ntest_creating_worksheet (tests.test_worksheet_list.TestWorksheetList) ... ok\ntest_opening_worksheet (tests.test_worksheet_list.TestWorksheetList) ... ok\ntest_searching_for_worksheets (tests.test_worksheet_list.TestWorksheetList) ... ok\n\n======================================================================\nFAIL: test_8208 (tests.test_worksheet.TestWorksheet)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/alex/sage-dev/sagenb-0.7.4/src/sagenb/sagenb/testing/tests/test_worksheet.py\", line 231, in test_8208\n    self.assertFalse(self.is_worksheet_published('not_p_ws'))\nAssertionError\n\n----------------------------------------------------------------------\nRan 17 tests in 384.271s\n\nFAILED (failures=1)\n```\n\n\nAfter the fix:\n\n```\ntest_3960 (tests.test_accounts.TestAccounts) ... ok\ntest_4050 (tests.test_accounts.TestAccounts) ... ok\ntest_4088 (tests.test_accounts.TestAccounts) ... ok\ntest_3711 (tests.test_worksheet.TestWorksheet) ... ok\ntest_3957 (tests.test_worksheet.TestWorksheet) ... ok\ntest_7341 (tests.test_worksheet.TestWorksheet) ... ok\ntest_7433 (tests.test_worksheet.TestWorksheet) ... ok\ntest_7434 (tests.test_worksheet.TestWorksheet) ... ok\ntest_8208 (tests.test_worksheet.TestWorksheet) ... ok\ntest_edit (tests.test_worksheet.TestWorksheet) ... ok\ntest_operations1 (tests.test_worksheet.TestWorksheet) ... ok\ntest_simple_evaluation (tests.test_worksheet.TestWorksheet) ... ok\ntest_7428 (tests.test_worksheet_list.TestWorksheetList) ... ok\ntest_7444 (tests.test_worksheet_list.TestWorksheetList) ... ok\ntest_creating_worksheet (tests.test_worksheet_list.TestWorksheetList) ... ok\ntest_opening_worksheet (tests.test_worksheet_list.TestWorksheetList) ... ok\ntest_searching_for_worksheets (tests.test_worksheet_list.TestWorksheetList) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 381.556s\n\nOK\n```\n",
     "created_at": "2010-02-07T23:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72392",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72270",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -280,15 +280,15 @@ OK
 
 ---
 
-archive/issue_comments_072393.json:
+archive/issue_comments_072271.json:
 ```json
 {
     "body": "Attachment [trac_8208-no-publish.patch](tarball://root/attachments/some-uuid/ticket8208/trac_8208-no-publish.patch) by acleone created at 2010-02-07 23:14:46\n\nChanges buttons to inputs and adds a Selenium test",
     "created_at": "2010-02-07T23:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72393",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72271",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -300,15 +300,15 @@ Changes buttons to inputs and adds a Selenium test
 
 ---
 
-archive/issue_comments_072394.json:
+archive/issue_comments_072272.json:
 ```json
 {
     "body": "The patch looks good.  Thanks for adding the test!",
     "created_at": "2010-02-09T03:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72394",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72272",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -318,15 +318,15 @@ The patch looks good.  Thanks for adding the test!
 
 ---
 
-archive/issue_comments_072395.json:
+archive/issue_comments_072273.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-09T03:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72395",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72273",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -336,15 +336,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_072396.json:
+archive/issue_comments_072274.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-10T18:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72396",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8208#issuecomment-72274",
+    "user": "https://github.com/qed777"
 }
 ```
 

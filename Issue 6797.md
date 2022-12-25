@@ -6,15 +6,14 @@ archive/issues_006797.json:
     "body": "Assignee: tbd\n\nKeywords: maxima\n\nOn Solaris 10 update 7 (SPARC), the following tests failed. Both ECL and Maxima were updated - ECL version 9.8.4 (see trac #6564); Maxima version 5.19.1 (see trac #6699). Updated spkgs can be found here. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.4/ecl-9.8.4.spkg\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.1/\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThu Aug 20 20:02:37 BST 2009\ndsage-trial tmp directory doesn't exist - creating ...\nThis script will run the unit tests for DSage\n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n<SNIP>\n\n```\nsage -t  \"devel/sage/sage/groups/perm_gps/cubegroup.py\"\n**********************************************************************\nFile \"/export/home/drkirkby/sage/sage-4.1.1/devel/sage/sage/groups/perm_gps/cubegroup.py\", line 892:\n    sage: rubik.solve(state)\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_16[4]>\", line 1, in <module>\n        rubik.solve(state)###line 892:\n    sage: rubik.solve(state)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/groups/perm_gps/cubegroup.py\", line 913, in solve\n        return C.solve(algorithm)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/groups/perm_gps/cubegroup.py\", line 1106, in solve\n        return solver.solve(self.facets(), timeout=timeout)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/sage/interfaces/rubik.py\", line 254, in solve\n        child.expect('Initialization done!')\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 912, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/export/home/drkirkby/sage/sage-4.1.1/local/lib/python/site-packages/pexpect.py\", line 989, in expect_list\n        raise TIMEOUT (str(e) + '\\n' + str(self))\n    TIMEOUT: Timeout exceeded in read_nonblocking().\n    <pexpect.spawn instance at 0x3958c10>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube\n    args: ['/export/home/drkirkby/sage/sage-4.1.1/local/bin/dikcube', '-p']\n    patterns:\n        Initialization done!\n    buffer (last 100 chars):\n    before (last 100 chars): ice orders...\n            Initialized = 24\n            Maxpath = 4\n        Done!\n        Initializing mixed...\n\n    after: <class 'pexpect.TIMEOUT'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 0\n    pid: 17118\n    child_fd: 4\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_16\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /export/home/drkirkby/sage/sage-4.1.1/tmp/.doctest_cubegroup.py\n         [173.9 s]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6797\n\n",
     "created_at": "2009-08-21T08:02:41Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest failure in sage/sage/groups/perm_gps/cubegroup.py due to upgrade to Maxima 5.19.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6797",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -112,15 +111,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6797
 
 ---
 
-archive/issue_comments_055982.json:
+archive/issue_comments_055880.json:
 ```json
 {
     "body": "The Rubik's cube solver (I think) calls a C program. Can it be tested if that C program is compiled correctly?\n\nBut honestly, I don't know what this failure means. I think Robert Bradshaw needs to look at it.",
     "created_at": "2009-08-21T11:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55982",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55880",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -132,15 +131,15 @@ But honestly, I don't know what this failure means. I think Robert Bradshaw need
 
 ---
 
-archive/issue_comments_055983.json:
+archive/issue_comments_055881.json:
 ```json
 {
     "body": "Changing component from algebra to solaris.",
     "created_at": "2009-11-15T13:04:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55983",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55881",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -150,15 +149,15 @@ Changing component from algebra to solaris.
 
 ---
 
-archive/issue_comments_055984.json:
+archive/issue_comments_055882.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-12-02T20:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55984",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55882",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -168,15 +167,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_055985.json:
+archive/issue_comments_055883.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-12-02T20:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55985",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55883",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -186,15 +185,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_055986.json:
+archive/issue_comments_055884.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-12-05T08:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55986",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6797#issuecomment-55884",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

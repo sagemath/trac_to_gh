@@ -6,7 +6,7 @@ archive/issues_007285.json:
     "body": "Assignee: tbd\n\nMercurial no longer has an hgmerge script.  This if one does \n\n```\nsage: install_scripts('/usr/local/bin/')\n```\n\nwith sage right now then very bad things happen.  For starters, you get an hgmerge script that hangs, which means any time any file ever gets merged with mercurial, instead of getting a merge option, you get a hang.  Pretty confusing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7285\n\n",
     "created_at": "2009-10-25T03:47:15Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007285.json:
     "title": "remove hgmerge from list of installed scripts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7285",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7285
 
 ---
 
-archive/issue_comments_060626.json:
+archive/issue_comments_060513.json:
 ```json
 {
     "body": "Attachment [trac_7285.patch](tarball://root/attachments/some-uuid/ticket7285/trac_7285.patch) by @williamstein created at 2009-10-25 03:51:58",
     "created_at": "2009-10-25T03:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60626",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60513",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -53,15 +53,15 @@ Attachment [trac_7285.patch](tarball://root/attachments/some-uuid/ticket7285/tra
 
 ---
 
-archive/issue_comments_060627.json:
+archive/issue_comments_060514.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-25T03:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60627",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60514",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -71,15 +71,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060628.json:
+archive/issue_comments_060515.json:
 ```json
 {
     "body": "Changing component from algebra to misc.",
     "created_at": "2009-10-25T03:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60628",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60515",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +89,15 @@ Changing component from algebra to misc.
 
 ---
 
-archive/issue_comments_060629.json:
+archive/issue_comments_060516.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-11-04T14:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60629",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60516",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -107,15 +107,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_060630.json:
+archive/issue_comments_060517.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-04T14:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60630",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60517",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -125,15 +125,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060631.json:
+archive/issue_comments_060518.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-06T04:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60631",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7285#issuecomment-60518",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002718.json:
     "body": "Assignee: failure\n\nE.g., issues like this:\n\n\n```\nThe athlon 32-bit linux box has the most files failing:\n   http://sage.math.washington.edu/home/was/build/tests/2.11.alpha2/Linux-meccah.log\n\n\tsage -t  devel/sage-main/sage/interfaces/psage.py\n\tsage -t  devel/sage-main/sage/interfaces/sage0.py\n\tsage -t  devel/sage-main/sage/dsage/tests/testdoc.py\n\tsage -t  devel/sage-main/sage/calculus/calculus.py\n\nAlso tut.tex fails due to the timeout. \n\nWe should raise the timeout, since calculus is a timeout issue, and\nit should be possible to test Sage even on a mere 2.1Ghz machine.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2718\n\n",
     "created_at": "2008-03-29T16:28:51Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002718.json:
     "title": "increase the default doctest timeout to 360 seconds",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2718",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: failure
@@ -46,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2718
 
 ---
 
-archive/issue_comments_018740.json:
+archive/issue_comments_018701.json:
 ```json
 {
     "body": "Attachment [trac_2718.patch](tarball://root/attachments/some-uuid/ticket2718/trac_2718.patch) by mabshoff created at 2008-03-29 17:21:43",
     "created_at": "2008-03-29T17:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2718",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18740",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18701",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -64,15 +64,15 @@ Attachment [trac_2718.patch](tarball://root/attachments/some-uuid/ticket2718/tra
 
 ---
 
-archive/issue_comments_018741.json:
+archive/issue_comments_018702.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-29T17:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2718",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18741",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18702",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -82,15 +82,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_018742.json:
+archive/issue_comments_018703.json:
 ```json
 {
     "body": "Changing assignee from failure to mabshoff.",
     "created_at": "2008-03-29T17:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2718",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18742",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18703",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -100,15 +100,15 @@ Changing assignee from failure to mabshoff.
 
 ---
 
-archive/issue_comments_018743.json:
+archive/issue_comments_018704.json:
 ```json
 {
     "body": "I tested that the patch applies and doctesting still works; I did not explicitly test that the timeout changed.\n\nLooks good.",
     "created_at": "2008-03-29T17:27:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2718",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18743",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18704",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -120,15 +120,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_018744.json:
+archive/issue_comments_018705.json:
 ```json
 {
     "body": "Merged in Sage 2.11.rc0",
     "created_at": "2008-03-29T17:33:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2718",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18744",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18705",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -138,15 +138,15 @@ Merged in Sage 2.11.rc0
 
 ---
 
-archive/issue_comments_018745.json:
+archive/issue_comments_018706.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-29T17:33:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2718",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18745",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2718#issuecomment-18706",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_005702.json:
     "body": "Assignee: mabshoff\n\nRight now the various make check targets do not test the documentation. Fix that.\n\nPatch coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5702\n\n",
     "created_at": "2009-04-06T23:18:03Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005702.json:
     "title": "make \"make check\" & friends doctest the documentation too",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5702",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5702
 
 ---
 
-archive/issue_comments_044565.json:
+archive/issue_comments_044480.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-04-06T23:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44565",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44480",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +53,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_044566.json:
+archive/issue_comments_044481.json:
 ```json
 {
     "body": "Note that this patch is a traditional patch since the file in question is not under version control.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T09:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44566",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44481",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +75,15 @@ Michael
 
 ---
 
-archive/issue_comments_044567.json:
+archive/issue_comments_044482.json:
 ```json
 {
     "body": "Attachment [trac_5702.patch](tarball://root/attachments/some-uuid/ticket5702/trac_5702.patch) by mabshoff created at 2009-04-16 10:01:49",
     "created_at": "2009-04-16T10:01:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44567",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44482",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +93,15 @@ Attachment [trac_5702.patch](tarball://root/attachments/some-uuid/ticket5702/tra
 
 ---
 
-archive/issue_comments_044568.json:
+archive/issue_comments_044483.json:
 ```json
 {
     "body": "Looks good -- these are the same paths occurring in `sage/local/bin/sage-maketest`, which gives me a lot of confidence.",
     "created_at": "2009-04-16T10:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44568",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44483",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -111,15 +111,15 @@ Looks good -- these are the same paths occurring in `sage/local/bin/sage-maketes
 
 ---
 
-archive/issue_comments_044569.json:
+archive/issue_comments_044484.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-16T10:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44569",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44484",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +129,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_044570.json:
+archive/issue_comments_044485.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T10:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44570",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5702#issuecomment-44485",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

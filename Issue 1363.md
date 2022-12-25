@@ -6,15 +6,13 @@ archive/issues_001363.json:
     "body": "Assignee: @williamstein\n\nThere's a patch for this as part of Robert Bradshaw's patch attached to #1275.  I'll split it out and add the docstring warnings, and put the new patch here.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1363\n\n",
     "created_at": "2007-12-02T05:24:51Z",
     "labels": [
-        "algebraic geometry",
-        "major",
-        "enhancement"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "complex intervals should have a sqrt() method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1363",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1363
 
 ---
 
-archive/issue_comments_008729.json:
+archive/issue_comments_008705.json:
 ```json
 {
     "body": "Attachment [1363.patch](tarball://root/attachments/some-uuid/ticket1363/1363.patch) by cwitty created at 2007-12-02 06:15:23",
     "created_at": "2007-12-02T06:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8729",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8705",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [1363.patch](tarball://root/attachments/some-uuid/ticket1363/1363.pat
 
 ---
 
-archive/issue_comments_008730.json:
+archive/issue_comments_008706.json:
 ```json
 {
     "body": "Attachment [1363-doc.patch](tarball://root/attachments/some-uuid/ticket1363/1363-doc.patch) by @rlmill created at 2007-12-18 20:42:42\n\nAdjusts for mhansen's float printing patch.",
     "created_at": "2007-12-18T20:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8730",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8706",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -67,15 +65,15 @@ Adjusts for mhansen's float printing patch.
 
 ---
 
-archive/issue_comments_008731.json:
+archive/issue_comments_008707.json:
 ```json
 {
     "body": "Merged in 2.9.1.alpha1",
     "created_at": "2007-12-18T20:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8731",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8707",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -85,15 +83,15 @@ Merged in 2.9.1.alpha1
 
 ---
 
-archive/issue_comments_008732.json:
+archive/issue_comments_008708.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-18T20:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8732",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1363#issuecomment-8708",
+    "user": "https://github.com/rlmill"
 }
 ```
 

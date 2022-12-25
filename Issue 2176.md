@@ -6,15 +6,13 @@ archive/issues_002176.json:
     "body": "Assignee: @timabbott\n\nI've created a new spkg for tachyon that adds Debian build support.\n\nhttp://sage.math.washington.edu/home/tabbott/tachyon-0.98beta.p4.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2176\n\n",
     "created_at": "2008-02-16T02:59:12Z",
     "labels": [
-        "debian-package",
-        "major",
-        "enhancement"
+        "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "debianize tachyon spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2176",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2176
 
 ---
 
-archive/issue_comments_014287.json:
+archive/issue_comments_014256.json:
 ```json
 {
     "body": "spkg looks good. I added a `.hgignore` and prettied up the SPKG.txt.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T17:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2176#issuecomment-14287",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2176#issuecomment-14256",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +51,15 @@ Michael
 
 ---
 
-archive/issue_comments_014288.json:
+archive/issue_comments_014257.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-16T17:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2176#issuecomment-14288",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2176#issuecomment-14257",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +69,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014289.json:
+archive/issue_comments_014258.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha1",
     "created_at": "2008-02-16T17:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2176#issuecomment-14289",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2176#issuecomment-14258",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

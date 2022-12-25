@@ -6,15 +6,14 @@ archive/issues_008855.json:
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8855\n\n",
     "created_at": "2010-05-03T12:37:12Z",
     "labels": [
-        "porting: Cygwin",
-        "major",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "sage-env needs to be updated for Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8855",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tbd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8855
 
 ---
 
-archive/issue_comments_081378.json:
+archive/issue_comments_081245.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-05-24T23:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81378",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81245",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_081379.json:
+archive/issue_comments_081246.json:
 ```json
 {
     "body": "Need to remove hardcoded home directory.",
     "created_at": "2010-05-24T23:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81379",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81246",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ Need to remove hardcoded home directory.
 
 ---
 
-archive/issue_comments_081380.json:
+archive/issue_comments_081247.json:
 ```json
 {
     "body": "Attachment [trac_8855-sage_env.patch](tarball://root/attachments/some-uuid/ticket8855/trac_8855-sage_env.patch) by @mwhansen created at 2010-05-25 02:09:52\n\nI've removed the hardcoded path.",
     "created_at": "2010-05-25T02:09:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81380",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81247",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +84,15 @@ I've removed the hardcoded path.
 
 ---
 
-archive/issue_comments_081381.json:
+archive/issue_comments_081248.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-25T02:09:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81381",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81248",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_081382.json:
+archive/issue_comments_081249.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-25T02:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81382",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81249",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +120,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_081383.json:
+archive/issue_comments_081250.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2010-05-25T02:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81383",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8855#issuecomment-81250",
+    "user": "https://github.com/williamstein"
 }
 ```
 

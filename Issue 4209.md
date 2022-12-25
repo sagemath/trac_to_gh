@@ -6,15 +6,14 @@ archive/issues_004209.json:
     "body": "Assignee: mabshoff\n\nThe latest upstream is maxima 5.16.3. That upgraded spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha2/maxima-5.16.3.spkg\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4209\n\n",
     "created_at": "2008-09-27T20:25:26Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with spkg, needs review] upgrade maxima.spkg to 5.16.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4209",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4209
 
 ---
 
-archive/issue_comments_030589.json:
+archive/issue_comments_030527.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-27T20:25:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30589",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30527",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +52,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_030590.json:
+archive/issue_comments_030528.json:
 ```json
 {
     "body": "Based on the promise that testall passes on sage.math... :-)",
     "created_at": "2008-09-27T20:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30590",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30528",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -71,15 +70,15 @@ Based on the promise that testall passes on sage.math... :-)
 
 ---
 
-archive/issue_comments_030591.json:
+archive/issue_comments_030529.json:
 ```json
 {
     "body": "oops, wrong ticket",
     "created_at": "2008-09-27T21:00:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30591",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30529",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -89,15 +88,15 @@ oops, wrong ticket
 
 ---
 
-archive/issue_comments_030592.json:
+archive/issue_comments_030530.json:
 ```json
 {
     "body": "Attachment [trac_4209.patch](tarball://root/attachments/some-uuid/ticket4209/trac_4209.patch) by mabshoff created at 2008-09-27 21:13:30",
     "created_at": "2008-09-27T21:13:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30592",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30530",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +106,15 @@ Attachment [trac_4209.patch](tarball://root/attachments/some-uuid/ticket4209/tra
 
 ---
 
-archive/issue_comments_030593.json:
+archive/issue_comments_030531.json:
 ```json
 {
     "body": "builds fine, tests pass in the right places...",
     "created_at": "2008-09-27T21:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30593",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30531",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -125,15 +124,15 @@ builds fine, tests pass in the right places...
 
 ---
 
-archive/issue_comments_030594.json:
+archive/issue_comments_030532.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-27T21:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30594",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30532",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -143,15 +142,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030595.json:
+archive/issue_comments_030533.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha2",
     "created_at": "2008-09-27T21:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30595",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4209#issuecomment-30533",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

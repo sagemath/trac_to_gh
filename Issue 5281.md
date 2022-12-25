@@ -6,15 +6,14 @@ archive/issues_005281.json:
     "body": "Assignee: mabshoff\n\nCC:  drkirkby mhampton @vbraun\n\nIn Sage we are currently shipping some 0.98.beta release of tachyon. Update to the official upstream release 0.98.1.\n\nThis will require cleaning up SPKG.txt\n\nIssue created by migration from https://trac.sagemath.org/ticket/5281\n\n",
     "created_at": "2009-02-16T04:41:49Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Update tachyon to Version 0.98.1 (latest upstream)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5281",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5281
 
 ---
 
-archive/issue_comments_040539.json:
+archive/issue_comments_040460.json:
 ```json
 {
     "body": "good news - the 0.98.1 don't need the \"-fno-crossjumping -fno-reorder-blocks\" GCC 4.2/4.3 fix",
     "created_at": "2009-04-21T18:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40539",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40460",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -51,15 +50,15 @@ good news - the 0.98.1 don't need the "-fno-crossjumping -fno-reorder-blocks" GC
 
 ---
 
-archive/issue_comments_040540.json:
+archive/issue_comments_040461.json:
 ```json
 {
     "body": "New version is out, 0.98.2 had compilation error on non-threaded builds and 0.98.1 also had similar problem as #3710 (but not in architectures used by Sage, just linux-thr-ogl), so it's kind of recommended to skip straight to 0.98.3",
     "created_at": "2009-04-23T18:35:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40540",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40461",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -69,15 +68,15 @@ New version is out, 0.98.2 had compilation error on non-threaded builds and 0.98
 
 ---
 
-archive/issue_comments_040541.json:
+archive/issue_comments_040462.json:
 ```json
 {
     "body": "The whole spkg really needs clean-up. (And Sage's **beta** version is out of date since at least 19 month; by now, the current one is [still] 0.98.9 - as in the ticket's title, last updated by Mariah.)\n\nI have absolutely no idea why `spkg-install` does the following on Linux:\n\n```sh\n    make linux-thr\n    if [ $? -ne 0 ]; then\n        echo \"Maybe your system is 64-bit; trying again.\"\n        if [ `uname -m` = \"ia64\" ]; then\n          echo \"ia64\"\n          make linux-ia64-thr\n        else\n          echo \"64-bit arch\"\n          make linux-64-thr\n        fi\n    fi\n```\n\nThis might even \"fail\" (building just a 32-bit version on 64-bit Linuces) when the required (multi-arch/32-bit) libraries are present. And if the 32-bit build fails for some reason on a real 32-bit system, it doesn't make sense to attempt a 64-bit build.",
     "created_at": "2010-08-26T19:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40541",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40462",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -105,15 +104,15 @@ This might even "fail" (building just a 32-bit version on 64-bit Linuces) when t
 
 ---
 
-archive/issue_comments_040542.json:
+archive/issue_comments_040463.json:
 ```json
 {
     "body": "Remove assignee mabshoff.",
     "created_at": "2010-08-26T19:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40542",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40463",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -123,15 +122,15 @@ Remove assignee mabshoff.
 
 ---
 
-archive/issue_comments_040543.json:
+archive/issue_comments_040464.json:
 ```json
 {
     "body": "Dave, sadly enough, this ticket is still \"new\".\n\nI think you've already fixed the Solaris issues, but if Tachyon ever gets updated in Sage, you should probably take a look at the new spkg, making sure it will still work on Solaris.",
     "created_at": "2010-08-26T20:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40543",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40464",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -143,15 +142,15 @@ I think you've already fixed the Solaris issues, but if Tachyon ever gets update
 
 ---
 
-archive/issue_comments_040544.json:
+archive/issue_comments_040465.json:
 ```json
 {
     "body": "Replying to [comment:6 leif]:\n> Dave, sadly enough, this ticket is still \"new\".\n> \n> I think you've already fixed the Solaris issues, but if Tachyon ever gets updated in Sage, you should probably take a look at the new spkg, making sure it will still work on Solaris.\nThank you Leif, \n\npersonally I'm not going to look at updating this. I just hope whoever updates it does check it on Solaris. The code you showed is clearly dumb, though fortunately will not bother Solaris or any real Unix system. \n\nUnfortunately, having an f***ing clue what you are doing when it comes to writing software is not a perquisite to contributing to Sage's source code, or to reviewing the changes made by others with a similar lack of skill. \n\nMichael Abshoff should also be deleted as the package maintainer. Perhaps even William too, as he does not appear to be maintaining it. \n\nDave",
     "created_at": "2010-08-26T21:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40544",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40465",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -173,15 +172,15 @@ Dave
 
 ---
 
-archive/issue_comments_040545.json:
+archive/issue_comments_040466.json:
 ```json
 {
     "body": "Set assignee to mhampton.",
     "created_at": "2010-09-03T12:55:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40545",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40466",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -191,15 +190,15 @@ Set assignee to mhampton.
 
 ---
 
-archive/issue_comments_040546.json:
+archive/issue_comments_040467.json:
 ```json
 {
     "body": "I'll try to give this a shot.  It looks like there are lots of important upstream improvements.",
     "created_at": "2010-09-03T12:56:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40546",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40467",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -209,15 +208,15 @@ I'll try to give this a shot.  It looks like there are lots of important upstrea
 
 ---
 
-archive/issue_comments_040547.json:
+archive/issue_comments_040468.json:
 ```json
 {
     "body": "Also, the `dist/` (Debian) directory should be removed, cf. #5903.",
     "created_at": "2010-09-03T22:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40547",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40468",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -227,15 +226,15 @@ Also, the `dist/` (Debian) directory should be removed, cf. #5903.
 
 ---
 
-archive/issue_comments_040548.json:
+archive/issue_comments_040469.json:
 ```json
 {
     "body": "An attempt at a new package is here:\n\nhttp://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg\n\nThis installs fine on a mac (10.5), 64-bit linux, and seems OK on t2 (Solaris).  My t2 build isn't completely working so I did not actually check it on the notebook on that system.\n\nI removed the dist directory, and tried to improve the SPKG.txt somewhat as well.",
     "created_at": "2010-09-03T23:10:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40548",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40469",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -251,15 +250,15 @@ I removed the dist directory, and tried to improve the SPKG.txt somewhat as well
 
 ---
 
-archive/issue_comments_040549.json:
+archive/issue_comments_040470.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-03T23:10:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40549",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40470",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -269,15 +268,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_040550.json:
+archive/issue_comments_040471.json:
 ```json
 {
     "body": "Replying to [comment:11 mhampton]:\n> An attempt at a new package is here:\n> \n> http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg\n\nHmmm, you somehow omitted / deleted the Mercurial repository.\n\nI'll though give it a try...",
     "created_at": "2010-09-04T01:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40550",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40471",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -294,15 +293,15 @@ I'll though give it a try...
 
 ---
 
-archive/issue_comments_040551.json:
+archive/issue_comments_040472.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-09-04T01:42:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40551",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40472",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -312,15 +311,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_040552.json:
+archive/issue_comments_040473.json:
 ```json
 {
     "body": "`spkg-install` still needs work. (I could do that as soon as there's a repository...)\n\nShould we add some (simple) `spkg-check`?\n\nAlso, there are some upstream files I think we could delete. (I'll have to take a closer look.)",
     "created_at": "2010-09-04T02:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40552",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40473",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -334,15 +333,15 @@ Also, there are some upstream files I think we could delete. (I'll have to take 
 
 ---
 
-archive/issue_comments_040553.json:
+archive/issue_comments_040474.json:
 ```json
 {
     "body": "We should also \"install\" (copy) the copyright notice somewhere into the Sage tree, at least for binary Sage distributions (e.g. `SAGE_LOCAL/bin/Copyright.Tachyon`).",
     "created_at": "2010-09-04T02:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40553",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40474",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -352,15 +351,15 @@ We should also "install" (copy) the copyright notice somewhere into the Sage tre
 
 ---
 
-archive/issue_comments_040554.json:
+archive/issue_comments_040475.json:
 ```json
 {
     "body": "OK, I added the mercurial repository back in and updated it.  I also did as you suggested and copied the tachyon copyright notice into SAGE_LOCAL/bin/ as \"Tachyon-Copyright\".  \nThanks for looking at it!\nI'm not sure how to write a good spkg-check.  The doctests for Tachyon should catch most problems I think.",
     "created_at": "2010-09-04T20:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40554",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40475",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -372,15 +371,15 @@ I'm not sure how to write a good spkg-check.  The doctests for Tachyon should ca
 
 ---
 
-archive/issue_comments_040555.json:
+archive/issue_comments_040476.json:
 ```json
 {
     "body": "This installed fine on OS X 10.4 PPC and `interfaces/tachyon.py` passed all tests.",
     "created_at": "2010-09-21T18:31:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40555",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40476",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -390,15 +389,15 @@ This installed fine on OS X 10.4 PPC and `interfaces/tachyon.py` passed all test
 
 ---
 
-archive/issue_comments_040556.json:
+archive/issue_comments_040477.json:
 ```json
 {
     "body": "The last change to `spkg-install` isn't committed.\n\nBut please let us (me?) clean-up `spkg-install` further...\n\n(If us=me it'll perhaps take until Monday; but I don't mind doing it.)",
     "created_at": "2010-09-21T20:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40556",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40477",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -412,15 +411,15 @@ But please let us (me?) clean-up `spkg-install` further...
 
 ---
 
-archive/issue_comments_040557.json:
+archive/issue_comments_040478.json:
 ```json
 {
     "body": "I just tried it on 32-bit OpenSolaris and it worked ok. It will clearly need checking on Solaris 10 on SPARC too, as that's a supported OS. \n\nThere are some directories:\n\n\n```\ntachyon-0.98.9/src/msvc/\ntachyon-0.98.9/src/msvc/CVS/\ntachyon-0.98.9/src/msvc/CVS/Entries\ntachyon-0.98.9/src/msvc/CVS/Repository\n```\n\n\nI think in a case like this, it would be worth deleting the Microsoft Visual C stuff. That could be added to the `Special Update/Build Instructions` Since Leif intends overhauling the package, he might consider that. \n\nI guess given it's been open 19 months, waiting until Monday should not be a major problem! \n\nDave",
     "created_at": "2010-09-21T20:50:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40557",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40478",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -447,15 +446,15 @@ Dave
 
 ---
 
-archive/issue_comments_040558.json:
+archive/issue_comments_040479.json:
 ```json
 {
     "body": "Yes.\n\n```sh\nleif@quadriga:~/Sage/spkgs/tachyon-0.98.9$ du -h src\n16K\tsrc/src/CVS\n680K\tsrc/src\n16K\tsrc/msvc/CVS\n16K\tsrc/msvc/tachyon/libtachyon/CVS\n4.0K\tsrc/msvc/tachyon/libtachyon/Debug\n1.4M\tsrc/msvc/tachyon/libtachyon/Release\n1.5M\tsrc/msvc/tachyon/libtachyon\n16K\tsrc/msvc/tachyon/CVS\n16K\tsrc/msvc/tachyon/tachyon/CVS\n4.0K\tsrc/msvc/tachyon/tachyon/Debug\n840K\tsrc/msvc/tachyon/tachyon/Release\n892K\tsrc/msvc/tachyon/tachyon\n4.0K\tsrc/msvc/tachyon/Debug\n16K\tsrc/msvc/tachyon/tachyon_ogl/CVS\n4.0K\tsrc/msvc/tachyon/tachyon_ogl/Debug\n4.0K\tsrc/msvc/tachyon/tachyon_ogl/Release\n36K\tsrc/msvc/tachyon/tachyon_ogl\n4.0K\tsrc/msvc/tachyon/Release\n2.8M\tsrc/msvc/tachyon\n2.8M\tsrc/msvc\n4.0K\tsrc/compile\n16K\tsrc/unix/CVS\n308K\tsrc/unix\n16K\tsrc/docs/CVS\n232K\tsrc/docs/tachyon\n808K\tsrc/docs\n16K\tsrc/librtvi/CVS\n44K\tsrc/librtvi\n16K\tsrc/demosrc/CVS\n248K\tsrc/demosrc\n4.9M\tsrc\n```\n",
     "created_at": "2010-09-21T21:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40558",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40479",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -501,15 +500,15 @@ leif@quadriga:~/Sage/spkgs/tachyon-0.98.9$ du -h src
 
 ---
 
-archive/issue_comments_040559.json:
+archive/issue_comments_040480.json:
 ```json
 {
     "body": "Leif - are you going to work on this?  I'd like to keep it rolling along with #9855 (which I need to work on a little more).  I agree that the msvc folder can be deleted as long as we put a note in the SPKG.txt about it.",
     "created_at": "2010-09-24T13:25:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40559",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40480",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -519,15 +518,15 @@ Leif - are you going to work on this?  I'd like to keep it rolling along with #9
 
 ---
 
-archive/issue_comments_040560.json:
+archive/issue_comments_040481.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-24T13:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40560",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40481",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -537,15 +536,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_040561.json:
+archive/issue_comments_040482.json:
 ```json
 {
     "body": "I over-wrote my spkg at [http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg](http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg) with a version with the msvc folder deleted.  That saves quite a bit of space.",
     "created_at": "2010-09-24T13:32:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40561",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40482",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -555,15 +554,15 @@ I over-wrote my spkg at [http://sage.math.washington.edu/home/mhampton/tachyon-0
 
 ---
 
-archive/issue_comments_040562.json:
+archive/issue_comments_040483.json:
 ```json
 {
     "body": "Replying to [comment:20 mhampton]:\n> Leif - are you going to work on this?\n\nI think over the weekend (unless alpha2 gets released ;-) ) or at least within the next days.\n\nOtherwise I'll open a follow-up.\n\n> I'd like to keep it rolling along with #9855 (which I need to work on a little more).\n\nDoesn't look as if #9855 depended on the new Tachyon, but did you test it with the new one?\n\n> I agree that the msvc folder can be deleted as long as we put a note in the SPKG.txt about it.\n\nYes. It's also IMHO compatible with the copyright, though I'm not a lawyer.",
     "created_at": "2010-09-24T13:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40562",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40483",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -586,15 +585,15 @@ Yes. It's also IMHO compatible with the copyright, though I'm not a lawyer.
 
 ---
 
-archive/issue_comments_040563.json:
+archive/issue_comments_040484.json:
 ```json
 {
     "body": "Dave, are you attempting to make it build on AIX?",
     "created_at": "2010-09-24T13:43:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40563",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40484",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -604,15 +603,15 @@ Dave, are you attempting to make it build on AIX?
 
 ---
 
-archive/issue_comments_040564.json:
+archive/issue_comments_040485.json:
 ```json
 {
     "body": "Replying to [comment:24 leif]:\n> Dave, are you attempting to make it build on AIX?\n\n(If it doesn't, I think you only tested the old one. Also, I think it's just Sage that does not even try to build Tachyon on AIX.)",
     "created_at": "2010-09-24T13:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40564",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40485",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -625,15 +624,15 @@ Replying to [comment:24 leif]:
 
 ---
 
-archive/issue_comments_040565.json:
+archive/issue_comments_040486.json:
 ```json
 {
     "body": "Replying to [comment:25 leif]:\n> Replying to [comment:24 leif]:\n> > Dave, are you attempting to make it build on AIX?\n> \n> (If it doesn't, I think you only tested the old one. Also, I think it's just Sage that does not even try to build Tachyon on AIX.) \n\nLeif, \n\nI've just looked - this will **not** build on AIX with gcc for two reasons. \n* There's nothing in `spkg-install` to handle AIX\n* The AIX targets in `src/unix/Make-arch`, which are `aix-thr`, `aix-64-thr`, `aix-mpi` and `aix` all assume an IBM compiler is used. \n\nThe same situation exists with HP-UX - the file `src/unix/Make-arch` assumes the use of the HP compiler for all the HP-UX targets. \n\nI will create two new targets for the file `patches/Make-arch`, which I will call\n\n* `aix-generic`\n* `hpux-generic`\n\nwhich will use $CC as a compiler, and not assume a propriety compiler with any special flags. Hopefully that will work with gcc and any reasonable set of flags. \n\nSince you intend cleaning up the ticket, if I attach that as a unified diff patch, can you make sure that the target `aix-generic` is used on AIX (where $UNAME = AIX) and `hpux-generic` is used on HP-UX (where $UNAME=HP-UX)? \n\nI might as well do the HP-UX targets at the same time as the AIX ones, though building on AIX looks a lot easier than building on HP-UX - at least with the hardware I own. \n\nNote there are already several targets been added various platforms, including, but not limited to Solaris. \n\nLet me know how you want to proceed. We might as well do AIX and HP-UX at the same time. \n\nDave",
     "created_at": "2010-09-24T15:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40565",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40486",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -672,15 +671,15 @@ Dave
 
 ---
 
-archive/issue_comments_040566.json:
+archive/issue_comments_040487.json:
 ```json
 {
     "body": "Replying to [comment:26 drkirkby]:\n> Since you intend cleaning up the ticket, if I attach that as a unified diff patch, can you make sure that the target `aix-generic` is used on AIX (where $UNAME = AIX) and `hpux-generic` is used on HP-UX (where $UNAME=HP-UX)? \n\nSure. If the HP-UX and / or AIX builds do not fully work, we can still open a follow-up for these platforms.",
     "created_at": "2010-09-24T15:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40566",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40487",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -693,15 +692,15 @@ Sure. If the HP-UX and / or AIX builds do not fully work, we can still open a fo
 
 ---
 
-archive/issue_comments_040567.json:
+archive/issue_comments_040488.json:
 ```json
 {
     "body": "Attachment [5281-add-AIX-and-HP-UX-support.patch](tarball://root/attachments/some-uuid/ticket5281/5281-add-AIX-and-HP-UX-support.patch) by drkirkby created at 2010-09-25 10:59:54\n\nPatch to add AIX and HP-UX support.",
     "created_at": "2010-09-25T10:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40567",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40488",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -713,15 +712,15 @@ Patch to add AIX and HP-UX support.
 
 ---
 
-archive/issue_comments_040568.json:
+archive/issue_comments_040489.json:
 ```json
 {
     "body": "As noted at #9997, Tachyon did not even attempt to build on AIX. Looking at the code, I realise the exact same thing would happen on HP-UX too. I decided to correct both AIX and HP-UX issues at the same time. \n\nI've added \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/tachyon-0.98.9.spkg\n\n`md5=501a1f9667a7bdedcb8f0d3c361b39fb`\n\nwhich has 4 new targets: \n\n* `aix-generic`\n* `aix-generic-thr`\n* `hpux-generic`\n* `hpux-generic-thr`\n\nThe targets ending in `-thr` are threaded versions and build OK on both AIX and HP-UX. But following the convention of the `src/unix/Make-arch` file, I've created both threaded and unthreaded targets. \n\nSince William seems intent on moving disk storage from enterprise grade SCSI disks on a machine with an uptime over over 600 days, to a 2 TB consumer grade external USB disk on a machine with an average uptime of about a month, I thought it wise to make a backup copy at the following site, which will be **much** slower due to my more limited Internet bandwidth!\n\nhttp://www.althorne.org/tachyon-0.98.9.spkg\n\nAs Leif intends cleaning this up, there's little point in me making any significant changes to spkg-install, as Leif and I differ widely on how we write scripts! \n\nBut I've done sufficient in `spkg-install` to check Tachyon at least builds with gcc on both AIX and HP-UX. Since I can't run any doctests on those platforms, I can't say how they work, but at least they build. As Leif says, if there are any issues on AIX, we can open another ticket. The same is true for HP-UX of course. \n\nLeif might want to change the compiler options for when SAGE_DEBUG=yes. If so, feel free. But -O2 -g should be safe, which is what I've set the calls to the AIX and HP-UX targets to in `spkg-install`.\n\nI hope this is a step in the right direction. It's been open 20 months, so lets hope it can be cleared up soon. \n\nDave",
     "created_at": "2010-09-25T11:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40568",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40489",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -760,15 +759,15 @@ Dave
 
 ---
 
-archive/issue_comments_040569.json:
+archive/issue_comments_040490.json:
 ```json
 {
     "body": "I think you might have confused me (Marshall Hampton, mhampton) with Mike Hansen (mhansen).",
     "created_at": "2010-09-25T23:35:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40569",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40490",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -778,15 +777,15 @@ I think you might have confused me (Marshall Hampton, mhampton) with Mike Hansen
 
 ---
 
-archive/issue_comments_040570.json:
+archive/issue_comments_040491.json:
 ```json
 {
     "body": "While we are at it, can we add the patch to build a shared library? Debian and Fedora both patch tachyon to produce a shared library. This would then enable us to write a reasonable previewer in cython without pushing temporary files around. Realtime raytracing is the future, they say :-)",
     "created_at": "2010-09-26T14:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40570",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40491",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -796,15 +795,15 @@ While we are at it, can we add the patch to build a shared library? Debian and F
 
 ---
 
-archive/issue_comments_040571.json:
+archive/issue_comments_040492.json:
 ```json
 {
     "body": "Attachment [tachyon-shared-library.patch](tarball://root/attachments/some-uuid/ticket5281/tachyon-shared-library.patch) by @vbraun created at 2010-09-26 14:47:23\n\nDebian shared library patch for reference",
     "created_at": "2010-09-26T14:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40571",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40492",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -816,15 +815,15 @@ Debian shared library patch for reference
 
 ---
 
-archive/issue_comments_040572.json:
+archive/issue_comments_040493.json:
 ```json
 {
     "body": "Replying to [comment:31 vbraun]:\n> While we are at it, can we add the patch to build a shared library? Debian and Fedora both patch tachyon to produce a shared library. This would then enable us to write a reasonable previewer in cython without pushing temporary files around. Realtime raytracing is the future, they say :-)\n\nCertainly we could, but IMHO out of the scope of *this* ticket. I think we should first provide an spkg with just the current upstream (stand-alone) version, which has to be tested as well.\n\nThe patch needs to be tested on various systems; it e.g. calls `make` instead of `$(MAKE)` inside the Makefile, which one should never do.",
     "created_at": "2010-09-26T15:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40572",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40493",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -839,15 +838,15 @@ The patch needs to be tested on various systems; it e.g. calls `make` instead of
 
 ---
 
-archive/issue_comments_040573.json:
+archive/issue_comments_040494.json:
 ```json
 {
     "body": "... and `-soname` works with the GNU linker, but e.g. not Sun's.",
     "created_at": "2010-09-26T15:09:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40573",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40494",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -857,15 +856,15 @@ archive/issue_comments_040573.json:
 
 ---
 
-archive/issue_comments_040574.json:
+archive/issue_comments_040495.json:
 ```json
 {
     "body": "The method used to determine the target in `spkg-install` seems crazy to me. First it tries  using the the target `linux`, which specifically forces a 32-bit build, with the `-m32` flag. \n\nTo me at least, on `sage.math`, I can compile with `-m32` and create a 32-bit binary:\n\n\n```\nkirkby@sage:~$ cat test.c\n#include <stdio.h>\n\nint main() {\nprintf(\"ddd\");\n}\nkirkby@sage:~$ gcc test.c\nkirkby@sage:~$ file a.out\na.out: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\nkirkby@sage:~$ gcc -m32 test.c\nkirkby@sage:~$ file a.out\na.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\n```\n\n\nSo I would expect this to build 32-bit in most cases on Linux. \n\nOnly if the 32-bit build fails does it try a 64-bit build!! \n\nNote for AIX and HP-UX, I did not bother with any such flags, but just let it read CFLAGS, where one could add `-m64` or whatever flag one needs.",
     "created_at": "2010-09-26T18:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40574",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40495",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -900,15 +899,15 @@ Note for AIX and HP-UX, I did not bother with any such flags, but just let it re
 
 ---
 
-archive/issue_comments_040575.json:
+archive/issue_comments_040496.json:
 ```json
 {
     "body": "Replying to [comment:35 drkirkby]:\n> The method used to determine the target in `spkg-install` seems crazy to me. First it tries  using the the target `linux`, which specifically forces a 32-bit build, with the `-m32` flag. \n> \n> To me at least, on `sage.math`, I can compile with `-m32` and create a 32-bit binary.\n> [...]\n> So I would expect this to build 32-bit in most cases on Linux.\n\nNo. The necessary 32-bit libraries are rarely installed on 64-bit Linux systems.\n \n> Only if the 32-bit build fails does it try a 64-bit build!! \n\nSee [comment:4 this comment above]; that's what definitely has to be cleaned up (i.e., removed).",
     "created_at": "2010-09-26T18:39:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40575",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40496",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -929,15 +928,15 @@ See [comment:4 this comment above]; that's what definitely has to be cleaned up 
 
 ---
 
-archive/issue_comments_040576.json:
+archive/issue_comments_040497.json:
 ```json
 {
     "body": "This is the \"typical\" behavior:\n\n```sh\n$ echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n/usr/bin/ld: cannot find -lgcc\ncollect2: ld returned 1 exit status\n```\n",
     "created_at": "2010-09-26T18:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40576",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40497",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -956,15 +955,15 @@ collect2: ld returned 1 exit status
 
 ---
 
-archive/issue_comments_040577.json:
+archive/issue_comments_040498.json:
 ```json
 {
     "body": "It should simply be:\n\n```sh\n    ...\n    case \"`uname -m`\" in\n      i?86)\n        $MAKE linux-thr;;\n      ia64)\n        $MAKE linux-ia64-thr;;\n      *)\n        $MAKE linux-64-thr\n    esac\n    ...\n```\n",
     "created_at": "2010-09-26T19:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40577",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40498",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -988,15 +987,15 @@ It should simply be:
 
 ---
 
-archive/issue_comments_040578.json:
+archive/issue_comments_040499.json:
 ```json
 {
     "body": "(At least if we don't support Linux on SPARC, PPC etc.)",
     "created_at": "2010-09-26T19:12:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40578",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40499",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1006,15 +1005,15 @@ archive/issue_comments_040578.json:
 
 ---
 
-archive/issue_comments_040579.json:
+archive/issue_comments_040500.json:
 ```json
 {
     "body": "Replying to [comment:37 leif]:\n> This is the \"typical\" behavior:\n> {{{\n> #!sh\n> $ echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\n> /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n> /usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.4.3/libgcc.a when searching for -lgcc\n> /usr/bin/ld: cannot find -lgcc\n> collect2: ld returned 1 exit status\n> }}}\n\nWell,\nI don't know how *typical* that is, but it's certainly not the case on sage.math, which run Ubunta. \n\n\n```\nkirkby@sage:~$  echo \"int main(){return 0;}\" > foo.c && gcc -m32 foo.c\nkirkby@sage:~$ file a.out\na.out: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), for GNU/Linux 2.6.8, dynamically linked (uses shared libs), not stripped\nkirkby@sage:~$ \n```\n\n\nI can see in some cases trying to build more than once might be sensible, but clearly what currently exists is absurd.",
     "created_at": "2010-09-26T19:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40579",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40500",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1047,15 +1046,15 @@ I can see in some cases trying to build more than once might be sensible, but cl
 
 ---
 
-archive/issue_comments_040580.json:
+archive/issue_comments_040501.json:
 ```json
 {
     "body": "Replying to [comment:40 drkirkby]:\n> Well,\n> I don't know how *typical* that is, but it's certainly not the case on sage.math, which run Ubunta\n\nSo what? Some people configure GCC with multi-lib support, and some install the necessary 32-bit libraries. On such systems, the current scheme \"fails\" in that it builds a slower 32-bit executable instead of a 64-bit one, as I noted in one of my first comments here.\n\nBut I'm not aware of any Linux distribution (at least of the \"major\" ones) that ships with / installs these by default. So the \"typical\" scenario on 64-bit Linuces is that the 32-bit build fails and a 64-bit build is tried. Although that's odd by itself, it's irrelevant, since the scheme fails on other systems, like sage.math (or some of my machines). That's why I'd change it to what I've posted.",
     "created_at": "2010-09-26T20:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40580",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40501",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1071,15 +1070,15 @@ But I'm not aware of any Linux distribution (at least of the "major" ones) that 
 
 ---
 
-archive/issue_comments_040581.json:
+archive/issue_comments_040502.json:
 ```json
 {
     "body": "By the way, if you build a dynamically linked (which is the default) 32-bit executable on sage.math (e.g. when preparing a Sage binary distribution), this won't run on 64-bit Linuces without the necessary libs.",
     "created_at": "2010-09-26T20:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40581",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40502",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1089,15 +1088,15 @@ By the way, if you build a dynamically linked (which is the default) 32-bit exec
 
 ---
 
-archive/issue_comments_040582.json:
+archive/issue_comments_040503.json:
 ```json
 {
     "body": "Replying to [comment:39 leif]:\n> (At least if we don't support Linux on SPARC, PPC etc.)\nAccording to the Sage installation guide:\n\nhttp://www.sagemath.com/doc/installation/source.html\n\n*As of this writing, Sage is known to work on Linux (32-bit x86, 64-bit x86-64, IA64, or 32-bit PPC)*\n\nhttp://wiki.sagemath.org/SupportedPlatforms\n\nsays Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them. But I would forget about Linux on SPARC - I can't imagine anyone wanting to port Sage to SPARC Linux. \n\nDave",
     "created_at": "2010-09-26T20:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40582",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40503",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1119,15 +1118,15 @@ Dave
 
 ---
 
-archive/issue_comments_040583.json:
+archive/issue_comments_040504.json:
 ```json
 {
     "body": "Replying to [comment:43 drkirkby]:\n> http://wiki.sagemath.org/SupportedPlatforms\n> \n> says Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them.\n\nYeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n\nDoes anyone port Sage to the PS2?",
     "created_at": "2010-09-26T21:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40583",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40504",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1144,15 +1143,15 @@ Does anyone port Sage to the PS2?
 
 ---
 
-archive/issue_comments_040584.json:
+archive/issue_comments_040505.json:
 ```json
 {
     "body": "Replying to [comment:44 leif]:\n> Replying to [comment:43 drkirkby]:\n> > http://wiki.sagemath.org/SupportedPlatforms\n> > \n> > says Sage is supported on 32-bit PPC too. There are pages on 64-bit PPC and MIPS ports too, though I'm not aware of anyone working on them. So if there are targets, it would be worth considering adding them.\n> \n> Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n\nBut the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it. I'm not suggesting creating one if there is not already one there. \n\n> Does anyone port Sage to the PS2?\n\nNot to my knowledge, though nothing would surprise me. Some code I wrote, which is part of NetBSD, has binaries for the Playstation. So nothing would totally surprise me. \n\nDave",
     "created_at": "2010-09-26T23:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40584",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40505",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1176,15 +1175,15 @@ Dave
 
 ---
 
-archive/issue_comments_040585.json:
+archive/issue_comments_040506.json:
 ```json
 {
     "body": "Replying to [comment:45 drkirkby]:\n> Replying to [comment:44 leif]:\n> > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n> \n> But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it.\n\nSure. There is one, so we can support it:\n\n```sh\n    ...\n    # Linux\n    case \"`uname -m`\" in\n      i?86)\n        $MAKE linux-thr;;\n      ia64)\n        $MAKE linux-ia64-thr;;\n      amd64|x86_64)\n        $MAKE linux-64-thr;;\n      ppc)\n        $MAKE linux-ppc;;\n      *) # e.g. ppc64\n        echo \"Sorry, your platform isn't supported by Tachyon and/or Sage. Exiting...\"\n        exit 1\n    esac\n    ...\n```\n\n\nAlthough I doubt the Sage documentation is current, as always...",
     "created_at": "2010-09-26T23:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40585",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40506",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1222,15 +1221,15 @@ Although I doubt the Sage documentation is current, as always...
 
 ---
 
-archive/issue_comments_040586.json:
+archive/issue_comments_040507.json:
 ```json
 {
     "body": "Replying to [comment:46 leif]:\n> Replying to [comment:45 drkirkby]:\n> > Replying to [comment:44 leif]:\n> > > Yeah, there's even support for Linux on Playstation 2 and DEC Alpha. (And PPC, but only 32-bit I think.)\n> > \n> > But the point is the Installation Guide does say Sage is supported on PPC. So IMHO, if there's a PPC target, we should try to call it.\n> \n> Sure. There is one, so we can support it:\n> {{{\n> #!sh\n>     ...\n>     # Linux\n>     case \"`uname -m`\" in\n>       i?86)\n>         $MAKE linux-thr;;\n>       ia64)\n>         $MAKE linux-ia64-thr;;\n>       amd64|x86_64)\n>         $MAKE linux-64-thr;;\n>       ppc)\n>         $MAKE linux-ppc;;\n>       *) # e.g. ppc64\n>         echo \"Sorry, your platform isn't supported by Tachyon and/or Sage. Exiting...\"\n>         exit 1\n>     esac\n>     ...\n> }}}\n> \n> Although I doubt the Sage documentation is current, as always...\n\nI doubt you will find any two Sage lists of \"supported platforms\" which agree with each other.",
     "created_at": "2010-09-28T23:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40586",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40507",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1270,15 +1269,15 @@ I doubt you will find any two Sage lists of "supported platforms" which agree wi
 
 ---
 
-archive/issue_comments_040587.json:
+archive/issue_comments_040508.json:
 ```json
 {
     "body": "I've slightly modified modified Dave's spkg from comment:28:\n\n* `Make-config.patch` is now a unified diff (-u)\n* For all GNU compiler targets, I removed overrides for `$CC`, `$AR`, and `$RANLIB` in the `Make-arch` file. These variables are already provided by the Sage environment, and it would be unwise to override them. They were in no case set to any useful value in the original `Make-arch`. In fact, it turned out to be harmful in #9379.\n* do not copy Copyright into `$SAGE_LOCAL/bin/Tachyon-Copyright` (??)\n* `SPKG.txt` has been updated.\n* Used leif's case statement from comment:46 for the `spkg-install`.\n* Use `$MAKE` instead of `make` everywhere.\n* don't strip on Itanium as that does not work on iras\n\nUpdated spkg is at\n\nhttp://www.stp.dias.ie/~vbraun/Sage/spkg/tachyon-0.98.9.spkg\n\nThe following tickets are superseded by this ticket can be closed:\n* #9997: Tachyon does not even try to build on AIX\n* #9379: ia64-Linux binary fails \"devel/sage/sage/plot/plot3d/tachyon.py\"",
     "created_at": "2011-01-11T10:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40587",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40508",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1304,15 +1303,15 @@ The following tickets are superseded by this ticket can be closed:
 
 ---
 
-archive/issue_comments_040588.json:
+archive/issue_comments_040509.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-01-11T10:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40588",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40509",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1322,15 +1321,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_040589.json:
+archive/issue_comments_040510.json:
 ```json
 {
     "body": "Attachment [Make-arch.patch](tarball://root/attachments/some-uuid/ticket5281/Make-arch.patch) by @vbraun created at 2011-01-11 10:10:58\n\nDiff of Make-arch for review purposes",
     "created_at": "2011-01-11T10:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40589",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40510",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1342,15 +1341,15 @@ Diff of Make-arch for review purposes
 
 ---
 
-archive/issue_comments_040590.json:
+archive/issue_comments_040511.json:
 ```json
 {
     "body": "Diff of Make-config for review purposes",
     "created_at": "2011-01-11T10:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40590",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40511",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1360,15 +1359,15 @@ Diff of Make-config for review purposes
 
 ---
 
-archive/issue_comments_040591.json:
+archive/issue_comments_040512.json:
 ```json
 {
     "body": "Attachment [Make-config.patch](tarball://root/attachments/some-uuid/ticket5281/Make-config.patch) by mhampton created at 2011-01-11 16:58:37\n\nGreat, I will review this today.",
     "created_at": "2011-01-11T16:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40591",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40512",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1380,15 +1379,15 @@ Great, I will review this today.
 
 ---
 
-archive/issue_comments_040592.json:
+archive/issue_comments_040513.json:
 ```json
 {
     "body": "Looks good; I tested on OS X 10.5 and 10.6 and linux (64 bit).  Volker has tested this on the skynet machines as well.\n\nI made one little change, adding Volker to the SPKG.txt.  Apart from that tiny addition I can give this a positive review.  My version is at:\n\n[http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg](http://sage.math.washington.edu/home/mhampton/tachyon-0.98.9.spkg)",
     "created_at": "2011-01-11T23:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40592",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40513",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1402,15 +1401,15 @@ I made one little change, adding Volker to the SPKG.txt.  Apart from that tiny a
 
 ---
 
-archive/issue_comments_040593.json:
+archive/issue_comments_040514.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-01-11T23:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40593",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40514",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1420,15 +1419,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_040594.json:
+archive/issue_comments_040515.json:
 ```json
 {
     "body": "FYI, I've just created a `.p1` based on this package to #10609, fixing a bug in filetype detection in tachyon that broke the Sage tachyon interface on some machines.",
     "created_at": "2011-01-13T00:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40594",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40515",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -1438,15 +1437,15 @@ FYI, I've just created a `.p1` based on this package to #10609, fixing a bug in 
 
 ---
 
-archive/issue_comments_040595.json:
+archive/issue_comments_040516.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-01-19T22:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40595",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40516",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1456,15 +1455,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_040596.json:
+archive/issue_comments_040517.json:
 ```json
 {
     "body": "Since the updated spkg calls the correct target on IBM's AIX operating system, #9997 can be closed as fixed. \n\nDave",
     "created_at": "2011-02-06T06:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40596",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5281#issuecomment-40517",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 

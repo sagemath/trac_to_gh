@@ -6,7 +6,7 @@ archive/issues_008134.json:
     "body": "Assignee: mvngu\n\nSphinx complains\n\n```\n[...]/sagenb/notebook/config.py:docstring of sagenb.notebook.config:26: (WARNING/2) Inline interpreted text or phrase reference start-string without end-string.\n```\n\nwhen building the reference manual.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8134\n\n",
     "created_at": "2010-01-31T02:28:33Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008134.json:
     "title": "Escape $s in notebook keybindings docstring, config.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8134",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: mvngu
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8134
 
 ---
 
-archive/issue_comments_071531.json:
+archive/issue_comments_071410.json:
 ```json
 {
     "body": "Escape `$`s in `config.py`.  *sagenb* repo.",
     "created_at": "2010-01-31T02:36:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71531",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71410",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -54,15 +54,15 @@ Escape `$`s in `config.py`.  *sagenb* repo.
 
 ---
 
-archive/issue_comments_071532.json:
+archive/issue_comments_071411.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-31T02:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71532",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71411",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -72,15 +72,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_071533.json:
+archive/issue_comments_071412.json:
 ```json
 {
     "body": "Attachment [trac_8134-escape_dollars.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.patch) by @qed777 created at 2010-01-31 02:36:47\n\nI'm not sure why `sagenb.notebook.config?` doesn't render nicely in the notebook.",
     "created_at": "2010-01-31T02:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71533",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71412",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -92,15 +92,15 @@ I'm not sure why `sagenb.notebook.config?` doesn't render nicely in the notebook
 
 ---
 
-archive/issue_comments_071534.json:
+archive/issue_comments_071413.json:
 ```json
 {
     "body": "The patch should apply cleanly to #8051's SageNB 0.7.2.",
     "created_at": "2010-01-31T02:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71534",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71413",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -110,15 +110,15 @@ The patch should apply cleanly to #8051's SageNB 0.7.2.
 
 ---
 
-archive/issue_comments_071535.json:
+archive/issue_comments_071414.json:
 ```json
 {
     "body": "Changing component from documentation to notebook.",
     "created_at": "2010-02-05T07:10:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71535",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71414",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -128,15 +128,15 @@ Changing component from documentation to notebook.
 
 ---
 
-archive/issue_comments_071536.json:
+archive/issue_comments_071415.json:
 ```json
 {
     "body": "It fixes the error messages and the output looks good.  Should there be an 'r' before the triple quotes at the top of the file?  I'll give it a positive review either way, so if you want to add that, go ahead.",
     "created_at": "2010-02-05T20:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71536",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71415",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -146,15 +146,15 @@ It fixes the error messages and the output looks good.  Should there be an 'r' b
 
 ---
 
-archive/issue_comments_071537.json:
+archive/issue_comments_071416.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-05T20:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71537",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71416",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -164,15 +164,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_071538.json:
+archive/issue_comments_071417.json:
 ```json
 {
     "body": "Make top docstring raw.  Replaces previous.",
     "created_at": "2010-02-06T16:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71538",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71417",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -182,15 +182,15 @@ Make top docstring raw.  Replaces previous.
 
 ---
 
-archive/issue_comments_071539.json:
+archive/issue_comments_071418.json:
 ```json
 {
     "body": "Attachment [trac_8134-escape_dollars.2.patch](tarball://root/attachments/some-uuid/ticket8134/trac_8134-escape_dollars.2.patch) by @qed777 created at 2010-02-06 16:26:52\n\nReplying to [comment:4 jhpalmieri]:\n> It fixes the error messages and the output looks good.  Should there be an 'r' before the triple quotes at the top of the file?  I'll give it a positive review either way, so if you want to add that, go ahead.\nDone!",
     "created_at": "2010-02-06T16:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71539",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71418",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -204,15 +204,15 @@ Done!
 
 ---
 
-archive/issue_comments_071540.json:
+archive/issue_comments_071419.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-10T18:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71540",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8134#issuecomment-71419",
+    "user": "https://github.com/qed777"
 }
 ```
 

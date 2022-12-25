@@ -6,7 +6,7 @@ archive/issues_003057.json:
     "body": "Assignee: tbd\n\nCreate a ring R which is commutative, but does not inherit from CommutativeRing.  That ring cannot be the base ring for an MPolynomialRing.  Rather than type-checking for CommutativeRing, this should call R.is_commutative().\n\n\n```\nsage: class CR(Ring):\n....:     def is_commutative(self):\n....:         return True\n....:\nsage: R = CR(None)\nsage: R['x,y']\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/boothby/<ipython console> in <module>()\n\n/home/boothby/ring.pyx in sage.rings.ring.Ring.__getitem__ (sage/rings/ring.c:1672)()\n\n/home/boothby/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name)\n    261             names = arg1.split(',')\n    262             n = len(names)\n--> 263             R = _multi_variate(base_ring, names, n, sparse, order)\n    264     elif isinstance(arg1, (list, tuple)):\n    265             # PolynomialRing(base_ring, names (list or tuple), order='degrevlex'):\n\n/home/boothby/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py in _multi_variate(base_ring, names, n, sparse, order)\n    370                 R = m.MPolynomialRing_polydict_domain(base_ring, n, names, order)\n    371     else:\n--> 372         R = m.MPolynomialRing_polydict(base_ring, n, names, order)\n    373\n    374     _save_in_cache(key, R)\n\n/home/boothby/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ring.py in __init__(self, base_ring, n, names, order)\n    131     def __init__(self, base_ring, n, names, order):\n    132         order = TermOrder(order,n)\n--> 133         MPolynomialRing_generic.__init__(self, base_ring, n, names, order)\n    134         # Construct the generators\n    135         v = [0 for _ in xrange(n)]\n\n/home/boothby/multi_polynomial_ring_generic.pyx in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.__init__ (sage/rings/polynomial/multi_polynomial_ring_generic.c:830)()\n\n<type 'exceptions.TypeError'>: Base ring must be a commutative ring.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3057\n\n",
     "created_at": "2008-04-29T23:35:58Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003057.json:
     "title": "MPolynomialRing_generic type-checks to determine commutativity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3057",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: tbd
@@ -71,15 +71,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3057
 
 ---
 
-archive/issue_comments_021111.json:
+archive/issue_comments_021067.json:
 ```json
 {
     "body": "Attachment [sage-3057.patch](tarball://root/attachments/some-uuid/ticket3057/sage-3057.patch) by boothby created at 2008-04-30 00:01:38",
     "created_at": "2008-04-30T00:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3057",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3057#issuecomment-21111",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3057#issuecomment-21067",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -89,15 +89,15 @@ Attachment [sage-3057.patch](tarball://root/attachments/some-uuid/ticket3057/sag
 
 ---
 
-archive/issue_comments_021112.json:
+archive/issue_comments_021068.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2008-04-30T00:12:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3057",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3057#issuecomment-21112",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3057#issuecomment-21068",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -107,15 +107,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_021113.json:
+archive/issue_comments_021069.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-30T01:47:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3057",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3057#issuecomment-21113",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3057#issuecomment-21069",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -125,15 +125,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021114.json:
+archive/issue_comments_021070.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.alpha1",
     "created_at": "2008-04-30T01:47:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3057",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3057#issuecomment-21114",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3057#issuecomment-21070",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002820.json:
     "body": "Assignee: boothby\n\nI think the plan should be \n1. get rid of it; \n2. make much better jsmath instructions;\n3. put something like it back (that doesn't suck)\n\nAlso, we could support official jsmath image fonts (150MB) as an optional package.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2820\n\n",
     "created_at": "2008-04-06T04:02:16Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002820.json:
     "title": "notebook -- turn off the jsmath warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2820",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -34,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2820
 
 ---
 
-archive/issue_comments_019359.json:
+archive/issue_comments_019318.json:
 ```json
 {
     "body": "The jsmath image fonts are already an optional package.  See #1971.",
     "created_at": "2008-04-06T04:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19359",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19318",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -52,15 +52,15 @@ The jsmath image fonts are already an optional package.  See #1971.
 
 ---
 
-archive/issue_comments_019360.json:
+archive/issue_comments_019319.json:
 ```json
 {
     "body": "The attached patch does the following:\n* turns off the jsmath warning\n* greatly improves how the input text area gets autoresized\n* fixes all cursor/tab location bugs from #2840\n* makes some small cosmetic changes to finish #2852\n* restores backspace in empty cell to delete functionality (to avoid confusion)\n* turns on javascript compression so main.js is 1/3rd the size, which means loading sage worksheets will be faster. \n* get rid of lisp from the list-of-systems menu, since it doesn't work.",
     "created_at": "2008-04-08T17:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19360",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19319",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,15 +77,15 @@ The attached patch does the following:
 
 ---
 
-archive/issue_comments_019361.json:
+archive/issue_comments_019320.json:
 ```json
 {
     "body": "Attachment [sage-2820.patch](tarball://root/attachments/some-uuid/ticket2820/sage-2820.patch) by mabshoff created at 2008-04-08 17:14:32\n\nThis patch also fixes #2800.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-08T17:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19361",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19320",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -101,15 +101,15 @@ Michael
 
 ---
 
-archive/issue_comments_019362.json:
+archive/issue_comments_019321.json:
 ```json
 {
     "body": "Works for me.",
     "created_at": "2008-04-08T18:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19362",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19321",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -119,15 +119,15 @@ Works for me.
 
 ---
 
-archive/issue_comments_019363.json:
+archive/issue_comments_019322.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha3",
     "created_at": "2008-04-08T18:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19363",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19322",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +137,15 @@ Merged in Sage 3.0.alpha3
 
 ---
 
-archive/issue_comments_019364.json:
+archive/issue_comments_019323.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-08T18:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19364",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2820#issuecomment-19323",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

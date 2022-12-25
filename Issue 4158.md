@@ -6,7 +6,7 @@ archive/issues_004158.json:
     "body": "Assignee: mabshoff\n\nOn cicero:\n\n```\nsage -t  devel/sage/sage/combinat/root_system/type_dual.py  **********************************************************************\nFile \"/home/wstein/cicero/build/sage-3.1.2/tmp/type_dual.py\", line 43:\n    sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n    [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n    [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/home/wstein/cicero/build/sage-3.1.2/tmp/type_dual.py\", line 45:\n    sage: sorted(ct)\nExpected:\n    [['A', 4], A1xB2, B2xA1]\nGot:\n    [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_3\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/cicero/build/sage-3.1.2/tmp/.doctest_type_dual.py\n         [3.3 s]\nsage -t  devel/sage/sage/combinat/root_system/type_reducible.py**********************************************************************\nFile \"/home/wstein/cicero/build/sage-3.1.2/tmp/type_reducible.py\", line 53:\n    sage: [[x.__cmp__(y) for x in ct] for y in ct]\nExpected:\n    [[0, 1, -1], [-1, 0, -1], [1, 1, 0]]\nGot:\n    [[0, 1, 1], [-1, 0, 1], [1, 1, 0]]\n**********************************************************************\nFile \"/home/wstein/cicero/build/sage-3.1.2/tmp/type_reducible.py\", line 55:\n    sage: sorted(ct)\nExpected:\n    [['A', 4], A1xB2, B2xA1]\nGot:\n    [A1xB2, B2xA1, ['A', 4]]\n**********************************************************************\n1 items had failures:\n   2 of   8 in __main__.example_3\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wstein/cicero/build/sage-3.1.2/tmp/.doctest_type_reducible.py\n         [3.4 s]\n```\n\n\nCicero is:\n\n```\n[wstein@cicero sage-3.1.2]$ cat /etc/issue\nFedora release 8 (Werewolf)\nKernel \\r on an \\m\n\n[wstein@cicero sage-3.1.2]$ uname -a\nLinux cicero 2.6.25.9-40.fc8 #1 SMP Fri Jun 27 16:25:53 EDT 2008 i686 i686 i386 GNU/Linux\n[wstein@cicero sage-3.1.2]$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4158\n\n",
     "created_at": "2008-09-20T15:36:43Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004158.json:
     "title": "system dependent doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4158",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -86,15 +86,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4158
 
 ---
 
-archive/issue_comments_030186.json:
+archive/issue_comments_030125.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-26T03:34:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4158#issuecomment-30186",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4158#issuecomment-30125",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -104,15 +104,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030187.json:
+archive/issue_comments_030126.json:
 ```json
 {
     "body": "The problem is gone with Sage 3.1.4 with the system compiler as well as gcc 4.3.2.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T03:34:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4158#issuecomment-30187",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4158#issuecomment-30126",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

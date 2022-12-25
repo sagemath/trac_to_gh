@@ -6,7 +6,7 @@ archive/issues_004090.json:
     "body": "Assignee: mabshoff\n\nCC:  polybori\n\nGeorg S. Weber reported that polybori-0.5.rc1.p4 fails to build with\n\n```\n/usr/bin/libtool: unknown option character `d' in: -dylib_install_name \nUsage: /usr/bin/libtool -static [-] file [...] [-filelist \nlistfile[,dirname]] [-arch_only arch] [-sacLT] \nUsage: /usr/bin/libtool -dynamic [-] file [...] [-filelist \nlistfile[,dirname]] [-arch_only arch] [-o output] [-install_name name] \n[-compatibility_version #] [-current_version #] [-seg1addr 0x#] [- \nsegs_read_only_addr 0x#] [-segs_read_write_addr 0x#] [-seg_addr_table \n<filename>] [-seg_addr_table_filename <file_system_path>] [-all_load] \n[-noall_load] \nscons: *** [polybori/libpolybori-0.5.0.dylib.0.0.0] Error 1 \nscons: building terminated because of errors. \nError building PolyBoRi. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4090\n\n",
     "created_at": "2008-09-09T18:39:40Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004090.json:
     "title": "polybori-0.5rc1.p4 fails to build on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4090",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -47,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4090
 
 ---
 
-archive/issue_comments_029501.json:
+archive/issue_comments_029442.json:
 ```json
 {
     "body": "I could create a polybori-0.5rc.p5.spkg that builds on an Intel PowerBook with OS X 10.4 / Xcode 2.4.1, after noticing that the build error is related to enhance dynamic libs with version information.\nBut all dynamic libs are eliminated for Sage 3.1.2 anyway, so we don't have to care.\n\nUnfortunately, I have no acquaintance with neither hg nor patch and friends.\n\nFortunately, all one has to do is uncomment two lines around line # 432 in the file\n\n.../spkg/standard/polybori-0.5rc.p5/patches/SConstruct\n\nwhich read originally:\n\n#if env['PLATFORM']==\"darwin\":\n#    slib=env.LoadableModule\n\n\nand which I patched to give the four lines:\n\n#uncommented for OS X 10.4 / Xcode 2.4.1\nif env['PLATFORM']==\"darwin\":\n    slib=env.LoadableModule\n#end of modification for OS X 10.4 / Xcode 2.4.1\n\n\n(The build of the Sage core didn't finish yet, but I have to sleep now.)",
     "created_at": "2008-09-09T21:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29501",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29442",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -88,15 +88,15 @@ if env['PLATFORM']=="darwin":
 
 ---
 
-archive/issue_comments_029502.json:
+archive/issue_comments_029443.json:
 ```json
 {
     "body": "Oops.\nStrange formatting, I see why you need patch files and the like.\nJust do a search for \"slib\" in that file, it is then obvious which two consecutive lines to uncomment.",
     "created_at": "2008-09-09T21:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29502",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29443",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -108,15 +108,15 @@ Just do a search for "slib" in that file, it is then obvious which two consecuti
 
 ---
 
-archive/issue_comments_029503.json:
+archive/issue_comments_029444.json:
 ```json
 {
     "body": "The fix suggested by Georg works on OSX 10.4, but I will test it some more on other platforms. spkg coming up.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-10T02:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29503",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29444",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -130,15 +130,15 @@ Michael
 
 ---
 
-archive/issue_comments_029504.json:
+archive/issue_comments_029445.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-10T03:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29504",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29445",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -148,15 +148,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_029505.json:
+archive/issue_comments_029446.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/rc2/polybori-0.5rc.p5.spkg\n\nimplements the fix Georg suggested and adds a bunch of explanation why we are disabling the option.\n\nBuilds fine on OSX 10.4 and 10.5.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-10T03:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29505",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29446",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -176,15 +176,15 @@ Michael
 
 ---
 
-archive/issue_comments_029506.json:
+archive/issue_comments_029447.json:
 ```json
 {
     "body": "> Builds fine on OSX 10.4 and 10.5.\n> \n> Cheers,\n> \n> Michael\n\nI am trusting mabshoff on this-- the package looks good.",
     "created_at": "2008-09-10T03:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29506",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29447",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -200,15 +200,15 @@ I am trusting mabshoff on this-- the package looks good.
 
 ---
 
-archive/issue_comments_029507.json:
+archive/issue_comments_029448.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-10T03:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29507",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29448",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -218,15 +218,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029508.json:
+archive/issue_comments_029449.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc2",
     "created_at": "2008-09-10T03:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29508",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4090#issuecomment-29449",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_006259.json:
     "body": "Assignee: boothby\n\nCC:  @mwhansen @ncalexan\n\nThe file above generates a file in the current directory when running doctests on it; the attached patch just moves that to an appropriate temp directory. (That is, it switches the doctest, not the actual code.) \n\nI'm adding two people to the cc in the hopes that someone can give this a three-second glance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6259\n\n",
     "created_at": "2009-06-11T09:40:40Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006259.json:
     "title": "[with patch, needs review] Fix spurious file creation in sage/server/support.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6259",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: boothby
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6259
 
 ---
 
-archive/issue_comments_049986.json:
+archive/issue_comments_049890.json:
 ```json
 {
     "body": "When using this on the server, are the temp files properly cleaned up?  But this addresses the problem for now.",
     "created_at": "2009-06-11T16:59:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6259",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6259#issuecomment-49986",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6259#issuecomment-49890",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -51,15 +51,15 @@ When using this on the server, are the temp files properly cleaned up?  But this
 
 ---
 
-archive/issue_comments_049987.json:
+archive/issue_comments_049891.json:
 ```json
 {
     "body": "Attachment [trac-6259.patch](tarball://root/attachments/some-uuid/ticket6259/trac-6259.patch) by @craigcitro created at 2009-06-12 07:54:38",
     "created_at": "2009-06-12T07:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6259",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6259#issuecomment-49987",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6259#issuecomment-49891",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -69,15 +69,15 @@ Attachment [trac-6259.patch](tarball://root/attachments/some-uuid/ticket6259/tra
 
 ---
 
-archive/issue_comments_049988.json:
+archive/issue_comments_049892.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-12T07:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6259",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6259#issuecomment-49988",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6259#issuecomment-49892",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -87,15 +87,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_049989.json:
+archive/issue_comments_049893.json:
 ```json
 {
     "body": "Somehow this patch got dropped between `alpha0` and `rc3`. I've added it back in `rc3`.",
     "created_at": "2009-06-18T10:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6259",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6259#issuecomment-49989",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6259#issuecomment-49893",
+    "user": "https://github.com/craigcitro"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003387.json:
     "body": "Assignee: tbd\n\n\n```\nsage: x = (2^1000000 - 1) / (2^1000000)\nsage: time y = pari(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: time z = Rational(y)\nCPU times: user 11.30 s, sys: 0.02 s, total: 11.32 s\nWall time: 11.33\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3387\n\n",
     "created_at": "2008-06-09T22:19:45Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "unacceptably slow conversion of rationals from pari to Rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3387",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: tbd
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3387
 
 ---
 
-archive/issue_comments_023709.json:
+archive/issue_comments_023661.json:
 ```json
 {
     "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2008-06-09T22:31:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23709",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23661",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -58,15 +57,15 @@ Changing assignee from tbd to @williamstein.
 
 ---
 
-archive/issue_comments_023710.json:
+archive/issue_comments_023662.json:
 ```json
 {
     "body": "Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sage-3387.patch) by @williamstein created at 2008-06-09 22:48:56",
     "created_at": "2008-06-09T22:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23710",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23662",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -76,15 +75,15 @@ Attachment [sage-3387.patch](tarball://root/attachments/some-uuid/ticket3387/sag
 
 ---
 
-archive/issue_comments_023711.json:
+archive/issue_comments_023663.json:
 ```json
 {
     "body": "with this patch the situation is better:\n\n\n```\nsage: x = pari('(2^1000000 - 1) / (2^1000000)')\nsage: time y = Rational(x)\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: timeit('Rational(x)')\n625 loops, best of 3: 858 \u00b5s per loop\nsage: Rational(pari('x^2+1'))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/was/Desktop/movies/<ipython console> in <module>()\n\n/Users/was/Desktop/movies/rational.pyx in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:3321)()\n\n/Users/was/Desktop/movies/rational.pyx in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:4386)()\n\n/Users/was/Desktop/movies/integer.pyx in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:5183)()\n\n/Users/was/Desktop/movies/gen.pyx in sage.libs.pari.gen.gen.__hex__ (sage/libs/pari/gen.c:5096)()\n\nTypeError: gen must be of PARI type t_INT\n```\n",
     "created_at": "2008-06-09T22:49:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23711",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23663",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -120,15 +119,15 @@ TypeError: gen must be of PARI type t_INT
 
 ---
 
-archive/issue_comments_023712.json:
+archive/issue_comments_023664.json:
 ```json
 {
     "body": "Doctests pass, code looks fine.",
     "created_at": "2008-06-10T01:07:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23712",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23664",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -138,15 +137,15 @@ Doctests pass, code looks fine.
 
 ---
 
-archive/issue_comments_023713.json:
+archive/issue_comments_023665.json:
 ```json
 {
     "body": "Merged in Sage 3.0.3.alpha2",
     "created_at": "2008-06-10T01:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23713",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23665",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -156,15 +155,15 @@ Merged in Sage 3.0.3.alpha2
 
 ---
 
-archive/issue_comments_023714.json:
+archive/issue_comments_023666.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-10T01:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23714",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3387#issuecomment-23666",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

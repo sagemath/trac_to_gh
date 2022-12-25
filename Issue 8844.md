@@ -6,15 +6,14 @@ archive/issues_008844.json:
     "body": "Assignee: tbd\n\nCC:  @nexttime @robertwb\n\nCygwin is a lot pickier about missing symbols so more libraries need to be linked in to the extension modules.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8844\n\n",
     "created_at": "2010-05-03T04:53:40Z",
     "labels": [
-        "Cygwin",
-        "major",
+        "component: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "add missing libraries to module_list for Cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8844",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8844
 
 ---
 
-archive/issue_comments_081301.json:
+archive/issue_comments_081168.json:
 ```json
 {
     "body": "Attachment [trac_8844-module_list.patch](tarball://root/attachments/some-uuid/ticket8844/trac_8844-module_list.patch) by @mwhansen created at 2010-05-03 13:25:08",
     "created_at": "2010-05-03T13:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81301",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81168",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_8844-module_list.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_081302.json:
+archive/issue_comments_081169.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-03T13:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81302",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81169",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_081303.json:
+archive/issue_comments_081170.json:
 ```json
 {
     "body": "Changing component from cygwin to build.",
     "created_at": "2010-05-19T22:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81303",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81170",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing component from cygwin to build.
 
 ---
 
-archive/issue_comments_081304.json:
+archive/issue_comments_081171.json:
 ```json
 {
     "body": "`s/'png'/'png12'/` (once).",
     "created_at": "2010-05-20T02:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81304",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81171",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -103,15 +102,15 @@ archive/issue_comments_081304.json:
 
 ---
 
-archive/issue_comments_081305.json:
+archive/issue_comments_081172.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-20T02:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81305",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81172",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -121,15 +120,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_081306.json:
+archive/issue_comments_081173.json:
 ```json
 {
     "body": "(Or we should create symbolic links from `libpng.so*` to `libpng12.so*`.)",
     "created_at": "2010-05-20T02:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81306",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81173",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -139,15 +138,15 @@ archive/issue_comments_081306.json:
 
 ---
 
-archive/issue_comments_081307.json:
+archive/issue_comments_081174.json:
 ```json
 {
     "body": "Symbolic links don't work for linking libraries in Cygwin.",
     "created_at": "2010-05-20T02:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81307",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81174",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -157,15 +156,15 @@ Symbolic links don't work for linking libraries in Cygwin.
 
 ---
 
-archive/issue_comments_081308.json:
+archive/issue_comments_081175.json:
 ```json
 {
     "body": "Reviewer patch, s/png/png12/ once as mentioned",
     "created_at": "2010-05-20T07:29:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81308",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81175",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -175,15 +174,15 @@ Reviewer patch, s/png/png12/ once as mentioned
 
 ---
 
-archive/issue_comments_081309.json:
+archive/issue_comments_081176.json:
 ```json
 {
     "body": "Attachment [trac_8844-reviewer.patch](tarball://root/attachments/some-uuid/ticket8844/trac_8844-reviewer.patch) by @nexttime created at 2010-05-20 07:36:04\n\nNow **trying** to rebase #7987 on this one...",
     "created_at": "2010-05-20T07:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81309",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81176",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -195,15 +194,15 @@ Now **trying** to rebase #7987 on this one...
 
 ---
 
-archive/issue_comments_081310.json:
+archive/issue_comments_081177.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-20T07:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81310",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81177",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -213,15 +212,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_081311.json:
+archive/issue_comments_081178.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"missing library, unresolved symbol\".",
     "created_at": "2010-05-20T18:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81311",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81178",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -231,15 +230,15 @@ Changing keywords from "" to "missing library, unresolved symbol".
 
 ---
 
-archive/issue_comments_081312.json:
+archive/issue_comments_081179.json:
 ```json
 {
     "body": "Works for OpenSuSE 11.2: http://groups.google.com/group/sage-devel/msg/1078faf7f0c6ec48\n\n(And most probably will for Fedora 13, too, which is released in a few days.)",
     "created_at": "2010-05-20T18:46:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81312",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81179",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -251,15 +250,15 @@ Works for OpenSuSE 11.2: http://groups.google.com/group/sage-devel/msg/1078faf7f
 
 ---
 
-archive/issue_comments_081313.json:
+archive/issue_comments_081180.json:
 ```json
 {
     "body": "It seems the whole Sage library build process needs clean-ups...\n(i.e. `local/bin/sage-build`, `devel/sage/module_list.py`, `devel/sage/setup.py`, and perhaps `devel/sage/c_lib/SConstruct`)\n\nBtw, at least all Sage library C files (of course including those generated by `cython`) compile with gcc and `-std=c99 [-pedantic]`, though not really standard-conformant. (C++ files currently don't, neither with `-std=c++98` nor `c++0x`.)",
     "created_at": "2010-05-22T10:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81313",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81180",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -272,15 +271,15 @@ Btw, at least all Sage library C files (of course including those generated by `
 
 ---
 
-archive/issue_comments_081314.json:
+archive/issue_comments_081181.json:
 ```json
 {
     "body": "Thanks for the review patch.  We'll hopefully get this merged this evening.",
     "created_at": "2010-05-25T22:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81314",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81181",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -290,15 +289,15 @@ Thanks for the review patch.  We'll hopefully get this merged this evening.
 
 ---
 
-archive/issue_comments_081315.json:
+archive/issue_comments_081182.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-26T01:03:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81315",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81182",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -308,15 +307,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_081316.json:
+archive/issue_comments_081183.json:
 ```json
 {
     "body": "The reviewer patch actually breaks things on Cygwin.  It should be reverted.",
     "created_at": "2010-05-27T23:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81316",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81183",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -326,15 +325,15 @@ The reviewer patch actually breaks things on Cygwin.  It should be reverted.
 
 ---
 
-archive/issue_comments_081317.json:
+archive/issue_comments_081184.json:
 ```json
 {
     "body": "Replying to [comment:13 mhansen]:\n> The reviewer patch actually breaks things on Cygwin.  It should be reverted.\n\nHow can that be? At least on Linux, there's no `libpng.so`, just `libpng12.so`, so reverting it wouldn't build on other systems.",
     "created_at": "2010-05-28T03:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81317",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81184",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -347,15 +346,15 @@ How can that be? At least on Linux, there's no `libpng.so`, just `libpng12.so`, 
 
 ---
 
-archive/issue_comments_081318.json:
+archive/issue_comments_081185.json:
 ```json
 {
     "body": "Replying to [comment:9 leif]:\n> Btw, at least all Sage library C files (of course including those generated by `cython`) compile with gcc and `-std=c99 [-pedantic]`, though not really standard-conformant. (C++ files currently don't, neither with `-std=c++98` nor `c++0x`.)\n> \n>  \n\nThe problem with c_lib/SConstruct is that nobody to my knowledge knows SCons well. I know it needs something to add the -m64 flag to CFLAGS, CXXFLAGS and LDFLAGS on platforms other than OS X (darwin). Something like (untested)\n\n\n```\nif env['PLATFORM'] != \"darwin\" and os.environ['SAGE64']==\"yes\" \n        env.Append( CFLAGS=\"-O2 -g -m64\" )\n        env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n        env.Append( LINKFLAGS=\"-m64\" )\n```\n\n\nThis seems a problem in general with Sage and SCons - nobody really knows what they are doing with it. \n\nDave",
     "created_at": "2010-06-03T15:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81318",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81185",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -383,15 +382,15 @@ Dave
 
 ---
 
-archive/issue_comments_081319.json:
+archive/issue_comments_081186.json:
 ```json
 {
     "body": "Replying to [comment:15 drkirkby]:\n> Replying to [comment:9 leif]:\n> > Btw, at least all Sage library C files (of course including those generated by `cython`) compile with gcc and `-std=c99 [-pedantic]`, though not really standard-conformant. (C++ files currently don't, neither with `-std=c++98` nor `c++0x`.)\n> > \n> >  \n> \n> The problem with c_lib/SConstruct is that nobody to my knowledge knows SCons well. I know it needs something to add the -m64 flag to CFLAGS, CXXFLAGS and LDFLAGS on platforms other than OS X (darwin). Something like (untested)\n> \n> {{{\n> if env['PLATFORM'] != \"darwin\" and os.environ['SAGE64']==\"yes\" \n>         env.Append( CFLAGS=\"-O2 -g -m64\" )\n>         env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n>         env.Append( LINKFLAGS=\"-m64\" )\n> }}}\n> \n> This seems a problem in general with Sage and SCons - nobody really knows what they are doing with it. \n> \n> Dave \n\n\nOops, I posted my comment about SCons under the wrong comment. It was meant to be under that of leif, who wrote:\n\n*It seems the whole Sage library build process needs clean-ups... (i.e. local/bin/sage-build, devel/sage/module_list.py, devel/sage/setup.py, and perhaps devel/sage/c_lib/SConstruct)*\n\nDave",
     "created_at": "2010-06-03T15:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81319",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81186",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -425,15 +424,15 @@ Dave
 
 ---
 
-archive/issue_comments_081320.json:
+archive/issue_comments_081187.json:
 ```json
 {
     "body": "Did anybody remember why `gmp` was added as dependency to the various `symbolic` modules? I don't believe those actually depend on `gmp`. This change is partially responsible for #19602.",
     "created_at": "2015-11-20T11:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81320",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81187",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -443,15 +442,15 @@ Did anybody remember why `gmp` was added as dependency to the various `symbolic`
 
 ---
 
-archive/issue_comments_081321.json:
+archive/issue_comments_081188.json:
 ```json
 {
     "body": "The linked thread does mention some problems with `gmp`, but not in the `symbolic` modules.\n\nPS for `@`was: the fact that I'm even *able* to ask this question is because I can check the git history to see where this dependency was added. This is exactly what open development is about.",
     "created_at": "2015-11-20T11:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81321",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81188",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -463,15 +462,15 @@ PS for `@`was: the fact that I'm even *able* to ask this question is because I c
 
 ---
 
-archive/issue_comments_081322.json:
+archive/issue_comments_081189.json:
 ```json
 {
     "body": "Replying to [comment:17 jdemeyer]:\n> Did anybody remember why `gmp` was added as dependency to the various `symbolic` modules? I don't believe those actually depend on `gmp`.\n\nI can only guess this was some kind of overkill, caused by confusing the `pynac` *extension module* with the external Pynac library `libpynac`.  While the former indeed uses GMP and hence needs to get linked with it (*and* in addition `libpynac`), the latter does not.",
     "created_at": "2015-11-20T15:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81322",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8844#issuecomment-81189",
+    "user": "https://github.com/nexttime"
 }
 ```
 

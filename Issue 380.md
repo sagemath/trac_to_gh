@@ -6,14 +6,13 @@ archive/issues_000380.json:
     "body": "Assignee: @williamstein\n\nDimitar Jetchev found the following bug:\n\n\n```\nsage: k.<a> = NumberField(x^2+1); k\nNumber Field in a with defining polynomial x^2 + 1\nsage: m.<b> = k.extension(y^2+1); m\n```\n\n\nand it fails .... it says: variable name should be alphanumeric.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/380\n\n",
     "created_at": "2007-05-26T02:29:56Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "title": "bug when defining a relative extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/380",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/380
 
 ---
 
-archive/issue_comments_001842.json:
+archive/issue_comments_001834.json:
 ```json
 {
     "body": "\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1180147432 25200\n# Node ID d5baafd9ca025979d8ac8558d9bc54cedd77904e\n# Parent  430c6cb23845fe12c69fed0cb063646c1a87c3d0\nFix trac #380: bug when defining a relative extension\n\ndiff -r 430c6cb23845 -r d5baafd9ca02 sage/rings/number_field/number_field.py\n--- a/sage/rings/number_field/number_field.py   Fri May 25 17:36:34 2007 -0700\n+++ b/sage/rings/number_field/number_field.py   Fri May 25 19:43:52 2007 -0700\n@@ -531,7 +531,7 @@ class NumberField_generic(field.Field):\n             name = name[0]\n         if name is None:\n             raise TypeError, \"the variable name must be specified.\"\n-        return NumberField_extension(self, poly, repr(name))\n+        return NumberField_extension(self, poly, str(name))\n\n     def factor_integer(self, n):\n         r\"\"\"\n```\n",
     "created_at": "2007-05-26T02:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/380",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/380#issuecomment-1842",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/380#issuecomment-1834",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -80,15 +79,15 @@ diff -r 430c6cb23845 -r d5baafd9ca02 sage/rings/number_field/number_field.py
 
 ---
 
-archive/issue_comments_001843.json:
+archive/issue_comments_001835.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-05-26T02:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/380",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/380#issuecomment-1843",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/380#issuecomment-1835",
+    "user": "https://github.com/williamstein"
 }
 ```
 

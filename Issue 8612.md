@@ -6,7 +6,7 @@ archive/issues_008612.json:
     "body": "Assignee: @williamstein\n\nI was browsing the code in matrix/misc.pyx, and noticed:\n\n```\nThese lines are in misc.pyx:\n\n        if not proof:\n            verbose(\"Not checking validity of result (since proof=False).\", level=2, caller_name=\"multimod echelon\")\n            break\n        d   = E.denominator()\n        hdE = long(E.height())\n        if True or hdE * self.ncols() * height < prod:\n            break\n        M = prod * p*p*p\n\n```\n\n\nNotice the \"if True\" -- that disables proof checking no matter what!!  This must be removed.  This could get hit in rare cased by, e.g., the modular symbols code, and it would lead to weird inconsistencies later on.... which is something we've seen on big examples.\n\nI'm guessing this was the result of disabling proof checking while developing the code, then never switching it back.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8612\n\n",
     "created_at": "2010-03-26T05:46:26Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008612.json:
     "title": "potentially horrible multimodular matrix echelon bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8612",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -48,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8612
 
 ---
 
-archive/issue_comments_078034.json:
+archive/issue_comments_077906.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-26T05:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78034",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77906",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -66,15 +66,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_078035.json:
+archive/issue_comments_077907.json:
 ```json
 {
     "body": "Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612.patch) by @williamstein created at 2010-03-26 05:51:05",
     "created_at": "2010-03-26T05:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78035",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77907",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -84,15 +84,15 @@ Attachment [trac_8612.patch](tarball://root/attachments/some-uuid/ticket8612/tra
 
 ---
 
-archive/issue_comments_078036.json:
+archive/issue_comments_077908.json:
 ```json
 {
     "body": "In \n\n\n```\nd   = E.denominator()\nhdE = long(E.height())\nif True or hdE * self.ncols() * height < prod:\n    break\n```\n\n\ndoes  d  need to multiply  E.height()  at some point in the computation of hdE?  \n\nIt seems so in the algorithm as outlined in step (5) in the docstring.  And if not, does  d  then not need to be computed?  Hopefully, there's something mildly amiss here, but I've not studied the whole routine carefully.\n\nRob",
     "created_at": "2010-03-28T23:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78036",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77908",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -117,15 +117,15 @@ Rob
 
 ---
 
-archive/issue_comments_078037.json:
+archive/issue_comments_077909.json:
 ```json
 {
     "body": "Yes, you're right, it needs to be \n\n```\nhdE = long((d*E).height())\n```\n\n\nThe algorithm is described with proof here: http://wstein.org/books/modform/modform/linear_algebra.html#echelon-forms-over\n\nI've posted a part2 patch that fixes the issue you've pointed out.",
     "created_at": "2010-03-29T04:29:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78037",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77909",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -144,15 +144,15 @@ I've posted a part2 patch that fixes the issue you've pointed out.
 
 ---
 
-archive/issue_comments_078038.json:
+archive/issue_comments_077910.json:
 ```json
 {
     "body": "Attachment [trac_8612-part2.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612-part2.patch) by @williamstein created at 2010-03-29 04:30:33",
     "created_at": "2010-03-29T04:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78038",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77910",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -162,15 +162,15 @@ Attachment [trac_8612-part2.patch](tarball://root/attachments/some-uuid/ticket86
 
 ---
 
-archive/issue_comments_078039.json:
+archive/issue_comments_077911.json:
 ```json
 {
     "body": "OK, looks good then.  Wasn't sure just where to stuff the d.  ;-)\n\nI'm going to run tests, but it may be morning before I have a report.",
     "created_at": "2010-03-29T04:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78039",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77911",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -182,15 +182,15 @@ I'm going to run tests, but it may be morning before I have a report.
 
 ---
 
-archive/issue_comments_078040.json:
+archive/issue_comments_077912.json:
 ```json
 {
     "body": "Passed all tests.  Positive review.  \n\nI'll post a consolidated patch.",
     "created_at": "2010-03-29T05:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78040",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77912",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -202,15 +202,15 @@ I'll post a consolidated patch.
 
 ---
 
-archive/issue_comments_078041.json:
+archive/issue_comments_077913.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-29T05:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78041",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77913",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -220,15 +220,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_078042.json:
+archive/issue_comments_077914.json:
 ```json
 {
     "body": "Release manager: Apply just this patch.",
     "created_at": "2010-03-29T05:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78042",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77914",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -238,15 +238,15 @@ Release manager: Apply just this patch.
 
 ---
 
-archive/issue_comments_078043.json:
+archive/issue_comments_077915.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-29T22:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78043",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77915",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -256,15 +256,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_078044.json:
+archive/issue_comments_077916.json:
 ```json
 {
     "body": "Attachment [trac_8612_multimodular_echelon.patch](tarball://root/attachments/some-uuid/ticket8612/trac_8612_multimodular_echelon.patch) by @williamstein created at 2010-03-29 22:06:58\n\nMerged into sage-4.3.5",
     "created_at": "2010-03-29T22:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-78044",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8612#issuecomment-77916",
+    "user": "https://github.com/williamstein"
 }
 ```
 

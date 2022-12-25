@@ -6,15 +6,13 @@ archive/issues_001272.json:
     "body": "Assignee: @burcin\n\nThis has been a while in the making, but PolyBoRi has finally been released to the public.\n\nCheers,\n\nMichaek\n\nIssue created by migration from https://trac.sagemath.org/ticket/1272\n\n",
     "created_at": "2007-11-25T18:33:04Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "integrate PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1272",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @burcin
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1272
 
 ---
 
-archive/issue_comments_007969.json:
+archive/issue_comments_007946.json:
 ```json
 {
     "body": "PolyBori was merged in 2.9. This ticket is somewhat of a dupe.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-16T00:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1272",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1272#issuecomment-7969",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1272#issuecomment-7946",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +53,15 @@ Michael
 
 ---
 
-archive/issue_comments_007970.json:
+archive/issue_comments_007947.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-16T00:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1272",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1272#issuecomment-7970",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1272#issuecomment-7947",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

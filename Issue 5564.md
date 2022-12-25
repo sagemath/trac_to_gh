@@ -6,15 +6,14 @@ archive/issues_005564.json:
     "body": "Assignee: boothby\n\nCC:  @jasongrout @dandrake\n\nKeywords: utf-8 tinymce\n\nThis patch when applied on top of #4547 and #5211 will fix the issues people have been having in #2896, #1477, and #4956.\n\nAlso, I'm tired of working on Javascript code in triple-quoted strings, so I have moved the code to its own file.  It breaks history but is less crazy.\n\nI will attach two patches -- one for most of the javascript moving and the other for the interesting changes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5564\n\n",
     "created_at": "2009-03-19T12:06:25Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] fix character encoding problems in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5564",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: boothby
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5564
 
 ---
 
-archive/issue_comments_043303.json:
+archive/issue_comments_043219.json:
 ```json
 {
     "body": "Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-1.patch) by @mwhansen created at 2009-03-19 12:07:18",
     "created_at": "2009-03-19T12:07:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43303",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43219",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -55,15 +54,15 @@ Attachment [trac_5564-1.patch](tarball://root/attachments/some-uuid/ticket5564/t
 
 ---
 
-archive/issue_comments_043304.json:
+archive/issue_comments_043220.json:
 ```json
 {
     "body": "Attachment [trac_5564-2.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-2.patch) by @mwhansen created at 2009-03-19 12:08:40",
     "created_at": "2009-03-19T12:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43304",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43220",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -73,15 +72,15 @@ Attachment [trac_5564-2.patch](tarball://root/attachments/some-uuid/ticket5564/t
 
 ---
 
-archive/issue_comments_043305.json:
+archive/issue_comments_043221.json:
 ```json
 {
     "body": "Note, one thing that may not be obvious from a quick glance at the second patch is the addition of the 'content' function in the addInputType call.",
     "created_at": "2009-03-19T12:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43305",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43221",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -91,15 +90,15 @@ Note, one thing that may not be obvious from a quick glance at the second patch 
 
 ---
 
-archive/issue_comments_043306.json:
+archive/issue_comments_043222.json:
 ```json
 {
     "body": "Separating the javascript into its own file sounds like a great idea to me. These patches along with #4547 and #5211 seem to fix all the UTF-8 issues I'm aware of.",
     "created_at": "2009-03-20T02:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43306",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43222",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -109,15 +108,15 @@ Separating the javascript into its own file sounds like a great idea to me. Thes
 
 ---
 
-archive/issue_comments_043307.json:
+archive/issue_comments_043223.json:
 ```json
 {
     "body": "I've tried the patches in #4547 and #5211, and they seem to fix all the UTF-8 issues I had.\nI tried #2896, #1477, and #4956, with those applied but with*out* applying patches in this ticket. The result is:\n- #2896 and #1477 seem to be fixed AFAICT\n- #4956 is partially fixed, but not completely; applying the patches in current ticket doesn't seem to make any difference.\n\nTo reproduce the half of #4956 which is not fixed:\n\n1. enter \n\n```\nprint 'Teor&iacute;a de n&uacute;meros'\n```\n\n in a cell, and evaluate. You get back\n\n```\nTeor&iacute;a de n&uacute;meros\n```\n\n as expected.\n2. save and quit\n3. open the worksheet again\n4. now the cell reads\n\n```\nprint 'Teor\u00eda de n\u00fameros'\n```\n\n which is incorrect (the output is still the same, but it will change if inserting a cell before the cell in question using \"CTRL-ENTER\")\n\nI will be applying #4547 + #5211 in a live sage notebook (3.4), and will report back if I find more \"incorrect\" behaviour (I'm teaching sage in spanish! some accents are needed...). If there are specific issues which the patches in this ticket are supposed to fix which are not fixed by , I can test again.",
     "created_at": "2009-03-22T22:07:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43307",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43223",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -157,15 +156,15 @@ I will be applying #4547 + #5211 in a live sage notebook (3.4), and will report 
 
 ---
 
-archive/issue_comments_043308.json:
+archive/issue_comments_043224.json:
 ```json
 {
     "body": "Attachment [trac_5564-3.patch](tarball://root/attachments/some-uuid/ticket5564/trac_5564-3.patch) by @mwhansen created at 2009-03-23 11:15:02",
     "created_at": "2009-03-23T11:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43308",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43224",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -175,15 +174,15 @@ Attachment [trac_5564-3.patch](tarball://root/attachments/some-uuid/ticket5564/t
 
 ---
 
-archive/issue_comments_043309.json:
+archive/issue_comments_043225.json:
 ```json
 {
     "body": "I've posted a patch which fixes the problems with TinyMCE and jsMath that the earlier ones caused.  TinyMCE, jsMath, and UTF-8 should all be playing nice together.\n\nI also fixed the rest of the issues with #4956.  Since I had to work on the cell output code anyway, I set it up to use templates. I also fixed the small issues at #5324.\n\nThe main problem with TinyMCE and UTF-8 is that repr(s) for a string s was being used for define the string in Javascript except this totally breaks when there are \"non-standard\" characters.  In order to get around this, I used the JSON encoding of the string.  However, this requires the simplejson module ( http://sage.math.washington.edu/home/mhansen/simplejson-2.0.9.spkg); the json module is standard in Python 2.6.  The ticket for simplejson is #1510.  If someone else wants to roll their own Python string -> Javascript string converter to remove the dependency on simplejson, I would have no problem.",
     "created_at": "2009-03-23T11:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43309",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43225",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -197,15 +196,15 @@ The main problem with TinyMCE and UTF-8 is that repr(s) for a string s was being
 
 ---
 
-archive/issue_comments_043310.json:
+archive/issue_comments_043226.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-03-23T11:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43310",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43226",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -215,15 +214,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_043311.json:
+archive/issue_comments_043227.json:
 ```json
 {
     "body": "Changing assignee from boothby to @mwhansen.",
     "created_at": "2009-03-23T11:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43311",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43227",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -233,15 +232,15 @@ Changing assignee from boothby to @mwhansen.
 
 ---
 
-archive/issue_comments_043312.json:
+archive/issue_comments_043228.json:
 ```json
 {
     "body": "First, these patches need rebasing against 4.0. Mike, you say that this will break history, but my understanding is that you could just do `hg copy js.py notebook_lib.js` and then delete all the Python stuff from notebook_lib.js. If you use git-style unified diffs, when the patch gets imported into Mercurial, it should follow history.\n\nSecond, I did manage to get these patches applied to 4.0, but when I opened an old worksheet that I had had UTF-8 trouble with, I got a server error, since our old code didn't work with UTF-8 correctly and produced invalid UTF-8 files...and the new, 100% UTF-8 code couldn't handle that. I'm guessing there's nothing we can really do about this, since (AFAIK) there's no good way to take an improperly encoded file and translate it into proper UTF-8. I thought I would mention this, though.",
     "created_at": "2009-06-01T08:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43312",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43228",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -253,15 +252,15 @@ Second, I did manage to get these patches applied to 4.0, but when I opened an o
 
 ---
 
-archive/issue_comments_043313.json:
+archive/issue_comments_043229.json:
 ```json
 {
     "body": "This ticket is intended to fix [this problem](http://groups.google.com/group/sage-devel/msg/c979d407f5393936): re-editing some UTF-8 text doesn't work. I'm attaching a screenshot that demonstrates the problem.",
     "created_at": "2009-06-03T02:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43313",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43229",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -271,15 +270,15 @@ This ticket is intended to fix [this problem](http://groups.google.com/group/sag
 
 ---
 
-archive/issue_comments_043314.json:
+archive/issue_comments_043230.json:
 ```json
 {
     "body": "Attachment [trac_5564-problem.png](tarball://root/attachments/some-uuid/ticket5564/trac_5564-problem.png) by @dandrake created at 2009-06-03 02:57:36\n\nscreenshot of the save and re-edit problem",
     "created_at": "2009-06-03T02:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43314",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43230",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -291,15 +290,15 @@ screenshot of the save and re-edit problem
 
 ---
 
-archive/issue_comments_043315.json:
+archive/issue_comments_043231.json:
 ```json
 {
     "body": "patch_1 bitrotted, so I posted a rebase to #6307.",
     "created_at": "2009-06-16T05:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43315",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43231",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -309,15 +308,15 @@ patch_1 bitrotted, so I posted a rebase to #6307.
 
 ---
 
-archive/issue_comments_043316.json:
+archive/issue_comments_043232.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-16T21:24:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43316",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43232",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -327,15 +326,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_043317.json:
+archive/issue_comments_043233.json:
 ```json
 {
     "body": "Fixed due to #6307.",
     "created_at": "2009-07-16T21:24:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43317",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43233",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -345,15 +344,15 @@ Fixed due to #6307.
 
 ---
 
-archive/issue_comments_043318.json:
+archive/issue_comments_043234.json:
 ```json
 {
     "body": "Actually, I don't think #6307 fixes this issue.  I'll apply the patches and double check before re-opening this.",
     "created_at": "2009-07-16T22:34:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43318",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43234",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -363,15 +362,15 @@ Actually, I don't think #6307 fixes this issue.  I'll apply the patches and doub
 
 ---
 
-archive/issue_comments_043319.json:
+archive/issue_comments_043235.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2009-07-18T18:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43319",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43235",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -381,15 +380,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_043320.json:
+archive/issue_comments_043236.json:
 ```json
 {
     "body": "#6307 certainly doesn't fix this ussue.",
     "created_at": "2009-07-18T18:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43320",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43236",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -399,15 +398,15 @@ archive/issue_comments_043320.json:
 
 ---
 
-archive/issue_comments_043321.json:
+archive/issue_comments_043237.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2009-07-18T18:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43321",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43237",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -417,15 +416,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_043322.json:
+archive/issue_comments_043238.json:
 ```json
 {
     "body": "To release manager - recommend closing this ticket, but posting updates to #4956, #5324, and any other relevant tickets to look here for potential code.  The issue ddrake discusses is fixed in #6464 (and also mentioned in #6562), so all issues mentioned here are addressed in other tickets.  That doesn't mean a unified solution isn't possible, but at any rate there is too much going on here.",
     "created_at": "2009-08-26T14:04:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43322",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43238",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -435,15 +434,15 @@ To release manager - recommend closing this ticket, but posting updates to #4956
 
 ---
 
-archive/issue_comments_043323.json:
+archive/issue_comments_043239.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2009-08-26T19:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43323",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43239",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -453,15 +452,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_043324.json:
+archive/issue_comments_043240.json:
 ```json
 {
     "body": "Closing this ticket as per kcrisman's request. Please refer to #4956, #5324, #6464, and #6562 for more specific one-issue focused tickets.",
     "created_at": "2009-08-26T19:57:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43324",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5564#issuecomment-43240",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

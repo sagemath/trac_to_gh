@@ -6,15 +6,14 @@ archive/issues_002535.json:
     "body": "Assignee: @craigcitro\n\nCC:  alexghitza @JohnCremona\n\nThere's some error with `plus_submodule` and `cuspidal_submodule` not being \"commutative.\" Here's an example:\n\n\n```\nsage: M = ModularSymbols(11,2)\nsage: Mpc = M.plus_submodule().cuspidal_submodule()\nsage: Mcp = M.cuspidal_submodule().plus_submodule()\n\nsage: Mcp.q_expansion_basis(10) \n[\nq - 2*q^2 - q^3 + 2*q^4 + q^5 + 2*q^6 - 2*q^7 - 2*q^9 + O(q^10)\n]\n\nsage: Mpc.q_expansion_basis(10)\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/Users/craigcitro/<ipython console> in <module>()\n\n/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in q_expansion_basis(self, prec, algorithm)\n    458             algorithm = 'hecke'\n    459         if algorithm == 'hecke':\n--> 460             return Sequence(self._q_expansion_basis_hecke_dual(prec), cr=True)\n    461         elif algorithm == 'eigen':\n    462             return Sequence(self._q_expansion_basis_eigen(prec), cr=True)\n\n\n/sage/local/lib/python2.5/site-packages/sage/modular/modsym/space.py in _q_expansion_basis_hecke_dual(self, prec)\n    913         t = misc.verbose('computing basis to precision %s'%prec)\n    914         while V.dimension() < d and i >= 0:\n--> 915             v = [self.dual_hecke_matrix(n).column(i) for n in range(1,prec)]\n    916             t = misc.verbose('iteration: %s'%j,t)\n    917             X = M(v).transpose()\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/module.py in dual_hecke_matrix(self, n)\n    725             self._dual_hecke_matrices = {}\n    726         if not self._dual_hecke_matrices.has_key(n):\n--> 727             T = self._compute_dual_hecke_matrix(n)\n    728             self._dual_hecke_matrices[n] = T\n    729         return self._dual_hecke_matrices[n]\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in _compute_dual_hecke_matrix(self, n)\n    108         A = self.ambient_hecke_module().dual_hecke_matrix(n)\n    109         check =  arith.gcd(self.level(), n) != 1\n--> 110         return A.restrict(self.dual_free_module(), check=check)\n    111 \n    112     def _compute_hecke_matrix(self, n):\n\n/sage/local/lib/python2.5/site-packages/sage/modular/hecke/submodule.py in dual_free_module(self, bound, anemic)\n    295                 # failed\n    296                 raise RuntimeError, \"Computation of embedded dual vector space failed \" + \\\n--> 297                       \"(cut down to rank %s, but should have cut down to rank %s).\"%(V.rank(), self.rank())\n    298 \n    299 \n\n<type 'exceptions.RuntimeError'>: Computation of embedded dual vector space failed (cut down to rank 2, but should have cut down to rank 1).\n```\n\n\nI'll look at this soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2535\n\n",
     "created_at": "2008-03-15T23:40:33Z",
     "labels": [
-        "modular forms",
-        "major",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Problem with cuspidal_subspace and new_subspace for modular symbols",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2535",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -90,15 +89,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2535
 
 ---
 
-archive/issue_comments_017284.json:
+archive/issue_comments_017247.json:
 ```json
 {
     "body": "The underlying bug was that we didn't use the star operator in addition to the Hecke operators when trying to determine the dual space to a space of modular symbols. I added this in, though there are several choices as to how to best do that. I added in at least two of these, and added a flag that chooses between them. I tested a handful of small examples, and picked the clear winner on these examples as a default. We should revisit this at some point and decide if that's really the best choice, or if there are tradeoffs with weight vs. level, etc.\n\nI also added a few doctests here and there, since I was at it.",
     "created_at": "2008-04-06T10:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17284",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17247",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -110,15 +109,15 @@ I also added a few doctests here and there, since I was at it.
 
 ---
 
-archive/issue_comments_017285.json:
+archive/issue_comments_017248.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-04-06T10:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17285",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17248",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -128,15 +127,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_017286.json:
+archive/issue_comments_017249.json:
 ```json
 {
     "body": "Patch looks good -- code is clean, doctests are good.\n\nI cannot be the only judge on this patch because I am not expert in the functionality.\n\nOne change I would advocate is documenting the choices for `use_sign`.  See the source is not the best documentation :)",
     "created_at": "2008-04-11T05:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17286",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17249",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -150,15 +149,15 @@ One change I would advocate is documenting the choices for `use_sign`.  See the 
 
 ---
 
-archive/issue_comments_017287.json:
+archive/issue_comments_017250.json:
 ```json
 {
     "body": "Negative review, since the code doesn't work on the example given below:\n\n```\n17:47 < wstein-2535> craigcitro -- what happens with this new code when the submodule we're trying to get the\n17:47 < wstein-2535> dual of has both * eigenvalues?\n17:48 < wstein-2535> I think this new code might just break then.\n17:48 -!- roed_ [n=roed@c-98-216-48-4.hsd1.ma.comcast.net] has quit []\n17:48 < craigcitro> ah, you're saying i want an 'else' clause in the 'star' case.\n17:48 < wstein-2535>  At a minimum.\n17:49 < wstein-2535> And also you *have* to use star in that case.\n17:49 < wstein-2535> Or something.\n17:49 < wstein-2535> You've only treated one cases, namely * = constant on subspace.\n17:49 < wstein-2535> But this \"use the *\" trick should work more generaly for any *-equivariant module.\n17:49 < craigcitro> oh, you're saying in that case, take the + and - submodules and then just take the sum\n17:50 < craigcitro> (i.e. do the same thing i'd do in the case of one eigenvalue with each of them)\n17:50 < wstein-2535> sage: M = ModularSymbols(43).cuspidal_submodule()\n17:50 < wstein-2535> sage: S = M[0].plus_submodule() + M[1].minus_submodule()\n17:50 < wstein-2535> sage: S.dual_free_module()\n17:50 < wstein-2535> boom!\n17:50 < wstein-2535> Yes, exactly.\n```\n",
     "created_at": "2008-04-12T00:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17287",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17250",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -189,15 +188,15 @@ Negative review, since the code doesn't work on the example given below:
 
 ---
 
-archive/issue_comments_017288.json:
+archive/issue_comments_017251.json:
 ```json
 {
     "body": "Reclassify so this ticket is picked up properly by the various reports.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-20T22:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17288",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17251",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -211,15 +210,15 @@ Michael
 
 ---
 
-archive/issue_comments_017289.json:
+archive/issue_comments_017252.json:
 ```json
 {
     "body": "Could #1127 be related?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-02T16:27:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17289",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17252",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -233,15 +232,15 @@ Michael
 
 ---
 
-archive/issue_comments_017290.json:
+archive/issue_comments_017253.json:
 ```json
 {
     "body": "The attached patch addresses William's counterexample, and should be applied after Craig's patch.",
     "created_at": "2009-01-22T08:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17290",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17253",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -251,15 +250,15 @@ The attached patch addresses William's counterexample, and should be applied aft
 
 ---
 
-archive/issue_comments_017291.json:
+archive/issue_comments_017254.json:
 ```json
 {
     "body": "Attachment [trac-2535-final.patch](tarball://root/attachments/some-uuid/ticket2535/trac-2535-final.patch) by @craigcitro created at 2009-01-22 20:33:23\n\nFinal version of patch attached, with one or two small improvements over previous.",
     "created_at": "2009-01-22T20:33:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17291",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17254",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -271,15 +270,15 @@ Final version of patch attached, with one or two small improvements over previou
 
 ---
 
-archive/issue_comments_017292.json:
+archive/issue_comments_017255.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-24T19:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17292",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17255",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -289,15 +288,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_017293.json:
+archive/issue_comments_017256.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha2\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T19:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17293",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2535#issuecomment-17256",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

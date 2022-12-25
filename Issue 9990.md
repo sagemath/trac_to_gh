@@ -6,7 +6,7 @@ archive/issues_009990.json:
     "body": "Assignee: drkirkby\n\nCC:  @fchapoton\n\n == Hardware and software ==\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1 \n\n == The Problem ==\nrubiks is failing to install. I believe it is believing the `install` program is the `GNU install`, whereas in fact IBM provide their own on AIX, which is not compatible. \n\nThis is the first `install` program in the PATH\n\n```\n-bash-4.1$ command -v install\n/usr/bin/install\n```\n\nWe can see this is not the GNU install program. \n\n```\n-bash-4.1$ /usr/bin/install -h\ngetopt: Not a recognized flag: h\nUsage: install [-c DirectoryA] [-f DirectoryB] [-i] [-m] [-M Mode] [-O Owner]\n               [-G Group] [-S] [-n DirectoryC] [-o] [-s] File [DirectoryX ...]\n-bash-4.1$ /usr/bin/install --help\ngetopt: Not a recognized flag: -\ngetopt: Not a recognized flag: h\ngetopt: Not a recognized flag: e\ngetopt: Not a recognized flag: l\ngetopt: Not a recognized flag: p\nUsage: install [-c DirectoryA] [-f DirectoryB] [-i] [-m] [-M Mode] [-O Owner]\n               [-G Group] [-S] [-n DirectoryC] [-o] [-s] File [DirectoryX ...]\n\n```\n\n\nThis results in some odd permission problems when rubiks tries to install itself:\n\n\n```\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc2 sizekoc2.o\nsize sizekoc2\nsizekoc2: 48541 + 2387 + 409577660 + 2525 + 77886 = 409708999\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/dik'\nmake[3]: Entering directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/reid'\nmake[3]: warning: jobserver unavailable: using -j1.  Add `+' to parent make rule.\ngcc  -O2  -g  -Wall     optimal.c   -o optimal\ngcc  -O2  -g  -Wall     twist.c   -o twist\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src/reid'\nmkdir -p /home/users/drkirkby/sage-4.6.alpha1/local/bin\n/usr/bin/install reid/optimal /home/users/drkirkby/sage-4.6.alpha1/local/bin\nfind: cannot chdir to </etc/security> : Permission denied\nfind: cannot chdir to </etc/tunables> : Permission denied\nfind: cannot chdir to </etc/iscsi> : Permission denied\nfind: cannot chdir to </etc/ppp> : Permission denied\nfind: cannot chdir to </usr/lib/boot/network> : Permission denied\nfind: cannot chdir to </usr/lib/drivers/crypto> : Permission denied\ninstall: File optimal was not found.\nmake[2]: *** [install] Error 2\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/rubiks-20070912.p12/src'\n\nreal    10m38.826s\nuser    5m19.612s\nsys     0m8.383s\nsage: An error occurred while installing rubiks-20070912.p12\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9991\n\n",
     "created_at": "2010-09-23T22:41:02Z",
     "labels": [
-        "porting: AIX or HP-UX",
+        "component: porting: aix or hp-ux",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009990.json:
     "title": "rubiks is failing to install proplerly on AIX as it's assuming the GNU install program.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9990",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -100,15 +100,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9991
 
 ---
 
-archive/issue_comments_100399.json:
+archive/issue_comments_100233.json:
 ```json
 {
     "body": "Attachment [rubiks-20070912.p12.log](tarball://root/attachments/some-uuid/ticket9991/rubiks-20070912.p12.log) by drkirkby created at 2010-09-23 22:49:07\n\nBuild failure observed on an RS/6000 running AIX 5.3.",
     "created_at": "2010-09-23T22:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9990",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100399",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100233",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -120,15 +120,15 @@ Build failure observed on an RS/6000 running AIX 5.3.
 
 ---
 
-archive/issue_comments_100400.json:
+archive/issue_comments_100234.json:
 ```json
 {
     "body": "I don't believe anyone's been maintaining support for AIX or HP-UX for some time.  Putting in sage-wishlist for now in case there is still a desire for it out there, otherwise these tickets should be closed (most of them are probably no longer relevant in any case but I have no obvious way to check this).",
     "created_at": "2019-01-15T18:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9990",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100400",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100234",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -138,15 +138,15 @@ I don't believe anyone's been maintaining support for AIX or HP-UX for some time
 
 ---
 
-archive/issue_comments_100401.json:
+archive/issue_comments_100235.json:
 ```json
 {
     "body": "We should close this ticket as outdated.",
     "created_at": "2020-06-23T21:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9990",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100401",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100235",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -156,15 +156,15 @@ We should close this ticket as outdated.
 
 ---
 
-archive/issue_comments_100402.json:
+archive/issue_comments_100236.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-06-23T21:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9990",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100402",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100236",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -174,15 +174,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_100403.json:
+archive/issue_comments_100237.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-06-25T13:34:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9990",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100403",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9990#issuecomment-100237",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

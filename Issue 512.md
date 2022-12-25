@@ -6,15 +6,14 @@ archive/issues_000512.json:
     "body": "Assignee: @wdjoyner\n\nThe package \nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.9.p1.spkg\nhas the latest version of guava (guava 3.0, incorporating work\nof Robert Miller and Tom Boothby). \n\nIssue created by migration from https://trac.sagemath.org/ticket/512\n\n",
     "created_at": "2007-08-29T14:43:30Z",
     "labels": [
-        "coding theory",
-        "minor",
-        "enhancement"
+        "component: coding theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "update gap package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/512",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @wdjoyner
@@ -32,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/512
 
 ---
 
-archive/issue_comments_002588.json:
+archive/issue_comments_002578.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-29T22:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2588",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2578",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -50,15 +49,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_002589.json:
+archive/issue_comments_002579.json:
 ```json
 {
     "body": "done for sage-2.8.3.",
     "created_at": "2007-08-29T22:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2589",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2579",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -68,15 +67,15 @@ done for sage-2.8.3.
 
 ---
 
-archive/issue_comments_002590.json:
+archive/issue_comments_002580.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-08-30T06:48:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2590",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2580",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -86,15 +85,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_002591.json:
+archive/issue_comments_002581.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-08-30T06:48:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2591",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2581",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -104,15 +103,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_002592.json:
+archive/issue_comments_002582.json:
 ```json
 {
     "body": "\n```\n\nDavid,\n\nI made some fixes to gap-4.4.9.p1.spkg  to make it suitable for inclusion in SAGE.\nUnfortunately when I did a clean build of SAGE with this gap package there were\nnumerous doctest failures in all the following packages;\n\n        sage -t  devel/sage-main/sage/groups/perm_gps/cubegroup.py\n        sage -t  devel/sage-main/sage/coding/guava.py\n        sage -t  devel/sage-main/sage/coding/linear_code.py\n        sage -t  devel/sage-main/sage/coding/code_constructions.py\n        sage -t  devel/sage-main/sage/coding/code_bounds.py\n\nI'm reverting to the previous gap package until I figure how to get these resolved.\n\nI've put my version of gap-4.4.9.p1.spkg here:\n   http://sage.math.washington.edu/tmp\n\n -- William\n```\n",
     "created_at": "2007-08-30T06:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2592",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2582",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -144,15 +143,15 @@ I've put my version of gap-4.4.9.p1.spkg here:
 
 ---
 
-archive/issue_comments_002593.json:
+archive/issue_comments_002583.json:
 ```json
 {
     "body": "Changing component from coding theory to packages.",
     "created_at": "2007-10-05T03:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2593",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2583",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -162,33 +161,15 @@ Changing component from coding theory to packages.
 
 ---
 
-archive/issue_comments_002594.json:
-```json
-{
-    "body": "Changing priority from minor to major.",
-    "created_at": "2007-10-05T03:29:19Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/512",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2594",
-    "user": "@williamstein"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_002595.json:
+archive/issue_comments_002584.json:
 ```json
 {
     "body": "From David Joyner\n\n```\n(1) The package\n\nhttp://sage.math.washington.edu/home/wdj/patches/gap-4.4.10.spkg\n\ninstalls okay passes these tests. However, I added a build for Leon's code,\nwhich\n(a) was only tested on one machine,\n(b) is based on my negligable knowledge of how Makefiles/spkg install\nfiles work (so I got lucky that it seemss to have worked even on one\nmachine!).\n\nI think GAP version 4.4.10 will be officially released tomorrow.\n\n(2) This might be way too old, but I wonder if you could at least try\nto apply the patch\n\nhttp://sage.math.washington.edu/home/wdj/patches/maxima-patch-latest-really.hg\n\nwhich I think fixes some old minor bugs in the interface to special\nfunctions. (The file dates from November of last year!) I created a\nclone, viewed it using hg_sage.inspect and noticed it\nseems to only affect special functions. Then I applied the patch and ran\n\n./sage -t \"/home/wdj/sagefiles/sage-2.8.3.rc3/devel/sage-maxima/sage/functions/special.py\"\n\n(All tests passed.) I tried to view it again (to see what else it\nmight change, in case I misssed something) but couldn't.\n\n\n+++++++++++++++++++++++++++++++++++++++++++++++++++\n\n```\n",
     "created_at": "2007-10-05T03:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2595",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2584",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -233,15 +214,15 @@ might change, in case I misssed something) but couldn't.
 
 ---
 
-archive/issue_comments_002596.json:
+archive/issue_comments_002585.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-20T20:51:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2596",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2585",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -251,15 +232,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_002597.json:
+archive/issue_comments_002586.json:
 ```json
 {
     "body": "I've upgraded everything to gap-4.4.10, and fixed the insanely bloated 4.4.10 spkg that was on David's web page.",
     "created_at": "2007-10-20T20:51:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2597",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/512#issuecomment-2586",
+    "user": "https://github.com/williamstein"
 }
 ```
 

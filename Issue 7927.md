@@ -6,15 +6,14 @@ archive/issues_007927.json:
     "body": "Assignee: @williamstein\n\nCC:  @jbalakrishnan\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7927\n\n",
     "created_at": "2010-01-14T06:53:58Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Extend coleman integration to handle Weierstrass points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7927",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7927
 
 ---
 
-archive/issue_comments_069005.json:
+archive/issue_comments_068886.json:
 ```json
 {
     "body": "some code, probably needs to be cleaned up",
     "created_at": "2010-01-14T06:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69005",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68886",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -49,15 +48,15 @@ some code, probably needs to be cleaned up
 
 ---
 
-archive/issue_comments_069006.json:
+archive/issue_comments_068887.json:
 ```json
 {
     "body": "Attachment [13535.patch](tarball://root/attachments/some-uuid/ticket7927/13535.patch) by @jbalakrishnan created at 2010-01-15 13:59:11\n\nmore Weierstrass code",
     "created_at": "2010-01-15T13:59:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69006",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68887",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -69,15 +68,15 @@ more Weierstrass code
 
 ---
 
-archive/issue_comments_069007.json:
+archive/issue_comments_068888.json:
 ```json
 {
     "body": "Here's a first attempt at some more code, with a little bit of overlap with Robert's code. I like his incorporation of the non-Teichmuller algorithm as an optional parameter in the main Coleman integral function, so we can mostly ignore what I do instead.\n\nThe main functions of interest are \ncoleman_integral_from_weierstrass_via_boundary and\ncoleman_integral_from_weierstrass ; the latter can only be used for odd differentials, while the former is pretty slow, dependent on p-adic extensions. \n\nThe auxiliary functions (e.g., P_to_S, S_to_Q, etc.) aren't likely to be of much interest to the user, but they give us good consistency checks. I'd appreciate input on renaming/restructuring things.\n\nAnd my apologies for the messed-up line breaks in hyperelliptic_generic -- just noticed them now, but boxen.math (where I've been editing) has been difficult to access in the last hour from Guam. I can fix this (my) tomorrow morning.",
     "created_at": "2010-01-15T14:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69007",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68888",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -95,15 +94,15 @@ And my apologies for the messed-up line breaks in hyperelliptic_generic -- just 
 
 ---
 
-archive/issue_comments_069008.json:
+archive/issue_comments_068889.json:
 ```json
 {
     "body": "Attachment [13536.patch](tarball://root/attachments/some-uuid/ticket7927/13536.patch) by @jbalakrishnan created at 2010-01-16 00:33:24\n\napply after 13535 to fix line break problems",
     "created_at": "2010-01-16T00:33:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69008",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68889",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -115,15 +114,15 @@ apply after 13535 to fix line break problems
 
 ---
 
-archive/issue_comments_069009.json:
+archive/issue_comments_068890.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-01-30T06:50:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69009",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68890",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -133,15 +132,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_069010.json:
+archive/issue_comments_068891.json:
 ```json
 {
     "body": "The overlap needs to be taken care of somehow. It might be easiest for Jen to incorporate whatever is appropriate from Robert's patch.\n\nI'm dubious about the treatment of points in the infinite disc, on several counts. One is whether the Frobenius gets the y-coordinate right, since I think in both patches the check passes for trivial reasons whether or not the y-coordinate is right. Under Robert's patch, one gets lucky: you win as long as the square root of a p-adic number with unit part congruent to 1 mod p is guaranteed to be congruent to 1 mod p. This is undocumented but appears to be true. Under Jen's patch, one does not get lucky:\n\n```\nsage: K = pAdicField(11, 5)\nsage: x = polygen(K)\nsage: C = HyperellipticCurve(x^5 + 33/16*x^4 + 3/4*x^3 + 3/8*x^2 - 1/4*x + 1/16)\nsage: P = C.lift_x(11^(-2))\nsage: C.frobenius(P)\n(11^-22 + O(11^-17) : 10*11^-55 + 10*11^-54 + 10*11^-53 + 10*11^-52 + 10*11^-51 + O(11^-50) : 1 + O(11^5))\n```\n\n\nMore seriously, computing Coleman integrals even between two points in the infinite disc seems to be broken. Under Robert's patch, we have:\n\n```\nsage: K = pAdicField(11, 5)\nsage: x = polygen(K)\nsage: C = HyperellipticCurve(x^5 + 33/16*x^4 + 3/4*x^3 + 3/8*x^2 - 1/4*x + 1/16)\nsage: P = C.lift_x(11^(-2))\nsage: Q = C.lift_x(3*11^(-2))\nsage: C.tiny_integrals_on_basis(P,Q)\n[9*11^3 + 11^4 + 2*11^5 + 2*11^6 + 11^7 + O(11^8), 11^2 + 5*11^4 + 3*11^5 + O(11^6), 8*11^-1 + 5 + 5*11 + 5*11^2 + 6*11^3 + O(11^4), 10*11^-3 + 3*11^-2 + 7*11^-1 + 5 + 8*11 + O(11^2)]\nsage: C.coleman_integrals_on_basis(P, Q)\n(10*11^-102 + 2*11^-101 + 9*11^-100 + 3*11^-99 + O(11^-98), 8*11^-102 + 2*11^-101 + 2*11^-100 + O(11^-98), 10*11^-103 + 8*11^-102 + 3*11^-101 + 6*11^-100 + 7*11^-99 + O(11^-98), 2*11^-103 + 5*11^-102 + 8*11^-100 + 5*11^-99 + O(11^-98))\n```\n\nThe last two lines should be the same; right now, they aren't even of the same return type (one is a list, one is a tuple).\n\nUnder Jen's patch, the last call returns an error instead:\n\n```\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/scratch/sage-4.3.2.alpha0/<ipython console> in <module>()\n\n/scratch/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.pyc in coleman_integrals_on_basis(self, P, Q)\n    136 \n    137         prof(\"tiny integrals\")\n--> 138         TP = self.teichmuller(P)\n    139 #        print \"TP\", TP\n    140         P_to_TP = V(self.tiny_integrals_on_basis(P, TP))\n\n/scratch/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.pyc in teichmuller(self, P)\n    117         \"\"\"\n    118         K = P[0].parent()\n--> 119         x = K.teichmuller(P[0])\n    120         pts = self.lift_x(x, all=True)\n    121         p = K.prime()\n\n/scratch/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/rings/padics/padic_generic.pyc in teichmuller(self, x, prec)\n    376             prec = min(Integer(prec), self.precision_cap())\n    377         ans = self(x, prec)\n--> 378         ans._teichmuller_set()\n    379         return ans\n    380 \n\n/scratch/sage-4.3.2.alpha0/local/lib/python2.6/site-packages/sage/rings/padics/padic_capped_relative_element.so in sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement._teichmuller_set (sage/rings/padics/padic_capped_relative_element.c:17195)()\n\nValueError: cannot set negative valuation element to Teichmuller representative.\n```\n",
     "created_at": "2010-01-30T06:50:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69010",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68891",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -214,15 +213,15 @@ ValueError: cannot set negative valuation element to Teichmuller representative.
 
 ---
 
-archive/issue_comments_069011.json:
+archive/issue_comments_068892.json:
 ```json
 {
     "body": "Followup: the p-adic square root is computed using pari, which always chooses the branch of the square root so that the leading p-adic digit is in [0, p/2]. So Robert's treatment of the ambiguity does seem to work.",
     "created_at": "2010-01-30T12:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69011",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68892",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -232,15 +231,15 @@ Followup: the p-adic square root is computed using pari, which always chooses th
 
 ---
 
-archive/issue_comments_069012.json:
+archive/issue_comments_068893.json:
 ```json
 {
     "body": "merged Robert's patch with mine, though still a work in progress",
     "created_at": "2010-02-07T16:33:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69012",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68893",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -250,15 +249,15 @@ merged Robert's patch with mine, though still a work in progress
 
 ---
 
-archive/issue_comments_069013.json:
+archive/issue_comments_068894.json:
 ```json
 {
     "body": "Attachment [13538.patch](tarball://root/attachments/some-uuid/ticket7927/13538.patch) by @jbalakrishnan created at 2010-02-16 21:21:47\n\nfixing precision issues in the infinite disc",
     "created_at": "2010-02-16T21:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69013",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68894",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -270,15 +269,15 @@ fixing precision issues in the infinite disc
 
 ---
 
-archive/issue_comments_069014.json:
+archive/issue_comments_068895.json:
 ```json
 {
     "body": "The good news is, this looks fine on mathematical grounds. However, there are a few procedural issues before I can issue a positive review.\n\nI am getting some doctest failures in hyperelliptic_padic_field.py. I think the problem is the indentation in the doctest for is_same_disc. If I fix that by hand, the doctests all pass.\n\nIn other news, coverage checking points up some missing documentation/doctests.\nFor hyperelliptic_padic_field.py:\n\n```\nMissing documentation:\n\t * invariant_differential(self):\n\nMissing doctests:\n\t * is_in_weierstrass_disc(self,P):\n\t * is_weierstrass(self,P):\n\t * tiny_integrals(self, F, P, Q):\n```\n\nFor hyperelliptic_generic.py:\n\n```\nMissing documentation:\n\t * __init__(self, PP, f, h=None, names=None, genus=None):\n\t * change_ring(self, R):\n\t * __cmp__(self, other):\n\t * lift_x(self, x, all=False):\n\t * genus(self):\n\t * jacobian(self):\n\t * monsky_washnitzer_gens(self):\n\nMissing doctests:\n\t * local_coord(self, P, prec = 20, name = 't'):\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _repr_(self):\n\t * _magma_init_(self, magma):\n```\n\nOf these, the ones that are new (is_in_weierstrass_disc, is_weierstrass, and maybe some others) absolutely need doctests. Improving the coverage for older functions would be helpful but is not an obstacle to a positive review on this ticket (we could create a separate ticket for that).\n\nAnother minor note: various release managers have requested that the commit line for patches start with the number of the relevant ticket, e.g.,\n\n#7927: Extend coleman integration to handle Weierstrass points\n\nThis is helpful in case a rollback is needed after applying a whole bunch of disparate patches. This comment can be ignored unless you decide to build a single patch encompassing all of the changes so far.",
     "created_at": "2010-02-16T23:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69014",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68895",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -331,15 +330,15 @@ This is helpful in case a rollback is needed after applying a whole bunch of dis
 
 ---
 
-archive/issue_comments_069015.json:
+archive/issue_comments_068896.json:
 ```json
 {
     "body": "It appears I spoke to soon. An example which used to work but is now broken:\n\n```\nsage: R.<x> = QQ['x']\nsage: H = HyperellipticCurve(x^3+1)\nsage: K = Qp(5,8)\nsage: HK = H.change_ring(K)                                              \nsage: P = HK(0,1)                                                        \nsage: Q = HK.lift_x(5)                                                   \nsage: HK.tiny_integrals_on_basis(P,Q)                                    \n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/r1/kedlaya/.sage/temp/dwork.mit.edu/31681/_home_r1_kedlaya__sage_init_sage_0.py in <module>()\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.pyc in tiny_integrals_on_basis(self, P, Q)\n    298         R = PolynomialRing(self.base_ring(), ['x', 'y'])\n    299         x, y = R.gens()\n--> 300         return self.tiny_integrals([x**i for i in range(2*self.genus())], P, Q)\n    301 \n    302                \n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.pyc in tiny_integrals(self, F, P, Q)\n    250         P and Q MUST be in the same residue disk for this result to make sense. \n    251         \"\"\"\n--> 252         x, y, z = self.local_analytic_interpolation(P, Q)  #homogeneous coordinates\n    253         x = x/z\n    254         y = y/z\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.pyc in local_analytic_interpolation(self, P, Q)\n     82         \"\"\"\n     83         prec = self.base_ring().precision_cap()\n---> 84         if self.is_same_disc(P,Q) == False:\n     85             raise ValueError, \"%s and %s are not in the same residue disc\"%(P,Q)\n     86         disc = self.residue_disc(P)\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.pyc in is_same_disc(self, P, Q)\n    238             False        \n    239         \"\"\"\n--> 240         if self.residue_disc(P) == self.residue_disc(Q):\n    241             return True\n    242         else:\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_padic_field.pyc in residue_disc(self, P)\n    203         yPv = P[1].valuation()\n    204         F = self.base_ring().residue_field()\n--> 205         HF = self.change_ring(F)\n    206         if P == self(0,1,0):\n    207             return HF(0,1,0)\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_generic.pyc in change_ring(self, R)\n     78         y = self._printing_ring.gen()\n     79         x = self._printing_ring.base_ring().gen()\n---> 80         return HyperellipticCurve(f.change_ring(R), h, \"%s,%s\"%(x,y))\n     81 \n     82     def _repr_(self):\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/constructor.pyc in HyperellipticCurve(f, h, names, PP)\n     94             return HyperellipticCurve_g2_finite_field(PP, f, h, names=names, genus=g)\n     95         else:\n---> 96             return HyperellipticCurve_finite_field(PP, f, h, names=names, genus=g)\n     97     elif is_RationalField(R):\n     98         if g == 2:\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/schemes/hyperelliptic_curves/hyperelliptic_generic.pyc in __init__(self, PP, f, h, names, genus)\n     66             names = names.split(\",\")\n     67         self._names = names\n---> 68         P1 = PolynomialRing(R,name=names[0])\n     69         P2 = PolynomialRing(P1,name=names[1])\n     70         self._PP = PP\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in PolynomialRing(base_ring, arg1, arg2, sparse, order, names, name, implementation)\n    341                 raise TypeError, \"if second arguments is a string with no commas, then there must be no other non-optional arguments\"\n    342             name = arg1\n--> 343             R = _single_variate(base_ring, name, sparse, implementation)\n    344         else:\n    345             # 2-4. PolynomialRing(base_ring, names, order='degrevlex'):\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.pyc in _single_variate(base_ring, name, sparse, implementation)\n    393 def _single_variate(base_ring, name, sparse, implementation):\n    394     import sage.rings.polynomial.polynomial_ring as m\n--> 395     name = normalize_names(1, name)\n    396     key = (base_ring, name, sparse, implementation)\n    397     R = _get_from_cache(key)\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.normalize_names (sage/structure/parent_gens.c:2089)()\n\n/scratch/sage-4.2.1/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens._certify_names (sage/structure/parent_gens.c:1647)()\n\nValueError: variable names must be alphanumeric, but one is '(1 + O(5^8))*x' which is not.\n```\n",
     "created_at": "2010-02-17T16:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69015",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68896",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -440,15 +439,15 @@ ValueError: variable names must be alphanumeric, but one is '(1 + O(5^8))*x' whi
 
 ---
 
-archive/issue_comments_069016.json:
+archive/issue_comments_068897.json:
 ```json
 {
     "body": "Replying to [comment:5 kedlaya]:\n> It appears I spoke to soon. An example which used to work but is now broken:\n...\n\nThis failure occurred using 4.2.1. I can't reproduce it using 4.3.3.alpha0, so it may be an artifact.",
     "created_at": "2010-02-17T17:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69016",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68897",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -462,15 +461,15 @@ This failure occurred using 4.2.1. I can't reproduce it using 4.3.3.alpha0, so i
 
 ---
 
-archive/issue_comments_069017.json:
+archive/issue_comments_068898.json:
 ```json
 {
     "body": "fixing things in comment #4 (doctests, etc.)",
     "created_at": "2010-02-18T16:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69017",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68898",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -480,15 +479,15 @@ fixing things in comment #4 (doctests, etc.)
 
 ---
 
-archive/issue_comments_069018.json:
+archive/issue_comments_068899.json:
 ```json
 {
     "body": "Attachment [13539.patch](tarball://root/attachments/some-uuid/ticket7927/13539.patch) by @jbalakrishnan created at 2010-02-19 01:58:06\n\ndoctesting exceptions; formatting of docstrings",
     "created_at": "2010-02-19T01:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69018",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68899",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -500,15 +499,15 @@ doctesting exceptions; formatting of docstrings
 
 ---
 
-archive/issue_comments_069019.json:
+archive/issue_comments_068900.json:
 ```json
 {
     "body": "Attachment [13540.patch](tarball://root/attachments/some-uuid/ticket7927/13540.patch) by @jbalakrishnan created at 2010-02-19 01:58:31",
     "created_at": "2010-02-19T01:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69019",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68900",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -518,15 +517,15 @@ Attachment [13540.patch](tarball://root/attachments/some-uuid/ticket7927/13540.p
 
 ---
 
-archive/issue_comments_069020.json:
+archive/issue_comments_068901.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-19T01:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69020",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68901",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -536,15 +535,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_069021.json:
+archive/issue_comments_068902.json:
 ```json
 {
     "body": "removed coleman_integrals_on_basis in ell_padic_field.py",
     "created_at": "2010-02-19T15:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69021",
-    "user": "@jbalakrishnan"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68902",
+    "user": "https://github.com/jbalakrishnan"
 }
 ```
 
@@ -554,15 +553,15 @@ removed coleman_integrals_on_basis in ell_padic_field.py
 
 ---
 
-archive/issue_comments_069022.json:
+archive/issue_comments_068903.json:
 ```json
 {
     "body": "Attachment [13541.patch](tarball://root/attachments/some-uuid/ticket7927/13541.patch) by @kedlaya created at 2010-02-19 16:08:16\n\nAfter applying 13535.patch through 13541.patch against 4.3.3.alpha0, I get no long doctest failures anywhere in sage/schemes/. Positive review.\n\nFor other issues with Coleman integration, see tickets #8304 and #8305.",
     "created_at": "2010-02-19T16:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69022",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68903",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -576,15 +575,15 @@ For other issues with Coleman integration, see tickets #8304 and #8305.
 
 ---
 
-archive/issue_comments_069023.json:
+archive/issue_comments_068904.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-19T16:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69023",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68904",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -594,15 +593,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069024.json:
+archive/issue_comments_068905.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-03T14:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69024",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68905",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -612,15 +611,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_069025.json:
+archive/issue_comments_068906.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. [13535.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7927/13535.patch)\n2. [13536.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7927/13536.patch)\n3. [13537.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7927/13537.patch)\n4. [13538.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7927/13538.patch)\n5. [13539.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7927/13539.patch)\n6. [13540.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7927/13540.patch)\n7. [13541.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7927/13541.patch)\n\nJennifer: you should put the ticket number in your patch.",
     "created_at": "2010-03-03T14:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69025",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68906",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -640,15 +639,15 @@ Jennifer: you should put the ticket number in your patch.
 
 ---
 
-archive/issue_comments_069026.json:
+archive/issue_comments_068907.json:
 ```json
 {
     "body": "What's up with this condition:\n\n```\n            x = f.parent().variable_name()\n            if x!='a' :  #this is to distinguish between extensions of Qp that are finite vs. not\n```\n\nI totally cannot understand why you check whether the variable name is `\"a\"`. That makes no sense to me.",
     "created_at": "2017-11-22T13:39:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69026",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68907",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -665,15 +664,15 @@ I totally cannot understand why you check whether the variable name is `"a"`. Th
 
 ---
 
-archive/issue_comments_069027.json:
+archive/issue_comments_068908.json:
 ```json
 {
     "body": "See #24267 for a follow-up.",
     "created_at": "2017-11-22T14:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-69027",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7927#issuecomment-68908",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

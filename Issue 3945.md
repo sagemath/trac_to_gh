@@ -6,15 +6,14 @@ archive/issues_003945.json:
     "body": "Assignee: cwitty\n\nCC:  @mwhansen\n\nIt's very annoying that \"sage -gdb\" doesn't work under OS X 10.5.\n\nHere's the temporary workaround I've been using when I need it:\n\n1. Comment this in sage/all.py:\n\n```\n# We have to set this here so urllib, etc. can detect it. \n#import sage.server.notebook.gnutls_socket_ssl\n#sage.server.notebook.gnutls_socket_ssl.require_SSL()\n```\n\n\n2. Type this:\n\n```\nsage -sh\ngdb python\n...\nr\n...\n>>> from sage.all import *\n```\n\n\nI'm not sure how to fix this problem.  Basically any importing of anything related to ipython or the ntoebook seems to halt gdb.  Maybe there is some option to gdb to make it ignore such signals. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3945\n\n",
     "created_at": "2008-08-24T18:47:11Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "sage -gdb doesn't work under OS X 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3945",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -57,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3945
 
 ---
 
-archive/issue_comments_028318.json:
+archive/issue_comments_028260.json:
 ```json
 {
     "body": "sage -gdb has been working for me on OSX for a long time. Every once in a while it craps out, but the next run usually works. One thing that really annoys me are all the missing debug symbol messages at startup.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-24T21:13:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28318",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28260",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +78,15 @@ Michael
 
 ---
 
-archive/issue_comments_028319.json:
+archive/issue_comments_028261.json:
 ```json
 {
     "body": "Ok, I think I am now hitting the same problem. On sage.math:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3$ ./sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n/scratch/mabshoff/release-cycle/sage-3.1.3.alpha3/local/bin/sage-gdb-pythonstartup\nGNU gdb 6.4.90-debian\nCopyright (C) 2006 Free Software Foundation, Inc.\nGDB is free software, covered by the GNU General Public License, and you are\nwelcome to change it and/or distribute copies of it under certain conditions.\nType \"show copying\" to see the conditions.\nThere is absolutely no warranty for GDB.  Type \"show warranty\" for details.\nThis GDB was configured as \"x86_64-linux-gnu\"...Using host libthread_db library \"/lib/libthread_db.so.1\".\n| SAGE Version 3.1.3.alpha2, Release Date: 2008-09-30                |\n| Type notebook() for the GUI, and license() for information.        |\n[Thread debugging using libthread_db enabled]\n[New Thread 46983635287904 (LWP 15466)]\nPython 2.5.2 (r252:60911, Sep 30 2008, 17:45:52) \n[GCC 4.1.2 20061115 (prerelease) (Debian 4.1.1-21)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.3.alpha2, Release Date: 2008-09-30                |\n| Type notebook() for the GUI, and license() for information.        |\nProgram exited normally.\n(gdb) \n```\n\nBy best guess would be that this is ipython related, specifically in `local/bin/sage-gdb-pythonstartup` we have\n\n```\nfrom sage.all import *\nimport os, sys\nsys.argv = ['', '-rc', os.environ['IPYTHONRC'], \\\n                '-c', os.environ['SAGE_STARTUP_COMMAND'] + '; banner()']\nimport IPython\nIPython.Shell.IPShell().mainloop(sys_exit=1, banner='')\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-10-07T22:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28319",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28261",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -141,15 +140,15 @@ Michael
 
 ---
 
-archive/issue_comments_028320.json:
+archive/issue_comments_028262.json:
 ```json
 {
     "body": "The following patchlet gets us a Python prompt, but this is obviously not the real solution:\n\n```\ndiff -r cdf30964f1fe sage-gdb-pythonstartup\n--- a/sage-gdb-pythonstartup    Tue Sep 30 16:55:34 2008 -0700\n+++ b/sage-gdb-pythonstartup    Tue Oct 07 15:21:02 2008 -0700\n@@ -3,5 +3,5 @@\n sys.argv = ['', '-rc', os.environ['IPYTHONRC'], \\\n                 '-c', os.environ['SAGE_STARTUP_COMMAND'] + '; banner()']\n import IPython\n-IPython.Shell.IPShell().mainloop(sys_exit=1, banner='')\n+IPython.Shell.IPShell().mainloop(banner='')\n```\n\n\nMike Hansen added to the CC.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-07T22:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28320",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28262",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -178,15 +177,15 @@ Michael
 
 ---
 
-archive/issue_comments_028321.json:
+archive/issue_comments_028263.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-10-12T19:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28321",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28263",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -196,15 +195,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_028322.json:
+archive/issue_comments_028264.json:
 ```json
 {
     "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-10-12T19:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28322",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28264",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -214,15 +213,15 @@ Changing assignee from cwitty to @mwhansen.
 
 ---
 
-archive/issue_comments_028323.json:
+archive/issue_comments_028265.json:
 ```json
 {
     "body": "Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945.patch) by @mwhansen created at 2008-10-12 19:01:24",
     "created_at": "2008-10-12T19:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28323",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28265",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -232,15 +231,15 @@ Attachment [trac_3945.patch](tarball://root/attachments/some-uuid/ticket3945/tra
 
 ---
 
-archive/issue_comments_028324.json:
+archive/issue_comments_028266.json:
 ```json
 {
     "body": "Attachment [trac_3945-2.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-2.patch) by @mwhansen created at 2008-10-12 20:12:57",
     "created_at": "2008-10-12T20:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28324",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28266",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -250,15 +249,15 @@ Attachment [trac_3945-2.patch](tarball://root/attachments/some-uuid/ticket3945/t
 
 ---
 
-archive/issue_comments_028325.json:
+archive/issue_comments_028267.json:
 ```json
 {
     "body": "Positive review for both patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-12T20:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28325",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28267",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -272,15 +271,15 @@ Michael
 
 ---
 
-archive/issue_comments_028326.json:
+archive/issue_comments_028268.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.rc0",
     "created_at": "2008-10-12T20:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28326",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28268",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -290,15 +289,15 @@ Merged in Sage 3.1.3.rc0
 
 ---
 
-archive/issue_comments_028327.json:
+archive/issue_comments_028269.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-12T20:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28327",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28269",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -308,15 +307,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028328.json:
+archive/issue_comments_028270.json:
 ```json
 {
     "body": "Attachment [trac_3945-3.patch](tarball://root/attachments/some-uuid/ticket3945/trac_3945-3.patch) by @mwhansen created at 2008-10-12 23:02:03",
     "created_at": "2008-10-12T23:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28328",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3945#issuecomment-28270",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

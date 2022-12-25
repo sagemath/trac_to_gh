@@ -6,15 +6,14 @@ archive/issues_002163.json:
     "body": "Assignee: @williamstein\n\nAt the command line:\n\n\n```\nsage: a=plot(x^2,(x,-1,1))\nsage: a.show??\nsage: a.show?\n```\n\n\nIn either of the last two commands, the plot pops up on my Ubuntu 7.10 box (as well as the help).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2163\n\n",
     "created_at": "2008-02-14T23:00:03Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": ".show?? pops up the graphics item as well as the help page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2163",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2163
 
 ---
 
-archive/issue_comments_014200.json:
+archive/issue_comments_014169.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to graphics.",
     "created_at": "2008-02-14T23:03:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14200",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14169",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -58,15 +57,15 @@ Changing component from algebraic geometry to graphics.
 
 ---
 
-archive/issue_comments_014201.json:
+archive/issue_comments_014170.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-02-15T01:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14201",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14170",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -76,15 +75,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_014202.json:
+archive/issue_comments_014171.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-02-15T01:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14202",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14171",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -94,15 +93,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_014203.json:
+archive/issue_comments_014172.json:
 ```json
 {
     "body": "This is due to the following:\n\n\n```\nString Form:    <bound method Graphics.show of >\n```\n\n\nwhereas after show_default(False), we get:\n\n\n```\nString Form:    <bound method Graphics.show of Graphics object consisting of 1 graphics primitive>\n```\n",
     "created_at": "2008-02-15T01:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14203",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14172",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -126,15 +125,15 @@ String Form:    <bound method Graphics.show of Graphics object consisting of 1 g
 
 ---
 
-archive/issue_comments_014204.json:
+archive/issue_comments_014173.json:
 ```json
 {
     "body": "This can be fixed if we can tell IPython to set show_default(False) when doing things like repr(a.show)",
     "created_at": "2008-02-15T02:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14204",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14173",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -144,15 +143,15 @@ This can be fixed if we can tell IPython to set show_default(False) when doing t
 
 ---
 
-archive/issue_comments_014205.json:
+archive/issue_comments_014174.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-03T00:54:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14205",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14174",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -162,15 +161,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014206.json:
+archive/issue_comments_014175.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-09-03T00:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14206",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14175",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -180,15 +179,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_014207.json:
+archive/issue_comments_014176.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-09-03T00:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14207",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14176",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -198,15 +197,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_014208.json:
+archive/issue_comments_014177.json:
 ```json
 {
     "body": "Attachment [trac_2163.patch](tarball://root/attachments/some-uuid/ticket2163/trac_2163.patch) by @mwhansen created at 2008-12-02 08:44:34\n\nI had already fixed some problems caused by removing the 'nodoctest' at the top before realizing there's no good way to test the function which I added.\n\nThe thing which addresses this ticket is the last hunk at the bottom of the patch.",
     "created_at": "2008-12-02T08:44:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14208",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14177",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -220,15 +219,15 @@ The thing which addresses this ticket is the last hunk at the bottom of the patc
 
 ---
 
-archive/issue_comments_014209.json:
+archive/issue_comments_014178.json:
 ```json
 {
     "body": "This fixes the problem.  Tests pass in interpreter.py as well (thanks for fixing all those too!)\n\nPositive review.",
     "created_at": "2008-12-05T08:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14209",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14178",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -240,15 +239,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_014210.json:
+archive/issue_comments_014179.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-05T09:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14210",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14179",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -258,15 +257,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014211.json:
+archive/issue_comments_014180.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.alpha0",
     "created_at": "2008-12-05T09:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14211",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2163#issuecomment-14180",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

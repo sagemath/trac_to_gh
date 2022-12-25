@@ -6,15 +6,14 @@ archive/issues_008606.json:
     "body": "Assignee: @aghitza\n\nCC:  @jasongrout alexghitza @williamstein\n\nKeywords: float, RR\n\nConsider the following (sage 4.3.3, since 4.3.4 does not compile\non my machine):\n\n```\nsage: 2.0^53\n9.00719925474099e15\n```\n\nThis is what we expect: the float `2.0` propagates to the whole\nexpression.\n\nHowever:\n\n```\nsage: 2^53.0\n9007199254740992\n```\n\nNote the result is an integer, not a float! Thus the information\nabout the inexact value has been lost. Same thing with\n`2^float(53)` and `2^RR(53)`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8606\n\n",
     "created_at": "2010-03-25T15:11:24Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "floats in exponent do not propagate",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8606",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @aghitza
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8606
 
 ---
 
-archive/issue_comments_077962.json:
+archive/issue_comments_077834.json:
 ```json
 {
     "body": "The problem is in the function __pow__ in sage/rings/integer.pyx.  There we find:\n\n```\n        try:\n            nn = PyNumber_Index(n)\n        except TypeError:\n            try:\n```\n\nI think PyNumber_Index(53.0) is the long \"53\".    Thus to change this as you wish, that code must be changed.",
     "created_at": "2010-03-29T05:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77962",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77834",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -80,15 +79,15 @@ I think PyNumber_Index(53.0) is the long "53".    Thus to change this as you wis
 
 ---
 
-archive/issue_comments_077963.json:
+archive/issue_comments_077835.json:
 ```json
 {
     "body": "William, in fact `nn = PyNumber_Index(n)` raises an error, thus we go to\n\n```\n            try:\n                nn = Integer(n)\n            except TypeError:\n                try:\n                    s = parent_c(n)(self)\n                    return s**n\n```\n\nwhere `nn = Integer(n)` succeeds for n=53.0, but fails for n=53.1:\n\n```\nsage: Integer(53.0)\n53\nsage: Integer(53.1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/detached/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6449)()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so in sage.rings.real_mpfr.RealNumber._integer_ (sage/rings/real_mpfr.c:11846)()\n\nTypeError: Attempt to coerce non-integral RealNumber to Integer\n```\n\nIf `Integer(53.0)` would return an error too, this would fix the problem. However we would\nthen need a specific method to coerce an integral real number to integer...\n\nOn a side note, `int` seems to behave differently:\n\n```\nsage: int(53.0)\n53\nsage: int(53.1)\n53\n```\n",
     "created_at": "2010-03-29T11:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77963",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77835",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -138,15 +137,15 @@ sage: int(53.1)
 
 ---
 
-archive/issue_comments_077964.json:
+archive/issue_comments_077836.json:
 ```json
 {
     "body": "It seems like we should fix pow, rather than change Integer(53.0).  In pow, it seems like we shouldn't just try to blindly coerce to an integer, because that is where we are losing information that we don't want to lose.  Why do we have `nn = Integer(n)`?  The previous PyNumber_Index would take care of cases where we really had an integer power, right?  It seems like just deleting the Integer(n) try clause might be the right thing to do.",
     "created_at": "2010-03-29T12:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77964",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77836",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -156,15 +155,15 @@ It seems like we should fix pow, rather than change Integer(53.0).  In pow, it s
 
 ---
 
-archive/issue_comments_077965.json:
+archive/issue_comments_077837.json:
 ```json
 {
     "body": "Attachment [trac_8606.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606.patch) by @zimmermann6 created at 2010-03-29 13:12:29\n\nJason,\n> It seems like just deleting the Integer(n) try clause might be the right thing to do.\n\nthanks, that did the trick! I am attaching a patch to review.",
     "created_at": "2010-03-29T13:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77965",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77837",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -179,15 +178,15 @@ thanks, that did the trick! I am attaching a patch to review.
 
 ---
 
-archive/issue_comments_077966.json:
+archive/issue_comments_077838.json:
 ```json
 {
     "body": "Changing assignee from @aghitza to @zimmermann6.",
     "created_at": "2010-03-29T13:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77966",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77838",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -197,15 +196,15 @@ Changing assignee from @aghitza to @zimmermann6.
 
 ---
 
-archive/issue_comments_077967.json:
+archive/issue_comments_077839.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-29T13:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77967",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77839",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -215,15 +214,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_077968.json:
+archive/issue_comments_077840.json:
 ```json
 {
     "body": "Jason, Alex, William, please can anyone of you review this patch? This should be easy. Thanks.\n\nPaul",
     "created_at": "2010-05-24T07:57:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77968",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77840",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -235,15 +234,15 @@ Paul
 
 ---
 
-archive/issue_comments_077969.json:
+archive/issue_comments_077841.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-05-24T14:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77969",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77841",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -253,15 +252,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_077970.json:
+archive/issue_comments_077842.json:
 ```json
 {
     "body": "The changes in attachment:trac_8606.patch look good to me and all the doctests pass. I'm ready to give this a positive review, but I have a minor comment first:\n\nShouldn't we also drop the try/except clause around `parent_c(n)(self)`? The error message returned by the `except` is not very helpful and I can't think of any test case to actually fall in that clause. Note that if the conversion `parent_c(n)(self)` fails, we get a `TypeError` not an `AttributeError`:\n\n\n```\nsage: 5^('a')\nTraceback (most recent call last):\n...\nTypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'\n```\n",
     "created_at": "2010-05-24T14:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77970",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77842",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -282,15 +281,15 @@ TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'
 
 ---
 
-archive/issue_comments_077971.json:
+archive/issue_comments_077843.json:
 ```json
 {
     "body": "apply only this patch (against 4.4.2)",
     "created_at": "2010-05-24T18:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77971",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77843",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -300,15 +299,15 @@ apply only this patch (against 4.4.2)
 
 ---
 
-archive/issue_comments_077972.json:
+archive/issue_comments_077844.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-05-24T18:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77972",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77844",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -318,15 +317,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_077973.json:
+archive/issue_comments_077845.json:
 ```json
 {
     "body": "Attachment [trac_8606_2.patch](tarball://root/attachments/some-uuid/ticket8606/trac_8606_2.patch) by @zimmermann6 created at 2010-05-24 18:47:17\n\nthank you Burcin for your review. I have attached a new patch following your proposal.\nHowever we still get the same (unhelpful) error message for `5^('a')`.\nAll doctests still pass.",
     "created_at": "2010-05-24T18:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77973",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77845",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -340,15 +339,15 @@ All doctests still pass.
 
 ---
 
-archive/issue_comments_077974.json:
+archive/issue_comments_077846.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-26T10:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77974",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77846",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -358,15 +357,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_077975.json:
+archive/issue_comments_077847.json:
 ```json
 {
     "body": "Replying to [comment:10 zimmerma]:\n> thank you Burcin for your review. I have attached a new patch following your proposal.\n> However we still get the same (unhelpful) error message for `5^('a')`.\n> All doctests still pass.\n\nI was referring to the message `\"exponent (=%s) must be an integer.\\nCoerce your numbers to real or complex numbers first.\"` as unhelpful. You're right that the message `unsupported operand type(s) for ** or pow(): 'str' and 'str'` can be confusing as well. It just didn't occur to me since I was staring at the code and expected exactly that.\n\nWe could catch the `TypeError` and change the message to \"Cannot find a common domain to perform the operation. Please convert your arguments to the desired types explicitly.\" or something similar.\n\nI'm still changing this to positive review since the patch fixes a bug and a more meaningful error message is just an enhancement.",
     "created_at": "2010-05-26T10:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77975",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77847",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -385,15 +384,15 @@ I'm still changing this to positive review since the patch fixes a bug and a mor
 
 ---
 
-archive/issue_comments_077976.json:
+archive/issue_comments_077848.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T08:28:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77976",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8606#issuecomment-77848",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

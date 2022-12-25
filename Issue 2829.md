@@ -6,7 +6,7 @@ archive/issues_002829.json:
     "body": "Assignee: cwitty\n\nKeywords: pylint\n\nThe attached patch fixes a couple issues reported by [PyLint](http://www.logilab.org/857):\n* \"a,b\" -> \"a, b\"\n* remove unused variables\n* remove unused imports\n* avoid overwriting built-in names\n\nIssue created by migration from https://trac.sagemath.org/ticket/2829\n\n",
     "created_at": "2008-04-06T13:27:09Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002829.json:
     "title": "[with patch, needs review] PyLint cleanup of crypto.mq.sr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2829",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: cwitty
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2829
 
 ---
 
-archive/issue_comments_019418.json:
+archive/issue_comments_019377.json:
 ```json
 {
     "body": "Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/ticket2829/pylint_crypto_mq_sr__py.patch) by @malb created at 2008-04-06 13:28:02",
     "created_at": "2008-04-06T13:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19418",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19377",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -53,15 +53,15 @@ Attachment [pylint_crypto_mq_sr__py.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_019419.json:
+archive/issue_comments_019378.json:
 ```json
 {
     "body": "Patch looks good to me, but I have reject issues against my 3.0.alpha2 merge tree:\n\n```\npatching file sage/crypto/mq/sr.py\nHunk #25 FAILED at 599.\nHunk #26 FAILED at 615.\nHunk #28 succeeded at 655 with fuzz 2.\nHunk #48 FAILED at 1191.\nHunk #75 FAILED at 1776.\n4 out of 95 hunks FAILED -- saving rejects to file sage/crypto/mq/sr.py.rej\n```\n\nOne those issues are fixed I will apply.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-06T15:25:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19419",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19378",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +87,15 @@ Michael
 
 ---
 
-archive/issue_comments_019420.json:
+archive/issue_comments_019379.json:
 ```json
 {
     "body": "Ok, the first three rejects are due to `#random` and Carl Witty's randgen fix. \n\nCheers,\n\nMichael",
     "created_at": "2008-04-06T15:43:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19420",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19379",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +109,15 @@ Michael
 
 ---
 
-archive/issue_comments_019421.json:
+archive/issue_comments_019380.json:
 ```json
 {
     "body": "Attachment [trac_2829_pylint_crypto_mq_sr__py-good_hunks.patch](tarball://root/attachments/some-uuid/ticket2829/trac_2829_pylint_crypto_mq_sr__py-good_hunks.patch) by mabshoff created at 2008-04-06 16:24:12\n\nthe good hunks from malb's patch",
     "created_at": "2008-04-06T16:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19421",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19380",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +129,15 @@ the good hunks from malb's patch
 
 ---
 
-archive/issue_comments_019422.json:
+archive/issue_comments_019381.json:
 ```json
 {
     "body": "Attachment [trac_2829_pylint_crypto_mq_sr__py-rebased_hunks.patch](tarball://root/attachments/some-uuid/ticket2829/trac_2829_pylint_crypto_mq_sr__py-rebased_hunks.patch) by mabshoff created at 2008-04-06 16:24:53\n\nThe four missing hunks that were in the previous patch",
     "created_at": "2008-04-06T16:24:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19422",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19381",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -149,15 +149,15 @@ The four missing hunks that were in the previous patch
 
 ---
 
-archive/issue_comments_019423.json:
+archive/issue_comments_019382.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-06T16:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19423",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19382",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -167,15 +167,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_019424.json:
+archive/issue_comments_019383.json:
 ```json
 {
     "body": "Merged trac_2829_pylint_crypto_mq_sr__py-good_hunks.patch and trac_2829_pylint_crypto_mq_sr__py-rebased_hunks.patch in Sage 3.0.alpha2. Doctests pass.",
     "created_at": "2008-04-06T16:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19424",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2829#issuecomment-19383",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

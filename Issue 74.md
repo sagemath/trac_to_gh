@@ -6,14 +6,12 @@ archive/issues_000074.json:
     "body": "Assignee: somebody\n\nWhy: Because SAGE is huge and darcs doesn't scale sufficiently well.  \nMercurial does scale to the task, though is less capable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/74\n\n",
     "created_at": "2006-09-21T01:30:16Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "title": "switch to mercurial source control manager.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/74",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/74
 
 ---
 
-archive/issue_comments_000382.json:
+archive/issue_comments_000380.json:
 ```json
 {
     "body": "This is now finished for the source code.  \nWhat remains:\n\n* write hg_source, etc., python interfaces\n* move doc, extcode, and scripts into mercurial.",
     "created_at": "2006-09-21T09:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/74",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/74#issuecomment-382",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/74#issuecomment-380",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -51,15 +49,15 @@ What remains:
 
 ---
 
-archive/issue_comments_000383.json:
+archive/issue_comments_000381.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2006-09-21T10:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/74",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/74#issuecomment-383",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/74#issuecomment-381",
+    "user": "https://github.com/williamstein"
 }
 ```
 

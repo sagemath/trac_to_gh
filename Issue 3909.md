@@ -6,7 +6,7 @@ archive/issues_003909.json:
     "body": "Assignee: mabshoff\n\nThe jmol package hasn't been updated recently and i've experienced frequent crashes (on windows) so I have updated the package to latest. I have only currently tested it on OSX, so validation on other browsers would be good. \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/jmol-11.6.RC8.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/3909\n\n",
     "created_at": "2008-08-20T06:16:59Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003909.json:
     "title": "Updating jmol package to latest [Needs Review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3909",
-    "user": "jkantor"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 Assignee: mabshoff
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3909
 
 ---
 
-archive/issue_comments_027964.json:
+archive/issue_comments_027906.json:
 ```json
 {
     "body": "Works great for me too, though I'm also on OS X.",
     "created_at": "2008-08-22T07:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27964",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27906",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -49,15 +49,15 @@ Works great for me too, though I'm also on OS X.
 
 ---
 
-archive/issue_comments_027965.json:
+archive/issue_comments_027907.json:
 ```json
 {
     "body": "Works great for me for a variety of plots from the plot3d and parametric_plot3d docstrings.  This is on Ubuntu 8.04 32bit with Firefox 3.\n\nPositive review pending some changes to the spkg:\n\n1. The Changelog in SPKG.txt should be in reverse chronological format, but the latest update is at the bottom.\n\n2. The title at the top of SPKG.txt should be changed to reflect this version.\n\n3. The SPKG.txt~ emacs backup file should be deleted",
     "created_at": "2008-08-27T14:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27965",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27907",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -75,15 +75,15 @@ Positive review pending some changes to the spkg:
 
 ---
 
-archive/issue_comments_027966.json:
+archive/issue_comments_027908.json:
 ```json
 {
     "body": "Does this spkg seem to solve your crash problems on Windows? (Just curious)",
     "created_at": "2008-08-27T14:26:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27966",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27908",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -93,15 +93,15 @@ Does this spkg seem to solve your crash problems on Windows? (Just curious)
 
 ---
 
-archive/issue_comments_027967.json:
+archive/issue_comments_027909.json:
 ```json
 {
     "body": "A cleaned up spkg which fixes all of Jason's issues is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha2/jmol-11.6.rc8.spkg\n\nSo I consider this a positive review now.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-28T23:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27967",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27909",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +119,15 @@ Michael
 
 ---
 
-archive/issue_comments_027968.json:
+archive/issue_comments_027910.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha2",
     "created_at": "2008-08-28T23:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27968",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27910",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +137,15 @@ Merged in Sage 3.1.2.alpha2
 
 ---
 
-archive/issue_comments_027969.json:
+archive/issue_comments_027911.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-28T23:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27969",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3909#issuecomment-27911",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

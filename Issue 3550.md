@@ -6,15 +6,14 @@ archive/issues_003550.json:
     "body": "Assignee: boothby\n\nThis is an alternative to #3456.  It takes the view that the notebook is more like a web page -- lots of pages as text files -- than a database.    \n\nThis is a simple solution that is completely implemented in this patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3550\n\n",
     "created_at": "2008-07-04T09:01:50Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- make saving and loading state of the notebook vastly faster and scale better",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3550",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3550
 
 ---
 
-archive/issue_comments_025105.json:
+archive/issue_comments_025055.json:
 ```json
 {
     "body": "Attachment [sage-3550-part1.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part1.patch) by @williamstein created at 2008-07-04 09:02:44\n\nfirst patch -- does everything but needs more testing and documentation",
     "created_at": "2008-07-04T09:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25105",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25055",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -51,15 +50,15 @@ first patch -- does everything but needs more testing and documentation
 
 ---
 
-archive/issue_comments_025106.json:
+archive/issue_comments_025056.json:
 ```json
 {
     "body": "\n```\nBEFORE: \n  TIME: Several *minutes* to store.\n  SPACE: 310MB.\n\nAFTER THIS PATCH, which automigrates the sage notebook:\n  TIME: 6.7 seconds to save (on sage.math)\n  SPACE: 8.8MB.\n```\n\n\nSo basically everything is about 30 times faster / smaller. \n\nThe main problem is that I might have introduced bugs, and of course 7 seconds\nis a lot longer than nothing.  But this seems like a worthwhile payback for\n3 hours of work.\n\nNOTE: There are no doctests yet, since those are very strange to write for the notebook.",
     "created_at": "2008-07-04T11:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25106",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25056",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -87,15 +86,15 @@ NOTE: There are no doctests yet, since those are very strange to write for the n
 
 ---
 
-archive/issue_comments_025107.json:
+archive/issue_comments_025057.json:
 ```json
 {
     "body": "this should do it (modulo doctests)",
     "created_at": "2008-07-04T11:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25107",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25057",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +104,15 @@ this should do it (modulo doctests)
 
 ---
 
-archive/issue_comments_025108.json:
+archive/issue_comments_025058.json:
 ```json
 {
     "body": "Attachment [sage-3550-part2.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part2.patch) by @williamstein created at 2008-07-04 11:25:54",
     "created_at": "2008-07-04T11:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25108",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25058",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -123,15 +122,15 @@ Attachment [sage-3550-part2.patch](tarball://root/attachments/some-uuid/ticket35
 
 ---
 
-archive/issue_comments_025109.json:
+archive/issue_comments_025059.json:
 ```json
 {
     "body": "add doctests and made sure all existing tests pass",
     "created_at": "2008-07-05T17:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25109",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25059",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -141,15 +140,15 @@ add doctests and made sure all existing tests pass
 
 ---
 
-archive/issue_comments_025110.json:
+archive/issue_comments_025060.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_wstein\".",
     "created_at": "2008-07-05T17:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25110",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25060",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -159,15 +158,15 @@ Changing keywords from "" to "editor_wstein".
 
 ---
 
-archive/issue_comments_025111.json:
+archive/issue_comments_025061.json:
 ```json
 {
     "body": "Attachment [sage-3550-part3.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part3.patch) by @williamstein created at 2008-07-05 17:58:13\n\nThis is now fully ready for review.",
     "created_at": "2008-07-05T17:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25111",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25061",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -179,15 +178,15 @@ This is now fully ready for review.
 
 ---
 
-archive/issue_comments_025112.json:
+archive/issue_comments_025062.json:
 ```json
 {
     "body": "This code has gone live on sagenb.org, so it seems to work. William has also merged a bundle into my Sage 3.0.4.alpha2 tree since there was a conflict with one of Timothy's patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-06T00:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25112",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25062",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -201,15 +200,15 @@ Michael
 
 ---
 
-archive/issue_comments_025113.json:
+archive/issue_comments_025063.json:
 ```json
 {
     "body": "Attachment [sage-3550-part4.patch](tarball://root/attachments/some-uuid/ticket3550/sage-3550-part4.patch) by mabshoff created at 2008-07-06 17:54:59\n\nMerged sage-3550-part1.patch to sage-3550-part4.patch in Sage 3.0.4.alpha2\n\nCheers,\n\nMichael",
     "created_at": "2008-07-06T17:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25113",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25063",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -225,15 +224,15 @@ Michael
 
 ---
 
-archive/issue_comments_025114.json:
+archive/issue_comments_025064.json:
 ```json
 {
     "body": "excellent!",
     "created_at": "2008-07-06T20:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25114",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25064",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -243,15 +242,15 @@ excellent!
 
 ---
 
-archive/issue_comments_025115.json:
+archive/issue_comments_025065.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-06T20:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25115",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25065",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -261,15 +260,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025116.json:
+archive/issue_comments_025066.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha2",
     "created_at": "2008-07-06T20:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3550",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25116",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3550#issuecomment-25066",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

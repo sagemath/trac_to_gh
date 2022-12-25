@@ -6,7 +6,7 @@ archive/issues_009955.json:
     "body": "Assignee: @burcin\n\nNotice that in the latex expression the negative coefficient applies only to the 4*m^2 term in the numerator thus giving a completely different value.\n\n\n```\nsage: var('t k m')\nsage: latex(-1/2*(4*m^2 - 9*m - t + 8)/m)\n\\frac{-4 \\, m^{2} - 9 \\, m - t + 8}{2 \\, m}\n```\n\n\nNote: This was reported via the \"report a problem\" form for 4.5.2 for the \"typset\" option in the notebook, and I confirmed this on 4.5.3 for this simpler example.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9956\n\n",
     "created_at": "2010-09-20T18:26:19Z",
     "labels": [
-        "symbolics",
+        "component: symbolics",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009955.json:
     "title": "latex(-1/2 * polynom) broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9955",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: @burcin
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9956
 
 ---
 
-archive/issue_comments_099306.json:
+archive/issue_comments_099141.json:
 ```json
 {
     "body": "After installing the pynac package at #9901, this works for me:\n\n\n```\nsage: var('t k m')\n(t, k, m)\nsage: latex(-1/2*(4*m^2 - 9*m - t + 8)/m)\n-\\frac{4 \\, m^{2} - 9 \\, m - t + 8}{2 \\, m}\n```\n\n\nAlthough the problem was never reported in this form, which is much more severe, #9834 and #9394 already cover this. I'm closing this as a duplicate.\n\nFeel free to mark one/all of the tickets mentioned above as blockers.",
     "created_at": "2010-09-21T06:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9955#issuecomment-99306",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9955#issuecomment-99141",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -70,15 +70,15 @@ Feel free to mark one/all of the tickets mentioned above as blockers.
 
 ---
 
-archive/issue_comments_099307.json:
+archive/issue_comments_099142.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-09-21T06:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9955#issuecomment-99307",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9955#issuecomment-99142",
+    "user": "https://github.com/burcin"
 }
 ```
 

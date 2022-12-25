@@ -6,15 +6,14 @@ archive/issues_006739.json:
     "body": "Assignee: @williamstein\n\nIn numpy one has:\n\n```\nbash-3.2$ python\nPython 2.6.2 (r262:71600, Aug 11 2009, 10:59:28) \n[GCC 4.3.2 20080827 (beta) 2] on cygwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import numpy\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"numpy/__init__.py\", line 121, in <module>\n    raise ImportError(msg)\nImportError: Error importing numpy: you should not try to import numpy from\n        its source directory; please exit the numpy source tree, and relaunch\n        your python intepreter from there.\n>>> \n```\n\n\nWe should have the same with sage.  Instead we get a confusing error:\n\n```\n\nGOOD:\n\nflat:sage wstein$ cd\nflat:~ wstein$ sage -python\nPython 2.6.2 (r262:71600, Jul  8 2009, 17:42:25) \n[GCC 4.0.1 (Apple Inc. build 5465)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\n>>> \n\nBAD:\n\nflat:sage wstein$ sage -python\nPython 2.6.2 (r262:71600, Jul  8 2009, 17:42:25) \n[GCC 4.0.1 (Apple Inc. build 5465)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import sage.all\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/sage/all.py\", line 64, in <module>\n    from sage.misc.all       import *         # takes a while\n  File \"/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/sage/misc/all.py\", line 16, in <module>\n    from sage_timeit_class import timeit\n  File \"sage_timeit_class.pyx\", line 3, in sage.misc.sage_timeit_class (sage/misc/sage_timeit_class.c:764)\n  File \"/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/sage/misc/sage_timeit.py\", line 12, in <module>\n    import timeit as timeit_, time, math, preparser, interpreter\n  File \"/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/sage/misc/interpreter.py\", line 95, in <module>\n    import IPython.ipapi\n  File \"/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/IPython/__init__.py\", line 58, in <module>\n    __import__(name,glob,loc,[])\n  File \"/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/IPython/Shell.py\", line 45, in <module>\n    from IPython.iplib import InteractiveShell\n  File \"/Users/wstein/sage/build/64bit/sage/local/lib/python2.6/site-packages/IPython/iplib.py\", line 59, in <module>\n    from sets import Set\nImportError: cannot import name Set\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6739\n\n",
     "created_at": "2009-08-12T14:02:49Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "warning when importing sage within the sage build directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6739",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein

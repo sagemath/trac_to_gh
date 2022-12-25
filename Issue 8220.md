@@ -6,15 +6,13 @@ archive/issues_008220.json:
     "body": "Assignee: @aghitza\n\nFor the Givaro and the NTL implementations, one can use modulus='random' but not for the Pari implementation.\nMoreover, according to the documentation in finite_field.py, modulus must be a polynomial, but in fact it can also be a string.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8220\n\n",
     "created_at": "2010-02-09T15:30:48Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Improve consistency and docs for finite fields creation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8220",
-    "user": "ylchapuy"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 Assignee: @aghitza
@@ -30,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8220
 
 ---
 
-archive/issue_comments_072544.json:
+archive/issue_comments_072422.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-09T15:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72544",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72422",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -48,15 +46,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072545.json:
+archive/issue_comments_072423.json:
 ```json
 {
     "body": "The provided patch:\n\n* cleans the code and the documentation for finite field creation;\n* make modulus = 'conway' and modulus = 'random' available for all implementations;\n* make modulus = 'minimal_weight' is available for all binary fields;\n* adds modulus = 'first_lexicographic' for all binary fields.\n\nYann",
     "created_at": "2010-02-09T15:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72545",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72423",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -73,15 +71,15 @@ Yann
 
 ---
 
-archive/issue_comments_072546.json:
+archive/issue_comments_072424.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-02-09T15:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72546",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72424",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -91,15 +89,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_072547.json:
+archive/issue_comments_072425.json:
 ```json
 {
     "body": "needs #8212",
     "created_at": "2010-02-09T16:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72547",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72425",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -109,15 +107,15 @@ needs #8212
 
 ---
 
-archive/issue_comments_072548.json:
+archive/issue_comments_072426.json:
 ```json
 {
     "body": "Attachment [trac_8220-finite_field_creation.patch](tarball://root/attachments/some-uuid/ticket8220/trac_8220-finite_field_creation.patch) by ylchapuy created at 2010-02-09 16:23:39",
     "created_at": "2010-02-09T16:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72548",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72426",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -127,15 +125,15 @@ Attachment [trac_8220-finite_field_creation.patch](tarball://root/attachments/so
 
 ---
 
-archive/issue_comments_072549.json:
+archive/issue_comments_072427.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-09T16:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72549",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72427",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -145,15 +143,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_072550.json:
+archive/issue_comments_072428.json:
 ```json
 {
     "body": "There's one doctest that needs modifying after this patch is applied:\n\n```\nsage -t  \"devel/sage/sage/structure/factory.pyx\"            \n**********************************************************************\nFile \"/Users/mafwc/sage-4.3.2/devel/sage/sage/structure/factory.pyx\", line 234:\n    sage: key, _ = GF.create_key_and_extra_args(27, 'k'); key\nExpected:\n    (27, ('k',), None, None, '{}')\nGot:\n    (27, ('k',), 'conway', None, '{}')\n**********************************************************************\n```\n\nOtherwise it seems fine.",
     "created_at": "2010-02-11T08:08:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72550",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72428",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -177,15 +175,15 @@ Otherwise it seems fine.
 
 ---
 
-archive/issue_comments_072551.json:
+archive/issue_comments_072429.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-02-11T08:08:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72551",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72429",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -195,15 +193,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_072552.json:
+archive/issue_comments_072430.json:
 ```json
 {
     "body": "Attachment [trac_8220-review.patch](tarball://root/attachments/some-uuid/ticket8220/trac_8220-review.patch) by ylchapuy created at 2010-02-11 08:40:15",
     "created_at": "2010-02-11T08:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72552",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72430",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -213,15 +211,15 @@ Attachment [trac_8220-review.patch](tarball://root/attachments/some-uuid/ticket8
 
 ---
 
-archive/issue_comments_072553.json:
+archive/issue_comments_072431.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-11T08:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72553",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72431",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -231,15 +229,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_072554.json:
+archive/issue_comments_072432.json:
 ```json
 {
     "body": "Replying to [comment:4 fwclarke]:\n> There's one doctest that needs modifying after this patch is applied\n\nOups, sorry, I don't knw how I missed that one...\nI made a tiny patch to correct this.",
     "created_at": "2010-02-11T08:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72554",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72432",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -253,15 +251,15 @@ I made a tiny patch to correct this.
 
 ---
 
-archive/issue_comments_072555.json:
+archive/issue_comments_072433.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-11T20:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72555",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72433",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -271,15 +269,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_072556.json:
+archive/issue_comments_072434.json:
 ```json
 {
     "body": "It's okay now.",
     "created_at": "2010-02-11T20:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72556",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72434",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -289,15 +287,15 @@ It's okay now.
 
 ---
 
-archive/issue_comments_072557.json:
+archive/issue_comments_072435.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-14T14:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72557",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72435",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -307,15 +305,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_072558.json:
+archive/issue_comments_072436.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. [trac_8220-finite_field_creation.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8220/trac_8220-finite_field_creation.patch) --- I put in the ticket number for this patch.\n2. [trac_8220-review.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8220/trac_8220-review.patch) --- I put in a sensible commit message with the ticket number for this patch.",
     "created_at": "2010-02-14T14:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8220",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72558",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8220#issuecomment-72436",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

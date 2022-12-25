@@ -6,15 +6,13 @@ archive/issues_000840.json:
     "body": "Assignee: @williamstein\n\nI'm submitting my real root isolation algorithm for SAGE (this was the subject of my talk at SD4).\n\nIssue created by migration from https://trac.sagemath.org/ticket/840\n\n",
     "created_at": "2007-10-07T19:43:26Z",
     "labels": [
-        "numerical",
-        "major",
-        "enhancement"
+        "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] new real root isolation algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/840",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/840
 
 ---
 
-archive/issue_comments_005202.json:
+archive/issue_comments_005186.json:
 ```json
 {
     "body": "Attachment [real_roots.hg](tarball://root/attachments/some-uuid/ticket840/real_roots.hg) by cwitty created at 2007-10-07 19:44:03\n\nreal root isolation algorithm",
     "created_at": "2007-10-07T19:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5202",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5186",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -49,15 +47,15 @@ real root isolation algorithm
 
 ---
 
-archive/issue_comments_005203.json:
+archive/issue_comments_005187.json:
 ```json
 {
     "body": "Attachment [real_roots_v2.hg](tarball://root/attachments/some-uuid/ticket840/real_roots_v2.hg) by cwitty created at 2007-10-10 06:52:08",
     "created_at": "2007-10-10T06:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5203",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5187",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -67,15 +65,15 @@ Attachment [real_roots_v2.hg](tarball://root/attachments/some-uuid/ticket840/rea
 
 ---
 
-archive/issue_comments_005204.json:
+archive/issue_comments_005188.json:
 ```json
 {
     "body": "I've added real_roots_v2.hg, with some improvements suggested by Robert Bradshaw (method renamings, better docstrings, and a new max_diameter parameter that requires more precision in the answer).",
     "created_at": "2007-10-10T06:55:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5204",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -85,15 +83,15 @@ I've added real_roots_v2.hg, with some improvements suggested by Robert Bradshaw
 
 ---
 
-archive/issue_comments_005205.json:
+archive/issue_comments_005189.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-13T05:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5205",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/840#issuecomment-5189",
+    "user": "https://github.com/williamstein"
 }
 ```
 

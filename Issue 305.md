@@ -6,14 +6,13 @@ archive/issues_000305.json:
     "body": "Assignee: somebody\n\n\n```\nsage: K = pAdicField(5)\nsage: x = K(0)\nsage: y = loads(dumps(x))\nsage: x.parent().print_prec()\n Infinity\nsage: y.parent().print_prec()\n <class 'sage.rings.padic_field.pAdicField_generic'>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/305\n\n",
     "created_at": "2007-03-03T14:57:19Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "weird pickling bug in padics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/305",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/305
 
 ---
 
-archive/issue_comments_001453.json:
+archive/issue_comments_001449.json:
 ```json
 {
     "body": "Two more examples of weirdness:\n\n```\nsage: K = pAdicField(5)\nsage: x = K(0)\nsage: x.prec()\n Infinity\nsage: y = loads(dumps(x))\nsage: y.prec()\n <class 'sage.rings.padic_field.pAdicField_generic'>\n```\n\n\nand\n\n\n```\nsage: K = pAdicField(5)\nsage: x = K(42)\nsage: x.prec()\n Infinity\nsage: y = loads(dumps(x))\nsage: y.prec()\n '_pAdicField_generic__p'\n```\n",
     "created_at": "2007-03-03T15:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/305",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/305#issuecomment-1453",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/305#issuecomment-1449",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -82,15 +81,15 @@ sage: y.prec()
 
 ---
 
-archive/issue_comments_001454.json:
+archive/issue_comments_001450.json:
 ```json
 {
     "body": "This is fixed by David Roe's new p-adics in SAGE-2.3.",
     "created_at": "2007-03-06T22:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/305",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/305#issuecomment-1454",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/305#issuecomment-1450",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -100,15 +99,15 @@ This is fixed by David Roe's new p-adics in SAGE-2.3.
 
 ---
 
-archive/issue_comments_001455.json:
+archive/issue_comments_001451.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-03-06T22:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/305",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/305#issuecomment-1455",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/305#issuecomment-1451",
+    "user": "https://github.com/williamstein"
 }
 ```
 

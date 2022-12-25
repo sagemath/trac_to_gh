@@ -6,7 +6,7 @@ archive/issues_000885.json:
     "body": "Assignee: failure\n\nOn sage.math:\n\n```\nFile \"morphism.pyx\", line 312:\n    sage: c == loads(dumps(c))\nExpected:\n    True\nGot:\n    False\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/885\n\n",
     "created_at": "2007-10-13T20:23:36Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000885.json:
     "title": "2.8.7-alpha0: doctest failure in rings/morphism.pyx (loads/dumps)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/885",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: failure
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/885
 
 ---
 
-archive/issue_comments_005470.json:
+archive/issue_comments_005453.json:
 ```json
 {
     "body": "Attachment [6931.patch](tarball://root/attachments/some-uuid/ticket885/6931.patch) by cwitty created at 2007-10-13 22:35:26\n\nChanged class RingHomomorphism_im_gens to use _cmp_c_impl (this is necessary to make Python subclasses compare correctly).",
     "created_at": "2007-10-13T22:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/885#issuecomment-5470",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/885#issuecomment-5453",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -59,15 +59,15 @@ Changed class RingHomomorphism_im_gens to use _cmp_c_impl (this is necessary to 
 
 ---
 
-archive/issue_comments_005471.json:
+archive/issue_comments_005454.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-14T22:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/885#issuecomment-5471",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/885#issuecomment-5454",
+    "user": "https://github.com/williamstein"
 }
 ```
 

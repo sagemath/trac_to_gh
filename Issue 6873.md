@@ -6,7 +6,7 @@ archive/issues_006873.json:
     "body": "Assignee: @malb\n\nObserve:\n\n```\nsage: R.<x,y> = QQ[]\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n3*y\nsage: var('x,y')\nsage: f = x + 2*y\nsage: f.subs(x=y,y=x)\n2*x + y\n```\n\n\nThis is really really bad.   Notice in the first and second substitution that the semantics are completely wrong/inconsistent.  The semantics should be as in the second one in both cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6873\n\n",
     "created_at": "2009-09-03T06:12:27Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006873.json:
     "title": "*huge* bug in multivariate polynomial substitution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6873",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @malb
@@ -43,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6873
 
 ---
 
-archive/issue_comments_056747.json:
+archive/issue_comments_056641.json:
 ```json
 {
     "body": "This is a dupe of #6482.\n\nI think the fix is to not check whether `b` in `a=b` is a monomial but whether it is constant. If it isn't a constant we should just fall back to `fast_map`.",
     "created_at": "2009-09-03T11:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6873",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6873#issuecomment-56747",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6873#issuecomment-56641",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -63,15 +63,15 @@ I think the fix is to not check whether `b` in `a=b` is a monomial but whether i
 
 ---
 
-archive/issue_comments_056748.json:
+archive/issue_comments_056642.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-09-09T20:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6873",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6873#issuecomment-56748",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6873#issuecomment-56642",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -81,15 +81,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_056749.json:
+archive/issue_comments_056643.json:
 ```json
 {
     "body": "Dupe of #6482",
     "created_at": "2009-09-09T20:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6873",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6873#issuecomment-56749",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6873#issuecomment-56643",
+    "user": "https://github.com/malb"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_005996.json:
     "body": "Assignee: @burcin\n\nCC:  @certik @jdchristensen\n\nPython file for calculating Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients (integrals over 3 spherical\nharmonics) exactly. \n\nHas already received some positive review at \nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ca312a02de54553e\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5996\n\n",
     "created_at": "2009-05-06T13:27:07Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5996",
-    "user": "jrasch"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 Assignee: @burcin
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5996
 
 ---
 
-archive/issue_comments_047692.json:
+archive/issue_comments_047601.json:
 ```json
 {
     "body": "Someone needs to turn this into a proper patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-06T21:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47692",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47601",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -58,15 +56,15 @@ Michael
 
 ---
 
-archive/issue_comments_047693.json:
+archive/issue_comments_047602.json:
 ```json
 {
     "body": "Attachment [wigner.py](tarball://root/attachments/some-uuid/ticket5996/wigner.py) by jrasch created at 2009-05-31 19:15:33\n\nThe wigner.py file has just been updated so that it passes all tests in sage-4.0 since the new symbolic manipulations return slightly different resutls.\n\nCould someone turn this into a patch and review this please?",
     "created_at": "2009-05-31T19:15:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47693",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47602",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -80,15 +78,15 @@ Could someone turn this into a patch and review this please?
 
 ---
 
-archive/issue_comments_047694.json:
+archive/issue_comments_047603.json:
 ```json
 {
     "body": "I am attaching a patch (against 4.0).  I had to make some trivial changes to the original code to get this to play nicely within Sage.  A couple of issues remain: (a) doctest coverage is not at 100% since two helper functions are not doctested, (b) the docs need to be rest-ified, and (c) the docs should be added to the reference manual.\n\nSo I'm leaving this as \"needs work\".",
     "created_at": "2009-06-01T10:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47694",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47603",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -100,15 +98,15 @@ So I'm leaving this as "needs work".
 
 ---
 
-archive/issue_comments_047695.json:
+archive/issue_comments_047604.json:
 ```json
 {
     "body": "Attachment [trac_5996.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996.patch) by @aghitza created at 2009-06-01 10:58:14",
     "created_at": "2009-06-01T10:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47695",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47604",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -118,15 +116,15 @@ Attachment [trac_5996.patch](tarball://root/attachments/some-uuid/ticket5996/tra
 
 ---
 
-archive/issue_comments_047696.json:
+archive/issue_comments_047605.json:
 ```json
 {
     "body": "Thanks for converting this into a patch.\n\nConcerning (a): doctest coverage is infact 100%. The functions test_calc_factlist() and test_bigDeltacoeff() are the doctest functions for _calc_factlist() and _bigDeltacoeff(), respectively. Unfortunately, putting the doctests into the original functions causes a exception.\nIf this can be fixed (maybe removing the underscores, but they are supposed to be private), then the doctests can be merged and the test functions deleted.\n\nConcerning (b), (c), I would be happy to help, but I do not know sage well enough. Any help appreciated.",
     "created_at": "2009-06-01T22:31:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47696",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47605",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -141,15 +139,15 @@ Concerning (b), (c), I would be happy to help, but I do not know sage well enoug
 
 ---
 
-archive/issue_comments_047697.json:
+archive/issue_comments_047606.json:
 ```json
 {
     "body": "Attachment [12428.patch](tarball://root/attachments/some-uuid/ticket5996/12428.patch) by jrasch created at 2009-06-14 11:17:42",
     "created_at": "2009-06-14T11:17:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47697",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47606",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -159,15 +157,15 @@ Attachment [12428.patch](tarball://root/attachments/some-uuid/ticket5996/12428.p
 
 ---
 
-archive/issue_comments_047698.json:
+archive/issue_comments_047607.json:
 ```json
 {
     "body": "All functions now have doc tests, redundant functions\ntest_calc_factlist() and test_bigDeltacoeff() have been removed.",
     "created_at": "2009-06-14T11:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47698",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47607",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -178,15 +176,15 @@ test_calc_factlist() and test_bigDeltacoeff() have been removed.
 
 ---
 
-archive/issue_comments_047699.json:
+archive/issue_comments_047608.json:
 ```json
 {
     "body": "I want to merge this but the docstrings are not ReST-ified.  Can we get a docstring update and a positive review, Alex?",
     "created_at": "2009-06-14T22:32:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47699",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47608",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -196,15 +194,15 @@ I want to merge this but the docstrings are not ReST-ified.  Can we get a docstr
 
 ---
 
-archive/issue_comments_047700.json:
+archive/issue_comments_047609.json:
 ```json
 {
     "body": "Added path to remove all Latex formulas and replace them with text formulas in accordance with the ReST system.",
     "created_at": "2009-06-20T15:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47700",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47609",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -214,15 +212,15 @@ Added path to remove all Latex formulas and replace them with text formulas in a
 
 ---
 
-archive/issue_comments_047701.json:
+archive/issue_comments_047610.json:
 ```json
 {
     "body": "Attachment [12429.patch](tarball://root/attachments/some-uuid/ticket5996/12429.patch) by @aghitza created at 2009-07-11 08:56:32\n\nOK, I finally managed to get around to looking at this.  There were still some ReST issues, which I fixed in the latest patch `trac_5996_doc.patch`.  I also added the documentation to the reference manual.\n\nIf someone can double-check my patch, we're good to go.\n\nThe patches need to be applied in the order they appear on the ticket.",
     "created_at": "2009-07-11T08:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47701",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47610",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -238,15 +236,15 @@ The patches need to be applied in the order they appear on the ticket.
 
 ---
 
-archive/issue_comments_047702.json:
+archive/issue_comments_047611.json:
 ```json
 {
     "body": "I'm reviewing the coding style and docstring formatting. Here are some problems I notice with the coding style:\n1. It doesn't follow many of the coding conventions in the [Developers' Guide](http://www.sagemath.org/doc/developer/conventions.html). In particular, don't use camel case for function name. The following functions are currently in camel case: `Wigner3j`, `ClebschGordan`, `_bigDeltacoeff`, `Racah`, `Wigner6j`, `Wigner9j`, `Gaunt`.\n2. The Python code is mostly squashed together and makes little use of white space. For example, instead of writing a function signature like this:\n\n```\ndef _bigDeltacoeff(aa,bb,cc,prec=None):\n```\n\n it should be written as follows:\n\n```\ndef _big_delta_coeff(aa, bb, cc, prec=None):\n```\n\n which makes use of white space so it doesn't look like code is squashed together. Another example, don't do this\n\n```\nif(int(aa+bb-cc)!=(aa+bb-cc)):\n```\n\n Instead, write it like this:\n\n```\nif int(aa + bb - cc) != (aa + bb - cc):\n```\n\n This means that the whole module needs to be reformatted to make use of white space.\n1. The docstring of some functions don't follow the guidelines [here](http://www.sagemath.org/doc/developer/conventions.html#docstring-content). In particular, the docstring should be organized with the following two items first:\n   1. A one-sentence description of the function, followed by a blank line.\n   2. An INPUT and an OUTPUT block for input and output arguments (see below for format). The type names should be descriptive, but do not have to represent the exact Sage/Python types. For example, use \u201cinteger\u201d for anything that behaves like an integer; you do not have to put a precise type name such as int.\n\nIf no one beats me to it, I'll upload a patch to address the issues I raised above.",
     "created_at": "2009-07-11T13:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47702",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47611",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -287,15 +285,15 @@ If no one beats me to it, I'll upload a patch to address the issues I raised abo
 
 ---
 
-archive/issue_comments_047703.json:
+archive/issue_comments_047612.json:
 ```json
 {
     "body": "Could I just suggest that we merge this into Sage as is, since IMHO it is a piece of functionality that should be of interest to a number of computational physicist and chemists.\n\nJust to be clear: I have no problem with anyone improving the code. I personally would like to unmerge my ticket that hacked out the latex formatting as soon as the notebook functionality can deal better with latex formatted doc strings. It might also be of interest to reimplement the algorithms in Cython (although I am unsure about the speed up one would get). However, all this could be done in later tickets.",
     "created_at": "2009-07-12T14:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47703",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47612",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -307,15 +305,15 @@ Just to be clear: I have no problem with anyone improving the code. I personally
 
 ---
 
-archive/issue_comments_047704.json:
+archive/issue_comments_047613.json:
 ```json
 {
     "body": "Replying to [comment:11 jrasch]:\n> Could I just suggest that we merge this into Sage as is, since IMHO it is a piece of functionality that should be of interest to a number of computational physicist and chemists.\n\n\nYes, it would be good to have this merged in Sage 4.1.1. But as they now stand, the patches do not conform to a number of coding conventions in addition to conventions regarding docstring formatting.",
     "created_at": "2009-07-12T14:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47704",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47613",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -329,15 +327,15 @@ Yes, it would be good to have this merged in Sage 4.1.1. But as they now stand, 
 
 ---
 
-archive/issue_comments_047705.json:
+archive/issue_comments_047614.json:
 ```json
 {
     "body": "Jens, thank you for your contribution, but we cannot import the functions with their current camel case names to the top level Sage namespace. Once we do that, for backward compatibility we'd have to provide the functions with those names and deprecation notices for at least 6 months. The effort to fix the names now is much less than the effort that will go into maintaining this afterwards. Thus I agree with Minh, this ticket still needs work.\n\nI didn't check all the issues raised by Minh, since there are quite a few patches, but I hope someone will put in the work to improve the patches so they can be included in 4.1.1. Since Minh volunteered in comment:10, I don't think this will be a problem.",
     "created_at": "2009-07-12T15:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47705",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47614",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -349,15 +347,15 @@ I didn't check all the issues raised by Minh, since there are quite a few patche
 
 ---
 
-archive/issue_comments_047706.json:
+archive/issue_comments_047615.json:
 ```json
 {
     "body": "Attachment [trac_5996_doc.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996_doc.patch) by @aghitza created at 2009-07-13 12:32:44\n\nOK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.\n\nIn reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.",
     "created_at": "2009-07-13T12:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47706",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47615",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -371,15 +369,15 @@ In reply to Jens' comment about latex: I have fixed things so that the docstring
 
 ---
 
-archive/issue_comments_047707.json:
+archive/issue_comments_047616.json:
 ```json
 {
     "body": "Replying to [comment:14 AlexGhitza]:\n> OK, I think I fixed all the issues that Minh pointed out, and replaced my latest patch.\nI appreciate that you've taken the time to make the code and docstring conform to the coding styles. It's a tedious task that causes short-term pain. But the long-term benefit is that at least the Sage library is standardized on a coding convention. Your new patch should make the reviewing process easier for me.\n\n\n\n> In reply to Jens' comment about latex: I have fixed things so that the docstrings do have the nice latex expressions in them, which means that the pdf and html versions of the reference manual will have nicely typeset formulae.\nNote that with Sage 4.1, the HTML version of the reference manual is a bit broken. The HTML version of the reference does build successfully. However, if the docstring for a function or class uses the \".. MATH::\" tag, then it won't render in the generated HTML version. That is, when you use a web browser to view the corresponding HTML page that documents the function, anything typeset within the \".. MATH::\" tag won't show up. You can get a quick glimpse of the rendered math expression, but you have to refresh the page every second. And the math expression would only be displayed for a fraction of a second. This issue was reported at this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/cb1687577bf5843e/b453af3a0750ba23) thread and the corresponding ticket is #6512.",
     "created_at": "2009-07-13T12:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47707",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47616",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -396,15 +394,15 @@ Note that with Sage 4.1, the HTML version of the reference manual is a bit broke
 
 ---
 
-archive/issue_comments_047708.json:
+archive/issue_comments_047617.json:
 ```json
 {
     "body": "Attachment [trac_5996-reviewer.patch](tarball://root/attachments/some-uuid/ticket5996/trac_5996-reviewer.patch) by mvngu created at 2009-07-15 20:25:45\n\nreviewer patch",
     "created_at": "2009-07-15T20:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47708",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47617",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -416,15 +414,15 @@ reviewer patch
 
 ---
 
-archive/issue_comments_047709.json:
+archive/issue_comments_047618.json:
 ```json
 {
     "body": "I've made some minor reformatting of the docstrings and fixed references so that there is only one reference defined for a paper cited in the module. That way, we don't get a lot of warnings about duplicate citations when building the reference manual. That is, only define one reference. Afterwards, if you need to cite that reference, use the convention for citing it and don't define the same reference locally for a function. Some functions use `<>` when it should be `!=`. At least in Python 2.6.x, using `<>` is OK and is kept in that version for backward compatibility. We should now only use `!=`. These issues, and some minor ones, are addressed in the reviewer patch `trac_5996-reviewer.patch`. Positive review to the ticket as a whole. Patches should be merged in this order:\n\n1. `trac_5996.patch`\n2. `12428.patch`\n3. `12429.patch`\n4. `trac_5996_doc.patch`\n5. `trac_5996-reviewer.patch`",
     "created_at": "2009-07-15T20:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47709",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47618",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -440,15 +438,15 @@ I've made some minor reformatting of the docstrings and fixed references so that
 
 ---
 
-archive/issue_comments_047710.json:
+archive/issue_comments_047619.json:
 ```json
 {
     "body": "Just to let people know, this has been merged in sage-4.1.1-alpha0. I can't close this ticket because I don't have the privilege to do so. Sorry, folks :-(",
     "created_at": "2009-07-16T15:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47710",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47619",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -458,15 +456,15 @@ Just to let people know, this has been merged in sage-4.1.1-alpha0. I can't clos
 
 ---
 
-archive/issue_comments_047711.json:
+archive/issue_comments_047620.json:
 ```json
 {
     "body": "Changing assignee from @burcin to jrasch.",
     "created_at": "2009-07-16T21:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47711",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47620",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -476,15 +474,15 @@ Changing assignee from @burcin to jrasch.
 
 ---
 
-archive/issue_comments_047712.json:
+archive/issue_comments_047621.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-07-16T21:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47712",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47621",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -494,15 +492,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_047713.json:
+archive/issue_comments_047622.json:
 ```json
 {
     "body": "Just wanted to say thanks for your help and work.",
     "created_at": "2009-07-16T21:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47713",
-    "user": "jrasch"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47622",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jrasch"
 }
 ```
 
@@ -512,15 +510,15 @@ Just wanted to say thanks for your help and work.
 
 ---
 
-archive/issue_comments_047714.json:
+archive/issue_comments_047623.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-16T21:20:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47714",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47623",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -530,15 +528,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_047715.json:
+archive/issue_comments_047624.json:
 ```json
 {
     "body": "Just as a followup, note that \n\n```\nsage: gaunt(1,1,1,0,1,-1)\n0\nsage: gaunt(int(1),int(1),int(1),int(0),int(1),int(-1))\n1/2*sqrt(3)/sqrt(pi)\n```\n\nThis was noted at [this ask.sagemath question](http://ask.sagemath.org/question/2683/different-answers-with-gaunt).  I've opened #14735 for this.",
     "created_at": "2013-06-12T15:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5996",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47715",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5996#issuecomment-47624",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

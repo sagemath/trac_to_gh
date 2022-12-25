@@ -6,7 +6,7 @@ archive/issues_003585.json:
     "body": "Assignee: tbd\n\nOn Debian 32-bit Vmware intel\n\n```\nsage -t  devel/sage/sage/finance/time_series.pyx            **********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 571:\n    sage: v.autoregressive_forecast(F)\nExpected:\n    11.782029861181114\nGot:\n    11.782029861181117\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1278:\n    sage: v.autocovariance(0)\nExpected:\n    24.954106897195892\nGot:\n    24.954106897196283\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1280:\n    sage: v.autocovariance(1)\nExpected:\n    -0.0050839047886276651\nGot:\n    -0.0050839047886275012\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1282:\n    sage: v.autocovariance(2)\nExpected:\n    0.022056325329509487\nGot:\n    0.022056325329509536\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1284:\n    sage: v.autocovariance(3)\nExpected:\n    -0.019020003743134766\nGot:\n    -0.019020003743134842\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1308:\n    sage: v.correlation(w)\nExpected:\n    -0.55804160922502144\nGot:\n    -0.55804160922502155\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1310:\n    sage: v.covariance(w)/(v.standard_deviation() * w.standard_deviation())\nExpected:\n    -0.55804160922502144\nGot:\n    -0.55804160922502155\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1419:\n    sage: set_random_seed(0); finance.TimeSeries(10^6).randomize('normal').sums().range_statistic()\nExpected:\n    1873.9206979719115\nGot:\n    1873.9206979719406\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1421:\n    sage: set_random_seed(0); finance.TimeSeries(10^6).randomize('normal',0,100).sums().range_statistic()\nExpected:\n    1873.920697971955\nGot:\n    1873.9206979719447\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1445:\n    sage: bm.hurst_exponent()\nExpected:\n    0.5174890556918027\nGot:\n    0.51748905569180337\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1453:\n    sage: fbm.hurst_exponent()\nExpected:\n    0.667870279214...\nGot:\n    0.66787027921789599\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1848:\n    sage: v.randomize('uniform').mean()\nExpected:\n    0.50069085504319877\nGot:\n    0.50069085504316591\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1881:\n    sage: v.randomize('normal').mean()\nExpected:\n    6.2705472723385207e-05\nGot:\n    6.2705472723392213e-05\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1888:\n    sage: v.randomize('normal', 2, 5).mean()\nExpected:\n    2.0003135273636117\nGot:\n    2.000313527363617\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1930:\n    sage: v.randomize('semicircle').mean()\nExpected:\n    0.00072074971804614557\nGot:\n    0.00072074971804620411\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1936:\n    sage: v.randomize('semicircle', 2).mean()\nExpected:\n    2.0007207497179227\nGot:\n    2.0007207497180461\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/time_series.py\", line 1974:\n    sage: v.randomize('lognormal').mean()\nExpected:\n    1.6473519736548801\nGot:\n    1.6473519736548257\n**********************************************************************\n9 items had failures:\n   1 of   6 in __main__.example_16\n   4 of  14 in __main__.example_40\n   2 of   4 in __main__.example_41\n   2 of   3 in __main__.example_45\n   2 of   9 in __main__.example_46\n   1 of   7 in __main__.example_54\n   2 of  10 in __main__.example_55\n   2 of  10 in __main__.example_56\n   1 of  12 in __main__.example_57\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_time_series.py\n         [9.0 s]\nsage -t  devel/sage/sage/finance/markov_multifractal.py\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3585\n\n",
     "created_at": "2008-07-07T15:24:47Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003585.json:
     "title": "time_series -- lots of numerical noise in the doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3585",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -168,15 +168,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3585
 
 ---
 
-archive/issue_comments_025306.json:
+archive/issue_comments_025256.json:
 ```json
 {
     "body": "Attachment [trac-3585.patch](tarball://root/attachments/some-uuid/ticket3585/trac-3585.patch) by @craigcitro created at 2008-07-07 18:48:33",
     "created_at": "2008-07-07T18:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25306",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25256",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -186,15 +186,15 @@ Attachment [trac-3585.patch](tarball://root/attachments/some-uuid/ticket3585/tra
 
 ---
 
-archive/issue_comments_025307.json:
+archive/issue_comments_025257.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-07-07T18:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25307",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25257",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -204,15 +204,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_025308.json:
+archive/issue_comments_025258.json:
 ```json
 {
     "body": "Changing assignee from tbd to @craigcitro.",
     "created_at": "2008-07-07T18:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25308",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25258",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -222,15 +222,15 @@ Changing assignee from tbd to @craigcitro.
 
 ---
 
-archive/issue_comments_025309.json:
+archive/issue_comments_025259.json:
 ```json
 {
     "body": "Added `...` a lot to make doctests reasonable.",
     "created_at": "2008-07-07T18:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25309",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25259",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -240,15 +240,15 @@ Added `...` a lot to make doctests reasonable.
 
 ---
 
-archive/issue_comments_025310.json:
+archive/issue_comments_025260.json:
 ```json
 {
     "body": "It works and all doctests pass on the machine in question.  Plus Robertwb looked it over.",
     "created_at": "2008-07-07T20:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25310",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25260",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -258,15 +258,15 @@ It works and all doctests pass on the machine in question.  Plus Robertwb looked
 
 ---
 
-archive/issue_comments_025311.json:
+archive/issue_comments_025261.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-07T21:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25311",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25261",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -276,15 +276,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025312.json:
+archive/issue_comments_025262.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.rc0",
     "created_at": "2008-07-07T21:51:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3585",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25312",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3585#issuecomment-25262",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

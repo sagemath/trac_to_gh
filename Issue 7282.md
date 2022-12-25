@@ -6,15 +6,14 @@ archive/issues_007282.json:
     "body": "Assignee: tbd\n\nRight now the jinja spkg segfaults when being installed on cygwin.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/7282\n\n",
     "created_at": "2009-10-25T01:28:02Z",
     "labels": [
-        "porting: Cygwin",
-        "major",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "port jinja to install on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7282",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7282
 
 ---
 
-archive/issue_comments_060606.json:
+archive/issue_comments_060493.json:
 ```json
 {
     "body": "NOTE:  I discovered that if I comment out the lines \n\n```\n#from hashlib import sha1\n#try:\n    #from hashlib import sha1\n    #raise ImportError\n#except ImportError:\n#    from sha import new as sha1\n```\n\nin jinja/loaders.py then `python setup.py build` doesn't segfault, though\ninstalling does.  However, I can copy the build/lib*/jinja directory over to \nsite-packages by hand and it seems to work.   \n\nSimilar remarks apply to Sphinx.",
     "created_at": "2009-10-25T01:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60606",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60493",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -62,15 +61,15 @@ Similar remarks apply to Sphinx.
 
 ---
 
-archive/issue_comments_060607.json:
+archive/issue_comments_060494.json:
 ```json
 {
     "body": "We really should try to make sure that there are no problems with hashlib since it's a very common module.",
     "created_at": "2009-10-26T07:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60607",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60494",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -80,15 +79,15 @@ We really should try to make sure that there are no problems with hashlib since 
 
 ---
 
-archive/issue_comments_060608.json:
+archive/issue_comments_060495.json:
 ```json
 {
     "body": "The problem occurs somewhere with the optional speedups extension.  We can (temporarily) work around this by doing \n\n\n```\npython setup.py --without-speedups install\n```\n\n\non Cygwin.",
     "created_at": "2009-10-27T15:11:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60608",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60495",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -106,15 +105,15 @@ on Cygwin.
 
 ---
 
-archive/issue_comments_060609.json:
+archive/issue_comments_060496.json:
 ```json
 {
     "body": "Also, once jinja2 is installed as above, Sphinx installs without a problem.",
     "created_at": "2009-10-27T15:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60609",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60496",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -124,15 +123,15 @@ Also, once jinja2 is installed as above, Sphinx installs without a problem.
 
 ---
 
-archive/issue_comments_060610.json:
+archive/issue_comments_060497.json:
 ```json
 {
     "body": "This currently builds fine with Cygwin 1.7",
     "created_at": "2010-02-17T11:28:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60610",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60497",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -142,15 +141,15 @@ This currently builds fine with Cygwin 1.7
 
 ---
 
-archive/issue_comments_060611.json:
+archive/issue_comments_060498.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-02-17T11:28:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7282",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60611",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7282#issuecomment-60498",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

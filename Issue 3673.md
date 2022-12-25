@@ -6,15 +6,14 @@ archive/issues_003673.json:
     "body": "Assignee: @williamstein\n\nThe present definition of the `NumberFieldElement` class unreasonably \nprivileges the polynomial variable 'x'.  As a result the following fails:\n\n```\nsage: y = polygen(QQ, 'y'); K.<a> = NumberField(y^2 - 2)\nsage: S = K.subfields()\nsage: S[0][1]\n```\n\nThe patch amends the definition of `__init__` for the \n`NumberFieldElement` class to deal with this.\n\nAn extra doctest for the `subfields` method has been included.  Two other \ndoctests have been adjusted to match the revised code.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3673\n\n",
     "created_at": "2008-07-18T11:48:36Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review]  NumberFieldElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3673",
-    "user": "fwclarke"
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 Assignee: @williamstein
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3673
 
 ---
 
-archive/issue_comments_025964.json:
+archive/issue_comments_025910.json:
 ```json
 {
     "body": "Attachment [sage-3673.patch](tarball://root/attachments/some-uuid/ticket3673/sage-3673.patch) by fwclarke created at 2008-07-18 11:54:11",
     "created_at": "2008-07-18T11:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25964",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25910",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -62,15 +61,15 @@ Attachment [sage-3673.patch](tarball://root/attachments/some-uuid/ticket3673/sag
 
 ---
 
-archive/issue_comments_025965.json:
+archive/issue_comments_025911.json:
 ```json
 {
     "body": "The patch applies cleanly to 3.1.alpha0.  It does what it says, and all doctests in sage.rings.number_field pass.  Publish!",
     "created_at": "2008-08-10T13:18:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25965",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25911",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -80,15 +79,15 @@ The patch applies cleanly to 3.1.alpha0.  It does what it says, and all doctests
 
 ---
 
-archive/issue_comments_025966.json:
+archive/issue_comments_025912.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-11T07:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25966",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25912",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -98,15 +97,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025967.json:
+archive/issue_comments_025913.json:
 ```json
 {
     "body": "Merged in Sage 3.1.alpha1",
     "created_at": "2008-08-11T07:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25967",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -116,15 +115,15 @@ Merged in Sage 3.1.alpha1
 
 ---
 
-archive/issue_comments_025968.json:
+archive/issue_comments_025914.json:
 ```json
 {
     "body": "By the way: Report 11 did not pick up this ticket since there is an extra space between \"positive\" and \"review\".\n\nCheers,\n\nMichael",
     "created_at": "2008-08-11T07:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25968",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3673#issuecomment-25914",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

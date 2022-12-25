@@ -6,15 +6,14 @@ archive/issues_007159.json:
     "body": "Assignee: @rlmill\n\nThis patch adds to the Graph class the function merge_vertices.\n\nIt is a very common operation in Graph Theory. In a Graph G, one merges two vertices u and v by deleting them and adding a new vertex, which is linked to any other vertex w such that there was an edge uw or vw in G. This can be done with any number of vertices at a time.\n\nBesides, writing this class I noticed there was an error in function edge_boundary :\n\nthe function Graph.edge_boundary([u,v]) returns a list of edges, BUT :\n* the edges returned do not always contain u or v as their first element. it can be the second one in undirected graphs\n* The edges between u and v are returned, which is not the expected behaviour of this function\n\nThis patch fixes this too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7159\n\n",
     "created_at": "2009-10-08T17:17:02Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "[with patch, needs review] Graph.merge_vertices, and a bug in edge_boundary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7159",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7159
 
 ---
 
-archive/issue_comments_059320.json:
+archive/issue_comments_059208.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-15T13:40:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59320",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59208",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -57,15 +56,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059321.json:
+archive/issue_comments_059209.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-25T21:07:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59321",
-    "user": "@haaninjo"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59209",
+    "user": "https://github.com/haaninjo"
 }
 ```
 
@@ -75,15 +74,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_059322.json:
+archive/issue_comments_059210.json:
 ```json
 {
     "body": "Great minds think alike ;-)\nI just made a ticket ( #7304 ) for edge contraction, but this ticket is more general, so closing mine as a duplicate.\n\nHowever, there is something wrong in your patch, as my first try revealed this:\n\n```\nsage: P=graphs.PetersenGraph()\nsage: P.merge_vertices([5,7])\nsage: P.vertices()\n[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n```\n",
     "created_at": "2009-10-25T21:07:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59322",
-    "user": "@haaninjo"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59210",
+    "user": "https://github.com/haaninjo"
 }
 ```
 
@@ -104,15 +103,15 @@ sage: P.vertices()
 
 ---
 
-archive/issue_comments_059323.json:
+archive/issue_comments_059211.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-25T23:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59323",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59211",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -122,15 +121,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059324.json:
+archive/issue_comments_059212.json:
 ```json
 {
     "body": "Then I hope you will prefer this new version of the patch !!! I thought edge_boundary behaved a bit more nicely ( and mainly got worried about the directed case, thus overlooking the undirected one ... )\n\nNathann",
     "created_at": "2009-10-25T23:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59324",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59212",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -142,15 +141,15 @@ Nathann
 
 ---
 
-archive/issue_comments_059325.json:
+archive/issue_comments_059213.json:
 ```json
 {
     "body": "Attachment [trac_7159.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159.patch) by @nathanncohen created at 2009-10-25 23:20:32\n\nBy the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?",
     "created_at": "2009-10-25T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59325",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59213",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -162,15 +161,15 @@ By the way, I can not find your email on the internet... It's good to see new pe
 
 ---
 
-archive/issue_comments_059326.json:
+archive/issue_comments_059214.json:
 ```json
 {
     "body": "I have looked at your new patch, and it seems good. The only thing I found to object against was\n\n```\nif (v in vertices) and not (u in vertices) and v != vertices[0]:\n```\n\nIf edge_boundary works as expected, the second test should not be needed as u and v can never be in vertices at the same time. I attach a patch to remove the unneeded test. It applies on top of your patch.\n\nIf you agree with this, you can count this as a positive review.\n\n\n\n\nReplying to [comment:4 ncohen]:\n> By the way, I can not find your email on the internet... It's good to see new people in Sage's graph theory section !! What are you studying ?\n\nI'm a student in mathematics and a bit of computer science. I use Sage for diverse calculations in graph theory, and when I find that Sage can't do all that I want it to, I have to do something about it ;-P",
     "created_at": "2009-10-26T18:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59326",
-    "user": "@haaninjo"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59214",
+    "user": "https://github.com/haaninjo"
 }
 ```
 
@@ -196,15 +195,15 @@ I'm a student in mathematics and a bit of computer science. I use Sage for diver
 
 ---
 
-archive/issue_comments_059327.json:
+archive/issue_comments_059215.json:
 ```json
 {
     "body": "Attachment [trac_7159-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix.patch) by @haaninjo created at 2009-10-26 18:04:26\n\nRemove no-op tests",
     "created_at": "2009-10-26T18:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59327",
-    "user": "@haaninjo"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59215",
+    "user": "https://github.com/haaninjo"
 }
 ```
 
@@ -216,15 +215,15 @@ Remove no-op tests
 
 ---
 
-archive/issue_comments_059328.json:
+archive/issue_comments_059216.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-26T18:43:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59328",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59216",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -234,15 +233,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059329.json:
+archive/issue_comments_059217.json:
 ```json
 {
     "body": "Amazing... I even forgot that I had already fixed this in the same patch :-p\n\nThank you for your help !!!",
     "created_at": "2009-10-26T18:43:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59329",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59217",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -254,15 +253,15 @@ Thank you for your help !!!
 
 ---
 
-archive/issue_comments_059330.json:
+archive/issue_comments_059218.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2009-10-31T09:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59330",
-    "user": "@haaninjo"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59218",
+    "user": "https://github.com/haaninjo"
 }
 ```
 
@@ -272,15 +271,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_059331.json:
+archive/issue_comments_059219.json:
 ```json
 {
     "body": "I read the trac guidelines more closely and there is a last tiny issue before this patch can be said to be perfect:\n\n\"Bug Fixes Must Be Doctested: The patch that fixes an issue must also contain a doctest specifically to test the problem.\"\n\nSo all that is missing is a test that displays the expected behavior of edge_boundary(), and that would fail without your patch. For example something like this:\n\n```\nsage: G=graphs.DiamondGraph()\nsage: G.edge_boundary([0,1])\n[(0, 2, None), (1, 2, None), (1, 3, None)]\n```\n",
     "created_at": "2009-10-31T09:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59331",
-    "user": "@haaninjo"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59219",
+    "user": "https://github.com/haaninjo"
 }
 ```
 
@@ -301,15 +300,15 @@ sage: G.edge_boundary([0,1])
 
 ---
 
-archive/issue_comments_059332.json:
+archive/issue_comments_059220.json:
 ```json
 {
     "body": "Adds one test",
     "created_at": "2009-10-31T10:28:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59332",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59220",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -319,15 +318,15 @@ Adds one test
 
 ---
 
-archive/issue_comments_059333.json:
+archive/issue_comments_059221.json:
 ```json
 {
     "body": "Attachment [trac_7159-appendix-appendix.patch](tarball://root/attachments/some-uuid/ticket7159/trac_7159-appendix-appendix.patch) by @nathanncohen created at 2009-10-31 10:30:55\n\nPerhaps the last one ? :-)",
     "created_at": "2009-10-31T10:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59333",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59221",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -339,15 +338,15 @@ Perhaps the last one ? :-)
 
 ---
 
-archive/issue_comments_059334.json:
+archive/issue_comments_059222.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-31T10:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59334",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59222",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -357,15 +356,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059335.json:
+archive/issue_comments_059223.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-31T18:41:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59335",
-    "user": "@haaninjo"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59223",
+    "user": "https://github.com/haaninjo"
 }
 ```
 
@@ -375,15 +374,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059336.json:
+archive/issue_comments_059224.json:
 ```json
 {
     "body": "Replying to [comment:8 ncohen]:\n> Perhaps the last one ? :-)\n\nLet's hope so :-)\n\nAll looks fine to me. Positive review.",
     "created_at": "2009-10-31T18:41:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59336",
-    "user": "@haaninjo"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59224",
+    "user": "https://github.com/haaninjo"
 }
 ```
 
@@ -398,15 +397,15 @@ All looks fine to me. Positive review.
 
 ---
 
-archive/issue_comments_059337.json:
+archive/issue_comments_059225.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-02T04:32:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59337",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7159#issuecomment-59225",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

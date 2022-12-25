@@ -6,15 +6,14 @@ archive/issues_008758.json:
     "body": "Assignee: acleone\n\nCC:  acleone @williamstein @TimDumol\n\nInstead of having /js, /css, etc, we should serve all static data files out of /data.  For now this patch just adds /data using `child_data = static.File(DATA)`, where `static.File(path)` is defined in twisted.  It will serve files with the correct MIME type based on extension.\n\nEventually we should find all the /js and /css paths and change them to /data\n\nAt some point in the future we could even implement caching of all the static files easily by subclassing static.File(path), and making everything in /data cached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8758\n\n",
     "created_at": "2010-04-24T22:58:06Z",
     "labels": [
-        "notebook",
-        "trivial",
-        "enhancement"
+        "component: notebook",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Add a top-level /data with static.File(DATA) that serves files from the data directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8758",
-    "user": "acleone"
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 Assignee: acleone
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8758
 
 ---
 
-archive/issue_comments_080134.json:
+archive/issue_comments_080004.json:
 ```json
 {
     "body": "Adds the two static.File(DATA) calls to twist.py",
     "created_at": "2010-04-24T23:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80134",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80004",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -53,15 +52,15 @@ Adds the two static.File(DATA) calls to twist.py
 
 ---
 
-archive/issue_comments_080135.json:
+archive/issue_comments_080005.json:
 ```json
 {
     "body": "Attachment [trac_8758-data-toplevel-with-static-file.patch](tarball://root/attachments/some-uuid/ticket8758/trac_8758-data-toplevel-with-static-file.patch) by acleone created at 2010-04-24 23:02:01",
     "created_at": "2010-04-24T23:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80135",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80005",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -71,15 +70,15 @@ Attachment [trac_8758-data-toplevel-with-static-file.patch](tarball://root/attac
 
 ---
 
-archive/issue_comments_080136.json:
+archive/issue_comments_080006.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-24T23:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80136",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80006",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080137.json:
+archive/issue_comments_080007.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-25T00:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80137",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80007",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -107,15 +106,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080138.json:
+archive/issue_comments_080008.json:
 ```json
 {
     "body": "Not a patch bomb.",
     "created_at": "2010-04-25T00:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80138",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80008",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -125,15 +124,15 @@ Not a patch bomb.
 
 ---
 
-archive/issue_comments_080139.json:
+archive/issue_comments_080009.json:
 ```json
 {
     "body": "Changes the url to /static/.  Replaces previous.",
     "created_at": "2010-05-29T22:38:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80139",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80009",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -143,15 +142,15 @@ Changes the url to /static/.  Replaces previous.
 
 ---
 
-archive/issue_comments_080140.json:
+archive/issue_comments_080010.json:
 ```json
 {
     "body": "Attachment [trac_8758-toplevel-static-url.patch](tarball://root/attachments/some-uuid/ticket8758/trac_8758-toplevel-static-url.patch) by acleone created at 2010-05-29 22:43:37\n\nThe latest patch changes the url to /static/.\n\nI think we should also rename the \"data\" directory in the sagenb source to \"static\", and rename the global DATA to STATIC.\n\nDATA is slightly confusing because uploading files to a worksheet also uses a DATA global, eg DATA+'mydatafile.txt'.",
     "created_at": "2010-05-29T22:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80140",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80010",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -167,15 +166,15 @@ DATA is slightly confusing because uploading files to a worksheet also uses a DA
 
 ---
 
-archive/issue_comments_080141.json:
+archive/issue_comments_080011.json:
 ```json
 {
     "body": "Ok - ignore the new patch.  Let's leave the url as /data.",
     "created_at": "2010-06-02T23:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80141",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80011",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -185,15 +184,15 @@ Ok - ignore the new patch.  Let's leave the url as /data.
 
 ---
 
-archive/issue_comments_080142.json:
+archive/issue_comments_080012.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-11T05:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80142",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/8758#issuecomment-80012",
+    "user": "https://github.com/TimDumol"
 }
 ```
 

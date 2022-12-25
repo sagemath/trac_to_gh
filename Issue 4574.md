@@ -6,15 +6,14 @@ archive/issues_004574.json:
     "body": "Assignee: tba\n\nCC:  mvngu\n\n\n```\n\n\nOn Thu, Nov 20, 2008 at 6:30 PM, seberino@spawar.navy.mil <seberino@spawar.navy.mil> wrote:\n>\n> On Nov 20, 1:05 pm, \"William Stein\" <wst...@gmail.com> wrote:\n>> Type notebook? and read the docs.  If that isn't enough please please\n>> do ask here again.\n>\n> The \"Help\" link inside the notebook gives a ton of great docs on how\n> to do great things with notebook.  I couldn't find the section on how\n> to add new notebook accounts in those docs.\n> Should I be looking somewhere else?\n\nIt \"should\" be in chapter 3 on the notebook.  Unfortunately, I just\nlooked and it isn't.    The problem is that the file notebook_object.py\nisn't included in the reference manual.  \n\nMaybe Mike Hansen can fix this when he Sphinxifies the documentation\nfor Sage, which he'll do very soon. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4574\n\n",
     "created_at": "2008-11-21T04:24:52Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "add notebook_object.py docs to the reference manual, and possibly a short survey about that to notebook help (top letter)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4574",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4574
 
 ---
 
-archive/issue_comments_034271.json:
+archive/issue_comments_034204.json:
 ```json
 {
     "body": "Related: #7506",
     "created_at": "2010-01-20T11:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4574",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34271",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34204",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -71,15 +70,15 @@ Related: #7506
 
 ---
 
-archive/issue_comments_034272.json:
+archive/issue_comments_034205.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2010-02-27T22:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4574",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34272",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34205",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_034273.json:
+archive/issue_comments_034206.json:
 ```json
 {
     "body": "Should we close this?",
     "created_at": "2010-02-27T22:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4574",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34273",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34206",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -107,15 +106,15 @@ Should we close this?
 
 ---
 
-archive/issue_comments_034274.json:
+archive/issue_comments_034207.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-27T23:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4574",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34274",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34207",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -125,15 +124,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_034275.json:
+archive/issue_comments_034208.json:
 ```json
 {
     "body": "Close as fixed by #7506.",
     "created_at": "2010-02-27T23:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4574",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34275",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4574#issuecomment-34208",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

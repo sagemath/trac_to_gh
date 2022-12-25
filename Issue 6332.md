@@ -6,15 +6,14 @@ archive/issues_006332.json:
     "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/databases/jones.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/databases/jones.py\", line 21:\n    sage: [(k.degree(), k.disc()) for k in J.unramified_outside([2])]    # optional - jones_database\nExpected:\n    [(1, 1), (2, 8), (2, -4), (2, -8), (4, 2048), (4, -1024), (4, 512), (4, -2048), (4, 256), (4, 2048), (4, 2048)]\nGot:\n    [(4, -2048), (2, 8), (4, -1024), (1, 1), (4, 256), (2, -4), (4, 2048), (4, 512), (4, 2048), (2, -8), (4, 2048)]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/databases/jones.py\", line 27:\n    sage: [k.disc() for k in J.unramified_outside([2],2)]                # optional - jones_database\nExpected nothing\nGot:\n    [8, -4, -8]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/databases/jones.py\", line 34:\n    sage: [k.disc() for k in J.ramified_at([3,5],3)]                     # optional - jones_database\nExpected nothing\nGot:\n    [-6075, -6075, -675, -135]\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/databases/jones.py\", line 163:\n    sage: J.unramified_outside([101,119]) # requires optional package\nExpected:\n    [Number Field in a with defining polynomial x - 1, Number Field in a with defining polynomial x^2 - 101, Number Field in a with defining polynomial x^4 - x^3 + 13*x^2 - 19*x + 361, Number Field in a with defining polynomial x^5 - x^4 - 40*x^3 - 93*x^2 - 21*x + 17, Number Field in a with defining polynomial x^5 + x^4 - 6*x^3 - x^2 + 18*x + 4, Number Field in a with defining polynomial x^5 + 2*x^4 + 7*x^3 + 4*x^2 + 11*x - 6]\nGot:\n    [Number Field in a with defining polynomial x^2 - 101, Number Field in a with defining polynomial x^5 + 2*x^4 + 7*x^3 + 4*x^2 + 11*x - 6, Number Field in a with defining polynomial x - 1, Number Field in a with defining polynomial x^5 + x^4 - 6*x^3 - x^2 + 18*x + 4, Number Field in a with defining polynomial x^5 - x^4 - 40*x^3 - 93*x^2 - 21*x + 17, Number Field in a with defining polynomial x^4 - x^3 + 13*x^2 - 19*x + 361]\n**********************************************************************\n2 items had failures:\n   3 of  11 in __main__.example_0\n   1 of   4 in __main__.example_2\n***Test Failed*** 4 failures.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6332\n\n",
     "created_at": "2009-06-16T15:09:38Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "optional doctest failure -- jones number field database tests fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6332",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -65,15 +64,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6332
 
 ---
 
-archive/issue_comments_050549.json:
+archive/issue_comments_050453.json:
 ```json
 {
     "body": "The failures here were caused mainly by `unramified_outside` ordering its output.  Presumably the doctests weren't updated when the ordering was introduced.\n\nSorting the list of fields is a good idea, but the existing ordering was essentially random.  In the patch I've fixed it so that the fields are ordered primarily by degree and discriminant, and done the same for the other main function `ramified_at`.  The doctests have been adjusted accordingly.\n\nAt the same time the opportunity has been taken to tidy up a few things.  In particular I have included a check that the 'primes' are indeed prime.",
     "created_at": "2009-06-18T22:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50549",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50453",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -87,15 +86,15 @@ At the same time the opportunity has been taken to tidy up a few things.  In par
 
 ---
 
-archive/issue_comments_050550.json:
+archive/issue_comments_050454.json:
 ```json
 {
     "body": "Attachment [trac_6332.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332.patch) by fwclarke created at 2009-06-18 22:14:08",
     "created_at": "2009-06-18T22:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50550",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50454",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -105,15 +104,15 @@ Attachment [trac_6332.patch](tarball://root/attachments/some-uuid/ticket6332/tra
 
 ---
 
-archive/issue_comments_050551.json:
+archive/issue_comments_050455.json:
 ```json
 {
     "body": "Attachment [trac_6332-ref.patch](tarball://root/attachments/some-uuid/ticket6332/trac_6332-ref.patch) by @aghitza created at 2009-07-17 11:09:30\n\napply after the first patch",
     "created_at": "2009-07-17T11:09:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50551",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50455",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -125,15 +124,15 @@ apply after the first patch
 
 ---
 
-archive/issue_comments_050552.json:
+archive/issue_comments_050456.json:
 ```json
 {
     "body": "Looks good.  I've added a small patch replacing various instances of `# requires optional package` with the more precise `# optional - jones_database`.",
     "created_at": "2009-07-17T11:29:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50552",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50456",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -143,15 +142,15 @@ Looks good.  I've added a small patch replacing various instances of `# requires
 
 ---
 
-archive/issue_comments_050553.json:
+archive/issue_comments_050457.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-19T16:38:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50553",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50457",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -161,15 +160,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_050554.json:
+archive/issue_comments_050458.json:
 ```json
 {
     "body": "Merged both patches. However, I notice that some docstrings in `trac_6332.patch` aren't properly formatted. In particular:\n\n```\n164\t        -  ``var'' - the name used for the generator of the number fields (default 'a').\n203\t        -  ``var'' - the name used for the generator of the number fields (default 'a').\n246\t        -  ``var'' - the name used for the generator of the number fields (default 'a').\n```\n\nThese results in 3 warnings when building the HTML version of the reference manual. This docstring formatting issue is addressed in #6560.",
     "created_at": "2009-07-19T16:38:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50554",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6332#issuecomment-50458",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

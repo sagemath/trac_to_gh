@@ -6,15 +6,14 @@ archive/issues_008101.json:
     "body": "Assignee: drkirkby\n\nOn Open Solaris x64 as 64 bit without setting CFLAGS globally build is 32 bit.\n\nA patch is under way.\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8101\n\n",
     "created_at": "2010-01-27T23:48:53Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "ntl fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8101",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8101
 
 ---
 
-archive/issue_comments_071081.json:
+archive/issue_comments_070960.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-27T23:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71081",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-70960",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_071082.json:
+archive/issue_comments_070961.json:
 ```json
 {
     "body": "Attachment [ntl-5.4.2.p11.patch](tarball://root/attachments/some-uuid/ticket8101/ntl-5.4.2.p11.patch) by @jaapspies created at 2010-01-27 23:58:42\n\nAn spkg can be found here:\n\n[http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg](http://boxen.math.washington.edu/home/jsp/ports/ntl-5.4.2.p11.spkg)\n\nJaap",
     "created_at": "2010-01-27T23:58:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71082",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-70961",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -75,15 +74,15 @@ Jaap
 
 ---
 
-archive/issue_comments_071083.json:
+archive/issue_comments_070962.json:
 ```json
 {
     "body": "Positive review. All shared libraries are indeed 64-bit now. \n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/lib*ntl*\nlocal/lib/libntl-5.4.2.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libntl.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libntl.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n",
     "created_at": "2010-01-28T13:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71083",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-70962",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -102,15 +101,15 @@ local/lib/libntl.so:	ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically lin
 
 ---
 
-archive/issue_comments_071084.json:
+archive/issue_comments_070963.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-28T13:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71084",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-70963",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -120,15 +119,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_071085.json:
+archive/issue_comments_070964.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T15:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-71085",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8101#issuecomment-70964",
+    "user": "https://github.com/qed777"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_009091.json:
     "body": "Assignee: @jasongrout\n\nCC:  @nthiery @jhpalmieri\n\nIn `sage/misc/latex.py` the `check_file()` routine has a mis-aligned block which will issue the `more_info` string whenever it is called, even if the file exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9091\n\n",
     "created_at": "2010-05-30T02:22:52Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009091.json:
     "title": "check_file() in latex.py spits out warnings every time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9091",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: @jasongrout
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9091
 
 ---
 
-archive/issue_comments_084439.json:
+archive/issue_comments_084303.json:
 ```json
 {
     "body": "Attachment [trac_9091-latex-check-file.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file.patch) by @rbeezer created at 2010-05-30 02:26:18",
     "created_at": "2010-05-30T02:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84439",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84303",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -49,15 +49,15 @@ Attachment [trac_9091-latex-check-file.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_084440.json:
+archive/issue_comments_084304.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-30T02:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84440",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84304",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_084441.json:
+archive/issue_comments_084305.json:
 ```json
 {
     "body": "Hi Robert,\n\nOops, how did that one get through without breaking the tests?\n\nI am all for the change. Please add a test exhibiting the (now fixed)\nproblem to avoid later regression; then, if all test pass, you may set\na positive review on my behalf.",
     "created_at": "2010-06-01T09:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84441",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84305",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -91,15 +91,15 @@ a positive review on my behalf.
 
 ---
 
-archive/issue_comments_084442.json:
+archive/issue_comments_084306.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-01T09:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84442",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84306",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -109,15 +109,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_084443.json:
+archive/issue_comments_084307.json:
 ```json
 {
     "body": "Replying to [comment:2 nthiery]:\n> Oops, how did that one get through without breaking the tests?\n\nI think almost everywhere it gets exercised, it is marked \"# random.\"  I did have it messing up on my doctests on the latex() routines, which is how I caught it.\n\n> Please add a test exhibiting the (now fixed)\n> problem to avoid later regression; then, if all test pass, you may set\n> a positive review on my behalf.\n\nI knew that was too easy - totally forgot to add a test against the bug.  ;-)  Will do in the next day or two.  Thanks for the review and the reminder.\n\nRob",
     "created_at": "2010-06-01T17:43:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84443",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84307",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -138,15 +138,15 @@ Rob
 
 ---
 
-archive/issue_comments_084444.json:
+archive/issue_comments_084308.json:
 ```json
 {
     "body": "Attachment [trac_9091-latex-check-file-v2.patch](tarball://root/attachments/some-uuid/ticket9091/trac_9091-latex-check-file-v2.patch) by @rbeezer created at 2010-06-01 21:33:12",
     "created_at": "2010-06-01T21:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84444",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84308",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -156,15 +156,15 @@ Attachment [trac_9091-latex-check-file-v2.patch](tarball://root/attachments/some
 
 ---
 
-archive/issue_comments_084445.json:
+archive/issue_comments_084309.json:
 ```json
 {
     "body": "Version 2 self-contained patch contains a test with a file that should be in every latex distribution, plus a `more_info` string.  So prior to this fix, the info string (and only the info string) would have printed if someone ran the optional tests and had latex installed.\n\nAs requested by the reviewer, I've marked this \"positive review.\"\n\nRelease manager: just apply the v2 patch only.",
     "created_at": "2010-06-01T21:37:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84445",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84309",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -178,15 +178,15 @@ Release manager: just apply the v2 patch only.
 
 ---
 
-archive/issue_comments_084446.json:
+archive/issue_comments_084310.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-01T21:37:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84446",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84310",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -196,15 +196,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_084447.json:
+archive/issue_comments_084311.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-01T21:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84447",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84311",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -214,15 +214,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_084448.json:
+archive/issue_comments_084312.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T07:27:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84448",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9091#issuecomment-84312",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

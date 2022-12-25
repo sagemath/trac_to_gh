@@ -6,7 +6,7 @@ archive/issues_008126.json:
     "body": "Assignee: mvngu\n\nFix typo in documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8126\n\n",
     "created_at": "2010-01-29T21:49:19Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008126.json:
     "title": "fix typo in doc of circle",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8126",
-    "user": "@robert-marik"
+    "user": "https://github.com/robert-marik"
 }
 ```
 Assignee: mvngu
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8126
 
 ---
 
-archive/issue_comments_071444.json:
+archive/issue_comments_071323.json:
 ```json
 {
     "body": "Attachment [doc-circle.patch](tarball://root/attachments/some-uuid/ticket8126/doc-circle.patch) by @robert-marik created at 2010-01-29 21:49:40",
     "created_at": "2010-01-29T21:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71444",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71323",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [doc-circle.patch](tarball://root/attachments/some-uuid/ticket8126/do
 
 ---
 
-archive/issue_comments_071445.json:
+archive/issue_comments_071324.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-29T22:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71445",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71324",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -65,15 +65,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_071446.json:
+archive/issue_comments_071325.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2010-01-29T22:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71446",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71325",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -83,15 +83,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_071447.json:
+archive/issue_comments_071326.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-29T22:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71447",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71326",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -101,15 +101,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_071448.json:
+archive/issue_comments_071327.json:
 ```json
 {
     "body": "Robert, please put the ticket number in your patch. This information is very useful for tracking down changes.",
     "created_at": "2010-01-29T22:48:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71448",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71327",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -119,15 +119,15 @@ Robert, please put the ticket number in your patch. This information is very use
 
 ---
 
-archive/issue_comments_071449.json:
+archive/issue_comments_071328.json:
 ```json
 {
     "body": "the same patch, renamed",
     "created_at": "2010-01-29T23:52:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71449",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71328",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -137,15 +137,15 @@ the same patch, renamed
 
 ---
 
-archive/issue_comments_071450.json:
+archive/issue_comments_071329.json:
 ```json
 {
     "body": "Attachment [trac_8126.patch](tarball://root/attachments/some-uuid/ticket8126/trac_8126.patch) by mvngu created at 2010-01-31 00:17:03\n\nMerged [trac_8126.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8126/trac_8126.patch).",
     "created_at": "2010-01-31T00:17:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71450",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71329",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -157,15 +157,15 @@ Merged [trac_8126.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/81
 
 ---
 
-archive/issue_comments_071451.json:
+archive/issue_comments_071330.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-31T00:17:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71451",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8126#issuecomment-71330",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

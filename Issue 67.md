@@ -6,14 +6,12 @@ archive/issues_000067.json:
     "body": "Assignee: @williamstein\n\nI'm writing axiom.py, so SAGE can talk with Axiom. \n\nIssue created by migration from https://trac.sagemath.org/ticket/67\n\n",
     "created_at": "2006-09-17T21:49:05Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "title": "axiom -- write interfaces/axiom.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/67",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -28,15 +26,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/67
 
 ---
 
-archive/issue_comments_000354.json:
+archive/issue_comments_000352.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2006-11-06T08:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/67",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/67#issuecomment-354",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/67#issuecomment-352",
+    "user": "https://github.com/williamstein"
 }
 ```
 

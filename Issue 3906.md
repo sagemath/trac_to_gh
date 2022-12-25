@@ -6,15 +6,14 @@ archive/issues_003906.json:
     "body": "Assignee: @garyfurnish\n\nNo response on sage-support, so I deem this a bug, not a feature:\n\n\n```\nsage: plot(sin,0,pi)\n<plots fine>\nsage: plot(2*sin,0,pi)\n<boom>\n\nAlthough I suppose we should always include variables -\n\nsage: plot(2*sin(x),0,pi)\n<plots fine>\n\n- for consistency's (and ease of use's) sake both of the above should\nwork. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3906\n\n",
     "created_at": "2008-08-20T01:16:20Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "symbolic plotting bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3906",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: @garyfurnish
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3906
 
 ---
 
-archive/issue_comments_027946.json:
+archive/issue_comments_027888.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-09-05T19:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3906",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3906#issuecomment-27946",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3906#issuecomment-27888",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -64,15 +63,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_027947.json:
+archive/issue_comments_027889.json:
 ```json
 {
     "body": "Attachment [trac_3906.patch](tarball://root/attachments/some-uuid/ticket3906/trac_3906.patch) by @rlmill created at 2008-09-05 19:41:46\n\nThis patch is found also at #3907.",
     "created_at": "2008-09-05T19:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3906",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3906#issuecomment-27947",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3906#issuecomment-27889",
+    "user": "https://github.com/rlmill"
 }
 ```
 

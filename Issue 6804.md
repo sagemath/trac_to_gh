@@ -6,15 +6,14 @@ archive/issues_006804.json:
     "body": "Assignee: @mwhansen\n\nCC:  @orlitzky\n\nEither code or docstring is wrong in 4.1.1, \"=\" vs. \">=\":\n\n\n```\nReturns all the numbers self[i] such that self[i] = i+1\n```\n\n\n\n```\nif self[i] >= i + 1:\n    res.append(self[i])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6804\n\n",
     "created_at": "2009-08-22T17:16:29Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "Permutation.weak_excedences inconsistency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6804",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: @mwhansen
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6804
 
 ---
 
-archive/issue_comments_056025.json:
+archive/issue_comments_055923.json:
 ```json
 {
     "body": "Attachment [sage-trac_6804.patch](tarball://root/attachments/some-uuid/ticket6804/sage-trac_6804.patch) by @orlitzky created at 2012-01-09 05:24:49\n\nFix the docstring.",
     "created_at": "2012-01-09T05:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56025",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-55923",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -64,15 +63,15 @@ Fix the docstring.
 
 ---
 
-archive/issue_comments_056026.json:
+archive/issue_comments_055924.json:
 ```json
 {
     "body": "I found a reference; the bug was in the docstring.",
     "created_at": "2012-01-09T05:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56026",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-55924",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -82,15 +81,15 @@ I found a reference; the bug was in the docstring.
 
 ---
 
-archive/issue_comments_056027.json:
+archive/issue_comments_055925.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-01-09T05:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56027",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-55925",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -100,15 +99,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_056028.json:
+archive/issue_comments_055926.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-01-29T15:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56028",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-55926",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -118,15 +117,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_056029.json:
+archive/issue_comments_055927.json:
 ```json
 {
     "body": "Well, then...`:-)`\n\nNathann",
     "created_at": "2012-01-29T15:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56029",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-55927",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -138,15 +137,15 @@ Nathann
 
 ---
 
-archive/issue_comments_056030.json:
+archive/issue_comments_055928.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2012-02-02T12:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-56030",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6804#issuecomment-55928",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

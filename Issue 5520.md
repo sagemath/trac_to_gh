@@ -6,15 +6,13 @@ archive/issues_005520.json:
     "body": "Assignee: @craigcitro\n\nCC:  bober\n\nI started using Magma in 1998 because only Magma had an implementation of Pizer's algorithm from [Pizer, 1980] for computing with Brandt modules.  The point of this ticket is to get an implementation of this algorithm in to Sage. \n\nSee http://swc-wiki.sagemath.org/2009/other/pizer for more about this ticket including a link to a scan of Pizer's paper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5520\n\n",
     "created_at": "2009-03-14T22:17:05Z",
     "labels": [
-        "modular forms",
-        "major",
-        "enhancement"
+        "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "implement Pizer's algorithm for computing Brandt Modules and Brandt Matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5520",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @craigcitro
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5520
 
 ---
 
-archive/issue_comments_042914.json:
+archive/issue_comments_042830.json:
 ```json
 {
     "body": "Apply the patch from #5521 for all doctests to pass after applying any patches on this ticket.",
     "created_at": "2009-03-14T22:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42914",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42830",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -51,15 +49,15 @@ Apply the patch from #5521 for all doctests to pass after applying any patches o
 
 ---
 
-archive/issue_comments_042915.json:
+archive/issue_comments_042831.json:
 ```json
 {
     "body": "Attachment [trac_5520.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520.patch) by @williamstein created at 2009-03-26 19:39:53",
     "created_at": "2009-03-26T19:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42915",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42831",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -69,15 +67,15 @@ Attachment [trac_5520.patch](tarball://root/attachments/some-uuid/ticket5520/tra
 
 ---
 
-archive/issue_comments_042916.json:
+archive/issue_comments_042832.json:
 ```json
 {
     "body": "Try it out:\n\n```\nsage: A = J0(95).new_subvariety()[1]; A\nSimple abelian subvariety 95b(1,95) of dimension 4 of J0(95)\nsage: time A.tamagawa_number(19)\nCPU times: user 1.56 s, sys: 0.11 s, total: 1.67 s\nWall time: 1.83 s\n6\n```\n",
     "created_at": "2009-03-26T19:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42916",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42832",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -97,15 +95,15 @@ Wall time: 1.83 s
 
 ---
 
-archive/issue_comments_042917.json:
+archive/issue_comments_042833.json:
 ```json
 {
     "body": "It also doesn't look too bad against my current 3.4.1.alpha0 merge tree:\n\n```\nsage-3.4.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_5520.patch \npatching file c_lib/include/convert.h\npatching file c_lib/src/convert.c\npatching file module_list.py\npatching file sage/algebras/all.py\npatching file sage/algebras/quatalg/__init__.py\npatching file sage/algebras/quatalg/all.py\npatching file sage/algebras/quatalg/quaternion_algebra.py\npatching file sage/algebras/quatalg/quaternion_algebra_cython.pyx\npatching file sage/algebras/quatalg/quaternion_algebra_element.pxd\npatching file sage/algebras/quatalg/quaternion_algebra_element.pyx\npatching file sage/algebras/quaternion_algebra.py\nHunk #1 FAILED at 1.\n1 out of 1 hunk FAILED -- saving rejects to file sage/algebras/quaternion_algebra.py.rej\npatching file sage/algebras/quaternion_algebra_element.pxd\npatching file sage/algebras/quaternion_algebra_element.py\npatching file sage/algebras/quaternion_algebra_element.pyx\npatching file sage/all.py\nHunk #1 succeeded at 273 (offset 3 lines).\npatching file sage/libs/pari/gen.pxd\npatching file sage/libs/pari/gen.pyx\npatching file sage/matrix/matrix1.pyx\npatching file sage/matrix/matrix2.pyx\nHunk #1 succeeded at 3733 (offset 17 lines).\nHunk #2 succeeded at 3741 (offset 17 lines).\nHunk #3 succeeded at 3752 (offset 17 lines).\nHunk #4 succeeded at 3777 (offset 17 lines).\npatching file sage/matrix/matrix_integer_dense.pxd\npatching file sage/matrix/matrix_integer_dense.pyx\npatching file sage/matrix/matrix_rational_dense.pxd\npatching file sage/matrix/matrix_rational_dense.pyx\nHunk #3 FAILED at 629.\nHunk #4 FAILED at 637.\nHunk #5 succeeded at 744 (offset 23 lines).\nHunk #6 succeeded at 768 (offset 23 lines).\nHunk #7 succeeded at 792 (offset 23 lines).\nHunk #8 succeeded at 996 (offset 23 lines).\nHunk #9 succeeded at 1292 (offset 23 lines).\nHunk #10 succeeded at 1343 (offset 23 lines).\nHunk #11 succeeded at 1368 (offset 23 lines).\nHunk #12 succeeded at 1403 (offset 23 lines).\nHunk #13 succeeded at 1551 (offset 23 lines).\nHunk #14 succeeded at 1673 (offset 23 lines).\nHunk #15 succeeded at 1699 (offset 23 lines).\nHunk #16 succeeded at 2081 (offset 23 lines).\nHunk #17 succeeded at 2162 (offset 23 lines).\nHunk #18 succeeded at 2375 (offset 23 lines).\n2 out of 18 hunks FAILED -- saving rejects to file sage/matrix/matrix_rational_dense.pyx.rej\npatching file sage/misc/hg.py\npatching file sage/modular/abvar/abvar.py\npatching file sage/modular/all.py\npatching file sage/modular/hecke/ambient_module.py\npatching file sage/modular/hecke/element.py\npatching file sage/modular/hecke/module.py\npatching file sage/modular/modsym/ambient.py\npatching file sage/modular/quatalg/__init__.py\npatching file sage/modular/quatalg/all.py\npatching file sage/modular/quatalg/brandt.py\npatching file sage/modules/free_module.py\nReversed (or previously applied) patch detected!  Assume -R? [n] n\nApply anyway? [n] n\nSkipping patch.\n5 out of 5 hunks ignored -- saving rejects to file sage/modules/free_module.py.rej\npatching file sage/modules/module.pyx\npatching file sage/rings/extended_rational_field.py\npatching file sage/rings/rational.pyx\npatching file sage/rings/rational_field.py\npatching file setup.py\nHunk #1 succeeded at 543 (offset 7 lines).\nHunk #2 succeeded at 619 (offset 8 lines).\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-03-26T20:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42917",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42833",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -193,15 +191,15 @@ Michael
 
 ---
 
-archive/issue_comments_042918.json:
+archive/issue_comments_042834.json:
 ```json
 {
     "body": "NOTE: I found one issue with the massive (10-100 times speedups) for small linear algebra using PARI, when running a very large computation with this code (a table of running it for all modabvars of level up to 1000):\n \n\n  http://sage.math.washington.edu/home/wstein/db/compgroup/\n\nIn some cases the PARI stack overflows because I guess a matrix is very small but maybe it's hermite form or a product or something is too big.    The problem is that to do very fast linear algebra it's all done on the PARI stack, and by default the PARI stack size is too small.  The solution is either to make it bigger by default (not an option), or be much more conservative about what uses PARI, or to automatically increase it (very tricky). \n\nI will have to fix the above, though it's nearly orthogonal to the rest of this patch, so I hope this patch can be reviewed as is anyways.",
     "created_at": "2009-03-26T21:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42918",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42834",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -218,15 +216,15 @@ I will have to fix the above, though it's nearly orthogonal to the rest of this 
 
 ---
 
-archive/issue_comments_042919.json:
+archive/issue_comments_042835.json:
 ```json
 {
     "body": "Here is a way to trigger the problem mentioned above:\n\n```\nsage: n = 10000000; a = random_matrix(ZZ,4,x=-2^n,y=2^n).change_ring(QQ)\nsage: b = a._multiply_pari(a)\n\n  ***   the PARI stack overflows !\n  current stack size: 32000000 (30.518 Mbytes)\n  [hint] you can increase GP stack with allocatemem()\n\n```\n\n\nThe easiest solution is probably just to just compute the height of a and if it isn't \"very big\", then -- and only then -- use PARI:\n\n```\nsage: n = 10000000; a = random_matrix(ZZ,4,x=-2^n,y=2^n).change_ring(QQ)\nsage: time h = a.height()\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\n```\n",
     "created_at": "2009-03-26T21:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42919",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42835",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -256,15 +254,15 @@ CPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s
 
 ---
 
-archive/issue_comments_042920.json:
+archive/issue_comments_042836.json:
 ```json
 {
     "body": "I suggest a change in interface for `BrandtModule`, namely, allow the first parameter to be non-prime, and eliminate parameter r. IOW, `BrandtModule(3,7,5)` becomes `BrandtModule(3^5,7)`:\n\n\n```\nBrandtModule(N, M=1, weight=2, base_ring=Rational Field, use_cache=True)\n```\n\n\nThe rules are:\n- N and M must be coprime\n- the number of prime factors of N must be odd\n- for starters, the prime factors of N must show up with odd power (can accomodate p^2 factors eventually).\n- the ramification of the quat. algebra is given by prime factors of N; the discriminant of the order would be N*M\n\nThe current implementation is for prime N. Sould raise `NotImplementedError` otherwise. As it is now, the `BrandtModule` constructor succeeds, and the dimension formula works, but then `hecke_matrix` gives wrong results.",
     "created_at": "2009-03-26T22:54:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42920",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42836",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -288,15 +286,15 @@ The current implementation is for prime N. Sould raise `NotImplementedError` oth
 
 ---
 
-archive/issue_comments_042921.json:
+archive/issue_comments_042837.json:
 ```json
 {
     "body": "Performance of `BrandtModule.right_ideals()`: equivalence testing is done using is_equivalent with B=2*dim+10. This is not optimal, and it seems to lead to a O(n<sup>2</sup>) algorithm:\n\n```\nsage: time len(BrandtModule(1009,use_cache=False).right_ideals())\nCPU times: user 9.72 s, sys: 0.02 s, total: 9.74 s\nWall time: 9.74 s\n84\nsage: time len(BrandtModule(2003,use_cache=False).right_ideals())\nCPU times: user 38.44 s, sys: 0.00 s, total: 38.44 s\nWall time: 38.44 s\n168\n```\n\n\nOTOH, I hacked `right_ideals` to take an extra parameter to set B (bound passed to is_equivalent). The timing is now:\n\n```\nsage: time len(BrandtModule(1009,use_cache=False).right_ideals(20))\nCPU times: user 4.75 s, sys: 0.00 s, total: 4.75 s\nWall time: 4.75 s\n84\nsage: time len(BrandtModule(2003,use_cache=False).right_ideals(30))\nCPU times: user 11.02 s, sys: 0.04 s, total: 11.06 s\nWall time: 11.05 s\n168\n```\n\nThe optimal bound is unclear. I'd guess something around O(sqrt(n)) may work... I discovered those by trial and error.\n\nNow, it is worth precomputing (short) theta series for the ideals, but if these are hashed as keys of a dictionary --- then the inner loop\n\n```\n                    for K in ideals:\n                        if J.is_equivalent(K, B):\n                            is_new = False\n                            break\n```\n\ncan be handled more efficiently as in (pseudo-code):\n\n```\n  theta = J.theta_vector()\n  if theta in ideals_theta:\n    for K in ideals_theta[theta]:\n      if J.is_equivalent(K, B):\n        is_new = False\n        break\n```\n\nIOW, only call is_equivalent for ideals that match in the theta series...\n\nOtherwise, this algorithm is indeed O(n<sup>2</sup>), because each new ideal requires testing equivalence to false for each of the previously found ideals.\n\nThe same is true for the hecke_matrix_directly() computation...",
     "created_at": "2009-03-27T02:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42921",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42837",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -359,15 +357,15 @@ The same is true for the hecke_matrix_directly() computation...
 
 ---
 
-archive/issue_comments_042922.json:
+archive/issue_comments_042838.json:
 ```json
 {
     "body": "Here's an implementation of the suggestion above:\n\n```\ndiff -r e8e97f260027 sage/modular/quatalg/brandt.py\n--- a/sage/modular/quatalg/brandt.py\tThu Mar 26 12:34:13 2009 -0700\n+++ b/sage/modular/quatalg/brandt.py\tThu Mar 26 20:06:25 2009 -0700\n@@ -936,7 +936,7 @@\n         K = self.base_ring()\n         return matrix(K, [[K(B[i][j][n]) for i in range(m)] for j in range(m)], sparse=sparse)\n \n-    def right_ideals(self):\n+    def right_ideals(self, B=None):\n         \"\"\"\n         Return sorted tuple of representatives for the equivalence\n         classes of right ideals in self.\n@@ -962,9 +962,11 @@\n         I = R.unit_ideal()\n         I = R.right_ideal([4*x for x in I.basis()])\n \n-        B = 2*self.dimension()+10\n+        if B is None:\n+            B = 2*self.dimension()+10\n \n         ideals = [I]\n+        ideals_theta = { tuple(I.theta_series_vector(B)) : [I] }\n         new_ideals = [I]\n \n         newly_computed_ideals = []\n@@ -976,13 +978,19 @@\n                 L = self.cyclic_supermodules(I, p)\n                 for J in L:\n                     is_new = True\n-                    for K in ideals:\n-                        if J.is_equivalent(K, B):\n-                            is_new = False\n-                            break\n+                    J_theta = tuple(J.theta_series_vector(B))\n+                    if J_theta in ideals_theta:\n+                        for K in ideals_theta[J_theta]:\n+                            if J.is_equivalent(K, B):\n+                                is_new = False\n+                                break\n                     if is_new:\n                         newly_computed_ideals.append(J)\n                         ideals.append(J)\n+                        if J_theta in ideals_theta:\n+                            ideals_theta[J_theta].append(J)\n+                        else:\n+                            ideals_theta[J_theta] = [J]\n                         verbose(\"found %s of %s ideals\"%(len(ideals), self.dimension()), level=2)\n                         if len(ideals) >= self.dimension():\n                             ideals = tuple(sorted(ideals))\n```\n\n\n----\n\nWith the patch above I get:\n\n```\nsage: time len(BrandtModule(1009,use_cache=False).right_ideals(42))\nCPU times: user 2.48 s, sys: 0.02 s, total: 2.50 s\nWall time: 2.50 s\n84\nsage: time len(BrandtModule(2003,use_cache=False).right_ideals(84))\nCPU times: user 3.98 s, sys: 0.02 s, total: 4.00 s\nWall time: 4.00 s\n168\nsage: time len(BrandtModule(3001,use_cache=False).right_ideals(125))\nCPU times: user 10.32 s, sys: 0.08 s, total: 10.40 s\nWall time: 10.40 s\n250\n```\n\nThe optimal bound now seems to be around half the dimension of the space (experimental, just for those three levels). Take into account that the faster the function `is_equivalent()` is, the smallest the optimal bound (because we can afford to test more false positives).\n \nWith this patch, it makes sense to call an is_equivalent function which doesn't test the theta series, just computes I*Jbar, etc. I don't know if it would make much difference (I'm currently trying to decipher output of %prun).",
     "created_at": "2009-03-27T03:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42922",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42838",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -453,15 +451,15 @@ With this patch, it makes sense to call an is_equivalent function which doesn't 
 
 ---
 
-archive/issue_comments_042923.json:
+archive/issue_comments_042839.json:
 ```json
 {
     "body": "Here's a one-liner you definitely want to apply (with or without my patch above):\n\n```\n         while got_something_new:\n             got_something_new = False\n+            newly_computed_ideals = []\n             for I in new_ideals:\n                 L = self.cyclic_supermodules(I, p)\n                 for J in L:\n                     is_new = True\n```\n\nIn fact, the list `newly_computed_ideals` needs to be reset after each cycle --- otherwise, each iteration computes `self.cyclic_supermodules()` again for all the ideals (not just the new ones)...\n\nThis (`right_ideals()`) is now running in definitely sub-quadratic time... it seems quasi-linear besides the issue of figuring out the optimal bound for the theta series. For instance:\n\n```\nsage: time Is=BrandtModule(20011,use_cache=False).right_ideals(150)\nCPU times: user 25.45 s, sys: 0.05 s, total: 25.50 s\nWall time: 25.50 s\nsage: time Is=BrandtModule(100003,use_cache=False).right_ideals(500)\nCPU times: user 275.69 s, sys: 0.69 s, total: 276.38 s\nWall time: 276.39 s\n```\n\n\nThe same idea can be applied to `hecke_matrix_directly` so that computing decomposition of the Brandt module scales better (maybe quasi-linear, definitely sub-quadratic).",
     "created_at": "2009-03-27T04:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42923",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42839",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -497,15 +495,15 @@ The same idea can be applied to `hecke_matrix_directly` so that computing decomp
 
 ---
 
-archive/issue_comments_042924.json:
+archive/issue_comments_042840.json:
 ```json
 {
     "body": "Here's a similar patch for `BrandtModule._compute_hecke_matrix_directly()`:\n\n```\ndiff -r e8e97f260027 sage/modular/quatalg/brandt.py\n--- a/sage/modular/quatalg/brandt.py    Thu Mar 26 12:34:13 2009 -0700\n+++ b/sage/modular/quatalg/brandt.py    Thu Mar 26 22:09:42 2009 -0700\n@@ -822,7 +822,7 @@\n         \"\"\"\n         return self._compute_hecke_matrix_brandt(n, sparse=sparse)\n \n-    def _compute_hecke_matrix_directly(self, n, sparse=False):\n+    def _compute_hecke_matrix_directly(self, n, B=None, sparse=False):\n         \"\"\"\n         Given an integer n coprime to the level, return the matrix of\n         the n-th Hecke operator on self, computed on our fixed basis\n@@ -881,17 +881,27 @@\n         # of ideals modulo equivalence -- we always provably check\n         # equivalence if the theta series are the same up to this\n         # bound.\n-        B = self.hecke_bound() + 5\n+        if B is None:\n+            B = self.hecke_bound() + 5\n \n         T = matrix(self.base_ring(), self.dimension(), sparse=sparse)\n         C = self.right_ideals()\n-        r = 0\n-        for I in C:\n-            for J in self.cyclic_supermodules(I, n):\n-                for i in range(len(C)):\n-                    if C[i].is_equivalent(J, B):\n+        theta_dict = {}\n+        for i in range(len(C)):\n+           I_theta = tuple(C[i].theta_series_vector(B))\n+           if I_theta in theta_dict:\n+               theta_dict[I_theta].append(i)\n+           else:\n+               theta_dict[I_theta] = [i]\n+        for r in range(len(C)):\n+            for J in self.cyclic_supermodules(C[r], n):\n+                J_theta = tuple(J.theta_series_vector(B))\n+                for i in theta_dict[J_theta]:\n+                    CiJbar = C[i].multiply_by_conjugate(J)\n+                    c = CiJbar.theta_series_vector(2)[1]\n+                    if c != 0:\n                         T[r,i] += 1\n-            r += 1\n+                        break\n         return T\n \n     def _compute_hecke_matrix_brandt(self, n, sparse=False):\n```\n\nAgain, I'm exposing the bound `B` for tuning; we need to figure out how to pick a sensible default.\n\nNote that, for a fixed value of `B`, the dictionary `theta_dict` is fixed (independent of `n`, that is) so it could be cached to improve running time. Indeed, that information could be cached in `right_ideals()` as it was already computed in there. However, I don't expect more than 10-20% speedup for p=2, less for higher primes, since we are only saving the computation of `n` theta series out of a total of `(p+2)` theta series which need to be computed.\n\nHere's some benchmarks, BEFORE the patch:\n\n```\nsage: B=BrandtModule(1009,use_cache=False)\nsage: time Is=B.right_ideals(40)\nCPU times: user 0.73 s, sys: 0.00 s, total: 0.73 s\nWall time: 0.73 s\nsage: time T2=B._compute_hecke_matrix_directly(2)\nCPU times: user 8.88 s, sys: 0.06 s, total: 8.94 s\nWall time: 8.94 s\n```\n\n\nAFTER the patch:\n\n```\nsage: B=BrandtModule(1009,use_cache=False)\nsage: time Is=B.right_ideals(40)\nCPU times: user 0.75 s, sys: 0.00 s, total: 0.75 s\nWall time: 0.78 s\nsage: time T2=B._compute_hecke_matrix_directly(2,40)\nCPU times: user 1.08 s, sys: 0.00 s, total: 1.08 s\nWall time: 1.08 s\nsage: time T3=B._compute_hecke_matrix_directly(3)\nCPU times: user 1.35 s, sys: 0.01 s, total: 1.36 s\nWall time: 1.35 s\n```\n\nFor comparision:\n\n```\nsage: time B2=B._compute_hecke_matrix_brandt(2)\nCPU times: user 3.97 s, sys: 0.03 s, total: 4.00 s\nWall time: 4.00 s\n```\n\nBear in mind that after using the brandt method for p=2, computing hecke_matrix_brandt for other p's is instantaneous or at least much faster, but computing with the _directly method will take time proportional to p+1.\n\nIOW, for this dimension, the direct method is better if we only want to compute 3 hecke ops, but the brandt method is better for 4 or more hecke ops.\n\n\nFor larger dimensions, the advantage should be much larger for the direct method:\n\n```\nsage: B=BrandtModule(20011,use_cache=False)\nsage: time Is=B.right_ideals(120)\nprof = [1665, 4994, 4394, 17625, 3327, 1667]\nCPU times: user 27.80 s, sys: 0.10 s, total: 27.90 s\nWall time: 27.91 s\nsage: time T2=B._compute_hecke_matrix_directly(2,120)\nCPU times: user 29.80 s, sys: 0.30 s, total: 30.10 s\nWall time: 30.10 s\nsage: time T2=B._compute_hecke_matrix_directly(3,120)\nCPU times: user 37.45 s, sys: 0.32 s, total: 37.77 s\nWall time: 37.77 s\n```\n\nSince the dimension of the space is 1668, in order to compute brandt matrices we would need 1391946 multiplications of quaternion ideals, same number of theta series computation. That's about 400 times more multiplications than the example for p=1009, hence it could take at least 1600 seconds.",
     "created_at": "2009-03-27T05:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42924",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42840",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -628,15 +626,15 @@ Since the dimension of the space is 1668, in order to compute brandt matrices we
 
 ---
 
-archive/issue_comments_042925.json:
+archive/issue_comments_042841.json:
 ```json
 {
     "body": "Here's the timing for the computation of the Brandt matrix `B_2` for the same example of level `p=20011` using `_compute_hecke_matrix_brandt()`:\n\n```\nsage: B=BrandtModule(20011,use_cache=False)\nsage: time Is=B.right_ideals(120)\nCPU times: user 27.06 s, sys: 0.12 s, total: 27.18 s\nWall time: 27.18 s\nsage: time B2=B._compute_hecke_matrix_brandt(2)\nCPU times: user 20126.94 s, sys: 24.05 s, total: 20150.99 s\nWall time: 20151.13 s\nsage: time B3=B._compute_hecke_matrix_brandt(3)\nCPU times: user 1025.46 s, sys: 0.13 s, total: 1025.59 s\nWall time: 1025.61 s\n```\n\n\nNote that the 1025 seconds of the computation of `B3` seems to be mostly about pushing coefficients around, since the theta series have been computed to 14 coefficients already in the computation of `B2`, i.e. essentially doing this:\n\n```\nsage: n=3 ; BB=B._BrandtModule_class__brandt_series_vectors;\nsage: time B3c = matrix(QQ, [[QQ(BB[i][j][n]) for i in range(m)] for j in range(m)])\nCPU times: user 1030.95 s, sys: 16.70 s, total: 1047.65 s\nWall time: 1047.65 s\n```\n\nAnd despite the fact that `BB[i][j][n]` are already in `QQ` (but they are in fact integers), the following is much faster (*why?*):\n\n```\nsage: B3b = matrix(ZZ, [[ZZ(BB[i][j][n]) for i in range(m)] for j in range(m)])\nCPU times: user 166.30 s, sys: 0.00 s, total: 166.30 s\nWall time: 166.30 s\n```\n\n\nAlso note that the process computing brandt matrices takes `18g` of resident memory in sage.math after this computation (because all the 1668<sup>2</sup>/2 ideal products and the 1668<sup>2</sup> theta series are cached). IOW, I wouldn't be able to do this computation in my laptop.\n\nIn contrast, after computing T2 and T3 using `_directly`, the resident memory is `673m`, and only `166m` if using `sparse=True` option.",
     "created_at": "2009-03-27T14:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42925",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42841",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -682,15 +680,15 @@ In contrast, after computing T2 and T3 using `_directly`, the resident memory is
 
 ---
 
-archive/issue_comments_042926.json:
+archive/issue_comments_042842.json:
 ```json
 {
     "body": "The construction of the brandt matrix at the bottom of `_compute_hecke_matrix_brandt()` can be accelerated quite a lot by this:\n\n```\n             B = self._brandt_series_vectors(2*n+10)  \n         m = len(B)\n         K = self.base_ring()\n-        return matrix(K, [[K(B[i][j][n]) for i in range(m)] for j in range(m)], sparse=sparse)\n+        Bmat = matrix(K, m, m, sparse=sparse)\n+        for i in range(m):\n+            for j in range(m):\n+                Bmat[i,j] = K(B[j][i][n])\n+        return Bmat\n```\n\nIn the example above (p=20011) it would still take 5 hours to compute the first brandt matrix, but I expect only 5 seconds (instead of 1000) to return the second brandt matrix (assuming the coefficients were already precomputed).",
     "created_at": "2009-03-27T14:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42926",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42842",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -714,15 +712,15 @@ In the example above (p=20011) it would still take 5 hours to compute the first 
 
 ---
 
-archive/issue_comments_042927.json:
+archive/issue_comments_042843.json:
 ```json
 {
     "body": "It looks like people are already in the process of reviewing this ticket, but lest there be any question about the pickling changes to sage/structure/parent_gens.pyx, I give that part a positive review.",
     "created_at": "2009-03-27T19:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42927",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42843",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -732,15 +730,15 @@ It looks like people are already in the process of reviewing this ticket, but le
 
 ---
 
-archive/issue_comments_042928.json:
+archive/issue_comments_042844.json:
 ```json
 {
     "body": "Attachment [trac_5520-referee_optimize_bugfix-REDO.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-referee_optimize_bugfix-REDO.patch) by @williamstein created at 2009-03-27 22:38:10\n\ntrac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and fixes to pari interface matrix optimization",
     "created_at": "2009-03-27T22:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42928",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42844",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -752,15 +750,15 @@ trac 5520 -- part 2 -- referee patch and incorporate ideas from gonzalo t., and 
 
 ---
 
-archive/issue_comments_042929.json:
+archive/issue_comments_042845.json:
 ```json
 {
     "body": "from Gonzalo T.",
     "created_at": "2009-03-28T04:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42929",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42845",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -770,15 +768,15 @@ from Gonzalo T.
 
 ---
 
-archive/issue_comments_042930.json:
+archive/issue_comments_042846.json:
 ```json
 {
     "body": "Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-ref-2.patch) by @williamstein created at 2009-03-28 22:28:43",
     "created_at": "2009-03-28T22:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42930",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42846",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -788,15 +786,15 @@ Attachment [trac_5520-ref-2.patch](tarball://root/attachments/some-uuid/ticket55
 
 ---
 
-archive/issue_comments_042931.json:
+archive/issue_comments_042847.json:
 ```json
 {
     "body": "Attachment [trac_5520-rebase3.4.1.alpha0.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0.patch) by @williamstein created at 2009-03-28 22:30:46\n\nThis replaces the above three patches and is rebased against 3.4.1.alpha0.",
     "created_at": "2009-03-28T22:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42931",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42847",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -808,15 +806,15 @@ This replaces the above three patches and is rebased against 3.4.1.alpha0.
 
 ---
 
-archive/issue_comments_042932.json:
+archive/issue_comments_042848.json:
 ```json
 {
     "body": "Attachment [trac_5520-rebase3.4.1.alpha0-part2.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part2.patch) by @williamstein created at 2009-03-28 22:54:12\n\ntiny additional patch fixing some randomness in a doctest in matrix2.pyx; I think this fix is fine since the test is only supposed to test the *speed*",
     "created_at": "2009-03-28T22:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42932",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42848",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -828,15 +826,15 @@ tiny additional patch fixing some randomness in a doctest in matrix2.pyx; I thin
 
 ---
 
-archive/issue_comments_042933.json:
+archive/issue_comments_042849.json:
 ```json
 {
     "body": "These are my final comments on this patch:\n\n- in `quaternion_algebra.py`: definition of `is_equivalent` for class\n  `QuaternionFractionalIdeal_rational`.\n\n The parameter B is auxiliary; it could be a good idea to use a \n default value for it, so that a user doesn't need to specify it.\n\n The choice of B doesn't affect the correctness of the algorithm, \n since full equivalence is tested when the theta series match to \n coefficient B.\n\n\n- in `c_lib/src/convert.c`: definition of `QQ_to_t_FRAC`, maybe it should use \"mkfrac\" instead of \"gdiv\".\n\n Rationale: we do know \"num\" and \"den\" are \"t_INT\" and coprime,\n since they came from a QQ.\n\n Advantage: \"mkfrac\" is a very fast macro vs. \"gdiv\" being a\n function with dispatch on types, and involving a gcd computation.\n\n Example:\n\n Using \"gdiv\":\n {{{\nsage: a=QQ.random_element(10<sup>100,10</sup>100)\nsage: timeit('a._pari_()')\n625 loops, best of 3: 18.8 \u00b5s per loop\n}}}\n\n Using \"mkfrac\":\n {{{\nsage: a=QQ.random_element(10<sup>100,10</sup>100)\nsage: timeit('a._pari_()')\n625 loops, best of 3: 4.01 \u00b5s per loop\n}}}\n\n- in `gen.pyx`, definition of `PariInstance.matrix()`, there's this line:\n {{{\n+        A = self.new_gen(gtomat(zeromat(m,n)))  # the gtomat is very important!!\n}}}\n\n I fail to see why gtomat() is needed. I'm sure you have a very\n good reason, maybe you can document it for the record?\n\n Calling \"gtomat\" doesn't seem to make a significative difference in running time, anyway.",
     "created_at": "2009-03-29T02:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42933",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42849",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -891,15 +889,15 @@ sage: timeit('a._pari_()')
 
 ---
 
-archive/issue_comments_042934.json:
+archive/issue_comments_042850.json:
 ```json
 {
     "body": "Attachment [trac_5520-rebase-ref1.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase-ref1.patch) by @tornaria created at 2009-03-29 02:39:42\n\nSmall patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the first two of my remarks in the last comment",
     "created_at": "2009-03-29T02:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42934",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42850",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -911,15 +909,15 @@ Small patch on top of the rebase to 3.4.1.alpha0; it suggests how to address the
 
 ---
 
-archive/issue_comments_042935.json:
+archive/issue_comments_042851.json:
 ```json
 {
     "body": "I am very happy with trac_5520-rebase-ref1.patch.\n\nRegarding your point 3 about gtomat, I simply do *not* have the slightest clue why gtomat is needed.  However it is.  If it isn't there, PARI will crash/segfault like crazy.  Do you think my putting in a comment that says \"I have no clue why\" is useful?\n\nwilliam",
     "created_at": "2009-03-29T03:15:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42935",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42851",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -933,15 +931,15 @@ william
 
 ---
 
-archive/issue_comments_042936.json:
+archive/issue_comments_042852.json:
 ```json
 {
     "body": "WAIT -- I tested your trac_5520-rebase-ref1.patch and \n\n```\nsage: d = BrandtModule(17,19).decomposition()\n  ***   division by zero\n/scratch/wstein/build/sage-3.4.1.alpha0/local/bin/sage-sage: line 197: 14046 Aborted                 sage-ipython \"$@\" -i\nwstein@sage:/scratch/wstein/build/sage-3.4.1.alpha0$ \n```\n\n\nBut then if I revert it everything works fine again.  So I do *not* agree with it. \n\nIf I revert *only* the change you made involving mkfrac and gdiv, then everything works fine. \n\nI'm posting a patch \"trac_5520-rebase3.4.1.alpha0-part3.patch\" that does *not* make the mkfrac change, and also has a comment about gotomat.   I have run the full test suite on all of sage with that patch applied and everything passes.",
     "created_at": "2009-03-29T03:24:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42936",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42852",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -965,15 +963,15 @@ I'm posting a patch "trac_5520-rebase3.4.1.alpha0-part3.patch" that does *not* m
 
 ---
 
-archive/issue_comments_042937.json:
+archive/issue_comments_042853.json:
 ```json
 {
     "body": "Attachment [trac_5520-rebase3.4.1.alpha0-part3.patch](tarball://root/attachments/some-uuid/ticket5520/trac_5520-rebase3.4.1.alpha0-part3.patch) by @williamstein created at 2009-03-29 03:25:41\n\napply this *instead* of the previous patch!",
     "created_at": "2009-03-29T03:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42937",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42853",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -985,15 +983,15 @@ apply this *instead* of the previous patch!
 
 ---
 
-archive/issue_comments_042938.json:
+archive/issue_comments_042854.json:
 ```json
 {
     "body": "Replying to [comment:22 was]:\n> WAIT -- I tested your trac_5520-rebase-ref1.patch and \n> {{{\n> sage: d = BrandtModule(17,19).decomposition()\n>   ***   division by zero\n> /scratch/wstein/build/sage-3.4.1.alpha0/local/bin/sage-sage: line 197: 14046 Aborted                 sage-ipython \"$`@`\" -i\n> wstein`@`sage:/scratch/wstein/build/sage-3.4.1.alpha0$ \n> }}}\n\nAuch! Sorry for my sloppiness... It looked innocent and the difference in runtime looked interesting. I guess the same issue is behind the need for `gtomat`.\n\nHaving a concrete example where sage crashes without this (gdiv or gtomat) is useful. Maybe it has to do with the layout of the pari objects in the stack --- as some of the copy/restack functions assume some specific order on recursive types. Most of the g* functions ensure returned objects are in the correct layout, but the internal functions don't.",
     "created_at": "2009-03-29T03:36:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42938",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42854",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -1014,15 +1012,15 @@ Having a concrete example where sage crashes without this (gdiv or gtomat) is us
 
 ---
 
-archive/issue_comments_042939.json:
+archive/issue_comments_042855.json:
 ```json
 {
     "body": "For the record (kind of unrelated), the following line:\n\n```\nmatrix(QQ,2,2,[1,0,0,1])._pari_().qfrep(10)\n```\n\nreproduces the need for using `gdiv` and `gtomat`. Indeed, if `gtomat` is removed(for this case in `sage/matrix/matrix_rational_dense.pyx`), then pari raises\n\n```\nPariError:  (8)\n```\n\nOTOH, if `gtomat` is used, but `gdiv` is replaced by `mkfrac`, then pari raises\n\n```\nPariError: incorrect type (20)\n```\n\n\nThe latter makes a lot of sense, since `qfrep` indeed expects a matrix with *integer* coefficients, but we are passing a matrix with rational coefficients, which just happen to be of the form `a/1`. Now, of course, when calling `mkfrac(a,1)`, we obtain a fraction, but when calling `gdi(a,1)` we get `a` as a \"t_INT\".",
     "created_at": "2009-03-29T04:18:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42939",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42855",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -1051,15 +1049,15 @@ The latter makes a lot of sense, since `qfrep` indeed expects a matrix with *int
 
 ---
 
-archive/issue_comments_042940.json:
+archive/issue_comments_042856.json:
 ```json
 {
     "body": "I have looked at all the new code in that touches linear algebra (mostly fast pari conversion and using pari for small examples) and it all looks very good. Lots of cleanup of old code (e.g. pre-list-comprehension) and doctests too. I'll second the positive review for this part of the code. \n\nSome notes, but certainly not a blockers: it would be nice to split the pari declarations so you don't have to do \"cdef extern from 'pari/pari.h'\" in two places (and perhaps elsewhere). Also, did you know there is are mpz_swap and mpq_swap functions (that are much faster than using a tmp and mpz_set/mpq_set).",
     "created_at": "2009-03-29T10:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42940",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42856",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -1071,15 +1069,15 @@ Some notes, but certainly not a blockers: it would be nice to split the pari dec
 
 ---
 
-archive/issue_comments_042941.json:
+archive/issue_comments_042857.json:
 ```json
 {
     "body": "Merged \n\n* trac_5520-rebase3.4.1.alpha0.patch\n* trac_5520-rebase3.4.1.alpha0-part2.patch\n* trac_5520-rebase3.4.1.alpha0-part3.patch\n\nin Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T03:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42941",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42857",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -1099,15 +1097,15 @@ Michael
 
 ---
 
-archive/issue_comments_042942.json:
+archive/issue_comments_042858.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-31T03:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42942",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5520#issuecomment-42858",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

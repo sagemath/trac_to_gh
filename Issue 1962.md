@@ -6,15 +6,14 @@ archive/issues_001962.json:
     "body": "Assignee: @rlmill\n\n\n```\nsage: g = Graph({0: [0,1,1,2]}, loops=True, multiedges=True)\nsage: g.set_edge_label(0,0,'test')\nsage: g.edges()\n\n[(0, 0, 'e'),\n (0, 0, 's'),\n (0, 0, 't'),\n (0, 0, 't'),\n (0, 1, None),\n (0, 1, None),\n (0, 2, None)]\n```\n\n\nI suggest that set_edge_labels should *never* create an edge or the function name should be changed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1962\n\n",
     "created_at": "2008-01-28T19:49:16Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "set_edge_label creates edges when multiple edges are allowed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1962",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1962
 
 ---
 
-archive/issue_comments_012670.json:
+archive/issue_comments_012639.json:
 ```json
 {
     "body": "This is not a bug in `set_edge_label` itself:\n\n```\nsage: g._nxg.adj\n{0: {0: 'test', 1: [None, None], 2: [None]},\n 1: {0: [None, None]},\n 2: {0: [None]}}\n```\n\nIt is in fact a bug in NetworkX's `edges` function:\n\n```\nsage: g._nxg.edges()\n[(0, 0, 't'),\n (0, 0, 'e'),\n (0, 0, 's'),\n (0, 0, 't'),\n (0, 1, None),\n (0, 1, None),\n (0, 2, None)]\n```\n",
     "created_at": "2008-02-17T00:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12670",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12639",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -84,15 +83,15 @@ sage: g._nxg.edges()
 
 ---
 
-archive/issue_comments_012671.json:
+archive/issue_comments_012640.json:
 ```json
 {
     "body": "My mistake: when multiple edges is True, the representation is slightly different:\n\n```\nsage: G = Graph({0:[1]})\nsage: G._nxg.adj\n{0: {1: None}, 1: {0: None}}\nsage: G = Graph({0:[1]}, multiedges=True)\nsage: G._nxg.adj\n{0: {1: [None]}, 1: {0: [None]}}\n```\n",
     "created_at": "2008-02-17T00:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12671",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12640",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -112,15 +111,15 @@ sage: G._nxg.adj
 
 ---
 
-archive/issue_comments_012672.json:
+archive/issue_comments_012641.json:
 ```json
 {
     "body": "In fact, `set_edge_label` only makes sense when there is only one possible edge whose label is to be set: if there is more than one, which label to set?",
     "created_at": "2008-02-17T00:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12672",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12641",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -130,15 +129,15 @@ In fact, `set_edge_label` only makes sense when there is only one possible edge 
 
 ---
 
-archive/issue_comments_012673.json:
+archive/issue_comments_012642.json:
 ```json
 {
     "body": "Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.patch) by @rlmill created at 2008-02-17 00:24:54",
     "created_at": "2008-02-17T00:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12673",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12642",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -148,15 +147,15 @@ Attachment [1962.patch](tarball://root/attachments/some-uuid/ticket1962/1962.pat
 
 ---
 
-archive/issue_comments_012674.json:
+archive/issue_comments_012643.json:
 ```json
 {
     "body": "Attachment [1962-ref.patch](tarball://root/attachments/some-uuid/ticket1962/1962-ref.patch) by @ncalexan created at 2008-02-26 01:06:04\n\nAfter discussion on IRC, this looks good to me.  Apply.  Needs both patches, -ref second.",
     "created_at": "2008-02-26T01:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12674",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12643",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -168,15 +167,15 @@ After discussion on IRC, this looks good to me.  Apply.  Needs both patches, -re
 
 ---
 
-archive/issue_comments_012675.json:
+archive/issue_comments_012644.json:
 ```json
 {
     "body": "Merged both patches in Sage 2.10.3.alpha0",
     "created_at": "2008-02-26T01:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12675",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12644",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -186,15 +185,15 @@ Merged both patches in Sage 2.10.3.alpha0
 
 ---
 
-archive/issue_comments_012676.json:
+archive/issue_comments_012645.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-26T01:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1962",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12676",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1962#issuecomment-12645",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

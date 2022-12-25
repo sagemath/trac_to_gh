@@ -6,15 +6,13 @@ archive/issues_000424.json:
     "body": "Assignee: somebody\n\nThe GMP development page\n   http://gmplib.org/devel/\nhas some code for fast GCD/XGCD of huge operands. It might not appear for a while in official releases, but they claim it's stable, and I'm interested in patching it into SAGE. I tried to do this and got stuck on configuration problems that a linux/GNU guru could help with.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/424\n\n",
     "created_at": "2007-08-11T17:16:52Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "GMP development code for fast GCD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/424",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -32,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/424
 
 ---
 
-archive/issue_comments_002123.json:
+archive/issue_comments_002114.json:
 ```json
 {
     "body": "I tried for a while to get the patch to work.  I think it doesn't work against\nthe latest GMP release (plain vanilla), which is newer than the last change of that patch:\n\n\n```\n`echo gcd | sed 's/_$//'`    -O2 -m64 -mtune=k8 -c -o gcd.lo gcd.c\n gcc -DHAVE_CONFIG_H -I. -I. -I.. -D__GMP_WITHIN_GMP -I.. -DOPERATION_gcd -O2 -m64 -mtune=k8 -c gcd.c  -fPIC -DPIC -o .libs/gcd.o\ngcd.c: In function 'gcd_schoenhage':\ngcd.c:702: error: storage size of 'hgcd' isn't known\ngcd.c:703: error: storage size of 'quotients' isn't known\ngcd.c:704: error: array type has incomplete element type\ngcd.c:748: error: 'GCD_SCHOENHAGE_THRESHOLD' undeclared (first use in this function)\ngcd.c:748: error: (Each undeclared identifier is reported only once\ngcd.c:748: error: for each function it appears in.)\ngcd.c:778: error: storage size of '__nhgcd_swap4_left_tmp' isn't known\ngcd.c:796: error: invalid use of undefined type 'struct hgcd_row'\ngcd.c:800: error: storage size of '__nhgcd_swap4_2_tmp' isn't known\ngcd.c: In function '__gmpn_gcd':\ngcd.c:831: error: 'GCD_SCHOENHAGE_THRESHOLD' undeclared (first use in this function)\nmake[2]: *** [gcd.lo] Error 1\nmake[2]: Leaving directory `/home/was/sage2.8/sage-2.8/spkg/build/gmp-4.2.1.p9/src/mpn'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/was/sage2.8/sage-2.8/spkg/build/gmp-4.2.1.p9/src'\nmake: *** [all] Error 2\n```\n\n\nThis isn't a problem with autoconf, etc.,  -- it s  a problem with the patch simply not working.\n\nWilliam",
     "created_at": "2007-08-16T09:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2123",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2114",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -79,15 +77,15 @@ William
 
 ---
 
-archive/issue_comments_002124.json:
+archive/issue_comments_002115.json:
 ```json
 {
     "body": "Well no, I *did* actually get the patch compiling in a standalone setting, after manually fiddling with autoconf (etc) output files. But I couldn't get it compiling in SAGE, now I can't quite remember why.\n\nIt might help to check out the doc/configuration file in GMP, which explains in some detail how to add new files to GMP.",
     "created_at": "2007-08-21T01:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2124",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2115",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -99,15 +97,15 @@ It might help to check out the doc/configuration file in GMP, which explains in 
 
 ---
 
-archive/issue_comments_002125.json:
+archive/issue_comments_002116.json:
 ```json
 {
     "body": "patch that at least puts some files in the right places",
     "created_at": "2007-09-06T16:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2125",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2116",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -117,15 +115,15 @@ patch that at least puts some files in the right places
 
 ---
 
-archive/issue_comments_002126.json:
+archive/issue_comments_002117.json:
 ```json
 {
     "body": "Attachment [gcd1.patch](tarball://root/attachments/some-uuid/ticket424/gcd1.patch) by dmharvey created at 2007-09-06 16:54:05\n\nI've attached an initial patch which I believe puts all the right files and new lines of code in the right places. I haven't tried building yet. Apply this patch by `patch -p1 < gcd1.patch` in the gmp-4.2.1 directory.",
     "created_at": "2007-09-06T16:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2126",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2117",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -137,15 +135,15 @@ I've attached an initial patch which I believe puts all the right files and new 
 
 ---
 
-archive/issue_comments_002127.json:
+archive/issue_comments_002118.json:
 ```json
 {
     "body": "fixed up various configuration/build files to work properly",
     "created_at": "2007-09-06T19:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2127",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2118",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -155,15 +153,15 @@ fixed up various configuration/build files to work properly
 
 ---
 
-archive/issue_comments_002128.json:
+archive/issue_comments_002119.json:
 ```json
 {
     "body": "Attachment [gcd2.patch](tarball://root/attachments/some-uuid/ticket424/gcd2.patch) by dmharvey created at 2007-09-07 01:16:25\n\npatch for gmp spkg",
     "created_at": "2007-09-07T01:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2128",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2119",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -175,15 +173,15 @@ patch for gmp spkg
 
 ---
 
-archive/issue_comments_002129.json:
+archive/issue_comments_002120.json:
 ```json
 {
     "body": "Attachment [fastgcd.hg](tarball://root/attachments/some-uuid/ticket424/fastgcd.hg) by dmharvey created at 2007-09-07 01:19:10\n\nI just attached a patch (`fastgcd.hg`) which should be applied to the GMP spkg (`gmp-4.2.1.p9.spkg`. BTW the file `spkg-install~` should be deleted from that spkg too.) This patch supersedes the files `gcd1.patch` and `gcd2.patch`. This new patch adds all relevant files, and also modifies the build scripts. (It also addresses #605, I hope). I've tested it on OSX ppc and intel, haven't tested it on sage.math yet.",
     "created_at": "2007-09-07T01:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2129",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2120",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -195,15 +193,15 @@ I just attached a patch (`fastgcd.hg`) which should be applied to the GMP spkg (
 
 ---
 
-archive/issue_comments_002130.json:
+archive/issue_comments_002121.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-09T16:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2130",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/424#issuecomment-2121",
+    "user": "https://github.com/williamstein"
 }
 ```
 

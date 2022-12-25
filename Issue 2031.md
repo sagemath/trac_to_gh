@@ -6,15 +6,14 @@ archive/issues_002031.json:
     "body": "Assignee: @williamstein\n\nCC:  @orlitzky\n\nIt would be fair to argue that this is pretty sucky behavior in Sage:\n\n\n```\nteragon:~ was$ build/sage-2.10.1.rc4/sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.1.rc4, Release Date: 2008-01-31                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: time 2 + 2     # can Sage add 2 and 2?\nObject `time Integer(2) + Integer(2)     # can Sage add 2 and 2` not found.\nsage: time 2 + 2     # Sage can add 2 and 2\n------------------------------------------------------------\n   File \"<timed exec>\", line 1\n     Integer(2) + Integer(2)     \\# Sage can add 2 and 2\n                                                       ^\n<type 'exceptions.SyntaxError'>: unexpected character after line continuation character\n\n```\n\n\nI'm to blame for both bugs, of course... :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2031\n\n",
     "created_at": "2008-02-02T08:36:25Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "serious preparser lameness involving time and comments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2031",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2031
 
 ---
 
-archive/issue_comments_013144.json:
+archive/issue_comments_013113.json:
 ```json
 {
     "body": "Here is yet another problem with time. The following should print out 4 but doesn't.\n\n```\nsage: time a = 2 + 2; a\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n```\n\nIt should print 4 since this does:\n\n```\nsage: a = 2 + 2; a\n4\n```\n",
     "created_at": "2008-02-02T08:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13144",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13113",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -84,15 +83,15 @@ sage: a = 2 + 2; a
 
 ---
 
-archive/issue_comments_013145.json:
+archive/issue_comments_013114.json:
 ```json
 {
     "body": "A related problem:\n\n```\n\n\nOn Mon, Feb 25, 2008 at 10:06 AM, Nick Alexander  wrote:\n> \n>  > It might be.  I don't like the time function as it is written now,\n>  > since it's\n>  > done with the preparser and doesn't work when it isn't the first\n>  > thing on\n>  > a line, which is annoying.\n>  >\n>  > sage: 2 + 2; time 2 + 2\n>  > ------------------------------------------------------------\n>  >    File \"<ipython console>\", line 1\n>  >      Integer(2) + Integer(2); time Integer(2) + Integer(2)\n>  >                                          ^\n>  > <type 'exceptions.SyntaxError'>: invalid syntax\n>  >\n>  > Hey, Nick, want to fix that? ;-)\n>  \n>  Such things are legion, and it's actually an IPython problem.  \n\nI think this is a Sage problem.  \n\n  sage: time foo\n\nis dealt with by the Sage preparser.  It's code I wrote and you've\nprobably looked at...\n\nWilliam\n\n> For\n>  example, 'x = 2; x?' will also fail.\n\nThat's an ipython problem. \n\n>  We could fix it, but it's likely to not be a general fix.  Open a\n>  trac ticket and maybe it will get dealt with :)\n>  \n>  Nick\n>  \n> \n\n```\n",
     "created_at": "2008-02-25T18:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13145",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13114",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -148,15 +147,15 @@ That's an ipython problem.
 
 ---
 
-archive/issue_comments_013146.json:
+archive/issue_comments_013115.json:
 ```json
 {
     "body": "Well, some of them are fixed:\n\n\n```\nsage: time a = 2 + 2; a\nTime: CPU 0.00 s, Wall: 0.00 s\n4\nsage: 2 + 2; time 2 + 2\n4\n4\nTime: CPU 0.00 s, Wall: 0.00 s\n```\n\n\nBut with a comment on the line, we get no timings:\n\n\n```\nsage: time 2 + 2     # Or don't\n4\nsage:\n```\n",
     "created_at": "2012-01-09T02:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13146",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13115",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -188,15 +187,15 @@ sage:
 
 ---
 
-archive/issue_comments_013147.json:
+archive/issue_comments_013116.json:
 ```json
 {
     "body": "`%time` is now handled by IPython and works with the comment lines.  We still have \n\n\n```\nsage: %time a = 2 + 2; a      \nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```\n\n\nbut I think we can close this ticket.",
     "created_at": "2013-07-22T16:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13147",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13116",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -216,15 +215,15 @@ but I think we can close this ticket.
 
 ---
 
-archive/issue_comments_013148.json:
+archive/issue_comments_013117.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-07-22T16:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13148",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13117",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -234,15 +233,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_013149.json:
+archive/issue_comments_013118.json:
 ```json
 {
     "body": "Replying to [comment:4 mhansen]:\n> `%time` is now handled by IPython and works with the comment lines.  We still have \n> \n> {{{\n> sage: %time a = 2 + 2; a      \n> CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n> Wall time: 0.00 s\n> }}}\n> \n> but I think we can close this ticket.\n\nMy 2 cents.   I wouldn't close this.  This is in my opinion a bug in Ipython now, but it is still a bug.  \n\nFor comparison in a worksheet in https://cloud.sagemath.com, where I implemented things from scratch (yet again), this works just fine:\n\n\n```\nINPUT: %time a = 2 + 2; a # or don't\nOUTPUT: 4\nCPU time: 0.00 s, Wall time: 0.00 s\n```\n\n\nIt's bad for the behavior of a single line to depend on whether or not it has %time in front of it.    I don't know why IPython doesn't respect the sys.displayhook though.\n\nPerhaps this should be a new ticket though, and it should be reported upstream to ipython.  I.e., it's not longer a \"Sage preparser\" issue.",
     "created_at": "2013-07-23T17:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13149",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2031#issuecomment-13118",
+    "user": "https://github.com/williamstein"
 }
 ```
 

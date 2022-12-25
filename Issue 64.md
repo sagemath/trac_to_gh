@@ -6,14 +6,13 @@ archive/issues_000064.json:
     "body": "Assignee: somebody\n\n\n```\nsage: 1/(1 + 3*5^5 + O(5^50))\n1 + 2*5^5 + 4*5^6 + 4*5^7 + 4*5^8 + 4*5^9 + 3*5^10 + 5^11 + 3*5^15 + 4*5^16 + 3*5^17\n+ 4*5^18 + 4*5^19 + O(5^20)\n```\n\n\nThe answer should be returned to precision 50.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/64\n\n",
     "created_at": "2006-09-15T21:28:30Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "division in pAdicField truncates precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/64",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/64
 
 ---
 
-archive/issue_comments_000333.json:
+archive/issue_comments_000332.json:
 ```json
 {
     "body": "Changing assignee from somebody to dmharvey.",
     "created_at": "2006-09-26T22:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/64",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-333",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-332",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -55,15 +54,15 @@ Changing assignee from somebody to dmharvey.
 
 ---
 
-archive/issue_comments_000334.json:
+archive/issue_comments_000333.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2006-10-10T23:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/64",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-334",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-333",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -73,15 +72,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000335.json:
+archive/issue_comments_000334.json:
 ```json
 {
     "body": "this is fixed in sage 1.4",
     "created_at": "2006-10-10T23:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/64",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-335",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/64#issuecomment-334",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 

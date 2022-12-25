@@ -6,7 +6,7 @@ archive/issues_005343.json:
     "body": "Assignee: @haraldschilly\n\nAfter updating to Trac 0.11.3, the login link takes the user to the front page instead of the page they were looking at when they tried to login. It's annoying to go back and refresh to add some comments to an issue you were looking at.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5343\n\n",
     "created_at": "2009-02-22T20:54:07Z",
     "labels": [
-        "website/wiki",
+        "component: website/wiki",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005343.json:
     "title": "trac login redirects to the front page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5343",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @haraldschilly
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5343
 
 ---
 
-archive/issue_comments_041155.json:
+archive/issue_comments_041075.json:
 ```json
 {
     "body": "This ticket can be closed now. There's no patch to merge. I can confirm that when I login, I'm still at the page I was looking at.",
     "created_at": "2009-06-27T00:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5343#issuecomment-41155",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5343#issuecomment-41075",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -47,15 +47,15 @@ This ticket can be closed now. There's no patch to merge. I can confirm that whe
 
 ---
 
-archive/issue_comments_041156.json:
+archive/issue_comments_041076.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2009-07-04T01:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5343#issuecomment-41156",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5343#issuecomment-41076",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -65,15 +65,15 @@ Resolution: worksforme
 
 ---
 
-archive/issue_comments_041157.json:
+archive/issue_comments_041077.json:
 ```json
 {
     "body": "A big *THANKS* to whoever fixed this recently.  I really appreciate this!",
     "created_at": "2009-07-20T12:40:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5343#issuecomment-41157",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5343#issuecomment-41077",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

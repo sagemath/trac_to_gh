@@ -6,15 +6,13 @@ archive/issues_009690.json:
     "body": "Assignee: mvngu\n\nCC:  @haraldschilly\n\nThe Developer's Guide should distinguish between the following Sage packages: standard, optional, and experimental. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/85f94526238f6e6a/) thread for a start.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9690\n\n",
     "created_at": "2010-08-05T09:18:16Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "explain differences between standard, optional, and experimental packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9690",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: mvngu
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9690
 
 ---
 
-archive/issue_comments_094188.json:
+archive/issue_comments_094031.json:
 ```json
 {
     "body": "Since I wrote the definition in the thread, here a revised summary:\n\n* standard\n  * included in sage by default\n  * runs on all supported platforms and systems\n  * well tested, this means all needed functionality is doctested via the sage library\n  * sage project as a whole is responsible\n  * updates go through trac + extensive review\n\n* optional\n  * not included by default\n  * should run on all platforms, unless explicitly noted (i.e. this could be a reason why it cannot be a standard package, e.g. \"valgrind\")\n  * sage project as a whole is responsible\n  * updates go through trac + review\n\n* contributed (formerly known as \"experimental\")\n  * not included by default\n  * sage project is not responsible, it's the responsibility of the contributor(s) (maintainer(s)) that it works. he or she is also the dedicated contact person. \n  * doesn't need to run on all platforms, maybe it doesn't run at all (i.e. broken optional package)\n  * updates to through trac, with comments, date and maybe a discussion, but there is no review. \n\nAll three types follow the common layout of an SPKG, i.e. the install and (optional) check scripts, the mercurial repository excluding the untouched \"src\" dir and the SPKG.txt from where it should be possible to extract the description text. (sage -pkg checks that anyways, doesn't it?)",
     "created_at": "2010-08-05T13:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94188",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94031",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -70,15 +68,15 @@ All three types follow the common layout of an SPKG, i.e. the install and (optio
 
 ---
 
-archive/issue_comments_094189.json:
+archive/issue_comments_094032.json:
 ```json
 {
     "body": "A few comments\n\n## Supported platforms\n\nThis bit of the developers guide should have a link to http://wiki.sagemath.org/SupportedPlatforms where the supported platforms are listed. (There needs to be other links in other parts of the developers and user's guide too, but this is one place where a link needs to be). Otherwise people wont know what platforms their optional packages are supposed to be tested on. \n\n## Optional packages\n\nThere should be a comment that optional packages must work on all supported platforms unless there is a **very** good reason why it can't be run on all platforms. (Valgrid is the obvious example of where there's a very good reason). What I am keen to avoid is an optional package, saying \"It's only supported on Linux\", and not making sufficient effort to actually get it working on any other platforms. \n\nI think if optional packages are .spkg files, then there should be an spkg-check file to run any self-tests that package may have. \n\n## Experimental packages\n\nAlthough it should not be a requirement, I think we should say people are **encouraged** to add doc tests and if appropriate an `SPKG.txt` and `spkg-check` file. \n\n\n\nIs anyone intending to write this? I would like to see this in the developers guide, but don't know how to write the documentation myself, and have so many tickets I'm involved in now, this is not something I have a lot of time for myself. Someone who knows what they are doing can probably do it in a tenth of the time I could. \n\nDave",
     "created_at": "2010-11-10T15:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94189",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94032",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -108,15 +106,15 @@ Dave
 
 ---
 
-archive/issue_comments_094190.json:
+archive/issue_comments_094033.json:
 ```json
 {
     "body": "I personally think the word \"Experimental\" does imply the packages are less well tested than \"Optional\" whereas the same can not be said of \"Contributed\". But I guess this is a matter of taste - it's not something I have a big issue with. \n\nDave",
     "created_at": "2010-11-10T15:30:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94190",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94033",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -128,15 +126,15 @@ Dave
 
 ---
 
-archive/issue_comments_094191.json:
+archive/issue_comments_094034.json:
 ```json
 {
     "body": "Also, if renamed, then the top level Makefile, and possible other files would need editing. Is it really worth renaming them?\n\nDave",
     "created_at": "2010-11-18T09:28:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94191",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94034",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -148,15 +146,15 @@ Dave
 
 ---
 
-archive/issue_comments_094192.json:
+archive/issue_comments_094035.json:
 ```json
 {
     "body": "Since nobody appears to be doing this, I'll write this page, though it would be good to get some agreement on a few issues before I write it. \n\nDave",
     "created_at": "2010-11-18T09:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94192",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94035",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -168,15 +166,15 @@ Dave
 
 ---
 
-archive/issue_comments_094193.json:
+archive/issue_comments_094036.json:
 ```json
 {
     "body": "Changing assignee from mvngu to drkirkby.",
     "created_at": "2010-11-18T09:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94193",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94036",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -186,15 +184,15 @@ Changing assignee from mvngu to drkirkby.
 
 ---
 
-archive/issue_comments_094194.json:
+archive/issue_comments_094037.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2015-09-22T12:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94194",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94037",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -204,15 +202,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_094195.json:
+archive/issue_comments_094038.json:
 ```json
 {
     "body": "Please see #19267 which has a section about this.",
     "created_at": "2015-09-22T12:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94195",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94038",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -222,15 +220,15 @@ Please see #19267 which has a section about this.
 
 ---
 
-archive/issue_comments_094196.json:
+archive/issue_comments_094039.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-09-22T12:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94196",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94039",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -240,15 +238,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094197.json:
+archive/issue_comments_094040.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-09-25T08:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9690",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94197",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9690#issuecomment-94040",
+    "user": "https://github.com/vbraun"
 }
 ```
 

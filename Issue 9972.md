@@ -6,15 +6,14 @@ archive/issues_009972.json:
     "body": "Assignee: @jasongrout\n\nCC:  @qed777\n\nIn #9343, all files in the directory `data/extcode/pari/SEA` were removed, but the directory structure is still there.\n\nThere is no patch for this, the release manager should remove the directory manually.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9973\n\n",
     "created_at": "2010-09-23T08:37:20Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Remove empty directory data/extcode/pari/SEA",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9972",
-    "user": "@jdemeyer"
+    "user": "https://github.com/jdemeyer"
 }
 ```
 Assignee: @jasongrout
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9973
 
 ---
 
-archive/issue_comments_100064.json:
+archive/issue_comments_099898.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-23T08:38:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-100064",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-99898",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_100065.json:
+archive/issue_comments_099899.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-09-23T22:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-100065",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-99899",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_100066.json:
+archive/issue_comments_099900.json:
 ```json
 {
     "body": "This is not very difficult to review.",
     "created_at": "2010-09-23T22:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-100066",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-99900",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -87,15 +86,15 @@ This is not very difficult to review.
 
 ---
 
-archive/issue_comments_100067.json:
+archive/issue_comments_099901.json:
 ```json
 {
     "body": "Replying to [comment:2 drkirkby]:\n> This is not very difficult to review. \n\nThanks.  Please see also #10001.",
     "created_at": "2010-09-24T11:30:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-100067",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-99901",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -108,15 +107,15 @@ Thanks.  Please see also #10001.
 
 ---
 
-archive/issue_comments_100068.json:
+archive/issue_comments_099902.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-29T09:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9972",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-100068",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9972#issuecomment-99902",
+    "user": "https://github.com/qed777"
 }
 ```
 

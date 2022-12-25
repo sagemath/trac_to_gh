@@ -6,14 +6,13 @@ archive/issues_000057.json:
     "body": "Assignee: somebody\n\nThe following calculation should be virtually instantaneous:\n\n\n```\nsage: x = 2**120000/3**100000\nsage: K = pAdicField(5, 5)\nsage: time y = K(x)\nCPU times: user 2.72 s, sys: 0.00 s, total: 2.72 s\nWall time: 2.72\n```\n\n\nIt should take about as long as just reducing numerator and denominator separately:\n\n```\nsage: time z = K(x.numerator())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n\nsage: time z = K(x.denominator())\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/57\n\n",
     "created_at": "2006-09-14T01:55:25Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "certain p-adic coercions insanely slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/57",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/57
 
 ---
 
-archive/issue_comments_000302.json:
+archive/issue_comments_000301.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2006-09-16T05:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/57",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/57#issuecomment-302",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/57#issuecomment-301",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -70,15 +69,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000303.json:
+archive/issue_comments_000302.json:
 ```json
 {
     "body": "Fixed:\n\nThu Sep 14 19:17:11 PDT 2006  dmharvey`@`math.harvard.edu\n* padic.py -- fixes trac bug #57",
     "created_at": "2006-09-16T05:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/57",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/57#issuecomment-303",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/57#issuecomment-302",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 

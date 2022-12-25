@@ -6,15 +6,13 @@ archive/issues_003494.json:
     "body": "Assignee: @craigcitro\n\nLots of things that are matrix-related in `sage` use `var`, whereas `name` would often be more appropriate. Someone should fix this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3494\n\n",
     "created_at": "2008-06-23T18:49:35Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "var --> name",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3494",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3494
 
 ---
 
-archive/issue_comments_024605.json:
+archive/issue_comments_024556.json:
 ```json
 {
     "body": "He's talking about the name of the keyword arguments.\n\n\n```\n[23:39] <jason--> craigcitro: 3494 is awfully vague\n[23:39] <craigcitro> hah, true\n[23:39] <craigcitro> but it's also sad that it's not uniform\n[23:39] <craigcitro> the number of times i have to try three different things to find the right argument is sad\n[23:40] <jason--> Can you at least point out one instance?\n[23:41] <craigcitro> charpoly, minpoly, eigenspaces\n[23:41] <jason--> mabshoff: what is the status on 3435?\n[23:41] <craigcitro> whereas, say, PolynomialRing uses name\n[23:41] <craigcitro> seems like it should just uniformly be name.\n```\n",
     "created_at": "2008-11-14T05:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24605",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24556",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -61,15 +59,15 @@ He's talking about the name of the keyword arguments.
 
 ---
 
-archive/issue_comments_024606.json:
+archive/issue_comments_024557.json:
 ```json
 {
     "body": "Outdated, too late to change it.",
     "created_at": "2021-11-16T05:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24606",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24557",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -79,15 +77,15 @@ Outdated, too late to change it.
 
 ---
 
-archive/issue_comments_024607.json:
+archive/issue_comments_024558.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2021-11-16T05:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24607",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24558",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -97,15 +95,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_024608.json:
+archive/issue_comments_024559.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2021-11-16T08:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24608",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24559",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -115,15 +113,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_024609.json:
+archive/issue_comments_024560.json:
 ```json
 {
     "body": "I don't like the \"too late\" argument. But since we can do\n\n```\nsage: m = matrix(2,[1,2,3,4])\nsage: var('y')\ny\nsage: m.charpoly(y)\ny^2 - 5*y - 2\n```\n\nit is not clear if `name` is preferable than `var`. So let's close this ticket until we have a fresh discussion, which is too late perhaps...",
     "created_at": "2021-11-16T08:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24609",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24560",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -143,15 +141,15 @@ it is not clear if `name` is preferable than `var`. So let's close this ticket u
 
 ---
 
-archive/issue_comments_024610.json:
+archive/issue_comments_024561.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2021-11-20T23:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3494",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24610",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/3494#issuecomment-24561",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_007114.json:
     "body": "Assignee: somebody\n\nCC:  @rbeezer @rwst\n\nKeywords: cryptanalysis\n\nImplement cryptanalytic techniques for the following classical ciphers:\n\n* Hill or matrix cipher\n* shift cipher\n* substitution cipher\n* transposition cipher\n* Vigenere cipher\n\nIssue created by migration from https://trac.sagemath.org/ticket/7114\n\n",
     "created_at": "2009-10-04T17:33:49Z",
     "labels": [
-        "cryptography",
-        "major",
-        "enhancement"
+        "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "cryptanalysis of classical ciphers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7114",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: somebody

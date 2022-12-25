@@ -6,7 +6,7 @@ archive/issues_007103.json:
     "body": "Assignee: tbd\n\nSee #7079\n\nIssue created by migration from https://trac.sagemath.org/ticket/7103\n\n",
     "created_at": "2009-10-03T23:58:08Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007103.json:
     "title": "fix \"mysterious error\" in parallel doctesting first time: see ticket #7079",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7103",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7103
 
 ---
 
-archive/issue_comments_058785.json:
+archive/issue_comments_058675.json:
 ```json
 {
     "body": "Here's an attempt.  If init.sage isn't present, then run the script \"sage-starts\".  I think this makes all of the appropriate subdirectories of .sage.  In any case, it seems to fix the problem for me.",
     "created_at": "2009-10-04T00:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58785",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58675",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -47,15 +47,15 @@ Here's an attempt.  If init.sage isn't present, then run the script "sage-starts
 
 ---
 
-archive/issue_comments_058786.json:
+archive/issue_comments_058676.json:
 ```json
 {
     "body": "Attachment [trac_7103-scripts.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts.patch) by @jhpalmieri created at 2009-10-04 00:34:35\n\napply to scripts repository",
     "created_at": "2009-10-04T00:34:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58786",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58676",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -67,15 +67,15 @@ apply to scripts repository
 
 ---
 
-archive/issue_comments_058787.json:
+archive/issue_comments_058677.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-10T13:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58787",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58677",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -85,15 +85,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_058788.json:
+archive/issue_comments_058678.json:
 ```json
 {
     "body": "Applied patch, ran the test and still got the errors. `sage-starts` does not create the directories, at least in my system.",
     "created_at": "2009-10-10T13:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58788",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58678",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -103,15 +103,15 @@ Applied patch, ran the test and still got the errors. `sage-starts` does not cre
 
 ---
 
-archive/issue_comments_058789.json:
+archive/issue_comments_058679.json:
 ```json
 {
     "body": "Can you tell me what your system is and exactly what you did to test this?  (What directories did you delete before you started?)",
     "created_at": "2009-10-10T17:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58789",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58679",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -121,15 +121,15 @@ Can you tell me what your system is and exactly what you did to test this?  (Wha
 
 ---
 
-archive/issue_comments_058790.json:
+archive/issue_comments_058680.json:
 ```json
 {
     "body": "Calling \"make ptestlong\" (as suggested in ticket #7079), we already call \"sage-starts\", as this is a part of the TESTPRELIMS in the makefile.\n\nSo the test case(s) for this ticket seems to be for directly calling \"sage -tp ..\" from the commandline.\n\nI don't understand the intention of the attached patch, however. If I delete the file \"./sage/init.sage\" and then call \"sage -tp ...\", the file would have been created anew before the patch, but *not* after the patch. Even if I delete the whole \".sage\" directory, this file will not be recreated (after the patch).\n\nIs it possible that the creation of \"init.sage\" (which should exist at least as an empty file IIRC) somehow originally did cause the problems?\n\nAnother thought: Might the presence (or not ...) of these infamous \".DS_Store\" files (Mac OS X only, there's an open ticket to remove them IIRC) break the parallel building, causing somehow these \"mysterious memory failures\"?",
     "created_at": "2009-11-11T21:39:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58790",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58680",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -147,15 +147,15 @@ Another thought: Might the presence (or not ...) of these infamous ".DS_Store" f
 
 ---
 
-archive/issue_comments_058791.json:
+archive/issue_comments_058681.json:
 ```json
 {
     "body": "I don't think the \".DS_Store\" files have anything to do it: I can recreate this problem on sage.math by deleting my .sage directory and then doing \"sage -tp 4 devel/sage/sage/algebras\", for example.\n\nAs far as I could tell, the presence (or lack) of init.sage was unrelated to the problem, so it wasn't in the patch.  I'm attaching a new patch which puts those lines back, just in case.  This patch runs \"sage-starts\" at the beginning no matter what: a few extra seconds to run this shouldn't be a big deal.\n\n(As I said on #7079, I think the issue is that doctesting creates various subdirectories of .sage, and if two processes both try to create .sage/gap at the same time, they clash and one of them bombs.  So running sage-starts to create most of the relevant directories seems like a solution.  In some bizarre set of circumstances, I can imagine that someone will have deleted everything in .sage except for init.sage, so we don't want to put sage-starts inside that \"if\" clause.  I suppose instead we could look for the directories .sage/db, .sage/gap, .sage/ipython, .sage/temp, .sage/tmp, and .sage/valgrind individually, creating whichever ones are missing.  Do we need to create any subdirectories of those in addition?  It seems cleaner to just run sage-starts.)",
     "created_at": "2009-11-12T22:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58791",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58681",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -169,15 +169,15 @@ As far as I could tell, the presence (or lack) of init.sage was unrelated to the
 
 ---
 
-archive/issue_comments_058792.json:
+archive/issue_comments_058682.json:
 ```json
 {
     "body": "Attachment [trac_7103-scripts-v2.patch](tarball://root/attachments/some-uuid/ticket7103/trac_7103-scripts-v2.patch) by @jhpalmieri created at 2009-11-12 22:15:42\n\napply to scripts repository",
     "created_at": "2009-11-12T22:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58792",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58682",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -189,15 +189,15 @@ apply to scripts repository
 
 ---
 
-archive/issue_comments_058793.json:
+archive/issue_comments_058683.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-11-13T04:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58793",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58683",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -207,15 +207,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_058794.json:
+archive/issue_comments_058684.json:
 ```json
 {
     "body": "> \"(As I said on #7079, I think the issue is that doctesting creates \n> various subdirectories of .sage, and if two processes both try to \n> create .sage/gap at the same time, they clash and one of them bombs. ...\"\n\nThat's exactly right!",
     "created_at": "2009-11-13T04:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58794",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58684",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -229,15 +229,15 @@ That's exactly right!
 
 ---
 
-archive/issue_comments_058795.json:
+archive/issue_comments_058685.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-13T04:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58795",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58685",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -247,15 +247,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058796.json:
+archive/issue_comments_058686.json:
 ```json
 {
     "body": "This seems logical, the patch causes no harm, seems like a good idea, is eloquent.\n\nI don't know if it fixes the \"mysterious error\" issue, since I couldn't cause that error to occur.  However, I can understand in theory how it could fix that.  Positive review.",
     "created_at": "2009-11-13T04:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58796",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58686",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -267,15 +267,15 @@ I don't know if it fixes the "mysterious error" issue, since I couldn't cause th
 
 ---
 
-archive/issue_comments_058797.json:
+archive/issue_comments_058687.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-13T04:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7103",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58797",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7103#issuecomment-58687",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

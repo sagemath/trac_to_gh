@@ -6,15 +6,14 @@ archive/issues_009305.json:
     "body": "Assignee: tbd\n\nCC:  @kcrisman amhou\n\nR is one of the many standard packages in Sage (see #9281 for a list), which do not have a spkg-check file. This means that if one builds Sage with the environment variable SAGE_CHECK set to \"yes\", no self-tests of the package will be run. This is silly, as R has a test suite.\n\nAfter adding the file spkg-check\n\n\n```\nmake check\n```\n\n\nwill be run which is the documented way to test R. \n\nOn a Solaris system I tested on, running the test suite uncovered errors. \n\n\n```\nMaking script relocatable\nFinished installing rpy2-2.0.8.spkg\n\nreal    26m53.457s\nuser    22m28.215s\nsys     3m2.030s\nSuccessfully installed r-2.10.1.p2\nRunning the test suite.\nmake[1]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/r-2.10.1.p2/src/tests'\nmake[2]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/r-2.10.1.p2/src/tests'\nmake[3]: Entering directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/r-2.10.1.p2/src/tests/Examples'\n\nCollecting examples for package 'base'\n  Extracting from parsed Rd's .......................................\nRunning examples in package 'base'\n\nCollecting examples for package 'tools'\n  Extracting from parsed Rd's ....\nRunning examples in package 'tools'\n\nCollecting examples for package 'utils'\n  Extracting from parsed Rd's ...........\nRunning examples in package 'utils'\n\nCollecting examples for package 'grDevices'\n  Extracting from parsed Rd's .....\nRunning examples in package 'grDevices'\n\nCollecting examples for package 'graphics'\n  Extracting from parsed Rd's ......\nRunning examples in package 'graphics'\n\nCollecting examples for package 'stats'\n  Extracting from parsed Rd's ..............................\nRunning examples in package 'stats'\nError: testing 'stats' failed\nExecution halted\nmake[3]: *** [test-Examples-Base] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/r-2.10.1.p2/src/tests/Examples'\nmake[2]: *** [test-Examples] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/r-2.10.1.p2/src/tests'\nmake[1]: *** [test-all-basics] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/r-2.10.1.p2/src/tests'\nmake: *** [check] Error 2\nOne or more errors occured while testing R\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.4.alpha1/spkg/build/r-2.10.1.p2\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing r-2.10.1.p2.spkg\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9305\n\n",
     "created_at": "2010-06-22T07:45:54Z",
     "labels": [
-        "spkg-check",
-        "major",
+        "component: spkg-check",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Add an spkg-check file for R (statistics package)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9305",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -101,15 +100,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9305
 
 ---
 
-archive/issue_comments_087643.json:
+archive/issue_comments_087504.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-06-22T07:50:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9305",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9305#issuecomment-87643",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9305#issuecomment-87504",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -119,15 +118,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_087644.json:
+archive/issue_comments_087505.json:
 ```json
 {
     "body": "Oops, my mistake, there was a test package!",
     "created_at": "2010-06-22T07:50:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9305",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9305#issuecomment-87644",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9305#issuecomment-87505",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_001982.json:
     "body": "Assignee: @williamstein\n\n\n```\n\n\nForwarded conversation\nSubject: [sage-support] problems with p.show()\n------------------------\n\nFrom: Reineke <the_legendary_reineke_Fuchs@web.de>\nDate: Jan 29, 2008 3:57 AM\nTo: sage-support <sage-support@googlegroups.com>\n\n\n\nHi,\n\nI get the following error when I'm trying to use show or save:\n\n-----\n File \"/Applications/sage/local/lib/python2.5/site-packages/sympy/\nplotting/\", line 1, in <module>\n\n File \"/Applications/sage/local/lib/python2.5/site-packages/sympy/\nplotting/plot.py\", line 721, in show\n\n File \"/Applications/sage/local/lib/python2.5/site-packages/sympy/\nplotting/plot.py\", line 792, in save\n\n File \"/Users/was/build/sage-2.10/local/lib/python2.5/site-packages/\nmatplotlib/figure.py\", line 8, in <module>\n File \"/Users/was/build/sage-2.10/local/lib/python2.5/site-packages/\nmatplotlib/artist.py\", line 3, in <module>\n File \"/Users/was/build/sage-2.10/local/lib/python2.5/site-packages/\nmatplotlib/cbook.py\", line 18, in <module>\n File \"/Applications/sage/local/lib/python/locale.py\", line 507, in\ngetpreferredencoding\n   return getdefaultlocale()[1]\n File \"/Applications/sage/local/lib/python/locale.py\", line 443, in\ngetdefaultlocale\n   return _parse_localename(localename)\n File \"/Applications/sage/local/lib/python/locale.py\", line 375, in\n_parse_localename\n   raise ValueError, 'unknown locale: %s' % localename\nValueError: unknown locale: UTF-8\n----\n\nI'm a total newbie and installed sage 2.10 from a .dmg on Mac Os 10.5.\nIt seems to be a python error, but I have no idea about python as\nwell.\n\nThanks for your help\nCheers\nMatthias\n\n--~--~---------~--~----~------------~-------~--~----~\nTo post to this group, send email to sage-support@googlegroups.com\nTo unsubscribe from this group, send email to sage-support-unsubscribe@googlegroups.com\nFor more options, visit this group at http://groups.google.com/group/sage-support\nURLs: http://www.sagemath.org\n-~----------~----~----~----~------~----~------~--~---\n\n----------\nFrom: William Stein <wstein@gmail.com>\nDate: Jan 29, 2008 4:48 AM\nTo: sage-support@googlegroups.com\n\n\nCould you try carefully replacing  the file\n\n  /Applications/sage/local/lib/python2.5/site-packages/matplotlib/cbook.py\n\non your computer by the attached file, then report back to us whether this\nfixes the problem or not?  Thanks!  If so, we'll be able to easily patch Sage\nso that this problem doesn't happen for you in the future (when you upgrade).\n\nThanks for reporting this issue with running Sage!\n\n - William\n----------\nFrom: Reineke <the_legendary_reineke_Fuchs@web.de>\nDate: Jan 30, 2008 4:18 AM\nTo: sage-support <sage-support@googlegroups.com>\n\n\n\nHi William,\n\nthanks for your help. The file worked perfectly fine!\nKudos to the program, I'm just starting to use it and already it seems\nREALLY powerful!\n\nCheers\nMatthias\n\n\n\n\nOn Jan 29, 10:48 am, \"William Stein\" <wst...@gmail.com> wrote:\n>  cbook.py\n> 37KDownload\n\n\n\n-- \nWilliam Stein\nAssociate Professor of Mathematics\nUniversity of Washington\nhttp://wstein.org \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1982\n\n",
     "created_at": "2008-01-30T12:32:25Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch that needs to be integrated into spkg] workaround the billions of problems with matplotlib and locales on _real world_ computers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1982",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -138,15 +137,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1982
 
 ---
 
-archive/issue_comments_012844.json:
+archive/issue_comments_012813.json:
 ```json
 {
     "body": "This has to be made part of the matplotlib spkg",
     "created_at": "2008-01-30T12:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1982#issuecomment-12844",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1982#issuecomment-12813",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -156,15 +155,15 @@ This has to be made part of the matplotlib spkg
 
 ---
 
-archive/issue_comments_012845.json:
+archive/issue_comments_012814.json:
 ```json
 {
     "body": "Attachment [cbook.py](tarball://root/attachments/some-uuid/ticket1982/cbook.py) by @williamstein created at 2008-01-30 12:35:18\n\nI think there is also a need version of matplotlib, so probably when looking into this patch, one should also upgrade matplotlib, and see if this change is still needed. \n\nThe changed cbook.py try except calling some locale function in the standard Python library, because on REAL LIFE computers often that function often blows up (!), even\nthough it probably \"shouldn't\" if everybody's computers were setup perfectly.  Honestely, I've even had related problems on my office mac pro, which is pretty weird since it's fairly plain vanilla.",
     "created_at": "2008-01-30T12:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1982#issuecomment-12845",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1982#issuecomment-12814",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -179,15 +178,15 @@ though it probably "shouldn't" if everybody's computers were setup perfectly.  H
 
 ---
 
-archive/issue_comments_012846.json:
+archive/issue_comments_012815.json:
 ```json
 {
     "body": "This is a dupe of #1967. `cbook.py` is identical in both cases.",
     "created_at": "2008-02-01T05:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1982#issuecomment-12846",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1982#issuecomment-12815",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -197,15 +196,15 @@ This is a dupe of #1967. `cbook.py` is identical in both cases.
 
 ---
 
-archive/issue_comments_012847.json:
+archive/issue_comments_012816.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-02-01T05:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1982",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1982#issuecomment-12847",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1982#issuecomment-12816",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

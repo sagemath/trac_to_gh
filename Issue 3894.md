@@ -6,7 +6,7 @@ archive/issues_003894.json:
     "body": "Assignee: tba\n\nKeywords: tutorial\n\nIn examples like this in the tutorial:\n\n```\nsage: def is_even(n):\n...       return n%2 == 0\n```\n\nthe three dots are not actually visible in the 'live' version of the documentation.  So change the documentation to try to reflect this.  (It would be better to have text printed conditionally, depending on whether it was for the live version, the static version, or the dvi/pdf version, but I don't know how to do that.)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3894\n\n",
     "created_at": "2008-08-19T03:25:20Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003894.json:
     "title": "[with patch, needs review] in tutorial, live version, triple dots are not visible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3894",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: tba
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3894
 
 ---
 
-archive/issue_comments_027840.json:
+archive/issue_comments_027782.json:
 ```json
 {
     "body": "Attachment [3894.patch](tarball://root/attachments/some-uuid/ticket3894/3894.patch) by @mwhansen created at 2008-09-16 02:10:44\n\nLooks good.  I've made this change in the ReST version of the tutorial too.",
     "created_at": "2008-09-16T02:10:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3894#issuecomment-27840",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3894#issuecomment-27782",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -60,15 +60,15 @@ Looks good.  I've made this change in the ReST version of the tutorial too.
 
 ---
 
-archive/issue_comments_027841.json:
+archive/issue_comments_027783.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-16T03:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3894#issuecomment-27841",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3894#issuecomment-27783",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -78,15 +78,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_027842.json:
+archive/issue_comments_027784.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc5",
     "created_at": "2008-09-16T03:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3894#issuecomment-27842",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3894#issuecomment-27784",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

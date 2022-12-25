@@ -6,15 +6,13 @@ archive/issues_002047.json:
     "body": "Assignee: jkantor\n\nTrying to use fast float evaluation with multivariate polynomials gives error messages like:\n\n```\n    AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular' object has no attribute '_fast_float_'\n```\n\n\nThe attached patch fixes this, so that fast float evaluation works with multivariate polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2047\n\n",
     "created_at": "2008-02-05T02:42:26Z",
     "labels": [
-        "numerical",
-        "major",
-        "enhancement"
+        "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch] new fast float evaluation framework does not work with multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2047",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: jkantor
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2047
 
 ---
 
-archive/issue_comments_013254.json:
+archive/issue_comments_013223.json:
 ```json
 {
     "body": "Attachment [trac-2047.patch](tarball://root/attachments/some-uuid/ticket2047/trac-2047.patch) by @williamstein created at 2008-02-05 05:14:27\n\nWorks, massively speeds things up (easily a factor of 100), and looks good.\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: f = (x+y+z+1)^20\nsage: h = f._fast_float_()\nsage: time for _ in xrange(100): k = f(1,2,3)\nCPU times: user 3.81 s, sys: 0.02 s, total: 3.84 s\nWall time: 3.87\nsage: time for _ in xrange(100): k = h(1,2,3)\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.05\nsage: 3.84 / 0.04\n96.0000000000000\n```\n",
     "created_at": "2008-02-05T05:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2047",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13254",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13223",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -71,15 +69,15 @@ sage: 3.84 / 0.04
 
 ---
 
-archive/issue_comments_013255.json:
+archive/issue_comments_013224.json:
 ```json
 {
     "body": "My five cents:\n* shouldn't this be restricted to polynomials over QQ? To me it doesn't make sense to have a `_fast_float_` for polynomials over say GF(2).\n* because speed is so important, please note that using `f.dict()` is a quite slow way of getting the (coefficient,monomial) pairs.\n\nI am not objecting this patch goes in, but maybe a follow-up patch could address these?",
     "created_at": "2008-02-05T11:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2047",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13255",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13224",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -93,15 +91,15 @@ I am not objecting this patch goes in, but maybe a follow-up patch could address
 
 ---
 
-archive/issue_comments_013256.json:
+archive/issue_comments_013225.json:
 ```json
 {
     "body": "Merged in trac-2047.patch in Sage 2.10.2.alpha0. Please open another ticket for malb's five cents ;)",
     "created_at": "2008-02-07T05:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2047",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13256",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13225",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +109,15 @@ Merged in trac-2047.patch in Sage 2.10.2.alpha0. Please open another ticket for 
 
 ---
 
-archive/issue_comments_013257.json:
+archive/issue_comments_013226.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-07T05:25:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2047",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13257",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2047#issuecomment-13226",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

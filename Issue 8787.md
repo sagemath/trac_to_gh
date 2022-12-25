@@ -6,15 +6,13 @@ archive/issues_008787.json:
     "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nAmazingly, openssl released version *1.0*! Let's upgrade to this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8787\n\n",
     "created_at": "2010-04-27T23:02:19Z",
     "labels": [
-        "packages: optional",
-        "major",
-        "enhancement"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "upgrade the openssl optional spkg to version 1.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8787",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8787
 
 ---
 
-archive/issue_comments_080454.json:
+archive/issue_comments_080322.json:
 ```json
 {
     "body": "Here is the spkg:\n\nhttp://wstein.org/home/wstein/patches/openssl-1.0.0.spkg\n\nI fixed things to be \"modern\" and up to snuff -- a formatted SPKG.txt file, a .hg directory, error messages not all messed up in spkg-install, a src/ directory, etc.",
     "created_at": "2010-04-27T23:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80454",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80322",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -53,15 +51,15 @@ I fixed things to be "modern" and up to snuff -- a formatted SPKG.txt file, a .h
 
 ---
 
-archive/issue_comments_080455.json:
+archive/issue_comments_080323.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-27T23:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80455",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80323",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -71,15 +69,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080456.json:
+archive/issue_comments_080324.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-05T15:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80456",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80324",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -89,15 +87,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_080457.json:
+archive/issue_comments_080325.json:
 ```json
 {
     "body": "Sadly, building sage-4.3.5 with gcc-4.4.3 and openssl-1.0.0.spkg \ndid NOT work on one of my company's computers (not connected to\nthe Internet).  The machine is similar hardware to Skynet/taurus, \nbut running Red Hat Enterprise Linux Server.\n\nFirst I installed openssl-1.0.0.spkg.  Then I did 'make testlong'.\nThe build failed while trying to build python-2.6.4.p7 with the\nmessage\n  \n  import _md5\nImport Error: No module named _md5\nhashlib module failed to import",
     "created_at": "2010-05-05T15:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80457",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -118,15 +116,15 @@ hashlib module failed to import
 
 ---
 
-archive/issue_comments_080458.json:
+archive/issue_comments_080326.json:
 ```json
 {
     "body": "Replying to [comment:3 mariah]:\n> Sadly, building sage-4.3.5 with gcc-4.4.3 and openssl-1.0.0.spkg \n> did NOT work on one of my company's computers (not connected to\n> the Internet).  The machine is similar hardware to Skynet/taurus, \n> but running Red Hat Enterprise Linux Server.\n> \n> First I installed openssl-1.0.0.spkg.  Then I did 'make testlong'.\n> The build failed while trying to build python-2.6.4.p7 with the\n> message\n\nCan you post the log that results from doing\n\n  sage -f openssl-1.0.0\n\nand also the log that results from building python, e.g.,\n\n  sage -f python-2.6.4.p7\n\n\nAlso, did you get this failure on taurus?  If so, I can just test there.",
     "created_at": "2010-05-05T15:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80458",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80326",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -155,15 +153,15 @@ Also, did you get this failure on taurus?  If so, I can just test there.
 
 ---
 
-archive/issue_comments_080459.json:
+archive/issue_comments_080327.json:
 ```json
 {
     "body": "> Can you post the log that results from doing\n> \n>   sage -f openssl-1.0.0\n> \n> and also the log that results from building python, e.g.,\n> \n>   sage -f python-2.6.4.p7\n\nI do not believe I am allowed to export the logs.\nThis problem is happening on one of our internal \ncompany machines.\n\n> Also, did you get this failure on taurus?  If so, I can just test there.\n\nI tried to reproduce the problem on taurus, but sadly the \nproblem does NOT seem to be reproducible on taurus.",
     "created_at": "2010-05-05T15:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80459",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80327",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -188,15 +186,15 @@ problem does NOT seem to be reproducible on taurus.
 
 ---
 
-archive/issue_comments_080460.json:
+archive/issue_comments_080328.json:
 ```json
 {
     "body": "\n```\nI have investigated the problem and found that \nthe reason for the failure is that openssl-1.0.0\nputs libraries in $SAGE_ROOT/local/lib64 on 64-bit \nmachines. Sage does not add $SAGE_ROOT/local/lib64\nto the LD_LIBRARY_PATH.\n\nIf you add\n\n  --libdir=lib\n\nto the ./config line in spkg-install, then sage\nbuilds with openssl-1.0.0 and all tests pass.\n```\n",
     "created_at": "2010-05-27T14:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80460",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80328",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -221,15 +219,15 @@ builds with openssl-1.0.0 and all tests pass.
 
 ---
 
-archive/issue_comments_080461.json:
+archive/issue_comments_080329.json:
 ```json
 {
     "body": "I've posted a new spkg with the fix you suggest here:\n\n   http://wstein.org/home/wstein/patches/openssl-1.0.0.p0.spkg",
     "created_at": "2010-06-04T05:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80461",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80329",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -241,15 +239,15 @@ I've posted a new spkg with the fix you suggest here:
 
 ---
 
-archive/issue_comments_080462.json:
+archive/issue_comments_080330.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-04T05:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80462",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80330",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -259,15 +257,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_080463.json:
+archive/issue_comments_080331.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-09T14:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80463",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80331",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -277,15 +275,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080464.json:
+archive/issue_comments_080332.json:
 ```json
 {
     "body": "On the machine where I previously was having problems, \nopenssl-1.0.0.p0.spkg builds and 'make testlong' on\nsage-4.4.3 passes all tests.\n\nThus I give this package a positive review!",
     "created_at": "2010-06-09T14:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80464",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80332",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -299,15 +297,15 @@ Thus I give this package a positive review!
 
 ---
 
-archive/issue_comments_080465.json:
+archive/issue_comments_080333.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-08T18:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80465",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8787#issuecomment-80333",
+    "user": "https://github.com/rlmill"
 }
 ```
 

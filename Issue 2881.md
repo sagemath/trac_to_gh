@@ -6,15 +6,14 @@ archive/issues_002881.json:
     "body": "Assignee: @williamstein\n\nThis makes things dreadfully slow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2881\n\n",
     "created_at": "2008-04-11T22:40:23Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "numerical_integral doesn't use fast_float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2881",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2881
 
 ---
 
-archive/issue_comments_019821.json:
+archive/issue_comments_019780.json:
 ```json
 {
     "body": "Changing component from calculus to numerical.",
     "created_at": "2008-08-31T14:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19821",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19780",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing component from calculus to numerical.
 
 ---
 
-archive/issue_comments_019822.json:
+archive/issue_comments_019781.json:
 ```json
 {
     "body": "This is the same issue as #3622, which now has a patch.",
     "created_at": "2008-08-31T14:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19822",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19781",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -65,15 +64,15 @@ This is the same issue as #3622, which now has a patch.
 
 ---
 
-archive/issue_comments_019823.json:
+archive/issue_comments_019782.json:
 ```json
 {
     "body": "Changing component from numerical to calculus.",
     "created_at": "2008-08-31T15:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19823",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19782",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing component from numerical to calculus.
 
 ---
 
-archive/issue_comments_019824.json:
+archive/issue_comments_019783.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-31T18:45:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19824",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19783",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -101,15 +100,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_019825.json:
+archive/issue_comments_019784.json:
 ```json
 {
     "body": "This is actually considered \"calculus\" and not \"numerical\". Closed as a duplicate of #3622.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T18:45:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19825",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2881#issuecomment-19784",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_007599.json:
     "body": "Assignee: @rlmill\n\nAs the title says, this patch implements the functions vertex_cut and edge_cut in Graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7599\n\n",
     "created_at": "2009-12-04T07:44:20Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "vertex_cut and edge_cut ( minimum s-t cut )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7599",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7599
 
 ---
 
-archive/issue_comments_064825.json:
+archive/issue_comments_064709.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-04T07:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64825",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64709",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -47,15 +45,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_064826.json:
+archive/issue_comments_064710.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-12-15T17:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64826",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64710",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -65,15 +63,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_064827.json:
+archive/issue_comments_064711.json:
 ```json
 {
     "body": "Same comment as #7594 - more doctests needed, testing each input value at least once.",
     "created_at": "2009-12-15T17:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64827",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64711",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -83,15 +81,15 @@ Same comment as #7594 - more doctests needed, testing each input value at least 
 
 ---
 
-archive/issue_comments_064828.json:
+archive/issue_comments_064712.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-12-16T01:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64828",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64712",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -101,15 +99,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_064829.json:
+archive/issue_comments_064713.json:
 ```json
 {
     "body": "Updated ! :-)",
     "created_at": "2009-12-16T01:47:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64829",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64713",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -119,15 +117,15 @@ Updated ! :-)
 
 ---
 
-archive/issue_comments_064830.json:
+archive/issue_comments_064714.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-16T01:47:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64830",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64714",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -137,15 +135,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064831.json:
+archive/issue_comments_064715.json:
 ```json
 {
     "body": "Attachment [trac_7599.patch](tarball://root/attachments/some-uuid/ticket7599/trac_7599.patch) by @nathanncohen created at 2009-12-16 01:48:18",
     "created_at": "2009-12-16T01:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64831",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64715",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -155,15 +153,15 @@ Attachment [trac_7599.patch](tarball://root/attachments/some-uuid/ticket7599/tra
 
 ---
 
-archive/issue_comments_064832.json:
+archive/issue_comments_064716.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2009-12-16T02:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64832",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64716",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -173,15 +171,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_064833.json:
+archive/issue_comments_064717.json:
 ```json
 {
     "body": "Did you just give yourself a positive review?",
     "created_at": "2009-12-16T02:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64833",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64717",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -191,15 +189,15 @@ Did you just give yourself a positive review?
 
 ---
 
-archive/issue_comments_064834.json:
+archive/issue_comments_064718.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-12-16T02:11:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64834",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64718",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -209,15 +207,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_064835.json:
+archive/issue_comments_064719.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-16T03:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64835",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64719",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -227,15 +225,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064836.json:
+archive/issue_comments_064720.json:
 ```json
 {
     "body": "Odd thing O_o\n\nMust have been a reflex :-)\n\nThank you !!!",
     "created_at": "2009-12-16T09:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64836",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64720",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -249,15 +247,15 @@ Thank you !!!
 
 ---
 
-archive/issue_comments_064837.json:
+archive/issue_comments_064721.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-19T20:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64837",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7599#issuecomment-64721",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

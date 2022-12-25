@@ -6,15 +6,14 @@ archive/issues_004730.json:
     "body": "Assignee: @williamstein\n\nMake this work:\n\n```\nsage: k.<a> = GF(2^16)\nsage: magma(a).sage()\nboom\n```\n\n\nAlso, explain this fun behavior of magma where finite fields are represented differently depending on their size, as discussed in irc here:\n\n```\n15:03 < ncalexan> I get this:\n15:03 < ncalexan> sage: magma(GF(5^2, 'a')['x'].random_element())\n15:03 < ncalexan> a^22*x + a^9\n15:04 < ncalexan> And a should have order at most 2.\n15:04 < ncalexan> (exactly 2)\n15:04 < wstein> why?\n15:04 < wstein> Why do you think that about a?\n15:04 < wstein> ehh?\n15:04 < ncalexan> It's a generator of GF(5^2).\n15:05 < wstein> seria-mau -- if you wat long enough I can do it.\n15:05 < ncalexan> It satisfies a polynomial of degree 2.\n15:05 < wstein> My virtual machine was off.\n15:05 < wstein> The order of a is 24:\n15:05 < wstein> sage: GF(5^2,'a').0.multiplicative_order()\n15:05 < wstein> 24\n15:06 -!- Irssi: Pasting 7 lines to #sage-devel. Press Ctrl-K if you wish to do this or Ctrl-C to cancel.\n15:06 < wstein> sage: k.<a> = GF(25)\n15:06 < wstein> sage: magma(a)\n15:06 < wstein> a\n15:06 < wstein> sage: a^22\n15:06 < wstein> a + 1\n15:06 < wstein> sage: magma(a+1)\n15:06 < wstein> a^22\n15:06 < wstein> Magma represents finite field elements differently in some cases.\n15:06 < ncalexan> Ah, I see, magma represents them totally differently.\n15:06 < ncalexan> I had no idea.\n15:06 < wstein> It's the sort of inconsistency that wouldn't fly among sage devs.\n15:06 < wstein> We would shoot that down in a second.\n15:06 < ncalexan> What do they do for huge fields/\n15:06 < wstein> I think it only use that representation for small fields...\n15:06 < wstein> maybe I'm wrong.\n15:06 < ncalexan> You can't take dlogs everywhere.\n15:07 < wstein> for big fields they don't use that representation:\n15:07 < ncalexan> Okay, could you fix and apply my doctests (I think they're useful) and maybe add a line explaining the surprising representation differences/\n15:07 < wstein> sage: magma.eval('FiniteField(997^2).1^1000')\n15:07 < wstein> '94*$.1 + 597'\n15:07 < ncalexan> That's so arbitrary.\n```\n\n\nBasically the above should be explained by some doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4730\n\n",
     "created_at": "2008-12-06T23:16:45Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "magma/sage -- conversion of finite field elements back and forth",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4730",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -81,15 +80,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4730
 
 ---
 
-archive/issue_comments_035703.json:
+archive/issue_comments_035633.json:
 ```json
 {
     "body": "Fixing this requires adding a Sage(...) for univariate polynomials to the basic.m file.  Nick Alexander has this...",
     "created_at": "2008-12-06T23:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35703",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35633",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -99,15 +98,15 @@ Fixing this requires adding a Sage(...) for univariate polynomials to the basic.
 
 ---
 
-archive/issue_comments_035704.json:
+archive/issue_comments_035634.json:
 ```json
 {
     "body": "See also the \"referee patch\" from #4701, which could go somehow with this ticket.",
     "created_at": "2008-12-06T23:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35704",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35634",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -117,15 +116,15 @@ See also the "referee patch" from #4701, which could go somehow with this ticket
 
 ---
 
-archive/issue_comments_035705.json:
+archive/issue_comments_035635.json:
 ```json
 {
     "body": "Attachment [trac_4730_sage.patch](tarball://root/attachments/some-uuid/ticket4730/trac_4730_sage.patch) by @williamstein created at 2008-12-11 04:32:52",
     "created_at": "2008-12-11T04:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35705",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35635",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -135,15 +134,15 @@ Attachment [trac_4730_sage.patch](tarball://root/attachments/some-uuid/ticket473
 
 ---
 
-archive/issue_comments_035706.json:
+archive/issue_comments_035636.json:
 ```json
 {
     "body": "This didn't work because in Magma 2.13 one must do Polynomial(Eltseq(a)) rather than just Polynomial(a).  I fixed this.  I also added some doctests.",
     "created_at": "2008-12-11T04:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35706",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35636",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -153,15 +152,15 @@ This didn't work because in Magma 2.13 one must do Polynomial(Eltseq(a)) rather 
 
 ---
 
-archive/issue_comments_035707.json:
+archive/issue_comments_035637.json:
 ```json
 {
     "body": "Attachment [trac_4730-doc.patch](tarball://root/attachments/some-uuid/ticket4730/trac_4730-doc.patch) by mabshoff created at 2008-12-13 11:26:34\n\nPatch looks good to me and doctests pass. trac_4730-doc.patch fixes a slight problem with a Magma doctest in the documentation, so I am CCing Mike Hansen.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-13T11:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35707",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35637",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -177,15 +176,15 @@ Michael
 
 ---
 
-archive/issue_comments_035708.json:
+archive/issue_comments_035638.json:
 ```json
 {
     "body": "Merged all three patches in Sage 3.2.2.alpha2",
     "created_at": "2008-12-13T11:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35708",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35638",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -195,15 +194,15 @@ Merged all three patches in Sage 3.2.2.alpha2
 
 ---
 
-archive/issue_comments_035709.json:
+archive/issue_comments_035639.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-13T11:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35709",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4730#issuecomment-35639",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

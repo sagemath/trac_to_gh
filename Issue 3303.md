@@ -6,15 +6,14 @@ archive/issues_003303.json:
     "body": "Assignee: @timabbott\n\nCC:  f.r.bissey@massey.ac.nz\n\nI've attached a patch that adds a shared library to tachyon.\n\nMy patch includes the necessary changes to the Debian package.\n\nLooking at spkg-install, it looks like SAGE doesn't actually use the tachyon library, only the binary, so I'm not including any changes to the spkg-install system.\n\nOnce this gets merged, I'll email John Stone with the patch to tachyon upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3303\n\n",
     "created_at": "2008-05-25T22:17:00Z",
     "labels": [
-        "debian-package",
-        "blocker",
-        "enhancement"
+        "component: debian-package",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch; needs review] Add shared library to tachyon Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3303",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3303
 
 ---
 
-archive/issue_comments_022845.json:
+archive/issue_comments_022798.json:
 ```json
 {
     "body": "Attachment [tachyon-debian-shared-library.patch](tarball://root/attachments/some-uuid/ticket3303/tachyon-debian-shared-library.patch) by @timabbott created at 2008-05-25 22:17:23",
     "created_at": "2008-05-25T22:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3303",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22845",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22798",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -55,15 +54,15 @@ Attachment [tachyon-debian-shared-library.patch](tarball://root/attachments/some
 
 ---
 
-archive/issue_comments_022846.json:
+archive/issue_comments_022799.json:
 ```json
 {
     "body": "Patch looks good to me and has been merged in \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.3/alpha0/tachyon-0.98beta.p5.spkg\n\nwithout incrementing the patch number to avoid unneeded rebuilds.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-28T07:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3303",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22846",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22799",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -81,15 +80,15 @@ Michael
 
 ---
 
-archive/issue_comments_022847.json:
+archive/issue_comments_022800.json:
 ```json
 {
     "body": "Merged in Sage 3.0.3.alpha0",
     "created_at": "2008-05-28T07:51:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3303",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22847",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22800",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -99,15 +98,15 @@ Merged in Sage 3.0.3.alpha0
 
 ---
 
-archive/issue_comments_022848.json:
+archive/issue_comments_022801.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-28T07:51:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3303",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22848",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3303#issuecomment-22801",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

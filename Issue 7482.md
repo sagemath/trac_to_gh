@@ -6,15 +6,13 @@ archive/issues_007482.json:
     "body": "Assignee: tbd\n\nCollege teacher often say that by far the biggest obstruction to people switching from Maple to Sage is that:\n\n (1) symbolic variables don't magically spring into existence when used\n\n (2) one has to use object oriented notation---foo.bar(...)---to access methods of an object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7482\n\n",
     "created_at": "2009-11-17T22:20:48Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "provide a mode so that undeclared variables magically spring into existence and object oriented notation is not necessary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7482",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7482
 
 ---
 
-archive/issue_comments_063157.json:
+archive/issue_comments_063042.json:
 ```json
 {
     "body": "I have created a \"mock up\" of the above functionality, for people to play with, which doesn't even require applying a patch.  Just paste the following into a Sage notebook cell and press shift-enter:\n\n```\nclass MagicVar(Expression):\n    def __call__(self, *args, **kwds):\n        return args[0].__getattribute__(str(self))(*args[1:], **kwds)\n\nclass MagicNames:\n    def eval(self, s, globals, locals=None):\n        x = preparse(s).strip()\n        y = x.split('\\n')\n        if len(y) == 0:\n            return ''\n        s = '\\n'.join(y[:-1]) + '\\n'\n        t = y[-1]\n        try:\n            z = compile(t + '\\n', '', 'single')\n        except SyntaxError:\n            s += '\\n' + t\n            z = None\n        while True:\n            try:    \n                self._eval_code(s, z, globals)\n            except NameError, msg:\n                nm = msg.args[0].split(\"'\")[1]\n                globals[nm] = MagicVar(SR, var(nm))\n            else:\n                return ''\n                \n    def _eval_code(self, s, z, globals):\n        eval(compile(s, '', 'exec'), globals, globals)\n        if z is not None:\n            eval(z, globals)\n        \nmagic = MagicNames()                 \n```\n\n\nNow if you put %magic at the top of an input cell, then symbolic variables magically spring into life, and object oriented notation is not necessary.   There isn't an easy way to make this permanent for all cells in a worksheet (without putting %magic) without actually changing the sage library with a patch.  This is because of a major annoying mistake I found just now (see #7483).",
     "created_at": "2009-11-17T22:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63157",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63042",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +87,15 @@ Now if you put %magic at the top of an input cell, then symbolic variables magic
 
 ---
 
-archive/issue_comments_063158.json:
+archive/issue_comments_063043.json:
 ```json
 {
     "body": "I'm attaching a patch that fully implements this in the notebook, via a command automatic_names(True).   This depends on trac #7483.    I could not figure out how to implement this on the command line without making potentially major changes to IPython, which is a bad idea at this point.  So this will be notebook only.  Since the target audience is newbie calculus freshman, restricting to the notebook probably isn't much of a constraint.",
     "created_at": "2009-11-18T02:51:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63158",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63043",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -107,15 +105,15 @@ I'm attaching a patch that fully implements this in the notebook, via a command 
 
 ---
 
-archive/issue_comments_063159.json:
+archive/issue_comments_063044.json:
 ```json
 {
     "body": "Here is a session (to be used in the notebook) that illustrates automatic_names:\n\n```\nsage: automatic_names(True)\nsage: x + y + z + wxy\nwxy + x + y + z\nsage: y(y=10)\n10\nsage: type(y)\n<class 'sagenb.misc.support.AutomaticVariable'>\nsage: trig_expand((2*x + 4*y + sin(2*theta))^2)\n4*(sin(theta)*cos(theta) + x + 2*y)^2\nsage: type(trig_expand)\n<class 'sagenb.misc.support.AutomaticVariable'>\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: type(y)\n<class 'sagenb.misc.support.AutomaticVariable'>\n```\n\n\nNotice above that trig_expand, y, and theta were all automatically created.  Notice that substitution `y(y=10)` still works.   If an object obj had a y method, then y(obj) would be evaluated as obj.y().\n\nHere's a test showing that we avoid infinite loops:\n\n```\nsage: raise NameError\nTraceback (most recent call last):\n...\nNameError\nsage: raise NameError, \"'var'\"\nTraceback (most recent call last):\n...\nNameError: Too many automatic variable names and functions created (limit=10000)\n```\n",
     "created_at": "2009-11-18T03:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63159",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63044",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -160,15 +158,15 @@ NameError: Too many automatic variable names and functions created (limit=10000)
 
 ---
 
-archive/issue_comments_063160.json:
+archive/issue_comments_063045.json:
 ```json
 {
     "body": "Attachment [sagenb_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.patch) by @williamstein created at 2009-11-18 03:29:41\n\napply to the sagenb spkg",
     "created_at": "2009-11-18T03:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63160",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63045",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -180,15 +178,15 @@ apply to the sagenb spkg
 
 ---
 
-archive/issue_comments_063161.json:
+archive/issue_comments_063046.json:
 ```json
 {
     "body": "Attachment [sagelib_7482.patch](tarball://root/attachments/some-uuid/ticket7482/sagelib_7482.patch) by @williamstein created at 2009-11-18 03:29:54\n\napply to the core sage library",
     "created_at": "2009-11-18T03:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63161",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63046",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -200,15 +198,15 @@ apply to the core sage library
 
 ---
 
-archive/issue_comments_063162.json:
+archive/issue_comments_063047.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-18T03:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63162",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63047",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -218,15 +216,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_063163.json:
+archive/issue_comments_063048.json:
 ```json
 {
     "body": "I've put a new sagenb spkg with just this patch (and the one from 7483) here:\n\n   http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.3.p1.spkg",
     "created_at": "2009-11-18T03:38:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63163",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63048",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -238,15 +236,15 @@ I've put a new sagenb spkg with just this patch (and the one from 7483) here:
 
 ---
 
-archive/issue_comments_063164.json:
+archive/issue_comments_063049.json:
 ```json
 {
     "body": "The Selenium test results are unchanged in FF3.5.5 on Linux.  \n\n`make ptest` on sage.math passes.",
     "created_at": "2009-11-18T06:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63164",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63049",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -258,15 +256,15 @@ The Selenium test results are unchanged in FF3.5.5 on Linux.
 
 ---
 
-archive/issue_comments_063165.json:
+archive/issue_comments_063050.json:
 ```json
 {
     "body": "I'm making implementing this for IPython as trac #7486.",
     "created_at": "2009-11-18T09:35:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63165",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63050",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -276,15 +274,15 @@ I'm making implementing this for IPython as trac #7486.
 
 ---
 
-archive/issue_comments_063166.json:
+archive/issue_comments_063051.json:
 ```json
 {
     "body": "This looks good to and works for me, but it'd be great to get additional data.\n\nPlease try the demo at [alpha.sagenb.org](http://alpha.sagenb.org)!",
     "created_at": "2009-11-18T13:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63166",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63051",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -296,15 +294,15 @@ Please try the demo at [alpha.sagenb.org](http://alpha.sagenb.org)!
 
 ---
 
-archive/issue_comments_063167.json:
+archive/issue_comments_063052.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-10T00:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63167",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63052",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -314,15 +312,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_063168.json:
+archive/issue_comments_063053.json:
 ```json
 {
     "body": "This is very clever!  In\n\n```\nso that ``foo(bar, ...)`` gets transformed to ``foo.bar(...)``.\n```\n\nshould the latter be ```bar.foo(...)```?\n\nShould we advertise `automatic_names` on `sage-edu`?",
     "created_at": "2009-12-10T00:40:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63168",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63053",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -340,15 +338,15 @@ Should we advertise `automatic_names` on `sage-edu`?
 
 ---
 
-archive/issue_comments_063169.json:
+archive/issue_comments_063054.json:
 ```json
 {
     "body": "Fix typo.  Replaces **sagenb** patch.",
     "created_at": "2009-12-10T01:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63169",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63054",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -358,15 +356,15 @@ Fix typo.  Replaces **sagenb** patch.
 
 ---
 
-archive/issue_comments_063170.json:
+archive/issue_comments_063055.json:
 ```json
 {
     "body": "Attachment [sagenb_7482.2.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.2.patch) by @qed777 created at 2009-12-10 06:20:39\n\nV3 changes\n\n```\n            sage: automatic_names(True)\n```\n\nto\n\n```\n            sage: automatic_names(True)      # not tested\n```\n",
     "created_at": "2009-12-10T06:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63170",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63055",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -389,15 +387,15 @@ to
 
 ---
 
-archive/issue_comments_063171.json:
+archive/issue_comments_063056.json:
 ```json
 {
     "body": "Attachment [sagenb_7482.3.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.3.patch) by @qed777 created at 2009-12-10 06:21:38\n\nSuppress a doctest (cf. #7650).  Replaces **sagenb** patch.",
     "created_at": "2009-12-10T06:21:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63171",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63056",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -409,15 +407,15 @@ Suppress a doctest (cf. #7650).  Replaces **sagenb** patch.
 
 ---
 
-archive/issue_comments_063172.json:
+archive/issue_comments_063057.json:
 ```json
 {
     "body": "Once this is merged in sagenb, I'll merge the code in sagelib.",
     "created_at": "2009-12-11T02:56:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63172",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63057",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -427,15 +425,15 @@ Once this is merged in sagenb, I'll merge the code in sagelib.
 
 ---
 
-archive/issue_comments_063173.json:
+archive/issue_comments_063058.json:
 ```json
 {
     "body": "Rebased vs. #7514's \"part3.2\".  Replaces **sagenb** patch.",
     "created_at": "2010-01-01T10:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63173",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63058",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -445,15 +443,15 @@ Rebased vs. #7514's "part3.2".  Replaces **sagenb** patch.
 
 ---
 
-archive/issue_comments_063174.json:
+archive/issue_comments_063059.json:
 ```json
 {
     "body": "Attachment [sagenb_7482.4.patch](tarball://root/attachments/some-uuid/ticket7482/sagenb_7482.4.patch) by @mwhansen created at 2010-01-03 22:08:41\n\nI've merged the sagelib patch in 4.3.1.alpha0.",
     "created_at": "2010-01-03T22:08:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63174",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63059",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -465,15 +463,15 @@ I've merged the sagelib patch in 4.3.1.alpha0.
 
 ---
 
-archive/issue_comments_063175.json:
+archive/issue_comments_063060.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-04T06:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63175",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63060",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -483,15 +481,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_063176.json:
+archive/issue_comments_063061.json:
 ```json
 {
     "body": "Merged into sagenb-0.4.8.",
     "created_at": "2010-01-04T06:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63176",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7482#issuecomment-63061",
+    "user": "https://github.com/williamstein"
 }
 ```
 

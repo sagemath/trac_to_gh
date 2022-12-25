@@ -6,15 +6,14 @@ archive/issues_008206.json:
     "body": "Assignee: mvngu\n\nCC:  mvngu @roed314\n\nThe command  hg qnew -f would be good to include in the discussion on Mercurial queues (and replace some uncertainty).\n\nAs well as a mention of the record extensions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8206\n\n",
     "created_at": "2010-02-07T06:25:18Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Add information on hg qnew to Developer Walk-through",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8206",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: mvngu
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8206
 
 ---
 
-archive/issue_comments_072372.json:
+archive/issue_comments_072250.json:
 ```json
 {
     "body": "Attachment [trac_8206_developer-doc.patch](tarball://root/attachments/some-uuid/ticket8206/trac_8206_developer-doc.patch) by @rbeezer created at 2010-02-07 06:35:47",
     "created_at": "2010-02-07T06:35:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72372",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72250",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -51,15 +50,15 @@ Attachment [trac_8206_developer-doc.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_072373.json:
+archive/issue_comments_072251.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-07T06:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72373",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72251",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072374.json:
+archive/issue_comments_072252.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-07T23:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72374",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72252",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_072375.json:
+archive/issue_comments_072253.json:
 ```json
 {
     "body": "I don't know mercurial queues well (although I know them a little better after looking at this!) but this seems like a simple patch.  Docs build OK, changes make sense, so positive review.",
     "created_at": "2010-02-07T23:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72375",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72253",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -105,15 +104,15 @@ I don't know mercurial queues well (although I know them a little better after l
 
 ---
 
-archive/issue_comments_072376.json:
+archive/issue_comments_072254.json:
 ```json
 {
     "body": "See also #1610 for more stuff on \"hg record\" and cherry picking.",
     "created_at": "2010-02-09T03:16:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72376",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72254",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -123,15 +122,15 @@ See also #1610 for more stuff on "hg record" and cherry picking.
 
 ---
 
-archive/issue_comments_072377.json:
+archive/issue_comments_072255.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T14:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72377",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8206#issuecomment-72255",
+    "user": "https://github.com/qed777"
 }
 ```
 

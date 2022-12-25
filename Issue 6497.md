@@ -6,15 +6,14 @@ archive/issues_006497.json:
     "body": "Assignee: @burcin\n\nWe want\n\n\n```\nsage: import numpy\nsage: sin(numpy.arange(5))\narray([ 0.        ,  0.84147098,  0.90929743,  0.14112001, -0.7568025 ])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6497\n\n",
     "created_at": "2009-07-09T10:14:40Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] symbolic functions should understand numpy arrays",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6497",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @burcin
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6497
 
 ---
 
-archive/issue_comments_052854.json:
+archive/issue_comments_052755.json:
 ```json
 {
     "body": "Attachment [6497-numpy-sin.patch](tarball://root/attachments/some-uuid/ticket6497/6497-numpy-sin.patch) by @burcin created at 2009-07-12 10:33:03\n\nThis depends on #5081.",
     "created_at": "2009-07-12T10:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52854",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52755",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -57,15 +56,15 @@ This depends on #5081.
 
 ---
 
-archive/issue_comments_052855.json:
+archive/issue_comments_052756.json:
 ```json
 {
     "body": "With the patches at #5081 and #6506, and `6497-numpy-sin.patch` on this ticket, I got one doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/modules/vector_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/modules/vector_double_dense.pyx\", line 663:\n    sage: v.stats_kurtosis()\nExpected:\n    -1.23\nGot:\n    doctest:106: SyntaxWarning: assertion is always true, perhaps remove parentheses?\n    -1.23\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_29\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_vector_double_dense.py\n\t [2.5 s]\n```\n",
     "created_at": "2009-07-30T01:42:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52855",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52756",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -94,15 +93,15 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp
 
 ---
 
-archive/issue_comments_052856.json:
+archive/issue_comments_052757.json:
 ```json
 {
     "body": "I am unable to reproduce the error above on 4.1.1, so I am re-instating the positive review. (Also, the error itself seems totally unrelated to this patch.)",
     "created_at": "2009-09-10T09:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52856",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52757",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -112,15 +111,15 @@ I am unable to reproduce the error above on 4.1.1, so I am re-instating the posi
 
 ---
 
-archive/issue_comments_052857.json:
+archive/issue_comments_052758.json:
 ```json
 {
     "body": "Replying to [comment:3 robertwb]:\n> I am unable to reproduce the error above on 4.1.1, so I am re-instating the positive review. (Also, the error itself seems totally unrelated to this patch.)\nThe above error is not due to the patch. Ticket #6825 contains steps to reproduce the errors.",
     "created_at": "2009-09-10T09:31:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52857",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52758",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -132,15 +131,15 @@ The above error is not due to the patch. Ticket #6825 contains steps to reproduc
 
 ---
 
-archive/issue_comments_052858.json:
+archive/issue_comments_052759.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-10T09:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52858",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6497#issuecomment-52759",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

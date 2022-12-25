@@ -6,7 +6,7 @@ archive/issues_002154.json:
     "body": "Assignee: joyner\n\nRun the following code in a virtual machine with a smallish bound on its memory.  Or it will crash your machine.  (it took me 2 reboots to isolate the problem...)\n\n\n```\nPermutationGroup(2)\nPermutationGroupElement([1,1],S,check=False)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2154\n\n",
     "created_at": "2008-02-14T01:09:40Z",
     "labels": [
-        "group theory",
+        "component: group theory",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002154.json:
     "title": "Infinite memory allocation bug in PermutationGroupElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2154",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: joyner
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2154
 
 ---
 
-archive/issue_comments_014146.json:
+archive/issue_comments_014115.json:
 ```json
 {
     "body": "Changing assignee from joyner to @robertwb.",
     "created_at": "2008-02-14T01:12:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14146",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14115",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -54,15 +54,15 @@ Changing assignee from joyner to @robertwb.
 
 ---
 
-archive/issue_comments_014147.json:
+archive/issue_comments_014116.json:
 ```json
 {
     "body": "GAP is involved here, so the issue might not be in Sage itself.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-14T10:01:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14147",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14116",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -76,15 +76,15 @@ Michael
 
 ---
 
-archive/issue_comments_014148.json:
+archive/issue_comments_014117.json:
 ```json
 {
     "body": "Attachment [2154-invalid-perm.patch](tarball://root/attachments/some-uuid/ticket2154/2154-invalid-perm.patch) by @robertwb created at 2008-02-21 22:06:24\n\nIt looks like the problem here was actually infinite loops, but it now checks to make sure it always gets a valid permutation (even if check=False is set).",
     "created_at": "2008-02-21T22:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14148",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14117",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -96,15 +96,15 @@ It looks like the problem here was actually infinite loops, but it now checks to
 
 ---
 
-archive/issue_comments_014149.json:
+archive/issue_comments_014118.json:
 ```json
 {
     "body": "\n```\n[02:01] <mabshoff> craigcitro: can you look at #2154 ? It looks good, \nbut I would like a second opinion.\n[02:11] <craigcitro> mabshoff: sure, it looks good to me.\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-02-26T01:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14149",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14118",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -124,15 +124,15 @@ Michael
 
 ---
 
-archive/issue_comments_014150.json:
+archive/issue_comments_014119.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-26T01:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14150",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14119",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -142,15 +142,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014151.json:
+archive/issue_comments_014120.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.alpha0",
     "created_at": "2008-02-26T01:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14151",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2154#issuecomment-14120",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

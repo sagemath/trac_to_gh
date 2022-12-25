@@ -6,15 +6,14 @@ archive/issues_009042.json:
     "body": "Assignee: drkirkby\n\nCC:  @robertwb @jaapspies\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_134 X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* Run 'make -k' so make did not stop on errors, so errors can be listed. \n\n\n## How Python was build\n\nIt should be noted that python builds as a 64-bit application. There is no need to set any environment variables like CFLAGS for Python to build 64-bit. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/python\nlocal/bin/python:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nWe can see a few modules did not build\n\n\n```\nailed to find the necessary bits to build these modules:\n_bsddb             bsddb185           dl\ngdbm               imageop            linuxaudiodev\nossaudiodev\nTo find the necessary bits, look in setup.py in detect_modules() for the module's name.\n\n\nFailed to build these modules:\n_curses            _curses_panel      _socket\n_ssl               _tkinter           sunaudiodev\n```\n\n\nThe faillure of _socket to build has caused problems with pygments (#9041) and ipython (#9022), but does not seem to be the cause of the problem with Cython. \n\n## The problem with Cython\nThis is related to #8116, which was closed as invalid, but it would appear the problem can still rear its ugly head. \n\n\n```\ncopying Cython/Includes/python_version.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/numpy.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_bytes.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_method.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Includes/python_ref.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Includes\ncopying Cython/Plex/Scanners.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Plex\ncopying Cython/Compiler/Parsing.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Compiler/Scanning.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Compiler/Visitor.pxd -> build/lib.solaris-2.11-i86pc-2.6/Cython/Compiler\ncopying Cython/Runtime/refnanny.pyx -> build/lib.solaris-2.11-i86pc-2.6/Cython/Runtime\nrunning build_ext\nbuilding 'Cython.Plex.Scanners' extension\ncreating build/temp.solaris-2.11-i86pc-2.6\ncreating build/temp.solaris-2.11-i86pc-2.6/export\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython\ncreating build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -c /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.c -o build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.o\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1/src/Cython/Plex/Scanners.c:4:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nerror: command 'gcc' failed with exit status 1\nError installing Cython\n\nreal    0m4.426s\nuser    0m3.907s\nsys     0m0.505s\nsage: An error occurred while installing cython-0.12.1\n```\n\n\n## The likely cause\nThe -m64 flag is not being used in the compile line shown, but Python was built 64-bit, so I suspect the issue is related to a mix of 32-bit and 64-bit code. \n\n## Other OpenSolaris issues\nSome other problems which are failing to allow Sage to build 64-bit on OpenSolaris are listed at #9026.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9042\n\n",
     "created_at": "2010-05-25T01:42:02Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Cython fails to build in OpenSolaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9042",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -137,15 +136,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9042
 
 ---
 
-archive/issue_comments_083709.json:
+archive/issue_comments_083573.json:
 ```json
 {
     "body": "This won't solve the problem, but you could try changing the line in spkg-install to \n\n\n```\npython setup.py install --no-cython-compile\n```\n\n\nAnd see if you can then compile anything else.",
     "created_at": "2010-05-25T05:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83709",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83573",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -163,15 +162,15 @@ And see if you can then compile anything else.
 
 ---
 
-archive/issue_comments_083710.json:
+archive/issue_comments_083574.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-25T08:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83710",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83574",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -181,15 +180,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083711.json:
+archive/issue_comments_083575.json:
 ```json
 {
     "body": "Again, this was due to Python being misconfigured. As I pointed out earlier, you need -m64 in OPT. New spkg at\n\nhttp://sage/home/robertwb/python-2.6.4.p8.spkg",
     "created_at": "2010-05-25T08:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83711",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83575",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -201,15 +200,15 @@ http://sage/home/robertwb/python-2.6.4.p8.spkg
 
 ---
 
-archive/issue_comments_083712.json:
+archive/issue_comments_083576.json:
 ```json
 {
     "body": "Thank you. That revised package solves the problem, though I can't see what you have patched! I don't see any -m64 or $OPT added or removed from spkg-install or any entry in SPKG.txt as to what has changed. \n\nAlso, there is an unwanted file. \n\n```\ndrkirkby@hawk:~/sage-4.4.2/spkg/standard/python-2.6.4.p8$ hg status\n? spkg-install~\n```\n\n\n\nBut Cython does now build.\n\n\n```\nWriting /export/home/drkirkby/sage-4.4.2/local/lib/python2.6/site-packages/Cython-0.12.1-py2.6.egg-info\n\nreal    0m26.832s\nuser    0m25.819s\nsys     0m0.919s\nSuccessfully installed cython-0.12.1\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing cython-0.12.1.spkg\n```\n\n\nDave",
     "created_at": "2010-05-25T15:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83712",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83576",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -249,15 +248,15 @@ Dave
 
 ---
 
-archive/issue_comments_083713.json:
+archive/issue_comments_083577.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-25T15:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83713",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83577",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -267,15 +266,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_083714.json:
+archive/issue_comments_083578.json:
 ```json
 {
     "body": "Replying to [comment:4 drkirkby]:\n> Thank you. That revised package solves the problem, though I can't see what you have patched! \n\nDId you try hg log? \n\n> I don't see any -m64 or $OPT added or removed from spkg-install or any entry in SPKG.txt as to what has changed. \n\nI suppose I could add an entry there, though that'd be redundant with the revision control. \n\n> Also, there is an unwanted file. \n> {{{\n> drkirkby`@`hawk:~/sage-4.4.2/spkg/standard/python-2.6.4.p8$ hg status\n> ? spkg-install~\n> }}}\n\nOops. Good catch. \n \n> But Cython does now build.\n> \n> {{{\n> Writing /export/home/drkirkby/sage-4.4.2/local/lib/python2.6/site-packages/Cython-0.12.1-py2.6.egg-info\n> \n> real    0m26.832s\n> user    0m25.819s\n> sys     0m0.919s\n> Successfully installed cython-0.12.1\n> Now cleaning up tmp files.\n> rm: Cannot remove any directory in the path of the current working directory\n> /export/home/drkirkby/sage-4.4.2/spkg/build/cython-0.12.1\n> Making Sage/Python scripts relocatable...\n> Making script relocatable\n> Finished installing cython-0.12.1.spkg\n> }}}\n> \n> Dave \n\nExcellent. I'll cleanup and post a new spkg.",
     "created_at": "2010-05-25T17:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83714",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83578",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -321,15 +320,15 @@ Excellent. I'll cleanup and post a new spkg.
 
 ---
 
-archive/issue_comments_083715.json:
+archive/issue_comments_083579.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-25T18:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83715",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83579",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -339,15 +338,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_083716.json:
+archive/issue_comments_083580.json:
 ```json
 {
     "body": "New package posted (same place). FYI\n\n\n```\n# HG changeset patch\n# User Robert Bradshaw <robertwb@math.washington.edu>\n# Date 1274775281 25200\n# Node ID 9be0b02f70c56491e84f45c2dd113f267c6c4ed6\n# Parent  241ae2ebd744e682efb62a11effceb1f7f0e2bb2\nThe -m64 flag is needed in OPT to build distutils extensions.\n\ndiff -r 241ae2ebd744 -r 9be0b02f70c5 spkg-install\n--- a/spkg-install\tThu Mar 04 18:25:19 2010 -0800\n+++ b/spkg-install\tTue May 25 01:14:41 2010 -0700\n@@ -147,7 +147,7 @@\n     elif [ `uname` = \"SunOS\" ]; then\n         if [ \"x$SAGE64\" = xyes ]; then\n             echo \"64 bit Open Solaris build enabled\"\n-            OPT=\"-g -O3 -Wall -Wstrict-prototypes\"; export OPT\n+            OPT=\"-g -O3 -m64 -Wall -Wstrict-prototypes\"; export OPT\n             ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\"  \\\n             --enable-unicode=ucs4 --with-gcc=\"gcc -m64\"\n         else\n```\n\n\nand \n\n\n```\n# HG changeset patch\n# User Robert Bradshaw <robertwb@math.washington.edu>\n# Date 1274775421 25200\n# Node ID 81a7be63099e031ff2c0bbe4fb20f4f4f8988e0b\n# Parent  9be0b02f70c56491e84f45c2dd113f267c6c4ed6\nMake sure distutils builtin modules work before trying hashlib.\n\ndiff -r 9be0b02f70c5 -r 81a7be63099e spkg-install\n--- a/spkg-install\tTue May 25 01:14:41 2010 -0700\n+++ b/spkg-install\tTue May 25 01:17:01 2010 -0700\n@@ -208,6 +208,16 @@\n echo \"Sleeping for three seconds before testing python\"\n sleep 3\n \n+# Make sure extension modules were built correctly.\n+python -c \"import math\"\n+\n+if [ $? -eq 0 -a -f \"$SAGE_LOCAL/bin/python\" ]; then\n+    echo \"math module OK\"\n+else\n+    echo \"math module failed to import\"\n+    exit 1\n+fi\n+\n # Make sure sufficient crypto support is available in the built python.\n # This is critical.\n python -c \"import hashlib\"\n```\n\n\nare the changes.",
     "created_at": "2010-05-25T18:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83716",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83580",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -417,15 +416,15 @@ are the changes.
 
 ---
 
-archive/issue_comments_083717.json:
+archive/issue_comments_083581.json:
 ```json
 {
     "body": "You may also be interested in #9047 which will prevent me (and others) from checking in garbage.",
     "created_at": "2010-05-25T18:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83717",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83581",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -435,15 +434,15 @@ You may also be interested in #9047 which will prevent me (and others) from chec
 
 ---
 
-archive/issue_comments_083718.json:
+archive/issue_comments_083582.json:
 ```json
 {
     "body": "Replying to [comment:5 robertwb]:\n> Replying to [comment:4 drkirkby]:\n> > Thank you. That revised package solves the problem, though I can't see what you have patched! \n> \n> DId you try hg log? \n> \n\nNo, since I did not know about that. \n\n> > I don't see any -m64 or $OPT added or removed from spkg-install or any entry in SPKG.txt as to what has changed. \n> \n> I suppose I could add an entry there, though that'd be redundant with the revision control. \n\n\nTrue, but I'm doubt the only who is not a Mercuial guru. Having changes documented in a simple text file is useful IMHO. \n> > Also, there is an unwanted file. \n> > {{{\n> > drkirkby`@`hawk:~/sage-4.4.2/spkg/standard/python-2.6.4.p8$ hg status\n> > ? spkg-install~\n> > }}}\n> \n> Oops. Good catch. \n>  \n> > But Cython does now build.\n\n> > Dave \n> \n> Excellent. I'll cleanup and post a new spkg. \n\nThank you.",
     "created_at": "2010-05-26T06:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83718",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -482,15 +481,15 @@ Thank you.
 
 ---
 
-archive/issue_comments_083719.json:
+archive/issue_comments_083583.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-26T06:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83719",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -500,15 +499,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083720.json:
+archive/issue_comments_083584.json:
 ```json
 {
     "body": "Replying to [comment:7 robertwb]:\n> You may also be interested in #9047 which will prevent me (and others) from checking in garbage. \nI like the idea, though I don't understand enough of python or Mercurial to review it. Anything that prevents mistakes, or generally improves the quality is a good idea in my opinion. \n\nThank you for the change. Positive review. \n\nDave",
     "created_at": "2010-05-26T06:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83720",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83584",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -524,15 +523,15 @@ Dave
 
 ---
 
-archive/issue_comments_083721.json:
+archive/issue_comments_083585.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-25T15:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83721",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83585",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -542,15 +541,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_083722.json:
+archive/issue_comments_083586.json:
 ```json
 {
     "body": "To give proper credit, I'm closing this as if I've merged the changes here. See #9295.",
     "created_at": "2010-06-25T15:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9042",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83722",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9042#issuecomment-83586",
+    "user": "https://github.com/rlmill"
 }
 ```
 

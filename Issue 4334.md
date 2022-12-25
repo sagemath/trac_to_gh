@@ -6,15 +6,14 @@ archive/issues_004334.json:
     "body": "Assignee: mabshoff\n\nUpdated to mayavi_2.2.1\n\n\n[http://sage.math.washington.edu/home/jsp/mayavi_2.2.1.spkg](http://sage.math.washington.edu/home/jsp/mayavi_2.2.1.spkg)\n\nDepends on on experimental spkgs:\nvtk-5.2, cmake-2.4.8 and wxPython-2.8.7.1\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4334\n\n",
     "created_at": "2008-10-21T13:06:04Z",
     "labels": [
-        "packages: experimental",
-        "minor",
-        "enhancement"
+        "component: packages: experimental",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with spkg, needs review] Updated experimental Mayavi2 spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4334",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: mabshoff
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4334
 
 ---
 
-archive/issue_comments_031778.json:
+archive/issue_comments_031716.json:
 ```json
 {
     "body": "This package works for sage-3.1.2 and earlier, but does not show pictures\nfor sage-3.1.3 and later!\n\nAny thoughts about what changed between 3.1.2 and 3.1.3 causing this failure?\n\nJaap",
     "created_at": "2008-10-27T16:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31778",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31716",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -61,15 +60,15 @@ Jaap
 
 ---
 
-archive/issue_comments_031779.json:
+archive/issue_comments_031717.json:
 ```json
 {
     "body": "Yes. It will work when #4381 will be resolved.\n\nPassing the -wthread argument to sage.\n\nJaap",
     "created_at": "2008-11-20T18:47:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31779",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31717",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -83,15 +82,15 @@ Jaap
 
 ---
 
-archive/issue_comments_031780.json:
+archive/issue_comments_031718.json:
 ```json
 {
     "body": "Trac #4381 is resolved in sage-3.2.1.alpha2, so\n./sage -wthread is working again.\n\nJaap",
     "created_at": "2008-11-28T13:48:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31780",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31718",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -104,15 +103,15 @@ Jaap
 
 ---
 
-archive/issue_comments_031781.json:
+archive/issue_comments_031719.json:
 ```json
 {
     "body": "Just to move this toward being optional (not experimental), some comments.\n\n1. The spkg-install is\n\n```\nwas@sage:~/tmp/mayavi_2.2.1$ more spkg-install \n#!/bin/sh\n\nsage -i wxPython-2.8.7.1\nsage -i cmake-2.4.8\nsage -i vtk-5.2\n\n\ncd src\n\npython egg_builder.py -r -v\n\neasy_install -f dist -H dist enthought.mayavi*\n```\n\n\nEach comment, e.g., the \"sage -i\"'s should have some test that it actually worked before going further.  You could check error codes, or check that the appropriate spkg/installed file exists.\n\n2. The format of the changelog in SPKG.txt is wrong:\n\n```\n## Changelog\n * Initial release mayvi2_2.0.20080106 - Jan. 6th, 2008 - Jaap Spies\n * mayavi2_2.0.20080117 - Jan. 17th, 2008 - Jaap Spies\n```\n\nJust see any SPKG.txt that is standard for the right format. \n\n3. spkg-install and SPKG.txt should be in an .hg repo:\n\n```\nwas@sage:~/tmp/mayavi_2.2.1$ ls -a\n.  ..  spkg-install  SPKG.txt  src\n```\n\nOne should do \n\n```\nhg init\nhg add spkg-install SPKG.txt\nhg ci\n```\n\n\nI didn't actually test this though...",
     "created_at": "2008-11-29T03:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31781",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31719",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -171,15 +170,15 @@ I didn't actually test this though...
 
 ---
 
-archive/issue_comments_031782.json:
+archive/issue_comments_031720.json:
 ```json
 {
     "body": "Since this spkg is experimental, I think we should drop it in the experimental repo on sagemath.org right now anyways.  I looked in the spkg and it doesn't look like pure evil.  It doesn't matter if it works or not, since it's \"experimental\".",
     "created_at": "2008-11-29T03:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31782",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31720",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -189,15 +188,15 @@ Since this spkg is experimental, I think we should drop it in the experimental r
 
 ---
 
-archive/issue_comments_031783.json:
+archive/issue_comments_031721.json:
 ```json
 {
     "body": "Merged in the experimental spkg repo and mirrored out.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T07:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31783",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31721",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -211,15 +210,15 @@ Michael
 
 ---
 
-archive/issue_comments_031784.json:
+archive/issue_comments_031722.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-29T07:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31784",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31722",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -229,15 +228,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_031785.json:
+archive/issue_comments_031723.json:
 ```json
 {
     "body": "\n```\nHi William,\n\nThanks for your comments.\nA problem for moving to optional is lacking a mac version of wxPython and vtk.\nThis is certainly doable. The enthought people are doing this all the time.\n\n\n    Do you know anybody besides you who uses mayavi etc. via sage?\n\n\nIn the past Marshal Hampton, Jason Grout, Joshua Kantor and Carl Witty\nshowed interest. Some of them even installed the package.\n\nI'm now testing a comlete Enthought Tools Suite ETS-3.0.3.\nIncluding a newer version of mayavi_2.\n```\n",
     "created_at": "2008-11-29T18:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31785",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4334#issuecomment-31723",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007807.json:
     "body": "Assignee: @williamstein\n\nThis is inconsistent with other plotting functions.\n\n\n```\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/2531/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n    136                 options['__original_opts'] = kwds\n    137             options.update(kwds)\n--> 138             return func(*args, **options)\n    139 \n    140         \n\nTypeError: region_plot() got an unexpected keyword argument 'aspect_ratio'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7807\n\n",
     "created_at": "2010-01-01T18:19:43Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "region_plot does not pass extra arguments to show",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7807",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7807
 
 ---
 
-archive/issue_comments_067536.json:
+archive/issue_comments_067419.json:
 ```json
 {
     "body": "The patch at #8004 resolves this.",
     "created_at": "2010-01-20T00:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67536",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67419",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -66,15 +65,15 @@ The patch at #8004 resolves this.
 
 ---
 
-archive/issue_comments_067537.json:
+archive/issue_comments_067420.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-20T00:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67537",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67420",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -84,15 +83,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_067538.json:
+archive/issue_comments_067421.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-31T06:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67538",
-    "user": "rossk"
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67421",
+    "user": "https://trac.sagemath.org/admin/accounts/users/rossk"
 }
 ```
 
@@ -102,15 +101,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_067539.json:
+archive/issue_comments_067422.json:
 ```json
 {
     "body": "\n```\n# works as advertised\nsage: region_plot([x^2+y^2<1, x<y], (x,-2,2), (y,-2,2),aspect_ratio=1)  \n\n# (Correctly) doesnt complain about a single function\nsage: region_plot([x^2+y^2<1], (x,-2,2), (y,-2,2),aspect_ratio=1) \n\n# using many functions is ok\nsage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,-2,2), (y,-2,2),aspect_ratio=1)\n\n# displays a portion of the last example properly\nsage: region_plot([x^2+y^2<1, x<y, x>-1/2, y>0], (x,0,2), (y,-2,2),aspect_ratio=1) \n\n# a little computer art - my picture of a whale ;-) \nsage: region_plot([x^2+y^2<10, y< sin(x)], (x,-5,5), (y,-4,4),aspect_ratio=1)\n```\n",
     "created_at": "2010-01-31T06:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67539",
-    "user": "rossk"
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67422",
+    "user": "https://trac.sagemath.org/admin/accounts/users/rossk"
 }
 ```
 
@@ -137,15 +136,15 @@ sage: region_plot([x^2+y^2<10, y< sin(x)], (x,-5,5), (y,-4,4),aspect_ratio=1)
 
 ---
 
-archive/issue_comments_067540.json:
+archive/issue_comments_067423.json:
 ```json
 {
     "body": "Fixed by #8004.",
     "created_at": "2010-02-11T14:58:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67540",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67423",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -155,15 +154,15 @@ Fixed by #8004.
 
 ---
 
-archive/issue_comments_067541.json:
+archive/issue_comments_067424.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T14:58:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67541",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7807#issuecomment-67424",
+    "user": "https://github.com/qed777"
 }
 ```
 

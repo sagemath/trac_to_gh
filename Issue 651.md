@@ -6,15 +6,14 @@ archive/issues_000651.json:
     "body": "Assignee: mabshoff\n\nIn gmp_globals.c we init tmp again instead of clearing it. This leaks about 16 bytes. For a patch see\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.4.2-fix-small-mpq-leak-in-gmp_globals.c.patch\n\nWithout the patch:\n\n```\n==32229== LEAK SUMMARY:\n==32229==    definitely lost: 2,548 bytes in 7 blocks.\n==32229==      possibly lost: 364,814 bytes in 1,127 blocks.\n==32229==    still reachable: 137,021,540 bytes in 18,327 blocks.\n==32229==         suppressed: 0 bytes in 0 blocks.\n```\n\nWith the patch:\n\n```\n==14532== LEAK SUMMARY:\n==14532==    definitely lost: 2,532 bytes in 5 blocks.\n==14532==      possibly lost: 364,878 bytes in 1,128 blocks.\n==14532==    still reachable: 137,021,460 bytes in 18,324 blocks.\n==14532==         suppressed: 0 bytes in 0 blocks.\n```\n\n\nEvery byte counts ;)\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/651\n\n",
     "created_at": "2007-09-13T21:55:58Z",
     "labels": [
-        "memleak",
-        "major",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "[with patch] memory leak in gmp_globals.c",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/651",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -58,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/651
 
 ---
 
-archive/issue_comments_003388.json:
+archive/issue_comments_003375.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-13T21:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/651",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/651#issuecomment-3388",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/651#issuecomment-3375",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -76,15 +75,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_003389.json:
+archive/issue_comments_003376.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-14T02:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/651",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/651#issuecomment-3389",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/651#issuecomment-3376",
+    "user": "https://github.com/williamstein"
 }
 ```
 

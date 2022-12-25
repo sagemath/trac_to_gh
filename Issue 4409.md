@@ -6,15 +6,14 @@ archive/issues_004409.json:
     "body": "Assignee: somebody\n\nIt works fine, but the traceback gets expensive. Turns out 1 == Ellipsis throws an exception...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4409\n\n",
     "created_at": "2008-10-31T06:18:03Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "ellipsis_range throws exception",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4409",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: somebody
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4409
 
 ---
 
-archive/issue_comments_032418.json:
+archive/issue_comments_032355.json:
 ```json
 {
     "body": "Attachment [4409-ellipsis-speed.patch](tarball://root/attachments/some-uuid/ticket4409/4409-ellipsis-speed.patch) by @craigcitro created at 2008-10-31 06:54:29\n\nThis looks great.",
     "created_at": "2008-10-31T06:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4409#issuecomment-32418",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4409#issuecomment-32355",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -49,15 +48,15 @@ This looks great.
 
 ---
 
-archive/issue_comments_032419.json:
+archive/issue_comments_032356.json:
 ```json
 {
     "body": "Merged in Sage 3.2.alpha2",
     "created_at": "2008-10-31T14:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4409#issuecomment-32419",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4409#issuecomment-32356",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +66,15 @@ Merged in Sage 3.2.alpha2
 
 ---
 
-archive/issue_comments_032420.json:
+archive/issue_comments_032357.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-31T14:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4409#issuecomment-32420",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4409#issuecomment-32357",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

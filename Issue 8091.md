@@ -6,15 +6,14 @@ archive/issues_008091.json:
     "body": "Assignee: drkirkby\n\nCC:  jas\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n\n## The problem\n\n```\nsympow-1.018.1.p6/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_111b i86pc i386 i86pc\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.3.4/configure --prefix=/usr/local/gcc-4.3.4-GNU-assembler-Sun-linker --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.3.4 (GCC) \n****************************************************\nRM = rm\nGREP = grep\nGP = gp\nSED = sed\nSH = sh\nUNAME = uname\nusing gcc\nCC = gcc\nYou do not appear to have an x86 based system --- not using fpu.c\nCP = cp\nMKDIR = mkdir\nTOUCH = touch\nTAR = tar\nMakefile has been re-made. Use make if you wish to build SYMPOW\n\n**ATTENTION** If you wish build SYMPOW, please ensure beforehand\nthat the various licenses of your C compiler, linker, assembler, etc.\nallow you to create a derived work based on SYMPOW and your C libraries\nmake[2]: Entering directory `/export/home/drkirkby/sage-4.3.1/spkg/build/sympow-1.018.1.p6/src'\ngcc -O3   -c -o analrank.o analrank.c\ngcc -O3   -c -o analytic.o analytic.c\n```\n\n\nIt does finally build, but obviously as a 32-bit object, not a 64-bit one. \n\nIt believes the hardware is not x86. so disables the assembly. This is untrue of course, as this is an Intel Xeon processor. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8091\n\n",
     "created_at": "2010-01-27T04:49:30Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "sympow builds 32-bit mode on Open Solaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8091",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -83,15 +82,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8091
 
 ---
 
-archive/issue_comments_070903.json:
+archive/issue_comments_070782.json:
 ```json
 {
     "body": "I also have a 32 bit executable. I wonder is this a real problem.\n\nTachyon builds as a 32 bit executable too. But runs as well.\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$  find . -exec file {} \\; | grep \"ELF 32\"\n./bin/tachyon:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, stripped\n./bin/size222:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped, no debugging information available\n./bin/class.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n./bin/nef.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n./bin/poly.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n./bin/dikcube:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped, no debugging information available\n./bin/cws.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n./lib/omalloc.o:\tELF 32-bit LSB relocatable 80386 Version 1\n./lib/sympow/sympow:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n./lib/omalloc_debug.o:\tELF 32-bit LSB relocatable 80386 Version 1\njaap@opensolaris:~/Downloads/sage-4.3.2.alpha0/local$ \n\n\n```\n\n\n\nJaap",
     "created_at": "2010-02-01T19:47:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8091#issuecomment-70903",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8091#issuecomment-70782",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -126,15 +125,15 @@ Jaap
 
 ---
 
-archive/issue_comments_070904.json:
+archive/issue_comments_070783.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-08-12T14:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8091#issuecomment-70904",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8091#issuecomment-70783",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -144,15 +143,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_070905.json:
+archive/issue_comments_070784.json:
 ```json
 {
     "body": "sympow seems to still present its fair share of problems on Solaris 10 x86 (#9703), Cygwin amd OpenSolaris, but this particular problem was fixed by #9029 in sage-4.4.4.",
     "created_at": "2010-08-12T14:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8091#issuecomment-70905",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8091#issuecomment-70784",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 

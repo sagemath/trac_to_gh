@@ -6,15 +6,14 @@ archive/issues_008243.json:
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri mvngu\n\nLet's fix or suppress these, so that it's easier to identify new problems.\n\nSee the attachment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8243\n\n",
     "created_at": "2010-02-11T21:43:21Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Annoying warnings when building the HTML reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8243",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: mvngu
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8243
 
 ---
 
-archive/issue_comments_072892.json:
+archive/issue_comments_072770.json:
 ```json
 {
     "body": "Is this a duplicate of #8244?",
     "created_at": "2010-02-11T22:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8243",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72892",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72770",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -51,15 +50,15 @@ Is this a duplicate of #8244?
 
 ---
 
-archive/issue_comments_072893.json:
+archive/issue_comments_072771.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-02-12T03:44:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8243",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72893",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72771",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -69,15 +68,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_072894.json:
+archive/issue_comments_072772.json:
 ```json
 {
     "body": "Closing this ticket as a duplicate of #8244.",
     "created_at": "2010-02-12T03:44:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8243",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72894",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8243#issuecomment-72772",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

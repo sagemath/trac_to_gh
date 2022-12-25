@@ -6,15 +6,14 @@ archive/issues_003067.json:
     "body": "Assignee: @williamstein\n\nThis happens for all matrices:\n\n\n```\nsage: m = matrix([])\nsage: m.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\nsage: q= random_matrix(ZZ,2)\nsage: q.numeric_array()\n<type 'exceptions.ImportError'>: No module named Numeric\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3067\n\n",
     "created_at": "2008-04-30T15:23:45Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "matrices:  numeric_array() is missing an import",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3067",
-    "user": "@dfdeshom"
+    "user": "https://github.com/dfdeshom"
 }
 ```
 Assignee: @williamstein
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3067
 
 ---
 
-archive/issue_comments_021168.json:
+archive/issue_comments_021124.json:
 ```json
 {
     "body": "Attachment [3067.patch](tarball://root/attachments/some-uuid/ticket3067/3067.patch) by @dfdeshom created at 2008-04-30 18:54:00\n\nI deleted this function since it looks like sage doesn't use Numeric anymore. Or I could do a conditional import. Thoughts?",
     "created_at": "2008-04-30T18:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3067#issuecomment-21168",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/3067#issuecomment-21124",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -60,15 +59,15 @@ I deleted this function since it looks like sage doesn't use Numeric anymore. Or
 
 ---
 
-archive/issue_comments_021169.json:
+archive/issue_comments_021125.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-01T05:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3067#issuecomment-21169",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3067#issuecomment-21125",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -78,15 +77,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021170.json:
+archive/issue_comments_021126.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.alpha1",
     "created_at": "2008-05-01T05:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3067#issuecomment-21170",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3067#issuecomment-21126",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

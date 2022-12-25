@@ -6,15 +6,14 @@ archive/issues_009787.json:
     "body": "Assignee: @malb\n\nCC:  @gagern\n\nWhen computing the variety over an extension field L of a zero-dimensional ideal of some polynomial ring K[vars], each point of the variety is returned as a dictionary whose keys are generators of L[vars]. It would be more practical to have the keys be either generators of K[vars] or plain strings.\n\n\n```\nsage: R.<x,y> = QQ[]\nsage: J = (x+y, x^2+y^2-1)*R\nsage: V = J.variety(QQbar); V\n[{y: -0.7071067811865475?, x: 0.7071067811865475?}, {y: 0.7071067811865475?, x: -0.7071067811865475?}]\nsage: V[0][x]\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\nKeyError: x\nsage: V[0]['x']\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/data/sage-4.5.1/<ipython console> in <module>()\n\nKeyError: 'x'\nsage: V[0][QQbar['x,y'].0]\n0.7071067811865475?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9788\n\n",
     "created_at": "2010-08-23T13:28:40Z",
     "labels": [
-        "commutative algebra",
-        "minor",
-        "enhancement"
+        "component: commutative algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "The coordinates appearing in the output of variety(L) should be easier to access",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9787",
-    "user": "@mezzarobba"
+    "user": "https://github.com/mezzarobba"
 }
 ```
 Assignee: @malb
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9788
 
 ---
 
-archive/issue_comments_096077.json:
+archive/issue_comments_095918.json:
 ```json
 {
     "body": "As [discussed on sage-devel](https://groups.google.com/forum/#!topic/sage-devel/oAj6Ja-62HA), another alternative would be to use whatever category makes sense for keys, but to coerce keys to that category using a custom class derived from `dict`. Compared to using wither generators of K[vars] or strings this would have the huge advantage of not breaking backwards compatibility, since lookup using generators of L[vars] would work just as well.",
     "created_at": "2015-01-23T13:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96077",
-    "user": "@gagern"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95918",
+    "user": "https://github.com/gagern"
 }
 ```
 
@@ -74,15 +73,15 @@ As [discussed on sage-devel](https://groups.google.com/forum/#!topic/sage-devel/
 
 ---
 
-archive/issue_comments_096078.json:
+archive/issue_comments_095919.json:
 ```json
 {
     "body": "Replying to [comment:5 gagern]:\n> As [discussed on sage-devel](https://groups.google.com/forum/#!topic/sage-devel/oAj6Ja-62HA), another alternative would be to use whatever category makes sense for keys, but to coerce keys to that category using a custom class derived from `dict`. Compared to using wither generators of K[vars] or strings this would have the huge advantage of not breaking backwards compatibility, since lookup using generators of L[vars] would work just as well.\n\nYes, this is clearly a better solution!",
     "created_at": "2015-01-23T14:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96078",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95919",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -95,15 +94,15 @@ Yes, this is clearly a better solution!
 
 ---
 
-archive/issue_comments_096079.json:
+archive/issue_comments_095920.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2015-01-31T21:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96079",
-    "user": "@gagern"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95920",
+    "user": "https://github.com/gagern"
 }
 ```
 
@@ -113,15 +112,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_096080.json:
+archive/issue_comments_095921.json:
 ```json
 {
     "body": "OK, here is an implementation for this.\n\nThe object returned from the `variety()` call no longer is a sequence, since converting to sequence will cause some argument misalignment and therefore make all solutions come up as empty dicts. One alternative would be making the key conversion function a named argument, perhaps even guessing it from the type of the keys provided so far. Another alternative would be introducing a category for conversion dicts, one for every possible conversion function. But I doubt either of these is neccessary, since I doubt anyone really relies on receiving a Sequence out of this.\n\nShould `BooleanPolynomialIdeal.variety()` in `pbori.pyx` behave the same? Should other code make use of this as well, e.g. the symbolic `solve` function with `solutions_dict=True`? Should these things be handled in separate tickets?\n----\nNew commits:",
     "created_at": "2015-01-31T21:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96080",
-    "user": "@gagern"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95921",
+    "user": "https://github.com/gagern"
 }
 ```
 
@@ -137,15 +136,15 @@ New commits:
 
 ---
 
-archive/issue_comments_096081.json:
+archive/issue_comments_095922.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-02-01T15:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96081",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95922",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -155,15 +154,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_096082.json:
+archive/issue_comments_095923.json:
 ```json
 {
     "body": "Replying to [comment:9 gagern]:\n> OK, here is an implementation for this.\n\nAs you implemented it as a generic programming utility rather than as part of the parent/element/coercion/... infrastructure, perhaps it should go in `sage.misc` rather than `sage.structure`?\n\n> The object returned from the `variety()` call no longer is a sequence, since converting to sequence will cause some argument misalignment and therefore make all solutions come up as empty dicts. One alternative would be making the key conversion function a named argument, perhaps even guessing it from the type of the keys provided so far. Another alternative would be introducing a category for conversion dicts, one for every possible conversion function. But I doubt either of these is neccessary, since I doubt anyone really relies on receiving a Sequence out of this.\n\nI agree, but I'd prefer to get a second opinion.\n\n> Should `BooleanPolynomialIdeal.variety()` in `pbori.pyx` behave the same? Should other code make use of this as well, e.g. the symbolic `solve` function with `solutions_dict=True`?\n\nI'd say yes.\n\n> Should these things be handled in separate tickets?\n\nIf that's easy to do, doing at least some of what you suggest here would give `KeyConvertingDict` a bit of field-testing before it is merged...",
     "created_at": "2015-02-02T09:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96082",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95923",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -188,15 +187,15 @@ If that's easy to do, doing at least some of what you suggest here would give `K
 
 ---
 
-archive/issue_comments_096083.json:
+archive/issue_comments_095924.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-02-08T17:53:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96083",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95924",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -206,15 +205,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_096084.json:
+archive/issue_comments_095925.json:
 ```json
 {
     "body": "Replying to [comment:11 mmezzarobba]:\n> As you implemented it as a generic programming utility rather than as part of the parent/element/coercion/... infrastructure, perhaps it should go in `sage.misc` rather than `sage.structure`?\n\nFine with me. Did so.\n\n> I agree, but I'd prefer to get a second opinion.\n\nSo this ticket here will remain waiting for review until then? Should I ask someone specific about this?\n\n> > Should `BooleanPolynomialIdeal.variety()` in `pbori.pyx` behave the same?\n\nDid so now.\n\n> > Should other code make use of this as well, e.g. the symbolic `solve` function with `solutions_dict=True`?\n\nI get the feeling that if the result accepts various types to identify variables, the argument which tells `solve` what variable(s) to solve for should be auto-coerced as well. That would be a bigger and possibly more controversial change, and I don't want that in the way of this ticket here.",
     "created_at": "2015-02-08T18:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96084",
-    "user": "@gagern"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95925",
+    "user": "https://github.com/gagern"
 }
 ```
 
@@ -239,15 +238,15 @@ I get the feeling that if the result accepts various types to identify variables
 
 ---
 
-archive/issue_comments_096085.json:
+archive/issue_comments_095926.json:
 ```json
 {
     "body": "Replying to [comment:13 gagern]:\n> > I agree, but I'd prefer to get a second opinion.\n> \n> So this ticket here will remain waiting for review until then? Should I ask someone specific about this?\n\nI was hoping that someone would jump in and tell us what they think. At the moment I don't have time to look at your last changes, but if no one has complained when I do... well, no, I don't plan to delay the review forever.",
     "created_at": "2015-02-08T18:51:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96085",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95926",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -262,15 +261,15 @@ I was hoping that someone would jump in and tell us what they think. At the mome
 
 ---
 
-archive/issue_comments_096086.json:
+archive/issue_comments_095927.json:
 ```json
 {
     "body": "\n```\n**********************************************************************\nFile \"src/sage/rings/polynomial/multi_polynomial_sequence.py\", line 1348, in sage.rings.polynomial.multi_polynomial_sequence.PolynomialSequence_gf2.solve\nFailed example:\n    sol = S.solve(); sol                       # random\nException raised:\n    Traceback (most recent call last):\n      File \"/home/marc/co/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 488, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/marc/co/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 850, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.rings.polynomial.multi_polynomial_sequence.PolynomialSequence_gf2.solve[2]>\", line 1, in <module>\n        sol = S.solve(); sol                       # random\n      File \"/home/marc/co/sage/local/lib/python2.7/site-packages/sage/rings/polynomial/multi_polynomial_sequence.py\", line 1462, in solve\n        sol[ r.lm() ] = r.subs(sol).constant_coefficient()\n      File \"/home/marc/co/sage/local/lib/python2.7/site-packages/sage/misc/converting_dict.py\", line 139, in __setitem__\n        key = self.key_conversion_function(key)\n      File \"sage/structure/parent.pyx\", line 1094, in sage.structure.parent.Parent.__call__ (build/cythonized/sage/structure/parent.c:9480)\n        return mor._call_(x)\n      File \"sage/structure/coerce_maps.pyx\", line 110, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (build/cythonized/sage/structure/coerce_maps.c:4374)\n        raise\n      File \"sage/structure/coerce_maps.pyx\", line 105, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (build/cythonized/sage/structure/coerce_maps.c:4272)\n        return C._element_constructor(x)\n      File \"sage/rings/polynomial/pbori.pyx\", line 908, in sage.rings.polynomial.pbori.BooleanPolynomialRing._element_constructor_ (build/cythonized/sage/rings/polynomial/pbori.cpp:9793)\n        raise TypeError, \"cannot convert monomial %s to %s: %s\"%(other,self,msg)\n    TypeError: cannot convert monomial x to Boolean PolynomialRing in z, y: name x not defined\n**********************************************************************\n```\n",
     "created_at": "2015-02-09T09:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96086",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95927",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -309,15 +308,15 @@ Exception raised:
 
 ---
 
-archive/issue_comments_096087.json:
+archive/issue_comments_095928.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2015-02-09T14:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96087",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95928",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -327,15 +326,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_096088.json:
+archive/issue_comments_095929.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-04-20T07:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96088",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95929",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -345,15 +344,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_096089.json:
+archive/issue_comments_095930.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2015-04-20T07:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96089",
-    "user": "@gagern"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95930",
+    "user": "https://github.com/gagern"
 }
 ```
 
@@ -363,15 +362,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_096090.json:
+archive/issue_comments_095931.json:
 ```json
 {
     "body": "`PolynomialSequence_gf2.solve` currently uses `lambda x: R_origin(x).lm()` as the key conversion function. Which could lead to strange behavior if used incorrectly:\n\n\n```\nsage: R.<x,y,z> = BooleanPolynomialRing()\nsage: sol = Sequence([x*y+z, y*z+x, x+y+z+1]).solve()\nsage: sol\n[{y: 1, z: 0, x: 0}]\nsage: sol[0][y+z]\n1\n```\n\n\nShould I have the conversion function verify that converting the resulting monomial back into a polynomial will result in a polynomial equal to the argument? Or should I use the rin instead of its monomials as the key domain of the dict? Or is this glitch acceptable, since it's obvious you should use a single monomial as a key here?",
     "created_at": "2015-04-20T07:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96090",
-    "user": "@gagern"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95931",
+    "user": "https://github.com/gagern"
 }
 ```
 
@@ -394,15 +393,15 @@ Should I have the conversion function verify that converting the resulting monom
 
 ---
 
-archive/issue_comments_096091.json:
+archive/issue_comments_095932.json:
 ```json
 {
     "body": "Patchbot not yet happy (but not that bad, only one failing doctest)\n\n```\nFile \"src/sage/rings/polynomial/multi_polynomial_ideal.py\", line 2258,\nin sage.rings.polynomial.multi_polynomial_ideal.?.variety\nFailed example:\n    for V in I.variety(): print V  # long time (6s on sage.math, 2011)\n```\n\n\nVincent",
     "created_at": "2015-04-20T09:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96091",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95932",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -422,15 +421,15 @@ Vincent
 
 ---
 
-archive/issue_comments_096092.json:
+archive/issue_comments_095933.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-04-20T10:21:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96092",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95933",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -440,15 +439,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_096093.json:
+archive/issue_comments_095934.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-04-20T10:29:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96093",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95934",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -458,15 +457,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_096094.json:
+archive/issue_comments_095935.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2015-05-25T09:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96094",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95935",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -476,15 +475,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_096095.json:
+archive/issue_comments_095936.json:
 ```json
 {
     "body": "Rebased to fix minor conflicts.\n\nJust one question: what is `_no_default_provided` for? Wouldn't it be enough to do\n\n```\nreturn super(KeyConvertingDict, self).pop(key, *args)\n```\n\nin `KeyConvertingDict.pop()`?\n\nLooks good to me otherwise.\n----\nNew commits:",
     "created_at": "2015-05-25T09:49:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96095",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95936",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -506,15 +505,15 @@ New commits:
 
 ---
 
-archive/issue_comments_096096.json:
+archive/issue_comments_095937.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-06-11T07:21:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96096",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95937",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -524,15 +523,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_096097.json:
+archive/issue_comments_095938.json:
 ```json
 {
     "body": "Rebased because of a minor conflict. I guess this ticket should be `needs_review` again, shouldn't it?\n----\nNew commits:",
     "created_at": "2015-09-03T13:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96097",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95938",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -544,15 +543,15 @@ New commits:
 
 ---
 
-archive/issue_comments_096098.json:
+archive/issue_comments_095939.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2015-09-03T13:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96098",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95939",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -562,15 +561,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_096099.json:
+archive/issue_comments_095940.json:
 ```json
 {
     "body": "does not seem to apply",
     "created_at": "2015-09-03T18:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96099",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95940",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -580,15 +579,15 @@ does not seem to apply
 
 ---
 
-archive/issue_comments_096100.json:
+archive/issue_comments_095941.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2015-09-03T18:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96100",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95941",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -598,15 +597,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_096101.json:
+archive/issue_comments_095942.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2015-09-04T05:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96101",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95942",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -616,15 +615,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_096102.json:
+archive/issue_comments_095943.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2015-09-04T05:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96102",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95943",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -634,15 +633,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_096103.json:
+archive/issue_comments_095944.json:
 ```json
 {
     "body": "Replying to [comment:26 chapoton]:\n> does not seem to apply\n\nSorry, it looks like I pushed the wrong branch!\n----\nNew commits:",
     "created_at": "2015-09-04T05:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96103",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95944",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -657,15 +656,15 @@ New commits:
 
 ---
 
-archive/issue_comments_096104.json:
+archive/issue_comments_095945.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-10-15T09:23:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96104",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95945",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -675,15 +674,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_096105.json:
+archive/issue_comments_095946.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-10-15T12:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96105",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95946",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -693,15 +692,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_096106.json:
+archive/issue_comments_095947.json:
 ```json
 {
     "body": "Since all tests pass and all I did was to rebase Martin's patches and fix trivial conflicts, I'm taking the liberty to set this to positive review myseld.",
     "created_at": "2015-10-15T12:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96106",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95947",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -711,15 +710,15 @@ Since all tests pass and all I did was to rebase Martin's patches and fix trivia
 
 ---
 
-archive/issue_comments_096107.json:
+archive/issue_comments_095948.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-10-16T18:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96107",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95948",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -729,15 +728,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_096108.json:
+archive/issue_comments_095949.json:
 ```json
 {
     "body": "Breakage:\n\n```\nsage -t --warn-long 27.7 src/sage/rings/polynomial/multi_polynomial_sequence.py\n**********************************************************************\nFile \"src/sage/rings/polynomial/multi_polynomial_sequence.py\", line 1381, in sage.rings.polynomial.multi_polynomial_sequence.PolynomialSequence_gf2.solve\nFailed example:\n    sol = S.solve(algorithm='sat'); sol  # optional - cryptominisat\nExpected nothing\nGot:\n    [{y: 1, z: 0, x: 0}]\n**********************************************************************\n```\n",
     "created_at": "2015-11-27T15:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9787",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-96108",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9787#issuecomment-95949",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

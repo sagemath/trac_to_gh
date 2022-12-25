@@ -6,7 +6,7 @@ archive/issues_003032.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis removes a test in tensor_product.py that is a repetition of a previous test (at line 193).\nIt also removes an obsolete comment in crystals.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3032\n\n",
     "created_at": "2008-04-26T16:31:36Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003032.json:
     "title": "minor docstring cleanup in crystals.py and tensor_product.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3032",
-    "user": "@dwbump"
+    "user": "https://github.com/dwbump"
 }
 ```
 Assignee: @mwhansen
@@ -32,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3032
 
 ---
 
-archive/issue_comments_020874.json:
+archive/issue_comments_020831.json:
 ```json
 {
     "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3032/9607.patch) by @mwhansen created at 2008-04-26 19:33:12",
     "created_at": "2008-04-26T19:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3032",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3032#issuecomment-20874",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3032#issuecomment-20831",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -50,15 +50,15 @@ Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3032/9607.pat
 
 ---
 
-archive/issue_comments_020875.json:
+archive/issue_comments_020832.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-26T21:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3032",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3032#issuecomment-20875",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3032#issuecomment-20832",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -68,15 +68,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020876.json:
+archive/issue_comments_020833.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.alpha1",
     "created_at": "2008-04-26T21:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3032",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3032#issuecomment-20876",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3032#issuecomment-20833",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

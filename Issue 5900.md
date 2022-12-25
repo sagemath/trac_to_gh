@@ -6,15 +6,13 @@ archive/issues_005900.json:
     "body": "Assignee: @timabbott\n\nOn Ubuntu jaunty, the system Python is 2.6 but Sage is built with Python 2.5.  This results in problems in a few places where Sage directly invokes a python program rather than running it via python.  For example, running \"trial\" rather than \"python $(which trial)\" would result in \"trial\" being started with Python 2.6.\n\nI've attached the set of patches that I applied in order to deal with this issue in Jaunty.  I believe they should be harmless for Sage, since it puts $SAGE_LOCAL at the start of PATH, ahead of any system copies of trial/twistd/etc. that might exist.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5900\n\n",
     "created_at": "2009-04-26T05:43:42Z",
     "labels": [
-        "debian-package",
-        "major",
-        "enhancement"
+        "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patches, needs review] Add support for system python != Sage python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5900",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -32,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5900
 
 ---
 
-archive/issue_comments_046642.json:
+archive/issue_comments_046553.json:
 ```json
 {
     "body": "Attachment [sage_scripts-dsage-trial.patch](tarball://root/attachments/some-uuid/ticket5900/sage_scripts-dsage-trial.patch) by @timabbott created at 2009-04-26 05:43:57",
     "created_at": "2009-04-26T05:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5900",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46642",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46553",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -50,15 +48,15 @@ Attachment [sage_scripts-dsage-trial.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_comments_046643.json:
+archive/issue_comments_046554.json:
 ```json
 {
     "body": "Attachment [sage_scripts-twistd.patch](tarball://root/attachments/some-uuid/ticket5900/sage_scripts-twistd.patch) by @timabbott created at 2009-04-26 05:44:06",
     "created_at": "2009-04-26T05:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5900",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46643",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46554",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -68,15 +66,15 @@ Attachment [sage_scripts-twistd.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_046644.json:
+archive/issue_comments_046555.json:
 ```json
 {
     "body": "They look good to me.  I'm not sure if they are still relevant since Sage switched to Python 2.6, but they shouldn't hurt.",
     "created_at": "2009-09-08T05:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5900",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46644",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46555",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -86,15 +84,15 @@ They look good to me.  I'm not sure if they are still relevant since Sage switch
 
 ---
 
-archive/issue_comments_046645.json:
+archive/issue_comments_046556.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-08T11:07:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5900",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46645",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46556",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -104,15 +102,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_046646.json:
+archive/issue_comments_046557.json:
 ```json
 {
     "body": "Applied to the bin repository.",
     "created_at": "2009-09-08T11:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5900",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46646",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5900#issuecomment-46557",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_004412.json:
     "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\nKeywords: elliptic curve local data\n\nThis is essentially a continuation of #3897.  I have added functionality to  ell_local_data.py so that for elliptic curves over number fields (and over Q) you can (1) ask about additive vs. split vs. non-split multiplicative reduction at a prime; (2) Ask for the Tamagawa index (which is not always equal to the T. number) and also (3) added some better documentation to the kodaira_symbol code.\n\nThe motivation is that this is used i computing p-adic elliptic logs which in turn in used in the S-integral points code which is coming along nicely.  But this stuff is independent of that so I thought it could be posted separately.\n\nThe patch should apply to 3.2.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4412\n\n",
     "created_at": "2008-10-31T16:46:51Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004412.json:
     "title": "[with patch, needs review] extend the local information function for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4412",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4412
 
 ---
 
-archive/issue_comments_032456.json:
+archive/issue_comments_032393.json:
 ```json
 {
     "body": "Attachment [sage-localdata.patch](tarball://root/attachments/some-uuid/ticket4412/sage-localdata.patch) by @JohnCremona created at 2008-10-31 16:47:02",
     "created_at": "2008-10-31T16:47:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32456",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32393",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -55,15 +55,15 @@ Attachment [sage-localdata.patch](tarball://root/attachments/some-uuid/ticket441
 
 ---
 
-archive/issue_comments_032457.json:
+archive/issue_comments_032394.json:
 ```json
 {
     "body": "fix typos found after applying cremona's patch",
     "created_at": "2008-11-01T07:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32457",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32394",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -73,15 +73,15 @@ fix typos found after applying cremona's patch
 
 ---
 
-archive/issue_comments_032458.json:
+archive/issue_comments_032395.json:
 ```json
 {
     "body": "Attachment [4412-typo-localdata.patch](tarball://root/attachments/some-uuid/ticket4412/4412-typo-localdata.patch) by mvngu created at 2008-11-01 07:38:13\n\nThe patch **4412-typo-localdata.patch** was produced under sage-3.1.4. It fixes various typos that were found after applying cremona's patch **sage-localdata.patch**. That is, **4412-typo-localdata.patch** should be applied on top of **sage-localdata.patch**.",
     "created_at": "2008-11-01T07:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32458",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32395",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -93,15 +93,15 @@ The patch **4412-typo-localdata.patch** was produced under sage-3.1.4. It fixes 
 
 ---
 
-archive/issue_comments_032459.json:
+archive/issue_comments_032396.json:
 ```json
 {
     "body": "Replying to [comment:1 mvngu]:\n> The patch **4412-typo-localdata.patch** was produced under sage-3.1.4. It fixes various typos that were found after applying cremona's patch **sage-localdata.patch**. That is, **4412-typo-localdata.patch** should be applied on top of **sage-localdata.patch**.\n\nMany thanks!  I was relieved to see that most of those typos are pre-existing ones and not new ones introduced by me.  In the place where you give two alternatives I prefer the first one (and that one is my fault).  John",
     "created_at": "2008-11-01T10:14:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32459",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32396",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -114,15 +114,15 @@ Many thanks!  I was relieved to see that most of those typos are pre-existing on
 
 ---
 
-archive/issue_comments_032460.json:
+archive/issue_comments_032397.json:
 ```json
 {
     "body": "REFEREEing:\n\nApplies and all elliptic_curve tests pass.  I had to slightly rebase the typo fix patch, and fix the \"which do you mean\" issue.  \n\n```\nAll tests passed!\nTotal time for all tests: 67.1 seconds\nwas@sage:~/build/sage-3.2.1.alpha1$ \n```\n\n\nI've attached the rebased patch.",
     "created_at": "2008-11-28T23:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32460",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32397",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -143,15 +143,15 @@ I've attached the rebased patch.
 
 ---
 
-archive/issue_comments_032461.json:
+archive/issue_comments_032398.json:
 ```json
 {
     "body": "Attachment [trac_sage-4412_typos-rebased.patch](tarball://root/attachments/some-uuid/ticket4412/trac_sage-4412_typos-rebased.patch) by @williamstein created at 2008-11-28 23:32:57\n\nREFEREE REPORT:\n\nThis is an extremely good patch, with about a 10:1 ratio of documentation to code, and it really really needs to get in.  Here are a few minor issues that need to get fixed.  When they are all fixed, I'll give this a positive review.\n\n1. Please add a doctest to illustrate the algorithm= option to EllipticCurveLocalData, since all the doctests look like this, and none illustrate that new parameter. \n\n```\nEllipticCurveLocalData(E,7)\n```\n\n\n2. Once you do 1, you'll find it doesn't work, at least in the only example I tried:\n\n```\nsage: E = EllipticCurve('14a1') \nsage: from sage.schemes.elliptic_curves.ell_local_data import EllipticCurveLocalData \nsage: EllipticCurveLocalData(E,2, algorithm='generic')\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/was/build/sage-3.2.1.alpha1/<ipython console> in <module>()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_local_data.pyc in __init__(self, E, P, proof, algorithm)\n    110             self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n    111             if self._fp>0:\n--> 112                 if self._Emin.c4().valuation(p)>0:\n    113                     self._reduction_type = 0\n    114                 elif self._split:    \n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/rational.so in sage.rings.rational.Rational.valuation (sage/rings/rational.c:6338)()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.valuation (sage/rings/integer.c:14944)()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/rings/integer.so in sage.rings.integer.Integer.__init__ (sage/rings/integer.c:6054)()\n\nTypeError: unable to coerce <class 'sage.rings.ideal.Ideal_pid'> to an integer\n```\n\n\n3. Giving a meaningless algorithm option should raise a ValueError:\n\n```\nsage: EllipticCurveLocalData(E,2, algorithm='foo bar')\n```\n\n\n4. This line (line 240)\n\n```\nif not cp==4: \n```\n\nlooks silly.  How about \"if cp != 4:\"?\n\n5. For consistency in your docstrings in the assignments could you put spaces\naround =?  For example, you have\n\n```\n        476\t            sage: K.<a>=NumberField(x^3-2) \n \t477\t            sage: P17a, P17b = [P for P,e in K.factor(17)] \n \t478\t            sage: E = EllipticCurve([0,0,0,0,2*a+1]) \n```\n\nso sometimes there is space (which I really like!) and sometimes there isn't.",
     "created_at": "2008-11-28T23:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32461",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32398",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -226,15 +226,15 @@ so sometimes there is space (which I really like!) and sometimes there isn't.
 
 ---
 
-archive/issue_comments_032462.json:
+archive/issue_comments_032399.json:
 ```json
 {
     "body": "Attachment [trac_sage-4412_post-review.patch](tarball://root/attachments/some-uuid/ticket4412/trac_sage-4412_post-review.patch) by @JohnCremona created at 2008-11-29 16:59:59\n\nThanks for the detailed review.  The latest patch addresses all of those:\n1. Extra tests added\n2. Fixed (really a logic error)\n3. A ValueError is now raised (see extra doctest)\n4. Changed\n5. Changed (I agree with the convention but some always slip through!)\n\nTested on 3.2.1.rc0, all tests in elliptic_curves/ pass.",
     "created_at": "2008-11-29T16:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32462",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32399",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -253,15 +253,15 @@ Tested on 3.2.1.rc0, all tests in elliptic_curves/ pass.
 
 ---
 
-archive/issue_comments_032463.json:
+archive/issue_comments_032400.json:
 ```json
 {
     "body": "Merged sage-localdata.patch, trac_sage-4412_typos-rebased.patch and trac_sage-4412_post-review.patch in Sage 3.2.1.rc1\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T07:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32463",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32400",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -275,15 +275,15 @@ Michael
 
 ---
 
-archive/issue_comments_032464.json:
+archive/issue_comments_032401.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-30T07:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4412",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32464",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4412#issuecomment-32401",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

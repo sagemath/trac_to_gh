@@ -6,15 +6,14 @@ archive/issues_004352.json:
     "body": "Assignee: mhampton\n\nKeywords: gfan, groebner_fan, weight vectors\n\nThis should be pretty straightforward.\n\nsage-support request from Ursula Whitcher:\nI asked Anders Jensen, \"I would like to compute the weight vectors\ncorresponding to each reduced Groebner basis in gfan's output.  Is\nthere a way to tell gfan to do this?\"\n\nHe replied:\n\n\"There is a command \"weightvector\" that does exactly this. The command\nis hidden (does not show up in the manual or the file system). To run\nit type \"gfan _weightvector\" in your shell. MIND THE SPACE BEFORE '_'.\nAccording to the --help text the correct thing to do would be to run\n\"gfan _weightvector -m\" with the gfan output as input.\n\nFor example\ngfan | gfan _weightvector -m\nQ[x,y]\n{x-y}\n\nwill produce a list of two vectors.\nI hope this works out for you.\nBest regards,\nAnders\"\n\nIs there a way to access the weightvector command from the Sage\nimplementation of gfan?\n\nThanks!\nUrsula \n\nIssue created by migration from https://trac.sagemath.org/ticket/4352\n\n",
     "created_at": "2008-10-23T21:23:08Z",
     "labels": [
-        "interfaces",
-        "minor",
-        "enhancement"
+        "component: interfaces",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "add support for weight vectors to gran/groebner_fan",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4352",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: mhampton
@@ -60,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4352
 
 ---
 
-archive/issue_comments_031959.json:
+archive/issue_comments_031897.json:
 ```json
 {
     "body": "Attachment [4352_1.patch](tarball://root/attachments/some-uuid/ticket4352/4352_1.patch) by mhampton created at 2008-10-24 02:16:44\n\nbased on 3.1.4 but should be fine against 3.2-alpha0",
     "created_at": "2008-10-24T02:16:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31959",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31897",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -80,15 +79,15 @@ based on 3.1.4 but should be fine against 3.2-alpha0
 
 ---
 
-archive/issue_comments_031960.json:
+archive/issue_comments_031898.json:
 ```json
 {
     "body": "REVIEW:\n\npatch applies and passes test.  Code raises major red flag!!\n\n```\n\t        ans = eval(ans.replace('{','').replace('}','').replace('\\n','')) \n```\n\n\nIf the output -- which you make into vectors over QQ ever actually has any rational numbers, then eval will do very bad things to them, e.g., \n\n```\nsage: eval('2/3')\n0\n```\n\nOops!\n\nUse sage_eval instead:\n\n```\nsage: sage_eval('2/3')\n2/3\n```\n",
     "created_at": "2008-11-29T02:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31960",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31898",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -122,15 +121,15 @@ sage: sage_eval('2/3')
 
 ---
 
-archive/issue_comments_031961.json:
+archive/issue_comments_031899.json:
 ```json
 {
     "body": "Attachment [4352_2.patch](tarball://root/attachments/some-uuid/ticket4352/4352_2.patch) by mhampton created at 2008-11-29 14:00:40\n\nsupercedes previous patch, addresses review",
     "created_at": "2008-11-29T14:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31961",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31899",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -142,15 +141,15 @@ supercedes previous patch, addresses review
 
 ---
 
-archive/issue_comments_031962.json:
+archive/issue_comments_031900.json:
 ```json
 {
     "body": "This patch no longer applies cleanly to my 3.2.1.rc1 merge tree:\n\n```\nsage-3.2.1.rc1/devel/sage$ patch -p1 --dry-run < trac_4352_2.patch \npatching file sage/rings/polynomial/groebner_fan.py\nHunk #2 FAILED at 76.\n1 out of 3 hunks FAILED -- saving rejects to file sage/rings/polynomial/groebner_fan.py.rej\n```\n\nI gather from the patch description that only trac_4352_2.patch should be applied. So unless I am mistaken please rebase this. If there are unknown dependencies for this ticket please list them.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T06:41:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31962",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31900",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +172,15 @@ Michael
 
 ---
 
-archive/issue_comments_031963.json:
+archive/issue_comments_031901.json:
 ```json
 {
     "body": "Attachment [4352_3.patch](tarball://root/attachments/some-uuid/ticket4352/4352_3.patch) by mhampton created at 2008-11-30 14:05:13\n\nrebased against 3.2.1.rc0",
     "created_at": "2008-11-30T14:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31963",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31901",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -193,15 +192,15 @@ rebased against 3.2.1.rc0
 
 ---
 
-archive/issue_comments_031964.json:
+archive/issue_comments_031902.json:
 ```json
 {
     "body": "Merged 4352_3.patch in Sage 3.2.1.rc1",
     "created_at": "2008-11-30T23:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31964",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31902",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -211,15 +210,15 @@ Merged 4352_3.patch in Sage 3.2.1.rc1
 
 ---
 
-archive/issue_comments_031965.json:
+archive/issue_comments_031903.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-30T23:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31965",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4352#issuecomment-31903",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002731.json:
     "body": "Assignee: @timabbott\n\nWhen trying to run the Debian build of SAGE, I get the following doctest error.\n\nIt doesn't seem that any of the Debian packages for GAP contain GeneratorMatCode.  So, we'll need to do something to make this available in Debian.\n\n**********************************************************************\nFile \"const.py\", line 1841:\n    : C.decode(v2)\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_61[6]>\", line 1, in <module>\n        C.decode(v2)###line 1841:\n    : C.decode(v2)\n      File \"/usr/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 708, in decode\n        gap.eval(\"C:=GeneratorMatCode(\"+Gstr+\",GF(\"+str(q)+\"))\")\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 309, in eval\n        s = Expect.eval(self, x)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 707, in eval\n        return '\\n'.join([self._eval_line(L, **kwds) for L in code.split('\\n') if L != ''])\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 477, in _eval_line\n        return self._eval_line_using_file(line)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 466, in _eval_line_using_file\n        return Expect._eval_line_using_file(self, line)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 594, in _eval_line_using_file\n        s = self._eval_line(self._read_in_file_command(tmp_to_use), allow_use_file=False)\n      File \"/usr/lib/python2.5/site-packages/sage/interfaces/gap.py\", line 510, in _eval_line\n        raise RuntimeError, message\n    RuntimeError: Gap produced error output\n    Variable: 'GeneratorMatCode' must have a value\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2731\n\n",
     "created_at": "2008-03-30T02:15:12Z",
     "labels": [
-        "debian-package",
+        "component: debian-package",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002731.json:
     "title": "GeneratorMatCode doesn't seem to be available in Debian's GAP",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2731",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -59,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2731
 
 ---
 
-archive/issue_comments_018799.json:
+archive/issue_comments_018760.json:
 ```json
 {
     "body": "This also seems to be the cause of the HadamardMat doctest failures.\n\nsage -t  devel/sage-main/sage/combinat/combinat.py          **********************************************************************\nFile \"combinat.py\", line 219:\n    sage: hadamard_matrix(4)\nException raised:\n    Traceback (most recent call last):\n      File \"/usr/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[0]>\", line 1, in <module>\n        hadamard_matrix(Integer(4))###line 219:\n    sage: hadamard_matrix(4)\n      File \"/usr/lib/python2.5/site-packages/sage/combinat/combinat.py\", line 233, in hadamard_matrix\n        raise NotImplementedError, \"Hadamard matrix of order %s does not exist or is not implemented yet.\"%n\n    NotImplementedError: Hadamard matrix of order 4 does not exist or is not implemented yet.\n**********************************************************************",
     "created_at": "2008-03-30T03:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2731",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18799",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18760",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -92,15 +92,15 @@ Exception raised:
 
 ---
 
-archive/issue_comments_018800.json:
+archive/issue_comments_018761.json:
 ```json
 {
     "body": "This is not **Sage Specific**: Please file a bug report with Debian or alternatively package the Sage version of GAP. Alternatively create a deb which contains the GAP packages that Sage installs per default.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-30T09:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2731",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18800",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18761",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +114,15 @@ Michael
 
 ---
 
-archive/issue_comments_018801.json:
+archive/issue_comments_018762.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-03-30T09:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2731",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18801",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18762",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +132,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_018802.json:
+archive/issue_comments_018763.json:
 ```json
 {
     "body": "GUAVA is a GAP coding theory package which is included standard with SAGE. The reason why these two errors occurs, I'm guessing, is that it is either not installed into the workspace (using GAP's LoadPackage then SAGE's gap_reset_workspace) or that whoever created the Debian version of SAGE did not using SAGE's version of GAP.",
     "created_at": "2008-03-30T11:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2731",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18802",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2731#issuecomment-18763",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 

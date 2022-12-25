@@ -6,15 +6,14 @@ archive/issues_009044.json:
     "body": "Assignee: jason, jkantor\n\nCC:  @fredrik-johansson @kcrisman\n\nAppears the current erf() function is limited to 53-bit accuracy, while using mpmath instead will provide greater accuracy and also greater speed.  This is from an IRC session - an edited version is below.\n\n\n```\n[09:55] --> E1ephant has joined this channel (~E1ephant@e1ephant.broker.freenet6.net).\n[09:55] <E1ephant> hi =)\n[09:57] <E1ephant> could you tell me please something? after integrating: integrate( (2/sqrt(2*pi)) * exp(-x^2/2), x, 0, 2)  a have erf(sqrt(2))\n[09:57] <E1ephant> how can i calculate than that value numerically?\n[09:57] <E1ephant> i mean erf(sqrt(2))\n[09:58] <rbeezer> E1ephant: N(erf(sqrt(2)))\n[09:59] <E1ephant> :-* thx\n[09:59] <rbeezer> N?  will give you documentation about using this to get different precision\n[10:46] <schilly> interesting, erf only works for the default 53 bits. if somebody needs more digits, resort to mpmath\n[10:46] <schilly> import mpmath; mpmath.mp.dps=200; mpmath.erf(mpmath.sqrt(2))\n[10:50] <schilly> mpmath is also neary 4 times faster for that one on my machine. i think the erf definition should be changed\n[10:51] <rbeezer> schilly: interesting (and even better that it is faster!)\n[11:00] <schilly> ah. end 16.5 times faster for the same 53bits prec (i still had it at 200 for the benachmark, where it was also faster)\n[11:02] <logix> mpmath is faster for 200 bits precision than sage is for 53 bits? uh :)\n[11:03] <schilly> logix: yes\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9044\n\n",
     "created_at": "2010-05-25T03:56:52Z",
     "labels": [
-        "numerical",
-        "minor",
-        "enhancement"
+        "component: numerical",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use mpmath for the erf() function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9044",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: jason, jkantor
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9044
 
 ---
 
-archive/issue_comments_083732.json:
+archive/issue_comments_083596.json:
 ```json
 {
     "body": "For a complete switch this probably needs a bit more analysis. I tested this on another (much faster) machine again and the timing numbers were different. No fast binding for mpmath installed?\n\nBut in any situation, using `mpmath.erf` to calculate the erf for a precision other than 53 bits is a necessary addition. It seems that it also depends on the magnitude of the input argument.\n\n\n```\nimport mpmath\n\nsage: %timeit erf(0.001)\n625 loops, best of 3: 74.6 \u00b5s per loop   #winner\nsage: %timeit mpmath.erf(0.001)\n625 loops, best of 3: 101 \u00b5s per loop\n\nsage: %timeit erf(1.001)\n625 loops, best of 3: 82.7 \u00b5s per loop   #winner\nsage: %timeit mpmath.erf(1.001)\n625 loops, best of 3: 120 \u00b5s per loop\n\nsage: %timeit erf(10010)\n625 loops, best of 3: 52.3 \u00b5s per loop\nsage: %timeit mpmath.erf(10010)\n625 loops, best of 3: 12.8 \u00b5s per loop   #winner\n```\n",
     "created_at": "2010-05-25T09:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83732",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83596",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -92,15 +91,15 @@ sage: %timeit mpmath.erf(10010)
 
 ---
 
-archive/issue_comments_083733.json:
+archive/issue_comments_083597.json:
 ```json
 {
     "body": "See also #1173; we should probably do this just because it allows complex input.",
     "created_at": "2010-06-09T01:40:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83733",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83597",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -110,15 +109,15 @@ See also #1173; we should probably do this just because it allows complex input.
 
 ---
 
-archive/issue_comments_083734.json:
+archive/issue_comments_083598.json:
 ```json
 {
     "body": "It looks like this is pretty much done at #1173.   I'll put a comment there to add `erf(sqrt(2))` just to address the point here, though other tests on that patch basically test the same thing.",
     "created_at": "2011-06-17T19:30:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83734",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83598",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -128,15 +127,15 @@ It looks like this is pretty much done at #1173.   I'll put a comment there to a
 
 ---
 
-archive/issue_comments_083735.json:
+archive/issue_comments_083599.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-06-17T19:30:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83735",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83599",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -146,15 +145,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083736.json:
+archive/issue_comments_083600.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-08-19T14:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83736",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83600",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -164,15 +163,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083737.json:
+archive/issue_comments_083601.json:
 ```json
 {
     "body": "This is now in the 'needs work' of #1173 and will be trivial to include there, so this should be closed as a dup.",
     "created_at": "2011-08-19T14:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83737",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83601",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -182,15 +181,15 @@ This is now in the 'needs work' of #1173 and will be trivial to include there, s
 
 ---
 
-archive/issue_comments_083738.json:
+archive/issue_comments_083602.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-08-22T08:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83738",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9044#issuecomment-83602",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

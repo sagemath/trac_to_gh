@@ -6,15 +6,13 @@ archive/issues_003148.json:
     "body": "Assignee: @williamstein\n\nKeywords: orthogonal polynomials Maxima\n\n\nThe defects in the code for the hermite function in\nsage/functions/orthogonal_polys.py which were noted and corrected in \n#2336 apply equally to the other functions in that file.\n\nThe attached patch applies the same fix that worked for hermite to the \nfollowing functions:\n\nchebyshev_T,\nchebyshev_U,\ngen_laguerre,\ngen_legendre_P,\ngen_legendre_Q,\njacobi_P,\nlaguerre,\nlegendre_P,\nlegendre_Q,\nultraspherical\n\nThis allows these polynomials to take much more general \narguments; see the examples given for legendre_P.\n\nThe functions:\n\ngen_legendre_P,\ngen_legendre_Q,\nlegendre_Q\n\nno longer yield a string representing a Maxima expression when the \nargument is a variable.   \n\nFor m > n the function gen_legendre_Q(n, m, x)\nhas to be computed independently of Maxima.  This part of the code may \nneed improving.\n\nThe introductory documentation has not been changed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3148\n\n",
     "created_at": "2008-05-10T12:08:12Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "improved orthogonal functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3148",
-    "user": "fwclarke"
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 Assignee: @williamstein
@@ -68,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3148
 
 ---
 
-archive/issue_comments_021838.json:
+archive/issue_comments_021791.json:
 ```json
 {
     "body": "Attachment [sage-3148.patch](tarball://root/attachments/some-uuid/ticket3148/sage-3148.patch) by fwclarke created at 2008-05-10 12:09:32",
     "created_at": "2008-05-10T12:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3148#issuecomment-21838",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/3148#issuecomment-21791",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -86,15 +84,15 @@ Attachment [sage-3148.patch](tarball://root/attachments/some-uuid/ticket3148/sag
 
 ---
 
-archive/issue_comments_021839.json:
+archive/issue_comments_021792.json:
 ```json
 {
     "body": "Looks good to me.  All the tests pass, and the patch definitely simplifies the code.",
     "created_at": "2008-05-23T07:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3148#issuecomment-21839",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3148#issuecomment-21792",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -104,15 +102,15 @@ Looks good to me.  All the tests pass, and the patch definitely simplifies the c
 
 ---
 
-archive/issue_comments_021840.json:
+archive/issue_comments_021793.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.rc0",
     "created_at": "2008-05-23T07:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3148#issuecomment-21840",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3148#issuecomment-21793",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -122,15 +120,15 @@ Merged in Sage 3.0.2.rc0
 
 ---
 
-archive/issue_comments_021841.json:
+archive/issue_comments_021794.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-23T07:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3148#issuecomment-21841",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3148#issuecomment-21794",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

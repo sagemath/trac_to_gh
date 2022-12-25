@@ -6,15 +6,14 @@ archive/issues_004443.json:
     "body": "Assignee: @craigcitro\n\nCC:  @JohnCremona @zimmermann6\n\nThis bundle does several things:\n\n1. Massively speed up `prime_range`. Before:\n\n   {{{\nsage: time ls = prime_range(10^8)\nCPU times: user 143.74 s, sys: 1.51 s, total: 145.26 s\nWall time: 145.93 s\n    }}}\n\n After:\n    \n    {{{\nsage: %time ls = prime_range(10^8)\nCPU times: user 1.76 s, sys: 1.08 s, total: 2.84 s\nWall time: 2.87 s\n    }}}\n\n This was first mentioned during the `3.1.3.alpha0` testing cycle. \n\n2. Speed up `gcd` and `lcm`. These were rewritten to be much more robust as part of #3118. However, these were accidentally made much slower. This patch fixes that. \n\n Before #3118:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n100000 loops, best of 3: 6.13 \u00c2\u00b5s per loop\n    }}}\n    \n After #3118:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n10000 loops, best of 3: 25.7 \u00c2\u00b5s per loop\n    }}}   \n   \n With this patch:\n    {{{\nsage: n = 928374923\nsage: m = 892734\nsage: %timeit gcd(n,m)\n100000 loops, best of 3: 3.97 \u00c2\u00b5s per loop\n    }}}\n\n I also tested on lots of other kinds of input (lists of `Integer`s, list of `int`s, list of `long`s, etc), and the code **seems** to be always at least as fast as both before and after the patch at #3118. If there are cases I've missed, please let me know! \n   \n3. Tidy up `sage/rings/arith.py`. This was mostly small cosmetic changes; it would be a good project to go through this file, remove more cruft, and move some functions to Cython. If someone wants to make a ticket and assign it to me, I'll try to get to it at some point.\n\n4. Clean up and reorganize all of the files with `arith` in their name. In particular, I moved `sage/ext/arith.pyx` to `sage/rings/fast_arith.pyx`, and removed all of the legacy `arith_c`, `arith_gmp`, etc. Most of these were empty files that dated back to the days when Pyrex wouldn't let us keep `.pyx` files in multiple directories. There were also two files which seemed to be a Pyrex implementation of polynomials mod n, I believe by Didier Deshommes. These aren't used anywhere in Sage, and we have new code that does that (based on David Harvey's `znpoly`), so I've removed them.\n\nI have tested all of `sage/rings/`, but one should really do a `sage -br` and a `sage -testall` before giving this bundle a positive review. I'll try to do this soon, but I wanted to get the patch posted while I was at it.\n\nSince several files were added and removed from the mercurial archive, I'm attaching a bundle instead of a patch. I'm adding John Cremona and Paul Zimmerman to the `cc`, because they're most qualified to look at the changes I made after #3118 and see if I accidentally un-did any of their work on some corner cases.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4443\n\n",
     "created_at": "2008-11-05T10:08:50Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Massive prime_range speedup, arith* files cleanup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4443",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -85,15 +84,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4443
 
 ---
 
-archive/issue_comments_032675.json:
+archive/issue_comments_032612.json:
 ```json
 {
     "body": "Attachment [trac-4443.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443.patch) by @craigcitro created at 2008-11-05 10:14:31",
     "created_at": "2008-11-05T10:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32675",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32612",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -103,15 +102,15 @@ Attachment [trac-4443.patch](tarball://root/attachments/some-uuid/ticket4443/tra
 
 ---
 
-archive/issue_comments_032676.json:
+archive/issue_comments_032613.json:
 ```json
 {
     "body": "I'm looking at it now, assuming that I can get those .hg files to apply.  john",
     "created_at": "2008-11-05T11:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32676",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32613",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -121,15 +120,15 @@ I'm looking at it now, assuming that I can get those .hg files to apply.  john
 
 ---
 
-archive/issue_comments_032677.json:
+archive/issue_comments_032614.json:
 ```json
 {
     "body": "Replying to [comment:1 cremona]:\n> I'm looking at it now, assuming that I can get those .hg files to apply.  john\n\nWhat am I supposed to do with those .hg files?  For the first one I get an error message when I click on it; for the second it just displays a whole lot of changelogs.  Right-clicking and asking to save just ends up with some html in a file.  Perhaps the .patch patch file contains everything?\n\nAwaiting instructions....",
     "created_at": "2008-11-05T11:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32677",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32614",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -144,15 +143,15 @@ Awaiting instructions....
 
 ---
 
-archive/issue_comments_032678.json:
+archive/issue_comments_032615.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-11-05T16:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32678",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32615",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -162,15 +161,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_032679.json:
+archive/issue_comments_032616.json:
 ```json
 {
     "body": "Well, even though it doesn't show the changesets when you click, here's what theoretically should happen:\n\n* click on `trac-4443.hg`\n* click on \"Original Format\" and save the file\n* in a new `3.2.alpha2` branch, type `hg unbundle trac-4443.hg`\n\nYou should then be good to go.",
     "created_at": "2008-11-05T16:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32679",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32616",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -186,15 +185,15 @@ You should then be good to go.
 
 ---
 
-archive/issue_comments_032680.json:
+archive/issue_comments_032617.json:
 ```json
 {
     "body": "There only seems to be one relevant changeset in there, i.e.\n\nhttp://trac.sagemath.org/sage_trac/attachment/ticket/4443/trac-4443-huge.hg?changeset=10886\n\nThen why not post a patch and then delete the other crap from the ticket? There is also trac-4443.patch which seems to be that one changeset?\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-05T16:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32680",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32617",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -214,15 +213,15 @@ Michael
 
 ---
 
-archive/issue_comments_032681.json:
+archive/issue_comments_032618.json:
 ```json
 {
     "body": "Yes, there is only one changeset. However, I did a bunch of `hg add` and `hg remove` -- my understanding is that a patch doesn't keep track of that. Or am I just wrong? If so, feel free to delete the two bundles.",
     "created_at": "2008-11-05T16:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32681",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32618",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -232,15 +231,15 @@ Yes, there is only one changeset. However, I did a bunch of `hg add` and `hg rem
 
 ---
 
-archive/issue_comments_032682.json:
+archive/issue_comments_032619.json:
 ```json
 {
     "body": "Replying to [comment:5 craigcitro]:\n> Yes, there is only one changeset. However, I did a bunch of `hg add` and `hg remove` -- my understanding is that a patch doesn't keep track of that. Or am I just wrong? If so, feel free to delete the two bundles.\n\nAll files removed or added to the repo before committing are in the diff - have a look yourself :). If you look at the bundle there is also only one commit, so where else should those changes be? :p\n\nCheers,\n\nMichael",
     "created_at": "2008-11-05T17:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32682",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32619",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -257,15 +256,15 @@ Michael
 
 ---
 
-archive/issue_comments_032683.json:
+archive/issue_comments_032620.json:
 ```json
 {
     "body": "If I understand correctly, this means that I can apply the *patch as normal and ignore the rest?  OK, it will be done....",
     "created_at": "2008-11-05T17:26:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32683",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32620",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -275,15 +274,15 @@ If I understand correctly, this means that I can apply the *patch as normal and 
 
 ---
 
-archive/issue_comments_032684.json:
+archive/issue_comments_032621.json:
 ```json
 {
     "body": "First things first:  patch applies cleanly to 3.2.alpha2, but -testall gives this:\n\n```\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/calculus/calculus.py\n\tsage -t  devel/sage/sage/tests/book_stein_modform.py\n\tsage -t  devel/sage/sage/tests/book_stein_ent.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/sha_tate.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/ell_tate_curve.py\n\tsage -t  devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n\tsage -t  devel/sage/sage/modular/abvar/abvar.py\n\tsage -t  devel/sage/sage/modular/modform/eis_series.py\n\tsage -t  devel/sage/sage/modular/modform/ambient.py\n\tsage -t  devel/sage/sage/modular/modform/hecke_operator_on_qexp.py\n\tsage -t  devel/sage/sage/modular/modform/vm_basis.py\n\tsage -t  devel/sage/sage/modular/modform/j_invariant.py\n\tsage -t  devel/sage/sage/modular/modform/space.py\n\tsage -t  devel/sage/sage/modular/modform/cuspidal_submodule.py\n\tsage -t  devel/sage/sage/modular/modform/element.py\n```\n\nwhich are probably all trivial but need to be fixed.\n\nI find a patch like this quite hard to review, since it combines a lot of moving of chunks of code around (certainly a good idea here) with all the trivial changes which that leads to;  and some real bug-fixes.  When scanning the patch one sees lots of large blue and red hunks (which may or may not hide significant code changes), and a lot of trivial changes, and buried in there is the \"real meat\".\n\nOne thing I could not work out easily was exactly how my earlier changes to lcm and gcd caused the slow-down!\n\nAnyway this is a basically positive review, and I'll be happy to look at it again.",
     "created_at": "2008-11-05T21:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32684",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32621",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -322,15 +321,15 @@ Anyway this is a basically positive review, and I'll be happy to look at it agai
 
 ---
 
-archive/issue_comments_032685.json:
+archive/issue_comments_032622.json:
 ```json
 {
     "body": "Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt2.patch) by @craigcitro created at 2008-11-06 08:58:37",
     "created_at": "2008-11-06T08:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32685",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32622",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -340,15 +339,15 @@ Attachment [trac-4443-pt2.patch](tarball://root/attachments/some-uuid/ticket4443
 
 ---
 
-archive/issue_comments_032686.json:
+archive/issue_comments_032623.json:
 ```json
 {
     "body": "So the `calculus.py` failure above is a numerical noise issue, which (I hope!) is independent -- it seems to be #4436. \n\nEverything else comes from one single error: \n\n```\nsage: pari(0).primepi()\nBOOM!\n```\n\n\nI've fixed this, and all the above doctests pass.",
     "created_at": "2008-11-06T09:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32686",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32623",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -368,15 +367,15 @@ I've fixed this, and all the above doctests pass.
 
 ---
 
-archive/issue_comments_032687.json:
+archive/issue_comments_032624.json:
 ```json
 {
     "body": "With the second patch applied on top of the first all the doctests which failed before (apart from the irrelevant calculus.py one) now pass. +1!\n\n[Craig, I would still like to know what it was I did which caused the slowdown!]",
     "created_at": "2008-11-06T09:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32687",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32624",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -388,15 +387,15 @@ With the second patch applied on top of the first all the doctests which failed 
 
 ---
 
-archive/issue_comments_032688.json:
+archive/issue_comments_032625.json:
 ```json
 {
     "body": "Replying to [comment:10 cremona]:\n\n> [Craig, I would still like to know what it was I did which caused the slowdown!]\n\nWas it just replacing the test g==1 with g==one (with one defined outside the loop)?  Maybe more classes (for which gcds are defined) should have an is_one() method as well as an is_zero() method?",
     "created_at": "2008-11-06T16:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32688",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32625",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -410,15 +409,15 @@ Was it just replacing the test g==1 with g==one (with one defined outside the lo
 
 ---
 
-archive/issue_comments_032689.json:
+archive/issue_comments_032626.json:
 ```json
 {
     "body": "Hi John,\n\nActually, there were a few things that slowed it down. If you look at the case of `gcd(a,b)`, where `a` and `b` are of type `Integer`, then what we really need to do is call `a.gcd(b)` and return that result. \n\nIn the current version, with these inputs, we:\n* check that `b is not None`\n* check `hasattr(a,\"gcd\")`\n* return `a.gcd(b)`\n\nIn the previous version, we:\n* do an import: `from sage.structure.sequence import Sequence`\n* create `Sequence((a,b))`\n* call `__GCD_sequence`\n* call `g = ZZ(0)`\n* call `g = g.gcd(a)`\n* call `g = g.gcd(b)`\n\nSo there are definitely just more steps going on. The two most expensive are the first two, as I recall. I think that just the import and the creation of the Sequence were roughly 2/3 of the time spent in `gcd(a,b)`! You can always check this by setting `a` and `b` and doing `%timeit` from the command line.\n\nOne more note: after the patch, it would actually be **faster** to do a `try`/`except` instead of the `hasattr` in the case of two `Integer`s, by a constant factor that's roughly 10% for tiny integers. However, it costs us a factor of 2-3 in the case of Python `int` or `long` -- and since these classes don't have a `gcd` method, I think this is where the code gets used most.",
     "created_at": "2008-11-06T17:19:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32689",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32626",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -447,15 +446,15 @@ One more note: after the patch, it would actually be **faster** to do a `try`/`e
 
 ---
 
-archive/issue_comments_032690.json:
+archive/issue_comments_032627.json:
 ```json
 {
     "body": "Thanks -- that's a very interesting and useful explanation (which probably deserves a wider audience).  It would be nice to think that our review system for patches might have caught that.\n\nPerhaps something we ought to add to a standard review is to check the times of doctests before and after.  But that would not be very easy since of course patches add doctests.",
     "created_at": "2008-11-06T18:33:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32690",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32627",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -467,15 +466,15 @@ Perhaps something we ought to add to a standard review is to check the times of 
 
 ---
 
-archive/issue_comments_032691.json:
+archive/issue_comments_032628.json:
 ```json
 {
     "body": "Unfortunately this patch has now a conflict:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage$ less sage/rings/arith.py.rej\n***************\n*** 795,802 ****\n          sage: next_prime(2004)\n          2011\n      \"\"\"\n-     n = integer_ring.ZZ(n)\n-     return n.next_prime(proof=proof)\n  \n  def previous_prime(n):\n      \"\"\"\n--- 726,732 ----\n          sage: next_prime(2004)\n          2011\n      \"\"\"\n+     return ZZ(n).next_prime(proof=proof)\n  \n  def previous_prime(n):\n      \"\"\"\n```\n\nI am pretty sure this is caused by #4452 which I just merged on top of 3.2.alpha3.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-07T18:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32691",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32628",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -513,15 +512,15 @@ Michael
 
 ---
 
-archive/issue_comments_032692.json:
+archive/issue_comments_032629.json:
 ```json
 {
     "body": "Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-rebase.patch) by @craigcitro created at 2008-11-07 20:02:48",
     "created_at": "2008-11-07T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32692",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32629",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -531,15 +530,15 @@ Attachment [trac-4443-rebase.patch](tarball://root/attachments/some-uuid/ticket4
 
 ---
 
-archive/issue_comments_032693.json:
+archive/issue_comments_032630.json:
 ```json
 {
     "body": "Attachment [trac-4443-pt3.patch](tarball://root/attachments/some-uuid/ticket4443/trac-4443-pt3.patch) by @craigcitro created at 2008-11-07 20:03:47\n\nThis should work. Apply\n\n\n```\ntrac-4443-rebase.patch\ntrac-4443-pt2.patch\ntrac-4443-pt3.patch\n```\n\n\nin that order.",
     "created_at": "2008-11-07T20:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32693",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32630",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -561,15 +560,15 @@ in that order.
 
 ---
 
-archive/issue_comments_032694.json:
+archive/issue_comments_032631.json:
 ```json
 {
     "body": "It does work.  To a fresh 3.2.alpha3 clone I applied the 4452 patch and then the three listed above and had  no conflicts.\n\nAll doctests in sage/rings and sage/libs/pari pass.",
     "created_at": "2008-11-07T21:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32694",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32631",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -581,15 +580,15 @@ All doctests in sage/rings and sage/libs/pari pass.
 
 ---
 
-archive/issue_comments_032695.json:
+archive/issue_comments_032632.json:
 ```json
 {
     "body": "Merged trac-4443-rebase.patch, trac-4443-pt2.patch and trac-4443-pt3.patch in Sage 3.2.rc0\n\nCheers,\n\nMichael",
     "created_at": "2008-11-08T05:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32695",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32632",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -603,15 +602,15 @@ Michael
 
 ---
 
-archive/issue_comments_032696.json:
+archive/issue_comments_032633.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-08T05:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4443",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32696",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4443#issuecomment-32633",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

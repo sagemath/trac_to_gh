@@ -6,7 +6,7 @@ archive/issues_003970.json:
     "body": "Assignee: @burcin\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3970\n\n",
     "created_at": "2008-08-27T22:48:14Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003970.json:
     "title": "MaximaElements should not coerce into SR.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3970",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @burcin
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3970
 
 ---
 
-archive/issue_comments_028527.json:
+archive/issue_comments_028469.json:
 ```json
 {
     "body": "After:\n\n\n```\nsage: f = maxima.function('x','sin(x)')\nsage: f+x\nsin(x)+x\nsage: x+f\nsin(x)+x\nsage: type(_)\n<class 'sage.interfaces.maxima.MaximaFunction'>\n```\n",
     "created_at": "2008-08-27T22:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28527",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28469",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -59,15 +59,15 @@ sage: type(_)
 
 ---
 
-archive/issue_comments_028528.json:
+archive/issue_comments_028470.json:
 ```json
 {
     "body": "Patch added which fixes the issue.  This depends on #132.",
     "created_at": "2008-08-27T22:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28528",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28470",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -77,15 +77,15 @@ Patch added which fixes the issue.  This depends on #132.
 
 ---
 
-archive/issue_comments_028529.json:
+archive/issue_comments_028471.json:
 ```json
 {
     "body": "This patch actually breaks everything in calculus.py.  I must have ran the tests without having it actually applied.",
     "created_at": "2008-08-29T00:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28529",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28471",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -95,15 +95,15 @@ This patch actually breaks everything in calculus.py.  I must have ran the tests
 
 ---
 
-archive/issue_comments_028530.json:
+archive/issue_comments_028472.json:
 ```json
 {
     "body": "What is the status of this now?  Apparently it still is a problem in 4.0:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: f = maxima.function('x','sin(x)')\nsage: f + x  #correct\nsin(x)+x\nsage: x+f    #wrong\nsage0 + x\nsage: \n| Sage Version 4.0, Release Date: 2009-05-29                         |\n| Type notebook() for the GUI, and license() for information.        |\n```\n",
     "created_at": "2009-05-30T08:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28530",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28472",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -128,15 +128,15 @@ sage:
 
 ---
 
-archive/issue_comments_028531.json:
+archive/issue_comments_028473.json:
 ```json
 {
     "body": "I get an error with sage -t -long sage/symbolic/ring.pyx. I am not sure that I understand the patch as it seems to apply for both maxima and pari. Is this by intention? \n\n\n```\nsage -t -long \"devel/sage-myver/sage/symbolic/ring.pyx\"\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/symbolic/ring.pyx\", line 97:\n    sage: SR.coerce(pari(2/5))\nException raised:\n    Traceback (most recent call last):\n      File \"/home/adamwebb/local/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/adamwebb/local/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/adamwebb/local/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[3]>\", line 1, in <module>\n        SR.coerce(pari(Integer(2)/Integer(5)))###line 97:\n    sage: SR.coerce(pari(2/5))\n      File \"parent.pyx\", line 402, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4859)\n      File \"parent.pyx\", line 429, in sage.structure.parent.Parent.coerce (sage/structure/parent.c:4806)\n    TypeError: no canonical coercion from Interface to the PARI C library to Symbolic Ring\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_7\n***Test Failed*** 1 failures.\n```\n\n\nif I put back the Pari stuff:\n\n```\nfrom sage.libs.pari.gen import PariInstance\n\nelif isinstance(R, (PariInstance)): \n    return True\n```\n\nThen everything works.\n\nCheers,\nAdam",
     "created_at": "2009-10-06T12:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28531",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28473",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -187,15 +187,15 @@ Adam
 
 ---
 
-archive/issue_comments_028532.json:
+archive/issue_comments_028474.json:
 ```json
 {
     "body": "Attachment [trac_3970.patch](tarball://root/attachments/some-uuid/ticket3970/trac_3970.patch) by @mwhansen created at 2009-10-07 04:20:59\n\nI forgot to remove the pari doctest.  It should also be removed since these parents should not have coercions going in both directions.\n\nThis is taken care of in the new patch.",
     "created_at": "2009-10-07T04:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28532",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28474",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -209,15 +209,15 @@ This is taken care of in the new patch.
 
 ---
 
-archive/issue_comments_028533.json:
+archive/issue_comments_028475.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-07T08:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28533",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28475",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -227,15 +227,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_028534.json:
+archive/issue_comments_028476.json:
 ```json
 {
     "body": "In that case, everything looks good. A quick retest also passes. ~ Adam",
     "created_at": "2009-10-07T08:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28534",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28476",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -245,15 +245,15 @@ In that case, everything looks good. A quick retest also passes. ~ Adam
 
 ---
 
-archive/issue_comments_028535.json:
+archive/issue_comments_028477.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-15T05:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28535",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3970#issuecomment-28477",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

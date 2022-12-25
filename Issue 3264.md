@@ -6,15 +6,14 @@ archive/issues_003264.json:
     "body": "Assignee: mabshoff\n\nCC:  polybori @malb\n\nMake sure to revert #3104 in case we do end up using less memory.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3264\n\n",
     "created_at": "2008-05-21T13:19:54Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Upgrade PolyBoRi to 0.4 release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3264",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3264
 
 ---
 
-archive/issue_comments_022585.json:
+archive/issue_comments_022538.json:
 ```json
 {
     "body": "This would be quite helpful for getting SAGE into Debian (since the polybori-0.4 package is the first version that satisfies Debian python policy).",
     "created_at": "2008-05-30T06:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22585",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22538",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -53,15 +52,15 @@ This would be quite helpful for getting SAGE into Debian (since the polybori-0.4
 
 ---
 
-archive/issue_comments_022586.json:
+archive/issue_comments_022539.json:
 ```json
 {
     "body": "I've attached a patch to SAGE required to make SAGE build against the polybori 0.5 release candidate.\n\nThe corresponding polybori-0.5rc.spkg is available at:\n\nhttp://sage.math.washington.edu/home/tabbott/polybori-0.5rc.spkg",
     "created_at": "2008-07-11T01:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22586",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22539",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -75,15 +74,15 @@ http://sage.math.washington.edu/home/tabbott/polybori-0.5rc.spkg
 
 ---
 
-archive/issue_comments_022587.json:
+archive/issue_comments_022540.json:
 ```json
 {
     "body": "Attachment [pbori-0.5-sage.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.patch) by @timabbott created at 2008-07-11 01:40:44",
     "created_at": "2008-07-11T01:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22587",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22540",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -93,15 +92,15 @@ Attachment [pbori-0.5-sage.patch](tarball://root/attachments/some-uuid/ticket326
 
 ---
 
-archive/issue_comments_022588.json:
+archive/issue_comments_022541.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_mabshoff\".",
     "created_at": "2008-07-11T02:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22588",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22541",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing keywords from "" to "editor_mabshoff".
 
 ---
 
-archive/issue_comments_022589.json:
+archive/issue_comments_022542.json:
 ```json
 {
     "body": "Hi Tim,\n\nthanks for doing this, but I am curious about a couple things.\n\n* The repo is in an inconsitent state:\n\n```\npolybori-0.5rc$ hg status\n! patches/CCuddCore.h\n! patches/CCuddCore.h-diff.patch\n! patches/SConstruct\n! patches/SConstruct.cygwin\n! patches/SConstruct.cygwin.patch\n? patches/PyPolyBoRi.py.orig\n? patches/PyPolyBori.patch\n? patches/SConstruct.orig\n? patches/SConstruct.patch\n```\n\n* The workaround at the end of spkg-install should have been removed:\n\n```\n# linking dynmic libraries causes segfaults at exit (see #2822)\nif [ `uname` = \"Darwin\" ]; then\n    rm -f $SAGE_LOCAL/lib/libpolybori.dylib\n    rm -f $SAGE_LOCAL/lib/libpboriCudd.dylib\n    rm -f $SAGE_LOCAL/lib/libgroebner.dylib\nelse\n    rm -f $SAGE_LOCAL/lib/libpolybori.so\n    rm -f $SAGE_LOCAL/lib/libpboriCudd.so\n    rm -f $SAGE_LOCAL/lib/libgroebner.so \nfi\n```\n\n* patches/SConstruct is missing, but in spkg-install you copy it over:\n\n```\ncp patches/SConstruct src/${PBDIR}/SConstruct\n```\n\n* There seems to be some inconsitency between between PyPolyBori.patch, ./patches/PyPolyBoRi.py and ./src/polybori-0.5rc/pyroot/polybori/PyPolyBoRi.py\n* You removed an OSX 10.4 workaround (the removed the \"-s\" from LINKFLAGS below in SConstruct) that breaks compilation there and is a must fix we must have in our tree:\n\n```\nopts.Add('LINKFLAGS', \"Linker flags\", ['-s'], converter = Split)\nopts.Add('LIBS', 'custom libraries needed for build', [], converter = Split)\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-07-11T02:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22589",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22542",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -180,15 +179,15 @@ Michael
 
 ---
 
-archive/issue_comments_022590.json:
+archive/issue_comments_022543.json:
 ```json
 {
     "body": "I agree on that workaround.  \n\nI'm a bit confused as to what happened to patches/SConstruct (which is supposed to be the OS X 10.4 fix).  It's easy to regenerate from SConstruct.patch and the actual SConstruct file.  I'm a bit puzzled by PyPolyBoRi.py not being what I recall as well.\n\nI'm also confused regarding what happened with the repository.  I've posted a new version in the same place that should have none of these problems.\n\nI think the patch is sage is likely wrong, however; I get\n\n```\nImportError: /usr/lib/python2.5/site-packages/sage/rings/polynomial/pbori.so: undefined symbol: _Z20m4ri_build_all_codesv\n```\n\nwhen I try to run SAGE with this patch in my Debian build (this was masked before by a flint problem).\n\nI observe that devel/sage-main/build/temp.linux-i686-2.5/sage/rings/polynomial/pbori.o contains references to _Z20m4ri_build_all_codesv, but devel/sage/sage/rings/polynomial/pbori.cpp refers to m4ri_build_all_codes (as do the .pyx files).  But this rewriting doesn't happen with the very similar m4ri_build_all_codes and m4ri_destroy_all_codes code in sage/sage/matrix/matrix_mod2_dense.c.\n\nThe only clear difference I can see here is that the pbori stuff is c++ based...",
     "created_at": "2008-07-11T03:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22590",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22543",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -214,15 +213,15 @@ The only clear difference I can see here is that the pbori stuff is c++ based...
 
 ---
 
-archive/issue_comments_022591.json:
+archive/issue_comments_022544.json:
 ```json
 {
     "body": "Replying to [comment:4 tabbott]:\n\nHi Tim,\n\n> I agree on that workaround.  \n\n\nGood.\n\n> I'm a bit confused as to what happened to patches/SConstruct (which is supposed to be the OS X 10.4 fix).  It's easy to regenerate from SConstruct.patch and the actual SConstruct file.  I'm a bit puzzled by PyPolyBoRi.py not being what I recall as well.\n> \n> I'm also confused regarding what happened with the repository.  I've posted a new version in the same place that should have none of these problems.\n\nI will take a look in a minute and do some build testing, followed by valgrinding to see if the dynamic lib problem has been fixed.\n\n> I think the patch is sage is likely wrong, however; I get\n> {{{\n> ImportError: /usr/lib/python2.5/site-packages/sage/rings/polynomial/pbori.so: undefined symbol: _Z20m4ri_build_all_codesv\n> }}}\n> when I try to run SAGE with this patch in my Debian build (this was masked before by a flint problem).\n> \n> I observe that devel/sage-main/build/temp.linux-i686-2.5/sage/rings/polynomial/pbori.o contains references to _Z20m4ri_build_all_codesv, but devel/sage/sage/rings/polynomial/pbori.cpp refers to m4ri_build_all_codes (as do the .pyx files).  But this rewriting doesn't happen with the very similar m4ri_build_all_codes and m4ri_destroy_all_codes code in sage/sage/matrix/matrix_mod2_dense.c.\n> \n> The only clear difference I can see here is that the pbori stuff is c++ based...\n\nWe upgraded to a new m4ri version recently. IIRC PolyBoRi 0.5 is supposed to switch from its own static m4ri to using a shared one if so configured, so Sage's m4ri might get in the way here. But it might also be a C vs. C++ problem that might be fixed via some extern \"C\" sprinkled in the m4ri headers in case they are missing.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-11T03:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22591",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22544",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -261,15 +260,15 @@ Michael
 
 ---
 
-archive/issue_comments_022592.json:
+archive/issue_comments_022545.json:
 ```json
 {
     "body": "IIRC correctly Martin is afk the weekend, but we might still catch him. So I added him to CC :)\n\nCheers,\n\nMichael",
     "created_at": "2008-07-11T03:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22592",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22545",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -283,15 +282,15 @@ Michael
 
 ---
 
-archive/issue_comments_022593.json:
+archive/issue_comments_022546.json:
 ```json
 {
     "body": "This certainly looks like a C vs. C++ issue, that's all I can say for now without actually digging in.",
     "created_at": "2008-07-11T09:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22593",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22546",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -301,15 +300,15 @@ This certainly looks like a C vs. C++ issue, that's all I can say for now withou
 
 ---
 
-archive/issue_comments_022594.json:
+archive/issue_comments_022547.json:
 ```json
 {
     "body": "Note that PolyBoRi 0.5 still ships its own M4RI and does not use the default M4RI installed (in Sage or the system). We should sit down with the authors at ISSAC and discuss how to change that :-)",
     "created_at": "2008-07-11T15:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22594",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22547",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -319,15 +318,15 @@ Note that PolyBoRi 0.5 still ships its own M4RI and does not use the default M4R
 
 ---
 
-archive/issue_comments_022595.json:
+archive/issue_comments_022548.json:
 ```json
 {
     "body": "Replying to [comment:8 malb]:\n> Note that PolyBoRi 0.5 still ships its own M4RI and does not use the default M4RI installed (in Sage or the system). We should sit down with the authors at ISSAC and discuss how to change that :-)\n\nI am sitting next to Michael B. and he correctly pointed out that the issue is with the extension and not PolyBoRi itself.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T07:05:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22595",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22548",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -344,15 +343,15 @@ Michael
 
 ---
 
-archive/issue_comments_022596.json:
+archive/issue_comments_022549.json:
 ```json
 {
     "body": "Note that #3195 might be resolved by this upgrade.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T07:07:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22596",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22549",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -366,15 +365,15 @@ Michael
 
 ---
 
-archive/issue_comments_022597.json:
+archive/issue_comments_022550.json:
 ```json
 {
     "body": "> I am sitting next to Michael B. and he correctly pointed out that the issue is with the extension and not PolyBoRi itself.\n\nI don't understand what you mean by \"the issue is with the extension\".",
     "created_at": "2008-07-21T19:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22597",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22550",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -386,15 +385,15 @@ I don't understand what you mean by "the issue is with the extension".
 
 ---
 
-archive/issue_comments_022598.json:
+archive/issue_comments_022551.json:
 ```json
 {
     "body": "Hi Tim, Martin, Michael, Alexander,\n\nthe problem is that m4ri is now build as a C library in PolyBoRi. This requires that the m4ri header has some extern \"C\" header guards, which Martin will add in a new point release of m4ri. We will also attempt to make PolyBoRi use Sage's libm4ri instead of using its own copy, but I hope we can get that done in time for the freeze.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-22T11:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22598",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22551",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -410,15 +409,15 @@ Michael
 
 ---
 
-archive/issue_comments_022599.json:
+archive/issue_comments_022552.json:
 ```json
 {
     "body": "Replying to [comment:12 mabshoff]:\n> the problem is that m4ri is now build as a C library in PolyBoRi. This requires that the m4ri header has some extern \"C\" header guards, which Martin will add in a new point release of m4ri. \n\nAfter thinking about this some more time, I came to the conclusion, that\n* future versions of M4RI will have the extern \"C\" guard in m4ri.h\n* the easiest fix is to add the guard to `pb_wrap.h` in clib.",
     "created_at": "2008-07-22T13:01:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22599",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22552",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -433,15 +432,15 @@ After thinking about this some more time, I came to the conclusion, that
 
 ---
 
-archive/issue_comments_022600.json:
+archive/issue_comments_022553.json:
 ```json
 {
     "body": "Since the current spkg for 0.5 is broken, I won't provide the fix just now:\n\n```\nmalb@road:/tmp/polybori-0.5rc$ ./spkg-install\n./spkg-install: line 15: [: =: unary operator expected\ncp: accessing `src/polybori-0.3/SConstruct': Not a directory\ncp: accessing `src/polybori-0.3/pyroot/polybori': Not a directory\ncp: accessing `src/polybori-0.3/Cudd/util/cpu_stats.c': Not a directory\nStarting build...\nRunning build_polybori...\n./spkg-install: line 38: cd: polybori-0.3: Not a directory\n\nscons: *** No SConstruct file found.\nFile \"/tmp/sage-3.0.4.rc1/local/lib/scons-0.97.0d20071212/SCons/Script/Main.py\", line 826, in _main\nError building PolyBoRi.\n```\n\n\nbut here is what needs to be added to pb_wrap.h\n\n```\n// M4RI\n#define PACKED 1\n#ifdef __cplusplus\nextern \"C\" {\n#include \"M4RI/m4ri.h\"\n}\n#else\n#include \"M4RI/m4ri.h\"\n#endif\n```\n\n\nwhich replaces\n\n\n```\n// M4RI\n#define PACKED 1\n#include \"M4RI/packedmatrix.h\"\n#include \"M4RI/grayflex.h\"\n```\n\n\nWhat is the `#define PACKED 1` for btw.?",
     "created_at": "2008-07-22T13:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22600",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22553",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -495,15 +494,15 @@ What is the `#define PACKED 1` for btw.?
 
 ---
 
-archive/issue_comments_022601.json:
+archive/issue_comments_022554.json:
 ```json
 {
     "body": "This change does seem to resolve the problems I was having with my Debian build.\n\nThe failure you're seeing with polybori-0.5rc.spkg is just a line that needs to be changed from \n\"polybori-0.3\" to \"polybori-0.5rc\" in spkg-install (I've posted a new version in my sage.math).\n\nBut after I make that change, I get compilation failures trying to build the polybori spkg in a stock 3.0.5 Sage install using gcc-4.3.  So, we're not done yet.\n\n\n```\ngcc -o M4RI/packedmatrix.o -c -std=c99 -O3 -ansi -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DPACKED -DHAVE_M4RI -DHAVE_IEEE_754 -DBSD -I/var/tmp/sage-3.0.5/spkg/build/polybori-0.5rc/src/boost_1_34_1.cropped -I/var/tmp/sage-3.0.5/local/include/python2.5 -Ipolybori/include -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd M4RI/packedmatrix.c\nIn file included from M4RI/packedmatrix.h:31,\n                 from M4RI/packedmatrix.c:21:\nM4RI/misc.h:241:8: warning: extra tokens at end of #endif directive\nIn file included from M4RI/packedmatrix.c:21:\nM4RI/packedmatrix.h:135: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'\nM4RI/packedmatrix.h:153: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'BIT'\nM4RI/packedmatrix.h:166: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'\nM4RI/packedmatrix.h:186: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'\nM4RI/packedmatrix.h:207: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'void'\nM4RI/packedmatrix.h:223: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'word'\nIn file included from M4RI/packedmatrix.c:21:\nM4RI/packedmatrix.h:546:8: warning: extra tokens at end of #endif directive\nIn file included from M4RI/packedmatrix.c:22:\nM4RI/parity.h:52: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'word'\nM4RI/parity.h:87: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'word'\nM4RI/packedmatrix.c:224: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'packedmatrix'\nM4RI/packedmatrix.c:251: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'packedmatrix'\nM4RI/packedmatrix.c: In function 'mzd_transpose':\nM4RI/packedmatrix.c:298: warning: return makes pointer from integer without a cast\nM4RI/packedmatrix.c: In function '_mzd_add_impl':\nM4RI/packedmatrix.c:571: error: expected expression before '/' token\nM4RI/packedmatrix.c:670:8: warning: extra tokens at end of #endif directive\nM4RI/packedmatrix.c:712:8: warning: extra tokens at end of #endif directive\nscons: *** [M4RI/packedmatrix.o] Error 1\nscons: building terminated because of errors.\nError building PolyBoRi.\n```\n",
     "created_at": "2008-07-22T21:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22601",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22554",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -550,15 +549,15 @@ Error building PolyBoRi.
 
 ---
 
-archive/issue_comments_022602.json:
+archive/issue_comments_022555.json:
 ```json
 {
     "body": "The errors are due to -ansi, which is probably still in the spkg-patches of custom.py and/or SConstruct.\n\nBest regards,\n  Alexander",
     "created_at": "2008-07-22T21:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22602",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22555",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -571,15 +570,15 @@ Best regards,
 
 ---
 
-archive/issue_comments_022603.json:
+archive/issue_comments_022556.json:
 ```json
 {
     "body": "\n```\nHello everybody,\nI've put another release candidate for upcoming polybori 0.5 to sf.net:\nhttp://sourceforge.net/project/showfiles.php?group_id=210499\nDirect link:\nhttp://sourceforge.net/project/downloading.php?group_id=210499&use_mirror=osdn&filename=polybori-0.5-2008-08-06.tar.gz&96560043\n(A first rc was created for Tim's debianization some weeks ago.)\n\nPlease let us know about any issues.\n\nBest regards,\n Alexander\n```\n",
     "created_at": "2008-08-08T16:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22603",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22556",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -603,15 +602,15 @@ Best regards,
 
 ---
 
-archive/issue_comments_022604.json:
+archive/issue_comments_022557.json:
 ```json
 {
     "body": "updated patch",
     "created_at": "2008-09-01T13:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22604",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22557",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -621,15 +620,15 @@ updated patch
 
 ---
 
-archive/issue_comments_022605.json:
+archive/issue_comments_022558.json:
 ```json
 {
     "body": "Attachment [pbori-0.5-sage.2.patch](tarball://root/attachments/some-uuid/ticket3264/pbori-0.5-sage.2.patch) by @malb created at 2008-09-01 13:54:29\n\nHi there,\n\nI've uploaded an updated SPKG (not based on the rc Alexander pointed us to) here:\n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.5rc.p1.spkg\n\nand updated the attached patch. `sage -t sage/rings/` passes for me. I'v reverted #3104 too btw. and fixed the SPKG.txt.",
     "created_at": "2008-09-01T13:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22605",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22558",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -647,15 +646,15 @@ and updated the attached patch. `sage -t sage/rings/` passes for me. I'v reverte
 
 ---
 
-archive/issue_comments_022606.json:
+archive/issue_comments_022559.json:
 ```json
 {
     "body": "There are some changes from the polybori-0.3.1.pX spkgs that need to be ported forward:\n\n```\nchangeset:   16:35ca591c94cd\ntag:         tip\nuser:        mabshoff@bsd.local\ndate:        Tue Aug 19 16:26:33 2008 -0700\nsummary:     polybori-0.3.1.p5: Add 64 bit OSX support\n\nchangeset:   15:fa58118566ad\nuser:        mabshoff@sage.math.washington.edu\ndate:        Mon Jul 21 14:49:07 2008 -0700\nsummary:     polybori-0.3.1.p4: Use /usr/bin/env bash as shebang\n\nchangeset:   14:181f8b612d1b\nuser:        mabshoff@sage.math.washington.edu\ndate:        Sun May 18 06:45:23 2008 -0700\nsummary:     Add diffs for all changed files to the repo\n```\n\nI will look into this today.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T20:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22606",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22559",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -689,15 +688,15 @@ Michael
 
 ---
 
-archive/issue_comments_022607.json:
+archive/issue_comments_022560.json:
 ```json
 {
     "body": "I have backported the changes into \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/rc0/polybori-0.5rc.p2.spkg\n\nIt passes build tests on \n\n* linux x86-64 and Itanium\n* 32 and 64 bit OSX 10.5 (but the 10.4 fix is in the spkg)\n* Solaris\n\nThe patch looks good to me and passes doctests. In total: positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-07T00:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22607",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22560",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -721,15 +720,15 @@ Michael
 
 ---
 
-archive/issue_comments_022608.json:
+archive/issue_comments_022561.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc0",
     "created_at": "2008-09-07T00:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22608",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22561",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -739,15 +738,15 @@ Merged in Sage 3.1.2.rc0
 
 ---
 
-archive/issue_comments_022609.json:
+archive/issue_comments_022562.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-07T00:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3264",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22609",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3264#issuecomment-22562",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002406.json:
     "body": "Assignee: tba\n\nOn the page \n\nhttp://www.sagemath.org/doc/html/tut/node12.html\n\n\"interderminate\" should be \"indeterminate\".  It's near the beginning of the page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2406\n\n",
     "created_at": "2008-03-06T17:07:03Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002406.json:
     "title": "Typo in Sage tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2406",
-    "user": "@rhinton"
+    "user": "https://github.com/rhinton"
 }
 ```
 Assignee: tba
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2406
 
 ---
 
-archive/issue_comments_016249.json:
+archive/issue_comments_016214.json:
 ```json
 {
     "body": "I can't find this in the latex version of the file in sage-2.10.3.rc2.",
     "created_at": "2008-03-07T12:18:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2406#issuecomment-16249",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2406#issuecomment-16214",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -51,15 +51,15 @@ I can't find this in the latex version of the file in sage-2.10.3.rc2.
 
 ---
 
-archive/issue_comments_016250.json:
+archive/issue_comments_016215.json:
 ```json
 {
     "body": "This type was fixed in 2.10.3.alpha0 via #2288.",
     "created_at": "2008-03-07T21:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2406#issuecomment-16250",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2406#issuecomment-16215",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +69,15 @@ This type was fixed in 2.10.3.alpha0 via #2288.
 
 ---
 
-archive/issue_comments_016251.json:
+archive/issue_comments_016216.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-07T21:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2406#issuecomment-16251",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2406#issuecomment-16216",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

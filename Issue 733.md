@@ -6,7 +6,7 @@ archive/issues_000733.json:
     "body": "Assignee: tba\n\nI updated the reference manual tex files by doing:\n\ncd sage/devel/doc/ref/\n./update\ncd ..\nmake pdf\n\nHowever, it claimed that there was nothing to be done, since everything was up to date.  I had to make clobber before it would build the documentation again.\n\nIs there a way to have the ./update command touch a file which was then a dependency for the make pdf/html/etc commands?  That way, running ./update would force make to rerun the pdf/html/etc generation.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/733\n\n",
     "created_at": "2007-09-21T19:18:07Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000733.json:
     "title": "generating docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/733",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: tba
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/733
 
 ---
 
-archive/issue_comments_004300.json:
+archive/issue_comments_004286.json:
 ```json
 {
     "body": "I think this has been fixed. \n\nCheers,\n\nMichael",
     "created_at": "2008-03-11T01:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/733",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/733#issuecomment-4300",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/733#issuecomment-4286",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -61,15 +61,15 @@ Michael
 
 ---
 
-archive/issue_comments_004301.json:
+archive/issue_comments_004287.json:
 ```json
 {
     "body": "`rebuild` works, so I am closing this. If anything comes up again please open a more specific  ticket with an actual example.",
     "created_at": "2008-03-22T05:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/733",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/733#issuecomment-4301",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/733#issuecomment-4287",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +79,15 @@ archive/issue_comments_004301.json:
 
 ---
 
-archive/issue_comments_004302.json:
+archive/issue_comments_004288.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2008-03-22T05:58:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/733",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/733#issuecomment-4302",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/733#issuecomment-4288",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

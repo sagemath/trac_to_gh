@@ -6,15 +6,14 @@ archive/issues_006758.json:
     "body": "Assignee: somebody\n\nCC:  mvngu drkirkby\n\nI tried to use the Sun compiler to build Sage. Since it's more fussy that gcc, it is showing as an **error** \n\n\n```\n\nMaking all in src\nmake[4]: Entering directory `/export/home/drkirkby/sage/suncc/sage-4.1.1/spkg/build/libgcrypt-1.4.3.p1/src/src'\nsource='visibility.c' object='libgcrypt_la-visibility.lo' libtool=yes \\\nDEPDIR=.deps depmode=none /bin/bash ../depcomp \\\n/bin/bash ../libtool --tag=CC   --mode=compile /opt/sunstudio12.1/bin/cc -DHAVE_CONFIG_H -I. -I..   -I/export/home/drkirkby/sage/suncc/sage-4.1.1/local/include -I/export/home/drkirkby/sage/suncc/sage-4.1.1/local/include -g -c -o libgcrypt_la-visibility.lo `test -f 'visibility.c' || echo './'`visibility.c\nmkdir .libs\n /opt/sunstudio12.1/bin/cc -DHAVE_CONFIG_H -I. -I.. -I/export/home/drkirkby/sage/suncc/sage-4.1.1/local/include -I/export/home/drkirkby/sage/suncc/sage-4.1.1/local/include -g -c visibility.c  -KPIC -DPIC -o .libs/libgcrypt_la-visibility.o\n\"visibility.c\", line 702: void function cannot return value\n\"visibility.c\", line 851: void function cannot return value\ncc: acomp failed for visibility.c\n```\n\nThe dodgy bits of code are:\n\n```\nvoid\ngcry_md_hash_buffer (int algo, void *digest,\n                     const void *buffer, size_t length)\n{\n  return _gcry_md_hash_buffer (algo, digest, buffer, length);\n}\n```\n\nand \n\n```\nvoid\ngcry_ac_io_init_va (gcry_ac_io_t *ac_io, gcry_ac_io_mode_t mode,\n                    gcry_ac_io_type_t type, va_list ap)\n{\n  return _gcry_ac_io_init_va (ac_io, mode, type, ap);\n}\n```\n\nThe Sun compiler will not accept this, and so exits, aborting the build of Sage. \n\nNote there are license issues with libgcrypt too - it is GPL 3. See #6757\n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/6758\n\n",
     "created_at": "2009-08-16T03:44:32Z",
     "labels": [
-        "cryptography",
-        "major",
+        "component: cryptography",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "visibility.c in libgcrypt attempts to return value from void function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6758",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: somebody
@@ -74,15 +73,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6758
 
 ---
 
-archive/issue_comments_055632.json:
+archive/issue_comments_055530.json:
 ```json
 {
     "body": "By looking at the latest source code for libgcrypt this code has been changed. It would appear the intension was to just execute the functions _gcry_md_hash_buffer and _gcry_ac_io_init_va, but not return their value. Here are the relevant functions from the latest release (1.4.4):\n\n```\nvoid\ngcry_ac_io_init_va (gcry_ac_io_t *ac_io, gcry_ac_io_mode_t mode,\n                    gcry_ac_io_type_t type, va_list ap)\n{\n  _gcry_ac_io_init_va (ac_io, mode, type, ap);\n}\n```\n\n\nThe code for function gcry_md_hash_buffer has changed a little more, but it is obvious the intension here two was to execute _gcry_md_hash_buffer and not return the value. \n\n\n```\n\nvoid\ngcry_md_hash_buffer (int algo, void *digest,\n                     const void *buffer, size_t length)\n{\n  if (!fips_is_operational ())\n    {\n      (void)fips_not_operational ();\n      fips_signal_error (\"called in non-operational state\");\n    }\n  _gcry_md_hash_buffer (algo, digest, buffer, length);\n}\n\n```\n\n\nSo I removed the 'return' from the code in Sage, and made a patch. Since this is just buggy code, and not-Solaris specific, I've made the patch on all platforms. It is only seen on Solaris with the Sun compiler, as the Sun compiler is more fussy than gcc. \n\nSee: http://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.3.p2/ \n\n\nSinve there are some license issues here, I have not updated the package. This code currently in Sage is GPL3 - see #6757\n\nDave",
     "created_at": "2009-08-16T11:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55632",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55530",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -131,15 +130,15 @@ Dave
 
 ---
 
-archive/issue_comments_055633.json:
+archive/issue_comments_055531.json:
 ```json
 {
     "body": "After uncompressing the spkg\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.3.p2/libgcrypt-1.4.3.p2.spkg\n\nI see that it contains two copies of libgcrypt: one in the src (version 1.4.0) directory and another copy in src/libgcrypt-1.4.3. Any reason why we need two different versions in the spkg?",
     "created_at": "2009-09-02T05:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55633",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55531",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -153,15 +152,15 @@ I see that it contains two copies of libgcrypt: one in the src (version 1.4.0) d
 
 ---
 
-archive/issue_comments_055634.json:
+archive/issue_comments_055532.json:
 ```json
 {
     "body": "This needs work as the updated libgcrypt spkg is seriously messed up --- it has two different versions of libgcrypt.",
     "created_at": "2009-09-17T22:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55634",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55532",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -171,15 +170,15 @@ This needs work as the updated libgcrypt spkg is seriously messed up --- it has 
 
 ---
 
-archive/issue_comments_055635.json:
+archive/issue_comments_055533.json:
 ```json
 {
     "body": "An updated spkg is up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/libgcrypt-1.4.3.p2.spkg\n\nThis package incorporates David Kirkby's changes in \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.3.p2/libgcrypt-1.4.3.p2.spkg\n\nbut leaves out the fixes for the dodgy bits of code since these have been fixed in libgcrypt 1.4.3. I deleted the patches/ directory. Changes have been committed in David's name.",
     "created_at": "2009-09-18T02:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55635",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55533",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -197,15 +196,15 @@ but leaves out the fixes for the dodgy bits of code since these have been fixed 
 
 ---
 
-archive/issue_comments_055636.json:
+archive/issue_comments_055534.json:
 ```json
 {
     "body": "Minh\n\nSomething is wrong here. Your revised version will not build with the Sun compiler. It gives the errors:\n\n\n```\n\"visibility.c\", line 702: void function cannot return value\n\"visibility.c\", line 851: void function cannot return value\n```\n\n\nas it does not contain my fixes. (I appreciate I screwed up the package first). \n\nI believe the best solution is to forget about 1.4.3.p2 entirely, and produce a 1.4.4. Despite the web site saying 1.4.4 is GPL3, the code clearly has a GPL2 'COPYING' file. \n\n\nDave",
     "created_at": "2009-09-27T22:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55636",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55534",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -231,15 +230,15 @@ Dave
 
 ---
 
-archive/issue_comments_055637.json:
+archive/issue_comments_055535.json:
 ```json
 {
     "body": "#7045 has an update to the 1.4.4 release. No changes to the source were necessary for this to build with Sun Studio 12.1",
     "created_at": "2009-09-28T01:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55637",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55535",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -249,15 +248,15 @@ archive/issue_comments_055637.json:
 
 ---
 
-archive/issue_comments_055638.json:
+archive/issue_comments_055536.json:
 ```json
 {
     "body": "Replying to [comment:6 drkirkby]:\n> Something is wrong here. Your revised version will not build with the Sun compiler. It gives the errors:\n> \n\n```\n\"visibility.c\", line 702: void function cannot return value\n\"visibility.c\", line 851: void function cannot return value\n```\n\n> \n> as it does not contain my fixes. \n\nGreatly appreciated that you caught this issue!\n\n\n\n\n\n> (I appreciate I screwed up the package first). \n\nI believe you didn't mess up the package. It was messed up even before the start of the 4.x series.\n\n\n\n\n\n> I believe the best solution is to forget about 1.4.3.p2 entirely, and produce a 1.4.4. Despite the web site saying 1.4.4 is GPL3, the code clearly has a GPL2 'COPYING' file. \n\nYes, that sounds reasonable. I usually go for the license file in the source tarball myself and also check on the project website.",
     "created_at": "2009-09-28T01:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55638",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55536",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -295,15 +294,15 @@ Yes, that sounds reasonable. I usually go for the license file in the source tar
 
 ---
 
-archive/issue_comments_055639.json:
+archive/issue_comments_055537.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2009-09-28T01:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55639",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55537",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -313,15 +312,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_055640.json:
+archive/issue_comments_055538.json:
 ```json
 {
     "body": "We should upgrade to libgcrypt 1.4.4 and not worry about libgcrypt 1.4.3 any longer. See ticket #7045 for this.",
     "created_at": "2009-09-28T01:36:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55640",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6758#issuecomment-55538",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

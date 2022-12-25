@@ -6,15 +6,14 @@ archive/issues_007838.json:
     "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies vengoroso@gmail.com\n\n#1497 added a few lines of code \n\n\n```/usr/bin/env\nimport ctypes\nprint str(8*ctypes.sizeof(ctypes.c_long))\n```\n\ninto the ATLAS build process, which reports the number of bits Sage was compiled as. It makes use of the module 'ctypes' in Python, but \n\nhttp://docs.activestate.com/activepython/2.5/whatsincluded.html\n\nshows that ctypes is seriouly on many platforms, including\n\n* Older linux-x86 - build failures\n* aix-powerpc\tbuild failures\n* linux-ia64\tbuild failures\n* solaris-sparc build failures\n* solaris-x86\tbuild failures\n* hpux-parisc\tlibffi not ported to PA-RISC arch\n* hpux-ia64\tbuild failures\n* win64\t\n\nHence the code needs replacing with something less broken\n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7838\n\n",
     "created_at": "2010-01-04T03:07:50Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Remove script using ctypes from ATLAS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7838",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: GeorgSWeber
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7838
 
 ---
 
-archive/issue_comments_067899.json:
+archive/issue_comments_067782.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"ctypes atlas\".",
     "created_at": "2010-01-04T03:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67899",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67782",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -74,15 +73,15 @@ Changing keywords from "" to "ctypes atlas".
 
 ---
 
-archive/issue_comments_067900.json:
+archive/issue_comments_067783.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-05T00:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67900",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67783",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -92,15 +91,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_067901.json:
+archive/issue_comments_067784.json:
 ```json
 {
     "body": "See: \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/atlas-3.8.3.p10/\n\nfor an updated version of ATLAS which fixes this issue. bitwidth.py has been changed. \n\nThe 4/5 lines of code I used were posted on sage-devel by  vengoroso`@`gmail.com but I don't know his fully name, so can't give full credit. Please let us know your full name! \n\nNote however, for me at least, ATLAS does not build fully, but at least it gets further than it did on Open Solaris. \n\nDave",
     "created_at": "2010-01-05T00:53:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67901",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67784",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -120,15 +119,15 @@ Dave
 
 ---
 
-archive/issue_comments_067902.json:
+archive/issue_comments_067785.json:
 ```json
 {
     "body": "The fix looks good.\n\nMy setup is clearly not ok. The build failed at the end:\n\n\n```\nATLAS install complete.  Examine \nATLAS/bin/<arch>/INSTALL_LOG/SUMMARY.LOG for details.\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nmake clean\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nrm -f *.o x* config?.out *core*\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build'\nFinished building ATLAS core\nThe Makefile generated in ATLAS for building shared libraries\nassumes the linker is the GNU linker, which it not true in\nyour setup. (It is generally considered better to use the\nSun linker in /usr/ccs/bin rather than the GNU linker from binutils)\nThe linker flags in /export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib/Makefile will be changed. \n'-shared' will be changed to '-G'\n'-soname' will be changed to '-h'\n'--whole-archive' will be changed to '-zallextract'\n'--no-whole-archive' will be changed to '-zdefaultextract'\nA copy of the original Makefile will be copied to Makefile.orig\nrm -f libatlas.so liblapack.so\nmake libatlas.so liblapack.so libf77blas.so libcblas.so liblapack.so\nmake[1]: Entering directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib'\nld -melf_x86_64 -G -h libatlas.so -o libatlas.so \\\n        -z allextract libatlas.a -z defaultextract -lc -lm\nld: warning: file libatlas.a(ATL_flushcache.o): wrong ELF class: ELFCLASS64\nld: fatal: entry point symbol `lf_x86_64' is undefined\nmake[1]: *** [libatlas.so] Error 1\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/atlas-3.8.3.p10/ATLAS-build/lib'\nmake: *** [shared] Error 2\nBuilding shared ATLAS libraries failed\nFailed to build ATLAS.\n\nreal\t155m22.653s\nuser\t147m22.502s\nsys\t6m4.162s\nsage: An error occurred while installing atlas-3.8.3.p10\n\n```\n\n\nMaybe I should use gcc gcc-4.4.2 with the gnu loader?\n\nJaap",
     "created_at": "2010-01-05T14:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67902",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67785",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -185,15 +184,15 @@ Jaap
 
 ---
 
-archive/issue_comments_067903.json:
+archive/issue_comments_067786.json:
 ```json
 {
     "body": "\n```\nJavier Lopez\n to wstein\n\t\nshow details 4:39 AM (1 hour ago)\n\t\nHi William,\n\nreply here since I've got no trac account. My full name is Javier\nL\u00f3pez Pe\u00f1a, but no credit is needed for such a small contribution.\n\nCheers\nJ\n```\n",
     "created_at": "2010-01-05T14:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67903",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67786",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -218,15 +217,15 @@ J
 
 ---
 
-archive/issue_comments_067904.json:
+archive/issue_comments_067787.json:
 ```json
 {
     "body": "The patch works ok. Positive review.\n\nRemoved cwitty from the cc list.\n\nAnd Javier from the authors list (see comment above).\n\nJaap",
     "created_at": "2010-01-12T14:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67904",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67787",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -242,15 +241,15 @@ Jaap
 
 ---
 
-archive/issue_comments_067905.json:
+archive/issue_comments_067788.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-12T14:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67905",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67788",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -260,15 +259,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_067906.json:
+archive/issue_comments_067789.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-14T02:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67906",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7838#issuecomment-67789",
+    "user": "https://github.com/rlmill"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003160.json:
     "body": "Assignee: @rlmill\n\n\n```\n+1 on making this change. It's very unusual for an is_ function to\nreturn anything but a bool :)\n- Hide quoted text -\n\nOn Sun, May 11, 2008 at 11:34 AM, Robert Miller <rlmillster@gmail.com> wrote:\n>\n>>  On the other hand, that Jerin was confused maybe strongly suggests\n>>  you might want to change the is_planar function to return True or\n>>  False, and have another function or a flag to get the nonplanar\n>>  subgroup.  In most of Sage foo.is_*() returns True or False, so maybe\n>>  is_planar() is confusing, especially from a readability point of view.\n>\n> I think I agree. The default behavior should be True/False, and an\n> option to return the present tuple should be available.\n>\n>\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3160\n\n",
     "created_at": "2008-05-11T19:00:51Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "change is_planar for graphs to return bool",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3160",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @rlmill
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3160
 
 ---
 
-archive/issue_comments_021922.json:
+archive/issue_comments_021875.json:
 ```json
 {
     "body": "Attachment [3160-bool-is-planar.patch](tarball://root/attachments/some-uuid/ticket3160/3160-bool-is-planar.patch) by ekirkman created at 2008-05-12 16:18:44",
     "created_at": "2008-05-12T16:18:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3160#issuecomment-21922",
-    "user": "ekirkman"
+    "url": "https://github.com/sagemath/sagetest/issues/3160#issuecomment-21875",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"
 }
 ```
 
@@ -66,15 +65,15 @@ Attachment [3160-bool-is-planar.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_021923.json:
+archive/issue_comments_021876.json:
 ```json
 {
     "body": "-1 point for not testing before submitting!",
     "created_at": "2008-05-12T16:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3160#issuecomment-21923",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3160#issuecomment-21876",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -84,15 +83,15 @@ archive/issue_comments_021923.json:
 
 ---
 
-archive/issue_comments_021924.json:
+archive/issue_comments_021877.json:
 ```json
 {
     "body": "Attachment [3160-docs.patch](tarball://root/attachments/some-uuid/ticket3160/3160-docs.patch) by mabshoff created at 2008-05-12 18:46:30\n\nMerged both patches in Sage 3.0.2.alpha1",
     "created_at": "2008-05-12T18:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3160#issuecomment-21924",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3160#issuecomment-21877",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -104,15 +103,15 @@ Merged both patches in Sage 3.0.2.alpha1
 
 ---
 
-archive/issue_comments_021925.json:
+archive/issue_comments_021878.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-12T18:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3160#issuecomment-21925",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3160#issuecomment-21878",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

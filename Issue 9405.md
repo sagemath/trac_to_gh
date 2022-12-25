@@ -6,15 +6,14 @@ archive/issues_009405.json:
     "body": "Assignee: drkirkby\n\nCC:  @williamstein @jhpalmieri @dimpase\n\nAn error occurs when building sage-4.5.alpha1 (with some patches) on disk.math, an OpenSolaris machine running !openSolaros 2008.11 (snv_101b_rc2)\n\nThe exact same source builds fine on OpenSolaris 2009.06 which has been updated to build 134. Singular also failed to build on this machine (#9404) as did ATLAS. \n\n**I suspect some of the tools on this system need updating.**\n\n## Hardware\n* disk.math.washington.edu x64 hardware of some sort. \n* OpenSolaris 2008.11 (snv_101b)\n* 32 GB RAM\n* 2 x quad core 2.3 GHz CPUs\n\n## GCC Configuration\nThe configuration of gcc on OpenSolaris is quite critical. This is the GCC included with OpenSolaris 11.2008. \n\n```\n-bash-3.2$ gcc -v\nReading specs from /opt/sfw/lib/gcc/i386-pc-solaris2.11/4.3.2/specs\nTarget: i386-pc-solaris2.11\nConfigured with: ./configure --prefix=/opt/sfw --enable-shared --with-gmp=/opt/sfw --with-mpfr=/opt/sfw --with-gnu-as --with-as=/usr/sfw/bin/gas --without-gnu-ld --with-ld=/usr/ccs/bin/ld --enable-stage1-languages=c,c++ --enable-languages=c,c++,objc,fortran\nThread model: posix\ngcc driver version 4.3.2 (GCC) executing gcc version 4.2.3\n```\n\n\nGCC is configured to use a rather old version (version 2.15 from 2002) version of the GNU assembler /usr/sfw/bin/gas. I suspect an upgrade of gcc and/or the assembler might cure this. \n\n## The error message\n\n```\n/bin/sh ../libtool --mode=compile gcc -I. -I. -I../include -I./../include -I.. -I./..  -m64 -fvisibility=hidden -DLIBDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c ./iconv.c\n/bin/sh ../libtool --mode=compile gcc -I. -I. -I../include -I./../include -I.. -I./..  -m64 -fvisibility=hidden -DLIBDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c ./../libcharset/lib/localcharset.c\n/bin/sh ../libtool --mode=compile gcc -I. -I. -I../include -I./../include -I.. -I./..  -m64 -fvisibility=hidden -DLIBDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY -DINSTALLDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c ./relocatable.c\nlibtool: compile:  gcc -I. -I. -I../include -I./../include -I.. -I./.. -m64 -fvisibility=hidden \"-DLIBDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\"\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY \"-DINSTALLDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\"\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c ./iconv.c  -fPIC -DPIC -o .libs/iconv.o\nlibtool: compile:  gcc -I. -I. -I../include -I./../include -I.. -I./.. -m64 -fvisibility=hidden \"-DLIBDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\"\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY \"-DINSTALLDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\"\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c ./relocatable.c  -fPIC -DPIC -o .libs/relocatable.o\nlibtool: compile:  gcc -I. -I. -I../include -I./../include -I.. -I./.. -m64 -fvisibility=hidden \"-DLIBDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\"\" -DBUILDING_LIBICONV -DBUILDING_DLL -DENABLE_RELOCATABLE=1 -DIN_LIBRARY \"-DINSTALLDIR=\\\"/export/home/kirkby/sage-4.5.alpha1/local/lib\\\"\" -DNO_XMALLOC -Dset_relocation_prefix=libiconv_set_relocation_prefix -Drelocate=libiconv_relocate -DHAVE_CONFIG_H -c ./../libcharset/lib/localcharset.c  -fPIC -DPIC -o .libs/localcharset.o\n./relocatable.c: In function \u2018libiconv_relocate\u2019:\n./relocatable.c:466: warning: visibility attribute not supported in this configuration; ignored\n./../libcharset/lib/localcharset.c: In function \u2018locale_charset\u2019:\n./../libcharset/lib/localcharset.c:500: warning: visibility attribute not supported in this configuration; ignored\nIn file included from ./iconv.c:148:\nlib/aliases_syssolaris.gperf: In function \u2018aliases_lookup\u2019:\nlib/aliases_syssolaris.gperf:389: warning: visibility attribute not supported in this configuration; ignored\n/bin/sh ../libtool --mode=link gcc  -m64 -fvisibility=hidden -o libiconv.la -rpath /export/home/kirkby/sage-4.5.alpha1/local/lib -version-info 7:0:5 -no-undefined iconv.lo localcharset.lo relocatable.lo  \nlibtool: link: gcc -shared -Wl,-z -Wl,text -Wl,-h -Wl,libiconv.so.2 -o .libs/libiconv.so.2.5.0  .libs/iconv.o .libs/localcharset.o .libs/relocatable.o   -lc  -m64  \nText relocation remains                         referenced\n    against symbol                  offset      in file\naliases_lookup                      0x1b81b     .libs/iconv.o\naliases_lookup                      0x1b9c1     .libs/iconv.o\naliases_lookup                      0x1beca     .libs/iconv.o\naliases_lookup                      0x1c070     .libs/iconv.o\naliases_lookup                      0x1c935     .libs/iconv.o\nld: fatal: relocations remain against allocatable but non-writable sections\ncollect2: ld returned 1 exit status\nmake[3]: *** [libiconv.la] Error 1\nmake[3]: Leaving directory `/export/home/kirkby/sage-4.5.alpha1/spkg/build/iconv-1.13.1.p2/src/lib'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/kirkby/sage-4.5.alpha1/spkg/build/iconv-1.13.1.p2/src'\nError making iconv\n\nreal    1m34.539s\nuser    0m8.805s\nsys     0m11.161s\nsage: An error occurred while installing iconv-1.13.1.p2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9405\n\n",
     "created_at": "2010-07-02T01:54:54Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "iconv fails to build on OpenSolaris 2008.11 x64  (disk.math)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9405",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -96,15 +95,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9405
 
 ---
 
-archive/issue_comments_089623.json:
+archive/issue_comments_089480.json:
 ```json
 {
     "body": "Note, the same problem occurs on OpenSolaris 11/2008 - see #9718",
     "created_at": "2010-08-10T21:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9405",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89623",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89480",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -114,15 +113,15 @@ Note, the same problem occurs on OpenSolaris 11/2008 - see #9718
 
 ---
 
-archive/issue_comments_089624.json:
+archive/issue_comments_089481.json:
 ```json
 {
     "body": "Outdated, should be closed",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9405",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89624",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89481",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -132,15 +131,15 @@ Outdated, should be closed
 
 ---
 
-archive/issue_comments_089625.json:
+archive/issue_comments_089482.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9405",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89625",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89482",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -150,15 +149,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_089626.json:
+archive/issue_comments_089483.json:
 ```json
 {
     "body": "The goal of these tickets is laudable, but:\n\n* We need at least one user who is able to test.\n* The package/OS information on this ticket is outdated beyond usefulness.\n* Upstream is a better place to report portability issues these days.",
     "created_at": "2020-07-12T20:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9405",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89626",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89483",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -172,15 +171,15 @@ The goal of these tickets is laudable, but:
 
 ---
 
-archive/issue_comments_089627.json:
+archive/issue_comments_089484.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-07-12T20:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9405",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89627",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89484",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -190,15 +189,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_089628.json:
+archive/issue_comments_089485.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-07-15T07:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9405",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89628",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89485",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -208,15 +207,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_089629.json:
+archive/issue_comments_089486.json:
 ```json
 {
     "body": "Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.",
     "created_at": "2020-07-15T07:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9405",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89629",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9405#issuecomment-89486",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003464.json:
     "body": "Assignee: boothby\n\nCC:  boothby @williamstein yqiang\n\nThe notebook code that detects whether or not a port is in use and finds a new port seems to be broken on sage.math -- two of us just tried while William had a server on port 8000, and we got the following:\n\n\n```\n******************************************************************\n*                                                                *\n* Open your web browser to https://sage.math.washington.edu:8000 *\n*                                                                *\n******************************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\n2008-06-18 14:33:23-0700 [-] Log opened.\n2008-06-18 14:33:23-0700 [-] twistd 8.0.1 (/home/was/s/local/bin/python 2.5.2) starting up\n2008-06-18 14:33:23-0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008-06-18 14:33:23-0700 [-] Traceback (most recent call last):\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/bin/twistd\", line 5, in <module>\n2008-06-18 14:33:23-0700 [-]     pkg_resources.run_script('Twisted==8.0.1', 'twistd')\n2008-06-18 14:33:23-0700 [-]   File \"build/bdist.linux-x86_64/egg/pkg_resources.py\", line 448, in run_script\n2008-06-18 14:33:23-0700 [-]   File \"build/bdist.linux-x86_64/egg/pkg_resources.py\", line 1166, in run_script\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/EGG-INFO/scripts/twistd\", line 21, in <module>\n2008-06-18 14:33:23-0700 [-]     run()\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/scripts/twistd.py\", line 24, in run\n2008-06-18 14:33:23-0700 [-]     app.run(runApp, ServerOptions)\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/application/app.py\", line 599, in run\n2008-06-18 14:33:23-0700 [-]     runApp(config)\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/scripts/twistd.py\", line 20, in runApp\n2008-06-18 14:33:23-0700 [-]     _SomeApplicationRunner(config).run()\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/application/app.py\", line 333, in run\n2008-06-18 14:33:23-0700 [-]     self.postApplication()\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/scripts/_twistd_unix.py\", line 259, in postApplication\n2008-06-18 14:33:23-0700 [-]     startApplication(self.config, self.application)\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/scripts/_twistd_unix.py\", line 213, in startApplication\n2008-06-18 14:33:23-0700 [-]     service.IService(application).privilegedStartService()\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/application/service.py\", line 227, in privilegedStartService\n2008-06-18 14:33:23-0700 [-]     service.privilegedStartService()\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/application/internet.py\", line 85, in privilegedStartService\n2008-06-18 14:33:23-0700 [-]     self._port = self._getPort()\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packag\nes/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/application/internet.py\", line 116, in _getPort\n2008-06-18 14:33:23-0700 [-]     *self.args, **self.kwargs)\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/gnutls/interfaces/twisted/__init__.py\", line 355, in listenTLS\n2008-06-18 14:33:23-0700 [-]     p.startListening()\n2008-06-18 14:33:23-0700 [-]   File \"/home/was/s/local/lib/python2.5/site-packages/Twisted-8.0.1-py2.5-linux-x86_64.egg/twisted/internet/tcp.py\", line 739, in startListening\n2008-06-18 14:33:23-0700 [-]     raise CannotListenError, (self.interface, self.port, le)\n2008-06-18 14:33:23-0700 [-] twisted.internet.error.CannotListenError: Couldn't listen on sage.math.washington.edu:8000: (98, 'Address already in use').\nxprop:  unable to open display ''\nusage:  xprop [-options ...] [[format [dformat]] atom] ...\n\nwhere options include:\n    -grammar                       print out full grammar for command line\n    -display host:dpy              the X server to contact\n    -id id                         resource id of window to examine\n    -name name                     name of window to examine\n    -font name                     name of font to examine\n    -remove propname               remove a property\n    -set propname value            set a property to a given value\n    -root                          examine the root window\n    -len n                         display at most n bytes of any property\n    -notype                        do not display the type field\n    -fs filename                   where to look for formats for properties\n    -frame                         don't ignore window manager frames\n    -f propname format [dformat]   formats to use for property of given name\n    -spy                           examine window properties forever\n\n---------------------------------------------------------------------------\nerror                                     Traceback (most recent call last)\n\n/home/citro/.sage/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/server/notebook/notebook_object.py in __call__(self, *args, **kwds)\n    141     \"\"\"\n    142     def __call__(self, *args, **kwds):\n--> 143         return self.notebook(*args, **kwds)\n    144 \n    145     notebook = run_notebook.notebook_twisted\n\n/home/was/s/local/lib/python2.5/site-packages/sage/server/notebook/run_notebook.py in notebook_twisted(self, directory, port, address, port_tries, secure, reset, accounts, require_login, server_pool, ulimit, timeout, open_viewer, sagetex_path, start_path, fork, quiet)\n    269     if open_viewer:\n    270         \"Open viewer automatically isn't fully implemented.  You have to manually open your web browser to the above URL.\"\n--> 271     return run(port)\n    272 \n    273 \n\n/home/was/s/local/lib/python2.5/site-packages/sage/server/notebook/run_notebook.py in run(port)\n    253             e = os.system(cmd)\n    254         if e == 256:\n--> 255             raise socket.error\n    256         return True\n    257         # end of inner function run\n\nerror: \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3464\n\n",
     "created_at": "2008-06-18T21:40:52Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook server error on sage.math (port detection problem)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3464",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: boothby
@@ -124,15 +123,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3464
 
 ---
 
-archive/issue_comments_024428.json:
+archive/issue_comments_024379.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-23T02:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3464",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3464#issuecomment-24428",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3464#issuecomment-24379",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -142,15 +141,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_024429.json:
+archive/issue_comments_024380.json:
 ```json
 {
     "body": "Changing type from enhancement to defect.",
     "created_at": "2009-11-19T21:41:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3464",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3464#issuecomment-24429",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3464#issuecomment-24380",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -160,15 +159,15 @@ Changing type from enhancement to defect.
 
 ---
 
-archive/issue_comments_024430.json:
+archive/issue_comments_024381.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-19T21:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3464",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3464#issuecomment-24430",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3464#issuecomment-24381",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -178,15 +177,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_024431.json:
+archive/issue_comments_024382.json:
 ```json
 {
     "body": "I definitely cannot replicate this on sage.math, even using sudo to login as craig.    Everything seems to work fine.   So evidently it is already fixed.",
     "created_at": "2009-11-19T21:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3464",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3464#issuecomment-24431",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3464#issuecomment-24382",
+    "user": "https://github.com/williamstein"
 }
 ```
 

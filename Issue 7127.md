@@ -6,15 +6,14 @@ archive/issues_007127.json:
     "body": "Assignee: tbd\n\nBuilding on\n* Sun Blade 2000, Solaris 10 update 7\n* gcc 4.4.1\n* SAGE64 exported to 'yes'\n* Sage 4.1.2.rc0, which includes \n* libgcrypt-1.4.3, as update at #7045.\n\nThe build failed with the errors below. \n\n\n```\n\n-I/export/home/drkirkby/sage/gcc64-sage-4.1.2.rc0/local/include -O2 -m64 -g -Wall -MT mpih-add1-asm.lo -MD -MP -MF .deps/mpih-add1-asm.Tpo -c mpih-add1-asm.S  -fPIC -DPIC -o .libs/mpih-add1-asm.o\n/usr/ccs/bin/as: \"/var/tmp//ccySzxz6.s\", line 31: error: detect global register use not covered .register pseudo-op\n/usr/ccs/bin/as: \"/var/tmp//ccySzxz6.s\", line 34: error: detect global register use not covered .register pseudo-op\n/usr/ccs/bin/as: \"/var/tmp//ccySzxz6.s\", line 45: error: detect global register use not covered .register pseudo-op\n/usr/ccs/bin/as: \"/var/tmp//ccySzxz6.s\", line 49: error: detect global register use not covered .register pseudo-op\n/usr/ccs/bin/as: \"/var/tmp//ccySzxz6.s\", line 205: error: detect global register use not covered .register pseudo-op\n/usr/ccs/bin/as: \"/var/tmp//ccySzxz6.s\", line 206: error: detect global register use not covered .register pseudo-op\nmake[4]: *** [mpih-add1-asm.lo] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage/gcc64-sage-4.1.2.rc0/spkg/build/libgcrypt-1.4.4/src/mpi'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/gcc64-sage-4.1.2.rc0/spkg/build/libgcrypt-1.4.4/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage/gcc64-sage-4.1.2.rc0/spkg/build/libgcrypt-1.4.4/src'\nfailed to build libgcrypt\n\nreal    1m53.930s\nuser    0m36.852s\nsys     1m1.741s\nsage: An error occurred while installing libgcrypt-1.4.4\n```\n\n\nA Google found this page on the gnupg-users mailing list. \n\n[gnupg compilation problems on Solaris 10 64 bit](http://www.mail-archive.com/gnupg-users`@`gnupg.org/msg09887.html) \n\nSomeone suggested the person having the problem should use:\n\n\n\n```\n./configure with --disable-asm\n```\n\n\nThat fixed the problem for him. \n\nSo I changed the spkg-install so the assembly code was disabled on 64-bit Solaris. However, whilst the above problem did not display (I think the build got further this time), it did eventually fail with \n\n\n```\nld: fatal: file /export/home/drkirkby/sage/gcc64-sage-4.1.2.rc0/local/lib/libgpg-error.so: wrong ELF class: ELFCLASS32\n```\n\n\nIt looks like some code is being built 32-bit, and other code 64-bit, which is the usual cause of this *wrong ELF class:* message.\n\nHence there remains a bug to be fixed here. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/7127\n\n",
     "created_at": "2009-10-05T21:42:06Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "libgcrypt fails to build in 64-bit on Solaris SPARC with gcc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7127",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -90,15 +89,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7127
 
 ---
 
-archive/issue_comments_059119.json:
+archive/issue_comments_059007.json:
 ```json
 {
     "body": "The error is quite possibly not libgrypt's at all. Several libraries are being built as 32-bit in Sage, despite SAGE64 being set to 'yes'. Here is the result of 'file' on $SAGE_HOME/local/lib. As you can see, some are 32-bit, some are 64-bit. \n\n\n\n```\nlibbz2.a:       current ar archive, not a dynamic executable or shared object\nlibgpg-error.a: current ar archive, not a dynamic executable or shared object\nlibgpg-error.la:        commands text\nlibgpg-error.so:        ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibgpg-error.so.0:      ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibgpg-error.so.0.4.0:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibhistory.a:   current ar archive, not a dynamic executable or shared object\nlibhistory.so:  ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibhistory.so.6:        ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibreadline.a:  current ar archive, not a dynamic executable or shared object\nlibreadline.so: ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibreadline.so.6:       ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibsqlite3.a:   current ar archive, not a dynamic executable or shared object\nlibsqlite3.la:  commands text\nlibsqlite3.so:  ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibsqlite3.so.0:        ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibsqlite3.so.0.8.6:    ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped\nlibtermcap.a:   current ar archive, not a dynamic executable or shared object\nlibz.so:        ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibz.so.1:      ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\nlibz.so.1.2.3:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, dynamically linked, not stripped\n```\n",
     "created_at": "2009-10-05T22:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7127",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7127#issuecomment-59119",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7127#issuecomment-59007",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -135,15 +134,15 @@ libz.so.1.2.3:  ELF 32-bit MSB dynamic lib SPARC32PLUS Version 1, V8+ Required, 
 
 ---
 
-archive/issue_comments_059120.json:
+archive/issue_comments_059008.json:
 ```json
 {
     "body": "This can be closed as fixed. I'm not exactly sure when the last time any 32-bit code was produced when the environment variable `SAGE64` was set to \"yes\", but it is a long time ago. A 64-bit Solaris port seems not too far off now. \n\nDave",
     "created_at": "2011-04-02T13:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7127",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7127#issuecomment-59120",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7127#issuecomment-59008",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -155,15 +154,15 @@ Dave
 
 ---
 
-archive/issue_comments_059121.json:
+archive/issue_comments_059009.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2011-04-05T15:52:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7127",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7127#issuecomment-59121",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7127#issuecomment-59009",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_008584.json:
     "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8584\n\n",
     "created_at": "2010-03-23T07:11:27Z",
     "labels": [
-        "modular forms",
-        "minor",
-        "enhancement"
+        "component: modular forms",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "implement latex'ing of Dirichlet characters",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8584",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @craigcitro
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8584
 
 ---
 
-archive/issue_comments_077738.json:
+archive/issue_comments_077610.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-23T07:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77738",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77610",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_077739.json:
+archive/issue_comments_077611.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-23T16:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77739",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77611",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_077740.json:
+archive/issue_comments_077612.json:
 ```json
 {
     "body": "Attachment [trac_8584.patch](tarball://root/attachments/some-uuid/ticket8584/trac_8584.patch) by @craigcitro created at 2010-03-23 16:53:09\n\nLooks good, though I still agree with David Loeffler's complaint from another ticket that the print representation for Dirichlet characters isn't great. If we decide to change it, that means we need to remember to change this function, too (since it directly calls `values_on_gens`).",
     "created_at": "2010-03-23T16:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77740",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77612",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -85,15 +84,15 @@ Looks good, though I still agree with David Loeffler's complaint from another ti
 
 ---
 
-archive/issue_comments_077741.json:
+archive/issue_comments_077613.json:
 ```json
 {
     "body": "> I still agree. .. print representation for Dirichlet characters isn't great. \n\nI don't agree.  I really like the print representation of Dirichlet characters.",
     "created_at": "2010-04-02T13:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77741",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77613",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +104,15 @@ I don't agree.  I really like the print representation of Dirichlet characters.
 
 ---
 
-archive/issue_comments_077742.json:
+archive/issue_comments_077614.json:
 ```json
 {
     "body": "I'm putting this back on \"needs work\" because it conflicts with #8133, and there seems to be a consensus on sage-nt that #8133 should go in.\n\nDavid",
     "created_at": "2010-04-05T13:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77742",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77614",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -125,15 +124,15 @@ David
 
 ---
 
-archive/issue_comments_077743.json:
+archive/issue_comments_077615.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-04-05T13:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77743",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77615",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -143,15 +142,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_077744.json:
+archive/issue_comments_077616.json:
 ```json
 {
     "body": "replaces previous patch, apply after #8133",
     "created_at": "2010-04-05T13:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77744",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77616",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -161,15 +160,15 @@ replaces previous patch, apply after #8133
 
 ---
 
-archive/issue_comments_077745.json:
+archive/issue_comments_077617.json:
 ```json
 {
     "body": "Attachment [trac_8584_new.patch](tarball://root/attachments/some-uuid/ticket8584/trac_8584_new.patch) by @loefflerd created at 2010-04-05 13:19:39\n\nHere's a new patch which produces output similar to the new `_repr_` but with the zeta's and mapsto arrows latexified.",
     "created_at": "2010-04-05T13:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77745",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77617",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -181,15 +180,15 @@ Here's a new patch which produces output similar to the new `_repr_` but with th
 
 ---
 
-archive/issue_comments_077746.json:
+archive/issue_comments_077618.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-04-05T13:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77746",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77618",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -199,15 +198,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_077747.json:
+archive/issue_comments_077619.json:
 ```json
 {
     "body": "all tests pass on the new patch applied after #8133. Thanks.",
     "created_at": "2010-04-08T13:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77747",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77619",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -217,15 +216,15 @@ all tests pass on the new patch applied after #8133. Thanks.
 
 ---
 
-archive/issue_comments_077748.json:
+archive/issue_comments_077620.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-08T13:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77748",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77620",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -235,15 +234,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_077749.json:
+archive/issue_comments_077621.json:
 ```json
 {
     "body": "Merged \"trac_8584_new.patch\" into 4.4.alpha0.",
     "created_at": "2010-04-15T23:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77749",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77621",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -253,15 +252,15 @@ Merged "trac_8584_new.patch" into 4.4.alpha0.
 
 ---
 
-archive/issue_comments_077750.json:
+archive/issue_comments_077622.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-15T23:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77750",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8584#issuecomment-77622",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002168.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2168\n\n",
     "created_at": "2008-02-15T00:43:15Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002168.json:
     "title": "add native implementation for PartitionTuples",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2168",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2168
 
 ---
 
-archive/issue_comments_014226.json:
+archive/issue_comments_014195.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-02-15T00:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14226",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14195",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +49,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_014227.json:
+archive/issue_comments_014196.json:
 ```json
 {
     "body": "Attachment [2168.patch](tarball://root/attachments/some-uuid/ticket2168/2168.patch) by @ncalexan created at 2008-02-15 01:25:59\n\nThis looks fine to me.",
     "created_at": "2008-02-15T01:25:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14227",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14196",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -69,15 +69,15 @@ This looks fine to me.
 
 ---
 
-archive/issue_comments_014228.json:
+archive/issue_comments_014197.json:
 ```json
 {
     "body": "Note that this should be applied after #2164.",
     "created_at": "2008-02-15T01:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14228",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14197",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -87,15 +87,15 @@ Note that this should be applied after #2164.
 
 ---
 
-archive/issue_comments_014229.json:
+archive/issue_comments_014198.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha0",
     "created_at": "2008-02-15T05:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14229",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14198",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +105,15 @@ Merged in Sage 2.10.2.alpha0
 
 ---
 
-archive/issue_comments_014230.json:
+archive/issue_comments_014199.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-15T05:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14230",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2168#issuecomment-14199",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

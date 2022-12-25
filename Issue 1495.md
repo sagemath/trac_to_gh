@@ -6,15 +6,14 @@ archive/issues_001495.json:
     "body": "Assignee: mabshoff\n\nAccording to INSTALL.txt: CPU-Throttling, you have to do\n\n```\n/usr/bin/cpufreq-selector -g performance\n```\n\nBut with two cores you have to force the cpu1 to run at its peak frequency:\n\n\n```\nAs root:\ncp /sys/devices/system/cpu/cp0/cpufreq/scaling_governor \\\n    /sys/devices/system/cpu/cp1/cpufreq/scaling_governor\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1495\n\n",
     "created_at": "2007-12-13T23:16:08Z",
     "labels": [
-        "distribution",
-        "major",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "ATLAS fails to compile on FC7 32 bit with multiple cores",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1495",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: mabshoff
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1495
 
 ---
 
-archive/issue_comments_009605.json:
+archive/issue_comments_009580.json:
 ```json
 {
     "body": "We need to detect if power management is enabled and set some non-performance mode. Otherwise print a warning and ask for confirmation to continue.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-18T23:04:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9605",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9580",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -66,15 +65,15 @@ Michael
 
 ---
 
-archive/issue_comments_009606.json:
+archive/issue_comments_009581.json:
 ```json
 {
     "body": "\n```\njkantor: 1495 we can't fix and 1547  I don't know how to do\n[12:31pm] william_stein: #1495 -- should go in the docs somewhere\n[12:31pm] william_stein: Also, maybe we can check if the cpu throttling is on and immediately terminate the build with a help message.\n```\n",
     "created_at": "2008-01-19T20:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9606",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9581",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -90,15 +89,15 @@ jkantor: 1495 we can't fix and 1547  I don't know how to do
 
 ---
 
-archive/issue_comments_009607.json:
+archive/issue_comments_009582.json:
 ```json
 {
     "body": "After thinking about this for a long time and some feedback I got from IRC during the ATLAS 3.8.1 upgrade when I did terminate the build I considered that it will cause more trouble than it is worth it. Fixing the power management setting requires root priviledges and since power management is enabled on pretty much any current kernel this would prevent quite a number of users from building Sage. Consequently: won't fix.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-11T22:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9607",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -112,15 +111,15 @@ Michael
 
 ---
 
-archive/issue_comments_009608.json:
+archive/issue_comments_009583.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-04-11T22:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9608",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1495#issuecomment-9583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

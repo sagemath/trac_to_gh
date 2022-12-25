@@ -6,15 +6,14 @@ archive/issues_006336.json:
     "body": "Assignee: tbd\n\n\n```\n\t [32.9 s]\nsage -t -long --optional devel/sage/doc/en/constructions/calculus.rst\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\nxprop:  unable to open display ''\nError: no \"view\" rule for type \"application/x-dvi\" passed its test case\n       (for more information, add \"--debug=1\" on the command line)\n*** *** Error: TIMED OUT! *** ***\n\t [1800.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6336\n\n",
     "created_at": "2009-06-16T15:20:05Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "optional doctest failure -- constructions calculus tests hang forever",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6336",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6336
 
 ---
 
-archive/issue_comments_050570.json:
+archive/issue_comments_050474.json:
 ```json
 {
     "body": "Attachment [trac_6336.patch](tarball://root/attachments/some-uuid/ticket6336/trac_6336.patch) by @jhpalmieri created at 2009-06-16 18:47:10",
     "created_at": "2009-06-16T18:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50570",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50474",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -62,15 +61,15 @@ Attachment [trac_6336.patch](tarball://root/attachments/some-uuid/ticket6336/tra
 
 ---
 
-archive/issue_comments_050571.json:
+archive/issue_comments_050475.json:
 ```json
 {
     "body": "Here's a patch.  This seems to fix this bug, but exposes another optional doctest failure (related to octave, I think): on sage.math, before the patch, I see the error message printed above.  After the patch, I don't, although I see this:\n\n```\nsage -t -optional \"devel/sage/doc/en/constructions/calculus.rst\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n\t [360.1 s]\n```\n\nSo this patch is a partial fix.  Any takers for the octave timeout?",
     "created_at": "2009-06-16T19:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50571",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50475",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -90,15 +89,15 @@ So this patch is a partial fix.  Any takers for the octave timeout?
 
 ---
 
-archive/issue_comments_050572.json:
+archive/issue_comments_050476.json:
 ```json
 {
     "body": "Patch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/en/constructions/. Also the builds sage -docbuild constructions html (resp., pdf) went fine.",
     "created_at": "2009-06-16T22:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50572",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50476",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -108,15 +107,15 @@ Patch applies fine to 4.0.2.rc1 and passes sage -tp 1 SAGE_ROOT/devel/sage/doc/e
 
 ---
 
-archive/issue_comments_050573.json:
+archive/issue_comments_050477.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-24T10:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6336",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50573",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6336#issuecomment-50477",
+    "user": "https://github.com/rlmill"
 }
 ```
 

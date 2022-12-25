@@ -6,15 +6,14 @@ archive/issues_001617.json:
     "body": "Assignee: @williamstein\n\nThere is a huge speed difference. Any special reasons? A novice user would possibly not understand why!\n\n\n\n\n```\nvar('x,y')\ntime p1=factor(x^99+y^99)\n\nTime: CPU 0.05 s, Wall: 58.43 s\n```\n\n\n\n\n\n```\nR.<x,y> = QQ[]\ntime p2=factor(x^99+y^99)\n\nTime: CPU 0.06 s, Wall: 0.06 s\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1617\n\n",
     "created_at": "2007-12-28T22:01:50Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "speed problem when factoring polynoms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1617",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: @williamstein
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1617
 
 ---
 
-archive/issue_comments_010283.json:
+archive/issue_comments_010256.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-12-29T04:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10283",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10256",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing assignee from @williamstein to @malb.
 
 ---
 
-archive/issue_comments_010284.json:
+archive/issue_comments_010257.json:
 ```json
 {
     "body": "This is likely caused by using Maxima's factoring vs. Singular's libfactor. In the first case x and y are symbolic. \n\nCheers,\n\nMichael",
     "created_at": "2007-12-29T04:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10284",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10257",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +90,15 @@ Michael
 
 ---
 
-archive/issue_comments_010285.json:
+archive/issue_comments_010258.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to commutative algebra.",
     "created_at": "2007-12-29T04:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10285",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10258",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +108,15 @@ Changing component from algebraic geometry to commutative algebra.
 
 ---
 
-archive/issue_comments_010286.json:
+archive/issue_comments_010259.json:
 ```json
 {
     "body": "I vote for `wontfix` because I see no way of fixing this, this is a Maxima speed issue. The only fix I could think of is to add something about this in some documentation.",
     "created_at": "2008-01-16T16:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10286",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10259",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -127,15 +126,15 @@ I vote for `wontfix` because I see no way of fixing this, this is a Maxima speed
 
 ---
 
-archive/issue_comments_010287.json:
+archive/issue_comments_010260.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-16T16:13:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10287",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10260",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -145,15 +144,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_010288.json:
+archive/issue_comments_010261.json:
 ```json
 {
     "body": "Changing assignee from @malb to @williamstein.",
     "created_at": "2008-01-16T16:13:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10288",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10261",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -163,15 +162,15 @@ Changing assignee from @malb to @williamstein.
 
 ---
 
-archive/issue_comments_010289.json:
+archive/issue_comments_010262.json:
 ```json
 {
     "body": "Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/trac-1617.patch) by @williamstein created at 2008-01-16 16:58:31",
     "created_at": "2008-01-16T16:58:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10289",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10262",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -181,15 +180,15 @@ Attachment [trac-1617.patch](tarball://root/attachments/some-uuid/ticket1617/tra
 
 ---
 
-archive/issue_comments_010290.json:
+archive/issue_comments_010263.json:
 ```json
 {
     "body": "At least one comment is wrong in the patch since the \"-\" no longer shows up:\n\n```\n2288\t2288\t        Notice that the -1 factor is separated out: \n2289\t2289\t            sage: f.factor_list() \n2290\t \t            [(-1, 1), (y - x, 1), (y^2 + x*y + x^2, 1)] \n \t2290\t            [(x - y, 1), (y^2 + x*y + x^2, 1)] \n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-01-16T17:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10290",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10263",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -211,15 +210,15 @@ Michael
 
 ---
 
-archive/issue_comments_010291.json:
+archive/issue_comments_010264.json:
 ```json
 {
     "body": "This patch could interact with #1391 (http://trac.sagemath.org/sage_trac/ticket/1391).  That one should be applied first, I think, and then this looked at again.",
     "created_at": "2008-01-19T22:25:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10291",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10264",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -229,15 +228,15 @@ This patch could interact with #1391 (http://trac.sagemath.org/sage_trac/ticket/
 
 ---
 
-archive/issue_comments_010292.json:
+archive/issue_comments_010265.json:
 ```json
 {
     "body": "The patch applies to 2.10.1.alpha1 (hunks, but success). Afterwards, only the `toy_buchberger.py` tests fail which is unrelated. Thus, I say: apply.",
     "created_at": "2008-01-25T17:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10292",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10265",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -247,15 +246,15 @@ The patch applies to 2.10.1.alpha1 (hunks, but success). Afterwards, only the `t
 
 ---
 
-archive/issue_comments_010293.json:
+archive/issue_comments_010266.json:
 ```json
 {
     "body": "The mabshoff comment above about \"At least one comment is wrong in the patch since the \"-\" no longer shows up\" was caused by ncalexan's patch related to factorization.py, which was after #1617.",
     "created_at": "2008-01-25T17:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10293",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10266",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -265,15 +264,15 @@ The mabshoff comment above about "At least one comment is wrong in the patch sin
 
 ---
 
-archive/issue_comments_010294.json:
+archive/issue_comments_010267.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha2",
     "created_at": "2008-01-25T17:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10294",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10267",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -283,15 +282,15 @@ Merged in Sage 2.10.1.alpha2
 
 ---
 
-archive/issue_comments_010295.json:
+archive/issue_comments_010268.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-25T17:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1617",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10295",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1617#issuecomment-10268",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

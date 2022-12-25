@@ -6,15 +6,14 @@ archive/issues_004522.json:
     "body": "Assignee: @burcin\n\nAttached patch makes the following changes to improve the user interface of the polynomial classes:\n\n* Remove .name() method, since .variable_name() already provides same functionality.\n* make the .degree() function of univariate polynomials accept one argument,\n  the generator, to be consistent with the .degree() of multivariate\n  polynomials.\n* Add an .is_monomial() method to univariate polynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4522\n\n",
     "created_at": "2008-11-14T09:17:02Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] polynomial interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4522",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @burcin
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4522
 
 ---
 
-archive/issue_comments_033563.json:
+archive/issue_comments_033497.json:
 ```json
 {
     "body": "One more change I forgot to specify above:\n* make the .polynomial() function of univariate polynomials behave the same way as that of multivariate polynomials. (I.e., return a univariate polynomial with a coefficient ring in the rest of the generators of the same parent, which simply means returning self in this case.)",
     "created_at": "2008-11-14T09:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33563",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33497",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -55,15 +54,15 @@ One more change I forgot to specify above:
 
 ---
 
-archive/issue_comments_033564.json:
+archive/issue_comments_033498.json:
 ```json
 {
     "body": "REFEREE REPORT:\n\nThis looks very good. Positive review *subject* to you posting an additional patch that puts the name method back in and has a deprecation warning with a doctest of this.  We'll delete that in a few months.",
     "created_at": "2008-11-28T03:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33564",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33498",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -75,15 +74,15 @@ This looks very good. Positive review *subject* to you posting an additional pat
 
 ---
 
-archive/issue_comments_033565.json:
+archive/issue_comments_033499.json:
 ```json
 {
     "body": "Oh yes, by the way, I doctested all of the rings directory after this patch and it works 100%.",
     "created_at": "2008-11-28T03:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33565",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33499",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -93,15 +92,15 @@ Oh yes, by the way, I doctested all of the rings directory after this patch and 
 
 ---
 
-archive/issue_comments_033566.json:
+archive/issue_comments_033500.json:
 ```json
 {
     "body": "Attachment [trac_4522-polynomial_interface.patch](tarball://root/attachments/some-uuid/ticket4522/trac_4522-polynomial_interface.patch) by @burcin created at 2008-11-28 12:41:51\n\nmake the interface of polynomials more consistent",
     "created_at": "2008-11-28T12:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33566",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33500",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -113,15 +112,15 @@ make the interface of polynomials more consistent
 
 ---
 
-archive/issue_comments_033567.json:
+archive/issue_comments_033501.json:
 ```json
 {
     "body": "New version of the patch with the deprecation warning, and doctests for it.\n\nI'm marking this positivie review, since William didn't state that he wanted to see the patch again. :)",
     "created_at": "2008-11-28T12:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33567",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33501",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -133,15 +132,15 @@ I'm marking this positivie review, since William didn't state that he wanted to 
 
 ---
 
-archive/issue_comments_033568.json:
+archive/issue_comments_033502.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1.rc0",
     "created_at": "2008-11-28T20:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33568",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33502",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -151,15 +150,15 @@ Merged in Sage 3.2.1.rc0
 
 ---
 
-archive/issue_comments_033569.json:
+archive/issue_comments_033503.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-28T20:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33569",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4522#issuecomment-33503",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

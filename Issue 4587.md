@@ -6,15 +6,13 @@ archive/issues_004587.json:
     "body": "Assignee: mabshoff\n\nKeywords: installing package latest version\n\nWilliam wrote at http://groups.google.com/group/sage-devel/browse_thread/thread/de91554d761c5f1b?hl=en\n\n''I think nobody every implemented a \"install latest version of package foo\" \nyet for Sage.  That's been on the todo list for *years*. ''\n\nIt is not difficult to implement, using the existing functtions from sage.misc.package, namely `install_package` and `optional_package` etc.\n\nI implemented a function `install_latest_version` in `package.py` and included it in `all.py`.\n\nNow, one can install the optional pil-1.1.6 package with\n\n```\nsage: install_latest_version('pi')\n```\n\nRepeating the command yields the Traceback\n\n```\nValueError                                Traceback (most recent call last)\n...\nValueError: There is no uninstalled package whose name starts with 'pi'.\n```\n\nForced re-installation is then possible with\n\n```\nsage: install_latest_version('pi',forced=True)\n```\n\n\nIf there is no possible package name extension, a Traceback results. There is also a Traceback if the extension is not unique. In that case, before raising the error, a list of all possible extensions is shown.\n\n```\nsage: install_latest_version('p',forced=True)\nPossible packages are:\n  palp-1.1.p1\n  pari-2.3.3.p0\n  pexpect-2.0.p1\n  polybori-0.5rc.p5\n  polytopes_db-20080430\n  pycrypto-2.0.1.p2\n  pygments-0.11.1\n  pynac-0.1.1\n  pyprocessing-0.52\n  python-2.5.2.p8\n  python_gnutls-1.1.4.p3\n  pil-1.1.6\n...\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\n\nOr should this function not raise an error?\n\nUnfortunately I have no idea how to have a non-destructive doc-test. Certainly it'd not be acceptable to have a doc-test installing something.\n\n\nUnfortunately, I have no idea how a non-destructive doc-test may look like. Certainly it would hardly be acceptable to have a doc-test that installs something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4587\n\n",
     "created_at": "2008-11-23T01:01:01Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] Installation of the latest version of a package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4587",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: mabshoff
@@ -88,15 +86,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4587
 
 ---
 
-archive/issue_comments_034392.json:
+archive/issue_comments_034325.json:
 ```json
 {
     "body": "> Unfortunately, I have no idea how a non-destructive doc-test may look like. Certainly > it would hardly be acceptable to have a doc-test that installs something. \n\nWe could have an official \"test\" spkg.  And it would be marked\n\n```\noptional -- admin\n```\n\nmeaning one must have write privileges to the sage install in order to run it.\nThe test would install and uninstall that package.\n\nWilliam",
     "created_at": "2008-11-23T21:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34392",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34325",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -117,15 +115,15 @@ William
 
 ---
 
-archive/issue_comments_034393.json:
+archive/issue_comments_034326.json:
 ```json
 {
     "body": "Replying to [comment:1 was]:\n> We could have an official \"test\" spkg.  And it would be marked\n> {{{\n> optional -- admin\n> }}}\n> meaning one must have write privileges to the sage install in order to run it.\n> The test would install and uninstall that package.\n\nSorry, at that point I have to pass out. So far, I did not produce a new package (hopefully I'll learn it soon), and also I don't how one can un-install a package.",
     "created_at": "2008-11-23T22:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34393",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34326",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -143,15 +141,15 @@ Sorry, at that point I have to pass out. So far, I did not produce a new package
 
 ---
 
-archive/issue_comments_034394.json:
+archive/issue_comments_034327.json:
 ```json
 {
     "body": "Replying to [comment:1 was]:\n> We could have an official \"test\" spkg.  And it would be marked\n> {{{\n> optional -- admin\n> }}}\n> meaning one must have write privileges to the sage install in order to run it.\n> The test would install and uninstall that package.\n\nAnother idea: Call the test package `tomato.spkg`, and construct it such that the attempt to install it would actually have no effect. \n\nHence, there were no need to mark it `optional -- admin`, and also no need to uninstall it. \n\nThat package would just comprise a Makefile with the simple content\n\n```\nall:\n    echo \"Tomato ejects itself\"\n```\n\n\nWould it work? At least it would be rather \"pythonic\"...\n\nCheers,\n     Simon",
     "created_at": "2008-11-25T12:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34394",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34327",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -184,15 +182,15 @@ Cheers,
 
 ---
 
-archive/issue_comments_034395.json:
+archive/issue_comments_034328.json:
 ```json
 {
     "body": "Please open a ticket for a test-dummy.spkg and I will provide one. Uninstalling spkg per see is not really supported at the moment, but we can delete the entry from $SAGE_ROOT/spkg/installed/ manually.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-25T12:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34395",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34328",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -206,15 +204,15 @@ Michael
 
 ---
 
-archive/issue_comments_034396.json:
+archive/issue_comments_034329.json:
 ```json
 {
     "body": "Replying to [comment:4 mabshoff]:\n> Please open a ticket for a test-dummy.spkg and I will provide one. Uninstalling spkg per see is not really supported at the moment, but we can delete the entry from $SAGE_ROOT/spkg/installed/ manually.\n\nDone, see #4617.\n\nCheers,\n   Simon",
     "created_at": "2008-11-25T12:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34396",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34329",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -230,15 +228,15 @@ Cheers,
 
 ---
 
-archive/issue_comments_034397.json:
+archive/issue_comments_034330.json:
 ```json
 {
     "body": "REFEREE REPORT:\n\nI don't love the design, but a small change could fix it so I would like it.\n\nCan you change it so install_latest_version is *not* exported to the global namespace.  Instead, if one calls install_package('...') with an input that doesn't contain a dash (i.e., doesn't contain any version number), then install_package simply calls install_latest_version.\n\nThe whole reason you wrote install_latest_version is because install_package is just really incompletely implemented, so just use it to implement the rest of install_package, and don't add more to the global namespace. \n\nWilliam",
     "created_at": "2008-11-27T18:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34397",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34330",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -256,15 +254,15 @@ William
 
 ---
 
-archive/issue_comments_034398.json:
+archive/issue_comments_034331.json:
 ```json
 {
     "body": "Dear William,\n\nI removed the `install_latest_version`, so the global name space is not further polluted. Instead, I moved the code into `install_package`. \n\nSo, now, `install_package` first tests whether there is a unique package name that starts with the given string (Note: This is done regardless whether it contains a dash or not. I hope this is not a problem). If there is a unique package, it is installed.\n\nIf the optional parameter 'forced' is not used, then it is only tried to find the package name among those packages that are not installed. In that way, an unintentional re-install is impossible.\n\nI guess there will be no doc-test unless someone produces a `test_dummy.spkg`",
     "created_at": "2008-11-28T14:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34398",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34331",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -282,15 +280,15 @@ I guess there will be no doc-test unless someone produces a `test_dummy.spkg`
 
 ---
 
-archive/issue_comments_034399.json:
+archive/issue_comments_034332.json:
 ```json
 {
     "body": "Attachment [installpackage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackage.patch) by @simon-king-jena created at 2008-11-28 22:58:35\n\ninstall_package: If there is a unique package starting with a given string, it gets installed",
     "created_at": "2008-11-28T22:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34399",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34332",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -302,15 +300,15 @@ install_package: If there is a unique package starting with a given string, it g
 
 ---
 
-archive/issue_comments_034400.json:
+archive/issue_comments_034333.json:
 ```json
 {
     "body": "Fortunately you didn't review the patch that I had submitted a few hours ago. I was in a hurry, didn't test it, and had a mistake... \n\nBut the current patch does what I announced. My tests: \n* I have pil installed. When I did `install_package('pil')`, it said that there is no package with that name (perhaps it would be better to say 'no uninstalled package').\n* Doing `install_package('pil',True)` did a re-install.\n* Doing `install_package('p')` showed a list of possible extensions and raised an error.\n\nWhat do you think:\n1. Is it ok that an error is raised if there is no (resp. no not-yet-installed) package?\n2. Is it ok that an error is raised if the package name is not unique, or should simply the list be returned?",
     "created_at": "2008-11-28T23:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34400",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34333",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -329,15 +327,15 @@ What do you think:
 
 ---
 
-archive/issue_comments_034401.json:
+archive/issue_comments_034334.json:
 ```json
 {
     "body": "REFEREE REPORT:\n\nThe logic is now somewhat broken, unfortunately.  E.g.,\n\n```\nsage: install_package('database_sloane')\n... it works ...\n```\n\nbut then\n\n```\nsage: install_package('database_sloane')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/was/build/sage-3.2.1.alpha1/<ipython console> in <module>()\n\n/home/was/build/sage-3.2.1.alpha1/local/lib/python2.5/site-packages/sage/misc/package.pyc in install_package(package, force)\n     78         raise ValueError, \"There is more than one package name starting with '%s'. Please specify!\"%(package)\n     79     if len(L)==0:\n---> 80         raise ValueError, \"There is no package name starting with '%s'.\"%(package)\n     81     os.system('sage -f \"%s\"'%(L[0]))\n     82     __installed_packages = None\n\nValueError: There is no package name starting with 'database_sloane'.\n\nsage: install_package('database_sloane_oeis-2005-12')\nsame error as above.\n```\n\nwhich is the wrong error message.",
     "created_at": "2008-11-28T23:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34401",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34334",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -378,15 +376,15 @@ which is the wrong error message.
 
 ---
 
-archive/issue_comments_034402.json:
+archive/issue_comments_034335.json:
 ```json
 {
     "body": "Replying to [comment:9 was]:\n> REFEREE REPORT:\n> \n> The logic is now somewhat broken, unfortunately.  E.g.,\n> ValueError: There is no package name starting with 'database_sloane'.\n\nYep, this is what I meant when I said in my previous comment \"(perhaps it would be better to say 'no uninstalled package')\".\n\nThe logic is:\n* If force and there is a unique package then install it (regardless whether it is already installed or not)\n* If (not force) and there is a unique *non-installed* package then install it.\n* Otherwise, raise an error.\n\nI agree that the error message may be clearer. So, back at work...",
     "created_at": "2008-11-28T23:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34402",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34335",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -409,15 +407,15 @@ I agree that the error message may be clearer. So, back at work...
 
 ---
 
-archive/issue_comments_034403.json:
+archive/issue_comments_034336.json:
 ```json
 {
     "body": "Attachment [installpackageErrorMessage.patch](tarball://root/attachments/some-uuid/ticket4587/installpackageErrorMessage.patch) by @simon-king-jena created at 2008-11-29 00:12:22\n\nTo be applied after the first patch: Improving the error message",
     "created_at": "2008-11-29T00:12:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34403",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34336",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -429,15 +427,15 @@ To be applied after the first patch: Improving the error message
 
 ---
 
-archive/issue_comments_034404.json:
+archive/issue_comments_034337.json:
 ```json
 {
     "body": "After applying the second patch:\nIf the name is non-unique, I get with force install:\n\n```\nsage: install_package('p',True)\nPossible package names starting with 'p' are:\n  palp-1.1.p1\n  ...\n  pyx-0.8.1\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\nand without force:\n\n```\nsage: install_package('p')\nPossible names of non-installed packages starting with 'p':\n  phc-2.3.39.p0\n  ...\n  pyx-0.8.1\nValueError: There is more than one package name starting with 'p'. Please specify!\n```\n\n\nIf the package exists, without 'force' I get:\n\n```\nsage: install_package('pil')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: Package is already installed. Try install_package('pil',force=True)\n```\n\n\nIs this better?\n\nRemains the doc-test issue. I leave it up to you whether one should wait for the test_dummy.spkg, so, I keep the summary [with patch, needs work].",
     "created_at": "2008-11-29T00:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34404",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34337",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -484,15 +482,15 @@ Remains the doc-test issue. I leave it up to you whether one should wait for the
 
 ---
 
-archive/issue_comments_034405.json:
+archive/issue_comments_034338.json:
 ```json
 {
     "body": "> Remains the doc-test issue. I leave it up to you whether one should wait for the \n> test_dummy.spkg, so, I keep the summary [with patch, needs work]. \n\nFor this sort of thing, I'm not too worried.  100% coverage is critical in cases when it is at least reasonably straightforward how to write the doctests.  Here it is itself pretty confusing.",
     "created_at": "2008-11-29T03:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34405",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34338",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -505,15 +503,15 @@ For this sort of thing, I'm not too worried.  100% coverage is critical in cases
 
 ---
 
-archive/issue_comments_034406.json:
+archive/issue_comments_034339.json:
 ```json
 {
     "body": "Looks great!!",
     "created_at": "2008-11-29T03:26:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34406",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34339",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -523,15 +521,15 @@ Looks great!!
 
 ---
 
-archive/issue_comments_034407.json:
+archive/issue_comments_034340.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.2.1.rc0",
     "created_at": "2008-11-29T04:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34407",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34340",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -541,15 +539,15 @@ Merged both patches in Sage 3.2.1.rc0
 
 ---
 
-archive/issue_comments_034408.json:
+archive/issue_comments_034341.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-29T04:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34408",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4587#issuecomment-34341",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

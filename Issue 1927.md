@@ -6,7 +6,7 @@ archive/issues_001927.json:
     "body": "Assignee: @williamstein\n\nVariable names made with the var command should be valid identifiers, but\n\n```\nsage: var('.foo')\n.foo\nsage: var('.foo/x')\n.foo/x\n```\n\n\nThanks to janwil for pointing this out. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1927\n\n",
     "created_at": "2008-01-25T17:21:18Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001927.json:
     "title": "dots in symbolic variable names should not be allowed, etc. (probably easy to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1927",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1927
 
 ---
 
-archive/issue_comments_012232.json:
+archive/issue_comments_012202.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-02-01T03:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12232",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12202",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -57,15 +57,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_012233.json:
+archive/issue_comments_012203.json:
 ```json
 {
     "body": "Attachment [1927.patch](tarball://root/attachments/some-uuid/ticket1927/1927.patch) by @mwhansen created at 2008-02-01 03:34:42",
     "created_at": "2008-02-01T03:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12233",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12203",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -75,15 +75,15 @@ Attachment [1927.patch](tarball://root/attachments/some-uuid/ticket1927/1927.pat
 
 ---
 
-archive/issue_comments_012234.json:
+archive/issue_comments_012204.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-02-01T03:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12234",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12204",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -93,15 +93,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_012235.json:
+archive/issue_comments_012205.json:
 ```json
 {
     "body": "Doctests are good.  Apply.",
     "created_at": "2008-02-15T04:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12235",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12205",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -111,15 +111,15 @@ Doctests are good.  Apply.
 
 ---
 
-archive/issue_comments_012236.json:
+archive/issue_comments_012206.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha0",
     "created_at": "2008-02-15T04:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12236",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12206",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +129,15 @@ Merged in Sage 2.10.2.alpha0
 
 ---
 
-archive/issue_comments_012237.json:
+archive/issue_comments_012207.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-15T04:48:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12237",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1927#issuecomment-12207",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

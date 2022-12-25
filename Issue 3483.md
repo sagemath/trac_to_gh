@@ -6,15 +6,13 @@ archive/issues_003483.json:
     "body": "Assignee: boothby\n\nKeywords: editor_wstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3483\n\n",
     "created_at": "2008-06-20T07:47:41Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "notebook -- major improvements to registration page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3483",
-    "user": "TimothyClemans"
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: boothby
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3483
 
 ---
 
-archive/issue_comments_024547.json:
+archive/issue_comments_024498.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-06-20T07:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24547",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24498",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -49,15 +47,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_024548.json:
+archive/issue_comments_024499.json:
 ```json
 {
     "body": "Changing assignee from boothby to TimothyClemans.",
     "created_at": "2008-06-20T07:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24548",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24499",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -67,15 +65,15 @@ Changing assignee from boothby to TimothyClemans.
 
 ---
 
-archive/issue_comments_024549.json:
+archive/issue_comments_024500.json:
 ```json
 {
     "body": "Attachment [sage-3483.patch](tarball://root/attachments/some-uuid/ticket3483/sage-3483.patch) by TimothyClemans created at 2008-06-20 21:47:57",
     "created_at": "2008-06-20T21:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24549",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24500",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -85,15 +83,15 @@ Attachment [sage-3483.patch](tarball://root/attachments/some-uuid/ticket3483/sag
 
 ---
 
-archive/issue_comments_024550.json:
+archive/issue_comments_024501.json:
 ```json
 {
     "body": "Attachment [extcode-3483.patch](tarball://root/attachments/some-uuid/ticket3483/extcode-3483.patch) by TimothyClemans created at 2008-06-20 21:50:37",
     "created_at": "2008-06-20T21:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24550",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24501",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -103,15 +101,15 @@ Attachment [extcode-3483.patch](tarball://root/attachments/some-uuid/ticket3483/
 
 ---
 
-archive/issue_comments_024551.json:
+archive/issue_comments_024502.json:
 ```json
 {
     "body": "Crappy description! Boo!  Looks good, though.",
     "created_at": "2008-06-24T07:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24551",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24502",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -121,15 +119,15 @@ Crappy description! Boo!  Looks good, though.
 
 ---
 
-archive/issue_comments_024552.json:
+archive/issue_comments_024503.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-25T06:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24552",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24503",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +137,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_024553.json:
+archive/issue_comments_024504.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha1",
     "created_at": "2008-06-25T06:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24553",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3483#issuecomment-24504",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007892.json:
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies @dimpase\n\nAlthough Solaris 8 is not supported, I thought I'd try a build of Sage 4.3 on a Sun Blade 1000 running Solaris 8 10/2001 - the first release of Solaris 8 I believe. \n\nThis was useful, as it highlighted a failure in Python's spkg-install. The spkg-install exited with no useful error message - it did not give a clue where the failure was, due to incorrect usage of 'set -e'.  \n\nHowever, after correcting the spkg-install issue (#7761), the reason for the failure become apparent - a failure to build the Python haslib module. This is exactly the same failure which caused myself and Jaap Spies a lot of grief - see #7761. \n\nIt would appear that either the wrong version of OpenSSL or a mixture of OpenSSL versions can easily cause Python to fail to build the haslib module. Finding a suitable version can be tricky, and there is no obvious way to specify which version of OpenSSL python should use if there are more than one version present. In this case, I believe there was only one version, so I'm unsure why Python would not build haslib with it. Perhaps this version is too new for the version of Python in Solaris\n\nFor this Solaris 8 build, I purposely used oldish versions of tools when I built from source, but used whatever I found first on Sunfreeware for the binaries, which tend to be a lot newer than 2001 when this version of Solaris was released. The basic build process was:\n\n* Install Solaris 8 Solaris 8 10/01 (an old i.e. October 2001 release)\n* Download wget 1.12, which needed OpenSSL. The version of OpenSSL installed was 0.9.8l, which is the latest release.\n* Download a binary of gcc 3.4.6 from Sunfreeware.com, as this version of Solaris 8 came with no gcc. \n* Download necessary libraries for gcc.\n* Install gcc 4.0.4 from source, as gcc 3.4.6 is too old to build Sage. \n* Download a binary of perl v5.8.8 from Sunfreeware, as the perl 5.005_03 in Solaris 8 is too old to build Sage (or at least 'prereq' exits with a version this old. I doubt anyone has actually tested all versions to find the absolute minimum necessary). \n \n**It would appear we need to address exactly the issue of OpenSSL with Solaris, as it is problematic.**\n\n\n```\nchanging mode of /export/home/drkirkby/sage-4.3/local/lib/python2.6/lib-dynload/_multiprocessing_failed.so to 755\nchanging mode of /export/home/drkirkby/sage-4.3/local/lib/python2.6/lib-dynload/_ctypes.so to 755\nchanging mode of /export/home/drkirkby/sage-4.3/local/lib/python2.6/lib-dynload/ to 755\nrunning install_scripts\ncopying build/scripts-2.6/pydoc -> /export/home/drkirkby/sage-4.3/local/bin\ncopying build/scripts-2.6/idle -> /export/home/drkirkby/sage-4.3/local/bin\ncopying build/scripts-2.6/2to3 -> /export/home/drkirkby/sage-4.3/local/bin\ncopying build/scripts-2.6/smtpd.py -> /export/home/drkirkby/sage-4.3/local/bin\nchanging mode of /export/home/drkirkby/sage-4.3/local/bin/pydoc to 755\nchanging mode of /export/home/drkirkby/sage-4.3/local/bin/idle to 755\nchanging mode of /export/home/drkirkby/sage-4.3/local/bin/2to3 to 755\nchanging mode of /export/home/drkirkby/sage-4.3/local/bin/smtpd.py to 755\nrunning install_egg_info\nWriting /export/home/drkirkby/sage-4.3/local/lib/python2.6/lib-dynload/Python-2.6.2-py2.6.egg-info\nif test -f /export/home/drkirkby/sage-4.3/local/bin/python -o -h /export/home/drkirkby/sage-4.3/local/bin/python; \\\n        then rm -f /export/home/drkirkby/sage-4.3/local/bin/python; \\\n        else true; \\\n        fi\n(cd /export/home/drkirkby/sage-4.3/local/bin; ln python2.6 python)\nrm -f /export/home/drkirkby/sage-4.3/local/bin/python-config\n(cd /export/home/drkirkby/sage-4.3/local/bin; ln -s python2.6-config python-config)\n./install-sh -c -m 644 ./Misc/python.man \\\n                /export/home/drkirkby/sage-4.3/local/share/man/man1/python.1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/python-2.6.2.p5/src'\nSleeping for three seconds before testing python\nTraceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.3/local/lib/python2.6/hashlib.py\", line 136, in <module>\n    md5 = __get_builtin_constructor('md5')\n  File \"/export/home/drkirkby/sage-4.3/local/lib/python2.6/hashlib.py\", line 63, in __get_builtin_constructor\n    import _md5\nImportError: No module named _md5\nhashlib module failed to import\n\nreal    10m31.767s\nuser    8m6.410s\nsys     1m51.870s\nsage: An error occurred while installing python-2.6.2.p5\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7892\n\n",
     "created_at": "2010-01-11T00:22:44Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Python fails to build hashlib module on Solaris 8",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7892",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -93,15 +92,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7892
 
 ---
 
-archive/issue_comments_068649.json:
+archive/issue_comments_068530.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-01-15T21:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7892",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68649",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68530",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_068650.json:
+archive/issue_comments_068531.json:
 ```json
 {
     "body": "I'm drooping the priority of this, as Solaris 8 is not supported.",
     "created_at": "2010-01-15T21:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7892",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68650",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68531",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -129,15 +128,15 @@ I'm drooping the priority of this, as Solaris 8 is not supported.
 
 ---
 
-archive/issue_comments_068651.json:
+archive/issue_comments_068532.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-04-25T02:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7892",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68651",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68532",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -147,15 +146,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_068652.json:
+archive/issue_comments_068533.json:
 ```json
 {
     "body": "outdated, should be closed",
     "created_at": "2020-04-25T02:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7892",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68652",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68533",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -165,15 +164,15 @@ outdated, should be closed
 
 ---
 
-archive/issue_comments_068653.json:
+archive/issue_comments_068534.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-04-25T04:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7892",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68653",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68534",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -183,15 +182,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_068654.json:
+archive/issue_comments_068535.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-04-25T06:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7892",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68654",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7892#issuecomment-68535",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

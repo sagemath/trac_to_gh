@@ -6,7 +6,7 @@ archive/issues_003596.json:
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3596\n\n",
     "created_at": "2008-07-07T23:17:21Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003596.json:
     "title": "can't build tut.tex; latex errors in ref.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3596",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3596
 
 ---
 
-archive/issue_comments_025410.json:
+archive/issue_comments_025360.json:
 ```json
 {
     "body": "Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596.patch) by @williamstein created at 2008-07-07 23:55:16",
     "created_at": "2008-07-07T23:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25410",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25360",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [doc-3596.patch](tarball://root/attachments/some-uuid/ticket3596/doc-
 
 ---
 
-archive/issue_comments_025411.json:
+archive/issue_comments_025361.json:
 ```json
 {
     "body": "Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sage-3596.patch) by @williamstein created at 2008-07-07 23:55:27",
     "created_at": "2008-07-07T23:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25411",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25361",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +65,15 @@ Attachment [sage-3596.patch](tarball://root/attachments/some-uuid/ticket3596/sag
 
 ---
 
-archive/issue_comments_025412.json:
+archive/issue_comments_025362.json:
 ```json
 {
     "body": "Attachment [doc-3596-part2.patch](tarball://root/attachments/some-uuid/ticket3596/doc-3596-part2.patch) by @williamstein created at 2008-07-08 00:12:42\n\nOK, this patch puts the \"rm *.ind\" back, and simply issues two makes instead of one.  It works fine for me.",
     "created_at": "2008-07-08T00:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25412",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25362",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +85,15 @@ OK, this patch puts the "rm *.ind" back, and simply issues two makes instead of 
 
 ---
 
-archive/issue_comments_025413.json:
+archive/issue_comments_025363.json:
 ```json
 {
     "body": "All three patches look good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-08T00:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25413",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25363",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +107,15 @@ Michael
 
 ---
 
-archive/issue_comments_025414.json:
+archive/issue_comments_025364.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-08T00:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25414",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25364",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -125,15 +125,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025415.json:
+archive/issue_comments_025365.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.rc0",
     "created_at": "2008-07-08T00:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3596",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25415",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3596#issuecomment-25365",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

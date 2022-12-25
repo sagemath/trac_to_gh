@@ -6,15 +6,14 @@ archive/issues_002621.json:
     "body": "Assignee: @garyfurnish\n\nWhen parallel doctesting a clean, i.e. never before doctested, tree there are concurrency issues when creating the .doctest directory:\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 427, in <module>\n    test_file(argv[1])\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/bin/sage-doctest\", line 321, in test_file\n    os.makedirs(\".doctest\")\n  File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha1/local/lib/python2.5/os.py\", line 172, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 17] File exists: '.doctest'\n```\n\nThe above is just a scary message and doesn't affect the operation of the doctests. Creating all the .doctest directories before starting to run the doctests would fix the problem.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2621\n\n",
     "created_at": "2008-03-20T23:36:40Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "parallell doctest: concurrency problem when creating .doctest directories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2621",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @garyfurnish
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2621
 
 ---
 
-archive/issue_comments_017998.json:
+archive/issue_comments_017959.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-20T23:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17998",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17959",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -64,15 +63,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_017999.json:
+archive/issue_comments_017960.json:
 ```json
 {
     "body": "Attachment [trac_2621.patch](tarball://root/attachments/some-uuid/ticket2621/trac_2621.patch) by @garyfurnish created at 2008-03-20 23:41:00",
     "created_at": "2008-03-20T23:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17999",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17960",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -82,15 +81,15 @@ Attachment [trac_2621.patch](tarball://root/attachments/some-uuid/ticket2621/tra
 
 ---
 
-archive/issue_comments_018000.json:
+archive/issue_comments_017961.json:
 ```json
 {
     "body": "Patch looks good to me. Positive review ;)\n\nCheers,\n\nMichael",
     "created_at": "2008-03-21T00:04:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-18000",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17961",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -104,15 +103,15 @@ Michael
 
 ---
 
-archive/issue_comments_018001.json:
+archive/issue_comments_017962.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-21T00:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-18001",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17962",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -122,15 +121,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018002.json:
+archive/issue_comments_017963.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha1",
     "created_at": "2008-03-21T00:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-18002",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2621#issuecomment-17963",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

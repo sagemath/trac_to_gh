@@ -6,7 +6,7 @@ archive/issues_000341.json:
     "body": "Assignee: somebody\n\n\n```\nOn 3/31/07, Pablo De Napoli <> wrote:\n> In the process of investigating how rings are defined in sage I've found\n> some \n> inconsistencies: the function multiplicative_order is not consistently\n> defined\n> for all rings.\n> \n> Applying this function to a rational \n> integer which is not a unit raises an exception:\n> \n> sage: a=ZZ(3)\n> sage: a.multiplicative_order()\n> ---------------------------------------------------------------------------\n> <type 'exceptions.ArithmeticError '>       Traceback (most recent call last)\n> \n> /hdc1/pablo.hdc1/sage/sage/<ipython console> in <module>()\n> \n> /hdc1/pablo.hdc1/sage/sage/integer.pyx in\n> integer.Integer.multiplicative_order()\n> \n>  <type 'exceptions.ArithmeticError'>: no power of 3 is a unit\n> \n> (and so does for example the ring ComplexDouble)\n> \n> However, for complex numbers, things are different: (gives +infinity)\n> \n>  b= 2+3*I \n> sage: type(b)\n> <type 'sage.rings.complex_number.ComplexNumber'>\n> sage: b.multiplicative_order()\n> +Infinity\n> \n> Which should be the correct behaviour? (I like more the one that answers\n> +infinity) \n\nThe correct behavior is +infinity, which is more useful and than an error,\nand is technically correct.  \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/341\n\n",
     "created_at": "2007-04-01T14:46:07Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000341.json:
     "title": "multiplicative order inconsistency",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/341",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -69,15 +69,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/341
 
 ---
 
-archive/issue_comments_001671.json:
+archive/issue_comments_001666.json:
 ```json
 {
     "body": "I would consider this \"worksforme\":\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.2, Release Date: 2007-08-22                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: a=ZZ(3)\nsage: a.multiplicative_order()\n+Infinity\n```\n",
     "created_at": "2007-08-24T23:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/341#issuecomment-1671",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/341#issuecomment-1666",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -98,15 +98,15 @@ sage: a.multiplicative_order()
 
 ---
 
-archive/issue_comments_001672.json:
+archive/issue_comments_001667.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-30T00:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/341#issuecomment-1672",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/341#issuecomment-1667",
+    "user": "https://github.com/williamstein"
 }
 ```
 

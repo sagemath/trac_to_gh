@@ -6,15 +6,14 @@ archive/issues_005146.json:
     "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\n\n```\nR.<x,y> = PolynomialRing(GF(2147483659),order='lex')\nI=ideal([x^3-2*y^2,3*x+y^4])\nsage: I.variety()\n...\n   ? `2147483659` greater than 2147483647(max. integer representation)\n   ? error occurred in STDIN line 172: `ring sage86=2147483659,(x, y),lp;`\n   ? expected ring-expression. type 'help ring;'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5146\n\n",
     "created_at": "2009-01-31T18:06:25Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "implement MPolynomial_ideal.varierty() for GF(p) with p > than what Singular supports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5146",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5146
 
 ---
 
-archive/issue_comments_039367.json:
+archive/issue_comments_039291.json:
 ```json
 {
     "body": "3.4 is for ReST tickets only.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T23:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39367",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39291",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -63,15 +62,15 @@ Michael
 
 ---
 
-archive/issue_comments_039368.json:
+archive/issue_comments_039292.json:
 ```json
 {
     "body": "Implementing Lazard's algorithm to solve this required a few subalgorithms as well. Rather than clutter `multi_polynomial_ideal.py`, I appended the functions to `toy_buchberger.py`. That seemed a natural location, since this is a toy implementation, and computing the variety of a zero-dimensional ideal is not an unnatural follow-up to Buchberger's algorithm. That said, if someone prefers that this be placed in `multi_polynomial_ideal.py`, or even in a new file, I can work with that.\n\nThe implementation provided is (unsurprisingly) unoptimized more or less, not even requiring a lexicographic ordering. On the upside, you don't need a lexicographic ordering. Check out the doctest on `triangular_factorization`.\n\nI added doctests for all the new functions in `toy_buchberger.py`, and a new doctest which tests for the system listed above. The patch uploaded passes all the doctests, at least on my machine.",
     "created_at": "2009-02-21T08:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39368",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39292",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -85,15 +84,15 @@ I added doctests for all the new functions in `toy_buchberger.py`, and a new doc
 
 ---
 
-archive/issue_comments_039369.json:
+archive/issue_comments_039293.json:
 ```json
 {
     "body": "Replying to [comment:3 john_perry]:\n\nHi John,\n\n> Implementing Lazard's algorithm to solve this required a few subalgorithms as well. Rather than clutter `multi_polynomial_ideal.py`, I appended the functions to `toy_buchberger.py`. That seemed a natural location, since this is a toy implementation, and computing the variety of a zero-dimensional ideal is not an unnatural follow-up to Buchberger's algorithm. That said, if someone prefers that this be placed in `multi_polynomial_ideal.py`, or even in a new file, I can work with that.\n\nI would suggest to place it in its own file, but maybe Martin should pipe in there, too.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-21T08:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39369",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39293",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Michael
 
 ---
 
-archive/issue_comments_039370.json:
+archive/issue_comments_039294.json:
 ```json
 {
     "body": "Attachment [variety_patch.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.patch) by @johnperry-math created at 2009-02-25 03:18:57\n\nNew version of the patch:\n* Separated functions related to triangularization into a new file, `toy_variety.py`\n\n* Completely rewrote two subalgorithms that check for and express linear dependence between polynomials. Lazard did not specify the details, and I implemented the previous versions in a manner that in no way could be described as intelligent. (Ironically, I'm scheduled to teach introductory linear algebra this summer.) The present version uses basic linear algebra to answer these questions.\n\n* Removed some doctests on the same two functions, because they are now nested. If there is a way to doctest nested functions, let me know, and I'll restore the doctests.",
     "created_at": "2009-02-25T03:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39370",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39294",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -138,15 +137,15 @@ New version of the patch:
 
 ---
 
-archive/issue_comments_039371.json:
+archive/issue_comments_039295.json:
 ```json
 {
     "body": "rebased to 3.4",
     "created_at": "2009-03-16T12:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39371",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39295",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -156,15 +155,15 @@ rebased to 3.4
 
 ---
 
-archive/issue_comments_039372.json:
+archive/issue_comments_039296.json:
 ```json
 {
     "body": "Attachment [variety_patch.2.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.2.patch) by @malb created at 2009-03-16 12:08:39\n\nI rebased the attached patch against 3.4 and changed the docstrings to the new ReST format. I think actually that the nested functions shouldn't be nested and should get proper examples/doctests. \n\n(Btw. there is a `coefficient_matrix()` function in `mq.MPolynomialSystem` but that is the material of another ticket)",
     "created_at": "2009-03-16T12:08:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39372",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39296",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -178,15 +177,15 @@ I rebased the attached patch against 3.4 and changed the docstrings to the new R
 
 ---
 
-archive/issue_comments_039373.json:
+archive/issue_comments_039297.json:
 ```json
 {
     "body": "also: I'm sorry to have let bitrot this patch for so long, I know the ball was in my corner.",
     "created_at": "2009-03-16T12:09:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39373",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39297",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -196,15 +195,15 @@ also: I'm sorry to have let bitrot this patch for so long, I know the ball was i
 
 ---
 
-archive/issue_comments_039374.json:
+archive/issue_comments_039298.json:
 ```json
 {
     "body": "Attachment [variety_patch.3.patch](tarball://root/attachments/some-uuid/ticket5146/variety_patch.3.patch) by @johnperry-math created at 2009-03-18 00:12:58\n\nUpdated with some of Martin's comments",
     "created_at": "2009-03-18T00:12:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39374",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39298",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -216,15 +215,15 @@ Updated with some of Martin's comments
 
 ---
 
-archive/issue_comments_039375.json:
+archive/issue_comments_039299.json:
 ```json
 {
     "body": "I made the changes Martin recommended: namely, de-nesting the nested functions and adding doctests.\n\nOne reason the functions were nested is that I was using certain assumptions. I thought that made life easier but in retrospect it doesn't. This allowed me to simplify the functions.\n\nIn addition the documentation follows the format Martin was using (ReST?). I'm still using my own coefficient_matrix() but I reckon that can be adjusted if desired.",
     "created_at": "2009-03-18T00:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39375",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39299",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -238,15 +237,15 @@ In addition the documentation follows the format Martin was using (ReST?). I'm s
 
 ---
 
-archive/issue_comments_039376.json:
+archive/issue_comments_039300.json:
 ```json
 {
     "body": "John, I guess you don't run 3.4 because your new patch does break the same stuff I fixed for the first patch. I'll fix it again.",
     "created_at": "2009-03-20T14:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39376",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39300",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -256,15 +255,15 @@ John, I guess you don't run 3.4 because your new patch does break the same stuff
 
 ---
 
-archive/issue_comments_039377.json:
+archive/issue_comments_039301.json:
 ```json
 {
     "body": "Attachment [toy_variety.patch](tarball://root/attachments/some-uuid/ticket5146/toy_variety.patch) by @malb created at 2009-03-20 14:16:15",
     "created_at": "2009-03-20T14:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39377",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39301",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -274,15 +273,15 @@ Attachment [toy_variety.patch](tarball://root/attachments/some-uuid/ticket5146/t
 
 ---
 
-archive/issue_comments_039378.json:
+archive/issue_comments_039302.json:
 ```json
 {
     "body": "If John agrees to my changes, the patch has a positive review. John, note that the indentation in the docs has meaning and we can't just remove it.",
     "created_at": "2009-03-20T14:17:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39378",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39302",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -292,15 +291,15 @@ If John agrees to my changes, the patch has a positive review. John, note that t
 
 ---
 
-archive/issue_comments_039379.json:
+archive/issue_comments_039303.json:
 ```json
 {
     "body": "All doctests passed on my setup.",
     "created_at": "2009-03-25T17:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39379",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39303",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -310,15 +309,15 @@ All doctests passed on my setup.
 
 ---
 
-archive/issue_comments_039380.json:
+archive/issue_comments_039304.json:
 ```json
 {
     "body": "Merged toy_variety.patch in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-26T00:08:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39380",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39304",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -332,15 +331,15 @@ Michael
 
 ---
 
-archive/issue_comments_039381.json:
+archive/issue_comments_039305.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-26T00:08:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39381",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5146#issuecomment-39305",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

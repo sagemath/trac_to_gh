@@ -6,15 +6,14 @@ archive/issues_002181.json:
     "body": "Assignee: mabshoff\n\n\n```\n                                                                GP/PARI CALCULATOR Version 2.3.3 (released)\n                                                        i386 running darwin (ix86/GMP-4.2.1 kernel) 32-bit version\n                                                         compiled: Feb 15 2008, gcc-4.0.1 (Apple Inc. build 5465)\n                                                            (readline not compiled in, extended help available)\n```\n\n\nThe above should not say \"readline not compiled in\".  It didn't with older versions of the pari spkg.  So something broke this.   \n\nI once installed Sage on OS X for Ken Ribet specifically because gp's readline does work in OS X with Sage, and he couldn't get a very that worked without Sage no matter what he tried.  Now this is broken, which is bad. \n\nWe should have a doctest that runs gp as a subprocess and verifies that readline is compiled in.  E.g.,\n\n\n```\nsage: import pexpect; p = pexpect.spawn('gp')\nsage: p.expect('\\?')\n0\nsage: assert 'readline not compiled in' not in p.before\n```\n\n\nThen this problem will never happen again. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2181\n\n",
     "created_at": "2008-02-16T21:29:24Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "pari 2.3.3 on osx -- gets build without readline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2181",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2181
 
 ---
 
-archive/issue_comments_014329.json:
+archive/issue_comments_014298.json:
 ```json
 {
     "body": "Is this OSX 10.4, 10.5 or both? On 10.5 the dynamic readline is currently broken, see 1259, so those issues might be related if it happens on 10.5 only.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T21:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14329",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14298",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +74,15 @@ Michael
 
 ---
 
-archive/issue_comments_014330.json:
+archive/issue_comments_014299.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-02-16T21:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14330",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14299",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_014331.json:
+archive/issue_comments_014300.json:
 ```json
 {
     "body": "This is fixed with #2282.",
     "created_at": "2008-02-24T00:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14331",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14300",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -111,15 +110,15 @@ This is fixed with #2282.
 
 ---
 
-archive/issue_comments_014332.json:
+archive/issue_comments_014301.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-02-24T00:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14332",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2181#issuecomment-14301",
+    "user": "https://github.com/craigcitro"
 }
 ```
 

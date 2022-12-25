@@ -6,15 +6,14 @@ archive/issues_004682.json:
     "body": "Assignee: @williamstein\n\nCC:  mvngu @haraldschilly\n\nThere are about 36 people missing at \n\n\n  http://sagemath.org/development-map.html\n\nthat have contributed to Sage. Contact them and if they would like to be added get them on there. This is a join project by Michael Abshoff, Minh Van Nguyen and Harald Schilly.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4682\n\n",
     "created_at": "2008-12-03T00:38:16Z",
     "labels": [
-        "website/wiki",
-        "major",
+        "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Add about 36 people missing from the DevMap for Sage 3.0.6-3.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4682",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4682
 
 ---
 
-archive/issue_comments_035290.json:
+archive/issue_comments_035221.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-03T00:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35290",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -58,15 +57,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_035291.json:
+archive/issue_comments_035222.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-12-03T00:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35291",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35222",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -76,15 +75,15 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_comments_035292.json:
+archive/issue_comments_035223.json:
 ```json
 {
     "body": "Attachment [trac_4682.patch](tarball://root/attachments/some-uuid/ticket4682/trac_4682.patch) by mvngu created at 2008-12-04 21:20:31\n\nfirst draft of revised devmap",
     "created_at": "2008-12-04T21:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35292",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35223",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -96,15 +95,15 @@ first draft of revised devmap
 
 ---
 
-archive/issue_comments_035293.json:
+archive/issue_comments_035224.json:
 ```json
 {
     "body": "The patch **trac_4682.patch** is an updated contributors list as found on the development map. I've re-organized the whole XML file for consistency, and added new details since they've arrived in the last few days.",
     "created_at": "2008-12-04T21:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35293",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35224",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -114,15 +113,15 @@ The patch **trac_4682.patch** is an updated contributors list as found on the de
 
 ---
 
-archive/issue_comments_035294.json:
+archive/issue_comments_035225.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-04T21:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35294",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35225",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -132,15 +131,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_035295.json:
+archive/issue_comments_035226.json:
 ```json
 {
     "body": "Replying to [comment:2 mvngu]:\n> The patch **trac_4682.patch** is an updated contributors list as found on the development map. I've re-organized the whole XML file for consistency, and added new details since they've arrived in the last few days.\n\nthx and very cool, worked out of the box ;)\n\npatch added, site online, for future patches please use the current version to avoid confusions: http://www.sagemath.org/res/contributors.xml\n\nh",
     "created_at": "2008-12-04T21:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35295",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35226",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -157,15 +156,15 @@ h
 
 ---
 
-archive/issue_comments_035296.json:
+archive/issue_comments_035227.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2008-12-04T21:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35296",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35227",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -175,15 +174,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_035297.json:
+archive/issue_comments_035228.json:
 ```json
 {
     "body": "Well, the idea of this ticket was to add all people and then close it. Since now the first dozen has been added I changed the subject.\n\nMinh: You should open a ticket for the next batch of say a dozen people once you are ready to go.\n\nCheers,\n\nMichae",
     "created_at": "2008-12-04T23:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35297",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35228",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -199,15 +198,15 @@ Michae
 
 ---
 
-archive/issue_comments_035298.json:
+archive/issue_comments_035229.json:
 ```json
 {
     "body": "Harald,\n\nYou also need to give the ticket a formal positive review. Then usually the release manager will close the ticket. For website tickets this might be handled slightly different.\n\nOne more thing: Minh, can you give us a listing which people were added in the patch? Since it is a reorg it is hard to follow. For future reference please post two patches in the future: One to move things around, one with the actual changes.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T23:41:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35298",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35229",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -225,15 +224,15 @@ Michael
 
 ---
 
-archive/issue_comments_035299.json:
+archive/issue_comments_035230.json:
 ```json
 {
     "body": "Replying to [comment:6 mabshoff]:\n> One more thing: Minh, can you give us a listing which people were added in the patch? Since it is a reorg it is hard to follow. \n\n\nThe following people were added to the devmap by **trac_4682.patch**:\n\n1. Arnaud Bergeron\n2. Nicolas Borie\n3. Hamish Ivey-Law\n4. Kwankyu Lee\n5. David Loeffler\n6. Jason Merrill\n7. Guillaume Moroz\n8. Brett Nakashima\n9. John Perry\n10. Nils-Peter Skoruppa\n11. Philippe Theveny\n12. Igor Tolkov\n\nThe above list is sorted in alphabetical order by last name.\n\n\n\n> For future reference please post two patches in the future: One to move things around, one with the actual changes.\n\n\nSure. I'll keep this in mind.",
     "created_at": "2008-12-05T00:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35299",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4682#issuecomment-35230",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

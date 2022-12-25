@@ -6,15 +6,14 @@ archive/issues_003497.json:
     "body": "Assignee: mabshoff\n\nKeywords: git\n\nupdated .hgignore and added .gitignore\n\nthe rules to determine the specific file cases included may be generalizable\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3497\n\n",
     "created_at": "2008-06-23T21:27:35Z",
     "labels": [
-        "distribution",
-        "minor",
-        "enhancement"
+        "component: distribution",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] ignore git",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3497",
-    "user": "ghtdak"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ghtdak"
 }
 ```
 Assignee: mabshoff
@@ -34,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3497
 
 ---
 
-archive/issue_comments_024627.json:
+archive/issue_comments_024578.json:
 ```json
 {
     "body": "adds .gitignore and updates .hgignore to ignore it and .git directory",
     "created_at": "2008-06-23T21:29:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24627",
-    "user": "ghtdak"
+    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24578",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ghtdak"
 }
 ```
 
@@ -52,15 +51,15 @@ adds .gitignore and updates .hgignore to ignore it and .git directory
 
 ---
 
-archive/issue_comments_024628.json:
+archive/issue_comments_024579.json:
 ```json
 {
     "body": "Attachment [gitignore.patch](tarball://root/attachments/some-uuid/ticket3497/gitignore.patch) by mabshoff created at 2008-06-26 06:38:13",
     "created_at": "2008-06-26T06:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24628",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24579",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -70,15 +69,15 @@ Attachment [gitignore.patch](tarball://root/attachments/some-uuid/ticket3497/git
 
 ---
 
-archive/issue_comments_024629.json:
+archive/issue_comments_024580.json:
 ```json
 {
     "body": "Changing keywords from \"git\" to \"git, editor_mabshoff\".",
     "created_at": "2008-07-03T07:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24629",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24580",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -88,15 +87,15 @@ Changing keywords from "git" to "git, editor_mabshoff".
 
 ---
 
-archive/issue_comments_024630.json:
+archive/issue_comments_024581.json:
 ```json
 {
     "body": "Glenn,\n\nI would prefer if we just added `\\.git` and `.gitignore` to .hgignore, i.e. not actually track .gitignore via mercurial or is the a particular reason why we would want to do that?\n\nCheers,\n\nMichael",
     "created_at": "2008-07-03T07:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24630",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -112,15 +111,15 @@ Michael
 
 ---
 
-archive/issue_comments_024631.json:
+archive/issue_comments_024582.json:
 ```json
 {
     "body": "The reason I suggested adding it is because I saw support for other VC's in .hgignore (darcs). There is only value to maintaining a specific .gitignore in that some work is required to build up the rules (which .c's etc to be tracked vs those which are derived objects).\n\nOTOH, I am perfectly happy maintaining .gitignore outside the distro and simply posting something on the wiki for those few so inclined (pointer to some git repo)\n\nA general mechanism for determining derived vs source C/C++ objects would be useful should we encounter bzr (others?)...  Perhaps there is a general strategy but I saw a number of specific targets in .hgignore",
     "created_at": "2008-07-04T06:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24631",
-    "user": "ghtdak"
+    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ghtdak"
 }
 ```
 
@@ -134,15 +133,15 @@ A general mechanism for determining derived vs source C/C++ objects would be use
 
 ---
 
-archive/issue_comments_024632.json:
+archive/issue_comments_024583.json:
 ```json
 {
     "body": "After rethinking the issue I am find with tracking .gitignore in our repo. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-31T02:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24632",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -156,15 +155,15 @@ Michael
 
 ---
 
-archive/issue_comments_024633.json:
+archive/issue_comments_024584.json:
 ```json
 {
     "body": "Merged in Sage 3.1.alpha0",
     "created_at": "2008-07-31T02:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24633",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24584",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -174,15 +173,15 @@ Merged in Sage 3.1.alpha0
 
 ---
 
-archive/issue_comments_024634.json:
+archive/issue_comments_024585.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-31T02:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3497",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24634",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3497#issuecomment-24585",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_009028.json:
     "body": "Assignee: amhou\n\nFixes the calculation of standard deviation. \n\nPreviously, sample standard deviation had returned a denominator of n, this fix gives a denominator of n-1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9028\n\n",
     "created_at": "2010-05-24T06:53:23Z",
     "labels": [
-        "statistics",
+        "component: statistics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009028.json:
     "title": "Basic Stats - Standard Deviation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9028",
-    "user": "amhou"
+    "user": "https://trac.sagemath.org/admin/accounts/users/amhou"
 }
 ```
 Assignee: amhou
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9028
 
 ---
 
-archive/issue_comments_083550.json:
+archive/issue_comments_083414.json:
 ```json
 {
     "body": "Attachment [trac_9028_stats.patch](tarball://root/attachments/some-uuid/ticket9028/trac_9028_stats.patch) by amhou created at 2010-05-24 06:53:54",
     "created_at": "2010-05-24T06:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83550",
-    "user": "amhou"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83414",
+    "user": "https://trac.sagemath.org/admin/accounts/users/amhou"
 }
 ```
 
@@ -49,15 +49,15 @@ Attachment [trac_9028_stats.patch](tarball://root/attachments/some-uuid/ticket90
 
 ---
 
-archive/issue_comments_083551.json:
+archive/issue_comments_083415.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-24T07:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83551",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83415",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083552.json:
+archive/issue_comments_083416.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-24T07:11:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83552",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83416",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +85,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083553.json:
+archive/issue_comments_083417.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-05-24T20:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83553",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83417",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -103,15 +103,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_083554.json:
+archive/issue_comments_083418.json:
 ```json
 {
     "body": "Please add a new example to the docstring that illustrates that this bug has been fixed.",
     "created_at": "2010-05-24T20:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83554",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83418",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +121,15 @@ Please add a new example to the docstring that illustrates that this bug has bee
 
 ---
 
-archive/issue_comments_083555.json:
+archive/issue_comments_083419.json:
 ```json
 {
     "body": "fix plus an example to test it",
     "created_at": "2010-11-18T22:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83555",
-    "user": "@benjaminfjones"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83419",
+    "user": "https://github.com/benjaminfjones"
 }
 ```
 
@@ -139,15 +139,15 @@ fix plus an example to test it
 
 ---
 
-archive/issue_comments_083556.json:
+archive/issue_comments_083420.json:
 ```json
 {
     "body": "Attachment [trac_9028_stats_fix+example.patch](tarball://root/attachments/some-uuid/ticket9028/trac_9028_stats_fix+example.patch) by @benjaminfjones created at 2010-11-18 22:18:49\n\nI've attached a new patch witch includes the fix plus an example to test the affected block of code. I couldn't think of a better way to access the block than to define a toy class that has its own mean() function which returns a Python long. If the mean() function from basic_stats.py has to be called, the type of 'x' at line 289 won't ever be 'int' or 'long' so the code block in question is never reached.\n\nMaybe someone can suggest a better example?\n\nHere is a before / after log to show that the fix works and that the example tests it.\n\n\n```\n\nsage: R = SillyPythonList()\nsage: list(R)\n[2L, 4L]\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n1\nsage: variance(R, bias=True)\n1\n\nsage: R = [2,4]\nsage: mean(R)\n3\nsage: variance(R)\n2\nsage: variance(R,bias=True)\n1\n\n### LOG (after patch)\nsage: R=SillyPythonList()\nsage: len(R)\n2\nsage: mean(R)\n3L\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\nsage: R = [2,4]\nsage: variance(R)\n2\nsage: variance(R, bias=True)\n1\n```\n",
     "created_at": "2010-11-18T22:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83556",
-    "user": "@benjaminfjones"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83420",
+    "user": "https://github.com/benjaminfjones"
 }
 ```
 
@@ -204,15 +204,15 @@ sage: variance(R, bias=True)
 
 ---
 
-archive/issue_comments_083557.json:
+archive/issue_comments_083421.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-11-18T22:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83557",
-    "user": "@benjaminfjones"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83421",
+    "user": "https://github.com/benjaminfjones"
 }
 ```
 
@@ -222,15 +222,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_083558.json:
+archive/issue_comments_083422.json:
 ```json
 {
     "body": "Replying to [comment:5 benjaminfjones]:\n\n... and I made sure the doctest passes for the new example. I'm applying the patch to Sage Version 4.6.1.alpha1.",
     "created_at": "2010-11-18T22:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83558",
-    "user": "@benjaminfjones"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83422",
+    "user": "https://github.com/benjaminfjones"
 }
 ```
 
@@ -242,15 +242,15 @@ Replying to [comment:5 benjaminfjones]:
 
 ---
 
-archive/issue_comments_083559.json:
+archive/issue_comments_083423.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-03-22T01:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83559",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83423",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -260,15 +260,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083560.json:
+archive/issue_comments_083424.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"standard deviation\".",
     "created_at": "2011-03-22T01:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83560",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83424",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -278,15 +278,15 @@ Changing keywords from "" to "standard deviation".
 
 ---
 
-archive/issue_comments_083561.json:
+archive/issue_comments_083425.json:
 ```json
 {
     "body": "All good (reviewed trac_9028_stats_fix+example.patch; trac_9028_stats.patch is obsolete).",
     "created_at": "2011-03-22T01:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83561",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83425",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -296,15 +296,15 @@ All good (reviewed trac_9028_stats_fix+example.patch; trac_9028_stats.patch is o
 
 ---
 
-archive/issue_comments_083562.json:
+archive/issue_comments_083426.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-04-13T07:42:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83562",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9028#issuecomment-83426",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

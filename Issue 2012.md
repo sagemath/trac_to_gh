@@ -6,15 +6,14 @@ archive/issues_002012.json:
     "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/patches/._.DS_Store\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/jmol/._.DS_Store\nsage-2.10.1.rc3/spkg/standard/jmol-11.5.2/._.DS_Store\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2012\n\n",
     "created_at": "2008-01-31T23:23:21Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "crap -- jmol contains some os x files that shouldn't be there",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2012",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2012
 
 ---
 
-archive/issue_comments_013003.json:
+archive/issue_comments_012972.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-31T23:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2012#issuecomment-13003",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2012#issuecomment-12972",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +52,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_013004.json:
+archive/issue_comments_012973.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc4/jmol-11.5.2.p0.spkg\n\nfixes the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-01T00:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2012#issuecomment-13004",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2012#issuecomment-12973",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +78,15 @@ Michael
 
 ---
 
-archive/issue_comments_013005.json:
+archive/issue_comments_012974.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc4",
     "created_at": "2008-02-01T02:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2012#issuecomment-13005",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2012#issuecomment-12974",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -97,15 +96,15 @@ Merged in Sage 2.10.1.rc4
 
 ---
 
-archive/issue_comments_013006.json:
+archive/issue_comments_012975.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-01T02:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2012#issuecomment-13006",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2012#issuecomment-12975",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

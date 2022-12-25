@@ -6,15 +6,13 @@ archive/issues_005090.json:
     "body": "Assignee: @williamstein\n\nAn spkg is at http://sage.math.washington.edu/home/jason/numpy-1.2.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/5090\n\n",
     "created_at": "2009-01-24T16:35:47Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "upgrade numpy to 1.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5090",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5090
 
 ---
 
-archive/issue_comments_038780.json:
+archive/issue_comments_038706.json:
 ```json
 {
     "body": "Jason,\n\nthis sounds like it is ready to be reviewed. Am I correct?\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T18:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38780",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38706",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +51,15 @@ Michael
 
 ---
 
-archive/issue_comments_038781.json:
+archive/issue_comments_038707.json:
 ```json
 {
     "body": "Changing component from linear algebra to packages.",
     "created_at": "2009-01-24T18:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38781",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38707",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +69,15 @@ Changing component from linear algebra to packages.
 
 ---
 
-archive/issue_comments_038782.json:
+archive/issue_comments_038708.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2009-01-24T18:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38782",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38708",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +87,15 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_comments_038783.json:
+archive/issue_comments_038709.json:
 ```json
 {
     "body": "And this is a package, so move it from linear algebra.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T18:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38783",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38709",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +109,15 @@ Michael
 
 ---
 
-archive/issue_comments_038784.json:
+archive/issue_comments_038710.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-24T18:04:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38784",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38710",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +127,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_038785.json:
+archive/issue_comments_038711.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha2\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T18:04:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38785",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38711",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -151,15 +149,15 @@ Michael
 
 ---
 
-archive/issue_comments_038786.json:
+archive/issue_comments_038712.json:
 ```json
 {
     "body": "Oops, I will review this later.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T18:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38786",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38712",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +171,15 @@ Michael
 
 ---
 
-archive/issue_comments_038787.json:
+archive/issue_comments_038713.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2009-01-24T18:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38787",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38713",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -191,15 +189,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_038788.json:
+archive/issue_comments_038714.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2009-01-24T18:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38788",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38714",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -209,15 +207,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_038789.json:
+archive/issue_comments_038715.json:
 ```json
 {
     "body": "Michael, yes you are correct on all accounts.",
     "created_at": "2009-01-24T21:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38789",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38715",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -227,15 +225,15 @@ Michael, yes you are correct on all accounts.
 
 ---
 
-archive/issue_comments_038790.json:
+archive/issue_comments_038716.json:
 ```json
 {
     "body": "Actually, I just remembered that I removed the patch which silenced deprecation warnings.  This was because I was hoping this spkg would be merged with the new scipy 0.7, and the deprecated calls would be fixed.  So we should hold off on this upgrade for now.",
     "created_at": "2009-01-25T02:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38790",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38716",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -245,15 +243,15 @@ Actually, I just remembered that I removed the patch which silenced deprecation 
 
 ---
 
-archive/issue_comments_038791.json:
+archive/issue_comments_038717.json:
 ```json
 {
     "body": "This has been superseded by #6140, which has been merged in `4.0.2.alpha0`. I'm closing as `wontfix`, though maybe `duplicate` is just as good.",
     "created_at": "2009-06-12T06:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38791",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38717",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -263,15 +261,15 @@ This has been superseded by #6140, which has been merged in `4.0.2.alpha0`. I'm 
 
 ---
 
-archive/issue_comments_038792.json:
+archive/issue_comments_038718.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2009-06-12T06:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5090",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38792",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/5090#issuecomment-38718",
+    "user": "https://github.com/craigcitro"
 }
 ```
 

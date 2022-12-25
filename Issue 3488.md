@@ -6,7 +6,7 @@ archive/issues_003488.json:
     "body": "Assignee: mabshoff\n\nfix some typos\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3488\n\n",
     "created_at": "2008-06-20T23:01:41Z",
     "labels": [
-        "build",
+        "component: build",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003488.json:
     "title": "typos in sage-clone script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3488",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: mabshoff
@@ -30,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3488
 
 ---
 
-archive/issue_comments_024580.json:
+archive/issue_comments_024531.json:
 ```json
 {
     "body": "Attachment [sage-clone.patch](tarball://root/attachments/some-uuid/ticket3488/sage-clone.patch) by mabshoff created at 2008-06-21 01:18:07",
     "created_at": "2008-06-21T01:18:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3488#issuecomment-24580",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3488#issuecomment-24531",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -48,15 +48,15 @@ Attachment [sage-clone.patch](tarball://root/attachments/some-uuid/ticket3488/sa
 
 ---
 
-archive/issue_comments_024581.json:
+archive/issue_comments_024532.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha0",
     "created_at": "2008-06-23T08:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3488#issuecomment-24581",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3488#issuecomment-24532",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -66,15 +66,15 @@ Merged in Sage 3.0.4.alpha0
 
 ---
 
-archive/issue_comments_024582.json:
+archive/issue_comments_024533.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-23T08:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3488#issuecomment-24582",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3488#issuecomment-24533",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

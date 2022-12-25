@@ -6,7 +6,7 @@ archive/issues_009004.json:
     "body": "Assignee: @aghitza\n\nAccording to the comments in the code:\n-----\n        Compare self and right.\n\n        If right is not a Set compare types.  If right is also a Set,\n        returns comparison on the underlying objects.\n----\nBut that is not what is currently done. In the case where \nright is not a Set (more accurately a \"Set_object\" that's\npossibly another issue) the following is evaluated:\n\n\n```\ncmp(type(right), type(Set_object))\n```\n\n\nThe correct thing would be to compare type(right) with\nthe type \"Set_object\" [which is type(self)] not the type\n**of** Set_object.\n\nPatch to follow.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9004\n\n",
     "created_at": "2010-05-21T04:11:24Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009004.json:
     "title": "__cmp__ in sage/sets/set.py doesn't do what it's supposed to do.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9004",
-    "user": "@kiwifb"
+    "user": "https://github.com/kiwifb"
 }
 ```
 Assignee: @aghitza
@@ -50,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9004
 
 ---
 
-archive/issue_comments_083294.json:
+archive/issue_comments_083158.json:
 ```json
 {
     "body": "Attachment [trac9004.patch](tarball://root/attachments/some-uuid/ticket9004/trac9004.patch) by @kiwifb created at 2010-05-21 04:15:58",
     "created_at": "2010-05-21T04:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83294",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83158",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -68,15 +68,15 @@ Attachment [trac9004.patch](tarball://root/attachments/some-uuid/ticket9004/trac
 
 ---
 
-archive/issue_comments_083295.json:
+archive/issue_comments_083159.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-21T10:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83295",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83159",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -86,15 +86,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083296.json:
+archive/issue_comments_083160.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2010-05-21T10:52:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83296",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83160",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -104,15 +104,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_083297.json:
+archive/issue_comments_083161.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-21T10:52:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83297",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83161",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -122,15 +122,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083298.json:
+archive/issue_comments_083162.json:
 ```json
 {
     "body": "This patch was still wrong, since it was backwards still.   See #9121 which is basically the same.",
     "created_at": "2010-06-03T15:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83298",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83162",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -140,15 +140,15 @@ This patch was still wrong, since it was backwards still.   See #9121 which is b
 
 ---
 
-archive/issue_comments_083299.json:
+archive/issue_comments_083163.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-06-03T15:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83299",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9004#issuecomment-83163",
+    "user": "https://github.com/williamstein"
 }
 ```
 

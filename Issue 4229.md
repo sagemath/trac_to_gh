@@ -6,15 +6,13 @@ archive/issues_004229.json:
     "body": "Assignee: @burcin\n\nCC:  @jdemeyer\n\nMPFR has fast implementations for restricted types of arguments in some special functions, e.g. Bessel J and Y with integer order and positive real argument.  We should be using these instead of Pari or Maxima or Scipy whenever that is feasible.\n\nExample:\n\n\n```\nsage: a = RR(2)\nsage: timeit(\"bessel_J(1, a)\")\n625 loops, best of 3: 370 \u00b5s per loop\nsage: timeit(\"a.j1()\")\n625 loops, best of 3: 13.9 \u00b5s per loop\n```\n\n\nThat's 26 times faster than Pari.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4229\n\n",
     "created_at": "2008-10-01T09:55:56Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "special functions should use mpfr when available",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4229",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: @burcin
@@ -45,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4229
 
 ---
 
-archive/issue_comments_030734.json:
+archive/issue_comments_030672.json:
 ```json
 {
     "body": "Or maybe we should use mpmath - there are a number of tickets about that.  Such as Alex's own comment in #3426 :)",
     "created_at": "2011-03-16T15:38:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30734",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30672",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -63,15 +61,15 @@ Or maybe we should use mpmath - there are a number of tickets about that.  Such 
 
 ---
 
-archive/issue_comments_030735.json:
+archive/issue_comments_030673.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2011-03-16T15:38:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30735",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30673",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -81,15 +79,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_030736.json:
+archive/issue_comments_030674.json:
 ```json
 {
     "body": "This ticket is too broad, I suggest we close it as invalid.\n\nAt the time it was created, there was no general framework to handle these functions. The (not so) new pynac-based symbolics provide this framework. It is true that a lot of work is still needed to sort these numerical evaluation issues out, but we need a separate specific ticket for each issue.\n\nSee [symbolics/functions](symbolics-functions) for an overview on the progress of symbolic functions.",
     "created_at": "2011-06-14T18:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30736",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30674",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -103,15 +101,15 @@ See [symbolics/functions](symbolics-functions) for an overview on the progress o
 
 ---
 
-archive/issue_comments_030737.json:
+archive/issue_comments_030675.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"sd31\".",
     "created_at": "2011-06-14T18:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30737",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30675",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -121,15 +119,15 @@ Changing keywords from "" to "sd31".
 
 ---
 
-archive/issue_comments_030738.json:
+archive/issue_comments_030676.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-06-14T18:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30738",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30676",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -139,15 +137,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_030739.json:
+archive/issue_comments_030677.json:
 ```json
 {
     "body": "Agreed.  This wiki page solves the problem.",
     "created_at": "2011-06-14T18:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30739",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30677",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -157,15 +155,15 @@ Agreed.  This wiki page solves the problem.
 
 ---
 
-archive/issue_comments_030740.json:
+archive/issue_comments_030678.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-06-14T18:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30740",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30678",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -175,15 +173,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_030741.json:
+archive/issue_comments_030679.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-06-14T20:39:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30741",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4229#issuecomment-30679",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

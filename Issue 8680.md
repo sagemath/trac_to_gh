@@ -6,15 +6,13 @@ archive/issues_008680.json:
     "body": "Assignee: @jasongrout\n\nCC:  @dandrake mvngu\n\nThere are two patches: one removes tabs from all files except symbolic/expression.pyx -- see [#3852](http://trac.sagemath.org/sage_trac/ticket/3852#comment:20).  The second patches sage-doctest so that files with tabs in them will fail doctesting.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8680\n\n",
     "created_at": "2010-04-13T04:09:49Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "untabify Sage again, and make it stick",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8680",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jasongrout
@@ -32,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8680
 
 ---
 
-archive/issue_comments_079078.json:
+archive/issue_comments_078948.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-13T04:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79078",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78948",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -50,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_079079.json:
+archive/issue_comments_078949.json:
 ```json
 {
     "body": "Can you implement a way to override the \"no tab\" behavior?   E.g., some special string in the file that allows tabs.  This could be very important for certain rare cases.     E.g., if the file contains the string SAGE_DOCTEST_ALLOW_TABS, then the tab test isn't made.",
     "created_at": "2010-04-13T04:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79079",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78949",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -68,15 +66,15 @@ Can you implement a way to override the "no tab" behavior?   E.g., some special 
 
 ---
 
-archive/issue_comments_079080.json:
+archive/issue_comments_078950.json:
 ```json
 {
     "body": "Okay, here's a new version implementing that.  It's only documented at the top of sage-doctest (and as a comment in the code later) because I didn't know where else to put it.  Minh, do you have any opinions?",
     "created_at": "2010-04-13T04:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79080",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78950",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -86,15 +84,15 @@ Okay, here's a new version implementing that.  It's only documented at the top o
 
 ---
 
-archive/issue_comments_079081.json:
+archive/issue_comments_078951.json:
 ```json
 {
     "body": "Replying to [comment:3 jhpalmieri]:\n> Okay, here's a new version implementing that.  It's only documented at the top of sage-doctest (and as a comment in the code later) because I didn't know where else to put it. \n\nEventually, the new variable `SAGE_DOCTEST_ALLOW_TABS` would need to be documented in the Developer's Guide, along with all others defined by Sage. Ticket #8263 keeps track of this issue.\n\n\n\n\n> Minh, do you have any opinions?\n\nExplicitly disallowing TABs is just one of many tasks in sanitizing a patch before the patch is committed. I recall a few months ago, the sage-combinat team had a discussion about creating a new script for the script repository. The purpose of this script was to sanitize the commit message of a patch. In particular, the commit message must contain the ticket number. I think it's time we think about writing such a script called, say, `sage-sanitize`. As a tentative list of rules to check for, `sage-sanitize` would check for the following in a patch:\n\n* TAB characters\n* The preamble of a Mercurial patch, which consists at minimum of the following:\n {{{\n# HG changeset patch\n# User <Your Name> your.name`@`home.com\n# Date\n# Node\n# Parent\n#xxxx: <commit message goes here>\n }}}\n\nI'm in favour of automating as much as possible tedious tasks such as the above. An advantage is that prior to reviewing a patch, a reviewer (or indeed a continuous integration system) could run a patch through this sanity checker script. If all rules in the script pass, then the reviewer could then proceed with reviewing the implementation contained in the patch.\n\n\n\n\nIf you agree, a ticket could be opened for this new `sage-sanitize` script.",
     "created_at": "2010-04-13T05:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79081",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78951",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -132,15 +130,15 @@ If you agree, a ticket could be opened for this new `sage-sanitize` script.
 
 ---
 
-archive/issue_comments_079082.json:
+archive/issue_comments_078952.json:
 ```json
 {
     "body": "Replying to [comment:4 mvngu]:\n\n> I'm in favour of automating as much as possible tedious tasks such as the above. An advantage is that prior to reviewing a patch, a reviewer (or indeed a continuous integration system) could run a patch through this sanity checker script. If all rules in the script pass, then the reviewer could then proceed with reviewing the implementation contained in the patch.\n> \n\n\n\n\nIn this spirit, I'm strongly in favor of the sage -merge script prepending the ticket number where a patch came from, thus fulfilling the requirement that the ticket number be in the patch.  This way (1) the ticket number is guaranteed to be accurate and consistently done (i.e., reflects what ticket you can find the patch at, and always is #xxxx: <commit>), and (2) it doesn't waste developer's time to look up and type in correctly a 4-5 digit number which could be totally automated.",
     "created_at": "2010-04-13T07:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79082",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78952",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -158,15 +156,15 @@ In this spirit, I'm strongly in favor of the sage -merge script prepending the t
 
 ---
 
-archive/issue_comments_079083.json:
+archive/issue_comments_078953.json:
 ```json
 {
     "body": "I applied the patches here, and when doctesting, there are still some tabs:\n\n* devel/sage/sage/symbolic/expression.pyx (which is known; John deliberately avoided that file)\n* devel/sage/doc/fr/tutorial/tour_algebra.rst\n* devel/sage/doc/en/tutorial/tour_functions.rst\n* devel/sage/doc/en/developer/coding_in_python.rst\n* devel/sage/doc/en/developer/conventions.rst\n* devel/sage/doc/common/builder.py\n* devel/sage/doc/en/developer/doctesting.rst\n\nThe only problem here is that the untabify patch will almost certainly screw up a bunch of other patches; are we willing to do that? In technical terms, I can give these two patches a positive review, but in social terms, I'm hesitant to make a bunch of people rebase patches.",
     "created_at": "2010-04-13T08:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79083",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78953",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -186,15 +184,15 @@ The only problem here is that the untabify patch will almost certainly screw up 
 
 ---
 
-archive/issue_comments_079084.json:
+archive/issue_comments_078954.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-04-13T08:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79084",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78954",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -204,15 +202,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_079085.json:
+archive/issue_comments_078955.json:
 ```json
 {
     "body": "I missed the tab in builder.py.  I'm going to skip the others: I think we should only care about tabs in Python or Cython files.  I've attached new patches to deal with these issues.\n\nI think that no matter when we apply this, it has the potential to be a little painful.  Right now there are 121 tickets with positive review.  I don't know the plan for the next release, but we could merge the scripts patch ASAP and then we (probably meaning me) could keep rebasing the patch for untabifying the Sage library until 4.4 was officially released.  Maybe the release managers have another idea...",
     "created_at": "2010-04-13T18:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79085",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78955",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -224,15 +222,15 @@ I think that no matter when we apply this, it has the potential to be a little p
 
 ---
 
-archive/issue_comments_079086.json:
+archive/issue_comments_078956.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-04-13T18:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79086",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78956",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -242,15 +240,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_079087.json:
+archive/issue_comments_078957.json:
 ```json
 {
     "body": "Attachment [trac_8680-untabify.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-untabify.patch) by @jhpalmieri created at 2010-04-13 18:56:40\n\nSage repo",
     "created_at": "2010-04-13T18:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79087",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78957",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -262,15 +260,15 @@ Sage repo
 
 ---
 
-archive/issue_comments_079088.json:
+archive/issue_comments_078958.json:
 ```json
 {
     "body": "Attachment [trac_8680-doctest.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-doctest.patch) by @jhpalmieri created at 2010-04-13 18:56:54\n\nscripts repo",
     "created_at": "2010-04-13T18:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79088",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78958",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -282,15 +280,15 @@ scripts repo
 
 ---
 
-archive/issue_comments_079089.json:
+archive/issue_comments_078959.json:
 ```json
 {
     "body": "Changing component from misc to doctest.",
     "created_at": "2010-04-13T20:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79089",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78959",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -300,15 +298,15 @@ Changing component from misc to doctest.
 
 ---
 
-archive/issue_comments_079090.json:
+archive/issue_comments_078960.json:
 ```json
 {
     "body": "**sage-devel thread:** http://groups.google.com/group/sage-devel/browse_thread/thread/3a777192a361fed7\n\nI'm not happy with \"brute-force\" converting *any* tab to space(s), and it would be better to have a tool that (conditionally) does this rather than supplying patches to lots of files converted by Emacs. The same tool could be used just to check for \"illegal\" tabs. As I understand this, these are *tabs in leading whitespace*.\n\nTrailing whitespace could be removed. (Currently trailing tabs are converted to many trailing spaces.)\n\nI've also come across files that do not end with newline...\n\nOpinions?\n\n-Leif",
     "created_at": "2010-04-15T18:33:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79090",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78960",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -328,15 +326,15 @@ Opinions?
 
 ---
 
-archive/issue_comments_079091.json:
+archive/issue_comments_078961.json:
 ```json
 {
     "body": "Replying to [comment:5 jason]:\n> In this spirit, I'm strongly in favor of the sage -merge script prepending the ticket number where a patch came from, thus fulfilling the requirement that the ticket number be in the patch.  This way (1) the ticket number is guaranteed to be accurate and consistently done (i.e., reflects what ticket you can find the patch at, and always is #xxxx: <commit>), and (2) it doesn't waste developer's time to look up and type in correctly a 4-5 digit number which could be totally automated.\n\nSee #9319.",
     "created_at": "2010-06-23T21:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79091",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78961",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -349,15 +347,15 @@ See #9319.
 
 ---
 
-archive/issue_comments_079092.json:
+archive/issue_comments_078962.json:
 ```json
 {
     "body": "Attachment [trac_8680-untabify-4.5.alpha1.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-untabify-4.5.alpha1.patch) by @loefflerd created at 2010-06-30 17:51:40\n\nSage repo; rebased to 4.5.alpha1",
     "created_at": "2010-06-30T17:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79092",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78962",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -369,15 +367,15 @@ Sage repo; rebased to 4.5.alpha1
 
 ---
 
-archive/issue_comments_079093.json:
+archive/issue_comments_078963.json:
 ```json
 {
     "body": "I've done a rebased/updated version of jhpalmieri's library code patch, and checked that it doesn't conflict with any of the 103 (!) positively reviewed non-spkg patches on trac. (I've also checked to see that none of those 103 patches adds any tabs). \n\nLet's get this in ASAP, before it starts happening again.",
     "created_at": "2010-06-30T17:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79093",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78963",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -389,15 +387,15 @@ Let's get this in ASAP, before it starts happening again.
 
 ---
 
-archive/issue_comments_079094.json:
+archive/issue_comments_078964.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-30T17:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79094",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78964",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -407,15 +405,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_079095.json:
+archive/issue_comments_078965.json:
 ```json
 {
     "body": "Replying to [comment:11 davidloeffler]:\n> I've done a rebased/updated version of jhpalmieri's library code patch, and checked that it doesn't conflict with any of the 103 (!) positively reviewed non-spkg patches on trac. (I've also checked to see that none of those 103 patches adds any tabs).\n\n:-) Well done...\n \n> Let's get this in ASAP, before it starts happening again.\n\n+100, asap.\n\n(I though still prefer to have [configurable] tools doing such jobs.)",
     "created_at": "2010-06-30T18:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79095",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78965",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -434,15 +432,15 @@ Replying to [comment:11 davidloeffler]:
 
 ---
 
-archive/issue_comments_079096.json:
+archive/issue_comments_078966.json:
 ```json
 {
     "body": "Just for the record: I've successfully applied David's patch to 4.5.alpha1 (without the optional GLPK package) and all tests passed (`ptestlong`).\n\n(I did *not* yet apply the patch to `sage-doctest`.)",
     "created_at": "2010-07-01T00:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79096",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78966",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -454,15 +452,15 @@ Just for the record: I've successfully applied David's patch to 4.5.alpha1 (with
 
 ---
 
-archive/issue_comments_079097.json:
+archive/issue_comments_078967.json:
 ```json
 {
     "body": "Replying to [comment:13 leif]:\n> Just for the record: I've successfully applied David's patch to 4.5.alpha1 (without the optional GLPK package) and all tests passed (`ptestlong`).\n> \n> (I did *not* yet apply the patch to `sage-doctest`.)\n> \n\nIf you had done so, you'd have noticed that it brings up the following bug: \n\n```\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-reviewing/sage/combinat/words/suffix_trees.py\", line 604:\n    sage: s._word_content\nExpected:\n    doctest:492: DeprecationWarning: _word_content is deprecated, use _letters instead\n    ['c', 'a', 'c', 'a', 'o']\nGot:\n    doctest:509: DeprecationWarning: _word_content is deprecated, use _letters instead\n    ['c', 'a', 'c', 'a', 'o']\n```\n\nI didn't notice this before either, since it doesn't occur if you use `sage -t`, but it does occur if you use `make ptest[long]`, for some reason. In any case the correct solution is clearly for the line number to be replaced by `...`, so it doesn't break every time someone changes the doctest script.",
     "created_at": "2010-07-01T17:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79097",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78967",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -492,15 +490,15 @@ I didn't notice this before either, since it doesn't occur if you use `sage -t`,
 
 ---
 
-archive/issue_comments_079098.json:
+archive/issue_comments_078968.json:
 ```json
 {
     "body": "Apply to sage repo over trac_8680-untabify-4.5.alpha1.patch",
     "created_at": "2010-07-01T17:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79098",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78968",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -510,15 +508,15 @@ Apply to sage repo over trac_8680-untabify-4.5.alpha1.patch
 
 ---
 
-archive/issue_comments_079099.json:
+archive/issue_comments_078969.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-07-01T17:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79099",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78969",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -528,15 +526,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_079100.json:
+archive/issue_comments_078970.json:
 ```json
 {
     "body": "Attachment [trac_8680-tinyfix.patch](tarball://root/attachments/some-uuid/ticket8680/trac_8680-tinyfix.patch) by @loefflerd created at 2010-07-01 17:31:09",
     "created_at": "2010-07-01T17:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79100",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78970",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -546,15 +544,15 @@ Attachment [trac_8680-tinyfix.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_079101.json:
+archive/issue_comments_078971.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-01T17:31:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79101",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78971",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -564,15 +562,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_079102.json:
+archive/issue_comments_078972.json:
 ```json
 {
     "body": "Here's the requisite one-line fix.",
     "created_at": "2010-07-01T17:31:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79102",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78972",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -582,15 +580,15 @@ Here's the requisite one-line fix.
 
 ---
 
-archive/issue_comments_079103.json:
+archive/issue_comments_078973.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-01T20:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79103",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78973",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -600,15 +598,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_079104.json:
+archive/issue_comments_078974.json:
 ```json
 {
     "body": "I don't know if \"492\" is a line number or not.  Also, with \"make ptestlong\" on sage.math, I don't see the doctest failure either before or after applying the \"tinyfix\" patch.  Regardless, the patch makes sense and fits with how other depreciation warnings are handled in doctests.  So positive review.",
     "created_at": "2010-07-01T20:41:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79104",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78974",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -618,15 +616,15 @@ I don't know if "492" is a line number or not.  Also, with "make ptestlong" on s
 
 ---
 
-archive/issue_comments_079105.json:
+archive/issue_comments_078975.json:
 ```json
 {
     "body": "Sorry for the delay, I'm currently trying to make sense of all the doctest-related scripts... ;-) (By doing so, I encountered a number of flaws, inconsistencies and things I'm not sure if they are correct and/or intentional.)\n\nI suggest splitting this ticket into two, such that the tab-removing Sage library patch can be merged immediately (cf. Robert Miller's mail, not posted on sage-release).\n\nI don't think the detection of \"illegal\" tabs is in the right place/done the appropriate way; it's IMHO undesirable to slow down *every* doctesting by scanning each file twice in addition.\n\nAn alternative would be to (also) make tab-checking an *option* to the test scripts and/or control it by another environment variable, something I wanted to provide a reviewer patch for, but couldn't yet because of the issues mentioned above that ate my time. :(",
     "created_at": "2010-07-01T22:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79105",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78975",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -642,15 +640,15 @@ An alternative would be to (also) make tab-checking an *option* to the test scri
 
 ---
 
-archive/issue_comments_079106.json:
+archive/issue_comments_078976.json:
 ```json
 {
     "body": "> it's IMHO undesirable to slow down every doctesting by scanning each file twice in addition.\n\nI just wrote a function like this:\n\n```\ndef search_for_tabs(file):\n    # search for tabs.  if found, the doctest fails, unless the string                             \n    # \"SAGE_DOCTEST_ALLOW_TABS\" is also present somewhere in the file.                             \n    import os\n    ext = os.path.splitext(file)[1]\n    if ext in [\".py\", \".pyx\", \".sage\", \".spyx\"]:\n        ff = open(file)\n        source = ff.read()\n        ff.close()\n        if (source.find(\"SAGE_DOCTEST_ALLOW_TABS\") == -1\n            and source.find(\"\\t\") != -1):\n            numfail += 1\n            s = \"*\"*70 + \"\\n\" + \"Error: TAB character found.\\n\" + s\n```\n\nIf I run it on sage/combinat/sloane_functions.py, which is pretty big for a Sage library file (241510 bytes), running inside Sage and using \"timeit\", it takes 400-500 microseconds.  For the roughly 2500 files in the Sage library, this adds between 1 and 2 seconds, total.  Some timings for the \"homology\" directory: with the old version of sage-doctest: 49.2 and 48.8 seconds.  With the new version: 49.5 and 48.9 seconds.  In other words, the variation in these timings due to whatever else is going on with the computer are larger than the differences in timing due to the changes in sage-doctest from this ticket.\n\nI would propose including this now, since it shouldn't slow things down much and it will keep more tabs from creeping into the Sage library, and then modifying it later if you want.",
     "created_at": "2010-07-02T00:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79106",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78976",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -682,15 +680,15 @@ I would propose including this now, since it shouldn't slow things down much and
 
 ---
 
-archive/issue_comments_079107.json:
+archive/issue_comments_078977.json:
 ```json
 {
     "body": "Replying to [comment:19 jhpalmieri]:\n> > it's IMHO undesirable to slow down every doctesting by scanning each file twice in addition.\n> [...]\n> If I run it on sage/combinat/sloane_functions.py, which is pretty big for a Sage library file (241510 bytes), running inside Sage and using \"timeit\", it takes 400-500 microseconds.  For the roughly 2500 files in the Sage library, this adds between 1 and 2 seconds, total. [...]\n\nWell this obviously depends on the CPU, amount of cache, available or free memory, disk speed etc.\n\nThe main problem with such things is that they accumulate. Everybody thinks he can add some little inefficiency; once it got in it's likely to never be removed or improved again, that's the sad story.\n\nAnother point is the concept of adding such functionality to where it IMHO does not belong; there have been discussions on what to (hopefully automatically) check before new or modified code gets in - even on this ticket.\n\nFor me, the minimum requirement is to provide a way to disable it *somehow* (for a whole doctest job, not just by a tag specific to an individual file being tested); I don't mind if it's enabled by default. Obviously reviewers should either enable or otherwise not disable tab-checking, but as said before, I'd implement it in another script. There's e.g. no need to look for tabs on dozens of platforms, since they'll most probably be present on all or none of them.\n\n> I would propose including this now, since it shouldn't slow things down much and it will keep more tabs from creeping into the Sage library, and then modifying it later if you want.\n\nIf that was the only thing postponed... ;-)",
     "created_at": "2010-07-02T01:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79107",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78977",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -715,15 +713,15 @@ If that was the only thing postponed... ;-)
 
 ---
 
-archive/issue_comments_079108.json:
+archive/issue_comments_078978.json:
 ```json
 {
     "body": "P.S.: I think searching for `SAGE_DOCTEST_ALLOW_TABS` *in the first few lines* would be sufficient.\n\n*\"... slowing down every doctesting\"* should have read *\"... slowing down doctesting **further**\"*. ;-)",
     "created_at": "2010-07-02T01:08:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79108",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78978",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -735,15 +733,15 @@ P.S.: I think searching for `SAGE_DOCTEST_ALLOW_TABS` *in the first few lines* w
 
 ---
 
-archive/issue_comments_079109.json:
+archive/issue_comments_078979.json:
 ```json
 {
     "body": "Replying to [comment:20 leif]:\n> Replying to [comment:19 jhpalmieri]:\n> > > it's IMHO undesirable to slow down every doctesting by scanning each file twice in addition.\n> > [...]\n> > If I run it on sage/combinat/sloane_functions.py, which is pretty big for a Sage library file (241510 bytes), running inside Sage and using \"timeit\", it takes 400-500 microseconds.  For the roughly 2500 files in the Sage library, this adds between 1 and 2 seconds, total. [...]\n> \n> Well this obviously depends on the CPU, amount of cache, available or free memory, disk speed etc.\n\nThe same with all of doctesting.  The point is, this adds very little, percentagewise, to the time.\n\n> The main problem with such things is that they accumulate. Everybody thinks he can add some little inefficiency; once it got in it's likely to never be removed or improved again, that's the sad story.\n\nNot if you open another ticket and post a patch implementing what you're talking about. Do the same for other inefficiencies you see, and if you feel that they're not getting the proper attention after a while, post about them on sage-devel.\n\n> Another point is the concept of adding such functionality to where it IMHO does not belong; there have been discussions on what to (hopefully automatically) check before new or modified code gets in - even on this ticket.\n> \n> For me, the minimum requirement is to provide a way to disable it *somehow* (for a whole doctest job, not just by a tag specific to an individual file being tested); I don't mind if it's enabled by default. Obviously reviewers should either enable or otherwise not disable tab-checking, but as said before, I'd implement it in another script. There's e.g. no need to look for tabs on dozens of platforms, since they'll most probably be present on all or none of them.\n\nHaving a way to disable it is a fine idea, but it's much lower priority than implementing a test for tabs in the first place, so that more don't get into the Sage library.  As Voltaire said, sometimes \"The perfect is the enemy of the good\".  Anyway, if testing on every platform costs each person doing doctests 1 second, or 10 seconds, or 100 seconds, out of 3 or 4 thousand, it's not a big deal.\n\n> > I would propose including this now, since it shouldn't slow things down much and it will keep more tabs from creeping into the Sage library, and then modifying it later if you want.\n> \n> If that was the only thing postponed... ;-)\n\nDon't just complain about it, post a patch here or open a new ticket and fix what you think needs fixing.  Not implementing this because it's not perfect is worse, I think, than implementing it and fixing it up later.",
     "created_at": "2010-07-02T01:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79109",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78979",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -777,15 +775,15 @@ Don't just complain about it, post a patch here or open a new ticket and fix wha
 
 ---
 
-archive/issue_comments_079110.json:
+archive/issue_comments_078980.json:
 ```json
 {
     "body": "\n```\n==> make-test.1.log <==\n[...] \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 4527.9 seconds\nPlease see /home/leif64/.sage//tmp/test.log for the complete log from this test.\n\nreal\t75m47.091s\nuser\t65m25.857s\nsys\t5m55.522s\n\n==> make-test-check-tabs.2.log <==\n[...]\n----------------------------------------------------------------------\nThe following tests failed:\n\n\tsage -t  \"devel/sage/doc/common/builder.py\"\n[...]\n\tsage -t  \"devel/sage/sage/modules/free_module_element.pyx\"\nTotal time for all tests: 4837.5 seconds\nPlease see /home/leif64/.sage//tmp/test.log for the complete log from this test.\n\nreal\t80m53.804s\nuser\t69m48.782s\nsys\t6m9.019s\n```\n\n\nThat's `make test` (i.e. single-threaded) on a relatively fast machine, both times sysload <= number of cores.\n(Sage 4.4.4)",
     "created_at": "2010-07-02T01:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79110",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78980",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -826,15 +824,15 @@ That's `make test` (i.e. single-threaded) on a relatively fast machine, both tim
 
 ---
 
-archive/issue_comments_079111.json:
+archive/issue_comments_078981.json:
 ```json
 {
     "body": "*\"Make things as simple as possible, but not simpler.\"* (Einstein, by rumor)\n\nKant gave other nice statements regarding how or when things will get good.\n\nSo I'll provide a patch (as originally intended), either for this or - reluctantly - on another ticket. The problem in the latter case is there are so many things to clean up in the doctest scripts, and it's unclear when it will get merged (as with yours if we'd split this ticket). :-)\n\nI wonder if someone in the mean time (3 month) opened a ticket for `sage-sanitize`...",
     "created_at": "2010-07-02T01:51:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79111",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78981",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -850,15 +848,15 @@ I wonder if someone in the mean time (3 month) opened a ticket for `sage-sanitiz
 
 ---
 
-archive/issue_comments_079112.json:
+archive/issue_comments_078982.json:
 ```json
 {
     "body": "Replying to [comment:24 leif]:\n> So I'll provide a patch (as originally intended), either for this or - reluctantly - on another ticket. \n\nPlease do the latter. I don't think sage-doctest gets changed all that often, so merging more changes to it at some point in the future is unlikely to be an issue. The reason time is of the essence with this ticket isn't the rate at which sage-doctest gets changed, but the rate at which inexperienced/careless Sage devs introduce tabs into the main library.",
     "created_at": "2010-07-02T09:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79112",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78982",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -871,15 +869,15 @@ Please do the latter. I don't think sage-doctest gets changed all that often, so
 
 ---
 
-archive/issue_comments_079113.json:
+archive/issue_comments_078983.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-02T22:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79113",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78983",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -889,15 +887,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_079114.json:
+archive/issue_comments_078984.json:
 ```json
 {
     "body": "And there was much rejoicing.",
     "created_at": "2010-07-02T22:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8680",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-79114",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8680#issuecomment-78984",
+    "user": "https://github.com/loefflerd"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_007367.json:
     "body": "Assignee: tbd\n\nCC:  @TimDumol\n\nCurrently, the [reference manual's](http://www.sagemath.org/doc/reference/index.html) [Notebook section](http://www.sagemath.org/doc/reference/notebook.html) documents the old Sage notebook.\n\nWe should update this section with docstrings from the recently separated [SageNB](http://nb.sagemath.org/).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7367\n\n",
     "created_at": "2009-11-01T13:35:58Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007367.json:
     "title": "Add SageNB modules to the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7367",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: tbd
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7367
 
 ---
 
-archive/issue_comments_061737.json:
+archive/issue_comments_061623.json:
 ```json
 {
     "body": "Attachment [trac_7367-sagenb_manual.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual.patch) by @qed777 created at 2009-11-01 14:01:34\n\nAdd SageNB modules to reference manual.  Apply to sage repo.",
     "created_at": "2009-11-01T14:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61737",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61623",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -53,15 +53,15 @@ Add SageNB modules to reference manual.  Apply to sage repo.
 
 ---
 
-archive/issue_comments_061738.json:
+archive/issue_comments_061624.json:
 ```json
 {
     "body": "I've commented out the \"Interfaces\" section, for now.\n\nI think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.",
     "created_at": "2009-11-01T14:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61738",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61624",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -73,15 +73,15 @@ I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.
 
 ---
 
-archive/issue_comments_061739.json:
+archive/issue_comments_061625.json:
 ```json
 {
     "body": "Replying to [comment:1 mpatel]:\n> I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.\n\nOf course, we can comment it out, too, temporarily.  I didn't mean to pile on more work.",
     "created_at": "2009-11-01T14:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61739",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61625",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -94,15 +94,15 @@ Of course, we can comment it out, too, temporarily.  I didn't mean to pile on mo
 
 ---
 
-archive/issue_comments_061740.json:
+archive/issue_comments_061626.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-01T14:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61740",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61626",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -112,15 +112,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_061741.json:
+archive/issue_comments_061627.json:
 ```json
 {
     "body": "Replying to [comment:2 mpatel]:\n> Replying to [comment:1 mpatel]:\n> > I think `sagenb.misc.sphinxify`'s docstrings need just a bit of tweaking.\n> \n> Of course, we can comment it out, too, temporarily.  I didn't mean to pile on more work.\n\nDocstring fixes are up at http://trac.sagemath.org/sage_trac/ticket/7384",
     "created_at": "2009-11-03T20:48:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61741",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61627",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -136,15 +136,15 @@ Docstring fixes are up at http://trac.sagemath.org/sage_trac/ticket/7384
 
 ---
 
-archive/issue_comments_061742.json:
+archive/issue_comments_061628.json:
 ```json
 {
     "body": "Everything looks good, but why is the miscellaneous section named \"Documentation\"? Shouldn't it be named \"Miscellaneous functions\", or \"Introspection\", or the like? The name \"Documentation\" is confusing, at least for me.",
     "created_at": "2009-11-03T21:32:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61742",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61628",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -154,15 +154,15 @@ Everything looks good, but why is the miscellaneous section named "Documentation
 
 ---
 
-archive/issue_comments_061743.json:
+archive/issue_comments_061629.json:
 ```json
 {
     "body": "\"Documentation\" is indeed confusing.  I think my motive was to identify and group the [mostly] help-related modules.  Since `support` falls under \"Online Help\" and \"Miscellaneous,\" the forthcoming patch simply puts them all under the latter.",
     "created_at": "2009-11-04T04:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61743",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61629",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -172,15 +172,15 @@ archive/issue_comments_061743.json:
 
 ---
 
-archive/issue_comments_061744.json:
+archive/issue_comments_061630.json:
 ```json
 {
     "body": "Attachment [trac_7367-sagenb_manual_v2.patch](tarball://root/attachments/some-uuid/ticket7367/trac_7367-sagenb_manual_v2.patch) by @qed777 created at 2009-11-04 04:46:02\n\nLess confusing subheading.  Really skip interface modules.  Apply only this patch to sage repo.",
     "created_at": "2009-11-04T04:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61744",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61630",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -192,15 +192,15 @@ Less confusing subheading.  Really skip interface modules.  Apply only this patc
 
 ---
 
-archive/issue_comments_061745.json:
+archive/issue_comments_061631.json:
 ```json
 {
     "body": "Feel free to bump the milestone to 4.3.",
     "created_at": "2009-11-12T01:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61745",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61631",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -210,15 +210,15 @@ Feel free to bump the milestone to 4.3.
 
 ---
 
-archive/issue_comments_061746.json:
+archive/issue_comments_061632.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-12T02:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61746",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61632",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -228,15 +228,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_061747.json:
+archive/issue_comments_061633.json:
 ```json
 {
     "body": "Looks good to me too.",
     "created_at": "2009-11-12T02:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61747",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61633",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -246,15 +246,15 @@ Looks good to me too.
 
 ---
 
-archive/issue_comments_061748.json:
+archive/issue_comments_061634.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-12T07:30:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7367",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61748",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7367#issuecomment-61634",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

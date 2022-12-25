@@ -6,15 +6,14 @@ archive/issues_007836.json:
     "body": "Assignee: @aghitza\n\nCC:  @JohnCremona @rlmill\n\nFrom #7595:\n\nReplying to [comment:10 cremona]:\n> I have some problems with the CRT* functions though.\n> \n>    1. CRT_list does not check that the two lists have the same length;  if the moduli list is shorter you get an IndexError, but it would be better to catch that and raise a more informative error.\n> \n>    2. CRT_basis is rather silly.   It calls CRT_list n times with the same moduli, which must be wasteful.  It would be better to call plain CRT n times with suitable moduli (exercise for the reader).\n> \n> Of course, I don't think that these issues should delay the current patch, but deserve a ticket of their own to make sure they are tided up.\n}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7836\n\n",
     "created_at": "2010-01-03T21:37:37Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Clean up the CRT_* functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7836",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @aghitza
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7836
 
 ---
 
-archive/issue_comments_067885.json:
+archive/issue_comments_067768.json:
 ```json
 {
     "body": "Applies to 4.3 + patches at #7595",
     "created_at": "2010-01-04T17:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67885",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67768",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -59,15 +58,15 @@ Applies to 4.3 + patches at #7595
 
 ---
 
-archive/issue_comments_067886.json:
+archive/issue_comments_067769.json:
 ```json
 {
     "body": "Attachment [trac_7836-CRT.patch](tarball://root/attachments/some-uuid/ticket7836/trac_7836-CRT.patch) by @JohnCremona created at 2010-01-04 17:22:50\n\nThe attached patch is based on 4.3 + the patches at #7595.  I tested all files which use either CRT_list or CRT_basis.",
     "created_at": "2010-01-04T17:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67886",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67769",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -79,15 +78,15 @@ The attached patch is based on 4.3 + the patches at #7595.  I tested all files w
 
 ---
 
-archive/issue_comments_067887.json:
+archive/issue_comments_067770.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-04T17:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67887",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67770",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -97,15 +96,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_067888.json:
+archive/issue_comments_067771.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-01-04T17:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67888",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67771",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -115,15 +114,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_067889.json:
+archive/issue_comments_067772.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-04T18:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67889",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67772",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -133,15 +132,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_067890.json:
+archive/issue_comments_067773.json:
 ```json
 {
     "body": "I've tested in `sage/rings`, and the changes look good to me.",
     "created_at": "2010-01-04T18:37:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67890",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67773",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -151,15 +150,15 @@ I've tested in `sage/rings`, and the changes look good to me.
 
 ---
 
-archive/issue_comments_067891.json:
+archive/issue_comments_067774.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-13T05:22:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67891",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7836#issuecomment-67774",
+    "user": "https://github.com/rlmill"
 }
 ```
 

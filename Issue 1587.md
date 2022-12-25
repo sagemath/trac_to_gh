@@ -6,15 +6,14 @@ archive/issues_001587.json:
     "body": "Assignee: @williamstein\n\nCC:  alexghitza @jasongrout\n\nKeywords: matrix, kernel\n\n\n```\nsage: M = matrix([[1,2,3],[1,2,4],[2,4,7]])\nsage: M.kernel()\n\nFree module of degree 3 and rank 1 over Integer Ring\nEchelon basis matrix:\n[ 1  1 -1]\nsage: v = vector([1, 1, -1])\nsage: M*v\n(0, -1, -1)\nsage: v*M\n(0, 0, 0)\n```\n\n\nThis is not what most people expect.  Either the behavior should be changed so that it gives the kernel when acting on columns from the left or some documentation should make the current behavior very clear.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1587\n\n",
     "created_at": "2007-12-22T13:06:38Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "M.kernel() gives the kernel when M acts on row vectors from the right.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1587",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1587
 
 ---
 
-archive/issue_comments_010095.json:
+archive/issue_comments_010068.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2007-12-22T13:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10095",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10068",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_010096.json:
+archive/issue_comments_010069.json:
 ```json
 {
     "body": "\n```\nOn Dec 26, 2007 7:35 PM, Marshall Hampton <> wrote:\n>\n> At least in the United States, and I assume some other places as well,\n> matrices are usually considered to act from the left.  So the kernel\n> of a matrix A would be the set of vectors x such that Ax = 0.  In\n> sage, the kernel is given for the matrix acting from the right, i.e.\n> the set of vectors y such that yA  = 0.  If there is compelling\n> argument as to why that makes sense, I can live with it.\n\nThere are 2 or 3 reasons why things are as they are with matrix\nactions on vectors in Sage.\n\n1. In Sage vectors are row vectors:\nsage: v = vector([1,2,3])\nsage: v\n(1, 2, 3)              # <-- that's a row\n\nMatrices act naturally from the right on row vectors.\n\nNonetheless, we now allow both actions in Sage for convenience:\n\nsage: A = random_matrix(QQ,3)\nsage: A*v\n(5, -4, 3)\nsage: v*A\n(6, 3/2, -1)\n\n2. David Kohel and I made the decision about which side matrices would act on\nwhen I started Sage, i.e., back when Sage was called \"Software for Arithmetic\nGeometry Experimentation\", and the main goal of Sage was to provide a viable\nopen source alternative to the subset of Magma that David Kohel and I used, and\nto do so in a way that made it as easy as possible to port our code from Magma,\nand to go back and forth between Sage and Magma.\nIn Magma matrices act from the right, probably because vectors are row vectors\nand also because Magma is Australian.\n\n3. At some point I was about to change everything to matrices acting from the\nleft, and David Kohel stopped me.\n\nI don't know if that is a compelling enough reason.   A fourth reason is that\nchanging things now would be really really really hard, and would likely\nintroduce numerous bugs all over the place.\n\nA Magma example:\n-----\n\nsage: A = random_matrix(QQ,3)\nsage: v = vector([1,2,3])\nsage: v*A\n(9, 4, 3/2)\nsage: A*v\n(-5, 2, 15/2)\nsage: aa = magma(A)\nsage: vv = magma('VectorSpace(RationalField(),3)![1,2,3]')   # trac\n1605 -- I'm on it.\nsage: vv*aa\n(  9   4 3/2)\nsage: aa*vv\n... (boom!)\n<type 'exceptions.TypeError'>: Error evaluation Magma code.\nIN:_sage_[7] := _sage_[4] * _sage_[5];\nOUT:\n>> _sage_[7] := _sage_[4] * _sage_[5];\n                         ^\nRuntime error in '*': Arguments are not compatible\nArgument types given: AlgMatElt[FldRat], ModTupFldElt[FldRat]\n\n\n> But the\n> documentation for kernel() obscures, rather than clarifies, this\n> issue:\n>\n> Docstring:\n>\n>     Return the kernel of x.\n>\n>     EXAMPLES:\n>         sage: M = MatrixSpace(QQ,3,3)\n>         sage: A = M([1,2,3,4,5,6,7,8,9])\n>         sage: kernel(A)\n>         Vector space of degree 3 and dimension 1 over Rational Field\n>         Basis matrix:\n>         [ 1 -2  1]\n>\n> The problem with this example is that A is quite an unusual matrix:\n> its left-kernel is equal to its right-kernel.  I recommend that a non-\n> square example be given that makes the current behavior clearer.\n\nGood idea.  Please create a trac ticket, then put in some examples.\nYou'll modify the file\n   sage/matrix/matrix_rational_dense.pyx\nPlease put in a bunch (i.e., maybe 4 or 5) of examples to illustrate all\nkinds of things, including edge cases (0 by n or n by 0 matrices,\ndenominators, etc.).\n\n```\n",
     "created_at": "2007-12-27T04:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10096",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10069",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -183,15 +182,15 @@ denominators, etc.).
 
 ---
 
-archive/issue_comments_010097.json:
+archive/issue_comments_010070.json:
 ```json
 {
     "body": "I believe this has been fixes by introducing the right and left kernel. \n\nAlex: If you agree please close the ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-11T12:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10097",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10070",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -207,15 +206,15 @@ Michael
 
 ---
 
-archive/issue_comments_010098.json:
+archive/issue_comments_010071.json:
 ```json
 {
     "body": "Yes, this is in much better shape now, thanks to #2542.\n\n(And I get to close a ticket, how exciting! :)",
     "created_at": "2008-10-11T12:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10098",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10071",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -227,15 +226,15 @@ Yes, this is in much better shape now, thanks to #2542.
 
 ---
 
-archive/issue_comments_010099.json:
+archive/issue_comments_010072.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-11T12:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10099",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10072",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -245,15 +244,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_010100.json:
+archive/issue_comments_010073.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-11-30T20:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10100",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10073",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -263,15 +262,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_010101.json:
+archive/issue_comments_010074.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-11-30T20:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10101",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10074",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -281,15 +280,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_010102.json:
+archive/issue_comments_010075.json:
 ```json
 {
     "body": "The documentation for kernel? is still wrong.",
     "created_at": "2008-11-30T20:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10102",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10075",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -299,15 +298,15 @@ The documentation for kernel? is still wrong.
 
 ---
 
-archive/issue_comments_010103.json:
+archive/issue_comments_010076.json:
 ```json
 {
     "body": "If it's all right, wstein, I'd like to make this part of my linear algebra overhaul over Christmas break, so I'm accepting this ticket.",
     "created_at": "2008-12-13T16:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10103",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10076",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -317,15 +316,15 @@ If it's all right, wstein, I'd like to make this part of my linear algebra overh
 
 ---
 
-archive/issue_comments_010104.json:
+archive/issue_comments_010077.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-12-13T16:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10104",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10077",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -335,15 +334,15 @@ Changing assignee from @williamstein to @jasongrout.
 
 ---
 
-archive/issue_comments_010105.json:
+archive/issue_comments_010078.json:
 ```json
 {
     "body": "Changing status from reopened to new.",
     "created_at": "2008-12-13T16:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10105",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10078",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -353,15 +352,15 @@ Changing status from reopened to new.
 
 ---
 
-archive/issue_comments_010106.json:
+archive/issue_comments_010079.json:
 ```json
 {
     "body": "If you're doing a linear algebra overhaul, please see ticket #5009 for another left/right issue, and see #5001 for another kernel issue.",
     "created_at": "2009-01-18T06:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10106",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10079",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -371,15 +370,15 @@ If you're doing a linear algebra overhaul, please see ticket #5009 for another l
 
 ---
 
-archive/issue_comments_010107.json:
+archive/issue_comments_010080.json:
 ```json
 {
     "body": "Adds documentation to the kernel-function and to the kernel-method of rational dense matrices",
     "created_at": "2009-01-23T21:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10107",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10080",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -389,15 +388,15 @@ Adds documentation to the kernel-function and to the kernel-method of rational d
 
 ---
 
-archive/issue_comments_010108.json:
+archive/issue_comments_010081.json:
 ```json
 {
     "body": "Attachment [kernel_doc.patch](tarball://root/attachments/some-uuid/ticket1587/kernel_doc.patch) by @simon-king-jena created at 2009-01-23 21:39:02\n\nI added some words and some examples (including corner cases) to the function `kernel` in `sage/misc/functional.py` and to the `kernel` method in `sage/matrix/matrix_rational_dense.py`. \n\nSince the examples of the `kernel` method for dense integer matrices and for sparse matrices are clear enough, I believe that my patch suffices to clearify the documentation of `kernel`.",
     "created_at": "2009-01-23T21:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10108",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10081",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -411,15 +410,15 @@ Since the examples of the `kernel` method for dense integer matrices and for spa
 
 ---
 
-archive/issue_comments_010109.json:
+archive/issue_comments_010082.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-01-24T15:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10109",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10082",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -429,15 +428,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_010110.json:
+archive/issue_comments_010083.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha2.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-25T02:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10110",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10083",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -451,15 +450,15 @@ Michael
 
 ---
 
-archive/issue_comments_010111.json:
+archive/issue_comments_010084.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-25T02:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1587",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10111",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1587#issuecomment-10084",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

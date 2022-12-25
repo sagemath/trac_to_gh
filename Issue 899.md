@@ -6,7 +6,7 @@ archive/issues_000899.json:
     "body": "Assignee: @wdjoyner\n\nThe installation manual says\n\n\n```\nOn a newly installed Ubuntu system, you can install the above\ncommands as follows:\n\n sudo apt-get install gcc-4.0-base\n sudo apt-get install make\n sudo apt-get install m4\n sudo apt-get install bison\n sudo apt-get install flex\n sudo apt-get install tar\n sudo apt-get install perl\n sudo apt-get install binutils\n sudo apt-get install gcc\n sudo apt-get install libstdc++6-dev\n sudo apt-get install g++\n```\n\n\nI think this should be corrected (changes on 2 lines) to say\n\n\n```\nOn a newly installed Ubuntu system, you can install the above\ncommands as follows:\n\n sudo apt-get install gcc-4.2-base      # or the latest version available\n sudo apt-get install make\n sudo apt-get install m4\n sudo apt-get install bison\n sudo apt-get install flex\n sudo apt-get install tar\n sudo apt-get install perl\n sudo apt-get install binutils\n sudo apt-get install libstdc++6-dev\n sudo apt-get install g++\n```\n\n\nIn fact, in 7.10 \"sudo apt-get install gcc-4.0-base\" yields\n\"E: Package gcc-4.0-base has no installation candidate\"\nand \"sudo apt-get install gcc\" is redundant.\n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/inst.tex.hg\n\nIssue created by migration from https://trac.sagemath.org/ticket/899\n\n",
     "created_at": "2007-10-14T21:02:10Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000899.json:
     "title": "minor error in inst.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/899",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @wdjoyner
@@ -75,15 +75,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/899
 
 ---
 
-archive/issue_comments_005529.json:
+archive/issue_comments_005511.json:
 ```json
 {
     "body": "inst.tex.hg is a bundle against hg_sage. You accidently did hg_sage.send('...') instead of hg_doc.send('...'). Please create a bundle against the docs.",
     "created_at": "2007-10-20T21:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/899",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/899#issuecomment-5529",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/899#issuecomment-5511",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -93,15 +93,15 @@ inst.tex.hg is a bundle against hg_sage. You accidently did hg_sage.send('...') 
 
 ---
 
-archive/issue_comments_005530.json:
+archive/issue_comments_005512.json:
 ```json
 {
     "body": "I posted a new patch to\nhttp://sage.math.washington.edu/home/wdj/patches/inst.tex.hg",
     "created_at": "2007-10-21T00:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/899",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/899#issuecomment-5530",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/899#issuecomment-5512",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -112,15 +112,15 @@ http://sage.math.washington.edu/home/wdj/patches/inst.tex.hg
 
 ---
 
-archive/issue_comments_005531.json:
+archive/issue_comments_005513.json:
 ```json
 {
     "body": "This bundle is empty.  It doesn't contain anything that isn't already released or in the master hg_doc repo.",
     "created_at": "2007-10-21T01:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/899",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/899#issuecomment-5531",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/899#issuecomment-5513",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -130,15 +130,15 @@ This bundle is empty.  It doesn't contain anything that isn't already released o
 
 ---
 
-archive/issue_comments_005532.json:
+archive/issue_comments_005514.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-27T04:54:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/899",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/899#issuecomment-5532",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/899#issuecomment-5514",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

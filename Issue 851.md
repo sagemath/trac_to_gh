@@ -6,15 +6,13 @@ archive/issues_000851.json:
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nHere's a function to compute the line graph of a graph.\n\nIssue created by migration from https://trac.sagemath.org/ticket/851\n\n",
     "created_at": "2007-10-11T21:51:36Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] graphs: line_graph function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/851",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/851
 
 ---
 
-archive/issue_comments_005257.json:
+archive/issue_comments_005241.json:
 ```json
 {
     "body": "Attachment [line_graph.patch](tarball://root/attachments/some-uuid/ticket851/line_graph.patch) by @jasongrout created at 2007-10-11 21:51:44",
     "created_at": "2007-10-11T21:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/851",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/851#issuecomment-5257",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/851#issuecomment-5241",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -49,15 +47,15 @@ Attachment [line_graph.patch](tarball://root/attachments/some-uuid/ticket851/lin
 
 ---
 
-archive/issue_comments_005258.json:
+archive/issue_comments_005242.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-13T07:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/851",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/851#issuecomment-5258",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/851#issuecomment-5242",
+    "user": "https://github.com/williamstein"
 }
 ```
 

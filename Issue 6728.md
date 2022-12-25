@@ -6,15 +6,14 @@ archive/issues_006728.json:
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6728\n\n",
     "created_at": "2009-08-10T12:21:27Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "spell-check all modules under sage/quadratic_forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6728",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6728
 
 ---
 
-archive/issue_comments_055174.json:
+archive/issue_comments_055072.json:
 ```json
 {
     "body": "Attachment [trac_6728-spell-check-quadform.patch](tarball://root/attachments/some-uuid/ticket6728/trac_6728-spell-check-quadform.patch) by mvngu created at 2009-08-11 16:25:27\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-11T16:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6728#issuecomment-55174",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6728#issuecomment-55072",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -49,15 +48,15 @@ based on Sage 4.1.1.rc2
 
 ---
 
-archive/issue_comments_055175.json:
+archive/issue_comments_055073.json:
 ```json
 {
     "body": "positive review, and only doc-text and comments touched by this patch.",
     "created_at": "2009-08-14T10:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6728#issuecomment-55175",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/6728#issuecomment-55073",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -67,15 +66,15 @@ positive review, and only doc-text and comments touched by this patch.
 
 ---
 
-archive/issue_comments_055176.json:
+archive/issue_comments_055074.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-08-14T11:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6728#issuecomment-55176",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6728#issuecomment-55074",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

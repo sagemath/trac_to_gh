@@ -6,15 +6,13 @@ archive/issues_002142.json:
     "body": "Assignee: @williamstein\n\nIf you multiply two subdivided matrices so that the product can be thought of as a product of partitioned matrices, it would be nice if the resulting matrix had the natural subdivision introduced by thinking of the product as a block matrix multiplication.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2142\n\n",
     "created_at": "2008-02-12T04:16:22Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "product of two subdivided matrices should yield a subdivided matrix if it makes sense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2142",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2142
 
 ---
 
-archive/issue_comments_014043.json:
+archive/issue_comments_014012.json:
 ```json
 {
     "body": "Additionally, copying a matrix probably ought to copy the subdivisions.",
     "created_at": "2008-02-12T21:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14043",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14012",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -47,15 +45,15 @@ Additionally, copying a matrix probably ought to copy the subdivisions.
 
 ---
 
-archive/issue_comments_014044.json:
+archive/issue_comments_014013.json:
 ```json
 {
     "body": "#2255 has been marked a duplicate of this: transpose should maintain subdivision info.",
     "created_at": "2008-03-06T08:37:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14044",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14013",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -65,15 +63,15 @@ archive/issue_comments_014044.json:
 
 ---
 
-archive/issue_comments_014045.json:
+archive/issue_comments_014014.json:
 ```json
 {
     "body": "Attachment [2142-subdivisions.patch](tarball://root/attachments/some-uuid/ticket2142/2142-subdivisions.patch) by @robertwb created at 2008-03-06 20:00:28",
     "created_at": "2008-03-06T20:00:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14045",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14014",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -83,15 +81,15 @@ Attachment [2142-subdivisions.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_014046.json:
+archive/issue_comments_014015.json:
 ```json
 {
     "body": "Great docstrings, great patch.  Apply!",
     "created_at": "2008-03-06T20:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14046",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14015",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -101,15 +99,15 @@ Great docstrings, great patch.  Apply!
 
 ---
 
-archive/issue_comments_014047.json:
+archive/issue_comments_014016.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-07T03:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14047",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14016",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +117,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014048.json:
+archive/issue_comments_014017.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc3",
     "created_at": "2008-03-07T03:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14048",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14017",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +135,15 @@ Merged in Sage 2.10.3.rc3
 
 ---
 
-archive/issue_comments_014049.json:
+archive/issue_comments_014018.json:
 ```json
 {
     "body": "Wow, this looks like great work!  Thanks Robert!",
     "created_at": "2008-03-07T03:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14049",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2142#issuecomment-14018",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

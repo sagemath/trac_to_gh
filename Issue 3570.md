@@ -6,15 +6,14 @@ archive/issues_003570.json:
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3570\n\n",
     "created_at": "2008-07-06T20:15:50Z",
     "labels": [
-        "misc",
-        "minor",
-        "enhancement"
+        "component: misc",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "more import improvements to db.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3570",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: cwitty
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3570
 
 ---
 
-archive/issue_comments_025220.json:
+archive/issue_comments_025170.json:
 ```json
 {
     "body": "Attachment [3570.patch](tarball://root/attachments/some-uuid/ticket3570/3570.patch) by @mwhansen created at 2008-07-06 20:17:39\n\nI checked the source tree and db.Storage is never used anywhere.",
     "created_at": "2008-07-06T20:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3570#issuecomment-25220",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3570#issuecomment-25170",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ I checked the source tree and db.Storage is never used anywhere.
 
 ---
 
-archive/issue_comments_025221.json:
+archive/issue_comments_025171.json:
 ```json
 {
     "body": "BEFORE (on osx with caching):\n\n```\nteragon-2:misc was$ sage -startuptime|grep db\n   pdb: 0.010 (misc)\n    cmd: 0.001 (pdb)\n    bdb: 0.001 (pdb)\n    repr: 0.003 (pdb)\n    pprint: 0.003 (pdb)\n    traceback: 0.001 (pdb)\n         IPython.iplib: 0.025 (pydb)\n         IPython.ipmaker: 0.001 (pydb)\n       sage.databases.db: 0.132 (sage.databases.conway)\n        BTrees.OOBTree: 0.123 (sage.databases.db)\n        ZODB.FileStorage.FileStorage: 0.008 (sage.databases.db)\n        sage.databases.compressed_storage: 0.000 (sage.databases.db)\n      sage.misc.db: 0.000 (modform.all)\n       sage.databases.db_class_polynomials: 0.001 (ssmod)\n       sage.databases.db_modular_polynomials: 0.000 (ssmod)\n       dbapi2: 0.021 (sqlite3)\n        datetime: 0.002 (dbapi2)\n        _sqlite3: 0.018 (dbapi2)\n      db_modular_polynomials: 0.000 (sage.databases.all)\n      db_class_polynomials: 0.000 (sage.databases.all)\n0.132 sage.databases.db (sage.databases.conway)\n0.123 BTrees.OOBTree (sage.databases.db)\n```\n\n\nAFTER:\n\n```\n   pdb: 0.010 (misc)\n    cmd: 0.001 (pdb)\n    bdb: 0.001 (pdb)\n    repr: 0.003 (pdb)\n    pprint: 0.003 (pdb)\n    traceback: 0.001 (pdb)\n         codeop: 0.001 (pydb)\n         new: 0.001 (pydb)\n         sets: 0.004 (pydb)\n         IPython.wildcard: 0.000 (pydb)\n         IPython.Extensions: 0.003 (pydb)\n         IPython.FakeModule: 0.000 (pydb)\n         IPython.Logger: 0.000 (pydb)\n         IPython.Magic: 0.007 (pydb)\n         IPython.Prompts: 0.001 (pydb)\n         IPython.background_jobs: 0.001 (pydb)\n         IPython.usage: 0.000 (pydb)\n         IPython.strdispatch: 0.001 (pydb)\n         IPython.history: 0.000 (pydb)\n         IPython.prefilter: 0.003 (pydb)\n         IPython.shadowns: 0.000 (pydb)\n         IPython.ipmaker: 0.001 (pydb)\n       sage.databases.db: 0.005 (sage.databases.conway)\n        sage.databases.compressed_storage: 0.001 (sage.databases.db)\n        logging: 0.004 (sage.databases.db)\n      sage.misc.db: 0.000 (modform.all)\n       sage.databases.db_class_polynomials: 0.000 (ssmod)\n       sage.databases.db_modular_polynomials: 0.000 (ssmod)\n       dbapi2: 0.020 (sqlite3)\n        datetime: 0.002 (dbapi2)\n        _sqlite3: 0.018 (dbapi2)\n      db_modular_polynomials: 0.000 (sage.databases.all)\n      db_class_polynomials: 0.000 (sage.databases.all)\n```\n\n\nw00t!  Positive review.",
     "created_at": "2008-07-06T20:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3570#issuecomment-25221",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3570#issuecomment-25171",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -135,15 +134,15 @@ w00t!  Positive review.
 
 ---
 
-archive/issue_comments_025222.json:
+archive/issue_comments_025172.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-07T02:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3570#issuecomment-25222",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3570#issuecomment-25172",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -153,15 +152,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025223.json:
+archive/issue_comments_025173.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha2",
     "created_at": "2008-07-07T02:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3570#issuecomment-25223",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3570#issuecomment-25173",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_003560.json:
     "body": "Assignee: cwitty\n\nmake it import gnutls.connection\tand gnutls.errors only when needed.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3560\n\n",
     "created_at": "2008-07-06T08:28:29Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "optimize import of gnutls_socket_ssl.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3560",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -30,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3560
 
 ---
 
-archive/issue_comments_025163.json:
+archive/issue_comments_025113.json:
 ```json
 {
     "body": "Attachment [sage-3560-part2.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part2.patch) by @williamstein created at 2008-07-06 08:55:12",
     "created_at": "2008-07-06T08:55:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25163",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25113",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -48,15 +46,15 @@ Attachment [sage-3560-part2.patch](tarball://root/attachments/some-uuid/ticket35
 
 ---
 
-archive/issue_comments_025164.json:
+archive/issue_comments_025114.json:
 ```json
 {
     "body": "Attachment [sage-3560-part3.patch](tarball://root/attachments/some-uuid/ticket3560/sage-3560-part3.patch) by @williamstein created at 2008-07-06 09:09:32",
     "created_at": "2008-07-06T09:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25164",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25114",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -66,15 +64,15 @@ Attachment [sage-3560-part3.patch](tarball://root/attachments/some-uuid/ticket35
 
 ---
 
-archive/issue_comments_025165.json:
+archive/issue_comments_025115.json:
 ```json
 {
     "body": "Attachment [trac_3560.patch](tarball://root/attachments/some-uuid/ticket3560/trac_3560.patch) by @mwhansen created at 2008-07-06 09:23:39\n\nWorks for me.\n\nApply only trac_3560.patch.",
     "created_at": "2008-07-06T09:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25165",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25115",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -88,15 +86,15 @@ Apply only trac_3560.patch.
 
 ---
 
-archive/issue_comments_025166.json:
+archive/issue_comments_025116.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-06T09:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25166",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25116",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -106,15 +104,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025167.json:
+archive/issue_comments_025117.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha2",
     "created_at": "2008-07-06T09:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25167",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3560#issuecomment-25117",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

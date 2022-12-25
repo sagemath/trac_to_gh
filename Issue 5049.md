@@ -6,15 +6,14 @@ archive/issues_005049.json:
     "body": "Assignee: @williamstein\n\nIf you do\n\n```\nshow(mathematica('2/3'))\n```\n\n\nin the notebook, you get no output.  Since latex(mathematica(...)) works great, this is stupid. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5049\n\n",
     "created_at": "2009-01-21T12:07:18Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "show(mathematica('2/3')) doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5049",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5049
 
 ---
 
-archive/issue_comments_038477.json:
+archive/issue_comments_038404.json:
 ```json
 {
     "body": "This is because the show method is written to deal only with images:\n\n\n```\n    def show(self, filename=None, ImageSize=600):\n        \"\"\"\n        Show a mathematica plot in the Sage notebook.\n\n        EXAMPLES:\n            sage: P = mathematica('Plot[Sin[x],{x,-2Pi,4Pi}]')   # optional - mathematica\n            sage: show(P)                                        # optional - mathematica\n            sage: P.show(ImageSize=800)                          # optional - mathematica\n        \"\"\"\n        P = self._check_valid()\n        if filename is None:\n            filename = graphics_filename()\n        orig_dir = P.eval('Directory[]').strip()\n        P.chdir(os.path.abspath(\".\"))\n        s = 'Export[\"%s\", %s, ImageSize->%s]'%(filename, self.name(), ImageSize)\n        P.eval(s)\n        P.chdir(orig_dir)\n```\n",
     "created_at": "2009-01-21T18:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5049",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38477",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38404",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -76,15 +75,15 @@ This is because the show method is written to deal only with images:
 
 ---
 
-archive/issue_comments_038478.json:
+archive/issue_comments_038405.json:
 ```json
 {
     "body": "This was fixed by #5916.",
     "created_at": "2009-06-05T01:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5049",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38478",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38405",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -94,15 +93,15 @@ This was fixed by #5916.
 
 ---
 
-archive/issue_comments_038479.json:
+archive/issue_comments_038406.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-05T01:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5049",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38479",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5049#issuecomment-38406",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

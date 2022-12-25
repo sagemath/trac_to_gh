@@ -6,15 +6,14 @@ archive/issues_003054.json:
     "body": "Assignee: @rlmill\n\nThis means that changing the position of nodes in the copy will affect the original.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3054\n\n",
     "created_at": "2008-04-29T20:40:10Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "copying a graph doesn't copy _pos or _boundary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3054",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3054
 
 ---
 
-archive/issue_comments_021085.json:
+archive/issue_comments_021042.json:
 ```json
 {
     "body": "Attachment [trac-3054-graph-copy.patch](tarball://root/attachments/some-uuid/ticket3054/trac-3054-graph-copy.patch) by @jasongrout created at 2008-04-29 21:09:03\n\nWith #3054 and #3055 applied, doctests pass in the graphs/ directory.",
     "created_at": "2008-04-29T21:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3054",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21085",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21042",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -49,15 +48,15 @@ With #3054 and #3055 applied, doctests pass in the graphs/ directory.
 
 ---
 
-archive/issue_comments_021086.json:
+archive/issue_comments_021043.json:
 ```json
 {
     "body": "Have not run doctests, but I support this fix.",
     "created_at": "2008-04-29T21:43:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3054",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21086",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21043",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -67,15 +66,15 @@ Have not run doctests, but I support this fix.
 
 ---
 
-archive/issue_comments_021087.json:
+archive/issue_comments_021044.json:
 ```json
 {
     "body": "#3054 and #3055 applied to my current merge tree doctest clean. So I am considering this a positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-30T02:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3054",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21087",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21044",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Michael
 
 ---
 
-archive/issue_comments_021088.json:
+archive/issue_comments_021045.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-30T02:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3054",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21088",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21045",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +106,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021089.json:
+archive/issue_comments_021046.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.alpha1",
     "created_at": "2008-04-30T02:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3054",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21089",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3054#issuecomment-21046",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

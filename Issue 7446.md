@@ -6,7 +6,7 @@ archive/issues_007446.json:
     "body": "Assignee: boothby\n\nThere was one tiny problem in sagenb-0.4.2, which Mitesh Patel found.  This spkg fixes that.  \n\n  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7446\n\n",
     "created_at": "2009-11-12T17:24:47Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007446.json:
     "title": "include sagenb 0.4.3 in sage-4.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7446",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7446
 
 ---
 
-archive/issue_comments_062683.json:
+archive/issue_comments_062568.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-12T18:25:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62683",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62568",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -49,15 +49,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062684.json:
+archive/issue_comments_062569.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-12T18:25:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62684",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62569",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062685.json:
+archive/issue_comments_062570.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-13T04:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62685",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7446#issuecomment-62570",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

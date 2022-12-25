@@ -6,15 +6,14 @@ archive/issues_009094.json:
     "body": "Assignee: @aghitza\n\nCC:  @koffie @pjbruin @mstreng minz\n\nDepends on #9093 for correctness.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9094\n\n",
     "created_at": "2010-05-30T08:45:39Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "is_square and sqrt for fraction fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9094",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @aghitza
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9094
 
 ---
 
-archive/issue_comments_084462.json:
+archive/issue_comments_084326.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-30T09:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84462",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84326",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_084463.json:
+archive/issue_comments_084327.json:
 ```json
 {
     "body": "Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/9094-sqrt.patch) by @robertwb created at 2010-05-30 09:28:20",
     "created_at": "2010-05-30T09:28:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84463",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84327",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -67,15 +66,15 @@ Attachment [9094-sqrt.patch](tarball://root/attachments/some-uuid/ticket9094/909
 
 ---
 
-archive/issue_comments_084464.json:
+archive/issue_comments_084328.json:
 ```json
 {
     "body": "Looks good (and useful).  Patch applies fine to 4.4.3.  I tested all sage/rings and had one failure (in a new doctest, on 64-bit ubuntu):\n\n```\nFile \"/storage/jec/sage-4.4.3/devel/sage-tests/sage/rings/polynomial/polynomial_element.pyx\", line 1262:\n    sage: (9 * f^10 * g^4).sqrt() == 3 * f^5 * g^2\nExpected:\n    True\nGot:\n    False\n```\n\nI have never been happy about doctests using random elements, however deterministic they are supposed to be.\n\nI would have tested for self==0 at the start of the sqrt function, but that case will be caught quickly anyway, so no problem.\n\nI have been working on a patch to add both all= and extend= parameters to the sqrt function for AA and QQbar, having found how awkward it is when the parameters are not uniform across types.  Would it be worth adding an extend= parameter here, even if a NotImplementedError is raised when it is needed (i.e. for sqrt of a non-square when extend=True)?\n\nSo: needs work because of the doctest failure;  up to you whether to do the extend= thing.",
     "created_at": "2010-06-06T19:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84464",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84328",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -102,15 +101,15 @@ So: needs work because of the doctest failure;  up to you whether to do the exte
 
 ---
 
-archive/issue_comments_084465.json:
+archive/issue_comments_084329.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-06T19:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84465",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84329",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -120,15 +119,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_084466.json:
+archive/issue_comments_084330.json:
 ```json
 {
     "body": "is_square and sqrt can be done generally for fraction fields, given the corresponding functions for the base ring:\n\n\n```\nis_square (a / b) = is_square (a * b)\nsqrt (a / b) = sqrt (a * b) / b\n```\n",
     "created_at": "2010-07-07T09:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84466",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84330",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -145,15 +144,15 @@ sqrt (a / b) = sqrt (a * b) / b
 
 ---
 
-archive/issue_comments_084467.json:
+archive/issue_comments_084331.json:
 ```json
 {
     "body": "On sage days 23 we discussed how to make this faster by avoiding factoring in polynomial rings. We are currently implementing this together with the remark of pbruin. When finnished the patch will be added to 9054 because it also fixes some other bugs on that ticket.",
     "created_at": "2010-07-07T14:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84467",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84331",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -163,15 +162,15 @@ On sage days 23 we discussed how to make this faster by avoiding factoring in po
 
 ---
 
-archive/issue_comments_084468.json:
+archive/issue_comments_084332.json:
 ```json
 {
     "body": "This patch also leaks memory, probably because of bug #9129\n\n\n```\nt=get_memory_usage()\nPr.<x>=ZZ[]\nfor i in range(500):\n    C=((x^2+1)*x+1)\n    B=C^2\n    print \"memusage\", get_memory_usage(t)\n    time x=B.sqrt()\n```\n\nexecuting the above gives:\n\n```\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.00 s, Wall: 0.00 s\nmemusage 0.0\nTime: CPU 0.02 s, Wall: 0.02 s\nmemusage 1.20703125\nTime: CPU 0.18 s, Wall: 0.19 s\nmemusage 23.79296875\nTime: CPU 2.33 s, Wall: 2.36 s\nmemusage 148.12890625\nTime: CPU 31.70 s, Wall: 32.24 s\nmemusage 1534.01171875\n^C\n^C\n```\n\n\nPs. if you want to check this, please don't let the loop run as long as I did ;). It might make your computer on the edge of crashing",
     "created_at": "2010-07-08T18:12:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84468",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84332",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -219,15 +218,15 @@ Ps. if you want to check this, please don't let the loop run as long as I did ;)
 
 ---
 
-archive/issue_comments_084469.json:
+archive/issue_comments_084333.json:
 ```json
 {
     "body": "I just added a patch which should fix this also. It does it in a slightly different way. The sqrt() functions just are using the is_square(root=True) functionality (one should not have two square root finding algorithms in parralel). Also the sqrt() function has now the optional parameter extend. The is_square() function now also uses the trick mentioned by Peter the Bruin which is very general as it should be in this general base class.\n\nThe patch should be installed aplied to 4.4.4 instead of the other patch.",
     "created_at": "2010-07-17T10:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84469",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84333",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -239,15 +238,15 @@ The patch should be installed aplied to 4.4.4 instead of the other patch.
 
 ---
 
-archive/issue_comments_084470.json:
+archive/issue_comments_084334.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-17T10:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84470",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84334",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -257,15 +256,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_084471.json:
+archive/issue_comments_084335.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-07-17T11:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84471",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84335",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -275,15 +274,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_084472.json:
+archive/issue_comments_084336.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-07-17T11:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84472",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84336",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -293,15 +292,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_084473.json:
+archive/issue_comments_084337.json:
 ```json
 {
     "body": "Looks good. No time for a complete review right now, but here are some remarks:\n\n* Check spelling of your documentation, you probably don't mean \"wether\" (=castrated sheep), but \"whether\" (spell checker doesn't help that much here). \"Requiered\" has one \"e\" too much.\n\n* Illustrate is_square(root = True) for the user by providing a square example and a non-square example.\n\n* The internal variable name ``is_sqrt`` is confusing, remove the \"t\".\n\n* You write \"This code is quite general, it could even be implemented for all integral domains as soon as they have the is_square(root=True) option\", don't you mean \"This code is quite general, it works for all integral domains that have the is_square(root = True) option\"?\n\n* I think sqrt(self, extend = True, all = False, name=None ) should have tests of all combinations of options and squareness, i.e: sq/non-sq, extend True/False, all True/False = 2*2*2 = at least 8 examples. The extend=True for a non-square should also have examples with name=None and name=something.\n\n* Perhaps include examples for more base fields?\n\n* consider adding a few more spaces for readability thougout, e.g. around \"=\"\n\n* \"if root==True:\", why not write \"if root:\"?",
     "created_at": "2010-07-17T11:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84473",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84337",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -327,15 +326,15 @@ Looks good. No time for a complete review right now, but here are some remarks:
 
 ---
 
-archive/issue_comments_084474.json:
+archive/issue_comments_084338.json:
 ```json
 {
     "body": "I changed all you asked for except for \"Perhaps include examples for more base fields?\". Time for another review :)",
     "created_at": "2010-07-17T14:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84474",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84338",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -345,15 +344,15 @@ I changed all you asked for except for "Perhaps include examples for more base f
 
 ---
 
-archive/issue_comments_084475.json:
+archive/issue_comments_084339.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-17T14:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84475",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84339",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -363,15 +362,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_084476.json:
+archive/issue_comments_084340.json:
 ```json
 {
     "body": "fraction_field_element.pyx, line 326 \"_parent\" --> \"parent()\" (don't use a hidden variable, use the function that returns its value)\n\npolynomial_ring_element.pyx, line 1306, \"#This code is quite general, it works for all integral domains that have the is_square(root = True) option\"\n- This comment is confusing: does \"all integral domains that...\" refer to self.parent() or to self.parent().base_ring()? Why not just remove this comment?\n- Are you proposing to move the code to are more general class of ring elements? Then why not just do that? Right now, you have the same code for fraction fields and polynomial rings, but you could just put it in a more general class and add a test if self.parent() is a domain and \"self.is_square()\" exists and has a parameter \"root\". (You don't have to do this to get a positive review, but you can think about it and/or try it)\n\n(for both files:) It is helpful for others if the documentation of sqrt says how square roots are computed, i.e. says \"Calls is_square(root = True) to find the square root\". This can be done in an \"ALGORITHM:\" block. \n\nBuild the documentation using \"sage -docbuild reference html\" to test the following yourself:\n- the input, output, and examples blocks of lines 1260, 1265, and 1269 of sqrt for Polynomial don't indent and don't format nicely. All this needs is an extra empty line after the mentioned lines. See for example the is_square documentation.\n- same for the input and output blocks of sqrt for fraction field elements on lines 336 and 341.",
     "created_at": "2010-07-18T09:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84476",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84340",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -391,15 +390,15 @@ Build the documentation using "sage -docbuild reference html" to test the follow
 
 ---
 
-archive/issue_comments_084477.json:
+archive/issue_comments_084341.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-07-18T09:48:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84477",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84341",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -409,15 +408,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_084478.json:
+archive/issue_comments_084342.json:
 ```json
 {
     "body": "The \"This code is quite general\" comment did what it had to do. I put it there in the hope that someone would come with a suggestion like you did. I had the feeling that the dubble code could be removed in a nice and general way, but I didn't know how. So by what you say I should just move the code to a more general class and then it will also work for fraction fields and polynomial rings (and possibly even more rings). What would be this more general class and where to find it?\n\nsage/rings/ring_element.py has only one line of code:\n\n\n```\n\nfrom sage.structure.element import !RingElement, is_RingElement\n\n```\n\n\nSo should I add it to the\u00a0RingElement\u00a0class thats imported from\u00a0sage.structure.element?",
     "created_at": "2010-07-18T11:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84478",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84342",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -439,15 +438,15 @@ So should I add it to the RingElement class thats imported from sage.structur
 
 ---
 
-archive/issue_comments_084479.json:
+archive/issue_comments_084343.json:
 ```json
 {
     "body": "In the sage reference manual [http://www.sagemath.org/doc/reference/](http://www.sagemath.org/doc/reference/), you can search for a class and then click on its base classes. It appears that the least general common base class is sage.structure.element.CommutativeRingElement, which in turn extends sage.structure.element.RingElement. As your implementation is for domains only, you should put it in CommutativeRingElement.\n\nYou can start your code by checking hasattr(self, 'is_square'). I don't know how to check if the function self.is_square has a keyword argument 'root' other than using try. You should try to catch \"TypeError: is_square() got an unexpected keyword argument 'root'\" and raise NotImplementedError, \"Please implement is_square with option 'root = True' for objects of type %s\" % type(self)\n\nMost importantly, check if there is no subclass of CommutativeRingElement that implements is_square by calling sqrt ;p",
     "created_at": "2010-07-18T13:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84479",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84343",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -461,15 +460,15 @@ Most importantly, check if there is no subclass of CommutativeRingElement that i
 
 ---
 
-archive/issue_comments_084480.json:
+archive/issue_comments_084344.json:
 ```json
 {
     "body": "actually, instead of CommutativeRingElement, I guess RingElement is fine as well, as long as all = True raises a NotImplementedError",
     "created_at": "2010-07-18T13:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84480",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84344",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -479,15 +478,15 @@ actually, instead of CommutativeRingElement, I guess RingElement is fine as well
 
 ---
 
-archive/issue_comments_084481.json:
+archive/issue_comments_084345.json:
 ```json
 {
     "body": "Catching a specific\u00a0TypeError\u00a0isn't possible apparently.\n\n\n```\n\ntry:\n\n\u00a0\u00a0 \u00a0raise !TypeError(\"sqrt() got an unexpected keyword argument 'root'\")\n\nexcept !TypeError(\"sqrt() got an unexpected keyword argument 'root'\"):\n\n\u00a0\u00a0 \u00a0print \"lol\"\n\n```\n\n\ngives as output\n\n\n```\n\nTraceback (click to the left of this block for traceback)\n...\nTypeError: sqrt() got an unexpected keyword argument 'root'\n` ||\n|| `\n\n```\n\n\nbut a new version is on it's way wich just catches all typeerrors",
     "created_at": "2010-07-18T19:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84481",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84345",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -527,15 +526,15 @@ but a new version is on it's way wich just catches all typeerrors
 
 ---
 
-archive/issue_comments_084482.json:
+archive/issue_comments_084346.json:
 ```json
 {
     "body": "Your\u00a0e.blablablah remark worked so I do the catching in that way now.\u00a0\n\nI decided to go for the commutative ring element class and I already implemented it there. If you think general ring elements is nicer you can put it there if you want (shouldn't be to much work, just some extra checking needed I guess). Upload comming in a few minutes.",
     "created_at": "2010-07-18T20:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84482",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84346",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -547,15 +546,15 @@ I decided to go for the commutative ring element class and I already implemented
 
 ---
 
-archive/issue_comments_084483.json:
+archive/issue_comments_084347.json:
 ```json
 {
     "body": "Hej Marco,\n\nI was already finnished when I read your last comment. Your suggestion last suggestion makes it slightly faster I guess. But I think the code is ok like it is now. I'm leaving for a holliday tomorrow and still got stuff to do, so I hope the patch is ok as it is now and else it will have to wait.",
     "created_at": "2010-07-18T20:19:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84483",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84347",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -567,15 +566,15 @@ I was already finnished when I read your last comment. Your suggestion last sugg
 
 ---
 
-archive/issue_comments_084484.json:
+archive/issue_comments_084348.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-18T20:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84484",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84348",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -585,15 +584,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_084485.json:
+archive/issue_comments_084349.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-07-20T23:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84485",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84349",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -603,15 +602,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_084486.json:
+archive/issue_comments_084350.json:
 ```json
 {
     "body": "On line 1903 you check if the message is \"is_square() got an unexpected keyword argument 'root'\", but you should also check for \"is_square() takes no keyword arguments\", which happens for 5.sqrt(root = True). This behaviour should have a good doctest.\n\nAfter catching a ValueError, line 1904 says:\n\nraise NotImplementedError(\"Please implement is_square with option 'root = True' for %s\" % type(self))\n\nThe ValueError may have been raised by another object than self. For example, if self has an is_square(root = True), but calls b.is_square(root = root) of another object b. In that case, this message is misleading: it says that self.is_square(root = True) should be implemented, while it is already well implemented and it is in fact b.is_square(root = True) that should be implemented. You can replace the message by the following:\n\nraise NotImplementedError(\"Please implement sqrt() for objects of type %s\" % type(self))\n\nCan you get examples where these errors are raised and add them to the doctests?\n\nAlternatively, you can either\n\n* make sure \"is_square\" exists for CommutativeRingElement and \"is_square\" has a keyword argument \"root\" for every subclass of CommutativeRingElement (you'll be writing NotImplementedError a lot :) and should check for tickets that implement the root = True behaviour). This seems to be a lot more stable than the current approach.\n\n* or bring back the double-code version with the same sqrt() function in two distinct classes.",
     "created_at": "2010-07-20T23:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84486",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84350",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -637,15 +636,15 @@ Alternatively, you can either
 
 ---
 
-archive/issue_comments_084487.json:
+archive/issue_comments_084351.json:
 ```json
 {
     "body": "Are you sure you did a complete doctest of sage before submitting the patch?\n\n```\nsage: QuadraticField(2, 'a')\nNotImplementedError: Please implement is_square with option 'root = True' for <type 'sage.rings.real_lazy.LazyWrapper'>\n```\n\nThe problem is in RLF(2).sqrt()\n\n```\nsage: RLF(2).sqrt()\nNotImplementedError: Please implement is_square with option 'root = True' for <type 'sage.rings.real_lazy.LazyWrapper'>\n```\n\n\nRLF(2) is a LazyWrapper, which doesn't have a sqrt attribute, but simulates one via __getattr__ (line 631 of sage/rings/real_lazy.pyx). But LazyWrapper extends (via some other classes) CommutativeRingElement, so that now it does have an attribute sqrt (your sqrt function), which means the __getattr__ of LazyWrapper doesn't get a chance. Your sqrt function then complains about the non-existence of is_square with root = 'True'.\n\nYou can probably fix this by making a sqrt function for LazyWrapper that calls LazyNamedUnop(self._parent, self, 'sqrt'). Or you can follow your own advice: \"implement is_square with option 'root = True' for ....\". Maybe there is a better way, you can also ask one of the mailing lists. Alternatively, you can always go back to your double code.\n\nAnyway, every time before submitting a patch, do everything that a reviewer would do, including a full doctest of all of Sage:\n[http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch](http://www.sagemath.org/doc/developer/walk_through.html#reviewing-a-patch)\nOn a multi-core machine, you can speed up the doctest by using\n`./sage -tp 4 -long devel/sage-main/`\nwhere 4 is replaced by the number of cores you are willing to use.",
     "created_at": "2010-07-22T12:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84487",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84351",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -678,15 +677,15 @@ where 4 is replaced by the number of cores you are willing to use.
 
 ---
 
-archive/issue_comments_084488.json:
+archive/issue_comments_084352.json:
 ```json
 {
     "body": "Attachment [trac_9094-sqrt-mderickx.2.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.2.patch) by @koffie created at 2011-03-22 01:09:54",
     "created_at": "2011-03-22T01:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84488",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84352",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -696,15 +695,15 @@ Attachment [trac_9094-sqrt-mderickx.2.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_084489.json:
+archive/issue_comments_084353.json:
 ```json
 {
     "body": "Only apply: trac_9094-sqrt-mderickx.2.patch",
     "created_at": "2011-03-22T01:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84489",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84353",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -714,15 +713,15 @@ Only apply: trac_9094-sqrt-mderickx.2.patch
 
 ---
 
-archive/issue_comments_084490.json:
+archive/issue_comments_084354.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-03-22T01:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84490",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84354",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -732,15 +731,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_084491.json:
+archive/issue_comments_084355.json:
 ```json
 {
     "body": "Since you told me you're going to rewrite the patch, I'm holding off on doctesting. Three short comments:\n\nin structure/element.pyx\n\n\n1) Line 1920 (): true --> True\n\n\n2) Line 2002 (): all=False = all=True\n\n3) The memory leak (from comment [#9](http://trac.sagemath.org/sage_trac/ticket/9094#comment:9)) is no leak after all. Note that you replace x in each iteration by C. If one doesn't do that, memory usage in each iteration is 0.0. :)",
     "created_at": "2011-03-22T05:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84491",
-    "user": "minz"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84355",
+    "user": "https://trac.sagemath.org/admin/accounts/users/minz"
 }
 ```
 
@@ -760,15 +759,15 @@ in structure/element.pyx
 
 ---
 
-archive/issue_comments_084492.json:
+archive/issue_comments_084356.json:
 ```json
 {
     "body": "Changing assignee from @aghitza to minz.",
     "created_at": "2011-03-22T05:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84492",
-    "user": "minz"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84356",
+    "user": "https://trac.sagemath.org/admin/accounts/users/minz"
 }
 ```
 
@@ -778,15 +777,15 @@ Changing assignee from @aghitza to minz.
 
 ---
 
-archive/issue_comments_084493.json:
+archive/issue_comments_084357.json:
 ```json
 {
     "body": "Changing assignee from minz to @aghitza.",
     "created_at": "2011-03-22T05:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84493",
-    "user": "minz"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84357",
+    "user": "https://trac.sagemath.org/admin/accounts/users/minz"
 }
 ```
 
@@ -796,15 +795,15 @@ Changing assignee from minz to @aghitza.
 
 ---
 
-archive/issue_comments_084494.json:
+archive/issue_comments_084358.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-03-22T05:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84494",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84358",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -814,15 +813,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_084495.json:
+archive/issue_comments_084359.json:
 ```json
 {
     "body": "* is_square for fraction field elements now always computes a root, even if it's not needed. This can be quite expensive. \n\n  * Why are you writing boilerplate wrappers for all of LazyNamedUnop? Just do is_square and sqrt if need be. \n\n  * Using _parent is just fine, especially for subclasses. No need to incur the extra expense of a method call.",
     "created_at": "2011-03-22T05:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84495",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84359",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -836,15 +835,15 @@ archive/issue_comments_084495.json:
 
 ---
 
-archive/issue_comments_084496.json:
+archive/issue_comments_084360.json:
 ```json
 {
     "body": "Replying to [comment:27 robertwb]:\n>  * is_square for fraction field elements now always computes a root, even if it's not needed. This can be quite expensive. \n\nIndeed, it should use `root=root` instead of `root=True`\n\n> \n>  * Why are you writing boilerplate wrappers for all of LazyNamedUnop? Just do is_square and sqrt if need be. \n\nHi Robert,\n\nI can answer this question. This was [a discussion on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/441948aa73d1c49f). 4 options were discussed for dealing with these unitary operators for lazy numbers.\n\nA) leaving them as they were\n\nB) hard-coding them (as Maarten just did)\n\nC) \"fixing LazyNamedUnop to preserve documentation\"\n\nD) \"populating these methods at class creation time\n(rather than attribute lookup time, perhaps dynamically creating a\ndocstring for them)\"\n\nOption A was discarded: it lacks tab completion, and (as we saw in this ticket) leads to a big mess and a lot of confusion when a base class such as RingElement gets a default implementation for one of these unitary operators.\n\nOptions C and D were suggested by you, but you seemed to be the only one in the discussion who knew how to do them. Maarten said he was interested in them, and then nothing happened for months.\n\nSo I guess that in the end Maarten implemented the only remaining option, which leads to stable, transparent, understandable code that is unfortunately a bit long.\n\nI think the extra time that Sage developers will need when extending or changing Maarten's long list of similar methods is not too bad if you compare it to the time that Sage developers will need when trying to understand more complicated code and having to debug it if something unforeseen happens. But that's just my opinion.\n\n+1 from me for the way Maarten implemented it.\n\n> \n>  * Using _parent is just fine, especially for subclasses. No need to incur the extra expense of a method call. \n\nAre there general guidelines for this? I can imagine `_parent` to be faster, but `parent()` to be more stable in case creative implementations are in base classes.",
     "created_at": "2011-03-22T12:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84496",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84360",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -889,15 +888,15 @@ Are there general guidelines for this? I can imagine `_parent` to be faster, but
 
 ---
 
-archive/issue_comments_084497.json:
+archive/issue_comments_084361.json:
 ```json
 {
     "body": "New file added Only apply: trac_9094-sqrt-mderickx.patch\n\nIt's RLF is now boiler plate code free, works with tab completion and works with inheritance thanks to Thomas Kluiver here at sage days since he told me how to do it :).\n\nAlso added the other suggestions. Hopefully finally a final version??",
     "created_at": "2011-03-22T16:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84497",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84361",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -911,15 +910,15 @@ Also added the other suggestions. Hopefully finally a final version??
 
 ---
 
-archive/issue_comments_084498.json:
+archive/issue_comments_084362.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-03-22T16:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84498",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84362",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -929,15 +928,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_084499.json:
+archive/issue_comments_084363.json:
 ```json
 {
     "body": "Hi Maarten, could you add a doctest to `__dir__` so that doctest coverage goes up instead of down? Just something simple like\n\n```\nsage: \"log\" in RLF(sqrt(8)).__dir__()\nTrue\n```\n",
     "created_at": "2011-03-22T17:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84499",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84363",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -953,15 +952,15 @@ True
 
 ---
 
-archive/issue_comments_084500.json:
+archive/issue_comments_084364.json:
 ```json
 {
     "body": "A patch instead of the other one, which I ofcourse think is better ;)",
     "created_at": "2011-03-22T17:24:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84500",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84364",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -971,15 +970,15 @@ A patch instead of the other one, which I ofcourse think is better ;)
 
 ---
 
-archive/issue_comments_084501.json:
+archive/issue_comments_084365.json:
 ```json
 {
     "body": "Attachment [trac_9094-sqrt-mderickx.patch](tarball://root/attachments/some-uuid/ticket9094/trac_9094-sqrt-mderickx.patch) by @koffie created at 2011-03-22 17:26:53\n\nDone :)",
     "created_at": "2011-03-22T17:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84501",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84365",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -991,15 +990,15 @@ Done :)
 
 ---
 
-archive/issue_comments_084502.json:
+archive/issue_comments_084366.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-03-22T19:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84502",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84366",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -1009,15 +1008,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_084503.json:
+archive/issue_comments_084367.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2011-03-22T19:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84503",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84367",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -1027,15 +1026,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_084504.json:
+archive/issue_comments_084368.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-04-13T07:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84504",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9094#issuecomment-84368",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

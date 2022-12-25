@@ -6,7 +6,7 @@ archive/issues_002583.json:
     "body": "Assignee: @rlmill\n\n\n```\nsage -t -long devel/sage/sage/plot/plot.py\n----------------------------------------------------------------------\nTotal time for all tests: 965.6 seconds\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             **********************************************************************\nFile \"plot.py\", line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-2.11.alpha0/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_118[17]>\", line 1, in <module>\n        networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=Integer(0))###line 3860:\n    sage: networkx_plot(C._nxg, pos=C.get_pos(), edge_colors=edge_colors, vertex_labels=False, vertex_size=0)\n    AttributeError: 'Graph' object has no attribute '_nxg'\n**********************************************************************\n1 items had failures:\n   1 of  18 in __main__.example_118\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [68.5 s]\nexit code: 256\n```\n\n\nAs a reminder: Ye Shall doctest the all of Sage before submitting any patch that changes fundamental things.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2583\n\n",
     "created_at": "2008-03-18T11:27:43Z",
     "labels": [
-        "graph theory",
+        "component: graph theory",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002583.json:
     "title": "Sage 2.11.a0: doctest failure in plot.py due to #2580",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2583",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @rlmill
@@ -60,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2583
 
 ---
 
-archive/issue_comments_017674.json:
+archive/issue_comments_017636.json:
 ```json
 {
     "body": "Attachment [2583.patch](tarball://root/attachments/some-uuid/ticket2583/2583.patch) by @rlmill created at 2008-03-18 13:32:20",
     "created_at": "2008-03-18T13:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17674",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17636",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -78,15 +78,15 @@ Attachment [2583.patch](tarball://root/attachments/some-uuid/ticket2583/2583.pat
 
 ---
 
-archive/issue_comments_017675.json:
+archive/issue_comments_017637.json:
 ```json
 {
     "body": "Patch looks good to me and fixes the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-19T00:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17675",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17637",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -100,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_017676.json:
+archive/issue_comments_017638.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha0",
     "created_at": "2008-03-19T00:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17676",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17638",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -118,15 +118,15 @@ Merged in Sage 2.11.alpha0
 
 ---
 
-archive/issue_comments_017677.json:
+archive/issue_comments_017639.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-19T00:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17677",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17639",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -136,15 +136,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_017678.json:
+archive/issue_comments_017640.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-03-19T10:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17678",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17640",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -154,15 +154,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_017679.json:
+archive/issue_comments_017641.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-03-19T10:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17679",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17641",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -172,15 +172,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_017680.json:
+archive/issue_comments_017642.json:
 ```json
 {
     "body": "But it causes a new doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-2.11.alpha0$ ./sage -t -long devel/sage/sage/plot/plot.py\nsage -t -long devel/sage-main/sage/plot/plot.py             File \"plot.py\", line 3513:\n    sage: plot(x^(1/3), (x,-1,1))\nExpected nothing\nGot:\n    WARNING: When plotting, failed to evaluate function at 99 points.\n    Last error message: 'negative number cannot be raised to a fractional power'\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   2 of  28 in __main__.example_111\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_plot.py\n         [70.3 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n```\n\nso I am reopening it.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-19T10:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17680",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17642",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -218,15 +218,15 @@ Michael
 
 ---
 
-archive/issue_comments_017681.json:
+archive/issue_comments_017643.json:
 ```json
 {
     "body": "This is unrelated to this patch and hence we will close it and open another ticket for it.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-19T13:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17681",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17643",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -240,15 +240,15 @@ Michael
 
 ---
 
-archive/issue_comments_017682.json:
+archive/issue_comments_017644.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-19T13:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17682",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2583#issuecomment-17644",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

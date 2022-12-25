@@ -6,7 +6,7 @@ archive/issues_009108.json:
     "body": "Assignee: @malb\n\nCC:  simonking @JohnCremona\n\nKeywords: time-out, doctest, symmetric ideal, symmetric_ideal\n\nTwo doctests/examples in `sage/rings/polynomial/symmetric_ideal.py` tend to time out on older/slower machines (and take a large amount of the overall test time of that module).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9108\n\n",
     "created_at": "2010-06-01T15:16:01Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009108.json:
     "title": "Mark long doctests in rings/polynomial/symmetric_ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9108",
-    "user": "@nexttime"
+    "user": "https://github.com/nexttime"
 }
 ```
 Assignee: @malb
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9108
 
 ---
 
-archive/issue_comments_084711.json:
+archive/issue_comments_084575.json:
 ```json
 {
     "body": "Replying to [ticket:9108 leif]:\n> Two doctests/examples in `sage/rings/polynomial/symmetric_ideal.py` tend to time out on older/slower machines (and take a large amount of the overall test time of that module).",
     "created_at": "2010-06-01T15:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84711",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84575",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -52,15 +52,15 @@ Replying to [ticket:9108 leif]:
 
 ---
 
-archive/issue_comments_084712.json:
+archive/issue_comments_084576.json:
 ```json
 {
     "body": "Marks the offending lines with `# long time`. Based on 4.4.3.alpha0.",
     "created_at": "2010-06-01T15:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84712",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84576",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -70,15 +70,15 @@ Marks the offending lines with `# long time`. Based on 4.4.3.alpha0.
 
 ---
 
-archive/issue_comments_084713.json:
+archive/issue_comments_084577.json:
 ```json
 {
     "body": "Attachment [trac_9108-mark_long_doctests_in_symmetric_ideal.patch](tarball://root/attachments/some-uuid/ticket9108/trac_9108-mark_long_doctests_in_symmetric_ideal.patch) by @nexttime created at 2010-06-01 15:23:32\n\nSimon, you're too fast... ;-)\n\nI've just uploaded a patch that reduces the module test time on a Pentium 4 (Prescott, 3.2 GHz) from 238.7 seconds to 33.1 seconds.",
     "created_at": "2010-06-01T15:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84713",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84577",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -92,15 +92,15 @@ I've just uploaded a patch that reduces the module test time on a Pentium 4 (Pre
 
 ---
 
-archive/issue_comments_084714.json:
+archive/issue_comments_084578.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-01T15:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84714",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84578",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -110,15 +110,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_084715.json:
+archive/issue_comments_084579.json:
 ```json
 {
     "body": "Perhaps you could add less demanding tests. ;-)\n\nAlso, some docstring lines are \"too long\". (I personally don't mind source code that exceeds 80 columns, but the help output should perhaps be limited to 80 characters in width.)",
     "created_at": "2010-06-01T15:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84715",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84579",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -130,15 +130,15 @@ Also, some docstring lines are "too long". (I personally don't mind source code 
 
 ---
 
-archive/issue_comments_084716.json:
+archive/issue_comments_084580.json:
 ```json
 {
     "body": "Before applying the patch to 4.4.3.alpha0:\n\n```\njec@selmer%sage -t sage/rings/polynomial/symmetric_ideal.py \nsage -t  \"sage/rings/polynomial/symmetric_ideal.py\"         \n\t [110.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 110.8 seconds\njec@selmer%sage -t -long sage/rings/polynomial/symmetric_ideal.py \nsage -t -long \"sage/rings/polynomial/symmetric_ideal.py\"    \n\t [109.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 109.8 seconds\n```\n\nand after:\n\n```\njec@selmer%sage -t sage/rings/polynomial/symmetric_ideal.py sage -t  \"sage/rings/polynomial/symmetric_ideal.py\"         \n\t [16.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 16.5 seconds\njec@selmer%sage -t -long sage/rings/polynomial/symmetric_ideal.py sage -t -long \"sage/rings/polynomial/symmetric_ideal.py\"    \n\t [108.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 108.2 seconds\n```\n\n\nInteresting to note that it is essentially just one test which takes the time!",
     "created_at": "2010-06-01T16:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84716",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84580",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -185,15 +185,15 @@ Interesting to note that it is essentially just one test which takes the time!
 
 ---
 
-archive/issue_comments_084717.json:
+archive/issue_comments_084581.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-01T16:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84717",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84581",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -203,15 +203,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_084718.json:
+archive/issue_comments_084582.json:
 ```json
 {
     "body": "Replying to [comment:5 cremona]:\n> Interesting to note that it is essentially just one test which takes the time!\n\nOff list, Leif just sent me some timings: \n\nThere is one symmetric Groebner basis computation that takes 73 seconds, but most of the time is actually spent for testing whether all variable permutations of all basis elements do indeed have symmetric reduction zero modulo the symmetric Groebner basis: 130 s.\n\nI see two ways to proceed, depending on how soon the next release is due:\n\n1. Leif's patch could go in, as John gave it a positive review, and it is certainly harmless and solves the problem. \n2. I could try to find a solution for the one offending doc test. For example, the long Groebner basis computation could be replaced by something else, such us the following, of course without the timings that I just inserted for demonstration:\n {{{\nsage: R.<x,y> = InfinitePolynomialRing(GF(5),order='degrevlex')\nsage: I = [2*x[4]*x[3]*y[4] - 2*y[0]^3]*R\nsage: %time G = I.groebner_basis()\nCPU times: user 1.70 s, sys: 0.01 s, total: 1.71 s\nWall time: 1.71 s\nsage: G\n[x_2*x_1*y_1 - y_0^3, x_2*x_1*y_2 - y_0^3, y_2*y_0^3 - y_1*y_0^3]\nsage: %time [[(p^P).reduce(G) for p in G] for P in Permutations(Integer(3))]\nCPU times: user 1.38 s, sys: 0.00 s, total: 1.38 s\nWall time: 1.38 s\n[[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]\n }}}\n\nI think this example would actually be a good one, as it shows: \n\n* Even a \"principal\" symmetric ideal may have a reduced symmetric Groebner basis formed by more than one element.\n* The test whether the elements still reduce to zero after variable permutation is easier, since the maximal variable index can be smaller (3 instead of 4; it should be bigger than the maximal index 2 that occurs in the symmetric Groebner basis).\n\nSo, if the next release will be soon, I suggest to take Leif's patch as it is. But I think in the long run, a new example (like the one above) is needed.\n\nConcerning line lengths: Does this only concern the first line of the doc strings? I know that my first lines tend to be rather lengthy, as I learnt that the basic description of the functionality should be given in the first line of the doc string (this is why I don't do a line wrap).",
     "created_at": "2010-06-01T16:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84718",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84582",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -253,15 +253,15 @@ Concerning line lengths: Does this only concern the first line of the doc string
 
 ---
 
-archive/issue_comments_084719.json:
+archive/issue_comments_084583.json:
 ```json
 {
     "body": "Replying to [comment:5 cremona]:\n> [...]\n> Interesting to note that it is essentially just one test which takes the time!\n\nActually two lines/tests take very long:\n\n```\nline#  walltime statement (preparsed)\n[0116  72.980s] J=I.groebner_basis()\n[0135 130.070s] [[(p**P).reduce(J) for p in J] for P in Permutations(Integer(4))]\n```\n\n(of a total of ~240s on that system)\n\nNote that line numbers slightly change after applying the patch.",
     "created_at": "2010-06-01T16:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84719",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84583",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -285,15 +285,15 @@ Note that line numbers slightly change after applying the patch.
 
 ---
 
-archive/issue_comments_084720.json:
+archive/issue_comments_084584.json:
 ```json
 {
     "body": "Replying to [comment:6 SimonKing]:\n> I think this example would actually be a good one, as it shows: \n\nOr perhaps not *that* good...\n\nThe generator is not minimally chosen in its orbit, and I don't like that the second summand has index zero. But I recently did a series of random examples in order to test how large a symmetric Groebner basis of a symmetric ideal generated by a single small polynomial can actually be, so, it is likely that I'll find a better one.",
     "created_at": "2010-06-01T16:47:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84720",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84584",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -308,15 +308,15 @@ The generator is not minimally chosen in its orbit, and I don't like that the se
 
 ---
 
-archive/issue_comments_084721.json:
+archive/issue_comments_084585.json:
 ```json
 {
     "body": "Replying to [comment:6 SimonKing]:\n> So, if the next release will be soon, I suggest to take Leif's patch as it is. But I think in the long run, a new example (like the one above) is needed.\n\nFeel free to add additional (short) tests... ;-)\n\nPerhaps on another ticket?\n\n\n> Concerning line lengths: Does this only concern the first line of the doc strings? I know that my first lines tend to be rather lengthy, as I learnt that the basic description of the functionality should be given in the first line of the doc string (this is why I don't do a line wrap).\n\nI just noticed that e.g. some parameter description lines are wider (net width).\n\nAlso, some are \"marked\" `(optional)`; the current practice seems to be repeating the default value from the function definition, too, i.e.\n\n```\n    ``param`` -- (type, default: some_value) further description...\n```\n",
     "created_at": "2010-06-01T16:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84721",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84585",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -343,15 +343,15 @@ Also, some are "marked" `(optional)`; the current practice seems to be repeating
 
 ---
 
-archive/issue_comments_084722.json:
+archive/issue_comments_084586.json:
 ```json
 {
     "body": "Replying to [comment:9 leif]:\n> Replying to [comment:6 SimonKing]:\n> > So, if the next release will be soon, I suggest to take Leif's patch as it is. But I think in the long run, a new example (like the one above) is needed.\n> \n> Feel free to add additional (short) tests... ;-)\n> \n> Perhaps on another ticket?\n\nSeems reasonable. So, for now, the solution is to skip the long test unless it is wanted, and on a different ticket, I'll try to replace the offensive example (not *add* an example) and will also deal with the line length etc. \n\nThank you for your patch!",
     "created_at": "2010-06-01T17:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84722",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84586",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -371,15 +371,15 @@ Thank you for your patch!
 
 ---
 
-archive/issue_comments_084723.json:
+archive/issue_comments_084587.json:
 ```json
 {
     "body": "I am quite happy with the the conclusion to this discussion! John",
     "created_at": "2010-06-01T19:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84723",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84587",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -389,15 +389,15 @@ I am quite happy with the the conclusion to this discussion! John
 
 ---
 
-archive/issue_comments_084724.json:
+archive/issue_comments_084588.json:
 ```json
 {
     "body": "I created a new ticket #9114 (ready for review) that replaces the offensive test by something better, and also improves the formatting of the documentation of \"infinite polynomial rings and friends\".\n\nSince Leif's patch already has a positive review, I based #9114 on it.",
     "created_at": "2010-06-02T11:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84724",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84588",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -409,15 +409,15 @@ Since Leif's patch already has a positive review, I based #9114 on it.
 
 ---
 
-archive/issue_comments_084725.json:
+archive/issue_comments_084589.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T08:26:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84725",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9108#issuecomment-84589",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

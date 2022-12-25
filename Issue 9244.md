@@ -6,15 +6,14 @@ archive/issues_009244.json:
     "body": "Assignee: @loefflerd\n\nI was working on doctesting `sage/rings/number_field/class_group.py`, and I was unable to resist the temptation to rewrite it. (There were all sorts of failures and inconsistencies caused by the fact that `ClassGroup` derived from `AbelianGroup`, but `FractionalIdealClass` didn't derive from `AbelianGroupElement`.) \n\nI have a patch for this, depending on #9242, which I will upload as soon as someone explains how to squash the `_test_category()` error.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9244\n\n",
     "created_at": "2010-06-15T10:49:08Z",
     "labels": [
-        "number fields",
-        "major",
+        "component: number fields",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Number field class group improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9244",
-    "user": "@loefflerd"
+    "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: @loefflerd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9244
 
 ---
 
-archive/issue_comments_086938.json:
+archive/issue_comments_086799.json:
 ```json
 {
     "body": "Milestone sage-4.4.5 deleted",
     "created_at": "2010-06-22T04:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86938",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86799",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ Milestone sage-4.4.5 deleted
 
 ---
 
-archive/issue_comments_086939.json:
+archive/issue_comments_086800.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-25T08:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86939",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86800",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_086940.json:
+archive/issue_comments_086801.json:
 ```json
 {
     "body": "Here's a patch. It doesn't depend on any other patches, contrary to what I wrote in the description.",
     "created_at": "2010-06-25T08:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86940",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86801",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -85,15 +84,15 @@ Here's a patch. It doesn't depend on any other patches, contrary to what I wrote
 
 ---
 
-archive/issue_comments_086941.json:
+archive/issue_comments_086802.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-26T11:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86941",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86802",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_086942.json:
+archive/issue_comments_086803.json:
 ```json
 {
     "body": "These are definite improvements, well implemented, and doctests pass.  Just one remark:\n\nThe eventuality envisaged in the comment at line 95 of the patched\u00a0`class_group.py` (which should be referring to ideal classes rather ideals) ought to have its own doctest, such as:\n\n\n```\nsage: K.<a> = QuadraticField(-23)\nsage: L.<b> = K.extension(x^2 - 2)\nsage: CK = K.class_group()\nsage: CL = L.class_group()\nsage: [CL(I).list() for I in CK]\n[[0], [2], [4]]\n```\n",
     "created_at": "2010-06-26T11:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86942",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86803",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -134,15 +133,15 @@ sage: [CL(I).list() for I in CK]
 
 ---
 
-archive/issue_comments_086943.json:
+archive/issue_comments_086804.json:
 ```json
 {
     "body": "Good point. Here's a new patch incorporating your suggestion. I also realised that one of the doctests seems to return different output in 4.4.4 than in 4.4.4.alpha0, so I've flagged it with #random.",
     "created_at": "2010-06-26T13:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86943",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86804",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -152,15 +151,15 @@ Good point. Here's a new patch incorporating your suggestion. I also realised th
 
 ---
 
-archive/issue_comments_086944.json:
+archive/issue_comments_086805.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-26T13:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86944",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86805",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -170,15 +169,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_086945.json:
+archive/issue_comments_086806.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-27T01:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86945",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86806",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -188,15 +187,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_086946.json:
+archive/issue_comments_086807.json:
 ```json
 {
     "body": "Jim and I have looked at this too (we are working on #9332) and think this is nearly good to go.  (We could not see any random doctests!)\n\nThis is the only failure (we tested all of sage/rings/number_fields):\n\n\n```\n\nsage -t  \"sage/rings/number_field/class_group.py\"           \n**********************************************************************\nFile \"/home/john/sage-4.4.4/devel/sage-tests/sage/rings/number_field/class_group.py\", line 144:\n    sage: C.gen(0)\nExpected:\n    Fractional ideal class (130, 1/2*a + 137/2)\nGot:\n    Fractional ideal class (41, a - 10)\n**********************************************************************\nFile \"/home/john/sage-4.4.4/devel/sage-tests/sage/rings/number_field/class_group.py\", line 146:\n    sage: C.gen(1)\nExpected:\n    Fractional ideal class (7, a)\nGot:\n    Fractional ideal class (17, a)\n**********************************************************************\n1 items had failures:\n   2 of   5 in __main__.example_7\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/john/.sage//tmp/.doctest_class_group.py\n\t [3.1 s]\n\n```\n",
     "created_at": "2010-06-27T01:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86946",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86807",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -236,15 +235,15 @@ For whitespace errors, see the file /home/john/.sage//tmp/.doctest_class_group.p
 
 ---
 
-archive/issue_comments_086947.json:
+archive/issue_comments_086808.json:
 ```json
 {
     "body": "I've double-checked the failure. It's just a different choice of generators for the class group ( C250 x C2 for those keeping track)\n\n\n```\nsage: i = C(C.number_field().gen(),7)                \nsage: j = C(C.number_field().gen(),17)               \nsage: k = C((1/2)*C.number_field().gen() + 137/2,130)\nsage: l = C(C.number_field().gen() - 10,41)          \nsage: i.list()                                       \n[0, 1]\nsage: j.list()\n[125, 1]\nsage: k.list()\n[1, 0]\nsage: l.list()\n[88, 1]\nsage: l.order()\n250\nsage: (j*(l^125)).order()\n2\n```\n",
     "created_at": "2010-06-27T05:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86947",
-    "user": "stankewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86808",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stankewicz"
 }
 ```
 
@@ -275,15 +274,15 @@ sage: (j*(l^125)).order()
 
 ---
 
-archive/issue_comments_086948.json:
+archive/issue_comments_086809.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-27T05:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86948",
-    "user": "stankewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86809",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stankewicz"
 }
 ```
 
@@ -293,15 +292,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_086949.json:
+archive/issue_comments_086810.json:
 ```json
 {
     "body": "My bad, I forgot to qrefresh before exporting. Here's a new patch with the #random flags.",
     "created_at": "2010-06-27T08:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86949",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86810",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -311,15 +310,15 @@ My bad, I forgot to qrefresh before exporting. Here's a new patch with the #rand
 
 ---
 
-archive/issue_comments_086950.json:
+archive/issue_comments_086811.json:
 ```json
 {
     "body": "Replying to [comment:8 davidloeffler]:\n\n> Here's a new patch with the #random flags.\n\nSince this sorts out the failure that John and Jim found (but which I can't reproduce), it's a positive review.",
     "created_at": "2010-06-27T09:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86950",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86811",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -333,15 +332,15 @@ Since this sorts out the failure that John and Jim found (but which I can't repr
 
 ---
 
-archive/issue_comments_086951.json:
+archive/issue_comments_086812.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-27T09:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86951",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86812",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -351,15 +350,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_086952.json:
+archive/issue_comments_086813.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-06-28T16:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86952",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86813",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -369,15 +368,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_086953.json:
+archive/issue_comments_086814.json:
 ```json
 {
     "body": "Wait a minute, this causes a doctest failure in William's Bordeaux 2008 examples, because calculating class groups with the optional argument proof=False isn't handled correctly: it still tries to bnfcertify. I will write an updated patch in a moment.",
     "created_at": "2010-06-28T16:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86953",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86814",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -387,15 +386,15 @@ Wait a minute, this causes a doctest failure in William's Bordeaux 2008 examples
 
 ---
 
-archive/issue_comments_086954.json:
+archive/issue_comments_086815.json:
 ```json
 {
     "body": "This patch handles the \"proof\" argument in a slightly different way in order to make sure that bnfcertify isn't called unnecessarily.",
     "created_at": "2010-06-28T16:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86954",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86815",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -405,15 +404,15 @@ This patch handles the "proof" argument in a slightly different way in order to 
 
 ---
 
-archive/issue_comments_086955.json:
+archive/issue_comments_086816.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-28T16:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86955",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86816",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -423,15 +422,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_086956.json:
+archive/issue_comments_086817.json:
 ```json
 {
     "body": "Sorry, I made a mess of uploading that. Patches `trac_9244_new.patch` and `trac_9244_new.2.patch` are identical, and both replace the previous `trac_9244.patch`.",
     "created_at": "2010-06-28T16:22:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86956",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86817",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -441,15 +440,15 @@ Sorry, I made a mess of uploading that. Patches `trac_9244_new.patch` and `trac_
 
 ---
 
-archive/issue_comments_086957.json:
+archive/issue_comments_086818.json:
 ```json
 {
     "body": "Replying to [comment:11 davidloeffler]:\n> This patch handles the \"proof\" argument in a slightly different way in order to make sure that bnfcertify isn't called unnecessarily.\n\nI don't think this is quite right.  I think the last two lines of the code for `_ideal_class_log` need to read\n\n```\n            self.__ideal_class_log[proof] = list(v[0])\n            return self.__ideal_class_log[proof]\n```\n",
     "created_at": "2010-06-28T18:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86957",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86818",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -468,15 +467,15 @@ I don't think this is quite right.  I think the last two lines of the code for `
 
 ---
 
-archive/issue_comments_086958.json:
+archive/issue_comments_086819.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-28T18:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86958",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86819",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -486,15 +485,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_086959.json:
+archive/issue_comments_086820.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-28T20:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86959",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86820",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -504,15 +503,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_086960.json:
+archive/issue_comments_086821.json:
 ```json
 {
     "body": "Good point; thanks for spotting that. Here's a third attempt, which corrects the error as fwclarke suggests and also back-ports a doctest from #9359.",
     "created_at": "2010-06-28T20:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86960",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86821",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -522,15 +521,15 @@ Good point; thanks for spotting that. Here's a third attempt, which corrects the
 
 ---
 
-archive/issue_comments_086961.json:
+archive/issue_comments_086822.json:
 ```json
 {
     "body": "Is there something wrong with the new doctest?  Because\n\n```\nsage: K.<a> = NumberField(x^3 - x + 1) \nsage: K.class_number()\n1\n```\n",
     "created_at": "2010-06-28T21:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86961",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86822",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -547,15 +546,15 @@ sage: K.class_number()
 
 ---
 
-archive/issue_comments_086962.json:
+archive/issue_comments_086823.json:
 ```json
 {
     "body": "replaces all previous attempts",
     "created_at": "2010-06-29T07:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86962",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86823",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -565,15 +564,15 @@ replaces all previous attempts
 
 ---
 
-archive/issue_comments_086963.json:
+archive/issue_comments_086824.json:
 ```json
 {
     "body": "Attachment [trac_9244_ver4.patch](tarball://root/attachments/some-uuid/ticket9244/trac_9244_ver4.patch) by @loefflerd created at 2010-06-29 07:52:07\n\nNothing wrong with the code, just my brain, apparently. It should have been\n\n```\nK.<a, b> = NumberField([x^3 - x + 1, x^2 + 26])\n```\n\nwhich has class group `C_6 x C_3`, but I copied and pasted the wrong lines, and the #random flag hid that. I've uploaded a fourth attempt with this correction.\n\nApologies for the complete mess I have been making of this ticket from start to finish.",
     "created_at": "2010-06-29T07:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86963",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86824",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -593,15 +592,15 @@ Apologies for the complete mess I have been making of this ticket from start to 
 
 ---
 
-archive/issue_comments_086964.json:
+archive/issue_comments_086825.json:
 ```json
 {
     "body": "It's fine now.",
     "created_at": "2010-06-29T18:00:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86964",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86825",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -611,15 +610,15 @@ It's fine now.
 
 ---
 
-archive/issue_comments_086965.json:
+archive/issue_comments_086826.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-29T18:00:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86965",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86826",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -629,15 +628,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_086966.json:
+archive/issue_comments_086827.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T07:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86966",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9244#issuecomment-86827",
+    "user": "https://github.com/qed777"
 }
 ```
 

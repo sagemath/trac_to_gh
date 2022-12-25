@@ -6,15 +6,14 @@ archive/issues_000740.json:
     "body": "Assignee: John Cremona\n\nKeywords: elliptic curve point\n\nImplement standard transformations for elliptic curves & points similar to pari's ellchangecurve()/ellchangepoint() with the following functionality, to apply to class EllipticCurve_generic and class EllipticCurvePoint().\n\nFunctionality:\n(1) basic operations on transformations coded as [u,r,s,t] with u!=0, including composition and inversion (since they form a group)\n(2) apply transform to a curve to get a new curve\n(3) apply transform to a point to get a new point (since points belong to curves this would create the transformed curve too, which seems a waste)\n(4) given two curves, test whether they are isomorphic and return either \"false\" or \"true, [u,r,s,t]\", probably only in characteristic>3 at first.\n\nThis should be very easy (and in fact is contained in the functionality provided by /extcode/pari/cremona/ell_utils.gp  but the intention is to do it in python as a simple thing for me to practice on before I try to do something more substantial.\n\nIssue created by migration from https://trac.sagemath.org/ticket/740\n\n",
     "created_at": "2007-09-23T18:04:16Z",
     "labels": [
-        "algebraic geometry",
-        "minor",
-        "enhancement"
+        "component: algebraic geometry",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Implement standard transformations for elliptic curves & points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/740",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: John Cremona
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/740
 
 ---
 
-archive/issue_comments_004329.json:
+archive/issue_comments_004315.json:
 ```json
 {
     "body": "Changing assignee from John Cremona to @JohnCremona.",
     "created_at": "2007-09-23T21:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4329",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4315",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -57,33 +56,15 @@ Changing assignee from John Cremona to @JohnCremona.
 
 ---
 
-archive/issue_comments_004330.json:
-```json
-{
-    "body": "Changing priority from minor to major.",
-    "created_at": "2007-12-05T19:00:47Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/740",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4330",
-    "user": "@robertwb"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_004331.json:
+archive/issue_comments_004316.json:
 ```json
 {
     "body": "Done, at least for characteristic != 2,3. See #1239.",
     "created_at": "2007-12-05T19:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4331",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4316",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -93,15 +74,15 @@ Done, at least for characteristic != 2,3. See #1239.
 
 ---
 
-archive/issue_comments_004332.json:
+archive/issue_comments_004317.json:
 ```json
 {
     "body": "Elliptic curve isomorphism code only works when the characteristic is not 2 or 3.  I expect to submit a patch shortly.\n\n\n```\njec@fermat%sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.9.3, Release Date: 2008-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: E=EllipticCurve(GF(2),[1,0,0,0,1])\nsage: E.is_isomorphic(E)\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/home/src/sage-2.9.1.1/devel/<ipython console> in <module>()\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in is_isomorphic(self, other)\n   1337         else:\n   1338             try:\n-> 1339                 phi = self.isomorphism_to(other)\n   1340                 return True\n   1341             except ValueError:\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_generic.py in isomorphism_to(self, other)\n   1315                 To:   Abelian group of points on Elliptic Curve defined by y^2 + y = x^3 + (-1)*x over Number Field in a with defining polynomial x^3 - 7\n   1316         \"\"\"\n-> 1317         return weierstrass_morphism.WeierstrassIsomorphism(self, other)\n   1318\n   1319     def is_isomorphic(self, other):\n\n/home/src/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/weierstrass_morphism.py in __init__(self, E, F)\n     46             if u.parent() is not K or K.is_exact() and u**12 != D:\n     47                 raise ValueError, \"Elliptic curves not isomorphic.\"\n---> 48             s = (a1*u - b1)/2\n     49             r = (a2*u**2 + a1*s*u - s**2 - b2)/3\n     50             t = (a3*u**3 - a1*r*u + 2*r*s - b3)/2\n\n/home/src/sage-2.9.1.1/devel/element.pyx in sage.structure.element.RingElement.__div__()\n\n/home/src/sage-2.9.1.1/devel/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n/home/src/sage-2.9.1.1/devel/element.pyx in sage.structure.element.RingElement.__div__()\n\n/home/src/sage-2.9.1.1/devel/coerce.pxi in sage.structure.element._div_c()\n\n/home/src/sage-2.9.1.1/devel/integer_mod.pyx in sage.rings.integer_mod.IntegerMod_int._div_c_impl()\n\n<type 'exceptions.ZeroDivisionError'>: Inverse does not exist.\n```\n",
     "created_at": "2008-01-09T21:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4332",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4317",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -160,15 +141,15 @@ sage: E.is_isomorphic(E)
 
 ---
 
-archive/issue_comments_004333.json:
+archive/issue_comments_004318.json:
 ```json
 {
     "body": "It's also broken for characteristics >3:\n\n```\njec@fermat%sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.9.3, Release Date: 2008-01-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: F=GF(13) # contains 12th roots of unity\nsage: z=F.multiplicative_generator()\nsage: E=EllipticCurve(F,[1,0,0,0,1])\nsage: Ez=E.change_weierstrass_model([z,0,0,0])\nsage: E.is_isomorphic(Ez)\nFalse\n```\n\n\nThe patch I will post will do this properly.",
     "created_at": "2008-01-10T09:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4333",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4318",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -195,15 +176,15 @@ The patch I will post will do this properly.
 
 ---
 
-archive/issue_comments_004334.json:
+archive/issue_comments_004319.json:
 ```json
 {
     "body": "Attachment [eciso.hg](tarball://root/attachments/some-uuid/ticket740/eciso.hg) by @JohnCremona created at 2008-01-25 18:18:46\n\nAttached patch fixes the bugs (was made against 2.9.3)",
     "created_at": "2008-01-25T18:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4334",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4319",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -215,15 +196,15 @@ Attached patch fixes the bugs (was made against 2.9.3)
 
 ---
 
-archive/issue_comments_004335.json:
+archive/issue_comments_004320.json:
 ```json
 {
     "body": "The bundle applies cleanly, and for the most part looks good, including all the characteristic 2,3 stuff. However, I am having trouble testing it out too much because of all of the \"return none\" (note the lowercase, rather than capital N). This seems to indicate that there are insufficient doctests as well. Could you please re-submit a bundle with these fixes (and also, that doesn't mix TABS and SPACES). \n\nIt looks like your (u,r,s,t) is the inverse of what my (u,r,s,t) was, but that shouldn't matter as long as people haven't started depending on this directly. \n\nFor things that extend Morphism, `_call_` is used rather than `__call__` For efficiency reasons (e.g. in the coercion model), so this needs to be changed back. \n\n\n```\n# I don't know how to make this function visible in Sage!  JEC \n```\n\n\nYou were able to resolve this, right?\n\n\n```\n# IMHO the restriction to curves having the same base ring is too strict!  JEC \n```\n\n\nI would like others to comment on this, but it seems to me that clearly one has non-isomorphic objects if one changes the base ring. The current implementation of `EllipticCurve` represents an elliptic curve over a fixed base field (hence it makes sense to ask about it's rank, etc.) \n\n(In response to `EllipticCurve_generic.integral_weierstrass_model()`)\n\n```\n### The following functions should not be in ell_generic.py but in ell_rational_field.py!  JEC \n```\n\nThis makes sense for elliptic curves over number fields too, right? Or any field in which one can construct the ring of integers). \n\n\n```\n###  I do not think we should allow quadratic_twist() in characteristic 2, or when j=0 or j=1728.  JEC \n```\n \nShould we throw an error, or indicate (in the docstring or elsewhere) that the result may not be uniquely determined?",
     "created_at": "2008-01-25T21:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4335",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4320",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -268,15 +249,15 @@ Should we throw an error, or indicate (in the docstring or elsewhere) that the r
 
 ---
 
-archive/issue_comments_004336.json:
+archive/issue_comments_004321.json:
 ```json
 {
     "body": "Attachment [8087.patch](tarball://root/attachments/some-uuid/ticket740/8087.patch) by @JohnCremona created at 2008-01-27 03:44:40\n\nThis coimpletely replaces the previous patch (eciso.hg)",
     "created_at": "2008-01-27T03:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4336",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4321",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -288,15 +269,15 @@ This coimpletely replaces the previous patch (eciso.hg)
 
 ---
 
-archive/issue_comments_004337.json:
+archive/issue_comments_004322.json:
 ```json
 {
     "body": "Attachment [8088.patch](tarball://root/attachments/some-uuid/ticket740/8088.patch) by @JohnCremona created at 2008-01-27 04:00:43\n\nMinor additional patch to 8087.patch (fix 2 doctests)",
     "created_at": "2008-01-27T04:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4337",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4322",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -308,15 +289,15 @@ Minor additional patch to 8087.patch (fix 2 doctests)
 
 ---
 
-archive/issue_comments_004338.json:
+archive/issue_comments_004323.json:
 ```json
 {
     "body": "Looks really good to me! I even agree that this is the correct way to handle different base fields \n\n\n```\nsage: K = NumberField(x^2-17, 'a')\nsage: EK = E.change_ring(K)\nsage: E.is_isomorphic(EK)\nFalse\nsage: E.isomorphism_to(EK)\n\nGeneric morphism:\n  From: Abelian group of points on Elliptic Curve defined by y^2 + x*y + y = x^3 + x^2 - 10*x - 10 over Rational Field\n  To:   Abelian group of points on Elliptic Curve defined by y^2 + x*y + y = x^3 + x^2 + (-10)*x + (-10) over Number Field in a with defining polynomial x^2 - 17\n  Via:  (u,r,s,t) = (1, 0, 0, 0)\n```\n\n\nReady for inclusion.",
     "created_at": "2008-01-29T04:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4338",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4323",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -343,15 +324,15 @@ Ready for inclusion.
 
 ---
 
-archive/issue_comments_004339.json:
+archive/issue_comments_004324.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-29T12:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4339",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4324",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -361,15 +342,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_004340.json:
+archive/issue_comments_004325.json:
 ```json
 {
     "body": "Merged 8087.patch and 8088.patch in Sage 2.10.1.rc3",
     "created_at": "2008-01-29T12:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4340",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/740#issuecomment-4325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

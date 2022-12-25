@@ -6,15 +6,14 @@ archive/issues_007995.json:
     "body": "Assignee: tbd\n\nThe `sage-doctest` script returns some status info in its exit code, like if it was aborted with a `KeyboardInterrupt`. The `sage-ptest` script interprets this information, but `sage-test` mostly ignores it.\n\nOne symptom is that Ctrl-C-ing a `sage -t` run of multiple files doesn't work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7995\n\n",
     "created_at": "2010-01-19T07:38:35Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "sage-test doesn't handle all of sage-doctest's return values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7995",
-    "user": "@wjp"
+    "user": "https://github.com/wjp"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7995
 
 ---
 
-archive/issue_comments_069828.json:
+archive/issue_comments_069708.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-20T02:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69828",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69708",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069829.json:
+archive/issue_comments_069709.json:
 ```json
 {
     "body": "Patch attached.\n\nIn the future we may want to merge the sage-ptest and sage-test scripts entirely. They have a lot of duplicate code and minor unnecessary differences.",
     "created_at": "2010-01-20T02:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69829",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69709",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -69,15 +68,15 @@ In the future we may want to merge the sage-ptest and sage-test scripts entirely
 
 ---
 
-archive/issue_comments_069830.json:
+archive/issue_comments_069710.json:
 ```json
 {
     "body": "Attachment [scripts_7995_sage-test_error_handling.patch](tarball://root/attachments/some-uuid/ticket7995/scripts_7995_sage-test_error_handling.patch) by @wjp created at 2010-01-20 05:16:15",
     "created_at": "2010-01-20T05:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69830",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69710",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -87,15 +86,15 @@ Attachment [scripts_7995_sage-test_error_handling.patch](tarball://root/attachme
 
 ---
 
-archive/issue_comments_069831.json:
+archive/issue_comments_069711.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-20T08:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69831",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69711",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_069832.json:
+archive/issue_comments_069712.json:
 ```json
 {
     "body": "I don't know much the doctest framework. But the code looks good, and this removes two seriously annoying misfeatures of doctests. Thanks so much for scratching this itch for me!\n\nQuick remarks:\n\n- When there is an exception in the doctesting framework; will we get\n  a traceback? That would be most handy!\n\n- in \"... Check the process exit codes ...\": codes -> code?\n\n- The following two comments seem contradictory. Or am I\n  misunderstanding something?\n\n> # Return value in process exit code: \n> # 0: all tests passed \n> # 1: file not found \n> # 2: KeyboardInterrupt \n> # 3: doctest process was terminated by a signal \n> # 4: the doctesting framework raised an exception \n> # 100: failed doctests \n> #################################################################### \n>\n> def test_code(filename): \n>     # Return value in the doctest process exit code: \n>     # 0: everything passed \n>     # 1-253: number of failed doctests \n>     # 254: >= 254 doctests failed \n>     # 255: exception raised by doctesting framework",
     "created_at": "2010-01-20T08:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69832",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69712",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -149,15 +148,15 @@ Quick remarks:
 
 ---
 
-archive/issue_comments_069833.json:
+archive/issue_comments_069713.json:
 ```json
 {
     "body": "Sorry, I screwed up my citation. Here it is again.\n\n- The following two comments seem contradictory. Or am I\n  misunderstanding something?\n\n\n```\n # Return value in process exit code: \n # 0: all tests passed \n # 1: file not found \n # 2: KeyboardInterrupt \n # 3: doctest process was terminated by a signal \n # 4: the doctesting framework raised an exception \n # 100: failed doctests \n #################################################################### \n\n def test_code(filename): \n     # Return value in the doctest process exit code: \n     # 0: everything passed \n     # 1-253: number of failed doctests \n     # 254: >= 254 doctests failed \n     # 255: exception raised by doctesting framework \n```\n",
     "created_at": "2010-01-20T09:01:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69833",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69713",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -190,15 +189,15 @@ Sorry, I screwed up my citation. Here it is again.
 
 ---
 
-archive/issue_comments_069834.json:
+archive/issue_comments_069714.json:
 ```json
 {
     "body": "Replying to [comment:4 nthiery]:\n> Sorry, I screwed up my citation. Here it is again.\n\nOops again. This remark is actually about #7993. I was looking at both, and got confused.",
     "created_at": "2010-01-20T09:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69834",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69714",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -211,15 +210,15 @@ Oops again. This remark is actually about #7993. I was looking at both, and got 
 
 ---
 
-archive/issue_comments_069835.json:
+archive/issue_comments_069715.json:
 ```json
 {
     "body": "Thanks for the feedback.\n\nThe `sage-doctest` script generates a new python file that runs the actual doctests, and runs this script in a seperate thread. The second block of process exit codes are for this 'inner' doctest process. I'll clarify the confusing comment (and fix the typo you mentioned).\n\nAs for the exception: you can get a traceback if you re-run with the -verbose. Do you think we should show them by default?",
     "created_at": "2010-01-20T17:44:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69835",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69715",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -233,15 +232,15 @@ As for the exception: you can get a traceback if you re-run with the -verbose. D
 
 ---
 
-archive/issue_comments_069836.json:
+archive/issue_comments_069716.json:
 ```json
 {
     "body": "I attached a new patch to #7993 that changes the exit code comments.",
     "created_at": "2010-01-20T18:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69836",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69716",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -251,15 +250,15 @@ I attached a new patch to #7993 that changes the exit code comments.
 
 ---
 
-archive/issue_comments_069837.json:
+archive/issue_comments_069717.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-23T01:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69837",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69717",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -269,15 +268,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_069838.json:
+archive/issue_comments_069718.json:
 ```json
 {
     "body": "I played with this a bit and it works well.",
     "created_at": "2010-01-23T01:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69838",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69718",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -287,15 +286,15 @@ I played with this a bit and it works well.
 
 ---
 
-archive/issue_comments_069839.json:
+archive/issue_comments_069719.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-23T01:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69839",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69719",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -305,15 +304,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069840.json:
+archive/issue_comments_069720.json:
 ```json
 {
     "body": "Merged in the script repository.",
     "created_at": "2010-01-23T09:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69840",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69720",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -323,15 +322,15 @@ Merged in the script repository.
 
 ---
 
-archive/issue_comments_069841.json:
+archive/issue_comments_069721.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-23T09:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69841",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69721",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -341,15 +340,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_069842.json:
+archive/issue_comments_069722.json:
 ```json
 {
     "body": "The patch here doesn't work; it exits sage-doctest with sys.exit(2), and then munges the error code with \"err = err // 256\" -- that is, it does floor division by 256, so the 2 becomes 0 and KeyboardInterrupts are never detected!\n\nI hope to fix this while working on #8641.",
     "created_at": "2010-04-13T13:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69842",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69722",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -361,15 +360,15 @@ I hope to fix this while working on #8641.
 
 ---
 
-archive/issue_comments_069843.json:
+archive/issue_comments_069723.json:
 ```json
 {
     "body": "I tested this, and it worked for me, as well as matching what the python docs say it does on unix systems. Does it not work on your system?\n\nThe python docs for `os.system`:\n\n\n```\nOn Unix, the return value is the exit status of the process encoded in\nthe format specified for wait().\n```\n\n\nAnd for `os.wait`:\n\n\n```\nWait for completion of a child process, and return a tuple containing\nits pid and exit status indication: a 16-bit number, whose low byte is\nthe signal number that killed the process, and whose high byte is the\nexit status (if the signal number is zero); the high bit of the low byte\nis set if a core file was produced. Availability: Unix.\n```\n",
     "created_at": "2010-04-13T13:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69843",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69723",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -400,15 +399,15 @@ is set if a core file was produced. Availability: Unix.
 
 ---
 
-archive/issue_comments_069844.json:
+archive/issue_comments_069724.json:
 ```json
 {
     "body": "See #8641 for a followup.",
     "created_at": "2010-04-13T20:19:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69844",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69724",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -418,15 +417,15 @@ See #8641 for a followup.
 
 ---
 
-archive/issue_comments_069845.json:
+archive/issue_comments_069725.json:
 ```json
 {
     "body": "Replying to [comment:12 wjp]:\n> I tested this, and it worked for me, as well as matching what the python docs say it does on unix systems. Does it not work on your system?\n\nNo, it doesn't. I'll work on this more, but I know that, on my Ubuntu 9.10 system, if I ctrl-c while running tests on a bunch of files, it doesn't interrupt the whole process. In sage-test, I have this:\n\n```\nprint 'finished with %s, err: %s' % (F, err)\nerr = err // 256\nprint 'finished with %s, err: %s' % (F, err)\n```\n\nand here's what I get:\n\n```\ndrake@sagenb:~/s/sage-4.3.5$ ./sage -t devel/sage/sage/combinat/t*.py\nsage -t  \"devel/sage/sage/combinat/tableau.py\"              \n^CKeyboardInterrupt -- interrupted after 2.3 seconds!\nfinished with devel/sage/sage/combinat/tableau.py, err: 2\nfinished with devel/sage/sage/combinat/tableau.py, err: 0\n         [2.4 s]\nsage -t  \"devel/sage/sage/combinat/tools.py\"                \nfinished with devel/sage/sage/combinat/tools.py, err: 0\nfinished with devel/sage/sage/combinat/tools.py, err: 0\n         [1.6 s]\nsage -t  \"devel/sage/sage/combinat/tuple.py\"                \nfinished with devel/sage/sage/combinat/tuple.py, err: 0\nfinished with devel/sage/sage/combinat/tuple.py, err: 0\n         [2.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.2 seconds\n```\n\n\nI'm not sure why this isn't working.",
     "created_at": "2010-04-13T22:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69845",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69725",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -471,15 +470,15 @@ I'm not sure why this isn't working.
 
 ---
 
-archive/issue_comments_069846.json:
+archive/issue_comments_069726.json:
 ```json
 {
     "body": "I put in a few print statements, like Dan did:\n\n```\n    print err,\n    err = err // 256\n    print err\n```\n\nOn my iMac running OS X 10.6, when I hit ctrl-C, I see\n\n```\n515 2\n```\n\nwhich looks okay.\n\nOn sage.math, I see\n\n```\n2 0\n```\n\nwhich doesn't.",
     "created_at": "2010-04-13T22:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69846",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7995#issuecomment-69726",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

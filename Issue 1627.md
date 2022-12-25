@@ -6,15 +6,14 @@ archive/issues_001627.json:
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1627\n\n",
     "created_at": "2007-12-29T04:40:24Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "update libgcrypt to 1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1627",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1627
 
 ---
 
-archive/issue_comments_010370.json:
+archive/issue_comments_010343.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-29T04:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1627",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10370",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10343",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_010371.json:
+archive/issue_comments_010344.json:
 ```json
 {
     "body": "An updated spkg with OSX 64 bit build support can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/alpha0/libgcrypt-1.4.0.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-01-19T23:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1627",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10371",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10344",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +70,15 @@ Michael
 
 ---
 
-archive/issue_comments_010372.json:
+archive/issue_comments_010345.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-19T23:34:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1627",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10372",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1627#issuecomment-10345",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

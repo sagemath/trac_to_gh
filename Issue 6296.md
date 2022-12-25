@@ -6,7 +6,7 @@ archive/issues_006296.json:
     "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Wed, Jun 10, 2009 at 6:03 PM, Yann<yannlaiglechapuy@gmail.com> wrote:\n>\n> ----------------------------------------------------------------------\n> | Sage Version 4.0.1, Release Date: 2009-06-06                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: A=matrix(GF(3),2,[0,0,1,2])\n> sage: R.<x>=GF(3)[]\n> sage: D={ x:0 , x+1:0 , x^2+x:0 }\n> sage: for i in range(100000):\n> ....:         D[A._minpoly_linbox()]+=1\n> ....:\n> sage: D\n> {x: 38266, x + 1: 29397, x^2 + x: 32337}\n>\n\n\nYou're absolutely right!  This *sucks* -- it seems like nothing we have ever wrapped in Linbox is right at first.  Hopefully the issue is that somehow the algorithm is only supposed to be probabilistic, and we're just misusing it in sage (quite possible). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6296\n\n",
     "created_at": "2009-06-15T10:51:54Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006296.json:
     "title": "linbox minpoly over small finite fields is TOTALLY BROKEN",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6296",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -52,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6296
 
 ---
 
-archive/issue_comments_050238.json:
+archive/issue_comments_050142.json:
 ```json
 {
     "body": "from a linbox devel:\n\n```\nWell, I think this was corrected in linbox-1.1.6:\n\nThe minpoly algorithm used depends on which method you are using from\nLinBox of course but,\nIf you use the solution \"minpoly\" you will get the blackbox algorithm\n(just like if you specify \"minpoly(pol, mat, Method::Blackbox())\")\nthen (since sept 2008 and 1.1.6) we will end up using an extension field\nto compute the minpoly (on my machine it will be GF(3^10)) and then\nI e.g. got the following result for one try (the algorithm is still\nprobabilistic, but has a much larger success rate, roughly around 1/3^10):\n\n > 99993 minimal Polynomials are x^2 +x, 3 minimal polynomial are x+1, 4\nminimal polynomials are x\n\nNow for a so small matrix it could be better to use a dense version,\nwhich can be called by \"minpoly(pol,mat,Method::Elimination())\".\nIf i am correct this dense version is also probabilistic (choice of the\nKrylov non-zero vector) and therefore should also pick vectors from an\nextension.\nThis is not the case in 1.1.6.\nCl\u00e9ment can you confirm this ? If so it should be easy to fix, the same\nway we fixed Wiedemann.\n\nFor your example matrix in some of the cases, when vectors [1,1], and\n[2,2] are chosen the Krylov space has rank 1, whereas for other non zero\nvectors  it has rank 2 and\nthus the dense minbpoly will be x^2+x or x+1 ...\n\nbtw, the returned polynomial is always a factor of the true polynomial,\ntherefore to get a 1/3^{10k} probability  of success it will be\nsufficient to perform the lcm of k runs.\n\nBest,\n\n--\n                                       Jean-Guillaume Dumas.\n```\n\n\nMy remarks\n\n```\nHi Yann (and sage-support),\n\nThis is from a linbox developer (see below).   This will be fixed by:\n\n (1) upgrading -- actually, we *already* use linbox-1.1.6 in sage, so ...\n\n (2) making it so minpoly by default just raises a NotImplementedError, however\n   minpoly(proof=False) will call minpoly a bunch of times and return\nthe lcm of the\n   results.\n\nIt turns out that maybe linbox doesn't seem to have a proof=True\nminpoly algorithm yet (they are hard to write), so our wrapping of\nlinbox is wrong, given that in Sage the default is proof=True\neverywhere.\n\nYann -- if you want to work on improving the situation wrt any of the\nabove, please do.\n\nWilliam\n```\n",
     "created_at": "2009-06-15T14:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50238",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50142",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -136,15 +136,15 @@ William
 
 ---
 
-archive/issue_comments_050239.json:
+archive/issue_comments_050143.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-17T13:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50239",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50143",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -154,15 +154,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_050240.json:
+archive/issue_comments_050144.json:
 ```json
 {
     "body": "Attachment [trac_6296.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296.patch) by @williamstein created at 2010-01-17 13:14:14",
     "created_at": "2010-01-17T13:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50240",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50144",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -172,15 +172,15 @@ Attachment [trac_6296.patch](tarball://root/attachments/some-uuid/ticket6296/tra
 
 ---
 
-archive/issue_comments_050241.json:
+archive/issue_comments_050145.json:
 ```json
 {
     "body": "We should at least take the lcm of the results so far:\n\nline 974:  g = g.lcm(self._minpoly_linbox(var)\n\notherwise, it seems ok.\n\nYann",
     "created_at": "2010-02-02T16:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50241",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50145",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -196,15 +196,15 @@ Yann
 
 ---
 
-archive/issue_comments_050242.json:
+archive/issue_comments_050146.json:
 ```json
 {
     "body": "Attachment [trac_6296-part2.patch](tarball://root/attachments/some-uuid/ticket6296/trac_6296-part2.patch) by @williamstein created at 2010-02-07 07:12:01\n\nthis is part 2",
     "created_at": "2010-02-07T07:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50242",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50146",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -216,15 +216,15 @@ this is part 2
 
 ---
 
-archive/issue_comments_050243.json:
+archive/issue_comments_050147.json:
 ```json
 {
     "body": "Ok positive review.\n\nAs an aside, is their any reason the result is cached but never fetched?\n\nYann",
     "created_at": "2010-02-07T12:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50243",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50147",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -238,15 +238,15 @@ Yann
 
 ---
 
-archive/issue_comments_050244.json:
+archive/issue_comments_050148.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-07T12:24:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50244",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50148",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -256,15 +256,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_050245.json:
+archive/issue_comments_050149.json:
 ```json
 {
     "body": "Please remember to update the relevant ticket fields --- the release\nmanagers use an automated script to generate lists of merged tickets.",
     "created_at": "2010-02-11T14:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50245",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50149",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -275,15 +275,15 @@ managers use an automated script to generate lists of merged tickets.
 
 ---
 
-archive/issue_comments_050246.json:
+archive/issue_comments_050150.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T14:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50246",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6296#issuecomment-50150",
+    "user": "https://github.com/qed777"
 }
 ```
 

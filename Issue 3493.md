@@ -6,7 +6,7 @@ archive/issues_003493.json:
     "body": "Assignee: tba\n\nIn part 37.8 of the Reference Manual (the Elliptic curves over finite fields section) there are some formatting issues. For instance, in the section on the frobenius_polynomial, we have the sentence:\n\n\n```\nThe Frobenius endomorphism of the elliptic curve has quadratic characteristic polynomial. \nIn most cases this is irreducible and defines an imaginary quadratic order; \nfor some supersingular curves, Frobenius is an integer a and the polynomial is 1703#326 .}}}\n\nI assume that the 1703#326 is some sort of broken formatting code.\n\nThere are similar examples throughout this page.\n\nOn a slightly different tack, in the documentation for cardinality and order, it would be helpful to say that \"sea\" (as in the algorithm) means Schoof-Elkies-Atkin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3493\n\n",
     "created_at": "2008-06-23T09:07:08Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003493.json:
     "title": "Notes on Elliptic curves documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3493",
-    "user": "ljpk"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
 Assignee: tba
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3493
 
 ---
 
-archive/issue_comments_024600.json:
+archive/issue_comments_024551.json:
 ```json
 {
     "body": "The strange omission or garblings are all for pieces of docstrings in LaTeX format, i.e. between $...$.  But there are many other such parts of docstrings which display fine.  So I don't know why some don't come out right.",
     "created_at": "2008-08-01T02:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24600",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24551",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -59,15 +59,15 @@ The strange omission or garblings are all for pieces of docstrings in LaTeX form
 
 ---
 
-archive/issue_comments_024601.json:
+archive/issue_comments_024552.json:
 ```json
 {
     "body": "The first issue doesn't seem to be a problem with the new documentation.  I'm attaching a patch for the second one ('sea').",
     "created_at": "2009-02-26T17:20:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24601",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24552",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -77,15 +77,15 @@ The first issue doesn't seem to be a problem with the new documentation.  I'm at
 
 ---
 
-archive/issue_comments_024602.json:
+archive/issue_comments_024553.json:
 ```json
 {
     "body": "Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.patch) by @jhpalmieri created at 2009-02-26 17:21:00",
     "created_at": "2009-02-26T17:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24602",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24553",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -95,15 +95,15 @@ Attachment [3493.patch](tarball://root/attachments/some-uuid/ticket3493/3493.pat
 
 ---
 
-archive/issue_comments_024603.json:
+archive/issue_comments_024554.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T22:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24603",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24554",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -117,15 +117,15 @@ Michael
 
 ---
 
-archive/issue_comments_024604.json:
+archive/issue_comments_024555.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-23T22:12:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3493",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24604",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3493#issuecomment-24555",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

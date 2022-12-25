@@ -6,15 +6,14 @@ archive/issues_001664.json:
     "body": "Assignee: @williamstein\n\nLatest up at \n\nhttp://sage.math.washington.edu/home/robertwb/3d/\n\nIssue created by migration from https://trac.sagemath.org/ticket/1664\n\n",
     "created_at": "2008-01-03T10:05:54Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "[with spkg] new version of jmol",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1664",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1664
 
 ---
 
-archive/issue_comments_010579.json:
+archive/issue_comments_010552.json:
 ```json
 {
     "body": "Ok, I merged jmol-11.5.2.spkg.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T13:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1664",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1664#issuecomment-10579",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1664#issuecomment-10552",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +52,15 @@ Michael
 
 ---
 
-archive/issue_comments_010580.json:
+archive/issue_comments_010553.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-03T13:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1664",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1664#issuecomment-10580",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1664#issuecomment-10553",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007416.json:
     "body": "Assignee: mvngu\n\nCC:  david.kirkby@onetel.net\n\nThe title says it all really. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7416\n\n",
     "created_at": "2009-11-09T13:26:38Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Create a 'man page'",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7416",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: mvngu
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7416
 
 ---
 
-archive/issue_comments_062405.json:
+archive/issue_comments_062290.json:
 ```json
 {
     "body": "IMO this man page should be written in reStructuredText for maintainability. `make` should generate the man page file using `rst2man.py` from Python's docutils, and `make install` should copy it to the appropriate place to register it into the system's man page database.",
     "created_at": "2013-07-15T19:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7416",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7416#issuecomment-62405",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/7416#issuecomment-62290",
+    "user": "https://github.com/kini"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007163.json:
     "body": "Assignee: tbd\n\n\n```\n<Submarine> hi\n<Submarine> sage: ker=m.right_kernel(sparse=True)\n<Submarine> sage: type(ker.basis_matrix())\n<Submarine> <type 'sage.matrix.matrix_rational_dense.Matrix_rational_dense'>\n<Submarine> Is it normal I'm getting a dense matrix?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7163\n\n",
     "created_at": "2009-10-08T21:05:55Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "right kernel does not respect sparse=True",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7163",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tbd
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7163
 
 ---
 
-archive/issue_comments_059383.json:
+archive/issue_comments_059271.json:
 ```json
 {
     "body": "\n```\nThe \"sparse=True\" option you are passing to right_kernel isn't\nimplemented at all.\n\nIn fact, the way right_kernel is implemented you can make up an\noptions you want and they will be silently ignored:\n\n\nsage: ker=m.right_kernel(foobar=True, stand_on_your_head=True,\nuse_the_force=True, super_sparse=True, dumb=False)\n\nIn the meantime you can get a sparse matrix as follows:\n\nsage: ker=m.right_kernel().basis_matrix().sparse_matrix()\nsage: type(ker)\n<type 'sage.matrix.matrix_rational_sparse.Matrix_rational_sparse'>\nsage: ker.row_module()\nSparse vector space of degree 100 and dimension 99 over Rational Field\nBasis matrix:\n99 x 100 sparse matrix over Rational Field\n\nHere's the relevant code for \"right_kernel\", which as you can see does\nnothing with sparseness...\n\nObviously it would be desirable for somebody to fix the right_kernel\ncommand so one gets errors for all unused options, and all options\nthat should be supported are supported.\n\n\n       if R.is_field():\n           E = self.echelon_form(*args, **kwds)\n           pivots = E.pivots()\n           pivots_set = set(pivots)\n           basis = []\n           V = R ** self.ncols()\n           ONE = R(1)\n           for i in xrange(self._ncols):\n               if not (i in pivots_set):\n                   v = V(0)\n                   v[i] = ONE\n                   for r in range(len(pivots)):\n                       v[pivots[r]] = -E[r,i]\n                   basis.append(v)\n           W = V.submodule(basis)\n           if W.dimension() != len(basis):\n               raise RuntimeError, \"bug in right_kernel function in\nmatrix2.pyx -- basis from echelon form is not a basis.\"\n           self.cache('right_kernel', W)\n           return W\n```\n",
     "created_at": "2009-10-10T02:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7163#issuecomment-59383",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7163#issuecomment-59271",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -106,15 +105,15 @@ matrix2.pyx -- basis from echelon form is not a basis."
 
 ---
 
-archive/issue_comments_059384.json:
+archive/issue_comments_059272.json:
 ```json
 {
     "body": "Changing component from algebra to linear algebra.",
     "created_at": "2009-11-15T13:11:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7163",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7163#issuecomment-59384",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7163#issuecomment-59272",
+    "user": "https://github.com/aghitza"
 }
 ```
 

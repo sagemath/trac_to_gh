@@ -6,15 +6,14 @@ archive/issues_009212.json:
     "body": "Assignee: jason, was\n\nCC:  @rbeezer florent\n\nAfter #8276, the top-level identity_matrix and zero_matrix functions return immutable matrices, which is a backwards-incompatible change that is inconvenient in many cases (when code starts with those matrices as the base and then modifies them).\n\nThis patch makes these matrices mutable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9212\n\n",
     "created_at": "2010-06-11T07:15:15Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "top-level identity_matrix and zero_matrix functions should return mutable matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9212",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: jason, was
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9212
 
 ---
 
-archive/issue_comments_086315.json:
+archive/issue_comments_086177.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-11T07:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86315",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86177",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_086316.json:
+archive/issue_comments_086178.json:
 ```json
 {
     "body": "Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-identity-zero-mutable.patch) by @jasongrout created at 2010-06-11 07:17:30",
     "created_at": "2010-06-11T07:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86316",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86178",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -69,15 +68,15 @@ Attachment [trac-9212-identity-zero-mutable.patch](tarball://root/attachments/so
 
 ---
 
-archive/issue_comments_086317.json:
+archive/issue_comments_086179.json:
 ```json
 {
     "body": "I'm closing this as won't fix, on account of #8276.",
     "created_at": "2010-06-11T07:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86317",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86179",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -87,15 +86,15 @@ I'm closing this as won't fix, on account of #8276.
 
 ---
 
-archive/issue_comments_086318.json:
+archive/issue_comments_086180.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2010-06-11T07:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86318",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86180",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +104,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_086319.json:
+archive/issue_comments_086181.json:
 ```json
 {
     "body": "The discussion there didn't discuss the top-level identity_matrix or zero_matrix functions.  In fact, they made a big change to those functions without deprecations.  The attached patch does *not* revert the changes in #8276.  It just restricts the changes to exactly what was discussed (i.e., this patch takes care of what I see as an unintended ramification of the changes in #8276).\n\nI won't reopen this, as that's pushing things.  But I think you're cutting off the discussion way too soon.",
     "created_at": "2010-06-11T08:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86319",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86181",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -125,15 +124,15 @@ I won't reopen this, as that's pushing things.  But I think you're cutting off t
 
 ---
 
-archive/issue_comments_086320.json:
+archive/issue_comments_086182.json:
 ```json
 {
     "body": "Replying to [comment:4 jason]:\n\n> I won't reopen this, as that's pushing things.  But I think you're cutting off the discussion way too soon.\n\n(I mean, I won't personally reopen this right now, but I really wish you would revert your decision to shut it down so abruptly, especially considering that this ticket does *not* revert the changes in #8276, and in fact makes #8276 not break the deprecation policy).",
     "created_at": "2010-06-11T08:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86320",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86182",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -147,15 +146,15 @@ Replying to [comment:4 jason]:
 
 ---
 
-archive/issue_comments_086321.json:
+archive/issue_comments_086183.json:
 ```json
 {
     "body": "Yet another reason for making identity_matrix and zero_matrix behave as they always have behaved and return mutable matrices: every top-level constructor from matrix/constructor.py (e.g., matrix(...), random_matrix(...), block_matrix(...), etc.) used to return a mutable matrix, so they were consistent with each other.  But now, #8276 made the top-level identity_matrix and zero_matrix constructors behave unlike the others (again, without deprecation and without discussion of the top-level function behavior).",
     "created_at": "2010-06-11T09:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86321",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86183",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -165,15 +164,15 @@ Yet another reason for making identity_matrix and zero_matrix behave as they alw
 
 ---
 
-archive/issue_comments_086322.json:
+archive/issue_comments_086184.json:
 ```json
 {
     "body": "I posted a call for a vote to sage-devel:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/b3743044a4579376\n\nbecause clearly if the confusion above stemmed from a discussion on sage-devel, the appropriate place to resolve things is on sage-devel.",
     "created_at": "2010-06-13T04:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86322",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86184",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -187,15 +186,15 @@ because clearly if the confusion above stemmed from a discussion on sage-devel, 
 
 ---
 
-archive/issue_comments_086323.json:
+archive/issue_comments_086185.json:
 ```json
 {
     "body": "Hey Jason,\n\nFollowing test in sage/misc/sagedoc.py (line 1089) is now broken.\n\n\n```\nsage: browse_sage_doc(identity_matrix, 'rst')[-60:-5]\n```\n\n\nYou did run full tests before posting this, didn't you?  ;-)  More commentary in the morning.\n\nRob",
     "created_at": "2010-06-14T05:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86323",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86185",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -217,15 +216,15 @@ Rob
 
 ---
 
-archive/issue_comments_086324.json:
+archive/issue_comments_086186.json:
 ```json
 {
     "body": "I have a review of this ready to go, and the only change needed is to fix the doctest doctest failure noted above.  Once you are satisfied with the vote on sage-devel, note the result here and I'll proceed accordingly.\n\nRob",
     "created_at": "2010-06-14T15:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86324",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86186",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -237,15 +236,15 @@ Rob
 
 ---
 
-archive/issue_comments_086325.json:
+archive/issue_comments_086187.json:
 ```json
 {
     "body": "Resolution changed from wontfix to ",
     "created_at": "2010-06-14T16:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86325",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86187",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -255,15 +254,15 @@ Resolution changed from wontfix to
 
 ---
 
-archive/issue_comments_086326.json:
+archive/issue_comments_086188.json:
 ```json
 {
     "body": "I'm satisfied with the vote enough to reopen this ticket.",
     "created_at": "2010-06-14T16:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86326",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86188",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -273,15 +272,15 @@ I'm satisfied with the vote enough to reopen this ticket.
 
 ---
 
-archive/issue_comments_086327.json:
+archive/issue_comments_086189.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2010-06-14T16:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86327",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86189",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -291,15 +290,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_086328.json:
+archive/issue_comments_086190.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-14T16:13:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86328",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86190",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -309,15 +308,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_086329.json:
+archive/issue_comments_086191.json:
 ```json
 {
     "body": "Replying to [comment:8 rbeezer]:\n> Hey Jason,\n> \n> Following test in sage/misc/sagedoc.py (line 1089) is now broken.\n> \n> {{{\n> sage: browse_sage_doc(identity_matrix, 'rst')[-60:-5]\n> }}}\n> \n> You did run full tests before posting this, didn't you?  ;-)  \n\nNo, I didn't run full doctests before posting the patch, so thanks for catching this!  I believe I tested the matrix directory, though.\n\nWhen you say you have a review ready to go, do you mean that you have a reviewer patch to fix the doctest error, or should I do that?",
     "created_at": "2010-06-14T16:13:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86329",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86191",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -340,15 +339,15 @@ When you say you have a review ready to go, do you mean that you have a reviewer
 
 ---
 
-archive/issue_comments_086330.json:
+archive/issue_comments_086192.json:
 ```json
 {
     "body": "I have a \"positive review\" report, but no reviewer patch to make it happen.  So make/update a patch, and I'll issue a review.",
     "created_at": "2010-06-14T16:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86330",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86192",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -358,15 +357,15 @@ I have a "positive review" report, but no reviewer patch to make it happen.  So 
 
 ---
 
-archive/issue_comments_086331.json:
+archive/issue_comments_086193.json:
 ```json
 {
     "body": "Attachment [trac-9212-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket9212/trac-9212-fix-doctests.patch) by @jasongrout created at 2010-06-14 20:35:23\n\napply on top of previous patches",
     "created_at": "2010-06-14T20:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86331",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86193",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -378,15 +377,15 @@ apply on top of previous patches
 
 ---
 
-archive/issue_comments_086332.json:
+archive/issue_comments_086194.json:
 ```json
 {
     "body": "Okay, doctest is fixed.",
     "created_at": "2010-06-14T20:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86332",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86194",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -396,15 +395,15 @@ Okay, doctest is fixed.
 
 ---
 
-archive/issue_comments_086333.json:
+archive/issue_comments_086195.json:
 ```json
 {
     "body": "This all looks good, passes tests on 4.4.4.alpha0 and HTML documentation looks fine coming from matrix/constructor.py\n\nPositive review.",
     "created_at": "2010-06-14T20:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86333",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86195",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -416,15 +415,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_086334.json:
+archive/issue_comments_086196.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-14T20:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86334",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86196",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -434,15 +433,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_086335.json:
+archive/issue_comments_086197.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T08:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86335",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9212#issuecomment-86197",
+    "user": "https://github.com/qed777"
 }
 ```
 

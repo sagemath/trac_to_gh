@@ -6,7 +6,7 @@ archive/issues_005385.json:
     "body": "Assignee: mabshoff\n\nAs reported in http://groups.google.com/group/sage-support/browse_thread/thread/9f6349d362f0dd64:\n\nI've tried to build from sources sage-3.3 but I still have an \nunexpected error when running sage :-( \n\nThe log is available here: http://www.lri.fr/~oudinet\n\n  /pub/debiansage2.log \n\nI add that when I manually try to execute the command gap with the \nsame options, I get : \n\n```\n$ gap -r -b -p -T -o 9999G /usr/local/sage-3.3/data//extcode/gap/sage.g \n@p1.@!19924+@\"2014+@#91395+@$7138+@%24361+@&67542+@!24824+\n@\"7764+@#33736+@$5915+@%21601+@&67542+@!48921+@\"9581+@#09404+\n@$3263+@%5248+@&67542+@!2688+@\"6321+@#95313+@$0292+@%0796+\n@&67542+@!3448+@\"5201+@#54952+@$8622+@%2475+@&67542+@!7689+\n@\"949+@#89662+@$9281+@%2454+@&67542+@!3448+@\"1101+@#75312+\n@$7761 +@%4233+@&67542+@nGAP4, \nVersion: 4.4.12 of 17-Dec-2008, \nx86_64-unknown-linux-gnu-gcc@J@!0012+@\"385+@#0944+@$144+@%6262+@&67542+@nga p> \n@i \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5385\n\n",
     "created_at": "2009-02-26T13:53:26Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005385.json:
     "title": "Sage 3.3: GAP 4.4.12 experiences strange startup problem on some Linux systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5385",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -57,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5385
 
 ---
 
-archive/issue_comments_041478.json:
+archive/issue_comments_041396.json:
 ```json
 {
     "body": "wontfix due to the GAP downgrade at #5697.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-19T02:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5385",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5385#issuecomment-41478",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5385#issuecomment-41396",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +79,15 @@ Michael
 
 ---
 
-archive/issue_comments_041479.json:
+archive/issue_comments_041397.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2009-04-19T02:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5385",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5385#issuecomment-41479",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5385#issuecomment-41397",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

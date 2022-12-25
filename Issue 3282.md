@@ -6,7 +6,7 @@ archive/issues_003282.json:
     "body": "Assignee: @garyfurnish\n\nlibecm was moved without updating pbuild and thus pbuild fails to compile sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3282\n\n",
     "created_at": "2008-05-23T16:31:06Z",
     "labels": [
-        "pbuild",
+        "component: pbuild",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003282.json:
     "title": "libecm fails to pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3282",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3282
 
 ---
 
-archive/issue_comments_022699.json:
+archive/issue_comments_022652.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-05-23T16:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3282",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3282#issuecomment-22699",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3282#issuecomment-22652",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -47,15 +47,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_022700.json:
+archive/issue_comments_022653.json:
 ```json
 {
     "body": "Duplicate of #3281",
     "created_at": "2008-05-23T16:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3282",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3282#issuecomment-22700",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3282#issuecomment-22653",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 

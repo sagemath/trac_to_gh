@@ -6,15 +6,14 @@ archive/issues_002071.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: var('x')\nx\nsage: x.conjugate()\nx\n```\n\n\nUnder the assumption that x might be complex, this should really return conjugate(x).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2071\n\n",
     "created_at": "2008-02-06T06:37:57Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "SymbolicExpression conjugate() method assumes variables are real",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2071",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2071
 
 ---
 
-archive/issue_comments_013394.json:
+archive/issue_comments_013363.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-16T20:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13394",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13363",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -57,15 +56,15 @@ Changing assignee from @williamstein to @garyfurnish.
 
 ---
 
-archive/issue_comments_013395.json:
+archive/issue_comments_013364.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-16T20:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13395",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13364",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -75,15 +74,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_013396.json:
+archive/issue_comments_013365.json:
 ```json
 {
     "body": "This could be handled using Maxima's declare facility:\n\n\n```\nsage: sage.calculus.calculus.maxima.eval('declare(x, complex)')\n'done'\nsage: x.conjugate()\nconjugate(x)\n```\n\n\nThis also fixed by Pynac:\n\n\n```\nsage: x = var('x', ns=1)\nsage: x\nx\nsage: x.conjugate()\nconjugate(x)\n```\n",
     "created_at": "2008-11-14T09:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13396",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13365",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -114,15 +113,15 @@ conjugate(x)
 
 ---
 
-archive/issue_comments_013397.json:
+archive/issue_comments_013366.json:
 ```json
 {
     "body": "This is fixed in 4.0.rc0. There is a doctest in line 3871 of sage/symbolic/expression.pyx.\n\nThis bug should be closed as fixed.",
     "created_at": "2009-05-25T09:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13397",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13366",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -134,15 +133,15 @@ This bug should be closed as fixed.
 
 ---
 
-archive/issue_comments_013398.json:
+archive/issue_comments_013367.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-26T16:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13398",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2071#issuecomment-13367",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

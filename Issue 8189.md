@@ -6,7 +6,7 @@ archive/issues_008189.json:
     "body": "Assignee: mvngu\n\nIn hg.py, strings like `ssh://[user`@`]host[:port]/[path]` appear in docstrings, and Sphinx turns them into active links in the html documentation (which are obviously broken), and Sphinx produces warnings when producing the latex/pdf documentation:\n\n```\n.../devel/sage/doc/en/reference/sage/misc/hg.rst:: WARNING: unusable reference target found: ssh://[user@]host[:port]/[path\n```\n\nThis patch puts these links into double backquotes, fixing both of these issues.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8189\n\n",
     "created_at": "2010-02-05T04:54:39Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008189.json:
     "title": "hg.py: fix some docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8189",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8189
 
 ---
 
-archive/issue_comments_072181.json:
+archive/issue_comments_072059.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-05T04:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72181",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72059",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -54,15 +54,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072182.json:
+archive/issue_comments_072060.json:
 ```json
 {
     "body": "Attachment [trac_8189-hg.patch](tarball://root/attachments/some-uuid/ticket8189/trac_8189-hg.patch) by @jhpalmieri created at 2010-02-05 04:55:30",
     "created_at": "2010-02-05T04:55:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72182",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72060",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -72,15 +72,15 @@ Attachment [trac_8189-hg.patch](tarball://root/attachments/some-uuid/ticket8189/
 
 ---
 
-archive/issue_comments_072183.json:
+archive/issue_comments_072061.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-05T06:12:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72183",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72061",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -90,15 +90,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_072184.json:
+archive/issue_comments_072062.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T15:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72184",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8189#issuecomment-72062",
+    "user": "https://github.com/qed777"
 }
 ```
 

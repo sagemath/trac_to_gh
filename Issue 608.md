@@ -6,15 +6,14 @@ archive/issues_000608.json:
     "body": "Assignee: somebody\n\n\n```\nI'm distraught (well, not quite that bad) about the following transcript for\ntwo reasons:\n1)  It shouldn't simply blow up\n2)  I think it should actually work (and it used to work back about last\nspring -- I have code that relies on it)\n\n--\nJoel\n\njoel@friedrich ~$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.3.6, Release Date: 2007-09-06                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x=GF(7)['x'].0\nsage: moebius(x+2)\n\n ***   not an integer argument in an arithmetic function\n/home/joel/sage/local/bin/sage-sage: line 190: 18621 Aborted\nsage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\njoel@friedrich ~$\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/608\n\n",
     "created_at": "2007-09-07T00:37:08Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "bug in mobius",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/608",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/608
 
 ---
 
-archive/issue_comments_003129.json:
+archive/issue_comments_003116.json:
 ```json
 {
     "body": "backtrace:\n\n```\n[Switching to Thread 46912496204160 (LWP 17241)]\n0x0000003105830015 in raise () from /lib64/libc.so.6\n(gdb) bt\n#0  0x0000003105830015 in raise () from /lib64/libc.so.6\n#1  0x0000003105831980 in abort () from /lib64/libc.so.6\n#2  0x00002aaab4d14f8a in pari_init_opts () from /tmp/Work2/sage-2.8.3.6-clean/local/lib/libpari-gmp.so.2\n#3  0x00007fffa64021c0 in ?? ()\n#4  0x000000000ac3e9d0 in ?? ()\n#5  0x00000000004a0009 in r_object (p=0x6) at Python/marshal.c:682\n#6  0x00000000004a077e in r_object (p=0x73) at Python/marshal.c:428\n#7  0x00007fffa63ffde1 in ?? ()\n#8  0x0000000000721ea0 in _Py_SwappedOp ()\n#9  0x000000000049be72 in find_module (fullname=0x7fffa6400e60 \"c\", subname=0xac6d140 \"\", path=<value optimized out>,\n    buf=0x7fffa63ffde1 \".pyc\", buflen=4097, p_fp=0x7fffa6400da0, p_loader=0xacce908) at Python/import.c:1427\n#10 0x0000000000000001 in ?? ()\n#11 0x000000000acce908 in ?? ()\n#12 0x0000000000000004 in ?? ()\n#13 0x00002aaaae4cbcf0 in ?? ()\n#14 0x0000000000000000 in ?? ()\n```\n",
     "created_at": "2007-09-07T00:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3129",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3116",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -94,15 +93,15 @@ backtrace:
 
 ---
 
-archive/issue_comments_003130.json:
+archive/issue_comments_003117.json:
 ```json
 {
     "body": "Fixed -- see attached patch.",
     "created_at": "2007-09-07T01:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3130",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3117",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -112,15 +111,15 @@ Fixed -- see attached patch.
 
 ---
 
-archive/issue_comments_003131.json:
+archive/issue_comments_003118.json:
 ```json
 {
     "body": "Attachment [6197.patch](tarball://root/attachments/some-uuid/ticket608/6197.patch) by @williamstein created at 2007-09-07 01:37:59",
     "created_at": "2007-09-07T01:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3131",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3118",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -130,15 +129,15 @@ Attachment [6197.patch](tarball://root/attachments/some-uuid/ticket608/6197.patc
 
 ---
 
-archive/issue_comments_003132.json:
+archive/issue_comments_003119.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-07T01:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3132",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/608#issuecomment-3119",
+    "user": "https://github.com/williamstein"
 }
 ```
 

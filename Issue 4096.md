@@ -6,15 +6,14 @@ archive/issues_004096.json:
     "body": "Assignee: @JohnCremona\n\nCC:  alexghitza\n\nThis is a follow-up from 4064.  Alex Ghitza and I are doing a big job sorting out the interface with the pari library with respect to (real and complex) precision, where there is currently confusion leading to weird results when word-precision, bit-precision and decimal precision are being confused.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4096\n\n",
     "created_at": "2008-09-10T08:44:01Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "pari precision interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4096",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @JohnCremona
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4096
 
 ---
 
-archive/issue_comments_029544.json:
+archive/issue_comments_029485.json:
 ```json
 {
     "body": "The story so far:  these apply in succession to 3.1.2.rc2:\n\n* Patch 1 (John) [originally called 4064-ell_pari_precision-2.patch]\n* Patch 2 (Alex) [..........................................3......]\n* Patch 3 (John) Adjusted previous for 64-bit\n* Patch 4 (John) ... and readjusted for 32-bit\n\nThe number of places where we need separate doctest results for 32- and 64-bit is very reduced but not entirely.  The main work remaining is to sort out the constructor pari(K) where K is a number field.  I thought I had sorted out pari(E) to be identical for 32 and 64 but it is not quite there yet (for E an elliptic curve).\n\nThere is no reason for the patch names to ahve ell_ in them, this is absolutely not just about elliptic curves!",
     "created_at": "2008-09-11T20:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29544",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29485",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -58,15 +57,15 @@ There is no reason for the patch names to ahve ell_ in them, this is absolutely 
 
 ---
 
-archive/issue_comments_029545.json:
+archive/issue_comments_029486.json:
 ```json
 {
     "body": "There is a new patch 4096-pari_real_precision.patch which replaces the previous ones, is based on 3.1.2.rc3, and adds more stuff.  Still not quite ready for review, but we're getting there.",
     "created_at": "2008-09-15T08:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29545",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29486",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -76,15 +75,15 @@ There is a new patch 4096-pari_real_precision.patch which replaces the previous 
 
 ---
 
-archive/issue_comments_029546.json:
+archive/issue_comments_029487.json:
 ```json
 {
     "body": "The following should be applied to 3.1.2:\n\n4096-pari_real_precision.patch  [Alex]\n4096-pari_real_precision64.patch [John after 64-bit testing]\n4096-matrix_real_pari64.patch [Alex PLUS some extra 64-bit stuff from John]\n4096-pari_real_precision32.patch [tiny extra from John in number_field]\n\nAll tests pass.",
     "created_at": "2008-09-18T22:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29546",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29487",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -101,15 +100,15 @@ All tests pass.
 
 ---
 
-archive/issue_comments_029547.json:
+archive/issue_comments_029488.json:
 ```json
 {
     "body": "I've added another tiny patch which removes unnecessarily complicated code from converting to Pari in polynomial_element.pyx.",
     "created_at": "2008-09-19T08:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29547",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29488",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -119,15 +118,15 @@ I've added another tiny patch which removes unnecessarily complicated code from 
 
 ---
 
-archive/issue_comments_029548.json:
+archive/issue_comments_029489.json:
 ```json
 {
     "body": "doc patch, apply to 3.1.2",
     "created_at": "2008-09-19T23:36:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29548",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29489",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -137,15 +136,15 @@ doc patch, apply to 3.1.2
 
 ---
 
-archive/issue_comments_029549.json:
+archive/issue_comments_029490.json:
 ```json
 {
     "body": "Attachment [4096-doc_const.patch](tarball://root/attachments/some-uuid/ticket4096/4096-doc_const.patch) by @aghitza created at 2008-09-19 23:43:27\n\nJohn and I agree that it is time for this to be reviewed.\n\nTo make this easier, I have put everything into one patch 4096-pari_real_precision_all.patch, which applies to 3.1.2.  There is also a small doc patch 4096-doc_const.patch which fixes a related issue in const.tex, and also applies to 3.1.2.\n\nNote to the reviewer: it would be best to start by scrolling down in the main patch until you hit the top of gen.pyx; there we have inserted a doc section called \"Guide to real precision and the Pari library\", which documents the correct behavior which is implemented by the patch.",
     "created_at": "2008-09-19T23:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29549",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29490",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -161,15 +160,15 @@ Note to the reviewer: it would be best to start by scrolling down in the main pa
 
 ---
 
-archive/issue_comments_029550.json:
+archive/issue_comments_029491.json:
 ```json
 {
     "body": "Hmm, I don't like the following change:\n\n```\n178\t \t        s = str(self) \n179\t428\t        import sage.libs.pari.gen_py \n180\t \t        return sage.libs.pari.gen_py.pari, (s,) \n \t429\t        return sage.libs.pari.gen_py.pari, (str(self),) \n```\n\nI am not 100% certain, but if s were a C type object the above would cause a leak. I have fixed similar issues over and over again in code all over Sage and I suspect that the reference count for \"return str(foo)\" might be broken somehow. I have zero prove of this, obviously, but I intent to dig deep one day.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-25T00:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29550",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29491",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -192,15 +191,15 @@ Michael
 
 ---
 
-archive/issue_comments_029551.json:
+archive/issue_comments_029492.json:
 ```json
 {
     "body": "Michael,\n\nI will rebase the patch against 3.1.3.alpha1 very soon and fix the issue that you're pointing out.\n\nAlex",
     "created_at": "2008-09-25T10:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29551",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29492",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -214,15 +213,15 @@ Alex
 
 ---
 
-archive/issue_comments_029552.json:
+archive/issue_comments_029493.json:
 ```json
 {
     "body": "Replying to [comment:7 AlexGhitza]:\n> Michael,\n> \n> I will rebase the patch against 3.1.3.alpha1 very soon and fix the issue that you're pointing out.\n> \n> Alex\n\nIt was fine with alpha0.  Thanks, Alex.",
     "created_at": "2008-09-25T11:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29552",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29493",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -239,15 +238,15 @@ It was fine with alpha0.  Thanks, Alex.
 
 ---
 
-archive/issue_comments_029553.json:
+archive/issue_comments_029494.json:
 ```json
 {
     "body": "Attachment [4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/4096-pari_real_precision_all.patch) by @aghitza created at 2008-09-25 13:30:22\n\napply to 3.1.3.alpha1",
     "created_at": "2008-09-25T13:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29553",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29494",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -259,15 +258,15 @@ apply to 3.1.3.alpha1
 
 ---
 
-archive/issue_comments_029554.json:
+archive/issue_comments_029495.json:
 ```json
 {
     "body": "there were a couple of rejects against 3.1.3.alpha1, so i replaced the patch with a rebased one",
     "created_at": "2008-09-25T13:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29554",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29495",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -277,15 +276,15 @@ there were a couple of rejects against 3.1.3.alpha1, so i replaced the patch wit
 
 ---
 
-archive/issue_comments_029555.json:
+archive/issue_comments_029496.json:
 ```json
 {
     "body": "Replying to [comment:9 AlexGhitza]:\n> there were a couple of rejects against 3.1.3.alpha1, so i replaced the patch with a rebased one\n\nNB the doc/const patch still needs to be applied separately.",
     "created_at": "2008-09-25T15:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29555",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29496",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -298,15 +297,15 @@ NB the doc/const patch still needs to be applied separately.
 
 ---
 
-archive/issue_comments_029556.json:
+archive/issue_comments_029497.json:
 ```json
 {
     "body": "4096-pari_real_precision_all.patch is bruising faster than a Georgia peach falling from a tree. I rebased it again against my current 3.1.3.alpha2 treee in two places (one whitespace, the other a printing issue in mpfr_real.pyx) and will attach it shortly. I am testing it right now and am inclined to just merge it since both John and Alex spend considerable time on this. If this patch causes problem you can blame me, but at least that way it is in :). If Craig gets around to review this before 3.1.3.final it would be great it he put patches on top of what I am about to post.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T03:05:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29556",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29497",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -320,15 +319,15 @@ Michael
 
 ---
 
-archive/issue_comments_029557.json:
+archive/issue_comments_029498.json:
 ```json
 {
     "body": "This is the patch that was actually merged in 3.1.3.a2. It is slightly rebased against the previous patch",
     "created_at": "2008-09-26T04:03:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29557",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29498",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -338,15 +337,15 @@ This is the patch that was actually merged in 3.1.3.a2. It is slightly rebased a
 
 ---
 
-archive/issue_comments_029558.json:
+archive/issue_comments_029499.json:
 ```json
 {
     "body": "Attachment [trac_4096-pari_real_precision_all.patch](tarball://root/attachments/some-uuid/ticket4096/trac_4096-pari_real_precision_all.patch) by mabshoff created at 2008-09-26 04:06:48\n\nI read over the patch and it looks good to me. I am certainly no expert, so this positive review should be taken with a grain of salt. Since the patch did bitrot twice and was written by two experts I merged it into 3.1.3.alpha2. Should anything come up during subsequent review please open a new ticket so we can deal with that problem. The situation with the patch is certainly much improved over the old situation, so I consider this a worthy tradeoff. This patch also fixes #4199 and all doctests pass which is the main reason I merged it.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T04:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29558",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29499",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -362,15 +361,15 @@ Michael
 
 ---
 
-archive/issue_comments_029559.json:
+archive/issue_comments_029500.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-26T04:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29559",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29500",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -380,15 +379,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029560.json:
+archive/issue_comments_029501.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha2",
     "created_at": "2008-09-26T04:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4096",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29560",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4096#issuecomment-29501",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_008796.json:
     "body": "Assignee: mvngu\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8796\n\n",
     "created_at": "2010-04-28T06:53:13Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "clean up documentation of logic/propcalc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8796",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: mvngu
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8796
 
 ---
 
-archive/issue_comments_080570.json:
+archive/issue_comments_080438.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-03T02:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80570",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80438",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -47,15 +45,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080571.json:
+archive/issue_comments_080439.json:
 ```json
 {
     "body": "Attachment [trac_8796-propcalc-clean-ups.patch](tarball://root/attachments/some-uuid/ticket8796/trac_8796-propcalc-clean-ups.patch) by mvngu created at 2010-05-03 02:50:50\n\nChanges in the patch include:\n\n* Add `sage/logic/propcalc.py` to the reference manual.\n* Remove tab characters.\n* Clean-ups in accordance with [PEP 008](http://www.python.org/dev/peps/pep-0008/).",
     "created_at": "2010-05-03T02:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80571",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80439",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -71,15 +69,15 @@ Changes in the patch include:
 
 ---
 
-archive/issue_comments_080572.json:
+archive/issue_comments_080440.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-19T20:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80572",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80440",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -89,15 +87,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080573.json:
+archive/issue_comments_080441.json:
 ```json
 {
     "body": "Nice patch. Nothing to complain about :-)\n\nNathann",
     "created_at": "2010-05-19T20:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80573",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80441",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -109,15 +107,15 @@ Nathann
 
 ---
 
-archive/issue_comments_080574.json:
+archive/issue_comments_080442.json:
 ```json
 {
     "body": "*\"Parentheses may be used to explicitly **show** order of operation.\"*\n\nI usually use brackets to **express** (i.e. force) [desired/intended] \"order of operation\", too. ;-)\n\n*\"... variables that consist of a leading letter and trailing underscores and alphanumerics\"* sounds a bit strange.\n\nI'd say *\"... whose names can be made up of alphanumerics and underscores but must start with a letter\"* or something like that.\n\n[Haven't applied the patch yet.]",
     "created_at": "2010-05-21T03:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80574",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80442",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -135,15 +133,15 @@ I'd say *"... whose names can be made up of alphanumerics and underscores but mu
 
 ---
 
-archive/issue_comments_080575.json:
+archive/issue_comments_080443.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T08:39:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80575",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8796#issuecomment-80443",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

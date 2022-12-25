@@ -6,15 +6,14 @@ archive/issues_006666.json:
     "body": "Assignee: @williamstein\n\nCC:  @pjbruin @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6666\n\n",
     "created_at": "2009-08-02T18:52:08Z",
     "labels": [
-        "number theory",
-        "minor",
-        "enhancement"
+        "component: number theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch] implement analytic modular symbols algorithm and cusp transformation matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6666",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6666
 
 ---
 
-archive/issue_comments_054708.json:
+archive/issue_comments_054607.json:
 ```json
 {
     "body": "Attachment [trac_6666-part1.patch](tarball://root/attachments/some-uuid/ticket6666/trac_6666-part1.patch) by @loefflerd created at 2013-07-25 17:23:57",
     "created_at": "2013-07-25T17:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54708",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54607",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_6666-part1.patch](tarball://root/attachments/some-uuid/ticket66
 
 ---
 
-archive/issue_comments_054709.json:
+archive/issue_comments_054608.json:
 ```json
 {
     "body": "Changing component from number theory to modular forms.",
     "created_at": "2013-07-25T17:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54709",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54608",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing component from number theory to modular forms.
 
 ---
 
-archive/issue_comments_054710.json:
+archive/issue_comments_054609.json:
 ```json
 {
     "body": "Here is a rebased patch.\n\napply trac_6666-rebased-5.12.patch",
     "created_at": "2013-10-17T19:07:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54710",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54609",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -87,15 +86,15 @@ apply trac_6666-rebased-5.12.patch
 
 ---
 
-archive/issue_comments_054711.json:
+archive/issue_comments_054610.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_info.",
     "created_at": "2013-10-17T19:08:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54711",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54610",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing status from needs_work to needs_info.
 
 ---
 
-archive/issue_comments_054712.json:
+archive/issue_comments_054611.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"period, modular symbol\".",
     "created_at": "2013-10-17T19:08:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54712",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54611",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing keywords from "" to "period, modular symbol".
 
 ---
 
-archive/issue_comments_054713.json:
+archive/issue_comments_054612.json:
 ```json
 {
     "body": "Fr\u00e9d\u00e9ric Chapoton -- whoever you are -- I'm extremely happy seeing all the work you're doing on modular forms related functionality in Sage!!!!!!  \n\n+1000\n\n -- William Stein",
     "created_at": "2013-10-17T19:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54713",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54612",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -145,15 +144,15 @@ Frédéric Chapoton -- whoever you are -- I'm extremely happy seeing all the wor
 
 ---
 
-archive/issue_comments_054714.json:
+archive/issue_comments_054613.json:
 ```json
 {
     "body": "Thanks William. I am in algebra and combinatorics, not a number theorist, but I am trying to help nevertheless.\n\nfor the patchbot: \n\napply trac_6666-rebased-5.12.patch",
     "created_at": "2013-10-17T19:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54714",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54613",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -167,15 +166,15 @@ apply trac_6666-rebased-5.12.patch
 
 ---
 
-archive/issue_comments_054715.json:
+archive/issue_comments_054614.json:
 ```json
 {
     "body": "Replying to [comment:6 chapoton]:\n> Thanks William. I am in algebra and combinatorics, not a number theorist, but I am trying to help nevertheless.\n> \n\nThanks.  I'm in number theory, not algebra/combinatorics, but I hope Sage has been helpful to people in algebra/combinatorics :-)",
     "created_at": "2013-10-17T19:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54715",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54614",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -189,15 +188,15 @@ Thanks.  I'm in number theory, not algebra/combinatorics, but I hope Sage has be
 
 ---
 
-archive/issue_comments_054716.json:
+archive/issue_comments_054615.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2013-10-20T11:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54716",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54615",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -207,15 +206,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_054717.json:
+archive/issue_comments_054616.json:
 ```json
 {
     "body": "ok, the bot has turned green. Needs review",
     "created_at": "2013-10-20T11:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54717",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54616",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -225,15 +224,15 @@ ok, the bot has turned green. Needs review
 
 ---
 
-archive/issue_comments_054718.json:
+archive/issue_comments_054617.json:
 ```json
 {
     "body": "new patch, rebased on 5.13.beta1\n\napply trac_6666-rebased-5.12.patch",
     "created_at": "2013-10-25T18:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54718",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54617",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -245,15 +244,15 @@ apply trac_6666-rebased-5.12.patch
 
 ---
 
-archive/issue_comments_054719.json:
+archive/issue_comments_054618.json:
 ```json
 {
     "body": "So there is numerical noise. Could somebody remind me what is the proper way to handle that ?\n\nUse `...` or use `# rel tol` or use `# abs tol` ?",
     "created_at": "2013-10-26T09:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54719",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54618",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -265,15 +264,15 @@ Use `...` or use `# rel tol` or use `# abs tol` ?
 
 ---
 
-archive/issue_comments_054720.json:
+archive/issue_comments_054619.json:
 ```json
 {
     "body": "new patch, with numerical tolerance\n\napply trac_6666-rebased-5.12.patch",
     "created_at": "2013-10-27T16:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54720",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54619",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -285,15 +284,15 @@ apply trac_6666-rebased-5.12.patch
 
 ---
 
-archive/issue_comments_054721.json:
+archive/issue_comments_054620.json:
 ```json
 {
     "body": "apply trac_6666-rebased-5.12.patch",
     "created_at": "2013-10-27T16:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54721",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54620",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -303,15 +302,15 @@ apply trac_6666-rebased-5.12.patch
 
 ---
 
-archive/issue_comments_054722.json:
+archive/issue_comments_054621.json:
 ```json
 {
     "body": "Attachment [trac_6666-rebased-5.12.patch](tarball://root/attachments/some-uuid/ticket6666/trac_6666-rebased-5.12.patch) by @fchapoton created at 2013-11-25 17:58:52",
     "created_at": "2013-11-25T17:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54722",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54621",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -321,15 +320,15 @@ Attachment [trac_6666-rebased-5.12.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_054723.json:
+archive/issue_comments_054622.json:
 ```json
 {
     "body": "new patch, with lazy import\n\napply trac_6666-rebased-5.12.patch",
     "created_at": "2013-11-25T17:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54723",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54622",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -341,15 +340,15 @@ apply trac_6666-rebased-5.12.patch
 
 ---
 
-archive/issue_comments_054724.json:
+archive/issue_comments_054623.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2013-12-02T21:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54724",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54623",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -359,15 +358,15 @@ New commits:
 
 ---
 
-archive/issue_comments_054725.json:
+archive/issue_comments_054624.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-01-04T18:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54725",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54624",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -377,15 +376,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_054726.json:
+archive/issue_comments_054625.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-12-20T03:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54726",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54625",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -395,15 +394,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_054727.json:
+archive/issue_comments_054626.json:
 ```json
 {
     "body": "The most important part of this ticket (periods of newforms) was implemented in a more general context (and with better precision handling) in #11215.  The new commit reorganises the code, moves it to a more logical place (in my opinion) and uses the `period()` method of #11215.",
     "created_at": "2014-12-22T21:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54727",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54626",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -413,15 +412,15 @@ The most important part of this ticket (periods of newforms) was implemented in 
 
 ---
 
-archive/issue_comments_054728.json:
+archive/issue_comments_054627.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-01-24T17:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54728",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54627",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -431,15 +430,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_054729.json:
+archive/issue_comments_054628.json:
 ```json
 {
     "body": "Looks good to me.\n\nI allowed myself a few minor changes.\n----\nNew commits:",
     "created_at": "2015-01-24T17:14:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54729",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54628",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -453,15 +452,15 @@ New commits:
 
 ---
 
-archive/issue_comments_054730.json:
+archive/issue_comments_054629.json:
 ```json
 {
     "body": "Replying to [comment:22 chapoton]:\n> Looks good to me.\nThanks for the review!\n> I allowed myself a few minor changes.\nI'm not disputing your changes to the whitespace here, but note that PEP 8 does not say that there should be spaces around *all* operators, only the relational ones.  From https://www.python.org/dev/peps/pep-0008/:\n\n>> If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority(ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator.\n>> Yes:\n>> {{{\n>> i = i + 1\n>> submitted += 1\n>> x = x*2 - 1\n>> hypot2 = x*x + y*y\n>> c = (a+b) * (a-b)\n>> }}}\n>> No:\n>> {{{\n>> i=i+1\n>> submitted +=1\n>> x = x * 2 - 1\n>> hypot2 = x * x + y * y\n>> c = (a + b) * (a - b)\n>> }}}\nActually, in the case of `c = ...`, I would personally prefer the \"no\" option or even `(a + b)*(a - b)`, which is closer to standard mathematical typesetting, but in any case this is a matter of taste.",
     "created_at": "2015-01-24T22:57:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54730",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54629",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -494,15 +493,15 @@ Actually, in the case of `c = ...`, I would personally prefer the "no" option or
 
 ---
 
-archive/issue_comments_054731.json:
+archive/issue_comments_054630.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-01-25T16:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6666",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54731",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/6666#issuecomment-54630",
+    "user": "https://github.com/vbraun"
 }
 ```
 

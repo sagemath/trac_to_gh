@@ -6,7 +6,7 @@ archive/issues_002255.json:
     "body": "Assignee: @williamstein\n\nCC:  ncalexander@gmail.com\n\nKeywords: matrix transpose subdivision subdivide\n\n\n```\nsage: tau = CC(I)*matrix(2, 2, [2, 0, 0, 2])\nsage: B = block_matrix([tau, tau, tau, tau], 2, 2)\nsage: B\n\n[2.00000000000000*I                  0|2.00000000000000*I                  0]\n[                 0 2.00000000000000*I|                 0 2.00000000000000*I]\n[-------------------------------------+-------------------------------------]\n[2.00000000000000*I                  0|2.00000000000000*I                  0]\n[                 0 2.00000000000000*I|                 0 2.00000000000000*I]\nsage: B.transpose()\n\n[2.00000000000000*I                  0 2.00000000000000*I                  0]\n[                 0 2.00000000000000*I                  0 2.00000000000000*I]\n[2.00000000000000*I                  0 2.00000000000000*I                  0]\n[                 0 2.00000000000000*I                  0 2.00000000000000*I]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2255\n\n",
     "created_at": "2008-02-22T05:43:57Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002255.json:
     "title": "matrix transpose does not maintain subdivision information",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2255",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2255
 
 ---
 
-archive/issue_comments_014936.json:
+archive/issue_comments_014904.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-03-06T08:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2255#issuecomment-14936",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2255#issuecomment-14904",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -69,15 +69,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_014937.json:
+archive/issue_comments_014905.json:
 ```json
 {
     "body": "This is essentially a duplicate of #2142.",
     "created_at": "2008-03-06T08:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2255",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2255#issuecomment-14937",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2255#issuecomment-14905",
+    "user": "https://github.com/ncalexan"
 }
 ```
 

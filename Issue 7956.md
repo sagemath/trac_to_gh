@@ -6,15 +6,14 @@ archive/issues_007956.json:
     "body": "Assignee: @aghitza\n\nCC:  @orlitzky\n\nFrom http://groups.google.com/group/sage-devel/browse_thread/thread/1f3d4eca8bbff6c2/d3108ab8f2060050\n\nRonald van Luijk encountered the following problem:\n\nsage: S.<p,q> = QQ[]\nsage: A1.<r> = AffineSpace(QQ,1)\nsage: A1_emb = Curve(p-2)\nsage: type(A1_emb)\n<class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>\nsage: g = A1.hom([2,r],A1_emb)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 \ngiven)\n\nWe browsed through the schemes module a bit, and the functionality for a morphism to an affine curve does seem to exist through functions such as AlgebraicScheme_subscheme_affine._point_morphism_class(), but\nis not accessible since AlgebraicScheme_subscheme_affine is not a superclass of AffineCurve_generic. Comparing it to the projective case, AlgebraicScheme_subscheme_projective _is_ a superclass of ProjectiveCurve_generic.\n\nIs this a simple oversight in the class hierarchy for AffineCurve_generic, or is there a more fundamental reason why this does not yet work?\n\n\nI made a patch (for sage 4.2) that makes the class hierarchy for affine curves similar to that of projective curves, but would appreciate if someone familiar with the schemes module could take a look since it is a rather invasive change:\n\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/affine_morphism.patch\n\nThe patch also changes the constructor of SchemeMorphism_on_points_affine_space to expect a number of polynomials equal to the dimension of the ambient space instead of the dimension of the curve/subscheme, analogous to a change to\nSchemeMorphism_on_points_projective_space by David Kohel from 2007.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7956\n\n",
     "created_at": "2010-01-16T18:27:44Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.3",
     "title": "constructing a scheme morphism to an affine curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7956",
-    "user": "@wjp"
+    "user": "https://github.com/wjp"
 }
 ```
 Assignee: @aghitza
@@ -55,15 +54,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7956
 
 ---
 
-archive/issue_comments_069421.json:
+archive/issue_comments_069302.json:
 ```json
 {
     "body": "A cleaner version of the code to reproduce it:\n\n\n```\nsage: S.<p,q> = QQ[]\nsage: A1.<r> = AffineSpace(QQ,1)\nsage: A1_emb = Curve(p-2)\nsage: type(A1_emb)\n<class 'sage.schemes.plane_curves.affine_curve.AffineCurve_generic'>\nsage: g = A1.hom([2,r],A1_emb)\nTypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given)\n```\n",
     "created_at": "2010-01-16T18:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69421",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69302",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -85,15 +84,15 @@ TypeError: _point_morphism_class() takes exactly 1 non-keyword argument (3 given
 
 ---
 
-archive/issue_comments_069422.json:
+archive/issue_comments_069303.json:
 ```json
 {
     "body": "Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket7956/affine_morphism.patch) by @wjp created at 2010-01-16 18:32:00",
     "created_at": "2010-01-16T18:32:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69422",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69303",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -103,15 +102,15 @@ Attachment [affine_morphism.patch](tarball://root/attachments/some-uuid/ticket79
 
 ---
 
-archive/issue_comments_069423.json:
+archive/issue_comments_069304.json:
 ```json
 {
     "body": "Attachment [sage-trac_7956.patch](tarball://root/attachments/some-uuid/ticket7956/sage-trac_7956.patch) by @orlitzky created at 2012-01-13 19:24:00\n\nAdd a doctest constructing such a morphism.",
     "created_at": "2012-01-13T19:24:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69423",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69304",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -123,15 +122,15 @@ Add a doctest constructing such a morphism.
 
 ---
 
-archive/issue_comments_069424.json:
+archive/issue_comments_069305.json:
 ```json
 {
     "body": "It looks like this is working, here's a doctest for it.",
     "created_at": "2012-01-13T19:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69424",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69305",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -141,15 +140,15 @@ It looks like this is working, here's a doctest for it.
 
 ---
 
-archive/issue_comments_069425.json:
+archive/issue_comments_069306.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-01-13T19:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69425",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69306",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -159,15 +158,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069426.json:
+archive/issue_comments_069307.json:
 ```json
 {
     "body": "Replying to [comment:3 mjo]:\n> It looks like this is working, here's a doctest for it.\n\nYou mean that the bug is fixed in current Sage already, not that wjp's patch is working.\n\nApply sage-trac_7956.patch only.",
     "created_at": "2012-01-16T16:16:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69426",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69307",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -182,15 +181,15 @@ Apply sage-trac_7956.patch only.
 
 ---
 
-archive/issue_comments_069427.json:
+archive/issue_comments_069308.json:
 ```json
 {
     "body": "Why not just have the ticket closed, instead of adding a doctest?",
     "created_at": "2012-01-16T18:59:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69427",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69308",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -200,15 +199,15 @@ Why not just have the ticket closed, instead of adding a doctest?
 
 ---
 
-archive/issue_comments_069428.json:
+archive/issue_comments_069309.json:
 ```json
 {
     "body": "Replying to [comment:5 mstreng]:\n> Why not just have the ticket closed, instead of adding a doctest?\n\nPrimarily to prevent someone from breaking it again in the future (by accident, anyway).",
     "created_at": "2012-01-16T19:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69428",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69309",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -221,15 +220,15 @@ Primarily to prevent someone from breaking it again in the future (by accident, 
 
 ---
 
-archive/issue_comments_069429.json:
+archive/issue_comments_069310.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-08-03T11:12:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69429",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69310",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -239,15 +238,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069430.json:
+archive/issue_comments_069311.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2012-08-14T07:02:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69430",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7956#issuecomment-69311",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

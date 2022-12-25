@@ -6,15 +6,14 @@ archive/issues_008708.json:
     "body": "Assignee: tbd\n\nCC:  ranosch\n\nAs the subject says. This is related to #8699. See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/54de5b70bc7b18e3) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8708\n\n",
     "created_at": "2010-04-18T00:46:47Z",
     "labels": [
-        "doctest coverage",
-        "minor",
-        "enhancement"
+        "component: doctest coverage",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "allow doctest script to handle docstrings with triple single quotes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8708",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8708
 
 ---
 
-archive/issue_comments_079428.json:
+archive/issue_comments_079298.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-08-11T08:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79428",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79298",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_079429.json:
+archive/issue_comments_079299.json:
 ```json
 {
     "body": "Attachment [trac_8708-doctest_quotes.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-doctest_quotes.patch) by @burcin created at 2011-08-11 08:41:37\n\nattachment:trac_8708-doctest_quotes.patch fixes this problem.",
     "created_at": "2011-08-11T08:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79429",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79299",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -69,15 +68,15 @@ attachment:trac_8708-doctest_quotes.patch fixes this problem.
 
 ---
 
-archive/issue_comments_079430.json:
+archive/issue_comments_079300.json:
 ```json
 {
     "body": "This doesn't work for me: it skips all doctests in a typical file.  The issue is the line\n\n```\nmin_ind = min(dq_ind, sq_ind)\n```\n\nwhich means that if either (not just both) search fails, then `min_ind` is `-1`, so the loop exits.\n\nI also don't think we need to modify `doc_prefix` and `doc_suffix`, since this is part of the string written to the temporary doctesting file.  Do the triple quotes in that file have to match the original ones, or can they all be `\"\"\"`?\n\nI'm attaching a new patch which uses regular expressions instead, and which doesn't modify `doc_prefix` and `doc_suffix`.  I'm also attaching a small file for testing purposes; testing on this file should produce three failures, and if you add some print statements to the function `extract_doc`, it should extract the correct string.",
     "created_at": "2011-08-15T22:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79430",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79300",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -97,15 +96,15 @@ I'm attaching a new patch which uses regular expressions instead, and which does
 
 ---
 
-archive/issue_comments_079431.json:
+archive/issue_comments_079301.json:
 ```json
 {
     "body": "Replying to [comment:2 jhpalmieri]:\n> This doesn't work for me: it skips all doctests in a typical file.  The issue is the line\n> {{{\n> min_ind = min(dq_ind, sq_ind)\n> }}}\n> which means that if either (not just both) search fails, then `min_ind` is `-1`, so the loop exits.\n\nGood catch! Thanks for looking into this.\n\n> I also don't think we need to modify `doc_prefix` and `doc_suffix`, since this is part of the string written to the temporary doctesting file.  Do the triple quotes in that file have to match the original ones, or can they all be `\"\"\"`?\n\nWhat happens if you have something like:\n\n\n```\ndef f(arg):\n    '''\n    some text\n        \n    \"\"\"\n    some more text\n    \"\"\"\n\n    '''\n```\n",
     "created_at": "2011-08-16T09:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79431",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79301",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -140,15 +139,15 @@ def f(arg):
 
 ---
 
-archive/issue_comments_079432.json:
+archive/issue_comments_079302.json:
 ```json
 {
     "body": "Oh, you're right.  I'm replacing my patch with a new one, the difference being\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -452,8 +452,10 @@ def change_warning_output(file):\n             tmpfiles.append(os.path.join(SAGE_TESTDIR, name + '.pyc'))\n \n     # Prefix/suffix for all doctests replacing the starting/ending \"\"\"\n-    doc_prefix = 'r\"\"\">>> set_random_seed(0L)\\n\\n>>> change_warning_output(sys.stdout)\\n\\n'\n-    doc_suffix = '\\n>>> sig_on_count()\\n0\\n\"\"\"'\n+    doc_prefix_dq = 'r\"\"\">>> set_random_seed(0L)\\n\\n>>> change_warning_output(sys.stdout)\\n\\n'\n+    doc_prefix_sq = doc_prefix_dq.replace('\"\"\"',\"'''\")\n+    doc_suffix_dq = '\\n>>> sig_on_count()\\n0\\n\"\"\"'\n+    doc_suffix_sq = doc_suffix_dq.replace('\"\"\"',\"'''\")\n \n     n = 0\n     # Now extract the docstring by using a regular expression search\n@@ -499,7 +501,10 @@ def change_warning_output(file):\n             name = \"example\"\n             s += \"def %s_%s():\"%(name,n_str)\n             n += 1\n-            s += \"\\t\"+ doc_prefix + doc + doc_suffix + \"\\n\\n\"\n+            if m.groups()[0].find(\"'\") > -1: # single quotes\n+                s += \"\\t\"+ doc_prefix_sq + doc + doc_suffix_sq + \"\\n\\n\"\n+            else:\n+                s += \"\\t\"+ doc_prefix_dq + doc + doc_suffix_dq + \"\\n\\n\"\n \n     if n == 0:\n         return  ''\n```\n\nI'll also add an example like this to the testing file.",
     "created_at": "2011-08-16T15:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79432",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79302",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -191,15 +190,15 @@ I'll also add an example like this to the testing file.
 
 ---
 
-archive/issue_comments_079433.json:
+archive/issue_comments_079303.json:
 ```json
 {
     "body": "Attachment [trac_8708-jhp.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-jhp.patch) by @jhpalmieri created at 2011-08-16 15:17:56\n\napply to scripts repo",
     "created_at": "2011-08-16T15:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79433",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79303",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -211,15 +210,15 @@ apply to scripts repo
 
 ---
 
-archive/issue_comments_079434.json:
+archive/issue_comments_079304.json:
 ```json
 {
     "body": "Attachment [trac_8708-testing.py](tarball://root/attachments/some-uuid/ticket8708/trac_8708-testing.py) by @jhpalmieri created at 2011-08-16 15:18:08\n\nsmall Python file for testing purposes",
     "created_at": "2011-08-16T15:18:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79434",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79304",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -231,15 +230,15 @@ small Python file for testing purposes
 
 ---
 
-archive/issue_comments_079435.json:
+archive/issue_comments_079305.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-09-22T00:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79435",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79305",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -249,15 +248,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_079436.json:
+archive/issue_comments_079306.json:
 ```json
 {
     "body": "Looks good to me. Thanks for looking into this John.",
     "created_at": "2011-09-22T00:34:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79436",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79306",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -267,15 +266,15 @@ Looks good to me. Thanks for looking into this John.
 
 ---
 
-archive/issue_comments_079437.json:
+archive/issue_comments_079307.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-09-27T17:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79437",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79307",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -285,15 +284,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_079438.json:
+archive/issue_comments_079308.json:
 ```json
 {
     "body": "This needs to be rebased on #9739, and perhaps also #10952 (both merged into Sage 4.7.2.alpha3).",
     "created_at": "2011-09-27T17:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79438",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79308",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -303,15 +302,15 @@ This needs to be rebased on #9739, and perhaps also #10952 (both merged into Sag
 
 ---
 
-archive/issue_comments_079439.json:
+archive/issue_comments_079309.json:
 ```json
 {
     "body": "Changing priority from minor to blocker.",
     "created_at": "2011-09-27T18:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79439",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79309",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -321,15 +320,15 @@ Changing priority from minor to blocker.
 
 ---
 
-archive/issue_comments_079440.json:
+archive/issue_comments_079310.json:
 ```json
 {
     "body": "We missed an or two issue in #9739: with non-library files, first we just had a bug, using \"source\" instead of \"file_name\" or \"root_name\" or something.  Second, in the import statement added to the file,\n\n```\ns += \"from %s import *\\n\\n\" % target_name\n```\n\nwe need to replace `target_name` with `os.path.basename(target_name)`.\n\nIn the new patch, I've made these two changes and also rebased.  Given that there is actually new content, this needs a new review.  Without the new content, doctesting .py non-library files completely fails, so I'm marking this as a blocker.  Feel free to downgrade if you think it's appropriate.\n\nOh, I also realized that the attached file for testing purposes has a bad name: replace the hyphen with an underscore.\n\nThe part needing review:\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -510,7 +510,7 @@ def check_with_tolerance(expected, actua\n \n         elif ext in ['.py', '.sage']:\n \n-            target_name = \"%s_%d\" % (file_name, os.getpid()) # like 'name', but\n+            target_name = \"%s_%d\" % (root_name, os.getpid()) # like 'name', but\n             target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'base'\n \n             if ext == '.sage':\n@@ -528,9 +528,9 @@ def check_with_tolerance(expected, actua\n                 # TODO: instead of copying the file, add its source\n                 # directory to PYTHONPATH.  We would also have to\n                 # import from 'name' instead of 'target_name'.\n-                os.system(\"cp '%s' %s.py\" % (source, target_base))\n+                os.system(\"cp '%s' %s.py\" % (file_name, target_base))\n \n-            s += \"from %s import *\\n\\n\" % target_name\n+            s += \"from %s import *\\n\\n\" % os.path.basename(target_name)\n \n             tmpfiles.append(target_base + \".py\") # preparsed or copied original\n             tmpfiles.append(target_base + \".pyc\") # compiled version of it\n```\n",
     "created_at": "2011-09-27T18:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79440",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79310",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -379,15 +378,15 @@ diff --git a/sage-doctest b/sage-doctest
 
 ---
 
-archive/issue_comments_079441.json:
+archive/issue_comments_079311.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-09-27T18:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79441",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79311",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -397,15 +396,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_079442.json:
+archive/issue_comments_079312.json:
 ```json
 {
     "body": "Sorry, here's a new version.  The relevant changes:\n\n```diff\ndiff --git a/sage-doctest b/sage-doctest\n--- a/sage-doctest\n+++ b/sage-doctest\n@@ -510,8 +510,9 @@ def check_with_tolerance(expected, actua\n \n         elif ext in ['.py', '.sage']:\n \n-            target_name = \"%s_%d\" % (file_name, os.getpid()) # like 'name', but unique\n-            target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'base', also unique\n+            root_name = os.path.basename(root_name)\n+            target_name = \"%s_%d\" % (root_name, os.getpid()) # like 'root_name', but unique\n+            target_base = os.path.join(SAGE_TESTDIR, target_name) # like 'target_name' but with full path\n \n             if ext == '.sage':\n                 # TODO: preparse \"<file>.sage\" with a Sage library call\n@@ -528,7 +529,7 @@ def check_with_tolerance(expected, actua\n                 # TODO: instead of copying the file, add its source\n                 # directory to PYTHONPATH.  We would also have to\n                 # import from 'name' instead of 'target_name'.\n-                os.system(\"cp '%s' %s.py\" % (source, target_base))\n+                os.system(\"cp '%s' %s.py\" % (file_name, target_base))\n \n             s += \"from %s import *\\n\\n\" % target_name\n```\n\nChanging \"source\" to \"file_name\" is necessary: doctesting non-library py files fails otherwise.  The other change is to avoid failures if you specify a path name for the file to be tested: `sage -t ./test.py` will fail without this, as compared to `sage -t test.py`.",
     "created_at": "2011-09-27T19:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79442",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79312",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -443,15 +442,15 @@ Changing "source" to "file_name" is necessary: doctesting non-library py files f
 
 ---
 
-archive/issue_comments_079443.json:
+archive/issue_comments_079313.json:
 ```json
 {
     "body": "Well, at *some point* in the evolution of #9739 it worked (or was correct)... ;-)\n\nCan anybody [else] review this [quickly]?\n\n\nSorry, I don't have the time, and I'm actually also not in the mood right now.",
     "created_at": "2011-09-27T19:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79443",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79313",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -466,15 +465,15 @@ Sorry, I don't have the time, and I'm actually also not in the mood right now.
 
 ---
 
-archive/issue_comments_079444.json:
+archive/issue_comments_079314.json:
 ```json
 {
     "body": "Some things to test:\n\n- First apply the patches from #9739 and #10952.\n- Create a file \"test.py\" (not a Sage library file) and test it with \"sage -t test.py\", and also with \"sage -t /path/to/test.py\".  Try before and after applying [attachment:trac_8708-jhp.v2.patch].  You could just use [attachment:trac_8708-testing.py], but rename it so the name doesn't have any hyphens.  This file is supposed to have 3 failures.\n- Do the same with a file \"test.sage\".  (Just renaming your Python file to \"test.sage\" should be good enough.)",
     "created_at": "2011-09-27T19:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79444",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79314",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -488,15 +487,15 @@ Some things to test:
 
 ---
 
-archive/issue_comments_079445.json:
+archive/issue_comments_079315.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-09-28T00:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79445",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79315",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -506,15 +505,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_079446.json:
+archive/issue_comments_079316.json:
 ```json
 {
     "body": "I now get the following doctest failures, certainly due to the triple single quote patch / modification:\n\n```\nThe following tests failed:\n\n\tsage -t  -long -force_lib devel/sagenb-main/sagenb/notebook/worksheet.py # Exception from doctest framework\n\tsage -t  -long -force_lib devel/sage/sage/interacts/library_cython.pyx # 1 doctests failed\n\tsage -t  -long -force_lib devel/sage/sage/misc/sageinspect.py # Exception from doctest framework\n```\n\n\nWith `-verbose`:\n\n```sh\n$ ./sage -t -long -verbose devel/sagenb-main/sagenb/notebook/worksheet.py\nsage -t -long -verbose \"devel/sagenb-main/sagenb/notebook/worksheet.py\"\nTraceback (most recent call last):\n  File \"/home/leif/.sage//tmp/worksheet_15100.py\", line 3046, in <module>\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 640, in _parse_example\n    lineno + len(source_lines))\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 726, in _check_prefix\n    (lineno+i+1, name, line))\nValueError: line 11 of the docstring for __main__.example_109 has inconsistent leading whitespace: '    \"'\nException raised by doctesting framework. Use -verbose for details.\n```\n\n\n\n```sh\n$ ./sage -t -long -verbose devel/sage/sage/misc/sageinspect.py\nsage -t -long -verbose \"devel/sage/sage/misc/sageinspect.py\"\nTraceback (most recent call last):\n  File \"/home/leif/.sage//tmp/sageinspect_15131.py\", line 1327, in <module>\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 640, in _parse_example\n    lineno + len(source_lines))\n  File \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/local/bin/ncadoctest.py\", line 726, in _check_prefix\n    (lineno+i+1, name, line))\nValueError: line 53 of the docstring for __main__.example_28 has inconsistent leading whitespace: '    \"\"\"'\nException raised by doctesting framework. Use -verbose for details.\n```\n\n\n\n```sh\n$ ./sage -t -long -verbose devel/sage/sage/interacts/library_cython.pyxsage -t -long -verbose \"devel/sage/sage/interacts/library_cython.pyx\"\n\n...\n\nTrying:\n    from sage.interacts.library_cython import cellular###line 91:_sage_    >>> from sage.interacts.library_cython import cellular\nExpecting nothing\nok\nTrying:\n    rule = [Integer(1), Integer(0), Integer(1), Integer(0), Integer(0), Integer(1), Integer(1), Integer(0)]###line 92:_sage_    >>> rule = [1, 0, 1, 0, 0, 1, 1, 0]\nExpecting nothing\nok\nTrying:\n    N = Integer(3)###line 93:_sage_    >>> N = 3\nExpecting nothing\nok\nTrying:\n    print cellular(rule, Integer(3))###line 94:_sage_    >>> print cellular(rule, 3)\nExpecting nothing\n**********************************************************************\nFile \"/home/leif/Sage/sage-4.7.2.alpha3-prerelease3/devel/sage/sage/interacts/library_cython.pyx\", line ?, in __main__.example_3\nFailed example:\n    print cellular(rule, Integer(3))###line 94:_sage_    >>> print cellular(rule, 3)\nExpected nothing\nGot:\n    [[0 0 0 1 0 0 0]\n     [0 0 0 1 0 0 0]\n     [0 1 0 1 0 1 0]]\nTrying:\n    sig_on_count()\nExpecting:\n    0\nok\n4 items had no tests:\n    __main__\n    __main__.change_warning_output\n    __main__.check_with_tolerance\n    __main__.warning_function\n3 items passed all tests:\n   3 tests in __main__.example_0\n   9 tests in __main__.example_1\n   8 tests in __main__.example_2\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_3\n27 tests in 8 items.\n26 passed and 1 failed.\n***Test Failed*** 1 failures.\n```\n",
     "created_at": "2011-09-28T00:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79446",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79316",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -655,15 +654,15 @@ ok
 
 ---
 
-archive/issue_comments_079447.json:
+archive/issue_comments_079317.json:
 ```json
 {
     "body": "P.S.:\n\nJohn, could you perhaps separate the fix concerning doctesting non-library files, and attach it to #9739 (not modifying the other patches there, i.e., as a patch to be applied on top of the others)?",
     "created_at": "2011-09-28T00:18:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79447",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79317",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -675,15 +674,15 @@ John, could you perhaps separate the fix concerning doctesting non-library files
 
 ---
 
-archive/issue_comments_079448.json:
+archive/issue_comments_079318.json:
 ```json
 {
     "body": "Okay, I've done that now.  I'm also downgrading the priority of this ticket.  (We could also open a new ticket just for the issue now added on to #9739, if you think that would be cleaner.  #9739 is still marked as closed, by the way.  I didn't reopen it.)",
     "created_at": "2011-09-28T00:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79448",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79318",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -693,15 +692,15 @@ Okay, I've done that now.  I'm also downgrading the priority of this ticket.  (W
 
 ---
 
-archive/issue_comments_079449.json:
+archive/issue_comments_079319.json:
 ```json
 {
     "body": "Changing priority from blocker to minor.",
     "created_at": "2011-09-28T00:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79449",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79319",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -711,15 +710,15 @@ Changing priority from blocker to minor.
 
 ---
 
-archive/issue_comments_079450.json:
+archive/issue_comments_079320.json:
 ```json
 {
     "body": "apply to scripts repo",
     "created_at": "2011-09-28T00:39:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79450",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79320",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -729,15 +728,15 @@ apply to scripts repo
 
 ---
 
-archive/issue_comments_079451.json:
+archive/issue_comments_079321.json:
 ```json
 {
     "body": "Attachment [trac_8708-jhp.v2.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-jhp.v2.patch) by @nexttime created at 2011-09-28 01:05:48\n\nReplying to [comment:15 jhpalmieri]:\n> Okay, I've done that now.\n\nThanks; just the commit message there refers to this ticket (and its subject), i.e., is unrelated.\n\n> #9739 is still marked as closed, by the way.  I didn't reopen it.\n\nUnless nobody else reopens or closes tickets, or attaches files to / updates files on tickets I've already closed (and I didn't ask him to) I don't really care.\n\nReopening tickets IMHO only makes sense if I'm going to actually back it out.",
     "created_at": "2011-09-28T01:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79451",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79321",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -758,15 +757,15 @@ Reopening tickets IMHO only makes sense if I'm going to actually back it out.
 
 ---
 
-archive/issue_comments_079452.json:
+archive/issue_comments_079322.json:
 ```json
 {
     "body": "s/nobody/somebody/ or s/unless/as long as/\n\nIt's getting late...",
     "created_at": "2011-09-28T01:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79452",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79322",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -778,15 +777,15 @@ It's getting late...
 
 ---
 
-archive/issue_comments_079453.json:
+archive/issue_comments_079323.json:
 ```json
 {
     "body": "The test failure in interacts/libary_cython.pyx is because of a doctest which would have failed in the past, but it was enclosed in triple single quotes, and so was skipped by the doctesting framework.  (There is a line saying `sage: print cellular(rule, 3)` with no output after it.)  We can certainly just stick in the output, but I have no idea if it's right.\n\nI have a fix for sageinspect.py, but I'm not sure about worksheet.py.  I can work on it some more, but we should check whether there are failures in the flask notebook before working too hard on this one: if the file is going to go away soon, it's not worth working too hard fixing it.\n\nI'm attaching a patch for the Sage library fixing the two files there; I'll try to get information about whether the patch to library_cython.pyx is actually the right thing to do.",
     "created_at": "2011-09-28T04:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79453",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79323",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -800,15 +799,15 @@ I'm attaching a patch for the Sage library fixing the two files there; I'll try 
 
 ---
 
-archive/issue_comments_079454.json:
+archive/issue_comments_079324.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_info.",
     "created_at": "2011-09-28T04:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79454",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79324",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -818,15 +817,15 @@ Changing status from needs_work to needs_info.
 
 ---
 
-archive/issue_comments_079455.json:
+archive/issue_comments_079325.json:
 ```json
 {
     "body": "For the sagenb problem, this patch seems to fix things:\n\n```diff\n\ndiff --git a/sagenb/notebook/worksheet.py b/sagenb/notebook/worksheet.py\n--- a/sagenb/notebook/worksheet.py\n+++ b/sagenb/notebook/worksheet.py\n@@ -3881,15 +3881,7 @@ except (KeyError, IOError):\n             C.delete_output()\n \n \n-__internal_test1 = '''\n-def foo(x):\n-    \"\n-    EXAMPLES:\n-        sage: 2+2\n-        4\n-    \"\n-    return x\n-'''.lstrip()\n+__internal_test1 = '\\ndef foo(x):\\n    \"\\n    EXAMPLES:\\n        sage: 2+2\\n        4\\n    \"\\n    return x'.lstrip()\n \n __internal_test2 = '''\n sage: 2 + 2\n```\n\nI don't know if it's the best approach.  Why does this use single double quotes, anyway?  Shouldn't the EXAMPLES block be surrounded by `\"\"\"`?  Modifying the patch here to use `\"\"\"` still passes doctests.",
     "created_at": "2011-09-28T05:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79455",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79325",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -862,15 +861,15 @@ I don't know if it's the best approach.  Why does this use single double quotes,
 
 ---
 
-archive/issue_comments_079456.json:
+archive/issue_comments_079326.json:
 ```json
 {
     "body": "The problem with library_cython.pyx should be dealt with at #11871, so I'm making that a dependency.  I'll remove that part of the doctest patch.",
     "created_at": "2011-09-29T18:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79456",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79326",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -880,15 +879,15 @@ The problem with library_cython.pyx should be dealt with at #11871, so I'm makin
 
 ---
 
-archive/issue_comments_079457.json:
+archive/issue_comments_079327.json:
 ```json
 {
     "body": "Attachment [trac_8708-doctests.patch](tarball://root/attachments/some-uuid/ticket8708/trac_8708-doctests.patch) by @jhpalmieri created at 2011-09-29 18:55:57\n\nSage repository",
     "created_at": "2011-09-29T18:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79457",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79327",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -900,15 +899,15 @@ Sage repository
 
 ---
 
-archive/issue_comments_079458.json:
+archive/issue_comments_079328.json:
 ```json
 {
     "body": "I've submitted a patch for the flask notebook to deal with the issue with notebook/worksheet, and that should be merged soon. There is a patch at #11871 for interacts/library_cython.pyx. So I think this is now ready to go.",
     "created_at": "2012-06-12T23:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79458",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79328",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -918,15 +917,15 @@ I've submitted a patch for the flask notebook to deal with the issue with notebo
 
 ---
 
-archive/issue_comments_079459.json:
+archive/issue_comments_079329.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2012-06-12T23:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79459",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79329",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -936,15 +935,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_079460.json:
+archive/issue_comments_079330.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"sd41\".",
     "created_at": "2012-06-15T23:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79460",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79330",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -954,15 +953,15 @@ Changing keywords from "" to "sd41".
 
 ---
 
-archive/issue_comments_079461.json:
+archive/issue_comments_079331.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-02-28T16:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79461",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79331",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -972,15 +971,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_079462.json:
+archive/issue_comments_079332.json:
 ```json
 {
     "body": "Fixed by #12415.",
     "created_at": "2013-02-28T16:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79462",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79332",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -990,15 +989,15 @@ Fixed by #12415.
 
 ---
 
-archive/issue_comments_079463.json:
+archive/issue_comments_079333.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2013-03-07T08:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79463",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8708#issuecomment-79333",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_004207.json:
     "body": "Assignee: @williamstein\n\nCC:  @orlitzky @vbraun ebray\n\n\n```\n[05:16] <mabshoff> One thing we should definitely do is to have some infrastructure to give a vector or matrix and check if all values are without $foo in some norm to a given vector or matrix\n[05:16] <jason-> like numpy.allclose?\n[05:17] <jason-> but that doesn't use norms\n[05:17] <jason-> it just compares entry-wise\n[05:17] <mabshoff> Well, we can do entry by entry or some vector/matrix norm.\n[05:17] <jason-> well, you can't choose the norm.\n[05:17] <mabshoff> the numpy.allclose would work in most cases, but we are mathematicians :)\n[05:17] <mabshoff> So using a norm is natural IMHO\n[05:18] <jason-> so matrix.is_close(other_matrix, norm='blah')\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4207\n\n",
     "created_at": "2008-09-27T10:23:19Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement an is_close function for matrices and vectors",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4207",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -43,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4207
 
 ---
 
-archive/issue_comments_030584.json:
+archive/issue_comments_030522.json:
 ```json
 {
     "body": "We pretty much have this for both matrices and vectors:\n\n\n```\nsage: v1 = random_vector(RR,3)\nsage: v2 = random_vector(RR,3)\nsage: (v1 - v2).norm() < 10e-6\nFalse\n```\n\n\n\n```\nsage: M1 = random_matrix(RR,3,3)\nsage: M2 = random_matrix(RR,3,3)\nsage: (M1 - M2).norm() < 10e-6\nFalse\n```\n\n\nBoth support p-norms, and matrices additionally support the Frobenius norm. The examples above are how this stuff appears in the literature, so I don't think we gain much by giving it a dedicated method name.\n\nClosable?",
     "created_at": "2019-07-21T19:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4207",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4207#issuecomment-30584",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/4207#issuecomment-30522",
+    "user": "https://github.com/orlitzky"
 }
 ```
 

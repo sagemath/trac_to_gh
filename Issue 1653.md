@@ -6,15 +6,14 @@ archive/issues_001653.json:
     "body": "Assignee: somebody\n\nThis is a bug:\n\n\n```\nsage: 2^float(3.1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/was/<ipython console> in <module>()\n\n/Users/was/integer.pyx in sage.rings.integer.Integer.__pow__()\n\n<type 'exceptions.TypeError'>: exponent (=3.1) must be an integer.\nCoerce your numbers to real or complex numbers first.\n\nNote:\nsage: int(2)^float(3.1)\n8.574187700290345\nsage: (2/1)^float(3.1)\n8.574187700290345\n```\n\n\nNote that\n\nIssue created by migration from https://trac.sagemath.org/ticket/1653\n\n",
     "created_at": "2008-01-02T06:29:41Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Bug raising an integer to a float  (probably really easy to fix in integer.pyx!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1653",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1653
 
 ---
 
-archive/issue_comments_010523.json:
+archive/issue_comments_010496.json:
 ```json
 {
     "body": "Changing assignee from somebody to dmharvey.",
     "created_at": "2008-01-02T18:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10523",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10496",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -70,15 +69,15 @@ Changing assignee from somebody to dmharvey.
 
 ---
 
-archive/issue_comments_010524.json:
+archive/issue_comments_010497.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-02T18:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10524",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10497",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -88,15 +87,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_010525.json:
+archive/issue_comments_010498.json:
 ```json
 {
     "body": "Attachment [1653.hg](tarball://root/attachments/some-uuid/ticket1653/1653.hg) by dmharvey created at 2008-01-02 22:18:16",
     "created_at": "2008-01-02T22:18:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10525",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10498",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -106,15 +105,15 @@ Attachment [1653.hg](tarball://root/attachments/some-uuid/ticket1653/1653.hg) by
 
 ---
 
-archive/issue_comments_010526.json:
+archive/issue_comments_010499.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-20T03:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10526",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10499",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -124,15 +123,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_010527.json:
+archive/issue_comments_010500.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha0",
     "created_at": "2008-01-20T03:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10527",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1653#issuecomment-10500",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

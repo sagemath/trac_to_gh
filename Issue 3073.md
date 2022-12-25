@@ -6,15 +6,14 @@ archive/issues_003073.json:
     "body": "Assignee: somebody\n\nCC:  @williamstein\n\nKeywords: interact, input_box\n\nThis is just a tiny patch so that the text inputs for `@`interact can be changed in size.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3073\n\n",
     "created_at": "2008-05-01T17:49:26Z",
     "labels": [
-        "notebook",
-        "minor",
-        "enhancement"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "allow variable width text input_box in interact",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3073",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: somebody
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3073
 
 ---
 
-archive/issue_comments_021209.json:
+archive/issue_comments_021165.json:
 ```json
 {
     "body": "Attachment [trac_3073_interact_width.patch](tarball://root/attachments/some-uuid/ticket3073/trac_3073_interact_width.patch) by mhampton created at 2008-05-01 17:52:43\n\nadds width option to input_box in interact",
     "created_at": "2008-05-01T17:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3073",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3073#issuecomment-21209",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/3073#issuecomment-21165",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -53,15 +52,15 @@ adds width option to input_box in interact
 
 ---
 
-archive/issue_comments_021210.json:
+archive/issue_comments_021166.json:
 ```json
 {
     "body": "Works for me.",
     "created_at": "2008-06-15T00:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3073",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3073#issuecomment-21210",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3073#issuecomment-21166",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -71,15 +70,15 @@ Works for me.
 
 ---
 
-archive/issue_comments_021211.json:
+archive/issue_comments_021167.json:
 ```json
 {
     "body": "Merged in Sage 3.0.3.rc0",
     "created_at": "2008-06-15T20:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3073",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3073#issuecomment-21211",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3073#issuecomment-21167",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Merged in Sage 3.0.3.rc0
 
 ---
 
-archive/issue_comments_021212.json:
+archive/issue_comments_021168.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-15T20:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3073",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3073#issuecomment-21212",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3073#issuecomment-21168",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

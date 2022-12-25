@@ -6,7 +6,7 @@ archive/issues_007263.json:
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nI replicated the following with a fresh build under Linux and OS X too.  Basically *all* plotting of 3d jmol plots at the command line is broken!  The notebook works fine.  This is serious.\n\n```\nI'm having trouble with jmol from the command line in 4.1.2 and\n4.2.alpha0.  E.g.,\nsage: var('A,B,C')\n(A, B, C)\nsage: implicit_plot3d(sin(A)*cos(B)+sin(B)*cos(C)+sin(C)*cos(A),\n(A,-2*pi,2*pi),(B,-2*pi,2*pi),(C,-2*pi,2*pi))\ndoes nothing.  Adding .show() also fails, and quicker.  On\nalpha.sagenb.org I don't have the same problems (though sometimes I\nget the featureless black box), so I think it may be a command-line\nissue.  Any ideas? I do NOT get this in 4.1.1.  I am on a MacIntel\nrunning OSX 10.5.\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7263\n\n",
     "created_at": "2009-10-21T23:21:15Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007263.json:
     "title": "sage-4.2: jmol plotting on the command line is completely broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7263",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -48,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7263
 
 ---
 
-archive/issue_comments_060332.json:
+archive/issue_comments_060220.json:
 ```json
 {
     "body": "This error is in base.pyx:\n\n`   1085             viewer_app = \"sage-native-execute \" + sage.misc.misc.SAGE_LOCAL + \"/java/jmol/jmol\"`\n\njmol has apparently moved...",
     "created_at": "2009-10-22T01:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60332",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60220",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -70,15 +70,15 @@ jmol has apparently moved...
 
 ---
 
-archive/issue_comments_060333.json:
+archive/issue_comments_060221.json:
 ```json
 {
     "body": "after this patch:\n\n\n```\ndiff -r 241b5ed6dbbe sage/plot/plot3d/base.pyx\n--- a/sage/plot/plot3d/base.pyx\tFri May 15 06:48:50 2009 -0500\n+++ b/sage/plot/plot3d/base.pyx\tWed Oct 21 21:06:46 2009 -0500\n@@ -1064,7 +1064,7 @@\n             f.write(self.mtl_str())\n             f.close()\n             ext = \"obj\"\n-            viewer_app = sage.misc.misc.SAGE_LOCAL + \"/java/java3d/start_viewer\"\n+            viewer_app = sage.misc.misc.SAGE_LOCAL + \"lib/python2.6/site-packages/sagenb/data/java/3d/lib/sage3d.jar\"\n \n         if DOCTEST_MODE or viewer=='jmol':\n             # Temporary hack: encode the desired applet size in the end of the filename:\n@@ -1082,7 +1082,7 @@\n \n             T = self._prepare_for_jmol(frame, axes, frame_aspect_ratio, aspect_ratio, zoom)\n             T.export_jmol(archive_name, force_reload=EMBEDDED_MODE, zoom=zoom*100, **kwds)\n-            viewer_app = \"sage-native-execute \" + sage.misc.misc.SAGE_LOCAL + \"/java/jmol/jmol\"\n+            viewer_app = \"sage-native-execute \" + sage.misc.misc.SAGE_LOCAL + \"/lib/python2.6/site-packages/sagenb/data/java/jmol/Jmol.jar\"\n \n             # We need a script to load the file\n             f = open(filename + '.jmol', 'w')\n```\n\n\nI get: \n\n\n```\nsage: var('x,y')\n(x, y)\nsage: plot3d(x^2*sin(y), (x,0,1), (y,0,1)).show(viewer='java3d',verbosity=True)\nsh: /home/jason/sage/local/lib/python2.6/site-packages/sagenb/data/java/3d/lib/sage3d.jar: Permission denied\nsage: plot3d(x^2*sin(y), (x,0,1), (y,0,1)).show(viewer='jmol',verbosity=True)\n/home/jason/sage/local/bin/sage-native-execute: 8: /home/jason/sage/local//lib/python2.6/site-packages/sagenb/data/java/jmol/Jmol.jar: Permission denied\n```\n\n\nWhat happened to the jmol application?\n\nAlso, how come jmol and the java3d viewer aren't their own spkgs?",
     "created_at": "2009-10-22T02:08:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60333",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60221",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -131,15 +131,15 @@ Also, how come jmol and the java3d viewer aren't their own spkgs?
 
 ---
 
-archive/issue_comments_060334.json:
+archive/issue_comments_060222.json:
 ```json
 {
     "body": "The jmol application in 4.1.2.alpha2 was:\n\n\n```/bin/sh\nJMOL_HOME=`dirname \"$0\"`\n\n\n# Collect -D & -m options as java arguments\ncommand=java\nwhile [ `echo $1 | egrep '^-D|^-m' | wc -l` != 0 ]; do\n        command=\"$command $1\"\n        shift\ndone\n\nif [ -f ./Jmol.jar ] ; then\n  jarpath=./Jmol.jar\nelif [ -f $JMOL_HOME/Jmol.jar ] ; then\n  jarpath=$JMOL_HOME/Jmol.jar\nelif [ -f /usr/share/jmol/Jmol.jar ] ; then\n  jarpath=/usr/share/jmol/Jmol.jar\nelse\n  echo Jmol.jar not found\n  exit\nfi\n$command -Xmx512m -jar $jarpath $@\n```\n",
     "created_at": "2009-10-22T02:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60334",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60222",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -175,15 +175,15 @@ $command -Xmx512m -jar $jarpath $@
 
 ---
 
-archive/issue_comments_060335.json:
+archive/issue_comments_060223.json:
 ```json
 {
     "body": "Fix paths for command-line 3d viewers.  Apply to sage repository.",
     "created_at": "2009-10-22T05:27:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60335",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60223",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -193,15 +193,15 @@ Fix paths for command-line 3d viewers.  Apply to sage repository.
 
 ---
 
-archive/issue_comments_060336.json:
+archive/issue_comments_060224.json:
 ```json
 {
     "body": "Attachment [trac_7263-sage_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sage_cli_3d_viewers.patch) by @qed777 created at 2009-10-22 05:28:45\n\nUpdate command-line 3d viewer scripts.  Apply to sagenb repository.",
     "created_at": "2009-10-22T05:28:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60336",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60224",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -213,15 +213,15 @@ Update command-line 3d viewer scripts.  Apply to sagenb repository.
 
 ---
 
-archive/issue_comments_060337.json:
+archive/issue_comments_060225.json:
 ```json
 {
     "body": "Attachment [trac_7263-sagenb_cli_3d_viewers.patch](tarball://root/attachments/some-uuid/ticket7263/trac_7263-sagenb_cli_3d_viewers.patch) by @qed777 created at 2009-10-22 20:38:54\n\nThe patches depend on #7196.",
     "created_at": "2009-10-22T20:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60337",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60225",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -233,15 +233,15 @@ The patches depend on #7196.
 
 ---
 
-archive/issue_comments_060338.json:
+archive/issue_comments_060226.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-22T20:38:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60338",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60226",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -251,15 +251,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060339.json:
+archive/issue_comments_060227.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-23T03:42:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60339",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60227",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -269,15 +269,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060340.json:
+archive/issue_comments_060228.json:
 ```json
 {
     "body": "I merged the sagenb part of this into the official notebook hg repo.   Mhansen will have to merge the other part into sage itself.",
     "created_at": "2009-10-23T03:42:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60340",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60228",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -287,15 +287,15 @@ I merged the sagenb part of this into the official notebook hg repo.   Mhansen w
 
 ---
 
-archive/issue_comments_060341.json:
+archive/issue_comments_060229.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-23T09:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60341",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7263#issuecomment-60229",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

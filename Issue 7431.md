@@ -6,15 +6,14 @@ archive/issues_007431.json:
     "body": "Assignee: @itolkov\n\nCC:  @jasongrout\n\n\n```\n%hide \n@interact \ndef _(n=2): \n    f(x,y)=x^n \n    show(plot(f,(x,0,1))) \n```\n\ndoesn't work well, especially if you update the interact. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7431\n\n",
     "created_at": "2009-11-11T19:47:36Z",
     "labels": [
-        "interact",
-        "major",
+        "component: interact",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "@interact and %hide don't play nice together",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7431",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: @itolkov
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7431
 
 ---
 
-archive/issue_comments_062527.json:
+archive/issue_comments_062412.json:
 ```json
 {
     "body": "Update on this:  Interact does work with hide, but for some reason only after you save, quit, and restart.  Why???",
     "created_at": "2010-01-04T20:22:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62527",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62412",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -58,15 +57,15 @@ Update on this:  Interact does work with hide, but for some reason only after yo
 
 ---
 
-archive/issue_comments_062528.json:
+archive/issue_comments_062413.json:
 ```json
 {
     "body": "Another update:  Lately, it's been working, but only if I remove the focus from that cell, then use the interact.  Anyway, it's confusing.  Perhaps someone else will have input.  Changing priority since no one else has touched this, though.",
     "created_at": "2010-04-22T01:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62528",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62413",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -76,15 +75,15 @@ Another update:  Lately, it's been working, but only if I remove the focus from 
 
 ---
 
-archive/issue_comments_062529.json:
+archive/issue_comments_062414.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-04-22T01:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62529",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7431#issuecomment-62414",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

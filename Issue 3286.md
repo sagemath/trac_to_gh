@@ -6,7 +6,7 @@ archive/issues_003286.json:
     "body": "Assignee: @mwhansen\n\nCC:  @jbandlow sage-combinat\n\nSome clean-up as described here: [http://wiki.sagemath.org/combinat/Weirdness](http://wiki.sagemath.org/combinat/Weirdness)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3286\n\n",
     "created_at": "2008-05-23T17:21:59Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003286.json:
     "title": "[with patch; needs review] Minor fixes (mostly doc) to partition.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3286",
-    "user": "@jbandlow"
+    "user": "https://github.com/jbandlow"
 }
 ```
 Assignee: @mwhansen
@@ -32,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3286
 
 ---
 
-archive/issue_comments_022743.json:
+archive/issue_comments_022696.json:
 ```json
 {
     "body": "Attachment [partition.patch](tarball://root/attachments/some-uuid/ticket3286/partition.patch) by @jbandlow created at 2008-05-23 17:22:52",
     "created_at": "2008-05-23T17:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22743",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22696",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -50,15 +50,15 @@ Attachment [partition.patch](tarball://root/attachments/some-uuid/ticket3286/par
 
 ---
 
-archive/issue_comments_022744.json:
+archive/issue_comments_022697.json:
 ```json
 {
     "body": "Attachment [3286.patch](tarball://root/attachments/some-uuid/ticket3286/3286.patch) by @mwhansen created at 2008-05-23 22:01:20",
     "created_at": "2008-05-23T22:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22744",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22697",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -68,15 +68,15 @@ Attachment [3286.patch](tarball://root/attachments/some-uuid/ticket3286/3286.pat
 
 ---
 
-archive/issue_comments_022745.json:
+archive/issue_comments_022698.json:
 ```json
 {
     "body": "Applies against 3.0.2.alpha0 and passes tests.  Looks good to me.",
     "created_at": "2008-05-23T22:12:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22745",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22698",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -86,15 +86,15 @@ Applies against 3.0.2.alpha0 and passes tests.  Looks good to me.
 
 ---
 
-archive/issue_comments_022746.json:
+archive/issue_comments_022699.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-25T03:37:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22746",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22699",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -104,15 +104,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022747.json:
+archive/issue_comments_022700.json:
 ```json
 {
     "body": "Merged 3286.patch in Sage 3.0.3.alpha0. The difference between the two patches seems to be that Mike's patch is a proper mercurial patch while Jason's is a diff. I edited Mike's patch so that Jason gets credit in the log which I assume is the intent here. \n\nCheers,\n\nMichael",
     "created_at": "2008-05-25T03:37:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22747",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3286#issuecomment-22700",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

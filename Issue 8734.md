@@ -6,15 +6,14 @@ archive/issues_008734.json:
     "body": "Assignee: @williamstein\n\nCC:  @williamstein acleone @kcrisman @robert-marik @burcin @saliola\n\nThis patch prepends a unique string, \"_SAGE_VAR_\", to each variable name in maxima, to avoid conflicts with existing variables in maxima.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8734\n\n",
     "created_at": "2010-04-21T05:45:14Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.3",
     "title": "make sage variables unique in maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8734",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8734
 
 ---
 
-archive/issue_comments_079828.json:
+archive/issue_comments_079698.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-04-21T05:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79828",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79698",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_079829.json:
+archive/issue_comments_079699.json:
 ```json
 {
     "body": "Attachment [trac-8734-maxima-vars.patch](tarball://root/attachments/some-uuid/ticket8734/trac-8734-maxima-vars.patch) by @jasongrout created at 2010-04-21 05:54:17\n\nI haven't run doctests on everything, but this patch is a start, if one of you wants to take it from here.",
     "created_at": "2010-04-21T05:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79829",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79699",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -69,15 +68,15 @@ I haven't run doctests on everything, but this patch is a start, if one of you w
 
 ---
 
-archive/issue_comments_079830.json:
+archive/issue_comments_079700.json:
 ```json
 {
     "body": "I think there might also be another ticket about this somewhere...",
     "created_at": "2010-04-21T13:03:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79830",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79700",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -87,15 +86,15 @@ I think there might also be another ticket about this somewhere...
 
 ---
 
-archive/issue_comments_079831.json:
+archive/issue_comments_079701.json:
 ```json
 {
     "body": "Hi, it is also #8634 and there is a dicussion at [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/67f0a63d00b8d835/06557a921a582f87)",
     "created_at": "2010-04-21T13:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79831",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79701",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -105,15 +104,15 @@ Hi, it is also #8634 and there is a dicussion at [sage-devel](http://groups.goog
 
 ---
 
-archive/issue_comments_079832.json:
+archive/issue_comments_079702.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2010-05-03T17:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79832",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79702",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing assignee from @williamstein to @jasongrout.
 
 ---
 
-archive/issue_comments_079833.json:
+archive/issue_comments_079703.json:
 ```json
 {
     "body": "This should fix #6882",
     "created_at": "2010-05-03T17:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79833",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79703",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -141,15 +140,15 @@ This should fix #6882
 
 ---
 
-archive/issue_comments_079834.json:
+archive/issue_comments_079704.json:
 ```json
 {
     "body": "Replying to [comment:5 jason]:\n> This should fix #6882\n\nWell, or at least *help* with the solution, anyway.",
     "created_at": "2010-05-03T17:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79834",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79704",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -162,15 +161,15 @@ Well, or at least *help* with the solution, anyway.
 
 ---
 
-archive/issue_comments_079835.json:
+archive/issue_comments_079705.json:
 ```json
 {
     "body": "This ticket may also fix #9538.",
     "created_at": "2010-08-12T22:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79835",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79705",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -180,15 +179,15 @@ This ticket may also fix #9538.
 
 ---
 
-archive/issue_comments_079836.json:
+archive/issue_comments_079706.json:
 ```json
 {
     "body": "patch should be rebased, it fails to apply to Sage 5.11:\n\n```\nsage: hg_sage.import_patch(\"/tmp/trac-8734-maxima-vars.patch\")\ncd \"/home/zimmerma/Downloads/sage-5.11/devel/sage\" && sage --hg import   \"/tmp/trac-8734-maxima-vars.patch\"\napplying /tmp/trac-8734-maxima-vars.patch\npatching file sage/calculus/calculus.py\nHunk #1 FAILED at 1450\nHunk #2 FAILED at 1461\n2 out of 2 hunks FAILED -- saving rejects to file sage/calculus/calculus.py.rej\npatching file sage/symbolic/assumptions.py\nHunk #1 FAILED at 100\n1 out of 1 hunks FAILED -- saving rejects to file sage/symbolic/assumptions.py.rej\nabort: patch failed to apply\n```\n\nPaul",
     "created_at": "2013-08-25T13:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79836",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79706",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -214,15 +213,15 @@ Paul
 
 ---
 
-archive/issue_comments_079837.json:
+archive/issue_comments_079707.json:
 ```json
 {
     "body": "Rebased on 6.2.beta3\n\nPatch doesn't seem ready:\n\n```\nsage -t --long src/sage/symbolic/integration/integral.py  # 3 doctests failed\nsage -t --long src/sage/symbolic/assumptions.py  # 26 doctests failed\nsage -t --long src/sage/symbolic/pynac.pyx  # 1 doctest failed\nsage -t --long src/sage/symbolic/expression.pyx  # 21 doctests failed\nsage -t --long src/sage/calculus/desolvers.py  # 63 doctests failed\nsage -t --long src/sage/calculus/calculus.py  # 13 doctests failed\nsage -t --long src/sage/calculus/functional.py  # 1 doctest failed\n```\n\n----\nNew commits:",
     "created_at": "2014-03-08T08:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79837",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79707",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -247,15 +246,15 @@ New commits:
 
 ---
 
-archive/issue_comments_079838.json:
+archive/issue_comments_079708.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-03-22T15:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79838",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79708",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -265,15 +264,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079839.json:
+archive/issue_comments_079709.json:
 ```json
 {
     "body": "This fixes the errors in symbolic. More to come...",
     "created_at": "2014-03-22T15:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79839",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79709",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -283,15 +282,15 @@ This fixes the errors in symbolic. More to come...
 
 ---
 
-archive/issue_comments_079840.json:
+archive/issue_comments_079710.json:
 ```json
 {
     "body": "Thanks for working on this!  This could also then eventually lead to a way to deal with the extra variables that come from e.g. differential equation solvers in Maxima - if we picked up a non-existent (in Sage) variable, we could perhaps do something with it.  (There are tickets about this out there, so I won't repeat that discussion.)",
     "created_at": "2014-03-22T15:59:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79840",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79710",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -301,15 +300,15 @@ Thanks for working on this!  This could also then eventually lead to a way to de
 
 ---
 
-archive/issue_comments_079841.json:
+archive/issue_comments_079711.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-03-24T15:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79841",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79711",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -319,15 +318,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079842.json:
+archive/issue_comments_079712.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2014-03-24T15:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79842",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79712",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -337,15 +336,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_079843.json:
+archive/issue_comments_079713.json:
 ```json
 {
     "body": "This fixes the last doctests, mainly by handling the desolver entry points.",
     "created_at": "2014-03-24T15:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79843",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79713",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -355,15 +354,15 @@ This fixes the last doctests, mainly by handling the desolver entry points.
 
 ---
 
-archive/issue_comments_079844.json:
+archive/issue_comments_079714.json:
 ```json
 {
     "body": "Merge conflict, please merge in the latest beta",
     "created_at": "2014-04-14T22:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79844",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79714",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -373,15 +372,15 @@ Merge conflict, please merge in the latest beta
 
 ---
 
-archive/issue_comments_079845.json:
+archive/issue_comments_079715.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2014-04-15T06:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79845",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79715",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -391,15 +390,15 @@ New commits:
 
 ---
 
-archive/issue_comments_079846.json:
+archive/issue_comments_079716.json:
 ```json
 {
     "body": "\n```\nsage -t --long src/sage/functions/bessel.py  # 3 doctests failed\nsage -t --long src/sage/interfaces/maxima_abstract.py  # 16 doctests failed\nsage -t --long src/sage/tests/french_book/recequadiff.py  # 1 doctest failed\nsage -t --long src/sage/interfaces/maxima.py  # 2 doctests failed\nsage -t --long src/doc/en/constructions/calculus.rst  # 2 doctests failed\nsage -t --long src/sage/interfaces/maxima_lib.py  # 11 doctests failed\nsage -t --long src/sage/functions/other.py  # 4 doctests failed\nsage -t --long src/sage/functions/orthogonal_polys.py  # 5 doctests failed\nsage -t --long src/sage/symbolic/expression_conversions.py  # 2 doctests failed\nsage -t --long src/sage/interfaces/interface.py  # 10 doctests failed\n```\n",
     "created_at": "2014-04-15T11:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79846",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79716",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -422,15 +421,15 @@ sage -t --long src/sage/interfaces/interface.py  # 10 doctests failed
 
 ---
 
-archive/issue_comments_079847.json:
+archive/issue_comments_079717.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2014-04-15T11:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79847",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79717",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -440,15 +439,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_079848.json:
+archive/issue_comments_079718.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-04-15T16:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79848",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79718",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -458,15 +457,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079849.json:
+archive/issue_comments_079719.json:
 ```json
 {
     "body": "Concerning the remaining doctests in `interfaces/maxima_abstract.py` I am at a loss at what to do. For example this\n\n```\nsage: x,y = var('x,y'); f = maxima.function('x','sin(x)')\nsage: type(f)\n<class 'sage.interfaces.maxima.MaximaElementFunction'>\nsage: g=maxima.cos(x)\nsage: type(g)\n<class 'sage.interfaces.maxima.MaximaElement'>\nsage: f+g\ncos(_SAGE_VAR_x)+sin(x)\nsage: (f+g)(2)\ncos(_SAGE_VAR_x)+sin(2)\n```\n\nshows that while the `MaximaElementFunction f` has the variable `x` which is associated with `_SAGE_VAR_x` in Maxima (and calling the function works as expected), the `MaximaElement g` shows `_SAGE_VAR_x` which has of course no Maxima pendant (and calling the function bombs). Naively both should behave identically.\n\n\n```\nsage: h=SR(maxima.cos(x))\nsage: h\ncos(x)\nsage: h(2)\ncos(2)\nsage: f+h\ncos(_SAGE_VAR_x)+sin(x)\nsage: (f+h)(2)\ncos(_SAGE_VAR_x)+sin(2)\n```\n\nMoreover, if `g` gets converted to `SR` it behaves fine but when converted to `type(f)` by using it as rhs it gets `_SAGE_VAR_x` as parameter. What is the next step?",
     "created_at": "2014-04-17T08:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79849",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79719",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -506,15 +505,15 @@ Moreover, if `g` gets converted to `SR` it behaves fine but when converted to `t
 
 ---
 
-archive/issue_comments_079850.json:
+archive/issue_comments_079720.json:
 ```json
 {
     "body": "As far as I understand now, a `MaximaElementFunction` is a function defined within the Maxima process, and so `x` is the parameter name, not a registered variable. Thus the output `sin(x)` makes sense. OTOH any `_SAGE_VAR_x` that appears in a `MaximaElement` repr refers to a registered variable within Maxima that is associated with a registered Sage var named `x`. Let's interpret the above output in the light of this.\n> {{{\n> sage: f+g\n> cos(_SAGE_VAR_x)+sin(x)\n> }}}\nCorrect but can the user make sense of it?\n> {{{\n> sage: (f+g)(2)\n> cos(_SAGE_VAR_x)+sin(2)\n> }}}\nThat is not less correct than\n\n```\nsage: (sin(x)+cos(y))(2)\ncos(y) + sin(2)\n```\n\nand it just seems to be another case of `SR._call_element_()` where is stated: \"Note that you make get unexpected results when calling symbolic expressions and not explicitly giving the variables.\"\n\nMoreover, it was a hack that this worked at all in the `MaximaAbstractElementFunction._add_()` doctests because\n\n```\nsage: f = maxima.function('z','sin(z)')\nsage: f\nsin(z)\nsage: f(2)\nsin(2)\nsage: (sin(z))(2)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\nNameError: name 'z' is not defined\n```\n",
     "created_at": "2014-04-18T14:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79850",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79720",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -556,15 +555,15 @@ NameError: name 'z' is not defined
 
 ---
 
-archive/issue_comments_079851.json:
+archive/issue_comments_079721.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-04-18T14:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79851",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79721",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -574,15 +573,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079852.json:
+archive/issue_comments_079722.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2014-04-18T14:58:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79852",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79722",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -592,15 +591,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_079853.json:
+archive/issue_comments_079723.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-05-26T09:29:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79853",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79723",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -610,15 +609,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079854.json:
+archive/issue_comments_079724.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-05-26T13:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79854",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79724",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -628,15 +627,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079855.json:
+archive/issue_comments_079725.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-06-06T13:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79855",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79725",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -646,15 +645,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079856.json:
+archive/issue_comments_079726.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-06-06T13:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79856",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79726",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -664,15 +663,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079857.json:
+archive/issue_comments_079727.json:
 ```json
 {
     "body": "Hi!  Thanks for keeping at this.  I'll try to look at it one final time soon - waiting for the latest beta to compile.  In the meantime:\n\nI like the renaming and doctesting of the missing assumption function, and I agree with your analysis of the Maxima 'parameters', as you call them - yes, those are completely separate from Sage.  I would encourage you to be even more explicit than\n\n```\nThe parameter ``x`` is different from the symbolic variable::\n```\n\nby saying something about it being a *Maxima* parameter versus *Sage* symbolic variable.  Does that make sense?\n\nAlso, don't worry too much about the 'todo' in `doc/en/constructions/calculus.rst`.  That is truly ancient, from the days where legendary heroes of yore managed to bring calculus functionality, despite awkward syntax, into an algebraic geometry program... meaning eventually that should be just rewritten to use \"native syntax\" or just folded into the calculus documentation.",
     "created_at": "2014-06-06T14:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79857",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79727",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -692,15 +691,15 @@ Also, don't worry too much about the 'todo' in `doc/en/constructions/calculus.rs
 
 ---
 
-archive/issue_comments_079858.json:
+archive/issue_comments_079728.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-06-07T05:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79858",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79728",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -710,15 +709,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079859.json:
+archive/issue_comments_079729.json:
 ```json
 {
     "body": "Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.\n* Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?  (Also, did you change all of the doctests with assumptions, or leave a few just so people see what the full form looks like?)\n* Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\n* I assume you are more than happy with Jason's original patch doing the basic functionality, right?\n\nThe only part I haven't had a chance to really dig into is the differential equations changes (Commit a74ec0).  I assume there isn't an obvious more modular way to deal with those :( but I don't have time currently to go through this in detail.  My main issue (not really a concern, just my lack of being convinced yet) is just seeing that we really aren't over-replacing or under-replacing in that.\n\nSo these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!",
     "created_at": "2014-06-17T15:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79859",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79729",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -735,15 +734,15 @@ So these are pretty minor things and hopefully I'll be able to find some time fo
 
 ---
 
-archive/issue_comments_079860.json:
+archive/issue_comments_079730.json:
 ```json
 {
     "body": "Replying to [comment:37 kcrisman]:\n> Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.\nSure, as long as you remember \"The perfect is the enemy of the good.\" \n> * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\nThere are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\n>(Also, did you change all of the doctests with assumptions, or leave a few just so people see what the full form looks like?)\nYes.\n> * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\nNo, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\n> * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\nYes and no. A lot was missing.\n> ...\n> So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\nI would assume this is caught by all those doctests using maxima.",
     "created_at": "2014-06-17T15:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79860",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79730",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -766,15 +765,15 @@ I would assume this is caught by all those doctests using maxima.
 
 ---
 
-archive/issue_comments_079861.json:
+archive/issue_comments_079731.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-06-17T15:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79861",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79731",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -784,15 +783,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079862.json:
+archive/issue_comments_079732.json:
 ```json
 {
     "body": "The output changed recently and I forgot to fix one doctest.",
     "created_at": "2014-06-17T15:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79862",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79732",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -802,15 +801,15 @@ The output changed recently and I forgot to fix one doctest.
 
 ---
 
-archive/issue_comments_079863.json:
+archive/issue_comments_079733.json:
 ```json
 {
     "body": "> > Okay, here are a few questions.  I am pretty sure the answers are very straightforward, but I want to make sure it's clear - in case we might want to add a doctest, for instance.\n> Sure, as long as you remember \"The perfect is the enemy of the good.\" \nOf course!\n> > * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\n> There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\nHmm, okay.  I don't see how `_create` could have asked for an evaluation of this type, but I suppose.\n> > * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\n> No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\nI'm not referring to that; in fact, I fully agreed with that strategy in earlier comments.  My question is specifically about `jj=2` - since usually `jj=3` seems to be the old case.  We should test a new branch, which this appears to be (though it may just be something obvious I'm not seeing).\n> > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\n> Yes and no. A lot was missing.\nI mean in terms of reviewing that for the *basic* functionality for proper conversion.  Naturally you provided a huge amount of missing stuff!\n> > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\n> I would assume this is caught by all those doctests using maxima.\nThat's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.",
     "created_at": "2014-06-17T16:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79863",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79733",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -834,15 +833,15 @@ That's my point - they may NOT catch a missing one, since we only remove things 
 
 ---
 
-archive/issue_comments_079864.json:
+archive/issue_comments_079734.json:
 ```json
 {
     "body": "Replying to [comment:41 kcrisman]:\n> > > * Commit \tbe9367 (where you add a try/except clause in `_create`) - what sort of situation is that catching?\n> > There are several places where maxima.eval() is called and where exceptions are thrown. This one was simply overlooked, so that change fixes an unreported bug.\n> Hmm, okay.  I don't see how `_create` could have asked for an evaluation of this type, but I suppose.\nIt is really easy to find it out yourself: just change `RuntimeError` to something different like `NotImplementedError`, doctest, and you'll get:\n\n```\nsage -t src/sage/tests/french_book/recequadiff.py\n**********************************************************************\nFile \"src/sage/tests/french_book/recequadiff.py\", line 247, in sage.tests.french_book.recequadiff\nFailed example:\n    desolve(eq1,[f,x])\nExpected:\n    Traceback (most recent call last):\n      ...\n    TypeError: Computation failed ...\n    Is k positive, negative or zero?\nGot:\n    <BLANKLINE>\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 480, in _run\n        self.execute(example, compiled, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 839, in execute\n        exec compiled in globs\n      File \"<doctest sage.tests.french_book.recequadiff[64]>\", line 1, in <module>\n        desolve(eq1,[f,x])\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/calculus/desolvers.py\", line 436, in desolve\n        soln = P(cmd)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/interfaces/interface.py\", line 199, in __call__\n        return cls(self, x, name=name)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/interfaces/interface.py\", line 626, in __init__\n        raise TypeError(x)\n    TypeError: ECL says: Maxima asks: Is _SAGE_VAR_k positive, negative or zero?\n```\n\n> > > * Commit \tced268 (where you generalized the missing assumptions) - what situation is that additionally catching?  Was that a case of Maxima asking questions which we didn't catch (and hence doctest) before?\n> > No, it reduces code duplication. Recommended reading: https://en.wikipedia.org/wiki/Code_refactoring\n> I'm not referring to that; in fact, I fully agreed with that strategy in earlier comments.  My question is specifically about `jj=2` - since usually `jj=3` seems to be the old case.  We should test a new branch, which this appears to be (though it may just be something obvious I'm not seeing).\nThere were cases where there were two spaces in the output after 'Is '.\n> > > * I assume you are more than happy with Jason's original patch doing the basic functionality, right?\n> > Yes and no. A lot was missing.\n> I mean in terms of reviewing that for the *basic* functionality for proper conversion.  Naturally you provided a huge amount of missing stuff!\nI think his ansatz was what I would have done, too.\n> > > So these are pretty minor things and hopefully I'll be able to find some time for the DE part (or someone else will!) and we'll be on our way!  It certainly looks like you were VERY thorough in finding places that might cause trouble.  The difficulty is that one might miss some places it is needed because in the absence of adding `_SAGE_VAR_` things should still work, so one might not know if we missed one.  Thanks!\n> > I would assume this is caught by all those doctests using maxima.\n> That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.\nCan you please clarify: \"one might miss some places it is needed\"---what's the it here?",
     "created_at": "2014-06-18T08:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79864",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79734",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -898,15 +897,15 @@ Can you please clarify: "one might miss some places it is needed"---what's the i
 
 ---
 
-archive/issue_comments_079865.json:
+archive/issue_comments_079735.json:
 ```json
 {
     "body": "> There were cases where there were two spaces in the output after 'Is '.\nAnnoying.\n> > That's my point - they may NOT catch a missing one, since we only remove things via search-and-replace-with-empty-string, and everything worked before.\n> Can you please clarify: \"one might miss some places it is needed\"---what's the it here? \nWhat I mean is that if one had missed a place where we should have added `SAGE_VAR` but didn't, we might not know because the result would not need `SAGE_VAR` stripped from it, so it would perhaps still work.  But I'm not overly concerned about this ... because it would still work.\n\n----\n\nAnyway, if someone reviews the diffeq part before me (I won't have time before next week), that is all I think still needs review.  This will be great to finally have in!",
     "created_at": "2014-06-18T15:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79865",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79735",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -924,15 +923,15 @@ Anyway, if someone reviews the diffeq part before me (I won't have time before n
 
 ---
 
-archive/issue_comments_079866.json:
+archive/issue_comments_079736.json:
 ```json
 {
     "body": "For the\n\n```\ntry:\n ....\nexcept ... as error:\n ...\n    raise error\n```\n\nin maxima_lib.py (and possibly elsewhere):\nIt's *much* better to reraise an error with a bare `raise` rather than `raise error`, since the bare raise will leave the original traceback intact, whereas the `raise error` will create a new traceback, obscuring the actual source of the error.",
     "created_at": "2014-06-18T20:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79866",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79736",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -953,15 +952,15 @@ It's *much* better to reraise an error with a bare `raise` rather than `raise er
 
 ---
 
-archive/issue_comments_079867.json:
+archive/issue_comments_079737.json:
 ```json
 {
     "body": "Replying to [comment:44 nbruin]:\n> For the\n> {{{\n> try:\n>  ....\n> except ... as error:\n>  ...\n>     raise error\n> }}}\n> in maxima_lib.py (and possibly elsewhere):\n> It's *much* better to reraise an error with a bare `raise` rather than `raise error`, since the bare raise will leave the original traceback intact, whereas the `raise error` will create a new traceback, obscuring the actual source of the error.\nIn this case, yes. Else, are you requesting to rethrow the `RuntimeError` from Maxima in all cases as `RuntimeError`? I'm asking because it appears that preserving the stacktrace and throwing the more specific `ValueError` appears possible:\nhttp://www.gossamer-threads.com/lists/python/python/947257\n\n```\nIn Python 3 you could chain the exceptions with: \n\nexcept Exception as e: \nraise CustomException() from e \n\nThere is no such syntax in Python 2, but you could manually store and \nretrieve the __cause__ and __traceback__ attributes similarly to the \nway Python 3 does it. See PEP 3134 for full details. \n```\n\nhttp://legacy.python.org/dev/peps/pep-3134/\n\n```\nSometimes it can be useful for an exception handler to intentionally\n    re-raise an exception, either to provide extra information or to\n    translate an exception to another type. ...\n```\n",
     "created_at": "2014-06-19T09:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79867",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79737",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1003,15 +1002,15 @@ Sometimes it can be useful for an exception handler to intentionally
 
 ---
 
-archive/issue_comments_079868.json:
+archive/issue_comments_079738.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-06-19T09:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79868",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79738",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1021,15 +1020,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079869.json:
+archive/issue_comments_079739.json:
 ```json
 {
     "body": "Replying to [comment:45 rws]:\n> In this case, yes. Else, are you requesting to rethrow the `RuntimeError` from Maxima in all cases as `RuntimeError`? I'm asking because it appears that preserving the stacktrace and throwing the more specific `ValueError` appears possible:\n\nGood to know! I don't have a strong opinion what type of error to return. However, without further inspection, I don't think you would know if the error is more appropriately a `ValueError`. You could get `RuntimeError(\"ECL says: I'm tired\")`for as far as you know at this point. So my guess is that it's not worth trying to do something with the error type.",
     "created_at": "2014-06-19T13:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79869",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79739",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -1042,15 +1041,15 @@ Good to know! I don't have a strong opinion what type of error to return. Howeve
 
 ---
 
-archive/issue_comments_079870.json:
+archive/issue_comments_079740.json:
 ```json
 {
     "body": "All the following is modulo my Python newbieness.\n\nWhat I wrote about legal tricks to preserve the traceback would work IF Sage was purely Python-2 or Python-3. With the momentary transition to Py-3, the form `raise Error, message, traceback` of the raise command is considered a bug. OTOH there is no way to supply two arguments in parentheses. Finally, the form `raise Error from previous_error` is only possible with Py-3.\n\nSecondly, to ask interactively for a missing assumption a message has to be given in the terminal different from the error message tied to the original `RuntimeError`. So, simply re-raising is not an option if you do not like `RuntimeError: ECL says: Maxima asks: Is _SAGE_VAR_a an integer?`.\n\nSo, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.",
     "created_at": "2014-06-20T07:28:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79870",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79740",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1066,15 +1065,15 @@ So, in my opinion, unless someone comes up with a better solution, this ticket w
 
 ---
 
-archive/issue_comments_079871.json:
+archive/issue_comments_079741.json:
 ```json
 {
     "body": "Replying to [comment:48 rws]:\n> Secondly, to ask interactively for a missing assumption a message has to be given in the terminal different from the error message tied to the original `RuntimeError`. So, simply re-raising is not an option if you do not like `RuntimeError: ECL says: Maxima asks: Is _SAGE_VAR_a an integer?`.\n\nIn that case we know exactly what happened and the original traceback doesn't have to be kept. Raising a a fresh exception with a fresh traceback should be fine. It's when you find that the `RuntimeError` you've just caught is *not* the one you expected that the original traceback is valuable. And in that case you probably don't want to mess with the exception object itself either, so a bare `raise` should do the trick. The scenario of changing the error object but keeping the original traceback should be quite rare.\n\n> So, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.\n\nwhich may be a very long time. It nice to do things in a Py2/Py3 compatible way if possible (which can be done here, I think), but if not we'll just have to fix it if/when sage transitions from Py2 to Py3.",
     "created_at": "2014-06-20T12:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79871",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79741",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -1091,15 +1090,15 @@ which may be a very long time. It nice to do things in a Py2/Py3 compatible way 
 
 ---
 
-archive/issue_comments_079872.json:
+archive/issue_comments_079742.json:
 ```json
 {
     "body": "> > So, in my opinion, unless someone comes up with a better solution, this ticket will have to wait until Sage is Py-3.\n> \n> which may be a very long time. \nIndeed.\n> It nice to do things in a Py2/Py3 compatible way if possible (which can be done here, I think), but if not we'll just have to fix it if/when sage transitions from Py2 to Py3.\nI'm not quite clear on why this is the case.  I thought you said above to not let the perfect be the enemy of the good ;-)  It seems like just raising the original exception is a good compromise here; at the very least it should give *some* information, right?",
     "created_at": "2014-06-20T13:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79872",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79742",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1114,15 +1113,15 @@ I'm not quite clear on why this is the case.  I thought you said above to not le
 
 ---
 
-archive/issue_comments_079873.json:
+archive/issue_comments_079743.json:
 ```json
 {
     "body": "I agree I was the perfectionist this time so, with the bare raise patch already uploaded, it remains for me to thank you and ask for positive review.",
     "created_at": "2014-06-20T13:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79873",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79743",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1132,15 +1131,15 @@ I agree I was the perfectionist this time so, with the bare raise patch already 
 
 ---
 
-archive/issue_comments_079874.json:
+archive/issue_comments_079744.json:
 ```json
 {
     "body": "Again, for me, all is positive review except the diffeq commit, and that only because I haven't had time to look carefully at it, not because I suspect any problems - it looks quite thorough.",
     "created_at": "2014-06-20T17:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79874",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79744",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1150,15 +1149,15 @@ Again, for me, all is positive review except the diffeq commit, and that only be
 
 ---
 
-archive/issue_comments_079875.json:
+archive/issue_comments_079745.json:
 ```json
 {
     "body": "Okay, I have a few questions about [the ode changes](http://git.sagemath.org/sage.git/diff/src/sage/calculus/desolvers.py?id=610fb79bfc9fde84dea1200fdfcd4bceb25bd77f).   I assume the answer to all of them is \"it would have been even messier any other way\", but I just wanted to check.\n* In some of the sanitizing functions, you replace things like `'_SAGE_VAR_f` with `f`, but in others you only replace the independent variable that way.  Is that because of specific examples that didn't work, or was the context different, or... ? \n* I'm wondering whether the Sage translation would have just taken care of this in `soln.sage()`, but I guess it didn't.   Was there any possible change to the translation that could have done this, rather than getting into the ode wrapper code directly (which makes it harder to read)?  For instance, in `desolve_laplace` we convert the `de` to Maxima (presumably adding `SAGE_VAR`, add another `SAGE_VAR` from `f(x)` to `f(_SAGE_VAR_x)` (I think), and then proceed to remove only the `SAGE_VAR` from the *de*pendent variable.  So... that part isn't taken care of by the translation, but the independent variable still somehow is translated back correctly, but not forward within `de0=de._maxima_()`?  Yet in the `rk4` types this isn't a problem, apparently.\n* We should probably just remove `desolve_system_strings`, see #8132 where it was first said to be obsolete, and it hasn't been in the global namespace since before 2010.  That is pretty much equivalent to a deprecation to me.  However, we should keep any non-overlapping examples - so maybe removal should be another ticket...\nBut it seems good, assuming I didn't miss any tests that fail...",
     "created_at": "2014-06-26T14:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79875",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79745",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1172,15 +1171,15 @@ But it seems good, assuming I didn't miss any tests that fail...
 
 ---
 
-archive/issue_comments_079876.json:
+archive/issue_comments_079746.json:
 ```json
 {
     "body": "> But it seems good, assuming I didn't miss any tests that fail...\nI didn't.  So as long as you give the answers I expect, we are all set here.",
     "created_at": "2014-06-26T14:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79876",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79746",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1191,15 +1190,15 @@ I didn't.  So as long as you give the answers I expect, we are all set here.
 
 ---
 
-archive/issue_comments_079877.json:
+archive/issue_comments_079747.json:
 ```json
 {
     "body": "Working from the bottom up ...\n\nReplying to [comment:54 kcrisman]:\n>  * We should probably just remove `desolve_system_strings`, see #8132 where it was first said to be obsolete, and it hasn't been in the global namespace since before 2010.  That is pretty much equivalent to a deprecation to me.  However, we should keep any non-overlapping examples - so maybe removal should be another ticket...\n\nThis is now #16568.",
     "created_at": "2014-06-27T14:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79877",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79747",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1214,15 +1213,15 @@ This is now #16568.
 
 ---
 
-archive/issue_comments_079878.json:
+archive/issue_comments_079748.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-06-29T08:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79878",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79748",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1232,15 +1231,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079879.json:
+archive/issue_comments_079749.json:
 ```json
 {
     "body": "Replying to [comment:54 kcrisman]:\n>  * In some of the sanitizing functions, you replace things like `'_SAGE_VAR_f` with `f`, but in others you only replace the independent variable that way.  Is that because of specific examples that didn't work, or was the context different, or... ? \nIt certainly was then because of specific examples. The removal of the code I think you mean makes no difference now, however.\n>  * I'm wondering whether the Sage translation would have just taken care of this in `soln.sage()`, but I guess it didn't.   Was there any possible change to the translation that could have done this, rather than getting into the ode wrapper code directly (which makes it harder to read)?  For instance, in `desolve_laplace` we convert the `de` to Maxima (presumably adding `SAGE_VAR`, add another `SAGE_VAR` from `f(x)` to `f(_SAGE_VAR_x)` (I think), and then proceed to remove only the `SAGE_VAR` from the *de*pendent variable.  So... that part isn't taken care of by the translation, but the independent variable still somehow is translated back correctly, but not forward within `de0=de._maxima_()`?  Yet in the `rk4` types this isn't a problem, apparently.\nWith the above removal of superfluous code I don't see any different behaviour in the three functions `laplace/system/rk4`. There is always the marking of the dependent var to prepare for the call to solve. You cannot remove this because `maxima(cmd)` does no translation, it's the low-level call. The translation has to be done here, as far as I understand.",
     "created_at": "2014-06-29T08:50:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79879",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79749",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1254,15 +1253,15 @@ With the above removal of superfluous code I don't see any different behaviour i
 
 ---
 
-archive/issue_comments_079880.json:
+archive/issue_comments_079750.json:
 ```json
 {
     "body": "> With the above removal of superfluous code I don't see any different behaviour in the three functions `laplace/system/rk4`. There is always the marking of the dependent var to prepare for the call to solve. You cannot remove this because `maxima(cmd)` does no translation, it's the low-level call. The translation has to be done here, as far as I understand.\nAgain, I'm just confused because in `laplace/rk4` the dependent variable gets `_SAGE_VAR_` but in `desolve` it doesn't.  Maybe this isn't important, though.  And is the last change in `desolve` ok because putting things into Maxima takes care of the `_SAGE_VAR_` already?",
     "created_at": "2014-07-02T02:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79880",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79750",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1273,15 +1272,15 @@ Again, I'm just confused because in `laplace/rk4` the dependent variable gets `_
 
 ---
 
-archive/issue_comments_079881.json:
+archive/issue_comments_079751.json:
 ```json
 {
     "body": "Passes all tests.",
     "created_at": "2014-07-02T12:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79881",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79751",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1291,15 +1290,15 @@ Passes all tests.
 
 ---
 
-archive/issue_comments_079882.json:
+archive/issue_comments_079752.json:
 ```json
 {
     "body": "After studying this in detail, the reason why the last change makes no difference is the following: in `desolve` and `desolve_laplace` the translation to Maxima is applied several times using `maxima()` and `P()` (which is the parent of the first translation result, i.e. of a Maxima expression). `P()` is also applied to `dvar.operator()` resulting in `dvar_str` which already has `_SAGE_VAR_` and is template for sanitization. Appending `_SAGE_VAR_` to `dvar_str` and replacing it thus was useless.\n\nIn `desolve_rk4` the `cmd` is constructed from two parts: the `de0` that gets translated via `._maxima()_` and the construction via string concatenation. So, there is no difference between `desolve` and `desolve_rk4` because `desolve` gets `_SAGE_VAR_` everywhere and `desolve_rk4` too.",
     "created_at": "2014-07-02T15:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79882",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79752",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1311,15 +1310,15 @@ In `desolve_rk4` the `cmd` is constructed from two parts: the `de0` that gets tr
 
 ---
 
-archive/issue_comments_079883.json:
+archive/issue_comments_079753.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-07-02T15:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79883",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79753",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1329,15 +1328,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_079884.json:
+archive/issue_comments_079754.json:
 ```json
 {
     "body": "Let's make it so, then.  I was kind of suspecting there were extra `_SAGE_VAR_`s.",
     "created_at": "2014-07-02T15:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79884",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79754",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1347,15 +1346,15 @@ Let's make it so, then.  I was kind of suspecting there were extra `_SAGE_VAR_`s
 
 ---
 
-archive/issue_comments_079885.json:
+archive/issue_comments_079755.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2014-07-03T02:07:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79885",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79755",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1365,15 +1364,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_079886.json:
+archive/issue_comments_079756.json:
 ```json
 {
     "body": "conflicts with #6882",
     "created_at": "2014-07-03T02:07:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79886",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79756",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1383,15 +1382,15 @@ conflicts with #6882
 
 ---
 
-archive/issue_comments_079887.json:
+archive/issue_comments_079757.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-07-03T06:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79887",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79757",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1401,15 +1400,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_079888.json:
+archive/issue_comments_079758.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2014-07-03T06:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79888",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79758",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1419,15 +1418,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_079889.json:
+archive/issue_comments_079759.json:
 ```json
 {
     "body": "Since the reviewed #6882 is orthogonal I set positive again. Thanks Karl-Dieter for this review! I would be happy if you could have a look at #2516 too.",
     "created_at": "2014-07-03T06:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79889",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79759",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1437,15 +1436,15 @@ Since the reviewed #6882 is orthogonal I set positive again. Thanks Karl-Dieter 
 
 ---
 
-archive/issue_comments_079890.json:
+archive/issue_comments_079760.json:
 ```json
 {
     "body": "> I would be happy if you could have a look at #2516 too.\nSorry, that one I definitely like the idea of and have reviewed many similar ones in the past, but just don't have the time currently to review much new functionality carefully. :(",
     "created_at": "2014-07-03T13:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79890",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79760",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1456,15 +1455,15 @@ Sorry, that one I definitely like the idea of and have reviewed many similar one
 
 ---
 
-archive/issue_comments_079891.json:
+archive/issue_comments_079761.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2014-07-06T17:55:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8734",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79891",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8734#issuecomment-79761",
+    "user": "https://github.com/vbraun"
 }
 ```
 

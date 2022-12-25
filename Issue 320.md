@@ -6,14 +6,14 @@ archive/issues_000320.json:
     "body": "Assignee: somebody\n\n\n```\nsage: RealField.is_field()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/dmharvey/gauss-manin-de/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: descriptor 'is_field' of 'sage.rings.ring.Field' object needs an argument\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/320\n\n",
     "created_at": "2007-03-14T04:58:31Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
     "title": "RealField.is_field() is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/320",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/320
 
 ---
 
-archive/issue_comments_001521.json:
+archive/issue_comments_001517.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2007-03-21T22:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/320",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/320#issuecomment-1521",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/320#issuecomment-1517",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -58,15 +58,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_001522.json:
+archive/issue_comments_001518.json:
 ```json
 {
     "body": "This doesn't make any sense.  RealField is a function that returns a real field of given\nprecision.  You can't call a method on it.  You mean, e.g., \n\n   RealField(53).is_field(),\n\nwhich isn't broken.",
     "created_at": "2007-03-21T22:49:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/320",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/320#issuecomment-1522",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/320#issuecomment-1518",
+    "user": "https://github.com/williamstein"
 }
 ```
 

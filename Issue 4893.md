@@ -6,7 +6,7 @@ archive/issues_004893.json:
     "body": "Assignee: cwitty\n\nKeywords: range\n\nI reported\n\n```\nThe docstring for srange() says:\n\n   Return list of numbers \\code{a, a+step, ..., a+k*step},\n   where \\code{a+k*step < b} and \\code{a+(k+1)*step > b}.\n\n   This is the best way to get an iterator over Sage integers as\n   opposed to Python int's.  It also allows you to specify step sizes\n   to iterate.  It is potentially much slower than the Python range\n   statement, depending on your application.\n\nThe second paragraph suggests that what you get is an iterator, but in\nfact you get a list.  Is there any good reason why srange does not\nreturn an iterator?  Surely that would be more efficient in most\ncases, and the user can turn the iterator into a list if needed.\n```\n\nand William replied\n\n```\nsrange's docstring is wrong and should be fixed.  Please post a patch.\n\nThe function sxrange gives a proper python iterator.  The\ndocumentation for srange should contain a remark that sxrange gives\nthe iterator version, and if it doesn't add that too :-)\n\nBut don't change srange to be a python iterator -- that would be like\nmaking range a python iterator, which is a bad idea since sometimes\npeople use ranges not as iterators.\n```\n\nso I will post a suitable patch,\n\nIssue created by migration from https://trac.sagemath.org/ticket/4893\n\n",
     "created_at": "2008-12-30T20:28:37Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004893.json:
     "title": "srange docstring is misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4893",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: cwitty
@@ -64,15 +64,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4893
 
 ---
 
-archive/issue_comments_037105.json:
+archive/issue_comments_037033.json:
 ```json
 {
     "body": "Attachment [trac_4893.patch](tarball://root/attachments/some-uuid/ticket4893/trac_4893.patch) by @JohnCremona created at 2008-12-30 23:01:43",
     "created_at": "2008-12-30T23:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37105",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37033",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -82,15 +82,15 @@ Attachment [trac_4893.patch](tarball://root/attachments/some-uuid/ticket4893/tra
 
 ---
 
-archive/issue_comments_037106.json:
+archive/issue_comments_037034.json:
 ```json
 {
     "body": "Patch attached, based on 3.2.2.  It only changes the (second paragraph of the) docstring for srange() so should not cause any problems.",
     "created_at": "2008-12-30T23:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37106",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37034",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -100,15 +100,15 @@ Patch attached, based on 3.2.2.  It only changes the (second paragraph of the) d
 
 ---
 
-archive/issue_comments_037107.json:
+archive/issue_comments_037035.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2008-12-31T08:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37107",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37035",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -118,15 +118,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_037108.json:
+archive/issue_comments_037036.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-12T02:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37108",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37036",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -136,15 +136,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_037109.json:
+archive/issue_comments_037037.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha0",
     "created_at": "2009-01-12T02:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4893",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37109",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4893#issuecomment-37037",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

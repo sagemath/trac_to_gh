@@ -6,15 +6,13 @@ archive/issues_003654.json:
     "body": "Assignee: cwitty\n\nThis function introduces a \"deprecation\" function that sounds a warning when a user calls a function that has been deprecated.  It uses the standard Python mechanism for this sort of thing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3654\n\n",
     "created_at": "2008-07-14T15:27:47Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] Deprecation warning function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3654",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: cwitty
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3654
 
 ---
 
-archive/issue_comments_025836.json:
+archive/issue_comments_025782.json:
 ```json
 {
     "body": "IIRC warn prints to stderr, so we are not catching the output. This seems similar to Burcin's code:\n\n```\ndef MPolynomialRing(*args, **kwds):\n    import warnings\n    warnings.warn(\"MPolynomialRing is deprecated, use PolynomialRing instead!\", DeprecationWarning, stacklevel=2)\n    return PolynomialRing(*args, **kwds)\n```\n\nThe above should certainly use some more generic infrastructure like the one provided by Jason's patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-15T01:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25836",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25782",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -60,15 +58,15 @@ Michael
 
 ---
 
-archive/issue_comments_025837.json:
+archive/issue_comments_025783.json:
 ```json
 {
     "body": "Attachment [sage-3654-deprecation.patch](tarball://root/attachments/some-uuid/ticket3654/sage-3654-deprecation.patch) by @jasongrout created at 2008-08-25 20:35:33",
     "created_at": "2008-08-25T20:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25837",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25783",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -78,15 +76,15 @@ Attachment [sage-3654-deprecation.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_025838.json:
+archive/issue_comments_025784.json:
 ```json
 {
     "body": "patch updated to fix all doctest errors and make this functionality used.",
     "created_at": "2008-08-25T20:36:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25838",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25784",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -96,15 +94,15 @@ patch updated to fix all doctest errors and make this functionality used.
 
 ---
 
-archive/issue_comments_025839.json:
+archive/issue_comments_025785.json:
 ```json
 {
     "body": "\n```\n[2:44pm] mabshoff: mhansen: how do you like #3654?\n[2:44pm] mabshoff: I think I will merge it \n[2:45pm] mhansen: Yep -- looks good.\n[2:45pm] mabshoff: I agree. Nice work jason-\n[2:45pm] jason-: yeah!\n```\n\n\nPositive review from me and the gang.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-25T21:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25839",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25785",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +126,15 @@ Michael
 
 ---
 
-archive/issue_comments_025840.json:
+archive/issue_comments_025786.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha1",
     "created_at": "2008-08-25T22:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25840",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25786",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -146,15 +144,15 @@ Merged in Sage 3.1.2.alpha1
 
 ---
 
-archive/issue_comments_025841.json:
+archive/issue_comments_025787.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-25T22:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25841",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3654#issuecomment-25787",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

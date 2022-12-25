@@ -6,7 +6,7 @@ archive/issues_003123.json:
     "body": "Assignee: mabshoff\n\ngcc version 4.1.0 (SUSE Linux) from OpenSuSE 10.1 is know broken and will fail to file Sage with\n\n```\nsage/modules/real_double_vector.c: In function \u2018__pyx_pf_4sage_7modules_18real_double_vector_28RealDoubleVectorSpaceElement_\n__init__\u2019:\nsage/modules/real_double_vector.c:2012: internal compiler error: in merge_alias_info, at tree-ssa-copy.c:235\nPlease submit a full bug report,\nwith preprocessed source if appropriate.\nSee <URL:http://www.suse.de/feedback> for instructions.\nerror: command 'gcc' failed with exit status 1\n```\n\nBlacklist it.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3123\n\n",
     "created_at": "2008-05-07T14:27:31Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003123.json:
     "title": "blacklist \"gcc version 4.1.0 (SUSE Linux)\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3123",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -45,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3123
 
 ---
 
-archive/issue_comments_021641.json:
+archive/issue_comments_021596.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-07T14:27:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21641",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21596",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -63,33 +63,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_021642.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2009-06-15T23:19:17Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/3123",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21642",
-    "user": "@williamstein"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_021643.json:
+archive/issue_comments_021597.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-05-19T13:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21643",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21597",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -99,15 +81,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_021644.json:
+archive/issue_comments_021598.json:
 ```json
 {
     "body": "Fixed by the GCC spkg.",
     "created_at": "2013-05-19T13:02:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21644",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21598",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -117,15 +99,15 @@ Fixed by the GCC spkg.
 
 ---
 
-archive/issue_comments_021645.json:
+archive/issue_comments_021599.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-05-19T13:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21645",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21599",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -135,15 +117,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_021646.json:
+archive/issue_comments_021600.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-05-21T07:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21646",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3123#issuecomment-21600",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

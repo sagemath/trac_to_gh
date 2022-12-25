@@ -6,15 +6,13 @@ archive/issues_000509.json:
     "body": "Assignee: mabshoff\n\nKeywords: sage-scripts, ipython, gdb\n\nAttached patch adds option to run SAGE's IPython with gdb.\n\nIssue created by migration from https://trac.sagemath.org/ticket/509\n\n",
     "created_at": "2007-08-29T10:37:01Z",
     "labels": [
-        "distribution",
-        "major",
-        "enhancement"
+        "component: distribution"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.1",
     "title": "gdb mode for sage-ipython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/509",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: mabshoff
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/509
 
 ---
 
-archive/issue_comments_002556.json:
+archive/issue_comments_002546.json:
 ```json
 {
     "body": "Patch adding option to run ipython with gdb.",
     "created_at": "2007-08-29T10:38:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2556",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2546",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -49,15 +47,15 @@ Patch adding option to run ipython with gdb.
 
 ---
 
-archive/issue_comments_002557.json:
+archive/issue_comments_002547.json:
 ```json
 {
     "body": "Attachment [gdb-ipython.hg_export](tarball://root/attachments/some-uuid/ticket509/gdb-ipython.hg_export) by mabshoff created at 2007-09-09 06:08:15",
     "created_at": "2007-09-09T06:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2557",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2547",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +65,15 @@ Attachment [gdb-ipython.hg_export](tarball://root/attachments/some-uuid/ticket50
 
 ---
 
-archive/issue_comments_002558.json:
+archive/issue_comments_002548.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-09T06:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2558",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2548",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002559.json:
+archive/issue_comments_002549.json:
 ```json
 {
     "body": "very nice.  included in sage-2.8.4.1.",
     "created_at": "2007-09-09T15:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2559",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2549",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -103,15 +101,15 @@ very nice.  included in sage-2.8.4.1.
 
 ---
 
-archive/issue_comments_002560.json:
+archive/issue_comments_002550.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-09T15:07:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/509",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2560",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/509#issuecomment-2550",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_004452.json:
     "body": "Assignee: somebody\n\nSage's next_prime is slow, but this patch makes it (\"ten times\"?!) faster, especially for small input. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4452\n\n",
     "created_at": "2008-11-06T00:43:43Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch; needs review] optimize next_prime",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4452",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4452
 
 ---
 
-archive/issue_comments_032820.json:
+archive/issue_comments_032757.json:
 ```json
 {
     "body": "Attachment [sage-4452.patch](tarball://root/attachments/some-uuid/ticket4452/sage-4452.patch) by @williamstein created at 2008-11-06 00:44:22",
     "created_at": "2008-11-06T00:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32820",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32757",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [sage-4452.patch](tarball://root/attachments/some-uuid/ticket4452/sag
 
 ---
 
-archive/issue_comments_032821.json:
+archive/issue_comments_032758.json:
 ```json
 {
     "body": "Works great.",
     "created_at": "2008-11-06T04:07:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32821",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32758",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -65,15 +63,15 @@ Works great.
 
 ---
 
-archive/issue_comments_032822.json:
+archive/issue_comments_032759.json:
 ```json
 {
     "body": "Merged in Sage 3.2.rc0",
     "created_at": "2008-11-07T17:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32822",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32759",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +81,15 @@ Merged in Sage 3.2.rc0
 
 ---
 
-archive/issue_comments_032823.json:
+archive/issue_comments_032760.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-07T17:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32823",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4452#issuecomment-32760",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

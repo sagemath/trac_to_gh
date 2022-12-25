@@ -6,15 +6,13 @@ archive/issues_009853.json:
     "body": "Assignee: tbd\n\nIn order to finish Ticket #9808 (http://trac.sagemath.org/sage_trac/ticket/9808) there have to be a small patch applied to networks\n\nIssue created by migration from https://trac.sagemath.org/ticket/9854\n\n",
     "created_at": "2010-09-04T00:11:18Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make networkx compatibel with numpy-1.4.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9853",
-    "user": "maldun"
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 Assignee: tbd
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9854
 
 ---
 
-archive/issue_comments_097249.json:
+archive/issue_comments_097090.json:
 ```json
 {
     "body": "Attachment [convert.py.diff](tarball://root/attachments/some-uuid/ticket9854/convert.py.diff) by maldun created at 2010-09-04 00:17:16\n\nchanges",
     "created_at": "2010-09-04T00:17:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97249",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97090",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -49,15 +47,15 @@ changes
 
 ---
 
-archive/issue_comments_097250.json:
+archive/issue_comments_097091.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-04T00:17:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97250",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97091",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -67,15 +65,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_097251.json:
+archive/issue_comments_097092.json:
 ```json
 {
     "body": "Attachment [convert.py.2.diff](tarball://root/attachments/some-uuid/ticket9854/convert.py.2.diff) by maldun created at 2010-09-04 01:29:06\n\nDownward compatibel patch",
     "created_at": "2010-09-04T01:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97251",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97092",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -87,15 +85,15 @@ Downward compatibel patch
 
 ---
 
-archive/issue_comments_097252.json:
+archive/issue_comments_097093.json:
 ```json
 {
     "body": "modified version for networkx to make numpy-1.4.1 compatible",
     "created_at": "2010-09-04T01:30:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97252",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97093",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -105,15 +103,15 @@ modified version for networkx to make numpy-1.4.1 compatible
 
 ---
 
-archive/issue_comments_097253.json:
+archive/issue_comments_097094.json:
 ```json
 {
     "body": "Attachment [networkx-1.0.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9854/networkx-1.0.1.p0.spkg) by maldun created at 2010-09-04 01:36:32",
     "created_at": "2010-09-04T01:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97253",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97094",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -123,15 +121,15 @@ Attachment [networkx-1.0.1.p0.spkg](tarball://root/attachments/some-uuid/ticket9
 
 ---
 
-archive/issue_comments_097254.json:
+archive/issue_comments_097095.json:
 ```json
 {
     "body": "As I mentioned in the numpy upgrade bug we are moving to networkx-1.2.\nSo this bug may be invalid. Check have to be done against networkx-1.2 not 1.0.1.",
     "created_at": "2010-09-04T08:45:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97254",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97095",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -142,15 +140,15 @@ So this bug may be invalid. Check have to be done against networkx-1.2 not 1.0.1
 
 ---
 
-archive/issue_comments_097255.json:
+archive/issue_comments_097096.json:
 ```json
 {
     "body": "Ok like mentioned in #9808 networkx-1.2 works with the numpy packages just fine.\nBut I had to install a new version, because I was not able to just install networkx-1.2 into my old version of sage-4.2. After intalling it and applying the patches it still didn't work correctly. But the patch of 1.0.1 above worked well for me. So it could still be usefull.\nBut I think we could close this ticket then.",
     "created_at": "2010-09-04T20:20:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97255",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97096",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -162,15 +160,15 @@ But I think we could close this ticket then.
 
 ---
 
-archive/issue_comments_097256.json:
+archive/issue_comments_097097.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-04T20:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97256",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97097",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -180,15 +178,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_097257.json:
+archive/issue_comments_097098.json:
 ```json
 {
     "body": "How is this ticket considered fixed? Do you want the attached NetworkX package to be merged in the Sage standard repository? If so, has it been merged yet? If not, you need to explain why you closed this ticket.",
     "created_at": "2010-09-05T05:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97257",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97098",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -198,15 +196,15 @@ How is this ticket considered fixed? Do you want the attached NetworkX package t
 
 ---
 
-archive/issue_comments_097258.json:
+archive/issue_comments_097099.json:
 ```json
 {
     "body": "Changing status from closed to needs_work.",
     "created_at": "2010-09-05T05:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97258",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97099",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -216,15 +214,15 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_comments_097259.json:
+archive/issue_comments_097100.json:
 ```json
 {
     "body": "Replying to [comment:8 mvngu]:\n> How is this ticket considered fixed? Do you want the attached NetworkX package to be merged in the Sage standard repository? If so, has it been merged yet? If not, you need to explain why you closed this ticket.\n\nIt should have been closed invalid. Numpy-1.4.1 and networkx-1.0.1 don't go along\nvery well together. But it doesn't matter since next sage release will use networkx-1.2 which works well with numpy-1.4.1. I am changing it to \"invalid\".",
     "created_at": "2010-09-05T08:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97259",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97100",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -238,15 +236,15 @@ very well together. But it doesn't matter since next sage release will use netwo
 
 ---
 
-archive/issue_comments_097260.json:
+archive/issue_comments_097101.json:
 ```json
 {
     "body": "Resolution changed from fixed to invalid",
     "created_at": "2010-09-05T08:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97260",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9853#issuecomment-97101",
+    "user": "https://github.com/kiwifb"
 }
 ```
 

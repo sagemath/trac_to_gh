@@ -6,7 +6,7 @@ archive/issues_001400.json:
     "body": "Assignee: @williamstein\n\nSAGE can compute the class group of a quadratic field, but it has issues with computing the order of elements within that class group:\n\nQF.<x>=QuadraticField(-39)\nCF=QF.class_group()\nCF(QF.ideal(1+x)).order()\n\ngives\n\nNotImplementedErrorTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/server2/sage_notebook/worksheets/ljpk/0/code/6.py\", line 6, in <module>\n    CF(QF.ideal(Integer(1)+x)).order()\n  File \"/home/sage10/\", line 1, in <module>\n    \n  File \"element.pyx\", line 1190, in sage.structure.element.MultiplicativeGroupElement.order\n  File \"element.pyx\", line 1130, in sage.structure.element.MonoidElement.multiplicative_order\nNotImplementedError\n\nIssue created by migration from https://trac.sagemath.org/ticket/1400\n\n",
     "created_at": "2007-12-04T23:10:59Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001400.json:
     "title": "QuadraticFields and ClassGroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1400",
-    "user": "ljpk"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1400
 
 ---
 
-archive/issue_comments_009028.json:
+archive/issue_comments_009004.json:
 ```json
 {
     "body": "Attachment [1400-quadratic_field_order.patch](tarball://root/attachments/some-uuid/ticket1400/1400-quadratic_field_order.patch) by @aghitza created at 2008-04-25 02:47:55",
     "created_at": "2008-04-25T02:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9028",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9004",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -63,15 +63,15 @@ Attachment [1400-quadratic_field_order.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_009029.json:
+archive/issue_comments_009005.json:
 ```json
 {
     "body": "The attached patch adds this functionality for fractional ideals and for their representatives in class groups.",
     "created_at": "2008-04-25T02:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9029",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9005",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -81,15 +81,15 @@ The attached patch adds this functionality for fractional ideals and for their r
 
 ---
 
-archive/issue_comments_009030.json:
+archive/issue_comments_009006.json:
 ```json
 {
     "body": "This uses an O(n) algorithm to compute orders.  Don't we have generic BSGS O(sqrt(n)) that would be better here?",
     "created_at": "2008-04-28T02:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9030",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9006",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -99,15 +99,15 @@ This uses an O(n) algorithm to compute orders.  Don't we have generic BSGS O(sqr
 
 ---
 
-archive/issue_comments_009031.json:
+archive/issue_comments_009007.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_craigcitro\".",
     "created_at": "2008-06-20T04:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9031",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9007",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -117,15 +117,15 @@ Changing keywords from "" to "editor_craigcitro".
 
 ---
 
-archive/issue_comments_009032.json:
+archive/issue_comments_009008.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-27T07:37:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9032",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9008",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -135,15 +135,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009033.json:
+archive/issue_comments_009009.json:
 ```json
 {
     "body": "Fixed via #3913.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-27T07:37:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9033",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1400#issuecomment-9009",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

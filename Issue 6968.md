@@ -6,15 +6,14 @@ archive/issues_006968.json:
     "body": "Assignee: @williamstein\n\nVery small patch avoiding multiple copies\n\nIssue created by migration from https://trac.sagemath.org/ticket/6968\n\n",
     "created_at": "2009-09-20T20:30:00Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "improve _vector_times_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6968",
-    "user": "ylchapuy"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6968
 
 ---
 
-archive/issue_comments_057649.json:
+archive/issue_comments_057541.json:
 ```json
 {
     "body": "Attachment [trac_6968_vector_times_matrix.patch](tarball://root/attachments/some-uuid/ticket6968/trac_6968_vector_times_matrix.patch) by ylchapuy created at 2009-09-20 20:31:15",
     "created_at": "2009-09-20T20:31:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57649",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57541",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_6968_vector_times_matrix.patch](tarball://root/attachments/some
 
 ---
 
-archive/issue_comments_057650.json:
+archive/issue_comments_057542.json:
 ```json
 {
     "body": "for the record:\n\nbefore:\n\n```\nsage: m=identity_matrix(1000,sparse=True)\nsage: v=vector([1]*1000,sparse=True)\nsage: time p = v*m\nCPU times: user 2.26 s, sys: 0.00 s, total: 2.26 s\nWall time: 2.26 s \n```\n\n\nafter:\n\n```\nsage: m=identity_matrix(1000,sparse=True)\nsage: v=vector([1]*1000,sparse=True) \nsage: time p = v*m \nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.21 s\n```\n",
     "created_at": "2009-09-20T20:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57650",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57542",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -87,15 +86,15 @@ Wall time: 0.21 s
 
 ---
 
-archive/issue_comments_057651.json:
+archive/issue_comments_057543.json:
 ```json
 {
     "body": "Nice!!",
     "created_at": "2009-09-20T21:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57651",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57543",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +104,15 @@ Nice!!
 
 ---
 
-archive/issue_comments_057652.json:
+archive/issue_comments_057544.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-24T16:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57652",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57544",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -123,15 +122,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_057653.json:
+archive/issue_comments_057545.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
     "created_at": "2009-09-27T10:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57653",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6968#issuecomment-57545",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

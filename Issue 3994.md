@@ -6,7 +6,7 @@ archive/issues_003994.json:
     "body": "Assignee: cwitty\n\nCC:  @robertwb\n\nMy code has errors but that make Cython crash:\n\n\n```\n/usr/local/sage-3.1.2.alpha2/devel/sage-singular/sage/libs/singular/singular.pyx:353:27: undeclared name not builtin: apow1\nTraceback (most recent call last):\n  File \"/usr/local/sage-3.1.2.alpha2/local/bin//cython\", line 8, in <module>\n    main(command_line = 1)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 698, in main\n    result = compile(sources, options)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 675, in compile\n    return compile_multiple(source, options)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 645, in compile_multiple\n    result = run_pipeline(source, options)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 507, in run_pipeline\n    err, enddata = context.run_pipeline(pipeline, source)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 169, in run_pipeline\n    data = phase(data)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 156, in __call__\n    return self.visit(root)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 37, in visit\n    return m(obj)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ParseTreeTransforms.py\", line 524, in visit_ModuleNode\n    self.visitchildren(node)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 139, in visitchildren\n    result = super(VisitorTransform, self).visitchildren(parent, attrs)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 113, in visitchildren\n    childretval = self.visitchild(child, parent, attr, None)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 89, in visitchild\n    result = self.visit(child)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 37, in visit\n    return m(obj)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 167, in visit_Node\n    self.visitchildren(node)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 139, in visitchildren\n    result = super(VisitorTransform, self).visitchildren(parent, attrs)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 111, in visitchildren\n    childretval = [self.visitchild(x, parent, attr, idx) for idx, x in enumerate(child)]\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 89, in visitchild\n    result = self.visit(child)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 37, in visit\n    return m(obj)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 167, in visit_Node\n    self.visitchildren(node)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 139, in visitchildren\n    result = super(VisitorTransform, self).visitchildren(parent, attrs)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 111, in visitchildren\n    childretval = [self.visitchild(x, parent, attr, idx) for idx, x in enumerate(child)]\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 89, in visitchild\n    result = self.visit(child)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 37, in visit\n    return m(obj)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 167, in visit_Node\n    self.visitchildren(node)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 139, in visitchildren\n    result = super(VisitorTransform, self).visitchildren(parent, attrs)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 113, in visitchildren\n    childretval = self.visitchild(child, parent, attr, None)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 89, in visitchild\n    result = self.visit(child)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 37, in visit\n    return m(obj)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 167, in visit_Node\n    self.visitchildren(node)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 139, in visitchildren\n    result = super(VisitorTransform, self).visitchildren(parent, attrs)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 111, in visitchildren\n    childretval = [self.visitchild(x, parent, attr, idx) for idx, x in enumerate(child)]\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 89, in visitchild\n    result = self.visit(child)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Visitor.py\", line 37, in visit\n    return m(obj)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ParseTreeTransforms.py\", line 528, in visit_FuncDefNode\n    node.body.analyse_expressions(node.local_scope)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Nodes.py\", line 272, in analyse_expressions\n    stat.analyse_expressions(env)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Nodes.py\", line 2967, in analyse_expressions\n    if_clause.analyse_expressions(env)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Nodes.py\", line 3008, in analyse_expressions\n    self.body.analyse_expressions(env)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Nodes.py\", line 272, in analyse_expressions\n    stat.analyse_expressions(env)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Nodes.py\", line 2241, in analyse_expressions\n    self.expr.analyse_expressions(env)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ExprNodes.py\", line 249, in analyse_expressions\n    self.analyse_types(env)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ExprNodes.py\", line 1795, in analyse_types\n    arg.analyse_types(env)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ExprNodes.py\", line 2963, in analyse_types\n    if not (argtype.is_cfunction or self.operand.is_lvalue()):\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ExprNodes.py\", line 980, in is_lvalue\n    return self.entry.is_variable and \\\nAttributeError: 'NoneType' object has no attribute 'is_variable'\nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3994\n\n",
     "created_at": "2008-08-29T21:05:02Z",
     "labels": [
-        "misc",
+        "component: misc",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003994.json:
     "title": "Cython crashes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3994",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: cwitty
@@ -127,15 +127,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3994
 
 ---
 
-archive/issue_comments_028701.json:
+archive/issue_comments_028643.json:
 ```json
 {
     "body": "Martin:\n\ncan you post the code? \n\nCheers,\n\nMichael",
     "created_at": "2008-08-29T22:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3994",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28701",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28643",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -151,15 +151,15 @@ Michael
 
 ---
 
-archive/issue_comments_028702.json:
+archive/issue_comments_028644.json:
 ```json
 {
     "body": "This is one example (sorry for not posting it earlier:\n\nCreate a file sage/rings/number_field/number_field_base.pxd with\n\n\n```\nfrom sage.rings.ring cimport Field\n\ncdef class NumberField(Field)\n```\n\n\nand cimport it somewhere. You'll get:\n\n\n```\nBuilding sage/matrix/matrix_mpolynomial_dense.cpp because it depends on sage/rings/number_field/number_field_base.pxd.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/usr/local/sage-3.1.2.alpha2/devel/sage-singular -o sage/matrix/matrix_mpolynomial_dense.cpp sage/matrix/matrix_mpolynomial_dense.pyx\nTraceback (most recent call last):\n  File \"/usr/local/sage-3.1.2.alpha2/local/bin//cython\", line 8, in <module>\n    main(command_line = 1)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 698, in main\n    result = compile(sources, options)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 675, in compile\n    return compile_multiple(source, options)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 645, in compile_multiple\n    result = run_pipeline(source, options)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 507, in run_pipeline\n    err, enddata = context.run_pipeline(pipeline, source)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 169, in run_pipeline\n    data = phase(data)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/Main.py\", line 114, in generate_pyx_code\n    module_node.process_implementation(options, result)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ModuleNode.py\", line 67, in process_implementation\n    self.generate_c_code(env, options, result)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ModuleNode.py\", line 273, in generate_c_code\n    self.generate_declarations_for_modules(env, modules, h_code)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ModuleNode.py\", line 387, in generate_declarations_for_modules\n    env, modules, vtab_list, vtabslot_list, code)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ModuleNode.py\", line 379, in generate_type_definitions\n    self.generate_exttype_vtable_struct(entry, code)\n  File \"/usr/local/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/Cython/Compiler/ModuleNode.py\", line 687, in generate_exttype_vtable_struct\n    for method_entry in scope.cfunc_entries:\nAttributeError: 'NoneType' object has no attribute 'cfunc_entries'\nsage: Error running cython.\nsage: There was an error installing modified sage library code.\n```\n\n\nWhich is a different error than the one posted before, but I corrected the code in there already and forgot to save it. Sorry.",
     "created_at": "2008-08-29T22:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3994",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28702",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28644",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -218,15 +218,15 @@ Which is a different error than the one posted before, but I corrected the code 
 
 ---
 
-archive/issue_comments_028703.json:
+archive/issue_comments_028645.json:
 ```json
 {
     "body": "I think this will be resolved with #3896.",
     "created_at": "2008-08-29T22:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3994",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28703",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28645",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -236,15 +236,15 @@ I think this will be resolved with #3896.
 
 ---
 
-archive/issue_comments_028704.json:
+archive/issue_comments_028646.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-29T23:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3994",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28704",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28646",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -254,15 +254,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028705.json:
+archive/issue_comments_028647.json:
 ```json
 {
     "body": "Robert is correct:\n\n```\nBuilding sage/rings/number_field/number_field_base.c because it depends on sage/rings/number_field/number_field_base.pxd.\npython2.5 `which cython` --embed-positions --incref-local-binop -I/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage-main -o sage/rings/number_field/number_field_base.c sage/rings/number_field/number_field_base.pyx\nFinished updating Cython code (time = 5.544346 seconds)\nrunning install\nrunning build\nrunning build_py\ncopying sage/interfaces/octave.py -> build/lib.linux-x86_64-2.5/sage/interfaces\nrunning build_ext\nbuilding 'sage.rings.number_field.number_field_base' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local//include -I/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local//include/csage -I/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel//sage/sage/ext -I/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/include/python2.5 -c sage/rings/number_field/number_field_base.c -o build/temp.linux-x86_64-2.5/sage/rings/number_field/number_field_base.o -w -w\ngcc -pthread -shared build/temp.linux-x86_64-2.5/sage/rings/number_field/number_field_base.o -L/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local//lib -lcsage -lstdc++ -lntl -o build/lib.linux-x86_64-2.5/sage/rings/number_field/number_field_base.so\nrunning build_scripts\nrunning install_lib\ncopying build/lib.linux-x86_64-2.5/sage/interfaces/octave.py -> /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfaces\ncopying build/lib.linux-x86_64-2.5/sage/rings/number_field/number_field_base.so -> /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/rings/number_field\nbyte-compiling /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/interfaces/octave.py to octave.pyc\nrunning install_scripts\nchanging mode of /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/bin/dsage_worker.py to 755\nchanging mode of /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/bin/dsage_setup.py to 755\nchanging mode of /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/bin/spkg-debian-maybe to 755\nrunning install_data\nrunning install_egg_info\nRemoving /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage-0.0.0-py2.5.egg-info\n```\n\n\nSo: This is fixed in Sage Sage 3.1.2.alpha1 an up.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-29T23:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3994",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28705",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3994#issuecomment-28647",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

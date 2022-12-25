@@ -6,15 +6,14 @@ archive/issues_003060.json:
     "body": "Assignee: somebody\n\nKeywords: biopython, biology, packages\n\nOn March 22, 2008, the biopython devs released version 1.45.  I have put an updated sage package at:\nhttp://www.d.umn.edu/~mhampton/biopython-1.45.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3060\n\n",
     "created_at": "2008-04-30T01:31:59Z",
     "labels": [
-        "packages: optional",
-        "minor",
-        "enhancement"
+        "component: packages: optional",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "biopython optional package update (to 1.45)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3060",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: somebody
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3060
 
 ---
 
-archive/issue_comments_021129.json:
+archive/issue_comments_021085.json:
 ```json
 {
     "body": "Ok, there are a couple issues. For one:\n\n```\nrunning install_data\nrunning install_egg_info\nRemoving /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/local/lib/python2.5/site-packages/egenix_mx_base-2.0.6-py2.5.egg-info\nWriting /scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/local/lib/python2.5/site-packages/egenix_mx_base-2.0.6-py2.5.egg-info\nrunning install\nTraceback (most recent call last):\n  File \"setup.py\", line 545, in <module>\n    data_files=DATA_FILES,\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/local/lib/python2.5/distutils/core.py\", line 151, in setup\n    dist.run_commands()\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/local/lib/python2.5/distutils/dist.py\", line 974, in run_commands\n    self.run_command(cmd)\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/local/lib/python2.5/distutils/dist.py\", line 994, in run_command\n    cmd_obj.run()\n  File \"setup.py\", line 147, in run\n    if check_dependencies_once():\n  File \"setup.py\", line 65, in check_dependencies_once\n    _CHECKED = check_dependencies()\n  File \"setup.py\", line 89, in check_dependencies\n    if is_installed_fn():\n  File \"setup.py\", line 320, in is_mxTextTools_installed\n    return can_import(\"mx.TextTools\")\n  File \"setup.py\", line 275, in can_import\n    return __import__(module_name)\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/local/lib/python2.5/site-packages/mx/TextTools/__init__.py\", line 8, in <module>\n    from TextTools import *\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/local/lib/python2.5/site-packages/mx/TextTools/TextTools.py\", line 13, in <module>\n    from mxTextTools import *\n  File \"/scratch/mabshoff/release-cycle/sage-3.0.1.alpha1/local/lib/python2.5/site-packages/mx/TextTools/mxTextTools/__init__.py\", line 12, in <module>\n    BMS = TextSearch\nNameError: name 'TextSearch' is not defined\nError install biopython\n\nreal    0m10.058s\nuser    0m8.569s\nsys     0m1.252s\n```\n\nThere is also a bunch of OSX indexing crap in the spkg. I fixed those, added an hg repo, checked in everything, added proper \"exit 1\" in two places in case the install failed. What seems to cause the above failure in an installed biopython-1.44. Fixing this requires nuking \n\n```\nrm -rf mx/ Bio Martel/ BioSQL/ biopython-1.44-py2.5.egg-info  egenix_mx_base-* \n```\n\nin $SAGE_LOCAL/lib/python2.5/site-packages/ - I am fixing this in the spkg-install and will take half the credit for this spkg since I am a mean, mean guy ;)\n\nCheers,\n\nMichael",
     "created_at": "2008-05-02T13:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3060",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3060#issuecomment-21129",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3060#issuecomment-21085",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -102,15 +101,15 @@ Michael
 
 ---
 
-archive/issue_comments_021130.json:
+archive/issue_comments_021086.json:
 ```json
 {
     "body": "Ok, all is fixed in \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.1/rc0/biopython-1.45.spkg\n\nPositive review and uploading it to the official repo.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-02T14:03:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3060",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3060#issuecomment-21130",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3060#issuecomment-21086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +127,15 @@ Michael
 
 ---
 
-archive/issue_comments_021131.json:
+archive/issue_comments_021087.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-02T14:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3060",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3060#issuecomment-21131",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3060#issuecomment-21087",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -146,15 +145,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021132.json:
+archive/issue_comments_021088.json:
 ```json
 {
     "body": "Merged into the optional package repo in Sage 3.0.1.rc0.",
     "created_at": "2008-05-02T14:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3060",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3060#issuecomment-21132",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3060#issuecomment-21088",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

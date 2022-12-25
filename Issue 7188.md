@@ -6,15 +6,14 @@ archive/issues_007188.json:
     "body": "Assignee: tbd\n\nCC:  @embray @jdemeyer @kiwifb\n\nKeywords: GNUism AIX HP-UX Solaris\n\nOnce one runs make it runs the script $SAGE_ROOT/spkg/install. \n\nUnfortunately, the very first command in there, the result of ticket #6744 has a GNUism. \n\n\n```\n echo `date -u \"+%s\"` > .BUILDSTART\n```\n\n\nThe '%s is **not** part of the current POSIX standard and fails to work on both the latest version of Solaris (which is a supported operating system), and with HP-UX 11i, which is not supported \nby Sage, but I think we should try to build Sage in such a way \nthat is should run on any decent operating system. \n\nThere are at least two ways around this issue of find the number of seconds since 1//1/1970:\n\nhttp://shell.cfajohnson.com/cus-faq.html#Q6\n\nOne requires 'perl' (which is not tested for at this point), the other relies on 'awk' being POSIX complaint, which we can't assume, but is probably the safer of the two assumptions. A third way would be a way to make it work with any 'date' command using some maths with 'bc' but that looks like a lot of work, for little gain. \n\n\n\n```\n# The method below looks a bit odd, as one uses a\n# random number generator to get the time! However,\n# it will work with any 'awk' supporting the\n# POSIX spec for srand().\n\n# David Kirkby has tested this on the following operating systems.\n# AIX, HP-UX, Linux, OS X and Solaris. (versions as available).\n\n# The trick is to first seed the srand random number generator\n# generator with the default value (which is the number\n# of seconds since 1/1/1970) then call srand() again, to give the\n# first random number, which will be the seed. Neat I think!\n\n# See  http://shell.cfajohnson.com/cus-faq.html#Q6\n\nif [ `uname` = \"SunOS\" ] ; then\n  # The standard awk in Solaris is not POSIX complaint, and so will not be\n  # acceptable. But Sun ship a POSIX complient version at nawk (new awk)\n  nawk 'BEGIN {srand(); printf(\"%d\\n\", srand())}' > .BUILDSTART\nelse\n  awk 'BEGIN {srand(); printf(\"%d\\n\", srand())}' > .BUILDSTART\nfi\n\n```\n\n\nThe updated install script, can be found at \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/top-level-install-script/\n\nI've tested this on\n\n* AIX 6.1, compliments of http://www.metamodul.com/10.html\n* HP-UX 11i (my own HP C3600)\n* Linux (sage.math)\n* Solaris 10 update 7 SPARC (t2.math)\n* OpenSolaris 2008.11 (disk.math)\n* OS X (bsd.math)\n\n \nAccording to #6744 this needs to be manually integrated into Sage. Note I stuck a readme file in the directory highlighting the fact this needs to have execute permissions too.\n \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/7188\n\n",
     "created_at": "2009-10-11T10:40:13Z",
     "labels": [
-        "porting",
-        "major",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.6",
     "title": "GNUism in $SAGE_ROOT/spkg/install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7188",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -99,15 +98,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7188
 
 ---
 
-archive/issue_comments_059541.json:
+archive/issue_comments_059429.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-11T10:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59541",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59429",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -117,15 +116,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059542.json:
+archive/issue_comments_059430.json:
 ```json
 {
     "body": "I just added a new comment to the file \n\n\n```\n# We would like to thank http://www.metamodul.com/ for free\n# access to the the IBM machine running AIX 6.1\n```\n\n\nThat site is providing the AIX machine which allowed me to test the patch under AIX, which I would not otherwise had been able to do so easily, even though I have an old RS6000 in my garage.",
     "created_at": "2009-10-11T12:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59542",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59430",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -144,15 +143,15 @@ That site is providing the AIX machine which allowed me to test the patch under 
 
 ---
 
-archive/issue_comments_059543.json:
+archive/issue_comments_059431.json:
 ```json
 {
     "body": "Just for the record this BUILDSTART thing was added to Sage very recently by Harald Schilly, evidently in trac #6744, and it is *completely ignored* at present, and used absolutely nowhere else in Sage.",
     "created_at": "2009-10-11T17:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59543",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59431",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -162,15 +161,15 @@ Just for the record this BUILDSTART thing was added to Sage very recently by Har
 
 ---
 
-archive/issue_comments_059544.json:
+archive/issue_comments_059432.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-17T11:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59544",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59432",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -180,15 +179,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_059545.json:
+archive/issue_comments_059433.json:
 ```json
 {
     "body": "I understand this will not work on OpenBSD, which though not supported, I am aware of a method now which should work on any OS. Apparently POSIX states the random number generator must be seeded from the time, but does not state in which way. Most OS's uses seconds since the epoch, but OpenBSD does not. A more portable solution has been posted, which should work for any OS. \n\nI believe this issue should be resolved. If nothing else, it does not look very good to be generating unnecessary error messages on some platforms. (Solaris and AIX).",
     "created_at": "2009-10-17T11:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59545",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59433",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -200,15 +199,15 @@ I believe this issue should be resolved. If nothing else, it does not look very 
 
 ---
 
-archive/issue_comments_059546.json:
+archive/issue_comments_059434.json:
 ```json
 {
     "body": "here is a branch that just get rid of the unused BUILDSTART file\n----\nNew commits:",
     "created_at": "2018-12-17T20:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59546",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59434",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -220,15 +219,15 @@ New commits:
 
 ---
 
-archive/issue_comments_059547.json:
+archive/issue_comments_059435.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2018-12-17T20:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59547",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59435",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -238,15 +237,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059548.json:
+archive/issue_comments_059436.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2018-12-17T20:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59548",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59436",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -256,15 +255,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059549.json:
+archive/issue_comments_059437.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2018-12-17T20:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59549",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59437",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -274,15 +273,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_059550.json:
+archive/issue_comments_059438.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2018-12-23T23:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59550",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7188#issuecomment-59438",
+    "user": "https://github.com/vbraun"
 }
 ```
 

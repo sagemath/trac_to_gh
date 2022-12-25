@@ -6,7 +6,7 @@ archive/issues_000980.json:
     "body": "Assignee: @dfdeshom\n\nCC:  dfdeshom@gmail.com\n\nThere are 2 quirks about random multivariate polynomials outlined below:\n\n1) Degrees are severely restricted:\n> The maximum degree in every variable\n> is (maximum total degree of resulting polynomial) / (number of\n> varialbes of the polynomial). \n\n2) Too many zero elements. Polynomials generated are too sparse.\n> The second point is about the number of coefficients that are set to\n> 0. This might a point to argue about, but if I create a random\n> polynomial with a  (maximum number of terms to generate) then I expect\n> that the 0 occur\n\nIssue created by migration from https://trac.sagemath.org/ticket/980\n\n",
     "created_at": "2007-10-24T04:42:07Z",
     "labels": [
-        "algebraic geometry",
+        "component: algebraic geometry",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000980.json:
     "title": "random_element() for multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/980",
-    "user": "@dfdeshom"
+    "user": "https://github.com/dfdeshom"
 }
 ```
 Assignee: @dfdeshom
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/980
 
 ---
 
-archive/issue_comments_005975.json:
+archive/issue_comments_005956.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-10-24T22:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5975",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5956",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -60,15 +60,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_005976.json:
+archive/issue_comments_005957.json:
 ```json
 {
     "body": "I've atached a patch. The individual degree distribution is a little better:\n\n```\nsage: f=ZZ['q,w,e,r,t,y'].random_element(degree=5,terms=9) ;f\n 3*q^5 - q^4*w + 2*q^3*w^2 + q^2*w^3 - q*w^3*e + q^2*w*r*t + 2*q*w*e*r*t + q^2*e*t^2 + 8*r^2*t^2*y\nsage: f=ZZ['q,w,e,r,t,y'].random_element(degree=4,terms=9) ;f\n q^2*w*e + q*w^2*r + q^2*r^2 - 24*w^3*t - 4*q^2*e*t - 5*t^4 - 4*q^3 + 2*q^2*w\n```\n",
     "created_at": "2007-10-24T22:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5976",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5957",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -86,15 +86,15 @@ sage: f=ZZ['q,w,e,r,t,y'].random_element(degree=4,terms=9) ;f
 
 ---
 
-archive/issue_comments_005977.json:
+archive/issue_comments_005958.json:
 ```json
 {
     "body": "Your patch seems to prefer variables with lower indexes, i.e. the probability that x in x,y,z has the highest degree is quite high because you are making the search space smaller for each variable. Maybe you could permute the exponent tuple randomly afterwards to take care of that bias?",
     "created_at": "2007-10-24T23:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5977",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5958",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -104,15 +104,15 @@ Your patch seems to prefer variables with lower indexes, i.e. the probability th
 
 ---
 
-archive/issue_comments_005978.json:
+archive/issue_comments_005959.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to basic arithmetic.",
     "created_at": "2007-10-25T00:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5978",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5959",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -122,15 +122,15 @@ Changing component from algebraic geometry to basic arithmetic.
 
 ---
 
-archive/issue_comments_005979.json:
+archive/issue_comments_005960.json:
 ```json
 {
     "body": "Attachment [rand-poly.txt](tarball://root/attachments/some-uuid/ticket980/rand-poly.txt) by @dfdeshom created at 2007-10-25 03:30:56",
     "created_at": "2007-10-25T03:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5979",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5960",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -140,15 +140,15 @@ Attachment [rand-poly.txt](tarball://root/attachments/some-uuid/ticket980/rand-p
 
 ---
 
-archive/issue_comments_005980.json:
+archive/issue_comments_005961.json:
 ```json
 {
     "body": "Replying to [comment:2 malb]:\n> Your patch seems to prefer variables with lower indexes, i.e. the probability that x in x,y,z has the highest degree is quite high because you are making the search space smaller for each variable. Maybe you could permute the exponent tuple randomly afterwards to take care of that bias?\n>  \n\nThanks. This also takes care of too many nonzero terms being generated. I've updated the patch",
     "created_at": "2007-10-25T03:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5980",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5961",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -162,15 +162,15 @@ Thanks. This also takes care of too many nonzero terms being generated. I've upd
 
 ---
 
-archive/issue_comments_005981.json:
+archive/issue_comments_005962.json:
 ```json
 {
     "body": "the attached file `random_element.py` implements my proposal for this method. It is supposed to guarantee uniformly randomly chosen monomials per default and also supports to choose the degree randomly before choosing a monomial of that given degree.\n\nNOTE: `random_element.py` is not a patch but a `py` file to load/attach into SAGE to test it. I will provide a proper patch if we agree on the strategy.",
     "created_at": "2007-11-07T13:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5981",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5962",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -182,15 +182,15 @@ NOTE: `random_element.py` is not a patch but a `py` file to load/attach into SAG
 
 ---
 
-archive/issue_comments_005982.json:
+archive/issue_comments_005963.json:
 ```json
 {
     "body": "Attachment [random_monomial.py](tarball://root/attachments/some-uuid/ticket980/random_monomial.py) by @malb created at 2007-11-07 13:27:05",
     "created_at": "2007-11-07T13:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5982",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5963",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -200,15 +200,15 @@ Attachment [random_monomial.py](tarball://root/attachments/some-uuid/ticket980/r
 
 ---
 
-archive/issue_comments_005983.json:
+archive/issue_comments_005964.json:
 ```json
 {
     "body": "Whoops, it is called `random_monomial.py` instead of `random_element.py`",
     "created_at": "2007-11-07T13:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5983",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5964",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -218,15 +218,15 @@ Whoops, it is called `random_monomial.py` instead of `random_element.py`
 
 ---
 
-archive/issue_comments_005984.json:
+archive/issue_comments_005965.json:
 ```json
 {
     "body": "Replying to [comment:7 malb]:\n> the attached file `random_element.py` implements my proposal for this method. It is supposed to guarantee uniformly randomly chosen monomials per default and also supports to choose the degree randomly before choosing a monomial of that given degree.\n\nThe general strategy is OK with me. One minor implementation nitpick: I would use ZZ.random_element() instead of randint() because it is faster.",
     "created_at": "2007-11-07T15:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5984",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5965",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -239,15 +239,15 @@ The general strategy is OK with me. One minor implementation nitpick: I would us
 
 ---
 
-archive/issue_comments_005985.json:
+archive/issue_comments_005966.json:
 ```json
 {
     "body": "Replying to [comment:7 malb]:\n> NOTE: `random_element.py` is not a patch but a `py` file to load/attach into SAGE to test it. I will provide a proper patch if we agree on the strategy.\nIf you don't mind, I've attached a patch against 2.8.11 for this. The patch is named random-malb.txt",
     "created_at": "2007-11-09T15:11:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5985",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5966",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -259,15 +259,15 @@ If you don't mind, I've attached a patch against 2.8.11 for this. The patch is n
 
 ---
 
-archive/issue_comments_005986.json:
+archive/issue_comments_005967.json:
 ```json
 {
     "body": "Attachment [random-malb.txt](tarball://root/attachments/some-uuid/ticket980/random-malb.txt) by mabshoff created at 2007-11-16 11:55:45",
     "created_at": "2007-11-16T11:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5986",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5967",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -277,15 +277,15 @@ Attachment [random-malb.txt](tarball://root/attachments/some-uuid/ticket980/rand
 
 ---
 
-archive/issue_comments_005987.json:
+archive/issue_comments_005968.json:
 ```json
 {
     "body": "Unfortunately, random-malb.txt no longer applies against sage-2.8.14.",
     "created_at": "2007-11-27T05:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5987",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5968",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -295,15 +295,15 @@ Unfortunately, random-malb.txt no longer applies against sage-2.8.14.
 
 ---
 
-archive/issue_comments_005988.json:
+archive/issue_comments_005969.json:
 ```json
 {
     "body": "Attachment [random-malb.hg](tarball://root/attachments/some-uuid/ticket980/random-malb.hg) by @dfdeshom created at 2007-11-28 16:29:55",
     "created_at": "2007-11-28T16:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5988",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5969",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -313,15 +313,15 @@ Attachment [random-malb.hg](tarball://root/attachments/some-uuid/ticket980/rando
 
 ---
 
-archive/issue_comments_005989.json:
+archive/issue_comments_005970.json:
 ```json
 {
     "body": "I've added an hg bundle against 2.8.14",
     "created_at": "2007-11-28T16:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5989",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5970",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -331,15 +331,15 @@ I've added an hg bundle against 2.8.14
 
 ---
 
-archive/issue_comments_005990.json:
+archive/issue_comments_005971.json:
 ```json
 {
     "body": "Uploaded bundle which applies against 2.9.alpha7 and doctests pass.",
     "created_at": "2007-12-16T15:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5990",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5971",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -349,15 +349,15 @@ Uploaded bundle which applies against 2.9.alpha7 and doctests pass.
 
 ---
 
-archive/issue_comments_005991.json:
+archive/issue_comments_005972.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-20T23:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5991",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5972",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -367,15 +367,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_005992.json:
+archive/issue_comments_005973.json:
 ```json
 {
     "body": "`random_element.hg` merged in 2.9.1 alpha2",
     "created_at": "2007-12-20T23:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5992",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5973",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -385,15 +385,15 @@ archive/issue_comments_005992.json:
 
 ---
 
-archive/issue_comments_005993.json:
+archive/issue_comments_005974.json:
 ```json
 {
     "body": "unmerged.",
     "created_at": "2007-12-21T00:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5993",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5974",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -403,15 +403,15 @@ unmerged.
 
 ---
 
-archive/issue_comments_005994.json:
+archive/issue_comments_005975.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-12-21T00:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5994",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5975",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -421,15 +421,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_005995.json:
+archive/issue_comments_005976.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-12-21T00:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5995",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5976",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -439,15 +439,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_005996.json:
+archive/issue_comments_005977.json:
 ```json
 {
     "body": "Robert Bradshaw is currently reviewing this",
     "created_at": "2007-12-22T04:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5996",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5977",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -457,15 +457,15 @@ Robert Bradshaw is currently reviewing this
 
 ---
 
-archive/issue_comments_005997.json:
+archive/issue_comments_005978.json:
 ```json
 {
     "body": "For the most part, this looks good, but it seems that your algorithm is flawed in some cases (e.g more than two variables?). For example: \n\n\n```\nsage: [QQ['x,y,z'].random_element() for _ in range(10)]\n[-2/3, 1/6, 2, -2/11, 1, 11/2, 1/3, -5, 1/3, 3]\nsage: [ZZ['x,y,z,w'].random_element() for _ in range(10)]\n[-1, -10, -1, -8, 1, 4, -32, 1, 1, -1]\n```\n\n\nIt also has a bias against repeating variables in a monomial. None of these are of degree 7...\n\n\n```\nsage: [ZZ['x,y,z,w'].random_element(7,1) for _ in range(10)]\n[-1*w, y*z, -2*x*z*w, -22*x*y*w, -1*z, -5*x*y*w, 7*y*w, x*w, -2*y*z, 2*y*w]\n```\n",
     "created_at": "2008-01-02T17:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5997",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5978",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -493,15 +493,15 @@ sage: [ZZ['x,y,z,w'].random_element(7,1) for _ in range(10)]
 
 ---
 
-archive/issue_comments_005998.json:
+archive/issue_comments_005979.json:
 ```json
 {
     "body": "Trying to understand why the good-looking code produced such bad results, I figured out that I had forgotten to merge, so ignore the previous comments. \n\nThere are only two things I'd change:\n\n1. (Minor) There are multiple uses of ZZ.random_element(min,max), especially used to compute degrees in the monomials. I would highly recommend using Python's randint from http://docs.python.org/lib/module-random.html for speed. \n\n2. (Blocker) Not having default arguments for random_element means it can't be used generically. For example: \n\n\n```\nsage: random_matrix(QQ['x,y,z'], 2, 2)\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\n  File \"/Users/robert/sage/current/local/lib/python2.5/site-packages/sage/matrix/constructor.py\", line 503, in random_matrix\n    A.randomize(density=density, *args, **kwds)\n  File \"matrix2.pyx\", line 2752, in sage.matrix.matrix2.Matrix.randomize\n<type 'exceptions.TypeError'>: function takes at least 2 arguments (0 given)\n```\n\n\nIt should not be necessary to special-case the basering being a multipolynomial element before calling random_element on it. Some default should be specified, even if it's degree and terms = 1+abs(ZZ.random_element()). \n\nEven worse\n\n\n```\nsage: R = QQ['x,y']\nsage: S = R['t,u']\nsage: S.random_element(d=2, t=3) # BOOM \n```\n\n\nIt is impossible to pass the required degree/number of terms arguments on to the basering of S.",
     "created_at": "2008-01-02T18:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5998",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5979",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -544,15 +544,15 @@ It is impossible to pass the required degree/number of terms arguments on to the
 
 ---
 
-archive/issue_comments_005999.json:
+archive/issue_comments_005980.json:
 ```json
 {
     "body": "Replying to [comment:20 robertwb]:\n> 1. (Minor) There are multiple uses of ZZ.random_element(min,max), especially used\n> to compute degrees in the monomials. I would highly recommend using Python's \n> randint from http://docs.python.org/lib/module-random.html for speed.\n\nI cannot confirm this:\n\nSage Integers:\n\n\n```\nsage: l = 0\nsage: u = 5\nsage: %timeit randint(l,u)\n10000 loops, best of 3: 31.1 \u00b5s per loop\nsage: %timeit ZZ.random_element(l,u)\n100000 loops, best of 3: 2.63 \u00b5s per loop\n```\n\n\nPython Integers:\n\n\n```\nsage: l = int(0)\nsage: u = int(5)\nsage: %timeit randint(l,u)\n100000 loops, best of 3: 7.65 \u00b5s per loop\nsage: %timeit ZZ.random_element(l,u)\n100000 loops, best of 3: 7.25 \u00b5s per loop\n```\n\n\nWhat am I missing?",
     "created_at": "2008-01-06T15:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5999",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5980",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -595,15 +595,15 @@ What am I missing?
 
 ---
 
-archive/issue_comments_006000.json:
+archive/issue_comments_005981.json:
 ```json
 {
     "body": "new bundle against 2.9.2 which fixes the default parameter remark by robertwb",
     "created_at": "2008-01-06T16:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6000",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5981",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -613,33 +613,15 @@ new bundle against 2.9.2 which fixes the default parameter remark by robertwb
 
 ---
 
-archive/issue_comments_006001.json:
-```json
-{
-    "body": "Changing priority from minor to major.",
-    "created_at": "2008-01-06T16:25:16Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/980",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6001",
-    "user": "@malb"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_006002.json:
+archive/issue_comments_005982.json:
 ```json
 {
     "body": "Attachment [random_element.hg](tarball://root/attachments/some-uuid/ticket980/random_element.hg) by @malb created at 2008-01-06 16:25:16",
     "created_at": "2008-01-06T16:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6002",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5982",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -649,15 +631,15 @@ Attachment [random_element.hg](tarball://root/attachments/some-uuid/ticket980/ra
 
 ---
 
-archive/issue_comments_006003.json:
+archive/issue_comments_005983.json:
 ```json
 {
     "body": "Looks good to me!  doctests pass, Robert's issues with default arguments have been fixed.",
     "created_at": "2008-01-27T02:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6003",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5983",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -667,15 +649,15 @@ Looks good to me!  doctests pass, Robert's issues with default arguments have be
 
 ---
 
-archive/issue_comments_006004.json:
+archive/issue_comments_005984.json:
 ```json
 {
     "body": "Merged random_element.hg  in Sage 2.10.1.rc1",
     "created_at": "2008-01-27T02:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6004",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5984",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -685,15 +667,15 @@ Merged random_element.hg  in Sage 2.10.1.rc1
 
 ---
 
-archive/issue_comments_006005.json:
+archive/issue_comments_005985.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-27T02:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/980",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-6005",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/980#issuecomment-5985",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

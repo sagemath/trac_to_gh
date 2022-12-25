@@ -6,15 +6,14 @@ archive/issues_007700.json:
     "body": "Assignee: tbd\n\nCC:  @gvol\n\nThis file:\n\n```\nsage-4.3.rc0/spkg/standard/extcode-4.3.rc0/sage/ext/mac-app/Sage.app/Contents/MacOS/Sage\n```\n\n\nis a mysterious 80K binary program that does something.  Where did it come from?  What does it do?  Who made it?  How can I easily recreate it from source?    \n\nIf the answer is: \"it's a binary from some random guy of the 'net that nobody knows\"... then maybe we should be worried!\n\nHow to resolve this ticket:  For starters, add a README.txt to the directory: sage-4.3.rc0/data/extcode/sage/ext/mac-app that answers the above questions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7700\n\n",
     "created_at": "2009-12-16T01:39:55Z",
     "labels": [
-        "packages",
-        "major",
+        "component: packages",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Mysterious binary in sage-4.3.rc0/data/extcode/sage/ext/mac-app",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7700",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7700
 
 ---
 
-archive/issue_comments_066048.json:
+archive/issue_comments_065932.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2009-12-16T01:40:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66048",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65932",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -60,15 +59,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_066049.json:
+archive/issue_comments_065933.json:
 ```json
 {
     "body": "My guess is that it is the thing that Platypus makes for Sage - it basically wraps the Terminal window in a nicer-looking window, I think.  I have cc:ed Ivan on this, since he is the one who made this, so hopefully he can answer it.   Note that it runs the very well-behaved script in Contents/Resources.\n\nI have to say that don't really need Platypus to do all this, though it does look nicer.  Resources/English.lproj/MainMenu.nib is another, less mysterious, file that also is essentially impossible to edit using normal techniques.  It would be nice if there was documentation about exactly what was in both of them and how to recreate them, so I have slightly changed the summary.",
     "created_at": "2009-12-18T13:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66049",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65933",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -80,15 +79,15 @@ I have to say that don't really need Platypus to do all this, though it does loo
 
 ---
 
-archive/issue_comments_066050.json:
+archive/issue_comments_065934.json:
 ```json
 {
     "body": "Changing component from packages to distribution.",
     "created_at": "2009-12-18T13:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66050",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65934",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -98,15 +97,15 @@ Changing component from packages to distribution.
 
 ---
 
-archive/issue_comments_066051.json:
+archive/issue_comments_065935.json:
 ```json
 {
     "body": "Even better would be if we could document how to use Xcode and InterfaceBuilder directly to do something like this (as opposed to the black box of Platypus.  \"Platypus creates applications with a special binary that launches a specified script and captures its output.\"  One nice thing about it, on the other hand, is it should be able to easily create something that would take a .sage, .sws, or .py file and run it just by dropping it on the icon.\n\nWe should also have some sort of environment variable that would ask the user on start if they want notebook or command line, or something like that.  But of course now we're beyond this ticket; just recording the idea for now.\n\nAlso note that this doesn't affect most users, since we are not bdist-ing the app bundle by default yet.  Since this is really about the distribution of Sage in Mac, I'm also changing the component accordingly.",
     "created_at": "2009-12-18T13:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66051",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65935",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -120,15 +119,15 @@ Also note that this doesn't affect most users, since we are not bdist-ing the ap
 
 ---
 
-archive/issue_comments_066052.json:
+archive/issue_comments_065936.json:
 ```json
 {
     "body": "Changing assignee from tbd to @gvol.",
     "created_at": "2009-12-18T20:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66052",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65936",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -138,15 +137,15 @@ Changing assignee from tbd to @gvol.
 
 ---
 
-archive/issue_comments_066053.json:
+archive/issue_comments_065937.json:
 ```json
 {
     "body": "It is in fact the actual program that platypus creates which handles the gui etc. of the application.  It just runs the script with the options in Resources/AppSettings.plist (though I guess I should read the platypus source to ensure that's all it does)\n\nI will be happy to create a readme and a script to recreate these files (I thinking of adding it to sage -bdist, but I'm not sure that's the best place for it).  I'm taking finals right now so it may be a week or so before I get to it.\n\nI would certainly not be opposed to a hand coded app, but platypus is definitely easier and since it's not clear how many people will actually use it I didn't want to spend too much time on it.\n\nAs for dropping files and having them open, that was what I wanted to work on next, but when I [asked on sage-devel about a month ago](http://groups.google.com/group/sage-devel/browse_thread/thread/b685a7396f627816/7ea17ebd69df26bd?lnk=gst&q=andrus#7ea17ebd69df26bd) I got no feedback, so I would definitely like to know what the desired behavior would be.",
     "created_at": "2009-12-18T20:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66053",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65937",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -162,15 +161,15 @@ As for dropping files and having them open, that was what I wanted to work on ne
 
 ---
 
-archive/issue_comments_066054.json:
+archive/issue_comments_065938.json:
 ```json
 {
     "body": "simple sage launcher",
     "created_at": "2009-12-20T09:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66054",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65938",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -180,15 +179,15 @@ simple sage launcher
 
 ---
 
-archive/issue_comments_066055.json:
+archive/issue_comments_065939.json:
 ```json
 {
     "body": "Attachment [sage.app.tar](tarball://root/attachments/some-uuid/ticket7700/sage.app.tar) by @robertwb created at 2009-12-20 09:20:19\n\nAn .app bundle can be dead simple without any binary blobs (except for the icon, of course). See attached, which is 3 folders and a 1-line bash script, and launches sage in a command line. This could be easy to adapt to do sage -notebook (and wouldn't even have to fire up terminal), and use a sage executable bundled with the app (e.g. in /Resources), though a bit of care should be taken to gracefully handle what happens when a notebook is already running, and what to do about quitting.",
     "created_at": "2009-12-20T09:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66055",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65939",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -200,15 +199,15 @@ An .app bundle can be dead simple without any binary blobs (except for the icon,
 
 ---
 
-archive/issue_comments_066056.json:
+archive/issue_comments_065940.json:
 ```json
 {
     "body": "I don't have time to look at it now, but there are definitely reasons why we have the longer script etc.  We used to have this as the thing but then iandrus packaged it more nicely, though of course with the platypus thing.  It's not clear to me how to fire up -notebook without the terminal.  You may want to look at previous discussions about this topic on other tickets.",
     "created_at": "2009-12-20T23:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66056",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65940",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -218,15 +217,15 @@ I don't have time to look at it now, but there are definitely reasons why we hav
 
 ---
 
-archive/issue_comments_066057.json:
+archive/issue_comments_065941.json:
 ```json
 {
     "body": "Thanks Robert!!",
     "created_at": "2009-12-21T08:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66057",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65941",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -236,15 +235,15 @@ Thanks Robert!!
 
 ---
 
-archive/issue_comments_066058.json:
+archive/issue_comments_065942.json:
 ```json
 {
     "body": "Now that I have had a chance to look at it, I should clarify that the recommendation robertwb makes is more along the lines of the earlier suggestions that led to [http://trac.sagemath.org/sage_trac/ticket/4817](http://trac.sagemath.org/sage_trac/ticket/4817).  Is it possible to deal with all of the issues raised in tickets #5254, #5261, and #7546 without essentially doing all of the things done in them, with the exception of getting rid of the Platypus thing and putting in a script that tells Terminal to do the script at Contents/Resources/script?  \n\nAll the Platypus thing does is to run that script, but with a nice little window around it - you may want to try -bdisting with the appropriate app bundle variable set and seeing for yourself.  I don't know that we can avoid having the Terminal fire up without doing something equivalent to that, even without Platypus.",
     "created_at": "2009-12-21T13:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66058",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65942",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -256,15 +255,15 @@ All the Platypus thing does is to run that script, but with a nice little window
 
 ---
 
-archive/issue_comments_066059.json:
+archive/issue_comments_065943.json:
 ```json
 {
     "body": "It's certainly easy to fire up a script in Terminal (though I personally don't like that since I tend to quit Terminal) and I think we could even do it with no output anywhere, but then you wouldn't be able to tell it to quit, which seems like a huge issue to me.  But if people really want it, perhaps we could make it depend on an environment variable--we don't have enough of those yet :)\n\nOriginally my dream was to have a \"real\" Mac Application.  i.e. something that will show up in the dock, have the console output if I want it, and have a web browser for actually running Sage notebooks.  Personally I hate having Sage mixed with my other browsing.  Right now I have a reasonable setup with the Sage launcher and a dedicated web browser, but it would be better if they were the same application.  That of course requires much more work: either writing our own application, extending Platypus to handle that situation (viz. web browsing), or modifying something like Prism to start up the notebook.  Last time I looked at Prism there were not even any hints as to how to build it despite several questions on the forum.\n\nIf the only problem is that we don't know where the binary came from, perhaps we should just include Platypus :)  The source is only 896k zipped and 2.4 MB unzipped, and we wouldn't even have to include it all!\n\nPerhaps we should discuss it on sage-devel to see what people want and/or expect.",
     "created_at": "2009-12-21T19:06:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66059",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65943",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -280,15 +279,15 @@ Perhaps we should discuss it on sage-devel to see what people want and/or expect
 
 ---
 
-archive/issue_comments_066060.json:
+archive/issue_comments_065944.json:
 ```json
 {
     "body": "Information about the contents of Sage.app",
     "created_at": "2010-01-06T12:52:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66060",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65944",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -298,15 +297,15 @@ Information about the contents of Sage.app
 
 ---
 
-archive/issue_comments_066061.json:
+archive/issue_comments_065945.json:
 ```json
 {
     "body": "Attachment [readme_7700.patch](tarball://root/attachments/some-uuid/ticket7700/readme_7700.patch) by @gvol created at 2010-01-06 12:57:08\n\nIf this doesn't answer your questions, or you would like anything else let me know.",
     "created_at": "2010-01-06T12:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66061",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65945",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -318,15 +317,15 @@ If this doesn't answer your questions, or you would like anything else let me kn
 
 ---
 
-archive/issue_comments_066062.json:
+archive/issue_comments_065946.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-06T12:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66062",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65946",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -336,15 +335,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_066063.json:
+archive/issue_comments_065947.json:
 ```json
 {
     "body": "I like this a lot, at any rate!  Great work - makes it very clear what ALL the options are.",
     "created_at": "2010-01-06T14:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66063",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65947",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -354,15 +353,15 @@ I like this a lot, at any rate!  Great work - makes it very clear what ALL the o
 
 ---
 
-archive/issue_comments_066064.json:
+archive/issue_comments_065948.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-06T14:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66064",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65948",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -372,15 +371,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_066065.json:
+archive/issue_comments_065949.json:
 ```json
 {
     "body": "I was just trying to address the myth that .app bundles are complicated, messy things--I agree that the script can (and should) do more. \n\nIn terms of isolating the sage notebook from browsing, firefox has a -no-remote option that may be possible to use. It is also possible to start up to separate instances of Safari (by invoking the binary directly, though I haven't investigated how the two instances interact...)\n\nIn any case, this ticket is about documenting what exactly that is, and you've done a fine job, so +1 from me too.",
     "created_at": "2010-01-07T06:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66065",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65949",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -394,15 +393,15 @@ In any case, this ticket is about documenting what exactly that is, and you've d
 
 ---
 
-archive/issue_comments_066066.json:
+archive/issue_comments_065950.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-14T07:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-66066",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7700#issuecomment-65950",
+    "user": "https://github.com/rlmill"
 }
 ```
 

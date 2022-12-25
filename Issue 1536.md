@@ -6,15 +6,13 @@ archive/issues_001536.json:
     "body": "Assignee: @williamstein\n\nDepends on #1516\n\nIssue created by migration from https://trac.sagemath.org/ticket/1536\n\n",
     "created_at": "2007-12-16T10:09:18Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "jmol useable from notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1536",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1536
 
 ---
 
-archive/issue_comments_009806.json:
+archive/issue_comments_009780.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-12-16T10:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1536",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9806",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9780",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -47,15 +45,15 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
-archive/issue_comments_009807.json:
+archive/issue_comments_009781.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-16T10:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1536",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9807",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9781",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -65,15 +63,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_009808.json:
+archive/issue_comments_009782.json:
 ```json
 {
     "body": "Attachment [jmol-notebook.hg](tarball://root/attachments/some-uuid/ticket1536/jmol-notebook.hg) by @robertwb created at 2007-12-16 14:41:26",
     "created_at": "2007-12-16T14:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1536",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9808",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9782",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -83,15 +81,15 @@ Attachment [jmol-notebook.hg](tarball://root/attachments/some-uuid/ticket1536/jm
 
 ---
 
-archive/issue_comments_009809.json:
+archive/issue_comments_009783.json:
 ```json
 {
     "body": "Looks good to me.  Positive review.",
     "created_at": "2007-12-24T07:37:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1536",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9809",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9783",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -101,15 +99,15 @@ Looks good to me.  Positive review.
 
 ---
 
-archive/issue_comments_009810.json:
+archive/issue_comments_009784.json:
 ```json
 {
     "body": "Merged in 2.9.2 via the bundle from #1665.",
     "created_at": "2008-01-03T16:23:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1536",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9810",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9784",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +117,15 @@ Merged in 2.9.2 via the bundle from #1665.
 
 ---
 
-archive/issue_comments_009811.json:
+archive/issue_comments_009785.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-03T16:23:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1536",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9811",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1536#issuecomment-9785",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

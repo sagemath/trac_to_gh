@@ -6,15 +6,14 @@ archive/issues_003044.json:
     "body": "Assignee: jkantor\n\nI (Marshall Hampton) and Alex Jokela have added a number of improvements to the phcpack interface, including solution classification, path-tracking, and some utility functions.  This also includes much better doctesting.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3044\n\n",
     "created_at": "2008-04-27T14:10:00Z",
     "labels": [
-        "numerical",
-        "minor",
-        "enhancement"
+        "component: numerical",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "phcpack improvements: path tracking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3044",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: jkantor
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3044
 
 ---
 
-archive/issue_comments_020959.json:
+archive/issue_comments_020916.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"phcpack, interfaces, optional packages\".",
     "created_at": "2008-04-27T14:10:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20959",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20916",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing keywords from "" to "phcpack, interfaces, optional packages".
 
 ---
 
-archive/issue_comments_020960.json:
+archive/issue_comments_020917.json:
 ```json
 {
     "body": "Attachment [trac_3044_phcpack.patch](tarball://root/attachments/some-uuid/ticket3044/trac_3044_phcpack.patch) by mhampton created at 2008-04-27 14:11:23",
     "created_at": "2008-04-27T14:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20960",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20917",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -65,15 +64,15 @@ Attachment [trac_3044_phcpack.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_020961.json:
+archive/issue_comments_020918.json:
 ```json
 {
     "body": "Changing assignee from jkantor to somebody.",
     "created_at": "2008-05-05T16:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20961",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20918",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing assignee from jkantor to somebody.
 
 ---
 
-archive/issue_comments_020962.json:
+archive/issue_comments_020919.json:
 ```json
 {
     "body": "Changing keywords from \"phcpack, interfaces, optional packages\" to \"phcpack, interfaces, optional packages, editor_cwitty\".",
     "created_at": "2008-06-15T21:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20962",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20919",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -101,15 +100,15 @@ Changing keywords from "phcpack, interfaces, optional packages" to "phcpack, int
 
 ---
 
-archive/issue_comments_020963.json:
+archive/issue_comments_020920.json:
 ```json
 {
     "body": "Attachment [phcpack-optional.patch](tarball://root/attachments/some-uuid/ticket3044/phcpack-optional.patch) by cwitty created at 2008-06-18 02:03:54",
     "created_at": "2008-06-18T02:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20963",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20920",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -119,15 +118,15 @@ Attachment [phcpack-optional.patch](tarball://root/attachments/some-uuid/ticket3
 
 ---
 
-archive/issue_comments_020964.json:
+archive/issue_comments_020921.json:
 ```json
 {
     "body": "Looks good!  Doctests pass with phc installed; the plot looks pretty; and after applying my phcpack-optional.patch, doctests pass without phc installed.",
     "created_at": "2008-06-18T02:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20964",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20921",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -137,15 +136,15 @@ Looks good!  Doctests pass with phc installed; the plot looks pretty; and after 
 
 ---
 
-archive/issue_comments_020965.json:
+archive/issue_comments_020922.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.0.4.alpha0",
     "created_at": "2008-06-23T11:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20965",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20922",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -155,15 +154,15 @@ Merged both patches in Sage 3.0.4.alpha0
 
 ---
 
-archive/issue_comments_020966.json:
+archive/issue_comments_020923.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-23T11:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3044",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20966",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3044#issuecomment-20923",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

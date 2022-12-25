@@ -6,7 +6,7 @@ archive/issues_004771.json:
     "body": "Assignee: boothby\n\nThe messages:\n\n```\n2008-12-12 10:56:37-0800 [HTTPChannel,53,24.143.70.101] Dumping admin history to 'sage_notebook/worksheets/admin/history.sobj'\n```\n\nthat the notebook prints out for no good reason should be deleted by commenting out the line in the notebook server code that prints them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4771\n\n",
     "created_at": "2008-12-12T19:04:12Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004771.json:
     "title": "notebook -- get rid of these debug log messages I put in: \"Dumping ...\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4771",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4771
 
 ---
 
-archive/issue_comments_036140.json:
+archive/issue_comments_036069.json:
 ```json
 {
     "body": "Attachment [sage-4771.patch](tarball://root/attachments/some-uuid/ticket4771/sage-4771.patch) by TimothyClemans created at 2008-12-12 19:29:20",
     "created_at": "2008-12-12T19:29:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4771#issuecomment-36140",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/4771#issuecomment-36069",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -53,15 +53,15 @@ Attachment [sage-4771.patch](tarball://root/attachments/some-uuid/ticket4771/sag
 
 ---
 
-archive/issue_comments_036141.json:
+archive/issue_comments_036070.json:
 ```json
 {
     "body": "Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-13T06:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4771#issuecomment-36141",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4771#issuecomment-36070",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +75,15 @@ Michael
 
 ---
 
-archive/issue_comments_036142.json:
+archive/issue_comments_036071.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-13T09:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4771#issuecomment-36142",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4771#issuecomment-36071",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +93,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_036143.json:
+archive/issue_comments_036072.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.alpha2",
     "created_at": "2008-12-13T09:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4771#issuecomment-36143",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4771#issuecomment-36072",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

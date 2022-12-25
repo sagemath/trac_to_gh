@@ -6,15 +6,14 @@ archive/issues_008244.json:
     "body": "Assignee: mvngu\n\nCC:  mvngu @jhpalmieri @mwhansen @craigcitro @robertwb\n\nLet's fix or suppress these, so that it's easier to identify new problems.\n\nSee the attachment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8244\n\n",
     "created_at": "2010-02-11T21:43:46Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Annoying warnings when building the HTML reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8244",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: mvngu
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8244
 
 ---
 
-archive/issue_comments_072895.json:
+archive/issue_comments_072773.json:
 ```json
 {
     "body": "Attachment [refbuild.log](tarball://root/attachments/some-uuid/ticket8244/refbuild.log) by @qed777 created at 2010-02-11 21:46:55\n\nHTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.",
     "created_at": "2010-02-11T21:46:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72895",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72773",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -53,15 +52,15 @@ HTML reference manual docbuild warnings for 4.3.3.alpha0.  Not a patch.
 
 ---
 
-archive/issue_comments_072896.json:
+archive/issue_comments_072774.json:
 ```json
 {
     "body": "Should we follow #6419 for the nested classes?  We could use that approach for\n\n```\nsagenb.notebook.twist.UserToplevel.userchild_download_worksheets.zip\n```\n",
     "created_at": "2010-02-11T21:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72896",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72774",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -76,15 +75,15 @@ sagenb.notebook.twist.UserToplevel.userchild_download_worksheets.zip
 
 ---
 
-archive/issue_comments_072897.json:
+archive/issue_comments_072775.json:
 ```json
 {
     "body": "I've looked at these a bit, but I have no idea how to fix them.   Oh, except for\n\n```\nplot/plot3d/base.rst:6: (WARNING/2) error while formatting signature for sage.plot.plot3d.base.Graphics3d.export_jmol: Could not parse cython argspec\n```\n\nThis is because `_sage_getargspec_cython` in sage.misc.sageinspect is a little broken, and fixing it might be lot of work: right now it parses arguments to Cython function by doing basic string and regular expression manipulations, in particular separating arguments by splitting the line on commas.  The function `export_jmol` has argspec\n\n```\n    def export_jmol(self, filename='jmol_shape.jmol', force_reload=False,\n                    zoom=100, spin=False, background=(1,1,1), stereo=False,\n                    mesh=False, dots=False,\n                    perspective_depth = True,\n                    orientation = (-764,-346,-545,76.39), **ignored_kwds):\n```\n\nand so splitting at commas doesn't work.  To do this right, we either need to write a good parser (which deals with nested lists, tuples, etc.), or perhaps change the whole way we deal with argspecs for Cython functions; for example, just read off the entire string of all the arguments and pass that to the appropriate function, instead of trying to break it into arguments, default values, etc.  This is a pretty rare problem and it looks annoying to deal with, so I haven't felt like putting any time into it.\n\nmhansen and craigcitro: any comments or ideas?",
     "created_at": "2010-02-11T22:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72897",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72775",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -112,15 +111,15 @@ mhansen and craigcitro: any comments or ideas?
 
 ---
 
-archive/issue_comments_072898.json:
+archive/issue_comments_072776.json:
 ```json
 {
     "body": "Ticket #8243 is a duplicate of this one.",
     "created_at": "2010-02-12T03:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72898",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72776",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -130,15 +129,15 @@ Ticket #8243 is a duplicate of this one.
 
 ---
 
-archive/issue_comments_072899.json:
+archive/issue_comments_072777.json:
 ```json
 {
     "body": "Well, Cython itself has to parse such a thing, but I don't know how easy it is go get the data we need out of Cython.  Maybe Robert might have an idea?",
     "created_at": "2010-02-12T20:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72899",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72777",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -148,15 +147,15 @@ Well, Cython itself has to parse such a thing, but I don't know how easy it is g
 
 ---
 
-archive/issue_comments_072900.json:
+archive/issue_comments_072778.json:
 ```json
 {
     "body": "I'm not very familiar with [ASTs](http://en.wikipedia.org/wiki/Abstract_syntax_tree) (or [ast](http://docs.python.org/library/ast.html)), but with\n\n```python\nimport ast\nimport inspect\nimport sage.misc.sageinspect as sms\n\nclass SageVisitor(ast.NodeVisitor):\n    def visit_Name(self, node):\n        what = node.id\n        if what == 'None':\n            return None\n        elif what == 'True':\n            return True\n        elif what == 'False':\n            return False\n        return node.id\n\n    def visit_Num(self, node):\n        return node.n\n\n    def visit_Str(self, node):\n        return node.s\n\n    def visit_List(self, node):\n        t = []\n        for n in node.elts:\n            t.append(self.visit(n))\n        return t\n\n    def visit_Tuple(self, node):\n        t = []\n        for n in node.elts:\n            t.append(self.visit(n))\n        return tuple(t)\n\n    def visit_Dict(self, node):\n        d = {}\n        for k, v in zip(node.keys, node.values):\n            d[self.visit(k)] = self.visit(v)\n        return d\n\n\ndef getargspec_via_ast(source):\n    if not isinstance(source, basestring):\n        source = sms.sage_getsource(source)\n\n    ast_args = ast.parse(source.lstrip()).body[0].args\n\n    args = []\n    defaults = []\n\n    for a in ast_args.args:\n        args.append(SageVisitor().visit(a))\n\n    for d in ast_args.defaults:\n        defaults.append(SageVisitor().visit(d))\n\n    return inspect.ArgSpec(args, ast_args.vararg, ast_args.kwarg,\n                           tuple(defaults) if defaults else None)\n```\n\nI get\n\n```python\nsage: inspect.getargspec(factor) == getargspec_via_ast(factor)\nTrue\nsage: getargspec_via_ast(sage.plot.plot3d.base.Graphics3d.export_jmol)\nArgSpec(args=['self', 'filename', 'force_reload', 'zoom', 'spin', 'background', 'stereo', 'mesh', 'dots', 'perspective_depth', 'orientation'], varargs=None, keywords='ignored_kwds', defaults=('jmol_shape.jmol', False, 100, False, (1, 1, 1), False, False, False, True, (-764, -346, -545, 76.390000000000001)))\n```\n\nMaybe we can use this as a last resort?  I think we'd first need to remove Cython-specific constructs.",
     "created_at": "2010-02-13T14:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72900",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72778",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -237,15 +236,15 @@ Maybe we can use this as a last resort?  I think we'd first need to remove Cytho
 
 ---
 
-archive/issue_comments_072901.json:
+archive/issue_comments_072779.json:
 ```json
 {
     "body": "It seems that nearly all of the warnings are from Cython files and that we really need a more robust analogue of `inspect.getargspec` for Cython source.\n\nFor the `ElementMethods`, `ParentMethods`, `userchild_download_worksheets.zip` warnings, we can expand the autodoc skip method handler.\n\nThe other warnings seem to be reST formatting problems, but I'm not sure about\n\n```\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n```\n",
     "created_at": "2010-02-14T19:34:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72901",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72779",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -265,15 +264,15 @@ The other warnings seem to be reST formatting problems, but I'm not sure about
 
 ---
 
-archive/issue_comments_072902.json:
+archive/issue_comments_072780.json:
 ```json
 {
     "body": "Can autodoc [handle nested classes](http://groups.google.com/groups/search?q=group:sphinx-dev+nested+classes&btnG=Search&sitesearch=)?",
     "created_at": "2010-02-15T13:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72902",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72780",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -283,15 +282,15 @@ Can autodoc [handle nested classes](http://groups.google.com/groups/search?q=gro
 
 ---
 
-archive/issue_comments_072903.json:
+archive/issue_comments_072781.json:
 ```json
 {
     "body": "Replying to [comment:6 mpatel]:\n> It seems that nearly all of the warnings are from Cython files and that we really need a more robust analogue of `inspect.getargspec` for Cython source.\n\nOr for now, a way to suppress all of the error message.\n\nI'm not sure about the `<autodoc>...` errors, either.",
     "created_at": "2010-02-17T04:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72903",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72781",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -306,15 +305,15 @@ I'm not sure about the `<autodoc>...` errors, either.
 
 ---
 
-archive/issue_comments_072904.json:
+archive/issue_comments_072782.json:
 ```json
 {
     "body": "The following seems to remove the \"arg is not a Python function\" warnings:\n\n```diff\n--- autodoc.py.origg    2010-02-18 15:51:38.000000000 -0800\n+++ autodoc.py  2010-02-18 17:03:58.000000000 -0800\n@@ -1005,7 +1005,16 @@ class MethodDocumenter(ClassLevelDocumen\n             else:\n                 return None\n         else:\n-            argspec = inspect.getargspec(self.object)\n+            # The check above misses ordinary Python methods in Cython\n+            # files.\n+            try:\n+                argspec = inspect.getargspec(self.object)\n+            except TypeError:\n+                if (inspect.ismethod(self.object) and \n+                    self.env.config.autodoc_builtin_argspec):\n+                    argspec = self.env.config.autodoc_builtin_argspec(self.object.im_func)\n+                else:\n+                    return None\n         if argspec[0] and argspec[0][0] in ('cls', 'self'):\n             del argspec[0][0]\n         return inspect.formatargspec(*argspec)\n```\n\nShould we copy `autodoc.py` to `SAGE_DOC/common/sage_autodoc.py`, make all of our changes in the latter, and add the custom extension in `SAGE_DOC/common/conf.py`?",
     "created_at": "2010-02-19T01:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72904",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72782",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -349,15 +348,15 @@ Should we copy `autodoc.py` to `SAGE_DOC/common/sage_autodoc.py`, make all of ou
 
 ---
 
-archive/issue_comments_072905.json:
+archive/issue_comments_072783.json:
 ```json
 {
     "body": "Handle `*.next` methods.  sage repo.",
     "created_at": "2010-02-19T03:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72905",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72783",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -367,15 +366,15 @@ Handle `*.next` methods.  sage repo.
 
 ---
 
-archive/issue_comments_072906.json:
+archive/issue_comments_072784.json:
 ```json
 {
     "body": "Attachment [trac_8244-slot_wrapper_argspec.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-slot_wrapper_argspec.patch) by @qed777 created at 2010-02-19 03:29:52\n\nThe attached patch should remove the warnings that end in\n\n```\n.next: arg is not a module, class, method, function, traceback, frame, or code object\n```\n",
     "created_at": "2010-02-19T03:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72906",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72784",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -392,15 +391,15 @@ The attached patch should remove the warnings that end in
 
 ---
 
-archive/issue_comments_072907.json:
+archive/issue_comments_072785.json:
 ```json
 {
     "body": "With the patches, I get about 10 non-reST warnings.  I think we can skip\n\n  `sagenb.notebook.twist.UserToplevel.userchild_download_worksheets.zip`\n\nin `conf.py`.  We should coordinate the spkg updates.",
     "created_at": "2010-02-19T03:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72907",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72785",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -414,15 +413,15 @@ in `conf.py`.  We should coordinate the spkg updates.
 
 ---
 
-archive/issue_comments_072908.json:
+archive/issue_comments_072786.json:
 ```json
 {
     "body": "This is great progress.  By the way, I know how to fix the warnings for `sage.misc.sagedoc.process_dollars`: we shouldn't run `process_dollars` on this function.  That is, change the first line of `process_dollars` in conf.py from\n\n```\n    if len(docstringlines) > 0:\n```\n\nto\n\n```\n    if len(docstringlines) > 0 and name.find(\"process_dollars\") == -1:\n```\n\nSimilarly for `process_mathtt`.  I've included this change in my patch.\n\n> Should we copy autodoc.py to SAGE_DOC/common/sage_autodoc.py, make all of our changes in the latter, and add the custom extension in SAGE_DOC/common/conf.py?\n\nThis is an interesting idea since we're patching it so much.  Then it would be under Sage revision control.  We would just need to keep an eye on it whenever we upgrade Sphinx.  I'm posting a patch which adds it.  Actually, it doesn't add the whole thing, since I got an error when I tried that.  Instead, it does\n\n```\nfrom sphinx.ext.autodoc import *\n```\n\nand then it defines `FunctionDocumenter`, `MethodDocumenter`, `setup`, and `ClassDocumenter` (this one isn't patched right now, but it looks like it will be in #7448).",
     "created_at": "2010-02-19T21:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72908",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72786",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -454,15 +453,15 @@ and then it defines `FunctionDocumenter`, `MethodDocumenter`, `setup`, and `Clas
 
 ---
 
-archive/issue_comments_072909.json:
+archive/issue_comments_072787.json:
 ```json
 {
     "body": "My patch also skips `sagenb.notebook.twist.UserToplevel.userchild_download_worksheets.zip`.",
     "created_at": "2010-02-19T21:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72909",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72787",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -472,15 +471,15 @@ My patch also skips `sagenb.notebook.twist.UserToplevel.userchild_download_works
 
 ---
 
-archive/issue_comments_072910.json:
+archive/issue_comments_072788.json:
 ```json
 {
     "body": "Attachment [trac_8244-conf-autodoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.patch) by @jhpalmieri created at 2010-02-19 21:23:27\n\napply on top of other patch",
     "created_at": "2010-02-19T21:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72910",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72788",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -492,15 +491,15 @@ apply on top of other patch
 
 ---
 
-archive/issue_comments_072911.json:
+archive/issue_comments_072789.json:
 ```json
 {
     "body": "Here's one more patch: this fixes one last warning message about sage.misc.process_dollars.",
     "created_at": "2010-02-19T22:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72911",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72789",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -510,15 +509,15 @@ Here's one more patch: this fixes one last warning message about sage.misc.proce
 
 ---
 
-archive/issue_comments_072912.json:
+archive/issue_comments_072790.json:
 ```json
 {
     "body": "Attachment [trac_8244-sagedoc.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-sagedoc.patch) by @jhpalmieri created at 2010-02-19 22:21:16\n\napply on top of other patches",
     "created_at": "2010-02-19T22:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72912",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72790",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -530,15 +529,15 @@ apply on top of other patches
 
 ---
 
-archive/issue_comments_072913.json:
+archive/issue_comments_072791.json:
 ```json
 {
     "body": "Thanks!  Thanks also for making the extension patch.  To the extent it counts, my review is positive.\n\nI'll rebase #7448.\n\nTo the release manager:  Please apply \n\n```\ntrac_8244-slot_wrapper_argspec.patch\ntrac_8244-conf-autodoc.patch\ntrac_8244-sagedoc.patch\n```\n",
     "created_at": "2010-02-20T19:45:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72913",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72791",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -559,15 +558,15 @@ trac_8244-sagedoc.patch
 
 ---
 
-archive/issue_comments_072914.json:
+archive/issue_comments_072792.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-20T20:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72914",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72792",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -577,15 +576,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072915.json:
+archive/issue_comments_072793.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-20T20:25:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72915",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72793",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -595,15 +594,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_072916.json:
+archive/issue_comments_072794.json:
 ```json
 {
     "body": "Replaces \"conf_autodoc\" patch.",
     "created_at": "2010-02-23T03:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72916",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72794",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -613,15 +612,15 @@ Replaces "conf_autodoc" patch.
 
 ---
 
-archive/issue_comments_072917.json:
+archive/issue_comments_072795.json:
 ```json
 {
     "body": "Attachment [trac_8244-conf-autodoc.2.patch](tarball://root/attachments/some-uuid/ticket8244/trac_8244-conf-autodoc.2.patch) by @qed777 created at 2010-02-23 03:29:15\n\nI've attached a replacement for the \"conf-autodoc\" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.\n\nA self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).\n\nWhat do you think?",
     "created_at": "2010-02-23T03:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72917",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72795",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -637,15 +636,15 @@ What do you think?
 
 ---
 
-archive/issue_comments_072918.json:
+archive/issue_comments_072796.json:
 ```json
 {
     "body": "Replying to [comment:18 mpatel]:\n> I've attached a replacement for the \"conf-autodoc\" patch that adds all of `autodoc` (as `sage_autodoc`) and, with some redefinition, avoids the `ExtensionError`.\n> \n> A self-contained `sage_autodoc` should make it less likely that `sage_autodoc` stops working, when we upgrade or test new versions of Sphinx.  (I was just hit by this during experiments with [a development version](http://bitbucket.org/birkenfeld/sphinx/)).\n> \n> What do you think?\n\nLooks good to me.  Still a positive review.",
     "created_at": "2010-02-24T21:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72918",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72796",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -662,15 +661,15 @@ Looks good to me.  Still a positive review.
 
 ---
 
-archive/issue_comments_072919.json:
+archive/issue_comments_072797.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-02T22:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72919",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72797",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -680,15 +679,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_072920.json:
+archive/issue_comments_072798.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. [trac_8244-slot_wrapper_argspec.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8244/trac_8244-slot_wrapper_argspec.patch)\n2. [trac_8244-conf-autodoc.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8244/trac_8244-conf-autodoc.2.patch)\n3. [trac_8244-sagedoc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8244/trac_8244-sagedoc.patch)",
     "created_at": "2010-03-02T22:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8244",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72920",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8244#issuecomment-72798",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

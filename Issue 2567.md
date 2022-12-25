@@ -6,15 +6,14 @@ archive/issues_002567.json:
     "body": "Assignee: somebody\n\nCC:  @zimmermann6 @kiwifb\n\n\n```\n> >  CODE:\n>\n> >  s = pi.str(3000000*log(10,2))\n> >  o = open('/Users/ericahls/Desktop/file.txt','w')\n> >  o.write(str(s))\n> >  o.close()\n>\n> >  --- Trying to get out to the farthest decimal point of PI I can.\n>\n> >  Error message:\n>\n> >  Traceback (most recent call last):    o.write(str(s))\n> >   File \"/Applications/sage/local/lib/python2.5/site-packages/sage/\n> >  functions/functions.py\", line 140, in str\n> >     raise ValueError, \"Number of bits must be at most 2^23.\"\n> >  ValueError: Number of bits must be at most 2^23.\n>\n> >  ----If i Put 2000000 instead 0f 3000000 the equation works.  much over\n> >  2 million the equation breaks dwon.\n>\n> I think that 2^23 is a bound in mpfr, and Sage uses mpfr to\n> compute digits of pi.  I don't know if one can compute more than\n> about 2^23 digits using mpfr.\n>\n> William\n\n\nYes we can. The issue was that MPFR used the stack instead of the heap\nfor certain operations [even when told not to use alloca] and would\nsmash it therefore with large number of digits. That has been fixed in\nMPFR 2.3.1 (which we include) and all we need to do is to raise or\nremove the limit in our code and do some testing. Care to open a\nticket?\n\n -- Mabshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2567\n\n",
     "created_at": "2008-03-17T07:03:24Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.3",
     "title": "remove limitation on computing digits of pi using mpfr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2567",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -69,15 +68,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2567
 
 ---
 
-archive/issue_comments_017498.json:
+archive/issue_comments_017460.json:
 ```json
 {
     "body": "As far as I can tell, there is still a limit, namely the maximum precision MPFR_PREC_MAX, which is 2^24 on my 32-bit machine.  \n\nI guess this means that we can relax the current 2^23 limit a little bit.  However, the MPFR manual says: \"Warning! MPFR needs to increase the precision internally, in order to provide accurate results (and in particular, correct rounding). Do not attempt to set the precision to any value near MPFR_PREC_MAX, otherwise MPFR will abort due to an assertion failure.\"",
     "created_at": "2008-12-28T15:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17498",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17460",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -89,15 +88,15 @@ I guess this means that we can relax the current 2^23 limit a little bit.  Howev
 
 ---
 
-archive/issue_comments_017499.json:
+archive/issue_comments_017461.json:
 ```json
 {
     "body": "You could use the pi function in mpmath; as far as I know, it is limited only by available memory. I just verified that computing 100 million digits works on a 32-bit system. The last time someone compared, it was also about three times faster than MPFR (but probably less memory efficient).\n\nOr you could perhaps use this code which is even faster: http://gmplib.org/pi-with-gmp.html",
     "created_at": "2009-02-05T21:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17499",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17461",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -109,15 +108,15 @@ Or you could perhaps use this code which is even faster: http://gmplib.org/pi-wi
 
 ---
 
-archive/issue_comments_017500.json:
+archive/issue_comments_017462.json:
 ```json
 {
     "body": "The problem is not so much the computation of Pi itself, but that we limit the maximum amount of precision on can ask for when using MPFR. It seems the limit is good for 32 bits, but for 64 bits MPFR is also basically limited by memory only.\n\nThe solution to this ticket might be to import MPFR_PREC_MAX from mpfr.h or wherever it is defined and then the problem will magically go away.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-05T21:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17500",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17462",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -133,15 +132,15 @@ Michael
 
 ---
 
-archive/issue_comments_017501.json:
+archive/issue_comments_017463.json:
 ```json
 {
     "body": "> The solution to this ticket might be to import MPFR_PREC_MAX from mpfr.h\n\nright. It is defined there as 2<sup>31</sup>-1 on a 32-bit machine and 2<sup>63</sup>-1 on a 64-bit machine.",
     "created_at": "2009-02-06T06:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17501",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17463",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -153,15 +152,15 @@ right. It is defined there as 2<sup>31</sup>-1 on a 32-bit machine and 2<sup>63<
 
 ---
 
-archive/issue_comments_017502.json:
+archive/issue_comments_017464.json:
 ```json
 {
     "body": "> You could use the pi function in mpmath; as far as I know, it is limited only by available memory. I just verified that computing 100 million digits works on a 32-bit system. The last time someone compared, it was also about three times faster than MPFR (but probably less memory efficient).\n\nI am curious. Can you give real timings? Here is what I get on sage.math:\n\n```\nzimmerma@sage:~/mpfr-2.4.0/tests$ pwd\n/home/zimmerma/mpfr-2.4.0/tests\nzimmerma@sage:~/mpfr-2.4.0/tests$ time ./tconst_pi 332192809 0 0\n\nreal    42m21.420s\nuser    41m55.500s\nsys     0m25.910s\n```\n\nThis is without using the new FFT code we designed with Gaudry and Kruppa, which should give a\ntwofold speedup. Anyway if mpmath can compute 100 million digits in less than 15 minutes, I am\nreally impressed!",
     "created_at": "2009-02-06T07:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17502",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17464",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -187,15 +186,15 @@ really impressed!
 
 ---
 
-archive/issue_comments_017503.json:
+archive/issue_comments_017465.json:
 ```json
 {
     "body": "In mpmath on an Athlon 3700+ 2.21 GHz, 1 GB RAM,\n\n10**6 digits took 5.96 seconds (4.77 calc, 1.19 convert)\n\n10**7 digits took 109.45 seconds (82.16 calc, 27.28 convert)\n\n10**8 digits took 2184.68 seconds (1634.65 calc, 550.02 convert)\n\nI can't compare with MPFR on the same computer at the moment, due to network problems. (With an old version of sage, 3.0.2, %time str(pi.n(10**6*log(10.,2))) takes 43.06 s, but I don't trust that number).\n\nThis is the result reported by Ondrej a few months ago:\n\n```\nE.g. in sympy+gmpy:\n\nIn [3]: time a = pi.evalf(10**6)\nCPU times: user 5.13 s, sys: 0.04 s, total: 5.17 s\nWall time: 5.19 s\n\nSage 3.1.1:\n\nsage: time a = pi.n(digits=10**6)\nCPU times: user 14.06 s, sys: 0.06 s, total: 14.12 s\nWall time: 14.34 s \n```\n\n\n> This is without using the new FFT code we designed with Gaudry and Kruppa, which should give a twofold speedup. Anyway if mpmath can compute 100 million digits in less than 15 minutes, I am really impressed!\n\nMpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR, that is entirely due to using a better formula. Before using the Chudnovsky series, mpmath used AGM which has better theoretical complexity but was 3x slower up to at least 1M digits.",
     "created_at": "2009-02-06T09:55:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17503",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17465",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -234,15 +233,15 @@ Mpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR
 
 ---
 
-archive/issue_comments_017504.json:
+archive/issue_comments_017466.json:
 ```json
 {
     "body": "This discussion is very interesting, but it should not happen in trac, but on some mailing list since there people actually tend to see it. Trac's audience is rather limited and the comment section isn't meant for discussions :)\n\nI have changed the ticket to reflect Paul's pointer about pulling in MPFR_PREC_MAX from mpfr.h\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T10:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17504",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17466",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -258,15 +257,15 @@ Michael
 
 ---
 
-archive/issue_comments_017505.json:
+archive/issue_comments_017467.json:
 ```json
 {
     "body": "> Mpmath relies directly on multiplication of GMP mpz's. If it is faster than MPFR, that is entirely due to using a better formula. Before using the Chudnovsky series, mpmath used AGM which has better theoretical complexity but was 3x slower up to at least 1M digits.\n\nyes in a previous version MPFR did use the Chudnovsky series, but it only gives a fixed number of terms per iteration, whereas the current AGM-based code doubles the accuracy at each iteration, thus is asymptotically better. Also when the division in GMP is really O(M(n)) the current MPFR code should be much faster. However we should use the Chudnovsky series for small precision and the AGM for large precision.",
     "created_at": "2009-02-06T10:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17505",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17467",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -278,15 +277,15 @@ yes in a previous version MPFR did use the Chudnovsky series, but it only gives 
 
 ---
 
-archive/issue_comments_017506.json:
+archive/issue_comments_017468.json:
 ```json
 {
     "body": "I guess this ticket is now obsolete.",
     "created_at": "2010-02-27T21:58:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17506",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17468",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -296,15 +295,15 @@ I guess this ticket is now obsolete.
 
 ---
 
-archive/issue_comments_017507.json:
+archive/issue_comments_017469.json:
 ```json
 {
     "body": "I've attached a patch which removes our hard coded value.",
     "created_at": "2010-03-04T04:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17507",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17469",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -314,15 +313,15 @@ I've attached a patch which removes our hard coded value.
 
 ---
 
-archive/issue_comments_017508.json:
+archive/issue_comments_017470.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-04T04:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17508",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17470",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -332,15 +331,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_017509.json:
+archive/issue_comments_017471.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-03-05T19:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17509",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17471",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -350,15 +349,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_017510.json:
+archive/issue_comments_017472.json:
 ```json
 {
     "body": "> I've attached a patch which removes our hard coded value. \n\nMike, I guess this has to be rebased due to #8157. Or #8157 should be undone since your patch is\nbetter (in particular on 64-bit machines we should be able to compute with more that 2<sup>31</sup> bits).\n\nPaul",
     "created_at": "2010-03-05T19:20:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17510",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17472",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -373,15 +372,15 @@ Paul
 
 ---
 
-archive/issue_comments_017511.json:
+archive/issue_comments_017473.json:
 ```json
 {
     "body": "Oops, I knew that I had seen that ticket in the title a few days ago, but wasn't able to find it again :-)  I'll rebase this one.\n\nThe warning in the comment seems not to apply now.",
     "created_at": "2010-03-05T20:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17511",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17473",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -393,15 +392,15 @@ The warning in the comment seems not to apply now.
 
 ---
 
-archive/issue_comments_017512.json:
+archive/issue_comments_017474.json:
 ```json
 {
     "body": "Mike,\n\n> The warning in the comment seems not to apply now. \n\nwhich warning do you mean?",
     "created_at": "2010-03-05T20:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17512",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17474",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -415,15 +414,15 @@ which warning do you mean?
 
 ---
 
-archive/issue_comments_017513.json:
+archive/issue_comments_017475.json:
 ```json
 {
     "body": "Sorry, I knew after posting that I should have been more specific.  There's a comment in the source code that said that things totally break if we use the value from mpfr.h.",
     "created_at": "2010-03-05T20:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17513",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17475",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -433,15 +432,15 @@ Sorry, I knew after posting that I should have been more specific.  There's a co
 
 ---
 
-archive/issue_comments_017514.json:
+archive/issue_comments_017476.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-11T00:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17514",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17476",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -451,15 +450,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017515.json:
+archive/issue_comments_017477.json:
 ```json
 {
     "body": "I've rebased this and posted a new patch.  This needs to be tested on a 32-bit machine.",
     "created_at": "2010-07-11T00:04:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17515",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17477",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -469,15 +468,15 @@ I've rebased this and posted a new patch.  This needs to be tested on a 32-bit m
 
 ---
 
-archive/issue_comments_017516.json:
+archive/issue_comments_017478.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-07-11T16:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17516",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17478",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -487,15 +486,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_017517.json:
+archive/issue_comments_017479.json:
 ```json
 {
     "body": "while trying to review that ticket, I get with the input in the description:\n\n```\nsage: s = pi.str(3000000*log(10,2))\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/localdisk/tmp/sage-4.4.4/<ipython console> in <module>()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2632)()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2835)()\n\n/localdisk/tmp/sage-4.4.4/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2602)()\n\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'str'\n```\n\nIs that normal?\n\nPaul",
     "created_at": "2010-07-11T16:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17517",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17479",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -525,15 +524,15 @@ Paul
 
 ---
 
-archive/issue_comments_017518.json:
+archive/issue_comments_017480.json:
 ```json
 {
     "body": "Did you mean\n\n\n```\nsage: s = pi.n(digits=3000000*log(10,2))\n```\n\n?\n\nExpression objects don't have a `str` method.",
     "created_at": "2010-07-11T17:47:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17518",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17480",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -552,15 +551,15 @@ Expression objects don't have a `str` method.
 
 ---
 
-archive/issue_comments_017519.json:
+archive/issue_comments_017481.json:
 ```json
 {
     "body": "Replying to [comment:17 mhansen]:\n> Did you mean\n> \n> {{{\n> sage: s = pi.n(digits=3000000*log(10,2))\n> }}}\n> ?\n\nno, I just copy-pasted the example in the description above.\n\nPaul",
     "created_at": "2010-07-11T18:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17519",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17481",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -580,15 +579,15 @@ Paul
 
 ---
 
-archive/issue_comments_017520.json:
+archive/issue_comments_017482.json:
 ```json
 {
     "body": "I'm not sure what pi was defined to be in that example, and I was unable to find it in the logs.  I could try tracking down an old Sage install to possibly find out.",
     "created_at": "2010-07-18T03:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17520",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17482",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -598,15 +597,15 @@ I'm not sure what pi was defined to be in that example, and I was unable to find
 
 ---
 
-archive/issue_comments_017521.json:
+archive/issue_comments_017483.json:
 ```json
 {
     "body": "Replying to [comment:19 mhansen]:\n> I'm not sure what pi was defined to be in that example, and I was unable to find it in the logs.  I could try tracking down an old Sage install to possibly find out.\n\nmaybe William remembers, since he reported that ticket.\n\nPaul",
     "created_at": "2010-07-18T08:03:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17521",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17483",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -621,15 +620,15 @@ Paul
 
 ---
 
-archive/issue_comments_017522.json:
+archive/issue_comments_017484.json:
 ```json
 {
     "body": "I think this can / should still go in.",
     "created_at": "2011-12-17T19:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17522",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17484",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -639,15 +638,15 @@ I think this can / should still go in.
 
 ---
 
-archive/issue_comments_017523.json:
+archive/issue_comments_017485.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2011-12-17T19:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17523",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17485",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -657,15 +656,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_017524.json:
+archive/issue_comments_017486.json:
 ```json
 {
     "body": "Mike, why do you import sys at line 186? Also, please could you add a short test on 64-bit\ncomputers? For example:\n\n```\nsage: R = RealField(2^31)\nsage: RR(R(2.0)) == RR(2.0)\nTrue\n```\n\nPaul",
     "created_at": "2011-12-18T15:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17524",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17486",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -684,15 +683,15 @@ Paul
 
 ---
 
-archive/issue_comments_017525.json:
+archive/issue_comments_017487.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-12-18T15:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17525",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17487",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -702,15 +701,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_017526.json:
+archive/issue_comments_017488.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-12-18T15:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17526",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17488",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -720,15 +719,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017527.json:
+archive/issue_comments_017489.json:
 ```json
 {
     "body": "I put up a new patch addressing your changes.",
     "created_at": "2011-12-18T15:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17527",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17489",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -738,15 +737,15 @@ I put up a new patch addressing your changes.
 
 ---
 
-archive/issue_comments_017528.json:
+archive/issue_comments_017490.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-12-18T19:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17528",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17490",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -756,15 +755,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_017529.json:
+archive/issue_comments_017491.json:
 ```json
 {
     "body": "Mike, there is a test that fails:\n\n```\n[zimmerma@coing sage]$ sage -t  devel/sage-2567/sage/misc/explain_pickle.py\nsage -t  \"devel/sage-2567/sage/misc/explain_pickle.py\"      \n**********************************************************************\nFile \"/usr/local/sage-4.7.2/sage/devel/sage-2567/sage/misc/explain_pickle.py\", line 210:\n    sage: explain_pickle(dumps(RR(pi)), in_current_sage=True)\nExpected:\n    from sage.rings.real_mpfr import __create__RealNumber_version0\n    from sage.rings.real_mpfr import __create__RealField_version0\n    __create__RealNumber_version0(__create__RealField_version0(53r, False, 'RNDN'), '3.4gvml245kc0@0', 32r)\nGot:\n    from sage.rings.real_mpfr import __create__RealNumber_version0\n    from sage.rings.real_mpfr import __create__RealField_version0\n    __create__RealNumber_version0(__create__RealField_version0(long(53), False, 'RNDN'), '3.4gvml245kc0@0', 32r)\n**********************************************************************\n1 items had failures:\n   1 of  14 in __main__.example_1\n```\n\nPlease could you have a look?\n\nPaul",
     "created_at": "2011-12-18T19:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17529",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17491",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -797,15 +796,15 @@ Paul
 
 ---
 
-archive/issue_comments_017530.json:
+archive/issue_comments_017492.json:
 ```json
 {
     "body": "I put up a patch fixing that doctest.",
     "created_at": "2011-12-19T10:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17530",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17492",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -815,15 +814,15 @@ I put up a patch fixing that doctest.
 
 ---
 
-archive/issue_comments_017531.json:
+archive/issue_comments_017493.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-12-19T10:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17531",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17493",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -833,15 +832,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017532.json:
+archive/issue_comments_017494.json:
 ```json
 {
     "body": "all tests pass on a 64-bit computer. However I still have to check on a 32-bit computer.\n\nPaul",
     "created_at": "2011-12-19T18:11:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17532",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17494",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -853,15 +852,15 @@ Paul
 
 ---
 
-archive/issue_comments_017533.json:
+archive/issue_comments_017495.json:
 ```json
 {
     "body": "one item fails on a 32-bit machine (with Sage 4.7.2):\n\n```\nsage -t  \"devel/sage/sage/rings/real_mpfr.pyx\"              \n**********************************************************************\nFile \"/localdisk/tmp/sage-4.7.2/devel/sage/sage/rings/real_mpfr.pyx\", line 196:\n    sage: R = RealField(2^31); R\nExpected:\n    Traceback (most recent call last):                     \n    ...                                                    \n    OverflowError: ... too large to convert to int         \nGot:\n    Traceback (most recent call last):\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/localdisk/tmp/sage-4.7.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[4]>\", line 1, in <module>\n        R = RealField(Integer(2)**Integer(31)); R###line 196:\n    sage: R = RealField(2^31); R\n      File \"real_mpfr.pyx\", line 280, in sage.rings.real_mpfr.RealField (sage/rings/real_mpfr.c:3802)\n      File \"real_mpfr.pyx\", line 299, in sage.rings.real_mpfr.RealField_class.__init__ (sage/rings/real_mpfr.c:4025)\n    ValueError: prec (=2147483648) must be >= 2 and <= 2147483647.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /users/caramel/zimmerma/.sage//tmp/real_mpfr_5754.py\n         [14.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/real_mpfr.pyx\"\n```\n\nPaul",
     "created_at": "2011-12-20T08:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17533",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17495",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -910,15 +909,15 @@ Paul
 
 ---
 
-archive/issue_comments_017534.json:
+archive/issue_comments_017496.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-12-20T08:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17534",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17496",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -928,15 +927,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_017535.json:
+archive/issue_comments_017497.json:
 ```json
 {
     "body": "Mike, please can you fix the error message on 32-bit?\n\nPaul",
     "created_at": "2011-12-24T12:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17535",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17497",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -948,15 +947,15 @@ Paul
 
 ---
 
-archive/issue_comments_017536.json:
+archive/issue_comments_017498.json:
 ```json
 {
     "body": "Attachment [trac_2567.patch](tarball://root/attachments/some-uuid/ticket2567/trac_2567.patch) by @mwhansen created at 2012-03-28 20:56:15",
     "created_at": "2012-03-28T20:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17536",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17498",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -966,15 +965,15 @@ Attachment [trac_2567.patch](tarball://root/attachments/some-uuid/ticket2567/tra
 
 ---
 
-archive/issue_comments_017537.json:
+archive/issue_comments_017499.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-03-28T20:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17537",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17499",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -984,15 +983,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017538.json:
+archive/issue_comments_017500.json:
 ```json
 {
     "body": "I fixed the error message.",
     "created_at": "2012-03-28T20:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17538",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17500",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1002,15 +1001,15 @@ I fixed the error message.
 
 ---
 
-archive/issue_comments_017539.json:
+archive/issue_comments_017501.json:
 ```json
 {
     "body": "The patch does not apply to 5.0.beta11 -- see patchbot logs. (I guess the cause is #11666.)",
     "created_at": "2012-03-29T17:39:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17539",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17501",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -1020,15 +1019,15 @@ The patch does not apply to 5.0.beta11 -- see patchbot logs. (I guess the cause 
 
 ---
 
-archive/issue_comments_017540.json:
+archive/issue_comments_017502.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2012-03-29T17:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17540",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17502",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -1038,15 +1037,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_017541.json:
+archive/issue_comments_017503.json:
 ```json
 {
     "body": "Paul, does MPFR_PREC_MAX now reflect the `2^31 - 257` limit in 3.1.0?  For 64-bit, it seems to be set at `2^63`.",
     "created_at": "2012-08-01T06:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17541",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17503",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1056,15 +1055,15 @@ Paul, does MPFR_PREC_MAX now reflect the `2^31 - 257` limit in 3.1.0?  For 64-bi
 
 ---
 
-archive/issue_comments_017542.json:
+archive/issue_comments_017504.json:
 ```json
 {
     "body": "in 3.1.x MPFR_PREC_MAX is 2<sup>63</sup>-1 on 64-bit computers. In the development version of MPFR it is set to 2<sup>31</sup>-257 in 32-bit and 2<sup>63</sup>-257 in 64-bit mode.\n\nPaul",
     "created_at": "2012-08-01T07:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17542",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17504",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -1076,15 +1075,15 @@ Paul
 
 ---
 
-archive/issue_comments_017543.json:
+archive/issue_comments_017505.json:
 ```json
 {
     "body": "any progress on this ticket?\n\nPaul",
     "created_at": "2013-01-07T08:43:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17543",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17505",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -1096,15 +1095,15 @@ Paul
 
 ---
 
-archive/issue_comments_017544.json:
+archive/issue_comments_017506.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2020-12-26T18:03:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17544",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17506",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1114,15 +1113,15 @@ New commits:
 
 ---
 
-archive/issue_comments_017545.json:
+archive/issue_comments_017507.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2020-12-26T18:03:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17545",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17507",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1132,15 +1131,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017546.json:
+archive/issue_comments_017508.json:
 ```json
 {
     "body": "Well, I made a branch and this seems to work. Anybody interested ?",
     "created_at": "2020-12-26T20:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17546",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17508",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1150,15 +1149,15 @@ Well, I made a branch and this seems to work. Anybody interested ?
 
 ---
 
-archive/issue_comments_017547.json:
+archive/issue_comments_017509.json:
 ```json
 {
     "body": "Well, it looks good to me. I cannot see clear objections in the earlier ticket comments so let's see what happens when we include it for real.\n\nThe author field may need updating though.",
     "created_at": "2020-12-27T20:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17547",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17509",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -1170,15 +1169,15 @@ The author field may need updating though.
 
 ---
 
-archive/issue_comments_017548.json:
+archive/issue_comments_017510.json:
 ```json
 {
     "body": "voil\u00e0, voil\u00e0.",
     "created_at": "2020-12-27T20:44:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17548",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17510",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1188,15 +1187,15 @@ voilà, voilà.
 
 ---
 
-archive/issue_comments_017549.json:
+archive/issue_comments_017511.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-12-27T20:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17549",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17511",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -1206,15 +1205,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_017550.json:
+archive/issue_comments_017512.json:
 ```json
 {
     "body": "Comme une lettre \u00e0 la poste :)",
     "created_at": "2020-12-27T20:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17550",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17512",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -1224,15 +1223,15 @@ Comme une lettre à la poste :)
 
 ---
 
-archive/issue_comments_017551.json:
+archive/issue_comments_017513.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2020-12-28T23:34:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17551",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2567#issuecomment-17513",
+    "user": "https://github.com/vbraun"
 }
 ```
 

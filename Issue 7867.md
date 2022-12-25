@@ -6,15 +6,14 @@ archive/issues_007867.json:
     "body": "Assignee: drkirkby\n\nCC:  @rlmill @JohnCremona @williamstein @robertwb @jaapspies\n\n == The build environment ==\n* Sun T5240. 2 x 1167 MHz T2+ SPARC processors 32 GB RAM (t2.math.washington.edu)\n* Solaris 10 update 6 (released in 05/2009)\n* gcc 4.4.1 configured to use both the Sun assembler and linker. \n\n## The problem\n\n\n```\nsage-4.3.1.alpha1/.hg/store/data/c__lib/include/ccobject.h.i\nsage-4.3.1.alpha1/.hg/store/data/c__lib/include/_z_z__pylong.h.i\nsage-4.3.1.alpha1/.hg/store/data/build/\nsage-4.3.1.alpha1/.hg/store/data/build/sage/\nsage-4.3.1.alpha1/.hg/store/data/build/sage/coding/\nsage-4.3.1.alpha1/.hg/store/data/build/sage/coding/code__constructions.py.i\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS t2 5.10 Generic_141414-02 sun4v sparc SUNW,T5240\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.1/configure --prefix=/usr/local/gcc-4.4.1-sun-linker/ --with-as=/usr/ccs/bin/as --without-gnu-as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++,fortran --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib CC=/usr/sfw/bin/gcc CXX=/usr/sfw/bin/g++\nThread model: posix\ngcc version 4.4.1 (GCC)\n****************************************************\ngcc -o src/convert.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/convert.c\ngcc -o src/interrupt.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/interrupt.c\ngcc -o src/mpn_pylong.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/mpn_pylong.c\ngcc -o src/mpz_pylong.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/mpz_pylong.c\ngcc -o src/mpz_longlong.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/mpz_longlong.c\ngcc -o src/stdsage.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/stdsage.c\ngcc -o src/gmp_globals.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/gmp_globals.c\ng++ -o src/ZZ_pylong.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/ZZ_pylong.cpp\ng++ -o src/ntl_wrap.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/ntl_wrap.cpp\nIn file included from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/Python.h:8,\n                 from include/ntl_wrap.h:32,\n                 from src/ntl_wrap.cpp:5:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/pyconfig.h:1004:1: warning: \"_FILE_OFFSET_BITS\" redefined\nIn file included from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/wchar.h:20,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/cwchar:47,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/bits/postypes.h:42,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/iosfwd:42,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ios:39,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ostream:40,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/iostream:40,\n                 from src/ntl_wrap.cpp:1:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/sys/feature_tests.h:197:1: warning: this is the location of the previous definition\nIn file included from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/Python.h:8,\n                 from include/ntl_wrap.h:32,\n                 from src/ntl_wrap.cpp:5:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/pyconfig.h:1019:1: warning: \"_POSIX_C_SOURCE\" redefined\nIn file included from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/wchar.h:20,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/cwchar:47,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/bits/postypes.h:42,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/iosfwd:42,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ios:39,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ostream:40,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/iostream:40,\n                 from src/ntl_wrap.cpp:1:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/sys/feature_tests.h:275:1: warning: this is the location of the previous definition\ng++ -o libcsage.so -shared src/convert.pic.o src/interrupt.pic.o src/mpn_pylong.pic.o src/mpz_pylong.pic.o src/mpz_longlong.pic.o src/stdsage.pic.o src/gmp_globals.pic.o src/ZZ_pylong.pic.o src/ntl_wrap.pic.o -L/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/lib -lntl -lgmp -lpari\npulling from /rootpool2/local/kirkby/sage-4.3.1.alpha1/spkg/build/sage-4.3.1.alpha1\nsearching for changes\nno changes found\nabort: can't merge with ancestor\nnothing changed\n0 files updated, 0 files merged, 0 files removed, 0 files unresolved\nDeleting the scons target.\nRemoved src/convert.pic.o\nRemoved src/interrupt.pic.o\nRemoved src/mpn_pylong.pic.o\nRemoved src/mpz_pylong.pic.o\nRemoved src/mpz_longlong.pic.o\nRemoved src/stdsage.pic.o\nRemoved src/gmp_globals.pic.o\nRemoved src/ZZ_pylong.pic.o\nRemoved src/ntl_wrap.pic.o\nRemoved libcsage.so\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Cleaning targets ...\nscons: done cleaning targets.\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/convert.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/convert.c\ngcc -o src/interrupt.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/interrupt.c\ngcc -o src/mpn_pylong.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/mpn_pylong.c\ngcc -o src/mpz_pylong.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/mpz_pylong.c\ngcc -o src/mpz_longlong.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/mpz_longlong.c\ngcc -o src/stdsage.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/stdsage.c\ngcc -o src/gmp_globals.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/gmp_globals.c\ng++ -o src/ZZ_pylong.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/ZZ_pylong.cpp\ng++ -o src/ntl_wrap.pic.o -c -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/NTL -Iinclude src/ntl_wrap.cpp\nIn file included from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/Python.h:8,\n                 from include/ntl_wrap.h:32,\n                 from src/ntl_wrap.cpp:5:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/pyconfig.h:1004:1: warning: \"_FILE_OFFSET_BITS\" redefined\nIn file included from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/wchar.h:20,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/cwchar:47,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/bits/postypes.h:42,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/iosfwd:42,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ios:39,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ostream:40,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/iostream:40,\n                 from src/ntl_wrap.cpp:1:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/sys/feature_tests.h:197:1: warning: this is the location of the previous definition\nIn file included from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/Python.h:8,\n                 from include/ntl_wrap.h:32,\n                 from src/ntl_wrap.cpp:5:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/pyconfig.h:1019:1: warning: \"_POSIX_C_SOURCE\" redefined\nIn file included from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/wchar.h:20,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/cwchar:47,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/bits/postypes.h:42,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/iosfwd:42,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ios:39,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/ostream:40,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/../../../../include/c++/4.4.1/iostream:40,\n                 from src/ntl_wrap.cpp:1:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/sys/feature_tests.h:275:1: warning: this is the location of the previous definition\ng++ -o libcsage.so -shared src/convert.pic.o src/interrupt.pic.o src/mpn_pylong.pic.o src/mpz_pylong.pic.o src/mpz_longlong.pic.o src/stdsage.pic.o src/gmp_globals.pic.o src/ZZ_pylong.pic.o src/ntl_wrap.pic.o -L/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/lib -lntl -lgmp -lpari\nwarning: /rootpool2/local/kirkby/sage-4.3.1.alpha1/devel/sage-main/sage/symbolic/../libs/ginac/decl.pxi:113:33: Function signature does not match previous declaration\nwarning: /rootpool2/local/kirkby/sage-4.3.1.alpha1/devel/sage-main/sage/symbolic/../libs/ginac/decl.pxi:114:29: Function signature does not match previous declaration\nwarning: /rootpool2/local/kirkby/sage-4.3.1.alpha1/devel/sage-main/sage/symbolic/../libs/ginac/decl.pxi:115:18: Function signature does not match previous declaration\nwarning: /rootpool2/local/kirkby/sage-4.3.1.alpha1/devel/sage-main/sage/symbolic/../libs/ginac/decl.pxi:206:24: Function signature does not match previous declaration\nwarning: /rootpool2/local/kirkby/sage-4.3.1.alpha1/devel/sage-main/sage/symbolic/../libs/ginac/decl.pxi:322:60: Function signature does not match previous declaration\nUpdating Cython code....\nBuilding modified file sage/symbolic/constants_c.pyx.\npython `which cython` --embed-positions --directive cdivision=True -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/devel/sage-main -o sage/symbolic/constants_c.cpp sage/symbolic/constants_c.pyx\nsage/symbolic/constants_c.pyx --> /rootpool2/local/kirkby/sage-4.3.1.alpha1/local//lib/python/site-packages//sage/symbolic/constants_c.pyx\nTime to execute 1 commands: 5.11293005943 seconds\nFinished compiling Cython code (time = 8.45891094208 seconds)\nrunning install\nrunning build\nrunning build_py\ncopying sage/symbolic/constants.py -> build/lib.solaris-2.10-sun4v-2.6/sage/symbolic\nrunning build_ext\nbuilding 'sage.schemes.elliptic_curves.descent_two_isogeny' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/FLINT/ -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -c sage/schemes/elliptic_curves/descent_two_isogeny.c -o build/temp.solaris-2.10-sun4v-2.6/sage/schemes/elliptic_curves/descent_two_isogeny.o -std=c99 -w\nIn file included from /usr/include/limits.h:18,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/limits.h:122,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/syslimits.h:7,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/limits.h:11,\n                 from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/Python.h:19,\n                 from sage/schemes/elliptic_curves/descent_two_isogeny.c:4:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/sys/feature_tests.h:341:2: error: #error \"Compiler or options invalid for pre-UNIX 03 X/Open applications     and pre-2001 POSIX applications\"\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n\n\nreal    0m49.907s\nuser    0m38.843s\nsys     0m8.405s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal    2m10.215s\nuser    1m41.154s\nsys     0m23.024s\nsage: An error occurred while installing sage-4.3.1.alpha1 \n```\n\n\n == Possible reasons ==\n#6583 could possibly be the reason, but I am probably mistaken. The changes were committed only recently, which makes me think it might be the problem. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7867\n\n",
     "created_at": "2010-01-07T07:25:19Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "GCC reports incorrect flags compiling descent_two_isogeny.c on Solaris 10",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7867",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -204,15 +203,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7867
 
 ---
 
-archive/issue_comments_068213.json:
+archive/issue_comments_068096.json:
 ```json
 {
     "body": "The last option on the gcc command line '-w' is there to suppress all warnings. (**A really really bad idea IMHO**). If I remove that horrid -w option, some more warnings are shown. Whether these aid in solving the problem I do not know, but they do indicate a lot of potential problems are being masked. This unfortunately is quite common in Sage, with numerous bits of code using all sorts of tricks to hide warning messages.  \n\n\n```\nsage subshell$ \n/rootpool2/local/kirkby/sage-4.3.1.alpha1\nsage subshell$ \n/rootpool2/local/kirkby/sage-4.3.1.alpha1\nsage subshell$ gcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/FLINT/ -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/csage -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/devel//sage/sage/ext -I/rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6 -c sage/schemes/elliptic_curves/descent_two_isogeny.c -o build/temp.solaris-2.10-sun4v-2.6/sage/schemes/elliptic_curves/descent_two_isogeny.o -std=c99 \nIn file included from /usr/include/limits.h:18,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/limits.h:122,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/syslimits.h:7,\n                 from /usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/limits.h:11,\n                 from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local/include/python2.6/Python.h:19,\n                 from sage/schemes/elliptic_curves/descent_two_isogeny.c:4:\n/usr/local/gcc-4.4.1-sun-linker/bin/../lib/gcc/sparc-sun-solaris2.10/4.4.1/include-fixed/sys/feature_tests.h:341:2: error: #error \"Compiler or options invalid for pre-UNIX 03 X/Open applications      and pre-2001 POSIX applications\"\nIn file included from sage/schemes/elliptic_curves/descent_two_isogeny.c:148:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/csage/ntl_wrap.h:142: warning: function declaration isn\u2019t a prototype\nIn file included from sage/schemes/elliptic_curves/descent_two_isogeny.c:148:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/csage/ntl_wrap.h:310: warning: \u2018struct GF2X_c\u2019 declared inside parameter list\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/csage/ntl_wrap.h:310: warning: its scope is only this definition or declaration, which is probably not what you want\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/csage/ntl_wrap.h:319: warning: \u2018struct GF2E\u2019 declared inside parameter list\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/csage/ntl_wrap.h:327: warning: \u2018struct GF2\u2019 declared inside parameter list\nIn file included from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/fmpz.h:36,\n                 from sage/schemes/elliptic_curves/descent_two_isogeny.c:150:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/memory-manager.h:41: warning: function declaration isn\u2019t a prototype\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/memory-manager.h:43: warning: function declaration isn\u2019t a prototype\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/memory-manager.h:45: warning: function declaration isn\u2019t a prototype\nIn file included from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/fmpz.h:38,\n                 from sage/schemes/elliptic_curves/descent_two_isogeny.c:150:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/long_extras.h:287: warning: function declaration isn\u2019t a prototype\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/long_extras.h:288: warning: function declaration isn\u2019t a prototype\nIn file included from /rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/fmpz.h:39,\n                 from sage/schemes/elliptic_curves/descent_two_isogeny.c:150:\n/rootpool2/local/kirkby/sage-4.3.1.alpha1/local//include/FLINT/zn_poly/src/zn_poly.h:47: warning: function declaration isn\u2019t a prototype\n/rootpool2/local/kirkby/sage-4.3.1.alpha1\nsage subshell$ \n```\n",
     "created_at": "2010-01-07T08:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68213",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68096",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -260,15 +259,15 @@ sage subshell$
 
 ---
 
-archive/issue_comments_068214.json:
+archive/issue_comments_068097.json:
 ```json
 {
     "body": "Based on random googling, I'd suspect the flag `-std=c99`, which is required since the file depends on FLINT. This thread* seems to suggest replacing that flag with `-xc99`. Other threads suggest adding `-xc99=%none`: this flag may be required because it is trying to link in ratpoints, and is the first thing in Sage to try to do so. See this thread^ for more details.\n\n* - http://www.mathworks.com/support/solutions/en/data/1-14ZQS4/index.html?solution=1-14ZQS4\n\n^ - http://mail.python.org/pipermail/python-bugs-list/2005-September/030452.html\n\nIn particular, the relevant part of limits.h says\n\n```\n/*\n * It is invalid to compile an XPG3, XPG4, XPG4v2, or XPG5 application\n * using c99.  The same is true for POSIX.1-1990, POSIX.2-1992, POSIX.1b,\n * and POSIX.1c applications. Likewise, it is invalid to compile an XPG6\n * or a POSIX.1-2001 application with anything other than a c99 or later\n * compiler.  Therefore, we force an error in both cases.\n */\n```\n\n\nThis is where my understanding reaches its boundaries, but maybe I've said something helpful to someone. The ratpoints code is fairly old, and it wouldn't surprise me if the above comment was relevant.",
     "created_at": "2010-02-10T01:12:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68214",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68097",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -297,15 +296,15 @@ This is where my understanding reaches its boundaries, but maybe I've said somet
 
 ---
 
-archive/issue_comments_068215.json:
+archive/issue_comments_068098.json:
 ```json
 {
     "body": "Actually, this could bode poorly: if ratpoints can't be compiled with c99 but FLINT must be, how to compile descent_(...).c, which depends on both?",
     "created_at": "2010-02-10T01:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68215",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68098",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -315,15 +314,15 @@ Actually, this could bode poorly: if ratpoints can't be compiled with c99 but FL
 
 ---
 
-archive/issue_comments_068216.json:
+archive/issue_comments_068099.json:
 ```json
 {
     "body": "This is really **excellent** news that Minh has tracked this down. \n\nFirst, it should be noted that the Mathworks link published is about the Sun compiler, The compiler option -xc99=none (without the % sign), is a Sun compiler flag. I've no idea where the $ sign comes from. \n\nThis does not look as bad as perhaps Robert thinks. I need to double check this, but it would appear ratpoints will build on Solaris SPARC with -std=c99 added, so if the only issue is that, then I believe it is a trivial fix. However, if building ratpoints with this option does not allow this to work, and we can find no fix, then we are in a more serious situation. \n\nDave",
     "created_at": "2010-02-10T14:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68216",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68099",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -339,15 +338,15 @@ Dave
 
 ---
 
-archive/issue_comments_068217.json:
+archive/issue_comments_068100.json:
 ```json
 {
     "body": "I haven't verified this at all, but this webpage suggests that a `-D_XOPEN_SOURCE=600` compile flag might be needed in some cases when using `-std=c99` on Solaris: http://wiki.netbsd.se/index.php/Feature_test_macros",
     "created_at": "2010-02-22T13:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68217",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68100",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -357,15 +356,15 @@ I haven't verified this at all, but this webpage suggests that a `-D_XOPEN_SOURC
 
 ---
 
-archive/issue_comments_068218.json:
+archive/issue_comments_068101.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2010-02-24T20:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68218",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68101",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -375,15 +374,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_068219.json:
+archive/issue_comments_068102.json:
 ```json
 {
     "body": "I've tried building ratpoints with\n\n* -D_XOPEN_SOURCE=600\n* -std=c99\n* -std=c99 -D_XOPEN_SOURCE=600\n\nAll 3 allow ratpoints to build, but none of them allow the Sage library to build. \n\nRatpoints also currently builds with the option \n\n\n```\n-DUSE_SSE\n```\n \n\non SPARC, which is a bit silly, as the SPARC processor does not support SSE instructions. Removing that (as is done on OS X already), still does not allow the Sage library to build. \n\nRatpoints seems to build with pretty much any options I throw at it - getting it work with the Sage library is not proving so easy. \n\nI have not tried adding -D_XOPEN_SOURCE=600 to the Sage library. I do not know how to do this. \n\nDave",
     "created_at": "2010-02-24T20:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68219",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68102",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -415,15 +414,15 @@ Dave
 
 ---
 
-archive/issue_comments_068220.json:
+archive/issue_comments_068103.json:
 ```json
 {
     "body": "What errors do you get when building the Sage library?",
     "created_at": "2010-02-24T20:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68220",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68103",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -433,15 +432,15 @@ What errors do you get when building the Sage library?
 
 ---
 
-archive/issue_comments_068221.json:
+archive/issue_comments_068104.json:
 ```json
 {
     "body": "The error message is shown when I created the ticket. However, you need to use the horizontal scroll facility in trac to see it, as it is on the far right. \n\nDave",
     "created_at": "2010-02-24T21:05:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68221",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68104",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -453,15 +452,15 @@ Dave
 
 ---
 
-archive/issue_comments_068222.json:
+archive/issue_comments_068105.json:
 ```json
 {
     "body": "Ah, I mistakenly thought that was already where you were adding the `-D_XOPEN_SOURCE=600` since that was the error you reported.\n\nThe patch at #6583 adds the `sage.schemes.elliptic_curves.descent_two_isogeny` extension that's failing with a `-std=c99` flag. (Right at the top of the patch at http://trac.sagemath.org/sage_trac/attachment/ticket/6583/trac_6583-rebase.patch .) That would be the place to add the extra `-D_XOPEN_SOURCE=600` option (if it works...), I think.",
     "created_at": "2010-02-24T21:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68222",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68105",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -473,15 +472,15 @@ The patch at #6583 adds the `sage.schemes.elliptic_curves.descent_two_isogeny` e
 
 ---
 
-archive/issue_comments_068223.json:
+archive/issue_comments_068106.json:
 ```json
 {
     "body": "Thanks to Jaap Spies, who found a solution on the python web site, this has been solved by a small patch to python. \n\nThe patch itself only affects Solaris, but to make double sure, you can see I only copied the patch on Solaris. So there is no fear of it breaking on any operating system. \n\nUnfortunately, the small patch needs a revised configure.in, and a revised configure script, as well as the directory autoconf makes (sometimes copying the configure script alone is not sufficient). \n\nAs such, the Mercurial patch is 1 MB in size. I've attached it here, but you can't view it on trac due to its size. \n\nI've also attached the smaller patch downloaded from the python web site. \n\nAll files can be found here. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/python-2.6.4.p6/",
     "created_at": "2010-02-28T22:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68223",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68106",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -503,15 +502,15 @@ http://boxen.math.washington.edu/home/kirkby/portability/python-2.6.4.p6/
 
 ---
 
-archive/issue_comments_068224.json:
+archive/issue_comments_068107.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-28T22:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68224",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68107",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -521,15 +520,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_068225.json:
+archive/issue_comments_068108.json:
 ```json
 {
     "body": "Replying to [comment:11 drkirkby]:\n> All files can be found here. \n> \n> http://boxen.math.washington.edu/home/kirkby/portability/python-2.6.4.p6/\n\nI see a possible conflict between the current ticket and #7761. Ticket #7761 already has a positive review and its updated Python spkg is `python-2.6.4.p6.spkg`. However, the current ticket (i.e. #7867) also has an updated Python spkg `python-2.6.4.p6.spkg`. Is it possible for you to base your updated Python spkg on top of that at #7761?",
     "created_at": "2010-03-02T02:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68225",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68108",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -544,15 +543,15 @@ I see a possible conflict between the current ticket and #7761. Ticket #7761 alr
 
 ---
 
-archive/issue_comments_068226.json:
+archive/issue_comments_068109.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-03-02T02:47:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68226",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68109",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -562,15 +561,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_068227.json:
+archive/issue_comments_068110.json:
 ```json
 {
     "body": "Replying to [comment:13 mvngu]:\n> ... already has a ... `python-2.6.4.p6.spkg` ...\n\nGood catch, Minh!",
     "created_at": "2010-03-02T03:01:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68227",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68110",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -583,15 +582,15 @@ Good catch, Minh!
 
 ---
 
-archive/issue_comments_068228.json:
+archive/issue_comments_068111.json:
 ```json
 {
     "body": "Updated Mercurial patch to avoid clash with 7761",
     "created_at": "2010-03-02T09:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68228",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68111",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -601,15 +600,15 @@ Updated Mercurial patch to avoid clash with 7761
 
 ---
 
-archive/issue_comments_068229.json:
+archive/issue_comments_068112.json:
 ```json
 {
     "body": "Attachment [allow-python-modules-to-build-on-Solaris.patch](tarball://root/attachments/some-uuid/ticket7867/allow-python-modules-to-build-on-Solaris.patch) by drkirkby created at 2010-03-02 09:10:07\n\nUpdated spkg-install to avoid clash with 7761",
     "created_at": "2010-03-02T09:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68229",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68112",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -621,15 +620,15 @@ Updated spkg-install to avoid clash with 7761
 
 ---
 
-archive/issue_comments_068230.json:
+archive/issue_comments_068113.json:
 ```json
 {
     "body": "Attachment [SPKG.txt](tarball://root/attachments/some-uuid/ticket7867/SPKG.txt) by drkirkby created at 2010-03-02 09:11:22\n\nUpdated SPKG.txt  patch to avoid clash with 7761",
     "created_at": "2010-03-02T09:11:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68230",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68113",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -641,15 +640,15 @@ Updated SPKG.txt  patch to avoid clash with 7761
 
 ---
 
-archive/issue_comments_068231.json:
+archive/issue_comments_068114.json:
 ```json
 {
     "body": "Patch downloaded from Python web site - date changed to today",
     "created_at": "2010-03-02T09:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68231",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68114",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -659,15 +658,15 @@ Patch downloaded from Python web site - date changed to today
 
 ---
 
-archive/issue_comments_068232.json:
+archive/issue_comments_068115.json:
 ```json
 {
     "body": "Attachment [configure.in.Solaris.patch](tarball://root/attachments/some-uuid/ticket7867/configure.in.Solaris.patch) by drkirkby created at 2010-03-02 09:49:15\n\nThank you Minh. \n\nI've created a .p7, based on the ticket at #7761. It may be found here. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/python-2.6.4.p7/python-2.6.4.p7.spkg\n\nI've updated all the files on this ticket. \n\nDespite the fact patch downloaded from the Python web site is unchanged, I decided to 'touch' it to bring the date upto date, as it was previously dated much earlier. I thought it might be a bit confusing if someone looks in the patches directory. I reattached it to this ticket, which was probably unnecessary, but can do no harm. As such, it should",
     "created_at": "2010-03-02T09:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68232",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68115",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -687,15 +686,15 @@ Despite the fact patch downloaded from the Python web site is unchanged, I decid
 
 ---
 
-archive/issue_comments_068233.json:
+archive/issue_comments_068116.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-02T09:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68233",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68116",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -705,15 +704,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_068234.json:
+archive/issue_comments_068117.json:
 ```json
 {
     "body": "I see no problems with other architectures (tested on Fedora 11 and 12), as it only effects SunOS.\n\nThis is a great step forward on the Solaris port!\n\nOn open Solaris I now could build matplotlib for instance.\n\nSo positive review.\n\nJaap",
     "created_at": "2010-03-03T16:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68234",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68117",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -731,15 +730,15 @@ Jaap
 
 ---
 
-archive/issue_comments_068235.json:
+archive/issue_comments_068118.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-03T16:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68235",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68118",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -749,15 +748,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_068236.json:
+archive/issue_comments_068119.json:
 ```json
 {
     "body": "#8440 sorts out another issue with Python. That ticket depends on this one.",
     "created_at": "2010-03-05T03:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68236",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68119",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -767,15 +766,15 @@ archive/issue_comments_068236.json:
 
 ---
 
-archive/issue_comments_068237.json:
+archive/issue_comments_068120.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-06T08:18:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68237",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7867#issuecomment-68120",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

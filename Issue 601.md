@@ -6,15 +6,14 @@ archive/issues_000601.json:
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/601\n\n",
     "created_at": "2007-09-06T19:03:23Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "bug -- caused by fixing#549 -- now there is too much space around output.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/601",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/601
 
 ---
 
-archive/issue_comments_003103.json:
+archive/issue_comments_003091.json:
 ```json
 {
     "body": "fixed by patch:\n\n[http://sage.math.washington.edu/home/boothby/my_patches/notebook601.hg](http://sage.math.washington.edu/home/boothby/my_patches/notebook601.hg)",
     "created_at": "2007-09-06T19:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/601",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/601#issuecomment-3103",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/601#issuecomment-3091",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -49,15 +48,15 @@ fixed by patch:
 
 ---
 
-archive/issue_comments_003104.json:
+archive/issue_comments_003092.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-06T19:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/601",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/601#issuecomment-3104",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/601#issuecomment-3092",
+    "user": "https://github.com/williamstein"
 }
 ```
 

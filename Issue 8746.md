@@ -6,15 +6,14 @@ archive/issues_008746.json:
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: Comparison posets elements\n\nThis is due to comparing the parent which can indeed be very slow. However most of the time when comparing `x` and `y`, the two parent are identical and are better compared with `is`. Here is the results:\n\nBefore the patch:\n\n\n```\nsage: P = Posets.ChainPoset(30)\nsage: %time len([x == y for x in P for y in P])\nCPU times: user 18.05 s, sys: 0.04 s, total: 18.09 s\nWall time: 18.25 s\n900\n```\n\nAfter the patch:\n\n```\nsage: P = Posets.ChainPoset(30)\nsage: %time len([x == y for x in P for y in P])\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.02 s\n900\n```\n\n\nCheers,\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8746\n\n",
     "created_at": "2010-04-22T19:45:56Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "Equality of posets element is very slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8746",
-    "user": "@hivert"
+    "user": "https://github.com/hivert"
 }
 ```
 Assignee: sage-combinat
@@ -60,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8746
 
 ---
 
-archive/issue_comments_080019.json:
+archive/issue_comments_079889.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-22T19:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-80019",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-79889",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -78,15 +77,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080020.json:
+archive/issue_comments_079890.json:
 ```json
 {
     "body": "Attachment [trac_8746-posets__eq__speedup-fh.patch](tarball://root/attachments/some-uuid/ticket8746/trac_8746-posets__eq__speedup-fh.patch) by @novoselt created at 2010-04-22 22:05:05\n\nLooks good to me and passes all doctests.",
     "created_at": "2010-04-22T22:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-80020",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-79890",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -98,15 +97,15 @@ Looks good to me and passes all doctests.
 
 ---
 
-archive/issue_comments_080021.json:
+archive/issue_comments_079891.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-22T22:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-80021",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-79891",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -116,15 +115,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080022.json:
+archive/issue_comments_079892.json:
 ```json
 {
     "body": "Replying to [comment:2 novoselt]:\n> Looks good to me and passes all doctests.\n\nThanks a lot for the very quick review !",
     "created_at": "2010-04-22T22:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-80022",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-79892",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -137,15 +136,15 @@ Thanks a lot for the very quick review !
 
 ---
 
-archive/issue_comments_080023.json:
+archive/issue_comments_079893.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2010-04-26T12:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-80023",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-79893",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -155,15 +154,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_080024.json:
+archive/issue_comments_079894.json:
 ```json
 {
     "body": "Remove assignee sage-combinat.",
     "created_at": "2010-04-26T12:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-80024",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-79894",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -173,15 +172,15 @@ Remove assignee sage-combinat.
 
 ---
 
-archive/issue_comments_080025.json:
+archive/issue_comments_079895.json:
 ```json
 {
     "body": "I've sent the following message to sage-release and sage-devel but it doesn't seems to pass through\n\n```\n> This release candidate for Sage 4.4 closed 19 tickets (on top of\n> 4.4.alpha1). On trac, these tickets were labeled as \"merged into\n> 4.4.alpha2\", but then I decided that alpha2 should be the same as rc0.\n\nCool ! So there is a good chance that we'll have 4.4 for sage 20.5 next week\nat Toronto ! This is perfect...\n\nI'm however embarrassed to have the following question/request:\n - how do we decide to make some ticket blocker for a release. Is it possible\nat this stage to make #8746 blocker for 4.4. Here is the rationale:\n\nThe Posets library (by Franco Saliola) allows to deals with small Partially\nOrdered SETS. This kind of structure is extremely useful an common in\ncombinatorics. Usually we play with one poset at a time, seeking for\nparticular property of one of them. For my research I had to play with many of\nthem and I discovered that the equality was (very fast) but completely broken,\npreventing them to be used eg. as key in dict. This was fixed in #7438. We\nsolved this together with Nicolas Borie (which is a student of Nicolas Thi\u00e9ry)\nand this was merged in alpha0. However we didn't realize that doing this we\nslowed of the most common usage that is comparing element in a single poset by\nseveral order of magnitude. I take the full blame for this mistake which I\nconsider as an important regression. #8746 solve this common use issue.\n\nSo is there still possible to merge #8746 while having 4.4 out before sage\ndays 20.5 ? I realize that I should have marked this ticket as critical or\nblocker at its creation but I don't know how this is decided so that I never\nchange this field... Many Apologies for this late request.\n```\n",
     "created_at": "2010-04-26T12:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-80025",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-79895",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -222,15 +221,15 @@ change this field... Many Apologies for this late request.
 
 ---
 
-archive/issue_comments_080026.json:
+archive/issue_comments_079896.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-29T05:22:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8746",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-80026",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8746#issuecomment-79896",
+    "user": "https://github.com/williamstein"
 }
 ```
 

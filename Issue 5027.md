@@ -6,15 +6,14 @@ archive/issues_005027.json:
     "body": "Assignee: tbd\n\nKeywords: groebner, toy, toy_d_basis\n\nI get this failure on an intel mac:\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"\n**********************************************************************\nFile \".../devel/sage/sage/rings/polynomial/toy_d_basis.py\", line 91:\n    sage: d_basis(I)\nExpected:\n    [x + 170269749119, y + 2149906854, z + 735710619426, 282687803443]\nGot:\n    [x + 170269749119, y + 2149906854, z + 170335012540, 282687803443]\n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5027\n\n",
     "created_at": "2009-01-19T16:13:02Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "doctest failure for rings/polynomial/toy_d_basis.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5027",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: tbd
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5027
 
 ---
 
-archive/issue_comments_038294.json:
+archive/issue_comments_038222.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-04T14:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38294",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38222",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -63,15 +62,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_038295.json:
+archive/issue_comments_038223.json:
 ```json
 {
     "body": "After chatting with malb we decided to dot out the constant since it is the same GBasis.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-04T14:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38295",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38223",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Michael
 
 ---
 
-archive/issue_comments_038296.json:
+archive/issue_comments_038224.json:
 ```json
 {
     "body": "Changing assignee from tbd to mabshoff.",
     "created_at": "2009-02-04T14:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38296",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38224",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing assignee from tbd to mabshoff.
 
 ---
 
-archive/issue_comments_038297.json:
+archive/issue_comments_038225.json:
 ```json
 {
     "body": "Attachment [trac_5027.patch](tarball://root/attachments/some-uuid/ticket5027/trac_5027.patch) by mabshoff created at 2009-02-05 13:07:58",
     "created_at": "2009-02-05T13:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38297",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38225",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +120,15 @@ Attachment [trac_5027.patch](tarball://root/attachments/some-uuid/ticket5027/tra
 
 ---
 
-archive/issue_comments_038298.json:
+archive/issue_comments_038226.json:
 ```json
 {
     "body": "After applying the patch:\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"  \n\t [9.5 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 9.5 seconds\n[jaap@paix sage-3.3.alpha4]$ \n\n```\n\n\nOn fedora 9, 32 bits.\n\nJaap",
     "created_at": "2009-02-05T15:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38298",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38226",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -156,15 +155,15 @@ Jaap
 
 ---
 
-archive/issue_comments_038299.json:
+archive/issue_comments_038227.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-05T23:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38299",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38227",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -178,15 +177,15 @@ Michael
 
 ---
 
-archive/issue_comments_038300.json:
+archive/issue_comments_038228.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-05T23:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38300",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5027#issuecomment-38228",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

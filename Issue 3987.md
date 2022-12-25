@@ -6,15 +6,14 @@ archive/issues_003987.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3987\n\n",
     "created_at": "2008-08-29T06:01:57Z",
     "labels": [
-        "number theory",
-        "minor",
-        "enhancement"
+        "component: number theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch; needs review] interfaces -- add algorithm='magma' for polynomial factor and galois_group commands",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3987",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3987
 
 ---
 
-archive/issue_comments_028672.json:
+archive/issue_comments_028614.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-08-29T06:06:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3987",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3987#issuecomment-28672",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3987#issuecomment-28614",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -47,15 +46,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_028673.json:
+archive/issue_comments_028615.json:
 ```json
 {
     "body": "This is a dupe of #3988.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-29T06:06:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3987",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3987#issuecomment-28673",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3987#issuecomment-28615",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Michael
 
 ---
 
-archive/issue_comments_028674.json:
+archive/issue_comments_028616.json:
 ```json
 {
     "body": "Gees, I still can't use trac correctly after this long!  I really hope trac 11 has a fix for stupidly making dup tickets by accident. :-)",
     "created_at": "2008-08-29T10:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3987",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3987#issuecomment-28674",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3987#issuecomment-28616",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_009058.json:
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  mvngu\n\nIf one is looking for H in G, then we may assume the minimum degree of G is larger than the minimum degree of H. We can assume the same for the complement when computing an induced subgraph. Take care of directed graphs.\n\nrequires #8922\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/9058\n\n",
     "created_at": "2010-05-26T22:30:27Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Compute cores to improve subgraph_search",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9058",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9058
 
 ---
 
-archive/issue_comments_084046.json:
+archive/issue_comments_083910.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-06-06T11:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84046",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-83910",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -53,15 +51,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_084047.json:
+archive/issue_comments_083911.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-08-02T15:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84047",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-83911",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -71,15 +69,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_084048.json:
+archive/issue_comments_083912.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-10-06T12:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84048",
-    "user": "lsampaio"
+    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-83912",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lsampaio"
 }
 ```
 
@@ -89,15 +87,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_084049.json:
+archive/issue_comments_083913.json:
 ```json
 {
     "body": "Attachment [trac_9058.patch](tarball://root/attachments/some-uuid/ticket9058/trac_9058.patch) by lsampaio created at 2010-10-06 12:48:59\n\nI verified the patch and I believe it is ok to be merged.",
     "created_at": "2010-10-06T12:48:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84049",
-    "user": "lsampaio"
+    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-83913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lsampaio"
 }
 ```
 
@@ -109,15 +107,15 @@ I verified the patch and I believe it is ok to be merged.
 
 ---
 
-archive/issue_comments_084050.json:
+archive/issue_comments_083914.json:
 ```json
 {
     "body": "cool ! Thanks `;-)`\n\nNathann",
     "created_at": "2010-10-06T12:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84050",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-83914",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -129,15 +127,15 @@ Nathann
 
 ---
 
-archive/issue_comments_084051.json:
+archive/issue_comments_083915.json:
 ```json
 {
     "body": "Don't forget to update the author and reviewer fields.  lsampaio, could you add yourself to [the account name-real name map](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames)?",
     "created_at": "2010-10-08T21:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84051",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-83915",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -147,15 +145,15 @@ Don't forget to update the author and reviewer fields.  lsampaio, could you add 
 
 ---
 
-archive/issue_comments_084052.json:
+archive/issue_comments_083916.json:
 ```json
 {
     "body": "ok, I did it =)\nthank you for pointing this!",
     "created_at": "2010-10-08T21:49:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84052",
-    "user": "lsampaio"
+    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-83916",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lsampaio"
 }
 ```
 
@@ -166,15 +164,15 @@ thank you for pointing this!
 
 ---
 
-archive/issue_comments_084053.json:
+archive/issue_comments_083917.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-10-08T22:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-84053",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9058#issuecomment-83917",
+    "user": "https://github.com/qed777"
 }
 ```
 

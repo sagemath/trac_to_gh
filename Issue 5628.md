@@ -6,7 +6,7 @@ archive/issues_005628.json:
     "body": "Assignee: @williamstein\n\n\n```\nOn Sat, Mar 28, 2009 at 9:05 PM, Gonzalo Tornaria:\n>\n> I did an upgrade from 3.4 as follows:\n>\n> 1. sage -br main  ---> switch to main, which is CLEAN\n> 2. sage -upgrade\n> http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.1/sage-3.4.1.alpha0\n> 3. once that was finished, I pulled  the new changes into my sage-brandt branch\n> 4. applied the rebased 5520 + my tiny patch\n> 5. sage -br brandt\n>\n> But now, \"sage -br main\" (which is now clean 3.4.1.alpha0) causes the\n> same issue.\n>\n> Gonzalo\n\nJust delete \n   local/lib/sage-flags.txt\n\nAlso, I've opened a blocker ticket about this, since everybody who upgrades will run into exactly the same problem.  \n\nThe problem is that the new version of the script that checks the flags doesn't see sse4_1 anymore (nothing in Sage specifically uses that), but it's still in your old sage-flags.txt file.  Two possible solutions:\n   (1) delete sage-flags.txt as part of \"sage -upgrade\"\n   (2) make it so sse4_1 is specifically ignored.\n\nI like (1). \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5628\n\n",
     "created_at": "2009-03-29T03:29:59Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005628.json:
     "title": "a little sage-flags.txt issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5628",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -58,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5628
 
 ---
 
-archive/issue_comments_043948.json:
+archive/issue_comments_043863.json:
 ```json
 {
     "body": "Attachment [trac_5628-scripts.patch](tarball://root/attachments/some-uuid/ticket5628/trac_5628-scripts.patch) by @williamstein created at 2009-03-29 03:32:24",
     "created_at": "2009-03-29T03:32:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43948",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43863",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -76,15 +76,15 @@ Attachment [trac_5628-scripts.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_043949.json:
+archive/issue_comments_043864.json:
 ```json
 {
     "body": "The issue with this patch is that the `sage-flags.txt` file will not be regenerated unless sage install directory changes (because `write_flags_file()` is only called from within `install_moved()`.\n\nMaybe the flags file should also be created from the `check_processor_flags()` function. But then, this only works if sage is run at least once after an upgrade.\n\nOtherwise, doing `sage -upgrade` followed by `sage -bdist` ends up with a sage binary with no `sage-flags.txt`, defeating the purpose of the flags file.",
     "created_at": "2009-03-29T04:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43949",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43864",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -98,15 +98,15 @@ Otherwise, doing `sage -upgrade` followed by `sage -bdist` ends up with a sage b
 
 ---
 
-archive/issue_comments_043950.json:
+archive/issue_comments_043865.json:
 ```json
 {
     "body": "I have an alternative fix:\n\n```\ndiff -r 804879ae0134 sage-location\n--- a/sage-location     Thu Mar 26 16:43:48 2009 -0700\n+++ b/sage-location     Sat Mar 28 22:32:50 2009 -0700\n@@ -77,7 +77,7 @@\n     if not os.path.exists(flags_file): return\n     # We check that the processor flags of the original build are a\n     # subset of the new machine.  If not, we print a massive warning.\n-    X = set(open(flags_file).read().split())\n+    X = set(open(flags_file).read().split()).intersection(FLAGS)\n     Y = set(get_flags_info().split())\n     if not X.issubset(Y):\n         print \"\"\n```\n\n\nThis makes it so that only the flags listed in FLAGS are relevant for `check_processor_flags()`. Thus, after an upgrade, the flag `sse4_1` will still be in the flags file, but it won't be required at runtime.",
     "created_at": "2009-03-29T04:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43950",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43865",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -134,15 +134,15 @@ This makes it so that only the flags listed in FLAGS are relevant for `check_pro
 
 ---
 
-archive/issue_comments_043951.json:
+archive/issue_comments_043866.json:
 ```json
 {
     "body": "I actually like Gonzalo's fix better than William's - not sure what to do about this yet.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-06T00:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43951",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43866",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -156,15 +156,15 @@ Michael
 
 ---
 
-archive/issue_comments_043952.json:
+archive/issue_comments_043867.json:
 ```json
 {
     "body": "I'm fine with either version.",
     "created_at": "2009-04-06T17:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43952",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43867",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -174,15 +174,15 @@ I'm fine with either version.
 
 ---
 
-archive/issue_comments_043953.json:
+archive/issue_comments_043868.json:
 ```json
 {
     "body": "This is a 3.4.1 blocker.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-06T18:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43953",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43868",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -196,15 +196,15 @@ Michael
 
 ---
 
-archive/issue_comments_043954.json:
+archive/issue_comments_043869.json:
 ```json
 {
     "body": "Attachment [trac_5628.patch](tarball://root/attachments/some-uuid/ticket5628/trac_5628.patch) by mabshoff created at 2009-04-11 01:48:51\n\nPositive review for trac_5628.patch. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-11T01:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43954",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43869",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -220,15 +220,15 @@ Michael
 
 ---
 
-archive/issue_comments_043955.json:
+archive/issue_comments_043870.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-11T01:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43955",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43870",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -238,15 +238,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_043956.json:
+archive/issue_comments_043871.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-11T01:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43956",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5628#issuecomment-43871",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

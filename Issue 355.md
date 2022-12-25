@@ -6,14 +6,13 @@ archive/issues_000355.json:
     "body": "Assignee: @williamstein\n\nOffending code:\n\n```\nR = ZZ.quo(6*ZZ)\nS.<x> = R['x']\np = x^2-1\nprint p.roots()\n```\n\n\n\n```\nTraceback (most recent call last):        R = ZZ.quo(i*ZZ)\n  File \"/home/boothby/sage_notebook/worksheets/hw4/\", line 5, in <module>\n    \n  File \"polynomial_element.pyx\", line 1555, in polynomial_element.Polynomial.roots\n  File \"polynomial_element.pyx\", line 989, in polynomial_element.Polynomial.factor\n  File \"gen.pyx\", line 6003, in gen._pari_trap\ngen.PariError:  (8)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/355\n\n",
     "created_at": "2007-04-22T18:45:38Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "title": "Pari error on finding roots of polynomials over Z/nZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/355",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: @williamstein
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/355
 
 ---
 
-archive/issue_comments_001719.json:
+archive/issue_comments_001713.json:
 ```json
 {
     "body": "Fixed.\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1180624938 25200\n# Node ID 9cd8b0dbab87eb163e83d04fef4f74ee82a0b273\n# Parent  17b01ba4388699829783c761034c51ae4e0f185a\nFix poly root finding mod n error.\n\ndiff -r 17b01ba43886 -r 9cd8b0dbab87 sage/rings/polynomial/polynomial_element.pyx\n--- a/sage/rings/polynomial/polynomial_element.pyx      Thu May 31 08:21:59 2007 -0700\n+++ b/sage/rings/polynomial/polynomial_element.pyx      Thu May 31 08:22:18 2007 -0700\n@@ -43,7 +43,7 @@ from sage.structure.factorization import\n from sage.structure.factorization import Factorization\n\n from sage.interfaces.all import singular as singular_default, is_SingularElement\n-from sage.libs.all import pari, pari_gen\n+from sage.libs.all import pari, pari_gen, PariError\n\n from sage.rings.real_mpfr import RealField, is_RealNumber, is_RealField\n RR = RealField()\n@@ -1131,7 +1131,10 @@ cdef class Polynomial(CommutativeAlgebra\n               sage.rings.integer_ring.is_IntegerRing(R) or \\\n               sage.rings.rational_field.is_RationalField(R):\n\n-            G = list(self._pari_('x').factor())\n+            try:\n+                G = list(self._pari_('x').factor())\n+            except PariError:\n+                raise NotImplementedError\n\n         elif is_NumberField(R) or is_FiniteField(R):\n\n@@ -1685,6 +1688,18 @@ cdef class Polynomial(CommutativeAlgebra\n             X^6 - 3*I*X^5 - X^5 + 3*I*X^4 - sqrt(2)*X^4 - 3*X^4 + 3*sqrt(2)*I*X^3 + I*X^3 + sqrt(2)*X^3 + 3*X^3 - 3*sqrt(2)*I*X^2 - I*X^2 + 3*sqrt(2)*X^2 - sqrt(2)*I*X - 3*sqrt(2)*X + sqrt(2)*I\n             sage: print f.roots()\n             [(I, 3), (-2^(1/4), 1), (2^(1/4), 1), (1, 1)]\n+\n+        An example where the base ring doesn't have a factorization algorithm (yet).  Note\n+        that this is currently done via nave enumeration, so could be very slow:\n+            sage: R = Integers(6)\n+            sage: S.<x> = R['x']\n+            sage: p = x^2-1\n+            sage: p.roots()\n+            Traceback (most recent call last):\n+            ...\n+            NotImplementedError: root finding with multiplicities for this polynomial not implemented (try the multiplicities=False option)\n+            sage: p.roots(multiplicities=False)\n+            [1, 5]\n         \"\"\"\n         seq = []\n\n@@ -1703,6 +1718,12 @@ cdef class Polynomial(CommutativeAlgebra\n         try:\n             rts = self.factor()\n         except NotImplementedError:\n+            if K.is_finite():\n+                if multiplicities:\n+                    raise NotImplementedError, \"root finding with multiplicities for this polynomial not implemented (try the multiplicities=False option)\"\n+                else:\n+                    return [a for a in K if not self(a)]\n+\n             raise NotImplementedError, \"root finding for this polynomial not implemented\"\n         for fac in rts:\n             g = fac[0]\n```\n",
     "created_at": "2007-05-31T15:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/355#issuecomment-1719",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/355#issuecomment-1713",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -134,15 +133,15 @@ diff -r 17b01ba43886 -r 9cd8b0dbab87 sage/rings/polynomial/polynomial_element.py
 
 ---
 
-archive/issue_comments_001720.json:
+archive/issue_comments_001714.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-05-31T15:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/355#issuecomment-1720",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/355#issuecomment-1714",
+    "user": "https://github.com/williamstein"
 }
 ```
 

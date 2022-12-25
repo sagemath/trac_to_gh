@@ -6,15 +6,14 @@ archive/issues_003575.json:
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3575\n\n",
     "created_at": "2008-07-06T22:04:22Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch; needs review] delete random crap from the bottom of complex_double.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3575",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3575
 
 ---
 
-archive/issue_comments_025252.json:
+archive/issue_comments_025202.json:
 ```json
 {
     "body": "Attachment [sage-3575.patch](tarball://root/attachments/some-uuid/ticket3575/sage-3575.patch) by @wjp created at 2008-07-06 22:06:57",
     "created_at": "2008-07-06T22:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3575#issuecomment-25252",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3575#issuecomment-25202",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [sage-3575.patch](tarball://root/attachments/some-uuid/ticket3575/sag
 
 ---
 
-archive/issue_comments_025253.json:
+archive/issue_comments_025203.json:
 ```json
 {
     "body": "In my merge tree somebody else already beat you to it and deleted the random crap:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.4.alpha2/devel/sage$ tail -n 10 sage/rings/complex_double.pyx\n        True    \n    \"\"\"\n    return _CDF   \n\nfrom sage.misc.parser import Parser\ncdef cdf_parser = Parser(float, float,  {\"I\" : _CDF.gen(), \"i\" : _CDF.gen()})\n\n\n\n#####\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-07-07T01:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3575#issuecomment-25253",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3575#issuecomment-25203",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -84,15 +83,15 @@ Michael
 
 ---
 
-archive/issue_comments_025254.json:
+archive/issue_comments_025204.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-07T01:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3575#issuecomment-25254",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3575#issuecomment-25204",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

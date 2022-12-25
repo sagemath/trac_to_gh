@@ -6,15 +6,14 @@ archive/issues_006055.json:
     "body": "Assignee: mabshoff\n\nCC:  david.kirkby@onetel.net\n\nThe top level README.txt has a few problems reguarding Solaris.\n\n1) It says:\n----------------------------\n  SOLARIS:\n     It is reportedly possible, but not recommended yet (see below).\n     A fully supported port is planned.\n----------------------------\n\nBut there is nothing below that. \n\n2) The OS is spelled as Solaris and SOLARIS. Makes searching more difficult. If you must use SOLARIS, then put 'Solaris' in a word close by. i.e, something like:\n\n----------------------------\n  SOLARIS:\n     It is reportedly possible to build Sage on Solaris, but not recommended yet (see below).\n     A fully supported port is planned.\n----------------------------\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6055\n\n",
     "created_at": "2009-05-17T08:38:17Z",
     "labels": [
-        "porting: Solaris",
-        "minor",
-        "enhancement"
+        "component: porting: solaris",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Top level README.txt is wrong reguarding Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6055",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: mabshoff
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6055
 
 ---
 
-archive/issue_comments_048223.json:
+archive/issue_comments_048132.json:
 ```json
 {
     "body": "Should I close this ticket as a \"duplicate\" of #9226?",
     "created_at": "2010-08-07T04:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6055",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6055#issuecomment-48223",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6055#issuecomment-48132",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -68,15 +67,15 @@ Should I close this ticket as a "duplicate" of #9226?
 
 ---
 
-archive/issue_comments_048224.json:
+archive/issue_comments_048133.json:
 ```json
 {
     "body": "Replying to [comment:3 mpatel]:\n> Should I close this ticket as a \"duplicate\" of #9226?\n\nThis should indeed be closed now. It can be considered fixed by #9226 in sage-4.5.2 , though I would not call it a duplicate, as #9226 was created long after this ticket. \n\nDave",
     "created_at": "2011-04-02T12:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6055",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6055#issuecomment-48224",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6055#issuecomment-48133",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -91,15 +90,15 @@ Dave
 
 ---
 
-archive/issue_comments_048225.json:
+archive/issue_comments_048134.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-04-05T15:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6055",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6055#issuecomment-48225",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6055#issuecomment-48134",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002511.json:
     "body": "Assignee: @williamstein\n\n\n```\nOn Thu, Mar 13, 2008 at 11:41 AM, Hector Villafuerte <hectorvd@gmail.com> wrote:\n> \n>  Hi,\n>  the docstring for animate gives the following example:\n>  \n>  sage: a = animate([sin(x + float(k)) for k in srange(0,4,0.3)],\n>  xmin=0, xmax=2*pi, figsize=[2,1])\n>  sage: a.show()\n>  \n>  \n>  Which fails on my brand new sage-2.10.3 with:\n>  \n>  Traceback (most recent call last):\n>  ...\n>  AttributeError: Unknown property xmin\n>  \n>  \n>  The following code gives the desired animation:\n>  \n>  sage: a = animate([plot(sin(x + float(k)), 0, pi) for k in\n>  srange(0,4,0.3)], xmin=0, xmax=2*pi, figsize=[2,1])\n>  sage: a.show()\n>  \n>  Question: is this a bug? i.e. should animate work as shown in it's\n>  docstring example?\n>  Just for completion, I also tried it on www.sagenb.org and got the same results.\n>  Best,\n\nYes, this is *definitely* a bug.  It wasn't caught because the docstrings\nfor animate are marked optional, since animate currently depends on\nthe convert command being present to make animate gif's (is there any\nbetter way?!).  \n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2511\n\n",
     "created_at": "2008-03-13T22:30:20Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002511.json:
     "title": "fix mistake in the animate docs (trivial to fix)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2511",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -66,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2511
 
 ---
 
-archive/issue_comments_017029.json:
+archive/issue_comments_016992.json:
 ```json
 {
     "body": "I think the issue got fixed when #2066 was merged.  Can anybody confirm?  (It's working on my machines.)",
     "created_at": "2008-03-16T02:11:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2511",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2511#issuecomment-17029",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2511#issuecomment-16992",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -84,15 +84,15 @@ I think the issue got fixed when #2066 was merged.  Can anybody confirm?  (It's 
 
 ---
 
-archive/issue_comments_017030.json:
+archive/issue_comments_016993.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-28T08:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2511",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2511#issuecomment-17030",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2511#issuecomment-16993",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -102,15 +102,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_017031.json:
+archive/issue_comments_016994.json:
 ```json
 {
     "body": "Replying to [comment:1 AlexGhitza]:\n> I think the issue got fixed when #2066 was merged.  Can anybody confirm?  (It's working on my machines.)\n> \n\nI can confirm this. Both cases gives above work fine with my 2.11.alpha2.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-28T08:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2511",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2511#issuecomment-17031",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2511#issuecomment-16994",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

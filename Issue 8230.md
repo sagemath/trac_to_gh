@@ -6,15 +6,14 @@ archive/issues_008230.json:
     "body": "Assignee: @robertwb\n\nHi, I found the following strange behaviour of the addition\n<int> + 1/2. I have a file `MurphyE.sage` which contains:\n\n```\nload E.sage\n\nfoo(2)\n```\n\nwhere `E.sage` contains:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n```\n\nThen I get:\n\n```\nsage: load MurphyE.sage\n0 0 <type 'int'> <type 'int'>\n1 1 <type 'int'> <type 'int'>\n```\n\nNow if instead I replace `load E.sage` in my file by the\ncontent of the procedure `foo`, i.e.:\n\n```\ndef foo(K):\n    for i in range(K):\n       print i, i+1/2, type(i), type(i+1/2)\n\nfoo(2)\n```\n\nthen I get:\n\n```\nsage: load MurphyE.sage\n0 1/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n1 3/2 <type 'int'> <type 'sage.rings.rational.Rational'>\n```\n\nwhich is the expected behaviour. Please can someone explain to me\nthe first result? I forgot to say it is with Sage 4.3.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8230\n\n",
     "created_at": "2010-02-10T15:17:22Z",
     "labels": [
-        "coercion",
-        "major",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "strange behaviour",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8230",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @robertwb
@@ -74,15 +73,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8230
 
 ---
 
-archive/issue_comments_072703.json:
+archive/issue_comments_072581.json:
 ```json
 {
     "body": "Dupe of #6345",
     "created_at": "2010-02-10T19:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72703",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72581",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -92,15 +91,15 @@ Dupe of #6345
 
 ---
 
-archive/issue_comments_072704.json:
+archive/issue_comments_072582.json:
 ```json
 {
     "body": "it seems to be fixed now.",
     "created_at": "2010-08-15T18:01:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72704",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -110,15 +109,15 @@ it seems to be fixed now.
 
 ---
 
-archive/issue_comments_072705.json:
+archive/issue_comments_072583.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-08-15T18:01:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72705",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -128,15 +127,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_072706.json:
+archive/issue_comments_072584.json:
 ```json
 {
     "body": "I'm closing this as a \"duplicate\" of #6345.",
     "created_at": "2010-08-15T21:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72706",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72584",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -146,15 +145,15 @@ I'm closing this as a "duplicate" of #6345.
 
 ---
 
-archive/issue_comments_072707.json:
+archive/issue_comments_072585.json:
 ```json
 {
     "body": "Resolution changed from fixed to duplicate",
     "created_at": "2010-08-15T21:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8230",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72707",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8230#issuecomment-72585",
+    "user": "https://github.com/qed777"
 }
 ```
 

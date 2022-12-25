@@ -6,15 +6,14 @@ archive/issues_002919.json:
     "body": "Assignee: mabshoff\n\npartitions_c.cc does not build with gcc 4.3 since it dislikes \n\n```\ntemplate <> static inline dd_real pi() { return dd_pi; }\n```\n\nThe attached patch fixes those issues, compile tested with gcc 4.3, 4.1 and 4.0\n\nCheers,\n\nMichael \n\nIssue created by migration from https://trac.sagemath.org/ticket/2919\n\n",
     "created_at": "2008-04-14T19:28:37Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] gcc 4.3: compilation issues in partitions_c.cc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2919",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2919
 
 ---
 
-archive/issue_comments_020101.json:
+archive/issue_comments_020060.json:
 ```json
 {
     "body": "Attachment [trac_2919_sagelib-gcc-4.3-fixes.patch](tarball://root/attachments/some-uuid/ticket2919/trac_2919_sagelib-gcc-4.3-fixes.patch) by mabshoff created at 2008-04-14 19:30:13",
     "created_at": "2008-04-14T19:30:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2919#issuecomment-20101",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2919#issuecomment-20060",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -57,15 +56,15 @@ Attachment [trac_2919_sagelib-gcc-4.3-fixes.patch](tarball://root/attachments/so
 
 ---
 
-archive/issue_comments_020102.json:
+archive/issue_comments_020061.json:
 ```json
 {
     "body": "Looks good to me :)",
     "created_at": "2008-04-14T19:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2919#issuecomment-20102",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2919#issuecomment-20061",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -75,15 +74,15 @@ Looks good to me :)
 
 ---
 
-archive/issue_comments_020103.json:
+archive/issue_comments_020062.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-14T19:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2919#issuecomment-20103",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2919#issuecomment-20062",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020104.json:
+archive/issue_comments_020063.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha5",
     "created_at": "2008-04-14T19:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2919#issuecomment-20104",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2919#issuecomment-20063",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

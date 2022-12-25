@@ -6,7 +6,7 @@ archive/issues_001597.json:
     "body": "Assignee: @williamstein\n\nI forgot to when I added jmol in 2.9.1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1597\n\n",
     "created_at": "2007-12-25T20:37:08Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001597.json:
     "title": "put jmol in spkg/install and spkg/standard/deps",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1597",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1597
 
 ---
 
-archive/issue_comments_010163.json:
+archive/issue_comments_010136.json:
 ```json
 {
     "body": "William fixed this in 2.9.1.1.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-26T02:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1597",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1597#issuecomment-10163",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1597#issuecomment-10136",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +51,15 @@ Michael
 
 ---
 
-archive/issue_comments_010164.json:
+archive/issue_comments_010137.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-26T02:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1597",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1597#issuecomment-10164",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1597#issuecomment-10137",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

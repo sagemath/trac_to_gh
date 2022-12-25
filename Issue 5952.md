@@ -6,7 +6,7 @@ archive/issues_005952.json:
     "body": "Assignee: tbd\n\n#2740 is great to have, but we need to have a way to disable it, at least on the public server, until the blocking issue gets resolved\n\nIssue created by migration from https://trac.sagemath.org/ticket/5952\n\n",
     "created_at": "2009-05-01T04:58:18Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005952.json:
     "title": "Worksheet downloading blocks the entire server",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5952",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: tbd
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5952
 
 ---
 
-archive/issue_comments_047080.json:
+archive/issue_comments_046990.json:
 ```json
 {
     "body": "Attachment [5952-public-download.patch](tarball://root/attachments/some-uuid/ticket5952/5952-public-download.patch) by @robertwb created at 2009-05-01 07:12:56\n\nWhen accounts=True, downloading is disabled.",
     "created_at": "2009-05-01T07:12:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-47080",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-46990",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -49,15 +49,15 @@ When accounts=True, downloading is disabled.
 
 ---
 
-archive/issue_comments_047081.json:
+archive/issue_comments_046991.json:
 ```json
 {
     "body": "The patch applies, reads good and passes doctests, but I would prefer if someone with more knowledge about the notebook would take this for a spin also.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T05:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-47081",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-46991",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +71,15 @@ Michael
 
 ---
 
-archive/issue_comments_047082.json:
+archive/issue_comments_046992.json:
 ```json
 {
     "body": "Positive review. Works as advertised and passes doctests.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T10:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-47082",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-46992",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +93,15 @@ Michael
 
 ---
 
-archive/issue_comments_047083.json:
+archive/issue_comments_046993.json:
 ```json
 {
     "body": "Merged in Sage 3.4.2.final.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T10:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-47083",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-46993",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -115,15 +115,15 @@ Michael
 
 ---
 
-archive/issue_comments_047084.json:
+archive/issue_comments_046994.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-04T10:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-47084",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-46994",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -133,15 +133,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_047085.json:
+archive/issue_comments_046995.json:
 ```json
 {
     "body": "And this ain't algebra, so fix it.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T10:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-47085",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-46995",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -155,15 +155,15 @@ Michael
 
 ---
 
-archive/issue_comments_047086.json:
+archive/issue_comments_046996.json:
 ```json
 {
     "body": "Changing component from algebra to notebook.",
     "created_at": "2009-05-04T10:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-47086",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5952#issuecomment-46996",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

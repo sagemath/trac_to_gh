@@ -6,15 +6,13 @@ archive/issues_008069.json:
     "body": "Assignee: drkirkby\n\nCC:  drkirby @williamstein\n\nYet another correction. SAGE64=yes works also on Open Solaris 64 bit.\n\nThe spkg is here:\n[http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg](http://boxen.math.washington.edu/home/jsp/ports/mpfi-1.3.4-cvs20071125.p8.spkg)\n\n\n\n```\nmake[2]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\nmake[1]: Leaving directory `/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8/src'\n\nreal\t0m15.129s\nuser\t0m7.916s\nsys\t0m6.259s\nSuccessfully installed mpfi-1.3.4-cvs20071125.p8\nYou can safely delete the temporary build directory\n/export/home/jaap/Downloads/sage-4.3.1/spkg/build/mpfi-1.3.4-cvs20071125.p8\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing mpfi-1.3.4-cvs20071125.p8.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1$ \n\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8069\n\n",
     "created_at": "2010-01-26T00:01:49Z",
     "labels": [
-        "porting",
-        "major",
-        "enhancement"
+        "component: porting"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New mpfi-1.3.4-cvs20071125.p8.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8069",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -57,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8069
 
 ---
 
-archive/issue_comments_070710.json:
+archive/issue_comments_070589.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-26T00:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70710",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70589",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -75,15 +73,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_070711.json:
+archive/issue_comments_070590.json:
 ```json
 {
     "body": "without some way to be able to see what you have changed, it is difficult to review. Again, without a patch, it could never be integrated with anyone else that might change this package\n\nDave",
     "created_at": "2010-01-26T11:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70711",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70590",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -95,15 +93,15 @@ Dave
 
 ---
 
-archive/issue_comments_070712.json:
+archive/issue_comments_070591.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-26T11:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70712",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70591",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -113,15 +111,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_070713.json:
+archive/issue_comments_070592.json:
 ```json
 {
     "body": "Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8069/mpfr-2.4.1.p1.patch) by @jaapspies created at 2010-01-26 18:34:07",
     "created_at": "2010-01-26T18:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70713",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70592",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -131,15 +129,15 @@ Attachment [mpfr-2.4.1.p1.patch](tarball://root/attachments/some-uuid/ticket8069
 
 ---
 
-archive/issue_comments_070714.json:
+archive/issue_comments_070593.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-26T18:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70714",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70593",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -149,15 +147,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_070715.json:
+archive/issue_comments_070594.json:
 ```json
 {
     "body": "Attachment [mpfi-1.3.4-cvs20071125.p8.patch](tarball://root/attachments/some-uuid/ticket8069/mpfi-1.3.4-cvs20071125.p8.patch) by @jaapspies created at 2010-01-26 18:53:16",
     "created_at": "2010-01-26T18:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70715",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70594",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -167,15 +165,15 @@ Attachment [mpfi-1.3.4-cvs20071125.p8.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_070716.json:
+archive/issue_comments_070595.json:
 ```json
 {
     "body": "Sorry! Clicked on the wrong file!\n\nJaap",
     "created_at": "2010-01-26T18:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70716",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70595",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -187,15 +185,15 @@ Jaap
 
 ---
 
-archive/issue_comments_070717.json:
+archive/issue_comments_070596.json:
 ```json
 {
     "body": "This is fine.",
     "created_at": "2010-01-27T02:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70717",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70596",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -205,15 +203,15 @@ This is fine.
 
 ---
 
-archive/issue_comments_070718.json:
+archive/issue_comments_070597.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-27T02:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70718",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70597",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -223,15 +221,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_070719.json:
+archive/issue_comments_070598.json:
 ```json
 {
     "body": "Changing type from enhancement to defect.",
     "created_at": "2010-01-27T04:27:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70719",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70598",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -241,15 +239,15 @@ Changing type from enhancement to defect.
 
 ---
 
-archive/issue_comments_070720.json:
+archive/issue_comments_070599.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T15:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70720",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8069#issuecomment-70599",
+    "user": "https://github.com/qed777"
 }
 ```
 

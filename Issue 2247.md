@@ -6,15 +6,14 @@ archive/issues_002247.json:
     "body": "Assignee: @craigcitro\n\nThere's a really long doctest in sage/rings/number_field/totallyreal_rel.py. We can't just `# long` it, because it also needs to use `# 32-bit`/`# 64-bit`, and these two don't play nicely together. This patch makes it into a `# no doctest` for now to avoid timeouts.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2247\n\n",
     "created_at": "2008-02-21T18:15:39Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs wildly trivial review] comment out long doctest in totallyreal_rel.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2247",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2247
 
 ---
 
-archive/issue_comments_014896.json:
+archive/issue_comments_014864.json:
 ```json
 {
     "body": "Attachment [long-test.patch](tarball://root/attachments/some-uuid/ticket2247/long-test.patch) by @craigcitro created at 2008-02-21 18:16:07",
     "created_at": "2008-02-21T18:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2247#issuecomment-14896",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2247#issuecomment-14864",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [long-test.patch](tarball://root/attachments/some-uuid/ticket2247/lon
 
 ---
 
-archive/issue_comments_014897.json:
+archive/issue_comments_014865.json:
 ```json
 {
     "body": "Patch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T18:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2247#issuecomment-14897",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2247#issuecomment-14865",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Michael
 
 ---
 
-archive/issue_comments_014898.json:
+archive/issue_comments_014866.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.rc0",
     "created_at": "2008-02-21T18:29:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2247#issuecomment-14898",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2247#issuecomment-14866",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +86,15 @@ Merged in Sage 2.10.2.rc0
 
 ---
 
-archive/issue_comments_014899.json:
+archive/issue_comments_014867.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-21T18:29:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2247#issuecomment-14899",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2247#issuecomment-14867",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

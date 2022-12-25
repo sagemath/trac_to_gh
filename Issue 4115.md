@@ -6,15 +6,14 @@ archive/issues_004115.json:
     "body": "Assignee: @rlmill\n\nImplements computations of properties which form double cosets. For example, if G is isomorphic to H, and m : G -> H is an isomorphism, then the set of all possible isomorphisms is the double coset Aut(H) m Aut(G).\n\nThis algorithm is pretty close to the canonical label algorithm, but it is a more efficient way to implement the isomorphism question. If the objects are not isomorphic, it will tend to discover this pretty quickly, via refinement invariants and examining the partition structure. If they are isomorphic, chances are this isomorphism will be discovered quickly and the algorithm will terminate at that moment.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4115\n\n",
     "created_at": "2008-09-14T07:52:20Z",
     "labels": [
-        "group theory",
-        "major",
+        "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, not ready for review] Double coset problems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4115",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4115
 
 ---
 
-archive/issue_comments_029792.json:
+archive/issue_comments_029733.json:
 ```json
 {
     "body": "I know I'm missing something but could you tell me why this fails?\n\n\n```\nwdj@tinah:~/sagefiles/sage-3.1.2.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: dbl-coset\nsage: hg_sage.apply(\"/home/wdj/sagefiles/trac_4115-double-cosets.patch\")\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc1/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc1/devel/sage\" && hg status\ncd \"/home/wdj/sagefiles/sage-3.1.2.rc1/devel/sage\" && hg import   \"/home/wdj/sagefiles/trac_4115-double-cosets.patch\"\napplying /home/wdj/sagefiles/trac_4115-double-cosets.patch\npatching file sage/groups/perm_gps/partn_ref/refinement_binary.pyx\nHunk #1 FAILED at 21\n1 out of 19 hunks FAILED -- saving rejects to file sage/groups/perm_gps/partn_ref/refinement_binary.pyx.rej\nunable to find 'sage/groups/perm_gps/partn_ref/refinement_matrices.pxd' for patching\n2 out of 2 hunks FAILED -- saving rejects to file sage/groups/perm_gps/partn_ref/refinement_matrices.pxd.rej\nunable to find 'sage/groups/perm_gps/partn_ref/refinement_matrices.pyx' for patching\n8 out of 8 hunks FAILED -- saving rejects to file sage/groups/perm_gps/partn_ref/refinement_matrices.pyx.rej\nabort: patch failed to apply\n```\n",
     "created_at": "2008-09-15T12:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29792",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29733",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -71,15 +70,15 @@ abort: patch failed to apply
 
 ---
 
-archive/issue_comments_029793.json:
+archive/issue_comments_029734.json:
 ```json
 {
     "body": "You need a more current release. rc4 will do fine, not sure about rc3 since some patches in that area went into rc4 IIRC:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.rc4/devel/sage$ patch -p1 --dry-run < ~/trac_4115-double-cosets.patch\\?format\\=raw \npatching file sage/groups/perm_gps/partn_ref/automorphism_group_canonical_label.pxd\npatching file sage/groups/perm_gps/partn_ref/automorphism_group_canonical_label.pyx\npatching file sage/groups/perm_gps/partn_ref/data_structures_pxd.pxi\npatching file sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi\npatching file sage/groups/perm_gps/partn_ref/double_coset.pxd\npatching file sage/groups/perm_gps/partn_ref/double_coset.pyx\npatching file sage/groups/perm_gps/partn_ref/refinement_binary.pxd\npatching file sage/groups/perm_gps/partn_ref/refinement_binary.pyx\npatching file sage/groups/perm_gps/partn_ref/refinement_graphs.pxd\npatching file sage/groups/perm_gps/partn_ref/refinement_graphs.pyx\npatching file sage/groups/perm_gps/partn_ref/refinement_matrices.pxd\npatching file sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\npatching file setup.py\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-09-15T12:51:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29793",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29734",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Michael
 
 ---
 
-archive/issue_comments_029794.json:
+archive/issue_comments_029735.json:
 ```json
 {
     "body": "My guess is that once you apply #4097 to rc3 it will work with that release or even earlier ones.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-15T12:55:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29794",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29735",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -133,15 +132,15 @@ Michael
 
 ---
 
-archive/issue_comments_029795.json:
+archive/issue_comments_029736.json:
 ```json
 {
     "body": "With this patch applied to 3.1.2.rc3, I got several failures including this one:\n\n\n```\nwdj@hera:~/sagefiles/sage-3.1.2.rc3$ ./sage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi\nsage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi**********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.1.2.rc3/tmp/data_structures_pyx.py\", line 7:\n    sage: import sage.groups.perm_gps.partn_ref.data_structures\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-3.1.2.rc3/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        import sage.groups.perm_gps.partn_ref.data_structures###line 7:\n    sage: import sage.groups.perm_gps.partn_ref.data_structures\n    ImportError: No module named data_structures\n\n```\n\nThis seems fairly serious so I'm guessing I should move one to rc4 instead. Sorry for the delay. I tried soing something witth this at work but my machine there is relatively slow.",
     "created_at": "2008-09-15T21:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29795",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29736",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -170,15 +169,15 @@ This seems fairly serious so I'm guessing I should move one to rc4 instead. Sorr
 
 ---
 
-archive/issue_comments_029796.json:
+archive/issue_comments_029737.json:
 ```json
 {
     "body": "Sorry about that, `data_structures` was a module that I ended up not including, but since its ghost was still loitering around in build, tests passed for me...",
     "created_at": "2008-09-16T00:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29796",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29737",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -188,15 +187,15 @@ Sorry about that, `data_structures` was a module that I ended up not including, 
 
 ---
 
-archive/issue_comments_029797.json:
+archive/issue_comments_029738.json:
 ```json
 {
     "body": "Okay. I applied #4131 (using hg_scripts.apply) and #4115 to 3.1.2.rc4 and am running tests now. This looks like an extremely interesting patch so far!",
     "created_at": "2008-09-16T02:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29797",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29738",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -206,15 +205,15 @@ Okay. I applied #4131 (using hg_scripts.apply) and #4115 to 3.1.2.rc4 and am run
 
 ---
 
-archive/issue_comments_029798.json:
+archive/issue_comments_029739.json:
 ```json
 {
     "body": "I still get this data_structures error after applying #4131, #4115 and sage -b and sage -testall:\n\n\n```\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi\n        sage -t  devel/sage/sage/groups/perm_gps/partn_ref/refinement_binary.pyx\nTotal time for all tests: 5376.0 seconds\nPlease see /home/wdj/sagefiles/sage-3.1.2.rc4/tmp/test.log for the complete log from this test.\n```\n\n\n```\nwdj@hera:~/sagefiles/sage-3.1.2.rc4$ ./sage -t devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi\nsage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi**********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.1.2.rc4/tmp/data_structures_pyx.py\", line 7:\n    sage: import sage.groups.perm_gps.partn_ref.data_structures\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-3.1.2.rc4/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        import sage.groups.perm_gps.partn_ref.data_structures###line 7:\n    sage: import sage.groups.perm_gps.partn_ref.data_structures\n    ImportError: No module named data_structures\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-3.1.2.rc4/tmp/.doctest_data_structures_pyx.py\n         [2.4 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/groups/perm_gps/partn_ref/data_structures_pyx.pxi\nTotal time for all tests: 2.4 seconds\n```\n\nI guess one could argue that somehow the patch includes an \"add\" which was not\nneeded and so this error is more-or-less spurious. However, this is more serious:\n\n\n```\nsage: from sage.groups.perm_gps.partn_ref.refinement_matrices import NonlinearBinaryCodeStruct\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/home/wdj/sagefiles/sage-3.1.2.rc4/<ipython console> in <module>()\n\nImportError: cannot import name NonlinearBinaryCodeStruct\n```\n\n\nThis suggests that a new patch is needed? Or am I doing something stupid again?",
     "created_at": "2008-09-16T09:51:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29798",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29739",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -282,15 +281,15 @@ This suggests that a new patch is needed? Or am I doing something stupid again?
 
 ---
 
-archive/issue_comments_029799.json:
+archive/issue_comments_029740.json:
 ```json
 {
     "body": "Replying to [comment:8 wdj]:\n> sage: from sage.groups.perm_gps.partn_ref.refinement_matrices import NonlinearBinaryCodeStruct\n\nThis line does not show up at all in the patch, as-is right now. You should get the latest version of the patch and try again.",
     "created_at": "2008-09-17T02:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29799",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29740",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -303,15 +302,15 @@ This line does not show up at all in the patch, as-is right now. You should get 
 
 ---
 
-archive/issue_comments_029800.json:
+archive/issue_comments_029741.json:
 ```json
 {
     "body": "Attachment [trac_4115-double-cosets.patch](tarball://root/attachments/some-uuid/ticket4115/trac_4115-double-cosets.patch) by @rlmill created at 2008-09-17 13:17:17",
     "created_at": "2008-09-17T13:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29800",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29741",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -321,15 +320,15 @@ Attachment [trac_4115-double-cosets.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_029801.json:
+archive/issue_comments_029742.json:
 ```json
 {
     "body": "A couple of cool examples:-)\n\n\n```\nsage: P.<x> = PolynomialRing(GF(2),\"x\")\nsage: g = x^3+x+1\nsage: C1 = CyclicCodeFromGeneratingPolynomial(7,g); C1\nLinear code of length 7, dimension 4 over Finite Field of size 2\nsage: CW1 = matrix(GF(2),C1.list())\nsage: C2 = HammingCode(3,GF(2)); C2\nLinear code of length 7, dimension 4 over Finite Field of size 2\nsage: CW2 = matrix(GF(2),C2.list())\nsage: B = NonlinearBinaryCodeStruct(CW1)\nsage: C = NonlinearBinaryCodeStruct(CW2)\nsage: B.is_isomorphic(C)\n[0, 1, 2, 6, 5, 3, 4]\n```\n\n\n\n```\nsage: C1 = ExtendedQuadraticResidueCode(23,GF(2)); C1\nLinear code of length 24, dimension 12 over Finite Field of size 2\nsage: C2 = ExtendedBinaryGolayCode(); C2\nLinear code of length 24, dimension 12 over Finite Field of size 2\nsage: C1 == C2\nFalse\nsage: time CW1 = matrix(GF(2),C1.list())\nCPU times: user 32.98 s, sys: 0.03 s, total: 33.01 s\nWall time: 33.12 s\nsage: time CW2 = matrix(GF(2),C2.list())\nCPU times: user 31.93 s, sys: 0.03 s, total: 31.95 s\nWall time: 32.05 s\nsage: time B = NonlinearBinaryCodeStruct(CW1)\nCPU times: user 0.19 s, sys: 0.00 s, total: 0.19 s\nWall time: 0.19 s\nsage: time C = NonlinearBinaryCodeStruct(CW2)\nCPU times: user 0.21 s, sys: 0.00 s, total: 0.21 s\nWall time: 0.21 s\nsage: time B.is_isomorphic(C)\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22 s\n\n[0,\n 1,\n 2,\n 3,\n 4,\n 5,\n 14,\n 19,\n 23,\n 21,\n 16,\n 15,\n 18,\n 17,\n 22,\n 7,\n 11,\n 12,\n 8,\n 6,\n 10,\n 13,\n 9,\n 20]\nsage:                   \n```\n\nThis is a 24x4096 matrix!\n\nSo far so good. I'm going to try to find some more complicated examples:-)",
     "created_at": "2008-09-17T23:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29801",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29742",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -411,15 +410,15 @@ So far so good. I'm going to try to find some more complicated examples:-)
 
 ---
 
-archive/issue_comments_029802.json:
+archive/issue_comments_029743.json:
 ```json
 {
     "body": "I'm confused by this output:\n\nPut\n\n```\ndef test():\n G = SymmetricGroup(20)\n g = G(\"(11,12,13,14,15,16,17)\")\n for i in range(10):\n   C1 = RandomLinearCode(20,10,GF(2))\n   C2 = C1.permuted_code(g)\n   CW1 = matrix(GF(2),C1.list())\n   CW2 = matrix(GF(2),C2.list())\n   B = NonlinearBinaryCodeStruct(CW1)\n   C = NonlinearBinaryCodeStruct(CW2)\n   ans = B.is_isomorphic(C)\n   L = [j+1 for j in ans]\n   h = G(L)\n   G1 = C1.automorphism_group_binary_code()\n   print i, g, h, h*g^(-1) in G1\n```\n\ncalled test.sage or something and attach it.\nIt seems to me it should always return True.\n\n```\nsage: time test()\n0 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n1 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n2 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n3 (11,12,13,14,15,16,17) (11,12,13,14,15,16) True\n4 (11,12,13,14,15,16,17) (9,12,13,14,15,16,17) False\n5 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n6 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n7 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n8 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n9 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\nCPU times: user 88.99 s, sys: 0.10 s, total: 89.09 s\nWall time: 90.93 s\n```\n\nIf you change the script to\n\n```\ndef test():\n G = SymmetricGroup(20)\n g = G(\"(11,12,13,14,15,16,17)\")\n for i in range(10):\n   C1 = RandomLinearCode(20,10,GF(2))\n   C2 = C1.permuted_code(g)\n   CW1 = matrix(GF(2),C1.list())\n   CW2 = matrix(GF(2),C2.list())\n   B = NonlinearBinaryCodeStruct(CW1)\n   C = NonlinearBinaryCodeStruct(CW2)\n   ans = B.is_isomorphic(C)\n   L = [j+1 for j in ans]\n   h = G(L)\n   G1 = C1.automorphism_group_binary_code()\n   print i, g, h, h^(-1)*g in G1 \n```\n\nyou get \n\n```\nsage: time test()\n0 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n1 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n2 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n3 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n4 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n5 (11,12,13,14,15,16,17) (8,15,16,17,11)(12,13,14) False\n6 (11,12,13,14,15,16,17) (10,12,13,14,15,16,17) False\n7 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\n8 (11,12,13,14,15,16,17) (9,12,13,14,15,16,17) False\n9 (11,12,13,14,15,16,17) (11,12,13,14,15,16,17) True\nCPU times: user 92.33 s, sys: 0.11 s, total: 92.45 s\nWall time: 92.92 s\n```\n\nAgain funny.\n\nIt should be g,h:C1->C2, so h^(-1)*g in G1 should be true\nand h*g^(-1) in G1 should be false.\n\nI'm probably misinterpreting something in the docstrings\n(and probably and still too sleepy to think straight:-) \nbut something seems confusing to me here.\n\nCan someone see the error here?",
     "created_at": "2008-09-18T12:32:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29802",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29743",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -517,15 +516,15 @@ Can someone see the error here?
 
 ---
 
-archive/issue_comments_029803.json:
+archive/issue_comments_029744.json:
 ```json
 {
     "body": "First of all, you should be using a `LinearBinaryCodeStruct` for this, since these are linear binary codes, and the code will run much faster. The `list` function of linear codes seemed pretty slow, so I posted something at #4145.\n\nSecond, after playing with this for a while, I realized that GAP permutations act on the right, which reverses the familiar multiplication:\n\n```\nsage: G = SymmetricGroup(20)\nsage: g = G(\"(11,12,13,14,15,16,17)\")\nsage: h = G(\"(11,12)(13,14,15,16,17)\")\nsage: h^(-1)\n(11,12)(13,17,16,15,14)\nsage: (h^(-1))*g\n(11,13)\nsage: g*(h^(-1))\n(12,17)\n```\n\n\nSo I think the first version of your function was the correct one. With the patches here and at #4145 applied, and with `test` defined as below, I get nothing but `True`s for 100 trials. Without #4145, I frequently get `False`'s. So perhaps #4145 is actually a bug fix!\n\n```\ndef test(n):\n    G = SymmetricGroup(20)\n    g = G(\"(11,12,13,14,15,16,17)\")\n    for i in range(n):\n        C1 = RandomLinearCode(20,10,GF(2))\n        C2 = C1.permuted_code(g)\n        CW1 = matrix(GF(2),C1.list())\n        CW2 = matrix(GF(2),C2.list())\n        B = NonlinearBinaryCodeStruct(CW1)\n        C = NonlinearBinaryCodeStruct(CW2)\n        ans = B.is_isomorphic(C)\n        L = [j+1 for j in ans]\n        h = G(L)\n        G1 = C1.automorphism_group_binary_code()\n        print i, g, h, g*(h^(-1)), g*(h^(-1)) in G1\n        print G1\n```\n",
     "created_at": "2008-09-18T15:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29803",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29744",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -572,15 +571,15 @@ def test(n):
 
 ---
 
-archive/issue_comments_029804.json:
+archive/issue_comments_029745.json:
 ```json
 {
     "body": "I agree and also just gave #4145 a positive review, so now I give this a positive review too.\n\nMichael: If you apply this please also apply #4145 at the same time. They need to go together.\n\nWow, this is a cool patch! There are a *ton* of improvements to the linear codes modules which will result from this....",
     "created_at": "2008-09-18T17:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29804",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29745",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -594,15 +593,15 @@ Wow, this is a cool patch! There are a *ton* of improvements to the linear codes
 
 ---
 
-archive/issue_comments_029805.json:
+archive/issue_comments_029746.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha0",
     "created_at": "2008-09-19T00:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29805",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29746",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -612,15 +611,15 @@ Merged in Sage 3.1.3.alpha0
 
 ---
 
-archive/issue_comments_029806.json:
+archive/issue_comments_029747.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-19T00:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29806",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4115#issuecomment-29747",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007936.json:
     "body": "Assignee: mvngu\n\nSee http://www.sagemath.org.nyud.net/doc/constructions/calculus.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7936\n\n",
     "created_at": "2010-01-15T17:35:41Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Calculus constructions mix explicit calls to maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7936",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: mvngu
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7936
 
 ---
 
-archive/issue_comments_069173.json:
+archive/issue_comments_069054.json:
 ```json
 {
     "body": "From an email `[sage-support] error in documentation \"Construction\"` on 2010-01-15:\n\n\n```\nHi everyone,\n\nI just checked out one of  first page in the \"Constructions\" page:\n\nhttp://www.sagemath.org.nyud.net/doc/constructions/calculus.html\n\nJust after the first example \"Differentiation\"\n\nsage: var('x k w')\n(x, k, w)\nsage: f = x^3 * e^(k*x) * sin(w*x); f\nx^3*e^(k*x)*sin(w*x)\nsage: f.diff(x)\nk*x^3*e^(k*x)*sin(w*x) + w*x^3*e^(k*x)*cos(w*x) + 3*x^2*e^(k*x)*sin\n(w*x)\nsage: latex(f.diff(x))\nk x^{3} e^{\\left(k x\\right)} \\sin\\left(w x\\right) + w x^{3} e^{\\left(k\nx\\right)} \\cos\\left(w x\\right) + 3 \\, x^{2} e^{\\left(k x\\right)} \\sin\n\\left(w x\\right)\n\nthere is\n\n\"If you type view(f.diff('x')) another... \"\n\nWhen I do that, I get a long error message, which could frighten off\n(it is the first example...). With \"view(f.diff(x))\" it works.\nHowever, if the function is defined via\n\nf = maxima(....)\n\nthen both ways work:   view(f.diff('x')),  view(f.diff(x))\n\nI don't know if this is intended, but at least on the website it\nshould be changed, not to get the error.\n\nGreets,\nStefan\n```\n",
     "created_at": "2010-01-15T23:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69173",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69054",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -89,15 +88,15 @@ Stefan
 
 ---
 
-archive/issue_comments_069174.json:
+archive/issue_comments_069055.json:
 ```json
 {
     "body": "Attachment [trac_7936-constructions.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-constructions.patch) by mvngu created at 2010-01-16 05:22:24\n\napply to sage-main; based on Sage 4.3.1.alpha2",
     "created_at": "2010-01-16T05:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69174",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69055",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -109,15 +108,15 @@ apply to sage-main; based on Sage 4.3.1.alpha2
 
 ---
 
-archive/issue_comments_069175.json:
+archive/issue_comments_069056.json:
 ```json
 {
     "body": "apply to examples/ repository; based on Sage 4.3.1.alpha2",
     "created_at": "2010-01-16T05:32:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69175",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69056",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -127,15 +126,15 @@ apply to examples/ repository; based on Sage 4.3.1.alpha2
 
 ---
 
-archive/issue_comments_069176.json:
+archive/issue_comments_069057.json:
 ```json
 {
     "body": "Attachment [trac_7936-desolvers.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-desolvers.patch) by mvngu created at 2010-01-16 05:33:40\n\nHere are two patches, which should fix errors in the calculus chapter of the Constructions document. Apply the patch `trac_7936-constructions.patch` to the repository `sage-main`. The second patch applies to the `examples/` directory, which is separate from `sage-main`. But before applying the second patch, the release manager needs to remove a junk file:\n\n```\n[mvngu@boxen examples]$ pwd\n/dev/shm/mvngu/sage-4.3.1.alpha2-7936-maxima/examples\n[mvngu@boxen examples]$ hg st\n? .hgtags.orig\n[mvngu@boxen examples]$ rm .hgtags.orig \n[mvngu@boxen examples]$ hg st\n```\n",
     "created_at": "2010-01-16T05:33:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69176",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69057",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -157,15 +156,15 @@ Here are two patches, which should fix errors in the calculus chapter of the Con
 
 ---
 
-archive/issue_comments_069177.json:
+archive/issue_comments_069058.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-16T05:33:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69177",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69058",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -175,15 +174,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069178.json:
+archive/issue_comments_069059.json:
 ```json
 {
     "body": "It would be really nice if that whole constructions page could be written without any explicit calls to maxima at all--not sure how much of that is possible, but for derivatives, integrals, and power series it certainly is. \n\nAlso, nearly every example involves Piecewise, which doesn't play nicely with all the symbolic stuff (nor does it make for concise examples).",
     "created_at": "2010-01-16T09:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69178",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69059",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -195,15 +194,15 @@ Also, nearly every example involves Piecewise, which doesn't play nicely with al
 
 ---
 
-archive/issue_comments_069179.json:
+archive/issue_comments_069060.json:
 ```json
 {
     "body": "The constructions document is quasi-deprecated in any case, as it dates from over two years ago, I believe.  wdj wanted to make a new 'cookbook' document which replaced it, but no one has had time to do so.  Of course, if the whole constructions document were updated, that would be great!  I agree that if one is serious about that, though, one would have to remove Piecewise stuff, as at the time that was one of the better-implemented function types but now is waiting on someone to add them to Pynac.",
     "created_at": "2010-01-18T16:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69179",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69060",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -213,15 +212,15 @@ The constructions document is quasi-deprecated in any case, as it dates from ove
 
 ---
 
-archive/issue_comments_069180.json:
+archive/issue_comments_069061.json:
 ```json
 {
     "body": "> The constructions document is quasi-deprecated in any case, as it dates from over two years ago,\n\nTwo years?   It from at least *four* years ago!  It was mostly written around the time of Sage 1.0, or earlier.  It needs a total rewrite.  When it was written, explicit calls to maxima were the only way to do any calculus.",
     "created_at": "2010-01-18T22:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69180",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69061",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -233,15 +232,15 @@ Two years?   It from at least *four* years ago!  It was mostly written around th
 
 ---
 
-archive/issue_comments_069181.json:
+archive/issue_comments_069062.json:
 ```json
 {
     "body": "Replying to [comment:5 was]:\n> > The constructions document is quasi-deprecated in any case, as it dates from over two years ago,\n> \n> Two years?   It from at least *four* years ago!  It was mostly written around the time of Sage 1.0, or earlier.  It needs a total rewrite.  When it was written, explicit calls to maxima were the only way to do any calculus. \n\nLike I said, *over* two years ago :)",
     "created_at": "2010-01-19T13:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69181",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69062",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -256,15 +255,15 @@ Like I said, *over* two years ago :)
 
 ---
 
-archive/issue_comments_069182.json:
+archive/issue_comments_069063.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-19T13:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69182",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69063",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -274,15 +273,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_069183.json:
+archive/issue_comments_069064.json:
 ```json
 {
     "body": "Is this fixed by #8132?",
     "created_at": "2010-02-02T05:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69183",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69064",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -292,15 +291,15 @@ Is this fixed by #8132?
 
 ---
 
-archive/issue_comments_069184.json:
+archive/issue_comments_069065.json:
 ```json
 {
     "body": "Replying to [comment:7 mvngu]:\n> Is this fixed by #8132?\n\nNo, unfortunately, I don't think so.\n\nI give a positive review to the first patch. I don't understand the second patch. I'm giving the first a positive review though. Fell free to reverse my vote back to needs review, but I'm marking it for now as needs info. The instructions for patch 2 are just completely unclear to me.",
     "created_at": "2010-02-03T00:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69184",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69065",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -315,15 +314,15 @@ I give a positive review to the first patch. I don't understand the second patch
 
 ---
 
-archive/issue_comments_069185.json:
+archive/issue_comments_069066.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_info.",
     "created_at": "2010-02-03T00:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69185",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69066",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -333,15 +332,15 @@ Changing status from needs_work to needs_info.
 
 ---
 
-archive/issue_comments_069186.json:
+archive/issue_comments_069067.json:
 ```json
 {
     "body": "Replying to [comment:8 wdj]:\n> I give a positive review to the first patch. \n\nI think the attachment [trac_7936-constructions.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-constructions.patch) is now superseded by #8132. No need to use that patch anymore.\n\n\n\n\n\n> I don't understand the second patch. The instructions for patch 2 are just completely unclear to me.\n\nWithout the attachment [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) applied to the repository `examples/calculus`, I get an error when loading the file `desolvers.sage`:\n\n```\n[mvngu@mod calculus]$ pwd\n/dev/shm/mvngu/sage-4.3.2.alpha1-sage.math/examples/calculus\n[mvngu@mod calculus]$ ls\ndesolvers.py    eulers_method.sage  newton_raphson.sage\ndesolvers.sage  field_plot2d.sage   README.txt\n[mvngu@mod calculus]$ ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: load \"desolvers.sage\"\n------------------------------------------------------------\n   File \"<string>\", line 147\n     #maxima.eval(cmd)\n                     ^\nSyntaxError: invalid syntax\n```\n\nNow apply the patch [trac_7936-desolvers.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-desolvers.patch) to the repository `examples/calculus` to resolve this syntax error:\n\n```\n[mvngu@mod calculus]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-desolvers.patch && hg qpush\nadding trac_7936-desolvers.patch to series file\napplying trac_7936-desolvers.patch\nnow at: trac_7936-desolvers.patch\n[mvngu@mod calculus]$ ../../sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: load \"desolvers.sage\"\nsage: des=[\"'diff(x(t),t)=-4*y(t)\",\"'diff(y(t),t)=-x(t)\"]\nsage: vars = [\"t\",\"x\",\"y\"]\nsage: desolve_system(des,vars)\n[x(t)=(2*y(0)+x(0))*%e^-(2*t)/2-(2*y(0)-x(0))*%e^(2*t)/2,y(t)=(2*y(0)-x(0))*%e^(2*t)/4+(2*y(0)+x(0))*%e^-(2*t)/4]\n```\n",
     "created_at": "2010-02-03T00:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69186",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69067",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -407,15 +406,15 @@ sage: desolve_system(des,vars)
 
 ---
 
-archive/issue_comments_069187.json:
+archive/issue_comments_069068.json:
 ```json
 {
     "body": "Thanks for explaining that about the second patch.\n\ndesolvers.sage can be removed now since Robert Marik has kindly implemented everything in it in sage already.\n\nCan you just delete the file, Minh?",
     "created_at": "2010-02-03T02:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69187",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69068",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -429,15 +428,15 @@ Can you just delete the file, Minh?
 
 ---
 
-archive/issue_comments_069188.json:
+archive/issue_comments_069069.json:
 ```json
 {
     "body": "Replying to [comment:10 wdj]:\n> Thanks for explaining that about the second patch.\n> \n> desolvers.sage can be removed now since Robert Marik has kindly implemented everything in it in sage already.\n> \n> Can you just delete the file, Minh?\n\nI just want to point out also that William is probably going to get rid of the examples directory in the near future - as usual, I do not have the URL for that discussion :) so the sooner we explicitly know it's not necessary, the better.",
     "created_at": "2010-02-03T03:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69188",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69069",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -454,15 +453,15 @@ I just want to point out also that William is probably going to get rid of the e
 
 ---
 
-archive/issue_comments_069189.json:
+archive/issue_comments_069070.json:
 ```json
 {
     "body": "I can verify that desolvers.sage and euler_method.sage from this directory are completely taken care of by the changes of Robert, and some of field_plot2d.sage is also now in the plot/plot_field.py file (maybe not all of it, but maybe not all is needed?).  I think the stuff in newton_raphson.sage probably should be jettisoned or somehow put in one of the sage/calculus files.  \n\nwdj, what do you think?   Probably we can just about delete that whole directory.  What do you think is worth putting into the main Sage library?",
     "created_at": "2010-04-20T13:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69189",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69070",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -474,15 +473,15 @@ wdj, what do you think?   Probably we can just about delete that whole directory
 
 ---
 
-archive/issue_comments_069190.json:
+archive/issue_comments_069071.json:
 ```json
 {
     "body": "Replying to [comment:12 kcrisman]:\n> I can verify that desolvers.sage and euler_method.sage from this directory are completely taken care of by the changes of Robert, and some of field_plot2d.sage is also now in the plot/plot_field.py file (maybe not all of it, but maybe not all is needed?).  I think the stuff in newton_raphson.sage probably should be jettisoned or somehow put in one of the sage/calculus files.  \n> \n> wdj, what do you think?   Probably we can just about delete that whole directory.  What do you think is worth putting into the main Sage library?\n\n\nAgreed. delete it. newton_raphson is so simple, it is easy to just post to the wiki or something anyway. Thanks for looking at this!",
     "created_at": "2010-04-20T14:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69190",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69071",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -498,15 +497,15 @@ Agreed. delete it. newton_raphson is so simple, it is easy to just post to the w
 
 ---
 
-archive/issue_comments_069191.json:
+archive/issue_comments_069072.json:
 ```json
 {
     "body": "Okay, this patch, applied to the examples/ repository, should take of this.  Needs review.  wdj, why don't you go ahead and look at the newton-raphson examples on the interact part of the Wiki and see if that essentially has that, otherwise can you think of an appropriate place to store it?  \n\nAlso see #7494 on removing all of this examples/ directory.",
     "created_at": "2010-04-28T02:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69191",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69072",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -518,15 +517,15 @@ Also see #7494 on removing all of this examples/ directory.
 
 ---
 
-archive/issue_comments_069192.json:
+archive/issue_comments_069073.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-04-28T02:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69192",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69073",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -536,15 +535,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_069193.json:
+archive/issue_comments_069074.json:
 ```json
 {
     "body": "Attachment [trac_7936-no-calc-examples.patch](tarball://root/attachments/some-uuid/ticket7936/trac_7936-no-calc-examples.patch) by @kcrisman created at 2010-04-28 02:41:56",
     "created_at": "2010-04-28T02:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69193",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69074",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -554,15 +553,15 @@ Attachment [trac_7936-no-calc-examples.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_069194.json:
+archive/issue_comments_069075.json:
 ```json
 {
     "body": "Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?",
     "created_at": "2010-05-08T22:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69194",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69075",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -572,15 +571,15 @@ Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.
 
 ---
 
-archive/issue_comments_069195.json:
+archive/issue_comments_069076.json:
 ```json
 {
     "body": "Replying to [comment:15 mvngu]:\n> Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?\nI think so.   Someone should check the interact wiki and make sure that the essence of the Newton-Raphson example is captured in the interacts already there which are about that.  Recall that this needs review, though, so you (or someone) would need to formally give this positive review at least.",
     "created_at": "2010-05-09T00:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69195",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69076",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -592,15 +591,15 @@ I think so.   Someone should check the interact wiki and make sure that the esse
 
 ---
 
-archive/issue_comments_069196.json:
+archive/issue_comments_069077.json:
 ```json
 {
     "body": "Replying to [comment:14 kcrisman]:\n> Okay, this patch, applied to the examples/ repository, should take of this.  Needs review.  \n> wdj, why don't you go ahead and look at the newton-raphson examples on the interact \n> part of the Wiki and see if that essentially has that, otherwise can you think of an appropriate place to store it?  \n\n\nLooks good to me. I also copied the file to \nhttp://boxen.math.washington.edu/home/wdj/sagefiles/\n\n\n> \n> Also see #7494 on removing all of this examples/ directory.",
     "created_at": "2010-05-11T14:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69196",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69077",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -621,15 +620,15 @@ http://boxen.math.washington.edu/home/wdj/sagefiles/
 
 ---
 
-archive/issue_comments_069197.json:
+archive/issue_comments_069078.json:
 ```json
 {
     "body": "Replying to [comment:16 kcrisman]:\n> Replying to [comment:15 mvngu]:\n> > Do I only need to apply [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch)?\n> I think so.   Someone should check the interact wiki and make sure that the essence of the \n> Newton-Raphson example is captured in the interacts already there which are about that.  Recall \n> that this needs review, though, so you (or someone) would need to formally give this positive review at least.  \n\nThis patch does not apply to 4.4.2.a0 for me. Does anyone else have this problem?",
     "created_at": "2010-05-11T14:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69197",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69078",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -646,15 +645,15 @@ This patch does not apply to 4.4.2.a0 for me. Does anyone else have this problem
 
 ---
 
-archive/issue_comments_069198.json:
+archive/issue_comments_069079.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-05-11T14:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69198",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69079",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -664,15 +663,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_069199.json:
+archive/issue_comments_069080.json:
 ```json
 {
     "body": "You have to apply it \"manually\" (using ./sage -hg, unfortunately) to the examples/ directory.  There is no hg_examples :(",
     "created_at": "2010-05-11T15:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69199",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69080",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -682,15 +681,15 @@ You have to apply it "manually" (using ./sage -hg, unfortunately) to the example
 
 ---
 
-archive/issue_comments_069200.json:
+archive/issue_comments_069081.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-05-11T15:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69200",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69081",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -700,15 +699,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_069201.json:
+archive/issue_comments_069082.json:
 ```json
 {
     "body": "Replying to [comment:19 kcrisman]:\n> You have to apply it \"manually\" (using ./sage -hg, unfortunately) to the examples/ directory.  There is no hg_examples :(\n\nCan you tell me exactly the command to use to apply the patch Please?\n\nsage -hg ????",
     "created_at": "2010-05-11T15:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69201",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69082",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -723,15 +722,15 @@ sage -hg ????
 
 ---
 
-archive/issue_comments_069202.json:
+archive/issue_comments_069083.json:
 ```json
 {
     "body": "I'll use ... to indicate the rest of the path until the Sage folder.\n\n```\ncd .../sage-4.4.1/examples/\n~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which is very boring :)\n~/.../sage-4.4.1/sage -hg import http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-no-calc-examples.patch\n~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which should now indicate the patch was applied.\n```\n\nAnd if you go in ./sage/examples/calculus/ now, it should be empty.  The release manager would have to remove the empty folder by hand, I think.\n\nI agree that it is very annoying that one has to do this without hg_sage - it took me a long time to figure out how to do it - but eventually the examples directory will cease to exist and so that won't be a problem.  This is just a first step.",
     "created_at": "2010-05-11T16:02:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69202",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69083",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -752,15 +751,15 @@ I agree that it is very annoying that one has to do this without hg_sage - it to
 
 ---
 
-archive/issue_comments_069203.json:
+archive/issue_comments_069084.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-11T19:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69203",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69084",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -770,15 +769,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069204.json:
+archive/issue_comments_069085.json:
 ```json
 {
     "body": "Replying to [comment:21 kcrisman]:\n> I'll use ... to indicate the rest of the path until the Sage folder.\n> {{{\n> cd .../sage-4.4.1/examples/\n> ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which is very boring :)\n> ~/.../sage-4.4.1/sage -hg import http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7936/trac_7936-no-calc-examples.patch\n> ~/.../sage-4.4.1/sage -hg log | less  # gives you the log, which should now indicate the patch was applied.\n> }}}\n> And if you go in ./sage/examples/calculus/ now, it should be empty.  The release manager would have to remove the empty folder by hand, I think.\n> \n> I agree that it is very annoying that one has to do this without hg_sage - it took me a long time to figure out how to do it - but eventually the examples directory will cease to exist and so that won't be a problem.  This is just a first step.\n\n\nThanks very much! \n\nThis applies fine to 4.4.2.a0 and sage -testall passes (except for unrelated failures in interfaces/r.py and misc/sagedoc.py).",
     "created_at": "2010-05-11T19:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69204",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69085",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -803,15 +802,15 @@ This applies fine to 4.4.2.a0 and sage -testall passes (except for unrelated fai
 
 ---
 
-archive/issue_comments_069205.json:
+archive/issue_comments_069086.json:
 ```json
 {
     "body": "Merged [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7936/trac_7936-no-calc-examples.patch) in examples repository.",
     "created_at": "2010-05-12T22:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69205",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -821,15 +820,15 @@ Merged [trac_7936-no-calc-examples.patch](http://trac.sagemath.org/sage_trac/att
 
 ---
 
-archive/issue_comments_069206.json:
+archive/issue_comments_069087.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-12T22:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7936",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69206",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7936#issuecomment-69087",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

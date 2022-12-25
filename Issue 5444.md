@@ -6,15 +6,14 @@ archive/issues_005444.json:
     "body": "Assignee: @robertwb\n\n\n```\n   sage: [(1.0)..(2.0)]\n   [1.00000000000000, 2.00000000000000]\n   sage: [1.0..2.0]\n    line 4\n    (ellipsis_range(_sage_const_1p0 ,Ellipsis,_sage_const_2 RealNumber('.0')))\n                                                                     ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5444\n\n",
     "created_at": "2009-03-05T19:58:26Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "elipses + float = boom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5444",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: @robertwb
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5444
 
 ---
 
-archive/issue_comments_042093.json:
+archive/issue_comments_042011.json:
 ```json
 {
     "body": "This has been resolved, probably while cleaning up the preparser code. \n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.4.2, Release Date: 2009-05-05                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: [1.0..2.0]\n [1.00000000000000, 2.00000000000000]\n\n```\n",
     "created_at": "2009-05-18T21:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42093",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42011",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -69,15 +68,15 @@ sage: [1.0..2.0]
 
 ---
 
-archive/issue_comments_042094.json:
+archive/issue_comments_042012.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2009-05-18T21:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42094",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42012",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -87,15 +86,15 @@ Resolution: worksforme
 
 ---
 
-archive/issue_comments_042095.json:
+archive/issue_comments_042013.json:
 ```json
 {
     "body": "Has a doctest been added? Otherwise this ticket should be reopened.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-18T22:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42095",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42013",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +108,15 @@ Michael
 
 ---
 
-archive/issue_comments_042096.json:
+archive/issue_comments_042014.json:
 ```json
 {
     "body": "Resolution changed from worksforme to ",
     "created_at": "2009-05-19T04:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42096",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42014",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -127,15 +126,15 @@ Resolution changed from worksforme to
 
 ---
 
-archive/issue_comments_042097.json:
+archive/issue_comments_042015.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2009-05-19T04:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42097",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42015",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -145,15 +144,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_042098.json:
+archive/issue_comments_042016.json:
 ```json
 {
     "body": "Reopening until someone either points to a doctests or post a doctest patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-19T04:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42098",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42016",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -167,15 +166,15 @@ Michael
 
 ---
 
-archive/issue_comments_042099.json:
+archive/issue_comments_042017.json:
 ```json
 {
     "body": "Attachment [trac_5444.patch](tarball://root/attachments/some-uuid/ticket5444/trac_5444.patch) by @mwhansen created at 2009-06-05 01:28:54",
     "created_at": "2009-06-05T01:28:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42099",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42017",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -185,15 +184,15 @@ Attachment [trac_5444.patch](tarball://root/attachments/some-uuid/ticket5444/tra
 
 ---
 
-archive/issue_comments_042100.json:
+archive/issue_comments_042018.json:
 ```json
 {
     "body": "Doctest looks fine to me.",
     "created_at": "2009-06-05T03:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42100",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42018",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -203,15 +202,15 @@ Doctest looks fine to me.
 
 ---
 
-archive/issue_comments_042101.json:
+archive/issue_comments_042019.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-13T21:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42101",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/5444#issuecomment-42019",
+    "user": "https://github.com/ncalexan"
 }
 ```
 

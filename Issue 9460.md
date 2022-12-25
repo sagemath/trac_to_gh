@@ -6,7 +6,7 @@ archive/issues_009460.json:
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @rlmill @williamstein @nexttime\n\nBuilding Sage 4.5.alphaX with `SAGE_FAT_BINARY=\"yes\"` or `SAGE_PARALLEL_SPKG_BUILD=\"yes\"` on sage.math can cause many Maxima-related test failures.\n\nSee [testlong.log](http://sage.math.washington.edu/home/wstein/build/sage-4.5.alpha4/testlong.log) and [comment:ticket:9274:17 this comment] at #9274 for examples.\n\nSo far, it seems that reinstalling the Maxima spkg \"fixes\" the failures.\n\nSee [sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/1a6359a73d39dac2/4b4aaa26c0e22660#4b4aaa26c0e22660) for some background.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9460\n\n",
     "created_at": "2010-07-09T04:39:23Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009460.json:
     "title": "Many Maxima-related doctest failures on sage.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9460",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: mvngu
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9460
 
 ---
 
-archive/issue_comments_090688.json:
+archive/issue_comments_090538.json:
 ```json
 {
     "body": "I've been unable to replicate this.  I've built Sage 4.5.alpha4 with SAGE_FAT_BINARY and SAGE_PARALLEL_SPKG_BUILD both set to 'yes' and everything has come out fine.  I'll try again and see what happens...",
     "created_at": "2010-07-09T04:51:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90688",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90538",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -55,15 +55,15 @@ I've been unable to replicate this.  I've built Sage 4.5.alpha4 with SAGE_FAT_BI
 
 ---
 
-archive/issue_comments_090689.json:
+archive/issue_comments_090539.json:
 ```json
 {
     "body": "Could the problem be building Sage from a script?  I get the failures if I build 4.5.alpha4 with\n\n```sh\n#!/bin/bash\nX=20\nexport MAKE=\"make -j$X\"\nVER=4.5.alpha4\nunset SAGE_CHECK SAGE_PARALLEL_SPKG_BUILD\n#export SAGE_CHECK=\"check\"\nexport SAGE_PARALLEL_SPKG_BUILD=\"yes\"\n\nTAG=\"-j$X\"\n[ ! -z \"$SAGE_PARALLEL_SPKG_BUILD\" ] && TAG=\"$TAG-par\"\n[ ! -z \"$SAGE_CHECK\" ] && TAG=\"$TAG-chk\"\n\ncd $HOME/scratch/tmp\nOLDDIR=\"sage-$VER\"\nNEWDIR=\"$OLDDIR$TAG\"\nrm -rf $OLDDIR $NEWDIR\ntar xvf /home/release/sage-$VER/sage-$VER.tar\nmv $OLDDIR $NEWDIR\ncd $NEWDIR\n\nnice -n 19 time make build\n```\n\nbut *not* if I build with\n\n```sh\n$ nohup nice -n 19 env MAKE=\"make -j20\" SAGE_PARALLEL_SPKG_BUILD=\"yes\" make build &\n```\n\nThe same happens even if I *do not* build with `SAGE_PARALLEL_SPKG_BUILD=\"yes\"`.  The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).",
     "created_at": "2010-07-09T04:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90689",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90539",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -105,15 +105,15 @@ The same happens even if I *do not* build with `SAGE_PARALLEL_SPKG_BUILD="yes"`.
 
 ---
 
-archive/issue_comments_090690.json:
+archive/issue_comments_090540.json:
 ```json
 {
     "body": "Addendum: I called the script in the previous comment `go` and ran it with `nohup go &`.",
     "created_at": "2010-07-09T05:00:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90690",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90540",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -123,15 +123,15 @@ Addendum: I called the script in the previous comment `go` and ran it with `nohu
 
 ---
 
-archive/issue_comments_090691.json:
+archive/issue_comments_090541.json:
 ```json
 {
     "body": "Yes, all my builds of sage that failed were with a script.   I didn't even use nohup, but just screen.\nThe scri[pt I used is /home/wstein/buildbot. \n\nI suspect somebody screwed up the maxima spkg, obviously, and removed some workaround for building under a script.",
     "created_at": "2010-07-09T06:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90691",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90541",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -144,15 +144,15 @@ I suspect somebody screwed up the maxima spkg, obviously, and removed some worka
 
 ---
 
-archive/issue_comments_090692.json:
+archive/issue_comments_090542.json:
 ```json
 {
     "body": "William,\n\nCan you try the build with the ecl and maxima spkg's replaced with those in sage-4.4.4? I think #8645 might be causing this. If it is we can just reopen the ticket and roll back ecl and maxima.",
     "created_at": "2010-07-09T07:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90692",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90542",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -164,15 +164,15 @@ Can you try the build with the ecl and maxima spkg's replaced with those in sage
 
 ---
 
-archive/issue_comments_090693.json:
+archive/issue_comments_090543.json:
 ```json
 {
     "body": "I'm running my whole test cycle here:\n\n   http://sage.math.washington.edu/home/wstein/build/sage-4.5.alphastein1/\n\nbut with ecl and maxima rolled back.",
     "created_at": "2010-07-09T11:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90693",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90543",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -186,15 +186,15 @@ but with ecl and maxima rolled back.
 
 ---
 
-archive/issue_comments_090694.json:
+archive/issue_comments_090544.json:
 ```json
 {
     "body": "I've built successfully by running the same script as William: I copied \"buildbot\" to /scratch/palmieri/new and ran it to build Sage.  I tried it with SAGE64='yes' and that worked, too.  I just tried running screen and then running buildbot, and that worked, too.  I just can't reproduce this.",
     "created_at": "2010-07-09T15:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90694",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90544",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -204,15 +204,15 @@ I've built successfully by running the same script as William: I copied "buildbo
 
 ---
 
-archive/issue_comments_090695.json:
+archive/issue_comments_090545.json:
 ```json
 {
     "body": "Replying to [comment:2 mpatel]:\n> The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).\n\nDid you compare the build trees?",
     "created_at": "2010-07-09T15:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90695",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90545",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -225,15 +225,15 @@ Did you compare the build trees?
 
 ---
 
-archive/issue_comments_090696.json:
+archive/issue_comments_090546.json:
 ```json
 {
     "body": "With the old maxima/ecl, everything worked.\n\nThe failures could be related to the memory issues we were having.  I've started a fresh build with my script as me here \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.5.alpha4/\n\nWe'll see if it works.\n\n -- William, in Paris",
     "created_at": "2010-07-09T19:01:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90696",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90546",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -251,15 +251,15 @@ We'll see if it works.
 
 ---
 
-archive/issue_comments_090697.json:
+archive/issue_comments_090547.json:
 ```json
 {
     "body": "Replying to [comment:9 leif]:\n> Replying to [comment:2 mpatel]:\n> > The four builds are [here](http://sage.math.washington.edu/home/mpatel/stmp/).\n> \n> Did you compare the build trees?\n> \nYes.  As far as I can tell, the non-binary differences are simple path differences.  For example, the output of\n\n```sh\ndiff -purN sage-4.5.alpha4-j20-env sage-4.5.alpha4-j20 2>&1 | grep -v \"Binary files\"\n```\n\nincludes\n\n```diff\n--- sage-4.5.alpha4-j20-env/local/bin/maxima    2010-07-08 02:40:13.000000000 -0700\n+++ sage-4.5.alpha4-j20/local/bin/maxima        2010-07-08 01:11:55.000000000 -0700\n@@ -9,10 +9,10 @@ setup_vars() {\n   if [ -z \"$MAXIMA_VERSION\" ]; then\n     MAXIMA_VERSION=5.20.1\n   fi\n-  prefix=`unixize \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha4-j20-env/local\"`\n+  prefix=`unixize \"/home/mpatel/scratch/tmp/sage-4.5.alpha4-j20/local\"`\n   exec_prefix=`unixize \"${prefix}\"`\n   PACKAGE=maxima\n-  top_srcdir=`unixize \"/mnt/usb1/scratch/mpatel/tmp/sage-4.5.alpha4-j20-env/spkg/build/maxima-5.20.1.p1/src\"`\n+  top_srcdir=`unixize \"/home/mpatel/scratch/tmp/sage-4.5.alpha4-j20/spkg/build/maxima-5.20.1.p1/src\"`\n   libdir=`unixize \"${exec_prefix}/lib\"`\n   if [ -n \"$MAXIMA_LAYOUT_AUTOTOOLS\" ]; then\n       layout_autotools=\"$MAXIMA_LAYOUT_AUTOTOOLS\"\n```\n\nNote: `/home/mpatel/scratch` is a symbolic link to `/scratch/mpatel`, which expands to `/mnt/usb1/scratch/mpatel/`.",
     "created_at": "2010-07-09T22:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90697",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90547",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -301,15 +301,15 @@ Note: `/home/mpatel/scratch` is a symbolic link to `/scratch/mpatel`, which expa
 
 ---
 
-archive/issue_comments_090698.json:
+archive/issue_comments_090548.json:
 ```json
 {
     "body": "I changed `cd $HOME/scratch/tmp` to `cd /mnt/usb1/scratch/mpatel/tmp` in `go` and rebuilt `sage-4.5.alpha4-j20-par` as `sage-4.5.alpha4-j20-par-mod`.  The long tests now *pass.*  Hmm...",
     "created_at": "2010-07-09T23:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90698",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90548",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -319,15 +319,15 @@ I changed `cd $HOME/scratch/tmp` to `cd /mnt/usb1/scratch/mpatel/tmp` in `go` an
 
 ---
 
-archive/issue_comments_090699.json:
+archive/issue_comments_090549.json:
 ```json
 {
     "body": "David Kirkby has had some suspicions about the way the disk storing the home directories on sage.math is set up.  I wonder if that's causing the problem here.",
     "created_at": "2010-07-10T00:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90699",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90549",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -337,15 +337,15 @@ David Kirkby has had some suspicions about the way the disk storing the home dir
 
 ---
 
-archive/issue_comments_090700.json:
+archive/issue_comments_090550.json:
 ```json
 {
     "body": "There is definitely a problem.  I tried rebuilding with the new maxima and ecl packages (in sage-4.5.alpha4) and had a huge number of failures.   Building the same sage-4.5.alpha4, but with the older maxima and ecl packages entirely fixes the problem.\n\n> David Kirkby has had some suspicions about the way the disk storing the home directories on \n> sage.math is set up. I wonder if that's causing the problem here.\n\nThat could be.  If true, it definitely means that we have a serious bug in Sage -- not our filesystem.    Here's my build setup:\n\n* I make a symlink:   /home/wstein/build -> /scratch/wstein/build\n* I build in /home/wstein/build.\n\nWilliam",
     "created_at": "2010-07-10T05:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90700",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90550",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -365,15 +365,15 @@ William
 
 ---
 
-archive/issue_comments_090701.json:
+archive/issue_comments_090551.json:
 ```json
 {
     "body": "I can only tell I've successfully built Sage 4.5.alpha0, alpha1 and alpha4 with a similar link in my home directory to a different local filesystem, running `make` in the directory which is a symbolic link (Ubuntu 9.04).\n\nI wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.",
     "created_at": "2010-07-10T06:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90701",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90551",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -385,15 +385,15 @@ I wonder if what Mitesh and William observed is really reproducible, or just a s
 
 ---
 
-archive/issue_comments_090702.json:
+archive/issue_comments_090552.json:
 ```json
 {
     "body": "Replying to [comment:15 leif]:\n> I wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.\n\nIt's reproducible since:\n\n  (1) I can systematically reproduce it, and \n  (2) Mitesh independently reproduced it.\n\nThat's pretty much the definition of reproducible.\n\nI think we should revert the maxima and ecl spkg's, and release 4.5 without them, then sort this out in 4.5.1.",
     "created_at": "2010-07-10T07:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90702",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90552",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -413,15 +413,15 @@ I think we should revert the maxima and ecl spkg's, and release 4.5 without them
 
 ---
 
-archive/issue_comments_090703.json:
+archive/issue_comments_090553.json:
 ```json
 {
     "body": "I mean I cannot see any reasonable cause in Mitesh's script vs. command line procedure; John has successfully built with your `buildbot` script. Reinstalling the packages or even just moving Sage seemed to solve the problems.\n\nIt's obviously an ECL/Maxima issue, but I think either related to uncatched or badly handled filesystem errors, or ECL again messing things up in concurrent builds.\n\nSo I'm not that sure that it's the package *version*, rather than the *build circumstances*.",
     "created_at": "2010-07-10T07:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90703",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90553",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -435,15 +435,15 @@ So I'm not that sure that it's the package *version*, rather than the *build cir
 
 ---
 
-archive/issue_comments_090704.json:
+archive/issue_comments_090554.json:
 ```json
 {
     "body": "Replying to [comment:16 was]:\n> Replying to [comment:15 leif]:\n> > I wonder if what Mitesh and William observed is really reproducible, or just a strange coincidence.\n> \n> It's reproducible since:\n> \n>   (1) I can systematically reproduce it, and \n>   (2) Mitesh independently reproduced it.\n> \n> That's pretty much the definition of reproducible.\n\nI should have written *deterministic*.",
     "created_at": "2010-07-10T08:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90704",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90554",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -464,15 +464,15 @@ I should have written *deterministic*.
 
 ---
 
-archive/issue_comments_090705.json:
+archive/issue_comments_090555.json:
 ```json
 {
     "body": "Replying to [comment:14 was]:\n\n> > David Kirkby has had some suspicions about the way the disk storing the home directories on \n> > sage.math is set up. I wonder if that's causing the problem here.\n> \n> That could be.  If true, it definitely means that we have a serious bug in Sage -- not our filesystem.    Here's my build setup:\n> \n>    * I make a symlink:   /home/wstein/build -> /scratch/wstein/build\n>    * I build in /home/wstein/build.\n> \n> William\n\nIn this case, since William's '/scratch', I would tend to agree the bug is in Sage, not the file system. That said, I am not 100% sure, since you are mounting a local file sysmem on an NFS one. If the NFS one can't be trust, can the file system that's mounted on the NFS one? I would however tend to think it would be OK, but I'm not 100% sure. \n\nI know for a fact there are issues on 't2' with the NFS file system exported by 'disk - it is clearly logged\n\n\n```\nJul  6 12:06:06 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_SETATTR got error NFS4ERR_DELAY causing recovery action NR_DELAY.\nJul  6 12:06:06 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_CLOSE got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul  6 12:06:06 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File ./palmieri/t2/sage-4.5.alpha3/local/bin/python2.6 (rnode_pt: 3003cad4018) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJul  6 12:06:06 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJul  6 12:06:06 t2  Action: NR_STALE \nJul  6 12:06:06 t2  NFS4 error: NFS4ERR_STALE   \nJul  6 13:25:28 t2 nfs: [ID 236337 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]NFS op OP_CLOSE got error NFS4ERR_STALE causing recovery action NR_STALE.\nJul  6 13:25:28 t2 nfs: [ID 286389 kern.info] NOTICE: [NFS4][Server: disk][Mntpt: /home]File ./palmieri/t2/sage-4.5.alpha3/local/lib/gap-4.4.12/bin/gap.sh (rnode_pt: 6004da64c50) was closed due to NFS recovery error on server disk(failed to recover from NFS4ERR_STALE NFS4ERR_STALE)\nJul  6 13:25:28 t2 nfs: [ID 941083 kern.info] NOTICE: NFS4 FACT SHEET: \nJul  6 13:25:28 t2  Action: NR_STALE \nJul  6 13:25:28 t2  NFS4 error: NFS4ERR_STALE   \n```\n\n\nI would bet a pound to a penny this is a result of disabling the ZIL Log, which is bad practice - see [Disabling the ZIL (Don't)](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)",
     "created_at": "2010-07-10T08:26:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90705",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90555",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -514,15 +514,15 @@ I would bet a pound to a penny this is a result of disabling the ZIL Log, which 
 
 ---
 
-archive/issue_comments_090706.json:
+archive/issue_comments_090556.json:
 ```json
 {
     "body": "Replying to [comment:19 drkirkby]:\n> I would bet a pound to a penny this is a result of disabling the ZIL Log, which is bad practice - see [Disabling the ZIL (Don't)](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)\n> \nJust to quote from [Disabling the ZIL (Don't) ](http://www.solarisinternals.com/wiki/index.php/ZFS_Evil_Tuning_Guide#Disabling_the_ZIL_.28Don.27t.29)\n\n\"Caution: Disabling the ZIL on an NFS server can lead to client side corruption. The ZFS pool integrity itself is not compromised by this tuning.\"",
     "created_at": "2010-07-10T08:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90706",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90556",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -537,15 +537,15 @@ Just to quote from [Disabling the ZIL (Don't) ](http://www.solarisinternals.com/
 
 ---
 
-archive/issue_comments_090707.json:
+archive/issue_comments_090557.json:
 ```json
 {
     "body": "I'm attaching a log of \n\n$ make ptestlong\n\non sage.math. I did forget, and actually built this in $HOME, not on a scratch disk. However, I did not use a script. \n\nUltimately there are 4 failures. \n\n\n```\nThe following tests failed:\n\n\tsage -t  -long devel/sage/sage/interfaces/expect.py # 11 doctests failed\n\tsage -t  -long devel/sage/sage/interfaces/r.py # 184 doctests failed\n\tsage -t  -long devel/sage/sage/stats/r.py # 1 doctests failed\n\tsage -t  -long devel/sage/sage/tests/startup.py # 1 doctests failed\n----------------------------------------------------------------------\n```\n\n\nAll Maxima tests appear to have passed as far as I can see.\n\nOne possibility for the changed behavior might be the changes to 'deps'. This is now much better than it was before, with more accurate rules about the order things are built. This could mean that the build order has changed from previous versions of Sage and possibly libraries in Sage are now used when before the system libraries might be used - or visa versa. \n\nAnother useful to track this might be to write a script that\n* Build Sage with the old maxima. Run just the maxima test to reduce the time. \n* Build Sage with the old ECL. Run just the maxima test to reduce the time. \n* Build Sage with the old maxima and old ECL. Run just the maxima test to reduce the time. \n* Build Sage with the new Maxima and new ECL. Run just the maxima test to reduce the time. \n\nRepeat the above 10 times. Then look at the results, and see if failures are correlated or not. \n \nI see from his comment above William rolled back Maxima, and started a build. That has now finished. All his Maxima tests pass, but he gets this failure - which is new as far as I can see. I've just built Sage on sage.math without this failure. \n\nhttp://sage.math.washington.edu/home/wstein/build/sage-4.5.alphastein1/testlong.log\n\n```\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\"\nTotal time for all tests: 8270.6 seconds\n```\n\n\nWhy should changing Maxima make `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` fail? I suspect the real cause of these problems might not be Maxima at all. There appears to be sporadic problems in this release of Sage (William for example failed to get R to build on OS X, but that works for me). \n\nThis is a shame, as I know Robert has put a lot of effort into this release. I was actually expecting it to be one of the more stable Sage releases - which hopefully it will be, once the problem is resolved. \n\nIs it possible GPLK is responsible for this? That is a new standard package. I agree it seems unlikely, but I'm not convinced it is just a Maxima issue. Most likely is a build issue, which makes me think 'deps' might be the cause. \n\nDave",
     "created_at": "2010-07-10T09:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90707",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90557",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -607,15 +607,15 @@ Dave
 
 ---
 
-archive/issue_comments_090708.json:
+archive/issue_comments_090558.json:
 ```json
 {
     "body": "Tests on sage.math. Built in $HOME, not on /scratch. A script was not used.",
     "created_at": "2010-07-10T09:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90708",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90558",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -625,15 +625,15 @@ Tests on sage.math. Built in $HOME, not on /scratch. A script was not used.
 
 ---
 
-archive/issue_comments_090709.json:
+archive/issue_comments_090559.json:
 ```json
 {
     "body": "Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9460/ptestlong.log) by drkirkby created at 2010-07-10 09:30:58\n\nReplying to [comment:17 leif]:\n\n> It's obviously an ECL/Maxima issue, but I think either related to uncatched or badly handled filesystem errors, or ECL again messing things up in concurrent builds.\n> \n> So I'm not that sure that it's the package *version*, rather than the *build circumstances*.\n> \n\nI too think this is the build problem. \n* Why should William now get a failure of `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` when I assume that worked before? `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py` passed on sage.math when I built it.  \n* Why should Maxima pass all tests for me, and all tests for John, yet fail for Metesh and William? \n* Why should I get 4 failures when I build on sage.math, which don't share anything in common with the failures observed by William? \n\nI think one pass with the old Maxima and old ECL does not prove the problem is with ECL and/or Maxima. Since there issues which are not 100% reproducible, I fail to see how one good build by one person proves anything. (And even \"good build\" is not really true, as there is the elliptic curves test failed). \n\nIMHO, just changing ECL and Maxima and producing a 4.5 would be unwise until there is more proof there is not another more subtle error. \n\n\nI've just run 'dmesg' on sage.math and don't see anything like uncorrected RAM errors. In fact, I don't see any corrected RAM errors, so I doubt it is a memory fault. \n\nDave",
     "created_at": "2010-07-10T09:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90709",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90559",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -664,15 +664,15 @@ Dave
 
 ---
 
-archive/issue_comments_090710.json:
+archive/issue_comments_090560.json:
 ```json
 {
     "body": "Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around? \n\n\n```\nkirkby@sage:~/sage-4.5.alpha4$ ls -lrt spkg/installed | egrep \"maxima|sage-4.5.alpha4\"\n-rw-r--r-- 1 kirkby kirkby 265 2010-07-09 08:41 sage-4.5.alpha4\n-rw-r--r-- 1 kirkby kirkby 266 2010-07-09 08:51 maxima-5.20.1.p1\n```\n\n\nI'm going to create a 'deps' file which will ensure Maxima builds before Sage. Give that a try. \n\nDave",
     "created_at": "2010-07-10T09:38:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90710",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90560",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -694,15 +694,15 @@ Dave
 
 ---
 
-archive/issue_comments_090711.json:
+archive/issue_comments_090561.json:
 ```json
 {
     "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket9460/deps) by drkirkby created at 2010-07-10 09:44:46\n\nDeps file, which 1) Makes Maxima build before Sage 2) Makes SAGETEX depend on BASE. 3) Makes R dependancy on Fortran clearer, though not necessary",
     "created_at": "2010-07-10T09:44:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90711",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90561",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -714,15 +714,15 @@ Deps file, which 1) Makes Maxima build before Sage 2) Makes SAGETEX depend on BA
 
 ---
 
-archive/issue_comments_090712.json:
+archive/issue_comments_090562.json:
 ```json
 {
     "body": "Difference from the deps file in sage-4.5.alpha4.",
     "created_at": "2010-07-10T09:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90712",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90562",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -732,15 +732,15 @@ Difference from the deps file in sage-4.5.alpha4.
 
 ---
 
-archive/issue_comments_090713.json:
+archive/issue_comments_090563.json:
 ```json
 {
     "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket9460/deps.diff) by @nexttime created at 2010-07-10 10:40:17\n\nReplying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around?\n\nIn my *sequential* build, the Sage library was built **before** Maxima, while the other way around in the *parallel* build.\n\nBoth builds passed all doctests (`ptestlong`).",
     "created_at": "2010-07-10T10:40:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90713",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90563",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -757,15 +757,15 @@ Both builds passed all doctests (`ptestlong`).
 
 ---
 
-archive/issue_comments_090714.json:
+archive/issue_comments_090564.json:
 ```json
 {
     "body": "I haven't test this extensively, but I have the same problem with the Maxima spkg at #8731.",
     "created_at": "2010-07-11T09:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90714",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90564",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -775,15 +775,15 @@ I haven't test this extensively, but I have the same problem with the Maxima spk
 
 ---
 
-archive/issue_comments_090715.json:
+archive/issue_comments_090565.json:
 ```json
 {
     "body": "If we do revert ECL and Maxima, which changes from #8645 and #9264 should we backport?",
     "created_at": "2010-07-11T09:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90715",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90565",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -793,15 +793,15 @@ If we do revert ECL and Maxima, which changes from #8645 and #9264 should we bac
 
 ---
 
-archive/issue_comments_090716.json:
+archive/issue_comments_090566.json:
 ```json
 {
     "body": "Replying to [comment:26 mpatel]:\n> If we do revert ECL and Maxima, which changes from #8645 and #9264 should we backport?\n\nI think revert ECL and Maxima is just a *very* temporary reversion so that we can release sage-4.5.   This reversion is just until we can fix whatever bug was introduced in these new packages, and hopefully we'll put them back in for sage-4.5.1.\n\nWe really need to get sage-4.5 out the door.",
     "created_at": "2010-07-11T10:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90716",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90566",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -816,15 +816,15 @@ We really need to get sage-4.5 out the door.
 
 ---
 
-archive/issue_comments_090717.json:
+archive/issue_comments_090567.json:
 ```json
 {
     "body": "Just reverting ECL will break the build on both Solaris 10 and OpenSolaris, since\n\n* ECL is leaving files in /tmp which means building on 't2' is unreliable - OK for one person, but stops the next person until root deletes files. Patch at http://trac.sagemath.org/sage_trac/attachment/ticket/8951/clear-ECL-from-tmp.patch\n* ECL includes assembly code on OpenSolaris which stops that building. Patch at http://trac.sagemath.org/sage_trac/attachment/ticket/8089/disable-assembly-code-on-OpenSolaris.patch\n\nI've created #9474 for this. I should have a package ready in 15 minutes or so. \n\nAs a matter of interest, does William have any idea why after reverting ECL and Maxima, his build still failed with `devel/sage/sage/schemes/elliptic_curves/lseries_ell.py`? \n\n\nDave",
     "created_at": "2010-07-11T11:39:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90717",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90567",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -844,15 +844,15 @@ Dave
 
 ---
 
-archive/issue_comments_090718.json:
+archive/issue_comments_090568.json:
 ```json
 {
     "body": "> As a matter of interest, does William have any idea why after reverting ECL and Maxima,\n>  his build still failed with devel/sage/sage/schemes/elliptic_curves/lseries_ell.py?\n\nThat was caused by memory fragmentation on sage.math -- it has nothing to do with Sage itself.   So no worries at all.\n\n```\nsage -t  -long \"devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\"\n  ***   not enough memory\nAborted\n  ***   not enough memory\nAborted**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\", line 226:\n    sage: E.lseries().zeros(2)\nExpected:\n    [0.000000000, 5.00317001]\nGot:\n    []\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/schemes/elliptic_curves/lseries_ell.py\", line 230:\n    sage: point([(1,x) for x in a])             # graph  (long time)\nException raised:\n }}}",
     "created_at": "2010-07-11T12:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90718",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90568",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -883,15 +883,15 @@ Exception raised:
 
 ---
 
-archive/issue_comments_090719.json:
+archive/issue_comments_090569.json:
 ```json
 {
     "body": "Is it reproducible that the Maxima failures on sage.math vanish by doing `./sage -f maxima-5.20.1.p1` (i.e. forcing reinstallation)?\n\nThen we could try just building Maxima as the **last** package, after all other packages have been built (or even temporarily force reinstallation as the last build step just to get 4.5 working).\n\nP.S.: Dave has built a [ecl-10.2.1.p0.spkg](http://boxen.math.washington.edu/home/kirkby/patches/ecl-10.2.1.p0.spkg) (for downgrading ECL to 10.**2**.1) to fix the SunOS/Solaris issues he mentioned above (see #9474).",
     "created_at": "2010-07-11T13:22:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90719",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90569",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -905,15 +905,15 @@ P.S.: Dave has built a [ecl-10.2.1.p0.spkg](http://boxen.math.washington.edu/hom
 
 ---
 
-archive/issue_comments_090720.json:
+archive/issue_comments_090570.json:
 ```json
 {
     "body": "> Then we could try just building Maxima as the last package, after all other packages have been \n> built (or even temporarily force reinstallation as the last build step just to get 4.5 working).\n\nThat's a really cool idea (!)",
     "created_at": "2010-07-11T13:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90720",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90570",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -926,15 +926,15 @@ That's a really cool idea (!)
 
 ---
 
-archive/issue_comments_090721.json:
+archive/issue_comments_090571.json:
 ```json
 {
     "body": "I still suspect ECL for the whole mess, creating lots of `/tmp/ECLINIT??????.?` files. I'm not sure if that happens in a really safe way on a multi-user system (with lots of concurrent builds).\n\nOn the other hand, then failing *builds* would be more likely, rather than \"successful\" builds with failing doctests, but perhaps not all build failures are catched. And there have been doctest failures completely(?) unrelated to Maxima and ECL, like `pi in RR` evaluating to `False` IIRC.",
     "created_at": "2010-07-11T15:02:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90721",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90571",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -946,15 +946,15 @@ On the other hand, then failing *builds* would be more likely, rather than "succ
 
 ---
 
-archive/issue_comments_090722.json:
+archive/issue_comments_090572.json:
 ```json
 {
     "body": "Replying to [comment:32 leif]:\n> ... completely(?) unrelated to Maxima and ECL, like `pi in RR` evaluating to `False` IIRC.\n\nOh, at least that example *starts* a Maxima process... :/",
     "created_at": "2010-07-11T15:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90722",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90572",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -967,15 +967,15 @@ Oh, at least that example *starts* a Maxima process... :/
 
 ---
 
-archive/issue_comments_090723.json:
+archive/issue_comments_090573.json:
 ```json
 {
     "body": "\n```\n$ grep warn_unused_result sage-4.5.alpha4/spkg/logs/ecl-10.4.1.log \n.../ecl-10.4.1/src/src/c/num_rand.d:73: warning: ignoring return value of 'fread', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:421: warning: ignoring return value of 'pipe', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:437: warning: ignoring return value of 'pipe', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:470: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:473: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n.../ecl-10.4.1/src/src/c/unixsys.d:476: warning: ignoring return value of 'dup', declared with attribute warn_unused_result\n```\n",
     "created_at": "2010-07-11T15:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90723",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90573",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -995,15 +995,15 @@ $ grep warn_unused_result sage-4.5.alpha4/spkg/logs/ecl-10.4.1.log
 
 ---
 
-archive/issue_comments_090724.json:
+archive/issue_comments_090574.json:
 ```json
 {
     "body": "Is it possible that those of you who have seen failures have some crap lying around in /tmp which is interfering with your build and/or doctesting?  I'm still trying to understand why some people have problems and others don't.",
     "created_at": "2010-07-11T16:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90724",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90574",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1013,33 +1013,15 @@ Is it possible that those of you who have seen failures have some crap lying aro
 
 ---
 
-archive/issue_comments_090725.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2010-07-11T19:16:57Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/9460",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90725",
-    "user": "@rlmill"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_090726.json:
+archive/issue_comments_090575.json:
 ```json
 {
     "body": "I've reverted #8645 and #9264 in sage-4.5.rc0.",
     "created_at": "2010-07-11T19:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90726",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90575",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -1049,15 +1031,15 @@ I've reverted #8645 and #9264 in sage-4.5.rc0.
 
 ---
 
-archive/issue_comments_090727.json:
+archive/issue_comments_090576.json:
 ```json
 {
     "body": "Just for the record:\n\nI've \"cloned\" Sage 4.5.alpha4 (with SageNB 0.8.1 and zodb3 3.7.0.p4), then downgraded ECL to 10.2.1**.p0** (Dave's spkg) and Maxima to 5.20.1.p0 by forcing \"reinstallation\" (`./sage -f ...`).\n\nWith that version, all tests passed in `ptestlong`, `ptest` reported \"0 doctests failed\" in the French tutorial's `index.rst` (where I wouldn't have expected any doctests, btw). Testing just that file gave no errors.\n\nI haven't had any doctest failures on that system with Sage 4.5.alpha4 though, so I can't tell if this is an improvement, but at least there is no regression for me.\n\n(Ubuntu 9.04 x86, gcc 4.3.3, sequential build)",
     "created_at": "2010-07-12T01:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90727",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90576",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1075,15 +1057,15 @@ I haven't had any doctest failures on that system with Sage 4.5.alpha4 though, s
 
 ---
 
-archive/issue_comments_090728.json:
+archive/issue_comments_090577.json:
 ```json
 {
     "body": "Replying to [comment:35 jhpalmieri]:\n> Is it possible that those of you who have seen failures have some crap lying around in /tmp which is interfering with your build and/or doctesting?  I'm still trying to understand why some people have problems and others don't.\n\nIf things in /tmp are a problem, then I feel that should be considered a bug. One should be able to write something to /tmp and some other package not read or write the same file. (That's currently happening on t2, which the ECL developer admits is an ECL bug. He assumed temporary file names created by 'mktemp' can't have a dot in their name, but that is not required by POSIX standards, and occasionally on Solaris tmp files have a dot in their name.) But I suspect mktemp on Linux does not use a dot, otherwise the issue would have been noticed before. \n\nI've seen failures with sage-4.5.alpha4 which are repeatable but go away as soon as I do an rm -r of $HOME/.sage. However, they were unrelated to the Maxima issues. \n\nThis bug sure is weird. It might depend on what way the wind is blowing or the longitude. Has anyone in Europe seen this bug? \n\nIf the system is low on memory, it could mean Sage mis-compiles. It would probably be worth logging the free memory 20 seconds or so, to see if it runs low. There are probably times of the day (i.e. longitude) where the system gets more use and so memory is lower. \n\nDave",
     "created_at": "2010-07-12T10:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90728",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90577",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1104,15 +1086,15 @@ Dave
 
 ---
 
-archive/issue_comments_090729.json:
+archive/issue_comments_090578.json:
 ```json
 {
     "body": "Some more information, which may or may not be useful:\n\n* In my tests at #9274, I tried making the Sage package depend on Maxima in `deps`, but the problems remained.\n\n* I have the same problem if I move `~/.bash*`, `~/.inputrc`, and `~/.profile` to another location, log out, log in, and build 4.5.alpha4 with the `go` script mentioned above.\n\n* I have the same problem (with 4.5.alpha4) on sage.math with William's [buildbot](http://sage.math.washington.edu/home/wstein/buildbot) setup.  I did\n\n```sh\n$ cd\n$ cp ~wstein/buildbot .\n$ mkdir /scratch/mpatel/build\n$ ln -s /scratch/mpatel/build .\n$ ./buildbot\n```\n\n   in a screen session.\n\n* Removing `/tmp` files owned by me and `~/.sage` also didn't help.",
     "created_at": "2010-07-14T22:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90729",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90578",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -1140,15 +1122,15 @@ $ ./buildbot
 
 ---
 
-archive/issue_comments_090730.json:
+archive/issue_comments_090579.json:
 ```json
 {
     "body": "But building/testing 4.5.alpha4 in `/dev/shm` on sage.math works for me.  I did\n\n```sh\n$ cd\n$ mkdir -p /dev/shm/mpatel\n$ ln -s /dev/shm/mpatel SHM\n$ cd SHM\n$ emacs -nw go  # Replace 'cd $HOME/scratch/tmp' with 'cp $HOME/SHM' in \"go\" script above\n$ nohup go &\n```\n",
     "created_at": "2010-07-18T10:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90730",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90579",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -1168,15 +1150,15 @@ $ nohup go &
 
 ---
 
-archive/issue_comments_090731.json:
+archive/issue_comments_090580.json:
 ```json
 {
     "body": "Replying to [comment:23 drkirkby]:\n> Given Maxima has a library interface, should Maxima not be built before the Sage library, rather than the other way around? \n\nThis should not matter. the \"library\" maxima.fas is an ECL library that can be loaded into ECL completely dynamically. It is currently not used in sage anyway, but even if it were, maxima.fas does not have to be present at build-time - only at runtime.",
     "created_at": "2010-07-30T06:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90731",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90580",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -1189,15 +1171,15 @@ This should not matter. the "library" maxima.fas is an ECL library that can be l
 
 ---
 
-archive/issue_comments_090732.json:
+archive/issue_comments_090581.json:
 ```json
 {
     "body": "Does this still need to be open?",
     "created_at": "2010-08-20T15:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90732",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1207,15 +1189,15 @@ Does this still need to be open?
 
 ---
 
-archive/issue_comments_090733.json:
+archive/issue_comments_090582.json:
 ```json
 {
     "body": "Replying to [comment:42 drkirkby]:\n> Does this still need to be open? \n\nI still get the same types of failures with a 4.5.alpha4 I compiled today with the [comment:2 go script above] on sage.math.  Is the ZIL is still disabled on the Sage cluster?  I don't know if the plan is to enable it permanently, but it might help to do it temporarily, if it's practical, and revisit this ticket and #9501.\n\nAccording to [comment:ticket:8731:40 this comment] at #8731, there's now a newer upstream release of Maxima.  I don't know if it will help here.",
     "created_at": "2010-08-20T21:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90733",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90582",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -1230,15 +1212,15 @@ According to [comment:ticket:8731:40 this comment] at #8731, there's now a newer
 
 ---
 
-archive/issue_comments_090734.json:
+archive/issue_comments_090583.json:
 ```json
 {
     "body": "Replying to [comment:43 mpatel]:\n> Replying to [comment:42 drkirkby]:\n> > Does this still need to be open? \n> \n> I still get the same types of failures with a 4.5.alpha4 I compiled today with the [comment:2 go script above] on sage.math.  Is the ZIL is still disabled on the Sage cluster?  I don't know if the plan is to enable it permanently, but it might help to do it temporarily, if it's practical, and revisit this ticket and #9501.\n\nHere's the situation. \n\n[ZFS](http://en.wikipedia.org/wiki/ZFS) is the file system used on the main server disk.math. The ZFS Intent Log (ZIL) was disabled by William long ago (> 1 year). It speeds up NFS writes considerably, but it risks data corruption on the NFS clients (sage.math, t2.math, boxen.math etc). IMHO, this is a very bad idea. \n\nWilliam has three choices\n* Leave the ZIL disabled and risk data corruption. \n* Re-enable the ZIL, get valid data, but at a cost of a dramatic slow down in NFS speed. \n* Buy a fast solid state disk. Then configure the storage pool so the ZIL is written to the fast solid state disk. The disk does not need to be large (even 100 MB would be sufficient), but it needs to be a good quality enterprise grade disks. Logging to a USB memory stick would not be a good idea. \n\nI've made William aware of this long ago. What he does is up to him. As far as I'm aware, the ZIL is disabled. Therefore, I would not trust any file in the home directories at all. I would only trust the disks locally mounted on the machines. If the problem goes away when things are built in \n\nLooking on sage.math, I see `/mnt/usb1/scratch` is locally mounted, so that should not suffer the problems the NFS mounted directories have. (I'm a bit suspicious that `/mnt/usb1 ` might actually be a USB mounted hard drive, which undoubtedly uses a consumer grade disk. The disks on a server like sage.math should not be on USB connectors, which is what that device name implies to me.)\n\n`/scratch` on 't2.math' is a high quality local disk, so I trust that as much as you can trust any single hard drive. It is not backed up and its not mirrored. \n\n> According to [comment:ticket:8731:40 this comment] at #8731, there's now a newer upstream release of Maxima.  I don't know if it will help here.\n\nI've no idea. \n\nWe did try updating both ECL and Maxima recently, and it all went pear shaped. I don't think that has been resolved. I've rather lost track of what happened over that. \n\nDave",
     "created_at": "2010-08-20T23:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90734",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1275,15 +1257,15 @@ Dave
 
 ---
 
-archive/issue_comments_090735.json:
+archive/issue_comments_090584.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2013-04-26T01:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90735",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90584",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1293,15 +1275,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_090736.json:
+archive/issue_comments_090585.json:
 ```json
 {
     "body": "Is this still an issue?",
     "created_at": "2013-04-26T01:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90736",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90585",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1311,15 +1293,15 @@ Is this still an issue?
 
 ---
 
-archive/issue_comments_090737.json:
+archive/issue_comments_090586.json:
 ```json
 {
     "body": "I'm guessing this ticket is obsolete.",
     "created_at": "2014-11-21T10:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90737",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90586",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1329,15 +1311,15 @@ I'm guessing this ticket is obsolete.
 
 ---
 
-archive/issue_comments_090738.json:
+archive/issue_comments_090587.json:
 ```json
 {
     "body": "Changing status from needs_info to positive_review.",
     "created_at": "2014-11-21T10:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90738",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90587",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1347,15 +1329,15 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_comments_090739.json:
+archive/issue_comments_090588.json:
 ```json
 {
     "body": "Given that that machine is gone... sage.math is dead, long live sage.math!",
     "created_at": "2014-11-21T13:25:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90739",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90588",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1365,15 +1347,15 @@ Given that that machine is gone... sage.math is dead, long live sage.math!
 
 ---
 
-archive/issue_comments_090740.json:
+archive/issue_comments_090589.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2014-11-28T18:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90740",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9460#issuecomment-90589",
+    "user": "https://github.com/vbraun"
 }
 ```
 

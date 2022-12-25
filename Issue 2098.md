@@ -6,15 +6,13 @@ archive/issues_002098.json:
     "body": "Assignee: @timabbott\n\nAdd spkg-build-debian, and hook it in to sage-spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2098\n\n",
     "created_at": "2008-02-08T03:51:37Z",
     "labels": [
-        "debian-package",
-        "major",
-        "enhancement"
+        "component: debian-package"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch; needs review] rudimentary debian package build support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2098",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2098
 
 ---
 
-archive/issue_comments_013569.json:
+archive/issue_comments_013538.json:
 ```json
 {
     "body": "Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debian1.patch) by @timabbott created at 2008-02-08 03:52:53",
     "created_at": "2008-02-08T03:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13569",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13538",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [debian1.patch](tarball://root/attachments/some-uuid/ticket2098/debia
 
 ---
 
-archive/issue_comments_013570.json:
+archive/issue_comments_013539.json:
 ```json
 {
     "body": "Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debian2.patch) by @timabbott created at 2008-02-08 21:40:07",
     "created_at": "2008-02-08T21:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13570",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13539",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -65,15 +63,15 @@ Attachment [debian2.patch](tarball://root/attachments/some-uuid/ticket2098/debia
 
 ---
 
-archive/issue_comments_013571.json:
+archive/issue_comments_013540.json:
 ```json
 {
     "body": "Attachment [debian4.patch](tarball://root/attachments/some-uuid/ticket2098/debian4.patch) by @timabbott created at 2008-02-10 02:07:43",
     "created_at": "2008-02-10T02:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13571",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13540",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -83,15 +81,15 @@ Attachment [debian4.patch](tarball://root/attachments/some-uuid/ticket2098/debia
 
 ---
 
-archive/issue_comments_013572.json:
+archive/issue_comments_013541.json:
 ```json
 {
     "body": "sage-build-debian will probably eventually want to look something like this.  I'm not applying it as a patch because it'll break the previous patchset:\n\nDEBIAN_REPO would be set to point to a temporary Debian repository that is in the approx sources.list for SAGE, so that each package has its dependencies uploaded to the test repo when it comes time to build it for Debian.\n\n#!/bin/sh -x\necho \"Starting Debian build\"\n[ -d dist/debian ] || exit 0 # exit cleanly for packages we're using the Debian versions of\nmv dist/debian src/\nsage-dasource src/\nsage-sbuildhack \"$DEBIAN_RELEASE\" *.dsc || exit 1\nmkdir -p $SAGE_ROOT/deb\nDEBIAN_ARCH=$(echo lenny-amd64 | cut -f 2 -d-)\nreprepro -b $DEBIAN_REPO --ignore=wrongdistribution include *_${DEBIAN_ARCH}.changes\nmv *.dsc *.changes *.build *.deb *.tar.gz *.diff.gz /deb\necho \"Debian Build complete\"",
     "created_at": "2008-02-10T03:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13572",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13541",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -115,15 +113,15 @@ echo "Debian Build complete"
 
 ---
 
-archive/issue_comments_013573.json:
+archive/issue_comments_013542.json:
 ```json
 {
     "body": "The 5th patch is to the sage spkg, not sage_scripts.",
     "created_at": "2008-02-10T03:21:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13573",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13542",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -133,15 +131,15 @@ The 5th patch is to the sage spkg, not sage_scripts.
 
 ---
 
-archive/issue_comments_013574.json:
+archive/issue_comments_013543.json:
 ```json
 {
     "body": "Attachment [debian5.patch](tarball://root/attachments/some-uuid/ticket2098/debian5.patch) by @timabbott created at 2008-02-10 03:21:32",
     "created_at": "2008-02-10T03:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13574",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13543",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -151,15 +149,15 @@ Attachment [debian5.patch](tarball://root/attachments/some-uuid/ticket2098/debia
 
 ---
 
-archive/issue_comments_013575.json:
+archive/issue_comments_013544.json:
 ```json
 {
     "body": "Patches look good to me. I sat next to Tim as he wrote most of the code, so maybe somebody else wants to take another look. In the end we might need to generalize the code a little more for other packaging systems.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-14T13:07:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13575",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13544",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +171,15 @@ Michael
 
 ---
 
-archive/issue_comments_013576.json:
+archive/issue_comments_013545.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-14T15:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13576",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13545",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -191,15 +189,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_013577.json:
+archive/issue_comments_013546.json:
 ```json
 {
     "body": "Merged debian1.patch-debian5.patch in Sage 2.10.2.alpha0",
     "created_at": "2008-02-14T15:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13577",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13546",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -209,15 +207,15 @@ Merged debian1.patch-debian5.patch in Sage 2.10.2.alpha0
 
 ---
 
-archive/issue_comments_013578.json:
+archive/issue_comments_013547.json:
 ```json
 {
     "body": "Attachment [Sage-2.10.2.alpha2-fix-rudimentatry-Debian-support.patch](tarball://root/attachments/some-uuid/ticket2098/Sage-2.10.2.alpha2-fix-rudimentatry-Debian-support.patch) by mabshoff created at 2008-02-14 17:10:51\n\nThis patch is needed to make the non-Debianized build work again",
     "created_at": "2008-02-14T17:10:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2098",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13578",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2098#issuecomment-13547",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

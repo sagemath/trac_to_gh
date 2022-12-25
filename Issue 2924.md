@@ -6,15 +6,14 @@ archive/issues_002924.json:
     "body": "Assignee: tba\n\nJohn Palmieri pointed out that \n\nhttp://sagemath.org/doc/html/prog/node5.html\n\nis completely wrong. In particular, it bizarrely mentions Scipy (??), and tells one to use lowercase for class names.\n\n\n```\n2.1 Coding Conventions\nFollow the standard Python formatting rules when writing code for SciPy, as explained at http://www.python.org/doc/essays/styleguide.html. In particular,\n\n    * Use 4 spaces for indentation levels. Do not use tabs as they can result in indentation confusion. Most editors have a feature that will insert 4 spaces when the tab key is hit. Also, many editors will automatically search/replace leading tabs with 4 spaces.\n\n    * Use all lowercase function/class names with underscore separated words:\n\n              def set_some_value()\n\n      instead of:\n\n              def setSomeValue()\n\n      There is no differentiation between classes, functions, verbs, nouns, etc.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2924\n\n",
     "created_at": "2008-04-14T22:05:11Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "programming guide section on style is terrible!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2924",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2924
 
 ---
 
-archive/issue_comments_020134.json:
+archive/issue_comments_020093.json:
 ```json
 {
     "body": "Attachment [doc-2924.patch](tarball://root/attachments/some-uuid/ticket2924/doc-2924.patch) by @williamstein created at 2008-04-15 00:04:28",
     "created_at": "2008-04-15T00:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20134",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20093",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -70,15 +69,15 @@ Attachment [doc-2924.patch](tarball://root/attachments/some-uuid/ticket2924/doc-
 
 ---
 
-archive/issue_comments_020135.json:
+archive/issue_comments_020094.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-04-15T00:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20135",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20094",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -88,15 +87,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_020136.json:
+archive/issue_comments_020095.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha5",
     "created_at": "2008-04-15T00:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20136",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20095",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -106,15 +105,15 @@ Merged in Sage 3.0.alpha5
 
 ---
 
-archive/issue_comments_020137.json:
+archive/issue_comments_020096.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-15T00:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20137",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2924#issuecomment-20096",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

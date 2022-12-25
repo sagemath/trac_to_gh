@@ -6,7 +6,7 @@ archive/issues_001786.json:
     "body": "Assignee: @malb\n\n\n```\nvars = \",\".join([ 'c%s'%i for i in range(1, 23)])\nBR  = QQ[ 't,'+vars ].fraction_field()\nt = BR.gens()[0]\nMS = MatrixSpace(BR, 3, 3)\n\ndef x(alpha, k, c):\n    m = MS(1)\n    if alpha == 'a1':\n        m[0,1] = BR(c*t^k)\n    elif alpha == 'a2':\n        m[1,2] = BR(c*t^k)\n    elif alpha == 'phi':\n        m[0,2] = BR(c*t^k)\n    elif alpha == '-a1':\n        m[1,0] = BR(c*t^k)\n    elif alpha == '-a2':\n        m[2,1] = BR(c*t^k)\n    elif alpha == '-phi':\n        m[2,0] = BR(c*t^k)\n    return m\n    \n    \ndef n(alpha, k, c):\n    if alpha[0] == '-':\n        minusalpha = alpha[1:]\n    else:\n        minusalpha = \"-\"+alpha\n    return x(alpha, k, c)*x(minusalpha,-k,-1/c)*x(alpha, k, c)\n    \nn0 = n('-phi', 1, 1)\n\nn0*~n0\n```\n\n\ngives\n\n\n```\n\n/home/mike/<ipython console> in <module>()\n\n/home/mike/element.pyx in sage.structure.element.Matrix.__mul__()\n\n/home/mike/matrix0.pyx in sage.matrix.matrix0.Matrix._matrix_times_matrix_c_impl()\n\n/home/mike/matrix_generic_dense.pyx in sage.matrix.matrix_generic_dense.Matrix_generic_dense._multiply_classical()\n\n/home/mike/element.pyx in sage.structure.element.ModuleElement.__add__()\n\n/home/mike/coerce.pxi in sage.structure.element._add_c()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/fraction_field_element.py in _add_(self, right)\n    249         if self.parent().is_exact():\n    250             try:\n--> 251                 gcd_denom = self.__denominator.gcd(right.__denominator)\n    252                 if not gcd_denom.is_unit():\n    253                     right_mul = self.__denominator // gcd_denom\n\n/home/mike/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.gcd()\n\n/home/mike/parent.pyx in sage.structure.parent.Parent._coerce_c()\n\n/home/mike/multi_polynomial_libsingular.pyx in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular._coerce_c_impl()\n\n/home/mike/parent.pyx in sage.structure.parent.Parent._coerce_c()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/rational_field.py in _coerce_impl(self, x)\n    199                           sage.rings.rational.Rational)):\n    200             return self(x)\n--> 201         raise TypeError, 'no implicit coercion of element to the rational numbers'\n    202         \n    203     def coerce_map_from_impl(self, S):\n\n<type 'exceptions.TypeError'>: no implicit coercion of element to the rational numbers\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1786\n\n",
     "created_at": "2008-01-15T19:19:10Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001786.json:
     "title": "coercion error with fraction field of multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1786",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @malb
@@ -108,15 +108,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1786
 
 ---
 
-archive/issue_comments_011304.json:
+archive/issue_comments_011276.json:
 ```json
 {
     "body": "Attachment [1786.patch](tarball://root/attachments/some-uuid/ticket1786/1786.patch) by @mwhansen created at 2008-01-16 01:19:19",
     "created_at": "2008-01-16T01:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1786",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11304",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11276",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -126,15 +126,15 @@ Attachment [1786.patch](tarball://root/attachments/some-uuid/ticket1786/1786.pat
 
 ---
 
-archive/issue_comments_011305.json:
+archive/issue_comments_011277.json:
 ```json
 {
     "body": "Changing assignee from @malb to @mwhansen.",
     "created_at": "2008-01-16T01:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1786",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11305",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11277",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -144,15 +144,15 @@ Changing assignee from @malb to @mwhansen.
 
 ---
 
-archive/issue_comments_011306.json:
+archive/issue_comments_011278.json:
 ```json
 {
     "body": "The issue was that _pow_ was creating a new fraction field element with the numerator and denominator as fraction field elements rather than elements of the underlying ring.",
     "created_at": "2008-01-16T01:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1786",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11306",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11278",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -162,15 +162,15 @@ The issue was that _pow_ was creating a new fraction field element with the nume
 
 ---
 
-archive/issue_comments_011307.json:
+archive/issue_comments_011279.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-16T01:20:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1786",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11307",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11279",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -180,15 +180,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_011308.json:
+archive/issue_comments_011280.json:
 ```json
 {
     "body": "Looks good to me.  (Patch looks good, doctests pass in rings/.)",
     "created_at": "2008-01-16T02:04:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1786",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11308",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11280",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -198,15 +198,15 @@ Looks good to me.  (Patch looks good, doctests pass in rings/.)
 
 ---
 
-archive/issue_comments_011309.json:
+archive/issue_comments_011281.json:
 ```json
 {
     "body": "Merged in Sage 2.10.alpha4",
     "created_at": "2008-01-16T02:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1786",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11309",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11281",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -216,15 +216,15 @@ Merged in Sage 2.10.alpha4
 
 ---
 
-archive/issue_comments_011310.json:
+archive/issue_comments_011282.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-16T02:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1786",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11310",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1786#issuecomment-11282",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

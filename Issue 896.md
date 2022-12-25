@@ -6,7 +6,7 @@ archive/issues_000896.json:
     "body": "Assignee: @williamstein\n\nAround line 923:\n\n```\n    # TODO: TEMPORARILY DISABLED due to bug on 64-bit sage.math:\n    #  A = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n    # *** glibc detected *** free(): invalid next size (fast): 0x0000000000fb15e0 ***\n    # due to error in set_to memcpy on 64-bit\n    cdef matrix_window_c(self, Py_ssize_t row, Py_ssize_t col,\n                        Py_ssize_t nrows, Py_ssize_t ncols):\n```\n\nI ran \n\n```\nA = matrix(Integers(389),4,range(16)); A._echelon_strassen(4)\n```\n\nunder valgrind on sage.math and nothing turned up. So I believe this comment should be removed.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/896\n\n",
     "created_at": "2007-10-14T14:15:59Z",
     "labels": [
-        "modular forms",
+        "component: modular forms",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000896.json:
     "title": "remove obsolte comment in matrix_modn_dense.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/896",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -50,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/896
 
 ---
 
-archive/issue_comments_005517.json:
+archive/issue_comments_005499.json:
 ```json
 {
     "body": "Attachment [6718.patch](tarball://root/attachments/some-uuid/ticket896/6718.patch) by @mwhansen created at 2007-10-15 06:10:42",
     "created_at": "2007-10-15T06:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5517",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5499",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -68,15 +68,15 @@ Attachment [6718.patch](tarball://root/attachments/some-uuid/ticket896/6718.patc
 
 ---
 
-archive/issue_comments_005518.json:
+archive/issue_comments_005500.json:
 ```json
 {
     "body": "Thanks.  That bug was fixed about a year ago.  Good.",
     "created_at": "2007-10-19T01:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5518",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5500",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -86,15 +86,15 @@ Thanks.  That bug was fixed about a year ago.  Good.
 
 ---
 
-archive/issue_comments_005519.json:
+archive/issue_comments_005501.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-19T01:14:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5519",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/896#issuecomment-5501",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_009959.json:
     "body": "Assignee: @williamstein\n\nCC:  drkirkby @kcrisman @nexttime @qed777 @jdemeyer\n\nRight now, setting SAGE_CHECK to any nonempty string (e.g., \"no\") runs the test suite.  The documentation actually says that SAGE_CHECK should be \"yes\" for this to happen.  Fix this.\n\nWhile we're at it, fix something else: in the script SAGE_ROOT/local/bin/sage-env, SAGE64 is required to be \"yes\", \"no\", or unset:\n\n```\nif [ \"$SAGE64\" != \"yes\" -a \"$SAGE64\" != \"no\" ]; then\n    echo \"The environment variable SAGE64 (=$SAGE64) must be either unset, yes or no.\"\n    exit 1\nfi\n```\n\nThe problem is, whenever sage-env is run, output is redirected to /dev/null, so this error message isn't printed.  So for example:\n\n```\n$ export SAGE64='maybe'\n$ sage\n$\n```\n\nSage fails to run and is completely silent as to why.  Fix this, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9960\n\n",
     "created_at": "2010-09-21T16:39:37Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "require SAGE_CHECK to be \"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9959",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @williamstein
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9960
 
 ---
 
-archive/issue_comments_099676.json:
+archive/issue_comments_099511.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-21T16:41:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99676",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99511",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -68,15 +67,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_099677.json:
+archive/issue_comments_099512.json:
 ```json
 {
     "body": "By the way, if you look at sage-env, it rarely produces any output, so I don't see any reason to redirect it to /dev/null.  The lines\n\n```\n. $SAGE_ROOT/local/bin/sage-env   1>/dev/null 2>/dev/null\n\nif [ $? -ne 0 ]; then\n   echo \"Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\"\nfi\n```\n\nfrom the sage-sage script don't actually seem to print the warning message; I'm not sure why.  But it's clearer if it says\n\n```\n$ export SAGE64=dlkjdf\n$ sage\nThe environment variable SAGE64 (=dlkjdf) must be either unset, yes or no.\n```\n",
     "created_at": "2010-09-21T16:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99677",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99512",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -103,15 +102,15 @@ The environment variable SAGE64 (=dlkjdf) must be either unset, yes or no.
 
 ---
 
-archive/issue_comments_099678.json:
+archive/issue_comments_099513.json:
 ```json
 {
     "body": "I commented on this *somewhere* where I uploaded the \"first aid\" patch for spaces in `SAGE_ROOT`.\n\nRedirecting the output of `sage-env` is really bad, and the test of `$?` is almost useless, since `sage-env` is (and must be) sourced, so it must not `exit` [some value].\n\nThe `SAGE_CHECK` issue (interpreting everything except \"no\" as \"yes\") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but \"no\".",
     "created_at": "2010-09-21T17:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99678",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99513",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -125,15 +124,15 @@ The `SAGE_CHECK` issue (interpreting everything except "no" as "yes") is AFAIK a
 
 ---
 
-archive/issue_comments_099679.json:
+archive/issue_comments_099514.json:
 ```json
 {
     "body": "Replacing every occurrence of `exit` in `sage-env` by `return` should work (then testing `$?` makes sense); I wonder why Sage is started even if `sage-env` failed though. (I think *there* an `exit 1` is missing.)\n\nAnd we should quote all occurrences of `SAGE_ROOT`...",
     "created_at": "2010-09-21T17:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99679",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99514",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -145,15 +144,15 @@ And we should quote all occurrences of `SAGE_ROOT`...
 
 ---
 
-archive/issue_comments_099680.json:
+archive/issue_comments_099515.json:
 ```json
 {
     "body": "Any idea why `sage-build` doesn't **source** `sage-env`?!?",
     "created_at": "2010-09-21T17:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99680",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99515",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -163,15 +162,15 @@ Any idea why `sage-build` doesn't **source** `sage-env`?!?
 
 ---
 
-archive/issue_comments_099681.json:
+archive/issue_comments_099516.json:
 ```json
 {
     "body": "Replying to [comment:4 leif]:\n> I commented on this *somewhere* where I uploaded the \"first aid\" patch for spaces in `SAGE_ROOT`.\n\n#9644 (There' also a patch, including one to `sage-sage`.)",
     "created_at": "2010-09-21T17:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99681",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99516",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -184,15 +183,15 @@ Replying to [comment:4 leif]:
 
 ---
 
-archive/issue_comments_099682.json:
+archive/issue_comments_099517.json:
 ```json
 {
     "body": "Replying to [comment:4 leif]:\n> Redirecting the output of `sage-env` is really bad,\n\nI agree.\n\n> and the test of `$?` is almost useless, since `sage-env` is (and must be) sourced, so it must not `exit` [some value].\n\nOkay.\n\n> The `SAGE_CHECK` issue (interpreting everything except \"no\" as \"yes\") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but \"no\".\n\nI ran \"grep\" after unpacking all of the spkg's, and found SAGE_CHECK used in cliquer and mpir.  In both cases, it checks whether it's \"yes\".  (In the case of cliquer, this is done in spkg-install, but there is no spkg-check.  So it does the right thing -- running the test suite once if SAGE_CHECK is \"yes\", just not in the right way.  In the case of mpir, if SAGE_CHECK is yes, then the test suite gets run twice, once because of the main sage-spkg script, and once more in mpir's spkg-install script.  I thought there was a ticket for this, but I can't find it right now.)\n\n> Replacing every occurrence of exit in sage-env by return should work (then testing $? makes sense); I wonder why Sage is started even if sage-env failed though. (I think there an exit 1 is missing.)\n\nWhen do you see Sage starting if sage-env fails?\n\nI'll also take a look at #9644.  If I can give that a positive review, I'll change the patch here to make it depend on #9644.  (I may do that anyway...)  As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.",
     "created_at": "2010-09-21T19:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99682",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99517",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -219,15 +218,15 @@ I'll also take a look at #9644.  If I can give that a positive review, I'll chan
 
 ---
 
-archive/issue_comments_099683.json:
+archive/issue_comments_099518.json:
 ```json
 {
     "body": "Ah, the mpir issue is covered by #9522 and #8664.",
     "created_at": "2010-09-21T19:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99683",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99518",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -237,15 +236,15 @@ Ah, the mpir issue is covered by #9522 and #8664.
 
 ---
 
-archive/issue_comments_099684.json:
+archive/issue_comments_099519.json:
 ```json
 {
     "body": "Replying to [comment:8 jhpalmieri]:\n> Replying to [comment:4 leif]:\n> > The `SAGE_CHECK` issue (interpreting everything except \"no\" as \"yes\") is AFAIK a historical relict; some spkgs might still run the test suite from `spkg-install` if `SAGE_CHECK` is set and set to anything but \"no\".\n> \n> I ran \"grep\" after unpacking all of the spkg's, and found SAGE_CHECK used in cliquer and mpir.  In both cases, it checks whether it's \"yes\".\n\nOk. Maybe we already corrected the others.\n\n> > Replacing every occurrence of exit in sage-env by return should work (then testing $? makes sense); I wonder why Sage is started even if sage-env failed though. (I think there an exit 1 is missing.)\n> \n> When do you see Sage starting if sage-env fails?\n\nMy bad. I think this happened *after* I had replaced `exit` by `return` in `sage-env` (screen buffer):\n\n```\nError setting environment variables by running /home/leif/Sage/sage-4.6.alpha1-final/local/bin/sage-env; possibly contact sage-devel (see http://groups.google.com/group/sage-devel).\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage:\n```\n\n| Sage Version 4.6.alpha1, Release Date: 2010-09-18                  |\n| Type notebook() for the GUI, and license() for information.        |\n(But the same happens if `source` itself fails, e.g. because `sage-env` isn't found, likewise when `SAGE_ROOT` contains spaces.)\n\nBut if the error message ever gets printed, Sage shouldn't start. We currently have:\n\n```sh\n. $SAGE_ROOT/local/bin/sage-env   1>/dev/null 2>/dev/null\n\nif [ $? -ne 0 ]; then\n   echo \"Error setting environment variables by running $SAGE_ROOT/local/bin/sage-env; possibly cont\nact sage-devel (see http://groups.google.com/group/sage-devel).\"\nfi\n\n...\n\nsage() {\n    sage_setup\n    sage-ipython \"$@\" -i\n}\n\nif [ $# -eq 0 ]; then\n    sage\n    exit $?\nfi\n\n```\n\n\n\n> As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.\n\nI guess that's just an old flaw; calling it is of little use (will only *check* some things, but doesn't change the environment at all).\n\nSo give it a try and see what happens... ;-)\n\n(It *shouldn't*<sup>TM</sup> break anything.)",
     "created_at": "2010-09-21T19:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99684",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99519",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -317,15 +316,15 @@ So give it a try and see what happens... ;-)
 
 ---
 
-archive/issue_comments_099685.json:
+archive/issue_comments_099520.json:
 ```json
 {
     "body": "Since `sage-build` is (or should be) called from `sage-sage`, we can either source it again or completely omit the (second) call.",
     "created_at": "2010-09-21T19:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99685",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99520",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -335,15 +334,15 @@ Since `sage-build` is (or should be) called from `sage-sage`, we can either sour
 
 ---
 
-archive/issue_comments_099686.json:
+archive/issue_comments_099521.json:
 ```json
 {
     "body": "Replying to [comment:11 leif]:\n> Since `sage-build` is (or should be) called from `sage-sage`, we can either source it again or completely omit the (second) call.\n\n*Sourcing it* / *calling it* referred to `sage-env`.",
     "created_at": "2010-09-21T19:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99686",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99521",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -356,15 +355,15 @@ Replying to [comment:11 leif]:
 
 ---
 
-archive/issue_comments_099687.json:
+archive/issue_comments_099522.json:
 ```json
 {
     "body": "Replying to [comment:8 jhpalmieri]:\n\n> I'll also take a look at #9644.  If I can give that a positive review, I'll change the patch here to make it depend on #9644.  (I may do that anyway...)  As far as changing sage-build to source sage-env, could that break things?  The other changes here are pretty inocuous.\n\nI agree. \n\nJohn's changes are safe - the others may be desirable, but introduce extra risk. It would be a shame if this change got bounced out because larger changes were added to the ticket. Leif can always create another ticket to fix the other issues. \n\nI'm keen we improve the code in Sage, but I don't think making lots of changes to a package every time someone wants to make a minor change, is a good idea. Leif knows I was pulling my hair out when all I wanted to do was get iconv to build on HP-UX on #9603. \n\nOne point John, if you do change this patch, there's no need to quote xyes. Since you are absolutely 100% sure that the string xyes has no spaces in it, there's no need to quote it. It's different for a variable like $FOOBAR, where you don't know if it might have a space or not. \n\nTo my knowledge there's nothing in Sage which checks if SAGE64 is \"no\". The only value actually tested for is \"yes\", so it's a bit pointless permitting \"no\". \n\nDave",
     "created_at": "2010-09-21T20:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99687",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99522",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -388,15 +387,15 @@ Dave
 
 ---
 
-archive/issue_comments_099688.json:
+archive/issue_comments_099523.json:
 ```json
 {
     "body": "There are already other tickets around touching at least some of the patched files, too.\n\nI'd say adding the quotes around `SAGE_ROOT`, adding the `exit 1` if sourcing failed, and perhaps replacing `exit` by `return` in `sage-env` should be mandatory.\n\nIf we always postpone fixes, we'll never get far (and if one opens a new ticket for every \"minor\" thing at all, we'll most probably just increase the number of open tickets, with lots of rebasing being necessary if some of them finally get merged).\n\nJust my 2 cents.",
     "created_at": "2010-09-21T20:13:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99688",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99523",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -412,15 +411,15 @@ Just my 2 cents.
 
 ---
 
-archive/issue_comments_099689.json:
+archive/issue_comments_099524.json:
 ```json
 {
     "body": "Replying to [comment:14 leif]:\n> There are already other tickets around touching at least some of the patched files, too.\n> \n> I'd say adding the quotes around `SAGE_ROOT`, adding the `exit 1` if sourcing failed, and \n\nI won't argue with the `SAGE_ROOT`. I don't suppose John will. I've not looked at the exit, but that sounds sensible. \n\n> perhaps replacing `exit` by `return` in `sage-env` should be mandatory.\n\nIt adds extra risk. \n\n> If we always postpone fixes, we'll never get far (and if one opens a new ticket for every \"minor\" thing at all, we'll most probably just increase the number of open tickets, with lots of rebasing being necessary if some of them finally get merged).\n> \n> Just my 2 cents.\n\nYou will just frustrate people if you expect them to make many changes to fix a minor issue. Tickets will get left. John has kindly picked up on something that's not hurting his work, but he knows is wrong. Make it too difficult, and people will in general just give up and not bother with such tickets any more. \n\nThere's nothing wrong with having a cleanup ticket, where you can make all the changes you want - for example the Cliquer one #9870. \n\nDave",
     "created_at": "2010-09-21T20:38:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99689",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99524",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -449,15 +448,15 @@ Dave
 
 ---
 
-archive/issue_comments_099690.json:
+archive/issue_comments_099525.json:
 ```json
 {
     "body": "Replacing `exit` by `return` adds no risk if we **do** exit when `$? -ne 0`.\n\nNote that John's initial patch also did more than necessary for the ticket (or announced by its title).\n\nSo IMHO one should either do just what's necessary to address a specific issue (and not touch other files), or do \"the whole\", i.e. fix most of the open issues with the files you touch, at least the \"trivial\" ones that do not require extraordinary testing (e.g. on all platforms).\n\nThere's e.g. still\n\n```sh\n   cd \"$SAGE_ROOT/devel/sage/sage\"\n   echo \"*** TOUCHING ALL CYTHON (.pyx) FILES ***\"\n   touch */*.pyx */*/*.pyx */*/*/*.pyx */*/*/*/*.pyx */*/*/*/*/*.pyx */*/*/*/*/*.pyx  */*/*/*/*/*/*.\npyx 2> /dev/null\n```\n\nin `sage-build`, too. (Count the asterisks!)",
     "created_at": "2010-09-21T20:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99690",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99525",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -482,15 +481,15 @@ in `sage-build`, too. (Count the asterisks!)
 
 ---
 
-archive/issue_comments_099691.json:
+archive/issue_comments_099526.json:
 ```json
 {
     "body": "Leif: just to clarify, are you suggesting changing *every* instance of `exit` to `return` in sage-env, or just changing the one relevant to SAGE64?\n\nAs far as suppressing output from sage-env, it turns out that there is one bad instance: the output from sage-check-64.  If this is not suppressed, then you can get behavior like this on a 64-bit OS X machine:\n\n```\n$ sage -hg status\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage -pkg ...\nBuilding Sage on OS X in 64-bit mode\n...\n```\n\nThis is confusing since nothing is actually being built.  It is also not necessary to print this every time any script in local/bin runs, so right now I'm suppressing output from it in sage-env.  Output from it is not suppressed in sage-build.  Perhaps the right place to print this message would be somewhere in sage-spkg?\n\nI'm attaching a new patch.",
     "created_at": "2010-09-21T21:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99691",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99526",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -518,15 +517,15 @@ I'm attaching a new patch.
 
 ---
 
-archive/issue_comments_099692.json:
+archive/issue_comments_099527.json:
 ```json
 {
     "body": "Attachment [trac_9960-scripts-SAGE_CHECK.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK.patch) by @jhpalmieri created at 2010-09-21 21:14:35\n\nscripts repo: depends on #9644",
     "created_at": "2010-09-21T21:14:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99692",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99527",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -538,15 +537,15 @@ scripts repo: depends on #9644
 
 ---
 
-archive/issue_comments_099693.json:
+archive/issue_comments_099528.json:
 ```json
 {
     "body": "> One point John, if you do change this patch, there's no need to quote xyes.\n\nOkay.  I think it's a little more readable if it's quoted, especially the way my editor colorizes things, so I'm leaving it quoted.",
     "created_at": "2010-09-21T21:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99693",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99528",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -558,15 +557,15 @@ Okay.  I think it's a little more readable if it's quoted, especially the way my
 
 ---
 
-archive/issue_comments_099694.json:
+archive/issue_comments_099529.json:
 ```json
 {
     "body": "Replying to [comment:17 jhpalmieri]:\n> Leif: just to clarify, are you suggesting changing *every* instance of `exit` to `return` in sage-env, or just changing the one relevant to SAGE64?\n\nYes, every. If you exit in a sourced file, the sourcing shell exits.\n\n(We should then test the return code when/whereever `sage-env` is sourced.)\n\n> As far as suppressing output from sage-env, it turns out that there is one bad instance: the output from sage-check-64.  If this is not suppressed, then you can get behavior like this on a 64-bit OS X machine:\n\n```\n$ sage -hg status\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage\nBuilding Sage on OS X in 64-bit mode\n...\n$ sage -pkg ...\nBuilding Sage on OS X in 64-bit mode\n...\n```\n\n> This is confusing since nothing is actually being built.\n\nThe `sage-check-64` script is a bit funny...\n\n> It is also not necessary to print this every time any script in local/bin runs, so right now I'm suppressing output from it in sage-env.\n\nWe should echo *warning and error messages* in `sage-env` to `stderr`, then we can redirect `stdout` (\"informative\" messages) to `/dev/null` in the usual case.\n\n> Output from it is not suppressed in sage-build.  Perhaps the right place to print this message would be somewhere in sage-spkg?\n\n`sage -b` doesn't call `sage-spkg`. We could call `sage-check-64` there, though its use isn't very clear. I either set `SAGE64` or leave it; I don't think there needs to be some extra file which sets it if it ever has been set before. Perhaps Dave can explain the use of that.",
     "created_at": "2010-09-21T21:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99694",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99529",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -607,15 +606,15 @@ We should echo *warning and error messages* in `sage-env` to `stderr`, then we c
 
 ---
 
-archive/issue_comments_099695.json:
+archive/issue_comments_099530.json:
 ```json
 {
     "body": "What about removing `sage-check-64` from `sage-env` and directly sourcing it in the scripts that actually (attempt to) build something?\n\nBtw, setting `SAGE64=no` should perhaps delete the \"flag\" file. But if one started with one setting and switched to another, a `make clean` or whatever would be required anyway (interpreting `SAGE64` *not set* as \"use default / previous setting\", which seems to be the [undocumented?] current logic).",
     "created_at": "2010-09-21T22:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99695",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99530",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -627,15 +626,15 @@ Btw, setting `SAGE64=no` should perhaps delete the "flag" file. But if one start
 
 ---
 
-archive/issue_comments_099696.json:
+archive/issue_comments_099531.json:
 ```json
 {
     "body": "Replying to [comment:20 leif]:\n> What about removing `sage-check-64` from `sage-env` and directly sourcing it in the scripts that actually (attempt to) build something?\n> \n> Btw, setting `SAGE64=no` should perhaps delete the \"flag\" file. But if one started with one setting and switched to another, a `make clean` or whatever would be required anyway (interpreting `SAGE64` *not set* as \"use default / previous setting\", which seems to be the [undocumented?] current logic).\n\nWhat about creating another ticket for that?",
     "created_at": "2010-09-21T22:33:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99696",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99531",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -650,15 +649,15 @@ What about creating another ticket for that?
 
 ---
 
-archive/issue_comments_099697.json:
+archive/issue_comments_099532.json:
 ```json
 {
     "body": "I've given positive review to #9644, based on \n\n* John was happy with Leif's changes\n* I'm happy with John's changes to the documentation. \n\nI'll look at this ticket when I have more time, as I'm not sure of the effect of changing the exits to returns. \n\nI don't know how John feels, but I think we need to stop the ticket dragging on like #9603 did.",
     "created_at": "2010-09-21T22:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99697",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99532",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -675,15 +674,15 @@ I don't know how John feels, but I think we need to stop the ticket dragging on 
 
 ---
 
-archive/issue_comments_099698.json:
+archive/issue_comments_099533.json:
 ```json
 {
     "body": "It seems to me that by replacing the exits by returns, you are now forcing another file to check the return code. Can anyone explain what we have gained by changing the exits to returns?",
     "created_at": "2010-09-21T23:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99698",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99533",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -693,15 +692,15 @@ It seems to me that by replacing the exits by returns, you are now forcing anoth
 
 ---
 
-archive/issue_comments_099699.json:
+archive/issue_comments_099534.json:
 ```json
 {
     "body": "As far as I understand it, the problem is the code in [an earlier comment](http://trac.sagemath.org/sage_trac/ticket/9960#comment:3): if you use \"exit\", then do\n\n```\n. sage-env\n\nif [ $? -ne 0 ]; then\n    ...\n```\n\nthe exit code for sage-env won't be available, so the code inside the \"if\" block is never executed.",
     "created_at": "2010-09-21T23:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99699",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99534",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -720,15 +719,15 @@ the exit code for sage-env won't be available, so the code inside the "if" block
 
 ---
 
-archive/issue_comments_099700.json:
+archive/issue_comments_099535.json:
 ```json
 {
     "body": "Exactly. And you'll never see any error message in case you redirected the output to `/dev/null`.\n\nIf we only redirect `stdout` when sourcing `sage-env`, and its error messages are printed to `stderr`, we could leave the `exit`s in `sage-env`, but that's in general bad, since the sourcing script might want to do something else or in addition in case of errors.",
     "created_at": "2010-09-21T23:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99700",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99535",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -740,15 +739,15 @@ If we only redirect `stdout` when sourcing `sage-env`, and its error messages ar
 
 ---
 
-archive/issue_comments_099701.json:
+archive/issue_comments_099536.json:
 ```json
 {
     "body": "OK. I'll apply both patches later today (it's 0038 here). Then review it. I'm out most of tomorrow, so it will be late UK time before I can look at it. \n\n\nDave",
     "created_at": "2010-09-21T23:39:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99701",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99536",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -761,15 +760,15 @@ Dave
 
 ---
 
-archive/issue_comments_099702.json:
+archive/issue_comments_099537.json:
 ```json
 {
     "body": "I mean I'm out most of today (given its just gone midnight here). \n\n\n\nDave",
     "created_at": "2010-09-21T23:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99702",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99537",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -783,15 +782,15 @@ Dave
 
 ---
 
-archive/issue_comments_099703.json:
+archive/issue_comments_099538.json:
 ```json
 {
     "body": "I've attached a patch to `sage-spkg` to apply on top of John's:\n* Quotes more environment variables.\n* Checks return code of `sage-env` and exits with an error message if non-zero.\n* Fixes successful test suite runs never getting logged.\n* Corrects one comment, adds some more (including on what could further be fixed on another ticket).\n\nSorry, just noticed the patch's name is wrong (patches `sage-spkg`, not `sage-sage`).",
     "created_at": "2010-09-22T02:35:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99703",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99538",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -807,15 +806,15 @@ Sorry, just noticed the patch's name is wrong (patches `sage-spkg`, not `sage-sa
 
 ---
 
-archive/issue_comments_099704.json:
+archive/issue_comments_099539.json:
 ```json
 {
     "body": "The only side-effect of *sourcing* `sage-env` twice is that some variables (e.g. `LD_LIBRARY_PATH`) get redundant entries.\n\nWe *could* in principle prevent such by an \n\n```C\n#ifndef FOO\n#define FOO\n...\n#endif\n```\n\nanalogon. But IMHO a minor issue...",
     "created_at": "2010-09-22T05:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99704",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99539",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -836,15 +835,15 @@ analogon. But IMHO a minor issue...
 
 ---
 
-archive/issue_comments_099705.json:
+archive/issue_comments_099540.json:
 ```json
 {
     "body": "Leif, it would be less confusing if you just deleted the patch, renamed it, then put it back with the right name. Click on the patch, then in the bottom left you should see \"Delte\". You should be able to delete your own patches. \n\nIf you get a failure, then I can delete it for you, as I have admin rights on trac, but I believe you should be able to delete your own patches.\n\nLet's not add any more changes to this ticket. Leif's changes look OK to me, though I feel they should have been on another ticket.\n\nDave",
     "created_at": "2010-09-22T21:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99705",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99540",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -860,15 +859,15 @@ Dave
 
 ---
 
-archive/issue_comments_099706.json:
+archive/issue_comments_099541.json:
 ```json
 {
     "body": "Replying to [comment:30 drkirkby]:\n> Leif, it would be less confusing if you just deleted the patch, renamed it, then put it back\n\nI would have done so if only I could... :)\n\n> [...] I can delete it for you, as I have admin rights on trac, but I believe you should be able to delete your own patches.\n\nNo, there's not even a button to do so, so please delete it for me. (I've replaced the file with the wrong name by an almost empty file and re-uploaded the original with the correct name.)",
     "created_at": "2010-09-22T22:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99706",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99541",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -885,15 +884,15 @@ No, there's not even a button to do so, so please delete it for me. (I've replac
 
 ---
 
-archive/issue_comments_099707.json:
+archive/issue_comments_099542.json:
 ```json
 {
     "body": "I've deleted the two files for you. I'm changing to \"needs work\" until such time as you have attached them. \n\nDave",
     "created_at": "2010-09-22T23:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99707",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99542",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -905,15 +904,15 @@ Dave
 
 ---
 
-archive/issue_comments_099708.json:
+archive/issue_comments_099543.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-22T23:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99708",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99543",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -923,15 +922,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_099709.json:
+archive/issue_comments_099544.json:
 ```json
 {
     "body": "Replying to [comment:30 drkirkby]:\n> Let's not add any more changes to this ticket.\n\nI didn't plan that; therefore I've also added comments on what has to get fixed on follow-up tickets.\n\n> Leif's changes look OK to me, though I feel they should have been on another ticket.\n\nTesting the \"exit\" code of `sage-env` had become necessary because of the other patch.\n\nI'm happy you're happy (or ok) with my changes though. :-)",
     "created_at": "2010-09-22T23:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99709",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99544",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -950,15 +949,15 @@ I'm happy you're happy (or ok) with my changes though. :-)
 
 ---
 
-archive/issue_comments_099710.json:
+archive/issue_comments_099545.json:
 ```json
 {
     "body": "Replying to [comment:32 drkirkby]:\n> I've deleted the two files for you. I'm changing to \"needs work\" until such time as you have attached them. \n\nArgh, \"it\" != both...\n\nUploading the patch with the correct name **again**.",
     "created_at": "2010-09-22T23:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99710",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99545",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -973,15 +972,15 @@ Uploading the patch with the correct name **again**.
 
 ---
 
-archive/issue_comments_099711.json:
+archive/issue_comments_099546.json:
 ```json
 {
     "body": "Attachment [trac_9960-additional_fixes_to_sage-spkg--scripts-repo.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-additional_fixes_to_sage-spkg--scripts-repo.patch) by @nexttime created at 2010-09-22 23:09:09\n\nSCRIPTS REPO. Apply on top of John's patch.",
     "created_at": "2010-09-22T23:09:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99711",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99546",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -993,15 +992,15 @@ SCRIPTS REPO. Apply on top of John's patch.
 
 ---
 
-archive/issue_comments_099712.json:
+archive/issue_comments_099547.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-22T23:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99712",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99547",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1011,15 +1010,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_099713.json:
+archive/issue_comments_099548.json:
 ```json
 {
     "body": "Can we revive this one?  Dave, do you have any time soon to take a look at it?",
     "created_at": "2010-11-06T22:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99713",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99548",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1029,15 +1028,15 @@ Can we revive this one?  Dave, do you have any time soon to take a look at it?
 
 ---
 
-archive/issue_comments_099714.json:
+archive/issue_comments_099549.json:
 ```json
 {
     "body": "I'll try to look at this today - my wife wants me to do some painting, so that has to take priority!\n\nThe problem I have is that what was a reasonably easy ticket to understand, now has changes for which I don't know the full implication of them. Whilst I can see why exit was replaced with return, I would not be totally surprised if another part of Sage relies on the current behavior.",
     "created_at": "2010-11-07T10:44:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99714",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99549",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1049,15 +1048,15 @@ The problem I have is that what was a reasonably easy ticket to understand, now 
 
 ---
 
-archive/issue_comments_099715.json:
+archive/issue_comments_099550.json:
 ```json
 {
     "body": "**Ping.**\n\nHaven't tried yet, but I'm pretty sure the patches meanwhile need to be rebased...",
     "created_at": "2010-12-30T15:10:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99715",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99550",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1069,15 +1068,15 @@ Haven't tried yet, but I'm pretty sure the patches meanwhile need to be rebased.
 
 ---
 
-archive/issue_comments_099716.json:
+archive/issue_comments_099551.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-12-30T16:28:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99716",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99551",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1087,15 +1086,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_099717.json:
+archive/issue_comments_099552.json:
 ```json
 {
     "body": "Replying to [comment:38 leif]:\n> Haven't tried yet, but I'm pretty sure the patches meanwhile need to be rebased...\n\nOf course:\n\n```\napplying /home/leif/Sage/patches/trac_9960-scripts-SAGE_CHECK.patch\npatching file sage-build\nHunk #1 FAILED at 0\nHunk #2 FAILED at 33\nHunk #3 FAILED at 44\n3 out of 3 hunks FAILED -- saving rejects to file sage-build.rej\npatching file sage-env\nHunk #4 succeeded at 222 (offset 24 lines).\nHunk #5 succeeded at 281 (offset 24 lines).\npatching file sage-sage\nHunk #1 FAILED at 141\n1 out of 1 hunks FAILED -- saving rejects to file sage-sage.rej\npatching file sage-spkg\nHunk #1 succeeded at 368 (offset 10 lines).\nabort: patch failed to apply\n```\n\n(Sage 4.6.1.rc0)",
     "created_at": "2010-12-30T16:28:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99717",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99552",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1128,15 +1127,15 @@ abort: patch failed to apply
 
 ---
 
-archive/issue_comments_099718.json:
+archive/issue_comments_099553.json:
 ```json
 {
     "body": "Attachment [trac_9960-scripts-SAGE_CHECK_rebased_to_4.6.1.rc0.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK_rebased_to_4.6.1.rc0.patch) by @nexttime created at 2010-12-30 17:11:55\n\nSCRIPTS REPO. (Just) John's patch rebased to Sage 4.6.1.rc0.",
     "created_at": "2010-12-30T17:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99718",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99553",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1148,15 +1147,15 @@ SCRIPTS REPO. (Just) John's patch rebased to Sage 4.6.1.rc0.
 
 ---
 
-archive/issue_comments_099719.json:
+archive/issue_comments_099554.json:
 ```json
 {
     "body": "I've attached a rebased version of John's patch; still have to rebase mine.",
     "created_at": "2010-12-30T17:13:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99719",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99554",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1166,15 +1165,15 @@ I've attached a rebased version of John's patch; still have to rebase mine.
 
 ---
 
-archive/issue_comments_099720.json:
+archive/issue_comments_099555.json:
 ```json
 {
     "body": "Attachment [trac_9960-additional_fixes_to_sage-spkg_rebased_to_4.6.1.rc0-scripts-repo.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-additional_fixes_to_sage-spkg_rebased_to_4.6.1.rc0-scripts-repo.patch) by @nexttime created at 2010-12-31 03:53:52\n\nSCRIPTS REPO. My previous patch rebased to Sage 4.6.1.rc0, with some more changes. Apply on top of John's (rebased one).",
     "created_at": "2010-12-31T03:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99720",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99555",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1186,15 +1185,15 @@ SCRIPTS REPO. My previous patch rebased to Sage 4.6.1.rc0, with some more change
 
 ---
 
-archive/issue_comments_099721.json:
+archive/issue_comments_099556.json:
 ```json
 {
     "body": "I've now also attached a rebased version of my \"reviewer\" patch, with some more changes:\n\n*Besides cosmetic changes (formatting, tabs, some messages), I've only*\n\n* *added lots of comments (including TODOs/notes on future changes),*\n* *quoted all necessary environment variables,*\n* ''fixed a bug which caused a successful test suite run never getting\n  logged (to 'spkg/installed/<package-name>').''\n\n*So there are (still) lots of things to do, but on another ticket.*\n\n----\n\nI can of course only review John's changes (which I already did, leading to my reviewer patch, so I'm in principle ok with his changes, although I haven't tested them recently); so someone else has to review mine. (I'm going to test them with 4.6.1.rc0 again though I don't expect new, undesired behavior.)\n\nAdditional changes (other than fixes of possible mistakes introduced here) should IMHO be made on follow-up tickets; as mentioned in the commit message (and comments in `sage-spkg`), there are quite a lot things to get fixed or improved.",
     "created_at": "2010-12-31T04:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99721",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99556",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1219,15 +1218,15 @@ Additional changes (other than fixes of possible mistakes introduced here) shoul
 
 ---
 
-archive/issue_comments_099722.json:
+archive/issue_comments_099557.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-12-31T04:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99722",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99557",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1237,15 +1236,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_099723.json:
+archive/issue_comments_099558.json:
 ```json
 {
     "body": "P.S.:\n\n* The odd messages from `sage-check-64` when sourcing `sage-env` are already addressed elsewhere (#10303, which unfortunately had to get unmerged from rc0), so John's patch *here* intentionally (still) *does* suppress *all* messages from the former in `sage-env`, as a *temporary* solution.\n\n* (Not) sourcing `sage-env` more than once is addressed at #10469.\n\n* The only scripts directly sourcing `sage-env` are `sage-sage` and `sage-spkg` (both patched here to check its \"exit\" code), so the changes turning `exit` into `return` there are safe.",
     "created_at": "2010-12-31T05:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99723",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99558",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1261,15 +1260,15 @@ P.S.:
 
 ---
 
-archive/issue_comments_099724.json:
+archive/issue_comments_099559.json:
 ```json
 {
     "body": "**Positive review** from me **for John's patch(es).**\n\n----\n\nThis ticket should also (temporarily) fix the doctests errors occurring when `SAGE64=yes`, caused by \"*Building a 64-bit version of Sage*\" messages.\n\n(I've tested it on Linux only.)",
     "created_at": "2010-12-31T05:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99724",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99559",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1285,15 +1284,15 @@ This ticket should also (temporarily) fix the doctests errors occurring when `SA
 
 ---
 
-archive/issue_comments_099725.json:
+archive/issue_comments_099560.json:
 ```json
 {
     "body": "Replying to [comment:22 drkirkby]:\n\n> I don't know how John feels, but I think we need to stop the ticket dragging on like #9603 did. \n\nFive months ago I wrote the above comment. I could see that if we were not careful, the ticket would drag on, as more and more changes were requested that had nothing to do solving the problem raised. \n\nJohn's changes did the job and were not risky. Now the ticket has dragged on and on, with endless other changes, but still no positive review. \n\nDave",
     "created_at": "2011-02-05T13:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99725",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99560",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1311,15 +1310,15 @@ Dave
 
 ---
 
-archive/issue_comments_099726.json:
+archive/issue_comments_099561.json:
 ```json
 {
     "body": "Attachment [trac_9960-scripts-SAGE_CHECK.v2.patch](tarball://root/attachments/some-uuid/ticket9960/trac_9960-scripts-SAGE_CHECK.v2.patch) by @jhpalmieri created at 2011-03-24 23:38:35\n\nreplaces all previous patches",
     "created_at": "2011-03-24T23:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99726",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99561",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1331,15 +1330,15 @@ replaces all previous patches
 
 ---
 
-archive/issue_comments_099727.json:
+archive/issue_comments_099562.json:
 ```json
 {
     "body": "Here is a new patch, replacing all previous ones.  This takes the crucial elements from my patch and Leif's, and omits everything else.  I've moved most of the rest of Leif's patch to #11021.\n\nSince Leif gave my patch a positive review, and since the new patch consists of mine plus a simple error check (which I'm happy with), I'd like to give this a positive review.  Dave, any opinions?",
     "created_at": "2011-03-24T23:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99727",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99562",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1351,15 +1350,15 @@ Since Leif gave my patch a positive review, and since the new patch consists of 
 
 ---
 
-archive/issue_comments_099728.json:
+archive/issue_comments_099563.json:
 ```json
 {
     "body": "I'm happy that this will obsolete #4029.  Also the rest of the code looks good.  Installing dot2tex with SAGE_CHECK=yes ran the test suite and with SAGE_CHECK=maybe didn't, so I give this a positive review.",
     "created_at": "2011-03-25T00:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99728",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99563",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -1369,15 +1368,15 @@ I'm happy that this will obsolete #4029.  Also the rest of the code looks good. 
 
 ---
 
-archive/issue_comments_099729.json:
+archive/issue_comments_099564.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-03-25T00:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99729",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99564",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -1387,15 +1386,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_099730.json:
+archive/issue_comments_099565.json:
 ```json
 {
     "body": "At last!!! \n\nI still maintain some of these changes should have been on another ticket. John's patch 6-months ago fixed the problem. Had it been merged 6 months ago, Sage would have been better for it. I'm not denying the changes since are an improvement, but I think these improvements would have been better on another ticket. \n\nDave",
     "created_at": "2011-03-25T05:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99730",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99565",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1409,15 +1408,15 @@ Dave
 
 ---
 
-archive/issue_comments_099731.json:
+archive/issue_comments_099566.json:
 ```json
 {
     "body": "Dave, you're probably right, and #4029 would probably have been the right place.  But I think it's done now...",
     "created_at": "2011-03-25T14:44:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99731",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99566",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1427,15 +1426,15 @@ Dave, you're probably right, and #4029 would probably have been the right place.
 
 ---
 
-archive/issue_comments_099732.json:
+archive/issue_comments_099567.json:
 ```json
 {
     "body": "I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause):\n\n```\nMachine:\nLinux sage.math.washington.edu 2.6.24-28-server #1 SMP Wed Aug 25 14:46:03 UTC 2010 x86_64 GNU/Linux\nDeleting directories from past builds of previous/current versions of sage_scripts-4.7.alpha3\nExtracting package /scratch/jdemeyer/merger/sage-4.7.alpha3/spkg/standard/sage_scripts-4.7.alpha3.spkg ...\n-rw-r--r-- 1 jdemeyer jdemeyer 990291 2011-03-26 21:12 /scratch/jdemeyer/merger/sage-4.7.alpha3/spkg/standard/sage_scripts-4.7.alpha3.spkg\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux sage.math.washington.edu 2.6.24-28-server #1 SMP Wed Aug 25 14:46:03 UTC 2010 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zl\nib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --prog\nram-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linu\nx-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\n\nreal    0m0.044s\nuser    0m0.020s\nsys     0m0.020s\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: syntax error near unexpected token `('\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: `    echo \"(cd '`pwd`' && '$SAGE_ROOT/sage' -sh)\"'\nmake[1]: *** [installed/sage_scripts-4.7.alpha3] Error 2\nmake[1]: Leaving directory `/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/spkg'\n```\n",
     "created_at": "2011-03-27T10:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99732",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99567",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1480,15 +1479,15 @@ make[1]: Leaving directory `/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/sp
 
 ---
 
-archive/issue_comments_099733.json:
+archive/issue_comments_099568.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-03-27T10:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99733",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99568",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1498,15 +1497,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_099734.json:
+archive/issue_comments_099569.json:
 ```json
 {
     "body": "Replying to [comment:53 jdemeyer]:\n> I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause):\n\nAnd there was me thinking a very small patch John submitted 6 months ago was finally going to be merged!\n\nI think Leif should **seriously** consider the implications of the endless changes he wants on tickets like this one - changes that are not related to the problem the ticket is supposed to address. \n\nIn many ways I wish all sage developers were as fussy as Leif, as his approach does generally result in improved quality of code. Many of the bugs in Sage would not be there if more people were fussy about code that is written. I cringe at some of the stuff I see written. But Leif's endless requested changes are slowing Sage development to a crawl. \n\n#9603 took a couple of months to get a positive review on what was originally a 3 or 4 line patch that was only applied on AIX. \n\nThe cliquer package is a complete mess, so I opened a ticket to clean it up (#9870), and another (#9871) to address an important single issue for a 64-bit Solaris port. The latter took ages, due to unrelated changes requested by Leif. Then Leif decided to take ownership of the cleanup patch (#9870), but has done nothing about it in 7 months, despite a couple of reminders from me. \n\nNot only do these endless changes take longer to implement for the author, but it makes review so much more difficult. Whereas I would have been happy to give a positive review to John's original patch, this has become so complex it is a nightmare reviewing it. \n\nDave",
     "created_at": "2011-03-27T14:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99734",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99569",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1531,15 +1530,15 @@ Dave
 
 ---
 
-archive/issue_comments_099735.json:
+archive/issue_comments_099570.json:
 ```json
 {
     "body": "Replying to [comment:54 drkirkby]:\n \n> #9603 took a couple of months to get a positive review on what was originally a 3 or 4 line patch that was only applied on AIX. \n\n> Dave \n\nCorrection, #9603 was only applied on HP-UX. The point being a *safe* change, that was only intended to effect Sage on an unsupported platform became overly complex and dragged on for a long time. \n\nIMHO, this sort of thing needs to stop. \n\nDave",
     "created_at": "2011-03-27T14:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99735",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99570",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1559,15 +1558,15 @@ Dave
 
 ---
 
-archive/issue_comments_099736.json:
+archive/issue_comments_099571.json:
 ```json
 {
     "body": "Jeroen: The line cited by the error\n\n```\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: syntax error near unexpected token `('\n/scratch/jdemeyer/merger/sage-4.7.alpha3/local/bin/sage-spkg: line 436: `    echo \"(cd '`pwd`' && '$SAGE_ROOT/sage' -sh)\"'\n```\n\nis not touched by this patch.  Did you run \"sage -sdist ...\" or just apply the patch to the scripts repo?  If you just applied it to the scripts repo, then the version of sage-spkg in the repo will not match with the version in spkg/base/, and I think that could cause an error like the one you saw.\n\nI ran \"sage -sdist ...\" and then started building from the new tar file, and it's going fine: it's built around 50 of the spkgs, including sage_scripts, with no problems.",
     "created_at": "2011-03-27T15:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99736",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99571",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1586,15 +1585,15 @@ I ran "sage -sdist ..." and then started building from the new tar file, and it'
 
 ---
 
-archive/issue_comments_099737.json:
+archive/issue_comments_099572.json:
 ```json
 {
     "body": "Replying to [comment:53 jdemeyer]:\n> I get an error when building sage from scratch (but I'm not entirely sure this patch is the cause)\n\nMy build completed just fine.  I just tried again: I took a vanilla copy of 4.7.alpha2, applied this patch, ran \"sage -sdist ...\", and then built from the resulting tar file.  It has started just fine, successfully installing sage_scripts and 40 more spkgs.  The build is still ongoing, but I'm not seeing the error you saw.\n\nSince you're not sure that this patch caused it, what can I do to help resolve this?",
     "created_at": "2011-03-28T18:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99737",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99572",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1609,15 +1608,15 @@ Since you're not sure that this patch caused it, what can I do to help resolve t
 
 ---
 
-archive/issue_comments_099738.json:
+archive/issue_comments_099573.json:
 ```json
 {
     "body": "Probably your original comment about `spkg/base` was correct.  But I will have a look at this later.\n\nIf you *really* want to move forward, make sure that no files appear in duplicate places (like `local/bin` and `spkg/base` in this case).  This has caused trouble for me tons of times.  #9433 fixed a lot of these issues, but apparently there is still some work to do.  We should probably get rid of the `spkg/base` repository and use the `SAGE_ROOT` repository for this instead.",
     "created_at": "2011-03-28T19:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99738",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99573",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1629,15 +1628,15 @@ If you *really* want to move forward, make sure that no files appear in duplicat
 
 ---
 
-archive/issue_comments_099739.json:
+archive/issue_comments_099574.json:
 ```json
 {
     "body": "Replying to [comment:58 jdemeyer]:\n \n> If you *really* want to move forward, make sure that no files appear in duplicate places (like `local/bin` and `spkg/base` in this case).  This has caused trouble for me tons of times.  #9433 fixed a lot of these issues, but apparently there is still some work to do.  We should probably get rid of the `spkg/base` repository and use the `SAGE_ROOT` repository for this instead.\n\nI don't know how to avoid the duplication, but see #11073 for a ticket.",
     "created_at": "2011-03-28T19:53:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99739",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99574",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1651,15 +1650,15 @@ I don't know how to avoid the duplication, but see #11073 for a ticket.
 
 ---
 
-archive/issue_comments_099740.json:
+archive/issue_comments_099575.json:
 ```json
 {
     "body": "I'm not sure why this depends on #11073; can you clarify?  (I have the same question for #11008.)",
     "created_at": "2011-04-12T16:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99740",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99575",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1669,15 +1668,15 @@ I'm not sure why this depends on #11073; can you clarify?  (I have the same ques
 
 ---
 
-archive/issue_comments_099741.json:
+archive/issue_comments_099576.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2011-04-13T07:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99741",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99576",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1687,15 +1686,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_099742.json:
+archive/issue_comments_099577.json:
 ```json
 {
     "body": "Replying to [comment:61 jhpalmieri]:\n> I'm not sure why this depends on #11073; can you clarify?\n\nTechnically speaking, it doesn't depend on #11073.  But I would really like #11073 to be finished before merging any ticket which affects files in `spkg/base`.  If you insist, I could try to merge #9960 and #11008 anyway (before #11073).",
     "created_at": "2011-04-13T07:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99742",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99577",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1708,15 +1707,15 @@ Technically speaking, it doesn't depend on #11073.  But I would really like #110
 
 ---
 
-archive/issue_comments_099743.json:
+archive/issue_comments_099578.json:
 ```json
 {
     "body": "I'm concerned that #11073 is going to be complicated: it will touch files in the scripts repo, in the root repo, and (of course) in the base repo.  I'm not even sure what the right approach is for that ticket.  I'll post some questions there.\n\nThe fixes in #9960 and #11008 are pretty tame, comparatively.  I think you can just apply the patches on those two tickets and then run \"sage -sdist\" to make a new source distribution; that should move the changed files to spkg/base.  So I would *prefer* that you merge those two.  But I'm not going to *insist*; you're the release manager, so if it makes your job much easier to wait, then wait.",
     "created_at": "2011-04-13T16:16:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99743",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99578",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1728,15 +1727,15 @@ The fixes in #9960 and #11008 are pretty tame, comparatively.  I think you can j
 
 ---
 
-archive/issue_comments_099744.json:
+archive/issue_comments_099579.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-05-12T20:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99744",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9959#issuecomment-99579",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

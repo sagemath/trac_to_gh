@@ -6,15 +6,13 @@ archive/issues_000645.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: x,y = var('x y')\nsage: f(3)\ny + 3\nsage: f(3)(4)\n7\nsage: f(3,4)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/robert/sage/sage-2.5/devel/sage-working/<ipython console> in <module>()\n\n<type 'exceptions.TypeError'>: __call__() takes at most 2 arguments (3 given)\nsage: \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/645\n\n",
     "created_at": "2007-09-12T21:32:07Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "multi-argument call for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/645",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -46,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/645
 
 ---
 
-archive/issue_comments_003346.json:
+archive/issue_comments_003333.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-30T23:24:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3346",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3333",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -64,15 +62,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_003347.json:
+archive/issue_comments_003334.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-11-30T23:24:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3347",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3334",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -82,15 +80,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_003348.json:
+archive/issue_comments_003335.json:
 ```json
 {
     "body": "Attachment [645.patch](tarball://root/attachments/some-uuid/ticket645/645.patch) by @mwhansen created at 2007-11-30 23:25:01\n\nThis should be applied after #1345.",
     "created_at": "2007-11-30T23:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3348",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3335",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -102,15 +100,15 @@ This should be applied after #1345.
 
 ---
 
-archive/issue_comments_003349.json:
+archive/issue_comments_003336.json:
 ```json
 {
     "body": "Looks good to me, and doctests still pass in sage/calculus/*.",
     "created_at": "2007-12-01T02:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3349",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3336",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -120,15 +118,15 @@ Looks good to me, and doctests still pass in sage/calculus/*.
 
 ---
 
-archive/issue_comments_003350.json:
+archive/issue_comments_003337.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-01T11:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3350",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3337",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -138,15 +136,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_003351.json:
+archive/issue_comments_003338.json:
 ```json
 {
     "body": "Merged in 2.8.15.alpha0.",
     "created_at": "2007-12-01T11:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3351",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/645#issuecomment-3338",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

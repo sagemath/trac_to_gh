@@ -6,15 +6,13 @@ archive/issues_008063.json:
     "body": "Assignee: drkirkby\n\nSetting SAGE64=yes not only works on OSX, but also with Open Solaris 64 bit.\n\nThe package can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/gsl-1.10.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/gsl-1.10.p2.spkg)\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/8063\n\n",
     "created_at": "2010-01-25T21:49:41Z",
     "labels": [
-        "porting",
-        "major",
-        "enhancement"
+        "component: porting"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New gsl-1.10.p2.spkg works with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8063",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -34,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8063
 
 ---
 
-archive/issue_comments_070672.json:
+archive/issue_comments_070551.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-25T21:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70672",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70551",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -52,15 +50,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_070673.json:
+archive/issue_comments_070552.json:
 ```json
 {
     "body": "Attachment [gsl-1.10.p2.patch](tarball://root/attachments/some-uuid/ticket8063/gsl-1.10.p2.patch) by drkirkby created at 2010-01-27 13:43:57\n\nI'm not sure I'd personally bother sorting out SAGE64 issues in packages unless they are building 32-bit, which this one is not. \n\nBut you have also removed Michael Abshoff as a maintainer, and also removed the \n\n\n```\necho \"64 bit MacIntel\"\n```\n\n\nso I would agree the fixes are desirable. \n\nI would search for packages which are building 32-bit. \n\n\n```\n$ file local/lib/* | grep 32-bit\n$ file local/lib/* | grep 32-bit\n```\n\n\nand only bother fixing them. \n\nDave",
     "created_at": "2010-01-27T13:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70673",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70552",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -95,15 +93,15 @@ Dave
 
 ---
 
-archive/issue_comments_070674.json:
+archive/issue_comments_070553.json:
 ```json
 {
     "body": "Replying to [comment:2 drkirkby]:\n\n> \n> so I would agree the fixes are desirable. \n> \n\nSo positive review?\n\nJaap",
     "created_at": "2010-01-27T13:51:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70674",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70553",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -121,15 +119,15 @@ Jaap
 
 ---
 
-archive/issue_comments_070675.json:
+archive/issue_comments_070554.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-27T14:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70675",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70554",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -139,15 +137,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_070676.json:
+archive/issue_comments_070555.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T15:17:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8063",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70676",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8063#issuecomment-70555",
+    "user": "https://github.com/qed777"
 }
 ```
 

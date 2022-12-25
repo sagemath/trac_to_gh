@@ -6,15 +6,13 @@ archive/issues_001576.json:
     "body": "Assignee: @williamstein\n\nHere are some examples that should probably work (from somebody named amscopub-travel)\n\nAs per an irc conversation last week, here is a list of math\nexpressions using implicit multiplication. Sorry for the delay:\n\n```\na b c(a^2 + b^2 + c^2)\na b + c^2 == y\n(z/(2sin(y z/55))+y+x)^(z/(2sin(y z/55))+y+x)\n2(x/2)^2+4(2x)^2\n0==-16x^2+48x\n(x+2)(x-1)\nx^2-4x+4\n2(x+3)(x-4)\n2x^2-2x-25<=0\n-16x^2+132x\n2(x+3)(x-4)\nx^2-5x+4\n3(x-5)(x-5)\n(x-1)(x-2)x\n(a-b)(a-b)(a-b)\n\nTake any usual python expression and drop the multiplication operator\n(or really make it *optional*). So for example, 2*x would be 2x.\nHowever, when ambiguity would result in variable names, use * or a\nspace. For example, a*b*c would be a b c (to distinguish from the\nvariable \"abc\").\n```\n\n\nA first version of this could simply be a function\n\n```\n  implicit_mul\n```\n\nthat takes a string as input, and outputs \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1576\n\n",
     "created_at": "2007-12-21T00:18:46Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "implicit multiplication -- sage needs to have *some* way to do this (even if not by default)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1576",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -67,15 +65,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1576
 
 ---
 
-archive/issue_comments_010027.json:
+archive/issue_comments_010001.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-04T08:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10027",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10001",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_010028.json:
+archive/issue_comments_010002.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2008-01-04T08:47:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10028",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10002",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -103,15 +101,15 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
-archive/issue_comments_010029.json:
+archive/issue_comments_010003.json:
 ```json
 {
     "body": "I've implemented implicit_mul, the output for the above expressions are:\n\n\n```\na*b*c(a^2 + b^2 + c^2)\na*b + c^2 == y\n(z/(2*sin(y*z/55))+y+x)^(z/(2*sin(y*z/55))+y+x)\n2*(x/2)^2+4*(2*x)^2\n0==-16*x^2+48*x\n(x+2)(x-1)\nx^2-4*x+4\n2*(x+3)(x-4)\n2*x^2-2*x-25<=0\n-16*x^2+132*x\n2*(x+3)(x-4)\nx^2-5*x+4\n3*(x-5)(x-5)\n(x-1)(x-2)*x\n(a-b)(a-b)(a-b)\n```\n\n\nThere is an optional flag, level, which at the highest value produces:\n\n\n```\na*b*c(a^2 + b^2 + c^2)\n(x+2)*(x-1)\n...\n(x-1)*(x-2)*x\n(a-b)*(a-b)*(a-b)\n```\n\n\nWhich could be bad, for example `f(x)(y)` would become `f(x)*(y)`. In the first case, I have no idea how to deduce that c shouldn't be called. \n\nAt all but this highest level, I believe it never mangles valid Python. Just to test, I pre-parsed the entire SAGE library through this function and there were no changes. \n\nSome more examples: \n\n\n```\n        sage: from sage.misc.preparser import implicit_mul\n        sage: implicit_mul('(2x^2-4x+3)a0')\n        '(2*x^2-4*x+3)*a0'\n        sage: implicit_mul('a b c in L')\n        'a*b*c in L'\n        sage: implicit_mul('1r + 1e3 + 5exp(2)')\n        '1r + 1e3 + 5*exp(2)'\n        sage: implicit_mul('f(a)(b)', level=10)\n        'f(a)*(b)'\n```\n\n\nThis is not yet on by default.",
     "created_at": "2008-01-04T12:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10029",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10003",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -175,15 +173,15 @@ This is not yet on by default.
 
 ---
 
-archive/issue_comments_010030.json:
+archive/issue_comments_010004.json:
 ```json
 {
     "body": "Attachment [1576-implicit_mul.diff](tarball://root/attachments/some-uuid/ticket1576/1576-implicit_mul.diff) by @robertwb created at 2008-01-04 12:57:48",
     "created_at": "2008-01-04T12:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10030",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10004",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -193,15 +191,15 @@ Attachment [1576-implicit_mul.diff](tarball://root/attachments/some-uuid/ticket1
 
 ---
 
-archive/issue_comments_010031.json:
+archive/issue_comments_010005.json:
 ```json
 {
     "body": "This is frickin awesome!\n\nI think we should just enable this by default via the preparser.  \n\nWOW!\n\nThis is very nice to work with.",
     "created_at": "2008-01-04T17:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10031",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10005",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -217,15 +215,15 @@ This is very nice to work with.
 
 ---
 
-archive/issue_comments_010032.json:
+archive/issue_comments_010006.json:
 ```json
 {
     "body": "\n```\nwilliam_stein: I just reviewed #1576\n[09:02am] william_stein: It makes stuff like this work:\n[09:02am] william_stein: sage: 2x^2-2x-25<=0\n[09:02am] william_stein: 2*x^2 - 2*x - 25 <= 0\n[09:02am] william_stein: sage: sin(2x)\n[09:02am] william_stein: sin(2*x)\n[09:02am] william_stein: sage: var('a,b,c')\n[09:02am] william_stein: (a, b, c)\n[09:02am] william_stein: sage: a b c(a^2 + b^2 + c^2)\n[09:02am] william_stein: a*b*(c^2 + b^2 + a^2)\n[09:02am] william_stein: But doesn't break anything.\n[09:02am] william_stein: That last looks funny.\n[09:03am] william_stein: It's because we still have implicit calling... \n[09:06am] mabshoff: ok, is there any way you can give me some rights in the wiki to delete users?\n[09:06am] mabshoff: Certain spammers are either comming back again and again or a re\n[09:06am] mabshoff: registering under the same name over and over again.\n[09:06am] mabshoff: mhansen did suggest installing a text based captcha, which should stop all the\n[09:06am] mabshoff: machine driven spam.\n[09:06am] mabshoff: I see. I don't like that to be enabled by default. What happens for Q[x,xy,y] ?\n[09:06am] mabshoff: Then if you write xxyyx - what is that?\n[09:06am] mabshoff: Or does that get covered by the patch?\n[09:06am] mabshoff: the last one is *wrong*. Or what does c() do?\n[09:06am] mabshoff: If c is a var it should be 'a*b*c*(...)'\n[09:07am] william_stein: Just apply only the first patch posted and not the second.\n[09:07am] william_stein: Then nothing happens by default.\n[09:07am] william_stein: There are levels of implicit multiplication, by the way.\n[09:07am] william_stein: In the future when c(...) is an error, that example above would raise an error.\n[09:07am] mabshoff: Sure. We did discuss implicit multiplication a lot during the CoCoA language\n[09:07am] william_stein: The default is not to do anything with the c (...) implicit mulitplication.\n[09:07am] william_stein: But it works quite well in all other cases that I tried.\n[09:07am] mabshoff: design specification and we came to the conclusion that it is evil.\n[09:08am] william_stein: I like what Robert did.\n[09:08am] william_stein: Singular has implicit mult also.\n[09:08am] mabshoff: Does Maple or Mathematica let you do that?\n[09:08am] william_stein: Maple doesn't I think.  Mathematica certainly does and the users love it.\n[09:08am] mabshoff: Sure, but it complicates the language parser enourmously.\n[09:08am] william_stein: not for sage\n[09:08am] mabshoff: What about newlines? Are they ignored, i.e.\n[09:08am] mabshoff: a\n[09:08am] william_stein: It was a half page of code. done.\n[09:08am] mabshoff: b\n[09:08am] mabshoff: it that a*b ?\n[09:08am] william_stein: Python is way simpler!\n[09:09am] william_stein: a and b are completely different statements\n[09:09am] mabshoff: I believe you.\n[09:09am] william_stein: and if you do \"a backslash b\" then it gets turned into one line before pre-parsing.\n[09:09am] mabshoff: Because if you allow implicit multiplication accross lines all hell breaks loose.\n[09:09am] mabshoff: Sure, in that case it is deliberate and the user implies that those are meant to be one line.\n[09:10am] william_stein: In Python \"across lines\" sort of disappears...\n[09:10am] mabshoff: I don't mind it being there, I just think that turning it on per default is bad.\n[09:10am] william_stein: I disagree.\n[09:10am] mabshoff:\n[09:10am] william_stein: But for 2.9.2 turning on by default is bad.\n[09:10am] william_stein: For 2.10 it may be different.\nmabshoff: Well, ther certainly will be bugs to shake out, so I agree totally with merging the first patch\n[09:10am] mabshoff: for 2.9.2. and then sort out the rest in 2.10\n[09:10am] william_stein: good\n```\n",
     "created_at": "2008-01-04T17:12:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10032",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10006",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -295,15 +293,15 @@ mabshoff: Well, ther certainly will be bugs to shake out, so I agree totally wit
 
 ---
 
-archive/issue_comments_010033.json:
+archive/issue_comments_010007.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-04T21:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10033",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10007",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -313,15 +311,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_010034.json:
+archive/issue_comments_010008.json:
 ```json
 {
     "body": "Merged in 2.9.2.rc1.",
     "created_at": "2008-01-04T21:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10034",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1576#issuecomment-10008",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

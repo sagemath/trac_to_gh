@@ -6,15 +6,14 @@ archive/issues_009928.json:
     "body": "Assignee: @aghitza\n\nCC:  @roed314 @xcaruso\n\nthe answer is probably in the file `polynomial_ring_constructor.py` in the function `single_variate`\n\nIssue created by migration from https://trac.sagemath.org/ticket/9929\n\n",
     "created_at": "2010-09-17T07:27:14Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "polynomial ring over pAdics doesn't respect the sparse argument",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9928",
-    "user": "ylchapuy"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 Assignee: @aghitza
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9929
 
 ---
 
-archive/issue_comments_098870.json:
+archive/issue_comments_098705.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2018-07-26T22:23:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98870",
-    "user": "@saraedum"
+    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98705",
+    "user": "https://github.com/saraedum"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_098871.json:
+archive/issue_comments_098706.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"padicIMA\".",
     "created_at": "2018-07-26T22:23:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98871",
-    "user": "@saraedum"
+    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98706",
+    "user": "https://github.com/saraedum"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing keywords from "" to "padicIMA".
 
 ---
 
-archive/issue_comments_098872.json:
+archive/issue_comments_098707.json:
 ```json
 {
     "body": "works for me.",
     "created_at": "2018-07-26T22:23:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98872",
-    "user": "@saraedum"
+    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98707",
+    "user": "https://github.com/saraedum"
 }
 ```
 
@@ -85,15 +84,15 @@ works for me.
 
 ---
 
-archive/issue_comments_098873.json:
+archive/issue_comments_098708.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2018-07-26T22:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98873",
-    "user": "@saraedum"
+    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98708",
+    "user": "https://github.com/saraedum"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_098874.json:
+archive/issue_comments_098709.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2019-02-26T13:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98874",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98709",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -121,15 +120,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_098875.json:
+archive/issue_comments_098710.json:
 ```json
 {
     "body": "Presuming these are all correctly reviewed as either duplicate, invalid, or wontfix.",
     "created_at": "2019-02-26T13:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98875",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/9928#issuecomment-98710",
+    "user": "https://github.com/embray"
 }
 ```
 

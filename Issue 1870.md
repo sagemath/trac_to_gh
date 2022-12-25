@@ -6,7 +6,7 @@ archive/issues_001870.json:
     "body": "Assignee: @williamstein\n\nTry this with a fresh sage-2.10.  I've only tested this on my osx laptop so far. \nThis does not fail on Linux (sage.math.washington.edu at least). \n\n\n```\nsage: wiki()\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n2008/01/20 15:08 -0700 [-] Log opened.\n2008/01/20 15:08 -0700 [-] twistd 2.5.0 (/Users/was/s/local/bin/python 2.5.1) starting up\n2008/01/20 15:08 -0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008/01/20 15:08 -0700 [-] Loading twistedconf.py...\n2008/01/20 15:08 -0700 [-] Loaded.\n2008/01/20 15:08 -0700 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2008/01/20 15:08 -0700 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x7aecb0>\n2008/01/20 15:08 -0700 [-] Traceback (most recent call last):\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/bin/twistd\", line 21, in <module>\n2008/01/20 15:08 -0700 [-]     run()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2008/01/20 15:08 -0700 [-]     app.run(runApp, ServerOptions)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/application/app.py\", line 379, in run\n2008/01/20 15:08 -0700 [-]     runApp(config)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2008/01/20 15:08 -0700 [-]     _SomeApplicationRunner(config).run()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/application/app.py\", line 158, in run\n2008/01/20 15:08 -0700 [-]     self.postApplication()\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 213, in postApplication\n2008/01/20 15:08 -0700 [-]     startApplication(self.config, self.application)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 182, in startApplication\n2008/01/20 15:08 -0700 [-]     shedPrivileges(config['euid'], uid, gid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/scripts/_twistd_unix.py\", line 148, in shedPrivileges\n2008/01/20 15:08 -0700 [-]     switchUID(uid, gid, euid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 651, in switchUID\n2008/01/20 15:08 -0700 [-]     initgroups(uid, gid)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 621, in initgroups\n2008/01/20 15:08 -0700 [-]     _setgroups_until_success(l)\n2008/01/20 15:08 -0700 [-]   File \"/Users/was/s/local/lib/python2.5/site-packages/twisted/python/util.py\", line 575, in _setgroups_until_success\n2008/01/20 15:08 -0700 [-]     setgroups(l)\n2008/01/20 15:08 -0700 [-] OSError: [Errno 1] Operation not permitted\nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1870\n\n",
     "created_at": "2008-01-20T22:12:58Z",
     "labels": [
-        "website/wiki",
+        "component: website/wiki",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001870.json:
     "title": "somehow we completely broke the moinmoin wiki stuff included in Sage on OS X.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1870",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -73,15 +73,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1870
 
 ---
 
-archive/issue_comments_011840.json:
+archive/issue_comments_011811.json:
 ```json
 {
     "body": "I think this ticket is invalid. `wiki()` works fine for me, in \nSage 3.3 without\n and 3.4.rc0 with \nthe new moin spkg installed, on OSX 10.5.\n\nSomeone else (was?) please verify so we can close this ticket.",
     "created_at": "2009-03-06T10:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11840",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11811",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -96,15 +96,15 @@ Someone else (was?) please verify so we can close this ticket.
 
 ---
 
-archive/issue_comments_011841.json:
+archive/issue_comments_011812.json:
 ```json
 {
     "body": "This has gotten fantastically worse - at least on 4.3 on Macintel!  Check this out - I had to close the window manually, as Ctrl-C and Ctrl-D did absolutely nothing.   The only thing I can think about why this wouldn't be valid is that maybe I have bad permissions? \n\nAlso, why is it still in the sage_wiki folder and not in .sage/sage_wiki or something similar to what is now done with the notebook?\n\n```\nsage: wiki()\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/MoinMoin/user.py:9: DeprecationWarning: the sha module is deprecated; use the hashlib module instead\n  import os, time, sha, codecs\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9000 *\n*                                                *\n**************************************************\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/spread/pb.py:30: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import md5\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/MoinMoin/user.py:9: DeprecationWarning: the sha module is deprecated; use the hashlib module instead\n  import os, time, sha, codecs\n2009-12-28 12:27:23-0500 [-] Log opened.\n2009-12-28 12:27:23-0500 [-] twistd 8.2.0 (/Users/.../sage-4.3/local/bin/python 2.6.2) starting up.\n2009-12-28 12:27:23-0500 [-] reactor class: twisted.internet.selectreactor.SelectReactor.\n2009-12-28 12:27:23-0500 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9000\n2009-12-28 12:27:23-0500 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x1268b70>\n2009-12-28 12:27:23-0500 [-] Traceback (most recent call last):\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/bin/twistd\", line 21, in <module>\n2009-12-28 12:27:23-0500 [-]     run()\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2009-12-28 12:27:23-0500 [-]     app.run(runApp, ServerOptions)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 694, in run\n2009-12-28 12:27:23-0500 [-]     runApp(config)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2009-12-28 12:27:23-0500 [-]     _SomeApplicationRunner(config).run()\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 423, in run\n2009-12-28 12:27:23-0500 [-]     self.postApplication()\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 206, in postApplication\n2009-12-28 12:27:23-0500 [-]     self.startApplication(self.application)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 319, in startApplication\n2009-12-28 12:27:23-0500 [-]     self.shedPrivileges(self.config['euid'], uid, gid)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 290, in shedPrivileges\n2009-12-28 12:27:23-0500 [-]     switchUID(uid, gid, euid)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 663, in switchUID\n2009-12-28 12:27:23-0500 [-]     initgroups(uid, gid)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 640, in initgroups\n2009-12-28 12:27:23-0500 [-]     _setgroups_until_success(l)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 586, in _setgroups_until_success\n2009-12-28 12:27:23-0500 [-]     setgroups(l)\n2009-12-28 12:27:23-0500 [-] OSError: [Errno 1] Operation not permitted\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9001 *\n*                                                *\n**************************************************\nRemoving stale pidfile /Users/.../sage_wiki/twistd.pid\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/spread/pb.py:30: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import md5\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/MoinMoin/user.py:9: DeprecationWarning: the sha module is deprecated; use the hashlib module instead\n  import os, time, sha, codecs\n2009-12-28 12:27:23-0500 [-] Log opened.\n2009-12-28 12:27:23-0500 [-] twistd 8.2.0 (/Users/.../sage-4.3/local/bin/python 2.6.2) starting up.\n2009-12-28 12:27:23-0500 [-] reactor class: twisted.internet.selectreactor.SelectReactor.\n2009-12-28 12:27:23-0500 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9001\n2009-12-28 12:27:23-0500 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x1268b70>\n2009-12-28 12:27:23-0500 [-] Traceback (most recent call last):\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/bin/twistd\", line 21, in <module>\n2009-12-28 12:27:23-0500 [-]     run()\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2009-12-28 12:27:23-0500 [-]     app.run(runApp, ServerOptions)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 694, in run\n2009-12-28 12:27:23-0500 [-]     runApp(config)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2009-12-28 12:27:23-0500 [-]     _SomeApplicationRunner(config).run()\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 423, in run\n2009-12-28 12:27:23-0500 [-]     self.postApplication()\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 206, in postApplication\n2009-12-28 12:27:23-0500 [-]     self.startApplication(self.application)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 319, in startApplication\n2009-12-28 12:27:23-0500 [-]     self.shedPrivileges(self.config['euid'], uid, gid)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 290, in shedPrivileges\n2009-12-28 12:27:23-0500 [-]     switchUID(uid, gid, euid)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 663, in switchUID\n2009-12-28 12:27:23-0500 [-]     initgroups(uid, gid)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 640, in initgroups\n2009-12-28 12:27:23-0500 [-]     _setgroups_until_success(l)\n2009-12-28 12:27:23-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 586, in _setgroups_until_success\n2009-12-28 12:27:23-0500 [-]     setgroups(l)\n2009-12-28 12:27:23-0500 [-] OSError: [Errno 1] Operation not permitted\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9002 *\n*                                                *\n**************************************************\nRemoving stale pidfile /Users/.../sage_wiki/twistd.pid\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/spread/pb.py:30: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import md5\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/MoinMoin/user.py:9: DeprecationWarning: the sha module is deprecated; use the hashlib module instead\n  import os, time, sha, codecs\n2009-12-28 12:27:24-0500 [-] Log opened.\n2009-12-28 12:27:24-0500 [-] twistd 8.2.0 (/Users/.../sage-4.3/local/bin/python 2.6.2) starting up.\n2009-12-28 12:27:24-0500 [-] reactor class: twisted.internet.selectreactor.SelectReactor.\n2009-12-28 12:27:24-0500 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9002\n2009-12-28 12:27:24-0500 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x1268b70>\n2009-12-28 12:27:24-0500 [-] Traceback (most recent call last):\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/bin/twistd\", line 21, in <module>\n2009-12-28 12:27:24-0500 [-]     run()\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2009-12-28 12:27:24-0500 [-]     app.run(runApp, ServerOptions)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 694, in run\n2009-12-28 12:27:24-0500 [-]     runApp(config)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2009-12-28 12:27:24-0500 [-]     _SomeApplicationRunner(config).run()\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 423, in run\n2009-12-28 12:27:24-0500 [-]     self.postApplication()\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 206, in postApplication\n2009-12-28 12:27:24-0500 [-]     self.startApplication(self.application)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 319, in startApplication\n2009-12-28 12:27:24-0500 [-]     self.shedPrivileges(self.config['euid'], uid, gid)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 290, in shedPrivileges\n2009-12-28 12:27:24-0500 [-]     switchUID(uid, gid, euid)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 663, in switchUID\n2009-12-28 12:27:24-0500 [-]     initgroups(uid, gid)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 640, in initgroups\n2009-12-28 12:27:24-0500 [-]     _setgroups_until_success(l)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 586, in _setgroups_until_success\n2009-12-28 12:27:24-0500 [-]     setgroups(l)\n2009-12-28 12:27:24-0500 [-] OSError: [Errno 1] Operation not permitted\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9003 *\n*                                                *\n**************************************************\nRemoving stale pidfile /Users/.../sage_wiki/twistd.pid\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/spread/pb.py:30: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import md5\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/MoinMoin/user.py:9: DeprecationWarning: the sha module is deprecated; use the hashlib module instead\n  import os, time, sha, codecs\n2009-12-28 12:27:24-0500 [-] Log opened.\n2009-12-28 12:27:24-0500 [-] twistd 8.2.0 (/Users/.../sage-4.3/local/bin/python 2.6.2) starting up.\n2009-12-28 12:27:24-0500 [-] reactor class: twisted.internet.selectreactor.SelectReactor.\n2009-12-28 12:27:24-0500 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9003\n2009-12-28 12:27:24-0500 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x1268b70>\n2009-12-28 12:27:24-0500 [-] Traceback (most recent call last):\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/bin/twistd\", line 21, in <module>\n2009-12-28 12:27:24-0500 [-]     run()\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2009-12-28 12:27:24-0500 [-]     app.run(runApp, ServerOptions)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 694, in run\n2009-12-28 12:27:24-0500 [-]     runApp(config)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2009-12-28 12:27:24-0500 [-]     _SomeApplicationRunner(config).run()\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 423, in run\n2009-12-28 12:27:24-0500 [-]     self.postApplication()\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 206, in postApplication\n2009-12-28 12:27:24-0500 [-]     self.startApplication(self.application)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 319, in startApplication\n2009-12-28 12:27:24-0500 [-]     self.shedPrivileges(self.config['euid'], uid, gid)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 290, in shedPrivileges\n2009-12-28 12:27:24-0500 [-]     switchUID(uid, gid, euid)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 663, in switchUID\n2009-12-28 12:27:24-0500 [-]     initgroups(uid, gid)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 640, in initgroups\n2009-12-28 12:27:24-0500 [-]     _setgroups_until_success(l)\n2009-12-28 12:27:24-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 586, in _setgroups_until_success\n2009-12-28 12:27:24-0500 [-]     setgroups(l)\n2009-12-28 12:27:24-0500 [-] OSError: [Errno 1] Operation not permitted\nPort 9000 is already in use.  Trying next port...\n**************************************************\n*                                                *\n* Open your web browser to http://localhost:9004 *\n*                                                *\n**************************************************\nRemoving stale pidfile /Users/.../sage_wiki/twistd.pid\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/spread/pb.py:30: DeprecationWarning: the md5 module is deprecated; use hashlib instead\n  import md5\n/Users/.../sage-4.3/local/lib/python2.6/site-packages/MoinMoin/user.py:9: DeprecationWarning: the sha module is deprecated; use the hashlib module instead\n  import os, time, sha, codecs\n2009-12-28 12:27:25-0500 [-] Log opened.\n2009-12-28 12:27:25-0500 [-] twistd 8.2.0 (/Users/.../sage-4.3/local/bin/python 2.6.2) starting up.\n2009-12-28 12:27:25-0500 [-] reactor class: twisted.internet.selectreactor.SelectReactor.\n2009-12-28 12:27:25-0500 [-] MoinMoin.server.twistedmoin.MoinSite starting on 9004\n2009-12-28 12:27:25-0500 [-] Starting factory <MoinMoin.server.twistedmoin.MoinSite instance at 0x1268b70>\n2009-12-28 12:27:25-0500 [-] Traceback (most recent call last):\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/bin/twistd\", line 21, in <module>\n2009-12-28 12:27:25-0500 [-]     run()\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 27, in run\n2009-12-28 12:27:25-0500 [-]     app.run(runApp, ServerOptions)\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 694, in run\n2009-12-28 12:27:25-0500 [-]     runApp(config)\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/twistd.py\", line 23, in runApp\n2009-12-28 12:27:25-0500 [-]     _SomeApplicationRunner(config).run()\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/application/app.py\", line 423, in run\n2009-12-28 12:27:25-0500 [-]     self.postApplication()\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 206, in postApplication\n2009-12-28 12:27:25-0500 [-]     self.startApplication(self.application)\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 319, in startApplication\n2009-12-28 12:27:25-0500 [-]     self.shedPrivileges(self.config['euid'], uid, gid)\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/scripts/_twistd_unix.py\", line 290, in shedPrivileges\n2009-12-28 12:27:25-0500 [-]     switchUID(uid, gid, euid)\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 663, in switchUID\n2009-12-28 12:27:25-0500 [-]     initgroups(uid, gid)\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 640, in initgroups\n2009-12-28 12:27:25-0500 [-]     _setgroups_until_success(l)\n2009-12-28 12:27:25-0500 [-]   File \"/Users/.../sage-4.3/local/lib/python2.6/site-packages/twisted/python/util.py\", line 586, in _setgroups_until_success\n2009-12-28 12:27:25-0500 [-]     setgroups(l)\n2009-12-28 12:27:25-0500 [-] OSError: [Errno 1] Operation not permitted\nPort 9000 is already in use.  Trying next port...\n```\n",
     "created_at": "2009-12-28T17:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11841",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11812",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -322,15 +322,15 @@ Port 9000 is already in use.  Trying next port...
 
 ---
 
-archive/issue_comments_011842.json:
+archive/issue_comments_011813.json:
 ```json
 {
     "body": "If it helps: There's new Moin Moin spkg at #3693.",
     "created_at": "2010-01-16T20:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11842",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11813",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -340,15 +340,15 @@ If it helps: There's new Moin Moin spkg at #3693.
 
 ---
 
-archive/issue_comments_011843.json:
+archive/issue_comments_011814.json:
 ```json
 {
     "body": "#3693 fixes this.",
     "created_at": "2010-01-16T23:10:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11843",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11814",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -358,15 +358,15 @@ archive/issue_comments_011843.json:
 
 ---
 
-archive/issue_comments_011844.json:
+archive/issue_comments_011815.json:
 ```json
 {
     "body": "Replying to [comment:2 kcrisman]:\n> Also, why is it still in the sage_wiki folder and not in .sage/sage_wiki or something similar to what is now done with the notebook?\n\nI'm not sure.  We do the same with `trac()` and the [optional] Trac spkg.  It makes sense to use a default directory under `DOT_SAGE`, but I think upgrading existing MoinMoin wikis can be problematic.",
     "created_at": "2010-01-21T10:27:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11844",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11815",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -379,15 +379,15 @@ I'm not sure.  We do the same with `trac()` and the [optional] Trac spkg.  It ma
 
 ---
 
-archive/issue_comments_011845.json:
+archive/issue_comments_011816.json:
 ```json
 {
     "body": "Replying to [comment:5 mpatel]:\n> Replying to [comment:2 kcrisman]:\n> > Also, why is it still in the sage_wiki folder and not in .sage/sage_wiki or something similar to what is now done with the notebook?\n> \n> I'm not sure.  We do the same with `trac()` and the [optional] Trac spkg.  It makes sense to use a default directory under `DOT_SAGE`, but I think upgrading existing MoinMoin wikis can be problematic.\n\n\nWhen I wrote the wiki and trac command, there was no .sage/* folder, and the SAge notebook was stored in sage_notebook in the current directory.   The notebook has moved over to be in .sage, but nobody moved the wiki and trac yet.   It would be reasonable to do so.  HOWEVER, note that this would break all my wiki's, since a typical situation is:\n\n\n```\nsage@sagemath:~/wiki/sage$ ls\nnohup.err  nohup.out  sage_wiki  start\nsage@sagemath:~/wiki/sage$ more start\nulimit -v 2000000; nohup echo \"wiki(port=9001, address='')\" | sage-new  > nohup.out 2>nohup.err &\nsage@sagemath:~/wiki/sage$\n```\n\n\nIf you change the wiki to be in $HOME/.sage by default, then suddenly all my wiki's will get started on top of each other (hence all but one will fail to start). \n\nSo it might be worth checking if there is a wiki directory \"sage_wiki\" in the current directory, and only if there isn't then default to $HOME/.sage/moinmoin.",
     "created_at": "2010-01-21T16:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11845",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11816",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -418,15 +418,15 @@ So it might be worth checking if there is a wiki directory "sage_wiki" in the cu
 
 ---
 
-archive/issue_comments_011846.json:
+archive/issue_comments_011817.json:
 ```json
 {
     "body": "I've made updating where wiki() stores its file #8027.",
     "created_at": "2010-01-21T16:58:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11846",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11817",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -436,15 +436,15 @@ I've made updating where wiki() stores its file #8027.
 
 ---
 
-archive/issue_comments_011847.json:
+archive/issue_comments_011818.json:
 ```json
 {
     "body": "Should be fixed by #3693.",
     "created_at": "2010-02-11T14:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11847",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11818",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -454,15 +454,15 @@ Should be fixed by #3693.
 
 ---
 
-archive/issue_comments_011848.json:
+archive/issue_comments_011819.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T14:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11848",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/1870#issuecomment-11819",
+    "user": "https://github.com/qed777"
 }
 ```
 

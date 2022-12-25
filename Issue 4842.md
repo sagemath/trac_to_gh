@@ -6,7 +6,7 @@ archive/issues_004842.json:
     "body": "Assignee: @robertwb\n\nCC:  @craigcitro @robertwb\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/12394b2efb1f6344/59421c4079e00cc5 for details:\n\n```\n> That example was with CyclotomicField(12) and CyclotomicField(132) ... \n\nAh. I bet the time was spent resolving the roots of CyclotomicField \n(132) to high enough precision to distinguish them. If you don't come   \nup with a patch for this, I'll (probably) do it later tonight. \n- Robert \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4842\n\n",
     "created_at": "2008-12-20T22:54:44Z",
     "labels": [
-        "coercion",
+        "component: coercion",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004842.json:
     "title": "Fix performance regression in eisenstein_submodule.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4842",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @robertwb
@@ -45,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4842
 
 ---
 
-archive/issue_comments_036720.json:
+archive/issue_comments_036648.json:
 ```json
 {
     "body": "Oh, I should handle the case of 2m -> m for m odd.",
     "created_at": "2008-12-21T10:28:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36720",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36648",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -63,15 +63,15 @@ Oh, I should handle the case of 2m -> m for m odd.
 
 ---
 
-archive/issue_comments_036721.json:
+archive/issue_comments_036649.json:
 ```json
 {
     "body": "Attachment [4842-cyclo-coerce.patch](tarball://root/attachments/some-uuid/ticket4842/4842-cyclo-coerce.patch) by @robertwb created at 2008-12-21 13:10:22",
     "created_at": "2008-12-21T13:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36721",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36649",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -81,15 +81,15 @@ Attachment [4842-cyclo-coerce.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_036722.json:
+archive/issue_comments_036650.json:
 ```json
 {
     "body": "This took longer than I expected due to build issues I ran into, but here's the patch. It should cover all cases, and use your fast code when the orders divide each other.",
     "created_at": "2008-12-21T13:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36722",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36650",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -99,15 +99,15 @@ This took longer than I expected due to build issues I ran into, but here's the 
 
 ---
 
-archive/issue_comments_036723.json:
+archive/issue_comments_036651.json:
 ```json
 {
     "body": "For the record: Patch applies, builds fine and all doctests with -long pass. The performance regression seems to have been fixed, i.e. before:\n\n```\nsage -t -long \"devel/sage/sage/modular/modform/eisenstein_submodule.py\"\n\t [73.3 s]\n```\n\nAfter the patch:\n\n```\nsage -t -long \"devel/sage/sage/modular/modform/eisenstein_submodule.py\"\n\t [3.4 s]\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T13:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36723",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36651",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -134,15 +134,15 @@ Michael
 
 ---
 
-archive/issue_comments_036724.json:
+archive/issue_comments_036652.json:
 ```json
 {
     "body": "This looks very good to me.  The maths is sound, the examples I tried worked, doctests passed and Michael is happy -- what more could we want?  I give this a positive review.",
     "created_at": "2008-12-21T21:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36724",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36652",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -152,15 +152,15 @@ This looks very good to me.  The maths is sound, the examples I tried worked, do
 
 ---
 
-archive/issue_comments_036725.json:
+archive/issue_comments_036653.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-21T22:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36725",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36653",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -170,15 +170,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_036726.json:
+archive/issue_comments_036654.json:
 ```json
 {
     "body": "Merged in Sage 3.2.3.alpha0",
     "created_at": "2008-12-21T22:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36726",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4842#issuecomment-36654",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

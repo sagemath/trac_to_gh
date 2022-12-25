@@ -6,7 +6,7 @@ archive/issues_006179.json:
     "body": "Assignee: tbd\n\nWe have the following on 32-bit OS X Intel:\n\n\n```\nsage -t -long \"devel/sage/sage/misc/html.py\"\n**********************************************************************\nFile \"/Users/was/build/sage-4.0.1.alpha0/devel/sage/sage/misc/html.py\", line 157:\n    sage: html.table([(i, j, i == j) for i in [0..1] for j in [0..1]])\nExpected:\n    <html>\n    <div class=\"notruncate\">\n    <table class=\"table_form\">\n    <tbody>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">True</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">False</span></td>\n    </tr>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">False</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">True</span></td>\n    </tr>  \n    </tbody>\n    </table>\n    </div>\n    </html>\nGot:\n    <html>\n    <div class=\"notruncate\">\n    <table class=\"table_form\">\n    <tbody>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">\\mbox{\\rm True}</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">\\mbox{\\rm False}</span></td>\n    </tr>\n    <tr class =\"row-a\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">0</span></td>\n    <td><span class=\"math\">\\mbox{\\rm False}</span></td>\n    </tr>\n    <tr class =\"row-b\">\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">1</span></td>\n    <td><span class=\"math\">\\mbox{\\rm True}</span></td>\n    </tr>\n    </tbody>\n    </table>\n    </div>\n    </html>\n**********************************************************************\n1 items had failures:\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6179\n\n",
     "created_at": "2009-06-01T14:37:18Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006179.json:
     "title": "html -- doctest failure in sage-4.0.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6179",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -99,15 +99,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6179
 
 ---
 
-archive/issue_comments_049333.json:
+archive/issue_comments_049238.json:
 ```json
 {
     "body": "NOTE: The expected values are *wrong*.  Math typesetting of bools should use \\mbox{\\rm ...}.",
     "created_at": "2009-06-04T00:08:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49333",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49238",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -117,15 +117,15 @@ NOTE: The expected values are *wrong*.  Math typesetting of bools should use \mb
 
 ---
 
-archive/issue_comments_049334.json:
+archive/issue_comments_049239.json:
 ```json
 {
     "body": "On my 32-bit Debian with sage-4.0.1.alpha0:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: latex(True)\nTrue\nsage: latex(False)\nFalse\n```\n\n| Sage Version 4.0.1.alpha0, Release Date: 2009-05-31                |\n| Type notebook() for the GUI, and license() for information.        |\nand also:\n\n\n```\n$ ./sage -t devel/sage/sage/misc/html.py\nsage -t  \"devel/sage/sage/misc/html.py\"\n         [1.1 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 1.1 seconds\n```\n",
     "created_at": "2009-06-04T08:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49334",
-    "user": "whuss"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49239",
+    "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
 
@@ -161,15 +161,15 @@ Total time for all tests: 1.1 seconds
 
 ---
 
-archive/issue_comments_049335.json:
+archive/issue_comments_049240.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-06-05T21:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49335",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49240",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -179,15 +179,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_049336.json:
+archive/issue_comments_049241.json:
 ```json
 {
     "body": "Attachment [trac_6179.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179.patch) by @mwhansen created at 2009-06-05 21:21:49\n\nThis issue is that\n\n\n```\nsage: isinstance(True, int)\nTrue\nsage: isinstance(True, bool)\nTrue\nsage: isinstance(1, bool)\nFalse\n```\n\n\nso the output depended on the order in which items of the latex_table dict were iterated.  This is fixed by changing latex_table to a list so that bool comes first.",
     "created_at": "2009-06-05T21:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49336",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49241",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -212,15 +212,15 @@ so the output depended on the order in which items of the latex_table dict were 
 
 ---
 
-archive/issue_comments_049337.json:
+archive/issue_comments_049242.json:
 ```json
 {
     "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-06-05T21:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49337",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49242",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -230,15 +230,15 @@ Changing assignee from tbd to @mwhansen.
 
 ---
 
-archive/issue_comments_049338.json:
+archive/issue_comments_049243.json:
 ```json
 {
     "body": "Here's another possible fix for the latex_table issue:\n\n``` \n        try:\n            f = latex_table[type(x)]\n            return LatexExpr(f(x))\n        except KeyError:\n            if x is None:\n                return LatexExpr(\"\\\\mbox{\\\\mathrm{None}}\")\n            return LatexExpr(str_function(str(x)))\n```\n\nSince `type(True)` returns `bool`, this looks up the right thing.  Is this approach better or worse than the one in your patch?  \n\nThe try/except approach helps to avoid accidental lookups in the table, but were those being used intentionally for anything?  For example, does `isinstance(blah, int)` return True for other classes that we care about for typesetting?  I tend to think that we should be more explicit rather than implicit (so add more entries `new-type: str` if we want more types to behave the way ints do), so I would favor the dictionary lookup approach.  I could be convinced otherwise, though.",
     "created_at": "2009-06-05T21:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49338",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49243",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -262,15 +262,15 @@ The try/except approach helps to avoid accidental lookups in the table, but were
 
 ---
 
-archive/issue_comments_049339.json:
+archive/issue_comments_049244.json:
 ```json
 {
     "body": "I have no strong feelings on this; your patch is a tad more efficient, but none of this is really time critical. The latex_table should really only be used for builtin types though; anything else would be coupling things too much.",
     "created_at": "2009-06-05T22:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49339",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49244",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -280,15 +280,15 @@ I have no strong feelings on this; your patch is a tad more efficient, but none 
 
 ---
 
-archive/issue_comments_049340.json:
+archive/issue_comments_049245.json:
 ```json
 {
     "body": "I don't care about the efficiency, but I like that my patch is less ambiguous: with yours, if some unexpected type returns True for `isinstance(blah, int)`, then the latex could get screwed up.  It also depends on the ordering in the table.  My change was already in a patch (\"needs work\") for #6089, and in that patch it also gets used when constructing jsmath expressions.  So if you don't have a strong preference, I'll post my version of the patch here.\n\nThis includes your changes to html.py and your new doctest in latex.py, which I give a positive review to.",
     "created_at": "2009-06-05T22:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49340",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49245",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -300,15 +300,15 @@ This includes your changes to html.py and your new doctest in latex.py, which I 
 
 ---
 
-archive/issue_comments_049341.json:
+archive/issue_comments_049246.json:
 ```json
 {
     "body": "apply only this patch",
     "created_at": "2009-06-05T22:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49341",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49246",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -318,15 +318,15 @@ apply only this patch
 
 ---
 
-archive/issue_comments_049342.json:
+archive/issue_comments_049247.json:
 ```json
 {
     "body": "Attachment [trac_6179_version2.patch](tarball://root/attachments/some-uuid/ticket6179/trac_6179_version2.patch) by @mwhansen created at 2009-06-05 22:23:21\n\nLooks good to me.",
     "created_at": "2009-06-05T22:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49342",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49247",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -338,15 +338,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_049343.json:
+archive/issue_comments_049248.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-06T00:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49343",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49248",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -356,15 +356,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_049344.json:
+archive/issue_comments_049249.json:
 ```json
 {
     "body": "Merged in 4.0.1.rc3.",
     "created_at": "2009-06-06T00:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49344",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6179#issuecomment-49249",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

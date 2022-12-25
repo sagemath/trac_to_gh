@@ -6,7 +6,7 @@ archive/issues_002219.json:
     "body": "Assignee: @williamstein\n\n\n```\nroot_field()\n-- whose docstring does not say that self should be irreducible,\nthough in fact it must. \n```\n\n\nSee http://groups.google.com/group/sage-devel/browse_thread/thread/32fe12de12d5f6a5/c91753b5e65fe7b9#c91753b5e65fe7b9\n\nIssue created by migration from https://trac.sagemath.org/ticket/2219\n\n",
     "created_at": "2008-02-20T03:51:37Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002219.json:
     "title": "docs for root_field should say the polynomial needs to be irreducible",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2219",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2219
 
 ---
 
-archive/issue_comments_014704.json:
+archive/issue_comments_014673.json:
 ```json
 {
     "body": "Attachment [2219-root_field.patch](tarball://root/attachments/some-uuid/ticket2219/2219-root_field.patch) by @aghitza created at 2008-04-13 03:03:53\n\nSee the attached patch.",
     "created_at": "2008-04-13T03:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2219",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2219#issuecomment-14704",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2219#issuecomment-14673",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -57,15 +57,15 @@ See the attached patch.
 
 ---
 
-archive/issue_comments_014705.json:
+archive/issue_comments_014674.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-04-14T23:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2219",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2219#issuecomment-14705",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2219#issuecomment-14674",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -75,15 +75,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_014706.json:
+archive/issue_comments_014675.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha5",
     "created_at": "2008-04-15T00:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2219",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2219#issuecomment-14706",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2219#issuecomment-14675",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +93,15 @@ Merged in Sage 3.0.alpha5
 
 ---
 
-archive/issue_comments_014707.json:
+archive/issue_comments_014676.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-15T00:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2219",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2219#issuecomment-14707",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2219#issuecomment-14676",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

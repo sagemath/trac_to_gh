@@ -6,15 +6,14 @@ archive/issues_004180.json:
     "body": "Assignee: @williamstein\n\n\n```\nYeah, I think it would greatly help if users could send an env\nvariable that dumps the pexpect communication to a file. Currently I\nhave to debug some Singular vs. pexpect problems on Solaris, but I\nguess with mhansen's help I will finally learn how to fix those\nissues. But for random users out there a magic switch that gives us\nlogs and helps us hunt down \"random\" problems would be a great thing\nIMHO.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4180\n\n",
     "created_at": "2008-09-23T22:16:39Z",
     "labels": [
-        "interfaces",
-        "minor",
-        "enhancement"
+        "component: interfaces",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "magic pexpect logging switch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4180",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4180
 
 ---
 
-archive/issue_comments_030327.json:
+archive/issue_comments_030266.json:
 ```json
 {
     "body": "Attachment [trac_4180.patch](tarball://root/attachments/some-uuid/ticket4180/trac_4180.patch) by @mwhansen created at 2008-09-24 00:14:20",
     "created_at": "2008-09-24T00:14:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30327",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30266",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -57,15 +56,15 @@ Attachment [trac_4180.patch](tarball://root/attachments/some-uuid/ticket4180/tra
 
 ---
 
-archive/issue_comments_030328.json:
+archive/issue_comments_030267.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-24T00:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30328",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30267",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -75,15 +74,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_030329.json:
+archive/issue_comments_030268.json:
 ```json
 {
     "body": "I've added a patch to do this which uses the SAGE_PEXPECT_LOG environment variable.",
     "created_at": "2008-09-24T00:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30329",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30268",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -93,15 +92,15 @@ I've added a patch to do this which uses the SAGE_PEXPECT_LOG environment variab
 
 ---
 
-archive/issue_comments_030330.json:
+archive/issue_comments_030269.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-24T00:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30330",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30269",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_030331.json:
+archive/issue_comments_030270.json:
 ```json
 {
     "body": "The patch looks very nice to me and will surely help us debug loads of Heisenbugs in the future. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T02:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30331",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30270",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -133,15 +132,15 @@ Michael
 
 ---
 
-archive/issue_comments_030332.json:
+archive/issue_comments_030271.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha1",
     "created_at": "2008-09-24T04:24:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30332",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30271",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -151,15 +150,15 @@ Merged in Sage 3.1.3.alpha1
 
 ---
 
-archive/issue_comments_030333.json:
+archive/issue_comments_030272.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-24T04:24:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30333",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4180#issuecomment-30272",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

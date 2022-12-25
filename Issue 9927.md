@@ -6,15 +6,14 @@ archive/issues_009927.json:
     "body": "Assignee: jason, was\n\nCC:  @rbeezer\n\nFrom Victor Miller:\n\n\n```\n\nsage: import numpy\nsage: a = numpy.array([1,2,3])\nsage: v = vector(a)\n\nTraceback (click to the left of this block for traceback)\n...\nTypeError: unsupported operand type(s) for ** or pow(): 'NoneType' and\n'int'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9928\n\n",
     "created_at": "2010-09-17T02:00:19Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "vectors from numpy arrays don't always work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9927",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: jason, was
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9928
 
 ---
 
-archive/issue_comments_098864.json:
+archive/issue_comments_098699.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-17T02:07:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98864",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98699",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -64,15 +63,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_098865.json:
+archive/issue_comments_098700.json:
 ```json
 {
     "body": "Attachment [9928-vector-numpy.patch](tarball://root/attachments/some-uuid/ticket9928/9928-vector-numpy.patch) by @jasongrout created at 2010-09-17 02:07:23",
     "created_at": "2010-09-17T02:07:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98865",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98700",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -82,15 +81,15 @@ Attachment [9928-vector-numpy.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_098866.json:
+archive/issue_comments_098701.json:
 ```json
 {
     "body": "The problem was that we were falling through to the last case (R**len(v)), but R was never prepared (i.e., was None) because the else statement was tied to the numpy check, not the dict check.",
     "created_at": "2010-09-17T02:08:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98866",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98701",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -100,15 +99,15 @@ The problem was that we were falling through to the last case (R**len(v)), but R
 
 ---
 
-archive/issue_comments_098867.json:
+archive/issue_comments_098702.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-09-17T04:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98867",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98702",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -118,15 +117,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_098868.json:
+archive/issue_comments_098703.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2010-09-17T04:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98868",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98703",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -136,15 +135,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_098869.json:
+archive/issue_comments_098704.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-28T10:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98869",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9927#issuecomment-98704",
+    "user": "https://github.com/qed777"
 }
 ```
 

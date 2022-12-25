@@ -6,7 +6,7 @@ archive/issues_000828.json:
     "body": "Assignee: @williamstein\n\nThe new edit() command in SAGE forces the chosen editor into the background.  I'm not sure of the ramifications, but I have a change to the command that does the following: if DISPLAY is set in the user's environment, the assumption is that the editor will work with X (the window system).  Since the default 'emacs' in Mac OS X does not work with X, the result is that edit() terminates prematurely, complaining that standard output is not a tty.\n\nMy fix is to retain the current behavior only if DISPLAY is set.  Otherwise, the editor command is invoked as a \"foreground\" task, not a background task.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/828\n\n",
     "created_at": "2007-10-05T05:56:32Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000828.json:
     "title": "edit() always puts the editor into the background",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/828",
-    "user": "justin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 Assignee: @williamstein
@@ -32,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/828
 
 ---
 
-archive/issue_comments_005128.json:
+archive/issue_comments_005112.json:
 ```json
 {
     "body": "Patch file fixing an edit() problem",
     "created_at": "2007-10-05T05:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5128",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5112",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -50,15 +50,15 @@ Patch file fixing an edit() problem
 
 ---
 
-archive/issue_comments_005129.json:
+archive/issue_comments_005113.json:
 ```json
 {
     "body": "Attachment [edit.patch](tarball://root/attachments/some-uuid/ticket828/edit.patch) by @nbruin created at 2007-10-05 07:43:29\n\nI don't think the DISPLAY variable is a good indication. Even when DISPLAY is set, if the editor is vi then running it in the background is a bad idea.\nI would propose:\n* if a full template is supplied, then take it as the user gives it\n* if you're trying to guess from the \"EDITOR\" variable, you'll have to look up\nhow to pass a line number anyway. For each of these editors you know whether an & makes sense, and this is independent of the &",
     "created_at": "2007-10-05T07:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5129",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5113",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -74,15 +74,15 @@ how to pass a line number anyway. For each of these editors you know whether an 
 
 ---
 
-archive/issue_comments_005130.json:
+archive/issue_comments_005114.json:
 ```json
 {
     "body": "sorry. Why can't I edit my comments? I meant \"independent of the value of EDITOR\".",
     "created_at": "2007-10-05T07:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5130",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5114",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -92,15 +92,15 @@ sorry. Why can't I edit my comments? I meant "independent of the value of EDITOR
 
 ---
 
-archive/issue_comments_005131.json:
+archive/issue_comments_005115.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2007-10-13T07:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5131",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5115",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -110,15 +110,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_005132.json:
+archive/issue_comments_005116.json:
 ```json
 {
     "body": "I don't think this is needed -- it was only need for the old version...",
     "created_at": "2007-10-13T07:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5132",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/828#issuecomment-5116",
+    "user": "https://github.com/williamstein"
 }
 ```
 

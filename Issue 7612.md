@@ -6,15 +6,14 @@ archive/issues_007612.json:
     "body": "Assignee: @williamstein\n\nDepends on #3619.\n\nAdd the new configuration setting to the server configuration (as a form of documentation).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7612\n\n",
     "created_at": "2009-12-06T11:48:53Z",
     "labels": [
-        "notebook",
-        "minor",
-        "enhancement"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SageNB -- Add 'record_logins' to server configuration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7612",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7612
 
 ---
 
-archive/issue_comments_065011.json:
+archive/issue_comments_064895.json:
 ```json
 {
     "body": "Nevermind, this is for an older version of the patch.",
     "created_at": "2009-12-06T11:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7612#issuecomment-65011",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7612#issuecomment-64895",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -49,15 +48,15 @@ Nevermind, this is for an older version of the patch.
 
 ---
 
-archive/issue_comments_065012.json:
+archive/issue_comments_064896.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-12-06T11:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7612#issuecomment-65012",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7612#issuecomment-64896",
+    "user": "https://github.com/TimDumol"
 }
 ```
 

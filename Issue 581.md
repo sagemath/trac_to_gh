@@ -6,15 +6,13 @@ archive/issues_000581.json:
     "body": "Assignee: mabshoff\n\nSee http://groups.google.com/group/linbox-use/t/513b47fcedb0f736 for details.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/581\n\n",
     "created_at": "2007-09-03T16:39:24Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "apply LinBox's Changeset 2803 - this removes the workaround for #498 and fixes the problem itself",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/581",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/581
 
 ---
 
-archive/issue_comments_003004.json:
+archive/issue_comments_002992.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-03T16:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/581",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-3004",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-2992",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_003005.json:
+archive/issue_comments_002993.json:
 ```json
 {
     "body": "The diff itself can be downloaded from http://linalg.org/projects/linalg/changeset/2803",
     "created_at": "2007-09-03T16:40:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/581",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-3005",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-2993",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +67,15 @@ The diff itself can be downloaded from http://linalg.org/projects/linalg/changes
 
 ---
 
-archive/issue_comments_003006.json:
+archive/issue_comments_002994.json:
 ```json
 {
     "body": "By the way: The fix for #498 never made it into 2.8.3:\n\n```\nsage: M=Matrix(Integers(),20,20,L)\nsage: M.det()\nERROR in reconstruction ?\n\n0\nsage: M.rank()\n20\nsage:\n```\n\nWilliam, do you have a clue what happened to the fixed spkg? I certainly send you a link. The SPKG.txt also doesn't contain my change log entry.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-03T19:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/581",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-3006",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-2994",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -104,15 +102,15 @@ Michael
 
 ---
 
-archive/issue_comments_003007.json:
+archive/issue_comments_002995.json:
 ```json
 {
     "body": "A new spkg with ChangeSet 2803 applied can be found at \n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/sage/linbox-20070903.spkg\n\nCheers,\n\nMichael",
     "created_at": "2007-09-03T19:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/581",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-3007",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-2995",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +126,15 @@ Michael
 
 ---
 
-archive/issue_comments_003008.json:
+archive/issue_comments_002996.json:
 ```json
 {
     "body": "applied and tested",
     "created_at": "2007-09-04T01:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/581",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-3008",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-2996",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -146,15 +144,15 @@ applied and tested
 
 ---
 
-archive/issue_comments_003009.json:
+archive/issue_comments_002997.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-04T01:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/581",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-3009",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/581#issuecomment-2997",
+    "user": "https://github.com/williamstein"
 }
 ```
 

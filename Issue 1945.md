@@ -6,15 +6,14 @@ archive/issues_001945.json:
     "body": "Assignee: tba\n\nI've gone through and made some changes to improve the formatting of the reference manual.  Here are my commit comments:\n\n```\nMany changes to improve the refman.\n1) Change SAGE->\\sage many places\n2) LaTeXify lots of math, literal strings, filenames, URLs, etc.\n3) fix typos, adjust content in other minor ways\n```\n\nand\n\n```\nMiscellaneous changes to make the reference manual prettier.\n1) Override python.sty so that list environments (itemize, etc.) inside\nfuncdesc environments work better.\n2) Change SAGE->Sage several places.\n3) Fix problem where sage.crypto.mq files were added to refman\n\"the old way\".\n4) Fix typos, adjust content in minor ways.\n5) Improve reference manual autogeneration:\n  a) only recognize \"sage:\" as doctest at the beginning of a line\n  b) only remove \"EXAMPLES:\" if it's the only thing on the line\n  c) start parsing \"INPUT:\" and \"OUTPUT:\" sections (so now you can\n     include LaTeX markup)\n  d) make parsing more flexible (authors can be separated by \"*\" as well\n     as \"--\", for example)\n  e) skip Cython file-location in module and class docstrings\n  f) if __init__ method has a docstring, put it in the refman\n  g) if a class includes a non-method, don't put it in the refman\n  h) if a module docstring includes \"nodoctest\", replace it with\n     useful text\n  i) work even when -f (\"force\") argument is not given\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1945\n\n",
     "created_at": "2008-01-27T01:04:41Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] improve reference manual formatting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1945",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: tba
@@ -62,15 +61,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1945
 
 ---
 
-archive/issue_comments_012345.json:
+archive/issue_comments_012314.json:
 ```json
 {
     "body": "Attachment [trac-1945-doc.patch](tarball://root/attachments/some-uuid/ticket1945/trac-1945-doc.patch) by cwitty created at 2008-01-27 01:06:38\n\nThe hg_doc part of the patch",
     "created_at": "2008-01-27T01:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12345",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12314",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -82,15 +81,15 @@ The hg_doc part of the patch
 
 ---
 
-archive/issue_comments_012346.json:
+archive/issue_comments_012315.json:
 ```json
 {
     "body": "Attachment [trac-1945-sage.patch](tarball://root/attachments/some-uuid/ticket1945/trac-1945-sage.patch) by cwitty created at 2008-01-27 01:07:23\n\nThe hg_sage part of the patch",
     "created_at": "2008-01-27T01:07:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12346",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12315",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -102,15 +101,15 @@ The hg_sage part of the patch
 
 ---
 
-archive/issue_comments_012347.json:
+archive/issue_comments_012316.json:
 ```json
 {
     "body": "I have verified that testall passes with this patch.",
     "created_at": "2008-01-27T01:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12347",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12316",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -120,15 +119,15 @@ I have verified that testall passes with this patch.
 
 ---
 
-archive/issue_comments_012348.json:
+archive/issue_comments_012317.json:
 ```json
 {
     "body": "Jason reviewed the changes to calculus.py; he says:\n\n```\n Okay, I've got to go, but I agree with all of your changes to calculus.py.\n (with the above exceptions :)\n```\n\nwhere \"the above exceptions\" are:\n\n```\nOne change: \n sage/calculus/calculus.py: line 1510\n with respect to $x$.\n (instead of \"with respect to $n$.\"\n```\n\nand\n\n```\n<jason> cwitty: in calculus.py, you changed .arguments() to .args().  Both seem to work.  Why the change?\n<jason> line 4440\n<cwitty> Because it's the doctest for .args(); if I don't make the change, then the doctest isn't testing the right thing.\n<jason> Especially since the docs to the function talk about .arguments()\n<cwitty> Oops; looks like more things should be changed then.\n<jason> oh, I didn't see that from the patch.\n<cwitty> (Or the whole .args() method should be replaced with \"args = arguments\".)\n<jason> That's my vote.  No code duplication then.\n```\n",
     "created_at": "2008-01-27T01:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12348",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12317",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -166,15 +165,15 @@ and
 
 ---
 
-archive/issue_comments_012349.json:
+archive/issue_comments_012318.json:
 ```json
 {
     "body": "I didn't go over this with a fine tooth comb, but all changes are minor and seem reasonable.  I say apply.",
     "created_at": "2008-01-27T04:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12349",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12318",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -184,15 +183,15 @@ I didn't go over this with a fine tooth comb, but all changes are minor and seem
 
 ---
 
-archive/issue_comments_012350.json:
+archive/issue_comments_012319.json:
 ```json
 {
     "body": "I needed to apply hunk 1 from the safe library patch manually.",
     "created_at": "2008-01-27T05:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12350",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12319",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -202,15 +201,15 @@ I needed to apply hunk 1 from the safe library patch manually.
 
 ---
 
-archive/issue_comments_012351.json:
+archive/issue_comments_012320.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-27T05:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12351",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12320",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -220,15 +219,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_012352.json:
+archive/issue_comments_012321.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc1",
     "created_at": "2008-01-27T05:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1945",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12352",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1945#issuecomment-12321",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

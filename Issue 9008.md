@@ -6,15 +6,14 @@ archive/issues_009008.json:
     "body": "Assignee: GeorgSWeber\n\nCC:  @jaapspies\n\nThe zlib package building 32-bit on OpenSolaris (see #7128), and has various hacks to make it build 64-bit on OS X. The spkg-install has various hacks, which I think are better implemented other ways. \n\n1) \n\n```\n-I\\\"$SAGE_LOCAL/include\\\"\"\n```\n\n\nseems better replaced by the command line option available on the configure script. \n\n\n```\n--includedir=\"$SAGE_LOCAL/include\" \n```\n\n\n2) Adding \n\n```\n-m64\n```\n \nis not currently the correct way to make a 64-bit build - the option \n\n\n```\n--64\n```\n\n\nis for that purpose. The developer (Mark Alder) was surprised hacks were needed for OS X, as that is his main development platform. \n\n3) The spkg-install adds \n\n\n```\n-fPIC\n```\n\n\nwhich apparently is(was) needed on Debian on Itanium. It would seem more sensible to add that option just on that platform if it is a  problem specific to that platform. \n\nThis package is much cleaner, but may not work on all platforms. It would be better to make the code cleaner, and fix what (if any) issues do actually still exist. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9008\n\n",
     "created_at": "2010-05-21T14:40:02Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Update zlib to latest upstream, and clean up spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9008",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: GeorgSWeber
@@ -76,15 +75,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9008
 
 ---
 
-archive/issue_comments_083316.json:
+archive/issue_comments_083180.json:
 ```json
 {
     "body": "Here's a package. I've not committed the Mercurial repository, so have not marked it for review, but just for testing now. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/zlib-1.2.5/zlib-1.2.5.spkg",
     "created_at": "2010-05-21T15:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83316",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83180",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -97,15 +96,15 @@ http://boxen.math.washington.edu/home/kirkby/patches/zlib-1.2.5/zlib-1.2.5.spkg
 
 ---
 
-archive/issue_comments_083317.json:
+archive/issue_comments_083181.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2010-05-21T15:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83317",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83181",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -115,15 +114,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_083318.json:
+archive/issue_comments_083182.json:
 ```json
 {
     "body": "I've now tested this on OpenSolaris, OS X and Linux. Setting SAGE64 to \"yes\" forces a 64-bit build. The binaries can be seen to be 64-bit when built with SAGE64=yes. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/lib/libz.*\nlocal/lib/libz.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libz.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\nlocal/lib/libz.so.1:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\nlocal/lib/libz.so.1.2.5:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\ndrkirkby@hawk:~/sage-4.4.2$ \n```\n\n\nThe -fPIC flag is added by the latest zlib source code, so there is no need for spkg-install to add it. \n\nAs such, I do not envisage any problems with this package. It is now ready for review. Please get it from:\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/zlib-1.2.5/zlib-1.2.5.spkg\n\nDave",
     "created_at": "2010-05-28T21:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83318",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83182",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -152,15 +151,15 @@ Dave
 
 ---
 
-archive/issue_comments_083319.json:
+archive/issue_comments_083183.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-05-28T21:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83319",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83183",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -170,15 +169,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_083320.json:
+archive/issue_comments_083184.json:
 ```json
 {
     "body": "The changes seem good to me; however this is failing to build in Cygwin with the following error:\n\n\n```\ncp libz.a /home/mhansen/sage-4.3.5/local/lib\ncp  /home/mhansen/sage-4.3.5/local/lib\ncp: missing destination file operand after `/home/mhansen/sage-4.3.5/local/lib'\nTry `cp --help' for more information.\nmake: *** [install-libs] Error 1\nError installing zlib\n```\n",
     "created_at": "2010-06-02T19:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83320",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83184",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -199,15 +198,15 @@ Error installing zlib
 
 ---
 
-archive/issue_comments_083321.json:
+archive/issue_comments_083185.json:
 ```json
 {
     "body": "Thank you Mike for trying. \n\nCan you attach the output of the Makefile? The 'configure' script creates a Makefile, which has a section 'install'. When I grep 'cp' from that, I see:\n\n\n```\n#    cp contrib/asm?86/match.S ./match.S\n\tcp zlib.h zconf.h $(includedir)\n\tcp $(LIBS) $(libdir)\n\tcp zlib.3 $(man3dir)\n\tcp -p Makefile.in Makefile\n\tcp -p zconf.in.h zconf.h\n\n```\n\n\nIn other words, there is nothing there with a empty destination. But of course, you will get a different Makefile to me. \n\nDave",
     "created_at": "2010-06-02T20:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83321",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83185",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -235,15 +234,15 @@ Dave
 
 ---
 
-archive/issue_comments_083322.json:
+archive/issue_comments_083186.json:
 ```json
 {
     "body": "Attachment [zlib-cygwin-Makefile](tarball://root/attachments/some-uuid/ticket9008/zlib-cygwin-Makefile) by @mwhansen created at 2010-06-02 21:01:16",
     "created_at": "2010-06-02T21:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83322",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83186",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -253,15 +252,15 @@ Attachment [zlib-cygwin-Makefile](tarball://root/attachments/some-uuid/ticket900
 
 ---
 
-archive/issue_comments_083323.json:
+archive/issue_comments_083187.json:
 ```json
 {
     "body": "I've attached the Makefile that was generated.",
     "created_at": "2010-06-02T21:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83323",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83187",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -271,15 +270,15 @@ I've attached the Makefile that was generated.
 
 ---
 
-archive/issue_comments_083324.json:
+archive/issue_comments_083188.json:
 ```json
 {
     "body": "Mike, \nwhen I grep 'cp' in the Makefile you posted, I see:\n\n\n```\ndrkirkby@hawk:~$ grep cp zlib-cygwin-Makefile\n#    cp contrib/asm?86/match.S ./match.S\n\tcp $(STATICLIB) $(DESTDIR)$(libdir)\n\tcp $(SHAREDLIBV) $(DESTDIR)$(sharedlibdir)\n\tcp zlib.3 $(DESTDIR)$(man3dir)\n\tcp zlib.pc $(DESTDIR)$(pkgconfigdir)\n\tcp zlib.h zconf.h $(DESTDIR)$(includedir)\n\tcp -p zconf.h.in zconf.h\n```\n\n\n\nWhen I do a recursive grep of 'DESTDIR' in the package, I find there is no such text anywhere in the package. So it looks to me like DESTDIR is being passed to the configure script - it's not a variable used in the original source code of zlib, or in spkg-install. Note even 'DEST' is used in either spkg-install or the zlib source code. \n\nIt seems **very** strange I must admit. \n\nDave \n\nDave",
     "created_at": "2010-06-02T21:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83324",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -312,15 +311,15 @@ Dave
 
 ---
 
-archive/issue_comments_083325.json:
+archive/issue_comments_083189.json:
 ```json
 {
     "body": "Changing assignee from GeorgSWeber to drkirkby.",
     "created_at": "2010-06-02T21:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83325",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83189",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -330,15 +329,15 @@ Changing assignee from GeorgSWeber to drkirkby.
 
 ---
 
-archive/issue_comments_083326.json:
+archive/issue_comments_083190.json:
 ```json
 {
     "body": "Replying to [comment:7 drkirkby]:\n> Note even 'DEST' is used in either spkg-install or the zlib source code. \n> \n> It seems **very** strange I must admit. \n> \n> Dave \n\nThat was supposed to be **not** even DEST is used. If DESTDIR is not used in Sage (and I don't recall seeing it) and it's not used in zlib, where can it come from? \n\nDave",
     "created_at": "2010-06-02T21:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83326",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83190",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -357,15 +356,15 @@ Dave
 
 ---
 
-archive/issue_comments_083327.json:
+archive/issue_comments_083191.json:
 ```json
 {
     "body": "Looking further, I see the text \"DESTDIR\" is used in the top-level Sage makefile. \n\n\n```\ndrkirkby@redstart:~/sage-4.4.3.alpha1$ grep DESTDIR makefile\n\tif [ \"$(DESTDIR)\" = \"\" ]; then \\\n\t\techo \"Set DESTDIR\"; \\\n\tmkdir -p $(DESTDIR)\n\tmkdir -p $(DESTDIR)/sage\n\tmkdir -p $(DESTDIR)/bin/\n\tcp -rpv * $(DESTDIR)/sage/\n\tpython local/bin/sage-hardcode_sage_root $(DESTDIR)/sage/sage \"$(DESTDIR)\"/sage\n\tcp $(DESTDIR)/sage/sage $(DESTDIR)/bin/\n\tcd $(DESTDIR)/bin/; ./sage -c\ndrkirkby@redstart:~/sage-4.4.3.alpha1$\n```\n\n\nIt looks like somehow that is being passed as text to the zlib package, and not substituted for something more useful, such as a path. \n\nDave",
     "created_at": "2010-06-02T21:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83327",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83191",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -395,15 +394,15 @@ Dave
 
 ---
 
-archive/issue_comments_083328.json:
+archive/issue_comments_083192.json:
 ```json
 {
     "body": "Mike, \n\ncan you try this. \n\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/zlib-1.2.5.spkg\n\nIt seems zlib was not building the shared library for you, so the 'cp' command tried to copy the non-existant shared library to the directory /home/mhansen/sage-4.3.5/local/lib. The error message was a bit confusing\n\n\n```\ncp: missing destination file operand after `/home/mhansen/sage-4.3.5/local/lib'\n```\n\nwas probably better replaced by:\n\n```\ncp: missing source file operand before `/home/mhansen/sage-4.3.5/local/lib'\n```\n\n\nI've put this file in a different location to the previous one. Hopefully this will build the shared library too now.",
     "created_at": "2010-06-12T02:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83328",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83192",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -434,15 +433,15 @@ I've put this file in a different location to the previous one. Hopefully this w
 
 ---
 
-archive/issue_comments_083329.json:
+archive/issue_comments_083193.json:
 ```json
 {
     "body": "Nope, that doesn't work.\n\n\n```\nChecking for shared library support...\nTested gcc -w -c -O3 -fPIC ztest3692.c\nTested -O3 -fPIC -o ztest3692.so ztest3692.o\n./configure: line 245: -O3: command not found\nNo shared library support; try without defining CC and CFLAGS\nBuilding static library libz.a version 1.2.5 with gcc.\n```\n\n\nIt seems that the configure script / Makefile is quite messed up for Cygwin.  I've put a new spkg at\n\nhttp://sage.math.washington.edu/home/mhansen/zlib-1.2.5.spkg\n\nwhich uses the win32/Makefile.gcc and skips the configure step.  Your changes seem good to me so it's just mine that need to be looked at.",
     "created_at": "2010-06-12T04:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83329",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83193",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -469,15 +468,15 @@ which uses the win32/Makefile.gcc and skips the configure step.  Your changes se
 
 ---
 
-archive/issue_comments_083330.json:
+archive/issue_comments_083194.json:
 ```json
 {
     "body": "Mike, Dave,\n\nI think you have done the job.\n\nzlib now builds 64 bit on OpenSolaris out of the box.\n\n\n\n```\nSuccessfully installed zlib-1.2.5\nYou can safely delete the temporary build directory\n/export/home/jaap/sage_port/sage-4.4.3/spkg/build/zlib-1.2.5\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing zlib-1.2.5.spkg\n-bash-4.0$ ls -l local/lib/libz*\n-rw-r--r-- 1 jaap other 133600 2010-06-12 17:28 local/lib/libz.a\nlrwxrwxrwx 1 jaap other     13 2010-06-12 17:28 local/lib/libz.so -> libz.so.1.2.5\nlrwxrwxrwx 1 jaap other     13 2010-06-12 17:28 local/lib/libz.so.1 -> libz.so.1.2.5\n-rwxr-xr-x 1 jaap other 162568 2010-06-10 16:52 local/lib/libz.so.1.2.3\n-rwxr-xr-x 1 jaap other 113736 2010-06-12 17:28 local/lib/libz.so.1.2.5\n-bash-4.0$ file local/lib/libz*\nlocal/lib/libz.a:       current ar archive, not a dynamic executable or shared object\nlocal/lib/libz.so:      ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\nlocal/lib/libz.so.1:    ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\nlocal/lib/libz.so.1.2.3:        ELF 32-bit LSB dynamic lib 80386 Version 1, dynamically linked, not stripped\nlocal/lib/libz.so.1.2.5:        ELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped, no debugging information available\n-bash-4.0$ \n\n```\n\n\nLet's give this a positive review.\n\nJaap",
     "created_at": "2010-06-12T16:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83330",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83194",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -521,15 +520,15 @@ Jaap
 
 ---
 
-archive/issue_comments_083331.json:
+archive/issue_comments_083195.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-12T16:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83331",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83195",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -539,15 +538,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083332.json:
+archive/issue_comments_083196.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2010-06-20T14:17:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83332",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83196",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -557,15 +556,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_083333.json:
+archive/issue_comments_083197.json:
 ```json
 {
     "body": "I'm updating this to blocker, as it is a very fundamental file in Sage and is the first one which fails to build properly whilst attempting a 64-bit build on platforms which do not default to 64-bit. It removes some nasty OS X hacks too. \n\nDave",
     "created_at": "2010-06-20T14:17:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83333",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83197",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -577,15 +576,15 @@ Dave
 
 ---
 
-archive/issue_comments_083334.json:
+archive/issue_comments_083198.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-25T15:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9008",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83334",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9008#issuecomment-83198",
+    "user": "https://github.com/rlmill"
 }
 ```
 

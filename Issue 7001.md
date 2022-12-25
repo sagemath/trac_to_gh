@@ -6,15 +6,14 @@ archive/issues_007001.json:
     "body": "Assignee: @williamstein\n\nCC:  @wdjoyner\n\nKeywords: gap interface recursion depth trap\n\nIt seems to me that it is forgotten to quit GAP's break loop before continuing. By consequence, GAP runs into a recursion depth trap (by default, GAP throws an error if a recursion of depth 5000 occurs) if there are too many errors.\n\nExample:\n\n```\nsage: def bugtrigger(n):\n....:     a = gap(1)\n....:     for i in range(n):\n....:         try:\n....:             b = gap.eval('Name(%s)'%a.name())\n....:             a += 1\n....:         except Exception, msg:\n....:             if 'recursion depth' in str(msg):\n....:                 return i,msg\n....:\nsage: bugtrigger(10000)\n\n(4998,\n RuntimeError('Gap produced error output\\nrecursion depth trap (5000)\\n\\n\\n   executing Name($sage1);',))\n```\n\n\n__Explanation:__\n\n\"Name\" is not defined for a, so, an error occurs, that we catch and continue. If this is done 4998 times then we have 4998 break loops inside the main loop, and then call `\"Name(%s)\"%a.name()`  -- this is a total of 5000 nested loops (main loop, 4998 break loops, function call).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7001\n\n",
     "created_at": "2009-09-23T09:41:46Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage's GAP interface not properly leaving GAP's break loop",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7001",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: @williamstein
@@ -59,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7001
 
 ---
 
-archive/issue_comments_057881.json:
+archive/issue_comments_057773.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-09-23T11:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57881",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57773",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -77,15 +76,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_057882.json:
+archive/issue_comments_057774.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @simon-king-jena.",
     "created_at": "2009-09-23T11:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57882",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57774",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -95,15 +94,15 @@ Changing assignee from @williamstein to @simon-king-jena.
 
 ---
 
-archive/issue_comments_057883.json:
+archive/issue_comments_057775.json:
 ```json
 {
     "body": "It turned out that it is a bug in GAP, not in Sage, as was pointed out by Frank L\u00fcbeck, whose message to me I post here with his permission:\n\n----\n...\n\nSecond, your previous code does actually show a bug in GAP: if a function\ncall in GAP is not properly finished (by running into an error and\nquiting the break loop) an internal counter for the recursion depth is not\nreset. Here is a short GAP session that demonstrates the effect:\n\n\n```\ngap> f := function() return 1/0; end;;\ngap> SetRecursionTrapInterval(3);\ngap> f();\nRational operations: <divisor> must not be zero at\nreturn 1 / 0;\n called from\n<function>( <arguments> ) called from read-eval-loop\nEntering break read-eval-print loop ...\nyou can 'quit;' to quit to outer loop, or\nyou can replace <divisor> via 'return <divisor>;' to continue\nbrk> quit;\ngap> f();\nRational operations: <divisor> must not be zero at\nreturn 1 / 0;\n called from\n<function>( <arguments> ) called from read-eval-loop\nEntering break read-eval-print loop ...\nyou can 'quit;' to quit to outer loop, or\nyou can replace <divisor> via 'return <divisor>;' to continue\nbrk> quit;\nrecursion depth trap (3)\n at\nreturn 1 / 0;\n called from\n<function>( <arguments> ) called from read-eval-loop\nEntering break read-eval-print loop ...\nyou can 'quit;' to quit to outer loop, or\nyou may 'return;' to continue\nbrk_02>\n```\n\n\nI will try to fix this.\n\nThanks and best regards,\n\n  Frank\n\n----\n\nSo, I label this ticket as \"reported upstream\", and think that the ticket should be closed as invalid by some administrator.\n\nCheers,\nSimon",
     "created_at": "2009-09-23T15:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57883",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57775",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -168,15 +167,15 @@ Simon
 
 ---
 
-archive/issue_comments_057884.json:
+archive/issue_comments_057776.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-09-24T10:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57884",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57776",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -186,15 +185,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_057885.json:
+archive/issue_comments_057777.json:
 ```json
 {
     "body": "Simon says \"close this\".",
     "created_at": "2009-09-24T10:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57885",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7001#issuecomment-57777",
+    "user": "https://github.com/williamstein"
 }
 ```
 

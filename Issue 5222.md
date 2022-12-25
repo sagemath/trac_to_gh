@@ -6,15 +6,13 @@ archive/issues_005222.json:
     "body": "Assignee: somebody\n\nFlint has a super-fast pseudo-division algorithm over ZZ, but Sage doesn't yet wrap it.  The point of this ticket is to wrap it.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/5222\n\n",
     "created_at": "2009-02-09T19:05:18Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "wrap FLINTs pseudo-division algorithm for univariate polynoials over ZZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5222",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5222
 
 ---
 
-archive/issue_comments_040024.json:
+archive/issue_comments_039946.json:
 ```json
 {
     "body": "Attachment [trac_5222.patch](tarball://root/attachments/some-uuid/ticket5222/trac_5222.patch) by @williamstein created at 2009-02-09 20:15:15",
     "created_at": "2009-02-09T20:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5222#issuecomment-40024",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5222#issuecomment-39946",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [trac_5222.patch](tarball://root/attachments/some-uuid/ticket5222/tra
 
 ---
 
-archive/issue_comments_040025.json:
+archive/issue_comments_039947.json:
 ```json
 {
     "body": "Patch looks good, tests pass.",
     "created_at": "2009-02-09T20:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5222#issuecomment-40025",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5222#issuecomment-39947",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -65,15 +63,15 @@ Patch looks good, tests pass.
 
 ---
 
-archive/issue_comments_040026.json:
+archive/issue_comments_039948.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-10T07:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5222#issuecomment-40026",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5222#issuecomment-39948",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +81,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_040027.json:
+archive/issue_comments_039949.json:
 ```json
 {
     "body": "Merged in Sage 3.3.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T07:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5222#issuecomment-40027",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5222#issuecomment-39949",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

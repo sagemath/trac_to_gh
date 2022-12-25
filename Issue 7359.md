@@ -6,15 +6,13 @@ archive/issues_007359.json:
     "body": "Assignee: @rlmill\n\nA graph is said to be k-degenerated if it can be totally decomposed by successively removing vertices of degree <= k.\n\nThere should be in Sage a function answering if a graph is k-degenerated, and in this case giving the order in which the vertices should be deleted.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7359\n\n",
     "created_at": "2009-10-31T08:53:48Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Methods for degenerated graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7359",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7359
 
 ---
 
-archive/issue_comments_061673.json:
+archive/issue_comments_061560.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-06-06T11:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61673",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61560",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -49,15 +47,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_061674.json:
+archive/issue_comments_061561.json:
 ```json
 {
     "body": "This is exactly what the recently-reviewed #9058 does.\n\nNathann",
     "created_at": "2010-10-09T08:33:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61674",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61561",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -69,15 +67,15 @@ Nathann
 
 ---
 
-archive/issue_comments_061675.json:
+archive/issue_comments_061562.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-10-09T08:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61675",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7359#issuecomment-61562",
+    "user": "https://github.com/qed777"
 }
 ```
 

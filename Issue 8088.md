@@ -6,15 +6,14 @@ archive/issues_008088.json:
     "body": "Assignee: drkirkby\n\nCC:  jas @jaapspies @williamstein\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.3.1 (with a few packages hacked to work on 64-bit)\n* gcc 4.3.4 configured with Sun linker and GNU assembler from binutils version 2.20.\n* 64-bit build. SAGE64 was set to yes, plus various other tricks to get -m64 into packages. \n\n## The problem\nThe sage library is failing to build on Open Solaris on the x64 platform. It has recently been broken on Solaris 10 SPARC too, for other reasons - see #7990 \n\n\n```\n../src/kernel/none/level1.h: In function \u2018mpsub\u2019:\n../src/kernel/none/level1.h:973: warning: right shift count >= width of type\n../src/kernel/none/level1.h:974: warning: right shift count >= width of type\n../src/kernel/none/level1.h:975: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpmul\u2019:\n../src/kernel/none/level1.h:981: warning: right shift count >= width of type\n../src/kernel/none/level1.h:982: warning: right shift count >= width of type\n../src/kernel/none/level1.h:983: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpdiv\u2019:\n../src/kernel/none/level1.h:989: warning: right shift count >= width of type\n../src/kernel/none/level1.h:990: warning: right shift count >= width of type\n../src/kernel/none/level1.h:991: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018dvdiiz\u2019:\n../src/kernel/none/level1.h:1001: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018itou\u2019:\n../src/kernel/none/level1.h:1012: warning: right shift count >= width of type\n../src/kernel/none/level1.h:1015: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018affui\u2019:\n../src/kernel/none/level1.h:1022: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1023: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018gtodouble\u2019:\n../src/kernel/none/level1.h:1049: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1051: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018expi\u2019:\n../src/kernel/none/level1.h:1111: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1112: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1112: warning: left shift count >= width of type\nsrc/convert.c: In function \u2018t_INT_to_ZZ\u2019:\nsrc/convert.c:29: warning: left shift count >= width of type\nsrc/convert.c:34: warning: right shift count >= width of type\nsrc/convert.c: In function \u2018ZZ_to_t_INT\u2019:\nsrc/convert.c:47: warning: left shift count >= width of type\nsrc/convert.c:47: warning: left shift count >= width of type\nsrc/convert.c:48: warning: left shift count >= width of type\nsrc/convert.c:49: warning: left shift count >= width of type\nsrc/convert.c:49: warning: left shift count >= width of type\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.3.1/local/include -I/export/home/drkirkby/sage-4.3.1/local/include/python2.6 -I/export/home/drkirkby/sage-4.3.1/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.3.1/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.3.1/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\npulling from /export/home/drkirkby/sage-4.3.1/spkg/build/sage-4.3.1\nsearching for changes\nno changes found\nabort: can't merge with ancestor\nnothing changed\n0 files updated, 0 files merged, 0 files removed, 0 files unresolved\nDeleting the scons target.\nRemoved src/convert.pic.o\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Cleaning targets ...\nscons: done cleaning targets.\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/convert.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.3.1/local/include -I/export/home/drkirkby/sage-4.3.1/local/include/python2.6 -I/export/home/drkirkby/sage-4.3.1/local/include/NTL -Iinclude src/convert.c\nIn file included from /export/home/drkirkby/sage-4.3.1/local/include/pari/pari.h:76,\n                 from include/convert.h:12,\n                 from src/convert.c:14:\n../src/kernel/none/level1.h: In function \u2018evallg\u2019:\n../src/kernel/none/level1.h:180: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018evalvalp\u2019:\n../src/kernel/none/level1.h:187: warning: left shift count >= width of type\n../src/kernel/none/level1.h:188: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018evalexpo\u2019:\n../src/kernel/none/level1.h:195: warning: left shift count >= width of type\n../src/kernel/none/level1.h:196: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018constant_term\u2019:\n../src/kernel/none/level1.h:201: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018leading_term\u2019:\n../src/kernel/none/level1.h:203: warning: left shift count >= width of type\n../src/kernel/none/level1.h:203: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018stackdummy\u2019:\n../src/kernel/none/level1.h:218: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018cgetg_copy\u2019:\n../src/kernel/none/level1.h:252: warning: left shift count >= width of type\n../src/kernel/none/level1.h:252: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018init_gen_op\u2019:\n../src/kernel/none/level1.h:257: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018cgetg\u2019:\n../src/kernel/none/level1.h:266: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018cgeti\u2019:\n../src/kernel/none/level1.h:274: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018cgetr\u2019:\n../src/kernel/none/level1.h:282: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018zeropadic\u2019:\n../src/kernel/none/level1.h:354: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018zeroser\u2019:\n../src/kernel/none/level1.h:362: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018zeropol\u2019:\n../src/kernel/none/level1.h:369: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpcopy\u2019:\n../src/kernel/none/level1.h:414: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018icopy\u2019:\n../src/kernel/none/level1.h:423: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018icopy_av\u2019:\n../src/kernel/none/level1.h:433: warning: left shift count >= width of type\n../src/kernel/none/level1.h:437: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpneg\u2019:\n../src/kernel/none/level1.h:445: warning: left shift count >= width of type\n../src/kernel/none/level1.h:445: warning: right shift count >= width of type\n../src/kernel/none/level1.h:445: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpabs\u2019:\n../src/kernel/none/level1.h:452: warning: right shift count >= width of type\n../src/kernel/none/level1.h:452: warning: left shift count >= width of type\n../src/kernel/none/level1.h:452: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018utoineg\u2019:\n../src/kernel/none/level1.h:476: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018utoipos\u2019:\n../src/kernel/none/level1.h:483: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018stosmall\u2019:\n../src/kernel/none/level1.h:513: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018itos\u2019:\n../src/kernel/none/level1.h:520: warning: right shift count >= width of type\n../src/kernel/none/level1.h:524: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018itos_or_0\u2019:\n../src/kernel/none/level1.h:532: warning: left shift count >= width of type\n../src/kernel/none/level1.h:532: warning: left shift count >= width of type\n../src/kernel/none/level1.h:533: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018itou_or_0\u2019:\n../src/kernel/none/level1.h:538: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018affii\u2019:\n../src/kernel/none/level1.h:554: warning: left shift count >= width of type\n../src/kernel/none/level1.h:554: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018affsi\u2019:\n../src/kernel/none/level1.h:561: warning: left shift count >= width of type\n../src/kernel/none/level1.h:564: warning: left shift count >= width of type\n../src/kernel/none/level1.h:565: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018affsr\u2019:\n../src/kernel/none/level1.h:572: warning: left shift count >= width of type\n../src/kernel/none/level1.h:581: warning: left shift count >= width of type\n../src/kernel/none/level1.h:581: warning: left shift count >= width of type\n../src/kernel/none/level1.h:586: warning: left shift count >= width of type\n../src/kernel/none/level1.h:586: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018affur\u2019:\n../src/kernel/none/level1.h:594: warning: left shift count >= width of type\n../src/kernel/none/level1.h:602: warning: left shift count >= width of type\n../src/kernel/none/level1.h:602: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018affiz\u2019:\n../src/kernel/none/level1.h:607: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018affsz\u2019:\n../src/kernel/none/level1.h:609: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpaff\u2019:\n../src/kernel/none/level1.h:611: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018real_1\u2019:\n../src/kernel/none/level1.h:621: warning: left shift count >= width of type\n../src/kernel/none/level1.h:621: warning: left shift count >= width of type\n../src/kernel/none/level1.h:622: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018real_m1\u2019:\n../src/kernel/none/level1.h:629: warning: left shift count >= width of type\n../src/kernel/none/level1.h:629: warning: left shift count >= width of type\n../src/kernel/none/level1.h:630: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018real2n\u2019:\n../src/kernel/none/level1.h:635: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018shiftr\u2019:\n../src/kernel/none/level1.h:653: warning: left shift count >= width of type\n../src/kernel/none/level1.h:653: warning: left shift count >= width of type\n../src/kernel/none/level1.h:656: warning: left shift count >= width of type\n../src/kernel/none/level1.h:657: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018cmpir\u2019:\n../src/kernel/none/level1.h:666: warning: right shift count >= width of type\n../src/kernel/none/level1.h:666: warning: right shift count >= width of type\n../src/kernel/none/level1.h:667: warning: right shift count >= width of type\n../src/kernel/none/level1.h:667: warning: right shift count >= width of type\n../src/kernel/none/level1.h:668: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018cmpsr\u2019:\n../src/kernel/none/level1.h:678: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018subii\u2019:\n../src/kernel/none/level1.h:692: warning: right shift count >= width of type\n../src/kernel/none/level1.h:692: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018addii\u2019:\n../src/kernel/none/level1.h:695: warning: right shift count >= width of type\n../src/kernel/none/level1.h:695: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018addrr\u2019:\n../src/kernel/none/level1.h:697: warning: right shift count >= width of type\n../src/kernel/none/level1.h:697: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018subrr\u2019:\n../src/kernel/none/level1.h:699: warning: right shift count >= width of type\n../src/kernel/none/level1.h:699: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018addir\u2019:\n../src/kernel/none/level1.h:701: warning: right shift count >= width of type\n../src/kernel/none/level1.h:701: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018subir\u2019:\n../src/kernel/none/level1.h:703: warning: right shift count >= width of type\n../src/kernel/none/level1.h:703: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018subri\u2019:\n../src/kernel/none/level1.h:705: warning: right shift count >= width of type\n../src/kernel/none/level1.h:705: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018addsi\u2019:\n../src/kernel/none/level1.h:707: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018subsi\u2019:\n../src/kernel/none/level1.h:709: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018vali\u2019:\n../src/kernel/none/level1.h:717: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018sdivsi_rem\u2019:\n../src/kernel/none/level1.h:752: warning: right shift count >= width of type\n../src/kernel/none/level1.h:756: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018sdivsi\u2019:\n../src/kernel/none/level1.h:766: warning: right shift count >= width of type\n../src/kernel/none/level1.h:769: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018umodui\u2019:\n../src/kernel/none/level1.h:845: warning: right shift count >= width of type\n../src/kernel/none/level1.h:846: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018rdiviiz\u2019:\n../src/kernel/none/level1.h:907: warning: left shift count >= width of type\n../src/kernel/none/level1.h:909: warning: left shift count >= width of type\n../src/kernel/none/level1.h:909: warning: left shift count >= width of type\n../src/kernel/none/level1.h:909: warning: left shift count >= width of type\n../src/kernel/none/level1.h:911: warning: right shift count >= width of type\n../src/kernel/none/level1.h:911: warning: left shift count >= width of type\n../src/kernel/none/level1.h:911: warning: right shift count >= width of type\n../src/kernel/none/level1.h:911: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpcmp\u2019:\n../src/kernel/none/level1.h:948: warning: right shift count >= width of type\n../src/kernel/none/level1.h:949: warning: right shift count >= width of type\n../src/kernel/none/level1.h:950: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mptrunc\u2019:\n../src/kernel/none/level1.h:954: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpfloor\u2019:\n../src/kernel/none/level1.h:956: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpceil\u2019:\n../src/kernel/none/level1.h:958: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpround\u2019:\n../src/kernel/none/level1.h:960: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpadd\u2019:\n../src/kernel/none/level1.h:965: warning: right shift count >= width of type\n../src/kernel/none/level1.h:966: warning: right shift count >= width of type\n../src/kernel/none/level1.h:967: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpsub\u2019:\n../src/kernel/none/level1.h:973: warning: right shift count >= width of type\n../src/kernel/none/level1.h:974: warning: right shift count >= width of type\n../src/kernel/none/level1.h:975: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpmul\u2019:\n../src/kernel/none/level1.h:981: warning: right shift count >= width of type\n../src/kernel/none/level1.h:982: warning: right shift count >= width of type\n../src/kernel/none/level1.h:983: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018mpdiv\u2019:\n../src/kernel/none/level1.h:989: warning: right shift count >= width of type\n../src/kernel/none/level1.h:990: warning: right shift count >= width of type\n../src/kernel/none/level1.h:991: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018dvdiiz\u2019:\n../src/kernel/none/level1.h:1001: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018itou\u2019:\n../src/kernel/none/level1.h:1012: warning: right shift count >= width of type\n../src/kernel/none/level1.h:1015: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018affui\u2019:\n../src/kernel/none/level1.h:1022: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1023: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018gtodouble\u2019:\n../src/kernel/none/level1.h:1049: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1051: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018expi\u2019:\n../src/kernel/none/level1.h:1111: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1112: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1112: warning: left shift count >= width of type\nsrc/convert.c: In function \u2018t_INT_to_ZZ\u2019:\nsrc/convert.c:29: warning: left shift count >= width of type\nsrc/convert.c:34: warning: right shift count >= width of type\nsrc/convert.c: In function \u2018ZZ_to_t_INT\u2019:\nsrc/convert.c:47: warning: left shift count >= width of type\nsrc/convert.c:47: warning: left shift count >= width of type\nsrc/convert.c:48: warning: left shift count >= width of type\nsrc/convert.c:49: warning: left shift count >= width of type\nsrc/convert.c:49: warning: left shift count >= width of type\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.3.1/local/include -I/export/home/drkirkby/sage-4.3.1/local/include/python2.6 -I/export/home/drkirkby/sage-4.3.1/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.3.1/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.3.1/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nERROR: There was an error building c_lib.\n\n\nreal\t0m0.508s\nuser\t0m0.287s\nsys\t0m0.215s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n\nreal\t0m2.600s\nuser\t0m1.453s\nsys\t0m1.106s\nsage: An error occurred while installing sage-4.3.1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8088\n\n",
     "created_at": "2010-01-27T04:05:18Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage library 4.3.1 failing to build on Open Solaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8088",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -337,15 +336,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8088
 
 ---
 
-archive/issue_comments_070879.json:
+archive/issue_comments_070758.json:
 ```json
 {
     "body": "What I see happening is that CFLAGS are not propagated.\n\nWhat I tried to do is adapting SConstruct:\n\n\n\n```\n## the details.\nif env['PLATFORM']==\"darwin\":\n    if os.environ['SAGE64']==\"yes\":\n        # We want the debug and optimization flags, since debug symbols are so useful, etc.\n        print \"MacIntel in 64 bit mode\"\n        env.Append( CFLAGS=\"-O2 -g -m64\" )\n        env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n        env.Append( LINKFLAGS=\"-m64 -single_module -flat_namespace -undefined dynamic_lookup\" )\n    else:\n        env.Append( LINKFLAGS=\"-single_module -flat_namespace -undefined dynamic_lookup\" )\n\nif env['PLATFORM']==\"SunOS\":\n    if os.environ['SAGE64']==\"yes\":\n        # We want the debug and optimization flags, since debug symbols are so useful, etc.\n        print \"Open Solaris in 64 bit mode\"\n        env.Append( CFLAGS=\"-O2 -g -m64\" )\n        env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n        env.Append( LDFLAGS=\"-m64 \" )\n\n# SCons doesn't automatically pull in system environment variables\n# However, we only need SAGE_LOCAL, so that's easy.\nenv['SAGE_LOCAL'] = os.environ['SAGE_LOCAL']\n\n```\n\n\n\nI think there is nothing wrong with this flags.\n\nBut I must admit I'm not very knowledgeable with scons nor the library build system.\n\n\n\nJaap",
     "created_at": "2010-02-01T20:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70879",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70758",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -395,15 +394,15 @@ Jaap
 
 ---
 
-archive/issue_comments_070880.json:
+archive/issue_comments_070759.json:
 ```json
 {
     "body": "SCons by design ignores all environment settings - CC, CFLAGS - aboslutely everything. I don't know how to use it, but I can assure you, even if you import CC/CFLAGS etc, into the Sconscript file, SCons will ignore them. That is how it is designed. \n\nI have found it very frustrating. \n\nTake a look at #6595 - it might give you some clues as to the problem of SCons and encvironment variables. \n\nDave",
     "created_at": "2010-02-01T20:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70880",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70759",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -419,15 +418,15 @@ Dave
 
 ---
 
-archive/issue_comments_070881.json:
+archive/issue_comments_070760.json:
 ```json
 {
     "body": "I mimicked the Darwin approach, assuming there was some sense in it :(\n\nJaap\n\n\n\n```\nsage subshell$ ./spkg-install 2>&1 | tee -a build.log\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6 -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\npulling from /export/home/jaap/Downloads/sage-4.3.2.alpha0/spkg/build/sage-4.3.2.alpha0\nsearching for changes\nno changes found\nabort: can't merge with ancestor\nnothing changed\n0 files updated, 0 files merged, 0 files removed, 0 files unresolved\nDeleting the scons target.\nRemoved src/convert.pic.o\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Cleaning targets ...\nscons: done cleaning targets.\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/convert.pic.o -c -fPIC -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6 -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/NTL -Iinclude src/convert.c\nIn file included from /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/pari/pari.h:76,\n                 from include/convert.h:12,\n                 from src/convert.c:14:\n../src/kernel/none/level1.h: In function \u2018evallg\u2019:\n../src/kernel/none/level1.h:180: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018evalvalp\u2019:\n../src/kernel/none/level1.h:187: warning: left shift count >= width of type\n../src/kernel/none/level1.h:188: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018evalexpo\u2019:\n../src/kernel/none/level1.h:195: warning: left shift count >= width of type\n../src/kernel/none/level1.h:196: warning: left shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018constant_term\u2019:\n../src/kernel/none/level1.h:201: warning: right shift count >= width of type\n../src/kernel/none/level1.h: In function \u2018leading_term\u2019:\n[...]\n../src/kernel/none/level1.h:1111: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1112: warning: left shift count >= width of type\n../src/kernel/none/level1.h:1112: warning: left shift count >= width of type\nsrc/convert.c: In function \u2018t_INT_to_ZZ\u2019:\nsrc/convert.c:29: warning: left shift count >= width of type\nsrc/convert.c:34: warning: right shift count >= width of type\nsrc/convert.c: In function \u2018ZZ_to_t_INT\u2019:\nsrc/convert.c:47: warning: left shift count >= width of type\nsrc/convert.c:47: warning: left shift count >= width of type\nsrc/convert.c:48: warning: left shift count >= width of type\nsrc/convert.c:49: warning: left shift count >= width of type\nsrc/convert.c:49: warning: left shift count >= width of type\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6 -I/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/jaap/Downloads/sage-4.3.2.alpha0/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nERROR: There was an error building c_lib.\n\n\nreal\t0m1.228s\nuser\t0m0.400s\nsys\t0m0.489s\nError building new version of SAGE.\nYou might try typing 'sage -ba' or write to sage-support with as much information as possible.\n/export/home/jaap/Downloads/sage-4.3.2.alpha0\nsage subshell$ \n\n\n```\n",
     "created_at": "2010-02-01T20:55:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70881",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70760",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -520,15 +519,15 @@ sage subshell$
 
 ---
 
-archive/issue_comments_070882.json:
+archive/issue_comments_070761.json:
 ```json
 {
     "body": "I'm not convinced there is any logic to the Darwin approach. I think the fact Sage builds 64-bit on some OS X platforms is that it builds 64-bit by default. The problem is, nobody working on the Sage project seems to really know how to use SCons. \n\nI think the best approach is to ask on the SCons users list (users`@`scons.tigris.org) and hope you get an answer. It took me months to solve the issue of just getting SCons to use the right C compiler. Setting CC is totally pointless - it gets ignored. So I'm not really surprised this fails. \n\nDave",
     "created_at": "2010-02-20T23:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70882",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70761",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -542,15 +541,15 @@ Dave
 
 ---
 
-archive/issue_comments_070883.json:
+archive/issue_comments_070762.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-12-09T21:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70883",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70762",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -560,15 +559,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_070884.json:
+archive/issue_comments_070763.json:
 ```json
 {
     "body": "Is this bug report still valid?",
     "created_at": "2010-12-09T21:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70884",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70763",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -578,15 +577,15 @@ Is this bug report still valid?
 
 ---
 
-archive/issue_comments_070885.json:
+archive/issue_comments_070764.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-12-12T12:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70885",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70764",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -596,15 +595,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_070886.json:
+archive/issue_comments_070765.json:
 ```json
 {
     "body": "No. I'#ve managed to build all of Sage (except R and ECL/Maxima) 64-bit on Solaris x64. It does not work very well at all, but it does all build, with those exceptions. ECL/Maxima issue should soon be resolved. R may need to be compiled with the Sun compiler. But I expect there will be other issues too. \n\nDave",
     "created_at": "2010-12-12T12:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70886",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70765",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -616,15 +615,15 @@ Dave
 
 ---
 
-archive/issue_comments_070887.json:
+archive/issue_comments_070766.json:
 ```json
 {
     "body": "Resolution changed from fixed to worksforme",
     "created_at": "2010-12-12T22:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70887",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8088#issuecomment-70766",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_001369.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1369\n\n",
     "created_at": "2007-12-02T09:45:58Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001369.json:
     "title": "fix a bug introduced in #787 -- algorithm for computing quotient was sometimes wrong.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1369",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1369
 
 ---
 
-archive/issue_comments_008797.json:
+archive/issue_comments_008773.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2007-12-02T09:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1369",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1369#issuecomment-8797",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1369#issuecomment-8773",
+    "user": "https://github.com/williamstein"
 }
 ```
 

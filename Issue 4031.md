@@ -6,15 +6,14 @@ archive/issues_004031.json:
     "body": "Assignee: tbd\n\nFor consistency with symbolic expressions, callable symbolic expressions should accept keyword arguments.\n\n\n```\nsage: x, y = var('x,y')\nsage: f = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.SymbolicArithmetic'>\nsage: f(3,2)\n13\nsage: f(x=3,y=2)\n13\n\nThe desired behavior is\n\nsage: f(x,y) = x^2 + y^2\nsage: type(f)\n<class 'sage.calculus.calculus.CallableSymbolicExpression'>\nsage: f(3,2)\n13\nsage: f(x=3, y=2)\n13\n\nBut the current behavior is\n\nsage: f(x=3, y=2)\nTraceback (most recent call last):\n...\nTypeError: __call__() got an unexpected keyword argument 'y'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4031\n\n",
     "created_at": "2008-09-01T06:25:55Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Callable symbolic expressions should allow keyword args",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4031",
-    "user": "@jicama"
+    "user": "https://github.com/jicama"
 }
 ```
 Assignee: tbd
@@ -60,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4031
 
 ---
 
-archive/issue_comments_029082.json:
+archive/issue_comments_029024.json:
 ```json
 {
     "body": "Attachment [add_kwargs.patch](tarball://root/attachments/some-uuid/ticket4031/add_kwargs.patch) by @jicama created at 2008-09-01 06:27:23",
     "created_at": "2008-09-01T06:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29082",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29024",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -78,15 +77,15 @@ Attachment [add_kwargs.patch](tarball://root/attachments/some-uuid/ticket4031/ad
 
 ---
 
-archive/issue_comments_029083.json:
+archive/issue_comments_029025.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2008-09-01T06:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29083",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29025",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -96,15 +95,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_029084.json:
+archive/issue_comments_029026.json:
 ```json
 {
     "body": "The attached patch implements keyword args for callable symbolic expressions, along with doctests.",
     "created_at": "2008-09-01T06:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29084",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29026",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -114,15 +113,15 @@ The attached patch implements keyword args for callable symbolic expressions, al
 
 ---
 
-archive/issue_comments_029085.json:
+archive/issue_comments_029027.json:
 ```json
 {
     "body": "Changing component from algebra to calculus.",
     "created_at": "2008-09-01T06:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29085",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29027",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -132,15 +131,15 @@ Changing component from algebra to calculus.
 
 ---
 
-archive/issue_comments_029086.json:
+archive/issue_comments_029028.json:
 ```json
 {
     "body": "Changing assignee from tbd to @jicama.",
     "created_at": "2008-09-01T06:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29086",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29028",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -150,15 +149,15 @@ Changing assignee from tbd to @jicama.
 
 ---
 
-archive/issue_comments_029087.json:
+archive/issue_comments_029029.json:
 ```json
 {
     "body": "Opps :)",
     "created_at": "2008-09-01T12:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29087",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29029",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -168,15 +167,15 @@ Opps :)
 
 ---
 
-archive/issue_comments_029088.json:
+archive/issue_comments_029030.json:
 ```json
 {
     "body": "Attachment [trac_4031.patch](tarball://root/attachments/some-uuid/ticket4031/trac_4031.patch) by @mwhansen created at 2008-09-01 22:38:24",
     "created_at": "2008-09-01T22:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29088",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29030",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -186,15 +185,15 @@ Attachment [trac_4031.patch](tarball://root/attachments/some-uuid/ticket4031/tra
 
 ---
 
-archive/issue_comments_029089.json:
+archive/issue_comments_029031.json:
 ```json
 {
     "body": "Hello,\n\nI agree with patch, but I tweaked the implementation a bit.  Do you agree with the change jwmerrill?\n\n--Mike",
     "created_at": "2008-09-01T22:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29089",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29031",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -208,15 +207,15 @@ I agree with patch, but I tweaked the implementation a bit.  Do you agree with t
 
 ---
 
-archive/issue_comments_029090.json:
+archive/issue_comments_029032.json:
 ```json
 {
     "body": "Also, I forgot to mention that this patch fixes the issue at #4030.",
     "created_at": "2008-09-01T22:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29090",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29032",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -226,15 +225,15 @@ Also, I forgot to mention that this patch fixes the issue at #4030.
 
 ---
 
-archive/issue_comments_029091.json:
+archive/issue_comments_029033.json:
 ```json
 {
     "body": "mhansen, I think your implementation is better.  Only trac_4031.patch should be applied.",
     "created_at": "2008-09-01T22:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29091",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29033",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -244,15 +243,15 @@ mhansen, I think your implementation is better.  Only trac_4031.patch should be 
 
 ---
 
-archive/issue_comments_029092.json:
+archive/issue_comments_029034.json:
 ```json
 {
     "body": "\n```\nmhansen: Nope, if you think my patch is good and it works, give the ticket a positive review.\n```\n\n\nwith mhansen's patch, all tests pass.",
     "created_at": "2008-09-01T23:14:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29092",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29034",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -268,15 +267,15 @@ with mhansen's patch, all tests pass.
 
 ---
 
-archive/issue_comments_029093.json:
+archive/issue_comments_029035.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-02T10:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29093",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29035",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -286,15 +285,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029094.json:
+archive/issue_comments_029036.json:
 ```json
 {
     "body": "Merged trac_4031.patch in Sage 3.1.2.alpha4",
     "created_at": "2008-09-02T10:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4031",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29094",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4031#issuecomment-29036",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

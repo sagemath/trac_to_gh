@@ -6,7 +6,7 @@ archive/issues_005981.json:
     "body": "Assignee: mabshoff\n\nThis patch fixes the problem:\n\n```\ndiff -r 8713e0a599f3 sage/functions/prime_pi.pyx\n--- a/sage/functions/prime_pi.pyx\tSun May 03 23:10:56 2009 -0700\n+++ b/sage/functions/prime_pi.pyx\tMon May 04 12:44:03 2009 -0400\n@@ -171,7 +171,7 @@\n             raise ValueError, \"mem_mult must be positive\"\n         if x < 2:\n             return 0\n-        if x > Integer(2**40):\n+        if x > 1099511627776L:\n             raise NotImplementedError, \"computation of prime_pi() greater 2**40 not implemented\"\n         x += x & 1\n         # m_max is the current sieving value, for prime counting - this value is sqrt(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5981\n\n",
     "created_at": "2009-05-04T16:45:52Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005981.json:
     "title": "Sage 3.4.2: prime_pi() broken on 32 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5981",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -45,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5981
 
 ---
 
-archive/issue_comments_047496.json:
+archive/issue_comments_047405.json:
 ```json
 {
     "body": "Attachment [trac_5981.patch](tarball://root/attachments/some-uuid/ticket5981/trac_5981.patch) by mabshoff created at 2009-05-04 16:59:12",
     "created_at": "2009-05-04T16:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47496",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47405",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -63,15 +63,15 @@ Attachment [trac_5981.patch](tarball://root/attachments/some-uuid/ticket5981/tra
 
 ---
 
-archive/issue_comments_047497.json:
+archive/issue_comments_047406.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-04T17:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47497",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47406",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -81,15 +81,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_047498.json:
+archive/issue_comments_047407.json:
 ```json
 {
     "body": "Positive review :)\n\n\n```\n\n ./sage -t  \"devel/sage/sage/functions/prime_pi.pyx\"\nsage -t  \"devel/sage/sage/functions/prime_pi.pyx\"\n     [48.1 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 48.1 seconds\n\n\nJaap\n\n\n```\n",
     "created_at": "2009-05-04T17:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47498",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47407",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -117,15 +117,15 @@ Jaap
 
 ---
 
-archive/issue_comments_047499.json:
+archive/issue_comments_047408.json:
 ```json
 {
     "body": "Merged in Sage 3.4.2.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-05T04:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47499",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47408",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +139,15 @@ Michael
 
 ---
 
-archive/issue_comments_047500.json:
+archive/issue_comments_047409.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-05T04:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47500",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5981#issuecomment-47409",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

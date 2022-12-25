@@ -6,15 +6,14 @@ archive/issues_002003.json:
     "body": "Assignee: mabshoff\n\nOn Mac OS X (10.4.11 in my case), when the configure script for 'gnutls' runs, it will detect 'guile' and attempt to build the Guile bindings, if it finds a locally-installed Guile package (in my case, from MacPorts, in \"/opt\").  This causes the build to break.\n\n\n```\nchecking whether building Guile bindings... yes\n***\n*** Detecting GNU Guile...\n\nchecking for guile-snarf... /opt/local/bin/guile-snarf\nchecking for guile... /opt/local/bin/guile\nchecking for guile-config... /opt/local/bin/guile-config\nchecking for guile-tools... /opt/local/bin/guile-tools\nchecking libguile compile flags... -I/opt/local/include -D_THREAD_SAFE\nchecking libguile link flags... -D_THREAD_SAFE  -lguile -lltdl -L/opt/ \nlocal/lib -L/opt/local/lib -lgmp -lm -lltdl\nchecking whether GNU Guile is recent enough... yes\n\nmake[5]: warning: -jN forced in submake: disabling jobserver mode.\n/opt/local/bin/guile -L ../../guile/modules make-enum-map.scm > enum-map.i.c\n/opt/local/bin/guile -L ../../guile/modules make-smob-types.scm > smob-types.i.c\n/opt/local/bin/guile -L ../../guile/modules make-enum-header.scm > enums.h\nERROR: In procedure dynamic-link:\nERROR: file: \"libguile-srfi-srfi-1-v-3\", message: \"dlopen(libguile-srfi-srfi-1-v-3.s\no, 9): image not found\"\nmake[5]: *** [enum-map.i.c] Error 1\nmake[5]: *** Waiting for unfinished jobs....\nERROR: In procedure dynamic-link:\nERROR: file: \"libguile-srfi-srfi-1-v-3\", message: \"dlopen(libguile-srfi-srfi-1-v-3.s\no, 9): image not found\"\nmake[5]: *** [enums.h] Error 1\nmake[4]: *** [all-recursive] Error 1\nmake[3]: *** [all-recursive] Error 1\nmake[2]: *** [all] Error 2\nfailed to build GNUTLS\n```\n\n\nIf the PATH variable does not give access to the installed Guile package, the build proceeds without a problem.\n\nI think this is a bug, since building Sage should be independent of the packages installed elsewhere on the system (that is why Sage has so many pieces, after all).\n\nSome possible fixes:\n- force the PATH variable to some plain-vanilla setting.\n- use the \"-norc\" and \"-noprofile\" switches when starting subshells\n   (and maybe make sure the shells are not 'login' or 'interactive')\n- force the building of 'gnutls' to avoid this particular problem\n   (I think this can be done with \"--enable-guile=no' in the configure\n   script)\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2003\n\n",
     "created_at": "2008-01-31T18:34:54Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "gnutls configure script finds local copy of guile when it shouldn't",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2003",
-    "user": "justin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 Assignee: mabshoff
@@ -79,15 +78,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2003
 
 ---
 
-archive/issue_comments_012961.json:
+archive/issue_comments_012930.json:
 ```json
 {
     "body": "Hi Justin, \n\nI am not sure if disabling guile support will work as you suggest, i.e. `--enable-guile=no`, but the spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG/gnutls-2.2.1.p1.spkg\n\ndoes that. I don't think your other suggestions will work since it will break the build for other people. It might actually be also worth to fix the issue by fixing the Makefiles.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T22:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12961",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12930",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +106,15 @@ Michael
 
 ---
 
-archive/issue_comments_012962.json:
+archive/issue_comments_012931.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-31T22:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12962",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12931",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -125,15 +124,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_012963.json:
+archive/issue_comments_012932.json:
 ```json
 {
     "body": "Based on my experience with 2.10.1.rc[345], this can be overcome the 'configure' flag \"--enable-guile=no\".  That seems to be the most straight-forward solution.",
     "created_at": "2008-02-03T05:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12963",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12932",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -143,15 +142,15 @@ Based on my experience with 2.10.1.rc[345], this can be overcome the 'configure'
 
 ---
 
-archive/issue_comments_012964.json:
+archive/issue_comments_012933.json:
 ```json
 {
     "body": "Replying to [comment:3 justin]:\n> Based on my experience with 2.10.1.rc[345], this can be overcome the 'configure' flag \"--enable-guile=no\".  That seems to be the most straight-forward solution.\n> \n\nHi Justin,\n\nthis is exactly what the updated gnutls.spkg linked above does. So if it works for you you should give it a positive review so that I can merge it into 2.10.2.alpha0 :)\n\nCheers,\n\nMichael",
     "created_at": "2008-02-03T16:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12964",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12933",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -171,15 +170,15 @@ Michael
 
 ---
 
-archive/issue_comments_012965.json:
+archive/issue_comments_012934.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha0",
     "created_at": "2008-02-04T05:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12965",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12934",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -189,15 +188,15 @@ Merged in Sage 2.10.2.alpha0
 
 ---
 
-archive/issue_comments_012966.json:
+archive/issue_comments_012935.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-04T05:04:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12966",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2003#issuecomment-12935",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

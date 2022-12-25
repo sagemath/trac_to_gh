@@ -6,7 +6,7 @@ archive/issues_007235.json:
     "body": "Assignee: tbd\n\n\n```\n>> There is definitely no way the 10.6 OS X binary will work on OS X\n>> 10.4, and I would find it highly unlikely that it would work on 10.5\n>> either.  If the readme says that, it is very misleading (I think the\n>> readme is  refering to the source code).\n>\n> The ReadMe says that.\n\nI see it says:\n\n**\n  These binaries are only for OS X 10.4 or 10.5.  They will not work on OS X 10.3. \n**\n\nHowever, that's simply wrong, since the binaries are only for the platform listed in the name of the dmg.  Argh.  That needs to be changed.  (I was thinking of a different README file when I wrote my response.)    Thanks for the bug report.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7235\n\n",
     "created_at": "2009-10-17T19:43:21Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007235.json:
     "title": "os x readme file is misleading",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7235",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -48,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7235
 
 ---
 
-archive/issue_comments_060014.json:
+archive/issue_comments_059902.json:
 ```json
 {
     "body": "We might say: \"These binaries are only for the OS X version that is indicated by the\npackage .dmg name.\nThey generally will not work on any other OS X version (unless\nexplicitly stated otherwise).\"",
     "created_at": "2009-10-18T01:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60014",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59902",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -69,15 +69,15 @@ explicitly stated otherwise)."
 
 ---
 
-archive/issue_comments_060015.json:
+archive/issue_comments_059903.json:
 ```json
 {
     "body": "See ticket #5296 for related work on the age-worn OS X Readme.",
     "created_at": "2009-10-23T21:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60015",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59903",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -87,15 +87,15 @@ See ticket #5296 for related work on the age-worn OS X Readme.
 
 ---
 
-archive/issue_comments_060016.json:
+archive/issue_comments_059904.json:
 ```json
 {
     "body": "See also this thread on sage-support about naming conventions:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/4c6fc409f60053f4#\n\nBTW, on the Sage download page side-by-side with the Mac binaries (.dmg's), there is a README.txt file reading:\n\n```\nNOTE: the OS X 10.4 binary works fine on OS X 10.5. \n```\n\nOne might put more information there, too.",
     "created_at": "2009-10-24T19:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60016",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59904",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -115,15 +115,15 @@ One might put more information there, too.
 
 ---
 
-archive/issue_comments_060017.json:
+archive/issue_comments_059905.json:
 ```json
 {
     "body": "Attachment [sage-README-osx.txt](tarball://root/attachments/some-uuid/ticket7235/sage-README-osx.txt) by @williamstein created at 2009-11-11 19:11:58\n\nI changed the line as suggested by Georg Weber.  I agree with his suggestion.",
     "created_at": "2009-11-11T19:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60017",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59905",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -135,15 +135,15 @@ I changed the line as suggested by Georg Weber.  I agree with his suggestion.
 
 ---
 
-archive/issue_comments_060018.json:
+archive/issue_comments_059906.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-11T19:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60018",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59906",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -153,15 +153,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060019.json:
+archive/issue_comments_059907.json:
 ```json
 {
     "body": "I think I can just give this a positive review, since I just put what GeorgSWeber suggested in the README.",
     "created_at": "2009-11-11T19:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60019",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59907",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -171,15 +171,15 @@ I think I can just give this a positive review, since I just put what GeorgSWebe
 
 ---
 
-archive/issue_comments_060020.json:
+archive/issue_comments_059908.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-11T19:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60020",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59908",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -189,15 +189,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060021.json:
+archive/issue_comments_059909.json:
 ```json
 {
     "body": "I must admit I'm a bit flattered. However, I'm not the author of the one-line change suggested and incorporated in the new file, as one can see in the change history's first entry.\n\nOn the other hand, we *do* agree on what to do, so I confirm that the issue at hand has a positive review.  :-)",
     "created_at": "2009-11-11T19:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60021",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59909",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -209,15 +209,15 @@ On the other hand, we *do* agree on what to do, so I confirm that the issue at h
 
 ---
 
-archive/issue_comments_060022.json:
+archive/issue_comments_059910.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-12T06:07:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-60022",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7235#issuecomment-59910",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

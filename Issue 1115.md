@@ -6,15 +6,14 @@ archive/issues_001115.json:
     "body": "Assignee: @williamstein\n\nThis example illustrates the problem:\n\n```\nsage: E = EllipticCurve('389a')\nsage: sha = E.sha()\nsage: sha.an_numerical(200)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '/': 'Complex Field with 200 bits of precision' and 'Real Field with 53 bits of precision'\nsage: sha.an_numerical()\n0.999999999999998\nsage: sha.an_numerical(200)\n0.999999999999998\nsage: sha.an_numerical(300)\n0.999999999999998\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1115\n\n",
     "created_at": "2007-11-06T21:54:49Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Sha_an either fails or lies when prec isn't the default 53",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1115",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1115
 
 ---
 
-archive/issue_comments_006729.json:
+archive/issue_comments_006709.json:
 ```json
 {
     "body": "I am unable to reproduce the TypeError. Is the lie just in the precision? \n\nThe docstring states that only the L-series is calculated with the given precision. This could be passed onto Omega as well, but letting mwrank run at precision 200 would probably take a long, long time. \n\nOnce the generators are known, the regulator could be computed directly (rather than asking mwrank) to high precision, but this would be more an enhancement than a bug fix.",
     "created_at": "2008-01-04T21:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6729",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6709",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -67,15 +66,15 @@ Once the generators are known, the regulator could be computed directly (rather 
 
 ---
 
-archive/issue_comments_006730.json:
+archive/issue_comments_006710.json:
 ```json
 {
     "body": "The reported bug seems to have gone away, but the suggested enhancement is easy to do and I will do it.  We are using mwrank to get the gens and also the regulator;  but once we have the gens it is better to compute the regulator ourselves (using the height_pairing_matrix() function I put in as part of the integral points patch, which allows for arbitrary precision).\n\nI'll do this, and have accordingly changed the trac Type to \"enhancement\".  The milestone should probably not be 3.1.2 though.",
     "created_at": "2008-08-31T17:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6730",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6710",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -87,15 +86,15 @@ I'll do this, and have accordingly changed the trac Type to "enhancement".  The 
 
 ---
 
-archive/issue_comments_006731.json:
+archive/issue_comments_006711.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2008-08-31T17:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6731",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6711",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_006732.json:
+archive/issue_comments_006712.json:
 ```json
 {
     "body": "Attachment [sage-trac1115.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115.patch) by @JohnCremona created at 2008-09-01 11:34:15\n\nThe patch sage-trac1115.patch implements the following:\n\nIn ell_point.py: arbitrary precision for canonical heights (over Q)\n\nIn ell_rational_field.py: improved use of database for gens() (e.g. if the curve is not in the database but an isomorphic curve is);  no longer gets regulator from db but computes it from gens;  regulator_of_points() function to find the regulators (i.e. det of height pairing matrix) for any list of points, to arbitrary precision;  revised regulator() function handles arbitrary precision with caching.\n\nIn ell_sha.py:  full precision setting for an_numerical(), which amongst other things deals with the original posting.",
     "created_at": "2008-09-01T11:34:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6732",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6712",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -131,15 +130,15 @@ In ell_sha.py:  full precision setting for an_numerical(), which amongst other t
 
 ---
 
-archive/issue_comments_006733.json:
+archive/issue_comments_006713.json:
 ```json
 {
     "body": "PS Patch should apply to 3.1.2.alpha3+, but note that there are some intersecting changes in the patch at #3377 and it is possible that applying one after the other will need some attention.  Since I don't know which will get reviewed first, I am leaving things like this.",
     "created_at": "2008-09-01T11:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6733",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6713",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -149,15 +148,15 @@ PS Patch should apply to 3.1.2.alpha3+, but note that there are some intersectin
 
 ---
 
-archive/issue_comments_006734.json:
+archive/issue_comments_006714.json:
 ```json
 {
     "body": ":)",
     "created_at": "2008-09-01T11:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6734",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6714",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -167,15 +166,15 @@ archive/issue_comments_006734.json:
 
 ---
 
-archive/issue_comments_006735.json:
+archive/issue_comments_006715.json:
 ```json
 {
     "body": "I'm in the process of looking at this.  Here are two things:\n\n1. I get a doctest failure in ell_point.py.  Not sure what's going on, but it's basically the following:\n\n```\nsage: e = EllipticCurve([0,0,1,-1,0])  \nsage: dumps(e);\nsage: g = e.gens()                                                             \nsage: dumps(e);\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/opt/sage-3.1.2.alpha3/devel/sage-main/sage/<ipython console> in <module>()\n\n/opt/sage-3.1.2.alpha3/devel/sage-main/sage/sage_object.pyx in sage.structure.sage_object.dumps (sage/structure/sage_object.c:5132)()\n\nRuntimeError: maximum recursion depth exceeded\n```\n\n\nSo somehow the new gens or regulator code breaks dumps(e).\n\n\n2. a few minor typos:\n- line 657 of ell_point.py: \"precision of None\" should be \"precision if None\"\n- line 1473 of ell_rational_field.py: \"int or Noene\" should be \"int or None\"\n- line 1588 of ell_rational_field.py: \"number of bit\" should be \"number of bits\"\n\nEverything else seems to work as advertised.",
     "created_at": "2008-09-02T09:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6735",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6715",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -213,15 +212,15 @@ Everything else seems to work as advertised.
 
 ---
 
-archive/issue_comments_006736.json:
+archive/issue_comments_006716.json:
 ```json
 {
     "body": "Thanks -- I can easily fix the typos of course.  But I have no idea about the dumps() problem -- I don't think I have ever called the dumps function and I have no idea what it does.  Can you enlighten me a bit?\n\nThis works for me:\n\n```\njohn@ubuntu%./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading SAGE library. Current Mercurial branch is: sha\nsage: e = EllipticCurve([0,0,1,-1,0])  \nsage: dumps(e);                        \nsage: g = e.gens()                    \nsage: dumps(e);   \nsage: e == loads(dumps(e))\nTrue\n```\n",
     "created_at": "2008-09-02T09:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6736",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6716",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -247,15 +246,15 @@ True
 
 ---
 
-archive/issue_comments_006737.json:
+archive/issue_comments_006717.json:
 ```json
 {
     "body": "Attachment [sage-trac1115a.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.patch) by @JohnCremona created at 2008-09-02 09:59:34\n\nCorrection of docstring typos in previous patch",
     "created_at": "2008-09-02T09:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6737",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6717",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -267,15 +266,15 @@ Correction of docstring typos in previous patch
 
 ---
 
-archive/issue_comments_006738.json:
+archive/issue_comments_006718.json:
 ```json
 {
     "body": "Attachment [sage-trac1115a.2.patch](tarball://root/attachments/some-uuid/ticket1115/sage-trac1115a.2.patch) by @JohnCremona created at 2008-09-02 10:05:24\n\nThe second patch corrects the typos (and makes the description of the precision parameter consistent in those three places). [I think I may have attached it twice: if so ignore one of the files sage-trac1115a.patch .  Sorry.]\n\nI tried the dumps() thing again on a 64-bit machine and got the same error as you.\n\nMichael A, any chance you can help determine what makes this dumps() call work ok in 32-bit but not in 64-bit?",
     "created_at": "2008-09-02T10:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6738",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6718",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -291,15 +290,15 @@ Michael A, any chance you can help determine what makes this dumps() call work o
 
 ---
 
-archive/issue_comments_006739.json:
+archive/issue_comments_006719.json:
 ```json
 {
     "body": "After an inordinate amount of staring at this, I managed to figure out what's going on.  The new code in gens() introduces an unwanted recursion that goes on and on and makes dumps() complain as we have seen.  The culprit is on line 1340 of the first patch John posted, where there is a call to E.gens(), which will come back to this very point and get another call to E.gens() etc.\n\nThe fix is to replace E.gens() with E.gens(use_database=False), since E is already a database curve.\n\nI'll have a new patch up soon.",
     "created_at": "2008-09-03T06:39:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6739",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6719",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -313,15 +312,15 @@ I'll have a new patch up soon.
 
 ---
 
-archive/issue_comments_006740.json:
+archive/issue_comments_006720.json:
 ```json
 {
     "body": "Attachment [1115-sha_prec.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec.patch) by @aghitza created at 2008-09-03 06:55:36\n\napply only this patch, after #3377",
     "created_at": "2008-09-03T06:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6740",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6720",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -333,15 +332,15 @@ apply only this patch, after #3377
 
 ---
 
-archive/issue_comments_006741.json:
+archive/issue_comments_006721.json:
 ```json
 {
     "body": "There is nontrivial intersection with the patch at #3377, and trying to keep the two separate seems not fun.  Since #3377 has a positive review and will therefore be merged soon, I am posting a new patch here that depends on #3377.\n\nSo: apply the patch 1115-sha_prec.patch instead of the others, and after merging #3377.\n\nCredit goes of course to John Cremona.",
     "created_at": "2008-09-03T06:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6741",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6721",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -355,15 +354,15 @@ Credit goes of course to John Cremona.
 
 ---
 
-archive/issue_comments_006742.json:
+archive/issue_comments_006722.json:
 ```json
 {
     "body": "Replying to [comment:11 AlexGhitza]:\n> There is nontrivial intersection with the patch at #3377, and trying to keep the two separate seems not fun.  Since #3377 has a positive review and will therefore be merged soon, I am posting a new patch here that depends on #3377.\n> \n> So: apply the patch 1115-sha_prec.patch instead of the others, and after merging #3377.\n> \n> Credit goes of course to John Cremona.\n\n -- including the credit for introducing the infinite recursion!\n\nThanks, Alex, for your work tracking this down.  I think that in the end it was not a 32/64-bit thing at all, but rather that my 32-bit system had the optional database which *does* include the gens for database curves, while the 64-bit test I did was with a Sage which did not have the large database and hence had no gens.\n\nI will need to change Alex's fix though:  it has the effect that even when the large database is installed so the database curve's gens are known, they are not used!  The trick will be to test if the database curve's field `__gens` is set and extract the gens from there directly instead of calling the gens() function again.\n\nI'll do this and test it after sorting out #3377.",
     "created_at": "2008-09-03T08:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6742",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6722",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -386,15 +385,15 @@ I'll do this and test it after sorting out #3377.
 
 ---
 
-archive/issue_comments_006743.json:
+archive/issue_comments_006723.json:
 ```json
 {
     "body": "Attachment [1115-sha_prec-1.patch](tarball://root/attachments/some-uuid/ticket1115/1115-sha_prec-1.patch) by @JohnCremona created at 2008-09-03 10:50:15",
     "created_at": "2008-09-03T10:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6743",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6723",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -404,15 +403,15 @@ Attachment [1115-sha_prec-1.patch](tarball://root/attachments/some-uuid/ticket11
 
 ---
 
-archive/issue_comments_006744.json:
+archive/issue_comments_006724.json:
 ```json
 {
     "body": "The new small patch  1115-sha_prec-1.patch fixes the issue raised above:  without the recursive call to gens(), it gets the database curve's gens if they are there and maps them to this curve.\n\nI have tested this on 3.1.2.alpha4 + 3377 patches, both on 32- and 64-bit machines, bothe before and after installing the optional database (the one with the gens).\n\nI hope that does it!",
     "created_at": "2008-09-03T10:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6744",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6724",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -426,15 +425,15 @@ I hope that does it!
 
 ---
 
-archive/issue_comments_006745.json:
+archive/issue_comments_006725.json:
 ```json
 {
     "body": "I'm getting paranoid so I've tried out John's mini-patch (although he didn't ask for it :).\n\nVerdict: good.\n\nAfter #3377 is closed, apply 1115-sha_prec.patch followed by 1115-sha_prec-1.patch.",
     "created_at": "2008-09-03T12:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6745",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6725",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -448,15 +447,15 @@ After #3377 is closed, apply 1115-sha_prec.patch followed by 1115-sha_prec-1.pat
 
 ---
 
-archive/issue_comments_006746.json:
+archive/issue_comments_006726.json:
 ```json
 {
     "body": "Merged 1115-sha_prec.patch and 1115-sha_prec-1.patch in Sage 3.1.2.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-03T16:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6746",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6726",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -470,15 +469,15 @@ Michael
 
 ---
 
-archive/issue_comments_006747.json:
+archive/issue_comments_006727.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-03T16:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6747",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1115#issuecomment-6727",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

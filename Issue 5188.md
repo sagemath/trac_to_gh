@@ -6,7 +6,7 @@ archive/issues_005188.json:
     "body": "Assignee: tbd\n\nCC:  @wjp\n\nIn particular this isn't good:\n\n```\nsage: factor(-1)\n-1\nsage: (factor(-1))^2\n-1\nsage: (factor(-1)^2).value() == -1 \nTrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5188\n\n",
     "created_at": "2009-02-05T21:39:31Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005188.json:
     "title": "squaring some factorizations has a bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5188",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5188
 
 ---
 
-archive/issue_comments_039788.json:
+archive/issue_comments_039710.json:
 ```json
 {
     "body": "Some discussion in email:\n\n```\n\n\nOn Thu, Feb 5, 2009 at 1:39 AM, Willem Jan Palenstijn <wjp@usecode.org> wrote:\n>\n>\n> Hi all,\n>\n> We recently ran into two cases of confusing behaviour of Factorization\n> objects.\n>\n> The first:\n>\n> sage: f = factor(-1); f\n> -1\n> sage: f^2\n> -1\n>\n\nThat's terrible!  This is now:\n    http://trac.sagemath.org/sage_trac/ticket/5188\n\n> I traced this to a special case in the powering code for taking powers\n> of zero, which f is treated as:\n>\n> sage: bool(f)\n> False\n>\n> This is because f.__len__() == 0, and f.__nonzero__ is not defined. What do\n> you think the behaviour of __nonzero__() should be? Always return True?\n> Return 'not self.value()' ? \n\nThe safest is clearly\n\n    return self.value().__nonzero__()\n\nBut this can be very expensive.     Always returning true would be excellent,\nbut if we do that we need to put a test in the Factorization constructor that\nall the \"primes\" are nonzero.  That would be reasonable, especially if you put\na check=False option in, so one can skip checking nontriviality of the primes\nfor speed reasons. \n\n> Return 'len(self.__x) > 0 or bool(self.__unit)' ?\n> It's not at all clear to me how this should behave.\n>\n> My main confusion stems from the fact that it's easy to manually create\n> Factorization objects that have value 0, even though some methods in\n> Factorization don't seem to work properly for such manually created (non-prime)\n> factorizations.\n>\n> E.g.,\n> Factorization([0,1]) and Factorization([(Integers(4)(2),2)]) have value 0, and:\n> sage: Factorization([(6,1)]).gcd(factor(2))\n> 1\n> is unexpected, though understandable.\n>\n> One solution to this might be documenting the exact behaviour of the\n> Factorization object and functions like gcd/lcm to make it clear what\n> (not) to expect. In that case, making __nonzero__() always return True\n> might be acceptable. (Although I'm not sure if that's acceptable for\n> Factorizations of spaces.)\n>\n>\n>\n>\n>\n> The other is a non-commutative +:\n>\n> sage: f = factor(2)\n> sage: f + 7\n> 9\n> sage: 7 + f\n> ...\n> TypeError: unsupported operand parent(s) for '+': 'Integer Ring' and '<class 'sage.structure.factorization.Factorization'>'\n>\n> Maybe add/sub should be removed entirely as John Cremona suggested in\n> http://trac.sagemath.org/sage_trac/ticket/3927 ?\n>\n> Alternatively, could Factorization objects somehow be hooked into the coercion\n> system through the natural map to their universe where appropriate? Or does\n> them not having a parent make this impossible/hard/undesirable ?\n\nMaybe they should have a parent...\n\nWilliam\n\n>\n>\n> -Willem Jan\n>\n> P.S. See also http://groups.google.com/group/sage-devel/browse_thread/thread/425a8614d5765130 for a previous discussion on this topic.\n\n```\n",
     "created_at": "2009-02-05T21:43:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39788",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39710",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -154,15 +154,15 @@ William
 
 ---
 
-archive/issue_comments_039789.json:
+archive/issue_comments_039711.json:
 ```json
 {
     "body": "Wouldn't it be a good idea to fix the bug, whlie not dealing with the general issue, but completely changing the `__pow__()` function for factorizations?  Currently it calls a generic powering function, but that is rather silly.  We should take the power of the unit, but just multiply the exponents in the factorization!  (There would need to be a special check for raising to exponent zero, of course).",
     "created_at": "2009-02-15T18:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39789",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39711",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -172,15 +172,15 @@ Wouldn't it be a good idea to fix the bug, whlie not dealing with the general is
 
 ---
 
-archive/issue_comments_039790.json:
+archive/issue_comments_039712.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-06-04T20:46:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39790",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39712",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -190,15 +190,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_039791.json:
+archive/issue_comments_039713.json:
 ```json
 {
     "body": "This is now invalid.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: factor(-1)\n-1\nsage: sage: (factor(-1))^2\n1\nsage: sage: (factor(-1)^2).value() == -1 \nFalse\n```\n",
     "created_at": "2009-06-04T20:46:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5188",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39791",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5188#issuecomment-39713",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

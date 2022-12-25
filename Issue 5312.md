@@ -6,15 +6,14 @@ archive/issues_005312.json:
     "body": "Assignee: cwitty\n\nCC:  @orlitzky\n\nThere is a weird interaction between time and preparser, almost as if input to time is being preparsed *twice*:\n\n\n```\nwstein@sage:~/build/sage-3.3.rc1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: type(k)\n<type 'sage.rings.integer.Integer'>\nsage: preparse('k = 3r')\n'k = 3'\nsage: preparse('time k = 3r')\n'time k = 3'\n```\n\n| Sage Version 3.3.rc1, Release Date: 2009-02-16                     |\n| Type notebook() for the GUI, and license() for information.        |\nIn the above, type(k) should have been int in all cases.  Why isn't it the second time.  WEIRD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5312\n\n",
     "created_at": "2009-02-19T08:31:41Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "command line -- bug in preparser and \"time\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5312",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5312
 
 ---
 
-archive/issue_comments_040915.json:
+archive/issue_comments_040835.json:
 ```json
 {
     "body": "This works now:\n\n\n```\nsage: k = 3r\nsage: type(k)\n<type 'int'>\nsage: time k = 3r\nTime: CPU 0.00 s, Wall: 0.00 s\nsage: type(k)\n<type 'int'>\n```\n\n\nWhere's the best place to add a doctest?",
     "created_at": "2012-01-09T02:17:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5312",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40915",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40835",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -86,15 +85,15 @@ Where's the best place to add a doctest?
 
 ---
 
-archive/issue_comments_040916.json:
+archive/issue_comments_040836.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-07-23T12:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5312",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40916",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40836",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -104,15 +103,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_040917.json:
+archive/issue_comments_040837.json:
 ```json
 {
     "body": "I think we can just mark it as invalid since \"%time\" is now handled by IPython.",
     "created_at": "2013-07-23T12:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5312",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40917",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5312#issuecomment-40837",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

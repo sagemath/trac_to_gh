@@ -6,15 +6,14 @@ archive/issues_005314.json:
     "body": "Assignee: @hivert\n\nCC:  sage-combinat\n\nKeywords: permutations, empty\n\nRight now sage consider that there is no empty permutations.\n\n```\nsage: [] in Permutations()\nFalse\n```\n\nThere seems to be an agreement about the fact that the empty permutations exists ! Indeed there exists an empty set, and there exits exactly one function from the empty set to itself which is clearly bijective.\n\nThe patch solve this defect:\n\n```\nsage: import sage_emacs as emacs\nsage: [] in Permutations()\nTrue\nsage: Permutations(0).list()\n[[]]\nsage: Permutations(0).count()\n1\n```\n\n\nAuthor: Florent Hivert\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5314\n\n",
     "created_at": "2009-02-19T19:33:12Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] The empty permutations exists !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5314",
-    "user": "@hivert"
+    "user": "https://github.com/hivert"
 }
 ```
 Assignee: @hivert
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5314
 
 ---
 
-archive/issue_comments_040932.json:
+archive/issue_comments_040852.json:
 ```json
 {
     "body": "Patch proposal",
     "created_at": "2009-02-19T19:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40932",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40852",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -74,15 +73,15 @@ Patch proposal
 
 ---
 
-archive/issue_comments_040933.json:
+archive/issue_comments_040853.json:
 ```json
 {
     "body": "Changing assignee from @hivert to @mwhansen.",
     "created_at": "2009-02-19T19:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40933",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40853",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -92,15 +91,15 @@ Changing assignee from @hivert to @mwhansen.
 
 ---
 
-archive/issue_comments_040934.json:
+archive/issue_comments_040854.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-19T19:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40934",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40854",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -110,15 +109,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_040935.json:
+archive/issue_comments_040855.json:
 ```json
 {
     "body": "Attachment [trivial_permutations_fix-fh.patch](tarball://root/attachments/some-uuid/ticket5314/trivial_permutations_fix-fh.patch) by @mwhansen created at 2009-02-19 19:37:56\n\nLooks good and passes tests for me.",
     "created_at": "2009-02-19T19:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40935",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40855",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -130,15 +129,15 @@ Looks good and passes tests for me.
 
 ---
 
-archive/issue_comments_040936.json:
+archive/issue_comments_040856.json:
 ```json
 {
     "body": "Merged in Sage 3.3.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-20T07:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40936",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40856",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -152,15 +151,15 @@ Michael
 
 ---
 
-archive/issue_comments_040937.json:
+archive/issue_comments_040857.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-20T07:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40937",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5314#issuecomment-40857",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

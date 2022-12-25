@@ -6,15 +6,14 @@ archive/issues_001776.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: preparse('f(x) = x')\n'_=var(\"x\");f=symbolic_expression(x).function(x)'\nsage: preparse('f(x) =+x')\n'f(x) =+x'\nsage: preparse('f(x) =-x')\n'f(x) =-x'\n```\n\n\nThis was found by Jason Grout, with input by Jaap Spies and John Cremona.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1776\n\n",
     "created_at": "2008-01-14T14:14:50Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "symbolic function preparser bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1776",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1776
 
 ---
 
-archive/issue_comments_011244.json:
+archive/issue_comments_011217.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-14T14:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11244",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11217",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -58,15 +57,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_011245.json:
+archive/issue_comments_011218.json:
 ```json
 {
     "body": "slightly better fix (there is only one post-equals symbol, namely =).  This also fixes typos and mistakes in some of the docs.",
     "created_at": "2008-01-14T14:36:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11245",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11218",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -76,15 +75,15 @@ slightly better fix (there is only one post-equals symbol, namely =).  This also
 
 ---
 
-archive/issue_comments_011246.json:
+archive/issue_comments_011219.json:
 ```json
 {
     "body": "Attachment [trac1776.patch](tarball://root/attachments/some-uuid/ticket1776/trac1776.patch) by @jaapspies created at 2008-01-14 15:27:33\n\n\n```\nWorks for me!\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.10.alpha2, Release Date: 2008-01-11                 |\n| Type notebook() for the GUI, and license() for information.        |\n\nsage: f(x)=-x\n\nsage: f(2)\n -2\n\n\nJaap\n\n```\n",
     "created_at": "2008-01-14T15:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11246",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11219",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -114,15 +113,15 @@ Jaap
 
 ---
 
-archive/issue_comments_011247.json:
+archive/issue_comments_011220.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-14T16:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11247",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11220",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +131,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011248.json:
+archive/issue_comments_011221.json:
 ```json
 {
     "body": "Merged in Sage 2.10.alpha3.",
     "created_at": "2008-01-14T16:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11248",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1776#issuecomment-11221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

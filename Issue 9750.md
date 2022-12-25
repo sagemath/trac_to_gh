@@ -6,7 +6,7 @@ archive/issues_009750.json:
     "body": "Assignee: mvngu\n\nCC:  @JohnCremona\n\nEarlier versions of PARI assumed something stronger than GRH (in Sage, this is referred to as GRH++).  As of PARI 2.4.0, \"only\" the GRH is assumed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9750\n\n",
     "created_at": "2010-08-14T19:15:17Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009750.json:
     "title": "Document that PARI no longer assumes more than GRH",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9750",
-    "user": "@jdemeyer"
+    "user": "https://github.com/jdemeyer"
 }
 ```
 Assignee: mvngu
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9750
 
 ---
 
-archive/issue_comments_095481.json:
+archive/issue_comments_095322.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-14T19:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95481",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95322",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -49,15 +49,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_095482.json:
+archive/issue_comments_095323.json:
 ```json
 {
     "body": "Attachment [9750.patch](tarball://root/attachments/some-uuid/ticket9750/9750.patch) by @JohnCremona created at 2010-08-15 17:17:39\n\nLooks good (apart from one Sphinx warning which my reviewer patch fixes).\n\nIs there a good reference, say in the PARI reference manual, for the GRH assumptions?",
     "created_at": "2010-08-15T17:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95482",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95323",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -71,15 +71,15 @@ Is there a good reference, say in the PARI reference manual, for the GRH assumpt
 
 ---
 
-archive/issue_comments_095483.json:
+archive/issue_comments_095324.json:
 ```json
 {
     "body": "Attachment [trac_9750-review.patch](tarball://root/attachments/some-uuid/ticket9750/trac_9750-review.patch) by @JohnCremona created at 2010-08-15 17:18:22\n\nApply after previous (and both depend on #9343)",
     "created_at": "2010-08-15T17:18:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95483",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95324",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -91,15 +91,15 @@ Apply after previous (and both depend on #9343)
 
 ---
 
-archive/issue_comments_095484.json:
+archive/issue_comments_095325.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-15T17:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95484",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95325",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -109,15 +109,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_095485.json:
+archive/issue_comments_095326.json:
 ```json
 {
     "body": "Replying to [comment:4 cremona]:\n> Is there a good reference, say in the PARI reference manual, for the GRH assumptions?\n\nGood point, I added a reference to the PARI/GP User's Guide in the bnfcertify() documentation.  The new patch replaces the previous two patches.  John, can you re-review?",
     "created_at": "2010-08-15T19:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95485",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95326",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -130,15 +130,15 @@ Good point, I added a reference to the PARI/GP User's Guide in the bnfcertify() 
 
 ---
 
-archive/issue_comments_095486.json:
+archive/issue_comments_095327.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-08-15T19:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95486",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95327",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -148,15 +148,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_095487.json:
+archive/issue_comments_095328.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-08-15T19:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95487",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95328",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -166,15 +166,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_095488.json:
+archive/issue_comments_095329.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-15T21:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95488",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95329",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -184,15 +184,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_095489.json:
+archive/issue_comments_095330.json:
 ```json
 {
     "body": "Includes previous 2 patches, adds reference to PARI's User's Guide",
     "created_at": "2010-08-16T13:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95489",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95330",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -202,15 +202,15 @@ Includes previous 2 patches, adds reference to PARI's User's Guide
 
 ---
 
-archive/issue_comments_095490.json:
+archive/issue_comments_095331.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-10T10:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95490",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95331",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -220,15 +220,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_095491.json:
+archive/issue_comments_095332.json:
 ```json
 {
     "body": "Attachment [9750_v2.patch](tarball://root/attachments/some-uuid/ticket9750/9750_v2.patch) by @qed777 created at 2010-09-10 10:44:27",
     "created_at": "2010-09-10T10:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95491",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9750#issuecomment-95332",
+    "user": "https://github.com/qed777"
 }
 ```
 

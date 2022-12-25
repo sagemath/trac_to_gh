@@ -6,7 +6,7 @@ archive/issues_004212.json:
     "body": "Assignee: craigcitro, jvoight\n\nCC:  @mwhansen @craigcitro @jvoight\n\n\n```\n==29696== Invalid read of size 8\n==29696==    at 0x1320D5D9: __pyx_f_4sage_5rings_12number_field_16totallyreal_data_lagrange_degree_3 (totallyreal_data.c:2777)\n==29696==    by 0x1321C5B5: __pyx_f_4sage_5rings_12number_field_16totallyreal_data_7tr_data_incr (totallyreal_data.c:5957)\n==29696==    by 0x130E6BBA: __pyx_pf_4sage_5rings_12number_field_11totallyreal_enumerate_totallyreal_fields_prim (totallyreal.c:4212)\n==29696==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x486051: PyEval_EvalCode (ceval.c:494)\n==29696==    by 0x4A751D: PyRun_FileExFlags (pythonrun.c:1273)\n==29696==    by 0x4A77AF: PyRun_SimpleFileExFlags (pythonrun.c:879)\n==29696==    by 0x41215F: Py_Main (main.c:523)\n==29696==    by 0x4FD94C9: (below main) (in /lib/libc-2.3.6.so)\n==29696==  Address 0x8e598b0 is 8 bytes after a block of size 48 alloc'd\n==29696==    at 0x4A1BE1B: malloc (vg_replace_malloc.c:207)\n==29696==    by 0x133508CA: PyArray_NewFromDescr (arrayobject.c:5633)\n==29696==    by 0x13377F52: PyArray_Concatenate (multiarraymodule.c:1846)\n==29696==    by 0x13377A5C: PyArray_Concatenate (multiarraymodule.c:1745)\n==29696==    by 0x133780EF: array_concatenate (multiarraymodule.c:6745)\n==29696==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)\n==29696==    by 0x48491B: PyEval_EvalFrameEx (ceval.c:3659)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x4CF3F7: function_call (funcobject.c:517)\n==29696==    by 0x415832: PyObject_Call (abstract.c:1861)\n==29696==    by 0x1320D1D0: __pyx_f_4sage_5rings_12number_field_16totallyreal_data_lagrange_degree_3 (totallyreal_data.c:2670)\n==29696==    by 0x1321C5B5: __pyx_f_4sage_5rings_12number_field_16totallyreal_data_7tr_data_incr (totallyreal_data.c:5957)\n==29696==    by 0x130E6BBA: __pyx_pf_4sage_5rings_12number_field_11totallyreal_enumerate_totallyreal_fields_prim (totallyreal.c:4212)\n==29696==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x486051: PyEval_EvalCode (ceval.c:494)\n==29696==    by 0x4A751D: PyRun_FileExFlags (pythonrun.c:1273)\n==29696== \n==29696== Invalid read of size 8\n==29696==    at 0x1320DBF9: __pyx_f_4sage_5rings_12number_field_16totallyreal_data_lagrange_degree_3 (totallyreal_data.c:2792)\n==29696==    by 0x1321C5B5: __pyx_f_4sage_5rings_12number_field_16totallyreal_data_7tr_data_incr (totallyreal_data.c:5957)\n==29696==    by 0x130E6BBA: __pyx_pf_4sage_5rings_12number_field_11totallyreal_enumerate_totallyreal_fields_prim (totallyreal.c:4212)\n==29696==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x486051: PyEval_EvalCode (ceval.c:494)\n==29696==    by 0x4A751D: PyRun_FileExFlags (pythonrun.c:1273)\n==29696==    by 0x4A77AF: PyRun_SimpleFileExFlags (pythonrun.c:879)\n==29696==    by 0x41215F: Py_Main (main.c:523)\n==29696==    by 0x4FD94C9: (below main) (in /lib/libc-2.3.6.so)\n==29696==  Address 0x8e598a8 is 0 bytes after a block of size 48 alloc'd\n==29696==    at 0x4A1BE1B: malloc (vg_replace_malloc.c:207)\n==29696==    by 0x133508CA: PyArray_NewFromDescr (arrayobject.c:5633)\n==29696==    by 0x13377F52: PyArray_Concatenate (multiarraymodule.c:1846)\n==29696==    by 0x13377A5C: PyArray_Concatenate (multiarraymodule.c:1745)\n==29696==    by 0x133780EF: array_concatenate (multiarraymodule.c:6745)\n==29696==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)\n==29696==    by 0x48491B: PyEval_EvalFrameEx (ceval.c:3659)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x4CF3F7: function_call (funcobject.c:517)\n==29696==    by 0x415832: PyObject_Call (abstract.c:1861)\n==29696==    by 0x1320D1D0: __pyx_f_4sage_5rings_12number_field_16totallyreal_data_lagrange_degree_3 (totallyreal_data.c:2670)\n==29696==    by 0x1321C5B5: __pyx_f_4sage_5rings_12number_field_16totallyreal_data_7tr_data_incr (totallyreal_data.c:5957)\n==29696==    by 0x130E6BBA: __pyx_pf_4sage_5rings_12number_field_11totallyreal_enumerate_totallyreal_fields_prim (totallyreal.c:4212)\n==29696==    by 0x483E46: PyEval_EvalFrameEx (ceval.c:3573)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x484AF1: PyEval_EvalFrameEx (ceval.c:494)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x483F76: PyEval_EvalFrameEx (ceval.c:3669)\n==29696==    by 0x485DB1: PyEval_EvalCodeEx (ceval.c:2836)\n==29696==    by 0x486051: PyEval_EvalCode (ceval.c:494)\n==29696==    by 0x4A751D: PyRun_FileExFlags (pythonrun.c:1273)\n```\n\nThis is perplexing considering that we are having a degree six polynomial. *But* when the roots are real numpy returns an array of doubles and not complex numbers. With the following patch applied\n\n```\n--- a/sage/rings/number_field/totallyreal_data.pyx\tSun Sep 21 20:50:32 2008 -0700\n+++ b/sage/rings/number_field/totallyreal_data.pyx\tSun Sep 28 00:41:17 2008 -0700\n@@ -326,6 +326,10 @@\n         \n         fcoeff = [ int(coeffs[i]) for i in range(7) ]\n         rts = numpy.roots(fcoeff)\n+\n+        import sys\n+        sys.stderr.write(str(fcoeff)+\"\\n\")\n+        sys.stderr.write(str(rts)+\"\\n\")\n \n         roots_data = <double *>((<ndarray>rts).data)\n         for i from 0 <= i < 6:\n```\n\nwe get:\n\n```\n<SNIP>\n[200, -480, -2712, 4052, 18072, -10800, -54000]\n[ 3.25148114+0.j          2.61459959+0.75768433j  2.61459959-0.75768433j\n -1.91214896+1.14457619j -1.91214896-1.14457619j -2.25638240+0.j        ]\n[200, -480, -2712, 4592, 17424, -13824, -53568]\n[ 3.18809326+0.j          2.64899261+0.91101386j  2.64899261-0.91101386j\n -1.88057770+1.03363004j -1.88057770-1.03363004j -2.32492308+0.j        ]\n[225, -540, -2196, 3744, 6192, -4032, 576]\n[ 2.92664989  2.92664995 -2.00000003 -1.99999997  0.27335008  0.27335009]\n```\n\nNotice that the last output for rst is six doubles, i.e. an array of 48 bytes. The fix is to ask for rts as complex128, i.e.\n\n```\nrts = numpy.roots(fcoeff).astype(\"complex128\")\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4212\n\n",
     "created_at": "2008-09-28T07:48:32Z",
     "labels": [
-        "memleak",
+        "component: memleak",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004212.json:
     "title": "[with patch, needs review] Invalid read of size 8 in totallyreal.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4212",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: craigcitro, jvoight
@@ -167,15 +167,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4212
 
 ---
 
-archive/issue_comments_030606.json:
+archive/issue_comments_030544.json:
 ```json
 {
     "body": "With the patch applied the problem goes away, i.e.:\n\n```\nTrying:\n    ls = enumerate_totallyreal_fields_prim(Integer(5),Integer(10)**Integer(5)) ; ls###line 171:_sage_    >>> ls = enumerate_totallyreal_fields_prim(5,10^5) ; ls\nExpecting:\n    [[14641, x^5 - x^4 - 4*x^3 + 3*x^2 + 3*x - 1],\n     [24217, x^5 - 5*x^3 - x^2 + 3*x + 1],\n     [36497, x^5 - 2*x^4 - 3*x^3 + 5*x^2 + x - 1],\n     [38569, x^5 - 5*x^3 + 4*x - 1],\n     [65657, x^5 - x^4 - 5*x^3 + 2*x^2 + 5*x + 1],\n     [70601, x^5 - x^4 - 5*x^3 + 2*x^2 + 3*x - 1],\n     [81509, x^5 - x^4 - 5*x^3 + 3*x^2 + 5*x - 2],\n     [81589, x^5 - 6*x^3 + 8*x - 1],\n     [89417, x^5 - 6*x^3 - x^2 + 8*x + 3]]\nok\n```\n\n\nJohn, Craig, \n\nplease audit the totallyreal* code for similar problems arising from numpy. I consider it quite a coincidence that we hit this issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-28T07:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30606",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30544",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -210,15 +210,15 @@ Michael
 
 ---
 
-archive/issue_comments_030607.json:
+archive/issue_comments_030545.json:
 ```json
 {
     "body": "Attachment [trac_4212.patch](tarball://root/attachments/some-uuid/ticket4212/trac_4212.patch) by mabshoff created at 2008-09-28 07:57:43",
     "created_at": "2008-09-28T07:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30607",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30545",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -228,15 +228,15 @@ Attachment [trac_4212.patch](tarball://root/attachments/some-uuid/ticket4212/tra
 
 ---
 
-archive/issue_comments_030608.json:
+archive/issue_comments_030546.json:
 ```json
 {
     "body": "For the record: This fix has been a joined mhansen & mabshoff production and review.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-28T07:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30608",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30546",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -250,15 +250,15 @@ Michael
 
 ---
 
-archive/issue_comments_030609.json:
+archive/issue_comments_030547.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-28T07:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30609",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30547",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -268,15 +268,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_030610.json:
+archive/issue_comments_030548.json:
 ```json
 {
     "body": "Changing assignee from craigcitro, jvoight to mabshoff.",
     "created_at": "2008-09-28T07:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30610",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30548",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -286,15 +286,15 @@ Changing assignee from craigcitro, jvoight to mabshoff.
 
 ---
 
-archive/issue_comments_030611.json:
+archive/issue_comments_030549.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-09-28T08:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30611",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30549",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -304,15 +304,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_030612.json:
+archive/issue_comments_030550.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-28T08:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30612",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30550",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -322,15 +322,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030613.json:
+archive/issue_comments_030551.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha2",
     "created_at": "2008-09-28T08:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4212",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30613",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4212#issuecomment-30551",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

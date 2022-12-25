@@ -6,15 +6,14 @@ archive/issues_000473.json:
     "body": "Assignee: mabshoff\n\nAt the moment the valgrind tool and flags are hardcoded in various scripts. So add checks for environment flag SAGE_VALGRIND_FLAGS to overwrite default.\n\nTo illustrate what you can do with other tools from the valgrind suite have a look at the two attached graphs created by the heap profiler massif.\n\nIt might also be nice to add a -valgrind to \"sage -testall\" to valgrind the whole test suite.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/473\n\n",
     "created_at": "2007-08-21T01:13:34Z",
     "labels": [
-        "packages: standard",
-        "minor",
-        "enhancement"
+        "component: packages: standard",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "make the -valgrind target more flexible, add massif support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/473",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/473
 
 ---
 
-archive/issue_comments_002366.json:
+archive/issue_comments_002356.json:
 ```json
 {
     "body": "example of massif heap profiler",
     "created_at": "2007-08-21T01:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2366",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2356",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +54,15 @@ example of massif heap profiler
 
 ---
 
-archive/issue_comments_002367.json:
+archive/issue_comments_002357.json:
 ```json
 {
     "body": "Attachment [massif.19869.ps](tarball://root/attachments/some-uuid/ticket473/massif.19869.ps) by mabshoff created at 2007-08-21 15:48:28\n\nIn addition increase the timeout value in sage-doctest to above 180 seconds depending on whether valgrind is used. Otherwise certain tests fail with timeouts:\n\n```\n==31586== Using valgrind-3.2.1, a dynamic binary instrumentation framework.\n==31586== Copyright (C) 2000-2006, and GNU GPL'd, by Julian Seward et al.\n==31586== For more details, rerun with: -v\n==31586==\n--31586-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n--31586-- DWARF2 CFI reader: unhandled CFI instruction 0:10\n==31586==\n==31586== Total spacetime:   1,269,947,691,109 ms.B\n==31586== heap:              84.8%\n==31586== heap admin:        14.6%\n==31586== stack(s):           0.4%\n*** *** Error: TIMED OUT! *** ***\n*** *** Error: TIMED OUT! *** ***\n         [222.3 s]\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2007-08-21T15:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2367",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2357",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -97,15 +96,15 @@ Michael
 
 ---
 
-archive/issue_comments_002368.json:
+archive/issue_comments_002358.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-22T19:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2368",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2358",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -115,15 +114,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002369.json:
+archive/issue_comments_002359.json:
 ```json
 {
     "body": "The sage -t -valgrind support should have been added to the 2.8.3 release. \n\nMassif support will come for 2.9.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-30T00:26:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2369",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2359",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +138,15 @@ Michael
 
 ---
 
-archive/issue_comments_002370.json:
+archive/issue_comments_002360.json:
 ```json
 {
     "body": "http://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.3.6-add-more-valgrind-to-sage-sage.patch\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.3.6-add-sage-cachegrind.patch\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.3.6-add-sage-massif.patch\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/Sage-2.8.3.6-change-location-of-log-file.patch\n\nCheers,\n\nMichael",
     "created_at": "2007-09-06T18:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2370",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2360",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -164,15 +163,15 @@ Michael
 
 ---
 
-archive/issue_comments_002371.json:
+archive/issue_comments_002361.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-06T19:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2371",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/473#issuecomment-2361",
+    "user": "https://github.com/williamstein"
 }
 ```
 

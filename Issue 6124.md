@@ -6,7 +6,7 @@ archive/issues_006124.json:
     "body": "Assignee: @williamstein\n\nKeywords: p-adic\n\nA bug in the implementation of p-adic groups.\n\nsage: K.<a> = Qp(2).extension(x^3 + x^2+1)\nsage: K.galois_group()\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Users/jeromelefebvre/.sage/temp/Jerome.local/23278/_Users_jeromelefebvre__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.5/site-packages/sage/rings/padics/unramified_extension_generic.pyc in galois_group(self)\n     96         ## doing this.\n     97         ##\n---> 98         from sage.groups.perm_gps.permgroup import CyclicPermutationGroup\n     99         return CyclicPermutationGroup(self.modulus().degree())\n    100 \n\nImportError: cannot import name CyclicPermutationGroup\n\n\nWhile, CyclicPermutationGroup does work fine on my machine.\nsage: G=CyclicPermutationGroup(2)\nsage: G.list()\n[(), (1,2)]\n\nIssue created by migration from https://trac.sagemath.org/ticket/6124\n\n",
     "created_at": "2009-05-24T14:41:03Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006124.json:
     "title": "Bug in galois_group of a p-adic field extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6124",
-    "user": "jlefebvre"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jlefebvre"
 }
 ```
 Assignee: @williamstein
@@ -53,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6124
 
 ---
 
-archive/issue_comments_048932.json:
+archive/issue_comments_048837.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @roed314.",
     "created_at": "2009-05-25T01:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48932",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48837",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -71,15 +71,15 @@ Changing assignee from @williamstein to @roed314.
 
 ---
 
-archive/issue_comments_048933.json:
+archive/issue_comments_048838.json:
 ```json
 {
     "body": "Changing component from number theory to padics.",
     "created_at": "2009-05-25T01:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48933",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48838",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -89,15 +89,15 @@ Changing component from number theory to padics.
 
 ---
 
-archive/issue_comments_048934.json:
+archive/issue_comments_048839.json:
 ```json
 {
     "body": "Note that in sage-4.0.rc0, there is no `galois_group` method for an extension of `Qp`:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a> = Qp(2).extension(x^3 + x^2+1)\nsage: K.g    # tried to tab-complete here:\nK.gcd                   K.gens                  K.get_action            K.get_action_impl       K.ground_ring_of_tower  \nK.gen                   K.gens_dict             K.get_action_c          K.ground_ring           \n```\n",
     "created_at": "2009-05-25T01:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48934",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48839",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -118,15 +118,15 @@ K.gen                   K.gens_dict             K.get_action_c          K.ground
 
 ---
 
-archive/issue_comments_048935.json:
+archive/issue_comments_048840.json:
 ```json
 {
     "body": "Same thing for Sage 4.0.1. It would be cool if there was some galois group computations, but that's an other issue.\nSo, it looks like this trac should be closed.\nThanks for looking into it.",
     "created_at": "2009-06-11T15:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48935",
-    "user": "jlefebvre"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48840",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jlefebvre"
 }
 ```
 
@@ -138,15 +138,15 @@ Thanks for looking into it.
 
 ---
 
-archive/issue_comments_048936.json:
+archive/issue_comments_048841.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-11-09T03:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48936",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48841",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -156,15 +156,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_048937.json:
+archive/issue_comments_048842.json:
 ```json
 {
     "body": "This ticket should be closed.",
     "created_at": "2011-11-09T03:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48937",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48842",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -174,15 +174,15 @@ This ticket should be closed.
 
 ---
 
-archive/issue_comments_048938.json:
+archive/issue_comments_048843.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-11-19T04:25:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48938",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48843",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -192,15 +192,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_048939.json:
+archive/issue_comments_048844.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2011-11-26T13:05:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48939",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6124#issuecomment-48844",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

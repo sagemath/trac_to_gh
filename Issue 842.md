@@ -6,15 +6,14 @@ archive/issues_000842.json:
     "body": "Assignee: @malb\n\nThe following takes a very long time, possibly forever (I waited several minutes before giving up and killing it):\n\n```\nsage:  MR.<x,w,v,u> = QQ['x','w','v','u']\nsage:  p = (4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4)\nsage:  %time p.factor()\n```\n\n\nSimilarly, if you run sage -singular, the equivalent code fails again:\n\n```\n> ring r = 0,(x,w,v,u),dp;\n> factorize(4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4);\n```\n\n\nHowever, if I build my own copy of Singular from the source on the Singular website, or if I download and install the Debian binary package from the Singular website, then this second factorization completes instantly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/842\n\n",
     "created_at": "2007-10-09T21:07:59Z",
     "labels": [
-        "packages",
-        "major",
+        "component: packages",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "SAGE's Singular build fails to factor simple polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/842",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @malb
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/842
 
 ---
 
-archive/issue_comments_005209.json:
+archive/issue_comments_005193.json:
 ```json
 {
     "body": "Changing component from packages to commutative algebra.",
     "created_at": "2007-10-09T21:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5209",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5193",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -64,15 +63,15 @@ Changing component from packages to commutative algebra.
 
 ---
 
-archive/issue_comments_005210.json:
+archive/issue_comments_005194.json:
 ```json
 {
     "body": "I'm not sure what to make of this, but...\n\n```\nsage: MR.<x,w,v,u> = GF(20011)['x','w','v','u']\nsage: p = (4*v^4*u^2 - 16*v^2*u^4 + 16*u^6 - 4*v^4*u + 8*v^2*u^3 + v^4)\nsage: time h = p.factor ()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\n```\n\n\n\n```\n14:47 < williamstein> cwitty -- I wonder if we could implement polynomial gcd and factoring\n                      directly in sage based on\n14:47 < williamstein> singular's excellent GF(p) factorization.\n14:47 < williamstein> E.g., your example is trivial to factor instantly in sage mod p for any p.\n14:48 < williamstein> It seems like Singular is really really good at mod-p factoring and gcd, and\n14:48 < williamstein> seriously problematic at char 0 factoring (and maybe gcd?)\n```\n",
     "created_at": "2007-10-09T21:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5210",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5194",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -101,15 +100,15 @@ CPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s
 
 ---
 
-archive/issue_comments_005211.json:
+archive/issue_comments_005195.json:
 ```json
 {
     "body": "Changing priority from major to critical.",
     "created_at": "2007-10-10T04:53:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5211",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5195",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -119,15 +118,15 @@ Changing priority from major to critical.
 
 ---
 
-archive/issue_comments_005212.json:
+archive/issue_comments_005196.json:
 ```json
 {
     "body": "I'm attaching a patch to the Singular spkg that fixes this bug.  Basically, we didn't manage to tell Singular that it had NTL available, so there were several places where it used non-NTL code paths (that were evidently buggy) instead of the working NTL code paths.  This may also explain why the upstream Singular binaries are faster than the ones we build.\n\nYou will need to do \"sage -ba\" after installing the new Singular spkg.\n\nPart of my patch reverts changeset 15:e085dde558b2 in the spkg repository; this is labeled \"fixed build for OSX\", so presumably my patch breaks the build for OSX.  I don't have access to an OSX machine (or time) to figure this out.",
     "created_at": "2007-10-10T04:53:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5212",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5196",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -141,15 +140,15 @@ Part of my patch reverts changeset 15:e085dde558b2 in the spkg repository; this 
 
 ---
 
-archive/issue_comments_005213.json:
+archive/issue_comments_005197.json:
 ```json
 {
     "body": "a patch for the Singular spkg",
     "created_at": "2007-10-10T04:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5213",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5197",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -159,15 +158,15 @@ a patch for the Singular spkg
 
 ---
 
-archive/issue_comments_005214.json:
+archive/issue_comments_005198.json:
 ```json
 {
     "body": "Attachment [6720.patch](tarball://root/attachments/some-uuid/ticket842/6720.patch) by cwitty created at 2007-10-10 07:05:28",
     "created_at": "2007-10-10T07:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5214",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5198",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -177,15 +176,15 @@ Attachment [6720.patch](tarball://root/attachments/some-uuid/ticket842/6720.patc
 
 ---
 
-archive/issue_comments_005215.json:
+archive/issue_comments_005199.json:
 ```json
 {
     "body": "Every bugfix should have a doctest, so I've provided 6720.patch.  This adds the example from this bug report as a doctest (so with the current broken Singular spkg, the doctest will hang approximately forever).",
     "created_at": "2007-10-10T07:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5215",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5199",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -195,15 +194,15 @@ Every bugfix should have a doctest, so I've provided 6720.patch.  This adds the 
 
 ---
 
-archive/issue_comments_005216.json:
+archive/issue_comments_005200.json:
 ```json
 {
     "body": "An updated spkg can be found at \n http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-1-20071010.spkg\n\n. This package fixes the linkage problem under OSX while passing `--with-NTL` to the configure script. However, now Singular's factorisation crashes under OSX. I'll open a new ticket for that and suggest this ticket to be closed.",
     "created_at": "2007-10-11T21:47:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5216",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5200",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -216,15 +215,15 @@ An updated spkg can be found at
 
 ---
 
-archive/issue_comments_005217.json:
+archive/issue_comments_005201.json:
 ```json
 {
     "body": "Attachment [multi_polynomial_ideal_singular_ntl_fixes.patch](tarball://root/attachments/some-uuid/ticket842/multi_polynomial_ideal_singular_ntl_fixes.patch) by @malb created at 2007-10-12 10:36:04\n\n`multi_polynomial_ideal_singular_ntl_fixes.patch` fixes the doctest failures introduced by the switch to NTL.\n\nTo apply all patches:\n* install the new NTL spkg from http://sage.math.washington.edu/home/mabshoff/ntl-5.4.1.p6.spkg\n* install the new Singular spkg from http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-1-20071010.spkg\n* apply `6720.patch` attached above\n* apply `multi_polynomial_ideal_singular_ntl_fixes.patch`",
     "created_at": "2007-10-12T10:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5217",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5201",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -242,15 +241,15 @@ To apply all patches:
 
 ---
 
-archive/issue_comments_005218.json:
+archive/issue_comments_005202.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-13T02:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/842",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5218",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/842#issuecomment-5202",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_002744.json:
     "body": "Assignee: @williamstein\n\nIt would be nice if the following worked\n\n\n```\nsage: f=(x<0) | (x>5)\nsage: f.subs(x=6)\n(6<0) | (6>5)\nsage: bool(f.subs(x=6))\nTrue\nsage: f= ~(x==2)\nsage: bool(f.subs(x=0))\nTrue\n\nIssue created by migration from https://trac.sagemath.org/ticket/2744\n\n",
     "created_at": "2008-03-31T21:10:09Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "make symbolicequations deal with logical combinations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2744",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -40,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2744
 
 ---
 
-archive/issue_comments_018864.json:
+archive/issue_comments_018825.json:
 ```json
 {
     "body": "#2778 was a duplicate of this.",
     "created_at": "2009-04-16T11:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2744",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2744#issuecomment-18864",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/2744#issuecomment-18825",
+    "user": "https://github.com/burcin"
 }
 ```
 

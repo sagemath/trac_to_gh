@@ -6,7 +6,7 @@ archive/issues_001688.json:
     "body": "Assignee: jkantor\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1688\n\n",
     "created_at": "2008-01-05T00:29:07Z",
     "labels": [
-        "numerical",
+        "component: numerical",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001688.json:
     "title": "fortran -- give option to set the libgfortran.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1688",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: jkantor
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1688
 
 ---
 
-archive/issue_comments_010723.json:
+archive/issue_comments_010696.json:
 ```json
 {
     "body": "http://sage.math.washington.edu/home/was/build/sage-2.9.2.rc0/spkg/standard/fortran-20071120.p3.spkg",
     "created_at": "2008-01-05T00:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1688",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10723",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10696",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ http://sage.math.washington.edu/home/was/build/sage-2.9.2.rc0/spkg/standard/fort
 
 ---
 
-archive/issue_comments_010724.json:
+archive/issue_comments_010697.json:
 ```json
 {
     "body": "Tested this. It works as desired. Positive review",
     "created_at": "2008-01-05T00:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1688",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10724",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10697",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -65,15 +65,15 @@ Tested this. It works as desired. Positive review
 
 ---
 
-archive/issue_comments_010725.json:
+archive/issue_comments_010698.json:
 ```json
 {
     "body": "Merged in 2.9.2.rc1. But we need to document this new env variable somewhere.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-05T00:40:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1688",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10725",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10698",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +87,15 @@ Michael
 
 ---
 
-archive/issue_comments_010726.json:
+archive/issue_comments_010699.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-05T00:40:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1688",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10726",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1688#issuecomment-10699",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

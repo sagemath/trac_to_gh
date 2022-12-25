@@ -6,15 +6,14 @@ archive/issues_001637.json:
     "body": "Assignee: mabshoff\n\nFrom the MPFR mailing list:\n\n```\nThe release of MPFR 2.3.1 is imminent. Please help to make this\nrelease as good as possible by downloading and testing this\nrelease candidate:\n\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.tar.bz2\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.tar.gz\nhttp://www.mpfr.org/mpfr-2.3.1/mpfr-2.3.1-rc1.zip\n\nThe MD5's:\n3a029172c380fc28f17db9c727d244e5  mpfr-2.3.1-rc1.tar.bz2\n59f3523b93ec6674241110512b932f22  mpfr-2.3.1-rc1.tar.gz\nec69f43ad4bf00c3ce28467f0650bcb8  mpfr-2.3.1-rc1.zip\n\nChanges from version 2.3.0 to version 2.3.1:\n- Bug fixes; see <http://www.mpfr.org/mpfr-2.3.0/#bugs>.\n- Improved MPFR manual.\n\nPlease send success and failure reports to <mpfr@loria.fr>.\n\nIf no problems are found, MPFR 2.3.1 should be released around\n2008-01-12.\n\nHappy New Year,\n\n-- Vincent Lef\u00e8vre <vincent@vinc17.org> - Web: <http://www.vinc17.org/> 100% accessible validated (X)HTML - Blog: <http://www.vinc17.org/blog/> Work: CR INRIA - computer arithmetic / Arenaire project (LIP, ENS-Lyon) \n```\n\nPaul Zimmermann also suggested:\n\n```\n## Paul Zimmerman's MPFR\n\nMy name ends with two 'n', and more importantly I'm not the only author.\nThe simplest is to just remove my name.\n\nAlso 'occured' should be 'occurred' in that file.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1637\n\n",
     "created_at": "2007-12-29T19:31:15Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "Update to mpfr 2.3.1 - fix small issues in the spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1637",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -73,15 +72,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1637
 
 ---
 
-archive/issue_comments_010410.json:
+archive/issue_comments_010383.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-31T10:26:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1637",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10410",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10383",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +90,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_010411.json:
+archive/issue_comments_010384.json:
 ```json
 {
     "body": "An updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc3/mpfr-2.3.1.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-01-29T13:33:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1637",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10411",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10384",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -115,15 +114,15 @@ Michael
 
 ---
 
-archive/issue_comments_010412.json:
+archive/issue_comments_010385.json:
 ```json
 {
     "body": "Passes build and `spkg-check` on Linux, MacOSX 10.5 and Solaris.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-29T13:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1637",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10412",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10385",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +136,15 @@ Michael
 
 ---
 
-archive/issue_comments_010413.json:
+archive/issue_comments_010386.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc3",
     "created_at": "2008-01-29T13:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1637",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10413",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10386",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -155,15 +154,15 @@ Merged in Sage 2.10.1.rc3
 
 ---
 
-archive/issue_comments_010414.json:
+archive/issue_comments_010387.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-29T13:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1637",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10414",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1637#issuecomment-10387",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

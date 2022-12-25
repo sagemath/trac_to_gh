@@ -6,15 +6,14 @@ archive/issues_001265.json:
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1265\n\n",
     "created_at": "2007-11-25T09:13:49Z",
     "labels": [
-        "documentation",
-        "trivial",
-        "enhancement"
+        "component: documentation",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] documentation typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1265",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1265
 
 ---
 
-archive/issue_comments_007932.json:
+archive/issue_comments_007909.json:
 ```json
 {
     "body": "Attachment [7403.patch](tarball://root/attachments/some-uuid/ticket1265/7403.patch) by @zimmermann6 created at 2007-11-25 09:14:16",
     "created_at": "2007-11-25T09:14:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1265#issuecomment-7932",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/1265#issuecomment-7909",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [7403.patch](tarball://root/attachments/some-uuid/ticket1265/7403.pat
 
 ---
 
-archive/issue_comments_007933.json:
+archive/issue_comments_007910.json:
 ```json
 {
     "body": "Looks good to me :)",
     "created_at": "2007-11-27T04:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1265#issuecomment-7933",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1265#issuecomment-7910",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -65,15 +64,15 @@ Looks good to me :)
 
 ---
 
-archive/issue_comments_007934.json:
+archive/issue_comments_007911.json:
 ```json
 {
     "body": "Merged in 2.8.15.alpha1.",
     "created_at": "2007-12-01T18:32:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1265#issuecomment-7934",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1265#issuecomment-7911",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +82,15 @@ Merged in 2.8.15.alpha1.
 
 ---
 
-archive/issue_comments_007935.json:
+archive/issue_comments_007912.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-01T18:32:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1265#issuecomment-7935",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1265#issuecomment-7912",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

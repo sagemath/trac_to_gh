@@ -6,15 +6,14 @@ archive/issues_002758.json:
     "body": "Assignee: @timabbott\n\nDebian switched from g77 to gfortran while I wasn't looking; these patches should update the Debian packages for iml and linbox to deal with the transition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2758\n\n",
     "created_at": "2008-04-01T18:52:01Z",
     "labels": [
-        "debian-package",
-        "major",
+        "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] iml and linbox updates for Debian gfortran transition",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2758",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2758
 
 ---
 
-archive/issue_comments_018960.json:
+archive/issue_comments_018920.json:
 ```json
 {
     "body": "Attachment [iml-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/iml-gfortran.patch) by @timabbott created at 2008-04-01 18:52:17",
     "created_at": "2008-04-01T18:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18960",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18920",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [iml-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/
 
 ---
 
-archive/issue_comments_018961.json:
+archive/issue_comments_018921.json:
 ```json
 {
     "body": "Attachment [linbox-gfortran.patch](tarball://root/attachments/some-uuid/ticket2758/linbox-gfortran.patch) by mabshoff created at 2008-04-01 20:50:44\n\nBoth patches look good to me. Positive review. The linbox patch has been merged in linbox-1.1.5rc2.p7, the iml patch has been merged in iml-1.0.1.p10.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T20:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18961",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18921",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +70,15 @@ Michael
 
 ---
 
-archive/issue_comments_018962.json:
+archive/issue_comments_018922.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-01T20:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18962",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18922",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018963.json:
+archive/issue_comments_018923.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha0",
     "created_at": "2008-04-01T20:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2758",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18963",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2758#issuecomment-18923",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_001404.json:
     "body": "Assignee: boothby\n\nFrom F Clark:\n\n\n```\nA problem with latex processing in a notebook (otherwise a brilliant\nfeature):\n\n\nEvaluating the input cell:\n\n%latex\n\n$y=\\sin x$\n\n% end of input\n\ntries to process the TeX file:\n\n\\documentclass{article}\\usepackage{fullpage}\\usepackage{amsmath}\n\\usepackage{amssymb}\n\\usepackage{amsfonts}\\usepackage{graphicx}\\usepackage{pstricks}\n\\pagestyle{empty}\n\\begin{document}\n\n$y=\\sin x$\n\n% end of input\\end{document}\n\nbut pdfTeX fails, because the \\end{document} gets commented out.  The\nreason is that  '\\\\end{document}' is tagged on to the end of the input\ntext rather than '\\n\\\\end{document}'.\n\nThe following would seem to solve the problem:\n\ndiff -r 7110a20969c8 sage/misc/latex.py\n--- a/sage/misc/latex.py        Mon Dec 03 22:27:57 2007 -0800\n+++ b/sage/misc/latex.py        Tue Dec 04 22:11:15 2007 +0000\n@@ -203,7 +203,7 @@ class Latex:\n        if self.__slide:\n            O.write('\\n\\n\\\\end{document}')\n        else:\n-            O.write('\\\\end{document}\\n')\n+            O.write('\\n\\\\end{document}\\n')\n\n        O.close()\n        if not debug:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1404\n\n",
     "created_at": "2007-12-05T18:13:06Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] bug in %latex feature in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1404",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -76,15 +75,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1404
 
 ---
 
-archive/issue_comments_009064.json:
+archive/issue_comments_009040.json:
 ```json
 {
     "body": "Hmm, since now both branches of the if case are identical except the additional newline couldn't we make collapse the if statement?\n\nCheers,\n\nMichael",
     "created_at": "2007-12-05T19:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9064",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9040",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -98,15 +97,15 @@ Michael
 
 ---
 
-archive/issue_comments_009065.json:
+archive/issue_comments_009041.json:
 ```json
 {
     "body": "Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/trac-1404.patch) by @williamstein created at 2007-12-15 13:09:08",
     "created_at": "2007-12-15T13:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9065",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9041",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -116,15 +115,15 @@ Attachment [trac-1404.patch](tarball://root/attachments/some-uuid/ticket1404/tra
 
 ---
 
-archive/issue_comments_009066.json:
+archive/issue_comments_009042.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-15T13:27:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9066",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9042",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -134,15 +133,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009067.json:
+archive/issue_comments_009043.json:
 ```json
 {
     "body": "Merged in 2.9.rc0.",
     "created_at": "2007-12-15T13:27:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9067",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1404#issuecomment-9043",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

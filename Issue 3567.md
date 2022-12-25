@@ -6,15 +6,14 @@ archive/issues_003567.json:
     "body": "Assignee: tbd\n\nBEFORE:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n        transaction: 0.104 (sage.databases.db)\n         transaction._transaction: 0.103 (transaction)\n          logging: 0.004 (transaction._transaction)\n          zope: 0.096 (transaction._transaction)\n         transaction._manager: 0.000 (transaction)\n             transaction.interfaces: 0.000 (ZODB.Connection)\n0.104 transaction (sage.databases.db)\n0.103 transaction._transaction (transaction)\n0.096 zope (transaction._transaction)\n```\n\nand that's *with* disk caching (on os x though). \n\nAFTER this patch:\n\n```\nteragon-2:databases was$ sage -startuptime |grep transaction\n             transaction.interfaces: 0.004 (ZODB.Connection)\n              transaction._transaction: 0.003 (transaction.interfaces)\n               zope: 0.000 (transaction._transaction)\n               transaction: 0.001 (transaction._transaction)\n              transaction._manager: 0.000 (transaction.interfaces)\n```\n\n\nSweet!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3567\n\n",
     "created_at": "2008-07-06T19:48:57Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "optimize startup of sage -- don't import global transaction module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3567",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -58,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3567
 
 ---
 
-archive/issue_comments_025200.json:
+archive/issue_comments_025150.json:
 ```json
 {
     "body": "Attachment [sage-3567.patch](tarball://root/attachments/some-uuid/ticket3567/sage-3567.patch) by @williamstein created at 2008-07-06 19:50:48",
     "created_at": "2008-07-06T19:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25200",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25150",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -76,15 +75,15 @@ Attachment [sage-3567.patch](tarball://root/attachments/some-uuid/ticket3567/sag
 
 ---
 
-archive/issue_comments_025201.json:
+archive/issue_comments_025151.json:
 ```json
 {
     "body": "Changing component from algebra to misc.",
     "created_at": "2008-07-06T19:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25201",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25151",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -94,15 +93,15 @@ Changing component from algebra to misc.
 
 ---
 
-archive/issue_comments_025202.json:
+archive/issue_comments_025152.json:
 ```json
 {
     "body": "Changing assignee from tbd to cwitty.",
     "created_at": "2008-07-06T19:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25202",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25152",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -112,15 +111,15 @@ Changing assignee from tbd to cwitty.
 
 ---
 
-archive/issue_comments_025203.json:
+archive/issue_comments_025153.json:
 ```json
 {
     "body": "+1",
     "created_at": "2008-07-06T19:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25203",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25153",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -130,15 +129,15 @@ archive/issue_comments_025203.json:
 
 ---
 
-archive/issue_comments_025204.json:
+archive/issue_comments_025154.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha2",
     "created_at": "2008-07-06T20:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25204",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25154",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -148,15 +147,15 @@ Merged in Sage 3.0.4.alpha2
 
 ---
 
-archive/issue_comments_025205.json:
+archive/issue_comments_025155.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-06T20:09:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3567",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25205",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3567#issuecomment-25155",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005766.json:
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5766\n\n",
     "created_at": "2009-04-11T23:58:16Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "improve coverage of structure/formal_sum.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5766",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5766
 
 ---
 
-archive/issue_comments_045087.json:
+archive/issue_comments_045001.json:
 ```json
 {
     "body": "BUGS FOUND:\n1. The reduce option to formal sum is totally ignored.\n\n```\nsage: FormalSum([(1,2/3), (3,2/3), (-5, 7)], reduce=False)\n4*2/3 - 5*7\n```\n\n\n2. Latexing formal sums is completely broken (I think this is actually #5707):\n\n```\nsage: latex(FormalSum([(1,2), (5, 8/9), (-3, 7)]))\n5\\frac{8}{9}2 - 37\n```\n",
     "created_at": "2009-04-12T01:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45087",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45001",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -62,15 +61,15 @@ sage: latex(FormalSum([(1,2), (5, 8/9), (-3, 7)]))
 
 ---
 
-archive/issue_comments_045088.json:
+archive/issue_comments_045002.json:
 ```json
 {
     "body": "Attachment [trac_5766.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766.patch) by @williamstein created at 2009-04-12 01:40:24",
     "created_at": "2009-04-12T01:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45088",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45002",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -80,15 +79,15 @@ Attachment [trac_5766.patch](tarball://root/attachments/some-uuid/ticket5766/tra
 
 ---
 
-archive/issue_comments_045089.json:
+archive/issue_comments_045003.json:
 ```json
 {
     "body": "There's an `indirect doctest` missing from nonzero and a typoed `indirect doctest` on len, but other than that this looks good.",
     "created_at": "2009-04-12T05:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45089",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45003",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -98,15 +97,15 @@ There's an `indirect doctest` missing from nonzero and a typoed `indirect doctes
 
 ---
 
-archive/issue_comments_045090.json:
+archive/issue_comments_045004.json:
 ```json
 {
     "body": "Mhh, ther seems to be a 32 vs. 64 bit issue here:\n\n```\nsage -t -long \"devel/sage/sage/structure/formal_sum.py\"     \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/structure/formal_sum.py\", line 333:\n    sage: a\nExpected:\n    2/3 - 3*4/5 + 7*2\nGot:\n    7*2 + 2/3 - 3*4/5\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/structure/formal_sum.py\", line 335:\n    sage: a._repr_()\nExpected:\n    '2/3 - 3*4/5 + 7*2'\nGot:\n    '7*2 + 2/3 - 3*4/5'\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T01:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45090",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45004",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -140,15 +139,15 @@ Michael
 
 ---
 
-archive/issue_comments_045091.json:
+archive/issue_comments_045005.json:
 ```json
 {
     "body": "Attachment [trac_5766-doctest_fix.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-doctest_fix.patch) by @williamstein created at 2009-04-13 14:15:35",
     "created_at": "2009-04-13T14:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45091",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45005",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -158,15 +157,15 @@ Attachment [trac_5766-doctest_fix.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_045092.json:
+archive/issue_comments_045006.json:
 ```json
 {
     "body": "Sorry, but on my 32-bit laptop I get\n\n```\n**********************************************************************\nFile \"/home/john/sage-3.4.2.alpha0/devel/sage-tests/sage/structure/formal_sum.py\", line 333:\n    sage: a\nExpected:\n    2/3 - 3*4/5 + 7*2                       -- comparing Mod(2,3) and rationals ill-defined\nGot:\n    7*2 + 2/3 - 3*4/5\n**********************************************************************\nFile \"/home/john/sage-3.4.2.alpha0/devel/sage-tests/sage/structure/formal_sum.py\", line 336:\n    sage: a._repr_()\nExpected:\n    '2/3 - 3*4/5 + 7*2'                    \nGot:\n    '7*2 + 2/3 - 3*4/5'\n**********************************************************************\n```\n\n\nPerhaps all formal sums should be sorted?  As part of the reduce() method (which should then be called after creation)?",
     "created_at": "2009-04-27T20:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45092",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45006",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -197,15 +196,15 @@ Perhaps all formal sums should be sorted?  As part of the reduce() method (which
 
 ---
 
-archive/issue_comments_045093.json:
+archive/issue_comments_045007.json:
 ```json
 {
     "body": "> Perhaps all formal sums should be sorted? As part of the reduce() method (which should then be called after creation)? \n\nThey are sorted.  That's why the doctests failed for you -- because sort is not well defined as indicated in the comment.",
     "created_at": "2009-04-28T14:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45093",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45007",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -217,15 +216,15 @@ They are sorted.  That's why the doctests failed for you -- because sort is not 
 
 ---
 
-archive/issue_comments_045094.json:
+archive/issue_comments_045008.json:
 ```json
 {
     "body": "Attachment [trac_5766-part3.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-part3.patch) by @williamstein created at 2009-04-28 14:10:30",
     "created_at": "2009-04-28T14:10:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45094",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45008",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -235,15 +234,15 @@ Attachment [trac_5766-part3.patch](tarball://root/attachments/some-uuid/ticket57
 
 ---
 
-archive/issue_comments_045095.json:
+archive/issue_comments_045009.json:
 ```json
 {
     "body": "OK with all three patches the tests pass.  It's a pity we cannot make it deterministic but the only thing I could think of was sorting on the strong representations (of the base of each pair) and that would take too long I suppose.",
     "created_at": "2009-04-28T16:30:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45095",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45009",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -253,15 +252,15 @@ OK with all three patches the tests pass.  It's a pity we cannot make it determi
 
 ---
 
-archive/issue_comments_045096.json:
+archive/issue_comments_045010.json:
 ```json
 {
     "body": "With all three patch applied I am seeing the following doctest failure:\n\n```\nsage -t -long \"devel/sage/sage/misc/latex.py\"               \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.2.rc0/devel/sage/sage/misc/latex.py\", line 942:\n    sage: repr_lincomb([1,5,-3],[2,8/9,7])\nExpected:\n    '2*1 + 8/9*5 + 7*-3'\nGot:\n    '21 + \\\\frac{8}{9}5 + 7-3'\n**********************************************************************\n```\n\nSince this seems to be the correct LaTeX representation I am fixing this failure.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T00:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45096",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45010",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -289,15 +288,15 @@ Michael
 
 ---
 
-archive/issue_comments_045097.json:
+archive/issue_comments_045011.json:
 ```json
 {
     "body": "Actually, the above seems broken, i.e. notice the missing ***** - so 'needs work'.\n\nCheers,\n\nMichaek",
     "created_at": "2009-04-30T00:45:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45097",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45011",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -311,15 +310,15 @@ Michaek
 
 ---
 
-archive/issue_comments_045098.json:
+archive/issue_comments_045012.json:
 ```json
 {
     "body": "I have folded William's patches and rebased them against 4.0.alpha0.\n\nI made an attempt to fix the latex-ing, see the patch.",
     "created_at": "2009-06-04T01:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45098",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45012",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -331,15 +330,15 @@ I made an attempt to fix the latex-ing, see the patch.
 
 ---
 
-archive/issue_comments_045099.json:
+archive/issue_comments_045013.json:
 ```json
 {
     "body": "apply instead of the other patches",
     "created_at": "2009-06-04T01:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45099",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45013",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -349,15 +348,15 @@ apply instead of the other patches
 
 ---
 
-archive/issue_comments_045100.json:
+archive/issue_comments_045014.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-04T18:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45100",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45014",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -367,15 +366,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_045101.json:
+archive/issue_comments_045015.json:
 ```json
 {
     "body": "Attachment [trac_5766-rebased.patch](tarball://root/attachments/some-uuid/ticket5766/trac_5766-rebased.patch) by @mwhansen created at 2009-06-04 18:33:58\n\nLooks good to me.\n\nMerged trac_5766-rebased.patch in 4.0.1.rc1.",
     "created_at": "2009-06-04T18:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45101",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5766#issuecomment-45015",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

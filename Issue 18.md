@@ -6,14 +6,14 @@ archive/issues_000018.json:
     "body": "Assignee: somebody\n\n* load 'a/b/c.sage' leaves the path messed up if an error occurs during load.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/18\n\n",
     "created_at": "2006-09-12T23:18:11Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
     "title": "load path issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/18",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/18
 
 ---
 
-archive/issue_comments_000075.json:
+archive/issue_comments_000074.json:
 ```json
 {
     "body": "This is no longer a problem.",
     "created_at": "2007-01-13T02:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/18",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/18#issuecomment-75",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/18#issuecomment-74",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ This is no longer a problem.
 
 ---
 
-archive/issue_comments_000076.json:
+archive/issue_comments_000075.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-13T02:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/18",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/18#issuecomment-76",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/18#issuecomment-75",
+    "user": "https://github.com/williamstein"
 }
 ```
 

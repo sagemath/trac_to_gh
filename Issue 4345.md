@@ -6,15 +6,14 @@ archive/issues_004345.json:
     "body": "Assignee: cwitty\n\nThere are several places in Sage where one often has to specify variable names; it would be nice to have a uniform system in place for having defaults. For instance, these behaviors: \n\n\n```\nsage: x = polygen(ZZ)\nsage: F = NumberField(x^3-2)\nTraceback (most recent call last):\n...\nTypeError: You must specify the name of the generator.\n\nsage: CuspForms(23,2).newforms()\nTraceback (most recent call last):\n...\nValueError: Please specify a name to be used when generating names for generators of Hecke eigenvalue fields corresponding to the newforms.\n\n```\n\n\ncan be annoying at times, especially for new users. \n\nA good model for the system might be the system-wide proof flags, for instance.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4345\n\n",
     "created_at": "2008-10-23T07:06:35Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Make a system for default variable names",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4345",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: cwitty
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4345
 
 ---
 
-archive/issue_comments_031925.json:
+archive/issue_comments_031863.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-23T02:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4345",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4345#issuecomment-31925",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4345#issuecomment-31863",
+    "user": "https://github.com/aghitza"
 }
 ```
 

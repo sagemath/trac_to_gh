@@ -6,7 +6,7 @@ archive/issues_007281.json:
     "body": "Assignee: tbd\n\n\n```\nsage -t -long \"devel/sage/doc/en/tutorial/tour_algebra.rst\" \n**********************************************************************\nFile \"/tmp/wstein/farm/sage-4.2.alpha1/devel/sage/doc/en/tutorial/tour_algebra.rst\", line 87:\n    sage: find_root(cos(phi)==sin(phi),0,pi/2)\nExpected:\n    0.78539816339744839\nGot:\n    0.78539816339744828\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_5\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7281\n\n",
     "created_at": "2009-10-24T03:35:08Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007281.json:
     "title": "numerical noise issue on fedora32 for 4.2.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7281",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tbd
@@ -44,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7281
 
 ---
 
-archive/issue_comments_060604.json:
+archive/issue_comments_060491.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-10-24T03:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7281#issuecomment-60604",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7281#issuecomment-60491",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -62,15 +62,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_060605.json:
+archive/issue_comments_060492.json:
 ```json
 {
     "body": "Duplicate of #7275",
     "created_at": "2009-10-24T03:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7281#issuecomment-60605",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7281#issuecomment-60492",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

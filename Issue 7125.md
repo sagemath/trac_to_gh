@@ -6,7 +6,7 @@ archive/issues_007125.json:
     "body": "Assignee: @haraldschilly\n\nCC:  @jasongrout\n\nThe new report 21 does not include information from report 9 (at least, not for me).  This seems strange, since creation should be participation, at least ontologically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7125\n\n",
     "created_at": "2009-10-05T18:10:05Z",
     "labels": [
-        "website/wiki",
+        "component: website/wiki",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007125.json:
     "title": "New report for \"all tickets...participated in\" doesn't think creation is participation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7125",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: @haraldschilly
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7125
 
 ---
 
-archive/issue_comments_059109.json:
+archive/issue_comments_058997.json:
 ```json
 {
     "body": "I changed the report.  Does it include them now for you?",
     "created_at": "2009-10-05T18:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7125",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7125#issuecomment-59109",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7125#issuecomment-58997",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +49,15 @@ I changed the report.  Does it include them now for you?
 
 ---
 
-archive/issue_comments_059110.json:
+archive/issue_comments_058998.json:
 ```json
 {
     "body": "Yup!",
     "created_at": "2009-10-05T18:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7125",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7125#issuecomment-59110",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7125#issuecomment-58998",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -67,15 +67,15 @@ Yup!
 
 ---
 
-archive/issue_comments_059111.json:
+archive/issue_comments_058999.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-05T18:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7125",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7125#issuecomment-59111",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7125#issuecomment-58999",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

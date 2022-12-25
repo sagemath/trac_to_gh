@@ -6,15 +6,14 @@ archive/issues_008523.json:
     "body": "Assignee: tbd\n\nCC:  simonking\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow packages to install. \n\n\n == The problem with the optional  p_group_cohomology-1.2 ==\nThis looks like being related to #8514, since p_group_cohomology-1.2 needs the gap database. But #8514 seems to be a mess, and might not be easy to sort out. \n\n```\np_group_cohomology-1.2/spkg-check\np_group_cohomology-1.2/spkg-check-quickly\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\nFailed to find SmallGroups library.  Please install the database_gap spkg\n\nreal    0m0.043s\nuser    0m0.014s\nsys     0m0.028s\nsage: An error occurred while installing p_group_cohomology-1.2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8523\n\n",
     "created_at": "2010-03-13T14:44:23Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Optional package  p_group_cohomology-1.2 fails to install on Solaris 10 SPARC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8523",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -72,15 +71,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8523
 
 ---
 
-archive/issue_comments_076995.json:
+archive/issue_comments_076868.json:
 ```json
 {
     "body": "this is not a Solaris-specific bug, but a general one, related to the failure to recognise that database_gap is installed.\nThis is similar to the situation described in #8236\n\nPlease check out \nhttp://boxen.math.washington.edu/home/dima/packages/p_group_cohomology-1.2.p0.spkg",
     "created_at": "2010-03-27T12:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76995",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76868",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -94,15 +93,15 @@ http://boxen.math.washington.edu/home/dima/packages/p_group_cohomology-1.2.p0.sp
 
 ---
 
-archive/issue_comments_076996.json:
+archive/issue_comments_076869.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-27T12:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76996",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76869",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -112,15 +111,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_076997.json:
+archive/issue_comments_076870.json:
 ```json
 {
     "body": "Changing assignee from tbd to @simon-king-jena.",
     "created_at": "2010-03-27T16:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76997",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76870",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -130,15 +129,15 @@ Changing assignee from tbd to @simon-king-jena.
 
 ---
 
-archive/issue_comments_076998.json:
+archive/issue_comments_076871.json:
 ```json
 {
     "body": "Hi Dima!\n\nI saw at this ticket when it was created, but I understood from the ticket description that it was not possible to install database_gap.\n\nAre you saying that you can install database_gap, but the install script of the group cohomology package does not recognise it? What did you change to make it recognise database_gap?\n\nI am currently preparing a major upgrade of the group cohomology package. I expect it to be ready in about 2 weeks. Probably it would be easiest to incorporate the necessary  changes in the new version.\n\nWhat do you think?\n\nBest regards,\n\nSimon",
     "created_at": "2010-03-27T16:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76998",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76871",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -160,15 +159,15 @@ Simon
 
 ---
 
-archive/issue_comments_076999.json:
+archive/issue_comments_076872.json:
 ```json
 {
     "body": "Replying to [comment:2 SimonKing]:\n> Hi Dima!\n> \n> I saw at this ticket when it was created, but I understood from the ticket description that it was not possible to install database_gap.\n\nHi Simon,\n\nno, it was a Solaris-only problem, on the other patforms it worked just fine.\n(and the fix is trivial and available already)\n\n> \n> Are you saying that you can install database_gap, but the install script of the group cohomology package does not recognise it? What did you change to make it recognise database_gap?\n\nwell, when did it work last time, with which Sage release?\nProbably since then the semantics of the script newest_version that you call in spkg-install has changed.\nIt MUST be called from SAGE_ROOT/spkg --- if you call it from somewhere else it reports nonsense.\n\nSo here is the diff:\n\n```\n--- a/spkg-install      Sat Mar 27 03:34:21 2010 -0700\n+++ b/spkg-install      Sat Mar 27 04:26:40 2010 -0700\n@@ -25,13 +25,10 @@\n    exit 1\n fi\n \n-SMALL_GROUPS=`cd $SAGE_ROOT/spkg/optional/; $SAGE_ROOT/spkg/standard/newest_version database_gap`\n+SMALL_GROUPS=`cd $SAGE_ROOT/spkg; $SAGE_ROOT/spkg/standard/newest_version database_gap`\n if [ \"$SMALL_GROUPS\" = \"\" ]; then\n-    SMALL_GROUPS=`cd $SAGE_ROOT/spkg/installed/; $SAGE_ROOT/spkg/standard/newest_version database_gap`\n-    if [ \"$SMALL_GROUPS\" = \"\" ]; then\n-        echo \"Failed to find SmallGroups library.  Please install the database_gap spkg\"\n+        echo \"Failed to find SmallGroups library.  Please install the database_gap spkg, and make sure the corresponding spkg file (or any file with the same name!) is present in spkg/standard\"\n         exit 1\n-    fi\n fi\n \n # test whether we are on an intel mac\n```\n\n\n> \n> I am currently preparing a major upgrade of the group cohomology package. I expect it to be ready in about 2 weeks. Probably it would be easiest to incorporate the necessary  changes in the new version.\n> \n\nwell, the fix is trivial, and it's better to have a working version for the next release already...\n\nDima",
     "created_at": "2010-03-27T16:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76999",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76872",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -225,15 +224,15 @@ Dima
 
 ---
 
-archive/issue_comments_077000.json:
+archive/issue_comments_076873.json:
 ```json
 {
     "body": "Replying to [comment:3 dimpase]:\n\n> well, when did it work last time, with which Sage release?\n\nStarting with an spkg, I installed it in sage-4.3.1 to the least. And calling spkg-install directly is what I do all the time, with the newest sage.\n\n> well, the fix is trivial, and it's better to have a working version for the next release already...\n\nThank you for the diff. I will change my spkg-install accordingly.\n\nBest regards,\n\nSimon",
     "created_at": "2010-03-27T16:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77000",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76873",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -255,15 +254,15 @@ Simon
 
 ---
 
-archive/issue_comments_077001.json:
+archive/issue_comments_076874.json:
 ```json
 {
     "body": "Replying to [comment:4 SimonKing]:\n> Replying to [comment:3 dimpase]:\n> \n> > well, when did it work last time, with which Sage release?\n> \n> Starting with an spkg, I installed it in sage-4.3.1 to the least. And calling spkg-install directly is what I do all the time, with the newest sage.\n\nSimon, \n\ncalling spkg-install directly is certainly NOT the way it is meant to be installed.\nIt is meant to be installed either from within sage by calling install_package, or by calling\nsage -i (or sage -f) at the shell prompt.\nIf this does not work, 99.9% of the users won't have a clue what to do.\n\nPlease check that this works for you now, too.\n\n> \n> > well, the fix is trivial, and it's better to have a working version for the next release already...\n> \n> Thank you for the diff. I will change my spkg-install accordingly.\n\nyou better just grab the spkg linked above, and tell Minh (and/or the release manager) to upgrade the sagemath.org repository\nusing this file. There this diff is already applied and the changes reflected in SPKG.txt\nand in the Mercurial:\nthe repository was off in your spkg, I had to do a hg add and a hg commit; I aslo created .hgignore to ignore src/db files (having huge files in hg isn't good, and you have an online database with these, anyway).\n\nThis way, I could give it a positive review (pretending you did it all:-)).\n\nBest,\nDima\n \n> \n> Best regards,\n> \n> Simon",
     "created_at": "2010-03-27T18:37:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77001",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76874",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -307,15 +306,15 @@ Dima
 
 ---
 
-archive/issue_comments_077002.json:
+archive/issue_comments_076875.json:
 ```json
 {
     "body": "Replying to [comment:5 dimpase]:\n> calling spkg-install directly is certainly NOT the way it is meant to be installed.\n> It is meant to be installed either from within sage by calling install_package, or by calling\n> sage -i (or sage -f) at the shell prompt.\n\nI think we talk about totally different situations. You seem to talk about version 1.2, which is published and should certainly be installable by a user doing sage -i.\n\nBut IMO, sage -i is the way to go **only if the package is finished**. I am talking about the yet-to-be-published version 2.0. I am still not finished with all details of the new algorithms and documentation, and it has not being packaged yet.\n\nI will certainly not do sage -i while developing new algorithms. Namely, before doing sage -i, one has to have a spkg. Thus, I would have to do sage -pkg after each tiny little change, 20-50 times a day! That's clumsy! \n\nMoreover, sage -i should be equivalent to unpacking the spkg (well, it is unpacked since I didn't pack my development version yet) and calling spkg-install (plus, perhaps, spkg-check) in the sage environment. So, if spkg-install works (which it does for me) then sage -i should work as well.\n\nSo, testing whether sage -i still works will only be the last step before publishing version 2.0. \n\n> Please check that this works for you now, too.\n\nYou seem to talk about version 1.2. This version *did* work, on quite a broad range of platforms. I never had the problem that you describe. \n\nIn fact, I just tested (sage 4.3.4 on Opensuse; you said that the problem is not platform specific), and sage -f p_group_cohomology-1.2.spkg (without your changes) came easily beyond the point where the existence of database_gap is tested. Then, I interrupted with Ctrl-C.\n\nSo, can you please tell me how I can reproduce the problem that you met?\n\n> you better just grab the spkg linked above, and tell Minh (and/or the release manager) to upgrade the sagemath.org repository\n> using this file. There this diff is already applied and the changes reflected in SPKG.txt\n\nI don't plan to re-publish version 1.2, unless I can reproduce the problem. But I will pull it into version 2.0.\n\n> and in the Mercurial:\n> the repository was off in your spkg, I had to do a hg add and a hg commit; \n\nWHAT? \n\nSorry for shouting, but certainly the repository was not off. I don't know if you ever did sage -pkg, but it gives an unmistakable warning if the repository is not fine.\n\nThat you had to do hg commit is clear. But certainly spkg-install was in the repository. So, why hg add?\n\n> I aslo created .hgignore to ignore src/db files (having huge files in hg isn't good, and you have an online database with these, anyway).\n\nHere I am not so sure, but I thought that I did not include src/db in the repository, for this reason. BTW, the online database does *not* contain the cohomology rings for the groups of order 64 -- these are only provided by the database in the package. \n\n> This way, I could give it a positive review (pretending you did it all:-)).\n\nNow I am totally confused.\n\nFirst of all, I think that this ticket is a \"wontfix\", because it will soon be superseded by another ticket that I will open when I publish version 2.0.\n\nMoreover, it is about a problem that I can not reproduce.\n\nThen you say you will give a positive review -- to changes that you did yourself?\n\nBest regards,\n\nSimon",
     "created_at": "2010-03-28T00:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77002",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76875",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -378,15 +377,15 @@ Simon
 
 ---
 
-archive/issue_comments_077003.json:
+archive/issue_comments_076876.json:
 ```json
 {
     "body": "Concerning the mercurial repository:\n\nI just verified that SPKG.txt and spkg-install are tracked in the spkg's repository, and that the database for the groups of order 64 is not tracked.\n\nSo, I can not reproduce any of the issues that you are reporting.",
     "created_at": "2010-03-28T03:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77003",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76876",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -400,15 +399,15 @@ So, I can not reproduce any of the issues that you are reporting.
 
 ---
 
-archive/issue_comments_077004.json:
+archive/issue_comments_076877.json:
 ```json
 {
     "body": "Replying to [comment:7 SimonKing]:\n> Concerning the mercurial repository:\n> \n> I just verified that SPKG.txt and spkg-install are tracked in the spkg's repository, and that the database for the groups of order 64 is not tracked.\n> \n> So, I can not reproduce any of the issues that you are reporting.\n\nSimon,\n\nIn http://sagemath.org/packages/optional/p_group_cohomology-1.2.spkg\n(do you talk about the same repository?) hg  reports\n\n```\n? mtxoriginal/COPYING\n? mtxoriginal/README\n? mtxoriginal/bin/Makefile\n? mtxoriginal/bin/proggy/f1\n? mtxoriginal/bin/proggy/f2\n[...edited out...]\n```\n\nthe \"?\" status means something like \"hg does not know about this file; it is there, but I have no clue how to deal with it\" which is obviously not what one likes to have, even if sage -spkg\ndoes not complain. Moreover in SPKG.txt you say \n\n```\nNote that most of the code is original. Therefore we included the files from\nsrc into the Mercurial repository.\n```\n\nProbably it slipped through when the package was reviewed.\n\nBest,\nDima",
     "created_at": "2010-03-28T04:02:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77004",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76877",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -450,15 +449,15 @@ Dima
 
 ---
 
-archive/issue_comments_077005.json:
+archive/issue_comments_076878.json:
 ```json
 {
     "body": "Replying to [comment:6 SimonKing]:\n> Replying to [comment:5 dimpase]:\n> > calling spkg-install directly is certainly NOT the way it is meant to be installed.\n> > It is meant to be installed either from within sage by calling install_package, or by calling\n> > sage -i (or sage -f) at the shell prompt.\n> \n> I think we talk about totally different situations. You seem to talk about version 1.2, which is published and should certainly be installable by a user doing sage -i.\n> \n\nSure, I do talk about 1.2 (and I was baffled by what you wrote). And 1.2 is broken, it does not install on any Sage 4.3.4 I have (as I was busy with updating gap-related spkgs and cvxopt spkg, I have a large supply presently :-)).\nFor instance, one compiled from source on boxen.math \n\n```\ndima@boxen:~/sage/sage-4.3.4/spkg/standard$ ls database_g*\ndatabase_gap-4.4.12.p0.spkg\n```\n\nok, so SmallGroups are there, but I cannot install the package (I just copied the canonical 1.2 version to /tmp)\n\n```\n../../sage -f /tmp/p_group_cohomology-1.2.spkg\n[...]\n***************************************************\n/bin/ls: cannot access database_gap-*.spkg: No such file or directory\n/bin/ls: cannot access database_gap-*.spkg: No such file or directory\nFailed to find SmallGroups library.  Please install the database_gap spkg\n\nreal\t0m0.575s\nuser\t0m0.010s\nsys\t0m0.020s\nsage: An error occurred while installing p_group_cohomology-1.2\n```\n\n\n\n> But IMO, sage -i is the way to go **only if the package is finished**. I am talking about the yet-to-be-published version 2.0. I am still not finished with all details of the new algorithms and documentation, and it has not being packaged yet.\n> \n> I will certainly not do sage -i while developing new algorithms. Namely, before doing sage -i, one has to have a spkg. Thus, I would have to do sage -pkg after each tiny little change, 20-50 times a day! That's clumsy! \n> \n> Moreover, sage -i should be equivalent to unpacking the spkg (well, it is unpacked since I didn't pack my development version yet) and calling spkg-install (plus, perhaps, spkg-check) in the sage environment. So, if spkg-install works (which it does for me) then sage -i should work as well.\n> \n> So, testing whether sage -i still works will only be the last step before publishing version 2.0. \n> \n> > Please check that this works for you now, too.\n> \n> You seem to talk about version 1.2. This version *did* work, on quite a broad range of platforms. I never had the problem that you describe. \n> \n> In fact, I just tested (sage 4.3.4 on Opensuse; you said that the problem is not platform specific), and sage -f p_group_cohomology-1.2.spkg (without your changes) came easily beyond the point where the existence of database_gap is tested. Then, I interrupted with Ctrl-C.\n\nPlease see above. I don't have access to SUSE systems, but it fails on a range of Ubuntu and Debian Linuxes, as well as on Solaris (Sparc) and on MacOSX 10.5 (PPC), all of these with Sage 4.3.4.\n \n> \n> So, can you please tell me how I can reproduce the problem that you met?\n\nTry it on sage.math or boxen.math and see for yourself, if you like.\n\n> \n> > you better just grab the spkg linked above, and tell Minh (and/or the release manager) to upgrade the sagemath.org repository\n> > using this file. There this diff is already applied and the changes reflected in SPKG.txt\n> \n> I don't plan to re-publish version 1.2, unless I can reproduce the problem. But I will pull it into version 2.0.\n> \n> > and in the Mercurial:\n> > the repository was off in your spkg, I had to do a hg add and a hg commit; \n> \n> WHAT? \n> \n> Sorry for shouting, but certainly the repository was not off. I don't know if you ever did sage -pkg, but it gives an unmistakable warning if the repository is not fine.\n> \n> That you had to do hg commit is clear. But certainly spkg-install was in the repository. So, why hg add?\n\nas I explained in another reply, to bring it in line to what you wrote in SPKG.txt.\nBy the way, I was pointed out few times by spkg reviewers that having hg-\"?\"-marked files in the spkg is not good, and they insisted on fixing this.\n> \n> > I aslo created .hgignore to ignore src/db files (having huge files in hg isn't good, and you have an online database with these, anyway).\n> \n> Here I am not so sure, but I thought that I did not include src/db in the repository, for this reason. BTW, the online database does *not* contain the cohomology rings for the groups of order 64 -- these are only provided by the database in the package.\n\nOK, sorry about this. \n\n> \n> > This way, I could give it a positive review (pretending you did it all:-)).\n> \n> Now I am totally confused.\n\nMy apologies. As usual, the joke is lost in electronic communications... I meant to say I explained it to you all, leaving you almost nothing to figure out, so it would be a breeze to give it a positive review.\n\n> \n> First of all, I think that this ticket is a \"wontfix\", because it will soon be superseded by another ticket that I will open when I publish version 2.0.\n> \n> Moreover, it is about a problem that I can not reproduce.\n\nwell, 2.0 is still at least weeks away, and then reviewing, etc etc. Meanwhile there is a broken spkg on the list of optional packages, and the fix is ready. So, please, please, let us fix it, and be done with.\n\nBest,\nDima",
     "created_at": "2010-03-28T05:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77005",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76878",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -563,15 +562,15 @@ Dima
 
 ---
 
-archive/issue_comments_077006.json:
+archive/issue_comments_076879.json:
 ```json
 {
     "body": "Replying to [comment:8 dimpase]:\n\n> Replying to [comment:7 SimonKing]:\n\n  In http://sagemath.org/packages/optional/p_group_cohomology-1.2.spkg (do you talk about the same repository?) hg  reports\n\n```\n  ? mtxoriginal/COPYING \n  ? mtxoriginal/README \n  ? mtxoriginal/bin/Makefile \n  ...\n```\n\n\nAh, now I understand. In fact, these files do not belong into the hg repository, IMO.\n\nThe `mtxoriginal/` folder is just a reference to the original `C-MeatAxe`, as it was downloaded from upstream. And if I remember correctly, as a rule of thumb, any SPKG should provide third party code in its original form.\n\nOn the other hand, look into the `src/` folder. As a subfolder, you will find another copy of `C-MeatAxe`. This one contains many modifications made by David Green and myself. Since these modifications are, to some extent, original code, I've put it under version control: You will find that this subfolder *is* in the hg repository.\n\nChanges to third party code should be made transparent, and I thought that if there are many changes then the resulting large diff file would be less transparent than having both versions simultaneously: The version from third party, and our modified version.\n\nOnly the code in `src/` is compiled, and it may change when upgrading the package. But the stuff in `mtxoriginal/` is not compiled, and it will not be touched. So, there is no point of putting `mtxoriginall/` under version control.\n\n> Moreover in SPKG.txt you say  ` Note that most of the code is original.  Therefore we included the files from src into the Mercurial repository. `\n\nExactly. And it also says:\n\n\n```\nThe package includes a modified version of the Aachen C-MeatAxe. Since the\nchanges are major, we included the modified sources into the Mercurial\nrepository. A MeatAxe version that comes closest to what we started with\nis provided in the folder mtxoriginal.\n```\n\nI thought this is clear enough.\n\nIIRC, the developer's guide says that the `src/` folder of an SPKG should *not* be under version control. I asked why, and got the reply that *normally* it contains third party code that is simply dropped in, so that version control does not make sense.\n\nHere, we have original code, and therefore `src/` is under version control, in contrast to most other SPKGs.\n\nProbably I should better add a `.hgignore`, so that `mtxoriginal/` gets ignored...\n\nBest regards,\n\nSimon",
     "created_at": "2010-03-28T10:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77006",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76879",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -627,15 +626,15 @@ Simon
 
 ---
 
-archive/issue_comments_077007.json:
+archive/issue_comments_076880.json:
 ```json
 {
     "body": "Replying to [comment:9 dimpase]:\n\nSure, I do talk about 1.2 (and I was baffled by what you wrote). And 1.2 is broken, it does not install on any Sage 4.3.4 I have\nReally? OK, then something needs to be done. \n\nIt did compile on several platforms. Personally, I tested Suse linux (two different machines at my university), sage-math, and Intel mac (Darwin). David Joyner and William Stein tested it on various other platforms, like Ubuntu. The issues found there had been sorted out.\n\n\u00a0For instance, one compiled from source on boxen.math  \n\nOK, then I\u00a0 will try to build sage on boxen and see what happens. I'll reply later what happens.\n\nPlease see above. I don't have access to SUSE systems, but it fails on a range of Ubuntu and Debian Linuxes, as well as on Solaris (Sparc) and on MacOSX 10.5 (PPC), all of these with Sage 4.3.4.\n\nOK, these had been tested with previous sage versions. So, now the picture becomes clearer: The package became broken by upgrading sage, and I think this is what you said.\n\n> as I explained in another reply, to bring it in line to what you wrote in SPKG.txt. By the way, I was pointed out few times by spkg reviewers that having hg-\"?\"-marked files in the spkg is not good, and they insisted on fixing this.\n\nSee my reply there: These files, I think, do not belong under version control, but making this clear by .hgignore might be a good idea.\n\n> well, 2.0 is still at least weeks away, and then reviewing, etc etc. Meanwhile there is a broken spkg on the list of optional packages, and the fix is ready. So, please, please, let us fix it, and be done with. Best, Dima\n\nRight, that makes sense.\n\nSo, I will test on boxen. If successful, I will probably then do the following:\n\n* Adopt your changes to spkg-install\n* Mention these changes in SPKG.txt\n* Putting mtxoriginal under .hgignore\n* Ask whether this change can be put into the sage repository.\n\nThe question is, though: Should this still be p_group_cohomology-1.2, or better p_group_cohomology-1.2.1? And who is giving a positive review? :)\n\nBest regards,\n\nSimon",
     "created_at": "2010-03-28T10:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77007",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76880",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -679,15 +678,15 @@ Simon
 
 ---
 
-archive/issue_comments_077008.json:
+archive/issue_comments_076881.json:
 ```json
 {
     "body": "PS:\n\nSorry for the strange layout of my previous post. I just see that your post is not marked as a quote. It looked fine in \"wysywig\".",
     "created_at": "2010-03-28T10:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77008",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76881",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -699,15 +698,15 @@ Sorry for the strange layout of my previous post. I just see that your post is n
 
 ---
 
-archive/issue_comments_077009.json:
+archive/issue_comments_076882.json:
 ```json
 {
     "body": "Replying to [comment:10 SimonKing]:\n> Replying to [comment:8 dimpase]:\n> \n> > Replying to [comment:7 SimonKing]:\n> \n>   In http://sagemath.org/packages/optional/p_group_cohomology-1.2.spkg (do you talk about the same repository?) hg  reports\n> {{{\n>   ? mtxoriginal/COPYING \n>   ? mtxoriginal/README \n>   ? mtxoriginal/bin/Makefile \n>   ...\n> }}}\n> \n> Ah, now I understand. In fact, these files do not belong into the hg repository, IMO.\n> \n> The `mtxoriginal/` folder is just a reference to the original `C-MeatAxe`, as it was downloaded from upstream. And if I remember correctly, as a rule of thumb, any SPKG should provide third party code in its original form.\n\nRight. Indeed, the most sensible thing seems to have .hgignore as follows:\n\n```\nmtxoriginal\nsrc/db\n```\n\n(and do not forget to \"hg add .hgignore\", so that \"hg status\" would not report anything at all)\n\nOK, so my complaint was about \"hg status\" reporting lots of \"?\"-marked files, I didn't \nlook more carefully what exactly was there --- my guess was it's the entire directory, as also .hgignore file wasn't \nthere at all.\n\nBest,\n\nDima\n\n> Probably I should better add a `.hgignore`, so that `mtxoriginal/` gets ignored...\n> \n> Best regards,\n> \n> Simon",
     "created_at": "2010-03-28T10:24:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77009",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76882",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -755,15 +754,15 @@ Dima
 
 ---
 
-archive/issue_comments_077010.json:
+archive/issue_comments_076883.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-03-28T10:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77010",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76883",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -773,15 +772,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_077011.json:
+archive/issue_comments_076884.json:
 ```json
 {
     "body": "Replying to [comment:11 SimonKing]:\n>> Replying to [comment:9 dimpase]:\n> >\n> > Sure, I do talk about 1.2 (and I was baffled by what you wrote). And 1.2 is broken, it does not install on any Sage 4.3.4 I > > have\n> Really? OK, then something needs to be done. \n> \n> It did compile on several platforms. Personally, I tested Suse linux (two different machines at my university), sage-math, and Intel mac (Darwin). David Joyner and William Stein tested it on various other platforms, like Ubuntu. The issues found there had been sorted out.\n\nApparently since the release of your spkg there was a semantics change in some Sage scripts that now causes us this headache.\n\n> \n> \u00a0For instance, one compiled from source on boxen.math  \n\n> OK, then I\u00a0 will try to build sage on boxen and see what happens. I'll reply later what happens.\n\nthere is a ready binary install for sage.math, you can just grab it instead, and try out on sage.math (not on boxen)\nhttp://sage.math.washington.edu/home/release/sage-4.3.4/sage-4.3.4-sage.math.washington.edu-x86_64-Linux.tar.gz\nThis would be much faster.\n\n> \n> Please see above. I don't have access to SUSE systems, but it fails on a range of Ubuntu and Debian Linuxes, as well as on Solaris (Sparc) and on MacOSX 10.5 (PPC), all of these with Sage 4.3.4.\n\n> OK, these had been tested with previous sage versions. So, now the picture becomes clearer: The package became broken by upgrading sage, and I think this is what you said.\n\nRight.\n\n\n> So, I will test on boxen. If successful, I will probably then do the following:\n> \n>  * Adopt your changes to spkg-install\n>  * Mention these changes in SPKG.txt\n>  * Putting mtxoriginal under .hgignore\n>  * Ask whether this change can be put into the sage repository.\n> \n> The question is, though: Should this still be p_group_cohomology-1.2, or better p_group_cohomology-1.2.1?\n\np_group_cohomology-1.2.p0 seems to be the proper name.\n\n\n>  And who is giving a positive review? :)\n\nThat's a tough one :-)\nwell, if you do not mention my name in the changes then I won't be a co-author, and will be able to review, IMHO.\nWe could also ask Dave, the initiator of the ticket...\n\nBest,\n\nDima\n\n> \n> Best regards,\n> \n> Simon",
     "created_at": "2010-03-28T10:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77011",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76884",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -843,15 +842,15 @@ Dima
 
 ---
 
-archive/issue_comments_077012.json:
+archive/issue_comments_076885.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_info.",
     "created_at": "2010-03-28T12:42:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77012",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76885",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -861,15 +860,15 @@ Changing status from needs_work to needs_info.
 
 ---
 
-archive/issue_comments_077013.json:
+archive/issue_comments_076886.json:
 ```json
 {
     "body": "Hi Dima!\n\nNow I am even more puzzled.\n\nI did precisely the following steps:\n\n* I copied and unpacked the sage-4.3.4 binary for sage.math on sage.math\n* I started ./sage and waited until it had updated paths. Then I quit sage.\n* I edited ./sage, replacing \"......\" by the correct value of SAGE_ROOT\n* I started ./sage again, testing it with \"2+gap(2)\"\n* I did install_package('database_gap') followed by install_package('gap_packages').\n* Then, I did install_package('p_group_cohomology'), and could then do \"from pGroupCohomology import CohomologyRing\"\n\n\nIt installed fine, there was no error. I think this is how a user is supposed to install things, and so I can still not reproduce the error.\n\nCheers,\n\nSimon",
     "created_at": "2010-03-28T12:42:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77013",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76886",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -897,15 +896,15 @@ Simon
 
 ---
 
-archive/issue_comments_077014.json:
+archive/issue_comments_076887.json:
 ```json
 {
     "body": "PS:\n\nBefore using the package, I had to do gap_reset_workspace(), quit sage, start it again, and then I did successfully compute some cohomology rings.",
     "created_at": "2010-03-28T12:52:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77014",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76887",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -917,15 +916,15 @@ Before using the package, I had to do gap_reset_workspace(), quit sage, start it
 
 ---
 
-archive/issue_comments_077015.json:
+archive/issue_comments_076888.json:
 ```json
 {
     "body": "Replying to [comment:15 SimonKing]:\n\nHi,\n\n> Now I am even more puzzled.\n> \n> I did precisely the following steps:\n> \n>  * I copied and unpacked the sage-4.3.4 binary for sage.math on sage.math\n>  * I started ./sage and waited until it had updated paths. Then I quit sage.\n>  * I edited ./sage, replacing \"......\" by the correct value of SAGE_ROOT\n>  * I started ./sage again, testing it with \"2+gap(2)\"\n>  * I did install_package('database_gap') followed by install_package('gap_packages').\n>  * Then, I did install_package('p_group_cohomology'), and could then do \"from pGroupCohomology import CohomologyRing\"\n\n> \n> It installed fine, there was no error. I think this is how a user is supposed to install things, and so I can still not reproduce the error.\n> \n\nI can confirm that indeed this way it works for me (on boxen with a compiled Sage 4.3.4-version), too.\n\nOK, so it appears to be an inconsistency in the Sage behaviour, when the option -i (or -f) is used to install the package. (AFAIK, these options are not something for experts only, they should work just the same...)\n\nIt is, perhaps, a bug in newest_version script.\nI'll see if I can find it quickly...\n\nDima\n\n> Cheers,\n> \n> Simon",
     "created_at": "2010-03-28T13:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77015",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76888",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -965,15 +964,15 @@ Dima
 
 ---
 
-archive/issue_comments_077016.json:
+archive/issue_comments_076889.json:
 ```json
 {
     "body": "Replying to [comment:17 dimpase]:\n> I can confirm that indeed this way it works for me (on boxen with a compiled Sage 4.3.4-version), too.\n\nThat's a big relief!\n\n> It is, perhaps, a bug in newest_version script.\n> I'll see if I can find it quickly...\n\nBut if one of the two usual ways of installing the package does work, then it might be acceptable to leave it as it is, and then to take care that *both* ways of installation work for p_group_cohomology-2.0.\n\nWhat do you think?",
     "created_at": "2010-03-28T13:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77016",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76889",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -993,15 +992,15 @@ What do you think?
 
 ---
 
-archive/issue_comments_077017.json:
+archive/issue_comments_076890.json:
 ```json
 {
     "body": "Replying to [comment:18 SimonKing]:\n> Replying to [comment:17 dimpase]:\n> > I can confirm that indeed this way it works for me (on boxen with a compiled Sage 4.3.4-version), too.\n> \n> That's a big relief!\n> \n> > It is, perhaps, a bug in newest_version script.\n> > I'll see if I can find it quickly...\n\nI spent an hour trying to sort this out, and my only conclusion is that on a clean and fresh install things work both ways.\nApparently there is a subtle bug that only manifests itself after unsuccessful installs of spkgs, something gets inconsistent...\n\nI propose to mark this ticket as \"won't fix\", as this is certainly nothing wrong\nwith this spkg (except that hg inconsistency one can live with, at least if a new spkg release is coming).\n\nDima\n\n\n> \n> But if one of the two usual ways of installing the package does work, then it might be acceptable to leave it as it is, and then to take care that *both* ways of installation work for p_group_cohomology-2.0.\n> \n> What do you think?",
     "created_at": "2010-03-28T14:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77017",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76890",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -1032,15 +1031,15 @@ Dima
 
 ---
 
-archive/issue_comments_077018.json:
+archive/issue_comments_076891.json:
 ```json
 {
     "body": "I think the problem is this: if you install \"database_gap-4.4.12\" by downloading the spkg file and typing\n\n```\nsage -i PATH_TO/database_gap-4.4.12.spkg\n```\n\nthen it is installed, but the spkg file is not copied to SAGE_ROOT/spkg/optional or to SAGE_ROOT/spkg/standard.  There is a placeholder file in SAGE_ROOT/spkg/installed, and this is probably what you should look for to test whether it's installed -- this is what the file SAGE_ROOT/local/bin/sage-spkg does.  Note that after this, if you run \"install_package('database_gap')\" or \"sage -i database_gap-4.4.12.spkg\", it says that it's installed.\n\n(If you run \"install_package('database_gap')\", on the other hand, then Sage downloads the spkg file and puts it in spkg/optional, so your spkg-install file finds it.)",
     "created_at": "2010-03-28T14:44:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77018",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76891",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1058,15 +1057,15 @@ then it is installed, but the spkg file is not copied to SAGE_ROOT/spkg/optional
 
 ---
 
-archive/issue_comments_077019.json:
+archive/issue_comments_076892.json:
 ```json
 {
     "body": "Now that's weird.\n\nI took the spkg-install as you suggested. But the test for the presence of database_gap failed:\n\n```\nsage subshell$ ./spkg-install\n/bin/ls: cannot access database_gap-*.spkg: No such file or directory\nFailed to find SmallGroups library.  Please install the database_gap spkg, and make sure the corresponding spkg file (or any file with the same name!) is present in spkg/standard\n```\n\n\nIn other word: For me, the original version works, but the modified version doesn't.\n\nBest regards,\n\nSimon",
     "created_at": "2010-03-28T14:46:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77019",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76892",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1091,15 +1090,15 @@ Simon
 
 ---
 
-archive/issue_comments_077020.json:
+archive/issue_comments_076893.json:
 ```json
 {
     "body": "Replying to [comment:20 jhpalmieri]:\n> I think the problem is this: if you install \"database_gap-4.4.12\" by downloading the spkg file and typing\n> {{{\n> sage -i PATH_TO/database_gap-4.4.12.spkg\n> }}}\n> then it is installed, but the spkg file is not copied to SAGE_ROOT/spkg/optional or to SAGE_ROOT/spkg/standard.  There is a placeholder file in SAGE_ROOT/spkg/installed, and this is probably what you should look for to test whether it's installed -- this is what the file SAGE_ROOT/local/bin/sage-spkg does. \n\n\n... and this is what I did in my spkg-install (for exactly the reason you explain):\n\n```\nSMALL_GROUPS=`cd $SAGE_ROOT/spkg/optional/; $SAGE_ROOT/spkg/standard/newest_version database_gap`\nif [ \"$SMALL_GROUPS\" = \"\" ]; then\n    SMALL_GROUPS=`cd $SAGE_ROOT/spkg/installed/; $SAGE_ROOT/spkg/standard/newest_version database_gap`\n    if [ \"$SMALL_GROUPS\" = \"\" ]; then\n        echo \"Failed to find SmallGroups library.  Please install the database_gap spkg\"\n        exit 1\n    fi\nfi\n```\n\n\nCheers,\n\nSimon",
     "created_at": "2010-03-28T14:51:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77020",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76893",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1133,15 +1132,15 @@ Simon
 
 ---
 
-archive/issue_comments_077021.json:
+archive/issue_comments_076894.json:
 ```json
 {
     "body": "I have a file \"database_gap-4.4.12\" in SAGE_ROOT/spkg/installed, and I just did this:\n\n- run \"sage -sh\"\n- cd to SAGE_ROOT/spkg/installed\n- run \"../standard/newest_version database_gap\"\n\nand it didn't find it.  It looks to me like \"newest_version\" searches for a file ending in \".spkg\", and the files in spkg/installed don't match this.  The script SAGE_ROOT/local/bin/sage-spkg does something else to check for installation:\n\n```\nif [ -f \"$INSTALLED/$PKG_NAME\" -a $FORCE -eq 0 ]; then\n    echo \"sage: $1 is already installed\"\n    touch \"$INSTALLED/$PKG_NAME\"\n    exit 0\nfi\n```\n\nwhere $INSTALLED is SAGE_ROOT/spkg/installed, $PKG_NAME is the name without \"spkg\", and you could omit \"-a $FORCE\", I think.",
     "created_at": "2010-03-28T15:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77021",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76894",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1167,15 +1166,15 @@ where $INSTALLED is SAGE_ROOT/spkg/installed, $PKG_NAME is the name without "spk
 
 ---
 
-archive/issue_comments_077022.json:
+archive/issue_comments_076895.json:
 ```json
 {
     "body": "Replying to [comment:23 jhpalmieri]:\n> The script SAGE_ROOT/local/bin/sage-spkg does something else to check for installation:\n> {{{\n> ...\n> where $INSTALLED is SAGE_ROOT/spkg/installed, $PKG_NAME is the name without \"spkg\", and you could omit \"-a $FORCE\", I think.\n\nGood, I'll check this.\n\nWhat are the opinions: Can this wait until p_group_cohomology-2.0 is finished (since version 1.2 does work, provided the users install everything the \"normal\" way)? Or should there been a version 1.2.p0?\n\nBest regards,\n\nSimon",
     "created_at": "2010-03-28T16:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77022",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76895",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1197,15 +1196,15 @@ Simon
 
 ---
 
-archive/issue_comments_077023.json:
+archive/issue_comments_076896.json:
 ```json
 {
     "body": "Hi John!\n\nI don't know how it works what you suggested. First of all, $INSTALLED has no value in the sage shell:\n\n```\nsage subshell$ echo $INSTALLED\n\n```\n\n\nCould it be that it is only defined inside `SAGE_ROOT/local/bin/sage-spkg`?\n\nAnd one problem with this method is that (if I understand correctly) one has to provide the exact version of the package whose existence is being tested. \n\nBut I don't want a method to test for the presence of database_gap-4.4.12 (so that it wouldn't work if database_gap-4.4.10 is installed). I want to test if *any* version of database_gap is there. \n\nAnd I think that this is exactly the purpose of the script `$SAGE_ROOT/spkg/standard/newest_version`.\n\nCheers,\n\nSimon",
     "created_at": "2010-03-28T17:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77023",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76896",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1235,15 +1234,15 @@ Simon
 
 ---
 
-archive/issue_comments_077024.json:
+archive/issue_comments_076897.json:
 ```json
 {
     "body": "Replying to [comment:25 SimonKing]:\nHi Simon,\n\nOK, so it seems that I provided a \"fix\" that does not always work from within Sage, and your original package setup\ndoes not always work with sage -i.\n\nIn your case, the safest would be just to call \"sage -gap\" and see if it has SmallGroups stuff loaded.\nE.g. just check that the output of\n\n```\necho \"SmallGroup(13,1); quit;\" | $SAGE_ROOT/sage -gap -b -T | grep \"13\"\n```\n\nis nonempty.\n\nBest,\nDima",
     "created_at": "2010-03-28T17:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77024",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76897",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -1269,15 +1268,15 @@ Dima
 
 ---
 
-archive/issue_comments_077025.json:
+archive/issue_comments_076898.json:
 ```json
 {
     "body": "Replying to [comment:26 dimpase]:\n> In your case, the safest would be just to call \"sage -gap\" and see if it has SmallGroups stuff loaded.\n> E.g. just check that the output of\n> {{{\n> echo \"SmallGroup(13,1); quit;\" | $SAGE_ROOT/sage -gap -b -T | grep \"13\"\n> }}}\n> is nonempty.\n\nThis is great! It is an ideal solution, in the sense that it tests exactly what is needed. Namely, we actually don't care about the database_gap spkg -- it is alright if the user got his SmallGroups library from a different source.\n\nThe change is little. So, I guess I'll create a version 1.2.p0, adding .hgignore, mentioning you in SPKG.txt (I am rewriting it in reverse chronological order, by the way), and change spkg-install; actually, I already tested that it works on my computer.\n\nProbably, if you or Dave are able to install the package with the new spkg-install, then you are entitled to give a positive review, so that the release manager can put it into the repository of optional packages.\n\nThank you very much!\n\nSimon",
     "created_at": "2010-03-28T18:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77025",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76898",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1303,15 +1302,15 @@ Simon
 
 ---
 
-archive/issue_comments_077026.json:
+archive/issue_comments_076899.json:
 ```json
 {
     "body": "Replying to [comment:25 SimonKing]:\n> Hi John!\n> \n> I don't know how it works what you suggested. First of all, $INSTALLED has no value in the sage shell:\n\n> Could it be that it is only defined inside `SAGE_ROOT/local/bin/sage-spkg`?\n\nThat's right.\n\n> And one problem with this method is that (if I understand correctly) one has to provide the exact version of the package whose existence is being tested. \n\nI think that's right, too.  I don't know much about writing shell scripts, but this seems to work:\n\n```/usr/bin/env bash\n\nINSTALLED=\"$SAGE_PACKAGES/installed/\"\nPKG_NAME=`echo \"$1\" | sed -e \"s/\\.spkg$//\"`\nPKG_NAME=`basename \"$PKG_NAME\"`\nPKG_BASE=`echo \"$PKG_NAME\" | sed -e \"s/-.*//\"`\n\ncd \"$SAGE_PACKAGES/installed\"\n\nif [ `echo $PKG_BASE*` ]; then\n    echo \"sage: $PKG_BASE is already installed\"\n    exit 0\nfi\n```\n\n($SAGE_PACKAGES is defined by running \"sage -sh\".)  This script defines PKG_BASE to be the name of the package without the version number: everything up to the first hyphen or period, whichever comes first.",
     "created_at": "2010-03-28T18:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77026",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76899",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1349,15 +1348,15 @@ fi
 
 ---
 
-archive/issue_comments_077027.json:
+archive/issue_comments_076900.json:
 ```json
 {
     "body": "Hi!\n\nI created a new patch level version, which I was able to install on sage.math by\n\n```\n./sage -i http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.2.p0.spkg\n```\n\n\nChanges: \n- adding .hgignore\n- modifying SPKG.txt (adding this change to the changelog, and putting the changelog in reverse chronological order)\n- modifying spkg-install.\n\nThe test for the presence of Small Groups is now\n\n```\nSMALL_GROUPS=`echo \"SmallGroup(13,1); quit;\" | $SAGE_ROOT/sage -gap -b -T | grep \"13\"`\nif [ \"$SMALL_GROUPS\" = \"\" ]; then\n   echo \"It seems that GAP's SmallGroups library is missing.\"\n   echo \"One way to install it is by doing\"\n   echo \"    sage: install_package('database_gap')\"\n   echo \"in a Sage session.\"\n   exit 1\nfi\n```\n\n\nNote that this is *really* a test for the Small Groups library, rather than for the database_gap spkg. The error message is a bit more descriptive as well.\n\nhg status does not return question marks.\n\nSo, ready for review!\n\nCheers,\n\nSimon",
     "created_at": "2010-03-28T18:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77027",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76900",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1403,15 +1402,15 @@ Simon
 
 ---
 
-archive/issue_comments_077028.json:
+archive/issue_comments_076901.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-03-28T18:46:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77028",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76901",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1421,15 +1420,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_077029.json:
+archive/issue_comments_076902.json:
 ```json
 {
     "body": "Replying to [comment:29 SimonKing]:\nHi,\n\nOK, good, I checked that it also works on boxen and Solaris (Sparc)(t2).\nOn t2 I also tried few things from the package:\n\n```\nsage: from pGroupCohomology.dickson import DICKSON\nsage: D = DICKSON(3)\nsage: d_3_1 = D(3,1)\nsage: d_3_1\ny0^18*y1^6 + ...\n```\n\n\nI give it a positive review (despite my name mentioned in SPKG, I only contributed an idea for a fix, but I didn't touch the code).\n\nBest,\nDima",
     "created_at": "2010-03-29T09:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77029",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76902",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -1457,15 +1456,15 @@ Dima
 
 ---
 
-archive/issue_comments_077030.json:
+archive/issue_comments_076903.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-29T09:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77030",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76903",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -1475,15 +1474,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_077031.json:
+archive/issue_comments_076904.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"recognise database_gap, group cohomology\".",
     "created_at": "2010-03-29T10:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77031",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76904",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1493,15 +1492,15 @@ Changing keywords from "" to "recognise database_gap, group cohomology".
 
 ---
 
-archive/issue_comments_077032.json:
+archive/issue_comments_076905.json:
 ```json
 {
     "body": "Hi Dima!\n\nFine! Then I change the \"keywords\", \"author\" and \"reviewer\" fields accordingly.\n\nIs it needed to notify a release manager, or are these guys reading any ticket anyway?\n\nBest regards,\nSimon",
     "created_at": "2010-03-29T10:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77032",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76905",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1518,15 +1517,15 @@ Simon
 
 ---
 
-archive/issue_comments_077033.json:
+archive/issue_comments_076906.json:
 ```json
 {
     "body": "Replying to [comment:31 SimonKing]:\n> Fine! Then I change the \"keywords\", \"author\" and \"reviewer\" fields accordingly.\n> \n> Is it needed to notify a release manager, or are these guys reading any ticket anyway?\n> \n \nIMHO they check at least the positively reviewed ones...\n\nDima",
     "created_at": "2010-03-29T10:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77033",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76906",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -1544,15 +1543,15 @@ Dima
 
 ---
 
-archive/issue_comments_077034.json:
+archive/issue_comments_076907.json:
 ```json
 {
     "body": "Replying to [comment:32 dimpase]:\n\n> IMHO they check at least the positively reviewed ones...\n\nOK.\n\nTo the release manager (for avoiding confusion): The positive review is for the package posted at\n\n  [http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.2.p0.spkg](http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.2.p0.spkg)\n\nSimon",
     "created_at": "2010-03-29T10:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77034",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76907",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1572,15 +1571,15 @@ Simon
 
 ---
 
-archive/issue_comments_077035.json:
+archive/issue_comments_076908.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-20T22:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77035",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76908",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1590,15 +1589,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_077036.json:
+archive/issue_comments_076909.json:
 ```json
 {
     "body": "Merged 2010/04/20.",
     "created_at": "2010-04-20T22:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-77036",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8523#issuecomment-76909",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

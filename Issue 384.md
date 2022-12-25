@@ -6,7 +6,7 @@ archive/issues_000384.json:
     "body": "Assignee: @williamstein\n\nThere are two latex formatting issues for the symbolic expressions.\n\n1)  The \\cdot's for implicit multiplication take up a lot of room and confuse my eyes.\n\n2)  I have expressions which are a product of about 5 things and \nthey are output with excessive parentheses, for example:\n(((1+a)(1+b))(1+c))(1+d)\nThe parenthesis check in the code just adds parentheses if the left \nsubexpression contains a minus or plus.  Of course, it should check if there \nis a minus or plus that isn't already bracketed or something like that (but, who am I \nto claim to know what should be done :) ).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/384\n\n",
     "created_at": "2007-06-01T15:29:03Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000384.json:
     "title": "latex formatting issues with symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/384",
-    "user": "jbmohler"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 Assignee: @williamstein
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/384
 
 ---
 
-archive/issue_comments_001875.json:
+archive/issue_comments_001867.json:
 ```json
 {
     "body": "This is still an issue with Sage 2.10:\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{\\left( {\\left( {\\left( {x}^{2}  - 2 \\right) \\cdot \\left( x - y \\right)} \\right) \\cdot \\left( y + x \\right)} \\right) \\cdot \\left( {y}^{2}  - 3 \\right)}\n```\n\nWe really ought to fix this.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-26T15:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1875",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1867",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -72,15 +72,15 @@ Michael
 
 ---
 
-archive/issue_comments_001876.json:
+archive/issue_comments_001868.json:
 ```json
 {
     "body": "Attachment [384-latex_symbexp.patch](tarball://root/attachments/some-uuid/ticket384/384-latex_symbexp.patch) by @aghitza created at 2008-01-27 02:07:51\n\nSee the patch.  A few comments:\n\n1. The parenthesis issue is, I believe, taken care of.\n2. After some thinking, I decided to do away with all the \\cdot's.  For a while, I thought they might still been needed in some situations, but since in the default behavior _latex_ first simplifies the expressions, all the weird cases I could think of (e.g. f=cos*(x-1)) are taken care of automatically.  I'd be happy to change my mind if anyone can prove me wrong.\n\nSome examples:\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{{\nsage: var('x,y')\n(x, y)\nsage: f=(x+y)*(x-y)*(x^2-2)*(y^2-3)\nsage: latex(f)\n{{{\\left( {x}^{2}  - 2 \\right) \\left( x - y \\right)} \\left( y + x \\right)} \\left( {y}^{2}  - 3 \\right)}\nsage: latex(cos*(x+1))\n{\\left( x + 1 \\right) \\cos}\nsage: latex(x^2*2*cos(x+1))\n{{2 {x}^{2} } \\cos \\left( x + 1 \\right)}\n}}}",
     "created_at": "2008-01-27T02:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1876",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1868",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -119,15 +119,15 @@ sage: latex(x^2*2*cos(x+1))
 
 ---
 
-archive/issue_comments_001877.json:
+archive/issue_comments_001869.json:
 ```json
 {
     "body": "Attachment [384-2.patch](tarball://root/attachments/some-uuid/ticket384/384-2.patch) by @mwhansen created at 2008-01-27 02:23:16",
     "created_at": "2008-01-27T02:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1877",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1869",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -137,15 +137,15 @@ Attachment [384-2.patch](tarball://root/attachments/some-uuid/ticket384/384-2.pa
 
 ---
 
-archive/issue_comments_001878.json:
+archive/issue_comments_001870.json:
 ```json
 {
     "body": "Added a patch to be applied after Alex's.",
     "created_at": "2008-01-27T02:23:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1878",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1870",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -155,15 +155,15 @@ Added a patch to be applied after Alex's.
 
 ---
 
-archive/issue_comments_001879.json:
+archive/issue_comments_001871.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-27T03:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1879",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1871",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +173,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_001880.json:
+archive/issue_comments_001872.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc1",
     "created_at": "2008-01-27T03:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1880",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1872",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -191,15 +191,15 @@ Merged in Sage 2.10.1.rc1
 
 ---
 
-archive/issue_comments_001881.json:
+archive/issue_comments_001873.json:
 ```json
 {
     "body": "Attachment [Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_1.patch](tarball://root/attachments/some-uuid/ticket384/Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_1.patch) by mabshoff created at 2008-01-27 04:11:15",
     "created_at": "2008-01-27T04:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1881",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1873",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -209,15 +209,15 @@ Attachment [Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_1.patch](tarball://ro
 
 ---
 
-archive/issue_comments_001882.json:
+archive/issue_comments_001874.json:
 ```json
 {
     "body": "Attachment [Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_2.patch](tarball://root/attachments/some-uuid/ticket384/Sage-2.10.1.rc1-384-doctest-fallout-fixes_part_2.patch) by mabshoff created at 2008-01-27 04:14:22\n\nThe two doctest patches fix the issue in the documentation and the sage library. They have been merged in Sage 2.10.1.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-27T04:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/384",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1882",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/384#issuecomment-1874",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

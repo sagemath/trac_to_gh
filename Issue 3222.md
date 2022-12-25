@@ -6,15 +6,13 @@ archive/issues_003222.json:
     "body": "Assignee: mabshoff\n\nSee the related trac ticket #3176. \n\nThis spkg:\n\n* adds an hg repo\n* patches the Makefile.in\n* adds an SPKG.txt (but probably not as complete as some would want, since maybe already mabshoff did that for #3176!).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3222\n\n",
     "created_at": "2008-05-16T17:29:15Z",
     "labels": [
-        "porting: Cygwin",
-        "major",
-        "enhancement"
+        "component: porting: cygwin"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "sqlite -- add cygwin support to sqlite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3222",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3222
 
 ---
 
-archive/issue_comments_022303.json:
+archive/issue_comments_022256.json:
 ```json
 {
     "body": "This spkg builds for me under cygwin.",
     "created_at": "2008-05-17T09:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22303",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22256",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -53,15 +51,15 @@ This spkg builds for me under cygwin.
 
 ---
 
-archive/issue_comments_022304.json:
+archive/issue_comments_022257.json:
 ```json
 {
     "body": "Spkg looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-18T12:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22304",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22257",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +73,15 @@ Michael
 
 ---
 
-archive/issue_comments_022305.json:
+archive/issue_comments_022258.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.alpha1",
     "created_at": "2008-05-18T12:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22305",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22258",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +91,15 @@ Merged in Sage 3.0.2.alpha1
 
 ---
 
-archive/issue_comments_022306.json:
+archive/issue_comments_022259.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-18T12:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22306",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3222#issuecomment-22259",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003863.json:
     "body": "Assignee: @garyfurnish\n\nKeywords: integration integral calculus symbolic\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: x = var('x')\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3).n()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/drake/sage-3.0.6.final/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in numerical_approx(self, prec, digits)\n   1266         except TypeError:\n   1267             # try to return a complex result\n-> 1268             approx = self._complex_mpfr_field_(ComplexField(prec))\n   1269 \n   1270         return approx\n\n/home/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in _complex_mpfr_field_(self, field)\n   1419 \n   1420     def _complex_mpfr_field_(self, field):\n-> 1421         raise TypeError\n   1422 \n   1423     def _complex_double_(self, C):\n\nTypeError: \nsage: \n```\n\n\nOddly, the `plot` function has no difficulty, so *some* part of Sage can numerically evaluate the function:\n\n\n```\nplot(x^2.7 * e^(-2.4*x), x, 0, 3)\n```\n\nworks fine.\n\nSome values for the exponents do work -- it seems like the exponent of `x` needs to be an integer or half-integer:\n\n\n```\n(2.7, -2.4): this is the above example\n(27/10, -2.4): same error as above\n(1.5, -2.4): works\n(1.6, -2.4): same error as above\n(1.6, -2.0): same error as above\n(1.0, -2.4): works\n(5.5, -2.4): works\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3863\n\n",
     "created_at": "2008-08-15T00:46:06Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "numerical integration of x^2.7 * e^(-2.4*x) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3863",
-    "user": "@dandrake"
+    "user": "https://github.com/dandrake"
 }
 ```
 Assignee: @garyfurnish
@@ -84,15 +83,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3863
 
 ---
 
-archive/issue_comments_027521.json:
+archive/issue_comments_027463.json:
 ```json
 {
     "body": "With the new symbolics in 4.0.rc0, this still doesn't work; the error is now:\n\n```\nsage: integrate(x^2.7 * exp(-2.4*x), x, 0, 3).n()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (10003, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/drake/.sage/temp/sage.math.washington.edu/22166/_home_drake__sage_init_sage_0.py in <module>()\n\n/scratch/drake/4.0.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:15691)()\n\n/scratch/drake/4.0.rc0/local/lib/python2.5/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.pyobject (sage/symbolic/expression.cpp:2641)()\n\nTypeError: self must be a numeric expression\n```\n\nPutting parentheses around the 2.7 and -2.4 didn't change anything.",
     "created_at": "2009-05-21T11:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27521",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27463",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -122,15 +121,15 @@ Putting parentheses around the 2.7 and -2.4 didn't change anything.
 
 ---
 
-archive/issue_comments_027522.json:
+archive/issue_comments_027464.json:
 ```json
 {
     "body": "The essential problem is that with half-integer or integer exponents of x, Maxima can symbolically integrate this using Erf.   Otherwise it can't (that doesn't mean it's not possible, just that Maxima doesn't know).  Before, Sage tried to turn the expression into a complex one if it couldn't evaluate it, but that doesn't do much for a real (unevaluated) integral; now the new symbolics just complain that it's not numeric, which of course it isn't.\n\nMy view is that the correct fix is to put some kind of check in for when \"integrate\" is part of the output string fed into .n() and in that case at least attempt to use numerical_integral or something.  Of course that has the problem that things like \n\n```\nsage: integrate(1/(1+x^7))\n1/7*log(x + 1) - 1/7*integrate((x^5 - 2*x^4 + 3*x^3 - 4*x^2 + 5*x - 6)/(x^6 - x^5 + x^4 - x^3 + x^2 - x + 1), x)\n```\n\nMaxima is able to partly symbolically integrate, leaving\n\n```\nsage: integrate(1/(1+x^7),x,0,1)\n```\n\nin trouble.  But at least a check for \"integrate\" at the beginning could help.",
     "created_at": "2009-05-22T15:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27522",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27464",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -155,15 +154,15 @@ in trouble.  But at least a check for "integrate" at the beginning could help.
 
 ---
 
-archive/issue_comments_027523.json:
+archive/issue_comments_027465.json:
 ```json
 {
     "body": "Replying to [comment:2 kcrisman]:\n> The essential problem is that with half-integer or integer exponents of x, Maxima can symbolically integrate this using Erf.   Otherwise it can't (that doesn't mean it's not possible, just that Maxima doesn't know).  Before, Sage tried to turn the expression into a complex one if it couldn't evaluate it, but that doesn't do much for a real (unevaluated) integral; now the new symbolics just complain that it's not numeric, which of course it isn't.\n\nAh, that makes sense. I don't mind that just naively running `.n()` doesn't work; we could have, like Mathematica, some sort of numerical_integrate that would try to evaluate the integral, and then punt to something like Simpson's rule to just estimate it. I'm sure, though, that there's vastly better ways to actually do numerical integrals than just a plain vanilla Calculus 1 application of Simpson's Rule.",
     "created_at": "2009-05-23T01:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27523",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27465",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -176,15 +175,15 @@ Ah, that makes sense. I don't mind that just naively running `.n()` doesn't work
 
 ---
 
-archive/issue_comments_027524.json:
+archive/issue_comments_027466.json:
 ```json
 {
     "body": "Oh, totally, and of course we have numerical_integrate and nintegral (one is Maxima, one is GSL I think).  So I guess what I'm saying is that when someone has time (which won't be me until June due to the (US) holiday and then a conference) it should be relatively straightforward to at least do something in the generic code for .n() on whatever kind of object (symbolic?) an expression like integrate(f(x),x,a,b) is like\n\n```\ntry:\n    usual code\nexcept TypeError:\n    if \"integrate\" is in the string:\n        either reraise the TypeError with a message suggesting the use of numerical_integrate\n        or actually try to string-magic replace \"integrate\" with \"numerical_integrate\", which should be possible (you'd have to take [0] of that result, of course)\n    else:\n        do whatever used to happen with a TypeError\n```\n\nI think that it is reasonable for a user to expect that .n() numerically evaluates an expression as best as possible, even one Maxima can't evaluate!  And all these methods are much more sophisticated than Simpson, certainly, so that's not the issue.",
     "created_at": "2009-05-23T18:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27524",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27466",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -207,15 +206,15 @@ I think that it is reasonable for a user to expect that .n() numerically evaluat
 
 ---
 
-archive/issue_comments_027525.json:
+archive/issue_comments_027467.json:
 ```json
 {
     "body": "Actually, the solution is much cleaner since .n() will call the _evalf_ method on the integrate function which we can just have resort to a numerical integral if it is definite and has no free variables.\n\nI'll look into this later.",
     "created_at": "2009-06-04T23:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27525",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27467",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -227,15 +226,15 @@ I'll look into this later.
 
 ---
 
-archive/issue_comments_027526.json:
+archive/issue_comments_027468.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-06-04T23:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27526",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27468",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -245,15 +244,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_027527.json:
+archive/issue_comments_027469.json:
 ```json
 {
     "body": "Changing assignee from @garyfurnish to @mwhansen.",
     "created_at": "2009-06-04T23:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27527",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27469",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -263,15 +262,15 @@ Changing assignee from @garyfurnish to @mwhansen.
 
 ---
 
-archive/issue_comments_027528.json:
+archive/issue_comments_027470.json:
 ```json
 {
     "body": "Changing keywords from \"integration integral calculus symbolic\" to \"integration integral calculus symbolic numerical\".",
     "created_at": "2009-12-22T17:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27528",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27470",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -281,15 +280,15 @@ Changing keywords from "integration integral calculus symbolic" to "integration 
 
 ---
 
-archive/issue_comments_027529.json:
+archive/issue_comments_027471.json:
 ```json
 {
     "body": "Update: in 4.3.alpha1 with Maxima 5.20.1, we now get\n\n```\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3)\n119/6144*2^(3/5)*3^(3/10)*5^(7/10)*gamma(7/10) - 125/20736*2^(3/5)*3^(3/10)*5^(7/10)*gamma_incomplete(37/10, 36/5)\n```\n\nBut it won't evaluate the gamma_incomplete, since for some reason we aren't translating it to gamma_inc or incomplete_gamma, which are the supported functions; however, otherwise it is correct (as comparing with results of numerical_integral).\n\nThis does not fix the problem, of course, but I will change the summary to get at the fundamental thing mhansen and I discussed, and open a separate ticket (if it doesn't exist) for the gamma_incomplete not being translated correctly from Maxima.  That is #7748.\n\nDo we in the meantime have the _evalf_ method on a symbolic integral that can be changed?",
     "created_at": "2009-12-22T17:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27529",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27471",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -310,15 +309,15 @@ Do we in the meantime have the _evalf_ method on a symbolic integral that can be
 
 ---
 
-archive/issue_comments_027530.json:
+archive/issue_comments_027472.json:
 ```json
 {
     "body": "Replying to [comment:6 kcrisman]:\n> Do we in the meantime have the _evalf_ method on a symbolic integral that can be changed?\n\n#6465 has a patch with such an `_evalf_` method. It needs a rebase though. I'm still playing with the symbolic functions in pynac. If nobody gets to it, I'll update those patches after I'm done with pynac.",
     "created_at": "2009-12-22T22:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27530",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27472",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -331,15 +330,15 @@ Replying to [comment:6 kcrisman]:
 
 ---
 
-archive/issue_comments_027531.json:
+archive/issue_comments_027473.json:
 ```json
 {
     "body": "Attachment [trac_3863-doctest.patch](tarball://root/attachments/some-uuid/ticket3863/trac_3863-doctest.patch) by @burcin created at 2010-04-05 13:02:56\n\ntrivial doctest",
     "created_at": "2010-04-05T13:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27531",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27473",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -351,15 +350,15 @@ trivial doctest
 
 ---
 
-archive/issue_comments_027532.json:
+archive/issue_comments_027474.json:
 ```json
 {
     "body": "This was fixed by #6465. Despite the fact that we still have problems with numerical integration (#8321), the problem addressed here is solved. I suggest that we add a doctest and close this ticket.\n\nattachment:trac_3863-doctest.patch adds a trivial doctest. Here is the same computation in Maple: \n\n\n```\n    |\\^/|     Maple 12 (IBM INTEL LINUX)\n._|\\|   |/|_. Copyright (c) Maplesoft, a division of Waterloo Maple Inc. 2008\n \\  MAPLE  /  All rights reserved. Maple is a trademark of\n <____ ____>  Waterloo Maple Inc.\n      |       Type ? for help.\n> Digits:=30;                             \n                                 Digits := 30\n\n> evalf(Int(x^2.7 * exp(-2.4*x), x=0..3));\nmemory used=3.8MB, alloc=3.1MB, time=0.06\nmemory used=7.6MB, alloc=4.4MB, time=0.13\nmemory used=11.4MB, alloc=4.4MB, time=0.21\n                       0.154572952320789711837207551604\n```\n",
     "created_at": "2010-04-05T13:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27532",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27474",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -389,15 +388,15 @@ memory used=11.4MB, alloc=4.4MB, time=0.21
 
 ---
 
-archive/issue_comments_027533.json:
+archive/issue_comments_027475.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-05T13:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27533",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27475",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -407,15 +406,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_027534.json:
+archive/issue_comments_027476.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-04-06T11:45:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27534",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27476",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -425,15 +424,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_027535.json:
+archive/issue_comments_027477.json:
 ```json
 {
     "body": "Hrm, the doctest from the patch doesn't work for me:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: review\nsage: integrate(x^2.7 * e^(-2.4*x), x, 0, 3).n() \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.5, Release Date: 2010-03-28                       |\n| Type notebook() for the GUI, and license() for information.        |\n/scratch/sage-4.3.5/<ipython console> in <module>()\n\n/scratch/sage-4.3.5/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17049)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\n",
     "created_at": "2010-04-06T11:45:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27535",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27477",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -460,15 +459,15 @@ TypeError: cannot evaluate symbolic expression numerically
 
 ---
 
-archive/issue_comments_027536.json:
+archive/issue_comments_027478.json:
 ```json
 {
     "body": "Thanks for the quick feedback Dan.\n\nNow I remember why I didn't suggest to close this ticket earlier. Conversion of the result back from maxima was broken (#7661). Can you try with the patch from #7661 applied. Here is a quick link attachment:trac_7661-maxima_convert_back.patch:ticket:7661.",
     "created_at": "2010-04-06T12:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27536",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27478",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -480,15 +479,15 @@ Now I remember why I didn't suggest to close this ticket earlier. Conversion of 
 
 ---
 
-archive/issue_comments_027537.json:
+archive/issue_comments_027479.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-04-06T12:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27537",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27479",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -498,15 +497,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_027538.json:
+archive/issue_comments_027480.json:
 ```json
 {
     "body": "Replying to [comment:10 burcin]:\n> Thanks for the quick feedback Dan.\n> \n> Now I remember why I didn't suggest to close this ticket earlier. Conversion of the result back from maxima was broken (#7661). Can you try with the patch from #7661 applied. Here is a quick link attachment:trac_7661-maxima_convert_back.patch:ticket:7661.\n\nUh oh...that patch doesn't apply. On top of vanilla 4.3.5, it fails in calculus.py and random_tests.py. I tried to fix the failing hunk in calculus.py (and ignored random_tests.py, since that seemed like a harmless change), but with that applied, it still fails for me.\n\nI tried applying the patches from #7748 on top of the #7661 patch, but Sage doesn't even properly start:\n\n```\n/scratch/sage-4.3.5/local/lib/python2.6/site-packages/sage/functions/other.py in <module>()\n    540 # We have to add the wrapper function manually to the symbol_table when we have\n\n    541 # two functions with different number of arguments and the same name\n\n--> 542 symbol_table['functions']['gamma'] = gamma\n    543 \n    544 class Function_gamma_inc(BuiltinFunction):\n\nNameError: name 'gamma' is not defined\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\n```\n\n\nAny ideas?",
     "created_at": "2010-04-06T13:38:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27538",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27480",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -541,15 +540,15 @@ Any ideas?
 
 ---
 
-archive/issue_comments_027539.json:
+archive/issue_comments_027481.json:
 ```json
 {
     "body": "Apparently #7661 depends on #7748, which already has a positive review, but requires 3 patches to be applied. Instructions are here: comment:15:ticket:7748\n\nI'm sorry for the inconvenience. Many thanks for helping me sort through the dependencies.",
     "created_at": "2010-04-06T15:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27539",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27481",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -561,15 +560,15 @@ I'm sorry for the inconvenience. Many thanks for helping me sort through the dep
 
 ---
 
-archive/issue_comments_027540.json:
+archive/issue_comments_027482.json:
 ```json
 {
     "body": "Replying to [comment:12 burcin]:\n> Apparently #7661 depends on #7748, which already has a positive review, but requires 3 patches to be applied. Instructions are here: comment:15:ticket:7748\n\nSuccess! With vanilla 4.3.5 and the following patches applied, the doctest passes!\n\n```\n$ hg qapplied\ntrac_7748-exp_integral_ver2.4.3.3.alpha1.patch\ntrac_7748-incomplete_gamma_ver2.4.3.3.alpha1.patch\ntrac_7748-gamma_wrapper.3.patch\ntrac_7661-maxima_convert_back.patch\ntrac_3863-doctest.patch\n```\n\nWith the same set of patches applied to 4.3.3 on bsd.math, the doctest also passes. Positive review here.",
     "created_at": "2010-04-07T02:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27540",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27482",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -593,15 +592,15 @@ With the same set of patches applied to 4.3.3 on bsd.math, the doctest also pass
 
 ---
 
-archive/issue_comments_027541.json:
+archive/issue_comments_027483.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-07T02:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27541",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27483",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -611,15 +610,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_027542.json:
+archive/issue_comments_027484.json:
 ```json
 {
     "body": "Release manager: this ticket depends on #7748 and #7761.",
     "created_at": "2010-04-07T02:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27542",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27484",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -629,15 +628,15 @@ Release manager: this ticket depends on #7748 and #7761.
 
 ---
 
-archive/issue_comments_027543.json:
+archive/issue_comments_027485.json:
 ```json
 {
     "body": "Replying to [comment:14 ddrake]:\n> Release manager: this ticket depends on #7748 and #7761. \n\nAck, typo: it's #7748 and #7661.",
     "created_at": "2010-04-07T02:47:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27543",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27485",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -650,15 +649,15 @@ Ack, typo: it's #7748 and #7661.
 
 ---
 
-archive/issue_comments_027544.json:
+archive/issue_comments_027486.json:
 ```json
 {
     "body": "Merged \"trac_3863-doctest.patch\" in 4.4.alpha0.",
     "created_at": "2010-04-15T20:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27544",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27486",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -668,15 +667,15 @@ Merged "trac_3863-doctest.patch" in 4.4.alpha0.
 
 ---
 
-archive/issue_comments_027545.json:
+archive/issue_comments_027487.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-15T20:16:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27545",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3863#issuecomment-27487",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

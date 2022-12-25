@@ -6,15 +6,13 @@ archive/issues_004852.json:
     "body": "Assignee: @rlmill\n\nCC:  ekirkman\n\nWe really probably ought to use the very nice `@`option and `@`suboption functionality for doing plots of graphs. That would make it easier to specify edge/vertex options, for example, and to retrieve existing defaults, etc.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4852\n\n",
     "created_at": "2008-12-22T18:37:25Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graph plotting using @option and @suboption",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4852",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -32,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4852
 
 ---
 
-archive/issue_comments_036785.json:
+archive/issue_comments_036713.json:
 ```json
 {
     "body": "Changing assignee from @rlmill to @jasongrout.",
     "created_at": "2008-12-22T18:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36785",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36713",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -50,15 +48,15 @@ Changing assignee from @rlmill to @jasongrout.
 
 ---
 
-archive/issue_comments_036786.json:
+archive/issue_comments_036714.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-22T18:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36786",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36714",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -68,15 +66,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_036787.json:
+archive/issue_comments_036715.json:
 ```json
 {
     "body": "Emily was working on this at one point. I don't know where that code is now...",
     "created_at": "2008-12-22T19:06:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36787",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36715",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -86,15 +84,15 @@ Emily was working on this at one point. I don't know where that code is now...
 
 ---
 
-archive/issue_comments_036788.json:
+archive/issue_comments_036716.json:
 ```json
 {
     "body": "This is related a little to #2817.\n\nEmily, were you working on using `@`option and `@`suboption to plot graphs?",
     "created_at": "2008-12-23T03:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36788",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36716",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -106,15 +104,15 @@ Emily, were you working on using `@`option and `@`suboption to plot graphs?
 
 ---
 
-archive/issue_comments_036789.json:
+archive/issue_comments_036717.json:
 ```json
 {
     "body": "Graph plots currently use `@`option. See `sage/graphs/graph_plot.py`\n\n\n...invalid?",
     "created_at": "2009-07-13T21:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36789",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36717",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -127,15 +125,15 @@ Graph plots currently use `@`option. See `sage/graphs/graph_plot.py`
 
 ---
 
-archive/issue_comments_036790.json:
+archive/issue_comments_036718.json:
 ```json
 {
     "body": "> Graph plots currently use `@`option. See `sage/graphs/graph_plot.py`\n\nOr at least see `sage.graphs.generic_graph.py`, in particular (in Sage 5.0) [http://hg.sagemath.org/sage-main/file/9ab4ab6e12d0/sage/graphs/generic_graph.py#l13907](http://hg.sagemath.org/sage-main/file/9ab4ab6e12d0/sage/graphs/generic_graph.py#l13907)\n\n> \n> ...invalid?\n\nProbably it could be improved somehow, but we'd want a more specific ticket for this.  Jason, I'm recommending closing this - speak now!",
     "created_at": "2012-06-01T18:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36790",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36718",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -152,15 +150,15 @@ Probably it could be improved somehow, but we'd want a more specific ticket for 
 
 ---
 
-archive/issue_comments_036791.json:
+archive/issue_comments_036719.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-06-01T18:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36791",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36719",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -170,15 +168,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_036792.json:
+archive/issue_comments_036720.json:
 ```json
 {
     "body": "+1 to closing this vague ticket that seems to be minimally satisfied.",
     "created_at": "2012-06-01T18:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36792",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36720",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -188,15 +186,15 @@ archive/issue_comments_036792.json:
 
 ---
 
-archive/issue_comments_036793.json:
+archive/issue_comments_036721.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-06-01T19:00:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36793",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36721",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -206,15 +204,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_036794.json:
+archive/issue_comments_036722.json:
 ```json
 {
     "body": "Great.",
     "created_at": "2012-06-01T19:00:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36794",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36722",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -224,15 +222,15 @@ Great.
 
 ---
 
-archive/issue_comments_036795.json:
+archive/issue_comments_036723.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2012-06-02T12:33:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36795",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4852#issuecomment-36723",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

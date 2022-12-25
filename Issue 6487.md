@@ -6,7 +6,7 @@ archive/issues_006487.json:
     "body": "Assignee: @mwhansen\n\nCC:  @mwhansen\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage:\nsage: sage: s = SFASchur(QQ)\nsage: sage: s([2]).plethysm(s.zero_element())\nsage.bin:\n| Sage Version 4.1.rc1, Release Date: 2009-07-07                     |\n| Type notebook() for the GUI, and license() for information.        |\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\nThis problem also exists with sage-4.0.2.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6487\n\n",
     "created_at": "2009-07-08T19:17:28Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006487.json:
     "title": "Plethysm with the zero symmetric function causes a segfault",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6487",
-    "user": "@saliola"
+    "user": "https://github.com/saliola"
 }
 ```
 Assignee: @mwhansen
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6487
 
 ---
 
-archive/issue_comments_052460.json:
+archive/issue_comments_052362.json:
 ```json
 {
     "body": "This appears to be fixed in sage-4.4.\n\n```\nsage: sage: sage: s = SFASchur(QQ)\nsage: sage: sage: s([2]).plethysm(s.zero_element())\n0\n```\n",
     "created_at": "2010-05-06T15:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6487",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6487#issuecomment-52460",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/6487#issuecomment-52362",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -76,15 +76,15 @@ sage: sage: sage: s([2]).plethysm(s.zero_element())
 
 ---
 
-archive/issue_comments_052461.json:
+archive/issue_comments_052363.json:
 ```json
 {
     "body": "I'll mark this as invalid then.",
     "created_at": "2010-05-06T16:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6487",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6487#issuecomment-52461",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6487#issuecomment-52363",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -94,15 +94,15 @@ I'll mark this as invalid then.
 
 ---
 
-archive/issue_comments_052462.json:
+archive/issue_comments_052364.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-05-06T16:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6487",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6487#issuecomment-52462",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6487#issuecomment-52364",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_006953.json:
     "body": "Assignee: tba\n\nCC:  ylchapuy @malb\n\nThis is a follow-up to ticket #6950. I got the following warning when building the reference manual with the patch at #6950:\n\n```\nWARNING: inline latex u'f(x)g(x) = 0 \\x0corall x.\\n\\n': latex exited with error:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6953\n\n",
     "created_at": "2009-09-17T23:35:08Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006953.json:
     "title": "follow-up to #6950: fix warning when building reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6953",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tba
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6953
 
 ---
 
-archive/issue_comments_057497.json:
+archive/issue_comments_057389.json:
 ```json
 {
     "body": "Patch looks good except there seems to be a 'fullstop' (aka 'period') missing at the end.",
     "created_at": "2009-09-18T08:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57497",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57389",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -54,15 +54,15 @@ Patch looks good except there seems to be a 'fullstop' (aka 'period') missing at
 
 ---
 
-archive/issue_comments_057498.json:
+archive/issue_comments_057390.json:
 ```json
 {
     "body": "Attachment [trac_6953-typo-fixes.patch](tarball://root/attachments/some-uuid/ticket6953/trac_6953-typo-fixes.patch) by mvngu created at 2009-09-18 09:05:35\n\ndepends on #6950",
     "created_at": "2009-09-18T09:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57498",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57390",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -74,15 +74,15 @@ depends on #6950
 
 ---
 
-archive/issue_comments_057499.json:
+archive/issue_comments_057391.json:
 ```json
 {
     "body": "Replying to [comment:2 malb]:\n> Patch looks good except there seems to be a 'fullstop' (aka 'period') missing at the end. \nFixed. See the new patch.",
     "created_at": "2009-09-18T09:06:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57499",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57391",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -94,15 +94,15 @@ Fixed. See the new patch.
 
 ---
 
-archive/issue_comments_057500.json:
+archive/issue_comments_057392.json:
 ```json
 {
     "body": ":) I only pointed it out because I know you care about these kind of things.",
     "created_at": "2009-09-18T09:22:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57500",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57392",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -112,15 +112,15 @@ archive/issue_comments_057500.json:
 
 ---
 
-archive/issue_comments_057501.json:
+archive/issue_comments_057393.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-18T13:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57501",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57393",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -130,15 +130,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_057502.json:
+archive/issue_comments_057394.json:
 ```json
 {
     "body": "Merged patches in this order:\n\n1. the patch at #6950\n2. `trac_6953-typo-fixes.patch`",
     "created_at": "2009-09-18T13:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57502",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6953#issuecomment-57394",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

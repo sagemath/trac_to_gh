@@ -6,15 +6,14 @@ archive/issues_004343.json:
     "body": "Assignee: @burcin\n\n\n```\nThe reference manual shows the following example for the gradient()  \nfunction:\n\nsage: x,y = var('x y')\nsage: f = x2+y2\nsage: f.gradient()\n(2*x, 2*y)\n\nHowever, if instead I enter:\n\nsage: x,y,n = var('x y n')\nsage: f = x^n+y^n\nsage: f.gradient()\n(y^n*log(y) + x^n*log(x), n*x^(n - 1), n*y^(n - 1))\n\n(not what I wanted, but I can understand what happened.)\nSo I tried:\n\nsage: f(x,y) = x^n+y^n\nsage: f.gradient()\n((x, y) |--> y^n*log(y) + x^n*log(x), (x, y) |--> n*x^(n - 1), (x, y)  \n|--> n*y^(n - 1))\nSo even if I specify that f is a function of x and y,\ngradient() still insists on also differentiating w.r.t. n\n\nHow do I tell gradient() that n is a constant?\n\nThanks in advance for insights.\nJim Clark\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4343\n\n",
     "created_at": "2008-10-23T00:28:09Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "gradient needs to be more careful about the variables",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4343",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @burcin
@@ -61,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4343
 
 ---
 
-archive/issue_comments_031914.json:
+archive/issue_comments_031852.json:
 ```json
 {
     "body": "Attachment [gradient.patch](tarball://root/attachments/some-uuid/ticket4343/gradient.patch) by @jasongrout created at 2008-10-23 00:32:44\n\nDoctests in calculus.py pass.",
     "created_at": "2008-10-23T00:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31914",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31852",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -81,15 +80,15 @@ Doctests in calculus.py pass.
 
 ---
 
-archive/issue_comments_031915.json:
+archive/issue_comments_031853.json:
 ```json
 {
     "body": "Doctests pass, Jim's original problem is fixed, and the code looks good. Positive review.",
     "created_at": "2008-10-24T04:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31915",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31853",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -99,15 +98,15 @@ Doctests pass, Jim's original problem is fixed, and the code looks good. Positiv
 
 ---
 
-archive/issue_comments_031916.json:
+archive/issue_comments_031854.json:
 ```json
 {
     "body": "Merged in Sage 3.2.alpha1",
     "created_at": "2008-10-26T04:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31916",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31854",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -117,15 +116,15 @@ Merged in Sage 3.2.alpha1
 
 ---
 
-archive/issue_comments_031917.json:
+archive/issue_comments_031855.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-26T04:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31917",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4343#issuecomment-31855",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

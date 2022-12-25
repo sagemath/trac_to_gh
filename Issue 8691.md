@@ -6,15 +6,14 @@ archive/issues_008691.json:
     "body": "Assignee: sage-combinat\n\nCC:  @rlmill\n\nThe implementation is already done, I just need a ticket number.\n\nMy fix for #8655 will depend on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8691\n\n",
     "created_at": "2010-04-15T06:19:19Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Implement Plain Change algorithm in cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8691",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: sage-combinat
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8691
 
 ---
 
-archive/issue_comments_079174.json:
+archive/issue_comments_079044.json:
 ```json
 {
     "body": "Attachment [8691_permutation_plainchange_tjb.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb.patch) by boothby created at 2010-04-15 22:03:32",
     "created_at": "2010-04-15T22:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79174",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79044",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -51,15 +50,15 @@ Attachment [8691_permutation_plainchange_tjb.patch](tarball://root/attachments/s
 
 ---
 
-archive/issue_comments_079175.json:
+archive/issue_comments_079045.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-15T22:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79175",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79045",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_079176.json:
+archive/issue_comments_079046.json:
 ```json
 {
     "body": "Hi Tom,\n\nThis looks very good ! Thanks for this. I've only one concerns: from the name, I would never guess what it does. I'm not sure to have a better name but I think we should ask for better proposal on the mailing lists.",
     "created_at": "2010-04-15T22:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79176",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79046",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -89,15 +88,15 @@ This looks very good ! Thanks for this. I've only one concerns: from the name, I
 
 ---
 
-archive/issue_comments_079177.json:
+archive/issue_comments_079047.json:
 ```json
 {
     "body": "> This looks very good ! Thanks for this. I've only one concerns: from the name, I would never guess what it does. I'm not sure to have a better name but I think we should ask for better proposal on the mailing lists. \n\nSorry for the double answer. Is you algorithm different from \nhttp://en.wikipedia.org/wiki/Steinhaus\u2013Johnson\u2013Trotter_algorithm\nIf not this is maybe a good name.",
     "created_at": "2010-04-15T22:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79177",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79047",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -111,15 +110,15 @@ If not this is maybe a good name.
 
 ---
 
-archive/issue_comments_079178.json:
+archive/issue_comments_079048.json:
 ```json
 {
     "body": "Oops, turns out that freeing a call to `malloc(0)` is a bad idea.",
     "created_at": "2010-04-16T20:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79178",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79048",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -129,15 +128,15 @@ Oops, turns out that freeing a call to `malloc(0)` is a bad idea.
 
 ---
 
-archive/issue_comments_079179.json:
+archive/issue_comments_079049.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-04-16T20:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79179",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79049",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -147,15 +146,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_079180.json:
+archive/issue_comments_079050.json:
 ```json
 {
     "body": "replaces previous",
     "created_at": "2010-04-28T22:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79180",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79050",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -165,15 +164,15 @@ replaces previous
 
 ---
 
-archive/issue_comments_079181.json:
+archive/issue_comments_079051.json:
 ```json
 {
     "body": "Attachment [8691_permutation_plainchange_tjb_v2.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v2.patch) by boothby created at 2010-04-28 22:06:18",
     "created_at": "2010-04-28T22:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79181",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79051",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -183,15 +182,15 @@ Attachment [8691_permutation_plainchange_tjb_v2.patch](tarball://root/attachment
 
 ---
 
-archive/issue_comments_079182.json:
+archive/issue_comments_079052.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-04-28T22:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79182",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79052",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -201,15 +200,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_079183.json:
+archive/issue_comments_079053.json:
 ```json
 {
     "body": "replaces all previous",
     "created_at": "2010-05-21T21:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79183",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79053",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -219,15 +218,15 @@ replaces all previous
 
 ---
 
-archive/issue_comments_079184.json:
+archive/issue_comments_079054.json:
 ```json
 {
     "body": "Attachment [8691_permutation_plainchange_tjb_v3.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v3.patch) by boothby created at 2010-05-21 21:35:02\n\nUpdated version has changed the filename, and removed reference implementation because there's a better one in `sage/graphs/genus.pyx`.",
     "created_at": "2010-05-21T21:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79184",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79054",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -239,15 +238,15 @@ Updated version has changed the filename, and removed reference implementation b
 
 ---
 
-archive/issue_comments_079185.json:
+archive/issue_comments_079055.json:
 ```json
 {
     "body": "I think the usual convention here is to have Python functions that can test low-level C functions. It would also check input, etc...",
     "created_at": "2010-05-21T21:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79185",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79055",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -257,15 +256,15 @@ I think the usual convention here is to have Python functions that can test low-
 
 ---
 
-archive/issue_comments_079186.json:
+archive/issue_comments_079056.json:
 ```json
 {
     "body": "apply on top of v3",
     "created_at": "2010-05-22T03:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79186",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79056",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -275,15 +274,15 @@ apply on top of v3
 
 ---
 
-archive/issue_comments_079187.json:
+archive/issue_comments_079057.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-05-22T03:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79187",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79057",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -293,15 +292,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_079188.json:
+archive/issue_comments_079058.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-05-22T03:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79188",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79058",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -311,15 +310,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_079189.json:
+archive/issue_comments_079059.json:
 ```json
 {
     "body": "Attachment [8691_permutation_plainchange_tjb_v3_part2.patch](tarball://root/attachments/some-uuid/ticket8691/8691_permutation_plainchange_tjb_v3_part2.patch) by boothby created at 2010-05-22 03:55:58",
     "created_at": "2010-05-22T03:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79189",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79059",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -329,15 +328,15 @@ Attachment [8691_permutation_plainchange_tjb_v3_part2.patch](tarball://root/atta
 
 ---
 
-archive/issue_comments_079190.json:
+archive/issue_comments_079060.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-25T23:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79190",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79060",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -347,15 +346,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_079191.json:
+archive/issue_comments_079061.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2010-05-25T23:48:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79191",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79061",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -365,15 +364,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_079192.json:
+archive/issue_comments_079062.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-05T22:04:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8691",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79192",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8691#issuecomment-79062",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

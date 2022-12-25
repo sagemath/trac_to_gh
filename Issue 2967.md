@@ -6,15 +6,14 @@ archive/issues_002967.json:
     "body": "Assignee: @timabbott\n\nI've attached a patch that fixes the Debian packaging of lcalc to work with SAGE 3.0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2967\n\n",
     "created_at": "2008-04-20T04:06:51Z",
     "labels": [
-        "debian-package",
-        "major",
+        "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Debian package lcalc spkg fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2967",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2967
 
 ---
 
-archive/issue_comments_020454.json:
+archive/issue_comments_020411.json:
 ```json
 {
     "body": "Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/ticket2967/lcalc-debian-cleanup.patch) by @timabbott created at 2008-04-20 04:06:58",
     "created_at": "2008-04-20T04:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20454",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20411",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [lcalc-debian-cleanup.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_020455.json:
+archive/issue_comments_020412.json:
 ```json
 {
     "body": "Patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-20T04:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20455",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20412",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Michael
 
 ---
 
-archive/issue_comments_020456.json:
+archive/issue_comments_020413.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-20T04:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20456",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20413",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +86,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020457.json:
+archive/issue_comments_020414.json:
 ```json
 {
     "body": "Merged in Sage 3.0.rc0",
     "created_at": "2008-04-20T04:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20457",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2967#issuecomment-20414",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

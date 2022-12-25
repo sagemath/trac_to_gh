@@ -6,15 +6,13 @@ archive/issues_006597.json:
     "body": "Assignee: @robertwb\n\nCC:  sage-combinat cwitty @saliola\n\nKeywords: doctest, SetMorphism, pickling\n\nThis patch raises SetMorphism to 100% doctest, and implements equality and pickling.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6597\n\n",
     "created_at": "2009-07-23T08:51:13Z",
     "labels": [
-        "coercion",
-        "major",
-        "enhancement"
+        "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] SetMorphism: 100% doctest + equality + pickling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6597",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: @robertwb
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6597
 
 ---
 
-archive/issue_comments_054009.json:
+archive/issue_comments_053908.json:
 ```json
 {
     "body": "Changing assignee from @robertwb to @nthiery.",
     "created_at": "2009-09-02T15:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54009",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-53908",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing assignee from @robertwb to @nthiery.
 
 ---
 
-archive/issue_comments_054010.json:
+archive/issue_comments_053909.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-09-02T15:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54010",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-53909",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -69,15 +67,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_054011.json:
+archive/issue_comments_053910.json:
 ```json
 {
     "body": "Attachment [trac_6597_set_morphism_doc_pickling.patch](tarball://root/attachments/some-uuid/ticket6597/trac_6597_set_morphism_doc_pickling.patch) by @nthiery created at 2009-09-02 15:17:04",
     "created_at": "2009-09-02T15:17:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54011",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-53910",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -87,15 +85,15 @@ Attachment [trac_6597_set_morphism_doc_pickling.patch](tarball://root/attachment
 
 ---
 
-archive/issue_comments_054012.json:
+archive/issue_comments_053911.json:
 ```json
 {
     "body": "Looks good to me.  All tests pass with it once #6343 is applied to Sage 4.1.1.\n\nNote it takes awhile to build everything.",
     "created_at": "2009-09-08T19:10:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54012",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-53911",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -107,15 +105,15 @@ Note it takes awhile to build everything.
 
 ---
 
-archive/issue_comments_054013.json:
+archive/issue_comments_053912.json:
 ```json
 {
     "body": "Replying to [comment:3 mhansen]:\n> Looks good to me.  All tests pass with it once #6343 is applied to Sage 4.1.1.\n\nThanks Mike for the review!\n\n> Note it takes awhile to build everything.\n\nYeah, I had to modify the .pxd of Map (or Morphism) to get pickling to work.\n\nI am glad this will be soon in so that we don't have this patch anymore in Sage-Combinat.",
     "created_at": "2009-09-08T20:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54013",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-53912",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -134,15 +132,15 @@ I am glad this will be soon in so that we don't have this patch anymore in Sage-
 
 ---
 
-archive/issue_comments_054014.json:
+archive/issue_comments_053913.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-09T08:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6597",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-54014",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6597#issuecomment-53913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

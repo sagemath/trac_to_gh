@@ -6,15 +6,14 @@ archive/issues_003636.json:
     "body": "Assignee: @itolkov\n\nAllows adding text among the controls:\n\n\n```\n@interact\ndef _(t1=text_control(\"Factors an integer.\"), n=\"1\"):\n    print factor(Integer(n))\n```\n\n\nAdditionally, the way labels are displayed is changed. If an empty label ('') is specified, the input block is aligned with the left edge of the table, rather than the rest of the controls. This is useful for controls that should not have a label, such as text. However, if label=' ' (space) is set, the input is aligned with the rest of the inputs with no label showing.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3636\n\n",
     "created_at": "2008-07-10T21:07:58Z",
     "labels": [
-        "notebook",
-        "minor",
-        "enhancement"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Text control, no label",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3636",
-    "user": "@itolkov"
+    "user": "https://github.com/itolkov"
 }
 ```
 Assignee: @itolkov
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3636
 
 ---
 
-archive/issue_comments_025717.json:
+archive/issue_comments_025664.json:
 ```json
 {
     "body": "Attachment [trac3636_1.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_1.patch) by @itolkov created at 2008-07-10 21:10:15",
     "created_at": "2008-07-10T21:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25717",
-    "user": "@itolkov"
+    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25664",
+    "user": "https://github.com/itolkov"
 }
 ```
 
@@ -58,15 +57,15 @@ Attachment [trac3636_1.patch](tarball://root/attachments/some-uuid/ticket3636/tr
 
 ---
 
-archive/issue_comments_025718.json:
+archive/issue_comments_025665.json:
 ```json
 {
     "body": "Can you please put an example of using the control in the documentation for interact()?  The above example would work great.",
     "created_at": "2008-07-21T22:21:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25718",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25665",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -76,15 +75,15 @@ Can you please put an example of using the control in the documentation for inte
 
 ---
 
-archive/issue_comments_025719.json:
+archive/issue_comments_025666.json:
 ```json
 {
     "body": "Please remember to assign a milestone.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T22:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25719",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25666",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -98,15 +97,15 @@ Michael
 
 ---
 
-archive/issue_comments_025720.json:
+archive/issue_comments_025667.json:
 ```json
 {
     "body": "Attachment [trac3636_2.patch](tarball://root/attachments/some-uuid/ticket3636/trac3636_2.patch) by @itolkov created at 2008-07-22 20:01:39",
     "created_at": "2008-07-22T20:01:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25720",
-    "user": "@itolkov"
+    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25667",
+    "user": "https://github.com/itolkov"
 }
 ```
 
@@ -116,15 +115,15 @@ Attachment [trac3636_2.patch](tarball://root/attachments/some-uuid/ticket3636/tr
 
 ---
 
-archive/issue_comments_025721.json:
+archive/issue_comments_025668.json:
 ```json
 {
     "body": "Done.",
     "created_at": "2008-07-22T20:03:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25721",
-    "user": "@itolkov"
+    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25668",
+    "user": "https://github.com/itolkov"
 }
 ```
 
@@ -134,15 +133,15 @@ Done.
 
 ---
 
-archive/issue_comments_025722.json:
+archive/issue_comments_025669.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.1.alpha0",
     "created_at": "2008-07-30T23:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25722",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25669",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -152,15 +151,15 @@ Merged both patches in Sage 3.1.alpha0
 
 ---
 
-archive/issue_comments_025723.json:
+archive/issue_comments_025670.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-30T23:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25723",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3636#issuecomment-25670",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002284.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: f(x,y,z) = 2*x + 3*z^3 - sin(y)\nsage: f._latex_()\n'\\\\left((x, y, z) \\\\right)\\\\ {\\\\mapsto}\\\\ {3 {z}^{3} } - \\\\sin \\\\left( y\n\\\\right) + {2 x}'\n```\n\n(note the extra parens on the left of the arrow)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2284\n\n",
     "created_at": "2008-02-24T00:01:19Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002284.json:
     "title": "CallableSymbolicExpression._latex_() has some odd behavior",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2284",
-    "user": "@bobmoretti"
+    "user": "https://github.com/bobmoretti"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2284
 
 ---
 
-archive/issue_comments_015154.json:
+archive/issue_comments_015121.json:
 ```json
 {
     "body": "Also note that _latex_() does not TeX the variable names on the left:\n\n``` \t\nsage: f(omega) = omega\nsage: f._latex_()\n'omega \\\\ {\\\\mapsto}\\\\ {2 \\\\omega}'\n```\n\n\n'omega' should be '\\\\omega'.",
     "created_at": "2008-02-24T00:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15154",
-    "user": "@bobmoretti"
+    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15121",
+    "user": "https://github.com/bobmoretti"
 }
 ```
 
@@ -64,15 +64,15 @@ sage: f._latex_()
 
 ---
 
-archive/issue_comments_015155.json:
+archive/issue_comments_015122.json:
 ```json
 {
     "body": "latex fix",
     "created_at": "2008-02-24T00:35:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15155",
-    "user": "@bobmoretti"
+    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15122",
+    "user": "https://github.com/bobmoretti"
 }
 ```
 
@@ -82,15 +82,15 @@ latex fix
 
 ---
 
-archive/issue_comments_015156.json:
+archive/issue_comments_015123.json:
 ```json
 {
     "body": "Attachment [latex.hg](tarball://root/attachments/some-uuid/ticket2284/latex.hg) by @bobmoretti created at 2008-02-24 00:36:40\n\nOkay, submitted a fix; need a review.",
     "created_at": "2008-02-24T00:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15156",
-    "user": "@bobmoretti"
+    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15123",
+    "user": "https://github.com/bobmoretti"
 }
 ```
 
@@ -102,15 +102,15 @@ Okay, submitted a fix; need a review.
 
 ---
 
-archive/issue_comments_015157.json:
+archive/issue_comments_015124.json:
 ```json
 {
     "body": "Applies cleanly to 2.10.3.alpha0 and passes tests for me.",
     "created_at": "2008-02-27T23:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15157",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15124",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -120,15 +120,15 @@ Applies cleanly to 2.10.3.alpha0 and passes tests for me.
 
 ---
 
-archive/issue_comments_015158.json:
+archive/issue_comments_015125.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-28T06:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15158",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15125",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -138,15 +138,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_015159.json:
+archive/issue_comments_015126.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc0",
     "created_at": "2008-02-28T06:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2284",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15159",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2284#issuecomment-15126",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

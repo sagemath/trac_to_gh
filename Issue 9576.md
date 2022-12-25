@@ -6,15 +6,14 @@ archive/issues_009576.json:
     "body": "Assignee: jason, was\n\nKeywords: operator & for submodule intersection\n\nThere is already the operatror & for Sets intersections : S1 & S2.\n\nThere is also the operator + for submodules sum : F+G.\n\nI propose to expand the operator & over submodules and subspaces,\nand add theses lines in free_modules.py\n\n\n```\n## allow the \"intersection\" operator & for submodules.\n \n     def __and__ (self, other) : return self.intersection (other)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9576\n\n",
     "created_at": "2010-07-22T07:45:59Z",
     "labels": [
-        "linear algebra",
-        "trivial",
-        "enhancement"
+        "component: linear algebra",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "Allow the operator & for submodule intersections.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9576",
-    "user": "fmaltey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/fmaltey"
 }
 ```
 Assignee: jason, was
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9576
 
 ---
 
-archive/issue_comments_092480.json:
+archive/issue_comments_092326.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-10-16T07:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9576#issuecomment-92480",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9576#issuecomment-92326",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -62,15 +61,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_092481.json:
+archive/issue_comments_092327.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2017-10-16T07:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9576#issuecomment-92481",
-    "user": "pmenegat"
+    "url": "https://github.com/sagemath/sagetest/issues/9576#issuecomment-92327",
+    "user": "https://trac.sagemath.org/admin/accounts/users/pmenegat"
 }
 ```
 
@@ -80,15 +79,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_092482.json:
+archive/issue_comments_092328.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2017-10-16T07:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9576#issuecomment-92482",
-    "user": "@simonbrandhorst"
+    "url": "https://github.com/sagemath/sagetest/issues/9576#issuecomment-92328",
+    "user": "https://github.com/simonbrandhorst"
 }
 ```
 
@@ -98,15 +97,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_092483.json:
+archive/issue_comments_092329.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2017-10-22T17:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9576",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9576#issuecomment-92483",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9576#issuecomment-92329",
+    "user": "https://github.com/vbraun"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000330.json:
     "body": "Assignee: @williamstein\n\nA couple of functions to aid benchmarking etc. from within SAGE would be helpful. These do not need to be very feature rich or fast as the data to be dealt with is probably quite small. E.g.\n\n* 2D/3D data plotting including a legend (matplotlib ?)\n* curve fitting\n\ncould be useful.\n\nIssue created by migration from https://trac.sagemath.org/ticket/330\n\n",
     "created_at": "2007-03-22T14:22:01Z",
     "labels": [
-        "user interface",
-        "minor",
-        "enhancement"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Simple Statistics/Benchmark Support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/330",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @williamstein
@@ -34,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/330
 
 ---
 
-archive/issue_comments_001627.json:
+archive/issue_comments_001622.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-28T12:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/330#issuecomment-1627",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/330#issuecomment-1622",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -52,15 +51,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_001628.json:
+archive/issue_comments_001623.json:
 ```json
 {
     "body": "This is all in Sage now, see for example:\n\nhttp://www.informatik.uni-bremen.de/cgi-bin/cgiwrap/malb/blosxom.pl/2008/02/28\n\n. Also, curve fitting is in Sage via scipy. Marking this as `fixed`.",
     "created_at": "2008-03-28T12:19:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/330#issuecomment-1628",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/330#issuecomment-1623",
+    "user": "https://github.com/malb"
 }
 ```
 

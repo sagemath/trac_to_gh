@@ -6,15 +6,14 @@ archive/issues_006173.json:
     "body": "Assignee: tbd\n\nChange the ATLAS spkg-install so that it recognizes the SAGE_FAT_BINARY option-- which is conceptually accurate -- instead of SAGE_SIMD_MODE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6173\n\n",
     "created_at": "2009-05-31T23:56:49Z",
     "labels": [
-        "distribution",
-        "blocker",
-        "enhancement"
+        "component: distribution",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6173",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6173
 
 ---
 
-archive/issue_comments_049232.json:
+archive/issue_comments_049137.json:
 ```json
 {
     "body": "Here's the new spkg:\n\nhttp://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/atlas-3.8.3.p2.spkg",
     "created_at": "2009-06-01T00:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6173",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49232",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49137",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ http://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/atlas-3.8
 
 ---
 
-archive/issue_comments_049233.json:
+archive/issue_comments_049138.json:
 ```json
 {
     "body": "Looks good to me.\n\nMerged in 4.0.1.alpha0.",
     "created_at": "2009-06-01T02:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6173",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49233",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49138",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -69,15 +68,15 @@ Merged in 4.0.1.alpha0.
 
 ---
 
-archive/issue_comments_049234.json:
+archive/issue_comments_049139.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-01T02:06:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6173",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49234",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6173#issuecomment-49139",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

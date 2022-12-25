@@ -6,15 +6,14 @@ archive/issues_001281.json:
     "body": "Assignee: mabshoff\n\nCC:  @williamstein\n\n\n```\n[10:24] <mabshoff> I think we should change the failure message if Sage fails to compile to first check \n[10:24] <mabshoff> if it is the latest version and try that before contacting the lists\n[10:25] <williamstein> sure.  make it so.\n[10:25] <mabshoff> It should also mention to gzip up the log somewhere and post a link instead of sending \n[10:25] <mabshoff> a couple MB to 230+ people.\n[10:25] <williamstein> agreed.\n[10:25] <mabshoff> Ok, will open tichet.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1281\n\n",
     "created_at": "2007-11-26T09:30:31Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "update compilation failure message with uptodate instructions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1281",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1281
 
 ---
 
-archive/issue_comments_008032.json:
+archive/issue_comments_008009.json:
 ```json
 {
     "body": "Updates sage-spkg to ask the user to try installing the latest version of a package before asking for help.",
     "created_at": "2010-01-16T07:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8032",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8009",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -63,15 +62,15 @@ Updates sage-spkg to ask the user to try installing the latest version of a pack
 
 ---
 
-archive/issue_comments_008033.json:
+archive/issue_comments_008010.json:
 ```json
 {
     "body": "Attachment [trac_1281-update-compilation-failure.patch](tarball://root/attachments/some-uuid/ticket1281/trac_1281-update-compilation-failure.patch) by @TimDumol created at 2010-01-16 07:59:54\n\nThis patch should do the job.",
     "created_at": "2010-01-16T07:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8033",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8010",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -83,15 +82,15 @@ This patch should do the job.
 
 ---
 
-archive/issue_comments_008034.json:
+archive/issue_comments_008011.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-16T07:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8034",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8011",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -101,15 +100,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_008035.json:
+archive/issue_comments_008012.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-17T18:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8035",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8012",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -119,15 +118,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_008036.json:
+archive/issue_comments_008013.json:
 ```json
 {
     "body": "I like the general idea, but if you're not online this gives a very verbose error message.",
     "created_at": "2010-01-17T18:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8036",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8013",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -137,15 +136,15 @@ I like the general idea, but if you're not online this gives a very verbose erro
 
 ---
 
-archive/issue_comments_008037.json:
+archive/issue_comments_008014.json:
 ```json
 {
     "body": "Changing component from packages: standard to build.",
     "created_at": "2014-11-13T14:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8037",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8014",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -155,15 +154,15 @@ Changing component from packages: standard to build.
 
 ---
 
-archive/issue_comments_008038.json:
+archive/issue_comments_008015.json:
 ```json
 {
     "body": "Is there currently still an easy way to determine if Sage is up-to-date?",
     "created_at": "2015-09-16T08:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8038",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1281#issuecomment-8015",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

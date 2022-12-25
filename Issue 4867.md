@@ -6,15 +6,14 @@ archive/issues_004867.json:
     "body": "Assignee: mabshoff\n\n\n```\nsage -i gcc-4.2.1\n...\nIn file included from /usr/include/features.h:354,\n                 from /usr/include/stdio.h:28,\n                 from ../../gcc-4.2.1/gcc/tsystem.h:90,\n                 from ../../gcc-4.2.1/gcc/libgcc2.c:33:\n/usr/include/gnu/stubs.h:7:27: error: gnu/stubs-32.h: No such file or directory\nIn file included from /usr/include/features.h:354,\n                 from /usr/include/stdio.h:28,\n                 from ../../gcc-4.2.1/gcc/tsystem.h:90,\n                 from ../../gcc-4.2.1/gcc/libgcc2.c:33:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4867\n\n",
     "created_at": "2008-12-24T05:54:21Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optional gcc-4.2.1.spkg doesn't build on sage.math",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4867",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4867
 
 ---
 
-archive/issue_comments_036875.json:
+archive/issue_comments_036803.json:
 ```json
 {
     "body": "The issue here is that seemingly the 32 bit userspace bits are missing.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-24T11:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36875",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36803",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -65,15 +64,15 @@ Michael
 
 ---
 
-archive/issue_comments_036876.json:
+archive/issue_comments_036804.json:
 ```json
 {
     "body": "The issue is not that bits are missing, the problem is plainly and simply that on Ubuntu multi lib in *any* upstream gcc is broken because the Ubuntu people chose to rename\n\n```\nlib64 -> lib\nlib -> lib32\n```\n\nOne can disable multilib support and get a 64 bit gcc on sage.math that way.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-11T02:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36876",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36804",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -94,15 +93,15 @@ Michael
 
 ---
 
-archive/issue_comments_036877.json:
+archive/issue_comments_036805.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-08-13T15:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36877",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36805",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -112,15 +111,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_036878.json:
+archive/issue_comments_036806.json:
 ```json
 {
     "body": "Invalid, even just because said package doesn't exist anymore.",
     "created_at": "2013-08-13T15:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36878",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36806",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -130,15 +129,15 @@ Invalid, even just because said package doesn't exist anymore.
 
 ---
 
-archive/issue_comments_036879.json:
+archive/issue_comments_036807.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-08-13T16:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36879",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36807",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -148,15 +147,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_036880.json:
+archive/issue_comments_036808.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-08-16T11:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36880",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4867#issuecomment-36808",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

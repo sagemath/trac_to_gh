@@ -6,14 +6,13 @@ archive/issues_006103.json:
     "body": "Assignee: @jhpalmieri\n\nCC:  @jhpalmieri @antieau\n\nImplement functionality in sage to return the ZZ-graded cohomology with GF(p)-coefficients of an arbitrary simplicial complex as a module over the Steenrod algebra A(p).\n\nThis will depend on #6099, #6100, #6101, and #5882. The methodolgy will be similar to that implemented in the ticket #6102.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6103\n\n",
     "created_at": "2009-05-21T03:50:30Z",
     "labels": [
-        "algebraic topology",
-        "minor",
-        "enhancement"
+        "component: algebraic topology",
+        "minor"
     ],
     "title": "cohomology of simplicial complexes with finite coefficients as modules over steenrod algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6103",
-    "user": "@antieau"
+    "user": "https://github.com/antieau"
 }
 ```
 Assignee: @jhpalmieri

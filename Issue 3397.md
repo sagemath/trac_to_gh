@@ -6,15 +6,13 @@ archive/issues_003397.json:
     "body": "Assignee: @jhpalmieri\n\nKeywords: steenrod algebra\n\nThe attached patch adds files to sage.algebras to do Steenrod algebra calculations.  See the files for full documentation.  The only other package for this kind of thing of which I am aware is a Maple package: \n\n[http://math.scranton.edu/monks/software/Steenrod/steen.html](http://math.scranton.edu/monks/software/Steenrod/steen.html)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3397\n\n",
     "created_at": "2008-06-11T05:49:59Z",
     "labels": [
-        "algebra",
-        "major",
-        "enhancement"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] Steenrod algebra calculations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3397",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jhpalmieri
@@ -34,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3397
 
 ---
 
-archive/issue_comments_023785.json:
+archive/issue_comments_023737.json:
 ```json
 {
     "body": "Steenrod algebra calculations",
     "created_at": "2008-06-11T05:50:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23785",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23737",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -52,15 +50,15 @@ Steenrod algebra calculations
 
 ---
 
-archive/issue_comments_023786.json:
+archive/issue_comments_023738.json:
 ```json
 {
     "body": "Attachment [3397.patch](tarball://root/attachments/some-uuid/ticket3397/3397.patch) by @craigcitro created at 2008-06-15 21:17:11",
     "created_at": "2008-06-15T21:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23786",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23738",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -70,15 +68,15 @@ Attachment [3397.patch](tarball://root/attachments/some-uuid/ticket3397/3397.pat
 
 ---
 
-archive/issue_comments_023787.json:
+archive/issue_comments_023739.json:
 ```json
 {
     "body": "Changing keywords from \"steenrod algebra\" to \"steenrod algebra, editor_craigcitro\".",
     "created_at": "2008-06-15T21:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23787",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23739",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -88,15 +86,15 @@ Changing keywords from "steenrod algebra" to "steenrod algebra, editor_craigcitr
 
 ---
 
-archive/issue_comments_023788.json:
+archive/issue_comments_023740.json:
 ```json
 {
     "body": "Attachment [3397-with-odd-primes.patch](tarball://root/attachments/some-uuid/ticket3397/3397-with-odd-primes.patch) by @jhpalmieri created at 2008-07-15 18:01:56\n\nHi David,\n\nI don't know how far the review has gone, but I have the odd primary Steenrod algebras working now.  This patch replaces the old one.  There are a few other small changes, too, such as adding a 'Sq' method and a 'pst' method to the `SteenrodAlgebra` class, so you can do things like `A = SteenrodAlgebra(2); A.Sq(5,1)` to define elements.  Also, there were minor fixes and some coercion issues which I've more or less straightened out -- see the discussion here:\n[http://groups.google.com/group/sage-support/browse_frm/thread/991cc3d21feddcf4/38b6e42d29b0f3d8?lnk=gst&q=coercion#38b6e42d29b0f3d8](http://groups.google.com/group/sage-support/browse_frm/thread/991cc3d21feddcf4/38b6e42d29b0f3d8?lnk=gst&q=coercion#38b6e42d29b0f3d8)\n\nIf you've made a lot of progress on changes, etc., then ignore this, and I'll work on incorporating my changes into your version when it's ready.\n\nIf I recall our conversation from late June correctly, the main thing still to be done here is to incorporate the default basis into the definition of a Steenrod algebra, so you would say \n\n\n```\n  A = SteenrodAlgebra(2, 'milnor')\n```\n\n\nand then all elements of A will print in the Milnor basis (and similarly for other choices of basis).  Then the 'basis' method (which right now just prints a string) would be rewritten to coerce the element into a `SteenrodAlgebra` with the chosen basis, hence returning an actual element, not just printing a string. I can work on this, if you don't have the time right now.",
     "created_at": "2008-07-15T18:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23788",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23740",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -123,15 +121,15 @@ and then all elements of A will print in the Milnor basis (and similarly for oth
 
 ---
 
-archive/issue_comments_023789.json:
+archive/issue_comments_023741.json:
 ```json
 {
     "body": "I had some spare time, so I've made the following changes: from the file 'steenrod_algebra.py', I split off another file: 'steenrod_algebra_element.py' -- this seems to be the style in sage/algebras.  I also now have the bases working as described in the previous comment.\n\nThings still to be done: convert Milnor multiplication to Cython.  There are some minor coercion issues, also, which are minor enough that they don't need to be dealt with.  My previous comment has a thread describing one issue.  The other is with multiplication: if you multiply an element from `SteenrodAlgebra(2, 'milnor')` with an element from `SteenrodAlgebra(2, 'adem')`, it's not clear to me how the parent of the result is determined.  See this thread:\n[http://groups.google.com/group/sage-devel/browse_frm/thread/f223018be64680d5](http://groups.google.com/group/sage-devel/browse_frm/thread/f223018be64680d5)\n\nI also have not implemented anything of the form \n\n\n```\nwith steenrod.basis_serre_cartan:\n     blah blah blah\n```\n\n\nbut I'm not sure how important this is.  Having \n\n\n```\nA = SteenrodAlgebra(2, 'serre_cartan')\nx = Sq(2) * Sq(4)\nA(x)   # or A(Sq(2)) * A(Sq(4)),  or A.Sq(2) * A.Sq(4)\n```\n\n\nmight be good enough.\n\nI'm wondering if it is worth while defining different methods for defining elements of the Steenrod algebra, depending on the basis.\n\nOther than that, I have some more changes in mind, but they are for some time in the distant future (certainly after this has been reviewed, probably not for a while after that): implementing some other bases at odd primes, maybe implementing sub-Hopf algebras of the Steenrod algebra.",
     "created_at": "2008-07-18T15:49:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23789",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23741",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -169,15 +167,15 @@ Other than that, I have some more changes in mind, but they are for some time in
 
 ---
 
-archive/issue_comments_023790.json:
+archive/issue_comments_023742.json:
 ```json
 {
     "body": "Attachment [3397-2008-07-18.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-18.patch) by @jhpalmieri created at 2008-07-18 15:49:29",
     "created_at": "2008-07-18T15:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23790",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23742",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -187,15 +185,15 @@ Attachment [3397-2008-07-18.patch](tarball://root/attachments/some-uuid/ticket33
 
 ---
 
-archive/issue_comments_023791.json:
+archive/issue_comments_023743.json:
 ```json
 {
     "body": "REFEREE REPORT:\n\nIt is frickin' awesome that this code is going to be in Sage!!\n\nHere are some comments in order to make sure the code is absolutely the best quality.\n\nSTEENROD_ALGEBRA.PY\n\n* At the top of streenrod_algebra.py you do this:\n\n```\nr\"\"\"\nDefining the mod $p$ Steenrod algebra.\n\nAUTHORS:\n    - John H. Palmieri (2008-07-17: version 0.8)\n\nThis package defines the mod $p$ Steenrod algebra, some of its\nproperties, and ways to define elements of it.  In this package,\nelements in the Steenrod algebra are represented, by default, using\nthe Milnor basis.\n```\n\n\nCould you add a brief description here about what the Steenrod algebra is?  E.g., something like in Wikipedia that says \"More precisely, for a given prime number p, it is a graded algebra over the field Z/p, the integers modulo p. Briefly, it is the algebra of all stable cohomology operations for mod p singular cohomology. It is generated by the Steenrod reduced pth powers, or Steenrod squares if p=2. The requirements of calculations of homotopy groups mean that homological algebra over the Steenrod algebra must be considered.\"\n\n* It would be nice if this returned a NotImplementedError instead of a TypeError, since presumably it will get implemented when there is a more general version of Generators:\n\n```\nsage: A5 = SteenrodAlgebra(5); A5\nmod 5 Steenrod algebra\nsage: A5.gens()\n---------------------------------------------------------------------------\nTypeError                 \n```\n\n \n* \" The following bases have been implemented in this package.\"  I don't like the passive voice.  Could you change it to: \"In this package we implement the following bases:\"\n\n* The line\n\n```\nInternal documentation: \n```\n\nin steenrod_algebra.py should be all caps for consistency with REFERENCES, etc. \n\n* The references section(s):\n\n```\nREFERENCES:\n    [Mil] J. W. Milnor, \"The Steenrod algebra and its dual,\" Ann. of Math.\n          (2) 67 (1958), 150--171.\n    [Mon] K. G. Monks, \"Change of basis, monomial relations, and $P^s_t$\n          bases for the Steenrod algebra,\" J. Pure Appl. Algebra 125 (1998),\n          no. 1-3, 235--260. \n    [Woo] R. M. W. Wood, \"Problems in the Steenrod algebra,\" Bull. London\n          Math. Soc. 30 (1998), no. 5, 449--517. \n```\n\nwill get converted by latex to a single nasty line I think.\n\n* Just fyi you do not have to give me copyright at all if you don't want to.\n\n```\n...\n#       Copyright (C) 2008 William Stein <wstein@gmail.com>\n```\n\n\n* This seems like a bug or very bad error message to me:\n\n```\nsage: adem = SteenrodAlgebra(2, 'adem')\nsage: adem.gen(100)\n<type 'long'>\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Users/was/s/devel/sage-review/sage/algebras/<ipython console> in <module>()\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/algebras/steenrod_algebra.py in gen(self, i)\n    381             raise ValueError, \"%s is not a non-negative integer\" % i\n    382         if self.prime == 2:\n--> 383             return self.Sq(self.prime**i)\n    384         else:\n    385             if i == 0:\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/algebras/steenrod_algebra.py in Sq(self, *nums)\n    804         if self.prime == 2:\n    805             dict = {nums: 1}\n--> 806             return SteenrodAlgebraElement(dict, p=2, basis=self._basis_name)\n    807         else:\n    808             raise ValueError, \"Sq is only defined at the prime 2\"\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/algebras/steenrod_algebra_element.py in __init__(self, poly, p, basis)\n    595                     if p == 2:\n    596                         # when p=2, mono is a tuple of integers\n--> 597                         trimmed = check_and_trim(mono)\n    598                         if new_poly.has_key(trimmed):\n    599                             coeff = F(poly[mono] + new_poly[trimmed])\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/algebras/steenrod_algebra_element.py in check_and_trim(nums)\n    391         if not (isinstance(nums[i], (Integer, int)) and nums[i] >= 0):\n    392             print type(nums[i])\n--> 393             raise ValueError, \"%s is not a non-negative integer\" % nums[i]\n    394     return nums[:index]\n    395 \n\nValueError: 1267650600228229401496703205376 is not a non-negative integer\n```\n\n\n* The doctest coverage is not 100% but needs to be:\n\n```\nD-69-91-158-184:algebras was$ sage -coverage .\n...\nsteenrod_algebra.py: 100% (25 of 25)\nsteenrod_algebra_bases.py: 73% (14 of 19)\nsteenrod_algebra_element.py: 88% (44 of 50)\nsteenrod_milnor_multiplication.py: 100% (2 of 2)\nsteenrod_milnor_multiplication_odd.py: 66% (2 of 3)\n```\n\nso there are maybe some missing doctests for steenrod_algebra_bases.py and steenrod_algebra_element.py and steenrod_milnor_multiplication_odd.py.  (That said, GEES, you have an incredibly good number and quality of doctests overall in this package!  Lauditory!)\n\n* I'm guessing the TeX here is wrong:\n\n```\n        The element $Q_n0 Q_n1 ...$, given by specifying the subscripts.\n```\n\n\n* It seems like you give the full text for the different Steenrod bases twice -- once at the top of the file steenrod_algebra.py and once in the function SteenrodAlgebra.  Choose one place and refer to the other.\n\n* In the source code in steenrod_algebra.py you have this:\n\n```\n\"\"\"\nThese are the recognized basis names.  For the Milnor and Serre-Cartan\nbases, give a list of synonyms:\n\"\"\"\n\n_steenrod_milnor_basis_names = ['milnor']\n_steenrod_serre_cartan_basis_names = ['serre_cartan', 'serre-cartan', 'sc',\n                                         'adem', 'admissible']\n\n```\n\nI think the \"\"\"'d part should be replaced by comments.  At least that's what I would do. This isn't really a big deal\n\n```\n# These are the recognized basis names.  For the Milnor and Serre-Cartan\n# bases, give a list of synonyms:\n```\n\n\n\n\nSTEENROD_ALGEBRA_BASES.PY\n\n* Heh, a long list of all the bases seems to be given a third time.\n\n* Otherwise this file looks good.  Some of the comments about steenrod_algebra.py apply here, e.g., to the list of references.\n\nSTEENROD_ALGEBRA_ELEMENT.PY\n\n* The documentation for Sq says it takes as input a \"list\", but it doesn't:\n\n```\nsage: Sq([4,3])\n---------------------------------------------------------------------------\nTypeError      \n```\n\nIn fact, one would have to do\n\n```\nsage: Sq(*[4,3])\nSq(4,3)\n```\n\nor\n\n```\nsage: Sq(4,3)\nSq(4,3)\n```\n\nThis could cause confusion.  Clear things up in the docs or also allow a list as input.\n\n\nOverall positive review pending addressing the above issues.",
     "created_at": "2008-07-29T21:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23791",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23743",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -398,15 +396,15 @@ Overall positive review pending addressing the above issues.
 
 ---
 
-archive/issue_comments_023792.json:
+archive/issue_comments_023744.json:
 ```json
 {
     "body": "Thanks for all of the comments.  Two questions about doctests: if I write the gens() method so that it raises a `NotImplementedError`, how do I write a doctest for that?\n\nAlso, if I have one function nested inside another:\n\n```\ndef outer(x)\n    \"\"\"\n    lots of documentation here, including examples\n    \"\"\"\n    def inner(y)\n        return y^2 + 1\n\n    return inner(x) - 2\n```\n\nhow do I write doctests for `inner`?  That is, how do I tell sage to call inner?  I don't know how to access that function...",
     "created_at": "2008-07-30T01:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23792",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23744",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -431,15 +429,15 @@ how do I write doctests for `inner`?  That is, how do I tell sage to call inner?
 
 ---
 
-archive/issue_comments_023793.json:
+archive/issue_comments_023745.json:
 ```json
 {
     "body": "> Thanks for all of the comments. Two questions about doctests: if I write the gens() \n> method so that it raises a NotImplementedError, how do I write a doctest for that? \n\nHere is how to format exceptions for doctests:\n\n```\nsage: a = 5\nsage: a.gens()\nTraceback (most recent call last):\n...\nAttributeError: 'sage.rings.integer.Integer' object has no attribute 'gens'\n```\n\nIf you use the notebook and click on \"Text\" in the upper right, it will do this automatically with exceptions. \n\nRegarding nested functions, we should remove those from being tested by coverage.  You don't have to doctest them.  It is planned to change the coverage script to address this.",
     "created_at": "2008-07-30T12:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23793",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23745",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -464,15 +462,15 @@ Regarding nested functions, we should remove those from being tested by coverage
 
 ---
 
-archive/issue_comments_023794.json:
+archive/issue_comments_023746.json:
 ```json
 {
     "body": "Replying to [comment:6 was]:\n\n> Could you add a brief description here about what the Steenrod algebra is?  \n\nI've done this. \n\n>  * It would be nice if this returned a NotImplementedError instead of a TypeError, since presumably it will get implemented when there is a more general version of Generators:\n\nDone.\n\n>  * \" The following bases have been implemented in this package.\"  I don't like the passive voice.\n\nChanged.\n\n> \n>  * The line \"Internal documentation:\" in steenrod_algebra.py should be all caps for consistency with REFERENCES, etc. \n\nOkay.\n\n> \n>  * The references section(s) will get converted by latex to a single nasty line I think.\n\nFixed.\n\n>  * Just fyi you do not have to give me copyright at all if you don't want to.\n\nOkay, I've take you out.  (I don't care that much, but this way, people are less likely to think you wrote it, so they won't direct any technical questions about the package to you.)\n\n>  * This seems like a bug or very bad error message to me:\n\nFixed (and included a new doctest verifying this).\n\n>   * The doctest coverage is not 100% but needs to be:\n\nNow the only missing doctests are for nested functions.\n\n>  * I'm guessing the TeX here is wrong:\n> {{{\n>         The element $Q_n0 Q_n1 ...$, given by specifying the subscripts.\n> }}}\n\nFixed (along with various other little TeX problems).\n \n>  * It seems like you give the full text for the different Steenrod bases twice.\n\nNow only one time: in the docs for 'steenrod_algebra_basis', and the other places now just refer to this.\n\n> \"\"\"\n> These are the recognized basis names.  For the Milnor and Serre-Cartan\n> bases, give a list of synonyms:\n> \"\"\"\n\n> I think the \"\"\"'d part should be replaced by comments.  At least that's what I would do. This isn't really a big deal\n\nDone\n\n> STEENROD_ALGEBRA_ELEMENT.PY\n\n>  * The documentation for Sq says it takes as input a \"list\", but it doesn't:\n\nFixed the documentation.\n\n> Overall positive review pending addressing the above issues. \n\n\nOther changes: miscellaneous rewordings and TeX fixes in the documentation, and I added a few INPUT and OUTPUT blocks where they were missing before. I now have a doc patch which inserts relevant sections into the reference manual, and running this through the reference manual helped me to find various TeX errors.  I found one pretty serious bug in steenrod_algebra_bases.convert_to_milnor_matrix, and fixed that.  (The only other changes in the actual code, as opposed to the documentation: (1)  I found one little function which I had written twice, once in the elements file and once in the bases file, so now I just have one and import it in the other.  (2) In steenrod_algebra_bases, I was using a `@`memoize decorator, but it was messing up my docstrings, so I now do the memoization by hand, by explicitly defining dictionaries in which to cache things.)",
     "created_at": "2008-07-31T03:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23794",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23746",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -547,15 +545,15 @@ Other changes: miscellaneous rewordings and TeX fixes in the documentation, and 
 
 ---
 
-archive/issue_comments_023795.json:
+archive/issue_comments_023747.json:
 ```json
 {
     "body": "doc patch: add Steenrod algebra stuff to reference manual",
     "created_at": "2008-07-31T03:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23795",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23747",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -565,15 +563,15 @@ doc patch: add Steenrod algebra stuff to reference manual
 
 ---
 
-archive/issue_comments_023796.json:
+archive/issue_comments_023748.json:
 ```json
 {
     "body": "Attachment [3397-2008-07-30-doc.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-30-doc.patch) by @jhpalmieri created at 2008-07-31 03:25:33\n\nnew version of Steenrod algebra package, incorporating changes suggested by was",
     "created_at": "2008-07-31T03:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23796",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23748",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -585,15 +583,15 @@ new version of Steenrod algebra package, incorporating changes suggested by was
 
 ---
 
-archive/issue_comments_023797.json:
+archive/issue_comments_023749.json:
 ```json
 {
     "body": "Attachment [3397-2008-07-30-main.patch](tarball://root/attachments/some-uuid/ticket3397/3397-2008-07-30-main.patch) by @williamstein created at 2008-08-10 04:27:02",
     "created_at": "2008-08-10T04:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23797",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23749",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -603,15 +601,15 @@ Attachment [3397-2008-07-30-main.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_023798.json:
+archive/issue_comments_023750.json:
 ```json
 {
     "body": "Attachment [sage-3397-apply_after-3397-2008-07-30-main.patch](tarball://root/attachments/some-uuid/ticket3397/sage-3397-apply_after-3397-2008-07-30-main.patch) by @williamstein created at 2008-08-10 04:45:53\n\nExcellent.  Positive review.  This is ready to go in!\n\nI added a small patch that changes LaTeX to latex, and fixes a few latex typos. \n\nMabshoff, to apply this apply:\n\n* 3397-2008-07-30-doc.patch \n* 3397-2008-07-30-main.patch\n* sage-3397-apply_after-3397-2008-07-30-main.patch",
     "created_at": "2008-08-10T04:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23798",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23750",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -631,15 +629,15 @@ Mabshoff, to apply this apply:
 
 ---
 
-archive/issue_comments_023799.json:
+archive/issue_comments_023751.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-10T08:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23799",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23751",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -649,15 +647,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_023800.json:
+archive/issue_comments_023752.json:
 ```json
 {
     "body": "Merged the above patches as William suggested in Sage 3.1.alpha1",
     "created_at": "2008-08-10T08:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23800",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3397#issuecomment-23752",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

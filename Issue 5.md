@@ -6,15 +6,14 @@ archive/issues_000005.json:
     "body": "Assignee: somebody\n\nCurrently I need to switch between my keyboard and mouse a lot to operate the notebook, especially when using it for development. For example, I would like to be able to restart the server without going for the mouse. There should be a way of assigning keyboard shortcuts.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5\n\n",
     "created_at": "2006-09-12T00:45:22Z",
     "labels": [
-        "basic arithmetic",
-        "minor",
-        "enhancement"
+        "component: basic arithmetic",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "full keyboard mode for notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -38,7 +37,7 @@ archive/issue_comments_000016.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5#issuecomment-16",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -56,7 +55,7 @@ archive/issue_comments_000017.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5#issuecomment-17",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -74,7 +73,7 @@ archive/issue_comments_000018.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5#issuecomment-18",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -92,7 +91,7 @@ archive/issue_comments_000019.json:
     "issue": "https://github.com/sagemath/sagetest/issues/5",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/5#issuecomment-19",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 

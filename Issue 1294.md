@@ -6,7 +6,7 @@ archive/issues_001294.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: v=vector(QQ,[1,2,3])\nsage: v.n()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/devel/sage-main/sage/graphs/<ipython console> in <module>()\n\n/home/grout/sage/devel/sage-main/sage/graphs/element.pyx in sage.structure.element.Element.n()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/functional.py in numerical_approx(x, prec, digits)\n    731             return sage.rings.real_mpfr.RealField(prec)(x)\n    732         except TypeError:\n--> 733             return sage.rings.complex_field.ComplexField(prec)(x)\n    734\n    735 n = numerical_approx\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/rings/complex_field.py in __call__(self, x, im)\n    179             except AttributeError:\n    180                 pass\n--> 181         return complex_number.ComplexNumber(self, x, im)\n    182\n    183     def _coerce_impl(self, x):\n\n/home/grout/sage/devel/sage-main/sage/graphs/complex_number.pyx in sage.rings.complex_number.ComplexNumber.__init__()\n\n<type 'exceptions.TypeError'>: unable to coerce to a ComplexNumber\n```\n\n\nI'm not sure what it should do, but maybe call n() on each entry would make sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1294\n\n",
     "created_at": "2007-11-27T23:13:24Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001294.json:
     "title": "v.n() function blows up when v is a vector",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1294",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -60,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1294
 
 ---
 
-archive/issue_comments_008126.json:
+archive/issue_comments_008103.json:
 ```json
 {
     "body": "Attachment [1294.patch](tarball://root/attachments/some-uuid/ticket1294/1294.patch) by @mwhansen created at 2007-12-22 10:44:33",
     "created_at": "2007-12-22T10:44:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1294",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8126",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8103",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -78,15 +78,15 @@ Attachment [1294.patch](tarball://root/attachments/some-uuid/ticket1294/1294.pat
 
 ---
 
-archive/issue_comments_008127.json:
+archive/issue_comments_008104.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-22T10:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1294",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8127",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8104",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -96,15 +96,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_008128.json:
+archive/issue_comments_008105.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-22T10:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1294",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8128",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8105",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -114,15 +114,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_008129.json:
+archive/issue_comments_008106.json:
 ```json
 {
     "body": "Frustrating that the same snippet of code is duplicated, but this is the correct way to fix this.  Apply.",
     "created_at": "2008-01-20T06:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1294",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8129",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8106",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -132,15 +132,15 @@ Frustrating that the same snippet of code is duplicated, but this is the correct
 
 ---
 
-archive/issue_comments_008130.json:
+archive/issue_comments_008107.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha1",
     "created_at": "2008-01-21T05:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1294",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8130",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8107",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -150,15 +150,15 @@ Merged in Sage 2.10.1.alpha1
 
 ---
 
-archive/issue_comments_008131.json:
+archive/issue_comments_008108.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-21T05:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1294",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8131",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1294#issuecomment-8108",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

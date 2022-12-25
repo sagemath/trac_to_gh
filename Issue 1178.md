@@ -6,15 +6,14 @@ archive/issues_001178.json:
     "body": "Assignee: Bill Hart\n\nHello,\n\nthe problem was reported by Klas Heggemann. See\n\nhttp://groups.google.com/group/sage-devel/t/b35f8758cd98fad6\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1178\n\n",
     "created_at": "2007-11-15T15:51:45Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "flint in 2.8.12 fails on Solaris 10: u_int16_t undefined",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1178",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: Bill Hart
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1178
 
 ---
 
-archive/issue_comments_007277.json:
+archive/issue_comments_007255.json:
 ```json
 {
     "body": "FLINT 1.0 works on Solaris 9 when I define\n\n```\ntypedef unsigned int            uint32_t;\ntypedef unsigned long long      u_int64_t;\n```\n\nin `stdint.h`\n\nCheers,\n\nMichael",
     "created_at": "2007-12-06T20:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1178",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7277",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7255",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -66,15 +65,15 @@ Michael
 
 ---
 
-archive/issue_comments_007278.json:
+archive/issue_comments_007256.json:
 ```json
 {
     "body": "This has been fixed a while ago. So close it.",
     "created_at": "2008-01-28T05:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1178",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7278",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7256",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -84,15 +83,15 @@ This has been fixed a while ago. So close it.
 
 ---
 
-archive/issue_comments_007279.json:
+archive/issue_comments_007257.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-28T05:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1178",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7279",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1178#issuecomment-7257",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

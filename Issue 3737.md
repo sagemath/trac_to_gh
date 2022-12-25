@@ -6,7 +6,7 @@ archive/issues_003737.json:
     "body": "Assignee: failure\n\nKeywords: latex, verbatim, backslash\n\nI would like to include lines like these in tut.tex:\n\n```\n\\begin{verbatim}\nsage: A = Matrix([[1,2,3],[3,2,1],[1,1,1]])\nsage: Y = vector([0,-4,-1])\nsage: A \\ Y\n(-2, 1, 0)\n\\end{verbatim}\n```\n\nWhen I include these, doctesting fails on tut.tex, giving an error about something 500 lines away, and giving an error after half a second, whereas if these lines are removed, doctesting finishes successfully in about 30 seconds. \n\nI would guess that the problem is the backslash in the verbatim environment.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3737\n\n",
     "created_at": "2008-07-29T03:47:59Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003737.json:
     "title": "backslash in verbatim environment in tut.tex breaks doctest",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3737",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: failure
@@ -46,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3737
 
 ---
 
-archive/issue_comments_026523.json:
+archive/issue_comments_026466.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-19T07:10:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26523",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26466",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -64,15 +64,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_026524.json:
+archive/issue_comments_026467.json:
 ```json
 {
     "body": "Changing assignee from failure to @mwhansen.",
     "created_at": "2008-09-19T07:10:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26524",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26467",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -82,15 +82,15 @@ Changing assignee from failure to @mwhansen.
 
 ---
 
-archive/issue_comments_026525.json:
+archive/issue_comments_026468.json:
 ```json
 {
     "body": "This might become moot with the Sphinx versions of the documentation -- I noticed that the new version of the tutorial at [http://sage.math.washington.edu/home/mhansen/doc-sphinx/](http://sage.math.washington.edu/home/mhansen/doc-sphinx/) includes an example like the one above, so if doctesting and the live version work, then once the Sphinx versions are the official documentation for the distribution, we can consider this issue solved.",
     "created_at": "2008-09-19T14:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26525",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26468",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -100,15 +100,15 @@ This might become moot with the Sphinx versions of the documentation -- I notice
 
 ---
 
-archive/issue_comments_026526.json:
+archive/issue_comments_026469.json:
 ```json
 {
     "body": "Yep, this is fine in the Sphinx documentation.",
     "created_at": "2009-01-24T10:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26526",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26469",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -118,15 +118,15 @@ Yep, this is fine in the Sphinx documentation.
 
 ---
 
-archive/issue_comments_026527.json:
+archive/issue_comments_026470.json:
 ```json
 {
     "body": "This can be closed.",
     "created_at": "2009-02-21T23:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26527",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26470",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -136,15 +136,15 @@ This can be closed.
 
 ---
 
-archive/issue_comments_026528.json:
+archive/issue_comments_026471.json:
 ```json
 {
     "body": "Fixed by the ReST merge in 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T19:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26528",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26471",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -158,15 +158,15 @@ Michael
 
 ---
 
-archive/issue_comments_026529.json:
+archive/issue_comments_026472.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-24T19:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26529",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3737#issuecomment-26472",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004596.json:
     "body": "Assignee: @craigcitro\n\nSee trac #1932 ... the time has come to delete `sha.py` already. Just merge `trac-1932-pt2.patch` from that ticket.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4596\n\n",
     "created_at": "2008-11-23T07:52:23Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] delete sha.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4596",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4596
 
 ---
 
-archive/issue_comments_034467.json:
+archive/issue_comments_034400.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-23T08:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4596",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4596#issuecomment-34467",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4596#issuecomment-34400",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -47,15 +46,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_034468.json:
+archive/issue_comments_034401.json:
 ```json
 {
     "body": "Attachment [trac-4596.patch](tarball://root/attachments/some-uuid/ticket4596/trac-4596.patch) by mabshoff created at 2008-11-23 08:03:18\n\nMerged in Sage 3.2.1.alpha0",
     "created_at": "2008-11-23T08:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4596",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4596#issuecomment-34468",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4596#issuecomment-34401",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

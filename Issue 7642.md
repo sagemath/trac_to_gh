@@ -6,14 +6,12 @@ archive/issues_007642.json:
     "body": "Assignee: sage-combinat\n\nKeywords: lca suffix_tree\n\nI have implemented the linear time preprocessing, constant-time queries algorithm for the lowest common ancestor (LCA) in the context of the suffix trees for words.\n\nThe only thing I'm not very sure about is where to place the bit manipulation functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7642\n\n",
     "created_at": "2009-12-09T18:43:15Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "title": "Add an implementation of LCA to sage.combinat.words.suffix_trees",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7642",
-    "user": "abergeron"
+    "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"
 }
 ```
 Assignee: sage-combinat
@@ -32,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7642
 
 ---
 
-archive/issue_comments_065315.json:
+archive/issue_comments_065199.json:
 ```json
 {
     "body": "Attachment [trac_7642.patch](tarball://root/attachments/some-uuid/ticket7642/trac_7642.patch) by abergeron created at 2009-12-09 18:45:24",
     "created_at": "2009-12-09T18:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7642",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65315",
-    "user": "abergeron"
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65199",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"
 }
 ```
 
@@ -50,15 +48,15 @@ Attachment [trac_7642.patch](tarball://root/attachments/some-uuid/ticket7642/tra
 
 ---
 
-archive/issue_comments_065316.json:
+archive/issue_comments_065200.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-09T18:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7642",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65316",
-    "user": "abergeron"
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65200",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"
 }
 ```
 
@@ -68,15 +66,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_065317.json:
+archive/issue_comments_065201.json:
 ```json
 {
     "body": "Several comments about this patch :\n\n* leftmost_one naturally fails on 0, as it computes a logarithm... Shouldn't this be documented, or the exception handled inside the function, to return something like -1 ?\n\n* bits_left_of seems to me a bit vague for what the function does... What would you think of leftmost_bits ? The docstring could be more explicit, like : substracts from x the leftmost i bits in its \"base-2 expression\" (I do not know how this is said in english) :-)\n  Same remark for bits_right_of\n\n* I have no idea of what a MSB is, and could find its definition nowhere. Could you at least write its full name ? ( samek remark for lca, which appears very often in the docstrings )\n\n* I think you should define _ldata inside of the __init__ function\n\n* I am not a big fan of your algorithm = best argument in LCA. The user is bound to know if the tree has been preprocessed, as he has to call it himself. I think it is just a sourc e of silent failures to use the \"fast\" algorithm.\n\nWhat you are doing in this patch is out of my field, so my remarks could just come from this. I thought it would just be an algorithm on trees, but many details not being explicit in the docstrings, it is difficult for me to fill the holes... :-)\n\nNathann",
     "created_at": "2010-02-07T08:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7642",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65317",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65201",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -101,15 +99,15 @@ Nathann
 
 ---
 
-archive/issue_comments_065318.json:
+archive/issue_comments_065202.json:
 ```json
 {
     "body": "Has this been checked on Solaris?\n\nThere's general information about building on Solaris at\n\n http://wiki.sagemath.org/solaris\n\nInformation specifically for 't2' at\n\n http://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nBoth the source (4.3.0.1 is the latest to build on Solaris) and a binary which will run on any SPARC can be found at http://www.sagemath.org/download-source.html\n\nDave",
     "created_at": "2010-02-21T23:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7642",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65318",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65202",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -131,15 +129,15 @@ Dave
 
 ---
 
-archive/issue_comments_065319.json:
+archive/issue_comments_065203.json:
 ```json
 {
     "body": "Remove assignee sage-combinat.",
     "created_at": "2010-02-21T23:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7642",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65319",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65203",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -149,15 +147,15 @@ Remove assignee sage-combinat.
 
 ---
 
-archive/issue_comments_065320.json:
+archive/issue_comments_065204.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-09T16:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7642",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65320",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7642#issuecomment-65204",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 

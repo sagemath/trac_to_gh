@@ -6,7 +6,7 @@ archive/issues_008548.json:
     "body": "Assignee: sage-combinat\n\nObviously, the instructions\n\n```\npp = Permutation([3, 1, 2])\npp.hyperoctahedral_double_coset_type()\n```\n\nlead to an error because the permutation has an odd size. However, there is an error in the raised error message : \n\n```\nNameError: global name 'p' is not defined\n```\n\nThe string should be\n\n```\nValueError: pp is a permutation of odd size and has no coset-type\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8548\n\n",
     "created_at": "2010-03-16T16:21:26Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008548.json:
     "title": "Permutation : a bad error message in hyperoctahedral_double_coset_type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8548",
-    "user": "giraudo"
+    "user": "https://trac.sagemath.org/admin/accounts/users/giraudo"
 }
 ```
 Assignee: sage-combinat
@@ -47,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8548
 
 ---
 
-archive/issue_comments_077295.json:
+archive/issue_comments_077168.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-16T16:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77295",
-    "user": "giraudo"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77168",
+    "user": "https://trac.sagemath.org/admin/accounts/users/giraudo"
 }
 ```
 
@@ -65,15 +65,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_077296.json:
+archive/issue_comments_077169.json:
 ```json
 {
     "body": "Attachment [trac_8548_error_msg_permutation-sg.patch](tarball://root/attachments/some-uuid/ticket8548/trac_8548_error_msg_permutation-sg.patch) by giraudo created at 2010-03-16 16:37:33",
     "created_at": "2010-03-16T16:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77296",
-    "user": "giraudo"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77169",
+    "user": "https://trac.sagemath.org/admin/accounts/users/giraudo"
 }
 ```
 
@@ -83,15 +83,15 @@ Attachment [trac_8548_error_msg_permutation-sg.patch](tarball://root/attachments
 
 ---
 
-archive/issue_comments_077297.json:
+archive/issue_comments_077170.json:
 ```json
 {
     "body": "Changing status from closed to needs_work.",
     "created_at": "2010-03-16T16:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77297",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77170",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -101,15 +101,15 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_comments_077298.json:
+archive/issue_comments_077171.json:
 ```json
 {
     "body": "Samuele,\n\nThanks for catching this problem and submitting a patch!  However, you should not close tickets--that is for the release manager.  See [http://sagemath.org/doc/developer/trac.html](http://sagemath.org/doc/developer/trac.html) for more detail on the process.",
     "created_at": "2010-03-16T16:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77298",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77171",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -121,15 +121,15 @@ Thanks for catching this problem and submitting a patch!  However, you should no
 
 ---
 
-archive/issue_comments_077299.json:
+archive/issue_comments_077172.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-16T16:48:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77299",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77172",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -139,15 +139,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_077300.json:
+archive/issue_comments_077173.json:
 ```json
 {
     "body": "Hi Samuele,\n\nYou're able to fix problems that as not yet in sage ! Impressive :-) See #8420 where the problem should be solve. \n\nFor the release manager: please close this as a duplicate.",
     "created_at": "2010-03-21T22:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77300",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77173",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -161,15 +161,15 @@ For the release manager: please close this as a duplicate.
 
 ---
 
-archive/issue_comments_077301.json:
+archive/issue_comments_077174.json:
 ```json
 {
     "body": "Close as fixed by #8420.",
     "created_at": "2010-04-19T03:07:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77301",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8548#issuecomment-77174",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

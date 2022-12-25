@@ -6,15 +6,14 @@ archive/issues_009958.json:
     "body": "Assignee: tbd\n\nCC:  @qed777 @jdemeyer @nexttime\n\nI still am getting the known behavior below when exiting Sage.\n\n```\nExiting Sage (CPU time 0m0.74s, Wall time 11m11.95s). \nExiting spawned GP/PARI interpreter process. \n```\n\nIt's not exactly a bug, but it's also annoying and potentially \nconfusing to a non-Pari user.  We should stop it.\n\nThis is with 4.6.alpha1.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9959\n\n",
     "created_at": "2010-09-21T13:36:14Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Get Pari to stop starting automatically",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9958",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: tbd
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9959
 
 ---
 
-archive/issue_comments_099625.json:
+archive/issue_comments_099460.json:
 ```json
 {
     "body": "Oh, I thought you just meant \"GP/PARI\" should read \"PARI/GP\"...",
     "created_at": "2010-09-21T14:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99625",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99460",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -59,15 +58,15 @@ Oh, I thought you just meant "GP/PARI" should read "PARI/GP"...
 
 ---
 
-archive/issue_comments_099626.json:
+archive/issue_comments_099461.json:
 ```json
 {
     "body": "So how do we manage this?\n\nRewrite the class `sage.interfaces.gp.Gp` to lazily start the interpreter, or initialize `sage.interfaces.gp.gp` to `None` and explicitly do `gp = Gp()` everywhere it is used unless `gp != None`?",
     "created_at": "2010-09-21T14:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99626",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99461",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -79,15 +78,15 @@ Rewrite the class `sage.interfaces.gp.Gp` to lazily start the interpreter, or in
 
 ---
 
-archive/issue_comments_099627.json:
+archive/issue_comments_099462.json:
 ```json
 {
     "body": "I believe this in `Gp.__init__` is the culprit:\n\n```\n# gp starts up with this set to 1, which makes pexpect hang: \nself.set_default('breakloop',0)\n```\n\n\nIf this is the case, an easy solution is to add a patch to the pari spkg to set breakloop to 0 by default.",
     "created_at": "2010-09-21T20:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99627",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99462",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -105,15 +104,15 @@ If this is the case, an easy solution is to add a patch to the pari spkg to set 
 
 ---
 
-archive/issue_comments_099628.json:
+archive/issue_comments_099463.json:
 ```json
 {
     "body": "Replying to [comment:1 leif]:\n> Oh, I thought you just meant \"GP/PARI\" should read \"PARI/GP\"...\nThis should also be changed.",
     "created_at": "2010-09-21T20:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99628",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99463",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -125,15 +124,15 @@ This should also be changed.
 
 ---
 
-archive/issue_comments_099629.json:
+archive/issue_comments_099464.json:
 ```json
 {
     "body": "Replying to [comment:3 jdemeyer]:\n> I believe this in `Gp.__init__` is the culprit:\n\n```\n# gp starts up with this set to 1, which makes pexpect hang: \nself.set_default('breakloop',0)\n```\n\n\nGood catch. I read this a dozen times without noticing that this actually calls `gp`... 8/\n\n> If this is the case, an easy solution is to add a patch to the pari spkg to set breakloop to 0 by default.\n\nTry it...",
     "created_at": "2010-09-21T20:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99629",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99464",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -156,15 +155,15 @@ Try it...
 
 ---
 
-archive/issue_comments_099630.json:
+archive/issue_comments_099465.json:
 ```json
 {
     "body": "Attachment [9959_rename_pari_gp.patch](tarball://root/attachments/some-uuid/ticket9959/9959_rename_pari_gp.patch) by @jdemeyer created at 2010-09-21 21:27:25\n\nRenames \"GP/PARI\" to \"PARI/GP\"",
     "created_at": "2010-09-21T21:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99630",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99465",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -176,15 +175,15 @@ Renames "GP/PARI" to "PARI/GP"
 
 ---
 
-archive/issue_comments_099631.json:
+archive/issue_comments_099466.json:
 ```json
 {
     "body": "New spkg for testing: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p8.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p8.spkg)",
     "created_at": "2010-09-21T21:51:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99631",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99466",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -194,15 +193,15 @@ New spkg for testing: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2
 
 ---
 
-archive/issue_comments_099632.json:
+archive/issue_comments_099467.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-21T22:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99632",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99467",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -212,15 +211,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_099633.json:
+archive/issue_comments_099468.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-09-21T22:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99633",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99468",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -230,15 +229,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_099634.json:
+archive/issue_comments_099469.json:
 ```json
 {
     "body": "Wow, *a lot* of places where \"GP/PARI\" had to be changed... (well done)\n\nWe have two similar instances in the scripts repo:\n\n```\nlocal/bin/sage-sage:    echo \"  -gp <..>      -- run Sage's GP (Pari) with given arguments\"\nlocal/bin/sage-sage.py:                     help=\"run Sage's GP (Pari), passing it all remaining arguments\")\n```\n\nBut I think we don't need to change these on this ticket.\n\nPatches look fine, will test them later (with the new spkg of course).",
     "created_at": "2010-09-21T22:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99634",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99469",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -259,15 +258,15 @@ Patches look fine, will test them later (with the new spkg of course).
 
 ---
 
-archive/issue_comments_099635.json:
+archive/issue_comments_099470.json:
 ```json
 {
     "body": "The spkg's changelog entry (and `patches/README.txt`) could describe the reason for patching `default.c` a bit more. (The ticket number is only in the commit message.)",
     "created_at": "2010-09-22T17:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99635",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99470",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -277,15 +276,15 @@ The spkg's changelog entry (and `patches/README.txt`) could describe the reason 
 
 ---
 
-archive/issue_comments_099636.json:
+archive/issue_comments_099471.json:
 ```json
 {
     "body": "s|and|and/or|",
     "created_at": "2010-09-22T17:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99636",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99471",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -295,15 +294,15 @@ s|and|and/or|
 
 ---
 
-archive/issue_comments_099637.json:
+archive/issue_comments_099472.json:
 ```json
 {
     "body": "OK, so I was the one who put in those two breakloop calls, which I only did since otherwise things did not work properly -- but in the testing I just did I found it only necessary to delete the brealoop call in `__init__`, while keeping the one in `_start`.  Are you both sure that it is safe to delete the one in `_start` as well?  Does that not cause gp to enter the breakloop on encountering an error, which is not what you want?\n\nIf you are right (and I assumed that you did test this!) then I am wondering what else has changed, since when we started the pari upgrade it was definitely necessary to deal with this.\n\nAnd by the way, the *only* reason I created a `_start` function for Gp different from the default one in PExpect was to add this line in `_start`;  so if that line is not needed, you can probably delete the while `_start` function for class Gp.",
     "created_at": "2010-09-22T20:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99637",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99472",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -317,15 +316,15 @@ And by the way, the *only* reason I created a `_start` function for Gp different
 
 ---
 
-archive/issue_comments_099638.json:
+archive/issue_comments_099473.json:
 ```json
 {
     "body": "I haven't come to testing yet... (including a closer look at the relevant PARI sources).\n\nIt should at least not hurt to keep the second `set_default('breakloop',0)` in `Gp._start()`.",
     "created_at": "2010-09-22T21:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99638",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99473",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -337,15 +336,15 @@ It should at least not hurt to keep the second `set_default('breakloop',0)` in `
 
 ---
 
-archive/issue_comments_099639.json:
+archive/issue_comments_099474.json:
 ```json
 {
     "body": "Replying to [comment:12 leif]:\n> It should at least not hurt to keep the second `set_default('breakloop',0)` in `Gp._start()`.\n\nAs far as I can see, we don't need it there, since `gp` will of course (re)start with the hard-coded defaults whenever `_start()` is called.\n\n(This is different to setting it \"manually\" from the Expect interface each time `gp` is [re]started.) \n\nSo we can IMHO drop `Gp._start()` completely, as John noted.",
     "created_at": "2010-09-22T22:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99639",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99474",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -362,15 +361,15 @@ So we can IMHO drop `Gp._start()` completely, as John noted.
 
 ---
 
-archive/issue_comments_099640.json:
+archive/issue_comments_099475.json:
 ```json
 {
     "body": "Replying to [comment:11 cremona]:\n> Are you both sure that it is safe to delete the one in `_start` as well?  Does that not cause gp to enter the breakloop on encountering an error, which is not what you want?\n\nThe new spkg patches the `gp` source code to disable the breakloop by default, so we can remove all references to `breakloop` from Sage.  Note also that the patch [attachment:9959_gp_error_doctest.patch] actually acts a doctest to check this.",
     "created_at": "2010-09-23T07:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99640",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99475",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -383,15 +382,15 @@ The new spkg patches the `gp` source code to disable the breakloop by default, s
 
 ---
 
-archive/issue_comments_099641.json:
+archive/issue_comments_099476.json:
 ```json
 {
     "body": "Don't set the 'breakloop' default in Sage",
     "created_at": "2010-09-23T07:47:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99641",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99476",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -401,15 +400,15 @@ Don't set the 'breakloop' default in Sage
 
 ---
 
-archive/issue_comments_099642.json:
+archive/issue_comments_099477.json:
 ```json
 {
     "body": "Attachment [9959_gp_error_doctest.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gp_error_doctest.patch) by @jdemeyer created at 2010-09-23 07:47:39\n\nAdd doctest for error recovery",
     "created_at": "2010-09-23T07:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99642",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99477",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -421,15 +420,15 @@ Add doctest for error recovery
 
 ---
 
-archive/issue_comments_099643.json:
+archive/issue_comments_099478.json:
 ```json
 {
     "body": "Replying to [comment:11 cremona]:\n> And by the way, the *only* reason I created a `_start` function for Gp different from the default one in PExpect was to add this line in `_start`;  so if that line is not needed, you can probably delete the while `_start` function for class Gp.\n\nDone",
     "created_at": "2010-09-23T07:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99643",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99478",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -442,15 +441,15 @@ Done
 
 ---
 
-archive/issue_comments_099644.json:
+archive/issue_comments_099479.json:
 ```json
 {
     "body": "It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.",
     "created_at": "2010-09-23T08:27:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99644",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99479",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -460,15 +459,15 @@ It's a pity that we had to patch the gp source code -- clearly that was an optio
 
 ---
 
-archive/issue_comments_099645.json:
+archive/issue_comments_099480.json:
 ```json
 {
     "body": "Attachment [pari.p8.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p8.patch) by @jdemeyer created at 2010-09-23 08:31:20\n\nPatch for the PARI spkg .p7 to .p8 (for review)",
     "created_at": "2010-09-23T08:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99645",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99480",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -480,15 +479,15 @@ Patch for the PARI spkg .p7 to .p8 (for review)
 
 ---
 
-archive/issue_comments_099646.json:
+archive/issue_comments_099481.json:
 ```json
 {
     "body": "Replying to [comment:16 cremona]:\n> It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.\n\nIf one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.",
     "created_at": "2010-09-23T08:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99646",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99481",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -501,15 +500,15 @@ If one would add an option to `gp`, add an option for non-interactive (script) u
 
 ---
 
-archive/issue_comments_099647.json:
+archive/issue_comments_099482.json:
 ```json
 {
     "body": "Replying to [comment:17 jdemeyer]:\n> Replying to [comment:16 cremona]:\n> > It's a pity that we had to patch the gp source code -- clearly that was an option right from the start, and what I did was to avoid that.  Best (in my opinion) would be if gp had a command-line option to turn off the breakloop default, since Sage could easily use that.  It might be worth suggesting that possibility upstream.\n> \n> If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.\n\nI suppose that from their point of view it makes no sense to use gp non-interactively, since gp is the interactive interface to the pari library!",
     "created_at": "2010-09-23T08:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99647",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99482",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -525,15 +524,15 @@ I suppose that from their point of view it makes no sense to use gp non-interact
 
 ---
 
-archive/issue_comments_099648.json:
+archive/issue_comments_099483.json:
 ```json
 {
     "body": "**Alternative solution**:\n\nWhen `gp` starts, it reads a configuration file (by default, `$HOME/.gprc`).  If the environment variable `$GPRC` is set, it uses that as a filename for the `.gprc` file.  We could create a file `$HOME/.sage/gp/gprc` similarly to `$HOME/.sage/ipyhton/ipythonrc` and have Sage set `$GPRC` to that location.\n\nThen, the file `$HOME/.sage/gp/gprc` should contain a line:\n\n```\nbreakloop =  0\n```\n",
     "created_at": "2010-09-23T09:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99648",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99483",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -552,15 +551,15 @@ breakloop =  0
 
 ---
 
-archive/issue_comments_099649.json:
+archive/issue_comments_099484.json:
 ```json
 {
     "body": "Replying to [comment:18 cremona]:\n> I suppose that from their point of view it makes no sense to use gp non-interactively, since gp is the interactive interface to the pari library!\n\nGood point :-)",
     "created_at": "2010-09-23T09:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99649",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99484",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -573,15 +572,15 @@ Good point :-)
 
 ---
 
-archive/issue_comments_099650.json:
+archive/issue_comments_099485.json:
 ```json
 {
     "body": "Replying to [comment:19 jdemeyer]:\n> **Alternative solution**:\n> \n> When `gp` starts, it reads a configuration file (by default, `$HOME/.gprc`).  If the environment variable `$GPRC` is set, it uses that as a filename for the `.gprc` file.  We could create a file `$HOME/.sage/gp/gprc` similarly to `$HOME/.sage/ipyhton/ipythonrc` and have Sage set `$GPRC` to that location.\n> \n> Then, the file `$HOME/.sage/gp/gprc` should contain a line:\n\n```\nbreakloop =  0\n```\n\n\nI was just going to suggest that, too.\n\nNote that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.",
     "created_at": "2010-09-23T09:07:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99650",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99485",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -605,15 +604,15 @@ Note that we should have two of them, one for the interactive `gp` provided by S
 
 ---
 
-archive/issue_comments_099651.json:
+archive/issue_comments_099486.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-23T09:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99651",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99486",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -623,15 +622,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_099652.json:
+archive/issue_comments_099487.json:
 ```json
 {
     "body": "Replying to [comment:21 leif]:\n> Note that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.\n\nI think we need only one, for the pexpect interface.  I would prefer `sage -gp` to use my `$HOME/.gprc`.\n\nSetting this to needs_work to implement the alternative solution.",
     "created_at": "2010-09-23T09:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99652",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99487",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -646,15 +645,15 @@ Setting this to needs_work to implement the alternative solution.
 
 ---
 
-archive/issue_comments_099653.json:
+archive/issue_comments_099488.json:
 ```json
 {
     "body": "Replying to [comment:17 jdemeyer]:\n> If one would add an option to `gp`, add an option for non-interactive (script) use which would also disable `breakloop` by default.  I remember I proposed this (a long time ago) to the PARI/GP developers without much success.\n\nPerhaps they meanwhile chnaged their minds.. ;-)\n\nThere's some stuff in it for using `gp` from Emacs or TeXmacs, but only as a *compile time* option IIRC. Also some kind of \"non-interactive\" `gp` use.",
     "created_at": "2010-09-23T09:12:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99653",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99488",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -669,15 +668,15 @@ There's some stuff in it for using `gp` from Emacs or TeXmacs, but only as a *co
 
 ---
 
-archive/issue_comments_099654.json:
+archive/issue_comments_099489.json:
 ```json
 {
     "body": "Replying to [comment:22 jdemeyer]:\n> Replying to [comment:21 leif]:\n> > Note that we should have two of them, one for the interactive `gp` provided by Sage, and one for the `pexpect` interface.\n> \n> I think we need only one, for the pexpect interface.  I would prefer `sage -gp` to use my `$HOME/.gprc`.\n\nRight, but we should take care not to use the other one (i.e. by setting `GPRC` and therefore overriding `$HOME/.gprc`) if we start the interactive `gp`.",
     "created_at": "2010-09-23T09:18:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99654",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99489",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -693,15 +692,15 @@ Right, but we should take care not to use the other one (i.e. by setting `GPRC` 
 
 ---
 
-archive/issue_comments_099655.json:
+archive/issue_comments_099490.json:
 ```json
 {
     "body": "Anybody happens to know where is the code to deal with `$DOT_SAGE`, to populate it with files?",
     "created_at": "2010-09-23T10:36:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99655",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99490",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -711,15 +710,15 @@ Anybody happens to know where is the code to deal with `$DOT_SAGE`, to populate 
 
 ---
 
-archive/issue_comments_099656.json:
+archive/issue_comments_099491.json:
 ```json
 {
     "body": "Use $SAGE_ROOT/local/etc/gprc.expect as .gprc file",
     "created_at": "2010-09-24T13:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99656",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99491",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -729,15 +728,15 @@ Use $SAGE_ROOT/local/etc/gprc.expect as .gprc file
 
 ---
 
-archive/issue_comments_099657.json:
+archive/issue_comments_099492.json:
 ```json
 {
     "body": "Attachment [9959_gprc.patch](tarball://root/attachments/some-uuid/ticket9959/9959_gprc.patch) by @jdemeyer created at 2010-09-24 14:40:01\n\nNew spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg).  This is based on **p7** (not p8) and adds the `gprc.expect` file.  So installing the new spkg and applying all 4 patches should do it.",
     "created_at": "2010-09-24T14:40:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99657",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99492",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -749,15 +748,15 @@ New spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-125
 
 ---
 
-archive/issue_comments_099658.json:
+archive/issue_comments_099493.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-24T14:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99658",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99493",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -767,15 +766,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_099659.json:
+archive/issue_comments_099494.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-24T14:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99659",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99494",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -785,15 +784,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_099660.json:
+archive/issue_comments_099495.json:
 ```json
 {
     "body": "Doesn't work yet, stupid mistake.",
     "created_at": "2010-09-24T14:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99660",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99495",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -803,15 +802,15 @@ Doesn't work yet, stupid mistake.
 
 ---
 
-archive/issue_comments_099661.json:
+archive/issue_comments_099496.json:
 ```json
 {
     "body": "`sage.math.washington.edu` seems much slower than usual today...",
     "created_at": "2010-09-24T14:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99661",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99496",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -821,15 +820,15 @@ archive/issue_comments_099661.json:
 
 ---
 
-archive/issue_comments_099662.json:
+archive/issue_comments_099497.json:
 ```json
 {
     "body": "Does `gp` expand `$SAGE_ROOT` in the `gprc.expect` file, or does Sage do that before it starts `gp`?",
     "created_at": "2010-09-24T14:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99662",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99497",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -839,15 +838,15 @@ Does `gp` expand `$SAGE_ROOT` in the `gprc.expect` file, or does Sage do that be
 
 ---
 
-archive/issue_comments_099663.json:
+archive/issue_comments_099498.json:
 ```json
 {
     "body": "Replying to [comment:30 leif]:\n> Does `gp` expand `$SAGE_ROOT` in the `gprc.expect` file, or does Sage do that before it starts `gp`?\n\n`gp` does that.",
     "created_at": "2010-09-24T14:57:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99663",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99498",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -860,15 +859,15 @@ Replying to [comment:30 leif]:
 
 ---
 
-archive/issue_comments_099664.json:
+archive/issue_comments_099499.json:
 ```json
 {
     "body": ".gprc file for the Gp() interface",
     "created_at": "2010-09-24T15:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99664",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99499",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -878,15 +877,15 @@ archive/issue_comments_099664.json:
 
 ---
 
-archive/issue_comments_099665.json:
+archive/issue_comments_099500.json:
 ```json
 {
     "body": "Attachment [pari.p9.patch](tarball://root/attachments/some-uuid/ticket9959/pari.p9.patch) by @jdemeyer created at 2010-09-24 17:07:30\n\nPatch for the PARI spkg .p7 to .p9 (for review)",
     "created_at": "2010-09-24T17:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99665",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99500",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -898,15 +897,15 @@ Patch for the PARI spkg .p7 to .p9 (for review)
 
 ---
 
-archive/issue_comments_099666.json:
+archive/issue_comments_099501.json:
 ```json
 {
     "body": "Fixed spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg](http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg)",
     "created_at": "2010-09-24T17:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99666",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99501",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -916,15 +915,15 @@ Fixed spkg: [http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-1
 
 ---
 
-archive/issue_comments_099667.json:
+archive/issue_comments_099502.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-24T17:09:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99667",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99502",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -934,15 +933,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_099668.json:
+archive/issue_comments_099503.json:
 ```json
 {
     "body": "Attachment [9959_combined.patch](tarball://root/attachments/some-uuid/ticket9959/9959_combined.patch) by @jdemeyer created at 2010-09-26 17:35:35\n\nAll 4 sagelib patches combined",
     "created_at": "2010-09-26T17:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99668",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99503",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -954,15 +953,15 @@ All 4 sagelib patches combined
 
 ---
 
-archive/issue_comments_099669.json:
+archive/issue_comments_099504.json:
 ```json
 {
     "body": "Changing priority from minor to blocker.",
     "created_at": "2010-10-09T14:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99669",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99504",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -972,15 +971,15 @@ Changing priority from minor to blocker.
 
 ---
 
-archive/issue_comments_099670.json:
+archive/issue_comments_099505.json:
 ```json
 {
     "body": "The sagelib patch looks good to me.\n\nFor review, please could you give instructions for the simple-minded as to how to apply the patch which converts .p7 to .p9?  And then how to rebuild?  Thanks.\n\nOf course, someone else who knows how to do this reliably is welcome to get in first with a review.",
     "created_at": "2010-10-09T17:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99670",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99505",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -994,15 +993,15 @@ Of course, someone else who knows how to do this reliably is welcome to get in f
 
 ---
 
-archive/issue_comments_099671.json:
+archive/issue_comments_099506.json:
 ```json
 {
     "body": "Replying to [comment:35 cremona]:\n> The sagelib patch looks good to me.\n> \n> For review, please could you give instructions for the simple-minded as to how to apply the patch which converts .p7 to .p9?\n\nWell, the easiest is to install the new spkg:\n\n```\nsage -i http://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg\n```\n\n\n> And then how to rebuild?\nI personally do not know the most reliable way to rebuild a complete Sage installation.  One thing which works for sure is the following:\n* download sage-4.6.alpha3.tar and extract it so we have a clean, uncompiled sage-4.6.alpha3.\n* rm spkg/standard/pari-*.spkg\n* download [ttp://sage.math.washington.edu/home/jdemeyer/spkg/pari-2.4.3.svn-12577.p9.spkg] and and put it in spkg/standard\n* now `make` Sage as usual",
     "created_at": "2010-10-09T18:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99671",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99506",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1029,15 +1028,15 @@ I personally do not know the most reliable way to rebuild a complete Sage instal
 
 ---
 
-archive/issue_comments_099672.json:
+archive/issue_comments_099507.json:
 ```json
 {
     "body": "THanks -- I am doing that, will do a complete new build (with the sagelib patch too of course) and report back.",
     "created_at": "2010-10-09T19:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99672",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99507",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1047,15 +1046,15 @@ THanks -- I am doing that, will do a complete new build (with the sagelib patch 
 
 ---
 
-archive/issue_comments_099673.json:
+archive/issue_comments_099508.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-10-09T20:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99673",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99508",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1065,15 +1064,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_099674.json:
+archive/issue_comments_099509.json:
 ```json
 {
     "body": "I made a freshly unpacked 4.6.alpha3, and replaced its pari spkg with the p9 version;  then built all Sage;  then applied the sagelib patch on this ticket;  then tested the whole library.\n\nAll passed, so here's a positive review.",
     "created_at": "2010-10-09T20:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99674",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99509",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1085,15 +1084,15 @@ All passed, so here's a positive review.
 
 ---
 
-archive/issue_comments_099675.json:
+archive/issue_comments_099510.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-10-21T08:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9958",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99675",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9958#issuecomment-99510",
+    "user": "https://github.com/qed777"
 }
 ```
 

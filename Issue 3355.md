@@ -6,7 +6,7 @@ archive/issues_003355.json:
     "body": "Assignee: cwitty\n\nAll the *.la files in $SAGE_LOCAL/lib have their libdir variable rewritten when Sage is moved. Do this also when installing any spkg since we might have moved the tree. This will likely cause a number of upgrade problems.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3355\n\n",
     "created_at": "2008-06-03T05:33:54Z",
     "labels": [
-        "relocation",
+        "component: relocation",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003355.json:
     "title": "invoke the libdir rewrite script on \"sage -upgrade\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3355",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: cwitty
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3355
 
 ---
 
-archive/issue_comments_023324.json:
+archive/issue_comments_023276.json:
 ```json
 {
     "body": "Changing priority from blocker to critical.",
     "created_at": "2009-06-15T23:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23324",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23276",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -51,15 +51,15 @@ Changing priority from blocker to critical.
 
 ---
 
-archive/issue_comments_023325.json:
+archive/issue_comments_023277.json:
 ```json
 {
     "body": "If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.",
     "created_at": "2009-06-15T23:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23325",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23277",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -69,15 +69,15 @@ If we've released for months and months without fixing this, it doesn't make sen
 
 ---
 
-archive/issue_comments_023326.json:
+archive/issue_comments_023278.json:
 ```json
 {
     "body": "* **Priority** changed from *critical* to *major*\n\nIf we've released for years and years without fixing this, it doesn't make sense to keep it as critical.\n\n... just kidding!",
     "created_at": "2012-03-21T00:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23326",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23278",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -91,15 +91,15 @@ If we've released for years and years without fixing this, it doesn't make sense
 
 ---
 
-archive/issue_comments_023327.json:
+archive/issue_comments_023279.json:
 ```json
 {
     "body": "`sage-location` actually does this now.",
     "created_at": "2013-03-28T22:57:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23327",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23279",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -109,15 +109,15 @@ archive/issue_comments_023327.json:
 
 ---
 
-archive/issue_comments_023328.json:
+archive/issue_comments_023280.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-03-28T22:57:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23328",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23280",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -127,15 +127,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_023329.json:
+archive/issue_comments_023281.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-03-28T22:57:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23329",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23281",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -145,15 +145,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_023330.json:
+archive/issue_comments_023282.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2013-03-29T19:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3355",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23330",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3355#issuecomment-23282",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

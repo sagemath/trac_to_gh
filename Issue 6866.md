@@ -6,7 +6,7 @@ archive/issues_006866.json:
     "body": "Assignee: tba\n\nKeywords: orthogonal polynomials\n\nThere are some LaTeX typos in the reference manual on orthogonal\npolynomials.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6866\n\n",
     "created_at": "2009-09-02T15:54:21Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006866.json:
     "title": "Latex typos in orthogonal_polys.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6866",
-    "user": "hgranath"
+    "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"
 }
 ```
 Assignee: tba
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6866
 
 ---
 
-archive/issue_comments_056676.json:
+archive/issue_comments_056570.json:
 ```json
 {
     "body": "Attachment [typos_orth_poly.patch](tarball://root/attachments/some-uuid/ticket6866/typos_orth_poly.patch) by hgranath created at 2009-09-02 15:57:08",
     "created_at": "2009-09-02T15:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6866#issuecomment-56676",
-    "user": "hgranath"
+    "url": "https://github.com/sagemath/sagetest/issues/6866#issuecomment-56570",
+    "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"
 }
 ```
 
@@ -51,15 +51,15 @@ Attachment [typos_orth_poly.patch](tarball://root/attachments/some-uuid/ticket68
 
 ---
 
-archive/issue_comments_056677.json:
+archive/issue_comments_056571.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-09-03T04:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6866#issuecomment-56677",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6866#issuecomment-56571",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -69,15 +69,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_056678.json:
+archive/issue_comments_056572.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-03T08:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6866#issuecomment-56678",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6866#issuecomment-56572",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_008377.json:
     "body": "Assignee: @aghitza\n\nKeywords: MPFR\n\nThere is no example of using rounding modes with RealField.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8377\n\n",
     "created_at": "2010-02-26T09:31:52Z",
     "labels": [
-        "basic arithmetic",
-        "trivial",
-        "enhancement"
+        "component: basic arithmetic",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "improve documentation for RealField",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8377",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @aghitza
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8377
 
 ---
 
-archive/issue_comments_074901.json:
+archive/issue_comments_074777.json:
 ```json
 {
     "body": "Attachment [trac_8376.patch](tarball://root/attachments/some-uuid/ticket8377/trac_8376.patch) by @zimmermann6 created at 2010-02-26 09:32:21",
     "created_at": "2010-02-26T09:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8377",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74901",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74777",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_8376.patch](tarball://root/attachments/some-uuid/ticket8377/tra
 
 ---
 
-archive/issue_comments_074902.json:
+archive/issue_comments_074778.json:
 ```json
 {
     "body": "oops, this is a duplicate of #8376.",
     "created_at": "2010-02-26T09:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8377",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74902",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74778",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -67,15 +66,15 @@ oops, this is a duplicate of #8376.
 
 ---
 
-archive/issue_comments_074903.json:
+archive/issue_comments_074779.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-02-26T09:34:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8377",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74903",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8377#issuecomment-74779",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 

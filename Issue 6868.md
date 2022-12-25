@@ -6,15 +6,13 @@ archive/issues_006868.json:
     "body": "Assignee: tbd\n\nHello everybody !!!\n\nAs I wrote a new numerical.MIP class using symbolics, which will be waaaaaayyyyy easier to use, here is the necessary update of GLPK which can stand all those news !\n\nTo install it :\n\n\n```\nsage -f http://www-sop.inria.fr/members/Nathann.Cohen/cbc-2.3.p0.spkg\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6868\n\n",
     "created_at": "2009-09-02T17:34:38Z",
     "labels": [
-        "packages: optional",
-        "major",
-        "enhancement"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with SPKG, needs review] Coin-OR CBC ( compatible with the symbolics from MIP )",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6868",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: tbd
@@ -39,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6868
 
 ---
 
-archive/issue_comments_056684.json:
+archive/issue_comments_056578.json:
 ```json
 {
     "body": "ncohen --- Can you also provide a local copy of the spkg under your sage.math home dir?",
     "created_at": "2009-09-02T17:49:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6868",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56684",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56578",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -57,15 +55,15 @@ ncohen --- Can you also provide a local copy of the spkg under your sage.math ho
 
 ---
 
-archive/issue_comments_056685.json:
+archive/issue_comments_056579.json:
 ```json
 {
     "body": "Done : /home/ncohen/cbc-2.3.p0.spkg",
     "created_at": "2009-09-02T19:37:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6868",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56685",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56579",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -75,15 +73,15 @@ Done : /home/ncohen/cbc-2.3.p0.spkg
 
 ---
 
-archive/issue_comments_056686.json:
+archive/issue_comments_056580.json:
 ```json
 {
     "body": "Updated package at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/optional/cbc-2.3.p0.spkg\n\nIt incorporates ncohen's original spkg, but with some general clean up.",
     "created_at": "2009-09-08T14:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6868",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56686",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56580",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -97,15 +95,15 @@ It incorporates ncohen's original spkg, but with some general clean up.
 
 ---
 
-archive/issue_comments_056687.json:
+archive/issue_comments_056581.json:
 ```json
 {
     "body": "Merged in the optional packages repository at\n\nhttp://www.sagemath.org/packages/optional/\n\nYou can get the spkg at\n\nhttp://www.sagemath.org/packages/optional/cbc-2.3.p0.spkg",
     "created_at": "2009-09-10T12:19:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6868",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56687",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -121,15 +119,15 @@ http://www.sagemath.org/packages/optional/cbc-2.3.p0.spkg
 
 ---
 
-archive/issue_comments_056688.json:
+archive/issue_comments_056582.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-10T12:19:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6868",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56688",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6868#issuecomment-56582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

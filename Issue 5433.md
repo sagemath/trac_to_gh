@@ -6,7 +6,7 @@ archive/issues_005433.json:
     "body": "Assignee: @jhpalmieri\n\nThe attached patch fixes some `_latex_` methods: things like \"{\\rm blah}\" have been changed to \"\\mathrm{blah}\", and things like \"\\mbox{\\bf blah}\" have been changed to \"\\mathbf{blah}\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/5433\n\n",
     "created_at": "2009-03-04T02:15:25Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005433.json:
     "title": "[with patch, needs review] LaTeX fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5433",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jhpalmieri
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5433
 
 ---
 
-archive/issue_comments_042035.json:
+archive/issue_comments_041953.json:
 ```json
 {
     "body": "Attachment [latex.patch](tarball://root/attachments/some-uuid/ticket5433/latex.patch) by @jhpalmieri created at 2009-03-04 02:21:42\n\nOh, right, it also does something else: it changes the `_latex_file_` function in sage/misc/latex.py: I changed the default arguments, added documentation, and removed the \"brk\" argument since I really couldn't see the point: setting brk equal to 2 would change `\\begin{document} blah` to `\\b eg in {d oc um en t} bl ah`.  Why?\n\nAs far as changing the default values, we made many of the same changes in the `view` function a while ago: see #3145.\n\nI made corresponding changes to the png function in that file.",
     "created_at": "2009-03-04T02:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-42035",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-41953",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -53,15 +53,15 @@ I made corresponding changes to the png function in that file.
 
 ---
 
-archive/issue_comments_042036.json:
+archive/issue_comments_041954.json:
 ```json
 {
     "body": "Replying to [comment:1 jhpalmieri]:\n\nHi John,\n\nWorking on a review.  Looks good and all tests passed.\n\nThere was a time when TeX would choke on long input (more than 256 characters?) so maybe that explains the use of \"brk\"?  But I think those days are behind us, so it is probably safe to drop it.\n\nTwo suggestions:\n\n1.  In the docstring for `_latex_file_()` it is not real clear that the `sep` argument is for decoration rather than function.  Maybe additional explanation like:  \"for example, `sep='\\\\hrule'`\", would make it clearer that this is not a LaTeX requirement like \"$$\" (and it also needs an escaped backslash for any TeX commands).  (Which I now see is discussed in #3145.)\n\n2.  Are all the \"empty\" `\\pagestyle` and `\\thispagestyle` really needed?  There is one present in the header, but then two show up between each object's latex representation.  They don't seem to be hurting anything, but maybe now would be a good time to have them go away, perhaps along with a `\\n` or two.\n\nRob",
     "created_at": "2009-03-16T04:56:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-42036",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-41954",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -85,15 +85,15 @@ Rob
 
 ---
 
-archive/issue_comments_042037.json:
+archive/issue_comments_041955.json:
 ```json
 {
     "body": "Replying to [comment:2 rbeezer]:\n\nHi Rob,\n\nThanks for your comments. I'm attaching a new patch (to be applied on top of the other one) addressing them, plus a bit more:\n\nI've expanded the docstring for `_latex_file` considerably, including comments about sep, and I've removed a bunch of the `\\pagestyle` (etc.) commands.\n\nI also changed the default spacing in the LaTeX file: it used to be \n\n```\ntitle (centered)\n\\vfill\nobject\n\\vfill\n```\n\nand I've changed it to\n\n```\ntitle (centered)\n\\vspace{40mm}\nobject\n```\n\nI think this looks better, but we can change it back if you disagree.\n\nIt used to be that if `tiny=False`, then the file contained \"\\\\small\", and I've deleted this.\n\nFinally, `view` and `_latex_file` had options to pass on to xdvi: 'expert' and 'zoom'.  These were not used anywhere in the code, and in fact I don't see how you even could pass them as arguments to xdvi, given the changes in #3137.  So I've deleted those options.\n\n  John",
     "created_at": "2009-03-16T17:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-42037",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-41955",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -134,15 +134,15 @@ Finally, `view` and `_latex_file` had options to pass on to xdvi: 'expert' and '
 
 ---
 
-archive/issue_comments_042038.json:
+archive/issue_comments_041956.json:
 ```json
 {
     "body": "Attachment [latex-delta.2.patch](tarball://root/attachments/some-uuid/ticket5433/latex-delta.2.patch) by @jhpalmieri created at 2009-03-16 17:29:38\n\napply on top of other patch",
     "created_at": "2009-03-16T17:29:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-42038",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-41956",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -154,15 +154,15 @@ apply on top of other patch
 
 ---
 
-archive/issue_comments_042039.json:
+archive/issue_comments_041957.json:
 ```json
 {
     "body": "Replying to [comment:3 jhpalmieri]:\n\nHi John,\n\nLooks great - lots of good documentation and code clean-up, plus much more readable LaTeX source being produced by `_latex_file_()`, in addition to the typeset result being improved.\n\nlatex.py passed tests and performs as advertised.  `view()` works at command line through xdvi or in the notebook.\n\nAnd that's the most entertaining docstring I've seen yet.  ;-)\n\nPositive review.  Apply both patches in the order attached here.\n\nRob",
     "created_at": "2009-03-17T03:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-42039",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-41957",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -184,15 +184,15 @@ Rob
 
 ---
 
-archive/issue_comments_042040.json:
+archive/issue_comments_041958.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-25T07:52:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-42040",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-41958",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -202,15 +202,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_042041.json:
+archive/issue_comments_041959.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T07:52:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-42041",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5433#issuecomment-41959",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

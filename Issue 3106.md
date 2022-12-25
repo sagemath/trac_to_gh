@@ -6,15 +6,14 @@ archive/issues_003106.json:
     "body": "Assignee: boothby\n\nFrom sage-devel:\n\n\n```\n>  >>  is it possible to export the plots created by plot3d and\n> >  >>  parametric_plot3d to (say) postcript or png or whatever?\n> >  >>\n> >  >\n> >  > The easy options I know of right now:\n> >  >\n> >  > (1) Take a screen shot.\n> >  >\n> >  > (2) Use the option viewer='tachyon' to generate a\n> >  > png instead of an interactive dynamic 3d plot.  Then just save\n> >  > the png to a file.\n> >  >\n> >  > Someday there should be a 3rd option to directly export\n> >  > what jmol produces, but I don't know how to do it.\n> >  > I personally always do (1), since taking screen shots in\n> >  > OS X is so incredibly easy.   I think it is also easy\n> >  > in Linux with say GIMP.\n> >\n> >\n> >  Here are two solutions for getting images from JMOL.  One (easy)\n> >  solution is using the JMOL application (i.e., from the sage command\n> >  line); the other is using the applet and requires a bit more work.  We\n> >  could probably make the applet version a link under the image in the\n> >  notebook.\n> >\n> >  http://wiki.jmol.org/index.php/File_formats#Images\n> >\n> >  Jason\n> >\n\nI think we certainly need to implement the second method.  It's been\nrequested a _lot_.  Could you make a trac ticket for this?\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3106\n\n",
     "created_at": "2008-05-05T16:56:10Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Add an \"image\" link for a screenshot of the JMOL applet in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3106",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: boothby
@@ -68,15 +67,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3106
 
 ---
 
-archive/issue_comments_021463.json:
+archive/issue_comments_021419.json:
 ```json
 {
     "body": "Related to this would be to make the \"Print\" link automatically take a screenshot and use the image in the printed page.",
     "created_at": "2008-05-05T16:57:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21463",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21419",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -86,15 +85,15 @@ Related to this would be to make the "Print" link automatically take a screensho
 
 ---
 
-archive/issue_comments_021464.json:
+archive/issue_comments_021420.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-23T02:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21464",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21420",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -104,15 +103,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_021465.json:
+archive/issue_comments_021421.json:
 ```json
 {
     "body": "Attachment [jmol-save-image.patch](tarball://root/attachments/some-uuid/ticket3106/jmol-save-image.patch) by @jasongrout created at 2009-02-14 09:48:46",
     "created_at": "2009-02-14T09:48:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21465",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21421",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -122,15 +121,15 @@ Attachment [jmol-save-image.patch](tarball://root/attachments/some-uuid/ticket31
 
 ---
 
-archive/issue_comments_021466.json:
+archive/issue_comments_021422.json:
 ```json
 {
     "body": "Both patches are identical;  you can delete one.",
     "created_at": "2009-02-14T09:50:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21466",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21422",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -140,15 +139,15 @@ Both patches are identical;  you can delete one.
 
 ---
 
-archive/issue_comments_021467.json:
+archive/issue_comments_021423.json:
 ```json
 {
     "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2009-02-14T10:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21467",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21423",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -158,15 +157,15 @@ Changing assignee from boothby to @jasongrout.
 
 ---
 
-archive/issue_comments_021468.json:
+archive/issue_comments_021424.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-14T10:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21468",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21424",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -176,15 +175,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_021469.json:
+archive/issue_comments_021425.json:
 ```json
 {
     "body": "works for me",
     "created_at": "2009-02-14T11:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21469",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21425",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -194,15 +193,15 @@ works for me
 
 ---
 
-archive/issue_comments_021470.json:
+archive/issue_comments_021426.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-14T14:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21470",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21426",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -212,15 +211,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021471.json:
+archive/issue_comments_021427.json:
 ```json
 {
     "body": "Merged jmol-save-image.patch in Sage 3.3.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T14:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3106",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21471",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3106#issuecomment-21427",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

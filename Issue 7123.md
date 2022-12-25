@@ -6,15 +6,13 @@ archive/issues_007123.json:
     "body": "Assignee: somebody\n\nCC:  @rbeezer\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7123\n\n",
     "created_at": "2009-10-05T15:56:07Z",
     "labels": [
-        "cryptography",
-        "major",
-        "enhancement"
+        "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "cryptanalysis of the shift cipher",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7123",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: somebody
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7123
 
 ---
 
-archive/issue_comments_059039.json:
+archive/issue_comments_058927.json:
 ```json
 {
     "body": "Hi Minh,\n\nI'll try to give this a proper review soon.  Two thoughts - one I had before I saw this.\n\n1.  Is there any infrastructure planned for frequency tables - ie perhaps given an alphabet and a language, a dictionary from \"letters\" to their probabilities in that language?  I could see this being veryuseful for some of the cryptanalysis, especially of the classical ciphers.\n\n2.  Could you build on the exhaustive search in this patch, together with frequency information, to rank more likely keys first, and present more likely decipherments first?\n\nRob",
     "created_at": "2009-10-07T05:11:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59039",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58927",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -57,15 +55,15 @@ Rob
 
 ---
 
-archive/issue_comments_059040.json:
+archive/issue_comments_058928.json:
 ```json
 {
     "body": "The `trac_7123-clean-up.patch` does the following clean up on the file `sage/monoids/string_monoid_element.py`:\n\n1. Remove trailing white spaces.\n2. Adjust the module so it conforms to Python coding conventions.\n3. Use the functional form of raising exceptions so that the module more closely conform to Python 3.x.\n4. Remove the unused import statements\n {{{\nimport operator\nfrom sage.structure.element import MonoidElement\n }}}",
     "created_at": "2009-10-08T15:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59040",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58928",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -84,15 +82,15 @@ from sage.structure.element import MonoidElement
 
 ---
 
-archive/issue_comments_059041.json:
+archive/issue_comments_058929.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-08T15:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59041",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58929",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -102,15 +100,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_059042.json:
+archive/issue_comments_058930.json:
 ```json
 {
     "body": "Replying to [comment:2 rbeezer]:\n> 1.  Is there any infrastructure planned for frequency tables - ie perhaps given an alphabet and a language, a dictionary from \"letters\" to their probabilities in that language?  I could see this being veryuseful for some of the cryptanalysis, especially of the classical ciphers.\nFrequency distribution is already implemented for the following alphabets: `AlphabeticStrings`, `BinaryStrings`, `HexadecimalStrings`, `OctalStrings`, `Radix64Strings`. The relevant method is `frequency_distribution()` in the class `StringMonoidElement` of the module `sage/monoids/string_monoid_element.py`. Here is an example:\n\n```\n[mvngu@sage sage-4.1.2.rc0-7123-shift]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: A = AlphabeticStrings()\nsage: M = A.encoding(\"abcd\")\nsage: M.frequency_distribution()\nDiscrete probability space defined by {A: 0.250000000000000, C: 0.250000000000000, B: 0.250000000000000, D: 0.250000000000000}\n```\n\nAs you can see, the default behaviour is to return the string representation of a frequency distribution. This can be difficult to parse, especially if one wants to do further processing with the returned distribution.\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\n\n\n\n> 2.  Could you build on the exhaustive search in this patch, together with frequency information, to rank more likely keys first, and present more likely decipherments first?\nIs there a way to determine likely keys? One way I can think of is to use an existing frequency distribution table T of the letters of the English alphabet. Given the frequency distribution of the ciphertext, sort the ciphertext letters in non-descending order in terms of probability values. Do the same sorting for the table T. Then map the ciphertext letter with the highest probability to its counterpart in T, etc. Can use the frequency table from the text:\n\n* Robert Edward Lewand. \"Cryptological Mathematics\". The Mathematical Association of America, 2000, p.36.\n\nThe same table can also be found on [wikipedia](http://en.wikipedia.org/wiki/Letter_frequencies). For digrams, trigrams, etc., one can use the US Army's field manual at\n\nhttp://www.umich.edu/~umich/fm-34-40-2/",
     "created_at": "2009-10-08T16:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59042",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58930",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -148,15 +146,15 @@ http://www.umich.edu/~umich/fm-34-40-2/
 
 ---
 
-archive/issue_comments_059043.json:
+archive/issue_comments_058931.json:
 ```json
 {
     "body": "The patch `trac_7123-shift.patch` implements the following features for cryptanalysis of the shift cipher:\n\n1. In the class `StringMonoidElement` of the module `sage/monoids/string_monoid_element.py`, change the function `frequency_distribution()` so that it returns a dictionary of probability distribution. Up until this change, the default behaviour has been to return the string representation of the said distribution, which can be difficult to parse if one intends to parse that distribution for useful statistics. The behaviour of `frequency_distribution()` now is to return a dictionary that is easier to parse than previously.\n2. Add the method `characteristic_frequency()` to the module `sage/monoids/string_monoid.py` to return the relative frequencies of all letters of the English alphabet.\n3. The method `brute_force()` for the class `ShiftCryptosystem` to perform exhaustive key search. I have no idea how to order the possible keys by likelihood of being the key closest to the real key. A promising algorithm is via the chi-square statistic as presented at\n\n http://starbase.trincoll.edu/~crypto/historical/caesar.html\n\n Would you consider that OK to implement?",
     "created_at": "2009-10-08T19:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59043",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58931",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -174,15 +172,15 @@ The patch `trac_7123-shift.patch` implements the following features for cryptana
 
 ---
 
-archive/issue_comments_059044.json:
+archive/issue_comments_058932.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-08T19:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59044",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58932",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -192,15 +190,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059045.json:
+archive/issue_comments_058933.json:
 ```json
 {
     "body": "Replying to [comment:5 mvngu]:\n\nMinh,\n\nThat's pretty much exactly what I had in mind.  And I'd forgotten to mention the Army Field Manual.  ;-)\n\nThe chi-square statistic does look like a likely candidate.  I'd also thought of taking the sum of the squared differences between the two distributions (the candidate decrypt frequency vs. the characteristic frequency).  Something makes me think that they may be equivalent, or one is clearly superior, but I don't have a reference, nor have I checked.  If they are different, then implementing both and testing one versus the other could be a good project for a user.  In any event, I think I'd code a choice of the function that \"scores\" each candidate decrypt, either with a default keyword, or in the extreme, an option to pass in your own function (assuming two arguments, the decrypt and the characteristic frequency).\n\nOK, a bit brief, but I'm trying to beat the Sage infrastructure cutover in 25 minutes.  ;-)\n\nRob",
     "created_at": "2009-10-09T01:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59045",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58933",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -220,15 +218,15 @@ Rob
 
 ---
 
-archive/issue_comments_059046.json:
+archive/issue_comments_058934.json:
 ```json
 {
     "body": "Hi Minh,\n\nFinally have a chance to comment carefully on the various ways to measure the distributions.\n\n1.  For a chi-square used for goodness-of-fit between distributions see Hogg and Tannis, Probbilit and Stastical Inference, 6th Ed., Section 8.4.  Use the actual counts of each letter in a candidate decipher and call these \"observed.\"  Then multiply frequences from `frequency_distribution()` times the length of the message.  Call these theoretical counts the \"expected\" and carry them as non-integers, even if we know they should be integral.  Then the statistic is the sum over all the letters of\n\n`(observed - expected)^2/expected`\n\nI would use the keyword \"chisquare\" for this.\n\n2.  The sum of squared differences should probably be computed as the sum over all letters using counts, not frequencies, ie\n\n`(observed - expected)^2`\n\nThis is equivalent in this case to the coefficient of determination, or more informally \"r-squared.\"  Another name is \"residual sum of squares.\"\n\n3.  Not at all clear to me how [SavHar99] justifies the use of their expression and naming it a chi-square statistic.  If anything, it looks to me like a noncentral chisquare statistic.  But it may do a good job of \"scoring\" candidate decipherments.  Can you be sure if they mean to square just the numerator of each term (`FD^2/CD`), or square the whole fraction (`FD/CF`)?\n\nRob",
     "created_at": "2009-10-10T06:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59046",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58934",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -256,15 +254,15 @@ Rob
 
 ---
 
-archive/issue_comments_059047.json:
+archive/issue_comments_058935.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-10T13:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59047",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58935",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -274,15 +272,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_059048.json:
+archive/issue_comments_058936.json:
 ```json
 {
     "body": "Replying to [comment:7 rbeezer]:\n> 1.  For a chi-square used for goodness-of-fit between distributions see Hogg and Tannis, Probbilit and Stastical Inference, 6th Ed., Section 8.4.  Use the actual counts of each letter in a candidate decipher and call these \"observed.\"\n\nLet's call these actual counts the \"character count\".\n\n\n\n\n\n> Then multiply frequences from `frequency_distribution()` times the length of the message.  \n\nThere are two types of frequencies. The characteristic frequency distribution (or characteristic frequency, for short) of an alphabet is the expected frequency probability distribution for that alphabet. The book by Beker and Piper 1982 contains a table describing this probability distribution. The book by Lewand 2000 also contains such a table. The frequency distribution of a message `M` (or frequency distribution, for short) gives the ratio `R` of character occurrences over message length:\n\n```\nR = (number of occurrences of a character) / (message length)\n```\n\nThe characteristic frequency can be thought of as the expected probability, while the frequency distribution is the observed probability.\n\n\n\n\n\n> Call these theoretical counts the \"expected\" and carry them as non-integers, even if we know they should be integral.\n \nWith the above distinction between characteristic frequency (of an alphabet) and frequency distribution (of a message), I interpret the theoretical counts you mention here as the result of multiplying each probability value in the characteristic frequency by the message length. For example:\n\n```\nsage: A = AlphabeticStrings()\nsage: M = A.encoding(\"abcabf\")\nsage: L = len(M); L\n6\nsage: CF = A.characteristic_frequency()\nsage: sorted(CF.items())\n\n[('A', 0.0820000000000000),\n ('B', 0.0150000000000000),\n ('C', 0.0280000000000000),\n ('D', 0.0430000000000000),\n ('E', 0.127000000000000),\n ('F', 0.0220000000000000),\n ('G', 0.0200000000000000),\n ('H', 0.0610000000000000),\n ('I', 0.0700000000000000),\n ('J', 0.00200000000000000),\n ('K', 0.00800000000000000),\n ('L', 0.0400000000000000),\n ('M', 0.0240000000000000),\n ('N', 0.0670000000000000),\n ('O', 0.0750000000000000),\n ('P', 0.0190000000000000),\n ('Q', 0.00100000000000000),\n ('R', 0.0600000000000000),\n ('S', 0.0630000000000000),\n ('T', 0.0910000000000000),\n ('U', 0.0280000000000000),\n ('V', 0.0100000000000000),\n ('W', 0.0230000000000000),\n ('X', 0.00100000000000000),\n ('Y', 0.0200000000000000),\n ('Z', 0.00100000000000000)]\nsage: keys = CF.keys()\nsage: for k in keys:\n....:     CF[k] *= L\n....:     \nsage: sorted(CF.items())\n\n[('A', 0.492000000000000),\n ('B', 0.0900000000000000),\n ('C', 0.168000000000000),\n ('D', 0.258000000000000),\n ('E', 0.762000000000000),\n ('F', 0.132000000000000),\n ('G', 0.120000000000000),\n ('H', 0.366000000000000),\n ('I', 0.420000000000000),\n ('J', 0.0120000000000000),\n ('K', 0.0480000000000000),\n ('L', 0.240000000000000),\n ('M', 0.144000000000000),\n ('N', 0.402000000000000),\n ('O', 0.450000000000000),\n ('P', 0.114000000000000),\n ('Q', 0.00600000000000000),\n ('R', 0.360000000000000),\n ('S', 0.378000000000000),\n ('T', 0.546000000000000),\n ('U', 0.168000000000000),\n ('V', 0.0600000000000000),\n ('W', 0.138000000000000),\n ('X', 0.00600000000000000),\n ('Y', 0.120000000000000),\n ('Z', 0.00600000000000000)]\n```\n\n\nMultiplying each probability value in the frequency distribution by the message length would result in the counts of character occurrences:\n\n```\nsage: char_counts = M.character_count()\nsage: sorted(char_counts.items())\n[(A, 2), (B, 2), (C, 1), (F, 1)]\nsage: FD = M.frequency_distribution()\nsage: sorted(FD.items())\n\n[(A, 0.333333333333333),\n (B, 0.333333333333333),\n (C, 0.166666666666667),\n (F, 0.166666666666667)]\nsage: keys = FD.keys()\nsage: for k in keys:\n....:     FD[k] *= L\n....:     \nsage: sorted(FD.items())\n\n[(A, 2.00000000000000),\n (B, 2.00000000000000),\n (C, 1.00000000000000),\n (F, 1.00000000000000)]\nsage: sorted(char_counts.items())\n[(A, 2), (B, 2), (C, 1), (F, 1)]\n```\n\n\n\n\n\n\n>  Then the statistic is the sum over all the letters of\n> \n> `(observed - expected)^2/expected`\n\nThis agrees with Pearson's chi-square test at\n\nhttp://en.wikipedia.org/wiki/Goodness_of_fit\n\n\n\n\n\n> I would use the keyword \"chisquare\" for this.\n\nNo problem.\n\n\n\n\n\n> 2.  The sum of squared differences should probably be computed as the sum over all letters using counts, not frequencies, ie\n> \n> `(observed - expected)^2`\n\nNo problem.\n\n\n\n\n\n> This is equivalent in this case to the coefficient of determination, or more informally \"r-squared.\"  Another name is \"residual sum of squares.\"\n> \n> 3.  Not at all clear to me how [SavHar99] justifies the use of their expression and naming it a chi-square statistic.  If anything, it looks to me like a noncentral chisquare statistic.  But it may do a good job of \"scoring\" candidate decipherments.  Can you be sure if they mean to square just the numerator of each term (`FD^2/CD`), or square the whole fraction (`FD/CF`)?\nThe description at\n\nhttp://starbase.trincoll.edu/~crypto/historical/caesar.html\n\nis mostly textual and ambiguous. I would implement the above statistics you suggested as they are much more concrete and well specified, instead of spending time teasing out the \"right\" formula from the textual description.",
     "created_at": "2009-10-10T14:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59048",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58936",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -457,15 +455,15 @@ is mostly textual and ambiguous. I would implement the above statistics you sugg
 
 ---
 
-archive/issue_comments_059049.json:
+archive/issue_comments_058937.json:
 ```json
 {
     "body": "Minh,\n\nPerfect.  I've been reading through the patches, but I'll put them through a full review once the changes are done.\n\nRob",
     "created_at": "2009-10-10T18:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59049",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58937",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -479,15 +477,15 @@ Rob
 
 ---
 
-archive/issue_comments_059050.json:
+archive/issue_comments_058938.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-11T00:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59050",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58938",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -497,15 +495,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059051.json:
+archive/issue_comments_058939.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-11T07:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59051",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58939",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -515,15 +513,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_059052.json:
+archive/issue_comments_058940.json:
 ```json
 {
     "body": "\n```\n22:11 < rbeezer> found the problem - you are decrypting/shifting too much\n22:12 < rbeezer> try this - change     AlphShifted = self.enciphering(key, Alph)\n22:12 < rbeezer> to  AlphShifted = self.enciphering(0, Alph)\n22:22 -!- homerj [n=homerj@207-255-12-114-dhcp.jst.pa.atlanticbb.net] has left #sage-devel [\"Leaving\"]\n22:41 < rbeezer> mvngu: any luck?\n23:00 < mvngu> rbeezer: I'm not convinced about the change.\n23:01 < rbeezer> mvngu: Ideally, I think you want   RMk = [(OM[AlphShifted[StrAlph.index(e)]] - EA[e])**2 / EA[e] for e in StrAlph]\n23:01 < rbeezer> to read more like:  RMk = [(OM[e] - EA[e])**2 / EA[e] for e in StrAlph]\n23:01 < rbeezer> but when I made this change, the indices of OM and EM were different types and I got errors\n23:02 < mvngu> rbeezer: That's what I thought, and originally implemented for the method at http://starbase.trincoll.edu/~crypto/historical/caesar.html\n23:03 < rbeezer> changing the statement before  (key -> 0)  was just a hack to negate the whole shifting in AlphShifted\n23:03 < rbeezer> With  key->0  I was getting good results with short test phrases\n23:05 < mvngu> rbeezer: Have you looked at the formula for RMk? See the formula at http://sage.math.washington.edu/home/mvngu/reference-7123-shift/sage/crypto/classical.html#sage.crypto.classical.ShiftCryptosystem.rank_by_chi_square  I was following that formula.\n23:06 < mvngu> In particular, this formula  http://sage.math.washington.edu/home/mvngu/reference-7123-shift/_images/math/d8a2fd0995ed8152cfa73a6e16fcab0ef367a993.png\n23:06 < rbeezer> mvngu: the formula in that doc shouldn't have the +k, I think\n23:07 < rbeezer> mvngu: the starbase stuff is using the +k to decrypt, I think\n23:07 < rbeezer> mvngu: while you have the brute_force output as an input to your routine, so the decryption has already happened\n23:08 < rbeezer> the starbase stuff is not complete enough, or careful enough, to give me any confidence\n23:09 < mvngu> rbeezer: What's \"starbase stuff\"?\n23:09 < rbeezer> did you test my original hackish change?\n23:09 < mvngu> rbeezer: \"*=\"\n23:09 < mvngu> ?\n23:09 < rbeezer> the link at starbase.trincoll.edu  ;-)\n23:10 < mvngu> rbeezer: testing your change now...\n23:14 < williamstein> I made a lot of progress on the notebook \"rewrite\" today...\n23:14 < williamstein> and finally those VirtualBox machines are working!\n23:14 < williamstein> There are also now 8949 sagenb.org users.\n23:15 < williamstein> Only 51 more to 9000.\n23:18 < mvngu> rbeezer: Your change certainly gives better results now. See my transcript at http://sage.math.washington.edu/home/mvngu/chi-square-rbeezer-hack.txt\n23:19 -!- wormsxulla [i=chatzill@unaffiliated/wormsxulla] has quit [Read error: 110 (Connection timed out)]\n23:19 -!- wormsxulla_ [i=chatzill@unaffiliated/wormsxulla] has joined #sage-devel\n23:19 -!- wormsxulla_ is now known as wormsxulla\n23:19 < rbeezer> mvngu: that's what I was seeing\n23:19 < mvngu> rbeezer: Now for a text file...\n23:20 < rbeezer> mvngu: your strings from brute_force() have already been shifted, you just want the one whose letter distribution most closely matches that of English\n23:21 < rbeezer> but right now OM and EM are indexed by letters versus one-character stings, or somthing like that\n23:21 < rbeezer> s/strings/stings/\n23:23 < mvngu> rbeezer: Result from using a file... Looks good. See transcript at http://sage.pastebin.com/m6e4d8df4\n23:24 < rbeezer> yep, that's it - the Pearson chi-square should give good results for short and long messages\n\n```\n",
     "created_at": "2009-10-11T07:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59052",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58940",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -576,15 +574,15 @@ archive/issue_comments_059052.json:
 
 ---
 
-archive/issue_comments_059053.json:
+archive/issue_comments_058941.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-11T08:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59053",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58941",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -594,15 +592,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059054.json:
+archive/issue_comments_058942.json:
 ```json
 {
     "body": "\n```\n22:43 < rbeezer> mvngu: but I did have one suggestion - the first paragraph of\n                 each ranking method\n22:43 < mvngu> rbeezer: Fire away your suggestion.\n22:43 < rbeezer> calls FM the frequency for an encrypted message, when what you\n                 are really doing is getting a pile of candidate decrypted\n22:44 < rbeezer> messages from the brute_force() method and analyzing their\n                 freguencies\n22:44 < rbeezer> You want the key that makes a decrypt with frequencey most\n                 like english\n22:45 < rbeezer> So maybe before FM you say it is for a \"decrypted\" or\n                 \"candidate decrypted\" message\n22:46 -!- Serica [i=815dcecd@gateway/web/freenode/x-awudwwybpvbxuikl] has quit \n          [Ping timeout: 180 seconds]\n22:47 < mvngu> rbeezer: That sounds logical; I'll put it in now.\n22:47 < rbeezer> Or you can wait until I do a full review and take care of \n                 everything at once\n22:47 < mvngu> rbeezer: OK. Let's work on the Mercurial issue now.\n```\n",
     "created_at": "2009-10-12T05:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59054",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58942",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -632,15 +630,15 @@ archive/issue_comments_059054.json:
 
 ---
 
-archive/issue_comments_059055.json:
+archive/issue_comments_058943.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-12T19:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59055",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58943",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -650,15 +648,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_059056.json:
+archive/issue_comments_058944.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-13T01:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59056",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58944",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -668,15 +666,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059057.json:
+archive/issue_comments_058945.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-13T05:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59057",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58945",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -686,15 +684,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_059058.json:
+archive/issue_comments_058946.json:
 ```json
 {
     "body": "Hi Minh,\n\nThis is looking real good.  Just some details and questions:\n\n1.  In the first paragraph of the doc string for `characteristic_frequency()` you talk about plaintext and ciphertext.  Not sure somebody looking at this monoid code will be doing crypto.  Could you make the description more confined to properties of the monoid - just describe it as a property of letters in English usage?  The distinction with the `frequency_distribution()` is very good, so retain that.\n\n2.  Does `frequency_distribution()` need documentation on its inputs?  And should you change the nature of the output?  Perhaps you should stick to returning a probability space, and then just call `function()` on it as needed to get the dictionary you want.  Maybe somebody else will want to get something different from the probability distribution and want the more general object?  In any event, the first line of the docstring doesn't match the behavior.\n\n3.  Looked like there were some stray commented-out code statements in the cryptanalysis code?  Maybe you could review those and take out any that might be misleading.\n\n4.  You probably don't need to give me credit for the chi-square and squared-differences stuff, they are pretty standard measures of differences.  I also found the [SavHar99] reference more misleading than helpful.\n\n5.  On to affine cipher......\n\nRob",
     "created_at": "2009-10-13T05:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59058",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58946",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -718,15 +716,15 @@ Rob
 
 ---
 
-archive/issue_comments_059059.json:
+archive/issue_comments_058947.json:
 ```json
 {
     "body": "Replying to [comment:17 rbeezer]:\n> This is looking real good.  Just some details and questions:\n\nI'm now addressing your comments.",
     "created_at": "2009-10-13T05:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59059",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58947",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -739,15 +737,15 @@ I'm now addressing your comments.
 
 ---
 
-archive/issue_comments_059060.json:
+archive/issue_comments_058948.json:
 ```json
 {
     "body": "Attachment [trac_7123-clean-up.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-clean-up.patch) by mvngu created at 2009-10-13 21:47:18\n\nbased on Sage 4.1.2.rc0 and #7010",
     "created_at": "2009-10-13T21:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59060",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58948",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -759,15 +757,15 @@ based on Sage 4.1.2.rc0 and #7010
 
 ---
 
-archive/issue_comments_059061.json:
+archive/issue_comments_058949.json:
 ```json
 {
     "body": "Attachment [trac_7123-shift.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-shift.patch) by mvngu created at 2009-10-13 21:57:27\n\napply on top of previous",
     "created_at": "2009-10-13T21:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59061",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58949",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -779,15 +777,15 @@ apply on top of previous
 
 ---
 
-archive/issue_comments_059062.json:
+archive/issue_comments_058950.json:
 ```json
 {
     "body": "Replying to [comment:17 rbeezer]:\n> 1.  In the first paragraph of the doc string for `characteristic_frequency()` you talk about plaintext and ciphertext.  Not sure somebody looking at this monoid code will be doing crypto.  Could you make the description more confined to properties of the monoid - just describe it as a property of letters in English usage?  The distinction with the `frequency_distribution()` is very good, so retain that.\n\nDone. The documentation for `characteristic_frequency()` has been re-written to describe properties of a monoid. No more mentions of plaintext or ciphertext. I have also made a slight coding change to that function to increase its readability.\n\n\n\n\n\n> 2.  Does `frequency_distribution()` need documentation on its inputs?  \n\nDone. I have documented the parameters of the method `frequency_distribution()` and provided an example illustrating how to use the key word \"length\".\n\n\n\n\n\n> And should you change the nature of the output?  Perhaps you should stick to returning a probability space, and then just call `function()` on it as needed to get the dictionary you want.  Maybe somebody else will want to get something different from the probability distribution and want the more general object?  In any event, the first line of the docstring doesn't match the behavior.\n\nDone. The method `frequency_distribution()` now returns a probability space. In order to get the frequency probability distribution, use `frequency_distribution().function()`.\n\n\n\n\n\n> 3.  Looked like there were some stray commented-out code statements in the cryptanalysis code?  Maybe you could review those and take out any that might be misleading.\n\nFixed.\n\n\n\n\n\n> 4.  You probably don't need to give me credit for the chi-square and squared-differences stuff, they are pretty standard measures of differences.  I also found the [SavHar99] reference more misleading than helpful.\n\nFixed. I now only reference the Wikipedia articles on the Pearson chi-square test, and the residual sum of squares measure.",
     "created_at": "2009-10-13T22:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59062",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58950",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -832,15 +830,15 @@ Fixed. I now only reference the Wikipedia articles on the Pearson chi-square tes
 
 ---
 
-archive/issue_comments_059063.json:
+archive/issue_comments_058951.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-13T22:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59063",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58951",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -850,15 +848,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059064.json:
+archive/issue_comments_058952.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-14T06:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59064",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58952",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -868,15 +866,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059065.json:
+archive/issue_comments_058953.json:
 ```json
 {
     "body": "Minh,\n\nLooks real good.\n\nBuilds, passes all tests, documentation is a model everybody should look at.\n\nPositive review.\n\nRob",
     "created_at": "2009-10-14T06:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59065",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58953",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -894,15 +892,15 @@ Rob
 
 ---
 
-archive/issue_comments_059066.json:
+archive/issue_comments_058954.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"cryptanalysis shift\".",
     "created_at": "2009-10-14T06:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59066",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58954",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -912,15 +910,15 @@ Changing keywords from "" to "cryptanalysis shift".
 
 ---
 
-archive/issue_comments_059067.json:
+archive/issue_comments_058955.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2009-10-19T07:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59067",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58955",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -930,15 +928,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_059068.json:
+archive/issue_comments_058956.json:
 ```json
 {
     "body": "Attachment [trac_7123-iter.patch](tarball://root/attachments/some-uuid/ticket7123/trac_7123-iter.patch) by @mwhansen created at 2009-10-19 07:17:35\n\nThis doesn't work after the changes in #7198.",
     "created_at": "2009-10-19T07:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59068",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58956",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -950,15 +948,15 @@ This doesn't work after the changes in #7198.
 
 ---
 
-archive/issue_comments_059069.json:
+archive/issue_comments_058957.json:
 ```json
 {
     "body": "I've attached a patch which fixes the issue.",
     "created_at": "2009-10-19T07:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59069",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58957",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -968,15 +966,15 @@ I've attached a patch which fixes the issue.
 
 ---
 
-archive/issue_comments_059070.json:
+archive/issue_comments_058958.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-19T07:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59070",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58958",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -986,15 +984,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059071.json:
+archive/issue_comments_058959.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-19T08:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59071",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58959",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1004,15 +1002,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059072.json:
+archive/issue_comments_058960.json:
 ```json
 {
     "body": "The patch `trac_7123-iter.patch` looks good. Doctesting the whole Sage library, the only failure I got is the following:\n\n```\nsage -t -long devel/sage/sage/modules/vector_double_dense.pyx\n**********************************************************************\nFile \"/scratch/mvngu/sage-4.2.alpha0-sage.math/devel/sage-main/sage/modules/vector_double_dense.pyx\", line 663:\n    sage: v.stats_kurtosis()\nExpected:\n    -1.23\nGot:\n    doctest:106: SyntaxWarning: assertion is always true, perhaps remove parentheses?\n    -1.23\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_29\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_vector_double_dense.py\n         [2.5 s]\n```\n\nThis doctest passed on a second try.",
     "created_at": "2009-10-19T08:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59072",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58960",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1042,15 +1040,15 @@ This doctest passed on a second try.
 
 ---
 
-archive/issue_comments_059073.json:
+archive/issue_comments_058961.json:
 ```json
 {
     "body": "Since #7198 was backed out, I only merged trac_7123-clean-up.patch and trac_7123-shift.patch.",
     "created_at": "2009-10-19T13:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59073",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58961",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1060,15 +1058,15 @@ Since #7198 was backed out, I only merged trac_7123-clean-up.patch and trac_7123
 
 ---
 
-archive/issue_comments_059074.json:
+archive/issue_comments_058962.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-19T13:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7123",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-59074",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7123#issuecomment-58962",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003339.json:
     "body": "Assignee: mabshoff\n\nCC:  mhampton @jdemeyer\n\nThe tachyon spkg is not clean upstream sources:\n\n[tabbott`@`debuild export$] diff -ur tmp/tachyon tmp/tachyon-0.98~beta/\nOnly in tmp/tachyon/demosrc: CVS\nOnly in tmp/tachyon/docs: CVS\nOnly in tmp/tachyon/librtvi: CVS\nOnly in tmp/tachyon/msvc: CVS\nOnly in tmp/tachyon/msvc/tachyon: CVS\nOnly in tmp/tachyon/msvc/tachyon/libtachyon: CVS\nOnly in tmp/tachyon/msvc/tachyon/tachyon: CVS\nOnly in tmp/tachyon/msvc/tachyon/tachyon_ogl: CVS\nOnly in tmp/tachyon: scenes\nOnly in tmp/tachyon/src: CVS\nOnly in tmp/tachyon/unix: CVS\ndiff -ur tmp/tachyon/unix/Make-arch tmp/tachyon-0.98~beta/unix/Make-arch\n--- tmp/tachyon/unix/Make-arch  2007-02-13 04:00:36.000000000 -0500\n+++ tmp/tachyon-0.98~beta/unix/Make-arch        2007-05-06 01:12:48.000000000 -0400\n`@``@` -873,12 +873,15 `@``@`\n        $(MAKE) all \\\n        \"ARCH = macosx-thr\" \\\n        \"CC = cc\" \\\n-       \"CFLAGS = -Os -ffast-math -DBsd -DTHR -F/System/Library/Frameworks $(MISCFLAGS)\" \\\n+       \"CFLAGS = -Os -ffast-math -DTHR $(MISCFLAGS)\" \\\n        \"AR = ar\" \\\n        \"ARFLAGS = r\" \\\n        \"STRIP = strip\" \\\n        \"RANLIB = ranlib\" \\\n-       \"LIBS = -L. -ltachyon $(MISCLIB) -lpthread -framework Carbon\"\n+       \"LIBS = -L. -ltachyon $(MISCLIB) -lpthread\"\n+\n+#\"CFLAGS = -Os -ffast-math -DBsd -DTHR -F/System/Library/Frameworks $(MISCFLAGS)\" \\\n+#\"LIBS = -L. -ltachyon $(MISCLIB) -lpthread -framework Carbon\"\n\n macosx-altivec:\n        $(MAKE) all \\\ndiff -ur tmp/tachyon/unix/Make-config tmp/tachyon-0.98~beta/unix/Make-config\n--- tmp/tachyon/unix/Make-config        2007-01-24 03:35:44.000000000 -0500\n+++ tmp/tachyon-0.98~beta/unix/Make-config      2007-05-06 00:55:52.000000000 -0400\n`@``@` -127,15 +127,9 `@``@`\n # LibPNG can be downlaoded from:\n #   http://www.libpng.org/\n ##########################################################################\n-# Uncomment the following lines to disable PNG support\n-USEPNG=\n-PNGINC=\n-PNGLIB=\n-\n-# Uncomment the following lines to enable PNG support\n-#USEPNG= -DUSEPNG\n-#PNGINC= -I/usr/local/include\n-#PNGLIB= -L/usr/local/lib -lpng -lz\n+USEPNG= -DUSEPNG\n+PNGINC= -I$(SAGE_LOCAL)/include\n+PNGLIB= -L$(SAGE_LOCAL)/lib -lpng -lz\n\n\n ##########################################################################\n\n\nThe PNG change can be replaced without a patch by using\nmake USEPNG=-DUSEPNG PNGINC=-I$(SAGE_LOCAL)/include PNGLIB=-L$(SAGE_LOCAL)/lib -lpng -lz\nthough it's a bit ugly.\n\nwhile the other change is OS X stuff which I don't understand, so maybe we'll have to keep that change.\n\nThere isn't a new upstream release out yet, though.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3339\n\n",
     "created_at": "2008-05-30T17:38:05Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "tachyon spkg is not clean upstream",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3339",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: mabshoff
@@ -96,15 +95,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3339
 
 ---
 
-archive/issue_comments_023190.json:
+archive/issue_comments_023142.json:
 ```json
 {
     "body": "Tachyon has been upgraded fairly recently - is this maybe no longer an issue?",
     "created_at": "2011-02-16T22:28:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3339",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23190",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23142",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -114,15 +113,15 @@ Tachyon has been upgraded fairly recently - is this maybe no longer an issue?
 
 ---
 
-archive/issue_comments_023191.json:
+archive/issue_comments_023143.json:
 ```json
 {
     "body": "I just tried the same command, and now the only problem is that which is documented in the SPKG.txt\n\n```\nOnly in Downloads/TestTachyon/tachyon/: msvc\nOnly in Downloads/TestTachyon/tachyon/: scenes\n```\n\nSo this ticket can be closed.",
     "created_at": "2011-06-28T16:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3339",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23191",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23143",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -139,15 +138,15 @@ So this ticket can be closed.
 
 ---
 
-archive/issue_comments_023192.json:
+archive/issue_comments_023144.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-06-28T16:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3339",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23192",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23144",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -157,15 +156,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_023193.json:
+archive/issue_comments_023145.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-06-28T16:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3339",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23193",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23145",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -175,15 +174,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_023194.json:
+archive/issue_comments_023146.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2011-07-05T10:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3339",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23194",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3339#issuecomment-23146",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

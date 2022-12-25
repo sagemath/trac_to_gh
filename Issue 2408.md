@@ -6,7 +6,7 @@ archive/issues_002408.json:
     "body": "Assignee: @malb\n\nMPolynomial_libsingular.factor does not set units.\n\nWe now have\n\n\n```\nsage: R.<x,y,z> = QQ[]\nsage: p = -1*(x*y+z)  \nsage: F = p.factor(); F\n(-1) * (x*y + z)\nsage: F.unit()\n1\nsage: len(F)\n2\n```\n\n\nIt should be\n\n```\nsage: F = p.factor(); F\nx*y + z\nsage: F.unit()\n-1\nsage: len(F)\n1\n\nIssue created by migration from https://trac.sagemath.org/ticket/2408\n\n",
     "created_at": "2008-03-06T17:36:30Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002408.json:
     "title": "MPolynomial_libsingular.factor does not set units",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2408",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @malb
@@ -54,15 +54,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2408
 
 ---
 
-archive/issue_comments_016262.json:
+archive/issue_comments_016227.json:
 ```json
 {
     "body": "This works on 2.10.2, I was using 2.10 at the time. Sorry for the noise.",
     "created_at": "2008-03-06T18:07:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2408",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2408#issuecomment-16262",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/2408#issuecomment-16227",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -72,15 +72,15 @@ This works on 2.10.2, I was using 2.10 at the time. Sorry for the noise.
 
 ---
 
-archive/issue_comments_016263.json:
+archive/issue_comments_016228.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-03-06T18:07:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2408",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2408#issuecomment-16263",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/2408#issuecomment-16228",
+    "user": "https://github.com/burcin"
 }
 ```
 

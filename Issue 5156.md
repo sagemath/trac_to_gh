@@ -6,15 +6,13 @@ archive/issues_005156.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5156\n\n",
     "created_at": "2009-02-02T02:35:56Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "implement computation of the conjectural (analytic) order of Sha for elliptic curves over Heegner quadratic imaginary fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5156",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5156
 
 ---
 
-archive/issue_comments_039490.json:
+archive/issue_comments_039414.json:
 ```json
 {
     "body": "Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156.patch) by @williamstein created at 2009-02-02 08:35:43",
     "created_at": "2009-02-02T08:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39490",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39414",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [trac_5156.patch](tarball://root/attachments/some-uuid/ticket5156/tra
 
 ---
 
-archive/issue_comments_039491.json:
+archive/issue_comments_039415.json:
 ```json
 {
     "body": "Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-part2.patch) by @williamstein created at 2009-02-02 09:01:58",
     "created_at": "2009-02-02T09:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39491",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39415",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +63,15 @@ Attachment [trac_5156-part2.patch](tarball://root/attachments/some-uuid/ticket51
 
 ---
 
-archive/issue_comments_039492.json:
+archive/issue_comments_039416.json:
 ```json
 {
     "body": "Applied to 3.3.alpha2, I get the following errors:\n\n\n```\n**********************************************************************\n\"sage/schemes/elliptic_curves/ell_rational_field.py\", line 4033:\n    sage: P = G(E.0) + G(E.1) + G(phi(F.0)); P\nExpected:\n    (-51/1058*a + 141/1058 : -1581/12167*a - 9912/12167 : 1)            \nGot:\n    (-867/3872*a - 3615/3872 : -18003/170368*a - 374575/170368 : 1)\n**********************************************************************\n\"sage/schemes/elliptic_curves/ell_rational_field.py\", line 4036:\n    sage: P.division_points(2)\nExpected:\n    [(1/2*a - 1/2 : 1/2*a - 5/2 : 1)]                                   \nGot:\n    [(1/8*a + 5/8 : -5/16*a - 9/16 : 1)]\n**********************************************************************\n```\n",
     "created_at": "2009-02-05T18:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39492",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39416",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -103,15 +101,15 @@ Got:
 
 ---
 
-archive/issue_comments_039493.json:
+archive/issue_comments_039417.json:
 ```json
 {
     "body": "The above errors still happen when applying the patches to 3.3.alpha5.",
     "created_at": "2009-02-05T20:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39493",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39417",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -121,15 +119,15 @@ The above errors still happen when applying the patches to 3.3.alpha5.
 
 ---
 
-archive/issue_comments_039494.json:
+archive/issue_comments_039418.json:
 ```json
 {
     "body": "Should this be a \"needs work\". Given the above trouble this will likely not make it into 3.3.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-07T06:45:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39494",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39418",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -143,15 +141,15 @@ Michael
 
 ---
 
-archive/issue_comments_039495.json:
+archive/issue_comments_039419.json:
 ```json
 {
     "body": "Fyi those are harmless errors since choice of basis is not well defined; ie prob. A 64 vs 32 bit problem.  I will post update once i get computer access. Rlm, could you finish the review?",
     "created_at": "2009-02-07T19:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39495",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39419",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -161,15 +159,15 @@ Fyi those are harmless errors since choice of basis is not well defined; ie prob
 
 ---
 
-archive/issue_comments_039496.json:
+archive/issue_comments_039420.json:
 ```json
 {
     "body": "Replying to [comment:6 was]:\n> Fyi those are harmless errors since choice of basis is not well defined; ie prob. A 64 vs 32 bit problem.  I will post update once i get computer access. Rlm, could you finish the review?\n\nDoes that mean that `E.0` etc. are not canonically defined? I didn't know that 32/64 bit made a difference there...\n\nOther than this failure, I give it a positive review.",
     "created_at": "2009-02-07T23:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39496",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39420",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -184,15 +182,15 @@ Other than this failure, I give it a positive review.
 
 ---
 
-archive/issue_comments_039497.json:
+archive/issue_comments_039421.json:
 ```json
 {
     "body": "> Does that mean that E.0 etc. are not canonically defined? \n\nYes. They depend on how the algorithm to compute them runs.  They're just some basis for some abstract-ish abelian group.  \n\n> I didn't know that 32/64 bit made a difference there... \n\nNot surprisingly, mwrank runs differently on 32 and 64-bit computers.",
     "created_at": "2009-02-09T15:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39497",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39421",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -208,15 +206,15 @@ Not surprisingly, mwrank runs differently on 32 and 64-bit computers.
 
 ---
 
-archive/issue_comments_039498.json:
+archive/issue_comments_039422.json:
 ```json
 {
     "body": "I changed the subject so this ticket is picked up by the right reports since it is otherwise harder to find for me.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T22:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39498",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39422",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -230,15 +228,15 @@ Michael
 
 ---
 
-archive/issue_comments_039499.json:
+archive/issue_comments_039423.json:
 ```json
 {
     "body": "The offending doctest is this one:\n\n\n```\nsage: F = E.quadratic_twist(-7)\nsage: K = QuadraticField(-7,'a')\nsage: G = E.change_ring(K) \nsage: phi = F.change_ring(K).isomorphism_to(G)\nsage: P = G(E.0) + G(E.1) + G(phi(F.0)); P\n(-51/1058*a + 141/1058 : -1581/12167*a - 9912/12167 : 1)            # 32-bit\n(-867/3872*a - 3615/3872 : -18003/170368*a - 374575/170368 : 1)     # 64-bit\nsage: P.division_points(2)\n[(1/2*a - 1/2 : 1/2*a - 5/2 : 1)]                                   # 32-bit\n[(1/8*a + 5/8 : -5/16*a - 9/16 : 1)]                                # 64-bit\n```\n\n\nOn both my 32-bit OSX install and 64-bit sage.math, I get the 64-bit answer. Are there any machines where the 32-bit answer occurs?",
     "created_at": "2009-02-10T20:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39499",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39423",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -265,15 +263,15 @@ On both my 32-bit OSX install and 64-bit sage.math, I get the 64-bit answer. Are
 
 ---
 
-archive/issue_comments_039500.json:
+archive/issue_comments_039424.json:
 ```json
 {
     "body": "On my 32-bit machine I get the so-called 64-bit answer.\n\nI ought to be able to say what might cause mwrank to produce different gens, but I cannot.  As this curve is in the database, then IF you have the large database installed (with gens) it will use those gens and be deterministic, while ELSE it will compute them.\n\nFor this doctest I suggest killing the display of P and changing the last line into \n\n```\nsage: len(P.division_points(2))\n1\n```\n\n\nBy the way, I am worried that part of this patch will conflict with #4274 which affects the same file, parsing the mwrank output, which I reviewed and repatched earlier today, and which mabshoff has already merged.",
     "created_at": "2009-02-15T17:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39500",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39424",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -295,15 +293,15 @@ By the way, I am worried that part of this patch will conflict with #4274 which 
 
 ---
 
-archive/issue_comments_039501.json:
+archive/issue_comments_039425.json:
 ```json
 {
     "body": "PS I meant to say -- beautiful patch!  Useful functions, well implemented and documented.\n\nThe function _heegner_index_in_EK() does not really need the Heegned hypothesis, I think.  You do use the fact that K is imaginary quadratic in the algorithm, but that is all.  So you could change checking Heegner hyp. into checking D<0.  It is also tempting to suggest writing a version which works OK for real quadratic extensions, but I cannot think of a situation when that would be used (though I guess that Darmon might!)\n\nJohn",
     "created_at": "2009-02-15T18:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39501",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39425",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -317,15 +315,15 @@ John
 
 ---
 
-archive/issue_comments_039502.json:
+archive/issue_comments_039426.json:
 ```json
 {
     "body": "Any movement here? It seems easy enough to fix by adjusting the doctest.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T07:55:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39502",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39426",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -339,15 +337,15 @@ Michael
 
 ---
 
-archive/issue_comments_039503.json:
+archive/issue_comments_039427.json:
 ```json
 {
     "body": "This patch needs to be rebased:\n\n```\nsage-3.4.1.alpha0/devel/sage$ patch -p1 --dry-run < trac_5156.patch \npatching file sage/schemes/elliptic_curves/ell_rational_field.py\nHunk #1 FAILED at 1350.\nHunk #2 succeeded at 4683 (offset 533 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_rational_field.py.rej\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T07:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39503",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39427",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -370,15 +368,15 @@ Michael
 
 ---
 
-archive/issue_comments_039504.json:
+archive/issue_comments_039428.json:
 ```json
 {
     "body": "Attachment [trac_5156-rebased_and_flattened.patch](tarball://root/attachments/some-uuid/ticket5156/trac_5156-rebased_and_flattened.patch) by @rlmill created at 2009-04-08 21:24:20\n\nFinally the patch is ready to merge. Merge only the latest patch.",
     "created_at": "2009-04-08T21:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39504",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39428",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -390,15 +388,15 @@ Finally the patch is ready to merge. Merge only the latest patch.
 
 ---
 
-archive/issue_comments_039505.json:
+archive/issue_comments_039429.json:
 ```json
 {
     "body": "Merged trac_5156-rebased_and_flattened.patch in Sage 3.4.1.rc2. There is some possibility of numerical noise issues, but I guess we can deal with that and William is happy to fix this patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T02:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39505",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39429",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -412,15 +410,15 @@ Michael
 
 ---
 
-archive/issue_comments_039506.json:
+archive/issue_comments_039430.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-09T02:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5156",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39506",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5156#issuecomment-39430",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

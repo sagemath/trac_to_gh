@@ -6,7 +6,7 @@ archive/issues_000483.json:
     "body": "Assignee: @williamstein\n\n* fixes two tiny bugs in my previous patch, one in cocoa.py and one in expect.py (that's 5827.patch ), thanks dropdrive on #sage-devel\n\n* add doc on how to do ssh through hops \n(that's 5828.patch )\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/483\n\n",
     "created_at": "2007-08-23T10:06:39Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000483.json:
     "title": "follow up to #439 (remote interface with as many hops)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/483",
-    "user": "pdehaye"
+    "user": "https://trac.sagemath.org/admin/accounts/users/pdehaye"
 }
 ```
 Assignee: @williamstein
@@ -34,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/483
 
 ---
 
-archive/issue_comments_002411.json:
+archive/issue_comments_002401.json:
 ```json
 {
     "body": "Attachment [5827.patch](tarball://root/attachments/some-uuid/ticket483/5827.patch) by pdehaye created at 2007-08-23 10:07:09",
     "created_at": "2007-08-23T10:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2411",
-    "user": "pdehaye"
+    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2401",
+    "user": "https://trac.sagemath.org/admin/accounts/users/pdehaye"
 }
 ```
 
@@ -52,15 +52,15 @@ Attachment [5827.patch](tarball://root/attachments/some-uuid/ticket483/5827.patc
 
 ---
 
-archive/issue_comments_002412.json:
+archive/issue_comments_002402.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-23T10:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2412",
-    "user": "pdehaye"
+    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2402",
+    "user": "https://trac.sagemath.org/admin/accounts/users/pdehaye"
 }
 ```
 
@@ -70,15 +70,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002413.json:
+archive/issue_comments_002403.json:
 ```json
 {
     "body": "Attachment [5828.patch](tarball://root/attachments/some-uuid/ticket483/5828.patch) by pdehaye created at 2007-08-23 10:09:53",
     "created_at": "2007-08-23T10:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2413",
-    "user": "pdehaye"
+    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2403",
+    "user": "https://trac.sagemath.org/admin/accounts/users/pdehaye"
 }
 ```
 
@@ -88,15 +88,15 @@ Attachment [5828.patch](tarball://root/attachments/some-uuid/ticket483/5828.patc
 
 ---
 
-archive/issue_comments_002414.json:
+archive/issue_comments_002404.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to pdehaye.",
     "created_at": "2007-08-23T10:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2414",
-    "user": "pdehaye"
+    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2404",
+    "user": "https://trac.sagemath.org/admin/accounts/users/pdehaye"
 }
 ```
 
@@ -106,15 +106,15 @@ Changing assignee from @williamstein to pdehaye.
 
 ---
 
-archive/issue_comments_002415.json:
+archive/issue_comments_002405.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-29T03:11:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2415",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2405",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -124,15 +124,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_002416.json:
+archive/issue_comments_002406.json:
 ```json
 {
     "body": "applied for sage-2.8.3.",
     "created_at": "2007-08-29T03:11:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/483",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2416",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/483#issuecomment-2406",
+    "user": "https://github.com/williamstein"
 }
 ```
 

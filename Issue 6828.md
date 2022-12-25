@@ -6,15 +6,14 @@ archive/issues_006828.json:
     "body": "Assignee: @rlmill\n\nI needed to create one of those, and thought it may be useful in sage... Several lines for a new Graph generator ;-)\n\nI used the position dictionary from CompleteBipartiteGraph, so we should be out of trouble on this point ;-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6828\n\n",
     "created_at": "2009-08-26T13:36:17Z",
     "labels": [
-        "graph theory",
-        "minor",
-        "enhancement"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] Random Bipartite Graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6828",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6828
 
 ---
 
-archive/issue_comments_056315.json:
+archive/issue_comments_056213.json:
 ```json
 {
     "body": "Attachment [random_bipartite.patch](tarball://root/attachments/some-uuid/ticket6828/random_bipartite.patch) by @nathanncohen created at 2009-08-26 13:36:29",
     "created_at": "2009-08-26T13:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56315",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56213",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [random_bipartite.patch](tarball://root/attachments/some-uuid/ticket6
 
 ---
 
-archive/issue_comments_056316.json:
+archive/issue_comments_056214.json:
 ```json
 {
     "body": "Hi Nathann,\n\nSeveral of my comments at #6823 apply here - just a diff file rather than a Mercurial file, use \"trac_xxxx\" for the filename, and the inputs should be checked for errors.  In this case the probability should be checked and n1 and n2 should be checked that they are positive - making one negative does decrease the total.\n\nIt would seem that the final call to the `BipartiteGraph` generator can cause problems.  Try 15 to 20 vertices in each part with a very low edge-probability like 0.01, then despite having a good pos_dict, the isolated vertices of one part move into a different \"half\" of the plot.\n\nCan you make the name look better than `Random bipartite graph: graph on 30 vertices`?  Maybe this is a consequence of final call as well.  Maybe the probability could be included in the name?\n\nI think the construction `range(n1+n2)[n1:]` can be accomplished more clearly with `range(n1,n1+n2)`.\n\nRob",
     "created_at": "2009-09-22T06:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56316",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56214",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -77,15 +76,15 @@ Rob
 
 ---
 
-archive/issue_comments_056317.json:
+archive/issue_comments_056215.json:
 ```json
 {
     "body": "Looks like I went into a lot of trouble for nothing ;-)\n\nI did not even need to create the positions myself !\n\nThanks for your remarks, I am slowly learning Python through reviews :-)\n\nNathann",
     "created_at": "2009-09-26T15:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56317",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56215",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -101,15 +100,15 @@ Nathann
 
 ---
 
-archive/issue_comments_056318.json:
+archive/issue_comments_056216.json:
 ```json
 {
     "body": "Hi Nathann,\n\nI like the new names for the vertices, and it looks much better for graphs with low edge probability the way you are doing it now.  Some more comments:\n\n1.  Checking for errors usually involves raising an error, rather than using an assert.  Poke around in the code and I think you will see more often a style like:\n\n\n```\nif not((p>=0 and p<=1):\n  raise ValueError, \"Parameter p is a probability, and so should be a real value between 0 and 1\"\n```\n\n\nI'd place them after the imports, but that's just me.\n\n2.  You need to paste in the output of your test.  Right now it is failing.  You really should make sure all your tests pass before someone stops in to do a review.\n\n3.  You should also test the two checks on the input - in a section called `TESTS`\n\n4.  Your EXAMPLE section needs to have two semicolons to create the verbatim section, so at least you need a `::` on a line by itself prior to each test.  (Maybe two semicolons right after EXAMPLE will work as well - I'm having trouble checking this right now with my setup.)  This ensures you get the right formatting in the reference manual.  Again, take a look at what is done elsewhere in the source and compare with the output, then make sure your output also works properly before seeking a review.\n\nI think most of the above applies to #6823, which I haven't commented on.  Adding the Odd graphs there is great, though.\n\nRob",
     "created_at": "2009-09-27T06:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56318",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56216",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -142,15 +141,15 @@ Rob
 
 ---
 
-archive/issue_comments_056319.json:
+archive/issue_comments_056217.json:
 ```json
 {
     "body": "This one should be Ok, sorry for the trouble... ;-)\n\nBy the way, I built the documentation and was able to see a TESTS:: section.. I thought this part would be hided in the documentation as it is meant to be read by users and \"tests\" is something like an \"internal tool\".\n\nI thought I'd put the \"raise\" after the \"import\", because in case the inputs are wrong there is no need to import libraries.. ^^;\n\nNathann",
     "created_at": "2009-09-29T09:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56319",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56217",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -166,15 +165,15 @@ Nathann
 
 ---
 
-archive/issue_comments_056320.json:
+archive/issue_comments_056218.json:
 ```json
 {
     "body": "Attachment [trac_6828.patch](tarball://root/attachments/some-uuid/ticket6828/trac_6828.patch) by @nathanncohen created at 2009-09-29 09:51:26",
     "created_at": "2009-09-29T09:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56320",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56218",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -184,15 +183,15 @@ Attachment [trac_6828.patch](tarball://root/attachments/some-uuid/ticket6828/tra
 
 ---
 
-archive/issue_comments_056321.json:
+archive/issue_comments_056219.json:
 ```json
 {
     "body": "Nathann,\n\nLooks real good.  Yes, you would think the TESTS section would not migrate to the reference manual, but right now I think it is really treated no differently.  But I guess in some cases what it contains is useful to read.  Maybe.\n\nAll three new graph generators are welcome additions - thanks for adding them.  And thanks for your patience with all the suggestions.\n\nBuilds on 4.1.2.alpha2, passes all long tests.  Positive review.\n\nRob",
     "created_at": "2009-09-30T05:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56321",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56219",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -210,15 +209,15 @@ Rob
 
 ---
 
-archive/issue_comments_056322.json:
+archive/issue_comments_056220.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"bipartite graph generator\".",
     "created_at": "2009-09-30T05:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56322",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56220",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -228,15 +227,15 @@ Changing keywords from "" to "bipartite graph generator".
 
 ---
 
-archive/issue_comments_056323.json:
+archive/issue_comments_056221.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-15T10:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6828",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56323",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6828#issuecomment-56221",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

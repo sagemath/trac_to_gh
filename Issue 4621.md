@@ -6,15 +6,14 @@ archive/issues_004621.json:
     "body": "Assignee: tbd\n\nCC:  @kliem @slel\n\nKeywords: canonical embedding subfield\n\nReported by Alex Raichev at http://groups.google.com/group/sage-support/browse_thread/thread/c11289d794299903\n\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: a^2\n2\nsage: a^2 in QQ\nTrue\nsage: a^2 in QQbar\nFalse\nsage: 2 in QQbar\nTrue \n```\n\nor more directly\n\n```\nsage: F(2) in QQbar\nFalse\n```\n\n\nPerhaps related to this is\n\n```\nsage: F.<a>=NumberField(x^2-2)\nsage: QQ.is_subring(F)\nTrue\nsage: F.is_subring(QQbar)\nFalse \n```\n\n\nRobert Bradshow comments that `F.is_subring(QQbar)` should be `False`, because `QQbar` has a canonical embedding into `CC`, but `F` has not.\n\nSo, from that point of view, it makes sense that `a^2` is in `F` but not in `QQbar`. However, `a^2` is equal to `2` after all, and hence is in a part of `F` that *does* have a canonical embedding.\n\nIn other words, we have a field element x in F_1 such that there is in fact a subfield F_2 of F_1 with x in F_1. Moreover, we have a field F_3 such that F_2 has a canonical embedding into F_3, but F_1 has no canonical embedding.\n\nIs it possible for Sage to detect that situation? \n\nIdea: Is there a *unique* maximal subfield F_m of F_1 that has a canonical embedding into F_3? If there is, there could be a method `max_subfield_coercing_into(...)`. \n\nThen, in the original example, we probably have \n\n```\nsage: F.max_subfield_coercing_into(QQbar)\nRational Field\n```\n\nand then `x in QQbar` would answer True, since \n\n```\nsage: x in F_1.max_subfield_coercing_into(QQbar)\nTrue\n```\n\n\nSorry if that idea is not realistic.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4621\n\n",
     "created_at": "2008-11-26T11:26:25Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "'2' not in QQbar -- canonical embedding of subfields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4621",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: tbd
@@ -92,15 +91,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4621
 
 ---
 
-archive/issue_comments_034739.json:
+archive/issue_comments_034672.json:
 ```json
 {
     "body": "Attachment [4621-qqbar-embed.patch](tarball://root/attachments/some-uuid/ticket4621/4621-qqbar-embed.patch) by @robertwb created at 2010-01-17 00:26:44\n\nThis issue is fixed. Followup about embedding into QQbar at #7960.",
     "created_at": "2010-01-17T00:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34739",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34672",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -112,15 +111,15 @@ This issue is fixed. Followup about embedding into QQbar at #7960.
 
 ---
 
-archive/issue_comments_034740.json:
+archive/issue_comments_034673.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-17T00:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34740",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34673",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -130,15 +129,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_034741.json:
+archive/issue_comments_034674.json:
 ```json
 {
     "body": "A side effect of this patch is the following because it now tries to explicitly convert its argument to QQ. Is that desirable?\n\n\n```\nsage: GF(7)(2) in QQbar\nTrue\n```\n\n\n(Related 'in's:\n\n```\nsage: GF(7)(2) in ZZ\nTrue\nsage: GF(7)(2) in QQ\nFalse\nsage: GF(7)(2) in QQbar\nTrue\n```\n\n)",
     "created_at": "2010-01-17T20:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34741",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34674",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -168,15 +167,15 @@ True
 
 ---
 
-archive/issue_comments_034742.json:
+archive/issue_comments_034675.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-01-17T20:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34742",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34675",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -186,15 +185,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_034743.json:
+archive/issue_comments_034676.json:
 ```json
 {
     "body": "This exposes a separate but that == for QQbar is not symetric...\n\n\n```\nsage: GF(7)(2) == QQbar(2)\nFalse\nsage: QQbar(2) == GF(7)(2)\nTrue # after the patch, BOOM before, should be False\n```\n",
     "created_at": "2010-01-18T19:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34743",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34676",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -213,15 +212,15 @@ True # after the patch, BOOM before, should be False
 
 ---
 
-archive/issue_comments_034744.json:
+archive/issue_comments_034677.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-01-18T20:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34744",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34677",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -231,15 +230,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_034745.json:
+archive/issue_comments_034678.json:
 ```json
 {
     "body": "See #7984 for a fix for QQbar cmp.",
     "created_at": "2010-01-18T20:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34745",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34678",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -249,15 +248,15 @@ See #7984 for a fix for QQbar cmp.
 
 ---
 
-archive/issue_comments_034746.json:
+archive/issue_comments_034679.json:
 ```json
 {
     "body": "For this to return True, one would have to change the definition of canonical comparison--not something that should be done lightly.",
     "created_at": "2010-01-20T08:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34746",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34679",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -267,15 +266,15 @@ For this to return True, one would have to change the definition of canonical co
 
 ---
 
-archive/issue_comments_034747.json:
+archive/issue_comments_034680.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-01-20T08:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34747",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34680",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -285,15 +284,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_034748.json:
+archive/issue_comments_034681.json:
 ```json
 {
     "body": "Just a note -- this patch no longer works with #7984.",
     "created_at": "2011-12-17T20:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34748",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34681",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -303,15 +302,15 @@ Just a note -- this patch no longer works with #7984.
 
 ---
 
-archive/issue_comments_034749.json:
+archive/issue_comments_034682.json:
 ```json
 {
     "body": "The reason why this fails is\n\n```\nsage: F.<a>= NumberField(x^2-2)\nsage: two = F(2)\nsage: QQbar(two)\nTraceback (most recent call last):\n...\nTypeError: Illegal initializer for algebraic number\n```\n\nOne way to fix it is to be more flexible on creation of algebraic number (in `AA._element_constructor_` or `QQbar._element_constructor_`) or to implement a method `_algebraic_` to number field elements.\n\nVincent",
     "created_at": "2015-04-08T22:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34749",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34682",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -334,15 +333,15 @@ Vincent
 
 ---
 
-archive/issue_comments_034750.json:
+archive/issue_comments_034683.json:
 ```json
 {
     "body": "Replying to [comment:12 vdelecroix]:\n> The reason why this fails is\n> {{{\n> sage: F.<a>= NumberField(x^2-2)\n> sage: two = F(2)\n> sage: QQbar(two)\n> Traceback (most recent call last):\n> ...\n> TypeError: Illegal initializer for algebraic number\n> }}}\n> One way to fix it is to be more flexible on creation of algebraic number (in `AA._element_constructor_` or `QQbar._element_constructor_`) or to implement a method `_algebraic_` to number field elements.\n\nthe above is fixed in #14485 and #20400 but it does not solve the containment test!",
     "created_at": "2016-04-27T22:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34750",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34683",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -364,15 +363,15 @@ the above is fixed in #14485 and #20400 but it does not solve the containment te
 
 ---
 
-archive/issue_comments_034751.json:
+archive/issue_comments_034684.json:
 ```json
 {
     "body": "To put it another way.\n\nIn Sage 9.3.rc0:\n\n```\nsage: root2 = QuadraticField(2).gen()\nsage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)\n(False, False)\n```\n",
     "created_at": "2021-03-27T16:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34751",
-    "user": "@slel"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34684",
+    "user": "https://github.com/slel"
 }
 ```
 
@@ -391,15 +390,15 @@ sage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)
 
 ---
 
-archive/issue_comments_034752.json:
+archive/issue_comments_034685.json:
 ```json
 {
     "body": "Replying to [comment:16 slelievre]:\n> To put it another way.\n> \n> In Sage 9.3.rc0:\n> {{{\n> sage: root2 = QuadraticField(2).gen()\n> sage: root2 in QQbar, root2^2 in QQbar  # expected: (True, True)\n> (False, False)\n> }}}\n\nThe embedding is not set by writing only `QuadraticField(2)` (see also [#30518 comment:10](https://trac.sagemath.org/ticket/30518#comment:10)). You can compare with\n\n```\nsage: root2 = QuadraticField(2, embedding=AA(2).sqrt()).gen()\nsage: root2 in QQbar, root2^2 in QQbar\n(True, True)\n```\n\nThough the following is definitely annoying\n\n```\nsage: QuadraticField(2).one() in QQbar  # would better be true\nFalse\n```\n",
     "created_at": "2021-03-27T16:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34752",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34685",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -433,15 +432,15 @@ False
 
 ---
 
-archive/issue_comments_034753.json:
+archive/issue_comments_034686.json:
 ```json
 {
     "body": "Note that it will quickly become annoying with extensions\n\n```\nsage: K.<a> = QuadraticField(2, embedding=AA(2).sqrt())\nsage: x = polygen(ZZ)\nsage: L.<b> = K.extension(x**3 - x**2 - x - 1) \n```\n\n\n- Do you expect `QQbar(L(a))` to work?\n- What should be the result of `L(a) in QQbar`?",
     "created_at": "2021-03-27T16:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34753",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34686",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -461,15 +460,15 @@ sage: L.<b> = K.extension(x**3 - x**2 - x - 1)
 
 ---
 
-archive/issue_comments_034754.json:
+archive/issue_comments_034687.json:
 ```json
 {
     "body": "Note also that `1 == 1` does not hold in the following situation\n\n```\nsage: QuadraticField(2).one() == QuadraticField(3).one()\nTrue\n```\n\nAgain, with properly set embeddings it compares as a user might expect\n\n```\nsage: K2 = QuadraticField(2, embedding=AA(2).sqrt())\nsage: K3 = QuadraticField(3, embedding=AA(3).sqrt())\nsage: K2.one() == K3.one()\nTrue\n```\n",
     "created_at": "2021-03-27T17:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34754",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34687",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -494,15 +493,15 @@ True
 
 ---
 
-archive/issue_comments_034755.json:
+archive/issue_comments_034688.json:
 ```json
 {
     "body": "The only way I can imagine a fix would be to implement intersection of parents as part of the coercion model. It would have at least the following requirements\n- `C = A.intersection(B)` is a parent with injective coercions in both `A` and `B`\n- `A.intersection(B)` is identical to `B.intersection(A)`\n\nGiven that, we could design a more reasonable `sage.structure.element.Element.__richcmp__`.",
     "created_at": "2021-03-27T17:14:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34755",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34688",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -516,15 +515,15 @@ Given that, we could design a more reasonable `sage.structure.element.Element.__
 
 ---
 
-archive/issue_comments_034756.json:
+archive/issue_comments_034689.json:
 ```json
 {
     "body": "Thanks for launching a discussion on sage-devel:\n\n- https://groups.google.com/g/sage-devel/c/7-C6cpUyJdI",
     "created_at": "2021-04-04T17:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34756",
-    "user": "@slel"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34689",
+    "user": "https://github.com/slel"
 }
 ```
 
@@ -536,15 +535,15 @@ Thanks for launching a discussion on sage-devel:
 
 ---
 
-archive/issue_comments_034757.json:
+archive/issue_comments_034690.json:
 ```json
 {
     "body": "Sage development has entered the release candidate phase for 9.3. Setting a new milestone for this ticket based on a cursory review.",
     "created_at": "2021-04-07T19:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34757",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34690",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -554,15 +553,15 @@ Sage development has entered the release candidate phase for 9.3. Setting a new 
 
 ---
 
-archive/issue_comments_034758.json:
+archive/issue_comments_034691.json:
 ```json
 {
     "body": "Setting a new milestone for this ticket based on a cursory review.",
     "created_at": "2021-07-19T00:44:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34758",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34691",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -572,15 +571,15 @@ Setting a new milestone for this ticket based on a cursory review.
 
 ---
 
-archive/issue_comments_034759.json:
+archive/issue_comments_034692.json:
 ```json
 {
     "body": "Stalled in `needs_review` or `needs_info`; likely won't make it into Sage 9.5.",
     "created_at": "2021-12-18T19:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4621",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34759",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/4621#issuecomment-34692",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 

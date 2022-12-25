@@ -6,15 +6,14 @@ archive/issues_008526.json:
     "body": "Assignee: @haraldschilly\n\nCC:  @hivert\n\nIn a number of emails I get from trac, I see lines like this:\n\n\n```\nChanges (by newvalueoldvalue): \n```\n\n\nThe `newvalueoldvalue` should instead be an actual username. I'm not sure if this is an actual trac bug or if it's something about our configuration. For this ticket, someone should figure that out, and either file a new bug, fix the trac configuration, or file a bug with trac itself (if that's where the issue is).\n\nThis came up on the following sage-devel thread: \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/060f5430428fd945#\n\nIssue created by migration from https://trac.sagemath.org/ticket/8526\n\n",
     "created_at": "2010-03-13T18:10:45Z",
     "labels": [
-        "website/wiki",
-        "major",
+        "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Missing usernames in trac emails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8526",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @haraldschilly
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8526
 
 ---
 
-archive/issue_comments_077052.json:
+archive/issue_comments_076925.json:
 ```json
 {
     "body": "Fixed a while ago.",
     "created_at": "2014-03-04T15:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77052",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76925",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -61,15 +60,15 @@ Fixed a while ago.
 
 ---
 
-archive/issue_comments_077053.json:
+archive/issue_comments_076926.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-03-04T15:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77053",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76926",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -79,15 +78,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_077054.json:
+archive/issue_comments_076927.json:
 ```json
 {
     "body": "I got this on 4 march 2014:\n\n```\n#11840: sage.symbolic.expression.Expression.collect_common_factors has no\ndocumentation\n-------------------------------------+-------------------------------------\n       Reporter:  mjo                |        Owner:  mvngu\n           Type:  defect             |       Status:  needs_review\n       Priority:  major              |    Milestone:  sage-6.2\n      Component:  documentation      |   Resolution:\n       Keywords:  symbolic,          |    Merged in:\n  beginner                           |    Reviewers:\n        Authors:  Fr\u00e9d\u00e9ric Chapoton  |  Work issues:\nReport Upstream:  N/A                |       Commit:\n         Branch:  u/chapoton/11840   |  06d4fe0e2b1c40cbebd4f72ffd171ba9b2389db6\n   Dependencies:                     |     Stopgaps:\n-------------------------------------+-------------------------------------\nChanges (by {'newvalue': u'Fr\\xe9d\\xe9ric Chapoton', 'oldvalue': ''}):\n\n * status:  new => needs_review\n * commit:   => 06d4fe0e2b1c40cbebd4f72ffd171ba9b2389db6\n * branch:   => u/chapoton/11840\n * author:   => Fr\u00e9d\u00e9ric Chapoton\n\n\nComment:\n\n Here is a git branch with a little bit more documentation for this method.\n\n I have also taken the opportunity to put raise statement into python3\n format, and to use the trac role to add links to the tickets.\n ----\n New commits:\n ||[http://git.sagemath.org/sage.git/commit/?id=eeeb29316df0b8603bd73367fb6fd527c383692f\n eeeb293]||{{{trac #11840 first step, plus doc python 3 and trac role\n cleanup}}}||\n ||[http://git.sagemath.org/sage.git/commit/?id=06d4fe0e2b1c40cbebd4f72ffd171ba9b2389db6\n 06d4fe0]||`trac #11840 details, making sure that tests pass`||\n\n--\nTicket URL: <http://trac.sagemath.org/ticket/11840#comment:4>\nSage <http://www.sagemath.org>\nSage: Creating a Viable Open Source Alternative to Magma, Maple, Mathematica, and MATLAB\n```\n",
     "created_at": "2014-03-05T15:38:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77054",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76927",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -141,15 +140,15 @@ Sage: Creating a Viable Open Source Alternative to Magma, Maple, Mathematica, an
 
 ---
 
-archive/issue_comments_077055.json:
+archive/issue_comments_076928.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2014-03-05T15:38:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77055",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76928",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -159,15 +158,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_077056.json:
+archive/issue_comments_076929.json:
 ```json
 {
     "body": "Also recently:\n\n```\n#15857: change the licenses of schemes/toric/points.py,\nrings/number_field/splitting_field.py, libs/readline.pyx to GPLv2+ (from\nGPLv3+)\n-------------------------------------+-------------------------------------\n       Reporter:  was                |        Owner:\n           Type:  defect             |       Status:  positive_review\n       Priority:  major              |    Milestone:  sage-6.2\n      Component:  misc               |   Resolution:\n       Keywords:                     |    Merged in:\n        Authors:  Julian R\u00fcth        |    Reviewers:  Jeroen Demeyer\nReport Upstream:  N/A                |  Work issues:\n         Branch:                     |       Commit:\n  u/saraedum/ticket/15857            |  9566989f4aedf02479a125943e9c0570db0281e9\n   Dependencies:                     |     Stopgaps:\n-------------------------------------+-------------------------------------\nChanges (by {'newvalue': u'Julian R\\xfcth', 'oldvalue': ''}):\n\n * author:   => Julian R\u00fcth\n\n\nComment:\n\n (sorry)\n\n--\nTicket URL: <http://trac.sagemath.org/ticket/15857#comment:12>\nSage <http://www.sagemath.org>\nSage: Creating a Viable Open Source Alternative to Magma, Maple, Mathematica, and MATLAB\n```\n",
     "created_at": "2014-03-05T15:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77056",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76929",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -209,15 +208,15 @@ Sage: Creating a Viable Open Source Alternative to Magma, Maple, Mathematica, an
 
 ---
 
-archive/issue_comments_077057.json:
+archive/issue_comments_076930.json:
 ```json
 {
     "body": "This ticket appears to be outdated and should be closed.",
     "created_at": "2016-09-25T00:59:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77057",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76930",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -227,15 +226,15 @@ This ticket appears to be outdated and should be closed.
 
 ---
 
-archive/issue_comments_077058.json:
+archive/issue_comments_076931.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2016-09-25T00:59:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77058",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76931",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -245,15 +244,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_077059.json:
+archive/issue_comments_076932.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2016-09-25T01:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77059",
-    "user": "@paulmasson"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76932",
+    "user": "https://github.com/paulmasson"
 }
 ```
 
@@ -263,15 +262,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_077060.json:
+archive/issue_comments_076933.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2017-01-21T18:03:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-77060",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8526#issuecomment-76933",
+    "user": "https://github.com/vbraun"
 }
 ```
 

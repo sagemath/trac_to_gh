@@ -6,15 +6,14 @@ archive/issues_003301.json:
     "body": "Assignee: mabshoff\n\n\n```\nUbuntu 8.04, 64-bit.\n\nFails to build GMP.  All before this seems to work ok.\n\nFirst message that looks suspect in \"install.log\" is:\n\nPatching gmp-h.in (fixes OSX 10.5 issues and gcc 4.3 problems)\nDo we have a Core2 CPU?... No\n[: 220: ==: unexpected operator\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3301\n\n",
     "created_at": "2008-05-25T20:26:39Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Fix POSIX issues in gmp's spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3301",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3301
 
 ---
 
-archive/issue_comments_022841.json:
+archive/issue_comments_022794.json:
 ```json
 {
     "body": "The issue has been resolved in Sage 3.0.6.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-31T01:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3301#issuecomment-22841",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3301#issuecomment-22794",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -64,15 +63,15 @@ Michael
 
 ---
 
-archive/issue_comments_022842.json:
+archive/issue_comments_022795.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-31T01:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3301#issuecomment-22842",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3301#issuecomment-22795",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

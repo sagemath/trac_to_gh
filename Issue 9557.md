@@ -6,15 +6,13 @@ archive/issues_009557.json:
     "body": "Assignee: Vincent Delecroix\n\nKeywords: hyperbolic geometry, fundamental domains, Fuchsian groups\n\nGiven a discrete subgroup of PSL(2,R) there exists a fundamental domain of the action of this group on the hyperbolic plane. Knowing one fundamental domain for a group, gives you the fundamental domain for any subgroups. This module implement the passage from the fundamental domain of PSL(2,ZZ) to any subgroup of finite index\n\nThe way is work concerns only the second part as I have to improve the transition (subgroup of PSL(2,Z)) <-> (coset graph). The first line just build the coset graph associated to the congruence subgroup Gamma(3).\n\n```\nsage: g = sage.geometry.fundamental_domains.gamma_triangle_graph(3)\nsage: g\nTriangle graph (2,3,infinty) with 12 vertices\nsage: FundamentalDomain(g)\nFundamental domain of a subgroup of index 12\nsage: FundamentalDomain(g).show()\n```\n\n\nDependancy:\n #9439 on hyperbolic geometry\n\nIssue created by migration from https://trac.sagemath.org/ticket/9557\n\n",
     "created_at": "2010-07-20T17:53:35Z",
     "labels": [
-        "geometry",
-        "major",
-        "enhancement"
+        "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "fundamental domains for subgroups of PSL(2,ZZ)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9557",
-    "user": "@videlec"
+    "user": "https://github.com/videlec"
 }
 ```
 Assignee: Vincent Delecroix
@@ -46,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9557
 
 ---
 
-archive/issue_comments_092135.json:
+archive/issue_comments_091981.json:
 ```json
 {
     "body": "Attachment [trac_9557-fundamental_domains.patch](tarball://root/attachments/some-uuid/ticket9557/trac_9557-fundamental_domains.patch) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92135",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-91981",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -64,15 +62,15 @@ Attachment [trac_9557-fundamental_domains.patch](tarball://root/attachments/some
 
 ---
 
-archive/issue_comments_092136.json:
+archive/issue_comments_091982.json:
 ```json
 {
     "body": "I just made a git branch and cleaned the code. May not be working anymore ?\n----\nNew commits:",
     "created_at": "2015-06-28T10:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92136",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-91982",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -84,15 +82,15 @@ New commits:
 
 ---
 
-archive/issue_comments_092137.json:
+archive/issue_comments_091983.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-06-28T19:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92137",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-91983",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -102,15 +100,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_092138.json:
+archive/issue_comments_091984.json:
 ```json
 {
     "body": "This is a bit outdated. One now can do\n\n```\nsage: G = Gamma(2)\nsage: F = FareySymbol(G)\nsage: F.fundamental_domain()\n```\n",
     "created_at": "2015-06-28T19:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92138",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-91984",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -127,15 +125,15 @@ sage: F.fundamental_domain()
 
 ---
 
-archive/issue_comments_092139.json:
+archive/issue_comments_091985.json:
 ```json
 {
     "body": "OK.. So maybe we can close this one as duplicate/invalid ?\n\nOr is there something useful still ?\n\n\nBy the way, for another ticket: there is still a big gap in the hyperbolic plot routines: there is no good hyperbolic polygon class, like for the hyperbolic geodesics. I would need that and #16679 would benefit also.",
     "created_at": "2015-06-28T20:16:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92139",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-91985",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -150,15 +148,15 @@ By the way, for another ticket: there is still a big gap in the hyperbolic plot 
 
 ---
 
-archive/issue_comments_092140.json:
+archive/issue_comments_091986.json:
 ```json
 {
     "body": "`sage.plot.hyperbolic_polygon.hyperbolic_polygon`",
     "created_at": "2015-06-28T22:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92140",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-91986",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -168,15 +166,15 @@ archive/issue_comments_092140.json:
 
 ---
 
-archive/issue_comments_092141.json:
+archive/issue_comments_091987.json:
 ```json
 {
     "body": "Yes, but it only works for the upper half-plane model. And it is not integrated at all in the HyperbolicPlane setup. This is much needed in the Poincar\u00e9 disk model, in fact.",
     "created_at": "2015-06-29T06:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-92141",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9557#issuecomment-91987",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

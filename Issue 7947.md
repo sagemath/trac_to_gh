@@ -6,15 +6,14 @@ archive/issues_007947.json:
     "body": "Assignee: @tornaria\n\nCC:  @jonhanke\n\nAfter the fix in #7100 (rounding issues), there's still a bug in `the vectors_by_length()` code:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Q = QuadraticForm(ZZ, 4, [1,-1,-1,-1, 1,0,0, 4,-3, 4])\nsage: Q.vectors_by_length(3)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n| Sage Version 4.3, Release Date: 2009-12-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/tornaria/.sage/temp/sage/9609/_home_tornaria__sage_init_sage_0.py in <module>()\n\n/home/tornaria/sage/sage-4.3/local/lib/python2.6/site-packages/sage/quadratic_forms/quadratic_form__split_local_covering.pyc in vectors_by_length(self, bound)\n    213             ## Now go back and compute the bounds...\n    214             ## 2. Compute bounds\n--> 215             Z = (T[i] / Q[i][i]).sqrt(extend=False)\n    216             L[i] = ( Z - U[i]).floor()\n    217             x[i] = (-Z - U[i]).ceil()\n\n/home/tornaria/sage/sage-4.3/local/lib/python2.6/site-packages/sage/rings/real_double.so in sage.rings.real_double.RealDoubleElement.sqrt (sage/rings/real_double.c:10382)()\n\nValueError: negative number -0.888887555556 does not have a square root in the real field\n```\n\nYou can tell this is not a rounding issue from the error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7947\n\n",
     "created_at": "2010-01-16T14:24:23Z",
     "labels": [
-        "quadratic forms",
-        "major",
+        "component: quadratic forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "iteration error in QuadraticForm.vectors_by_length()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7947",
-    "user": "@tornaria"
+    "user": "https://github.com/tornaria"
 }
 ```
 Assignee: @tornaria
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7947
 
 ---
 
-archive/issue_comments_069335.json:
+archive/issue_comments_069216.json:
 ```json
 {
     "body": "Attachment [trac_7947.patch](tarball://root/attachments/some-uuid/ticket7947/trac_7947.patch) by @tornaria created at 2010-01-16 14:35:14\n\nfix iteration error in QuadraticForm.vectors_by_length()",
     "created_at": "2010-01-16T14:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69335",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69216",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -76,15 +75,15 @@ fix iteration error in QuadraticForm.vectors_by_length()
 
 ---
 
-archive/issue_comments_069336.json:
+archive/issue_comments_069217.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-16T14:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69336",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69217",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -94,15 +93,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069337.json:
+archive/issue_comments_069218.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-06T10:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69337",
-    "user": "@jonhanke"
+    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69218",
+    "user": "https://github.com/jonhanke"
 }
 ```
 
@@ -112,15 +111,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069338.json:
+archive/issue_comments_069219.json:
 ```json
 {
     "body": "This is a subtle bug which arises because negative numbers are created when the round and ceil functions cause upper and lower bounds to inadvertently move past each other.  The patch discards partial vectors where this happens by incrementing (successively if necessary) to the next possible partial vector, which is the correct thing to do.  Also the patch omits using a condition (i<n-1) as in Comment 3a slightly below the patch, which is ok because zero will always be an allowed value for the (n-1)st entry since that first allowed interval is not shifted at all.\n\nThe patch looks good. =)",
     "created_at": "2010-02-06T10:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69338",
-    "user": "@jonhanke"
+    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69219",
+    "user": "https://github.com/jonhanke"
 }
 ```
 
@@ -132,15 +131,15 @@ The patch looks good. =)
 
 ---
 
-archive/issue_comments_069339.json:
+archive/issue_comments_069220.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T14:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7947",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69339",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7947#issuecomment-69220",
+    "user": "https://github.com/qed777"
 }
 ```
 

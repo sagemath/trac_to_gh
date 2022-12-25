@@ -6,7 +6,7 @@ archive/issues_004059.json:
     "body": "Assignee: mabshoff\n\nHere is the tail of the build log for libm4ri. \n\n\n```\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking mm_malloc.h usability... no\nchecking mm_malloc.h presence... no\nchecking for mm_malloc.h... no\nchecking for a sed that does not truncate output... /usr/bin/sed\nchecking the number of available CPUs... 2 \nchecking the number of available CPUs... 2 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n./configure: line 21425: test: !=: unary operator expected\nchecking for x86 cpuid 0x80000006 output... unknown\n./configure: line 21618: 16#unknown: value too great for base (error token is \"16#unknown\")\nError configuring libm4ri\n\nreal\t0m17.957s\nuser\t0m3.904s\nsys\t0m8.981s\nsage: An error occurred while installing libm4ri-20080901\n```\n\n\nThe first error is a typo of a variable name and an unprotected expand of it in a shell test.  This test only occurs on systems that do not have\n\n/sys/devices/system/cpu/cpu0/cache/index0/size\n\nwhich are gratuitously assumed to all be running x86 except if the cpu vendor is Intel in which case they are assumed to not have a cache.  \n\nAnd this leads us to the second problem, on non-x86 cpus, since the cache size cannot be discovered with cpuid, a later conversion of this cache size from hex fails miserably.\n\nThis is a mess.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4059\n\n",
     "created_at": "2008-09-04T05:52:37Z",
     "labels": [
-        "build",
+        "component: build",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004059.json:
     "title": "libm4ri configure is seriously broken on anything not x86",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4059",
-    "user": "anakha"
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 Assignee: mabshoff
@@ -62,15 +62,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4059
 
 ---
 
-archive/issue_comments_029264.json:
+archive/issue_comments_029206.json:
 ```json
 {
     "body": "This ought to be fixed by the new spkg at #4042. Please try it out and let us know how it goes.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T06:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29264",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29206",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -84,15 +84,15 @@ Michael
 
 ---
 
-archive/issue_comments_029265.json:
+archive/issue_comments_029207.json:
 ```json
 {
     "body": "(I should have done a search before creating this one, damn you late hours of the night)\n\nYes with this spkg it builds fine, but it does not detect the amount of cache.  I don't know if this is critical for m4ri, but mine does detect it.\n\n\n```\nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\nchecking the L1 cache size... 0 Bytes\nchecking the L2 cache size... 0 Bytes\nchecking whether make sets $(MAKE)... (cached) yes\n```\n\n\nI know that on this machine I have 32K L1 D-cache and 1M L2 cache.\n\nAlso the new package generates these warnings\n\n\n```\ngcc -DHAVE_CONFIG_H -I. -I./src -I/Volumes/Place/anakha/sage-3.1.2.alpha4/local/include/ -std=c99 -fPIC -I/Volumes/Place/anakha/sage-3.1.2.alpha4/local/include/ -L/Volumes/Place/anakha/sage-3.1.2.alpha4/local/lib -O2 -Wall -pedantic -g -MT brilliantrussian.lo -MD -MP -MF .deps/brilliantrussian.Tpo -c src/brilliantrussian.c  -fno-common -DPIC -o .libs/brilliantrussian.o\nIn file included from src/brilliantrussian.c:21:\nsrc/misc.h:284:1: warning: \"CPU_L2_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:21:\nsrc/config.h:8:1: warning: this is the location of the previous definition\nIn file included from src/brilliantrussian.c:21:\nsrc/misc.h:292:1: warning: \"CPU_L1_CACHE\" redefined\nIn file included from src/misc.h:33,\n                 from src/brilliantrussian.c:21:\nsrc/config.h:5:1: warning: this is the location of the previous definition\n```\n\n\nWhile the existence of the package at #4042 does lower the priority on this one, I think the cache detection parts should be merged. So I attached a patch against libm4ri-20080903 for the m4/ax_cache_size.m4 file to add the cache size detection code.  \n\nThere is also a test spkg here: http://celas.ath.cx/anakha/libm4ri-20080903.p0.spkg\n\nDo not merge this spkg as I think it is too late for me to figure out how to properly rebuild the configure script.  Thus, it rebuilds itself every time you build the package making you suffer two times the configuration phase.",
     "created_at": "2008-09-04T07:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29265",
-    "user": "anakha"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29207",
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 
@@ -140,33 +140,15 @@ Do not merge this spkg as I think it is too late for me to figure out how to pro
 
 ---
 
-archive/issue_comments_029266.json:
-```json
-{
-    "body": "Changing priority from critical to major.",
-    "created_at": "2008-09-04T07:29:04Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/4059",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29266",
-    "user": "anakha"
-}
-```
-
-Changing priority from critical to major.
-
-
-
----
-
-archive/issue_comments_029267.json:
+archive/issue_comments_029208.json:
 ```json
 {
     "body": "Attachment [trac_4059_v2.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v2.patch) by anakha created at 2008-09-04 07:30:04\n\nPatch against libm4ri-20080903 to enable cache detection on OS X 10.5",
     "created_at": "2008-09-04T07:30:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29267",
-    "user": "anakha"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29208",
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 
@@ -178,15 +160,15 @@ Patch against libm4ri-20080903 to enable cache detection on OS X 10.5
 
 ---
 
-archive/issue_comments_029268.json:
+archive/issue_comments_029209.json:
 ```json
 {
     "body": "Thanks, I'll look into your cache detection code and merge it upstream. To my defense btw. this is a code snipped from the autoconf archive.",
     "created_at": "2008-09-04T08:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29268",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29209",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -196,15 +178,15 @@ Thanks, I'll look into your cache detection code and merge it upstream. To my de
 
 ---
 
-archive/issue_comments_029269.json:
+archive/issue_comments_029210.json:
 ```json
 {
     "body": "A new SPKG is available at\n\n  http://sage.math.washington.edu/home/malb/spkgs/libm4ri-20080904.spkg\n\nwith the patch applied.\n\nIt builds and passes tests on:\n* my notebook (Linux, x86_64, Core2Duo)\n* cleo (Linux, ia64)\n* iras (Linux, ia64, L1 and L2 not detected) \n* bsd (OSX, x86, L1 not detected)\n* sage.math (Linux, x86_64, Opteron)\n* VirtualBox (OpenSolaris, x86, Core2Duo, L1 and L2 not detected)\n\nSo it is still not perfect but should be better (OSX PPC support). I don't have access to a PPC box to test it.",
     "created_at": "2008-09-04T11:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29269",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29210",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -228,15 +210,15 @@ So it is still not perfect but should be better (OSX PPC support). I don't have 
 
 ---
 
-archive/issue_comments_029270.json:
+archive/issue_comments_029211.json:
 ```json
 {
     "body": "It works on my machine (OS X, ppc G5) and all tests pass.\n\nA minor cosmetic change that it seems I forgot in my patch is to change the redirection in the sysctl lines to read:\n\n> /dev/null 2>&1\n\nbecause otherwise the cache size are printed on their own in the configure output.  This does not harm the results in any way but can be annoying when looking at the configure output (but who does that anyway :)",
     "created_at": "2008-09-04T14:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29270",
-    "user": "anakha"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29211",
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 
@@ -252,15 +234,15 @@ because otherwise the cache size are printed on their own in the configure outpu
 
 ---
 
-archive/issue_comments_029271.json:
+archive/issue_comments_029212.json:
 ```json
 {
     "body": "so \n\n  `/usr/sbin/sysctl -n hw.l2cachesize`\n\nwould become\n\n  `/usr/sbin/sysctl -n hw.l2cachesize 2>&1`\n\nMy autoconf foo is limited and I can't test it due to the lack of PPC OSX. Note to self: This should also be used on x86 OSX since apparently Intel chips don't report L1 cache size using CPUID",
     "created_at": "2008-09-04T14:22:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29271",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29212",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -278,15 +260,15 @@ My autoconf foo is limited and I can't test it due to the lack of PPC OSX. Note 
 
 ---
 
-archive/issue_comments_029272.json:
+archive/issue_comments_029213.json:
 ```json
 {
     "body": "no, it would become \n\n`/usr/sbin/sysctl -n hw.l2cachesize > /dev/null 2>&1`\n\nit is possible this would work on OS X x86 but I can't test it nor test how to use this test rather than the CPUID for that.",
     "created_at": "2008-09-04T14:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29272",
-    "user": "anakha"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29213",
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 
@@ -300,15 +282,15 @@ it is possible this would work on OS X x86 but I can't test it nor test how to u
 
 ---
 
-archive/issue_comments_029273.json:
+archive/issue_comments_029214.json:
 ```json
 {
     "body": "I've replaced the SPKG with an SPKG with that fix applied, could you test it?",
     "created_at": "2008-09-04T14:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29273",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29214",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -318,15 +300,15 @@ I've replaced the SPKG with an SPKG with that fix applied, could you test it?
 
 ---
 
-archive/issue_comments_029274.json:
+archive/issue_comments_029215.json:
 ```json
 {
     "body": "On bsd the new m4ri reports:\n\n```\nchecking the number of available CPUs... 4 \nchecking the number of available CPUs... 4 \nchecking for x86 cpuid 0x0 output... (cached) a:756e6547:6c65746e:49656e69\nchecking for the processor vendor... (cached) Intel\nchecking for x86 cpuid 0x80000006 output... 0:0:10008040:0\nchecking the L1 cache size... 0 Bytes\nchecking the L2 cache size... 4194304 Bytes\n```\n\nBut on a PPC OSX 10.4 box it fails with\n\n```\n\nchecking the number of available CPUs... 1 \nchecking the number of available CPUs... 1 \nchecking for x86 cpuid 0x0 output... unknown\nchecking for the processor vendor... Unknown\n524288\n32768\nsecond level name l1cachesize in hw.l1cachesize is invalid\nsecond level name l1cachesize in hw.l1cachesize is invalid\n./configure: line 21633: / 1024: syntax error: operand expected (error token is \"/ 1024\")\nError configuring libm4ri\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T22:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29274",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29215",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -367,15 +349,15 @@ Michael
 
 ---
 
-archive/issue_comments_029275.json:
+archive/issue_comments_029216.json:
 ```json
 {
     "body": "Apply trac_4059_v3.patch to the latest libm4ri-20080904.  Basically the 2 should not be there.\n\nAs for the other failure, could someone with 10.4 access run these commands and port the output:\n\n\n```\n$ sysctl -n hw.foo\n$ echo $?\n```\n",
     "created_at": "2008-09-05T03:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29275",
-    "user": "anakha"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29216",
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 
@@ -394,15 +376,15 @@ $ echo $?
 
 ---
 
-archive/issue_comments_029276.json:
+archive/issue_comments_029217.json:
 ```json
 {
     "body": "Attachment [trac_4059_v3.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v3.patch) by @malb created at 2008-09-05 10:00:50\n\nReplying to [comment:10 mabshoff]:\n> On bsd the new m4ri reports:\n...\n> checking the L1 cache size... 0 Bytes\n> checking the L2 cache size... 4194304 Bytes\n\nThat's fine. Eventually, I should fix the L1 detection code though. IMHO, the whole cache detection needs to be refactored, but I don't want to do it just before a release.",
     "created_at": "2008-09-05T10:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29276",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29217",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -420,15 +402,15 @@ That's fine. Eventually, I should fix the L1 detection code though. IMHO, the wh
 
 ---
 
-archive/issue_comments_029277.json:
+archive/issue_comments_029218.json:
 ```json
 {
     "body": "Replying to [comment:11 anakha]:\n> Apply trac_4059_v3.patch to the latest libm4ri-20080904.  Basically the 2 should not be there.\n\nI've updated the SPKG at /home/malb/spkgs/libm4ri-20080904.spkg to include this patch.\n\n> As for the other failure, could someone with 10.4 access run these commands and port the output:\n> \n> {{{\n> $ sysctl -n hw.foo\n> $ echo $?\n> }}}\n\nYep, I can do that later today.",
     "created_at": "2008-09-05T10:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29277",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29218",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -450,15 +432,15 @@ Yep, I can do that later today.
 
 ---
 
-archive/issue_comments_029278.json:
+archive/issue_comments_029219.json:
 ```json
 {
     "body": "\n```\nmartin-albrechts-computer:~ martinalbrecht$ sysctl -n hw.foo\nsecond level name foo in hw.foo is invalid\nmartin-albrechts-computer:~ martinalbrecht$  echo $?\n0\n```\n",
     "created_at": "2008-09-05T14:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29278",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29219",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -475,15 +457,15 @@ martin-albrechts-computer:~ martinalbrecht$  echo $?
 
 ---
 
-archive/issue_comments_029279.json:
+archive/issue_comments_029220.json:
 ```json
 {
     "body": "This means sysctl does not return an error when the name is not found on 10.4 which lead to the above error encountered by mabshoff.\n\nI hope trac_4059_v4.patch can fix this.",
     "created_at": "2008-09-05T16:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29279",
-    "user": "anakha"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29220",
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 
@@ -495,15 +477,15 @@ I hope trac_4059_v4.patch can fix this.
 
 ---
 
-archive/issue_comments_029280.json:
+archive/issue_comments_029221.json:
 ```json
 {
     "body": "Attachment [trac_4059_v4.patch](tarball://root/attachments/some-uuid/ticket4059/trac_4059_v4.patch) by @malb created at 2008-09-05 17:42:52\n\nI updated the SPKG again and tested in on OSX 10.4 on x86 (for this I disabled the CPUID technique so that this code is actually run) and it works. Good work!",
     "created_at": "2008-09-05T17:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29280",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29221",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -515,15 +497,15 @@ I updated the SPKG again and tested in on OSX 10.4 on x86 (for this I disabled t
 
 ---
 
-archive/issue_comments_029281.json:
+archive/issue_comments_029222.json:
 ```json
 {
     "body": "Ok perfect.  I think we have it now.",
     "created_at": "2008-09-05T17:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29281",
-    "user": "anakha"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29222",
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 
@@ -533,15 +515,15 @@ Ok perfect.  I think we have it now.
 
 ---
 
-archive/issue_comments_029282.json:
+archive/issue_comments_029223.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-06T00:29:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29282",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29223",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -551,15 +533,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029283.json:
+archive/issue_comments_029224.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc0",
     "created_at": "2008-09-06T00:29:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4059",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29283",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4059#issuecomment-29224",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

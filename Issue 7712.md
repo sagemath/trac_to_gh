@@ -6,15 +6,14 @@ archive/issues_007712.json:
     "body": "Assignee: @aghitza\n\nCC:  kohel\n\nConsider the following example:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(2))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0\n```\n\nI do not understand why the result is 0. In fact there are two\nerrors:\n(i) the result is a polynomial of degree 3 in y, thus y**3 should appear\n(ii) the result should \"contain\" the exact result which is 0.125*y**3, thus it should be c*y**3 where c is an interval containing\n0.125. Compare the following with a precision of 10 bits:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(10))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: C(y/2)\n0.12500?*y^3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7712\n\n",
     "created_at": "2009-12-16T13:01:54Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "error in polynomial substitution with interval coefficients",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7712",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @aghitza
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7712
 
 ---
 
-archive/issue_comments_066227.json:
+archive/issue_comments_066111.json:
 ```json
 {
     "body": "It seems it just a printing issue:\n\n```\nsage: r = C(y/2)\nsage: r\n0\nsage: r.monomials()\n[y^3]\nsage: r.monomial_coefficient(y^3).str(style='brackets')\n'[-0.00 .. 0.25]'\n```\n",
     "created_at": "2009-12-16T14:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66227",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66111",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -83,15 +82,15 @@ sage: r.monomial_coefficient(y^3).str(style='brackets')
 
 ---
 
-archive/issue_comments_066228.json:
+archive/issue_comments_066112.json:
 ```json
 {
     "body": "Indeed:\n\n```\nsage: R=RealIntervalField(2)\nsage: r=R(-0.00,0.25)\nsage: r.str(style='brackets')\n'[-0.00 .. 0.25]'\nsage: r\n1.?\nsage: r*x\n0\n```\n\nI thus changed the summary.",
     "created_at": "2009-12-16T14:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66228",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66112",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -114,15 +113,15 @@ I thus changed the summary.
 
 ---
 
-archive/issue_comments_066229.json:
+archive/issue_comments_066113.json:
 ```json
 {
     "body": "Here is a more complex example, which shows this is not only a printing issue:\n\n```\ndef method2(prec):\n   n=[0,9,7,8,11,6,3,7,6,6,4,3,4,1,2,2,1,1,1,2,0,0,0,3,0,0,0,0,1]\n   R = RealIntervalField(prec)\n   P.<xk1,sk1,sk2> = PolynomialRing(R)\n   Q.<xk> = PolynomialRing(P)\n   C = (sk1-xk)^n[1]*xk^n[2]\n   C=C.integral()\n   C=C(sk1/2)-C(xk1)\n   C=R(10^6)*C.subs(sk1=sk2-xk1)\n   C=C.subs(xk1=xk,sk2=sk1)\n   for k in range(3,29):\n      C=C*xk^n[k]\n      C=C.integral()\n      C=C(sk1/k)-C(xk1)\n      C=R(10^6)*C.subs(sk1=sk2-xk1)\n      C=C.subs(xk1=xk,sk2=sk1)\n   C=C.subs(xk=R(0),sk1=R(1))\n   return C(0,0,0)\n\nsage: method2(391)\n0\nsage: _.parent() \nInteger Ring\n\nsage: method2(392)\n1.?e-8\nsage: _.parent()\nReal Interval Field with 392 bits of precision\n```\n\nNormally, both calls should return an object of type \"Real Interval Field\", isn't it?\n(If necessary, I can open a different trac ticket for both issues.)",
     "created_at": "2009-12-17T09:22:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66229",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66113",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -166,15 +165,15 @@ Normally, both calls should return an object of type "Real Interval Field", isn'
 
 ---
 
-archive/issue_comments_066230.json:
+archive/issue_comments_066114.json:
 ```json
 {
     "body": "I'm declaring a total feature freeze on sage-4.3.",
     "created_at": "2009-12-24T07:08:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66230",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66114",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -184,15 +183,15 @@ I'm declaring a total feature freeze on sage-4.3.
 
 ---
 
-archive/issue_comments_066231.json:
+archive/issue_comments_066115.json:
 ```json
 {
     "body": "Still there in 4.3.1.",
     "created_at": "2010-02-05T20:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66231",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66115",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -202,15 +201,15 @@ Still there in 4.3.1.
 
 ---
 
-archive/issue_comments_066232.json:
+archive/issue_comments_066116.json:
 ```json
 {
     "body": "Replying to [comment:3 zimmerma]:\n>    C=C.subs(xk=R(0),sk1=R(1))\n\nThe two polynomials obtained here are constants.\nThe strange behaviour about the type comes from line 153 of\n\n`sage/rings/polynomial/multi_polynomial_element.py`\n\nwhere we find:\n\n\n```\n        try:\n            K = x[0].parent()     <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n        except AttributeError:\n            K = self.parent().base_ring()\n        y = K(0) \n        for (m,c) in self.element().dict().iteritems():  \n            y += c*misc.mul([ x[i]**m[i] for i in range(n) if m[i] != 0])\n```\n\n\nI don't know exactly why, but It first try to take the type of the first input (here Integer 0) and this type is then changed only by coercion when doing the computation.\n\nWith precision 391 the polynomial is null and no operations are performed, so the results stays Integer.\n\nI would say this is a bug but maybe there is a purpose behind this.",
     "created_at": "2010-03-12T08:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66232",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66116",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -246,15 +245,15 @@ I would say this is a bug but maybe there is a purpose behind this.
 
 ---
 
-archive/issue_comments_066233.json:
+archive/issue_comments_066117.json:
 ```json
 {
     "body": "Yann, are you sure this method __call__ is called? I've added a print statement before\n`y=K(0)` and nothing is printed (in 4.3.3). I add David in cc, maybe he can help us.",
     "created_at": "2010-03-12T08:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66233",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66117",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -265,15 +264,15 @@ Yann, are you sure this method __call__ is called? I've added a print statement 
 
 ---
 
-archive/issue_comments_066234.json:
+archive/issue_comments_066118.json:
 ```json
 {
     "body": "Sorry, my last comment was not clear. The method call is called when you do `return C(0,0,0)`.",
     "created_at": "2010-03-12T09:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66234",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66118",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -283,15 +282,15 @@ Sorry, my last comment was not clear. The method call is called when you do `ret
 
 ---
 
-archive/issue_comments_066235.json:
+archive/issue_comments_066119.json:
 ```json
 {
     "body": "> Sorry, my last comment was not clear. The method call is called when you do return C(0,0,0). \n\nwith `C(0,0,0)` I see no problem:\n\n```\nsage: P.<y,z> = PolynomialRing(RealIntervalField(2))\nsage: Q.<x> = PolynomialRing(P)\nsage: C = (y-x)^3\nsage: a=C(0,0,0)\nsage: type(a)\n<type 'sage.rings.real_mpfi.RealIntervalFieldElement'>\nsage: a.lower()\n0.00\nsage: a.upper()\n0.00\n```\n",
     "created_at": "2010-03-12T09:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66235",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66119",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -317,15 +316,15 @@ sage: a.upper()
 
 ---
 
-archive/issue_comments_066236.json:
+archive/issue_comments_066120.json:
 ```json
 {
     "body": "Here is my point:\n\n```\nsage: def method2(prec):\n....:        n=[0,9,7,8,11,6,3,7,6,6,4,3,4,1,2,2,1,1,1,2,0,0,0,3,0,0,0,0,1]\n....:    R = RealIntervalField(prec)\n....:    P.<xk1,sk1,sk2> = PolynomialRing(R)\n....:    Q.<xk> = PolynomialRing(P)\n....:    C = (sk1-xk)^n[1]*xk^n[2]\n....:    C=C.integral()\n....:    C=C(sk1/2)-C(xk1)\n....:    C=R(10^6)*C.subs(sk1=sk2-xk1)\n....:    C=C.subs(xk1=xk,sk2=sk1)\n....:    for k in range(3,29):\n....:           C=C*xk^n[k]\n....:       C=C.integral()\n....:       C=C(sk1/k)-C(xk1)\n....:       C=R(10^6)*C.subs(sk1=sk2-xk1)\n....:       C=C.subs(xk1=xk,sk2=sk1)\n....:    C=C.subs(xk=R(0),sk1=R(1))\n....:    return C\n....: \nsage: C391 = method2(391)\nsage: C391\n0\nsage: type(C391)\n<class 'sage.rings.polynomial.multi_polynomial_element.MPolynomial_polydict'>\nsage: type(C391(0,0,0))\n<type 'sage.rings.integer.Integer'>\nsage: type(C391(GF(17)['z'](0),0,0))\n<type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\n```\n",
     "created_at": "2010-03-12T09:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66236",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66120",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -367,15 +366,15 @@ sage: type(C391(GF(17)['z'](0),0,0))
 
 ---
 
-archive/issue_comments_066237.json:
+archive/issue_comments_066121.json:
 ```json
 {
     "body": "> Here is my point: [...]\n\nok, I thought you were speaking about the first (smaller) examples. I can reduce this second\nproblem to the following:\n\n```\nsage: R.<x,y> = PolynomialRing(RR)\nsage: f=R(1); type(f(0,0))\n<type 'sage.rings.real_mpfr.RealNumber'>\nsage: f=R(0); type(f(0,0))\n<type 'sage.rings.integer.Integer'>\n```\n\nDavid, please can you explain why it is so?",
     "created_at": "2010-03-12T15:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66237",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66121",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -398,15 +397,15 @@ David, please can you explain why it is so?
 
 ---
 
-archive/issue_comments_066238.json:
+archive/issue_comments_066122.json:
 ```json
 {
     "body": "I didn't see this ticket when submitting the new ticket #13760. There I provide a patch that corrects this bug. The two tickets should be merged (and probably closed after review of the patch).",
     "created_at": "2012-12-06T10:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66238",
-    "user": "gmoroz"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66122",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gmoroz"
 }
 ```
 
@@ -416,15 +415,15 @@ I didn't see this ticket when submitting the new ticket #13760. There I provide 
 
 ---
 
-archive/issue_comments_066239.json:
+archive/issue_comments_066123.json:
 ```json
 {
     "body": "Attachment [trac_7712_regression_tests_for_13760_fix.patch](tarball://root/attachments/some-uuid/ticket7712/trac_7712_regression_tests_for_13760_fix.patch) by gmoroz created at 2012-12-13 11:20:16\n\nTests should work after applying trac 13760 patch",
     "created_at": "2012-12-13T11:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66239",
-    "user": "gmoroz"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66123",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gmoroz"
 }
 ```
 
@@ -436,15 +435,15 @@ Tests should work after applying trac 13760 patch
 
 ---
 
-archive/issue_comments_066240.json:
+archive/issue_comments_066124.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-12-14T09:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66240",
-    "user": "gmoroz"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66124",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gmoroz"
 }
 ```
 
@@ -454,15 +453,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_066241.json:
+archive/issue_comments_066125.json:
 ```json
 {
     "body": "I propose to mark this as \"duplicate\", since #13760 solves that issue.\n\nPaul",
     "created_at": "2012-12-14T17:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66241",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66125",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -474,15 +473,15 @@ Paul
 
 ---
 
-archive/issue_comments_066242.json:
+archive/issue_comments_066126.json:
 ```json
 {
     "body": "Hey Paul and Guillaume,\n\nFor future reference, just mark the patch as duplicate in the milestone dropdown and set it to *needs_review*.\n\n#13760 does seem to fix the problem:\n\n```\nsage: method2(391)\n0.?e-8\nsage: _.parent()\nReal Interval Field with 391 bits of precision\n```\n\n\nBest,\n\nTravis",
     "created_at": "2012-12-15T16:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66242",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66126",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -508,15 +507,15 @@ Travis
 
 ---
 
-archive/issue_comments_066243.json:
+archive/issue_comments_066127.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-12-15T16:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66243",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66127",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -526,15 +525,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_066244.json:
+archive/issue_comments_066128.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2012-12-21T22:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66244",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7712#issuecomment-66128",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

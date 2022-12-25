@@ -6,7 +6,7 @@ archive/issues_002396.json:
     "body": "Assignee: @williamstein\n\nDan Christensen:\n\n```\n>  \n>  Another nice feature of numpy is *assigning* using numpy-style indexing.\n>  For example, to add a multiple of column j to column i, you can do\n>  \n>   A[:,i] += m*A[:,j]\n>  \n>  And you can zero out a region with\n>  \n>   A[2:4, 3:8] = 0    (broadcasting used here)\n```\n\n\nThis is currently not implemented in sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2396\n\n",
     "created_at": "2008-03-05T16:35:19Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002396.json:
     "title": "add support for matrix numpy-style indexing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2396",
-    "user": "@dfdeshom"
+    "user": "https://github.com/dfdeshom"
 }
 ```
 Assignee: @williamstein
@@ -44,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2396
 
 ---
 
-archive/issue_comments_016162.json:
+archive/issue_comments_016127.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @dfdeshom.",
     "created_at": "2008-03-20T17:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2396",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16162",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16127",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -62,15 +62,15 @@ Changing assignee from @williamstein to @dfdeshom.
 
 ---
 
-archive/issue_comments_016163.json:
+archive/issue_comments_016128.json:
 ```json
 {
     "body": "See #4972, which may fix this.",
     "created_at": "2009-02-03T21:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2396",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16163",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16128",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -80,15 +80,15 @@ See #4972, which may fix this.
 
 ---
 
-archive/issue_comments_016164.json:
+archive/issue_comments_016129.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-10-01T05:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2396",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16164",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16129",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -98,15 +98,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_016165.json:
+archive/issue_comments_016130.json:
 ```json
 {
     "body": "This has been fixed in Sage 4.1.2.alpha4:\n\n```\n[mvngu@sage sage-4.1.2.alpha4-sage.math]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: M = MatrixSpace(QQ, 9)\nsage: A = M.random_element(); A\n| Sage Version 4.1.2.alpha4, Release Date: 2009-09-27                |\n| Type notebook() for the GUI, and license() for information.        |\n[   1   -2    2    2    0   -2  1/2    1  1/2]\n[   0   -1    1    2    2    0    1   -1  1/2]\n[ 1/2    2   -1    2  1/2    0   -1    2    1]\n[   1   -1   -2    0 -1/2   -1   -1    0    2]\n[   0   -1    0    0 -1/2   -2   -1    2    2]\n[  -1    1   -1    0    2    0    1    0    1]\n[   0    1    0    1 -1/2    1    1    2   -1]\n[  -1 -1/2   -1    0   -1    0    0    2    0]\n[   0 -1/2   -1    2    1    0    0    0    0]\nsage: m = 3\nsage: A[:,1] += m * A[:,4]\nsage: A\n\n[   1   -2    2    2    0   -2  1/2    1  1/2]\n[   0    5    1    2    2    0    1   -1  1/2]\n[ 1/2  7/2   -1    2  1/2    0   -1    2    1]\n[   1 -5/2   -2    0 -1/2   -1   -1    0    2]\n[   0 -5/2    0    0 -1/2   -2   -1    2    2]\n[  -1    7   -1    0    2    0    1    0    1]\n[   0 -1/2    0    1 -1/2    1    1    2   -1]\n[  -1 -7/2   -1    0   -1    0    0    2    0]\n[   0  5/2   -1    2    1    0    0    0    0]\nsage: \nsage: A[2:4, 3:8] = 0\nsage: A\n\n[   1   -2    2    2    0   -2  1/2    1  1/2]\n[   0    5    1    2    2    0    1   -1  1/2]\n[ 1/2  7/2   -1    0    0    0    0    0    1]\n[   1 -5/2   -2    0    0    0    0    0    2]\n[   0 -5/2    0    0 -1/2   -2   -1    2    2]\n[  -1    7   -1    0    2    0    1    0    1]\n[   0 -1/2    0    1 -1/2    1    1    2   -1]\n[  -1 -7/2   -1    0   -1    0    0    2    0]\n[   0  5/2   -1    2    1    0    0    0    0]\nsage: A[:,:] = 0\nsage: A\n\n[0 0 0 0 0 0 0 0 0]\n[0 0 0 0 0 0 0 0 0]\n[0 0 0 0 0 0 0 0 0]\n[0 0 0 0 0 0 0 0 0]\n[0 0 0 0 0 0 0 0 0]\n[0 0 0 0 0 0 0 0 0]\n[0 0 0 0 0 0 0 0 0]\n[0 0 0 0 0 0 0 0 0]\n[0 0 0 0 0 0 0 0 0]\n```\n\nClosing this as a duplicate of #4972.",
     "created_at": "2009-10-01T05:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2396",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16165",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/2396#issuecomment-16130",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

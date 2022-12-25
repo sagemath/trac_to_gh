@@ -6,15 +6,13 @@ archive/issues_002512.json:
     "body": "Assignee: @williamstein\n\nimplement [condition number (wikipedia)](http://en.wikipedia.org/wiki/Condition_number) for matrices. \n\nsomething like:\n\n```\ndef condition(m,p=2):\n    return norm(m.inverse(),p) * norm(m,p)\n```\n\n\ndepends on #1763\n\nIssue created by migration from https://trac.sagemath.org/ticket/2512\n\n",
     "created_at": "2008-03-13T22:33:26Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement condition number for matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2512",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2512
 
 ---
 
-archive/issue_comments_017032.json:
+archive/issue_comments_016995.json:
 ```json
 {
     "body": "Condition numbers for any norm can be expensive, since they involve computing the inverse of a matrix. If our matrix is singular, this is even worse. I would propose:\n* Computing the condition number for norms 1,2,inf. This can be done reasonably efficiently in gsl and lapack\n* Computing condition estimators for other norms or when matrices get very large.\n\nIs there any case that we would want compute a condition for norms other than 1,2 and inf? I'm curious",
     "created_at": "2008-03-14T19:19:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17032",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-16995",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -61,15 +59,15 @@ Is there any case that we would want compute a condition for norms other than 1,
 
 ---
 
-archive/issue_comments_017033.json:
+archive/issue_comments_016996.json:
 ```json
 {
     "body": "A one-line implementation of the condition number, which computes A.norm()*A.inverse().norm().",
     "created_at": "2011-03-22T23:41:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17033",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-16996",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -79,15 +77,15 @@ A one-line implementation of the condition number, which computes A.norm()*A.inv
 
 ---
 
-archive/issue_comments_017034.json:
+archive/issue_comments_016997.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"matrix, condition number\".",
     "created_at": "2011-03-22T23:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17034",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-16997",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -97,15 +95,15 @@ Changing keywords from "" to "matrix, condition number".
 
 ---
 
-archive/issue_comments_017035.json:
+archive/issue_comments_016998.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-03-22T23:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17035",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-16998",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -115,15 +113,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_017036.json:
+archive/issue_comments_016999.json:
 ```json
 {
     "body": "Attachment [trac_2512_matrix_condition_number.patch](tarball://root/attachments/some-uuid/ticket2512/trac_2512_matrix_condition_number.patch) by @haikona created at 2011-03-22 23:44:51\n\nThe patch implements a very simple .condition_number() method, based on a matrix's .norm() method. As such it only works for p = 1,2,Infinity or the Frobenius norm.\n\nSuggestions/comments welcome. Written on sage 4.6.2.",
     "created_at": "2011-03-22T23:44:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17036",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-16999",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -137,15 +135,15 @@ Suggestions/comments welcome. Written on sage 4.6.2.
 
 ---
 
-archive/issue_comments_017037.json:
+archive/issue_comments_017000.json:
 ```json
 {
     "body": "wow, this still exists. The doctest looks fine, is it possible to indent the options for the argument? Apart from that I strongly suggest to use numpy for that. They solve the 2-norm special case via svd and all the others might be faster. They also have a -infinity case.\n\n\n```\nsage: from numpy.linalg.linalg import cond     \nsage: A = matrix([[1,2,4],[5,3,9],[7,8,6]])    \nsage: cond(A)                              \n13.139632629120618\nsage: cond(A, 1)                           \n22.88636363636364\nsage: cond(A, 'fro')                       \n14.21690371493278\nsage: import numpy as np                   \nsage: cond(A, np.inf)                      \n19.090909090909093\nsage: cond(A, -np.inf)                     \n2.5454545454545454\n```\n\n\ncomplex also works\n\n\n```\nsage: A = matrix([[1+2j, 1+3j], [1+1j, 0.5-0.5j]])\nsage: cond(A, np.inf)                             \n4.2200687516284452\nsage: cond(A)        \n3.2255049266776936\n```\n",
     "created_at": "2011-03-23T00:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17037",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17000",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -185,15 +183,15 @@ sage: cond(A)
 
 ---
 
-archive/issue_comments_017038.json:
+archive/issue_comments_017001.json:
 ```json
 {
     "body": "Hi Simon,\n\nCould you compare timings against #10837?  (I didn't know #2512 existed.)\n\nRob",
     "created_at": "2011-03-23T00:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17038",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17001",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -207,15 +205,15 @@ Rob
 
 ---
 
-archive/issue_comments_017039.json:
+archive/issue_comments_017002.json:
 ```json
 {
     "body": "Turns out Rob Beezer has implemented condition numbers by directly wrapping the NumPy cond() command in patch #10837.\n\nSome timings:\n\nPatch 2512:\n\n\n```\nsage: A = matrix([[1,2,4],[5,3,9],[7,8,6]])\nsage: timeit('A.condition_number(2)')\n125 loops, best of 3: 1.96 ms per loop\nsage: timeit('A.condition_number(Infinity)')\n625 loops, best of 3: 1.31 ms per loop\nsage: timeit('A.condition_number(\"frob\")')\n625 loops, best of 3: 949 \u00b5s per loop\n\nsage: A = MatrixSpace(CC,50).random_element()\nsage: timeit('A.condition_number(2)')\n5 loops, best of 3: 389 ms per loop\nsage: timeit('A.condition_number(1)')\n5 loops, best of 3: 380 ms per loop\nsage: timeit('A.condition_number(\"frob\")')\n5 loops, best of 3: 358 ms per loop\n```\n\n\nPatch 10837:\n\n\n```\nsage: A = matrix(RDF,[[1,2,4],[5,3,9],[7,8,6]])\nsage: timeit('A.condition(2)')\n625 loops, best of 3: 282 \u00b5s per loop\nsage: timeit('A.condition(Infinity)')\n625 loops, best of 3: 123 \u00b5s per loop\nsage: timeit('A.condition(\"frob\")')\n625 loops, best of 3: 203 \u00b5s per loop\n\nsage: A = MatrixSpace(CDF,50).random_element()\nsage: timeit('A.condition(1)')\n625 loops, best of 3: 968 \u00b5s per loop\nsage: timeit('A.condition(2)')\n125 loops, best of 3: 2.97 ms per loop\nsage: timeit('A.condition(\"frob\")')\n625 loops, best of 3: 942 \u00b5s per loop\n```\n\n\nI vote we go for Rob's patch.",
     "created_at": "2011-03-23T00:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17039",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17002",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -273,15 +271,15 @@ I vote we go for Rob's patch.
 
 ---
 
-archive/issue_comments_017040.json:
+archive/issue_comments_017003.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-03-23T00:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17040",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17003",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -291,15 +289,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_017041.json:
+archive/issue_comments_017004.json:
 ```json
 {
     "body": "> I vote we go for Rob's patch.\n\nYep, looks like 3 to 10 times faster.  I might steal your code for a verification doctest on #10837.\n\nThanks for the timing tests.",
     "created_at": "2011-03-23T01:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2512",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17041",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/2512#issuecomment-17004",
+    "user": "https://github.com/rbeezer"
 }
 ```
 

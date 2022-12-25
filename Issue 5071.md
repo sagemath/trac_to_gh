@@ -6,7 +6,7 @@ archive/issues_005071.json:
     "body": "Assignee: somebody\n\nI wrote this while attacking #4746. Didn't turn out to be relevant to that, but it's useful to have on its own anyways. \n\nIssue created by migration from https://trac.sagemath.org/ticket/5071\n\n",
     "created_at": "2009-01-23T12:23:50Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005071.json:
     "title": "[with patch, needs review] unit of least precision for RR and RDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5071",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: somebody
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5071
 
 ---
 
-archive/issue_comments_038617.json:
+archive/issue_comments_038543.json:
 ```json
 {
     "body": "Looks good.  The only change I would suggest is that the docstring should include the behavior on inf and NaN.",
     "created_at": "2009-01-24T09:49:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38617",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38543",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -47,15 +47,15 @@ Looks good.  The only change I would suggest is that the docstring should includ
 
 ---
 
-archive/issue_comments_038618.json:
+archive/issue_comments_038544.json:
 ```json
 {
     "body": "Attachment [5071-ulp.patch](tarball://root/attachments/some-uuid/ticket5071/5071-ulp.patch) by @robertwb created at 2009-01-28 00:06:46",
     "created_at": "2009-01-28T00:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38618",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38544",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -65,15 +65,15 @@ Attachment [5071-ulp.patch](tarball://root/attachments/some-uuid/ticket5071/5071
 
 ---
 
-archive/issue_comments_038619.json:
+archive/issue_comments_038545.json:
 ```json
 {
     "body": "OK, doctests updated.",
     "created_at": "2009-01-28T00:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38619",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38545",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -83,15 +83,15 @@ OK, doctests updated.
 
 ---
 
-archive/issue_comments_038620.json:
+archive/issue_comments_038546.json:
 ```json
 {
     "body": "Code looks good, doctests pass.\n\nExcellent idea!\n\nPositive review.",
     "created_at": "2009-02-05T06:55:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38620",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38546",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -105,15 +105,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_038621.json:
+archive/issue_comments_038547.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-07T01:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38621",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38547",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -123,15 +123,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_038622.json:
+archive/issue_comments_038548.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-07T01:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38622",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5071#issuecomment-38548",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004626.json:
     "body": "Assignee: somebody\n\n\n```\nsage: bessel_J(0,0)    \nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (284, 0))\n\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/users/cacao/zimmerma/.sage/temp/achille.loria.fr/2662/_users_cacao_zimmerma__sage_init_sage_0.py in <module>()\n----> 1 \n      2 \n      3 \n      4 \n      5 \n\n/usr/local/sage-3.1.4/sage/local/lib/python2.5/site-packages/sage/functions/special.pyc in bessel_J(nu, z, algorithm, prec)\n    522             K = C\n    523         K = z.parent()\n--> 524         return K(pari(nu).besselj(z, precision=prec))\n    525     elif algorithm==\"scipy\":\n    526         if prec != 53:\n\n/usr/local/sage-3.1.4/sage/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:34447)()\n   7864 \n   7865 \n-> 7866 \n   7867 \n   7868 \n\nPariError:  (8)\n```\n\nThe other non-default algorithms (maxima and scipy) return the correct answer 1.0000...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4626\n\n",
     "created_at": "2008-11-26T16:44:35Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "error in bessel_J(0,0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4626",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: somebody
@@ -63,15 +62,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4626
 
 ---
 
-archive/issue_comments_034783.json:
+archive/issue_comments_034715.json:
 ```json
 {
     "body": "The problem is somewhere between the Pari interface and Pari itself:\n\n```\nsage: R = RealField(53)\nsage: n = R(0)\nsage: z = R(0)\nsage: pari(n).besselj(z, precision=53)\nBOOM\n```\n",
     "created_at": "2009-01-22T05:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34783",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34715",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -90,15 +89,15 @@ BOOM
 
 ---
 
-archive/issue_comments_034784.json:
+archive/issue_comments_034716.json:
 ```json
 {
     "body": "Aha!:\n\n```\nsage: pari('besselj(0,0)')\n1.00000000000000\nsage: pari('besselj(0.0,0.0)')\n---------------------------------------------------------------------------\nPariError                                 Traceback (most recent call last)\n\n/Users/rlmill/<ipython console> in <module>()\n\n/Users/rlmill/sage-3.2.2/local/lib/python2.5/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:38645)()\n\nPariError:  (8)\nsage: pari('besselj(0,0.0)')\n1.00000000000000\n```\n\n\nThe problem is that Pari is expecting an integer:\n\n```\nsage: R = RealField(53)\nsage: n = Integer(0)\nsage: z = R(0)\nsage: pari(n).besselj(z, precision=53)\n1.00000000000000\n```\n\n\nI'll post a patch once my 3.3.alpha0 builds...",
     "created_at": "2009-01-22T06:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34784",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34716",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -138,15 +137,15 @@ I'll post a patch once my 3.3.alpha0 builds...
 
 ---
 
-archive/issue_comments_034785.json:
+archive/issue_comments_034717.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-22T06:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34785",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34717",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -156,15 +155,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_034786.json:
+archive/issue_comments_034718.json:
 ```json
 {
     "body": "Changing assignee from somebody to @rlmill.",
     "created_at": "2009-01-22T06:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34786",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34718",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -174,15 +173,15 @@ Changing assignee from somebody to @rlmill.
 
 ---
 
-archive/issue_comments_034787.json:
+archive/issue_comments_034719.json:
 ```json
 {
     "body": "Positive review here. It applies cleanly to my 3.3.alpha0 tree and bessel_J(0, 0) works now.",
     "created_at": "2009-01-22T07:23:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34787",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34719",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -192,15 +191,15 @@ Positive review here. It applies cleanly to my 3.3.alpha0 tree and bessel_J(0, 0
 
 ---
 
-archive/issue_comments_034788.json:
+archive/issue_comments_034720.json:
 ```json
 {
     "body": "I've reported the problem upstream to Pari.\n\nThe patch needs more work since non-integer arguments are no longer allowed:\n\n```\nsage: bessel_J(0.1,0)\n...\nTypeError: Attempt to coerce non-integral RealNumber to Integer\n```\n\nThis used to work before the patch:\n\n```\nsage: bessel_J(0.1,0.1)\n0.777264368097005\n```\n",
     "created_at": "2009-01-22T08:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34788",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34720",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -226,15 +225,15 @@ sage: bessel_J(0.1,0.1)
 
 ---
 
-archive/issue_comments_034789.json:
+archive/issue_comments_034721.json:
 ```json
 {
     "body": "Replying to [comment:6 zimmerma]:\n\nGood catch -- thanks for undoing my positive review. Anyone working on this should probably be aware of #3426, which involves other Pari/Bessel problems.",
     "created_at": "2009-01-22T09:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34789",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34721",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -246,15 +245,15 @@ Good catch -- thanks for undoing my positive review. Anyone working on this shou
 
 ---
 
-archive/issue_comments_034790.json:
+archive/issue_comments_034722.json:
 ```json
 {
     "body": "Also, if the doctest did pass with the initial patch, the new one should add a test for say bessel_J(0.1,0.1),\nand make clear in the documentation which argument types are allowed.",
     "created_at": "2009-01-22T09:17:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34790",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34722",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -265,15 +264,15 @@ and make clear in the documentation which argument types are allowed.
 
 ---
 
-archive/issue_comments_034791.json:
+archive/issue_comments_034723.json:
 ```json
 {
     "body": "Attachment [trac_4626-bessel_J_ints.patch](tarball://root/attachments/some-uuid/ticket4626/trac_4626-bessel_J_ints.patch) by @rlmill created at 2009-01-22 16:40:18\n\nFixed.",
     "created_at": "2009-01-22T16:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34791",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34723",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -285,15 +284,15 @@ Fixed.
 
 ---
 
-archive/issue_comments_034792.json:
+archive/issue_comments_034724.json:
 ```json
 {
     "body": "The new patch is ok for me.",
     "created_at": "2009-01-22T21:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34792",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34724",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -303,15 +302,15 @@ The new patch is ok for me.
 
 ---
 
-archive/issue_comments_034793.json:
+archive/issue_comments_034725.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-23T10:02:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34793",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34725",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -321,15 +320,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_034794.json:
+archive/issue_comments_034726.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha0\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T10:02:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4626",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34794",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4626#issuecomment-34726",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003822.json:
     "body": "Assignee: @itolkov\n\n> Unfortunately, as soon as the range of values gets at all large --\n> e.g., a few thousand, -- this causes *major* problems,\n> which lead to the browser spitting out errors, etc.  Basically you\n> exceed hard limits.\n\nThe problem is that something like\n\n```\nslider(1, 10^6)\n```\n\ngenerates 10<sup>6</sup> values, which get sent back to the user. Now, there is no reason to use 10<sup>6</sup> values when the maximum number of accessible values (via manipulating the slider) is 500.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3822\n\n",
     "created_at": "2008-08-12T20:20:22Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Interact - slider breaks defaulting on too many values",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3822",
-    "user": "@itolkov"
+    "user": "https://github.com/itolkov"
 }
 ```
 Assignee: @itolkov
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3822
 
 ---
 
-archive/issue_comments_027184.json:
+archive/issue_comments_027126.json:
 ```json
 {
     "body": "Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.patch) by @itolkov created at 2008-08-12 20:31:08\n\n1. Changed default step size from 1 to such that there are 500 steps\n   2. `(a, b)` is now equivalent to `slider(a, b)`",
     "created_at": "2008-08-12T20:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27184",
-    "user": "@itolkov"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27126",
+    "user": "https://github.com/itolkov"
 }
 ```
 
@@ -62,15 +61,15 @@ Attachment [sage.patch](tarball://root/attachments/some-uuid/ticket3822/sage.pat
 
 ---
 
-archive/issue_comments_027185.json:
+archive/issue_comments_027127.json:
 ```json
 {
     "body": "It is still broken since you didn't deal with the case when the input is a list of values.  \n\nE.g.,\n\n```\n@interact\ndef _(n=range_slider([1..10000])):\n    print n\n```\n\n\nbreaks it.",
     "created_at": "2008-08-12T21:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27185",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27127",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -91,15 +90,15 @@ breaks it.
 
 ---
 
-archive/issue_comments_027186.json:
+archive/issue_comments_027128.json:
 ```json
 {
     "body": "Changing component from notebook to interact.",
     "created_at": "2008-08-13T06:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27186",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27128",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +108,15 @@ Changing component from notebook to interact.
 
 ---
 
-archive/issue_comments_027187.json:
+archive/issue_comments_027129.json:
 ```json
 {
     "body": "Attachment [sage2.2.patch](tarball://root/attachments/some-uuid/ticket3822/sage2.2.patch) by @itolkov created at 2008-08-14 19:06:58\n\nApply after sage.patch",
     "created_at": "2008-08-14T19:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27187",
-    "user": "@itolkov"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27129",
+    "user": "https://github.com/itolkov"
 }
 ```
 
@@ -129,15 +128,15 @@ Apply after sage.patch
 
 ---
 
-archive/issue_comments_027188.json:
+archive/issue_comments_027130.json:
 ```json
 {
     "body": "3. `slider(a, b, c)` is equivalent to `slider([a,a+c..b])`\n   4. Improved performance for input like `slider(a, b, c)`",
     "created_at": "2008-08-14T19:14:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27188",
-    "user": "@itolkov"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27130",
+    "user": "https://github.com/itolkov"
 }
 ```
 
@@ -148,15 +147,15 @@ archive/issue_comments_027188.json:
 
 ---
 
-archive/issue_comments_027189.json:
+archive/issue_comments_027131.json:
 ```json
 {
     "body": "Good job.  Note that this still breaks things.  But still this patch needs to go in.\n\n\n```\n@interact\ndef _(n=[1..10^5]):\n    print n\n```\n",
     "created_at": "2008-08-15T10:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27189",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27131",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -174,15 +173,15 @@ def _(n=[1..10^5]):
 
 ---
 
-archive/issue_comments_027190.json:
+archive/issue_comments_027132.json:
 ```json
 {
     "body": "Attachment [sage-3822.patch](tarball://root/attachments/some-uuid/ticket3822/sage-3822.patch) by @williamstein created at 2008-08-15 10:02:34",
     "created_at": "2008-08-15T10:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27190",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27132",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -192,15 +191,15 @@ Attachment [sage-3822.patch](tarball://root/attachments/some-uuid/ticket3822/sag
 
 ---
 
-archive/issue_comments_027191.json:
+archive/issue_comments_027133.json:
 ```json
 {
     "body": "I fixed some failed doctests.",
     "created_at": "2008-08-15T10:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27191",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27133",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -210,15 +209,15 @@ I fixed some failed doctests.
 
 ---
 
-archive/issue_comments_027192.json:
+archive/issue_comments_027134.json:
 ```json
 {
     "body": "Merged all three patches in Sage 3.1.rc0. William's patch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-15T10:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27192",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27134",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -232,15 +231,15 @@ Michael
 
 ---
 
-archive/issue_comments_027193.json:
+archive/issue_comments_027135.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-15T10:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27193",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3822#issuecomment-27135",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

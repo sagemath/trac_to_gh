@@ -6,15 +6,13 @@ archive/issues_003911.json:
     "body": "Assignee: tba\n\nthe framework should allow to generate a bibliography etc. while not reinventing the wheel: BibTeX? By citing in docstrings I mean stuff like this:\n\n```\nINPUT:\n   foo -- bar (as described in [BCDT]\n\nREFERENCES:\n[BCDT] Breuil, Conrad, Diamond, Taylor, \"Modularity ....\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3911\n\n",
     "created_at": "2008-08-20T14:29:10Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "come up with a good framework for citing stuff in docstrings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3911",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: tba
@@ -38,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3911
 
 ---
 
-archive/issue_comments_027974.json:
+archive/issue_comments_027916.json:
 ```json
 {
     "body": "This is fixed thanks to Sphinx and ReST which has native support for this.",
     "created_at": "2009-04-27T13:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27974",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27916",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -56,15 +54,15 @@ This is fixed thanks to Sphinx and ReST which has native support for this.
 
 ---
 
-archive/issue_comments_027975.json:
+archive/issue_comments_027917.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-27T13:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27975",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27917",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -74,15 +72,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_027976.json:
+archive/issue_comments_027918.json:
 ```json
 {
     "body": "Well, it should be documented in some way how we do things things. If such documentation exists a link from the ticket would be nice.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-27T15:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27976",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27918",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -96,15 +94,15 @@ Michael
 
 ---
 
-archive/issue_comments_027977.json:
+archive/issue_comments_027919.json:
 ```json
 {
     "body": "It is a standard feature of ReST, see: http://sphinx.pocoo.org/rest.html#citations",
     "created_at": "2009-04-27T15:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27977",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27919",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -114,15 +112,15 @@ It is a standard feature of ReST, see: http://sphinx.pocoo.org/rest.html#citatio
 
 ---
 
-archive/issue_comments_027978.json:
+archive/issue_comments_027920.json:
 ```json
 {
     "body": "Replying to [comment:3 malb]:\n> It is a standard feature of ReST, see: http://sphinx.pocoo.org/rest.html#citations\n\nI now that. I meant in Sage's documentation so that documentation writes in Sage will use it :).\n\nCheers,\n\nMichael",
     "created_at": "2009-04-27T15:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27978",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3911#issuecomment-27920",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

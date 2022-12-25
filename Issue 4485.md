@@ -6,15 +6,14 @@ archive/issues_004485.json:
     "body": "Assignee: boothby\n\nOn the command line in sage-3.1.4:\n\n```\nsage: implicit_multiplication(True)\nsage: 3x\n3*x\n```\n\n\nIn the Sage notebook using exactly the same version of Sage (in fact, on sagenb.org):\n\n```\nsage: implicit_multiplication(True)\nsage: 3 x\n line 4\n    _sage_const_3  x\n                   ^\nSyntaxError: invalid syntax\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4485\n\n",
     "created_at": "2008-11-09T23:06:57Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "notebook -- implicit multiplication is broken in the notebook but works on the command line (sage-3.1.4)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4485",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4485
 
 ---
 
-archive/issue_comments_033125.json:
+archive/issue_comments_033060.json:
 ```json
 {
     "body": "\n```\nOK, I've thought about it, and see now that there is no way\nthat implicit multiplication was ever even *implemented*\nfor the notebook!    Just to illustrate what is going on, note\nthat if in the notebook you type \n\n   implicit_multiplication(True)\n   preparse('3x')\n\nyou get as output\n\n   'Integer(3)*x'\n\nwhich illustrates that the implicit_multiplication command works fine in the actual Sage worksheet process.   The problem is that the preparsing of the input for each cell of the notebook is *not* done in that subprocess!  It's done by the worksheet server process itself, before the input is ever sent to the subprocess. \n\nThere are some approaches to fixing this and I'm not happy really about any of them:\n\n  1. Make it so the whole notebook server has an implicit_multiplication mode.  This is absurd since some users might want it and some not.  Alternatively, make it so the notebook server has a mode flag for each worksheet.  That's bad too since that mode can't be set via user input (by typing in cells) unless we fully parse all input before passing it on for evaluation -- i.e., that's a stupid idea which will result in great pain.  The other option, would be to have some GUI checkbox or something, and just give an error if one types in the input box \"implicit_multiplication\".  This would be inconsistent and maybe busy, but would probably work.  The inconsistency would be huge, since, e.g., if somebody writes a 30 line script like this:\n  ...\n  implicit_multiplication(True)\n  ... \n  3x + 1\n  ...\nand just *pastes* it into the notebook, it will suddenly not work.  Which will be really annoying. \n\n  2. Change how the Sage notebook evaluates code blocks.  Instead of preparsing input before sending it off to be evaluated by the worksheet subprocess, somehow send a chunck of non-preparsed code off, and a command that says \"preparse this then evaluate it\". \n\n  3. Make sage query the subprocess for its implicit_multiplication state before every single evaluation -- this would be idiotic and slow down the server a lot.  Not an option. \n\nI think 2 is the best option, but it will not be easy to implement, and making this change scares me. It feels like the sort of change that could introduce numerous subtle bugs, and result in nontrivial degredation in functionality -- for example, maybe source code ?? inspection of user-defined functions in the notebook might no longer work. \n\nIncidentally, here is a workaround to make it so you can input an expression using implicit multiplication in the notebook. \n\nimplicit_multiplication(True)\nsage_eval('3x^3 + 4/5 x + 1', globals())\n3*x^3 + 4*x/5 + 1\n\nI'm not going to do anything further on this without some feedback\nfrom Robert Bradshaw (who implemented implicit multiplication)\nand/or Mike Hansen who I think knows the relevant part of the\nnotebook code well enough to have a comment about what\nI wrote above.  \n\n -- William\n```\n",
     "created_at": "2008-11-09T23:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33125",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33060",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -112,15 +111,15 @@ I wrote above.
 
 ---
 
-archive/issue_comments_033126.json:
+archive/issue_comments_033061.json:
 ```json
 {
     "body": "Robert Bradshaw and I talked about this and think the best thing to implement\nis checkboxes in the notebook with an error message when the implicit_multiplication command is used there.  Also, he claimed that the preparse command should decide on whether or not to use implicit multiplication via an option to that command (I'm not so sure I agree with that).\n\nI think *this* ticket should *only* be to change the implicit_multiplication command to check if it is being run in the notebook (EMBEDDED_MODE, just like the graphics commands use), and if so, give a useful NotImplementedError message.  Then later adding a checkbox will be an enhancement. I've made that enhancement trac #4490.",
     "created_at": "2008-11-11T00:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33126",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33061",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -133,15 +132,15 @@ I think *this* ticket should *only* be to change the implicit_multiplication com
 
 ---
 
-archive/issue_comments_033127.json:
+archive/issue_comments_033062.json:
 ```json
 {
     "body": "With patch?",
     "created_at": "2008-11-11T01:31:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33127",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33062",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -151,15 +150,15 @@ With patch?
 
 ---
 
-archive/issue_comments_033128.json:
+archive/issue_comments_033063.json:
 ```json
 {
     "body": "Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket4485/4485-implicit-mul.patch) by @robertwb created at 2008-11-13 22:47:32",
     "created_at": "2008-11-13T22:47:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33128",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33063",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -169,15 +168,15 @@ Attachment [4485-implicit-mul.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_033129.json:
+archive/issue_comments_033064.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-14T03:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33129",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33064",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -187,15 +186,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_033130.json:
+archive/issue_comments_033065.json:
 ```json
 {
     "body": "Merged in Sage 3.2.rc1",
     "created_at": "2008-11-14T03:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33130",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4485#issuecomment-33065",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

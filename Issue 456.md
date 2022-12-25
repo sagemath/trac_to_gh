@@ -6,15 +6,14 @@ archive/issues_000456.json:
     "body": "Assignee: somebody\n\n\nHello,\n\nI get the following doc-test failure:\n\nFile \"maxima.py\", line 1215:\n   sage: ComplexField(10)(maxima('2342.23482943872+234*%i'))\nException raised:\n   Traceback (most recent call last):\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/\ndoctest.py\", line 1212, in __run\n       compileflags, 1) in test.globs\n     File \"<doctest __main__.example_23[2]>\", line 1, in <module>\n       ComplexField(Integer(10))(maxima('2342.23482943872+234*\n%i'))###line 1215:\n   sage: ComplexField(10)(maxima('2342.23482943872+234*%i'))\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/site-\npackages/sage/rings/complex_field.py\", line 178, in __call__\n       return x._complex_mpfr_field_( self )\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/site-\npackages/sage/interfaces/maxima.py\", line 1218, in\n_complex_mpfr_field_\n       return sage.rings.all.ComplexNumber( CC, self.real(),\nself.imag() )\n     File \"complex_number.pyx\", line 930, in\ncomplex_number.create_ComplexNumber\n     File \"complex_number.pyx\", line 93, in\ncomplex_number.ComplexNumber.__init__\n   TypeError: unable to coerce to a [ComplexNumber](ComplexNumber)\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/456\n\n",
     "created_at": "2007-08-19T14:08:02Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "TypeError: unable to coerce to a ComplexNumber",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/456",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: somebody
@@ -62,15 +61,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/456
 
 ---
 
-archive/issue_comments_002283.json:
+archive/issue_comments_002273.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-19T19:05:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/456",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/456#issuecomment-2283",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/456#issuecomment-2273",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007839.json:
     "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nConsider:\n\n\n```\nsage: P.<q> = LaurentPolynomialRing(QQ)\nsage: q in P\nTrue\nsage: P(q)\nq\nsage: q^(-1) in P\nTrue\nsage: P(q^(-1))\n```\n\n\nThe last statement raises an exception.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7839\n\n",
     "created_at": "2010-01-04T04:47:29Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Failure to coerce q^(-1) into its own LaurentPolynomialRing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7839",
-    "user": "@dwbump"
+    "user": "https://github.com/dwbump"
 }
 ```
 Assignee: @aghitza
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7839
 
 ---
 
-archive/issue_comments_067907.json:
+archive/issue_comments_067790.json:
 ```json
 {
     "body": "This is a duplicate of #3617 which should be fixed soon.",
     "created_at": "2010-01-19T21:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7839",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7839#issuecomment-67907",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7839#issuecomment-67790",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -64,15 +63,15 @@ This is a duplicate of #3617 which should be fixed soon.
 
 ---
 
-archive/issue_comments_067908.json:
+archive/issue_comments_067791.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-01-19T21:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7839",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7839#issuecomment-67908",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7839#issuecomment-67791",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_004869.json:
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nKeywords: relative number field polynomial\n\nJohn Cremona remarked at #4837:\n\nfor an absolute extension we can create an element from a polynomial over the base field, but not for a relative extension:\n\n\n```\nsage: K.<z>=CyclotomicField(7)\nsage: Ky.<y>=PolynomialRing(K)\nsage: L.<a>=K.extension(y^2+1)\nsage: K(K.polynomial_ring().random_element())\nz + 1\nsage: L(L.polynomial_ring().random_element())\n---------------------------------------------------------------------------\nTypeError           \n...\nTypeError: Unable to coerce 7/2*z^5 + 1/2*z^4 + z^3 - 37/2*z to a rational\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4869\n\n",
     "created_at": "2008-12-24T12:41:46Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004869.json:
     "title": "make element of relative number field from polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4869",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: @williamstein
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4869
 
 ---
 
-archive/issue_comments_036885.json:
+archive/issue_comments_036813.json:
 ```json
 {
     "body": "This is fixed by the patches for #1367.  This should be closed as a dupe after #1367 is merged.",
     "created_at": "2009-01-24T09:34:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4869#issuecomment-36885",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/4869#issuecomment-36813",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -69,15 +69,15 @@ This is fixed by the patches for #1367.  This should be closed as a dupe after #
 
 ---
 
-archive/issue_comments_036886.json:
+archive/issue_comments_036814.json:
 ```json
 {
     "body": "Fixed via #1367 in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-29T05:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4869#issuecomment-36886",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4869#issuecomment-36814",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +91,15 @@ Michael
 
 ---
 
-archive/issue_comments_036887.json:
+archive/issue_comments_036815.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-29T05:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4869#issuecomment-36887",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4869#issuecomment-36815",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

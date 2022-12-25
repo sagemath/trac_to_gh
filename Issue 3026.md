@@ -6,7 +6,7 @@ archive/issues_003026.json:
     "body": "Assignee: @malb\n\nThe following output from sage does not make too much sense.\n\nsage: PolynomialRing(QQ, names=[])\nMultivariate Polynomial Ring in  over Rational Field\n\nwstein suggested that it might print something like the following.\n\nMultivariate Polynomial Ring in no variables over Rational Field\n\nIssue created by migration from https://trac.sagemath.org/ticket/3026\n\n",
     "created_at": "2008-04-26T00:24:06Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003026.json:
     "title": "multivariate polynomial ring with no variables do not print properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3026",
-    "user": "broune"
+    "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
 Assignee: @malb
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3026
 
 ---
 
-archive/issue_comments_020805.json:
+archive/issue_comments_020762.json:
 ```json
 {
     "body": "Changing assignee from @malb to broune.",
     "created_at": "2008-05-07T20:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20805",
-    "user": "broune"
+    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20762",
+    "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
 
@@ -54,15 +54,15 @@ Changing assignee from @malb to broune.
 
 ---
 
-archive/issue_comments_020806.json:
+archive/issue_comments_020763.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-07T20:16:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20806",
-    "user": "broune"
+    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20763",
+    "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
 
@@ -72,15 +72,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_020807.json:
+archive/issue_comments_020764.json:
 ```json
 {
     "body": "Attachment [novariables.changeset](tarball://root/attachments/some-uuid/ticket3026/novariables.changeset) by broune created at 2008-05-07 20:23:49",
     "created_at": "2008-05-07T20:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20807",
-    "user": "broune"
+    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20764",
+    "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
 
@@ -90,15 +90,15 @@ Attachment [novariables.changeset](tarball://root/attachments/some-uuid/ticket30
 
 ---
 
-archive/issue_comments_020808.json:
+archive/issue_comments_020765.json:
 ```json
 {
     "body": "Code looks good, doctests pass in sage/rings/polynomial.  Positive review.",
     "created_at": "2008-05-10T23:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20808",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20765",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -108,15 +108,15 @@ Code looks good, doctests pass in sage/rings/polynomial.  Positive review.
 
 ---
 
-archive/issue_comments_020809.json:
+archive/issue_comments_020766.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-11T09:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20809",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20766",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -126,15 +126,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020810.json:
+archive/issue_comments_020767.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.alpha0",
     "created_at": "2008-05-11T09:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20810",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3026#issuecomment-20767",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

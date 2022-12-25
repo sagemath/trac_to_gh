@@ -6,15 +6,14 @@ archive/issues_001256.json:
     "body": "Assignee: @williamstein\n\nThe code in the new cremona* package contains all of what was in the mwrank* package.  So the latter can be abandoned as soon as the wrappings for mwrank functions have been migrated.  This will only be really serious when I next fix a bug in mwrank -- since from now on I'll only be editing the version which is part of cremona*.\n\nI'm sure this is an easy job for someone who is familiar with the mwrank wrappings (not me, alas, though I suppose I should be).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1256\n\n",
     "created_at": "2007-11-24T21:22:42Z",
     "labels": [
-        "algebraic geometry",
-        "minor",
-        "enhancement"
+        "component: algebraic geometry",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "mwrank*.spkg now redundant, included in cremona*.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1256",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @williamstein
@@ -32,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1256
 
 ---
 
-archive/issue_comments_007852.json:
+archive/issue_comments_007829.json:
 ```json
 {
     "body": "I am taking care of this. The following things need to be done:\n\n```\n[18:17] <was_> Definitely the solution is to (1) remove the mwrank*spkg.\n[18:17] <was_> (2) copy over the mwrank executable which gets build as part of cremona*.spkg\n[18:17] <was_> (3) Change things in setup.py so that all the prober mwrank-related libraries are linked in (it's maybe 4 libraries now instead of 1)\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2007-12-05T19:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7852",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7829",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -61,15 +60,15 @@ Michael
 
 ---
 
-archive/issue_comments_007853.json:
+archive/issue_comments_007830.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-05T19:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7853",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7830",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +78,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_007854.json:
+archive/issue_comments_007831.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-12-05T19:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7854",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7831",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -97,15 +96,15 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_comments_007855.json:
+archive/issue_comments_007832.json:
 ```json
 {
     "body": "Ok, the following binaries are installed my mwrank:\n* mwrank\n* tmrank\n* ratpoint\n* findinf\n* tate\n* conductor\n* torsion\n* twist\n* allisog\n* indep\n* tconic",
     "created_at": "2007-12-05T19:26:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7855",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7832",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -126,15 +125,15 @@ Ok, the following binaries are installed my mwrank:
 
 ---
 
-archive/issue_comments_007856.json:
+archive/issue_comments_007833.json:
 ```json
 {
     "body": "Attachment [Sage-2.9.alpha0-mwrank-cremona-transition.patch](tarball://root/attachments/some-uuid/ticket1256/Sage-2.9.alpha0-mwrank-cremona-transition.patch) by mabshoff created at 2007-12-06 01:47:58",
     "created_at": "2007-12-06T01:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7856",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7833",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -144,15 +143,15 @@ Attachment [Sage-2.9.alpha0-mwrank-cremona-transition.patch](tarball://root/atta
 
 ---
 
-archive/issue_comments_007857.json:
+archive/issue_comments_007834.json:
 ```json
 {
     "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket1256/install) by mabshoff created at 2007-12-06 01:48:22",
     "created_at": "2007-12-06T01:48:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7857",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7834",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -162,15 +161,15 @@ Attachment [install](tarball://root/attachments/some-uuid/ticket1256/install) by
 
 ---
 
-archive/issue_comments_007858.json:
+archive/issue_comments_007835.json:
 ```json
 {
     "body": "Ok, I updated cremona.spkg to also install all mwrank binaries. It is at\n\nhttp://sage.math.washington.edu/home/mabshoff/cremona-20071124.p3.spkg\n\nCheers,\n\nMichael",
     "created_at": "2007-12-06T02:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7858",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7835",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -186,15 +185,15 @@ Michael
 
 ---
 
-archive/issue_comments_007859.json:
+archive/issue_comments_007836.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-06T02:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7859",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7836",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -204,15 +203,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_007860.json:
+archive/issue_comments_007837.json:
 ```json
 {
     "body": "Merged in 2.9.alpha0.",
     "created_at": "2007-12-06T02:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7860",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1256#issuecomment-7837",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

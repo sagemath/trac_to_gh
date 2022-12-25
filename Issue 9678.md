@@ -6,15 +6,13 @@ archive/issues_009678.json:
     "body": "Assignee: @jasongrout\n\nCC:  @nexttime\n\nKeywords: interrupt, error, c, cython\n\nThere are lots of things to be improved in the interrupt handling routines in c_lib/src/interrupt.c and c_lib/include/interrupt.h, such as:\n\n* using sigaction() instead of signal()\n* having an interface for more general errors which are not signals\n* testing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/9678\n\n",
     "created_at": "2010-08-03T21:33:54Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Rewrite interrupt handling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9678",
-    "user": "@jdemeyer"
+    "user": "https://github.com/jdemeyer"
 }
 ```
 Assignee: @jasongrout
@@ -37,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9678
 
 ---
 
-archive/issue_comments_094081.json:
+archive/issue_comments_093924.json:
 ```json
 {
     "body": "Changing component from misc to c_lib.",
     "created_at": "2010-09-16T07:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94081",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93924",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -55,15 +53,15 @@ Changing component from misc to c_lib.
 
 ---
 
-archive/issue_comments_094082.json:
+archive/issue_comments_093925.json:
 ```json
 {
     "body": "Changing assignee from @jasongrout to tba.",
     "created_at": "2010-09-16T07:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94082",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93925",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -73,15 +71,15 @@ Changing assignee from @jasongrout to tba.
 
 ---
 
-archive/issue_comments_094083.json:
+archive/issue_comments_093926.json:
 ```json
 {
     "body": "Author of what? ;-)",
     "created_at": "2010-09-16T09:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94083",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93926",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -91,15 +89,15 @@ Author of what? ;-)
 
 ---
 
-archive/issue_comments_094084.json:
+archive/issue_comments_093927.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-10-17T18:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94084",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93927",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -109,15 +107,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_094085.json:
+archive/issue_comments_093928.json:
 ```json
 {
     "body": "Changing assignee from tba to @jdemeyer.",
     "created_at": "2010-11-14T17:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94085",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93928",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -127,15 +125,15 @@ Changing assignee from tba to @jdemeyer.
 
 ---
 
-archive/issue_comments_094086.json:
+archive/issue_comments_093929.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-01-14T17:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94086",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93929",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -145,15 +143,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094087.json:
+archive/issue_comments_093930.json:
 ```json
 {
     "body": "Attachment [9678.patch](tarball://root/attachments/some-uuid/ticket9678/9678.patch) by @jdemeyer created at 2011-01-15 05:04:48",
     "created_at": "2011-01-15T05:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94087",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93930",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -163,15 +161,15 @@ Attachment [9678.patch](tarball://root/attachments/some-uuid/ticket9678/9678.pat
 
 ---
 
-archive/issue_comments_094088.json:
+archive/issue_comments_093931.json:
 ```json
 {
     "body": "Definite improvement! We should put it in the very next Sage-4.6.2.alpha to give it as much exposure as possible since it touches a couple of core C files.",
     "created_at": "2011-01-21T00:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94088",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93931",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -181,15 +179,15 @@ Definite improvement! We should put it in the very next Sage-4.6.2.alpha to give
 
 ---
 
-archive/issue_comments_094089.json:
+archive/issue_comments_093932.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-01-21T00:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94089",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93932",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -199,15 +197,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094090.json:
+archive/issue_comments_093933.json:
 ```json
 {
     "body": "Replying to [comment:30 vbraun]:\n> Definite improvement! We should put it in the very next Sage-4.6.2.alpha to give it as much exposure as possible since it touches a couple of core C files.\n\nAlternatively, I am considering making 4.6.2 a pretty straightforward release and then putting various \"big\" tickets such as this one, #9433, #10572 in the next release which would then be sage-4.7.",
     "created_at": "2011-01-21T08:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94090",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93933",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -220,15 +218,15 @@ Alternatively, I am considering making 4.6.2 a pretty straightforward release an
 
 ---
 
-archive/issue_comments_094091.json:
+archive/issue_comments_093934.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2011-02-07T20:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94091",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93934",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -238,15 +236,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_094092.json:
+archive/issue_comments_093935.json:
 ```json
 {
     "body": "I'm trying out Sage-4.6.2.rc0 in Fedora 14 i386 inside `VirtualBox`, and it doesn't catch the SIGILL. Bactrace is below. Everything else works fine. Also, no such issue on my native Fedora 14 x86_64.\n\nI'm not sure who is to blame here, could be something with the virtual machine. I did write a SIGILL handler in Perl and that works, so `VirtualBox` is at least in principle able to have guests raise and handle SIGILL. Though there is also some forking involved... \n\nThe only thing thats special about SIGILL that comes to mind is that it might not be automatically be reset to SIG_DFL upon entrance. But I don't see how that could cause this. Here is my testcase:\n\n```\n[vbraun@localhost ~]$ sage -gdb\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n/home/vbraun/Sage/sage/local/bin/sage-ipython\nGNU gdb (GDB) Fedora (7.2-41.fc14)\nCopyright (C) 2010 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.  Type \"show copying\"\nand \"show warranty\" for details.\nThis GDB was configured as \"i686-redhat-linux-gnu\".\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>...\nReading symbols from /mnt/sage/vbraun/sage-4.6.2.rc0/local/bin/python...done.\n[Thread debugging using libthread_db enabled]\nPython 2.6.4 (r264:75706, Feb 19 2011, 16:56:24) \n[GCC 4.5.1 20100924 (Red Hat 4.5.1-4)] on linux2\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\nTraceback (most recent call last):\n  File \"/usr/share/gdb/auto-load/usr/lib/libstdc++.so.6.0.14-gdb.py\", line 59, in <module>\n    from libstdcxx.v6.printers import register_libstdcxx_printers\n  File \"/usr/lib/../share/gcc-4.5.1/python/libstdcxx/v6/printers.py\", line 19, in <module>\n    import itertools\nImportError: No module named itertools\nDetaching after fork from child process 10247.\n```\n  \nSo far, so good. Now run:\n\n```\nsage: import sage.tests.interrupt\nsage: sage.tests.interrupt.test_signal_ill()\nDetaching after fork from child process 10248.\n| Sage Version 4.6.2.rc0, Release Date: 2011-02-18                   |\n| Type notebook() for the GUI, and license() for information.        |\nProgram received signal SIGILL, Illegal instruction.\n0x05dac6b1 in _sig_on_prejmp (__pyx_self=<value optimized out>, __pyx_args=0xb7fa702c, __pyx_kwds=0x0) at /home/vbraun/Sage/sage/local/include/csage/interrupt.h:192\n192\t        _signals.sig_on_count++;\nMissing separate debuginfos, use: debuginfo-install expat-2.0.1-10.fc13.i686 fontconfig-2.8.0-2.fc14.i686 glibc-2.13-1.i686 keyutils-libs-1.2-6.fc12.i686 krb5-libs-1.8.2-8.fc14.i686 libcom_err-1.41.12-6.fc14.i686 libgcc-4.5.1-4.fc14.i686 libgfortran-4.5.1-4.fc14.i686 libselinux-2.0.96-6.fc14.1.i686 libstdc++-4.5.1-4.fc14.i686 ncurses-libs-5.7-9.20100703.fc14.i686 nss-softokn-freebl-3.12.9-2.fc14.i686 openssl-1.0.0d-1.fc14.i686\n(gdb) l\n187\t    fprintf(stderr, \"sig_on (counter = %i) at %s:%i\\n\", _signals.sig_on_count+1, file, line);\n188\t    fflush(stderr);\n189\t#endif\n190\t    if (_signals.sig_on_count > 0)\n191\t    {\n192\t        _signals.sig_on_count++;\n193\t        return 1;\n194\t    }\n195\t\n196\t    /* At this point, _signals.sig_on_count == 0 */\n(gdb) bt\n#0  0x05dac6b1 in _sig_on_prejmp (__pyx_self=<value optimized out>, __pyx_args=0xb7fa702c, __pyx_kwds=0x0)\n    at /home/vbraun/Sage/sage/local/include/csage/interrupt.h:192\n#1  __pyx_pf_4sage_5tests_9interrupt_test_signal_ill (__pyx_self=<value optimized out>, __pyx_args=0xb7fa702c, __pyx_kwds=0x0) at sage/tests/interrupt.c:2878\n#2  0x0017c398 in PyCFunction_Call (func=0xaad686c, arg=0xb7fa702c, kw=0x0) at Objects/methodobject.c:85\n#3  0x001de9dd in call_function (f=0x820c4d4, throwflag=0) at Python/ceval.c:3706\n#4  PyEval_EvalFrameEx (f=0x820c4d4, throwflag=0) at Python/ceval.c:2389\n#5  0x001e06e7 in PyEval_EvalCodeEx (co=0xaa5fd58, globals=0x83cf3e4, locals=0x83cf3e4, args=0x0, argcount=0, kws=0x0, kwcount=0, defs=0x0, defcount=0, \n    closure=0x0) at Python/ceval.c:2968\n#6  0x001e0803 in PyEval_EvalCode (co=0xaa5fd58, globals=0x83cf3e4, locals=0x83cf3e4) at Python/ceval.c:522\n#7  0x001deccb in exec_statement (f=0x81630ec, throwflag=0) at Python/ceval.c:4401\n#8  PyEval_EvalFrameEx (f=0x81630ec, throwflag=0) at Python/ceval.c:1717\n#9  0x001e06e7 in PyEval_EvalCodeEx (co=0x837aa88, globals=0x8370714, locals=0x0, args=0x8162c08, argcount=2, kws=0x8162c10, kwcount=0, defs=0x0, defcount=0, \n    closure=0x0) at Python/ceval.c:2968\n#10 0x001dea92 in fast_function (f=0x8162abc, throwflag=0) at Python/ceval.c:3802\n```\n",
     "created_at": "2011-02-19T22:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94092",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93935",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -334,15 +332,15 @@ Missing separate debuginfos, use: debuginfo-install expat-2.0.1-10.fc13.i686 fon
 
 ---
 
-archive/issue_comments_094093.json:
+archive/issue_comments_093936.json:
 ```json
 {
     "body": "Volker, do you have `strace` installed?  If so, you could try\n\n```\n$ mkdir trace\n$ strace -ff -o trace/sage ./sage -c 'import sage.tests.interrupt; sage.tests.interrupt.test_signal_ill()'\n```\n\n\nand send me the `trace/` directory.\n\nAnd maybe do the same for `test_signal_bus()` to compare with.",
     "created_at": "2011-02-20T11:09:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94093",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93936",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -362,15 +360,15 @@ And maybe do the same for `test_signal_bus()` to compare with.
 
 ---
 
-archive/issue_comments_094094.json:
+archive/issue_comments_093937.json:
 ```json
 {
     "body": "Sure, no problem. I did strace ill, bus, and fpe and uploaded the trace/ directory to http://www.stp.dias.ie/~vbraun/trace.tar.bz2",
     "created_at": "2011-02-20T11:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94094",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93937",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -380,15 +378,15 @@ Sure, no problem. I did strace ill, bus, and fpe and uploaded the trace/ directo
 
 ---
 
-archive/issue_comments_094095.json:
+archive/issue_comments_093938.json:
 ```json
 {
     "body": "Hold your horses! Its working now, and SIGILL is caught correctly. I did rebuild the sage library in the meantime, so I probably miscompiled something before.",
     "created_at": "2011-02-20T11:31:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94095",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93938",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -398,15 +396,15 @@ Hold your horses! Its working now, and SIGILL is caught correctly. I did rebuild
 
 ---
 
-archive/issue_comments_094096.json:
+archive/issue_comments_093939.json:
 ```json
 {
     "body": "In any case, based on your trace, it looks like everything is working correctly.  I see the following:\n\n```\n--- SIGILL (Illegal instruction) @ 0 (0) ---\nrt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0\nwrite(2, \"Traceback (most recent call last\"..., 35) = 35\nwrite(2, \"  File \\\"/home/vbraun/Sage/sage/l\"..., 74) = 74\n```\n\n\nSo, the program receives `SIGILL` and prints a Traceback, which is exactly what should happen.\n\nI cannot understand why at some point it did not work for you...",
     "created_at": "2011-02-20T14:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94096",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93939",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -428,15 +426,15 @@ I cannot understand why at some point it did not work for you...
 
 ---
 
-archive/issue_comments_094097.json:
+archive/issue_comments_093940.json:
 ```json
 {
     "body": "After many more rebuilds I found the problem: On i386 (and only i386) the Parma Polyhedra library (PPL, #10039) tests if SSE is available. It does this during the library initialization by installing a SIGILL handler and then issuing SSE instructions. It then resets the handler to `signal(SIGILL, SIG_DFL)`. Clearly, this deactivates Sage's SIGILL handler. \n\nSince we don't use PPL's floating point arithmetics I'll make sure to configure it in a way that it does not test for SSE availability.",
     "created_at": "2011-02-20T16:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94097",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93940",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -448,15 +446,15 @@ Since we don't use PPL's floating point arithmetics I'll make sure to configure 
 
 ---
 
-archive/issue_comments_094098.json:
+archive/issue_comments_093941.json:
 ```json
 {
     "body": "Replying to [comment:40 vbraun]:\n> After many more rebuilds I found the problem: On i386 (and only i386) the Parma Polyhedra library (PPL, #10039) tests if SSE is available. It does this during the library initialization by installing a SIGILL handler and then issuing SSE instructions. It then resets the handler to `signal(SIGILL, SIG_DFL)`. Clearly, this deactivates Sage's SIGILL handler. \n\nI consider this to be a bug in PPL.  Using `sigaction()` or `signal()`, it is possible to save an existing signal handler and then restore it afterwards.",
     "created_at": "2011-02-20T16:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94098",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93941",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -469,15 +467,15 @@ I consider this to be a bug in PPL.  Using `sigaction()` or `signal()`, it is po
 
 ---
 
-archive/issue_comments_094099.json:
+archive/issue_comments_093942.json:
 ```json
 {
     "body": "I agree and will report it upstream.",
     "created_at": "2011-02-20T17:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94099",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93942",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -487,15 +485,15 @@ I agree and will report it upstream.
 
 ---
 
-archive/issue_comments_094100.json:
+archive/issue_comments_093943.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-03-08T21:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-94100",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9678#issuecomment-93943",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

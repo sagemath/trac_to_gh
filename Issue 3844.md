@@ -6,15 +6,13 @@ archive/issues_003844.json:
     "body": "Assignee: boothby\n\nIf we do the above then one can upload/attach a .py file and import it in the worksheet, which is really sweet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3844\n\n",
     "created_at": "2008-08-14T00:58:34Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "notebook -- worksheet should call sys.path.append(DATA) when being initalized",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3844",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3844
 
 ---
 
-archive/issue_comments_027345.json:
+archive/issue_comments_027287.json:
 ```json
 {
     "body": "Attachment [sage-3844.patch](tarball://root/attachments/some-uuid/ticket3844/sage-3844.patch) by @williamstein created at 2008-08-14 03:07:50",
     "created_at": "2008-08-14T03:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27345",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27287",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [sage-3844.patch](tarball://root/attachments/some-uuid/ticket3844/sag
 
 ---
 
-archive/issue_comments_027346.json:
+archive/issue_comments_027288.json:
 ```json
 {
     "body": "When I attached hi.py, \"import hi\" didn't work. Also on http://sage.math.washington.edu:8999/home/admin/3/datafile?name=hi.py, there is no mention of this new functionality.",
     "created_at": "2008-08-14T04:43:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27346",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27288",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -65,15 +63,15 @@ When I attached hi.py, "import hi" didn't work. Also on http://sage.math.washing
 
 ---
 
-archive/issue_comments_027347.json:
+archive/issue_comments_027289.json:
 ```json
 {
     "body": "I've attached a totally new patch that is 1-line, works, and does the right thing, and is imho quite nice.  \n\nI still don't have my computer setup for Selenium, but a test this works is to do this in the notebook:\n\n```\nDATA in sys.path\n///\nTrue\n```\n",
     "created_at": "2009-11-19T23:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27347",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27289",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -92,15 +90,15 @@ True
 
 ---
 
-archive/issue_comments_027348.json:
+archive/issue_comments_027290.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-11-19T23:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27348",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27290",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -110,15 +108,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_027349.json:
+archive/issue_comments_027291.json:
 ```json
 {
     "body": "Attachment [sagenb_3844.patch](tarball://root/attachments/some-uuid/ticket3844/sagenb_3844.patch) by @williamstein created at 2009-11-19 23:51:07\n\napply only this -- ignore the old sage-3844.patch",
     "created_at": "2009-11-19T23:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27349",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27291",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -130,15 +128,15 @@ apply only this -- ignore the old sage-3844.patch
 
 ---
 
-archive/issue_comments_027350.json:
+archive/issue_comments_027292.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-12-06T03:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27350",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27292",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -148,15 +146,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_027351.json:
+archive/issue_comments_027293.json:
 ```json
 {
     "body": "I've come across the same problem as TimothyClemans -- importing it after attachment does not work. Also, it would probably be best to advertise the functionality on the data page, as TimothyClemans stated.",
     "created_at": "2009-12-06T03:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27351",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27293",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -166,15 +164,15 @@ I've come across the same problem as TimothyClemans -- importing it after attach
 
 ---
 
-archive/issue_comments_027352.json:
+archive/issue_comments_027294.json:
 ```json
 {
     "body": "Attachment [trac_3844-DATA_in_sys_path.2.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.2.patch) by @qed777 created at 2010-01-22 03:57:41\n\nUpdates `tutorial.py`. Replaces previous.",
     "created_at": "2010-01-22T03:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27352",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27294",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -186,15 +184,15 @@ Updates `tutorial.py`. Replaces previous.
 
 ---
 
-archive/issue_comments_027353.json:
+archive/issue_comments_027295.json:
 ```json
 {
     "body": "This works for me -- After I upload a data file `foo.py` (or create a new one), I can `import foo` in a worksheet cell.\n\nPositive review.  V2 just adds the changes to `tutorial.py` from the original patch.\n\nA `load` / `attach` analogue of `sys.path` might be warmly-received: #378, #1484, #5169.\n\nBy the way, FF 3.6 will permit drag-and-drop file uploads.  See [this blog post](http://hacks.mozilla.org/2009/12/file-drag-and-drop-in-firefox-3-6/) for a video and simple demo.",
     "created_at": "2010-01-22T04:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27353",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27295",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -210,15 +208,15 @@ By the way, FF 3.6 will permit drag-and-drop file uploads.  See [this blog post]
 
 ---
 
-archive/issue_comments_027354.json:
+archive/issue_comments_027296.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-22T04:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27354",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27296",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -228,15 +226,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_027355.json:
+archive/issue_comments_027297.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-22T04:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27355",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27297",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -246,15 +244,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_027356.json:
+archive/issue_comments_027298.json:
 ```json
 {
     "body": "Attachment [trac_3844-DATA_in_sys_path.3.patch](tarball://root/attachments/some-uuid/ticket3844/trac_3844-DATA_in_sys_path.3.patch) by @qed777 created at 2010-01-25 01:14:37\n\nRebased for SageNB 0.6 + queue in comment.  Replaces previous.",
     "created_at": "2010-01-25T01:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27356",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27298",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -266,15 +264,15 @@ Rebased for SageNB 0.6 + queue in comment.  Replaces previous.
 
 ---
 
-archive/issue_comments_027357.json:
+archive/issue_comments_027299.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-25T01:14:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27357",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27299",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -284,15 +282,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_027358.json:
+archive/issue_comments_027300.json:
 ```json
 {
     "body": "V3 is rebased for this queue:\n\n```\nsagenb-0.6\ntrac_7249-jinja2_v9.5.patch\ntrac_7962-link-worksheets-zip-file.patch\ntrac_7969-escaped-backslash.patch\ntrac_4217-html-system-formatting.3.patch\ntrac_3083-print-documentation.5.patch\ntrac_6182-double-quotes-ws.2.patch\ntrac_5263-publish-url.patch\ntrac_7631-republish-name.patch\ntrac_6353-cookies-diff-ports.patch\ntrac_7207-sagenb-future-import.3.patch\ntrac_8000-utf-8-coding-directive.2.patch\ntrac_4450-cursor-wrap-last-cell.patch\ntrac_7848-misleading_HTML_cells.patch\ntrac_7963-download-multiple-worksheets.patch\ntrac_7752-delete-worksheet-quit.patch\ntrac_7996-invisible_text.patch\ntrac_6475-error-delete-data-file.patch\ntrac_5675-address-launch.patch\ntrac_7435-dir-var.patch\ntrac_3844-DATA_in_sys_path.2.patch\n```\n\nPatch versions may be off by one.",
     "created_at": "2010-01-25T01:16:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3844",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27358",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3844#issuecomment-27300",
+    "user": "https://github.com/qed777"
 }
 ```
 

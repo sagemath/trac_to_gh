@@ -6,15 +6,14 @@ archive/issues_007548.json:
     "body": "Assignee: @craigcitro\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: M = CuspForms(Gamma0(5*3^2), 2)\nsage: f = M.basis()[0]\nsage: f\nq - q^4 + O(q^6)\nsage: 2*f\n2*q - 2*q^4 + O(q^6)\nsage: f*2\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ghitza/.sage/temp/artin/19582/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-devel/local/lib/python2.6/site-packages/sage/modular/modform/element.pyc in __mul__(self, other)\n    967         # boring case: scalar multiplication\n\n    968         if not isinstance(other, ModularFormElement):\n--> 969             return HeckeModuleElement.__mul__(self, other)\n    970 \n    971         # first ensure the levels are equal\n\n\nNameError: global name 'HeckeModuleElement' is not defined\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7548\n\n",
     "created_at": "2009-11-28T04:25:04Z",
     "labels": [
-        "modular forms",
-        "major",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "modular form times scalar = boom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7548",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: @craigcitro
@@ -58,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7548
 
 ---
 
-archive/issue_comments_064115.json:
+archive/issue_comments_063999.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-03T07:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64115",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-63999",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -76,15 +75,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_064116.json:
+archive/issue_comments_064000.json:
 ```json
 {
     "body": "Well, the fix was embarrassingly trivial.  Patch is attached.",
     "created_at": "2010-01-03T07:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64116",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64000",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -94,15 +93,15 @@ Well, the fix was embarrassingly trivial.  Patch is attached.
 
 ---
 
-archive/issue_comments_064117.json:
+archive/issue_comments_064001.json:
 ```json
 {
     "body": "Attachment [trac_7548.patch](tarball://root/attachments/some-uuid/ticket7548/trac_7548.patch) by @aghitza created at 2010-01-03 07:23:57",
     "created_at": "2010-01-03T07:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64117",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64001",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -112,15 +111,15 @@ Attachment [trac_7548.patch](tarball://root/attachments/some-uuid/ticket7548/tra
 
 ---
 
-archive/issue_comments_064118.json:
+archive/issue_comments_064002.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2010-01-03T18:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64118",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64002",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -130,15 +129,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_064119.json:
+archive/issue_comments_064003.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-03T18:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64119",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64003",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -148,15 +147,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064120.json:
+archive/issue_comments_064004.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-03T21:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7548",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64120",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7548#issuecomment-64004",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

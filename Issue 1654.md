@@ -6,15 +6,14 @@ archive/issues_001654.json:
     "body": "Assignee: mabshoff\n\n\n```\nFrancois wrote:\n> I was looking at the deps file and stumble across this:\n> \n> $(INST)/$(PYSQLITE): $(INST)/$(PYTHON) $(INST)/$(SQLITE)\n>         $(SAGE_SPKG) $(SQLITE) 2>&1\n> \n> Given that there is a pysqlite spkg I assume that must be a mistake.\n\npysqlite is included in Python 2.5.1.  For a long time we shipped and built\npysqlite since it wasn't part of Python, but now that it is we don't need to.\n\nThe pysqlite package should be removed from sage-2.9.2 if it hasn't\nalready been removed, and we might as well delete the above line from deps.\n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1654\n\n",
     "created_at": "2008-01-02T07:32:09Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.2",
     "title": "[easy -- no patch required] excise pysqlite",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1654",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -47,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1654
 
 ---
 
-archive/issue_comments_010528.json:
+archive/issue_comments_010501.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-03T07:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1654#issuecomment-10528",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1654#issuecomment-10501",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -65,15 +64,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_010529.json:
+archive/issue_comments_010502.json:
 ```json
 {
     "body": "Fixed in 2.9.2.alpha0",
     "created_at": "2008-01-03T07:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1654#issuecomment-10529",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1654#issuecomment-10502",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

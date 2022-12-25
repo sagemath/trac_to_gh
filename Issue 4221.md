@@ -6,15 +6,13 @@ archive/issues_004221.json:
     "body": "Assignee: @burcin\n\nKeywords: symbolics, pynac\n\nTo split the task of testing the new pynac package and the interface code from #3872, the new version of the pynac package is moved here.\n\nLatest version of the package can be downloaded from:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/4221\n\n",
     "created_at": "2008-09-30T12:34:07Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with package, needs review] pynac package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4221",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @burcin
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4221
 
 ---
 
-archive/issue_comments_030672.json:
+archive/issue_comments_030610.json:
 ```json
 {
     "body": "Build tested on \n\n* OSX 10.4, 10.5\n* Linux x86, x86-64, Itanium \n* Solaris x86\n\nIn total I ran 10 builds including all SkyNet machines. That obviously does not mean it actually works as intended, but the spkg passes the required build tests. Positive review.\n\nBurcin's spkg with some small SPKG.txt cleanups can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha2/pynac-0.1.p0.spkg\n\n\nCheers,\n\nMichael",
     "created_at": "2008-09-30T12:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4221",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4221#issuecomment-30672",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4221#issuecomment-30610",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -68,15 +66,15 @@ Michael
 
 ---
 
-archive/issue_comments_030673.json:
+archive/issue_comments_030611.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-30T12:55:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4221",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4221#issuecomment-30673",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4221#issuecomment-30611",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -86,15 +84,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030674.json:
+archive/issue_comments_030612.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha2",
     "created_at": "2008-09-30T12:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4221",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4221#issuecomment-30674",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4221#issuecomment-30612",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

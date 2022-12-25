@@ -6,15 +6,14 @@ archive/issues_003157.json:
     "body": "Assignee: @garyfurnish\n\nThis patch adds a GCC executable extension for pbuild\n\nIssue created by migration from https://trac.sagemath.org/ticket/3157\n\n",
     "created_at": "2008-05-11T10:01:12Z",
     "labels": [
-        "pbuild",
-        "major",
+        "component: pbuild",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch, needs trivial review] Executable target for pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3157",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3157
 
 ---
 
-archive/issue_comments_021905.json:
+archive/issue_comments_021858.json:
 ```json
 {
     "body": "Attachment [trac_3157.patch](tarball://root/attachments/some-uuid/ticket3157/trac_3157.patch) by mabshoff created at 2008-05-11 10:04:16\n\nPatch looks good to me. The missing documentation will be supplied in a follow up patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-11T10:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3157#issuecomment-21905",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3157#issuecomment-21858",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +52,15 @@ Michael
 
 ---
 
-archive/issue_comments_021906.json:
+archive/issue_comments_021859.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-11T10:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3157#issuecomment-21906",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3157#issuecomment-21859",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +70,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021907.json:
+archive/issue_comments_021860.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.alpha0",
     "created_at": "2008-05-11T10:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3157#issuecomment-21907",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3157#issuecomment-21860",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

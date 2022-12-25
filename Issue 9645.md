@@ -6,7 +6,7 @@ archive/issues_009645.json:
     "body": "Assignee: @malb\n\nCC:  jakobkroeker jpflori\n\nKeywords: Groebner basis integer\n\nA bug report on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/46124695d2f7469a) made me play around with the following example:\n\n\n```\nsage: R.<x,y>=PolynomialRing(ZZ,2)\nsage: I = R*(4*x^2*y^2+2*x*y^3+3*x*y,2*x^2+x*y,2*y^2)\nsage: I.groebner_basis(algorithm='libsingular:std')\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='libsingular:std')*R).interreduced_basis()\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='libsingular:slimgb')\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='libsingular:slimgb')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='toy:buchberger')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='toy:buchberger2')\n[4*x^2*y^2 + 2*x*y^3 + 3*x*y, 2*x^2 + x*y, 2*y^2]\nsage: (I.groebner_basis(algorithm='toy:buchberger2')*R).interreduced_basis()\n[2*x^2 + x*y, 3*x*y, 2*y^2]\nsage: I.groebner_basis(algorithm='magma')\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\n\n**__First bug__**\n\nThe documentation suggests that `toy:buchberger2` is supposed to return a reduced Groebner basis, but it doesn't. So, to the very least, the documentation is a little unclear.\n\n**__Second bug__**\n\nThe five algorithms return two *different* reduced Groebner bases. So, at least one of them must be wrong.\n\n`libsingular:std` and `magma` agree on this result:\n\n```\nsage: G1 = I.groebner_basis(algorithm='libsingular:std'); G1\n[x^2*y, x*y^2, 2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\nwhile `libsingular:slimgb`, `toy:buchberger` and `toy:buchberger2` agree on this result:\n\n```\nsage: G2 = I.groebner_basis(algorithm='libsingular:slimgb'); G2\n[2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\n\nThe following suggests that at least answer `G2` is wrong:\n\n```\nsage: [g.reduce(G2) for g in G1]\n[x^2*y, x*y^2, 0, 0, 0]\nsage: [g.reduce(G1) for g in G2]\n[0, 0, 0]\n```\n\n\nLet us check that indeed the element `x*y^2` belongs to the original ideal:\n\n```\nsage: y*I.0 -2*y^3*I.1 -x*I.2\nx*y^2\n```\n\n\nConclusion: **Under the assumption that there is no bug in reduce and the basic arithmetic, it is proven that slimgb and toy:buchberger(2) give a wrong answer.**\n\n**__Third bug__**\n\nOf course, if `G1` is a Groebner basis then all of its elements must belong to the ideal. Singular provides a command to express the Groebner basis elements as combinations of the given ideal generators: `liftstd`.\n\nBut `liftstd` apparently gives a wrong answer:\n\n```\nsage: r = singular(R)\nsage: i = singular(I)\nsage: singular.eval('matrix m')\n'matrix m;'\nsage: print singular.eval('liftstd(%s,m)'%i.name())\n_[1]=2*y^2\n_[2]=-3*x*y\n_[3]=2*x^2+x*y\n_[4]=x*y^2\n_[5]=x^2*y\nsage: singular('m')\n0,-1,   0,y,     -3*x-y,\n0,2*y^2,1,-2*y^3,2*y^3+5*y,\n1,0,    0,-x,    -x-2*y\n```\n\n\nSo, up to order and sign, the answer given by `liftstd` coincides with `G1`. Now, the matrix `m` should transform the list of ideal generators into the Groebner basis. But it does not for the element `x^2*y`:\n\n```\nsage: print singular.eval('matrix(%s)*m'%i.name())\n_[1,1]=2*y^2\n_[1,2]=-3*x*y\n_[1,3]=2*x^2+x*y\n_[1,4]=x*y^2\n_[1,5]=-12*x^3*y^2-6*x^2*y^3+x^2*y-4*y^3\n```\n\n\nSo, there is a bug in `liftstd` as well. At least, it is possible to verify that `x^2*y` (and therefore all of `G1`) belongs to the ideal:\n\n```\nsage: 2*y*I.1 - x*I.0 + (2*x^3 + x^2*y - x)*I.2\nx^2*y\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9645\n\n",
     "created_at": "2010-07-30T13:56:53Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009645.json:
     "title": "Bugs in the computation of Groebner bases over the integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9645",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: @malb
@@ -143,15 +143,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9645
 
 ---
 
-archive/issue_comments_093519.json:
+archive/issue_comments_093363.json:
 ```json
 {
     "body": "There is a new singular spkg at #8059. However, this does not solve the problem. The only difference is that now one has\n\n```\nsage: I.groebner_basis(algorithm='toy:buchberger2')\n[2*x^2 + x*y, 3*x*y, 2*y^2]\n```\n\nHence, the result is reduced (the first bug is gone), but still wrong.",
     "created_at": "2010-07-30T14:54:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93519",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93363",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -168,15 +168,15 @@ Hence, the result is reduced (the first bug is gone), but still wrong.
 
 ---
 
-archive/issue_comments_093520.json:
+archive/issue_comments_093364.json:
 ```json
 {
     "body": "At least the problem with `liftstd` has disappeared in Singular-3-1-1.\n\nBut since the bug in `slimgb` persists, I reported [upstream](http://www.singular.uni-kl.de:8002/trac/ticket/245).",
     "created_at": "2010-07-30T15:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93520",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93364",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -188,15 +188,15 @@ But since the bug in `slimgb` persists, I reported [upstream](http://www.singula
 
 ---
 
-archive/issue_comments_093521.json:
+archive/issue_comments_093365.json:
 ```json
 {
     "body": "Changing assignee from @malb to duleorlovic.",
     "created_at": "2010-08-03T12:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93521",
-    "user": "duleorlovic"
+    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93365",
+    "user": "https://trac.sagemath.org/admin/accounts/users/duleorlovic"
 }
 ```
 
@@ -206,15 +206,15 @@ Changing assignee from @malb to duleorlovic.
 
 ---
 
-archive/issue_comments_093522.json:
+archive/issue_comments_093366.json:
 ```json
 {
     "body": "Replying to [comment:1 SimonKing]:\n\n> There is a new singular spkg at #8059. However, this does not solve the problem. The only difference is that now one has ` sage: I.groebner_basis(algorithm='toy:buchberger2') [2*x^2 + x*y, 3*x*y, 2*y^2] ` Hence, the result is reduced (the first bug is gone), but still wrong.\n\nResult is **right **because reduce is different in field and in ring (please read [this book chapter 4](http://books.google.com/books?id=Caoxi78WaIAC&pg=PA201&dq=adams+loustaunau+introduction+to+grobner+bases+chapter+4&hl=sr&ei=CwdYTJzPHcGe4AaZsKmhBw&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCkQ6AEwAA#v=onepage&q=adams%20loustaunau%20introduction%20to%20grobner%20bases%20chapter%204&f=false)).\n\nx*y!^2\u00a0 is reduced to zero on [2*x!^2 + x*y, 3*x*y, 2*y!^2] because x*y!^2 - (y*3*x*y-x*2*y!^2)=0.\n\nSo libsingular:slimgb and toy:buchberger2 are right, and singular:std and libsingular:std has bug.",
     "created_at": "2010-08-03T12:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93522",
-    "user": "duleorlovic"
+    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93366",
+    "user": "https://trac.sagemath.org/admin/accounts/users/duleorlovic"
 }
 ```
 
@@ -232,15 +232,15 @@ So libsingular:slimgb and toy:buchberger2 are right, and singular:std and libsin
 
 ---
 
-archive/issue_comments_093523.json:
+archive/issue_comments_093367.json:
 ```json
 {
     "body": "Replying to [comment:4 duleorlovic]:\n> Replying to [comment:1 SimonKing]:\n> \n> > There is a new singular spkg at #8059. However, this does not solve the problem. The only difference is that now one has ` sage: I.groebner_basis(algorithm='toy:buchberger2') [2*x^2 + x*y, 3*x*y, 2*y^2] ` Hence, the result is reduced (the first bug is gone), but still wrong.\n> \n> Result is **right **because reduce is different in field and in ring (please read [this book chapter 4](http://books.google.com/books?id=Caoxi78WaIAC&pg=PA201&dq=adams+loustaunau+introduction+to+grobner+bases+chapter+4&hl=sr&ei=CwdYTJzPHcGe4AaZsKmhBw&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCkQ6AEwAA#v=onepage&q=adams%20loustaunau%20introduction%20to%20grobner%20bases%20chapter%204&f=false)).\n> \n> x*y!^2\u00a0 is reduced to zero on [2*x!^2 + x*y, 3*x*y, 2*y!^2] because x*y!^2 - (y*3*x*y-x*2*y!^2)=0.\n\nI don't buy this and repeat that this is not a reduction. Martin, do you agree?",
     "created_at": "2010-08-03T14:18:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93523",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93367",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -259,15 +259,15 @@ I don't buy this and repeat that this is not a reduction. Martin, do you agree?
 
 ---
 
-archive/issue_comments_093524.json:
+archive/issue_comments_093368.json:
 ```json
 {
     "body": "Many thanks to Michael Brickenstein who explained [here](http://groups.google.com/group/sage-devel/browse_thread/thread/46124695d2f7469a) that our misunderstanding comes from the fact that Dusan expects to work with *weak* Gr\u00f6bner bases - a notion that I was not aware of.\n\nSingular computes a strong Gr\u00f6bner basis. So, not a bug.\n\nBy the way, the remaining problem with slimgb is solved upstream: By now (i.e., with the current developer version and in the next official release), slimgb will raise an error when being called for an ideal over the integers.",
     "created_at": "2010-08-03T16:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93524",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93368",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -281,15 +281,15 @@ By the way, the remaining problem with slimgb is solved upstream: By now (i.e., 
 
 ---
 
-archive/issue_comments_093525.json:
+archive/issue_comments_093369.json:
 ```json
 {
     "body": "In sage Singular was recently upgraded to 3.1.7.\n1. What I do not understand, a slimgb call in standalone Singular 3.1.7  raises now an error\n\n```\nring rng = integer,(x,y),dp;\noption(\"redSB\");\nideal I = 4*x^2*y^2 + 2*x*y^3 + 3*x*y, 2*x^2 + x*y, 2*y^2;\nslimgb(I);\n//? not implemented for rings with rings as coeffients}}}\n```\n\nbut the slimgb call in sage\n\n```\nsage: R.<x,y>=PolynomialRing(ZZ,2)\nsage: I = R*(4*x^2*y^2+2*x*y^3+3*x*y,2*x^2+x*y,2*y^2)\nsage: I.groebner_basis(algorithm='libsingular:slimgb')\n```\n \nsucceeds. Why is that ??\n2. if there is really a difference between strong and weak groebner basis, \nthen at least the 'toy:buchberger','toy:buchberger2' and 'groebner_basis' documentation   should be updated ,\nhoping that nobody intermixes weak and strong groebner bases  by accident. (new ticket?)\n\n3. Remark: the liftstd bug seems fixed",
     "created_at": "2015-01-27T01:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93525",
-    "user": "jakobkroeker"
+    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93369",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jakobkroeker"
 }
 ```
 
@@ -323,34 +323,16 @@ hoping that nobody intermixes weak and strong groebner bases  by accident. (new 
 
 ---
 
-archive/issue_comments_093526.json:
+archive/issue_comments_093370.json:
 ```json
 {
     "body": "See https://groups.google.com/forum/#!topic/sage-devel/U1dsVFP-2PA",
     "created_at": "2020-10-08T12:48:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9645",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93526",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93370",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
 See https://groups.google.com/forum/#!topic/sage-devel/U1dsVFP-2PA
-
-
-
----
-
-archive/issue_comments_093527.json:
-```json
-{
-    "body": "Changing priority from critical to major.",
-    "created_at": "2020-10-08T12:48:39Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/9645",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9645#issuecomment-93527",
-    "user": "@kcrisman"
-}
-```
-
-Changing priority from critical to major.

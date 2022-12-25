@@ -6,15 +6,13 @@ archive/issues_007820.json:
     "body": "Assignee: tbd\n\nCC:  mhampton @williamstein\n\nSee\nhttp://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html\n\nRelease 0.4plus has improved performance and a lot of new functionality.\n\nCcing Marshall and William since they are the package maintainers.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7820\n\n",
     "created_at": "2010-01-02T23:04:14Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "upgrade gfan to latest release (0.4plus)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7820",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: tbd
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7820
 
 ---
 
-archive/issue_comments_067678.json:
+archive/issue_comments_067561.json:
 ```json
 {
     "body": "An updated spkg is up at\n\nhttp://sage.math.washington.edu/home/ghitza/gfan-0.4plus.spkg\n\nSome fixes are needed in the Sage library because of the upgrade.  I am attaching a patch that deals with the most obvious one, but there are some doctest failures left:\n\n\n```\nsage -t -long \"devel/sage-main/sage/rings/polynomial/groebner_fan.py\"\n**********************************************************************\nFile \"/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py\", line 301:\n    sage: pf.rays()\nExpected:\n    [[1, 0, 0], [-2, -1, 0], [1, 1, 0], [0, -1, 0], [-1, 1, 0]]\nGot:\n    [[-1, 0, 1], [-1, 1, 0], [1, -2, 1], [1, 1, -2], [2, -1, -1]]\n**********************************************************************\nFile \"/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py\", line 354:\n    sage: pf._str_()\nExpected:\n    '_application PolyhedralFan\\n_version 2.2\\n_type PolyhedralFan\\n\\nAMBIENT_DIM\\n3\\n\\nDIM\\n3\\n\\nLINEALITY_DIM\\n0\\n\\nRAYS\\n1 0 0\\t# 0\\n0 1 0\\t# 1\\n0 0 1\\t# 2\\n\\nN_RAYS\\n3\\n\\nLINEALITY_SPACE\\n\\nORTH_LINEALITY_SPACE\\n0 0 1\\n0 1 0\\n1 0 0\\n\\nF_VECTOR\\n1 3 3 1\\n\\nCONES\\n{}\\t# Dimension 0\\n{0}\\t# Dimension 1\\n{1}\\n{2}\\n{0 1}\\t# Dimension 2\\n{0 2}\\n{1 2}\\n{0 1 2}\\t# Dimension 3\\n\\nMAXIMAL_CONES\\n{0 1 2}\\t# Dimension 3\\n\\nPURE\\n1\\n'\nGot:\n    '_application PolyhedralFan\\n_version 2.2\\n_type PolyhedralFan\\n\\nAMBIENT_DIM\\n3\\n\\nDIM\\n3\\n\\nLINEALITY_DIM\\n0\\n\\nRAYS\\n0 0 1\\t# 0\\n0 1 0\\t# 1\\n1 0 0\\t# 2\\n\\nN_RAYS\\n3\\n\\nLINEALITY_SPACE\\n\\nORTH_LINEALITY_SPACE\\n1 0 0\\n0 1 0\\n0 0 1\\n\\nF_VECTOR\\n1 3 3 1\\n\\nMY_EULER\\n0\\n\\nSIMPLICIAL\\n1\\n\\nPURE\\n1\\n\\nCONES\\n{}\\t# Dimension 0\\n{0}\\t# Dimension 1\\n{1}\\n{2}\\n{0 1}\\t# Dimension 2\\n{0 2}\\n{1 2}\\n{0 1 2}\\t# Dimension 3\\n\\nMAXIMAL_CONES\\n{0 1 2}\\t# Dimension 3\\n'\n**********************************************************************\nFile \"/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py\", line 413:\n    sage: pf.rays()\nExpected:\n    [[1, 0, 0], [-2, -1, 0], [1, 1, 0], [0, -1, 0], [-1, 1, 0]]\nGot:\n    [[-1, 0, 1], [-1, 1, 0], [1, -2, 1], [1, 1, -2], [2, -1, -1]]\n**********************************************************************\nFile \"/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py\", line 138:\n    sage: _cone_parse(tstr.fan_dict['CONES'])\nExpected:\n    {1: [[0], [1], [3], [2], [4]], 2: [[2, 4]]}\nGot:\n    {1: [[0], [1], [2], [3], [4]], 2: [[2, 3]]}\n**********************************************************************\nFile \"/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py\", line 824:\n    sage: pf.rays()\nExpected:\n    [[1, 0, 0], [0, 1, 0], [0, 0, 1]]\nGot:\n    [[0, 0, 1], [0, 1, 0], [1, 0, 0]]\n**********************************************************************\nFile \"/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py\", line 1243:\n    sage: G.tropical_basis()\nException raised:\n    Traceback (most recent call last):\n      File \"/virtual/scratch/ghitza/sage-4.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/virtual/scratch/ghitza/sage-4.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/virtual/scratch/ghitza/sage-4.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_48[5]>\", line 1, in <module>\n        G.tropical_basis()###line 1243:\n    sage: G.tropical_basis()\n      File \"/virtual/scratch/ghitza/sage-4.3/local/lib/python/site-packages/sage/rings/polynomial/groebner_fan.py\", line 1267, in tropical_basis\n        X = [S(f) for f in B]\n      File \"multi_polynomial_libsingular.pyx\", line 608, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.__call__ (sage/rings/polynomial/multi_polynomial_libsingular.cpp:5471)\n        raise TypeError\n    TypeError\n**********************************************************************\nFile \"/virtual/scratch/ghitza/sage-4.3/devel/sage-main/sage/rings/polynomial/groebner_fan.py\", line 1294:\n    sage: pf.rays()\nExpected:\n    [[-1, 0, 0]]\nGot:\n    [[-2, 1, 1]]\n**********************************************************************\n7 items had failures:\n   1 of   7 in __main__.example_11\n   1 of   6 in __main__.example_13\n   1 of   7 in __main__.example_17\n   1 of   8 in __main__.example_3\n   1 of   6 in __main__.example_35\n   1 of   6 in __main__.example_48\n   1 of   7 in __main__.example_50\n***Test Failed*** 7 failures.\nFor whitespace errors, see the file /home/ghitza/.sage//tmp/.doctest_groebner_fan.py\n\t [8.1 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-main/sage/rings/polynomial/groebner_fan.py\"\nTotal time for all tests: 8.2 seconds\n```\n\n\nI can try to figure out what's happening, but Marshall is likely to be better at it.",
     "created_at": "2010-01-03T03:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67678",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67561",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -147,15 +145,15 @@ I can try to figure out what's happening, but Marshall is likely to be better at
 
 ---
 
-archive/issue_comments_067679.json:
+archive/issue_comments_067562.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-01-03T03:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67679",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67562",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -165,15 +163,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_067680.json:
+archive/issue_comments_067563.json:
 ```json
 {
     "body": "Yes, I can try to work on fixing those issues.  This relates a little bit to some major refactoring of the polyhedron class over at ticket #7109.  If you could review that I'd  greatly appreciate it.\n\nThanks very much for working on the gfan upgrade.",
     "created_at": "2010-01-03T17:15:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67680",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67563",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -185,15 +183,15 @@ Thanks very much for working on the gfan upgrade.
 
 ---
 
-archive/issue_comments_067681.json:
+archive/issue_comments_067564.json:
 ```json
 {
     "body": "I'm starting to think that rays doctest might have exposed a bug in gfan itself, I'll check with Anders.",
     "created_at": "2010-01-03T23:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67681",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67564",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -203,15 +201,15 @@ I'm starting to think that rays doctest might have exposed a bug in gfan itself,
 
 ---
 
-archive/issue_comments_067682.json:
+archive/issue_comments_067565.json:
 ```json
 {
     "body": "The new output is correct; the rays for that example are not uniquely determined.  So the doctests just need to be changed to match the new output.",
     "created_at": "2010-01-04T21:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67682",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67565",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -221,15 +219,15 @@ The new output is correct; the rays for that example are not uniquely determined
 
 ---
 
-archive/issue_comments_067683.json:
+archive/issue_comments_067566.json:
 ```json
 {
     "body": "It would be good if the Makefile could be changed so that the C compiler is set by CC and the C++ compiler by CXX, and the flags CFLAGS and CXXFLAGS used. \n\nThe Sun compiler was not happy with the earlier version. \n\nI dont mind trying to sort the makefile out if you want. \n\nDave",
     "created_at": "2010-01-05T05:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67683",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67566",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -245,15 +243,15 @@ Dave
 
 ---
 
-archive/issue_comments_067684.json:
+archive/issue_comments_067567.json:
 ```json
 {
     "body": "Replying to [comment:6 drkirkby]:\n> It would be good if the Makefile could be changed so that the C compiler is set by CC and the C++ compiler by CXX, and the flags CFLAGS and CXXFLAGS used. \n> \n> The Sun compiler was not happy with the earlier version. \n> \n> I dont mind trying to sort the makefile out if you want. \n\nSure!  That would make it easier for me.",
     "created_at": "2010-01-05T10:49:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67684",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67567",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -270,15 +268,15 @@ Sure!  That would make it easier for me.
 
 ---
 
-archive/issue_comments_067685.json:
+archive/issue_comments_067568.json:
 ```json
 {
     "body": "I'll do that today, by 1800 GMT today (7 hours from now). \n\nIt was coincidental, but I'd just hit the problem on version 0.3 and posted something to sage-devel about this. William was willing to remove gfan, as he was no aware of anyone using it. You might want to put a comment on sage-devel about it.  \n\nDave",
     "created_at": "2010-01-05T11:09:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67685",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67568",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -292,15 +290,15 @@ Dave
 
 ---
 
-archive/issue_comments_067686.json:
+archive/issue_comments_067569.json:
 ```json
 {
     "body": "I'm a bit concerned about the number of compiler warnings here from g++, even though  -Wall was **not** added. \n\nOn the 0.3 release, the Sun compiler rejected some code, saying things were masking others, and functions expected to return something did not. \n\nI'll get the Makefile fixed so gfan 0.4plus it at least attempts a build with Sun's compiler, but I suspect Sun's will reject some of the code as being invalid. \n\nDave",
     "created_at": "2010-01-05T14:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67686",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67569",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -316,15 +314,15 @@ Dave
 
 ---
 
-archive/issue_comments_067687.json:
+archive/issue_comments_067570.json:
 ```json
 {
     "body": "The 'src' directory at \n\nhttp://sage.math.washington.edu/home/ghitza/gfan-0.4plus.spkg\n\nhas no 'makefile' yet when I download the source code from \n\nhttp://www.math.tu-berlin.de/~jensen/software/gfan/gfan0.4plus.tar.gz\n\nthere is a makefile. \n\nI think we should keep that, then overwrite it with a patch, so there is a record of the actual source code. i.e. something like \n\ncp patches/makefile src/makefile\n\nThat way, the original source is untouched. I rather start with the original code, and make changes to that, rather than someone elses makefile. \n\nDave",
     "created_at": "2010-01-05T15:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67687",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67570",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -350,15 +348,15 @@ Dave
 
 ---
 
-archive/issue_comments_067688.json:
+archive/issue_comments_067571.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-05T18:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67688",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67571",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -368,15 +366,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_067689.json:
+archive/issue_comments_067572.json:
 ```json
 {
     "body": "Well, I'm 3 minutes late, but I hope you will excuse that. \n\nI've put a new spkg  at \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/gfan-0.4plus/\n\nI used a clean source, and just edited spkg-install and made patches/Makefile. \n\nCan you check I've note undone anything you have done, and check it works on a couple of systems. I've only checked on Solaris here. \n\nDave",
     "created_at": "2010-01-05T18:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67689",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67572",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -396,15 +394,15 @@ Dave
 
 ---
 
-archive/issue_comments_067690.json:
+archive/issue_comments_067573.json:
 ```json
 {
     "body": "Replying to [comment:10 drkirkby]:\n> The 'src' directory at \n> \n> http://sage.math.washington.edu/home/ghitza/gfan-0.4plus.spkg\n> \n> has no 'makefile' yet when I download the source code from \n> \n> http://www.math.tu-berlin.de/~jensen/software/gfan/gfan0.4plus.tar.gz\n> \n> there is a makefile. \n> \n> I think we should keep that, then overwrite it with a patch, so there is a record of the actual source code. i.e. something like \n> \n> cp patches/makefile src/makefile\n> \n> That way, the original source is untouched. I rather start with the original code, and make changes to that, rather than someone elses makefile. \n> \n> Dave \n\nI'm not sure what spkg file you're looking at.  I just rechecked the one I gave above and it has the original Makefile in src/ and a modified one in patches/.\n\nAnyway, it's not important.  I'm looking at your spkg now.",
     "created_at": "2010-01-05T22:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67690",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67573",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -435,15 +433,15 @@ Anyway, it's not important.  I'm looking at your spkg now.
 
 ---
 
-archive/issue_comments_067691.json:
+archive/issue_comments_067574.json:
 ```json
 {
     "body": "Sorry about the confusion.\n\nI can only assume I confused it with the 0.3 version by mistake. I certainly downloaded your one. \n\nI downloaded the gfan-0.4plus source code, and put that in the package.",
     "created_at": "2010-01-05T22:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67691",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67574",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -457,15 +455,15 @@ I downloaded the gfan-0.4plus source code, and put that in the package.
 
 ---
 
-archive/issue_comments_067692.json:
+archive/issue_comments_067575.json:
 ```json
 {
     "body": "It looks good, thanks for this!\n\nSo far I've tested it on 32-bit archlinux and 64-bit archlinux without problems.  Same on 32-bit MacOSX 10.5.\n\nThere are a couple of minor things in your spkg, which I can easily fix today: we normally strip the original sources of documentation and similar things.  In this case, we get rid of src/doc, src/examples, and src/homepage.  This gives an spkg that's 220kb instead of 680kb.  There are also a few typos in Makefile and SPKG.txt.\n\nAs I said, this is great, and I can make these minor fixes today.",
     "created_at": "2010-01-05T23:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67692",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67575",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -481,15 +479,15 @@ As I said, this is great, and I can make these minor fixes today.
 
 ---
 
-archive/issue_comments_067693.json:
+archive/issue_comments_067576.json:
 ```json
 {
     "body": "It's good to hear it was mostly there. \n\nAt least one can to build gfan with Sun's compiler now, even though it soon fails. Before it was impossible to get anything useful done, as gcc was hard-coded in the Makefile. Now at least one can see the error messages. Unfortunately, whilst I know C, I do not know C++, so don't have much clue about how to resolve the issues. I'll forward them upstream. \n\nDave",
     "created_at": "2010-01-05T23:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67693",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67576",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -503,15 +501,15 @@ Dave
 
 ---
 
-archive/issue_comments_067694.json:
+archive/issue_comments_067577.json:
 ```json
 {
     "body": "apply after the gfan-0.4plus spkg",
     "created_at": "2010-01-06T13:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67694",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67577",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -521,15 +519,15 @@ apply after the gfan-0.4plus spkg
 
 ---
 
-archive/issue_comments_067695.json:
+archive/issue_comments_067578.json:
 ```json
 {
     "body": "Attachment [trac_7820.patch](tarball://root/attachments/some-uuid/ticket7820/trac_7820.patch) by @aghitza created at 2010-01-06 14:01:44\n\nOK, I have replaced the spkg with one that has the small fixes to David's version.  See the ticket description for the URL.  This spkg also patches `src/polynomial.cpp` to fix a bug that appeared in gfan-0.4plus and was caught by one of our doctests (YAY for doctests!)\n\nI have also replaced the patch to the Sage library with one that deals with all the issues raised by the upgrade.  All of this is now ready for review.",
     "created_at": "2010-01-06T14:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67695",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67578",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -543,15 +541,15 @@ I have also replaced the patch to the Sage library with one that deals with all 
 
 ---
 
-archive/issue_comments_067696.json:
+archive/issue_comments_067579.json:
 ```json
 {
     "body": "Replying to [comment:17 AlexGhitza]:\n> OK, I have replaced the spkg with one that has the small fixes to David's version.  See the ticket description for the URL.  This spkg also patches `src/polynomial.cpp` to fix a bug that appeared in gfan-0.4plus and was caught by one of our doctests (YAY for doctests!)\n\nForgot to mention that the bug was reported upstream, and Anders Jensen quickly sent us the fix that we are now using.  It will be incorporated in the next version of gfan.",
     "created_at": "2010-01-06T14:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67696",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67579",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -564,15 +562,15 @@ Forgot to mention that the bug was reported upstream, and Anders Jensen quickly 
 
 ---
 
-archive/issue_comments_067697.json:
+archive/issue_comments_067580.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-23T15:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67697",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67580",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -582,15 +580,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_067698.json:
+archive/issue_comments_067581.json:
 ```json
 {
     "body": "I've tested this and I think it looks good.  There are some minor conflicts with 7109 but I am willing to rebase 7109 against this if it is merged first.\n\nI might not have time until this summer to extend the gfan interface but I am interested in doing so.  If anyone beats me to it I am happy to review.",
     "created_at": "2010-01-23T15:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67698",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -602,15 +600,15 @@ I might not have time until this summer to extend the gfan interface but I am in
 
 ---
 
-archive/issue_comments_067699.json:
+archive/issue_comments_067582.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-25T14:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67699",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -620,15 +618,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_067700.json:
+archive/issue_comments_067583.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. merged [gfan-0.4plus.spkg](http://sage.math.washington.edu/home/ghitza/gfan-0.4plus.spkg) in the standard spkg repository\n2. [trac_7820.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7820/trac_7820.patch)",
     "created_at": "2010-01-25T14:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67700",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7820#issuecomment-67583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

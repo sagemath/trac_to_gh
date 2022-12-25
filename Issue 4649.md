@@ -6,7 +6,7 @@ archive/issues_004649.json:
     "body": "Assignee: boothby\n\nImplement matrix multiplication in generic sparse matrices.  Need not be brilliant, just better than dense multiplication.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4649\n\n",
     "created_at": "2008-11-29T00:59:19Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004649.json:
     "title": "sparse linear algebra: implement matrix multiplication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4649",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: boothby
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4649
 
 ---
 
-archive/issue_comments_034996.json:
+archive/issue_comments_034928.json:
 ```json
 {
     "body": "already implemented in matrix_sparse.py -- surely you read the source before posting a ticket?",
     "created_at": "2008-11-29T01:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4649",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4649#issuecomment-34996",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4649#issuecomment-34928",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -47,15 +47,15 @@ already implemented in matrix_sparse.py -- surely you read the source before pos
 
 ---
 
-archive/issue_comments_034997.json:
+archive/issue_comments_034929.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-11-29T01:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4649",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4649#issuecomment-34997",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4649#issuecomment-34929",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

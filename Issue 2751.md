@@ -6,15 +6,14 @@ archive/issues_002751.json:
     "body": "Assignee: @malb\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2751\n\n",
     "created_at": "2008-04-01T13:18:31Z",
     "labels": [
-        "commutative algebra",
-        "minor",
-        "enhancement"
+        "component: commutative algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] multivariate polynomials i_homogeneous",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2751",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2751
 
 ---
 
-archive/issue_comments_018888.json:
+archive/issue_comments_018849.json:
 ```json
 {
     "body": "Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous.patch) by @malb created at 2008-04-01 13:19:05",
     "created_at": "2008-04-01T13:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18888",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18849",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [mpoly_is_homogenous.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_018889.json:
+archive/issue_comments_018850.json:
 ```json
 {
     "body": "I observe that the doc-tests do not actually run this code due to the fact that is_homogeneous is overridden (as it should be) in MPolynomial_libsingular.  Indeed, the only way I can find to actually run this code in normal use is:\n\n```\nsage: R.<x,y>=BooleanPolynomialRing(2)\nsage: x.is_homogeneous()\n...\n<type 'exceptions.AttributeError'>: 'sage.rings.polynomial.pbori.BooleanMonomial' object has no attribute 'degree'\n```\n\nand that fails.\n\nI am of two minds:\n\n *1) This method should be implemented special for the BooleanPolynomial and the generic implementation left unneeded and unwritten\n\n *2) Or, the above bug should be fixed.\n\nMy preference is choice 1 since it seems it is generally possible to implement this function in a much faster way when you know the data layout.\n\nOr, is there some use of this function that I'm missing?",
     "created_at": "2008-04-02T16:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18889",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18850",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -84,15 +83,15 @@ Or, is there some use of this function that I'm missing?
 
 ---
 
-archive/issue_comments_018890.json:
+archive/issue_comments_018851.json:
 ```json
 {
     "body": "That means that I forgot to submit the degree method, sorry bout that. I think both (1) and (2) should be implemented such that there are fall-back default implementations for most stuff.",
     "created_at": "2008-04-02T17:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18890",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18851",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -102,15 +101,15 @@ That means that I forgot to submit the degree method, sorry bout that. I think b
 
 ---
 
-archive/issue_comments_018891.json:
+archive/issue_comments_018852.json:
 ```json
 {
     "body": "Attachment [mpoly_is_homogenous_addon.patch](tarball://root/attachments/some-uuid/ticket2751/mpoly_is_homogenous_addon.patch) by @malb created at 2008-04-04 11:35:05",
     "created_at": "2008-04-04T11:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18891",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18852",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -120,15 +119,15 @@ Attachment [mpoly_is_homogenous_addon.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_018892.json:
+archive/issue_comments_018853.json:
 ```json
 {
     "body": "The attached patch addresses Joel's critique.",
     "created_at": "2008-04-04T11:35:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18892",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18853",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -138,15 +137,15 @@ The attached patch addresses Joel's critique.
 
 ---
 
-archive/issue_comments_018893.json:
+archive/issue_comments_018854.json:
 ```json
 {
     "body": "On the basis of what I see in the patch, I think I give a positive review.  However, the patch doesn't apply cleanly and I'm not at all sure what was intended with the unapplied hunk.",
     "created_at": "2008-04-04T16:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18893",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18854",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -156,15 +155,15 @@ On the basis of what I see in the patch, I think I give a positive review.  Howe
 
 ---
 
-archive/issue_comments_018894.json:
+archive/issue_comments_018855.json:
 ```json
 {
     "body": "Replying to [comment:5 jbmohler]:\n> However, the patch doesn't apply cleanly and I'm not at all sure what was intended \n> with the unapplied hunk.\n\nWhat version are you using 2.11 or 3.0.alpha0?",
     "created_at": "2008-04-04T16:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18894",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18855",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -178,15 +177,15 @@ What version are you using 2.11 or 3.0.alpha0?
 
 ---
 
-archive/issue_comments_018895.json:
+archive/issue_comments_018856.json:
 ```json
 {
     "body": "The do apply cleanly [the second patch with slight offsets] to my tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous.patch\npatching file sage/rings/polynomial/multi_polynomial.pyx\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.alpha1/devel/sage$ patch -p1  < trac_2751_mpoly_is_homogenous_addon.patch\npatching file sage/rings/polynomial/multi_polynomial.pyx\npatching file sage/rings/polynomial/pbori.pyx\nHunk #1 succeeded at 1432 (offset -120 lines).\nHunk #2 succeeded at 1443 (offset -120 lines).\n```\n\n\nAll doctests pass. Is that enough for a positive review from jbmoehler?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-04T17:06:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18895",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18856",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -213,15 +212,15 @@ Michael
 
 ---
 
-archive/issue_comments_018896.json:
+archive/issue_comments_018857.json:
 ```json
 {
     "body": "Yes, passing doc-tests are sufficient (I was using 2.11) (I wasn't aware that 3.0 and gotten that far already -- sorry about that)",
     "created_at": "2008-04-04T20:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18896",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18857",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -231,15 +230,15 @@ Yes, passing doc-tests are sufficient (I was using 2.11) (I wasn't aware that 3.
 
 ---
 
-archive/issue_comments_018897.json:
+archive/issue_comments_018858.json:
 ```json
 {
     "body": "Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2.patch) by @mwhansen created at 2008-04-04 20:56:19",
     "created_at": "2008-04-04T20:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18897",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18858",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -249,15 +248,15 @@ Attachment [2751-2.patch](tarball://root/attachments/some-uuid/ticket2751/2751-2
 
 ---
 
-archive/issue_comments_018898.json:
+archive/issue_comments_018859.json:
 ```json
 {
     "body": "Re 2751-2.patch:\n\n```\n[22:22] <mhansen> mabshoff: I got a doctest failure with 2751.\n[22:22] <mabshoff> ok. Which one?\n[22:23] <mhansen> The second patch -- P.<x,y> = PolynomialBooleanRing() fails.\n[22:23] <mabshoff> That depends on another patch I merged.\n[22:24] <mhansen> Ahh, I see.  Then ignore my new patch.\n[22:24] <mabshoff> There is a simplification patch for the PolyBoRi constructor\n[22:24] <mabshoff> :)\n[22:24] <mhansen> Yep, that should be done.\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-04-04T20:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18898",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18859",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -283,15 +282,15 @@ Michael
 
 ---
 
-archive/issue_comments_018899.json:
+archive/issue_comments_018860.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha1",
     "created_at": "2008-04-04T22:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18899",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18860",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -301,15 +300,15 @@ Merged in Sage 3.0.alpha1
 
 ---
 
-archive/issue_comments_018900.json:
+archive/issue_comments_018861.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-04T22:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18900",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2751#issuecomment-18861",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

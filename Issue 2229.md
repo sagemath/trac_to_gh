@@ -6,7 +6,7 @@ archive/issues_002229.json:
     "body": "Assignee: @williamstein\n\nI don't know about this code at all, but something is messed up:\n\n```\n         [2.8 s]\nsage -t  devel/sage-main/sage/rings/number_field/totallyreal_rel.py**********************************************************************\nFile \"totallyreal_rel.py\", line 654:\n    sage: [NumberField(ZZx(_[i][1]), 't').is_galois() for i in range(len(_))]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/build/sage-2.10.2.alpha1/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[7]>\", line 1, in <module>\n        [NumberField(ZZx(_[i][Integer(1)]), 't').is_galois() for i in range(len(_))]###line 654:\n    sage: [NumberField(ZZx(_[i][1]), 't').is_galois() for i in range(len(_))]\n    TypeError: 'int' object is unsubscriptable\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_totallyreal_rel.py\n         [50.8 s]\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2229\n\n",
     "created_at": "2008-02-20T07:03:35Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002229.json:
     "title": "sage-2.10.2.alpha1 -- breakage in new totally_rel.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2229",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -52,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2229
 
 ---
 
-archive/issue_comments_014765.json:
+archive/issue_comments_014734.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2008-02-20T20:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14765",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14734",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -70,15 +70,15 @@ Changing assignee from @williamstein to @craigcitro.
 
 ---
 
-archive/issue_comments_014766.json:
+archive/issue_comments_014735.json:
 ```json
 {
     "body": "So I don't see this doctest failure on my machine, but looking at the doctests, they're clearly nonsense (i.e. the above error *should* be showing up on my machine). I'm very curious why it doesn't.\n\nIn any event, the attached patch *should* fix it.",
     "created_at": "2008-02-20T20:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14766",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14735",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -90,15 +90,15 @@ In any event, the attached patch *should* fix it.
 
 ---
 
-archive/issue_comments_014767.json:
+archive/issue_comments_014736.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-02-20T20:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14767",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14736",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -108,15 +108,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_014768.json:
+archive/issue_comments_014737.json:
 ```json
 {
     "body": "Attachment [trac-2229.patch](tarball://root/attachments/some-uuid/ticket2229/trac-2229.patch) by mabshoff created at 2008-02-20 20:09:54",
     "created_at": "2008-02-20T20:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14768",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14737",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -126,15 +126,15 @@ Attachment [trac-2229.patch](tarball://root/attachments/some-uuid/ticket2229/tra
 
 ---
 
-archive/issue_comments_014769.json:
+archive/issue_comments_014738.json:
 ```json
 {
     "body": "The patch fixes the doctest failure, positive review.",
     "created_at": "2008-02-20T20:15:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14769",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14738",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -144,15 +144,15 @@ The patch fixes the doctest failure, positive review.
 
 ---
 
-archive/issue_comments_014770.json:
+archive/issue_comments_014739.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-20T20:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14770",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14739",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -162,15 +162,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014771.json:
+archive/issue_comments_014740.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha2",
     "created_at": "2008-02-20T20:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2229",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14771",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2229#issuecomment-14740",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002776.json:
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nThis now works:\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing()\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2776\n\n",
     "created_at": "2008-04-02T16:16:47Z",
     "labels": [
-        "commutative algebra",
-        "minor",
-        "enhancement"
+        "component: commutative algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] simplify BooleanPolynomialRing constructor for enduser",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2776",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2776
 
 ---
 
-archive/issue_comments_019074.json:
+archive/issue_comments_019034.json:
 ```json
 {
     "body": "Attachment [pbory_constructor.patch](tarball://root/attachments/some-uuid/ticket2776/pbory_constructor.patch) by @malb created at 2008-04-02 16:16:55",
     "created_at": "2008-04-02T16:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2776#issuecomment-19074",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2776#issuecomment-19034",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -56,15 +55,15 @@ Attachment [pbory_constructor.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_019075.json:
+archive/issue_comments_019035.json:
 ```json
 {
     "body": "Patch looks good to me. Doctests pass for me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-02T19:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2776#issuecomment-19075",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2776#issuecomment-19035",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -78,15 +77,15 @@ Michael
 
 ---
 
-archive/issue_comments_019076.json:
+archive/issue_comments_019036.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-02T19:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2776#issuecomment-19076",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2776#issuecomment-19036",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -96,15 +95,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_019077.json:
+archive/issue_comments_019037.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha1",
     "created_at": "2008-04-02T19:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2776#issuecomment-19077",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2776#issuecomment-19037",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

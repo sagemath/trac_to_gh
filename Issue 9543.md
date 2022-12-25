@@ -6,15 +6,14 @@ archive/issues_009543.json:
     "body": "Assignee: @peterjeremy\n\nCC:  @mwhansen jpflori\n\nFreeBSD does not currently have a full C99 libm and therefore also needs cephes.  The attached patch enables cephes on FreeBSD, removes a reference to a non-existent test package and enables error checking.  The latter two components are needed on Cygwin as well as FreeBSD.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9543\n\n",
     "created_at": "2010-07-18T19:57:13Z",
     "labels": [
-        "porting: BSD",
-        "major",
+        "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
     "title": "Enable cephes on FreeBSD",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9543",
-    "user": "@peterjeremy"
+    "user": "https://github.com/peterjeremy"
 }
 ```
 Assignee: @peterjeremy
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9543
 
 ---
 
-archive/issue_comments_091955.json:
+archive/issue_comments_091801.json:
 ```json
 {
     "body": "I made an spkg at http://sage.math.washington.edu/home/mhansen/cephes-2.8.p0.spkg , but I get the following build error on Cygwin:\n\n\n```\n\n /usr/lib/gcc/i686-pc-cygwin/4.3.4/collect2.exe -tsaware --wrap _Znwj --wrap _Znaj --wrap _ZdlPv --wrap _ZdaPv --wrap _ZnwjRKSt9nothrow_t --wrap _ZnajRKSt9nothrow_t --wrap _ZdlPvRKSt9nothrow_t --wrap _ZdaPvRKSt9nothrow_t -Bdynamic --dll-search-prefix=cyg -u ___register_frame_info -u ___deregister_frame_info -o mtst.exe /usr/lib/gcc/i686-pc-cygwin/4.3.4/../../../crt0.o /usr/lib/gcc/i686-pc-cygwin/4.3.4/crtbegin.o -L/home/mhansen/sage-4.5.3.alpha2/local/lib -L/home/mhansen/sage-4.5.3.alpha2/local/lib -L/usr/lib/gcc/i686-pc-cygwin/4.3.4 -L/usr/lib/gcc/i686-pc-cygwin/4.3.4 -L/usr/lib/gcc/i686-pc-cygwin/4.3.4/../../.. mtst.o cmplx.o clog.o cgamma.o stubs.o -lm -lgcc_s -lgcc -lgcc_eh -lcygwin -luser32 -lkernel32 -ladvapi32 -lshell32 -lgcc_s -lgcc -lgcc_eh /usr/lib/gcc/i686-pc-cygwin/4.3.4/crtend.o\ngcc  -I. -g -O2 -Wall   -c -o cvect.o cvect.c\ncvect.c: In function \u2018main\u2019:\ncvect.c:130: warning: implicit declaration of function \u2018memcmp\u2019\ncvect.c:223: warning: implicit declaration of function \u2018exit\u2019\ncvect.c:223: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -o cvect cvect.o clog.o cmplx.o stubs.o -lm\ngcc  -I. -g -O2 -Wall -c dccalc.c\ngcc -o dccalc dccalc.o libmc.a stubs.o -lm\ngcc  -I. -g -O2 -Wall   -c -o mtstf.o mtstf.c\ngcc -o mtstf mtstf.o cmplxf.o clogf.o cgammaf.o stubs.o -lm\nmake: *** No rule to make target `whitebxf.c', needed by `whitebxf.o'.  Stop.\n```\n",
     "created_at": "2010-10-12T01:03:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91955",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91801",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ make: *** No rule to make target `whitebxf.c', needed by `whitebxf.o'.  Stop.
 
 ---
 
-archive/issue_comments_091956.json:
+archive/issue_comments_091802.json:
 ```json
 {
     "body": "The patches I added do not affect the build on Cygwin and I get exactly the same failure when building cephes-2.8.spkg (without any of my patches) on Cygwin.  As I noted in my initial description, some of the cephes self-tests have been removed - whitebxf.c being one such.",
     "created_at": "2010-10-13T21:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91956",
-    "user": "@peterjeremy"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91802",
+    "user": "https://github.com/peterjeremy"
 }
 ```
 
@@ -85,15 +84,15 @@ The patches I added do not affect the build on Cygwin and I get exactly the same
 
 ---
 
-archive/issue_comments_091957.json:
+archive/issue_comments_091803.json:
 ```json
 {
     "body": "Note that patches should now be applied by using `patch` instead of `cp`.\n\nAlso, it would be really nice to make it more uniform: when possible, use the same patches both for Cygwin and for FreeBSD.",
     "created_at": "2012-01-24T14:24:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91957",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91803",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -105,15 +104,15 @@ Also, it would be really nice to make it more uniform: when possible, use the sa
 
 ---
 
-archive/issue_comments_091958.json:
+archive/issue_comments_091804.json:
 ```json
 {
     "body": "Replying to [comment:4 jdemeyer]:\n> Note that patches should now be applied by using `patch` instead of `cp`.\n> \n> Also, it would be really nice to make it more uniform: when possible, use the same patches both for Cygwin and for FreeBSD.\nOf course, though with Cygwin development halted for a bit that may not be as crucial.",
     "created_at": "2012-01-24T14:32:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91958",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91804",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -127,15 +126,15 @@ Of course, though with Cygwin development halted for a bit that may not be as cr
 
 ---
 
-archive/issue_comments_091959.json:
+archive/issue_comments_091805.json:
 ```json
 {
     "body": "With respect to this patch right now, according to Stephen Montgomery-Smith, \"It caused build errors in other sub-packages.\"  However, it does seem that cephes is needed for ccosh and who knows what else.",
     "created_at": "2012-01-31T01:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91959",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91805",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -145,15 +144,15 @@ With respect to this patch right now, according to Stephen Montgomery-Smith, "It
 
 ---
 
-archive/issue_comments_091960.json:
+archive/issue_comments_091806.json:
 ```json
 {
     "body": "See [this sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/2feec7c5511c4ae5/857a00a9aa271f17).",
     "created_at": "2012-01-31T01:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91960",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91806",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -163,15 +162,15 @@ See [this sage-devel thread](http://groups.google.com/group/sage-devel/browse_th
 
 ---
 
-archive/issue_comments_091961.json:
+archive/issue_comments_091807.json:
 ```json
 {
     "body": "I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.  Once a dynamic library has been created, apparently there is no mechanism for merging it with other dynamic libraries.\n\nMy solution was to slightly modify pjeremy's patch so that it creates a library libm_complex.so.  The following patch should be applied to pjeremy's patch:\n\n\n```\n--- cephes-2.8\t2012-04-14 01:39:13.000000000 +0000\n+++ cephes-2.8\t2012-04-14 01:38:51.000000000 +0000\n@@ -1273,11 +1273,11 @@\n +# Intermediate (ar) libraries\n +LIBS=c9x-complex/libmc.a double/libmd.a ldouble/libml.a single/libmf.a\n +\n-+all: libm.so\n++all: libm_complex.so\n +\n-+install: libm.so complex.h math.h\n++install: libm_complex.so complex.h math.h\n +\t${INSTALL} -C -m 644 complex.h math.h \"${SAGE_LOCAL}/include\"\n-+\t${INSTALL} -C -m 755 libm.so \"${SAGE_LOCAL}/lib\"\n++\t${INSTALL} -C -m 755 libm_complex.so \"${SAGE_LOCAL}/lib\"\n +\n +check:\n +\tcd c9x-complex && ${MAKE} \"CC=${CC}\" check\n@@ -1291,7 +1291,7 @@\n +#\tTBD\n +\n +clean:\n-+\trm -f libm.so syms.c99 syms.libm syms.wanted\n++\trm -f libm_complex.so syms.c99 syms.libm syms.wanted\n +\tcd c9x-complex && ${MAKE} clean\n +\tcd double && ${MAKE} clean\n +\tcd ldouble && ${MAKE} clean\n@@ -1300,8 +1300,8 @@\n +# FreeBSD includes some but not all of the C99 maths functions.  Build\n +# a \"new\" libm.so that uses cephes functions to replace the missing ones\n +# (listed in syms.wanted) and then fallback to the base libm.so\n-+libm.so: ${LIBS} syms.wanted\n-+\t${LD} -shared -o $@ $$(sed 's/^/-u /' syms.wanted) -L/usr/lib -lc -lm \\\n++libm_complex.so: ${LIBS} syms.wanted\n++\t${LD} -shared -o $@ $$(sed 's/^/-u /' syms.wanted) -L/usr/lib \\\n +\t   ${LIBS} -lgcc\n +\n +# List of symbols defined in the FreeBSD base libc.so and libm.so\n```\n\n\nThen I put a script in $SAGE_ROOT/local/bin called \"cc\" which is a wrapper around the cc I really want to use:\n\n\n```/usr/local/bin/bash\n\n# Intersperse a \"-lm_complex\" before \"-lm\".\n\nn=0\nfor i in \"$@\"; do\n  if [ \"x$i\" = \"x-lm\" ]; then\n    arg[$n]=\"-lm_complex\"\n    n=$((n+1))\n    arg[$n]=\"-lm\"\n  else\n    arg[$n]=\"$i\"\n  fi\n  n=$((n+1))\ndone\n\n# Some configure scripts invoke the compiler with the argument \"-v\", and if\n# LDFLAGS are added to the arguments, this results in an error which\n# ultimately stops the relevant package being built.\n\n# Otherwise LDFLAGS needs to be added so that the linker knows where to find\n# the dynamic libraries.\n\nif [ $n = 1 -a \"x${arg[0]}\" = \"x-v\" ]; then\n  exec /usr/local/bin/gcc46 \"${arg[@]}\"\nelse\n  exec /usr/local/bin/gcc46 -Wl,-rpath=$SAGE_ROOT/local/lib  -Wl,-rpath=/usr/local/lib/gcc46 \"${arg[@]}\"\nfi\n```\n",
     "created_at": "2012-04-14T03:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91961",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91807",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -259,15 +258,15 @@ fi
 
 ---
 
-archive/issue_comments_091962.json:
+archive/issue_comments_091808.json:
 ```json
 {
     "body": "Replying to [comment:8 stephen]:\n> I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.\nAre you sure about this?  Couldn't you link Cephes's `libm` against the system `-lm` (maybe you would have to rename the latter).\n\nI'm willing to experiment with this if somebody could give me access to a FreeBSD box.",
     "created_at": "2012-04-14T09:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91962",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91808",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -281,15 +280,15 @@ I'm willing to experiment with this if somebody could give me access to a FreeBS
 
 ---
 
-archive/issue_comments_091963.json:
+archive/issue_comments_091809.json:
 ```json
 {
     "body": "Replying to [comment:9 jdemeyer]:\n> Replying to [comment:8 stephen]:\n> > I could not get pjeremy's patch to work for FreeBSD.  After some searching, I found out that the problem is that his patch attempts to link the cephes functions with /lib/libm.so.  This is something that is not meant to work for dynamic libraries.\n> Are you sure about this?  Couldn't you link Cephes's `libm` against the system `-lm` (maybe you would have to rename the latter).\n> \n> I'm willing to experiment with this if somebody could give me access to a FreeBSD box.\n\nNo I am not sure about this.  I received a private email from pjeremy, and did some more investigating.  I discovered his patch doesn't work when I use the **gcc46 compiler**, which comes with the FreeBSD ports system, and is automatically invoked when you use fortran.\n\nLet me think some more about this.",
     "created_at": "2012-04-14T12:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91963",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91809",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -308,15 +307,15 @@ Let me think some more about this.
 
 ---
 
-archive/issue_comments_091964.json:
+archive/issue_comments_091810.json:
 ```json
 {
     "body": "Replying to [comment:10 stephen]:\n\n> No I am not sure about this.  I received a private email from pjeremy, and did some more investigating.  I discovered his patch doesn't work when I use the **gcc46 compiler**, which comes with the FreeBSD ports system, and is automatically invoked when you use fortran.\n> \n> Let me think some more about this.\n\nIt looks like I found the problem.  I was building under a chroot'ed environment.  I have discovered that after I perform the \n\n```\nchroot /usr/jail\n```\n\nI need to do\n\n```\nsh /etc/rc.d/ldconfig start\n```\n\nIt looks like I only need to do this one time.\n\nThanks for sticking with me on this guys.  It looks like pjeremy's patch works, as is, with no changes.",
     "created_at": "2012-04-14T17:12:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91964",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91810",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -346,15 +345,15 @@ Thanks for sticking with me on this guys.  It looks like pjeremy's patch works, 
 
 ---
 
-archive/issue_comments_091965.json:
+archive/issue_comments_091811.json:
 ```json
 {
     "body": "Great, we just have to make a new spkg for this.  Probably we should change to patches instead of entire files copied over, though these are all new files so it's not as big of an issue.",
     "created_at": "2012-06-20T19:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91965",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91811",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -364,15 +363,15 @@ Great, we just have to make a new spkg for this.  Probably we should change to p
 
 ---
 
-archive/issue_comments_091966.json:
+archive/issue_comments_091812.json:
 ```json
 {
     "body": "On #13806 [this message](http://freebsd.1045724.n5.nabble.com/Use-of-C99-extra-long-double-math-functions-after-r236148-td5712748.html) came up.  Relevant?  Sorry that we still haven't made an spkg for this...",
     "created_at": "2012-12-18T16:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91966",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91812",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -382,15 +381,15 @@ On #13806 [this message](http://freebsd.1045724.n5.nabble.com/Use-of-C99-extra-l
 
 ---
 
-archive/issue_comments_091967.json:
+archive/issue_comments_091813.json:
 ```json
 {
     "body": "Spkg cleanup and only targetting FreeBSD at\nhttp://boxen.math.washington.edu/home/jpflori/cephes-2.8.p0.spkg",
     "created_at": "2012-12-19T10:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91967",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91813",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -401,15 +400,15 @@ http://boxen.math.washington.edu/home/jpflori/cephes-2.8.p0.spkg
 
 ---
 
-archive/issue_comments_091968.json:
+archive/issue_comments_091814.json:
 ```json
 {
     "body": "Trivial error\n\n```\nif [ \"$UNAME\" != \"FreeBSD\" ]; then \n    echo \"We only install the cephes library on Cygwin and FreeBSD.\" \n    exit 0 \nfi\n```\n\nAnyway, I'm trying this on Cygwin now.",
     "created_at": "2013-01-04T15:32:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91968",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91814",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -428,15 +427,15 @@ Anyway, I'm trying this on Cygwin now.
 
 ---
 
-archive/issue_comments_091969.json:
+archive/issue_comments_091815.json:
 ```json
 {
     "body": "Regarding testing the cephes library - I don't think it is fair to\nexpect them to give super accurate answers.  I believe that the linux\nlibrary functions will fail in the same way.  Same with OpenBSD.\n\nI have been working with the FreeBSD people to get the C99 math\nfunctions into FreeBSD.  They are remarkably fussy.  I have been working\non the complex arc-trig functions casin(h), cacos(h), catan(h), and I\nhave written some extremely well tested and verified code which is\nlisted here: http://www.math.missouri.edu/~stephen/software/#catrig\n\nNevertheless they still won't commit my programs until I have made some\nstyle corrections, and I don't have time right now to do this.\n\nThe only other package I know of that implements these functions well\nare the boost libraries.  And even those were buggy (my bug fixes were\nrecently accepted by them).\n\nAnother person is working on clog.  The real part of clog(z) is\nparticularly hard to implement in the case that |z| is close to one.\n\nThe linux and OpenBSD libraries totally disregard the issues that give\nrise to the huge errors.\n\nAnd for casinh and cacosh, even the mpc libraries are badly written in\nthat their only saving grace is that they keep increasing the number of\ninternal digits until they are sure that their answer is correct.  (If\nyou wanted something like 200 bits of accuracy for cacosh, some inputs\ncan take minutes to compute.)\n\nAnyway, all this is to say that you shouldn't hold the cephes libraries\nup to any kind of high standard.  Treat them as work arounds so that\nccosh and such like will actually be compiled into sage on FreeBSD,\nrather that the answers should be particularly accurate.",
     "created_at": "2013-01-04T16:52:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91969",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91815",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -478,15 +477,15 @@ rather that the answers should be particularly accurate.
 
 ---
 
-archive/issue_comments_091970.json:
+archive/issue_comments_091816.json:
 ```json
 {
     "body": "Replying to [comment:17 stephen]:\n> Regarding testing the cephes library - I don't think it is fair to\n> expect them to give super accurate answers.  I believe that the linux\n> library functions will fail in the same way.  Same with OpenBSD.\nI'm not sure anyone was suggesting doing this, just to at least *provide* such functions on Cygwin.\n> Anyway, all this is to say that you shouldn't hold the cephes libraries\n> up to any kind of high standard.  Treat them as work arounds so that\n> ccosh and such like will actually be compiled into sage on FreeBSD,\n> rather that the answers should be particularly accurate.\nHopefully that is all we are asking for!  I'm going to change the description to point out that we really just want this.\n\n----\n\nSo... would you mind checking (at your convenience) whether this spkg indeed does the same thing as the patches from before and at [your port](http://www.freebsd.org/cgi/cvsweb.cgi/ports/math/sage/files/spkg-patch-cephes_-_big-patch)?  Then if it works on Cygwin (i.e., if Cygwin doesn't need it) we can merge this and simplify things slightly.",
     "created_at": "2013-01-04T17:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91970",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91816",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -509,15 +508,15 @@ So... would you mind checking (at your convenience) whether this spkg indeed doe
 
 ---
 
-archive/issue_comments_091971.json:
+archive/issue_comments_091817.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-01-04T17:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91971",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91817",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -527,15 +526,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_091972.json:
+archive/issue_comments_091818.json:
 ```json
 {
     "body": "This new spkg failed to build rather early in the process:\n\n\n\n```\nFound package cephes-2.8.p0 in spkg/standard/cephes-2.8.p0.spkg\ncephes-2.8.p0\n====================================================\nExtracting package /usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/standard/cephes-2.8.p0.spkg\n-rw-r--r--  1 stephen  staff  2514467 Jan  4 20:36 /usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/standard/cephes-2.8.p0.spkg\nFinished extraction\n****************************************************\nHost system:\nFreeBSD wilberforce 8.3-STABLE FreeBSD 8.3-STABLE #0: Wed Jan  2 15:53:46 CST 2013     root@wilberforce:/usr/obj/usr/src/sys/GENERIC  amd64\n****************************************************\nC compiler: gcc\nC compiler version:\nUsing built-in specs.\nCOLLECT_GCC=/usr/local/bin/gcc46\nCOLLECT_LTO_WRAPPER=/usr/local/libexec/gcc46/gcc/x86_64-portbld-freebsd8.3/4.6.3/lto-wrapper\nTarget: x86_64-portbld-freebsd8.3\nConfigured with: ./../gcc-4.6.3/configure --disable-bootstrap --disable-nls --libdir=/usr/local/lib/gcc46 --libexecdir=/usr/local/libexec/gcc46 --program-suffix=46 --with-as=/usr/local/bin/as --with-gmp=/usr/local --with-gxx-include-dir=/usr/local/lib/gcc46/include/c++/ --with-ld=/usr/local/bin/ld --with-libiconv-prefix=/usr/local --with-pkgversion='FreeBSD Ports Collection' --with-system-zlib --enable-languages=c,c++,objc,fortran,java --prefix=/usr/local --mandir=/usr/local/man --infodir=/usr/local/info/gcc46 --build=x86_64-portbld-freebsd8.3\nThread model: posix\ngcc version 4.6.3 (FreeBSD Ports Collection)\n****************************************************\nApplying patches (if any)...\npatching file c9x-complex/cgamma.c\npatching file c9x-complex/cgammaf.c\npatching file c9x-complex/cgammal.c\npatching file c9x-complex/makefile\npatching file double/makefile\npatching file ldouble/gammal.c\npatching file ldouble/makefile\npatching file Makefile\n./spkg-install: line 21: check_error: command not found\nBuilding Cephes...\nmake[3]: Entering directory `/usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/build/cephes-2.8.p0/src'\nmake[3]: *** No rule to make target `../patches/complex_bsd.h', needed by `c9x-complex/complex.h'.  Stop.\nmake[3]: Leaving directory `/usr/home/stephen/sage-devel/work/sage-5.6.beta2/spkg/build/cephes-2.8.p0/src'\nError - Failed to build Cephes ... exiting\n\nreal    0m0.025s\nuser    0m0.002s\nsys     0m0.013s\n************************************************************************\nError installing package cephes-2.8.p0\n************************************************************************\n```\n",
     "created_at": "2013-01-04T20:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91972",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91818",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -593,15 +592,15 @@ Error installing package cephes-2.8.p0
 
 ---
 
-archive/issue_comments_091973.json:
+archive/issue_comments_091819.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2013-01-04T20:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91973",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91819",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -611,15 +610,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_091974.json:
+archive/issue_comments_091820.json:
 ```json
 {
     "body": "\n```\n./spkg-install: line 21: check_error: command not found\n```\n\nJP, I think you might have used that command from a different spkg we've been working on.  So that's two things... and then the third is that the `complex_bsd.h` is completely missing from pjeremy's patch to yours.\n----\nStill waiting on Cygwin, probably will hear back Monday since I'm using `SAGE_CHECK`.",
     "created_at": "2013-01-04T20:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91974",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91820",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -636,15 +635,15 @@ Still waiting on Cygwin, probably will hear back Monday since I'm using `SAGE_CH
 
 ---
 
-archive/issue_comments_091975.json:
+archive/issue_comments_091821.json:
 ```json
 {
     "body": "Cygwin is fine, unsurprisingly, though of course the message is a little funny\n\n```\n...\ngcc version 4.5.3 (GCC)\nWe only install the cephes library on Cygwin and FreeBSD.\n\nreal ...\nuser ...\nsys ...\nSuccessfully installed cephes-2.8.p0\n...\n```\n",
     "created_at": "2013-01-07T14:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91975",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91821",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -667,15 +666,15 @@ Successfully installed cephes-2.8.p0
 
 ---
 
-archive/issue_comments_091976.json:
+archive/issue_comments_091822.json:
 ```json
 {
     "body": "I've upped a new spkg which:\n* fixes the exit message,\n* fixes the use of check_error,\n* does not add math_bsd or complex_bsd as pjeremy's patch did not lead to their creation or installation, the bsd.patch and spkg-install I've produced should replicate the behavior of what you get with pjeremy's patch.",
     "created_at": "2013-01-07T15:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91976",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91822",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -688,15 +687,15 @@ I've upped a new spkg which:
 
 ---
 
-archive/issue_comments_091977.json:
+archive/issue_comments_091823.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-01-07T15:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91977",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91823",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -706,15 +705,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_091978.json:
+archive/issue_comments_091824.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"cephes spkg cygwin freebsd\".",
     "created_at": "2013-01-07T15:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91978",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91824",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -724,15 +723,15 @@ Changing keywords from "" to "cephes spkg cygwin freebsd".
 
 ---
 
-archive/issue_comments_091979.json:
+archive/issue_comments_091825.json:
 ```json
 {
     "body": "This is fine from my point of view.  If Stephen can check whether it performs as promised then we'll be set.",
     "created_at": "2013-01-07T15:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91979",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91825",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -742,15 +741,15 @@ This is fine from my point of view.  If Stephen can check whether it performs as
 
 ---
 
-archive/issue_comments_091980.json:
+archive/issue_comments_091826.json:
 ```json
 {
     "body": "Replying to [comment:23 kcrisman]:\n> This is fine from my point of view.  If Stephen can check whether it performs as promised then we'll be set.\nAgreed!\n\nQuite strangely, I don't have access to a FreeBSD box :) (although I vaguely remember trying to setup one once)",
     "created_at": "2013-01-07T15:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91980",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91826",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -764,15 +763,15 @@ Quite strangely, I don't have access to a FreeBSD box :) (although I vaguely rem
 
 ---
 
-archive/issue_comments_091981.json:
+archive/issue_comments_091827.json:
 ```json
 {
     "body": "It still fails with the \"complex_bsd.h\" no rule message.\n\nI looked at Jeremy's patch, and it seemed to me that it did create math_bsd.h and complex_bsd.h.  For example, it has lines like this:\n\n\n```\n--- cephes-2.8/patches/complex_bsd.h.orig       2010-07-26 08:25:54.654310990 +1000\n+++ cephes-2.8/patches/complex_bsd.h    2010-07-26 08:25:54.658310309 +1000\n```\n\n\nThis is a diff against a non-existent file, using the \"-N\" option to diff.  The patch program creates a new file.\n\nMakefile then copies this from cephes-2.8/patches to where-ever it is needed.  I would probably change the patch so that it is created directly in the directory where it is needed.",
     "created_at": "2013-01-07T20:28:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91981",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91827",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -795,15 +794,15 @@ Makefile then copies this from cephes-2.8/patches to where-ever it is needed.  I
 
 ---
 
-archive/issue_comments_091982.json:
+archive/issue_comments_091828.json:
 ```json
 {
     "body": "Oh, and the reason it worked so well with cygwin is because it didn't do anything.",
     "created_at": "2013-01-07T20:29:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91982",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91828",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -813,15 +812,15 @@ Oh, and the reason it worked so well with cygwin is because it didn't do anythin
 
 ---
 
-archive/issue_comments_091983.json:
+archive/issue_comments_091829.json:
 ```json
 {
     "body": "> Oh, and the reason it worked so well with cygwin is because it didn't do anything.\nYes, understood.",
     "created_at": "2013-01-07T21:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91983",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91829",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -832,15 +831,15 @@ Yes, understood.
 
 ---
 
-archive/issue_comments_091984.json:
+archive/issue_comments_091830.json:
 ```json
 {
     "body": "Ok, I had a closer look at jeremy's patch and indeed the *_bsd.h file are needed and copied by the new makefile.\n\nI did not create them at first because the bunch of bash functions called on cygwin explicitely copied them whereas on bsd we just have make / make install calls which got me confused.\n\nI'll fix that tomorrow.",
     "created_at": "2013-01-07T22:13:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91984",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91830",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -854,15 +853,15 @@ I'll fix that tomorrow.
 
 ---
 
-archive/issue_comments_091985.json:
+archive/issue_comments_091831.json:
 ```json
 {
     "body": "Attachment [cephes-2.8.p0.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p0.diff) by jpflori created at 2013-01-08 14:17:28\n\nSpkg diff, for review only.",
     "created_at": "2013-01-08T14:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91985",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91831",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -874,15 +873,15 @@ Spkg diff, for review only.
 
 ---
 
-archive/issue_comments_091986.json:
+archive/issue_comments_091832.json:
 ```json
 {
     "body": "Everything is hopefully fine now.\n\nI've slightly modified Jeremy's approach to create (or rather modify as far as complex.h is concerned) the various headers while patching the src dir, rather than overwriting them with Makefile rules.",
     "created_at": "2013-01-08T14:19:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91986",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91832",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -894,15 +893,15 @@ I've slightly modified Jeremy's approach to create (or rather modify as far as c
 
 ---
 
-archive/issue_comments_091987.json:
+archive/issue_comments_091833.json:
 ```json
 {
     "body": "The latest version built and worked just fine.",
     "created_at": "2013-01-08T23:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91987",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91833",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -912,15 +911,15 @@ The latest version built and worked just fine.
 
 ---
 
-archive/issue_comments_091988.json:
+archive/issue_comments_091834.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-01-09T06:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91988",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91834",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -930,15 +929,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_091989.json:
+archive/issue_comments_091835.json:
 ```json
 {
     "body": "And the spkg-install looks good to me.  Assuming that you formed it correctly, this should be good to go in!",
     "created_at": "2013-01-09T06:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91989",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91835",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -948,15 +947,15 @@ And the spkg-install looks good to me.  Assuming that you formed it correctly, t
 
 ---
 
-archive/issue_comments_091990.json:
+archive/issue_comments_091836.json:
 ```json
 {
     "body": "Sorry to be annoying but could you please document *why* we need cephes on FreeBSD? Preferably something should be mentioned in `SPKG.txt`. In the ticket description I only see\n> FreeBSD does not currently have a full C99 libm and therefore also needs cephes\nwhich is very vague.",
     "created_at": "2013-01-09T09:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91990",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91836",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -968,15 +967,15 @@ which is very vague.
 
 ---
 
-archive/issue_comments_091991.json:
+archive/issue_comments_091837.json:
 ```json
 {
     "body": "FreeBSD's math library does not have all the mathematics functions described in Sections 7.3 and 7.12 of the C99 standard:\n\n```\nhttp://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf\n```\n\nSpecifically many of the complex and long double functions are missing in FreeBSD.\n\nCephes provides those functions that are missing from FreeBSD.  The Makefiles have been modified so that it only adds those functions missing from the version of FreeBSD in which compilation is taking place.",
     "created_at": "2013-01-09T13:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91991",
-    "user": "stephen"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91837",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stephen"
 }
 ```
 
@@ -994,15 +993,15 @@ Cephes provides those functions that are missing from FreeBSD.  The Makefiles ha
 
 ---
 
-archive/issue_comments_091992.json:
+archive/issue_comments_091838.json:
 ```json
 {
     "body": "New spkg with SPKG.txt including a note with what stephen posted.\nAs the change is minimal I'm leaving this as positive review.",
     "created_at": "2013-01-09T15:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91992",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91838",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -1013,15 +1012,15 @@ As the change is minimal I'm leaving this as positive review.
 
 ---
 
-archive/issue_comments_091993.json:
+archive/issue_comments_091839.json:
 ```json
 {
     "body": "Spkg diff, for review only.",
     "created_at": "2013-01-09T15:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91993",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91839",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -1031,15 +1030,15 @@ Spkg diff, for review only.
 
 ---
 
-archive/issue_comments_091994.json:
+archive/issue_comments_091840.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2013-01-12T08:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91994",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91840",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1049,15 +1048,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_091995.json:
+archive/issue_comments_091841.json:
 ```json
 {
     "body": "Attachment [cephes-2.8.p1.diff](tarball://root/attachments/some-uuid/ticket9543/cephes-2.8.p1.diff) by @jdemeyer created at 2013-01-12 08:52:00",
     "created_at": "2013-01-12T08:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91995",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9543#issuecomment-91841",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

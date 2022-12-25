@@ -6,14 +6,13 @@ archive/issues_000183.json:
     "body": "Assignee: @williamstein\n\n\n```\nOn Fri, 15 Dec 2006 17:03:48 -0800, Luis Finotti <luis.finotti@gmail.com> wrote:\n\n>\n> On 12/15/06, Kate Minola <kate01123@gmail.com> wrote:\n>>\n>> When I try to build sage-1.5.0.2 on my\n>> x86_64-Linux box, it gets to\n>>\n>> sage-spkg sage-1.5.0.2\n>>\n>> does some processing, then reports\n>>\n>> \" Regenerating files that hardcode the install PATH (please wait a few\n>> seconds)...\"\n>>\n>> and then hangs (for a reason I have not yet been able to figure\n>> out).  I am using make-3.81.\n>\n> I had the same problem with my installation (from scratch) in my AMD\n> XP system...  (also make 3.81).  Then, after waiting a couple of hours\n> and killing it, sage runs, but many tests from \"make test\" fail.\n\nMaybe you need to type \"make\" again to finish the install?  The problem\nis happening midway through the install, not at the end.  \nIt is completely uneccessary to \" Regenerating files that hardcode the\ninstall PATH (please wait a few seconds)...\" during the build, so\nI an make sure this doesn't happen during the build.  If one ever\ngets a hang after build when this happens, that would be a serious \nproblem.  Does it for you, i.e., after finishing the install by typing\n\"make\" again, if you move the entire install directory, then run SAGE,\ndoes the above message only appear for a few seconds, then SAGE starts\nup?\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/183\n\n",
     "created_at": "2006-12-16T01:31:05Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "title": "Regenerating files that hardcode the install PATH -- hangs forever during the install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/183",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -65,15 +64,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/183
 
 ---
 
-archive/issue_comments_000836.json:
+archive/issue_comments_000833.json:
 ```json
 {
     "body": "This is fixed for sage-1.6",
     "created_at": "2007-01-09T18:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/183#issuecomment-836",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/183#issuecomment-833",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -83,15 +82,15 @@ This is fixed for sage-1.6
 
 ---
 
-archive/issue_comments_000837.json:
+archive/issue_comments_000834.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-09T18:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/183#issuecomment-837",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/183#issuecomment-834",
+    "user": "https://github.com/williamstein"
 }
 ```
 

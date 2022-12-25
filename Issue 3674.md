@@ -6,15 +6,13 @@ archive/issues_003674.json:
     "body": "Assignee: @williamstein\n\nCC:  mardaus@students.uni-mainz.de\n\nThe problem of enumerating integral and S-integral points on elliptic curves over Q and over number fields is one which it would be wonderful to have implemented in Sage.  Magma has this over Q (for general S), but no package has the general case (except possibly in code for Simath written by E.Hermann).\n\nI suggested this as a good problem for a Masters student to work on after the Sage Days in Bristol in November 2007.   After that, Tobias Nagel & Michael Mardaus (students at Mainz) started to work on it.  At my suggestion they started with the easiest case: integral points over Q (i.e. S=\\emptyset).  They have just sent me this, and I am about to start testing it:\n\nDear John,\n\nwe just finished our work (or at least part one of it).\nAs you explained to us we put our code into ell_rational_field.py. So a new function 'integral_points(self, mw_base='auto', tors_points='auto')' is provided after a rebuild of sage.\n\nOur testcases are also attached to the mail. If you load self_test.sage you have a funtion called 'test_integral_points'. Call it by test_integral_points('all') to test 12 testcases, which mean several curves and changes in the generators of the Mordell-Weil base. (As an overview we made an excel-sheet with the computation time, but it is only one run and not statistically correct evaluated ;) )\nWe are not sure if all the functionality should be written in ell_rational_field.py as we did or if it should be swaped out to somewhere.\n\nWe hope you are satisfied with our work.\n\nGreetings\nTobias and Michael\n\nI will attach a patch file created from the attachments they sent me shortly.\n\nJohn Cremona\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3674\n\n",
     "created_at": "2008-07-18T17:19:43Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Implement integral point finding for elliptic curves over Q",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3674",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @williamstein
@@ -51,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3674
 
 ---
 
-archive/issue_comments_025969.json:
+archive/issue_comments_025915.json:
 ```json
 {
     "body": "Not a patch (yet)",
     "created_at": "2008-07-18T19:12:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25969",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25915",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -69,15 +67,15 @@ Not a patch (yet)
 
 ---
 
-archive/issue_comments_025970.json:
+archive/issue_comments_025916.json:
 ```json
 {
     "body": "Attachment [ell_rational_field.py](tarball://root/attachments/some-uuid/ticket3674/ell_rational_field.py) by @JohnCremona created at 2008-07-18 19:13:14\n\nIn 3.0.5 I replaced sage/schemes/elliptic_curves/ell_rational_field.py with the file emailed to me\nand it built fine.\n\nComments:\n1. The docstring says that parameter tors_points should be either 'auto' or a list of all the torsion points; but 'auto' causes tors_points to be assigned to generators for the torsion.  So the docstring should change \"all torsion points\" to \"generators for the torsion subgroup\".\n2. The output is a set.  I think it should be a sorted list.  (Sorting is important to give consistency across platforms, etc.)\n3. Why this?\n\n```\n        if (r == 0) and (len_tors == 0):\n            raise RuntimeError, 'Both base points and torsions points are not specified'\n```\n\nIf the curve has trivial MW group then this is what you would expect, so why not just return the empty list?\n4. Your way of checking that the supplied points lie on the curve (the code with \"trash\") looks weird to me.  Why not just check that sel==P.curve() for each point P?  And this need only be done when the user has supplied the points.\n5. is_int():  there are more Sage-like ways of doing this, such as try: x==ZZ(x).\n    \nThat's all I'll write for now.  You have done some great work here, but what I think I will do is rewrite it a bit myself and post a new patch based on that.\n \n\n```\n            if j == 0:\n```\n\nshould be if self.j_invariant()==0 ?  j is undefined here.  Also, since height_of_curve() might be useful in other places I would make this a separate function for the class.",
     "created_at": "2008-07-18T19:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25970",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25916",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -113,15 +111,15 @@ should be if self.j_invariant()==0 ?  j is undefined here.  Also, since height_o
 
 ---
 
-archive/issue_comments_025971.json:
+archive/issue_comments_025917.json:
 ```json
 {
     "body": "Dear John,\n\nthanks to your answer and your advise.\nI'm sorry to write you an email instead of replying to the trac ticket (but I'm not sure how to do that).\nI made some comments on your mail below:\n\n>Betreff: Re: [SAGE] #3674: Implement integral point finding for elliptic curves over Q\n>\n>#3674: Implement integral point finding for elliptic curves over Q\n>---------------------------+------------------------------------------------\n >Reporter:  cremona        |        Owner:  was\n >    Type:  enhancement    |       Status:  new\n> Priority:  major          |    Milestone:\n>Component:  number theory  |   Resolution:\n> Keywords:                 |\n>---------------------------+------------------------------------------------\n>Comment (by cremona):\n>\n >In 3.0.5 I replaced sage/schemes/elliptic_curves/ell_rational_field.py\n >with the file emailed to me\n >and it built fine.\n>\n> Comments:\n>     1. The docstring says that parameter tors_points should be either\n> 'auto' or a list of all the torsion points; but 'auto' causes tors_points\n> to be assigned to generators for the torsion.  So the docstring should\n> change \"all torsion points\" to \"generators for the torsion subgroup\".\n\nyour right that was a bit imprecise of us\n\n>     2. The output is a set.  I think it should be a sorted list.  (Sorting\n> is important to give consistency across platforms, etc.)\n\nwe didn't thought of the problem that a set might make across platforms\n\n>     3. Why this?\n> {{{\n>         if (r == 0) and (len_tors == 0):\n>             raise RuntimeError, 'Both base points and torsions points are\n> not specified'\n> }}}\n> If the curve has trivial MW group then this is what you would expect, so\n> why not just return the empty list?\n\nyes, there is a mistake. We thought this would be impossible so we raised an Error\n\n>     4. Your way of checking that the supplied points lie on the curve (the\n> code with \"trash\") looks weird to me.  Why not just check that\n> sel==P.curve() for each point P?  And this need only be done when the user\n> has supplied the points.\n\nThe code with trash is more or less the same, because the function .point() raises an Error\nif the specified point is not in the curve. We haven't looked at the function .curve()\n\n>     5. is_int():  there are more Sage-like ways of doing this, such as\n> try: x==ZZ(x).\n\nWe also thought that there must be better ways of checking the type but because we\nweren't so familiar (its becoming better and better but sage is so large that it takes some\ntime we get deep into it)\n\n> That's all I'll write for now.  You have done some great work here, but\n> what I think I will do is rewrite it a bit myself and post a new patch\n> based on that.\n\nThanks. So we shouldn't fix what you commented on here ?\n\n   >{{{\n   >            if j == 0:\n   >}}}\n> should be if self.j_invariant()==0 ?  j is undefined here.\n\nAt runtime j is defined so it seems no problem to us\n\n>  Also, since height_of_curve() might be useful in other places I would make this a\n> separate function for the class.\n\nIf you're going do this you need self.j_invariant() that's right.\n\nI would also suggest to make complex_elliptic_logarithm() a seperate function in the class\nof Rational Points on Elliptic curves or isn't it a useful functionality?\nIf so I can make the necessary additional changes.\n\n\nNow in the following weeks, Michael and I will go on with the problem of S-integral point\nfinding.\n\nBest wishes\nTobias",
     "created_at": "2008-07-19T13:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25971",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25917",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -219,15 +217,15 @@ Tobias
 
 ---
 
-archive/issue_comments_025972.json:
+archive/issue_comments_025918.json:
 ```json
 {
     "body": "Dear Tobias (and Michael)\n\nFor trac:  write to Michael Abshoff (see sage-devel emails) and ask\nhim for an account.  Your username can be anything to easily identify\nyou, and the password can be anything insecure -- it is just to avoid\nspam.\n\nI have started editing your code, and I think it would be most\nefficient if I did some more work on that before handing it back to\nyou.  If you don't like that, tell me right away as I can easily stop:\nall I have done so far is to separate out the height of a curve\n(which will be useful elsewhere.  Elliptic log will certainly be\nuseful elsewhere.\n\nOther comments about your internal functions:\n\n* `extract_realroots()`:  you should be able to give the `roots()` function\na field and it will only give roots in that field.  then this would\nbbe unnecessary.\n\n* `in_egg()`:  this should be an external function, and should be replaced\nby something exact (discrete):  see the very last section of\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/papers/component.pdf.\n\n* `search_points()`:  should use the function `elliptic_curve.list_x()` to\ngive one or all points with a given x-coordinate.  Which would make it\nmuch shorter:  for example, to list all points with integral x between\n10 and 50 this works:\n\n```\nsage: sum([E.lift_x(x,all=True) for x in range(10,50)],[])\n[(11 : 35 : 1),\n (11 : -36 : 1),\n (14 : 51 : 1),\n (14 : -52 : 1),\n (21 : 95 : 1),\n (21 : -96 : 1),\n (37 : 224 : 1),\n (37 : -225 : 1)]\n```\n\n\nThat's enough for now.  I will paste this into the trac ticket too.\n\nIt might be a good idea to wait until this function is finished and\nreviewed before working too seriously on the S-integral case.  I think\nit would be easier to implement that once you know the final form of\nthe case you have already done.  But anyway you can certainly start to\nwork on that while I tidy up what you have done so far.\n\nJohn",
     "created_at": "2008-07-19T13:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25972",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25918",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -287,15 +285,15 @@ John
 
 ---
 
-archive/issue_comments_025973.json:
+archive/issue_comments_025919.json:
 ```json
 {
     "body": "Attachment [sage-trac3674a.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674a.patch) by @JohnCremona created at 2008-07-20 07:16:04\n\nBased on 3.0.4",
     "created_at": "2008-07-20T07:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25973",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25919",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -307,15 +305,15 @@ Based on 3.0.4
 
 ---
 
-archive/issue_comments_025974.json:
+archive/issue_comments_025920.json:
 ```json
 {
     "body": "The patch sage-trac3674a.patch is a first version after some working by me.  It needs more work still (e.g. `elliptic_logarithm()` needs doctests) but I cannot spend more time on it for a while and I wanted Tobias and Michael to see what I had done so far.",
     "created_at": "2008-07-20T07:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25974",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25920",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -325,15 +323,15 @@ The patch sage-trac3674a.patch is a first version after some working by me.  It 
 
 ---
 
-archive/issue_comments_025975.json:
+archive/issue_comments_025921.json:
 ```json
 {
     "body": "Replying to [comment:4 cremona]:\n> The patch sage-trac3674a.patch is a first version after some working by me.  It needs more work still (e.g. `elliptic_logarithm()` needs doctests) but I cannot spend more time on it for a while and I wanted Tobias and Michael to see what I had done so far.\n\nDear John,\n\nit is very informative to look at the changes you made. We hadn't such a deep knowledge how to work with sage (e.g. computing the roots).\nTo make a little contribution I have written the doctests for the elliptic_logarithm()\n\n```\nEXAMPLES:\n    sage: E=EllipticCurve('37a')\n    sage: [E.lift_x(x).elliptic_logarithm() for x in range(-1,2)]\n    [0.204680500375771 + 1.22569469099340*I, 0.929592715285396 + 1.22569469099340*I, 1.85918543057079]\n         \n    sage: [E.lift_x(x).elliptic_logarithm(precision=100) for x in range(-1,2)]\n    [0.20468050037577260661641194608 + 1.2256946909933950304271124159*I, 0.92959271528539567440519934446 + 1.2256946909933950304271124159*I, 1.8591854305707913488103986889]\n```\n\n\nGreetings\nTobias",
     "created_at": "2008-07-21T10:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25975",
-    "user": "tnagel"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25921",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tnagel"
 }
 ```
 
@@ -363,15 +361,15 @@ Tobias
 
 ---
 
-archive/issue_comments_025976.json:
+archive/issue_comments_025922.json:
 ```json
 {
     "body": "Replaces earlier patch -- applies to 3.0.4",
     "created_at": "2008-07-21T11:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25976",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25922",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -381,15 +379,15 @@ Replaces earlier patch -- applies to 3.0.4
 
 ---
 
-archive/issue_comments_025977.json:
+archive/issue_comments_025923.json:
 ```json
 {
     "body": "Attachment [sage-trac3674.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674.patch) by @JohnCremona created at 2008-07-21 11:05:30\n\nThe patch sage-trac3674.patch supercedes the earlier one and should be applied to 3.0.4 (or, I hope 3.0.5, 3.0.6).\n\nFrom the code supplied by Tobias and Michael I moved elliptic_logarithm() and on_identity_component() to ell_points.py since they are more generally useful, and included doctests for these.  I edited the code for integral_points quite a lot without changing the algorithm, mainly better handling of floating point numbers and use of some Sage functions rather than reinvent wheels in a few places.\n\nOne change to functionality is that by default only one of each pair P, -P is output;  this can be changed using both_signs=True.\n\nThe elliptic logarithm doctests have been checked against pari's ellpointtoz() function, and the integral points on 5077a1 with Magma (which revealed a Magma bug, duly reported).",
     "created_at": "2008-07-21T11:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25977",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25923",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -407,15 +405,15 @@ The elliptic logarithm doctests have been checked against pari's ellpointtoz() f
 
 ---
 
-archive/issue_comments_025978.json:
+archive/issue_comments_025924.json:
 ```json
 {
     "body": "The second patch sage-trac3674b.patch adds a function antilogarithm() for elliptic curves over Q, which is an inverse to elliptic_logarithm().  A `ValueError` is raised if the input complex number z does not lead to a rational point (which can happen for precision reasons, or if z is not the elliptic log of a rational point).\n\nNote 1:  elliptic_logarithm() is a method of the class `EllipticCurvePoint_field` -- though only implemented for subfields of RR, such as CC.  Whereas antilogarithm() is a method of class `EllipticCurve_rational_field`.  It might be possible to arrange this differently.\n\nNote 2:  antilogarithm() just calls ellztopoint() from the pari library.  But the way that function is wrapped does not allow the passing of a precision parameter, which it should.",
     "created_at": "2008-07-21T13:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25978",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25924",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -429,15 +427,15 @@ Note 2:  antilogarithm() just calls ellztopoint() from the pari library.  But th
 
 ---
 
-archive/issue_comments_025979.json:
+archive/issue_comments_025925.json:
 ```json
 {
     "body": "Attachment [sage-trac3674b.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674b.patch) by @JohnCremona created at 2008-07-21 13:56:49\n\nFor CC read QQ in the above.",
     "created_at": "2008-07-21T13:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25979",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25925",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -449,15 +447,15 @@ For CC read QQ in the above.
 
 ---
 
-archive/issue_comments_025980.json:
+archive/issue_comments_025926.json:
 ```json
 {
     "body": "Attachment [sage-trac3674c.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674c.patch) by @williamstein created at 2008-07-21 19:16:45\n\nfix so e.integral_points() works when e.rank() >= 1.",
     "created_at": "2008-07-21T19:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25980",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25926",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -469,15 +467,15 @@ fix so e.integral_points() works when e.rank() >= 1.
 
 ---
 
-archive/issue_comments_025981.json:
+archive/issue_comments_025927.json:
 ```json
 {
     "body": "REFEREE REPORT:\n\nThis is a wonderful contribution to Sage!    \n\nSince we're writing professional quality code here, there are several quality and consistency issues that need to be addressed.  Please see below. \n\n1. CODE:\n\n```\n+        \"\"\"The rational point (if any) associated to this complex number\n+           (inverse of elliptic logarithm)\n```\n\nshould be\n\n```\n         \"\"\"\n         The rational point (if any) associated to this complex number\n         (inverse of elliptic logarithm).\n```\n\nNotice the period at the end of the sentence and not starting right after \"\"\" (a Sage convention). \n\n* In `def antilogarithm(self, z, prec=53):` you don't document the prec input parameter.\n\n* The warning doesn't explain to me at all what the significance of it is.  What does that warning imply?\n\n```\n+           WARNING: At present (3.0.4) it is not possible to pass the\n+           precision parameter to ellztopoint!\n```\n\n\n* In antilogorithm there is\n\n```\n+        except:\n```\n\nOne should NEVER have a naked except: unless there is a very good reason for it.\nMuch better is to do \"except TypeError\" or whatever other specific exceptions there.\n\n* This is bad code in the `integral_points` function:\n\n```\n+                try:\n+                    assert P.curve() is self\n+                except:\n+                    raise ValueError, \"points are not on the correct curve\"\n```\n\nWhy not just\n\n```\nif P.curve() is not self:\n     raise ValueError, \"points are not on the current curve\"\n```\n\nIn fact, you *should* probably do:\n\n```\nif P.curve() != self:\n     raise ValueError, \"points are not on the current curve\"\n```\n\nMake sure you know the difference between is and == (and 'is not' and !=). \n\n* Similar remarks about\n\n```\n+        try:\n+            assert self.is_integral()\n+        except:\n+            raise ValueError, \"integral_points() can only be called on an integral model\"\n```\n\n \n* This will tex wrong (especially the subscript for H_q):\n\n```\n+        def search_remaining_points():\n+            \"\"\"Returns list of integral points on curve E written as\n+               linear combination of n times the mordell-weil base\n+               points and torsion points (n is bounded by H_q, which\n+               will be computed at runtime)\n```\n\n\n\n* In torsion_points:\n\n```\n+    def torsion_points(self, flag=0):\n+        \"\"\"\n+        Returns the torsion points of this elliptic curve as a sorted list.\n+\n+        INPUT:\n+            flag -- (default: 0)  chooses PARI algorithm:\n+              flag = 0: uses Doud algorithm\n+              flag = 1: uses Lutz-Nagell algorithm\n```\n\nit would be vastly more consistent with sage to replace the `flag=[integer]` parameter by an `algorithm=string` parameter.  Everywhere else in Sage we use algorithm instead of flag and set it to a string, which makes reading code much easier. \n\n* The first sentence of a docstring should be a sentence (or two); in particular, end in a period:\n\n```\n+    def height(self, precision=53):\n+        \"\"\"Returns real height of this elliptic curve\n+        This is used in integral_points()\n```\n\n\n* Here:\n\n```\n+    def integral_points(self, mw_base='auto', both_signs=False):\n+        \"\"\"\n+        Computes all integral points (up to sign) on the elliptic\n+        curve E which has Mordell-Weil basis mw_base.\n+        \n+        INPUT:\n+            self -- EllipticCurve_Rational_Field\n+            mw_base -- list of EllipticCurvePoint generating the\n+                       Mordell-Weil group of E\n+                    (default: 'auto' - calls self.gens())\n+\n+            both_signs -- True/False (default False): if True the\n+                       output contains both P and -P, otherwise only\n+                       one of ecah pair.\n```\n\nThere is an extra newline that shouldn't be there.  Also, one never explicitly lists self in the INPUT's in Sage docstrings.\n\n* This will look very bad when latex'd for the reference manual:\n\n```\n+        HINTS:\n+            - The complexity increases exponentially in the rank of curve E.\n+            - It can help if you try another Mordell-Weil base, because the\n+            computation time depends on this, too.   \n```\n\n\n\n\n\n\n2. ROBUSTNESS:\nI just made a little loop over elliptic curves, to see if I could find a bug, and quickly found numerous curves where integral_points \"hangs forever\".  I didn't investigate to see what's going on.  All I know about complexity is that Magma computes the integral points on the same curves almost immediately.\n\nThe three curves for which this new code \"hangs forever\" are: 79a1, 117a2, and 205a1.\nMagma finds the integral points instantly:\n\n```\nsage: e = EllipticCurve('79a1')\nsage: m = magma(e)\nsage: m.IntegralPoints()\n[ (0 : 0 : 1), (1 : 0 : 1), (-2 : 1 : 1), (33 : -210 : 1) ]\nsage: e = EllipticCurve('117a2')\nsage: m = magma(e)\nsage: m.IntegralPoints()\n[ (5 : -3 : 1), (-7 : 3 : 1), (2 : 3 : 1), (-4 : -12 : 1), (6 : -10 : 1), (32 : 159 : 1), (9 : 15 : 1) ]\nsage: m = magma(EllipticCurve('205a1'))\nsage: m\nElliptic Curve defined by y^2 + x*y + y = x^3 - x^2 - 22*x + 44 over Rational Field\nsage: m.IntegralPoints()\n[ (2 : -4 : 1), (3 : -2 : 1), (-1 : 8 : 1), (12 : 31 : 1), (2 : 1 : 1) ]\n```\n\n\n\nAlso, even worse, when I control-c'd out of running 205a1 from Sage I got a SIGBUS exception:\n\n```\nsage: sage: for E in cremona_optimal_curves([80..300]):\n          print E.cremona_label(); print E.integral_points()\n...     \n...\n205a1\n^C\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nD-69-91-158-184:~ was$ \n```\n",
     "created_at": "2008-07-29T20:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25981",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25927",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -680,15 +678,15 @@ D-69-91-158-184:~ was$
 
 ---
 
-archive/issue_comments_025982.json:
+archive/issue_comments_025928.json:
 ```json
 {
     "body": "Many thanks for the very detailed, helpful and constructive comments, William!  Almost all the points you raise are about things introduced by me and not by the people who did the real work, so I'll take the blame for all that.  The one exception to that remark, I think, is the hanging on test cases, which I'll blame on the real implementors -- but help debug if I can.\n\nI'll try to do some work on this soon.  There's something about being in a Marriott Residence Inn of an evening which makes Sage development seem just the right thing to do...",
     "created_at": "2008-07-30T00:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25982",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25928",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -700,15 +698,15 @@ I'll try to do some work on this soon.  There's something about being in a Marri
 
 ---
 
-archive/issue_comments_025983.json:
+archive/issue_comments_025929.json:
 ```json
 {
     "body": "Attachment [sage-trac3674c.2.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674c.2.patch) by @JohnCremona created at 2008-07-30 01:53:20\n\nreplaces earlier sage-trac3674c.patch",
     "created_at": "2008-07-30T01:53:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25983",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25929",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -720,15 +718,15 @@ replaces earlier sage-trac3674c.patch
 
 ---
 
-archive/issue_comments_025984.json:
+archive/issue_comments_025930.json:
 ```json
 {
     "body": "The new patch sage-trac3674c.2.patch replaces sage-trac3674c.patch.\n\nI have dealt with all (I hope) of the stylistic points raised in the review (if not, I will of course do more in that direction).\n\nOf the curves which had been reported as hanging, only the third hung for me, but I tracked the problem down to an over-strict test for ending an AGM loop in elliptic_logarithm() -- I had made a necessary change in one branch of a split on the sign of the discriminant but not in the other.\nSo I think the hanging problem is fixed.\n\nHowever, there is more debugging to do which I want to hand back to the original implementers!   I ran all curves in the database in order like this:\n\n```\nsage: CDB=CremonaDatabase()  \nsage: for E in CDB.iter(range(11,1000)):  print E.label(), E.integral_points()\n```\n\nand all went well until a runtime error in '289a3'.  The low_bound variable becomes 0 which leads to H_q_new being Infinity.\n\nSecondly, I found lots of curves where fewer integral points were listed than by magma.\nFor example:\n\n```\nsage: e = EllipticCurve('117a2')\nsage: e.integral_points()       \n[(-4 : 15 : 1), (2 : 3 : 1), (6 : 3 : 1), (9 : 15 : 1)]\nsage: m = magma(e)              \nsage: m.IntegralPoints()        \n[ (5 : -3 : 1), (-7 : 3 : 1), (2 : 3 : 1), (-4 : -12 : 1), (6 : -10 : 1), (32 : 159 : 1), (9 : 15 : 1) ]\n```\n\n\nSo there is something wrong here too.\n\nOver to you, Tobias and Michael!",
     "created_at": "2008-07-30T02:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25984",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25930",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -769,15 +767,15 @@ Over to you, Tobias and Michael!
 
 ---
 
-archive/issue_comments_025985.json:
+archive/issue_comments_025931.json:
 ```json
 {
     "body": "Attachment [sage-trac3674d.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674d.patch) by @JohnCremona created at 2008-07-30 03:54:57",
     "created_at": "2008-07-30T03:54:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25985",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25931",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -787,15 +785,15 @@ Attachment [sage-trac3674d.patch](tarball://root/attachments/some-uuid/ticket367
 
 ---
 
-archive/issue_comments_025986.json:
+archive/issue_comments_025932.json:
 ```json
 {
     "body": "sage-trac3674d.patch fixes a problem with rank 0 curves (it was returning the 0 point and both signs even when both_signs=False).",
     "created_at": "2008-07-30T03:55:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25986",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25932",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -805,15 +803,15 @@ sage-trac3674d.patch fixes a problem with rank 0 curves (it was returning the 0 
 
 ---
 
-archive/issue_comments_025987.json:
+archive/issue_comments_025933.json:
 ```json
 {
     "body": "We will start debugging and hopefully fix the problem soon.",
     "created_at": "2008-07-30T07:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25987",
-    "user": "tnagel"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25933",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tnagel"
 }
 ```
 
@@ -823,15 +821,15 @@ We will start debugging and hopefully fix the problem soon.
 
 ---
 
-archive/issue_comments_025988.json:
+archive/issue_comments_025934.json:
 ```json
 {
     "body": "Attachment [sage-trac3674new.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674new.patch) by @JohnCremona created at 2008-08-07 21:06:24\n\nReplaces ALL above patches",
     "created_at": "2008-08-07T21:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25988",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25934",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -843,15 +841,15 @@ Replaces ALL above patches
 
 ---
 
-archive/issue_comments_025989.json:
+archive/issue_comments_025935.json:
 ```json
 {
     "body": "The *new* patch sage-trac3674new.patch replaces all earlier ones, and should apply to 3.0.6.\n\nSummary: If E is an elliptic curve over Q then E.integral_points() returns all integral points on E.   Related and other functions have been included:\n1. In ell_generic there's now a function is_x_coord() similar to lift_x() which just returns a boolean, True iff there's a point on E with given x-coord, defined over E's base field.\n2. In ell_point there are new functions for points on curves over Q:  is_on_identity_component(), elliptic_logarithm().\n3. In ell_rational_field there are functions height_pairing_matrix() and height() as well as integral_points().\n\nI hope everything is properly doctested, but no doubt there will still be some glitches, hopefully minor.\n\nI also tested that the patch applies cleanly to 3.1.rc0.  Not all doctests in sage/schemes/elliptic_curves pass: I will look into these now.",
     "created_at": "2008-08-07T21:16:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25989",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25935",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -870,15 +868,15 @@ I also tested that the patch applies cleanly to 3.1.rc0.  Not all doctests in sa
 
 ---
 
-archive/issue_comments_025990.json:
+archive/issue_comments_025936.json:
 ```json
 {
     "body": "Attachment [sage-trac3674new-extra.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674new-extra.patch) by @JohnCremona created at 2008-08-07 21:30:49",
     "created_at": "2008-08-07T21:30:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25990",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25936",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -888,15 +886,15 @@ Attachment [sage-trac3674new-extra.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_025991.json:
+archive/issue_comments_025937.json:
 ```json
 {
     "body": "OK, so there's an extra mini patch:  I forgot to include one changed file in my attempt to merge all changes into a single patch.\n\nApply also sage-trac3674new-extra.patch and now all tests in elliptic_curves pass.\n\nThere may be some other failures since (on was's suggestion) I changed the interface to torsion_subgroup() to use an string parameter 'algorithm' instead of a numerical flag.\n\nThis is now ready for review.",
     "created_at": "2008-08-07T21:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25991",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25937",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -912,15 +910,15 @@ This is now ready for review.
 
 ---
 
-archive/issue_comments_025992.json:
+archive/issue_comments_025938.json:
 ```json
 {
     "body": "Attachment [sage-trac3674new-extra2.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674new-extra2.patch) by @JohnCremona created at 2008-08-08 16:46:28\n\nApply this after the preceding two to 3.0.6 or 3.1.rc0",
     "created_at": "2008-08-08T16:46:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25992",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25938",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -932,15 +930,15 @@ Apply this after the preceding two to 3.0.6 or 3.1.rc0
 
 ---
 
-archive/issue_comments_025993.json:
+archive/issue_comments_025939.json:
 ```json
 {
     "body": "Further testing revealed some more precision bugs.  The patch sage-trac3674new-extra2.patch fixes these and also makes one internal function much more efficient.  This version tests fine on all database curves up to 5478j1 where there's a new bug which I will let Michael and Tobias fix.\n\nI have left the \"needs review\" tag on since it would still be worthwhile for someone to review this pending a fix of that bug.  I was planning to test in on *all* curves in the database (it only takes 50s to do the ones of conductor up to 1000), but I haven't checked the results with Magma past conductor 1000 since Magma is much too slow (mainly because it has to compute the MW generators).",
     "created_at": "2008-08-08T16:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25993",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25939",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -952,15 +950,15 @@ I have left the "needs review" tag on since it would still be worthwhile for som
 
 ---
 
-archive/issue_comments_025994.json:
+archive/issue_comments_025940.json:
 ```json
 {
     "body": "There are still issues.\n\nThe doctests do not pass for me: Mac OS X 10.4, Core 2 duo.  I get:\n\n\n```\nsage -t ell_rational_field.py\nsage -t  3.0.6/devel/sage-nca/sage/schemes/elliptic_curves/ell_rational_field.py**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3792:\n    sage: a=E.integral_points([P1,P2,P3]); a\nExpected:\n    [(-3 : 0 : 1), (-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1), (1 : 0 : 1), (2 : 0 : 1), (3 : 3 : 1), (4 : 6 : 1), (8 : 21 : 1), (11 : 35 : 1), (14 : 51 : 1), (21 : 95 : 1), (37 : 224 : 1), (52 : 374 : 1), (93 : 896 : 1), (342 : 6324 : 1), (406 : 8180 : 1), (816 : 23309 : 1)]\nGot:\n    [(-3 : 0 : 1), (-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1), (1 : 0 : 1), (2 : 0 : 1), (3 : 3 : 1), (4 : 6 : 1), (21 : 95 : 1)]\n**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3795:\n    sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259331 1.06582054769620 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831538\n    x-coords of points on compact component with  -3 <=x<= 1\n    set([0, -1, -3, -2, 1])\n    x-coords of points on non-compact component with  2 <=x<= 6\n    set([2, 3, 4])\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    set([2, 3, 4, 37, 406, 8, 11, 14, 816, 52, 21, 342, 93])\n    Total number of integral points: 18\nGot:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831536\n    x-coords of points on compact component with  -3 <=x<= 1\n    set([0, -1, -3, -2, 1])\n    x-coords of points on non-compact component with  2 <=x<= 6\n    set([2, 3, 4])\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    set([2, 21])\n    Total number of integral points: 9\n**********************************************************************\nFile \"/Users/ncalexan/sage/tmp/ell_rational_field.py\", line 3812:\n    sage: a=E.integral_points(both_signs=True); a\nExpected:\n    [(-3 : -1 : 1), (-3 : 0 : 1), (-2 : -4 : 1), (-2 : 3 : 1), (-1 : -4 : 1), (-1 : 3 : 1), (0 : -3 : 1), (0 : 2 : 1), (1 : -1 : 1), (1 : 0 : 1), (2 : -1 : 1), (2 : 0 : 1), (3 : -4 : 1), (3 : 3 : 1), (4 : -7 : 1), (4 : 6 : 1), (8 : -22 : 1), (8 : 21 : 1), (11 : -36 : 1), (11 : 35 : 1), (14 : -52 : 1), (14 : 51 : 1), (21 : -96 : 1), (21 : 95 : 1), (37 : -225 : 1), (37 : 224 : 1), (52 : -375 : 1), (52 : 374 : 1), (93 : -897 : 1), (93 : 896 : 1), (342 : -6325 : 1), (342 : 6324 : 1), (406 : -8181 : 1), (406 : 8180 : 1), (816 : -23310 : 1), (816 : 23309 : 1)]\nGot:\n    [(-3 : -1 : 1), (-3 : 0 : 1), (-2 : -4 : 1), (-2 : 3 : 1), (-1 : -4 : 1), (-1 : 3 : 1), (0 : -3 : 1), (0 : 2 : 1), (1 : -1 : 1), (1 : 0 : 1), (2 : -1 : 1), (2 : 0 : 1), (3 : -4 : 1), (3 : 3 : 1), (4 : -7 : 1), (4 : 6 : 1)]\n**********************************************************************\n1 items had failures:\n   3 of  12 in __main__.example_100\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /Users/ncalexan/sage/tmp/.doctest_ell_rational_field.py\n\t [60.5 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  3.0.6/devel/sage-nca/sage/schemes/elliptic_curves/ell_rational_field.py\nTotal time for all tests: 60.5 seconds\n```\n\n\nAlso, as jcremona points out:\n\n\n```\nsage: EllipticCurve('5478j1').integral_points()\n---------------------------------------------------------------------------\nZeroDivisionError                         Traceback (most recent call last)\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/<ipython console> in <module>()\n\n/Users/ncalexan/sage-3.0.6/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in integral_points(self, mw_base, both_signs, verbose)\n   4114             #LLL - implemented in sage - operates on rows not on columns \n   4115             m_LLL = m.LLL()\n-> 4116             m_gram = m_LLL.gram_schmidt()[0]\n   4117             b1_norm = R(m_LLL.row(0).norm())\n   4118     \n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/matrix2.pyx in sage.matrix.matrix2.Matrix.gram_schmidt (sage/matrix/matrix2.c:20026)()\n\n/Users/ncalexan/sage/local/lib/python/site-packages/sage/modules/misc.py in gram_schmidt(B)\n     55     for i in range(1,n):\n     56         for j in range(i):\n---> 57             mu[i,j] = B[i].dot_product(Bstar[j]) / (Bstar[j].dot_product(Bstar[j]))\n     58         Bstar.append(B[i] - sum(mu[i,j]*Bstar[j] for j in range(i)))\n     59     return Bstar, mu\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/element.pyx in sage.structure.element.RingElement.__div__ (sage/structure/element.c:9326)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/coerce.pxi in sage.structure.element._div_c (sage/structure/element.c:16760)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/integer.pyx in sage.rings.integer.Integer._div_c_impl (sage/rings/integer.c:8814)()\n\n/Users/ncalexan/sage-3.0.6/devel/sage-nca/integer_ring.pyx in sage.rings.integer_ring.IntegerRing_class._div (sage/rings/integer_ring.c:3991)()\n\nZeroDivisionError: Rational division by zero\n```\n\n\nThe problem is that a singular matrix is being sent into gram_schmidt -- namely [[0, 0], [1, 1]].  I don't think that will ever work.",
     "created_at": "2008-08-11T00:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25994",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25940",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -1073,15 +1071,15 @@ The problem is that a singular matrix is being sent into gram_schmidt -- namely 
 
 ---
 
-archive/issue_comments_025995.json:
+archive/issue_comments_025941.json:
 ```json
 {
     "body": "Attachment [3674-jcremona-integral-points.patch](tarball://root/attachments/some-uuid/ticket3674/3674-jcremona-integral-points.patch) by @ncalexan created at 2008-08-11 00:49:12",
     "created_at": "2008-08-11T00:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25995",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25941",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -1091,15 +1089,15 @@ Attachment [3674-jcremona-integral-points.patch](tarball://root/attachments/some
 
 ---
 
-archive/issue_comments_025996.json:
+archive/issue_comments_025942.json:
 ```json
 {
     "body": "I have attached the patch I used, `3674-jcremona-integral-points.patch`, just for completeness.  I think that it alone can be applied and is the correct point to start fixing the existing bugs.",
     "created_at": "2008-08-11T00:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25996",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25942",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -1109,15 +1107,15 @@ I have attached the patch I used, `3674-jcremona-integral-points.patch`, just fo
 
 ---
 
-archive/issue_comments_025997.json:
+archive/issue_comments_025943.json:
 ```json
 {
     "body": "I must have messed up in my attempt to simplify a series of patches into one, and sent something incomplete.  I'll sort that out, but I'll be off line all day today so it will not be immediate.\n\nWe know about the singular matrix problem with 5478j1;  Michael and Tobias are looking to fix that.",
     "created_at": "2008-08-11T08:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25997",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25943",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1129,15 +1127,15 @@ We know about the singular matrix problem with 5478j1;  Michael and Tobias are l
 
 ---
 
-archive/issue_comments_025998.json:
+archive/issue_comments_025944.json:
 ```json
 {
     "body": "Attachment [sage-trac3674new-extra3.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674new-extra3.patch) by @JohnCremona created at 2008-08-12 19:00:57",
     "created_at": "2008-08-12T19:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25998",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25944",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1147,15 +1145,15 @@ Attachment [sage-trac3674new-extra3.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_025999.json:
+archive/issue_comments_025945.json:
 ```json
 {
     "body": "Attachment [sage-trac3674new-extra5.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674new-extra5.patch) by @JohnCremona created at 2008-08-12 19:02:04",
     "created_at": "2008-08-12T19:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25999",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25945",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1165,15 +1163,15 @@ Attachment [sage-trac3674new-extra5.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_026000.json:
+archive/issue_comments_025946.json:
 ```json
 {
     "body": "Debugging after initial review has finished, and three new (small) patches are the result.\n\nApply the following to 3.1.alpha1 in order:\n\n```\nsage-trac3674new.patch\nsage-trac3674new-extra.patch\nsage-trac3674new-extra2.patch\nsage-trac3674new-extra4.patch\nsage-trac3674new-extra3.patch\nsage-trac3674new-extra5.patch\n```\n\nApologies for having 6 patches but last time I tried to merge them and messed up.  You should find that all doctests in sage.schemes.elliptic_curves.ell_rational_field.py pass.  We have also checked that (1) for all database curves up to conductor 1000 the results agree with Magma; (2) the code runs fine for all the 64687 curves of conductor up to 10000 (which takes under 32m on my laptop).  If you want to rerun those tests, first install the optional database since otherwise it will be much slower as the MW groups will need to be computed too.\n\nHoping for a review in time for 3.1!\n\nJohn, Michael and Tobias",
     "created_at": "2008-08-12T19:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26000",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25946",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1200,15 +1198,15 @@ John, Michael and Tobias
 
 ---
 
-archive/issue_comments_026001.json:
+archive/issue_comments_025947.json:
 ```json
 {
     "body": "REFEREE REPORT:\n\n* Applying in this order to 3.0.6 works fine (note that it does not work with 3.1.alpha1, i.e., there are conflicts, but that's ok.)\n\n```\nsage-trac3674new.patch\nsage-trac3674new-extra.patch\nsage-trac3674new-extra2.patch\nsage-trac3674new-extra3.patch\nsage-trac3674new-extra4.patch\nsage-trac3674new-extra5.patch\n```\n\n\nI applied all the patches under OS X and had the following errors when doctesting the elliptic_curves directory.  Maybe you could fix things so they pass?  E.g., maybe they are the result of randomness, etc. \n\n```\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_point.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_point.py\", line 479:\n    sage: Q = 5*E.1; Q\nExpected:\n    (-2739/1444 : 22161/54872 : 1)\nGot:\n    (-2739/1444 : -77033/54872 : 1)\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_22\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_point.py\n\n\t [11.4 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_padic.py\n\t [2.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_modular_symbols.py\n\t [3.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_number_field.py\n\t [9.6 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_finite_field.py\n\t [15.4 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_generic.py\n\t [22.9 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_field.py\n\t [3.3 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ec_database.py\n\t [2.9 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/constructor.py\n\t [3.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/cm.py\n\t [2.5 s]\nsage -t  devel/sage-integral_points/sage/schemes/elliptic_curves/ell_rational_field.py\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 3780:\n    sage: a = E.integral_points([P1,P2,P3], verbose=True)\nExpected:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259331 1.06582054769620 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831538\n    x-coords of points on compact component with  -3 <=x<= 1\n    [-3, -2, -1, 0, 1]\n    x-coords of points on non-compact component with  2 <=x<= 6\n    [2, 3, 4]\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n    Total number of integral points: 18\nGot:\n    Using mw_basis  [(2 : 0 : 1), (4 : 6 : 1), (114/49 : -720/343 : 1)]\n    e1,e2,e3:  -3.01243037259330 1.06582054769621 1.94660982489710\n    Minimal eigenvalue of height pairing matrix:  0.472730555831536\n    x-coords of points on compact component with  -3 <=x<= 1\n    [-3, -2, -1, 0, 1]\n    x-coords of points on non-compact component with  2 <=x<= 6\n    [2, 3, 4]\n    starting search of remaining points using coefficient bound  6\n    x-coords of extra integral points:\n    [2, 3, 4, 8, 11, 14, 21, 37, 52, 93, 342, 406, 816]\n    Total number of integral points: 18\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 146:\n    sage: E.gens()         # causes actual rank to be computed\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 148:\n    sage: E.rank()         # the correct rank\nExpected:\n    1\nGot:\n    99\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1399:\n    sage: E.gens()\nExpected:\n    [(0 : -1 : 1)]\nGot:\n    [(0 : 0 : 1)]\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1576:\n    sage: Q=5*P; Q\nExpected:\n    (1/4 : -3/8 : 1)\nGot:\n    (1/4 : -5/8 : 1)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 1578:\n    sage: E.saturation([Q])\nExpected:\n    ([(0 : -1 : 1)], '5', 0.0511114075779915)\nGot:\n    ([(0 : 0 : 1)], '5', 0.0511114075779915)\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 2313:\n    sage: E.cremona_label()\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Cremona label not known for Elliptic Curve defined by y^2 + x*y + 3*y = x^3 + 2*x^2 + 4*x + 5 over Rational Field.\nGot:\n    '10351a1'\n**********************************************************************\nFile \"/Users/was/s/tmp/ell_rational_field.py\", line 253:\n    sage: E.gens()\nExpected:\n    [(-2 : 3 : 1), (-7/4 : 25/8 : 1), (1 : -1 : 1)]\nGot:\n    [(-2 : 3 : 1), (-1 : 3 : 1), (0 : 2 : 1)]\n**********************************************************************\n6 items had failures:\n   1 of  12 in __main__.example_100\n   2 of   6 in __main__.example_2\n   1 of   4 in __main__.example_32\n   2 of   5 in __main__.example_36\n   1 of   6 in __main__.example_63\n   1 of   8 in __main__.example_7\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/was/s/tmp/.doctest_ell_rational_field.py\n\n\t [52.7 s]\n\nThe following tests failed:\n```\n",
     "created_at": "2008-08-13T07:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26001",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25947",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -1362,15 +1360,15 @@ The following tests failed:
 
 ---
 
-archive/issue_comments_026002.json:
+archive/issue_comments_025948.json:
 ```json
 {
     "body": "I think that is all explainable by either decimal randomness, or the kind of thing I was fixing in #3793.  I'll see what I can do.",
     "created_at": "2008-08-13T08:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26002",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25948",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1380,15 +1378,15 @@ I think that is all explainable by either decimal randomness, or the kind of thi
 
 ---
 
-archive/issue_comments_026003.json:
+archive/issue_comments_025949.json:
 ```json
 {
     "body": "Replying to [comment:22 cremona]:\n> I think that is all explainable by either decimal randomness, or the kind of thing I was fixing in #3793.  I'll see what I can do.\n\nI don't understand your comment about 3.0.6 vs. 3.1.alpha1.  Before I posted the latest patches I *did* apply all 6 in order to a fresh clone of a 3.1.alpha 1 build, and all applied with no issues at all.\n\nThere's some mystery here, and inconsistency which is making it very hard to iron out these last doctests.",
     "created_at": "2008-08-13T08:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26003",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25949",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1403,15 +1401,15 @@ There's some mystery here, and inconsistency which is making it very hard to iro
 
 ---
 
-archive/issue_comments_026004.json:
+archive/issue_comments_025950.json:
 ```json
 {
     "body": "Attachment [sage-trac3674new-extra6.patch](tarball://root/attachments/some-uuid/ticket3674/sage-trac3674new-extra6.patch) by @JohnCremona created at 2008-08-13 08:58:24",
     "created_at": "2008-08-13T08:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26004",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25950",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1421,15 +1419,15 @@ Attachment [sage-trac3674new-extra6.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_026005.json:
+archive/issue_comments_025951.json:
 ```json
 {
     "body": "Two things:  (1) for the doctests to work you need to have already applied the patch to #3793.  (2) I replaced some least significant decimal digits by ... to avoid decimal fuzz.\n\nPlease can you check this again?",
     "created_at": "2008-08-13T09:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26005",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25951",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1441,15 +1439,15 @@ Please can you check this again?
 
 ---
 
-archive/issue_comments_026006.json:
+archive/issue_comments_025952.json:
 ```json
 {
     "body": "OK, everything works now and I'm happy with this code.  POSITIVE REVIEW.",
     "created_at": "2008-08-13T09:09:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26006",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25952",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -1459,15 +1457,15 @@ OK, everything works now and I'm happy with this code.  POSITIVE REVIEW.
 
 ---
 
-archive/issue_comments_026007.json:
+archive/issue_comments_025953.json:
 ```json
 {
     "body": "Hi John,\n\nwith the \"new\" patches applied up to number 6 I see the following doctest failures on sage.math:\n\n```\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/rational_torsion.py # 8 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/lseries_ell.py # 10 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 17 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py # 1 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 18 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 44 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/sha.py # 23 doctests failed\n```\n\nThey all seem to be of the form\n\n```\nsage -t -long devel/sage/sage/schemes/elliptic_curves/ell_generic.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/tmp/ell_generic.py\", line 308:\n    sage: E.torsion_subgroup().gens()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_9[2]>\", line 1, in <module>\n        E.torsion_subgroup().gens()###line 308:\n    sage: E.torsion_subgroup().gens()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2409, in torsion_subgroup\n        self.__torsion_subgroup = rational_torsion.EllipticCurveTorsionSubgroup(self, algorithm)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.alpha2/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/rational_torsion.py\", line 59, in __init__\n        G = self.__E.pari_curve().elltors(flag) # pari_curve will return the curve of maximum known precision\n      File \"gen.pyx\", line 4647, in sage.libs.pari.gen.gen.elltors (sage/libs/pari/gen.c:17124)\n    TypeError: an integer is required\n**********************************************************************\n1 items had failures:\n```\n",
     "created_at": "2008-08-13T16:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26007",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25953",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -1514,15 +1512,15 @@ Exception raised:
 
 ---
 
-archive/issue_comments_026008.json:
+archive/issue_comments_025954.json:
 ```json
 {
     "body": "Hi,\n\nI am an idiot and forgot to apply one patch in the series. Sorry - I should sleep more ;)\n\nCheers,\n\nMichael",
     "created_at": "2008-08-13T16:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26008",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25954",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -1538,15 +1536,15 @@ Michael
 
 ---
 
-archive/issue_comments_026009.json:
+archive/issue_comments_025955.json:
 ```json
 {
     "body": "Hi,\n\nthe doctests now pass, but there is the following issue: Due to using the symbolic sqrt, ceil and floor the time to doctest sha.py double from 22 to 45 seconds (not long) and the time to doctest  it long goes from 4 minutes to 10.5. The extra time seems to be mostly spend in clisp. A number of other doctests also show similar increase in time. I have made this isssue a blocker for 3.1 at #3837, but the patches will be merged shortly.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-13T17:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26009",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25955",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -1562,15 +1560,15 @@ Michael
 
 ---
 
-archive/issue_comments_026010.json:
+archive/issue_comments_025956.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-13T17:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26010",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25956",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -1580,15 +1578,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_026011.json:
+archive/issue_comments_025957.json:
 ```json
 {
     "body": "Merged \n\n* sage-trac3674new.patch\n* sage-trac3674new-extra.patch\n* sage-trac3674new-extra2.patch\n* sage-trac3674new-extra3.patch\n* sage-trac3674new-extra4.patch\n* sage-trac3674new-extra5.patch\n* sage-trac3674new-extra6.patch\n\nin Sage 3.1.alpha2",
     "created_at": "2008-08-13T17:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26011",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25957",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -1608,15 +1606,15 @@ in Sage 3.1.alpha2
 
 ---
 
-archive/issue_comments_026012.json:
+archive/issue_comments_025958.json:
 ```json
 {
     "body": "I know what this is -- on Williams's suggestion (insistence!) in his review I made a change entirely independent of the integral points stuff, namely that in the torsion_subgroup function the algorithm parameter should change from being an integer to a string.  And so there are problems all over the place with other functions which call that one.\n\nI can fix all that, but it might not be tonight since I've just got home after an evening out.  First thing tomorrow, I promise!",
     "created_at": "2008-08-13T21:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26012",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25958",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1628,15 +1626,15 @@ I can fix all that, but it might not be tonight since I've just got home after a
 
 ---
 
-archive/issue_comments_026013.json:
+archive/issue_comments_025959.json:
 ```json
 {
     "body": "Replying to [comment:27 mabshoff]:\n> Hi,\n> \n> I am an idiot and forgot to apply one patch in the series. Sorry - I should sleep more ;)\n> \n> Cheers,\n> \n> Michael\n\nMichael,\n\nCould you confirm that there are no problems after all with those \"sage -t -long\" tests?  They work for me.\n\nJohn",
     "created_at": "2008-08-14T08:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26013",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25959",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1659,15 +1657,15 @@ John
 
 ---
 
-archive/issue_comments_026014.json:
+archive/issue_comments_025960.json:
 ```json
 {
     "body": "Replying to [comment:31 cremona]:\n> Replying to [comment:27 mabshoff]:\n> > Hi,\n> > \n> > I am an idiot and forgot to apply one patch in the series. Sorry - I should sleep more ;)\n> > \n> > Cheers,\n> > \n> > Michael\n> \n> Michael,\n> \n> Could you confirm that there are no problems after all with those \"sage -t -long\" tests?  They work for me.\n> \n> John\n\nHi John,\n\nyes, after applying all patches \"sage -t -long\" passes. Otherwise I would not have closed this ticket as fixed :)\n\nCheers,\n\nMichael",
     "created_at": "2008-08-14T14:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3674",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-26014",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3674#issuecomment-25960",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

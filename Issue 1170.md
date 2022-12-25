@@ -6,7 +6,7 @@ archive/issues_001170.json:
     "body": "Assignee: @williamstein\n\nWhen one tries to use the order function on group elements of infinite order, one gets an error:\n\ngl=GL(2,ZZ)\ng=gl.gens()[2]\ng.order()\n\nIn MAGMA, one (often) gets the answer 0 if one calls the Order function on elements of infinite order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1170\n\n",
     "created_at": "2007-11-14T15:02:07Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001170.json:
     "title": "Behaviour of the order function for infinite groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1170",
-    "user": "ljpk"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ljpk"
 }
 ```
 Assignee: @williamstein
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1170
 
 ---
 
-archive/issue_comments_007171.json:
+archive/issue_comments_007149.json:
 ```json
 {
     "body": "Attachment [1170-matrix-group-order.patch](tarball://root/attachments/some-uuid/ticket1170/1170-matrix-group-order.patch) by @JohnCremona created at 2008-09-04 15:43:19",
     "created_at": "2008-09-04T15:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7171",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7149",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -53,15 +53,15 @@ Attachment [1170-matrix-group-order.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_007172.json:
+archive/issue_comments_007150.json:
 ```json
 {
     "body": "The patch fixes this:  for consistency with other groups, +Infinity is returned as the order for group elements of infinite order.  A doctest has been added.\n\nThe patch should apply to 3.1.2.alpha4 and later, and all doctests in sage.groups pass.\n\nReview, Lloyd?",
     "created_at": "2008-09-04T15:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7172",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7150",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -75,15 +75,15 @@ Review, Lloyd?
 
 ---
 
-archive/issue_comments_007173.json:
+archive/issue_comments_007151.json:
 ```json
 {
     "body": "One small nitpick which I corrected in the patch I applied: The `#` in the doctests need to be escaped, i.e.\n\n```\nSee trac \\#1170\n```\n\nI am not sure if this applies in case the docstring is not raw, but let's do it so that downroad we do not get bitten by it.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T22:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7173",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7151",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -103,15 +103,15 @@ Michael
 
 ---
 
-archive/issue_comments_007174.json:
+archive/issue_comments_007152.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc0",
     "created_at": "2008-09-04T23:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7174",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7152",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +121,15 @@ Merged in Sage 3.1.2.rc0
 
 ---
 
-archive/issue_comments_007175.json:
+archive/issue_comments_007153.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-04T23:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1170",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7175",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1170#issuecomment-7153",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

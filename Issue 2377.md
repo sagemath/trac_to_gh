@@ -6,15 +6,14 @@ archive/issues_002377.json:
     "body": "Assignee: @williamstein\n\nCC:  @malb\n\nKeywords: copy SingularElement\n\nThis is related with #2300. The patch of #2300 was already merged in sage-2.10.3.rc0, so malb suggested to make a new ticket for the following bugfix.\n\nIn sage-2.10.3.rc0, the following example would produce a traceback when copying the quotient ring Q. With the patch, it works.\n\n```\nsage: R=singular.ring(0,'(x,y)','dp')\nsage: L=R.ringlist()\nsage: L[4]=singular.ideal('x**2-5')\nsage: Q=L.ring()\nsage: otherR=singular.ring(5,'(x)','dp')\nsage: cpQ=copy(Q)\nsage: cpQ.set_ring()\nsage: cpQ\n\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=x^2-5\n```\n\n\nThe bug consists in the following: In `__copy__`, ringlist is called. In the case of quotient rings or non-commutative rings, ringlist contains polynomial data. Hence, it is invalid if the current ring (here: otherR) does not fit.\n\nSolution: With the patch, `__copy__` applied to a ring or quotient ring Q first makes Q active, then produces a copy of Q, returns to the previously active ring, and provides the copy of Q.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2377\n\n",
     "created_at": "2008-03-03T17:09:01Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review] Bugfix for the new __copy__ method of SingularElement",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2377",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: @williamstein
@@ -59,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2377
 
 ---
 
-archive/issue_comments_016037.json:
+archive/issue_comments_016002.json:
 ```json
 {
     "body": "Attachment [bugfix__copy__.patch](tarball://root/attachments/some-uuid/ticket2377/bugfix__copy__.patch) by @simon-king-jena created at 2008-03-03 17:17:13\n\nBugfix for the new copy method for SingularElement?; should apply to sage-2.10.3.rc0",
     "created_at": "2008-03-03T17:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2377",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2377#issuecomment-16037",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2377#issuecomment-16002",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -79,15 +78,15 @@ Bugfix for the new copy method for SingularElement?; should apply to sage-2.10.3
 
 ---
 
-archive/issue_comments_016038.json:
+archive/issue_comments_016003.json:
 ```json
 {
     "body": "To quote malb from #2300:\n\n```\nThe code looks good, I don't know a better Singular solution. I'm happy to give \nthe bugfix a 'positive review' once it is attached to a new ticket\n```\n\n\nSo: positive review from malb.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-03T17:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2377",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2377#issuecomment-16038",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2377#issuecomment-16003",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +108,15 @@ Michael
 
 ---
 
-archive/issue_comments_016039.json:
+archive/issue_comments_016004.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc1",
     "created_at": "2008-03-03T17:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2377",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2377#issuecomment-16039",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2377#issuecomment-16004",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -127,15 +126,15 @@ Merged in Sage 2.10.3.rc1
 
 ---
 
-archive/issue_comments_016040.json:
+archive/issue_comments_016005.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-03T17:55:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2377",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2377#issuecomment-16040",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2377#issuecomment-16005",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

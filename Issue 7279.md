@@ -6,15 +6,14 @@ archive/issues_007279.json:
     "body": "Assignee: boothby\n\n\n```\nWhen I do this in a cell on demo.sagenb.org:\n\n%sh\nls\n\n\nI get an error:\n\ncd: 1: can't cd to\n/home/sage/sagenb/sage_notebook-demo.sagenb/home/jason3/7/cells/4\ndata\n_sage_input_5.py\n/tmp/tmp4oPNHC\n\nThanks,\n\nJason\n```\n\n\nJason doesn't want to see that error.  It is there because of enhanced security on the public notebook.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7279\n\n",
     "created_at": "2009-10-24T00:46:02Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "issue with %sh in sagenb (notebook)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7279",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7279
 
 ---
 
-archive/issue_comments_060576.json:
+archive/issue_comments_060463.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-24T00:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60576",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60463",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -71,15 +70,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060577.json:
+archive/issue_comments_060464.json:
 ```json
 {
     "body": "Do you mind elaborating on what the \"enhanced security\" is and why we are not making that more common for other public or campus Sage servers?  Now I'm concerned that my campus server has a security problem.",
     "created_at": "2009-12-08T20:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60577",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60464",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -89,15 +88,15 @@ Do you mind elaborating on what the "enhanced security" is and why we are not ma
 
 ---
 
-archive/issue_comments_060578.json:
+archive/issue_comments_060465.json:
 ```json
 {
     "body": "> Do you mind elaborating on what the \"enhanced security\" is\n\nIf you use server_pool, the worksheet process now run in a way that is much, much safer than it was before.  In particular, they don't have read or write access to anything outside /tmp (except to the DATA dir temporarily in their worksheet), whereas the old worksheet processes could pretty much delete or change all the worksheet data for any worksheet.   \n\n> more common for other public or campus Sage servers? Now \n> I'm concerned that my campus server has a security problem. \n\nThis enhanced security is totally automatic for anybody that uses the server_pool option.",
     "created_at": "2009-12-09T14:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60578",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60465",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -114,15 +113,15 @@ This enhanced security is totally automatic for anybody that uses the server_poo
 
 ---
 
-archive/issue_comments_060579.json:
+archive/issue_comments_060466.json:
 ```json
 {
     "body": "So:\n\n1. Usually a shell script changes directory to the worksheet directory and executes its commands there.\n\n2. It can't do that if server_pool option is used.\n\nIt seems that instead of masking the error, we should use sh.chdir so that the script does not try to change directory to the worksheet directory.  It makes me uncomfortable to just mask the error, when the real problem is that sh tries to change directory when it should just stay inside of the temporary directory.",
     "created_at": "2009-12-09T16:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60579",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60466",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -138,15 +137,15 @@ It seems that instead of masking the error, we should use sh.chdir so that the s
 
 ---
 
-archive/issue_comments_060580.json:
+archive/issue_comments_060467.json:
 ```json
 {
     "body": "Jason, I simply do not understand what you're proposing.  Can you clarify?\nWhat do you mean by \"should use sh.chdir\"?  \n\nDo you want me to change the %sh mode so it specifically changes to the /tmp/foo-* directory instead of the worksheet directory?   That seems like a good idea, though it\nwill mean that %sh behaves differently than it used to when server_pool isn't set.",
     "created_at": "2009-12-09T19:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60580",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60467",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -160,15 +159,15 @@ will mean that %sh behaves differently than it used to when server_pool isn't se
 
 ---
 
-archive/issue_comments_060581.json:
+archive/issue_comments_060468.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-12-09T19:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60581",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60468",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -178,15 +177,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_060582.json:
+archive/issue_comments_060469.json:
 ```json
 {
     "body": "Is a temporary directory created when server_pool is not used?\n\nIf yes, then right now there is a terrible inconsistency, in that we are in that temporary directory when server_pool is used (because chdir errors out), but we are not in that directory when server_pool is not used (because chdir succeeds).  What I'm saying is that this inconsistency between server_pool=True and server_pool=False is really bad.\n\nNote that the default for sh._curdir is '.'.  Would it be best to just change the current working directory to the temporary directory before executing anything?  I'm surprised that '.' refers to the worksheet directory, rather than the temporary directory.  If we can change the current directory to the temporary directory before calling any scripts (including shell scripts), then I think the problem would be solved, as sh would just chdir to the temporary directory then.",
     "created_at": "2009-12-09T21:40:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60582",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60469",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -200,15 +199,15 @@ Note that the default for sh._curdir is '.'.  Would it be best to just change th
 
 ---
 
-archive/issue_comments_060583.json:
+archive/issue_comments_060470.json:
 ```json
 {
     "body": "Jason -- The answer to your question is \"yes\".  Also, now that you explain it, I think your suggested solution makes perfect sense, and I'll implement it.  \n\nThanks!",
     "created_at": "2009-12-10T07:03:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60583",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60470",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -220,15 +219,15 @@ Thanks!
 
 ---
 
-archive/issue_comments_060584.json:
+archive/issue_comments_060471.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-12-11T00:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60584",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60471",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -238,15 +237,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_060585.json:
+archive/issue_comments_060472.json:
 ```json
 {
     "body": "Jason, I replaced everything by 3 very simple lines that get the job done better. E.g., now you can do \n\n\n```\nsleep 1\necho \"hi\"\nsleep 1\necho \"there\"\n...\n```\n\n\nand you see the output as it appears, etc.   And the code is vastly simpler too.",
     "created_at": "2009-12-11T00:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60585",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60472",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -268,15 +267,15 @@ and you see the output as it appears, etc.   And the code is vastly simpler too.
 
 ---
 
-archive/issue_comments_060586.json:
+archive/issue_comments_060473.json:
 ```json
 {
     "body": "Great.\n\nHowever, one last thing: the docs mention the temporary directory for worksheet processes.  However, it is perfectly okay to execute this from the command line, in which case the docs are then false.\n\nI'd just delete the mention of the temporary directory.  Besides, what if we switch the way we do things again in the notebook?  We'll then have to hunt this statement down and change it.",
     "created_at": "2009-12-11T00:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60586",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60473",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -290,15 +289,15 @@ I'd just delete the mention of the temporary directory.  Besides, what if we swi
 
 ---
 
-archive/issue_comments_060587.json:
+archive/issue_comments_060474.json:
 ```json
 {
     "body": "Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.",
     "created_at": "2009-12-11T00:10:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60587",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60474",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -308,15 +307,15 @@ Or maybe just combine the last two paragraphs so that it is obvious that the dir
 
 ---
 
-archive/issue_comments_060588.json:
+archive/issue_comments_060475.json:
 ```json
 {
     "body": "Hmm...now you're also changing the behavior quite a bit.  No longer does the eval command return the results as a string.  Instead, it is out of our control.\n\nI suppose one could just use os.system or subprocess by themselves to get the string.  So it doesn't bother me that there is a change.",
     "created_at": "2009-12-11T00:14:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60588",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60475",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -328,15 +327,15 @@ I suppose one could just use os.system or subprocess by themselves to get the st
 
 ---
 
-archive/issue_comments_060589.json:
+archive/issue_comments_060476.json:
 ```json
 {
     "body": "Replying to [comment:11 jason]:\n> Hmm...now you're also changing the behavior quite a bit.  No longer does the eval command return the results as a string.  Instead, it is out of our control.\n> \n> I suppose one could just use os.system or subprocess by themselves to get the string.  So it doesn't bother me that there is a change.\n\nYep.  Plus the advantage of being able to watch the output as it appears is *huge*, IMHO.",
     "created_at": "2009-12-11T13:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60589",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60476",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -351,15 +350,15 @@ Yep.  Plus the advantage of being able to watch the output as it appears is *hug
 
 ---
 
-archive/issue_comments_060590.json:
+archive/issue_comments_060477.json:
 ```json
 {
     "body": "Attachment [sagelib_7279.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279.patch) by @williamstein created at 2009-12-11 13:29:07",
     "created_at": "2009-12-11T13:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60590",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60477",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -369,15 +368,15 @@ Attachment [sagelib_7279.patch](tarball://root/attachments/some-uuid/ticket7279/
 
 ---
 
-archive/issue_comments_060591.json:
+archive/issue_comments_060478.json:
 ```json
 {
     "body": "apply both to the core sage library",
     "created_at": "2009-12-11T13:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60591",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60478",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -387,15 +386,15 @@ apply both to the core sage library
 
 ---
 
-archive/issue_comments_060592.json:
+archive/issue_comments_060479.json:
 ```json
 {
     "body": "Attachment [sagelib_7279-part2.patch](tarball://root/attachments/some-uuid/ticket7279/sagelib_7279-part2.patch) by @williamstein created at 2009-12-11 13:30:08\n\nReplying to [comment:10 jason]:\n> Or maybe just combine the last two paragraphs so that it is obvious that the directory is only the temporary directory when executing from the worksheet.\n\nI've done this.",
     "created_at": "2009-12-11T13:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60592",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60479",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -410,15 +409,15 @@ I've done this.
 
 ---
 
-archive/issue_comments_060593.json:
+archive/issue_comments_060480.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2009-12-27T16:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60593",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60480",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -428,15 +427,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_060594.json:
+archive/issue_comments_060481.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-27T16:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60594",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60481",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -446,15 +445,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060595.json:
+archive/issue_comments_060482.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-04T02:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7279",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60595",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7279#issuecomment-60482",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

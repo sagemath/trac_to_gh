@@ -6,15 +6,14 @@ archive/issues_005623.json:
     "body": "Assignee: boothby\n\nThis patch changes all_graph_colorings to use the C++ dancing links implementation instead of the Cython implementation.\n\n* sage -testall is all ok\n* valgrind is ok\n* Roughly 5x speedup on some random graphs (see test.sage):\n\nSage 3.4 timing:\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 158 ms per loop\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 158 ms per loop\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 157 ms per loop\n\nSage 3.4 with patch timing:\n\n5 loops, best of 3: 33.5 ms per loop\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 33.1 ms per loop\ncarlo`@`ka37:~/work/code/graphdlx$ sage test.sage \n5 loops, best of 3: 33.3 ms per loop\n\nIssue created by migration from https://trac.sagemath.org/ticket/5623\n\n",
     "created_at": "2009-03-28T13:13:25Z",
     "labels": [
-        "graph theory",
-        "minor",
-        "enhancement"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "5x speedup in all_graph_colorings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5623",
-    "user": "carlohamalainen"
+    "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
 }
 ```
 Assignee: boothby
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5623
 
 ---
 
-archive/issue_comments_043908.json:
+archive/issue_comments_043823.json:
 ```json
 {
     "body": "Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5623/test.sage) by boothby created at 2009-03-29 03:35:35\n\nWorks for me.  I'd like to see the test.sage file be reworked into a Test class for randomized testing.  search_src('class Test') for examples.",
     "created_at": "2009-03-29T03:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43908",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43823",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -69,15 +68,15 @@ Works for me.  I'd like to see the test.sage file be reworked into a Test class 
 
 ---
 
-archive/issue_comments_043909.json:
+archive/issue_comments_043824.json:
 ```json
 {
     "body": "OOps.\n\n\n```\nsage: g = Graph()\nsage: c = 0\nsage: for h in graph_coloring.all_graph_colorings(g,0,False): c+=1\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n",
     "created_at": "2009-03-30T06:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43909",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43824",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -103,15 +102,15 @@ SAGE will now terminate (sorry).
 
 ---
 
-archive/issue_comments_043910.json:
+archive/issue_comments_043825.json:
 ```json
 {
     "body": "Attachment [graphcoloring_5623_test.patch](tarball://root/attachments/some-uuid/ticket5623/graphcoloring_5623_test.patch) by boothby created at 2009-03-30 06:22:05\n\nThe attachment 'graphcoloring_5623_test.patch' implements a Test class that does randomized testing.  Fix the segfault, and I'll be happy with it.",
     "created_at": "2009-03-30T06:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43910",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43825",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -123,15 +122,15 @@ The attachment 'graphcoloring_5623_test.patch' implements a Test class that does
 
 ---
 
-archive/issue_comments_043911.json:
+archive/issue_comments_043826.json:
 ```json
 {
     "body": "Attachment [graphcolouring.patch](tarball://root/attachments/some-uuid/ticket5623/graphcolouring.patch) by carlohamalainen created at 2009-03-30 08:00:34",
     "created_at": "2009-03-30T08:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43911",
-    "user": "carlohamalainen"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43826",
+    "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
 }
 ```
 
@@ -141,15 +140,15 @@ Attachment [graphcolouring.patch](tarball://root/attachments/some-uuid/ticket562
 
 ---
 
-archive/issue_comments_043912.json:
+archive/issue_comments_043827.json:
 ```json
 {
     "body": "Attachment [dlxcpp.patch](tarball://root/attachments/some-uuid/ticket5623/dlxcpp.patch) by carlohamalainen created at 2009-03-30 08:00:47",
     "created_at": "2009-03-30T08:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43912",
-    "user": "carlohamalainen"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43827",
+    "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
 }
 ```
 
@@ -159,15 +158,15 @@ Attachment [dlxcpp.patch](tarball://root/attachments/some-uuid/ticket5623/dlxcpp
 
 ---
 
-archive/issue_comments_043913.json:
+archive/issue_comments_043828.json:
 ```json
 {
     "body": "I updated graphcolouring.patch:\n\n* returns immediately when n == 0\n* raises a ValueError if n < 0\n\nThe patch dlxcpp.patch fixes the segfault on an empty graph.",
     "created_at": "2009-03-30T08:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43913",
-    "user": "carlohamalainen"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43828",
+    "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
 }
 ```
 
@@ -182,15 +181,15 @@ The patch dlxcpp.patch fixes the segfault on an empty graph.
 
 ---
 
-archive/issue_comments_043914.json:
+archive/issue_comments_043829.json:
 ```json
 {
     "body": "Could you please specify exactly which patches need to be applied and reviewed?\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T03:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43914",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43829",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -204,15 +203,15 @@ Michael
 
 ---
 
-archive/issue_comments_043915.json:
+archive/issue_comments_043830.json:
 ```json
 {
     "body": "Could you please specify exactly which patches need to be applied and reviewed?\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T03:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43915",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43830",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -226,15 +225,15 @@ Michael
 
 ---
 
-archive/issue_comments_043916.json:
+archive/issue_comments_043831.json:
 ```json
 {
     "body": "All three patches should be applied:\n\n* graphcoloring_5623_test.patch\n* graphcolouring.patch\n* dlxcpp.patch\n\nThe final patch is new and I guess should be reviewed (it's just a one-liner).",
     "created_at": "2009-03-31T06:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43916",
-    "user": "carlohamalainen"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43831",
+    "user": "https://trac.sagemath.org/admin/accounts/users/carlohamalainen"
 }
 ```
 
@@ -250,15 +249,15 @@ The final patch is new and I guess should be reviewed (it's just a one-liner).
 
 ---
 
-archive/issue_comments_043917.json:
+archive/issue_comments_043832.json:
 ```json
 {
     "body": "Attachment [graphcoloring_5623_doctests.patch](tarball://root/attachments/some-uuid/ticket5623/graphcoloring_5623_doctests.patch) by boothby created at 2009-03-31 18:19:55",
     "created_at": "2009-03-31T18:19:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43917",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43832",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -268,15 +267,15 @@ Attachment [graphcoloring_5623_doctests.patch](tarball://root/attachments/some-u
 
 ---
 
-archive/issue_comments_043918.json:
+archive/issue_comments_043833.json:
 ```json
 {
     "body": "I've added one more patch which tests for the previous segfault, and negative entries.  The patches work when applied in the order:\n\n* graphcolouring.patch\n* dlxcpp.patch \n* graphcoloring_5623_test.patch\n* graphcoloring_5623_doctests.patch",
     "created_at": "2009-03-31T18:22:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43918",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43833",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -291,15 +290,15 @@ I've added one more patch which tests for the previous segfault, and negative en
 
 ---
 
-archive/issue_comments_043919.json:
+archive/issue_comments_043834.json:
 ```json
 {
     "body": "Merged\n\n* graphcolouring.patch\n* dlxcpp.patch\n* graphcoloring_5623_test.patch\n* graphcoloring_5623_doctests.patch \n\nin Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-01T02:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43919",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43834",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -320,15 +319,15 @@ Michael
 
 ---
 
-archive/issue_comments_043920.json:
+archive/issue_comments_043835.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-01T02:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43920",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5623#issuecomment-43835",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

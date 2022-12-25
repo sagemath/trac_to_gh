@@ -6,15 +6,13 @@ archive/issues_006974.json:
     "body": "Assignee: tbd\n\nThe packages are:\n\n   *\n\nIssue created by migration from https://trac.sagemath.org/ticket/6974\n\n",
     "created_at": "2009-09-21T02:23:39Z",
     "labels": [
-        "porting",
-        "major",
-        "enhancement"
+        "component: porting"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6974",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6974
 
 ---
 
-archive/issue_comments_057681.json:
+archive/issue_comments_057573.json:
 ```json
 {
     "body": "The package works on linux. in cygwin I got:\n\ngcc version 4.3.2 20080827 (beta) 2 (GCC) \n****************************************************\nDetected Cygwin -- checking for OPENssl development headers, since we use openssl instead.\n\nreal\t0m0.078s\nuser\t0m0.015s\nsys\t0m0.015s\nsage: An error occurred while installing libgpg_error-1.6.p2\n\n\nit should print information what has to be installed if it fails",
     "created_at": "2009-09-21T02:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57681",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57573",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -61,15 +59,15 @@ it should print information what has to be installed if it fails
 
 ---
 
-archive/issue_comments_057682.json:
+archive/issue_comments_057574.json:
 ```json
 {
     "body": "now it looks good, +1 from me",
     "created_at": "2009-09-21T02:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57682",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57574",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -79,15 +77,15 @@ now it looks good, +1 from me
 
 ---
 
-archive/issue_comments_057683.json:
+archive/issue_comments_057575.json:
 ```json
 {
     "body": "gnutls-2.2.1.p3.spkg is ok\n\npython_gnutls-1.1.4.p5.spkg fails with:\n\n```\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/home/ondrej/tmp/sage-4.1-cygwin-i686-CYGWIN_NT-5.1/local/include/ -I/home/ondrej/tmp/sage-4.1-cygwin-i686-CYGWIN_NT-5.1/local/include/python2.6 -c gnutls/library/_gnutls_init.c -o build/temp.cygwin-1.5.25-i686-2.6/gnutls/library/_gnutls_init.o\ngnutls/library/_gnutls_init.c:11:27: error: gnutls/gnutls.h: No such file or directory\ngnutls/library/_gnutls_init.c:12:26: error: gnutls/extra.h: No such file or directory\ngnutls/library/_gnutls_init.c:13:20: error: gcrypt.h: No such file or directory\ngnutls/library/_gnutls_init.c:18: warning: data definition has no type or storage class\ngnutls/library/_gnutls_init.c:18: warning: type defaults to 'int' in declaration of 'GCRY_THREAD_OPTION_PTHREAD_IMPL'\ngnutls/library/_gnutls_init.c: In function 'init_gnutls_init':\ngnutls/library/_gnutls_init.c:42: warning: implicit declaration of function 'gcry_control'\ngnutls/library/_gnutls_init.c:42: error: 'GCRYCTL_SET_THREAD_CBS' undeclared (first use in this function)\ngnutls/library/_gnutls_init.c:42: error: (Each undeclared identifier is reported only once\ngnutls/library/_gnutls_init.c:42: error: for each function it appears in.)\ngnutls/library/_gnutls_init.c:42: error: 'gcry_threads_pthread' undeclared (first use in this function)\ngnutls/library/_gnutls_init.c:44: warning: implicit declaration of function 'gnutls_global_init'\ngnutls/library/_gnutls_init.c:45: warning: implicit declaration of function 'gnutls_global_init_extra'\nerror: command 'gcc' failed with exit status 1\n```\n",
     "created_at": "2009-09-21T03:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57683",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57575",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -118,15 +116,15 @@ error: command 'gcc' failed with exit status 1
 
 ---
 
-archive/issue_comments_057684.json:
+archive/issue_comments_057576.json:
 ```json
 {
     "body": "libgcrypt-1.4.3.p2.spkg and opencdk-0.6.6.p1.spkg are ok. \n\nPackages that I \"oked\" all fail for me with:\n\n\n```\nDetected Cygwin -- checking for openssl development headers, since we use openssl instead.\nOn Cygwin you *must* install Cygwin's openssl-devel development package (using Cygwin's setup.exe program).\n```\n\n\nwhich I think is ok.",
     "created_at": "2009-09-21T03:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57684",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57576",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -147,15 +145,15 @@ which I think is ok.
 
 ---
 
-archive/issue_comments_057685.json:
+archive/issue_comments_057577.json:
 ```json
 {
     "body": "Now even the python_gnutls-1.1.4.p5.spkg fails with: \n\n\n```\nDetected Cygwin -- checking for openssl development headers, since we use openssl instead.\nOn Cygwin you *must* install Cygwin's openssl-devel development package (using Cygwin's setup.exe program).\n```\n\n\nso all packages +1.",
     "created_at": "2009-09-21T03:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57685",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57577",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -174,15 +172,15 @@ so all packages +1.
 
 ---
 
-archive/issue_comments_057686.json:
+archive/issue_comments_057578.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2009-09-21T06:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57686",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57578",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -192,15 +190,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_057687.json:
+archive/issue_comments_057579.json:
 ```json
 {
     "body": "New gnutls package up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/gnutls-2.2.1.p4.spkg\n\nThe only change from .p3 is checking in all existing changes in wstein's name.",
     "created_at": "2009-09-27T00:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57687",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57579",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -214,15 +212,15 @@ The only change from .p3 is checking in all existing changes in wstein's name.
 
 ---
 
-archive/issue_comments_057688.json:
+archive/issue_comments_057580.json:
 ```json
 {
     "body": "See ticket #6758 about libgcrypt-1.4.3.p2.spkg being seriously messed up.",
     "created_at": "2009-09-27T00:27:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57688",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57580",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -232,15 +230,15 @@ See ticket #6758 about libgcrypt-1.4.3.p2.spkg being seriously messed up.
 
 ---
 
-archive/issue_comments_057689.json:
+archive/issue_comments_057581.json:
 ```json
 {
     "body": "New opencdk package up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/opencdk-0.6.6.p2.spkg\n\nThe only change from .p1 is to add the following standard check to `spkg-install`:\n\n```\nif [ \"$SAGE_LOCAL\" = \"\" ]; then\n   echo \"SAGE_LOCAL undefined ... exiting\";\n   echo \"Maybe run 'sage -sh'?\"\n   exit 1\nfi\n```\n",
     "created_at": "2009-09-27T00:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57689",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -263,15 +261,15 @@ fi
 
 ---
 
-archive/issue_comments_057690.json:
+archive/issue_comments_057582.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-27T02:58:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57690",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -281,15 +279,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_057691.json:
+archive/issue_comments_057583.json:
 ```json
 {
     "body": "See palmieri's and my reports at #6849.",
     "created_at": "2009-09-27T02:58:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57691",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -299,15 +297,15 @@ See palmieri's and my reports at #6849.
 
 ---
 
-archive/issue_comments_057692.json:
+archive/issue_comments_057584.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
     "created_at": "2009-09-27T10:59:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6974",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57692",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6974#issuecomment-57584",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

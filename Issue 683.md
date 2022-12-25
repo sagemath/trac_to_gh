@@ -6,15 +6,14 @@ archive/issues_000683.json:
     "body": "Assignee: boothby\n\n\n```\n     --  The response to `latex?' seems to be out of date.\n\n            %latex\n            The equation y^2 = x^3 + x defines an elliptic curve.\n            We have 2006 = SAGE{factor(2006)}.\n\n    I thought it was a great credit to SAGE that when I edited the sample input\n    in what seemed the obvious way, enclosing the math in $$ and changing SAGE\n    to \\sage, that it worked as expected.\n\n```\n\n\n\n\n\nAh, you've found a bug.  What happens is that all SAGE documentation\nis de-texed before displaying in the notebook (in plain text format).  Unfortunately\nthis detexing makes the documentation for latex appear completely\nwrong!  \n\nThe solution is probably to come up with a notation to tell SAGE not\nto do the detexing. \n\nIssue created by migration from https://trac.sagemath.org/ticket/683\n\n",
     "created_at": "2007-09-17T21:52:21Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "bug in \"latex?\" in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/683",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/683
 
 ---
 
-archive/issue_comments_003543.json:
+archive/issue_comments_003530.json:
 ```json
 {
     "body": "Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket683/683-989-ncalexan-1.patch) by @ncalexan created at 2007-11-04 07:32:49",
     "created_at": "2007-11-04T07:32:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/683",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3543",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3530",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -71,15 +70,15 @@ Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_003544.json:
+archive/issue_comments_003531.json:
 ```json
 {
     "body": "683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
     "created_at": "2007-11-04T07:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/683",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3544",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3531",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -104,15 +103,15 @@ top of a file.
 
 ---
 
-archive/issue_comments_003545.json:
+archive/issue_comments_003532.json:
 ```json
 {
     "body": "applied to 2.8.12.rc0",
     "created_at": "2007-11-06T21:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/683",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3545",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3532",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -122,15 +121,15 @@ applied to 2.8.12.rc0
 
 ---
 
-archive/issue_comments_003546.json:
+archive/issue_comments_003533.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-06T21:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/683",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3546",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/683#issuecomment-3533",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

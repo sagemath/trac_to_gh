@@ -6,15 +6,14 @@ archive/issues_002609.json:
     "body": "Assignee: @williamstein\n\nGenerators for Gamma0, Gamma1 and GammaH.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2609\n\n",
     "created_at": "2008-03-20T08:56:45Z",
     "labels": [
-        "modular forms",
-        "major",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] generators for congruence subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2609",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2609
 
 ---
 
-archive/issue_comments_017906.json:
+archive/issue_comments_017868.json:
 ```json
 {
     "body": "This looks fine mathematically.  I don't much like seeing three almost identical functions, though (for Gamma0, Gamma1 and GammaH).  Can it not be written in such a way that all three call a common core function which has the list of coset reps as a parameter?\n\nEven better would be a function to do this more generally, given generators for a big group and coset reps for a subgroup -- but I do realise that one would also need toprovide functions to return the coset rep for any give element of the big group.",
     "created_at": "2008-03-22T18:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17906",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17868",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -49,15 +48,15 @@ Even better would be a function to do this more generally, given generators for 
 
 ---
 
-archive/issue_comments_017907.json:
+archive/issue_comments_017869.json:
 ```json
 {
     "body": "Yes, I agree, those three functions *definitely* need to be refactored into a single function.",
     "created_at": "2008-03-22T18:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17907",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17869",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +66,15 @@ Yes, I agree, those three functions *definitely* need to be refactored into a si
 
 ---
 
-archive/issue_comments_017908.json:
+archive/issue_comments_017870.json:
 ```json
 {
     "body": "Since you're doing just arithmetic, it just occurred to me that in the interest of speed one could use the specialized 2x2 integer matrix class that Robert Bradshaw wrote, which is ten times faster.  For example: \n\n\n```\nsage: import sage.matrix.matrix_integer_2x2\nsage: A = sage.matrix.matrix_integer_2x2.Matrix_integer_2x2(MatrixSpace(ZZ,2),[1,2,3,4],False,False)\nsage: time for _ in xrange(10^5): B = A*A\nCPU times: user 0.23 s, sys: 0.00 s, total: 0.23 s\nWall time: 0.24\nsage: A = matrix(ZZ,2,[1,2,3,4])sage: time for _ in xrange(10^5): B = A*A\nCPU times: user 1.81 s, sys: 0.21 s, total: 2.02 s\nWall time: 2.04\n```\n",
     "created_at": "2008-03-22T19:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17908",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17870",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -98,15 +97,15 @@ Wall time: 2.04
 
 ---
 
-archive/issue_comments_017909.json:
+archive/issue_comments_017871.json:
 ```json
 {
     "body": "The replacement patch certainly answers my point made earlier.  So I would have said: OK, merge this in -- until I saw was's comment.  rlm, how about trying that out and seeing if is is as much faster as hoped?",
     "created_at": "2008-03-22T20:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17909",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17871",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -116,15 +115,15 @@ The replacement patch certainly answers my point made earlier.  So I would have 
 
 ---
 
-archive/issue_comments_017910.json:
+archive/issue_comments_017872.json:
 ```json
 {
     "body": "was:\n\n```\nsage: time L = Gamma0(389).generators()\nCPU times: user 0.50 s, sys: 0.04 s, total: 0.54 s\nWall time: 0.54\n```\n\nis:\n\n```\nsage: time L = Gamma0(389).generators()\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 0.05\n```\n",
     "created_at": "2008-03-23T00:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17910",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17872",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -149,15 +148,15 @@ Wall time: 0.05
 
 ---
 
-archive/issue_comments_017911.json:
+archive/issue_comments_017873.json:
 ```json
 {
     "body": "Fantastic!  \n\nThis patch provides very useful functionality, and in a very efficient way.  It should definitely be included.",
     "created_at": "2008-03-23T10:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17911",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17873",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -169,15 +168,15 @@ This patch provides very useful functionality, and in a very efficient way.  It 
 
 ---
 
-archive/issue_comments_017912.json:
+archive/issue_comments_017874.json:
 ```json
 {
     "body": "Attachment [cong_subgp_gens.patch](tarball://root/attachments/some-uuid/ticket2609/cong_subgp_gens.patch) by mabshoff created at 2008-03-23 20:35:53\n\nMerged in Sage 2.11.alpha2",
     "created_at": "2008-03-23T20:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17912",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17874",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -189,15 +188,15 @@ Merged in Sage 2.11.alpha2
 
 ---
 
-archive/issue_comments_017913.json:
+archive/issue_comments_017875.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-23T20:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17913",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2609#issuecomment-17875",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

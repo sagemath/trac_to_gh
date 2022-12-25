@@ -6,15 +6,13 @@ archive/issues_003931.json:
     "body": "Assignee: @rlmill\n\nSee http://wiki.wstein.org/2008/480a/theprojects\n\nIssue created by migration from https://trac.sagemath.org/ticket/3931\n\n",
     "created_at": "2008-08-22T18:16:18Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Should we merge the dependency relation graph code by Scot Terry",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3931",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3931
 
 ---
 
-archive/issue_comments_028146.json:
+archive/issue_comments_028088.json:
 ```json
 {
     "body": "Hi Jason,\n\nthis question is not for trac, but should be discussed in [sage-devel].\n\nCheers,\n\nMichael",
     "created_at": "2008-08-22T20:02:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3931",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28146",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28088",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +51,15 @@ Michael
 
 ---
 
-archive/issue_comments_028147.json:
+archive/issue_comments_028089.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-08-24T04:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3931",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28147",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28089",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -71,15 +69,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_028148.json:
+archive/issue_comments_028090.json:
 ```json
 {
     "body": "And, the answer is NO.",
     "created_at": "2008-08-24T04:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3931",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28148",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3931#issuecomment-28090",
+    "user": "https://github.com/rlmill"
 }
 ```
 

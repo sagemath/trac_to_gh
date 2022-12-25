@@ -6,15 +6,13 @@ archive/issues_001836.json:
     "body": "Assignee: @malb\n\n... to avoid ambiguousness\n\nIssue created by migration from https://trac.sagemath.org/ticket/1836\n\n",
     "created_at": "2008-01-18T19:28:42Z",
     "labels": [
-        "commutative algebra",
-        "major",
-        "enhancement"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] return reduced Groebner bases by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1836",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1836
 
 ---
 
-archive/issue_comments_011620.json:
+archive/issue_comments_011591.json:
 ```json
 {
     "body": "Attachment [redSB-doc.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-doc.patch) by @malb created at 2008-01-18 19:29:29",
     "created_at": "2008-01-18T19:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11620",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11591",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [redSB-doc.patch](tarball://root/attachments/some-uuid/ticket1836/red
 
 ---
 
-archive/issue_comments_011621.json:
+archive/issue_comments_011592.json:
 ```json
 {
     "body": "There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?",
     "created_at": "2008-01-20T03:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11621",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11592",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -65,15 +63,15 @@ There are an awful lot of places that Groebner bases are computed.  (complete_pr
 
 ---
 
-archive/issue_comments_011622.json:
+archive/issue_comments_011593.json:
 ```json
 {
     "body": "updated patch which uses Python techniques to implement reduction of Groebner bases, and forces all GB calculations to be reduced",
     "created_at": "2008-01-20T22:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11622",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11593",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -83,15 +81,15 @@ updated patch which uses Python techniques to implement reduction of Groebner ba
 
 ---
 
-archive/issue_comments_011623.json:
+archive/issue_comments_011594.json:
 ```json
 {
     "body": "Attachment [redSB-sage.patch](tarball://root/attachments/some-uuid/ticket1836/redSB-sage.patch) by @malb created at 2008-01-20 22:28:12\n\nReplying to [comment:1 ncalexan]:\n> There are an awful lot of places that Groebner bases are computed.  (complete_prime_decomposition, etc).  I'd really like to guarantee that *all* such bases are reduced.  Is that unreasonable?\n\nThe updated patch is supposed to implement that.",
     "created_at": "2008-01-20T22:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11623",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11594",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -106,15 +104,15 @@ The updated patch is supposed to implement that.
 
 ---
 
-archive/issue_comments_011624.json:
+archive/issue_comments_011595.json:
 ```json
 {
     "body": "Patch looks good to me. I think that all of Nick's concerns have been addressed.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-22T00:11:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11624",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11595",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +126,15 @@ Michael
 
 ---
 
-archive/issue_comments_011625.json:
+archive/issue_comments_011596.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-22T00:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11625",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11596",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -146,15 +144,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011626.json:
+archive/issue_comments_011597.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha1",
     "created_at": "2008-01-22T00:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1836",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11626",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1836#issuecomment-11597",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

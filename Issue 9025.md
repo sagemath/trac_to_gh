@@ -6,15 +6,14 @@ archive/issues_009025.json:
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nAttempting a 64-bit build of Sage on OpenSolaris I noticed several files are built 32-bit, even though SAGE64 is set to yes. This includes the following files. \n\n\n```\nrkirkby@hawk:~/sage-4.4.2$ file local/bin/*.x | grep 32\nlocal/bin/class.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/cws.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/nef.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\nlocal/bin/poly.x:\tELF 32-bit LSB executable 80386 Version 1 [FPU], dynamically linked, not stripped\n\n```\n\n\nwhich are all part of 'PALP' There is nothing in the Makefile to force a 64-bit build on any platform, so I would not be surprised if only 32-bit objects were built on OS X or anywhere else where SAGE64 needs to be set to \"yes\" to get a 64-bit build.\n\nFixing this should be quite easy.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9025\n\n",
     "created_at": "2010-05-23T23:57:34Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "PALP is building 32-bit on OpenSolaris - probably other platforms too.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9025",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9025
 
 ---
 
-archive/issue_comments_083500.json:
+archive/issue_comments_083364.json:
 ```json
 {
     "body": "Attachment [PALP-64-bit.patch](tarball://root/attachments/some-uuid/ticket9025/PALP-64-bit.patch) by drkirkby created at 2010-05-24 00:31:12\n\nMercurial patch",
     "created_at": "2010-05-24T00:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83500",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83364",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -66,15 +65,15 @@ Mercurial patch
 
 ---
 
-archive/issue_comments_083501.json:
+archive/issue_comments_083365.json:
 ```json
 {
     "body": "This was easily fixed by adding the flag -m64. I did this via 'sed' as it was the simplest way to change a few bytes in a large file. The revised package may be found here:\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/palp-1.1.p2.spkg\n\nNow the files build 64-bit:\n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file local/bin/*.x\nlocal/bin/class.x:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\nlocal/bin/cws.x:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\nlocal/bin/nef.x:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\nlocal/bin/poly.x:\tELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\n```\n",
     "created_at": "2010-05-24T00:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83501",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83365",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -98,15 +97,15 @@ local/bin/poly.x:	ELF 64-bit LSB executable AMD64 Version 1, dynamically linked,
 
 ---
 
-archive/issue_comments_083502.json:
+archive/issue_comments_083366.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-24T00:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83502",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83366",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -116,15 +115,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083503.json:
+archive/issue_comments_083367.json:
 ```json
 {
     "body": "For other OpenSolaris issues, see #9026",
     "created_at": "2010-05-24T18:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83503",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83367",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -134,15 +133,15 @@ For other OpenSolaris issues, see #9026
 
 ---
 
-archive/issue_comments_083504.json:
+archive/issue_comments_083368.json:
 ```json
 {
     "body": "This needs rebasing.",
     "created_at": "2010-06-05T22:11:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83504",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83368",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -152,15 +151,15 @@ This needs rebasing.
 
 ---
 
-archive/issue_comments_083505.json:
+archive/issue_comments_083369.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-05T22:11:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83505",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83369",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -170,15 +169,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_083506.json:
+archive/issue_comments_083370.json:
 ```json
 {
     "body": "Replying to [comment:5 drkirkby]:\n> This needs rebasing. \n\nWhat do you mean? Isn't renaming enough?\n\nJaap",
     "created_at": "2010-06-14T12:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83506",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83370",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -193,15 +192,15 @@ Jaap
 
 ---
 
-archive/issue_comments_083507.json:
+archive/issue_comments_083371.json:
 ```json
 {
     "body": "Someone has made other changes, so they need to be considered. It is not as simple as just renaming this package. I dobut it is rocket science though - leave it with me. It will be ready for review later today. I have a chess game in half an hour, so do not have time to do it now. \n\nIt is better if I do it, rather than you. Then you can review it. \n\nDave",
     "created_at": "2010-06-14T12:29:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83507",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83371",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -215,15 +214,15 @@ Dave
 
 ---
 
-archive/issue_comments_083508.json:
+archive/issue_comments_083372.json:
 ```json
 {
     "body": "It's here now, awaiting review. \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/palp-1.1.p3.spkg",
     "created_at": "2010-06-14T13:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83508",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -235,15 +234,15 @@ http://boxen.math.washington.edu/home/kirkby/patches/palp-1.1.p3.spkg
 
 ---
 
-archive/issue_comments_083509.json:
+archive/issue_comments_083373.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-14T13:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83509",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83373",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -253,15 +252,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_083510.json:
+archive/issue_comments_083374.json:
 ```json
 {
     "body": "Ok, on OpenSolaris:\n\n\n```\nFinished installing palp-1.1.p3.spkg\n-bash-4.0$ file local/bin/*.x | grep 32\n-bash-4.0$ file local/bin/*.x | grep 64\nlocal/bin/class.x:      ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\nlocal/bin/cws.x:        ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\nlocal/bin/nef.x:        ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\nlocal/bin/poly.x:       ELF 64-bit LSB executable AMD64 Version 1, dynamically linked, not stripped\n-bash-4.0$ \n\n```\n\n\nPositive review.\n\nJaap",
     "created_at": "2010-06-14T13:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83510",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83374",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -289,15 +288,15 @@ Jaap
 
 ---
 
-archive/issue_comments_083511.json:
+archive/issue_comments_083375.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-14T13:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83511",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83375",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -307,15 +306,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083512.json:
+archive/issue_comments_083376.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-25T15:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83512",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9025#issuecomment-83376",
+    "user": "https://github.com/rlmill"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002941.json:
     "body": "Assignee: mabshoff\n\nApply the attached patch to Sage, then install the attached spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2941\n\n",
     "created_at": "2008-04-16T09:37:36Z",
     "labels": [
-        "Cygwin",
-        "major",
+        "component: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "sympy spkg updated + a test patch for Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2941",
-    "user": "@certik"
+    "user": "https://github.com/certik"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2941
 
 ---
 
-archive/issue_comments_020255.json:
+archive/issue_comments_020213.json:
 ```json
 {
     "body": "Sage patch, fixing the tests",
     "created_at": "2008-04-16T09:39:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20255",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20213",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -47,15 +46,15 @@ Sage patch, fixing the tests
 
 ---
 
-archive/issue_comments_020256.json:
+archive/issue_comments_020214.json:
 ```json
 {
     "body": "Attachment [sympy-0.5.13.patch](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.patch) by @certik created at 2008-04-16 09:43:42\n\n**Important note**: execute this command\n\nrm -r sage/local/lib/python2.5/site-packages/sympy*\n\nbefore installing the spkg, otherwise sympy will be broken.",
     "created_at": "2008-04-16T09:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20256",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20214",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -71,15 +70,15 @@ before installing the spkg, otherwise sympy will be broken.
 
 ---
 
-archive/issue_comments_020257.json:
+archive/issue_comments_020215.json:
 ```json
 {
     "body": "Changing component from Cygwin to packages.",
     "created_at": "2008-04-16T09:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20257",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20215",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing component from Cygwin to packages.
 
 ---
 
-archive/issue_comments_020258.json:
+archive/issue_comments_020216.json:
 ```json
 {
     "body": "Replying to [comment:1 certik]:\n> **Important note**: execute this command\n> \n> rm -r sage/local/lib/python2.5/site-packages/sympy*\n> \n> before installing the spkg, otherwise sympy will be broken.\n\nHi Ondrej,\n\nthis must be done in spkg-install, otherwise it will break people's install. \n\nOn another note: There already way #1633 assigned to you as the sympy upgrade ticket. I have closed that as a duplicate.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-16T09:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20258",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20216",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -122,15 +121,15 @@ Michael
 
 ---
 
-archive/issue_comments_020259.json:
+archive/issue_comments_020217.json:
 ```json
 {
     "body": "Attachment [sympy-0.5.13.spkg](tarball://root/attachments/some-uuid/ticket2941/sympy-0.5.13.spkg) by @certik created at 2008-04-16 11:51:39",
     "created_at": "2008-04-16T11:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20259",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20217",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -140,15 +139,15 @@ Attachment [sympy-0.5.13.spkg](tarball://root/attachments/some-uuid/ticket2941/s
 
 ---
 
-archive/issue_comments_020260.json:
+archive/issue_comments_020218.json:
 ```json
 {
     "body": "Thanks I committed the patch below and attached a new spkg.\n\ndiff -r 029e5541f507 -r 2111fce6f538 spkg-install\n--- a/spkg-install\tWed Apr 16 11:28:19 2008 +0200\n+++ b/spkg-install\tWed Apr 16 13:44:47 2008 +0200\n`@``@` -1,4 +1,14 `@``@`\n #!/bin/sh\n+\n+# We need to delete the old path, so that there are no leftovers from the\n+# previous installation, otherwise sympy could get broken (for example by\n+# importing some local files instead of the standard library ones...)\n+if [ \"$SAGE_ROOT\" = \"\" ]; then\n+    echo \"Please set the SAGE_ROOT variable\"\n+    exit 1\n+fi\n+echo \"Deleting $SAGE_ROOT/local/lib/python2.5/site-packages/sympy*\"\n+rm -rf $SAGE_ROOT/local/lib/python2.5/site-packages/sympy*\n \n cd src/",
     "created_at": "2008-04-16T11:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20260",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20218",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -176,15 +175,15 @@ diff -r 029e5541f507 -r 2111fce6f538 spkg-install
 
 ---
 
-archive/issue_comments_020261.json:
+archive/issue_comments_020219.json:
 ```json
 {
     "body": "The patch got screwed up, so again:\n\n\n```\ndiff -r 029e5541f507 -r 2111fce6f538 spkg-install\n--- a/spkg-install\tWed Apr 16 11:28:19 2008 +0200\n+++ b/spkg-install\tWed Apr 16 13:44:47 2008 +0200\n@@ -1,4 +1,14 @@\n #!/bin/sh\n+\n+# We need to delete the old path, so that there are no leftovers from the\n+# previous installation, otherwise sympy could get broken (for example by\n+# importing some local files instead of the standard library ones...)\n+if [ \"$SAGE_ROOT\" = \"\" ]; then\n+    echo \"Please set the SAGE_ROOT variable\"\n+    exit 1\n+fi\n+echo \"Deleting $SAGE_ROOT/local/lib/python2.5/site-packages/sympy*\"\n+rm -rf $SAGE_ROOT/local/lib/python2.5/site-packages/sympy*\n \n cd src/\n```\n",
     "created_at": "2008-04-16T11:53:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20261",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20219",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -216,15 +215,15 @@ diff -r 029e5541f507 -r 2111fce6f538 spkg-install
 
 ---
 
-archive/issue_comments_020262.json:
+archive/issue_comments_020220.json:
 ```json
 {
     "body": "Parch and spgk are good, pass doctests. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-17T06:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20262",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20220",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -238,15 +237,15 @@ Michael
 
 ---
 
-archive/issue_comments_020263.json:
+archive/issue_comments_020221.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-17T06:35:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20263",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -256,15 +255,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020264.json:
+archive/issue_comments_020222.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha6",
     "created_at": "2008-04-17T06:35:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20264",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2941#issuecomment-20222",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

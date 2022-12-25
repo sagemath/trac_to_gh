@@ -6,15 +6,14 @@ archive/issues_005302.json:
     "body": "Assignee: @rlmill\n\nOn Fedora 9 and 10, 32 bits:\n\n\n```\nsage -t  \"devel/sage/sage/graphs/graph.py\"                  \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.3.alpha1/devel/sage/sage/graphs/graph.py\", line 5814:\n    sage: G.get_pos()\nExpected:\n    {0: [-0.81..., -0.32...],\n    1: [-0.49..., 0.53...],\n    2: [0.04..., 0.96...],\n    3: [0.00..., 0.01...],\n    4: [0.17..., -0.71...],\n    5: [-0.47..., 0.06...],\n    6: [0.35..., -0.17...],\n    7: [0.54..., 0.50...],\n    8: [-0.30..., -0.57...],\n    9: [0.95..., -0.28...]}\nGot:\n    {0: [-0.80999357280480733, -0.35674303178095085], 1: [-0.5137985651989595, 0.53516030613479626], 2: [0.04267232662930763, 0.9733718008664739], 3: [-0.0030625205151234456, 0.025523074413981252], 4: [0.20666820211352116, -0.73775138260652107], 5: [-0.48704143554494495, 0.075148546351255105], 6: [0.35418721150812299, -0.17351758872721781], 7: [0.54564695734576318, 0.51479808833141838], 8: [-0.29589999259318039, -0.57812915207589943], 9: [0.96062138906029881, -0.27786066090733674]}\n**********************************************************************\n1 items had failures:\n   1 of  78 in __main__.example_133\n***Test Failed*** 1 failures.\n\nsage -t  \"devel/sage/sage/graphs/graph_plot.py\"             \n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.3.alpha1/devel/sage/sage/graphs/graph_plot.py\", line 108:\n    sage: g.get_pos()\nExpected:\n    {0: [6.123233995736766e-17, 1.0],\n     1: [-0.95105651629515353, 0.30901699437494751],\n     2: [-0.58778525229247325, -0.80901699437494734],\n     3: [0.58778525229247292, -0.80901699437494756],\n     4: [0.95105651629515364, 0.30901699437494717]}\nGot:\n    {0: [6.1230317691118863e-17, 1.0], 1: [-0.95105651629515353, 0.30901699437494751], 2: [-0.58778525229247325, -0.80901699437494734], 3: [0.58778525229247292, -0.80901699437494756], 4: [0.95105651629515364, 0.30901699437494717]}\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.3.alpha1/tmp/.doctest_graph_plot.py\n\t [28.9 s]\n\n```\n\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/5302\n\n",
     "created_at": "2009-02-18T11:35:18Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Numerical noise in graph.py get_pos() and graph_plot.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5302",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: @rlmill
@@ -77,15 +76,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5302
 
 ---
 
-archive/issue_comments_040788.json:
+archive/issue_comments_040709.json:
 ```json
 {
     "body": "The numerical values themselves are useless in this doctest anyway. The point of the docstring is to illustrate that positions are returned, and that they're in a certain format.",
     "created_at": "2009-02-18T19:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5302",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40788",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40709",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -95,15 +94,15 @@ The numerical values themselves are useless in this doctest anyway. The point of
 
 ---
 
-archive/issue_comments_040789.json:
+archive/issue_comments_040710.json:
 ```json
 {
     "body": "Ok, this patch looks stupid :-) but it works:\n\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.3.rc2, Release Date: 2009-02-17                     |\n| Type notebook() for the GUI, and license() for information.        |\nsage: \nExiting SAGE (CPU time 0m0.08s, Wall time 0m5.28s).\n[jaap@paix sage-3.3.alpha1]$ ./sage -t  \"devel/sage/sage/graphs/graph_plot.py\"\nsage -t  \"devel/sage/sage/graphs/graph_plot.py\"             \n\t [47.8 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 47.9 seconds\n[jaap@paix sage-3.3.alpha1]$ ./sage -t  \"devel/sage/sage/graphs/graph.py\"\nsage -t  \"devel/sage/sage/graphs/graph.py\"                  \n\t [109.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 109.9 seconds\n\n```\n\n\nSo positive review.\n\nJaap",
     "created_at": "2009-02-18T19:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5302",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40789",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40710",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -144,15 +143,15 @@ Jaap
 
 ---
 
-archive/issue_comments_040790.json:
+archive/issue_comments_040711.json:
 ```json
 {
     "body": "Well, if one could add a comment before the doctest is run *why* we dot out all the output I would be happier.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-18T19:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5302",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40790",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40711",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -166,15 +165,15 @@ Michael
 
 ---
 
-archive/issue_comments_040791.json:
+archive/issue_comments_040712.json:
 ```json
 {
     "body": "Attachment [trac_5302.patch](tarball://root/attachments/some-uuid/ticket5302/trac_5302.patch) by @rlmill created at 2009-02-19 21:39:50",
     "created_at": "2009-02-19T21:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5302",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40791",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40712",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -184,15 +183,15 @@ Attachment [trac_5302.patch](tarball://root/attachments/some-uuid/ticket5302/tra
 
 ---
 
-archive/issue_comments_040792.json:
+archive/issue_comments_040713.json:
 ```json
 {
     "body": "Replying to [comment:3 mabshoff]:\n> Well, if one could add a comment before the doctest is run *why* we dot out all the output I would be happier.\n\nDone",
     "created_at": "2009-02-19T21:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5302",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40792",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40713",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -205,15 +204,15 @@ Done
 
 ---
 
-archive/issue_comments_040793.json:
+archive/issue_comments_040714.json:
 ```json
 {
     "body": "Thanks, looks better to me :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-20T06:10:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5302",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40793",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40714",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -227,15 +226,15 @@ Michael
 
 ---
 
-archive/issue_comments_040794.json:
+archive/issue_comments_040715.json:
 ```json
 {
     "body": "Merged in Sage 3.3.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-20T06:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5302",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40794",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40715",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -249,15 +248,15 @@ Michael
 
 ---
 
-archive/issue_comments_040795.json:
+archive/issue_comments_040716.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-20T06:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5302",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40795",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5302#issuecomment-40716",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_008804.json:
     "body": "Assignee: mvngu\n\nCC:  @robertwb\n\nBring plot/plot3d/parametric_surface.pyx to 100% doctest coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8804\n\n",
     "created_at": "2010-04-28T15:20:22Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Bring plot/plot3d/parametric_surface.pyx to 100% doctest coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8804",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: mvngu
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8804
 
 ---
 
-archive/issue_comments_080782.json:
+archive/issue_comments_080650.json:
 ```json
 {
     "body": "Based on Sage 4.4",
     "created_at": "2010-04-29T20:14:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80782",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80650",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -49,15 +48,15 @@ Based on Sage 4.4
 
 ---
 
-archive/issue_comments_080783.json:
+archive/issue_comments_080651.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-29T20:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80783",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80651",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080784.json:
+archive/issue_comments_080652.json:
 ```json
 {
     "body": "Attachment [trac_8804-param-surface-docs.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-param-surface-docs.patch) by @kcrisman created at 2010-04-29 20:27:03\n\nAlso fixes a few inconsistencies with formula for MobiusStrip that wasn't used and dual() that I checked with robertwb.",
     "created_at": "2010-04-29T20:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80784",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80652",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -87,15 +86,15 @@ Also fixes a few inconsistencies with formula for MobiusStrip that wasn't used a
 
 ---
 
-archive/issue_comments_080785.json:
+archive/issue_comments_080653.json:
 ```json
 {
     "body": "Attachment [trac_8804-reviewer.patch](tarball://root/attachments/some-uuid/ticket8804/trac_8804-reviewer.patch) by mvngu created at 2010-05-10 00:56:44",
     "created_at": "2010-05-10T00:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80785",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80653",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -105,15 +104,15 @@ Attachment [trac_8804-reviewer.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_080786.json:
+archive/issue_comments_080654.json:
 ```json
 {
     "body": "The patch [trac_8804-param-surface-docs.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8804/trac_8804-param-surface-docs.patch) is OK by me. I have added a reviewer patch that fixes some typos, add the parametric surface module to the reference manual, and fixes to get the module to build and resolve all warnings. So only my patch needs review by anyone but me.",
     "created_at": "2010-05-10T00:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80786",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80654",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -123,15 +122,15 @@ The patch [trac_8804-param-surface-docs.patch](http://trac.sagemath.org/sage_tra
 
 ---
 
-archive/issue_comments_080787.json:
+archive/issue_comments_080655.json:
 ```json
 {
     "body": "This looks okay, but I'm not sure how to test the documentation building and looking right.  Also, just for my information, when do we need r\"\"\" and when is \"\"\" sufficient?    Also, apparently the input for init goes in the class definition - is that right?  My apologies, I didn't realize that.",
     "created_at": "2010-05-10T15:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80787",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80655",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -141,15 +140,15 @@ This looks okay, but I'm not sure how to test the documentation building and loo
 
 ---
 
-archive/issue_comments_080788.json:
+archive/issue_comments_080656.json:
 ```json
 {
     "body": "Replying to [comment:3 kcrisman]:\n> This looks okay, but I'm not sure how to test the documentation building and looking right. \n\nA quick-and-dirty way is to rebuild as follows from SAGE_ROOT:\n\n\n```sh\n./sage -b main\n./sage -docbuild reference html\n```\n\n\nIf you really want to be thorough, you could delete the whole output directory resulting from building the Sage documentation and then rebuild the whole reference manual again. This would take much longer than the above quick-and-dirty way, but it sure is more thorough. From SAGE_ROOT, do:\n\n\n```sh\nrm -rf devel/sage-main/doc/output/\n./sage -b main\n./sage -docbuild reference html\n```\n\n\n\n\n> Also, just for my information, when do we need r\"\"\" and when is \"\"\" sufficient?  \n\nWe need `r\"\"\"` when the docstring contains LaTeX escapes, i.e. LaTeX macros that start with a backslash character. In most other cases, `\"\"\"` is sufficient. For example, if your docstring contains something like \n\n\n```\n\\sin(x)^2 + \\cos(x)^2 = 1\n```\n\n\nthen your docstring must be delimited with `r\"\"\"`. For safety, I always use `r\"\"\"`.\n\n\n\n\n>  Also, apparently the input for init goes in the class definition - is that right? \n\nAt the moment, that is the case because docstrings for methods and functions whose names start with an underscore don't show up on the reference manual. So full documentation for the constructor `__init__` are recommended to be in the class docstring. That way, documentation relating to the constructor, including its input and output documentation, shows up on the reference manual.",
     "created_at": "2010-05-10T21:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80788",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80656",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -200,15 +199,15 @@ At the moment, that is the case because docstrings for methods and functions who
 
 ---
 
-archive/issue_comments_080789.json:
+archive/issue_comments_080657.json:
 ```json
 {
     "body": "Okay, looks great and still passes tests.",
     "created_at": "2010-05-11T13:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80789",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80657",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -218,15 +217,15 @@ Okay, looks great and still passes tests.
 
 ---
 
-archive/issue_comments_080790.json:
+archive/issue_comments_080658.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-11T13:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80790",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80658",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -236,15 +235,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080791.json:
+archive/issue_comments_080659.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-12T22:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8804",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80791",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8804#issuecomment-80659",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

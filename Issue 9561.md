@@ -6,7 +6,7 @@ archive/issues_009561.json:
     "body": "Assignee: mvngu\n\nCC:  @kcrisman mvngu\n\nThe forthcoming 4.5.2.alpha0 includes #9219, which appears to cause the following docbuild warnings:\n\n```\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel:14: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.chmm.GaussianHiddenMarkovModel.viterbi:20: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.prob:13: (WARNING/2) Literal block expected; none found.\ndocstring of sage.stats.hmm.distributions.Distribution.sample:14: (WARNING/2) Literal block expected; none found.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9561\n\n",
     "created_at": "2010-07-21T10:01:54Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009561.json:
     "title": "Docbuild warnings caused by #9219",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9561",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: mvngu
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9561
 
 ---
 
-archive/issue_comments_092166.json:
+archive/issue_comments_092012.json:
 ```json
 {
     "body": "This was caused by someone getting too excited about \n\n```\nEXAMPLES::\n```\n\nwhich does indeed often introduce actual examples, but now is more likely to have more text before the code itself.  Should be very easy review.",
     "created_at": "2010-07-22T14:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92166",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92012",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -63,15 +63,15 @@ which does indeed often introduce actual examples, but now is more likely to hav
 
 ---
 
-archive/issue_comments_092167.json:
+archive/issue_comments_092013.json:
 ```json
 {
     "body": "Attachment [trac_9561-stats-rst-warnings.patch](tarball://root/attachments/some-uuid/ticket9561/trac_9561-stats-rst-warnings.patch) by @kcrisman created at 2010-07-22 14:17:01\n\nBased on 4.5.1 plus relevant patches",
     "created_at": "2010-07-22T14:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92167",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92013",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -83,15 +83,15 @@ Based on 4.5.1 plus relevant patches
 
 ---
 
-archive/issue_comments_092168.json:
+archive/issue_comments_092014.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-22T14:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92168",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92014",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -101,15 +101,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_092169.json:
+archive/issue_comments_092015.json:
 ```json
 {
     "body": "Either do 4.5.1 and patches from #9218 and #9219, or base on 4.5.2.alpha0.  This should remove the warnings.",
     "created_at": "2010-07-22T14:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92169",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92015",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -119,15 +119,15 @@ Either do 4.5.1 and patches from #9218 and #9219, or base on 4.5.2.alpha0.  This
 
 ---
 
-archive/issue_comments_092170.json:
+archive/issue_comments_092016.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-23T00:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92170",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92016",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -137,15 +137,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_092171.json:
+archive/issue_comments_092017.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-23T02:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92171",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/9561#issuecomment-92017",
+    "user": "https://github.com/dandrake"
 }
 ```
 

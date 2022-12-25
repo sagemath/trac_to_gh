@@ -6,15 +6,14 @@ archive/issues_006699.json:
     "body": "Assignee: tbd\n\nI've made a new .spkg file for Maxima based on the latest 5.19.0 release. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.0/maxima-5.19.0.spkg\n\nI gather updates to Maxima have caused some issues in the past in Sage, so I don't know how this will go. \n\nI've also created a new .spkg file for ECL, based on the latest 9.8.1 source code (despite the fact the web site shows 9.7.1 as the latest, if you go to the downloads page, you can get 9.8.1). \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/ecl-9.8.1/ecl-9.8.1.spkg\n\nThis updated ECL resolves Trac #6564, as ECL 9.8.1 works on Solaris SPARC, but ECL 9.7.1 does not.  \n\nIf the updated ECL is applied (so solving #6564), Maxima **must** be updated, as improved type-check in ECL has found a bug that existed in Maxima for 35 years! (confirmed by Maxima developers). \n\nSo in summary\n\n* An update to ECL 9.8.1 is needed for Solaris SPARC, as 9.7.1 will not build. (Track #6564)\n* ECL 9.8.1 refuses to build Maxima due to a Maxima bug.\n* This new .spkg for Maxima is necessary in order that Maxima can be used on Solaris. \n\nThis suggests to me that if there are issues in Sage with this latest Maxima, they should be resolved. There is no point staying with an old version of Maxima, which needs an old version of ECL, which will not build on Solaris. \n\nI appreciate things might not be as simple as that. \n\nDave \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6699\n\n",
     "created_at": "2009-08-09T07:53:37Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with spkg; needs review] Update to Maxima 5.19.0 (particularly important for Solaris support).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6699",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -55,15 +54,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6699
 
 ---
 
-archive/issue_comments_055030.json:
+archive/issue_comments_054928.json:
 ```json
 {
     "body": "Changing assignee from tbd to mabshoff.",
     "created_at": "2009-08-16T05:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55030",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54928",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing assignee from tbd to mabshoff.
 
 ---
 
-archive/issue_comments_055031.json:
+archive/issue_comments_054929.json:
 ```json
 {
     "body": "Changing component from algebra to packages.",
     "created_at": "2009-08-16T05:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55031",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54929",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -91,15 +90,15 @@ Changing component from algebra to packages.
 
 ---
 
-archive/issue_comments_055032.json:
+archive/issue_comments_054930.json:
 ```json
 {
     "body": "Starting from sage 4.1.1, I installed ecl-9.8.3.spkg and maxima-5.19.0.spkg. The following errors occurred.\n\n\n```\nsage -t -long -optional \"devel/sage-myver/sage/interfaces/maxima.py\"\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 116:\n    sage: a.expand()\nExpected:\n    29*sqrt(2)+41\nGot:\n    3*2^(7/2)+5*sqrt(2)+41\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 227:\n    sage: A.eigenvectors()\nExpected:\n    [[[0,4],[3,1]],[1,0,0,-4],[0,1,0,-2],[0,0,1,-4/3],[1,2,3,4]]\nGot:\n    [[[0,4],[3,1]],[[[1,0,0,-4],[0,1,0,-2],[0,0,1,-4/3]],[[1,2,3,4]]]]\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 275:\n    sage: maxima(\"laplace(diff(x(t),t),t,s)\")\nExpected:\n    s*?%laplace(x(t),t,s)-x(0)\nGot:\n    s*'laplace(x(t),t,s)-x(0)\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 280:\n    sage: maxima(\"laplace(diff(x(t),t,2),t,s)\")\nExpected:\n    -?%at('diff(x(t),t,1),t=0)+s^2*?%laplace(x(t),t,s)-x(0)*s\nGot:\n    -?%at('diff(x(t),t,1),t=0)+s^2*'laplace(x(t),t,s)-x(0)*s\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 426:\n    sage: t.limit(Ax=0,dir='above')\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError: Computation failed since Maxima requested additional constraints (try the command 'assume(By^2+Bx^2>0)' before integral or limit evaluation, for example):\n    Is By^2+Bx^2  positive or zero?\nGot:\n    0\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 824:\n    sage: maxima._command_runner('describe', 'gcd')\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/defsystem.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/cmp.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 845:\n    sage: maxima.help('gcd')\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/defsystem.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/cmp.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 855:\n    sage: maxima.example('arrays')\nExpected:\n    a[n]:=n*a[n-1]\n                                    a  := n a\n                                     n       n - 1\n    a[0]:1\n    a[5]\n                                          120\n    a[n]:=n\n    a[6]\n                                           6\n    a[4]\n                                          24\n                                         done\nGot:\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/defsystem.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/cmp.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/sysfun.lsp\"\n    a[n]:=n*a[n-1]\n                                    a  := n a\n                                     n       n - 1\n    a[0]:1\n    a[5]\n                                          120\n    a[n]:=n\n    a[6]\n                                           6\n    a[4]\n                                          24\n                                         done\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 892:\n    sage: sorted(maxima.completions('gc', verbose=False))\nExpected:\n    ['gc', 'gcd', 'gcdex', 'gcfactor', 'gcprint', 'gctime']\nGot:\n    ['propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)']\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 907:\n    sage: sorted(maxima._commands(verbose=False))\nExpected:\n    ['Alpha',\n     'Beta',\n     ...\n     'zunderflow']\nGot:\n    ['propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)', 'propos:Theargumenthastobeastring.--anerror.Todebugthistrydebugmode(true)']\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 926:\n    sage: 'gcd' in t\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 1169:\n    sage: maxima.version()\nExpected:\n    '5.16.3'\nGot:\n    'Loading'\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 1994:\n    sage: f.numer()         # I wonder how to get a real number (~1.463)??\nExpected:\n    -.8862269254527579*%i*erf(%i)\nGot:\n    1.462651745907182\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 2174:\n    sage: 'gcd' in m.trait_names()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 2274:\n    sage: m.gcd._sage_doc_()\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/defsystem.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/cmp.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 2285:\n    sage: maxima.gcd._sage_doc_()\nExpected:\n    -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n    ...\nGot:\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/defsystem.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/cmp.fas\"\n    ;;; Loading #P\"/home/adamwebb/local/sage/local/lib/ecl-9.8.3/sysfun.lsp\"\n    <BLANKLINE>\n     -- Function: gcd (<p_1>, <p_2>, <x_1>, ...)\n         Returns the greatest common divisor of <p_1> and <p_2>.  The flag\n         `gcd' determines which algorithm is employed.  Setting `gcd' to\n         `ez', `subres', `red', or `spmod' selects the `ezgcd',\n         subresultant `prs', reduced, or modular algorithm, respectively.\n         If `gcd' `false' then `gcd (<p_1>, <p_2>, <x>)' always returns 1\n         for all <x>.  Many functions (e.g.  `ratsimp', `factor', etc.)\n         cause gcd's to be taken implicitly.  For homogeneous polynomials\n         it is recommended that `gcd' equal to `subres' be used.  To take\n         the gcd when an algebraic is present, e.g., `gcd (<x>^2 -\n         2*sqrt(2)*<x> + 2, <x> - sqrt(2))', `algebraic' must be `true' and\n         `gcd' must not be `ez'.\n    <BLANKLINE>\n         The `gcd' flag, default: `spmod', if `false' will also prevent the\n         greatest common divisor from being taken when expressions are\n         converted to canonical rational expression (CRE) form.  This will\n         sometimes speed the calculation if gcds are not required.\n    <BLANKLINE>\n    <BLANKLINE>\n      There are also some inexact matches for `gcd'.\n      Try `?? gcd' to see them.\n    <BLANKLINE>\n                                         true\n    <BLANKLINE>\n**********************************************************************\nFile \"/home/adamwebb/local/sage/devel/sage-myver/sage/interfaces/maxima.py\", line 2667:\n    sage: maxima_version()\nExpected:\n    '5.16.3'\nGot:\n    'Loading'\n**********************************************************************\n13 items had failures:\n   5 of  95 in __main__.example_0\n   1 of   3 in __main__.example_12\n   1 of   3 in __main__.example_13\n   1 of   3 in __main__.example_14\n   1 of   3 in __main__.example_16\n   1 of   3 in __main__.example_17\n   1 of   5 in __main__.example_18\n   1 of   3 in __main__.example_29\n   1 of  10 in __main__.example_59\n   1 of   4 in __main__.example_68\n   1 of   4 in __main__.example_72\n   1 of   3 in __main__.example_73\n   1 of   4 in __main__.example_93\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /home/adamwebb/local/sage/tmp/.doctest_maxima.py\n\t [17.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long -optional \"devel/sage-myver/sage/interfaces/maxima.py\"\nTotal time for all tests: 17.9 seconds\n```\n\n\nIt appears that the output from maxima has changed in a number of cases and is returning more comments and the like. I don't know if this is the correct/new behaviour of maxima. \n\nAdam",
     "created_at": "2009-08-17T09:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55032",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54930",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -408,15 +407,15 @@ Adam
 
 ---
 
-archive/issue_comments_055033.json:
+archive/issue_comments_054931.json:
 ```json
 {
     "body": "So it seems that a number of doctests need to be fixed.  I'm marking this as \"needs work\", although the spkg itself seems fine, we just need a patch that fixes the doctests.\n\nNote that interfaces/maxima.py is most likely not the only file affected by this.",
     "created_at": "2009-08-17T10:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55033",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54931",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -428,15 +427,15 @@ Note that interfaces/maxima.py is most likely not the only file affected by this
 
 ---
 
-archive/issue_comments_055034.json:
+archive/issue_comments_054932.json:
 ```json
 {
     "body": "After creating this ticket, a newer Maxima was released. The spkg can be found here\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.1/",
     "created_at": "2009-08-21T05:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55034",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54932",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -448,15 +447,15 @@ http://sage.math.washington.edu/home/kirkby/Solaris-fixes/maxima-5.19.1/
 
 ---
 
-archive/issue_comments_055035.json:
+archive/issue_comments_054933.json:
 ```json
 {
     "body": "I'm attaching a patch that fixes all but one of the doctest failures observed on sage.math and other Linux machines.\n\nMost of these are very simple fixes due to (a) change of formatting of Maxima output or (b) new functionality in Maxima.  For anything else I have tried to comment on my fix in the corresponding file.  Where new answers appear due to new functionality, I checked these answers against Wolfram Alpha (yes, I know; I feel weird about this).\n\nAs far as I know there is one remaining doctest failures:\n\n\n```\nsage -t  \"expression.pyx\"                                   \n**********************************************************************\nFile \"/opt/sage-4.1.1/devel/sage-main/sage/symbolic/expression.pyx\", line 5541:\n    sage: solve(Q*sqrt(Q^2 + 2) - 1,Q)\nExpected:\n    [Q == 1/sqrt(-sqrt(2) + 1), Q == 1/sqrt(sqrt(2) + 1)]\nGot:\n    [Q == 1/sqrt(sqrt(2) + 1)]\n**********************************************************************\n```\n\n\nI think this is due to the fact that Maxima now only returns the real solution, and ignores the complex solution.  I'm not sure what we should do about this.\n\n\nNote that there are also some timeouts observed by David Kirkby on Solaris, but at least some of them are not Maxima-related so it would be better to deal with them in separate tickets.\n\nFinally, this patch puts together a number of tiny patches on a number of recently-opened tickets.  I've decided that it is quite a bit easier to just referee the whole thing, and definitely easier for me to maintain and make necessary modifications to a single patch rather than a dozen of them.",
     "created_at": "2009-08-21T13:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55035",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54933",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -491,15 +490,15 @@ Finally, this patch puts together a number of tiny patches on a number of recent
 
 ---
 
-archive/issue_comments_055036.json:
+archive/issue_comments_054934.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"maxima\".",
     "created_at": "2009-08-21T13:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55036",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54934",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -509,15 +508,15 @@ Changing keywords from "" to "maxima".
 
 ---
 
-archive/issue_comments_055037.json:
+archive/issue_comments_054935.json:
 ```json
 {
     "body": "apply after the ecl and maxima spkg's",
     "created_at": "2009-08-21T13:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55037",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54935",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -527,15 +526,15 @@ apply after the ecl and maxima spkg's
 
 ---
 
-archive/issue_comments_055038.json:
+archive/issue_comments_054936.json:
 ```json
 {
     "body": "Attachment [maxima_doctests.patch](tarball://root/attachments/some-uuid/ticket6699/maxima_doctests.patch) by @golam-m-hossain created at 2009-08-21 13:30:25\n\nReplying to [comment:6 AlexGhitza]:\n\n> {{{\n sage -t  \"expression.pyx\"                                   \n**********************************************************************\n File \"/opt/sage-4.1.1/devel/sage-main/sage/symbolic/expression.pyx\", line 5541:\n     sage: solve(Q*sqrt(Q^2 + 2) - 1,Q)\n Expected:\n     [Q == 1/sqrt(-sqrt(2) + 1), Q == 1/sqrt(sqrt(2) + 1)]\n Got:\n     [Q == 1/sqrt(sqrt(2) + 1)]\n **********************************************************************\n }}}\n> \n> I think this is due to the fact that Maxima now only returns the real solution, and ignores the complex solution.  I'm not sure what we should do about this.\n\nI think you are right. Maxima treats variables to be real by default. To see that in maxima\n\n```\nsage: !maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp ECL 9.4.1\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) conjugate(Q);\n(%o1)                                  Q\n```\n\n\nSo, if maxima is throwing away complex solution then its consistent with its own assumptions. \nUnless someone else has different opinion then we should simply accept what maxima is returning\nnow.",
     "created_at": "2009-08-21T13:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55038",
-    "user": "@golam-m-hossain"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54936",
+    "user": "https://github.com/golam-m-hossain"
 }
 ```
 
@@ -579,15 +578,15 @@ now.
 
 ---
 
-archive/issue_comments_055039.json:
+archive/issue_comments_054937.json:
 ```json
 {
     "body": "Actually, I was wrong.  This is a bug in Maxima, which used to give the right answer but doesn't any more.  See \n\nhttp://www.math.utexas.edu/pipermail/maxima/2009/017632.html\n\nfor a discussion of this.",
     "created_at": "2009-08-22T12:03:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55039",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54937",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -601,15 +600,15 @@ for a discussion of this.
 
 ---
 
-archive/issue_comments_055040.json:
+archive/issue_comments_054938.json:
 ```json
 {
     "body": "We might have to get Maxima's \"solutions\" and check them before returning them to the user.  This is a pain.",
     "created_at": "2009-08-22T12:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55040",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54938",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -619,15 +618,15 @@ We might have to get Maxima's "solutions" and check them before returning them t
 
 ---
 
-archive/issue_comments_055041.json:
+archive/issue_comments_054939.json:
 ```json
 {
     "body": "OK, I have come up with a workaround for Maxima's bug.  Since we are now patching Maxima 5.19.1, I've made a new spkg with \"bumped\" version number:\n\nhttp://sage.math.washington.edu/home/ghitza/maxima-5.19.1.p0.spkg\n\nI will soon explain my workaround here to facilitate reviewing, but I thought I'd first put the spkg up in case people want to test it.",
     "created_at": "2009-08-24T01:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55041",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54939",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -641,15 +640,15 @@ I will soon explain my workaround here to facilitate reviewing, but I thought I'
 
 ---
 
-archive/issue_comments_055042.json:
+archive/issue_comments_054940.json:
 ```json
 {
     "body": "Here's a description of the problem and the workaround patched in the latest spkg:\n\nWe are calling Maxima's function `to_poly_solve` on the symbolic expression `Q*sqrt(Q^2+2)-1 == 0`.  Maxima takes this expression and turns it into a system of polynomial equations, and possibly some inequalities giving constraints on the variables.  This is done by a function in `share/contrib/topoly.lisp`.  This function behaves differently under Maxima 5.19.1 than it did under Maxima 5.16.3, and that's what is causing Maxima to lose one of the solutions:\n\nMaxima 5.16.3:\n\n```\nsage: var('Q');\nsage: ex = Q*sqrt(Q^2+2)-1 == 0\nsage: m = ex._maxima_()\nsage: m.to_poly()\n[[%g0*Q-1,Q^2+2=%g0^2],[-%pi/2<carg(%g0),carg(%g0)<=%pi/2]]\n```\n\n\nMaxima 5.19.1:\n\n```\nsage: var('Q');\nsage: ex = Q*sqrt(Q^2+2)-1 == 0\nsage: m = ex._maxima_()\nsage: m.to_poly()\n[[%g0*Q-1,Q^2+2=%g0^2],[-%pi/2<parg(%g0),parg(%g0)<=%pi/2],[]]\n```\n\n\nThe main difference between the two is that `carg` turned into `parg`.  The latter is a new function which is supposed to be a lightweight alternative to `carg`.\n\nThe right way to fix this is to properly debug `topoly.lisp` and send a patch to Maxima, but I do not have the time or expertise to do that.  The author knows about the bug (see above link to maxima mailing list), so hopefully this will get sorted out in a future release of Maxima.\n\nFor now, I'm patching `topoly.lisp` so that the appropriate occurrences of `parg` are changed back into `carg`.  This solves our doctest failure.",
     "created_at": "2009-08-24T03:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55042",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54940",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -689,15 +688,15 @@ For now, I'm patching `topoly.lisp` so that the appropriate occurrences of `parg
 
 ---
 
-archive/issue_comments_055043.json:
+archive/issue_comments_054941.json:
 ```json
 {
     "body": "Note to the release manager: when this gets merged, the following tickets should be closed as fixed (they are all contained in this patch):\n\n#6782, #6783, #6784, #6785, #6786, #6787, #6789, #6792",
     "created_at": "2009-08-24T08:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55043",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54941",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -709,15 +708,15 @@ Note to the release manager: when this gets merged, the following tickets should
 
 ---
 
-archive/issue_comments_055044.json:
+archive/issue_comments_054942.json:
 ```json
 {
     "body": "Not to be pedantic but it would be good to add the usual stuff to the SPKG.txt file to make it more like other packages. I don't know if anyone would like to put their name in for the package maintainer.\n\n\n```\n## Description\n\nMaxima is a symbolic computation program.  It is full featured,\ndoing symbolic manipulation of polynomials, matrices, rational\nfunctions, integration, Todd-coxeter, graphing, bigfloats.  It has a\nsymbolic debugger source level debugger for maxima code.  Maxima is\nbased on the original Macsyma developed at MIT in the 1970's.  It is\nquite reliable, and has good garbage collection, and no memory leaks.\nIt comes with hundreds of self tests.\n\nWebsite: http://maxima.sourceforge.net\n\n## License\n\n * Maxima is distributed under the GNU General Public License, with some\nexport restrictions from the U.S. Department of Energy. See the file\nCOPYING.\n\n## SPKG Maintainers\n\n * ?\n\n## Upstream Contact\n\n * the Maxima mailing list - see http://maxima.sourceforge.net/maximalist.html\n```\n\n\nThe patch seems quite reasonable to me. Most of it seems to be due to improvements in maxima. Changing parg back to carg will likely have to be looked at in a future update but I think is appropriate at this time. I tested the package on 32 and 64 bit linux and it worked well. I ran 'make testlong' and everything passed. I give it a positive review. Has this been tested on Solaris?\n\nAdam",
     "created_at": "2009-08-25T06:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55044",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54942",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -761,15 +760,15 @@ Adam
 
 ---
 
-archive/issue_comments_055045.json:
+archive/issue_comments_054943.json:
 ```json
 {
     "body": "Adam,\n\nThanks for taking the time to review this.  I have made changes very close to what you suggested in SPKG.txt, and replaced the spkg -- it's in the same place as before.\n\nI also changed the ticket summary in light of your positive review.",
     "created_at": "2009-08-25T11:40:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55045",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54943",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -783,15 +782,15 @@ I also changed the ticket summary in light of your positive review.
 
 ---
 
-archive/issue_comments_055046.json:
+archive/issue_comments_054944.json:
 ```json
 {
     "body": "Merged `maxima-5.19.1.p0.spkg` in the standard packages repository and applied the patch `maxima_doctests.patch`. See my comments at #6564 for test results on various platforms.",
     "created_at": "2009-09-02T10:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55046",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54944",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -801,15 +800,15 @@ Merged `maxima-5.19.1.p0.spkg` in the standard packages repository and applied t
 
 ---
 
-archive/issue_comments_055047.json:
+archive/issue_comments_054945.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-02T10:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55047",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54945",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -819,15 +818,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_055048.json:
+archive/issue_comments_054946.json:
 ```json
 {
     "body": "See #6883 for a follow-up to this ticket.",
     "created_at": "2009-09-04T06:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6699",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-55048",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6699#issuecomment-54946",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

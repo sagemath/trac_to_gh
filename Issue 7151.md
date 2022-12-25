@@ -6,15 +6,14 @@ archive/issues_007151.json:
     "body": "Assignee: joyner\n\nCC:  @wdjoyner @mwhansen\n\nKeywords: group quaternion\n\nIt is easy to create most of the small groups (n < 16) as permutation groups with existing constructions.  This is one group that is \"missing\" - the non-abelian, non-dihedral group of order 8.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7151\n\n",
     "created_at": "2009-10-08T05:49:18Z",
     "labels": [
-        "group theory",
-        "minor",
-        "enhancement"
+        "component: group theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add the quaternion group to the named permutation groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7151",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: joyner
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7151
 
 ---
 
-archive/issue_comments_059246.json:
+archive/issue_comments_059134.json:
 ```json
 {
     "body": "Attachment [trac_7151_quaternion_group.patch](tarball://root/attachments/some-uuid/ticket7151/trac_7151_quaternion_group.patch) by @rbeezer created at 2009-10-08 05:56:40",
     "created_at": "2009-10-08T05:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59246",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59134",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -51,15 +50,15 @@ Attachment [trac_7151_quaternion_group.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_059247.json:
+archive/issue_comments_059135.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-08T05:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59247",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59135",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059248.json:
+archive/issue_comments_059136.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2009-10-19T05:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59248",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59136",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_059249.json:
+archive/issue_comments_059137.json:
 ```json
 {
     "body": "This will be obsolete when #7244 is completed.",
     "created_at": "2009-10-19T05:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59249",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59137",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -105,15 +104,15 @@ This will be obsolete when #7244 is completed.
 
 ---
 
-archive/issue_comments_059250.json:
+archive/issue_comments_059138.json:
 ```json
 {
     "body": "Replying to [comment:2 rbeezer]:\n> This will be obsolete when #7244 is completed.\n\nShould'nt this ticket be closed as duplicate ?",
     "created_at": "2009-11-22T17:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59250",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59138",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -126,15 +125,15 @@ Should'nt this ticket be closed as duplicate ?
 
 ---
 
-archive/issue_comments_059251.json:
+archive/issue_comments_059139.json:
 ```json
 {
     "body": "Mike, can you close this one??  (See Rob's comment above.)",
     "created_at": "2010-01-03T05:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59251",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59139",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -144,15 +143,15 @@ Mike, can you close this one??  (See Rob's comment above.)
 
 ---
 
-archive/issue_comments_059252.json:
+archive/issue_comments_059140.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-01-03T05:21:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59252",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59140",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -162,15 +161,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_059253.json:
+archive/issue_comments_059141.json:
 ```json
 {
     "body": "Resolution changed from invalid to duplicate",
     "created_at": "2010-01-03T05:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59253",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7151#issuecomment-59141",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

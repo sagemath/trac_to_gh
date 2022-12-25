@@ -6,15 +6,14 @@ archive/issues_004474.json:
     "body": "Assignee: cwitty\n\nThere is a dangerous hack in preparser.py. Given input file:\n\n```\nload a.sage\nload b.py\n```\n\n   \nThen b.py will be loaded while the file is being *parsed*, and *before* a.sage is loaded.  That would be very confusing.  See the related #4473 and apply that patch before working on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4474\n\n",
     "created_at": "2008-11-09T03:16:04Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "A hack in preparsing files is dangerous/confusing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4474",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4474
 
 ---
 
-archive/issue_comments_033044.json:
+archive/issue_comments_032979.json:
 ```json
 {
     "body": "The hack has been removed in #7514.",
     "created_at": "2014-05-01T08:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33044",
-    "user": "@a-andre"
+    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-32979",
+    "user": "https://github.com/a-andre"
 }
 ```
 
@@ -55,15 +54,15 @@ The hack has been removed in #7514.
 
 ---
 
-archive/issue_comments_033045.json:
+archive/issue_comments_032980.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-05-01T08:36:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33045",
-    "user": "@a-andre"
+    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-32980",
+    "user": "https://github.com/a-andre"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_033046.json:
+archive/issue_comments_032981.json:
 ```json
 {
     "body": "You must set it to positive_review in this case.",
     "created_at": "2014-05-05T11:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33046",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-32981",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -91,15 +90,15 @@ You must set it to positive_review in this case.
 
 ---
 
-archive/issue_comments_033047.json:
+archive/issue_comments_032982.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-05-05T11:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33047",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-32982",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -109,15 +108,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_033048.json:
+archive/issue_comments_032983.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2014-05-06T15:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-33048",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/4474#issuecomment-32983",
+    "user": "https://github.com/vbraun"
 }
 ```
 

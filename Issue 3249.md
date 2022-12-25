@@ -6,15 +6,14 @@ archive/issues_003249.json:
     "body": "Assignee: @williamstein\n\nI was doing the following, when testing the jordan_form method...\n\n\n``` \nsage: A=Matrix(ComplexField(200),[[1,-2],[2,-1]])\nsage: jordan=A.jordan_form(transformation=True,subdivide=False)\nsage: P=jordan[1]\n```\n\n\n(P is now the transformation matrix, jordan[1] is the jordan canonical\nform)\n\n\n```\nsage: det(P)\n1.7320508075688772935274463415058723669428052538103806280558*I\n```\n\n\nso clearly the matrix P has non zero determinant, as it should, however...\n\n\n```\nsage: P.inverse()\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix2.pyx in sage.matrix.matrix2.Matrix.inverse (sage/matrix/matrix2.c:19571)()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix0.pyx in sage.matrix.matrix0.Matrix.__invert__ (sage/matrix/matrix0.c:12213)()\n\n<type 'exceptions.ZeroDivisionError'>: self is not invertible\n```\n\n\nThe most strange thing is that things depends strongly on the precision used for the\ncomplex field...the same computation using 20 bits of precision gives\n\n\n```\nsage:  A=Matrix(ComplexField(20),[[1,-2],[2,-1]])\nsage: jordan=B.jordan_form(transformation=True,subdivide=False)\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/<ipython console> in <module>()\n\n/media/hda2/pablo.new_home/sage/sage-2.10.2/matrix2.pyx in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:20606)()\n\n<type 'exceptions.AttributeError'>: 'NoneType' object has no attribute 'is_exact'\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3249\n\n",
     "created_at": "2008-05-17T22:28:46Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "a bug in computing the inverse of the matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3249",
-    "user": "@pdenapo"
+    "user": "https://github.com/pdenapo"
 }
 ```
 Assignee: @williamstein
@@ -86,15 +85,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3249
 
 ---
 
-archive/issue_comments_022483.json:
+archive/issue_comments_022436.json:
 ```json
 {
     "body": "Note that there are two different problems here.\n\nThe first one seems to be similar to bugs #1132,#3166",
     "created_at": "2008-05-19T18:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22483",
-    "user": "@pdenapo"
+    "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22436",
+    "user": "https://github.com/pdenapo"
 }
 ```
 
@@ -106,15 +105,15 @@ The first one seems to be similar to bugs #1132,#3166
 
 ---
 
-archive/issue_comments_022484.json:
+archive/issue_comments_022437.json:
 ```json
 {
     "body": "See also  #2256 (same problem)",
     "created_at": "2008-05-21T02:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22484",
-    "user": "@pdenapo"
+    "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22437",
+    "user": "https://github.com/pdenapo"
 }
 ```
 
@@ -124,15 +123,15 @@ See also  #2256 (same problem)
 
 ---
 
-archive/issue_comments_022485.json:
+archive/issue_comments_022438.json:
 ```json
 {
     "body": "The second issue reported here is fixed by my patch in #3316",
     "created_at": "2008-05-27T23:39:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22485",
-    "user": "@pdenapo"
+    "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22438",
+    "user": "https://github.com/pdenapo"
 }
 ```
 
@@ -142,15 +141,15 @@ The second issue reported here is fixed by my patch in #3316
 
 ---
 
-archive/issue_comments_022486.json:
+archive/issue_comments_022439.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-05-27T23:39:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22486",
-    "user": "@pdenapo"
+    "url": "https://github.com/sagemath/sagetest/issues/3249#issuecomment-22439",
+    "user": "https://github.com/pdenapo"
 }
 ```
 

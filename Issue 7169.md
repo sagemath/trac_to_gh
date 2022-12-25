@@ -6,7 +6,7 @@ archive/issues_007169.json:
     "body": "Assignee: tbd\n\nCC:  @mkoeppe\n\nKeywords: HP-EX\n\nFrom an HP C3600, the following errors are noted. A PolyBoRi would be given access to the machine if they wanted to debug this\n\n\n\n```\ngcc -o M4RI/grayflex.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827/src/boost_1_34_1.cropped -I/home/drkirkby/sage-4.1.2.rc0/local/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd M4RI/grayflex.c\ngcc -o M4RI/permutation.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827/src/boost_1_34_1.cropped -I/home/drkirkby/sage-4.1.2.rc0/local/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd M4RI/permutation.c\ngcc -o M4RI/packedmatrix.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827/src/boost_1_34_1.cropped -I/home/drkirkby/sage-4.1.2.rc0/local/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd M4RI/packedmatrix.c\ngcc -o M4RI/strassen.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827/src/boost_1_34_1.cropped -I/home/drkirkby/sage-4.1.2.rc0/local/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd M4RI/strassen.c\ngcc -o M4RI/misc.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827/src/boost_1_34_1.cropped -I/home/drkirkby/sage-4.1.2.rc0/local/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd M4RI/misc.c\ngcc -o M4RI/brilliantrussian.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827/src/boost_1_34_1.cropped -I/home/drkirkby/sage-4.1.2.rc0/local/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd M4RI/brilliantrussian.c\nar rc groebner/libgroebner.a groebner/src/groebner.o groebner/src/literal_factorization.o groebner/src/randomset.o groebner/src/pairs.o groebner/src/groebner_alg.o groebner/src/fglm.o groebner/src/polynomial_properties.o groebner/src/lexbuckets.o groebner/src/dlex4data.o groebner/src/dp_asc4data.o groebner/src/lp4data.o groebner/src/nf.o groebner/src/interpolate.o M4RI/grayflex.o M4RI/permutation.o M4RI/packedmatrix.o M4RI/strassen.o M4RI/misc.o M4RI/brilliantrussian.o polybori/libpolybori.a\nranlib groebner/libgroebner.a\ng++ -o Cudd/obj/cuddObj.o -c -O3 -Wno-long-long -Wreturn-type -g -fPIC -ftemplate-depth-100 -g -fPIC -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827/src/boost_1_34_1.cropped -I/home/drkirkby/sage-4.1.2.rc0/local/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd Cudd/obj/cuddObj.cc\ngcc -o Cudd/util/texpand.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827/src/boost_1_34_1.cropped -I/home/drkirkby/sage-4.1.2.rc0/local/include -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd Cudd/util/texpand.c\nCudd/util/texpand.c: In function 'util_tilde_expand':\nCudd/util/texpand.c:39: warning: implicit declaration of function 'getpwuid'\nCudd/util/texpand.c:39: warning: implicit declaration of function 'getuid'\nCudd/util/texpand.c:39: warning: assignment makes pointer from integer without a cast\nCudd/util/texpand.c:40: error: dereferencing pointer to incomplete type\nCudd/util/texpand.c:46: warning: implicit declaration of function 'getpwnam'\nCudd/util/texpand.c:46: warning: assignment makes pointer from integer without a cast\nCudd/util/texpand.c:47: error: dereferencing pointer to incomplete type\nscons: *** [Cudd/util/texpand.o] Error 1\nscons: building terminated because of errors.\nError building PolyBoRi.\n\nreal    10m6.109s\nuser    9m34.380s\nsys     0m18.300s\nsage: An error occurred while installing polybori-0.6.3-20090827\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/drkirkby/sage-4.1.2.rc0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827 and type 'make'.\nInstead type \"/home/drkirkby/sage-4.1.2.rc0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/drkirkby/sage-4.1.2.rc0/spkg/build/polybori-0.6.3-20090827\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n*** Error exit code 1\n\nStop.\n\nreal    10m28.223s\nuser    9m45.180s\nsys     0m20.420s\nError building Sage.\n```\n\n\nIt looks like pwd.h needs including. You could do that only on HP-UX by \n\n\n```\n#ifdef hpux\n#include <pwd.h>\n#endif\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7169\n\n",
     "created_at": "2009-10-10T07:29:52Z",
     "labels": [
-        "porting",
+        "component: porting",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007169.json:
     "title": "HP-UX PolyBoRi 0.6.3-20090827  fail to build on HP-UX 11i",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7169",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -93,15 +93,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7169
 
 ---
 
-archive/issue_comments_059420.json:
+archive/issue_comments_059308.json:
 ```json
 {
     "body": "I've just added the PolyBori-discuss email address on the ticket. It may not appear, as the Trac is probably not subscribed. If is does not appear, I will report via a direct email. \n\nThis looks very easy to fix.",
     "created_at": "2009-12-03T04:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59420",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59308",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -113,15 +113,15 @@ This looks very easy to fix.
 
 ---
 
-archive/issue_comments_059421.json:
+archive/issue_comments_059309.json:
 ```json
 {
     "body": "Changing keywords from \"HP-EX\" to \"HP-UX\".",
     "created_at": "2009-12-03T11:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59421",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59309",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -131,15 +131,15 @@ Changing keywords from "HP-EX" to "HP-UX".
 
 ---
 
-archive/issue_comments_059422.json:
+archive/issue_comments_059310.json:
 ```json
 {
     "body": "The email did not appear on  the polybori-discuss mailing list, so I sent it from my own account, from which I am a subscriber.",
     "created_at": "2009-12-03T11:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59422",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59310",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -149,15 +149,15 @@ The email did not appear on  the polybori-discuss mailing list, so I sent it fro
 
 ---
 
-archive/issue_comments_059423.json:
+archive/issue_comments_059311.json:
 ```json
 {
     "body": "Changing component from porting to AIX or HP-UX ports.",
     "created_at": "2011-02-16T22:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59423",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59311",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -167,15 +167,15 @@ Changing component from porting to AIX or HP-UX ports.
 
 ---
 
-archive/issue_comments_059424.json:
+archive/issue_comments_059312.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-06-25T13:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59424",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59312",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -185,15 +185,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059425.json:
+archive/issue_comments_059313.json:
 ```json
 {
     "body": "close as obsolete ?",
     "created_at": "2020-06-25T13:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59425",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59313",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -203,15 +203,15 @@ close as obsolete ?
 
 ---
 
-archive/issue_comments_059426.json:
+archive/issue_comments_059314.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-06-25T17:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59426",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59314",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -221,15 +221,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059427.json:
+archive/issue_comments_059315.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-06-25T17:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59427",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7169#issuecomment-59315",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

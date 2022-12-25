@@ -6,15 +6,14 @@ archive/issues_000872.json:
     "body": "Assignee: @malb\n\nCC:  singular number fields factorization\n\nSee also http://www.singular.uni-kl.de/forum/viewtopic.php?t=1639\n\nBut since it was reported by a Sage user it is worth tracking here:\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.6/local/bin$ ./valgrind --tool=memcheck --leak-resolution=high ./Singular-3-0-3\n==25414== Memcheck, a memory error detector.\n==25414== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.\n==25414== Using LibVEX rev 1788, a library for dynamic binary translation.\n==25414== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.\n==25414== Using valgrind-3.3.0.SVN, a dynamic binary instrumentation framework.\n==25414== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.\n==25414== For more details, rerun with: -v\n==25414==\n                     SINGULAR                             /  Development\n A Computer Algebra System for Polynomial Computations   /   version 3-0-3\n                                                       0<\n     by: G.-M. Greuel, G. Pfister, H. Schoenemann        \\   May 2007\nFB Mathematik der Universitaet, D-67653 Kaiserslautern    \\\n> ring r=(0,a),(x),dp;\n> minpoly=a^2+1;\n> factorize(x^18+1);\nstart Factorize2(int_flag=0)\nend Factorize2(0)\n[1]:\n   _[1]=1\n   _[2]=x6+(-a)*x3-1\n   _[3]=x6+(a)*x3-1\n   _[4]=x2+(a)*x-1\n   _[5]=x2+(-a)*x-1\n   _[6]=x+(-a)\n   _[7]=x+(a)\n[2]:\n   1,1,1,1,1,1,1\n> factorize(x^20+1);\nstart Factorize2(int_flag=0)\n==25414== Source and destination overlap in memcpy(0x4214460, 0x4215300, 3752)\n==25414==    at 0x4A1DA2B: memcpy (mc_replace_strmem.c:402)\n==25414==    by 0x66F7A0: rEALLOc (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x669788: omReallocSizeFromSystem (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x6698A0: omReallocLarge (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x5CA5F6: reallocSize (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x4F04E30: __gmpz_realloc (in /tmp/Work-mabshoff/sage-2.8.6/local/lib/libgmp.so.3.4.1)\n==25414==    by 0x4EF76FE: __gmpz_add (in /tmp/Work-mabshoff/sage-2.8.6/local/lib/libgmp.so.3.4.1)\n==25414==    by 0x654485: InternalInteger::addsame(InternalCF*) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x628FD7: CanonicalForm::operator+=(CanonicalForm const&) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x657B95: InternalPoly::mulAddTermList(term*, term*, CanonicalForm const&, int, term*&, bool) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x657F4E: InternalPoly::mulsame(InternalCF*) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n==25414==    by 0x627D44: CanonicalForm::operator*=(CanonicalForm const&) (in /tmp/Work-mabshoff/sage-2.8.6/local/bin/Singular-3-0-3)\n\nerror: no more memory\nSystem 9920k:19584k Appl 8315k/1604k Malloc 8234k/1173k Valloc 512k/431k Pages 57/71 Regions 1:1\n\nhalt 14\n==25414==\n==25414== ERROR SUMMARY: 11 errors from 1 contexts (suppressed: 13 from 2)\n==25414== malloc/free: in use at exit: 0 bytes in 0 blocks.\n==25414== malloc/free: 0 allocs, 0 frees, 0 bytes allocated.\n==25414== For counts of detected errors, rerun with: -v\n==25414== All heap blocks were freed -- no leaks are possible.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/872\n\n",
     "created_at": "2007-10-13T03:57:03Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "singular fails factorization over a numberfield",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/872",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @malb
@@ -96,15 +95,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/872
 
 ---
 
-archive/issue_comments_005371.json:
+archive/issue_comments_005355.json:
 ```json
 {
     "body": "BTW: It is now my belief that the memcpy error discovered by Michael is not the cause of the problem.  I rebuilt Singular in \"omalloc just wraps the system malloc\" mode and that valgrind problem report went away, but the infinite loop (or extreme slowness, at least) remains.",
     "created_at": "2007-10-13T13:33:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5371",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5355",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -114,15 +113,15 @@ BTW: It is now my belief that the memcpy error discovered by Michael is not the 
 
 ---
 
-archive/issue_comments_005372.json:
+archive/issue_comments_005356.json:
 ```json
 {
     "body": "I have tracked down the problem.  It is due to coefficient explosion in libfac/charset/csutil.cc:alg_gcd() (which implements the Euclidean gcd algorithm).  There is an attempt to control the coefficient size in the function myfitting(), but it is ineffective for this problem.\n\nmyfitting() controls coefficient size by dividing by the leading coefficient (an integer), and then clearing denominators.  I have attached a patch that makes myfitting use a different notion of \"leading coefficient\", where the algebraic variable is considered to be part of the coefficient domain.\n\nThis patch does vastly speed up this particular problem, but I would like somebody who knows more about the internals of Singular to look at it before it gets applied (so I am not yet marking it \"with patch\").",
     "created_at": "2007-10-14T16:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5372",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5356",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -136,15 +135,15 @@ This patch does vastly speed up this particular problem, but I would like somebo
 
 ---
 
-archive/issue_comments_005373.json:
+archive/issue_comments_005357.json:
 ```json
 {
     "body": "Attachment [singular-alg_gcd.patch](tarball://root/attachments/some-uuid/ticket872/singular-alg_gcd.patch) by cwitty created at 2007-10-14 16:57:17\n\na potential patch for libfac/charset/csutil.cc",
     "created_at": "2007-10-14T16:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5373",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5357",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -156,15 +155,15 @@ a potential patch for libfac/charset/csutil.cc
 
 ---
 
-archive/issue_comments_005374.json:
+archive/issue_comments_005358.json:
 ```json
 {
     "body": "My patch has been accepted into the upstream Singular (as well as the invalid call to memcpy noted by Michael in the first comment to this ticket).  I'm told that this:\nftp://www.mathematik.uni-kl.de/pub/Math/Singular/src/3-0-3/Singular-3-0-3-2.tar.gz\nhas both changes.",
     "created_at": "2007-10-17T22:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5374",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5358",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -176,15 +175,15 @@ has both changes.
 
 ---
 
-archive/issue_comments_005375.json:
+archive/issue_comments_005359.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-20T18:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5375",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5359",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -194,15 +193,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_005376.json:
+archive/issue_comments_005360.json:
 ```json
 {
     "body": "[11:50am] wstein2: hi: regarding #872.\n[11:50am] wstein2: the new spkg definitely fixes the bug reported there with factoring.\n[11:51am] wstein2: But I tried factoring in a 2-variable ring and it quickly runs out of steam.  E.g., this fails:\n[11:51am] wstein2: > ring r=(0,a),(x,y),dp;\n[11:51am] wstein2: > minpoly = a^2+1;\n[11:51am] wstein2: > factorize(x^12 + y^12);",
     "created_at": "2007-10-20T18:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5376",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5360",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -217,15 +216,15 @@ archive/issue_comments_005376.json:
 
 ---
 
-archive/issue_comments_005377.json:
+archive/issue_comments_005361.json:
 ```json
 {
     "body": "\n```\n[11:50am] wstein2: hi: regarding #872.\n[11:50am] wstein2: the new spkg definitely fixes the bug reported there with factoring.\n[11:51am] wstein2: But I tried factoring in a 2-variable ring and it quickly runs out of steam.  E.g., this fails:\n[11:51am] wstein2: > ring r=(0,a),(x,y),dp;\n[11:51am] wstein2: > minpoly = a^2+1;\n[11:51am] wstein2: > factorize(x^12 + y^12);\n```\n",
     "created_at": "2007-10-20T18:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5377",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5361",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -244,15 +243,15 @@ archive/issue_comments_005377.json:
 
 ---
 
-archive/issue_comments_005378.json:
+archive/issue_comments_005362.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-10-20T18:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5378",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5362",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -262,15 +261,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_005379.json:
+archive/issue_comments_005363.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-10-20T18:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5379",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5363",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -280,15 +279,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_005380.json:
+archive/issue_comments_005364.json:
 ```json
 {
     "body": "Magma is much better:\n\n\n```\nbsd0:~ was$ magma\nMagma V2.13-10    Sat Oct 20 2007 11:53:54 on bsd0     [Seed = 3168908577]\nType ? for help.  Type <Ctrl>-D to quit.\nK<i> := NumberField(x^2 + 1^H>                            \n> \n> R<x> := PolynomialRing(RationalField());\n> K<i> := NumberField(x^2 + 1);\n> S<y,z> := PolynomialRing(K, 2);\n> time Factorization(y^4 - z^4);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>\n]\nTime: 0.030\n> time Factorization(y^12 - z^12);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^2 - y*z + z^2, 1>,\n    <y^2 + y*z + z^2, 1>,\n    <y^2 - i*y*z - z^2, 1>,\n    <y^2 + i*y*z - z^2, 1>\n]\nTime: 0.030\n> time Factorization(y^20 - z^20);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^4 - y^3*z + y^2*z^2 - y*z^3 + z^4, 1>,\n    <y^4 + y^3*z + y^2*z^2 + y*z^3 + z^4, 1>,\n    <y^4 - i*y^3*z - y^2*z^2 + i*y*z^3 + z^4, 1>,\n    <y^4 + i*y^3*z - y^2*z^2 - i*y*z^3 + z^4, 1>\n]\nTime: 0.050\n```\n",
     "created_at": "2007-10-20T18:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5380",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5364",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -343,15 +342,15 @@ Time: 0.050
 
 ---
 
-archive/issue_comments_005381.json:
+archive/issue_comments_005365.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-20T19:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5381",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/872#issuecomment-5365",
+    "user": "https://github.com/williamstein"
 }
 ```
 

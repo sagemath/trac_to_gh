@@ -6,15 +6,14 @@ archive/issues_000371.json:
     "body": "Assignee: @williamstein\n\nMake it so one can do \n   sage -t -gdb foo.py\nand it runs the doctests under gdb.  Here's a hint:\n\n```\nHi,\n\nSeveral files break when doctesting them because of issues with libsingular\non OS X PPC.  Everything works fine on Linux and Intel PPC.   Basically\nseveral files segfault only when being doctested.\n\nI moved the .doctest_ring.py file to r.py, then made it always run\nthe doctests on load, then did \"sage -gdb\" followed by \"import rings.r\",\nand was able to get a traceback:\n\n155 tests in 89 items....\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x00000004\n0x09f04770 in __pyx_tp_dealloc_28multi_polynomial_libsingular_MPolynomial_libsingular\n(o=0xc10f9b8) at\n/Users/was/sage-sage-2.5.1.alpha1/local//include/singular/pInline2.h:412\n412       r->p_Procs->p_Delete(p, r);\nCurrent language:  auto; currently c++\n(gdb)\n\nAny ideas?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/371\n\n",
     "created_at": "2007-05-19T15:20:59Z",
     "labels": [
-        "user interface",
-        "minor",
-        "enhancement"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "implement sage -t -gdb foo.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/371",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -57,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/371
 
 ---
 
-archive/issue_comments_001779.json:
+archive/issue_comments_001773.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-19T06:59:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/371",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/371#issuecomment-1779",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/371#issuecomment-1773",
+    "user": "https://github.com/williamstein"
 }
 ```
 

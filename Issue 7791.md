@@ -6,15 +6,13 @@ archive/issues_007791.json:
     "body": "Assignee: tbd\n\nCC:  jkantor @qed777\n\nNumpy 1.4 has been released.  As a matter of procedure, we probably ought to upgrade our numpy spkg.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7791\n\n",
     "created_at": "2009-12-29T19:19:41Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "upgrade numpy to 1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7791",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: tbd
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7791
 
 ---
 
-archive/issue_comments_067246.json:
+archive/issue_comments_067129.json:
 ```json
 {
     "body": "Plus, we get npycore which should help with Cygwin / FreeBSD / other systems without C99 stuff.",
     "created_at": "2009-12-30T07:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7791",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67246",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67129",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +47,15 @@ Plus, we get npycore which should help with Cygwin / FreeBSD / other systems wit
 
 ---
 
-archive/issue_comments_067247.json:
+archive/issue_comments_067130.json:
 ```json
 {
     "body": "NumPy 1.4. is retracted and unsupported; likely better wait until 2.0 is released in some weeks.\n\n(However, strictly speaking, the only problem with NumPy 1.4 was that of binary compatability with older versions; something Sage doesn't care about.)",
     "created_at": "2010-02-14T09:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7791",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67247",
-    "user": "dagss"
+    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67130",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dagss"
 }
 ```
 
@@ -69,15 +67,15 @@ NumPy 1.4. is retracted and unsupported; likely better wait until 2.0 is release
 
 ---
 
-archive/issue_comments_067248.json:
+archive/issue_comments_067131.json:
 ```json
 {
     "body": "This should be closed as a duplicate of #9808.",
     "created_at": "2010-09-21T18:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7791",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67248",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67131",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -87,15 +85,15 @@ This should be closed as a duplicate of #9808.
 
 ---
 
-archive/issue_comments_067249.json:
+archive/issue_comments_067132.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-09-21T20:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7791",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67249",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7791#issuecomment-67132",
+    "user": "https://github.com/qed777"
 }
 ```
 

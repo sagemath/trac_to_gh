@@ -6,7 +6,7 @@ archive/issues_000985.json:
     "body": "Assignee: @williamstein\n\nequations.py:\n\n```\nFile \"equations.py\", line 12:\n    sage: print solve(qe, x)\nExpected:\n    [\n                                          2\n                                  - sqrt(b  - 4 a c) - b\n                              x == ----------------------\n                                           2 a,\n                                         2\n                                   sqrt(b  - 4 a c) - b\n                               x == --------------------\n                                           2 a\n    ]\nGot:\n    [x == (-sqrt(b^2 - 4*a*c) - b)/(2*a), x == (sqrt(b^2 - 4*a*c) - b)/(2*a)]\n```\n\n\nell_generic.py:\n\n```\nFile \"ell_generic.py\", line 249:\n    sage: print F.solve(y)\nExpected:\n    [\n                          3      2\n                - sqrt(4 x  - 4 x  - 40 x - 79) - 1\n            y == -----------------------------------\n                                 2,\n                         3      2\n                 sqrt(4 x  - 4 x  - 40 x - 79) - 1\n             y == ---------------------------------\n                                 2\n    ]\nGot:\n    [y == (-sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2, y == (sqrt(4*x^3 - 4*x^2 - 40*x - 79) - 1)/2]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/985\n\n",
     "created_at": "2007-10-25T00:55:12Z",
     "labels": [
-        "interfaces",
+        "component: interfaces",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000985.json:
     "title": "sage-2.8.9.rc1: maxima printing changed in equations.py and ell_generic.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/985",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -70,15 +70,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/985
 
 ---
 
-archive/issue_comments_006022.json:
+archive/issue_comments_006002.json:
 ```json
 {
     "body": "Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch) by @mwhansen created at 2007-10-25 02:07:58",
     "created_at": "2007-10-25T02:07:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6022",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6002",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -88,15 +88,15 @@ Attachment [985.patch](tarball://root/attachments/some-uuid/ticket985/985.patch)
 
 ---
 
-archive/issue_comments_006023.json:
+archive/issue_comments_006003.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-10-25T02:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6023",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6003",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -106,15 +106,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_006024.json:
+archive/issue_comments_006004.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-10-25T02:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6024",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6004",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -124,15 +124,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_006025.json:
+archive/issue_comments_006005.json:
 ```json
 {
     "body": "Attachment [985.2.patch](tarball://root/attachments/some-uuid/ticket985/985.2.patch) by @mwhansen created at 2007-10-25 02:08:44\n\nUse the second patch.",
     "created_at": "2007-10-25T02:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6025",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6005",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -144,15 +144,15 @@ Use the second patch.
 
 ---
 
-archive/issue_comments_006026.json:
+archive/issue_comments_006006.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-25T06:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/985",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6026",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/985#issuecomment-6006",
+    "user": "https://github.com/williamstein"
 }
 ```
 

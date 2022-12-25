@@ -6,15 +6,14 @@ archive/issues_002342.json:
     "body": "Assignee: @rlmill\n\nThis is a mistake from one of mabshoff's merges...\n\nIssue created by migration from https://trac.sagemath.org/ticket/2342\n\n",
     "created_at": "2008-02-28T05:22:07Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs easy review] digraphs show axes...",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2342",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2342
 
 ---
 
-archive/issue_comments_015682.json:
+archive/issue_comments_015647.json:
 ```json
 {
     "body": "Attachment [graph-axes.patch](tarball://root/attachments/some-uuid/ticket2342/graph-axes.patch) by @rlmill created at 2008-02-28 05:22:19",
     "created_at": "2008-02-28T05:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2342",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15682",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15647",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [graph-axes.patch](tarball://root/attachments/some-uuid/ticket2342/gr
 
 ---
 
-archive/issue_comments_015683.json:
+archive/issue_comments_015648.json:
 ```json
 {
     "body": "applying the patch appears to fix the problem of axes; looks good to me.",
     "created_at": "2008-02-28T05:30:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2342",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15683",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15648",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -65,15 +64,15 @@ applying the patch appears to fix the problem of axes; looks good to me.
 
 ---
 
-archive/issue_comments_015684.json:
+archive/issue_comments_015649.json:
 ```json
 {
     "body": "Attachment [2342-doc.patch](tarball://root/attachments/some-uuid/ticket2342/2342-doc.patch) by mabshoff created at 2008-02-28 06:26:38\n\nMerged both patches in Sage 2.10.3.rc0",
     "created_at": "2008-02-28T06:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2342",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15684",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15649",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Merged both patches in Sage 2.10.3.rc0
 
 ---
 
-archive/issue_comments_015685.json:
+archive/issue_comments_015650.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-28T06:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2342",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15685",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2342#issuecomment-15650",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

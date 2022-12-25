@@ -6,15 +6,14 @@ archive/issues_001354.json:
     "body": "Assignee: mabshoff\n\nWe are currently only compiling Solaris in 32 bit mode. Then a 64 int has to be a long long. Fix that so that all the modp doctests pass.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1354\n\n",
     "created_at": "2007-12-01T21:22:23Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] Solaris modp 64 bit fix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1354",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1354
 
 ---
 
-archive/issue_comments_008668.json:
+archive/issue_comments_008644.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-01T21:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1354#issuecomment-8668",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1354#issuecomment-8644",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +50,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_008669.json:
+archive/issue_comments_008645.json:
 ```json
 {
     "body": "Attachment [Sage-2.8.15.alpha1-fix-int64-in-Solaris-32bit-mode.patch](tarball://root/attachments/some-uuid/ticket1354/Sage-2.8.15.alpha1-fix-int64-in-Solaris-32bit-mode.patch) by mabshoff created at 2007-12-01 21:25:49\n\nMerged in 2.8.15.alpha2.",
     "created_at": "2007-12-01T21:25:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1354#issuecomment-8669",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1354#issuecomment-8645",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

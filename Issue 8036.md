@@ -6,7 +6,7 @@ archive/issues_008036.json:
     "body": "Assignee: mvngu\n\nKeywords: non-ASCII characters\n\nEven after applying #8021, the PDF version of the reference manual for Sage 4.3.1 failed to build. This is due to non-ASCII characters in the docstring of the method `prove_BSD()` of the class `EllipticCurve_rational_field` in\n\n```\nsage/schemes/elliptic_curves/ell_rational_field.py\n```\n\nHere's a snippet of the error message:\n\n```\n! Package inputenc Error: Unicode char \\u8:\u01ce not set up for use with LaTeX.\n\nSee the inputenc package documentation for explanation.\nType  H <return>  for immediate help.\n ...                                              \n                                                  \nl.364560 C. Tarni\u0163\u01ce\n                     . Computational verification of the Birch and\n?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8036\n\n",
     "created_at": "2010-01-22T02:31:21Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008036.json:
     "title": "Sage 4.3.1 reference manual: PDF version failed to build due to non-ASCII characters in docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8036",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: mvngu
@@ -50,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8036
 
 ---
 
-archive/issue_comments_070185.json:
+archive/issue_comments_070064.json:
 ```json
 {
     "body": "based on Sage 4.3.1",
     "created_at": "2010-01-22T02:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70185",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70064",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -68,15 +68,15 @@ based on Sage 4.3.1
 
 ---
 
-archive/issue_comments_070186.json:
+archive/issue_comments_070065.json:
 ```json
 {
     "body": "Attachment [trac_8036-non-ascii.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-non-ascii.patch) by mvngu created at 2010-01-22 02:33:32",
     "created_at": "2010-01-22T02:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70186",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70065",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -86,15 +86,15 @@ Attachment [trac_8036-non-ascii.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_070187.json:
+archive/issue_comments_070066.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-22T02:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70187",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70066",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -104,15 +104,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_070188.json:
+archive/issue_comments_070067.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-22T03:08:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70188",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70067",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -122,15 +122,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_070189.json:
+archive/issue_comments_070068.json:
 ```json
 {
     "body": "`LaTeX` is perfectly fine with utf8 if one uses the inputenc package:\n\n```\n\\usepackage[utf8x]{inputenc}\n```\n\nIOW, it's the latex preamble which needs fixing.",
     "created_at": "2010-01-22T03:08:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70189",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70068",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -146,15 +146,15 @@ IOW, it's the latex preamble which needs fixing.
 
 ---
 
-archive/issue_comments_070190.json:
+archive/issue_comments_070069.json:
 ```json
 {
     "body": "Attachment [utf8.tex](tarball://root/attachments/some-uuid/ticket8036/utf8.tex) by @tornaria created at 2010-01-22 03:09:47\n\nLatex file which shows usage of utf8",
     "created_at": "2010-01-22T03:09:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70190",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70069",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -166,15 +166,15 @@ Latex file which shows usage of utf8
 
 ---
 
-archive/issue_comments_070191.json:
+archive/issue_comments_070070.json:
 ```json
 {
     "body": "Sphinx uses `\\usepackage[utf8]{inputenc`}, so if we want to change this to [utf8x], we need to patch Sphinx.  I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.  Another option is to add characters one by one, as needed, using\n\n```\n\\DeclareUnicodeCharacter{blah}{blah}\n```\n\n(See the documentation for inputenc.)  If we knew the details, we could add lines like this to `SAGE_ROOT/devel/sage/doc/common/conf.py` -- add to the `latex_preamble`.  I don't know the details.\n\nA third option is to get rid of all accents, as mvngu's patch does.\n\nA fourth option is to use the attached patch `trac_8036-tex-replacements.patch`, which does some preprocessing, changing the offending character to something latex can handle.\n\nI'll mark this as \"needs review\", in case option 4 is appealing.",
     "created_at": "2010-01-22T05:44:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70191",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70070",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -196,15 +196,15 @@ I'll mark this as "needs review", in case option 4 is appealing.
 
 ---
 
-archive/issue_comments_070192.json:
+archive/issue_comments_070071.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-22T05:44:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70192",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70071",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -214,15 +214,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_070193.json:
+archive/issue_comments_070072.json:
 ```json
 {
     "body": "Attachment [trac_8036-tex-replacements.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-tex-replacements.patch) by @jhpalmieri created at 2010-01-22 05:45:00\n\napply only this patch",
     "created_at": "2010-01-22T05:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70193",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70072",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -234,15 +234,15 @@ apply only this patch
 
 ---
 
-archive/issue_comments_070194.json:
+archive/issue_comments_070073.json:
 ```json
 {
     "body": "Note: When I preview my attachment, the \"offending character\" looks like a capital \"C\" with a cedilla, but don't be deceived: the actual character (when I download the patch and look at it in emacs, for example), is an \"a\" with a \"vee\" accent on top -- the last character in \"Tarnita\".",
     "created_at": "2010-01-22T05:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70194",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70073",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -252,15 +252,15 @@ Note: When I preview my attachment, the "offending character" looks like a capit
 
 ---
 
-archive/issue_comments_070195.json:
+archive/issue_comments_070074.json:
 ```json
 {
     "body": "Replying to [comment:3 jhpalmieri]:\n> I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.\n\nIn case you're interested in this, the documentation says\n\n   For other languages that do not fit well into LaTeX font selection scheme, ... the outlined inputenc approach will not work. If that is the case one can try using Dominique Unruh\u2019s option utf8x for inputenc which has a somewhat different approach and encodes many more UTF-8 characters than the standard utf8 option. However, we recommend to do so only if you really need such alphabets as there are problems with this extended approach which were precisely the reason that we decided to limit the support to what is properly supported within the boundaries of LaTeX\u2019s font selection.\n\nI don't know what the \"problems with this extended approach\" are.",
     "created_at": "2010-01-22T05:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70195",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70074",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -277,15 +277,15 @@ I don't know what the "problems with this extended approach" are.
 
 ---
 
-archive/issue_comments_070196.json:
+archive/issue_comments_070075.json:
 ```json
 {
     "body": "Replying to [comment:5 jhpalmieri]:\n> Replying to [comment:3 jhpalmieri]:\n> > I have no experience with [utf8] or [utf8x], but the documentation for inputenc frowns on utf8x, to some extent.\n> \n> In case you're interested in this, the documentation says\n> \n>    For other languages that do not fit well into LaTeX font selection scheme, ... the outlined inputenc approach will not work. If that is the case one can try using Dominique Unruh\u2019s option utf8x for inputenc which has a somewhat different approach and encodes many more UTF-8 characters than the standard utf8 option. However, we recommend to do so only if you really need such alphabets as there are problems with this extended approach which were precisely the reason that we decided to limit the support to what is properly supported within the boundaries of LaTeX\u2019s font selection.\n> \n> I don't know what the \"problems with this extended approach\" are.\n\nI use [utf8x] on a daily basis, without issues. As you quoted above, it is well known that [utf8] supports a reduced set of characters. Not that utf8x supports arbitrary unicode characters, but I think a proper superset of those supported by utf8.\n\nThe option [utf8x] is part of latex package \"ucs\".\n\nYour proposal (according to the posted patch) would be to special-case any characters not supported by [utf8] option? The patch only handles that particular letter.",
     "created_at": "2010-01-22T06:26:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70196",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70075",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -309,15 +309,15 @@ Your proposal (according to the posted patch) would be to special-case any chara
 
 ---
 
-archive/issue_comments_070197.json:
+archive/issue_comments_070076.json:
 ```json
 {
     "body": "Replying to [comment:6 tornaria]:\n\n> Your proposal (according to the posted patch) would be to special-case any characters not supported by [utf8] option? The patch only handles that particular letter.\n\nIt's either that or patch Sphinx -- not hard, but I'm reluctant to patch external packages if there are other alternatives.  I don't know how often we are likely to come across characters not supported by [utf8], so I don't know which option is better.",
     "created_at": "2010-01-22T15:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70197",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70076",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -331,15 +331,15 @@ It's either that or patch Sphinx -- not hard, but I'm reluctant to patch externa
 
 ---
 
-archive/issue_comments_070198.json:
+archive/issue_comments_070077.json:
 ```json
 {
     "body": "There are three non-ascii characters in this file, which prevent me from building the HTML version of the documentation.  The patches here already seem to address the tex processing that builds the PDF.\n\nThe patch simply identifies the three characters and replaces them with straight ASCII equivalents.  It might be useful for folks trying to build the docs to test their own fixes/changes elsewhere.  I'm not trying to weigh-in on the long-run solution to this problem.",
     "created_at": "2010-01-23T22:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70198",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70077",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -351,15 +351,15 @@ The patch simply identifies the three characters and replaces them with straight
 
 ---
 
-archive/issue_comments_070199.json:
+archive/issue_comments_070078.json:
 ```json
 {
     "body": "Attachment [trac_8036-three-non-ascii.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-three-non-ascii.patch) by @qed777 created at 2010-01-31 07:48:55\n\n#7999 should take care of the HTML reference manual.",
     "created_at": "2010-01-31T07:48:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70199",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70078",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -371,15 +371,15 @@ Attachment [trac_8036-three-non-ascii.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_070200.json:
+archive/issue_comments_070079.json:
 ```json
 {
     "body": "For now, what if we [set](http://sphinx.pocoo.org/config.html#confval-latex_elements):\n\n\n```python\nlatex_elements['inputenc'] = '\\\\usepackage[utf8x]{inputenc}'\n```\n\n\nin `doc/common/conf.py`?",
     "created_at": "2010-01-31T08:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70200",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70079",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -397,15 +397,15 @@ in `doc/common/conf.py`?
 
 ---
 
-archive/issue_comments_070201.json:
+archive/issue_comments_070080.json:
 ```json
 {
     "body": "Attachment [trac_8036-docbuild_utf8x.patch](tarball://root/attachments/some-uuid/ticket8036/trac_8036-docbuild_utf8x.patch) by @qed777 created at 2010-01-31 08:48:30\n\nSet utf8x in Sphinx option.  Solo patch.",
     "created_at": "2010-01-31T08:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70201",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70080",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -417,15 +417,15 @@ Set utf8x in Sphinx option.  Solo patch.
 
 ---
 
-archive/issue_comments_070202.json:
+archive/issue_comments_070081.json:
 ```json
 {
     "body": "Replying to [comment:10 mpatel]:\n> For now, what if we [set](http://sphinx.pocoo.org/config.html#confval-latex_elements):\n\nI've attached a [attachment:trac_8036-docbuild_utf8x.patch patch] that does this.  It appears to solve the problem in this ticket's description.\n\nBut it fails to handle the unicode tests we've added to SageNB at #7249.",
     "created_at": "2010-01-31T09:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70202",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70081",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -440,15 +440,15 @@ But it fails to handle the unicode tests we've added to SageNB at #7249.
 
 ---
 
-archive/issue_comments_070203.json:
+archive/issue_comments_070082.json:
 ```json
 {
     "body": "I like `trac_8036-docbuild_utf8x.patch`.  I didn't know about the `latex_elements` customization; very nice.\n\nTo the release manager: apply only `trac_8036-docbuild_utf8x.patch`.",
     "created_at": "2010-01-31T16:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70203",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70082",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -460,15 +460,15 @@ To the release manager: apply only `trac_8036-docbuild_utf8x.patch`.
 
 ---
 
-archive/issue_comments_070204.json:
+archive/issue_comments_070083.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-31T16:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70204",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70083",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -478,15 +478,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_070205.json:
+archive/issue_comments_070084.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-01T23:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70205",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70084",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -496,15 +496,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_070206.json:
+archive/issue_comments_070085.json:
 ```json
 {
     "body": "Merged [trac_8036-docbuild_utf8x.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8036/trac_8036-docbuild_utf8x.patch).",
     "created_at": "2010-02-01T23:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70206",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70085",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -514,15 +514,15 @@ Merged [trac_8036-docbuild_utf8x.patch](http://trac.sagemath.org/sage_trac/attac
 
 ---
 
-archive/issue_comments_070207.json:
+archive/issue_comments_070086.json:
 ```json
 {
     "body": "The attachment [trac_8036-docbuild_utf8x.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8036/trac_8036-docbuild_utf8x.patch) breaks the build of the French tutorial. See #8146 for a follow-up to this issue.",
     "created_at": "2010-02-02T02:04:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8036",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70207",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8036#issuecomment-70086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

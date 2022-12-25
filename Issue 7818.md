@@ -6,15 +6,14 @@ archive/issues_007818.json:
     "body": "Assignee: drkirkby\n\nCC:  @williamstein @jaapspies\n\nThis is an update to the sage-env file. It should allow a much improved build process, simplifying the code in spkg install files, as much of it will be taken care of. The code will also be more portable. \n\n* Little or no need for any SAGE64 rubbish in any spkg-install files. The appropriate flag to build 64-bit code is added if SAGE64 is set to use. \n* No need to add -Wall or -g, as these are added by default. \n* GNU specific compiler options can be replaced by variables with similar names to the GNU ones, making substitution a relatively easy task. \n* Will enable code to be much more portable. \n\nThe changes mainly affect the 3 variables for compiler flags  - CFLAGS, CXXFLAGS and FCFLAGS.  \n\nThe user may set CFLAGS, CXXFLAGS and FCFLAGS, but the following will be appended. \n\n == General flags ==\n* The -g  option is added to enable debugging unless SAGE_DEBUG is set to \"no\". \n* -Wall is added for gcc, g++ and gfortran.\n\n == 64-bit Flags ==\nIf SAGE64 is \"yes\"\n* -m64 is added for GCC\n* -m64 is added for Sun Studio\n* -q64 is added for IBM's compiler on AIX\n* +DA2.OW is added on HP-UX. (This will not work on Itanium processors running on HP-UX. I'll update when I have more information). \n \nA variable CFLAG64 is set to the correct option for building 64-bit binaries with the C compiler. So if -m64 is replaced by $CFLAG64, the code will work on any C compiler. \n\n(Some compilers may require a different option for C and C++ files. The names CXXFLAG64 and FCFLAG64 are reserved for this, but its not suggested they are used now) \n\n == C++ library flags ==\nDue to changes in the C++ standard, it is impossible for compiler vendors to distribute a C++ runtime library which is both compatible with the old standard and the new one. Both HP and Sun use the older library by default, and need a switch added to enable the newer libraries, which more closely follow the latest C++ standard. See:\n\nhttp://developers.sun.com/solaris/articles/cmp_stlport_libCstd.html\n\nhttp://docs.hp.com/en/14487/faq.htm\n\n\nTherefore\n* If the compiler is Sun Studio, library=stlport4 is added to CXXFLAGS. \n* If the Compiler is HP's on HP-UX, the option -AA is added to CXXFLAGS. \n\n == Shared Library Flags ==\nFive new variables are set in sage-env. These are for building shared libraries and take on names very similar to the GNU names for the flags. \n\n|             |                  |                         |\n|-------------|------------------|-------------------------|\n|**Flag name**|**Value with GCC**|**Value with Sun Studio**|\n|FPIC_FLAG|-fPIC|-xcode=pic32|\n|SHARED_FLAG|-shared|-G|\n|SONAME_FLAG|-soname|-h|\nA reviewer may notice two further variable names used. These options can be linker dependent and will be finalized once some code to detect the linker is in place.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7818\n\n",
     "created_at": "2010-01-02T11:35:05Z",
     "labels": [
-        "porting",
-        "major",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Update sage-env",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7818",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -78,15 +77,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7818
 
 ---
 
-archive/issue_comments_067637.json:
+archive/issue_comments_067520.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-02T11:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67637",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67520",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -96,15 +95,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_067638.json:
+archive/issue_comments_067521.json:
 ```json
 {
     "body": "Just to make the point, -m64 in sage should **not** need to be replaced by 'CLFAG64' in general. In 99% of cases, simply removing all the -m64's that litter Sage will do the trick, as the right option will be added automatically. \n\nIn some cases, it may be necessary to keep such a flag on linking. In those rare cases (ECL is the only example I can think of), then use CFLAG64 instead of -m64. But this will allow 99% of the -m64's to be removed and forgotten about, as they will be added only where necessary.",
     "created_at": "2010-01-02T23:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67638",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67521",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -116,15 +115,15 @@ In some cases, it may be necessary to keep such a flag on linking. In those rare
 
 ---
 
-archive/issue_comments_067639.json:
+archive/issue_comments_067522.json:
 ```json
 {
     "body": "Oopsn, I mean in rare cases, -m64 might need to be replaced by $CFLAG64.",
     "created_at": "2010-01-02T23:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67639",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67522",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -134,15 +133,15 @@ Oopsn, I mean in rare cases, -m64 might need to be replaced by $CFLAG64.
 
 ---
 
-archive/issue_comments_067640.json:
+archive/issue_comments_067523.json:
 ```json
 {
     "body": "Should line 87 be changed from\n\n```\necho \"NAME_OF_ENVIROMENT_VARIABLE value_of_environment_variable\"\n```\n\nto\n\n```\necho \"NAME_OF_ENVIROMENT_VARIABLE=value_of_environment_variable\"\n```\n\n(adding an equals sign)?\n\nIn line 380:\n\n```\n# often. I think ECL might need it, to just the option, not\n```\n\nchange \"to\" to \"so\", I think.\n\nAs far as a careful review goes, I'm not enough of an expert in the Sage build process to do that.  An expert should take a good look at this.",
     "created_at": "2010-01-05T22:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67640",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67523",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -174,15 +173,15 @@ As far as a careful review goes, I'm not enough of an expert in the Sage build p
 
 ---
 
-archive/issue_comments_067641.json:
+archive/issue_comments_067524.json:
 ```json
 {
     "body": "Thank you for the feedback. I'll make the couple o changes you suggest. I take your point about needing an expert of the build process. William and I wrote this many years ago, but its changed a lot since then. \n\nIf you have some spare time, (and I know building Sage can take some time), could you try a build with the sage-env script? First unpack the sources, then exchange spkg/base/sage-env for this one before trying a build. The build should proceed as normal. You might notice an extra -Wall or -g flag here or there, but there should be no huge changes. \n\nWhat it will give is a bunch of variables that can at a later date be used inside files like spkg-install. \n\nDave",
     "created_at": "2010-01-05T23:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67641",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67524",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -198,15 +197,15 @@ Dave
 
 ---
 
-archive/issue_comments_067642.json:
+archive/issue_comments_067525.json:
 ```json
 {
     "body": "Replying to [comment:6 drkirkby]:\n> Thank you for the feedback. I'll make the couple o changes you suggest. I take your point about needing an expert of the build process. William and I wrote this many years ago, but its changed a lot since then. \n\nOne more question: should this also be included in sage-scripts?  That is, should the file `SAGE_ROOT/spkg/base/sage-env` be the same as `SAGE_ROOT/local/bin/sage-env`?  If so, please produce a patch for the scripts repository.\n \n> If you have some spare time, (and I know building Sage can take some time), could you try a build with the sage-env script? First unpack the sources, then exchange spkg/base/sage-env for this one before trying a build. The build should proceed as normal. You might notice an extra -Wall or -g flag here or there, but there should be no huge changes. \n\nSure, I'll start that right now.",
     "created_at": "2010-01-05T23:26:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67642",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67525",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -223,15 +222,15 @@ Sure, I'll start that right now.
 
 ---
 
-archive/issue_comments_067643.json:
+archive/issue_comments_067526.json:
 ```json
 {
     "body": "It built just fine on my OS X 10.6 machine.  I'm trying on sage.math now (or boxen.math or whatever it is these days).\n\nIn case you missed my earlier question:\n\n> should this also be included in sage-scripts? That is, should the file SAGE_ROOT/spkg/base/sage-env be the same as SAGE_ROOT/local/bin/sage-env? If so, please produce a patch for the scripts repository.",
     "created_at": "2010-01-06T18:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67643",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67526",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -245,15 +244,15 @@ In case you missed my earlier question:
 
 ---
 
-archive/issue_comments_067644.json:
+archive/issue_comments_067527.json:
 ```json
 {
     "body": "Note, there are still some occurrences of ;-a' and '-o' here. I tried not too change too much of the original file, to make the review somewhat easier. So some things I don't feel are perfect,   I have left unchanged. They almost certainly make no difference whatsoever here, but its a good habbit to write scripts in such a way they work reliably, irrespective of what shell someone happens to use. \n\nDave",
     "created_at": "2010-01-06T19:14:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67644",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67527",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -265,15 +264,15 @@ Dave
 
 ---
 
-archive/issue_comments_067645.json:
+archive/issue_comments_067528.json:
 ```json
 {
     "body": "The patch applies cleanly to the scripts repository and produces the correct file (that is, SAGE_LOCAL/bin/sage-env and spkg/base/sage-env are the same).  For some reason, the one in local/bin wasn't executable, so I had to fix that manually.\n\nBuilding with the new sage-env works just fine on sage.math, by the way.",
     "created_at": "2010-01-06T20:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67645",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67528",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -285,15 +284,15 @@ Building with the new sage-env works just fine on sage.math, by the way.
 
 ---
 
-archive/issue_comments_067646.json:
+archive/issue_comments_067529.json:
 ```json
 {
     "body": "Replying to [comment:12 jhpalmieri]:\n> The patch applies cleanly to the scripts repository and produces the correct file (that is, SAGE_LOCAL/bin/sage-env and spkg/base/sage-env are the same).  For some reason, the one in local/bin wasn't executable, so I had to fix that manually.\n> \n> Building with the new sage-env works just fine on sage.math, by the way.\n\nIt's good to hear it builds fine. I don't envisage anything that it does should screw up the build. It will mean in some packages there will be two -m64's on the command line, but they are harmless. Then hopefully we can remove all the SAGE64 stuff from the files. \n\nI just re-checked the permissions on the file when I created the ticket and they were executable. I don't know if there was anything I should have done which I did not. \n\n```\ndrkirkby@hawk:~/sage-4.3.1.alpha1/spkg/standard/sage_scripts-4.3.1.alpha1$ ls -l sage-env\n-rwxr-xr-x   1 drkirkby staff      20018 Jan  6 18:53 sage-env\n```\n\n\nDave",
     "created_at": "2010-01-06T22:20:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67646",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67529",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -318,15 +317,15 @@ Dave
 
 ---
 
-archive/issue_comments_067647.json:
+archive/issue_comments_067530.json:
 ```json
 {
     "body": "For historical reasons I suggest you keep the 2005 date in the file!\n\nAnd maybe stupid where can I find the file testcc.sh?\n\n\n\n```\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 253: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 267: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 289: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 306: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 319: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n/export/home/jaap/Downloads/sage-4.3/local/bin/sage-env: line 332: /export/home/jaap/Downloads/sage-4.3/local/bin/testcc.sh: No such file or directory\n\n\n\n```\n\n\n\nJaap",
     "created_at": "2010-01-07T14:26:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67647",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67530",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -361,15 +360,15 @@ Jaap
 
 ---
 
-archive/issue_comments_067648.json:
+archive/issue_comments_067531.json:
 ```json
 {
     "body": "Ok, found the testcc.sh and testcxx.sh\n\nThis new sage-env does a great job. On my Open Solaris in VirtualBox I could add \nto the spkg/installed after a make -k\n\n\n\n```\njaap@opensolaris:~/Downloads/sage-4.3$ ls -lt spkg/installed/\ntotal 61\n-rw-r--r-- 1 jaap staff 219 2010-01-07 15:59 pil-1.1.6.p2\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:58 flintqs-20070817.p4\n-rw-r--r-- 1 jaap staff 218 2010-01-07 15:57 cddlib-094f\n-rw-r--r-- 1 jaap staff 229 2010-01-07 15:56 genus2reduction-0.3.p5\n-rw-r--r-- 1 jaap staff 222 2010-01-07 15:55 boehm_gc-7.1.p2\n-rw-r--r-- 1 jaap staff 227 2010-01-07 15:55 pyprocessing-0.52.p0\n-rw-r--r-- 1 jaap staff 225 2010-01-07 15:54 ratpoints-2.1.2.p3\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:54 libm4ri-20091120.p0\n-rw-r--r-- 1 jaap staff 226 2010-01-07 15:54 rubiks-20070912.p10\n-rw-r--r-- 1 jaap staff 225 2010-01-07 15:53 libfplll-3.0.12.p0\n-rw-r--r-- 1 jaap staff 221 2010-01-07 15:51 zodb3-3.7.0.p2\n-rw-r--r-- 1 jaap staff 224 2010-01-07 15:50 pycrypto-2.0.1.p4\n-rw-r--r-- 1 jaap staff 220 2010-01-07 15:50 mpfr-2.4.1.p0\n-rw-r--r-- 1 jaap staff 223 2010-01-07 15:49 givaro-3.2.13rc2\n-rw-r--r-- 1 jaap staff 220 2010-01-07 15:48 iml-1.0.1.p11\n-rw-r--r-- 1 jaap staff   0 2010-01-07 15:46 eclib-20080310.p7\n-rw-r--r-- 1 jaap staff 223 2010-01-04 17:38 twisted-8.2.0.p2\n-rw-r--r-- 1 jaap staff 224 2010-01-03 21:51 eclib-20080310.p8\n\n```\n\n\nI would give it a positive review, but will wait for the other testers.\n\nJaap",
     "created_at": "2010-01-07T15:27:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67648",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67531",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -413,15 +412,15 @@ Jaap
 
 ---
 
-archive/issue_comments_067649.json:
+archive/issue_comments_067532.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-07T20:05:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67649",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67532",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -431,15 +430,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_067650.json:
+archive/issue_comments_067533.json:
 ```json
 {
     "body": "Ok, positive review!\n\nJaap",
     "created_at": "2010-01-07T20:05:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67650",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67533",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -451,15 +450,15 @@ Jaap
 
 ---
 
-archive/issue_comments_067651.json:
+archive/issue_comments_067534.json:
 ```json
 {
     "body": "Is $RM defined anywhere now?  Or $LN?  Or $MKDIR?  They still seem to be used by the gap spkg, so I can't figure out why that package installs correctly with this version of sage-env.",
     "created_at": "2010-01-08T16:12:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67651",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67534",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -469,15 +468,15 @@ Is $RM defined anywhere now?  Or $LN?  Or $MKDIR?  They still seem to be used by
 
 ---
 
-archive/issue_comments_067652.json:
+archive/issue_comments_067535.json:
 ```json
 {
     "body": "Replying to [comment:18 jhpalmieri]:\n> Is $RM defined anywhere now?  Or $LN?  Or $MKDIR?  They still seem to be used by the gap spkg, so I can't figure out why that package installs correctly with this version of sage-env.\nI'm not sure if Or $RM, $LN or $MKDIR are defined elsewhere, or if the bits in gap don't work, but it is not apparent they are not working. But there does seem to be no point in having variables for such basic commands, as agreed here. \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/bd7ae07a1157bead/970aa0dc8fa56ab7?lnk=raot\n\nI left 'cp', as potentially the GNU version of CP has some extra options over some other implementations of CP which might make it useful in some cases, though I'd much prefer any GNUisms were avoided. But there really is no point in having variable for 'ln' or 'mkdir' \n\nThey are all part of POSIX, the 2008 edition of which can be found here\n\nhttp://www.opengroup.org/onlinepubs/9699919799/\n\nI'm not a great fan of GNU standards and I don't agree with some of it here, but even they agree one can rely on rm, ln and mkdir. \n\nhttp://www.gnu.org/prep/standards/standards.html#Utilities-in-Makefiles\n\nI've created a ticket for their removal from 'gap' - see #7873 . I'll fix that very shortly. \n\nDave",
     "created_at": "2010-01-08T18:18:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67652",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67535",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -505,15 +504,15 @@ Dave
 
 ---
 
-archive/issue_comments_067653.json:
+archive/issue_comments_067536.json:
 ```json
 {
     "body": "I fixed any potential gap issue. If someone could review #7873 it would be appreciated. \n\nDave",
     "created_at": "2010-01-08T20:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67653",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67536",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -525,15 +524,15 @@ Dave
 
 ---
 
-archive/issue_comments_067654.json:
+archive/issue_comments_067537.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-01-12T19:00:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67654",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67537",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -543,15 +542,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_067655.json:
+archive/issue_comments_067538.json:
 ```json
 {
     "body": "I'm sticking this to needs work, why I put back definitions such as \n\n\n```\nif [ \"$LN\" = \"\" ]; then\n    LN=\"ln\"  && export LN\nfi\n \nif [ \"$MKDIR\" = \"\" ]; then\n    MKDIR=\"mkdir\"  && export MKDIR\nfi\n```\n\n\njust in case they unsetting these causes any problems in any package. I believe all packages are covered by patches, but if one is not, then this could cause problems. \n\nDave",
     "created_at": "2010-01-12T19:00:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67655",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67538",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -577,15 +576,15 @@ Dave
 
 ---
 
-archive/issue_comments_067656.json:
+archive/issue_comments_067539.json:
 ```json
 {
     "body": "Attachment [sage-env](tarball://root/attachments/some-uuid/ticket7818/sage-env) by drkirkby created at 2010-01-12 19:13:39\n\nUpdated sage-env, much improved, but added back LN, MKIDR etc, to avoid risk of breakage",
     "created_at": "2010-01-12T19:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67656",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67539",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -597,15 +596,15 @@ Updated sage-env, much improved, but added back LN, MKIDR etc, to avoid risk of 
 
 ---
 
-archive/issue_comments_067657.json:
+archive/issue_comments_067540.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-12T19:14:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67657",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67540",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -615,15 +614,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_067658.json:
+archive/issue_comments_067541.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-13T11:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67658",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67541",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -633,15 +632,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_067659.json:
+archive/issue_comments_067542.json:
 ```json
 {
     "body": "This changes make sense.\n\n\n\n```\n[jaap@vrede sage-4.3.1.alpha1]$ diff local/bin/sage-env ../sage-env\n452a453,456\n> if [ \"$MV\" = \"\" ]; then\n>     MV=\"mv\"  && export MV\n> fi\n> \n456a461,464\n> if [ \"$RM\" = \"\" ]; then\n>     RM=\"rm\"  && export RM\n> fi\n>  \n460a469,484\n> if [ \"$LN\" = \"\" ]; then\n>     LN=\"ln\"  && export LN\n> fi\n>  \n> if [ \"$MKDIR\" = \"\" ]; then\n>     MKDIR=\"mkdir\"  && export MKDIR\n> fi\n>  \n> if [ \"$CHMOD\" = \"\" ]; then\n>     CHMOD=\"chmod\"  && export CHMOD\n> fi\n>  \n> if [ \"$TOUCH\" = \"\" ]; then\n>     TOUCH=\"touch\"  && export TOUCH\n> fi\n> \n[jaap@vrede sage-4.3.1.alpha1]$ \n\n```\n\n\nThis will not break any code. I'll test this with reinstalling the affected spkgs mercurial, singular, ntl, gap and pari. \n\nOk so far. Positive review.",
     "created_at": "2010-01-13T11:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67659",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67542",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -691,15 +690,15 @@ Ok so far. Positive review.
 
 ---
 
-archive/issue_comments_067660.json:
+archive/issue_comments_067543.json:
 ```json
 {
     "body": "Attachment [sage-env.patch](tarball://root/attachments/some-uuid/ticket7818/sage-env.patch) by drkirkby created at 2010-01-13 23:33:16\n\nPatch file which should hopefully commit, as Robert  Miller said the previous one had a problem.",
     "created_at": "2010-01-13T23:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67660",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67543",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -711,15 +710,15 @@ Patch file which should hopefully commit, as Robert  Miller said the previous on
 
 ---
 
-archive/issue_comments_067661.json:
+archive/issue_comments_067544.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-14T01:53:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67661",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67544",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -729,15 +728,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_067662.json:
+archive/issue_comments_067545.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2010-01-15T22:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67662",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67545",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -747,15 +746,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_067663.json:
+archive/issue_comments_067546.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2010-01-15T22:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67663",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67546",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -765,15 +764,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_067664.json:
+archive/issue_comments_067547.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-01-15T22:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67664",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67547",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -783,15 +782,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_067665.json:
+archive/issue_comments_067548.json:
 ```json
 {
     "body": "This patch inadvertently removes the `-fno-strict-aliasing` option from the gcc options that Cython uses to compile the autogenerated C files. This makes all sorts of stuff break all over the place. Also, since that's not obvious from the patch, who knows what else goes wrong? (thanks to Robert Bradshaw for helping me figure this out)",
     "created_at": "2010-01-15T22:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67665",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67548",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -801,15 +800,15 @@ This patch inadvertently removes the `-fno-strict-aliasing` option from the gcc 
 
 ---
 
-archive/issue_comments_067666.json:
+archive/issue_comments_067549.json:
 ```json
 {
     "body": "I'll take my hands off. This is much more trickier than I thought!\n\nJaap",
     "created_at": "2010-01-15T23:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67666",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67549",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -821,15 +820,15 @@ Jaap
 
 ---
 
-archive/issue_comments_067667.json:
+archive/issue_comments_067550.json:
 ```json
 {
     "body": "Setting RM=\"rm\" breaks newer libtools, namely the ones in Fedora 12 (libtool 2.2.6, autoconf 2.63, automake 1.11.1). They assume that $RM is either unset or RM=\"rm -f\".\n\nOne of the symptoms of this breakage is that configure ends with\n\n```\nrm: cannot remove `libtoolT': No such file or directory\n```\n\nCompile will break later on...",
     "created_at": "2010-01-25T21:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67667",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67550",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -847,15 +846,15 @@ Compile will break later on...
 
 ---
 
-archive/issue_comments_067668.json:
+archive/issue_comments_067551.json:
 ```json
 {
     "body": "I think this can be closed as \"wontfix\" as the issues resolved in this ticket are very complex and I think for the foreseeable future, this will not be resolved.",
     "created_at": "2011-04-02T13:09:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67668",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67551",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -865,15 +864,15 @@ I think this can be closed as "wontfix" as the issues resolved in this ticket ar
 
 ---
 
-archive/issue_comments_067669.json:
+archive/issue_comments_067552.json:
 ```json
 {
     "body": "I think we should keep this ticket open and gradually fix spgks. For example the Singular spkg needs to be updated soon for gcc-4.6 so we'll remove any `$RM`s in the process...\n\nAlso, is there any other issue except the `-fno-strict-aliasing `? We could fix that...",
     "created_at": "2011-04-02T19:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67669",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67552",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -885,15 +884,15 @@ Also, is there any other issue except the `-fno-strict-aliasing `? We could fix 
 
 ---
 
-archive/issue_comments_067670.json:
+archive/issue_comments_067553.json:
 ```json
 {
     "body": "Replying to [comment:29 drkirkby]:\n> I think this can be closed as \"wontfix\" as the issues resolved in this ticket are very complex and I think for the foreseeable future, this will not be resolved. \n\nIt is also a typical \"fix everything\" ticket, which is almost impossible to get merged.",
     "created_at": "2013-02-05T19:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67670",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67553",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -906,15 +905,15 @@ It is also a typical "fix everything" ticket, which is almost impossible to get 
 
 ---
 
-archive/issue_comments_067671.json:
+archive/issue_comments_067554.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2013-02-05T19:37:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67671",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67554",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -924,15 +923,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_067672.json:
+archive/issue_comments_067555.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2013-02-08T13:23:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67672",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7818#issuecomment-67555",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004520.json:
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\n\n```\nsage: M = matrix(CyclotomicField(5), 5, 2, 5)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4520\n\n",
     "created_at": "2008-11-14T06:52:59Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "segfault in cyclotomic matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4520",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4520
 
 ---
 
-archive/issue_comments_033547.json:
+archive/issue_comments_033481.json:
 ```json
 {
     "body": "It was a missing check.",
     "created_at": "2008-11-14T06:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33547",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33481",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -63,15 +62,15 @@ It was a missing check.
 
 ---
 
-archive/issue_comments_033548.json:
+archive/issue_comments_033482.json:
 ```json
 {
     "body": "If you add a doctest, I'll give this a positive review.",
     "created_at": "2008-11-14T07:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33548",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33482",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -81,15 +80,15 @@ If you add a doctest, I'll give this a positive review.
 
 ---
 
-archive/issue_comments_033549.json:
+archive/issue_comments_033483.json:
 ```json
 {
     "body": "Attachment [4520-cyclo-matrix-segfault.patch](tarball://root/attachments/some-uuid/ticket4520/4520-cyclo-matrix-segfault.patch) by @robertwb created at 2008-11-14 07:18:34",
     "created_at": "2008-11-14T07:18:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33549",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33483",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -99,15 +98,15 @@ Attachment [4520-cyclo-matrix-segfault.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_033550.json:
+archive/issue_comments_033484.json:
 ```json
 {
     "body": "Of course :) I've uploaded a new patch.",
     "created_at": "2008-11-14T07:19:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33550",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33484",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -117,15 +116,15 @@ Of course :) I've uploaded a new patch.
 
 ---
 
-archive/issue_comments_033551.json:
+archive/issue_comments_033485.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2008-11-14T07:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33551",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33485",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -135,15 +134,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_033552.json:
+archive/issue_comments_033486.json:
 ```json
 {
     "body": "Merged in Sage 3.2.rc1",
     "created_at": "2008-11-14T17:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33552",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33486",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -153,15 +152,15 @@ Merged in Sage 3.2.rc1
 
 ---
 
-archive/issue_comments_033553.json:
+archive/issue_comments_033487.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-14T17:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33553",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4520#issuecomment-33487",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,9 +6,7 @@ archive/issues_000002.json:
     "body": "Assignee: somebody\n\nCurrently it is possible to run two SAGE notebooks on the same directory,\nwhich is potentially VERY VERY bad.  It would be better if when a SAGE\nnotebook server starts up it checks for the presence of a lock file.  This\nfile would contain the pid of a running SAGE notebook process -- if the file\nand that process exist, then the notebook won't start.  When the notebook\nfinishes it should delete that lock file. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2\n\n",
     "created_at": "2006-09-11T04:04:32Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "title": "Notebook locking",
     "type": "issue",
@@ -61,7 +59,7 @@ archive/issue_comments_000004.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-4",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -81,7 +79,7 @@ archive/issue_comments_000005.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-5",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -101,7 +99,7 @@ archive/issue_comments_000006.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-6",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,7 +117,7 @@ archive/issue_comments_000007.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-7",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,7 +135,7 @@ archive/issue_comments_000008.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-8",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -155,7 +153,7 @@ archive/issue_comments_000009.json:
     "issue": "https://github.com/sagemath/sagetest/issues/2",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/2#issuecomment-9",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 

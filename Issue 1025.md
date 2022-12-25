@@ -6,15 +6,14 @@ archive/issues_001025.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1025\n\n",
     "created_at": "2007-10-29T03:20:22Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "[with patch] error converting symmetric functions into a dual basis",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1025",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1025
 
 ---
 
-archive/issue_comments_006271.json:
+archive/issue_comments_006251.json:
 ```json
 {
     "body": "Attachment [sf_fix.patch](tarball://root/attachments/some-uuid/ticket1025/sf_fix.patch) by @mwhansen created at 2007-10-29 03:20:43",
     "created_at": "2007-10-29T03:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1025#issuecomment-6271",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1025#issuecomment-6251",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [sf_fix.patch](tarball://root/attachments/some-uuid/ticket1025/sf_fix
 
 ---
 
-archive/issue_comments_006272.json:
+archive/issue_comments_006252.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-29T03:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1025#issuecomment-6272",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1025#issuecomment-6252",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_009919.json:
     "body": "Assignee: jason, was\n\nCC:  @jasongrout @kcrisman\n\nJason Grout commented on #9822 about the relative difficulty/inconvenience of developing and applying patches for SageNB as compared to Sage. This ticket should fix it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9920\n\n",
     "created_at": "2010-09-16T15:48:08Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Ease SageNB development by providing hg commands, and extracting packages to /devel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9919",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: jason, was
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9920
 
 ---
 
-archive/issue_comments_098710.json:
+archive/issue_comments_098546.json:
 ```json
 {
     "body": "Attachment [trac_9920-sagenb-package-extraction.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.patch) by @TimDumol created at 2010-09-16 16:57:37\n\nSageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.",
     "created_at": "2010-09-16T16:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98710",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98546",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -51,15 +50,15 @@ SageNB package. Extracts SageNB to $SAGE_ROOT/devel/ for ease of use.
 
 ---
 
-archive/issue_comments_098711.json:
+archive/issue_comments_098547.json:
 ```json
 {
     "body": "Attachment [trac_9920-sagelib-hg.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagelib-hg.patch) by @TimDumol created at 2010-09-16 16:58:24\n\nSage main library. Adds hg_sagenb.",
     "created_at": "2010-09-16T16:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98711",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98547",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -71,15 +70,15 @@ Sage main library. Adds hg_sagenb.
 
 ---
 
-archive/issue_comments_098712.json:
+archive/issue_comments_098548.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-16T16:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98712",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98548",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_098713.json:
+archive/issue_comments_098549.json:
 ```json
 {
     "body": "Patches attached.",
     "created_at": "2010-09-16T16:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98713",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98549",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -107,15 +106,15 @@ Patches attached.
 
 ---
 
-archive/issue_comments_098714.json:
+archive/issue_comments_098550.json:
 ```json
 {
     "body": "Does this mean that I should be using spkg-dist to make the spkg, instead of sage -spkg?\n\nAlso, does this set things up so that changes are reflected in the running notebook server?  It seems that the spkg-dist just copies the hg repository there, but the notebook install is completely different.",
     "created_at": "2010-09-24T00:32:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98714",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98550",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -127,15 +126,15 @@ Also, does this set things up so that changes are reflected in the running noteb
 
 ---
 
-archive/issue_comments_098715.json:
+archive/issue_comments_098551.json:
 ```json
 {
     "body": "Attachment [trac_9920-sagenb-package-extraction.2.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-sagenb-package-extraction.2.patch) by @TimDumol created at 2010-09-24 06:57:24\n\nPuts the \"$SAGE_ROOT/devel/sagenb\" in `develop` mode.",
     "created_at": "2010-09-24T06:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98715",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98551",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -147,15 +146,15 @@ Puts the "$SAGE_ROOT/devel/sagenb" in `develop` mode.
 
 ---
 
-archive/issue_comments_098716.json:
+archive/issue_comments_098552.json:
 ```json
 {
     "body": "Replying to [comment:2 jason]:\n> Does this mean that I should be using spkg-dist to make the spkg, instead of sage -spkg?\n> \n\nYes. That has been the case for a long time (c.f. SPKG.txt)\n\n> Also, does this set things up so that changes are reflected in the running notebook server?  It seems that the spkg-dist just copies the hg repository there, but the notebook install is completely different.\n\nI neglected to add that. Thanks for the notification. This new patch should fix it.",
     "created_at": "2010-09-24T07:03:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98716",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98552",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -173,15 +172,15 @@ I neglected to add that. Thanks for the notification. This new patch should fix 
 
 ---
 
-archive/issue_comments_098717.json:
+archive/issue_comments_098553.json:
 ```json
 {
     "body": "Very nice!  This seems to work well.",
     "created_at": "2010-09-28T19:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98717",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98553",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -191,15 +190,15 @@ Very nice!  This seems to work well.
 
 ---
 
-archive/issue_comments_098718.json:
+archive/issue_comments_098554.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-09-28T19:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98718",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98554",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -209,15 +208,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_098719.json:
+archive/issue_comments_098555.json:
 ```json
 {
     "body": "I'll start reviewing more notebook patches when this spkg is incorporated into sage!",
     "created_at": "2010-09-28T19:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98719",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98555",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -227,15 +226,15 @@ I'll start reviewing more notebook patches when this spkg is incorporated into s
 
 ---
 
-archive/issue_comments_098720.json:
+archive/issue_comments_098556.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_info.",
     "created_at": "2010-10-03T10:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98720",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98556",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -245,15 +244,15 @@ Changing status from positive_review to needs_info.
 
 ---
 
-archive/issue_comments_098721.json:
+archive/issue_comments_098557.json:
 ```json
 {
     "body": "The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?\n\nDoes the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?",
     "created_at": "2010-10-03T10:41:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98721",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98557",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -265,15 +264,15 @@ Does the new `spkg-install` now install SageNB two places, under `site-packages`
 
 ---
 
-archive/issue_comments_098722.json:
+archive/issue_comments_098558.json:
 ```json
 {
     "body": "Replying to [comment:6 mpatel]:\n> The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?\n\nCan we make a new ticket for that?\n\nIn fact, I like this approach better (backup and copy), since it plays nicely with patch queues.  The merge approach messes everything up if you forgot to pop all of your patches off.\n\n> \n> Does the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?\n\n\nNo, I don't think it installs twice (you can check the files to make sure).  The setup.py develop installs under $SAGE_ROOT/devel/ and changes the site-packages folder to refer to that location.",
     "created_at": "2010-10-04T11:50:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98722",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98558",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -294,15 +293,15 @@ No, I don't think it installs twice (you can check the files to make sure).  The
 
 ---
 
-archive/issue_comments_098723.json:
+archive/issue_comments_098559.json:
 ```json
 {
     "body": "Replying to [comment:7 jason]:\n> Replying to [comment:6 mpatel]:\n> > The extcode, sage_scripts, and sage packages use Mercurial in their `spkg-install`s to merge changes into an existing repository.  This could be more efficient than copying every file every time.  Can we do that here?\n> \n> Can we make a new ticket for that?\n> \n> In fact, I like this approach better (backup and copy), since it plays nicely with patch queues.  The merge approach messes everything up if you forgot to pop all of your patches off.\n\nI agree with Jason.\n\n> \n> > \n> > Does the new `spkg-install` now install SageNB two places, under `site-packages` and `devel`?  Is it practical to do just the latter?\n> \n> \n> No, I don't think it installs twice (you can check the files to make sure).  The setup.py develop installs under $SAGE_ROOT/devel/ and changes the site-packages folder to refer to that location.\n\nActually, it does, but doing so is needed for the docs to show (static docs). We can make another ticket for that.",
     "created_at": "2010-10-04T13:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98723",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98559",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -329,15 +328,15 @@ Actually, it does, but doing so is needed for the docs to show (static docs). We
 
 ---
 
-archive/issue_comments_098724.json:
+archive/issue_comments_098560.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-10-05T02:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98724",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98560",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -347,15 +346,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_098725.json:
+archive/issue_comments_098561.json:
 ```json
 {
     "body": "I think both questions were answered, so I'm setting this back to positive review.  It would be **fantastic** if it were included in the sagenb package for the next release.",
     "created_at": "2010-10-05T02:24:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98725",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98561",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -365,15 +364,15 @@ I think both questions were answered, so I'm setting this back to positive revie
 
 ---
 
-archive/issue_comments_098726.json:
+archive/issue_comments_098562.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-10-05T02:24:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98726",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98562",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -383,15 +382,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_098727.json:
+archive/issue_comments_098563.json:
 ```json
 {
     "body": "By the way, another issue for another ticket: updating [the developer's guide](http://sagemath.org/doc/developer/producing_patches.html#using-mercurial-with-other-sage-repositories) to include sagenb in the list of Mercurial repositories.",
     "created_at": "2010-10-05T03:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98727",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98563",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -401,15 +400,15 @@ By the way, another issue for another ticket: updating [the developer's guide](h
 
 ---
 
-archive/issue_comments_098728.json:
+archive/issue_comments_098564.json:
 ```json
 {
     "body": "Sounds good.  Thanks for the information.  I'll add this to SageNB 0.8.4 at #10036.",
     "created_at": "2010-10-05T03:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98728",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98564",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -419,15 +418,15 @@ Sounds good.  Thanks for the information.  I'll add this to SageNB 0.8.4 at #100
 
 ---
 
-archive/issue_comments_098729.json:
+archive/issue_comments_098565.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-10-06T03:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98729",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98565",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -437,15 +436,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_098730.json:
+archive/issue_comments_098566.json:
 ```json
 {
     "body": "There's a problem with compiling from scratch, because `$SAGE_ROOT/devel` does not exist when `sagenb-*.spkg` is installed.  I think doing `mkdir -p` will be enough.\n\nCan someone add a new patch to fix this?",
     "created_at": "2010-10-07T10:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98730",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98566",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -457,15 +456,15 @@ Can someone add a new patch to fix this?
 
 ---
 
-archive/issue_comments_098731.json:
+archive/issue_comments_098567.json:
 ```json
 {
     "body": "Make `$SAGE_ROOT/devel` on install, if necessary.  Apply on top of package extraction patch.",
     "created_at": "2010-10-07T11:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98731",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98567",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -475,15 +474,15 @@ Make `$SAGE_ROOT/devel` on install, if necessary.  Apply on top of package extra
 
 ---
 
-archive/issue_comments_098732.json:
+archive/issue_comments_098568.json:
 ```json
 {
     "body": "Attachment [trac_9920-devel_dir_fix.patch](tarball://root/attachments/some-uuid/ticket9920/trac_9920-devel_dir_fix.patch) by @qed777 created at 2010-10-07 11:38:11\n\nI've added a patch that I'm testing now.",
     "created_at": "2010-10-07T11:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98732",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98568",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -495,15 +494,15 @@ I've added a patch that I'm testing now.
 
 ---
 
-archive/issue_comments_098733.json:
+archive/issue_comments_098569.json:
 ```json
 {
     "body": "Replying to [comment:17 mpatel]:\n> I've added a patch that I'm testing now.\n\nIt works.",
     "created_at": "2010-10-07T12:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98733",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98569",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -516,15 +515,15 @@ It works.
 
 ---
 
-archive/issue_comments_098734.json:
+archive/issue_comments_098570.json:
 ```json
 {
     "body": "I think we'll need to open a new ticket for making this link\n\n```\nln -sf \"$SAGE_ROOT/devel/sagenb-main\" \"$SAGE_ROOT/devel/sagenb\" \n```\n\nrelative.  Otherwise, Sage won't start after I move/rename the root directory.",
     "created_at": "2010-10-07T12:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98734",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98570",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -540,15 +539,15 @@ relative.  Otherwise, Sage won't start after I move/rename the root directory.
 
 ---
 
-archive/issue_comments_098735.json:
+archive/issue_comments_098571.json:
 ```json
 {
     "body": "And maybe also add `python setup.py develop` to `SAGE_LOCAL/bin/sage-location`?",
     "created_at": "2010-10-07T12:53:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98735",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98571",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -558,15 +557,15 @@ And maybe also add `python setup.py develop` to `SAGE_LOCAL/bin/sage-location`?
 
 ---
 
-archive/issue_comments_098736.json:
+archive/issue_comments_098572.json:
 ```json
 {
     "body": "Replying to [comment:20 mpatel]:\n> And maybe also add `python setup.py develop` to `SAGE_LOCAL/bin/sage-location`?\n\nSee #10097.",
     "created_at": "2010-10-07T22:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9919",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98736",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9919#issuecomment-98572",
+    "user": "https://github.com/qed777"
 }
 ```
 

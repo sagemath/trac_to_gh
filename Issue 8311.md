@@ -6,15 +6,14 @@ archive/issues_008311.json:
     "body": "Assignee: @JohnCremona\n\nCC:  @haraldschilly\n\nKeywords: random point\n\nAs reported:\n\n```\nE = EllipticCurve(GF(3), [0,0,0,2,2])\nE.random_element()\n```\n\nHangs since\n\n```\nsage: E.rational_points()\n[(0 : 1 : 0)]\n```\n\nso unless the point at infinity is picked (probability 1/(q+1)=1/4) no point will be found.\n\nThis can only happen for q=2,3,4 (try Hasse_bounds(q)) so these cases need separate treatment.\n\nPatch coming up.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8311\n\n",
     "created_at": "2010-02-20T12:06:17Z",
     "labels": [
-        "elliptic curves",
-        "major",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "elliptic curve random point hangs when group is trivial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8311",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @JohnCremona
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8311
 
 ---
 
-archive/issue_comments_073712.json:
+archive/issue_comments_073589.json:
 ```json
 {
     "body": "Attachment [trac_8311-random-point.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311-random-point.patch) by @JohnCremona created at 2010-02-20 13:48:52\n\napplies to 4.3.3.alpha1",
     "created_at": "2010-02-20T13:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73712",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73589",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -72,15 +71,15 @@ applies to 4.3.3.alpha1
 
 ---
 
-archive/issue_comments_073713.json:
+archive/issue_comments_073590.json:
 ```json
 {
     "body": "Patch attached.  I needed to make a few side adjustments to avoid infinite recursions, since enumerating points is sometimes done via first finding the group generators, which in turn uses random points....",
     "created_at": "2010-02-20T13:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73713",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73590",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -90,15 +89,15 @@ Patch attached.  I needed to make a few side adjustments to avoid infinite recur
 
 ---
 
-archive/issue_comments_073714.json:
+archive/issue_comments_073591.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-20T13:49:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73714",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73591",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -108,15 +107,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_073715.json:
+archive/issue_comments_073592.json:
 ```json
 {
     "body": "thx, tried the patch, works. i'll seek for some feedback from the original reporter.",
     "created_at": "2010-02-20T13:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73715",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73592",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -126,15 +125,15 @@ thx, tried the patch, works. i'll seek for some feedback from the original repor
 
 ---
 
-archive/issue_comments_073716.json:
+archive/issue_comments_073593.json:
 ```json
 {
     "body": "Replaces the previous patch",
     "created_at": "2010-03-05T18:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73716",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73593",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -144,15 +143,15 @@ Replaces the previous patch
 
 ---
 
-archive/issue_comments_073717.json:
+archive/issue_comments_073594.json:
 ```json
 {
     "body": "Attachment [trac_8311_random_point_2.patch](tarball://root/attachments/some-uuid/ticket8311/trac_8311_random_point_2.patch) by @categorie created at 2010-03-05 18:26:42\n\nI changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.",
     "created_at": "2010-03-05T18:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73717",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73594",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -164,15 +163,15 @@ I changed a few tabulators to spaces. Other than that the patch is fine. And I s
 
 ---
 
-archive/issue_comments_073718.json:
+archive/issue_comments_073595.json:
 ```json
 {
     "body": "Replying to [comment:4 wuthrich]:\n> I changed a few tabulators to spaces. Other than that the patch is fine. And I started testing now.\nThanks, sorry about the tabs.",
     "created_at": "2010-03-08T21:15:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73718",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73595",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -184,15 +183,15 @@ Thanks, sorry about the tabs.
 
 ---
 
-archive/issue_comments_073719.json:
+archive/issue_comments_073596.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-09T19:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73719",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73596",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -202,15 +201,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_073720.json:
+archive/issue_comments_073597.json:
 ```json
 {
     "body": "Sorry about the delay. I still do not know why I can use the trac only from home and not from my office. \n\nThe tests passed (except the once that are reported and present in the current .alpha)",
     "created_at": "2010-03-09T19:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73720",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73597",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -222,15 +221,15 @@ The tests passed (except the once that are reported and present in the current .
 
 ---
 
-archive/issue_comments_073721.json:
+archive/issue_comments_073598.json:
 ```json
 {
     "body": "Merged [trac_8311_random_point_2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8311/trac_8311_random_point_2.patch).",
     "created_at": "2010-03-11T04:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73721",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73598",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -240,15 +239,15 @@ Merged [trac_8311_random_point_2.patch](http://trac.sagemath.org/sage_trac/attac
 
 ---
 
-archive/issue_comments_073722.json:
+archive/issue_comments_073599.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-11T04:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73722",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73599",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -258,15 +257,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_073723.json:
+archive/issue_comments_073600.json:
 ```json
 {
     "body": "Much better fix at #16951.",
     "created_at": "2014-09-09T15:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73723",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8311#issuecomment-73600",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

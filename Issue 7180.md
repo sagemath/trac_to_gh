@@ -6,7 +6,7 @@ archive/issues_007180.json:
     "body": "Assignee: tbd\n\nCC:  @fchapoton\n\nKeywords: HP-UX gmp mpir\n\nMPIR would not build on my HP-UX box, so needless to say programs wanting gmp will not work. However, cddlib-094f  checks for gmp, then ignores the fact it can't find it. It should exit with a clear error message then, not carry on. \n\nA developer can have access to the HP-UX box, but this is not really necessay to fix this. Just email me with your preffered user name if you want to have an account \n\n```\n...\n-rw-r--r--   1 drkirkby   users       266542 Jul 31 22:45 /home/drkirkby/sage-4.1.2.rc0/spkg/standard/cddlib-094f.spkg\nFinished extraction\n****************************************************\nHost system\nuname -a:\nHP-UX hpbox B.11.11 U 9000/785 2016698240 unlimited-user license\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: hppa1.1-hp-hpux11.11\nConfigured with: /tmp/gcc-4.4.0.tar.gz/gcc-4.4.0/configure --host=hppa1.1-hp-hpux11.11 --target=hppa1.1-hp-hpux11.11 --build=hppa1.1-hp-hpux11.11 --prefix=/opt/hp-gcc-4.4.0 --with-gnu-as --without-gnu-ld --enable-threads=posix --enable-languages=c,c++ --with-gmp=/proj/opensrc/be/hppa1.1-hp-hpux11.11 --with-mpfr=/proj/opensrc/be/hppa1.1-hp-hpux11.11\nThread model: posix\ngcc version 4.4.0 (GCC)\n****************************************************\nchecking for a BSD-compatible install... ./install-sh -c\nchecking whether build environment is sane... yes\nchecking for gawk... no\nchecking for mawk... no\nchecking for nawk... no\nchecking for awk... awk\nchecking whether make sets $(MAKE)... yes\nchecking for gcc... gcc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables...\nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether gcc accepts -g... yes\nchecking for gcc option to accept ISO C89... none needed\nchecking for style of include used by make... GNU\nchecking dependency style of gcc... gcc3\nchecking for a BSD-compatible install... ./install-sh -c\nchecking for ranlib... ranlib\nchecking for main in -lgmp... no\nchecking how to run the C preprocessor... gcc -E\nchecking for grep that handles long lines and -e... /usr/bin/grep\nchecking for egrep... /usr/bin/grep -E\nchecking for ANSI C header files... yes\nchecking for an ANSI C-conforming const... yes\nconfigure: creating ./config.status\nconfig.status: creating lib-src/Makefile\nconfig.status: WARNING:  lib-src/Makefile.in seems to ignore the --datarootdir setting\nconfig.status: creating src/Makefile\nconfig.status: WARNING:  src/Makefile.in seems to ignore the --datarootdir setting\nconfig.status: creating lib-src-gmp/Makefile\nconfig.status: WARNING:  lib-src-gmp/Makefile.in seems to ignore the --datarootdir setting\nconfig.status: creating src-gmp/Makefile\nconfig.status: WARNING:  src-gmp/Makefile.in seems to ignore the --datarootdir setting\nconfig.status: creating Makefile\nconfig.status: WARNING:  Makefile.in seems to ignore the --datarootdir setting\nconfig.status: executing depfiles commands\nMake: line 409: syntax error.  Stop.\nError building cddlib\n\nreal    0m8.255s\nuser    0m4.260s\nsys     0m2.460s\nsage: An error occurred while installing cddlib-094f\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7180\n\n",
     "created_at": "2009-10-10T09:24:44Z",
     "labels": [
-        "build",
+        "component: build",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007180.json:
     "title": "HP-UX cddlib-094f checks for gmp.h, then igores the fact it can't find it.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7180",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -102,15 +102,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7180
 
 ---
 
-archive/issue_comments_059473.json:
+archive/issue_comments_059361.json:
 ```json
 {
     "body": "I'm not sure who to report this too, but it does need reporting.",
     "created_at": "2009-11-27T13:29:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59473",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -120,15 +120,15 @@ I'm not sure who to report this too, but it does need reporting.
 
 ---
 
-archive/issue_comments_059474.json:
+archive/issue_comments_059362.json:
 ```json
 {
     "body": "Changing component from build to porting: AIX or HP-UX.",
     "created_at": "2015-09-08T12:45:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59474",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59362",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -138,15 +138,15 @@ Changing component from build to porting: AIX or HP-UX.
 
 ---
 
-archive/issue_comments_059475.json:
+archive/issue_comments_059363.json:
 ```json
 {
     "body": "I don't believe anyone's been maintaining support for AIX or HP-UX for some time.  Putting in sage-wishlist for now in case there is still a desire for it out there, otherwise these tickets should be closed (most of them are probably no longer relevant in any case but I have no obvious way to check this).",
     "created_at": "2019-01-15T18:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59475",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59363",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -156,15 +156,15 @@ I don't believe anyone's been maintaining support for AIX or HP-UX for some time
 
 ---
 
-archive/issue_comments_059476.json:
+archive/issue_comments_059364.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-06-23T21:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59476",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59364",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -174,15 +174,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059477.json:
+archive/issue_comments_059365.json:
 ```json
 {
     "body": "We should close this ticket as outdated.",
     "created_at": "2020-06-23T21:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59477",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59365",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -192,15 +192,15 @@ We should close this ticket as outdated.
 
 ---
 
-archive/issue_comments_059478.json:
+archive/issue_comments_059366.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-06-24T06:28:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59478",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7180#issuecomment-59366",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

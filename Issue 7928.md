@@ -6,15 +6,14 @@ archive/issues_007928.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7928\n\n",
     "created_at": "2010-01-14T08:51:42Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Trivial follow up on #7776",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7928",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7928
 
 ---
 
-archive/issue_comments_069028.json:
+archive/issue_comments_068909.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-14T08:53:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-69028",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-68909",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069029.json:
+archive/issue_comments_068910.json:
 ```json
 {
     "body": "Attachment [trac_7928-inject_variable-followup-nt.patch](tarball://root/attachments/some-uuid/ticket7928/trac_7928-inject_variable-followup-nt.patch) by @nthiery created at 2010-01-14 09:09:28",
     "created_at": "2010-01-14T09:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-69029",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-68910",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -65,15 +64,15 @@ Attachment [trac_7928-inject_variable-followup-nt.patch](tarball://root/attachme
 
 ---
 
-archive/issue_comments_069030.json:
+archive/issue_comments_068911.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-14T16:17:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-69030",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-68911",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069031.json:
+archive/issue_comments_068912.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-16T03:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-69031",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7928#issuecomment-68912",
+    "user": "https://github.com/rlmill"
 }
 ```
 

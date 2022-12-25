@@ -6,7 +6,7 @@ archive/issues_000981.json:
     "body": "Assignee: @wdjoyner\n\nCC:  sage-combinat\n\nthere is a bug in the module permgroup.py, at line 1226,\nthe method conjugacy_classes_subgroups calls PermutationGroupElement;\nI think it should be PermutationGroup.\nreported by Biel\n\nIssue created by migration from https://trac.sagemath.org/ticket/981\n\n",
     "created_at": "2007-10-24T14:16:00Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000981.json:
     "title": "bug in the method conjugacy_classes_subgroups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/981",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @wdjoyner
@@ -34,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/981
 
 ---
 
-archive/issue_comments_006006.json:
+archive/issue_comments_005986.json:
 ```json
 {
     "body": "Patch is here:\nhttp://sage.math.washington.edu/home/wdj/patches/permgp-patch.hg\nPasses sage -t. Created agains sage 2.8.3 on a suse amd64 machine,\nso may be a bit old....",
     "created_at": "2007-10-24T16:38:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6006",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-5986",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -55,15 +55,15 @@ so may be a bit old....
 
 ---
 
-archive/issue_comments_006007.json:
+archive/issue_comments_005987.json:
 ```json
 {
     "body": "applied to 2.8.9.alpha1",
     "created_at": "2007-10-24T19:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6007",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-5987",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -73,15 +73,15 @@ applied to 2.8.9.alpha1
 
 ---
 
-archive/issue_comments_006008.json:
+archive/issue_comments_005988.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-24T19:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-6008",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/981#issuecomment-5988",
+    "user": "https://github.com/malb"
 }
 ```
 

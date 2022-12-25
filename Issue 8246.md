@@ -6,15 +6,13 @@ archive/issues_008246.json:
     "body": "Assignee: mvngu\n\nCC:  @wdjoyner\n\nAdd a new function to calculate the Carmichael lambda function of a positive integer n. The Carmichael lambda function is related to the Blum-Blum-Shub pseudorandom bit generator. See [Wikipedia](http://en.wikipedia.org/wiki/Carmichael_function) for a definition, and [Mathematica documentation center](http://reference.wolfram.com/mathematica/ref/CarmichaelLambda.html) for examples.\n\n**Prerequisites:** #7746\n\nIssue created by migration from https://trac.sagemath.org/ticket/8246\n\n",
     "created_at": "2010-02-12T05:25:55Z",
     "labels": [
-        "cryptography",
-        "major",
-        "enhancement"
+        "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Carmichael lambda function for the Blum-Blum-Shub pseudorandom bit generator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8246",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: mvngu
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8246
 
 ---
 
-archive/issue_comments_072930.json:
+archive/issue_comments_072808.json:
 ```json
 {
     "body": "initial public domain version by Mike Hogan and David Joyner; for reference only",
     "created_at": "2010-02-12T05:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72930",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72808",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -51,15 +49,15 @@ initial public domain version by Mike Hogan and David Joyner; for reference only
 
 ---
 
-archive/issue_comments_072931.json:
+archive/issue_comments_072809.json:
 ```json
 {
     "body": "Attachment [trac_8246-carmichael.patch](tarball://root/attachments/some-uuid/ticket8246/trac_8246-carmichael.patch) by mvngu created at 2010-02-13 04:07:48\n\nbased on Sage 4.3.2; depends on #7746",
     "created_at": "2010-02-13T04:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72931",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72809",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -71,15 +69,15 @@ based on Sage 4.3.2; depends on #7746
 
 ---
 
-archive/issue_comments_072932.json:
+archive/issue_comments_072810.json:
 ```json
 {
     "body": "%timeit time in microseconds for Hogan & Joyner's implementation",
     "created_at": "2010-02-13T04:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72932",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72810",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -89,15 +87,15 @@ archive/issue_comments_072932.json:
 
 ---
 
-archive/issue_comments_072933.json:
+archive/issue_comments_072811.json:
 ```json
 {
     "body": "Attachment [carmichael.old](tarball://root/attachments/some-uuid/ticket8246/carmichael.old) by mvngu created at 2010-02-13 04:09:35\n\n%timeit time in microseconds for newer implementation",
     "created_at": "2010-02-13T04:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72933",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72811",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -109,15 +107,15 @@ Attachment [carmichael.old](tarball://root/attachments/some-uuid/ticket8246/carm
 
 ---
 
-archive/issue_comments_072934.json:
+archive/issue_comments_072812.json:
 ```json
 {
     "body": "Attachment [carmichael.new](tarball://root/attachments/some-uuid/ticket8246/carmichael.new) by mvngu created at 2010-02-13 04:10:16\n\ncomparison between old (blue) and new (red) implementations",
     "created_at": "2010-02-13T04:10:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72934",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72812",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -129,15 +127,15 @@ comparison between old (blue) and new (red) implementations
 
 ---
 
-archive/issue_comments_072935.json:
+archive/issue_comments_072813.json:
 ```json
 {
     "body": "Attachment [benchmark-carmichael.png](tarball://root/attachments/some-uuid/ticket8246/benchmark-carmichael.png) by mvngu created at 2010-02-13 04:29:02\n\nThe attachment [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) provides a non-recursive implementation of the Carmichael function. This is in contrast to the recursive implementation as contained in [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage). I have provided some timing comparison to justify the non-recursive implementation. Say [BBScrypto.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/BBScrypto.sage) is at `/home/mvngu/BBScrypto.sage` and [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch) has been applied to Sage 4.3.2. The following generates some timing statistics for both Hogan & Joyner's implementation, and the non-recursive implementation. Here are some timing statistics for the recursive implementation, where the timing results (in microseconds) are saved to [carmichael.old](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.old):\n\n```\nsage: load(\"/home/mvngu/BBScrypto.sage\")\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael(n)\n....:     T.append(t.stats[3])\n....:     \nsage: f = open(\"/home/mvngu/carmichael.old\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\n\nThe following are some timing statistics for the non-recursive implementation. Timing results (in microseconds) are saved to [carmichael.new](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/carmichael.new):\n\n```\nsage: from sage.crypto.util import carmichael_lambda\nsage: T = []\nsage: for n in xrange(1, 1001):\n....:     t = %timeit carmichael_lambda(n)\n....:     T.append(t.stats[3])\n....:     \nsage: # First 10 elements of T are timings in nanoseconds. \nsage: # So convert them to microseconds.\nsage: for i in xrange(10):\n....:     T[i] = T[i] / 1000\n....:     \nsage: f = open(\"/home/mvngu/carmichael.new\", \"w\")\nsage: for t in T:\n....:     f.write(str(t) + \"\\n\")\n....:     \nsage: f.close()\n```\n\n\nNow plot the timing results. The plot in blue is for the recursive implementation, while the plot in red is for the non-recursive implementation. The horizontal axis is for integer values of `n` starting from 1, up to and including 1000. The vertical axis is for the values of the Carmichael function of `n`. The resulting combined plot is contained in [benchmark-carmichael.png](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/benchmark-carmichael.png). Timing statistics were obtained using the machine `sage.math`.\n\n```\nsage: X = [1..1000]\nsage: Yold = []\nsage: f = open(\"/home/mvngu/carmichael.old\", \"r\")\nsage: for t in f:\n....:     Yold.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Ynew = []\nsage: f = open(\"/home/mvngu/carmichael.new\", \"r\")\nsage: for t in f:\n....:     Ynew.append(RR(t.strip()))\n....:     \nsage: f.close()\nsage: Pold = line2d(zip(X, Yold), color=\"blue\", thickness=1)\nsage: Pnew = line2d(zip(X, Ynew), color=\"red\", thickness=1)\nsage: Pold + Pnew\n```\n\nFirst apply #7746 and then [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch).",
     "created_at": "2010-02-13T04:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72935",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72813",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -209,15 +207,15 @@ First apply #7746 and then [trac_8246-carmichael.patch](http://trac.sagemath.org
 
 ---
 
-archive/issue_comments_072936.json:
+archive/issue_comments_072814.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-13T04:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72936",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72814",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -227,15 +225,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072937.json:
+archive/issue_comments_072815.json:
 ```json
 {
     "body": "Applies fine to 4.3.3.a0 on a mac 10.6.2. Passes sage -testall and the reference manual/documentation looks good.\n\nPositive review. \n\nI should add that this is a completely different, and much faster, implementation that the Wikipedia one (which is the one originally submitted). \n\nThanks again Minh!",
     "created_at": "2010-02-13T17:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72937",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72815",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -251,15 +249,15 @@ Thanks again Minh!
 
 ---
 
-archive/issue_comments_072938.json:
+archive/issue_comments_072816.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-13T17:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72938",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72816",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -269,15 +267,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_072939.json:
+archive/issue_comments_072817.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-15T03:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72939",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72817",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -287,15 +285,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_072940.json:
+archive/issue_comments_072818.json:
 ```json
 {
     "body": "Merged [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8246/trac_8246-carmichael.patch).",
     "created_at": "2010-02-15T03:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72940",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72818",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -305,15 +303,15 @@ Merged [trac_8246-carmichael.patch](http://trac.sagemath.org/sage_trac/attachmen
 
 ---
 
-archive/issue_comments_072941.json:
+archive/issue_comments_072819.json:
 ```json
 {
     "body": "Sorry to comment that late, but there are a few things in this patch I dislike:\n\n* Why hard code the first ten values?\n* `carmichael_lambda(16)` is of type `sage.rings.rational.Rational`\n* why use generic_power to compute the power of an integer?\n\nhere's my 2-cents implementation:\n\n\n```\n\ndef carmichael_lambda(n):\n    n = Integer(n)\n\n    if n < 1: \n        raise ValueError(\"Input n must be a positive integer.\")\n\n    F = n.factor()\n    L = []\n\n    # first get rid of the even part\n    if n & 1 == 0:\n        e = F[0][1]\n        F = F[1:]\n        if e < 3:\n            e = e-1\n        else:\n            e = e-2\n        L.append(1<<e)\n    \n    # then other prime factors\n    L += [ p**(k-1)*(p-1) for p,k in F]\n\n    # finish the job\n    return lcm(L)\n\n```\n",
     "created_at": "2010-02-15T17:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72941",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72819",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -360,15 +358,15 @@ def carmichael_lambda(n):
 
 ---
 
-archive/issue_comments_072942.json:
+archive/issue_comments_072820.json:
 ```json
 {
     "body": "Replying to [comment:4 ylchapuy]:\n> Sorry to comment that late, but there are a few things in this patch I dislike:\n> ...\n\nDid you test to see if your implementation was faster than the current one. If so, what were the results?",
     "created_at": "2010-02-15T17:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72942",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72820",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -382,15 +380,15 @@ Did you test to see if your implementation was faster than the current one. If s
 
 ---
 
-archive/issue_comments_072943.json:
+archive/issue_comments_072821.json:
 ```json
 {
     "body": "Replying to [comment:5 wdj]:\n> Replying to [comment:4 ylchapuy]:\n> > Sorry to comment that late, but there are a few things in this patch I dislike:\n> > ...\n> \n> Did you test to see if your implementation was faster than the current one. If so, what were the results?\n\nExcept if n<=10, timings are very similar, mine being slightly faster.\nTo obtain an even faster version one can replace the final lcm with `sage.rings.integer.LCM_list(L)`.\n\ne.g.\n\n```\nsage: %timeit carmichael_lambda(1000)     # Minh's version\n625 loops, best of 3: 270 \u00b5s per loop\nsage: %timeit my_carmichael_lambda(1000)  # mine with lcm\n625 loops, best of 3: 244 \u00b5s per loop\nsage: %timeit my_carmichael_lambda2(1000) # mine with sage.rings.integer.LCM_list\n625 loops, best of 3: 214 \u00b5s per loop\nsage: %timeit factor(1000)                # just to compare\n625 loops, best of 3: 177 \u00b5s per loop\n```\n\n\nwe can see that most of the time is spent factoring.",
     "created_at": "2010-02-15T19:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72943",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72821",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -424,15 +422,15 @@ we can see that most of the time is spent factoring.
 
 ---
 
-archive/issue_comments_072944.json:
+archive/issue_comments_072822.json:
 ```json
 {
     "body": "For me, a small speed up does not matter. The function is used theoretically in security estimates for the BBS stream cipher. I'm not saying that you should not try to speed things up, it is just that it is more important for the function to exist in Sage that for it to be fast. But if someone wants me to referee a new patch, that is fine too.",
     "created_at": "2010-02-15T21:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72944",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72822",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -442,15 +440,15 @@ For me, a small speed up does not matter. The function is used theoretically in 
 
 ---
 
-archive/issue_comments_072945.json:
+archive/issue_comments_072823.json:
 ```json
 {
     "body": "Replying to [comment:7 wdj]:\n> For me, a small speed up does not matter. The function is used theoretically in security estimates for the BBS stream cipher. \n\nI totally agree on this, but you asked for speed results! I didn't mentionned speed at all in my first message.\n\n> I'm not saying that you should not try to speed things up,\n\nIt's definitely not what I'm trying to do.\n\n> it is just that it is more important for the function to exist in Sage that for it to be fast. But if someone wants me to referee a new patch, that is fine too.\n\nMy point was:\n\n* there is a bug: e.g. carmichael_lambda(16) is of type sage.rings.rational.Rational ;\n* a small speed up does not matter: therefore no need to hard code the first 10 cases, it just makes the code less readable ;\n* my code is IMHO just easier to read.",
     "created_at": "2010-02-15T21:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72945",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72823",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -475,15 +473,15 @@ My point was:
 
 ---
 
-archive/issue_comments_072946.json:
+archive/issue_comments_072824.json:
 ```json
 {
     "body": "Replying to [comment:8 ylchapuy]:\n> My point was:\n> \n* there is a bug: e.g. carmichael_lambda(16) is of type sage.rings.rational.Rational ;\n* a small speed up does not matter: therefore no need to hard code the first 10 cases, it just makes the code less readable ;\n* my code is IMHO just easier to read.\n>\nThe patch is already merged. To reopen this ticket would result in confusion for release managers. Can I persuade you to open a ticket to get your implementation into Sage? It's always nice to have an expert look over a novice's work.",
     "created_at": "2010-02-16T04:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72946",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72824",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -500,15 +498,15 @@ The patch is already merged. To reopen this ticket would result in confusion for
 
 ---
 
-archive/issue_comments_072947.json:
+archive/issue_comments_072825.json:
 ```json
 {
     "body": "Replying to [comment:9 mvngu]:\n> Replying to [comment:8 ylchapuy]:\n\n...\n\n> Can I persuade you to open a ticket to get your implementation into Sage? \n\nI'll try to remember to do this myself later today.",
     "created_at": "2010-02-16T12:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72947",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72825",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -525,15 +523,15 @@ I'll try to remember to do this myself later today.
 
 ---
 
-archive/issue_comments_072948.json:
+archive/issue_comments_072826.json:
 ```json
 {
     "body": "This issue is now http://trac.sagemath.org/sage_trac/ticket/8283",
     "created_at": "2010-02-16T16:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72948",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/8246#issuecomment-72826",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 

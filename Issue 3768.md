@@ -6,15 +6,14 @@ archive/issues_003768.json:
     "body": "Assignee: mabshoff\n\nWe should move jsmath into its own spkg.  Like jquery, there seem to be two copies of it, and it'd be good to get rid of this duplication and track its versioning explicitly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3768\n\n",
     "created_at": "2008-08-03T19:29:09Z",
     "labels": [
-        "packages: standard",
-        "minor",
-        "enhancement"
+        "component: packages: standard",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "move jsmath into its own spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3768",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3768
 
 ---
 
-archive/issue_comments_026814.json:
+archive/issue_comments_026756.json:
 ```json
 {
     "body": "I'm working on this.",
     "created_at": "2008-10-10T23:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26814",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26756",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -47,15 +46,15 @@ I'm working on this.
 
 ---
 
-archive/issue_comments_026815.json:
+archive/issue_comments_026757.json:
 ```json
 {
     "body": "Jason,\n\ncan you post the spkg here? This should be fairly orthogonal to all the other javascript work you are doing. Since the other patches need to be rebased anyway this would likey make it easier.",
     "created_at": "2008-12-04T17:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26815",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26757",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +66,15 @@ can you post the spkg here? This should be fairly orthogonal to all the other ja
 
 ---
 
-archive/issue_comments_026816.json:
+archive/issue_comments_026758.json:
 ```json
 {
     "body": "This is posted at #4267 :\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-3.6a.spkg",
     "created_at": "2008-12-04T17:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26816",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26758",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -87,15 +86,15 @@ http://sage.math.washington.edu/home/jason/notebook/jsmath-3.6a.spkg
 
 ---
 
-archive/issue_comments_026817.json:
+archive/issue_comments_026759.json:
 ```json
 {
     "body": "I think it relies on changes in #4267, though, since it changes the paths that the notebook uses to include jsmath.  All of these changes are intertangled at #4267.",
     "created_at": "2008-12-04T17:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26817",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26759",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -105,15 +104,15 @@ I think it relies on changes in #4267, though, since it changes the paths that t
 
 ---
 
-archive/issue_comments_026818.json:
+archive/issue_comments_026760.json:
 ```json
 {
     "body": "Replying to [comment:4 jason]:\n> I think it relies on changes in #4267, though, since it changes the paths that the notebook uses to include jsmath.  All of these changes are intertangled at #4267.\n\nMmh, the jsmath changes should be pretty harmless and as is #4267 is a mess. So taking care of jsmath independently and then redoing #4267 might be an option, but unless somebody else is doing the work I guess it is your call :)\n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T17:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26818",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26760",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -130,15 +129,15 @@ Michael
 
 ---
 
-archive/issue_comments_026819.json:
+archive/issue_comments_026761.json:
 ```json
 {
     "body": "I'd rather try doing it all at once, since once I'm sifting through the changes in #4267, it'll be easiest just to break it up all at once.  I'll try to get this done before the Joint Meetings (hopefully way before).",
     "created_at": "2008-12-04T18:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26819",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26761",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -148,15 +147,15 @@ I'd rather try doing it all at once, since once I'm sifting through the changes 
 
 ---
 
-archive/issue_comments_026820.json:
+archive/issue_comments_026762.json:
 ```json
 {
     "body": "(when I say \"all at once\", I mean \"breaking up #4267 into functional tickets\" instead of trying to just pull out one change and then redo #4267).\n\nLikely, #4267 will end up as several tickets:\n\n1. Make all the existing javascript code spkgs\n2. Various jquery-related cleanups of the javascript code\n3. Add TinyMCE as an (optional?) spkg\n4. Make the shift-click work (in-place wysiwyg editing).",
     "created_at": "2008-12-04T18:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26820",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26762",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -173,15 +172,15 @@ Likely, #4267 will end up as several tickets:
 
 ---
 
-archive/issue_comments_026821.json:
+archive/issue_comments_026763.json:
 ```json
 {
     "body": "#4674 is also a ticket about updating jsmath (but also includes one other thing).",
     "created_at": "2008-12-04T18:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26821",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26763",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -191,15 +190,15 @@ archive/issue_comments_026821.json:
 
 ---
 
-archive/issue_comments_026822.json:
+archive/issue_comments_026764.json:
 ```json
 {
     "body": "Replying to [comment:8 jason]:\n> #4674 is also a ticket about updating jsmath (but also includes one other thing).\n\nI agree, so I am closing this as a dupe of #4674.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T18:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26822",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26764",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -216,15 +215,15 @@ Michael
 
 ---
 
-archive/issue_comments_026823.json:
+archive/issue_comments_026765.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-12-04T18:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26823",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26765",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -234,15 +233,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_026824.json:
+archive/issue_comments_026766.json:
 ```json
 {
     "body": "Replying to [comment:7 jason]:\n> (when I say \"all at once\", I mean \"breaking up #4267 into functional tickets\" instead of trying to just pull out one change and then redo #4267).\n> \n> Likely, #4267 will end up as several tickets:\n> \n>  1. Make all the existing javascript code spkgs\n>  1. Various jquery-related cleanups of the javascript code\n>  1. Add TinyMCE as an (optional?) spkg\n>  1. Make the shift-click work (in-place wysiwyg editing).\n> \n\nI would much rather have individual tickers:\n\n* move jsmath to its own spkg (#4674)\n* move jquery to its own spkg and remove both in tree copies (#3767)\n* cleanups of jquery code\n* TinyMCE\n* in place wysiwyg editing \n\nin exactly that order. Feel free to open three tickets (since we already have the jsmath and the jquery one) and then nuke #4267 and #4184 since both of them are a mess.\n\nDoing multiple related, but independent tasks always leads to giant screw ups like #4276 where one small issue with one aspect of the ticket leads to the whole ticket going stale. \n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T18:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3768",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26824",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3768#issuecomment-26766",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

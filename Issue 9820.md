@@ -6,7 +6,7 @@ archive/issues_009820.json:
     "body": "Assignee: @malb\n\nKeywords: infinite polynomial ring\n\nThe functions `is_field` and `is_integral_domain` for infinite polynomial rings lack the keyword `proof`.  This can give rise to errors.  For example,\n\n```\nsage: R.<x> = InfinitePolynomialRing(ZZ)\nsage: A.<t> = R[[]]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9821\n\n",
     "created_at": "2010-08-27T11:53:35Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009820.json:
     "title": "problems with infinite polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9820",
-    "user": "fwclarke"
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 Assignee: @malb
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9821
 
 ---
 
-archive/issue_comments_096830.json:
+archive/issue_comments_096671.json:
 ```json
 {
     "body": "Attachment [trac_9821.patch](tarball://root/attachments/some-uuid/ticket9821/trac_9821.patch) by fwclarke created at 2010-08-27 11:59:50",
     "created_at": "2010-08-27T11:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96830",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96671",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -55,15 +55,15 @@ Attachment [trac_9821.patch](tarball://root/attachments/some-uuid/ticket9821/tra
 
 ---
 
-archive/issue_comments_096831.json:
+archive/issue_comments_096672.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-27T12:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96831",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96672",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -73,15 +73,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_096832.json:
+archive/issue_comments_096673.json:
 ```json
 {
     "body": "The patch fixes the problem.  There were actually two definitions of `is_field` in the file.  One has been deleted and the other modified.",
     "created_at": "2010-08-27T12:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96832",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96673",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -91,15 +91,15 @@ The patch fixes the problem.  There were actually two definitions of `is_field` 
 
 ---
 
-archive/issue_comments_096833.json:
+archive/issue_comments_096674.json:
 ```json
 {
     "body": "Could you add a doctest testing the proof parameter.\n\n(Note that this is a duplicate of #9589, but I think this one can get resolved quicker.)",
     "created_at": "2010-08-27T17:05:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96833",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96674",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -111,15 +111,15 @@ Could you add a doctest testing the proof parameter.
 
 ---
 
-archive/issue_comments_096834.json:
+archive/issue_comments_096675.json:
 ```json
 {
     "body": "Replying to [comment:2 mhansen]:\n\n> Could you add a doctest testing the proof parameter.\n\nThis has turned out to be more difficult than expected, but I do now have a replacement patch.  In order to create a reasonable doctest I had to correct a bug in `sage.rings.quotient_rings.QuotientRing_generic.is_integral_domain`\n\nAt the same time I have eliminated the `Integer(8)` example from that function's doctests, since that ring uses code from `sage/rings/finite_rings/integer_mod_ring.pyx` rather than from `quotient_rings`.\n\nI didn't think it worth including an example of the use of `proof` in `is_field` because the parameter is ignored.\n\n> (Note that this is a duplicate of #9589, but I think this one can get resolved quicker.)\n\n(You must have meant #9549)",
     "created_at": "2010-08-31T20:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96834",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96675",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -141,15 +141,15 @@ I didn't think it worth including an example of the use of `proof` in `is_field`
 
 ---
 
-archive/issue_comments_096835.json:
+archive/issue_comments_096676.json:
 ```json
 {
     "body": "replaces previous patch",
     "created_at": "2010-08-31T20:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96835",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96676",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -159,15 +159,15 @@ replaces previous patch
 
 ---
 
-archive/issue_comments_096836.json:
+archive/issue_comments_096677.json:
 ```json
 {
     "body": "Attachment [trace_9821-replacement.patch](tarball://root/attachments/some-uuid/ticket9821/trace_9821-replacement.patch) by fwclarke created at 2010-11-05 12:22:45\n\nThis has been fixed by #9443.  This ticket was actually a triplicate!\n\nThe bug in `is_integral_domain` for generic quotient rings is now the subject of #10219.",
     "created_at": "2010-11-05T12:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96836",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96677",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -181,15 +181,15 @@ The bug in `is_integral_domain` for generic quotient rings is now the subject of
 
 ---
 
-archive/issue_comments_096837.json:
+archive/issue_comments_096678.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-11-05T12:22:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9820",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96837",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/9820#issuecomment-96678",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 

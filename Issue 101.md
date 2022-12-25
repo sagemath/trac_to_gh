@@ -6,15 +6,13 @@ archive/issues_000101.json:
     "body": "Assignee: @williamstein\n\nSee http://sage.math.washington.edu/home/rlmill/graph_software.html for\ninitial research that Robert Miller and Emily Kirkman are doing on this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/101\n\n",
     "created_at": "2006-10-01T12:55:13Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "graph theory -- create a graph theory package for SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/101",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -30,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/101
 
 ---
 
-archive/issue_comments_000476.json:
+archive/issue_comments_000474.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-19T16:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-476",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-474",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -48,15 +46,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000477.json:
+archive/issue_comments_000475.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-09-19T17:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-477",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-475",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -66,15 +64,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_000478.json:
+archive/issue_comments_000476.json:
 ```json
 {
     "body": "Mmmh, the url http://sage.math.washington.edu:9001/graph is dead, so I will reopen this. It is also customary to only close the ticket once the code has been merged in the offical repo because more than once the patch didn't make it into the repo.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-19T17:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-478",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-476",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -88,15 +86,15 @@ Michael
 
 ---
 
-archive/issue_comments_000479.json:
+archive/issue_comments_000477.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-09-19T17:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-479",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-477",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -106,15 +104,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_000480.json:
+archive/issue_comments_000478.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2007-09-19T21:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-480",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-478",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -124,15 +122,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_000481.json:
+archive/issue_comments_000479.json:
 ```json
 {
     "body": "And now that #698 is there we can close this.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-19T21:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/101",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-481",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/101#issuecomment-479",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

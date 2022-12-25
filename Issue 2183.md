@@ -6,7 +6,7 @@ archive/issues_002183.json:
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nIn the thread \"[sage-support] Bessel argument order\"\nhttp://blog.gmane.org/gmane.comp.mathematics.sage.support/page=20\nMicheal suggested replacing all \"#random's\" by \"...\" and\nWilliam seconded this. Then William suggested adding the scip option to\nthe functions implemented. This has been done as well.\nThe patch passes \"sage -t\" has some examples added and some\ndocstring typos fixed. The patch is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2183\n\n",
     "created_at": "2008-02-16T23:14:55Z",
     "labels": [
-        "interfaces",
+        "component: interfaces",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002183.json:
     "title": "scipy and special functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2183",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2183
 
 ---
 
-archive/issue_comments_014339.json:
+archive/issue_comments_014308.json:
 ```json
 {
     "body": "Attachment [special_16-02-2008.hg](tarball://root/attachments/some-uuid/ticket2183/special_16-02-2008.hg) by @wdjoyner created at 2008-02-16 23:16:00",
     "created_at": "2008-02-16T23:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14339",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14308",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -55,15 +55,15 @@ Attachment [special_16-02-2008.hg](tarball://root/attachments/some-uuid/ticket21
 
 ---
 
-archive/issue_comments_014340.json:
+archive/issue_comments_014309.json:
 ```json
 {
     "body": "David,\n\nplease export a single patch next time since this is a single commit only. It makes review on the command line easier and in case of rejects makes it possible to edit the patch by hand.\n\nYou should also add an indicator like \"[with patch|bundle, needs review]\" so that people are aware that there is a patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T23:26:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14340",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14309",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -81,15 +81,15 @@ Michael
 
 ---
 
-archive/issue_comments_014341.json:
+archive/issue_comments_014310.json:
 ```json
 {
     "body": "There is also no reason not to still try to get this into 2.10.2, so for something as simple as this it is always recommended to assign against the current milestone.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T23:27:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14341",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14310",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -103,15 +103,15 @@ Michael
 
 ---
 
-archive/issue_comments_014342.json:
+archive/issue_comments_014311.json:
 ```json
 {
     "body": "There are some typos in the opening docstring.\n\nThe tests don't always make it clear that scipy agrees with the previous implementations, which is what I was looking for.\n\nI say apply.",
     "created_at": "2008-02-18T19:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14342",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14311",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -125,15 +125,15 @@ I say apply.
 
 ---
 
-archive/issue_comments_014343.json:
+archive/issue_comments_014312.json:
 ```json
 {
     "body": "I see two typos in the initial docstring and will fix those after I apply the bundle.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-18T20:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14343",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14312",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -147,15 +147,15 @@ Michael
 
 ---
 
-archive/issue_comments_014344.json:
+archive/issue_comments_014313.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-18T20:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14344",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14313",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -165,15 +165,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014345.json:
+archive/issue_comments_014314.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha1",
     "created_at": "2008-02-18T20:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2183",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14345",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2183#issuecomment-14314",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

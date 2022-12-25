@@ -6,7 +6,7 @@ archive/issues_009131.json:
     "body": "Assignee: GeorgSWeber\n\n\n```\n\ngcc version 4.0.1 (Apple Computer, Inc. build 5370)\n****************************************************\nBuilding a 32-bit version of Readline\nCode will be built with debugging information present. Set 'SAGE_DEBUG' to 'no' if you don't want that.\nNo Fortran compiler has been defined. This is not normally a problem.\nUsing CC=gcc\nUsing CXX=g++\nUsing FC=\nUsing F77=\nUsing SAGE_FORTRAN=\nUsing SAGE_FORTRAN_LIB=\nThe following environment variables will be exported.\nUsing CFLAGS= -O2  -g  -Wall \nUsing CXXFLAGS= -O2  -g  -Wall\nUsing FCFLAGS= -O2  -g  -Wall\nUsing F77FLAGS= -O2  -g  -Wall\nUsing CPPFLAGS=\nUsing LDFLAGS=\nUsing ABI=\nconfigure scripts and/or makefiles might override these later\n\nDeleting old readline headers and libs\n./spkg-install: line 204: ./configure: No such file or directory\n\nreal    0m0.101s\nuser    0m0.016s\nsys     0m0.062s\nsage: An error occurred while installing readline-6.0.p1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9131\n\n",
     "created_at": "2010-06-03T15:24:27Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009131.json:
     "title": "sage-4.4.3.alpha2: OS X 10.4 PPC -- readline fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9131",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -61,15 +61,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9131
 
 ---
 
-archive/issue_comments_085116.json:
+archive/issue_comments_084979.json:
 ```json
 {
     "body": "This is caused by:\n\n```\n\nreadline-6.0.p1/src/doc/readline.dvi\ntar: Skipping to next header\ntar: Archive contains obsolescent base-64 headers\n\nbzip2: Data integrity error when decompressing.\n        Input file = (stdin), output file = (stdout)\n\nIt is possible that the compressed file(s) have become corrupted.\nYou can use the -tvv option to test integrity of such files.\n\nYou can use the `bzip2recover' program to attempt to recover\ndata from undamaged sections of corrupted files.\n\ntar: Read 3272 bytes from spkg/standard/readline-6.0.p1.spkg\ntar: Child returned status 2\ntar: Error exit delayed from previous errors\n```\n",
     "created_at": "2010-06-03T16:17:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-85116",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-84979",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -100,15 +100,15 @@ tar: Error exit delayed from previous errors
 
 ---
 
-archive/issue_comments_085117.json:
+archive/issue_comments_084980.json:
 ```json
 {
     "body": "I tried using \"sage -pkg_nc\" instead of \"sage -pkg\", which produces a non-bzip2 compressed tarball spkg.  This completely fixed the above problem.  So there is so some subtle issue with bz2 compression and tar on OS X 10.4.   Crazy.\n\nHere is the non-bzip2'd readline spkg:\n\n   http://sage.math.washington.edu/home/wstein/patches/readline-6.0.p1.spkg\n\nIt's 6MB instead of 2MB.  I'm just going to leave this here for the record.    I'm not proposing this be merged into sage.",
     "created_at": "2010-06-03T16:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-85117",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-84980",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -124,15 +124,15 @@ It's 6MB instead of 2MB.  I'm just going to leave this here for the record.    I
 
 ---
 
-archive/issue_comments_085118.json:
+archive/issue_comments_084981.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-06-04T14:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-85118",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-84981",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -142,15 +142,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_085119.json:
+archive/issue_comments_084982.json:
 ```json
 {
     "body": "This went away when I used a new tarball.   So it's some random corruption...",
     "created_at": "2010-06-04T14:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-85119",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9131#issuecomment-84982",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007967.json:
     "body": "Assignee: tbd\n\nUsing `hg_sage` is raising a `DeprecationWarning`:\n\n\n```\n/data/sage/sage-4.3.1.rc0/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 is deprecated.  Use the subprocess module.\n  x = os.popen3(s)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7967\n\n",
     "created_at": "2010-01-17T18:34:34Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "DeprecationWarning for popen3 in hg_sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7967",
-    "user": "@wjp"
+    "user": "https://github.com/wjp"
 }
 ```
 Assignee: tbd
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7967
 
 ---
 
-archive/issue_comments_069511.json:
+archive/issue_comments_069391.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-17T18:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69511",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69391",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -54,15 +53,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069512.json:
+archive/issue_comments_069392.json:
 ```json
 {
     "body": "Attachment [7967_popen3.patch](tarball://root/attachments/some-uuid/ticket7967/7967_popen3.patch) by @TimDumol created at 2010-01-17 19:19:07\n\nGood job; looks good.",
     "created_at": "2010-01-17T19:19:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69512",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69392",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -74,15 +73,15 @@ Good job; looks good.
 
 ---
 
-archive/issue_comments_069513.json:
+archive/issue_comments_069393.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-17T19:19:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69513",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69393",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -92,15 +91,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069514.json:
+archive/issue_comments_069394.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-19T00:55:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69514",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7967#issuecomment-69394",
+    "user": "https://github.com/rlmill"
 }
 ```
 

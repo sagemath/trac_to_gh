@@ -6,7 +6,7 @@ archive/issues_006301.json:
     "body": "Assignee: @williamstein\n\nCC:  @rbeezer ylchapuy\n\nKeywords: Hadamard matrix product\n\nThat is, given a matrix A and another matrix B (of the same dimensions), form C such that C[i, j] = A[i, j] * B[i, j].\n\nIssue created by migration from https://trac.sagemath.org/ticket/6301\n\n",
     "created_at": "2009-06-15T16:12:18Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006301.json:
     "title": "implement the Hadamard product of two matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6301",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6301
 
 ---
 
-archive/issue_comments_050265.json:
+archive/issue_comments_050169.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-07-14T22:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50265",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50169",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -51,15 +51,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_050266.json:
+archive/issue_comments_050170.json:
 ```json
 {
     "body": "Patch overview:\n\n`elementwise_product()` in `matrix2.pyx` checks inputs for proper sizes, and coerces base rings, etc.\n\nThen two versions of `_elementwise_product()` (in `matrix_dense.pyx` and `matrix_sparse.pyx`) take over and do the actual work in what should be a fairly efficient manner, given the generality implied.  \n\nMore efficient implementations are certainly possible for more specialized classes.  The intent here is to begin with a correct and general implementation that is moderately efficient, primarily to make the functionality available in Sage.",
     "created_at": "2009-07-14T22:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50266",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50170",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -75,15 +75,15 @@ More efficient implementations are certainly possible for more specialized class
 
 ---
 
-archive/issue_comments_050267.json:
+archive/issue_comments_050171.json:
 ```json
 {
     "body": "Changing keywords from \"Hadamard matrix product\" to \"elementwise Hadamard matrix product\".",
     "created_at": "2009-07-14T22:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50267",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50171",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -93,15 +93,15 @@ Changing keywords from "Hadamard matrix product" to "elementwise Hadamard matrix
 
 ---
 
-archive/issue_comments_050268.json:
+archive/issue_comments_050172.json:
 ```json
 {
     "body": "Attachment [trac_6301_elementwise_matrix_product.patch](tarball://root/attachments/some-uuid/ticket6301/trac_6301_elementwise_matrix_product.patch) by @rbeezer created at 2009-07-14 22:33:02",
     "created_at": "2009-07-14T22:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50268",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50172",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -111,15 +111,15 @@ Attachment [trac_6301_elementwise_matrix_product.patch](tarball://root/attachmen
 
 ---
 
-archive/issue_comments_050269.json:
+archive/issue_comments_050173.json:
 ```json
 {
     "body": "Nice work!  This all looks great.  Doctests in these files pass as well.  Positive review.",
     "created_at": "2009-07-19T07:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50269",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50173",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -129,15 +129,15 @@ Nice work!  This all looks great.  Doctests in these files pass as well.  Positi
 
 ---
 
-archive/issue_comments_050270.json:
+archive/issue_comments_050174.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-19T14:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50270",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6301#issuecomment-50174",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

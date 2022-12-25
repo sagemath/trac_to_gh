@@ -6,15 +6,14 @@ archive/issues_006069.json:
     "body": "Assignee: somebody\n\nCC:  acleone @robert-marik\n\nIf someone attempts to access a URL for a published worksheet that no longer exists (perhaps because the URL changed when the worksheet went through a published to unpublished to published cycle), or the URL was mistyped, they get a blank page titled \"Error | Sage Notebook\", with no hint on what to do to resolve the problem.\n\nIf they are trying to access a published worksheet that cannot be found, it is probably useful to redirect to the page with the list of published worksheets, perhaps after showing an error message like \"There is no worksheet currently available at this URL. You will be redirected to the <a href='URL of published worksheets index'>index of published worksheets</a> in 15 seconds.\"\n\nThis may be related to ticket 5988:\n\nhttp://trac.sagemath.org/sage_trac/ticket/5988\n\nIssue created by migration from https://trac.sagemath.org/ticket/6069\n\n",
     "created_at": "2009-05-18T13:16:06Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "Blank notebook page when loading URL for published sheet that is AWOL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6069",
-    "user": "khorton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/khorton"
 }
 ```
 Assignee: somebody
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6069
 
 ---
 
-archive/issue_comments_048294.json:
+archive/issue_comments_048203.json:
 ```json
 {
     "body": "Attachment [trac_6069-missing-published-worksheet.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing-published-worksheet.patch) by @TimDumol created at 2010-01-18 19:53:09\n\nThis says that \"There is no published worksheet with name '%s'\" instead.",
     "created_at": "2010-01-18T19:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48294",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48203",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -57,15 +56,15 @@ This says that "There is no published worksheet with name '%s'" instead.
 
 ---
 
-archive/issue_comments_048295.json:
+archive/issue_comments_048204.json:
 ```json
 {
     "body": "I think the previous message \"The user 'pub' has no worksheet '%s'\" was a bit confusing, but it does work. Feel free to ignore the patch and close this.",
     "created_at": "2010-01-18T19:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48295",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48204",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -75,15 +74,15 @@ I think the previous message "The user 'pub' has no worksheet '%s'" was a bit co
 
 ---
 
-archive/issue_comments_048296.json:
+archive/issue_comments_048205.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-18T19:54:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48296",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48205",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -93,15 +92,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_048297.json:
+archive/issue_comments_048206.json:
 ```json
 {
     "body": "Redirect to `pub/` after delay.  Apply only this patch.  sagenb repo.",
     "created_at": "2010-01-20T03:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48297",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48206",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -111,15 +110,15 @@ Redirect to `pub/` after delay.  Apply only this patch.  sagenb repo.
 
 ---
 
-archive/issue_comments_048298.json:
+archive/issue_comments_048207.json:
 ```json
 {
     "body": "Attachment [trac_6069-missing_pub_ws.2.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.2.patch) by @qed777 created at 2010-01-20 03:15:34\n\nV2 is an attempt to set up redirection.  It should also ensure for `guest` users that the error page does not include the full top bar (Settings, Log, etc.).\n\nFeel free to make changes.",
     "created_at": "2010-01-20T03:15:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48298",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48207",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -133,15 +132,15 @@ Feel free to make changes.
 
 ---
 
-archive/issue_comments_048299.json:
+archive/issue_comments_048208.json:
 ```json
 {
     "body": "V2 applies cleanly to #8051 + #7784 + #5712.",
     "created_at": "2010-01-25T04:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48299",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48208",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -151,15 +150,15 @@ V2 applies cleanly to #8051 + #7784 + #5712.
 
 ---
 
-archive/issue_comments_048300.json:
+archive/issue_comments_048209.json:
 ```json
 {
     "body": "Better titles for non-Error pages.  Apply only this patch.",
     "created_at": "2010-02-14T01:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48300",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48209",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -169,15 +168,15 @@ Better titles for non-Error pages.  Apply only this patch.
 
 ---
 
-archive/issue_comments_048301.json:
+archive/issue_comments_048210.json:
 ```json
 {
     "body": "Attachment [trac_6069-missing_pub_ws.3.patch](tarball://root/attachments/some-uuid/ticket6069/trac_6069-missing_pub_ws.3.patch) by @qed777 created at 2010-02-14 01:31:08\n\nV3 should\n\n* Fix #8234.\n* Use a title more appropriate than `Error` for certain non-Error pages (see the patch).\n* Make \"Sign Out\" redirect to \"/\" when `require_login=False`.  This is better than returning a page whose header refers to a user named \"None\" and has a broken \"Home\" link!",
     "created_at": "2010-02-14T01:31:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48301",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48210",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -193,15 +192,15 @@ V3 should
 
 ---
 
-archive/issue_comments_048302.json:
+archive/issue_comments_048211.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2010-02-14T01:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48302",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48211",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -211,15 +210,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_048303.json:
+archive/issue_comments_048212.json:
 ```json
 {
     "body": "Patel's changes look great. Anyone mind signing off mine?",
     "created_at": "2010-03-12T01:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48303",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48212",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -229,15 +228,15 @@ Patel's changes look great. Anyone mind signing off mine?
 
 ---
 
-archive/issue_comments_048304.json:
+archive/issue_comments_048213.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-12T18:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48304",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48213",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -247,15 +246,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_048305.json:
+archive/issue_comments_048214.json:
 ```json
 {
     "body": "(I'm not changing any notebook code in Sage 4.4.)",
     "created_at": "2010-04-23T04:41:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48305",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48214",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -265,15 +264,15 @@ archive/issue_comments_048305.json:
 
 ---
 
-archive/issue_comments_048306.json:
+archive/issue_comments_048215.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-04T04:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48306",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6069#issuecomment-48215",
+    "user": "https://github.com/TimDumol"
 }
 ```
 

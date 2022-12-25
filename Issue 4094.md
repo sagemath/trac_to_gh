@@ -6,15 +6,14 @@ archive/issues_004094.json:
     "body": "Assignee: tbd\n\n#4078 was done wrong.  Any reference to eval_bool should be removed.  Non-async calls *must never be used*.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4094\n\n",
     "created_at": "2008-09-09T20:52:27Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "evaluate all causes massive browser hang",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4094",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: tbd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4094
 
 ---
 
-archive/issue_comments_029533.json:
+archive/issue_comments_029474.json:
 ```json
 {
     "body": "Changing assignee from tbd to boothby.",
     "created_at": "2008-09-09T20:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29533",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29474",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing assignee from tbd to boothby.
 
 ---
 
-archive/issue_comments_029534.json:
+archive/issue_comments_029475.json:
 ```json
 {
     "body": "Changing component from algebra to notebook.",
     "created_at": "2008-09-09T20:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29534",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29475",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing component from algebra to notebook.
 
 ---
 
-archive/issue_comments_029535.json:
+archive/issue_comments_029476.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2008-09-09T21:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29535",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29476",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_029536.json:
+archive/issue_comments_029477.json:
 ```json
 {
     "body": "Attachment [4094-eval_all.patch](tarball://root/attachments/some-uuid/ticket4094/4094-eval_all.patch) by boothby created at 2008-09-09 23:01:00",
     "created_at": "2008-09-09T23:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29536",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29477",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -101,15 +100,15 @@ Attachment [4094-eval_all.patch](tarball://root/attachments/some-uuid/ticket4094
 
 ---
 
-archive/issue_comments_029537.json:
+archive/issue_comments_029478.json:
 ```json
 {
     "body": "The attached does *NOT* depend on #4078.  In fact, it conflicts hugely.  If it is possible to reverse #4078, please do so.  Otherwise, I'll resolve the conflict tonight.",
     "created_at": "2008-09-09T23:02:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29537",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29478",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -119,15 +118,15 @@ The attached does *NOT* depend on #4078.  In fact, it conflicts hugely.  If it i
 
 ---
 
-archive/issue_comments_029538.json:
+archive/issue_comments_029479.json:
 ```json
 {
     "body": "Attachment [trac_4094.patch](tarball://root/attachments/some-uuid/ticket4094/trac_4094.patch) by @mwhansen created at 2008-09-10 00:24:51",
     "created_at": "2008-09-10T00:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29538",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29479",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -137,15 +136,15 @@ Attachment [trac_4094.patch](tarball://root/attachments/some-uuid/ticket4094/tra
 
 ---
 
-archive/issue_comments_029539.json:
+archive/issue_comments_029480.json:
 ```json
 {
     "body": "This is a better fix.  Apply only trac_4094.patch which should apply fine against the current tree.",
     "created_at": "2008-09-10T00:25:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29539",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29480",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -155,15 +154,15 @@ This is a better fix.  Apply only trac_4094.patch which should apply fine agains
 
 ---
 
-archive/issue_comments_029540.json:
+archive/issue_comments_029481.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-10T01:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29540",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29481",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +172,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029541.json:
+archive/issue_comments_029482.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc2",
     "created_at": "2008-09-10T01:11:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29541",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4094#issuecomment-29482",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

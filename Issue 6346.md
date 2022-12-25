@@ -6,7 +6,7 @@ archive/issues_006346.json:
     "body": "Assignee: tbd\n\nthis is the only problem:\n\n```\nsage -t -long \"devel/sage/sage/rings/number_field/number_field_rel.py\"\n**********************************************************************\nFile \"/Users/wstein/build/sage-4.0.2.rc2/devel/sage/sage/rings/number_field/number_field_rel.py\", line 1767:\n    sage: L.places()\nExpected:\n    [Relative number field morphism:\n    From: Number Field in b with defining polynomial x^2 - 5 over its base field\n    To:   Real Field with 106 bits of precision\n    Defn: b |--> -2.236067977499789696409173668937\n    c |--> -1.213411662762229634132131377426,\n    Relative number field morphism:\n    From: Number Field in b with defining polynomial x^2 - 5 over its base field\n    To:   Real Field with 106 bits of precision\n    Defn: b |--> 2.236067977499789696411548005367\n    c |--> -1.213411662762229634130492421800,\n    Relative number field morphism:\n    From: Number Field in b with defining polynomial x^2 - 5 over its base field\n    To:   Complex Field with 53 bits of precision\n    Defn: b |--> -2.23606797749979 - 2.22044604925031e-16*I\n    c |--> 0.606705831381115 - 1.45061224918844*I,\n    Relative number field morphism:\n    From: Number Field in b with defining polynomial x^2 - 5 over its base field\n    To:   Complex Field with 53 bits of precision \n    Defn: b |--> 2.23606797749979 - 4.44089209850063e-16*I\n    c |--> 0.606705831381115 - 1.45061224918844*I]\nGot:\n    [Relative number field morphism:\n      From: Number Field in b with defining polynomial x^2 - 5 over its base field\n      To:   Real Field with 106 bits of precision \n      Defn: b |--> -2.236067977499789696409173668937\n            c |--> -1.213411662762229634132131377426, Relative number field morphism:\n      From: Number Field in b with defining polynomial x^2 - 5 over its base field\n      To:   Real Field with 106 bits of precision \n      Defn: b |--> 2.236067977499789696411548005367\n            c |--> -1.213411662762229634130492421800, Relative number field morphism:\n      From: Number Field in b with defining polynomial x^2 - 5 over its base field\n      To:   Complex Field with 53 bits of precision\n      Defn: b |--> -2.23606797749979 - 1.11022302462516e-15*I\n            c |--> 0.606705831381116 - 1.45061224918844*I, Relative number field morphism:\n      From: Number Field in b with defining polynomial x^2 - 5 over its base field\n      To:   Complex Field with 53 bits of precision\n      Defn: b |--> 2.23606797749979 - 4.44089209850063e-16*I\n            c |--> 0.606705831381115 - 1.45061224918844*I]\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_54\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /Users/wstein/build/sage-4.0.2.rc2/tmp/.doctest_number_field_rel.py\n         [46.5 s]\n```\n\n\nIt's just numerical noise I think.  Replace some e- term by ... to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6346\n\n",
     "created_at": "2009-06-17T08:40:58Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006346.json:
     "title": "sage-4.0.2.rc2 build test problem on ppc os x 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6346",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -84,15 +84,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6346
 
 ---
 
-archive/issue_comments_050734.json:
+archive/issue_comments_050637.json:
 ```json
 {
     "body": "Attachment [trac_6346.patch](tarball://root/attachments/some-uuid/ticket6346/trac_6346.patch) by @williamstein created at 2009-06-17 09:05:29",
     "created_at": "2009-06-17T09:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6346",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50734",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50637",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -102,15 +102,15 @@ Attachment [trac_6346.patch](tarball://root/attachments/some-uuid/ticket6346/tra
 
 ---
 
-archive/issue_comments_050735.json:
+archive/issue_comments_050638.json:
 ```json
 {
     "body": "Looks good, and it fixes the issue.",
     "created_at": "2009-06-17T09:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6346",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50735",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50638",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -120,15 +120,15 @@ Looks good, and it fixes the issue.
 
 ---
 
-archive/issue_comments_050736.json:
+archive/issue_comments_050639.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-17T23:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6346",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50736",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6346#issuecomment-50639",
+    "user": "https://github.com/craigcitro"
 }
 ```
 

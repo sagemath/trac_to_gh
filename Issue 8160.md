@@ -6,15 +6,14 @@ archive/issues_008160.json:
     "body": "Assignee: @williamstein\n\nCC:  @qed777\n\nThis patch adds a 'text' option to sphinxify: use `sphinxify(s, format='text')` or `sphinxify(s, format='html')`, where format is optional with default value 'html'.  The intended use is in sage.misc.sagedoc for producing docstrings from the command line.  I'll create another ticket for that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8160\n\n",
     "created_at": "2010-02-03T02:20:23Z",
     "labels": [
-        "notebook",
-        "minor",
-        "enhancement"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "add 'text' option to sphinxify",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8160",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8160
 
 ---
 
-archive/issue_comments_071773.json:
+archive/issue_comments_071652.json:
 ```json
 {
     "body": "Attachment [trac_8160-sphinxify.patch](tarball://root/attachments/some-uuid/ticket8160/trac_8160-sphinxify.patch) by @jhpalmieri created at 2010-02-03 02:30:58\n\napply to sagenb repo",
     "created_at": "2010-02-03T02:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71773",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71652",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -51,15 +50,15 @@ apply to sagenb repo
 
 ---
 
-archive/issue_comments_071774.json:
+archive/issue_comments_071653.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-03T02:33:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71774",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71653",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_071775.json:
+archive/issue_comments_071654.json:
 ```json
 {
     "body": "Attachment [trac_8160-sphinxify_text.patch](tarball://root/attachments/some-uuid/ticket8160/trac_8160-sphinxify_text.patch) by @qed777 created at 2010-02-03 04:47:41\n\nRebased vs. #8102.  Apply only this patch.  sagenb repo.",
     "created_at": "2010-02-03T04:47:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71775",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71654",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -89,15 +88,15 @@ Rebased vs. #8102.  Apply only this patch.  sagenb repo.
 
 ---
 
-archive/issue_comments_071776.json:
+archive/issue_comments_071655.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-03T04:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71776",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71655",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -107,15 +106,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_071777.json:
+archive/issue_comments_071656.json:
 ```json
 {
     "body": "I've attached a version rebased against #8102 --- it seemed a bit easier than the opposite.  Positive review for the first patch, at least.",
     "created_at": "2010-02-03T04:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71777",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71656",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -125,15 +124,15 @@ I've attached a version rebased against #8102 --- it seemed a bit easier than th
 
 ---
 
-archive/issue_comments_071778.json:
+archive/issue_comments_071657.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-05T00:37:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71778",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8160#issuecomment-71657",
+    "user": "https://github.com/qed777"
 }
 ```
 

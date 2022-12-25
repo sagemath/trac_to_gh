@@ -6,15 +6,13 @@ archive/issues_006012.json:
     "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer fidelbarrera\n\nWith this patch, you can use pdflatex instead of latex, in two different ways: use a %pdflatex cell in the notebook, or call\n\n```\nlatex.pdflatex(True)\n```\n\nafter which any use of latex (in a %latex cell or using the `view` command) will use pdflatex.\n\nThis way, if you have the most recent version of pgf installed, as well as the tkz-graph package, you can get pictures like those at [http://altermundus.com/pages/graph.html](http://altermundus.com/pages/graph.html) in your notebook.  (I think that tkz-graph might require using pdflatex instead of latex.  In any case, I could successfully get the graph in a %pdflatex cell -- see graph.png -- but not in a %latex cell.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/6012\n\n",
     "created_at": "2009-05-09T17:45:19Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] allow use of pdflatex instead of latex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6012",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jhpalmieri
@@ -39,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6012
 
 ---
 
-archive/issue_comments_047840.json:
+archive/issue_comments_047749.json:
 ```json
 {
     "body": "Attachment [graph.png](tarball://root/attachments/some-uuid/ticket6012/graph.png) by @jhpalmieri created at 2009-05-09 17:47:06\n\nscreenshot",
     "created_at": "2009-05-09T17:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47840",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47749",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -59,15 +57,15 @@ screenshot
 
 ---
 
-archive/issue_comments_047841.json:
+archive/issue_comments_047750.json:
 ```json
 {
     "body": "`%latex` seems to fail on the use of `dvipng`.  When I run dvipng outside of Sage on a dvi file having graphs in it, I get boatloads of warnings:\n\n`dvipng warning: PostScript environment contains DVI commands`\n\nthe failures seem to occur when dvipng calls Ghostscript - I see errors from Ghostscript when I run dvipng outside of Sage, and if I use `%latex_debug` in the notebook, the last output is a Ghostscript error message.\n\nOutside of Sage, I can take source with tkz-graph code, run (plain)latex, then convert the dvi to Postscript with dvips, then convert to PNG with imagemagick's convert.  I get full pages with numbers, and the resolution looks a bit crummy, but I presume that can be fixed with options.  \n\n(1)  Is it reasonable to expect  dvipng  to process these dvi files right?  Should we (me) contact the tkz-graph author to inquire?\n\n(2)  Is it worth the trouble to go  latex->dvi->ps->png  for a `%latex` cell, or just be content with `%pdflatex` working properly?\n\nThis is very nice.  To be able to go get a pretty PNG of a graph in the notebook with just a few lines of code will be fantastic.  I'll be working on a review.",
     "created_at": "2009-05-09T20:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47841",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47750",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -89,15 +87,15 @@ This is very nice.  To be able to go get a pretty PNG of a graph in the notebook
 
 ---
 
-archive/issue_comments_047842.json:
+archive/issue_comments_047751.json:
 ```json
 {
     "body": "> %latex seems to fail on the use of dvipng. \n\nThis isn't because of this patch, is it?  I can't get these graphs to appear using a %latex cell with or without the patch -- I can only use %pdflatex with the patch.\n\n> Outside of Sage, I can take source with tkz-graph code, run (plain)latex, then convert the dvi to Postscript with dvips, then convert to PNG with imagemagick's convert. I get full pages with numbers, and the resolution looks a bit crummy, but I presume that can be fixed with options.\n\nCan you temporarily move dvipng out of your path and see what Sage does then?  (If it can't find dvipng, then it should use dvips and convert.)  That works for me.  I don't know what the problem with dvipng is.  Is it worth trying to see (in Latex()) if dvipng gives error messages and if so, switching to the latex -> dvi -> ps -> png conversion?",
     "created_at": "2009-05-09T20:42:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47842",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47751",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -113,15 +111,15 @@ Can you temporarily move dvipng out of your path and see what Sage does then?  (
 
 ---
 
-archive/issue_comments_047843.json:
+archive/issue_comments_047752.json:
 ```json
 {
     "body": "Replying to [comment:3 jhpalmieri]:\n> This isn't because of this patch, is it?  I can't get these graphs to appear using a %latex cell with or without the patch -- I can only use %pdflatex with the patch.\n\nIt's not the patch's fault.  It's dvipng failing no matter what on the dvi created by tkz-graph.  Somewhere I got the impression  tkz-graph  played fast and loose with \\special's or something like that, which is why I previously thought pdflatex was *required*.  But I'm not sure I understand the exact nature of the problem here, so I shouldn't throw stones.\n\n> Can you temporarily move dvipng out of your path and see what Sage does then?  (If it can't find dvipng, then it should use dvips and convert.)  That works for me.  I don't know what the problem with dvipng is.  Is it worth trying to see (in Latex()) if dvipng gives error messages and if so, switching to the latex -> dvi -> ps -> png conversion?\n\n`have_dvipng()` caches its result.  :-(  That cost me 5 minutes.  ;-)  But, yes, that works - renamed dvipng temporarily, loaded up the preamble in one cell, used `%latex_debug` in a second cell, followed with the Altermundus graph in the screenshot,  Great-looking PNG in the notebook results.\n\ndvipng has a `--picky` switch which is designed for just this (I think, \\specials etc).  It results in no output on warnings - I just tested it.  Guess you could then test for the presence of output (are filenames unique across runs?) or perhaps test for newer output with the right name.  Or maybe there is something easier.\n\nI got `view()` tested in the notebook, which was a bit of a hack to get the right string in.  Let me know how you want to proceed and I'm ready to give this a positive review.  I'll be in/out the rest of the afternoon before a 6 PM engagement and have IRC on.",
     "created_at": "2009-05-09T21:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47843",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47752",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -142,15 +140,15 @@ I got `view()` tested in the notebook, which was a bit of a hack to get the righ
 
 ---
 
-archive/issue_comments_047844.json:
+archive/issue_comments_047753.json:
 ```json
 {
     "body": "I think that if you're happy with the patch, we should put it in.  The issue with dvipng (or whatever) is separate, so should be dealt with separately, if at all.",
     "created_at": "2009-05-09T21:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47844",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47753",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -160,15 +158,15 @@ I think that if you're happy with the patch, we should put it in.  The issue wit
 
 ---
 
-archive/issue_comments_047845.json:
+archive/issue_comments_047754.json:
 ```json
 {
     "body": "Sounds good.  I'm very happy with this patch.  Has a limited scope and passes tests on affected files.  Positive review.\n\nAdds a \"pdflatex\" chain, so `%pdflatex` in notebook cells will produce PNG's using pdflatex, or at the command-line `view()` will produce a PDF and call a PDF viewer.  This functionality allows the tkz-graph package to work, once the package is included in the latex preamble.\n\nExposes some problems with the dvipng utility on some dvi files, which could be routed through this new pdflatex chain as an alternative.",
     "created_at": "2009-05-09T21:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47845",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47754",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -182,15 +180,15 @@ Exposes some problems with the dvipng utility on some dvi files, which could be 
 
 ---
 
-archive/issue_comments_047846.json:
+archive/issue_comments_047755.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-13T18:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47846",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47755",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -200,15 +198,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_047847.json:
+archive/issue_comments_047756.json:
 ```json
 {
     "body": "Merged in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-13T18:12:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47847",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6012#issuecomment-47756",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

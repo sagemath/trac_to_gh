@@ -6,7 +6,7 @@ archive/issues_007107.json:
     "body": "Assignee: tbd\n\nCC:  georgsweber @kcrisman\n\nThe following is on skynet's varro\n\n\n```\n/bin/sh ../libtool --tag=CC   --mode=link gcc  -O2  -Wl,-search_paths_first  -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib -o troot troot.o libfrtests.la -lm ../libmpfr.la -lgmp\nlibtool: link: gcc -O2 -Wl,-search_paths_first -o .libs/troot troot.o  -L/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib ./.libs/libfrtests.a -lm ../.libs/libmpfr.dylib /home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/local/lib/libgmp.dylib\npowerpc-apple-darwin8-gcc-4.0.1: Internal error: Killed (program collect2)\nPlease submit a full bug report.\nSee <URL:http://developer.apple.com/bugreporter> for instructions.\nmake[4]: *** [troot] Error 1\nmake[3]: *** [check-am] Error 2\nmake[2]: *** [check-recursive] Error 1\nThere was a problem during the mpfr tests.\n\nreal    6m19.637s\nuser    2m23.696s\nsys     2m28.620s\nsage: An error occurred while installing mpfr-2.4.1.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/spkg/build/mpfr-2.4.1.p0 and type 'make'.\nInstead type \"/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/spkg/build/mpfr-2.4.1.p0\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/mpfr-2.4.1.p0] Error 1\n\nreal    62m55.453s\nuser    34m21.128s\nsys     16m39.873s\nError building Sage.\n./sage -b\nThere is no directory '/home/wstein/screen/varro/build/sage-4.1.2.rc1.alpha1/devel/sage'\n\nreal    0m0.132s\nuser    0m0.019s\nsys     0m0.060s\nmake: *** [testlong] Error 1\nvarro:~/screen/varro wstein$ gcc -v\nUsing built-in specs.\nTarget: powerpc-apple-darwin8\nConfigured with: /var/tmp/gcc/gcc-5370~2/src/configure --disable-checking -enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/lib --build=powerpc-apple-darwin8 --host=powerpc-apple-darwin8 --target=powerpc-apple-darwin8\nThread model: posix\ngcc version 4.0.1 (Apple Computer, Inc. build 5370)\n```\n\n\nNote that the above error occurs after mpfr successfully builds during building of the test suite.  Possible fixes:\n\n* do not run spkg-check on OS X 10.4 (then the build continues fine... for a while -- i only watched a few minutes)\n\n* fix the source of the problem (probably a compiler bug on OS X, so impossible)\n\n* deprecate support for OS X 10.4.\n\nI like the first option above. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7107\n\n",
     "created_at": "2009-10-04T06:15:26Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007107.json:
     "title": "sage does not build on ppc os x 10.4 anymore, failing with mpfr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7107",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -89,15 +89,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7107
 
 ---
 
-archive/issue_comments_058844.json:
+archive/issue_comments_058733.json:
 ```json
 {
     "body": "The first option also works on the PPC G4 X.4 box I am trying.  Hopefully the build will complete; it's already through mpfi, Cython, Pynac, ... which is a good sign.  \n\nIn this case, I guess one would need something like the following at the VERY end of the spkg-install file:\n\n```\n-cd ..; ./spkg-check\n+if [`uname` = \"Darwin\" and something else to show it's X.4]; then\n+        shell equivalent of pass\n+else\n+        cd ..; ./spkg-check\n+fi\n```\n\nWhere I have no idea what the shell equivalent of pass is, and where I don't know how to check X.4 - I feel like there is some variable set sometimes that checks for things like 8.11.0 (which is the version of the box I'm running this on), but I can't remember what/where it is.",
     "created_at": "2009-10-07T16:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58844",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58733",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -120,15 +120,15 @@ Where I have no idea what the shell equivalent of pass is, and where I don't kno
 
 ---
 
-archive/issue_comments_058845.json:
+archive/issue_comments_058734.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-07T16:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58845",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58734",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -138,15 +138,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_058846.json:
+archive/issue_comments_058735.json:
 ```json
 {
     "body": "Just to confirm that this seems to work.  I can find_root, I can do factor(factorial(100000)), and various other things.  Doesn't mean it's perfect, but at least Sage will build and run if you don't do the spkg-check for mpfr.",
     "created_at": "2009-10-08T00:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58846",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58735",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -156,15 +156,15 @@ Just to confirm that this seems to work.  I can find_root, I can do factor(facto
 
 ---
 
-archive/issue_comments_058847.json:
+archive/issue_comments_058736.json:
 ```json
 {
     "body": "Another followup - I changed the script back to include spkg-check, sage -f'ed the spkg, and all mpfr test files built, and all mpfr tests passed.    Again, this is PPC G4 box running OSX.4.  Is it possible to try this again on varro?",
     "created_at": "2009-10-08T11:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58847",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58736",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -174,15 +174,15 @@ Another followup - I changed the script back to include spkg-check, sage -f'ed t
 
 ---
 
-archive/issue_comments_058848.json:
+archive/issue_comments_058737.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-14T16:09:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58848",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7107#issuecomment-58737",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004181.json:
     "body": "Assignee: somebody\n\nOn both my Mac OS X 10.4 / Xcode 25 boxes, one Intel and one PPC, the following Sage code runs through fine (hit return twice):\n\nsage: for p in prime_range(32768, 100000):  EllipticCurve(GF(p),[0,1,1,10,13]) \n\nPlease note that the length of the interval is almost 70000, so quite some primes are involved.\nBut if the startpoint of the range is lower the 32768, then Sage crashes, e.g. for:\n\nsage: for p in prime_range(31300, 32600):  EllipticCurve(GF(p),[0,1,1,10,13]) \n\n(note that the length of the interval is only 1300) one gets the following message with sage crashed:\n\n\nerror: no more memory\nSystem 8672k:8672k Appl 8233k/438k Malloc 4030k/33k Valloc 4608k/404k Pages 1071/81 Regions 9:9\n\nhalt 14\n\n\nThe problem/bug can't be due to low physical RAM, or due to not enough virtual RAM for processes, since then the first line of code would have to crash, too. Which is not the case.\n\nIt is not related to the mathematical code, since if the length of the interval of primes is only 100 or less, the code runs fine for startpoints above and (!) below 32768.\n\nThe bug is triggered also if consecutively several small intervals (below 32768) are calculated, so it seems to be some caching / stack / heap / whatsoever related issue.\nIt does not seem to occur on platforms other than Mac (OS X 10.4 only?), so I put this under the \"porting\" issues.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4181\n\n",
     "created_at": "2008-09-23T22:25:28Z",
     "labels": [
-        "porting",
-        "major",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Mysterious error somewhat related to 16-Bit signed integers on Mac OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4181",
-    "user": "GeorgSWeber"
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 Assignee: somebody
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4181
 
 ---
 
-archive/issue_comments_030334.json:
+archive/issue_comments_030273.json:
 ```json
 {
     "body": "As expected nothing bad happen under valgrind on 64 bit, but I will take a closer look with valgrind running on a 32 bit Linux box. It seems too much of a coincidence to not be related to something close to `2^15-1` or thereabout.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-23T22:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30334",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30273",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -74,15 +73,15 @@ Michael
 
 ---
 
-archive/issue_comments_030335.json:
+archive/issue_comments_030274.json:
 ```json
 {
     "body": "Just for the record: once tis ticket is fixed, most probably #3760 will be resolved, too.",
     "created_at": "2008-11-15T22:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30335",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30274",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -92,15 +91,15 @@ Just for the record: once tis ticket is fixed, most probably #3760 will be resol
 
 ---
 
-archive/issue_comments_030336.json:
+archive/issue_comments_030275.json:
 ```json
 {
     "body": "relies on #5344, apply after this patch after the patch there (to Singular spkg)",
     "created_at": "2009-02-22T22:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30336",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30275",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -110,15 +109,15 @@ relies on #5344, apply after this patch after the patch there (to Singular spkg)
 
 ---
 
-archive/issue_comments_030337.json:
+archive/issue_comments_030276.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2009-02-22T22:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30337",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30276",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -128,15 +127,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_030338.json:
+archive/issue_comments_030277.json:
 ```json
 {
     "body": "Attachment [trac-4181.patch](tarball://root/attachments/some-uuid/ticket4181/trac-4181.patch) by GeorgSWeber created at 2009-02-22 22:13:25\n\nWell, what shall I say: apply the two patches (the one from #5344 and this one), and the long standing \"long\" doctest for \"ell_finite_field.py\" now succeeds on sage 3.3, finally:\n\n```\nsage -t -long \"local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\"\n         [53.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 53.9 seconds\n```\n\n\nI'll test 666 rings (#3760) in a minute.\n\nCheers, gsw",
     "created_at": "2009-02-22T22:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30338",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30277",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -162,33 +161,15 @@ Cheers, gsw
 
 ---
 
-archive/issue_comments_030339.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2009-02-22T22:26:27Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/4181",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30339",
-    "user": "mabshoff"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_030340.json:
+archive/issue_comments_030278.json:
 ```json
 {
     "body": "This will not work and has been tried before. Please do not repurpose tickets since this is not what this ticket is about, but open a new one in case the Singular.spkg needs to be changed. You did that at #5344, but then why change the subject of this ticket?\n\nIn general this is a dupe of #3760, so I am closing this as one :)\n\nIf you want a less messy ticket to switch to using \n\nCheers,\n\nMichael",
     "created_at": "2009-02-22T22:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30340",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30278",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -206,15 +187,15 @@ Michael
 
 ---
 
-archive/issue_comments_030341.json:
+archive/issue_comments_030279.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-02-22T22:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30341",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30279",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -224,15 +205,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_030342.json:
+archive/issue_comments_030280.json:
 ```json
 {
     "body": "Sure, let's close dupes.",
     "created_at": "2009-02-23T08:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30342",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30280",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -242,15 +223,15 @@ Sure, let's close dupes.
 
 ---
 
-archive/issue_comments_030343.json:
+archive/issue_comments_030281.json:
 ```json
 {
     "body": "Replying to [comment:6 GeorgSWeber]:\n> Sure, let's close dupes.\n\nAbsolutely.\n\nFor the record: It only became clear two or maybe three days ago that all these problems on OSX were related to libSingular+mmap, so back in the day when this ticket was opened it was the correct way to do so.\n\nToo bad this path series is being held up by the minpoly bug, but I am hoping someone will fix that issue soon, too.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-23T08:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30343",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30281",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -271,15 +252,15 @@ Michael
 
 ---
 
-archive/issue_comments_030344.json:
+archive/issue_comments_030282.json:
 ```json
 {
     "body": "Hmm, we might need this patch after all, so we can either attach it to another ticket, i.e. #3760, or close that one as a dupe and reopen this one. I will test this patch now on a 32 bit OSX box, so let's wait and see for now.\n\nThe whole issue is spread out over too many tickets and has gotten pretty messy, so let's try to get this resolved :)\n\nCheers,\n\nMichale",
     "created_at": "2009-02-23T14:50:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30344",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30282",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -295,15 +276,15 @@ Michale
 
 ---
 
-archive/issue_comments_030345.json:
+archive/issue_comments_030283.json:
 ```json
 {
     "body": "Changing component from porting to packages.",
     "created_at": "2009-02-23T18:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30345",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30283",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -313,15 +294,15 @@ Changing component from porting to packages.
 
 ---
 
-archive/issue_comments_030346.json:
+archive/issue_comments_030284.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2009-02-23T18:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30346",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30284",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -331,15 +312,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_030347.json:
+archive/issue_comments_030285.json:
 ```json
 {
     "body": "Ok, reopened and made a blocker against 3.4 again. I am now quite confident we will merge this :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-23T18:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30347",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30285",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -353,15 +334,15 @@ Michael
 
 ---
 
-archive/issue_comments_030348.json:
+archive/issue_comments_030286.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2009-02-23T22:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30348",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30286",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -371,15 +352,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_030349.json:
+archive/issue_comments_030287.json:
 ```json
 {
     "body": "Positive review. Build on OSX 32 bit, OSX 64 bit, FC 10 and also sage.math. I did valgrind the *entire* test suite on sage.math.\n\nGeorge's patch is integrated into \n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG/singular-3-0-4-4-20080711.p4.spkg\n\nCheers,\n\nMichael",
     "created_at": "2009-02-23T22:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30349",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30287",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -397,15 +378,15 @@ Michael
 
 ---
 
-archive/issue_comments_030350.json:
+archive/issue_comments_030288.json:
 ```json
 {
     "body": "Resolution changed from duplicate to ",
     "created_at": "2009-02-23T22:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30350",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30288",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -415,15 +396,15 @@ Resolution changed from duplicate to
 
 ---
 
-archive/issue_comments_030351.json:
+archive/issue_comments_030289.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-24T19:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30351",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30289",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -433,15 +414,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030352.json:
+archive/issue_comments_030290.json:
 ```json
 {
     "body": "Merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T19:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4181",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30352",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4181#issuecomment-30290",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_008869.json:
     "body": "Assignee: @aghitza\n\nRight now, we have the following behavior:\n\n\n```\nsage: float(CC(1.0))\n1.0\n\n\nsage: float(CDF(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/rings/complex_double.so in sage.rings.complex_double.ComplexDoubleElement.__float__ (sage/rings/complex_double.c:6532)()\n\nTypeError: can't convert complex to float; use abs(z)\n\n\nsage: float(complex(1.0))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\nTypeError: can't convert complex to float \n```\n\n\nAs robertwb and was voted (on http://trac.sagemath.org/sage_trac/ticket/5400#comment:12 and on sage-devel), we should make float conversion succeed if the imaginary part is zero.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8869\n\n",
     "created_at": "2010-05-04T15:56:30Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "float(CDF(1)) should return 1.0, not throw an error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8869",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @aghitza
@@ -58,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8869
 
 ---
 
-archive/issue_comments_081525.json:
+archive/issue_comments_081391.json:
 ```json
 {
     "body": "Attachment [complex-float.patch](tarball://root/attachments/some-uuid/ticket8869/complex-float.patch) by @jasongrout created at 2010-05-04 16:17:13",
     "created_at": "2010-05-04T16:17:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81525",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81391",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -76,15 +75,15 @@ Attachment [complex-float.patch](tarball://root/attachments/some-uuid/ticket8869
 
 ---
 
-archive/issue_comments_081526.json:
+archive/issue_comments_081392.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-05-04T16:17:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81526",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81392",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -94,15 +93,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_081527.json:
+archive/issue_comments_081393.json:
 ```json
 {
     "body": "The patch needs to have commit message, and doctests need to be run.",
     "created_at": "2010-05-04T16:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81527",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81393",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -112,15 +111,15 @@ The patch needs to have commit message, and doctests need to be run.
 
 ---
 
-archive/issue_comments_081528.json:
+archive/issue_comments_081394.json:
 ```json
 {
     "body": "See also http://groups.google.com/group/sage-devel/browse_thread/thread/75b8f85d22499ceb#\n\n(I don't like the use of Python conversion functions on Sage objects.)\n\nWhy (only) suggest use of `abs()`? What about `real_part()`?\nOr even `imag_part()` and `arg()`, perhaps `norm()`, too?\n\nIs `abs()` really more natural than `real_part()`?",
     "created_at": "2010-05-06T01:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81528",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81394",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -137,15 +136,15 @@ Is `abs()` really more natural than `real_part()`?
 
 ---
 
-archive/issue_comments_081529.json:
+archive/issue_comments_081395.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-26T19:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81529",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81395",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -155,15 +154,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_081530.json:
+archive/issue_comments_081396.json:
 ```json
 {
     "body": "Ready for review.  Leif's comment seems reasonable, so I added one (!) extra option in the error message.  Passes tests on these two files.",
     "created_at": "2010-05-26T19:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81530",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81396",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -173,15 +172,15 @@ Ready for review.  Leif's comment seems reasonable, so I added one (!) extra opt
 
 ---
 
-archive/issue_comments_081531.json:
+archive/issue_comments_081397.json:
 ```json
 {
     "body": "Attachment [trac_8869.patch](tarball://root/attachments/some-uuid/ticket8869/trac_8869.patch) by @kcrisman created at 2010-05-26 19:58:59\n\nBased on 4.4.2, apply only this patch",
     "created_at": "2010-05-26T19:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81531",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81397",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -193,15 +192,15 @@ Based on 4.4.2, apply only this patch
 
 ---
 
-archive/issue_comments_081532.json:
+archive/issue_comments_081398.json:
 ```json
 {
     "body": "Well, `__long__()` could equally well succeed if the *fractional* (and imaginary) part is zero... ;-)\n\n(And note that `int(1.1)` **silently** *truncates*; i.e. the current situation is overall not very consistent, as I mentioned in the thread.)\n\nNevertheless, I'll test it as soon as the \"normal\" 4.4.3.alpha0 ptestlong finishes on my Pentium 4, just wait a few hours... ;-)",
     "created_at": "2010-05-26T21:54:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81532",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81398",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -215,15 +214,15 @@ Nevertheless, I'll test it as soon as the "normal" 4.4.3.alpha0 ptestlong finish
 
 ---
 
-archive/issue_comments_081533.json:
+archive/issue_comments_081399.json:
 ```json
 {
     "body": "I don't think we are trying to be contentious here.  Yes, there are inconsistencies, but that is just to be expected (I would even say it follows from Arrow's Theorem).  The point is to make it as natural to mathematicians as possible, and float(CDF(1)) certainly smells like 1.0 to me.  int is a little different, but it seems to me that since Python isn't consistent anyways\n\n```\n>>> int(1.1)\n1\n>>> float(1+0j)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in ?\nTypeError: can't convert complex to float; use abs(z)\n```\n\nwe might as well make the best of it and let int be the \"round closest to zero\" function, in essence.  And it's documented, and it's not the natural thing one would do (Integer(1.1) behaves as you would like).",
     "created_at": "2010-05-27T00:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81533",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81399",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -244,15 +243,15 @@ we might as well make the best of it and let int be the "round closest to zero" 
 
 ---
 
-archive/issue_comments_081534.json:
+archive/issue_comments_081400.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-27T01:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81534",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81400",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -262,15 +261,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_081535.json:
+archive/issue_comments_081401.json:
 ```json
 {
     "body": "The Python behavior could be \"catched\" by the preparser. There have recently been long discussions about Sage's \"coercion model\"...\n\n----\n\nApplied Karl-Dieter's patch on 4.4.3.alpha0.\n\n`sage -t -long devel/sage/sage/rings` passed all tests.\n\nPositive review.",
     "created_at": "2010-05-27T01:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81535",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81401",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -288,15 +287,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_081536.json:
+archive/issue_comments_081402.json:
 ```json
 {
     "body": "`make ptestlong` also did not give errors related to *this* patch (again Sage 4.4.3.alpha0, Ubuntu 9.04 x86/32-bit).",
     "created_at": "2010-05-27T12:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81536",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81402",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -306,15 +305,15 @@ archive/issue_comments_081536.json:
 
 ---
 
-archive/issue_comments_081537.json:
+archive/issue_comments_081403.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"CDF conversion, complex double\".",
     "created_at": "2010-05-27T12:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81537",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81403",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -324,15 +323,15 @@ Changing keywords from "" to "CDF conversion, complex double".
 
 ---
 
-archive/issue_comments_081538.json:
+archive/issue_comments_081404.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T01:21:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8869",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81538",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8869#issuecomment-81404",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

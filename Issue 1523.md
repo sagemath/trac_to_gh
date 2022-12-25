@@ -6,15 +6,13 @@ archive/issues_001523.json:
     "body": "Assignee: @williamstein\n\nThis illustrates the unnecessary confusion:\n\n\n```\n> are working fine.  I'll try \"math\"....I have a currently executing (long\n> running) mathemataica simulation going, and it's fine.\n>\n> Bill\n>\n> \"math\" is not found on OSX terminal! neither is mathematica; sage brings up\n> a new SAGE notebook, and all of it \"runs\" except the calls to Maple (which I\n> don't have installed on this MAC) and Mathematica 6.0,which I do....so some\n> like we were getting (via airport????) is now missing....or something else.\n\nI probably didn't put the math script that I made somewhere in your PATH.\nI can't remember where I put it now, but that would be the problem.\nI really need to make Sage automatically do this (with no user intervention).\nCan you type\n\n locate math\n\nand send me the output, which will contain a script named \"math\"?\nThen you just have to move that script to /usr/bin/ so it is in you PATH.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1523\n\n",
     "created_at": "2007-12-15T07:28:23Z",
     "labels": [
-        "interfaces",
-        "major",
-        "enhancement"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "rewrite the mathematica/maple <---> sage interfaces for osx to be much easier to use for the \"lay person\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1523",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -53,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1523
 
 ---
 
-archive/issue_comments_009748.json:
+archive/issue_comments_009723.json:
 ```json
 {
     "body": "\n```\nJustin (cc: sage-devel),\n\nThere are now a lot of people using Sage on OSX who don't know\n(much) about the command line, but who are maple/mathematica\nusers.  When they try:\n\n  sage: mathematica('2+2')\n\nthey get a big error message about creating a \"math\" script, etc.,\nand similarly for Maple.\n\nIt seems to me that instead of that big error, we could *automatically*\ntrack down Maple/Mathematica on their system and\ncreate the script and put it in SAGE_ROOT/local/bin/.\n\nThoughts?\n\nIt seems like OSX mojo is relevant to this problem.\n\n```\n",
     "created_at": "2007-12-17T16:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9748",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9723",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -93,15 +91,15 @@ It seems like OSX mojo is relevant to this problem.
 
 ---
 
-archive/issue_comments_009749.json:
+archive/issue_comments_009724.json:
 ```json
 {
     "body": "I'm not sure we should be fixing this... or at least, sage-wishlist.",
     "created_at": "2013-02-13T02:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9749",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9724",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -111,15 +109,15 @@ I'm not sure we should be fixing this... or at least, sage-wishlist.
 
 ---
 
-archive/issue_comments_009750.json:
+archive/issue_comments_009725.json:
 ```json
 {
     "body": "Changing component from interfaces to interfaces: optional.",
     "created_at": "2015-06-23T13:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9750",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1523#issuecomment-9725",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

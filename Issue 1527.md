@@ -6,15 +6,14 @@ archive/issues_001527.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1527\n\n",
     "created_at": "2007-12-16T00:32:19Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "we really really need a doctest with \"import rpy\" in it, to make sure r is working at all in sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1527",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1527
 
 ---
 
-archive/issue_comments_009767.json:
+archive/issue_comments_009741.json:
 ```json
 {
     "body": "It's here\n\nhttp://sage.math.washington.edu/home/was/tmp/trac-1527.patch",
     "created_at": "2007-12-16T00:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1527#issuecomment-9767",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1527#issuecomment-9741",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ http://sage.math.washington.edu/home/was/tmp/trac-1527.patch
 
 ---
 
-archive/issue_comments_009768.json:
+archive/issue_comments_009742.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2007-12-16T00:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1527#issuecomment-9768",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1527#issuecomment-9742",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_009769.json:
+archive/issue_comments_009743.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-16T01:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1527#issuecomment-9769",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1527#issuecomment-9743",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009770.json:
+archive/issue_comments_009744.json:
 ```json
 {
     "body": "Merged in 2.9.rc2.",
     "created_at": "2007-12-16T01:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1527",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1527#issuecomment-9770",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1527#issuecomment-9744",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

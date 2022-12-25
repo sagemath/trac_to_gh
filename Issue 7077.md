@@ -6,7 +6,7 @@ archive/issues_007077.json:
     "body": "Assignee: tbd\n\nCC:  @mwhansen\n\nwith 4.1.1:\n\n\n```\nsage: x,y,z=polygens(QQ,'x,y,z')\nsage: (x^2).variables()\n[x]\nsage: x=polygen(QQ)\nsage: (x^2).variables()\n(x,)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7077\n\n",
     "created_at": "2009-09-29T19:51:09Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007077.json:
     "title": "variables() inconsistently returns a list or tuple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7077",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: tbd
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7077
 
 ---
 
-archive/issue_comments_058521.json:
+archive/issue_comments_058411.json:
 ```json
 {
     "body": "Attachment [trac_7077.patch](tarball://root/attachments/some-uuid/ticket7077/trac_7077.patch) by @aghitza created at 2009-10-19 23:38:29\n\nThere are a number of methods called `variables()` in the Sage library.  The attached patch makes sure that all of them return tuples.  (This is what univariate polynomials, and symbolics return.)",
     "created_at": "2009-10-19T23:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58521",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58411",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -62,15 +62,15 @@ There are a number of methods called `variables()` in the Sage library.  The att
 
 ---
 
-archive/issue_comments_058522.json:
+archive/issue_comments_058412.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-19T23:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58522",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58412",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -80,15 +80,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_058523.json:
+archive/issue_comments_058413.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-20T06:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58523",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58413",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -98,15 +98,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058524.json:
+archive/issue_comments_058414.json:
 ```json
 {
     "body": "Seems to perform as advertised, passes relevant tests, as far as I can tell catches all the cases.  Positive review.",
     "created_at": "2009-10-20T06:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58524",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58414",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -116,15 +116,15 @@ Seems to perform as advertised, passes relevant tests, as far as I can tell catc
 
 ---
 
-archive/issue_comments_058525.json:
+archive/issue_comments_058415.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-21T04:21:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58525",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7077#issuecomment-58415",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

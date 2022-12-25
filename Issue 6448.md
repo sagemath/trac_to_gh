@@ -6,7 +6,7 @@ archive/issues_006448.json:
     "body": "Assignee: tbd\n\nCC:  @rlmill\n\nThe following is on sage.math:\n\n\n```\nsage -t  \"devel/sage-main/sage/misc/darwin_utilities.pyx\"\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha2/devel/sage-main/sage/misc/darwin_utilities.pyx\", line 12:\n    sage: from sage.misc.darwin_utilities import darwin_memory_usage\nException raised:\n    Traceback (most recent call last):\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        from sage.misc.darwin_utilities import darwin_memory_usage###line 12:\n    sage: from sage.misc.darwin_utilities import darwin_memory_usage\n    ImportError: No module named darwin_utilities\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha2/devel/sage-main/sage/misc/darwin_utilities.pyx\", line 17:\n    sage: from sage.misc.darwin_utilities import darwin_memory_usage\nException raised:\n    Traceback (most recent call last):\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[4]>\", line 1, in <module>\n        from sage.misc.darwin_utilities import darwin_memory_usage###line 17:\n    sage: from sage.misc.darwin_utilities import darwin_memory_usage\n    ImportError: No module named darwin_utilities\n**********************************************************************\nFile \"/space/rlm/sage-4.1.alpha2/devel/sage-main/sage/misc/darwin_utilities.pyx\", line 18:\n    sage: try:\n        if os.uname()[Integer(0)] != 'Darwin':\n            memory_usage = darwin_memory_usage()\n        else:\n            raise NotImplementedError\n    except NotImplementedError:\n        print \"NotImplementedError\"\nException raised:\n    Traceback (most recent call last):\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/rlm/sage-4.1.alpha2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 3, in <module>\n        memory_usage = darwin_memory_usage()\n    NameError: name 'darwin_memory_usage' is not defined\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6448\n\n",
     "created_at": "2009-06-29T20:54:15Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006448.json:
     "title": "darwin_utilities import issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6448",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: tbd
@@ -88,15 +88,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6448
 
 ---
 
-archive/issue_comments_051832.json:
+archive/issue_comments_051734.json:
 ```json
 {
     "body": "Attachment [trac_6448-darwin_utilities-doctest.patch](tarball://root/attachments/some-uuid/ticket6448/trac_6448-darwin_utilities-doctest.patch) by GeorgSWeber created at 2009-07-02 22:06:56\n\nI developed and tested this patch on OS X 10.4, and it worked (I had seen before a slightly different doctest failure than noted in the description, but nevertheless).\nFrom this, and the nature of the changes in the patch, I deduce it should work on any platform except possibly OS X 10.5.\nI can't test on the latter one, though.",
     "created_at": "2009-07-02T22:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6448#issuecomment-51832",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/6448#issuecomment-51734",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -110,15 +110,15 @@ I can't test on the latter one, though.
 
 ---
 
-archive/issue_comments_051833.json:
+archive/issue_comments_051735.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-03T01:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6448#issuecomment-51833",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6448#issuecomment-51735",
+    "user": "https://github.com/rlmill"
 }
 ```
 

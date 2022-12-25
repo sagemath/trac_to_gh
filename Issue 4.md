@@ -6,14 +6,14 @@ archive/issues_000004.json:
     "body": "Assignee: somebody\n\nCurrently this:\n\npAdicField(5)(Integers(125)(13))\n\nproduces this:\n\nTraceback (most recent call last):\n...\nTypeError: unable to compute ordp\n\nI think SAGE should be able to perform such a conversion.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4\n\n",
     "created_at": "2006-09-12T00:41:16Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
     "title": "should exist a conversion from Integers(p**N) to pAdicField(p)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -47,7 +47,7 @@ archive/issue_comments_000013.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4#issuecomment-13",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -65,7 +65,7 @@ archive/issue_comments_000014.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4#issuecomment-14",
-    "user": "@roed314"
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -83,7 +83,7 @@ archive/issue_comments_000015.json:
     "issue": "https://github.com/sagemath/sagetest/issues/4",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/4#issuecomment-15",
-    "user": "@roed314"
+    "user": "https://github.com/roed314"
 }
 ```
 

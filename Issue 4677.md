@@ -6,7 +6,7 @@ archive/issues_004677.json:
     "body": "Assignee: @williamstein\n\nThis works:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f(x),(x,-1,1))\n```\n\nBut this doesn't:\n\n```\nsage: f=x^2\nsage: plot(lambda x:f,(x,-1,1))\nverbose 0 (3633: plot.py, _plot) WARNING: When plotting, failed to evaluate function at 400 points.\nverbose 0 (3633: plot.py, _plot) Last error message: 'float() argument must be a string or a number'\n```\n\nThe behavior is the same for f(x)=x^2.\n\nThis is because in the second example \"evaluating\" the lambda function yields a SymbolicCallableExpression, which needs to be called again to actually yield a numerical value.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/4677\n\n",
     "created_at": "2008-12-02T17:51:07Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004677.json:
     "title": "Plotting lambda functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4677",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: @williamstein
@@ -47,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4677
 
 ---
 
-archive/issue_comments_035237.json:
+archive/issue_comments_035168.json:
 ```json
 {
     "body": "Sure, it probably shouldn't work:\n\n\n```\nsage: f=x^2\nsage: a=lambda x: f\nsage: a(2)\nx^2\n```\n\n\nplot expects that when it feeds \"a\" a number (like a(2)), a number should be returned.  Instead, a function is returned.",
     "created_at": "2008-12-02T23:07:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35237",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35168",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -76,15 +76,15 @@ plot expects that when it feeds "a" a number (like a(2)), a number should be ret
 
 ---
 
-archive/issue_comments_035238.json:
+archive/issue_comments_035169.json:
 ```json
 {
     "body": "Replying to [comment:1 jason]:\n> Sure, it probably shouldn't work: \n> plot expects that when it feeds \"a\" a number (like a(2)), a number should be returned.  Instead, a function is returned.\n\nI guess my point was that I think one can catch this and use it.  Unless for some reason this is not desired, like some MS Word \"guesses\" at fixing mistakes, it is the sort of thing that one can do\n\n```\nsage: f=x^2\nsage: a=lambda x: f\nsage: a(2)\nx^2\nsage: a=a(x)\nsage: a(2)\n4\n```\n\nso that in principle upon a TypeError, one could try letting func=func(x) and then do float(func(point)).  \n\nBut I don't have time to try that for a few more days.  And maybe there is some internal reason not to do this... but I don't think so, because the result of plotting these is the empty plot otherwise, and one would reraise the exception if this still caused a TypeError.  Can you think of anything where this would not raise an exception but still lead to bad behavior?  I've seen weirder things...",
     "created_at": "2008-12-03T00:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35238",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35169",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -112,15 +112,15 @@ But I don't have time to try that for a few more days.  And maybe there is some 
 
 ---
 
-archive/issue_comments_035239.json:
+archive/issue_comments_035170.json:
 ```json
 {
     "body": "I think this is enough of a change in design that the issue ought to be raised on sage-devel to get more input.  Would you like to post a message?",
     "created_at": "2008-12-03T01:15:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35239",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35170",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -130,15 +130,15 @@ I think this is enough of a change in design that the issue ought to be raised o
 
 ---
 
-archive/issue_comments_035240.json:
+archive/issue_comments_035171.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @kcrisman.",
     "created_at": "2009-01-24T19:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35240",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35171",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -148,15 +148,15 @@ Changing assignee from @williamstein to @kcrisman.
 
 ---
 
-archive/issue_comments_035241.json:
+archive/issue_comments_035172.json:
 ```json
 {
     "body": "Replying to [comment:3 jason]:\n> I think this is enough of a change in design that the issue ought to be raised on sage-devel to get more input.  Would you like to post a message?\n\nThis was done, but the issue generated no interest on sage-devel, so I will go ahead and try to implement and document this as detailed above.",
     "created_at": "2009-01-24T19:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35241",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35172",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -169,15 +169,15 @@ This was done, but the issue generated no interest on sage-devel, so I will go a
 
 ---
 
-archive/issue_comments_035242.json:
+archive/issue_comments_035173.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-03-17T05:25:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35242",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35173",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -187,15 +187,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_035243.json:
+archive/issue_comments_035174.json:
 ```json
 {
     "body": "Remove assignee @kcrisman.",
     "created_at": "2012-07-07T03:24:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35243",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4677#issuecomment-35174",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

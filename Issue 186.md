@@ -6,15 +6,14 @@ archive/issues_000186.json:
     "body": "Assignee: @williamstein\n\nCC:  wstein@gmail.com\n\nKeywords: ecm\n\nsage: ECM().factor(2^100-1)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/yi/<ipython console> in <module>()\n\n/Users/yi/Software/sage-1.5.1.2/local/lib/python2.5/site-packages/sage/interfaces/ecm.py in factor(self, n, factor_digits, B1, **kwds)\n    235             last_B1 = 10\n    236         if not _primality[1]: \n--> 237             factors[1:2] = self.factor(factors[1], B1=last_B1, **kwds)\n    238             _primality[1:2] = self.primality\n    239         if not _primality[0]: \n\n/Users/yi/Software/sage-1.5.1.2/local/lib/python2.5/site-packages/sage/interfaces/ecm.py in factor(self, n, factor_digits, B1, **kwds)\n    235             last_B1 = 10\n    236         if not _primality[1]: \n--> 237             factors[1:2] = self.factor(factors[1], B1=last_B1, **kwds)\n    238             _primality[1:2] = self.primality\n    239         if not _primality[0]: \n\n/Users/yi/Software/sage-1.5.1.2/local/lib/python2.5/site-packages/sage/interfaces/ecm.py in factor(self, n, factor_digits, B1, **kwds)\n    238             _primality[1:2] = self.primality\n    239         if not _primality[0]: \n--> 240             factors[0:1] = self.factor(factors[0], B1=last_B1, **kwds)\n    241             _primality[0:1] = self.primality\n    242         self.primality = _primality\n\n/Users/yi/Software/sage-1.5.1.2/local/lib/python2.5/site-packages/sage/interfaces/ecm.py in factor(self, n, factor_digits, B1, **kwds)\n    223             [197002597249, 1348959352853811313, 251951573867253012259144010843]\n    224         \"\"\"\n--> 225         factors = self.find_factor(n, factor_digits, B1, **kwds)\n    226         factors.sort()\n    227         if len(factors) != 2: \n\n/Users/yi/Software/sage-1.5.1.2/local/lib/python2.5/site-packages/sage/interfaces/ecm.py in find_factor(self, n, factor_digits, B1, **kwds)\n    179                     if not child.match.groups()[0] is None: \n    180                         child.kill(0)\n--> 181                         return self.find_factor(n, B1=4+floor(B1/2), **kwds)\n    182                     else: \n    183                         # primality testing is cheap compared to factoring, but has already been done\n\n<type 'exceptions.TypeError'>: unsupported operand type(s) for /: 'str' and 'int'\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/186\n\n",
     "created_at": "2006-12-19T00:34:57Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.6",
     "title": "ECM str concactenation error",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/186",
-    "user": "@yqiang"
+    "user": "https://github.com/yqiang"
 }
 ```
 Assignee: @williamstein
@@ -75,15 +74,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/186
 
 ---
 
-archive/issue_comments_000848.json:
+archive/issue_comments_000845.json:
 ```json
 {
     "body": "Fixed for sage-1.6.\n\n```\nrank4:~/d/sage/sage/interfaces was$ hg export 2315\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1168366339 28800\n# Node ID 5e2621f3400050664fc52f68097a68a679bc5033\n# Parent  158dfcee989ef03bf0caa3b5fc26d54cd589f6e2\nFix trac #186.  Also, fixed the documentation for ecm.factor, which was very misleading.\n\ndiff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py\n--- a/sage/interfaces/ecm.py    Tue Jan 09 08:33:17 2007 -0800\n+++ b/sage/interfaces/ecm.py    Tue Jan 09 10:12:19 2007 -0800\n@@ -11,7 +11,7 @@ import re\n import re\n from math import ceil, floor\n \n-import sage.rings.integer\n+from sage.rings.integer import Integer\n from sage.misc.misc import verbose, get_verbose, tmp_filename\n \n import sage.misc.package\n@@ -94,7 +94,7 @@ class ECM:\n         return s\n \n     def __call__(self, n, watch=False):\n-        n = sage.rings.integer.Integer(n)\n+        n = Integer(n)\n         cmd = 'echo \"%s\" | %s'%(n, self.__cmd)\n         if watch:\n             t = tmp_filename()\n@@ -155,7 +155,7 @@ class ECM:\n         if not 'c' in kwds: kwds['c'] = 1000000000\n         if not 'I' in kwds: kwds['I'] = 1\n         if not factor_digits is None: \n-            B1 = self.recommended_B1(factor_digits);\n+            B1 = self.recommended_B1(factor_digits)\n         kwds['one'] = ''\n         kwds['cofdec'] = ''\n         self.__cmd = self._ECM__startup_cmd(B1, None, kwds)\n@@ -178,17 +178,17 @@ class ECM:\n                     self.primality = [false]\n                     return [n]\n                 else:\n-                    p = sage.rings.integer.Integer(info[6])\n+                    p = Integer(info[6])\n                     child.expect('(input number)|(prime factor)|(composite factor)')\n                     if not child.match.groups()[0] is None: \n                         child.kill(0)\n-                        return self.find_factor(n, B1=4+floor(B1/2), **kwds)\n+                        return self.find_factor(n, B1=4+floor(float(B1)/2), **kwds)\n                     else: \n                         # primality testing is cheap compared to factoring, but has already been done\n                         # return [p, n/p]\n                         self.primality = [not child.match.groups()[1] is None]\n                         child.expect('((prime cofactor)|(Composite cofactor)) (\\d+)\\D')\n-                        q = sage.rings.integer.Integer(child.match.groups()[3])\n+                        q = Integer(child.match.groups()[3])\n                         self.primality += [not child.match.groups()[1] is None]\n                         child.kill(0)\n                         return [p, q]\n@@ -203,33 +203,43 @@ class ECM:\n \n     def factor(self, n, factor_digits=None, B1=2000, **kwds):\n         \"\"\"\n-        Returns a list of all probable prime factors of n, using gmp-ecm.\n+        Returns a list of integers whose product is n, computed using\n+        gmp-ecm, and PARI for small factors.\n+\n+        ** WARNING: There is no guarantee that the factors returned are\n+        prime. **\n         \n         INPUT:\n             n -- a positive integer\n             factor_digits -- optional guess at how many digits are in the smallest factor. \n             B1 -- initial lower bound, defaults to 2000 (15 digit factors)\n-            kwds -- arguments to pass to ecm-gmp. See help for ECM for more details. \n-            \n+            kwds -- arguments to pass to ecm-gmp. See help for ECM for more details.\n+\n         OUTPUT: \n-            factorization of n\n+            a list of integers whose product is n\n             \n         NOTE: \n-            Trial division should typically be performed before using this method. \n-            Also, if you suspect that n is the product of two similarly-sized primes, \n-            other methods (such as pari's quadratic sieve) will usually be faster. \n+            Trial division should typically be performed before using\n+            this method.  Also, if you suspect that n is the product\n+            of two similarly-sized primes, other methods (such as a\n+            quadratic sieve -- use the qsieve command) will usually be\n+            faster.\n         \n         EXAMPLES: \n-            sage: ECM().factor(602400691612422154516282778947806249229526581)\n+            sage: ecm.factor(602400691612422154516282778947806249229526581)\n             [45949729863572179, 13109994191499930367061460439]\n             \n-            sage: ECM().factor((2^197 + 1)/3)           # takes a long time\n+            sage: ecm.factor((2^197 + 1)/3)           # takes a long time\n             [197002597249, 1348959352853811313, 251951573867253012259144010843]\n         \"\"\"\n+        if B1 < 2000 or len(str(n)) < 15:\n+            return sum([[p]*e for p, e in Integer(n).factor()], [])\n+        \n         factors = self.find_factor(n, factor_digits, B1, **kwds)\n         factors.sort()\n-        if len(factors) != 2: \n+        if len(factors) == 1: \n             return factors\n+        assert len(factors) == 2\n         _primality = [self.primality[0], self.primality[1]]\n         try:\n             last_B1 = self.last_params['B1']\n@@ -260,7 +270,7 @@ class ECM:\n             The parameters for the most recent factorization.\n             \n         EXAMPLES: \n-            sage: ecm.factor((2^197 + 1)/3)\n+            sage: ecm.factor((2^197 + 1)/3)             # long time\n             [197002597249, 1348959352853811313, 251951573867253012259144010843]\n             sage: ecm.get_last_params()                 # random output\n             {'poly': 'x^1', 'sigma': '1785694449', 'B1': '8885', 'B2': '1002846'}\n@@ -284,11 +294,11 @@ class ECM:\n         \n             sage: n = next_prime(11^23)*next_prime(11^37)\n                                 \n-            sage.: ECM().time(n, 20)               \n+            sage.: ecm.time(n, 20)               \n             Expected curves: 77     Expected time: 7.21s\n-            sage.: ECM().time(n, 25)               \n+            sage.: ecm.time(n, 25)               \n             Expected curves: 206    Expected time: 1.56m\n-            sage.: ECM().time(n, 30, verbose=1)    \n+            sage.: ecm.time(n, 30, verbose=1)    \n             GMP-ECM 6.0.1 [powered by GMP 4.2] [ECM]\n \n             Input number is 304481639541418099574459496544854621998616257489887231115912293 (63 digits)\n@@ -349,4 +359,4 @@ class ECM:\n         print \"Expected curves:\", curve_count, \"\\tExpected time:\", time\n \n # unique instance\n-ecm = ECM()\n\\ No newline at end of file\n+ecm = ECM()\n```\n",
     "created_at": "2007-01-09T18:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/186",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/186#issuecomment-848",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/186#issuecomment-845",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -241,15 +240,15 @@ diff -r 158dfcee989e -r 5e2621f34000 sage/interfaces/ecm.py
 
 ---
 
-archive/issue_comments_000849.json:
+archive/issue_comments_000846.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-09T18:13:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/186",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/186#issuecomment-849",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/186#issuecomment-846",
+    "user": "https://github.com/williamstein"
 }
 ```
 

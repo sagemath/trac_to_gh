@@ -6,7 +6,7 @@ archive/issues_006971.json:
     "body": "Assignee: tbd\n\n\n```\nha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c -o mach_dep.o\nIn file included from /Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/spkg/build/ecl-9.8.4/src/src/gc/mach_dep.c:163:\n/usr/include/ucontext.h:42:2: error: #error ucontext routines are deprecated, and require _XOPEN_SOURCE to be defined\nmake[5]: *** [mach_dep.lo] Error 1\nmake[4]: *** [install-recursive] Error 1\nmake[3]: *** [libeclgc.a] Error 2\nmake[2]: *** [all] Error 2\nFailed to build ECL ... exiting\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6971\n\n",
     "created_at": "2009-09-20T22:28:14Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006971.json:
     "title": "port ECL spkg to os x 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6971",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6971
 
 ---
 
-archive/issue_comments_057662.json:
+archive/issue_comments_057554.json:
 ```json
 {
     "body": "spkg up here:\n\n    http://sage.math.washington.edu/home/wstein/patches/ecl-9.8.4-20090913cvs.p1.spkg\n\nIt's important that the name be fairly canonical like the above is.",
     "created_at": "2009-09-20T22:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6971",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6971#issuecomment-57662",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6971#issuecomment-57554",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -63,15 +63,15 @@ It's important that the name be fairly canonical like the above is.
 
 ---
 
-archive/issue_comments_057663.json:
+archive/issue_comments_057555.json:
 ```json
 {
     "body": "See palmieri's and my reports at #6849.",
     "created_at": "2009-09-27T02:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6971",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6971#issuecomment-57663",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6971#issuecomment-57555",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -81,15 +81,15 @@ See palmieri's and my reports at #6849.
 
 ---
 
-archive/issue_comments_057664.json:
+archive/issue_comments_057556.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-27T02:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6971",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6971#issuecomment-57664",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6971#issuecomment-57556",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

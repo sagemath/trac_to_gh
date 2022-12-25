@@ -6,15 +6,14 @@ archive/issues_003046.json:
     "body": "Assignee: @williamstein\n\nThe attached patch adds to version an option which returns the version and the branch clone name.\nNew behavior:\nsage: version()\nreturns exactly the same thing it did before no change.\nsage: version(True) # or replace \"True\" by anything except \"0\" or \"False\"\nreturns \n(Version, Branch name)\nFor example,\n\n```\nsage: version(1)\n\n('SAGE Version 3.0, Release Date: 2008-04-22',\n 'Mercurial clone branch: version')\n```\n\nin a Mercurial clone branch created using \"sage -clone version\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3046\n\n",
     "created_at": "2008-04-27T20:19:58Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "version option returning clone branch name",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3046",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3046
 
 ---
 
-archive/issue_comments_020973.json:
+archive/issue_comments_020930.json:
 ```json
 {
     "body": "Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3046/9607.patch) by @wdjoyner created at 2008-04-27 20:20:13",
     "created_at": "2008-04-27T20:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20973",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20930",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -63,15 +62,15 @@ Attachment [9607.patch](tarball://root/attachments/some-uuid/ticket3046/9607.pat
 
 ---
 
-archive/issue_comments_020974.json:
+archive/issue_comments_020931.json:
 ```json
 {
     "body": "Patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-11T11:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20974",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20931",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Michael
 
 ---
 
-archive/issue_comments_020975.json:
+archive/issue_comments_020932.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-11T11:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20975",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20932",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -103,15 +102,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020976.json:
+archive/issue_comments_020933.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.alpha0",
     "created_at": "2008-05-11T11:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20976",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20933",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +120,15 @@ Merged in Sage 3.0.2.alpha0
 
 ---
 
-archive/issue_comments_020977.json:
+archive/issue_comments_020934.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-05-19T06:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20977",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20934",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -139,15 +138,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_020978.json:
+archive/issue_comments_020935.json:
 ```json
 {
     "body": "Very negative review because the patch adds this line:\n\n```\n\tr\"\"\"nodoctest \n```\n",
     "created_at": "2008-05-19T06:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20978",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20935",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -162,15 +161,15 @@ Very negative review because the patch adds this line:
 
 ---
 
-archive/issue_comments_020979.json:
+archive/issue_comments_020936.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-05-19T06:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20979",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20936",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -180,15 +179,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_020980.json:
+archive/issue_comments_020937.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-19T06:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20980",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20937",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -198,15 +197,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020981.json:
+archive/issue_comments_020938.json:
 ```json
 {
     "body": "I fixed this in the repo by removing \"nodoctest\". Doctests do pass now.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T06:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20981",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20938",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -220,15 +219,15 @@ Michael
 
 ---
 
-archive/issue_comments_020982.json:
+archive/issue_comments_020939.json:
 ```json
 {
     "body": "this patch removes 'nodoctest' and make the doctests actually pass - my bad for the sloppy review",
     "created_at": "2008-05-19T06:32:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3046",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20982",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3046#issuecomment-20939",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

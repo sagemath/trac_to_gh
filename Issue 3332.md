@@ -6,15 +6,14 @@ archive/issues_003332.json:
     "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\npbuild and sbuild currently compile with -O3; we should use -O2 for stability reasons (and -O3 may result in larger, slower code).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3332\n\n",
     "created_at": "2008-05-29T19:27:26Z",
     "labels": [
-        "pbuild",
-        "major",
+        "component: pbuild",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "Switch pbuild to -O2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3332",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3332
 
 ---
 
-archive/issue_comments_023105.json:
+archive/issue_comments_023057.json:
 ```json
 {
     "body": "Attachment [trac_3332_extcode.patch](tarball://root/attachments/some-uuid/ticket3332/trac_3332_extcode.patch) by @garyfurnish created at 2008-05-29 19:27:46",
     "created_at": "2008-05-29T19:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23105",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23057",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_3332_extcode.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_023106.json:
+archive/issue_comments_023058.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-29T19:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23106",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23058",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_023107.json:
+archive/issue_comments_023059.json:
 ```json
 {
     "body": "Positive review.",
     "created_at": "2008-06-09T21:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23107",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23059",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_023108.json:
+archive/issue_comments_023060.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-09T21:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23108",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23060",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -103,15 +102,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_023109.json:
+archive/issue_comments_023061.json:
 ```json
 {
     "body": "Merged in Sage 3.0.3.alpha0",
     "created_at": "2008-06-09T21:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3332",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23109",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3332#issuecomment-23061",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

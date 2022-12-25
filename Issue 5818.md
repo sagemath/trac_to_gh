@@ -6,15 +6,13 @@ archive/issues_005818.json:
     "body": "Assignee: mabshoff\n\nSee #5516 for the motivation for this. It should be something like SAGE_MPIR_CPU and SAGE_MPIR_ABI to pass either a CPU type or an ABI to MPIR. This allows special configs without the need to change the spkg every time one builds.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5818\n\n",
     "created_at": "2009-04-19T01:00:24Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make it possible to pass a CPU parameter to MPIR (useful for builds in KVM)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5818",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5818
 
 ---
 
-archive/issue_comments_045728.json:
+archive/issue_comments_045642.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2009-05-15T14:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45728",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45642",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_045729.json:
+archive/issue_comments_045643.json:
 ```json
 {
     "body": "This is also very useful for binaries, i.e. if SAGE_SIMD_MODE is set to SSE2 we should only build for a P4 for example.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-15T14:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45729",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45643",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -73,15 +71,15 @@ Michael
 
 ---
 
-archive/issue_comments_045730.json:
+archive/issue_comments_045644.json:
 ```json
 {
     "body": "From Bill Hart:\n\n```\nBut you asked a couple of questions. As far as MPIR is concerned, you\ncan control which optimisations are used by giving it the option\n--build.\n\nI presume you are making binaries and whatever machines you want to\nsupport don't have SSE3 or higher. If you build on sage.math or\nequivalent it will detect penryn which has every optimisation under\nthe sun.\n\nAll x86_64's support SSE3, i.e. pentium4's, core2's, k8's, etc.\n\nSo presumably the problem is for 32 bit machines, perhaps early p4's\nbefore Prescott, which is where SSE3 was introduced, I think. So the\ntrick would be to force MPIR to build for a netburst without LAHF\nsupport. That is an early p4 without all the bells and whistles.\n\nThat option would be --build=netburst-unknown-linux-gnu, which you\nshould pass to configure when building MPIR.\n\nNote that doing this will build a binary which is 32 bits and\noptimised for a pentium 4 with netburst architechture. The resulting\ncode won't be too bad if you are just making binaries, but it should\nnot be used for building from source. MPIR should be allowed to detect\nthe CPU and build with the best possible core in that case, obviously.\n\nIf building MPIR from source ever gives invalid instructions for a CPU\nthen that is a bug in MPIR and we would need to fix that upstream.\nSage should never have to pass options to MPIR to get correct\noptimisations for a CPU.\n\nAnother thing to be aware of is that sending options like\n-build=netburst-unknown-linux-gnu to MPIR when building binaries is\nonly useful if you plan to build lots of binaries - basically one for\neach major type of machine MPIR supports. If not, then the best thing\nto do is to let MPIR decide at runtime which core to use, by passing\n--enable-fat to MPIR's configure when building on an x86_32 machine it\nwill build a single 32 bit binary which is \"optimal\" for each possible\nmachine. This is suboptimal compared with making lots of binaries and\nshould never be done when the user is building from source, but is a\nreasonable compromise if you want to build a single binary which\nsupports multiple machines. Unlike GMP, --enable-fat also works on\nx86_64 machines, though you have to build a separate binary on a 64\nbit machine for this to work, obviously.\n\nWhat Michael and I had discussed was building 10 or so binaries with\nMPIR and then having the correct one linked in when Sage starts\ndepending on what config.guess returns, i.e. running sage would first\nrun a script which would run config.guess. That would tell you what\nprocessor one had, then the right MPIR binary would be put in the\nLD_LIBRARY_PATH or whatever.\n\nThe binaries you would include for x86 and x86_64 are:\n\natom, netburst, netburstlahf, pentium4, prescott, core2, penryn,\nnehalem, k7, k8, k10\n\nI don't see anyone getting Sage to run on an x86 before netburst, so\nthat should be all the binaries you need.\n```\n",
     "created_at": "2009-05-27T19:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45730",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45644",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -153,15 +151,15 @@ that should be all the binaries you need.
 
 ---
 
-archive/issue_comments_045731.json:
+archive/issue_comments_045645.json:
 ```json
 {
     "body": "This isn't critical for 4.0.",
     "created_at": "2009-05-28T06:51:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45731",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45645",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -171,33 +169,15 @@ This isn't critical for 4.0.
 
 ---
 
-archive/issue_comments_045732.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2009-05-31T23:52:42Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/5818",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45732",
-    "user": "@williamstein"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_045733.json:
+archive/issue_comments_045646.json:
 ```json
 {
     "body": "outdated after mpir removal",
     "created_at": "2021-12-02T01:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45733",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45646",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -207,15 +187,15 @@ outdated after mpir removal
 
 ---
 
-archive/issue_comments_045734.json:
+archive/issue_comments_045647.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2021-12-02T01:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45734",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45647",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -225,15 +205,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_045735.json:
+archive/issue_comments_045648.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2021-12-02T23:38:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45735",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45648",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -243,15 +223,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_045736.json:
+archive/issue_comments_045649.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2021-12-03T18:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45736",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/5818#issuecomment-45649",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 

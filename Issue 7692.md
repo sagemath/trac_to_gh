@@ -6,15 +6,14 @@ archive/issues_007692.json:
     "body": "Assignee: tbd\n\nThe Sloane database hasn't been updated since 2005, so update it. \n\n   http://sagemath.org/packages/optional/database_sloane_oeis-2005-12.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7692\n\n",
     "created_at": "2009-12-15T22:25:55Z",
     "labels": [
-        "packages: optional",
-        "minor",
-        "enhancement"
+        "component: packages: optional",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "update the sloane OEIS database to the latest version; it is a little out of date.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7692",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7692
 
 ---
 
-archive/issue_comments_065990.json:
+archive/issue_comments_065874.json:
 ```json
 {
     "body": "\n```\nHi William,\n\nI don't want to send a 10 MB attachment (the unzipped database file is now\nabout 31 MB instead of the former 20), so I've attached a bash script that\nshould automatically generate the spkg file for you.  As long as you have\nwget installed and the database can be downloaded (it doesn't check for\nfailure) it should work just fine.\n\nLet me know if you have any problems running the script or using the spkg\nit generates and I'll get it fixed as quickly as possible.\n\nBest,\nSteven\n```\n\n\n(see attachment: update-sloane)",
     "created_at": "2009-12-18T01:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65990",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65874",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +66,15 @@ Steven
 
 ---
 
-archive/issue_comments_065991.json:
+archive/issue_comments_065875.json:
 ```json
 {
     "body": "Attachment [update-sloane](tarball://root/attachments/some-uuid/ticket7692/update-sloane) by @williamstein created at 2009-12-18 01:14:33",
     "created_at": "2009-12-18T01:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65991",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65875",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +84,15 @@ Attachment [update-sloane](tarball://root/attachments/some-uuid/ticket7692/updat
 
 ---
 
-archive/issue_comments_065992.json:
+archive/issue_comments_065876.json:
 ```json
 {
     "body": "Here is a complete spkg up to the Sage standard for spkg's (hopefully):\n\nhttp://sage.math.washington.edu/home/wstein/patches/database_sloane_oeis-2009-12.spkg",
     "created_at": "2009-12-18T01:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65992",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65876",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +104,15 @@ http://sage.math.washington.edu/home/wstein/patches/database_sloane_oeis-2009-12
 
 ---
 
-archive/issue_comments_065993.json:
+archive/issue_comments_065877.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-18T01:35:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65993",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65877",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_065994.json:
+archive/issue_comments_065878.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-12-18T18:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65994",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65878",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -141,15 +140,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_065995.json:
+archive/issue_comments_065879.json:
 ```json
 {
     "body": "The package installed ok, but sloane.py needs work:\n\n\n\n```\nsage: SloaneEncyclopedia.load()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (48, 0))\n\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/jaap/.sage/temp/vrede.jaapspies.nl/14953/_home_jaap__sage_init_sage_0.py in <module>()\n\n/home/jaap/downloads/sage-4.3.rc0/local/lib/python2.6/site-packages/sage/databases/sloane.pyc in load(self)\n    246                 seqnum = int(m.group('num'));\n    247                 msg = m.group('body').strip();\n--> 248                 self.__data__[seqnum] = [seqnum, None, ','+msg+',']\n    249         verbose(\"Finished loading\", tm)\n    250         self.__loaded__ = True\n\nIndexError: list assignment index out of range\n\n\n```\n\n\nFirst of all there are more sequence in the databas:\n\n\n\n```\nclass SloaneEncyclopediaClass:\n    \"\"\"\n    A local copy of the Sloane Online Encyclopedia of Integer Sequences\n    that contains only the sequence numbers and the sequences\n    themselves.\n    \"\"\"\n    def __init__(self):\n        \"\"\"\n        Initialize the database but do not load any of the data.\n        \"\"\"\n        self.__file__ = \"%s/data/sloane/sloane-oeis.bz2\"%os.environ[\"SAGE_ROOT\"]\n        self.__arraysize__ = 114751 # maximum sequence number + 1\n        self.__loaded__ = False\n\n\n```\n\n\n\nJaap",
     "created_at": "2009-12-18T18:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65995",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65879",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -211,15 +210,15 @@ Jaap
 
 ---
 
-archive/issue_comments_065996.json:
+archive/issue_comments_065880.json:
 ```json
 {
     "body": "\n```\nI completely forgot that the array size was hardcoded in SloaneEncyclopediaClass -- this is what caused the error, since now the number of entries is bigger than the array size. There's a bizarre new issue with numbering, though: most of the online sequences are sequentially numbered, but in the version I downloaded last night the sequential numbers end at A175062 and then there's a single sequence, A557274, after that. (To check the numbers in your database file, run \"cut -d' ' -f1 sloane-oeis | head\".)\n\nThe two best fixes I have in mind, other than getting Sloane to renumber that one extra sequence, are to replace SloaneEncyclopediaClass.__data__ with a hashtable whose keys are the indices and to let it be a huge array whose last index is 557274. The first might be slower, but the second one will require storing almost 400000 extra \"None\" entries in the __data__ array, and they'll have to be iterated through and ignored in the find() method.\n\nIf we stick to using an array instead of a hash table, then probably the right thing to do as far as the array size is to add a line to the update-sloane script: something like\n\ncut -d' ' -f1 sloane-oeis | sort -r | head -1 | sed 's/A//' > sloane-maxseq\n\nwhere sloane-oeis is the unzipped encyclopedia file, to write the maximal sequence number (in this case, 557274) to a file sloane-maxseq. Then the SloaneEncyclopediaClass.load() method could read this number (plus one) from the sloane-maxseq file into the variable self.__arraysize__ before it creates self.__data__, and continue as normal.\n\nWhich of these do you think is the best way to proceed?\n\nSteven\n```\n",
     "created_at": "2009-12-19T00:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65996",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65880",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -245,15 +244,15 @@ Steven
 
 ---
 
-archive/issue_comments_065997.json:
+archive/issue_comments_065881.json:
 ```json
 {
     "body": "More readable version:\n\nI completely forgot that the array size was hardcoded in SloaneEncyclopediaClass -- this is what caused the error, since now the number of entries is bigger than the array size. There's a bizarre new issue with numbering, though: most of the online sequences are sequentially numbered, but in the version I downloaded last night the sequential numbers end at A175062 and then there's a single sequence, A557274, after that. (To check the numbers in your database file, run \"cut -d' ' -f1 sloane-oeis | head\".)\n\nThe two best fixes I have in mind, other than getting Sloane to renumber that one extra sequence, are to replace SloaneEncyclopediaClass.__data__ with a hashtable whose keys are the indices and to let it be a huge array whose last index is 557274. The first might be slower, but the second one will require storing almost 400000 extra \"None\" entries in the __data__ array, and they'll have to be iterated through and ignored in the find() method.\n\nIf we stick to using an array instead of a hash table, then probably the right thing to do as far as the array size is to add a line to the update-sloane script: something like\n\n\n```\ncut -d' ' -f1 sloane-oeis | sort -r | head -1 | sed 's/A//' > sloane-maxseq\n```\n\n\nwhere sloane-oeis is the unzipped encyclopedia file, to write the maximal sequence number (in this case, 557274) to a file sloane-maxseq. Then the SloaneEncyclopediaClass.load() method could read this number (plus one) from the sloane-maxseq file into the variable self.__arraysize__ before it creates self.__data__, and continue as normal.\n\nWhich of these do you think is the best way to proceed?\n\nSteven",
     "created_at": "2009-12-19T05:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65997",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65881",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -281,15 +280,15 @@ Steven
 
 ---
 
-archive/issue_comments_065998.json:
+archive/issue_comments_065882.json:
 ```json
 {
     "body": "FWIW, I downloaded a snapshot of the OEIS: all sequences up to date 2009-12-19.\n\nI made a bz2 file: [http://sage.math.washington.edu/home/jsp/cat25.bz2](http://sage.math.washington.edu/home/jsp/cat25.bz2)\n\n43 MB, expanded this is 176 MB.\n\nNice to have around.\n\nJaap",
     "created_at": "2009-12-19T19:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65998",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65882",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -307,15 +306,15 @@ Jaap
 
 ---
 
-archive/issue_comments_065999.json:
+archive/issue_comments_065883.json:
 ```json
 {
     "body": "Attachment [12063.patch](tarball://root/attachments/some-uuid/ticket7692/12063.patch) by ssivek created at 2009-12-21 21:53:19\n\nPatch to databases/sloane.py",
     "created_at": "2009-12-21T21:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65999",
-    "user": "ssivek"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65883",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 
@@ -327,15 +326,15 @@ Patch to databases/sloane.py
 
 ---
 
-archive/issue_comments_066000.json:
+archive/issue_comments_065884.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-12-21T22:02:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66000",
-    "user": "ssivek"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65884",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 
@@ -345,15 +344,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_066001.json:
+archive/issue_comments_065885.json:
 ```json
 {
     "body": "I've added a patch which adds two new functions in SloaneEncyclopediaClass:\n\n- SloaneEncyclopedia.install() will download the stripped.gz file from the OEIS website and install it. The user can specify an alternate URL and whether to overwrite an existing copy of the OEIS.\n\n- SloaneEncyclopedia.install_from_gz() installs the encyclopedia from a local copy of stripped.gz; the user has to specify the filename and (optionally) whether to overwrite an existing copy.\n\nThis eliminates the need for a spkg as long as the user can get a copy of stripped.gz, so if we want to continue providing a spkg (assuming we even have permission: see http://www.research.att.com/~njas/sequences/Seis.html#SEARCH2) it should probably just contain stripped.gz and a spkg-install script which passes it to install_from_gz().\n\nThe patch should also fix the IndexError issue from the referee report, since now instead of hardcoding the size of the database and allocating an array of that size it just loads the database into a dictionary.",
     "created_at": "2009-12-21T22:02:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66001",
-    "user": "ssivek"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65885",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 
@@ -371,15 +370,15 @@ The patch should also fix the IndexError issue from the referee report, since no
 
 ---
 
-archive/issue_comments_066002.json:
+archive/issue_comments_065886.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-22T16:49:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66002",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65886",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -389,15 +388,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_066003.json:
+archive/issue_comments_065887.json:
 ```json
 {
     "body": "Looks good to me.\n\nTested the new functions. Worked for me.\n\nRemark: I think there is no problem in offering an optional spkg. Neil excludes distributing the full database.\n\nSuggestion: maybe it is feasible to modify sloane.py to include the file names.gz.\nThat way sequence can have there proper name from the OEIS.\n\nCheers,\n\nJaap",
     "created_at": "2009-12-22T16:49:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66003",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65887",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -418,15 +417,15 @@ Jaap
 
 ---
 
-archive/issue_comments_066004.json:
+archive/issue_comments_065888.json:
 ```json
 {
     "body": "Two remarks:\n\n[1] Maybe the name of the patch should be conform the standard: trac_7692.patch\n\n[2] Output is in Python:\n\n\n```\nsage: SloaneEncyclopedia[111111]\n [1, 2, 0, 2, 6, 46, 338, 2926, 28146, 298526, 3454434, 43286526, 583835650, 8433987582L, 129941213186L, 2127349165822L, 36889047574274L, 675548628690430L, 13030733384956418L, 264111424634864638L]\n\n```\n\n\nI would like to see this in Sage.\n\nShall we open another ticket?\n\nCheers,\n\nJaap",
     "created_at": "2009-12-22T17:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66004",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65888",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -456,15 +455,15 @@ Jaap
 
 ---
 
-archive/issue_comments_066005.json:
+archive/issue_comments_065889.json:
 ```json
 {
     "body": "Attachment [trac_7692.patch](tarball://root/attachments/some-uuid/ticket7692/trac_7692.patch) by ssivek created at 2009-12-22 18:07:44\n\nIdentical patch, but with the right naming convention",
     "created_at": "2009-12-22T18:07:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66005",
-    "user": "ssivek"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65889",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 
@@ -476,15 +475,15 @@ Identical patch, but with the right naming convention
 
 ---
 
-archive/issue_comments_066006.json:
+archive/issue_comments_065890.json:
 ```json
 {
     "body": "Ticket #7749 is now open, and I expect to have a patch submitted in the next day or so.",
     "created_at": "2009-12-22T18:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66006",
-    "user": "ssivek"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65890",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 
@@ -494,15 +493,15 @@ Ticket #7749 is now open, and I expect to have a patch submitted in the next day
 
 ---
 
-archive/issue_comments_066007.json:
+archive/issue_comments_065891.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-03T21:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-66007",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7692#issuecomment-65891",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

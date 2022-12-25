@@ -6,15 +6,14 @@ archive/issues_006383.json:
     "body": "Assignee: @williamstein\n\nThis should work:\n\n\n```\nsage: E = EllipticCurve('11a'); P = E.torsion_subgroup().gens()[0]; P\n(5 : 5 : 1)\nsage: P.additive_order()\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n\n/Users/wstein/.sage/temp/resid_tg105.upc.es/5930/_Users_wstein__sage_init_sage_0.py in <module>()\n\n/Users/wstein/build/sage/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.ModuleElement.additive_order (sage/structure/element.c:8113)()\n\nNotImplementedError: \nsage: P.order()\n5\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6383\n\n",
     "created_at": "2009-06-21T23:39:37Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement additive_order for points on an elliptic curve",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6383",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -47,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6383
 
 ---
 
-archive/issue_comments_051094.json:
+archive/issue_comments_050997.json:
 ```json
 {
     "body": "This seems to be a duplicate of #6382.",
     "created_at": "2009-06-27T07:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6383",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6383#issuecomment-51094",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6383#issuecomment-50997",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -65,15 +64,15 @@ This seems to be a duplicate of #6382.
 
 ---
 
-archive/issue_comments_051095.json:
+archive/issue_comments_050998.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-07-08T20:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6383",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6383#issuecomment-51095",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6383#issuecomment-50998",
+    "user": "https://github.com/rlmill"
 }
 ```
 

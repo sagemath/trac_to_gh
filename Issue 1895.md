@@ -6,15 +6,13 @@ archive/issues_001895.json:
     "body": "Assignee: @malb\n\nRe-adding the missing hunk 2 of #1837.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1895\n\n",
     "created_at": "2008-01-23T17:00:33Z",
     "labels": [
-        "commutative algebra",
-        "major",
-        "enhancement"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch, needs review] deal with passed through keyword arguments for Gr\u00f6bner basis computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1895",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1895
 
 ---
 
-archive/issue_comments_011996.json:
+archive/issue_comments_011967.json:
 ```json
 {
     "body": "deal with passed through GB kwds",
     "created_at": "2008-01-23T17:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11996",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11967",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -47,15 +45,15 @@ deal with passed through GB kwds
 
 ---
 
-archive/issue_comments_011997.json:
+archive/issue_comments_011968.json:
 ```json
 {
     "body": "Attachment [trac_1895_gb_kwds.patch](tarball://root/attachments/some-uuid/ticket1895/trac_1895_gb_kwds.patch) by mabshoff created at 2008-01-23 22:09:01\n\nPatch looks good to me.",
     "created_at": "2008-01-23T22:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11997",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11968",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +65,15 @@ Patch looks good to me.
 
 ---
 
-archive/issue_comments_011998.json:
+archive/issue_comments_011969.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha2",
     "created_at": "2008-01-23T22:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11998",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11969",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +83,15 @@ Merged in Sage 2.10.1.alpha2
 
 ---
 
-archive/issue_comments_011999.json:
+archive/issue_comments_011970.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-23T22:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11999",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1895#issuecomment-11970",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

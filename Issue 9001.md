@@ -6,15 +6,14 @@ archive/issues_009001.json:
     "body": "Assignee: tbd\n\n\n```\nsage-4.4.2 with the optional package database_cremona_ellcurve-20071019.p0.spkg has the following test failure:\n\n\ntaurus% ./sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\nsage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.4.2-x86_64-Linux-nehalem-fc-test2/devel/sage/sage/schemes/elliptic_curves/ell_point.py\", line 1729:\n    sage: Q = E.isomorphism_to(ED.change_ring(K))(P); Q\nExpected:\n    (0 : -7/2*a - 1/2 : 1)\nGot:\n    (0 : 7/2*a - 1/2 : 1)\n**********************************************************************\n1 items had failures:\n   1 of  67 in __main__.example_36\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mariah/.sage//tmp/.doctest_ell_point.py\n         [32.7 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/schemes/elliptic_curves/ell_point.py\"\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9001\n\n",
     "created_at": "2010-05-20T20:37:26Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "optional package database_cremona_ellcurve-20071019.p0.spkg causes test failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9001",
-    "user": "mariah"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 Assignee: tbd
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9001
 
 ---
 
-archive/issue_comments_083231.json:
+archive/issue_comments_083095.json:
 ```json
 {
     "body": "Attachment [trac_9001.patch](tarball://root/attachments/some-uuid/ticket9001/trac_9001.patch) by @williamstein created at 2010-06-04 05:53:17",
     "created_at": "2010-06-04T05:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83231",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83095",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -74,15 +73,15 @@ Attachment [trac_9001.patch](tarball://root/attachments/some-uuid/ticket9001/tra
 
 ---
 
-archive/issue_comments_083232.json:
+archive/issue_comments_083096.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-04T08:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83232",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83096",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -92,15 +91,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083233.json:
+archive/issue_comments_083097.json:
 ```json
 {
     "body": "Dammit, I thought we had got rid of all of these,  If the ticket had been tagged as being in Elliptic Curves, I would have noticed this and fixed it 2 weeks ago, sorry.\n\nPatch applies fine to 4.4.3.alpha3.  With no optional packages installed I tested the whole sage library (only 10 minutes with -tp 10!), and did it again after installing database_cremona_ellcurve-20071019.  Just to make sure there were not other examples of this lurking!  All pass.",
     "created_at": "2010-06-04T08:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83233",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83097",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -112,15 +111,15 @@ Patch applies fine to 4.4.3.alpha3.  With no optional packages installed I teste
 
 ---
 
-archive/issue_comments_083234.json:
+archive/issue_comments_083098.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-04T08:54:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83234",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83098",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -130,15 +129,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083235.json:
+archive/issue_comments_083099.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-04T15:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83235",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9001#issuecomment-83099",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_000843.json:
     "body": "Assignee: somebody\n\nThis patch fixes several bugs in Robert's fast quadratic field element code, and SWITCHES THEM ON.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/843\n\n",
     "created_at": "2007-10-10T01:16:43Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.7",
     "title": "[with patch] fast quadratic field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/843",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -30,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/843
 
 ---
 
-archive/issue_comments_005219.json:
+archive/issue_comments_005203.json:
 ```json
 {
     "body": "Attachment [quadratic.hg](tarball://root/attachments/some-uuid/ticket843/quadratic.hg) by mabshoff created at 2007-10-10 01:41:20",
     "created_at": "2007-10-10T01:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/843#issuecomment-5219",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/843#issuecomment-5203",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -48,15 +46,15 @@ Attachment [quadratic.hg](tarball://root/attachments/some-uuid/ticket843/quadrat
 
 ---
 
-archive/issue_comments_005220.json:
+archive/issue_comments_005204.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-13T06:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/843#issuecomment-5220",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/843#issuecomment-5204",
+    "user": "https://github.com/williamstein"
 }
 ```
 

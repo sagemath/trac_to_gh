@@ -6,7 +6,7 @@ archive/issues_001442.json:
     "body": "Assignee: tba\n\nI'm reading calculus.py (this is probably the best way to learn SAGE).\nThis statement seems wrong to me:\n\n```\n\\sage predefines upper and lowercase letters as global\n    indeterminates.\n```\n\nIndeed, I believe only 'x' is predefined.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1442\n\n",
     "created_at": "2007-12-09T21:36:34Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001442.json:
     "title": "wrong statement in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1442",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: tba
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1442
 
 ---
 
-archive/issue_comments_009304.json:
+archive/issue_comments_009279.json:
 ```json
 {
     "body": "Attachment [1442.patch](tarball://root/attachments/some-uuid/ticket1442/1442.patch) by @mwhansen created at 2007-12-14 07:19:13",
     "created_at": "2007-12-14T07:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9304",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9279",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -55,15 +55,15 @@ Attachment [1442.patch](tarball://root/attachments/some-uuid/ticket1442/1442.pat
 
 ---
 
-archive/issue_comments_009305.json:
+archive/issue_comments_009280.json:
 ```json
 {
     "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-14T07:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9305",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9280",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -73,15 +73,15 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
-archive/issue_comments_009306.json:
+archive/issue_comments_009281.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-14T07:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9306",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9281",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -91,15 +91,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_009307.json:
+archive/issue_comments_009282.json:
 ```json
 {
     "body": "This used to be true, but it caused way too much confusion, so we changed it.  But forgot to change the docs.",
     "created_at": "2007-12-15T10:38:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9307",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9282",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -109,15 +109,15 @@ This used to be true, but it caused way too much confusion, so we changed it.  B
 
 ---
 
-archive/issue_comments_009308.json:
+archive/issue_comments_009283.json:
 ```json
 {
     "body": "Looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-15T11:58:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9308",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9283",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -131,15 +131,15 @@ Michael
 
 ---
 
-archive/issue_comments_009309.json:
+archive/issue_comments_009284.json:
 ```json
 {
     "body": "Merged in 2.9.rc0.",
     "created_at": "2007-12-15T11:59:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9309",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9284",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -149,15 +149,15 @@ Merged in 2.9.rc0.
 
 ---
 
-archive/issue_comments_009310.json:
+archive/issue_comments_009285.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-15T11:59:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9310",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1442#issuecomment-9285",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

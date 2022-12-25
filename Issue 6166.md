@@ -6,15 +6,14 @@ archive/issues_006166.json:
     "body": "Assignee: @jhpalmieri\n\nCC:  @rbeezer @mwhansen\n\nThe patch is supposed to remove 'nodetex' (and any other directives in the same line) from  the reference manual; these are already stripped from interactive docstrings by #6122.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6166\n\n",
     "created_at": "2009-05-31T04:58:37Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "[with patch, needs review] strip 'nodetex' from the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6166",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jhpalmieri
@@ -32,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6166
 
 ---
 
-archive/issue_comments_049195.json:
+archive/issue_comments_049100.json:
 ```json
 {
     "body": "Attachment [no-nodetex-ref.patch](tarball://root/attachments/some-uuid/ticket6166/no-nodetex-ref.patch) by @jhpalmieri created at 2009-05-31 04:58:59",
     "created_at": "2009-05-31T04:58:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49195",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49100",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -50,15 +49,15 @@ Attachment [no-nodetex-ref.patch](tarball://root/attachments/some-uuid/ticket616
 
 ---
 
-archive/issue_comments_049196.json:
+archive/issue_comments_049101.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-06-01T05:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49196",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49101",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -68,15 +67,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_049197.json:
+archive/issue_comments_049102.json:
 ```json
 {
     "body": "Changing assignee from @jhpalmieri to @mwhansen.",
     "created_at": "2009-06-01T05:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49197",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49102",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -86,15 +85,15 @@ Changing assignee from @jhpalmieri to @mwhansen.
 
 ---
 
-archive/issue_comments_049198.json:
+archive/issue_comments_049103.json:
 ```json
 {
     "body": "Attachment [trac_6166-2.patch](tarball://root/attachments/some-uuid/ticket6166/trac_6166-2.patch) by @mwhansen created at 2009-06-01 05:10:55\n\nThe original patch looks good except it doesn't handle the case when there is an empty docstring.  I've added a patch on top which fixes this.  John, can you review my small patch?",
     "created_at": "2009-06-01T05:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49198",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49103",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -106,15 +105,15 @@ The original patch looks good except it doesn't handle the case when there is an
 
 ---
 
-archive/issue_comments_049199.json:
+archive/issue_comments_049104.json:
 ```json
 {
     "body": "Looks good to me.  (Although we just shouldn't allow empty docstrings in the first place :)",
     "created_at": "2009-06-01T05:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49199",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49104",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -124,15 +123,15 @@ Looks good to me.  (Although we just shouldn't allow empty docstrings in the fir
 
 ---
 
-archive/issue_comments_049200.json:
+archive/issue_comments_049105.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-01T05:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49200",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49105",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -142,15 +141,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_049201.json:
+archive/issue_comments_049106.json:
 ```json
 {
     "body": "I think docstringlines is an empty list if there is no docstring as well.\n\nMerged in 4.0.1.alpha0.",
     "created_at": "2009-06-01T05:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6166",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49201",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6166#issuecomment-49106",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

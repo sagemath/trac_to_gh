@@ -6,15 +6,14 @@ archive/issues_004875.json:
     "body": "Assignee: @williamstein\n\nCC:  wcauchois abergeron mhampton\n\nThis is what I get:\n\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).show(fill=True)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n[snip IPython layers ...]\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.__repr__ (sage/plot/plot3d/base.c:1976)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.show (sage/plot/plot3d/base.c:8919)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3d.export_jmol (sage/plot/plot3d/base.c:4230)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.Graphics3dGroup.jmol_repr (sage/plot/plot3d/base.c:10166)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/base.so in sage.plot.plot3d.base.TransformGroup.jmol_repr (sage/plot/plot3d/base.c:11940)()\n\n/Volumes/Place/anakha/Applications/sage-3.2.2/local/lib/python2.5/site-packages/sage/plot/plot3d/index_face_set.so in sage.plot.plot3d.index_face_set.IndexFaceSet.jmol_repr (sage/plot/plot3d/index_face_set.c:6298)()\n\nRuntimeError: \n\n```\n\n\nI will investigate after Christmas, unless someone fixes this by then.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4875\n\n",
     "created_at": "2008-12-24T18:51:50Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Polyhedron.show(fill=True) fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4875",
-    "user": "abergeron"
+    "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"
 }
 ```
 Assignee: @williamstein
@@ -60,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4875
 
 ---
 
-archive/issue_comments_036906.json:
+archive/issue_comments_036834.json:
 ```json
 {
     "body": "Turns out I need this sooner, so here I go.\n\nIt seems this is a really weird cython bug.\n\nThe last function shown in the traceback (jmol_repr) call _seperate_creases.  But that call sometimes returns NULL (signaling an error) without passing through the error path (and adding itself to the traceback).  \n\nI suspect a macro doing a return since there are no other returns than the last one in the code.  I have verified the control flow does not pass through the final block by adding a printf() just before the return but when the bug is triggered, it does not print anything.\n\nAlso this bug seems intermittent.  I often have to repeat the offending line 3 or 4 times until it triggers.",
     "created_at": "2008-12-24T19:41:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36906",
-    "user": "abergeron"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36834",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abergeron"
 }
 ```
 
@@ -86,15 +85,15 @@ Also this bug seems intermittent.  I often have to repeat the offending line 3 o
 
 ---
 
-archive/issue_comments_036907.json:
+archive/issue_comments_036835.json:
 ```json
 {
     "body": "This bug was hard to track down! But I believe the root cause is in Polyhedron.render_solid(), when the method gives invalid faces to IndexFaceSet. This causes issues later on, inside IndexFaceSet, when certain CPython methods with little to no error checking index into those faces.\n\nThese faces are incorrect because Polyhedron.triangulated_facial_incidences() does not properly triangulate the facial incidences. Look at this:\n\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).triangulated_facial_incidences()\n[[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]\n```\n\n\nTriangles in 3-space should consist of 3 vertices, not 2!\n\ntriangulated_facial_incidences() naively handles the case where `vert_number != self.dim()` (see polyhedra.py:678) by simply appending the original facial incidence.\n\nThe output from facial_incidences() looks like this:\n\n\n```\nsage: Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]]).facial_incidences()\n[[0, [0, 2]], [1, [0, 1]], [2, [1, 2]]]\n```\n\n\nJust FYI, the facial incidences are computed using cddlib. Here's a log of Sage's interaction with cddlib:\n\n\n```\nsage: P = Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]])\nsage: vert_to_ieq(P._vertices, rays=P._rays, cdd_type=P._cdd_type, verbose=True)\nV-representation\nbegin\n3 4 rational\n1 1 2 3 \n1 0 1 0 \n1 1 1 1 \nend\n\n\nInput is a V-representation\nH-representation\nlinearity 1  4\nbegin\n 4 4 rational\n 1 -1 0 0\n 1 1 -1 0\n -1 0 1 0\n 2 -1 -2 1\nend\n\nV-representation\nbegin\n 3 4 rational\n 1 1 2 3\n 1 0 1 0\n 1 1 1 1\nend\n\nHere is the incidence list:\nbegin\n  4    3\n 1 2 : 1 3 \n 2 2 : 1 2 \n 3 2 : 2 3 \n 4 3 : 1 2 3 \nend\n\nHere is the adjacency list:\nbegin\n  4    4\n 1 2 : 2 3 \n 2 2 : 1 3 \n 3 2 : 1 2 \n 4 0 : \nend\n\nA Polyhedron with 3 vertices.\n```\n\n\nI would love to fix this bug, but unfortunately I don't have the mathematical knowledge to improve triangulated_facial_incidences(). Hopefully now that the source of the bug is clear, someone with more intimate knowledge of polyhedra can fix it!",
     "created_at": "2009-03-04T07:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36907",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36835",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -184,15 +183,15 @@ I would love to fix this bug, but unfortunately I don't have the mathematical kn
 
 ---
 
-archive/issue_comments_036908.json:
+archive/issue_comments_036836.json:
 ```json
 {
     "body": "Oh, here's an example of manually altering triangulated_facial_incidences() so that show(fill=True) works:\n\n```\nP = Polyhedron(vertices = [[1, 2, 3], [0,1,0], [1,1,1]])\nP.triangulated_facial_incidences()\n# the method caches its result in this private variable\nP._triangulated_facial_incidences = [[0, [0, 1, 2]]]\nP.show(fill=True)\n```\n",
     "created_at": "2009-03-04T07:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36908",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36836",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -211,15 +210,15 @@ P.show(fill=True)
 
 ---
 
-archive/issue_comments_036909.json:
+archive/issue_comments_036837.json:
 ```json
 {
     "body": "The problem is really that 2D polyhedra in 3D are not being handled well.  The triangulation is correct - you are constructing a 2D object, whose \"faces\" are its edges.  But for rendering, we should special-case this, and if the intrinsic dimension is 2 then we need to triangulate differently.\n\nI will try to fix this today if I can find the time.\n-M. Hampton",
     "created_at": "2009-03-05T13:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36909",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36837",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -232,15 +231,15 @@ I will try to fix this today if I can find the time.
 
 ---
 
-archive/issue_comments_036910.json:
+archive/issue_comments_036838.json:
 ```json
 {
     "body": "Attachment [trac_4875_1.patch](tarball://root/attachments/some-uuid/ticket4875/trac_4875_1.patch) by mhampton created at 2009-03-21 04:13:12\n\nspecial casing of 2d polytopes in 3d",
     "created_at": "2009-03-21T04:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36910",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36838",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -252,15 +251,15 @@ special casing of 2d polytopes in 3d
 
 ---
 
-archive/issue_comments_036911.json:
+archive/issue_comments_036839.json:
 ```json
 {
     "body": "Attached patch should fix the problem.  This issue is simpler than it first appeared, I think.",
     "created_at": "2009-03-21T04:14:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36911",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36839",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -270,15 +269,15 @@ Attached patch should fix the problem.  This issue is simpler than it first appe
 
 ---
 
-archive/issue_comments_036912.json:
+archive/issue_comments_036840.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mhampton.",
     "created_at": "2009-03-21T17:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36912",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36840",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -288,15 +287,15 @@ Changing assignee from @williamstein to mhampton.
 
 ---
 
-archive/issue_comments_036913.json:
+archive/issue_comments_036841.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-03-21T17:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36913",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36841",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -306,15 +305,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_036914.json:
+archive/issue_comments_036842.json:
 ```json
 {
     "body": "I applied the patch to Sage Version 4.0.alpha0, Release Date: 2009-05-15.  It passes all the doctests in sage/geometry/, and works with several other examples I tried.  So the show method now works with 2d polyhedra in 3d.  There is still a problem with displaying 1d polyhedra in 3d, but that wasn't the purpose of this patch.\n\nBy the way, this patch plays well with trac_5581_rebase.patch, i.e., applying these patches in either order, the doctests in sage/geometry all pass.",
     "created_at": "2009-05-20T19:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36914",
-    "user": "dperkinson"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36842",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dperkinson"
 }
 ```
 
@@ -326,15 +325,15 @@ By the way, this patch plays well with trac_5581_rebase.patch, i.e., applying th
 
 ---
 
-archive/issue_comments_036915.json:
+archive/issue_comments_036843.json:
 ```json
 {
     "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-21T02:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36915",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36843",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -348,15 +347,15 @@ Michael
 
 ---
 
-archive/issue_comments_036916.json:
+archive/issue_comments_036844.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-21T02:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4875",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36916",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4875#issuecomment-36844",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

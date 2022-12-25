@@ -6,15 +6,14 @@ archive/issues_009447.json:
     "body": "Assignee: @aghitza\n\nsage: len(search_src(\"except:\",interact=False).splitlines())\n312\n\n\nThis number should be much lower.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9447\n\n",
     "created_at": "2010-07-07T09:48:31Z",
     "labels": [
-        "algebra",
-        "minor",
-        "enhancement"
+        "component: algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "\"except:\" count in sage too high",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9447",
-    "user": "wjlaffin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/wjlaffin"
 }
 ```
 Assignee: @aghitza
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9447
 
 ---
 
-archive/issue_comments_090530.json:
+archive/issue_comments_090382.json:
 ```json
 {
     "body": "Changing assignee from @aghitza to @jasongrout.",
     "created_at": "2010-07-07T10:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90530",
-    "user": "wjlaffin"
+    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90382",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wjlaffin"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing assignee from @aghitza to @jasongrout.
 
 ---
 
-archive/issue_comments_090531.json:
+archive/issue_comments_090383.json:
 ```json
 {
     "body": "Changing component from algebra to misc.",
     "created_at": "2010-07-07T10:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90531",
-    "user": "wjlaffin"
+    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90383",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wjlaffin"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing component from algebra to misc.
 
 ---
 
-archive/issue_comments_090532.json:
+archive/issue_comments_090384.json:
 ```json
 {
     "body": "These all seem to be gone in `5.9.beta1`:\n\n```\ntravis@travis-virtualbox:~/sage-5.9.beta1/devel/sage-main/sage$ grep -R \"except:\" .\n./numerical/backends/glpk_backend.cpp:            /*except:*/ {\n./structure/list_clone_timings_cy.c:        /*except:*/ {\n./plot/plot3d/bugs.txt:        except:       # TODO -- this would catch control-C,etc. -- FIX THIS TO CATCH WHAT IS RAISED!!!!\n./libs/singular/function.cpp:        /*except:*/ {\n\nsage: len(search_src(\"except:\",interact=False).splitlines())\n0\n```\n",
     "created_at": "2013-04-01T19:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90532",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90384",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -99,15 +98,15 @@ sage: len(search_src("except:",interact=False).splitlines())
 
 ---
 
-archive/issue_comments_090533.json:
+archive/issue_comments_090385.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-04-01T19:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90533",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90385",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -117,15 +116,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_090534.json:
+archive/issue_comments_090386.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-04-02T06:12:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90534",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90386",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -135,15 +134,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_090535.json:
+archive/issue_comments_090387.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2013-04-03T15:12:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90535",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9447#issuecomment-90387",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_007471.json:
     "body": "Assignee: tbd\n\n\n```\n\n> 2009/11/15 Jason Moxham <>:\n>>\n>> Solved???\n>>\n>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  config.guess\n>> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/config.guess\n>> 660c660\n>> < i?86-*-*|x86_64-*-*|amd64-*-*)\n>> ---\n>>> i?86-*-*|x86_64-*-*)\n>> 755c755\n>> <   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s\n>> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy ${dummy}.exe\n>> ---\n>>>   rm -f ${dummy}032.s ${dummy}32.o ${dummy}32.c ${dummy}032.o ${dummy}064.s\n>> ${dummy}64.o ${dummy}64.c ${dummy}064.o $dummy\n>> jasonmoxham@debian5-32:/tmp/jason/mpir-1.2$ diff  mpn/x86/fat/fat.c\n>> ../sage-4.2.1/spkg/standard/mpir-1.2.p9/src/mpn/x86/fat/fat.c\n>> 141d140\n>> <   __MPN(divrem_euclidean_qr_2_init),\n>>\n>> and perhaps some others ?\n>> Please update sage mpir-1.2 with current mpir-1.2\n\nExcellent, thanks for tracking this down!   \n\nNow, I wonder what idiot messed up Sage's mpir-1.2 spkg by not updating the patches properly?\n\n[... checks SPKG.txt ...]\n\n### mpir-1.2 (William Stein, May 31, 2009)\n * Update to the latest MPIR 1.2 pre-release\n * Change \"GMP\" --> \"MPIR\" in various places.\n\nDoh.  \n\n\n\n2009/11/15 Bill Hart <>:\n>\n> I probably should put mpir-1.2.2 up actually, as it contained a\n> FreeBSD fix specifically for Sage.\n>\n> I'll have to update the gplv3.txt and license info for mpf/set_str.c though.\n>\n> Give me a few minutes and I'll do it.\n\nThanks.   I can't work on this further until tonight because my internet connection is so horrible.  \n\n> Bill.\n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/7471\n\n",
     "created_at": "2009-11-15T18:02:44Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007471.json:
     "title": "update the patches in the mpir spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7471",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -83,15 +83,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7471
 
 ---
 
-archive/issue_comments_062929.json:
+archive/issue_comments_062814.json:
 ```json
 {
     "body": "I just decided to look into http://trac.sagemath.org/sage_trac/ticket/7471 and try to actually fix our patches.  However, we don't patch mpir at all -- we just include plain vanilla upstream sources.  The mpir spkg was got by just taking the mpir tar ball from the mpir website, and extracting it into the src/ subdirectory.  So the discrepancy above must be because of getting a prerelease version of the tarball. \n\nAnyway, I just want to point out that it wasn't a problem with just forgetting to update some patches (as I suggested), since we have no patches.  We used to have tons with GMP, which is why I so quickly thought we had them still with MPIR.",
     "created_at": "2009-11-18T09:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62929",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62814",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -103,15 +103,15 @@ Anyway, I just want to point out that it wasn't a problem with just forgetting t
 
 ---
 
-archive/issue_comments_062930.json:
+archive/issue_comments_062815.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-18T09:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62930",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62815",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +121,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062931.json:
+archive/issue_comments_062816.json:
 ```json
 {
     "body": "The new spkg is here: http://wstein.org/home/wstein/patches/mpir-1.2.2.spkg\n\nAll I did was put the latest vanilla spkg from http://mpir.org in the src directory.   There are no patches, so that's it.    I've not tested yet that this new spkg really solves the problem involving FAT binaries that started this ticket\n\n -- William",
     "created_at": "2009-11-18T09:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62931",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62816",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -143,15 +143,15 @@ All I did was put the latest vanilla spkg from http://mpir.org in the src direct
 
 ---
 
-archive/issue_comments_062932.json:
+archive/issue_comments_062817.json:
 ```json
 {
     "body": "I just tested this on the \"debian32\" virtual machine and it works:\n\n```\nwstein@debian5-32:/tmp/wstein/farm/sage-4.2.1$ export SAGE_FAT_BINARY=\"yes\"\nwstein@debian5-32:/tmp/wstein/farm/sage-4.2.1$ sage -f http://wstein.org/home/wstein/patches/mpir-1.2.2.spkg spkg/standard/pari-2.3.3.p5.spkg \n...\nchecking if the assembler knows about SSE2 instructions... yes\nusing ABI=\"32\"\n      CC=\"gcc -std=gnu99\"\n      CFLAGS=\"-m32 -O2 -fomit-frame-pointer\"\n      CPPFLAGS=\"\"\n      CXX=\"g++\"\n      CXXFLAGS=\"-m32 -O2 -fomit-frame-pointer\"\n      MPN_PATH=\" x86/fat x86 generic\"\nchecking for function prototypes... yes\n\n...\n\nreal    1m23.877s\nuser    0m42.855s\nsys     0m34.066s\nSuccessfully installed pari-2.3.3.p5\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing pari-2.3.3.p5.spkg\n```\n",
     "created_at": "2009-11-18T17:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62932",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62817",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -188,15 +188,15 @@ Finished installing pari-2.3.3.p5.spkg
 
 ---
 
-archive/issue_comments_062933.json:
+archive/issue_comments_062818.json:
 ```json
 {
     "body": "Changing priority from critical to blocker.",
     "created_at": "2009-11-18T17:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62933",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62818",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -206,15 +206,15 @@ Changing priority from critical to blocker.
 
 ---
 
-archive/issue_comments_062934.json:
+archive/issue_comments_062819.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-07T08:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62934",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62819",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -224,15 +224,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_062935.json:
+archive/issue_comments_062820.json:
 ```json
 {
     "body": "Looks good to me.  Good work (to you and Jason Moxham) in tracking the confusing problem with Pari down.",
     "created_at": "2009-12-07T08:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62935",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7471#issuecomment-62820",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

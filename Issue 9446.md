@@ -6,7 +6,7 @@ archive/issues_009446.json:
     "body": "Assignee: @jasongrout\n\nCC:  drkirkby justin @mwhansen\n\nWith Sage 4.5.alpha4 on t2.math.washington.edu (solaris):\n\n```\nsage -t  -long devel/sage/sage/misc/trace.py\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.alpha4/devel/sage-main/sage/misc/trace.py\", line 54:\n    sage: _ = s.expect('100')\nException raised:\n    Traceback (most recent call last):\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_examp\\\nle\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_exam\\\nple\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[6]>\", line 1, in <module>\n        _ = s.expect('100')###line 54:\n    sage: _ = s.expect('100')\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/lib/python/site-packages/pexpect.py\", line 912\\\n, in expect\n        return self.expect_list(compiled_pattern_list, timeout, searchwindowsize)\n      File \"/home/palmieri/t2/sage-4.5.alpha4/local/lib/python/site-packages/pexpect.py\", line 989\\\n, in expect_list\n        raise TIMEOUT (str(e) + '\\n' + str(self))\n    TIMEOUT: Timeout exceeded in read_nonblocking().\n    <pexpect.spawn instance at 0x2c005d0>\n    version: 2.0 ($Revision: 1.151 $)\n    command: /home/palmieri/t2/sage-4.5.alpha4/sage\n    args: ['/home/palmieri/t2/sage-4.5.alpha4/sage']\n    patterns:\n        100\n    buffer (last 100 chars):\n    before (last 100 chars):                       *^M\n    **********************************************************************^M\n    c^M\n\n    after: <class 'pexpect.TIMEOUT'>\n    match: None\n    match_index: None\n    exitstatus: None\n    flag_eof: 0\n    pid: 22383\n    child_fd: 4\n    timeout: 30\n    delimiter: <class 'pexpect.EOF'>\n    logfile: None\n    maxread: 2000\n    searchwindowsize: None\n    delaybeforesend: 0.1\n**********************************************************************\nFile \"/home/palmieri/t2/sage-4.5.alpha4/devel/sage-main/sage/misc/trace.py\", line 61:\n    sage: print s.before[s.before.find('-'):]\nExpected:\n    ---...\n    ipdb> c\n    2 * 5\nGot:\n    ----------------------------------------------------------------------^M\n    | Sage Version 4.5.alpha4, Release Date: 2010-07-06                  |^M\n    | Type notebook() for the GUI, and license() for information.        |^M\n    ----------------------------------------------------------------------^M\n    **********************************************************************^M\n    *                                                                    *^M\n    * Warning: this is a prerelease version, and it may be unstable.     *^M\n    *                                                                    *^M\n    **********************************************************************^M\n    c^M\n    <BLANKLINE>\n**********************************************************************\n```\n\nIs this due to something timing out?\n\nIssue created by migration from https://trac.sagemath.org/ticket/9446\n\n",
     "created_at": "2010-07-07T05:45:50Z",
     "labels": [
-        "misc",
+        "component: misc",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009446.json:
     "title": "misc/trace.py doctest failure on t2 (solaris)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9446",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jasongrout
@@ -104,15 +104,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9446
 
 ---
 
-archive/issue_comments_090511.json:
+archive/issue_comments_090364.json:
 ```json
 {
     "body": "This does not look like a timeout to me - at least not like one I've seen. Have you set something like the following?\n\n\n```\nSAGE_TIMEOUT_LONG=10000\nSAGE_TIMEOUT=1000\nexport SAGE_TIMEOUT_LONG\nexport SAGE_TIMEOUT\n```\n\n\nI'm just making a build on t2 myself. I'll see if I get this issue.",
     "created_at": "2010-07-07T07:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90511",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90364",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -133,15 +133,15 @@ I'm just making a build on t2 myself. I'll see if I get this issue.
 
 ---
 
-archive/issue_comments_090512.json:
+archive/issue_comments_090365.json:
 ```json
 {
     "body": "This is odd:\n\n\n```\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4] $ ./sage -t  -long devel/sage/sage/misc/trace.py\nsage -t -long \"devel/sage/sage/misc/trace.py\"               \n\t [29.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 29.7 seconds\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4] $ \n```\n\n\nCan you retry the test John. \n\nI'm personally quite suspicious about using /home anywhere on *.math.washington.edu, since I'm aware the NFS directories are shared from a server (disk.math) which has the default configuration of the pools modified to increase performance, in a manner which risks data corruption on NFS shares. \n\nDave",
     "created_at": "2010-07-07T09:12:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90512",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90365",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -170,15 +170,15 @@ Dave
 
 ---
 
-archive/issue_comments_090513.json:
+archive/issue_comments_090366.json:
 ```json
 {
     "body": "The first three times I ran the test, I had a failure.  Now I've run it without a failure, too, so I'm changing the \"blocker\" status.\n\nSince it's not even reproducible, should this ticket be closed?",
     "created_at": "2010-07-07T15:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90513",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90366",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -190,15 +190,15 @@ Since it's not even reproducible, should this ticket be closed?
 
 ---
 
-archive/issue_comments_090514.json:
+archive/issue_comments_090367.json:
 ```json
 {
     "body": "Changing priority from blocker to minor.",
     "created_at": "2010-07-07T15:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90514",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90367",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -208,15 +208,15 @@ Changing priority from blocker to minor.
 
 ---
 
-archive/issue_comments_090515.json:
+archive/issue_comments_090368.json:
 ```json
 {
     "body": "Replying to [comment:3 jhpalmieri]:\n> The first three times I ran the test, I had a failure.  Now I've run it without a failure, too, so I'm changing the \"blocker\" status.\n> \n> Since it's not even reproducible, should this ticket be closed?\n\nI think not yet. There are a lot of doctest failures which seem to not be reproducible. I think something is screwed up with the doctesting framework myself.",
     "created_at": "2010-07-07T20:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90515",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90368",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -231,15 +231,15 @@ I think not yet. There are a lot of doctest failures which seem to not be reprod
 
 ---
 
-archive/issue_comments_090516.json:
+archive/issue_comments_090369.json:
 ```json
 {
     "body": "Changing assignee from @jasongrout to mvngu.",
     "created_at": "2010-10-02T21:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90516",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90369",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -249,15 +249,15 @@ Changing assignee from @jasongrout to mvngu.
 
 ---
 
-archive/issue_comments_090517.json:
+archive/issue_comments_090370.json:
 ```json
 {
     "body": "Changing component from misc to doctest.",
     "created_at": "2010-10-02T21:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90517",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90370",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -267,15 +267,15 @@ Changing component from misc to doctest.
 
 ---
 
-archive/issue_comments_090518.json:
+archive/issue_comments_090371.json:
 ```json
 {
     "body": "Justin Walker has [seen this problem with 4.6.alpha2](http://groups.google.com/group/sage-release/msg/fe720bce3f933171) on two OS X 10.6.4 systems (Dual Quad Xeon, Core i7):\n\n```python\nsage -t  -long devel/sage/sage/misc/trace.py\n**********************************************************************\nFile \"/Users/Sage/sage-4.6.alpha0/devel/sage-main/sage/misc/trace.py\", line 61:\n    sage: print s.before[s.before.find('-'):]\nExpected:\n    ---...\n    ipdb> c\n    2 * 5\nGot:\n    -bit mode\n    Creating SAGE_LOCAL/lib/sage-64.txt since it does not exist\n    Detected SAGE64 flag\n    Building Sage on OS X in 64-bit mode\n    ----------------------------------------------------------------------\n    | Sage Version 4.6.alpha2, Release Date: 2010-09-29                  |\n    | Type notebook() for the GUI, and license() for information.        |\n    ----------------------------------------------------------------------\n    **********************************************************************\n    *                                                                    *\n    * Warning: this is a prerelease version, and it may be unstable.     *\n    *                                                                    *\n    **********************************************************************\n    trace('print factor(10)'); print 3+97\n    s\n    c\n    sage: trace('print factor(10)'); print 3+97\n    > <string>(1)<module>()\n    \n    ipdb> s\n    --Call--\n    > /Users/Sage/sage-4.6.alpha0/local/lib/python2.6/site-packages/sage/rings/arith.py(2153)factor()\n       2152 \n    -> 2153 def factor(n, proof=None, int_=False, algorithm='pari', verbose=0, **kwds):\n       2154     \"\"\"\n    \n    ipdb> c\n    2 * 5\n    <BLANKLINE>\n```\n",
     "created_at": "2010-10-02T21:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90518",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90371",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -327,15 +327,15 @@ Got:
 
 ---
 
-archive/issue_comments_090519.json:
+archive/issue_comments_090372.json:
 ```json
 {
     "body": "I'm changing the priority of this to the default \"major\" since it was only changed to minor when it was thought to be almost a non-issue. \n\nDave",
     "created_at": "2010-10-03T05:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90519",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -347,33 +347,15 @@ Dave
 
 ---
 
-archive/issue_comments_090520.json:
-```json
-{
-    "body": "Changing priority from minor to major.",
-    "created_at": "2010-10-03T05:37:41Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/9446",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90520",
-    "user": "drkirkby"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_090521.json:
+archive/issue_comments_090373.json:
 ```json
 {
     "body": "Maybe the problem is that `pexpect`'s default timeout (30 seconds) is exceeded under load.  For example\n\n```python\nsage: import pexpect\nsage: s = pexpect.spawn('sage')\nsage: _ = s.sendline(\"trace('print factor(10)'); import time; time.sleep(31); print 3+97\")\nsage: _ = s.sendline(\"s\"); _ = s.sendline(\"c\");\nsage: _ = s.expect('100')\n---------------------------------------------------------------------------\nTIMEOUT                                   Traceback (most recent call last)\n[...]\nTIMEOUT: Timeout exceeded in read_nonblocking().\n<pexpect.spawn instance at 0x6d9d88>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /home/mpatel/apps/sage/sage\nargs: ['/home/mpatel/apps/sage/sage']\npatterns:\n    100\nbuffer (last 100 chars):\nbefore (last 100 chars): , proof=None, int_=False, algorithm='pari', verbose=0, **kwds):\n   2154     \"\"\"\n\nipdb> c\n2 * 5\n\nafter: <class 'pexpect.TIMEOUT'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 0\npid: 29286\nchild_fd: 3\ntimeout: 30\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 2000\nsearchwindowsize: None\ndelaybeforesend: 0.1\nsage: \n```\n",
     "created_at": "2010-10-10T03:10:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90521",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90373",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -423,15 +405,15 @@ sage:
 
 ---
 
-archive/issue_comments_090522.json:
+archive/issue_comments_090374.json:
 ```json
 {
     "body": "With\n\n```python\ndef example(verbose=False, **kwargs):\n    error = False\n    try:\n        import pexpect\n        s = pexpect.spawn('sage')\n        _ = s.sendline(\"trace('print factor(10)'); print 3+97\")\n        _ = s.sendline(\"s\"); _ = s.sendline(\"c\");\n        _ = s.expect('100', timeout=kwargs['timeout'])\n        t = s.before[s.before.find('-'):]\n        if not t.strip().endswith('ipdb> c\\r\\n2 * 5'):\n            raise Exception('\"Got\" does not match \"Expected\"')\n\n    except Exception as exc:\n        error = True\n        if verbose:\n            print exc\n    return error\n\ndef runner(n=1000, verbose=False, **kwargs):\n    fail = 0\n    for i in xrange(n):\n        fail += example(verbose, **kwargs)\n    return fail\n\nrunner(100, timeout=1)\n```\n\nI get 13 failures on sage.math, at least some of which I may have induced with a simultaneous `sage -tp`.  This 4.6.alpha3 installation is under `/scratch`.",
     "created_at": "2010-10-10T03:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90522",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90374",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -471,15 +453,15 @@ I get 13 failures on sage.math, at least some of which I may have induced with a
 
 ---
 
-archive/issue_comments_090523.json:
+archive/issue_comments_090375.json:
 ```json
 {
     "body": "Attachment [trac_9446-trace_doctest_timeout.patch](tarball://root/attachments/some-uuid/ticket9446/trac_9446-trace_doctest_timeout.patch) by @qed777 created at 2010-10-10 03:31:44\n\nIncrease pexpect timeout for test",
     "created_at": "2010-10-10T03:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90523",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90375",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -491,15 +473,15 @@ Increase pexpect timeout for test
 
 ---
 
-archive/issue_comments_090524.json:
+archive/issue_comments_090376.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-10-10T03:32:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90524",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90376",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -509,15 +491,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_090525.json:
+archive/issue_comments_090377.json:
 ```json
 {
     "body": "I've attached a patch that increases the timeout to 90 seconds.",
     "created_at": "2010-10-10T03:32:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90525",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90377",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -527,15 +509,15 @@ I've attached a patch that increases the timeout to 90 seconds.
 
 ---
 
-archive/issue_comments_090526.json:
+archive/issue_comments_090378.json:
 ```json
 {
     "body": "Replying to [comment:5 mpatel]:\n> Justin Walker has [seen this problem with 4.6.alpha2](http://groups.google.com/group/sage-release/msg/fe720bce3f933171) on two OS X 10.6.4 systems (Dual Quad Xeon, Core i7):\n\nSee #10138 for this problem, which is specific to 64-bit builds.",
     "created_at": "2010-10-22T06:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90526",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90378",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -548,15 +530,15 @@ See #10138 for this problem, which is specific to 64-bit builds.
 
 ---
 
-archive/issue_comments_090527.json:
+archive/issue_comments_090379.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-05-26T15:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90527",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90379",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -566,15 +548,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_090528.json:
+archive/issue_comments_090380.json:
 ```json
 {
     "body": "I did 'make NUM_THREADS=10 ptestlong' on a 4.7.rc4 build on skynet/eno and had one test failure, which passed with I ran it individually.  (So I suspect a timeout problem.)  I then applied the patch and did 'make NUM_THREADS=10 ptestlong' again, and this time all the tests passed. \n\nPositive review.",
     "created_at": "2011-05-26T15:57:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90528",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90380",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -586,15 +568,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_090529.json:
+archive/issue_comments_090381.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-05-31T17:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90529",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9446#issuecomment-90381",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

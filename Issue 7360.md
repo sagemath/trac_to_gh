@@ -6,7 +6,7 @@ archive/issues_007360.json:
     "body": "Assignee: joyner\n\nCurrently (sage-4.2):\n\n\n```\nsage: S = KleinFourGroup()\nsage: S.isomorphism_type_info_simple_group()\n(<type 'exceptions.TypeError'>, 'Group must be simple.')\n```\n\n\nThe attached patch fixes this and adds a doctest.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7360\n\n",
     "created_at": "2009-10-31T13:04:24Z",
     "labels": [
-        "group theory",
+        "component: group theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007360.json:
     "title": "isomorphism_type_info_simple_group returns an exception instead of raising it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7360",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: joyner
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7360
 
 ---
 
-archive/issue_comments_061676.json:
+archive/issue_comments_061563.json:
 ```json
 {
     "body": "Attachment [trac_7360.patch](tarball://root/attachments/some-uuid/ticket7360/trac_7360.patch) by @aghitza created at 2009-10-31 13:07:29",
     "created_at": "2009-10-31T13:07:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7360",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61676",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61563",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -58,15 +58,15 @@ Attachment [trac_7360.patch](tarball://root/attachments/some-uuid/ticket7360/tra
 
 ---
 
-archive/issue_comments_061677.json:
+archive/issue_comments_061564.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-31T13:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7360",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61677",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61564",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -76,15 +76,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_061678.json:
+archive/issue_comments_061565.json:
 ```json
 {
     "body": "Positive review - nice catch.",
     "created_at": "2009-11-10T22:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7360",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61678",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61565",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -94,15 +94,15 @@ Positive review - nice catch.
 
 ---
 
-archive/issue_comments_061679.json:
+archive/issue_comments_061566.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-10T22:34:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7360",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61679",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61566",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -112,15 +112,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_061680.json:
+archive/issue_comments_061567.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-12T06:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7360",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61680",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7360#issuecomment-61567",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

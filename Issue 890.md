@@ -6,7 +6,7 @@ archive/issues_000890.json:
     "body": "Assignee: failure\n\nSeveral failures; the following is typical:\n\n```\nFile \"ec_database.py\", line 21:\n    sage: elliptic_curves.rank(n=5, rank=3, tors=2, labels=True)\nExpected:\n    ['59450i1', '59450i2', '61376c1', '61376c2', '65481c1']\nGot:\n    []\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/890\n\n",
     "created_at": "2007-10-13T20:40:42Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000890.json:
     "title": "2.8.7-alpha0: doctest failure in schemes/elliptic_curves/ec_database.py (database lookup failures)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/890",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: failure
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/890
 
 ---
 
-archive/issue_comments_005491.json:
+archive/issue_comments_005473.json:
 ```json
 {
     "body": "This requires some database I can't find.  Probably the right patch is to mark the tests optional, but maybe William is planning to include this database as a standard package?",
     "created_at": "2007-10-13T23:03:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/890",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/890#issuecomment-5491",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/890#issuecomment-5473",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -57,15 +57,15 @@ This requires some database I can't find.  Probably the right patch is to mark t
 
 ---
 
-archive/issue_comments_005492.json:
+archive/issue_comments_005474.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-14T05:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/890",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/890#issuecomment-5492",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/890#issuecomment-5474",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -75,15 +75,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_005493.json:
+archive/issue_comments_005475.json:
 ```json
 {
     "body": "I created the relevant spkg and put it in the repo.",
     "created_at": "2007-10-14T05:11:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/890",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/890#issuecomment-5493",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/890#issuecomment-5475",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_001111.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: eqn.expand() # does it to both sides\nsage: eqn.expand('right') # does it to the right\nsage: eqn.expand('left') # does it to the right\n```\n\n\nSee the sage-devel thread Enhancing the SymbolicEquation class\n\nIssue created by migration from https://trac.sagemath.org/ticket/1111\n\n",
     "created_at": "2007-11-06T05:25:35Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "Symbolic equation expand left and right",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1111",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1111
 
 ---
 
-archive/issue_comments_006717.json:
+archive/issue_comments_006697.json:
 ```json
 {
     "body": "Attachment [1111.patch](tarball://root/attachments/some-uuid/ticket1111/1111.patch) by @mwhansen created at 2007-11-26 22:01:19",
     "created_at": "2007-11-26T22:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6717",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6697",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -55,15 +53,15 @@ Attachment [1111.patch](tarball://root/attachments/some-uuid/ticket1111/1111.pat
 
 ---
 
-archive/issue_comments_006718.json:
+archive/issue_comments_006698.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-11-26T22:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6718",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6698",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -73,15 +71,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_006719.json:
+archive/issue_comments_006699.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-11-26T22:01:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6719",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6699",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -91,15 +89,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_006720.json:
+archive/issue_comments_006700.json:
 ```json
 {
     "body": "Works great for me. Are there any other symbolic-expression functions that one would want to add to symbolic equations in a like manner? Could this be automated?",
     "created_at": "2007-12-01T00:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6720",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6700",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -109,15 +107,15 @@ Works great for me. Are there any other symbolic-expression functions that one w
 
 ---
 
-archive/issue_comments_006721.json:
+archive/issue_comments_006701.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-01T11:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6721",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6701",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -127,15 +125,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_006722.json:
+archive/issue_comments_006702.json:
 ```json
 {
     "body": "Merged in 2.8.15.alpha0.",
     "created_at": "2007-12-01T11:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6722",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1111#issuecomment-6702",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

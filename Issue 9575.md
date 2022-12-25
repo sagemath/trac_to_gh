@@ -6,15 +6,13 @@ archive/issues_009575.json:
     "body": "Assignee: jason, ncohen, rlm\n\nThis patch adds the function ``grundy_coloring``, which computes the worst case of a first-fit coloring algorithm. Here are some explanations from the function's help :\n\n    A first-fit coloring is obtained by sequentially coloring the\n    vertices of a graph, assigning them the smallest color not already\n    assigned to one of its neighbors. The result is clearly a proper\n    coloring, which usually requires much more colors than an optimal\n    vertex coloring of the graph, and heavily depends on the ordering\n    of the vertices.\n\n    The number of colors required by the worst-case application of\n    this algorithm on a graph `G` is called the Grundy number, written\n    `\\Gamma (G)`.\n\n    Equivalent formulation :\n\n    Equivalently, a Grundy coloring is a proper vertex coloring such\n    that any vertex colored with `i` has, for every `j<i`, a neighbor\n    colored with `j`. This can define a Linear Program, which is used\n    here to compute the Grundy number of a graph.\n\nNathann\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9575\n\n",
     "created_at": "2010-07-22T06:58:15Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Grundy coloring of a graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9575",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -51,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9575
 
 ---
 
-archive/issue_comments_092473.json:
+archive/issue_comments_092319.json:
 ```json
 {
     "body": "Attachment [trac_9575.patch](tarball://root/attachments/some-uuid/ticket9575/trac_9575.patch) by @nathanncohen created at 2010-07-22 07:08:23",
     "created_at": "2010-07-22T07:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92473",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92319",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -69,15 +67,15 @@ Attachment [trac_9575.patch](tarball://root/attachments/some-uuid/ticket9575/tra
 
 ---
 
-archive/issue_comments_092474.json:
+archive/issue_comments_092320.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-22T07:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92474",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92320",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -87,15 +85,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_092475.json:
+archive/issue_comments_092321.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-28T05:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92475",
-    "user": "lsampaio"
+    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92321",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lsampaio"
 }
 ```
 
@@ -105,15 +103,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_092476.json:
+archive/issue_comments_092322.json:
 ```json
 {
     "body": "It works, the documentation is ok. \nI believe it can be accepted.",
     "created_at": "2010-07-28T05:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92476",
-    "user": "lsampaio"
+    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92322",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lsampaio"
 }
 ```
 
@@ -124,15 +122,15 @@ I believe it can be accepted.
 
 ---
 
-archive/issue_comments_092477.json:
+archive/issue_comments_092323.json:
 ```json
 {
     "body": "Yeahhhhhhhhhhhhhhhhhhhh !!!!!!\n\nThank youuuuuuuuuuuuuu !\n\nNathann",
     "created_at": "2010-07-28T05:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92477",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92323",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -146,15 +144,15 @@ Nathann
 
 ---
 
-archive/issue_comments_092478.json:
+archive/issue_comments_092324.json:
 ```json
 {
     "body": "Please remember to update the Author(s) and Reviewer(s) fields.  I've entered guesses.  lsampaio, could you update [the account-name map on the main Sage Trac wiki page](http://trac.sagemath.org/sage_trac/wiki/WikiStart#AccountNamesmappedtoRealNames) with your information?  Thanks!",
     "created_at": "2010-08-09T09:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92478",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92324",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -164,15 +162,15 @@ Please remember to update the Author(s) and Reviewer(s) fields.  I've entered gu
 
 ---
 
-archive/issue_comments_092479.json:
+archive/issue_comments_092325.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-08-09T09:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9575",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92479",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9575#issuecomment-92325",
+    "user": "https://github.com/qed777"
 }
 ```
 

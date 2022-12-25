@@ -6,15 +6,14 @@ archive/issues_008400.json:
     "body": "Assignee: tbd\n\n## Details of the computer\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3\n\n == Sage version 4.3.3 (with several patches) ==\nI'm using a patched version of Sage sage-4.3.3. The patches include:\n\n* #7867 Python patch, to allow Sage library to build. \n* #8191 Addition of iconv, which is needed for R\n* #8285 Update R's spkg-install to work on Solaris\n* #8363 Remove a useless check for mpir in cddlib \n* #8375 Numerical noise in devel/sage/sage/symbolic/pynac.pyx\n* #8374 Numerical noise in devel/sage/sage/symbolic/constants_c.pyx\n* #8371 Patch to allow pyprocessing to build - it failed after python was patched as #7867. (Note #6503 aims to remove pyprocessing completely). \n\n == The problem ==\nThere are 8 test failures on this rather old SPARC. Increasing SAGE_TIMEOUT allowed 3 to pass. The longest is \"devel/sage/sage/rings/polynomial/symmetric_ideal.py\" which takes 459.4 s. \n\nHowever, 5 failures remain outstanding. \n\n\n```\n    sage -t  \"devel/sage/sage/graphs/graph_list.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/generic_graph.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/graph.py\" # Segfault\n    sage -t  \"devel/sage/sage/graphs/graph_database.py\" # Segfault\n    sage -t  \"devel/sage/sage/databases/database.py\" # Segfault\n```\n\nThis ticket is documenting graph_database.py, or to be more precise\n\n\"devel/sage/sage/graphs/graph_database.py\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/8400\n\n",
     "created_at": "2010-02-28T16:25:56Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "doctest devel/sage/sage/databases/database.py fails on Solaris 10 (SPARC)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8400",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -63,15 +62,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8400
 
 ---
 
-archive/issue_comments_075243.json:
+archive/issue_comments_075119.json:
 ```json
 {
     "body": "This problem goes away if sqlite is updated to version 3.6.22, which is the latest version.\n\nI created a trac ticket for that - #8408\n\nDave",
     "created_at": "2010-03-01T13:35:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8400#issuecomment-75243",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8400#issuecomment-75119",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -85,15 +84,15 @@ Dave
 
 ---
 
-archive/issue_comments_075244.json:
+archive/issue_comments_075120.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-06T23:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8400#issuecomment-75244",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8400#issuecomment-75120",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -103,15 +102,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_075245.json:
+archive/issue_comments_075121.json:
 ```json
 {
     "body": "Fixed by #8408",
     "created_at": "2010-03-06T23:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8400#issuecomment-75245",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8400#issuecomment-75121",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

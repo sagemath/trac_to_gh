@@ -6,15 +6,14 @@ archive/issues_009792.json:
     "body": "Assignee: jason, was\n\nCC:  @jasongrout @ppurka\n\nKeywords: one-dimension, plot, graphics\n\nSometimes it would be nice to have the ability to plot one-dimensional things easily, like solutions to an inequality or something.  This would have just one (horizontal) axis and have options allowing plotting of individual points (perhaps if input is a list) or find a way to plot inequalities (maybe via thicker lines and/or tick marks at appropriate places).  \n\nIdeally, this would add with a 2D `Graphics` object by putting it below it and have the axes align, but this might be too hard to do with matplotlib.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9793\n\n",
     "created_at": "2010-08-24T13:24:28Z",
     "labels": [
-        "graphics",
-        "minor",
-        "enhancement"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Make plot1d function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9792",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: jason, was
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9793
 
 ---
 
-archive/issue_comments_096162.json:
+archive/issue_comments_096003.json:
 ```json
 {
     "body": "+1 to the idea.  It would be easy to have axes align in matplotlib (it's done all the time), but it might be slightly more difficult to expose that functionality in Sage, where each subplot doesn't know about other subplots.",
     "created_at": "2010-08-24T14:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96162",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96003",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -53,15 +52,15 @@ archive/issue_comments_096162.json:
 
 ---
 
-archive/issue_comments_096163.json:
+archive/issue_comments_096004.json:
 ```json
 {
     "body": "From a participant in a workshop:\n\n```\n\nSay, if I want to show the multiples of 5 on the number line. How should I do that in SAGE?\n\nFor example: points([(5*n,0) for n in [-3..3]]) gives me the y-axis which I don't want\n```\n\n\njason says, regarding possible solutions,\n\n```\nI would just turn axes off and make your own line:\n\npoints([(5*n,0) for n in [-3..3]],axes=False)+line((-3,0),(3,0))\n\nYou'd have to do your own ticks, though.  You might also set ymin and ymax to something small (ymin=-.01,ymax=.01)\n\nIt would be pretty straightforward for us to make an option that turns off axes selectively.  I could imagine an interface like:\n\naxes=False # turn off all axes\naxes=True # turn on all axes\naxes=[True,False] # turn on horizontal axis, turn off vertical axis\n\nor maybe it should be:\n\naxes='horizontal' # turn on only horizontal axis\naxes='vertical' # turn on only vertical axis.\n```\n",
     "created_at": "2011-06-12T01:36:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96163",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96004",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -101,15 +100,15 @@ axes='vertical' # turn on only vertical axis.
 
 ---
 
-archive/issue_comments_096164.json:
+archive/issue_comments_096005.json:
 ```json
 {
     "body": "#8085 is a duplicate.  See also [this sage-support thread](http://groups.google.com/group/sage-support/browse_thread/thread/ac5b5b42776ee09b/368976a362477233).",
     "created_at": "2011-09-07T12:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96164",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96005",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -119,15 +118,15 @@ archive/issue_comments_096164.json:
 
 ---
 
-archive/issue_comments_096165.json:
+archive/issue_comments_096006.json:
 ```json
 {
     "body": "Here is a contribution to this issue from user \"jaia\" at [this ask.sagemath.org question](http://ask.sagemath.org/question/1586/function-for-1-d-plotting):\n\n```\ndef plot_1d(xmin, xmax, ymin=-1, ymax=1):\np=plot((ymax+ymin)/2, (xmin, xmax), color=\"black\", axes=False) + point((0,ymax), color=\"white\") + point((0,ymin), color=\"white\")\nreturn p\n```\n\nused\n\n```\nplot_1d(-1,1200,-1,1) + point((0,0), color=\"black\", size=20) + text(\"0\", (0,-0.05), color=\"black\") + point((1000,0), color=\"black\", size=20) + text(\"K\", (1000,-0.05), color=\"black\") + arrow((700, 0), (1000,0)) + arrow((0, 0), (300,0)) + arrow((350, 0), (650,0)) + arrow((1100, 0), (1000,0))\n```\n",
     "created_at": "2012-07-16T13:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96165",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9792#issuecomment-96006",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

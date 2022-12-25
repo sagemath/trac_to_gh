@@ -6,7 +6,7 @@ archive/issues_009706.json:
     "body": "Assignee: @burcin\n\nCC:  @fredrik-johansson fstan @kcrisman\n\nKeywords: orthogonal polynomials, symbolics\n\nThe current implementation of orthogonal polynomials is just a wrapper around maxima. (see http://wiki.sagemath.org/symbolics/)\nThere are the following improvements planed:\n\n-using of the pynac class for symbolic functions.\n-faster evaluation in general\n-evaluation of special values\n-mpmath for numeric evaluation\n\nIssue created by migration from https://trac.sagemath.org/ticket/9706\n\n",
     "created_at": "2010-08-08T00:37:05Z",
     "labels": [
-        "symbolics",
+        "component: symbolics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009706.json:
     "title": "New Version of orthogonal Polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9706",
-    "user": "maldun"
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 Assignee: @burcin
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9706
 
 ---
 
-archive/issue_comments_094456.json:
+archive/issue_comments_094299.json:
 ```json
 {
     "body": "Attachment [orthogonal_polys.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.py) by maldun created at 2010-08-09 00:13:02\n\nA new version of the orthogonal_polys.py file.",
     "created_at": "2010-08-09T00:13:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94456",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94299",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -59,15 +59,15 @@ A new version of the orthogonal_polys.py file.
 
 ---
 
-archive/issue_comments_094457.json:
+archive/issue_comments_094300.json:
 ```json
 {
     "body": "Newer version, with legendre_P, and faster evaluation of symbolic expressions",
     "created_at": "2010-08-09T00:13:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94457",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94300",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -77,15 +77,15 @@ Newer version, with legendre_P, and faster evaluation of symbolic expressions
 
 ---
 
-archive/issue_comments_094458.json:
+archive/issue_comments_094301.json:
 ```json
 {
     "body": "Attachment [orthogonal_polys.3.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.3.py) by maldun created at 2010-08-10 16:57:34\n\nVersion from 10. August 2010",
     "created_at": "2010-08-10T16:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94458",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94301",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -97,15 +97,15 @@ Version from 10. August 2010
 
 ---
 
-archive/issue_comments_094459.json:
+archive/issue_comments_094302.json:
 ```json
 {
     "body": "Latest version. It holds classes of all polys (but not all completed yet)",
     "created_at": "2010-08-11T00:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94459",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94302",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -115,15 +115,15 @@ Latest version. It holds classes of all polys (but not all completed yet)
 
 ---
 
-archive/issue_comments_094460.json:
+archive/issue_comments_094303.json:
 ```json
 {
     "body": "Attachment [orthogonal_polys.4.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.4.py) by maldun created at 2010-08-11 00:09:36\n\nAll Polys now have their own class.\nMuch faster evaluation is added.\nNumerical evaluation is provided. \nExcept for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet",
     "created_at": "2010-08-11T00:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94460",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94303",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -138,15 +138,15 @@ Except for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet
 
 ---
 
-archive/issue_comments_094461.json:
+archive/issue_comments_094304.json:
 ```json
 {
     "body": "Replying to [comment:1 maldun]:\n> All Polys now have their own class.\n> Much faster evaluation is added.\n> Numerical evaluation is provided. \n> Except for legendre_Q, gen_legendre_P, and gen_legendre_Q these aren't ready yet\n\northogonal_polys4.py hold all changes but is not a patch yet, because it holds old code fragments,\nwhich I have to clean up...",
     "created_at": "2010-08-11T00:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94461",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94304",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -163,15 +163,15 @@ which I have to clean up...
 
 ---
 
-archive/issue_comments_094462.json:
+archive/issue_comments_094305.json:
 ```json
 {
     "body": "I added in the latest patch (and orthogonal_polys.4.py contains these changes also) a new symbolic evaluation method for the orthogonal polynomials: Instead of call Maxima or use of the recursion, the polynomial is evaluated just using explicit formulas from Abramowitz and Stegun. This is an O(n) algorithm of course.\n\na little comparison on my machine:\nold version:\n\nsage: time chebyshev_T(10,x);\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.04 s\nsage: time chebyshev_T(100,x);\nCPU times: user 0.13 s, sys: 0.01 s, total: 0.14 s\nWall time: 0.23 s\nsage: time chebyshev_T(1000,x);\nCPU times: user 5.01 s, sys: 0.01 s, total: 5.02 s\nWall time: 6.98 s\nsage time chebyshev_T(5000,x);\n??? (I got no output her after 2min)\n\nsage: time gegenbauer(10,5,x);\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.05 s\nsage: time gegenbauer(100,5,x);\nCPU times: user 0.19 s, sys: 0.00 s, total: 0.19 s\nWall time: 0.29 s\nsage: time gegenbauer(1000,5,x);\nCPU times: user 5.46 s, sys: 0.02 s, total: 5.48 s\nWall time: 7.79 s\n\n\nNew Version\nsage: time chebyshev_T(10,x);\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\nsage: time chebyshev_T(100,x);\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.08 s\nsage: time chebyshev_T(1000,x);\nCPU times: user 1.22 s, sys: 0.00 s, total: 1.22 s\nWall time: 1.22 s\nsage: time chebyshev_T(5000,x);\nCPU times: user 27.17 s, sys: 0.15 s, total: 27.32 s\nWall time: 27.46 s\n\nsage: time gegenbauer(10,5,x);\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\nsage: time gegenbauer(100,5,x);\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.04 s\nsage: time gegenbauer(1000,5,x);\nCPU times: user 1.08 s, sys: 0.01 s, total: 1.09 s\nWall time: 1.11 s\n\n \nA little bit faster :) I also don't need to spawn an instance of maxima which makes the initialisation faster.\n\nAnd now also wider symbolic evaluation is possible:\n\nold version:\nsage: var('a')\na\nsage: gegenbauer(3,a,x)\n...\nNameError: name 'a' is not defined\n\nnew version:\nsage: var('a')\na\nsage: gegenbauer(3,a,x)\n4/3*x^3*gamma(a + 3) - 2*x*gamma(a + 2)\n\nThe code needs now some cleanup, especially the documentations.\nThe complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished\nsoon since the mpmath functions, don't seem to work correctly...\nI only provide a call function for maxima for them now.",
     "created_at": "2010-08-12T10:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94462",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94305",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -254,15 +254,15 @@ I only provide a call function for maxima for them now.
 
 ---
 
-archive/issue_comments_094463.json:
+archive/issue_comments_094306.json:
 ```json
 {
     "body": "> The complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished soon since the mpmath functions, don't seem to work correctly...\n\nCare to elaborate?",
     "created_at": "2010-08-12T11:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94463",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94306",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -274,15 +274,15 @@ Care to elaborate?
 
 ---
 
-archive/issue_comments_094464.json:
+archive/issue_comments_094307.json:
 ```json
 {
     "body": "Attachment [orthogonal_polys.5.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.5.py) by maldun created at 2010-08-12 11:16:04\n\nLatest version from 12. August 2010 (with bugfix in legendre_P)",
     "created_at": "2010-08-12T11:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94464",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94307",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -294,15 +294,15 @@ Latest version from 12. August 2010 (with bugfix in legendre_P)
 
 ---
 
-archive/issue_comments_094465.json:
+archive/issue_comments_094308.json:
 ```json
 {
     "body": "Killed bug in legendre_P",
     "created_at": "2010-08-12T11:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94465",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94308",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -312,15 +312,15 @@ Killed bug in legendre_P
 
 ---
 
-archive/issue_comments_094466.json:
+archive/issue_comments_094309.json:
 ```json
 {
     "body": "Replying to [comment:5 fredrik.johansson]:\n> > The complete versions for legendre_Q, gen_legendre_P, and gen_legendre_Q will not be finished soon since the mpmath functions, don't seem to work correctly...\n> \n> Care to elaborate?\n\nSorry for the late answer, I was on holidays.\n\nIn mpmath I have probs with the legenp and legenq functions. For some inputs I get this error:\n\n\n```\nsage: mpmath.call(mpmath.legenp,5,1,2)\n---------------------------------------------------------------------------\nOverflowError                             Traceback (most recent call last)\n\n/home/maldun/prog/sage/ortho/<ipython console> in <module>()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/utils.so in sage.libs.mpmath.utils.call (sage/libs/mpmath/utils.c:5021)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/functions/hypergeometric.pyc in legenp(ctx, n, m, z, type, **kwargs)\n   1481             T = [1+z, 1-z], [g, -g], [], [1-m], [-n, n+1], [1-m], 0.5*(1-z)\n   1482             return (T,)\n-> 1483         return ctx.hypercomb(h, [n,m], **kwargs)\n   1484     if type == 3:\n   1485         def h(n,m):\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/functions/hypergeometric.pyc in hypercomb(ctx, function, params, discard_known_zeros, **kwargs)\n    125                     [ctx.gamma(a) for a in alpha_s] + \\\n    126                     [ctx.rgamma(b) for b in beta_s] + \\\n--> 127                     [ctx.power(w,c) for (w,c) in zip(w_s,c_s)])\n    128                 if verbose:\n    129                     print \"    Value:\", v\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/ctx_base.pyc in power(ctx, x, y)\n    417             3.16470269330255923143453723949e+12978188\n    418         \"\"\"\n--> 419         return ctx.convert(x) ** ctx.convert(y)\n    420 \n    421     def _zeta_int(ctx, n):\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.mpnumber.__pow__ (sage/libs/mpmath/ext_main.c:13946)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.binop (sage/libs/mpmath/ext_main.c:4588)()\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in mpf_pow(s, t, prec, rnd)\n    340     # General formula: s**t = exp(t*log(s))\n    341     # TODO: handle rnd direction of the logarithm carefully\n--> 342     c = mpf_log(s, prec+10, rnd)\n    343     return mpf_exp(mpf_mul(t, c), prec, rnd)\n    344 \n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in mpf_log(x, prec, rnd)\n    725     # optimal between 1000 and 100,000 digits.\n    726     if wp <= LOG_TAYLOR_PREC:\n--> 727         m = log_taylor_cached(lshift(man, wp-bc), wp)\n    728         if mag:\n    729             m += mag*ln2_fixed(wp)\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in log_taylor_cached(x, prec)\n    643     else:\n    644         a = n << (cached_prec - LOG_TAYLOR_SHIFT)\n--> 645         log_a = log_taylor(a, cached_prec, 8)\n    646         log_taylor_cache[n, cached_prec] = (a, log_a)\n    647     a >>= dprec\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libelefun.pyc in log_taylor(x, prec, r)\n    607     \"\"\"\n    608     for i in xrange(r):\n--> 609         x = isqrt_fast(x<<prec)\n    610     one = MPZ_ONE << prec\n    611     v = ((x-one)<<prec)//(x+one)\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libintmath.pyc in isqrt_fast_python(x)\n    240                     y = (y + x//y) >> 1\n    241         return y\n--> 242     bc = bitcount(x)\n    243     guard_bits = 10\n    244     x <<= 2*guard_bits\n\n/home/maldun/sage/sage-4.5.1/local/lib/python2.6/site-packages/mpmath/libmp/libintmath.pyc in python_bitcount(n)\n     78     if bc != 300:\n     79         return bc\n---> 80     bc = int(math.log(n, 2)) - 4\n     81     return bc + bctable[n>>bc]\n     82 \n\nOverflowError: cannot convert float infinity to integer\n```\n",
     "created_at": "2010-08-16T11:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94466",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94309",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -418,15 +418,15 @@ OverflowError: cannot convert float infinity to integer
 
 ---
 
-archive/issue_comments_094467.json:
+archive/issue_comments_094310.json:
 ```json
 {
     "body": "That looks strange. I get:\n\n\n```\nsage: import sage.libs.mpmath.all as mpmath\nsage: mpmath.call(mpmath.legenp, 5,1,2)\n-2.96434298694874e-22 - 912.574269237852*I\nsage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n-2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n```\n",
     "created_at": "2010-08-16T15:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94467",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94310",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -446,15 +446,15 @@ sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)
 
 ---
 
-archive/issue_comments_094468.json:
+archive/issue_comments_094311.json:
 ```json
 {
     "body": "Replying to [comment:8 fredrik.johansson]:\n> That looks strange. I get:\n> \n> {{{\n> sage: import sage.libs.mpmath.all as mpmath\n> sage: mpmath.call(mpmath.legenp, 5,1,2)\n> -2.96434298694874e-22 - 912.574269237852*I\n> sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n> -2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n> }}}\n\nHm strange. Today I install the new Sage version, perhaps it will then work again",
     "created_at": "2010-08-17T08:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94468",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94311",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -475,15 +475,15 @@ Hm strange. Today I install the new Sage version, perhaps it will then work agai
 
 ---
 
-archive/issue_comments_094469.json:
+archive/issue_comments_094312.json:
 ```json
 {
     "body": "Replying to [comment:8 fredrik.johansson]:\n> That looks strange. I get:\n> \n> {{{\n> sage: import sage.libs.mpmath.all as mpmath\n> sage: mpmath.call(mpmath.legenp, 5,1,2)\n> -2.96434298694874e-22 - 912.574269237852*I\n> sage: mpmath.call(mpmath.legenp, 5,1,2, prec=100)\n> -2.1062923756778274648015607872e-36 - 912.57426923785222402727329118*I\n> }}}\n\nIt was the old version!a Thanx for pointing that out, I will continue soon =)",
     "created_at": "2010-08-18T16:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94469",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94312",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -504,15 +504,15 @@ It was the old version!a Thanx for pointing that out, I will continue soon =)
 
 ---
 
-archive/issue_comments_094470.json:
+archive/issue_comments_094313.json:
 ```json
 {
     "body": "Version from 19. August 2010",
     "created_at": "2010-08-19T16:24:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94470",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94313",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -522,15 +522,15 @@ Version from 19. August 2010
 
 ---
 
-archive/issue_comments_094471.json:
+archive/issue_comments_094314.json:
 ```json
 {
     "body": "Attachment [orthogonal_polys.6.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.6.py) by maldun created at 2010-08-19 16:30:43\n\nSo now a \"beta\" is ready with full support of all classes.\n\nOnly the Legendre functions are still using Maxima.\n\nsome advances for the future:\n\n-Zernike polys (this should be done in the next time, since explicit formulas are available)\n-support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)\n\nNow I need some people for testing this out =)",
     "created_at": "2010-08-19T16:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94471",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94314",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -551,15 +551,15 @@ Now I need some people for testing this out =)
 
 ---
 
-archive/issue_comments_094472.json:
+archive/issue_comments_094315.json:
 ```json
 {
     "body": "And there was an interisting bug:\n\nthe import of mpmath at the beginning of the file caused the whole trouble I had with the numeric evaluation of the legendre functions....\n\nI think I should report this..",
     "created_at": "2010-08-19T16:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94472",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94315",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -573,15 +573,15 @@ I think I should report this..
 
 ---
 
-archive/issue_comments_094473.json:
+archive/issue_comments_094316.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-08-19T16:35:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94473",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94316",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -591,15 +591,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_094474.json:
+archive/issue_comments_094317.json:
 ```json
 {
     "body": "Added numpy support, eliminated some bugs (19.08.2010)",
     "created_at": "2010-08-19T19:54:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94474",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94317",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -609,15 +609,15 @@ Added numpy support, eliminated some bugs (19.08.2010)
 
 ---
 
-archive/issue_comments_094475.json:
+archive/issue_comments_094318.json:
 ```json
 {
     "body": "Attachment [orthogonal_polys.7.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.7.py) by maldun created at 2010-08-19 20:09:59\n\n> -support for numpy_eval. (But this will be done, when the scipy package is updated to 0.8, else it has no sense, because the current version of scipy does not support ortho polys well, but the newer can handle them)\n\nI decided to give at least some numpy support for compability reasons.\nBut this is a bad hack...when scipy 0.8 comes I use scipy itself, I change this to a better version :)",
     "created_at": "2010-08-19T20:09:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94475",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94318",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -632,15 +632,15 @@ But this is a bad hack...when scipy 0.8 comes I use scipy itself, I change this 
 
 ---
 
-archive/issue_comments_094476.json:
+archive/issue_comments_094319.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-19T23:56:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94476",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94319",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -650,15 +650,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_094477.json:
+archive/issue_comments_094320.json:
 ```json
 {
     "body": "Some of the old doctests fail.\nBut it is not my fault, it seem's that it is a bug in the SymbolicFunction class.\n\nsee: http://trac.sagemath.org/sage_trac/ticket/9769",
     "created_at": "2010-08-20T00:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94477",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94320",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -671,15 +671,15 @@ see: http://trac.sagemath.org/sage_trac/ticket/9769
 
 ---
 
-archive/issue_comments_094478.json:
+archive/issue_comments_094321.json:
 ```json
 {
     "body": "Attachment [orthogonal_polys.8.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.8.py) by maldun created at 2010-08-24 21:31:01\n\nLatest version with some code cleanup (no program changes)",
     "created_at": "2010-08-24T21:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94478",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94321",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -691,15 +691,15 @@ Latest version with some code cleanup (no program changes)
 
 ---
 
-archive/issue_comments_094479.json:
+archive/issue_comments_094322.json:
 ```json
 {
     "body": "Changing assignee from @burcin to burcin, maldun.",
     "created_at": "2010-08-26T14:50:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94479",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94322",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -709,15 +709,15 @@ Changing assignee from @burcin to burcin, maldun.
 
 ---
 
-archive/issue_comments_094480.json:
+archive/issue_comments_094323.json:
 ```json
 {
     "body": "Hi Stefan,\n\ncan you post a patch corresponding to attachment:orthogonal_polys.8.py for review?\n\nThanks,\n\nBurcin",
     "created_at": "2010-08-28T12:03:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94480",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94323",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -733,15 +733,15 @@ Burcin
 
 ---
 
-archive/issue_comments_094481.json:
+archive/issue_comments_094324.json:
 ```json
 {
     "body": "Patch for latest version with some code cleanup (no program changes)",
     "created_at": "2010-08-28T16:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94481",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94324",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -751,15 +751,15 @@ Patch for latest version with some code cleanup (no program changes)
 
 ---
 
-archive/issue_comments_094482.json:
+archive/issue_comments_094325.json:
 ```json
 {
     "body": "Attachment [trac_9706_ortho_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_ortho_polys.patch) by maldun created at 2010-08-28 16:50:33\n\nReplying to [comment:20 burcin]:\n> Hi Stefan,\n> \n> can you post a patch corresponding to attachment:orthogonal_polys.8.py for review?\n> \n> Thanks,\n\n> Burcin\n\nDone!",
     "created_at": "2010-08-28T16:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94482",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -780,15 +780,15 @@ Done!
 
 ---
 
-archive/issue_comments_094483.json:
+archive/issue_comments_094326.json:
 ```json
 {
     "body": "Why is mpmath's precision used by default? Shouldn't the default be RR / CC precision? Actually, does _evalf_ ever get called without this information?\n\nSome complex tests would be nice.",
     "created_at": "2010-09-03T13:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94483",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94326",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -800,15 +800,15 @@ Some complex tests would be nice.
 
 ---
 
-archive/issue_comments_094484.json:
+archive/issue_comments_094327.json:
 ```json
 {
     "body": "Replying to [comment:22 fredrik.johansson]:\n> Why is mpmath's precision used by default? Shouldn't the default be RR / CC precision? Actually, does _evalf_ ever get called without this information?\n> \n> Some complex tests would be nice.\n> \n\nThis is a good point, and it shouldn't be a problem to change that.\nBut I don't think it's a big deal, because the function takes the \"parents\" precision, which means, if my input is RR it evals it with RR's precision.\n\nOf course can you call _evalf_ just with (), and then the default value is used.\n\nI just sticked to the old's version tests, and expanded it. Of course it's possible to expand the tests. I hope I will find some time for it soon, since I have some other more urgent things todo also.",
     "created_at": "2010-09-03T19:59:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94484",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94327",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -829,15 +829,15 @@ I just sticked to the old's version tests, and expanded it. Of course it's possi
 
 ---
 
-archive/issue_comments_094485.json:
+archive/issue_comments_094328.json:
 ```json
 {
     "body": "Replying to [comment:23 maldun]:\n> Replying to [comment:22 fredrik.johansson]:\n> > Why is mpmath's precision used by default? Shouldn't the default be RR / CC precision? Actually, does _evalf_ ever get called without this information?\n> > \n> > Some complex tests would be nice.\n> > \n> \n> This is a good point, and it shouldn't be a problem to change that.\n> But I don't think it's a big deal, because the function takes the \"parents\" precision, which means, if my input is RR it evals it with RR's precision.\n> \n> Of course can you call _evalf_ just with (), and then the default value is used.\n> \nOk sorry, wrong explination: when your input are exact data types like ZZ ore QQ then the parent has no precision, then you need a default value",
     "created_at": "2010-09-03T20:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94485",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94328",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -859,15 +859,15 @@ Ok sorry, wrong explination: when your input are exact data types like ZZ ore QQ
 
 ---
 
-archive/issue_comments_094486.json:
+archive/issue_comments_094329.json:
 ```json
 {
     "body": "Since it seems that numpy-1.4.1, and scipy 0.8 should work now (see #9808) I programmed a version which uses scipy itself to evaluate the orthogonal polys for numpy arrays. \nWhen the new versions of numpy/scipy become merged into sage I will provide a patch for these.\n\nAnother thing I have to mention are these 2 failde doctests:\n* sage -t  -long \"devel/sage/sage/symbolic/random_tests.py\"\n* sage -t  -long \"devel/sage/sage/symbolic/pynac.pyx\"\n\n\n```\nsage -t -long \"devel/sage/sage/symbolic/random_tests.py\"    \n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 17:\n    sage: [f for (one,f,arity) in _mk_full_functions()]\nExpected:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch,\n    arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh,\n    binomial, ceil, conjugate, cos, cosh, cot, coth, csc, csch,\n    dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec,\n    elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp,\n    factorial, floor, heaviside, imag_part, integrate,\n    kronecker_delta, log, polylog, real_part, sec, sech, sgn, sin,\n    sinh, tan, tanh, unit_step, zeta, zetaderiv]\nGot:\n    [Ei, abs, arccos, arccosh, arccot, arccoth, arccsc, arccsch, arcsec, arcsech, arcsin, arcsinh, arctan, arctan2, arctanh, binomial, ceil, chebyshev_T, chebyshev_U, conjugate, cos, cosh, cot, coth, csc, csch, dickman_rho, dilog, dirac_delta, elliptic_e, elliptic_ec, elliptic_eu, elliptic_f, elliptic_kc, elliptic_pi, erf, exp, factorial, floor, gegenbauer, gen_laguerre, gen_legendre_P, gen_legendre_Q, heaviside, hermite, imag_part, integrate, jacobi_P, kronecker_delta, laguerre, legendre_P, legendre_Q, log, polylog, real_part, sec, sech, sgn, sin, sinh, tan, tanh, unit_step, zeta, zetaderiv]\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 237:\n    sage: random_expr(50, nvars=3, coeff_generator=CDF.random_element)\nExpected:\n    (euler_gamma - v3^(-e) + (v2 - factorial(-e/v2))^(((2.85879036573 - 1.18163393202*I)*v2 + (2.85879036573 - 1.18163393202*I)*v3)*pi - 0.247786879678 + 0.931826724898*I)*arccsc((0.891138386848 - 0.0936820840629*I)/v1) + (-0.553423153995 + 0.5481180572*I)*v3 + 0.149683576515 - 0.155746451854*I)*v1 + arccsch(pi + e)*elliptic_f(khinchin*v2, 1.4656989704 + 0.863754357069*I)\nGot:\n    -v1*e^((0.0666829501658 + 0.206976992303*I)/(v3 + e))/v3 + hermite(-(v3^(-0.48519994364 - 0.485764091302*I) - log((1.21734510331 - 1.22580558833*I)*pi*v1 + zeta((0.781366128261 + 0.957400336147*I)*v1*e + (-1.8919687109 + 0.753422167447*I)*elliptic_f(v1, v1))*arccsch(v3)))*v1, (-0.647983235144 + 1.20665952957*I)*v1 + (0.0909404921682 + 0.281538203756*I)/v3)\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/random_tests.py\", line 239:\n    sage: random_expr(5, verbose=True)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/maldun/sage/sage-4.5.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[5]>\", line 1, in <module>\n        random_expr(Integer(5), verbose=True)###line 239:\n    sage: random_expr(5, verbose=True)\n      File \"/home/maldun/sage/sage-4.5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 254, in random_expr\n        return random_expr_helper(size, internal, leaves, verbose)\n      File \"/home/maldun/sage/sage-4.5.2/local/lib/python/site-packages/sage/symbolic/random_tests.py\", line 210, in random_expr_helper\n        return r[1](*children)\n      File \"element.pyx\", line 1529, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11992)\n      File \"coerce.pyx\", line 713, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6126)\n      File \"element.pyx\", line 1527, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11973)\n      File \"expression.pyx\", line 2269, in sage.symbolic.expression.Expression._div_ (sage/symbolic/expression.cpp:11444)\n    ZeroDivisionError: Symbolic division by zero\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_0\n   2 of   6 in __main__.example_5\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /home/maldun/.sage//tmp/.doctest_random_tests.py\n         [7.7 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/symbolic/random_tests.py\"\nTotal time for all tests: 7.8 seconds\n```\n\n\nI quite understand these, because we have introduced new functions, but I don't understand the exception in the last one\n\n\n```\nsage -t -long \"devel/sage/sage/symbolic/pynac.pyx\"          \n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 386:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 388:\n    sage: py_latex_function_pystring(i, (x,y^z))\nExpected:\n    'my args are: x, y^z'\nGot:\n    '\\\\mathrm{bar}\\\\left(x, y^{z}\\\\right)'\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 478:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 480:\n    sage: py_print_fderivative(i, (0, 1, 0, 1), (x, y^z))\nExpected:\n    D[0, 1, 0, 1]func_with_args(x, y^z)\nGot:\n    D[0, 1, 0, 1](foo)(x, y^z)\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 540:\n    sage: get_sfunction_from_serial(i) == foo\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/maldun/sage/sage-4.5.2/devel/sage/sage/symbolic/pynac.pyx\", line 542:\n    sage: py_latex_fderivative(i, (0, 1, 0, 1), (x, y^z))\nExpected:\n    D[0, 1, 0, 1]func_with_args(x, y^z)\nGot:\n    D[0, 1, 0, 1]\\left(\\mathrm{bar}\\right)\\left(x, y^{z}\\right)\n**********************************************************************\n3 items had failures:\n   2 of  19 in __main__.example_14\n   2 of  14 in __main__.example_16\n   2 of  18 in __main__.example_18\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/maldun/.sage//tmp/.doctest_pynac.py\n         [7.3 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/symbolic/pynac.pyx\"\nTotal time for all tests: 7.3 seconds\n```\n\n\nAnd these are really strange, because when I type then into sage by hand everything works. wtf??\nCan anyone have a look at these?",
     "created_at": "2010-09-05T10:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94486",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94329",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1014,15 +1014,15 @@ Can anyone have a look at these?
 
 ---
 
-archive/issue_comments_094487.json:
+archive/issue_comments_094330.json:
 ```json
 {
     "body": "ortho polys with scipy support",
     "created_at": "2010-09-05T10:30:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94487",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94330",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1032,15 +1032,15 @@ ortho polys with scipy support
 
 ---
 
-archive/issue_comments_094488.json:
+archive/issue_comments_094331.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-10-03T00:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94488",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94331",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1050,15 +1050,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_094489.json:
+archive/issue_comments_094332.json:
 ```json
 {
     "body": "Attachment [orthogonal_polys.9.py](tarball://root/attachments/some-uuid/ticket9706/orthogonal_polys.9.py) by maldun created at 2010-10-03 00:49:32",
     "created_at": "2010-10-03T00:49:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94489",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94332",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1068,15 +1068,15 @@ Attachment [orthogonal_polys.9.py](tarball://root/attachments/some-uuid/ticket97
 
 ---
 
-archive/issue_comments_094490.json:
+archive/issue_comments_094333.json:
 ```json
 {
     "body": "Just cc:ing myself by commenting.  \n\nAlso, there seems to be a lot of stuff in the latest Python file that is the same as the original one (in terms of explanation, not code).  Maybe posting an updated patch (once the numpy/scipy-fest is over, which is hopefully the case) would help some of us figure this out.  Thanks for working on this - there is still a lot of overhauling that symbolics could use, but this is a great step.",
     "created_at": "2010-10-15T18:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94490",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94333",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1088,15 +1088,15 @@ Also, there seems to be a lot of stuff in the latest Python file that is the sam
 
 ---
 
-archive/issue_comments_094491.json:
+archive/issue_comments_094334.json:
 ```json
 {
     "body": "`@`kcrisman thanks for paying attention. I added now an updated patch and extended instructions.\n\nthe doctest changes in **symbolic.random_tests.py** are easy to explain: new functions are involved -> new random expressions. But I had to change\n`random_expr(50, nvars=3, coeff_generator=CDF.random_element) ` to `random_expr(60, nvars=3, coeff_generator=CDF.random_element) ` or else one gets an expression generated where a division through zero occours.\n\nAs mentioned on sage-devel I repaired the doctests in **symbolic.pynac.pyx**, the trick is to enlarge the range of the for loop:\n`for i in range(get_ginac_serial(), get_ginac_serial()+50):`\nchanged to\n`for i in range(get_ginac_serial(), get_ginac_serial()+100):`\nnow it works. My explaination: since we have new functions we have longer to search, and then we reach our goal. What I can not explain is, that it works, when I type it in by hand.\n\nAll doctests pass now, so I think a review would be nice.\n\n-maldun",
     "created_at": "2010-10-15T23:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94491",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94334",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1119,15 +1119,15 @@ All doctests pass now, so I think a review would be nice.
 
 ---
 
-archive/issue_comments_094492.json:
+archive/issue_comments_094335.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-10-15T23:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94492",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94335",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1137,15 +1137,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094493.json:
+archive/issue_comments_094336.json:
 ```json
 {
     "body": "Cleaned up discription of the ticket and some comments in the ortho polys file.",
     "created_at": "2010-10-15T23:55:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94493",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94336",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1155,15 +1155,15 @@ Cleaned up discription of the ticket and some comments in the ortho polys file.
 
 ---
 
-archive/issue_comments_094494.json:
+archive/issue_comments_094337.json:
 ```json
 {
     "body": "I don't have time to review this for a while, but did take a quick look - thanks for polishing that patch!  I don't think we are allowed to import numpy or scipy like that anymore, but rather have to do it in an individual function (lest startup times get huge).  I don't quite understand exactly how that works, but anyway such a blanket import statement probably isn't appropriate, the way I understand what others have said.",
     "created_at": "2010-10-16T03:27:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94494",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94337",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1173,15 +1173,15 @@ I don't have time to review this for a while, but did take a quick look - thanks
 
 ---
 
-archive/issue_comments_094495.json:
+archive/issue_comments_094338.json:
 ```json
 {
     "body": "Latest version of orthogonal polys with scipy support, and changed doctests. Tested in sage-4.6.alpha3",
     "created_at": "2010-10-16T12:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94495",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94338",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1191,15 +1191,15 @@ Latest version of orthogonal polys with scipy support, and changed doctests. Tes
 
 ---
 
-archive/issue_comments_094496.json:
+archive/issue_comments_094339.json:
 ```json
 {
     "body": "Attachment [trac_9706_orthogonal_polys.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_orthogonal_polys.patch) by maldun created at 2010-10-16 13:04:50\n\nReplying to [comment:30 kcrisman]:\n> I don't have time to review this for a while, but did take a quick look - thanks for polishing that patch!  I don't think we are allowed to import numpy or scipy like that anymore, but rather have to do it in an individual function (lest startup times get huge).  I don't quite understand exactly how that works, but anyway such a blanket import statement probably isn't appropriate, the way I understand what others have said.  \n\nBut thanks for giving feedback! I know that this patch isn't easy for review because the code grew from 650 to about 2300 lines of code. But I'm happy to get at least some info.\n\nYou are right the imports didn't change since I started this ticket and importing the whole numpy and scipy packages is to much. This isn't a very good Idea if one thinks about performance either.  I changed that now so that only functions that are really needed are importet. I did this also for mpmath but the problem with the global import remains.\n(see above). Also changed some errors in the discription I missed and repaired a wrong doctest.\n\nPS: If diffs or more changelogs are needed let me know. I'm keeping track with git on my machine of the changes.",
     "created_at": "2010-10-16T13:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94496",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94339",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1219,15 +1219,15 @@ PS: If diffs or more changelogs are needed let me know. I'm keeping track with g
 
 ---
 
-archive/issue_comments_094497.json:
+archive/issue_comments_094340.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-10-16T15:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94497",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94340",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -1237,15 +1237,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_094498.json:
+archive/issue_comments_094341.json:
 ```json
 {
     "body": "Great work Stefan. Your patch looks good overall, but it needs a lot of polish. Thank you very much for this.\n\nHere are some quick comments after reading attachment:trac_9706_orthogonal_polys.patch. I didn't try to apply and run the code yet. It would be better if other people try this as well since I am really short on time these days.\n\n* I suggest you use your real name in the HG headers. This information is used for copyright/license issues as well. In the future it might cause a lot of trouble if people have to chase down `maldun` for copyright questions.\n* You shouldn't import any part of `numpy` at the module level. This slows down startup too much. See #3561 for example. I'd say the same holds for `mpmath` and `scipy`.\n* line 385-386 has this:\n\n```\nThen after using one of these functions, it changes:: (The value is now  \nFalse for chebyshev_T because chebyshev_T uses clenshaw method instead...)\n```\n\n I don't think this is valid Sphinx.\n* delete line 412\n\n```\n#load /home/maldun/sage/sage-4.5.2/devel/sage-ortho/sage/functions/orthogonal_polys.py \n```\n\n* line 419: he -> the\n* There are no doctests for the `OrthogonalPolynomial` class, make sure your file passes `sage -coverage`\n* The commented timings in the docstring of `OrthogonalPolynomial._clenshaw_method_()` are confusing. It would be better if you provide a function in the same file that does these timings automatically and prints out the results. You should at least delete this from the documentation though.\n* In the docstring of `OrthogonalPolynomial._eval_()`\n  * remove the empty first line (line 494) of\n  * remove the commented out timings as well\n  * you need an empty line after `EXAMPLES::`\n  * the empty last line should be removed\n* add some comments to the `OrthogonalPolynomial._eval_()` method to indicate what you're trying to do with these tests.\n  * lines 583-593 have a confusing comment and a bug\n\n```\ntry: \n    #s = maxima(self._maxima_init_evaled_(*args)) \n    #This above is very inefficient! The older \n    #methods were much faster... \n    return self._maxima_init_evaled_(*args) \nexcept TypeError: \n    return None \nif self._maxima_name in repr(s): \n    return None \nelse: \n    return s.sage() \n```\n\n* You don't need to state \"Class for\" on line 598, \"The Chebyshev ...\" is enough.\n* Why do you delete the `chebyshev_T(2,x)` test on line 371? You can just add the new ones after that.\n* line 626, `EXAMPLES:` -> `EXAMPLES::`\n* Don't use `*args` or `**kwds` when you don't need them. Name the arguments and be explicit. Remember the \"Zen of Python\", \"Explicit is better than implicit.\"\n* OK, generally, fix the docstrings to conform to Sphinx standards. This should be documented somewhere in the developers guide.\n* line 673, `_maxima_init_evaled_()` doesn't have doctests.\n* line 678 - , `_clenshaw_method_()`\n  * docstring is not indented properly.\n  * It would be better to put the recursion formula in the docstring.\n* line 790 `_clenshaw_method_()` doesn't have doctests.\n* There is something wrong with the `_maxima_init_evaled_()` on line 821. Are you sure this function shouldn't just return a string to be run in maxima? How do we know that doctest actually calls this function? In any case, the right way to convert a maxima object to sage is to run `.sage()` on it. Never use `sage_eval()` on a string in the Sage library.\n* Calls to mpmath should be able to use the precision directly from the type of the argument now. Are you sure all this is necessary:\n\n```\ntry: \n    step_parent = kwds['parent'] \nexcept KeyError: \n    step_parent = parent(args[-1]) \n\ntry: \n    precision = step_parent.prec() \nexcept AttributeError: \n    precision = RR.prec() \n```\n\n See #9566.\n* line 924, change the error message to something more professional. \"Derivative w.r.t. to the index is not supported, yet, and perhaps never will be...\" is not acceptable. \"Derivatives with respect to the index is not supported.\" would be enough.\n* Document the derivative formula in the docstring, using proper math notation\n* What needs to be discussed from the comments on line 968-974?\n* Same for lines 1058-1060?\n* no doctests for `_clenshaw_method_()` on line 1156.\n* no doctests for `_maxima_init_evaled_()` on line 1189.\n\nI give up at this point. It seems that there are similar issues in the rest of the file as well.\n\nAfter you clean up the code according to the comments above, perhaps a native English speaker like Karl-Dieter or Minh can help with the documentation.\n\nThanks again for all your work.",
     "created_at": "2010-10-16T15:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94498",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94341",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -1337,15 +1337,15 @@ Thanks again for all your work.
 
 ---
 
-archive/issue_comments_094499.json:
+archive/issue_comments_094342.json:
 ```json
 {
     "body": "Hi!\n\nI will now retry to build the new orthogonal polynomials.\nThe last time I ran out of time due to my phd studies/theses\nthis time i will split the changes up into several patches. So it will be easier to \napply the changes step by step, and the review process gets simpler.\n\nHope this time everything will work out!",
     "created_at": "2013-11-09T22:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94499",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94342",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1362,15 +1362,15 @@ Hope this time everything will work out!
 
 ---
 
-archive/issue_comments_094500.json:
+archive/issue_comments_094343.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-11-09T22:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94500",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94343",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1380,15 +1380,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094501.json:
+archive/issue_comments_094344.json:
 ```json
 {
     "body": "Here is a review patch which does a bunch of documentation formatting tweaks. There are probably one or two other things that will need to be addressed, but I'd like to get the ball rolling on this again (and I need some sleep right now).\n\nBest,\n\nTravis\n\nFor patchbot:\n\nApply: trac_9706_chebyshev.patch\u200b, trac_9706-review-ts.patch",
     "created_at": "2013-11-23T07:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94501",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94344",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -1406,15 +1406,15 @@ Apply: trac_9706_chebyshev.patch​, trac_9706-review-ts.patch
 
 ---
 
-archive/issue_comments_094502.json:
+archive/issue_comments_094345.json:
 ```json
 {
     "body": "Thanks for reviewing. It would be great if the new Chebyshev Polynomials could be added. If this ticket is done I will open the next issue and start working on the Legendre Polynomials",
     "created_at": "2013-11-29T16:44:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94502",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94345",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1424,15 +1424,15 @@ Thanks for reviewing. It would be great if the new Chebyshev Polynomials could b
 
 ---
 
-archive/issue_comments_094503.json:
+archive/issue_comments_094346.json:
 ```json
 {
     "body": "Okay, I've done a few other tweaks and I'd okay with it. If you're happy with my changes, then go ahead and set this to positive review.\n\nFor patchbot:\n\nApply: trac_9706_chebyshev.patch\u200b, trac_9706-review-ts.patch",
     "created_at": "2013-12-02T23:45:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94503",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94346",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -1446,15 +1446,15 @@ Apply: trac_9706_chebyshev.patch​, trac_9706-review-ts.patch
 
 ---
 
-archive/issue_comments_094504.json:
+archive/issue_comments_094347.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-12-03T12:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94504",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94347",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1464,15 +1464,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094505.json:
+archive/issue_comments_094348.json:
 ```json
 {
     "body": "Thanks for your hard work in correcting all those small mistakes!\n\nI'm very happy, that finally the new ortho polys are going into sage!",
     "created_at": "2013-12-03T12:15:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94505",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94348",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1484,15 +1484,15 @@ I'm very happy, that finally the new ortho polys are going into sage!
 
 ---
 
-archive/issue_comments_094506.json:
+archive/issue_comments_094349.json:
 ```json
 {
     "body": "I'm elevating Travis to an author because these are quite substantial review changes - thanks for being so meticulous on the formatting etc!\n\nI'd love one final check from either of you.  There are a lot of imports added; I think most should be okay but the Maxima-related ones scare me, so if you can just check that startup time hasn't budged more than a couple milliseconds, that would be helpful.  I don't think this should import numpy, at least!",
     "created_at": "2013-12-03T16:07:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94506",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94349",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1504,15 +1504,15 @@ I'd love one final check from either of you.  There are a lot of imports added; 
 
 ---
 
-archive/issue_comments_094507.json:
+archive/issue_comments_094350.json:
 ```json
 {
     "body": "Sorry to spoil the party, but this is a regression:\n\n```\nsage: K.<a> = NumberField(x^3-x-1)\nsage: chebyshev_T(10^3,a)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n<ipython-input-17-aa97c56dd147> in <module>()\n----> 1 chebyshev_T(Integer(10)**Integer(3),a)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5279)()\n\nTypeError: cannot coerce arguments: no canonical coercion from Number Field in a with defining polynomial x^3 - x - 1 to Symbolic Ring\n```\n\n\n(and yes: Chebyshev polynomials are important in number theory)",
     "created_at": "2013-12-03T17:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94507",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94350",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1540,15 +1540,15 @@ TypeError: cannot coerce arguments: no canonical coercion from Number Field in a
 
 ---
 
-archive/issue_comments_094508.json:
+archive/issue_comments_094351.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2013-12-03T17:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94508",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94351",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1558,15 +1558,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_094509.json:
+archive/issue_comments_094352.json:
 ```json
 {
     "body": "I would also like to point out that PARI is faster at evaluating Chebyshev polynomials:\n\n```\nsage: timeit('''chebyshev_T(10^5,2)''')\n5 loops, best of 3: 270 ms per loop\nsage: timeit('''pari('polchebyshev (10^5,1,2)')''')\n625 loops, best of 3: 447 \u00b5s per loop\n```\n\n\n\n```\nsage: timeit('''chebyshev_T(10^5, Mod(2,1009))''')\n5 loops, best of 3: 208 ms per loop\nsage: timeit('''pari('polchebyshev(10^5, 1, Mod(2,1009))')''')\n625 loops, best of 3: 11.5 \u00b5s per loop\n```\n\n\nWe should definately use PARI to evaluate Chebyshev polynomials for certain types of input.",
     "created_at": "2013-12-03T17:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94509",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94352",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1595,15 +1595,15 @@ We should definately use PARI to evaluate Chebyshev polynomials for certain type
 
 ---
 
-archive/issue_comments_094510.json:
+archive/issue_comments_094353.json:
 ```json
 {
     "body": "Another regression:\n\n```\nsage: parent(chebyshev_T(10^2, RIF(2)))\nReal Field with 53 bits of precision\n```\n",
     "created_at": "2013-12-03T17:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94510",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94353",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1619,15 +1619,15 @@ Real Field with 53 bits of precision
 
 ---
 
-archive/issue_comments_094511.json:
+archive/issue_comments_094354.json:
 ```json
 {
     "body": "The \"Clenshaw method\" uses a very naive method of evaluating the recursion which needs `O(n)` steps, while there is a much faster method (which compute `T_2n` and `U_2n` in function of `T_n` and `U_n`) which only needs `O(log(n))` steps.\n\nEven this is totally feasible:\n\n```\nsage: timeit('''pari('polchebyshev(10^10, 1, Mod(2,1009))')''')\n625 loops, best of 3: 16.3 \u00b5s per loop\n```\n",
     "created_at": "2013-12-03T17:29:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94511",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94354",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1645,15 +1645,15 @@ sage: timeit('''pari('polchebyshev(10^10, 1, Mod(2,1009))')''')
 
 ---
 
-archive/issue_comments_094512.json:
+archive/issue_comments_094355.json:
 ```json
 {
     "body": "This is also bad:\n\n```\nsage: R.<x> = QQ[]\nsage: parent(chebyshev_T(5, x))\nSymbolic Ring\n```\n",
     "created_at": "2013-12-03T17:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94512",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94355",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1670,15 +1670,15 @@ Symbolic Ring
 
 ---
 
-archive/issue_comments_094513.json:
+archive/issue_comments_094356.json:
 ```json
 {
     "body": "Another suggestion: why not make the base class more general and call it `SymbolicPolynomial`? I think that's a more natural class of functions, which could (in the future) also include cyclotomic polynomials for example.",
     "created_at": "2013-12-03T17:35:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94513",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94356",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1688,15 +1688,15 @@ Another suggestion: why not make the base class more general and call it `Symbol
 
 ---
 
-archive/issue_comments_094514.json:
+archive/issue_comments_094357.json:
 ```json
 {
     "body": "I propose the logic for evaluating `chebyshev_T(n, x)` should be:\n1. if `x` is symbolic, then use the method of the current patch.\n2. if `x` is not symbolic, try evaluation using PARI.\n3. if conversion to PARI fails (for example for `RIF`), use an efficient `O(log(n))` recursion algorithm.",
     "created_at": "2013-12-03T17:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94514",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94357",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1709,15 +1709,15 @@ I propose the logic for evaluating `chebyshev_T(n, x)` should be:
 
 ---
 
-archive/issue_comments_094515.json:
+archive/issue_comments_094358.json:
 ```json
 {
     "body": "Jeroen: do you know a reference for the recursion pari uses?",
     "created_at": "2013-12-03T18:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94515",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94358",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -1727,15 +1727,15 @@ Jeroen: do you know a reference for the recursion pari uses?
 
 ---
 
-archive/issue_comments_094516.json:
+archive/issue_comments_094359.json:
 ```json
 {
     "body": "Replying to [comment:50 fredrik.johansson]:\n> Jeroen: do you know a reference for the recursion pari uses?\nNo, but it's pretty straight-forward (think doubling formulas for `cos` and `sin`).",
     "created_at": "2013-12-03T20:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94516",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94359",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1747,15 +1747,15 @@ No, but it's pretty straight-forward (think doubling formulas for `cos` and `sin
 
 ---
 
-archive/issue_comments_094517.json:
+archive/issue_comments_094360.json:
 ```json
 {
     "body": "Thank you all for the input! I think it is still a good idea that I only implement chebychev polys for now, since there are a lot of improvements out there.\n\n`@`jdemeyer\n\n`@`Bugs I will look into this. And yes I'm aware that Chebyshev Polynomials are important to number theory since there are quite interesting generalizations on general fields.\n\n`@`Clenshaw: PARI is a good hint, I will look into this. And I already think I know how to generalize the clenshaw method, to get O(log N). \nThe reason for this quite naive choice, was that the method can be applied to all ortho polys. Nevertheless I will adapt it on Chebychev Polys since there are more possibilities since we can use trigonometric formulas. I think the benefit of implementing it directly in sage is that there is less trouble if one wants to use more general data types, since there are no type casts. I will try to find an optimal way for this. (Maybe an additional switch)\n\n`@`SymbolicPolynomial: I don't think this is a good idea because ortho polys are quite special even among the polynomials. But If you really would like to have a SymbolicPolynomial class I would propose to introduce the SymbolicPolynomial class, and derive the OrthogonalPolynomials from that class.\nI make the following suggestion: I will finish the OrthogonalPolynomials with the current design. And then open an new ticket where we discuss the design of a general polynomial parent class. Fortunately, such design changes are very easy to implement in Python, and I don't see any big problem in introducing an intermediate class.\nBut if you want to introduce such a class there are some major decisions to make:\n-Where do we put this class? (such a general class should not belong to orthogonoal_polys.py )\n-What should all SymbolicPolynomials have in common?\n-What should they have concerning other general polynomials?\n\nBut it would be really good to add the ortho polys, and I really want to finish this task.",
     "created_at": "2013-12-04T07:47:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94517",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94360",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1781,15 +1781,15 @@ But it would be really good to add the ortho polys, and I really want to finish 
 
 ---
 
-archive/issue_comments_094518.json:
+archive/issue_comments_094361.json:
 ```json
 {
     "body": "> `SymbolicPolynomial`: I don't think this is a good idea because ortho polys are quite special even among the polynomials.\nWhat's special about orthogonal polynomials from a **computer algebra** point of view? I can tell you that \"symbolic polynomials\" are special because you generally want to be able to evaluate them for any ring element (as opposed to other symbolic functions, which often only make sense in real or complex fields).\n\n> I make the following suggestion: I will finish the OrthogonalPolynomials with the current design.\nSure...",
     "created_at": "2013-12-04T08:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94518",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94361",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1803,15 +1803,15 @@ Sure...
 
 ---
 
-archive/issue_comments_094519.json:
+archive/issue_comments_094362.json:
 ```json
 {
     "body": "Replying to [comment:53 jdemeyer]:\n> > `SymbolicPolynomial`: I don't think this is a good idea because ortho polys are quite special even among the polynomials.\n> What's special about orthogonal polynomials from a **computer algebra** point of view? I can tell you that \"symbolic polynomials\" are special because you generally want to be able to evaluate them for any ring element (as opposed to other symbolic functions, which often only make sense in real or complex fields).\n> \n\nIt makes a difference in an **OO-Design** point of view, because you can apply a whole bunch of evaluation techniques and tricks due to the three term recursion (e.g. clenshaw method or the eval_numpy method are not needed for symbolic polynomials, since there are no methods for that). Thats the reason why I suggested to derive them from a base class on top to avoid redundant methods. That would be a clean solution. And I'm already thinking on some features, which I want to implement in future version, which are very specific to ortho polys. And if you want to introduce such a general class, you should not put it into orthogonal_polys.py, but somewhere else, were it fits better into the class hierarchy.\n\nPlease don't get me wrong, I'm not stating, that I think it is a bad idea to introduce such an abstract base class, but If you want a clean OO Design, it is not done by a simple renaming.",
     "created_at": "2013-12-04T09:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94519",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94362",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1828,15 +1828,15 @@ Please don't get me wrong, I'm not stating, that I think it is a bad idea to int
 
 ---
 
-archive/issue_comments_094520.json:
+archive/issue_comments_094363.json:
 ```json
 {
     "body": "Evaluating `chebyshev_T(n,x)` can be done as\n\n```\n(Matrix(2,2,[x,x^2-1,1,x])^n)[0,0]\n```\n\n\nWhile `chebyshev_U(n-1,x)` equals\n\n```\n(Matrix(2,2,[x,x^2-1,1,x])^n)[1,0]\n```\n\n\nThese can be evaluated with `O(log(n))` operations.",
     "created_at": "2013-12-04T09:14:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94520",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94363",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1860,15 +1860,15 @@ These can be evaluated with `O(log(n))` operations.
 
 ---
 
-archive/issue_comments_094521.json:
+archive/issue_comments_094364.json:
 ```json
 {
     "body": "Replying to [comment:54 maldun]:\n> And I'm already thinking on some features, which I want to implement in future version, which are very specific to ortho polys.\nThat alone is a very good to keep the `OrthogonalPolynomial` class.",
     "created_at": "2013-12-04T09:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94521",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94364",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1880,15 +1880,15 @@ That alone is a very good to keep the `OrthogonalPolynomial` class.
 
 ---
 
-archive/issue_comments_094522.json:
+archive/issue_comments_094365.json:
 ```json
 {
     "body": "Replying to [comment:55 jdemeyer]:\n> Evaluating `chebyshev_T(n,x)` can be done as\n> {{{\n> (Matrix(2,2,[x,x<sup>2-1,1,x])</sup>n)[0,0]\n> }}}\n> \n> While `chebyshev_U(n-1,x)` equals\n> {{{\n> (Matrix(2,2,[x,x<sup>2-1,1,x])</sup>n)[1,0]\n> }}}\n> \n> These can be evaluated with `O(log(n))` operations.\n\nThanks for the hint. I have also an own idea to implement this. My implementation   should be optimal with respect to the flop count, but yours could be faster since matrix multiplication and powers are well optimized. I will compare both methods and use the faster one.\n\nFor reference: The method which I mean is based on the generalized recursion formula (originating from the cosine addition theorem): \nT_{n+m} + T{n-m} = 2 T_n T_m \n\nFor T_N one can now use the binary representation of N to recursively build T_N in O(log N) time",
     "created_at": "2013-12-04T09:24:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94522",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94365",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -1916,15 +1916,15 @@ For T_N one can now use the binary representation of N to recursively build T_N 
 
 ---
 
-archive/issue_comments_094523.json:
+archive/issue_comments_094366.json:
 ```json
 {
     "body": "This should be a `ValueError`:\n\n```\nsage: chebyshev_T(1/2,0)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n<ipython-input-7-830f13ad2f0d> in <module>()\n----> 1 chebyshev_T(Integer(1)/Integer(2),Integer(0))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()                                                                                                                                                               \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5531)()                                                                                                                                                                      \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _eval_(self, *args)\n    489                 if not is_Expression(args[-1]):\n    490                     try:\n--> 491                         return self._evalf_(*args)\n    492                     except AttributeError:\n    493                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, **kwds)\n    606             precision = step_parent.prec()\n    607         except AttributeError:\n--> 608             precision = RR.prec()\n    609 \n    610         from sage.libs.mpmath.all import call as mpcall\n\nNameError: global name 'RR' is not defined\n```\n",
     "created_at": "2013-12-04T11:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94523",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94366",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1963,15 +1963,15 @@ NameError: global name 'RR' is not defined
 
 ---
 
-archive/issue_comments_094524.json:
+archive/issue_comments_094367.json:
 ```json
 {
     "body": "This should be `ArithmeticError` (I guess), since deriving w.r.t. the index simply isn't defined:\n\n```\nsage: var('n,x')\n(n, x)\nsage: chebyshev_T(n,x).diff(n)\n---------------------------------------------------------------------------\nNotImplementedError                       Traceback (most recent call last)\n<ipython-input-14-a23f5209eb49> in <module>()\n----> 1 chebyshev_T(n,x).diff(n)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.derivative (sage/symbolic/expression.cpp:16561)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/misc/derivative.so in sage.misc.derivative.multi_derivative (sage/misc/derivative.c:2715)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._derivative (sage/symbolic/expression.cpp:16951)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _derivative_(self, *args, **kwds)\n    714         diff_param = kwds['diff_param']\n    715         if diff_param == 0:\n--> 716             raise NotImplementedError(\"derivative w.r.t. to the index is not supported yet\")\n    717 \n    718         return args[0]*chebyshev_U(args[0]-1,args[1])\n\nNotImplementedError: derivative w.r.t. to the index is not supported yet\n```\n\n\nAlso: doctest your exceptions.",
     "created_at": "2013-12-04T12:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94524",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94367",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2009,15 +2009,15 @@ Also: doctest your exceptions.
 
 ---
 
-archive/issue_comments_094525.json:
+archive/issue_comments_094368.json:
 ```json
 {
     "body": "I personally like to define `chebyshev_T(-n,x) = chebyshev_T(n,x)` and `chebyshev_U(-n,x) = -chebyshev_U(n-2,x)`. This makes sense from a number-theoretic point of view and is also consistent with `chebyshev_T(n,cos(x)) = cos(n*x)` and `chebyshev_U(n-1,cos(x)) = sin(n*x)/sin(x)`.",
     "created_at": "2013-12-04T12:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94525",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94368",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2027,15 +2027,15 @@ I personally like to define `chebyshev_T(-n,x) = chebyshev_T(n,x)` and `chebyshe
 
 ---
 
-archive/issue_comments_094526.json:
+archive/issue_comments_094369.json:
 ```json
 {
     "body": "For real/complex fields, you should use\n\n```\nchebyshev_T(n,x) = ((x+sqrt(x^2-1))^n + (x-sqrt(x^2-1))^n)/2\nchebyshev_U(n-1,x) = ((x+sqrt(x^2-1))^n - (x-sqrt(x^2-1))^n)/(2*sqrt(x^2-1))\n```\n",
     "created_at": "2013-12-04T14:42:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94526",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94369",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2051,15 +2051,15 @@ chebyshev_U(n-1,x) = ((x+sqrt(x^2-1))^n - (x-sqrt(x^2-1))^n)/(2*sqrt(x^2-1))
 
 ---
 
-archive/issue_comments_094527.json:
+archive/issue_comments_094370.json:
 ```json
 {
     "body": "The doubling recursion formulas should be better also for real/complex fields, I think: computing nth powers is basically the same amount of work, and it's best to avoid the square roots (especially for real |x| < 1).",
     "created_at": "2013-12-04T15:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94527",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94370",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -2069,15 +2069,15 @@ The doubling recursion formulas should be better also for real/complex fields, I
 
 ---
 
-archive/issue_comments_094528.json:
+archive/issue_comments_094371.json:
 ```json
 {
     "body": "Replying to [comment:62 fredrik.johansson]:\n> The doubling recursion formulas should be better also for real/complex fields, I think: computing nth powers is basically the same amount of work, and it's best to avoid the square roots (especially for real |x| < 1).\nThe matrix algorithm does seem more numerically stable (checked by using both algorithms inside `RIF`). So it's easy then, if there is one algorithm which is obviously the best.",
     "created_at": "2013-12-04T15:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94528",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94371",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2089,15 +2089,15 @@ The matrix algorithm does seem more numerically stable (checked by using both al
 
 ---
 
-archive/issue_comments_094529.json:
+archive/issue_comments_094372.json:
 ```json
 {
     "body": "I found an interesting paper on this topic: [http://www.mathematik.uni-kassel.de/~koepf/cheby.pdf](http://www.mathematik.uni-kassel.de/~koepf/cheby.pdf)\n\nMaybe this could give some input to the discussion.\n\nIt states that for an expanded representation the approach I have\ninitally chosen (series expansion) should be the best for the symbolic\nevaluation, since this is somehow that what the user expects from ohter CAS.\nHowever, the proposed recursive/symbolic method would be interesting too.\n(p16f), since it gives a more compact form for large n. Maybe a switch for \nn >= 100?\n\nConsidering rational numbers as input, the recursion formula works best, due to this paper. This should be considered too.\n\n`@`Matrix Multiplication: It's also my favorite, but I will compare first.",
     "created_at": "2013-12-04T15:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94529",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2120,15 +2120,15 @@ Considering rational numbers as input, the recursion formula works best, due to 
 
 ---
 
-archive/issue_comments_094530.json:
+archive/issue_comments_094373.json:
 ```json
 {
     "body": "Here is an implementation of the divide-and-conquer algorithm that doesn't require caching (it only makes one recursive call). It might look even nicer if one rewrites it in iterative form. I think it's also equivalent to the code in pari. It should be faster than matrix powering by a constant factor, just like the analogous Fibonacci number algorithms.\n\n\n```\ndef chebyshev_t(n, x):\n    # returns (T(n,x), T(n-1,x)), or (T(n,x), _) if both=False\n    def recur(n, x, both=False):\n        if n == 0:\n            return 1, x\n        if n == 1:\n            return x, 1\n        a, b = recur((n+1)//2, x, both or n % 2)\n        if n % 2 == 0:\n            return 2*a^2 - 1, both and 2*a*b - x\n        else:\n            return 2*a*b - x, both and 2*b^2 - 1\n    return recur(n, x, False)[0]\n```\n\n\nCome to think of it, it might even be useful to publicly expose a method that returns both T(n,x) and T(n-1,x) simultaneously.\n\nSimilar code for U (using same algorithm as Pari):\n\n\n```\ndef chebyshev_u(n, x):\n    def recur(n, x, both=False):\n        if n == 0:\n            return 1, both and 2*x\n        if n == 1:\n            return 2*x, both and 4*x^2-1\n        a, b = recur((n-1)//2, x, True)\n        if n % 2 == 0:\n            return (b+a)*(b-a), both and 2*b*(x*b-a)\n        else:\n            return 2*a*(b-x*a), both and (b+a)*(b-a)\n    return recur(n, x, False)[0]\n```\n\n\nEdit: streamlined the code.",
     "created_at": "2013-12-04T16:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94530",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94373",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -2179,15 +2179,15 @@ Edit: streamlined the code.
 
 ---
 
-archive/issue_comments_094531.json:
+archive/issue_comments_094374.json:
 ```json
 {
     "body": "I think your recursive implementation is very good. If you try to implement it iteratively, you have to consider some cases (current in row even/odd and next in row even/odd), and the code gets quite ugly in my opinion. And I think Knuth is right. One should prefer readable code over over optimzed \"faster\" code...",
     "created_at": "2013-12-04T19:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94531",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2197,15 +2197,15 @@ I think your recursive implementation is very good. If you try to implement it i
 
 ---
 
-archive/issue_comments_094532.json:
+archive/issue_comments_094375.json:
 ```json
 {
     "body": "this would be a functioning iterative algorithm:\n\n\n\n```\ndef chebyshev_t(n,x):\n    \n    if n == 0:\n        return 1\n    elif n == 1:\n        return x\n    elif n == 2:\n        return 2*x**2-1\n    else:\n        T_c = x\n        T_p = 2*x**2 -1\n        \n        for k in range(floor(log(n,2)),0,-1):\n            T_p_old = T_p\n            T_c_old = T_c\n            if (n//2**(k-1)) % 2 == 0: # next is even\n                T_p = 2*T_p_old*T_c_old - x\n                T_c = 2*T_c_old**2 - 1\n            elif (n//2**(k-1)) % 2  == 1: # next is odd\n                T_p = 2*T_p_old**2 - 1\n                T_c = 2*T_p_old*T_c_old - x\n        \n        # Cases for output\n        if log(n - 1,2) in ZZ or log(n-2,2) in ZZ:\n            return T_c\n        \n        elif n % 2 == 0:\n            if n//2 % 2 == 0:                   \n                return T_c\n            else:\n                return T_p\n        elif n % 2 == 1:\n            if n//2 % 2 == 0:                   \n                return T_p\n            else:\n                return T_c\n```\n\n\nI made it shorter. What is preferable? recursive or iterative? Normaly iterative, but in this case it is longer due to the indices battles ...\n\nEdit: I also measured time: recursive is faster, even if I do some optimization (e.g. xrange)",
     "created_at": "2013-12-04T20:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94532",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94375",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2261,15 +2261,15 @@ Edit: I also measured time: recursive is faster, even if I do some optimization 
 
 ---
 
-archive/issue_comments_094533.json:
+archive/issue_comments_094376.json:
 ```json
 {
     "body": "Replying to [comment:42 jdemeyer]:\n> Sorry to spoil the party, but this is a regression:\n> {{{\n> sage: K.<a> = NumberField(x^3-x-1)\n> sage: chebyshev_T(10^3,a)\n> ---------------------------------------------------------------------------\n> TypeError                                 Traceback (most recent call last)\n> <ipython-input-17-aa97c56dd147> in <module>()\n> ----> 1 chebyshev_T(Integer(10)**Integer(3),a)\n> \n> /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n> \n> /usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5279)()\n> \n> TypeError: cannot coerce arguments: no canonical coercion from Number Field in a with defining polynomial x^3 - x - 1 to Symbolic Ring\n> }}}\n> \n> (and yes: Chebyshev polynomials are important in number theory)\n\nI had now a look on these regressions: The problem originates from the fact, tat the ortho polys are now symbolic functions instead of simple function call in maxima.\nthe symbolic functions have a lot more mechanisms concerning type coercions.\n\nThe only way around this would be a hack to chatch this coercion troubles, e.g.\n\n\n\n```\ndef __call__(self,n,x):\n\n    try:\n        super(Func_chebyshev_T,self).__call__(n,x)\n    except TypeError:\n        return self._clenshaw_method_(n,x)\n```\n\n\nwould work for that problem and some others. But how to catch such things correctly?\nUse a try catch, or make several is_instance checks? This could get a quite long list on coercions...",
     "created_at": "2013-12-04T22:01:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94533",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94376",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2316,15 +2316,15 @@ Use a try catch, or make several is_instance checks? This could get a quite long
 
 ---
 
-archive/issue_comments_094534.json:
+archive/issue_comments_094377.json:
 ```json
 {
     "body": "new fixes and patches",
     "created_at": "2013-12-04T23:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94534",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94377",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2334,15 +2334,15 @@ new fixes and patches
 
 ---
 
-archive/issue_comments_094535.json:
+archive/issue_comments_094378.json:
 ```json
 {
     "body": "Attachment [trac_9706_new_clenshaw.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_new_clenshaw.patch) by @jdemeyer created at 2013-12-04 23:51:34\n\nReplying to [comment:68 maldun]:\n> would work for that problem and some others. But how to catch such things correctly?\n\nI think there are only two cases: the \"symbolic\" case and the \"algebraic\" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.",
     "created_at": "2013-12-04T23:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94535",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94378",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2357,15 +2357,15 @@ I think there are only two cases: the "symbolic" case and the "algebraic" case. 
 
 ---
 
-archive/issue_comments_094536.json:
+archive/issue_comments_094379.json:
 ```json
 {
     "body": "maldun: I don't like all the log's in your approach (I don't think you need them), but otherwise I'm happy with either the recursive or iterative approach.",
     "created_at": "2013-12-04T23:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94536",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94379",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2375,15 +2375,15 @@ maldun: I don't like all the log's in your approach (I don't think you need them
 
 ---
 
-archive/issue_comments_094537.json:
+archive/issue_comments_094380.json:
 ```json
 {
     "body": "Replying to [comment:69 jdemeyer]:\n> Replying to [comment:68 maldun]:\n> > would work for that problem and some others. But how to catch such things correctly?\n> \n> I think there are only two cases: the \"symbolic\" case and the \"algebraic\" case. The latter means that we really consider the polynomial as a polynomial, not a symbolic function. In `chebyshev(n,x)`, if either `n` or `x` is symbolic, we are in the symbolic case, otherwise we're in the algebraic case. In the algebraic case, the index `n` must be a concrete integer and we use the iterative algorithm.\n\nThank you for the input, that's a great idea!\n\nBased on that I propose the following switch:\n\n\n\n```\ndef __call__(self,n,x):\n    if n in ZZ: # check if n is integer -> consider polynomial as algebraic structure\n        self._eval_(n,x) # Let eval methode decide which is best\n    else:\n        super(OrthogonalPolynomial,self).__call__(n,x)\n```\n",
     "created_at": "2013-12-05T08:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94537",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94380",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2412,15 +2412,15 @@ def __call__(self,n,x):
 
 ---
 
-archive/issue_comments_094538.json:
+archive/issue_comments_094381.json:
 ```json
 {
     "body": "I think that `chebyshev_T(1/2, 2)` should raise a `ValueError` (or can we make sense of this?). So, in your code there should really be 3 cases: integer, symbolic and \"something else\" which is always an error.\n\nSo, I would do something like\n\n```\ndef __call__(self,n,x):\n    if is_Expression(n):\n        return super(OrthogonalPolynomial, self).__call__(n,x)\n    # We consider the polynomial really as a polynomial,\n    # not a symbolic expression.\n    try:\n        n = ZZ(n)\n    except StandardError:\n        raise ValueError(\"Index for symbolic polynomials must be an integer\")\n    return self._eval_polynomial(n, x)\n```\n",
     "created_at": "2013-12-05T08:43:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94538",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94381",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2446,15 +2446,15 @@ def __call__(self,n,x):
 
 ---
 
-archive/issue_comments_094539.json:
+archive/issue_comments_094382.json:
 ```json
 {
     "body": "Replying to [comment:70 jdemeyer]:\n> maldun: I don't like all the log's in your approach (I don't think you need them), but otherwise I'm happy with either the recursive or iterative approach.\n\nI removed the logs, it is much faster now, but still slower than the recursive implementation about a constant factor of 2 (which is not much considering that we are talking about \u00b5s, but still)",
     "created_at": "2013-12-05T08:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94539",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94382",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2467,15 +2467,15 @@ I removed the logs, it is much faster now, but still slower than the recursive i
 
 ---
 
-archive/issue_comments_094540.json:
+archive/issue_comments_094383.json:
 ```json
 {
     "body": "Replying to [comment:72 jdemeyer]:\n> I think that `chebyshev_T(1/2, 2)` should raise a `ValueError` (or can we make sense of this?). So, in your code there should really be 3 cases: integer, symbolic and \"something else\" which is always an error.\n> \n> So, I would do something like\n> {{{\n> def __call__(self,n,x):\n>     if is_Expression(n):\n>         return super(OrthogonalPolynomial, self).__call__(n,x)\n>     # We consider the polynomial really as a polynomial,\n>     # not a symbolic expression.\n>     try:\n>         n = ZZ(n)\n>     except StandardError:\n>         raise ValueError(\"Index for symbolic polynomials must be an integer\")\n>     return self._eval_polynomial(n, x)\n> }}}\n\nNo there are several other cases to consider: You can also have complex and real input values if you consider a chebyshev polynomial as extension of the Hypergeometric function 1F2 like mpmath does: [http://mpmath.googlecode.com/svn/trunk/doc/build/functions/orthogonal.html#chebyt](http://mpmath.googlecode.com/svn/trunk/doc/build/functions/orthogonal.html#chebyt)\nThat's the reason for the message in the _derive_ method, since it would be theoretically possible to differentiate a chebyshev polynomial with respect to the index.\n\nSo the way I proposed makes sense, since this could be important for symbolic computation purposes where hypergeometric functions play an important role (eg. Zeilberger algorithm), and of course for analytical considerations.",
     "created_at": "2013-12-05T09:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94540",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94383",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2505,15 +2505,15 @@ So the way I proposed makes sense, since this could be important for symbolic co
 
 ---
 
-archive/issue_comments_094541.json:
+archive/issue_comments_094384.json:
 ```json
 {
     "body": "OK, I agree.\n\nWhat remains to do:\n- support [comment:60 negative indices]\n- add many doctests (essentially, all the examples I mentioned on this ticket should become doctests)\n- for ease of reviewing, fold all the patches into one patch.",
     "created_at": "2013-12-05T09:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94541",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94384",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2528,15 +2528,15 @@ What remains to do:
 
 ---
 
-archive/issue_comments_094542.json:
+archive/issue_comments_094385.json:
 ```json
 {
     "body": "Patch in a whole with corrections etc.",
     "created_at": "2013-12-05T19:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94542",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94385",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2546,15 +2546,15 @@ Patch in a whole with corrections etc.
 
 ---
 
-archive/issue_comments_094543.json:
+archive/issue_comments_094386.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-12-05T19:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94543",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94386",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2564,15 +2564,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094544.json:
+archive/issue_comments_094387.json:
 ```json
 {
     "body": "Attachment [trac_9706_chebyshev_patch_new.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_patch_new.patch) by maldun created at 2013-12-05 19:14:23\n\nNew patch attached. I incorporated all changes discussed.\n\n`@`Pari I tried the evaluation with pari, but with Fredericks recursion, there is no gain in speed, due to the type checks beforehand. And the recursion in sage avoid type conversions.",
     "created_at": "2013-12-05T19:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94544",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94387",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2586,15 +2586,15 @@ New patch attached. I incorporated all changes discussed.
 
 ---
 
-archive/issue_comments_094545.json:
+archive/issue_comments_094388.json:
 ```json
 {
     "body": "meldun: please adjust the \"apply\" section in the ticket description so it's clear which patch(es) should be applied.",
     "created_at": "2013-12-05T19:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94545",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94388",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2604,15 +2604,15 @@ meldun: please adjust the "apply" section in the ticket description so it's clea
 
 ---
 
-archive/issue_comments_094546.json:
+archive/issue_comments_094389.json:
 ```json
 {
     "body": "Attachment [trac_9706_chebyshev.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev.patch) by @jdemeyer created at 2013-12-05 19:46:19\n\ncheby changes",
     "created_at": "2013-12-05T19:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94546",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94389",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2624,15 +2624,15 @@ cheby changes
 
 ---
 
-archive/issue_comments_094547.json:
+archive/issue_comments_094390.json:
 ```json
 {
     "body": "Folded the 4 patches.",
     "created_at": "2013-12-05T19:46:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94547",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94390",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2642,15 +2642,15 @@ Folded the 4 patches.
 
 ---
 
-archive/issue_comments_094548.json:
+archive/issue_comments_094391.json:
 ```json
 {
     "body": "What's the advantage of the `_clenshaw_method_` over the recursive method? I see no need for the two different implementations and suggest to remove `_clenshaw_method_`.",
     "created_at": "2013-12-05T19:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94548",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94391",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2660,15 +2660,15 @@ What's the advantage of the `_clenshaw_method_` over the recursive method? I see
 
 ---
 
-archive/issue_comments_094549.json:
+archive/issue_comments_094392.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2013-12-05T19:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94549",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94392",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2678,15 +2678,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_094550.json:
+archive/issue_comments_094393.json:
 ```json
 {
     "body": "More doctests are needed, this still doesn't work:\n\n```\nsage: chebyshev_T(1/2, 0)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n<ipython-input-2-c142cc68c50b> in <module>()\n----> 1 chebyshev_T(Integer(1)/Integer(2), Integer(0))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in __call__(self, n, x)\n    554             return self._eval_(n,x) # Let eval methode decide which is best\n    555         else: # Consider OrthogonalPolynomial as symbol\n--> 556             return super(OrthogonalPolynomial,self).__call__(n,x)\n    557 \n    558 \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFunction.__call__ (sage/symbolic/function.cpp:8126)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function.__call__ (sage/symbolic/function.cpp:5531)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _eval_(self, *args)\n    493                 if not is_Expression(args[-1]):\n    494                     try:\n--> 495                         return self._evalf_(*args)\n    496                     except AttributeError:\n    497                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, **kwds)\n    641             precision = step_parent.prec()\n    642         except AttributeError:\n--> 643             precision = RR.prec()\n    644 \n    645         from sage.libs.mpmath.all import call as mpcall\n\nNameError: global name 'RR' is not defined\n```\n",
     "created_at": "2013-12-05T19:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94550",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94393",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2732,15 +2732,15 @@ NameError: global name 'RR' is not defined
 
 ---
 
-archive/issue_comments_094551.json:
+archive/issue_comments_094394.json:
 ```json
 {
     "body": "Why do we have `__call__` and `_eval_` given they do essentially the same thing? Please keep in mind [comment:69] also in the `_eval_()` function (I really don't understand why it needs to be so complicated).\n\nThis is also still broken:\n\n```\nsage: parent(chebyshev_T(4, RIF(5)))\nReal Field with 53 bits of precision\n```\n\n\nPlease fix all issues that I mentioned **and turn them into doctests**.",
     "created_at": "2013-12-05T20:00:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94551",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94394",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2760,15 +2760,15 @@ Please fix all issues that I mentioned **and turn them into doctests**.
 
 ---
 
-archive/issue_comments_094552.json:
+archive/issue_comments_094395.json:
 ```json
 {
     "body": "For the `REFERENCES`, see [http://sagemath.org/doc/developer/conventions.html#docstring-markup-with-rest-and-sphinx](http://sagemath.org/doc/developer/conventions.html#docstring-markup-with-rest-and-sphinx) for the right syntax.",
     "created_at": "2013-12-05T22:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94552",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94395",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2778,15 +2778,15 @@ For the `REFERENCES`, see [http://sagemath.org/doc/developer/conventions.html#do
 
 ---
 
-archive/issue_comments_094553.json:
+archive/issue_comments_094396.json:
 ```json
 {
     "body": "`@`clenshaw_method: there is a difference. clenshaw method also applies a direct formula for small n and calls the recursive method else. The difference is that the recursive evaluation does not give an expanded representation of the polynomial, which is wanted for small n, because that was the standard till now and people expect this, especially if you are used to mathematica or maxima. Expanding huge expressions costs a lot of time, and this approach is much faster in that situation. Of course it is a matter of naming. But the reason why I have 2 methods, is to avoid too long code segments, and splitting them apart is better for readability. It also is important concerning other orthogonal polynomials.\n\n`@`__call__ & _eval_ : This convention is part of the BuiltinFunction structure.\n__call__ does all the stuff like coercions, transforming into a symbolic expression (e.g. if n is a symbolic value don't return a polynomial but hold the closed form.)\n_eval cares about evaluating the polynomial (e.g return a number if x is a number etc.)\nLook into the symbolic.function module for more details\nAnd eval is so complicated because there are several cases to consider: correct evaluation of symbolic expressions, numerical expressions and numpy arrays etc.\nThis is also part of the BuiltinFunction structure. And you also have to keep in mind that this method should work for all ortho polys. \n\n`@`bugs Sorry, during the patch merging process I had forgotten to apply a patch, which I'm now missing, since I work on different machines ... I will correct this tomorrow.\nIt's annoying since I already had fixed it ...",
     "created_at": "2013-12-05T23:14:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94553",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94396",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2806,15 +2806,15 @@ It's annoying since I already had fixed it ...
 
 ---
 
-archive/issue_comments_094554.json:
+archive/issue_comments_094397.json:
 ```json
 {
     "body": "Attachment [trac_9706_bugfixes_and_doctests.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_bugfixes_and_doctests.patch) by maldun created at 2013-12-05 23:55:09\n\nincorporated things that were already been done ...",
     "created_at": "2013-12-05T23:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94554",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94397",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2826,15 +2826,15 @@ incorporated things that were already been done ...
 
 ---
 
-archive/issue_comments_094555.json:
+archive/issue_comments_094398.json:
 ```json
 {
     "body": "Ok I incorporated the bugfixes and doctests **again** ...\n\nthere are still some minor changes (formatting and new doctests) todo. Please let me know if you find more bugs.",
     "created_at": "2013-12-06T00:00:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94555",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94398",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -2846,15 +2846,15 @@ there are still some minor changes (formatting and new doctests) todo. Please le
 
 ---
 
-archive/issue_comments_094556.json:
+archive/issue_comments_094399.json:
 ```json
 {
     "body": "Replying to [comment:86 maldun]:\n> `@`clenshaw_method: there is a difference. clenshaw method also applies a direct formula for small n and calls the recursive method else. The difference is that the recursive evaluation does not give an expanded representation of the polynomial, which is wanted for small n\nOK, fine. But for simplicity, you could simply call `_cheb_recur_(...).expand()` instead which would achieve the same thing without an additional method.\n\n> _eval cares about evaluating the polynomial (e.g return a number if x is a number etc.)\n> Look into the symbolic.function module for more details\n> And eval is so complicated because there are several cases to consider: correct evaluation of symbolic expressions, numerical expressions and numpy arrays etc.\nIf you really think the complexity is justified (I have a hard time believing that), you should add comments in the code to describe the various cases, because I'm having a hard time understanding the logic. A comment like `# A faster check would be nice...` doesn't mean much to me because I don't understand what you're trying to do.",
     "created_at": "2013-12-06T10:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94556",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94399",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2871,15 +2871,15 @@ If you really think the complexity is justified (I have a hard time believing th
 
 ---
 
-archive/issue_comments_094557.json:
+archive/issue_comments_094400.json:
 ```json
 {
     "body": "I think `mpmath` should only be used for the \"pure\" `RealField()` and `ComplexField()` and `RDF` and `CDF`, nothing else.\n\nThis is bad:\n\n```\nsage: chebyshev_T(5,Qp(3)(2))\n...\nTypeError: unable to coerce to a ComplexNumber: <type 'sage.rings.padics.padic_capped_relative_element.pAdicCappedRelativeElement'>\n```\n\n\nand the way you use `RIF` is also kind of stupid since the computation should really be done using the recursive formula.",
     "created_at": "2013-12-06T10:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94557",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94400",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2900,15 +2900,15 @@ and the way you use `RIF` is also kind of stupid since the computation should re
 
 ---
 
-archive/issue_comments_094558.json:
+archive/issue_comments_094401.json:
 ```json
 {
     "body": "Also, you should never simply `print` stuff. Either delete those prints or use a [Python warning](http://docs.python.org/2/library/warnings.html#available-functions).\n\n```\nsage: chebyshev_T(10^6,RealField(256)(2))\nWarning: mpmath returns NoConvergence!\nSwitching to clenshaw_method, but it may not be stable!\n1.764019427245793968639371137094247875315949668035854027376792158135922267593e571947\n```\n\n\nThe message is also misleading, since for some inputs it retries `mpmath` anyway:\n\n```\nsage: chebyshev_T(100001/2, 2)\n---------------------------------------------------------------------------\nNoConvergence                             Traceback (most recent call last)\n<ipython-input-34-9c95a5ff4276> in <module>()\n----> 1 chebyshev_T(Integer(100001)/Integer(2), Integer(2))\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/ort\n    557             return self._eval_(n,x) # Let eval methode decide which is best\n    558         else: # Consider OrthogonalPolynomial as symbol\n--> 559             return super(OrthogonalPolynomial,self).__call__(n,x)\n    560 \n    561 \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.BuiltinFp:8126)()                                                                                                                    \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/symbolic/function.so in sage.symbolic.function.Function()                                                                                                                           \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orth\n    496                 if not is_Expression(args[-1]):\n    497                     try:\n--> 498                         return self._evalf_(*args)\n    499                     except AttributeError:\n    500                         pass\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/functions/orthogonal_polys.pyc in _evalf_(self, *args, \n    651         from sage.libs.mpmath.all import chebyt as mpchebyt\n    652 \n--> 653         return mpcall(mpchebyt,args[0],args[-1],prec = precision)\n    654 \n    655     def _maxima_init_evaled_(self, *args):\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/utils.so in sage.libs.mpmath.utils.call (sage/libs/\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.wrapped_specfun.__call__ (sage/lit_main.c:17447)()                                                                                                                                           \n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/orthogonal.pyc in chebyt(ctx, n, x, **kwarg\n    444     if (not x) and ctx.isint(n) and int(ctx._re(n)) % 2 == 1:\n    445         return x * 0\n--> 446     return ctx.hyp2f1(-n,n,(1,2),(1-x)/2, **kwargs)\n    447 \n    448 @defun_wrapped\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in hyp2f1(ctx, a, b, c, z, **kwargs)\n    248 @defun\n    249 def hyp2f1(ctx,a,b,c,z,**kwargs):\n--> 250     return ctx.hyper([a,b],[c],z,**kwargs)\n    251 \n    252 @defun\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in hyper(ctx, a_s, b_s, z, **kwargs)\n    223         elif q == 0: return ctx._hyp1f0(a_s[0][0], z)\n    224     elif p == 2:\n--> 225         if   q == 1: return ctx._hyp2f1(a_s, b_s, z, **kwargs)\n    226         elif q == 2: return ctx._hyp2f2(a_s, b_s, z, **kwargs)\n    227         elif q == 3: return ctx._hyp2f3(a_s, b_s, z, **kwargs)\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/functions/hypergeometric.pyc in _hyp2f1(ctx, a_s, b_s, z, **kwargs)\n    442     if absz <= 0.8 or (ctx.isint(a) and a <= 0 and a >= -1000) or \\\n    443                       (ctx.isint(b) and b <= 0 and b >= -1000):\n--> 444         return ctx.hypsum(2, 1, (atype, btype, ctype), [a, b, c], z, **kwargs)\n    445 \n    446     orig = ctx.prec\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/ctx_mp.pyc in hypsum(ctx, p, q, flags, coeffs, z, accurate_small, **kwargs)\n    640                 mag_dict = {}\n    641             zv, have_complex, magnitude = summator(coeffs, v, prec, wp, \\\n--> 642                 epsshift, mag_dict, **kwargs)\n    643             cancel = -magnitude\n    644             jumps_resolved = True\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/mpmath/libmp/libhyper.pyc in _hypsum(coeffs, z, prec, wp, epsshift, magnitude_check, **kwargs)\n    319         def _hypsum(coeffs, z, prec, wp, epsshift, magnitude_check, **kwargs):\n    320             return hypsum_internal(p, q, param_types, ztype, coeffs, z,\n--> 321                 prec, wp, epsshift, magnitude_check, kwargs)\n    322 \n    323         return \"(none)\", _hypsum\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_main.so in sage.libs.mpmath.ext_main.hypsum_internal (sage/libs/mpmath/ext_main.c:24850)()\n\n/usr/local/src/sage-5.13.beta1/local/lib/python2.7/site-packages/sage/libs/mpmath/ext_impl.so in sage.libs.mpmath.ext_impl.MPF_hypsum (sage/libs/mpmath/ext_impl.c:20614)()\n\nNoConvergence: Hypergeometric series converges too slowly. Try increasing maxterms.\n```\n",
     "created_at": "2013-12-06T10:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94558",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94401",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3014,15 +3014,15 @@ NoConvergence: Hypergeometric series converges too slowly. Try increasing maxter
 
 ---
 
-archive/issue_comments_094559.json:
+archive/issue_comments_094402.json:
 ```json
 {
     "body": "Don't forget to fix the `REFERENCES`.",
     "created_at": "2013-12-06T10:24:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94559",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94402",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3032,15 +3032,15 @@ Don't forget to fix the `REFERENCES`.
 
 ---
 
-archive/issue_comments_094560.json:
+archive/issue_comments_094403.json:
 ```json
 {
     "body": "\n```\nsage: chebyshev_U(-1, Mod(2,5))\n...\nRuntimeError: maximum recursion depth exceeded\n```\n",
     "created_at": "2013-12-06T13:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94560",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94403",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3056,15 +3056,15 @@ RuntimeError: maximum recursion depth exceeded
 
 ---
 
-archive/issue_comments_094561.json:
+archive/issue_comments_094404.json:
 ```json
 {
     "body": "This is totally meaningless (this should be a `ValueError`):\n\n```\nsage: chebyshev_U(1.5, Mod(8,9))\n63.8753125671848\n```\n",
     "created_at": "2013-12-06T13:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94561",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94404",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3080,15 +3080,15 @@ sage: chebyshev_U(1.5, Mod(8,9))
 
 ---
 
-archive/issue_comments_094562.json:
+archive/issue_comments_094405.json:
 ```json
 {
     "body": "`mpmath` is slower than `_cheb_recur_()`, so I think `mpmath` should be only used in cases where the index is not an integer.\n\nPerhaps the `_eval_` logic should be\n1. `n` in `ZZ` => use recursion. If `x` is symbolic and `abs(n) <= 50`, `expand()` the result\n2. `n` or `x` symbolic => use symbolic evaluation\n3. `n` and `x` real/complex => use `mpmath`\n4. anything else => `raise ValueError`",
     "created_at": "2013-12-06T13:42:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94562",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94405",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3104,15 +3104,15 @@ Perhaps the `_eval_` logic should be
 
 ---
 
-archive/issue_comments_094563.json:
+archive/issue_comments_094406.json:
 ```json
 {
     "body": "One should be able to convert to maxima (otherwise, what's the point of introducing symbolic Chebyshev polynomials):\n\n```\nsage: var('n,x')\n(n, x)\nsage: maxima( chebyshev_T(n, cos(x)) )\n...\nTypeError: unable to convert x (=n) to an integer\n```\n",
     "created_at": "2013-12-06T13:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94563",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94406",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3131,15 +3131,15 @@ TypeError: unable to convert x (=n) to an integer
 
 ---
 
-archive/issue_comments_094564.json:
+archive/issue_comments_094407.json:
 ```json
 {
     "body": "Replying to [comment:93 jdemeyer]:\n> This is totally meaningless (this should be a `ValueError`):\n> {{{\n> sage: chebyshev_U(1.5, Mod(8,9))\n> 63.8753125671848\n> }}}\n\nIndeed, but it's not my fault. It appears, that the BuiltinFunction calls the _eval_numpy_ method. E.g.\n\n\n```\nsage: csc(Mod(8,9))\n1.01075621840010\n```\n\nmakes no sense either but works. Maybe we should open a ticket on this?\n\nI have worked out now a new patch, where _eval_ returns None, like expected, but still returns this numerical value. But it should be patched in the Symbolic function classes and not here.",
     "created_at": "2013-12-08T15:13:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94564",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94407",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3166,15 +3166,15 @@ I have worked out now a new patch, where _eval_ returns None, like expected, but
 
 ---
 
-archive/issue_comments_094565.json:
+archive/issue_comments_094408.json:
 ```json
 {
     "body": "Replying to [comment:95 jdemeyer]:\n> One should be able to convert to maxima (otherwise, what's the point of introducing symbolic Chebyshev polynomials):\n> {{{\n> sage: var('n,x')\n> (n, x)\n> sage: maxima( chebyshev_T(n, cos(x)) )\n> ...\n> TypeError: unable to convert x (=n) to an integer\n> }}}\n\nOne of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\nMaxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.",
     "created_at": "2013-12-08T15:20:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94565",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94408",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3195,15 +3195,15 @@ Maxima conform representation, since Sage symbolic capabilities don't relie on M
 
 ---
 
-archive/issue_comments_094566.json:
+archive/issue_comments_094409.json:
 ```json
 {
     "body": "Replying to [comment:97 maldun]:\n> One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\n> Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.\nThis looks like a poor excuse to me, since Maxima can deal with Chebyshev polynomials just fine. The following works:\n\n```\nsage: maxima('chebysheb_t(n,x)')\n```\n\nThe fact that the conversion to Maxima doesn't work is a fault of your patch, don't blame Maxima for that.",
     "created_at": "2013-12-08T17:17:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94566",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94409",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3222,15 +3222,15 @@ The fact that the conversion to Maxima doesn't work is a fault of your patch, do
 
 ---
 
-archive/issue_comments_094567.json:
+archive/issue_comments_094410.json:
 ```json
 {
     "body": "Replying to [comment:96 maldun]:\n> {{{\n> sage: csc(Mod(8,9))\n> 1.01075621840010\n> }}}\n> makes no sense either but works. Maybe we should open a ticket on this?\nI agree, this is a problem.",
     "created_at": "2013-12-08T17:17:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94567",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94410",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3246,15 +3246,15 @@ I agree, this is a problem.
 
 ---
 
-archive/issue_comments_094568.json:
+archive/issue_comments_094411.json:
 ```json
 {
     "body": "Replying to [comment:98 jdemeyer]:\n> Replying to [comment:97 maldun]:\n> > One of the reasons I started this rewriting buisness, was the fact, that Maxima is very limited in respect to Orthogonal polynomials. And if we consider advanced use for symbolic methods like 'Creative Telescoping' it makes perfect sense to allow a non\n> > Maxima conform representation, since Sage symbolic capabilities don't relie on Maxima allone.\n> This looks like a poor excuse to me, since Maxima can deal with Chebyshev polynomials just fine. The following works:\n> {{{\n> sage: maxima('chebysheb_t(n,x)')\n> }}}\n> The fact that the conversion to Maxima doesn't work is a fault of your patch, don't blame Maxima for that.\n\nI'm not blaming maxima, but this never worked on the main branch in the first place:\n\n\n\n```\nmaxima( chebyshev_T(n, cos(x)) )\n...\nTypeError: unable to convert x (=n) to an integer\n```\n\n\nso I did not break anything ...\n\nYou can argue that this is an open improvement, but it's definitely no regression.\nNevertheless it will be corrected in the next patch.",
     "created_at": "2013-12-08T18:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94568",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94411",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3288,15 +3288,15 @@ Nevertheless it will be corrected in the next patch.
 
 ---
 
-archive/issue_comments_094569.json:
+archive/issue_comments_094412.json:
 ```json
 {
     "body": "Bunch of corrections and new doctests",
     "created_at": "2013-12-08T21:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94569",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94412",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3306,15 +3306,15 @@ Bunch of corrections and new doctests
 
 ---
 
-archive/issue_comments_094570.json:
+archive/issue_comments_094413.json:
 ```json
 {
     "body": "Attachment [trac_9707_chebyshev_corrections.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9707_chebyshev_corrections.patch) by maldun created at 2013-12-08 21:06:41\n\nI incorporated now the things you wished for, except things for ducumentation.\nI also added many new doctests.\n\nI also cleaned up the evaluation methods.",
     "created_at": "2013-12-08T21:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94570",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94413",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3329,15 +3329,15 @@ I also cleaned up the evaluation methods.
 
 ---
 
-archive/issue_comments_094571.json:
+archive/issue_comments_094414.json:
 ```json
 {
     "body": "Attachment [trac_9706_chebyshev_corrections.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_corrections.patch) by maldun created at 2013-12-08 22:22:18\n\ncorrected name of file",
     "created_at": "2013-12-08T22:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94571",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94414",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3349,15 +3349,15 @@ corrected name of file
 
 ---
 
-archive/issue_comments_094572.json:
+archive/issue_comments_094415.json:
 ```json
 {
     "body": "Attachment [trac_9706_chebyshev_docu.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_docu.patch) by maldun created at 2013-12-08 22:22:39\n\ndocu changes",
     "created_at": "2013-12-08T22:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94572",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94415",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3369,15 +3369,15 @@ docu changes
 
 ---
 
-archive/issue_comments_094573.json:
+archive/issue_comments_094416.json:
 ```json
 {
     "body": "docu changes",
     "created_at": "2013-12-08T22:22:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94573",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94416",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3387,15 +3387,15 @@ docu changes
 
 ---
 
-archive/issue_comments_094574.json:
+archive/issue_comments_094417.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-12-08T22:24:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94574",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94417",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3405,15 +3405,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094575.json:
+archive/issue_comments_094418.json:
 ```json
 {
     "body": "Attachment [trac_9706_chebyshev_docu.2.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_docu.2.patch) by maldun created at 2013-12-08 22:24:27\n\nadded changes in docu.\n\nStill one bug to fix",
     "created_at": "2013-12-08T22:24:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94575",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94418",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3427,15 +3427,15 @@ Still one bug to fix
 
 ---
 
-archive/issue_comments_094576.json:
+archive/issue_comments_094419.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2013-12-08T22:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94576",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94419",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3445,15 +3445,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_094577.json:
+archive/issue_comments_094420.json:
 ```json
 {
     "body": "fixed bugs with chebyshev_U(-1,...)",
     "created_at": "2013-12-08T22:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94577",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94420",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3463,15 +3463,15 @@ fixed bugs with chebyshev_U(-1,...)
 
 ---
 
-archive/issue_comments_094578.json:
+archive/issue_comments_094421.json:
 ```json
 {
     "body": "Attachment [trac_9706_chebyshev_U-1.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_U-1.patch) by maldun created at 2013-12-08 22:41:58\n\nFinally fixed the chebyshev_U(-1,...) issue",
     "created_at": "2013-12-08T22:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94578",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94421",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3483,15 +3483,15 @@ Finally fixed the chebyshev_U(-1,...) issue
 
 ---
 
-archive/issue_comments_094579.json:
+archive/issue_comments_094422.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-12-08T22:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94579",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94422",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3501,15 +3501,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094580.json:
+archive/issue_comments_094423.json:
 ```json
 {
     "body": "collection of all patches",
     "created_at": "2013-12-08T23:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94580",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94423",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3519,15 +3519,15 @@ collection of all patches
 
 ---
 
-archive/issue_comments_094581.json:
+archive/issue_comments_094424.json:
 ```json
 {
     "body": "Attachment [trac_9706_chebyshev_collection.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_chebyshev_collection.patch) by maldun created at 2013-12-08 23:06:46",
     "created_at": "2013-12-08T23:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94581",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94424",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3537,15 +3537,15 @@ Attachment [trac_9706_chebyshev_collection.patch](tarball://root/attachments/som
 
 ---
 
-archive/issue_comments_094582.json:
+archive/issue_comments_094425.json:
 ```json
 {
     "body": "Working on reviewer patch...",
     "created_at": "2013-12-09T10:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94582",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94425",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3555,33 +3555,15 @@ Working on reviewer patch...
 
 ---
 
-archive/issue_comments_094583.json:
-```json
-{
-    "body": "Changing priority from minor to major.",
-    "created_at": "2013-12-09T14:31:06Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/9706",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94583",
-    "user": "@jdemeyer"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_094584.json:
+archive/issue_comments_094426.json:
 ```json
 {
     "body": "Review patch, mainly simplifies the code: less special cases and use actual arguments instead of `args` and `kwds`. Also add some more doctests.",
     "created_at": "2013-12-09T14:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94584",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94426",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3591,15 +3573,15 @@ Review patch, mainly simplifies the code: less special cases and use actual argu
 
 ---
 
-archive/issue_comments_094585.json:
+archive/issue_comments_094427.json:
 ```json
 {
     "body": "Replying to [comment:109 jdemeyer]:\n> Review patch, mainly simplifies the code: less special cases and use actual arguments instead of `args` and `kwds`. Also add some more doctests.\n\nIs it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n\nSince not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\nIt makes perfect sense for the chebyshev polys though\n\nI know that the base class looks strange from the point of the Chebyshev polys,\nbut there is some reasoning behind this =)",
     "created_at": "2013-12-09T17:09:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94585",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94427",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3618,15 +3600,15 @@ but there is some reasoning behind this =)
 
 ---
 
-archive/issue_comments_094586.json:
+archive/issue_comments_094428.json:
 ```json
 {
     "body": "Attachment [9706_review.patch](tarball://root/attachments/some-uuid/ticket9706/9706_review.patch) by @jdemeyer created at 2013-12-09 18:43:51\n\nReplying to [comment:110 maldun]:\n> Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n> \n> Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\n> It makes perfect sense for the chebyshev polys though\nOk, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.",
     "created_at": "2013-12-09T18:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94586",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94428",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3643,15 +3625,15 @@ Ok, it's always difficult to design an interface for something you don't have an
 
 ---
 
-archive/issue_comments_094587.json:
+archive/issue_comments_094429.json:
 ```json
 {
     "body": "Replying to [comment:111 jdemeyer]:\n> Replying to [comment:110 maldun]:\n> > Is it really a good idea to replace *args and **kwds in the OrthogonalPolynomial class?\n> > \n> > Since not all ortho polys only have 2 arguments, e.g. Gegenbauer polynomials [http://en.wikipedia.org/wiki/Gegenbauer_polynomials](http://en.wikipedia.org/wiki/Gegenbauer_polynomials) which have an additional parameter alpha\n> > It makes perfect sense for the chebyshev polys though\n> Ok, it's always difficult to design an interface for something you don't have an implementation for, but I made the change such that the Gegenbauer polynomials should (in theory) work.\n\nMaybe you should have a short look ino this patch: [http://trac.sagemath.org/attachment/ticket/9706/trac_9706_orthogonal_polys.patch](http://trac.sagemath.org/attachment/ticket/9706/trac_9706_orthogonal_polys.patch)\nit contains already prototypes of the most ortho polys.\n\nI have some remarks concerning your patch:\n\n\n\n```\nsage: chebyshev_T(n,Mod(0,8))\n1/2*(-1)^(1/2*n)*((-1)^n + 1)\n```\n\nbut this makes no sense since 1/2 is not defined in Mod(8). This was the reason for the 0 in CC check at this point.\n\nYou evaluate numerical expressions for n in NN with recursion. this is favorable for chebyshev polynomials, but not for all ortho polys you can evaluate numeric values in O(log n). You have already problems with the legendre polynomials, since the coefficients depend on n, and the recursion is not stable. Thus other evaluation methods should be used. Thats the reason why _evalf_ with mpmath should come first.\nIn case of chebyshev I catched this with an explicit call of the recursion in _evalf_.\n\nThe _old_maxima_ method is used for some oddballs, where the only useful implementation is in maxima, and for some special cases. So removing is probably not a good idea.\n\nThe reason why negative values are checked in special values, is that in later versions, or for other polys non integral negative values can be treated analogously, as in the case of their algebraic counterpart. E.g negative legendre polynomials would return associated legendre functions, but have no algebraic sense.\n\nAnother reason to allow the special values check for non symbolic input, is that e.g. (-1)^100000000 is evaluated faster, than applying the recursion, or other special points.\nI use this feature sometimes to evaluate certain polynomials at the end points of an intervall e.g. [-1,1]\n\n**Question:** Since the Legendre Polynomials already conflicts with the design in the ortho poly class, should we add legendre_P too, to get a better overview, what actually should be kept in the orthogonal poly class? then we could also add more reasonable doctests, to understand the evaluation methods better. \n\nI have to admit, that about 3 years have passed since I wrote the initial version, and I'm not remembering why I took some design desicisions back then, but slowly my memories are coming back.",
     "created_at": "2013-12-09T20:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94587",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94429",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3695,15 +3677,15 @@ I have to admit, that about 3 years have passed since I wrote the initial versio
 
 ---
 
-archive/issue_comments_094588.json:
+archive/issue_comments_094430.json:
 ```json
 {
     "body": "Replying to [comment:112 maldun]:\n> **Question:** Since the Legendre Polynomials already conflicts with the design in the ortho poly class, should we add legendre_P too, to get a better overview, what actually should be kept in the orthogonal poly class?\nAbsolutely not. The patch is already big enough now.",
     "created_at": "2013-12-09T20:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94588",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94430",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3715,15 +3697,15 @@ Absolutely not. The patch is already big enough now.
 
 ---
 
-archive/issue_comments_094589.json:
+archive/issue_comments_094431.json:
 ```json
 {
     "body": "If the various orthogonal polynomials are so different, then perhaps the simple answer is that we shouldn't try to force a generic `_eval_` which will work for all orthogonal polynomials.\n\nWe could have a common superclass for both kinds of Chebyshev polynomials and implement `_eval_()` there. For Legendre polynomials, we could implement a different `_eval_()`. That would be a much simpler solution than making an overly complicated generic `_eval_()`.",
     "created_at": "2013-12-09T20:30:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94589",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94431",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3735,15 +3717,15 @@ We could have a common superclass for both kinds of Chebyshev polynomials and im
 
 ---
 
-archive/issue_comments_094590.json:
+archive/issue_comments_094432.json:
 ```json
 {
     "body": "Replying to [comment:114 jdemeyer]:\n> If the various orthogonal polynomials are so different, then perhaps the simple answer is that we shouldn't try to force a generic `_eval_` which will work for all orthogonal polynomials.\n> \n> We could have a common superclass for both kinds of Chebyshev polynomials and implement `_eval_()` there. For Legendre polynomials, we could implement a different `_eval_()`. That would be a much simpler solution than making an overly complicated generic `_eval_()`.\n\nI think this would be a good course of action, and that we should put other orthogonal polynomials in other tickets. However, I think it might be worthwhile to at least diagram/pseudocode the overall class structure we want at the end of the day. Currently I believe the proposal is something like:\n\n```\n* Orthogonal polynomials\n\n  * Chebyshev polynomials\n    - general _evel_(x, n) method\n\n    * Chebyshev T\n      - specific code (ex. _evalf_() method), recursions, ...\n    * Chebyshev U\n      - specific code (ex. _evalf_() method), recursions, ...\n\n  * Legendre polynomials\n    - general _evel_(x, n) method\n\n    * Legendre P\n    * Legendre Q\n\n  * Gegenbauer polynomials\n    - an _evel_(x, n, alpha) method\n```\n\nHopefully my notation is clear",
     "created_at": "2013-12-09T20:47:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94590",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94432",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -3781,15 +3763,15 @@ Hopefully my notation is clear
 
 ---
 
-archive/issue_comments_094591.json:
+archive/issue_comments_094433.json:
 ```json
 {
     "body": "Something like that looks right indeed. maldun: what do you think?\n\nPerhaps the only code so far that could be truly generic is the `__call__` method.",
     "created_at": "2013-12-09T21:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94591",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94433",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3801,15 +3783,15 @@ Perhaps the only code so far that could be truly generic is the `__call__` metho
 
 ---
 
-archive/issue_comments_094592.json:
+archive/issue_comments_094434.json:
 ```json
 {
     "body": "Something like that looks right indeed. maldun: what do you think?\n\nPerhaps the only code so far that could be truly generic is the `__call__` method.",
     "created_at": "2013-12-09T21:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94592",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94434",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3821,15 +3803,15 @@ Perhaps the only code so far that could be truly generic is the `__call__` metho
 
 ---
 
-archive/issue_comments_094593.json:
+archive/issue_comments_094435.json:
 ```json
 {
     "body": "after some thinking, I guess you are right. A General OrthogonalPolynomial is sophisticated, but it needs too much tweaking, and too much exception cathing, which makes the code unsafe.\n\n`@` __call__ : I'm not even sure about that, since we check for negative integers, but some ortho polys get only an analytical expression with non negative integers, and no algebraic meaning.\n\nI propose the following\n\n* OrthogonalPolynomial: Naming Conventions and __init__ method\n* ChebyshevPolynomial: base Class for Cheby_t and Cheby_u (Current Orthogonal Polynomials)\n* LegendrePolynomials\n.... etc.",
     "created_at": "2013-12-09T21:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94593",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94435",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3848,15 +3830,15 @@ I propose the following
 
 ---
 
-archive/issue_comments_094594.json:
+archive/issue_comments_094436.json:
 ```json
 {
     "body": "Attachment [trac_9706_new_base_classes.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706_new_base_classes.patch) by maldun created at 2013-12-09 22:02:25\n\nproposed new structure",
     "created_at": "2013-12-09T22:02:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94594",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94436",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3868,15 +3850,15 @@ proposed new structure
 
 ---
 
-archive/issue_comments_094595.json:
+archive/issue_comments_094437.json:
 ```json
 {
     "body": "I added an intermediate class between OrthogonalPolynomials and the Chebyshev polynomals namely ChebyshevPolynomial.\n\nAny comments on that?",
     "created_at": "2013-12-11T06:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94595",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94437",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3888,15 +3870,15 @@ Any comments on that?
 
 ---
 
-archive/issue_comments_094596.json:
+archive/issue_comments_094438.json:
 ```json
 {
     "body": "Sorry for lagging behind on reviewing this, but I think the class structure is good. I'll write a small review patch tomorrow afternoon (in the US Pacific timezone) on a few tweaks (and pet peeves of mine).",
     "created_at": "2013-12-11T06:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94596",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94438",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -3906,15 +3888,15 @@ Sorry for lagging behind on reviewing this, but I think the class structure is g
 
 ---
 
-archive/issue_comments_094597.json:
+archive/issue_comments_094439.json:
 ```json
 {
     "body": "I am currently working on finishing the Sage 5.13 release, so I don't feel like reviewing this now.",
     "created_at": "2013-12-11T07:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94597",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94439",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3924,15 +3906,15 @@ I am currently working on finishing the Sage 5.13 release, so I don't feel like 
 
 ---
 
-archive/issue_comments_094598.json:
+archive/issue_comments_094440.json:
 ```json
 {
     "body": "Okay, I've made the tweaks I wanted to. So it's a positive review from me, and someone will just need to review my changes.",
     "created_at": "2013-12-11T22:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94598",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94440",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -3942,15 +3924,15 @@ Okay, I've made the tweaks I wanted to. So it's a positive review from me, and s
 
 ---
 
-archive/issue_comments_094599.json:
+archive/issue_comments_094441.json:
 ```json
 {
     "body": "Okay thanks. I set it on positive review then.\nAnd good idea to replace the old % format string operator, since it will be deprecated in Python 3 (although I will miss it ...)",
     "created_at": "2013-12-12T19:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94599",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94441",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3961,15 +3943,15 @@ And good idea to replace the old % format string operator, since it will be depr
 
 ---
 
-archive/issue_comments_094600.json:
+archive/issue_comments_094442.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-12-12T19:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94600",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94442",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -3979,15 +3961,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094601.json:
+archive/issue_comments_094443.json:
 ```json
 {
     "body": "Replying to [comment:123 maldun]:\n> And good idea to replace the old % format string operator, since it will be deprecated in Python 3\n\nThis has been a rumour that didn't pan out. I don't think a time line has been set towards actual deprecation of %. The possibility of deprecation is mentioned in \nhttp://www.python.org/dev/peps/pep-3101/\nbut it's careful to argue that deprecation is not required at all. At some point it was planned to deprecate % in 3.0 and remove it in 3.1 but that hasn't happened. I suspect it's so ingrained by now that deprecation and removal is impractical.",
     "created_at": "2013-12-12T21:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94601",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94443",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -4002,15 +3984,15 @@ but it's careful to argue that deprecation is not required at all. At some point
 
 ---
 
-archive/issue_comments_094602.json:
+archive/issue_comments_094444.json:
 ```json
 {
     "body": "Travis: are you sure you applied the dependency #15422? I am suspicious because you added\n\n```diff\n-            (2^7 + O(2^8))*t^5 + (O(2^8))*t^4 + (2^6 + O(2^8))*t^3 + (O(2^8))*t^2 + (1 + 2^6 + O(2^8))*t + (O(2^8))\n+            (2^7 + O(2^8))*t^5 + (2^6 + O(2^8))*t^3 + (1 + 2^6 + O(2^8))*t\n```\n\nwhich seems to be a doctest failure.",
     "created_at": "2013-12-16T09:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94602",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94444",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -4027,15 +4009,15 @@ which seems to be a doctest failure.
 
 ---
 
-archive/issue_comments_094603.json:
+archive/issue_comments_094445.json:
 ```json
 {
     "body": "I also don't agree with all changes of\n\n```\nif condition:\n    return A\nelse:\n    return B\n```\n\nto\n\n```\nif condition:\n    return A\nreturn B\n```\n\nbut I guess that's one of your pet peeves.\n\nI personally prefer\n\n```\nif condition:\n    return A\nelse:\n    return B\n```\n\nif there are clearly two cases and the code might as well have been written as\n\n```\nif not condition:\n    return B\nelse:\n    return A\n```\n\n\nSo I personally would keep the `if/else` structure for the `if n % 2 == 0` test. And for the `n >= 0` test, I would say that\n\n```\nif n < 0:\n    return B\nreturn A\n```\n\nwould be a lot better that what you did:\n\n```\nif n >= 0:\n    return A\nreturn B\n```\n\nThe first feels much better to me because you put the normal case outside the `if` block and the special cases `if n == 0` and `if n < 0` would be inside `if`s.\n\n(Of course these are all personal preferences, I'm not asking you to change this, maybe just think about it.)",
     "created_at": "2013-12-16T09:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94603",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94445",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -4101,15 +4083,15 @@ The first feels much better to me because you put the normal case outside the `i
 
 ---
 
-archive/issue_comments_094604.json:
+archive/issue_comments_094446.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_info.",
     "created_at": "2013-12-16T11:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94604",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94446",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -4119,15 +4101,15 @@ Changing status from positive_review to needs_info.
 
 ---
 
-archive/issue_comments_094605.json:
+archive/issue_comments_094447.json:
 ```json
 {
     "body": "Attachment [trac_9706-review-ts.patch](tarball://root/attachments/some-uuid/ticket9706/trac_9706-review-ts.patch) by @tscrim created at 2013-12-16 15:07:19",
     "created_at": "2013-12-16T15:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94605",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94447",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -4137,15 +4119,15 @@ Attachment [trac_9706-review-ts.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_094606.json:
+archive/issue_comments_094448.json:
 ```json
 {
     "body": "I had missed the #15422 dependency. Fixed.\n\nAs for the `if/else`, I've seen (sometimes long) `else` blocks that constitute the normal cases and I try to be uniform about it. Plus with the extra indents, I sometimes have difficulties knowing what the correct indent level should be (although not in this case). I do agree that the cases should be swapped -- I had only removed the `else:`. I added back in the `else` blocks for the `if n % 2 == 0`.",
     "created_at": "2013-12-16T15:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94606",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94448",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -4157,15 +4139,15 @@ As for the `if/else`, I've seen (sometimes long) `else` blocks that constitute t
 
 ---
 
-archive/issue_comments_094607.json:
+archive/issue_comments_094449.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2013-12-16T15:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94607",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94449",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -4175,15 +4157,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_094608.json:
+archive/issue_comments_094450.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-12-16T15:46:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94608",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94450",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -4193,15 +4175,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094609.json:
+archive/issue_comments_094451.json:
 ```json
 {
     "body": "First stage done. Next step: Legendre Polys.\n\nI will keep up the new design + incorporate more doc tests next time. I guess it is important to look at the algebraic aspects too concerning doc tests.\n\nThank all reviewers for their hard work and the good input!",
     "created_at": "2013-12-17T12:01:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94609",
-    "user": "maldun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94451",
+    "user": "https://trac.sagemath.org/admin/accounts/users/maldun"
 }
 ```
 
@@ -4215,15 +4197,15 @@ Thank all reviewers for their hard work and the good input!
 
 ---
 
-archive/issue_comments_094610.json:
+archive/issue_comments_094452.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2013-12-21T14:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94610",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94452",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -4233,15 +4215,15 @@ New commits:
 
 ---
 
-archive/issue_comments_094611.json:
+archive/issue_comments_094453.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2013-12-21T18:43:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9706",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94611",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9706#issuecomment-94453",
+    "user": "https://github.com/vbraun"
 }
 ```
 

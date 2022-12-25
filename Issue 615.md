@@ -6,7 +6,7 @@ archive/issues_000615.json:
     "body": "Assignee: @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/615\n\n",
     "created_at": "2007-09-07T05:14:57Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000615.json:
     "title": "doctest errors in piecewise.py due to calling a constant function.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/615",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/615
 
 ---
 
-archive/issue_comments_003155.json:
+archive/issue_comments_003142.json:
 ```json
 {
     "body": "Attachment [615.patch](tarball://root/attachments/some-uuid/ticket615/615.patch) by @mwhansen created at 2007-09-07 05:18:53",
     "created_at": "2007-09-07T05:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3155",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3142",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [615.patch](tarball://root/attachments/some-uuid/ticket615/615.patch)
 
 ---
 
-archive/issue_comments_003156.json:
+archive/issue_comments_003143.json:
 ```json
 {
     "body": "backed out -- this was a mistake.",
     "created_at": "2007-09-07T07:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3156",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3143",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +65,15 @@ backed out -- this was a mistake.
 
 ---
 
-archive/issue_comments_003157.json:
+archive/issue_comments_003144.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2007-09-07T07:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3157",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/615#issuecomment-3144",
+    "user": "https://github.com/williamstein"
 }
 ```
 

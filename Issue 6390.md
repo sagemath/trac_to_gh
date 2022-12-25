@@ -6,15 +6,13 @@ archive/issues_006390.json:
     "body": "Assignee: @williamstein\n\nCC:  @robertwb @rlmill\n\nKeywords: elliptic curve logarithm\n\nAs of 4.0.2 we only have elliptic logs for curves defined over the reals (including curves over number fields with a real embedding).  We also need the complex case, which can be implemented using the complex AGM.  I expect to be adding this during June/July 2009.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6390\n\n",
     "created_at": "2009-06-23T19:59:32Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Implement elliptic logarithms (complex case)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6390",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6390
 
 ---
 
-archive/issue_comments_051165.json:
+archive/issue_comments_051068.json:
 ```json
 {
     "body": "Changing component from number theory to elliptic curves.",
     "created_at": "2009-07-21T08:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51165",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51068",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing component from number theory to elliptic curves.
 
 ---
 
-archive/issue_comments_051166.json:
+archive/issue_comments_051069.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-21T08:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51166",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51069",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -69,15 +67,15 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
-archive/issue_comments_051167.json:
+archive/issue_comments_051070.json:
 ```json
 {
     "body": "Update 2009-07-21: I still have this only half done, the gap being proof of a theorem rather than any coding issue, and other responsibilities mean that it is likely to be August rather than July: sorry.",
     "created_at": "2009-07-21T08:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51167",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51070",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -87,15 +85,15 @@ Update 2009-07-21: I still have this only half done, the gap being proof of a th
 
 ---
 
-archive/issue_comments_051168.json:
+archive/issue_comments_051071.json:
 ```json
 {
     "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:11:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51168",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51071",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -105,15 +103,15 @@ Remove assignee @loefflerd.
 
 ---
 
-archive/issue_comments_051169.json:
+archive/issue_comments_051072.json:
 ```json
 {
     "body": "Replying to [comment:2 cremona]:\n> Update 2009-07-21: I still have this only half done, the gap being proof of a theorem rather than any coding issue, and other responsibilities mean that it is likely to be August rather than July: sorry.\n\nMarch 2010:  it was clearly a mistake to put in a time estimate.  We now have a preprint explaining all the relevant theory:\n\nJ. E. Cremona and T. Thongjunthug, \"On computing complex elliptic logarithms\" (provisional title) \n\nwhich I am now going to implement i nSage (my coauthor has already implemented it in Magma).",
     "created_at": "2010-03-16T14:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51169",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51072",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -130,15 +128,15 @@ which I am now going to implement i nSage (my coauthor has already implemented i
 
 ---
 
-archive/issue_comments_051170.json:
+archive/issue_comments_051073.json:
 ```json
 {
     "body": "Applies to 4.3.4",
     "created_at": "2010-03-20T20:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51170",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51073",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -148,15 +146,15 @@ Applies to 4.3.4
 
 ---
 
-archive/issue_comments_051171.json:
+archive/issue_comments_051074.json:
 ```json
 {
     "body": "Attachment [trac_6390-celog.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-celog.patch) by @JohnCremona created at 2010-03-20 20:55:27\n\nThe patch implements complex elliptic logs as promised, and makes a few minor improvements to the periods & elliptic log code generally.\n\nThe new code works fine for real embeddings too, and is almost as fast:  for the database curves up to conductor 1000 (and with the optional database installed so that all generators are pre-installed) the new code takes 183 seconds to find all logs of all generators (for the optimal curves) while the old code takes 154s.  The new code is also rather simpler.  I have left in the old code.  Reviewers wishing to test this can do so by switching lines 1243 and 1244 of period_lattice.py: doctests almost all succeed, with a tiny amount of fuzz in some elliptic exponential computations.\n\nI am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.",
     "created_at": "2010-03-20T20:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51171",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51074",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -172,15 +170,15 @@ I am CC'ing rlm since after installing the optional database of curves (and gene
 
 ---
 
-archive/issue_comments_051172.json:
+archive/issue_comments_051075.json:
 ```json
 {
     "body": "Set assignee to @JohnCremona.",
     "created_at": "2010-03-20T20:55:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51172",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51075",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -190,15 +188,15 @@ Set assignee to @JohnCremona.
 
 ---
 
-archive/issue_comments_051173.json:
+archive/issue_comments_051076.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-20T20:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51173",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51076",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -208,15 +206,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_051174.json:
+archive/issue_comments_051077.json:
 ```json
 {
     "body": "Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390-doc.patch) by @rlmill created at 2010-03-23 15:41:30",
     "created_at": "2010-03-23T15:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51174",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51077",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -226,15 +224,15 @@ Attachment [trac_6390-doc.patch](tarball://root/attachments/some-uuid/ticket6390
 
 ---
 
-archive/issue_comments_051175.json:
+archive/issue_comments_051078.json:
 ```json
 {
     "body": "Replying to [comment:5 cremona]:\n> I am CC'ing rlm since after installing the optional database of curves (and generators) and testing all of sage/schemes/elliptic_curves, I found that there were some failures in heegner.py, mainly caused by E.gens() sometimes now producing different generators.  I fixed almost all of these (since I think that as a matter of principle these doctests should not be dependent on the database not being installed!) but there are two I cannot fix (lines 1409 and 1415 of heegner.py) and I am hoping that Robert M will be able to.\n\nThe following change fixes this, but I can't vouch for its advisability.\n\n```\n--- a/sage/schemes/elliptic_curves/heegner.py\tSat Mar 20 15:52:55 2010 +0000\n+++ b/sage/schemes/elliptic_curves/heegner.py\tTue Mar 23 08:39:11 2010 -0700\n@@ -4165,7 +4165,7 @@\n         # etc\" mentioned in Watkins' article... which involves local\n         # heights.\n         E = self.curve()  # over Q\n-        v = sum([list(n*w) for w in E.gens()] + [list(w) for w in E.torsion_points()], [])\n+        v = sum([list(n*w) for w in E.gens(use_database=False)] + [list(w) for w in E.torsion_points()], [])\n         # note -- we do not claim to prove anything, so making up a factor of 100 is fine.\n         max_denominator = 100*max([z.denominator() for z in v])\n         try:\n```\n\n\nWhen testing on my laptop, I came across another doctest error, and I've included a patch for it.",
     "created_at": "2010-03-23T15:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51175",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51078",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -264,15 +262,15 @@ When testing on my laptop, I came across another doctest error, and I've include
 
 ---
 
-archive/issue_comments_051176.json:
+archive/issue_comments_051079.json:
 ```json
 {
     "body": "Thanks, Robert.  With luck soem else will referee the main part of the patch, but I'm in no great hurry as I'll be on holiday for a week from tomorrow!",
     "created_at": "2010-03-23T16:29:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51176",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51079",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -282,15 +280,15 @@ Thanks, Robert.  With luck soem else will referee the main part of the patch, bu
 
 ---
 
-archive/issue_comments_051177.json:
+archive/issue_comments_051080.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-03-24T11:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51177",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51080",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -300,15 +298,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_051178.json:
+archive/issue_comments_051081.json:
 ```json
 {
     "body": "I wanted to review it, then I noticed from a problem in the documentation that the first patch has many tabulators in it. Unfortunately, I can not just replace all tabs by 4 spaces in the patch as then it makes a mess out of the code. So I guess that John can do the replacement faster than me.\n\n(Most editors allow the setting that all tabulators are replaces by 4 spaces automatically, this would avoid these problems automatically.)\n\nIt is a shame that the tabs are not visible here.",
     "created_at": "2010-03-24T11:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51178",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51081",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -322,15 +320,15 @@ It is a shame that the tabs are not visible here.
 
 ---
 
-archive/issue_comments_051179.json:
+archive/issue_comments_051082.json:
 ```json
 {
     "body": "Attachment [trac_6390.patch](tarball://root/attachments/some-uuid/ticket6390/trac_6390.patch) by @categorie created at 2010-03-28 19:05:22\n\nexported against 4.3.4, replaces the previous patches",
     "created_at": "2010-03-28T19:05:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51179",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51082",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -342,15 +340,15 @@ exported against 4.3.4, replaces the previous patches
 
 ---
 
-archive/issue_comments_051180.json:
+archive/issue_comments_051083.json:
 ```json
 {
     "body": "I uploaded a new patch that incorporates the previous two changes, switches the tabs to spaces and also solves the two remaining doctest problems in heegner.py (using random and only testing the squares, admittedly ugly), and it fixes a problem in the documentation (a missing ::).\n\nI start testing now. Unless the author claims that I made an error in the indentation of the new patch (when removing the tabs), I will give it a positive review after the test.",
     "created_at": "2010-03-28T19:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51180",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51083",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -362,15 +360,15 @@ I start testing now. Unless the author claims that I made an error in the indent
 
 ---
 
-archive/issue_comments_051181.json:
+archive/issue_comments_051084.json:
 ```json
 {
     "body": "All tests passed. I wish to give a positive review, but the button for it has disappeared ??",
     "created_at": "2010-03-28T22:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51181",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51084",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -380,15 +378,15 @@ All tests passed. I wish to give a positive review, but the button for it has di
 
 ---
 
-archive/issue_comments_051182.json:
+archive/issue_comments_051085.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-28T22:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51182",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51085",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -398,15 +396,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_051183.json:
+archive/issue_comments_051086.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-28T22:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51183",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51086",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -416,15 +414,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_051184.json:
+archive/issue_comments_051087.json:
 ```json
 {
     "body": "Here we go !!!",
     "created_at": "2010-03-28T22:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51184",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51087",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -434,15 +432,15 @@ Here we go !!!
 
 ---
 
-archive/issue_comments_051185.json:
+archive/issue_comments_051088.json:
 ```json
 {
     "body": "Many thanks, Chris, and sorry for not responding earlier but I was on holiday for a few days.\n\nSorry too for the tab/space issue.  I just don't see to be able to set up emacs correctly on all the machines I use... but I'll try not to do it again.",
     "created_at": "2010-03-30T19:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51185",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51088",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -454,15 +452,15 @@ Sorry too for the tab/space issue.  I just don't see to be able to set up emacs 
 
 ---
 
-archive/issue_comments_051186.json:
+archive/issue_comments_051089.json:
 ```json
 {
     "body": "Merged trac_6390.patch in 4.4.alpha0.",
     "created_at": "2010-04-15T05:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51186",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51089",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -472,15 +470,15 @@ Merged trac_6390.patch in 4.4.alpha0.
 
 ---
 
-archive/issue_comments_051187.json:
+archive/issue_comments_051090.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-15T05:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51187",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51090",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -490,15 +488,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_051188.json:
+archive/issue_comments_051091.json:
 ```json
 {
     "body": "When #11761 gets approved, we can move using `# distutils: language = c++` which is understood by Cython and can be used to specify any Extension options.",
     "created_at": "2011-09-01T17:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51188",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51091",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -508,15 +506,15 @@ When #11761 gets approved, we can move using `# distutils: language = c++` which
 
 ---
 
-archive/issue_comments_051189.json:
+archive/issue_comments_051092.json:
 ```json
 {
     "body": "Oops, forgot the link: http://wiki.cython.org/enhancements/distutils_preprocessing",
     "created_at": "2011-09-01T17:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51189",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51092",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -526,15 +524,15 @@ Oops, forgot the link: http://wiki.cython.org/enhancements/distutils_preprocessi
 
 ---
 
-archive/issue_comments_051190.json:
+archive/issue_comments_051093.json:
 ```json
 {
     "body": "(Argh--too many trac tabs open. Wrong ticket. Think before hitting submit...)",
     "created_at": "2011-09-01T17:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6390",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51190",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6390#issuecomment-51093",
+    "user": "https://github.com/robertwb"
 }
 ```
 

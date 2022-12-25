@@ -6,15 +6,13 @@ archive/issues_003955.json:
     "body": "Assignee: tbd\n\n\n```\n\n\nOn Tue, Aug 26, 2008 at 2:07 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear William,\n>\n> On Aug 25, 6:48 pm, \"William Stein\" <wst...@gmail.com> wrote:\n>\n>> If you call _fast_float_ as illustrated below on your functions, find_* will\n>> work, and also be much much faster:\n>>\n>> sage: find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-7.7037197775489434e-34, -2.77555756156e-17)\n>> sage: find_minimum_on_interval((-x^2)._fast_float_(x),-1,1)\n>> (-0.99999992595132459, -0.999999962976)\n>>\n>> find_* doesn't do this already since (1) _fast_float_ was written\n>> after find_*, and (2) nobody has had the time to change find_*\n>> to use _fast_float_.\n>\n> That's amazing, thank you! I didn't find any information about the\n> _fast_float_. Can it be used for other purposes, too?\n\nYes.  It takes any polynomial or symbolic expression and turns\nit into a very fast callable function that has input and output floats.\nIt should get used automatically by functions like find_min* but\nwe haven't pushed this through enough yet. \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3955\n\n",
     "created_at": "2008-08-26T09:12:29Z",
     "labels": [
-        "algebra",
-        "major",
-        "enhancement"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.6",
     "title": "make find_minimum_on_interval use _fast_float_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3955",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -59,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3955
 
 ---
 
-archive/issue_comments_028388.json:
+archive/issue_comments_028330.json:
 ```json
 {
     "body": "Changing component from algebra to calculus.",
     "created_at": "2008-08-26T09:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28388",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28330",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,15 +75,15 @@ Changing component from algebra to calculus.
 
 ---
 
-archive/issue_comments_028389.json:
+archive/issue_comments_028331.json:
 ```json
 {
     "body": "Changing assignee from tbd to @burcin.",
     "created_at": "2008-08-26T09:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28389",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28331",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -95,15 +93,15 @@ Changing assignee from tbd to @burcin.
 
 ---
 
-archive/issue_comments_028390.json:
+archive/issue_comments_028332.json:
 ```json
 {
     "body": "fast_float doesn't look like a win here in 3.1.2.alpha2, at least not in the cases I tried\n\n\n```\nsage: timeit('find_minimum_on_interval(x*sin(x)^2,3,3.4)')\n25 loops, best of 3: 24.5 ms per loop\nsage: sage: timeit('find_minimum_on_interval((x*sin(x)^2)._fast_float_(x),3,3.4)')\n5 loops, best of 3: 109 ms per loop\n\n# not sure what goes wrong here\nsage: find_maximum_on_interval(-x^2,-1,1)\nTraceback (most recent call last):\n...\nTypeError: cannot coerce type '<class 'sage.calculus.equations.SymbolicEquation'>' into a SymbolicExpression.\n\nsage: timeit('(-x^2).find_maximum_on_interval(-1,1)')\n5 loops, best of 3: 22.4 ms per loop\nsage: timeit('find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)')\n5 loops, best of 3: 61.5 ms per loop\n```\n",
     "created_at": "2008-09-02T02:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28390",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28332",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -133,15 +131,15 @@ sage: timeit('find_maximum_on_interval((-x^2)._fast_float_(x),-1,1)')
 
 ---
 
-archive/issue_comments_028391.json:
+archive/issue_comments_028333.json:
 ```json
 {
     "body": "I guess what is going on is that the time to compile the function to fast_float form swamps the time to find the minimum, at least in these cases.\n\n\n```\nsage: timeit('f = (-x^2)._fast_float_()')\n5 loops, best of 3: 82.6 ms per loop\nsage: timeit('find_maximum_on_interval(f,-1,1)')\n625 loops, best of 3: 690 \u00b5s per loop\n```\n",
     "created_at": "2008-09-02T02:37:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28391",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28333",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -160,15 +158,15 @@ sage: timeit('find_maximum_on_interval(f,-1,1)')
 
 ---
 
-archive/issue_comments_028392.json:
+archive/issue_comments_028334.json:
 ```json
 {
     "body": "I notice that fast_float was sneaked into find_root in the first patch at #2703, which was nominally a doctest coverage patch.  It doesn't look like any kind of benchmarking was done there.",
     "created_at": "2008-09-02T03:07:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28392",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28334",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -178,15 +176,15 @@ I notice that fast_float was sneaked into find_root in the first patch at #2703,
 
 ---
 
-archive/issue_comments_028393.json:
+archive/issue_comments_028335.json:
 ```json
 {
     "body": "Oops, it was #2073.",
     "created_at": "2008-09-02T03:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28393",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28335",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -196,15 +194,15 @@ Oops, it was #2073.
 
 ---
 
-archive/issue_comments_028394.json:
+archive/issue_comments_028336.json:
 ```json
 {
     "body": "See #3622 for a discussion of timings with fast_float.  Based on that discussion, this probably is worth doing.",
     "created_at": "2008-09-02T06:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28394",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28336",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -214,15 +212,15 @@ See #3622 for a discussion of timings with fast_float.  Based on that discussion
 
 ---
 
-archive/issue_comments_028395.json:
+archive/issue_comments_028337.json:
 ```json
 {
     "body": "It seems that both forms of find_minimum_on_interval use fast_float now (sage/symbolic/expression.pyx:8398 and sage/numerical/optimize.py:181) but only one form of find_maximum_on_interval does, i.e. the f.find_maximum_on_interval(a,b) (sage/symbolic/expression.pyx:8339). find_maximum_on_interval(f, a, b) does not.\n\nI'm testing a patch for this and will be uploading it in a short while.",
     "created_at": "2012-06-09T09:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28395",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28337",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -234,15 +232,15 @@ I'm testing a patch for this and will be uploading it in a short while.
 
 ---
 
-archive/issue_comments_028396.json:
+archive/issue_comments_028338.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-06-09T10:16:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28396",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28338",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -252,15 +250,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_028397.json:
+archive/issue_comments_028339.json:
 ```json
 {
     "body": "I'll be happy to review this if it is rebased on top of #2607.\n\nIt would be great also if you approve my last changes on that ticket which were implementing your suggestion of dropping \"_on_interval\".",
     "created_at": "2012-06-10T07:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28397",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28339",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -272,15 +270,15 @@ It would be great also if you approve my last changes on that ticket which were 
 
 ---
 
-archive/issue_comments_028398.json:
+archive/issue_comments_028340.json:
 ```json
 {
     "body": "Due to number of inevitable changes in #2607 and fact, that's it is ready for review with reviewers comments fixed, I already rebased this patch on top of it and added it to dependencies. This patch also looks cleaner on top of it.",
     "created_at": "2012-06-24T10:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28398",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28340",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -290,15 +288,15 @@ Due to number of inevitable changes in #2607 and fact, that's it is ready for re
 
 ---
 
-archive/issue_comments_028399.json:
+archive/issue_comments_028341.json:
 ```json
 {
     "body": "Please fill in your real name as Author.",
     "created_at": "2012-07-27T20:43:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28399",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28341",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -308,15 +306,15 @@ Please fill in your real name as Author.
 
 ---
 
-archive/issue_comments_028400.json:
+archive/issue_comments_028342.json:
 ```json
 {
     "body": "Ah, forgot about that. Thanks for reminder, done now.",
     "created_at": "2012-07-27T20:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28400",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28342",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -326,15 +324,15 @@ Ah, forgot about that. Thanks for reminder, done now.
 
 ---
 
-archive/issue_comments_028401.json:
+archive/issue_comments_028343.json:
 ```json
 {
     "body": "Attachment [trac3955-find_local_maximum-ff.2.patch](tarball://root/attachments/some-uuid/ticket3955/trac3955-find_local_maximum-ff.2.patch) by @tkluck created at 2012-12-23 20:59:24\n\nrebased on v5.4",
     "created_at": "2012-12-23T20:59:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28401",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28343",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -346,15 +344,15 @@ rebased on v5.4
 
 ---
 
-archive/issue_comments_028402.json:
+archive/issue_comments_028344.json:
 ```json
 {
     "body": "This should just be applied. I rebased it on 5.4.\n\nSetting to positive-review.",
     "created_at": "2012-12-23T21:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28402",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28344",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -366,15 +364,15 @@ Setting to positive-review.
 
 ---
 
-archive/issue_comments_028403.json:
+archive/issue_comments_028345.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-12-23T21:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28403",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28345",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -384,15 +382,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_028404.json:
+archive/issue_comments_028346.json:
 ```json
 {
     "body": "Why the milestone change?",
     "created_at": "2012-12-23T21:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28404",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28346",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -402,15 +400,15 @@ Why the milestone change?
 
 ---
 
-archive/issue_comments_028405.json:
+archive/issue_comments_028347.json:
 ```json
 {
     "body": "Is anyone working with very large numbers, or is there any doctest which checks for very large numbers? Because this patch might affect the result. See #13559.\n\nPatchbot: apply trac3955-find_local_maximum-ff.2.patch",
     "created_at": "2012-12-24T07:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28405",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28347",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -422,15 +420,15 @@ Patchbot: apply trac3955-find_local_maximum-ff.2.patch
 
 ---
 
-archive/issue_comments_028406.json:
+archive/issue_comments_028348.json:
 ```json
 {
     "body": "jdemeyer: sorry about the milestone change, I didn't realize 5.5 was already in the RC stage.\n\nppurka: if I understand it correctly, all the other `find_{min,max}imum_on_interval` functions have already been changed to use `fast_float`. So already from a consistency point of view, this one should be, too.\n\nOf course, you still have a point. Especially since before, you could always manually pass a `fast_float` function if you needed the speedup, but now you cannot disable that feature if you need the precision.\n\nMaybe there should be something like a safe version of fast float, that checks its results for `NaN` or `Inf` and if so, redoes the calculation with the original expression.\n\nI think that this patch should still be applied for consistency. Maybe such a safe version of `fast_float` could be the solution to #13559?",
     "created_at": "2012-12-24T10:18:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28406",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28348",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -448,15 +446,15 @@ I think that this patch should still be applied for consistency. Maybe such a sa
 
 ---
 
-archive/issue_comments_028407.json:
+archive/issue_comments_028349.json:
 ```json
 {
     "body": "Ok. If it is improving consistency, then let it be. The bug in #13559 is less about safety and more about allowing `fast_float` to work with higher precision. `@`kcrisman there asks whether it is possible to make `fast_float` not just behave like python float, but be able to handle even larger numbers.",
     "created_at": "2012-12-24T17:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28407",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28349",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -466,15 +464,15 @@ Ok. If it is improving consistency, then let it be. The bug in #13559 is less ab
 
 ---
 
-archive/issue_comments_028408.json:
+archive/issue_comments_028350.json:
 ```json
 {
     "body": "In the future, make sure the \"apply\" instructions in the ticket description remain up-to-date.",
     "created_at": "2012-12-27T11:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28408",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28350",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -484,15 +482,15 @@ In the future, make sure the "apply" instructions in the ticket description rema
 
 ---
 
-archive/issue_comments_028409.json:
+archive/issue_comments_028351.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2012-12-29T19:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3955",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28409",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3955#issuecomment-28351",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

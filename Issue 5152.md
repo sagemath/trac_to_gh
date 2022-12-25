@@ -6,7 +6,7 @@ archive/issues_005152.json:
     "body": "Assignee: somebody\n\nThe line commented with \"error here???\" below is frightening:\n\n```\nFile: /sage/groups/abelian_gps/abelian_group_element.py\nSource Code (starting at line 268):\n    def order(self):\n        \"\"\"\n        Returns the (finite) order of this element or Infinity if this element\n        does not have finite order.\n \n        EXAMPLES:\n            sage: F = AbelianGroup(3,[7,8,9]); F\n            Multiplicative Abelian Group isomorphic to C7 x C8 x C9\n            sage: F.gens()[2].order()\n            9\n            sage: a,b,c = F.gens()\n            sage: (b*c).order()\n            72\n        \"\"\"\n        M = self.parent()\n        if self == M(1):\n            return Integer(1)\n        invs = M.invariants()\n        if self in M.gens():\n            o = invs[list(M.gens()).index(self)]\n            if o == 0:\n                return infinity\n            return o\n        L = list(self.list())\n        N = LCM([invs[i]/GCD(invs[i],L[i]) for i in range(len(invs)) if L[i]!=0])   ####### error here????\n        if N == 0:\n            return infinity\n        else:\n            return N\n```\n\n\n\nBut what bugs me about it is:\n\n```\nsage: G = AbelianGroup(3,[7,8,9])\nsage: type((G.0 * G.1).order())\n<type 'sage.rings.rational.Rational'>\n```\n\n\na simple coercion to Integer at the end of the function would fix this, or using // instead of /.   And add a doctest that has a type check so this doesn't get re-introduced. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5152\n\n",
     "created_at": "2009-02-01T22:02:43Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005152.json:
     "title": "order of abelian group element is a rational number, but should be an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5152",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -78,15 +78,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5152
 
 ---
 
-archive/issue_comments_039419.json:
+archive/issue_comments_039343.json:
 ```json
 {
     "body": "to be applied to 3.3.alpha3",
     "created_at": "2009-02-01T23:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39419",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39343",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -96,15 +96,15 @@ to be applied to 3.3.alpha3
 
 ---
 
-archive/issue_comments_039420.json:
+archive/issue_comments_039344.json:
 ```json
 {
     "body": "Attachment [trac-5152-abelian-gp-order.patch](tarball://root/attachments/some-uuid/ticket5152/trac-5152-abelian-gp-order.patch) by @wdjoyner created at 2009-02-01 23:11:49\n\nPlease *ignore* trac-5152-abelian-gp-order.2.patch (2.8 kB). I don't know how that got there; hg_sage.export was not working the way I expected.",
     "created_at": "2009-02-01T23:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39420",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39344",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -116,15 +116,15 @@ Please *ignore* trac-5152-abelian-gp-order.2.patch (2.8 kB). I don't know how th
 
 ---
 
-archive/issue_comments_039421.json:
+archive/issue_comments_039345.json:
 ```json
 {
     "body": "The patch trac-5152-abelian-gp-order.patch (1.6 kB) does exactly as instructed.",
     "created_at": "2009-02-01T23:13:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39421",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39345",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -134,15 +134,15 @@ The patch trac-5152-abelian-gp-order.patch (1.6 kB) does exactly as instructed.
 
 ---
 
-archive/issue_comments_039422.json:
+archive/issue_comments_039346.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-02T18:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39422",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39346",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -152,15 +152,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_039423.json:
+archive/issue_comments_039347.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha4.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T18:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5152",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39423",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5152#issuecomment-39347",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

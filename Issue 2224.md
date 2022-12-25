@@ -6,7 +6,7 @@ archive/issues_002224.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage -t  devel/sage-main/sage/groups/group.pyx              **********************************************************************\nFile \"group.pyx\", line 140:\n    sage: show(G, color_by_label=True, edge_labels=True)   # todo -- we must test this, but must not have \"sage -t\" popping up windows.\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/was/build/sage-2.10.2.alpha1/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[2]>\", line 1, in <module>\n        show(G, color_by_label=True, edge_labels=True)   # todo -- we must test this, but must not have \"sage -t\" popping up windows.###line 140:\n    sage: show(G, color_by_label=True, edge_labels=True)   # todo -- we must test this, but must not have \"sage -t\" popping up windows.\n      File \"/Users/was/build/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/misc/functional.py\", line 926, in show\n        return x.show(*args, **kwds)\n      File \"/Users/was/build/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/graphs/graph.py\", line 3045, in show\n        heights=heights).show(**kwds)\n      File \"/Users/was/build/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1237, in show\n        aspect_ratio=aspect_ratio)\n      File \"/Users/was/build/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1388, in save\n        g._render_on_subplot(subplot)\n      File \"/Users/was/build/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 1667, in _render_on_subplot\n        c = to_mpl_color(options['rgbcolor'])\n      File \"/Users/was/build/sage-2.10.2.alpha1/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 3678, in to_mpl_color\n        s = float(c[i])\n    ValueError: invalid literal for float(): #\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_17\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_group.pyx\n\t [21.8 s]\n\n```\n\n\nAbove I have some comments:\n (1) -- clearly that is a weird bug in what is being doctested.\n\n (2) aside from that, take a look at how show works in plot.py to see\nthat doctesting sets a certain flag, and show in that contexts writes\nfiles to a temp directory.  That's what the above should do.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2224\n\n",
     "created_at": "2008-02-20T06:56:36Z",
     "labels": [
-        "algebraic geometry",
+        "component: algebraic geometry",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002224.json:
     "title": "sage-2.10.2.alpha1 -- strange show doctest bug in group.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2224",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -69,15 +69,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2224
 
 ---
 
-archive/issue_comments_014738.json:
+archive/issue_comments_014707.json:
 ```json
 {
     "body": "Attachment [sage-2224.patch](tarball://root/attachments/some-uuid/ticket2224/sage-2224.patch) by @williamstein created at 2008-02-21 19:11:00\n\nthis fixes the doctest by implemeting new code in plot.py so that rgbcolor='#fffff00' works; i.e., improve the plotting code.",
     "created_at": "2008-02-21T19:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2224#issuecomment-14738",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2224#issuecomment-14707",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +89,15 @@ this fixes the doctest by implemeting new code in plot.py so that rgbcolor='#fff
 
 ---
 
-archive/issue_comments_014739.json:
+archive/issue_comments_014708.json:
 ```json
 {
     "body": "Patch looks good, is much nicer than the previous version and is well doctested. The last hunk needs to be removed when merging. Ergo: positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-22T01:19:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2224#issuecomment-14739",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2224#issuecomment-14708",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +111,15 @@ Michael
 
 ---
 
-archive/issue_comments_014740.json:
+archive/issue_comments_014709.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-22T01:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2224#issuecomment-14740",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2224#issuecomment-14709",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +129,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014741.json:
+archive/issue_comments_014710.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.rc0",
     "created_at": "2008-02-22T01:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2224#issuecomment-14741",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2224#issuecomment-14710",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005227.json:
     "body": "Assignee: tba\n\nCC:  @haraldschilly gmoroz\n\nKeywords: devmap\n\nAs the subject says. This is a joint project with Michael Abshoff and Harald Schilly. The devmap in question is the site\n\n\n\nhttp://www.sagemath.org/development-map.html\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5227\n\n",
     "created_at": "2009-02-10T07:56:34Z",
     "labels": [
-        "website/wiki",
-        "minor",
-        "enhancement"
+        "component: website/wiki",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "add next batch of 14 people to devmap",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5227",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tba
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5227
 
 ---
 
-archive/issue_comments_040049.json:
+archive/issue_comments_039971.json:
 ```json
 {
     "body": "Attachment [trac_5227-alphabetize.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-alphabetize.patch) by mvngu created at 2009-02-10 08:25:57\n\nalphabetize the current devmap",
     "created_at": "2009-02-10T08:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40049",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39971",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -58,15 +57,15 @@ alphabetize the current devmap
 
 ---
 
-archive/issue_comments_040050.json:
+archive/issue_comments_039972.json:
 ```json
 {
     "body": "Attachment [trac_5227-14-new-people.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-14-new-people.patch) by mvngu created at 2009-02-10 08:26:54\n\nadd 14 people to devmap",
     "created_at": "2009-02-10T08:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40050",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39972",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -78,15 +77,15 @@ add 14 people to devmap
 
 ---
 
-archive/issue_comments_040051.json:
+archive/issue_comments_039973.json:
 ```json
 {
     "body": "Attachment [trac_5227-update-info-1.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-update-info-1.patch) by mvngu created at 2009-02-10 08:27:49\n\nupdate info for Simon King and Georg S. Weber",
     "created_at": "2009-02-10T08:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40051",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39973",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -98,15 +97,15 @@ update info for Simon King and Georg S. Weber
 
 ---
 
-archive/issue_comments_040052.json:
+archive/issue_comments_039974.json:
 ```json
 {
     "body": "Attachment [trac_5227-update-info-2.patch](tarball://root/attachments/some-uuid/ticket5227/trac_5227-update-info-2.patch) by mvngu created at 2009-02-10 08:28:26\n\nupdate info for Arnaud Bergeron, David Loeffler and Jason Merrill",
     "created_at": "2009-02-10T08:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40052",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39974",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -118,15 +117,15 @@ update info for Arnaud Bergeron, David Loeffler and Jason Merrill
 
 ---
 
-archive/issue_comments_040053.json:
+archive/issue_comments_039975.json:
 ```json
 {
     "body": "The attached file `contributors.xml` is an updated XML file for the development map. For those folks who like to view diffs, I've attached the relevant diffs produced using Mercurial. The patch `trac_5227-alphabetize.patch` re-organizes the current devmap XML file, in particular, alphabetizing the names list except for William Stein. The patch `trac_5227-14-new-people.patch` adds the following people to the devmap:\n1. Maite Aranes\n2. Tom Denton\n3. Amy Glen\n4. Daniel Gordon\n5. Alexander Hupfer\n6. Yann Laigle-Chapuy\n7. Matthias Meulien\n8. Ronan Paix\u00e3o\n9. David Perkinson\n10. Pearu Peterson\n11. Blair Sutton\n12. Griffen Thoma\n13. Georg S. Weber\n14. Bin Zhang\n\nThe patches `trac_5227-update-info-1.patch` and `trac_5227-update-info-2.patch` update information for the following people:\n1. Arnaud Bergeron\n2. Simon King\n3. David Loeffler\n4. Jason Merrill",
     "created_at": "2009-02-10T08:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40053",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39975",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -156,15 +155,15 @@ The patches `trac_5227-update-info-1.patch` and `trac_5227-update-info-2.patch` 
 
 ---
 
-archive/issue_comments_040054.json:
+archive/issue_comments_039976.json:
 ```json
 {
     "body": "If my counting is correct, the updated XML file shows information for **141** Sage developers around the world.",
     "created_at": "2009-02-10T08:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40054",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39976",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -174,15 +173,15 @@ If my counting is correct, the updated XML file shows information for **141** Sa
 
 ---
 
-archive/issue_comments_040055.json:
+archive/issue_comments_039977.json:
 ```json
 {
     "body": "to my best knowledge, the location of Guillaume Moroz is wrong: instead of being in the middle\nof France, it should be in Paris (LIP6 is in Paris). The best is to check with him of course.",
     "created_at": "2009-02-12T11:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40055",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39977",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -193,15 +192,15 @@ of France, it should be in Paris (LIP6 is in Paris). The best is to check with h
 
 ---
 
-archive/issue_comments_040056.json:
+archive/issue_comments_039978.json:
 ```json
 {
     "body": "Well, \n\nthe flag being in the middle of a country usually indicates that the address in the XML file is not resolvable by Google.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-12T11:34:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40056",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39978",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -217,15 +216,15 @@ Michael
 
 ---
 
-archive/issue_comments_040057.json:
+archive/issue_comments_039979.json:
 ```json
 {
     "body": "Replying to [comment:3 zimmerma]:\n> to my best knowledge, the location of Guillaume Moroz is wrong: instead of being in the middle\n> of France, it should be in Paris (LIP6 is in Paris). The best is to check with him of course.\n\nthe location is feed into maps.google.com. if you go there, enter the location string 1:1 and hit search and the first hit is wrong, it will be also wrong on the devmap! from my experience, changing a word or some details is enough to get it right.\n\nbehind the scenes, offline: all location strings are extrcted and a script creates a mapping from each uniqe string to the lat/long coordinates that are then used online by the map-javascript when loading the page and placing the markers.",
     "created_at": "2009-02-12T11:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40057",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39979",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -241,15 +240,15 @@ behind the scenes, offline: all location strings are extrcted and a script creat
 
 ---
 
-archive/issue_comments_040058.json:
+archive/issue_comments_039980.json:
 ```json
 {
     "body": "\"Guillaume Moroz LIP6\" on maps.google.com finds only one location, which is the correct one.\nHowever I don't know how to give that hint to the devmap.",
     "created_at": "2009-02-12T11:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40058",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39980",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -260,15 +259,15 @@ However I don't know how to give that hint to the devmap.
 
 ---
 
-archive/issue_comments_040059.json:
+archive/issue_comments_039981.json:
 ```json
 {
     "body": "Replying to [comment:7 zimmerma]:\n> \"Guillaume Moroz LIP6\" on maps.google.com finds only one location...\n\nwell, i wasn't honest, google maps already narrows down the possible hits, if you have zoomed into a location. for this location, i think \"Guillaume Moroz LIP6, Paris, Fr\" is ok.",
     "created_at": "2009-02-12T12:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40059",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39981",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -281,15 +280,15 @@ well, i wasn't honest, google maps already narrows down the possible hits, if yo
 
 ---
 
-archive/issue_comments_040060.json:
+archive/issue_comments_039982.json:
 ```json
 {
     "body": "(Try to adjust the Summary so that this ticket shows up on the radar, especially View tickets \"10\")",
     "created_at": "2009-02-15T20:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40060",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39982",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -299,15 +298,15 @@ archive/issue_comments_040060.json:
 
 ---
 
-archive/issue_comments_040061.json:
+archive/issue_comments_039983.json:
 ```json
 {
     "body": "Yep, it's now (and only now) visible under \"http://trac.sagemath.org/sage_trac/report/10\"",
     "created_at": "2009-02-15T20:40:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40061",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39983",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -317,15 +316,15 @@ Yep, it's now (and only now) visible under "http://trac.sagemath.org/sage_trac/r
 
 ---
 
-archive/issue_comments_040062.json:
+archive/issue_comments_039984.json:
 ```json
 {
     "body": "Hi Minh,\n\ncould you please change line 148 (my own personal entry) to:\n\n```\n<contributor name=\"Georg S. Weber\" location=\"N\u00c3\u0152rnberg, Germany\" description=\"reviews, bug fixing, documentation\"/>\n```\n\nsince I would like to ask first at my institute before it is published here (more a formality than anything else, but nevertheless); I updated also the description.\n\nThanks for your work!!\n\nCheers, gsw",
     "created_at": "2009-02-15T20:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40062",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39984",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -347,15 +346,15 @@ Cheers, gsw
 
 ---
 
-archive/issue_comments_040063.json:
+archive/issue_comments_039985.json:
 ```json
 {
     "body": "just a short note, drop a message when this ready for upload to the website. so far the xml file looks good...",
     "created_at": "2009-02-15T20:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40063",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39985",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -365,15 +364,15 @@ just a short note, drop a message when this ready for upload to the website. so 
 
 ---
 
-archive/issue_comments_040064.json:
+archive/issue_comments_039986.json:
 ```json
 {
     "body": "I am cleaning up the 3.3 milestone. If a patch with positive review is put up to this ticket on time it might make it into 3.3.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T05:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40064",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39986",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -387,15 +386,15 @@ Michael
 
 ---
 
-archive/issue_comments_040065.json:
+archive/issue_comments_039987.json:
 ```json
 {
     "body": "update information for Georg S. Weber",
     "created_at": "2009-02-17T03:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40065",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39987",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -405,15 +404,15 @@ update information for Georg S. Weber
 
 ---
 
-archive/issue_comments_040066.json:
+archive/issue_comments_039988.json:
 ```json
 {
     "body": "Attachment [contributors.xml](tarball://root/attachments/some-uuid/ticket5227/contributors.xml) by mvngu created at 2009-02-17 03:34:58\n\nthe updated XML file after applying the attached 5 patches",
     "created_at": "2009-02-17T03:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40066",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39988",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -425,15 +424,15 @@ the updated XML file after applying the attached 5 patches
 
 ---
 
-archive/issue_comments_040067.json:
+archive/issue_comments_039989.json:
 ```json
 {
     "body": "The patch `trac_5227-update-info-3.patch` updates information for Georg S. Weber as he has requested. This is handy for folks who want to view Mercurial diffs. I've updated an updated `contributors.xml` file containing changes in the attached 5 patches. I'm sorry, folks, for taking so long to fix this issue.\n\n\n\n`@`Harald\n\n\nJust a friendly reminder that you should use `contributors.xml` for the devmap, instead of the Mercurial patches.",
     "created_at": "2009-02-17T03:41:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40067",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39989",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -450,15 +449,15 @@ Just a friendly reminder that you should use `contributors.xml` for the devmap, 
 
 ---
 
-archive/issue_comments_040068.json:
+archive/issue_comments_039990.json:
 ```json
 {
     "body": "Hi, i've uploaded the `contributors.xml` file. There were some issues:\n* the geocode api doesn't understand non-ascii characters for locations, that's easy \n* i had problems with the location of Yann Laigle-Chapuy ... it wasn't found, mabye new adress or some contradiction.",
     "created_at": "2009-02-17T13:28:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40068",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39990",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -470,15 +469,15 @@ Hi, i've uploaded the `contributors.xml` file. There were some issues:
 
 ---
 
-archive/issue_comments_040069.json:
+archive/issue_comments_039991.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-17T13:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40069",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39991",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -488,15 +487,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_040070.json:
+archive/issue_comments_039992.json:
 ```json
 {
     "body": "Ok, looks good to me. We can fix the remaining issues via a followup ticket.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-17T13:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40070",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39992",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -510,15 +509,15 @@ Michael
 
 ---
 
-archive/issue_comments_040071.json:
+archive/issue_comments_039993.json:
 ```json
 {
     "body": "And yes, i'm also for closing this ticket.\n\nThe `contributors.xml` that's now online is here:\nhttp://www.sagemath.org/res/contributors.xml\n\nUse this as a base for future updates, as usual,. and thanks for collecting all those details! :)",
     "created_at": "2009-02-17T13:34:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40071",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39993",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -533,15 +532,15 @@ Use this as a base for future updates, as usual,. and thanks for collecting all 
 
 ---
 
-archive/issue_comments_040072.json:
+archive/issue_comments_039994.json:
 ```json
 {
     "body": "Ok, I have updated the wiki page at \n\n  http://wiki.sagemath.org/DevMapNewPeople\n\nwith the info merged here today.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-17T13:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-40072",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5227#issuecomment-39994",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

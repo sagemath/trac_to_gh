@@ -6,15 +6,14 @@ archive/issues_004801.json:
     "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4801\n\n",
     "created_at": "2008-12-15T06:11:45Z",
     "labels": [
-        "interfaces",
-        "minor",
-        "enhancement"
+        "component: interfaces",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "[with patch, positive review] Add a flag when starting MuPAD so that it can tell when it's being run from Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4801",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4801
 
 ---
 
-archive/issue_comments_036396.json:
+archive/issue_comments_036324.json:
 ```json
 {
     "body": "Attachment [trac_4801.patch](tarball://root/attachments/some-uuid/ticket4801/trac_4801.patch) by @mwhansen created at 2008-12-15 06:12:48",
     "created_at": "2008-12-15T06:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4801",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36396",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36324",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_4801.patch](tarball://root/attachments/some-uuid/ticket4801/tra
 
 ---
 
-archive/issue_comments_036397.json:
+archive/issue_comments_036325.json:
 ```json
 {
     "body": "Patch by Nicolas Thiery, review by Mike Hansen",
     "created_at": "2008-12-15T06:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4801",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36397",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36325",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ Patch by Nicolas Thiery, review by Mike Hansen
 
 ---
 
-archive/issue_comments_036398.json:
+archive/issue_comments_036326.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-15T17:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4801",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36398",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36326",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_036399.json:
+archive/issue_comments_036327.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.rc0",
     "created_at": "2008-12-15T17:58:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4801",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36399",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4801#issuecomment-36327",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

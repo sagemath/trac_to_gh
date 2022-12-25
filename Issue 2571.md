@@ -6,15 +6,14 @@ archive/issues_002571.json:
     "body": "Assignee: somebody\n\nJohn Cremona:\n\n```\nsage: a=[Mod(2,next_prime(2^n)) for n in range(28,35)]\nsage: [type(x) for x in a]\n\n[<type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_int64'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>,\n <type 'sage.rings.integer_mod.IntegerMod_gmp'>]\n\nsage: [copy(x) for x in a]\n[2, 2, 2, None, None, None, None]\n\nsage: [deepcopy(x) for x in a]\n[2, 2, 2, 2, 2, 2, 2]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2571\n\n",
     "created_at": "2008-03-17T12:55:24Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "problem with copy() on sage.rings.integer_mod.IntegerMod_gmp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2571",
-    "user": "@dfdeshom"
+    "user": "https://github.com/dfdeshom"
 }
 ```
 Assignee: somebody
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2571
 
 ---
 
-archive/issue_comments_017566.json:
+archive/issue_comments_017528.json:
 ```json
 {
     "body": "Attachment [8950.patch](tarball://root/attachments/some-uuid/ticket2571/8950.patch) by @JohnCremona created at 2008-03-17 14:24:28",
     "created_at": "2008-03-17T14:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17566",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17528",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -67,15 +66,15 @@ Attachment [8950.patch](tarball://root/attachments/some-uuid/ticket2571/8950.pat
 
 ---
 
-archive/issue_comments_017567.json:
+archive/issue_comments_017529.json:
 ```json
 {
     "body": "To fix this I added a return statement to the `__copy__()` function of IntegerMod_gmp.  Patch attached (based on 2.10.4.rc0)",
     "created_at": "2008-03-17T14:27:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17567",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17529",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -85,15 +84,15 @@ To fix this I added a return statement to the `__copy__()` function of IntegerMo
 
 ---
 
-archive/issue_comments_017568.json:
+archive/issue_comments_017530.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-17T14:27:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17568",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17530",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_017569.json:
+archive/issue_comments_017531.json:
 ```json
 {
     "body": "Changing assignee from somebody to @JohnCremona.",
     "created_at": "2008-03-17T14:27:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17569",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17531",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -121,15 +120,15 @@ Changing assignee from somebody to @JohnCremona.
 
 ---
 
-archive/issue_comments_017570.json:
+archive/issue_comments_017532.json:
 ```json
 {
     "body": "While you're editing that function, would you mind adding a doctest or 2 to it? That would help with the overall 3.0 goal of >50% function doctest coverage",
     "created_at": "2008-03-17T14:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17570",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17532",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -139,15 +138,15 @@ While you're editing that function, would you mind adding a doctest or 2 to it? 
 
 ---
 
-archive/issue_comments_017571.json:
+archive/issue_comments_017533.json:
 ```json
 {
     "body": "apply after 8950.patch",
     "created_at": "2008-03-17T16:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17571",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17533",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -157,15 +156,15 @@ apply after 8950.patch
 
 ---
 
-archive/issue_comments_017572.json:
+archive/issue_comments_017534.json:
 ```json
 {
     "body": "Attachment [8951.patch](tarball://root/attachments/some-uuid/ticket2571/8951.patch) by @JohnCremona created at 2008-03-17 16:56:39\n\nAs suggested, a few doctests have been added, in the second patch.",
     "created_at": "2008-03-17T16:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17572",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17534",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -177,15 +176,15 @@ As suggested, a few doctests have been added, in the second patch.
 
 ---
 
-archive/issue_comments_017573.json:
+archive/issue_comments_017535.json:
 ```json
 {
     "body": "These patches fix the bug and add and improve documentation bits.  I've tested everything I could see that could go wrong (including the copy and sqrt/square_root change) and all looks good to me.\n\nThis is a positive review to both patches!",
     "created_at": "2008-03-18T15:39:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17573",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17535",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -197,15 +196,15 @@ This is a positive review to both patches!
 
 ---
 
-archive/issue_comments_017574.json:
+archive/issue_comments_017536.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-19T00:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17574",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17536",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -215,15 +214,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_017575.json:
+archive/issue_comments_017537.json:
 ```json
 {
     "body": "Merged both patches in Sage 2.11.alpha0",
     "created_at": "2008-03-19T00:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17575",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2571#issuecomment-17537",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_009756.json:
     "body": "Assignee: mvngu\n\nCC:  @jhpalmieri @jdemeyer @JohnCremona\n\nIf the variable `SAGE_TUNE_pari` is exported to \"yes\", Pari will go through a tuning process to optimize the code for a particular computer. This takes considerable time, so the default behavior is not to tune Pari. \n\nThis is implemented in a Pari snapshot (see #9343), but it not documented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9756\n\n",
     "created_at": "2010-08-17T17:36:14Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Document SAGE_TUNE_pari in Sage installation guide.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9756",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: mvngu
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9756
 
 ---
 
-archive/issue_comments_095563.json:
+archive/issue_comments_095404.json:
 ```json
 {
     "body": "If we support that at all, we should also emphasize that this is hardly tested and (at least currently) fails on some (or a lot of?) machines...",
     "created_at": "2010-08-17T18:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95563",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95404",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -51,15 +50,15 @@ If we support that at all, we should also emphasize that this is hardly tested a
 
 ---
 
-archive/issue_comments_095564.json:
+archive/issue_comments_095405.json:
 ```json
 {
     "body": "Btw, shouldn't it be documented in the Sage **Installation** Guide [as well]?",
     "created_at": "2010-08-17T18:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95564",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95405",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -69,15 +68,15 @@ Btw, shouldn't it be documented in the Sage **Installation** Guide [as well]?
 
 ---
 
-archive/issue_comments_095565.json:
+archive/issue_comments_095406.json:
 ```json
 {
     "body": "LOL, forget my last post. I should get some food and/or sleep... ;-)",
     "created_at": "2010-08-17T18:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95565",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95406",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -87,15 +86,15 @@ LOL, forget my last post. I should get some food and/or sleep... ;-)
 
 ---
 
-archive/issue_comments_095566.json:
+archive/issue_comments_095407.json:
 ```json
 {
     "body": "Replying to [comment:2 leif]:\n> If we support that at all, we should also emphasize that this is hardly tested and (at least currently) fails on some (or a lot of?) machines...\n\nWell, I was hoping that this would get straightened out by #9343.  I agree that if this doesn't work, then there is no point documenting it (and also the message printed by the pari spkg-install script should say that it's buggy).",
     "created_at": "2010-08-17T18:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95566",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95407",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -108,15 +107,15 @@ Well, I was hoping that this would get straightened out by #9343.  I agree that 
 
 ---
 
-archive/issue_comments_095567.json:
+archive/issue_comments_095408.json:
 ```json
 {
     "body": "As noted on #9343, the problem with Pari tuning has been reported to the Pari developers. See http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1089",
     "created_at": "2010-08-19T09:50:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95567",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95408",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -126,15 +125,15 @@ As noted on #9343, the problem with Pari tuning has been reported to the Pari de
 
 ---
 
-archive/issue_comments_095568.json:
+archive/issue_comments_095409.json:
 ```json
 {
     "body": "Replying to [comment:5 jhpalmieri]:\n> [...] (and also the message printed by the pari spkg-install script should say that it's buggy).\n\nIt meanwhile does so.\n\nI still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.",
     "created_at": "2010-09-03T23:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95568",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95409",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -149,15 +148,15 @@ I still prefer following the convention that [exported] environment variables sh
 
 ---
 
-archive/issue_comments_095569.json:
+archive/issue_comments_095410.json:
 ```json
 {
     "body": "Replying to [comment:7 leif]:\n> Replying to [comment:5 jhpalmieri]:\n> > [...] (and also the message printed by the pari spkg-install script should say that it's buggy).\n> \n> It meanwhile does so.\n> \n> I still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.\n\nI think it was Peter Jeremey that proposed the lower case, and showed some code how one could get it inside an arbitrary package (say ATLAS) from the package name. (This was in relation to the number of threads ATLAS uses). \n\nI don't have a big problem with upper or lower case, though I think there's an argument for making the global ones that affect every package upper case, and appending lower case for those that only affect a single package. But it's hardly a big deal either way. \n\nDave",
     "created_at": "2010-09-03T23:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95569",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95410",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -179,15 +178,15 @@ Dave
 
 ---
 
-archive/issue_comments_095570.json:
+archive/issue_comments_095411.json:
 ```json
 {
     "body": "Replying to [comment:8 drkirkby]:\n> Replying to [comment:7 leif]:\n> > I still prefer following the convention that [exported] environment variables should be all uppercase (i.e. `SAGE_TUNE_PARI`), and am currently supporting that (in addition) in a new PARI 2.4.3.svn-12577.p5 spkg.\n> \n> I think it was Peter Jeremey that proposed the lower case, and showed some code how one could get it inside an arbitrary package (say ATLAS) from the package name.\n\nEver heard of `tr`? ;-)\n\n> I don't have a big problem with upper or lower case, though I think there's an argument for making the global ones that affect every package upper case, and appending lower case for those that only affect a single package.\n\nDoesn't make sense to me (unless we accept *both* lower as well as uppercase, which IMHO isn't a good idea either).\n\n> But it's hardly a big deal either way. \n\nIt isn't, but we shouldn't produce too much confusion, neither to the developers nor to the users.\nKeeping it all uppercase is in my opinion the (conformant and) least annoying choice.\n\nOtherwise we'd also run into problems with \"PARI\" vs. \"pari\", \"NTL\" vs. \"ntl\", \"PolyBoRi\" vs. \"POLYBORI\" vs. \"polybori\" etc. I think.",
     "created_at": "2010-09-04T00:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95570",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95411",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -214,15 +213,15 @@ Otherwise we'd also run into problems with "PARI" vs. "pari", "NTL" vs. "ntl", "
 
 ---
 
-archive/issue_comments_095571.json:
+archive/issue_comments_095412.json:
 ```json
 {
     "body": "I'd suggest supporting `SAGE_TUNE_ALL=yes`, too.\n\nAnd perhaps `SAGE_TUNE=\"package1 package2 ...\"` (with of course only the package's basename), perhaps also `SAGE_TUNE=all`, `SAGE_TUNE=default`, `SAGE_TUNE=no`, with some handling / \"normalization\" in `sage-spkg`, s.t. not every potential `spkg-install` has to deal with lots of different cases.\n\nATLAS will tune itself anyway; I'm currently not sure with NTL. GMP-ECM (and GMP) can, but not as easily (would require some script \"hacking\").\n\nWe should make sure self-tuning uses CPU time as the measure, not wall time.\n\n----\n\nSimilar extensions to `SAGE_CHECK[_*]` may be desirable.",
     "created_at": "2010-09-04T02:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95571",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95412",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -242,15 +241,15 @@ Similar extensions to `SAGE_CHECK[_*]` may be desirable.
 
 ---
 
-archive/issue_comments_095572.json:
+archive/issue_comments_095413.json:
 ```json
 {
     "body": "Replying to [comment:10 leif]:\n> I'd suggest supporting `SAGE_TUNE_ALL=yes`, too.\n> \n> And perhaps `SAGE_TUNE=\"package1 package2 ...\"` (with of course only the package's basename), perhaps also `SAGE_TUNE=all`, `SAGE_TUNE=default`, `SAGE_TUNE=no`, with some handling / \"normalization\" in `sage-spkg`, s.t. not every potential `spkg-install` has to deal with lots of different cases.\n> \n> ATLAS will tune itself anyway; I'm currently not sure with NTL. GMP-ECM (and GMP) can, but not as easily (would require some script \"hacking\").\n> \n> We should make sure self-tuning uses CPU time as the measure, not wall time.\n> \n> ----\n> \n> Similar extensions to `SAGE_CHECK[_*]` may be desirable.\n\nThere have been a number of complaints about the growing number of environment variables. They are not popular!\n\nThat said, I personally think these sort of things are desirable. For example, when I asked people to run the Python tests, there's not been a single person who reported they could get all the Python tests to pass. So running SAGE_CHECK will always fail. \n\nI personally think having those that are for specific packages end in lower case does make them more obvious. All packages are listed in lower case in Sage, so ATLAS is atlas, PolyBoRi is polybori etc. \n\nDave",
     "created_at": "2010-09-04T06:45:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95572",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95413",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -279,15 +278,15 @@ Dave
 
 ---
 
-archive/issue_comments_095573.json:
+archive/issue_comments_095414.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2022-07-27T05:22:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95573",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95414",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -297,15 +296,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_095574.json:
+archive/issue_comments_095415.json:
 ```json
 {
     "body": "`SAGE_TUNE_PARI` is documented in the installation manual, and both `SAGE_TUNE_PARI` and `SAGE_TUNE_pari` are handled in `build/pkgs/pari/spkg-install.in`. So this ticket can be closed",
     "created_at": "2022-07-27T05:22:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95574",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95415",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -315,15 +314,15 @@ archive/issue_comments_095574.json:
 
 ---
 
-archive/issue_comments_095575.json:
+archive/issue_comments_095416.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2022-07-27T17:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95575",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95416",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -333,15 +332,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_095576.json:
+archive/issue_comments_095417.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2022-08-02T06:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9756",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95576",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9756#issuecomment-95417",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 

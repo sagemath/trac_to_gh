@@ -6,15 +6,14 @@ archive/issues_004909.json:
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4909\n\n",
     "created_at": "2009-01-01T22:50:29Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "convert sage.dsage.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4909",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4909
 
 ---
 
-archive/issue_comments_037256.json:
+archive/issue_comments_037184.json:
 ```json
 {
     "body": "Attachment [trac_4909.patch](tarball://root/attachments/some-uuid/ticket4909/trac_4909.patch) by @mwhansen created at 2009-01-02 02:25:34",
     "created_at": "2009-01-02T02:25:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37256",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37184",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_4909.patch](tarball://root/attachments/some-uuid/ticket4909/tra
 
 ---
 
-archive/issue_comments_037257.json:
+archive/issue_comments_037185.json:
 ```json
 {
     "body": "Attachment [sage.dsage-final.patch](tarball://root/attachments/some-uuid/ticket4909/sage.dsage-final.patch) by @mwhansen created at 2009-02-21 19:17:23",
     "created_at": "2009-02-21T19:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37257",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37185",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ Attachment [sage.dsage-final.patch](tarball://root/attachments/some-uuid/ticket4
 
 ---
 
-archive/issue_comments_037258.json:
+archive/issue_comments_037186.json:
 ```json
 {
     "body": "A little problem:\n\n```\nNote that configuration files will be stored in the  \n    directory \\code{\\$DOT\\_SAGE/dsage}.\n```\n\nIs replaced now by\n\n```\nNote that configuration files will be stored in the directory \n``$DOT \nSage/dsage``. \n```\n \nthe \"_\" must be kept. \n\nOtherwise this is correct. \n\nCheers,\n\nFlorent",
     "created_at": "2009-02-24T17:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37258",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37186",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -104,15 +103,15 @@ Florent
 
 ---
 
-archive/issue_comments_037259.json:
+archive/issue_comments_037187.json:
 ```json
 {
     "body": "Merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37259",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37187",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -126,15 +125,15 @@ Michael
 
 ---
 
-archive/issue_comments_037260.json:
+archive/issue_comments_037188.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-24T18:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37260",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4909#issuecomment-37188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

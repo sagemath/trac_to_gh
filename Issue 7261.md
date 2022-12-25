@@ -6,15 +6,14 @@ archive/issues_007261.json:
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7261\n\n",
     "created_at": "2009-10-21T08:58:21Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "sagenb notebook: make worksheets saved with new sagneb backwards compatible with old notebook servers.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7261",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7261
 
 ---
 
-archive/issue_comments_060303.json:
+archive/issue_comments_060191.json:
 ```json
 {
     "body": "apply to the sagenb repo.",
     "created_at": "2009-10-21T08:58:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60303",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60191",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ apply to the sagenb repo.
 
 ---
 
-archive/issue_comments_060304.json:
+archive/issue_comments_060192.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-21T09:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60304",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60192",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060305.json:
+archive/issue_comments_060193.json:
 ```json
 {
     "body": "Attachment [sagenb-7261.patch](tarball://root/attachments/some-uuid/ticket7261/sagenb-7261.patch) by @qed777 created at 2009-10-21 09:30:32",
     "created_at": "2009-10-21T09:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60305",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60193",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -83,15 +82,15 @@ Attachment [sagenb-7261.patch](tarball://root/attachments/some-uuid/ticket7261/s
 
 ---
 
-archive/issue_comments_060306.json:
+archive/issue_comments_060194.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-21T09:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60306",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60194",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -101,15 +100,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060307.json:
+archive/issue_comments_060195.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-11T19:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60307",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60195",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -119,15 +118,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_060308.json:
+archive/issue_comments_060196.json:
 ```json
 {
     "body": "this was merged into sagenb-0.4",
     "created_at": "2009-11-11T19:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7261",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60308",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7261#issuecomment-60196",
+    "user": "https://github.com/williamstein"
 }
 ```
 

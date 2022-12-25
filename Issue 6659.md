@@ -6,15 +6,14 @@ archive/issues_006659.json:
     "body": "Assignee: @rlmill\n\nCC:  @rlmill @rbeezer hartke\n\nHere is a patch, based on the networkx code, which implements some of the optimizations noted in the paper referenced in the networkx documentation.  This leads to what I think are asymptotic speedups.\n\nAs for the bug, before, the doctest added would fail from an error in the networkx code.  Now it does not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6659\n\n",
     "created_at": "2009-07-30T08:38:51Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "cores() is broken for some digraphs, and is *way* too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6659",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6659
 
 ---
 
-archive/issue_comments_054663.json:
+archive/issue_comments_054562.json:
 ```json
 {
     "body": "I fixed a bug (the doctest I added used to fail), implemented some optimizations that massively sped things up, and cleaned up the documentation.\n\nRobert or Rob, can one of you review this so it can go into 4.1.1?",
     "created_at": "2009-07-30T09:35:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54663",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54562",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -53,15 +52,15 @@ Robert or Rob, can one of you review this so it can go into 4.1.1?
 
 ---
 
-archive/issue_comments_054664.json:
+archive/issue_comments_054563.json:
 ```json
 {
     "body": "An example of a speedup:\n\nBEFORE:\n\n\n```\nsage: a=random_matrix(GF(2), 50000, density=0.0001,sparse=True)\nsage: len(a.nonzero_positions())\n125063\nsage: c=DiGraph(50000)\nsage: c.add_edges(a.nonzero_positions())\nsage: %time\nsage: e=c.cores(with_labels=True)\nCPU time: 429.14 s,  Wall time: 430.89 s\n```\n\n\nAFTER:\n\n\n```\nsage: d=c.cores(with_labels=True)\nCPU time: 1.86 s,  Wall time: 1.86 s\nsage: e==d\nTrue\n```\n",
     "created_at": "2009-07-30T09:39:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54664",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54563",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -97,15 +96,15 @@ True
 
 ---
 
-archive/issue_comments_054665.json:
+archive/issue_comments_054564.json:
 ```json
 {
     "body": "Attachment [trac_6659-graph-cores.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-graph-cores.patch) by @jasongrout created at 2009-07-31 07:28:59\n\nI added a couple of comments to help the reader see what is happening in the source code.",
     "created_at": "2009-07-31T07:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54665",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54564",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -117,15 +116,15 @@ I added a couple of comments to help the reader see what is happening in the sou
 
 ---
 
-archive/issue_comments_054666.json:
+archive/issue_comments_054565.json:
 ```json
 {
     "body": "reviewer patch; typo fix",
     "created_at": "2009-08-25T02:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54666",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54565",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -135,15 +134,15 @@ reviewer patch; typo fix
 
 ---
 
-archive/issue_comments_054667.json:
+archive/issue_comments_054566.json:
 ```json
 {
     "body": "Attachment [trac_6659-reviewer.patch](tarball://root/attachments/some-uuid/ticket6659/trac_6659-reviewer.patch) by mvngu created at 2009-08-25 02:22:16\n\nThe patch `trac_6659-reviewer.patch` fixes a typo found in `trac_6659-graph-cores.patch`.",
     "created_at": "2009-08-25T02:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54667",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54566",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -155,15 +154,15 @@ The patch `trac_6659-reviewer.patch` fixes a typo found in `trac_6659-graph-core
 
 ---
 
-archive/issue_comments_054668.json:
+archive/issue_comments_054567.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-08-25T03:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54668",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54567",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -173,15 +172,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_054669.json:
+archive/issue_comments_054568.json:
 ```json
 {
     "body": "Merged both patches.",
     "created_at": "2009-08-25T03:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54669",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6659#issuecomment-54568",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

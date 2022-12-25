@@ -6,15 +6,14 @@ archive/issues_004150.json:
     "body": "Assignee: @rlmill\n\nCC:  @jasongrout\n\nThis moves the automorphism group and isomorphism functions for graphs over to the new framework. It should be tested on a few different architectures before getting merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4150\n\n",
     "created_at": "2008-09-19T07:42:32Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review and testing] migrate graphs to new refinement code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4150",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4150
 
 ---
 
-archive/issue_comments_030130.json:
+archive/issue_comments_030069.json:
 ```json
 {
     "body": "Attachment [trac_4150-switchover-graphs.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-switchover-graphs.patch) by @rlmill created at 2008-09-19 07:43:20",
     "created_at": "2008-09-19T07:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30130",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30069",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_4150-switchover-graphs.patch](tarball://root/attachments/some-u
 
 ---
 
-archive/issue_comments_030131.json:
+archive/issue_comments_030070.json:
 ```json
 {
     "body": "Dependends on #4115, if you're applying to 3.1.2.final",
     "created_at": "2008-09-19T07:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30131",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30070",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -67,15 +66,15 @@ Dependends on #4115, if you're applying to 3.1.2.final
 
 ---
 
-archive/issue_comments_030132.json:
+archive/issue_comments_030071.json:
 ```json
 {
     "body": "Positive review for Robert's part.  He just needs to sign off on my small second patch.",
     "created_at": "2008-09-19T08:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30132",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30071",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +84,15 @@ Positive review for Robert's part.  He just needs to sign off on my small second
 
 ---
 
-archive/issue_comments_030133.json:
+archive/issue_comments_030072.json:
 ```json
 {
     "body": "+1",
     "created_at": "2008-09-19T08:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30133",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30072",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -103,15 +102,15 @@ archive/issue_comments_030133.json:
 
 ---
 
-archive/issue_comments_030134.json:
+archive/issue_comments_030073.json:
 ```json
 {
     "body": "Note that the second patch depends on #4139 being applied.",
     "created_at": "2008-09-19T08:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30134",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30073",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -121,15 +120,15 @@ Note that the second patch depends on #4139 being applied.
 
 ---
 
-archive/issue_comments_030135.json:
+archive/issue_comments_030074.json:
 ```json
 {
     "body": "The first hunk from trac_4150-fixes.patch ought to be deleted since I ended up fixing that doctest failure at #4139.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-19T14:50:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30135",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30074",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -143,15 +142,15 @@ Michael
 
 ---
 
-archive/issue_comments_030136.json:
+archive/issue_comments_030075.json:
 ```json
 {
     "body": "Attachment [trac_4150-fixes.patch](tarball://root/attachments/some-uuid/ticket4150/trac_4150-fixes.patch) by @rlmill created at 2008-09-19 14:54:01\n\nPatch fixed.",
     "created_at": "2008-09-19T14:54:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30136",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30075",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -163,15 +162,15 @@ Patch fixed.
 
 ---
 
-archive/issue_comments_030137.json:
+archive/issue_comments_030076.json:
 ```json
 {
     "body": "Thanks, valgrinds clean and also works on Itanium with Python build with `-fwrapv`, which caused trouble with the old codebase, so what could go wrong :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-19T23:52:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30137",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30076",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -185,15 +184,15 @@ Michael
 
 ---
 
-archive/issue_comments_030138.json:
+archive/issue_comments_030077.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-19T23:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30138",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30077",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -203,15 +202,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030139.json:
+archive/issue_comments_030078.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.1.3.alpha0",
     "created_at": "2008-09-19T23:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4150",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30139",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4150#issuecomment-30078",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

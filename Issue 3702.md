@@ -6,15 +6,13 @@ archive/issues_003702.json:
     "body": "Assignee: @williamstein\n\nCC:  @robertwb jpflori\n\nAfter a little experimentation with viewing X3D files produced by SAGE, I found a couple of things that could hugely improve the usefulness:\n\n- Viewpoint: The standard viewpoint that gets written into X3D files does not seem to lead to a very good view. We could improve the ability to set the viewpoint (currently, <plot object>.viewpoint() gives a \"not implemented\" error), together with an orientation vector. A better default (and perhaps even some effort to compute a reasonable default) is a good idea.\n\n- Opacity: Currently this does not get written into X3D files at all.\n\n- Lighting: I couldn't find if that is supported at all at the moment.\n\n- Facet orientation: There is at least one viewer out there that \"optimizes\" its rendering by leaving out facets that are negatively/positively oriented from the viewpoint. We should check the X3D spec on whether this is a legitimate optimization in X3D. Even if it is not, it may still be a good idea to be \"robust\" in this respect by having an option to include facets in both orientation for, for instance, mesh objects.\n\n- Offering X3D files in the browser using the appropriate MIME type: When I tried writing an X3D string to a file in the notebook, the file appears, but when opened, it opens as a text file. If I save the file and approach the file locally via the browser, firefox does recognise the file as an X3D file and opens it using the preconfigured X3D viewer. This leads me to believe that the notebook serves the x3d file as a \"text\" file rather than an \"x3d\" file (why would it not?) If there is a way to tell the notebook to serve the link using the correct MIME type (the \".x3d\" extension is a bit of a hint), viewing the X3D file (in this case, on a wall-filling screen, using 3D glasses) would be only one click away!\n\nIssue created by migration from https://trac.sagemath.org/ticket/3702\n\n",
     "created_at": "2008-07-21T23:46:34Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Improve exporting 3d plots as X3D",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3702",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 Assignee: @williamstein
@@ -41,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3702
 
 ---
 
-archive/issue_comments_026257.json:
+archive/issue_comments_026202.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"X3D\".",
     "created_at": "2014-09-26T07:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26257",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26202",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -59,15 +57,15 @@ Changing keywords from "" to "X3D".
 
 ---
 
-archive/issue_comments_026258.json:
+archive/issue_comments_026203.json:
 ```json
 {
     "body": "Here is a first step: transparency in x3d. Please review #7744 for the export of x3d files.\n----\nNew commits:",
     "created_at": "2014-12-27T17:58:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26258",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26203",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -79,15 +77,15 @@ New commits:
 
 ---
 
-archive/issue_comments_026259.json:
+archive/issue_comments_026204.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-03-16T20:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26259",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26204",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -97,15 +95,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_026260.json:
+archive/issue_comments_026205.json:
 ```json
 {
     "body": "Looks mostly good. Is there any reason not to always print an opacity of 1 (to avoid repetitiveness of the code)?",
     "created_at": "2015-03-19T05:23:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26260",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26205",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -115,15 +113,15 @@ Looks mostly good. Is there any reason not to always print an opacity of 1 (to a
 
 ---
 
-archive/issue_comments_026261.json:
+archive/issue_comments_026206.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2019-02-19T19:27:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26261",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/3702#issuecomment-26206",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 

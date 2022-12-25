@@ -6,15 +6,14 @@ archive/issues_002006.json:
     "body": "Assignee: mabshoff\n\nGap contains this binary.  It should be deleted:\n\n```\nsage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2006\n\n",
     "created_at": "2008-01-31T23:16:28Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "crap -- gap contains a binary",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2006",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2006
 
 ---
 
-archive/issue_comments_012976.json:
+archive/issue_comments_012945.json:
 ```json
 {
     "body": "Is there a way that this can be compiled during installation? The instructions are at\nhttp://sage.math.washington.edu/home/wdj/guava/",
     "created_at": "2008-01-31T23:18:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12976",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12945",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -56,15 +55,15 @@ http://sage.math.washington.edu/home/wdj/guava/
 
 ---
 
-archive/issue_comments_012977.json:
+archive/issue_comments_012946.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-31T23:23:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12977",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12946",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -74,15 +73,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_012978.json:
+archive/issue_comments_012947.json:
 ```json
 {
     "body": "Gap contains this binary.  It should be deleted:\n\n```\nsage-2.10.1.rc3/spkg/standard/gap-4.4.10.p1/src/pkg/guava3.1/src/leonconv\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T23:23:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12978",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12947",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -101,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_012979.json:
+archive/issue_comments_012948.json:
 ```json
 {
     "body": "Replying to [comment:1 wdj]:\n> Is there a way that this can be compiled during installation? The instructions are at\n> http://sage.math.washington.edu/home/wdj/guava/\n\nI remember somebody (rlm?) mentioning that it leaked like a sieve. Am I mistaken?\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T23:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12979",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12948",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -127,15 +126,15 @@ Michael
 
 ---
 
-archive/issue_comments_012980.json:
+archive/issue_comments_012949.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-01T02:00:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12980",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12949",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -145,15 +144,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_012981.json:
+archive/issue_comments_012950.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc4",
     "created_at": "2008-02-01T02:00:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12981",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2006#issuecomment-12950",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

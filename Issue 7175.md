@@ -6,7 +6,7 @@ archive/issues_007175.json:
     "body": "Assignee: tbd\n\nKeywords: HP-UX\n\nSee errors below, from an HP C3600 workstation running HP-UX 11i.\n\nA developer can be given access to this machine. \n\n```\nprocessing/doc\ncopying doc/intro.html -> build/lib.hp-ux-B.11.11-9000-785-2.6/processing/doc\ncopying doc/CHANGES.html -> build/lib.hp-ux-B.11.11-9000-785-2.6/processing/doc\ncopying doc/html4css1.css -> build/lib.hp-ux-B.11.11-9000-785-2.6/processing/doc\ncopying doc/../index.html -> build/lib.hp-ux-B.11.11-9000-785-2.6/processing/doc/..\nrunning build_ext\nbuilding 'processing._processing' extension\ncreating build/temp.hp-ux-B.11.11-9000-785-2.6\ncreating build/temp.hp-ux-B.11.11-9000-785-2.6/src\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SEM_OPEN=1 -DHAVE_FD_TRANSFER=1 -DHAVE_SEM_TIMEDWAIT=1 -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -c src/processing.c -o build/temp.hp-ux-B.11.11-9000-785-2.6/src/processing.o\nsrc/processing.c: In function 'processing_sendfd':\nsrc/processing.c:158: warning: implicit declaration of function 'CMSG_SPACE'\nsrc/processing.c:175: warning: implicit declaration of function 'CMSG_LEN'\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SEM_OPEN=1 -DHAVE_FD_TRANSFER=1 -DHAVE_SEM_TIMEDWAIT=1 -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -c src/socket_connection.c -o build/temp.hp-ux-B.11.11-9000-785-2.6/src/socket_connection.o\nIn file included from src/socket_connection.c:200:\nsrc/connection.h: In function 'Connection_new':\nsrc/connection.h:31: warning: format '%d' expects type 'int', but argument 3 has type 'long int'\nsrc/connection.h: In function 'Connection_repr':\nsrc/connection.h:311: warning: format '%d' expects type 'int', but argument 3 has type 'long int'\ngcc -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DHAVE_SEM_OPEN=1 -DHAVE_FD_TRANSFER=1 -DHAVE_SEM_TIMEDWAIT=1 -I/home/drkirkby/sage-4.1.2.rc0/local/include/python2.6 -c src/semaphore.c -o build/temp.hp-ux-B.11.11-9000-785-2.6/src/semaphore.o\nsrc/semaphore.c: In function 'SemLock_acquire':\nsrc/semaphore.c:296: warning: implicit declaration of function 'sem_timedwait'\nsrc/semaphore.c: In function 'SemLock_new':\nsrc/semaphore.c:402: error: 'SEM_FAILED' undeclared (first use in this function)\nsrc/semaphore.c:402: error: (Each undeclared identifier is reported only once\nsrc/semaphore.c:402: error: for each function it appears in.)\nsrc/semaphore.c: In function 'SemLock_dealloc':\nsrc/semaphore.c:462: error: 'SEM_FAILED' undeclared (first use in this function)\nerror: command 'gcc' failed with exit status 1\n\nreal    0m2.771s\nuser    0m2.290s\nsys     0m0.220s\nsage: An error occurred while installing pyprocessing-0.52.p0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7175\n\n",
     "created_at": "2009-10-10T08:22:33Z",
     "labels": [
-        "porting",
+        "component: porting",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007175.json:
     "title": "HP-UX failure to build of pyprocessing 0.52.p0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7175",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -71,15 +71,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7175
 
 ---
 
-archive/issue_comments_059449.json:
+archive/issue_comments_059337.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-08-09T21:05:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7175",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7175#issuecomment-59449",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7175#issuecomment-59337",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -89,15 +89,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_059450.json:
+archive/issue_comments_059338.json:
 ```json
 {
     "body": "This was resolved 5 months ago in sage 4.3.4 by #6503, which removed pyprocessing from Sage.",
     "created_at": "2010-08-09T21:05:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7175",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7175#issuecomment-59450",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7175#issuecomment-59338",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 

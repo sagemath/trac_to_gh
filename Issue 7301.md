@@ -6,15 +6,13 @@ archive/issues_007301.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe Gale-Ryser theorem is about filling a matrix with 0 and 1 when you know the number of 0 and 1 in each column and in each row. \n\nIt would not be too much work to write in Sage a function filling a matrix with 0 and 1 when the data is correct, and returning an error otherwise...\n\nMore informations there : http://mathworld.wolfram.com/Gale-RyserTheorem.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7301\n\n",
     "created_at": "2009-10-25T19:44:48Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Gale Ryser theorem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7301",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @mwhansen
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7301
 
 ---
 
-archive/issue_comments_060847.json:
+archive/issue_comments_060734.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-03T11:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60847",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60734",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -53,15 +51,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060848.json:
+archive/issue_comments_060735.json:
 ```json
 {
     "body": "Here it is ! :-)",
     "created_at": "2009-12-03T11:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60848",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60735",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -71,15 +69,15 @@ Here it is ! :-)
 
 ---
 
-archive/issue_comments_060849.json:
+archive/issue_comments_060736.json:
 ```json
 {
     "body": "I can review this in a week or two since a colleague here is an expert in that area (and I'll be finished with teaching then:-). \n\nIs the graph-theoretic analog of this theorem implemented? (The Haval-??? Theorem?)",
     "created_at": "2009-12-03T12:16:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60849",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60736",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -91,15 +89,15 @@ Is the graph-theoretic analog of this theorem implemented? (The Haval-??? Theore
 
 ---
 
-archive/issue_comments_060850.json:
+archive/issue_comments_060737.json:
 ```json
 {
     "body": "I'm glad to hear it !! This is my second attempt at a contribution to the Combinatorics section, and I hope you will find it useful :-)\n\nThe odd thing is that if I knew of the Gale Ryser theorem, I never heard of the theorem you are talking about, when it clearly should be the opposite... Could you tell me what this theorem is about ? I was not able to find it using \"haval\" on Google, and I am very interested in what it could be :-)\n\nThe only direct use I could make of this theorem in Graph Theory is deciding whether there exists a bipartite graph with a given degree sequence... Is that the result you are mentionning ? :-)\n\nAnd by the way, I only wrote this function for squares matrices when it is not required.. Thinking about bipartite graphs helped me notice :-)\n\nNathann",
     "created_at": "2009-12-03T12:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60850",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60737",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -117,15 +115,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060851.json:
+archive/issue_comments_060738.json:
 ```json
 {
     "body": "Replying to [comment:4 ncohen]:\n> I'm glad to hear it !! This is my second attempt at a contribution to the Combinatorics section, and I hope you will find it useful :-)\n> \n> The odd thing is that if I knew of the Gale Ryser theorem, I never heard of the theorem you are talking about, when it clearly should be the opposite... Could you tell me what this theorem is about ? I was not able to find it using \"haval\" on Google, and I am very interested in what it could be :-)\n> \n> The only direct use I could make of this theorem in Graph Theory \n> is deciding whether there exists a bipartite graph with a given \n> degree sequence... Is that the result you are mentionning ? :-)\n> \n\n\nYes, I believe that is it. But I think the Haval-??? Theorem generalizes that a bit.\n\n\n> And by the way, I only wrote this function for squares matrices when it is not required.. Thinking about bipartite graphs helped me notice :-)\n> \n> Nathann",
     "created_at": "2009-12-03T12:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60851",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60738",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -151,15 +149,15 @@ Yes, I believe that is it. But I think the Haval-??? Theorem generalizes that a 
 
 ---
 
-archive/issue_comments_060852.json:
+archive/issue_comments_060739.json:
 ```json
 {
     "body": "Now with non-square matrices ;-)",
     "created_at": "2009-12-04T17:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60852",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60739",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -169,15 +167,15 @@ Now with non-square matrices ;-)
 
 ---
 
-archive/issue_comments_060853.json:
+archive/issue_comments_060740.json:
 ```json
 {
     "body": "Hi there,\n\nThere is something I don't get in the doc:\n\n```\nThe Gale Ryser theorem asserts that if `p_1,p_2` are two \npartitions of `n` of respective lengths `k_1,k_2`, then there is \na binary `k_1\\times k_2` matrix `M` such that `p_1` is the vector \nof row sums and `p_2` is the vector of column sums of `M`, if \nand only if `p_2` dominates `p_1`.\n```\n\nI suggest that the role of `p_1` and `p_2` are not symmetric... Is this really a \"if and only if\" ? If you transpose the matrix then the role of `p_1` and `p_2` are exchanged... Or dominate is not the same as dominance order...\n\nAm I definitely confused ???\n\nFlorent",
     "created_at": "2009-12-07T23:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60853",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60740",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -203,15 +201,15 @@ Florent
 
 ---
 
-archive/issue_comments_060854.json:
+archive/issue_comments_060741.json:
 ```json
 {
     "body": "oopsssssss !!! Would \"if and only if the conjugate of p_2 dominates p_1\"make you feel better ? :-)\n\nThis is what the code does ( and what the theorem says )  :-)\n\nNathann",
     "created_at": "2009-12-07T23:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60854",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60741",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -225,15 +223,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060855.json:
+archive/issue_comments_060742.json:
 ```json
 {
     "body": "I am not an expert but I do have a colleague who not only wrote his thesis on a related result but claims that the Gale-Ryser theorem was one of the results which inspired him to become a combinatorialist.\n\nHe is not satisfied with your implementation. He had problems with the wording of the documentation, though he admitted this was only a minor issue. (For example, \"dominated\" should be \"majorized\"...) More important, he believed, was that the only construction implemented was a special one (in particular, Ryser's construction was not implemented). Without being specific, he said that more options should be available to the user, to allow for different types of features/constructions.\n(For example, one could allow matrices taken from another subset of numbers, as opposed to just {0,1}.)\n\nHe was also hoping to have a construction of the graph-theoretic analog (given a possible degree sequence, construct a graph having that degree sequence). I presume though that, if you decided to implement that, you would create a separate ticket.\n\nThanks very much for working on this! I know this is a bit vague, so please ask questions and I will ask for more details from my colleague.",
     "created_at": "2009-12-08T03:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60855",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60742",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -250,15 +248,15 @@ Thanks very much for working on this! I know this is a bit vague, so please ask 
 
 ---
 
-archive/issue_comments_060856.json:
+archive/issue_comments_060743.json:
 ```json
 {
     "body": "Replying to [comment:10 wdj]:\n\n> He is not satisfied with your implementation. He had problems with the wording of the documentation, though he admitted this was only a minor issue. (For example, \"dominated\" should be \"majorized\"...) \n\nThis is clearly a question of community. Those kind of matrix problem arise in the representation theory of Symmetric Groups or in symmetric functions and in this context I've allways seen the order called dominance order. See eg:  Macdonald, I. G. Symmetric Functions and Hall Polynomials, 2nd ed. Oxford, England: Oxford University Press, 1995.\n\n> More important, he believed, was that the only construction implemented was a special one (in particular, Ryser's construction was not implemented). Without being specific, he said that more options should be available to the user, to allow for different types of features/constructions.\n> (For example, one could allow matrices taken from another subset of numbers, as opposed to just {0,1}.)\n\nAgain in the theory of symmetric function and descent algebra of the symmetric group, it is useful not to give a single solution but to give all of them, without restricting et entries of the matrix to be smaller than one (i.e. any non negative integer). Moreover the order of the input is important so that I'd rather have the input to be composition rather than partition. However I don't know if in this case we need a different enumeration algorithm. You can have a look at  http://mupad-combinat.sourceforge.net/doc/en/combinat/integerMatrices.html\nto see what we had in MuPAD-Combinat.\n \n> He was also hoping to have a construction of the graph-theoretic analog (given a possible degree sequence, construct a graph having that degree sequence). I presume though that, if you decided to implement that, you would create a separate ticket.\n> \n> Thanks very much for working on this! I know this is a bit vague, so please ask questions and I will ask for more details from my colleague.",
     "created_at": "2009-12-08T06:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60856",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60743",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -282,15 +280,15 @@ to see what we had in MuPAD-Combinat.
 
 ---
 
-archive/issue_comments_060857.json:
+archive/issue_comments_060744.json:
 ```json
 {
     "body": "Hello everybody !!! Well, concerning the wording issue, I believe that it is correct in this case, or that at least it depends on communities, especially, when one looks at the code : \"the conjugate of p2 dominates p1\" is written \"p2.conjugate().dominates(p1), so surely I am not the only one to give these definitions to these words :-)\n\nThe other issue seems for you to expect more than just a solution : you are both talking about the complete enumeration of the matrices corresponding to these criteria, and through Linear Programming I can olny give you a simple solution, as solvers are not that bright on the enumeration side... Would you happen to have a reference for this algorithm ? I was onnly able to find a proof to show one matrix existed, but nothing about enumerating them. I also have to admit that if writing this function was quick enough because I knew what I needed and how to use it, I may not have enough time available too look for a new ( and possibly long ) algorithm and implement it.\n\nDo you feel like this algorithm is totally useless as it is, or could it be possible to take this function and create a ticket to move it to a enumeration problem ?\n\nBesides, your friend was talking about \"different subsets of numbers\". Well, I only met this problem for 0-1 matrices and I assume your are not talking about replacing 0 by x and 1 by y... Do you mean that there is a version of this theorem working simultaneously for several types of different variables (with two partitions per type of variable, etc...)  ?? This would interest me very much !!\n\nThank you for your interest !\n\nNathann",
     "created_at": "2009-12-08T07:48:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60857",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60744",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -310,15 +308,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060858.json:
+archive/issue_comments_060745.json:
 ```json
 {
     "body": "No, I think this is a useful patch. Also, I agree that the enumeration problem is a separate ticket. I am not an expert, so to review your patch, which I think is interesting, I am told to read\n\n\n```\nCombinatorial Matrix Theory\nby Brualdi and Ryser, Chapter 6\n\nCombinatorial Matrix Classes\nBy Brualdi (I think this has a whole chapter on A(R,S), the \nset of (0,1)-matrices with prescribed row sums R and col sums S.\n\nCombinatorial Mathematics\nBy Ryser (has a chapter on A(R,S))\n```\n\nThey shouldn't take long to read but I don't own these and will \nhave to make a trip to the library, which I will try to do tomorrow.\n \nI was also told of a very interesting application of the Gale-Ryser\ntheorem to medical imaging (which you may already know about):\n\n\n```\nDiscrete tomography\nhttp://en.wikipedia.org/wiki/Discrete_tomography\n```\n",
     "created_at": "2009-12-08T13:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60858",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60745",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -354,15 +352,15 @@ http://en.wikipedia.org/wiki/Discrete_tomography
 
 ---
 
-archive/issue_comments_060859.json:
+archive/issue_comments_060746.json:
 ```json
 {
     "body": "Replying to [comment:12 ncohen]:\n> Hello everybody !!!  \n\n...\n\n> \n> Besides, your friend was talking about \"different subsets of numbers\". Well, \n> I only met this problem for 0-1 matrices and I assume your are not talking about \n> replacing 0 by x and 1 by y... Do you mean that there is a version of this theorem \n> working simultaneously for several types of different variables (with two partitions \n> per type of variable, etc...)  ?? This would interest me very much !!\n> \n\n\nYes, he indicated that a very simple modification of the construction should \nallow one to construct matrices whose entries are in (say) {0,1, ..., m-1}, \nwith give column sums and given row sums if one exists. (Here m > 1 is\na user-supplied integer which is m=2 in your current implementation.)\n\n\n> Thank you for your interest !\n> \n> Nathann",
     "created_at": "2009-12-08T13:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60859",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60746",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -394,15 +392,15 @@ a user-supplied integer which is m=2 in your current implementation.)
 
 ---
 
-archive/issue_comments_060860.json:
+archive/issue_comments_060747.json:
 ```json
 {
     "body": "Nathann:\n\nI have started reading these books and spoken to my colleague again. The book\n\n\n```\nCombinatorial Mathematics\nBy Ryser (has a chapter on A(R,S))\n```\n\nhas a construction (due to Ryser) which is in many cases more valuable than the construction implemented (due to Gale). Moreover, the implementation of the construction assumes that the R,S have no\ntrailing 0's. It seems natural to assume that the user can simply remove any trailing 0's in the input sequence (I thought so myself). However, my colleague assures me that if you could implement the exact same function but allow for trailing 0's then the function would be more useful.\n\nI need to digest the Ryser algorithm better but thought I would post this update FYI.",
     "created_at": "2009-12-10T12:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60860",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60747",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -425,15 +423,15 @@ I need to digest the Ryser algorithm better but thought I would post this update
 
 ---
 
-archive/issue_comments_060861.json:
+archive/issue_comments_060748.json:
 ```json
 {
     "body": "I began to read the chapter six and it is indeed very interesting :-)\n\nI did not get to the point where Ryser enumerates these matrices or speaks about multiple values beyong 0-1..\n\nThanks !!!\n\nNathann",
     "created_at": "2009-12-11T15:19:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60861",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60748",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -449,15 +447,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060862.json:
+archive/issue_comments_060749.json:
 ```json
 {
     "body": "Please see\nhttp://sage.math.washignton.edu/home/wdj/sagefiles/gale-ryser.sage\nHope it helps!",
     "created_at": "2009-12-13T22:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60862",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60749",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -469,15 +467,15 @@ Hope it helps!
 
 ---
 
-archive/issue_comments_060863.json:
+archive/issue_comments_060750.json:
 ```json
 {
     "body": "Replying to [comment:17 wdj]:\n> Please see\n> http://sage.math.washignton.edu/home/wdj/sagefiles/gale-ryser.sage\n> Hope it helps!\n\nMake that http://sage.math.washington.edu/home/wdj/sagefiles/gale-ryser.sage",
     "created_at": "2009-12-13T22:53:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60863",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60750",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -492,15 +490,15 @@ Make that http://sage.math.washington.edu/home/wdj/sagefiles/gale-ryser.sage
 
 ---
 
-archive/issue_comments_060864.json:
+archive/issue_comments_060751.json:
 ```json
 {
     "body": "Excellent !!! Well, could you send your code as a patch to replace mine then, as it does not use LP ? :-)\n\ntwo remarks though : \n\n* Perhaps \"slider\" could be defined inside the gale_ryser function, except if it can be useful in other parts of Sage\n* The order defined on the partitions is equivalent to the the function \"dominates\" in the Partition class.. In my patch it was written as p2.conjugate().dominates(p1), so it may not be necessary to rewrite it\n\nGreat work !! :-)\n\nNathann",
     "created_at": "2009-12-14T08:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60864",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60751",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -519,15 +517,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060865.json:
+archive/issue_comments_060752.json:
 ```json
 {
     "body": "Replying to [comment:19 ncohen]:\n> Excellent !!! Well, could you send your code as a patch to replace mine \n> then, as it does not use LP ? :-)\n>\n\n\nI will submit my code to my colleague, who does not use Sage \nor know how to program (as far as I know) but can read Python:-)\n\nHe already said that you have implemented Gale's algorithm, and\nI have implemented Ryser. He does not agree that your implementation\nshould be replaced by mine. Perhaps we make my implementation\nthe default since it seems \"more elementary\" than yours? \n\nMore later when I receive his report.\n\n \n> two remarks though : \n> \n>     * Perhaps \"slider\" could be defined inside the gale_ryser function, \n> except if it can be useful in other parts of Sage\n>     * The order defined on the partitions is equivalent to the the \n> function \"dominates\" in the Partition class.. In my patch it was written \n> as p2.conjugate().dominates(p1), so it may not be necessary to rewrite it\n> \n> Great work !! :-)\n> \n> Nathann",
     "created_at": "2009-12-14T21:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60865",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60752",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -564,15 +562,15 @@ More later when I receive his report.
 
 ---
 
-archive/issue_comments_060866.json:
+archive/issue_comments_060753.json:
 ```json
 {
     "body": "Your is both an algoorithm and a proof, which makes it more interesting than mine. Besides, yours does not require the package GLPK to be installed.. I even doubt my version could be faster so... :-)",
     "created_at": "2009-12-15T08:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60866",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60753",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -582,15 +580,15 @@ Your is both an algoorithm and a proof, which makes it more interesting than min
 
 ---
 
-archive/issue_comments_060867.json:
+archive/issue_comments_060754.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-12-15T08:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60867",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60754",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -600,15 +598,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_060868.json:
+archive/issue_comments_060755.json:
 ```json
 {
     "body": "Just an update: My colleague agrees that my implementation is corect. There was a issue because I told him that in my opinion the \nalgorithm (due to Ryser) as stated in the literature was imcomplete.\n(A loop was missing in the pseudocode.) He also said he proved that my version of the implementation was correct, though he did not write anything down. He also said he had some suggestions for me but did not say what they were.\n\nNow he is grading finals but when he finishes, and I finish with my grading, I'll be able to add the two Gale-Ryser implementations together.",
     "created_at": "2009-12-17T16:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60868",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60755",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -622,15 +620,15 @@ Now he is grading finals but when he finishes, and I finish with my grading, I'l
 
 ---
 
-archive/issue_comments_060869.json:
+archive/issue_comments_060756.json:
 ```json
 {
     "body": "Hello !! I just noticed some paper among today's publications that may interest people here :\nOn the number of matrices and a random matrix with prescribed row and column sums and 0\u20131 entries\n\nYou can get it there :\nhttp://www.sciencedirect.com/science?_ob=ArticleURL&_udi=B6W9F-4XXNXT2-1&_user=6068170&_rdoc=1&_fmt=&_orig=search&_sort=d&_docanchor=&view=c&_acct=C000016487&_version=1&_urlVersion=0&_userid=6068170&md5=431a8b6346a7a0a472ae72d9d21a5184\n\nNathann",
     "created_at": "2009-12-18T08:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60869",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60756",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -646,15 +644,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060870.json:
+archive/issue_comments_060757.json:
 ```json
 {
     "body": "Replying to [comment:6 ncohen]:\n> Now with non-square matrices ;-)\n\n\nWhat does this mean? You still have\n\n\n```\n        if sum(p1) != sum(p2):\n            raise ValueError(\"The two partitions must sum to the same value.\")\n```\n",
     "created_at": "2009-12-27T23:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60870",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60757",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -675,15 +673,15 @@ What does this mean? You still have
 
 ---
 
-archive/issue_comments_060871.json:
+archive/issue_comments_060758.json:
 ```json
 {
     "body": "Replying to [comment:25 wdj]:\n> Replying to [comment:6 ncohen]:\n> > Now with non-square matrices ;-)\n> \n> \n> What does this mean? You still have\n> \n> {{{\n>         if sum(p1) != sum(p2):\n>             raise ValueError(\"The two partitions must sum to the same value.\")\n> }}}\n\nSorry, dumb question.\n\nThis is what I should have asked: The condition\n\n\n```\n       if sum(p1) != sum(p2):\n            raise ValueError(\"The two partitions must sum to the same value.\")\n```\n\nshould be replaced by a condition on p1 and the *conjugate* of p2,\nshouldn't it?",
     "created_at": "2009-12-28T01:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60871",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60758",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -716,15 +714,15 @@ shouldn't it?
 
 ---
 
-archive/issue_comments_060872.json:
+archive/issue_comments_060759.json:
 ```json
 {
     "body": "Well, the condition on the domination of p* may be fulfilled while the  two partitions do not sum to the same value, which is clearly necessary, so we need the two conditions to be checked ( and summing the fastest of the two )...\n\nwell, actually I thought after out little chat that we should forget about the LP version and implement yours when you will have found the time to write it.\n\nIt's up to you ! :-)\n\nNathann",
     "created_at": "2009-12-28T08:05:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60872",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60759",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -740,15 +738,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060873.json:
+archive/issue_comments_060760.json:
 ```json
 {
     "body": "apply this patch only to 4.3.",
     "created_at": "2009-12-28T18:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60873",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60760",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -758,15 +756,15 @@ apply this patch only to 4.3.
 
 ---
 
-archive/issue_comments_060874.json:
+archive/issue_comments_060761.json:
 ```json
 {
     "body": "Attachment [trac_7301.2.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.2.patch) by @wdjoyner created at 2009-12-28 18:57:30\n\nThis passes sage -testall on an ubuntu machine. \n\nNathann: Can you please look at this? Please check your LP code, which I modified slightly. Feel free to add a referee's patch (eg, adding an AUTHORS field, which I just noticed I forgot).\n\nIt turned out that partition was the wrong place to put it. My colleague who refereed it did not like that the integer vectors were not allowed to have trailing 0's and so that ruled out allowing gale_ryser_theorem to be a method for the Partition class.",
     "created_at": "2009-12-28T18:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60874",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60761",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -782,15 +780,15 @@ It turned out that partition was the wrong place to put it. My colleague who ref
 
 ---
 
-archive/issue_comments_060875.json:
+archive/issue_comments_060762.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-12-28T18:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60875",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60762",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -800,15 +798,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_060876.json:
+archive/issue_comments_060763.json:
 ```json
 {
     "body": "In reply to an email Nathann Cohen sent me:\n\n> Several questions about your patch :\n> \u00a0 \u00a0* Do you think function slider01 is useful by itself in the\n> integer_vector class ( and if so, under, should'nt it be renamed to be\n> more \"explicit\", if possible ? ) ? My advice is that it may be better\n> to move it *inside* of function fale_ryser_theorem\n\n\nPython has a mechanism for \"private\" functions like slider01, so\nI renamed it _slider01. I think that is better than hiding it inside\ngale_ryser_theorem. Is that okay?\n\n\n> \u00a0 \u00a0* There is one commented line in is_gale_ryser\n> \u00a0 \u00a0* Why don't you want to use the method Partition.dominates for\n> your test in is_gale_ryser ?\n\n\nI think this will not work, if you want to allow trailing 0's.\nMaybe I am missing something?\n\n\n> \u00a0 \u00a0* Why do you say that the LP formulation is Gale's construction ?\n> You mean that Gale proved this result using LinearProgramming ? If so,\n> do you have access to an electronic version of the text you are citing\n> ? I'd be extremely interested in giving it a look... Very few\n> theretical results are proved using LP :-)\n\nI was told that by my colleague which is much much more of an expert on\nthis stuff. I have not read Gale's paper and don't know of an electronic version.\n\n\n> \u00a0 \u00a0* In you docstrings you frequently use $$ for LaTeX expressions.\n> As I never saw it anywhere in Sphinx, I do not know whether it works :\n> I always use ` instead of $. Is the documentation built correctly this\n> way ? I prefer your $ to my usual `, so I'm interested in the\n> answer....\n\n\nI changed all $ to '. Thanks!\n\n\n> \u00a0 \u00a0* I will be running tests to compare the speed of your\n> construction of the matrices... I expect your method to be much faster\n> than mine, perhaps something about it should be said in the docstrings\n> \u00a0 \u00a0* I do not know if it is a requirement of Sphinx, but Minh ( who I\n> claim is perfection made flesh ) gave me several \"needs work\" because\n> of the way I formatted docstrings for References. What I take for\n> model now is the functions citing Cliquer in the graph.py file. The\n> document's keys are not integers but \"the usual\" concatenations of the\n> authors'initials and the year, for example [Ryser63] and [Gale57].\n> Besides, they appear with a trailing _ when used to cite the paper.\n> You are bound to find one if you look for the string \"]_\" in Sage's\n> files ( but you will definitely find them if you look for \"Cliquer\" in\n> sage/graphs/graph.py\"\n\n\nThank you for the reference! I think the docstrings are okay now.\n\n\n> \u00a0 \u00a0* In gale_ryser_theorem the two :: after EXAMPLES should be\n> removed for the generated documentation to be correct. Same thing\n> after References, and in slider01. The sign :: is saying to Sphinx\n> that what is following is a piece of Sage code. So you should only\n> write them when it is the case, for example after EXAMPLES in\n> is_gale_ryser. It may be better to generate the documentation to check\n> that it is visually correct :-)\n\n\nDone. Thanks.\n\n\n>\n> I will be keeping an eye on Sage-devel to be kept aware of the next\n> alpha release... I tried alpha0 which failed to compile on my computer\n> and I am at the moment without any Sage install available ( I have\n> sage.math in case of need, though ). I hope it will be available soon\n> :-))))))",
     "created_at": "2010-01-06T20:16:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60876",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60763",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -896,15 +894,15 @@ Done. Thanks.
 
 ---
 
-archive/issue_comments_060877.json:
+archive/issue_comments_060764.json:
 ```json
 {
     "body": "Attachment [trac_7301-referee.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301-referee.patch) by @wdjoyner created at 2010-01-06 20:18:15\n\nseems to apply to 4.3* and test okay. Apply only this patch.",
     "created_at": "2010-01-06T20:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60877",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60764",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -916,15 +914,15 @@ seems to apply to 4.3* and test okay. Apply only this patch.
 
 ---
 
-archive/issue_comments_060878.json:
+archive/issue_comments_060765.json:
 ```json
 {
     "body": "I thought you could have sorted the lists, created the corresponding Partition objects, then used the dominates/conjugate methods... Well, it is not that bad a problem anyway :-)\nI'll give it a look pretty soon... Sorry for the last two days, I was (against my will) kept away from internet !\n\nNathann",
     "created_at": "2010-01-09T11:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60878",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60765",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -937,15 +935,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060879.json:
+archive/issue_comments_060766.json:
 ```json
 {
     "body": "> Python has a mechanism for \"private\" functions like slider01, so\n> I renamed it _slider01. I think that is better than hiding it inside\n> gale_ryser_theorem. Is that okay?\n\nWell, do you think slider01 could be used by ither methods ?\n\n> I think this will not work, if you want to allow trailing 0's.\n> Maybe I am missing something?\nThe Gale-Ryser theorem tells you that given two partitions, there is a matrix satisfying the constraints if and only if the domination criterion is checked. Well, the point you made about trailing 0's is that you do not necessarily want the column's sums in your final matrix to be *sorted in decreasing order*. When you have a binary matrix, though, you can modify it by inverting two columns without changin the rows sums, and the columns sum still have the same set of sums. So instead of just taking care of trailing 0, the best may be to take care of non-sorted sequences, which is the general case of the theorem.\n\n> I was told that by my colleague which is much much more of an expert on\n> this stuff. I have not read Gale's paper and don't know of an electronic version.\nThen the best is to :\n* Cite the reference to justify the names Gale's method and Ryser's method\n* Alternatively, use algorithm=\"LP\" instead of Gale, as we can not say more without references ( plus it gives some enlightenment as to the algorithm used and the complexity )\n\nNathann",
     "created_at": "2010-01-10T08:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60879",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60766",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -971,15 +969,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060880.json:
+archive/issue_comments_060767.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-10T08:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60880",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60767",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -989,15 +987,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_060881.json:
+archive/issue_comments_060768.json:
 ```json
 {
     "body": "New version, after some emails exchanged :\n\n* The function is_gale_ryser does not apply only to \"partitions\"\nanymore, but to any sequence of integers. The purpose of the\nGale-Ryser theorem is to answer whether there exists a matrix with the\ngiven row/column sums, which has nothing to do with Partitions, or\ndecreasings orders, or zeros, or anything else -- just positive\nvalues. The function is_gale ryser only takes two integer lists as its\narguments, and answers yes if there exists a matrix satisfying the\nconstraints.\n\n* There is a new section ALGORITHM in is_gale_ryser\n\n* Various fixes in the docstrings\n\n* gale_ryser_theorem has been slightly modified to accept unordered\nsequences, and zeros. It involves marking a sorted copy of the list\nwithout the zeros, using the algorithm you implemented, then add the\nempty rows/columns and apply the reverse of the permutation applied by\nthe sorting.\n\n* Your comments made me think again about this definition inside a\ndefinition.... In the end I got convinced it was a very ugly way to\ncode and do not intend to say anything about it again :-)\n\nNathann",
     "created_at": "2010-01-11T11:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60881",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60768",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -1032,15 +1030,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060882.json:
+archive/issue_comments_060769.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-11T11:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60882",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60769",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -1050,15 +1048,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_060883.json:
+archive/issue_comments_060770.json:
 ```json
 {
     "body": "Attachment [trac_7301.patch](tarball://root/attachments/some-uuid/ticket7301/trac_7301.patch) by @nathanncohen created at 2010-01-11 11:28:16",
     "created_at": "2010-01-11T11:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60883",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60770",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -1068,15 +1066,15 @@ Attachment [trac_7301.patch](tarball://root/attachments/some-uuid/ticket7301/tra
 
 ---
 
-archive/issue_comments_060884.json:
+archive/issue_comments_060771.json:
 ```json
 {
     "body": "* THE LATEST PATCH IS NOW trac_7301.patch *",
     "created_at": "2010-01-11T11:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60884",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60771",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -1086,15 +1084,15 @@ archive/issue_comments_060884.json:
 
 ---
 
-archive/issue_comments_060885.json:
+archive/issue_comments_060772.json:
 ```json
 {
     "body": "Thanks Nathann! \n\nI'll start testing it now.",
     "created_at": "2010-01-11T11:40:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60885",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60772",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -1106,15 +1104,15 @@ I'll start testing it now.
 
 ---
 
-archive/issue_comments_060886.json:
+archive/issue_comments_060773.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-11T15:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60886",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60773",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -1124,15 +1122,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060887.json:
+archive/issue_comments_060774.json:
 ```json
 {
     "body": "applies to 4.3.a9 and 4.3 fine and passes testall except for some presumably unrelated failures on ubuntu 64bit and mac 10.6.2.\n\nPositive review.\n\nThanks again Nathann!",
     "created_at": "2010-01-11T15:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60887",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60774",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -1146,15 +1144,15 @@ Thanks again Nathann!
 
 ---
 
-archive/issue_comments_060888.json:
+archive/issue_comments_060775.json:
 ```json
 {
     "body": "David as Author and Nathann as Reviewer? It's not entirely clear to me, so can you fill out those slots for me?",
     "created_at": "2010-01-13T08:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60888",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60775",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -1164,15 +1162,15 @@ David as Author and Nathann as Reviewer? It's not entirely clear to me, so can y
 
 ---
 
-archive/issue_comments_060889.json:
+archive/issue_comments_060776.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-13T08:56:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60889",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60776",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -1182,15 +1180,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_060890.json:
+archive/issue_comments_060777.json:
 ```json
 {
     "body": "Considering the amount of work from David on this function, it seems fitting :-)",
     "created_at": "2010-01-13T08:59:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7301",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60890",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7301#issuecomment-60777",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 

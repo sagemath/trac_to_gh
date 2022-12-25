@@ -6,15 +6,14 @@ archive/issues_004331.json:
     "body": "Assignee: mabshoff\n\nCC:  @slel\n\nChange the sage vmware image so there is another login option:\n\n\n```\nlogin: keyboard\n```\n\n\nThis would run `dpkg-reconfigure console-setup`\nas suggested by Martin Rubey in email:\n\n```\n>\n> Sorry, I meant, of all the things you tried was\n> just typing\n>\n>    dpkg-reconfigure console-setup\n>\n> the one and only thing you did, and that it worked?\n\nNearly: you will then be asked some simple questions which are obvious to\nanswer if you do not have an english keyboard.\n\n-- Martin Rubey\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4331\n\n",
     "created_at": "2008-10-20T16:26:21Z",
     "labels": [
-        "distribution",
-        "major",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage-vmware image - add keyboard reconfigure option",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4331",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4331
 
 ---
 
-archive/issue_comments_031762.json:
+archive/issue_comments_031700.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2021-08-26T02:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31762",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31700",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -74,15 +73,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_031763.json:
+archive/issue_comments_031701.json:
 ```json
 {
     "body": "outdated, should close",
     "created_at": "2021-08-26T02:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31763",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31701",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -92,15 +91,15 @@ outdated, should close
 
 ---
 
-archive/issue_comments_031764.json:
+archive/issue_comments_031702.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2021-08-26T22:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31764",
-    "user": "@slel"
+    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31702",
+    "user": "https://github.com/slel"
 }
 ```
 
@@ -110,15 +109,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_031765.json:
+archive/issue_comments_031703.json:
 ```json
 {
     "body": "There seems to be no plan to resume producing\nthe vmware image at each Sage release.\n\nIts main use was arguably to work around\nthe lack of a version of Sage for Windows.\n\nThat use case largely fell with Erik Bray's\nCygwin-based Sage installer for 64-bit Windows.\n\nThe Sage Debian Live distribution also\nprovides a versatile portable solution.\n\nIn view of that, ok to close this.",
     "created_at": "2021-08-26T22:22:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31765",
-    "user": "@slel"
+    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31703",
+    "user": "https://github.com/slel"
 }
 ```
 
@@ -140,15 +139,15 @@ In view of that, ok to close this.
 
 ---
 
-archive/issue_comments_031766.json:
+archive/issue_comments_031704.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2021-09-01T07:08:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4331",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31766",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/4331#issuecomment-31704",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

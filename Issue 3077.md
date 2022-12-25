@@ -6,7 +6,7 @@ archive/issues_003077.json:
     "body": "Assignee: @garyfurnish\n\nKeywords: pbuild\n\npbuild does not return an exceptional value to the operating system on failure.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3077\n\n",
     "created_at": "2008-05-02T10:06:58Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003077.json:
     "title": "pbuild does not return properly on failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3077",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -32,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3077
 
 ---
 
-archive/issue_comments_021229.json:
+archive/issue_comments_021185.json:
 ```json
 {
     "body": "Attachment [trac_3077.patch](tarball://root/attachments/some-uuid/ticket3077/trac_3077.patch) by @garyfurnish created at 2008-05-02 10:10:21",
     "created_at": "2008-05-02T10:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21229",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21185",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -50,15 +50,15 @@ Attachment [trac_3077.patch](tarball://root/attachments/some-uuid/ticket3077/tra
 
 ---
 
-archive/issue_comments_021230.json:
+archive/issue_comments_021186.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-02T10:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21230",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21186",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -68,15 +68,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_021231.json:
+archive/issue_comments_021187.json:
 ```json
 {
     "body": "The easy test case for this is to create a cython failure and try to sage -br.  Prepatch it runs sage and postpatch it does not.",
     "created_at": "2008-05-02T10:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21231",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21187",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -86,15 +86,15 @@ The easy test case for this is to create a cython failure and try to sage -br.  
 
 ---
 
-archive/issue_comments_021232.json:
+archive/issue_comments_021188.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-02T12:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21232",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -104,15 +104,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021233.json:
+archive/issue_comments_021189.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.rc0",
     "created_at": "2008-05-02T12:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3077",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21233",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3077#issuecomment-21189",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

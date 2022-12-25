@@ -6,15 +6,14 @@ archive/issues_000646.json:
     "body": "Assignee: @williamstein\n\n\n```\n---------- Forwarded message ----------\nFrom: Kate Minola <kate01123@gmail.com>\nDate: Sep 12, 2007 7:27 AM\nSubject: [sage-support] sage-2.8.4.1 build report\nTo: sage-support@googlegroups.com\n\n\n\nWilliam,\n\nsage-2.8.4.1 built and successfully passed all\ntests on the following architectures:\n\n  x86-Linux (pentium4-fc6)\n  x86_64-Linux (fc6)\n\nOn ia64-Linux, sage-2.8.4.1 only failed one test:\n      sage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n      [...]\n      File \"base.pyx\", line 274, in base.TransformGroup.get_transformation\n        self.T = Transformation(self._scale, self._rot, self._trans)\n      File \"transform.pyx\", line 37, in transform.Transformation.__init__\n        t = atan2(vy,vz) + pi/2\n    ValueError: math domain error\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/646\n\n",
     "created_at": "2007-09-13T05:42:53Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "plot3d error on itanium",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/646",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -57,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/646
 
 ---
 
-archive/issue_comments_003352.json:
+archive/issue_comments_003339.json:
 ```json
 {
     "body": "Attachment [itanium-atan2.patch](tarball://root/attachments/some-uuid/ticket646/itanium-atan2.patch) by @robertwb created at 2007-09-13 05:43:35",
     "created_at": "2007-09-13T05:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3352",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3339",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -75,15 +74,15 @@ Attachment [itanium-atan2.patch](tarball://root/attachments/some-uuid/ticket646/
 
 ---
 
-archive/issue_comments_003353.json:
+archive/issue_comments_003340.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-13T05:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3353",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3340",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -93,15 +92,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_003354.json:
+archive/issue_comments_003341.json:
 ```json
 {
     "body": "Looks like itanium sets errno on atan2(0,0), whereas other processors\nreturn 0. Here's a fix.\n\nI am going to rewrite the function to be cleaner and avoid all use of atan.",
     "created_at": "2007-09-13T05:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3354",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3341",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -114,15 +113,15 @@ I am going to rewrite the function to be cleaner and avoid all use of atan.
 
 ---
 
-archive/issue_comments_003355.json:
+archive/issue_comments_003342.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-09-13T05:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3355",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3342",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -132,15 +131,15 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
-archive/issue_comments_003356.json:
+archive/issue_comments_003343.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-13T06:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3356",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3343",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -150,15 +149,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_003357.json:
+archive/issue_comments_003344.json:
 ```json
 {
     "body": "Still broken:\n\n```\nWilliam,\n\nThe patch as written gives the same error.  However if you\nchange line 37 of the patch from\n    if vx == vy == 0:\nto\n    if vy == vz == 0:\n(since atan2() is taking arguments vy and vz) then\nI get a different error on ia64-Linux:\n\nsage -t  devel/sage-main/sage/plot/plot3d/plot3d.py\n**********************************************************************\nFile \"plot3d.py\", line 19:\n   sage: S.show()\nExpected nothing\nGot:\n   6.0\n   <type 'sage.rings.real_double.RealDoubleElement'>\n   0.0\n   0.0\n**********************************************************************\n```\n",
     "created_at": "2007-09-13T15:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3357",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3344",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -193,15 +192,15 @@ Got:
 
 ---
 
-archive/issue_comments_003358.json:
+archive/issue_comments_003345.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-09-13T15:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3358",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3345",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -211,15 +210,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_003359.json:
+archive/issue_comments_003346.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-09-13T15:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3359",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3346",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -229,15 +228,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_003360.json:
+archive/issue_comments_003347.json:
 ```json
 {
     "body": "Attachment [better-plot3d-rot.patch](tarball://root/attachments/some-uuid/ticket646/better-plot3d-rot.patch) by @williamstein created at 2007-09-13 18:20:18\n\nHopefully this is not fixed (it's in 2.8.4.2)",
     "created_at": "2007-09-13T18:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3360",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3347",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -249,15 +248,15 @@ Hopefully this is not fixed (it's in 2.8.4.2)
 
 ---
 
-archive/issue_comments_003361.json:
+archive/issue_comments_003348.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-13T18:20:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3361",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/646#issuecomment-3348",
+    "user": "https://github.com/williamstein"
 }
 ```
 

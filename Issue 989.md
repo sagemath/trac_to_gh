@@ -6,15 +6,14 @@ archive/issues_000989.json:
     "body": "Assignee: tba\n\n\n```\nsage: edit?\n```\n\npresently yields\n\n```\n ...\n          sage: import sage.misc.edit_module as m\n          sage: m.set_edit_template(\"vi -c {line} {file}\")\n ...\n```\n\nwhereas the last line should read\n\n```\n         sage: m.set_edit_template(\"vi -c ${line} ${file}\")\n```\n\ni.e., $ gets stripped from EXAMPLE text where it should not.\n\nIssue created by migration from https://trac.sagemath.org/ticket/989\n\n",
     "created_at": "2007-10-25T01:14:24Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "Stripping $ from documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/989",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 Assignee: tba
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/989
 
 ---
 
-archive/issue_comments_006036.json:
+archive/issue_comments_006016.json:
 ```json
 {
     "body": "$ signs are stripped from docstrings in sage/misc/sagedoc.py, as part of an effort to convert LaTeX math markup to plain text.\n\nPerhaps the right fix is to notice doctests, and disable these modifications for that part of the docstring.",
     "created_at": "2007-10-27T18:38:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/989",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6036",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6016",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -69,15 +68,15 @@ Perhaps the right fix is to notice doctests, and disable these modifications for
 
 ---
 
-archive/issue_comments_006037.json:
+archive/issue_comments_006017.json:
 ```json
 {
     "body": "Attachment [683-989-ncalexan-1.patch](tarball://root/attachments/some-uuid/ticket989/683-989-ncalexan-1.patch) by @ncalexan created at 2007-11-04 07:32:28\n\nChangelog for the patch:\n\n683,989: add 'nodetex' directive to docstrings: doesn't strip (la)tex code from docstrings.\n\nThe first line of a docstring is parsed as a comma-separated list of\ndirectives (no whitespace in directives!).  For example:\n\n\n```\nr\"\"\"nodetex,notyetimplemented\n...\n\"\"\"\n```\n\n\nIf 'nodetex' is one of the directives, then no (la)tex code is stripped from\nthe docstring.  The model was the 'nodoctest' directive already found at the\ntop of a file.",
     "created_at": "2007-11-04T07:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/989",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6037",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6017",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -106,15 +105,15 @@ top of a file.
 
 ---
 
-archive/issue_comments_006038.json:
+archive/issue_comments_006018.json:
 ```json
 {
     "body": "applied to 2.8.12.rc0",
     "created_at": "2007-11-06T21:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/989",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6038",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6018",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -124,15 +123,15 @@ applied to 2.8.12.rc0
 
 ---
 
-archive/issue_comments_006039.json:
+archive/issue_comments_006019.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-06T21:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/989",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6039",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/989#issuecomment-6019",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

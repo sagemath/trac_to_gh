@@ -6,7 +6,7 @@ archive/issues_000003.json:
     "body": "Assignee: somebody\n\nSummary says it all.....\n\nFirefox version string:\n\nMozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.6) Gecko/20060728 Firefox/1.5.0.6\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3\n\n",
     "created_at": "2006-09-11T11:22:29Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -41,7 +41,7 @@ archive/issue_comments_000010.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3#issuecomment-10",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -59,7 +59,7 @@ archive/issue_comments_000011.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3#issuecomment-11",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -77,7 +77,7 @@ archive/issue_comments_000012.json:
     "issue": "https://github.com/sagemath/sagetest/issues/3",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/3#issuecomment-12",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

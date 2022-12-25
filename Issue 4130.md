@@ -6,7 +6,7 @@ archive/issues_004130.json:
     "body": "Assignee: mabshoff\n\nIt looks like OS X 10.4.11's version of `which` doesn't behave very well...\n\n\n```\nhamptonio: nomad66-214:~ mh$ echo $PORTS_PATH\n[1:03pm] hamptonio: no port in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current\n[1:03pm] hamptonio: nomad66-214:~ mh$ echo $FINK_PATH\n[1:03pm] hamptonio: no fink in /Volumes/D/sage-3.0.2 /Library/Frameworks/Python.framework/Versions/Current/bin /bin /sbin /usr/bin /usr/sbin /usr/local/bin /usr/local/teTeX/bin/i386-apple-darwin-current\n[1:03pm] hamptonio: nomad66-214:~ mh$ if [ \"$PORTS_PATH\" -o \"$FINK_PATH\" ]; then echo \"*\"; fi\n[1:03pm] hamptonio: *\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4130\n\n",
     "created_at": "2008-09-15T20:11:56Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004130.json:
     "title": "#4125 does not work on OS X 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4130",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: mabshoff
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4130
 
 ---
 
-archive/issue_comments_029946.json:
+archive/issue_comments_029887.json:
 ```json
 {
     "body": "Attachment [trac_4130.patch](tarball://root/attachments/some-uuid/ticket4130/trac_4130.patch) by mabshoff created at 2008-09-16 03:31:25",
     "created_at": "2008-09-16T03:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4130",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29946",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29887",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -58,15 +58,15 @@ Attachment [trac_4130.patch](tarball://root/attachments/some-uuid/ticket4130/tra
 
 ---
 
-archive/issue_comments_029947.json:
+archive/issue_comments_029888.json:
 ```json
 {
     "body": "The attached patch has been tested on OSX 10.4 and 10.5, with and without Fink and/or MacPorts. The patch also contains a fix to sage-env that was not yet in the spkg/base repo (since -sdist copies sage-env over without committing it to the repo).\n\nCheers,\n\nMichael",
     "created_at": "2008-09-16T03:32:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4130",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29947",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29888",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -80,15 +80,15 @@ Michael
 
 ---
 
-archive/issue_comments_029948.json:
+archive/issue_comments_029889.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-16T03:32:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4130",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29948",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29889",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -98,15 +98,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_029949.json:
+archive/issue_comments_029890.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc5",
     "created_at": "2008-09-16T03:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4130",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29949",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29890",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -116,15 +116,15 @@ Merged in Sage 3.1.2.rc5
 
 ---
 
-archive/issue_comments_029950.json:
+archive/issue_comments_029891.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-16T03:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4130",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29950",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29891",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -134,15 +134,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029951.json:
+archive/issue_comments_029892.json:
 ```json
 {
     "body": "hmmm... this is still not foolproof.  If you type 'make', the first time, it dies with the proper message.  But despite not                 setting any environment vairable, the second time you run 'make', there is no error, no warning, nothing.\n\n\nI assume that the prereq script doesn't get called every time make is run?  Maybe the fink/ports detection should go at the start.",
     "created_at": "2008-09-17T05:09:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4130",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29951",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29892",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -155,15 +155,15 @@ I assume that the prereq script doesn't get called every time make is run?  Mayb
 
 ---
 
-archive/issue_comments_029952.json:
+archive/issue_comments_029893.json:
 ```json
 {
     "body": "Replying to [comment:4 dphilp]:\n> hmmm... this is still not foolproof.  If you type 'make', the first time, it dies with the proper message.  But despite not                 setting any environment vairable, the second time you run 'make', there is no error, no warning, nothing.\n> \n> \n> I assume that the prereq script doesn't get called every time make is run?  Maybe the fink/ports detection should go at the start.\n\nThat issue is pretty much covered by #3140. This ticket was about fixing the OSX 10.4 issues, so closing it is valid. But thanks for being persistent :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-17T11:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4130",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29952",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4130#issuecomment-29893",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

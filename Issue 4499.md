@@ -6,7 +6,7 @@ archive/issues_004499.json:
     "body": "Assignee: cwitty\n\nCurrently, we have\n\n\n```\nsage: latex(sech)\n\\sech\nsage: latex(csch)\n\\csch\n```\n\n\nApparently \\sech and \\csch are not recognized in LaTeX.  These should be\n\n\n```\nsage: latex(sech)\n\\text{sech}\nsage: latex(csch)\n\\text{csch}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4499\n\n",
     "created_at": "2008-11-12T01:16:42Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004499.json:
     "title": "Fix latex for sech and csch",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4499",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: cwitty
@@ -49,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4499
 
 ---
 
-archive/issue_comments_033302.json:
+archive/issue_comments_033237.json:
 ```json
 {
     "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-11-12T01:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33302",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33237",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing assignee from cwitty to @mwhansen.
 
 ---
 
-archive/issue_comments_033303.json:
+archive/issue_comments_033238.json:
 ```json
 {
     "body": "Attachment [trac_4499.patch](tarball://root/attachments/some-uuid/ticket4499/trac_4499.patch) by @mwhansen created at 2008-11-12 01:25:57",
     "created_at": "2008-11-12T01:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33303",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33238",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +85,15 @@ Attachment [trac_4499.patch](tarball://root/attachments/some-uuid/ticket4499/tra
 
 ---
 
-archive/issue_comments_033304.json:
+archive/issue_comments_033239.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-11-12T01:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33304",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33239",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -103,15 +103,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_033305.json:
+archive/issue_comments_033240.json:
 ```json
 {
     "body": "I'm using sage-3.1.4 here, so I can't say anything about applying this patch against the latest alpha release of sage-3.2. Perhaps other folks can review the patch using the latest alpha release. Before applying the patch **trac_4499.patch** against sage-3.1.4, we'd get these:\n\n```\nsage: # sech and arcsech\nsage: sech._latex_()\n'\\\\sech'\nsage: asech._latex_()\n'\\\\sech^{-1}'\nsage: arcsech._latex_()\n'\\\\sech^{-1}'\nsage: latex(sech)\n\\sech\nsage: latex(asech)\n\\sech^{-1}\nsage: latex(arcsech)\n\\sech^{-1}\nsage:\nsage: # csch and arccsch\nsage: csch._latex_()\n'\\\\csch'\nsage: acsch._latex_()\n'\\\\csch^{-1}'\nsage: arccsch._latex_()\n'\\\\csch^{-1}'\nsage: latex(csch)\n\\csch\nsage: latex(acsch)\n\\csch^{-1}\nsage: latex(arccsch)\n\\csch^{-1}\n```\n\nAs far as I know, the returned LaTeX strings would cause tex-live to go berserk and complain about \"Undefined control sequence\" even if we compile with or without the macro `\\usepackage{amsmath,amssymb,amsthm`} in the preamble of a .tex file.\n\n\n\nAfter applying the patch against sage-3.1.4, we get these:\n\n```\nsage: # sech and arcsech\nsage: sech._latex_()\n'\\\\text{sech}'\nsage: asech._latex_()\n'\\\\text{sech}^{-1}'\nsage: arcsech._latex_()\n'\\\\text{sech}^{-1}'\nsage: latex(sech)\n\\text{sech}\nsage: latex(asech)\n\\text{sech}^{-1}\nsage: latex(arcsech)\n\\text{sech}^{-1}\nsage: \nsage: # csch and arccsch\nsage: csch._latex_()\n'\\\\text{csch}'\nsage: acsch._latex_()\n'\\\\text{csch}^{-1}'\nsage: arccsch._latex_()\n'\\\\text{csch}^{-1}'\nsage: \nsage: latex(csch)\n\\text{csch}\nsage: latex(acsch)\n\\text{csch}^{-1}\nsage: latex(arccsch)\n\\text{csch}^{-1}\n```\n\nThe returned LaTeX strings now look reasonable to me and work as expected when embedded within math mode and using the macro `\\usepackage{amsmath`}.",
     "created_at": "2008-11-12T03:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33305",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33240",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -190,15 +190,15 @@ The returned LaTeX strings now look reasonable to me and work as expected when e
 
 ---
 
-archive/issue_comments_033306.json:
+archive/issue_comments_033241.json:
 ```json
 {
     "body": "Looks good to me too.",
     "created_at": "2008-11-12T17:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33306",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33241",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -208,15 +208,15 @@ Looks good to me too.
 
 ---
 
-archive/issue_comments_033307.json:
+archive/issue_comments_033242.json:
 ```json
 {
     "body": "From pure LaTeX typesetting point of view I would except operators to be consistent with standard operators, that's something like ` \\mathop {\\operator`@`font csch}\\nolimits ` instead of ` \\text{csch} `, when paper/book is in last stages it might be useful to alter behaviour of `\\operator`@`font` for example (that's used in all `\\sin`, `\\cos`, etc...) and then `\\text` might be standing out, anyway the `\\text` workaround seems to work if no style changes are applied",
     "created_at": "2008-11-13T10:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33307",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33242",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -226,15 +226,15 @@ From pure LaTeX typesetting point of view I would except operators to be consist
 
 ---
 
-archive/issue_comments_033308.json:
+archive/issue_comments_033243.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-14T03:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33308",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33243",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -244,15 +244,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_033309.json:
+archive/issue_comments_033244.json:
 ```json
 {
     "body": "Merged in Sage 3.1.rc1",
     "created_at": "2008-11-14T03:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33309",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33244",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -262,15 +262,15 @@ Merged in Sage 3.1.rc1
 
 ---
 
-archive/issue_comments_033310.json:
+archive/issue_comments_033245.json:
 ```json
 {
     "body": "This should be 3.2.rc1",
     "created_at": "2008-11-15T08:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4499",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33310",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4499#issuecomment-33245",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_008993.json:
     "body": "Assignee: @williamstein\n\nKeywords: polynomial quotient ring, singular\n\nCurrently there is no representation of univariate polynomial quotient rings in the Singular interface; it was only implemented for the multivariate case.\n\nThe attached patch implements it:\n\n```\nsage: P.<x> = QQ[]\nsage: Q.<xi> = P.quo([(x^2+1)])\nsage: singular(xi)\nxi\nsage: singular(Q)\n//   characteristic : 0\n//   number of vars : 1\n//        block   1 : ordering lp\n//                  : names    xi\n//        block   2 : ordering C\n// quotient ring from ideal\n_[1]=xi^2+1\nsage: (singular(xi)*singular(xi)).NF('std(0)')\n-1\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8993\n\n",
     "created_at": "2010-05-19T16:48:31Z",
     "labels": [
-        "interfaces",
-        "major",
-        "enhancement"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Representation of polynomial quotient rings in Singular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8993",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: @williamstein
@@ -52,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8993
 
 ---
 
-archive/issue_comments_083158.json:
+archive/issue_comments_083022.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-19T16:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83158",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83022",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -70,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083159.json:
+archive/issue_comments_083023.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-25T01:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83159",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83023",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -88,15 +86,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_083160.json:
+archive/issue_comments_083024.json:
 ```json
 {
     "body": "Mostly looks good, the only issue is that you should never \"import sage\" (or sage.all) from within the sage library.",
     "created_at": "2010-05-25T01:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83160",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83024",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -106,15 +104,15 @@ Mostly looks good, the only issue is that you should never "import sage" (or sag
 
 ---
 
-archive/issue_comments_083161.json:
+archive/issue_comments_083025.json:
 ```json
 {
     "body": "Replying to [comment:2 robertwb]:\n> Mostly looks good, the only issue is that you should never \"import sage\" (or sage.all) from within the sage library. \n\nDo I understand correctly:\n\nIt is OK that I do `from sage.all import singular` inside one method, but I should not do `import sage` on top of the file?\n\nI'll submit a correction soon.\n\nCheers,\n\nSimon",
     "created_at": "2010-05-25T07:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83161",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83025",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -135,15 +133,15 @@ Simon
 
 ---
 
-archive/issue_comments_083162.json:
+archive/issue_comments_083026.json:
 ```json
 {
     "body": "Yes.",
     "created_at": "2010-05-25T07:38:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83162",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83026",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -153,15 +151,15 @@ Yes.
 
 ---
 
-archive/issue_comments_083163.json:
+archive/issue_comments_083027.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-25T08:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83163",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83027",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -171,15 +169,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_083164.json:
+archive/issue_comments_083028.json:
 ```json
 {
     "body": "Replying to [comment:3 SimonKing]:\n> ...\n> It is OK that I do `from sage.all import singular` inside one method, but I should not do `import sage` on top of the file?\n> \n> I'll submit a correction soon.\n\nDone!",
     "created_at": "2010-05-25T08:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83164",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83028",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -195,15 +193,15 @@ Done!
 
 ---
 
-archive/issue_comments_083165.json:
+archive/issue_comments_083029.json:
 ```json
 {
     "body": "Patch looks okay, doctests pass.",
     "created_at": "2010-07-21T15:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83165",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83029",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -213,15 +211,15 @@ Patch looks okay, doctests pass.
 
 ---
 
-archive/issue_comments_083166.json:
+archive/issue_comments_083030.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-21T15:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83166",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83030",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -231,15 +229,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083167.json:
+archive/issue_comments_083031.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-07-22T02:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83167",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83031",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -249,15 +247,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_083168.json:
+archive/issue_comments_083032.json:
 ```json
 {
     "body": "Please include the ticket number in the commit messages for your patches!",
     "created_at": "2010-07-22T02:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83168",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83032",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -267,15 +265,15 @@ Please include the ticket number in the commit messages for your patches!
 
 ---
 
-archive/issue_comments_083169.json:
+archive/issue_comments_083033.json:
 ```json
 {
     "body": "Attachment [8993_poly_quotient_in_singular.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.patch) by @simon-king-jena created at 2010-07-22 08:11:25\n\nImplement polynomial quotient rings in singular interface",
     "created_at": "2010-07-22T08:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83169",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83033",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -287,15 +285,15 @@ Implement polynomial quotient rings in singular interface
 
 ---
 
-archive/issue_comments_083170.json:
+archive/issue_comments_083034.json:
 ```json
 {
     "body": "Attachment [8993_poly_quotient_in_singular.p1.patch](tarball://root/attachments/some-uuid/ticket8993/8993_poly_quotient_in_singular.p1.patch) by @simon-king-jena created at 2010-07-22 08:12:02\n\nAvoid \"import sage\" according to the reviewer's request - apply after first patch",
     "created_at": "2010-07-22T08:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83170",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83034",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -307,15 +305,15 @@ Avoid "import sage" according to the reviewer's request - apply after first patc
 
 ---
 
-archive/issue_comments_083171.json:
+archive/issue_comments_083035.json:
 ```json
 {
     "body": "Replying to [comment:7 ddrake]:\n> Please include the ticket number in the commit messages for your patches!\n\nI changed the commit message accordingly and updated the attachments. I hope this entitles me to switch back to \"positive review\".",
     "created_at": "2010-07-22T08:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83171",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83035",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -328,15 +326,15 @@ I changed the commit message accordingly and updated the attachments. I hope thi
 
 ---
 
-archive/issue_comments_083172.json:
+archive/issue_comments_083036.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2010-07-22T08:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83172",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83036",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -346,15 +344,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_083173.json:
+archive/issue_comments_083037.json:
 ```json
 {
     "body": "Replying to [comment:8 SimonKing]:\n> I changed the commit message accordingly and updated the attachments. I hope this entitles me to switch back to \"positive review\".\n\nIt certainly does. Thanks for fixing this! It should get merged in 4.5.2.alpha1.",
     "created_at": "2010-07-22T09:11:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83173",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83037",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -367,15 +365,15 @@ It certainly does. Thanks for fixing this! It should get merged in 4.5.2.alpha1.
 
 ---
 
-archive/issue_comments_083174.json:
+archive/issue_comments_083038.json:
 ```json
 {
     "body": "Merged both patches in 4.5.2.alpha1.",
     "created_at": "2010-07-22T23:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83174",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83038",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -385,15 +383,15 @@ Merged both patches in 4.5.2.alpha1.
 
 ---
 
-archive/issue_comments_083175.json:
+archive/issue_comments_083039.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-22T23:51:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83175",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8993#issuecomment-83039",
+    "user": "https://github.com/dandrake"
 }
 ```
 

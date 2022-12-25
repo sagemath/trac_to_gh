@@ -6,15 +6,14 @@ archive/issues_003109.json:
     "body": "Assignee: @williamstein\n\nImplement P.divide(n) for P a point on an elliptic curve and n an integer.  This will:\n\n1. try to find an explicit point Q defined over the same field as P such that n*Q == P.\n2. If no such Q exists, raise a ValueError.\n\nAlso, implement P.is_divisible_by(n) trivially in terms of the above, and document\nthe connection between the two functions.  Also, have both implemented in terms of\na third function that just finds the polynomial whose root is x(Q), so we\ncan implement is_divisible_by more efficiently. \n\nAn algorithm to do this is described at the end of section 3 of \n    http://wstein.org/papers/kolyconj/\n\nIf you see this ticket and think of doing this, please immediately contact me (wstein`@`gmail.com) before, since I'm planning on doing this very soon.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3109\n\n",
     "created_at": "2008-05-06T02:19:46Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "elliptic curves -- implement P.divide(n) for P a point on an elliptic curve and n an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3109",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3109
 
 ---
 
-archive/issue_comments_021483.json:
+archive/issue_comments_021439.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2008-05-06T02:20:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21483",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21439",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -60,15 +59,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_021484.json:
+archive/issue_comments_021440.json:
 ```json
 {
     "body": "Attachment [sage-3109-part1.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part1.patch) by @williamstein created at 2008-05-06 17:24:59\n\n\n```\n{\nCremona:\n>  For ages Magma would only do Inverse(MultiplicationBymMap(m))(P) which\n>  would throw a run-time error if there were no solutions and give one\n>  solution only if there were any.  So I wronte my own, until they got\n>  around to DivisionPoints(P,m) which returns a list, possibly empty.\n\nSomething like that is next on my list.  Maybe instead of P.divide(m),\nwhich is what I planned, for consistency \nI should do P.division_points(m), which can return a possibly empty list.    \n```\n",
     "created_at": "2008-05-06T17:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21484",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21440",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -93,15 +92,15 @@ I should do P.division_points(m), which can return a possibly empty list.
 
 ---
 
-archive/issue_comments_021485.json:
+archive/issue_comments_021441.json:
 ```json
 {
     "body": "this adds lots of docs and fixes bugs.  finishes implementing full_division_polynomial and multiplication by n.",
     "created_at": "2008-05-07T04:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21485",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21441",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -111,15 +110,15 @@ this adds lots of docs and fixes bugs.  finishes implementing full_division_poly
 
 ---
 
-archive/issue_comments_021486.json:
+archive/issue_comments_021442.json:
 ```json
 {
     "body": "Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part2.patch) by @williamstein created at 2008-05-07 07:10:24",
     "created_at": "2008-05-07T07:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21486",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21442",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -129,15 +128,15 @@ Attachment [sage-3109-part2.patch](tarball://root/attachments/some-uuid/ticket31
 
 ---
 
-archive/issue_comments_021487.json:
+archive/issue_comments_021443.json:
 ```json
 {
     "body": "Attachment [sage-3109-part3.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3109-part3.patch) by @williamstein created at 2008-05-07 07:10:41",
     "created_at": "2008-05-07T07:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21487",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21443",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -147,15 +146,15 @@ Attachment [sage-3109-part3.patch](tarball://root/attachments/some-uuid/ticket31
 
 ---
 
-archive/issue_comments_021488.json:
+archive/issue_comments_021444.json:
 ```json
 {
     "body": "Review under way.",
     "created_at": "2008-05-07T07:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21488",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21444",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -165,15 +164,15 @@ Review under way.
 
 ---
 
-archive/issue_comments_021489.json:
+archive/issue_comments_021445.json:
 ```json
 {
     "body": "I applied the 3 patches in succession with no problems, and all the doctests in sage/schemes/elliptic_curves pass.\n\nAll very well written and commented and documented with excellent doctests.  I do have two issues, one more important than the other:\n\n* (less important) We currently have no support for the coordinate ring of an elliptic curve (which would be the quotient ring K[x,y]/(F) where F is the bivariate polynomial defining E, and K is the field of definition.  This lack is rather noticable in the code, where this ring has to be created on the fly to do some reduction and is then thrown away.  A better solution, surely, would be to define a function E.coordinate_ring() and have these division polynomials live there.  I suspect that this suggestion would get a response (probably from David Kohel) that this should all be done as part of much more general scheme machinery, which is correct but will discourage someone (like me) from actually doing what would be pretty simple and useful.\n\n* (more important) You restrict to short Weierstrass equations!  Why?  Users will want the general case.  Don't be nervous about the horrible more general recursion formulae (where as yo uobserve, there are typos in Solverman even in the simple case a1=a2=a3=0) since you can find them *all\" in Sage already, not *once* but *twice* already!  See my gp script ell_divpt.gp and my C++ source file qcurves/divpol.cc\n\nI really really think that we should implement this more general version for division polynomials now, even though your code for P.division_points() cleverly gets around it.\n\nTo end on a more positive note: this is very well written and a model for others to follow!",
     "created_at": "2008-05-07T08:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21489",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21445",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -193,15 +192,15 @@ To end on a more positive note: this is very well written and a model for others
 
 ---
 
-archive/issue_comments_021490.json:
+archive/issue_comments_021446.json:
 ```json
 {
     "body": "Regarding the referee's report:\n\n1. Regarding the coordinate ring, the issue is precisely what you say.  However I think that we shouldn't define coordinate ring code until we use it in a couple of places to see what the real issues are.   E.g., term orders, variable order, etc.  I think that should come *later* after the code I've defined has been used and works well and is well tested.  That should only be factored out when it is understood, not the other way around.  If I had written coordinate ring 3 days ago, it would have been completely useless for this code anyways, since I would have got the variable and term orders wrong.   AND maybe the variable and term order needed here is wrong for general affine coordinate rings.\n\n2. Regarding only doing the short Weierstrass case.  It's all I need.  The more general case would be fine to do but should be a separate enhancement ticket.   And if it slows things down a lot -- and this *does* matter, then I will be unhappy.",
     "created_at": "2008-05-07T15:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21490",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21446",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -215,15 +214,15 @@ Regarding the referee's report:
 
 ---
 
-archive/issue_comments_021491.json:
+archive/issue_comments_021447.json:
 ```json
 {
     "body": "Attachment [sage-3019-part4.patch](tarball://root/attachments/some-uuid/ticket3109/sage-3019-part4.patch) by @williamstein created at 2008-05-07 15:39:16\n\nsome slight refactoring in ell_point.py",
     "created_at": "2008-05-07T15:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21491",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21447",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -235,15 +234,15 @@ some slight refactoring in ell_point.py
 
 ---
 
-archive/issue_comments_021492.json:
+archive/issue_comments_021448.json:
 ```json
 {
     "body": "Comments on the comments:\n\n1. I agree entirely.  I really believe that we need to get the basics right before being too fancy, since however clever the structures are one still has to get the formulas right!\n\n2. So be it.  I doubt there would be a time penalty.  I may just do that myself (talk is cheap etc) but that should not delay this one.\n\nGo for it!",
     "created_at": "2008-05-07T15:45:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21492",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21448",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -259,15 +258,15 @@ Go for it!
 
 ---
 
-archive/issue_comments_021493.json:
+archive/issue_comments_021449.json:
 ```json
 {
     "body": "John said:\n> (where as yo uobserve, there are typos in Solverman even in the simple case a1=a2=a3=0)\n\nI just want to point out that there were no typos in Silverman in that case.  What is true\nis that the formula he gives is right except it does not give the multiplication by m\nmap in exact one case -- the y-coordinate for m=2.  That's a special case the exercise\ndoes not treat correctly.  It's not a typo but a mistake.  But for all other m it is right\nand there are no typos.\n\nRegarding your comments on my comments:\nYep, you should definitely go for it!  I just wrote this code since I need it for some research\nI'm doing _now_.  Also, since it is for research I care a *lot* that it is right and that I understand it, which is partly why it is very well documented and tested.  If it is wrong, it is going to confuse me a lot later.  Oh, speed matters some too.",
     "created_at": "2008-05-07T15:47:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21493",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21449",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -288,15 +287,15 @@ I'm doing _now_.  Also, since it is for research I care a *lot* that it is right
 
 ---
 
-archive/issue_comments_021494.json:
+archive/issue_comments_021450.json:
 ```json
 {
     "body": "Merged all four patches in Sage 3.0.2.alpha0",
     "created_at": "2008-05-07T16:09:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21494",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21450",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -306,15 +305,15 @@ Merged all four patches in Sage 3.0.2.alpha0
 
 ---
 
-archive/issue_comments_021495.json:
+archive/issue_comments_021451.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-07T16:09:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21495",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3109#issuecomment-21451",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

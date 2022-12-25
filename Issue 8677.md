@@ -6,15 +6,14 @@ archive/issues_008677.json:
     "body": "Assignee: GeorgSWeber\n\nIn a recent thread: http://groups.google.com/group/sage-devel/browse_thread/thread/97f1e17019caf2d0# it was reported, that  \" sage 4.3.5 won't build on Red Hat Enterprise Linux 5.4: File exists: '/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure' \" The partial log output was:\n\n\n```\npython `which cython` --embed-positions --directive cdivision=True\n-I/usr/local_machine/sage-4.3.5/devel/sage-main -o sage/stats/hmm/chmm.c\nsage/stats/hmm/chmm.pyx\nsage/stats/hmm/chmm.pyx -->\n/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/stats/hmm/chmm.pyx\npython `which cython` --embed-positions --directive cdivision=True\n-I/usr/local_machine/sage-4.3.5/devel/sage-main -o\nsage/structure/coerce_dict.c sage/structure/coerce_dict.pyx\nsage/structure/coerce_dict.pyx -->\n/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure/coerce_dict.pyx\npython `which cython` --emTraceback (most recent call last):\n   File \"setup.py\", line 754, in <module>\n     execute_list_of_commands(queue)\n   File \"setup.py\", line 250, in execute_list_of_commands\n     execute_list_of_commands_in_parallel(command_list, nthreads)\n   File \"setup.py\", line 191, in execute_list_of_commands_in_parallel\n     for r in p.imap(apply_pair, command_list):\n   File\n\"/usr/local_machine/sage-4.3.5/local/lib/python/multiprocessing/pool.py\",\nline 520, in next\n     raise value\nOSError: [Errno 17] File exists:\n'/usr/local_machine/sage-4.3.5/local//lib/python/site-packages//sage/structure'\nsage: There was an error installing modified sage library code.\n\nERROR installing SAGE\n\nreal    1m56.499s\nuser    8m27.884s\nsys     0m19.321s\nsage: An error occurred while installing sage-4.3.5\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /usr/local_machine/sage-4.3.5/install.log.  Describe your computer,\noperating system, etc.\nIf you want to try to fix the problem yourself, *don't* just cd to\n/usr/local_machine/sage-4.3.5/spkg/build/sage-4.3.5 and type 'make\ncheck' or whatever is appropriate.\nInstead, the following commands setup all environment variables\ncorrectly and load a subshell for you to debug the error:\n(cd '/usr/local_machine/sage-4.3.5/spkg/build/sage-4.3.5' &&\n'/usr/local_machine/sage-4.3.5/sage' -sh)\nWhen you are done debugging, you can type \"exit\" to leave the\nsubshell.\nmake[1]: *** [installed/sage-4.3.5] Error 1\nmake[1]: Leaving directory `/usr/local_machine/sage-4.3.5/spkg'\n\nreal    59m35.961s\nuser    64m50.926s\nsys     11m16.115s\nError building Sage.\nwarning:\n/usr/local_machine/sage-4.3.5/devel/sage-main/sage/structure/parent_base.pyx:63:4:\nOverriding cdef method with def method.\nwarning:\n/usr/local_machine/sage-4.3.5/devel/sage-main/sage/structure/parent.pyx:118:4:\ndict already a builtin Cython type \n```\n\nMy suspicion is, that the reason is some race condition in checking, whether during the build some directory has to be newly added, or already exists.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8677\n\n",
     "created_at": "2010-04-12T20:58:49Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "race condition creating dirs during Sage build on RH 5.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8677",
-    "user": "GeorgSWeber"
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 Assignee: GeorgSWeber
@@ -92,15 +91,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8677
 
 ---
 
-archive/issue_comments_078963.json:
+archive/issue_comments_078833.json:
 ```json
 {
     "body": "That is consistent with the fact that I have previously built Sage successfully: this was exactly the same version of Sage, on exactly the same hardware.\u00a0 The only difference between the two situations was that before the unsuccessful build I did 'export MAKE=\"make -j6\"' to make the build process use 6 jobs in parallel, whereas the successful build used only one build job.",
     "created_at": "2010-04-13T09:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78963",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78833",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -110,15 +109,15 @@ That is consistent with the fact that I have previously built Sage successfully:
 
 ---
 
-archive/issue_comments_078964.json:
+archive/issue_comments_078834.json:
 ```json
 {
     "body": "Yep, this is a race condition. I hit exactly this problem for the \"second\" half of the parallel build stuff -- namely dispatching calls to gcc in parallel. The fix there would work here: at some point before the parallel dispatch, I walked the tree and made sure to create all the necessary directories. The other option would be to catch and ignore the `OSError`, but I think that's a horrible idea. Well, that's not completely true -- if you checked the error message, and confirmed that the filename it complained about was a directory that does now exist, it would probably be fine to ignore it and move on.\n\nThere's nothing RH specific about this -- I think it was just bad luck.",
     "created_at": "2010-04-14T06:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78964",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78834",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -130,15 +129,15 @@ There's nothing RH specific about this -- I think it was just bad luck.
 
 ---
 
-archive/issue_comments_078965.json:
+archive/issue_comments_078835.json:
 ```json
 {
     "body": "I setup NFS on disk.math and sage.math, and when I export an NSF share using the async option two things happen: \n\n    (1) the filesystem is noticeably *much* faster,\n\n    (2) I can repeatedly get the error that is being discussed here with, e.g., MAKE=\"make -j8\" on sage.math. \n\nProbably the RedHat system Tom Coates was using has a similar NFS setup.",
     "created_at": "2010-10-02T06:26:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78965",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78835",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -154,15 +153,15 @@ Probably the RedHat system Tom Coates was using has a similar NFS setup.
 
 ---
 
-archive/issue_comments_078966.json:
+archive/issue_comments_078836.json:
 ```json
 {
     "body": "Changing priority from major to critical.",
     "created_at": "2010-10-02T06:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78966",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78836",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -172,15 +171,15 @@ Changing priority from major to critical.
 
 ---
 
-archive/issue_comments_078967.json:
+archive/issue_comments_078837.json:
 ```json
 {
     "body": "Attachment [trac_8677.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.patch) by @williamstein created at 2010-10-02 06:44:32",
     "created_at": "2010-10-02T06:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78967",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78837",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -190,15 +189,15 @@ Attachment [trac_8677.patch](tarball://root/attachments/some-uuid/ticket8677/tra
 
 ---
 
-archive/issue_comments_078968.json:
+archive/issue_comments_078838.json:
 ```json
 {
     "body": "Changing priority from critical to blocker.",
     "created_at": "2010-10-02T06:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78968",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78838",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -208,15 +207,15 @@ Changing priority from critical to blocker.
 
 ---
 
-archive/issue_comments_078969.json:
+archive/issue_comments_078839.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-10-02T06:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78969",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78839",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -226,15 +225,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_078970.json:
+archive/issue_comments_078840.json:
 ```json
 {
     "body": "With `async` set, do we need to worry more than usual about data corruption?  According to [this Linux NFS FAQ](http://nfs.sourceforge.net/#faq_b6), `async` is potentially unsafe.\n\nShould we do as Craig suggests above, e.g., `pass` in the `except` block if `dirname` now exists, but `raise` otherwise?",
     "created_at": "2010-10-02T08:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78970",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78840",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -246,15 +245,15 @@ Should we do as Craig suggests above, e.g., `pass` in the `except` block if `dir
 
 ---
 
-archive/issue_comments_078971.json:
+archive/issue_comments_078841.json:
 ```json
 {
     "body": "A correctly working NFSv3 shouldn't need the `async` options to achieve fast writes, but maybe some older servers/clients are being used? With `async`, data will be corrupted if the server crashes, but thats probably acceptable on a build system.\n\nI take issue with the patch, however. The current race seems to be \n\n```\n    if not os.path.exists(path): \n        # another process can create path here\n        os.makedirs(path) \n        # error!\n```\n\nThe correct fix would be to replace the whole if clause with \n\n```\n    try: \n        os.makedirs(path) \n    except OSError: \n        pass \n```\n\nBut the patch mixes up both. It still contains the original race and then hacks around it to trap the error.",
     "created_at": "2010-10-02T09:48:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78971",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78841",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -284,15 +283,15 @@ But the patch mixes up both. It still contains the original race and then hacks 
 
 ---
 
-archive/issue_comments_078972.json:
+archive/issue_comments_078842.json:
 ```json
 {
     "body": "> A correctly working NFSv3 shouldn't need the async options to achieve fast writes\n\nAre you just making this up, or?!\n\n> The correct fix would be to replace the whole if clause with ...\n\nI strongly disagree.  I see no point in not including the\n\n```\nif not os.path.exists(dirname):\n```\n\ncode, since that makes perfect sense when doing a serial build, which is what most people do.",
     "created_at": "2010-10-02T17:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78972",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78842",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -314,15 +313,15 @@ code, since that makes perfect sense when doing a serial build, which is what mo
 
 ---
 
-archive/issue_comments_078973.json:
+archive/issue_comments_078843.json:
 ```json
 {
     "body": "Replying to [comment:8 was]:\n> Are you just making this up, or?!\n\nThats what the aforementioned FAQ says:\n\n```\nFor the Linux implementation of NFS Version 3, using the \"async\" export option to allow faster writes is no longer necessary. NFS Version 3 explicitly allows a server to reply before writing data to disk, under controlled circumstances.\n```\n\n\n> I strongly disagree.  I see no point in not including the\n> if not os.path.exists(dirname):\n\nThe point is that the pattern \"if (look at filesystem) then (modify filesystem)\" is fundamentally flawed. Its the origin of countless security problems from temp races etc. The world is a better place without it :-) And the only way to make it die is to stomp it out wherever we encounter it...",
     "created_at": "2010-10-02T17:35:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78973",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78843",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -345,15 +344,15 @@ The point is that the pattern "if (look at filesystem) then (modify filesystem)"
 
 ---
 
-archive/issue_comments_078974.json:
+archive/issue_comments_078844.json:
 ```json
 {
     "body": "Replying to [comment:9 vbraun]:\n> Replying to [comment:8 was]:\n> > I strongly disagree.  I see no point in not including the\n> > if not os.path.exists(dirname):\n> The point is that the pattern \"if (look at filesystem) then (modify filesystem)\" is fundamentally flawed. Its the origin of countless security problems from temp races etc. The world is a better place without it :-) And the only way to make it die is to stomp it out wherever we encounter it...\n\nWhat if we use William's solution for the first \"hunk\" and Volker's for the second?  Then we can avoid many unnecessary exceptions in the first.  In the second, we only call `os.makedirs` if copying the Cython-compiled file fails.",
     "created_at": "2010-10-02T22:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78974",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78844",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -369,15 +368,15 @@ What if we use William's solution for the first "hunk" and Volker's for the seco
 
 ---
 
-archive/issue_comments_078975.json:
+archive/issue_comments_078845.json:
 ```json
 {
     "body": "Attachment [trac_8677.2.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.2.patch) by @qed777 created at 2010-10-05 05:42:28\n\nAlternate version, fix commit string.  Apply just one patch.",
     "created_at": "2010-10-05T05:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78975",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78845",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -389,15 +388,15 @@ Alternate version, fix commit string.  Apply just one patch.
 
 ---
 
-archive/issue_comments_078976.json:
+archive/issue_comments_078846.json:
 ```json
 {
     "body": "Replying to [comment:10 mpatel]:\n> What if we use William's solution for the first \"hunk\" and Volker's for the second?  Then we can avoid many unnecessary exceptions in the first.  In the second, we only call `os.makedirs` if copying the Cython-compiled file fails.\n\nI've add a patch that does this.",
     "created_at": "2010-10-05T05:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78976",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78846",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -410,15 +409,15 @@ I've add a patch that does this.
 
 ---
 
-archive/issue_comments_078977.json:
+archive/issue_comments_078847.json:
 ```json
 {
     "body": "Sorry, maybe I did not understand the issue. Is this about improving performance? Is that microsecond really going to matter in a loop where we copy files and/or call the compiler?\n\nIn any case, I think mixing the two patterns is taking the worst of both worlds ;-) I'll attach my version of the patch in case I wasn't clear enough.",
     "created_at": "2010-10-05T10:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78977",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78847",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -430,15 +429,15 @@ In any case, I think mixing the two patterns is taking the worst of both worlds 
 
 ---
 
-archive/issue_comments_078978.json:
+archive/issue_comments_078848.json:
 ```json
 {
     "body": "Yet another alternate version",
     "created_at": "2010-10-05T10:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78978",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78848",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -448,15 +447,15 @@ Yet another alternate version
 
 ---
 
-archive/issue_comments_078979.json:
+archive/issue_comments_078849.json:
 ```json
 {
     "body": "Attachment [trac_8677.3.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.3.patch) by @qed777 created at 2010-10-10 04:43:53\n\nWith a clean, built-from-scratch 4.6.alpha3 on sage.math, I applied v3, did `rm -rf devel/sage/build/` and then `env MAKE=\"make -j20\" ./sage -ba-force`.  The latter fails after a number of \n`python `which cython`` commands:\n\n```python\n[...]\nTraceback (most recent call last):\n  File \"setup.py\", line 799, in <module>\n    execute_list_of_commands(queue)\n  File \"setup.py\", line 319, in execute_list_of_commands\n    execute_list_of_commands_in_parallel(command_list, nthreads)\n  File \"setup.py\", line 252, in execute_list_of_commands_in_parallel\n    process_command_results(p.imap(apply_pair, command_list))\n  File \"setup.py\", line 256, in process_command_results\n    for r in result_values:\n  File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha3-working2/local/lib/python/multiprocessing/pool.py\", line 520, in next\n    raise value\nNameError: global name 'path' is not defined\nsage: There was an error installing modified sage library code.\n```\n\nThis doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?",
     "created_at": "2010-10-10T04:43:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78979",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78849",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -488,15 +487,15 @@ This doesn't happen with v1 or v2, but I'm not sure why.  Thoughts?
 
 ---
 
-archive/issue_comments_078980.json:
+archive/issue_comments_078850.json:
 ```json
 {
     "body": "> This doesn't happen with v1 or v2, but I'm not sure why. Thoughts?\n\nProbably on lines 687-690, \"path\" should be \"dirname\"?  I'm attaching a new version with this change.  Since all of the other patches list William as the author, I'm doing the same for this one...",
     "created_at": "2010-10-11T20:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78980",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78850",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -508,15 +507,15 @@ Probably on lines 687-690, "path" should be "dirname"?  I'm attaching a new vers
 
 ---
 
-archive/issue_comments_078981.json:
+archive/issue_comments_078851.json:
 ```json
 {
     "body": "Attachment [trac_8677.4.patch](tarball://root/attachments/some-uuid/ticket8677/trac_8677.4.patch) by @jhpalmieri created at 2010-10-11 20:38:14\n\nStill another alternate version",
     "created_at": "2010-10-11T20:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78981",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78851",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -528,15 +527,15 @@ Still another alternate version
 
 ---
 
-archive/issue_comments_078982.json:
+archive/issue_comments_078852.json:
 ```json
 {
     "body": "Replying to [comment:14 jhpalmieri]:\n> > This doesn't happen with v1 or v2, but I'm not sure why. Thoughts?\n> \n> Probably on lines 687-690, \"path\" should be \"dirname\"? [...]\n\n\"D'oh!\" Thanks, John.",
     "created_at": "2010-10-11T21:54:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78982",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78852",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -551,15 +550,15 @@ Replying to [comment:14 jhpalmieri]:
 
 ---
 
-archive/issue_comments_078983.json:
+archive/issue_comments_078853.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-10-11T23:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78983",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78853",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -569,15 +568,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_078984.json:
+archive/issue_comments_078854.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-10-21T07:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78984",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78854",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -587,15 +586,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_078985.json:
+archive/issue_comments_078855.json:
 ```json
 {
     "body": "Just for the record:\n\nThough I've seen this not very often (I think the first time with 4.6.alpha2), I can confirm that running into the race condition wasn't limited to NFS-mounted file systems...",
     "created_at": "2010-10-22T09:19:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8677",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78985",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8677#issuecomment-78855",
+    "user": "https://github.com/nexttime"
 }
 ```
 

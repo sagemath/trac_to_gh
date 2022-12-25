@@ -6,7 +6,7 @@ archive/issues_002423.json:
     "body": "Assignee: boothby\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/3aeb27037554491b\n\nThe meat of the issue is that notebook() by default allows connections from anyone to the local computer.  This patch fixes it by calling the \"interface\" option of twisted to only allow connections from a specific interface.\n\nQuoting Yi Qiang in the email discussion:\n\n\n```\nThe problem is that the notebook is never launched to bound to a specific\ninterface. Could you please file a trac# against this?\n\nThe specific issue is that in twistedconf.tac, we start the server like so:\n\nstrports.service('tls:8000:privateKey=/Users/yqiang/.sage/notebook/private.pem:certKey=/Users/yqiang/.sage/notebook/public.pem',\nfactory)\n\nIt should read something like\n\nstrports.service('tls:8000:interface=\n127.0.0.1:privateKey=/Users/yqiang/.sage/notebook/private.pem:certKey=/Users/yqiang/.sage/notebook/public.pem',\nfactory)\n\nto only listen on localhost.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2423\n\n",
     "created_at": "2008-03-07T22:41:35Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002423.json:
     "title": "notebook() opens up to the entire world by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2423",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: boothby
@@ -54,15 +54,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2423
 
 ---
 
-archive/issue_comments_016395.json:
+archive/issue_comments_016360.json:
 ```json
 {
     "body": "Attachment [notebook-interface.patch](tarball://root/attachments/some-uuid/ticket2423/notebook-interface.patch) by @jasongrout created at 2008-03-07 22:41:54",
     "created_at": "2008-03-07T22:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16395",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16360",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -72,15 +72,15 @@ Attachment [notebook-interface.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_016396.json:
+archive/issue_comments_016361.json:
 ```json
 {
     "body": "This patch looks good to me. \n\nThe only question I have is what happens when a user specifies an invalid address, but this was not handled previously so it's not a regression.\n\n+1",
     "created_at": "2008-03-07T23:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16396",
-    "user": "@yqiang"
+    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16361",
+    "user": "https://github.com/yqiang"
 }
 ```
 
@@ -94,15 +94,15 @@ The only question I have is what happens when a user specifies an invalid addres
 
 ---
 
-archive/issue_comments_016397.json:
+archive/issue_comments_016362.json:
 ```json
 {
     "body": "Looks good to me.  Thanks!",
     "created_at": "2008-03-07T23:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16397",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16362",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -112,15 +112,15 @@ Looks good to me.  Thanks!
 
 ---
 
-archive/issue_comments_016398.json:
+archive/issue_comments_016363.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-07T23:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16398",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16363",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -130,15 +130,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_016399.json:
+archive/issue_comments_016364.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc3",
     "created_at": "2008-03-07T23:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2423",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16399",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2423#issuecomment-16364",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

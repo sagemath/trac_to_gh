@@ -6,15 +6,14 @@ archive/issues_008885.json:
     "body": "Assignee: @hivert\n\nKeywords: Depreacation alias documentation\n\nCurrently if a function is a deprecated alias, the doc of the aliased function appears un the reference manual. Nothing shows that the function is deprecated. See for example the doc of\n`sage.combinat.partition.associated`\n\nIssue created by migration from https://trac.sagemath.org/ticket/8885\n\n",
     "created_at": "2010-05-05T11:06:53Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "deprecated_functions_alias and sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8885",
-    "user": "@hivert"
+    "user": "https://github.com/hivert"
 }
 ```
 Assignee: @hivert
@@ -32,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8885
 
 ---
 
-archive/issue_comments_081662.json:
+archive/issue_comments_081528.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-04-04T16:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81662",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81528",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -50,15 +49,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_081663.json:
+archive/issue_comments_081529.json:
 ```json
 {
     "body": "Should be ready for review",
     "created_at": "2011-04-04T16:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81663",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81529",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -68,15 +67,15 @@ Should be ready for review
 
 ---
 
-archive/issue_comments_081664.json:
+archive/issue_comments_081530.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2011-06-16T14:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81664",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81530",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -86,15 +85,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_081665.json:
+archive/issue_comments_081531.json:
 ```json
 {
     "body": "I applied the patch to sage-4.7.1.alpha1, did 'sage -b', and rebuilt the documentation.  Yet when I look at the doc of `sage.combinat.partition.associated`, I do not see anything saying that the function is deprecated.  Am I missing something?",
     "created_at": "2011-06-16T14:14:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81665",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81531",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -104,15 +103,15 @@ I applied the patch to sage-4.7.1.alpha1, did 'sage -b', and rebuilt the documen
 
 ---
 
-archive/issue_comments_081666.json:
+archive/issue_comments_081532.json:
 ```json
 {
     "body": "Hi Mariah,\n\nReplying to [comment:3 mariah]:\n> I applied the patch to sage-4.7.1.alpha1, did 'sage -b', and rebuilt the\n> documentation.  Yet when I look at the doc of\n`sage.combinat.partition.associated`,\n> I do not see anything saying that the function is deprecated.  Am I missing something?\n\nThis is what I got under the command line\n\n```\nsage: P.associated?\nType:           DeprecatedFunctionAlias\nBase Class:     <class 'sage.misc.misc.DeprecatedFunctionAlias'>\nString Form:    <sage.misc.misc.DeprecatedFunctionAlias object at 0x30c6210>\nNamespace:      Interactive\nFile:           /home/florent/src/Sage/sage/local/lib/python2.6/site-packages/sage/misc/misc.py\nDefinition:     P.associated(self, *args, **kwds)\nDocstring:\n    Deprecated since version Sage: Version 4.4. Use ``conjugate()``\n    instead.\n[...]\n```\n\nIt also work under the notebook and the html built doc.\n\nHow did you rebuild the documentation ? If you just did {{{sage -docbuild\nreference html}}} then without touching `partitions.py` Sphinx consider it\nupto date and doesn't rebuild the documentation. Is that what you did ?\n\nFlorent",
     "created_at": "2011-06-18T21:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81666",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81532",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -152,15 +151,15 @@ Florent
 
 ---
 
-archive/issue_comments_081667.json:
+archive/issue_comments_081533.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2011-06-21T18:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81667",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81533",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -170,15 +169,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_081668.json:
+archive/issue_comments_081534.json:
 ```json
 {
     "body": "Oops!  That is exactly what I did!",
     "created_at": "2011-06-21T18:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81668",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81534",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -188,15 +187,15 @@ Oops!  That is exactly what I did!
 
 ---
 
-archive/issue_comments_081669.json:
+archive/issue_comments_081535.json:
 ```json
 {
     "body": "So this time I applied the patch, did 'sage -b', 'touch devel/sage/sage/combinat/partitions.py', then did 'sage -docbuild reference html'.  Now I see that the function is deprecated.  I also did 'make testlong' and all tests passed.  Positive review!",
     "created_at": "2011-06-21T18:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81669",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81535",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -206,15 +205,15 @@ So this time I applied the patch, did 'sage -b', 'touch devel/sage/sage/combinat
 
 ---
 
-archive/issue_comments_081670.json:
+archive/issue_comments_081536.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-06-21T18:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81670",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81536",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -224,15 +223,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_081671.json:
+archive/issue_comments_081537.json:
 ```json
 {
     "body": "Replying to [comment:6 mariah]:\n> So this time I applied the patch, did 'sage -b', 'touch devel/sage/sage/combinat/partitions.py', then did 'sage -docbuild reference html'.  Now I see that the function is deprecated.  I also did 'make testlong' and all tests passed.  Positive review!\n\nExcellent ! Thanks for the review.\n\nFlorent",
     "created_at": "2011-06-21T18:58:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81671",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81537",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -247,15 +246,15 @@ Florent
 
 ---
 
-archive/issue_comments_081672.json:
+archive/issue_comments_081538.json:
 ```json
 {
     "body": "This should be rebased to sage-4.7.1.alpha3.",
     "created_at": "2011-06-24T14:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81672",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81538",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -265,15 +264,15 @@ This should be rebased to sage-4.7.1.alpha3.
 
 ---
 
-archive/issue_comments_081673.json:
+archive/issue_comments_081539.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-06-24T14:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81673",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81539",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -283,15 +282,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_081674.json:
+archive/issue_comments_081540.json:
 ```json
 {
     "body": "Attachment [trac_8885-deprecated_alias_doc-fh.patch](tarball://root/attachments/some-uuid/ticket8885/trac_8885-deprecated_alias_doc-fh.patch) by @hivert created at 2011-06-28 15:06:12",
     "created_at": "2011-06-28T15:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81674",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81540",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -301,15 +300,15 @@ Attachment [trac_8885-deprecated_alias_doc-fh.patch](tarball://root/attachments/
 
 ---
 
-archive/issue_comments_081675.json:
+archive/issue_comments_081541.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2011-06-28T15:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81675",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81541",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -319,15 +318,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_081676.json:
+archive/issue_comments_081542.json:
 ```json
 {
     "body": "Replying to [comment:8 jdemeyer]:\n> This should be rebased to sage-4.7.1.alpha3.\n\nDone ! I is only rebase therefore I revert back to positive review. I'm not sure I'm allowed to do that.",
     "created_at": "2011-06-28T15:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81676",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81542",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -340,15 +339,15 @@ Done ! I is only rebase therefore I revert back to positive review. I'm not sure
 
 ---
 
-archive/issue_comments_081677.json:
+archive/issue_comments_081543.json:
 ```json
 {
     "body": "If you made only a pure rebase with no other changes, putting the ticket back to positive_review is the right thing to do.",
     "created_at": "2011-06-28T20:38:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81677",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81543",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -358,15 +357,15 @@ If you made only a pure rebase with no other changes, putting the ticket back to
 
 ---
 
-archive/issue_comments_081678.json:
+archive/issue_comments_081544.json:
 ```json
 {
     "body": "Changing keywords from \"Depreacation alias documentation\" to \"deprecation alias documentation\".",
     "created_at": "2011-06-28T20:38:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81678",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81544",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -376,15 +375,15 @@ Changing keywords from "Depreacation alias documentation" to "deprecation alias 
 
 ---
 
-archive/issue_comments_081679.json:
+archive/issue_comments_081545.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-07-04T12:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81679",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81545",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -394,15 +393,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_081680.json:
+archive/issue_comments_081546.json:
 ```json
 {
     "body": "For the record I added a dependency to #11320.",
     "created_at": "2011-07-04T21:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81680",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8885#issuecomment-81546",
+    "user": "https://github.com/hivert"
 }
 ```
 

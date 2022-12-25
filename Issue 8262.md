@@ -6,15 +6,13 @@ archive/issues_008262.json:
     "body": "Assignee: mvngu\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8262\n\n",
     "created_at": "2010-02-14T12:19:48Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "developer's guide: document the variable SAGE_CHECK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8262",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: mvngu
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8262
 
 ---
 
-archive/issue_comments_073119.json:
+archive/issue_comments_072996.json:
 ```json
 {
     "body": "Changing assignee from mvngu to drkirkby.",
     "created_at": "2010-02-14T14:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73119",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-72996",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -47,15 +45,15 @@ Changing assignee from mvngu to drkirkby.
 
 ---
 
-archive/issue_comments_073120.json:
+archive/issue_comments_072997.json:
 ```json
 {
     "body": "See also #8263, which aims to document all environment variables. SAGE_CHECK is not the only one which is either undocumented, or poorly documented.",
     "created_at": "2010-02-14T14:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73120",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-72997",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -65,15 +63,15 @@ See also #8263, which aims to document all environment variables. SAGE_CHECK is 
 
 ---
 
-archive/issue_comments_073121.json:
+archive/issue_comments_072998.json:
 ```json
 {
     "body": "Some somewhat related data: `SAGE_LOCAL/bin/sage-spkg` contains\n\n```sh\n    cd $BASEDIR\n    if [ \"$SAGE_CHECK\" != \"\" -a -f spkg-check ]; then\n        echo \"Running the test suite.\"\n        chmod +x spkg-check\n        ./spkg-check\n        if [ $? -ne 0 ]; then\n```\n\nbut\n\n\n```sh\n$ \\ls -1 /home/release/latest/sage-4.3.3/spkg/standard/*.spkg | awk '{print \"tar jxvf \"$0}' > zz\n$ . zz\n$ gr -A3 -B2 spkg-check */spkg-install\nflint-1.5.0.p3/spkg-install-\nflint-1.5.0.p3/spkg-install-if [ \"$SAGE_CHECK\" = \"yes\" ]; then\nflint-1.5.0.p3/spkg-install:    cd ..; ./spkg-check\nflint-1.5.0.p3/spkg-install-fi\n--\nmpfr-2.4.1.p1/spkg-install-# Do not bypass the checks, as some MPFR failures\nmpfr-2.4.1.p1/spkg-install-# have been observed, so MPFR should be carefully tested.\nmpfr-2.4.1.p1/spkg-install:cd ..; ./spkg-check\n--\nmpir-1.2.2.p0/spkg-install-\nmpir-1.2.2.p0/spkg-install-if [ \"$SAGE_CHECK\" = \"yes\" ]; then\nmpir-1.2.2.p0/spkg-install:    cd ..; ./spkg-check\nmpir-1.2.2.p0/spkg-install-fi\n```\n\nIn particular, with `SAGE_CHECK=\"yes\"`, the flint's long-running tests are run twice.",
     "created_at": "2010-03-02T23:48:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73121",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-72998",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -116,15 +114,15 @@ In particular, with `SAGE_CHECK="yes"`, the flint's long-running tests are run t
 
 ---
 
-archive/issue_comments_073122.json:
+archive/issue_comments_072999.json:
 ```json
 {
     "body": "Can this ticket be closed now?",
     "created_at": "2010-07-16T07:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73122",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-72999",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -134,15 +132,15 @@ Can this ticket be closed now?
 
 ---
 
-archive/issue_comments_073123.json:
+archive/issue_comments_073000.json:
 ```json
 {
     "body": "Replying to [comment:3 rlm]:\n> Can this ticket be closed now?\n\nYes, this ticket can be closed. The issue of this ticket has been fixed in #8263. I leave it to the release manager to close the current ticket.",
     "created_at": "2010-07-16T07:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73123",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73000",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -155,15 +153,15 @@ Yes, this ticket can be closed. The issue of this ticket has been fixed in #8263
 
 ---
 
-archive/issue_comments_073124.json:
+archive/issue_comments_073001.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-07-16T08:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73124",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73001",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -173,15 +171,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_073125.json:
+archive/issue_comments_073002.json:
 ```json
 {
     "body": "Right. Just wanted a second opinion. Thanks!",
     "created_at": "2010-07-16T08:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73125",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73002",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -191,15 +189,15 @@ Right. Just wanted a second opinion. Thanks!
 
 ---
 
-archive/issue_comments_073126.json:
+archive/issue_comments_073003.json:
 ```json
 {
     "body": "Revisiting [comment:2 the comment above] for Sage 4.5, I get\n\n```sh\n$ \\ls -1 /path/to/sage-4.5/spkg/standard/*.spkg | awk '{print \"tar jxvf \"$0}' > unpackem\n$ . unpackem\n$ egrep -A3 -B2 -i SAGE_CHECK\\|spkg-check */spkg-install\ncliquer-1.2.p5/spkg-install-fi\ncliquer-1.2.p5/spkg-install-\ncliquer-1.2.p5/spkg-install:if [ \"$SAGE_CHECK\" = \"yes\" ]; then\ncliquer-1.2.p5/spkg-install-    echo \"Compiling and running the test cases of cliquer...\"\ncliquer-1.2.p5/spkg-install-\ncliquer-1.2.p5/spkg-install-    make testcases\n--\nmpfr-2.4.2/spkg-install-# Do not bypass the checks, as some MPFR failures\nmpfr-2.4.2/spkg-install-# have been observed, so MPFR should be carefully tested.\nmpfr-2.4.2/spkg-install:cd ..; ./spkg-check\n--\nmpir-1.2.2.p1/spkg-install-fi\nmpir-1.2.2.p1/spkg-install-\nmpir-1.2.2.p1/spkg-install:if [ \"$SAGE_CHECK\" = \"yes\" ]; then\nmpir-1.2.2.p1/spkg-install:    cd ..; ./spkg-check\nmpir-1.2.2.p1/spkg-install-fi\n```\n\nIf no one objects, I can open tickets for MPIR and Cliquer.",
     "created_at": "2010-07-16T21:02:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73126",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73003",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -233,15 +231,15 @@ If no one objects, I can open tickets for MPIR and Cliquer.
 
 ---
 
-archive/issue_comments_073127.json:
+archive/issue_comments_073004.json:
 ```json
 {
     "body": "Replying to [comment:6 mpatel]:\n> If no one objects, I can open tickets for MPIR and Cliquer.\n\nThese are now #9522 (MPIR) and #9521 (Cliquer).",
     "created_at": "2010-07-17T01:03:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8262",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73127",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8262#issuecomment-73004",
+    "user": "https://github.com/qed777"
 }
 ```
 

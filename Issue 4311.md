@@ -6,7 +6,7 @@ archive/issues_004311.json:
     "body": "Assignee: Mike Hansen\n\nCC:  sage-combinat\n\nadded documentation for tensor products of crystals according to Daniel Bump's suggestions (conventions for tensor products in comparison with Kashiwara's conventions; tableaux)\n\nIssue created by migration from https://trac.sagemath.org/ticket/4311\n\n",
     "created_at": "2008-10-16T20:00:55Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004311.json:
     "title": "added documentation for tensor products of crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4311",
-    "user": "@anneschilling"
+    "user": "https://github.com/anneschilling"
 }
 ```
 Assignee: Mike Hansen
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4311
 
 ---
 
-archive/issue_comments_031564.json:
+archive/issue_comments_031502.json:
 ```json
 {
     "body": "Attachment [tensor-product-doc-trac.patch](tarball://root/attachments/some-uuid/ticket4311/tensor-product-doc-trac.patch) by mabshoff created at 2008-10-18 19:21:50",
     "created_at": "2008-10-18T19:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31564",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31502",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -49,15 +49,15 @@ Attachment [tensor-product-doc-trac.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_031565.json:
+archive/issue_comments_031503.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-10-18T19:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31565",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31503",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_031566.json:
+archive/issue_comments_031504.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-10-18T19:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31566",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31504",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +85,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_031567.json:
+archive/issue_comments_031505.json:
 ```json
 {
     "body": "Changing assignee from Mike Hansen to @mwhansen.",
     "created_at": "2008-10-18T19:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31567",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31505",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -103,15 +103,15 @@ Changing assignee from Mike Hansen to @mwhansen.
 
 ---
 
-archive/issue_comments_031568.json:
+archive/issue_comments_031506.json:
 ```json
 {
     "body": "Merged in Sage 3.2.alpha0",
     "created_at": "2008-10-18T20:35:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31568",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31506",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +121,15 @@ Merged in Sage 3.2.alpha0
 
 ---
 
-archive/issue_comments_031569.json:
+archive/issue_comments_031507.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-18T20:35:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31569",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4311#issuecomment-31507",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

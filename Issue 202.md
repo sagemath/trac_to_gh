@@ -6,15 +6,14 @@ archive/issues_000202.json:
     "body": "Assignee: somebody\n\nFrom Nick Alexander:\n\n```\nI don't know how to fix this one.\n \nsage: E\nElliptic Curve defined by y^2 + x*y  = x^3 + 1543929847778604404998775606458319946*x + 4576785278558486524781594900057632159 over Finite Field of size 9067796676684828360396591155312024321\n \nsage: P = E.random_element()\n \nsage: n\n9067796676684828360396591155344486080L\n \nsage: P*n\n---------------------------------------------------------------------------\n<type 'exceptions.OverflowError'>         Traceback (most recent call last)\n \n/Users/nalexand/Devel/sage-alpha8/devel/sage-ncalexan/sage/<ipython console> in <module>()\n \n/Users/nalexand/Devel/sage-alpha8/local/lib/python2.5/site-packages/sage/schemes/generic/morphism.py in __mul__(self, n)\n    381         if isinstance(n, (RingElement, int, long)):\n    382             # [n]*P - multiplication by n.\n--> 383             return AdditiveGroupElement._lmul_(self, Integer(n))\n    384         else:\n    385             # Function composition\n \n/Users/nalexand/Devel/sage-alpha8/devel/sage-ncalexan/sage/element.pyx in element.ModuleElement._lmul_()\n \n/Users/nalexand/Devel/sage-alpha8/devel/sage-ncalexan/sage/element.pyx in element.AdditiveGroupElement._lmul_c_impl()\n \n<type 'exceptions.OverflowError'>: long int too large to convert to int\n \nThe offending code even says:\n \n    cdef ModuleElement _lmul_c_impl(self, RingElement right):\n        cdef int m\n        m = int(right)  # a little worrisome.\n \nUnderstatement of the year.\n \nNick\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/202\n\n",
     "created_at": "2007-01-21T03:41:49Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "Elliptic curve point multiplication bug.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/202",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -71,15 +70,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/202
 
 ---
 
-archive/issue_comments_000913.json:
+archive/issue_comments_000910.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-23T23:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/202#issuecomment-913",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/202#issuecomment-910",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +88,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000914.json:
+archive/issue_comments_000911.json:
 ```json
 {
     "body": "Fixed for sage > 1.8.",
     "created_at": "2007-01-23T23:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/202#issuecomment-914",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/202#issuecomment-911",
+    "user": "https://github.com/williamstein"
 }
 ```
 

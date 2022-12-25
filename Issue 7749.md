@@ -6,15 +6,14 @@ archive/issues_007749.json:
     "body": "Assignee: tbd\n\nAdd access to the names.gz file (http://www.research.att.com/~njas/sequences/names.gz) to sloane.py so that users can access sequence names while offline.\n\nChange the output from Python ints to Sage (see SloaneEncyclopedia[111111] for an example).\n\nIssue created by migration from https://trac.sagemath.org/ticket/7749\n\n",
     "created_at": "2009-12-22T18:15:56Z",
     "labels": [
-        "packages: optional",
-        "minor",
-        "enhancement"
+        "component: packages: optional",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Add names.gz to the Sloane OEIS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7749",
-    "user": "ssivek"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7749
 
 ---
 
-archive/issue_comments_066732.json:
+archive/issue_comments_066616.json:
 ```json
 {
     "body": "I plan to add a function SloaneEncyclopedia.sequence_name(n), rather than changing the output of __getitem__ or anything like that, to avoid backwards compatibility issues.\n\nThis will require the patch from ticket #7692.",
     "created_at": "2009-12-22T18:20:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66732",
-    "user": "ssivek"
+    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66616",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 
@@ -51,15 +50,15 @@ This will require the patch from ticket #7692.
 
 ---
 
-archive/issue_comments_066733.json:
+archive/issue_comments_066617.json:
 ```json
 {
     "body": "Attachment [trac_7749.patch](tarball://root/attachments/some-uuid/ticket7749/trac_7749.patch) by ssivek created at 2009-12-23 04:11:39\n\nI've uploaded a patch that does exactly what the ticket description says.  Note that the names.gz database file remains optional, in the sense that users can choose not to install it (e.g. by \"SloaneEncyclopedia.install(names_url=None)\").  This way, if you apply this patch with the stripped.gz database file already installed the only thing that shouldn't work is SloaneEncyclopedia.sequence_name(), which should raise an error when names.gz is not installed.  The only way to install names.gz is to install stripped.gz from scratch as well, though, to avoid renumbering and other possible incompatibility issues between different versions of the OEIS.",
     "created_at": "2009-12-23T04:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66733",
-    "user": "ssivek"
+    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66617",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 
@@ -71,15 +70,15 @@ I've uploaded a patch that does exactly what the ticket description says.  Note 
 
 ---
 
-archive/issue_comments_066734.json:
+archive/issue_comments_066618.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-23T04:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66734",
-    "user": "ssivek"
+    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66618",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ssivek"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_066735.json:
+archive/issue_comments_066619.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-23T14:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66735",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66619",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -107,15 +106,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_066736.json:
+archive/issue_comments_066620.json:
 ```json
 {
     "body": "Worked for me. Looks good. All tests passed.\n\n\n\n```\n3 items had no tests:\n    __main__\n    __main__.change_warning_output\n    __main__.warning_function\n16 items passed all tests:\n  13 tests in __main__.example_0\n   2 tests in __main__.example_1\n   2 tests in __main__.example_10\n   3 tests in __main__.example_11\n   2 tests in __main__.example_12\n   2 tests in __main__.example_13\n   4 tests in __main__.example_14\n   3 tests in __main__.example_15\n   2 tests in __main__.example_2\n   2 tests in __main__.example_3\n   2 tests in __main__.example_4\n   2 tests in __main__.example_5\n   2 tests in __main__.example_6\n   2 tests in __main__.example_7\n   2 tests in __main__.example_8\n   2 tests in __main__.example_9\n47 tests in 19 items.\n47 passed and 0 failed.\nTest passed.\n\t [11.8 s]\n\n```\n\n\nSo positive review.\n\nJaap",
     "created_at": "2009-12-23T14:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66736",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66620",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -161,15 +160,15 @@ Jaap
 
 ---
 
-archive/issue_comments_066737.json:
+archive/issue_comments_066621.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-03T21:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66737",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7749#issuecomment-66621",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

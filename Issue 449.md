@@ -6,15 +6,14 @@ archive/issues_000449.json:
     "body": "Assignee: mabshoff\n\n* spkg-install: needs sh compability fix: DEFINES=\"\"; export DEFINES\n* llrint workaround needed for SunOS:\n  #define llrint(d) ((long long)rint(d))\n* ./include/getopt.h: line 147: do not define \"extern int getopt ();\"\non Solaris\n* needs -liberty for symbol getopt_long when __sun is defined\n\nIn general: The Makefile sucks:\n\ng++  -DINCLUDE_PARI   \\\n      -I/extra/home/mabshoff/SAGE-build/sage-2.8/local/include/pari \\\n      -I/extra/home/mabshoff/SAGE-build/sage-2.8/local/include \\\n      -I ../include/ -L/extra/home/mabshoff/SAGE-build/sage-2.8/local/\nlib \\\n      cmdline.c \\\n      Lcommandline.cc Lcommandline_elliptic.cc Lcommandline_globals.cc\n\\\n      Lcommandline_misc.cc Lcommandline_numbertheory.cc \\\n      Lcommandline_twist.cc Lcommandline_values_zeros.cc \\\n      Lgamma.cc Lglobals.cc Lmisc.cc Lriemannsiegel.cc \\\n            -o lcalc -lpari -lmpfr -lgmpxx -lgmp -liberty\n\nCleanup:\n* compile each file individually\n* crush gcc 4.2 warnings about const string to char*\n\nIssue created by migration from https://trac.sagemath.org/ticket/449\n\n",
     "created_at": "2007-08-19T07:49:45Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "lrank Solaris build fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/449",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/449
 
 ---
 
-archive/issue_comments_002239.json:
+archive/issue_comments_002230.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-22T19:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2239",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2230",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +70,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002240.json:
+archive/issue_comments_002231.json:
 ```json
 {
     "body": "See also #932 and #1626.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-27T17:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2240",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2231",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Michael
 
 ---
 
-archive/issue_comments_002241.json:
+archive/issue_comments_002232.json:
 ```json
 {
     "body": "There are now patches at #1626 which fix the issue. This ticket can be closed once #1626 is merged.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-26T00:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2241",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2232",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -115,15 +114,15 @@ Michael
 
 ---
 
-archive/issue_comments_002242.json:
+archive/issue_comments_002233.json:
 ```json
 {
     "body": "Fixed since #1626 has been merged in Sage 3.0.alpha5.",
     "created_at": "2008-04-14T03:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2242",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2233",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -133,15 +132,15 @@ Fixed since #1626 has been merged in Sage 3.0.alpha5.
 
 ---
 
-archive/issue_comments_002243.json:
+archive/issue_comments_002234.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-14T03:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2243",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/449#issuecomment-2234",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

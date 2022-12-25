@@ -6,15 +6,13 @@ archive/issues_004918.json:
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4918\n\n",
     "created_at": "2009-01-01T22:53:12Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "convert sage.matrix.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4918",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tba
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4918
 
 ---
 
-archive/issue_comments_037317.json:
+archive/issue_comments_037245.json:
 ```json
 {
     "body": "Patch at http://sage.math.washington.edu/home/mhansen/trac_4918.patch",
     "created_at": "2009-01-02T03:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4918",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37317",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37245",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +45,15 @@ Patch at http://sage.math.washington.edu/home/mhansen/trac_4918.patch
 
 ---
 
-archive/issue_comments_037318.json:
+archive/issue_comments_037246.json:
 ```json
 {
     "body": "Attachment [sage.matrix-final.patch](tarball://root/attachments/some-uuid/ticket4918/sage.matrix-final.patch) by @hivert created at 2009-02-24 17:18:46\n\n## Files `matrix1.pyx`, `matrix_integer_dense.pyx` and `matrix_mod2_dense.pyx`\n\n* the doc of the stack method must keep the two line presentation, otherwise it's not understandable:\n\n```\n-        Return the augmented matrix self on top of other:\n-           [ self  ]\n-           [ other ]\n-\n```\n\nShould not be replaced by\n\n```\n+        Return the augmented matrix self on top of other: [ self ] [ other\n+        ]\n```\n\nPlease use some kind of verbatim environment.\n\n## File: matrix1.pyx\n* in the augment method, the \"|\" should be kept\n\n```\n-        Return the augmented matrix of the form [self | other].\n+        Return the augmented matrix of the form [self other].\n```\n\n \n* in block_sum it's crucial to keep the presentation:\n\n```\n-        [self |    0  ]\n-        [  0  | other ]\n```\n\nis now\n\n```\n+        [self 0 ] [ 0 other ]\n```\n\n\n* function _det_by_minors: missing > \n\n```\n-        Does not handle degenerate cases, level MUST be >= 2\n+        of self. Does not handle degenerate cases, level MUST be = 2\n```\n\n\n\n\n## File: matrix_modn_sparse.pyx\n\n* Creation of a matrix: missing < :\n\n```\n-            parent -- a matrix space\n-            entries -- * a Python list of triples (i,j,x), where 0 <= i < nrows,\n-                         0 <= j < ncols, and x is coercible to an int.  The i,j\n+           - a Python list of triples (i,j,x), where 0 = i nrows, 0 =\n+             j ncols, and x is coercible to an int. The i,j entry of\n```\n\n\n## File: matrix_rational_dense.pyx\n\n* function invert: missing <\n\n```\n-         * The n x n cases for n <= 2 are handcoded for speed. \n+           - The n x n cases for n = 2 are handcoded for speed.\n```\n\n\n* function _lift_crt_rr_with_lcm : missing <\n\n```\n-            Optimizations: When doing the rational_recon lift of a (mod m) \n-            first see if |a| < sqrt(m/2) in which case it lifts to \n-            an integer (often a=0 or 1). \n+        Optimizations: When doing the rational_recon lift of a (mod m)\n+        first see if a sqrt(m/2) in which case it lifts to an integer\n+        (often a=0 or 1).\n```\n\nand\n\n```\n-            If that fails, keep track of the lcm d of denominators found so far, \n-            and check to see if z = a*d lifts to an integer with |z| <= sqrt(m/2).\n-            If so, no need to do rational recon.  This should be the case\n-            for most a after a while, and should saves substantial time!\n+        If that fails, keep track of the lcm d of denominators found so\n+        far, and check to see if z = a\\*d lifts to an integer with z =\n+        sqrt(m/2). If so, no need to do rational recon. This should be the\n+        case for most a after a while, and should saves substantial time!\n```\n\n\n## File: matrix_real_double_dense.pyx\n\n* main doc : presentation must be kept\n\n```\n-    To solve a linear system Ax = b\n-    where A = [[1,2]  and b = [5,6]\n-             [3,4]] \n+    To solve a linear system Ax = b where A = [[1,2] and b = [5,6]\n+    [3,4]]\n```\n",
     "created_at": "2009-02-24T17:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4918",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37318",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37246",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -179,15 +177,15 @@ and
 
 ---
 
-archive/issue_comments_037319.json:
+archive/issue_comments_037247.json:
 ```json
 {
     "body": "These changes are in fixes.patch at #5330.",
     "created_at": "2009-02-24T19:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4918",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37319",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37247",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -197,15 +195,15 @@ These changes are in fixes.patch at #5330.
 
 ---
 
-archive/issue_comments_037320.json:
+archive/issue_comments_037248.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-24T19:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4918",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37320",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37248",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -215,15 +213,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_037321.json:
+archive/issue_comments_037249.json:
 ```json
 {
     "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-02-24T19:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4918",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37321",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37249",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -233,15 +231,15 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
-archive/issue_comments_037322.json:
+archive/issue_comments_037250.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-24T19:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4918",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37322",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37250",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -251,15 +249,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_037323.json:
+archive/issue_comments_037251.json:
 ```json
 {
     "body": "Merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T19:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4918",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37323",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4918#issuecomment-37251",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

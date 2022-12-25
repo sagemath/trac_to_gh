@@ -6,15 +6,13 @@ archive/issues_007324.json:
     "body": "Assignee: tbd\n\nCC:  @JohnCremona @rhinton\n\nThis function is used in many places, and can be greatly improved.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7324\n\n",
     "created_at": "2009-10-27T19:40:00Z",
     "labels": [
-        "algebra",
-        "major",
-        "enhancement"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "improve order_from_multiple",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7324",
-    "user": "ylchapuy"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 Assignee: tbd
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7324
 
 ---
 
-archive/issue_comments_061199.json:
+archive/issue_comments_061086.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-27T19:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61199",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -49,15 +47,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_061200.json:
+archive/issue_comments_061087.json:
 ```json
 {
     "body": "Attachment [trac_7324_order_from_multiple.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple.patch) by ylchapuy created at 2009-10-27 19:49:04\n\nThe provided patch should give no slowdown on small examples, and great speed up for bigger ones.\ne.g.\n\n* BEFORE:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 6.51 s, sys: 0.02 s, total: 6.53 s\nWall time: 6.56 s\n```\n\n\n* AFTER:\n\n```\nsage: K.<a>=GF(3^108)\nsage: time ord = order_from_multiple(a,3^108-1,operation=\"*\")\nCPU times: user 1.98 s, sys: 0.02 s, total: 2.00 s\nWall time: 2.01 s\n```\n\n\n(it's based on 4.1.2, but I hope it applies fine to 4.2)\n\nI also get rid of the power function in generic.py which is exactly the same as the generic_power in sage.structure.element\n\nFinally, with sage 4.1.2, sage -testall reports no failure.",
     "created_at": "2009-10-27T19:49:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61200",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61087",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -96,15 +94,15 @@ Finally, with sage 4.1.2, sage -testall reports no failure.
 
 ---
 
-archive/issue_comments_061201.json:
+archive/issue_comments_061088.json:
 ```json
 {
     "body": "This is a significant improvement, and it does apply to 4.2.  I'd give a \nfully positive review, but I've noticed a couple of things about this \nfunction which could be considered.\n\nMost important, the function always checks whether `M*P` equals the\nidentity.  When this function is used one will normally be sure of the\norder of the group (or of a subgroup in which the element lies), so that\nthis verification is unnecessary.  I think the function should have an\noptional parameter `check` (with default value `True` for backwards\ncompatibility) and that the `assert` line should be executed only if \n`check is True`.  \nI found that your GF(3<sup>108</sup>) example ran about 25% faster with the\n`assert` line commented out.\n\nI noticed that `plist` now only gets used to create the factorization `F`, and to check whether `M` is prime.\nThus the line \n\n```\n        plist = [p for p,e in F]\n```\n\nisn't really needed.  This leads me to \nthink that really the factorization of `M` is what should be cached \nby the caller, for giving `plist` requires that the exponents get computed each time the \nfunction is called.  Thus maybe there should be an optional parameter \n`factorization` (with `plist` kept for compatibility), with code such as such as\n\n```\n    if factorization:\n        F = factorization\n    elif plist:\n        F = [(p, M.valuation(p)) for p in plist]\n    else:\n        F = M.factor()\n\n    if list(F) == [(M, 1)]:\n        return M\n```\n\n\nI notice that your GF(3<sup>108</sup>) example is nearly 4 times faster than \n`a.multiplicative_order()`, and I've opened ticket #7324 for this function \nto use `order_from_multiple`.",
     "created_at": "2009-10-29T10:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61201",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61088",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -156,15 +154,15 @@ to use `order_from_multiple`.
 
 ---
 
-archive/issue_comments_061202.json:
+archive/issue_comments_061089.json:
 ```json
 {
     "body": "Attachment [trac_7324_order_from_multiple-review.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple-review.patch) by ylchapuy created at 2009-10-29 15:36:21\n\nThe second patch addresses the comments from fwclarke.\nIt also removes the optional arguments 'op' 'inverses' and 'identity' as the were buggy and untested.",
     "created_at": "2009-10-29T15:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61202",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61089",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -177,15 +175,15 @@ It also removes the optional arguments 'op' 'inverses' and 'identity' as the wer
 
 ---
 
-archive/issue_comments_061203.json:
+archive/issue_comments_061090.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-06T10:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61203",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61090",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -195,15 +193,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_061204.json:
+archive/issue_comments_061091.json:
 ```json
 {
     "body": "A positive review.  The suggestions I made have been implemented, and there's a doctest illustrating the new `check` parameter.  Some other parts of the code have been tidied up; in particular, the error raised for using an unknown operation now works properly.\n\nIt makes sense to remove the parameters `op`, `identity` and `inverse`, because they weren't being used, at least not in any consistent way.\n\nAll doctests still pass.\n\nOne triviality remains: a spelling correction; see the third patch.",
     "created_at": "2009-11-06T10:47:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61204",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61091",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -219,15 +217,15 @@ One triviality remains: a spelling correction; see the third patch.
 
 ---
 
-archive/issue_comments_061205.json:
+archive/issue_comments_061092.json:
 ```json
 {
     "body": "Attachment [trac_7324_order_from_multiple-spelling.patch](tarball://root/attachments/some-uuid/ticket7324/trac_7324_order_from_multiple-spelling.patch) by ylchapuy created at 2009-11-06 11:13:32",
     "created_at": "2009-11-06T11:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61205",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61092",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -237,15 +235,15 @@ Attachment [trac_7324_order_from_multiple-spelling.patch](tarball://root/attachm
 
 ---
 
-archive/issue_comments_061206.json:
+archive/issue_comments_061093.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-07T12:15:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61206",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7324#issuecomment-61093",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

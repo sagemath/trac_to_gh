@@ -6,7 +6,7 @@ archive/issues_004930.json:
     "body": "Assignee: mabshoff\n\nUnfortunately the spkg at #3785 contained a buglet: the patches Make.top isn't copied into the right directory, so \"make install\" doesn't copy over libatlas.so, libcblas.so and libf77blas.so. Due to that on some machines rpy won't load due to a missing libatlas.so.\n\nAn spkg with that fixed is coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4930\n\n",
     "created_at": "2009-01-03T03:19:47Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004930.json:
     "title": "[with spkg, needs review] 3.2.3.final: Fix bug in ATLAS' spkg-install that breaks the install target for dynamic libs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4930",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4930
 
 ---
 
-archive/issue_comments_037401.json:
+archive/issue_comments_037329.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/spkgs/atlas-3.8.2.p0.spkg\n\nfixes the issue. The only \"real\" difference is this:\n\n```\n--- a/spkg-install      Thu Jan 01 21:06:49 2009 -0800\n+++ b/spkg-install      Fri Jan 02 19:29:51 2009 -0800\n@@ -73,7 +73,7 @@\n cp patches/probe_comp.c src/CONFIG/src/probe_comp.c\n # add dynamic libs make install targets\n echo Updating Make.top\n-cp patches/Make.top src/ATLAS/\n+cp patches/Make.top src\n # add K7, Pentium M and non-AltiVec G4 profiles\n cp patches/*tgz src/CONFIG/ARCHS\n```\n\n\nThe location of the ATLAS src was adjusted from src/ATLAS to src, so the improvements to Make.top were not copied correctly. This caused libatlas.so, libcblas.so and libf77blas.so not to be copied over for \"make install\".\n\nCheers,\n\nMichael",
     "created_at": "2009-01-03T03:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4930#issuecomment-37401",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4930#issuecomment-37329",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +77,15 @@ Michael
 
 ---
 
-archive/issue_comments_037402.json:
+archive/issue_comments_037330.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-03T03:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4930#issuecomment-37402",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4930#issuecomment-37330",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -95,15 +95,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_037403.json:
+archive/issue_comments_037331.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-03T05:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4930#issuecomment-37403",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4930#issuecomment-37331",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +113,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_037404.json:
+archive/issue_comments_037332.json:
 ```json
 {
     "body": "Merged in Sage 3.2.3.final",
     "created_at": "2009-01-03T05:58:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4930#issuecomment-37404",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4930#issuecomment-37332",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

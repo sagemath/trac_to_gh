@@ -6,15 +6,14 @@ archive/issues_000855.json:
     "body": "Assignee: @williamstein\n\nIt would be very helpful if \"sage -optional\" and \"sage -experimental\" listed one- or two-sentence descriptions of each package.  (Several of the packages I had to look up using Google.  Also, it was only by accident that I discovered that \"axiom4sage\" was the complete axiom distribution, rather than just an axiom interface.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/855\n\n",
     "created_at": "2007-10-12T01:06:43Z",
     "labels": [
-        "user interface",
-        "minor",
-        "enhancement"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "lists of optional and experimental packages should have descriptions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/855",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/855
 
 ---
 
-archive/issue_comments_005298.json:
+archive/issue_comments_005282.json:
 ```json
 {
     "body": "Here are descriptions of the current optional packages, except that I don't actually know what \"database_symbolic_data\" is.  I was able to do a number of them in a single line; is that helpful?  Also, how do we actually incorporate these?  (Should each description be added, somehow, to the SPKG.txt file for each package?)\n\n\nace: Todd-Coxeter coset enumeration via the Advanced Coset Enumerator\n\nbiopython: Python tools for computational molecular biology\n\nboehm: The Boehm-Demers-Weiser conservative garbage collector\n\ndatabase_cremona_ellcurve: Cremona's huge database of elliptic curves\n\ndatabase-gap: GAP's databases of finite groups and table of marks\n\ndatabase_jones_numfield: Jones' database of number fields\n\ndatabase_kohel: Kohel's database of modular polynomials\n\ndatabase_odlyzko_zeta: Odlyzko's database for the Riemann zeta function\n\ndatabase_sloane_oeis: Sloane's database from the online encyclopedia of integer sequences\n\ndatabase_stein_watkins_mini: Stein-Watkins database of elliptic curves\n\ndatabase_symbolic_data: ??\n\ndvipng: make PNG and/or GIF graphics from DVI files\n\nextra_docs: documentation for components of Sage (e.g. maxima, singular, etc.)\n\nfricas: an advanced computer algebra system\n\nfrobby: provides a number of computations on monomial ideals\n\ngap_packages: several \"official\" and \"undeposited\" GAP packages\n\ngcc: GNU C compiler\n\ngdbm: GNU dbm, a set of database routines using extendible hashing\n\nginv: GINV implements the Gr\u00f6bner bases method for systems of equations\n\ngmpy: General MultiPrecision arithmetic for Python\n\ngnuplotpy: A pipe-based interface to the gnuplot plotting program\n\ngraphviz: Graph Drawing Programs from AT&T Research and Lucent Bell Labs\n\nguppy: Guppy-PE is a library and programming environment for Python,\ncurrently providing in particular the Heapy subsystem, which supports\nobject and heap memory sizing, profiling and debugging. \n\nhermes: a semantic XML e-publishing tool for LaTeX authored scientific\narticles (for linux only)\n\njava3d: Java 3d libraries\n\njmol: a Java molecular viewer for three-dimensional chemical\nstructures (includes source code). \n\njsmath-image-fonts: used for rendering TeX characters on computers\nthat do not have the TeX fonts installed\n\nkash3_linux: sophisticated computations in number fields, in global\nfunction fields, and in local fields (for linux only)\n\nkash3_osx: sophisticated computations in number fields, in global\nfunction fields, and in local fields (for Mac OS X only)\n\nknoboo: Programming notebook for the web\n\nlie: computations with reductive Lie groups and their representations\n\nlrs: reverse search vertex enumeration program/CH package\n\nmpc: a C library for multiple-precision floating-point computations\nwith correct rounding\n\nmpi4py: MPI is the Message Passing Interface, a standardized and\nportable message-passing system designed to function on a wide variety\nof parallel computers.  This package is a Python-based implementation\nof MPI.\n\nnauty: various tools for finding the automorphism group of a graph,\ngenerating non-isomorphic graphs with certain properties, etc.\n\nnzmath: Python based number theory oriented calculation system\n\nopenmpi: an open-source implementation of MPI\n\nopenssl: implementation of the Secure Sockets Layer (SSL v2/v3) and\nTransport Layer Security (TLS v1) protocols as well as a full-strength\ngeneral purpose cryptography library\n\nphc: a solver for polynomial systems by homotopy continuation\n\npil: Python Imaging Library\n\npolymake: algorithmic treatment of convex polyhedra, finite simplicial\ncomplexes, tight spans of finite metric spaces, polyhedral surfaces,\nand other objects\n\npyopenssl: a Python wrapper around the OpenSSL library\n\npyx: a Python package for the creation of PostScript and PDF files\n\ntrac: web-based software project management and bug/issue tracking system\n\nvalgrind: an instrumentation framework for building dynamic analysis tools",
     "created_at": "2008-12-03T20:12:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5298",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5282",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -154,15 +153,15 @@ valgrind: an instrumentation framework for building dynamic analysis tools
 
 ---
 
-archive/issue_comments_005299.json:
+archive/issue_comments_005283.json:
 ```json
 {
     "body": "> database_symbolic_data: ??\n\nThis is the database from http://www.symbolicdata.org/:\n\n\"The SymbolicData project is set out to develop concepts and tools for testing Computer Algebra Software (CAS) and to collect relevant data from different areas of Computer Algebra. Tools and data are designed to be used both on a local site for special testing purposes and to manage a central repository at www.symbolicdata.org.\"",
     "created_at": "2008-12-05T02:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5299",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5283",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -176,15 +175,15 @@ This is the database from http://www.symbolicdata.org/:
 
 ---
 
-archive/issue_comments_005300.json:
+archive/issue_comments_005284.json:
 ```json
 {
     "body": "This should be done by automatically extracting the first line from the Description section of the SPKG.txt, if it is there. Use a line like this:\n\n```\nsage@sagemath:~/www-files/packages/optional$ tar xvf biopython-1.53.p0.spkg biopython-1.53.p0/SPKG.txt\n```\n\nor better yet, write a Python script using the tarfile module. \n\nI'm currently working on this, and hope to close this ticket soon :-)",
     "created_at": "2009-12-18T04:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5300",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5284",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -202,15 +201,15 @@ I'm currently working on this, and hope to close this ticket soon :-)
 
 ---
 
-archive/issue_comments_005301.json:
+archive/issue_comments_005285.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-18T06:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5301",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5285",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -220,15 +219,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_005302.json:
+archive/issue_comments_005286.json:
 ```json
 {
     "body": "OK, I made it so gen_html automatically extracts the SPKG.txt files.   The HTML isn't pretty, but making it so should be another ticket.",
     "created_at": "2009-12-18T06:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/855",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5302",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/855#issuecomment-5286",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_009740.json:
     "body": "Assignee: jason, was\n\nCC:  @rbeezer @kcrisman\n\nThis patch:\n* flips the matrix so that it is right side up, and flips the y-axis to correctly label the rows, unless origin='lower' is specified.\n* Adds matplotlib's vmin and vmax parameters, which control the scaling\n* Adds matplotlib's norm parameter, which also controls the scaling\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9740\n\n",
     "created_at": "2010-08-13T08:14:04Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "matrix plot is upside down and should wrap more matplotlib options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9740",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: jason, was
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9740
 
 ---
 
-archive/issue_comments_095336.json:
+archive/issue_comments_095177.json:
 ```json
 {
     "body": "oh, and it also makes axes=False by default, since it looked really silly having axes\n\nand this patch also shifts the matrix by 0.5 so it is centered in the plot.",
     "created_at": "2010-08-13T08:14:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95336",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95177",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -56,15 +55,15 @@ and this patch also shifts the matrix by 0.5 so it is centered in the plot.
 
 ---
 
-archive/issue_comments_095337.json:
+archive/issue_comments_095178.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-08-13T08:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95337",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95178",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -74,15 +73,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_095338.json:
+archive/issue_comments_095179.json:
 ```json
 {
     "body": "CCing people that might be interested in reviewing this.",
     "created_at": "2010-08-13T08:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95338",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95179",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -92,15 +91,15 @@ CCing people that might be interested in reviewing this.
 
 ---
 
-archive/issue_comments_095339.json:
+archive/issue_comments_095180.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-13T08:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95339",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95180",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -110,15 +109,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_095340.json:
+archive/issue_comments_095181.json:
 ```json
 {
     "body": "In what sense were the matrix plots wrong before?  I'm a little confused - the matrix plots I used in number theory seemed to be ok.  Also, what matrix plots have axes?  The ones I make only have frames, which look quite nice (except for being labeled wrong).   Anyway, posting a picture of \"before\" and \"after\" that is very clear would be helpful before one takes the time to wade through the mpl code :)\n\n#2189 is related, though I don't know if this fixes all the issues mentioned there (i.e. labeling).",
     "created_at": "2010-08-13T12:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95340",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95181",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -130,15 +129,15 @@ In what sense were the matrix plots wrong before?  I'm a little confused - the m
 
 ---
 
-archive/issue_comments_095341.json:
+archive/issue_comments_095182.json:
 ```json
 {
     "body": "Before:\n\n* axes=True was the default, so typically there were lines on the far right and far bottom of the plot going through the first row and first column of the matrix\n\n* matrices were plotted upside-down, where the first row was on the bottom of the matrix.\n\nYou're right that #2189 is related, but that patch will have to be rewritten so much that it's probably easiest to write it from scratch.  Thanks for pointing out the patch, though.  You're also right that we are solving a different problem here.  This patch does not fix the issue there.",
     "created_at": "2010-08-13T15:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95341",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95182",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -154,15 +153,15 @@ You're right that #2189 is related, but that patch will have to be rewritten so 
 
 ---
 
-archive/issue_comments_095342.json:
+archive/issue_comments_095183.json:
 ```json
 {
     "body": "Replying to [comment:4 jason]:\n> Before:\n> \n>  * axes=True was the default, so typically there were lines on the far right and far bottom of the plot going through the first row and first column of the matrix\n\nI don't remember seeing that.\n\n>  * matrices were plotted upside-down, where the first row was on the bottom of the matrix.\n\nHuh, that is weird, because I definitely didn't have that experience.\n\nAttached is a screenshot of what I get.  The top row is all the powers of 1 mod 7 (which are all 1), and the left row is all the 0th powers of a mod 7 (which are all 1).  The right row is Fermat's Little Theorem, that the 6th powers are also 1 mod 7.  The matrix itself is\n\n```\nsage: p=7\nsage: matrix(p-1,[mod(a,p)^b for a in range(1,p) for b in srange(p)])\n[1 1 1 1 1 1 1]\n[1 2 4 1 2 4 1]\n[1 3 2 6 4 5 1]\n[1 4 2 1 4 2 1]\n[1 5 4 6 2 3 1]\n[1 6 1 6 1 6 1]\n```\n\nI feel like I must be missing something.",
     "created_at": "2010-08-13T15:56:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95342",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95183",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -196,15 +195,15 @@ I feel like I must be missing something.
 
 ---
 
-archive/issue_comments_095343.json:
+archive/issue_comments_095184.json:
 ```json
 {
     "body": "The matrix in an interact for p=7",
     "created_at": "2010-08-13T15:56:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95343",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95184",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -214,15 +213,15 @@ The matrix in an interact for p=7
 
 ---
 
-archive/issue_comments_095344.json:
+archive/issue_comments_095185.json:
 ```json
 {
     "body": "Attachment [Screen shot 2010-08-13 at 11.52.45 AM.png](tarball://root/attachments/some-uuid/ticket9740/Screen shot 2010-08-13 at 11.52.45 AM.png) by @jasongrout created at 2010-08-13 16:06:24\n\nCould you try the following two plots?\n\nmatrix_plot(identity_matrix(100))\n\nmatrix_plot(identity_matrix(100, sparse=True))",
     "created_at": "2010-08-13T16:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95344",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95185",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -238,15 +237,15 @@ matrix_plot(identity_matrix(100, sparse=True))
 
 ---
 
-archive/issue_comments_095345.json:
+archive/issue_comments_095186.json:
 ```json
 {
     "body": "(that is *before* the patch, of course...)",
     "created_at": "2010-08-13T16:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95345",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95186",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -256,15 +255,15 @@ archive/issue_comments_095345.json:
 
 ---
 
-archive/issue_comments_095346.json:
+archive/issue_comments_095187.json:
 ```json
 {
     "body": "> matrix_plot(identity_matrix(100))\nLooks fine, diagonal is from upper left to lower right, like the matrix. 0 (lowest input) is black, 1 (highest input) is white, I think this is as usual.  With cmap='jet' I get something I like :)  What do *you* get for this one?\n> matrix_plot(identity_matrix(100, sparse=True))\nYikes!  Two issues.  First, it is definitely flipped.  Second, what's up with the colors?  I get white for the off-diagonal zeros and blue for the diagonal.  My diagnosis: something going on with all that special code for sparse matrices.\n\nAnd now I see what you mean about the axes showing up.  I thought that was just part of the frame because my matrices tend to have blue or black around the edges, since the values are one!  Good catch with making axes=False in the future.",
     "created_at": "2010-08-13T16:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95346",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95187",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -279,15 +278,15 @@ And now I see what you mean about the axes showing up.  I thought that was just 
 
 ---
 
-archive/issue_comments_095347.json:
+archive/issue_comments_095188.json:
 ```json
 {
     "body": "After the patch, the labels are corrected.  The issue of flipping the matrix is also affected by a matplotlibrc variable, so you might have the \"correct\" value of origin='upper'.  Of course, this is ignored for sparse matrices.  That patch corrects all this so that things are consistent.\n\nFor sparse matrices---the correct picture is whote for off-diagonal and blue for diagonal.  That uses spy underneath, which does not plot zero entries, which is exactly what you want for sparse matrices.",
     "created_at": "2010-08-13T16:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95347",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95188",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -299,15 +298,15 @@ For sparse matrices---the correct picture is whote for off-diagonal and blue for
 
 ---
 
-archive/issue_comments_095348.json:
+archive/issue_comments_095189.json:
 ```json
 {
     "body": "Got it.  And sure enough, in my top directory (i.e., above my user account) there is one, probably placed there eons ago by some primitive Sage installation, with\n\n```\nimage.origin : upper             # lower | upper\n```\n\nIs that it?\n\nI hate to be picky, but I have another question.\n\n```\nGenerally matrices are plotted with the (0,0) entry in the upper \nright.  However, sometimes if we are plotting an image, we'd like \nthe (0,0) entry to be in the lower left. \n```\n\nShould the first word in the second line be 'left'?  And if not, please explain.",
     "created_at": "2010-08-13T16:46:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95348",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95189",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -333,15 +332,15 @@ Should the first word in the second line be 'left'?  And if not, please explain.
 
 ---
 
-archive/issue_comments_095349.json:
+archive/issue_comments_095190.json:
 ```json
 {
     "body": "Yep, that's it.  And yes, you're right about the doc correction.  New patch coming up.",
     "created_at": "2010-08-13T16:59:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95349",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95190",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -351,15 +350,15 @@ Yep, that's it.  And yes, you're right about the doc correction.  New patch comi
 
 ---
 
-archive/issue_comments_095350.json:
+archive/issue_comments_095191.json:
 ```json
 {
     "body": "I should have made that a separate patch; sorry.  The only change is that one word 'right'->'left'",
     "created_at": "2010-08-13T17:06:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95350",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95191",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -369,15 +368,15 @@ I should have made that a separate patch; sorry.  The only change is that one wo
 
 ---
 
-archive/issue_comments_095351.json:
+archive/issue_comments_095192.json:
 ```json
 {
     "body": "A new version of the patch that:\n\n* makes it possible to plot dense matrices upside-down\n* ensures tick labels are integrs.",
     "created_at": "2010-08-14T16:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95351",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95192",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -390,15 +389,15 @@ A new version of the patch that:
 
 ---
 
-archive/issue_comments_095352.json:
+archive/issue_comments_095193.json:
 ```json
 {
     "body": "Just one more enhancement to bring sparse plotting in line with dense plotting: we were automatically converting to floating point numbers in the dense case, which allowed plotting matrices over finite fields, for example.  The coerce-float patch enables this for sparse matrices as well.",
     "created_at": "2010-09-07T03:29:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95352",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95193",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -408,15 +407,15 @@ Just one more enhancement to bring sparse plotting in line with dense plotting: 
 
 ---
 
-archive/issue_comments_095353.json:
+archive/issue_comments_095194.json:
 ```json
 {
     "body": "I'm rebasing this for 4.6.alpha1 momentarily...",
     "created_at": "2010-09-28T16:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95353",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95194",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -426,15 +425,15 @@ I'm rebasing this for 4.6.alpha1 momentarily...
 
 ---
 
-archive/issue_comments_095354.json:
+archive/issue_comments_095195.json:
 ```json
 {
     "body": "I've rebased to 4.6.alpha1 and combined the two patches.  kcrisman: can you review this?",
     "created_at": "2010-09-28T16:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95354",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95195",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -444,15 +443,15 @@ I've rebased to 4.6.alpha1 and combined the two patches.  kcrisman: can you revi
 
 ---
 
-archive/issue_comments_095355.json:
+archive/issue_comments_095196.json:
 ```json
 {
     "body": "Attachment [trac-9740-matrixplot.patch](tarball://root/attachments/some-uuid/ticket9740/trac-9740-matrixplot.patch) by @jasongrout created at 2010-09-28 17:22:52\n\napply only this patch; rebased to 4.6.alpha1",
     "created_at": "2010-09-28T17:22:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95355",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95196",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -464,15 +463,15 @@ apply only this patch; rebased to 4.6.alpha1
 
 ---
 
-archive/issue_comments_095356.json:
+archive/issue_comments_095197.json:
 ```json
 {
     "body": "ptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets applied in order: #9221 (and new spkg), #9740, #9746, #4342.",
     "created_at": "2010-09-28T19:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95356",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95197",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -482,15 +481,15 @@ ptestlong in 4.6.alpha1 (Ubuntu 10.04 64-bit) passes with the following tickets 
 
 ---
 
-archive/issue_comments_095357.json:
+archive/issue_comments_095198.json:
 ```json
 {
     "body": "Explain `axes_integer`.  Also, the options for the locators weren't always\n\n```\nlocator_options=dict(nbins=9,steps=[1,2,5,10],integer=axes_integer)\n```\n\nin all cases - will this make anything different, particularly the `steps` addition?  That stuff should have been a separate ticket, or maybe on #9221 ;)\n\nExplain\n\n```\nlimits[k]-=0.5\n```\n\nI assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n\nGood catch on the complex guys.\n\nJust point of information to other readers; very minor doc issues are corrected in #9746.",
     "created_at": "2010-09-28T19:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95357",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95198",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -518,15 +517,15 @@ Just point of information to other readers; very minor doc issues are corrected 
 
 ---
 
-archive/issue_comments_095358.json:
+archive/issue_comments_095199.json:
 ```json
 {
     "body": "Replying to [comment:18 kcrisman]:\n> Explain `axes_integer`.  \n> Explain\n> {{{\n> limits[k]-=0.5\n> }}}\n> I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n\nOkay, I think that these two things combine to make this happen, after reading [this](http://matplotlib.sourceforge.net/api/ticker_api.html#matplotlib.ticker.MaxNLocator) again.\n\nI still don't know if I like sparse and dense matrices looking so different.  So the idea is that the little circle points indicate sparse, while the boxes indicate dense?  I'm thinking of \n\n```\nsage: b=random_matrix(GF(2),12,sparse=True,density=0.99)\nsage: matrix_plot(b)\n\nsage: b=random_matrix(GF(2),12,density=0.99)\nsage: matrix_plot(b)\n```\n\n\nAlso, my favorite use case doesn't work yet, though to be fair it didn't work before, so this shouldn't hold things up (and is a currently open ticket).  But just in case, is there a quick way to get this now?  After all, one might want the first row to be labeled 1 sometimes!\n\n```\nsage: M = matrix(ZZ,[[1,2,3,4],[1,4,9,16],[1,8,27,64]])\nsage: matrix_plot(M)\nsage: matrix_plot(M,ticks=[1,2,3,4])\nERROR: An unexpected error occurred while tokenizing input\n<snip>\n   1992 \n   1993             from matplotlib.ticker import OldScalarFormatter, MaxNLocator, MultipleLocator, FixedLocator, NullLocator, Locator\n-> 1994             x_locator, y_locator = ticks\n   1995             if x_locator is None:\n   1996                 x_locator = MaxNLocator(**locator_options)\n\nValueError: too many values to unpack\n```\n\n\nI should be able to finish reviewing this later on today.",
     "created_at": "2010-09-28T20:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95358",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95199",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -575,15 +574,15 @@ I should be able to finish reviewing this later on today.
 
 ---
 
-archive/issue_comments_095359.json:
+archive/issue_comments_095200.json:
 ```json
 {
     "body": "I fixed the issues you mentioned.  I also changed the option name to `ticks_integer` to be more consistent with the new ticks options.\n\nYes, the defaults may change slightly with the steps option.  I don't know why I didn't put in those steps defaults before; they look better, and this will provide consistency to have the same steps options for different calls.  Possibly it should have gone on another ticket, but I already had to consolidate things for the integer option.",
     "created_at": "2010-09-28T20:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95359",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95200",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -595,15 +594,15 @@ Yes, the defaults may change slightly with the steps option.  I don't know why I
 
 ---
 
-archive/issue_comments_095360.json:
+archive/issue_comments_095201.json:
 ```json
 {
     "body": "I didn't fix the issues you mentioned in http://trac.sagemath.org/sage_trac/ticket/9740#comment:19, though.",
     "created_at": "2010-09-28T20:10:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95360",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95201",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -613,15 +612,15 @@ I didn't fix the issues you mentioned in http://trac.sagemath.org/sage_trac/tick
 
 ---
 
-archive/issue_comments_095361.json:
+archive/issue_comments_095202.json:
 ```json
 {
     "body": "Replying to [comment:19 kcrisman]:\n> Replying to [comment:18 kcrisman]:\n> > Explain `axes_integer`.  \n> > Explain\n> > {{{\n> > limits[k]-=0.5\n> > }}}\n> > I assume this makes it so that the matrix has `0,1,2,3` as opposed to putting entries between `0-1`, `1-2`, etc.  I can't check this because the branch I'm making for this decided to rebuild documentation, which takes a while... sigh.\n> \n> Okay, I think that these two things combine to make this happen, after reading [this](http://matplotlib.sourceforge.net/api/ticker_api.html#matplotlib.ticker.MaxNLocator) again.\n> \n> I still don't know if I like sparse and dense matrices looking so different.  So the idea is that the little circle points indicate sparse, while the boxes indicate dense?  I'm thinking of \n> {{{\n> sage: b=random_matrix(GF(2),12,sparse=True,density=0.99)\n> sage: matrix_plot(b)\n> \n> sage: b=random_matrix(GF(2),12,density=0.99)\n> sage: matrix_plot(b)\n> }}}\n\nYes; you can choose the marker used in sparse matrices.  Aside from the fact that this is a fundamental difference in matplotlib, it does also make sense.  In dense matrices, most entries are nonzero, so you color every pixel/square.  In sparse matrices, most entries are zero, so you only put a marker where there is a nonzero.\n\n\n> \n> Also, my favorite use case doesn't work yet, though to be fair it didn't work before, so this shouldn't hold things up (and is a currently open ticket).  But just in case, is there a quick way to get this now?  After all, one might want the first row to be labeled 1 sometimes!\n> {{{\n> sage: M = matrix(ZZ,[[1,2,3,4],[1,4,9,16],[1,8,27,64]])\n> sage: matrix_plot(M)\n> sage: matrix_plot(M,ticks=[1,2,3,4])\n> ERROR: An unexpected error occurred while tokenizing input\n> <snip>\n>    1992 \n>    1993             from matplotlib.ticker import OldScalarFormatter, MaxNLocator, MultipleLocator, FixedLocator, NullLocator, Locator\n> -> 1994             x_locator, y_locator = ticks\n>    1995             if x_locator is None:\n>    1996                 x_locator = MaxNLocator(**locator_options)\n> \n> ValueError: too many values to unpack\n> }}}\n\nYes, definitely another ticket.",
     "created_at": "2010-09-28T20:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95361",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95202",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -671,15 +670,15 @@ Yes, definitely another ticket.
 
 ---
 
-archive/issue_comments_095362.json:
+archive/issue_comments_095203.json:
 ```json
 {
     "body": "of course, your ticks example above does *not* label the first row 1; it would only put a tick on the *second* row (if it worked).  You probably want to change the tick_formatter argument to relabel things.",
     "created_at": "2010-09-28T20:15:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95362",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95203",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -689,15 +688,15 @@ of course, your ticks example above does *not* label the first row 1; it would o
 
 ---
 
-archive/issue_comments_095363.json:
+archive/issue_comments_095204.json:
 ```json
 {
     "body": "Replying to [comment:21 jason]:\n> I didn't fix the issues you mentioned in http://trac.sagemath.org/sage_trac/ticket/9740#comment:19, though.\nThat's okay, they are preexisting behavior and still similar, so can be discussed elsewhere.\n\nYou beat me to realizing the rebase needed now in #4342.  Luckily I could just roll that back... someday I'll use queues.",
     "created_at": "2010-09-28T20:17:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95363",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95204",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -711,15 +710,15 @@ You beat me to realizing the rebase needed now in #4342.  Luckily I could just r
 
 ---
 
-archive/issue_comments_095364.json:
+archive/issue_comments_095205.json:
 ```json
 {
     "body": "Okay, in general this is great!  I love the live documentation for testing, by the way - don't know why I never thought of that before.\n\nTwo things, which perhaps should still be addressed - what do you think?\n\nFirst, the error message with the `matrix_plot(A,marker=',')` is not very helpful when you choose a different marker (for instance, '<' works (and is cool with small matrices) but ';' doesn't).  I realize this isn't part of the ticket per se, so maybe this should be a followup.\n\nSecond, there are two instances of \n\n```\nExtra options will get passed on to show(), as long as they are valid:\n```\n\nin the documentation for `MatrixPlot`.  Again, maybe this is better addressed on a followup ticket.\n\nI like that the error message for when `vmin` and `vmax` clash is actually helpful, even though it's an mpl error.\n\nI also just noticed that the doc for `matrix_plot` doesn't mention that the default for `norm` is `None`, though it is.  This can probably be fixed very easily.",
     "created_at": "2010-09-29T03:10:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95364",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95205",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -745,15 +744,15 @@ I also just noticed that the doc for `matrix_plot` doesn't mention that the defa
 
 ---
 
-archive/issue_comments_095365.json:
+archive/issue_comments_095206.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-29T03:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95365",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95206",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -763,15 +762,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_095366.json:
+archive/issue_comments_095207.json:
 ```json
 {
     "body": "> Second, there are two instances of \n> {{{\n> Extra options will get passed on to show(), as long as they are valid:\n> }}}\n> in the documentation for `MatrixPlot`.  Again, maybe this is better addressed on a followup ticket.\nOr in #9746?\n\n> I also just noticed that the doc for `matrix_plot` doesn't mention that the default for `norm` is `None`, though it is.  This can probably be fixed very easily.\nAfter thinking about it, since the ticket says to wrap more mpl options, this should be addressed on this ticket.",
     "created_at": "2010-09-29T03:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95366",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95207",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -789,15 +788,15 @@ After thinking about it, since the ticket says to wrap more mpl options, this sh
 
 ---
 
-archive/issue_comments_095367.json:
+archive/issue_comments_095208.json:
 ```json
 {
     "body": "apply on top of previous patches",
     "created_at": "2010-09-29T04:21:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95367",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95208",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -807,15 +806,15 @@ apply on top of previous patches
 
 ---
 
-archive/issue_comments_095368.json:
+archive/issue_comments_095209.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-29T04:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95368",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95209",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -825,15 +824,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_095369.json:
+archive/issue_comments_095210.json:
 ```json
 {
     "body": "Attachment [9740-review-fixes.patch](tarball://root/attachments/some-uuid/ticket9740/9740-review-fixes.patch) by @jasongrout created at 2010-09-29 04:22:44\n\nI updated the review-fixes patch to take care of the issues you brought up.  I also polished two more references in the docs.",
     "created_at": "2010-09-29T04:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95369",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95210",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -845,15 +844,15 @@ I updated the review-fixes patch to take care of the issues you brought up.  I a
 
 ---
 
-archive/issue_comments_095370.json:
+archive/issue_comments_095211.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-09-29T17:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95370",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95211",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -863,15 +862,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_095371.json:
+archive/issue_comments_095212.json:
 ```json
 {
     "body": "Thanks a ton - the only other thing I saw is fixed in #9746, so all is well, other than stuff above that can go in another ticket.\n\nPositive review.",
     "created_at": "2010-09-29T17:53:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95371",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95212",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -883,15 +882,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_095372.json:
+archive/issue_comments_095213.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-10-03T06:36:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9740",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95372",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9740#issuecomment-95213",
+    "user": "https://github.com/qed777"
 }
 ```
 

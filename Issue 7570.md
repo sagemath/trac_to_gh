@@ -6,7 +6,7 @@ archive/issues_007570.json:
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout ryan\n\nKeywords: list_plot\n\nlist_plot does not accept **empty** lists:\n\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([],rgbcolor=(0,0,1))\n\nIndexError: list index out of range\n```\n\n\ndoes not work, whereas\n\n\n```\nlist_plot([1],rgbcolor=(1,0,0))+list_plot([2],rgbcolor=(0,0,1))\n```\n\n\ndoes work. It would be nicer if list_plot of empty lists gives an empty graphics object.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7570\n\n",
     "created_at": "2009-12-01T14:16:10Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007570.json:
     "title": "default : list_plot of empty lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7570",
-    "user": "@fchapoton"
+    "user": "https://github.com/fchapoton"
 }
 ```
 Assignee: @williamstein
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7570
 
 ---
 
-archive/issue_comments_064407.json:
+archive/issue_comments_064291.json:
 ```json
 {
     "body": "Incidentally, this is also true of things like point(), where an empty list of points yields an error (as far as I remember).  We should check ALL plot methods to ensure that empty input yields Graphics() or something like that, at least for the 2-d versions.  Changing summary appropriately.",
     "created_at": "2009-12-11T20:16:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64407",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64291",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -69,15 +69,15 @@ Incidentally, this is also true of things like point(), where an empty list of p
 
 ---
 
-archive/issue_comments_064408.json:
+archive/issue_comments_064292.json:
 ```json
 {
     "body": "Changing keywords from \"list_plot\" to \"list_plot, beginner\".",
     "created_at": "2010-05-26T15:40:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64408",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64292",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -87,15 +87,15 @@ Changing keywords from "list_plot" to "list_plot, beginner".
 
 ---
 
-archive/issue_comments_064409.json:
+archive/issue_comments_064293.json:
 ```json
 {
     "body": "Attachment [trac_7570_empty_lists.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_lists.patch) by ryan created at 2010-08-21 13:40:29\n\nmake list_plot() and point() accept empty lists and return empty Graphics() object",
     "created_at": "2010-08-21T13:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64409",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64293",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -107,15 +107,15 @@ make list_plot() and point() accept empty lists and return empty Graphics() obje
 
 ---
 
-archive/issue_comments_064410.json:
+archive/issue_comments_064294.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-08-21T13:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64410",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64294",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -125,15 +125,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_064411.json:
+archive/issue_comments_064295.json:
 ```json
 {
     "body": "The patch was made against sage-4.6.0\n\nIt handles empty lists as input to arrow, line, point, and plot.\n\nI'm not sure what other plotting functions would benefit from empty lists as input.",
     "created_at": "2011-01-08T19:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64411",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64295",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -147,15 +147,15 @@ I'm not sure what other plotting functions would benefit from empty lists as inp
 
 ---
 
-archive/issue_comments_064412.json:
+archive/issue_comments_064296.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-01-08T19:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64412",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64296",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -165,15 +165,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_064413.json:
+archive/issue_comments_064297.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-01-08T20:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64413",
-    "user": "gagansekhon"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64297",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gagansekhon"
 }
 ```
 
@@ -183,15 +183,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_064414.json:
+archive/issue_comments_064298.json:
 ```json
 {
     "body": "sage/plot/point.py fails. \n\nWhen I passed an empty list I got an error. \n\nsage: point([])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (273, 0))\n\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/Applications/sage4.6/devel/sage-main/<ipython console> in <module>()\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/Prompts.pyc in __call__(self, arg)\n    549 \n    550             # and now call a possibly user-defined print mechanism\n--> 551             manipulated_val = self.display(arg)\n    552             \n    553             # user display hooks can change the variable to be stored in\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/Prompts.pyc in _display(self, arg)\n    575             return IPython.generics.result_display(arg)\n    576         except TryNext:            \n--> 577             return self.shell.hooks.result_display(arg)\n    578 \n    579     # Assign the default display method:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/IPython/hooks.pyc in __call__(self, *args, **kw)\n    139             #print \"prio\",prio,\"cmd\",cmd #dbg\n    140             try:\n--> 141                 ret = cmd(*args, **kw)\n    142                 return ret\n    143             except ipapi.TryNext, exc:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/misc/displayhook.pyc in result_display(ip_self, obj)\n    148     # IPython's default result_display() uses the IPython.genutils.Term.cout stream.\n    149     # See also local/lib/python2.6/site-packages/IPython/hooks.py.\n--> 150     print_obj(IPython.genutils.Term.cout, obj)\n    151 \n    152 def displayhook(obj):\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/misc/displayhook.pyc in print_obj(out_stream, obj)\n    140             if _check_tall_list_and_print(out_stream, obj):\n    141                 return\n--> 142     print >>out_stream, `obj`\n    143 \n    144 def result_display(ip_self, obj):\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/structure/sage_object.so in sage.structure.sage_object.SageObject.__repr__ (sage/structure/sage_object.c:1341)()\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in _repr_(self)\n   1078         \"\"\"\n   1079         if SHOW_DEFAULT:\n-> 1080             self.show()\n   1081             return ''\n   1082         else:\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/misc.pyc in wrapper(*args, **kwds)\n     82             kwds[self.name + \"options\"] = suboptions\n     83 \n---> 84             return func(*args, **kwds)\n     85 \n     86         from sage.misc.sageinspect import sage_getsource\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in show(self, **kwds)\n   1737             if options['filename'] is None:\n   1738                 options['filename'] = sage.misc.misc.tmp_filename() + '.png'\n-> 1739             self.save(**options)\n   1740             os.system('%s %s 2>/dev/null 1>/dev/null &' % \\\n   1741                 (sage.misc.viewer.browser(), options['filename']))\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in save(self, filename, dpi, savenow, *args, **kwds)\n   2386             options=dict()\n   2387             options['transparent']=kwds.pop('transparent',False)\n-> 2388             figure=self.matplotlib(*args, **kwds)\n   2389             # You can output in PNG, PS, EPS, PDF, or SVG format, depending on the file extension. \n   2390             # matplotlib looks at the file extension to see what the renderer should be.\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/plot.pyc in matplotlib(self, filename, xmin, xmax, ymin, ymax, figsize, figure, sub, axes, axes_labels, fontsize, frame, verify, aspect_ratio, gridlines, gridlinesstyle, vgridlinesstyle, hgridlinesstyle, show_legend, legend_options, axes_pad, ticks_integer, tick_formatter, ticks)\n   1954         #add all the primitives to the subplot\n   1955         for g in self.__objects:\n-> 1956             g._render_on_subplot(subplot)\n   1957         \n   1958         #add the legend if requested\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/sage/plot/point.pyc in _render_on_subplot(self, subplot)\n    271         scatteroptions={}\n    272         if not faceted: scatteroptions['edgecolors'] = 'none'\n--> 273         subplot.scatter(self.xdata, self.ydata, s=s, c=c, alpha=a, zorder=z, label=options['legend_label'], **scatteroptions)\n    274         \n    275 \n\n/Applications/sage4.6/local/lib/python2.6/site-packages/matplotlib/axes.pyc in scatter(self, x, y, s, c, marker, cmap, norm, vmin, vmax, alpha, linewidths, faceted, verts, **kwargs)\n   5811         temp_y = y\n   5812 \n-> 5813         minx = np.amin(temp_x)\n   5814         maxx = np.amax(temp_x)\n   5815         miny = np.amin(temp_y)\n\n/Applications/sage4.6/local/lib/python2.6/site-packages/numpy/core/fromnumeric.pyc in amin(a, axis, out)\n   1641     except AttributeError:\n   1642         return _wrapit(a, 'min', axis, out)\n-> 1643     return amin(axis, out)\n   1644 \n   1645 \n\nValueError: zero-size array to ufunc.reduce without identity",
     "created_at": "2011-01-08T20:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64414",
-    "user": "gagansekhon"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64298",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gagansekhon"
 }
 ```
 
@@ -308,15 +308,15 @@ ValueError: zero-size array to ufunc.reduce without identity
 
 ---
 
-archive/issue_comments_064415.json:
+archive/issue_comments_064299.json:
 ```json
 {
     "body": "Thanks for working on polishing these things!\n\nOne quick comment from just glancing at the patch: there is a typo that occurs twice in the patch: \"returns and empty plot\" (where \"and\" should be \"an\").",
     "created_at": "2011-01-08T22:34:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64415",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64299",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -328,15 +328,15 @@ One quick comment from just glancing at the patch: there is a typo that occurs t
 
 ---
 
-archive/issue_comments_064416.json:
+archive/issue_comments_064300.json:
 ```json
 {
     "body": "funny...I can't reproduce this error on my local sage install.  However, on a remote sage install (i.e., sage.math), I get the error.  However, the error is triggered (I think) because the remote installation can't display graphics.\n\nTry:\n[[[\na = point([])\ntype(a)\n]]]\na is of type sage.plot.plot.Graphics()",
     "created_at": "2011-01-08T23:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64416",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64300",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -353,15 +353,15 @@ a is of type sage.plot.plot.Graphics()
 
 ---
 
-archive/issue_comments_064417.json:
+archive/issue_comments_064301.json:
 ```json
 {
     "body": "Try: ` a = point([]) type(a) ` a is of type sage.plot.plot.Graphics",
     "created_at": "2011-01-08T23:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64417",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64301",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -371,15 +371,15 @@ Try: ` a = point([]) type(a) ` a is of type sage.plot.plot.Graphics
 
 ---
 
-archive/issue_comments_064418.json:
+archive/issue_comments_064302.json:
 ```json
 {
     "body": "1. fixed the typos\n2. changed arrow2d a bit.",
     "created_at": "2011-01-08T23:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64418",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64302",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -390,15 +390,15 @@ archive/issue_comments_064418.json:
 
 ---
 
-archive/issue_comments_064419.json:
+archive/issue_comments_064303.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-01-08T23:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64419",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64303",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -408,15 +408,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_064420.json:
+archive/issue_comments_064304.json:
 ```json
 {
     "body": "This latest patch now fixes the bug _actually_ described in the ticket :)",
     "created_at": "2011-01-09T06:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64420",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64304",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -426,15 +426,15 @@ This latest patch now fixes the bug _actually_ described in the ticket :)
 
 ---
 
-archive/issue_comments_064421.json:
+archive/issue_comments_064305.json:
 ```json
 {
     "body": "added documentation",
     "created_at": "2011-01-09T06:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64421",
-    "user": "ryan"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64305",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ryan"
 }
 ```
 
@@ -444,15 +444,15 @@ added documentation
 
 ---
 
-archive/issue_comments_064422.json:
+archive/issue_comments_064306.json:
 ```json
 {
     "body": "Attachment [trac_7570_empty_graphics.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.patch) by @adeines created at 2011-01-09 20:19:59\n\nThe only test that didn't pass was ./sage -t devel/sage/sage/plot/arrow.py and I think it's only because you have line 412 in:\n\n```\nsage: arrow2d(headpoint=None, tailpoint) \n```\n\n\n\nIf you delete that line, the tests pass and everything looks good.",
     "created_at": "2011-01-09T20:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64422",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64306",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -472,15 +472,15 @@ If you delete that line, the tests pass and everything looks good.
 
 ---
 
-archive/issue_comments_064423.json:
+archive/issue_comments_064307.json:
 ```json
 {
     "body": "This fixes the doctest.",
     "created_at": "2011-01-09T20:25:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64423",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64307",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -490,15 +490,15 @@ This fixes the doctest.
 
 ---
 
-archive/issue_comments_064424.json:
+archive/issue_comments_064308.json:
 ```json
 {
     "body": "Attachment [trac_7570_empty_graphics.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.patch) by gagansekhon created at 2011-01-10 04:47:09",
     "created_at": "2011-01-10T04:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64424",
-    "user": "gagansekhon"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64308",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gagansekhon"
 }
 ```
 
@@ -508,15 +508,15 @@ Attachment [trac_7570_empty_graphics.2.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_064425.json:
+archive/issue_comments_064309.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-01-10T04:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64425",
-    "user": "gagansekhon"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64309",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gagansekhon"
 }
 ```
 
@@ -526,15 +526,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064426.json:
+archive/issue_comments_064310.json:
 ```json
 {
     "body": "Positive reviewer, can you add your (real) name to the reviewer list?",
     "created_at": "2011-01-10T14:00:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64426",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64310",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -544,15 +544,15 @@ Positive reviewer, can you add your (real) name to the reviewer list?
 
 ---
 
-archive/issue_comments_064427.json:
+archive/issue_comments_064311.json:
 ```json
 {
     "body": "Please specify which patches have to be applied.",
     "created_at": "2011-01-25T16:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64427",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64311",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -562,15 +562,15 @@ Please specify which patches have to be applied.
 
 ---
 
-archive/issue_comments_064428.json:
+archive/issue_comments_064312.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_info.",
     "created_at": "2011-01-25T16:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64428",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64312",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -580,15 +580,15 @@ Changing status from positive_review to needs_info.
 
 ---
 
-archive/issue_comments_064429.json:
+archive/issue_comments_064313.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2011-01-27T17:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64429",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64313",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -598,15 +598,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_064430.json:
+archive/issue_comments_064314.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-01-27T17:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64430",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64314",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -616,15 +616,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064431.json:
+archive/issue_comments_064315.json:
 ```json
 {
     "body": "I hate to do this, because I *really* want this in - just yesterday had to write all sorts of dumb if/then clauses to get around this.  But the commit message on the most recent patch is totally uninformative, and unfortunately I don't have time to fix that now.",
     "created_at": "2011-01-27T17:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64431",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64315",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -634,15 +634,15 @@ I hate to do this, because I *really* want this in - just yesterday had to write
 
 ---
 
-archive/issue_comments_064432.json:
+archive/issue_comments_064316.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-01-27T17:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64432",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64316",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -652,15 +652,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_064433.json:
+archive/issue_comments_064317.json:
 ```json
 {
     "body": "There is also a Sphinx error:\n\n```\n/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha3/local/lib/python2.6/site-packages/sage/plot/plot.py:docstring of sage.plot.plot:157: (ERROR/3) Unexpected indentation.\n```\n",
     "created_at": "2011-01-28T08:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64433",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64317",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -675,15 +675,15 @@ There is also a Sphinx error:
 
 ---
 
-archive/issue_comments_064434.json:
+archive/issue_comments_064318.json:
 ```json
 {
     "body": "Can somebody please fix the trivial issues with this ticket?",
     "created_at": "2011-02-07T08:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64434",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64318",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -693,15 +693,15 @@ Can somebody please fix the trivial issues with this ticket?
 
 ---
 
-archive/issue_comments_064435.json:
+archive/issue_comments_064319.json:
 ```json
 {
     "body": "Attachment [trac_7570_empty_graphics.2.2.patch](tarball://root/attachments/some-uuid/ticket7570/trac_7570_empty_graphics.2.2.patch) by @kcrisman created at 2011-02-07 15:53:22\n\nUse this patch only",
     "created_at": "2011-02-07T15:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64435",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64319",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -713,15 +713,15 @@ Use this patch only
 
 ---
 
-archive/issue_comments_064436.json:
+archive/issue_comments_064320.json:
 ```json
 {
     "body": "I think this fixes both issues, as well as corrects several 'emtpy' occurrences.",
     "created_at": "2011-02-07T15:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64436",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64320",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -731,15 +731,15 @@ I think this fixes both issues, as well as corrects several 'emtpy' occurrences.
 
 ---
 
-archive/issue_comments_064437.json:
+archive/issue_comments_064321.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-02-07T15:54:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64437",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64321",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -749,15 +749,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_064438.json:
+archive/issue_comments_064322.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-02-07T15:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64438",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64322",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -767,15 +767,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064439.json:
+archive/issue_comments_064323.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-02-16T08:49:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64439",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64323",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -785,15 +785,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_064440.json:
+archive/issue_comments_064324.json:
 ```json
 {
     "body": "There is a problem with the code on the final merged patch: why wasn't len()==0 used as a test?  The problem is illustrated here: http://groups.google.com/group/sage-support/browse_thread/thread/fb53b9d908acfb4\n\nI've opened #11787 to correct this.",
     "created_at": "2011-09-11T03:08:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7570",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64440",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7570#issuecomment-64324",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

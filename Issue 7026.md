@@ -6,15 +6,14 @@ archive/issues_007026.json:
     "body": "Assignee: @ClementPernet\n\nWhen using the Sun compiler with sage-4.1.2.alpha2, linbox 1.1.6.p0 seems to think GMP is not installed, even though the substitute mpir is installed. See below.\n\nThis is very similar to #7025, which occurs with givaro. \n\nAll these files actually exist\n\n\n```\nlocal/include/gmp.h\nlocal/include/gmpxx.h\nlocal/lib/libgmp.la\nlocal/lib/libgmp.so\nlocal/lib/libgmp.so.3\nlocal/lib/libgmp.so.3.4.4\nlocal/lib/libgmpxx.la\nlocal/lib/libgmpxx.so\nlocal/lib/libgmpxx.so.3\nlocal/lib/libgmpxx.so.3.1.4\n```\n\n\nHere's the error:\n\n\n```\n\nchecking size of long long... 8\nchecking for __int64... no\nchecking size of __int64... 0\nchecking whether byte ordering is bigendian... yes\nDefault path = /usr /usr/local\nchecking whether to compile the drivers... no\nchecking for GMP >= 3.1.1... *******************************************************************************\n ERROR: GMP not found!\n\n GMP version 3.1.1 or greater with --enable-cxx is required for this library to compile. Please\n make sure GMP is installed and specify its location with the option\n --with-gmp=<prefix> when running configure.\n*******************************************************************************\nError configuring linbox\n\nreal    0m29.178s\nuser    0m7.691s\nsys     0m12.302s\nsage: An error occurred while installing linbox-1.1.6.p0\n```\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7026\n\n",
     "created_at": "2009-09-27T11:33:31Z",
     "labels": [
-        "linbox",
-        "major",
+        "component: linbox",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "linbox 1.1.6.p0 says GMP is not installed, even though MPIR is",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7026",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: @ClementPernet
@@ -78,15 +77,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7026
 
 ---
 
-archive/issue_comments_058178.json:
+archive/issue_comments_058069.json:
 ```json
 {
     "body": "Linbox is also indicating it can't find GMP using gcc 4.4.1 in 64-bit mode on a SPARC.\n\n\n```\nchecking size of int... 4\nchecking for long... yes\nchecking size of long... 8\nchecking for long long... yes\nchecking size of long long... 8\nchecking for __int64... no\nchecking size of __int64... 0\nchecking whether byte ordering is bigendian... yes\nDefault path = /usr /usr/local\nchecking whether to compile the drivers... no\nchecking for GMP >= 3.1.1... problem\nSorry, your GMP version is too old. Disabling.\n*******************************************************************************\n ERROR: GMP not found!\n```\n\n\nSo Linbox has problems with GMP on \n\n* Solaris 10 SPARC 32-bit mode with the Sun compiler. \n* Solaris 10 SPARC 64-bit mode with gcc\n\nLinbox at least reconsises GMP on:\n \n* 32-bit mode Solaris 10 SPARC with gcc\n* 64-bit model Open Solaris with gcc.",
     "created_at": "2010-01-14T09:19:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58178",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58069",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -125,15 +124,15 @@ Linbox at least reconsises GMP on:
 
 ---
 
-archive/issue_comments_058179.json:
+archive/issue_comments_058070.json:
 ```json
 {
     "body": "Attachment [config.log.64-bit.gcc.SPARC.txt](tarball://root/attachments/some-uuid/ticket7026/config.log.64-bit.gcc.SPARC.txt) by drkirkby created at 2010-01-14 16:26:49\n\nconfig.log seen on a SPARC using gcc in 64-bit mode",
     "created_at": "2010-01-14T16:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58179",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58070",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -145,15 +144,15 @@ config.log seen on a SPARC using gcc in 64-bit mode
 
 ---
 
-archive/issue_comments_058180.json:
+archive/issue_comments_058071.json:
 ```json
 {
     "body": "The attachment *config.log.64-bit.gcc.SPARC.txt* was generated on a Sun Blade 2000 from sage-4.3.1.alpha2, but with the following environment variables set to force the use of a 64-bit build.\n\n\n```\nLD_LIBRARY_PATH=/usr/local/lib\nLD_LIBRARY_PATH_64=/usr/local/lib/sparcv9\nFPIC_FLAG=-fPIC\nCFLAG64=-m64\nSAGE64=yes\nCFLAGS=-m64\nCXXFLAG64=-m64\nFCFLAGS=-m64\n```\n\n\nSome of those are used internally to Sage.",
     "created_at": "2010-01-14T16:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58180",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58071",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -178,15 +177,15 @@ Some of those are used internally to Sage.
 
 ---
 
-archive/issue_comments_058181.json:
+archive/issue_comments_058072.json:
 ```json
 {
     "body": "Having looked at the error message, it would appear the library can't be found. But it does exist as the place expected. \n\n\n```\ndrkirkby@swan:[~] $ file  gcc64/sage-4.3.1.alpha2/local/lib/libgmpxx.so.3\ngcc64/sage-4.3.1.alpha2/local/lib/libgmpxx.so.3:        ELF 64-bit MSB dynamic lib SPARCV9 Version 1, dynamically linked, not stripped, no debugging information available\ndrkirkby@swan:[~] $ \n```\n\n\nAppending /export/home/drkirkby/gcc64/sage-4.3.1.alpha2/local/lib/ to LD_LIBRARY_PATH_64 gets past the issue with GMP, though it does not allow Linbox to build fully. \n\n\n```\nexport LD_LIBRARY_PATH_64=/usr/local/lib/sparcv9:/export/home/drkirkby/gcc64/sage-4.3.1.alpha2/local/lib/\n\nchecking size of long... 8\nchecking for long long... yes\nchecking size of long long... 8\nchecking for __int64... no\nchecking size of __int64... 0\nchecking whether byte ordering is bigendian... yes\nDefault path = /usr /usr/local\nchecking whether to compile the drivers... no\nchecking for GMP >= 3.1.1... found\nchecking whether GMP is 4.0 or greater... yes\nchecking whether GMP was compiled with --enable-cxx... yes\n\nSo it is happy with gmp.\n\nchecking for NTL >= 5.0... found\nchecking for GIVARO >= 3.2.10... found\nchecking whether to compile the sage interface... yes\nchecking for C interface to BLAS... not found\nchecking for others BLAS... not found\n```\n\n\nSo Linbox ultimately fails to build for another reason, but the GMP issue can be circumvented. \n\nI think with hindsight, it would have been better for 64-bit libraries in Sage on Solaris to have been put in $SAGE_LOCAL/lib/sparcv9 or $SAGE_LOCAL/lib/amd64 as appropriate. \n\nProbably adding a new variable inside sage-env called LD_LIBRARY_PATH_64 and making that point to $SAGE_LOCAL/lib/ will do the trick. That will cause the linker to look there for 64-bit libraries.",
     "created_at": "2010-01-14T19:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58181",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58072",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -238,15 +237,15 @@ Probably adding a new variable inside sage-env called LD_LIBRARY_PATH_64 and mak
 
 ---
 
-archive/issue_comments_058182.json:
+archive/issue_comments_058073.json:
 ```json
 {
     "body": "Closing since this refers to old versions.",
     "created_at": "2013-03-28T22:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58182",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58073",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -256,15 +255,15 @@ Closing since this refers to old versions.
 
 ---
 
-archive/issue_comments_058183.json:
+archive/issue_comments_058074.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-03-28T22:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58183",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58074",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -274,15 +273,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_058184.json:
+archive/issue_comments_058075.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-03-28T22:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58184",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58075",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -292,15 +291,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058185.json:
+archive/issue_comments_058076.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-03-29T19:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7026",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58185",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7026#issuecomment-58076",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

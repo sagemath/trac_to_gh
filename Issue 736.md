@@ -6,7 +6,7 @@ archive/issues_000736.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/736\n\n",
     "created_at": "2007-09-22T13:37:42Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000736.json:
     "title": "combinatorics updates",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/736",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/736
 
 ---
 
-archive/issue_comments_004310.json:
+archive/issue_comments_004296.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-09-22T13:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4310",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4296",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +49,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_004311.json:
+archive/issue_comments_004297.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-23T19:46:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4311",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4297",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_004312.json:
+archive/issue_comments_004298.json:
 ```json
 {
     "body": "I have no clue what this ticket means or involves.  What is it???",
     "created_at": "2007-09-23T21:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4312",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4298",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +85,15 @@ I have no clue what this ticket means or involves.  What is it???
 
 ---
 
-archive/issue_comments_004313.json:
+archive/issue_comments_004299.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2007-10-04T14:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4313",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4299",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -103,15 +103,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_004314.json:
+archive/issue_comments_004300.json:
 ```json
 {
     "body": "Please add a description or a patch.",
     "created_at": "2007-10-04T14:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4314",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4300",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +121,15 @@ Please add a description or a patch.
 
 ---
 
-archive/issue_comments_004315.json:
+archive/issue_comments_004301.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-10-04T15:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4315",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4301",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -139,15 +139,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_004316.json:
+archive/issue_comments_004302.json:
 ```json
 {
     "body": "Attachment [736.hg](tarball://root/attachments/some-uuid/ticket736/736.hg) by @mwhansen created at 2007-10-04 15:23:44\n\nHG bundle attached.",
     "created_at": "2007-10-04T15:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4316",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4302",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -159,15 +159,15 @@ HG bundle attached.
 
 ---
 
-archive/issue_comments_004317.json:
+archive/issue_comments_004303.json:
 ```json
 {
     "body": "Resolution changed from invalid to ",
     "created_at": "2007-10-04T15:23:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4317",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4303",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -177,15 +177,15 @@ Resolution changed from invalid to
 
 ---
 
-archive/issue_comments_004318.json:
+archive/issue_comments_004304.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-04T17:27:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/736",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4318",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/736#issuecomment-4304",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000275.json:
     "body": "Assignee: @williamstein\n\nKeywords: matrix groups\n\n\n```\nsage: G = SL(2, CC)\nsage: G.gens()\n\nTypeError: Gap produced error output\nVariable: 'Complex' must have a value\n\nSyntax error: ) expected\n$sage17:=SL(2, Complex Field with 53 bits of precision);;\n                           ^\n\n   executing $sage17:=SL(2, Complex Field with 53 bits of precision);;\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/275\n\n",
     "created_at": "2007-02-21T20:34:05Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "Maxtrix groups over RR don't get pushed off to GAP properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/275",
-    "user": "@bobmoretti"
+    "user": "https://github.com/bobmoretti"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/275
 
 ---
 
-archive/issue_comments_001308.json:
+archive/issue_comments_001304.json:
 ```json
 {
     "body": "NOTE -- Gap doesn't have a notion of floating point numbers -- so the correct behavior here is to give a good error message.",
     "created_at": "2007-08-18T09:58:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/275",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1308",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1304",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -63,15 +62,15 @@ NOTE -- Gap doesn't have a notion of floating point numbers -- so the correct be
 
 ---
 
-archive/issue_comments_001309.json:
+archive/issue_comments_001305.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to interfaces.",
     "created_at": "2007-08-18T09:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/275",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1309",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1305",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -81,15 +80,15 @@ Changing component from algebraic geometry to interfaces.
 
 ---
 
-archive/issue_comments_001310.json:
+archive/issue_comments_001306.json:
 ```json
 {
     "body": "fixed for sage-2.8.2",
     "created_at": "2007-08-18T20:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/275",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1310",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1306",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -99,15 +98,15 @@ fixed for sage-2.8.2
 
 ---
 
-archive/issue_comments_001311.json:
+archive/issue_comments_001307.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-18T20:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/275",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1311",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/275#issuecomment-1307",
+    "user": "https://github.com/williamstein"
 }
 ```
 

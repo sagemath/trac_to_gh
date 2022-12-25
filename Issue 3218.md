@@ -6,15 +6,14 @@ archive/issues_003218.json:
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3218\n\n",
     "created_at": "2008-05-16T13:33:32Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "fix 64 bit OSX build support for mercurial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3218",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3218
 
 ---
 
-archive/issue_comments_022285.json:
+archive/issue_comments_022238.json:
 ```json
 {
     "body": "Attachment [mercurial-0.9.5.p0-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3218/mercurial-0.9.5.p0-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-16 14:06:36",
     "created_at": "2008-05-16T14:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3218",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22285",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22238",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +50,15 @@ Attachment [mercurial-0.9.5.p0-spkg-install-64bit-osx.patch](tarball://root/atta
 
 ---
 
-archive/issue_comments_022286.json:
+archive/issue_comments_022239.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-23T01:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3218",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22286",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22239",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_022287.json:
+archive/issue_comments_022240.json:
 ```json
 {
     "body": "An updated spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/rc0/mercurial-0.9.5.p1.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-23T01:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3218",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22287",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22240",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Michael
 
 ---
 
-archive/issue_comments_022288.json:
+archive/issue_comments_022241.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-23T01:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3218",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22288",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22241",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022289.json:
+archive/issue_comments_022242.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.rc0",
     "created_at": "2008-05-23T01:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3218",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22289",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3218#issuecomment-22242",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

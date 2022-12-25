@@ -6,14 +6,12 @@ archive/issues_008623.json:
     "body": "Assignee: @williamstein\n\nCC:  bober @JohnCremona @craigcitro @williamstein @robertwb ylchapuy\n\nI am attaching a patch which gives a user interface to lcalc library wrapper. Please give me feedback. Right now only Elliptic Curve L functions are implemented.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8623\n\n",
     "created_at": "2010-03-29T12:54:49Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "title": "User interface to lcalc library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8623",
-    "user": "@rishikesha"
+    "user": "https://github.com/rishikesha"
 }
 ```
 Assignee: @williamstein
@@ -30,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8623
 
 ---
 
-archive/issue_comments_078169.json:
+archive/issue_comments_078041.json:
 ```json
 {
     "body": "This is an example of user interface for lcalc library. This interface does not assume that the center is half.  This is not finished, but I would like some feedback on the design decisions.\n\nBelow is how to use it\n\n```\nsage: E=EllipticCurve([1,-1,1,-1,-14])\nsage: L=E.lfunction()\nsage: L\nL Function of  Elliptic Curve defined by y^2 + x*y + y = x^3 - x^2 - x - 14 over Rational Field\nsage: L.value(1)\n0.386769938387780\nsage: L(1)\n0.386769938387780\nsage: L.find_zeros_and_verify(4)\n[4.74199315541376, 7.81910395523807, 8.69568671187028, 10.7173409988911]\nsage: L.hardy_z_function(1+2*I)\n1.26747446769888 + 1.11832648738039e-16*I\nsage: L.hardy_z_function(1+3*I)\n1.92712584463710 + 8.78500291880843e-16*I\nsage: L.hardy_z_function(1+4*I)\n1.53230410077723 + 1.82991418837085e-15*I\nsage: L.center()\n1\nsage: L.analytic_rank()\n0\n```\n",
     "created_at": "2010-03-29T13:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78169",
-    "user": "@rishikesha"
+    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78041",
+    "user": "https://github.com/rishikesha"
 }
 ```
 
@@ -74,15 +72,15 @@ sage: L.analytic_rank()
 
 ---
 
-archive/issue_comments_078170.json:
+archive/issue_comments_078042.json:
 ```json
 {
     "body": "Attachment [trac_8623.patch](tarball://root/attachments/some-uuid/ticket8623/trac_8623.patch) by @rishikesha created at 2010-03-29 13:14:36",
     "created_at": "2010-03-29T13:14:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78170",
-    "user": "@rishikesha"
+    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78042",
+    "user": "https://github.com/rishikesha"
 }
 ```
 
@@ -92,15 +90,15 @@ Attachment [trac_8623.patch](tarball://root/attachments/some-uuid/ticket8623/tra
 
 ---
 
-archive/issue_comments_078171.json:
+archive/issue_comments_078043.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"lcalc\".",
     "created_at": "2014-03-06T10:51:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8623",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78171",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8623#issuecomment-78043",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

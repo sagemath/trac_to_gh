@@ -6,15 +6,14 @@ archive/issues_002361.json:
     "body": "Assignee: @williamstein\n\nKeywords: substitution ambiguity\n\nI have just started reading the Sage reference manual (release 2008.02.22) and I noticed an example of substitution in section 4.1 that contradicted the description that preceded it:\n\n\n----\n*If there is no ambiguity of variable names, we don't have to specify them:*\n\n...\n\n*However if there is ambiguity, we must explicitly state what variables we're substituting for:*\n\n```\nsage: f = sin(2*pi*x/y)\nsage: f(4)\nsin(8*pi/y)\n```\n\n----\n\nEither the documentation should be changed so that it accurately describes what happens in this example or the implementation should be changed so that an exception is raised in a case like this.\n\nI have a strong preference for the latter solution. I don't find the current substitution behavior in case of ambiguity useful (is it even clearly defined?), and I can think of many examples where this behavior could easily lead to subtle bugs.\n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2361\n\n",
     "created_at": "2008-03-01T18:14:05Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Substitution without specifying variables should raise exception in case of ambiguity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2361",
-    "user": "parombouts"
+    "user": "https://trac.sagemath.org/admin/accounts/users/parombouts"
 }
 ```
 Assignee: @williamstein
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2361
 
 ---
 
-archive/issue_comments_015920.json:
+archive/issue_comments_015885.json:
 ```json
 {
     "body": "I am new to Sage so I am not yet able to hack the implementation myself, but it should be fairly straightforward to fix this.\n\nI have noticed that there is a number_of_arguments method, so if the substitution argument doesn't specify a variable, the code should check that self.number_of_arguments()==1 and raise an exception if not.",
     "created_at": "2008-03-01T18:30:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2361",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15920",
-    "user": "parombouts"
+    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15885",
+    "user": "https://trac.sagemath.org/admin/accounts/users/parombouts"
 }
 ```
 
@@ -76,15 +75,15 @@ I have noticed that there is a number_of_arguments method, so if the substitutio
 
 ---
 
-archive/issue_comments_015921.json:
+archive/issue_comments_015886.json:
 ```json
 {
     "body": "Currently, if you don't specify variables, then the implicit order is the one from f.variables()\n\n\n```\nsage: f = sin(2*pi*x/y)\nsage: f.variables()\n(x, y)\nsage: f(2)\nsin(4*pi/y)\nsage: f(2,2)\n0\nsage: f(x,2)\nsin(pi*x)\n```\n",
     "created_at": "2008-03-01T22:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2361",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15921",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15886",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -108,15 +107,15 @@ sin(pi*x)
 
 ---
 
-archive/issue_comments_015922.json:
+archive/issue_comments_015887.json:
 ```json
 {
     "body": "This should definately get changed.",
     "created_at": "2008-03-21T16:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2361",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15922",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15887",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -126,15 +125,15 @@ This should definately get changed.
 
 ---
 
-archive/issue_comments_015923.json:
+archive/issue_comments_015888.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-16T11:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2361",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15923",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15888",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -144,15 +143,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_015924.json:
+archive/issue_comments_015889.json:
 ```json
 {
     "body": "This was fixed with #5413.\n\nSubstitution is symbolic expressions now requires stating the variables explicitly.",
     "created_at": "2009-04-16T11:02:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2361",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15924",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/2361#issuecomment-15889",
+    "user": "https://github.com/burcin"
 }
 ```
 

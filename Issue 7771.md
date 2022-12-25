@@ -6,7 +6,7 @@ archive/issues_007771.json:
     "body": "Assignee: @williamstein\n\nThis nearly always happens after installing an R package and then following the directions Sage gives:\n\n```\nsage: r.restart()\nError: object 'sage0' not found\n```\n\nThis seems to be unrelated to whether R has recommended packages installed or not, so I am making a new ticket for this.  Making it minor since just restarting Sage takes care of things as well.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7771\n\n",
     "created_at": "2009-12-27T03:58:13Z",
     "labels": [
-        "interfaces",
+        "component: interfaces",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007771.json:
     "title": "fix R restart in interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7771",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: @williamstein
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7771
 
 ---
 
-archive/issue_comments_066979.json:
+archive/issue_comments_066863.json:
 ```json
 {
     "body": "As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n\n```\n[mvngu@mod sage-4.3.2.alpha1]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: r.install_packages(\"cluster\")\n<downloading-compiling-messages>\n* DONE (cluster)\n| Sage Version 4.3.2.alpha1, Release Date: 2010-01-31                |\n| Type notebook() for the GUI, and license() for information.        |\nThe downloaded packages are in\n\t\u2018/tmp/RtmpqofuAu/downloaded_packages\u2019\nUpdating HTML index of packages in '.Library'\n> \nPlease restart Sage in order to use 'cluster'.\nsage: exit\nExiting SAGE (CPU time 0m0.05s, Wall time 0m38.43s).\n```\n\nIt didn't say to use the command `r.restart()`. What about issuing `reset()` after installing an R package? It works for me:\n\n```\nsage: r.install_packages(\"igraph\")\n<downloading-compiling-messages>\n* DONE (igraph)\n\nThe downloaded packages are in\n\t\u2018/tmp/RtmpllHMEs/downloaded_packages\u2019\nUpdating HTML index of packages in '.Library'\n> \nPlease restart Sage in order to use 'igraph'.\nsage: reset()\nsage: r.library(\"igraph\")\n```\n\nPerhaps you want the command `r.restart()` to achieve the same effect as `exit` and `reset()`? That is, one could install an R package with `r.install_packages(\"pkg-name\")`, run `r.reset()`, and then load the newly installed package with `r.library(\"pkg-name\")`? As a side note, one could not install R packages with a binary Sage distribution.",
     "created_at": "2010-02-03T06:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66979",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66863",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -95,15 +95,15 @@ Perhaps you want the command `r.restart()` to achieve the same effect as `exit` 
 
 ---
 
-archive/issue_comments_066980.json:
+archive/issue_comments_066864.json:
 ```json
 {
     "body": "Replying to [comment:1 mvngu]:\n> As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n> It didn't say to use the command `r.restart()`. \n\nYes, that is a change I made since r.restart() didn't work, but in the source it is commented that this *should* work.\n\n> What about issuing `reset()` after installing an R package? It works for me:\n> Perhaps you want the command `r.restart()` to achieve the same effect as `exit` and `reset()`? That is, one could install an R package with `r.install_packages(\"pkg-name\")`, run `r.reset()`, and then load the newly installed package with `r.library(\"pkg-name\")`?\n\nMaybe; I am not familiar with the reset command.  Maybe that is what restart was supposed to do all along?  We should ask an R expert.\n\n> As a side note, one could not install R packages with a binary Sage distribution.\n\nOh, that is bad.  I wonder why?  One can install optional spkgs in a binary install, correct?",
     "created_at": "2010-02-03T15:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66980",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66864",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -126,15 +126,15 @@ Oh, that is bad.  I wonder why?  One can install optional spkgs in a binary inst
 
 ---
 
-archive/issue_comments_066981.json:
+archive/issue_comments_066865.json:
 ```json
 {
     "body": "Replying to [comment:2 kcrisman]:\n> Replying to [comment:1 mvngu]:\n> > As of Sage 4.3.2.alpha1, ticket #6532 upgrades R to version 2.10.1. From what I gather, after installing an R package, one needs to restart Sage:\n> > It didn't say to use the command `r.restart()`. \n> \n> Yes, that is a change I made since r.restart() didn't work, but in the source it is commented that this *should* work.\n\nYikes!  Turns out that...\n\n```\n## <entry>\n## Deprecated in 1.6.0\n## Defunct in 1.7.0\nmachine <- function() .Defunct()\nMachine <- function() .Defunct(\".Machine\")\nPlatform <- function() .Defunct(\".Platform\")\nrestart <- function() .Defunct(\"try\")\n## </entry>\n```\n\nNote that R is now at version 2.10.1!   So this is the problem here.  The restart() thing must be very old - and odd, since the function that replaced it was try (for exception handling.  Anyway, if reset() is good enough, that is fine - no need to do r.foo() if a normal Sage command does it well enough.  I'll work on a patch for this.",
     "created_at": "2010-04-27T20:06:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66981",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66865",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -164,15 +164,15 @@ Note that R is now at version 2.10.1!   So this is the problem here.  The restar
 
 ---
 
-archive/issue_comments_066982.json:
+archive/issue_comments_066866.json:
 ```json
 {
     "body": "In fact, it's not even clear whether one needs to reset().  \n\n```\nPlease restart Sage in order to use 'igraph'.\nsage: r.library(\"igraph\")\nsage: a = r.graph_ring(10)\nsage: a\nVertices: 10 \nEdges: 10 \nDirected: FALSE \nEdges:\n          \n[0] 0 -- 1\n[1] 1 -- 2\n[2] 2 -- 3\n[3] 3 -- 4\n[4] 4 -- 5\n[5] 5 -- 6\n[6] 6 -- 7\n[7] 7 -- 8\n[8] 8 -- 9\n[9] 0 -- 9\nsage: r.add_edges(a, (1,5,2,6) )\nVertices: 10 \nEdges: 12 \nDirected: FALSE \nEdges:\n           \n[0]  0 -- 1\n[1]  1 -- 2\n[2]  2 -- 3\n[3]  3 -- 4\n[4]  4 -- 5\n[5]  5 -- 6\n[6]  6 -- 7\n[7]  7 -- 8\n[8]  8 -- 9\n[9]  0 -- 9\n[10] 1 -- 5\n[11] 2 -- 6\n```\n\nAnd this on an install which definitely hadn't had this package installed before.  The same happened with package 'aaMI'.  Which leads me to believe one doesn't even have to reset() - the package is just automatically available.  I'm going to put up a patch to that effect, with the covering statement to use reset() or restart Sage if you encounter problems.",
     "created_at": "2010-04-27T20:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66982",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66866",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -224,15 +224,15 @@ And this on an install which definitely hadn't had this package installed before
 
 ---
 
-archive/issue_comments_066983.json:
+archive/issue_comments_066867.json:
 ```json
 {
     "body": "Attachment [trac_7771-r-restart.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-r-restart.patch) by @kcrisman created at 2010-04-27 20:28:43\n\nBased on Sage 4.3.5",
     "created_at": "2010-04-27T20:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66983",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66867",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -244,15 +244,15 @@ Based on Sage 4.3.5
 
 ---
 
-archive/issue_comments_066984.json:
+archive/issue_comments_066868.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-27T20:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66984",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66868",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -262,15 +262,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_066985.json:
+archive/issue_comments_066869.json:
 ```json
 {
     "body": "This may need slight rebasing after #7665.",
     "created_at": "2010-04-27T20:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66985",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66869",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -280,15 +280,15 @@ This may need slight rebasing after #7665.
 
 ---
 
-archive/issue_comments_066986.json:
+archive/issue_comments_066870.json:
 ```json
 {
     "body": "Replying to [comment:5 kcrisman]:\n> This may need slight rebasing after #7665.   \nNo rebase needed to apply to 4.4.1, as it turns out.  Someone please review, it's an easy one!",
     "created_at": "2010-05-09T00:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66986",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66870",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -300,15 +300,15 @@ No rebase needed to apply to 4.4.1, as it turns out.  Someone please review, it'
 
 ---
 
-archive/issue_comments_066987.json:
+archive/issue_comments_066871.json:
 ```json
 {
     "body": "Attachment [trac_7771-reviewer.patch](tarball://root/attachments/some-uuid/ticket7771/trac_7771-reviewer.patch) by mvngu created at 2010-05-09 04:01:47\n\nWith the patch [trac_7771-r-restart.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7771/trac_7771-r-restart.patch), I got the following failure when doctesting with \"-t -long -optional\":\n\n\n```\nExpected:\n    R is free software and comes with ABSOLUTELY NO WARRANTY.\n    You are welcome to redistribute it under certain conditions.\n    Type 'license()' or 'licence()' for distribution details.\n    ...\n    The R package 'aaMI' may now be loaded via r.library('aaMI').\n    If this should not work, type reset(), or restart Sage.\nGot:\n    The R package 'aaMI' may now be loaded via r.library('aaMI').\n    If this should not work, type reset(), or restart Sage.\n```\n\n\nIt might be simpler to just test for the output:\n\n\n```\nThe R package 'aaMI' may now be loaded via r.library('aaMI').\nIf this should not work, type reset(), or restart Sage.\n```\n\n\nI have attached a reviewer patch that does only that. With both patches, I now get the following failure:\n\n\n```sh\n[mvngu@sage sage-4.4.1]$ ./sage -t -long -optional devel/sage-main/sage/interfaces/r.py \nsage -t -long -optional \"devel/sage-main/sage/interfaces/r.py\"\n\n<output-trancated>\n\nFile \"/dev/shm/mvngu/sandbox/sage-4.4.1/devel/sage-main/sage/interfaces/r.py\", line 1755:\n    sage: latex(r(2))  #optional requires the Hmisc R package\nExpected:\n    2\nGot:\n    % latex.default(sage12, file = \"\") \n    %\n    \\begin{table}[!tbp]\n     \\begin{center}\n     \\begin{tabular}{r}\\hline\\hline\n    \\multicolumn{1}{c}{}\\tabularnewline\n    \\hline\n    $2$\\tabularnewline\n    \\hline\n    \\end{tabular}\n    <BLANKLINE>\n    \\end{center}\n    <BLANKLINE>\n    \\end{table}\n    <BLANKLINE>\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_67\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /dev/shm/mvngu/dot_sage/tmp/.doctest_r.py\n\t [11.5 s]\n```\n\n\nBut that is for another ticket. So only my patch needs reviewing by anyone but me.",
     "created_at": "2010-05-09T04:01:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66987",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66871",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -384,15 +384,15 @@ But that is for another ticket. So only my patch needs reviewing by anyone but m
 
 ---
 
-archive/issue_comments_066988.json:
+archive/issue_comments_066872.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-10T15:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66988",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66872",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -402,15 +402,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_066989.json:
+archive/issue_comments_066873.json:
 ```json
 {
     "body": "The above isn't really a problem; it says explicitly that it requires the Hmisc R package, and should be expected to fail unless you have it, which is why it's optional.\n\nThe change in the reviewer patch is not okay, though.  If R does not start or causes an error, it is silent, but the two print statements will still happen (I just checked this by introducing a typo in the R command).  Can you try that again - I assume you were connected to the internet when you tested it, as the optional flag says?",
     "created_at": "2010-05-10T15:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66989",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66873",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -422,15 +422,15 @@ The change in the reviewer patch is not okay, though.  If R does not start or ca
 
 ---
 
-archive/issue_comments_066990.json:
+archive/issue_comments_066874.json:
 ```json
 {
     "body": "I see now - you already had loaded Hmisc, and apparently it changed its default Latexing.  I can change the patch to fix this.\n\nHowever, as I said, I still disagree with the reviewer patch.  I don't know what to do, though, because apparently doctesting changed and now all things like that loading and downloading happen \"before\" the actual doctest, at least in how it turns out.  I'm not sure what to do about that, because I get the same thing whether I'm connected to the internet or not, which clearly should not be the case for an optional internet doctest!  Suggestions?",
     "created_at": "2010-05-25T14:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66990",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66874",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -442,15 +442,15 @@ However, as I said, I still disagree with the reviewer patch.  I don't know what
 
 ---
 
-archive/issue_comments_066991.json:
+archive/issue_comments_066875.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"r-project, R\".",
     "created_at": "2012-05-21T13:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66991",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7771#issuecomment-66875",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_005024.json:
     "body": "Assignee: mabshoff\n\nWhen we create a dynamic liblapack.so on non-Linux it often creates broken imports for numpy and scipy, so don't do it for now.\n\nThe atlas.spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha0/atlas-3.8.2.p1.spkg\n\nfixes the problem.\n\nCheers,\n\nMichael\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5024\n\n",
     "created_at": "2009-01-19T11:07:40Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005024.json:
     "title": "[with spkg, needs review] Solaris 10: Do not create dynamic liblpack on non-Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5024",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5024
 
 ---
 
-archive/issue_comments_038261.json:
+archive/issue_comments_038189.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-19T11:07:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5024",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38261",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38189",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -58,15 +58,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_038262.json:
+archive/issue_comments_038190.json:
 ```json
 {
     "body": "Works for me.",
     "created_at": "2009-01-19T11:33:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5024",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38262",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38190",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -76,15 +76,15 @@ Works for me.
 
 ---
 
-archive/issue_comments_038263.json:
+archive/issue_comments_038191.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-19T11:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5024",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38263",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38191",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -94,15 +94,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_038264.json:
+archive/issue_comments_038192.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha0",
     "created_at": "2009-01-19T11:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5024",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38264",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5024#issuecomment-38192",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

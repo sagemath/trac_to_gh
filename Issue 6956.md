@@ -6,15 +6,14 @@ archive/issues_006956.json:
     "body": "CC:  @jasongrout @kcrisman\n\nFrom sage-support:\n\n\n```\nOn Fri, 18 Sep 2009 13:15:46 -0500\nJason Grout <jason-sage@creativetrax.com> wrote:\n\n> On alpha.sagenb.org, I get the following:\n> \n> sage: t=var('t')\n> sage: diff(cot(t),t)\n> D[0](cot)(t)\n> sage: diff(cos(t)/sin(t),t)\n> -cos(t)^2/sin(t)^2 - 1\n> \n> \n> Does Sage not know that cot(t) is cos(t)/sin(t)? \n```\n\nUnfortunately it doesn't. \n\nGiNaC doesn't define the function `cot`. Sage defines it in the file\n`sage/functions/trig.py` starting at line 184. I suppose it was written quickly by Mike during the symbolics switch.\n\nDefining a custom derivative function (named `_derivative_`) in that\nclass should fix this.\n\nHere is the thread:\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/752de34c876720cc\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6956\n\n",
     "created_at": "2009-09-18T18:32:18Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "cannot differentiate cotangent",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6956",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 CC:  @jasongrout @kcrisman
@@ -59,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6956
 
 ---
 
-archive/issue_comments_057540.json:
+archive/issue_comments_057432.json:
 ```json
 {
     "body": "Attachment [trac_6956-derivatives.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.patch) by @TimDumol created at 2009-09-19 00:24:46\n\nAdded _derivative() functions to all functions in `trig.py` and `hyperbolic.py`",
     "created_at": "2009-09-19T00:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57540",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57432",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -79,15 +78,15 @@ Added _derivative() functions to all functions in `trig.py` and `hyperbolic.py`
 
 ---
 
-archive/issue_comments_057541.json:
+archive/issue_comments_057433.json:
 ```json
 {
     "body": "This should do the trick.",
     "created_at": "2009-09-19T00:25:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57541",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57433",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -97,15 +96,15 @@ This should do the trick.
 
 ---
 
-archive/issue_comments_057542.json:
+archive/issue_comments_057434.json:
 ```json
 {
     "body": "Thanks for the quick patch.\n\nHere is my review:\n* the keyword argument `diff_param` is only useful for multivariate functions. In this case since all these functions are univariate, so we know the argument is `args[0]`. You can safely drop the first two lines of the `_derivative_()` methods and replace the third with `x = args[0]`.\n* continuing the previous item, we should tell these functions they are univariate. ATM, they silently drop the second argument:\n\n```\nsage: arccsc(a,b)\narccsc(a)\n```\n\n You can do this by giving `nargs=1` as a parameter to the base class constructor.\n* It is better to give the variable as an argument to `diff` in the doctests, for example `diff(asech(x), x)`. I actually prefer `asech(x).derivative(x)`, but this is your patch. :)\n* The formula for the derivative of `asech(x)` you use is only true for x real. You need `-1/(x * (x+1) * sqrt( (1-x)/(1+x) ))`.\n* Similarly, the derivative of `acsch(x)` is `-1/(x^2 * sqrt(1 + 1/x^2) )`\n\nCan someone else check the derivatives to make sure there is no mistake?",
     "created_at": "2009-09-19T16:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57542",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57434",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -131,15 +130,15 @@ Can someone else check the derivatives to make sure there is no mistake?
 
 ---
 
-archive/issue_comments_057543.json:
+archive/issue_comments_057435.json:
 ```json
 {
     "body": "Added `_derivative_()` functions to all functions in trig.py and hyperbolic.py. Rev 2. Apply this patch only.",
     "created_at": "2009-09-20T00:26:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57543",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57435",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -149,15 +148,15 @@ Added `_derivative_()` functions to all functions in trig.py and hyperbolic.py. 
 
 ---
 
-archive/issue_comments_057544.json:
+archive/issue_comments_057436.json:
 ```json
 {
     "body": "Attachment [trac_6956-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket6956/trac_6956-derivatives.2.patch) by @TimDumol created at 2009-09-20 00:31:20\n\nFunctions that inherit from `PrimitiveFunction` are automatically given `nargs = 1` on L800 of `symbolic/function.pyx`. So the silent dropping of arguments is more of a usability problem on the Symbolic side.\n\nI've made the changes for the derivatives of `asech(x)` and `acsch(x)`. I've also generalized the derivatives for `asec(x)` and `acsc(x)`.\n\nAnyone who wants to review the derivatives can check: http://mathworld.wolfram.com/Derivative.html, http://mathworld.wolfram.com/InverseHyperbolicFunctions.html and http://mathworld.wolfram.com/InverseTrigonometricFunctions.html",
     "created_at": "2009-09-20T00:31:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57544",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57436",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -173,15 +172,15 @@ Anyone who wants to review the derivatives can check: http://mathworld.wolfram.c
 
 ---
 
-archive/issue_comments_057545.json:
+archive/issue_comments_057437.json:
 ```json
 {
     "body": "Replying to [comment:3 timdumol]:\n> Functions that inherit from `PrimitiveFunction` are automatically given `nargs = 1` on L800 of `symbolic/function.pyx`. So the silent dropping of arguments is more of a usability problem on the Symbolic side.\n\nYou're right. I fixed this and many other things about symbolic functions last weekend, by rewriting sage/symbolic/function.pyx. Unfortunately I don't think I'll be able to clean up my changes and submit them any time soon... oh, well...\n\n\nI'm giving your patch a positive review. It applies cleanly, and passes all tests on my 4.1.1.alpha. Great job! Many thanks.",
     "created_at": "2009-09-22T11:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57545",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57437",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -197,15 +196,15 @@ I'm giving your patch a positive review. It applies cleanly, and passes all test
 
 ---
 
-archive/issue_comments_057546.json:
+archive/issue_comments_057438.json:
 ```json
 {
     "body": "burcin: it seems that there are several people interested in helping with symbolics, so maybe if you just posted what you had, people could clean it up for you, if that would be easier for your time situation?",
     "created_at": "2009-09-22T13:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57546",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57438",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -215,15 +214,15 @@ burcin: it seems that there are several people interested in helping with symbol
 
 ---
 
-archive/issue_comments_057547.json:
+archive/issue_comments_057439.json:
 ```json
 {
     "body": "Merged `trac_6956-derivatives.2.patch`.",
     "created_at": "2009-09-24T15:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57547",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57439",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -233,15 +232,15 @@ Merged `trac_6956-derivatives.2.patch`.
 
 ---
 
-archive/issue_comments_057548.json:
+archive/issue_comments_057440.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-24T15:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57548",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57440",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -251,15 +250,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_057549.json:
+archive/issue_comments_057441.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
     "created_at": "2009-09-27T10:22:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57549",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6956#issuecomment-57441",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

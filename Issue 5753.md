@@ -6,15 +6,14 @@ archive/issues_005753.json:
     "body": "Assignee: @burcin\n\nCC:  wstein @mwhansen @ncalexan\n\nPynac 0.1.4 is out! :)\n\nChanges from 0.1.3 are:\n* Add support for arithmetic with infinity.\n* Use python repr function for printing numeric objects.\n* Print paranthesis in latex mode with \\left and \\right.\n* Call python for latex names of symbols.\n* Support calling user specified python functions to print function instances.\n* Call python for printing function and fderivative.\n\n\nAttached patches corresponding to the above changes should be applied to the Sage library. Patches below depend on #5546 and #5737, in particular trac_5546-2-pynac_derivative.patch and trac_5737-02-real_imag.patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5753\n\n",
     "created_at": "2009-04-11T15:50:38Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch and package, needs review] update to pynac 0.1.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5753",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @burcin
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5753
 
 ---
 
-archive/issue_comments_044968.json:
+archive/issue_comments_044883.json:
 ```json
 {
     "body": "Attachment [trac_5753-01-infinity.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-01-infinity.patch) by @burcin created at 2009-04-11 15:51:52\n\narithmetic with infinity",
     "created_at": "2009-04-11T15:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44968",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44883",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -63,15 +62,15 @@ arithmetic with infinity
 
 ---
 
-archive/issue_comments_044969.json:
+archive/issue_comments_044884.json:
 ```json
 {
     "body": "Attachment [trac_5753-02-complex_i.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-02-complex_i.patch) by @burcin created at 2009-04-11 15:52:25\n\nfix coercion of complex i",
     "created_at": "2009-04-11T15:52:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44969",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44884",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -83,15 +82,15 @@ fix coercion of complex i
 
 ---
 
-archive/issue_comments_044970.json:
+archive/issue_comments_044885.json:
 ```json
 {
     "body": "fix doctests for printing changes",
     "created_at": "2009-04-11T15:52:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44970",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44885",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -101,15 +100,15 @@ fix doctests for printing changes
 
 ---
 
-archive/issue_comments_044971.json:
+archive/issue_comments_044886.json:
 ```json
 {
     "body": "Attachment [trac_5753-04-latex_paren.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-04-latex_paren.patch) by @burcin created at 2009-04-11 15:53:21\n\nfix printing of latex parenthesis",
     "created_at": "2009-04-11T15:53:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44971",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44886",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -121,15 +120,15 @@ fix printing of latex parenthesis
 
 ---
 
-archive/issue_comments_044972.json:
+archive/issue_comments_044887.json:
 ```json
 {
     "body": "call python for latex representation of symbols",
     "created_at": "2009-04-11T15:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44972",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44887",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -139,15 +138,15 @@ call python for latex representation of symbols
 
 ---
 
-archive/issue_comments_044973.json:
+archive/issue_comments_044888.json:
 ```json
 {
     "body": "Attachment [trac_5753-06-latex_function.patch](tarball://root/attachments/some-uuid/ticket5753/trac_5753-06-latex_function.patch) by @burcin created at 2009-04-11 15:54:51\n\nallow custom printing methods in symbolic functions, move printing of function and fderivative to python",
     "created_at": "2009-04-11T15:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44973",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44888",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -159,15 +158,15 @@ allow custom printing methods in symbolic functions, move printing of function a
 
 ---
 
-archive/issue_comments_044974.json:
+archive/issue_comments_044889.json:
 ```json
 {
     "body": "The package is here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.4.spkg\n\nSorry for the spam.",
     "created_at": "2009-04-11T15:56:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44974",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44889",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -181,15 +180,15 @@ Sorry for the spam.
 
 ---
 
-archive/issue_comments_044975.json:
+archive/issue_comments_044890.json:
 ```json
 {
     "body": "The positive review is due to Mike Hansen's review at #5777.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-20T23:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44975",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44890",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -203,15 +202,15 @@ Michael
 
 ---
 
-archive/issue_comments_044976.json:
+archive/issue_comments_044891.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-20T23:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44976",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44891",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -221,15 +220,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_044977.json:
+archive/issue_comments_044892.json:
 ```json
 {
     "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-20T23:46:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44977",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5753#issuecomment-44892",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

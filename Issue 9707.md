@@ -6,15 +6,13 @@ archive/issues_009707.json:
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill @dcoudert\n\nWe should have an option to g.laplacian() to return the signless Laplacian, which is attracting attention these days, and which is calculated by `D+A` instead of `D-A` (see p. 12 of http://www.doiserbia.nb.rs/ft.aspx?id=0350-13020795011C, for example).\n\nThanks to Steve Butler for the feature request.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9707\n\n",
     "created_at": "2010-08-08T00:40:24Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.7",
     "title": "Add a \"signless\" option to laplacian",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9707",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9707
 
 ---
 
-archive/issue_comments_094612.json:
+archive/issue_comments_094454.json:
 ```json
 {
     "body": "Signless laplacian is indeed gaining popularity as evident in the papers below.\nSo can I add the option to the current Laplacian Matrix method to return signless laplacian matrix?\n\nhttps://arxiv.org/pdf/1803.06135.pdf\n\nhttp://elib.mi.sanu.ac.rs/files/journals/publ/101/n095p011.pdf\n\nhttps://ac.els-cdn.com/S0024379507000316/1-s2.0-S0024379507000316-main.pdf?_tid=59a3915e-dd7a-4dea-87a7-1892bc82cdca&acdnat=1552416165_1a56db5226e8357d8b7c9879a5dc3973",
     "created_at": "2019-03-12T18:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94612",
-    "user": "@rajat1433"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94454",
+    "user": "https://github.com/rajat1433"
 }
 ```
 
@@ -58,15 +56,15 @@ https://ac.els-cdn.com/S0024379507000316/1-s2.0-S0024379507000316-main.pdf?_tid=
 
 ---
 
-archive/issue_comments_094613.json:
+archive/issue_comments_094455.json:
 ```json
 {
     "body": "A quick search effectively returns a significant number of recent publications.",
     "created_at": "2019-03-13T10:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94613",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94455",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -76,15 +74,15 @@ A quick search effectively returns a significant number of recent publications.
 
 ---
 
-archive/issue_comments_094614.json:
+archive/issue_comments_094456.json:
 ```json
 {
     "body": "Changing assignee from jason, ncohen, rlm to @rajat1433.",
     "created_at": "2019-03-13T14:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94614",
-    "user": "@rajat1433"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94456",
+    "user": "https://github.com/rajat1433"
 }
 ```
 
@@ -94,15 +92,15 @@ Changing assignee from jason, ncohen, rlm to @rajat1433.
 
 ---
 
-archive/issue_comments_094615.json:
+archive/issue_comments_094457.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2019-03-13T15:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94615",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94457",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -112,15 +110,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_094616.json:
+archive/issue_comments_094458.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2019-03-13T15:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94616",
-    "user": "@rajat1433"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94458",
+    "user": "https://github.com/rajat1433"
 }
 ```
 
@@ -130,15 +128,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_094617.json:
+archive/issue_comments_094459.json:
 ```json
 {
     "body": "Do i need to include this ticket number somewhere in the code?",
     "created_at": "2019-03-13T15:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94617",
-    "user": "@rajat1433"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94459",
+    "user": "https://github.com/rajat1433"
 }
 ```
 
@@ -148,15 +146,15 @@ Do i need to include this ticket number somewhere in the code?
 
 ---
 
-archive/issue_comments_094618.json:
+archive/issue_comments_094460.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2019-03-13T17:13:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94618",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94460",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -166,15 +164,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094619.json:
+archive/issue_comments_094461.json:
 ```json
 {
     "body": "We usually add ticket number when we fix a bug. So it's not needed here.\n\nLGTM.",
     "created_at": "2019-03-13T17:13:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94619",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94461",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -186,15 +184,15 @@ LGTM.
 
 ---
 
-archive/issue_comments_094620.json:
+archive/issue_comments_094462.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2019-03-14T18:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9707",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94620",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9707#issuecomment-94462",
+    "user": "https://github.com/vbraun"
 }
 ```
 

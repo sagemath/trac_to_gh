@@ -6,15 +6,14 @@ archive/issues_008934.json:
     "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nCurrently computing faces of a non-full-dimensional lattice polytopes causes and exception, because when I was implementing support for such polytopes I missed a parameter in one place. The attached little patch fixes it and adds a doctest for the future.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8934\n\n",
     "created_at": "2010-05-08T22:11:05Z",
     "labels": [
-        "geometry",
-        "major",
+        "component: geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Trivial bug in computing faces of non-full-dimensional lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8934",
-    "user": "@novoselt"
+    "user": "https://github.com/novoselt"
 }
 ```
 Assignee: mhampton
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8934
 
 ---
 
-archive/issue_comments_082269.json:
+archive/issue_comments_082134.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-08T22:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82269",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82134",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_082270.json:
+archive/issue_comments_082135.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-10T11:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82270",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82135",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_082271.json:
+archive/issue_comments_082136.json:
 ```json
 {
     "body": "I'm pretty sure you need the double colon in \n\n```\nline 545:\"     Check that Trac 8934 is fixed::\"\n```\n\nor the example will not be typeset correctly.\n\nA special case of non-full-dimensional polytopes is the zero-dimensional case. This one is also broken, but in a slightly different way:\n\n```\nsage: p = LatticePolytope(matrix([[0]]))\nsage: p.poly_x(\"i\", reduce_dimension=True)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/vbraun/Sage/ToricVariety/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/geometry/lattice_polytope.pyc in poly_x(self, keys, reduce_dimension)\n   2223                1  -1     2\n   2224         \"\"\"\n-> 2225         return self._palp(\"poly.x -f\" + keys, reduce_dimension)\n   2226 \n   2227     def skeleton(self):\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/geometry/lattice_polytope.pyc in _palp(self, command, reduce_dimension)\n    772         if self.dim() == 0:\n    773             raise ValueError, (\"Cannot run \\\"%s\\\" for the zero-dimensional \"\n--> 774                 + \"polytope!\\nPolytope: %s\") % (command, self)\n    775         if self.dim() < self.ambient_dim() and not reduce_dimension:\n    776             raise ValueError((\"Cannot run PALP for a %d-dimensional polytope \" +\n\nValueError: Cannot run \"poly.x -fi\" for the zero-dimensional polytope!\nPolytope: A lattice polytope: 0-dimensional, 1 vertices.\n```\n\nAlso, `p.points()` fails for the same reason. It would be great if you could fix this case as well.",
     "created_at": "2010-05-10T11:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82271",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82136",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -121,15 +120,15 @@ Also, `p.points()` fails for the same reason. It would be great if you could fix
 
 ---
 
-archive/issue_comments_082272.json:
+archive/issue_comments_082137.json:
 ```json
 {
     "body": "Attachment [trac_8934_faces_of_nonspanning_lattice_polytopes.patch](tarball://root/attachments/some-uuid/ticket8934/trac_8934_faces_of_nonspanning_lattice_polytopes.patch) by @novoselt created at 2010-05-10 19:15:46",
     "created_at": "2010-05-10T19:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82272",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82137",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -139,15 +138,15 @@ Attachment [trac_8934_faces_of_nonspanning_lattice_polytopes.patch](tarball://ro
 
 ---
 
-archive/issue_comments_082273.json:
+archive/issue_comments_082138.json:
 ```json
 {
     "body": "I added \":\" into the docstring and tried to address some of the issues with 0-dimensional polytopes, namely, it is now possible to ask for points and faces of them. The list of faces in this case is empty, since only proper faces are returned in the other dimensions. In particular, asking for any faces of the given dimension will cause an error, but that seems to be consistent and I have documented it. I also added a synonym \"all_facet_equations\" for \"all_polars\", since calling the second one does not make a lot of sense for non-reflexive polytopes (although it will do the job). Thanks a lot for quick reviews!",
     "created_at": "2010-05-10T19:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82273",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82138",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -157,15 +156,15 @@ I added ":" into the docstring and tried to address some of the issues with 0-di
 
 ---
 
-archive/issue_comments_082274.json:
+archive/issue_comments_082139.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-10T19:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82274",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82139",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -175,15 +174,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_082275.json:
+archive/issue_comments_082140.json:
 ```json
 {
     "body": "The new patch looks good! I've tried it and it works as expected. Should be committed to Sage asap.",
     "created_at": "2010-05-10T19:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82275",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82140",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -193,15 +192,15 @@ The new patch looks good! I've tried it and it works as expected. Should be comm
 
 ---
 
-archive/issue_comments_082276.json:
+archive/issue_comments_082141.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-10T19:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82276",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82141",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -211,15 +210,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_082277.json:
+archive/issue_comments_082142.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T19:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82277",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8934#issuecomment-82142",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

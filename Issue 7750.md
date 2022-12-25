@@ -6,14 +6,13 @@ archive/issues_007750.json:
     "body": "Assignee: mvngu\n\nIf you call search_doc and one piece of the Sage docs are missing, this patch prints the following warning (and then proceeds with the search):\n\n```\nsage: search_doc('factorial')\nWarning, the following Sage documentation hasn't been built,\nso documentation search results may be incomplete:\n\n/Applications/sage/devel/sage/doc/output/html/fr/tutorial\n\nYou can build this with 'sage -docbuild fr/tutorial html'.\n```\n\nIf more than one piece is missing, it prints this warning:\n\n```\nsage: search_doc('factorial')\nWarning, the following Sage documentation hasn't been built,\nso documentation search results may be incomplete:\n\n/Applications/sage/devel/sage/doc/output/html/en/developer\n/Applications/sage/devel/sage/doc/output/html/en/installation\n/Applications/sage/devel/sage/doc/output/html/fr/tutorial\n\nYou can build these with 'sage -docbuild DOCUMENT html',\nwhere DOCUMENT is one of 'developer', 'installation', 'fr/tutorial', \nor you can use 'sage -docbuild all html' to build all of the missing documentation.\n```\n\nYou can test this by installing the patch and selectively deleting and building pieces of the documentation.  You don't need to restart Sage between deletions or builds -- do that in another window, and each call to search_doc will check for existence of the docs each time.\n\nThere are no doctests for this, because I think that doctests should assume that the Sage build is complete: all documentation should be assumed to be built.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7750\n\n",
     "created_at": "2009-12-22T21:14:50Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "title": "search_doc: print warning if some Sage docs are missing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7750",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: mvngu
@@ -59,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7750
 
 ---
 
-archive/issue_comments_066738.json:
+archive/issue_comments_066622.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-22T21:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66738",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66622",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -77,15 +76,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_066739.json:
+archive/issue_comments_066623.json:
 ```json
 {
     "body": "Attachment [trac_7750-search-doc.patch](tarball://root/attachments/some-uuid/ticket7750/trac_7750-search-doc.patch) by @jhpalmieri created at 2009-12-22 21:18:20",
     "created_at": "2009-12-22T21:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66739",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66623",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -95,15 +94,15 @@ Attachment [trac_7750-search-doc.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_066740.json:
+archive/issue_comments_066624.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-22T21:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66740",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66624",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -113,15 +112,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_066741.json:
+archive/issue_comments_066625.json:
 ```json
 {
     "body": "This is *awesome*.  Positive review.",
     "created_at": "2009-12-22T21:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66741",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66625",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -131,15 +130,15 @@ This is *awesome*.  Positive review.
 
 ---
 
-archive/issue_comments_066742.json:
+archive/issue_comments_066626.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-04T02:12:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66742",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7750#issuecomment-66626",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003268.json:
     "body": "Assignee: @williamstein\n\nI might be wrong, but it looks like output isn't getting printed:\n\n\n```\n# From a pure GAP session:\nGAP4, Version: 4.4.10 of 02-Oct-2007, i686-apple-darwin9.2.2-gcc\ngap> g := Group((1,3,2),(2,4,3));\nGroup([ (1,3,2), (2,4,3) ])\ngap> Stabilizer(g,4);\nGroup([ (1,3,2) ])\ngap> \n\n# From a Sage session:\nsage: %gap\n\n  --> Switching to Gap <-- \n\n''\ngap: g := Group((1,3,2),(2,4,3));\n\ngap: Stabilizer(g,4);\n\ngap: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3268\n\n",
     "created_at": "2008-05-21T16:43:12Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Fix GAP interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3268",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @williamstein
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3268
 
 ---
 
-archive/issue_comments_022623.json:
+archive/issue_comments_022576.json:
 ```json
 {
     "body": "This isn't just for Stabilizer(), since the group isn't printing either...",
     "created_at": "2008-05-25T06:25:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22623",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22576",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -71,15 +70,15 @@ This isn't just for Stabilizer(), since the group isn't printing either...
 
 ---
 
-archive/issue_comments_022624.json:
+archive/issue_comments_022577.json:
 ```json
 {
     "body": "Attachment [trac_3268.patch](tarball://root/attachments/some-uuid/ticket3268/trac_3268.patch) by @mwhansen created at 2009-01-23 09:29:49",
     "created_at": "2009-01-23T09:29:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22624",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22577",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -89,15 +88,15 @@ Attachment [trac_3268.patch](tarball://root/attachments/some-uuid/ticket3268/tra
 
 ---
 
-archive/issue_comments_022625.json:
+archive/issue_comments_022578.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-01-23T09:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22625",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22578",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -107,15 +106,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_022626.json:
+archive/issue_comments_022579.json:
 ```json
 {
     "body": "Note that there is no good way to test this as you can't access the processed line as it's completely internal to the function.",
     "created_at": "2009-01-23T09:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22626",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22579",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -125,15 +124,15 @@ Note that there is no good way to test this as you can't access the processed li
 
 ---
 
-archive/issue_comments_022627.json:
+archive/issue_comments_022580.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-23T09:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22627",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22580",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -143,15 +142,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_022628.json:
+archive/issue_comments_022581.json:
 ```json
 {
     "body": "Nice catch.",
     "created_at": "2009-01-23T22:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22628",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22581",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -161,15 +160,15 @@ Nice catch.
 
 ---
 
-archive/issue_comments_022629.json:
+archive/issue_comments_022582.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-24T23:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22629",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -179,15 +178,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022630.json:
+archive/issue_comments_022583.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha2.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T23:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22630",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3268#issuecomment-22583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

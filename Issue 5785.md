@@ -6,15 +6,14 @@ archive/issues_005785.json:
     "body": "Assignee: @williamstein\n\nKeywords: CDF vector norm\n\n\n```\nsage: v = vector(CDF, [2, 2])\nsage: v - v\n(0, 0)\nsage: (v - v).norm()\nnan\nsage: v = vector(CC, [2, 2])\nsage: (v - v).norm()\n0.000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5785\n\n",
     "created_at": "2009-04-14T15:55:27Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "bug in norm of vectors over CDF",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5785",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5785
 
 ---
 
-archive/issue_comments_045280.json:
+archive/issue_comments_045194.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2009-04-15T05:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45280",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45194",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -60,15 +59,15 @@ Changing assignee from @williamstein to somebody.
 
 ---
 
-archive/issue_comments_045281.json:
+archive/issue_comments_045195.json:
 ```json
 {
     "body": "The problem is this:\n\n\n```\nsage: RDF(0)^(1/2)\nNaN\n```\n",
     "created_at": "2009-04-15T05:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45281",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45195",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -85,15 +84,15 @@ NaN
 
 ---
 
-archive/issue_comments_045282.json:
+archive/issue_comments_045196.json:
 ```json
 {
     "body": "Changing component from linear algebra to basic arithmetic.",
     "created_at": "2009-04-15T05:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45282",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45196",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing component from linear algebra to basic arithmetic.
 
 ---
 
-archive/issue_comments_045283.json:
+archive/issue_comments_045197.json:
 ```json
 {
     "body": "Does #5782 fix this?",
     "created_at": "2009-04-16T17:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45283",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45197",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -121,15 +120,15 @@ Does #5782 fix this?
 
 ---
 
-archive/issue_comments_045284.json:
+archive/issue_comments_045198.json:
 ```json
 {
     "body": "Attachment [5785-cdf-norm.patch](tarball://root/attachments/some-uuid/ticket5785/5785-cdf-norm.patch) by @robertwb created at 2009-04-16 19:12:23\n\nAdded a doctest.",
     "created_at": "2009-04-16T19:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45284",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45198",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -141,15 +140,15 @@ Added a doctest.
 
 ---
 
-archive/issue_comments_045285.json:
+archive/issue_comments_045199.json:
 ```json
 {
     "body": "Replying to [comment:2 jason]:\n> Does #5782 fix this?\n\nIt looks like the same bug, having a doctest added ought to be enough to close this ticket once it is merged.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T21:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45285",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45199",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -166,15 +165,15 @@ Michael
 
 ---
 
-archive/issue_comments_045286.json:
+archive/issue_comments_045200.json:
 ```json
 {
     "body": "Positive review. I changed the double colon after AUTHORS to a single colon. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-18T00:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45286",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45200",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -188,15 +187,15 @@ Michael
 
 ---
 
-archive/issue_comments_045287.json:
+archive/issue_comments_045201.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-18T00:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45287",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45201",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -206,15 +205,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_045288.json:
+archive/issue_comments_045202.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.rc4.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-18T00:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5785",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45288",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5785#issuecomment-45202",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

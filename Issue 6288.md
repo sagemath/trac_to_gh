@@ -6,15 +6,14 @@ archive/issues_006288.json:
     "body": "Assignee: @williamstein\n\n\n```\n> Another thing that does not work is \"sage -\n> lisp\" which gave the clisp prompt. I found this rather convenient\n> since I could just use the clisp within sage. Is there any plan/\n> interest to switch the this lisp interface to ecl? Does ecl use\n> readline?\n\nFor now you can at least start sage then type\n\nsage: !ecl\n\nto start ecl.  It appears to not make any use of ecl.  I don't know if this is just\na compilation problem or an ecl limitation.\n\nThe Sage <--> lisp interface already works fine:\n\nsage: lisp.eval('(+ 2 3)')\n'5'\n\nI'm not sure why %gap works but not %lisp:\n\nsage: %lisp\nERROR: Magic function `lisp` not found.\nsage: %gap\n  --> Switching to Gap <-- \ngap: \n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6288\n\n",
     "created_at": "2009-06-14T20:57:48Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.1",
     "title": "%lisp mode on the command line doesn't work.  why?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6288",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -59,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6288
 
 ---
 
-archive/issue_comments_050206.json:
+archive/issue_comments_050110.json:
 ```json
 {
     "body": "Attachment [trac_6288.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288.patch) by @mwhansen created at 2013-07-23 13:23:57",
     "created_at": "2013-07-23T13:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50206",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50110",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -77,15 +76,15 @@ Attachment [trac_6288.patch](tarball://root/attachments/some-uuid/ticket6288/tra
 
 ---
 
-archive/issue_comments_050207.json:
+archive/issue_comments_050111.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-07-23T13:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50207",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50111",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -95,15 +94,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_050208.json:
+archive/issue_comments_050112.json:
 ```json
 {
     "body": "ok, here is a review patch.\n\nFirst I have made some minor formatting changes (pep8)\n\nNext, I have corrected the part handling the bad names\n\nHere is the list of interfaces with bad names:\n\n```\n[('gp', 'pari', PARI/GP interpreter),\n ('lisp', 'Lisp', Lisp Interpreter),\n ('sage0', 'sage', Sage),\n ('mupad', 'MuPAD', Mupad),\n ('lie', 'LiE', LiE Interpreter)]\n```\n\nI would prefer to avoid having the magic command \"%sage\" !\n\nI also wonder if it is necessary to deprecate the bad names, instead of just using them as an alternative ?",
     "created_at": "2013-08-21T11:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50208",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50112",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -131,15 +130,15 @@ I also wonder if it is necessary to deprecate the bad names, instead of just usi
 
 ---
 
-archive/issue_comments_050209.json:
+archive/issue_comments_050113.json:
 ```json
 {
     "body": "Attachment [trac_6288_addon_pep8.patch](tarball://root/attachments/some-uuid/ticket6288/trac_6288_addon_pep8.patch) by @fchapoton created at 2013-08-25 13:25:46",
     "created_at": "2013-08-25T13:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50209",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50113",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -149,15 +148,15 @@ Attachment [trac_6288_addon_pep8.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_050210.json:
+archive/issue_comments_050114.json:
 ```json
 {
     "body": "ping ?",
     "created_at": "2013-09-11T19:25:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50210",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50114",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -167,15 +166,15 @@ ping ?
 
 ---
 
-archive/issue_comments_050211.json:
+archive/issue_comments_050115.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2014-01-05T10:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50211",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50115",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -185,15 +184,15 @@ New commits:
 
 ---
 
-archive/issue_comments_050212.json:
+archive/issue_comments_050116.json:
 ```json
 {
     "body": "The review patch looks good.  I would probably prefer \"%sage0\" to \"%sage\".  I'd rather deprecate the bad names so that there's just one consistent way to access them.  But, I'm not too fussed either way about those two points.",
     "created_at": "2014-01-09T12:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50212",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50116",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -203,15 +202,15 @@ The review patch looks good.  I would probably prefer "%sage0" to "%sage".  I'd 
 
 ---
 
-archive/issue_comments_050213.json:
+archive/issue_comments_050117.json:
 ```json
 {
     "body": "Ok, so is there still something to do or not ?",
     "created_at": "2014-01-09T19:28:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50213",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50117",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -221,15 +220,15 @@ Ok, so is there still something to do or not ?
 
 ---
 
-archive/issue_comments_050214.json:
+archive/issue_comments_050118.json:
 ```json
 {
     "body": "I would say not.  I'm fine with your patch.",
     "created_at": "2014-01-09T19:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50214",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50118",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -239,15 +238,15 @@ I would say not.  I'm fine with your patch.
 
 ---
 
-archive/issue_comments_050215.json:
+archive/issue_comments_050119.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-01-09T19:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50215",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50119",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -257,15 +256,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_050216.json:
+archive/issue_comments_050120.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2014-01-17T04:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50216",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/6288#issuecomment-50120",
+    "user": "https://github.com/vbraun"
 }
 ```
 

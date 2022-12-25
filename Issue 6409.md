@@ -6,15 +6,14 @@ archive/issues_006409.json:
     "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro\n\n\n```\nsage: srange(1,0,include_endpoint=True)\n[]\nsage: srange(1,QQ(0),include_endpoint=True)\n[0]\n```\n\n\nThese two should agree on something.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6409\n\n",
     "created_at": "2009-06-25T16:12:42Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "srange inconsistent when including endpoints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6409",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: somebody
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6409
 
 ---
 
-archive/issue_comments_051457.json:
+archive/issue_comments_051360.json:
 ```json
 {
     "body": "Fixed srange problem. I used xsrange for some cases, which also had the same bug, so I modified xsrange as well. I added some doctests, and tested the speed. It is as fast as the old code for common calls.",
     "created_at": "2010-05-24T23:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51457",
-    "user": "mjordan7"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51360",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mjordan7"
 }
 ```
 
@@ -58,15 +57,15 @@ Fixed srange problem. I used xsrange for some cases, which also had the same bug
 
 ---
 
-archive/issue_comments_051458.json:
+archive/issue_comments_051361.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"srange\".",
     "created_at": "2010-05-24T23:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51458",
-    "user": "mjordan7"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mjordan7"
 }
 ```
 
@@ -76,15 +75,15 @@ Changing keywords from "" to "srange".
 
 ---
 
-archive/issue_comments_051459.json:
+archive/issue_comments_051362.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-24T23:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51459",
-    "user": "mjordan7"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51362",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mjordan7"
 }
 ```
 
@@ -94,15 +93,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_051460.json:
+archive/issue_comments_051363.json:
 ```json
 {
     "body": "Looks good, but I have made a superficial review with a rebase to 4.4.3, doctest passes, I will check better before giving positive review.",
     "created_at": "2010-06-22T15:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51460",
-    "user": "@lftabera"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51363",
+    "user": "https://github.com/lftabera"
 }
 ```
 
@@ -112,15 +111,15 @@ Looks good, but I have made a superficial review with a rebase to 4.4.3, doctest
 
 ---
 
-archive/issue_comments_051461.json:
+archive/issue_comments_051364.json:
 ```json
 {
     "body": "Changed last line of srange, positive review\n\nnew patch the previous one did not apply to a clean sage installation",
     "created_at": "2010-06-24T10:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51461",
-    "user": "@lftabera"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51364",
+    "user": "https://github.com/lftabera"
 }
 ```
 
@@ -132,15 +131,15 @@ new patch the previous one did not apply to a clean sage installation
 
 ---
 
-archive/issue_comments_051462.json:
+archive/issue_comments_051365.json:
 ```json
 {
     "body": "Attachment [trac_6409.3.patch](tarball://root/attachments/some-uuid/ticket6409/trac_6409.3.patch) by @lftabera created at 2010-06-24 10:53:17",
     "created_at": "2010-06-24T10:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51462",
-    "user": "@lftabera"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51365",
+    "user": "https://github.com/lftabera"
 }
 ```
 
@@ -150,15 +149,15 @@ Attachment [trac_6409.3.patch](tarball://root/attachments/some-uuid/ticket6409/t
 
 ---
 
-archive/issue_comments_051463.json:
+archive/issue_comments_051366.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-24T19:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51463",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51366",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -168,15 +167,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_051464.json:
+archive/issue_comments_051367.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-06-28T21:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51464",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51367",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -186,15 +185,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_051465.json:
+archive/issue_comments_051368.json:
 ```json
 {
     "body": "Please tell the release manager which patches to apply. It is not clear here.\n\n-- RLM + SD MSRI tutorial audience :)",
     "created_at": "2010-06-28T21:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51465",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51368",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -206,15 +205,15 @@ Please tell the release manager which patches to apply. It is not clear here.
 
 ---
 
-archive/issue_comments_051466.json:
+archive/issue_comments_051369.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_info.",
     "created_at": "2010-06-28T23:28:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51466",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51369",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -224,15 +223,15 @@ Changing status from needs_work to needs_info.
 
 ---
 
-archive/issue_comments_051467.json:
+archive/issue_comments_051370.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-06-28T23:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51467",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51370",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -242,15 +241,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_051468.json:
+archive/issue_comments_051371.json:
 ```json
 {
     "body": "I was just being overly pedantic to demonstrate how to work with the trac server. I'll delete the older patches.",
     "created_at": "2010-06-28T23:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51468",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51371",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -260,15 +259,15 @@ I was just being overly pedantic to demonstrate how to work with the trac server
 
 ---
 
-archive/issue_comments_051469.json:
+archive/issue_comments_051372.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-28T23:43:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51469",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51372",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -278,15 +277,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_051470.json:
+archive/issue_comments_051373.json:
 ```json
 {
     "body": "It's conventional to put full names, not trac usernames, in the Author and Reviewer fields (as these are used to assemble the release notes). I'm assuming mjordan7 is Mark Jordan.",
     "created_at": "2010-06-29T16:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51470",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51373",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -296,15 +295,15 @@ It's conventional to put full names, not trac usernames, in the Author and Revie
 
 ---
 
-archive/issue_comments_051471.json:
+archive/issue_comments_051374.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T09:17:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6409",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51471",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6409#issuecomment-51374",
+    "user": "https://github.com/qed777"
 }
 ```
 

@@ -6,14 +6,13 @@ archive/issues_000372.json:
     "body": "Assignee: michel v\n\n\n```\nOn 5/20/07, Michel <michel.vandenbergh@uhasselt.be> wrote:\n>\n> While doing \"singular.interact()\" I see that lots and lots\n> of variables (named: sage*) are being defined in the singular\n> interface.\n> Basically for every intermediate result and then some.\n> I have not looked in detail but are these variables recycled when the\n> corresponding python object goes out of scope?\n\nThey are not reused.  The code is there in interfaces/singular.py,\nbut it's not used right now because everything I tried to reuse\nor clear variables in Singular resulted in all kinds of problems,\nprobably partly because Singular is somewhat statically typed.\nI've always meant to look into this again.   In the other interfaces\n(which are all dynamically typed) variables are recycled when they\naren't used anymore.\n\n> Otherwise this is a memory leak (these variables usual contain\n> polynomials).\n\nIndeed.   Please feel free to work on fixing this.\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/372\n\n",
     "created_at": "2007-05-20T22:36:12Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "title": "singular interface memory leaks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/372",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: michel v
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/372
 
 ---
 
-archive/issue_comments_001780.json:
+archive/issue_comments_001774.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-05-31T15:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/372",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/372#issuecomment-1780",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/372#issuecomment-1774",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_009425.json:
     "body": "Assignee: jason, was\n\n\n```\nsage: V = span([[1/7,0,0] ,[0,1,0]], ZZ); V\nFree module of degree 3 and rank 2 over Integer Ring\nEchelon basis matrix:\n[1/7   0   0]\n[  0   1   0]\nsage: T = matrix(ZZ,3,[1,0,0,0,0,0,0,0,0]); T\n[1 0 0]\n[0 0 0]\n[0 0 0]\nsage: W = T.kernel_on(V); W.basis()\n[\n(0, 1, 0)\n]\nsage: W.is_submodule(V)\nFalse\n```\n\nThis is surprising, isn't it? (Patch comes up in a minute, but I need to create the ticket first.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9425\n\n",
     "created_at": "2010-07-04T21:31:40Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "bug in kernel_on() in \"matrix2.pyx\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9425",
-    "user": "GeorgSWeber"
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 Assignee: jason, was
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9425
 
 ---
 
-archive/issue_comments_089915.json:
+archive/issue_comments_089771.json:
 ```json
 {
     "body": "Attachment [trac_9425_kernel_on.patch](tarball://root/attachments/some-uuid/ticket9425/trac_9425_kernel_on.patch) by GeorgSWeber created at 2010-07-04 21:45:48\n\ncreated against the older Sage-4.4.2, but that shouldn't matter",
     "created_at": "2010-07-04T21:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9425",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89915",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89771",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -68,15 +67,15 @@ created against the older Sage-4.4.2, but that shouldn't matter
 
 ---
 
-archive/issue_comments_089916.json:
+archive/issue_comments_089772.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-04T21:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9425",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89916",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89772",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -86,15 +85,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_089917.json:
+archive/issue_comments_089773.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-05T10:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9425",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89917",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89773",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -104,15 +103,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_089918.json:
+archive/issue_comments_089774.json:
 ```json
 {
     "body": "Looks good to me.  Thanks!",
     "created_at": "2010-07-05T10:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9425",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89918",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89774",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -122,15 +121,15 @@ Looks good to me.  Thanks!
 
 ---
 
-archive/issue_comments_089919.json:
+archive/issue_comments_089775.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T08:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9425",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89919",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9425#issuecomment-89775",
+    "user": "https://github.com/qed777"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005551.json:
     "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nKeywords: robinson schensted\n\n1. In sage 3.4, the Robinson Schensted algorithm is coded for a permutation :\n\n\n```\nsage: p = Permutation([3, 6, 5, 2, 7, 4, 1])\nsage: p.robinson_schensted()\n[[[1, 4, 7], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]\n```\n\n\nSince this algorithm is invertible, it would be nice to allow to construct a permutation from a pair of standard tableaux of the same shape.\n\n2. The Robinson-Schensted is broken on the empty permutation. It should simply return a pair of empty tableaux :\n\n\n```\nsage: p=Permutation([])\nsage: p.robinson_schensted()\nTraceback (most recent call last):\n...\nValueError: invalid tableau\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5551\n\n",
     "created_at": "2009-03-17T20:29:32Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Permutation from a pair of standard tableaux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5551",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: @seblabbe
@@ -55,15 +54,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5551
 
 ---
 
-archive/issue_comments_043172.json:
+archive/issue_comments_043088.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-03-17T21:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43172",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43088",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_043173.json:
+archive/issue_comments_043089.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-03-17T21:17:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43173",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43089",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -91,15 +90,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_043174.json:
+archive/issue_comments_043090.json:
 ```json
 {
     "body": "Dear Sebastien,\n\nIt's good to have this ! Thanks. There are three little problems:\n\n1) The documentation says:\n\n```\n-  a pair of two standard tableaux of the same shape.  \n   The right tableau must be over the integers 1 to n,  \n   where n is its size.\n```\n\nAs far as I know a tableau with entries from 1 to n is what is called a *standard tableau*. When there are repeated entries the usual terminology is semi standard tableaux or young tableaux. See eg: http://en.wikipedia.org/wiki/Young_diagram\n\n\n\n2) why not call it `robinson_schented_inv` ?",
     "created_at": "2009-03-17T22:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43174",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43090",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -125,15 +124,15 @@ As far as I know a tableau with entries from 1 to n is what is called a *standar
 
 ---
 
-archive/issue_comments_043175.json:
+archive/issue_comments_043091.json:
 ```json
 {
     "body": "Dear Florent,\n\nThanks for your quick answer,\n\nReplying to [comment:3 hivert]:\n>       Dear Sebastien,\n> \n> It's good to have this ! Thanks. \n\nCool!\n\n> There are three little problems:\n\nDid you forget the third one or is this a joke meaning you are of the second type of mathematician?\n\n> \n> 1) The documentation says:\n> {{{\n> -  a pair of two standard tableaux of the same shape.  \n>    The right tableau must be over the integers 1 to n,  \n>    where n is its size.\n> }}}\n> As far as I know a tableau with entries from 1 to n is what is called a *standard tableau*.\n\nAnd increasing in row and column. Right. I agree. I should remove the second sentence above.\n\nSo this leads me to a related question. From a permutation, Robinson-Schensted Algo gives a pair of standard tableaux :\n\n```\nsage: p = Permutation([3, 6, 5, 2, 7, 4, 1])\nsage: p.robinson_schensted()\n[[[1, 4, 7], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]\n```\n\nBut from the following \"non bijective\" permutation, we obtain a pair of tableaux (p,q) where p is semi-standard and q is standard. Well, we can say more about p : there are no repeated entry, only possible weigth 1 and 0.\n\n```\nsage: p = Permutation([3, 6, 5, 2, 117, 4, 1])\nsage: p.robinson_schensted()\n[[[1, 4, 117], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]\nsage: t1,t2 = _\nsage: t1.weight()\n[1, 1, 1, 1, 1, 1, 0, 0, 0, ..., 0, 0, 1]\nsage: t2.weight()\n[1, 1, 1, 1, 1, 1, 1]\n```\n\nShould from_tableaux handle the above pair of tableaux? Actually it does :\n\n```\nsage: p = Permutation([3, 6, 5, 2, 117, 4, 1]) ; p\n[3, 6, 5, 2, 117, 4, 1]\nsage: import sage.combinat.permutation as permutation\nsage: p.robinson_schensted()\n[[[1, 4, 117], [2, 5], [3], [6]], [[1, 2, 5], [3, 6], [4], [7]]]\nsage: permutation.from_tableaux(*_)\n[3, 6, 5, 2, 117, 4, 1]\n```\n\nThen, what should the input of from_tableaux say? Should it say simply a pair of standard tableaux as robinson_shensted doc string says it returns a pair of standard tableaux? Should it say that it handles a pair (p, q) of tableaux where p is semi-standard (weigth 0 or 1) and q is standard?\n\n> When there are repeated entries the usual terminology is semi standard tableaux or young\n> tableaux. See eg: http://en.wikipedia.org/wiki/Young_diagram\n> \n> \n> \n> 2) why not call it `robinson_schented_inv` ? \n> \n\nThere is a section in permutation.py containing functions constructing a permutation from different objects :\n\n```\n#############################\n# Constructing Permutations #\n#############################\ndef from_permutation_group_element(pge):\ndef from_rank(n, rank):\ndef from_inversion_vector(iv):\ndef from_cycles(n, cycles):\ndef from_lehmer_code(lehmer):\ndef from_reduced_word(rw):\n```\n\n\nThe name from_tableaux was then natural. Also, I coded the function for a colleague used to mathematica and he told me in mathematica they use `TableauxToPermutation` and `PermutationToTableaux`. I don't mind change it to robinson_schensted_inv or robinson_schensted_inverse(). Do I?",
     "created_at": "2009-03-18T14:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43175",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43091",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -227,15 +226,15 @@ The name from_tableaux was then natural. Also, I coded the function for a collea
 
 ---
 
-archive/issue_comments_043176.json:
+archive/issue_comments_043092.json:
 ```json
 {
     "body": "> Did you forget the third one or is this a joke meaning you are of the second type of mathematician?\n\nBoth !!! Every people doing combinatorics should know that he is of the second type ! Do you know how to count the number of twin prime numbers ? If not you are of the second type ! \n \n> Then, what should the input of from_tableaux say? Should it say simply a pair of standard tableaux as robinson_shensted doc string says it returns a pair of standard tableaux? Should it say that it handles a pair (p, q) of tableaux where p is semi-standard (weigth 0 or 1) and q is standard?\n\nObviously you never tried the following one: \n\n```\nsage: p = Permutation([1,3,2,2,4,3])\nsage: p.robinson_schensted()\n[[[1, 2, 2, 3], [3, 4]], [[1, 2, 4, 5], [3, 6]]]\nsage: permutation.from_tableaux(*_)\n[1, 3, 2, 2, 4, 3]\n```\n\n\nYes !!! Do it !!! Try It !!!\n\nDoes it answer your question ? \n\n> There is a section in permutation.py containing functions constructing a permutation from different objects :\n> [...]\n> The name from_tableaux was then natural. Also, I coded the function for a colleague used to mathematica and he told me in mathematica they use `TableauxToPermutation` and `PermutationToTableaux`. I don't mind change it to robinson_schensted_inv or robinson_schensted_inverse(). Do I?\n\nIn MuPAD we had `schensted` and `schenstedInv`. I'd rather have either `robinson_schensted_inv}}/{{{inverse()` of `from_tableaux_pair`. \nI think you should ask for a vote on sage-combinat-devel.\n\n\nFinally, my third remark is that you should raise a `ValueError` with a proper explanation of what is wrong if the two tableaux are not of the same shape:\n\n\n```\nsage: permutation.from_tableaux(Tableau([[1,2,3]]), Tableau([[1,2]]))\n---------------------------------------------------------------------------\nKeyError                                  Traceback (most recent call last)\n\n/home/averell/.sage/temp/tomahawk/7383/_home_averell__sage_init_sage_0.py in <module>()\n\n/usr/local/sage/sage/local/lib/python2.5/site-packages/sage/combinat/permutation.pyc in from_tableaux(p, q)\n   3112     p = map(list, p)\n   3113     for n in range(size, 0, -1):\n-> 3114         i,j = d[n]\n   3115         x = p[i][j]\n   3116         del p[i][j]\n\nKeyError: 3\n```\n \n\nCheers,\n\nFlorent",
     "created_at": "2009-03-18T19:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43176",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43092",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -297,15 +296,15 @@ Florent
 
 ---
 
-archive/issue_comments_043177.json:
+archive/issue_comments_043093.json:
 ```json
 {
     "body": "Attachment [permutation_from_tableaux-5551-submitted-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-submitted-sl.patch) by @seblabbe created at 2009-03-20 15:06:22\n\nAgainst sage 3.4. This patch is part of sage-combinat tree.",
     "created_at": "2009-03-20T15:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43177",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43093",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -317,15 +316,15 @@ Against sage 3.4. This patch is part of sage-combinat tree.
 
 ---
 
-archive/issue_comments_043178.json:
+archive/issue_comments_043094.json:
 ```json
 {
     "body": "I improved the patch after Florent's comments. I just uploaded it.\n\nslabbe",
     "created_at": "2009-03-20T15:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43178",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43094",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -337,15 +336,15 @@ slabbe
 
 ---
 
-archive/issue_comments_043179.json:
+archive/issue_comments_043095.json:
 ```json
 {
     "body": "Attachment [permutation_from_tableaux-5551-review-fh.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-review-fh.patch) by @hivert created at 2009-03-20 18:06:44",
     "created_at": "2009-03-20T18:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43179",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43095",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -355,15 +354,15 @@ Attachment [permutation_from_tableaux-5551-review-fh.patch](tarball://root/attac
 
 ---
 
-archive/issue_comments_043180.json:
+archive/issue_comments_043096.json:
 ```json
 {
     "body": "The review patche solve two remaining issues in the doc\n\n1) The input was claimed to be \"a pair (p, q) of tableaux [...]\" which suggest that the function accept a *tuple*, whereas it actually needs two objects: \n\n```\nrobinson_schensted_inverse(t1, t2)\n```\n \nis correct whereas \n\n```\np = (t1,t2); robinson_schensted_inverse(p)\n```\n\nif not. \n\n2) the submitted patch tests the result of `robinson_schensted_inverse` on things that are not semi-standard Young tableaux which should not be accepted by the constructor of tableaux. I even don't think that the RSK has any mathematical meaning for those objects, has it ? So I removed the tests and replaced them by a sentences saying that this should not be asked. Note that there is a plan to remove this feature for Tableaux and to add a new class called Fillings. \n\nSee the copy of the mail at the bottom of http://wiki.sagemath.org/CombinatorialClass",
     "created_at": "2009-03-20T18:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43180",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43096",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -391,15 +390,15 @@ See the copy of the mail at the bottom of http://wiki.sagemath.org/Combinatorial
 
 ---
 
-archive/issue_comments_043181.json:
+archive/issue_comments_043097.json:
 ```json
 {
     "body": "I think it would be better if the user can pass two lists that define tableaux to the constructor instead of having to first create the tableaux. Explicitly, I'd like to write:\n\n```\nsage: Permutation(([[1,2],[3]], [[1,2],[3]]))\n```\n\ninstead of \n\n```\nsage: Permutation((Tableau([[1,2],[3]]), Tableau([[1,2],[3]])))\n```\n\nespecially since\n\n```\nsage: [[1,2],[3]] in StandardTableaux(3)\nTrue\n```\n\nLooking at the code suggests this is possible? Are there any reasons to not do this?",
     "created_at": "2009-03-22T11:11:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43181",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43097",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -428,15 +427,15 @@ Looking at the code suggests this is possible? Are there any reasons to not do t
 
 ---
 
-archive/issue_comments_043182.json:
+archive/issue_comments_043098.json:
 ```json
 {
     "body": "Hi,\n\nI agree with saliola suggestion and I think it is possible. We simply need to have a unique way to understand the input. A list of list of list -> tableau. A list of tuple -> cycles...etc.\n\nI will propose a new patch soon...\n\nslabbe",
     "created_at": "2009-03-25T02:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43182",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43098",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -452,15 +451,15 @@ slabbe
 
 ---
 
-archive/issue_comments_043183.json:
+archive/issue_comments_043099.json:
 ```json
 {
     "body": "This patch applies over the precedent two.",
     "created_at": "2009-04-01T16:57:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43183",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43099",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -470,15 +469,15 @@ This patch applies over the precedent two.
 
 ---
 
-archive/issue_comments_043184.json:
+archive/issue_comments_043100.json:
 ```json
 {
     "body": "Attachment [permutation_from_tableaux-5551-feature-sl.patch](tarball://root/attachments/some-uuid/ticket5551/permutation_from_tableaux-5551-feature-sl.patch) by @seblabbe created at 2009-04-01 17:00:26\n\nI addressed saliola comments in the patch I just uploaded. Needs review...",
     "created_at": "2009-04-01T17:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43184",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43100",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -490,15 +489,15 @@ I addressed saliola comments in the patch I just uploaded. Needs review...
 
 ---
 
-archive/issue_comments_043185.json:
+archive/issue_comments_043101.json:
 ```json
 {
     "body": "Everthing looks good. `All tests passed!` I'm giving a positive review.\n\nFlorent",
     "created_at": "2009-04-04T16:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43185",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43101",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -510,15 +509,15 @@ Florent
 
 ---
 
-archive/issue_comments_043186.json:
+archive/issue_comments_043102.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-06T00:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43186",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43102",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -528,15 +527,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_043187.json:
+archive/issue_comments_043103.json:
 ```json
 {
     "body": "Merged all three patches in Sage 3.4.1.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-06T00:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5551",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43187",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5551#issuecomment-43103",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

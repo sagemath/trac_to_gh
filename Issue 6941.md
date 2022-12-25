@@ -6,7 +6,7 @@ archive/issues_006941.json:
     "body": "Assignee: tbd\n\nCC:  @rwst jpflori\n\nGCD and XGCD methods should return *monic* greatest common divisors.  However, at the moment these two methods in the template file ``sage/rings/polynomial/polynomial_template.pxi`` prevent this by enforcing that ``gcd(a,0) == a`` and ``gcd(0,b) == b``.\n\nI suggest that the code for these two methods in the template file should only refer to the corresponding ``celement_foo`` methods of the actual implementation.  This way, all the logic is in the ``celement_foo`` methods, rather than being split between the two levels.\n\nThe patch for this should touch the template file as well as the two linkage files for GF2X and zmod polynomials.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6941\n\n",
     "created_at": "2009-09-15T22:39:51Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006941.json:
     "title": "GCD, XGCD for polynomial rings with templating",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6941",
-    "user": "spancratz"
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 Assignee: tbd
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6941
 
 ---
 
-archive/issue_comments_057386.json:
+archive/issue_comments_057278.json:
 ```json
 {
     "body": "Attachment [trac_6941_monicgcd.patch](tarball://root/attachments/some-uuid/ticket6941/trac_6941_monicgcd.patch) by @malb created at 2009-09-17 19:54:06\n\nThe patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?",
     "created_at": "2009-09-17T19:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57386",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57278",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -55,15 +55,15 @@ The patch looks good, applies cleanly and doctests pass. However, do we really n
 
 ---
 
-archive/issue_comments_057387.json:
+archive/issue_comments_057279.json:
 ```json
 {
     "body": "Replying to [comment:1 malb]:\n> The patch looks good, applies cleanly and doctests pass. However, do we really need to mimic the old behaviour?\n\nI assume you are referring to the hyperelliptic curves part?  Yes, I think so.  Otherwise, some doctests fail.  I haven't tried to fully understand the mathematics of that part, but it seems to depend on the assumption gcd(a,0) == a.\n\nSebastian",
     "created_at": "2009-09-19T19:25:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57387",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57279",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -78,15 +78,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_057388.json:
+archive/issue_comments_057280.json:
 ```json
 {
     "body": "Maybe we can ask the person who wrote that code?",
     "created_at": "2009-09-29T08:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57388",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57280",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -96,15 +96,15 @@ Maybe we can ask the person who wrote that code?
 
 ---
 
-archive/issue_comments_057389.json:
+archive/issue_comments_057281.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2009-11-04T08:29:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57389",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57281",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -114,15 +114,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_057390.json:
+archive/issue_comments_057282.json:
 ```json
 {
     "body": "If we need to mimic the old xgcd behavior, it would be much better to abstract that out into its own function with a docstring and some tests.",
     "created_at": "2010-05-27T22:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57390",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57282",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -132,15 +132,15 @@ If we need to mimic the old xgcd behavior, it would be much better to abstract t
 
 ---
 
-archive/issue_comments_057391.json:
+archive/issue_comments_057283.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_work.",
     "created_at": "2010-05-27T22:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6941",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57391",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6941#issuecomment-57283",
+    "user": "https://github.com/robertwb"
 }
 ```
 

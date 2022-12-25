@@ -6,15 +6,13 @@ archive/issues_003925.json:
     "body": "Assignee: @williamstein\n\nCC:  mvngu kevin.stueve\n\nSee http://cr.yp.to/primegen.html\n\nSome code at http://thread.gmane.org/gmane.comp.python.cython.devel/2579/focus=2581\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3925\n\n",
     "created_at": "2008-08-22T08:06:19Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Wrap Bernstein 's primegen",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3925",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -34,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3925
 
 ---
 
-archive/issue_comments_028095.json:
+archive/issue_comments_028037.json:
 ```json
 {
     "body": "I added some checks and doctests, and made Primes() use this.\n\nThis is still a work-in-progress. TODO:\n\n* Turn primegen-0.97 into a .spkg. It needs an added -fPIC option since it will be linked into a cython extension module.\n\n* Make sage.rings.arith.primes(start,stop) also use this for n not too small and not too large.\n\n* Determine if there are predefined portable uint32/uint64 types available for use in cython.",
     "created_at": "2009-07-12T12:25:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28095",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28037",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -60,15 +58,15 @@ This is still a work-in-progress. TODO:
 
 ---
 
-archive/issue_comments_028096.json:
+archive/issue_comments_028038.json:
 ```json
 {
     "body": "Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/primegen-0.97.spkg) by @wjp created at 2009-07-13 21:48:07",
     "created_at": "2009-07-13T21:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28096",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28038",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -78,15 +76,15 @@ Attachment [primegen-0.97.spkg](tarball://root/attachments/some-uuid/ticket3925/
 
 ---
 
-archive/issue_comments_028097.json:
+archive/issue_comments_028039.json:
 ```json
 {
     "body": "Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-spkg_deps.patch) by @wjp created at 2009-07-13 21:48:18",
     "created_at": "2009-07-13T21:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28097",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28039",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -96,15 +94,15 @@ Attachment [trac-3925-spkg_deps.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_028098.json:
+archive/issue_comments_028040.json:
 ```json
 {
     "body": "I've added an attempt at an .spkg for primegen-0.97 as an attachment, and also took the liberty of patching (untested...) spkg/install and spkg/standard/deps to build it automatically when installing sage. (In the 'spkg_deps' patch.)\n\nI'm not entirely confident the build system of the library will work everywhere, since it is rather non-standard, but hopefully it is portable enough.\n\nThe library is tiny, with the .spkg only 32KB, and the compiled (Linux x86_64) library only 17KB.\n\nTiming:\n\n```\ndef f():    \n    P = Primes()\n    for p in P:\n        if p > 10^8:\n            break\ntime f()\n```\n\n\ngoes from 84.17s (without this spkg+patch) to 20.77s (with spkg+patch) on a 2GHz Opteron.",
     "created_at": "2009-07-13T22:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28098",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28040",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -132,15 +130,15 @@ goes from 84.17s (without this spkg+patch) to 20.77s (with spkg+patch) on a 2GHz
 
 ---
 
-archive/issue_comments_028099.json:
+archive/issue_comments_028041.json:
 ```json
 {
     "body": "Attachment [trac-3925-primegen.patch](tarball://root/attachments/some-uuid/ticket3925/trac-3925-primegen.patch) by @JohnCremona created at 2009-07-24 21:14:10\n\nHello Willem.  I successfully installed the spkg and the second patch but I don't know how to install the first patch as it changes files not in the usual code tree.  If you tell me how, I would like to test this.  -- John",
     "created_at": "2009-07-24T21:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28099",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28041",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -152,15 +150,15 @@ Hello Willem.  I successfully installed the spkg and the second patch but I don'
 
 ---
 
-archive/issue_comments_028100.json:
+archive/issue_comments_028042.json:
 ```json
 {
     "body": "Hi John. The first patch isn't necessary to use the spkg. It's only for making a fresh 'make' of sage automatically build the spkg. I'm not too sure sure if that patch is right, actually; that part should probably be left to a release manager.",
     "created_at": "2009-07-24T23:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28100",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28042",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -170,15 +168,15 @@ Hi John. The first patch isn't necessary to use the spkg. It's only for making a
 
 ---
 
-archive/issue_comments_028101.json:
+archive/issue_comments_028043.json:
 ```json
 {
     "body": "Replying to [comment:6 wjp]:\n> Hi John. The first patch isn't necessary to use the spkg. It's only for making a fresh 'make' of sage automatically build the spkg. I'm not too sure sure if that patch is right, actually; that part should probably be left to a release manager.\n\nOK, I'll have another go sometime this weekend.  I'm glad about the first patch, since I'm not really competent to say if it's right (though it looks ok).",
     "created_at": "2009-07-25T09:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28101",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28043",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -191,15 +189,15 @@ OK, I'll have another go sometime this weekend.  I'm glad about the first patch,
 
 ---
 
-archive/issue_comments_028102.json:
+archive/issue_comments_028044.json:
 ```json
 {
     "body": "To adopt this spkg as part of Sage\nproper would need a vote on sage-devel.  I suggest that wjp helps that process\nby collecting some data (before and after).  For example:\n\n```\nsage: time P = prime_range(10^8)\nCPU times: user 1.83 s, sys: 0.50 s, total: 2.32 s\nWall time: 2.33 s\nsage: len(P)\n5761455\n```\n\nbut this does not use the new PrimeGen class.  I tried this (with the\nnew spkg + patch):\n\n```\nsage: pg=Primes().pg\nsage: pg.reset()\nsage: N=pg.count(10^8)\nsage: pg.reset()\nsage: time P=[pg.next() for _ in range(N)]\nCPU times: user 4.98 s, sys: 0.03 s, total: 5.01 s\nWall time: 5.02 s\n```\n\nwhich is slower but it's using a more stupid method to collect the\nprimes that in prime_range().",
     "created_at": "2009-07-26T09:58:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28102",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28044",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -235,15 +233,15 @@ primes that in prime_range().
 
 ---
 
-archive/issue_comments_028103.json:
+archive/issue_comments_028045.json:
 ```json
 {
     "body": "Changing this to \"needs work\" given John's latest comments.  Note that \"work\" here would mean making the case to sage-devel that the spkg should be adopted, and asking for a vote.",
     "created_at": "2009-08-16T08:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3925",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28103",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3925#issuecomment-28045",
+    "user": "https://github.com/aghitza"
 }
 ```
 

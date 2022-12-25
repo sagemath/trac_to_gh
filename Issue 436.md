@@ -6,15 +6,13 @@ archive/issues_000436.json:
     "body": "Assignee: boothby\n\nSuppose a secure notebook is run on localhost:8000. Then presently, one has to type the URL `https://localhost:8000`. Would it be possible to let port localhost:8000 respond to plain http requests with a redirect to `https://localhost:8000` ? The advantage is that browsers like firefox complete `localhost:8000` to `http://localhost:8000`, and a lot of users (well, at least me) are used to this shortcut.\n\nIssue created by migration from https://trac.sagemath.org/ticket/436\n\n",
     "created_at": "2007-08-17T18:02:26Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "http to https redirect for secure notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/436",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 Assignee: boothby
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/436
 
 ---
 
-archive/issue_comments_002183.json:
+archive/issue_comments_002174.json:
 ```json
 {
     "body": "Hello,\n\nnow that Sage defaults to https this might be a good idea to implement.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-22T21:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2183",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2174",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +51,15 @@ Michael
 
 ---
 
-archive/issue_comments_002184.json:
+archive/issue_comments_002175.json:
 ```json
 {
     "body": "I tried several times to figure out how to do this and couldn't.  SO, please figure out how to do it and post a patch!",
     "created_at": "2007-11-03T15:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2184",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2175",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -71,15 +69,15 @@ I tried several times to figure out how to do this and couldn't.  SO, please fig
 
 ---
 
-archive/issue_comments_002185.json:
+archive/issue_comments_002176.json:
 ```json
 {
     "body": "NOTE: The notebook now defaults to use http not https.",
     "created_at": "2008-05-10T16:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2185",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2176",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +87,15 @@ NOTE: The notebook now defaults to use http not https.
 
 ---
 
-archive/issue_comments_002186.json:
+archive/issue_comments_002177.json:
 ```json
 {
     "body": "This is a limitation of protocols / browsers.  Since HTTPS is merely HTTP over an SSL connection, a plaintext HTTP request looks like garbage to a HTTPS server and vice verse.  If your browser was smart enough to attempt to use SSL, that'd be fine.  However, we can't do this in Twisted because we only take one port -- an inbound connection is silently dropped by SSL, and Twisted never hears about it.  If we go to a two-port system, e.g. port 80 for http and 443 for https, then we'd be in business.  And perhaps that functionality should be implemented.\n\nHowever, the issue of \"user connects to port x with wrong protocol\" is never going to go away.",
     "created_at": "2009-06-16T19:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2186",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2177",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -109,15 +107,15 @@ However, the issue of "user connects to port x with wrong protocol" is never goi
 
 ---
 
-archive/issue_comments_002187.json:
+archive/issue_comments_002178.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-11-19T21:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2187",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2178",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -127,15 +125,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_002188.json:
+archive/issue_comments_002179.json:
 ```json
 {
     "body": "> However, the issue of \"user connects to port x with wrong protocol\" is never going to go away.\n\nTom is right.   I'm closing this ticket as invalid.",
     "created_at": "2009-11-19T21:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2188",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/436#issuecomment-2179",
+    "user": "https://github.com/williamstein"
 }
 ```
 

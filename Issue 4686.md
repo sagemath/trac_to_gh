@@ -6,15 +6,14 @@ archive/issues_004686.json:
     "body": "Assignee: @loefflerd\n\nWhen I wrote the eta products code I didn't know how to add it to the reference manual. Here is the requisite patch, together with a patch to the code itself correcting LaTeX errors in the docstrings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4686\n\n",
     "created_at": "2008-12-03T10:20:01Z",
     "labels": [
-        "modular forms",
-        "major",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "Documentation for eta products",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4686",
-    "user": "@loefflerd"
+    "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: @loefflerd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4686
 
 ---
 
-archive/issue_comments_035322.json:
+archive/issue_comments_035253.json:
 ```json
 {
     "body": "Attachment [4686-code.patch](tarball://root/attachments/some-uuid/ticket4686/4686-code.patch) by @loefflerd created at 2008-12-03 10:22:15",
     "created_at": "2008-12-03T10:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35322",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35253",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [4686-code.patch](tarball://root/attachments/some-uuid/ticket4686/468
 
 ---
 
-archive/issue_comments_035323.json:
+archive/issue_comments_035254.json:
 ```json
 {
     "body": "Attachment [4686-doc.patch](tarball://root/attachments/some-uuid/ticket4686/4686-doc.patch) by @loefflerd created at 2008-12-03 10:23:12\n\nHere are two patches (one each for the hg_sage and hg_doc repositories).",
     "created_at": "2008-12-03T10:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35323",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35254",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -67,15 +66,15 @@ Here are two patches (one each for the hg_sage and hg_doc repositories).
 
 ---
 
-archive/issue_comments_035324.json:
+archive/issue_comments_035255.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-03T10:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35324",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35255",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_035325.json:
+archive/issue_comments_035256.json:
 ```json
 {
     "body": "Patch looks good to me. One tiny spelling issue I can take care when applying the patch:\n\n```\nGrobner basis\n```\n\nis missing an \"e\".\n\nCheers,\n\nMichael",
     "created_at": "2008-12-03T10:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35325",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35256",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Michael
 
 ---
 
-archive/issue_comments_035326.json:
+archive/issue_comments_035257.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.2.2.alpha0",
     "created_at": "2008-12-04T15:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35326",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35257",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -131,15 +130,15 @@ Merged both patches in Sage 3.2.2.alpha0
 
 ---
 
-archive/issue_comments_035327.json:
+archive/issue_comments_035258.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-04T15:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4686",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35327",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4686#issuecomment-35258",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

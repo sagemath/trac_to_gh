@@ -6,7 +6,7 @@ archive/issues_006172.json:
     "body": "Assignee: tbd\n\nSee trac #5818, which is related to this, but not the same.  In particular, see the big remark by Bill Hart.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6172\n\n",
     "created_at": "2009-05-31T23:52:17Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006172.json:
     "title": "add support for building FAT binaries to mpir",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6172",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6172
 
 ---
 
-archive/issue_comments_049228.json:
+archive/issue_comments_049133.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-05-31T23:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6172",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49228",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49133",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_049229.json:
+archive/issue_comments_049134.json:
 ```json
 {
     "body": "See http://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/mpir-1.2.p0.spkg",
     "created_at": "2009-05-31T23:54:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6172",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49229",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49134",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +65,15 @@ See http://sage.math.washington.edu/home/wstein/release/4.0.1/alpha0/stuff/mpir-
 
 ---
 
-archive/issue_comments_049230.json:
+archive/issue_comments_049135.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-01T01:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6172",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49230",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49135",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +83,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_049231.json:
+archive/issue_comments_049136.json:
 ```json
 {
     "body": "Looks good to me.\n\nMerged in 4.0.1.alpha0.",
     "created_at": "2009-06-01T01:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6172",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49231",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6172#issuecomment-49136",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

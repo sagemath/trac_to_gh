@@ -6,15 +6,14 @@ archive/issues_009421.json:
     "body": "Assignee: @burcin\n\nCC:  @robert-marik @kcrisman\n\nConsider\n\n```\nsage: var('t')\nsage: x=function('x',t)\nsage: var('c')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*c - 3/2*t + 3/4\n```\n\nHere the first occurrence of `c` is an integration constant,\nwhereas the second one is the parameter in the ODE:\n\n```\nsage: var('d')\nsage: desolve(diff(x,t)+2*x==t^2-2*t+d,x,ivar=t).expand()\nc*e^(-2*t) + 1/2*t^2 + 1/2*d - 3/2*t + 3/4\n```\n\nIn case the ODE contains `c`, desolve should choose another\nname for the integration constant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9421\n\n",
     "created_at": "2010-07-03T13:56:02Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "desolve mixes user parameters and integration constants",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9421",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @burcin
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9421
 
 ---
 
-archive/issue_comments_089854.json:
+archive/issue_comments_089710.json:
 ```json
 {
     "body": "This is a part of more general problem which has been reported in #6882.",
     "created_at": "2010-07-04T15:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89854",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89710",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -69,15 +68,15 @@ This is a part of more general problem which has been reported in #6882.
 
 ---
 
-archive/issue_comments_089855.json:
+archive/issue_comments_089711.json:
 ```json
 {
     "body": "Attachment [trac_9421.patch](tarball://root/attachments/some-uuid/ticket9421/trac_9421.patch) by @zimmermann6 created at 2013-08-25 13:25:17",
     "created_at": "2013-08-25T13:25:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89855",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89711",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -87,15 +86,15 @@ Attachment [trac_9421.patch](tarball://root/attachments/some-uuid/ticket9421/tra
 
 ---
 
-archive/issue_comments_089856.json:
+archive/issue_comments_089712.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-08-25T13:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89856",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89712",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_089857.json:
+archive/issue_comments_089713.json:
 ```json
 {
     "body": "waiting for the general problem to be solved, the attached patch prints a warning if the given equation contains the variable `c`.\n\nPaul",
     "created_at": "2013-08-25T13:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89857",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89713",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -125,15 +124,15 @@ Paul
 
 ---
 
-archive/issue_comments_089858.json:
+archive/issue_comments_089714.json:
 ```json
 {
     "body": "I will OK this if you have a look at #8734 in turn, please 8)  See also #16007",
     "created_at": "2014-03-25T10:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89858",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89714",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -143,15 +142,15 @@ I will OK this if you have a look at #8734 in turn, please 8)  See also #16007
 
 ---
 
-archive/issue_comments_089859.json:
+archive/issue_comments_089715.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-03-25T10:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89859",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89715",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -161,15 +160,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_089860.json:
+archive/issue_comments_089716.json:
 ```json
 {
     "body": "thus should we have a dependency on #8734?\n\nPaul",
     "created_at": "2014-03-25T21:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89860",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89716",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -181,15 +180,15 @@ Paul
 
 ---
 
-archive/issue_comments_089861.json:
+archive/issue_comments_089717.json:
 ```json
 {
     "body": "Replying to [comment:7 zimmerma]:\n> thus should we have a dependency on #8734?\n\nThen everything waits for that review, which could take forever. But I want the warning now.",
     "created_at": "2014-03-26T04:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89861",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89717",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -202,15 +201,15 @@ Then everything waits for that review, which could take forever. But I want the 
 
 ---
 
-archive/issue_comments_089862.json:
+archive/issue_comments_089718.json:
 ```json
 {
     "body": "You might want to consider this one too:\n\n```\nsage: desolve(diff(f(x),x,x)-f(x),f(x))\nk2*e^(-x) + k1*e^x\n```\n\nWe can recognize the variables as distinct before they are converted from maxima:\n\n```\nsage: function('f',x)\nf(x)\nsage: var('c')\nc\nsage: V=diff(f(x),x)-f(x)+c\nsage: v=maxima_calculus(V)\nsage: v.ode2(f(x),x)\n'f(x)=(c*%e^-x+%c)*%e^x\nsage: v.ode2(f(x),x).ecl()\n<ECL: ((MEQUAL SIMP) ((%F SIMP) $X)\n ((MTIMES SIMP)\n  ((MPLUS SIMP) $%C\n   ((MTIMES SIMP) $C ((MEXPT SIMP) $%E ((MTIMES SIMP) -1 $X))))\n  ((MEXPT SIMP) $%E $X)))>\n```\n\nso perhaps the right solution is to warn when sage's \"forget the %\" causes a name collision (with the righter solution being: making sage's \"forget the %\" more intelligent, so that collisions can be avoided)",
     "created_at": "2014-03-26T05:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89862",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89718",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -246,15 +245,15 @@ so perhaps the right solution is to warn when sage's "forget the %" causes a nam
 
 ---
 
-archive/issue_comments_089863.json:
+archive/issue_comments_089719.json:
 ```json
 {
     "body": "With #16007 the output is now\n\n```\nsage: sage: x=function('x',t)\nsage: sage: var('c')\nc\nsage: sage: desolve(diff(x,t)+2*x==t^2-2*t+c,x,ivar=t).expand()\n1/2*t^2 + _C*e^(-2*t) + 1/2*c - 3/2*t + 3/4\n\nsage: desolve(diff(f(x),x,x)-f(x),f(x))\n_K2*e^(-x) + _K1*e^x\n```\n\nAs that's a simple and fine solution instead of a warning or an extended patch I would be glad if someone could review that one-liner.",
     "created_at": "2014-03-26T16:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89863",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89719",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -277,15 +276,15 @@ As that's a simple and fine solution instead of a warning or an extended patch I
 
 ---
 
-archive/issue_comments_089864.json:
+archive/issue_comments_089720.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2014-03-31T15:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89864",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9421#issuecomment-89720",
+    "user": "https://github.com/vbraun"
 }
 ```
 

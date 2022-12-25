@@ -6,15 +6,13 @@ archive/issues_005326.json:
     "body": "Assignee: @malb\n\nCC:  @johnperry-math\n\nJacob wrote on [sage-devel]:\n\n> From reading the documentation of the TermOrder command, it looks \n> like if I want to use a term order not defined in SAGE, I should \n> be able to make my term order a string that can be passed to \n> Singular.  This works for some term orderings, but not for those \n> that have commas in their definitions.  Judging from the code, I \n> think that SAGE sees the comma and assumes that I want a block \n> ordering (which I don't).\n\n> For example, if I want weighted reverse lex ordering with some\n> weights, I can do that in Singular:\n {{{\nring rr=0,(x,y),wp(2,3);\npoly f=x2+y3;\ndeg(f);\n9\npoly g = x<sup>3*y+y</sup>3;\nideal I = f,g;\nstd(I);\n_[1]=y3+x2\n_[2]=x3y-x2\n_[3]=x5+x2y2\n }}}\n\n> But not in SAGE:\n\n```\nsage: T = TermOrder(\"wp(2,3)\")\nTraceback (most recent call last):\n...\nTypeError: wp(2,3) is not a valid term ordering\n```\n\n\n```\nsage: R.<x,y> = PolynomialRing(QQ,2,T)\nsage: R._singular_()\n//   characteristic : 0\n//   number of vars : 2\n//        block   1 : ordering dp\n//                  : names    x y\n//        block   2 : ordering C\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5326\n\n",
     "created_at": "2009-02-21T02:07:21Z",
     "labels": [
-        "commutative algebra",
-        "major",
-        "enhancement"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "support weighted term orderings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5326",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -75,15 +73,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5326
 
 ---
 
-archive/issue_comments_040998.json:
+archive/issue_comments_040918.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2012-01-26T18:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40998",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40918",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -93,15 +91,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_040999.json:
+archive/issue_comments_040919.json:
 ```json
 {
     "body": "I believe this is a duplicate of #11316, in which case it has been fixed!",
     "created_at": "2012-01-26T18:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40999",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40919",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -111,15 +109,15 @@ I believe this is a duplicate of #11316, in which case it has been fixed!
 
 ---
 
-archive/issue_comments_041000.json:
+archive/issue_comments_040920.json:
 ```json
 {
     "body": "Changing status from needs_info to positive_review.",
     "created_at": "2017-04-06T10:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41000",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40920",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -129,15 +127,15 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_comments_041001.json:
+archive/issue_comments_040921.json:
 ```json
 {
     "body": "weighted term orders are implemented since long..",
     "created_at": "2017-04-06T10:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41001",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40921",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -147,15 +145,15 @@ weighted term orders are implemented since long..
 
 ---
 
-archive/issue_comments_041002.json:
+archive/issue_comments_040922.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_info.",
     "created_at": "2017-04-06T10:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41002",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40922",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -165,15 +163,15 @@ Changing status from positive_review to needs_info.
 
 ---
 
-archive/issue_comments_041003.json:
+archive/issue_comments_040923.json:
 ```json
 {
     "body": "maybe not so clear..",
     "created_at": "2017-04-06T10:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41003",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40923",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -183,15 +181,15 @@ maybe not so clear..
 
 ---
 
-archive/issue_comments_041004.json:
+archive/issue_comments_040924.json:
 ```json
 {
     "body": "Changing status from needs_info to positive_review.",
     "created_at": "2017-06-02T13:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41004",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40924",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -201,15 +199,15 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_comments_041005.json:
+archive/issue_comments_040925.json:
 ```json
 {
     "body": "The correct syntax is \n\n```\nT =  TermOrder(\"wp\",(2,3))\n```\n",
     "created_at": "2017-06-02T13:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41005",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40925",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -224,15 +222,15 @@ T =  TermOrder("wp",(2,3))
 
 ---
 
-archive/issue_comments_041006.json:
+archive/issue_comments_040926.json:
 ```json
 {
     "body": "Closing tickets in the sage-duplicate/invalid/wontfix module with positive_review (i.e. someone has confirmed they should be closed).",
     "created_at": "2017-07-13T07:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41006",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40926",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -242,15 +240,15 @@ Closing tickets in the sage-duplicate/invalid/wontfix module with positive_revie
 
 ---
 
-archive/issue_comments_041007.json:
+archive/issue_comments_040927.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2017-07-13T07:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-41007",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/5326#issuecomment-40927",
+    "user": "https://github.com/embray"
 }
 ```
 

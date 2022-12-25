@@ -6,15 +6,14 @@ archive/issues_005319.json:
     "body": "Assignee: @haraldschilly\n\nThis is in \"3.1 Steps to Install from Source\"\n\n```\nrootard: http://www.sagemath.org/doc/inst/node6.html <-- says to download source from http://www.sagemath.org/dist/src/ but I get a 404.\n[02:52am] mabs: oops\n[02:52am] mabs: That moved around, I will open a ticket.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5319\n\n",
     "created_at": "2009-02-20T10:53:28Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Fix location of source in the Sage's installation manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5319",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @haraldschilly
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5319
 
 ---
 
-archive/issue_comments_040959.json:
+archive/issue_comments_040879.json:
 ```json
 {
     "body": "the canonical url for things like this is\n`http://www.sagemath.org/download-source.html` (or `*-linux, ...` because there you can choose\nthe mirror. otherwise it's just the main website.",
     "created_at": "2009-02-20T10:58:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40959",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40879",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -60,15 +59,15 @@ the mirror. otherwise it's just the main website.
 
 ---
 
-archive/issue_comments_040960.json:
+archive/issue_comments_040880.json:
 ```json
 {
     "body": "Changing assignee from @haraldschilly to @mwhansen.",
     "created_at": "2009-02-20T10:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40960",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40880",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -78,15 +77,15 @@ Changing assignee from @haraldschilly to @mwhansen.
 
 ---
 
-archive/issue_comments_040961.json:
+archive/issue_comments_040881.json:
 ```json
 {
     "body": "I've changed the ReST docs to point to that URL.",
     "created_at": "2009-02-20T10:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40961",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40881",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -96,15 +95,15 @@ I've changed the ReST docs to point to that URL.
 
 ---
 
-archive/issue_comments_040962.json:
+archive/issue_comments_040882.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-20T10:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40962",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40882",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -114,15 +113,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_040963.json:
+archive/issue_comments_040883.json:
 ```json
 {
     "body": "It looks like Mike fixed this, so it can be closed.",
     "created_at": "2009-02-26T18:02:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40963",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40883",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -132,15 +131,15 @@ It looks like Mike fixed this, so it can be closed.
 
 ---
 
-archive/issue_comments_040964.json:
+archive/issue_comments_040884.json:
 ```json
 {
     "body": "Closed due to #5330.",
     "created_at": "2009-02-26T18:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40964",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40884",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -150,15 +149,15 @@ Closed due to #5330.
 
 ---
 
-archive/issue_comments_040965.json:
+archive/issue_comments_040885.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-26T18:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40965",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5319#issuecomment-40885",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

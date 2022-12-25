@@ -6,15 +6,14 @@ archive/issues_004700.json:
     "body": "Assignee: boothby\n\nThis ticket moves the jsmath, jquery, jqueryui, and jsmath-image-fonts packages to their own spkgs that install in local/notebook/javascript.\n\nSorry, mabshoff; it was much easier to group these very related and similar tasks together.\n\nThe spkgs are at:\n\n\n\nhttp://sage.math.washington.edu/home/jason/notebook/jquery-1.2.6.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-3.6a.spkg\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-image-fonts-1.3p0.spkg\n\nThe (huge) patch that deletes things from the extcode repository is at\n\nhttp://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages.patch (apply to the extcode repository; we might reset the extcode history, as mabshoff suggested on #4267).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4700\n\n",
     "created_at": "2008-12-05T00:23:39Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Move existing javascript packages in extcode to their own spkg packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4700",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: boothby
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4700
 
 ---
 
-archive/issue_comments_035407.json:
+archive/issue_comments_035338.json:
 ```json
 {
     "body": "This ticket also takes the opportunity to update each of the javascript packages to the latest version (as of late October, 2008).  Some of the changes in the patch reflect the updating (primarily, the updating of jqueryui).",
     "created_at": "2008-12-05T00:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35407",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35338",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -67,15 +66,15 @@ This ticket also takes the opportunity to update each of the javascript packages
 
 ---
 
-archive/issue_comments_035408.json:
+archive/issue_comments_035339.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-12-05T00:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35408",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35339",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_035409.json:
+archive/issue_comments_035340.json:
 ```json
 {
     "body": "No, \n\nthe whole point was that\n\n1. these tasks are independent\n2. this is again a composite ticket just like #4267\n\nSo: invalid.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-05T00:34:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35409",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35340",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +113,15 @@ Michael
 
 ---
 
-archive/issue_comments_035410.json:
+archive/issue_comments_035341.json:
 ```json
 {
     "body": "OK, guys calm down.    It will be _massively_ easier referee wise if you can break this up into independent tasks, especially because there's still a lot of work to integrate this into sage, even after handing it off.    Please please please Jason can you split this into smaller well-defined tasks?  Thanks!!",
     "created_at": "2008-12-05T00:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35410",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35341",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -132,15 +131,15 @@ OK, guys calm down.    It will be _massively_ easier referee wise if you can bre
 
 ---
 
-archive/issue_comments_035411.json:
+archive/issue_comments_035342.json:
 ```json
 {
     "body": "Attachment [javascript-spkg.patch](tarball://root/attachments/some-uuid/ticket4700/javascript-spkg.patch) by @jasongrout created at 2008-12-05 00:54:34",
     "created_at": "2008-12-05T00:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35411",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35342",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -150,15 +149,15 @@ Attachment [javascript-spkg.patch](tarball://root/attachments/some-uuid/ticket47
 
 ---
 
-archive/issue_comments_035412.json:
+archive/issue_comments_035343.json:
 ```json
 {
     "body": "To elaborate some more why these tickets need to be split up:\n\n* verifying that the updated jsmath.spkg works is trivial\n* anything touching jquery needs to be reviewed in much more detail, i.e. somebody needs to check that DSage still works, i.e. its GUI\n* jsmath-image-fonts-1.3p0.spkg is an optional spkg, so it should be trivial to review\n\nMixing and matching seemingly related tickets and then ending up piling fixes on top has proven a disaster time after time, so let's please be nice about this and get this resolved.\n\nCheers,\n\nMichael\n\nPS: Sorry if my tone was out of line, I had just woken up :)",
     "created_at": "2008-12-05T00:56:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35412",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35343",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -180,15 +179,15 @@ PS: Sorry if my tone was out of line, I had just woken up :)
 
 ---
 
-archive/issue_comments_035413.json:
+archive/issue_comments_035344.json:
 ```json
 {
     "body": "Okay; I saw all of these tasks as very similar, hence the same ticket.  It'll be a lot more work to split it up further than this, but I'll get to it eventually.",
     "created_at": "2008-12-05T01:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35413",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4700#issuecomment-35344",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_009314.json:
     "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nI think #9086 isn't completly fixed:\n\n {{{\n sage: var('x y')\n sage: latex(-x/y) \n \\frac{x}{y}\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/9314\n\n",
     "created_at": "2010-06-22T18:19:43Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "LaTeX representation of negative symbolic fractions still broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9314",
-    "user": "damm"
+    "user": "https://trac.sagemath.org/admin/accounts/users/damm"
 }
 ```
 Assignee: @aghitza
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9314
 
 ---
 
-archive/issue_comments_087747.json:
+archive/issue_comments_087608.json:
 ```json
 {
     "body": "Changing component from algebra to symbolics.",
     "created_at": "2010-06-22T19:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87747",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87608",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -55,15 +54,15 @@ Changing component from algebra to symbolics.
 
 ---
 
-archive/issue_comments_087748.json:
+archive/issue_comments_087609.json:
 ```json
 {
     "body": "Changing assignee from @aghitza to @burcin.",
     "created_at": "2010-06-22T19:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87748",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87609",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing assignee from @aghitza to @burcin.
 
 ---
 
-archive/issue_comments_087749.json:
+archive/issue_comments_087610.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"latex, sign, minus, pynac\".",
     "created_at": "2010-06-22T19:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87749",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87610",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -91,15 +90,15 @@ Changing keywords from "" to "latex, sign, minus, pynac".
 
 ---
 
-archive/issue_comments_087750.json:
+archive/issue_comments_087611.json:
 ```json
 {
     "body": "Changing priority from major to critical.",
     "created_at": "2010-06-22T19:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87750",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87611",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -109,15 +108,15 @@ Changing priority from major to critical.
 
 ---
 
-archive/issue_comments_087751.json:
+archive/issue_comments_087612.json:
 ```json
 {
     "body": "These are correct, but don't look that nice:\n\n```\nsage: latex(-(-x^2/-x^5))\n\\frac{-1}{x^{3}}\nsage: latex(-(x^2/x^5))\n\\frac{-1}{x^{3}}\nsage: latex(-((-x)^2/x^5))\n\\frac{-1}{x^{3}}\nsage: latex(x^2/-x^5)\n\\frac{-1}{x^{3}}\nsage: latex(x^2/(-x)^5)\n\\frac{-1}{x^{3}}\nsage: latex(-(-2*x^2/-x^5))\n\\frac{-2}{x^{3}}\nsage: latex(-(-x^2/(-3*x^5)))\n\\frac{-1}{3 \\, x^{3}}\n```\n",
     "created_at": "2010-06-22T19:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87751",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87612",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -145,15 +144,15 @@ sage: latex(-(-x^2/(-3*x^5)))
 
 ---
 
-archive/issue_comments_087752.json:
+archive/issue_comments_087613.json:
 ```json
 {
     "body": "(Note that the above are all broken, i.e. lose their sign, if one `x` is replaced by `y`.)",
     "created_at": "2010-06-22T19:51:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87752",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87613",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -163,15 +162,15 @@ archive/issue_comments_087752.json:
 
 ---
 
-archive/issue_comments_087753.json:
+archive/issue_comments_087614.json:
 ```json
 {
     "body": "i just got a report that this is also broken for\n\n```\nsage: var('a b')\nsage: latex(-1 * (a/b))\n```\n\n\ncan we make this a blocker?",
     "created_at": "2010-07-06T15:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87753",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87614",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -189,15 +188,15 @@ can we make this a blocker?
 
 ---
 
-archive/issue_comments_087754.json:
+archive/issue_comments_087615.json:
 ```json
 {
     "body": "Changing priority from critical to blocker.",
     "created_at": "2010-07-08T09:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87754",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87615",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -207,15 +206,15 @@ Changing priority from critical to blocker.
 
 ---
 
-archive/issue_comments_087755.json:
+archive/issue_comments_087616.json:
 ```json
 {
     "body": "This is really embarrassing. I'll fix this tonight.",
     "created_at": "2010-07-08T09:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87755",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87616",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -225,15 +224,15 @@ This is really embarrassing. I'll fix this tonight.
 
 ---
 
-archive/issue_comments_087756.json:
+archive/issue_comments_087617.json:
 ```json
 {
     "body": "Ping.",
     "created_at": "2010-07-10T09:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87756",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87617",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -243,15 +242,15 @@ Ping.
 
 ---
 
-archive/issue_comments_087757.json:
+archive/issue_comments_087618.json:
 ```json
 {
     "body": "It ended up begin an extended night. I'm looking at it right now.",
     "created_at": "2010-07-10T10:14:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87757",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87618",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -261,15 +260,15 @@ It ended up begin an extended night. I'm looking at it right now.
 
 ---
 
-archive/issue_comments_087758.json:
+archive/issue_comments_087619.json:
 ```json
 {
     "body": "Attachment [trac_9314-latex_mul.patch](tarball://root/attachments/some-uuid/ticket9314/trac_9314-latex_mul.patch) by @burcin created at 2010-07-11 16:03:27",
     "created_at": "2010-07-11T16:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87758",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87619",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -279,15 +278,15 @@ Attachment [trac_9314-latex_mul.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_087759.json:
+archive/issue_comments_087620.json:
 ```json
 {
     "body": "The pynac package at\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.p4.spkg\n\ncontains a fix for this. I want to keep this as easy to review as possible, so the only change is the following simple patch:\n\n\n```\ndiff --git a/ginac/mul.cpp b/ginac/mul.cpp\n--- a/ginac/mul.cpp\n+++ b/ginac/mul.cpp\n@@ -268,6 +268,10 @@\n \t\t\t     }\n \t\t\t} else {\n \t\t\t     if (numer.is_equal(_ex1) || numer.is_equal(_ex_1)) {\n+\t\t\t          const numeric &coeff = ex_to<numeric>(numer);\n+\t\t\t\t  if (coeff.is_equal(*_num_1_p) && !coeff.is_parent_pos_char()) {\n+\t\t\t\t        c.s<<\"-\";\n+\t\t\t\t  }\n \t\t\t         mul(others).eval().print(c);\n \t\t\t     } else {\n \t\t\t\t mul(numer,mul(others).eval()).hold().print(c);\n```\n\n\nattachment:trac_9314-latex_mul.patch has the doctest fixes for the Sage library.\n\nI will take care of the pretty printing issues from comment:3 later.",
     "created_at": "2010-07-11T16:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87759",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87620",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -324,15 +323,15 @@ I will take care of the pretty printing issues from comment:3 later.
 
 ---
 
-archive/issue_comments_087760.json:
+archive/issue_comments_087621.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-11T16:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87760",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87621",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -342,15 +341,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_087761.json:
+archive/issue_comments_087622.json:
 ```json
 {
     "body": "The new spkg installed fine for me on 4.5.rc0 (+patches at #7379), then the patch applied fine and tests pass ( itested the whole library but without -long).  So, while I cannot tell whether the four lines of C++ added to ginac/mul.cpp are correct, this is certainly an improvement and enough to make me give it a positive review.",
     "created_at": "2010-07-12T13:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87761",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87622",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -360,15 +359,15 @@ The new spkg installed fine for me on 4.5.rc0 (+patches at #7379), then the patc
 
 ---
 
-archive/issue_comments_087762.json:
+archive/issue_comments_087623.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-12T13:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87762",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87623",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -378,15 +377,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_087763.json:
+archive/issue_comments_087624.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-13T16:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87763",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87624",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -396,15 +395,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_087764.json:
+archive/issue_comments_087625.json:
 ```json
 {
     "body": "Applied\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.2.0.p4.spkg\n\nand\n\nattachment:trac_9314-latex_mul.patch\n\nto sage-4.5.rc1.",
     "created_at": "2010-07-13T16:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87764",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9314#issuecomment-87625",
+    "user": "https://github.com/rlmill"
 }
 ```
 

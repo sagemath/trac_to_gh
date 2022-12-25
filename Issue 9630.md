@@ -6,15 +6,14 @@ archive/issues_009630.json:
     "body": "Assignee: @burcin\n\nCC:  @orlitzky\n\nI don't know how this might be done, but \n\n```\nfor n in range(1,10): \n    sum(k, k, 1, n) \n```\n\ndoesn't work, while \n\n```\nfor n in [1..10]:\n    sum(k,k,1,n)\n```\n\ndoes.  We need to fix\n\n```\nint(3)._maxima_()\nAttributeError: 'int' object has no attribute '_maxima_'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9630\n\n",
     "created_at": "2010-07-29T01:36:07Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Python ints should have a conversion to Maxima",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9630",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: @burcin
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9630
 
 ---
 
-archive/issue_comments_093315.json:
+archive/issue_comments_093159.json:
 ```json
 {
     "body": "the particular error that arises here is raised in sage/calculus/calculus.pyc line 501:\n\n```\nsum  = \"'sum(%s, %s, %s, %s)\" % tuple([repr(expr._maxima_()) for expr in (expression, v, a, b)])\n```\n\nOne could fix this one by first coercing a,b into SR. As an example:\n\n```\nsage: SR(int(1))._maxima_()\n1\n```\n\nThis code looks rather convoluted to me anyway: Convert to maxima, take string representative, paste together and then simplify? Shouldn't the whole sum first be turned into a pynac sum expression, the whole thing converted to maxima, simplified, and then cast back?\n\n```\nsage: var(\"x,a,b\")                       # this is just because I don't know\nsage: SUM=sum(sin(x^2),x,a,b).operator() # where this is defined\nsage: SR(SUM(x,x,1,int(10))._maxima_().simplify_sum())\n55\n```\n",
     "created_at": "2010-07-29T06:31:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93315",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93159",
+    "user": "https://github.com/nbruin"
 }
 ```
 
@@ -90,15 +89,15 @@ sage: SR(SUM(x,x,1,int(10))._maxima_().simplify_sum())
 
 ---
 
-archive/issue_comments_093316.json:
+archive/issue_comments_093160.json:
 ```json
 {
     "body": "Sure, if Pynac sum expressions had been known to exist (or how to use them) when this code went in.  There was also some weird bug that this originally took care of that had to do with held expressions in Maxima, if I recall correctly, though that had ceased to be an issue.\n\nThis just goes to show that we need some sort of Pynac tutorial so that more people can be effective on this!",
     "created_at": "2010-07-29T13:23:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93316",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93160",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -110,15 +109,15 @@ This just goes to show that we need some sort of Pynac tutorial so that more peo
 
 ---
 
-archive/issue_comments_093317.json:
+archive/issue_comments_093161.json:
 ```json
 {
     "body": "I don't think it's possible to monkey-patch methods onto int, but the symbolic sum issue has been fixed and I have a patch with a doctest (needs review!) at #9393.",
     "created_at": "2012-01-16T05:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93317",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93161",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -128,15 +127,15 @@ I don't think it's possible to monkey-patch methods onto int, but the symbolic s
 
 ---
 
-archive/issue_comments_093318.json:
+archive/issue_comments_093162.json:
 ```json
 {
     "body": "This is a duplicate of #9393. There is a patch with a doctest attached to that ticket.",
     "created_at": "2012-01-16T09:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93318",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93162",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -146,15 +145,15 @@ This is a duplicate of #9393. There is a patch with a doctest attached to that t
 
 ---
 
-archive/issue_comments_093319.json:
+archive/issue_comments_093163.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-01-16T09:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93319",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93163",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -164,15 +163,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_093320.json:
+archive/issue_comments_093164.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-01-16T09:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93320",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93164",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -182,15 +181,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_093321.json:
+archive/issue_comments_093165.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2012-01-16T10:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93321",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9630#issuecomment-93165",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

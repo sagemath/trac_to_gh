@@ -6,15 +6,14 @@ archive/issues_003167.json:
     "body": "Assignee: @williamstein\n\n1. Go to the 3d plots section of the reference manual, e.g.,\n   http://localhost:8000/doc/live/ref/module-sage.plot.plot3d.parametric-plot3d.html\n\n2. Hit shift-enter to evaluate a plot.\n\n3. Observe that the plot doesn't work. \n\n\nThis should be easy to replicate on all operating systems, etc.  This bug was \nreported by walter neumann on March 11, 2008.\n\n\n----\n\nAs a temporary workaround you can do the following:\n\n1. View the page of the html reference manual of interest to you that contains 3d plotting code.\n2. Click in the upper left on File -> Copy Worksheet.\n\nYou'll get a complete copy of the page of the reference manual\nas a normal worksheet.  You can then use shift-enter to evaluate\n3d plots and they should work fine in that copy (since it is\njust a normal worksheet).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3167\n\n",
     "created_at": "2008-05-12T03:58:55Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3167",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3167
 
 ---
 
-archive/issue_comments_021942.json:
+archive/issue_comments_021895.json:
 ```json
 {
     "body": "It would be nice if we could fix this soon.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-29T20:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21942",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21895",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +74,15 @@ Michael
 
 ---
 
-archive/issue_comments_021943.json:
+archive/issue_comments_021896.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2008-05-29T20:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21943",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21896",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_021944.json:
+archive/issue_comments_021897.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-29T22:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21944",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21897",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_021945.json:
+archive/issue_comments_021898.json:
 ```json
 {
     "body": "This is fixed by Mike Hansen's transformation of the documentation to ReST. So once this happens this ticket ought to be closed.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-29T22:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21945",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21898",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -133,15 +132,15 @@ Michael
 
 ---
 
-archive/issue_comments_021946.json:
+archive/issue_comments_021899.json:
 ```json
 {
     "body": "\n```\nThis is about http://trac.sagemath.org/sage_trac/ticket/3167\n\nIf I open a new worksheet and execute\n\nx,y=var('x,y')\nplot3d(sin(x*y),(x,-4,4),(y,-4,4))\n\nI see this in Opera's Java Console:\n\nJmol applet jmolApplet1__319875117923755__ destroyed\nJmol applet jmolApplet2__319875117923755__ initializing\nAppletRegistry.checkIn(jmolApplet2__319875117923755__)\napplet context: -applet\nappletDocumentBase=http://localhost:8000/home/admin/11/\nappletCodeBase=http://localhost:8000/java/jmol/\n(C) 2008 Jmol Development\nJmol Version 11.6.16  2008-11-24 13:39\njava.vendor:Sun Microsystems Inc.\njava.version:1.6.0_13\nos.name:Linux\nmemory:13.2/55.1\nuseCommandThread: false\nappletId:jmolApplet2__319875117923755__\nFileManager opening http://localhost:8000/java/jmol/appletweb/SageMenu.mnu\nurlImage=jar:http://localhost:8000/java/jmol/JmolApplet0.jar!/jmol75x29x8.gif\ndefaults = \"Jmol\"\nbackgroundColor = \"black\"\nlanguage=en_US\nFileManager opening\nhttp://localhost:8000/home/admin/11/cells/17/sage0-size500.jmol?1240378461\nFileManager opening\nhttp://localhost:8000/home/admin/11/sage0-size500-481666882.jmol.zip\nFileManager.openStringInline()\nThe Resolver thinks Xyz\nModelSet: haveSymmetry:false haveUnitcells:false haveFractionalCoord:false\n1 model in this collection. Use getProperty \"modelInfo\" or getProperty\n\"auxiliaryInfo\" to inspect them.\nModelSet: autobonding; use  autobond=false  to not generate bonds\nautomatically\ndata \"model list\"\n10\nempty\nXx -6.0 -7.0 -3.0\nXx 0.0 -7.0 -3.0\nXx 6.0 -7.0 -3.0\nXx 7.0 -6.0 -3.0\nXx 7.0 0.0 -3.0\nXx 7.0 6.0 -3.0\nXx -7.0 -6.0 -3.0\nXx -7.0 -6.0 0.0\nXx -7.0 -6.0 3.0\nXx 5.5 5.5 5.5\n\nend \"model list\";\nFileManager opening\nhttp://localhost:8000/home/admin/11/sage0-size500-481666882.jmol.zip\nreading pmesh data from\nhttp://localhost:8000/home/admin/11/sage0-size500-481666882.jmol.zip|obj_832199.pmesh\n\n\n\nIf I do the same in a docbrowser sheet, I see\n\nJmol applet jmolApplet0__307075267903545__ initializing\nurlImage=jar:http://localhost:8000/java/jmol/JmolApplet0.jar!/jmol75x29x8.gif\nAppletRegistry.checkIn(jmolApplet0__307075267903545__)\napplet context: -applet\nappletDocumentBase=http://localhost:8000/doc/live/tutorial/tour_plotting.html\nappletCodeBase=http://localhost:8000/java/jmol/\n(C) 2008 Jmol Development\nJmol Version 11.6.16  2008-11-24 13:39\njava.vendor:Sun Microsystems Inc.\njava.version:1.6.0_13\nos.name:Linux\nmemory:14.2/58.9\nuseCommandThread: false\nappletId:jmolApplet0__307075267903545__\nFileManager opening http://localhost:8000/java/jmol/appletweb/SageMenu.mnu\ndefaults = \"Jmol\"\nbackgroundColor = \"black\"\nlanguage=en_US\nFileManager opening\nhttp://localhost:8000/home/_sage_/85/cells/33/sage0-size500.jmol?1240378560\nFileManager opening\nhttp://localhost:8000/doc/live/tutorial/sage0-size500-224802342.jmol.zip\nscript ERROR: io error reading\nhttp://localhost:8000/doc/live/tutorial/sage0-size500-224802342.jmol.zip|SCRIPT:\njava.io.FileNotFoundException:\nhttp://localhost:8000/doc/live/tutorial/sage0-size500-224802342.jmol.zip\neval ERROR:\n----line 2 command 2 of file\n/home/_sage_/85/cells/33/sage0-size500.jmol?1240378560:\n        script >> \"SCRIPT\" <<\n----line 1 command 1:\n        script >>\n\"/home/_sage_/85/cells/33/sage0-size500.jmol?1240378560\" <<\n\n\nwhich \"explains\" the blank applet (i.e., no plot).  Apparently, the\nnotebook finds and serves up the zip file when it's requested relative\nto the base URL of an ordinary worksheet, but it does not do the same\nfor a live doc worksheet.\n\nThough I have not yet tried it, one fix that springs to mind is to\nencode the full URL of the archive in plot.plot3d.base.show().  But this\nseems to be a server (permissions?) issue.  Once again, I'm in over my\nhead, so it would be great to get some input.\n\nThe logs above are from Sun's 64-bit JDK in Opera 9 on Fedora 9.  I\ndon't know how to access the Java console in Firefox, but I've\nexperienced the same behavior in both the 32-bit and 64-bit versions.\n\n -- \"Pat LeSmithe\"\n```\n",
     "created_at": "2009-04-22T13:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21946",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21899",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -267,15 +266,15 @@ experienced the same behavior in both the 32-bit and 64-bit versions.
 
 ---
 
-archive/issue_comments_021947.json:
+archive/issue_comments_021900.json:
 ```json
 {
     "body": "If we're going to release for months and months without fixing this, it's clearly not a blocker.",
     "created_at": "2009-06-15T23:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21947",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21900",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -285,15 +284,15 @@ If we're going to release for months and months without fixing this, it's clearl
 
 ---
 
-archive/issue_comments_021948.json:
+archive/issue_comments_021901.json:
 ```json
 {
     "body": "Changing priority from blocker to critical.",
     "created_at": "2009-06-15T23:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21948",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21901",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -303,15 +302,15 @@ Changing priority from blocker to critical.
 
 ---
 
-archive/issue_comments_021949.json:
+archive/issue_comments_021902.json:
 ```json
 {
     "body": "Attachment [trac_3167_blank_jmol.patch](tarball://root/attachments/some-uuid/ticket3167/trac_3167_blank_jmol.patch) by @qed777 created at 2009-06-20 15:32:28",
     "created_at": "2009-06-20T15:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21949",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21902",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -321,15 +320,15 @@ Attachment [trac_3167_blank_jmol.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_021950.json:
+archive/issue_comments_021903.json:
 ```json
 {
     "body": "Maybe there's a better way with Jmol itself, but the patch appears to work.  `cell.py` seems to be a convenient place to do this.",
     "created_at": "2009-06-20T15:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21950",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21903",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -339,15 +338,15 @@ Maybe there's a better way with Jmol itself, but the patch appears to work.  `ce
 
 ---
 
-archive/issue_comments_021951.json:
+archive/issue_comments_021904.json:
 ```json
 {
     "body": "Works for me: 3d plots in the tutorial produced black boxes before this, and produced nice plots after applying the patch.  (Is it right that the only relevant place is the tutorial: the reference manual is no longer live, is it?)",
     "created_at": "2009-06-28T23:41:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21951",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21904",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -357,15 +356,15 @@ Works for me: 3d plots in the tutorial produced black boxes before this, and pro
 
 ---
 
-archive/issue_comments_021952.json:
+archive/issue_comments_021905.json:
 ```json
 {
     "body": "Replying to [comment:7 jhpalmieri]:\n> Works for me: 3d plots in the tutorial produced black boxes before this, and produced nice plots after applying the patch.  (Is it right that the only relevant place is the tutorial: the reference manual is no longer live, is it?)\n\nI just checked that the tutorial, developer guide, and constructions guide are [or can be] live, but the reference manual is not, apparently.  It may not be difficult to render a reference or docstring docbrowser on-the-fly.  Perhaps it's better to set up inline frames, a la [this example](http://groups.google.com/group/sage-devel/browse_thread/thread/1ea045d16e60b1b2/4f07263ea5982965?#4f07263ea5982965), so that doc frames have their own instances of the Sage engine.  I think this would also enable interactive, live documentation, even while the main worksheet process is busy with a computation.",
     "created_at": "2009-06-29T00:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21952",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21905",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -378,15 +377,15 @@ I just checked that the tutorial, developer guide, and constructions guide are [
 
 ---
 
-archive/issue_comments_021953.json:
+archive/issue_comments_021906.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-03T17:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21953",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3167#issuecomment-21906",
+    "user": "https://github.com/rlmill"
 }
 ```
 

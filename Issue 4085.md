@@ -6,15 +6,14 @@ archive/issues_004085.json:
     "body": "Assignee: jkantor\n\nBefore \n\n\n```\nsage: RealField(256)(1.2)\n1.199999999999999955591079014993738383054733276367187500000000000000000000000\n```\n\n\nAfter\n\n\n```\nsage: RealField(256)(1.2)\n1.200000000000000000000000000000000000000000000000000000000000000000000000000\n```\n\n\nWhile I was in there I made several optimizations. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4085\n\n",
     "created_at": "2008-09-09T05:46:07Z",
     "labels": [
-        "numerical",
-        "major",
+        "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] high precision real literals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4085",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: jkantor
@@ -47,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4085
 
 ---
 
-archive/issue_comments_029473.json:
+archive/issue_comments_029414.json:
 ```json
 {
     "body": "Attachment [4085-real-literals.patch](tarball://root/attachments/some-uuid/ticket4085/4085-real-literals.patch) by @robertwb created at 2008-09-09 08:12:01",
     "created_at": "2008-09-09T08:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29473",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29414",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -65,15 +64,15 @@ Attachment [4085-real-literals.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_029474.json:
+archive/issue_comments_029415.json:
 ```json
 {
     "body": "Technically, this looks good to me and it's definitely a change for the better.  There will be some doctest failures as Sage is now more accurate, but I'll let mabshoff test the tree, and then I can make the clean up patch.\n\nWe also have this nice behavior:\n\n```\nsage: ComplexField(200)(1.1,0.1)\n1.1000000000000000000000000000000000000000000000000000000000 + 0.10000000000000000000000000000000000000000000000000000000000*I\n```\n\n\nNice work Robert!",
     "created_at": "2008-09-09T08:32:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29474",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29415",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -93,15 +92,15 @@ Nice work Robert!
 
 ---
 
-archive/issue_comments_029475.json:
+archive/issue_comments_029416.json:
 ```json
 {
     "body": "Here we go:\n\n```\nsage -t -long devel/sage/sage/structure/sage_object.pyx     \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/sage_object.py\", line 57:\n    sage: type(a)\nExpected:\n    <type 'sage.rings.real_mpfr.RealNumber'>\nGot:\n    <type 'sage.rings.real_mpfr.RealLiteral'>\n**********************************************************************\n1 items had failures:\n   1 of  15 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/.doctest_sage_object.py\n\t [3.3 s]\nexit code: 1024\n \nsage -t -long devel/sage/sage/rings/real_rqdf.pyx           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/real_rqdf.py\", line 24:\n    sage: RQDF( 123.2) * RR (.543)\nExpected:\n    66.89760000000000624851281827432114309792736749325567465385058291\nGot:\n    66.89760000000000154329882207093760371208190917968750000000000000\n**********************************************************************\n1 items had failures:\n   1 of  11 in __main__.example_0\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/.doctest_real_rqdf.py\n\t [2.8 s]\nexit code: 1024\n \nsage -t -long devel/sage/sage/rings/real_mpfr.pyx           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/real_mpfr.py\", line 883:\n    sage: (-3.1415)._pari_().python()\nExpected:\n    -3.14150000000000018\nGot:\n    -3.14150000000000000\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_28\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/.doctest_real_mpfr.py\n\t [8.3 s]\nexit code: 1024\n \n\nsage -t -long devel/sage/sage/rings/complex_double.pyx      \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/complex_double.py\", line 960:\n    sage: log(abs(ComplexField(200)(1.1,0.1)))\nExpected:\n    0.099425429372582675602989386713555936556752871164033127857198\nGot:\n    0.099425429372582595066319157757531449594489450091985182495705\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_52\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/.doctest_complex_double.py\n\t [4.6 s]\nexit code: 1024\n \n\nsage -t -long devel/sage/sage/rings/qqbar.py                    \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/qqbar.py\", line 288:\n    sage: rhs\nExpected:\n    2.642040335819351?e44\nGot:\n    2.64204033581936?e44\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/qqbar.py\", line 290:\n    sage: lhs - rhs\nExpected:\n    0.?e29\nGot:\n    0.?e30\n**********************************************************************\n1 items had failures:\n   2 of 127 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/.doctest_qqbar.py\n\t [114.2 s]\nexit code: 1024\n \nsage -t -long devel/sage/sage/misc/functional.py            \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/functional.py\", line 804:\n    sage: type(real(a))\nExpected:\n    <type 'sage.rings.real_mpfr.RealNumber'>\nGot:\n    <type 'sage.rings.real_mpfr.RealLiteral'>\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_50\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/.doctest_functional.py\n\t [6.6 s]\nexit code: 1024\n \nsage -t -long devel/sage/sage/matrix/matrix0.pyx            \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/matrix0.py\", line 532:\n    sage: a[2.7]\nExpected:\n    Traceback (most recent call last):\n    ...\n    TypeError: 'sage.rings.real_mpfr.RealNumber' object cannot be interpreted as an index\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_21[12]>\", line 1, in <module>\n        a[RealNumber('2.7')]###line 532:\n    sage: a[2.7]\n      File \"matrix0.pyx\", line 707, in sage.matrix.matrix0.Matrix.__getitem__ (sage/matrix/matrix0.c:4109)\n      File \"matrix1.pyx\", line 635, in sage.matrix.matrix1.Matrix.row (sage/matrix/matrix1.c:5406)\n    TypeError: 'sage.rings.real_mpfr.RealLiteral' object cannot be interpreted as an index\n**********************************************************************\n1 items had failures:\n   1 of  42 in __main__.example_21\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/.doctest_matrix0.py\n\t [3.1 s]\nexit code: 1024\n \nsage -t -long devel/sage/sage/libs/pari/gen.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/gen.py\", line 4408:\n    sage: e.elllseries(2.1)\nExpected:\n    0.4028380479566455155\nGot:\n    0.4028380479566454783\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/gen.py\", line 4416:\n    sage: e.elllseries(2.1, A=1.1)\nExpected:\n    0.402838047956645515...\nGot:\n    0.4028380479566454785\n**********************************************************************\n1 items had failures:\n   2 of   7 in __main__.example_164\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.rc1/tmp/.doctest_gen.py\n\t [57.5 s]\nexit code: 1024\n }}}",
     "created_at": "2008-09-09T09:38:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29475",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29416",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -267,15 +266,15 @@ exit code: 1024
 
 ---
 
-archive/issue_comments_029476.json:
+archive/issue_comments_029417.json:
 ```json
 {
     "body": "Attachment [trac_4805-fixes.patch](tarball://root/attachments/some-uuid/ticket4085/trac_4805-fixes.patch) by @mwhansen created at 2008-09-13 00:51:39",
     "created_at": "2008-09-13T00:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29476",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29417",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -285,15 +284,15 @@ Attachment [trac_4805-fixes.patch](tarball://root/attachments/some-uuid/ticket40
 
 ---
 
-archive/issue_comments_029477.json:
+archive/issue_comments_029418.json:
 ```json
 {
     "body": "Looks good, passes doctests.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-13T02:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29477",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29418",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -307,15 +306,15 @@ Michael
 
 ---
 
-archive/issue_comments_029478.json:
+archive/issue_comments_029419.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-13T02:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29478",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29419",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -325,15 +324,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029479.json:
+archive/issue_comments_029420.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.1.2.rc2",
     "created_at": "2008-09-13T02:44:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29479",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4085#issuecomment-29420",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

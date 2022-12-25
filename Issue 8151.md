@@ -6,7 +6,7 @@ archive/issues_008151.json:
     "body": "Assignee: tbd\n\nsome file permissions are  wrong (600 or 700) in 4.3.1, \nnamely \nsrc/README \nsrc/box/\n \n(so they become unreadable to the world when the thing is installed as root) \n\nIssue created by migration from https://trac.sagemath.org/ticket/8151\n\n",
     "created_at": "2010-02-02T09:25:20Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008151.json:
     "title": "wrong file permissions in lie-2.2.2.p3.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8151",
-    "user": "@dimpase"
+    "user": "https://github.com/dimpase"
 }
 ```
 Assignee: tbd
@@ -34,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8151
 
 ---
 
-archive/issue_comments_071667.json:
+archive/issue_comments_071546.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-05-26T06:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71667",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71546",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -52,15 +52,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_071668.json:
+archive/issue_comments_071547.json:
 ```json
 {
     "body": "This is fixed by #12983.",
     "created_at": "2012-05-26T06:50:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71668",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71547",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -70,15 +70,15 @@ This is fixed by #12983.
 
 ---
 
-archive/issue_comments_071669.json:
+archive/issue_comments_071548.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-05-26T06:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71669",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71548",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -88,15 +88,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_071670.json:
+archive/issue_comments_071549.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2012-06-15T09:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71670",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8151#issuecomment-71549",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

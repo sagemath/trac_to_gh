@@ -6,15 +6,13 @@ archive/issues_007556.json:
     "body": "Assignee: @aghitza\n\nThis is inconsistent:\n\n```\nsage: (9/2).round()\n4\nsage: RDF('4.5').round()\n5\nsage: import __builtin__\nsage: __builtin__.round(float('4.5'))\n5.0\nsage: RR('4.5').round()\n5\n```\n\n\nIt's also inconsistent for negatives.  The simple fix is to make the default rounding direction 'away' in rational.pyx. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7556\n\n",
     "created_at": "2009-11-29T23:34:16Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "change default rounding behavior for QQ to",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7556",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @aghitza
@@ -44,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7556
 
 ---
 
-archive/issue_comments_064262.json:
+archive/issue_comments_064146.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-29T23:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64262",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64146",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -62,15 +60,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_064263.json:
+archive/issue_comments_064147.json:
 ```json
 {
     "body": "Attachment [trac_7556.patch](tarball://root/attachments/some-uuid/ticket7556/trac_7556.patch) by @williamstein created at 2009-11-29 23:41:25",
     "created_at": "2009-11-29T23:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64263",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64147",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -80,15 +78,15 @@ Attachment [trac_7556.patch](tarball://root/attachments/some-uuid/ticket7556/tra
 
 ---
 
-archive/issue_comments_064264.json:
+archive/issue_comments_064148.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-30T04:01:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64264",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64148",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -98,15 +96,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064265.json:
+archive/issue_comments_064149.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-11-30T04:01:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64265",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64149",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -116,15 +114,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_064266.json:
+archive/issue_comments_064150.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-01T05:09:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7556",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64266",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7556#issuecomment-64150",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

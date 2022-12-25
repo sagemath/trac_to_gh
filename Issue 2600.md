@@ -6,15 +6,14 @@ archive/issues_002600.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: var('y')\ny\nsage: plot_vector_field((lambda x,y: .01*x,x+y), (-10,10), (-10,10))\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/home/grout/<ipython console> in <module>()\n\n/home/grout/sage/local/lib/python2.5/site-packages/IPython/Prompts.py in __call__(self, arg)\n    521 \n    522             # and now call a possibly user-defined print mechanism\n--> 523             manipulated_val = self.display(arg)\n    524             \n    525             # user display hooks can change the variable to be stored in\n\n/home/grout/sage/local/lib/python2.5/site-packages/IPython/Prompts.py in _display(self, arg)\n    545         \"\"\"\n    546 \n--> 547         return self.shell.hooks.result_display(arg)\n    548 \n    549     # Assign the default display method:\n\n/home/grout/sage/local/lib/python2.5/site-packages/IPython/hooks.py in __call__(self, *args, **kw)\n    132             #print \"prio\",prio,\"cmd\",cmd #dbg\n    133             try:\n--> 134                 ret = cmd(*args, **kw)\n    135                 return ret\n    136             except ipapi.TryNext, exc:\n\n/home/grout/sage/local/lib/python2.5/site-packages/IPython/hooks.py in result_display(self, arg)\n    160     \n    161     if self.rc.pprint:\n--> 162         out = pformat(arg)\n    163         if '\\n' in out:\n    164             # So that multi-line strings line up with the left column of\n\n/home/grout/sage/local/lib/python2.5/pprint.py in pformat(self, object)\n    109     def pformat(self, object):\n    110         sio = _StringIO()\n--> 111         self._format(object, sio, 0, 0, {}, 0)\n    112         return sio.getvalue()\n    113 \n\n/home/grout/sage/local/lib/python2.5/pprint.py in _format(self, object, stream, indent, allowance, context, level)\n    127             self._readable = False\n    128             return\n--> 129         rep = self._repr(object, context, level - 1)\n    130         typ = _type(object)\n    131         sepLines = _len(rep) > (self._width - 1 - indent - allowance)\n\n/home/grout/sage/local/lib/python2.5/pprint.py in _repr(self, object, context, level)\n    193     def _repr(self, object, context, level):\n    194         repr, readable, recursive = self.format(object, context.copy(),\n--> 195                                                 self._depth, level)\n    196         if not readable:\n    197             self._readable = False\n\n/home/grout/sage/local/lib/python2.5/pprint.py in format(self, object, context, maxlevels, level)\n    205         and whether the object represents a recursive construct.\n    206         \"\"\"\n--> 207         return _safe_repr(object, context, maxlevels, level)\n    208 \n    209 \n\n/home/grout/sage/local/lib/python2.5/pprint.py in _safe_repr(object, context, maxlevels, level)\n    290         return format % _commajoin(components), readable, recursive\n    291 \n--> 292     rep = repr(object)\n    293     return rep, (rep and not rep.startswith('<')), False\n    294 \n\n/home/grout/sage_object.pyx in sage.structure.sage_object.SageObject.__repr__()\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in _repr_(self)\n    736         \"\"\"\n    737         if SHOW_DEFAULT:\n--> 738             self.show()\n    739             return ''\n    740         else:\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in show(self, xmin, xmax, ymin, ymax, figsize, filename, dpi, axes, axes_labels, frame, fontsize, aspect_ratio)\n   1250         self.save(filename, xmin, xmax, ymin, ymax, figsize, dpi=dpi, axes=axes,\n   1251                   frame=frame, fontsize=fontsize,\n-> 1252                   aspect_ratio=aspect_ratio)\n   1253         os.system('%s %s 2>/dev/null 1>/dev/null &'%(sage.misc.viewer.browser(), filename))\n   1254 \n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/plot/plot.py in save(self, filename, xmin, xmax, ymin, ymax, figsize, figure, sub, savenow, dpi, axes, axes_labels, fontsize, frame, verify, aspect_ratio)\n   1462             else:\n   1463                 raise ValueError, \"file extension must be either 'png', 'ps, 'eps', 'pdf, 'svg' or 'sobj'\"\n-> 1464             canvas.print_figure(filename, dpi=dpi)\n   1465 \n   1466 ################## Graphics Primitives ################\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/backend_bases.py in print_figure(self, filename, dpi, facecolor, edgecolor, orientation, format, **kwargs)\n   1200             self.figure.set_edgecolor(origedgecolor)\n   1201             self.figure.set_canvas(self)\n-> 1202             self.figure.canvas.draw()\n   1203             \n   1204         return result\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/backends/backend_agg.py in draw(self)\n    378 \n    379         self.renderer = self.get_renderer()\n--> 380         self.figure.draw(self.renderer)\n    381 \n    382     def get_renderer(self):\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/figure.py in draw(self, renderer)\n    610 \n    611         # render the axes\n--> 612         for a in self.axes: a.draw(renderer)\n    613 \n    614         # render the figure text\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/axes.py in draw(self, renderer, inframe)\n   1342 \n   1343         for zorder, i, a in dsu:\n-> 1344             a.draw(renderer)\n   1345 \n   1346         self.transData.thaw()  # release the lazy objects\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/quiver.py in draw(self, renderer)\n    334         self._init()\n    335         if self._new_UV:\n--> 336             verts = self._make_verts(self.U, self.V)\n    337             # Using nan internally here is the easiest\n    338             # way to support masked inputs; it doesn't\n\n/home/grout/sage/local/lib/python2.5/site-packages/matplotlib/quiver.py in _make_verts(self, U, V)\n    389         # a masked array with one element converts it to\n    390         # an ndarray.\n--> 391         theta = npy.angle(ma.asarray(uv[..., npy.newaxis]).filled(0))\n    392         xy = (X+Y*1j) * npy.exp(1j*theta)*self.width\n    393         xy = xy[:,:,npy.newaxis]\n\n/home/grout/sage/local/lib/python2.5/site-packages/numpy/lib/function_base.py in angle(z, deg)\n    694         zimag = 0\n    695         zreal = z\n--> 696     return arctan2(zimag, zreal) * fact\n    697 \n    698 def unwrap(p, discont=pi, axis=-1):\n\n<type 'exceptions.AttributeError'>: 'int' object has no attribute 'arctan2'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2600\n\n",
     "created_at": "2008-03-19T18:59:44Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "vector plot throws error when function contains a float",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2600",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -177,15 +176,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2600
 
 ---
 
-archive/issue_comments_017794.json:
+archive/issue_comments_017756.json:
 ```json
 {
     "body": "Attachment [trac2600_vector_field.patch](tarball://root/attachments/some-uuid/ticket2600/trac2600_vector_field.patch) by cwitty created at 2008-03-21 01:57:33\n\nThe attached patch fixes the bug and adds a doctest for it.  Tests pass in plot.py .",
     "created_at": "2008-03-21T01:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2600",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2600#issuecomment-17794",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2600#issuecomment-17756",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -197,15 +196,15 @@ The attached patch fixes the bug and adds a doctest for it.  Tests pass in plot.
 
 ---
 
-archive/issue_comments_017795.json:
+archive/issue_comments_017757.json:
 ```json
 {
     "body": "looks good to me.  Thanks!",
     "created_at": "2008-03-25T21:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2600",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2600#issuecomment-17795",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2600#issuecomment-17757",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -215,15 +214,15 @@ looks good to me.  Thanks!
 
 ---
 
-archive/issue_comments_017796.json:
+archive/issue_comments_017758.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-26T00:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2600",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2600#issuecomment-17796",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2600#issuecomment-17758",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -233,15 +232,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_017797.json:
+archive/issue_comments_017759.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha2",
     "created_at": "2008-03-26T00:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2600",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2600#issuecomment-17797",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2600#issuecomment-17759",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

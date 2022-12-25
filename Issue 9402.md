@@ -6,15 +6,13 @@ archive/issues_009402.json:
     "body": "Assignee: @JohnCremona\n\nCC:  @alexjbest\n\nKeywords: Elliptic Curves, L-series,\n\nThis patch adds the attribute .dokchitser() to an elliptic_curve.lseries() over a number field (this capability is present over QQ). It also adds an attribute to .dokchitser(), namely get_coeffs(bound), which returns the first bound coefficients in the Dirichlet expansion of the associated L-series.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9402\n\n",
     "created_at": "2010-07-01T16:24:25Z",
     "labels": [
-        "elliptic curves",
-        "major",
-        "enhancement"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.4",
     "title": "Extend dokchitser L-function package in Elliptic Curves to Number Fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9402",
-    "user": "adam"
+    "user": "https://trac.sagemath.org/admin/accounts/users/adam"
 }
 ```
 Assignee: @JohnCremona
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9402
 
 ---
 
-archive/issue_comments_089585.json:
+archive/issue_comments_089442.json:
 ```json
 {
     "body": "Use lseries_num_fields2.patch, the second one. This adds documentation and fixes a bug in the first one. \n\nThe bug fixed is that the elliptic curve E was calling E.reduction(prime_ideal).count_points() where prime_ideal is a prime of good reduction but E is not minimal with respect to that ideal; i.e., that ideal's norm divides the conductor of E.\n\nThe fix first checks that E is minimal with respect to said ideal. If not, E.local_minimal_model(prime_ideal).reduction(prime_ideal).count_points() \nis calles.",
     "created_at": "2010-07-02T20:37:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89585",
-    "user": "adam"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89442",
+    "user": "https://trac.sagemath.org/admin/accounts/users/adam"
 }
 ```
 
@@ -56,15 +54,15 @@ is calles.
 
 ---
 
-archive/issue_comments_089586.json:
+archive/issue_comments_089443.json:
 ```json
 {
     "body": "Hi,\n\n1. If you want to get this code refereed you have to set it to \"needs review\" (under action below). \n\n2. You function to get the coefficients computes for all primes with residue characteristic up to a given bound.  Instead, it would make vastly more sense to compute for all primes with *norm* up to a given bound.    This is much easier, and in many cases means counting points in easier cases (e.g. over the prime subfield).",
     "created_at": "2011-02-03T10:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89586",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89443",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -78,15 +76,15 @@ Hi,
 
 ---
 
-archive/issue_comments_089587.json:
+archive/issue_comments_089444.json:
 ```json
 {
     "body": "I also implemented something like this in psage, but it's really just a little reference implementation of computing the Fourier coefficients a_I.     See \n\n   http://code.google.com/p/purplesage/source/detail?r=7c1e21eb34dbeada1ed0cd5d2011da1226ef5518\n\nIt's nice to separate computing the Fourier coefficients from the actual Dokchitser code, I think, since that makes using them much more flexible.",
     "created_at": "2011-02-03T10:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89587",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89444",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -100,15 +98,15 @@ It's nice to separate computing the Fourier coefficients from the actual Dokchit
 
 ---
 
-archive/issue_comments_089588.json:
+archive/issue_comments_089445.json:
 ```json
 {
     "body": "I think my comment (2) above is wrong.  I just misunderstood your code.",
     "created_at": "2011-02-03T12:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89588",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89445",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -118,15 +116,15 @@ I think my comment (2) above is wrong.  I just misunderstood your code.
 
 ---
 
-archive/issue_comments_089589.json:
+archive/issue_comments_089446.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-02-03T15:11:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89589",
-    "user": "adam"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89446",
+    "user": "https://trac.sagemath.org/admin/accounts/users/adam"
 }
 ```
 
@@ -136,15 +134,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_089590.json:
+archive/issue_comments_089447.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-05-11T16:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89590",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89447",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -154,15 +152,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_089591.json:
+archive/issue_comments_089448.json:
 ```json
 {
     "body": "This patch failed to apply on sage-4.7.rc2 (Mac OS X, 10.6.7) and on sage-4.7.rc0.",
     "created_at": "2011-05-11T16:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89591",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89448",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -172,15 +170,15 @@ This patch failed to apply on sage-4.7.rc2 (Mac OS X, 10.6.7) and on sage-4.7.rc
 
 ---
 
-archive/issue_comments_089592.json:
+archive/issue_comments_089449.json:
 ```json
 {
     "body": "Nevermind.  I didn't catch that you need to apply the patches in order.  I'm playing with this code now.",
     "created_at": "2011-05-11T17:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89592",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89449",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -190,15 +188,15 @@ Nevermind.  I didn't catch that you need to apply the patches in order.  I'm pla
 
 ---
 
-archive/issue_comments_089593.json:
+archive/issue_comments_089450.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-05-11T17:04:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89593",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89450",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -208,15 +206,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_089594.json:
+archive/issue_comments_089451.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-06-28T19:17:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89594",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89451",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -226,15 +224,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_089595.json:
+archive/issue_comments_089452.json:
 ```json
 {
     "body": "Clearly this needs substantial work.  I'm also deleting the two patches and putting one flattened patch.",
     "created_at": "2011-06-28T19:17:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89595",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89452",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -244,15 +242,15 @@ Clearly this needs substantial work.  I'm also deleting the two patches and putt
 
 ---
 
-archive/issue_comments_089596.json:
+archive/issue_comments_089453.json:
 ```json
 {
     "body": "Attachment [trac_9402-lseries_nf.patch](tarball://root/attachments/some-uuid/ticket9402/trac_9402-lseries_nf.patch) by @williamstein created at 2011-07-28 19:37:51\n\n**WARNING**   Extensive improvements on this code (which is really a mess right now) are appearing in psage.  See, e.g., the file lseries_nf.py here:\n\nhttp://code.google.com/p/purplesage/source/browse/#hg%2Fpsage%2Fellcurve%2Flseries\n\nHaving just written that code in psage (which involved going through the code on this ticket), I would definitely not recommend including the current code in Sage with a major rewrite.   For example, code like this in the patch:\n\n```\n    s = 'v = %s; a(k)=if(k>%s,0,v[k]);'%( coeffs, upper_limit) \n    L.init_coeffs('a(k)', pari_precode = s)    \n```\n\nis just masking confusion, since it's setting all Dirichlet coefficients above a certain bound to 0, which is nonsense.",
     "created_at": "2011-07-28T19:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89596",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89453",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -275,15 +273,15 @@ is just masking confusion, since it's setting all Dirichlet coefficients above a
 
 ---
 
-archive/issue_comments_089597.json:
+archive/issue_comments_089454.json:
 ```json
 {
     "body": "Changing keywords from \"Elliptic Curves, L-series,\" to \"Elliptic Curves, L-series, dokchitser\".",
     "created_at": "2013-09-21T12:12:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89597",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89454",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -293,15 +291,15 @@ Changing keywords from "Elliptic Curves, L-series," to "Elliptic Curves, L-serie
 
 ---
 
-archive/issue_comments_089598.json:
+archive/issue_comments_089455.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2018-08-18T13:38:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89598",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89455",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -311,15 +309,15 @@ New commits:
 
 ---
 
-archive/issue_comments_089599.json:
+archive/issue_comments_089456.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2018-08-18T15:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89599",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89456",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -329,15 +327,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_089600.json:
+archive/issue_comments_089457.json:
 ```json
 {
     "body": "There are some failing doctests, namely one check of the functional equation does not pass. Maybe the list of coefficients is wrong in this case, or maybe some other bug is lurking around (or some wrong other Dokchitser parameters ?).",
     "created_at": "2018-08-19T09:16:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89600",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89457",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -347,15 +345,15 @@ There are some failing doctests, namely one check of the functional equation doe
 
 ---
 
-archive/issue_comments_089601.json:
+archive/issue_comments_089458.json:
 ```json
 {
     "body": "Changing keywords from \"Elliptic Curves, L-series, dokchitser\" to \"Elliptic Curves, lseries, dokchitser\".",
     "created_at": "2019-03-09T07:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89601",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9402#issuecomment-89458",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

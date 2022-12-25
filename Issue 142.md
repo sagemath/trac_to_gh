@@ -6,7 +6,7 @@ archive/issues_000142.json:
     "body": "Assignee: @williamstein\n\n\n```\n>\n> Yep...  My $HOME/.sage belonged to \"root\".  I have no idea why that\n> happened either...  Maybe I used a \"sudo\" when I shouldn't...  (But I\n> really think I just used to \"make\".)  In any case, a \"sudo chown -R\"\n> fixed it.\n\nYes, this is a known bug in the install process. SAGE get's run \nduring the install, which can cause some problems like you just\nhad if the user doing the build is root but the $HOME for root\nis not /root.\n\nWilliam\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/142\n\n",
     "created_at": "2006-10-21T03:37:21Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000142.json:
     "title": "sage build shouldn't modify $HOME",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/142",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -44,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/142
 
 ---
 
-archive/issue_comments_000656.json:
+archive/issue_comments_000653.json:
 ```json
 {
     "body": "Sage should *definitely* be allowed to run during the build.  That's just the\nway it is.",
     "created_at": "2007-10-21T01:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/142#issuecomment-656",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/142#issuecomment-653",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -63,15 +63,15 @@ way it is.
 
 ---
 
-archive/issue_comments_000657.json:
+archive/issue_comments_000654.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2007-10-21T01:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/142#issuecomment-657",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/142#issuecomment-654",
+    "user": "https://github.com/williamstein"
 }
 ```
 

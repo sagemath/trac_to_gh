@@ -6,15 +6,14 @@ archive/issues_004397.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage -t -long -optional devel/sage/sage/rings/number_field/number_field.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/number_field.py\", line 2446:\n    sage: NumberField(x^2+2, 'a').galois_group(pari_group=False)  # optional database_gap package\nExpected:\n    Galois group Transitive group number 1 of degree 2 of the Number Field in a with defining polynomial x^2 + 2\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap packa\nge. Please install it.\n    Galois group Transitive group number 1 of degree 2 of the Number Field in a with defining polynomial x^2 + 2\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/number_field.py\", line 2448:\n    sage: NumberField(x^3-2, 'a').galois_group(pari_group=False)  # optional database_gap package\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 - 2\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap packa\nge. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 - 2\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/number_field.py\", line 2452:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(pari_group=False)\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap packa\nge. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/number_field.py\", line 2454:\n    sage: NumberField(x^3 + 2*x + 1, 'a').galois_group(algorithm='magma')   # optional -- requires magma\nExpected:\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\nGot:\n    verbose 0 (501: permgroup_named.py, __init__) Warning: Computing with TransitiveGroups requires the optional database_gap packa\nge. Please install it.\n    Galois group Transitive group number 2 of degree 3 of the Number Field in a with defining polynomial x^3 + 2*x + 1\n\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.alpha1/tmp/number_field.py\", line 3395:\n    sage: L               # optional\nExpected:\n    Number Field with defining polynomial t^2 + 1 over the Rational Field\nGot:\n    Number Field with defining polynomial $.1^2 + 1 over the Rational Field\n**********************************************************************\n```\n\nThis last Magma issue very much looks like the same problem as #4394.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4397\n\n",
     "created_at": "2008-10-30T17:03:16Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 3.1.4: optional doctest failure in sage/rings/number_field/number_field.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4397",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -83,15 +82,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4397
 
 ---
 
-archive/issue_comments_032355.json:
+archive/issue_comments_032292.json:
 ```json
 {
     "body": "Everything works fine after the fixes for #4393, #4394, #4395 are applied and the database_gap package is installed.  All but the last error listed above is fixed by installing the database_gap package. \n\nI can't replicate the last error you get above, even without #4393-4395 installed.\n\nI set the heading to \"with patch; needs review\", though there is no patch.",
     "created_at": "2008-10-30T20:57:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4397#issuecomment-32355",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4397#issuecomment-32292",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +104,15 @@ I set the heading to "with patch; needs review", though there is no patch.
 
 ---
 
-archive/issue_comments_032356.json:
+archive/issue_comments_032293.json:
 ```json
 {
     "body": "\n```\nteragon:number_field wstein$ sage -i database_gap-4.4.10\n...\nteragon:number_field wstein$ sage -t --optional --long number_field.py \nsage -t --optional --long devel/sage-bugday/sage/rings/number_field/number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [26.2 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 26.2 seconds\nteragon:number_field wstein$ \n```\n",
     "created_at": "2008-10-30T20:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4397#issuecomment-32356",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4397#issuecomment-32293",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -139,15 +138,15 @@ teragon:number_field wstein$
 
 ---
 
-archive/issue_comments_032357.json:
+archive/issue_comments_032294.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-10-30T23:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4397#issuecomment-32357",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4397#issuecomment-32294",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -157,15 +156,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_032358.json:
+archive/issue_comments_032295.json:
 ```json
 {
     "body": "I think the solution here are the two extcode patches that were missing from #2171. With those two patches applied and the database_gap.spkg installed I get\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.3.final$ ./sage -t -long -optional devel/sage/sage/rings/number_field/number_field.py\nsage -t -long -optional devel/sage/sage/rings/number_field/number_field.py\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n\n\t [45.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 45.4 seconds\n```\n\nHence: Invalid, sorry for the noise.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-30T23:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4397#issuecomment-32358",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4397#issuecomment-32295",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

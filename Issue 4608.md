@@ -6,15 +6,14 @@ archive/issues_004608.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThis works:\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: \n```\n\nBut this method does not work for any of the other associated lattices.\n\n```\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.coweight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\nsage: R.root_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'RootSpace' object has no attribute 'positive_roots'\nsage: R.weight_lattice().roots()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n...\nAttributeError: 'WeightSpace' object has no attribute 'positive_roots'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4608\n\n",
     "created_at": "2008-11-25T00:33:55Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "roots method broken for root system lattices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4608",
-    "user": "@saliola"
+    "user": "https://github.com/saliola"
 }
 ```
 Assignee: @mwhansen
@@ -69,15 +68,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4608
 
 ---
 
-archive/issue_comments_034589.json:
+archive/issue_comments_034522.json:
 ```json
 {
     "body": "This ticket should be closed. The issues is now fixed:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n[alphacheck[1], alphacheck[2], alphacheck[1] + alphacheck[2], -alphacheck[1], -alphacheck[2], -alphacheck[1] - alphacheck[2]]\nsage: R.coweight_lattice().roots()\n[-Lambdacheck[1] + 2*Lambdacheck[2], Lambdacheck[1] + Lambdacheck[2], 2*Lambdacheck[1] - Lambdacheck[2], Lambdacheck[1] - 2*Lambdacheck[2], -Lambdacheck[1] - Lambdacheck[2], -2*Lambdacheck[1] + Lambdacheck[2]]\nsage: R.root_lattice().roots()\n[alpha[2], alpha[1], alpha[1] + alpha[2], -alpha[2], -alpha[1], -alpha[1] - alpha[2]]\nsage: R.weight_lattice().roots()\n[-Lambda[1] + 2*Lambda[2], Lambda[1] + Lambda[2], 2*Lambda[1] - Lambda[2], Lambda[1] - 2*Lambda[2], -Lambda[1] - Lambda[2], -2*Lambda[1] + Lambda[2]]\n```\n\n| Sage Version 4.3.4, Release Date: 2010-03-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nFlorent",
     "created_at": "2010-04-16T10:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34589",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34522",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -106,15 +105,15 @@ Florent
 
 ---
 
-archive/issue_comments_034590.json:
+archive/issue_comments_034523.json:
 ```json
 {
     "body": "Changing assignee from @mwhansen to @hivert.",
     "created_at": "2010-04-16T10:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34590",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34523",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -124,15 +123,15 @@ Changing assignee from @mwhansen to @hivert.
 
 ---
 
-archive/issue_comments_034591.json:
+archive/issue_comments_034524.json:
 ```json
 {
     "body": "It works now:\n\n```sh\n[mvngu@sage graphs]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R = RootSystem(['A',2])\nsage: R.ambient_lattice()\nAmbient lattice of the Root system of type ['A', 2]\nsage: R.ambient_lattice().roots()\n[(1, -1, 0), (1, 0, -1), (0, 1, -1), (-1, 1, 0), (-1, 0, 1), (0, -1, 1)]\nsage: R = RootSystem(['A',2])\nsage: R.coroot_lattice().roots()\n[alphacheck[1], alphacheck[2], alphacheck[1] + alphacheck[2], -alphacheck[1], -alphacheck[2], -alphacheck[1] - alphacheck[2]]\nsage: R.coweight_lattice().roots()\n[-Lambdacheck[1] + 2*Lambdacheck[2], Lambdacheck[1] + Lambdacheck[2], 2*Lambdacheck[1] - Lambdacheck[2], Lambdacheck[1] - 2*Lambdacheck[2], -Lambdacheck[1] - Lambdacheck[2], -2*Lambdacheck[1] + Lambdacheck[2]]\nsage: R.root_lattice().roots()\n[alpha[2], alpha[1], alpha[1] + alpha[2], -alpha[2], -alpha[1], -alpha[1] - alpha[2]]\nsage: \nsage: R.weight_lattice().roots()\n[-Lambda[1] + 2*Lambda[2], Lambda[1] + Lambda[2], 2*Lambda[1] - Lambda[2], Lambda[1] - 2*Lambda[2], -Lambda[1] - Lambda[2], -2*Lambda[1] + Lambda[2]]\n```\n",
     "created_at": "2010-04-30T16:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34591",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34524",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -164,15 +163,15 @@ sage: R.weight_lattice().roots()
 
 ---
 
-archive/issue_comments_034592.json:
+archive/issue_comments_034525.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-30T16:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34592",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34525",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -182,15 +181,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_034593.json:
+archive/issue_comments_034526.json:
 ```json
 {
     "body": "Close as fixed by #4326:\n\n```\n09:22 < hivert> mvngu: this was fixed by #4326: Root systems: refactoring and \n                improvements\n09:23 < hivert> And some similar doctests are performed. So I don't think more \n                work is need on this one. \n09:24 < hivert> I should have guessed ! #4326 is a huge patch with no less than \n                6 authors :-)\n09:24 < hivert> Please close the ticket.\n```\n",
     "created_at": "2010-04-30T16:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4608",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34593",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/4608#issuecomment-34526",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_001719.json:
     "body": "Assignee: tba\n\n\n```\nI've managed to solve the problem: The package\ntexlive-cyrillic (in Debian/Ubuntu) is needed to build the Sage\ndocumentation.\n\nPablo\n\nEl Tuesday 01 January 2008 21:25:35 Pablo De Napoli escribi\u00f3:\n- Show quoted text -\n> When building Sage documentation\n> (make in devel/doc), I've got a strange message\n> (I quote below the output)\n>\n> <output>\n>\n> TEXINPUTS=/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/commontex\n>: python\n> /media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/tools/mkhowto\n> --html --about html/stdabout.dat --iconserver ../icons --favicon\n> ../icons/pyfav.png --address \"See <i><a href=\\\"about.html\\\">About this\n> document...</a></i> for information on suggesting changes.\" --up-link\n> ../index.html --up-title \"SAGE Documentation Index\" --global-module-index\n> \"../modindex.html\" --dvips-safe --dir html/ref ref/ref.tex\n> +++\n> TEXINPUTS=/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/ref:/medi\n>a/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/commontex:/media/hda2/pab\n>lo.new_home/sage/sage-2.9/devel/doc-main/paper-letter:/media/hda2/pablo.new_\n>home/sage/sage-2.9/devel/doc-main/texinputs: +++ latex ref\n> *** Session transcript and error messages are\n> in\n> /media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/html/ref/ref.how.\n> *** Exited with status 1.\n> The relevant lines from the transcript are:\n> ------------------------------------------------------------------------\n> +++ latex ref\n> This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6)\n>  %&-line parsing enabled.\n> entering extended mode\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/ref/ref.tex\n> LaTeX2e <2005/12/01>\n> Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang,\n> noh\n> yphenation, spanish, catalan, galician, spanish, catalan, galician, loaded.\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/texinputs/manual.c\n>ls Document Class: manual 1998/03/03 Document class (Python manual)\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/texinputs/pypaper.\n>sty)\n>\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/texinputs/fancybox\n>.sty Style option: `fancybox' v1.3 <2000/09/19> (tvz)\n> ) (/usr/share/texmf-texlive/tex/latex/base/report.cls\n> Document Class: report 2005/09/16 v1.4f Standard LaTeX document class\n> (/usr/share/texmf-texlive/tex/latex/base/size12.clo))\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/texinputs/fancyhdr\n>.sty )\n> Using fancier footers than usual.\n>\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/texinputs/fncychap\n>.sty )\n> Using fancy chapter headings.\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/texinputs/python.s\n>ty (/usr/share/texmf-texlive/tex/latex/tools/longtable.sty)\n> (/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty)\n> (/usr/share/texmf-texlive/tex/latex/graphics/color.sty\n> (/etc/texmf/tex/latex/config/color.cfg)\n> (/usr/share/texmf-texlive/tex/latex/graphics/dvips.def)\n> (/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def))))\n> (/usr/share/texmf-texlive/tex/latex/base/textcomp.sty\n> (/usr/share/texmf-texlive/tex/latex/base/ts1enc.def))\n> (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty\n> For additional information on amsmath, use the `?' option.\n> (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty\n> (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty))\n> (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty)\n> (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty))\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/commontex/macros.t\n>ex (/usr/share/texmf-texlive/tex/latex/tools/xspace.sty))\n> (/media/hda2/pablo.new_home/sage/sage-2.9/devel/doc-main/commontex/boilerpl\n>ate. tex\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1719\n\n",
     "created_at": "2008-01-08T08:22:53Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "problems building documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1719",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -111,15 +110,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1719
 
 ---
 
-archive/issue_comments_010894.json:
+archive/issue_comments_010867.json:
 ```json
 {
     "body": "Oh, the solution should probably just to add this to a README.txt file\netc. under hte devel/doc directory.  Trivial to do..",
     "created_at": "2008-01-08T08:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10894",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10867",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -130,15 +129,15 @@ etc. under hte devel/doc directory.  Trivial to do..
 
 ---
 
-archive/issue_comments_010895.json:
+archive/issue_comments_010868.json:
 ```json
 {
     "body": "Apply to the doc repository",
     "created_at": "2008-08-13T14:55:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10895",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10868",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -148,15 +147,15 @@ Apply to the doc repository
 
 ---
 
-archive/issue_comments_010896.json:
+archive/issue_comments_010869.json:
 ```json
 {
     "body": "Attachment [cyrillic-doc.patch](tarball://root/attachments/some-uuid/ticket1719/cyrillic-doc.patch) by @jasongrout created at 2008-08-13 14:56:20\n\nBoy, that was easy.  Adding the appropriate package took care of at least this error for me on Ubuntu Hardy.",
     "created_at": "2008-08-13T14:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10896",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10869",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -168,15 +167,15 @@ Boy, that was easy.  Adding the appropriate package took care of at least this e
 
 ---
 
-archive/issue_comments_010897.json:
+archive/issue_comments_010870.json:
 ```json
 {
     "body": "Looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-15T06:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10897",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10870",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -190,15 +189,15 @@ Michael
 
 ---
 
-archive/issue_comments_010898.json:
+archive/issue_comments_010871.json:
 ```json
 {
     "body": "Merged in Sage 3.1.rc0",
     "created_at": "2008-08-15T06:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10898",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10871",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -208,15 +207,15 @@ Merged in Sage 3.1.rc0
 
 ---
 
-archive/issue_comments_010899.json:
+archive/issue_comments_010872.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-15T06:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10899",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1719#issuecomment-10872",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

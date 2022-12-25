@@ -6,7 +6,7 @@ archive/issues_001639.json:
     "body": "Assignee: tba\n\nHow works completion?\n\n\n\n```\nP.<x> = PolynomialRing(QQ); P.completion?\n```\n\n\n\ntells me\n\n\n```\nFile:        /opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py\nType:        <type 'instancemethod'>\nDefinition:  P.completion(p, prec, extras)\nDocstring: \nx.__init__(...) initializes x; see x.__class__.__doc__ for signature\n```\n\n\n\nwhat's the p and examples are missing...\n\nIssue created by migration from https://trac.sagemath.org/ticket/1639\n\n",
     "created_at": "2007-12-30T13:35:00Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001639.json:
     "title": "missing documentation P.completion()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1639",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: tba
@@ -52,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1639
 
 ---
 
-archive/issue_comments_010418.json:
+archive/issue_comments_010391.json:
 ```json
 {
     "body": "Changing assignee from tba to failure.",
     "created_at": "2008-02-03T17:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10418",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10391",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -70,15 +70,15 @@ Changing assignee from tba to failure.
 
 ---
 
-archive/issue_comments_010419.json:
+archive/issue_comments_010392.json:
 ```json
 {
     "body": "Changing component from documentation to doctest.",
     "created_at": "2008-02-03T17:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10419",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10392",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -88,15 +88,15 @@ Changing component from documentation to doctest.
 
 ---
 
-archive/issue_comments_010420.json:
+archive/issue_comments_010393.json:
 ```json
 {
     "body": "Attachment [8316.patch](tarball://root/attachments/some-uuid/ticket1639/8316.patch) by @JohnCremona created at 2008-02-17 22:43:40\n\nadds docstring and examples",
     "created_at": "2008-02-17T22:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10420",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10393",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -108,15 +108,15 @@ adds docstring and examples
 
 ---
 
-archive/issue_comments_010421.json:
+archive/issue_comments_010394.json:
 ```json
 {
     "body": "The attached patch adds docstring and tests.\n\nThis ticket should perhaps be kept open in another form so that someone could implement the completion function for irreducuble polynomials other than just x.  I am happy to be the owner of that.",
     "created_at": "2008-02-17T22:45:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10421",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10394",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -128,15 +128,15 @@ This ticket should perhaps be kept open in another form so that someone could im
 
 ---
 
-archive/issue_comments_010422.json:
+archive/issue_comments_010395.json:
 ```json
 {
     "body": "Applies to 2.10.3.alpha0 and passes tests for me.",
     "created_at": "2008-02-27T23:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10422",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10395",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -146,15 +146,15 @@ Applies to 2.10.3.alpha0 and passes tests for me.
 
 ---
 
-archive/issue_comments_010423.json:
+archive/issue_comments_010396.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-28T06:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10423",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10396",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -164,15 +164,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_010424.json:
+archive/issue_comments_010397.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc0",
     "created_at": "2008-02-28T06:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1639",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10424",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1639#issuecomment-10397",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

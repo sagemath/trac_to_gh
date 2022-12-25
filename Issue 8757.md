@@ -6,15 +6,14 @@ archive/issues_008757.json:
     "body": "Assignee: jason, was\n\nUsing a database engine will be much faster, hopefully lessening the speed issues we have.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8757\n\n",
     "created_at": "2010-04-24T22:42:58Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use SQLAlchemy for storage in SageNB",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8757",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: jason, was
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8757
 
 ---
 
-archive/issue_comments_080124.json:
+archive/issue_comments_079994.json:
 ```json
 {
     "body": "Preliminary work. Schema in sagenb.notebook.models.models.",
     "created_at": "2010-04-24T22:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80124",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-79994",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -47,15 +46,15 @@ Preliminary work. Schema in sagenb.notebook.models.models.
 
 ---
 
-archive/issue_comments_080125.json:
+archive/issue_comments_079995.json:
 ```json
 {
     "body": "Attachment [trac_8757-sqlalchemy-storage-incomplete.patch](tarball://root/attachments/some-uuid/ticket8757/trac_8757-sqlalchemy-storage-incomplete.patch) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80125",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-79995",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -65,15 +64,15 @@ Attachment [trac_8757-sqlalchemy-storage-incomplete.patch](tarball://root/attach
 
 ---
 
-archive/issue_comments_080126.json:
+archive/issue_comments_079996.json:
 ```json
 {
     "body": "See also #15593.",
     "created_at": "2015-01-06T14:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80126",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-79996",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -83,15 +82,15 @@ See also #15593.
 
 ---
 
-archive/issue_comments_080127.json:
+archive/issue_comments_079997.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2015-01-06T14:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80127",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-79997",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -101,15 +100,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_080128.json:
+archive/issue_comments_079998.json:
 ```json
 {
     "body": "This is a noble goal, but currently very unlikely.",
     "created_at": "2015-01-06T14:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80128",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-79998",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -119,15 +118,15 @@ This is a noble goal, but currently very unlikely.
 
 ---
 
-archive/issue_comments_080129.json:
+archive/issue_comments_079999.json:
 ```json
 {
     "body": "See also #4268.",
     "created_at": "2015-01-06T14:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80129",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-79999",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -137,15 +136,15 @@ See also #4268.
 
 ---
 
-archive/issue_comments_080130.json:
+archive/issue_comments_080000.json:
 ```json
 {
     "body": "In fact, this is (essentially) #3456 which I closed before.",
     "created_at": "2015-01-06T14:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80130",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80000",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -155,15 +154,15 @@ In fact, this is (essentially) #3456 which I closed before.
 
 ---
 
-archive/issue_comments_080131.json:
+archive/issue_comments_080001.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2015-01-06T14:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80131",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80001",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -173,15 +172,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080132.json:
+archive/issue_comments_080002.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-01-06T14:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80132",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80002",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -191,15 +190,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080133.json:
+archive/issue_comments_080003.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-01-13T01:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8757",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80133",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8757#issuecomment-80003",
+    "user": "https://github.com/vbraun"
 }
 ```
 

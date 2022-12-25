@@ -6,15 +6,13 @@ archive/issues_004151.json:
     "body": "Assignee: @williamstein\n\nSee \n\nhttp://en.wikipedia.org/wiki/Dickman-de_Bruijn_function\n\nIssue created by migration from https://trac.sagemath.org/ticket/4151\n\n",
     "created_at": "2008-09-19T09:45:59Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] implementation of Dickman's function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4151",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4151
 
 ---
 
-archive/issue_comments_030140.json:
+archive/issue_comments_030079.json:
 ```json
 {
     "body": "Attachment [4151-dickmanrho.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho.patch) by @loefflerd created at 2008-09-21 09:53:42\n\nI tried installing this (under Sage 3.1.1) and now I get an error whenever I start up Sage:\n\n\n```\n/home/david/sage-3.1.1/local/lib/python2.5/site-packages/sage/functions/transcendental.py in <module>()\n    378\n    379\n--> 380 from sage.rings.polynomial.polynomial_real_mpfr_dense import PolynomialRealDense\n    381\n    382 class DickmanRhoComputer:\n\nImportError: /home/david/sage-3.1.1/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_real_mpfr_dense.so: undefined symbol: mpfr_set_z\n```\n\nI tried doing \"sage -ba\" and that didn't help. Does it only work if installed against one of the 3.1.2 alpha builds?\n\nDavid",
     "created_at": "2008-09-21T09:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30140",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30079",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -67,15 +65,15 @@ David
 
 ---
 
-archive/issue_comments_030141.json:
+archive/issue_comments_030080.json:
 ```json
 {
     "body": "I am pretty sure this is an issue with setup.py and OSX doing lazy symbols lookup at runtime:\n\n```\n   Extension('sage.rings.polynomial.polynomial_real_mpfr_dense', \n   sources = ['sage/rings/polynomial/polynomial_real_mpfr_dense.pyx']), \\ \n```\n\nChange that to \n\n```\n   Extension('sage.rings.polynomial.polynomial_real_mpfr_dense', \n   sources = ['sage/rings/polynomial/polynomial_real_mpfr_dense.pyx'], \n   libraries = ['mpfr', 'gmp']), \\\n```\n\nCheers,\n\nMichael",
     "created_at": "2008-09-21T10:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30141",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30080",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -102,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_030142.json:
+archive/issue_comments_030081.json:
 ```json
 {
     "body": "Attachment [4151-2.patch](tarball://root/attachments/some-uuid/ticket4151/4151-2.patch) by @loefflerd created at 2008-09-21 15:07:46",
     "created_at": "2008-09-21T15:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30142",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30081",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -120,15 +118,15 @@ Attachment [4151-2.patch](tarball://root/attachments/some-uuid/ticket4151/4151-2
 
 ---
 
-archive/issue_comments_030143.json:
+archive/issue_comments_030082.json:
 ```json
 {
     "body": "OK, I changed setup.py and ran sage -ba and everything worked. I'm puzzled by what you say about the build problems being an OS X issue: I'm running SuSE Linux 10.3.\n\nAll doctests pass fine, but there are a couple of funny things:\n\n- The definition states that rho(0) is 1 by definition, but your implementation gives\n\n``` \nsage: dickman_rho(0)\n0.000000000000000\n```\n\n\nI encountered this while trying to replicate the plot on the Wikipedia page, which fails nastily because log(rho(0)) is undefined.\n\nAlso, as discussed for Bessel functions at ticket #4102, it would be nice if the new dickman_rho function derived from calculus.PrimitiveFunction, as otherwise it doesn't play nicely with compositions etc:\n\n```\nsage: plot( log(dickman_rho(x)), (x, 0.0001, 15) )\n# fails\nsage: plot( lambda x: log(dickman_rho(x)), (0.001, 15))\n# works, but not very intuitive for new users\n```\n\n\nReading the code added to functions/transcendental.py, it's elegant and it obviously works, but it seems to throw away information in one case. Suppose I calculate dickman_rho(x) to d digits of precision. Then I want to know dickman_rho(y) to e digits, where y is slightly bigger than x (or, rather, bigger than 1.1x + 10) but e is *much* smaller than d. Then the code empties the cache and goes ahead and recalculates all of the power series from scratch, despite the fact that it already knows the first few terms to more than enough precision. I don't know if the added complication of getting around this problem is worth it; you'd have to remember not just current_prec() but the precision of the calculation of each series term. I guess in practice it's not something that's likely to be a problem.\n\nAlso, perhaps the instance variable self.f should be self._f, since it's very much for internal use. On a related note, perhaps it might be better to have a hidden function _compute_power_series, which avoids users having to know about this mysterious extra argument cache_ring, with a corresponding non-hidden function power_series() that takes only 2 arguments rather than 3. \n\nAnyway, I've uploaded a second patch which does the above attribute hiding, and returns 1 rather than 0 for rho(0); with these small changes I'd be more than happy to see this patch included, although I'm not sure my very limited Sage development experience gives me the authority to say this!\n\nI wonder if there are other parts of the existing Sage library that would benefit from using native MPFR polynomials, in place of Sage polynomials over the MPFR real field?",
     "created_at": "2008-09-21T15:12:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30143",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30082",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -168,15 +166,15 @@ I wonder if there are other parts of the existing Sage library that would benefi
 
 ---
 
-archive/issue_comments_030144.json:
+archive/issue_comments_030083.json:
 ```json
 {
     "body": "Replying to [comment:3 davidloeffler]:\n> OK, I changed setup.py and ran sage -ba and everything worked. I'm puzzled by what you say about the build problems being an OS X issue: I'm running SuSE Linux 10.3.\n\nMy point is that the extensions works on OSX, but nowhere else, due to the way the OSX linker handles missing symbols. On all platforms but OSX linking in mpfr and its dependency explicitly fixes the problem.\n\nI also changed the subject line to have the ticket get picked up by the standard reports.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-21T17:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30144",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30083",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -195,15 +193,15 @@ Michael
 
 ---
 
-archive/issue_comments_030145.json:
+archive/issue_comments_030084.json:
 ```json
 {
     "body": "Attachment [4151-dickmanrho3.patch](tarball://root/attachments/some-uuid/ticket4151/4151-dickmanrho3.patch) by @robertwb created at 2008-09-22 22:16:08\n\nThanks for your comments and improvements, I've attached a follow up patch. Nice catch about the value at 0. \n\nI agree with you that I could be saving some recalculation, but I don't think it's a common enough use case to justify the additional complexity. In fact, I throw away a lot as I go along--for example I don't want to cache 1000-bit 1000-term polynomials just in case one wants dickman_rho(10) to extremely high precision after computing dickman_rho(100).\n\nI've opened #4168 to use native mpfr polynomials elsewhere, figuring it'd involve changes very irrelevant to this ticket.",
     "created_at": "2008-09-22T22:16:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30145",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30084",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -219,15 +217,15 @@ I've opened #4168 to use native mpfr polynomials elsewhere, figuring it'd involv
 
 ---
 
-archive/issue_comments_030146.json:
+archive/issue_comments_030085.json:
 ```json
 {
     "body": "That looks nice; I'm no expert on how the symbolics interface is supposed to work but the dickman_rho function now seems to behave a lot like the exp function, which is presumably a good guide, and you can do things like\n\n```\nsage:((dickman_rho(x) - 0.0001).find_root(0,10)\n5.4478836002803135\n```\n\nwhich is nice.\n\nThe only problem I can see is that dickman_rho.approximate(1) returns a ZeroDivisionError, and dickman_rho.approximate(0.9) returns NaN. But I can't imagine any user being especially upset by this, as the docstring makes it clear that it's to be used for large values only.\n\nI'd be happy to see this merged.\n\nDavid",
     "created_at": "2008-09-23T11:43:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30146",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30085",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -250,15 +248,15 @@ David
 
 ---
 
-archive/issue_comments_030147.json:
+archive/issue_comments_030086.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-23T22:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30147",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -268,15 +266,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030148.json:
+archive/issue_comments_030087.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha1",
     "created_at": "2008-09-23T22:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30148",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4151#issuecomment-30087",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

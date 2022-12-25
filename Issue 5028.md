@@ -6,15 +6,13 @@ archive/issues_005028.json:
     "body": "Assignee: @seblabbe\n\nKeywords: point2d\n\n\n```\nsage: point2d?\n...\nDocstring:\n    \n        A point of size `pointsize' defined by point = (x,y).\n        Point takes either a single tuple of coordinates or a list of tuples.\n    \n        Type point.options to see all options.\n    \n        EXAMPLES:\n            ...\n\nsage: point.options\nTraceback (most recent call last):\n...\nAttributeError: 'function' object has no attribute 'options'\nsage: point2d.options\n{'alpha': 1, 'faceted': False, 'pointsize': 10, 'rgbcolor': (0, 0, 1)}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5028\n\n",
     "created_at": "2009-01-19T16:53:26Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "point2d? says point.options instead of point2d.options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5028",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: @seblabbe
@@ -52,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5028
 
 ---
 
-archive/issue_comments_038301.json:
+archive/issue_comments_038229.json:
 ```json
 {
     "body": "Attachment [point2d_doc_5028.patch](tarball://root/attachments/some-uuid/ticket5028/point2d_doc_5028.patch) by @seblabbe created at 2009-01-19 16:57:00",
     "created_at": "2009-01-19T16:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38301",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38229",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -70,15 +68,15 @@ Attachment [point2d_doc_5028.patch](tarball://root/attachments/some-uuid/ticket5
 
 ---
 
-archive/issue_comments_038302.json:
+archive/issue_comments_038230.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-01-20T21:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38302",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38230",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -88,15 +86,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_038303.json:
+archive/issue_comments_038231.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha1\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T09:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38303",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38231",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -110,15 +108,15 @@ Michael
 
 ---
 
-archive/issue_comments_038304.json:
+archive/issue_comments_038232.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-23T09:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5028",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38304",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5028#issuecomment-38232",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

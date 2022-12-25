@@ -6,15 +6,14 @@ archive/issues_003100.json:
     "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: CC RR CIF RIF symbolic\n\nThis might need to be split up, but here goes:\n\nThis is just wrong:\n\n```\nsage: exp(2*I*pi*75132146442745860257639161594828134642293652547987666191250)\n1\nsage: CIF(exp(2*I*pi*75132146442745860257639161594828134642293652547987666191250))\n[-1.0000000000000000000000000000000000000000000000 .. 1.0000000000000000000000000000000000000000000000] + [-1.0000000000000000000000000000000000000000000000 .. 1.0000000000000000000000000000000000000000000000]*I\n```\n\n\nThat prompted me to try:\n *\n\n```\nsage: CC(exp(2*I*pi*75132146442745860257639161594828134642293652547987666191250))\n---------------------------------------------------------------------------\n<class 'sage.libs.pari.gen.PariError'>    Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/rings/complex_field.py in __call__(self, x, im)\n    204 \n    205             try:\n--> 206                 return x._complex_mpfr_field_( self )\n    207             except AttributeError:\n    208                 pass\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _complex_mpfr_field_(self, field)\n   6007         f = self._operands[0]\n   6008         g = self._operands[1]\n-> 6009         x = f(g._complex_mpfr_field_(field))\n   6010         if isinstance(x, SymbolicExpression):\n   6011             if field.prec() <= 53:\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in __call__(self, x)\n   7625         if not isinstance(x, (Integer, Rational)):\n   7626             try:\n-> 7627                 return x.exp()\n   7628             except AttributeError:\n   7629                 pass\n\n/Users/ncalexan/complex_number.pyx in sage.rings.complex_number.ComplexNumber.exp()\n\n/Users/ncalexan/gen.pyx in sage.libs.pari.gen._pari_trap()\n\n<class 'sage.libs.pari.gen.PariError'>: precision too low (18)\n```\n\n\nAnd\n\n *\n\n```\nsage: RIF(exp(2*I*pi*75132146442745860257639161594828134642293652547987666191250))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/real_mpfi.pyx in sage.rings.real_mpfi.RealIntervalField.__call__()\n\n/Users/ncalexan/real_mpfi.pyx in sage.rings.real_mpfi.RealIntervalFieldElement.__init__()\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _mpfr_(self, field)\n   5986         f = self._operands[0]\n   5987         g = self._operands[1]\n-> 5988         x = f(g._mpfr_(field))\n   5989         if isinstance(x, SymbolicExpression):\n   5990             if field.prec() <= 53:\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _mpfr_(self, field)\n   4675             0.00000000000000000000000000000000000000000000000000000000000\n   4676         \"\"\"\n-> 4677         return self._convert(field)\n   4678 \n   4679     def _complex_mpfr_field_(self, field):\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _convert(self, typ)\n   4629                 raise\n   4630             else:\n-> 4631                 return typ(g)\n   4632         return self._operator(*fops)\n   4633         \n\n/Users/ncalexan/real_mpfi.pyx in sage.rings.real_mpfi.RealIntervalField.__call__()\n\n/Users/ncalexan/real_mpfi.pyx in sage.rings.real_mpfi.RealIntervalFieldElement.__init__()\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _mpfr_(self, field)\n   4675             0.00000000000000000000000000000000000000000000000000000000000\n   4676         \"\"\"\n-> 4677         return self._convert(field)\n   4678 \n   4679     def _complex_mpfr_field_(self, field):\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _convert(self, typ)\n   4623         \"\"\"\n   4624         try:\n-> 4625             fops = [typ(op) for op in self._operands]\n   4626         except TypeError:\n   4627             g = self.simplify()\n\n/Users/ncalexan/real_mpfi.pyx in sage.rings.real_mpfi.RealIntervalField.__call__()\n\n/Users/ncalexan/real_mpfi.pyx in sage.rings.real_mpfi.RealIntervalFieldElement.__init__()\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _mpfr_(self, field)\n   4675             0.00000000000000000000000000000000000000000000000000000000000\n   4676         \"\"\"\n-> 4677         return self._convert(field)\n   4678 \n   4679     def _complex_mpfr_field_(self, field):\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _convert(self, typ)\n   4623         \"\"\"\n   4624         try:\n-> 4625             fops = [typ(op) for op in self._operands]\n   4626         except TypeError:\n   4627             g = self.simplify()\n\n/Users/ncalexan/real_mpfi.pyx in sage.rings.real_mpfi.RealIntervalField.__call__()\n\n/Users/ncalexan/real_mpfi.pyx in sage.rings.real_mpfi.RealIntervalFieldElement.__init__()\n\n<type 'exceptions.TypeError'>: Unable to convert number to real interval.\n```\n\n\nAnd finally:\n\n *\n\n```\nsage: RR(exp(2*I*pi*75132146442745860257639161594828134642293652547987666191250))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/<ipython console> in <module>()\n\n/Users/ncalexan/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _mpfr_(self, field)\n   5986         f = self._operands[0]\n   5987         g = self._operands[1]\n-> 5988         x = f(g._mpfr_(field))\n   5989         if isinstance(x, SymbolicExpression):\n   5990             if field.prec() <= 53:\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _mpfr_(self, field)\n   4675             0.00000000000000000000000000000000000000000000000000000000000\n   4676         \"\"\"\n-> 4677         return self._convert(field)\n   4678 \n   4679     def _complex_mpfr_field_(self, field):\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _convert(self, typ)\n   4629                 raise\n   4630             else:\n-> 4631                 return typ(g)\n   4632         return self._operator(*fops)\n   4633         \n\n/Users/ncalexan/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _mpfr_(self, field)\n   4675             0.00000000000000000000000000000000000000000000000000000000000\n   4676         \"\"\"\n-> 4677         return self._convert(field)\n   4678 \n   4679     def _complex_mpfr_field_(self, field):\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _convert(self, typ)\n   4623         \"\"\"\n   4624         try:\n-> 4625             fops = [typ(op) for op in self._operands]\n   4626         except TypeError:\n   4627             g = self.simplify()\n\n/Users/ncalexan/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _mpfr_(self, field)\n   4675             0.00000000000000000000000000000000000000000000000000000000000\n   4676         \"\"\"\n-> 4677         return self._convert(field)\n   4678 \n   4679     def _complex_mpfr_field_(self, field):\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/calculus/calculus.py in _convert(self, typ)\n   4623         \"\"\"\n   4624         try:\n-> 4625             fops = [typ(op) for op in self._operands]\n   4626         except TypeError:\n   4627             g = self.simplify()\n\n/Users/ncalexan/real_mpfr.pyx in sage.rings.real_mpfr.RealField.__call__()\n\n/Users/ncalexan/sage-2.11/local/lib/python/site-packages/sage/functions/constants.py in _mpfr_(self, R)\n    854             TypeError\n    855         \"\"\"\n--> 856         raise TypeError\n    857 \n    858     def _real_rqdf_(self, R):\n\n<type 'exceptions.TypeError'>: \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3100\n\n",
     "created_at": "2008-05-03T23:02:13Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "coercion errors from SymbolicRing to various fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3100",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @malb
@@ -241,15 +240,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3100
 
 ---
 
-archive/issue_comments_021412.json:
+archive/issue_comments_021368.json:
 ```json
 {
     "body": "This is fixed by #5144:\n\n\n```\nsage: a = exp(2*I*pi*75132146442745860257639161594828134642293652547987666191250)\nsage: RR(a)\n1.00000000000000\nsage: CC(a)\n1.00000000000000\nsage: RIF(a)\n1\nsage: CIF(a)\n1\n```\n",
     "created_at": "2009-06-05T01:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3100#issuecomment-21412",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3100#issuecomment-21368",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -273,15 +272,15 @@ sage: CIF(a)
 
 ---
 
-archive/issue_comments_021413.json:
+archive/issue_comments_021369.json:
 ```json
 {
     "body": "Err, make that #6144 and #6194.",
     "created_at": "2009-06-05T02:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3100#issuecomment-21413",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3100#issuecomment-21369",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -291,15 +290,15 @@ Err, make that #6144 and #6194.
 
 ---
 
-archive/issue_comments_021414.json:
+archive/issue_comments_021370.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-05T02:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3100#issuecomment-21414",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3100#issuecomment-21370",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -309,15 +308,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021415.json:
+archive/issue_comments_021371.json:
 ```json
 {
     "body": "bad authors removed",
     "created_at": "2016-08-01T19:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3100#issuecomment-21415",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/3100#issuecomment-21371",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

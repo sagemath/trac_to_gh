@@ -6,15 +6,14 @@ archive/issues_001065.json:
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nRight after a **sage -sdist** the following happens. **A sage -b** rebuilds libcsage.so and everything works fine again (well, at least Sage starts :))\n\n```\n./sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py\nsage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.pyTraceback (most recent call last):\n  File \".doctest_permgroup_element.py\", line 1, in <module>\n    from sage.all_cmdline import *;\n  File \"/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/lib/python2.5/site-packages/sage/all_cmdline.py\", line 14, in <module>\n    from sage.all import *\n  File \"/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/lib/python2.5/site-packages/sage/all.py\", line 45, in <module>\n    from sage.rings.memory import pmem_malloc\nImportError: libcsage.so: cannot open shared object file: No such file or directory\n\n         [0.1 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py\nTotal time for all tests: 0.1 seconds\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$ ./sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified SAGE library files.\n\n\nInstalling c_lib\ngcc -o src/convert.os -c -O2 -g -fPIC -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5 -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/NTL -Iinclude src/convert.c\ngcc -o src/interrupt.os -c -O2 -g -fPIC -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5 -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/NTL -Iinclude src/interrupt.c\ngcc -o src/mpn_pylong.os -c -O2 -g -fPIC -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5 -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/NTL -Iinclude src/mpn_pylong.c\ngcc -o src/mpz_pylong.os -c -O2 -g -fPIC -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5 -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/NTL -Iinclude src/mpz_pylong.c\ngcc -o src/stdsage.os -c -O2 -g -fPIC -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5 -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/NTL -Iinclude src/stdsage.c\ngcc -o src/gmp_globals.os -c -O2 -g -fPIC -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5 -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/NTL -Iinclude src/gmp_globals.c\ng++ -o src/ZZ_pylong.os -c -fPIC -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5 -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/NTL -Iinclude src/ZZ_pylong.cpp\ng++ -o src/ntl_wrap.os -c -fPIC -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5 -I/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/NTL -Iinclude src/ntl_wrap.cpp\nIn file included from /tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5/Python.h:8,\n                 from include/ntl_wrap.h:28,\n                 from src/ntl_wrap.cpp:5:\n/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/include/python2.5/pyconfig.h:932:1: warning: \"_POSIX_C_SOURCE\" redefined\nIn file included from /usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../include/c++/4.1.2/x86_64-linux-gnu/bits/os_defines.h:39,\n                 from /usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../include/c++/4.1.2/x86_64-linux-gnu/bits/c++config.h:35,\n                 from /usr/lib/gcc/x86_64-linux-gnu/4.1.2/../../../../include/c++/4.1.2/iostream:43,\n                 from src/ntl_wrap.cpp:1:\n/usr/include/features.h:150:1: warning: this is the location of the previous definition\ng++ -o libcsage.so -shared src/convert.os src/interrupt.os src/mpn_pylong.os src/mpz_pylong.os src/stdsage.os src/gmp_globals.os src/ZZ_pylong.os src/ntl_wrap.os -L/tmp/Work-mabshoff/sage-2.8.11.alpha0/local/lib -lntl -lgmp -lpari\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nrunning build_scripts\nrunning install_lib\nrunning install_scripts\nchanging mode of /tmp/Work-mabshoff/sage-2.8.11.alpha0/local/bin/dsage_server.py to 755\nchanging mode of /tmp/Work-mabshoff/sage-2.8.11.alpha0/local/bin/dsage_worker.py to 755\nchanging mode of /tmp/Work-mabshoff/sage-2.8.11.alpha0/local/bin/dsage_setup.py to 755\nrunning install_egg_info\nRemoving /tmp/Work-mabshoff/sage-2.8.11.alpha0/local/lib/python2.5/site-packages/sage-0.0.0-py2.5.egg-info\nWriting /tmp/Work-mabshoff/sage-2.8.11.alpha0/local/lib/python2.5/site-packages/sage-0.0.0-py2.5.egg-info\n\nreal    0m13.298s\nuser    0m8.865s\nsys     0m2.356s\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$ ./sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py\nsage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py\n**********************************************************************\nFile \"permgroup_element.py\", line 323:\n    sage: g([0,1,2,3,4])\nExpected:\n    [1, 2, 3, 0, 5, 4]\nGot:\n    [1, 2, 0, 4, 3]\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_7\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_permgroup_element.py\n         [3.0 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage-main/sage/groups/perm_gps/permgroup_element.py\nTotal time for all tests: 3.0 seconds\nmabshoff@sage:/tmp/Work-mabshoff/sage-2.8.11.alpha0$                    \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1065\n\n",
     "created_at": "2007-11-02T04:12:58Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage -sdist nukes libcsage.so",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1065",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -124,15 +123,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1065
 
 ---
 
-archive/issue_comments_006463.json:
+archive/issue_comments_006443.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-06-13T12:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1065",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1065#issuecomment-6463",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1065#issuecomment-6443",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -142,15 +141,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_006464.json:
+archive/issue_comments_006444.json:
 ```json
 {
     "body": "Works for me.",
     "created_at": "2013-06-13T12:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1065",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1065#issuecomment-6464",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1065#issuecomment-6444",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -160,15 +159,15 @@ Works for me.
 
 ---
 
-archive/issue_comments_006465.json:
+archive/issue_comments_006445.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-06-13T12:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1065",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1065#issuecomment-6465",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1065#issuecomment-6445",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -178,15 +177,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_006466.json:
+archive/issue_comments_006446.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2013-06-19T12:20:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1065",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1065#issuecomment-6466",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1065#issuecomment-6446",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

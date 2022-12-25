@@ -6,15 +6,14 @@ archive/issues_005191.json:
     "body": "Assignee: cwitty\n\nCC:  @zimmermann6\n\nThis is a followup to #5023: Paul Zimmermann reports:\n\n```\nsage: a=tanh(2)\nsage: a._algebraic_(QQbar)\n...\nTypeError: Unable to coerce e (<class 'sage.functions.constants.E'>) to Rational\n```\n\n\nCarl: If this is invalid just close the ticker as invalid.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5191\n\n",
     "created_at": "2009-02-06T00:20:10Z",
     "labels": [
-        "coercion",
-        "major",
+        "component: coercion",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "coercion issue of tanh(2) into QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5191",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: cwitty
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5191
 
 ---
 
-archive/issue_comments_039802.json:
+archive/issue_comments_039724.json:
 ```json
 {
     "body": "QQbar(sinh(2)) fails with the above error message; I believe that sinh(2) is not algebraic, so the conversion must fail, although I suppose the error message could be nicer.\n\nHowever, QQbar(sinh(log(2))) correctly returns 3/4, so the code does work.  Therefore, I'm marking this invalid.",
     "created_at": "2009-02-06T03:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5191",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5191#issuecomment-39802",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5191#issuecomment-39724",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -65,15 +64,15 @@ However, QQbar(sinh(log(2))) correctly returns 3/4, so the code does work.  Ther
 
 ---
 
-archive/issue_comments_039803.json:
+archive/issue_comments_039725.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-02-06T03:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5191",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5191#issuecomment-39803",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5191#issuecomment-39725",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

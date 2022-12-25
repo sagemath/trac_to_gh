@@ -6,15 +6,14 @@ archive/issues_002905.json:
     "body": "Assignee: @garyfurnish\n\nThis patch moves some things to cpdef and fixes various slowdowns.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2905\n\n",
     "created_at": "2008-04-13T06:02:46Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Various speedups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2905",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2905
 
 ---
 
-archive/issue_comments_020024.json:
+archive/issue_comments_019983.json:
 ```json
 {
     "body": "Attachment [trac_2905.patch](tarball://root/attachments/some-uuid/ticket2905/trac_2905.patch) by @garyfurnish created at 2008-04-13 06:05:50",
     "created_at": "2008-04-13T06:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20024",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-19983",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_2905.patch](tarball://root/attachments/some-uuid/ticket2905/tra
 
 ---
 
-archive/issue_comments_020025.json:
+archive/issue_comments_019984.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-04-13T06:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20025",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-19984",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_020026.json:
+archive/issue_comments_019985.json:
 ```json
 {
     "body": "\n```\n<gfurnish> I changed from __domain to _domain because homspace uses MI so there is no easy way to cython it, but that makes it easy to grab the attribute directly for places in coercion where speed matters\n<mabshoff> ok\n<gfurnish> the other change was -O2 spyx's\n<mabshoff> yeah, saw that\n<gfurnish> and finally I moved to a try->except instead of a has_key in coercion in parent.pyx\n<mabshoff> :)\n<gfurnish> maybe I should just paste those three sentences into the description\n```\n",
     "created_at": "2008-04-13T06:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20026",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-19985",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -93,15 +92,15 @@ archive/issue_comments_020026.json:
 
 ---
 
-archive/issue_comments_020027.json:
+archive/issue_comments_019986.json:
 ```json
 {
     "body": "Patch passes doctest on Sage 3.0.alpha4. Somebody else needs to take a closer look and figure out of all of this is a good idea.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-13T07:40:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20027",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-19986",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -115,15 +114,15 @@ Michael
 
 ---
 
-archive/issue_comments_020028.json:
+archive/issue_comments_019987.json:
 ```json
 {
     "body": "It all looks good to me.  testall passes (on 3.0 alpha3), the new code in parent.pyx is equivalent and plausibly faster (although I didn't benchmark it), and reducing optimization on .spyx files from -O3 to -O2 is good.",
     "created_at": "2008-04-13T17:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20028",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-19987",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -133,15 +132,15 @@ It all looks good to me.  testall passes (on 3.0 alpha3), the new code in parent
 
 ---
 
-archive/issue_comments_020029.json:
+archive/issue_comments_019988.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-13T18:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20029",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-19988",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -151,15 +150,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020030.json:
+archive/issue_comments_019989.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha5",
     "created_at": "2008-04-13T18:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-20030",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2905#issuecomment-19989",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_008326.json:
     "body": "Assignee: sage-combinat\n\nSphinx warnings from building the HTML reference manual include: \n\n```\ncombinat/posets/poset_examples.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.poset_examples.random: arg is not a module, class, method, function, traceback, frame, or code object\ncombinat/posets/posets.rst:6: (WARNING/2) error while formatting signature for sage.combinat.posets.posets.random: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8326\n\n",
     "created_at": "2010-02-22T06:06:02Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008326.json:
     "title": "Sphinx warnings about posets and poset_example",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8326",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: sage-combinat
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8326
 
 ---
 
-archive/issue_comments_073920.json:
+archive/issue_comments_073796.json:
 ```json
 {
     "body": "Work around Sphinx poset warnings.  sage repo.",
     "created_at": "2010-02-22T06:07:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73920",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73796",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -53,15 +53,15 @@ Work around Sphinx poset warnings.  sage repo.
 
 ---
 
-archive/issue_comments_073921.json:
+archive/issue_comments_073797.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-22T06:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73921",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73797",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -71,15 +71,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_073922.json:
+archive/issue_comments_073798.json:
 ```json
 {
     "body": "Changing priority from minor to trivial.",
     "created_at": "2010-02-22T06:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73922",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73798",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -89,15 +89,15 @@ Changing priority from minor to trivial.
 
 ---
 
-archive/issue_comments_073923.json:
+archive/issue_comments_073799.json:
 ```json
 {
     "body": "Attachment [trac_8326-sphinx_posets.patch](tarball://root/attachments/some-uuid/ticket8326/trac_8326-sphinx_posets.patch) by @qed777 created at 2010-02-22 06:12:19\n\nThe patch appears to work, but feel free to reject it.",
     "created_at": "2010-02-22T06:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73923",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73799",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -109,15 +109,15 @@ The patch appears to work, but feel free to reject it.
 
 ---
 
-archive/issue_comments_073924.json:
+archive/issue_comments_073800.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-24T23:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73924",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73800",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -127,15 +127,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_073925.json:
+archive/issue_comments_073801.json:
 ```json
 {
     "body": "Looks okay to me: the patch is pretty innocuous, and it fixes the docbuild problem.",
     "created_at": "2010-02-24T23:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73925",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73801",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -145,15 +145,15 @@ Looks okay to me: the patch is pretty innocuous, and it fixes the docbuild probl
 
 ---
 
-archive/issue_comments_073926.json:
+archive/issue_comments_073802.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-02T21:47:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8326",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73926",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8326#issuecomment-73802",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

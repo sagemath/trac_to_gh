@@ -6,15 +6,14 @@ archive/issues_007930.json:
     "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona @williamstein @robertwb\n\nThe following code\n\n\n```\nE = EllipticCurve('99d1')\n\nR.<X> = QQ[]\nK.<t> = NumberField(X^3 + X^2 - 2*X - 1)\nL.<s> = NumberField(X^3 + X^2 - 36*X - 4)\n\nEK = E.base_extend(K)\ntoK = EK.torsion_order()\nda = EK.local_data()\n\nEL = E.base_extend(L)\nda = EL.local_data()\n```\n\n\nproduces a `TypeError`. Having played around with this for hours, I believe that all lines in the above code are necessary to produce the bug. Especially both the torsion and local data computations over another field. I have no idea whatsoever of where to look for the error.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7930\n\n",
     "created_at": "2010-01-14T15:00:57Z",
     "labels": [
-        "elliptic curves",
-        "major",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "strange bug for elliptic curves over number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7930",
-    "user": "@categorie"
+    "user": "https://github.com/categorie"
 }
 ```
 Assignee: @JohnCremona
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7930
 
 ---
 
-archive/issue_comments_069036.json:
+archive/issue_comments_068917.json:
 ```json
 {
     "body": "More precisely it produces\n\n```\nTraceback (most recent call last):    \n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpJwKYhV/___code___.py\", line 23, in <module>\n    da = EK.local_data()\n  File \"\", line 1, in <module>\n    \n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 437, in local_data\n    return [self._get_local_data(pr, proof) for pr in primes]\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_number_field.py\", line 487, in _get_local_data\n    self._local_data[P, proof] = EllipticCurveLocalData(self, P, proof)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 159, in __init__\n    self._Emin, ch, self._val_disc, self._fp, self._KS, self._cp, self._split = self._tate(proof)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 704, in _tate\n    cp = 1 + _pcubicroots(b, c, d)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_local_data.py\", line 536, in _pcubicroots\n    return sum([rr[1] for rr in PolynomialRing(F, 'x')([d, c, b, 1]).roots()],0)\n  File \"parent.pyx\", line 538, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4956)\n  File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3109)\n  File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps._call_ (sage/structure/coerce_maps.c:3000)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring.py\", line 312, in _element_constructor_\n    return C(self, x, check, is_gen, construct=construct, **kwds)\n  File \"/usr/local/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element_generic.py\", line 604, in __init__\n    Polynomial_generic_dense.__init__(self, parent, x, check, is_gen)\n  File \"polynomial_element.pyx\", line 5111, in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__init__ (sage/rings/polynomial/polynomial_element.c:34951)\n  File \"residue_field.pyx\", line 975, in sage.rings.residue_field.ResidueFiniteField_givaro.__call__ (sage/rings/residue_field.c:9062)\nTypeError\n```\n",
     "created_at": "2010-01-14T15:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69036",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68917",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -100,15 +99,15 @@ TypeError
 
 ---
 
-archive/issue_comments_069037.json:
+archive/issue_comments_068918.json:
 ```json
 {
     "body": "In the middle of Tate's algorithm it needs to know how many roots a cubic mod P has, where P is the prime, and in doing this it constructs the polynomial ring over the residue field on the fly.  These poly rings are constructed in such a way that for each field the rings is only constructed once (I think).  the errors a re something which goes wrong in that construction.\n\nI am CC'ing robertwb who I hope will be able to help!",
     "created_at": "2010-01-14T16:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69037",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68918",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -120,15 +119,15 @@ I am CC'ing robertwb who I hope will be able to help!
 
 ---
 
-archive/issue_comments_069038.json:
+archive/issue_comments_068919.json:
 ```json
 {
     "body": "No time to look t it now, but I've added this to my bug hit list for this upcoming week.",
     "created_at": "2010-01-14T18:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69038",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68919",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -138,15 +137,15 @@ No time to look t it now, but I've added this to my bug hit list for this upcomi
 
 ---
 
-archive/issue_comments_069039.json:
+archive/issue_comments_068920.json:
 ```json
 {
     "body": "Note that in #7935 we have added a #random to line 1026 in ell_number_field.py, because the output of the minimal_global_model produced two differnt answers. Maybe this is linked to this bug and the #random can be removed once the issue here is fixed.\n\n\n  This is very strange. For that curve E2, I sometimes get\n  {{{\n  Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (12289755603565800754*a-75759141535687466985)*x + (51556320144761417221790307379*a-317814501841918807353201512829) over Number Field in a with defining polynomial x^2 - 38\n  }}}\n  but sometimes I get \n  {{{\n  Elliptic Curve defined by y^2 + a*x*y + (a+1)*y = x^3 + (a+1)*x^2 + (368258520200522046806318444*a-2270097978636731786720859345)*x + (8456608930173478039472018047583706316424*a-52130038506793883217874390501829588391299) over Number Field in a with defining polynomial x^2 - 38\n  }}}",
     "created_at": "2010-01-24T15:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69039",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68920",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -166,15 +165,15 @@ Note that in #7935 we have added a #random to line 1026 in ell_number_field.py, 
 
 ---
 
-archive/issue_comments_069040.json:
+archive/issue_comments_068921.json:
 ```json
 {
     "body": "Note that E has bad reductions at 3 and 11, which are both inert in both those cubic fields.  That means that when we are finding the local data for each field, we construct the residue fields which are of order `3^3` and `11^3` in each case, but the generating polynomial (called the \"modulus\" in the finite field constructors) will be different, namely `X^3 + X^2 - 2*X - 1` and then `X^3 + X^2 - 36*X - 4`.\n\nThis might help debugging the session will have more than one field of the same order, with different defining polynomials.",
     "created_at": "2010-01-24T16:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69040",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68921",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -186,15 +185,15 @@ This might help debugging the session will have more than one field of the same 
 
 ---
 
-archive/issue_comments_069041.json:
+archive/issue_comments_068922.json:
 ```json
 {
     "body": "Any news on this ?",
     "created_at": "2010-03-11T12:56:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69041",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68922",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -204,15 +203,15 @@ Any news on this ?
 
 ---
 
-archive/issue_comments_069042.json:
+archive/issue_comments_068923.json:
 ```json
 {
     "body": "This problem seems to have gone away now -- in 4.4.4 the above script works fine.  Can we close the ticket?",
     "created_at": "2010-06-24T15:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69042",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68923",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -222,15 +221,15 @@ This problem seems to have gone away now -- in 4.4.4 the above script works fine
 
 ---
 
-archive/issue_comments_069043.json:
+archive/issue_comments_068924.json:
 ```json
 {
     "body": "Almost. Here is a patch that adds the example as a doctest (in a _function so as not to appear in the documentation) to make sure that the bug does not appear again in the future.\nBecause we are not certain what caused the bug in the first place.",
     "created_at": "2010-06-24T17:04:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69043",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68924",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -241,15 +240,15 @@ Because we are not certain what caused the bug in the first place.
 
 ---
 
-archive/issue_comments_069044.json:
+archive/issue_comments_068925.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-24T17:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69044",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68925",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -259,15 +258,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069045.json:
+archive/issue_comments_068926.json:
 ```json
 {
     "body": "exported against 4.4.4.alpha0",
     "created_at": "2010-06-24T17:14:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69045",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68926",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -277,15 +276,15 @@ exported against 4.4.4.alpha0
 
 ---
 
-archive/issue_comments_069046.json:
+archive/issue_comments_068927.json:
 ```json
 {
     "body": "Attachment [trac_7930.patch](tarball://root/attachments/some-uuid/ticket7930/trac_7930.patch) by @JohnCremona created at 2010-06-24 20:37:21\n\nLooks good & tests fine on 4.4.4.alpha0.",
     "created_at": "2010-06-24T20:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69046",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68927",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -297,15 +296,15 @@ Looks good & tests fine on 4.4.4.alpha0.
 
 ---
 
-archive/issue_comments_069047.json:
+archive/issue_comments_068928.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-24T20:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69047",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68928",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -315,15 +314,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069048.json:
+archive/issue_comments_068929.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T07:12:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7930",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-69048",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7930#issuecomment-68929",
+    "user": "https://github.com/qed777"
 }
 ```
 

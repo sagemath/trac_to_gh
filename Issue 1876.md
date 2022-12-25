@@ -6,7 +6,7 @@ archive/issues_001876.json:
     "body": "Assignee: tba\n\nThe reference manual page at\n\nhttp://www.sagemath.org/doc/html/ref/node44.html\n\nsays\n\n**Note that the character is an escape character in Python, and also a character used by graph6 strings:**\n\nand then later\n\n**In Python, the escaped character is represented by**\n\nProbably there should be a 'slash' and a 'slashslash' there somewhere.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1876\n\n",
     "created_at": "2008-01-21T06:22:45Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001876.json:
     "title": "minor typo in reference manual section 8.1.1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1876",
-    "user": "bober"
+    "user": "https://trac.sagemath.org/admin/accounts/users/bober"
 }
 ```
 Assignee: tba
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1876
 
 ---
 
-archive/issue_comments_011873.json:
+archive/issue_comments_011844.json:
 ```json
 {
     "body": "This seems to have gotten fixed. From http://www.sagemath.org/doc/html/ref/node44.html as of 2.10.3:\n\n\n```\nNote that the \\ character is an escape character in Python, and also a character used by graph6 strings:\n```\n\nand then\n\n```\nIn Python, the escaped character \\ is represented by \\\\:\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T08:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1876",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1876#issuecomment-11873",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1876#issuecomment-11844",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +75,15 @@ Michael
 
 ---
 
-archive/issue_comments_011874.json:
+archive/issue_comments_011845.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-16T08:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1876",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1876#issuecomment-11874",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1876#issuecomment-11845",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

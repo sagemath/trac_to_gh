@@ -6,15 +6,14 @@ archive/issues_000010.json:
     "body": "Assignee: somebody\n\nThis is on a minimal Ubuntu install without the system-wide readline-dev package.\nSAGE's M2 build script should use SAGE's readline, but it isn't. \n\n\n```\nconfigure: error: missing library: readline\n{'_': './spkg-install', 'CPPFLAGS': '-I/home/was/s/local/include  ', 'SAGE_LOCAL': '/home/was/s/local', '__sage__': '', 'PYTHONHOME': '/home/was/s/local', 'SSH_CLIENT': '192.168.3.1 51123 22', 'LOGNAME': 'was', 'USER': 'was', 'HOME': '/home/was', 'PATH': '/home/was/s/spkg/build/macaulay2-2006-08-26:/home/was/s:/home/was/s/local/bin:/home/was/s:/home/was/s/local/bin:/home/was/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/bin/X11:/usr/games', 'LD_LIBRARY_PATH': '/home/was/s/local/lib:/home/was/s/local/lib:', 'LANG': 'en_US.UTF-8', 'TERM': 'xterm-color', 'SHELL': '/bin/bash', 'LIBRARY_PATH': '/home/was/s/local/lib:/home/was/s/local/lib:', 'LANGUAGE': 'en', 'LN': 'ln', 'SAGE_STARTUP_FILE': '/home/was/.sage//init.sage', 'UNAME': 'Linux', 'EDITOR': 'vi', 'LDFLAGS': '-L/home/was/s/local/lib/ ', 'GP_DATA_DIR': '/home/was/s/local/share/pari', 'TOUCH': 'touch', 'RM': 'rm', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SAGE_STARTUP_COMMAND': '\\nfrom sage.all import *;import os; os.chdir(\"/home/was/s\");import sage.misc.interpreter;from sage.misc.interpreter import attached_files;_=sage.misc.interpreter.load_startup_file(\"/home/was/.sage//init.sage\");\\n', 'CUR': '/home/was/s/spkg/build', 'CC': 'gcc', 'PYTHONPATH': ':/home/was/s/local/lib/python2.4', 'MKDIR': 'mkdir', 'LD': 'ld', 'SAGE_DATA': '/home/was/s/data', 'DYLD_LIBRARY_PATH': '/home/was/s/local/lib:/home/was/s/local/lib::/home/was/s/local/lib::', 'SAGE64': 'no', 'AS': 'as', 'AR': 'ar', 'RANLIB': 'ranlib', 'CP': 'cp', 'SAGE_ROOT': '/home/was/s', 'SSH_CONNECTION': '192.168.3.1 51123 192.168.3.3 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CXX': 'g++', 'SSH_TTY': '/dev/pts/0', 'OLDPWD': '/home/was/s/spkg/build', 'SAGE_SERVER': 'http://modular.math.washington.edu/sage/packages', 'CHMOD': 'chmod', 'HISTCONTROL': 'ignoredups', 'SHLVL': '4', 'PWD': '/home/was/s/spkg/build/macaulay2-2006-08-26', 'MV': 'mv', 'SHAREDFLAGS': '-fPIC', 'DOT_SAGE': '/home/was/.sage/', 'MAIL': '/var/mail/was', 'LS_COLORS': 'no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.flac=01;35:*.mp3=01;35:*.mpc=01;35:*.ogg=01;35:*.wav=01;35:', 'MAKE': 'make', 'SAGE_PACKAGES': '/home/was/s/spkg'}\nError configuring M2\n\nreal    16m57.258s\nuser    0m31.322s\nsys     2m51.991s\nsage: An error occured while installing macaulay2-2006-08-26\nPlease email William Stein <wstein@gmail.com> explaining the\nproblem and send him /home/was/s/install.log\nIf you want to try to fix the problem, *don't* just cd to\n/home/was/s/spkg/build/macaulay2-2006-08-26 and type 'make'.\nInstead (using bash) type \"source local/bin/sage-env\" from the directory\n/home/was/s\nin order to set all environment variables correctly, then cd to\n/home/was/s/spkg/build/macaulay2-2006-08-26\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/10\n\n",
     "created_at": "2006-09-12T18:04:56Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "Error building M2 under Linux without readline",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/10",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -59,7 +58,7 @@ archive/issue_comments_000030.json:
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-30",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,7 +76,7 @@ archive/issue_comments_000031.json:
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-31",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -95,7 +94,7 @@ archive/issue_comments_000032.json:
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-32",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,7 +112,7 @@ archive/issue_comments_000033.json:
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-33",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -131,7 +130,7 @@ archive/issue_comments_000034.json:
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-34",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -153,7 +152,7 @@ archive/issue_comments_000035.json:
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-35",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -166,30 +165,12 @@ Changing assignee from @williamstein to mabshoff.
 archive/issue_comments_000036.json:
 ```json
 {
-    "body": "Changing priority from minor to major.",
-    "created_at": "2007-09-07T21:49:49Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/10",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-36",
-    "user": "mabshoff"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_000037.json:
-```json
-{
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-09T06:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-37",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-36",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -199,15 +180,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_000038.json:
+archive/issue_comments_000037.json:
 ```json
 {
     "body": "There are too many problems at the moment, i.e. mostly that the configure script only picks up NTL from $SAGE_LOCAL, but not factory, libcf, BLAS & Lapack, so postpone this until 2.9.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-13T03:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-38",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-37",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -221,15 +202,15 @@ Michael
 
 ---
 
-archive/issue_comments_000039.json:
+archive/issue_comments_000038.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-09-14T02:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-39",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-38",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -239,15 +220,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_000040.json:
+archive/issue_comments_000039.json:
 ```json
 {
     "body": "\n```\nDear Macaulay 2 users,\n\nWe've released, as a test release, version 1.0.9test of M2.  Feel free to\ndownload it from http://www.math.uiuc.edu/Macaulay2/Downloads/TestReleases/ and\ntry it out.  \n\nWe hope to release 1.1 within a week, based on this test.\n\nThe corresponding subversion (svn) URL is\nsvn://macaulay2.math.uiuc.edu/Macaulay2/release-branches/1.1, and after release\nof 1.1 there will be \"stable\" URL corresponding to it.\n\nThis version fixes a recently detected bug (there since 0.9.95) in computations\nwith rings where the variables don't all have multi-degree vectors whose first\ncomponent is strictly positive.  Answers for total Ext (it computes Ext^n(M,N)\nfor all n at the same time) came out wrong, because it (necessarily) makes use\nof such degree vectors.\n\nThis version also introduces good support for arbitrary precision real and\ncomplex numbers.\n\nDan and Mike\n```\n",
     "created_at": "2008-01-30T16:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-40",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-39",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -282,15 +263,15 @@ Dan and Mike
 
 ---
 
-archive/issue_comments_000041.json:
+archive/issue_comments_000040.json:
 ```json
 {
     "body": "Bump.  What is the status of the 1.1 spkg?  Is there anything I can do to help?",
     "created_at": "2008-02-27T12:25:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-41",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-40",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -300,15 +281,15 @@ Bump.  What is the status of the 1.1 spkg?  Is there anything I can do to help?
 
 ---
 
-archive/issue_comments_000042.json:
+archive/issue_comments_000041.json:
 ```json
 {
     "body": "Replying to [comment:14 mhansen]:\n> Bump.  What is the status of the 1.1 spkg?  Is there anything I can do to help?\n\nHi mhansen: Lack of time. I have some notes that do 99.5% of the work for 1.1. We need to package various bits like boehm's gc either within the optional spkg or add some additional optional spkgs that get automatically installed. I am not sure what I will do during SD8, but maybe I will get to this.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-27T21:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-42",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-41",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -325,15 +306,15 @@ Michael
 
 ---
 
-archive/issue_comments_000043.json:
+archive/issue_comments_000042.json:
 ```json
 {
     "body": "SPKG for 1.1 on OSX and Linux available at http://sage.math.washington.edu/home/gfurnish/spkg/macaulay2-1.1.spkg\n\nCredit to Gary Furnish and Daniel Grayson.",
     "created_at": "2008-07-01T04:23:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-43",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-42",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -345,15 +326,15 @@ Credit to Gary Furnish and Daniel Grayson.
 
 ---
 
-archive/issue_comments_000044.json:
+archive/issue_comments_000043.json:
 ```json
 {
     "body": "This depends on the gdbm and boehm_gc spkgs at #3531 and #3532.",
     "created_at": "2008-07-01T04:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-44",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-43",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -363,15 +344,15 @@ This depends on the gdbm and boehm_gc spkgs at #3531 and #3532.
 
 ---
 
-archive/issue_comments_000045.json:
+archive/issue_comments_000044.json:
 ```json
 {
     "body": "Changing status from assigned to new.",
     "created_at": "2008-07-01T04:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-45",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-44",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -381,15 +362,15 @@ Changing status from assigned to new.
 
 ---
 
-archive/issue_comments_000046.json:
+archive/issue_comments_000045.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-07-01T04:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-46",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-45",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -399,15 +380,15 @@ Changing assignee from mabshoff to @garyfurnish.
 
 ---
 
-archive/issue_comments_000047.json:
+archive/issue_comments_000046.json:
 ```json
 {
     "body": "After installing the spkgs at #3531 and #3532 successfully, I get this:\n\n```\n...\nconfigure: creating ./config.status\nconfig.status: error: cannot find input file: GNUmakefile.in\n\nreal\t0m20.569s\nuser\t0m10.182s\nsys\t0m6.901s\nsage: An error occurred while installing macaulay2-1.1\n```\n",
     "created_at": "2008-07-01T06:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-47",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-46",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -429,15 +410,15 @@ sage: An error occurred while installing macaulay2-1.1
 
 ---
 
-archive/issue_comments_000048.json:
+archive/issue_comments_000047.json:
 ```json
 {
     "body": "Never mind -- my download was corrupted (by me).",
     "created_at": "2008-07-01T06:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-48",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-47",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -447,15 +428,15 @@ Never mind -- my download was corrupted (by me).
 
 ---
 
-archive/issue_comments_000049.json:
+archive/issue_comments_000048.json:
 ```json
 {
     "body": "The new spkg builds without errors on my Ubuntu 8.04 Core 2 Duo machine.",
     "created_at": "2008-07-01T07:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-49",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-48",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -465,15 +446,15 @@ The new spkg builds without errors on my Ubuntu 8.04 Core 2 Duo machine.
 
 ---
 
-archive/issue_comments_000050.json:
+archive/issue_comments_000049.json:
 ```json
 {
     "body": "This builds successfully on bsd.sage",
     "created_at": "2008-07-01T17:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-50",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-49",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -483,15 +464,15 @@ This builds successfully on bsd.sage
 
 ---
 
-archive/issue_comments_000051.json:
+archive/issue_comments_000050.json:
 ```json
 {
     "body": "We are still making some changes to clean this up even more on other OS's.",
     "created_at": "2008-07-01T17:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-51",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-50",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -501,15 +482,15 @@ We are still making some changes to clean this up even more on other OS's.
 
 ---
 
-archive/issue_comments_000052.json:
+archive/issue_comments_000051.json:
 ```json
 {
     "body": "The latest spkg built and installed fine for me on Linux.",
     "created_at": "2008-07-06T18:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-52",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-51",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -519,15 +500,15 @@ The latest spkg built and installed fine for me on Linux.
 
 ---
 
-archive/issue_comments_000053.json:
+archive/issue_comments_000052.json:
 ```json
 {
     "body": "The spkg Gary provided has been uploaded to the experimental spkg repo replacing the previous spkg.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-21T20:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-53",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-52",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -541,15 +522,15 @@ Michael
 
 ---
 
-archive/issue_comments_000054.json:
+archive/issue_comments_000053.json:
 ```json
 {
     "body": "Changing component from packages to experimental package.",
     "created_at": "2008-07-21T20:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-54",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-53",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -559,15 +540,33 @@ Changing component from packages to experimental package.
 
 ---
 
-archive/issue_comments_000055.json:
+archive/issue_comments_000054.json:
 ```json
 {
     "body": "Finally merged in Sage 3.0.6.rc0 :)",
     "created_at": "2008-07-21T20:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-54",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
+}
+```
+
+Finally merged in Sage 3.0.6.rc0 :)
+
+
+
+---
+
+archive/issue_comments_000055.json:
+```json
+{
+    "body": "Finally merged in Sage 3.0.6.rc0 :)",
+    "created_at": "2008-07-21T20:28:44Z",
+    "issue": "https://github.com/sagemath/sagetest/issues/10",
+    "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-55",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -580,30 +579,12 @@ Finally merged in Sage 3.0.6.rc0 :)
 archive/issue_comments_000056.json:
 ```json
 {
-    "body": "Finally merged in Sage 3.0.6.rc0 :)",
-    "created_at": "2008-07-21T20:28:44Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/10",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-56",
-    "user": "mabshoff"
-}
-```
-
-Finally merged in Sage 3.0.6.rc0 :)
-
-
-
----
-
-archive/issue_comments_000057.json:
-```json
-{
     "body": "Resolution: fixed",
     "created_at": "2008-07-21T20:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/10",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-57",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/10#issuecomment-56",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

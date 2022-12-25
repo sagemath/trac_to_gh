@@ -6,15 +6,14 @@ archive/issues_009114.json:
     "body": "Assignee: Simon King\n\nKeywords: documentation, infinite polyonomial ring, symmetric reduction\n\nAt #9108, it was reported that the doc tests for symmetric ideals time out on some machines. As a quick solution, it was suggested to simply mark them as 'long'.\n\nHere, I replace the offensive test (it is only one) by something more easy, that is still instructive.\n\nAt this occasion, I tried to improve other aspects of the doc strings as well, e.g., I tried to shorten the lines and to adhere to the standards in describing optional arguments.\n\nThe attached patch is relative to #9108, which already has a positive review. The new patch replaces the doc test that was marked 'long' in #9108.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9114\n\n",
     "created_at": "2010-06-02T11:01:58Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Improve documentation of infinite polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9114",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: Simon King
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9114
 
 ---
 
-archive/issue_comments_084795.json:
+archive/issue_comments_084659.json:
 ```json
 {
     "body": "Shorter doc test (avoiding a time out on some systems), better doc formatting.",
     "created_at": "2010-06-02T11:03:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84795",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84659",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -55,15 +54,15 @@ Shorter doc test (avoiding a time out on some systems), better doc formatting.
 
 ---
 
-archive/issue_comments_084796.json:
+archive/issue_comments_084660.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-02T11:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84796",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84660",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_084797.json:
+archive/issue_comments_084661.json:
 ```json
 {
     "body": "Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-uuid/ticket9114/9114_doc_infinite_polynomial.patch) by @simon-king-jena created at 2010-06-02 11:04:27",
     "created_at": "2010-06-02T11:04:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84797",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84661",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -91,15 +90,15 @@ Attachment [9114_doc_infinite_polynomial.patch](tarball://root/attachments/some-
 
 ---
 
-archive/issue_comments_084798.json:
+archive/issue_comments_084662.json:
 ```json
 {
     "body": "Attachment [trac_9114-reviewer.patch](tarball://root/attachments/some-uuid/ticket9114/trac_9114-reviewer.patch) by @loefflerd created at 2010-06-14 12:14:38\n\napply over previous patch",
     "created_at": "2010-06-14T12:14:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84798",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84662",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -111,15 +110,15 @@ apply over previous patch
 
 ---
 
-archive/issue_comments_084799.json:
+archive/issue_comments_084663.json:
 ```json
 {
     "body": "Looks fine to me; it builds and passes tests under 4.4.4.alpha0, the tests pass in a reasonable length of time (25 seconds on my machine, as opposed to 17 seconds without \"-long\" and a ridiculously long time with \"-long\"). Documentation builds OK and looks good.\n\nThere is one minor problem: quite a few doctests are marked with \"# indirect doc test\" (with space), while the coverage script looks for \"# indirect doctest\". I have fixed these and added a few more doctests. (I also streamlined the `__contains__` methods slightly, since all they did was try to convert x into self and then test equality, which the coercion framework does automatically anyway.) All four files relating to infinite polynomial rings now pass `sage -coverage` with no complaints.\n\nSimon: if you are happy with the changes in my reviewer patch, then feel free to put the status to \"positive review\".",
     "created_at": "2010-06-14T12:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84799",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84663",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -133,15 +132,15 @@ Simon: if you are happy with the changes in my reviewer patch, then feel free to
 
 ---
 
-archive/issue_comments_084800.json:
+archive/issue_comments_084664.json:
 ```json
 {
     "body": "Replying to [comment:2 davidloeffler]:\n> ...\n> \n> Simon: if you are happy with the changes in my reviewer patch, then feel free to put the status to \"positive review\".\n\nI am happy with it! So, I changed that status to \"positive review\", and inserted your name as reviewer.\n\nBest regards,\nSimon",
     "created_at": "2010-06-14T13:03:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84800",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84664",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -159,15 +158,15 @@ Simon
 
 ---
 
-archive/issue_comments_084801.json:
+archive/issue_comments_084665.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-14T13:03:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84801",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84665",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -177,15 +176,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_084802.json:
+archive/issue_comments_084666.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-21T01:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84802",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9114#issuecomment-84666",
+    "user": "https://github.com/qed777"
 }
 ```
 

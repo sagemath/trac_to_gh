@@ -6,15 +6,14 @@ archive/issues_007983.json:
     "body": "Assignee: sage-combinat\n\nCC:  @darijgr sage-combinat @anneschilling @tscrim\n\nThe 'descents' and 'major_index' methods of a Tableau return what are more properly known as 'i_descents' and the 'i_maj' statistic.  These should be renamed accordingly, and the proper statistics put in their place.  See, eg., Richard Stanley--Enumerative Combinatorics, Vol. 2 for a reference to the usual definition.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7983\n\n",
     "created_at": "2010-01-18T19:39:19Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.12",
     "title": "Notion of descent/major index in tableau.py is not mathematically standard",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7983",
-    "user": "@jbandlow"
+    "user": "https://github.com/jbandlow"
 }
 ```
 Assignee: sage-combinat
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7983
 
 ---
 
-archive/issue_comments_069703.json:
+archive/issue_comments_069583.json:
 ```json
 {
     "body": "I have made a patch that resolves this issue.\n\nWhat I have done is renamed the old methods 'major_index' and 'descents' to 'i_major_index' and 'i_descents'.  From what I can tell, only one other method refers to either of these methods and that is 'inversion', and I have not changed that at all except to refer to the new 'i_descents' (in particular I have not changed the name of 'inversion').\n\nI have then made new methods called 'major_index' and 'descents' which use a more standard definition (i.e. the one on pages 361 and 363 of Enumerative Combinatorics Vol 2 by R. Stanley).",
     "created_at": "2010-11-15T17:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69703",
-    "user": "arattan"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/arattan"
 }
 ```
 
@@ -53,15 +52,15 @@ I have then made new methods called 'major_index' and 'descents' which use a mor
 
 ---
 
-archive/issue_comments_069704.json:
+archive/issue_comments_069584.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-11-15T17:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69704",
-    "user": "arattan"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69584",
+    "user": "https://trac.sagemath.org/admin/accounts/users/arattan"
 }
 ```
 
@@ -71,15 +70,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069705.json:
+archive/issue_comments_069585.json:
 ```json
 {
     "body": "patch to fix tableaux major index",
     "created_at": "2010-11-15T17:32:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69705",
-    "user": "arattan"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69585",
+    "user": "https://trac.sagemath.org/admin/accounts/users/arattan"
 }
 ```
 
@@ -89,15 +88,15 @@ patch to fix tableaux major index
 
 ---
 
-archive/issue_comments_069706.json:
+archive/issue_comments_069586.json:
 ```json
 {
     "body": "Attachment [Fix_Tableau_Major_Index_AR.patch](tarball://root/attachments/some-uuid/ticket7983/Fix_Tableau_Major_Index_AR.patch) by @jbandlow created at 2010-11-16 14:11:26\n\nThanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.\n\nSo I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)",
     "created_at": "2010-11-16T14:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69706",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69586",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -111,15 +110,15 @@ So I think the thing to do is to deprecate 'descents' and 'major_index' (look up
 
 ---
 
-archive/issue_comments_069707.json:
+archive/issue_comments_069587.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-11-16T14:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69707",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69587",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -129,15 +128,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_069708.json:
+archive/issue_comments_069588.json:
 ```json
 {
     "body": "Replying to [comment:2 jbandlow]:\n> Thanks for the patch!  While I don't have time for a full review now, the main issue with this patch is going to be backward compatibility.  I'm pretty sure that the Macdonald polynomial code uses these functions, so sage --testall will probably fail after applying your patch.  That part will not be too hard to fix, but the bigger problem is for people who have sage code on their own machine.  When people upgrade sage and this change is included (without them necessarily knowing about it) this change could make their code behave in slightly wrong ways that are not obvious.  We really try to avoid that.\n> \n> So I think the thing to do is to deprecate 'descents' and 'major_index' (look up deprecation in the developers guide), use 'i_descents' and 'i_major_index' for the existing statistics (as you have done) and give the classical statistics some new name. (Suggestions welcome!)\n\nYes, I thought this would be an issue.  I actually made the patch a while ago but thought that precisely your objection would be raised.  Anyways, I decided to send it in and see what would happen.  It sounds like you have a good solution.\n\nAbout a new name:  is \"Major_Index\" a bad idea?  I don't know about sage's naming conventions.",
     "created_at": "2010-11-16T14:34:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69708",
-    "user": "arattan"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69588",
+    "user": "https://trac.sagemath.org/admin/accounts/users/arattan"
 }
 ```
 
@@ -154,15 +153,15 @@ About a new name:  is "Major_Index" a bad idea?  I don't know about sage's namin
 
 ---
 
-archive/issue_comments_069709.json:
+archive/issue_comments_069589.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"combinat, tableaux\".",
     "created_at": "2013-06-15T22:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69709",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69589",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -172,15 +171,15 @@ Changing keywords from "" to "combinat, tableaux".
 
 ---
 
-archive/issue_comments_069710.json:
+archive/issue_comments_069590.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-06-15T22:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69710",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69590",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -190,15 +189,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_069711.json:
+archive/issue_comments_069591.json:
 ```json
 {
     "body": "3 years... not bad.\n\nI've remade the patch from scratch (arattan's one didn't apply, unsurprisingly given its age) without renaming the existing `descents`, `major_index` etc. functions. While I agree with arattan that these functions should be deprecated and renamed, I think it's a top priority to get the correct ones out ASAP, under whatever name possible (I chose `standard_descents` and `standard_major_index`). I have taken the liberty to edit the docstrings of the old functions to explain that they are not what they seem to be; Jason and me are hardly the only people to trip over this. (To make things worse, the only two examples for the `major_index` function used to be cases where it happens to have the same values as the \"correct\" one!!)\n\nThe patch I attached does a few more things:\n\n- Various improvements in the documentation of `tableaux.py`. The doc of `promotion` now warns about its nonstandard definition (#14641). A doctest has been added to check the equivalence between two definitions of promotion (this takes a couple seconds; let me know if that's too much).\n\n- `up` and `down` methods are moved to `StandardTableaux` (look at what they do to see why) and now return the correct result for the empty tableau.\n\n- The empty tableau is now correctly recognized as being rectangular.\n\nHere's stuff that has not been done (partly because I am not sure about them -- comments are welcome):\n\n- Copy/move attacking_pairs method to partitions.\n\n- Generalize promotion_inverse to non-rectangular tableaux (particularly important since I believe promotion_inverse is what many people just call promotion).\n\n- `Tableau([[]])` is standard and distinct from `Tableau([])`. Is this bad?\n\n- Copy/move functionality to skew tableaux (this should be one separate huge ticket once other stuff is done, I guess).\n\n- Allow creating tableaux of various ilks without checking the tableau conditions. This should be mostly called internally, so as to avoid having lots of redundant checking at runtime.\n\nI have been building this patch on sage-5.10rc1 with only #8392 applied.",
     "created_at": "2013-06-15T22:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69711",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69591",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -232,15 +231,15 @@ I have been building this patch on sage-5.10rc1 with only #8392 applied.
 
 ---
 
-archive/issue_comments_069712.json:
+archive/issue_comments_069592.json:
 ```json
 {
     "body": "Hey Darij,\n\nTwo things I notice from a quick lookthrough:\n\n1. `up()` and friends I think should remain where they are because there's no assumptions made on the initial tableau. However I do think there are some assumptions about standardness made in their implementation...\n2. The reference to Stanley is indented one too many times.\n\nI'll do a more through look-through and we can talk about 1. once I get to Orsay tomorrow.\n\nBest,\n\nTravis",
     "created_at": "2013-06-15T22:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69712",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69592",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -261,15 +260,15 @@ Travis
 
 ---
 
-archive/issue_comments_069713.json:
+archive/issue_comments_069593.json:
 ```json
 {
     "body": "Hi Travis,\n\nthanks for looking into this! I've updated the reference; is it correct now?\n\nAs for `up`, is it possible that you meant `standard_descents` instead? I can't imagine how `up` and `down` would be used for anything other than standard tableaux; is it really useful to have a function to tell how many ways there are to add a square to a non-standard tableau to get a standard one? On the other hand, descents could indeed survive a generalization, though I don't know which choices are preferred here.\n\nBest regards,\nDarij",
     "created_at": "2013-06-15T22:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69713",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69593",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -286,15 +285,15 @@ Darij
 
 ---
 
-archive/issue_comments_069714.json:
+archive/issue_comments_069594.json:
 ```json
 {
     "body": "Hi Darij,\n\nThanks for your work on this. I think it reads a little odd to write that promotion is contrary to the paper by Stanley without giving a reference to what it actually is. Stanley's paper defines promotion on posets, whereas what you touched I think is promotion on tableaux. So it would be good to give a reference, for example the paper by Haiman, Discrete Math 99 (1992) 79-113.\n\nBest,\n\nAnne",
     "created_at": "2013-06-16T07:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69714",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69594",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -310,15 +309,15 @@ Anne
 
 ---
 
-archive/issue_comments_069715.json:
+archive/issue_comments_069595.json:
 ```json
 {
     "body": "Hi Anne,\n\ngood point, thanks -- I've added the reference to Haiman, and also a better reference (Sagan's cyclic sieving paper) for the conflicting notation. If you agree, the Stanley reference can be removed (he defines promotion for linear extensions of posets, then claiming that this obviously defines it for tableaux -- this isn't really central to the paper, though).\n\nIn other news, I've added documentation to `insert_word`, slightly improved that of `catabolism` and `lambda_catabolism`, and fixed a couple more typos. Since I don't know anything about catabolism, can you tell me if it's OK that `catabolism_sequence(Tableau([]))` does not terminate? I'm hesitating to call it a bug as long as I don't know if this should be defined at all for an empty tableau.\n\nSee you both this evening, dg",
     "created_at": "2013-06-16T08:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69715",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69595",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -334,15 +333,15 @@ See you both this evening, dg
 
 ---
 
-archive/issue_comments_069716.json:
+archive/issue_comments_069596.json:
 ```json
 {
     "body": "Hi Darij,\n\n> In other news, I've added documentation to `insert_word`, slightly improved that of `catabolism` and `lambda_catabolism`, and fixed a couple more typos. Since I don't know anything about catabolism, can you tell me if it's OK that `catabolism_sequence(Tableau([]))` does not terminate? I'm hesitating to call it a bug as long as I don't know if this should be defined at all for an empty tableau.\n\nYes, probably you want that catabolism_sequence on the empty tableau is the empty tableau. The code only checks if the tableau is of height 1, but catabolism on the empty tableau is itself and hence it goes into an infinite loop.\n\nBest,\n\nAnne",
     "created_at": "2013-06-16T12:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69716",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69596",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -360,15 +359,15 @@ Anne
 
 ---
 
-archive/issue_comments_069717.json:
+archive/issue_comments_069597.json:
 ```json
 {
     "body": "Hi Anne,\n\ndone!\n\nI've made one more minor change right now: `.up()` now outputs standard tableaux, not tableaux (just a question of casting the right type; they were standard, of course).\n\nBest regards,\nDarij (in Bures now)\n\nPS, in case this was Travis's concern: I've grepped for appearances of `.up()`, `.up_list()`, `.down()` and `.down_list()` in the source code, and found only 2-3 files apart from `tableau.py` where these were used. They were used in a different context in those files, and my changes didn't break their doctests. Of course, someone's local code might get broken, but I don't know a good way to avoid that making any change at all. One minor issue that I did introduce is that execution of `.up()` and `.down()` now takes a tiny bit longer because of checking for standardness. I'll deal with it when I add a `check_input` parameter throughout `tableaux.py`.",
     "created_at": "2013-06-16T17:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69717",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69597",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -387,15 +386,15 @@ PS, in case this was Travis's concern: I've grepped for appearances of `.up()`, 
 
 ---
 
-archive/issue_comments_069718.json:
+archive/issue_comments_069598.json:
 ```json
 {
     "body": "Updated. `promotion_inverse` now works for non-rectangular tableaux as well (using a new `_slide_down` method). Moreover, it works fine for the empty tableau. Furthermore, `promotion` and `promotion_inverse` have been redefined on `StandardTableau` to automatically compute the `n` variable and to cast the result as a `StandardTableau` (not just a `Tableau`).",
     "created_at": "2013-06-17T16:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69718",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69598",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -405,15 +404,15 @@ Updated. `promotion_inverse` now works for non-rectangular tableaux as well (usi
 
 ---
 
-archive/issue_comments_069719.json:
+archive/issue_comments_069599.json:
 ```json
 {
     "body": "Changing keywords from \"combinat, tableaux\" to \"combinat, tableaux, days49\".",
     "created_at": "2013-06-17T16:35:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69719",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69599",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -423,15 +422,15 @@ Changing keywords from "combinat, tableaux" to "combinat, tableaux, days49".
 
 ---
 
-archive/issue_comments_069720.json:
+archive/issue_comments_069600.json:
 ```json
 {
     "body": "implements the right notions of major index and descents for standard tableaux without changing the old ones; extends promotion_inverse to non-rectangular tableaux; fixes a couple minor issues and improves doc; version 8",
     "created_at": "2013-06-17T16:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69720",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69600",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -441,15 +440,15 @@ implements the right notions of major index and descents for standard tableaux w
 
 ---
 
-archive/issue_comments_069721.json:
+archive/issue_comments_069601.json:
 ```json
 {
     "body": "Attachment [trac_7983-major_index_and_other_tableau_fixes-dg.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-major_index_and_other_tableau_fixes-dg.patch) by @darijgr created at 2013-06-17 16:43:39\n\nTypo in a docstring fixed.",
     "created_at": "2013-06-17T16:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69721",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69601",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -461,15 +460,15 @@ Typo in a docstring fixed.
 
 ---
 
-archive/issue_comments_069722.json:
+archive/issue_comments_069602.json:
 ```json
 {
     "body": "Hey Darij,\n\nHere's the review patch.\n\nTravis",
     "created_at": "2013-06-23T20:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69722",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69602",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -483,15 +482,15 @@ Travis
 
 ---
 
-archive/issue_comments_069723.json:
+archive/issue_comments_069603.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-06-23T20:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69723",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69603",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -501,15 +500,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069724.json:
+archive/issue_comments_069604.json:
 ```json
 {
     "body": "Let's see if I'm getting the syntax right... patchbot:\n\napply trac_7983-major_index_and_other_tableau_fixes-dg.patch trac_7983-review-ts.patch",
     "created_at": "2013-07-16T19:18:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69724",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69604",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -521,15 +520,15 @@ apply trac_7983-major_index_and_other_tableau_fixes-dg.patch trac_7983-review-ts
 
 ---
 
-archive/issue_comments_069725.json:
+archive/issue_comments_069605.json:
 ```json
 {
     "body": "Attachment [trac_7983-review-ts.patch](tarball://root/attachments/some-uuid/ticket7983/trac_7983-review-ts.patch) by @tscrim created at 2013-07-19 13:14:06",
     "created_at": "2013-07-19T13:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69725",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69605",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -539,15 +538,15 @@ Attachment [trac_7983-review-ts.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_069726.json:
+archive/issue_comments_069606.json:
 ```json
 {
     "body": "Hey Darij,\n\nI noticed a duplicate reference of `[St2009]`. It's already defined in `posets/poset.py`. I just tweaked my review patch to remove it from `tableau.py`.\n\nBest,\n\nTravis",
     "created_at": "2013-07-19T13:15:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69726",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69606",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -563,15 +562,15 @@ Travis
 
 ---
 
-archive/issue_comments_069727.json:
+archive/issue_comments_069607.json:
 ```json
 {
     "body": "Forgot to give the patchbot info.\n\nFor patchbot:\n\nApply: trac_7983-major_index_and_other_tableau_fixes-dg.patch trac_7983-review-ts.patch",
     "created_at": "2013-07-19T13:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69727",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69607",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -585,15 +584,15 @@ Apply: trac_7983-major_index_and_other_tableau_fixes-dg.patch trac_7983-review-t
 
 ---
 
-archive/issue_comments_069728.json:
+archive/issue_comments_069608.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2013-08-02T14:11:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7983",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69728",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7983#issuecomment-69608",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

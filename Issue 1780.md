@@ -6,15 +6,14 @@ archive/issues_001780.json:
     "body": "Assignee: mabshoff\n\nWhile mpfr 2.3.1 should be out shortly I integrated a patch from http://websympa.loria.fr/wwsympa/arc/mpfr/2008-01/msg00044.html\n\nWhat happens is that mpfr uses alloca() instead of the default gmp allocator. alloca() uses the stack and on most modern systems causes segfaults by smashing the stack. One example is the following Sage code (by Paul Zimmermann):\n\n\n```\nsage: R=RealField(16777216)\nsage: t=[]\nsage: for n in range(1500):\n   t.append(R(n)) \n```\n\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha3/mpfr-2.3.0.p1.spkg\n\nfixes this issue and also adds build support for 64 bit MacIntel builds.\n\nCheers,\n\nMichael\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1780\n\n",
     "created_at": "2008-01-15T01:48:59Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with spkg] add 64 bit MacIntel build support to mpfr, fix stack smashing issue",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1780",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1780
 
 ---
 
-archive/issue_comments_011270.json:
+archive/issue_comments_011242.json:
 ```json
 {
     "body": "Build work on Linux and OSX, including running MPFR's test suite.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-15T01:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1780#issuecomment-11270",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1780#issuecomment-11242",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -74,15 +73,15 @@ Michael
 
 ---
 
-archive/issue_comments_011271.json:
+archive/issue_comments_011243.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-15T01:51:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1780#issuecomment-11271",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1780#issuecomment-11243",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -92,15 +91,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_011272.json:
+archive/issue_comments_011244.json:
 ```json
 {
     "body": "Merged in Sage 2.10.alph3",
     "created_at": "2008-01-15T02:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1780#issuecomment-11272",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1780#issuecomment-11244",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -110,15 +109,15 @@ Merged in Sage 2.10.alph3
 
 ---
 
-archive/issue_comments_011273.json:
+archive/issue_comments_011245.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-15T02:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1780",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1780#issuecomment-11273",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1780#issuecomment-11245",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

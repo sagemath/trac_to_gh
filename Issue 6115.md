@@ -6,15 +6,13 @@ archive/issues_006115.json:
     "body": "Assignee: @williamstein\n\nCurrently, it looks like the symbolic matrix code in `matrix/matrix_symbolic_dense.pyx` goes to maxima for everything.  This makes things **slow** and, at least in 3.4.2, it was easy to crash Maxima by calculating a 6x6 determinant, for example.\n\nHere is an example of how the current general algorithms in Sage can speed things up (even before making the matrix be stored in Sage instead of Maxima).\n\n\n```\nsage: var('x00,x01,x10,x11')\nsage: a=matrix(2,[[x00,x01],[x10,x11]])\nsage: %timeit a.det()\n10 loops, best of 3: 218 ms per loop\n```\n\n\nI went into matrix/matrix_symbolic_dense.pyx and just commented out the determinant routine.  This way, it uses the generic determinant routine for matrices.  Note that we still have to get values from maxima for this, but the multiplication and things are done in pynac.\n\nGeneric determinant algorithm:\n\n\n```\nsage: var('x00,x01,x10,x11')\n(x00, x01, x10, x11)\nsage: a=matrix(2,[[x00,x01],[x10,x11]])\nsage: %timeit a.det()\n100000 loops, best of 3: 5.85 \u00b5s per loop\nsage: %timeit a.det()\n100000 loops, best of 3: 6.15 \u00b5s per loop\n```\n\n\nSo, the generic Sage code with pynac took about 3% of the time it took to call maxima and ask it for the determinant.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6115\n\n",
     "created_at": "2009-05-21T18:39:36Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "make symbolic matrices use pynac symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6115",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -58,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6115
 
 ---
 
-archive/issue_comments_048863.json:
+archive/issue_comments_048768.json:
 ```json
 {
     "body": "Mike Hansen mentions that all of the docstrings should be moved up to the module docstring.  Most of this patch would probably be just deleting functions in matrix_symbolic_dense.pyx.",
     "created_at": "2009-05-21T18:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48863",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48768",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -76,15 +74,15 @@ Mike Hansen mentions that all of the docstrings should be moved up to the module
 
 ---
 
-archive/issue_comments_048864.json:
+archive/issue_comments_048769.json:
 ```json
 {
     "body": "Almost positive review.  Here is a problem:\n\n\n```\nsage: a=matrix(SR, [[1,2],[3,4]])\nsage: a.eig\na.eigenmatrix_left    a.eigenspaces         a.eigenspaces_right   a.eigenvectors_left   \na.eigenmatrix_right   a.eigenspaces_left    a.eigenvalues         a.eigenvectors_right  \nsage: a.eigenm\na.eigenmatrix_left   a.eigenmatrix_right  \nsage: a.eigenmatrix_right()\n/home/grout/.sage/temp/good/26004/_home_grout__sage_init_sage_0.py:1: UserWarning: Using generic algorithm for an inexact ring, which may result in garbarge from numerical precision issues.\n  # -*- coding: utf-8 -*-\n/home/grout/.sage/temp/good/26004/_home_grout__sage_init_sage_0.py:1: UserWarning: Using generic algorithm for an inexact ring, which will probably give incorrect results due to numerical precision issues.\n  # -*- coding: utf-8 -*-\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/good/26004/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/download/sage-sage-4.0.alpha0.5/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_right (sage/matrix/matrix2.c:21183)()\n   3505             True\n   3506         \"\"\"\n-> 3507         D,P=self.transpose().eigenmatrix_left()\n   3508         return D,P.transpose()\n   3509 \n\n/home/grout/download/sage-sage-4.0.alpha0.5/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenmatrix_left (sage/matrix/matrix2.c:20868)()\n   3440         \"\"\"\n   3441         from sage.misc.flatten import flatten\n-> 3442         evecs = self.eigenvectors_left()\n   3443         D = sage.matrix.constructor.diagonal_matrix(flatten([[e[0]]*e[2] for e in evecs]))\n   3444         rows = []\n\n/home/grout/download/sage-sage-4.0.alpha0.5/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenvectors_left (sage/matrix/matrix2.c:20199)()\n   3324         from sage.rings.qqbar import QQbar\n   3325         from sage.categories.homset import hom\n-> 3326         eigenspaces = self.eigenspaces_left(algebraic_multiplicity=True)\n   3327         evec_list=[]\n   3328         n = self._nrows\n\n/home/grout/download/sage-sage-4.0.alpha0.5/local/lib/python2.5/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.eigenspaces_left (sage/matrix/matrix2.c:18811)()\n   3061         i = 0\n   3062         for h, e in G:\n-> 3063             if h.degree() == 1:\n   3064                 alpha = -h[0]/h[1]\n   3065                 F = alpha.parent()\n\nTypeError: degree() takes exactly one argument (0 given)\n```\n",
     "created_at": "2009-05-26T19:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48864",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48769",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -144,15 +142,15 @@ TypeError: degree() takes exactly one argument (0 given)
 
 ---
 
-archive/issue_comments_048865.json:
+archive/issue_comments_048770.json:
 ```json
 {
     "body": "I should mention that all but about 3 lines of the above patch are Mike Hansen's, so I'm not reviewing my own patch!  I did add the simplify_rational() calls to the exponent doctests and the deprecation warning to is_simplified; those should be reviewed by someone other than me.",
     "created_at": "2009-05-26T19:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48865",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48770",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -162,15 +160,15 @@ I should mention that all but about 3 lines of the above patch are Mike Hansen's
 
 ---
 
-archive/issue_comments_048866.json:
+archive/issue_comments_048771.json:
 ```json
 {
     "body": "Playing around with things gives more interesting errors:\n\n\n```\nsage: a=matrix(SR, [[1,2],[3,x]])\nsage: a.fcp('x')\n-6\nsage: a.fcp('y')\n-x*y + y^2 + x - y - 6\n```\n",
     "created_at": "2009-05-26T19:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48866",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48771",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -190,15 +188,15 @@ sage: a.fcp('y')
 
 ---
 
-archive/issue_comments_048867.json:
+archive/issue_comments_048772.json:
 ```json
 {
     "body": "apply on top of previous patches",
     "created_at": "2009-05-26T21:03:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48867",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48772",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -208,15 +206,15 @@ apply on top of previous patches
 
 ---
 
-archive/issue_comments_048868.json:
+archive/issue_comments_048773.json:
 ```json
 {
     "body": "Attachment [trac-6115-symbolic-eigenvalues.patch](tarball://root/attachments/some-uuid/ticket6115/trac-6115-symbolic-eigenvalues.patch) by @jasongrout created at 2009-05-26 21:04:51\n\nthe trac-6115-symbolic-eigenvalues.patch  patch needs to be reviewed as well.",
     "created_at": "2009-05-26T21:04:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48868",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48773",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -228,15 +226,15 @@ the trac-6115-symbolic-eigenvalues.patch  patch needs to be reviewed as well.
 
 ---
 
-archive/issue_comments_048869.json:
+archive/issue_comments_048774.json:
 ```json
 {
     "body": "the complaints that I raise above happened with the old implementation of symbolic matrices, so they are beyond the scope of this ticket.\n\nI positively review mhansen's part (the first patch, which I posted).  My part (the second patch) needs to be reviewed, though.",
     "created_at": "2009-05-28T05:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48869",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48774",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -248,15 +246,15 @@ I positively review mhansen's part (the first patch, which I posted).  My part (
 
 ---
 
-archive/issue_comments_048870.json:
+archive/issue_comments_048775.json:
 ```json
 {
     "body": "(well, and the three or so lines that I changed from mhansen's patch; see my above comment)",
     "created_at": "2009-05-28T05:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48870",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48775",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -266,15 +264,15 @@ archive/issue_comments_048870.json:
 
 ---
 
-archive/issue_comments_048871.json:
+archive/issue_comments_048776.json:
 ```json
 {
     "body": "Jason's patch looks good to me.  I just put up a new version of #6115 which fixes a doctest failure in sage/matrix/tests.py.",
     "created_at": "2009-05-28T05:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48871",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48776",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -284,15 +282,15 @@ Jason's patch looks good to me.  I just put up a new version of #6115 which fixe
 
 ---
 
-archive/issue_comments_048872.json:
+archive/issue_comments_048777.json:
 ```json
 {
     "body": "Yep, and Mike's change looks good to me and makes tests.py pass doctests, so positive review.",
     "created_at": "2009-05-28T05:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48872",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48777",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -302,15 +300,15 @@ Yep, and Mike's change looks good to me and makes tests.py pass doctests, so pos
 
 ---
 
-archive/issue_comments_048873.json:
+archive/issue_comments_048778.json:
 ```json
 {
     "body": "Attachment [trac_6115.patch](tarball://root/attachments/some-uuid/ticket6115/trac_6115.patch) by @mwhansen created at 2009-05-28 05:30:18",
     "created_at": "2009-05-28T05:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48873",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48778",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -320,15 +318,15 @@ Attachment [trac_6115.patch](tarball://root/attachments/some-uuid/ticket6115/tra
 
 ---
 
-archive/issue_comments_048874.json:
+archive/issue_comments_048779.json:
 ```json
 {
     "body": "Merged both patches in 4.0.rc1.",
     "created_at": "2009-05-28T06:04:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48874",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48779",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -338,15 +336,15 @@ Merged both patches in 4.0.rc1.
 
 ---
 
-archive/issue_comments_048875.json:
+archive/issue_comments_048780.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-28T06:04:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6115",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48875",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6115#issuecomment-48780",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

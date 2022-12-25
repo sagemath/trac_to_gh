@@ -6,7 +6,7 @@ archive/issues_001552.json:
     "body": "Assignee: @williamstein\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/69b117b9d959f569?hl=en\n\nIssue created by migration from https://trac.sagemath.org/ticket/1552\n\n",
     "created_at": "2007-12-17T14:57:32Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001552.json:
     "title": "Fix gnuplot building on OS 10.5.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1552",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1552
 
 ---
 
-archive/issue_comments_009895.json:
+archive/issue_comments_009869.json:
 ```json
 {
     "body": "Well, there isn't much we can do to fix this since:\n\n```\n* Permission to modify the software is granted, but not the right to\n* distribute the complete modified source code.  Modifications are to\n* be distributed as patches to the released version.  Permission to\n* distribute binaries produced by compiling modified sources is granted,\n* provided you\n*   1. distribute the corresponding source modifications from the\n*    released version in the form of a patch file along with the binaries,\n*   2. add special version identification to distinguish your version\n*    in addition to the base release version number,\n*   3. provide your name and address as the primary contact for the\n*    support of your modified version, and\n*   4. retain our contact information in regard to use of the base\n*    software.\n* Permission to distribute the released version of the source code along\n* with corresponding source modifications in the form of a patch file is\n* granted with same provisions 2 through 4 for binary distributions.\n*\n* This software is provided \"as is\" without express or implied warranty\n* to the extent permitted by applicable law.\n```\n\nWe could try updating to gnuplot 4.2.2. It has been discussed around here before that the name gnuplot is very misleading since this isn't a GNU project at all.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-17T16:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1552",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1552#issuecomment-9895",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1552#issuecomment-9869",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +75,15 @@ Michael
 
 ---
 
-archive/issue_comments_009896.json:
+archive/issue_comments_009870.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-02-17T22:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1552",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1552#issuecomment-9896",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1552#issuecomment-9870",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -93,15 +93,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_009897.json:
+archive/issue_comments_009871.json:
 ```json
 {
     "body": "We won't fix this because of the lame gnuplot license.  Also Sage doesn't link in \ngnuplot in any binary way, so whatever standard system-wide way one might use to install gnuplot will work fine with sage if it works at all.",
     "created_at": "2008-02-17T22:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1552",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1552#issuecomment-9897",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1552#issuecomment-9871",
+    "user": "https://github.com/williamstein"
 }
 ```
 

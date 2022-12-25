@@ -6,15 +6,14 @@ archive/issues_009404.json:
     "body": "Assignee: drkirkby\n\nCC:  @williamstein @dimpase\n\nAn error occurs when building sage-4.5.alpha1 (with some patches) on disk.math, an OpenSolaris machine running !openSolaros 2008.11 (snv_101b_rc2)\n\nThe exact same source builds fine on OpenSolaris 2009.06 which has been updated to build 134. I suspect some of the tools on this system need updating. \n\n## Hardware\n* disk.math.washington.edu x64 hardware of some sort. \n* OpenSolaris 2008.11 (snv_101b)\n* 32 GB RAM\n* 2 x quad core 2.3 GHz CPUs\n\n## GCC Configuration\nThe configuration of gcc on OpenSolaris is quite critical. This is the GCC included with OpenSolaris 11.2008. \n\n```\n-bash-3.2$ gcc -v\nReading specs from /opt/sfw/lib/gcc/i386-pc-solaris2.11/4.3.2/specs\nTarget: i386-pc-solaris2.11\nConfigured with: ./configure --prefix=/opt/sfw --enable-shared --with-gmp=/opt/sfw --with-mpfr=/opt/sfw --with-gnu-as --with-as=/usr/sfw/bin/gas --without-gnu-ld --with-ld=/usr/ccs/bin/ld --enable-stage1-languages=c,c++ --enable-languages=c,c++,objc,fortran\nThread model: posix\ngcc driver version 4.3.2 (GCC) executing gcc version 4.2.3\n```\n\n\nGCC is configured to use a rather old version (version 2.15 from 2002) version of the GNU assembler /usr/sfw/bin/gas. I suspect an upgrade of gcc and/or the assembler might cure this. \n\n## The error message\n\n\n```\nck.c -o omDebugTrack.o_ndebug\ngcc -m64 -O2 -g -m64  -fPIC -I. -I/export/home/kirkby/sage-4.5.alpha1/local/include -I/export/home/kirkby/sage-4.5.alpha1/local/include -O2 -g -m64 -DHAVE_CONFIG_H -DOM_NDEBUG -c omalloc_provide.c -o omalloc_provide.o_ndebug\ngcc -m64 -O2 -g -m64  -fPIC -I. -I/export/home/kirkby/sage-4.5.alpha1/local/include -I/export/home/kirkby/sage-4.5.alpha1/local/include -O2 -g -m64 -DHAVE_CONFIG_H -DOM_NDEBUG -c omAllocFunc.c -o omAllocFunc.o_ndebug\nrm -f libomalloc_ndebug.a\nar cr libomalloc_ndebug.a omBinPage.o_ndebug omList.o_ndebug omAllocEmulate.o_ndebug omDebug.o_ndebug om_Alloc.o_ndebug omDebugCheck.o_ndebug omOpts.o_ndebug omGetBackTrace.o_ndebug omAllocSystem.o_ndebug omError.o_ndebug omStats.o_ndebug omRet2Info.o_ndebug omBin.o_ndebug omFindExec.o_ndebug omDebugTrack.o_ndebug omalloc_provide.o_ndebug omAllocFunc.o_ndebug \nranlib libomalloc_ndebug.a\ngcc -m64 -O2 -g -m64  -fPIC -I. -I/export/home/kirkby/sage-4.5.alpha1/local/include -I/export/home/kirkby/sage-4.5.alpha1/local/include -O2 -g -m64 -DHAVE_CONFIG_H -DOM_NDEBUG -c omalloc.c -o omalloc.o\ngcc -m64 -O2 -g -m64  -fPIC -I. -I/export/home/kirkby/sage-4.5.alpha1/local/include -I/export/home/kirkby/sage-4.5.alpha1/local/include -O2 -g -m64 -DHAVE_CONFIG_H -c omalloc_debug.c -o omalloc_debug.o\ngcc -m64 -g -pg -O3 -I. -I/export/home/kirkby/sage-4.5.alpha1/local/include -I/export/home/kirkby/sage-4.5.alpha1/local/include -O2 -g -m64 -DHAVE_CONFIG_H -c omBinPage.c -o omBinPage.op\n/var/tmp//cc1HaW.a.s: Assembler messages:\n/var/tmp//cc1HaW.a.s:26: Error: junk `@' after expression\n/var/tmp//cc1HaW.a.s:101: Error: junk `@' after expression\n/var/tmp//cc1HaW.a.s:170: Error: junk `@' after expression\n/var/tmp//cc1HaW.a.s:268: Error: junk `@' after expression\n/var/tmp//cc1HaW.a.s:482: Error: junk `@' after expression\n/var/tmp//cc1HaW.a.s:824: Error: junk `@' after expression\n/var/tmp//cc1HaW.a.s:1254: Error: junk `@' after expression\n/var/tmp//cc1HaW.a.s:1730: Error: junk `@' after expression\n/var/tmp//cc1HaW.a.s:2031: Error: junk `@' after expression\nmake[4]: *** [omBinPage.op] Error 1\nmake[4]: Leaving directory `/export/home/kirkby/sage-4.5.alpha1/spkg/build/singular-3.1.0.4.p8/src/omalloc'\nmake[3]: *** [install] Error 1\nmake[3]: Leaving directory `/export/home/kirkby/sage-4.5.alpha1/spkg/build/singular-3.1.0.4.p8/src'\nmake[2]: *** [/export/home/kirkby/sage-4.5.alpha1/local/bin/Singular-3-1-0] Error 2\nmake[2]: Leaving directory `/export/home/kirkby/sage-4.5.alpha1/spkg/build/singular-3.1.0.4.p8/src'\nUnable to build Singular.\n\nreal\t0m53.374s\nuser\t0m8.135s\nsys\t0m8.073s\nsage: An error occurred while installing singular-3.1.0.4.p8\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9404\n\n",
     "created_at": "2010-07-02T01:26:47Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Assembler reports  junk buidling Singular on OpenSolaris x64 (disk.math)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9404",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -94,15 +93,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9404
 
 ---
 
-archive/issue_comments_089620.json:
+archive/issue_comments_089477.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9404#issuecomment-89620",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9404#issuecomment-89477",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -112,15 +111,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_089621.json:
+archive/issue_comments_089478.json:
 ```json
 {
     "body": "Outdated, should be closed",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9404#issuecomment-89621",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9404#issuecomment-89478",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -130,15 +129,15 @@ Outdated, should be closed
 
 ---
 
-archive/issue_comments_089622.json:
+archive/issue_comments_089479.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-07-14T16:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9404#issuecomment-89622",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9404#issuecomment-89479",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

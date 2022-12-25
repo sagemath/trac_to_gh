@@ -6,15 +6,14 @@ archive/issues_008295.json:
     "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nAdds documention for new files `kazhdan_lusztig.py` and `iwahori_hecke_algebras.py` to reference manual.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8295\n\n",
     "created_at": "2010-02-17T18:24:49Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Documentation for Kazhdan-Lusztig polynomials and Iwahori Hecke algebras",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8295",
-    "user": "@dwbump"
+    "user": "https://github.com/dwbump"
 }
 ```
 Assignee: @aghitza
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8295
 
 ---
 
-archive/issue_comments_073485.json:
+archive/issue_comments_073362.json:
 ```json
 {
     "body": "Attachment [trac_8295_doc.patch](tarball://root/attachments/some-uuid/ticket8295/trac_8295_doc.patch) by @dwbump created at 2010-02-17 18:26:52\n\nAdd documentation for new files to reference manual",
     "created_at": "2010-02-17T18:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73485",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73362",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -51,15 +50,15 @@ Add documentation for new files to reference manual
 
 ---
 
-archive/issue_comments_073486.json:
+archive/issue_comments_073363.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-17T18:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73486",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73363",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_073487.json:
+archive/issue_comments_073364.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-02-17T18:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73487",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73364",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_073488.json:
+archive/issue_comments_073365.json:
 ```json
 {
     "body": "Changing component from algebra to documentation.",
     "created_at": "2010-02-18T00:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73488",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73365",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing component from algebra to documentation.
 
 ---
 
-archive/issue_comments_073489.json:
+archive/issue_comments_073366.json:
 ```json
 {
     "body": "Changing assignee from @aghitza to @dwbump.",
     "created_at": "2010-02-18T00:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73489",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73366",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing assignee from @aghitza to @dwbump.
 
 ---
 
-archive/issue_comments_073490.json:
+archive/issue_comments_073367.json:
 ```json
 {
     "body": "Looks good. The documentation for these two modules now appear in the reference manual:\n\n* `sage/algebras/iwahori_hecke_algebra.py`\n* `sage/combinat/kazhdan_lusztig.py`\n\nThe module `sage/combinat/kazhdan_lusztig.py` has some bad ReST formatting, which results in a warning when building the reference manual. See #8310 for a patch to fix this.",
     "created_at": "2010-02-20T12:07:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73490",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73367",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -146,15 +145,15 @@ The module `sage/combinat/kazhdan_lusztig.py` has some bad ReST formatting, whic
 
 ---
 
-archive/issue_comments_073491.json:
+archive/issue_comments_073368.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-20T12:07:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73491",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73368",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -164,15 +163,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_073492.json:
+archive/issue_comments_073369.json:
 ```json
 {
     "body": "Daniel: The patch doesn't contain your username. I have merged [trac_8295_doc.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8295/trac_8295_doc.patch) in your name.",
     "created_at": "2010-03-02T22:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73492",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73369",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -182,15 +181,15 @@ Daniel: The patch doesn't contain your username. I have merged [trac_8295_doc.pa
 
 ---
 
-archive/issue_comments_073493.json:
+archive/issue_comments_073370.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-02T22:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73493",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8295#issuecomment-73370",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

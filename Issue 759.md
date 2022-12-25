@@ -6,15 +6,14 @@ archive/issues_000759.json:
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\n\n```\n--- a/sage/graphs/graph.py      Fri Sep 28 10:30:09 2007 -0500\n+++ b/sage/graphs/graph.py      Fri Sep 28 13:48:53 2007 -0500\n@@ -451,7 +451,7 @@ class GenericGraph(SageObject):\n             Looped digraph on 0 vertices\n\n         \"\"\"\n-        if not new is None:\n+        if new is not None:\n             if new:\n                 self._nxg.allow_selfloops()\n             else:\n@@ -467,12 +467,18 @@ class GenericGraph(SageObject):\n             sage: d = {0: [1,4,5], 1: [2,6], 2: [3,7], 3: [4,8], 4: [9], 5: [7, 8], 6: [8,9], 7: [9]}\n             sage: G = Graph(d); G.density()\n             1/3\n+            sage: G = Graph({0:[1,2], 1:[0] }); G.density()\n+            2/3\n+            sage: G = DiGraph({0:[1,2], 1:[0] }); G.density()\n+            1/2\n\n         \"\"\"\n         from sage.rings.rational import Rational\n         n = self.order()\n-        n = (n**2 - n)/2\n-        return Rational(self.size())/Rational(n)\n+        if self.is_directed():\n+            return Rational(self.size())/Rational((n**2 -n))\n+        else:\n+            return Rational(self.size())/Rational((n**2 -n)/2)\n\n     def to_simple(self):\n         \"\"\"\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/759\n\n",
     "created_at": "2007-09-28T18:59:39Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "[patch] graphs: density returns incorrect result for directed graphs.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/759",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -67,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/759
 
 ---
 
-archive/issue_comments_004502.json:
+archive/issue_comments_004486.json:
 ```json
 {
     "body": "Same patch as listed in the post.",
     "created_at": "2007-10-03T07:51:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/759",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4502",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4486",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -85,15 +84,15 @@ Same patch as listed in the post.
 
 ---
 
-archive/issue_comments_004503.json:
+archive/issue_comments_004487.json:
 ```json
 {
     "body": "Attachment [#759.patch](tarball://root/attachments/some-uuid/ticket759/#759.patch) by @williamstein created at 2007-10-04 14:56:15",
     "created_at": "2007-10-04T14:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/759",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4503",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4487",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -103,15 +102,15 @@ Attachment [#759.patch](tarball://root/attachments/some-uuid/ticket759/#759.patc
 
 ---
 
-archive/issue_comments_004504.json:
+archive/issue_comments_004488.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-04T14:56:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/759",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4504",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4488",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +120,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_004505.json:
+archive/issue_comments_004489.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-10-04T14:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/759",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4505",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4489",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -139,15 +138,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_004506.json:
+archive/issue_comments_004490.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-10-04T14:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/759",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4506",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4490",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -157,15 +156,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_004507.json:
+archive/issue_comments_004491.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-04T19:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/759",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4507",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/759#issuecomment-4491",
+    "user": "https://github.com/rlmill"
 }
 ```
 

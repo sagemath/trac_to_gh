@@ -6,7 +6,7 @@ archive/issues_007424.json:
     "body": "Assignee: joyner\n\nProbably because these are implemented as different classes (matrix group versus permutation group), the constructors for `SL` and `PSL` have slightly different behaviour.  In particular, `PSL` does not take a field argument, and the error message it gives is misleading.  We should just make it behave exactly like `SL`:\n\n\n```\n[ghitza@artin ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: SL(2, 7)\nSpecial Linear Group of degree 2 over Finite Field of size 7\nsage: SL(2, GF(7))\nSpecial Linear Group of degree 2 over Finite Field of size 7\nsage: PSL(2, 7)\nPermutation Group with generators [(3,7,5)(4,8,6), (1,2,6)(3,4,8)]\nsage: PSL(2, GF(7))\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 4.2, Release Date: 2009-10-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/ghitza/.sage/temp/artin/31630/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/home/ghitza/sage-stable/local/lib/python2.6/site-packages/sage/groups/perm_gps/permgroup_named.pyc in __init__(self, n, q, name)\n    645         else:\n    646             id = 'PSL(%s,%s)'%(n,q)\n--> 647         PermutationGroup_generic.__init__(self, gap_group=id)\n    648         self._q = q\n    649         self._base_ring = GF(q, name=name)\n\n/home/ghitza/sage-stable/local/lib/python2.6/site-packages/sage/groups/perm_gps/permgroup.pyc in __init__(self, gens, gap_group, canonicalize)\n    334         if gens is None:\n    335             self._gap_string = gap_group if isinstance(gap_group, str) else str(gap_group)\n--> 336             self._gens = self._gens_from_gap()\n    337             return\n    338 \n\n/home/ghitza/sage-stable/local/lib/python2.6/site-packages/sage/groups/perm_gps/permgroup.pyc in _gens_from_gap(self)\n    363             gens = self._gap_().GeneratorsOfGroup()\n    364         except TypeError, s:\n--> 365             raise RuntimeError, \"(It might be necessary to install the database_gap optional Sage package, if you haven't already.)\\n%s\"%s\n    366         gens = [self._element_class()(gens[n],self, check=False)\n    367                        for n in range(1, int(gens.Length())+1)]\n\nRuntimeError: (It might be necessary to install the database_gap optional Sage package, if you haven't already.)\nGap produced error output\nVariable: 'Finite' must have a value\n\nSyntax error: ) expected\n$sage3:=PSL(2,Finite Field of size 7);;\n                         ^\n\n   executing $sage3:=PSL(2,Finite Field of size 7);;\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7424\n\n",
     "created_at": "2009-11-10T22:51:48Z",
     "labels": [
-        "group theory",
+        "component: group theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007424.json:
     "title": "inconsistency between constructors SL and PSL",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7424",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: joyner
@@ -81,15 +81,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7424
 
 ---
 
-archive/issue_comments_062487.json:
+archive/issue_comments_062372.json:
 ```json
 {
     "body": "Attachment [trac_7424.patch](tarball://root/attachments/some-uuid/ticket7424/trac_7424.patch) by @fchapoton created at 2013-08-02 19:17:20\n\nhere is a patch, that also cleans a bit the doc",
     "created_at": "2013-08-02T19:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62487",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62372",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -101,15 +101,15 @@ here is a patch, that also cleans a bit the doc
 
 ---
 
-archive/issue_comments_062488.json:
+archive/issue_comments_062373.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-08-02T20:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62488",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62373",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -119,15 +119,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062489.json:
+archive/issue_comments_062374.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-08-02T20:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62489",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62374",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -137,15 +137,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062490.json:
+archive/issue_comments_062375.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2013-08-20T12:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7424",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62490",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7424#issuecomment-62375",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_006506.json:
     "body": "Assignee: jkantor\n\nCC:  cwitty\n\nFollowup to #5081.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6506\n\n",
     "created_at": "2009-07-10T06:53:49Z",
     "labels": [
-        "numerical",
-        "major",
+        "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "further numpy type conversions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6506",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: jkantor
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6506
 
 ---
 
-archive/issue_comments_053004.json:
+archive/issue_comments_052905.json:
 ```json
 {
     "body": "Attachment [6506-numpy-types.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types.patch) by @jasongrout created at 2009-07-18 23:57:17\n\nCarl, as one of the resident experts on precision issues, could you glance at the last part of this patch, which touches real_mpfr.pyx and seems to deal with precision issues?",
     "created_at": "2009-07-18T23:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53004",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52905",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -51,15 +50,15 @@ Carl, as one of the resident experts on precision issues, could you glance at th
 
 ---
 
-archive/issue_comments_053005.json:
+archive/issue_comments_052906.json:
 ```json
 {
     "body": "apply on top of previous patch",
     "created_at": "2009-07-19T03:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53005",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52906",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -69,15 +68,15 @@ apply on top of previous patch
 
 ---
 
-archive/issue_comments_053006.json:
+archive/issue_comments_052907.json:
 ```json
 {
     "body": "Attachment [trac-6506-doc-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/trac-6506-doc-fixes.patch) by @jasongrout created at 2009-07-19 03:44:02\n\nI posted a patch which fixes lots of the documentation errors on #5081.  There are still some problems.\n\n* printing issues, presumably because of the work from the patch on this ticket on the precision code.  It appears there is one less zero printed in numbers.\n\n\n```\n$ sage -t complex_number.pyx \nsage -t  \"devel/sage-main/sage/rings/complex_number.pyx\"    \n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/complex_number.pyx\", line 1917:\n    sage: ComplexNumber(1.000000000000000000000000000,2)\nExpected:\n    1.000000000000000000000000000 + 2.000000000000000000000000000*I\nGot:\n    1.00000000000000000000000000 + 2.00000000000000000000000000*I\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/complex_number.pyx\", line 1919:\n    sage: ComplexNumber(1,2.000000000000000000000)\nExpected:\n    1.000000000000000000000 + 2.000000000000000000000*I\nGot:\n    1.00000000000000000000 + 2.00000000000000000000*I\n**********************************************************************\n1 items had failures:\n   2 of   9 in __main__.example_74\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_complex_number.py\n\t [11.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/complex_number.pyx\"\nTotal time for all tests: 11.8 seconds\n\n\n$ sage -t real_mpfr.pyx \nsage -t  \"devel/sage-main/sage/rings/real_mpfr.pyx\"         \n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/real_mpfr.pyx\", line 4299:\n    sage: RealNumber('1.0000000000000000000000000000000000')\nExpected:\n    1.0000000000000000000000000000000000\nGot:\n    1.000000000000000000000000000000000\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_126\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_real_mpfr.py\n\t [15.1 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/real_mpfr.pyx\"\nTotal time for all tests: 15.1 seconds\n\n\n\n```\n\n\n\n* Another error pointed out on #5081 that is deeper than a printing issue.  There appears to be a bug in the code---the same variable is used in a list comprehension as is used in an enclosing loop.  I rewrote some of the code to not use some numpy and string parsing, instead using python zip and string join methods.  However, there still seems to be an error.  Can someone more familiar with the code look at this?  I think all of these errors stem from the same problem.\n\n\n```\n$ sage -t rings/number_field/totallyreal_rel.py \nsage -t  \"devel/sage-main/sage/rings/number_field/totallyreal_rel.py\"\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 156:\n    sage: T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, 2, 2000)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[3]>\", line 1, in <module>\n        T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, Integer(2), Integer(2000))###line 156:\n    sage: T = sage.rings.number_field.totallyreal_rel.tr_data_rel(F, 2, 2000)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 568:\n    sage: enumerate_totallyreal_fields_rel(F, 2, 2000)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[4]>\", line 1, in <module>\n        enumerate_totallyreal_fields_rel(F, Integer(2), Integer(2000))###line 568:\n    sage: enumerate_totallyreal_fields_rel(F, 2, 2000)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 646, in enumerate_totallyreal_fields_rel\n        T = tr_data_rel(F,m,B,a)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 577:\n    sage: ls = enumerate_totallyreal_fields_rel(F, 2, 10^4)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[6]>\", line 1, in <module>\n        ls = enumerate_totallyreal_fields_rel(F, Integer(2), Integer(10)**Integer(4))###line 577:\n    sage: ls = enumerate_totallyreal_fields_rel(F, 2, 10^4)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 646, in enumerate_totallyreal_fields_rel\n        T = tr_data_rel(F,m,B,a)\n      File \"/home/grout/sage/local/lib/python/site-packages/sage/rings/number_field/totallyreal_rel.py\", line 200, in __init__\n        anm1s[i] += sum([m*Z_Fbasis[i]*adj[i].__int__()//adj[self.d].__int__() for i in range(self.d)])\n    IndexError: list index out of range\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 578:\n    sage: print \"ignore this\";  ls # random (the second factor is platform-dependent)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[7]>\", line 1, in <module>\n        print \"ignore this\";  ls # random (the second factor is platform-dependent)###line 578:\n    sage: print \"ignore this\";  ls # random (the second factor is platform-dependent)\n    NameError: name 'ls' is not defined\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 600:\n    sage: [ f[0] for f in ls ]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[8]>\", line 1, in <module>\n        [ f[Integer(0)] for f in ls ]###line 600:\n    sage: [ f[0] for f in ls ]\n    NameError: name 'ls' is not defined\n**********************************************************************\nFile \"/home/grout/sage/devel/sage-main/sage/rings/number_field/totallyreal_rel.py\", line 603:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/grout/sage/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[9]>\", line 1, in <module>\n        [NumberField(ZZx(x[Integer(1)]), 't').is_galois() for x in ls]###line 603:\n    sage: [NumberField(ZZx(x[1]), 't').is_galois() for x in ls]\n    NameError: name 'ls' is not defined\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_3\n   5 of  12 in __main__.example_5\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/grout/sage/tmp/.doctest_totallyreal_rel.py\n\t [4.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage-main/sage/rings/number_field/totallyreal_rel.py\"\nTotal time for all tests: 4.3 seconds\n```\n",
     "created_at": "2009-07-19T03:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53006",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52907",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -279,15 +278,15 @@ Total time for all tests: 4.3 seconds
 
 ---
 
-archive/issue_comments_053007.json:
+archive/issue_comments_052908.json:
 ```json
 {
     "body": "See the documentation patch (the second patch above) for changes to the totallyreal_rel.py file, including a comment about where a bug probably is.",
     "created_at": "2009-07-19T03:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53007",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52908",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -297,15 +296,15 @@ See the documentation patch (the second patch above) for changes to the totallyr
 
 ---
 
-archive/issue_comments_053008.json:
+archive/issue_comments_052909.json:
 ```json
 {
     "body": "I should mention that I'm not qualified to correct the code in totallyreal_rel.py, since I don't know which i is from the comprehension and which i is from the outer loop.",
     "created_at": "2009-07-19T03:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53008",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52909",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -315,15 +314,15 @@ I should mention that I'm not qualified to correct the code in totallyreal_rel.p
 
 ---
 
-archive/issue_comments_053009.json:
+archive/issue_comments_052910.json:
 ```json
 {
     "body": "Jason, your code looks good to me. I've fixed totallyreal_rel.py--I don't totally understand the code/error either but did extensive comparison with the original code. I also fixed the remaining precision issues--the missing 0 is due to the fact that the decimal point is no longer considered a significant digit. \n\nIt'd be nice to get this into 4.1.1.",
     "created_at": "2009-07-25T10:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53009",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52910",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -335,15 +334,15 @@ It'd be nice to get this into 4.1.1.
 
 ---
 
-archive/issue_comments_053010.json:
+archive/issue_comments_052911.json:
 ```json
 {
     "body": "Attachment [6506-numpy-types-fixes.patch](tarball://root/attachments/some-uuid/ticket6506/6506-numpy-types-fixes.patch) by @jasongrout created at 2009-07-27 16:26:13\n\nAll doctests pass now.  I assume your comments mean that you are giving a positive review to my changes in totallyreal_rel.py (correct me if I'm wrong!).  Doctests now pass in totallyreal_rel.py and the other files mentioned above, so I'm changing this to a positive review and marking you as a reviewer too.\n\nI agree that it would be very, very nice to get this into 4.1.1, especially considering how many times it's come up on the mailing lists just in the past week.",
     "created_at": "2009-07-27T16:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53010",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52911",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -357,15 +356,15 @@ I agree that it would be very, very nice to get this into 4.1.1, especially cons
 
 ---
 
-archive/issue_comments_053011.json:
+archive/issue_comments_052912.json:
 ```json
 {
     "body": "When I say above that all doctests pass, I mean the doctests pointed out in my comment above.  I assume that when this patch is merged, *all* doctests will be run and any errors will kick this ticket back to \"needs work\".",
     "created_at": "2009-07-27T16:27:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53011",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52912",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -375,15 +374,15 @@ When I say above that all doctests pass, I mean the doctests pointed out in my c
 
 ---
 
-archive/issue_comments_053012.json:
+archive/issue_comments_052913.json:
 ```json
 {
     "body": "I applied patches in this order:\n1. patch at #5081\n2. `6506-numpy-types.patch`\n3. `trac-6506-doc-fixes.patch`\n4. `6506-numpy-types-fixes.patch`\nDoctesting revealed the following failures, which are mostly numerical noise:\n\n```\nsage -t -long devel/sage-main/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/symbolic/expression.pyx\", line 4360:\n    sage: SR(1.0000000000000000000000000).cosh()\nExpected:\n    cosh(1.0000000000000000000000000)\nGot:\n    cosh(1.000000000000000000000000)\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_111\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_expression.py\n\t [30.5 s]\n\nsage -t -long devel/sage-main/sage/functions/special.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/functions/special.py\", line 655:\n    sage: bessel_I(0,1,\"maxima\")\nExpected:\n    1.26606587775200...\nGot:\n    1.26606587775201\n**********************************************************************\n1 items had failures:\n   1 of   8 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_special.py\n\t [5.7 s]\n\nsage -t -long devel/sage-main/sage/combinat/combinat.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/combinat/combinat.py\", line 1733:\n    sage: hurwitz_zeta(11/10,1/2,50)\nExpected:\n    12.103813495683755105709077412966680619033648618088\nGot:\n    12.10381349568375510570907741296668061903364861809\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_76\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_combinat.py\n\t [4.0 s]\n\nsage -t -long devel/sage-main/sage/rings/rational_field.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/rings/rational_field.py\", line 118:\n    sage: 6530219459687219.0/281474976710656\nExpected:\n    23.199999999999999\nGot:\n    23.20000000000000\n**********************************************************************\n1 items had failures:\n   1 of  24 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_rational_field.py\n\t [2.9 s]\n\nsage -t -long devel/sage-main/sage/functions/transcendental.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/functions/transcendental.py\", line 395:\n    sage: dickman_rho(10.00000000000000000000000000000000000000)\nExpected:\n    2.770171837725958988758121200634342326343e-11\nGot:\n    2.77017183772595898875812120063434232634e-11\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_8\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_transcendental.py\n\t [3.5 s]\n\nsage -t -long devel/sage-main/sage/rings/complex_interval.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/rings/complex_interval.pyx\", line 1052:\n    sage: ComplexIntervalFieldElement(1.234567890123456789012345, 5.4321098654321987654321)\nExpected:\n    1.2345678901234567890123450? + 5.4321098654321987654321000?*I\nGot:\n    1.234567890123456789012350? + 5.432109865432198765432000?*I\n**********************************************************************\n1 items had failures:\n   1 of   9 in __main__.example_32\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_complex_interval.py\n\t [2.9 s]\n```\n",
     "created_at": "2009-07-29T11:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53012",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -491,15 +490,15 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp
 
 ---
 
-archive/issue_comments_053013.json:
+archive/issue_comments_052914.json:
 ```json
 {
     "body": "I believe these are due to the correction of real number precision, not numerical noise. They all look fine to me--I'll try and post a patch later today.",
     "created_at": "2009-07-29T12:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53013",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52914",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -509,15 +508,15 @@ I believe these are due to the correction of real number precision, not numerica
 
 ---
 
-archive/issue_comments_053014.json:
+archive/issue_comments_052915.json:
 ```json
 {
     "body": "The above issues are resolved.",
     "created_at": "2009-07-29T12:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53014",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52915",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -527,15 +526,15 @@ The above issues are resolved.
 
 ---
 
-archive/issue_comments_053015.json:
+archive/issue_comments_052916.json:
 ```json
 {
     "body": "With the patch at #5081 and the patches on this ticket, I still get a doctest failure:\n\n```\nsage -t -long devel/sage-main/sage/combinat/combinat.py\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.1.alpha1/devel/sage-main/sage/combinat/combinat.py\", line 1733:\n    sage: hurwitz_zeta(11/10,1/2,50)\nExpected:\n    12.103813495683755105709077412966680619033648618088\nGot:\n    12.10381349568375510570907741296668061903364861809\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_76\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp/.doctest_combinat.py\n\t [3.9 s]\n```\n",
     "created_at": "2009-07-29T12:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53015",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52916",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -563,15 +562,15 @@ For whitespace errors, see the file /scratch/mvngu/release/sage-4.1.1.alpha1/tmp
 
 ---
 
-archive/issue_comments_053016.json:
+archive/issue_comments_052917.json:
 ```json
 {
     "body": "Attachment [numpy-fixes-3.patch](tarball://root/attachments/some-uuid/ticket6506/numpy-fixes-3.patch) by @robertwb created at 2009-07-29 13:24:05\n\nOh, somehow I missed that one. I've refreshed the patch.",
     "created_at": "2009-07-29T13:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53016",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52917",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -583,15 +582,15 @@ Oh, somehow I missed that one. I've refreshed the patch.
 
 ---
 
-archive/issue_comments_053017.json:
+archive/issue_comments_052918.json:
 ```json
 {
     "body": "Merged all four patches.",
     "created_at": "2009-07-29T13:46:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53017",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52918",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -601,15 +600,15 @@ Merged all four patches.
 
 ---
 
-archive/issue_comments_053018.json:
+archive/issue_comments_052919.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-29T13:46:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53018",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52919",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -619,15 +618,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_053019.json:
+archive/issue_comments_052920.json:
 ```json
 {
     "body": "What's this?\n\n```\n            if self._prec <= 57: # max size of repr(float)\n```\n\nThe \"57\" makes no sense to me. How is `repr()` even related?",
     "created_at": "2015-12-22T13:04:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53019",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52920",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -643,15 +642,15 @@ The "57" makes no sense to me. How is `repr()` even related?
 
 ---
 
-archive/issue_comments_053020.json:
+archive/issue_comments_052921.json:
 ```json
 {
     "body": "The \"57\" has been fixed in #19758.",
     "created_at": "2016-01-07T11:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6506",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-53020",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6506#issuecomment-52921",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

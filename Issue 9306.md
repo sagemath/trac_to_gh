@@ -6,15 +6,14 @@ archive/issues_009306.json:
     "body": "Assignee: @aghitza\n\nConsider the following:\n\n```\nsage: q=2^200/3^50\nsage: q.floor()\n2238393297946874000179418290327143433\nsage: q.ceil()\n2238393297946874000179418290327143434\nsage: q.round()\n2238393297946874000179418290327143433\n```\n\nThis is fine so far. However:\n\n```\nsage: floor(q)\n2238393297946874000179418290327143433\nsage: ceil(q)\n2238393297946874000179418290327143434\nsage: round(q)\n2.23839329795e+36\n```\n\nWe would expect `round(q)` to behave like `q.round()`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9306\n\n",
     "created_at": "2010-06-22T09:20:05Z",
     "labels": [
-        "basic arithmetic",
-        "minor",
-        "enhancement"
+        "component: basic arithmetic",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "round incoherent with ceil/floor on rational numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9306",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @aghitza
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9306
 
 ---
 
-archive/issue_comments_087645.json:
+archive/issue_comments_087506.json:
 ```json
 {
     "body": "Attachment [trac_9306_round_on_rationals.patch](tarball://root/attachments/some-uuid/ticket9306/trac_9306_round_on_rationals.patch) by @haikona created at 2011-03-22 21:14:52\n\nChanges the round() command to defer to an element's .round() method if no precision is specified.",
     "created_at": "2011-03-22T21:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9306",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87645",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87506",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -72,15 +71,15 @@ Changes the round() command to defer to an element's .round() method if no preci
 
 ---
 
-archive/issue_comments_087646.json:
+archive/issue_comments_087507.json:
 ```json
 {
     "body": "The above change alters the behaviour of sage's round() command. Before it *always* returned a real double field element; now it defers to an element's .round() method if no precision is specified, i.e. a sage Integer is returned in these cases. This makes round(x) and x.round() agree whenever x has a .round() method.",
     "created_at": "2011-03-22T21:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9306",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87646",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87507",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -90,15 +89,15 @@ The above change alters the behaviour of sage's round() command. Before it *alwa
 
 ---
 
-archive/issue_comments_087647.json:
+archive/issue_comments_087508.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-03-22T21:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9306",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87647",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87508",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -108,15 +107,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_087648.json:
+archive/issue_comments_087509.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"round\".",
     "created_at": "2011-03-22T21:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9306",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87648",
-    "user": "@haikona"
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87509",
+    "user": "https://github.com/haikona"
 }
 ```
 
@@ -126,15 +125,15 @@ Changing keywords from "" to "round".
 
 ---
 
-archive/issue_comments_087649.json:
+archive/issue_comments_087510.json:
 ```json
 {
     "body": "Five doctests failed, then failed to fail when I retested them, including devel/sage/sage/tests/startup.py . Code is easy to read and clearly does what it is intended to do, which intent I agree with. Everything looks good!",
     "created_at": "2011-03-23T01:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9306",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87649",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87510",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -144,15 +143,15 @@ Five doctests failed, then failed to fail when I retested them, including devel/
 
 ---
 
-archive/issue_comments_087650.json:
+archive/issue_comments_087511.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-03-23T01:30:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9306",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87650",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87511",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -162,15 +161,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_087651.json:
+archive/issue_comments_087512.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-04-07T13:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9306",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87651",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9306#issuecomment-87512",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

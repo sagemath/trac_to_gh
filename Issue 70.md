@@ -6,14 +6,13 @@ archive/issues_000070.json:
     "body": "Assignee: somebody\n\nCurrently pyrex doesn't let you do an unsafe typecast, which is really annoying, and costs us speed in some low-level situations.\n\nFor example:\n\n```\ncdef SomeType y\nif PyObject_TypeCheck(x, SomeType):\n   y = x\n   [ ... do stuff ... ]\nelse:\n   [ ... do other stuff ... ]\n```\n\n\nIn the above code, I have already performed the type check before I get to \"y = x\". But then when I do \"y = x\", Pyrex generates more type-checking code, so we check the types twice.\n\nAn alternative would be to do:\n\n```\ncdef SomeType y\ntry:\n   y = x\n   [ ... do stuff ... ]\nexcept TypeError:\n   [ ... do other stuff ... ]\n```\n\nbut this invokes python's exception handling, which is relatively slow. (Also you have to work harder if the first \"do stuff\" block could raise a TypeError for a different reason.)\n\nWhat I really want to be able to do is something like:\n\n```\ncdef SomeType y\nif PyObject_TypeCheck(x, SomeType):\n   y = <unsafe> x\n   [ ... do stuff ... ]\nelse:\n   [ ... do other stuff ... ]\n```\n\n\nI'm not sure about the best syntax, but I just want a way to assign the underlying pointer without doing a type check. (I can live with the additional reference counting.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/70\n\n",
     "created_at": "2006-09-20T20:15:01Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "WANTED: unsafe pyrex typecasts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/70",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -70,15 +69,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/70
 
 ---
 
-archive/issue_comments_000360.json:
+archive/issue_comments_000358.json:
 ```json
 {
     "body": "unsafe typecasts are supported in Pyrex:\n\n\n```\ncdef SomeType y\nif PyObject_TypeCheck(x, SomeType):\n   y = <SomeType> x\n   [ ... do stuff ... ]\nelse:\n   [ ... do other stuff ... ]\n```\n",
     "created_at": "2006-10-11T06:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/70",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/70#issuecomment-360",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/70#issuecomment-358",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -99,15 +98,15 @@ else:
 
 ---
 
-archive/issue_comments_000361.json:
+archive/issue_comments_000359.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2006-10-11T06:37:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/70",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/70#issuecomment-361",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/70#issuecomment-359",
+    "user": "https://github.com/malb"
 }
 ```
 

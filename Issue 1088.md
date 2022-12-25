@@ -6,15 +6,13 @@ archive/issues_001088.json:
     "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nHere's an implementation of a minimum spanning tree function.  Well, actually 3 implementations, defaulting to Kruskal's algorithm.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1088\n\n",
     "created_at": "2007-11-03T20:45:05Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with patch] graphs: minimum spanning tree function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1088",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @mwhansen
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1088
 
 ---
 
-archive/issue_comments_006584.json:
+archive/issue_comments_006564.json:
 ```json
 {
     "body": "Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/minspantree.patch) by @jasongrout created at 2007-11-03 20:45:18",
     "created_at": "2007-11-03T20:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6584",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6564",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -49,15 +47,15 @@ Attachment [minspantree.patch](tarball://root/attachments/some-uuid/ticket1088/m
 
 ---
 
-archive/issue_comments_006585.json:
+archive/issue_comments_006565.json:
 ```json
 {
     "body": "Attachment [doc_1088.patch](tarball://root/attachments/some-uuid/ticket1088/doc_1088.patch) by @rlmill created at 2007-11-03 23:20:23",
     "created_at": "2007-11-03T23:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6585",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6565",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -67,15 +65,15 @@ Attachment [doc_1088.patch](tarball://root/attachments/some-uuid/ticket1088/doc_
 
 ---
 
-archive/issue_comments_006586.json:
+archive/issue_comments_006566.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-03T23:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6586",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6566",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +83,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_006587.json:
+archive/issue_comments_006567.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-11-06T22:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6587",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6567",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -103,15 +101,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_006588.json:
+archive/issue_comments_006568.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-11-06T22:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6588",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6568",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -121,15 +119,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_006589.json:
+archive/issue_comments_006569.json:
 ```json
 {
     "body": "I believe there is a bug in the code change of the doc_1088 patch above.  The third patch (1088-correct-bugs-improve-doctests.patch) reverses this change, reimplements the doctests, and makes the code faster by sorting using key instead of cmp.\n\nThe third doctest should be applied after the first two doctests.",
     "created_at": "2007-11-06T22:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6589",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6569",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -141,15 +139,15 @@ The third doctest should be applied after the first two doctests.
 
 ---
 
-archive/issue_comments_006590.json:
+archive/issue_comments_006570.json:
 ```json
 {
     "body": "Attachment [1088-correct-bugs-improve-doctests.patch](tarball://root/attachments/some-uuid/ticket1088/1088-correct-bugs-improve-doctests.patch) by @jasongrout created at 2007-11-06 22:37:16",
     "created_at": "2007-11-06T22:37:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6590",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6570",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -159,15 +157,15 @@ Attachment [1088-correct-bugs-improve-doctests.patch](tarball://root/attachments
 
 ---
 
-archive/issue_comments_006591.json:
+archive/issue_comments_006571.json:
 ```json
 {
     "body": "The third patch above also corrects a bug in the original code.",
     "created_at": "2007-11-06T22:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6591",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6571",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -177,15 +175,15 @@ The third patch above also corrects a bug in the original code.
 
 ---
 
-archive/issue_comments_006592.json:
+archive/issue_comments_006572.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-06T23:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1088",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6592",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1088#issuecomment-6572",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

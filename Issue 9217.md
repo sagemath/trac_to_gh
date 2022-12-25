@@ -6,7 +6,7 @@ archive/issues_009217.json:
     "body": "Assignee: tomc\n\nKeywords: symbolic calculus, gamma function, taylor expansion\n\nTaylor expansion of the gamma function often causes an error.  \nThis example works:\n\n\n```\nsage: taylor(gamma(1/2+x),x,0,2)\n1/4*(pi^2 + 2*euler_gamma^2 + 8*euler_gamma*log(2) + 8*log(2)^2)*sqrt(pi)*x^2 - (euler_gamma + 2*log(2))*sqrt(pi)*x + sqrt(pi)\n```\n\n\nbut this doesn't:\n\n\n```\nsage: taylor(gamma(1/3+x),x,0,2)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1254, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/Users/tomc/sage-4.4.1/<ipython console> in <module>()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/calculus/functional.pyc in taylor(f, *args)\n    369     if not isinstance(f, Expression):\n    370         f = SR(f)\n--> 371     return f.taylor(*args)\n    372 \n    373 def expand(x, *args, **kwds):\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.taylor (sage/symbolic/expression.cpp:13236)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6332)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4053)()\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/interfaces/maxima.pyc in _symbolic_(self, R)\n   1810             sqrt(2)\n   1811         \"\"\"\n-> 1812         return R(self._sage_())\n   1813 \n   1814     def __complex__(self):\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/interfaces/maxima.pyc in _sage_(self)\n   1791         import sage.calculus.calculus as calculus\n   1792         return calculus.symbolic_expression_from_maxima_string(self.name(),\n-> 1793                 maxima=self.parent())\n   1794 \n   1795     def _symbolic_(self, R):\n\n/Users/tomc/sage-4.4.1/local/lib/python2.6/site-packages/sage/calculus/calculus.pyc in symbolic_expression_from_maxima_string(x, equals_sub, maxima)\n   1526         return symbolic_expression_from_string(s, syms, accept_sequence=True)\n   1527     except SyntaxError:\n-> 1528         raise TypeError, \"unable to make sense of Maxima expression '%s' in Sage\"%s\n   1529     finally:\n   1530         is_simplified = False\n\nTypeError: unable to make sense of Maxima expression 'gamma(1/3)-(6*euler_gamma+pi*sqrt(3)+9*log(3))*gamma(1/3)*x/6+(12*gamma(1/3)*psi[1](1/3)+(12*euler_gamma^2+(4*pi*sqrt(3)+36*log(3))*euler_gamma+6*log(3)*pi*sqrt(3)+pi^2+27*log(3)^2)*gamma(1/3))*x^2/24' in Sage\n```\n\n\nThis occurs because when parsing the output from Maxima we should replace all occurrences of the polygamma function psi[n](foo) by \npsi(n,foo).\n\nI am running Sage 4.4.1 on Mac OS X version 10.6 (Snow Leopard), built from source.  But the second example also fails on Sage 4.3.5 on 64-bit Linux, built from source.  Looking at the source code suggests that the second example will fail on all platforms.  \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9217\n\n",
     "created_at": "2010-06-11T18:01:35Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009217.json:
     "title": "Taylor expansion of gamma functions is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9217",
-    "user": "tomc"
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 Assignee: tomc
@@ -98,15 +98,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9217
 
 ---
 
-archive/issue_comments_086366.json:
+archive/issue_comments_086228.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-11T18:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86366",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86228",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -116,15 +116,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_086367.json:
+archive/issue_comments_086229.json:
 ```json
 {
     "body": "I uploaded a patch to fix this.",
     "created_at": "2010-06-11T18:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86367",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86229",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -134,15 +134,15 @@ I uploaded a patch to fix this.
 
 ---
 
-archive/issue_comments_086368.json:
+archive/issue_comments_086230.json:
 ```json
 {
     "body": "revised patch also changes the AUTHORS block to match the format suggested in the Developer's Guide",
     "created_at": "2010-06-11T18:35:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86368",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86230",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -152,15 +152,15 @@ revised patch also changes the AUTHORS block to match the format suggested in th
 
 ---
 
-archive/issue_comments_086369.json:
+archive/issue_comments_086231.json:
 ```json
 {
     "body": "Attachment [trac_9217_Taylor_gamma_fix.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217_Taylor_gamma_fix.patch) by @mwhansen created at 2010-06-11 19:36:52\n\nIt looks like the patch just changes the AUTHORS block and doesn't have the actual fix for the problem in it.",
     "created_at": "2010-06-11T19:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86369",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86231",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -172,15 +172,15 @@ It looks like the patch just changes the AUTHORS block and doesn't have the actu
 
 ---
 
-archive/issue_comments_086370.json:
+archive/issue_comments_086232.json:
 ```json
 {
     "body": "Replying to [comment:2 mhansen]:\n> It looks like the patch just changes the AUTHORS block and doesn't have the actual fix for the problem in it.\n\nArgh!  Will upload new patch.",
     "created_at": "2010-06-11T19:39:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86370",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86232",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -193,15 +193,15 @@ Argh!  Will upload new patch.
 
 ---
 
-archive/issue_comments_086371.json:
+archive/issue_comments_086233.json:
 ```json
 {
     "body": "Attachment [trac_9217-fix-1.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217-fix-1.patch) by tomc created at 2010-06-11 19:55:21",
     "created_at": "2010-06-11T19:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86371",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86233",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -211,15 +211,15 @@ Attachment [trac_9217-fix-1.patch](tarball://root/attachments/some-uuid/ticket92
 
 ---
 
-archive/issue_comments_086372.json:
+archive/issue_comments_086234.json:
 ```json
 {
     "body": "Attachment [trac_9217-fix-2.patch](tarball://root/attachments/some-uuid/ticket9217/trac_9217-fix-2.patch) by tomc created at 2010-06-11 19:56:23",
     "created_at": "2010-06-11T19:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86372",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86234",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -229,15 +229,15 @@ Attachment [trac_9217-fix-2.patch](tarball://root/attachments/some-uuid/ticket92
 
 ---
 
-archive/issue_comments_086373.json:
+archive/issue_comments_086235.json:
 ```json
 {
     "body": "OK, sorry about that.  I uploaded 2 patches.  The first one:\n\ntrac_9217-fix-1.patch\n\nfixes the problem with Taylor expanding gamma functions.  The second one:\n\ntrac_9217-fix-2.patch\n\nshould be applied after the first one, and fixes the AUTHOR block.",
     "created_at": "2010-06-11T19:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86373",
-    "user": "tomc"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86235",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tomc"
 }
 ```
 
@@ -255,15 +255,15 @@ should be applied after the first one, and fixes the AUTHOR block.
 
 ---
 
-archive/issue_comments_086374.json:
+archive/issue_comments_086236.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-11T20:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86374",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86236",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -273,15 +273,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_086375.json:
+archive/issue_comments_086237.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2010-06-11T20:46:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9217",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86375",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9217#issuecomment-86237",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

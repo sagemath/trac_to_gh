@@ -6,7 +6,7 @@ archive/issues_001655.json:
     "body": "Assignee: mabshoff\n\nHere it is\n\n    http://sage.math.washington.edu/home/was/tmp/jmol-11.5.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/1655\n\n",
     "created_at": "2008-01-02T12:02:48Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001655.json:
     "title": "[with spkg] jmol -- upgrade to new version",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1655",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1655
 
 ---
 
-archive/issue_comments_010530.json:
+archive/issue_comments_010503.json:
 ```json
 {
     "body": "11.5.2 should be out soon, with binary pmesh and zip file improvements Bob Hanson and I have been talking about. He said it should be released yesterday or today.",
     "created_at": "2008-01-02T18:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1655#issuecomment-10530",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1655#issuecomment-10503",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -49,15 +49,15 @@ archive/issue_comments_010530.json:
 
 ---
 
-archive/issue_comments_010531.json:
+archive/issue_comments_010504.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-01-03T13:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1655#issuecomment-10531",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1655#issuecomment-10504",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +67,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_010532.json:
+archive/issue_comments_010505.json:
 ```json
 {
     "body": "This is a straight up dupe of #1664.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T13:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1655#issuecomment-10532",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1655#issuecomment-10505",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

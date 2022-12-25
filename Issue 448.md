@@ -6,15 +6,13 @@ archive/issues_000448.json:
     "body": "Assignee: @williamstein\n\nspkg-check should be run upon demand after spkg-install has been run but before the build directory is deleted. In spkg-check any possible \"make check\" target the package offers should be run in order to catch bugs early on, especially on more exotic platforms.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/448\n\n",
     "created_at": "2007-08-19T05:34:57Z",
     "labels": [
-        "algebraic geometry",
-        "major",
-        "enhancement"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "add spkg-check to all packages",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/448",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/448
 
 ---
 
-archive/issue_comments_002236.json:
+archive/issue_comments_002227.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to packages.",
     "created_at": "2007-08-19T05:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2236",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2227",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing component from algebraic geometry to packages.
 
 ---
 
-archive/issue_comments_002237.json:
+archive/issue_comments_002228.json:
 ```json
 {
     "body": "This is a duplicate of #299. Because the description in #299 is better than mine I will close this ticket and assign #299 to the Sage-3.0 milestone.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-21T13:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2237",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2228",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -73,15 +71,15 @@ Michael
 
 ---
 
-archive/issue_comments_002238.json:
+archive/issue_comments_002229.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2007-08-21T13:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2238",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/448#issuecomment-2229",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

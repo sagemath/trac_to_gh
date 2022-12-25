@@ -6,15 +6,14 @@ archive/issues_007406.json:
     "body": "Assignee: @burcin\n\nKeywords: latex, power, jsmath\n\nThe LaTeX representation of (x<sup>pi)</sup>e is not valid TeX string and is not rendered by jsmath\n\n```\nsage: latex((x^pi)^e)\n{(x)}^{\\pi}^{e}\n```\n\n\nBurcin [suggested](http://groups.google.cz/group/sage-devel/browse_thread/thread/c49c684f1c89d0c4) how to fix this and get output like \n\n```\n{{(x)}^{\\pi}}^{e}\n```\n\n\n\n```\nThe code for printing\nsymbolic expressions is in pynac (C++). The fix can be as simple as\nprinting an extra set of braces around power objects.\n\nIf anybody wants to try fixing this, the relevant function is\npower::do_print_latex() in power.cpp. To get to the file (using the\ninstructions I wrote in another message just now), go to your SAGE_ROOT\nand do:\n\n./sage -f -s spkg/standard/pynac-0.1.9.p0.spkg\n\ncd spkg/build/pynac-0.1.9/src/ginac\n\nEdit power.cpp. To compile and make your changes effective, go to your\nSAGE_ROOT again, and do\n\n./sage -sh\ncd spkg/build/pynac-0.1.9/src\nmake install \n```\n\n\nHowever a better fix would be to get \n\n```\n{x}^{a}\n```\n\nif the base is an atom (or not power) and\n\n```\n\\left({x^a}\\right}^{b}\n```\n\nif the base is a power. This allows to distinguish easily between\n\n```\nx^(a^b) \n```\n\nand \n\n```\n(x^a)^b\n```\n\n\nA workaround is to remove powers of powers by simplification. For example radcan function from Maxima perfoms such simplifications\n\n```\nsage: latex(maxima((x^pi)^e).radcan().sage())\nx^{\\pi e}\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7406\n\n",
     "created_at": "2009-11-06T20:37:51Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "bug in conversion powers in to LaTeX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7406",
-    "user": "@robert-marik"
+    "user": "https://github.com/robert-marik"
 }
 ```
 Assignee: @burcin
@@ -101,15 +100,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7406
 
 ---
 
-archive/issue_comments_062319.json:
+archive/issue_comments_062204.json:
 ```json
 {
     "body": "Changing keywords from \"latex, power, jsmath\" to \"latex, power, jsmath, pynac\".",
     "created_at": "2009-11-21T23:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62319",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62204",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -119,15 +118,15 @@ Changing keywords from "latex, power, jsmath" to "latex, power, jsmath, pynac".
 
 ---
 
-archive/issue_comments_062320.json:
+archive/issue_comments_062205.json:
 ```json
 {
     "body": "Perhaps close problem is\n\n```\nsage: latex(x*(1/(x^2)+sqrt(x^7)))\n{(\\sqrt{x^{7}} + \\frac{1}{x^{2}})} x\n```\n\n\nNote missing \\left and \\right at outside parentheses which makes the rendering of the expression far from perfect. Should look like\n\n```\nsage: latex(x*(1/(x^2)+sqrt(x^7)))\n{\\left(\\sqrt{x^{7}} + \\frac{1}{x^{2}}\\right)} x\n```\n",
     "created_at": "2009-11-21T23:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62320",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62205",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -151,15 +150,15 @@ sage: latex(x*(1/(x^2)+sqrt(x^7)))
 
 ---
 
-archive/issue_comments_062321.json:
+archive/issue_comments_062206.json:
 ```json
 {
     "body": "add doctests",
     "created_at": "2009-11-22T17:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62321",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62206",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -169,15 +168,15 @@ add doctests
 
 ---
 
-archive/issue_comments_062322.json:
+archive/issue_comments_062207.json:
 ```json
 {
     "body": "Attachment [trac_7406-power_latex.patch](tarball://root/attachments/some-uuid/ticket7406/trac_7406-power_latex.patch) by @burcin created at 2009-11-22 18:11:40\n\nThe new pynac package here\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.10.spkg\n\ncontains fixes for both the problem in the description and the one in comment:3.\n\nattachment:trac_7406-power_latex.patch contains doctests for the fix.\n\nNote that the new pynac version also contains fixes for #7508 and #7264. Tests should be run with the patches from those tickets also applied in this order:\n\n* #7508\n* #7264 \n* #7406 (this ticket)\n\nThis ticket now depends on #7490, #7508 and #7264.",
     "created_at": "2009-11-22T18:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62322",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62207",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -203,15 +202,15 @@ This ticket now depends on #7490, #7508 and #7264.
 
 ---
 
-archive/issue_comments_062323.json:
+archive/issue_comments_062208.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-22T18:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62323",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62208",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -221,15 +220,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062324.json:
+archive/issue_comments_062209.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-05T13:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62324",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62209",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -239,15 +238,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062325.json:
+archive/issue_comments_062210.json:
 ```json
 {
     "body": "Positive review - they look great in show()!  Obviously pending #7264 or a rebase.",
     "created_at": "2009-12-05T13:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62325",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62210",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -257,15 +256,15 @@ Positive review - they look great in show()!  Obviously pending #7264 or a rebas
 
 ---
 
-archive/issue_comments_062326.json:
+archive/issue_comments_062211.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-10T14:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62326",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7406#issuecomment-62211",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

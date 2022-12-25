@@ -6,15 +6,14 @@ archive/issues_003620.json:
     "body": "Assignee: tbd\n\nIt goes via pari calls, rather than invoking ntl directly.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3620\n\n",
     "created_at": "2008-07-09T00:03:58Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "minpoly slow for finte fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3620",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: tbd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3620
 
 ---
 
-archive/issue_comments_025550.json:
+archive/issue_comments_025497.json:
 ```json
 {
     "body": "But note, we may want to use our own implementation since minpoly and charpoly of *matrices* over finite fields in sage is so fast.",
     "created_at": "2008-07-09T00:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25550",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25497",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ But note, we may want to use our own implementation since minpoly and charpoly o
 
 ---
 
-archive/issue_comments_025551.json:
+archive/issue_comments_025498.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2008-07-09T18:46:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25551",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25498",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_025552.json:
+archive/issue_comments_025499.json:
 ```json
 {
     "body": "Here is an example that illustrates the difference:\n\n```\nsage: k.<a> = GF(2^100)\nsage: time g = k.random_element().charpoly()\nCPU times: user 1.17 s, sys: 0.02 s, total: 1.18 s\nWall time: 1.36 s\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^100)));')\n'Time: 0.000'\n```\n\n\nHere's the sage code that does the charpoly computation:\n\n```\nsage: a.charpoly??\n        from sage.rings.polynomial.polynomial_ring_constructor import PolynomialRing\n        R = PolynomialRing(self.parent().prime_subfield(), var)\n        return R(self._pari_().charpoly('x').lift())\n```\n\n\nIt turns out that pari is just totally abysmal at computing charpolys of Mod's.\n\n```\nsage: f = k.random_element()._pari_()\nsage: time g = f.charpoly('x')\nCPU times: user 1.13 s, sys: 0.01 s, total: 1.14 s\nWall time: 1.26 s\nsage: f.type()\n't_POLMOD'\n```\n\n\nFortunately Sage matrices aren't quite as bad, though of course this is still vastly\nslower than Magma:\n\n```\nsage: time g = k.random_element().matrix().charpoly()\nCPU times: user 0.36 s, sys: 0.00 s, total: 0.36 s\nWall time: 0.37 s\n\n```\n\n\nAsymptotically though this is still vastly better than the current situation:\n\n```\nage: k.<a> = GF(2^200)\nsage: time g = k.random_element().matrix().charpoly()\nCPU times: user 2.21 s, sys: 0.03 s, total: 2.24 s\nWall time: 2.24 s\nsage: time g = k.random_element().charpoly()\nCPU times: user 14.14 s, sys: 0.08 s, total: 14.22 s\nWall time: 14.27 s\n```\n\n\nBut still this sucks compared to magma\n\n```\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^200)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^200)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^300)));')\n'Time: 0.000'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^400)));')\n'Time: 0.010'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^600)));')\n'Time: 0.010'\nsage: magma.eval('time f := CharacteristicPolynomial(Random(GF(2^1000)));')\n'Time: 0.030'\n```\n\n\nI looked at NTL seems to have no functions at all for charpoly or minpoly\nof elements of GF(2^n).  :-(\n\nhttp://www.shoup.net/ntl/doc/GF2E.txt",
     "created_at": "2008-07-09T19:26:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25552",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25499",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -162,15 +161,15 @@ http://www.shoup.net/ntl/doc/GF2E.txt
 
 ---
 
-archive/issue_comments_025553.json:
+archive/issue_comments_025500.json:
 ```json
 {
     "body": "also note:\n\n\n```\nsage: k.<a> = GF(2^500)\nsage: time g = k.random_element()\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\nsage: time m = g.matrix()\nCPU times: user 11.59 s, sys: 0.82 s, total: 12.41 s\nWall time: 12.41 s\nsage: time f = m.charpoly()\nCPU times: user 20.51 s, sys: 0.01 s, total: 20.52 s\nWall time: 20.51 s\n```\n",
     "created_at": "2008-07-09T19:44:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25553",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25500",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -195,15 +194,15 @@ Wall time: 20.51 s
 
 ---
 
-archive/issue_comments_025554.json:
+archive/issue_comments_025501.json:
 ```json
 {
     "body": "Attachment [sage-3620.patch](tarball://root/attachments/some-uuid/ticket3620/sage-3620.patch) by @williamstein created at 2008-07-09 19:53:25",
     "created_at": "2008-07-09T19:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25554",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25501",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -213,15 +212,15 @@ Attachment [sage-3620.patch](tarball://root/attachments/some-uuid/ticket3620/sag
 
 ---
 
-archive/issue_comments_025555.json:
+archive/issue_comments_025502.json:
 ```json
 {
     "body": "1. dmharvey -- i have no clue what the point of your remark is above.\n\n2. the point of my patch, by the way, is just to be a first tiny step.",
     "created_at": "2008-07-09T19:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25555",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25502",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -233,15 +232,15 @@ archive/issue_comments_025555.json:
 
 ---
 
-archive/issue_comments_025556.json:
+archive/issue_comments_025503.json:
 ```json
 {
     "body": "Looks good to me.  Should there be another ticket for improving this further.",
     "created_at": "2008-07-09T20:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25556",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25503",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -251,15 +250,15 @@ Looks good to me.  Should there be another ticket for improving this further.
 
 ---
 
-archive/issue_comments_025557.json:
+archive/issue_comments_025504.json:
 ```json
 {
     "body": "My point is just that computing the matrix and computing its charpoly both take non-negligble time.",
     "created_at": "2008-07-09T20:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25557",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25504",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -269,15 +268,15 @@ My point is just that computing the matrix and computing its charpoly both take 
 
 ---
 
-archive/issue_comments_025558.json:
+archive/issue_comments_025505.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-10T02:01:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25558",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25505",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -287,15 +286,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025559.json:
+archive/issue_comments_025506.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.rc3",
     "created_at": "2008-07-10T02:01:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25559",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25506",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -305,15 +304,15 @@ Merged in Sage 3.0.4.rc3
 
 ---
 
-archive/issue_comments_025560.json:
+archive/issue_comments_025507.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-07-10T06:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25560",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25507",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -323,15 +322,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_025561.json:
+archive/issue_comments_025508.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-07-10T06:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25561",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25508",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -341,15 +340,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_025562.json:
+archive/issue_comments_025509.json:
 ```json
 {
     "body": "It looks like NTL does have minimal polynomial computations, though provided in http://www.shoup.net/ntl/doc/GF2X.txt rather than http://www.shoup.net/ntl/doc/GF2E.txt . We should probably use the proof flag to decide the algorithm. Trace could be wrapped as well. \n\nAlso, the computation of matrix() is using the completely generic code, which has got to be sub-optimal for manipulating elements of GF(2).",
     "created_at": "2008-07-10T06:47:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25562",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25509",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -361,15 +360,15 @@ Also, the computation of matrix() is using the completely generic code, which ha
 
 ---
 
-archive/issue_comments_025563.json:
+archive/issue_comments_025510.json:
 ```json
 {
     "body": "Robert,\n\nI see no reason to reason to reopen this ticket since what you describe seems to be an improvement/additional change. Please open another ticket since the attached patch has been merged in Sage 3.0.4.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-10T10:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25563",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25510",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -385,15 +384,15 @@ Michael
 
 ---
 
-archive/issue_comments_025564.json:
+archive/issue_comments_025511.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-10T10:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25564",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3620#issuecomment-25511",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_006155.json:
     "body": "Assignee: tbd\n\n\n```\nThe full Stein-Watkins package fails to install cleanly on x86_64-\nredhat-linux\n\nhttp://modular.math.washington.edu/Tables/ecdb/stein-watkins-ecdb.spkg\n\nThe relevant lines from install-log seem to be:\n\nmv: invalid option -- r\nTry `mv --help' for more information.\n\nSince the install script only moves some .bz2 files into the data\ndirectory, it's easy to figure out how to do this by hand and after a\n2.7Gb download, one is remarkably motivated to do so. So I'm a very\nhappy user of the database now. But William might want to fix the\ninstall script ...\n\nCheers,\n\nNils\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6155\n\n",
     "created_at": "2009-05-30T03:52:10Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fix stein-watkins huge optional database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6155",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6155
 
 ---
 
-archive/issue_comments_049113.json:
+archive/issue_comments_049018.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-08-13T16:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6155",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49113",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49018",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_049114.json:
+archive/issue_comments_049019.json:
 ```json
 {
     "body": "`http://modular.math.washington.edu/Tables/ecdb/stein-watkins-ecdb.spkg` still contains a broken package, but at least the updated one at http://www.sagemath.org/spkg/huge/stein-watkins-ecdb.spkg works.",
     "created_at": "2013-08-13T16:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6155",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49114",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49019",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -87,15 +86,15 @@ archive/issue_comments_049114.json:
 
 ---
 
-archive/issue_comments_049115.json:
+archive/issue_comments_049020.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-08-13T16:10:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6155",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49115",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49020",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_049116.json:
+archive/issue_comments_049021.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2013-08-16T11:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6155",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49116",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6155#issuecomment-49021",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002825.json:
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2825\n\n",
     "created_at": "2008-04-06T07:53:14Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "notebook -- document js.py some more",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2825",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2825
 
 ---
 
-archive/issue_comments_019399.json:
+archive/issue_comments_019358.json:
 ```json
 {
     "body": "NOTE: In this patch, I fixed a weird design choice.  Namely, in the list of completion dialog, pressing the up arrow at the very top killed the whole dialog instead of wrapping around.  This is weird because the list wraps around in all other directions except up.  Also, esc gets one out of the dialog, so up arrow isn't needed to do this.  I suspect it was just tricky to implement this as wrap around, so Tom didn't.  But now in this patch it is \"fixed\".",
     "created_at": "2008-04-06T08:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19399",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19358",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ NOTE: In this patch, I fixed a weird design choice.  Namely, in the list of comp
 
 ---
 
-archive/issue_comments_019400.json:
+archive/issue_comments_019359.json:
 ```json
 {
     "body": "Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sage-2825.patch) by @williamstein created at 2008-04-06 09:48:08",
     "created_at": "2008-04-06T09:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19400",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19359",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +64,15 @@ Attachment [sage-2825.patch](tarball://root/attachments/some-uuid/ticket2825/sag
 
 ---
 
-archive/issue_comments_019401.json:
+archive/issue_comments_019360.json:
 ```json
 {
     "body": "Patch looks good to me. One minor spelling issue:\n\n```\n Discard the curretn worksheet and quit the currently\n```\n\nI am fixing that in the patch I am applying.\n\nCheers,\n\nMichaeel",
     "created_at": "2008-04-06T14:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19401",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19360",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Michaeel
 
 ---
 
-archive/issue_comments_019402.json:
+archive/issue_comments_019361.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha2",
     "created_at": "2008-04-06T14:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19402",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Merged in Sage 3.0.alpha2
 
 ---
 
-archive/issue_comments_019403.json:
+archive/issue_comments_019362.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-06T14:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2825",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19403",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2825#issuecomment-19362",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

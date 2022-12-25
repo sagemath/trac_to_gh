@@ -6,15 +6,13 @@ archive/issues_009105.json:
     "body": "Assignee: @nthiery\n\nCC:  sage-algebra\n\nKeywords: category primer\n\nThe attached patch improves the category primer and tutorial, based on feedback from Sage Days 20.\n\nThere is still much work to do, but since this patch tends to conflict with many others, let's get this in as is as a first step.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9105\n\n",
     "created_at": "2010-05-31T16:13:56Z",
     "labels": [
-        "categories",
-        "major",
-        "enhancement"
+        "component: categories"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Improve the category primer and tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9105",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: @nthiery
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9105
 
 ---
 
-archive/issue_comments_084605.json:
+archive/issue_comments_084469.json:
 ```json
 {
     "body": "Patch under review on sage-combinat's patch server.",
     "created_at": "2010-05-31T16:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84605",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84469",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -53,15 +51,15 @@ Patch under review on sage-combinat's patch server.
 
 ---
 
-archive/issue_comments_084606.json:
+archive/issue_comments_084470.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-31T21:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84606",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84470",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -71,15 +69,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_084607.json:
+archive/issue_comments_084471.json:
 ```json
 {
     "body": "Attachment [trac_9105-categories-primer-improvements-nt.patch](tarball://root/attachments/some-uuid/ticket9105/trac_9105-categories-primer-improvements-nt.patch) by @hivert created at 2010-05-31 21:33:06\n\nAs Nicolas said there is a lot of work to do on that doc but I think it's good to have those two draft into Sage's doc => Positive review.",
     "created_at": "2010-05-31T21:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84607",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84471",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -91,15 +89,15 @@ As Nicolas said there is a lot of work to do on that doc but I think it's good t
 
 ---
 
-archive/issue_comments_084608.json:
+archive/issue_comments_084472.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-31T21:33:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84608",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84472",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -109,15 +107,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_084609.json:
+archive/issue_comments_084473.json:
 ```json
 {
     "body": "Attachment [trac_9105-categories-primer-improvements-nt.2.patch](tarball://root/attachments/some-uuid/ticket9105/trac_9105-categories-primer-improvements-nt.2.patch) by @nthiery created at 2010-06-07 21:44:08\n\nThe updated patch is refreshed w.t.r. 4.4.3, and rebased upon a trivial change (semirings in the list of categories) in #9056.\n\nAll test pass on massena with Sage 4.4.3 and the following patches applied:\n\n```\ntrac_8704-integer_range_print-fh.patch\ntrac_9104_freemod_name-fix-nt.patch\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8930-enumerated_set_deprecate-fh.patch\n8691_permutation_plainchange_tjb.patch\ntrac_8926_family_repr-fh.patch\ntrac_8902-subsets_call_fix-fh.patch\ntrac_8888_partition_rim-fh.patch\ntrac_8888_reviewer_jb.patch\ntrac_8811_reduced_word_of_translations-nt.patch\ntrac_8500_transitive_groups-final.patch\ntrac_8549_cycle_enumerator-nb.patch\ntrac_8490_square_free-vd.patch\ntrac_9096_disj_union_sphinx_fix-fh.patch\ntrac_8954-nilTemperley-as.patch\ntrac_8913-cayley_graph_twosided_labels-nt.patch\ntrac_8887-typo_monoid_prod-fh.patch\ntrac_9106-UniqueRep_sphinx_fix-fh.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\nsage-5.0.patch\ntrac_9178-attrcall_hash_fix-nt.patch\ngap3_interface_v4.3.3.patch\ngap3_interface_patch2.patch\ntrac_8747-testsuite-speedup-fh.patch\ntrac_9056_semirings_category-nb.patch\ntrac_9056_semirings_category-review-nt.patch\ntrac_8911_categorification_crystals-as.patch\ntrac_9105-categories-primer-improvements-nt.patch\n```\n\n\nI therefore leave the positive review.",
     "created_at": "2010-06-07T21:44:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84609",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84473",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -168,15 +166,15 @@ I therefore leave the positive review.
 
 ---
 
-archive/issue_comments_084610.json:
+archive/issue_comments_084474.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-09T03:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84610",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9105#issuecomment-84474",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

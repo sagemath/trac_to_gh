@@ -6,15 +6,14 @@ archive/issues_008615.json:
     "body": "Assignee: @williamstein\n\nBasically, in Google Chrome, creating a new worksheet sometimes (usually?) doesn't work.   Tested in both Linux and OS X.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8615\n\n",
     "created_at": "2010-03-27T17:42:55Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sage notebook: in chrome creating a new worksheet just returns the last opened worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8615",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8615
 
 ---
 
-archive/issue_comments_078068.json:
+archive/issue_comments_077940.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-12-10T18:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78068",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-77940",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_078069.json:
+archive/issue_comments_077941.json:
 ```json
 {
     "body": "I cannot replicate this on Mac.  If one other person tries it (hopefully on Linux) and concurs, let's close this.",
     "created_at": "2014-12-10T18:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78069",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-77941",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -65,15 +64,15 @@ I cannot replicate this on Mac.  If one other person tries it (hopefully on Linu
 
 ---
 
-archive/issue_comments_078070.json:
+archive/issue_comments_077942.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-12-10T19:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78070",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-77942",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_078071.json:
+archive/issue_comments_077943.json:
 ```json
 {
     "body": "no problem of that kind on chrome and the latest ubuntu",
     "created_at": "2014-12-10T19:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78071",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-77943",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -101,15 +100,15 @@ no problem of that kind on chrome and the latest ubuntu
 
 ---
 
-archive/issue_comments_078072.json:
+archive/issue_comments_077944.json:
 ```json
 {
     "body": "Sweet, thanks for the quick confirmation.",
     "created_at": "2014-12-10T20:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78072",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-77944",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -119,15 +118,15 @@ Sweet, thanks for the quick confirmation.
 
 ---
 
-archive/issue_comments_078073.json:
+archive/issue_comments_077945.json:
 ```json
 {
     "body": "Nor on chrome on Ubuntu 12.04 LTS for the record.",
     "created_at": "2014-12-10T23:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78073",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-77945",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -137,15 +136,15 @@ Nor on chrome on Ubuntu 12.04 LTS for the record.
 
 ---
 
-archive/issue_comments_078074.json:
+archive/issue_comments_077946.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2014-12-11T18:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-78074",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8615#issuecomment-77946",
+    "user": "https://github.com/vbraun"
 }
 ```
 

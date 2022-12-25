@@ -6,15 +6,14 @@ archive/issues_007453.json:
     "body": "Assignee: @aghitza\n\nCC:  @wdjoyner\n\nKeywords: sandpile\n\nDavid Perkinson created a sage module for doing sandpile computations.  See http://people.reed.edu/~davidp/sand/sage/html/sage_sandpiles.html#projective\nfor his documentation of it.\nThis ticket makes an experimental spkg for the module.  It installs glpk and 4ti2 which are required for the full functionality.\nFirst attempt is up at:\nhttp://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7453\n\n",
     "created_at": "2009-11-13T18:13:08Z",
     "labels": [
-        "algebraic geometry",
-        "minor",
-        "enhancement"
+        "component: algebraic geometry",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "add sandpile experimental package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7453",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: @aghitza
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7453
 
 ---
 
-archive/issue_comments_062771.json:
+archive/issue_comments_062656.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-13T18:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62771",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62656",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -55,15 +54,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062772.json:
+archive/issue_comments_062657.json:
 ```json
 {
     "body": "I just updated the spkg since I had accidently used version 1.4 of the sandpile.sage file instead of 1.51.",
     "created_at": "2009-11-16T13:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62772",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62657",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -73,15 +72,15 @@ I just updated the spkg since I had accidently used version 1.4 of the sandpile.
 
 ---
 
-archive/issue_comments_062773.json:
+archive/issue_comments_062658.json:
 ```json
 {
     "body": "I get a problem with what it is trying to download. I guess this may be a problem with what is on the server, rather than what this package needs, but this is what I get (Solaris 10, Sun Blade 2000)\n\n\n```\nsandpile-1.51/src/sandpile.py\nsandpile-1.51/src/setup.py\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/usr/local/gcc-4.4.1-sun-linker/bin/gcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.1/configure --prefix=/usr/local/gcc-4.4.1-sun-linker/ --with-as=/usr/ccs/bin/as --without-gnu-as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++,fortran --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib CC=/usr/sfw/bin/gcc CXX=/usr/sfw/bin/g++ LDFLAGS='-R /usr/local/lib -L /usr/local/lib'\nThread model: posix\ngcc version 4.4.1 (GCC) \n****************************************************\nrunning install\nrunning build\nrunning build_py\ncreating build\ncreating build/lib\ncopying sandpile.py -> build/lib\nrunning install_lib\nrunning install_egg_info\nRemoving /export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sandpile-1.51-py2.6.egg-info\nWriting /export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sandpile-1.51-py2.6.egg-info\nPossible names of non-installed packages starting with 'glpk':\n  glpk-4.38.p4\n  glpk-4.9\nTraceback (most recent call last):\n  File \"/export/home/drkirkby/sage-4.2.1/local/bin/sage-eval\", line 15, in <module>\n    eval(compile(s,'<cmdline>','exec'))\n  File \"<cmdline>\", line 1, in <module>\n  File \"/export/home/drkirkby/sage-4.2.1/local/lib/python2.6/site-packages/sage/misc/package.py\", line 141, in install_package\n    raise ValueError, \"There is more than one package name starting with '%s'. Please specify!\"%(package)\nValueError: There is more than one package name starting with 'glpk'. Please specify!\nForce installing 4ti2.p0\nCalling sage-spkg on 4ti2.p0\nWarning: Attempted to overwrite SAGE_ROOT environment variable\n4ti2.p0\nMachine:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of 4ti2.p0\n\n```\n",
     "created_at": "2009-12-24T00:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62773",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62658",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -141,15 +140,15 @@ Deleting directories from past builds of previous/current versions of 4ti2.p0
 
 ---
 
-archive/issue_comments_062774.json:
+archive/issue_comments_062659.json:
 ```json
 {
     "body": "That's a flaw in the install_package script if there is more than one package with the same name.\n\nAs a workaround I will change it to use the 4.9 package.  I uploaded it to the same file as above (http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg).",
     "created_at": "2009-12-24T01:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62774",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62659",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -161,15 +160,15 @@ As a workaround I will change it to use the 4.9 package.  I uploaded it to the s
 
 ---
 
-archive/issue_comments_062775.json:
+archive/issue_comments_062660.json:
 ```json
 {
     "body": "but isn't glpk 4.9 years old? you should take 4.38.",
     "created_at": "2010-02-05T20:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62775",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62660",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -179,15 +178,15 @@ but isn't glpk 4.9 years old? you should take 4.38.
 
 ---
 
-archive/issue_comments_062776.json:
+archive/issue_comments_062661.json:
 ```json
 {
     "body": "Really? That's confusing version numbering.  For the sandpiles package I don't think the version matters too much.\n\nAnyway, this is just going in the experimental packages so I would appreciate someone giving it a try and then a positive review if it works for you - I think the bar is set pretty low for experimental.",
     "created_at": "2010-02-06T14:11:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62776",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62661",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -199,15 +198,15 @@ Anyway, this is just going in the experimental packages so I would appreciate so
 
 ---
 
-archive/issue_comments_062777.json:
+archive/issue_comments_062662.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-02-06T14:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62777",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62662",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -217,15 +216,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_062778.json:
+archive/issue_comments_062663.json:
 ```json
 {
     "body": "It appears to make use of a GNU specific option to 'grep' (either that, or someone else has screwed something up, to make use of a GNU specific option). \n\n\n```\ndrkirkby@swan:[~/sage-4.3.0.1] $ ./sage -i http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nInstalling http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nCalling sage-spkg on http://sage.math.washington.edu/home/mhampton/sandpile-1.51.spkg\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nsandpile-1.51\nMachine:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\nDeleting directories from past builds of previous/current versions of sandpile-1.51\n/export/home/drkirkby/sage-4.3.0.1/local/bin/sage-spkg: file sandpile-1.51 does not exist\nAttempting to download it.\ngrep: illegal option -- o\nUsage: grep -hblcnsviw pattern file . . .\nSearching for latest version of sandpile-1.51\nCould not find a version for sandpile-1.51.\n```\n\n\nDave",
     "created_at": "2010-02-06T14:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62778",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62663",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -256,15 +255,15 @@ Dave
 
 ---
 
-archive/issue_comments_062779.json:
+archive/issue_comments_062664.json:
 ```json
 {
     "body": "I've added myself as a reviewer. The author field is not filled in either.",
     "created_at": "2010-02-06T14:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62779",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62664",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -274,15 +273,15 @@ I've added myself as a reviewer. The author field is not filled in either.
 
 ---
 
-archive/issue_comments_062780.json:
+archive/issue_comments_062665.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-06T14:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62780",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62665",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -292,15 +291,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_062781.json:
+archive/issue_comments_062666.json:
 ```json
 {
     "body": "I realised some someone else must have screwed up and added the GNUism, so its not this package. Hence I am changing to needs review again.",
     "created_at": "2010-02-06T14:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62781",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62666",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -310,15 +309,15 @@ I realised some someone else must have screwed up and added the GNUism, so its n
 
 ---
 
-archive/issue_comments_062782.json:
+archive/issue_comments_062667.json:
 ```json
 {
     "body": "This installs on a mac 10.6.2 and runs at least some of the commands on\nhttp://people.reed.edu/~davidp/sand/sage/2.0/html/sandpile.html\n(I just did this today). I also installed it a few months ago on a linux \n(ubuntu) machine at work.\n\nWhat more do you want for a positive review?",
     "created_at": "2010-02-06T17:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62782",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62667",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -333,15 +332,15 @@ What more do you want for a positive review?
 
 ---
 
-archive/issue_comments_062783.json:
+archive/issue_comments_062668.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-07T03:42:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62783",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62668",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -351,15 +350,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062784.json:
+archive/issue_comments_062669.json:
 ```json
 {
     "body": "I don't want anything more for a positive review.  I think for an\nexperimental package just about anything goes.  The advantage of the\nexperimental package is that David Perkinson can at least say: if you\nwant to install this package in sage, just do: sage -i sandpile-1.51\n\nThat will make it easier for other people (besides sage developers) to\ngive it a try.  It would be nice to eventually get it into Sage\nitself, and this is just a first step.\n\n-Marshall",
     "created_at": "2010-02-07T03:42:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62784",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62669",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -378,15 +377,15 @@ itself, and this is just a first step.
 
 ---
 
-archive/issue_comments_062785.json:
+archive/issue_comments_062670.json:
 ```json
 {
     "body": "I've added the spkg here:\n\n   http://sagemath.org/packages/experimental/",
     "created_at": "2010-02-07T05:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62785",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62670",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -398,15 +397,15 @@ I've added the spkg here:
 
 ---
 
-archive/issue_comments_062786.json:
+archive/issue_comments_062671.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-07T05:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62786",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7453#issuecomment-62671",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_001659.json:
     "body": "Assignee: @robertwb\n\n\n```\nrishi_: I use scipy very often. To use complex number I have to use the following statement:  sage: a=numpy.complex128(complex(2+3*I)). Is it not possible to avoid 2 conversions?\n[12:29pm] mabshoff: hungry? *ducks*\n[12:29pm] ondrej: mabshoff - like a small dog?\n[12:29pm] mabshoff: yes. a young dog.\n[12:29pm] wstein-1658: We could add a method (2+3*I).complex128().\n[12:29pm] wstein-1658: Want that?\n[12:29pm] wstein-1658: Is I symbolic, by the way?\n[12:29pm] rishi_: yes\n[12:30pm] wstein-1658: Do you want to avoid two conversions because of speed or code cleaness?\n[12:30pm] wstein-1658: Probably clean-ness.\n[12:30pm] rishi_: cleaness\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1659\n\n",
     "created_at": "2008-01-02T19:33:21Z",
     "labels": [
-        "coercion",
-        "major",
-        "enhancement"
+        "component: coercion"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add a complex128 method for conversion of symbolic (and other?) expressions to numpy's 128-bit complex type",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1659",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @robertwb
@@ -43,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1659
 
 ---
 
-archive/issue_comments_010554.json:
+archive/issue_comments_010527.json:
 ```json
 {
     "body": "A temporary workaround (and almost the fix):\n\n\n```\nsage: import sage.calculus.calculus\nsage: def complex128(self): import numpy; return numpy.complex128(complex(self))\n....: \nsage: sage.calculus.calculus.SymbolicExpression.complex128 = complex128\nsage: \nsage: (3 + 2*I).complex128()\n(3+2j)\n```\n",
     "created_at": "2008-01-02T19:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10554",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10527",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -73,15 +71,15 @@ sage: (3 + 2*I).complex128()
 
 ---
 
-archive/issue_comments_010555.json:
+archive/issue_comments_010528.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2010-08-26T20:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10555",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10528",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -91,15 +89,15 @@ Resolution: worksforme
 
 ---
 
-archive/issue_comments_010556.json:
+archive/issue_comments_010529.json:
 ```json
 {
     "body": "This now works:\n\n\n```\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: combinat\nsage: import numpy\nsage: a = numpy.complex128(2+3*I); a\n(2+3j)\nsage: type(a)\n<type 'numpy.complex128'>\n```\n",
     "created_at": "2010-08-26T20:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1659",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10556",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1659#issuecomment-10529",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

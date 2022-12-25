@@ -6,15 +6,14 @@ archive/issues_004998.json:
     "body": "Assignee: mabshoff\n\nUsing the mmap default leads to segfaults at starup since omalloc is not properly initialized.\n\nSpkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4998\n\n",
     "created_at": "2009-01-17T15:52:10Z",
     "labels": [
-        "porting",
-        "major",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "OSX64: build Singulat with \"--with-malloc=system\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4998",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4998
 
 ---
 
-archive/issue_comments_038126.json:
+archive/issue_comments_038054.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-17T15:52:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4998",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38126",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38054",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +52,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_038127.json:
+archive/issue_comments_038055.json:
 ```json
 {
     "body": "Spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/spkgs/singular-3-0-4-4-20080711.p3.spkg\n\nCheers,\n\nMichael",
     "created_at": "2009-01-22T19:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4998",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38127",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38055",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +76,15 @@ Michael
 
 ---
 
-archive/issue_comments_038128.json:
+archive/issue_comments_038056.json:
 ```json
 {
     "body": "+1",
     "created_at": "2009-01-22T20:25:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4998",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38128",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38056",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -95,15 +94,15 @@ archive/issue_comments_038128.json:
 
 ---
 
-archive/issue_comments_038129.json:
+archive/issue_comments_038057.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-23T00:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4998",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38129",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38057",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_038130.json:
+archive/issue_comments_038058.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha1",
     "created_at": "2009-01-23T00:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4998",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38130",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4998#issuecomment-38058",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

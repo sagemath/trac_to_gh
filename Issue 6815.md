@@ -6,15 +6,14 @@ archive/issues_006815.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein @qed777\n\nRestarting worksheet seems to disable latex typesetting even though \"Typeset\" box is checked. If I un-check and then re-check the \"Typeset\" box, it starts working again.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6815\n\n",
     "created_at": "2009-08-23T22:57:41Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Restarting worksheet doesn't enable typesetting even when \"Typeset\" box is checked",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6815",
-    "user": "@golam-m-hossain"
+    "user": "https://github.com/golam-m-hossain"
 }
 ```
 Assignee: boothby
@@ -32,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6815
 
 ---
 
-archive/issue_comments_056198.json:
+archive/issue_comments_056096.json:
 ```json
 {
     "body": "Either I don't understand the problem, or I'm not having it.  What Sage version, browser, and OS?\n\nHere's what I did (Sage 4.1.1 on a Mac (Intel, OS X 10.5) with Safari or Firefox):  I start a worksheet, click the Typeset box, then do some stuff.\n\nThen I can (a) close the worksheet window, (b) click the \"Save & quit\" button then close it, or (c) quit Sage, leaving the window open.  After doing (a) or (b) and re-opening the worksheet, or doing (c) and running 'sage -notebook', then when I evaluate a cell in the worksheet, latex typesetting is still active.",
     "created_at": "2009-08-23T23:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56198",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56096",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -54,15 +53,15 @@ Then I can (a) close the worksheet window, (b) click the "Save & quit" button th
 
 ---
 
-archive/issue_comments_056199.json:
+archive/issue_comments_056097.json:
 ```json
 {
     "body": "Replying to [comment:1 jhpalmieri]:\n> Either I don't understand the problem, or I'm not having it.  What Sage version, browser, and OS?\n\n\n\n\nI am having this issue with Sage-4.1.1 in Ubuntu 9.04 (Thinkpad x61-tablet) with both \nFirefox/Google Chrome. I guess, you might see this issue if you restart the worksheet \n(Action-->Restart Worksheet).",
     "created_at": "2009-08-23T23:46:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56199",
-    "user": "@golam-m-hossain"
+    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56097",
+    "user": "https://github.com/golam-m-hossain"
 }
 ```
 
@@ -80,15 +79,15 @@ Firefox/Google Chrome. I guess, you might see this issue if you restart the work
 
 ---
 
-archive/issue_comments_056200.json:
+archive/issue_comments_056098.json:
 ```json
 {
     "body": "I cannot reproduce this issue in Sage-4.1.2 using sagenb-0.4. Can someone please confirm, and if so, close this ticket?",
     "created_at": "2009-10-25T19:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56200",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56098",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -98,15 +97,15 @@ I cannot reproduce this issue in Sage-4.1.2 using sagenb-0.4. Can someone please
 
 ---
 
-archive/issue_comments_056201.json:
+archive/issue_comments_056099.json:
 ```json
 {
     "body": "I don't see this any more, either.  Can we close it?",
     "created_at": "2009-12-22T00:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56201",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56099",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -116,15 +115,15 @@ I don't see this any more, either.  Can we close it?
 
 ---
 
-archive/issue_comments_056202.json:
+archive/issue_comments_056100.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-22T17:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6815",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56202",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6815#issuecomment-56100",
+    "user": "https://github.com/williamstein"
 }
 ```
 

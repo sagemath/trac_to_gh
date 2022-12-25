@@ -6,15 +6,14 @@ archive/issues_000953.json:
     "body": "Assignee: @williamstein\n\nWith  axiom4sage-0.3.1 installed:\n\nThis is terrible.  \n\n\n```\nwas@ubuntu:~/d/sage/sage/interfaces$ sage -t --optional axiom.py\nsage -t --optional axiom.py                                 **********************************************************************\nFile \"axiom.py\", line 38:\n    sage: axiom('3 * 5')                     # optional\nExpected:\n    15\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"axiom.py\", line 40:\n    sage: a = axiom(3) * axiom(5); a         # optional\nExpected:\n    15\nGot:\n    <BLANKLINE>\n      5                                                                                                                                                                                                                          Type: PositiveInteger\n**********************************************************************\nFile \"axiom.py\", line 56:\n    sage: F = axiom.factor('x^5 - y^5'); F      # optional\nExpected:\n               4      3    2 2    3     4\n    - (y - x)(y  + x y  + x y  + x y + x )\nGot:\n    15\n**********************************************************************\nFile \"axiom.py\", line 61:\n    sage: F.type()                              # optional\nExpected:\n    Factored Polynomial Integer\nGot:\n    PositiveInteger\n**********************************************************************\nFile \"axiom.py\", line 69:\n    sage: a = axiom('2/3'); a          # optional\nExpected:\n    2\n    -\n    3\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"axiom.py\", line 73:\n    sage: str(a)                       # optional\nExpected:\n    '2/3'\nGot:\n    '             4      3    2 2    3     4\\r\\n  - (y - x)(y  + x y  + x y  + x y + x )'\n**********************************************************************\nFile \"axiom.py\", line 76:\n    sage: str(a)                       # optional\nExpected:\n    'x*x+3/7'\nGot:\n    ''\n**********************************************************************\nFile \"axiom.py\", line 84:\n    sage: print axiom.eval('factor(x^5 - y^5)')   # optional\nExpected:\n               4      3    2 2    3     4\n    - (y - x)(y  + x y  + x y  + x y + x )\n    <BLANKLINE>\n    Type: Factored Polynomial Integer\nGot:\n    unparse(sage2::InputForm)\n\n       >> Fortran translation error:\n       No corresponding Fortran structure for:\n\n       (y - x) :: Polynomial Integer\n\n       >> Fortran translation error:\n       No corresponding Fortran structure for:\n\n         4      3    2 2    3     4\n       (y  + x y  + x y  + x y + x ) :: Polynomial Integer\n\n       (10)  \"-primeFactor(,1)*primeFactor(,1)\"\n                                                                                                                                                                                                                                             Type: String\n    <BLANKLINE>\n**********************************************************************\nFile \"axiom.py\", line 94:\n    sage: f^2                                     # optional\nExpected:\n     10     5 5    10\n    y   - 2x y  + x\nGot:\n    <BLANKLINE>\n**********************************************************************\nFile \"axiom.py\", line 97:\n    sage: f.factor()                              # optional\nExpected:\n               4      3    2 2    3     4\n    - (y - x)(y  + x y  + x y  + x y + x )\nGot:\n    <BLANKLINE>\n      2  -  3                                                                                                                                                                                                                        Type: Fraction Integer\n**********************************************************************\nFile \"axiom.py\", line 110:\n    sage: axiom('1/100 + 1/101')                  # optional\nExpected:\n       201\n      -----\n      10100\nGot:\n    <BLANKLINE>\n       2   3  x  + -       7                                                                                                                                                                                                             Type: Polynomial Fraction Integer\n**********************************************************************\nFile \"axiom.py\", line 115:\n    sage: a = axiom('(1 + sqrt(2))^5'); a         # optional\nExpected:\n         +-+\n      29\\|2  + 41\nGot:\n                 4      3    2 2    3     4  - (y - x)(y  + x y  + x y  + x y + x )                                                                                                                                                                                                             Type: Factored Polynomial Integer\n**********************************************************************\nFile \"axiom.py\", line 458:\n    sage: v = axiom('[i*x^i for i in 0..5]'); v          # optional\nExpected:\n           2   3   4   5\n    [0,x,2x ,3x ,4x ,5x ]\nGot:\n    <BLANKLINE>\n      2                                                                                                                                                                                                                         Type: PositiveInteger\n**********************************************************************\nFile \"axiom.py\", line 461:\n    sage: v[4]                                           # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[1]>\", line 1, in <module>\n        v[Integer(4)]                                           # optional###line 461:\n    sage: v[4]                                           # optional\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 472, in __getitem__\n        if n <= 0 or n > len(self):\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 444, in __len__\n        return int(s[:i-1])\n    ValueError: invalid literal for int() with base 10: '10     5 5    10\\r\\n  y   - 2x y  + x\\r\\n                                                                                                                                                                   '\n**********************************************************************\nFile \"axiom.py\", line 464:\n    sage: v[1]                                           # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[2]>\", line 1, in <module>\n        v[Integer(1)]                                           # optional###line 464:\n    sage: v[1]                                           # optional\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 472, in __getitem__\n        if n <= 0 or n > len(self):\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 444, in __len__\n        return int(s[:i-1])\n    ValueError: invalid literal for int() with base 10: ''\n**********************************************************************\nFile \"axiom.py\", line 466:\n    sage: v[10]                                          # optional\nExpected:\n    Traceback (most recent call last):\n    ...\n    IndexError: index out of range\nGot:\n    Traceback (most recent call last):\n      File \"/home/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[3]>\", line 1, in <module>\n        v[Integer(10)]                                          # optional###line 466:\n    sage: v[10]                                          # optional\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 472, in __getitem__\n        if n <= 0 or n > len(self):\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 444, in __len__\n        return int(s[:i-1])\n    ValueError: invalid literal for int() with base 10: ''\n**********************************************************************\nFile \"axiom.py\", line 359:\n    sage: a == b                                      # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_7[1]>\", line 1, in <module>\n        a == b                                      # optional###line 359:\n    sage: a == b                                      # optional\n      File \"element.pyx\", line 623, in element.Element.__richcmp__\n      File \"element.pyx\", line 595, in element.Element._richcmp\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 381, in __cmp__\n        elif P('%s > %s'%(self.name(), other.name())).__repr__().strip() == t:\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 417, in __repr__\n        return self.str()\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 404, in str\n        raise RuntimeError, s\n    RuntimeError: unparse(sage5::InputForm)\n\n       >> Fortran translation error:\n       No corresponding Fortran structure for:\n\n       (y - x) :: Polynomial Integer\n\n       >> Fortran translation error:\n       No corresponding Fortran structure for:\n\n         4      3    2 2    3     4\n       (y  + x y  + x y  + x y + x ) :: Polynomial Integer\n\n       (23)  \"-primeFactor(,1)*primeFactor(,1)\"\n                                                                                                                                                                                                                                             Type: String\n\n**********************************************************************\nFile \"axiom.py\", line 365:\n    sage: b < a                                       # optional\nExpected:\n    False\nGot:\n    True\n**********************************************************************\nFile \"axiom.py\", line 367:\n    sage: b > a                                       # optional\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"axiom.py\", line 438:\n    sage: len(v)                                      # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/was/s/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_9[1]>\", line 1, in <module>\n        len(v)                                      # optional###line 438:\n    sage: len(v)                                      # optional\n      File \"/home/was/s/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 444, in __len__\n        return int(s[:i-1])\n    ValueError: invalid literal for int() with base 10: ''\n**********************************************************************\n4 items had failures:\n  12 of  18 in __main__.example_0\n   4 of   4 in __main__.example_10\n   3 of   8 in __main__.example_7\n   1 of   2 in __main__.example_9\n***Test Failed*** 20 failures.\nFor whitespace errors, see the file .doctest_axiom.py\n         [3.8 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t --optional axiom.py\nTotal time for all tests: 3.8 seconds\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/953\n\n",
     "created_at": "2007-10-20T23:49:20Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "the axiom / sage interface is currently totally broken, at least on 64-bit linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/953",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -287,15 +286,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/953
 
 ---
 
-archive/issue_comments_005803.json:
+archive/issue_comments_005785.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to interfaces.",
     "created_at": "2007-10-20T23:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5803",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5785",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -305,15 +304,15 @@ Changing component from algebraic geometry to interfaces.
 
 ---
 
-archive/issue_comments_005804.json:
+archive/issue_comments_005786.json:
 ```json
 {
     "body": "My results on my laptop and on sage.math are much better.  Here are the doctest failures I get:\n\n```\nsage -t -optional el/sage-bday2/sage/interfaces/axiom.py    **********************************************************************\nFile \"axiom.py\", line 56:\n    sage: F = axiom.factor('x^5 - y^5'); F      # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[5]>\", line 1, in <module>\n        F = axiom.factor('x^5 - y^5'); F      # optional###line 56:\n    sage: F = axiom.factor('x^5 - y^5'); F      # optional\n      File \"/home/cwitty/sage/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 417, in __repr__\n        return self.str()\n      File \"/home/cwitty/sage/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 404, in str\n        raise RuntimeError, s\n    RuntimeError: unparse(sage2::InputForm)\n\n    unparse(sage2::InputForm)\n\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\n\n     \n\n       >> Fortran translation error:\n\n       No corresponding Fortran structure for:\n\n    \n\n       (y - x) :: Polynomial Integer\n\n     \n\n       >> Fortran translation error:\n\n       No corresponding Fortran structure for:\n\n    \n\n         4      3    2 2    3     4\n\n       (y  + x y  + x y  + x y + x ) :: Polynomial Integer\n\n    \n\n       (10)  \"-primeFactor(,1)*primeFactor(,1)\"\n\n                                                                                                                                                                                                                                             Type: String\n\n\n**********************************************************************\nFile \"axiom.py\", line 69:\n    sage: a = axiom('2/3'); a          # optional\nExpected:\n    2\n    -\n    3\nGot:\n    2/3\n**********************************************************************\nFile \"axiom.py\", line 73:\n    sage: str(a)                       # optional\nExpected:\n    '2/3'\nGot:\n    '  2\\r\\n  -\\r\\n  3'\n**********************************************************************\nFile \"axiom.py\", line 76:\n    sage: str(a)                       # optional\nExpected:\n    'x*x+3/7'\nGot:\n    '   2   3\\r\\n  x  + -\\r\\n       7'\n**********************************************************************\nFile \"axiom.py\", line 94:\n    sage: f^2                                     # optional\nExpected:\n     10     5 5    10\n    y   - 2x y  + x\nGot:\n    y**10+(-2*x**5*y**5)+x**10\n**********************************************************************\nFile \"axiom.py\", line 97:\n    sage: f.factor()                              # optional\nException raised:\n    Traceback (most recent call last):\n      File \"/home/cwitty/sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[15]>\", line 1, in <module>\n        f.factor()                              # optional###line 97:\n    sage: f.factor()                              # optional\n      File \"/home/cwitty/sage/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 417, in __repr__\n        return self.str()\n      File \"/home/cwitty/sage/local/lib/python2.5/site-packages/sage/interfaces/axiom.py\", line 404, in str\n        raise RuntimeError, s\n    RuntimeError: unparse(sage5::InputForm)\n\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\ufffd[C\n\n     \n\n       >> Fortran translation error:\n\n       No corresponding Fortran structure for:\n\n    \n\n       (y - x) :: Polynomial Integer\n\n     \n\n       >> Fortran translation error:\n\n       No corresponding Fortran structure for:\n\n    \n\n         4      3    2 2    3     4\n\n       (y  + x y  + x y  + x y + x ) :: Polynomial Integer\n\n    \n\n       (23)  \"-primeFactor(,1)*primeFactor(,1)\"\n\n                                                                                                                                                                                                                                             Type: String\n\n\n**********************************************************************\nFile \"axiom.py\", line 110:\n    sage: axiom('1/100 + 1/101')                  # optional\nExpected:\n       201\n      -----\n      10100\nGot:\n    201/10100\n**********************************************************************\nFile \"axiom.py\", line 115:\n    sage: a = axiom('(1 + sqrt(2))^5'); a         # optional\nExpected:\n         +-+\n      29\\|2  + 41\nGot:\n      Cannot convert from type AlgebraicNumber to InputForm for value     +-+  29\\|2  + 41\n    <BLANKLINE>\n**********************************************************************\nFile \"axiom.py\", line 458:\n    sage: v = axiom('[i*x^i for i in 0..5]'); v          # optional\nExpected:\n           2   3   4   5\n    [0,x,2x ,3x ,4x ,5x ]\nGot:\n    [0,x,2*x*x,3*x**3,4*x**4,5*x**5]\n**********************************************************************\nFile \"axiom.py\", line 461:\n    sage: v[4]                                           # optional\nExpected:\n      3\n    3x\nGot:\n    3*x**3\n**********************************************************************\n2 items had failures:\n   8 of  18 in __main__.example_0\n   2 of   4 in __main__.example_10\n***Test Failed*** 10 failures.\nFor whitespace errors, see the file .doctest_axiom.py\n\t [2.9 s]\nexit code: 256\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional el/sage-bday2/sage/interfaces/axiom.py\nTotal time for all tests: 2.9 seconds\n```\n",
     "created_at": "2007-10-21T00:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5804",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5786",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -501,15 +500,15 @@ Total time for all tests: 2.9 seconds
 
 ---
 
-archive/issue_comments_005805.json:
+archive/issue_comments_005787.json:
 ```json
 {
     "body": "Patch attached.",
     "created_at": "2007-10-21T02:16:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5805",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5787",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -519,15 +518,15 @@ Patch attached.
 
 ---
 
-archive/issue_comments_005806.json:
+archive/issue_comments_005788.json:
 ```json
 {
     "body": "Attachment [axiom.patch](tarball://root/attachments/some-uuid/ticket953/axiom.patch) by @mwhansen created at 2007-10-21 02:16:51",
     "created_at": "2007-10-21T02:16:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5806",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5788",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -537,15 +536,15 @@ Attachment [axiom.patch](tarball://root/attachments/some-uuid/ticket953/axiom.pa
 
 ---
 
-archive/issue_comments_005807.json:
+archive/issue_comments_005789.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-21T02:20:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5807",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/953#issuecomment-5789",
+    "user": "https://github.com/williamstein"
 }
 ```
 

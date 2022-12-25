@@ -6,7 +6,7 @@ archive/issues_002728.json:
     "body": "Assignee: @timabbott\n\nI think these are problems with the maxima doctests below, unless there's a good reason why things should be printing without the \"0.\" at the front or why small roundoff errors should matter.  None of them are materially different answers.\n\nThis is running with maxima 5.13.0 (the current in Debian lenny).\n\nsage -t  devel/sage-main/sage/interfaces/maxima.py          **********************************************************************\nFile \"maxima.py\", line 795:\n    sage: f(3.2)\nExpected:\n    -.05837414342758009\nGot:\n    -0.05837414342758\n**********************************************************************\nFile \"maxima.py\", line 798:\n    sage: f(2,3.5)\nExpected:\n    sin(2)-.9364566872907963\nGot:\n    sin(2)-0.9364566872908\n**********************************************************************\nFile \"maxima.py\", line 816:\n    sage: float(t(2))\nExpected:\n    0.90929742682568171\nGot:\n    0.90929742682568004\n**********************************************************************\nFile \"maxima.py\", line 1543:\n    sage: maxima('exp(-sqrt(x))').nintegral('x',0,1)\nExpected:\n    (.5284822353142306, 4.163314137883845E-11, 231, 0)\nGot:\n    (0.52848223531423, 4.1633141378838445E-11, 231, 0)\n**********************************************************************\nFile \"maxima.py\", line 1588:\n    sage: f.numer()         # I wonder how to get a real number (~1.463)??\nExpected:\n    -.8862269254527579*%i*erf(%i)\nGot:\n    -0.88622692545276*%i*erf(%i)\n**********************************************************************\n3 items had failures:\n   3 of  14 in __main__.example_12\n   1 of   4 in __main__.example_44\n   1 of   8 in __main__.example_45\n***Test Failed*** 5 failures.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2728\n\n",
     "created_at": "2008-03-29T23:43:26Z",
     "labels": [
-        "debian-package",
+        "component: debian-package",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002728.json:
     "title": "doctest failures for maxima in Debian packaged sage 2.10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2728",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -74,15 +74,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2728
 
 ---
 
-archive/issue_comments_018789.json:
+archive/issue_comments_018750.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-03-30T09:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2728#issuecomment-18789",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2728#issuecomment-18750",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -92,15 +92,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_018790.json:
+archive/issue_comments_018751.json:
 ```json
 {
     "body": "This is not **Sage Specific**: It might be due to Debian packaging an older version of Maxima or alternatively be caused by using gcl instead of clisp. It is certainly borderline, but I don't think in this case it is on our end to fix this. \n\nCheers,\n\nMichael",
     "created_at": "2008-03-30T09:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2728#issuecomment-18790",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2728#issuecomment-18751",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

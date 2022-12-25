@@ -6,15 +6,14 @@ archive/issues_007045.json:
     "body": "Assignee: tbd\n\nCC:  mvngu\n\nThe current libgcrypt in Sage will not build with Sun Studio. I managed to mess up an update #6758, but Minh's correction ignores my fixes to the C source code, so that will not build on Sun Studio. \n\nHere is an spkg with the latest upstream version. \n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/libgcrypt-1.4.4/\n\nIt's been tested on\n\n* Sun Studio 12.1 on my own SPARC running Solaris 10 update 7 in 32-bit mode\n* sage.math (64-bit)\n* bsd.math in 32-bit mode only \n\n\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7045\n\n",
     "created_at": "2009-09-28T01:11:08Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with spkg; needs review] update libgcrypt to the latest version 1.4.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7045",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7045
 
 ---
 
-archive/issue_comments_058321.json:
+archive/issue_comments_058212.json:
 ```json
 {
     "body": "I have checked in all existing changes in David's name. Based on David's spkg, I did some general clean up:\n\n* spell check the files `SPKG.txt` and `spkg-install`\n* format spkg-check and spkg-install in a consistent way\n \nA new spkg based on David's and with the above changes is up at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/libgcrypt-1.4.4.p0.spkg",
     "created_at": "2009-09-28T06:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58321",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58212",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -71,15 +70,15 @@ http://sage.math.washington.edu/home/mvngu/release/spkg/standard/libgcrypt-1.4.4
 
 ---
 
-archive/issue_comments_058322.json:
+archive/issue_comments_058213.json:
 ```json
 {
     "body": "See #5833 for a duplicate of the current ticket.",
     "created_at": "2009-10-01T06:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58322",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58213",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -89,15 +88,15 @@ See #5833 for a duplicate of the current ticket.
 
 ---
 
-archive/issue_comments_058323.json:
+archive/issue_comments_058214.json:
 ```json
 {
     "body": "\n```\n> > Building on 64-bit SuSE with SAGE_CHECK=\"yes\" failed at libgcrypt,\n> > with a bunch of errors in the gcrypt test script:\n>\n> Can you try using the updated libgcrypt spkg at ticket #7045 [1]?\n>\n> [1]http://trac.sagemath.org/sage_trac/ticket/7045\n>\n> --\n> Regards\n> Minh Van Nguyen\n\nThe new spkg 1.4.4.p0 seems to fix the problem.\n\nDavid\n```\n",
     "created_at": "2009-10-01T15:52:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58323",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58214",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -124,15 +123,15 @@ David
 
 ---
 
-archive/issue_comments_058324.json:
+archive/issue_comments_058215.json:
 ```json
 {
     "body": "Built with SAGE_CHECK=\"yes\" on Ubuntu 9.10 beta (AMD64) and everything worked. Also worked in the context of a 'make testlong'. \n\nAdam",
     "created_at": "2009-10-04T09:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58324",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58215",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -144,15 +143,15 @@ Adam
 
 ---
 
-archive/issue_comments_058325.json:
+archive/issue_comments_058216.json:
 ```json
 {
     "body": "Adam,\n\nDo you have a copy of this spkg?  The link above is now broken.",
     "created_at": "2009-10-16T08:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58325",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58216",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -164,15 +163,15 @@ Do you have a copy of this spkg?  The link above is now broken.
 
 ---
 
-archive/issue_comments_058326.json:
+archive/issue_comments_058217.json:
 ```json
 {
     "body": "Replying to [comment:6 mhansen]:\n> Do you have a copy of this spkg?  The link above is now broken.\n\nThe spkg is now restored. Here are the changes I added in addition to drkirkby's changes:\n\n* committed drkirkby's changes in his name\n* spell check the files `SPKG.txt` and `spkg-install`\n* format `spkg-check` and `spkg-install` in a consistent way\n* add executable bits to `spkg-install`",
     "created_at": "2009-10-16T09:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58326",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58217",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -190,15 +189,15 @@ The spkg is now restored. Here are the changes I added in addition to drkirkby's
 
 ---
 
-archive/issue_comments_058327.json:
+archive/issue_comments_058218.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-16T09:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58327",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58218",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -208,15 +207,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_058328.json:
+archive/issue_comments_058219.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2009-10-16T09:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7045",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58328",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7045#issuecomment-58219",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005238.json:
     "body": "Assignee: mabshoff\n\nThis ought to be doable in the 3.4 release once the ReST patches are in:\n\n```\nFLINT ships with a much improved version of qsieve. It is now called mpQS.\n\nIf you do make mpQS in the main directory of  FLINT (make all also\nbuilds it) it will build a program which replaces the old qsieve.\nHowever this program will deal with much smaller integers, and is much\nfaster overall.\n\nIt should have far fewer issues than the old code.\n\nIt also handles numbers with small factors, but still won't handle\nintegers which are perfect powers or primes. These should be scanned\nfor before running mpQS.\n\nThe new program actually uses FLINT for some parts of the computation,\nso it cannot be built standalone (it doesn't link against libflint, it\njust includes the files it needs). I have just verified this program\nstill builds (and works) on sage.math.\n\nBill.\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5238\n\n",
     "created_at": "2009-02-11T23:20:59Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "remove qsieve.spkg and replace it by mpQS (part of FLINT)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5238",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5238
 
 ---
 
-archive/issue_comments_040135.json:
+archive/issue_comments_040057.json:
 ```json
 {
     "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-01T02:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5238",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5238#issuecomment-40135",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5238#issuecomment-40057",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -78,15 +77,15 @@ Michael
 
 ---
 
-archive/issue_comments_040136.json:
+archive/issue_comments_040058.json:
 ```json
 {
     "body": "Close as fixed:\n\n\n```\n[mvngu@sage flint-1.5.0.p4]$ pwd\n/dev/shm/mvngu/sage-4.4.4.alpha0/spkg/standard/flint-1.5.0.p4\n[mvngu@sage flint-1.5.0.p4]$ find src/ | grep 'mpQS'\nsrc/QS/mpQS.h\nsrc/QS/mpQS.c\n[mvngu@sage flint-1.5.0.p4]$ find src/ | grep 'qsieve'\n<no-output>\n```\n",
     "created_at": "2010-06-16T02:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5238",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5238#issuecomment-40136",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5238#issuecomment-40058",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -108,15 +107,15 @@ src/QS/mpQS.c
 
 ---
 
-archive/issue_comments_040137.json:
+archive/issue_comments_040059.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-16T02:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5238",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5238#issuecomment-40137",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5238#issuecomment-40059",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

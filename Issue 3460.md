@@ -6,15 +6,14 @@ archive/issues_003460.json:
     "body": "Assignee: tbd\n\nCC:  ccitro\n\nKeywords: number field power basis\n\nThe patch describes it best.  Very useful.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3460\n\n",
     "created_at": "2008-06-18T03:40:55Z",
     "labels": [
-        "algebra",
-        "minor",
-        "enhancement"
+        "component: algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs review] add power_basis() to number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3460",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: tbd
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3460
 
 ---
 
-archive/issue_comments_024401.json:
+archive/issue_comments_024352.json:
 ```json
 {
     "body": "Attachment [3460-ncalexan-nf-power-basis-1.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-1.patch) by dmharvey created at 2008-06-21 19:04:50\n\nMostly okay, couple of issues:\n\n* in the docstring, `t^d` should be `t^{d-1} `\n* shouldn't QQ get this method too? I suppose this is a more general problem, it's not just this method. Maybe that should be a different ticket.\n* the docstring is slightly ambiguous. \"Return the power basis for this number field over its base field.\": it's not \"the\" power basis, it's \"a\" power basis. Also, \"and t is a root of f(x) in this field\": it's not just any root, it's the root that's being used to represent the elements. Perhaps just merge these sentences.",
     "created_at": "2008-06-21T19:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24401",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24352",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -57,15 +56,15 @@ Mostly okay, couple of issues:
 
 ---
 
-archive/issue_comments_024402.json:
+archive/issue_comments_024353.json:
 ```json
 {
     "body": "Merged in Sage 3.1.alpha1",
     "created_at": "2008-08-10T05:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24402",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24353",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +74,15 @@ Merged in Sage 3.1.alpha1
 
 ---
 
-archive/issue_comments_024403.json:
+archive/issue_comments_024354.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-10T05:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24403",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24354",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_024404.json:
+archive/issue_comments_024355.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-08-10T06:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24404",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24355",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_024405.json:
+archive/issue_comments_024356.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-08-10T06:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24405",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24356",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +128,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_024406.json:
+archive/issue_comments_024357.json:
 ```json
 {
     "body": "Oops, Nick will hopefully get the issues addressed before 3.1.alpha1, so that we can properly close this. \n\nCheers,\n\nMichael",
     "created_at": "2008-08-10T06:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24406",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24357",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -151,15 +150,15 @@ Michael
 
 ---
 
-archive/issue_comments_024407.json:
+archive/issue_comments_024358.json:
 ```json
 {
     "body": "Attachment [3460-ncalexan-nf-power-basis-2.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-2.patch) by @ncalexan created at 2008-08-10 06:41:12\n\nThis addresses the comments about the docstring and adds the desired function to QQ.\n\nIt also addresses a bug in residue_field that I just noticed... sorry for the crosspost.",
     "created_at": "2008-08-10T06:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24407",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24358",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -173,15 +172,15 @@ It also addresses a bug in residue_field that I just noticed... sorry for the cr
 
 ---
 
-archive/issue_comments_024408.json:
+archive/issue_comments_024359.json:
 ```json
 {
     "body": "Attachment [3460-ncalexan-nf-power-basis-3.patch](tarball://root/attachments/some-uuid/ticket3460/3460-ncalexan-nf-power-basis-3.patch) by @ncalexan created at 2008-08-10 18:22:12\n\nFinal patch fixes a one word type in the doctest :)\n\nHopefully it's good now.  All patches are \"from scratch\", i.e. apply only the last patch.",
     "created_at": "2008-08-10T18:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24408",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24359",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -195,15 +194,15 @@ Hopefully it's good now.  All patches are "from scratch", i.e. apply only the la
 
 ---
 
-archive/issue_comments_024409.json:
+archive/issue_comments_024360.json:
 ```json
 {
     "body": "Looks good to me.\n\nPatch number 3 applies cleanly to 3.1.alpha0, and all tests in sage.rings pass.\n\nI note that the implementation for QQ relies on its gen() being 1.  It might be safer to use self(1) instead.  But that's very minor.",
     "created_at": "2008-08-10T19:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24409",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24360",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -217,15 +216,15 @@ I note that the implementation for QQ relies on its gen() being 1.  It might be 
 
 ---
 
-archive/issue_comments_024410.json:
+archive/issue_comments_024361.json:
 ```json
 {
     "body": "Merged 3460-ncalexan-nf-power-basis-3.patch in Sage 3.1.alpha1",
     "created_at": "2008-08-10T20:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24410",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -235,15 +234,15 @@ Merged 3460-ncalexan-nf-power-basis-3.patch in Sage 3.1.alpha1
 
 ---
 
-archive/issue_comments_024411.json:
+archive/issue_comments_024362.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-10T20:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3460",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24411",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3460#issuecomment-24362",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

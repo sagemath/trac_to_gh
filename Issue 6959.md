@@ -6,15 +6,13 @@ archive/issues_006959.json:
     "body": "Assignee: @craigcitro\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6959\n\n",
     "created_at": "2009-09-19T05:01:49Z",
     "labels": [
-        "modular forms",
-        "major",
-        "enhancement"
+        "component: modular forms"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "modular forms -- add aplist and anlist for newforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6959",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @craigcitro
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6959
 
 ---
 
-archive/issue_comments_057561.json:
+archive/issue_comments_057453.json:
 ```json
 {
     "body": "Attachment [trac_6959.patch](tarball://root/attachments/some-uuid/ticket6959/trac_6959.patch) by @williamstein created at 2009-09-19 05:02:55",
     "created_at": "2009-09-19T05:02:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57561",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57453",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [trac_6959.patch](tarball://root/attachments/some-uuid/ticket6959/tra
 
 ---
 
-archive/issue_comments_057562.json:
+archive/issue_comments_057454.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-29T21:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57562",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57454",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -65,15 +63,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_057563.json:
+archive/issue_comments_057455.json:
 ```json
 {
     "body": "Looks mainly good to me -- patch applies and tests (in sage/modular/modform) pass.  One glitch:\n\n```\n        if not all_embeddings: \n \t            return A \n \treturn A \n```\n\nlooks like a typo.\n\nIt does not seem very efficient to factor all the n in the range, and that is not the way I have always done this.  The result is pretty slow -- for example, if you wanted to compute all a_n for n<10^6, this is not good enough:\n\n```\nsage: f = CuspForms(11,2).newforms()[0]; f\nq - 2*q^2 - q^3 + 2*q^4 + q^5 + O(q^6)\nsage: time an = f.anlist(1000)\nCPU times: user 0.40 s, sys: 0.00 s, total: 0.40 s\nWall time: 0.40 s\nsage: time an = f.anlist(10000)\nCPU times: user 13.84 s, sys: 0.79 s, total: 14.63 s\nWall time: 14.65 s\nsage: time an = f.anlist(100000)\n#(gave up waiting after a few minutes)\n```\n\nOn second thoughts it is probably computing the a_p which is slow here.  But are they even cached?\n\n```\nsage: time an = f.aplist(10000)\nCPU times: user 11.09 s, sys: 0.65 s, total: 11.74 s\nWall time: 11.81 s\nsage: time an = f.anlist(10000)\nCPU times: user 13.71 s, sys: 0.69 s, total: 14.40 s\nWall time: 14.53 s\n```\n\n-- it seems not.",
     "created_at": "2009-10-29T21:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57563",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57455",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -119,15 +117,15 @@ Wall time: 14.53 s
 
 ---
 
-archive/issue_comments_057564.json:
+archive/issue_comments_057456.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"newform\".",
     "created_at": "2013-09-01T12:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57564",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57456",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -137,15 +135,15 @@ Changing keywords from "" to "newform".
 
 ---
 
-archive/issue_comments_057565.json:
+archive/issue_comments_057457.json:
 ```json
 {
     "body": "there are three failing doctest (sage 5.12.beta4)",
     "created_at": "2013-09-01T12:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57565",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57457",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -155,15 +153,15 @@ there are three failing doctest (sage 5.12.beta4)
 
 ---
 
-archive/issue_comments_057566.json:
+archive/issue_comments_057458.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2014-06-19T20:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57566",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57458",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -173,15 +171,15 @@ New commits:
 
 ---
 
-archive/issue_comments_057567.json:
+archive/issue_comments_057459.json:
 ```json
 {
     "body": "The 3 failing doctests looks to me like a problem with galois ambiguity (i.e. an algebraic number a1 is replaced by its conjugate -a1). Maybe one can just replace them by the results ?",
     "created_at": "2014-06-19T20:25:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57567",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57459",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -191,15 +189,15 @@ The 3 failing doctests looks to me like a problem with galois ambiguity (i.e. an
 
 ---
 
-archive/issue_comments_057568.json:
+archive/issue_comments_057460.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-03-01T11:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57568",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57460",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -209,15 +207,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_057569.json:
+archive/issue_comments_057461.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-06-08T19:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57569",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57461",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -227,15 +225,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_057570.json:
+archive/issue_comments_057462.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2018-03-11T19:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6959",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57570",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/6959#issuecomment-57462",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 

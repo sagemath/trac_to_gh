@@ -6,7 +6,7 @@ archive/issues_002304.json:
     "body": "Assignee: somebody\n\nIt looks like the module `sage.rings.sparse_poly` is deprecated and should be removed. I can't find any other references to it in the Sage library. Awaiting confirmation from wstein.\n\nfrom IRC:\n\n```\ncwitty: according to  search_src('sparse_poly') it's never referred to (never imported, etc.)...\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2304\n\n",
     "created_at": "2008-02-25T21:31:04Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002304.json:
     "title": "sparse_poly should probably be removed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2304",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2304
 
 ---
 
-archive/issue_comments_015329.json:
+archive/issue_comments_015296.json:
 ```json
 {
     "body": "But David, my code's so fast.  Could YOU square sum(n*x^n for n in range(1000))\nin less than 1.24 seconds!?  :-)\n\n\nSeriously though, I wrote that code before version 0.1 of Sage as an experiment.  It can safely be removed.  If one really did want sparse polys that are fast, the best thing for now would probably to use libsingular  with one variable, e.g., \n\n\n```\nsage: R.<x,y> = MPolynomialRing(QQ,2)\nsage: type(x)\n<type 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular'>\nsage: f = sum(n*x^(n^2) for n in primes(100))\nsage: time g = f*f\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00\nsage: timeit('z=f*f')\n625 loops, best of 3: 35.5 \u00b5s per loop\n\n```\n\n\nThat said Singular polys only allow degrees up to 65K:\n\n\n```\nsage: x^66000\n<type 'exceptions.TypeError'>: exponent is too large, max. is 65535\n```\n\n\nSo I say delete sparse_poly.* from Sage.  If we someday want sparse polys that code could be revisited, or maybe flint will already have something much better.",
     "created_at": "2008-02-25T21:44:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15329",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15296",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +85,15 @@ So I say delete sparse_poly.* from Sage.  If we someday want sparse polys that c
 
 ---
 
-archive/issue_comments_015330.json:
+archive/issue_comments_015297.json:
 ```json
 {
     "body": "Still there in 3.2.1, but trivial to fix.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-22T23:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15330",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15297",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +107,15 @@ Michael
 
 ---
 
-archive/issue_comments_015331.json:
+archive/issue_comments_015298.json:
 ```json
 {
     "body": "Changing assignee from somebody to mabshoff.",
     "created_at": "2008-11-22T23:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15331",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15298",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -125,15 +125,15 @@ Changing assignee from somebody to mabshoff.
 
 ---
 
-archive/issue_comments_015332.json:
+archive/issue_comments_015299.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-11-22T23:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15332",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15299",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -143,15 +143,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_015333.json:
+archive/issue_comments_015300.json:
 ```json
 {
     "body": "Attachment [trac_2304.patch](tarball://root/attachments/some-uuid/ticket2304/trac_2304.patch) by mabshoff created at 2008-11-22 23:52:35",
     "created_at": "2008-11-22T23:52:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15333",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15300",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -161,15 +161,15 @@ Attachment [trac_2304.patch](tarball://root/attachments/some-uuid/ticket2304/tra
 
 ---
 
-archive/issue_comments_015334.json:
+archive/issue_comments_015301.json:
 ```json
 {
     "body": "Fine by me.",
     "created_at": "2008-11-22T23:53:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15334",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15301",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -179,15 +179,15 @@ Fine by me.
 
 ---
 
-archive/issue_comments_015335.json:
+archive/issue_comments_015302.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1.alpha0",
     "created_at": "2008-11-23T00:04:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15335",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15302",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -197,15 +197,15 @@ Merged in Sage 3.2.1.alpha0
 
 ---
 
-archive/issue_comments_015336.json:
+archive/issue_comments_015303.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-23T00:04:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2304",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15336",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2304#issuecomment-15303",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

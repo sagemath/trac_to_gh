@@ -6,7 +6,7 @@ archive/issues_007583.json:
     "body": "Assignee: mvngu\n\nCC:  logix@foobar.franken.de\n\nFrom IRC:\n\n```\n07:34 < logix> help('sage.numerical.optimize.find_minimum_on_interval')\n07:35 < logix> shouldn't this say \"f\" instead of \"self\"?\n07:36 < mvngu> logix: Yes.\n07:36 < mvngu> logix: Can you create a ticket for it?\n07:37 < logix> mvngu: i don't have a trac account...\n07:38 < logix> i'd ask wstein, but i don't think it's worth the hassle just for \n               this small thing... so could you perhaps? :)\n07:38 < mvngu> Oh, I'll create a ticket then...\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7583\n\n",
     "created_at": "2009-12-02T15:40:56Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -43,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7583
 
 ---
 
-archive/issue_comments_064644.json:
+archive/issue_comments_064528.json:
 ```json
 {
     "body": "Attachment [trac_7583-typo.patch](tarball://root/attachments/some-uuid/ticket7583/trac_7583-typo.patch) by mvngu created at 2009-12-02 15:46:25\n\nbased on Sage 4.3.alpha0",
     "created_at": "2009-12-02T15:46:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7583#issuecomment-64644",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7583#issuecomment-64528",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -63,15 +63,15 @@ based on Sage 4.3.alpha0
 
 ---
 
-archive/issue_comments_064645.json:
+archive/issue_comments_064529.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-02T15:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7583#issuecomment-64645",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7583#issuecomment-64529",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -81,15 +81,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_064646.json:
+archive/issue_comments_064530.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-12-02T18:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7583#issuecomment-64646",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7583#issuecomment-64530",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -99,15 +99,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_064647.json:
+archive/issue_comments_064531.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-02T18:19:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7583#issuecomment-64647",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7583#issuecomment-64531",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

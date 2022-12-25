@@ -6,15 +6,14 @@ archive/issues_001766.json:
     "body": "Assignee: tba\n\nThis is patch for the latex_embed inside the ${SAGE_BASE}/examples directory.\n\nNow embedding plots works and makes it more usable!\n\n\nRead included README.txt for more information and open the included PDF example.pdf to see the result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1766\n\n",
     "created_at": "2008-01-13T22:58:57Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch] enhancing latex embedding with plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1766",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: tba
@@ -34,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1766
 
 ---
 
-archive/issue_comments_011152.json:
+archive/issue_comments_011125.json:
 ```json
 {
     "body": "[here a zip file of the folder](http://homepage.univie.ac.at/harald.schilly/sage/latex_embed.zip)",
     "created_at": "2008-01-14T00:51:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11152",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11125",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -52,15 +51,15 @@ archive/issue_comments_011152.json:
 
 ---
 
-archive/issue_comments_011153.json:
+archive/issue_comments_011126.json:
 ```json
 {
     "body": "Attachment [latex_embedding.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embedding.hg) by @haraldschilly created at 2008-01-16 21:57:26\n\nignore the .hg, it is outdated and i cannot upload the current one because of it's size\n\n\n\n** use the link above to the zip file! **",
     "created_at": "2008-01-16T21:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11153",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11126",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -76,15 +75,15 @@ ignore the .hg, it is outdated and i cannot upload the current one because of it
 
 ---
 
-archive/issue_comments_011154.json:
+archive/issue_comments_011127.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2008-01-16T22:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11154",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11127",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -94,15 +93,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_011155.json:
+archive/issue_comments_011128.json:
 ```json
 {
     "body": "It might be nice to change the filenames used for plotting to .pdf instead of .png.\nThis should automagically turn the included plots into vector graphics instead of bitmaps. It works for the example.tex in the .zip, but I'm not familiar enough with the plotting code to know if it has any drawbacks.",
     "created_at": "2008-01-16T22:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11155",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11128",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -113,15 +112,15 @@ This should automagically turn the included plots into vector graphics instead o
 
 ---
 
-archive/issue_comments_011156.json:
+archive/issue_comments_011129.json:
 ```json
 {
     "body": "Plotting pdf's by default may have drawbacks -- at least last time I checked the pdf rendering for matplotlib was less mature than the png renderer.   This could be an issue in some cases.  However, of course getting vector graphics is a huge plus.",
     "created_at": "2008-01-17T02:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11156",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11129",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -131,15 +130,15 @@ Plotting pdf's by default may have drawbacks -- at least last time I checked the
 
 ---
 
-archive/issue_comments_011157.json:
+archive/issue_comments_011130.json:
 ```json
 {
     "body": "Replying to [comment:4 wjp]:\n> This should automagically turn the included plots into vector graphics instead of bitmaps. \n\nahh okay, if this works for all types of plots (plot, matrix_plot, graphs, 3d graphs, ...) then it should be done that way. i'll try this. perhaps i'm able to make the extension customizable, then the user can select it and pdf is default. or if there are useful errors, it fallbacks from pdf to png.",
     "created_at": "2008-01-17T11:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11157",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11130",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -152,15 +151,15 @@ ahh okay, if this works for all types of plots (plot, matrix_plot, graphs, 3d gr
 
 ---
 
-archive/issue_comments_011158.json:
+archive/issue_comments_011131.json:
 ```json
 {
     "body": "I've updated the code to default to .pdf files now. Plots are fine and output-quality much better now!\n\n\nIt's also possible to pass more arguments to the show command. Therefore it is possible to switch back to .png if there are problems.\n\n\nBut plotting 3d-Graphs doesn't work (and has never) because the .show(..) command of the tachyon renderer has no filename= option. essentially, this .show() is entirely different (also docstring missing) - i'll open a ticket for this and possibly related problems.",
     "created_at": "2008-01-17T23:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11158",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11131",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -176,15 +175,15 @@ But plotting 3d-Graphs doesn't work (and has never) because the .show(..) comman
 
 ---
 
-archive/issue_comments_011159.json:
+archive/issue_comments_011132.json:
 ```json
 {
     "body": "Replying to [comment:7 schilly]:\n> ...the .show(..) command of the tachyon renderer has no filename= option. essentially, this .show() is entirely different (also docstring missing) - i'll open a ticket for this and possibly related problems.\n\nThis is now #1925",
     "created_at": "2008-01-25T12:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11159",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11132",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -197,15 +196,15 @@ This is now #1925
 
 ---
 
-archive/issue_comments_011160.json:
+archive/issue_comments_011133.json:
 ```json
 {
     "body": "Attachment [latex_embed_updates.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.hg) by @dandrake created at 2008-02-25 05:55:13\n\npatch to current version of sagetex.{sty,py}",
     "created_at": "2008-02-25T05:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11160",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11133",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -217,15 +216,15 @@ patch to current version of sagetex.{sty,py}
 
 ---
 
-archive/issue_comments_011161.json:
+archive/issue_comments_011134.json:
 ```json
 {
     "body": "patch to current version of sagetex.{sty,py}",
     "created_at": "2008-02-25T06:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11161",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11134",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -235,15 +234,15 @@ patch to current version of sagetex.{sty,py}
 
 ---
 
-archive/issue_comments_011162.json:
+archive/issue_comments_011135.json:
 ```json
 {
     "body": "Attachment [latex_embed_updates.2.hg](tarball://root/attachments/some-uuid/ticket1766/latex_embed_updates.2.hg) by @dandrake created at 2008-02-25 07:03:21\n\nPlease ignore the bundles! I'm still new to Mercurial.\n\nThe patch updates sagetex.{sty,py}, but there's more to be done. The biggest issue is that when running Sage on the produced .sage file, it pops up windows with all the plots. (In Ubuntu gutsy, at least.) We need to find a way to keep Sage from doing this while processing the script.",
     "created_at": "2008-02-25T07:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11162",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11135",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -257,15 +256,15 @@ The patch updates sagetex.{sty,py}, but there's more to be done. The biggest iss
 
 ---
 
-archive/issue_comments_011163.json:
+archive/issue_comments_011136.json:
 ```json
 {
     "body": "I've made huge improvements to the sagetex stuff. The .sty file has been rewritten and now works much better; all the previous problems have been fixed. The source code for both the .sty and .py files are bundled into a Docstrip .dtx file, which allows much better documentation.\n\nPlease try this out! I'd like to get it in soon.",
     "created_at": "2008-03-03T11:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11163",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11136",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -277,15 +276,15 @@ Please try this out! I'd like to get it in soon.
 
 ---
 
-archive/issue_comments_011164.json:
+archive/issue_comments_011137.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"latex, sagetex, latex_embed\".",
     "created_at": "2008-03-03T11:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11164",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11137",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -295,15 +294,15 @@ Changing keywords from "" to "latex, sagetex, latex_embed".
 
 ---
 
-archive/issue_comments_011165.json:
+archive/issue_comments_011138.json:
 ```json
 {
     "body": "I can't apply this cleanly...\n\n```\ndfdeshom@sage:~/custom/sage/examples$ ../sage -hg import 1766.patch\napplying 1766.patch\nnot in dirstate: latex_embed/auto/example.el!\nnot in dirstate: latex_embed/auto/sagetex.el!\n```\n\n\nShould I have the above-mentioned files? in latex_embed/?",
     "created_at": "2008-03-04T03:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11165",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11138",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -323,15 +322,15 @@ Should I have the above-mentioned files? in latex_embed/?
 
 ---
 
-archive/issue_comments_011166.json:
+archive/issue_comments_011139.json:
 ```json
 {
     "body": "Replying to [comment:12 dfdeshom]:\n> I can't apply this cleanly...\n...\n> Should I have the above-mentioned files? in latex_embed/?\n\nThose aren't related to the sagetex stuff; they are something that emacs makes. I deleted them since they're not directly related to sagetex (and because I'm a vim person :).\n\nAt any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.",
     "created_at": "2008-03-04T03:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11166",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11139",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -348,15 +347,15 @@ At any rate, they are not important and you can ignore problems related to them.
 
 ---
 
-archive/issue_comments_011167.json:
+archive/issue_comments_011140.json:
 ```json
 {
     "body": "Replying to [comment:13 ddrake]:\n> \n> At any rate, they are not important and you can ignore problems related to them. I can redo the patch if you'd like.\n\nYes, could you please redo it?",
     "created_at": "2008-03-04T03:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11167",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11140",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -370,15 +369,15 @@ Yes, could you please redo it?
 
 ---
 
-archive/issue_comments_011168.json:
+archive/issue_comments_011141.json:
 ```json
 {
     "body": "This patch applies cleanly to 2.10.2 for me.\n\nOverall, I think this is great stuff!  I give this a positive review pending addressing a few concerns:\n\n* when latexing a file, if a plot does not exist, the texing stops and gives an error.  Pressing enter through the errors, running sage, and then texing again works, but it is still disconcerting.  Is there any way to ignore the non-existence of a plot file, maybe with a warning that sage needs to be run?\n\n* The patch says that E2.sobj changed.  Can we delete the file?\n\n* In the readme, at first glance, it looks like I just need to follow the 1, 2, 3, 4 instructions, which of course give an error if I haven't latexed the dtx file yet.  Can you somehow highlight that in the readme instead of it being buried right before what looks like the important, step-by-step instructions?\n\n* credit: somewhere, I think you ought to mention the people that did the original interface.  Maybe a note in the readme might be appropriate.  It also looks weird to have \"and others\" in the documentation...how about either explicitly putting their names there or just put your name there and a note mentioning that it is based on an original interface by whoever.  I'm not sure the best way to handle this (you're the one that knows how much code was there before and how much code you've done), but some note somewhere probably is in order.\n\nThat said, as soon as I saw this patch I immediately tested it, saw that it worked great, and sent the example pdf and tex file to a friend who was discussing the sage and tex combination just this last weekend.  I know he'll be excited!",
     "created_at": "2008-03-04T04:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11168",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11141",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -400,15 +399,15 @@ That said, as soon as I saw this patch I immediately tested it, saw that it work
 
 ---
 
-archive/issue_comments_011169.json:
+archive/issue_comments_011142.json:
 ```json
 {
     "body": "Replying to [comment:15 jason]:\n>\n>  * when latexing a file, if a plot does not exist, the texing stops and gives an error.  Pressing enter through the errors, running sage, and then texing again works, but it is still disconcerting.  Is there any way to ignore the non-existence of a plot file, maybe with a warning that sage needs to be run?\n\n\nThis can be done, but then the only way to tell that you need to run Sage is the package warning issued at the end of running latex, which I tried to make reasonably obvious but can be missed. As it is, the missing file error looks like\n\n\n```\n! LaTeX Error: File `sage-plots-for-example.tex/plot-0' not found.\n```\n\n\nwhich, along with the package warning at the end of the run, is reasonably informative, and it behaves like `\\includegraphics` commands.\n\nIf you really want latex to run without stopping, you can always use `latex -interaction=nonstopmode`. \n\nThe current behavior seems more natural to me, but I can change it if that's the consensus. I can also have the behavior be toggle-able via a package option.\n\n \n>  * The patch says that E2.sobj changed.  Can we delete the file?\n\n\nYes. It's just cruft that `example.tex` produces. It gets regenerated when you run Sage on the example.sage script.\n\n\n>  * In the readme, at first glance, it looks like I just need to follow the 1, 2, 3, 4 instructions, which of course give an error if I haven't latexed the dtx file yet.  Can you somehow highlight that in the readme instead of it being buried right before what looks like the important, step-by-step instructions?\n\n\nAh, so you couldn't be bothered to read the text, and took the easy way out? :)\n\nI changed the readme to make that a bit more obvious. Perhaps I'm just too accustomed to `.dtx` and `.ins` files -- ideally we will eventually distribute this with some processing already done, so that the prospective user can read the documentation and see the example file without doing any processing.\n\n>  * credit: somewhere, I think you ought to mention the people that did the original interface.  Maybe a note in the readme might be appropriate.  It also looks weird to have \"and others\" in the documentation...how about either explicitly putting their names there or just put your name there and a note mentioning that it is based on an original interface by whoever.  I'm not sure the best way to handle this (you're the one that knows how much code was there before and how much code you've done), but some note somewhere probably is in order.\n\nI already had some credits at the end of the documentation, but I added a line in the readme pointing to them.\n\n> That said, as soon as I saw this patch I immediately tested it, saw that it worked great, and sent the example pdf and tex file to a friend who was discussing the sage and tex combination just this last weekend.  I know he'll be excited!\n\nSweet! I'm glad to hear that other people think this is as cool as I do.",
     "created_at": "2008-03-04T06:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11169",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11142",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -457,15 +456,15 @@ Sweet! I'm glad to hear that other people think this is as cool as I do.
 
 ---
 
-archive/issue_comments_011170.json:
+archive/issue_comments_011143.json:
 ```json
 {
     "body": "The current version of the patch only modifies files and adds them; this will avoid problems with missing cruft files. It addresses all of jason's concerns except for the first bullet point; I'm not sure what to do with that yet. \n\nI do think we need to get those files out of the repo; we are version controlling `.aux` and `.log` files from LaTeX, as well as a `.pyc` file! Is it okay for me to upload bundles, or should I stick to patches? On #sage-devel it seemed like patches are preferred.",
     "created_at": "2008-03-04T06:45:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11170",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11143",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -477,15 +476,15 @@ I do think we need to get those files out of the repo; we are version controllin
 
 ---
 
-archive/issue_comments_011171.json:
+archive/issue_comments_011144.json:
 ```json
 {
     "body": "I've updated [the all-in-one zip file](http://homepage.univie.ac.at/harald.schilly/sage/latex_embed.zip). \n\nIn my opinion the README should be more detailed and there is a small problem: when just running the latex/sage/latex commands, the graphics are not included (white boxes with black border). I don't know why that's just how it does it ;) ... using pdflatex at the last step does what's now in the .zip file!\n\nThe repository must be cleaned up, because there are files tracked which should not. See .zip file for all necessary files plus the prerendered .pdf docs - they could be included in the repository, because i think it's nice for a new user to instantaneously see what's possible.\n\nthx again to dan.",
     "created_at": "2008-03-04T23:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11171",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11144",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -501,15 +500,15 @@ thx again to dan.
 
 ---
 
-archive/issue_comments_011172.json:
+archive/issue_comments_011145.json:
 ```json
 {
     "body": "The current version of the patch addresses [Jason's first bullet point](http://trac.sagemath.org/sage_trac/ticket/1766#comment:15): missing graphics files no longer cause an error, but they do make LaTeX issue a warning.",
     "created_at": "2008-03-05T09:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11172",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11145",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -519,15 +518,15 @@ The current version of the patch addresses [Jason's first bullet point](http://t
 
 ---
 
-archive/issue_comments_011173.json:
+archive/issue_comments_011146.json:
 ```json
 {
     "body": "Replying to [comment:18 schilly]:\n> and there is a small problem: when just running the latex/sage/latex commands, the graphics are not included (white boxes with black border). I don't know why that's just how it does it ;) ... using pdflatex at the last step does what's now in the .zip file!\n\nHrm, that's odd. I don't have that behavior. But the current version deals with graphics better, so perhaps that will work for you.\n\n> The repository must be cleaned up, because there are files tracked which should not. See .zip file for all necessary files plus the prerendered .pdf docs - they could be included in the repository, because i think it's nice for a new user to instantaneously see what's possible.\n\nI agree. No extra cruft beyond the source files, except for PDFs of the documentation and the example file.",
     "created_at": "2008-03-05T09:23:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11173",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11146",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -544,15 +543,15 @@ I agree. No extra cruft beyond the source files, except for PDFs of the document
 
 ---
 
-archive/issue_comments_011174.json:
+archive/issue_comments_011147.json:
 ```json
 {
     "body": "The current version of the patch fixes a misplaced brace, and adds the imagemagick option.",
     "created_at": "2008-03-07T05:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11174",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11147",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -562,15 +561,15 @@ The current version of the patch fixes a misplaced brace, and adds the imagemagi
 
 ---
 
-archive/issue_comments_011175.json:
+archive/issue_comments_011148.json:
 ```json
 {
     "body": "Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/sagetex.patch) by @williamstein created at 2008-03-12 04:49:24",
     "created_at": "2008-03-12T04:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11175",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11148",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -580,15 +579,15 @@ Attachment [sagetex.patch](tarball://root/attachments/some-uuid/ticket1766/saget
 
 ---
 
-archive/issue_comments_011176.json:
+archive/issue_comments_011149.json:
 ```json
 {
     "body": "last words on this: [sage-devel info about SageTeX`@`CTAN](http://groups.google.com/group/sage-devel/browse_frm/thread/82f8c4a3d1bb076d).\n\nTherefore the entire latex_embed directory should be replaced by [these files](http://tug.ctan.org/tex-archive/macros/latex/contrib/sagetex/).",
     "created_at": "2008-03-13T12:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11176",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11149",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -600,15 +599,15 @@ Therefore the entire latex_embed directory should be replaced by [these files](h
 
 ---
 
-archive/issue_comments_011177.json:
+archive/issue_comments_011150.json:
 ```json
 {
     "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2008-03-31T14:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11177",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11150",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -618,15 +617,15 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
-archive/issue_comments_011178.json:
+archive/issue_comments_011151.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-31T14:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11178",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11151",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -636,15 +635,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_011179.json:
+archive/issue_comments_011152.json:
 ```json
 {
     "body": "I've made http://sage.math.washington.edu/home/mhansen/1766.hg which replaces the current contents of examples/latex_embed with the CTAN files.",
     "created_at": "2008-04-14T10:09:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11179",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11152",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -654,15 +653,15 @@ I've made http://sage.math.washington.edu/home/mhansen/1766.hg which replaces th
 
 ---
 
-archive/issue_comments_011180.json:
+archive/issue_comments_011153.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha5",
     "created_at": "2008-04-15T06:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11180",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11153",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -672,15 +671,15 @@ Merged in Sage 3.0.alpha5
 
 ---
 
-archive/issue_comments_011181.json:
+archive/issue_comments_011154.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-15T06:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11181",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1766#issuecomment-11154",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

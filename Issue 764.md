@@ -6,15 +6,14 @@ archive/issues_000764.json:
     "body": "Assignee: @mwhansen\n\n\nsage: type(PolynomialRing(ZZ, 1, 'x'))\n<class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict_domain'>\n\nsage: type(PolynomialRing(ZZ, 'x'))\n<class 'sage.rings.polynomial.polynomial_ring.PolynomialRing_integral_domain'>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/764\n\n",
     "created_at": "2007-09-30T07:11:26Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "PolynomialRing returns an MPolynomialRing when the number of variables is explicitly set to be 1.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/764",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/764
 
 ---
 
-archive/issue_comments_004521.json:
+archive/issue_comments_004505.json:
 ```json
 {
     "body": "From William Stein:\n> Wait!  This would an explicit intentional design choice, not a bug.\n> I think it should be possible to create ZZ['x'] but as a multivariate\n> polynomial ring instead of a univariate polynomial ring,\n> since there are certain things one can do with multivariate\n> polynomial rings that don't make sense with single variate rings.\n> \n> Maybe I'm wrong, since things have been so well developed by now.\n> I would like some further discussion and input (esp. from Martin Albrecht)\n> on this before changing anything.",
     "created_at": "2007-09-30T07:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4521",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4505",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -62,15 +61,15 @@ From William Stein:
 
 ---
 
-archive/issue_comments_004522.json:
+archive/issue_comments_004506.json:
 ```json
 {
     "body": "> sage: PolynomialRing(ZZ, 'x')\n> Univariate Polynomial Ring in x over Integer Ring\n> sage: PolynomialRing(ZZ, 1, 'x')\n> Polynomial Ring in x over Integer Ring\n>\n> The second one is a bit ambiguous.  How do people feel about changing\n> the reprs of multivariate polynomial rings so that the second one\n> would be 'Multivariate Polynomial Ring in x over Integer Ring'?",
     "created_at": "2007-09-30T18:21:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4522",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4506",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -87,15 +86,15 @@ archive/issue_comments_004522.json:
 
 ---
 
-archive/issue_comments_004523.json:
+archive/issue_comments_004507.json:
 ```json
 {
     "body": "Patches posted to change the repr of multivariate polynomials rings.  -testall passes, but the test for hash(P) in multi_polynomial_libsingular.pyx needs to be changed for 32 bit machines.",
     "created_at": "2007-09-30T18:22:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4523",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4507",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -105,15 +104,15 @@ Patches posted to change the repr of multivariate polynomials rings.  -testall p
 
 ---
 
-archive/issue_comments_004524.json:
+archive/issue_comments_004508.json:
 ```json
 {
     "body": "Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch) by @mwhansen created at 2007-09-30 18:23:02",
     "created_at": "2007-09-30T18:23:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4524",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4508",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -123,15 +122,15 @@ Attachment [764.patch](tarball://root/attachments/some-uuid/ticket764/764.patch)
 
 ---
 
-archive/issue_comments_004525.json:
+archive/issue_comments_004509.json:
 ```json
 {
     "body": "Attachment [const-tut.patch](tarball://root/attachments/some-uuid/ticket764/const-tut.patch) by @mwhansen created at 2007-09-30 18:23:18",
     "created_at": "2007-09-30T18:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4525",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4509",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -141,15 +140,15 @@ Attachment [const-tut.patch](tarball://root/attachments/some-uuid/ticket764/cons
 
 ---
 
-archive/issue_comments_004526.json:
+archive/issue_comments_004510.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-04T18:21:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4526",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/764#issuecomment-4510",
+    "user": "https://github.com/williamstein"
 }
 ```
 

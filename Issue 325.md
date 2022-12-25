@@ -6,15 +6,14 @@ archive/issues_000325.json:
     "body": "Assignee: @williamstein\n\nCurrently, if you make an integer matrix:\n\n```\nA=Matrix(Integers(),3,3,[1,2,3,4,5,6,7,8,9])\n```\n\nthere seems no direct way to get an LLL reduced basis of its row or column space (whichever is appropriate for SAGE).\nThere is `ntl.mat_ZZ.LLL`, which may or may not be good. pari also has LLL implementations.\n\nIt's really worth it to have a good integer LLL easily accessible in SAGE.\n\nIssue created by migration from https://trac.sagemath.org/ticket/325\n\n",
     "created_at": "2007-03-21T00:54:16Z",
     "labels": [
-        "linear algebra",
-        "minor",
-        "enhancement"
+        "component: linear algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "LLL for integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/325",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 Assignee: @williamstein
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/325
 
 ---
 
-archive/issue_comments_001538.json:
+archive/issue_comments_001534.json:
 ```json
 {
     "body": "I believe this might also be available via IML.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-06T23:11:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/325",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1538",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1534",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -60,15 +59,15 @@ Michael
 
 ---
 
-archive/issue_comments_001539.json:
+archive/issue_comments_001535.json:
 ```json
 {
     "body": "Attachment [lll1.patch](tarball://root/attachments/some-uuid/ticket325/lll1.patch) by @williamstein created at 2007-09-20 23:29:16",
     "created_at": "2007-09-20T23:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/325",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1539",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1535",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -78,15 +77,15 @@ Attachment [lll1.patch](tarball://root/attachments/some-uuid/ticket325/lll1.patc
 
 ---
 
-archive/issue_comments_001540.json:
+archive/issue_comments_001536.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-20T23:29:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/325",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1540",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/325#issuecomment-1536",
+    "user": "https://github.com/williamstein"
 }
 ```
 

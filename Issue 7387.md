@@ -6,15 +6,14 @@ archive/issues_007387.json:
     "body": "Assignee: drkirkby\n\nCC:  drkirkby\n\nThere is an issue with the gnutls when trying to build 2\n.2.1.p4 on OpenSolaris. Strangely, the same problem does not occur on Solaris 10 on SPARC. The linker is finding two copies of the *gcrypt* and *gpg-error* libraries. One set are from Sun and reside in /usr/lib and the second set are in the SAGE_LOCAL/lib, and are included in Sage. \n\n == What does work - building gnutils independent of Sage ==\n\nIt's important to note that if that .spkg file is built outside of Sage directory structure, with none of the Sage environment variables set, so it builds fine except SAGE_LOCAL to something that is not empty (just to stop the spkg-install script exiting). The following will work:\n\n\n```\n$ cp gnutls-2.2.1.p4.spkg /tmp\n$ cd /tmp\n$ gtar xfj gnutls-2.2.1.p4.spkg\n$ cd gnutls-2.2.1.p4\n$ export SAGE_LOCAL=/tmp\n$ ./spkg-install\n$ ls /tmp/lib\nlibgnutls-extra.la           libgnutls-openssl.so.26\nlibgnutls-extra.so           libgnutls-openssl.so.26.1.2\nlibgnutls-extra.so.26        libgnutls.so\nlibgnutls-extra.so.26.1.2    libgnutls.so.26\nlibgnutls.la                 libgnutls.so.26.1.2\nlibgnutls-openssl.la         pkgconfig\nlibgnutls-openssl.so\n\n```\n\n\nIn this case, gnutls is using all the libraries supplied by Sun, and none included in Sage. If 'ldd' is used to find the dependances of the libraries built in /tmp/lib, one finds many libraries, but which include these two:\n\n* /usr/lib/libgcrypt.so.11\n* /usr/lib/libgpg-error.so.0\n\nThe gcrypt and gpg-error libraries are included in Sage too, but are not used in this in the above example. \n\n\n == What will not work (building as part of Sage) ==\n\nWhen one attempts to build gnutls inside the Sage source tree, with all the environment variables set, so it all goes wrong. The lines in bold show the most important hint as to what is wrong. \n\n**ld: fatal: recording name conflict: file `/export/home/drkirkby/sage-4.2/local/lib/libgpg-error.so' and file `/usr/lib/libgpg-error.so' provide identical dependency names: libgpg-error.so.0  (possible multiple inclusion of the same file)**\n\nHere is a larger section of the error message. I've attached 'config.log' \n\n\n```\ngcc -std=gnu99 -shared -Wl,-h -Wl,libgnutls.so.26 -o .libs/libgnutls.so.26.1.2\n  .libs/gnutls_record.o .libs/gnutls_compress.o .libs/debug.o .libs/gnutls_cip\nher.o .libs/gnutls_buffers.o .libs/gnutls_handshake.o .libs/gnutls_num.o .libs\n/gnutls_errors.o .libs/gnutls_algorithms.o .libs/gnutls_dh.o .libs/gnutls_kx.o\n .libs/gnutls_priority.o .libs/gnutls_hash_int.o .libs/gnutls_cipher_int.o .li\nbs/gnutls_compress_int.o .libs/gnutls_session.o .libs/gnutls_db.o .libs/x509_b\n64.o .libs/auth_anon.o .libs/gnutls_extensions.o .libs/gnutls_auth.o .libs/gnu\ntls_v2_compat.o .libs/gnutls_datum.o .libs/auth_rsa.o .libs/gnutls_session_pac\nk.o .libs/gnutls_mpi.o .libs/gnutls_pk.o .libs/gnutls_cert.o .libs/gnutls_glob\nal.o .libs/gnutls_constate.o .libs/gnutls_anon_cred.o .libs/pkix_asn1_tab.o .l\nibs/gnutls_asn1_tab.o .libs/gnutls_mem.o .libs/auth_cert.o .libs/gnutls_ui.o .\nlibs/gnutls_sig.o .libs/auth_dhe.o .libs/gnutls_dh_primes.o .libs/ext_max_reco\nrd.o .libs/gnutls_alert.o .libs/gnutls_str.o .libs/gnutls_state.o .libs/gnutls\n_x509.o .libs/ext_cert_type.o .libs/gnutls_rsa_export.o .libs/auth_rsa_export.\no .libs/ext_server_name.o .libs/auth_dh_common.o .libs/gnutls_helper.o .libs/e\nxt_inner_application.o .libs/gnutls_extra_hooks.o .libs/gnutls_supplemental.o \n.libs/ext_srp.o .libs/gnutls_srp.o .libs/auth_srp.o .libs/auth_srp_passwd.o .l\nibs/auth_srp_sb64.o .libs/auth_srp_rsa.o .libs/auth_psk.o .libs/auth_psk_passw\nd.o .libs/gnutls_psk.o .libs/auth_dhe_psk.o -Wl,-z -Wl,allextract ../lgl/.libs\n/liblgnu.a x509/.libs/libgnutls_x509.a -Wl,-z -Wl,defaultextract  -R/export/ho\nme/drkirkby/sage-4.2/local/lib -R/export/home/drkirkby/sage-4.2/local/lib -L/u\nsr/lib -ltasn1 -L/export/home/drkirkby/sage-4.2/local/lib /export/home/drkirkb\ny/sage-4.2/local/lib/libgcrypt.so /export/home/drkirkby/sage-4.2/local/lib/lib\ngpg-error.so -lz -lgcrypt -lgpg-error -lnsl -lsocket -lc \nld: fatal: recording name conflict: file `/export/home/drkirkby/sage-4.2/local\n/lib/libgcrypt.so' and file `/usr/lib/libgcrypt.so' provide identical dependen\ncy names: libgcrypt.so.11  (possible multiple inclusion of the same file)\nld: fatal: recording name conflict: file `/export/home/drkirkby/sage-4.2/local\n/lib/libgpg-error.so' and file `/usr/lib/libgpg-error.so' provide identical de\npendency names: libgpg-error.so.0  (possible multiple inclusion of the same fi\nle)\nld: fatal: file processing errors. No output written to .libs/libgnutls.so.26.\n1.2\ncollect2: ld returned 1 exit status\nmake[5]: *** [libgnutls.la] Error 1\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.2/spkg/build/gnutls-2\n.2.1.p4/src/lib'\n```\n\n\n\n == A hack that will work ==\n\nI expect this would cause other problems, and is certainly not the right way to address this, but if the following files are removed \n\n* SAGE_LOCAL/include/gcrypt-module.h \n* SAGE_LOCAL/include/gpg-error.h\n* SAGE_LOCAL/include/gcrypt.h\n* SAGE_LOCAL/lib/libgcrypt*\n* SAGE_LOCAL/lib/libgpg*\n\nbefore one attempts to build gnutls, so the build will work. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7387\n\n",
     "created_at": "2009-11-04T00:48:18Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "gnutls not building on OpenSolaris (x86)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7387",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -128,15 +127,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7387
 
 ---
 
-archive/issue_comments_062121.json:
+archive/issue_comments_062006.json:
 ```json
 {
     "body": "Attachment [config.log](tarball://root/attachments/some-uuid/ticket7387/config.log) by drkirkby created at 2009-11-04 00:51:16\n\nconfig.log file generated by the 'configure' script.",
     "created_at": "2009-11-04T00:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62121",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62006",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -148,15 +147,15 @@ config.log file generated by the 'configure' script.
 
 ---
 
-archive/issue_comments_062122.json:
+archive/issue_comments_062007.json:
 ```json
 {
     "body": "Working on Open Solaris 09/06 x86 in VirtualBox the build of gnutls\nsucceeded after a rebuild of libgpg and libcrypt in 64 bit mode.\n\nI had to change the spkg-install files accordingly.\n\nJaap",
     "created_at": "2010-01-01T18:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62122",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62007",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -171,15 +170,15 @@ Jaap
 
 ---
 
-archive/issue_comments_062123.json:
+archive/issue_comments_062008.json:
 ```json
 {
     "body": "I made a new spkg such that it builds on Open Solaris with SAGE64=\"yes\"\n\nlibgpg and libcrypt built with 64 bit.\n\nSee: http://boxen.math.washington.edu/home/jsp/ports/gnutls-2.2.1.p5.spkg\n\n\n\n```\nreal\t1m46.089s\nuser\t0m49.128s\nsys\t1m12.507s\nSuccessfully installed gnutls-2.2.1.p5\nNow cleaning up tmp files.\nrm: cannot remove directory `/export/home/jaap/Downloads/sage-4.3.1.alpha0/spkg/build/gnutls-2.2.1.p5': Invalid argument\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing gnutls-2.2.1.p5.spkg\njaap@opensolaris:~/Downloads/sage-4.3.1.alpha0$ \n\n```\n\n\n\nJaap",
     "created_at": "2010-01-04T15:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62123",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62008",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -213,15 +212,15 @@ Jaap
 
 ---
 
-archive/issue_comments_062124.json:
+archive/issue_comments_062009.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-04T15:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62124",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62009",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -231,15 +230,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062125.json:
+archive/issue_comments_062010.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-04T21:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62125",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62010",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -249,15 +248,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062126.json:
+archive/issue_comments_062011.json:
 ```json
 {
     "body": "That fixes the problem. \n\nIt probably worth saying in future that the change will add the compiler option -m64 on any platform - it is not just Solaris. The problem with the original implementation is someone decided to limit it to OSX. The change makes it work on any platform. \n\nBut I'm not going to ask you to change it - just a minor point for the future. \n\nDave",
     "created_at": "2010-01-04T21:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62126",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62011",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -273,15 +272,15 @@ Dave
 
 ---
 
-archive/issue_comments_062127.json:
+archive/issue_comments_062012.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-13T05:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7387",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62127",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7387#issuecomment-62012",
+    "user": "https://github.com/rlmill"
 }
 ```
 

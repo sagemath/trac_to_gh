@@ -6,15 +6,14 @@ archive/issues_008348.json:
     "body": "Assignee: @aghitza\n\nCC:  @williamstein\n\nHow can one approximate the root of an equation in arbitrary\nprecision? For example I want the root of log(x+2) = x to\n50 digits of precision:\n\n```\nsage: (log(x+2)-x).find_root(1,2)\n1.1461932206205643\nsage: (log(x+2)-x).find_root(1,2,prec=150)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/users/caramel/zimmerma/try/<ipython console> in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.find_root (sage/symbolic/expression.cpp:24383)()\n\nTypeError: find_root() got an unexpected keyword argument 'prec'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8348\n\n",
     "created_at": "2010-02-24T16:23:17Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.2",
     "title": "find_root only works in fixed (double) precision",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8348",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @aghitza
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8348
 
 ---
 
-archive/issue_comments_074543.json:
+archive/issue_comments_074419.json:
 ```json
 {
     "body": "This is about adding capability not currently present, so should be an enhancement.",
     "created_at": "2010-03-17T05:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74543",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74419",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -66,15 +65,15 @@ This is about adding capability not currently present, so should be an enhanceme
 
 ---
 
-archive/issue_comments_074544.json:
+archive/issue_comments_074420.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-03-17T05:06:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74544",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74420",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -84,15 +83,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_074545.json:
+archive/issue_comments_074421.json:
 ```json
 {
     "body": "> This is about adding capability not currently present, so should be an enhancement. \n\nI do not agree. The documentation does not say that `find_root` only works in double precision,\nthus this is a defect (at least of the documentation). Do you agree with that?",
     "created_at": "2010-03-17T07:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74545",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74421",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -105,15 +104,15 @@ thus this is a defect (at least of the documentation). Do you agree with that?
 
 ---
 
-archive/issue_comments_074546.json:
+archive/issue_comments_074422.json:
 ```json
 {
     "body": "The docs for find_root don't imply that it uses arbitrary precision to me, so I agree it's an omission, but not a bug (i.e., it doesn't claim one thing and do another).  The only mention of precision in the docs (in the xtol and rtol parameters) implies that things work with double precision.\n\nBut this is a minor point.  I was trying to clean up the large number of tickets that are classified as \"bugs\" (which to me means things that Sage claims should work, but don't).\n\nIn this case, the error returned indicates that find_root knows nothing about a prec argument, which is appropriate.\n\nI've switched it back so we don't waste any more time fretting about how to classify this ticket.",
     "created_at": "2010-03-17T16:25:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74546",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74422",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -129,15 +128,15 @@ I've switched it back so we don't waste any more time fretting about how to clas
 
 ---
 
-archive/issue_comments_074547.json:
+archive/issue_comments_074423.json:
 ```json
 {
     "body": "Changing type from enhancement to defect.",
     "created_at": "2010-03-17T16:25:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74547",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74423",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -147,15 +146,15 @@ Changing type from enhancement to defect.
 
 ---
 
-archive/issue_comments_074548.json:
+archive/issue_comments_074424.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-08-24T07:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74548",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74424",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -165,15 +164,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_074549.json:
+archive/issue_comments_074425.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2013-08-24T07:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74549",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74425",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -183,15 +182,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_074550.json:
+archive/issue_comments_074426.json:
 ```json
 {
     "body": "Attachment [trac_8348.patch](tarball://root/attachments/some-uuid/ticket8348/trac_8348.patch) by @zimmermann6 created at 2013-08-24 07:58:12\n\nthe attached patch (produced against Sage 5.9) adds documentation to `find_root`.\nNote: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.\n\nPaul",
     "created_at": "2013-08-24T07:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74550",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74426",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -206,15 +205,15 @@ Paul
 
 ---
 
-archive/issue_comments_074551.json:
+archive/issue_comments_074427.json:
 ```json
 {
     "body": "LGTM.\n\nReplying to [comment:6 zimmerma]:\n> Note: I found out that `find_root` is duplicated in `numerical/optimize.py` and in `symbolic/expression.pyx`, which is unfortunate.\n\nOnly (part of) the documentation is duplicated; one of the function is a wrapper for the other. It is unfortunate indeed, but that's a problem that occurs everywhere in Sage, so I don't think it really makes sense to open a ticket for that particular instance.\n----\nNew commits:",
     "created_at": "2014-01-29T07:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74551",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74427",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -231,15 +230,15 @@ New commits:
 
 ---
 
-archive/issue_comments_074552.json:
+archive/issue_comments_074428.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-01-29T07:18:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74552",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74428",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -249,15 +248,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_074553.json:
+archive/issue_comments_074429.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2014-02-01T15:17:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74553",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8348#issuecomment-74429",
+    "user": "https://github.com/vbraun"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007082.json:
     "body": "Assignee: boothby\n\nKeywords: sagenb notebook\n\nWorksheetProcess in `worksheet_process.py` does not inherit from `object`\n\nIssue created by migration from https://trac.sagemath.org/ticket/7082\n\n",
     "created_at": "2009-09-30T10:21:43Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SageNB -- WorksheetProcess is an old-style class",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7082",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: boothby
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7082
 
 ---
 
-archive/issue_comments_058545.json:
+archive/issue_comments_058435.json:
 ```json
 {
     "body": "Makes `WorksheetProcess` a new-style class. Also fixes some docstring problems, and updates `misc.py`",
     "created_at": "2009-09-30T10:23:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7082",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7082#issuecomment-58545",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7082#issuecomment-58435",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -49,15 +48,15 @@ Makes `WorksheetProcess` a new-style class. Also fixes some docstring problems, 
 
 ---
 
-archive/issue_comments_058546.json:
+archive/issue_comments_058436.json:
 ```json
 {
     "body": "Attachment [trac_7082-old-style-class.patch](tarball://root/attachments/some-uuid/ticket7082/trac_7082-old-style-class.patch) by @williamstein created at 2009-10-04 06:05:41\n\nI applied this patch and there are a spectacular number of merge conflicts:\n\n\n```\nflat:sagenb wstein$ hg import trac_7082-old-style-class.patch \napplying trac_7082-old-style-class.patch\npatching file sagenb/interfaces/reference.py\nHunk #1 FAILED at 79\n1 out of 1 hunks FAILED -- saving rejects to file sagenb/interfaces/reference.py.rej\npatching file sagenb/interfaces/reference.py\nHunk #1 FAILED at 79\n1 out of 1 hunks FAILED -- saving rejects to file sagenb/interfaces/reference.py.rej\npatching file sagenb/interfaces/worksheet_process.py\nHunk #1 FAILED at 17\n1 out of 1 hunks FAILED -- saving rejects to file sagenb/interfaces/worksheet_process.py.rej\npatching file sagenb/misc/sageinspect.py\nHunk #1 FAILED at 11\nHunk #2 FAILED at 223\nHunk #3 FAILED at 265\nHunk #4 FAILED at 307\nHunk #5 succeeded at 396 with fuzz 2 (offset 4 lines).\nHunk #6 FAILED at 624\nHunk #7 FAILED at 663\n6 out of 7 hunks FAILED -- saving rejects to file sagenb/misc/sageinspect.py.rej\npatching file sagenb/interfaces/reference.py\nHunk #1 FAILED at 79\n1 out of 1 hunks FAILED -- saving rejects to file sagenb/interfaces/reference.py.rej\npatching file sagenb/interfaces/worksheet_process.py\nHunk #1 FAILED at 17\n1 out of 1 hunks FAILED -- saving rejects to file sagenb/interfaces/worksheet_process.py.rej\npatching file sagenb/misc/sageinspect.py\nHunk #1 FAILED at 11\nHunk #2 FAILED at 223\nHunk #3 FAILED at 265\nHunk #4 FAILED at 307\nHunk #5 succeeded at 401 with fuzz 2 (offset 9 lines).\nHunk #6 FAILED at 624\nHunk #7 FAILED at 663\n6 out of 7 hunks FAILED -- saving rejects to file sagenb/misc/sageinspect.py.rej\npatching file sagenb/interfaces/worksheet_process.py\nHunk #1 FAILED at 17\n1 out of 1 hunks FAILED -- saving rejects to file sagenb/interfaces/worksheet_process.py.rej\npatching file sagenb/misc/sageinspect.py\nHunk #1 FAILED at 11\nHunk #2 FAILED at 223\nHunk #3 FAILED at 265\nHunk #4 FAILED at 307\nHunk #5 succeeded at 406 with fuzz 2 (offset 14 lines).\nHunk #6 FAILED at 624\nHunk #7 FAILED at 663\n6 out of 7 hunks FAILED -- saving rejects to file sagenb/misc/sageinspect.py.rej\nabort: patch failed to apply\n```\n\n\nCould you rebase it against my repo?  http://sage.math.washington.edu:8100/",
     "created_at": "2009-10-04T06:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7082",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7082#issuecomment-58546",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7082#issuecomment-58436",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -124,15 +123,15 @@ Could you rebase it against my repo?  http://sage.math.washington.edu:8100/
 
 ---
 
-archive/issue_comments_058547.json:
+archive/issue_comments_058437.json:
 ```json
 {
     "body": "The changes in this patch have already been included.",
     "created_at": "2009-10-23T17:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7082",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7082#issuecomment-58547",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7082#issuecomment-58437",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -142,15 +141,15 @@ The changes in this patch have already been included.
 
 ---
 
-archive/issue_comments_058548.json:
+archive/issue_comments_058438.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-11-15T14:15:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7082",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7082#issuecomment-58548",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7082#issuecomment-58438",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

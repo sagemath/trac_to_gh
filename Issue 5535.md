@@ -6,15 +6,13 @@ archive/issues_005535.json:
     "body": "Assignee: tbd\n\nCC:  @malb @JohnCremona\n\nThe current (generic) code for is_primitive in rings/polynomial/polynomial_element.pyx is\n\n```\n        if not self.is_irreducible():\n            return False\n        p = self.parent().characteristic()\n        n = p ** self.degree() - 1\n        y = self.parent().quo(self).gen()\n        for d in n.prime_divisors():\n            if ( y ** (n//d) ) == 1:\n                return False\n        return True\n```\n\nNote that the integer n and its prime divisors are calculated as part of the algorithm.  This calculation can be lengthy for large n, and can dominate the running time of the algorithm.\n\nThe proposed patch adds optional arguments to is_primitive to provide the results of these calculations -- useful for is_primitive tests for multiple polynomials of the same degree.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5535\n\n",
     "created_at": "2009-03-16T21:04:31Z",
     "labels": [
-        "algebra",
-        "major",
-        "enhancement"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "is_primitive is computes integer prime factorization on every call",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5535",
-    "user": "@rhinton"
+    "user": "https://github.com/rhinton"
 }
 ```
 Assignee: tbd
@@ -47,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5535
 
 ---
 
-archive/issue_comments_043031.json:
+archive/issue_comments_042947.json:
 ```json
 {
     "body": "I think the `(default: None)` is supposed to be at the end of the overall description. If you know better I am happy to be convinced otherwise though. \n\nIt might be a good idea to ask somebody else how they feel about this patch because we introduce a neat way to shoot oneself in the foot.\n\nbtw. when you add a patch you should add `[with patch, needs review]` to the title of the ticket.",
     "created_at": "2009-03-16T21:40:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43031",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42947",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -69,15 +67,15 @@ btw. when you add a patch you should add `[with patch, needs review]` to the tit
 
 ---
 
-archive/issue_comments_043032.json:
+archive/issue_comments_042948.json:
 ```json
 {
     "body": "I'm fine with the shoot-yourself-in-the-foot part of the patch... it seems sufficiently well documented.",
     "created_at": "2009-03-16T23:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43032",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42948",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -87,15 +85,15 @@ I'm fine with the shoot-yourself-in-the-foot part of the patch... it seems suffi
 
 ---
 
-archive/issue_comments_043033.json:
+archive/issue_comments_042949.json:
 ```json
 {
     "body": "BTW, I do agree with John Cremona's comment that for polynomials over a ring, \"primitive\" means something totally different, and something should be done to try to keep people from thinking that this tests for that kind of primitive (preferably more than just documentation).",
     "created_at": "2009-03-17T00:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43033",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42949",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -105,15 +103,15 @@ BTW, I do agree with John Cremona's comment that for polynomials over a ring, "p
 
 ---
 
-archive/issue_comments_043034.json:
+archive/issue_comments_042950.json:
 ```json
 {
     "body": "Ryan, do you want to add some docs while you're on it to address John's complaint?",
     "created_at": "2009-03-17T12:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43034",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42950",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -123,15 +121,15 @@ Ryan, do you want to add some docs while you're on it to address John's complain
 
 ---
 
-archive/issue_comments_043035.json:
+archive/issue_comments_042951.json:
 ```json
 {
     "body": "I added some verbiage to the is_primitive docstring to indicate that it's only useful for finite fields, and referenced the new trac #5561 for resolving its proper placement.  Is this sufficient for a positive review?",
     "created_at": "2009-03-18T17:24:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43035",
-    "user": "@rhinton"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42951",
+    "user": "https://github.com/rhinton"
 }
 ```
 
@@ -141,15 +139,15 @@ I added some verbiage to the is_primitive docstring to indicate that it's only u
 
 ---
 
-archive/issue_comments_043036.json:
+archive/issue_comments_042952.json:
 ```json
 {
     "body": "This looks ok to me, though I think you could delete the second paragraph of the docstring (it's a bit too detailed).\n\nFor the code itself one could also use the (generic) order_from_multiple() function like this:\n\n```\nreturn order_from_multiple(y,n,n_prime_divs,operation='*')==n\n```\n\nsince the order_from_multiple() function (which I wrote) already takes the list of prime divisors of n as a parameter, computing it if it is not given.  I just tried that on a poly of degree 257 over GF(2) and it worked fine (I was impressed at Sage's ability to factor the 78-digit number `2^257-1`!).  It does do a little more work though as it finds the exact order.\n\nThere seems to be quite a large literature on finding primitive polynomials which may include better tests of primitivity.  I'll take a look at some of those when I'm back at work.",
     "created_at": "2009-03-18T20:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43036",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42952",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -169,15 +167,15 @@ There seems to be quite a large literature on finding primitive polynomials whic
 
 ---
 
-archive/issue_comments_043037.json:
+archive/issue_comments_042953.json:
 ```json
 {
     "body": "One more comment:  NTL has efficient routines for modular exponentiation modulo polynomials over GF(p) which could be used to find the order of X modulo f(X) and hence test primitivity of f:  see http://www.shoup.net/ntl/doc/ZZ_pX.txt.  This would entirely independent of the improvement implemented in this patch, of course.",
     "created_at": "2009-03-19T10:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43037",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42953",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -187,15 +185,15 @@ One more comment:  NTL has efficient routines for modular exponentiation modulo 
 
 ---
 
-archive/issue_comments_043038.json:
+archive/issue_comments_042954.json:
 ```json
 {
     "body": "I'll give this a positive review if two things are changed: (1) replace n = p ** self.degree() - 1 by n = q ** self.degree() - 1 where q = self.base_ring().order(), which is the same as at present for polynomials defined over prime fields, but now gives a correct answer for polynomials defined over non-prime finite fields; (2) put in tests for k=self.base_ring() that k.is_field() and k.is_finite(), perhaps raising a NotImplementedError, since otherwise the result is rather random:\n\n```\nsage: x=polygen(ZZ)\nsage: f=x^2+1\nsage: f.is_primitive()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/24798/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-3.4/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial.is_primitive (sage/rings/polynomial/polynomial_element.c:19782)()\n\nAttributeError: 'int' object has no attribute 'prime_divisors'\n```\n",
     "created_at": "2009-03-21T19:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43038",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42954",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -220,15 +218,15 @@ AttributeError: 'int' object has no attribute 'prime_divisors'
 
 ---
 
-archive/issue_comments_043039.json:
+archive/issue_comments_042955.json:
 ```json
 {
     "body": "Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.patch) by @rhinton created at 2009-03-23 15:00:43",
     "created_at": "2009-03-23T15:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43039",
-    "user": "@rhinton"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42955",
+    "user": "https://github.com/rhinton"
 }
 ```
 
@@ -238,15 +236,15 @@ Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.patch](tarball
 
 ---
 
-archive/issue_comments_043040.json:
+archive/issue_comments_042956.json:
 ```json
 {
     "body": "Thanks for the excellent suggestions.  I replaced most of the existing code with `order_with_multiple`.  A quick timing test (primitive degree 128 polynomial over GF(2)) showed a slight improvement with the change (603 ms per loop instead of 740 ms per loop).  I also switched from characteristic to base ring order and put a sanity check to make sure `self` is a polynomial over a field.\n\nLet me know if I can fix anything else.  When this patch receives a positive review, I plan to implement cremona's suggestion for #5561 by replacing the sanity check with the proper ring-theoretic primitivity check (since he came up with a 3-line solution to the problem :-).",
     "created_at": "2009-03-23T15:07:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43040",
-    "user": "@rhinton"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42956",
+    "user": "https://github.com/rhinton"
 }
 ```
 
@@ -258,15 +256,15 @@ Let me know if I can fix anything else.  When this patch receives a positive rev
 
 ---
 
-archive/issue_comments_043041.json:
+archive/issue_comments_042957.json:
 ```json
 {
     "body": "Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch](tarball://root/attachments/some-uuid/ticket5535/trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch) by @JohnCremona created at 2009-03-23 17:03:23",
     "created_at": "2009-03-23T17:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43041",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42957",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -276,15 +274,15 @@ Attachment [trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch](tarba
 
 ---
 
-archive/issue_comments_043042.json:
+archive/issue_comments_042958.json:
 ```json
 {
     "body": "Positive review!  I have made some cosmetic changes, only to the docstring and NotImplemented message, and added some more relevant tests.\n\nThe second patch replaces the first, and (also) applies to 3.4.",
     "created_at": "2009-03-23T17:04:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43042",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42958",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -296,15 +294,15 @@ The second patch replaces the first, and (also) applies to 3.4.
 
 ---
 
-archive/issue_comments_043043.json:
+archive/issue_comments_042959.json:
 ```json
 {
     "body": "Merged trac_5535_is_primitive_avoid_duplicate_factorizations.2.patch in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T20:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43043",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42959",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -318,15 +316,15 @@ Michael
 
 ---
 
-archive/issue_comments_043044.json:
+archive/issue_comments_042960.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-23T20:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43044",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42960",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -336,15 +334,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_043045.json:
+archive/issue_comments_042961.json:
 ```json
 {
     "body": "Replying to [comment:9 rhinton]:\n> Thanks for the excellent suggestions.  I replaced most of the existing code with `order_with_multiple`.  A quick timing test (primitive degree 128 polynomial over GF(2)) showed a slight improvement with the change (603 ms per loop instead of 740 ms per loop).\n\n\nIs it possible for you to give some system/architecture information of the machine you used to obtain the above timing statistics? It would also be good to include the actual code that produces those timing improvements. What I'm looking for are a \"before\" and an \"after\" sections to clearly show the timing improvements in your patch.",
     "created_at": "2009-03-24T01:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43045",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42961",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -358,15 +356,15 @@ Is it possible for you to give some system/architecture information of the machi
 
 ---
 
-archive/issue_comments_043046.json:
+archive/issue_comments_042962.json:
 ```json
 {
     "body": "For future reference, I am running a Pentium 4, 2.4 GHz with 2 GB of RAM.  Here is some sample code I used to measure the performance difference on my system.\n\n```\n  R.<x> = PolynomialRing(GF(2), 'x')\n\n  # degree 128\n  nn = 128\n  max_order = 2^nn - 1\n  pdivs = max_order.prime_divisors()\n\n  # find a primitive poly\n  print \"Finding a primitive polynomial of degree \"+str(nn)+\" for timing test.\"\n  poly = R.random_element(nn)\n  while not (poly.degree()==nn and poly.is_primitive(max_order, pdivs)):\n    poly = R.random_element(nn)\n\n  timeit('max_order.prime_divisors()')\n  # 25 loops, best of 3: 20.9 ms per loop\n  timeit('poly.is_primitive(max_order, pdivs)')\n  # 5 loops, best of 3: 1 s per loop\n  timeit('poly.is_primitive()')\n  # 5 loops, best of 3: 1.03 s per loop\n\n  # degree 256\n  nn = 256\n  max_order = 2^nn - 1\n  pdivs = max_order.prime_divisors()\n\n  # find a primitive poly\n  print \"Finding a primitive polynomial of degree \"+str(nn)+\" for timing test.\"\n  poly = R.random_element(nn)\n  while not (poly.degree()==nn and poly.is_primitive(max_order, pdivs)):\n    poly = R.random_element(nn)\n\n  timeit('max_order.prime_divisors()')  # this takes a long time\n  # 5 loops, best of 3: 9.3 s per loop\n  timeit('poly.is_primitive(max_order, pdivs)')\n  # 5 loops, best of 3: 2.67 s per loop\n  timeit('poly.is_primitive()')  # this takes a longer time\n  # 5 loops, best of 3: 11.5 s per loop\n```\n\nThe actual speedup, of course, depends on how many times you're calling is_primitive for the same degree (if you have to call prime_divisors() for each degree) and the actual degrees.  Typically speedups will be greater for higher degrees.",
     "created_at": "2009-03-24T02:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-43046",
-    "user": "@rhinton"
+    "url": "https://github.com/sagemath/sagetest/issues/5535#issuecomment-42962",
+    "user": "https://github.com/rhinton"
 }
 ```
 

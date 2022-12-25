@@ -6,15 +6,14 @@ archive/issues_007128.json:
     "body": "Assignee: tbd\n\nCC:  @jaapspies\n\nAn inspection of spkg-install for zlib shows that the -m64 flag is only added on OS X, and not on Solaris. \n\n\n```\n# The -fPIC is needed otherwise builing libpng fails later\n# (at least on a Debian 64-bit opteron).\n\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n```\n\n\nThere are several things wrong with this\n* -fPIC is not a universally used flag. The correct flag to use on Solaris is -KPIC, though -fPIC will be accepted. On other compilers, such as those on AIX or HP-UX, there is no guarantee that -fPIC is the correct flag. \n* The -m64 flag to build 64-bit code is only used on OS X. It is not used on Solaris, despite the fact we are supposed to be supporting Solaris. On some compilers, **the correct flag to produce 64-bit code is not -m64**. IBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7128\n\n",
     "created_at": "2009-10-05T22:49:47Z",
     "labels": [
-        "porting",
-        "major",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "zlib-1.2.3.p4 always builds 32-bit binaries on Solaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7128",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7128
 
 ---
 
-archive/issue_comments_059122.json:
+archive/issue_comments_059010.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-05T21:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59122",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59010",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059123.json:
+archive/issue_comments_059011.json:
 ```json
 {
     "body": "I've sorted this out for Solaris. Currently the option added is always -m64, which is not ideal, as it will break with compilers other than GNU or Sun, but when #7818 get added, sorting this lot out will be a lot easier. \n\nOn OS X, not only is -m64 added to the flags, but an altered version of a configure script is copied too. There is no need to change the configure script on Solaris, so OS X is still handled differently. \n\n**Previous code:**\n\n```\nif [ \"x`uname`\" = \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelse\n   CFLAGS=\"$CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n\n```\n\n\nRevised code: \n\n```\nif [ \"x`uname`\" = \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\" -m64 $CFLAGS -fPIC -g -I\\\"$SAGE_LOCAL/include\\\"\"\n   cp ../patches/configure-OSX-64 configure\nelif [ \"x`uname`\" != \"xDarwin\" ] && [ \"x$SAGE64\" = \"xyes\" ]; then\n   CFLAGS=\"-m64 $CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nelse\n   CFLAGS=\"$CFLAGS $FPIC_FLAG -g -I\\\"$SAGE_LOCAL/include\\\"\"\nfi\n```\n",
     "created_at": "2010-01-05T21:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59123",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59011",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -114,15 +113,15 @@ fi
 
 ---
 
-archive/issue_comments_059124.json:
+archive/issue_comments_059012.json:
 ```json
 {
     "body": "Sorry, I forgot to add the location of the code. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/\n\nThere's an spkg there. Best tested on Solaris, using a 64-bit build.",
     "created_at": "2010-01-05T21:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59124",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59012",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -136,15 +135,15 @@ There's an spkg there. Best tested on Solaris, using a 64-bit build.
 
 ---
 
-archive/issue_comments_059125.json:
+archive/issue_comments_059013.json:
 ```json
 {
     "body": "Replying to [comment:3 drkirkby]:\n> Sorry, I forgot to add the location of the code. \n> \n> http://boxen.math.washington.edu/home/kirkby/portability/zlib-1.2.3.p6/\n> \n> There's an spkg there. Best tested on Solaris, using a 64-bit build. \n\nI was about to ask :)\n\nJaap",
     "created_at": "2010-01-05T21:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59125",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59013",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -163,15 +162,15 @@ Jaap
 
 ---
 
-archive/issue_comments_059126.json:
+archive/issue_comments_059014.json:
 ```json
 {
     "body": "Looks good, but SPKG.txt is not according the standards.\n\ne.g. missing Changelog header, new line between the entries.\n\nJaap",
     "created_at": "2010-01-05T22:27:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59126",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59014",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -185,15 +184,15 @@ Jaap
 
 ---
 
-archive/issue_comments_059127.json:
+archive/issue_comments_059015.json:
 ```json
 {
     "body": "I've correct those two defects. \n\ndave",
     "created_at": "2010-01-05T22:34:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59127",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59015",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -205,15 +204,15 @@ dave
 
 ---
 
-archive/issue_comments_059128.json:
+archive/issue_comments_059016.json:
 ```json
 {
     "body": "Looks good. Works ok. So positive review.",
     "created_at": "2010-01-07T16:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59128",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59016",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -223,15 +222,15 @@ Looks good. Works ok. So positive review.
 
 ---
 
-archive/issue_comments_059129.json:
+archive/issue_comments_059017.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-07T16:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59129",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59017",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -241,15 +240,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059130.json:
+archive/issue_comments_059018.json:
 ```json
 {
     "body": "Oops! This link appears to be broken. Where is the spkg?",
     "created_at": "2010-01-13T06:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59130",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59018",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -259,15 +258,15 @@ Oops! This link appears to be broken. Where is the spkg?
 
 ---
 
-archive/issue_comments_059131.json:
+archive/issue_comments_059019.json:
 ```json
 {
     "body": "Please ignore this patch. I could have swore I updated the ticket to say so, but seem to have forgotten. I purposely removed the link. Just ignore it. I've set it to needs work.",
     "created_at": "2010-01-13T07:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59131",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59019",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -277,15 +276,15 @@ Please ignore this patch. I could have swore I updated the ticket to say so, but
 
 ---
 
-archive/issue_comments_059132.json:
+archive/issue_comments_059020.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-01-13T07:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59132",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59020",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -295,15 +294,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_059133.json:
+archive/issue_comments_059021.json:
 ```json
 {
     "body": "This can be closed as fixed by #9008 in sage-4.5.alpha0, when zlib was updated.",
     "created_at": "2011-04-02T13:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59133",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59021",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -313,15 +312,15 @@ This can be closed as fixed by #9008 in sage-4.5.alpha0, when zlib was updated.
 
 ---
 
-archive/issue_comments_059134.json:
+archive/issue_comments_059022.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-04-05T15:53:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7128",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59134",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7128#issuecomment-59022",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

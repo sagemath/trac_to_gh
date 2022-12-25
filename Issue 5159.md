@@ -6,15 +6,13 @@ archive/issues_005159.json:
     "body": "Assignee: @loefflerd\n\nKeywords: galois groups, number theory\n\nIt would be nice to unify Sage's two ways of handling Galois groups: as abstract transitive groups, and as sets of explicit automorphisms with no group structure. This can be done by using Pari's galoisinit, galoispoltoperm and galoisapply functions.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5159\n\n",
     "created_at": "2009-02-02T17:51:14Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Add functionality to Galois groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5159",
-    "user": "@loefflerd"
+    "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: @loefflerd
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5159
 
 ---
 
-archive/issue_comments_039518.json:
+archive/issue_comments_039442.json:
 ```json
 {
     "body": "The above patch should do the job for absolute fields: it creates a new GaloisGroup class, which has very little resemblance to the old one, and derives from PermutationGroup_generic. The init script calls Pari's galoisinit. Elements are stored as GaloisGroupElement objects, which are basically permutations, but with the addition of a cached method that returns the image of a generator of that permutation under the corresponding automorphism. \n\nI've also added toy implementations of decomposition and ramification groups and the Artin symbol for prime ideals in number fields; I'm sure there are faster algorithms to calculate these rather than using the definitions directly as I've done, but I am a strong believer in toy implementations.\n\nAt present this is all only for absolute fields, because Pari has no direct support for Galois groups of relative extensions. Relative fields could also be implemented, at least when the corresponding absolute field is Galois over QQ, by calculating the Galois group of the absolute extension and checking which automorphisms fix the intermediate field; but I haven't done this.",
     "created_at": "2009-02-02T18:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39518",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39442",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -55,15 +53,15 @@ At present this is all only for absolute fields, because Pari has no direct supp
 
 ---
 
-archive/issue_comments_039519.json:
+archive/issue_comments_039443.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-02T18:00:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39519",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39443",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -73,15 +71,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_039520.json:
+archive/issue_comments_039444.json:
 ```json
 {
     "body": "3.4 is for ReST tickets only.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T23:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39520",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39444",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -95,15 +93,15 @@ Michael
 
 ---
 
-archive/issue_comments_039521.json:
+archive/issue_comments_039445.json:
 ```json
 {
     "body": "This looks like great work which will be extremely useful, but needs to be rebased on 3.4  (i.e. change the docstrings in number_field.py into ReST style) before it can be tested.\n\nAt the same time, I think you can safely replace the old galois_group.py with the new one instead of leaving there and adding _new to your name.\n\nI'll do a proper review when rebased, as so far as have just read the patch.",
     "created_at": "2009-03-16T21:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39521",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39445",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -117,15 +115,15 @@ I'll do a proper review when rebased, as so far as have just read the patch.
 
 ---
 
-archive/issue_comments_039522.json:
+archive/issue_comments_039446.json:
 ```json
 {
     "body": "patch against 3.4 with patch for #5508 applied",
     "created_at": "2009-03-17T18:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39522",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39446",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -135,15 +133,15 @@ patch against 3.4 with patch for #5508 applied
 
 ---
 
-archive/issue_comments_039523.json:
+archive/issue_comments_039447.json:
 ```json
 {
     "body": "Attachment [galois.patch](tarball://root/attachments/some-uuid/ticket5159/galois.patch) by @loefflerd created at 2009-03-17 18:53:45\n\nI've rebased it to a patch based on (3.4 + the patch for #5508).\n\nThis version actually adds quite a bit that wasn't in the previous version: based on the debate on sage-nt, I've made it return the Galois group of the splitting field when the given field isn't Galois, and also added a method fixed_field for subgroups of Galois groups based on Pari's \"galoisfixedfield\".\n\nIn an ideal world, when given a non-Galois field, it would return the Galois group of the Galois closure of the given field, but represented as permutations of the roots of the defining polynomial of the original field. I couldn't work out an easy way of doing this which wouldn't be horribly slow in general, so elements are represented as permutations of the Galois conjugates of some single element generating the Galois closure.\n\nI've also ReSTified class_group.py and number_field_ideal.py (the latter because I was editing it anyway, and the former because it was easy to do); and deprecated galois_group and is_galois for relative fields in favour of explicitly relative and absolute variants.",
     "created_at": "2009-03-17T18:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39523",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39447",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -161,15 +159,15 @@ I've also ReSTified class_group.py and number_field_ideal.py (the latter because
 
 ---
 
-archive/issue_comments_039524.json:
+archive/issue_comments_039448.json:
 ```json
 {
     "body": "I'm not sure whether I did something stupid here but in a fresh clone of 3.4 I applied sage-5508.2.patch from #5508 and then tried to apply the new galois.patch form here, but it does not apply properly:\n\n```\nsage: hg_sage.apply(\"galois.patch\")\ncd \"/home/john/sage-3.4/devel/sage\" && hg status\ncd \"/home/john/sage-3.4/devel/sage\" && hg status\ncd \"/home/john/sage-3.4/devel/sage\" && hg import   \"/home/john/galois.patch\"\napplying /home/john/galois.patch\npatching file sage/rings/number_field/number_field.py\nHunk #3 FAILED at 2536\nHunk #4 FAILED at 2555\nHunk #5 FAILED at 4147\nHunk #6 FAILED at 4160\n4 out of 6 hunks FAILED -- saving rejects to file sage/rings/number_field/number_field.py.rej\nabort: patch failed to apply\n```\n\n\nDid I misunderstand something?  John",
     "created_at": "2009-03-17T21:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39524",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39448",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -197,15 +195,15 @@ Did I misunderstand something?  John
 
 ---
 
-archive/issue_comments_039525.json:
+archive/issue_comments_039449.json:
 ```json
 {
     "body": "Weird. I was using the first version of the #5508 patch, not the second, but that shouldn't make a huge difference. I will look at it in the morning.",
     "created_at": "2009-03-17T22:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39525",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39449",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -215,15 +213,15 @@ Weird. I was using the first version of the #5508 patch, not the second, but tha
 
 ---
 
-archive/issue_comments_039526.json:
+archive/issue_comments_039450.json:
 ```json
 {
     "body": "Replying to [comment:7 davidloeffler]:\n> Weird. I was using the first version of the #5508 patch, not the second, but that shouldn't make a huge difference. I will look at it in the morning.\n\n\n```\njohn@ubuntu%diff /home/john/sage-5508.2.patch /home/john/sage-5508.patch \n1679c1679\n< +            a\n---\n> +            sage: a\n```\n",
     "created_at": "2009-03-18T08:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39526",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39450",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -244,15 +242,15 @@ john@ubuntu%diff /home/john/sage-5508.2.patch /home/john/sage-5508.patch
 
 ---
 
-archive/issue_comments_039527.json:
+archive/issue_comments_039451.json:
 ```json
 {
     "body": "Attachment [galois_new.patch](tarball://root/attachments/some-uuid/ticket5159/galois_new.patch) by @loefflerd created at 2009-03-18 09:00:51\n\nreplaces previous patch -- apply after sage-5508.2.patch",
     "created_at": "2009-03-18T09:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39527",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39451",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -264,15 +262,15 @@ replaces previous patch -- apply after sage-5508.2.patch
 
 ---
 
-archive/issue_comments_039528.json:
+archive/issue_comments_039452.json:
 ```json
 {
     "body": "Here's a new patch. On my machine I've checked that it applies happily on a clean clone of 3.4 with sage-5508.2.patch on top. Let me know if this works for you too.",
     "created_at": "2009-03-18T09:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39528",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39452",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -282,15 +280,15 @@ Here's a new patch. On my machine I've checked that it applies happily on a clea
 
 ---
 
-archive/issue_comments_039529.json:
+archive/issue_comments_039453.json:
 ```json
 {
     "body": "Attachment [trac_5159_extra.patch](tarball://root/attachments/some-uuid/ticket5159/trac_5159_extra.patch) by @JohnCremona created at 2009-03-18 10:01:20",
     "created_at": "2009-03-18T10:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39529",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39453",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -300,15 +298,15 @@ Attachment [trac_5159_extra.patch](tarball://root/attachments/some-uuid/ticket51
 
 ---
 
-archive/issue_comments_039530.json:
+archive/issue_comments_039454.json:
 ```json
 {
     "body": "Good news: this patch applies fine on top of sage-5508.2.patch.\n\nI am very happy with this patch which provides a significant new set of functions and capabilities.  I did have two trivial doctest failures, in two files, nothing serious:\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5159/sage/rings/number_field//number_field.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5159/sage/rings/number_field/number_field.py\", line 3067:\n    sage: G = k.galois_group(names='c'); G\nExpected:\n    Galois group of Number Field in b with defining polynomial x^3 - x + 1\nGot:\n    Galois group of Galois closure in c of Number Field in b with defining polynomial x^3 - x + 1\n\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n  ***   Warning: large Minkowski bound: certification will be VERY long.\n*********************************************************************\n```\n\n\nand\n\n\n```\nsage -t  \"local/sage-3.4/devel/sage-5159/sage/rings/number_field//galois_group.py\"\n**********************************************************************\nFile \"/home/masgaj/local/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 479:\n    sage: from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup\nException raised:\n    Traceback (most recent call last):\n      File \"/home/masgaj/local/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/masgaj/local/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/masgaj/local/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_24[2]>\", line 1, in <module>\n        from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup###line 479:\n    sage: from sage.rings.number_field.galois_group_new import GaloisGroup_subgroup\n    ImportError: No module named galois_group_new\n*******************************************************************\n```\n\n\nI have put up a small patch which fixes these, so it can have a positive review.",
     "created_at": "2009-03-18T10:02:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39530",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39454",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -362,15 +360,15 @@ I have put up a small patch which fixes these, so it can have a positive review.
 
 ---
 
-archive/issue_comments_039531.json:
+archive/issue_comments_039455.json:
 ```json
 {
     "body": "The latest patch on top of #5508 causes a number of doctest failures:\n\n```\n\tsage -t -long devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst # 3 doctests failed\n\tsage -t -long devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n\tsage -t -long devel/sage/sage/rings/number_field/galois_group.py # 2 doctests failed\n\tsage -t -long devel/sage/doc/en/tutorial/tour_numtheory.rst # 1 doctests failed\n\tsage -t -long devel/sage/doc/fr/tutorial/tour_numtheory.rst # 1 doctests failed\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-03-25T09:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39531",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39455",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -393,15 +391,15 @@ Michael
 
 ---
 
-archive/issue_comments_039532.json:
+archive/issue_comments_039456.json:
 ```json
 {
     "body": "Attachment [5159-unpickle-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-unpickle-fix.patch) by @loefflerd created at 2009-03-25 11:16:14\n\napply over 5508-3.patch and previous TWO patches.",
     "created_at": "2009-03-25T11:16:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39532",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39456",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -413,15 +411,15 @@ apply over 5508-3.patch and previous TWO patches.
 
 ---
 
-archive/issue_comments_039533.json:
+archive/issue_comments_039457.json:
 ```json
 {
     "body": "I've done a new patch which fixes the above five doctest failures. The only difficulty was the pickle jar failure, which I've circumvented by renaming the classes GaloisGroup_v1 and GaloisGroup_v2, and aliasing GaloisGroup to GaloisGroup_v1; as the name GaloisGroup isn't imported into the global namespace anyway -- one constructs the objects using the galois_group method of number field objects -- this has no visible effect for the user, and unpickling now works fine.\n\nIn the process I spotted that the doctest failure that necessitated the final patch at #5508 seems to be machine-dependent, presumably a 32-bit / 64-bit thing. So the new patch adjusts that doctest to allow two different answers for 32-bit and 64-bit in the usual way; and I also put in a doctest in the __call__ method of number field relative orders to confirm that #4193 is fixed. \n\nDavid",
     "created_at": "2009-03-25T11:16:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39533",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39457",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -435,15 +433,15 @@ David
 
 ---
 
-archive/issue_comments_039534.json:
+archive/issue_comments_039458.json:
 ```json
 {
     "body": "Michael: what is the next step with this one? Given that the new patch changes nothing that the user sees, can it just be merged, or is a new review needed for the new patch? \n\nDavid",
     "created_at": "2009-03-27T11:38:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39534",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39458",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -455,15 +453,15 @@ David
 
 ---
 
-archive/issue_comments_039535.json:
+archive/issue_comments_039459.json:
 ```json
 {
     "body": "Replying to [comment:15 davidloeffler]:\n> Michael: what is the next step with this one? Given that the new patch changes nothing that the user sees, can it just be merged, or is a new review needed for the new patch? \n> \n> David\n> \n\nIt would still be nice if someone did a quick re-review of the last two patches.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-27T16:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39535",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39459",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -483,15 +481,15 @@ Michael
 
 ---
 
-archive/issue_comments_039536.json:
+archive/issue_comments_039460.json:
 ```json
 {
     "body": "I can confirm that the patches apply ok as described, based on 3.4.  I have not yet tried on 3.4.1, or tested whether my rebased patch for #5513 will still work, but will do that.\n\nI have relabelled this \"positive review\" although on of the new patches -- the very trivial one -- was mine.",
     "created_at": "2009-03-29T17:48:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39536",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39460",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -503,15 +501,15 @@ I have relabelled this "positive review" although on of the new patches -- the v
 
 ---
 
-archive/issue_comments_039537.json:
+archive/issue_comments_039461.json:
 ```json
 {
     "body": "I have just checked that it applies cleanly to 3.4.1.alpha0, and sage -testall passes.",
     "created_at": "2009-03-29T17:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39537",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39461",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -521,15 +519,15 @@ I have just checked that it applies cleanly to 3.4.1.alpha0, and sage -testall p
 
 ---
 
-archive/issue_comments_039538.json:
+archive/issue_comments_039462.json:
 ```json
 {
     "body": "Oops:  on a 64-bit machine I get this:\n\n```\njec@host-57-44:~/sage-3.4/devel/sage-5159$ sage -t sage/rings/number_field/galois_group.py\nsage -t  \"devel/sage-5159/sage/rings/number_field/galois_group.py\"\n**********************************************************************\nFile \"/home/jec/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 343:\n    sage: G.decomposition_group(P^2)\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Fractional ideal (1/984*a^7 - 71/1968*a^5 + 29/984*a^3 + 527/328*a) is not prime\nGot:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[6]>\", line 1, in <module>\n        G.decomposition_group(P**Integer(2))###line 343:\n    sage: G.decomposition_group(P^2)\n      File \"/home/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/number_field/galois_group.py\", line 357, in decomposition_group\n        raise ValueError, \"%s is not prime\" % P\n    ValueError: Fractional ideal (-1/492*a^7 + 101/1968*a^5 - 115/328*a^3 + 1717/984*a) is not prime\n**********************************************************************\nFile \"/home/jec/sage-3.4/devel/sage-5159/sage/rings/number_field/galois_group.py\", line 445:\n    sage: G.artin_symbol(K.primes_above(2)[0])\nExpected:\n    Traceback (most recent call last):\n    ...\n    ValueError: Fractional ideal (-1/8364*b^7 + 1/492*b^6 - 11/16728*b^5 - 101/1968*b^4 + 209/2788*b^3 + 115/328*b^2 - 3139/8364*b + 251/984) is ramified\nGot:\n    Traceback (most recent call last):\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/jec/sage-3.4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_22[7]>\", line 1, in <module>\n        G.artin_symbol(K.primes_above(Integer(2))[Integer(0)])###line 445:\n    sage: G.artin_symbol(K.primes_above(2)[0])\n      File \"/home/jec/sage-3.4/local/lib/python2.5/site-packages/sage/rings/number_field/galois_group.py\", line 463, in artin_symbol\n        if len(t) > 1: raise ValueError, \"%s is ramified\" % P\n    ValueError: Fractional ideal (43/33456*b^7 + 7/1968*b^6 - 809/33456*b^5 - 35/656*b^4 + 367/2788*b^3 + 61/492*b^2 - 4651/16728*b + 757/984) is ramified\n**********************************************************************\n2 items had failures:\n   1 of   8 in __main__.example_18\n   1 of   8 in __main__.example_22\n```\n\n\nI think you cannot rely on pari giveing you the primes in a specific order:\n\n```\nsage: P = K.primes_above(17)[0]\nsage: P\nFractional ideal (1/492*a^7 - 101/1968*a^5 + 115/328*a^3 - 733/984*a)\nsage: P^2\nFractional ideal (-1/492*a^7 + 101/1968*a^5 - 115/328*a^3 + 1717/984*a)\nsage: Q = K.primes_above(17)[1]\nsage: Q^2\nFractional ideal (-5/2788*a^7 + 587/11152*a^5 - 2791/5576*a^3 + 13915/5576*a)\n```\n\nso the doctest needs to be designed to allow for that.  Perhaps define P via\n\n```\nsage: P=K.ideal(17,a^2)\nsage: P\nFractional ideal (1/492*a^7 - 101/1968*a^5 + 115/328*a^3 - 733/984*a)\nsage: P.is_prime()\nTrue\n```\n\n(which may or may not be the P i your doctest).",
     "created_at": "2009-03-30T11:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39538",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39462",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -616,15 +614,15 @@ True
 
 ---
 
-archive/issue_comments_039539.json:
+archive/issue_comments_039463.json:
 ```json
 {
     "body": "It doesn't greatly matter which P is being used, since they are all Galois-conjugate. Thus I have put a \"...\" in the two doctests that failed above. I've tested it on a 64-bit machine with this fix and now all doctests in sage/rings/number_fields pass there too. Patch coming in a moment.\n\nDavid",
     "created_at": "2009-03-30T12:52:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39539",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39463",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -636,15 +634,15 @@ David
 
 ---
 
-archive/issue_comments_039540.json:
+archive/issue_comments_039464.json:
 ```json
 {
     "body": "Apply over previous three patches",
     "created_at": "2009-03-30T12:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39540",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39464",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -654,15 +652,15 @@ Apply over previous three patches
 
 ---
 
-archive/issue_comments_039541.json:
+archive/issue_comments_039465.json:
 ```json
 {
     "body": "Attachment [5159-64bit-doctest.patch](tarball://root/attachments/some-uuid/ticket5159/5159-64bit-doctest.patch) by mabshoff created at 2009-03-31 03:35:54",
     "created_at": "2009-03-31T03:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39541",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39465",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -672,15 +670,15 @@ Attachment [5159-64bit-doctest.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_039542.json:
+archive/issue_comments_039466.json:
 ```json
 {
     "body": "When merging\n\n* trac_5159_galois_new.patch\n* trac_5159_extra.patch\n* trac_5159-unpickle-fix.patch\n* trac_5159-64bit-doctest.patch\n\nI am seeing the following doctest failure on sage.math, i.e. 64 bit Linux:\n\n```\nsage -t -long \"devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc0/devel/sage/doc/en/bordeaux_2008/nf_galois_groups.rst\", line 44:\n    sage: [G.artin_symbol(Q) for Q in K.primes_above(5)]\nExpected:\n    [(1,5)(2,4)(3,6), (1,3)(2,6)(4,5), (1,2)(3,4)(5,6)]\nGot:\n    [(1,5)(2,4)(3,6), (1,2)(3,4)(5,6), (1,3)(2,6)(4,5)]\n**********************************************************************\n```\n\nI would guess that sorting the list might fix the issue.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T07:19:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39542",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39466",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -715,15 +713,15 @@ Michael
 
 ---
 
-archive/issue_comments_039543.json:
+archive/issue_comments_039467.json:
 ```json
 {
     "body": "Sorting the list exposed another bug, which I refuse to accept any responsibility for whatsoever: there is something funny going on in the default __cmp__ routine in sage.structure.element.Element, which meant that if x,y were GaloisGroupElements then cmp(x, y) worked but sorted([x, y]) didn't. \n\nI've worked around this by implementing __cmp__ directly for GaloisGroupElements. This gets the doctests in doc/en/bordeaux_2008 to pass on 32bit and 64bit.\n\nApologies that these things didn't get spotted earlier, but I'm working from home on a clapped out old 32-bit laptop, on which running sage -testall takes over three hours, so when I was working on this I only ran the doctests in sage/rings/number_field. That's a mistake I won't make again.\n\nDavid",
     "created_at": "2009-03-31T08:36:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39543",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39467",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -739,15 +737,15 @@ David
 
 ---
 
-archive/issue_comments_039544.json:
+archive/issue_comments_039468.json:
 ```json
 {
     "body": "apply over previous four patches (!)",
     "created_at": "2009-03-31T08:37:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39544",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39468",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -757,15 +755,15 @@ apply over previous four patches (!)
 
 ---
 
-archive/issue_comments_039545.json:
+archive/issue_comments_039469.json:
 ```json
 {
     "body": "Attachment [5159-sort-fix.patch](tarball://root/attachments/some-uuid/ticket5159/5159-sort-fix.patch) by @JohnCremona created at 2009-03-31 08:47:00\n\nI'll test all these in a minute....",
     "created_at": "2009-03-31T08:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39545",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39469",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -777,15 +775,15 @@ I'll test all these in a minute....
 
 ---
 
-archive/issue_comments_039546.json:
+archive/issue_comments_039470.json:
 ```json
 {
     "body": "Replying to [comment:24 cremona]:\n> I'll test all these in a minute....\nunfortunately the total weirdness I came across just now in testing 5513 is still here.  It looks like I cannot test anything on 3.4.1.alpha0 without rebuilding from scratch, which unfortunately would not finish until after my free time for the day is over.  So unless mabshoff has any idea what was causing that, it will be hard for me to do anything useful for a while.",
     "created_at": "2009-03-31T08:56:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39546",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39470",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -797,15 +795,15 @@ unfortunately the total weirdness I came across just now in testing 5513 is stil
 
 ---
 
-archive/issue_comments_039547.json:
+archive/issue_comments_039471.json:
 ```json
 {
     "body": "Well the good news is that on my 64-bit build (on Bill Hart's computer) I successfully applied all 5 patches to 3.4.1.alpha0, and all tests (in sage/rings/number_field) pass, so I will give this a positive review and hope that it works for Michael too.",
     "created_at": "2009-03-31T09:05:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39547",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39471",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -815,15 +813,15 @@ Well the good news is that on my 64-bit build (on Bill Hart's computer) I succes
 
 ---
 
-archive/issue_comments_039548.json:
+archive/issue_comments_039472.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-31T09:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39548",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39472",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -833,15 +831,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_039549.json:
+archive/issue_comments_039473.json:
 ```json
 {
     "body": "Merged \n\n* trac_5159_part_1_galois_new.patch\n* trac_5159_part_2_extra.patch\n* trac_5159_part_3-unpickle-fix.patch\n* trac_5159_part_4-64bit-doctest.patch\n* trac_5159_part_5_sort-fix.patch\n\nin Sage 3.4.1.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T09:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5159",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39549",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5159#issuecomment-39473",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

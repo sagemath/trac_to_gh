@@ -6,7 +6,7 @@ archive/issues_008865.json:
     "body": "Assignee: @aghitza\n\nKeywords: FractionField, subs\n\nPolynomialRing elements allow keyword arguments when substitute values for the variables (via !__call!__), but the corresponding method in FractionFieldElement doesn't handle keyword arguments properly.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: x = PolynomialRing(RationalField(),'x',3).gens()\nsage: f = x[0] + x[1] - 2*x[1]*x[2]\nsage: h = f /(x[1] + x[2])\nsage: h\n(-2*x1*x2 + x0 + x1)/(x1 + x2)\nsage: h(1,2,5)\n-17/7\nsage: h(x0=1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.4, Release Date: 2010-04-24                         |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mguaypaq/sage/<ipython console> in <module>()\n\nTypeError: __call__() got an unexpected keyword argument 'x0'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8865\n\n",
     "created_at": "2010-05-03T22:35:47Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008865.json:
     "title": "FractionFieldElement.__call__ doesn't handle keyword arguments",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8865",
-    "user": "@mguaypaq"
+    "user": "https://github.com/mguaypaq"
 }
 ```
 Assignee: @aghitza
@@ -53,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8865
 
 ---
 
-archive/issue_comments_081468.json:
+archive/issue_comments_081334.json:
 ```json
 {
     "body": "Attachment [trac_8865_fraction_field_keywords.patch](tarball://root/attachments/some-uuid/ticket8865/trac_8865_fraction_field_keywords.patch) by @mguaypaq created at 2010-05-04 12:26:27",
     "created_at": "2010-05-04T12:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81468",
-    "user": "@mguaypaq"
+    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81334",
+    "user": "https://github.com/mguaypaq"
 }
 ```
 
@@ -71,15 +71,15 @@ Attachment [trac_8865_fraction_field_keywords.patch](tarball://root/attachments/
 
 ---
 
-archive/issue_comments_081469.json:
+archive/issue_comments_081335.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-04T12:29:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81469",
-    "user": "@mguaypaq"
+    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81335",
+    "user": "https://github.com/mguaypaq"
 }
 ```
 
@@ -89,15 +89,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_081470.json:
+archive/issue_comments_081336.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-04T14:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81470",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81336",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -107,15 +107,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_081471.json:
+archive/issue_comments_081337.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2010-05-04T14:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81471",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81337",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -125,15 +125,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_081472.json:
+archive/issue_comments_081338.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-08T21:35:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81472",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8865#issuecomment-81338",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

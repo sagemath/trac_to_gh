@@ -6,15 +6,14 @@ archive/issues_007545.json:
     "body": "Assignee: @loefflerd\n\nCC:  @kcrisman @videlec @katestange\n\nKeywords: gaussian integers, Z[i], quadratic number ring\n\nWhen teaching Gaussian Integers, I decided to modify sage slightly for my students. For them Z[i] is the ring of a+b*i with a and b integers and they learn that one can compute gcd's and that the unique factorisation holds.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7545\n\n",
     "created_at": "2009-11-27T17:03:48Z",
     "labels": [
-        "number fields",
-        "minor",
-        "enhancement"
+        "component: number fields",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-7.1",
     "title": "Gaussian Integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7545",
-    "user": "@categorie"
+    "user": "https://github.com/categorie"
 }
 ```
 Assignee: @loefflerd
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7545
 
 ---
 
-archive/issue_comments_064037.json:
+archive/issue_comments_063921.json:
 ```json
 {
     "body": "patch exported in 4.3.alpha0.",
     "created_at": "2009-11-27T17:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64037",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63921",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -51,15 +50,15 @@ patch exported in 4.3.alpha0.
 
 ---
 
-archive/issue_comments_064038.json:
+archive/issue_comments_063922.json:
 ```json
 {
     "body": "Attachment [trac_7545_zi.patch](tarball://root/attachments/some-uuid/ticket7545/trac_7545_zi.patch) by @categorie created at 2009-11-27 17:21:52\n\nThe added patch will add a file 'gaussian_integer.py' which adds `GaussianIntegers` and `GaussianNumberField` to sage. The elements of the `GaussianIntegers` are elements in a quadratic Order, but they have a few more functions. Like `factor`, `gcd`, `is_prime`, `quo_rem`,... Also they are printed as `a + b*i` not as `b*i + a`. Also the coefficients of integers are in `ZZ`, not in `QQ` as for general quadratic orders.\n\nI am not sure if I should propose this ticket for review and inclusion in sage. It maybe against the more general framework in number fields and will create silly exceptions. Also I still have not learned to do this in cython, so it is nowhere as efficient as it should be.\n\nOne might also want to change further things, like the function `gcd`. Also `QuadarticField(-1)` should give back `GaussianNumberFields` etc. \n\nA futher issue is 'i'. By default i is a symbol expression. If someone types `GaussianInteger()` he will probably assume that 'i' is in it afterwards. But changing this would probably not be a good idea.\n\nAnyway, the patch is here to be looked at as it may inspire some further work in this direction.",
     "created_at": "2009-11-27T17:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64038",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63922",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -79,15 +78,15 @@ Anyway, the patch is here to be looked at as it may inspire some further work in
 
 ---
 
-archive/issue_comments_064039.json:
+archive/issue_comments_063923.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2009-11-27T17:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64039",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63923",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -97,15 +96,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_064040.json:
+archive/issue_comments_063924.json:
 ```json
 {
     "body": "I think this could be very useful to have. (In fact, it would be cool if the default i was in ZZ[i], and coerced down to the symbolics...) If an embedding into CC is specified then it would probably play better with symbolics.",
     "created_at": "2009-11-29T07:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64040",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63924",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -115,15 +114,15 @@ I think this could be very useful to have. (In fact, it would be cool if the def
 
 ---
 
-archive/issue_comments_064041.json:
+archive/issue_comments_063925.json:
 ```json
 {
     "body": "The default `I` is currently just a wrapper around the QQ[I] one.",
     "created_at": "2009-11-29T14:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64041",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63925",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -133,15 +132,15 @@ The default `I` is currently just a wrapper around the QQ[I] one.
 
 ---
 
-archive/issue_comments_064042.json:
+archive/issue_comments_063926.json:
 ```json
 {
     "body": "The Pynac/symbolic one is, yes.  In fact, it looks a lot like the one in this patch already:\n\n```\n    K = QuadraticField(-1, 'I', embedding=CC.gen(), latex_name='i')\n    pynac_I = K.gen()\n```\n\nwhich by the way appears to be a bug of sorts; `embedding` should be `True` or `False` in this case, which then passes things to `NumberField`, where `embedding` should be the image of the generator in an ambient field.  I don't know if should be considered a bug in `QuadraticField` or in the Pynac implementation, though.  What's actually passed to `NumberField` is `CLF(-1).sqrt()`.\n\n(Parenthetical: sage.rings.all says\n\n```\n# i = I = QuadraticField(-1, 'I').gen()\nI = CC.gen()\n```\n\nSo I wonder if there is any conflict between these that would need to get sorted out.  Apparently it just gets overwritten during the import process when Sage starts up.)\n\nAnyway, in sage.symbolic.pynac we have further that\n\n```\n    I = new_Expression_from_GEx(ring.SR, g_I)\n```\n\nSo is it possible to make `I` no longer be this Pynac-wrapped generator of the appropriate quadratic field, but instead stay an element of the number field 'coerced' as robertwb says when appropriate (such as with `2.*I`)?  \n\nI would be very happy to take Chris' excellent start and turn it into that, because I could definitely use it this spring in my own class.  But I'd need help because I don't know how the coercion stuff works at all.",
     "created_at": "2010-08-10T19:40:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64042",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63926",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -177,15 +176,15 @@ I would be very happy to take Chris' excellent start and turn it into that, beca
 
 ---
 
-archive/issue_comments_064043.json:
+archive/issue_comments_063927.json:
 ```json
 {
     "body": "#13213 seems to be nearly ready, which I think might make dealing with these things more tractable - ?",
     "created_at": "2013-05-10T16:20:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64043",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63927",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -195,15 +194,15 @@ archive/issue_comments_064043.json:
 
 ---
 
-archive/issue_comments_064044.json:
+archive/issue_comments_063928.json:
 ```json
 {
     "body": "Actually #13213 is not complete enough to start implementing this, we need #13256 as well !\n\n`GaussianIntegers` should definitely inherit from `sage.rings.number_field.order.Order` and its elements from `sage.rings.number_field.number_field_element_quadratic.OrderElement_quadratic`. By the way, the Gaussian integers is not the only integer ring which is a euclidean ring ! This is True for negative discriminants -1 (Gaussian integers), -2, -3, -7 and -11. Moreover, some of the quadratic fields with positive discriminant are also norm-euclidean (see the [related page](http://en.wikipedia.org/wiki/Euclidean_domain#Norm-Euclidean_fields) on wikipedia).",
     "created_at": "2013-05-10T17:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64044",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63928",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -215,15 +214,15 @@ Actually #13213 is not complete enough to start implementing this, we need #1325
 
 ---
 
-archive/issue_comments_064045.json:
+archive/issue_comments_063929.json:
 ```json
 {
     "body": "> Actually #13213 is not complete enough to start implementing this, we need #13256 as well !\nThanks for pointing this out.\n> By the way, the Gaussian integers is not the only integer ring which is a euclidean ring ! This is True for negative discriminants -1 (Gaussian integers), -2, -3, -7 and -11. Moreover, some of the quadratic fields with positive discriminant are also norm-euclidean (see the [related page](http://en.wikipedia.org/wiki/Euclidean_domain#Norm-Euclidean_fields) on wikipedia).\nOf course!  I am thinking of these primarily for pedagogical purposes - my druthers would be to have these and the Eisenstein integers, that's as much as I'll ever use at the undergraduate level.\n\nIf you'd like to start this (as I believe you understand technical details of Sage coercion, which I do not really) by rebasing the current patch to those tickets in the way you indicate, I should have some time this summer and some motivation to help out.",
     "created_at": "2013-05-10T17:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64045",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63929",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -238,15 +237,15 @@ If you'd like to start this (as I believe you understand technical details of Sa
 
 ---
 
-archive/issue_comments_064046.json:
+archive/issue_comments_063930.json:
 ```json
 {
     "body": "The patches discussed seem to be ready.",
     "created_at": "2013-10-05T16:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64046",
-    "user": "@katestange"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63930",
+    "user": "https://github.com/katestange"
 }
 ```
 
@@ -256,15 +255,15 @@ The patches discussed seem to be ready.
 
 ---
 
-archive/issue_comments_064047.json:
+archive/issue_comments_063931.json:
 ```json
 {
     "body": "Looking at this ticket, I fail to see the need for a whole new implementation of `Z[i]`. If `NumberField(x^2+1, 'I').ring_of_integers()` doesn't suit you, we should fix the latter such that it does.\n\nI do agree with just defining the name `GaussianIntegers` to be a synonym of `NumberField(x^2+1, 'I').ring_of_integers()`.",
     "created_at": "2014-12-22T09:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64047",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63931",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -276,15 +275,15 @@ I do agree with just defining the name `GaussianIntegers` to be a synonym of `Nu
 
 ---
 
-archive/issue_comments_064048.json:
+archive/issue_comments_063932.json:
 ```json
 {
     "body": "> I do agree with just defining the name GaussianIntegers to be a synonym of NumberField(x^2+1, 'I').ring_of_integers().\n\nSome stuff already works with this.  However, it is definitely insufficient.\n* I can't figure out how to get something prime (I can get the factorization and whether it's a unit, but that's not the same thing).\n* What is this?\n\n```\nsage: GaussianIntegers([199,0]).quo_rem(GaussianIntegers([100,0]))\n(199/100, 0)\n```\n\n* There is no `gcd` implemented either.\n\nSo I don't think it could just be a synonym, but would it be possible to only slightly extend the class, maybe?  I would be, as mentioned before, very motivated to review something like this, not sure if just adapting the current patch (well, the stuff that is missing) to just extend the current thing is possible or the way to go.",
     "created_at": "2014-12-22T13:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64048",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63932",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -307,15 +306,15 @@ So I don't think it could just be a synonym, but would it be possible to only sl
 
 ---
 
-archive/issue_comments_064049.json:
+archive/issue_comments_063933.json:
 ```json
 {
     "body": "Replying to [comment:13 kcrisman]:\n> * There is no `gcd` implemented either.\nThere is if somebody reviews #17294.",
     "created_at": "2014-12-22T13:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64049",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63933",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -327,15 +326,15 @@ There is if somebody reviews #17294.
 
 ---
 
-archive/issue_comments_064050.json:
+archive/issue_comments_063934.json:
 ```json
 {
     "body": "Replying to [comment:13 kcrisman]:\n> * I can't figure out how to get something prime\nDo you mean that you're missing an `is_prime()` method?",
     "created_at": "2014-12-22T13:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64050",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63934",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -347,15 +346,15 @@ Do you mean that you're missing an `is_prime()` method?
 
 ---
 
-archive/issue_comments_064051.json:
+archive/issue_comments_063935.json:
 ```json
 {
     "body": "I created #17538 for `is_prime()`.",
     "created_at": "2014-12-22T14:00:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64051",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63935",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -365,15 +364,15 @@ I created #17538 for `is_prime()`.
 
 ---
 
-archive/issue_comments_064052.json:
+archive/issue_comments_063936.json:
 ```json
 {
     "body": "And does the Euclidean algorithm work as intended here?  I would definitely say that those two tickets would be very useful.",
     "created_at": "2014-12-22T14:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64052",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63936",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -383,15 +382,15 @@ And does the Euclidean algorithm work as intended here?  I would definitely say 
 
 ---
 
-archive/issue_comments_064053.json:
+archive/issue_comments_063937.json:
 ```json
 {
     "body": "> I do agree with just defining the name `GaussianIntegers` to be a synonym of `NumberField(x^2+1, 'I').ring_of_integers()`.\nFinally returning to this as I'm teaching it again... Would it be better to have it be a synonym of `NumberField(x^2+1, 'I', embedding=CC.gen()).ring_of_integers()` so that one can do numerical approximation?  (Or would that cause other problems?)",
     "created_at": "2015-03-18T02:54:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64053",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63937",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -402,15 +401,15 @@ Finally returning to this as I'm teaching it again... Would it be better to have
 
 ---
 
-archive/issue_comments_064054.json:
+archive/issue_comments_063938.json:
 ```json
 {
     "body": "Alternately, should we use `QuadraticField`?\n\nAlso, what about the questions in the original post - would these nowadays be fixed by just doing the 'obvious'?  I think that for pedagogical purposes at least, and hopefully general purposes, these would both be useful.\n> Also they are printed as a + b*i not as b*i + a. \n\n> Also the coefficients of integers are in ZZ, not in QQ as for general quadratic orders.",
     "created_at": "2015-03-18T02:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64054",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63938",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -425,15 +424,15 @@ Also, what about the questions in the original post - would these nowadays be fi
 
 ---
 
-archive/issue_comments_064055.json:
+archive/issue_comments_063939.json:
 ```json
 {
     "body": "Replying to [comment:19 kcrisman]:\n> Alternately, should we use `QuadraticField`?\nThe best choice would be\n\n```\nZI = QuadraticField(-1, 'I').ring_of_integers()\n```\n\n\n> Also they are printed as a + b*i not as b*i + a.\nThis is an indeed an \"issue\". However, it certainly does not justify adding a whole new class just to print things differently. One should add some kind of option to `NumberField` to `_repr_()` things in a different order.",
     "created_at": "2015-03-18T07:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64055",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63939",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -453,15 +452,15 @@ This is an indeed an "issue". However, it certainly does not justify adding a wh
 
 ---
 
-archive/issue_comments_064056.json:
+archive/issue_comments_063940.json:
 ```json
 {
     "body": "Replying to [comment:19 kcrisman]:\n> Also the coefficients of integers are in ZZ, not in QQ as for general quadratic orders.\nThe coefficients of the `ring_of_integers()` are in ZZ, so this is not a problem.",
     "created_at": "2015-03-18T07:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64056",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63940",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -473,15 +472,15 @@ The coefficients of the `ring_of_integers()` are in ZZ, so this is not a problem
 
 ---
 
-archive/issue_comments_064057.json:
+archive/issue_comments_063941.json:
 ```json
 {
     "body": "Maybe I should clarify the original aim of this ticket and the preliminary code: It was for educational purpose. The code there was in no way optimized, but it illustrated what I taught at the time. I don't think that code should go in. Some of the comments above relate to outdated things. After all this ticket is now 5 years old.\n\nRegardless of that. I believe we should have that the standard `I` in sage is an element in the ring of integers of the `QuadraticField`. It may be worth to have this particular field and its ring as a class for the following reason:\n* I would really want the printing to change and I am not sure I want to fight for a change for arbitrary number fields.\n* I think the global name `GaussianIntegers` could be worth having for educational purposes.\n* Maybe there are things from pari's `I` that one can use to increase the speed. Presumably pari's `I` is not just a wrap around `Mod(x,x^2+1)` but I don't know about this.\n* It is also one of two in the intersection of `CyclotomicFields` and `QuadraticField`. \n* It could interact with the symbolic `I` and other instances of it.\nIn any case, this should not be more than a wrapper around optimized code in other places.\n\nWhat I consider a bug is\n\n```\nsage: K = QuadraticField(-1)\nsage: I in K\nFalse\n```\n",
     "created_at": "2015-03-18T10:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64057",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63941",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -508,15 +507,15 @@ False
 
 ---
 
-archive/issue_comments_064058.json:
+archive/issue_comments_063942.json:
 ```json
 {
     "body": "Replying to [comment:22 wuthrich]:\n> * I think the global name `GaussianIntegers` could be worth having for educational purposes.\nI agree. That change could be done *now* even without this ticket.\n\n> * Maybe there are things from pari's `I` that one can use to increase the speed.\nI don't think so. PARI's `I` is really meant for complex numbers, not for doing number theory. PARI's `I` is a very different thing than `Mod(x, x^2+1)`.",
     "created_at": "2015-03-18T11:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64058",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63942",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -531,15 +530,15 @@ I don't think so. PARI's `I` is really meant for complex numbers, not for doing 
 
 ---
 
-archive/issue_comments_064059.json:
+archive/issue_comments_063943.json:
 ```json
 {
     "body": "I still think that `GaussianIntegers` should be exactly the same as `QuadraticField(-1).ring_of_integers()`.",
     "created_at": "2015-03-18T11:39:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64059",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63943",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -549,15 +548,15 @@ I still think that `GaussianIntegers` should be exactly the same as `QuadraticFi
 
 ---
 
-archive/issue_comments_064060.json:
+archive/issue_comments_063944.json:
 ```json
 {
     "body": "Replying to [comment:22 wuthrich]:\n> I am not sure I want to fight for a change for arbitrary number fields.\n\nDon't *fight*, just *ask*... I did just that on `sage-nt`. Note that changing the print order will probably break a huge amounts of doctests, so it won't be fun.",
     "created_at": "2015-03-18T11:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64060",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63944",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -570,15 +569,15 @@ Don't *fight*, just *ask*... I did just that on `sage-nt`. Note that changing th
 
 ---
 
-archive/issue_comments_064061.json:
+archive/issue_comments_063945.json:
 ```json
 {
     "body": "> Don't *fight*, just *ask*... I did just that on `sage-nt`. Note that changing the print order will probably break a huge amounts of doctests, so it won't be fun.\n\nFor cyclotomic fields it would make sense to change too. I guess. Thanks for asking :)\n\nGood to know about pari's I. How do you feel about the interaction in sage with the symbolic I. As a student I would be very confused if I was not in GaussianIntegers.",
     "created_at": "2015-03-18T11:54:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64061",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63945",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -592,15 +591,15 @@ Good to know about pari's I. How do you feel about the interaction in sage with 
 
 ---
 
-archive/issue_comments_064062.json:
+archive/issue_comments_063946.json:
 ```json
 {
     "body": "Just noticed now that the pun were better had I written \n \"As a student I would be very confused if I were not in `GaussianIntegers`.\"",
     "created_at": "2015-03-18T12:03:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64062",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63946",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -611,15 +610,15 @@ Just noticed now that the pun were better had I written
 
 ---
 
-archive/issue_comments_064063.json:
+archive/issue_comments_063947.json:
 ```json
 {
     "body": "So I think that we have a few separate issues.\n* Add prime elements, not just ideals (done)\n* Add gcd (ticket #17294)\n* Add alias for `GaussianIntegers` (this ticket)\n* Worry about printing order\n* Figure out how to get `I in GaussianIntegers` to work, if at all possible, or document the heck out of it if not\n\nCan anyone think of anything else that would be needed for pedagogical purposes?  I can only think of\n* Plotting Gaussian integers, especially primes, like http://www.jasondavies.com/gaussian-primes/ (though I have some nice interacts of my own for this)\n\n> Just noticed now that the pun were better had I written \n>  \"As a student I would be very confused if I were not in `GaussianIntegers`.\"\nVery nice indeed.",
     "created_at": "2015-03-18T14:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64063",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63947",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -641,15 +640,15 @@ Very nice indeed.
 
 ---
 
-archive/issue_comments_064064.json:
+archive/issue_comments_063948.json:
 ```json
 {
     "body": "(Also separate ticket: Eisenstein Integers!)",
     "created_at": "2015-03-18T14:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64064",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63948",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -659,15 +658,15 @@ archive/issue_comments_064064.json:
 
 ---
 
-archive/issue_comments_064065.json:
+archive/issue_comments_063949.json:
 ```json
 {
     "body": "Alias or its own class is still a question, I believe. Do we want `CyclotomicField(4)` and `QuadraticField(-1)` to return the same thing ? We agree that in either case it should be minimal.\n\nWhy `I` is a symbolic expression in sage now is a mystery to me. Surely it should be in Z[i], just like 2 is in Z. That `I^2` is a symbolic expression and not an integer seems particularly inconvenient.\n\nEisenstein integer could be dealt with on this same ticket. We only have to decide if the generator is a 3rd or a 6th root of unity.",
     "created_at": "2015-03-18T15:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64065",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63949",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -681,15 +680,15 @@ Eisenstein integer could be dealt with on this same ticket. We only have to deci
 
 ---
 
-archive/issue_comments_064066.json:
+archive/issue_comments_063950.json:
 ```json
 {
     "body": "Replying to [comment:30 wuthrich]:\n> Why `I` is a symbolic expression in sage now is a mystery to me. Surely it should be in Z[i], just like 2 is in Z. That `I^2` is a symbolic expression and not an integer seems particularly inconvenient.\n\nAgreed: this is **very** annoying. And actually, defining `I` as the generator of `ZZ[I]` might work out of the box\n\n```\nsage: good_I = QuadraticField(-1,'I').gen()\nsage: (good_I + 1.0).parent()\nComplex Field with 53 bits of precision\nsage: (good_I + 1/2).parent()\nNumber Field in I with defining polynomial x^2 + 1\nsage: good_I == I        # not perfect\nI == I\nsage: bool(good_I == I)  # but not that bad\nTrue\n```\n",
     "created_at": "2015-03-22T11:04:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64066",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63950",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -715,15 +714,15 @@ True
 
 ---
 
-archive/issue_comments_064067.json:
+archive/issue_comments_063951.json:
 ```json
 {
     "body": "Please open a *different* ticket for the issue of `I`.",
     "created_at": "2015-03-22T11:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64067",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63951",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -733,15 +732,15 @@ Please open a *different* ticket for the issue of `I`.
 
 ---
 
-archive/issue_comments_064068.json:
+archive/issue_comments_063952.json:
 ```json
 {
     "body": "Replying to [comment:32 jdemeyer]:\n> Please open a *different* ticket for the issue of `I`.\n\n#18036",
     "created_at": "2015-03-22T11:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64068",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63952",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -754,15 +753,15 @@ Replying to [comment:32 jdemeyer]:
 
 ---
 
-archive/issue_comments_064069.json:
+archive/issue_comments_063953.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2016-01-03T18:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64069",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63953",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -772,15 +771,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_064070.json:
+archive/issue_comments_063954.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2016-01-03T18:22:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64070",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63954",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -790,15 +789,15 @@ New commits:
 
 ---
 
-archive/issue_comments_064071.json:
+archive/issue_comments_063955.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2016-01-19T10:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64071",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63955",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -808,15 +807,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_064072.json:
+archive/issue_comments_063956.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2016-01-25T21:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64072",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63956",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -826,15 +825,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_064073.json:
+archive/issue_comments_063957.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-01-26T07:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64073",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63957",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -844,15 +843,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_064074.json:
+archive/issue_comments_063958.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2016-01-26T07:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64074",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63958",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -862,15 +861,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_064075.json:
+archive/issue_comments_063959.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2016-02-24T19:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64075",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63959",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -880,15 +879,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064076.json:
+archive/issue_comments_063960.json:
 ```json
 {
     "body": "ok, looks good to me.",
     "created_at": "2016-02-24T19:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64076",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63960",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -898,15 +897,15 @@ ok, looks good to me.
 
 ---
 
-archive/issue_comments_064077.json:
+archive/issue_comments_063961.json:
 ```json
 {
     "body": "Thank you!!!",
     "created_at": "2016-02-24T20:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64077",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63961",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -916,15 +915,15 @@ Thank you!!!
 
 ---
 
-archive/issue_comments_064078.json:
+archive/issue_comments_063962.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2016-02-25T20:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-64078",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7545#issuecomment-63962",
+    "user": "https://github.com/vbraun"
 }
 ```
 

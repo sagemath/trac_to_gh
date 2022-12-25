@@ -6,15 +6,14 @@ archive/issues_001817.json:
     "body": "Assignee: tba\n\nSee patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1817\n\n",
     "created_at": "2008-01-18T00:11:23Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] crypto.mq.sr doctest coverage at 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1817",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1817
 
 ---
 
-archive/issue_comments_011480.json:
+archive/issue_comments_011451.json:
 ```json
 {
     "body": "Attachment [sr-doctest.patch](tarball://root/attachments/some-uuid/ticket1817/sr-doctest.patch) by @malb created at 2008-01-18 00:11:44",
     "created_at": "2008-01-18T00:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1817",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11480",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11451",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [sr-doctest.patch](tarball://root/attachments/some-uuid/ticket1817/sr
 
 ---
 
-archive/issue_comments_011481.json:
+archive/issue_comments_011452.json:
 ```json
 {
     "body": "Patch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-23T04:14:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1817",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11481",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11452",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Michael
 
 ---
 
-archive/issue_comments_011482.json:
+archive/issue_comments_011453.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-23T04:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1817",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11482",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11453",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +86,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011483.json:
+archive/issue_comments_011454.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha2",
     "created_at": "2008-01-23T04:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1817",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11483",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1817#issuecomment-11454",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

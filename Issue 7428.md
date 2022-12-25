@@ -6,15 +6,14 @@ archive/issues_007428.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nWhen I try to publish a worksheet, it does not initially show up in the list of published worksheets.  To reproduce, on sagenb.org:\n\n1. Create a new worksheet\n2. Click the Publish tab\n3. Click \"Yes\"\n4. Click the \"Published\" link at the very top right to look at the list of published worksheets.\n\nThe worksheet you just published should be up at the top of this list, but it's not.  This is the bug.\n5. Navigate back to your worksheet\n6. Click the publish tab again\n7. Click \"Re-publish worksheet\"\n8. Again click \"Published\" to go to the list of published worksheets\n\nNow your worksheet is listed at the top of this list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7428\n\n",
     "created_at": "2009-11-11T07:31:12Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "worksheets listed on published list only after they are republished, but not after initial publication",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7428",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: boothby
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7428
 
 ---
 
-archive/issue_comments_062507.json:
+archive/issue_comments_062392.json:
 ```json
 {
     "body": "The problem appears to be the \"Last Edited\" field.",
     "created_at": "2009-11-12T04:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62507",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62392",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -62,15 +61,15 @@ The problem appears to be the "Last Edited" field.
 
 ---
 
-archive/issue_comments_062508.json:
+archive/issue_comments_062393.json:
 ```json
 {
     "body": "Attachment [trac_7428-publish_last_edited.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited.patch) by @qed777 created at 2009-11-12 09:29:19\n\nUpdate \"Last Edited\" field for newly published worksheets.  Apply to sagenb repo.",
     "created_at": "2009-11-12T09:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62508",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62393",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -82,15 +81,15 @@ Update "Last Edited" field for newly published worksheets.  Apply to sagenb repo
 
 ---
 
-archive/issue_comments_062509.json:
+archive/issue_comments_062394.json:
 ```json
 {
     "body": "Attachment [trac_7428-publish_last_edited_v2.patch](tarball://root/attachments/some-uuid/ticket7428/trac_7428-publish_last_edited_v2.patch) by @qed777 created at 2009-11-12 14:00:06\n\nAdded Selenium test.  Apply only this patch to sagenb repo.",
     "created_at": "2009-11-12T14:00:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62509",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62394",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -102,15 +101,15 @@ Added Selenium test.  Apply only this patch to sagenb repo.
 
 ---
 
-archive/issue_comments_062510.json:
+archive/issue_comments_062395.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-12T14:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62510",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62395",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -120,15 +119,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062511.json:
+archive/issue_comments_062396.json:
 ```json
 {
     "body": "Feel free to bump the milestone back to 4.3.",
     "created_at": "2009-11-12T14:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62511",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62396",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -138,15 +137,15 @@ Feel free to bump the milestone back to 4.3.
 
 ---
 
-archive/issue_comments_062512.json:
+archive/issue_comments_062397.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-13T19:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62512",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62397",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -156,15 +155,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062513.json:
+archive/issue_comments_062398.json:
 ```json
 {
     "body": "Patch and test work. Positive review.",
     "created_at": "2009-11-13T19:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62513",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62398",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -174,15 +173,15 @@ Patch and test work. Positive review.
 
 ---
 
-archive/issue_comments_062514.json:
+archive/issue_comments_062399.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-08T05:39:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62514",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7428#issuecomment-62399",
+    "user": "https://github.com/williamstein"
 }
 ```
 

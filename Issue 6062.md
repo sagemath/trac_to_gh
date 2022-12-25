@@ -6,15 +6,14 @@ archive/issues_006062.json:
     "body": "Assignee: @tornaria\n\nWith sage-4.0.alpha0:\n\n```\nsage: QQ(5).is_padic_square(int(2))\n...\nAttributeError: 'int' object has no attribute 'is_prime'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6062\n\n",
     "created_at": "2009-05-18T05:08:40Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch; needs review] QQ method is_padic_square fails when argument is python int",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6062",
-    "user": "@tornaria"
+    "user": "https://github.com/tornaria"
 }
 ```
 Assignee: @tornaria
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6062
 
 ---
 
-archive/issue_comments_048253.json:
+archive/issue_comments_048162.json:
 ```json
 {
     "body": "allow python int argument in is_padic_square",
     "created_at": "2009-05-18T05:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48253",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48162",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -54,15 +53,15 @@ allow python int argument in is_padic_square
 
 ---
 
-archive/issue_comments_048254.json:
+archive/issue_comments_048163.json:
 ```json
 {
     "body": "Attachment [trac_6062.patch](tarball://root/attachments/some-uuid/ticket6062/trac_6062.patch) by @tornaria created at 2009-05-18 05:20:43\n\nNote: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).",
     "created_at": "2009-05-18T05:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48254",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48163",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -74,15 +73,15 @@ Note: this is needed to fix doctests in quadratic forms (#5954, #6037, #6040).
 
 ---
 
-archive/issue_comments_048255.json:
+archive/issue_comments_048164.json:
 ```json
 {
     "body": "Note: the added doctest requires the patch in #6064 to pass.",
     "created_at": "2009-05-18T05:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48255",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48164",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -92,15 +91,15 @@ Note: the added doctest requires the patch in #6064 to pass.
 
 ---
 
-archive/issue_comments_048256.json:
+archive/issue_comments_048165.json:
 ```json
 {
     "body": "Joint review with #6064: applied both patches, both are fine and tests pass.",
     "created_at": "2009-05-18T21:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48256",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48165",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -110,15 +109,15 @@ Joint review with #6064: applied both patches, both are fine and tests pass.
 
 ---
 
-archive/issue_comments_048257.json:
+archive/issue_comments_048166.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-19T00:42:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48257",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48166",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +127,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_048258.json:
+archive/issue_comments_048167.json:
 ```json
 {
     "body": "Merged iN Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-19T00:42:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48258",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6062#issuecomment-48167",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

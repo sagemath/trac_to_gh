@@ -6,15 +6,14 @@ archive/issues_001445.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n```\nsage: time a = f^8\n---------------------------------------------------------------------------\n<type 'exceptions.NotImplementedError'>   Traceback (most recent call last)\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/<ipython console> in <module>()\n\n/opt/sage-2.9.alpha1/local/lib/python2.5/site-packages/IPython/iplib.py in ipmagic(self, arg_s)\n    962         else:\n    963             magic_args = self.var_expand(magic_args,1)\n--> 964             return fn(magic_args)\n    965 \n    966     def ipalias(self,arg_s):\n\n/opt/sage-2.9.alpha1/local/lib/python2.5/site-packages/IPython/Magic.py in magic_time(self, parameter_s)\n   1855         else:\n   1856             st = clk()\n-> 1857             exec code in glob\n   1858             end = clk()\n   1859             out = None\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/<timed exec> in <module>()\n\n/opt/sage-2.9.alpha1/local/lib/python2.5/site-packages/sage/combinat/sf/classical.py in __pow__(self, n)\n    586         z = A(Integer(1))\n    587         for i in range(n):\n--> 588             z *= self\n    589         return z\n    590 \n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/element.pyx in sage.structure.element.RingElement.__imul__()\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/element.pyx in sage.structure.element.RingElement.__imul__()\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/coerce.pxi in sage.structure.element._mul_c()\n\n/opt/sage-2.9.alpha1/local/lib/python2.5/site-packages/sage/combinat/combinatorial_algebra.py in _mul_(self, y)\n    152                         \n    153     def _mul_(self, y):\n--> 154         return self.parent().multiply(self, y)\n    155 \n    156     def _div_(self, y):\n\n/opt/sage-2.9.alpha1/local/lib/python2.5/site-packages/sage/combinat/combinatorial_algebra.py in multiply(self, left, right)\n    475         #coefficients as values\n    476         else:\n--> 477             m = self._multiply(left, right)\n    478             if isinstance(m, self._element_class):\n    479                 return m\n\n/opt/sage-2.9.alpha1/local/lib/python2.5/site-packages/sage/combinat/sf/schur.py in _multiply(self, left, right)\n     80 \n     81         if  R is ZZ or R is QQ:\n---> 82             return symmetrica.mult_schur_schur(left, right)\n     83 \n     84         z_elt = {}\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/schur.pxi in sage.libs.symmetrica.symmetrica.mult_schur_schur_symmetrica()\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/symmetrica.pxi in sage.libs.symmetrica.symmetrica._py()\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/symmetrica.pxi in sage.libs.symmetrica.symmetrica._py_schur()\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/symmetrica.pxi in sage.libs.symmetrica.symmetrica._py_schur_general()\n\n/opt/sage-2.9.alpha1/devel/sage-main/sage/rings/polynomial/symmetrica.pxi in sage.libs.symmetrica.symmetrica._py()\n\n<type 'exceptions.NotImplementedError'>: 22\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1445\n\n",
     "created_at": "2007-12-10T04:31:49Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "[with patch] symmetrica's longints need to be converted",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1445",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -103,15 +102,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1445
 
 ---
 
-archive/issue_comments_009319.json:
+archive/issue_comments_009294.json:
 ```json
 {
     "body": "Attachment [symmetrica-longint.patch](tarball://root/attachments/some-uuid/ticket1445/symmetrica-longint.patch) by @mwhansen created at 2007-12-10 04:32:18",
     "created_at": "2007-12-10T04:32:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1445",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1445#issuecomment-9319",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1445#issuecomment-9294",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -121,15 +120,15 @@ Attachment [symmetrica-longint.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_009320.json:
+archive/issue_comments_009295.json:
 ```json
 {
     "body": "Attachment [1445-doctest.patch](tarball://root/attachments/some-uuid/ticket1445/1445-doctest.patch) by mabshoff created at 2007-12-10 05:26:58\n\nMerged in 2.9.alpha3.",
     "created_at": "2007-12-10T05:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1445",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1445#issuecomment-9320",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1445#issuecomment-9295",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -141,15 +140,15 @@ Merged in 2.9.alpha3.
 
 ---
 
-archive/issue_comments_009321.json:
+archive/issue_comments_009296.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-10T05:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1445",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1445#issuecomment-9321",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1445#issuecomment-9296",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

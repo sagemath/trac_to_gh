@@ -6,7 +6,7 @@ archive/issues_005176.json:
     "body": "Assignee: boothby\n\nI have worksheet with the word \"Gr\u00f6bner\" in it which prevents me from using the notebook at all because the listing of worksheets crashes.\n\n\n```\n        Traceback (most recent call last):\n          File \".../twisted/internet/defer.py\", line 186, in addCallbacks\n            self._runCallbacks()\n          File \".../twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \".../twisted/internet/defer.py\", line 289, in _continue\n            self.unpause()\n          File \".../twisted/internet/defer.py\", line 285, in unpause\n            self._runCallbacks()\n        --- <exception caught here> ---\n          File \".../twisted/internet/defer.py\", line 328, in _runCallbacks\n            self.result = callback(self.result, *args, **kw)\n          File \".../twisted/web2/server.py\", line 296, in <lambda>\n            d.addCallback(lambda res, req: res.renderHTTP(req), self)\n          File \".../twisted/web2/resource.py\", line 85, in renderHTTP\n            return method(request)\n          File \".../twisted/web2/resource.py\", line 202, in http_GET\n            return super(Resource, self).http_GET(request)\n          File \".../twisted/web2/resource.py\", line 128, in http_GET\n            return self.render(request)\n          File \".../sage/server/notebook/twist.py\", line 1408, in render\n            return self.render_list(ctx)\n          File \".../sage/server/notebook/twist.py\", line 1403, in render_list\n            s = render_worksheet_list(ctx.args, pub=False, username=self.user)\n          File \".../sage/server/notebook/twist.py\", line 1390, in render_worksheet_list\n            return template('worksheet_listing.html', **locals())\n          File \".../sage/server/notebook/template.py\", line 70, in template\n            return str(tmpl.render(**context))\n        exceptions.UnicodeEncodeError: 'ascii' codec can't encode character u'\\xf6' in position 4445: ordinal not in range(128)\n```\n\n\nBefore umlauts where displayed wrong but at least they didn't crash the server.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5176\n\n",
     "created_at": "2009-02-04T17:23:06Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005176.json:
     "title": "notebook chokes horribly on Umlautes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5176",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: boothby
@@ -65,15 +65,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5176
 
 ---
 
-archive/issue_comments_039648.json:
+archive/issue_comments_039572.json:
 ```json
 {
     "body": "Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.patch) by @malb created at 2009-02-05 17:46:33",
     "created_at": "2009-02-05T17:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39648",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39572",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -83,15 +83,15 @@ Attachment [trac_5176.patch](tarball://root/attachments/some-uuid/ticket5176/tra
 
 ---
 
-archive/issue_comments_039649.json:
+archive/issue_comments_039573.json:
 ```json
 {
     "body": "Attachment [trac_5176.2.patch](tarball://root/attachments/some-uuid/ticket5176/trac_5176.2.patch) by @jasongrout created at 2009-02-05 19:17:40\n\npatch looks good, fixes the crashing for me, and is doctested.  Positive review.",
     "created_at": "2009-02-05T19:17:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39649",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39573",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -103,15 +103,15 @@ patch looks good, fixes the crashing for me, and is doctested.  Positive review.
 
 ---
 
-archive/issue_comments_039650.json:
+archive/issue_comments_039574.json:
 ```json
 {
     "body": "\n```\n[13:09] <mabshoff> Someone needs to make sure we can still clone the repo with that patch since last time we had Nicola's name spelled correctly in a patch we had issues like that.\n```\n\n\nI did not do the above.  mabshoff, if you feel it's needed, can you check it before you merge?",
     "created_at": "2009-02-05T19:18:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39650",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39574",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -127,15 +127,15 @@ I did not do the above.  mabshoff, if you feel it's needed, can you check it bef
 
 ---
 
-archive/issue_comments_039651.json:
+archive/issue_comments_039575.json:
 ```json
 {
     "body": "I tested cloning on sage.math and it works there. I will only merge trac_5176.2.patch. \n\nJason: when you review tickets with multiple patches please make clear which patches need to be applied. In this case it was obvious once I looked at both patches.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T22:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39651",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39575",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -151,15 +151,15 @@ Michael
 
 ---
 
-archive/issue_comments_039652.json:
+archive/issue_comments_039576.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-06T22:57:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39652",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39576",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -169,15 +169,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_039653.json:
+archive/issue_comments_039577.json:
 ```json
 {
     "body": "Merged trac_5176.2.patch only in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-06T22:57:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39653",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39577",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -191,15 +191,15 @@ Michael
 
 ---
 
-archive/issue_comments_039654.json:
+archive/issue_comments_039578.json:
 ```json
 {
     "body": "sorry.  You're right to merge the .2.patch file.",
     "created_at": "2009-02-06T23:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5176",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39654",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5176#issuecomment-39578",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

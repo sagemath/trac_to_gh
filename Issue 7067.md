@@ -6,15 +6,14 @@ archive/issues_007067.json:
     "body": "Assignee: tbd\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used. \n\nI find that cddlib. This looks like fabs() is an unresolved external, which is not surprising given the maths library libm is not linked in.  This should be easy to fix. \n\n\n```\ncddlib-094f/.hg/00changelog.i\ncddlib-094f/patches/\ncddlib-094f/patches/allfaces.c.diff\ncddlib-094f/patches/allfaces.c\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nchecking for a BSD-compatible install... /usr/local/bin/ginstall -c\nchecking whether build environment is sane... yes\nchecking for gawk... gawk\nchecking whether make sets $(MAKE)... yes\nchecking for gcc... /opt/xxxsunstudio12.1/bin/cc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables...\nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... no\nchecking whether /opt/xxxsunstudio12.1/bin/cc accepts -g... yes\nchecking for /opt/xxxsunstudio12.1/bin/cc option to accept ISO C89... none needed\nchecking for style of include used by make... GNU\nchecking dependency style of /opt/xxxsunstudio12.1/bin/cc... none\nchecking for a BSD-compatible install... /usr/local/bin/ginstall -c\nchecking for ranlib... ranlib\nchecking for main in -lgmp... yes\nchecking how to run the C preprocessor... /opt/xxxsunstudio12.1/bin/cc -E\nchecking for grep that handles long lines and -e... /usr/sfw/bin/ggrep\nchecking for egrep... /usr/sfw/bin/ggrep -E\nchecking for ANSI C header files... yes\nchecking for an ANSI C-conforming const... yes\nconfigure: creating ./config.status\nconfig.status: creating lib-src/Makefile\nconfig.status: WARNING:  lib-src/Makefile.in seems to ignore the --datarootdir setting\nconfig.status: creating src/Makefile\nconfig.status: WARNING:  src/Makefile.in seems to ignore the --datarootdir setting\nconfig.status: creating lib-src-gmp/Makefile\nconfig.status: WARNING:  lib-src-gmp/Makefile.in seems to ignore the --datarootdir setting\nconfig.status: creating src-gmp/Makefile\nconfig.status: WARNING:  src-gmp/Makefile.in seems to ignore the --datarootdir setting\nconfig.status: creating Makefile\nconfig.status: WARNING:  Makefile.in seems to ignore the --datarootdir setting\nconfig.status: executing depfiles commands\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/cddlib-094f/src'\nMaking all in lib-src\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/cddlib-094f/src/lib-src'\nsource='cddcore.c' object='cddcore.o' libtool=no \\\ndepfile='.deps/cddcore.Po' tmpdepfile='.deps/cddcore.TPo' \\\ndepmode=none /bin/bash ../depcomp \\\n/opt/xxxsunstudio12.1/bin/cc -DPACKAGE_NAME=\\\"\\\" -DPACKAGE_TARNAME=\\\"\\\" -DPACKAGE_VERSION=\\\"\\\" -DPACKAGE_STRING=\\\"\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"cddlib\\\" -DVERSION=\\\"0.94\\\" -DHAVE_LIBGMP=1 -DSTDC_HEADERS=1 -I. -I.  -UGMPRATIONAL   -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib  -c `test -f 'cddcore.c' || echo './'`cddcore.c\nsource='cddlp.c' object='cddlp.o' libtool=no \\\ndepfile='.deps/cddlp.Po' tmpdepfile='.deps/cddlp.TPo' \\\ndepmode=none /bin/bash ../depcomp \\\n/opt/xxxsunstudio12.1/bin/cc -DPACKAGE_NAME=\\\"\\\" -DPACKAGE_TARNAME=\\\"\\\" -DPACKAGE_VERSION=\\\"\\\" -DPACKAGE_STRING=\\\"\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"cddlib\\\" -DVERSION=\\\"0.94\\\" -DHAVE_LIBGMP=1 -DSTDC_HEADERS=1 -I. -I.  -UGMPRATIONAL   -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib  -c `test -f 'cddlp.c' || echo './'`cddlp.c\nsource='cddmp.c' object='cddmp.o' libtool=no \\\ndepfile='.deps/cddmp.Po' tmpdepfile='.deps/cddmp.TPo' \\\ndepmode=none /bin/bash ../depcomp \\\n/opt/xxxsunstudio12.1/bin/cc -DPACKAGE_NAME=\\\"\\\" -DPACKAGE_TARNAME=\\\"\\\" -DPACKAGE_VERSION=\\\"\\\" -DPACKAGE_STRING=\\\"\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"cddlib\\\" -DVERSION=\\\"0.94\\\" -DHAVE_LIBGMP=1 -DSTDC_HEADERS=1 -I. -I.  -UGMPRATIONAL   -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib  -c `test -f 'cddmp.c' || echo './'`cddmp.c\nsource='cddio.c' object='cddio.o' libtool=no \\\ndepfile='.deps/cddio.Po' tmpdepfile='.deps/cddio.TPo' \\\ndepmode=none /bin/bash ../depcomp \\\n/opt/xxxsunstudio12.1/bin/cc -DPACKAGE_NAME=\\\"\\\" -DPACKAGE_TARNAME=\\\"\\\" -DPACKAGE_VERSION=\\\"\\\" -DPACKAGE_STRING=\\\"\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"cddlib\\\" -DVERSION=\\\"0.94\\\" -DHAVE_LIBGMP=1 -DSTDC_HEADERS=1 -I. -I.  -UGMPRATIONAL   -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib  -c `test -f 'cddio.c' || echo './'`cddio.c\nsource='cddlib.c' object='cddlib.o' libtool=no \\\ndepfile='.deps/cddlib.Po' tmpdepfile='.deps/cddlib.TPo' \\\ndepmode=none /bin/bash ../depcomp \\\n/opt/xxxsunstudio12.1/bin/cc -DPACKAGE_NAME=\\\"\\\" -DPACKAGE_TARNAME=\\\"\\\" -DPACKAGE_VERSION=\\\"\\\" -DPACKAGE_STRING=\\\"\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"cddlib\\\" -DVERSION=\\\"0.94\\\" -DHAVE_LIBGMP=1 -DSTDC_HEADERS=1 -I. -I.  -UGMPRATIONAL   -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib  -c `test -f 'cddlib.c' || echo './'`cddlib.c\nsource='cddproj.c' object='cddproj.o' libtool=no \\\ndepfile='.deps/cddproj.Po' tmpdepfile='.deps/cddproj.TPo' \\\ndepmode=none /bin/bash ../depcomp \\\n/opt/xxxsunstudio12.1/bin/cc -DPACKAGE_NAME=\\\"\\\" -DPACKAGE_TARNAME=\\\"\\\" -DPACKAGE_VERSION=\\\"\\\" -DPACKAGE_STRING=\\\"\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"cddlib\\\" -DVERSION=\\\"0.94\\\" -DHAVE_LIBGMP=1 -DSTDC_HEADERS=1 -I. -I.  -UGMPRATIONAL   -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib  -c `test -f 'cddproj.c' || echo './'`cddproj.c\nsource='setoper.c' object='setoper.o' libtool=no \\\ndepfile='.deps/setoper.Po' tmpdepfile='.deps/setoper.TPo' \\\ndepmode=none /bin/bash ../depcomp \\\n/opt/xxxsunstudio12.1/bin/cc -DPACKAGE_NAME=\\\"\\\" -DPACKAGE_TARNAME=\\\"\\\" -DPACKAGE_VERSION=\\\"\\\" -DPACKAGE_STRING=\\\"\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"cddlib\\\" -DVERSION=\\\"0.94\\\" -DHAVE_LIBGMP=1 -DSTDC_HEADERS=1 -I. -I.  -UGMPRATIONAL   -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib  -c `test -f 'setoper.c' || echo './'`setoper.c\nrm -f libcdd.a\nar cru libcdd.a cddcore.o cddlp.o cddmp.o cddio.o cddlib.o cddproj.o setoper.o\nranlib libcdd.a\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/cddlib-094f/src/lib-src'\nMaking all in src\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/cddlib-094f/src/src'\nsource='simplecdd.c' object='simplecdd.o' libtool=no \\\ndepfile='.deps/simplecdd.Po' tmpdepfile='.deps/simplecdd.TPo' \\\ndepmode=none /bin/bash ../depcomp \\\n/opt/xxxsunstudio12.1/bin/cc -DPACKAGE_NAME=\\\"\\\" -DPACKAGE_TARNAME=\\\"\\\" -DPACKAGE_VERSION=\\\"\\\" -DPACKAGE_STRING=\\\"\\\" -DPACKAGE_BUGREPORT=\\\"\\\" -DPACKAGE=\\\"cddlib\\\" -DVERSION=\\\"0.94\\\" -DHAVE_LIBGMP=1 -DSTDC_HEADERS=1 -I. -I. -I../lib-src -UGMPRATIONAL   -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib  -c `test -f 'simplecdd.c' || echo './'`simplecdd.c\n/opt/xxxsunstudio12.1/bin/cc  -I /export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib    -o scdd  simplecdd.o ../lib-src/libcdd.a -lgmp\nUndefined                       first referenced\n symbol                             in file\nfabs                                ../lib-src/libcdd.a(cddio.o)\nld: fatal: Symbol referencing errors. No output written to scdd\nmake[3]: *** [scdd] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/cddlib-094f/src/src'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/cddlib-094f/src'\nError building cddlib\n\nreal    0m13.117s\nuser    0m3.318s\nsys     0m4.640s\nsage: An error occurred while installing cddlib-094f\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7067\n\n",
     "created_at": "2009-09-29T12:54:27Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "cddlib 094f fails to build with Sun Studio - fabs() unresolved. Probably needs -lm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7067",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -147,15 +146,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7067
 
 ---
 
-archive/issue_comments_058450.json:
+archive/issue_comments_058340.json:
 ```json
 {
     "body": "Changing component from algebra to solaris.",
     "created_at": "2009-11-09T14:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58450",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58340",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -165,15 +164,15 @@ Changing component from algebra to solaris.
 
 ---
 
-archive/issue_comments_058451.json:
+archive/issue_comments_058341.json:
 ```json
 {
     "body": "I'm not sure who yo report this to.",
     "created_at": "2009-11-27T16:09:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58451",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58341",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -183,15 +182,15 @@ I'm not sure who yo report this to.
 
 ---
 
-archive/issue_comments_058452.json:
+archive/issue_comments_058342.json:
 ```json
 {
     "body": "Reported it today to\n\nfukuda AT \nifor.math.ethz.ch\n\nIt would be easy to fix. \n\nDave",
     "created_at": "2009-12-31T01:02:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58452",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58342",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -208,15 +207,15 @@ Dave
 
 ---
 
-archive/issue_comments_058453.json:
+archive/issue_comments_058343.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-31T03:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58453",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58343",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -226,15 +225,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_058454.json:
+archive/issue_comments_058344.json:
 ```json
 {
     "body": "I've reported it, but fixed it too. All I needed to add was:\n\nAC_CHECK_LIB(m, fabs)\n\nto configure.in\n\nand then remake the .spkg The revised .spkg can be found here. \n\nhttp://boxen.math.washington.edu/home/kirkby/portability/cddlib-094f.p0/",
     "created_at": "2009-12-31T03:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58454",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58344",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -252,15 +251,15 @@ http://boxen.math.washington.edu/home/kirkby/portability/cddlib-094f.p0/
 
 ---
 
-archive/issue_comments_058455.json:
+archive/issue_comments_058345.json:
 ```json
 {
     "body": "On 64-bit Linux (Ubuntu) this works perfectly well, and I do see that it checks for fabs in libm. It passes all doctests. Is there a convenient way that I could test this on, say, t2.math?",
     "created_at": "2010-01-05T07:31:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58455",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58345",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -270,15 +269,15 @@ On 64-bit Linux (Ubuntu) this works perfectly well, and I do see that it checks 
 
 ---
 
-archive/issue_comments_058456.json:
+archive/issue_comments_058346.json:
 ```json
 {
     "body": "Hi Dan. Thank you for taking a look at this. \n\nGiven Sage takes a long time to build on t2 (a couple of days), I suggest you use an install of mine on 't2'. I've made all files world writable under the directory /rootpool2/local/kirkby/ world writable. \n\n* Log into 't2'\n* $ cd /rootpool2/local/kirkby/sage-4.3\n* $ export PATH=/usr/local/gcc-4.4.1-sun-linker/bin:/usr/local/bin2:/usr/bin:/usr/ccs/bin:/usr/local/bin:/usr/sfw/bin:/bin:/usr/sbin\n* $ export  CC=/opt/SUNWspro/bin/cc\n* $ export  CXX=/opt/SUNWspro/bin/CC\n\nThen try /rootpool2/local/kirkby/sage-4.3/sage -f cddlib-094f.p0\n\nAlso try cddlib-094f if you wish, and you will find it fails. \n\nBoth packages are in spkg/installed/standard \n\nDave",
     "created_at": "2010-01-05T12:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58456",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58346",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -304,15 +303,15 @@ Dave
 
 ---
 
-archive/issue_comments_058457.json:
+archive/issue_comments_058347.json:
 ```json
 {
     "body": "Ooops, I mean both packages are in the directory \n\n\n```\n/rootpool2/local/kirkby/sage-4.3/spkg/standard\n```\n",
     "created_at": "2010-01-05T12:21:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58457",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58347",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -328,15 +327,15 @@ Ooops, I mean both packages are in the directory
 
 ---
 
-archive/issue_comments_058458.json:
+archive/issue_comments_058348.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-06T00:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58458",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58348",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -346,15 +345,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058459.json:
+archive/issue_comments_058349.json:
 ```json
 {
     "body": "Your new spkg does build correctly on t2.math, and the old one does fail. Positive review.",
     "created_at": "2010-01-06T00:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58459",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58349",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -364,15 +363,15 @@ Your new spkg does build correctly on t2.math, and the old one does fail. Positi
 
 ---
 
-archive/issue_comments_058460.json:
+archive/issue_comments_058350.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-13T05:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7067",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58460",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7067#issuecomment-58350",
+    "user": "https://github.com/rlmill"
 }
 ```
 

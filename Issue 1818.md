@@ -6,15 +6,14 @@ archive/issues_001818.json:
     "body": "Assignee: tba\n\nSee patches.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1818\n\n",
     "created_at": "2008-01-18T00:27:55Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with patch] include AES polynomial system generator in reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1818",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1818
 
 ---
 
-archive/issue_comments_011484.json:
+archive/issue_comments_011455.json:
 ```json
 {
     "body": "Attachment [sr-ref-doc.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-doc.patch) by @malb created at 2008-01-18 00:28:14",
     "created_at": "2008-01-18T00:28:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11484",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11455",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [sr-ref-doc.patch](tarball://root/attachments/some-uuid/ticket1818/sr
 
 ---
 
-archive/issue_comments_011485.json:
+archive/issue_comments_011456.json:
 ```json
 {
     "body": "Attachment [sr-ref-sage.patch](tarball://root/attachments/some-uuid/ticket1818/sr-ref-sage.patch) by @ncalexan created at 2008-01-22 18:08:10\n\nApply.  Also, at some point we should ensure the ref manual is actually up to date.  Another time.",
     "created_at": "2008-01-22T18:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11485",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11456",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -67,15 +66,15 @@ Apply.  Also, at some point we should ensure the ref manual is actually up to da
 
 ---
 
-archive/issue_comments_011486.json:
+archive/issue_comments_011457.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-23T04:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11486",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11457",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011487.json:
+archive/issue_comments_011458.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha2",
     "created_at": "2008-01-23T04:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11487",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1818#issuecomment-11458",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

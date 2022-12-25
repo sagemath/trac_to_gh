@@ -6,15 +6,14 @@ archive/issues_001258.json:
     "body": "Assignee: @wdjoyner\n\nThe patch\nhttp://sage.math.washington.edu/home/wdj/patches/linear_codes20071124.hg\ncontains a new functions zeta_polynomial, weight_enumerator, \nchinen_polynomial, is_equivalent (for binary codes); an improved \nbest_known_code; many pythonic revisions (suggested by William Stein \nlong ago). Also, there are some minor docstring improvements. \nNone of these are major improvements but I have a student working\non Duursma zeta functions of self-dual codes and these will be useful \nfor her.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1258\n\n",
     "created_at": "2007-11-25T04:06:48Z",
     "labels": [
-        "coding theory",
-        "minor",
-        "enhancement"
+        "component: coding theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "additions and changes to linear_codes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1258",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @wdjoyner
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1258
 
 ---
 
-archive/issue_comments_007864.json:
+archive/issue_comments_007841.json:
 ```json
 {
     "body": "Feedback: The changes all seem good, but I have a suggestion for further improvement. As you are probably well aware, any call like gap.eval(blablahblah) takes a lot of time, because of pseudo-tty. There are several places in the code where you are calling several gap.eval's within an inner loop. It seems like a much better idea to form one large string of GAP code, which includes the loop, and calling gap.eval on the large string exactly once. One example is the loop starting on line 963, linear_codes.py. (I know this will soon be replaced anyway, but it's a good example of unnecessary pseudo-tty lag.)\n\nAlso, there are some doctest issues, resulting in a negative review for now.\n\n\n```\n**********************************************************************\nFile \"linear_code.py\", line 853:\n    sage: C1.is_equivalent(C2)\nException raised:\n    Traceback (most recent call last):\n      File \"/Volumes/HOME/sage/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_23[5]>\", line 1, in <module>\n        C1.is_equivalent(C2)###line 853:\n    sage: C1.is_equivalent(C2)\n      File \"/Volumes/HOME/sage/local/lib/python2.5/site-packages/sage/coding/linear_code.py\", line 881, in is_equivalent\n        return C1g.IsEquivalent(C2g) == True\n      File \"/Volumes/HOME/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 954, in __call__\n        return self._obj.parent().function_call(self._name, [self._obj] + list(args))\n      File \"/Volumes/HOME/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 901, in function_call\n        return self.new(\"%s(%s)\"%(function, \",\".join([s.name() for s in args])))\n      File \"/Volumes/HOME/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 803, in new\n        return self(code)\n      File \"/Volumes/HOME/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 738, in __call__\n        return cls(self, x)\n      File \"/Volumes/HOME/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 989, in __init__\n        raise TypeError, x\n    TypeError: Gap produced error output\n    Error, the command fail is not a name.\n    possibly a binary is missing or has not been compiled.\n\n       executing $sage199:=IsEquivalent($sage188,$sage256);;\n**********************************************************************\n```\n\n\n\n```\n**********************************************************************\nFile \"linear_code.py\", line 1669:\n    sage: C.binomial_moment(3)    # long time\nExpected:\n    4\nGot:\n    0\n**********************************************************************\n```\n",
     "created_at": "2007-12-01T23:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7864",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7841",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -103,15 +102,15 @@ Got:
 
 ---
 
-archive/issue_comments_007865.json:
+archive/issue_comments_007842.json:
 ```json
 {
     "body": "The first doctest failure seems to be an error in the way GAP is calling Leon's code. The directory mentioned in the documentation is\n`SAGEHOME/local/lib/gap*/guava*`\nbut the guava code is installed in\n`SAGEHOME/local/lib/gap*/pkg/guava*`",
     "created_at": "2007-12-03T03:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7865",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7842",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -124,15 +123,15 @@ but the guava code is installed in
 
 ---
 
-archive/issue_comments_007866.json:
+archive/issue_comments_007843.json:
 ```json
 {
     "body": "1. To the best of my knowledge, the doctest failures are not the result of bad programming in this patch. They are because Leon's code, included with guava, is not compiled. It used to be that one could modify the spkg install file in SAGE's standard GAP package to try to fix this problem. Now the mechanism is different and I don't know why Leon's code is not compiled. \nThe docstring typo mentioned above has been fixed.\n\n2. \"There are several places in the code where you are calling several gap.eval's within an inner loop.\" Agreed. I spent even more time trying to remove these calls. I did modify several two functions along these lines but don't know if they are any faster.\n(a) I don't see how to without rewriting the GAP code. \n(b) Except for the example above, there were only one or 2 other places where gap.eval \noccurred in a loop. In those two cases, I tried to rewrite the code (I've tried before as well) \nbut possibly not entirely successful. I don't see a tremendous savings anyway, since the loops are usually over the dimension and the computation inside the loop is growing exponentially with the dimension anyway...\n(c) For the example above, I see not point in trying to speed it up since (a) I think it is buggy, (b) Robert Miller's code is hundreds of times faster and will be replacing it very soon. \nIt is good to have for testing purposes though.\n\n3. There was a mistake in the patch with the implementation of Chinen zeta polynomials. That has been fixed. \n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/linear-codes20071210.hg\nand modified file at\nhttp://sage.math.washington.edu/home/wdj/patches/linear_code.py",
     "created_at": "2007-12-11T00:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7866",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7843",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -158,15 +157,15 @@ http://sage.math.washington.edu/home/wdj/patches/linear_code.py
 
 ---
 
-archive/issue_comments_007867.json:
+archive/issue_comments_007844.json:
 ```json
 {
     "body": "Attachment [codes.hg](tarball://root/attachments/some-uuid/ticket1258/codes.hg) by @rlmill created at 2007-12-11 18:44:53",
     "created_at": "2007-12-11T18:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7867",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7844",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -176,15 +175,15 @@ Attachment [codes.hg](tarball://root/attachments/some-uuid/ticket1258/codes.hg) 
 
 ---
 
-archive/issue_comments_007868.json:
+archive/issue_comments_007845.json:
 ```json
 {
     "body": "The bundle at \nhttp://sage.math.washington.edu/home/rlmill/sage-2.9.alpha5/codes.hg\nshould apply cleanly to sage-2.9.alpha5",
     "created_at": "2007-12-11T18:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7868",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7845",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -196,15 +195,15 @@ should apply cleanly to sage-2.9.alpha5
 
 ---
 
-archive/issue_comments_007869.json:
+archive/issue_comments_007846.json:
 ```json
 {
     "body": "Attachment [trac-1258-ref.patch](tarball://root/attachments/some-uuid/ticket1258/trac-1258-ref.patch) by @williamstein created at 2007-12-15 23:24:58",
     "created_at": "2007-12-15T23:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7869",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7846",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -214,15 +213,15 @@ Attachment [trac-1258-ref.patch](tarball://root/attachments/some-uuid/ticket1258
 
 ---
 
-archive/issue_comments_007870.json:
+archive/issue_comments_007847.json:
 ```json
 {
     "body": "From IRC:\n\n```\n[2:48pm] was-1258: rlm -- after applying 1258 the doctests for linear_code.py take 93 seconds on sage.math!\n[2:48pm] was-1258: unacceptable.\n...\n[2:48pm] was-1258: line 1062 takes a long time.\n...\n[2:49pm] was-1258: line 1280\n[2:49pm] was-1258: line 1333\n[2:49pm] was-1258: 1757\n[2:49pm] was-1258: 352 takes very long.\n```\n\n\nComputations taking longer than about 10 seconds or so should be marked # long time, so that the doctester knows to skip them unless you do `./sage -t -long`. Also, computations taking longer than a minute or two are probably not suitable for doctesting.",
     "created_at": "2007-12-15T23:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7870",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7847",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -247,15 +246,15 @@ Computations taking longer than about 10 seconds or so should be marked # long t
 
 ---
 
-archive/issue_comments_007871.json:
+archive/issue_comments_007848.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-16T00:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7871",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7848",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -265,15 +264,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_007872.json:
+archive/issue_comments_007849.json:
 ```json
 {
     "body": "Merged in 2.9.rc2.",
     "created_at": "2007-12-16T00:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7872",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1258#issuecomment-7849",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007649.json:
     "body": "Assignee: @williamstein\n\n\n```\nHere is a (small) patch which includes some explanation and references in the docstrings for totallyreal_rel.py.\n\n -- John Voight\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7649\n\n",
     "created_at": "2009-12-10T01:25:12Z",
     "labels": [
-        "number theory",
-        "minor",
-        "enhancement"
+        "component: number theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "improve documentation (etc) of totallyreal_rel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7649",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7649
 
 ---
 
-archive/issue_comments_065388.json:
+archive/issue_comments_065272.json:
 ```json
 {
     "body": "Attachment [tr_doc.patch](tarball://root/attachments/some-uuid/ticket7649/tr_doc.patch) by @williamstein created at 2009-12-10 01:26:10",
     "created_at": "2009-12-10T01:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7649",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7649#issuecomment-65388",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7649#issuecomment-65272",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -53,15 +52,15 @@ Attachment [tr_doc.patch](tarball://root/attachments/some-uuid/ticket7649/tr_doc
 
 ---
 
-archive/issue_comments_065389.json:
+archive/issue_comments_065273.json:
 ```json
 {
     "body": "Just a couple comments on non-mathematical things... I think there is now a new reference system with .. , as Minh has recently noted in the developer guide, and \"Parallelepiped\" seems to be the most common spelling and is the one in my dictionary, though see the Wikipedia article for other, less common, spellings.",
     "created_at": "2009-12-10T05:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7649",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7649#issuecomment-65389",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7649#issuecomment-65273",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_009247.json:
     "body": "Assignee: @JohnCremona\n\nCC:  @categorie\n\nThese are some of the things I did while working on my thesis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9247\n\n",
     "created_at": "2010-06-15T20:32:55Z",
     "labels": [
-        "elliptic curves",
-        "major",
-        "enhancement"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "A collection of little improvements to elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9247",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @JohnCremona
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9247
 
 ---
 
-archive/issue_comments_087009.json:
+archive/issue_comments_086870.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-15T20:33:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87009",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86870",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -49,15 +47,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_087010.json:
+archive/issue_comments_086871.json:
 ```json
 {
     "body": "Looks like a job for me -- but probably not until I have finished preparing for SD22!",
     "created_at": "2010-06-15T21:24:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87010",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86871",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -67,15 +65,15 @@ Looks like a job for me -- but probably not until I have finished preparing for 
 
 ---
 
-archive/issue_comments_087011.json:
+archive/issue_comments_086872.json:
 ```json
 {
     "body": "I'm wondering if by default, E.saturate() shouldn't print all that stuff from `mwrank`. Oddly, it doesn't show up in doctests, since it goes straight to the terminal.\n\nThere are also still failures in:\n\n```\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\"\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/padics.py\"\n```\n\n\nJohn, Can you give some opinion on those?",
     "created_at": "2010-06-15T21:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87011",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86872",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -95,15 +93,15 @@ John, Can you give some opinion on those?
 
 ---
 
-archive/issue_comments_087012.json:
+archive/issue_comments_086873.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-15T21:36:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87012",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86873",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -113,15 +111,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_087013.json:
+archive/issue_comments_086874.json:
 ```json
 {
     "body": "Looks good and applies to 4.4.4.alpha0.  I am currently testing all sage/schemes/elliptic_curves.\n\nOne point about the (good) new rank_bound parameter for the point_search function:  is it not rather inefficient to saturate completely after every point found?  In my code (in eclib's points own search function) I only partially saturate after each point, using a bound (i.e. max_prime) of 19.  Then one the rank bound is reached (or at the end, if rank_bound is None) so a complete saturation.\n\nI also think we should have an option for this function to not do the saturation step (which also discards all points found and replaces them for a Z-basis for their saturation), and just returns a list of the raw points actually found.  If you agree, we should open a new ticket.  (Obviously the current behaviour would be the default, for backward compatibility).\n\nTest failure in sha_tate: \n\n```\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/sha_tate.py\", line 637:\n    sage: e.sha().an_padic(7)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[14]>\", line 1, in <module>\n        e.sha().an_padic(Integer(7))###line 637:\n    sage: e.sha().an_padic(7)\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 464, in an_padic\n        ms = self.E.modular_symbol(sign=+1, normalize='L_ratio')\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1277, in modular_symbol\n        M = ell_modular_symbols.ModularSymbolECLIB(self, sign, normalize=normalize)\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 474, in __init__\n        self._modsym = ECModularSymbol(E)\n      File \"newforms.pyx\", line 75, in sage.libs.cremona.newforms.ECModularSymbol.__init__ (sage/libs/cremona/newforms.cpp:1794)\n    OverflowError: long int too large to convert to int\n```\n\n\nand similar in padics:\n\n```\n\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/padics.py\", line 91:\n    sage: [ms(1/11), ms(1/3), ms(0), ms(oo)]\nException raised:\n    Traceback (most recent call last):\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/john/sage-current/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[7]>\", line 1, in <module>\n        [ms(Integer(1)/Integer(11)), ms(Integer(1)/Integer(3)), ms(Integer(0)), ms(oo)]###line 91:\n    sage: [ms(1/11), ms(1/3), ms(0), ms(oo)]\n      File \"/home/john/sage-current/local/lib/python/site-packages/sage/schemes/elliptic_curves/ell_modular_symbols.py\", line 523, in __call__\n        return (self._atzero - self._modsym(r))*self._scaling\n      File \"newforms.pyx\", line 130, in sage.libs.cremona.newforms.ECModularSymbol.__call__ (sage/libs/cremona/newforms.cpp:2024)\n      File \"rational.pyx\", line 367, in sage.rings.rational.Rational.__init__ (sage/rings/rational.c:5781)\n      File \"rational.pyx\", line 521, in sage.rings.rational.Rational.__set_value (sage/rings/rational.c:7052)\n    TypeError: Unable to coerce +Infinity (<class 'sage.rings.infinity.PlusInfinity'>) to Rational\n```\n\nbut I have no idea what in the patch could have caused this!\nAnd finally:\n\n```\n\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1211:\n    sage: M=E.modular_symbol()\nExpected nothing\nGot:\n    Warning : Could not normalize the modular symbols, maybe all further results will be multiplied by -1, 2 or -2.\n**********************************************************************\nFile \"/home/john/sage-4.4.4.alpha0/devel/sage-tests/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1212:\n    sage: M(1/7)\nExpected:\n    2\nGot:\n    -2\n**********************************************************************\n```\n",
     "created_at": "2010-06-17T21:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87013",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86874",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -208,15 +206,15 @@ Got:
 
 ---
 
-archive/issue_comments_087014.json:
+archive/issue_comments_086875.json:
 ```json
 {
     "body": "Replying to [comment:5 cremona]:\n> ... the (good) new rank_bound parameter ... is it not rather inefficient to saturate completely after every point found?  In my code (in eclib's points own search function) I only partially saturate after each point, using a bound (i.e. max_prime) of 19.  Then one the rank bound is reached (or at the end, if rank_bound is None) so a complete saturation.\n\nSounds like a better option to me!\n\n> I also think we should have an option for this function to not do the saturation step (which also discards all points found and replaces them for a Z-basis for their saturation), and just returns a list of the raw points actually found.  If you agree, we should open a new ticket.  (Obviously the current behaviour would be the default, for backward compatibility).\n\nI do agree!\n\n> ... but I have no idea what in the patch could have caused this!\n\nE.modular_symbol() now uses eclib if the sign is +1, for efficiency purposes. It is probably what is causing all the failures... I'm not sure whether this is practical or not, but it definitely sped up E.sha().p_primary_bound(p) in the cases I was looking at.",
     "created_at": "2010-06-17T21:57:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87014",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86875",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -237,15 +235,15 @@ E.modular_symbol() now uses eclib if the sign is +1, for efficiency purposes. It
 
 ---
 
-archive/issue_comments_087015.json:
+archive/issue_comments_086876.json:
 ```json
 {
     "body": "Replying to [comment:3 rlm]:\n> I'm wondering if by default, E.saturate() shouldn't print all that stuff from `mwrank`. Oddly, it doesn't show up in doctests, since it goes straight to the terminal.\n\nMore specifically, with the patch here applied to `sage-4.4.4.alpha1` the following doctest illustrates the printing I'm talking about:\n\n```\nsage: EllipticCurve([0, 0, 1, -79, 342]).regulator(proof=False)  # long time (seconds)\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n14.7905275701311\n```\n\n\nWhen I do this from the command line, that is exactly what I get. However, when I run long doctests in `ell_rational_field.py` the following part appears in the terminal from which I'm running the tests, and is a little misleading:\n\n\n```\n**********************************************************************\nFile \"/Users/rlmill/sage-4.4.4.alpha1/devel/sage-main/sage/schemes/elliptic_curves/ell_rational_field.py\", line 1212:\n    sage: M(1/7)\nExpected:\n    2\nGot:\n    -2\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n**********************************************************************\n```\n",
     "created_at": "2010-06-24T16:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87015",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86876",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -289,15 +287,15 @@ Failed to saturate MW basis at primes [ ]
 
 ---
 
-archive/issue_comments_087016.json:
+archive/issue_comments_086877.json:
 ```json
 {
     "body": "OK, so the problem is that the warning output from the regulator call appears in the wrong place in the output -- right?\n\nI have solved this by avoiding it as follows.  The gens() function uses mwrank_lib (default) or mwrank_console to do a two-descent after constructing the mwrank_EllipticCurve C.  But it was failing to call the saturate function on C.  Some default saturation is done by the gens() call (on C), but the default saturation bound is rather low (100, set in eclib).\n\nSo I added a new parameter sat_bound to the gens() function in ell_rational_field, default 1000, and made sure that both mwrank_lib and mwrank_console option use it.\nNow we have\n\n```\n\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens()\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\n\n\n```\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens(algorithm='mwrank_console')\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\n\ncompared with\n\n```\n\nsage: E = EllipticCurve([0, 0, 1, -79, 342])\nsage: E.gens(sat_bound=100)\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;  \npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n[(-10 : 11 : 1), (-39/4 : 105/8 : 1), (-8 : 21 : 1), (-7 : 23 : 1), (-6 : 24 : 1)]\n```\n\nI will post an additional patch in a minute.",
     "created_at": "2010-06-25T05:22:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87016",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86877",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -342,15 +340,15 @@ I will post an additional patch in a minute.
 
 ---
 
-archive/issue_comments_087017.json:
+archive/issue_comments_086878.json:
 ```json
 {
     "body": "Apply after previous",
     "created_at": "2010-06-25T06:15:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87017",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86878",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -360,15 +358,15 @@ Apply after previous
 
 ---
 
-archive/issue_comments_087018.json:
+archive/issue_comments_086879.json:
 ```json
 {
     "body": "Attachment [trac_9247-saturation.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247-saturation.patch) by @JohnCremona created at 2010-06-25 06:17:32\n\nMy patch solves the issue with annoying output of warnings from saturation, since we now use a higher bound for saturation primes in finding the gens of an elliptic curve.  (This provides useful functionality as well as fixing this particular case).\n\nThe other issues remain, but I think that Robert could review my patch!",
     "created_at": "2010-06-25T06:17:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87018",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86879",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -382,15 +380,15 @@ The other issues remain, but I think that Robert could review my patch!
 
 ---
 
-archive/issue_comments_087019.json:
+archive/issue_comments_086880.json:
 ```json
 {
     "body": "New patch looks good. What to do about the others...",
     "created_at": "2010-07-15T13:51:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87019",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86880",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -400,15 +398,15 @@ New patch looks good. What to do about the others...
 
 ---
 
-archive/issue_comments_087020.json:
+archive/issue_comments_086881.json:
 ```json
 {
     "body": "I would suggst to remove the modification to padic_lseries.py. In the future we should use eclib by default, but currently eclib does not provide negative modular symbols and they are needed in some cases (e.g. twisting by a negative D). A careful user can currently choose to use eclib, if he knows  that he will not need negative modular symbols.",
     "created_at": "2010-07-15T14:04:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87020",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86881",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -418,15 +416,15 @@ I would suggst to remove the modification to padic_lseries.py. In the future we 
 
 ---
 
-archive/issue_comments_087021.json:
+archive/issue_comments_086882.json:
 ```json
 {
     "body": "Replying to [comment:11 wuthrich]:\n> I would suggst to remove the modification to padic_lseries.py. In the future we should use eclib by default, but currently eclib does not provide negative modular symbols and they are needed in some cases (e.g. twisting by a negative D). \n\nYes it does now!   Review my patch and you can have them!  I implemented this while at MSRI.  See #9476\n\nA careful user can currently choose to use eclib, if he knows  that he will not need negative modular symbols.",
     "created_at": "2010-07-15T14:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87021",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86882",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -441,15 +439,15 @@ A careful user can currently choose to use eclib, if he knows  that he will not 
 
 ---
 
-archive/issue_comments_087022.json:
+archive/issue_comments_086883.json:
 ```json
 {
     "body": "Replying to [comment:12 cremona]:\n\n> Yes it does now!   Review my patch and you can have them!  I implemented this while at MSRI.  See #9476\n>\n\nOhhh, I did not know. I hope I will have time to look at that tomorrow.",
     "created_at": "2010-07-15T15:02:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87022",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86883",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -464,15 +462,15 @@ Ohhh, I did not know. I hope I will have time to look at that tomorrow.
 
 ---
 
-archive/issue_comments_087023.json:
+archive/issue_comments_086884.json:
 ```json
 {
     "body": "Apply before saturation patch",
     "created_at": "2010-07-17T15:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87023",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86884",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -482,15 +480,15 @@ Apply before saturation patch
 
 ---
 
-archive/issue_comments_087024.json:
+archive/issue_comments_086885.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-17T15:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87024",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86885",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -500,15 +498,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_087025.json:
+archive/issue_comments_086886.json:
 ```json
 {
     "body": "Attachment [trac_9247.patch](tarball://root/attachments/some-uuid/ticket9247/trac_9247.patch) by @rlmill created at 2010-07-17 15:04:31\n\nOkay, I've changed the default for elliptic curve modular symbols back to what it originally was. Now all tests pass, and this ticket is ready for a review.",
     "created_at": "2010-07-17T15:04:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87025",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86886",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -520,15 +518,15 @@ Okay, I've changed the default for elliptic curve modular symbols back to what i
 
 ---
 
-archive/issue_comments_087026.json:
+archive/issue_comments_086887.json:
 ```json
 {
     "body": "See also #9535",
     "created_at": "2010-07-18T08:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87026",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86887",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -538,15 +536,15 @@ See also #9535
 
 ---
 
-archive/issue_comments_087027.json:
+archive/issue_comments_086888.json:
 ```json
 {
     "body": "Works and seems reasonable in light of the above remarks.",
     "created_at": "2010-07-21T14:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87027",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86888",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -556,15 +554,15 @@ Works and seems reasonable in light of the above remarks.
 
 ---
 
-archive/issue_comments_087028.json:
+archive/issue_comments_086889.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-21T14:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87028",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86889",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -574,15 +572,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_087029.json:
+archive/issue_comments_086890.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-08-09T09:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9247",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-87029",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9247#issuecomment-86890",
+    "user": "https://github.com/qed777"
 }
 ```
 

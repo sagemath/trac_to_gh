@@ -6,7 +6,7 @@ archive/issues_007079.json:
     "body": "Assignee: tbd\n\nCC:  fwclarke @jasongrout @TimDumol @dandrake\n\nWith a freshly compiled Sage 4.1.2.alpha4, or take the sage.math binary for Sage 4.1.2.alpha4, follow these steps and watch the carnage:\n\n1. Delete the directory HOME/.sage, yes that directory and everything under it. Or you could just make sure that HOME/.sage/tmp doesn't exist. Yes, it's \"tmp\", not \"temp\".\n2. Go to SAGE_ROOT.\n3. Open SAGE_ROOT/makefile and give the variable NUM_THREADS a positive integer such as 2, or say anything positive integer from 2 to 10 on sage.math.\n4. From SAGE_ROOT, do \"make ptestlong\" and watch Sage give a bunch of file not found errors:\n {{{\nsage -t -long devel/sage/doc/en/tutorial/distributed.rst\n         [0.1Traceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_algebra.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_help.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_programming.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_polynomial.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_groups.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_tour_plotting.py'\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 587, in test_file\n    open(f,\"w\").write(s)\nIOError: [Errno 2] No such file or directory: '/home/mvngu/.sage//tmp/.doctest_introduction.py'\n s]\n }}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/7079\n\n",
     "created_at": "2009-09-30T07:07:28Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007079.json:
     "title": "parallel doctest broken in Sage 4.1.2.alpha4 if HOME/.sage/tmp doesn't exist",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7079",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tbd
@@ -82,15 +82,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7079
 
 ---
 
-archive/issue_comments_058531.json:
+archive/issue_comments_058421.json:
 ```json
 {
     "body": "I think the attached patch might solve the problem.  [I'm off to work now, so I've no time to test whether this is so.]",
     "created_at": "2009-09-30T08:27:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58531",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58421",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -100,15 +100,15 @@ I think the attached patch might solve the problem.  [I'm off to work now, so I'
 
 ---
 
-archive/issue_comments_058532.json:
+archive/issue_comments_058422.json:
 ```json
 {
     "body": "Attachment [trac_7079.patch](tarball://root/attachments/some-uuid/ticket7079/trac_7079.patch) by mvngu created at 2009-09-30 08:41:33",
     "created_at": "2009-09-30T08:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58532",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58422",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -118,15 +118,15 @@ Attachment [trac_7079.patch](tarball://root/attachments/some-uuid/ticket7079/tra
 
 ---
 
-archive/issue_comments_058533.json:
+archive/issue_comments_058423.json:
 ```json
 {
     "body": "With the patch `trac_7079.patch`, I followed the steps as listed above and got the following errors:\n\n```\ninit.sage does not exist ... creating\nGlobal iterations: 1\nFile iterations: 1\nNo long cached timings exist; will create upon successful finish.\nDoctesting 2096 files doing 10 jobs in parallel\nTraceback (most recent call last):\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 754, in <module>\n    test_file(argv[1], library_code = library_code)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/bin/sage-doctest\", line 608, in test_file\n    os.makedirs(VALGRIND)\n  File \"/scratch/mvngu/release/sage-4.1.2.alpha4/local/lib/python/os.py\", line 157, in makedirs\n    mkdir(name, mode)\nOSError: [Errno 17] File exists: '/home/mvngu/.sage//valgrind/'\n\n<SNIP>\n\nThe following tests failed:\n\n        sage -t -long devel/sage/doc/common/builder.py # File not found\n----------------------------------------------------------------------\nTotal time for all tests: 666.1 seconds\n```\n",
     "created_at": "2009-09-30T09:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58533",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58423",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -161,15 +161,15 @@ Total time for all tests: 666.1 seconds
 
 ---
 
-archive/issue_comments_058534.json:
+archive/issue_comments_058424.json:
 ```json
 {
     "body": "Replying to [comment:5 mvngu]:\n\nThis seems very strange.  Lines 606-608 of SAGE_ROOT/local/bin are \n\n```\n        VALGRIND = '%s/valgrind/'%DOT_SAGE\n        if not os.path.exists(VALGRIND):\n          os.makedirs(VALGRIND)\n```\n\nwhich, apart from the non-standard indent, seem perfectly ok.  In particular, line 608 can never be executed if the directory VALGRIND exists.  And yet this is what seems to be happening for you.\n\nI've tried following your steps (with NUM_THREADS=2), and it's running smoothly, though with\n\n```\nsage -t -long devel/sage/sage/calculus/calculus.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nand a couple more like this.  I'll investigate these cases and any others that arise.",
     "created_at": "2009-09-30T17:39:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58534",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58424",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -198,15 +198,15 @@ and a couple more like this.  I'll investigate these cases and any others that a
 
 ---
 
-archive/issue_comments_058535.json:
+archive/issue_comments_058425.json:
 ```json
 {
     "body": "Replying to [comment:6 fwclarke]:\n\n>{{{\n> A mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n> }}}\n> and a couple more like this.  I'll investigate these cases and any others that arise.\n\n\nThe \"mysterious\" errors (of which there were 14) seem to be cases where Sage 4.1.2.alpha4 crashes \n(on my Mac OS X 10.6.1).  E.g.,\n\n```\nsage -t -verbose \"devel/sage/sage/functions/hyperbolic.py\"  \n...\nTrying:\n    arccosh._evalf_(Integer(2), Integer(53))###line 13:_sage_    >>> arccosh._evalf_(2, 53)\nExpecting:\n    1.31695789692482\nok\n...\nTrying:\n    bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))###line 185:_sage_    >>> bool(diff(csch(x), x) == diff(1/sinh(x), x))\nExpecting:\n    True\n         [16.9 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -verbose \"devel/sage/sage/functions/hyperbolic.py\"\nTotal time for all tests: 16.9 seconds\n```\n\n\nWhile\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n...\nsage: diff(csch(x), x) == diff(Integer(1)/sinh(x), x)\n-coth(x)*csch(x) == -cosh(x)/sinh(x)^2\nsage: bool(diff(csch(x), x) == diff(Integer(1)/sinh(x), x))\n/Users/mafwc/sage-4.1.2.alpha4/local/bin/sage-sage: line 200:   \n378 Abort trap  sage-ipython \"$@\" -i\n```\n\ncompared with\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: fwc\nsage: bool(diff(csch(x), x) == diff(1/sinh(x), x))\nTrue\n```\n",
     "created_at": "2009-10-01T08:30:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58535",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58425",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -274,15 +274,15 @@ True
 
 ---
 
-archive/issue_comments_058536.json:
+archive/issue_comments_058426.json:
 ```json
 {
     "body": "I think the patch is a good idea.  It basically works for me on Mac OS X 10.5 and on sage.math.  Maybe it should get a positive review and then we should work on the \"mysterious\" errors. On sage.math, if I don't apply the patch, delete my .sage directory, and do parallel doctesting, it's a complete disaster.  Once I apply the patch, if I delete my .sage directory, and while in SAGE_ROOT I do `sage -tp 2 devel/sage/sage/algebras`, then I get \n\n```\ninit.sage does not exist ... creating\ntouch: cannot touch `/home/palmieri/.sage//init.sage': No such file or directory\nGlobal iterations: 1\nFile iterations: 1\nNo cached timings exist; will create upon successful finish.\nDoctesting 21 files doing 2 jobs in parallel\nsage -t  devel/sage/sage/algebras/free_algebra_quotient.py\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n```\n\nand then all of the other doctests pass.  This is not related, I think, to the problems on Mac OS X 10.6: if I do it again (but with an existing .sage directory), all tests pass.  Maybe the issue is that one thread is running a doctest while another is still busy creating .sage and all of its subdirectories, and so the doctest crashes?  Or two threads are both trying to create .sage at the same time, and this leads to problems?  This might also explain mvngu's problems with .sage/valgrind.  Should we run one test and then switch to parallel testing, or should we run the script (whatever it is) that creates .sage, and then go on to parallel testing?\n\nSo I don't know if this should get a positive review and the mysterious crashes should be in a separate ticket, since that would solve most of the problem, or if this should be marked \"needs work\" and the whole thing fixed at once...",
     "created_at": "2009-10-03T22:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58536",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58426",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -307,15 +307,15 @@ So I don't know if this should get a positive review and the mysterious crashes 
 
 ---
 
-archive/issue_comments_058537.json:
+archive/issue_comments_058427.json:
 ```json
 {
     "body": "> So I don't know if this should get a positive review and the mysterious crashes \n> should be in a separate ticket,\n\nThat's what I think.  So I've switched to to that, applied it, and opened a new ticket: #7103",
     "created_at": "2009-10-03T23:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58537",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58427",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -328,15 +328,15 @@ That's what I think.  So I've switched to to that, applied it, and opened a new 
 
 ---
 
-archive/issue_comments_058538.json:
+archive/issue_comments_058428.json:
 ```json
 {
     "body": "merged into 4.2.1.rc0.",
     "created_at": "2009-10-03T23:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58538",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58428",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -346,15 +346,15 @@ merged into 4.2.1.rc0.
 
 ---
 
-archive/issue_comments_058539.json:
+archive/issue_comments_058429.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-03T23:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58539",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7079#issuecomment-58429",
+    "user": "https://github.com/williamstein"
 }
 ```
 

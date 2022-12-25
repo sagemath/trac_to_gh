@@ -6,15 +6,14 @@ archive/issues_001508.json:
     "body": "Assignee: @williamstein\n\n\n```\nNotice, if you tab-complete plot( or list_plot( the docs do not\nmention the option for axes_label.  However, the option is available.\n\nAlso, if you use them, the text for the x-axis is truncated off the\nright edge of the plot.\n\nSimple example:\n\np = plot(sin, 0, 10)\np.show(axes_label=['x-axis','y-axis'])\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1508\n\n",
     "created_at": "2007-12-14T18:04:33Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "axes_label in plot() broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1508",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1508
 
 ---
 
-archive/issue_comments_009654.json:
+archive/issue_comments_009629.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-19T15:17:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9654",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9629",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -60,15 +59,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_009655.json:
+archive/issue_comments_009630.json:
 ```json
 {
     "body": "Attachment [doc-trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/doc-trac-1508.patch) by @williamstein created at 2008-01-19 17:46:38\n\nfixes a mistake in const.tex",
     "created_at": "2008-01-19T17:46:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9655",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9630",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -80,15 +79,15 @@ fixes a mistake in const.tex
 
 ---
 
-archive/issue_comments_009656.json:
+archive/issue_comments_009631.json:
 ```json
 {
     "body": "Attachment [trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/trac-1508.patch) by @williamstein created at 2008-01-19 17:50:15",
     "created_at": "2008-01-19T17:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9656",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9631",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -98,15 +97,15 @@ Attachment [trac-1508.patch](tarball://root/attachments/some-uuid/ticket1508/tra
 
 ---
 
-archive/issue_comments_009657.json:
+archive/issue_comments_009632.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-01-20T23:53:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9657",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9632",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -116,15 +115,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_009658.json:
+archive/issue_comments_009633.json:
 ```json
 {
     "body": "I am having reject issues with this against Sage 2.10.1.alpha0\n\nCheers,\n\nMichael",
     "created_at": "2008-01-21T02:07:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9658",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9633",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -138,15 +137,15 @@ Michael
 
 ---
 
-archive/issue_comments_009659.json:
+archive/issue_comments_009634.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha1. The reject mentioned above was caused by interaction from #1859 - I resolved those manually.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-21T03:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9659",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9634",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -160,15 +159,15 @@ Michael
 
 ---
 
-archive/issue_comments_009660.json:
+archive/issue_comments_009635.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-21T03:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1508",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9660",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1508#issuecomment-9635",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

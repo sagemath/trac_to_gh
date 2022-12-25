@@ -6,7 +6,7 @@ archive/issues_000421.json:
     "body": "Assignee: @williamstein\n\nWhen printing in the notebook the input now is completely missing!\n\nIssue created by migration from https://trac.sagemath.org/ticket/421\n\n",
     "created_at": "2007-08-10T20:21:43Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000421.json:
     "title": "notebook printing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/421",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/421
 
 ---
 
-archive/issue_comments_002115.json:
+archive/issue_comments_002106.json:
 ```json
 {
     "body": "Fixed for sage-2.8.",
     "created_at": "2007-08-12T21:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/421#issuecomment-2115",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/421#issuecomment-2106",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ Fixed for sage-2.8.
 
 ---
 
-archive/issue_comments_002116.json:
+archive/issue_comments_002107.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-12T21:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/421#issuecomment-2116",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/421#issuecomment-2107",
+    "user": "https://github.com/williamstein"
 }
 ```
 

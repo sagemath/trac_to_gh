@@ -6,7 +6,7 @@ archive/issues_002719.json:
     "body": "Assignee: cwitty\n\n\n```\nFERMAT -- os x 10.4 g5 -- has interesting failures here in the \nnew bitset code:\n          sage -t  devel/sage-main/sage/misc/misc_c.pyx\n\n    sage: test_bitset('00101', '01110', 4)\nExpected:\n    a 00101\n    a.size 5\n    a.limbs 1\n    b 01110\n    a.check(n)   True\n    a.set(n)     00101\n    a.unset(n)   00100\n    a.set_to(n)  00101\n    a.flip(n)    00100\n    a.is_zero()  False\n    a.eq(b)      False\n    a.cmp(b)     1\n    a.copy()     00101\n    r.zero()     00000\n    not a        11010\n    a and b      00100\n    a or b       01111\n    a xor b      01011\n    a.rshift(n)  10000\n    a.lshift(n)  00000\n    a.first()           2\n    a.next(n)           4\n    a.first_diff(b)     1\n    a.next_diff(b, n)   4\n    a.hamming_weight()  2\n    a.hamming_weight_sparse()  2\nGot:\n    a 00101\n    a.size 5\n    a.limbs 1\n    b 01110\n    a.check(n)   True\n    a.set(n)     00101\n    a.unset(n)   00100\n    a.set_to(n)  00101\n    a.flip(n)    00100\n    a.is_zero()  False\n    a.eq(b)      True\n    a.cmp(b)     1\n    a.copy()     00000\n    r.zero()     00000\n    not a        11010\n    a and b      00100\n    a or b       01111\n    a xor b      01011\n    a.rshift(n)  10000\n    a.lshift(n)  00000\n    a.first()           2\n    a.next(n)           4\n    a.first_diff(b)     1\n    a.next_diff(b, n)   4\n    a.hamming_weight()  2\n    a.hamming_weight_sparse()  2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2719\n\n",
     "created_at": "2008-03-29T16:30:06Z",
     "labels": [
-        "misc",
+        "component: misc",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002719.json:
     "title": "bitset is completely broken on os x 10.4 G5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2719",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -91,15 +91,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2719
 
 ---
 
-archive/issue_comments_018746.json:
+archive/issue_comments_018707.json:
 ```json
 {
     "body": "Attachment [2719-bitsets.patch](tarball://root/attachments/some-uuid/ticket2719/2719-bitsets.patch) by @robertwb created at 2008-03-29 18:18:54",
     "created_at": "2008-03-29T18:18:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18746",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18707",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -109,15 +109,15 @@ Attachment [2719-bitsets.patch](tarball://root/attachments/some-uuid/ticket2719/
 
 ---
 
-archive/issue_comments_018747.json:
+archive/issue_comments_018708.json:
 ```json
 {
     "body": "fix endianness issues (thanks to cwitty for pointing this out)",
     "created_at": "2008-03-29T18:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18747",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18708",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -127,15 +127,15 @@ fix endianness issues (thanks to cwitty for pointing this out)
 
 ---
 
-archive/issue_comments_018748.json:
+archive/issue_comments_018709.json:
 ```json
 {
     "body": "It works.",
     "created_at": "2008-03-29T18:46:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18748",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18709",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -145,15 +145,15 @@ It works.
 
 ---
 
-archive/issue_comments_018749.json:
+archive/issue_comments_018710.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-29T18:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18749",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18710",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -163,15 +163,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018750.json:
+archive/issue_comments_018711.json:
 ```json
 {
     "body": "Merged in Sage 2.11.rc0",
     "created_at": "2008-03-29T18:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18750",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2719#issuecomment-18711",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

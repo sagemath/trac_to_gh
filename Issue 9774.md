@@ -6,15 +6,14 @@ archive/issues_009774.json:
     "body": "Assignee: tbd\n\nCC:  @rishikesha\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9775\n\n",
     "created_at": "2010-08-21T17:57:45Z",
     "labels": [
-        "porting: Cygwin",
-        "major",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "lcalc should make a .dll file on Cygwin instead of .so file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9774",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9775
 
 ---
 
-archive/issue_comments_095920.json:
+archive/issue_comments_095761.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-21T18:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95920",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95761",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_095921.json:
+archive/issue_comments_095762.json:
 ```json
 {
     "body": "There is an spkg at http://boxen.math.washington.edu/home/mhansen/lcalc-20100428-1.23.p3.spkg base on the one at #9592.",
     "created_at": "2010-08-21T18:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95921",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95762",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ There is an spkg at http://boxen.math.washington.edu/home/mhansen/lcalc-20100428
 
 ---
 
-archive/issue_comments_095922.json:
+archive/issue_comments_095763.json:
 ```json
 {
     "body": "Note that #9592 should be closed or have a positive review before this one does.",
     "created_at": "2010-08-21T18:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95922",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95763",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +84,15 @@ Note that #9592 should be closed or have a positive review before this one does.
 
 ---
 
-archive/issue_comments_095923.json:
+archive/issue_comments_095764.json:
 ```json
 {
     "body": "SPKG patch of Mike's changes.",
     "created_at": "2010-08-21T20:20:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95923",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95764",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -103,15 +102,15 @@ SPKG patch of Mike's changes.
 
 ---
 
-archive/issue_comments_095924.json:
+archive/issue_comments_095765.json:
 ```json
 {
     "body": "Attachment [trac_9775_spkg-lcalc_cygwin_dll.patch](tarball://root/attachments/some-uuid/ticket9775/trac_9775_spkg-lcalc_cygwin_dll.patch) by @jdemeyer created at 2010-08-21 20:50:01\n\nThere is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"",
     "created_at": "2010-08-21T20:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95924",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95765",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -123,15 +122,15 @@ There is a small type in SPKG.txt: on line 29, you should replace "lcalc-1.23.p2
 
 ---
 
-archive/issue_comments_095925.json:
+archive/issue_comments_095766.json:
 ```json
 {
     "body": "Replying to [comment:3 jdemeyer]:\n> There is a small type in SPKG.txt: on line 29, you should replace \"lcalc-1.23.p2\" by \"lcalc-1.23.p3\"\n\nAlso in the top comment of `spkg-install`.",
     "created_at": "2010-08-29T15:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95925",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95766",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -144,15 +143,15 @@ Also in the top comment of `spkg-install`.
 
 ---
 
-archive/issue_comments_095926.json:
+archive/issue_comments_095767.json:
 ```json
 {
     "body": "Some comments (on the spkg in general, not the Cygwin changes, with the exception of quoting `$SAGE_LOCAL`):\n\n* `$CFLAG64` and `$CXXFLAG64` should be quoted.\n\n* `CXXFLAG64` is exported (?) twice. (It is in fact currently used in the Makefile.)\n\n* In general, e.g. `-m64` should be added to `CPPFLAGS` as well.\n\n* In other packages, we disable optimization if `SAGE_DEBUG=yes`, and build **with** debugging symbols (`-g`) unconditionally, i.e. independent of the setting of `SAGE_DEBUG`.\n\n* `$MAKE` should be used instead of `make`. (Though `make` is called(!) inside the Makefile itself for the default target, `all`, which we build. See below, too.) \n\n* `$SAGE_LOCAL` should be quoted, too (for future support of spaces).\n\n* The following case distinction is superfluous (and the branches are redundant as well):\n\n```sh\nif `test -d $SAGE_LOCAL/include/lcalc`; then\n    rm -fr $SAGE_LOCAL/include/lcalc\n    mkdir $SAGE_LOCAL/include/lcalc\n    cp ../include/* $SAGE_LOCAL/include/lcalc\nelse\n    mkdir $SAGE_LOCAL/include/lcalc\n    cp ../include/* $SAGE_LOCAL/include/lcalc\nfi\n```\n\n   It should simply be:\n\n```sh\n    rm -fr \"$SAGE_LOCAL\"/include/lcalc\n    mkdir -p \"$SAGE_LOCAL\"/include/lcalc\n    cp ../include/* \"$SAGE_LOCAL\"/include/lcalc\n```\n\n\n* I'm not sure if I should like the `success()` function (the messages are quite strange); same for the use of `set -e`.\n\n* There's no `spkg-check`, but unfortunately the test program has been removed from the sources anyway. Should be addressed in later versions (e.g. add a comment to *\"Special Update/Build Instructions\"*).\n\n* These files have been removed without telling Mercurial:\n\n```sh\n$ hg status\n! patches/lcalc-1.11-constification+solaris.patch\n! patches/lcalc-1.11-gcc-4.3-build.patch\n! patches/lcalc-1.11-memleak-fixes.patch\n```\n\n\n* The *patched* Makefile (`patches/Makefile.sage`, lacking the corresponding diff) isn't much better than the original.\n  It also should **not** make Lcalc link against `libmpir.so` (or its static version), but - if at all - `libgmp.so` instead, since we configure MPIR with `--enable-gmpcompat` anyway. As is, it's the **only** package that breaks building with GNU MP, unless one creates a symbolic link from `libmpir.so` to `libgmp.so`.\n\n\nIt would be nice to address at least some (especially the last) of these points *here*, too, since it IMHO doesn't make much sense to frequently open new tickets and create new spkgs just for minor/clean-up changes.",
     "created_at": "2010-08-29T17:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95926",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95767",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -216,15 +215,15 @@ It would be nice to address at least some (especially the last) of these points 
 
 ---
 
-archive/issue_comments_095927.json:
+archive/issue_comments_095768.json:
 ```json
 {
     "body": "I'm going to close this as a duplicate of #9845.  I'll post an spkg there which contains some changes from leif's review.",
     "created_at": "2010-09-01T22:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95927",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95768",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -234,15 +233,15 @@ I'm going to close this as a duplicate of #9845.  I'll post an spkg there which 
 
 ---
 
-archive/issue_comments_095928.json:
+archive/issue_comments_095769.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-09-01T22:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95928",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95769",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -252,15 +251,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_095929.json:
+archive/issue_comments_095770.json:
 ```json
 {
     "body": "Also, the `dist/` (Debian) directory should be removed, cf. #5903.",
     "created_at": "2010-09-03T22:54:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95929",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9774#issuecomment-95770",
+    "user": "https://github.com/nexttime"
 }
 ```
 

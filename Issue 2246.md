@@ -6,15 +6,14 @@ archive/issues_002246.json:
     "body": "Assignee: @williamstein\n\nThe attached patches fix const.tex and fix numerous small issues with special.py that would lead to subtle and not so subtle bugs and mistakes. \n\nI also fixed a problem with const.tex caused by Cremona's #1946.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2246\n\n",
     "created_at": "2008-02-21T16:17:48Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch; needs quick review] sage-2.10.2.alpha2: special.py -- fix it -- several bugs etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2246",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2246
 
 ---
 
-archive/issue_comments_014891.json:
+archive/issue_comments_014859.json:
 ```json
 {
     "body": "Attachment [doc-2246.patch](tarball://root/attachments/some-uuid/ticket2246/doc-2246.patch) by @williamstein created at 2008-02-21 16:22:46",
     "created_at": "2008-02-21T16:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14891",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14859",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -51,15 +50,15 @@ Attachment [doc-2246.patch](tarball://root/attachments/some-uuid/ticket2246/doc-
 
 ---
 
-archive/issue_comments_014892.json:
+archive/issue_comments_014860.json:
 ```json
 {
     "body": "Attachment [sage-2246.patch](tarball://root/attachments/some-uuid/ticket2246/sage-2246.patch) by mabshoff created at 2008-02-21 17:01:25\n\nBoth patches look good, the doctest failures are fixed. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T17:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14892",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14860",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +74,15 @@ Michael
 
 ---
 
-archive/issue_comments_014893.json:
+archive/issue_comments_014861.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.rc0",
     "created_at": "2008-02-21T17:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14893",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14861",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Merged in Sage 2.10.2.rc0
 
 ---
 
-archive/issue_comments_014894.json:
+archive/issue_comments_014862.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-21T17:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14894",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14862",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014895.json:
+archive/issue_comments_014863.json:
 ```json
 {
     "body": "I forgot the change the summary, so I am doing now.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T17:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14895",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2246#issuecomment-14863",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

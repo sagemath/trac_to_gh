@@ -6,15 +6,14 @@ archive/issues_001009.json:
     "body": "Assignee: somebody\n\n\n```\n\nsage: N = 5^100000\nsage: R = Integers(N)\nsage: S.<x> = PolynomialRing(R)\nsage: v = R(7^100000)\nsage: time f = S([v])\n\nI then tracked down the problem which is in the ntl_ZZ_pContext\nfunction in ntl_ZZ_pContext.pyx, where the context is cached.\nUnfortunately, the frickin' context is cached as a decimal *string*, so\nevery single cached access to the context is extremely expensive -- for\nmore expensive than not even bothing to cache the context would be.\nThe patch at \n\nfixes things so that the cache uses the hash of the context, which \nI implemented (along with hash's of ntl_ZZ's).  \n\nExactly the same mistake is made in ntl_GF2EContext.pyx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1009\n\n",
     "created_at": "2007-10-27T03:46:46Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "incredibly slow caching of ntl context objects.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1009",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1009
 
 ---
 
-archive/issue_comments_006163.json:
+archive/issue_comments_006143.json:
 ```json
 {
     "body": "Attachment [1009.patch](tarball://root/attachments/some-uuid/ticket1009/1009.patch) by @williamstein created at 2007-10-27 03:51:32",
     "created_at": "2007-10-27T03:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1009",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1009#issuecomment-6163",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1009#issuecomment-6143",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -68,15 +67,15 @@ Attachment [1009.patch](tarball://root/attachments/some-uuid/ticket1009/1009.pat
 
 ---
 
-archive/issue_comments_006164.json:
+archive/issue_comments_006144.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-27T04:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1009",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1009#issuecomment-6164",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1009#issuecomment-6144",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

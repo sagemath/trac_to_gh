@@ -6,7 +6,7 @@ archive/issues_005001.json:
     "body": "Assignee: @williamstein\n\nKeywords: matrix, kernel\n\n\n```\nsage: id = matrix(ZZ, 2, 2, [[1, 0], [0, 1]]) \nsage: id.left_kernel()\nTraceback\n...\nTypeError: Argument K (= Integer Ring) must be a field.\n```\n\nOn the other hand, `id.right_kernel()` and `id.kernel()` both work, and `id.kernel()` actually computes the left kernel.  Note also that the documentation for both left_kernel and right_kernel says that the answer will be a vector space, not a module over the integers; this should be fixed, too.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5001\n\n",
     "created_at": "2009-01-17T16:36:51Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005001.json:
     "title": "kernels of integer matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5001",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @williamstein
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5001
 
 ---
 
-archive/issue_comments_038140.json:
+archive/issue_comments_038068.json:
 ```json
 {
     "body": "Attachment [trac_5001.patch](tarball://root/attachments/some-uuid/ticket5001/trac_5001.patch) by @williamstein created at 2009-01-24 16:24:54",
     "created_at": "2009-01-24T16:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38140",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38068",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -60,15 +60,15 @@ Attachment [trac_5001.patch](tarball://root/attachments/some-uuid/ticket5001/tra
 
 ---
 
-archive/issue_comments_038141.json:
+archive/issue_comments_038069.json:
 ```json
 {
     "body": "Looks good, all tests passed. A few comments: the documentation still says \"vector space\" when computing the kernel of an integer matrix, but I can live with that.  Perhaps more seriously, if you don't apply patch #5089, then computing the kernel (or left_kernel or right_kernel) of a sparse integer matrix leads to a segmentation fault.  Does this need to be investigated further?",
     "created_at": "2009-01-24T17:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38141",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38069",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -78,15 +78,15 @@ Looks good, all tests passed. A few comments: the documentation still says "vect
 
 ---
 
-archive/issue_comments_038142.json:
+archive/issue_comments_038070.json:
 ```json
 {
     "body": "Since #5089 is being merged I am changing this to a positive review. The documentation issue about vector spaces vs. modules should be addressed via a followup ticket. \n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T17:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38142",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38070",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -100,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_038143.json:
+archive/issue_comments_038071.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha2\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T18:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38143",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38071",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -122,15 +122,15 @@ Michael
 
 ---
 
-archive/issue_comments_038144.json:
+archive/issue_comments_038072.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-24T18:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5001",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38144",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5001#issuecomment-38072",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

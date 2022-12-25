@@ -6,7 +6,7 @@ archive/issues_001943.json:
     "body": "Assignee: mabshoff\n\nRobert Bradshaw reported the following:\n\n```\nrunning build_ext\nbuilding '_rpy2061' extension\nC compiler: gcc -g -Wall -I/Users/robert/sage/sage-2.10.1.rc0/local/\ninclude -L/Users/robert/sage/sage-2.10.1.rc0/local/lib/\n\ncreating build/temp.macosx-10.3-i386-2.5\ncreating build/temp.macosx-10.3-i386-2.5/src\ncompile options: '-DWITH_NUMERIC=3 -DPY_ARRAY_TYPES_PREFIX=PyArray_ -\nDRPY_SHNAME=_rpy2061 -DINIT_RPY=init_rpy2061 -UPRE_2_2 -I/Users/\nrobert/sage/sage-2.10.1.rc0/local/lib/R/include -Isrc -I/Users/robert/\nsage/sage-2.10.1.rc0/local/lib/python2.5/site-packages/numpy/core/\ninclude -I/Users/robert/sage/sage-2.10.1.rc0/local/include/python2.5 -c'\ngcc: src/io2061.c\nsrc/io2061.c: In function \u2018RPy_ReadConsole\u2019:\nsrc/io2061.c:131: warning: pointer targets in passing argument 1 of  \n\u2018snprintf\u2019 differ in signedness\nsrc/io2061.c: At top level:\n/Users/robert/sage/sage-2.10.1.rc0/local/lib/python2.5/site-packages/\nnumpy/core/include/numpy/__multiarray_api.h:944: warning:  \n\u2018_import_array\u2019 defined but not used\ngcc: src/R_eval2061.c\n/Users/robert/sage/sage-2.10.1.rc0/local/lib/python2.5/site-packages/\nnumpy/core/include/numpy/__multiarray_api.h:944: warning:  \n\u2018_import_array\u2019 defined but not used\ngcc: src/rpymodule2061.c\nsrc/rpymodule2061.c:1488: warning: initialization from incompatible  \npointer type\nsrc/rpymodule2061.c:1491: warning: \u2018intargfunc\u2019 is deprecated\nsrc/rpymodule2061.c:1491: warning: initialization from incompatible  \npointer type\nsrc/rpymodule2061.c:1493: warning: initialization from incompatible  \npointer type\ngcc -bundle -undefined dynamic_lookup -L/Users/robert/sage/\nsage-2.10.1.rc0/local/lib/ -I/Users/robert/sage/sage-2.10.1.rc0/local/\ninclude -L/Users/robert/sage/sage-2.10.1.rc0/local/lib/ build/\ntemp.macosx-10.3-i386-2.5/src/rpymodule2061.o build/temp.macosx-10.3-\ni386-2.5/src/R_eval2061.o build/temp.macosx-10.3-i386-2.5/src/\nio2061.o -L/Users/robert/sage/sage-2.10.1.rc0/local/lib/R/bin -L/\nUsers/robert/sage/sage-2.10.1.rc0/local/lib/R/lib -L/Users/robert/\nsage/sage-2.10.1.rc0/local/lib/gcc-lib/i386-apple-darwin8.10.3/4.0.3/  \n-L/Users/robert/sage/sage-2.10.1.rc0/local/lib/R/bin -L/Users/robert/\nsage/sage-2.10.1.rc0/local/lib/R/lib -L/Users/robert/sage/\nsage-2.10.1.rc0/local/lib/gcc-lib/i386-apple-darwin8.10.3/4.0.3/ -lR -\nllapack -lcblas -latlas -lf95 -o build/lib.macosx-10.3-i386-2.5/\n_rpy2061.so\n/usr/bin/ld: warning can't open dynamic library: libRblas.dylib  \nreferenced from: /Users/robert/sage/sage-2.10.1.rc0/local/lib/R/lib/\nlibR.dylib (checking for undefined symbols may be affected) (No such  \nfile or directory, errno = 2)\n/usr/bin/ld: Undefined symbols:\n_dgemm_ referenced from libR expected to be defined in libRblas.dylib\n_dsyrk_ referenced from libR expected to be defined in libRblas.dylib\n_zgemm_ referenced from libR expected to be defined in libRblas.dylib\n_dcopy_ referenced from libR expected to be defined in libRblas.dylib\n_dtrsm_ referenced from libR expected to be defined in libRblas.dylib\n_daxpy_ referenced from libR expected to be defined in libRblas.dylib\n_dswap_ referenced from libR expected to be defined in libRblas.dylib\n_ddot_ referenced from libR expected to be defined in libRblas.dylib\n__g95_sign_r8 referenced from libR expected to be defined in  \nlibRblas.dylib\n_dasum_ referenced from libR expected to be defined in libRblas.dylib\n_dscal_ referenced from libR expected to be defined in libRblas.dylib\n_dnrm2_ referenced from libR expected to be defined in libRblas.dylib\n_drot_ referenced from libR expected to be defined in libRblas.dylib\n_drotg_ referenced from libR expected to be defined in libRblas.dylib\ncollect2: ld returned 1 exit status\n/usr/bin/ld: warning can't open dynamic library: libRblas.dylib  \nreferenced from: /Users/robert/sage/sage-2.10.1.rc0/local/lib/R/lib/\nlibR.dylib (checking for undefined symbols may be affected) (No such  \nfile or directory, errno = 2)\n/usr/bin/ld: Undefined symbols:\n_dgemm_ referenced from libR expected to be defined in libRblas.dylib\n_dsyrk_ referenced from libR expected to be defined in libRblas.dylib\n_zgemm_ referenced from libR expected to be defined in libRblas.dylib\n_dcopy_ referenced from libR expected to be defined in libRblas.dylib\n_dtrsm_ referenced from libR expected to be defined in libRblas.dylib\n_daxpy_ referenced from libR expected to be defined in libRblas.dylib\n_dswap_ referenced from libR expected to be defined in libRblas.dylib\n_ddot_ referenced from libR expected to be defined in libRblas.dylib\n__g95_sign_r8 referenced from libR expected to be defined in  \nlibRblas.dylib\n_dasum_ referenced from libR expected to be defined in libRblas.dylib\n_dscal_ referenced from libR expected to be defined in libRblas.dylib\n_dnrm2_ referenced from libR expected to be defined in libRblas.dylib\n_drot_ referenced from libR expected to be defined in libRblas.dylib\n_drotg_ referenced from libR expected to be defined in libRblas.dylib\ncollect2: ld returned 1 exit status\nerror: Command \"gcc -bundle -undefined dynamic_lookup -L/Users/robert/\nsage/sage-2.10.1.rc0/local/lib/ -I/Users/robert/sage/sage-2.10.1.rc0/\nlocal/include -L/Users/robert/sage/sage-2.10.1.rc0/local/lib/ build/\ntemp.macosx-10.3-i386-2.5/src/rpymodule2061.o build/temp.macosx-10.3-\ni386-2.5/src/R_eval2061.o build/temp.macosx-10.3-i386-2.5/src/\nio2061.o -L/Users/robert/sage/sage-2.10.1.rc0/local/lib/R/bin -L/\nUsers/robert/sage/sage-2.10.1.rc0/local/lib/R/lib -L/Users/robert/\nsage/sage-2.10.1.rc0/local/lib/gcc-lib/i386-apple-darwin8.10.3/4.0.3/  \n-L/Users/robert/sage/sage-2.10.1.rc0/local/lib/R/bin -L/Users/robert/\nsage/sage-2.10.1.rc0/local/lib/R/lib -L/Users/robert/sage/\nsage-2.10.1.rc0/local/lib/gcc-lib/i386-apple-darwin8.10.3/4.0.3/ -lR -\nllapack -lcblas -latlas -lf95 -o build/lib.macosx-10.3-i386-2.5/\n_rpy2061.so\" failed with exit status 1\nError building RPY -- Python interface to R.\n\nreal    0m2.094s\nuser    0m0.656s\nsys     0m0.650s\nsage: An error occurred while installing rpy-1.0.1.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/robert/sage/sage-2.10.1.rc0/install.log.  Describe your  \ncomputer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/robert/sage/sage-2.10.1.rc0/spkg/build/rpy-1.0.1.p0 and type  \n'make'.\nInstead type \"/Users/robert/sage/sage-2.10.1.rc0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/robert/sage/sage-2.10.1.rc0/spkg/build/rpy-1.0.1.p0\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nError installing rpy.\n\nreal    4m44.687s\nuser    2m17.993s\nsys     1m33.051s\nsage: An error occurred while installing r-2.6.1.p13\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/robert/sage/sage-2.10.1.rc0/install.log.  Describe your  \ncomputer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/robert/sage/sage-2.10.1.rc0/spkg/build/r-2.6.1.p13 and type  \n'make'. \n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1943\n\n",
     "created_at": "2008-01-26T23:12:28Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001943.json:
     "title": "Sage 2.10.1.rc0: rpy fails to build on OSX 10.4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1943",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -168,15 +168,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1943
 
 ---
 
-archive/issue_comments_012334.json:
+archive/issue_comments_012304.json:
 ```json
 {
     "body": "A working r.spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc1/r-2.6.1.p14.spkg\n\nIt builds fine on linux, OSX 10.5 & 10.4. I have also tested it on linux and OSX 10.5, but am waiting for the OSX 10.4 build to finish.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-27T02:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1943#issuecomment-12334",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1943#issuecomment-12304",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -194,15 +194,15 @@ Michael
 
 ---
 
-archive/issue_comments_012335.json:
+archive/issue_comments_012305.json:
 ```json
 {
     "body": "The rpy test now also passes on OSX 10.4",
     "created_at": "2008-01-27T03:36:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1943#issuecomment-12335",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1943#issuecomment-12305",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -212,15 +212,15 @@ The rpy test now also passes on OSX 10.4
 
 ---
 
-archive/issue_comments_012336.json:
+archive/issue_comments_012306.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-27T03:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1943#issuecomment-12336",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1943#issuecomment-12306",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -230,15 +230,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_012337.json:
+archive/issue_comments_012307.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc1",
     "created_at": "2008-01-27T03:37:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1943#issuecomment-12337",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1943#issuecomment-12307",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_005782.json:
     "body": "Assignee: somebody\n\nKeywords: RDF, __pow__, zero\n\nPositive noninteger powers of RDF(0) give nan rather than zero:\n\n```\n  sage: RDF(0)^.5\n  nan\n\n  sage: RDF(0)^(1/2)\n  nan\n```\n\n\nIn contrast, noninteger powers of CDF(0) have the correct value:\n\n```\n  sage: CDF(0)^.5\n  0\n\n  sage: CDF(0)^(1/2)\n  0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5782\n\n",
     "created_at": "2009-04-14T00:00:05Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005782.json:
     "title": "Failure of __pow__ in RDF for noninteger powers of  zero",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5782",
-    "user": "kbaker"
+    "user": "https://trac.sagemath.org/admin/accounts/users/kbaker"
 }
 ```
 Assignee: somebody
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5782
 
 ---
 
-archive/issue_comments_045260.json:
+archive/issue_comments_045174.json:
 ```json
 {
     "body": "Hmm, we have some trivial doctest failures:\n\n```\nsage -t -long \"devel/sage/sage/rings/real_double.pyx\"       \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/real_double.pyx\", line 1543:\n    sage: RDF(0)^.5\nExpected:\n    0\nGot:\n    0.0\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc3/devel/sage/sage/rings/real_double.pyx\", line 1545:\n    sage: RDF(0)^(1/2)\nExpected:\n    0\nGot:\n    0.0\n**********************************************************************\n```\n\n\nI think other than that this is good to go.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T03:04:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45260",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45174",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -95,15 +95,15 @@ Michael
 
 ---
 
-archive/issue_comments_045261.json:
+archive/issue_comments_045175.json:
 ```json
 {
     "body": "Attachment [5782-rdf-pow.patch](tarball://root/attachments/some-uuid/ticket5782/5782-rdf-pow.patch) by @robertwb created at 2009-04-16 04:58:55",
     "created_at": "2009-04-16T04:58:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45261",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45175",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -113,15 +113,15 @@ Attachment [5782-rdf-pow.patch](tarball://root/attachments/some-uuid/ticket5782/
 
 ---
 
-archive/issue_comments_045262.json:
+archive/issue_comments_045176.json:
 ```json
 {
     "body": "Doh! Patch updated.",
     "created_at": "2009-04-16T04:59:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45262",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45176",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -131,15 +131,15 @@ Doh! Patch updated.
 
 ---
 
-archive/issue_comments_045263.json:
+archive/issue_comments_045177.json:
 ```json
 {
     "body": "Second patch looks good to me. Positive review. It also passes doctests :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T07:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45263",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45177",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -153,15 +153,15 @@ Michael
 
 ---
 
-archive/issue_comments_045264.json:
+archive/issue_comments_045178.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T07:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45264",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45178",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -175,15 +175,15 @@ Michael
 
 ---
 
-archive/issue_comments_045265.json:
+archive/issue_comments_045179.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-16T07:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45265",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45179",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -193,15 +193,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_045266.json:
+archive/issue_comments_045180.json:
 ```json
 {
     "body": "Does this fix #5785?",
     "created_at": "2009-04-16T17:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45266",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45180",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -211,15 +211,15 @@ Does this fix #5785?
 
 ---
 
-archive/issue_comments_045267.json:
+archive/issue_comments_045181.json:
 ```json
 {
     "body": "Replying to [comment:6 jason]:\n> Does this fix #5785?\n\nYes.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T21:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5782",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45267",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5782#issuecomment-45181",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

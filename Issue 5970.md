@@ -6,15 +6,14 @@ archive/issues_005970.json:
     "body": "Assignee: @malb\n\nCC:  jpflori @zimmermann6 @vbraun\n\nKeywords: polynomial ring cache weak reference\n\nAt http://groups.google.com/group/sage-support/browse_thread/thread/ef01dae47c835137 a memory leak was reported.\n\nReason for the leak: Many different polynomial rings are created, but used only once. But since we want to have unique parents, they are all cached and thus prevented from deletion.\n\nAs Robert pointed out, using weak references enables us to both have unique parents and garbage collection.\n\nWith the patch, that should at least apply to sage 3.4.1.rc3, one can do\n\n```\nsage: for p in primes(2,1000000):\n....:     R.<x,y,z> = GF(p)[]\n```\n\nwithout running into memory problems.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5970\n\n",
     "created_at": "2009-05-03T07:21:37Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] Weak references in Polynomial Ring cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5970",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: @malb
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5970
 
 ---
 
-archive/issue_comments_047321.json:
+archive/issue_comments_047230.json:
 ```json
 {
     "body": "Attachment [WeakReferences.patch](tarball://root/attachments/some-uuid/ticket5970/WeakReferences.patch) by @simon-king-jena created at 2009-05-03 07:22:11\n\nIntroduce Weak Reference to the cache of PolynomialRing",
     "created_at": "2009-05-03T07:22:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47321",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47230",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -66,15 +65,15 @@ Introduce Weak Reference to the cache of PolynomialRing
 
 ---
 
-archive/issue_comments_047322.json:
+archive/issue_comments_047231.json:
 ```json
 {
     "body": "Ooops, but this does seem to expose some problems:\n\n```\n        sage -t -long devel/sage/sage/rings/number_field/number_field.py # Segfault\n        sage -t -long devel/sage/sage/rings/tests.py # Segfault\n        sage -t -long devel/sage/sage/rings/number_field/number_field_rel.py # Segfault\n        sage -t -long devel/sage/sage/rings/number_field/number_field_element.pyx # Segfault\n        sage -t -long devel/sage/sage/rings/residue_field.pyx # Segfault\n        sage -t -long devel/sage/sage/rings/number_field/number_field_ideal_rel.py # Segfault\n        sage -t -long devel/sage/sage/rings/number_field/morphism.py # Segfault\n        sage -t -long devel/sage/sage/rings/polynomial/polynomial_singular_interface.py # Segfault\n        sage -t -long devel/sage/sage/rings/number_field/unit_group.py # Segfault\n        sage -t -long devel/sage/sage/rings/number_field/small_primes_of_degree_one.py # Segfault\n        sage -t -long devel/sage/doc/en/bordeaux_2008/nf_orders.rst # Segfault\n        sage -t -long devel/sage/sage/rings/number_field/maps.py # Segfault\n        sage -t -long devel/sage/sage/schemes/generic/affine_space.py # Segfault\n```\n\nAnd something this low level will definitely **not** go into 3.4.2 at this stage. \n\nCheers,\n\nMichael",
     "created_at": "2009-05-03T07:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47322",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47231",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -106,15 +105,15 @@ Michael
 
 ---
 
-archive/issue_comments_047323.json:
+archive/issue_comments_047232.json:
 ```json
 {
     "body": "In case this might help somebody working on this, I've attached a small file with test functions for checking the memory usage for loops with elliptic curve, plane curves, and just polynomial rings.  It should be fairly easy to use:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: attach test.sage\nsage: test_poly_leak(2^17)\n271.75390625\n```\n\n| Sage Version 3.4.2.rc0, Release Date: 2009-04-30                   |\n| Type notebook() for the GUI, and license() for information.        |\nThis indicates that the memory usage after the loop is 271MB more than before.\n\nNote also that if you run different tests one after the other you can see, e.g. how much of the leakage in elliptic curves is \"independent\" of the polynomial ring issue:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: attach test.sage\nsage: test_poly_leak(2^17)\n271.73046875\nsage: test_ec_leak(2^17)\n53.10546875\n```\n",
     "created_at": "2009-05-03T08:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47323",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47232",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -151,15 +150,15 @@ sage: test_ec_leak(2^17)
 
 ---
 
-archive/issue_comments_047324.json:
+archive/issue_comments_047233.json:
 ```json
 {
     "body": "Attachment [test.sage](tarball://root/attachments/some-uuid/ticket5970/test.sage) by @aghitza created at 2009-05-03 08:02:38\n\nsimple-minded test suite",
     "created_at": "2009-05-03T08:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47324",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47233",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -171,15 +170,15 @@ simple-minded test suite
 
 ---
 
-archive/issue_comments_047325.json:
+archive/issue_comments_047234.json:
 ```json
 {
     "body": "Replying to [comment:1 mabshoff]:\n> Ooops, but this does seem to expose some problems:\n\nSorry, I did not do any tests, since I thought that weak references Just Work (c), and so the change from a dictionary to a WeakValueDictionary would be almost trivial.\n\n> And something this low level will definitely **not** go into 3.4.2 at this stage. \n\nAgain sorry. Since I thought it is almost trivial, I concluded it could easily be in the next distribution.\n\nIf weak references break cython code at a very fundamental level then I see *no chance* for my approach to work, unless Cython changes.\n\nWon't fix, then?",
     "created_at": "2009-05-03T08:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47325",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47234",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -200,15 +199,15 @@ Won't fix, then?
 
 ---
 
-archive/issue_comments_047326.json:
+archive/issue_comments_047235.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2009-05-03T09:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47326",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47235",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -218,15 +217,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_047327.json:
+archive/issue_comments_047236.json:
 ```json
 {
     "body": "Replying to [comment:3 SimonKing]:\n> Replying to [comment:1 mabshoff]:\n> > Ooops, but this does seem to expose some problems:\n> \n> Sorry, I did not do any tests, since I thought that weak references Just Work (c), and so the change from a dictionary to a WeakValueDictionary would be almost trivial.\n\nHehe, I hope you will remember this now :)\n\n> > And something this low level will definitely **not** go into 3.4.2 at this stage. \n> \n> Again sorry. Since I thought it is almost trivial, I concluded it could easily be in the next distribution.\n\nThis stems from long experience that every even trivial fix has a non-zero chance of breaking things. Weak references are particularly troublesome in this context. And 3.4.2 was supposed to be out two days ago and now William and I will fix the last couple issues today and push out 3.4.2.final, so no potentially risky patches. I can valgrind this in some 4.0.alphaX (assuming the segfaults go away). \n\n> If weak references break cython code at a very fundamental level then I see *no chance* for my approach to work, unless Cython changes.\n> \n> Won't fix, then?\n\nNo, as mentioned in sage-support RobertWB pointed out some other ticket as guideline to what is wrong.\n\nThis patch does not fix the problem the reported in the thread at http://groups.google.com/group/sage-support/t/ef01dae47c835137 reported, but it seems to fix something else or is part of the fix to get #5949 resolved, so lets keep this open for now. It seems to be a valuable patch.\n\nCheers,\n\nMichael\n\nCheers,\n\nMichael",
     "created_at": "2009-05-03T09:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47327",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47236",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -264,15 +263,15 @@ Michael
 
 ---
 
-archive/issue_comments_047328.json:
+archive/issue_comments_047237.json:
 ```json
 {
     "body": "At http://docs.python.org/library/weakref.html they say:\n  Caution: Because a WeakKeyDictionary is built on top of a Python dictionary, it must not change size when iterating over it. This can be difficult to ensure for a WeakKeyDictionary because actions performed by the program during iteration may cause items in the dictionary to vanish \u201cby magic\u201d (as a side effect of garbage collection).\n\nCan this be part of the trouble with my patch?",
     "created_at": "2009-05-03T09:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47328",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47237",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -285,15 +284,15 @@ Can this be part of the trouble with my patch?
 
 ---
 
-archive/issue_comments_047329.json:
+archive/issue_comments_047238.json:
 ```json
 {
     "body": "Changing priority from blocker to critical.",
     "created_at": "2009-06-15T23:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47329",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47238",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -303,15 +302,15 @@ Changing priority from blocker to critical.
 
 ---
 
-archive/issue_comments_047330.json:
+archive/issue_comments_047239.json:
 ```json
 {
     "body": "If we've released for 2 months without fixing this, it doesn't make sense to keep it as a blocker. Note that the lisp interface is in fact 100% completely broken right now.",
     "created_at": "2009-06-15T23:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47330",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47239",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -321,15 +320,15 @@ If we've released for 2 months without fixing this, it doesn't make sense to kee
 
 ---
 
-archive/issue_comments_047331.json:
+archive/issue_comments_047240.json:
 ```json
 {
     "body": "slightly safer weakref patch",
     "created_at": "2009-08-25T23:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47331",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47240",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -339,15 +338,15 @@ slightly safer weakref patch
 
 ---
 
-archive/issue_comments_047332.json:
+archive/issue_comments_047241.json:
 ```json
 {
     "body": "Attachment [weakref_poly_ring.patch](tarball://root/attachments/some-uuid/ticket5970/weakref_poly_ring.patch) by @malb created at 2009-08-25 23:45:38\n\nThe attached patch uses weakrefs for multivariate polynomials but not for univariate polynomials (we still use the same `_cache` object to hold both though). It seems the SIGSEGV is due to some Pari issue so the patch seems safe at first sight (famous last words). I will post debug info in a minute.",
     "created_at": "2009-08-25T23:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47332",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47241",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -359,15 +358,15 @@ The attached patch uses weakrefs for multivariate polynomials but not for univar
 
 ---
 
-archive/issue_comments_047333.json:
+archive/issue_comments_047242.json:
 ```json
 {
     "body": "Valgrind output for `-O0 -ggdb`:\n\n\n```\n==27448== Invalid write of size 8\n==27448==    at 0xA436E60: reset_traps (init.c:510)\n==27448==    by 0xA438A5B: err_leave (init.c:984)\n==27448==    by 0x11674DE6: __pyx_f_4sage_4libs_4pari_3gen_12PariInstance_GEN_to_str (gen.c:39989)\n==27448==    by 0x116048BD: __pyx_pf_4sage_4libs_4pari_3gen_3gen___repr__ (gen.c:3971)\n==27448==    by 0x44D91E: _PyObject_Str (object.c:424)\n==27448==    by 0x44D9D2: PyObject_Str (object.c:445)\n==27448==    by 0x45A0D9: string_new (stringobject.c:4075)\n==27448==    by 0x4682D2: type_call (typeobject.c:731)\n==27448==    by 0x41A95C: PyObject_Call (abstract.c:2492)\n==27448==    by 0x49C3FE: PyEval_EvalFrameEx (ceval.c:3917)\n==27448==    by 0x4A0908: PyEval_EvalCodeEx (ceval.c:2968)\n==27448==    by 0x49EFC7: PyEval_EvalFrameEx (ceval.c:3802)\n==27448==    by 0x4A0908: PyEval_EvalCodeEx (ceval.c:2968)\n==27448==    by 0x4F74DC: function_call (funcobject.c:524)\n==27448==    by 0x41A95C: PyObject_Call (abstract.c:2492)\n==27448==    by 0x4222D3: instancemethod_call (classobject.c:2579)\n==27448==    by 0x41A95C: PyObject_Call (abstract.c:2492)\n==27448==    by 0xB7DBC1F: __pyx_pf_4sage_9structure_11sage_object_10SageObject___repr__ (sage_object.c:1387)\n==27448==    by 0x41A95C: PyObject_Call (abstract.c:2492)\n==27448==    by 0x4991B5: PyEval_CallObjectWithKeywords (ceval.c:3575)\n==27448==    by 0x47118D: slot_tp_repr (typeobject.c:5295)\n==27448==    by 0x44D91E: _PyObject_Str (object.c:424)\n==27448==    by 0x45F3F5: PyString_Format (stringobject.c:4848)\n==27448==    by 0x41AFB0: binary_op1 (abstract.c:917)\n==27448==    by 0x41D97D: PyNumber_Remainder (abstract.c:969)\n==27448==  Address 0x5c5bdd8 is 0 bytes inside a block of size 424 free'd\n==27448==    at 0x4C2261F: free (vg_replace_malloc.c:323)\n==27448==    by 0xA4379AB: pari_close_opts (init.c:715)\n==27448==    by 0xA437A4E: pari_close (init.c:729)\n==27448==    by 0x1166D250: __pyx_pf_4sage_4libs_4pari_3gen_12PariInstance__unsafe_deallocate_pari_stack (gen.c:36617)\n==27448==    by 0x49F050: PyEval_EvalFrameEx (ceval.c:3690)\n==27448==    by 0x4A0908: PyEval_EvalCodeEx (ceval.c:2968)\n==27448==    by 0x49EFC7: PyEval_EvalFrameEx (ceval.c:3802)\n==27448==    by 0x4A0908: PyEval_EvalCodeEx (ceval.c:2968)\n==27448==    by 0x4A0A21: PyEval_EvalCode (ceval.c:522)\n==27448==    by 0x4C03AB: PyRun_FileExFlags (pythonrun.c:1335)\n==27448==    by 0x4C06DA: PyRun_SimpleFileExFlags (pythonrun.c:931)\n==27448==    by 0x416215: Py_Main (main.c:599)\n==27448==    by 0x56EA5C5: (below main) (in /lib/libc-2.9.so)\n```\n",
     "created_at": "2009-08-25T23:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47333",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47242",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -422,15 +421,15 @@ Valgrind output for `-O0 -ggdb`:
 
 ---
 
-archive/issue_comments_047334.json:
+archive/issue_comments_047243.json:
 ```json
 {
     "body": "Just to make sure, this backtrace is not with the patch I just attached but with the original patch.",
     "created_at": "2009-08-25T23:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47334",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47243",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -440,15 +439,15 @@ Just to make sure, this backtrace is not with the patch I just attached but with
 
 ---
 
-archive/issue_comments_047335.json:
+archive/issue_comments_047244.json:
 ```json
 {
     "body": "Mhh, from the changelog it seems caching was disabled because of a SIGSEGV in matrix2.pyx. I cannot reproduce it though.",
     "created_at": "2009-08-26T00:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47335",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47244",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -458,15 +457,15 @@ Mhh, from the changelog it seems caching was disabled because of a SIGSEGV in ma
 
 ---
 
-archive/issue_comments_047336.json:
+archive/issue_comments_047245.json:
 ```json
 {
     "body": "I am having trouble to reproduce the segfault in `matrix2.pyx`, cf.\n\n  http://hg.sagemath.org/sage-main/annotate/b4f33dc4908b/sage/rings/polynomial/polynomial_ring_constructor.py#337\n\nWilliam, do you recall on which platform you saw it?",
     "created_at": "2009-08-26T09:56:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47336",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47245",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -480,15 +479,15 @@ William, do you recall on which platform you saw it?
 
 ---
 
-archive/issue_comments_047337.json:
+archive/issue_comments_047246.json:
 ```json
 {
     "body": "Hi!\n\nI almost forgot this ticket. But now, it hit me while working at #7580 (I had the impression I got a memory leak there, but in fact the Polynomial Ring cache just contains more and more unused items).\n\nMartin, since your patch is quite different from my original suggestion, I guess that I am allowed to be referee? Or must it be someone else?\n\nCheers,\nSimon",
     "created_at": "2009-12-13T23:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47337",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47246",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -505,15 +504,15 @@ Simon
 
 ---
 
-archive/issue_comments_047338.json:
+archive/issue_comments_047247.json:
 ```json
 {
     "body": "Yes, you are okay to review it. Make sure you push it hard, try to make it crash etc. :)",
     "created_at": "2009-12-14T00:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47338",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47247",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -523,15 +522,15 @@ Yes, you are okay to review it. Make sure you push it hard, try to make it crash
 
 ---
 
-archive/issue_comments_047339.json:
+archive/issue_comments_047248.json:
 ```json
 {
     "body": "This is not a review yet, but some first tests.\n\nThere is some progress. Consider the following code snipped (slightly modifying Alex' code):\n\n```\ndef test_poly_leak(upper):\n    a = get_memory_usage()\n    c = 0\n    for p in prime_range(upper):\n        c+=1\n        R.<x, y, z> = PolynomialRing(GF(p), 3)\n    b = get_memory_usage()\n    return (b - a)/c\n```\n\n\nSo, the average memory allocation for each created polynomial ring is counted.\n\nResult on sage.math:\n\n```\nsage: attach test.sage\nsage: test_poly_leak(100000)\n0.03225588380942452\n```\n\nwhich I can confirm on my computer with original 4.3.rc0.\n\nWith the patch, one has\n\n```\nsage: attach test.sage\nsage: test_poly_leak(100000)\n0.0072749426605504585\n```\n\n\nI did not yet try to crash the patch intentionally. However, I did some indirect stress tests. Namely, I did some series of random examples of Symmetric Groebner bases (this is about infinite polynomial rings, see #7580). Here, many *finite* polynomial rings are created. There was no segfault or so, which I take as a good sign. \n\nSo long,\n\nSimon",
     "created_at": "2009-12-15T16:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47339",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47248",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -582,15 +581,15 @@ Simon
 
 ---
 
-archive/issue_comments_047340.json:
+archive/issue_comments_047249.json:
 ```json
 {
     "body": "Hi!\n\nTaking the `test.sage` file, modifying it by scaling the output by the number of examples, I obtain with sage-4.3.2:\n\n\n```\nsage: attach test.sage\nsage: %time test_poly_leak(10^5)\nCPU times: user 9.38 s, sys: 0.24 s, total: 9.62 s\nWall time: 9.63 s\n0.032462354696622182\nsage: %time test_ec_leak(10^5)\nCPU times: user 39.26 s, sys: 0.26 s, total: 39.51 s\nWall time: 39.52 s\n0.021538141944734097\nsage: %time test_pc_leak(10^5)\nCPU times: user 14.63 s, sys: 0.05 s, total: 14.68 s\nWall time: 14.70 s\n0.0056423158621768136\n```\n\nWith the patch (that applies, though with a warning), I obtain:\n\n\n```\nsage: attach test.sage\nsage: %time test_poly_leak(10^5)\nCPU times: user 8.01 s, sys: 0.07 s, total: 8.08 s\nWall time: 8.12 s\n0.0073502821361551294\nsage: %time test_ec_leak(10^5)\nCPU times: user 49.45 s, sys: 0.34 s, total: 49.79 s\nWall time: 49.86 s\n0.047167052267987487\nsage: %time test_pc_leak(10^5)\nCPU times: user 14.94 s, sys: 0.08 s, total: 15.02 s\nWall time: 15.08 s\n0.005620324880108424\n```\n\nNow that's kind of strange. In one of the three tests, there is an improvement in both memory and CPU consumption, in one example more or less nothing changes, and in one example there is a regression in both memory and CPU.\n\nAt least, for quite a while I did heavy polynomial computations, involving the temporary creation of many polynomial rings. It never crashed.\n\nSo, I would give it a positive review, if there wouldn't be the regression in one of the tests.\n\nCan you explain why this regression occurs?\n\nBest regards,\n\nSimon",
     "created_at": "2010-02-08T18:52:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47340",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47249",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -650,15 +649,15 @@ Simon
 
 ---
 
-archive/issue_comments_047341.json:
+archive/issue_comments_047250.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-02-08T18:52:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47341",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47250",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -668,15 +667,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_047342.json:
+archive/issue_comments_047251.json:
 ```json
 {
     "body": "First, I can reproduce your results:\n\n**without patch**\n\n```python\nsage: %time test_poly_leak(10^5)\nCPU times: user 11.11 s, sys: 0.31 s, total: 11.43 s\nWall time: 11.84 s\n311.71875\nsage: %time test_ec_leak(10^5)\nCPU times: user 46.12 s, sys: 0.27 s, total: 46.39 s\nWall time: 47.27 s\n206.26953125\nsage: %time test_pc_leak(10^5)\nCPU times: user 16.95 s, sys: 0.08 s, total: 17.03 s\nWall time: 17.64 s\n54.1328125\n```\n\n\n**with patch**\n\n```python\nsage: %time test_poly_leak(10^5)\nCPU times: user 9.14 s, sys: 0.10 s, total: 9.25 s\nWall time: 9.58 s\n70.53125\nsage: %time test_ec_leak(10^5)\nCPU times: user 57.96 s, sys: 0.50 s, total: 58.46 s\nWall time: 59.63 s\n452.3671875\nsage: %time test_pc_leak(10^5)\nCPU times: user 17.03 s, sys: 0.07 s, total: 17.10 s\nWall time: 17.53 s\n54.23046875\n```\n\n\nI would assume this is due to the fact that the elliptic curve constructor does its own hashing somewhere (someone more familiar with this area might want to comment on that) which prevents the GC from collecting the unused polynomial rings. Also, since weak references need to keep track of more information I find it plausible that each weak reference has some memory overhead. Since we cannot free the unused polynomial rings this overhead accumulates.\n\nMaybe the elliptic curve constructor should use weak references as well?",
     "created_at": "2010-02-09T17:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47342",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47251",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -726,15 +725,15 @@ Maybe the elliptic curve constructor should use weak references as well?
 
 ---
 
-archive/issue_comments_047343.json:
+archive/issue_comments_047252.json:
 ```json
 {
     "body": "I'd like to revive that ticket.\n\nWith `sage-4.6.2.alpha0` and the tickets from #8611, #10467 and #10496 (all with positive review), I obtain:\n\n\n```\nsage: attach test.sage\nsage: %time test_poly_leak(10^5)\nCPU times: user 11.63 s, sys: 0.16 s, total: 11.79 s\nWall time: 11.85 s\n330.4296875\nsage: %time test_ec_leak(10^5)\nCPU times: user 41.47 s, sys: 0.14 s, total: 41.61 s\nWall time: 42.11 s\n193.3828125\nsage: %time test_pc_leak(10^5)\nCPU times: user 13.24 s, sys: 0.04 s, total: 13.29 s\nWall time: 13.29 s\n57.25390625\n```\n\n\n\nAdditionally applying Martin's patch from here, one has\n\n```\nsage: attach test.sage\nsage: %time test_poly_leak(10^5)\nCPU times: user 9.09 s, sys: 0.06 s, total: 9.14 s\nWall time: 9.26 s\n77.1015625\nsage: %time test_ec_leak(10^5)\nCPU times: user 51.72 s, sys: 0.22 s, total: 51.94 s\nWall time: 52.49 s\n448.65234375\nsage: %time test_pc_leak(10^5)\nCPU times: user 13.64 s, sys: 0.03 s, total: 13.68 s\nWall time: 13.85 s\n57.796875\n```\n\n\nSo, the situation has not changed: We need to look into the elliptic curves code.",
     "created_at": "2011-01-18T08:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47343",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47252",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -786,15 +785,15 @@ So, the situation has not changed: We need to look into the elliptic curves code
 
 ---
 
-archive/issue_comments_047344.json:
+archive/issue_comments_047253.json:
 ```json
 {
     "body": "Now I really wonder whether this ticket is relevant at all.\n\nIf I understand correctly, the purpose of this ticket is to use weak references, so that unused polynomial rings can be removed from the cache. But the \"test suite\" in `test.sage` is not affected from the length of the cache:\n\n```\nsage: attach test.sage\nsage: from sage.rings.polynomial.polynomial_ring_constructor import _cache\nsage: len(_cache)\n16\nsage: %time test_poly_leak(10^5)\nCPU times: user 11.06 s, sys: 0.13 s, total: 11.18 s\nWall time: 11.19 s\n330.40625\nsage: len(_cache)\n9608\nsage: %time test_ec_leak(10^5)\nCPU times: user 27.01 s, sys: 0.11 s, total: 27.12 s\nWall time: 27.13 s\n192.51171875\nsage: len(_cache)\n9608\n```\n\n\nThe memory consumption depends on applying the patch. But `len(_cache)` is the same, with or without the patch.\n\nAlso, the original problem\n\n```\nsage: for p in primes(2,1000000):\n....:     print get_memory_usage()\n....:     R.<x,y,z> = GF(p)[]\n```\n\ndoes not seem to be seriously affected by the patch (at least when one has the patches from  #8611, #10467 and #10496 applied on top of `sage-4.6.2.alpha0`.\n\nThoughts?",
     "created_at": "2011-01-18T08:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47344",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47253",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -840,15 +839,15 @@ Thoughts?
 
 ---
 
-archive/issue_comments_047345.json:
+archive/issue_comments_047254.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2011-12-21T20:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47345",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47254",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -858,15 +857,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_047346.json:
+archive/issue_comments_047255.json:
 ```json
 {
     "body": "This is related with a couple of other tickets that aim at using weak references:\n\n* #11521 uses weak references for the cache of homsets.\n* #715, which aims at using weak references for the coercion cache.\n\nI think the whole project only makes sense if *all three* approaches are simultaneously used. Two of them will not be enough.\n\nCurrently, I test on top of #11521 and some preliminary patch for #715, whether it is now possible to simply use a `WeakValueDictionary`. If it still doesn't then we should revive Martin's patch.",
     "created_at": "2011-12-21T20:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47346",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47255",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -883,15 +882,15 @@ Currently, I test on top of #11521 and some preliminary patch for #715, whether 
 
 ---
 
-archive/issue_comments_047347.json:
+archive/issue_comments_047256.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-12-21T20:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47347",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47256",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -901,15 +900,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_047348.json:
+archive/issue_comments_047257.json:
 ```json
 {
     "body": "Even using all three techniques is not enough, as I found out with the example from the ticket description.",
     "created_at": "2011-12-21T20:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47348",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47257",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -919,15 +918,15 @@ Even using all three techniques is not enough, as I found out with the example f
 
 ---
 
-archive/issue_comments_047349.json:
+archive/issue_comments_047258.json:
 ```json
 {
     "body": "I wonder why the example leaks, though. With the patches from #11521 and a not-yet-published patch for #715, I obtain:\n\n```\nsage: import gc\nsage: from sage.rings.finite_rings.finite_field_base import is_FiniteField\nsage: K = GF(151)\nsage: predicate = lambda x: is_FiniteField(x) and x.order() == 151\nsage: del K\nsage: gc.collect()\n174\nsage: [bla for bla in gc.get_objects() if predicate(bla)]\n[]\n```\n\n\nSo, prime fields do not seem to leak.\n\n```\nsage: from sage.rings.polynomial.multi_polynomial_ring import is_MPolynomialRing\nsage: K = GF(151)\nsage: P = K['x','y','z']\nsage: del P\nsage: gc.collect()\n33\nsage: predicate = lambda x: is_MPolynomialRing(x) and x.variable_names()==['x','y','z'] and x.base_ring() is K\nsage: [bla for bla in gc.get_objects() if predicate(bla)]\n[]\n```\n\n\nSo, where does the leak come from??? The example from the ticket description does use polynomial rings over finite prime fields!",
     "created_at": "2011-12-21T21:34:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47349",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47258",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -967,15 +966,15 @@ So, where does the leak come from??? The example from the ticket description doe
 
 ---
 
-archive/issue_comments_047350.json:
+archive/issue_comments_047259.json:
 ```json
 {
     "body": "Aha!\n\nThe combination of a finite field with a polynomial ring seems to reveal the leak:\n\n```\nsage: K = GF(next_prime(1000))\nsage: p = K.order()\nsage: predicate = lambda x: is_FiniteField(x) and x.order() == p\nsage: del K\nsage: gc.collect()\n23\nsage: [bla for bla in gc.get_objects() if predicate(bla)]\n[]\nsage: K = GF(next_prime(1000))\nsage: P = K['x','y','z']\nsage: del P\nsage: del K\nsage: gc.collect()\n39\nsage: [bla for bla in gc.get_objects() if predicate(bla)]\n[Finite Field of size 1009]\nsage: predicate = lambda x: is_MPolynomialRing(x) and x.variable_names()==['x','y','z']\nsage: [bla for bla in gc.get_objects() if predicate(bla)]\n[]\n```\n\n\nSo, the polynomial ring is gone, but the base ring remains. And I think this is indeed because of the thing tracked at #12215:\n\n* The polynomial ring belongs to the category of algebras over the base ring (at least by #9138, which I have applied), \n* The category is strongly cached (see #12215)\n* The category has a reference to its base ring.\n\nSo, indeed we absolutely need to have `UniqueRepresentation` use weak references.",
     "created_at": "2011-12-21T21:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47350",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47259",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1018,15 +1017,15 @@ So, indeed we absolutely need to have `UniqueRepresentation` use weak references
 
 ---
 
-archive/issue_comments_047351.json:
+archive/issue_comments_047260.json:
 ```json
 {
     "body": "I can't really comment on what is going on in your unpublished patch, but I do recommend heapy to track down the memory leaks. For starters, it can show you a statistic of which types occupy most of the memory. Its just an `easy_install` away... But we don't have to solve every memory leak in a day, I'm happy to review any progress towards making cache weaker even if its not the final word.",
     "created_at": "2011-12-21T21:51:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47351",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47260",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1036,15 +1035,15 @@ I can't really comment on what is going on in your unpublished patch, but I do r
 
 ---
 
-archive/issue_comments_047352.json:
+archive/issue_comments_047261.json:
 ```json
 {
     "body": "Replying to [comment:27 vbraun]:\n> I can't really comment on what is going on in your unpublished patch, but I do recommend heapy to track down the memory leaks. ... Its just an `easy_install` away...\n\nIt isn't.\n\n\n```\n(sage subshell) linux-sqwp:sage-main simon$ easy_install heapy\nSearching for heapy\nReading http://pypi.python.org/simple/heapy/\nCouldn't find index page for 'heapy' (maybe misspelled?)\nScanning index of all packages (this may take a while)\nReading http://pypi.python.org/simple/\nNo local packages or download links found for heapy\nerror: Could not find suitable distribution for Requirement.parse('heapy')\n```\n\n\nWhat did I do wrong?",
     "created_at": "2011-12-21T23:42:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47352",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47261",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1072,15 +1071,15 @@ What did I do wrong?
 
 ---
 
-archive/issue_comments_047353.json:
+archive/issue_comments_047262.json:
 ```json
 {
     "body": "Aha! Do I need to install guppy for getting heapy?",
     "created_at": "2011-12-21T23:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47353",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47262",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1090,15 +1089,15 @@ Aha! Do I need to install guppy for getting heapy?
 
 ---
 
-archive/issue_comments_047354.json:
+archive/issue_comments_047263.json:
 ```json
 {
     "body": "Interesting. Heapy shows (again with the example from the ticket description) that most of the memory is filled by strings:\n\n```\nsage: H.heap()\nPartition of a set of 479076 objects. Total size = 78965680 bytes.\n Index  Count   %     Size   % Cumulative  % Kind (class / dict of class)\n     0 228412  48 38602736  49  38602736  49 str\n     1 123581  26 10681888  14  49284624  62 tuple\n     2   1755   0  4241544   5  53526168  68 dict of module\n     3   4657   1  3835672   5  57361840  73 dict (no owner)\n     4  29863   6  3583560   5  60945400  77 function\n     5  29851   6  3582120   5  64527520  82 types.CodeType\n     6   3071   1  2974952   4  67502472  85 dict of type\n     7   3071   1  2759672   3  70262144  89 type\n     8   6651   1  1202264   2  71464408  91 list\n     9    937   0   922072   1  72386480  92 dict of class\n<1072 more rows. Type e.g. '_.more' to view.>\n```\n\n\nWhat are these strings? Messages of cached exceptions (there is a ticket concerning cached exceptions, but I can't find it right now)? Keys of dictionaries? But then we should also see the corresponding values.",
     "created_at": "2011-12-21T23:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47354",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47263",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1128,15 +1127,15 @@ What are these strings? Messages of cached exceptions (there is a ticket concern
 
 ---
 
-archive/issue_comments_047355.json:
+archive/issue_comments_047264.json:
 ```json
 {
     "body": "I introduced a weak cache for polynomial rings in two lines of my patch for #715, which now needs review. I therefore suggest that this ticket is marked as a duplicate.",
     "created_at": "2011-12-23T09:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47355",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47264",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1146,15 +1145,15 @@ I introduced a weak cache for polynomial rings in two lines of my patch for #715
 
 ---
 
-archive/issue_comments_047356.json:
+archive/issue_comments_047265.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2011-12-23T09:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47356",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47265",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1164,15 +1163,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_047357.json:
+archive/issue_comments_047266.json:
 ```json
 {
     "body": "Simon, there is a `duplicate` field, which would be better than `positive review`.\n\nAlso, maybe you might put this as `needs review`, asking someone (maybe you) to check that your patch for #715 indeed solves the problem.\n\nPaul",
     "created_at": "2011-12-23T10:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47357",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47266",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -1186,15 +1185,15 @@ Paul
 
 ---
 
-archive/issue_comments_047358.json:
+archive/issue_comments_047267.json:
 ```json
 {
     "body": "Replying to [comment:32 zimmerma]:\n> Simon, there is a `duplicate` field, which would be better than `positive review`.\n\nThere is no duplicate field, because choosing the resolution of a ticket is reserved to people with administrator rights. Apparently you have these rights, but I haven't.\n\nIn addition, I am very much sure that Jeroen said that this is the correct way to proceed: If one thinks that the ticket is a duplicate then you review it accordingly, putting it as \"positive review\". Then the RELEASE MANAGER (nobody else!!) closes the ticket by choosing the resolution \"duplicate\", if he believes that the reasons given in the review make sense.\n\n> Also, maybe you might put this as `needs review`, asking someone (maybe you) to check that your patch for #715 indeed solves the problem.\n\nI can of course not review my own patch from #715. I can merely state that the problem of the ticket here is in fact a sub-problem of ticket #715.",
     "created_at": "2011-12-23T10:15:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47358",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47267",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1213,15 +1212,15 @@ I can of course not review my own patch from #715. I can merely state that the p
 
 ---
 
-archive/issue_comments_047359.json:
+archive/issue_comments_047268.json:
 ```json
 {
     "body": "Replying to [comment:33 SimonKing]:\n> I am very much sure that Jeroen said that this is the correct way to proceed: If one thinks that the ticket is a duplicate then you review it accordingly, putting it as \"positive review\". Then the RELEASE MANAGER (nobody else!!) closes the ticket by choosing the resolution \"duplicate\", if he believes that the reasons given in the review make sense.\n\nTrue, but you forget one important step: you should put the milestone to sage-duplicate/invalid/wontfix yourself, so I know the intention is to close this ticket as duplicate and no patch should be merged.\n\nNobody except for the release manager should close or reopen tickets (with a few exceptions like spam tickets, tickets marked as duplicate by the person who reported the ticket and with no other activity).\n\nAnd if it's a duplicate, it would be nice to add a pointer in the description to the ticket of which it is a duplicate of.",
     "created_at": "2011-12-23T11:10:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47359",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47268",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1238,15 +1237,15 @@ And if it's a duplicate, it would be nice to add a pointer in the description to
 
 ---
 
-archive/issue_comments_047360.json:
+archive/issue_comments_047269.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2012-01-05T13:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47360",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5970#issuecomment-47269",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

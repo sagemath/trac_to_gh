@@ -6,15 +6,14 @@ archive/issues_009022.json:
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* 'touch' spkg/installed/gdmodule-0.56.p7 to fool Sage into thinking gdmodule had installed, as it is failing to (see #9021)\n\n## The problem\n\nOne can see that _socket is not being built:\n\n```\ngcc -m64 -fPIC -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -I. -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/./Include -I. -IInclude -I./Include -I/export/home/drkirkby/sage-4.4.2/local/include -I/usr/local/include -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Include -I/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src -c /export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c -o build/temp.solaris-2.11-i86pc-2.6/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.o\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018makesockaddr\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1103: error: \u2018struct ifreq\u2019 has no member named \u2018ifr_ifindex\u2019\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: \u2018SIOCGIFNAME\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: (Each undeclared identifier is reported only once\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1104: error: for each function it appears in.)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018getsockaddrarg\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1411: error: \u2018SIOCGIFINDEX\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:1423: error: \u2018struct ifreq\u2019 has no member named \u2018ifr_ifindex\u2019\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c: In function \u2018init_socket\u2019:\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:4589: error: \u2018PACKET_LOOPBACK\u2019 undeclared (first use in this function)\n/export/home/drkirkby/sage-4.4.2/spkg/build/python-2.6.4.p7/src/Modules/socketmodule.c:4590: error: \u2018PACKET_FASTROUTE\u2019 undeclared (first use in this function)\nbuilding '_ssl' extension\n```\n\nThis is shown later when the list of failed modules is displayed in the Sage build log. \n\n\n```\nFailed to build these modules:\n_curses            _curses_panel      _socket\n_ssl               _tkinter           sunaudiodev\n```\n\n\nThis then causes ipython to fail to build. \n\n\n```\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/ipython-0.9.1.p0/src/IPython/iplib.py\", line 71, in <module>\n    from IPython.Prompts import CachedOutput\n  File \"/export/home/drkirkby/sage-4.4.2/spkg/build/ipython-0.9.1.p0/src/IPython/Prompts.py\", line 23, in <module>\n    import socket\n  File \"/export/home/drkirkby/sage-4.4.2/local/lib/python/socket.py\", line 46, in <module>\n    import _socket\nImportError: No module named _socket\nError installing Ipython\n\nreal    0m0.186s\nuser    0m0.136s\nsys     0m0.046s\nsage: An error occurred while installing ipython-0.9.1.p0\n```\n\n\n## Likely hints as to the cause\nThe following couple of links have something written about the _socket issue:\n\n* http://www.opensolaris.org/jive/thread.jspa?threadID=5426&tstart=0\n* http://www.lotuseyes.de/blog/error-installing-plone-on-opensolaris-using-the-unified-installer\n\nAs of this minute, I don't have a solution for this. \n\nThe solution proposed at \n\nhttp://www.lotuseyes.de/blog/error-installing-plone-on-opensolaris-using-the-unified-installer \n\nmay be workable, though I would restrict the patch to just OpenSolaris, not just any Solaris release, which is what suspect his\n\n\n```\n#if defined(__sun)\n#  define ifr_ifindex ifr_index\n#  undef HAVE_NETPACKET_PACKET_H\n#endif\n```\n\n\nwill do. \n\nDave\n\nIssue created by migration from https://trac.sagemath.org/ticket/9022\n\n",
     "created_at": "2010-05-23T19:23:26Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "python fails to build _socket on OpenSolaris x64, so ipython fails to build.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9022",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -135,15 +134,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9022
 
 ---
 
-archive/issue_comments_083475.json:
+archive/issue_comments_083339.json:
 ```json
 {
     "body": "For other OpenSolaris issues, see #9026",
     "created_at": "2010-05-24T18:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83475",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83339",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -153,15 +152,15 @@ For other OpenSolaris issues, see #9026
 
 ---
 
-archive/issue_comments_083476.json:
+archive/issue_comments_083340.json:
 ```json
 {
     "body": "I've reported this as a bug. \n\nhttp://bugs.python.org/issue8852\n\nand have received some feedback, though it is not yet acknowledged as a bug or not. \n\n\nDave",
     "created_at": "2010-05-29T15:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83476",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83340",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -178,15 +177,15 @@ Dave
 
 ---
 
-archive/issue_comments_083477.json:
+archive/issue_comments_083341.json:
 ```json
 {
     "body": "The failure of _socket to build is also causing pygments to fail to build - see #9041. Once I've produced a patch, hopefully both ipython and pygments will build ok. \n\nDave",
     "created_at": "2010-05-30T05:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83477",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83341",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -198,15 +197,15 @@ Dave
 
 ---
 
-archive/issue_comments_083478.json:
+archive/issue_comments_083342.json:
 ```json
 {
     "body": "The fix for this is the same as required for #9041. So please review #9041. The changes have been tested on \n \n* Linux\n* OS X \n* OpenSolaris on x64 (where the problem occured)\n* Solaris 10 on SPARC\n\nSee all the supporting evidence at #9041. \n\n## Notes to the release manager\nThis ticket may be closed when #9041 is closed. \n\nDave",
     "created_at": "2010-05-30T09:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83478",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83342",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -228,15 +227,15 @@ Dave
 
 ---
 
-archive/issue_comments_083479.json:
+archive/issue_comments_083343.json:
 ```json
 {
     "body": "See #9041",
     "created_at": "2010-06-25T11:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83479",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83343",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -246,15 +245,15 @@ See #9041
 
 ---
 
-archive/issue_comments_083480.json:
+archive/issue_comments_083344.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-06-25T11:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83480",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83344",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -264,15 +263,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_083481.json:
+archive/issue_comments_083345.json:
 ```json
 {
     "body": "I would also see #9295, which is an improvement on #9041, adding the facility to check Python by adding an spkg-check file. \n\nDave",
     "created_at": "2010-06-25T13:48:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83481",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9022#issuecomment-83345",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 

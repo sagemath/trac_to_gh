@@ -6,7 +6,7 @@ archive/issues_007369.json:
     "body": "Assignee: @rlmill\n\nThe file graph.py should be split into several files in next release. I am thinking about creating 3 files :\n* generic_graph.py\n* graph.py\n* digraph.py\nBut it is likely many of you will have better ideas. Regardless of what is chosen, this is getting urgent as the best moment to do it is just before releasing a new version, just after all the patches for graph.py have been merged.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7369\n\n",
     "created_at": "2009-11-01T15:34:19Z",
     "labels": [
-        "graph theory",
+        "component: graph theory",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007369.json:
     "title": "Split graph.py into several files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7369",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7369
 
 ---
 
-archive/issue_comments_061750.json:
+archive/issue_comments_061636.json:
 ```json
 {
     "body": "Why was this made a defect?  a blocker??  I'm changing it to not be a blocker or defect.",
     "created_at": "2009-11-11T17:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61750",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61636",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -51,33 +51,15 @@ Why was this made a defect?  a blocker??  I'm changing it to not be a blocker or
 
 ---
 
-archive/issue_comments_061751.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2009-11-11T17:45:24Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/7369",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61751",
-    "user": "@williamstein"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_061752.json:
+archive/issue_comments_061637.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-11-11T17:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61752",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61637",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -87,15 +69,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_061753.json:
+archive/issue_comments_061638.json:
 ```json
 {
     "body": "I set it to \"blocker\" because it had to be done just before releasing. It is not easy to split a file in two if there are patches to be applied on this very file, so I thought the best way would be to take care of this just before releasing, thus setting it as a blocker to avoid it being forgotten, as it will most probably be done by the release manager ! :-)\n\nWhat's your advice ???\n\nNathann",
     "created_at": "2009-11-11T19:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61753",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61638",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -109,15 +91,15 @@ Nathann
 
 ---
 
-archive/issue_comments_061754.json:
+archive/issue_comments_061639.json:
 ```json
 {
     "body": "To me, blocker = high priority ticket that we *have* to close before making the next release of Sage.     I don't think refactoring code ever satisfies that criterion. \n\nI think you should set this as an enhancement then work with the release manager (and post to sage-release) to do the refactoring once you're sure about what you want to do.  \n\n -- william",
     "created_at": "2009-11-12T00:04:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61754",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61639",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -131,15 +113,15 @@ I think you should set this as an enhancement then work with the release manager
 
 ---
 
-archive/issue_comments_061755.json:
+archive/issue_comments_061640.json:
 ```json
 {
     "body": "Copy of #7634",
     "created_at": "2009-12-17T16:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61755",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61640",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -149,15 +131,15 @@ Copy of #7634
 
 ---
 
-archive/issue_comments_061756.json:
+archive/issue_comments_061641.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-12-17T16:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7369",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61756",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7369#issuecomment-61641",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 

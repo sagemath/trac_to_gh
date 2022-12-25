@@ -6,15 +6,14 @@ archive/issues_000526.json:
     "body": "Assignee: @williamstein\n\nCC:  dmharvey@math.harvard.edu\n\na.k.a. `make -j`\n\nSee discussion at\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/a88d59dc35404507\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/526\n\n",
     "created_at": "2007-08-30T04:30:52Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "better support for parallel make",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/526",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: @williamstein
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/526
 
 ---
 
-archive/issue_comments_002672.json:
+archive/issue_comments_002660.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"package audit\".",
     "created_at": "2007-11-20T14:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2672",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2660",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -54,15 +53,15 @@ Changing keywords from "" to "package audit".
 
 ---
 
-archive/issue_comments_002673.json:
+archive/issue_comments_002661.json:
 ```json
 {
     "body": "The issue has been solved and needs to be properly documented. If you do\n\n```\nexport MAKE=\"make -j4\"\nmake\n```\n\nSage will be build with up to 4 jobs in parallel. Spkgs like Singular which do not build properly with parallel make make sure that MAKE is reset while building themselves.\n\nSo somebody send us a patch for the manual. We also need to audit all packages and change make to $MAKE.\n\nCheers,\n\nMichaek",
     "created_at": "2007-11-20T14:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2673",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2661",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Michaek
 
 ---
 
-archive/issue_comments_002674.json:
+archive/issue_comments_002662.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @garyfurnish.",
     "created_at": "2008-03-09T05:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2674",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2662",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing assignee from @williamstein to @garyfurnish.
 
 ---
 
-archive/issue_comments_002675.json:
+archive/issue_comments_002663.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-09T05:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2675",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2663",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -121,15 +120,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002676.json:
+archive/issue_comments_002664.json:
 ```json
 {
     "body": "Changing assignee from @garyfurnish to mabshoff.",
     "created_at": "2008-09-26T09:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2676",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2664",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +138,15 @@ Changing assignee from @garyfurnish to mabshoff.
 
 ---
 
-archive/issue_comments_002677.json:
+archive/issue_comments_002665.json:
 ```json
 {
     "body": "This has been fixed. Every spkg that can be build in parallel does get build that way.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T09:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2677",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2665",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -161,15 +160,15 @@ Michael
 
 ---
 
-archive/issue_comments_002678.json:
+archive/issue_comments_002666.json:
 ```json
 {
     "body": "Changing status from assigned to new.",
     "created_at": "2008-09-26T09:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2678",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2666",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -179,15 +178,15 @@ Changing status from assigned to new.
 
 ---
 
-archive/issue_comments_002679.json:
+archive/issue_comments_002667.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-26T09:18:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/526",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2679",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/526#issuecomment-2667",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

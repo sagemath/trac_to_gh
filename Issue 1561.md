@@ -6,7 +6,7 @@ archive/issues_001561.json:
     "body": "Assignee: @malb\n\nKeywords: matrix vector transpose FreeModuleElement\n\nThis makes `matrix(vector(2, 3, 4))` and `transpose(vector(2, 3, 4))` work -- very handy when translating PARI code.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1561\n\n",
     "created_at": "2007-12-18T19:36:47Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001561.json:
     "title": "[with patch] add ._matrix_() and .transpose() to vector/FreeModuleElement.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1561",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @malb
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1561
 
 ---
 
-archive/issue_comments_009941.json:
+archive/issue_comments_009915.json:
 ```json
 {
     "body": "Attachment [ncalexan-vector-matrix.hg](tarball://root/attachments/some-uuid/ticket1561/ncalexan-vector-matrix.hg) by @ncalexan created at 2007-12-18 19:37:27",
     "created_at": "2007-12-18T19:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9941",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9915",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -49,15 +49,15 @@ Attachment [ncalexan-vector-matrix.hg](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_009942.json:
+archive/issue_comments_009916.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-21T22:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9942",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9916",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -67,15 +67,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009943.json:
+archive/issue_comments_009917.json:
 ```json
 {
     "body": "merged in 2.9.1 alpha3",
     "created_at": "2007-12-21T22:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9943",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1561#issuecomment-9917",
+    "user": "https://github.com/rlmill"
 }
 ```
 

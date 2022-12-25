@@ -6,15 +6,13 @@ archive/issues_000912.json:
     "body": "Assignee: @williamstein\n\nSee http://sourceforge.net/project/showfiles.php?group_id=1369&package_id=175103\n\nIssue created by migration from https://trac.sagemath.org/ticket/912\n\n",
     "created_at": "2007-10-17T08:16:11Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "create a new spkg for numpy version 1.0.3.1 and TEST",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/912",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/912
 
 ---
 
-archive/issue_comments_005603.json:
+archive/issue_comments_005585.json:
 ```json
 {
     "body": "We updated to 1.0.4 a while ago, so close this now as fixed.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-01T22:26:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/912",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/912#issuecomment-5603",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/912#issuecomment-5585",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +49,15 @@ Michael
 
 ---
 
-archive/issue_comments_005604.json:
+archive/issue_comments_005586.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-01T22:26:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/912",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/912#issuecomment-5604",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/912#issuecomment-5586",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

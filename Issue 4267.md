@@ -6,15 +6,13 @@ archive/issues_004267.json:
     "body": "Assignee: boothby\n\nHere are patches and spkgs to make most of the javascript applications we ship into spkgs instead of directories in the extcode repository.  This will facilitate updating these spkgs and makes things cleaner anyways.\n\nI took the opportunity to upgrade each package to the lastest version while I was at it.  This affects the interact look and feel, since the new default theme for jqueryUI is different.  I chose a few colors and things, but of course, things are up for debate.  Let's not let bikeshedding get in the way of these patches, though; we can always make a follow-up patch that changes the theme very easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4267\n\n",
     "created_at": "2008-10-12T02:15:25Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Make javascript packages spkgs instead of part of the extcode repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4267",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: boothby
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4267
 
 ---
 
-archive/issue_comments_031118.json:
+archive/issue_comments_031056.json:
 ```json
 {
     "body": "The spkgs are at:\n\nhttp://sage.math.washington.edu/home/jason/notebook/jquery-1.2.6.spkg (standard spkgs)\n\nhttp://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6rc2.spkg (standard spkgs)\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-3.6a.spkg (standard spkgs)\n\nhttp://sage.math.washington.edu/home/jason/notebook/jsmath-image-fonts-1.3p0.spkg (optional spkgs)\n\nhttp://sage.math.washington.edu/home/jason/notebook/tinyMCE-3.2.0.2.spkg (still under consideration)\n\nThe last package, tinyMCE, is still under consideration for inclusion.  The others have been accepted into either the standard or optional spkg groups.",
     "created_at": "2008-10-12T02:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31118",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31056",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -61,15 +59,15 @@ The last package, tinyMCE, is still under consideration for inclusion.  The othe
 
 ---
 
-archive/issue_comments_031119.json:
+archive/issue_comments_031057.json:
 ```json
 {
     "body": "Jason,\n\nthe extcode patch is *huge* and should not be attached, but should be posted via some link.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-12T07:27:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31119",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31057",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +83,15 @@ Michael
 
 ---
 
-archive/issue_comments_031120.json:
+archive/issue_comments_031058.json:
 ```json
 {
     "body": "Jason,\n\nthe patch is now at\n\nhttp://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages.patch\n\nEither way, we should seriously consider resetting the extcode repo since the history is huge and there is relatively little benefit to keep it around considering the size.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-12T08:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31120",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31058",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +111,15 @@ Michael
 
 ---
 
-archive/issue_comments_031121.json:
+archive/issue_comments_031059.json:
 ```json
 {
     "body": "Apply only edit-in-place-and-javascript-spkgs.patch.  Ignore the make-javascript-spkgs.patch file.\n\nNote that the edit-in-place... patch also resolves #4255.\n\nI also took the opportunity to clean up some of the javascript code in js.py to use jquery instead of custom code, and to note in comments several places where we could use jquery further to possibly simplify our code or make our code better.",
     "created_at": "2008-10-18T04:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31121",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31059",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -135,15 +133,15 @@ I also took the opportunity to clean up some of the javascript code in js.py to 
 
 ---
 
-archive/issue_comments_031122.json:
+archive/issue_comments_031060.json:
 ```json
 {
     "body": "This ticket also resolves #4184",
     "created_at": "2008-10-18T04:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31122",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31060",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -153,15 +151,15 @@ This ticket also resolves #4184
 
 ---
 
-archive/issue_comments_031123.json:
+archive/issue_comments_031061.json:
 ```json
 {
     "body": "This ticket also resolves #3767.",
     "created_at": "2008-10-18T04:15:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31123",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31061",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -171,15 +169,15 @@ This ticket also resolves #3767.
 
 ---
 
-archive/issue_comments_031124.json:
+archive/issue_comments_031062.json:
 ```json
 {
     "body": "Updated the edit-in-place patch to fix two bugs.",
     "created_at": "2008-10-18T07:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31124",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31062",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -189,15 +187,15 @@ Updated the edit-in-place patch to fix two bugs.
 
 ---
 
-archive/issue_comments_031125.json:
+archive/issue_comments_031063.json:
 ```json
 {
     "body": "Attachment [edit-in-place-and-javascript-spkgs.patch](tarball://root/attachments/some-uuid/ticket4267/edit-in-place-and-javascript-spkgs.patch) by @jasongrout created at 2008-10-18 07:55:10\n\nApply only this patch from here and the extcode patch from the coments below.",
     "created_at": "2008-10-18T07:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31125",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31063",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -209,15 +207,15 @@ Apply only this patch from here and the extcode patch from the coments below.
 
 ---
 
-archive/issue_comments_031126.json:
+archive/issue_comments_031064.json:
 ```json
 {
     "body": "Fixed two more bugs and made sure that applying the edit-in-place patch, the extcode patch from mabshoff's comment, and installing the spkgs above makes this all work on Sage 3.1.4.",
     "created_at": "2008-10-18T07:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31126",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31064",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -227,15 +225,15 @@ Fixed two more bugs and made sure that applying the edit-in-place patch, the ext
 
 ---
 
-archive/issue_comments_031127.json:
+archive/issue_comments_031065.json:
 ```json
 {
     "body": "I've updated the jqueryui spkg to the most recent svn version, which fixes some bugs in rc2.  The jqueryui spkg is here:\n\nhttp://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg",
     "created_at": "2008-10-19T02:30:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31127",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31065",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -247,15 +245,15 @@ http://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg
 
 ---
 
-archive/issue_comments_031128.json:
+archive/issue_comments_031066.json:
 ```json
 {
     "body": "I'm having problems getting this to work, maybe because I'm still using the install that I tested #4255 on.  I applied the edit-in-place-and-javascript-spkgs.patch, which went OK, and the jqueryui-1.6r807svn.spkg, but I had only failures trying to install the extcode patch.  \nAfter doing the above, I ran the notebook and couldn't even evaluate a cell.  I guess I will try again on a virgin 3.1.3 or 3.1.4.  A clarification of what order to do what spkgs and patches would be good though.",
     "created_at": "2008-10-19T03:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31128",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31066",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -266,15 +264,15 @@ After doing the above, I ran the notebook and couldn't even evaluate a cell.  I 
 
 ---
 
-archive/issue_comments_031129.json:
+archive/issue_comments_031067.json:
 ```json
 {
     "body": "See #2113 if you're worried about how much stuff is sent to the browser.  That patch implements gzip compression for all javascript automatically (if the destination isn't a localhost).",
     "created_at": "2008-10-19T05:12:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31129",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31067",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -284,15 +282,15 @@ See #2113 if you're worried about how much stuff is sent to the browser.  That p
 
 ---
 
-archive/issue_comments_031130.json:
+archive/issue_comments_031068.json:
 ```json
 {
     "body": "I tried this again on a brand-new 3.1.4, and the extcode patch fails to apply, with man y statements like:\n\n```\nunable to find 'notebook/javascript/jqueryui/datepicker/i18n/ui.datepicker-hu.js' for patching\nunable to find 'notebook/javascript/jsmath/extensions/bbox.js' for patching\n```\n",
     "created_at": "2008-10-19T13:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31130",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31068",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -308,15 +306,15 @@ unable to find 'notebook/javascript/jsmath/extensions/bbox.js' for patching
 
 ---
 
-archive/issue_comments_031131.json:
+archive/issue_comments_031069.json:
 ```json
 {
     "body": "OK, I applied using hg in extcode and it worked.  When I show() something, it tells me to download the jsmath fonts with a hyperlink, and when I click on the link I get:\n\n```\nNot Found\n\nThe requested URL /sage//jsmath was not found on this server. \n```\n\n\nI did install the spkgs provided on this ticket.",
     "created_at": "2008-10-19T13:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31131",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31069",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -335,15 +333,15 @@ I did install the spkgs provided on this ticket.
 
 ---
 
-archive/issue_comments_031132.json:
+archive/issue_comments_031070.json:
 ```json
 {
     "body": "The shift-click for making a new text cell does not appear to work, although I do get the tinymce editor when double-clicking existing cells.",
     "created_at": "2008-10-19T13:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31132",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31070",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -353,15 +351,15 @@ The shift-click for making a new text cell does not appear to work, although I d
 
 ---
 
-archive/issue_comments_031133.json:
+archive/issue_comments_031071.json:
 ```json
 {
     "body": "I have a brand-new 3.1.4 install as well.  The extcode patch applies perfectly for me when I do the following, so something seems odd.  The patch just deletes a bunch of directories for cleanup purposes; applying the extcode patch should not change any functionality.\n\n\n```\ncd sage/data/extcode\nwget http://sage.math.washington.edu/home/mabshoff/extcode-remove-javascript-packages.patch\nhg qinit\nhg qimport extcode-remove-javascript-packages.patch\nhg qpush\n```\n\n\nI then also applied the edit-in-place-and-javascript-spkgs.patch patch from above to the main sage repository.\n\nI then installed all the packages (except the jsmath-image-fonts one) from http://sage.math.washington.edu/home/jason/notebook/.  I used \"sage -f <package>.spkg\" to install these to make sure to overwrite the current package.\n\nI then did sage -br\n\nThen I started the notebook and everything seemed to work great (including the shift-click).  What browser are you using?  I'm using FF 3.0.1 on Ubuntu 8.04.",
     "created_at": "2008-10-20T19:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31133",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31071",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -389,15 +387,15 @@ Then I started the notebook and everything seemed to work great (including the s
 
 ---
 
-archive/issue_comments_031134.json:
+archive/issue_comments_031072.json:
 ```json
 {
     "body": "OK, that worked for me.  I was doing things in a different order, and somehow that caused some problems.\n\nThis seems to work well.  Something in the javascript changes seems to change the appearance of the `@`interact sliders, and I liked the old ones better, but I don't think thats important enough to object to this.  Other people might be more passionate about it.  I think this enhanced editing will be very useful for using the notebook in designing labs and for students writing up such labs.",
     "created_at": "2008-10-21T04:17:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31134",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31072",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -409,15 +407,15 @@ This seems to work well.  Something in the javascript changes seems to change th
 
 ---
 
-archive/issue_comments_031135.json:
+archive/issue_comments_031073.json:
 ```json
 {
     "body": "The upgrade to the newest version of jqueryui changed the default theme.  It would be very easy to change back, or to design a new theme (with different colors, etc.).\n\nIf there is enough people wanting it, I will include the old theme as the default theme.  I don't really have a preference, though I think I do like the old sliders better.  It was easier to feel like you were moving them to a precise value since they weren't so big.\n\nWould it be enough to just change the slider image back to the old image?",
     "created_at": "2008-10-21T14:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31135",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31073",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -431,15 +429,15 @@ Would it be enough to just change the slider image back to the old image?
 
 ---
 
-archive/issue_comments_031136.json:
+archive/issue_comments_031074.json:
 ```json
 {
     "body": "apply on top of the previous edit-...patch",
     "created_at": "2008-10-21T15:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31136",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31074",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -449,15 +447,15 @@ apply on top of the previous edit-...patch
 
 ---
 
-archive/issue_comments_031137.json:
+archive/issue_comments_031075.json:
 ```json
 {
     "body": "Attachment [javascript-ajax-escaping.patch](tarball://root/attachments/some-uuid/ticket4267/javascript-ajax-escaping.patch) by mhampton created at 2008-10-21 15:51:17\n\nIf its easy to do I think we should keep the old theme, for consistency.",
     "created_at": "2008-10-21T15:51:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31137",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31075",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -469,15 +467,15 @@ If its easy to do I think we should keep the old theme, for consistency.
 
 ---
 
-archive/issue_comments_031138.json:
+archive/issue_comments_031076.json:
 ```json
 {
     "body": "I'm gonna test the snot out of this later today.  I'll be happy to see my old ajax code go, but this needs to be heavily tested on every platform.",
     "created_at": "2008-10-21T18:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31138",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31076",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -487,15 +485,15 @@ I'm gonna test the snot out of this later today.  I'll be happy to see my old aj
 
 ---
 
-archive/issue_comments_031139.json:
+archive/issue_comments_031077.json:
 ```json
 {
     "body": "There seems to be a problem inserting new cells in Safari after focus has shifted to and from another application.  Reloading the page fixes this but its a bug.",
     "created_at": "2008-10-21T18:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31139",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31077",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -505,15 +503,15 @@ There seems to be a problem inserting new cells in Safari after focus has shifte
 
 ---
 
-archive/issue_comments_031140.json:
+archive/issue_comments_031078.json:
 ```json
 {
     "body": "Thanks for the extensive testing!",
     "created_at": "2008-10-21T20:26:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31140",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31078",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -523,15 +521,15 @@ Thanks for the extensive testing!
 
 ---
 
-archive/issue_comments_031141.json:
+archive/issue_comments_031079.json:
 ```json
 {
     "body": "Attachment [flora.patch](tarball://root/attachments/some-uuid/ticket4267/flora.patch) by @jasongrout created at 2008-10-22 00:15:32\n\nThe flora.patch should be applied on top of the previous patches and switches the default theme back to flora (the old theme).  I've also updated the http://sage.math.washington.edu/home/jason/notebook/jqueryui-1.6r807svn.spkg to contain this theme (and I ported the modifications that we made to it as well).",
     "created_at": "2008-10-22T00:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31141",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31079",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -543,15 +541,15 @@ The flora.patch should be applied on top of the previous patches and switches th
 
 ---
 
-archive/issue_comments_031142.json:
+archive/issue_comments_031080.json:
 ```json
 {
     "body": "On the Mac SHIFT-ENTER and other keys stop working.",
     "created_at": "2008-10-31T03:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31142",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31080",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -561,15 +559,15 @@ On the Mac SHIFT-ENTER and other keys stop working.
 
 ---
 
-archive/issue_comments_031143.json:
+archive/issue_comments_031081.json:
 ```json
 {
     "body": "I applied the extcode patch, edit-in-place-and-javascript-spkgs.patch, and flora.patch, and installed the jquery, jqueryui, jsmath, jsmath-image-fonts, and tinyMCE spkgs, all against 3.2.alpha2 on amd64 Ubuntu 8.10. I'm accessing the notebook using Firefox 3.0.3. First, the good news:\n\n* the tinyMCE stuff works well. I generally hate those sort of editing thingys, but shift-clicking for text entry and using tinyMCE works and is less annoying than I thought it would be.\n* ``@`interact` works well and seems a bit faster than before. I don't know if that's because of anything from this ticket, though.\n\nOkay, now for bad news. :)\n\n* If I start typing \"`plot(bess`\" into a cell and hit tab to complete, I get \"`plot%28bess`\"\n* If I type \"`plot(`\" and hit tab, I get \"`plot%3F`\".\n* I also sometimes see the problems that [comment:21 mhampton reports] with inserting new cells.\n* I haven't figured out what does this, but frequently it gets stuck: there's the light green bar below a cell for something that's being evaluated, but there's no \\/\\/\\/ blinky in the title. I can't do anything at that point other than quit -- interrupting, restarting, etc don't have any effect.\n\nI tried with IE7 (in an XP virtual machine) and got the same tab-completion problems, but not the other problems.",
     "created_at": "2008-11-03T08:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31143",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31081",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -591,15 +589,15 @@ I tried with IE7 (in an XP virtual machine) and got the same tab-completion prob
 
 ---
 
-archive/issue_comments_031144.json:
+archive/issue_comments_031082.json:
 ```json
 {
     "body": "Thanks.  The tab completion should be an easy fix (I think I already fixed it, but apparently somehow the update didn't make it to trac.)  As for the stuck problem, I have an idea, but not the time immediately to work on it.  I'll probably have more time later this week.\n\nThanks for testing!",
     "created_at": "2008-11-03T12:32:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31144",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31082",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -611,15 +609,15 @@ Thanks for testing!
 
 ---
 
-archive/issue_comments_031145.json:
+archive/issue_comments_031083.json:
 ```json
 {
     "body": "I like the idea of this patch.  However, it claims to \"Make javascript packages spkgs\" -- but in addition to that, it touches a huge amount of non-package javascript, adds a new editor, etc.  It introduces a number of bugs which have proven very difficult to even attempt to fix.  Please factor out the new code and move it to different tickets.",
     "created_at": "2008-11-03T19:56:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31145",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31083",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -629,15 +627,15 @@ I like the idea of this patch.  However, it claims to "Make javascript packages 
 
 ---
 
-archive/issue_comments_031146.json:
+archive/issue_comments_031084.json:
 ```json
 {
     "body": "Good point. I originally had separate tickets, but the patches all got intertangled and mixed up.\n\nI think it might be easier to fix the bugs in the current code than to separate it out into several tickets again.  If I need to separate it out again, it will probably be at least several weeks before I can get it done.  If fixing the bugs turns out to be the things I think are happening I can probably have it done a lot sooner.",
     "created_at": "2008-11-03T20:20:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31146",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31084",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -649,15 +647,15 @@ I think it might be easier to fix the bugs in the current code than to separate 
 
 ---
 
-archive/issue_comments_031147.json:
+archive/issue_comments_031085.json:
 ```json
 {
     "body": "> I think it might be easier to fix the bugs in the current code than to separate it out > into several tickets again.\n\nIt might be easier for you to fix the known bugs, but it won't be easier for Tom to review the result, especially the lack of a good testing framework for the notebook.  Patch bombs are bad, especially wrt the notebook.   I thus hope you can separate things out some more.  Maybe just do one easy thing now?\n\nWilliam",
     "created_at": "2008-11-04T23:23:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31147",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31085",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -671,15 +669,15 @@ William
 
 ---
 
-archive/issue_comments_031148.json:
+archive/issue_comments_031086.json:
 ```json
 {
     "body": "Again, good point.  I'll work on teasing out things one at a time here as I have time.",
     "created_at": "2008-11-05T00:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31148",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31086",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -689,15 +687,15 @@ Again, good point.  I'll work on teasing out things one at a time here as I have
 
 ---
 
-archive/issue_comments_031149.json:
+archive/issue_comments_031087.json:
 ```json
 {
     "body": "#4674 is also relevant here.",
     "created_at": "2008-12-02T16:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31149",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31087",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -707,15 +705,15 @@ archive/issue_comments_031149.json:
 
 ---
 
-archive/issue_comments_031150.json:
+archive/issue_comments_031088.json:
 ```json
 {
     "body": "As noted on #4674, this should be broken into four tickets:\n\n1. Make all the existing javascript code spkgs\n2. Various jquery-related cleanups of the javascript code\n3. Add TinyMCE as an (optional?) spkg\n4. Make the shift-click work (in-place wysiwyg editing).",
     "created_at": "2008-12-04T18:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31150",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31088",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -730,15 +728,15 @@ As noted on #4674, this should be broken into four tickets:
 
 ---
 
-archive/issue_comments_031151.json:
+archive/issue_comments_031089.json:
 ```json
 {
     "body": "Changing assignee from boothby to @jasongrout.",
     "created_at": "2008-12-04T18:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31151",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31089",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -748,15 +746,15 @@ Changing assignee from boothby to @jasongrout.
 
 ---
 
-archive/issue_comments_031152.json:
+archive/issue_comments_031090.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-04T18:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31152",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31090",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -766,15 +764,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_031153.json:
+archive/issue_comments_031091.json:
 ```json
 {
     "body": "This was split up into #4700, #4705, and #4705, so it is invalid as-is.",
     "created_at": "2008-12-05T01:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31153",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31091",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -784,15 +782,15 @@ This was split up into #4700, #4705, and #4705, so it is invalid as-is.
 
 ---
 
-archive/issue_comments_031154.json:
+archive/issue_comments_031092.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-12-05T01:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31154",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31092",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -802,15 +800,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_031155.json:
+archive/issue_comments_031093.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2009-01-19T08:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31155",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31093",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -820,15 +818,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_031156.json:
+archive/issue_comments_031094.json:
 ```json
 {
     "body": "Ok, the patch \n\ntrac_4267_extcode-remove-javascript-packages.patch\n\nis still relevant and I am giving it a positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-19T08:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31156",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31094",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -846,15 +844,15 @@ Michael
 
 ---
 
-archive/issue_comments_031157.json:
+archive/issue_comments_031095.json:
 ```json
 {
     "body": "Resolution changed from invalid to ",
     "created_at": "2009-01-19T08:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31157",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31095",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -864,15 +862,15 @@ Resolution changed from invalid to
 
 ---
 
-archive/issue_comments_031158.json:
+archive/issue_comments_031096.json:
 ```json
 {
     "body": "Merged trac_4267_extcode-remove-javascript-packages.patch in Sage 3.3.alpha0",
     "created_at": "2009-01-19T08:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31158",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31096",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -882,15 +880,15 @@ Merged trac_4267_extcode-remove-javascript-packages.patch in Sage 3.3.alpha0
 
 ---
 
-archive/issue_comments_031159.json:
+archive/issue_comments_031097.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-19T08:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31159",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4267#issuecomment-31097",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

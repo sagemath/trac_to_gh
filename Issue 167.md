@@ -6,15 +6,13 @@ archive/issues_000167.json:
     "body": "Assignee: @williamstein\n\n(1) put the date of each SAGE release in the source download list.\n\nIssue created by migration from https://trac.sagemath.org/ticket/167\n\n",
     "created_at": "2006-11-07T09:51:07Z",
     "labels": [
-        "algebraic geometry",
-        "major",
-        "enhancement"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "sage web site fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/167",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/167
 
 ---
 
-archive/issue_comments_000748.json:
+archive/issue_comments_000745.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to user interface.",
     "created_at": "2006-11-07T09:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-748",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-745",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +45,15 @@ Changing component from algebraic geometry to user interface.
 
 ---
 
-archive/issue_comments_000749.json:
+archive/issue_comments_000746.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2006-11-07T09:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-749",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-746",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +63,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_000750.json:
+archive/issue_comments_000747.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-22T19:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-750",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-747",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +81,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000751.json:
+archive/issue_comments_000748.json:
 ```json
 {
     "body": "As seen at http://sage.math.washington.edu/sage/dist/src/index.html this has been done.\n\nMy guess is that the credit goes to was.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-22T19:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/167",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-751",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/167#issuecomment-748",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

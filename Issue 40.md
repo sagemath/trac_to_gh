@@ -6,14 +6,13 @@ archive/issues_000040.json:
     "body": "Assignee: somebody\n\n\n```\nTo: \"Kyle Schalm\" <kschalm@math.utexas.edu>, sage-devel@lists.sourceforge.net\nSubject: Re: [SAGEdev] long string parsing bug in 1.3.2.2\n\nThe SAGE pre-parser currently works on single lines only -- it doesn't\ntake into account multi-line blocks.  This is more a\nnot-implemented-error than a bug.  Many thanks for sending this email\nthough, since it's an excellent test case:\nmm.sage:\n---------------------\n\"\"\"\nload with\n \nsage: load \"/Users/kyle/Documents/math/scripts/mm.sage\"\n\"\"\"\n---------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/40\n\n",
     "created_at": "2006-09-12T23:31:32Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "preparser issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/40",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/40
 
 ---
 
-archive/issue_comments_000250.json:
+archive/issue_comments_000249.json:
 ```json
 {
     "body": "I can't find this mm.sage example any more.  Moreover, the preparser does work\non multiple lines, so won't fix until get a proper bug report.",
     "created_at": "2007-01-12T21:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/40",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-250",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-249",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +64,15 @@ on multiple lines, so won't fix until get a proper bug report.
 
 ---
 
-archive/issue_comments_000251.json:
+archive/issue_comments_000250.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2007-01-12T21:57:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/40",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-251",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-250",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -83,15 +82,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_000252.json:
+archive/issue_comments_000251.json:
 ```json
 {
     "body": "Changing component from basic arithmetic to user interface.",
     "created_at": "2007-01-21T04:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/40",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-252",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-251",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -101,15 +100,15 @@ Changing component from basic arithmetic to user interface.
 
 ---
 
-archive/issue_comments_000253.json:
+archive/issue_comments_000252.json:
 ```json
 {
     "body": "I found that loading files with triple quoted multiline strings would break.\nNow fixed:\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169354692 28800\n# Node ID 9b38891949ca0db4e3df5592611a741f8b58568d\n# Parent  19cc21de721be8ea5985cf1319582e1ab7dc2820\nFinally fixed multiline preparser issue for command line.\n\ndiff -r 19cc21de721b -r 9b38891949ca sage/misc/interpreter.py\n--- a/sage/misc/interpreter.py  Fri Jan 19 22:49:10 2007 -0800\n+++ b/sage/misc/interpreter.py  Sat Jan 20 20:44:52 2007 -0800\n@@ -248,7 +248,7 @@ def do_prefilter_paste(line, continuatio\n                     ipmagic(L)\n                 L = ''\n             else:\n-                L = preparser_ipython.preparse_ipython(L)\n+                L = preparser_ipython.preparse_ipython(L, not continuation)\n             __IPYTHON__.input_hist.append(L)\n             __IPYTHON__.push(L)\n         log.offset += 1\n@@ -343,7 +343,7 @@ def do_prefilter_paste(line, continuatio\n         else:\n             raise ImportError, \"Attaching of '%s' not implemented (load .py, .spyx, and .sage files)\"%name\n     if len(line) > 0:\n-        line = preparser_ipython.preparse_ipython(line)\n+        line = preparser_ipython.preparse_ipython(line, not continuation)\n     return line\n \n def load_sagex(name):\n```\n",
     "created_at": "2007-01-21T04:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/40",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-253",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/40#issuecomment-252",
+    "user": "https://github.com/williamstein"
 }
 ```
 

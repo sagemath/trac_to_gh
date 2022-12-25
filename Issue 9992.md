@@ -6,7 +6,7 @@ archive/issues_009992.json:
     "body": "Assignee: drkirkby\n\nCC:  @jdemeyer\n\nSingular is not building properly on the following hardware. If any Singular developer wants access to AIX to debug this, I can provide it. \n\n == Hardware and software ==\n* IBM [RS/6000 7025 F50](http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.pseries.doc/hardware_docs/rs6000_7025f50series.htm)\n* 4 x 332 MHz 32-bit PowerPC CPUs\n* 3 GB RAM\n* A fairly wide mixture of disks sizes (3 x 9 GB, 1 x 18 GB, 2 x 36 GB and 1 x 73 GB)\n* DDS-4 tape drive \n* AIX 5.3 (A POSIX certified operating system)\n* gcc 4.2.4 downloaded from [pware](http://pware.hvcc.edu/)\n* sage-4.6.alpha1 (which has singular-3-1-1-4.p2)\n\n == The Problem ==\nAs note, Singular fails to build. I see this *error* a couple of times, but it does not abort the build. \n\n\n```\n/opt/pware/lib/gcc/powerpc-ibm-aix5.3.0.0/4.2.4/../../../../include/c++/4.2.4/bits/ios_base.h:187: error: 'SEEK_CUR' was not declared in this scope\n```\n\n\nIf eventually ends with:\n\n\n```\npolys-impl.h:177:1: warning: \"pPolyAssumeReturn\" redefined\npolys-impl.h:176:1: warning: this is the location of the previous definition\nmake[4]: Target `install' not remade because of errors.\nmake[4]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p2/src/kernel'\nmake[3]: *** [install] Error 1\nmake[3]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p2/src'\nmake[2]: *** [/home/users/drkirkby/sage-4.6.alpha1/local/bin/Singular-3-1-1] Error 2\nmake[2]: Leaving directory `/home/users/drkirkby/sage-4.6.alpha1/spkg/build/singular-3-1-1-4.p2/src'\nUnable to build Singular.\n\nreal    120m55.494s\nuser    164m57.036s\nsys     2m3.365s\nsage: An error occurred while installing singular-3-1-1-4.p2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9993\n\n",
     "created_at": "2010-09-24T00:39:19Z",
     "labels": [
-        "porting: AIX or HP-UX",
+        "component: porting: aix or hp-ux",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009992.json:
     "title": "Singular fails to build on AIX 5.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9992",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -71,15 +71,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9993
 
 ---
 
-archive/issue_comments_100417.json:
+archive/issue_comments_100251.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2016-09-02T08:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9992#issuecomment-100417",
-    "user": "@jm58660"
+    "url": "https://github.com/sagemath/sagetest/issues/9992#issuecomment-100251",
+    "user": "https://github.com/jm58660"
 }
 ```
 
@@ -89,15 +89,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_100418.json:
+archive/issue_comments_100252.json:
 ```json
 {
     "body": "Refers to old AIX and old Singular --> close?",
     "created_at": "2016-09-02T08:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9992#issuecomment-100418",
-    "user": "@jm58660"
+    "url": "https://github.com/sagemath/sagetest/issues/9992#issuecomment-100252",
+    "user": "https://github.com/jm58660"
 }
 ```
 
@@ -107,15 +107,15 @@ Refers to old AIX and old Singular --> close?
 
 ---
 
-archive/issue_comments_100419.json:
+archive/issue_comments_100253.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2016-09-02T08:35:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9992",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9992#issuecomment-100419",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9992#issuecomment-100253",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

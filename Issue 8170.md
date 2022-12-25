@@ -6,7 +6,7 @@ archive/issues_008170.json:
     "body": "Assignee: joyner\n\nThere is an inconsistency in matrix groups\n(sage/groups/matrix_gps/matrix_group()):\nThe method character_table() is missing, whereas it is present\nfor permutation groups\n(sage/groups/perm_gps/permgroup.py)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8170\n\n",
     "created_at": "2010-02-03T12:53:15Z",
     "labels": [
-        "group theory",
+        "component: group theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008170.json:
     "title": "character_table() missing for matrix groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8170",
-    "user": "@dimpase"
+    "user": "https://github.com/dimpase"
 }
 ```
 Assignee: joyner

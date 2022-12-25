@@ -6,15 +6,14 @@ archive/issues_009097.json:
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies f.r.bissey@massey.ac.nz\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## The problem\n\n\n```\n#error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\n*** TOUCHING ALL CYTHON (.pyx) FILES ***\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nBuilding Sage on Solaris in 64-bit mode\nCreating SAGE_LOCAL/lib/sage-64.txt since it does not exist\nDetected SAGE64 flag\nBuilding Sage on Solaris in 64-bit mode\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\ngcc -o src/interrupt.pic.o -c -fPIC -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include/python2.6 -I/export/home/drkirkby/sage-4.4.2/local/include/NTL -Iinclude src/interrupt.c\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/python2.6/Python.h:58,\n                 from include/stdsage.h:35,\n                 from src/interrupt.c:12:\n/export/home/drkirkby/sage-4.4.2/local/include/python2.6/pyport.h:685:2: error: #error \"LONG_BIT definition appears wrong for platform (bad gcc/glibc config?).\"\nscons: *** [src/interrupt.pic.o] Error 1\nERROR: There was an error building c_lib.\n\nERROR installing SAGE\n\nreal\t0m4.020s\nuser\t0m1.014s\nsys\t0m2.138s\nsage: An error occurred while installing sage-4.4.2\n```\n\n\n## Likely cause\nIt looks as though the -m64 option is not getting through to the library. Since that uses SCons to build, and I don't understand SCons (and very few people seem to), this could be a pig to fix. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9097\n\n",
     "created_at": "2010-05-31T00:49:01Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "c_lib in Sage library fails to build on OpenSolaris x64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9097",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -94,15 +93,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9097
 
 ---
 
-archive/issue_comments_084519.json:
+archive/issue_comments_084383.json:
 ```json
 {
     "body": "Mercurial patch which adds -m64 when building c_lib.",
     "created_at": "2010-06-14T17:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84519",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84383",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -112,15 +111,15 @@ Mercurial patch which adds -m64 when building c_lib.
 
 ---
 
-archive/issue_comments_084520.json:
+archive/issue_comments_084384.json:
 ```json
 {
     "body": "Attachment [c_lib.patch](tarball://root/attachments/some-uuid/ticket9097/c_lib.patch) by drkirkby created at 2010-06-14 17:30:05\n\nThis is not a complete fix which enables the library to build, but it adds the flag -m64 on all platforms except OS X. (On OS X the flag is already added, but along with some other flags which I don't understand, and for now are best left). \n\nDave",
     "created_at": "2010-06-14T17:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84520",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84384",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -134,15 +133,15 @@ Dave
 
 ---
 
-archive/issue_comments_084521.json:
+archive/issue_comments_084385.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-14T17:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84521",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84385",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -152,15 +151,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_084522.json:
+archive/issue_comments_084386.json:
 ```json
 {
     "body": "Log file of building on OpenSolaris x64. The section where files are extracted from the tar file have been removed to save space.",
     "created_at": "2010-07-01T00:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84522",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84386",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -170,15 +169,15 @@ Log file of building on OpenSolaris x64. The section where files are extracted f
 
 ---
 
-archive/issue_comments_084523.json:
+archive/issue_comments_084387.json:
 ```json
 {
     "body": "Attachment [sage-4.5.alpha1.log](tarball://root/attachments/some-uuid/ticket9097/sage-4.5.alpha1.log) by drkirkby created at 2010-07-01 00:09:43\n\nI'm attaching a log file which shows that this patch allows the build progress to go a long way. The log file for the build of the library `spkg/logs/sage-4.5.alpha1.log` is 958 KB in size, so clearly this gets a long way, where without the 4 lines\n\n\n```\nif env['PLATFORM'] != \"darwin\" and os.environ['SAGE64']==\"yes\": \n    env.Append( CFLAGS=\"-O2 -g -m64\" ) \n    env.Append( CXXFLAGS=\"-O2 -g -m64\" ) \n    env.Append( LINKFLAGS=\"-m64\" ) \n```\n\n\nthe build fails after only 40 lines or so. \n\nThere are some remaining issues to resolve, but this patch, which is only implemented if SAGE64 is set to yes and the operating system is **not** OS X, goes a long way towards helping a 64-bit port to OpenSolaris. \n\nDave",
     "created_at": "2010-07-01T00:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84523",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84387",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -205,15 +204,15 @@ Dave
 
 ---
 
-archive/issue_comments_084524.json:
+archive/issue_comments_084388.json:
 ```json
 {
     "body": "I think the patch does the job. But I want to suggest the following patch (sorry I\nhave broken browsers right now because of a messy libpng update and I cannot use the\nattachment form):\n\n\n```\n--- SConstruct.orig\t2010-05-26 12:13:50.000000000 +1200\n+++ SConstruct\t2010-07-01 13:28:53.605754354 +1200\n@@ -105,15 +105,15 @@\n ## The other two options control the way the linker creates a namespace\n ## for the dynamic library; check the man page for ld on a mac to see\n ## the details.\n+if os.environ['SAGE64']==\"yes\":\n+    # We want the debug and optimization flags, since debug symbols are so useful, etc.\n+    print \"MacIntel in 64 bit mode\"\n+    env.Append( CFLAGS=\"-O2 -g -m64\" )\n+    env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n+    env.Append( LINKFLAGS=\"-m64\" )\n+\n if env['PLATFORM']==\"darwin\":\n-    if os.environ['SAGE64']==\"yes\":\n-        # We want the debug and optimization flags, since debug symbols are so useful, etc.\n-        print \"MacIntel in 64 bit mode\"\n-        env.Append( CFLAGS=\"-O2 -g -m64\" )\n-        env.Append( CXXFLAGS=\"-O2 -g -m64\" )\n-        env.Append( LINKFLAGS=\"-m64 -single_module -flat_namespace -undefined dynamic_lookup\" )\n-    else:\n-        env.Append( LINKFLAGS=\"-single_module -flat_namespace -undefined dynamic_lookup\" )\n+    env.Append( LINKFLAGS=\"-single_module -flat_namespace -undefined dynamic_lookup\" )\n \n # SCons doesn't automatically pull in system environment variables\n # However, we only need SAGE_LOCAL, so that's easy.\n```\n\nI think this simplify the logic. The building of extension afterwards is separate.",
     "created_at": "2010-07-01T01:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84524",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84388",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -257,15 +256,15 @@ I think this simplify the logic. The building of extension afterwards is separat
 
 ---
 
-archive/issue_comments_084525.json:
+archive/issue_comments_084389.json:
 ```json
 {
     "body": "Changing assignee from drkirkby to @kiwifb.",
     "created_at": "2010-07-01T01:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84525",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84389",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -275,15 +274,15 @@ Changing assignee from drkirkby to @kiwifb.
 
 ---
 
-archive/issue_comments_084526.json:
+archive/issue_comments_084390.json:
 ```json
 {
     "body": "Cleaner and proper patch with the same ideas previously shown",
     "created_at": "2010-07-01T09:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84526",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84390",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -293,15 +292,15 @@ Cleaner and proper patch with the same ideas previously shown
 
 ---
 
-archive/issue_comments_084527.json:
+archive/issue_comments_084391.json:
 ```json
 {
     "body": "Attachment [sage_clib64.patch](tarball://root/attachments/some-uuid/ticket9097/sage_clib64.patch) by @kiwifb created at 2010-07-01 09:41:01\n\nNote that the space in\n\n```\nLINKFLAGS=\" -single_module -flat_namespace -undefined dynamic_lookup\"\n```\n\nis on purpose as scons concatenate strings. We don't want to end\nup with \"-m64-single_module\".",
     "created_at": "2010-07-01T09:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84527",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84391",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -320,15 +319,15 @@ up with "-m64-single_module".
 
 ---
 
-archive/issue_comments_084528.json:
+archive/issue_comments_084392.json:
 ```json
 {
     "body": "Thank you. \n\nI've put us both as reviews and both as authors. I understand this is OK. I know I initially asked you to remove me. That looks good. I am just about to test.",
     "created_at": "2010-07-04T21:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84528",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84392",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -340,15 +339,15 @@ I've put us both as reviews and both as authors. I understand this is OK. I know
 
 ---
 
-archive/issue_comments_084529.json:
+archive/issue_comments_084393.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-05T09:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84529",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84393",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -358,15 +357,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_084530.json:
+archive/issue_comments_084394.json:
 ```json
 {
     "body": "Thank you very much. With this, patch applied, along with \n\n* Applying #9399\n* Faking the install of maxima by touching spkg/installed/maxima-$version\n* Faking the install of R by touching /spkg/installed/R-$version\n\nI'm able to get a 64-bit build on OpenSolaris. It does however crash at startup, so the port is not complete! But it is getting pretty close I think. \n\nDave",
     "created_at": "2010-07-05T09:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84530",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84394",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -384,15 +383,15 @@ Dave
 
 ---
 
-archive/issue_comments_084531.json:
+archive/issue_comments_084395.json:
 ```json
 {
     "body": "Since this touch the OSX build as well do we have a tester for OSX \nthat could try it? 32/64 bit should be irrelevant.",
     "created_at": "2010-07-05T10:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84531",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84395",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -403,15 +402,15 @@ that could try it? 32/64 bit should be irrelevant.
 
 ---
 
-archive/issue_comments_084532.json:
+archive/issue_comments_084396.json:
 ```json
 {
     "body": "Replying to [comment:8 fbissey]:\n> Since this touch the OSX build as well do we have a tester for OSX \n> that could try it? 32/64 bit should be irrelevant.\n\nI've tested this on OS X, and it works fine:\n\n\n```\n[kirkby@bsd sage-4.5.alpha1]$ uname -a \nDarwin bsd.local 10.4.0 Darwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386 i386 i386 MacPro1,1 Darwin\n[kirkby@bsd sage-4.5.alpha1]$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: 1+1\n2\nsage: Quit\nExiting Sage (CPU time 0m0.04s, Wall time 0m4.44s).\n[kirkby@bsd sage-4.5.alpha1]$ \n```\n\n| Sage Version 4.5.alpha1, Release Date: 2010-06-29                  |\n| Type notebook() for the GUI, and license() for information.        |\nI agree your solution was cleaner than mine, but the reason I wrote it the way I did, was to guarantee that it could have no effect on OS X. \n\nI've also tested it on Linux (sage.math). \n\nDave",
     "created_at": "2010-07-05T15:58:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84532",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84396",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -452,15 +451,15 @@ Dave
 
 ---
 
-archive/issue_comments_084533.json:
+archive/issue_comments_084397.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-08T19:06:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9097",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84533",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9097#issuecomment-84397",
+    "user": "https://github.com/rlmill"
 }
 ```
 

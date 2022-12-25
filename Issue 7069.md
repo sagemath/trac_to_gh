@@ -6,15 +6,14 @@ archive/issues_007069.json:
     "body": "Assignee: tbd\n\nCC:  @orlitzky @dimpase\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used #7021 \n\n\n```\ntachyon-0.98beta.p9/patches/\ntachyon-0.98beta.p9/patches/Make-arch.patch\ntachyon-0.98beta.p9/patches/Make-arch\ntachyon-0.98beta.p9/spkg-install\ntachyon-0.98beta.p9/.hgignore\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nmake[2]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nmake all \\\n\"ARCH = solaris-pthreads-gcc\" \\\n\"CC = gcc\" \\\n\"CFLAGS = -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS\" \\\n\"AR = ar\" \\\n\"ARFLAGS = r\" \\\n\"STRIP = strip\" \\\n\"LIBS = -L. -ltachyon  -L/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/lib -lpng12 -lz  -lm -lpthread\"\nmake[3]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nBuilding Tachyon Parallel Ray Tracing library\nCopyright 1994-2007, John E. Stone\nAll Rights Reserveed\nMaking architecture directory ../compile/solaris-pthreads-gcc\nMaking library directory ../compile/solaris-pthreads-gcc/libtachyon\nmake ../compile ../compile/solaris-pthreads-gcc ../compile/solaris-pthreads-gcc/libtachyon  ../compile/solaris-pthreads-gcc/libtachyon.a  ../compile/solaris-pthreads-gcc/tachyon\nmake[4]: Entering directory `/export/home/drkirkby/sage/sage-4.1.2.alpha4/spkg/build/tachyon-0.98beta.p9/src/unix'\nmake[4]: Nothing to be done for `../compile'.\nmake[4]: Nothing to be done for `../compile/solaris-pthreads-gcc'.\nmake[4]: Nothing to be done for `../compile/solaris-pthreads-gcc/libtachyon'.\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/api.c -o ../compile/solaris-pthreads-gcc/libtachyon/api.o\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/apigeom.c -o ../compile/solaris-pthreads-gcc/libtachyon/apigeom.o\ngcc -Wall -O6 -fomit-frame-pointer -ffast-math -D_REENTRANT -DSunOS  -DUSEPNG    -I/export/home/drkirkby/sage/sage-4.1.2.alpha4/local/include  -DTHR -DUSEPOSIXTHREADS -c ../src/box.c -o ../compile/solaris-pthreads-gcc/libtachyon/box.o\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7069\n\n",
     "created_at": "2009-09-29T13:06:53Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "tachyon-0.98beta.p9 ignores CC and uses gcc, so can't build with Sun Studio.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7069",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -80,15 +79,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7069
 
 ---
 
-archive/issue_comments_058474.json:
+archive/issue_comments_058364.json:
 ```json
 {
     "body": "Changing component from algebra to solaris.",
     "created_at": "2009-11-09T14:05:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58474",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58364",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -98,15 +97,15 @@ Changing component from algebra to solaris.
 
 ---
 
-archive/issue_comments_058475.json:
+archive/issue_comments_058365.json:
 ```json
 {
     "body": "I think all `$CC` issues were fixed by #9379 and #10681. Can you test on Solaris?",
     "created_at": "2012-02-25T22:43:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58475",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58365",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -116,15 +115,15 @@ I think all `$CC` issues were fixed by #9379 and #10681. Can you test on Solaris
 
 ---
 
-archive/issue_comments_058476.json:
+archive/issue_comments_058366.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58476",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58366",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -134,15 +133,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_058477.json:
+archive/issue_comments_058367.json:
 ```json
 {
     "body": "Outdated, should be closed",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58477",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58367",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -152,15 +151,15 @@ Outdated, should be closed
 
 ---
 
-archive/issue_comments_058478.json:
+archive/issue_comments_058368.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-07-14T16:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7069",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58478",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7069#issuecomment-58368",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

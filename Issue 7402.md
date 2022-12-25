@@ -6,15 +6,13 @@ archive/issues_007402.json:
     "body": "Assignee: boothby\n\nCC:  @qed777\n\n[`pkg_resources`](http://peak.telecommunity.com/DevCenter/PkgResources) is the official way to access data directories in a `setuptools` package. Using `pkg_resources` to locate the `DATA` directory will allow us to use [`.pth` files](http://bob.pythonmac.org/archives/2005/02/06/using-pth-files-for-python-development/) for ease of development. For example:\n\n\n```\n$ pwd\n/home/timdumol/devel/sagenb-0.3.5/src\n$ dev_dir=`pwd`\n$ cd /opt/sage/local/lib/python2.6/site-packages/\n$ rm -r sagenb*\n$ cat \"$dev_dir\" > sagenb.pth\n```\n\n\nThus, there will no longer be a need to `sage -python setup.py install` after every change.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7402\n\n",
     "created_at": "2009-11-06T11:24:02Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "SageNB -- Use `pkg_resources` to locate `DATA` directory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7402",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: boothby
@@ -44,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7402
 
 ---
 
-archive/issue_comments_062280.json:
+archive/issue_comments_062165.json:
 ```json
 {
     "body": "Uses `pkg_resources` to locate the DATA directory.",
     "created_at": "2009-11-06T11:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62280",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62165",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -62,15 +60,15 @@ Uses `pkg_resources` to locate the DATA directory.
 
 ---
 
-archive/issue_comments_062281.json:
+archive/issue_comments_062166.json:
 ```json
 {
     "body": "Attachment [trac_7402-pkg_resources.patch](tarball://root/attachments/some-uuid/ticket7402/trac_7402-pkg_resources.patch) by @TimDumol created at 2009-11-06 11:31:18\n\nThis patch should do it.\n\nAs a note, we won't even need to restart the server if all we edit are template files. A big plus in ease of development, IMHO.",
     "created_at": "2009-11-06T11:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62281",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62166",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -84,15 +82,15 @@ As a note, we won't even need to restart the server if all we edit are template 
 
 ---
 
-archive/issue_comments_062282.json:
+archive/issue_comments_062167.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-06T11:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62282",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62167",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -102,15 +100,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062283.json:
+archive/issue_comments_062168.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"sagenb notebook\".",
     "created_at": "2009-11-06T11:31:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62283",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62168",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -120,15 +118,15 @@ Changing keywords from "" to "sagenb notebook".
 
 ---
 
-archive/issue_comments_062284.json:
+archive/issue_comments_062169.json:
 ```json
 {
     "body": "This works for me.  In particular, the Se test suite is oblivious to the change.\n\nFor me, an existing `site-packages/sagenb` takes precedence over `sagenb.pth`.  Short of deleting the former, can we reverse this?  How about a flag (e.g, `--dev-mode` or `--in-source`) to `sage -python setup.py install` that toggles between \"standard\" and \"developer\" modes?",
     "created_at": "2009-11-13T23:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62284",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62169",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -140,15 +138,15 @@ For me, an existing `site-packages/sagenb` takes precedence over `sagenb.pth`.  
 
 ---
 
-archive/issue_comments_062285.json:
+archive/issue_comments_062170.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-13T23:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62285",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62170",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -158,15 +156,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062286.json:
+archive/issue_comments_062171.json:
 ```json
 {
     "body": "A Sphinx warning to keep in mind:\n\n```\ncopying static files... WARNING: static directory '/home/apps/sage/local/lib/python/site-packages/sagenb/data/jsmath/' does not exist\n```\n",
     "created_at": "2009-11-14T00:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62286",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62171",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -181,15 +179,15 @@ copying static files... WARNING: static directory '/home/apps/sage/local/lib/pyt
 
 ---
 
-archive/issue_comments_062287.json:
+archive/issue_comments_062172.json:
 ```json
 {
     "body": "Replying to [comment:3 mpatel]:\n> A Sphinx warning to keep in mind:\n> {{{\n> copying static files... WARNING: static directory '/home/apps/sage/local/lib/python/site-packages/sagenb/data/jsmath/' does not exist\n> }}}\nSince this is only used for development, I don't think there's much of a problem. It should be possible to fix by making Sphinx read the .pth file and look there, but I am inexperienced regarding that.\n\nRegards the --dev-mode thing, I just noticed that SageNB uses disttools, not setuptools, which is why the `sage -python setup.py develop` command does not exist. This is now #7467.",
     "created_at": "2009-11-15T05:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62287",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62172",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -206,15 +204,15 @@ Regards the --dev-mode thing, I just noticed that SageNB uses disttools, not set
 
 ---
 
-archive/issue_comments_062288.json:
+archive/issue_comments_062173.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-08T05:33:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62288",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7402#issuecomment-62173",
+    "user": "https://github.com/williamstein"
 }
 ```
 

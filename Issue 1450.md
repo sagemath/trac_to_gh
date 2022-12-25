@@ -6,15 +6,14 @@ archive/issues_001450.json:
     "body": "Assignee: tba\n\nThe current error message mentions colinux, and is also has all kinds of remarks about \"buy xxx for thousands of dollars\", which were fun when sage was small, but now seem kind of adolescent. \n\nWilliam\n\nIssue created by migration from https://trac.sagemath.org/ticket/1450\n\n",
     "created_at": "2007-12-10T17:11:21Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "update the error message for using maple / mathmatica from sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1450",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1450
 
 ---
 
-archive/issue_comments_009341.json:
+archive/issue_comments_009316.json:
 ```json
 {
     "body": "Attachment [trac-1450.patch](tarball://root/attachments/some-uuid/ticket1450/trac-1450.patch) by @williamstein created at 2007-12-10 17:13:38",
     "created_at": "2007-12-10T17:13:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9341",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9316",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac-1450.patch](tarball://root/attachments/some-uuid/ticket1450/tra
 
 ---
 
-archive/issue_comments_009342.json:
+archive/issue_comments_009317.json:
 ```json
 {
     "body": "Looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-11T01:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9342",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9317",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +70,15 @@ Michael
 
 ---
 
-archive/issue_comments_009343.json:
+archive/issue_comments_009318.json:
 ```json
 {
     "body": "Merged in 2.9.alpha5.",
     "created_at": "2007-12-11T01:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9343",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9318",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Merged in 2.9.alpha5.
 
 ---
 
-archive/issue_comments_009344.json:
+archive/issue_comments_009319.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-11T01:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9344",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1450#issuecomment-9319",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004428.json:
     "body": "Assignee: @craigcitro\n\nI forgot to close the file handles opened by `popen2` in my fix for #4386. The attached patch cleans this up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4428\n\n",
     "created_at": "2008-11-02T22:35:53Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Forgot to close open files in sage/rings/number_field/totallyreal_phc.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4428",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4428
 
 ---
 
-archive/issue_comments_032546.json:
+archive/issue_comments_032483.json:
 ```json
 {
     "body": "Attachment [trac-4428.patch](tarball://root/attachments/some-uuid/ticket4428/trac-4428.patch) by mabshoff created at 2008-11-04 00:41:53\n\nLooks good to me. Nice catch, sorry I did not catch it during the review of the previous ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-04T00:41:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4428#issuecomment-32546",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4428#issuecomment-32483",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +52,15 @@ Michael
 
 ---
 
-archive/issue_comments_032547.json:
+archive/issue_comments_032484.json:
 ```json
 {
     "body": "Merged in Sage 3.2.alpha3",
     "created_at": "2008-11-04T21:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4428#issuecomment-32547",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4428#issuecomment-32484",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +70,15 @@ Merged in Sage 3.2.alpha3
 
 ---
 
-archive/issue_comments_032548.json:
+archive/issue_comments_032485.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-04T21:33:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4428",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4428#issuecomment-32548",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4428#issuecomment-32485",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

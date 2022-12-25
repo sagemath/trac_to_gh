@@ -6,7 +6,7 @@ archive/issues_004796.json:
     "body": "Assignee: @craigcitro\n\nTitle says it all -- it's a very old todo list, and #4795 now has those feature requests.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4796\n\n",
     "created_at": "2008-12-14T07:56:40Z",
     "labels": [
-        "modular forms",
+        "component: modular forms",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004796.json:
     "title": "Remove bugs.py in sage/modular/modform",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4796",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4796
 
 ---
 
-archive/issue_comments_036356.json:
+archive/issue_comments_036285.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-14T07:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36356",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36285",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -49,15 +49,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_036357.json:
+archive/issue_comments_036286.json:
 ```json
 {
     "body": "Attachment [trac-4796.patch](tarball://root/attachments/some-uuid/ticket4796/trac-4796.patch) by @craigcitro created at 2008-12-14 07:57:37",
     "created_at": "2008-12-14T07:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36357",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36286",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -67,15 +67,15 @@ Attachment [trac-4796.patch](tarball://root/attachments/some-uuid/ticket4796/tra
 
 ---
 
-archive/issue_comments_036358.json:
+archive/issue_comments_036287.json:
 ```json
 {
     "body": "Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-14T08:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36358",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36287",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +89,15 @@ Michael
 
 ---
 
-archive/issue_comments_036359.json:
+archive/issue_comments_036288.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-14T08:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36359",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36288",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +107,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_036360.json:
+archive/issue_comments_036289.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.rc0",
     "created_at": "2008-12-14T08:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4796",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36360",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4796#issuecomment-36289",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

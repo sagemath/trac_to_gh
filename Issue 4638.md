@@ -6,15 +6,14 @@ archive/issues_004638.json:
     "body": "Assignee: @williamstein\n\nDo the following: \n\n* build Sage 3.2\n* install the updates scripts.spkg: sage -i http://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.1/sage-3.2.1.alpha2/spkg/standard/sage_scripts-3.2.1.alpha2\n* upgrade to Sage 3.2.a2: ./sage -i http://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.1/sage-3.2.1.alpha2/\n\nThings go boom (due to a dependency bug in setup.py - it has been fixed in 3.2.1.alpha1, but somehow that setup.py is not used):\n\n```\nBuilding sage/matrix/action.pyx because it depends on sage/structure/parent.pxd.\nTraceback (most recent call last):\n  File \"setup.py\", line 486, in <module>\n    queue = compile_command_list(ext_modules, deps)\n  File \"setup.py\", line 456, in compile_command_list\n    dep_file, dep_time = deps.newest_dep(f)\n  File \"setup.py\", line 371, in newest_dep\n    for f in self.all_deps(filename):\n  File \"setup.py\", line 354, in all_deps\n    deps.update(self.all_deps(f, path))\n  File \"setup.py\", line 352, in all_deps\n    for f in self.immediate_deps(filename):\n  File \"setup.py\", line 334, in immediate_deps\n    self._deps[filename] = self.parse_deps(filename)\n  File \"setup.py\", line 290, in parse_deps\n    f = open(filename)\nIOError: [Errno 2] No such file or directory: 'sage/rings/mpfr.pxi'\nsage: There was an error installing modified sage library code.\n```\n\n\n\nThen sage-3.2.1.alpha0.spkg as well as the doc.spkg are missing. Deleting the Cython cache and a sage -ba gets you a working Sage again.\n\nBut make is unhappy:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.final$ make\ncd spkg && ./install all 2>&1 | tee -a ../install.log\n/bin/ls: doc-*.spkg: No such file or directory\n/bin/ls: examples-*.spkg: No such file or directory\n/bin/ls: sage-*.spkg: No such file or directory\nmake[1]: Entering directory `/scratch/mabshoff/release-cycle/sage-3.2.final/spkg'\nstandard/deps:310: warning: overriding commands for target `installed/'\nstandard/deps:177: warning: ignoring old commands for target `installed/'\nstandard/deps:366: warning: overriding commands for target `installed/'\nstandard/deps:310: warning: ignoring old commands for target `installed/'\nstandard/deps:370: warning: overriding commands for target `installed/'\nstandard/deps:366: warning: ignoring old commands for target `installed/'\nmake[1]: Circular installed/ <- installed/ dependency dropped.\nmake[1]: Circular installed/ <- installed/ dependency dropped.\nmake[1]: Nothing to be done for `all'.\nmake[1]: Leaving directory `/scratch/mabshoff/release-cycle/sage-3.2.final/spkg'\n\nreal\t0m0.008s\nuser\t0m0.004s\nsys\t0m0.004s\nTo install gap, gp, singular, etc., scripts\nin a standard bin directory, start sage and\ntype something like\n   sage: install_scripts('/usr/local/bin')\nat the SAGE command prompt.\n```\n\nDoing another\n\n* ./sage -i http://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.1/sage-3.2.1.alpha2/\n\nreplaces the missing spkgs and everything is fine.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4638\n\n",
     "created_at": "2008-11-27T08:25:56Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage 3.2->3.2.a2 upgrade failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4638",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -100,15 +99,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4638
 
 ---
 
-archive/issue_comments_034889.json:
+archive/issue_comments_034821.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-01T09:19:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4638",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34889",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34821",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -118,15 +117,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_034890.json:
+archive/issue_comments_034822.json:
 ```json
 {
     "body": "This might become a problem when running -upgrade from 3.2 to 3.2.1, but we will see. For now reassign it to 3.2.1. Once we have tested the 3.2 upgrade to 3.2.1.final we will see if we have to do anything special here.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-01T09:19:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4638",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34890",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34822",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -140,15 +139,15 @@ Michael
 
 ---
 
-archive/issue_comments_034891.json:
+archive/issue_comments_034823.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-12-01T09:19:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4638",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34891",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34823",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -158,15 +157,15 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_comments_034892.json:
+archive/issue_comments_034824.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-12-02T05:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4638",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34892",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34824",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -176,15 +175,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_034893.json:
+archive/issue_comments_034825.json:
 ```json
 {
     "body": "wontfix since this was unsupported anyway. Upgrades from 3.2 to 3.2.1 are working.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-02T05:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4638",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34893",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4638#issuecomment-34825",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

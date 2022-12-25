@@ -6,7 +6,7 @@ archive/issues_003614.json:
     "body": "Assignee: @garyfurnish\n\npbuild is broken by finance compiled modules in 3.0.4.rc0.  The fix is going to be adding the right libraries to the finance include/linker options\n\nIssue created by migration from https://trac.sagemath.org/ticket/3614\n\n",
     "created_at": "2008-07-08T18:03:43Z",
     "labels": [
-        "pbuild",
+        "component: pbuild",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003614.json:
     "title": "pbuild broken by finance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3614",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -29,33 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3614
 
 ---
 
-archive/issue_comments_025513.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2008-07-08T18:35:37Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/3614",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25513",
-    "user": "mabshoff"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_025514.json:
+archive/issue_comments_025461.json:
 ```json
 {
     "body": "Gary,\n\nthis is not a blocker for 3.0.5, but will get merged if it is ready in time.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-08T18:35:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3614",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25514",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25461",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +53,15 @@ Michael
 
 ---
 
-archive/issue_comments_025515.json:
+archive/issue_comments_025462.json:
 ```json
 {
     "body": "Attachment [trac_3614.patch](tarball://root/attachments/some-uuid/ticket3614/trac_3614.patch) by @garyfurnish created at 2008-07-10 09:03:57",
     "created_at": "2008-07-10T09:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3614",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25515",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25462",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -89,15 +71,15 @@ Attachment [trac_3614.patch](tarball://root/attachments/some-uuid/ticket3614/tra
 
 ---
 
-archive/issue_comments_025516.json:
+archive/issue_comments_025463.json:
 ```json
 {
     "body": "Patch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-11T04:18:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3614",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25516",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25463",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +93,15 @@ Michael
 
 ---
 
-archive/issue_comments_025517.json:
+archive/issue_comments_025464.json:
 ```json
 {
     "body": "Merged in Sage 3.0.6.alpha0",
     "created_at": "2008-07-15T01:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3614",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25517",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25464",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +111,15 @@ Merged in Sage 3.0.6.alpha0
 
 ---
 
-archive/issue_comments_025518.json:
+archive/issue_comments_025465.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-15T01:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3614",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25518",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3614#issuecomment-25465",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

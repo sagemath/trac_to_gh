@@ -6,7 +6,7 @@ archive/issues_001794.json:
     "body": "Assignee: @williamstein\n\nSage calls Gram-Schmidt Gramm-Schmidt in some places (including function names). The attached patch fixes the ones I found.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1794\n\n",
     "created_at": "2008-01-16T17:59:01Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001794.json:
     "title": "Gram-Schmidt typo",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1794",
-    "user": "@wjp"
+    "user": "https://github.com/wjp"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1794
 
 ---
 
-archive/issue_comments_011358.json:
+archive/issue_comments_011330.json:
 ```json
 {
     "body": "Attachment [8014.patch](tarball://root/attachments/some-uuid/ticket1794/8014.patch) by @wjp created at 2008-01-16 18:00:29",
     "created_at": "2008-01-16T18:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1794",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11358",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11330",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [8014.patch](tarball://root/attachments/some-uuid/ticket1794/8014.pat
 
 ---
 
-archive/issue_comments_011359.json:
+archive/issue_comments_011331.json:
 ```json
 {
     "body": "Apply this, but there may be other instances in libs/ntl/ntl_mat_ZZ.pyx.",
     "created_at": "2008-01-20T06:55:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1794",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11359",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11331",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -65,15 +65,15 @@ Apply this, but there may be other instances in libs/ntl/ntl_mat_ZZ.pyx.
 
 ---
 
-archive/issue_comments_011360.json:
+archive/issue_comments_011332.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha1",
     "created_at": "2008-01-21T06:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1794",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11360",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11332",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +83,15 @@ Merged in Sage 2.10.1.alpha1
 
 ---
 
-archive/issue_comments_011361.json:
+archive/issue_comments_011333.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-21T06:08:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1794",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11361",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1794#issuecomment-11333",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

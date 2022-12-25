@@ -6,15 +6,14 @@ archive/issues_003957.json:
     "body": "Assignee: boothby\n\n\n```\n\n\nOn Tue, Aug 26, 2008 at 4:53 AM, Stan Schymanski <schymans@gmail.com> wrote:\n>\n> Dear all,\n>\n> Is there a way of saving and automatically re-loading plots generated\n> in a notebook when I re-open the notebook?\n\nThis is *not* by design, and wasn't the case until very recently.  It's a\nbug in the notebook that was introduced very recently.  \n\n>\n> Currently, when I close and re-open a notebook, all previously\n> displayed plots are gone and even Action... -> Evaluate All does not\n> bring them back. I have to keep pressing Shift+Return to see the plots\n> again, which is very time consuming. I already figured out that the\n> combination of save_session and load_session allows me to re-create\n> most of my variables and save a lot of computation time, but it still\n> does not bring back the plots.\n>\n> Thanks for  your help!\n>\n> Stan\n>\n> PS: sage 3.1.1 on Mac OS 10.4.11\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3957\n\n",
     "created_at": "2008-08-26T15:50:26Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "notebook -- major bug in opening notebooks and plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3957",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -58,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3957
 
 ---
 
-archive/issue_comments_028425.json:
+archive/issue_comments_028367.json:
 ```json
 {
     "body": "I've posted a patch which fixes this issue and have written the corresponding Selenium test which passes with this patch and fails without it.  Some more extensive manual testing should be done to make sure things are be behaving correctly.",
     "created_at": "2008-09-09T01:43:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3957",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28425",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28367",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -76,15 +75,15 @@ I've posted a patch which fixes this issue and have written the corresponding Se
 
 ---
 
-archive/issue_comments_028426.json:
+archive/issue_comments_028368.json:
 ```json
 {
     "body": "Attachment [trac_3957.patch](tarball://root/attachments/some-uuid/ticket3957/trac_3957.patch) by TimothyClemans created at 2008-09-09 14:08:52\n\nI did hand testing of this, and the bug seems to have been resolved.",
     "created_at": "2008-09-09T14:08:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3957",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28426",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28368",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -96,15 +95,15 @@ I did hand testing of this, and the bug seems to have been resolved.
 
 ---
 
-archive/issue_comments_028427.json:
+archive/issue_comments_028369.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc2",
     "created_at": "2008-09-13T01:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3957",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28427",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28369",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +113,15 @@ Merged in Sage 3.1.2.rc2
 
 ---
 
-archive/issue_comments_028428.json:
+archive/issue_comments_028370.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-13T01:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3957",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28428",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3957#issuecomment-28370",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

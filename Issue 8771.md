@@ -6,7 +6,7 @@ archive/issues_008771.json:
     "body": "Assignee: GeorgSWeber\n\nThe machine\n\n```\n[wstein@lena sage-4.4]$ uname -a\nLinux lena 2.6.31.12-174.2.19.fc12.x86_64 #1 SMP Thu Feb 11 07:07:16 UTC 2010 x86_64 x86_64 x86_64 GNU/Linux\n[wstein@lena sage-4.4]$ cat /etc/issue\nFedora release 12 (Constantine)\nKernel \\r on an \\m (\\l)\n\n[wstein@lena sage-4.4]$ gcc -v\nUsing built-in specs.\nCOLLECT_GCC=gcc\nCOLLECT_LTO_WRAPPER=/usr/local/gcc-4.5.0/x86_64-Linux-k10-fc/libexec/gcc/x86_64-unknown-linux-gnu/4.5.0/lto-wrapper\nTarget: x86_64-unknown-linux-gnu\nConfigured with: /usr/local/gcc-4.5.0/src/gcc-4.5.0/configure --enable-languages=c,c++,fortran --with-gnu-as --with-gnu-as=/usr/local/binutils-2.20.1/x86_64-Linux-k10-fc-gcc-4.4.3/bin/as --with-gnu-ld --with-ld=/usr/local/binutils-2.20.1/x86_64-Linux-k10-fc-gcc-4.4.3/bin/ld --with-gmp=/usr/local/mpir-1.2.2/x86_64-Linux-k10-gcc-4.2.2 --with-mpfr=/usr/local/mpfr-2.4.2/x86_64-Linux-k10-fc-mpir-1.2.2-gcc-4.4.2 --with-mpc=/usr/local/mpc-0.8.1/x86_64-Linux-k10-fc-mpfr-2.4.2-mpir-1.2.2-gcc-4.4.3 --prefix=/usr/local/gcc-4.5.0/x86_64-Linux-k10-fc\nThread model: posix\ngcc version 4.5.0 (GCC)\n```\n\n\nThe error, after building Sage seems to finish fine:\n\n```\n./sage \n...\nboom!\n...\nImportError: /home/wstein/screen/lena/sage-4.4/local/lib/libzn_poly-0.9.so: undefined symbol: ZNP_mpn_mulmid_fallback_thresh\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8771\n\n",
     "created_at": "2010-04-26T20:53:40Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008771.json:
     "title": "Sage-4.4 + GCC-4.5.0 -- sage fails to startup due to libzn_poly missing symbol issue (ZNP_mpn_mulmid_fallback_thresh)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8771",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -58,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8771
 
 ---
 
-archive/issue_comments_080271.json:
+archive/issue_comments_080141.json:
 ```json
 {
     "body": "wjp figured out that this boils down to some tuning program not getting built:\n\n```\nsage subshell$ gcc -fPIC -std=c99 -O3 -L. -I/home/wstein/screen/eno/sage-4.4/local/include -I./include -DNDEBUG -o tune/mulmid-tune.o -c tune/mulmid-tune.c\ntune/mulmid-tune.c: In function \u2018ZNP_tune_mulmid\u2019:\ntune/mulmid-tune.c:85:10: error: jump into scope of identifier with variably modified type\ntune/mulmid-tune.c:135:7: note: label \u2018done\u2019 defined here\ntune/mulmid-tune.c:115:14: note: \u2018score\u2019 declared here\ntune/mulmid-tune.c:85:10: error: jump into scope of identifier with variably modified type\ntune/mulmid-tune.c:135:7: note: label \u2018done\u2019 defined here\ntune/mulmid-tune.c:114:14: note: \u2018points\u2019 declared here\ntune/mulmid-tune.c:108:10: error: jump into scope of identifier with variably modified type\ntune/mulmid-tune.c:135:7: note: label \u2018done\u2019 defined here\ntune/mulmid-tune.c:115:14: note: \u2018score\u2019 declared here\ntune/mulmid-tune.c:108:10: error: jump into scope of identifier with variably modified type\ntune/mulmid-tune.c:135:7: note: label \u2018done\u2019 defined here\ntune/mulmid-tune.c:114:14: note: \u2018points\u2019 declared here\n/home/wstein/screen/eno/sage-4.4\nsage subshell$                     \n```\n\n\nFor this, \n\n```\n14:26 < wjp> the fix is to move the lines\n14:26 < wjp>       const int max_intervals = 20;\n14:26 < wjp>       size_t points[max_intervals + 1];\n14:26 < wjp>       double score[max_intervals + 1];\n14:26 < wjp> up a bit to at least above the goto\n```\n\nbut... \n\n```\n4:26 < wjp> but after doing that it is now complaining about a missing ZNP_tuning_info when linking 'tune'\n```\n",
     "created_at": "2010-04-26T21:28:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80271",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80141",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -113,15 +113,15 @@ but...
 
 ---
 
-archive/issue_comments_080272.json:
+archive/issue_comments_080142.json:
 ```json
 {
     "body": "I fixed the compile errors by moving the offending \"identifiers with variably modified type\" to above the goto, and added a check to the `spkg-install` script to see if building this tune program failed.\n\nNew spkg at:\n\nhttp://www.math.leidenuniv.nl/~wpalenst/sage/zn_poly-0.9.p4.spkg",
     "created_at": "2010-04-26T21:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80272",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80142",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -135,15 +135,15 @@ http://www.math.leidenuniv.nl/~wpalenst/sage/zn_poly-0.9.p4.spkg
 
 ---
 
-archive/issue_comments_080273.json:
+archive/issue_comments_080143.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-26T21:59:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80273",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80143",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -153,15 +153,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080274.json:
+archive/issue_comments_080144.json:
 ```json
 {
     "body": "Even new spkg here (with some slight referee improvements): \n\n          http://wstein.org/home/wstein/patches/zn_poly-0.9.p4.spkg",
     "created_at": "2010-04-26T22:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80274",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80144",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -173,15 +173,15 @@ Even new spkg here (with some slight referee improvements):
 
 ---
 
-archive/issue_comments_080275.json:
+archive/issue_comments_080145.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-26T22:19:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80275",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80145",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -191,15 +191,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080276.json:
+archive/issue_comments_080146.json:
 ```json
 {
     "body": "\n```\n15:21 < wjp> ok, your extra changes look good to me too\n```\n",
     "created_at": "2010-04-26T22:21:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80276",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80146",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -213,15 +213,15 @@ archive/issue_comments_080276.json:
 
 ---
 
-archive/issue_comments_080277.json:
+archive/issue_comments_080147.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-28T19:17:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80277",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80147",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -231,15 +231,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_080278.json:
+archive/issue_comments_080148.json:
 ```json
 {
     "body": "Only the changelog entry references the wrong ticket (#8711); now fixed at #12433...",
     "created_at": "2012-04-20T02:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80278",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8771#issuecomment-80148",
+    "user": "https://github.com/nexttime"
 }
 ```
 

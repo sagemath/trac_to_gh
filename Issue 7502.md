@@ -6,15 +6,13 @@ archive/issues_007502.json:
     "body": "Assignee: @williamstein\n\nThis is something I came up with when trying to reduce sage start up time. \n\n\n```\n2.033 sage.all (None)\n0.407 sage.server.all (sage.all)\n0.404 notebook.all (sage.server.all)\n0.365 sage.server.notebook.notebook (notebook.all)\n...\n```\n\n\nNow notebook() needs to be in the global namespace, but usually the entire notebook server does not need to be loaded. I'm sure there's other trimming we could do here as well. \n\nIt's unclear what level to put this in, but I would think sage.server.notebook.all would be a good place (e.g. we could lazily import interact.*, sage_email.*, and lazily import notebook and inotebook). That could cut down startup time by 25%. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7502\n\n",
     "created_at": "2009-11-20T09:20:53Z",
     "labels": [
-        "user interface",
-        "major",
-        "enhancement"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "lazy import module",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7502",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -43,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7502
 
 ---
 
-archive/issue_comments_063420.json:
+archive/issue_comments_063305.json:
 ```json
 {
     "body": "Attachment [7502-lazy-import.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.patch) by @robertwb created at 2009-11-20 09:21:44",
     "created_at": "2009-11-20T09:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63420",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63305",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -61,15 +59,15 @@ Attachment [7502-lazy-import.patch](tarball://root/attachments/some-uuid/ticket7
 
 ---
 
-archive/issue_comments_063421.json:
+archive/issue_comments_063306.json:
 ```json
 {
     "body": "Somewhat related: #8102 + #8107 reduce the startup time by cutting unnecessary imports.",
     "created_at": "2010-01-28T05:58:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63421",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63306",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -79,15 +77,15 @@ Somewhat related: #8102 + #8107 reduce the startup time by cutting unnecessary i
 
 ---
 
-archive/issue_comments_063422.json:
+archive/issue_comments_063307.json:
 ```json
 {
     "body": "By the way, is this up for review?",
     "created_at": "2010-01-28T05:58:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63422",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63307",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -97,15 +95,15 @@ By the way, is this up for review?
 
 ---
 
-archive/issue_comments_063423.json:
+archive/issue_comments_063308.json:
 ```json
 {
     "body": "Yes.",
     "created_at": "2010-01-28T19:15:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63423",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63308",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -115,15 +113,15 @@ Yes.
 
 ---
 
-archive/issue_comments_063424.json:
+archive/issue_comments_063309.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-28T19:15:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63424",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63309",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -133,15 +131,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_063425.json:
+archive/issue_comments_063310.json:
 ```json
 {
     "body": "Attachment [7502-lazy-import.2.patch](tarball://root/attachments/some-uuid/ticket7502/7502-lazy-import.2.patch) by @qed777 created at 2010-01-30 03:34:11\n\nAlso map tab completion.  Add to reference manual. Rebased vs. 4.3.2.alpha0. Replaces previous.",
     "created_at": "2010-01-30T03:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63425",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63310",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -153,15 +151,15 @@ Also map tab completion.  Add to reference manual. Rebased vs. 4.3.2.alpha0. Rep
 
 ---
 
-archive/issue_comments_063426.json:
+archive/issue_comments_063311.json:
 ```json
 {
     "body": "My review is positive, but someone should review the changes in v2.",
     "created_at": "2010-01-30T03:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63426",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63311",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -171,15 +169,15 @@ My review is positive, but someone should review the changes in v2.
 
 ---
 
-archive/issue_comments_063427.json:
+archive/issue_comments_063312.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-30T05:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63427",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63312",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -189,15 +187,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_063428.json:
+archive/issue_comments_063313.json:
 ```json
 {
     "body": "Thanks. Yes, your additions look good as well.",
     "created_at": "2010-01-30T05:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63428",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63313",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -207,15 +205,15 @@ Thanks. Yes, your additions look good as well.
 
 ---
 
-archive/issue_comments_063429.json:
+archive/issue_comments_063314.json:
 ```json
 {
     "body": "Merged [7502-lazy-import.2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7502/7502-lazy-import.2.patch).",
     "created_at": "2010-01-30T23:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63429",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63314",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -225,15 +223,15 @@ Merged [7502-lazy-import.2.patch](http://trac.sagemath.org/sage_trac/attachment/
 
 ---
 
-archive/issue_comments_063430.json:
+archive/issue_comments_063315.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-30T23:54:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7502",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63430",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7502#issuecomment-63315",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

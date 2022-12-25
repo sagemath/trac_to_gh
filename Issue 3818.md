@@ -6,15 +6,14 @@ archive/issues_003818.json:
     "body": "Assignee: mabshoff\n\nThere's nothing in SAGE_ROOT/COPYING.txt about jmol, but there should be.  It's GPL'd. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3818\n\n",
     "created_at": "2008-08-12T14:54:43Z",
     "labels": [
-        "distribution",
-        "major",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "COPYING.txt doesn't mention jmol but it shold",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3818",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3818
 
 ---
 
-archive/issue_comments_027155.json:
+archive/issue_comments_027097.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2008-08-12T14:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27155",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27097",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_027156.json:
+archive/issue_comments_027098.json:
 ```json
 {
     "body": "Attachment [COPYING.txt](tarball://root/attachments/some-uuid/ticket3818/COPYING.txt) by @williamstein created at 2008-08-13 03:59:21\n\nthis file should replace the existing COPYING.txt; this is a modification of the one in sage-3.1.alpha1",
     "created_at": "2008-08-13T03:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27156",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27098",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +66,15 @@ this file should replace the existing COPYING.txt; this is a modification of the
 
 ---
 
-archive/issue_comments_027157.json:
+archive/issue_comments_027099.json:
 ```json
 {
     "body": "Even though this is not a patch the diff looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-13T06:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27157",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27099",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Michael
 
 ---
 
-archive/issue_comments_027158.json:
+archive/issue_comments_027100.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-13T06:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27158",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27100",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +106,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_027159.json:
+archive/issue_comments_027101.json:
 ```json
 {
     "body": "Merged in Sage 3.1.alpha2",
     "created_at": "2008-08-13T06:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3818",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27159",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3818#issuecomment-27101",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

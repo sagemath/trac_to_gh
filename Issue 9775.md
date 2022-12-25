@@ -6,15 +6,14 @@ archive/issues_009775.json:
     "body": "Assignee: tbd\n\nCC:  @nathanncohen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9776\n\n",
     "created_at": "2010-08-21T18:24:21Z",
     "labels": [
-        "porting: Cygwin",
-        "major",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Cygwin: GLPK extension module needs to be more explicit in its linking",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9775",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9776
 
 ---
 
-archive/issue_comments_095930.json:
+archive/issue_comments_095771.json:
 ```json
 {
     "body": "I have a patch for this which I will post shortly.",
     "created_at": "2010-08-21T18:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95930",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95771",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ I have a patch for this which I will post shortly.
 
 ---
 
-archive/issue_comments_095931.json:
+archive/issue_comments_095772.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-21T18:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95931",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95772",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_095932.json:
+archive/issue_comments_095773.json:
 ```json
 {
     "body": "Attachment [trac_9776.patch](tarball://root/attachments/some-uuid/ticket9776/trac_9776.patch) by @mwhansen created at 2010-08-21 18:26:55",
     "created_at": "2010-08-21T18:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95932",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95773",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +84,15 @@ Attachment [trac_9776.patch](tarball://root/attachments/some-uuid/ticket9776/tra
 
 ---
 
-archive/issue_comments_095933.json:
+archive/issue_comments_095774.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-23T02:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95933",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95774",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_095934.json:
+archive/issue_comments_095775.json:
 ```json
 {
     "body": "Everything is fine, and it just explicits a dependency which was already present in the \"deps\" file. Approved ! `:-)`\n\nThanks\n\nNathann",
     "created_at": "2010-08-23T02:17:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95934",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95775",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -125,15 +124,15 @@ Nathann
 
 ---
 
-archive/issue_comments_095935.json:
+archive/issue_comments_095776.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-15T11:13:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9775",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95935",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9775#issuecomment-95776",
+    "user": "https://github.com/qed777"
 }
 ```
 

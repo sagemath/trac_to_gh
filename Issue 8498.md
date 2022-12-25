@@ -6,15 +6,14 @@ archive/issues_008498.json:
     "body": "Assignee: @JohnCremona\n\nJean Gillibert reported me the following bug. Define\n\n\n```\nE = EllipticCurve('11a1')\nK.<t> = NumberField(x^2+47)\nEK = E.base_extend(K)\nT = EK(5,5)\nP = EK(-2, -1/2*t - 1/2)\np = K.ideal(11)\n```\n\n\nThen the following works fine\n\n\n```\nsage: T.has_good_reduction(p)\nFalse\n```\n\n\nbut not this one :\n\n\n```\nP.has_good_reduction(p)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8498\n\n",
     "created_at": "2010-03-11T10:39:16Z",
     "labels": [
-        "elliptic curves",
-        "major",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "bug in has_good_reduction for a point on an elliptic curve over a number field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8498",
-    "user": "@categorie"
+    "user": "https://github.com/categorie"
 }
 ```
 Assignee: @JohnCremona
@@ -58,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8498
 
 ---
 
-archive/issue_comments_076712.json:
+archive/issue_comments_076585.json:
 ```json
 {
     "body": "More precisely, I get the error\n\n\n```\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/schemes/elliptic_curves/ell_point.pyc in has_good_reduction(self, P)\n   1554         F = Emin.defining_polynomial()\n   1555         for v in F.variables():\n-> 1556             if F.derivative(v)(xyz).valuation(P) == 0:\n   1557                 return True\n   1558         return False\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.Element.__getattr__ (sage/structure/element.c:2743)()\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2844)()\n\n/home/pmzcw/prog/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2611)()\n\nAttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular' object has no attribute 'valuation'\n```\n",
     "created_at": "2010-03-11T10:39:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76712",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76585",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -95,15 +94,15 @@ AttributeError: 'sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_
 
 ---
 
-archive/issue_comments_076713.json:
+archive/issue_comments_076586.json:
 ```json
 {
     "body": "I'll look into this -- my code :(",
     "created_at": "2010-03-11T13:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76713",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76586",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -113,15 +112,15 @@ I'll look into this -- my code :(
 
 ---
 
-archive/issue_comments_076714.json:
+archive/issue_comments_076587.json:
 ```json
 {
     "body": "This is weird:  I evaluate a polynomial f in K[X,Y,Z] at a triple [x,y,z], but the value lands up not in K but in K[X,Y,Z] again (as a constant polynomial, rather than an actual constant in K).  This is not what the `_call__` function for multivariable polynomials says.  I can fix this here, but it is symptomatic of a deeper problem.",
     "created_at": "2010-03-11T14:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76714",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76587",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -131,15 +130,15 @@ This is weird:  I evaluate a polynomial f in K[X,Y,Z] at a triple [x,y,z], but t
 
 ---
 
-archive/issue_comments_076715.json:
+archive/issue_comments_076588.json:
 ```json
 {
     "body": "Attachment [trac_8498-has_good_reduction.patch](tarball://root/attachments/some-uuid/ticket8498/trac_8498-has_good_reduction.patch) by @JohnCremona created at 2010-03-11 15:24:41\n\nApplies to 4.3.4.alpha1",
     "created_at": "2010-03-11T15:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76715",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76588",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -151,15 +150,15 @@ Applies to 4.3.4.alpha1
 
 ---
 
-archive/issue_comments_076716.json:
+archive/issue_comments_076589.json:
 ```json
 {
     "body": "Patch attached, applies to 4.3.4.alpha1.  I tested everything in sage/schemes/elliptic curves, and included a doctest example showing that the example above now works.",
     "created_at": "2010-03-11T15:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76716",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76589",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -169,15 +168,15 @@ Patch attached, applies to 4.3.4.alpha1.  I tested everything in sage/schemes/el
 
 ---
 
-archive/issue_comments_076717.json:
+archive/issue_comments_076590.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-11T15:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76717",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76590",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -187,15 +186,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_076718.json:
+archive/issue_comments_076591.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"good reduction points\".",
     "created_at": "2010-03-11T15:26:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76718",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76591",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -205,15 +204,15 @@ Changing keywords from "" to "good reduction points".
 
 ---
 
-archive/issue_comments_076719.json:
+archive/issue_comments_076592.json:
 ```json
 {
     "body": "All tests pass. Thanks for the very fast resolution of this.\n\nAs you said, the patch fixes the problem for the `has_good_reduction` function, but the same issue may arise else where. Could you open another ticket for the general problem ?",
     "created_at": "2010-03-11T21:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76719",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76592",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -225,15 +224,15 @@ As you said, the patch fixes the problem for the `has_good_reduction` function, 
 
 ---
 
-archive/issue_comments_076720.json:
+archive/issue_comments_076593.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-11T21:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76720",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76593",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -243,15 +242,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_076721.json:
+archive/issue_comments_076594.json:
 ```json
 {
     "body": "Replying to [comment:5 wuthrich]:\n> All tests pass. Thanks for the very fast resolution of this.\n> \n> As you said, the patch fixes the problem for the `has_good_reduction` function, but the same issue may arise else where. Could you open another ticket for the general problem ?\n\nSee #8502",
     "created_at": "2010-03-11T22:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76721",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76594",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -266,15 +265,15 @@ See #8502
 
 ---
 
-archive/issue_comments_076722.json:
+archive/issue_comments_076595.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-12T04:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8498",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76722",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8498#issuecomment-76595",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002333.json:
     "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Wed, Feb 27, 2008 at 8:32 AM, Simon King <king@mathematik.uni-jena.de> wrote:\n> \n>  Dear team,\n>  \n>  i started to work with Mercurial and tried to understand\n>  http://modular.math.washington.edu/sage/doc/html/prog/node72.html\n>  \n>  I changed to a new branch, i.e.\n>  > sage -clone myrep\n>  > sage -b myrep\n>  \n>  Meanwhile i also learned (more or less) how to create a patch.\n>  \n>  But what shall i do in order to apply a patch downloaded from that\n>  trac system?\n>  I tried\n>  sage:  hg_sage.import_patch('../work/SingularElementCopy.patch')\n>  \n>  However, this was aborted with the comment \"no diffs found\".\n>  \n>  What does that mean? How can one apply a patch?\n>  \n>  Suggestion: The \"Quick Mercurial tutorial for Sage\" could also say a\n>  few words about the trac system.\n\nTo apply a patch from trac, e.g., the one here:\n     http://trac.sagemath.org/sage_trac/ticket/2245\ndo this:\n\n 1. Click on the patch.\n 2. Go to the bottom of the screen and copy and paste the url for \"Original format\",\ne.g., right click and say \"copy\".\n 3. Paste the result into hg_sage.apply(...), e.g.,\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch?format=raw')\n\n--\n\nIt would also be nice if hg_sage were smart enough to automatically detect the\nnon-raw url (that you click on in step 1 above) and automatically get the raw file\ninstead.  E.g., this could be made to work\n\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch')\n\nThis would be easy to implement -- if ever the input to apply contains\n   http://[anything]attachment/ticket/2245/[anything]\nand doesn't end in ?format=raw, just append it.   That would make it easy to \ncompletely skip the step where you have to find the raw format link.\n\nSince this is so trivial to implement I've made it a trac ticket:\n  \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2333\n\n",
     "created_at": "2008-02-27T17:53:10Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[easy to implement] hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2245/sage-2245.patch') should be made to work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2333",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -85,15 +84,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2333
 
 ---
 
-archive/issue_comments_015604.json:
+archive/issue_comments_015569.json:
 ```json
 {
     "body": "I can't get it to work:\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/2333/2333.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/attachment/ticket/2333/2333.patch\nLoading: [.]\ncd \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc0/devel/sage\" && hg status\ncd \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc0/devel/sage\" && hg status\ncd \"/scratch/mabshoff/release-cycle/sage-2.10.3.rc0/devel/sage\" && hg import   \"/home/mabshoff/.sage/temp/sage/2132/tmp_1.patch\"\napplying /home/mabshoff/.sage/temp/sage/2132/tmp_1.patch\nabort: no diffs found\nsage:\nExiting SAGE (CPU time 0m0.15s, Wall time 0m56.24s).\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-02-28T01:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15604",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15569",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +120,15 @@ Michael
 
 ---
 
-archive/issue_comments_015605.json:
+archive/issue_comments_015570.json:
 ```json
 {
     "body": "Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.patch) by @mwhansen created at 2008-02-28 01:30:16",
     "created_at": "2008-02-28T01:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15605",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15570",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -139,15 +138,15 @@ Attachment [2333.patch](tarball://root/attachments/some-uuid/ticket2333/2333.pat
 
 ---
 
-archive/issue_comments_015606.json:
+archive/issue_comments_015571.json:
 ```json
 {
     "body": "Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2.patch) by @mwhansen created at 2008-02-28 08:43:25",
     "created_at": "2008-02-28T08:43:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15606",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15571",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -157,15 +156,15 @@ Attachment [2333-2.patch](tarball://root/attachments/some-uuid/ticket2333/2333-2
 
 ---
 
-archive/issue_comments_015607.json:
+archive/issue_comments_015572.json:
 ```json
 {
     "body": "Attachment [2333-3.patch](tarball://root/attachments/some-uuid/ticket2333/2333-3.patch) by @mwhansen created at 2008-02-28 08:45:58\n\nAll three patches should be applied in order.",
     "created_at": "2008-02-28T08:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15607",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15572",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -177,15 +176,15 @@ All three patches should be applied in order.
 
 ---
 
-archive/issue_comments_015608.json:
+archive/issue_comments_015573.json:
 ```json
 {
     "body": "The subject screws with the wrapping of the ticket view, so change it :)\n\nCheers,\n\nMichael",
     "created_at": "2008-03-02T20:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15608",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15573",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -199,15 +198,15 @@ Michael
 
 ---
 
-archive/issue_comments_015609.json:
+archive/issue_comments_015574.json:
 ```json
 {
     "body": "Merged all three patches in Sage 2.10.3.rc1",
     "created_at": "2008-03-03T12:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15609",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15574",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -217,15 +216,15 @@ Merged all three patches in Sage 2.10.3.rc1
 
 ---
 
-archive/issue_comments_015610.json:
+archive/issue_comments_015575.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-03T12:31:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15610",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2333#issuecomment-15575",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

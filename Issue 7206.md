@@ -6,15 +6,14 @@ archive/issues_007206.json:
     "body": "Assignee: joyner\n\nWith 4.1.2.rc2, I have one doctest failure on Ubuntu 9.04 amd64:\n\n```\ndrake@sagenb:~/s/sage-4.1.2.rc2$ ./sage -t  devel/sage/sage/groups/perm_gps/permgroup.py\n  sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\"    \n  **********************************************************************\n  File \"/home/drake/s/sage-4.1.2.rc2/devel/sage/sage/groups/perm_gps/permgroup.py\", line 1114:\n      sage: G.random_element()\n  Expected:\n      (1,2)(4,5)\n  Got:\n      (2,3)(4,5)\n  **********************************************************************\n  1 items had failures:\n     1 of   4 in __main__.example_34\n  ***Test Failed*** 1 failures.\n  For whitespace errors, see the file /home/drake/.sage//tmp/.doctest_permgroup.py\n           [6.7 s]\n  exit code: 1024\n\n  ----------------------------------------------------------------------\n  The following tests failed:\n\n          sage -t  \"devel/sage/sage/groups/perm_gps/permgroup.py\" \n```\n\n\nThis seems like #5584 again. I ran a bisect and it blames #6647.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7206\n\n",
     "created_at": "2009-10-14T03:02:20Z",
     "labels": [
-        "group theory",
-        "major",
+        "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doctest failure in groups/perm_gps/permgroup.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7206",
-    "user": "@dandrake"
+    "user": "https://github.com/dandrake"
 }
 ```
 Assignee: joyner
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7206
 
 ---
 
-archive/issue_comments_059793.json:
+archive/issue_comments_059681.json:
 ```json
 {
     "body": "Hy Dan,\n\nWith 4.1.1 and sage-combinat queue applied (the patch come from here : #6647), I have\n\n```\nnicolas@nicolas-laptop:/opt/sage/devel/sage-combinat$ sage -t sage/groups/perm_gps/permgroup.py \nsage -t  \"devel/sage-combinat/sage/groups/perm_gps/permgroup.py\"\n\t [5.4 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 5.4 seconds\n```\n\n\nBut, if I play with the method .random_element()\n\n```\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()\n()\nsage: G.random_element()\n(4,5)\nsage: G.random_element()\n(1,3,2)(4,5)\nsage: G.random_element()\n(1,3,2)\nsage: G.random_element()\n(2,3)(4,5)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(4,5)\nsage: G.random_element()\n(1,3,2)\nsage: G.random_element()\n(1,3,2)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(2,3)(4,5)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(1,3,2)\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element()                             \n(1,3)\n```\n\n\nI saw your pointer from my patch about strong generating system. I didn't touch random_element(). I would be very happy to help and investigate this but my guess is that touch interface and Gap behavior... I don't know even if it is possible to put a doctest on such random method where the random part is inside Gap and not inside Sage...\n\nI don't really know that is very important in this doctest, a possible trick is\n\n```\nsage: G = PermutationGroup([[(1,2,3),(4,5)],[(1,2)]])\nsage: G.random_element() in G                        \nTrue\n```\n\nHere, one's can be sure there no timestamps random dependencies of Gap or other things I should not say because I really don't know anything about random and Gap.\n\nIf anyone know something about that ?",
     "created_at": "2009-10-14T12:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59793",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59681",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -134,15 +133,15 @@ If anyone know something about that ?
 
 ---
 
-archive/issue_comments_059794.json:
+archive/issue_comments_059682.json:
 ```json
 {
     "body": "Hi Nicolas...\n\nFirst, don't worry, nobody is blaming you! I did go look at #6647, and I don't see why it should cause the doctest failure. Above, you get many different results for `random_element()`, but when running the doctests, the random seed is reset every time, so the random element is actually not random at all. :)  Perhaps your \"`G.random_element() in G`\" doctest would be just as good.",
     "created_at": "2009-10-15T02:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59794",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59682",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -154,15 +153,15 @@ First, don't worry, nobody is blaming you! I did go look at #6647, and I don't s
 
 ---
 
-archive/issue_comments_059795.json:
+archive/issue_comments_059683.json:
 ```json
 {
     "body": "no such doctest failure in 5.13.beta1\n\nticket can be closed as invalid",
     "created_at": "2013-10-27T15:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59795",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59683",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -174,15 +173,15 @@ ticket can be closed as invalid
 
 ---
 
-archive/issue_comments_059796.json:
+archive/issue_comments_059684.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-10-27T15:37:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59796",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59684",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -192,15 +191,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059797.json:
+archive/issue_comments_059685.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-10-27T15:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59797",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59685",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -210,15 +209,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059798.json:
+archive/issue_comments_059686.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2013-10-31T08:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7206",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59798",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7206#issuecomment-59686",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

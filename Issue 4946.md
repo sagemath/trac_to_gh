@@ -6,7 +6,7 @@ archive/issues_004946.json:
     "body": "Assignee: mabshoff\n\nOn opensuse64 (a sage.math vmware machine):\n\n```\nOverwriting libreadline.so.5.2 with the system one\ncp: cannot stat `/lib/libreadline.so.5.2': No such file or directory\nReadline's build claims to have finished, but files that should have been built weren't.\n\nreal    3m23.513s\nuser    0m15.741s\nsys     0m23.429s\nsage: An error occurred while installing readline-5.2.p5\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/wstein/build/opensuse64/build/sage-3.2.3/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/wstein/build/opensuse64/build/sage-3.2.3/spkg/build/readline-5.2.p5 and type 'make'.\nInstead type \"/home/wstein/build/opensuse64/build/sage-3.2.3/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/wstein/build/opensuse64/build/sage-3.2.3/spkg/build/readline-5.2.p5\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/readline-5.2.p5] Error 1\nmake[1]: Leaving directory `/home/wstein/build/opensuse64/build/sage-3.2.3/spkg'\n\nreal    4m7.156s\nuser    0m16.409s\nsys     0m23.905s\n. local/bin/sage-env && sage-starts && sage-maketest\nTesting that Sage starts...\n/usr/bin/env: sage.bin: No such file or directory\nTraceback (most recent call last):\n  File \"/home/wstein/build/opensuse64/build/sage-3.2.3/local/bin/sage-eval\", line 4, in <module>\n    from sage.all import *\nImportError: No module named sage.all\nSage failed to startup.\nmake: *** [check] Error 1\nwstein@opensuse64:~/build/opensuse64$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4946\n\n",
     "created_at": "2009-01-07T00:12:43Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004946.json:
     "title": "readline on opensuse11 64-bit still doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4946",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -67,15 +67,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4946
 
 ---
 
-archive/issue_comments_037543.json:
+archive/issue_comments_037471.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-07T03:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37543",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37471",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +85,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_037544.json:
+archive/issue_comments_037472.json:
 ```json
 {
     "body": "The fix here is to use /lib64 on OpenSUSE 11.1 with 64 bits while using /lib with the 32 bit version. I will post an updated spkg in the next 24 hours.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-07T03:52:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37544",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37472",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +107,15 @@ Michael
 
 ---
 
-archive/issue_comments_037545.json:
+archive/issue_comments_037473.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.3/alpha4/readline-5.2.p6.spkg\n\nfixes the problem. Tested on OpenSUSE 11.1 64 bit :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T19:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37545",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37473",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -133,15 +133,15 @@ Michael
 
 ---
 
-archive/issue_comments_037546.json:
+archive/issue_comments_037474.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2009-02-03T01:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37546",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37474",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -151,15 +151,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_037547.json:
+archive/issue_comments_037475.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha4.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-03T01:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37547",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37475",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +173,15 @@ Michael
 
 ---
 
-archive/issue_comments_037548.json:
+archive/issue_comments_037476.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-03T01:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37548",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4946#issuecomment-37476",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

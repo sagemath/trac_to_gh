@@ -6,15 +6,14 @@ archive/issues_001751.json:
     "body": "Assignee: boothby\n\nIt seems that publishing a notebook publishes the entire notebook directory - including its revision history (if that is what the \"snapshots\" are). This is almost certainly unexpected behaviour and could lead to serious trouble if someone wants to publish a notebook with an assignment in which he has previously worked out the solution. A tech savvy student might be able to dig that solution up from a \"downloaded\" SWS file.\n\nAlso, currently there does not seem to be any way to delete a published notebook.\n\nI might be wrong on this, but I think it is a serious enough issue that someone should look into it an make sure that no such revision info leakage occurs.\n\n[For \"shared\" worksheets, similar problems arise. Should there be a \"clear revision information\" function?]\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1751\n\n",
     "created_at": "2008-01-10T20:34:48Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "Notebook revision information leakage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1751",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 Assignee: boothby
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1751
 
 ---
 
-archive/issue_comments_011050.json:
+archive/issue_comments_011023.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-05-11T05:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1751#issuecomment-11050",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1751#issuecomment-11023",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -54,15 +53,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_011051.json:
+archive/issue_comments_011024.json:
 ```json
 {
     "body": "Nils wrote:\n> It seems that publishing a notebook publishes the entire notebook directory \n> - including its revision history (if that is what the \"snapshots\" are).\n> This is almost certainly unexpected behaviour and could lead to serious trouble ...\n\nThat's just not true.  I created a worksheet with 20 stored revisions, published it,\nand looked at the published worksheet directory.  It doesn't have those revisions stored\nin its snapshot directory. \n\n> Also, currently there does not seem to be any way to delete a published notebook.\n\nTrue.  This should be a separate enhancement ticket.  Now #3156\n\n> I might be wrong on this, but I think it is a serious enough issue that \n> someone should look into it an make sure that no such revision info leakage occurs.\n\nI looked and I think you are wrong.  I also looked at the source code which also says\nyou're wrong. \n\n> [For \"shared\" worksheets, similar problems arise. Should there be a \"clear \n> revision information\" function?]\n\nRevision history shouldn't be something you want to clear, since it's a cheap\nand powerful safety feature.  A simple workaround is to just make a copy of\na worksheet using File --> Copy Worksheet.  This results in a new copy of the\noriginal worksheet, but with all revision history gone.",
     "created_at": "2008-05-11T05:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1751#issuecomment-11051",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1751#issuecomment-11024",
+    "user": "https://github.com/williamstein"
 }
 ```
 

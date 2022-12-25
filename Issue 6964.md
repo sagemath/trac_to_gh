@@ -6,15 +6,14 @@ archive/issues_006964.json:
     "body": "Assignee: tbd\n\nImplement this function q_eigenform_character described below:\n\n```\nsage: f = ModularSymbols(Gamma1(13),2,sign=1).cuspidal_subspace().decomposition()[0]\nsage: f.q_eigenform(5,'a')\nq + a*q^2 + (-2*a - 4)*q^3 + (-a - 1)*q^4 + O(q^5)\nsage: f.q_eigenform_character('a')\nTraceback (most recent call last):\n...\nAttributeError: 'ModularSymbolsSubspace' object has no attribute 'q_eigenform_character'\n```\n\n\nIn case f.character() is not None, the above function should be easy to implement -- just return the character.  Otherwise it is harder.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6964\n\n",
     "created_at": "2009-09-20T00:43:57Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "implement computation of Dirichlet character of irreducible cuspidal modular symbols space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6964",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6964
 
 ---
 
-archive/issue_comments_057616.json:
+archive/issue_comments_057508.json:
 ```json
 {
     "body": "Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part2.patch) by @williamstein created at 2009-09-20 04:59:07",
     "created_at": "2009-09-20T04:59:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57616",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57508",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -60,15 +59,15 @@ Attachment [trac_6964-part2.patch](tarball://root/attachments/some-uuid/ticket69
 
 ---
 
-archive/issue_comments_057617.json:
+archive/issue_comments_057509.json:
 ```json
 {
     "body": "Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part3.patch) by @williamstein created at 2009-09-20 05:21:19",
     "created_at": "2009-09-20T05:21:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57617",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57509",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -78,15 +77,15 @@ Attachment [trac_6964-part3.patch](tarball://root/attachments/some-uuid/ticket69
 
 ---
 
-archive/issue_comments_057618.json:
+archive/issue_comments_057510.json:
 ```json
 {
     "body": "Attachment [trac_6964-part4.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-part4.patch) by @syazdani77 created at 2009-09-20 05:44:47",
     "created_at": "2009-09-20T05:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57618",
-    "user": "@syazdani77"
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57510",
+    "user": "https://github.com/syazdani77"
 }
 ```
 
@@ -96,15 +95,15 @@ Attachment [trac_6964-part4.patch](tarball://root/attachments/some-uuid/ticket69
 
 ---
 
-archive/issue_comments_057619.json:
+archive/issue_comments_057511.json:
 ```json
 {
     "body": "Attachment [trac_6964-formatting-fix.patch](tarball://root/attachments/some-uuid/ticket6964/trac_6964-formatting-fix.patch) by mvngu created at 2009-09-24 15:36:11\n\nfix warning when building reference manual",
     "created_at": "2009-09-24T15:36:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57619",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57511",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -116,15 +115,15 @@ fix warning when building reference manual
 
 ---
 
-archive/issue_comments_057620.json:
+archive/issue_comments_057512.json:
 ```json
 {
     "body": "The patch `trac_6964-formatting-fix.patch` fix a warning when building the reference manual with the previous patches.",
     "created_at": "2009-09-24T15:36:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57620",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57512",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -134,15 +133,15 @@ The patch `trac_6964-formatting-fix.patch` fix a warning when building the refer
 
 ---
 
-archive/issue_comments_057621.json:
+archive/issue_comments_057513.json:
 ```json
 {
     "body": "Merged patches in this order:\n\n1. `trac_6964.patch`\n2. `trac_6964-part2.patch`\n3. `trac_6964-part3.patch`\n4. `trac_6964-part4.patch`\n5. `trac_6964-formatting-fix.patch`",
     "created_at": "2009-09-24T16:13:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57621",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57513",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -158,15 +157,15 @@ Merged patches in this order:
 
 ---
 
-archive/issue_comments_057622.json:
+archive/issue_comments_057514.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-24T16:13:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57622",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57514",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -176,15 +175,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_057623.json:
+archive/issue_comments_057515.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
     "created_at": "2009-09-27T10:23:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57623",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6964#issuecomment-57515",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

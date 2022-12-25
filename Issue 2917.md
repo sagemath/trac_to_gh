@@ -6,15 +6,14 @@ archive/issues_002917.json:
     "body": "Assignee: boothby\n\nbut on opening a new worksheet (and alson on opening an existing ws)\ngot an internal server error.\n\nSee below,\n\nJaap\n\n\n```\nsage: notebook()\nThe notebook files are stored in: /home/jaap/.sage//sage_notebook\nPort 8000 is already in use.\nTrying next port...\n****************************************************\n*                                                  *\n* Open your web browser to https://localhost:8001  *\n*                                                  *\n****************************************************\nThere is an admin account.  If you do not remember the password,\nquit the notebook and type notebook(reset=True).\nRemoving stale pidfile /home/jaap/.sage/sage_notebook/twistd.pd\n2008-04-14 11:49:14+0200 [-] Log opened.\n2008-04-14 11:49:14+0200 [-] twistd 8.0.1 (/home/jaap/downloads/sage-3.0.alpha4/local/bin/python 2.5.1) starting up\n2008-04-14 11:49:14+0200 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008-04-14 11:49:14+0200 [-] twisted.web2.channel.http.HTTPFactory starting on 8001\n2008-04-14 11:49:14+0200 [-] Starting factory <twisted.web2.channel.http.HTTPFactory instance at 0xa76b76c>\n2008-04-14 11:49:23+0200 [HTTPChannel,0,127.0.0.1] Exception rendering:\n2008-04-14 11:49:23+0200 [HTTPChannel,0,127.0.0.1] Unhandled Error\n         Traceback (most recent call last):\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 185, in addCallbacks\n             self._runCallbacks()\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 323, in _runCallbacks\n             self.result = callback(self.result, *args, **kw)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 284, in _continue\n             self.unpause()\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 280, in unpause\n             self._runCallbacks()\n         --- <exception caught here> ---\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/internet/defer.py\", line 323, in _runCallbacks\n             self.result = callback(self.result, *args, **kw)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/web2/server.py\", line 296, in <lambda>\n             d.addCallback(lambda res, req: res.renderHTTP(req), self)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/web2/resource.py\", line 85, in renderHTTP\n             return method(request)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/web2/resource.py\", line 202, in http_GET\n             return super(Resource, self).http_GET(request)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/twisted/web2/resource.py\", line 128, in http_GET\n             return self.render(request)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/sage/server/notebook/twist.py\", line 1148, in render\n             s = notebook.html(worksheet_filename = self.name,  username=self.username)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 1936, in html\n             body = self._html_body(worksheet_filename=worksheet_filename, username=username, show_debug=show_debug)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/sage/server/notebook/notebook.py\", line 1609, in _html_body\n             worksheet_html = worksheet.html()\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 828, in html\n             s += self.html_worksheet_body(do_print=do_print)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/sage/server/notebook/worksheet.py\", line 984, in html_worksheet_body\n             s += cell.html(ncols, do_print=do_print) + '\\n'\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 609, in html\n             html_in  = self.html_in(do_print=do_print)\n           File \"/home/jaap/downloads/sage-3.0.alpha4/local/lib/python2.5/site-packages/sage/server/notebook/cell.py\", line 659, in html_in\n             \"\"\"%(cls, r, ncols, id, id, id, id, id, 'readonly=1' if do_print else '', t)\n         exceptions.TypeError: not enough arguments for format string\n\n2008-04-14 11:50:56+0200 [-] (Notebook cleanly saved. Press control-C again to exit.)\n\n```\n\n\nBoothby:\n\n\n```\nLooks like this was due to a bad merge of #2883.  My guess is, adding another 'id,' to sage/server/notebook/cell.py, line 659 will do the trick -- unless something tricky is going on.  I'll check it around 1:30 Monday.\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2917\n\n",
     "created_at": "2008-04-14T15:06:50Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "internal server error in notebook sage-3.0.alpha4",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2917",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: boothby
@@ -106,15 +105,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2917
 
 ---
 
-archive/issue_comments_020090.json:
+archive/issue_comments_020049.json:
 ```json
 {
     "body": "Unsurprisingly this must be fixed before 3.0.final ;)\n\nCheers,\n\nMichael",
     "created_at": "2008-04-14T18:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20090",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20049",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +127,15 @@ Michael
 
 ---
 
-archive/issue_comments_020091.json:
+archive/issue_comments_020050.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2008-04-14T18:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20091",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20050",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -146,15 +145,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_020092.json:
+archive/issue_comments_020051.json:
 ```json
 {
     "body": "Attachment [sage-2917.patch](tarball://root/attachments/some-uuid/ticket2917/sage-2917.patch) by @williamstein created at 2008-04-15 00:56:28",
     "created_at": "2008-04-15T00:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20092",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20051",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -164,15 +163,15 @@ Attachment [sage-2917.patch](tarball://root/attachments/some-uuid/ticket2917/sag
 
 ---
 
-archive/issue_comments_020093.json:
+archive/issue_comments_020052.json:
 ```json
 {
     "body": "This fixes the problem for me.",
     "created_at": "2008-04-15T01:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20093",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20052",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -182,15 +181,15 @@ This fixes the problem for me.
 
 ---
 
-archive/issue_comments_020094.json:
+archive/issue_comments_020053.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-15T01:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20094",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20053",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -200,15 +199,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020095.json:
+archive/issue_comments_020054.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha5",
     "created_at": "2008-04-15T01:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2917",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20095",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2917#issuecomment-20054",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

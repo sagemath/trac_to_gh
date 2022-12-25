@@ -6,7 +6,7 @@ archive/issues_002865.json:
     "body": "Assignee: polybori\n\nCC:  polybori\n\nThe build failed at polybori with the following error\n\n\n```\ng++ -o polybori/polybori -s -bundle Cudd/obj/cuddObj.os Cudd/util/cpu_stats.os Cudd/util/cpu_time.os Cudd/util/datalimit.os Cudd/util/getopt.os Cudd/util/pathsearch.os Cudd/util/pipefork.os Cudd/util/prtime.os Cudd/util/ptime.os Cudd/util/safe_mem.os Cudd/util/state.os Cudd/util/strsav.os Cudd/util/stub.os Cudd/util/texpand.os Cudd/util/tmpfile.os Cudd/cudd/cuddAddAbs.os Cudd/cudd/cuddAddApply.os Cudd/cudd/cuddAddFind.os Cudd/cudd/cuddAddInv.os Cudd/cudd/cuddAddIte.os Cudd/cudd/cuddAddNeg.os Cudd/cudd/cuddAddWalsh.os Cudd/cudd/cuddAndAbs.os Cudd/cudd/cuddAnneal.os Cudd/cudd/cuddApa.os Cudd/cudd/cuddAPI.os Cudd/cudd/cuddApprox.os Cudd/cudd/cuddBddAbs.os Cudd/cudd/cuddBddCorr.os Cudd/cudd/cuddBddIte.os Cudd/cudd/cuddBridge.os Cudd/cudd/cuddCache.os Cudd/cudd/cuddCheck.os Cudd/cudd/cuddClip.os Cudd/cudd/cuddCof.os Cudd/cudd/cuddCompose.os Cudd/cudd/cuddDecomp.os Cudd/cudd/cuddEssent.os Cudd/cudd/cuddExact.os Cudd/cudd/cuddExport.os Cudd/cudd/cuddGenCof.os Cudd/cudd/cuddGenetic.os Cudd/cudd/cuddGroup.os Cudd/cudd/cuddHarwell.os Cudd/cudd/cuddInit.os Cudd/cudd/cuddInteract.os Cudd/cudd/cuddLCache.os Cudd/cudd/cuddLevelQ.os Cudd/cudd/cuddLinear.os Cudd/cudd/cuddLiteral.os Cudd/cudd/cuddMatMult.os Cudd/cudd/cuddPriority.os Cudd/cudd/cuddRead.os Cudd/cudd/cuddRef.os Cudd/cudd/cuddReorder.os Cudd/cudd/cuddSat.os Cudd/cudd/cuddSign.os Cudd/cudd/cuddSolve.os Cudd/cudd/cuddSplit.os Cudd/cudd/cuddSubsetHB.os Cudd/cudd/cuddSubsetSP.os Cudd/cudd/cuddSymmetry.os Cudd/cudd/cuddTable.os Cudd/cudd/cuddUtil.os Cudd/cudd/cuddWindow.os Cudd/cudd/cuddZddCount.os Cudd/cudd/cuddZddFuncs.os Cudd/cudd/cuddZddGroup.os Cudd/cudd/cuddZddIsop.os Cudd/cudd/cuddZddLin.os Cudd/cudd/cuddZddMisc.os Cudd/cudd/cuddZddPort.os Cudd/cudd/cuddZddReord.os Cudd/cudd/cuddZddSetop.os Cudd/cudd/cuddZddSymm.os Cudd/cudd/cuddZddUtil.os Cudd/dddmp/dddmpBinary.os Cudd/dddmp/dddmpConvert.os Cudd/dddmp/dddmpDbg.os Cudd/dddmp/dddmpLoad.os Cudd/dddmp/dddmpLoadCnf.os Cudd/dddmp/dddmpNodeAdd.os Cudd/dddmp/dddmpNodeBdd.os Cudd/dddmp/dddmpNodeCnf.os Cudd/dddmp/dddmpStoreAdd.os Cudd/dddmp/dddmpStoreBdd.os Cudd/dddmp/dddmpStoreCnf.os Cudd/dddmp/dddmpStoreMisc.os Cudd/dddmp/dddmpUtil.os Cudd/mtr/mtrBasic.os Cudd/mtr/mtrGroup.os Cudd/st/st.os Cudd/epd/epd.os polybori/src/BoolePolyRing.os polybori/src/BooleEnv.os polybori/src/BoolePolynomial.os polybori/src/BooleVariable.os polybori/src/CErrorInfo.os polybori/src/PBoRiError.os polybori/src/CCuddFirstIter.os polybori/src/CCuddNavigator.os polybori/src/BooleMonomial.os polybori/src/BooleSet.os polybori/src/LexOrder.os polybori/src/CCuddLastIter.os polybori/src/CCuddGetNode.os polybori/src/BooleExponent.os polybori/src/DegLexOrder.os polybori/src/DegRevLexAscOrder.os polybori/src/pbori_routines.os polybori/src/BlockDegLexOrder.os polybori/src/BlockDegRevLexAscOrder.os -L/Users/kantor/sage-3.0.alpha1/local/lib -L/Users/kantor/sage-3.0.alpha1/local/lib/python2.5/config -Lpolybori -Lgroebner -LCudd -ldl -lm\n/usr/bin/ld: can't use -s with -bundle (file must contain at least global symbols, for maximum stripping use -x)\ncollect2: ld returned 1 exit status\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2865\n\n",
     "created_at": "2008-04-09T18:10:52Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002865.json:
     "title": "PolyBori fails to build on OSX 10.4 intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2865",
-    "user": "jkantor"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 Assignee: polybori
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2865
 
 ---
 
-archive/issue_comments_019656.json:
+archive/issue_comments_019615.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/SPKG/polybori-0.3.1.p0.spkg\n\nfixes the issues.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-10T00:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19656",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19615",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -66,15 +66,15 @@ Michael
 
 ---
 
-archive/issue_comments_019657.json:
+archive/issue_comments_019616.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-04-10T01:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19657",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19616",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -84,15 +84,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_019658.json:
+archive/issue_comments_019617.json:
 ```json
 {
     "body": "The final spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0/alpha4/polybori-0.3.1.p0.spkg\n\nInstead of the original quick fix spkg this one now copies over a modified SConstruct that does not use the `-s` flag when linking.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-10T01:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19658",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19617",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -110,15 +110,15 @@ Michael
 
 ---
 
-archive/issue_comments_019659.json:
+archive/issue_comments_019618.json:
 ```json
 {
     "body": "Changing assignee from polybori to mabshoff.",
     "created_at": "2008-04-10T01:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19659",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19618",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +128,15 @@ Changing assignee from polybori to mabshoff.
 
 ---
 
-archive/issue_comments_019660.json:
+archive/issue_comments_019619.json:
 ```json
 {
     "body": "This version seems to build fine on OSX 10.4",
     "created_at": "2008-04-10T01:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19660",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19619",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -146,15 +146,15 @@ This version seems to build fine on OSX 10.4
 
 ---
 
-archive/issue_comments_019661.json:
+archive/issue_comments_019620.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha4",
     "created_at": "2008-04-10T01:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19661",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19620",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -164,15 +164,15 @@ Merged in Sage 3.0.alpha4
 
 ---
 
-archive/issue_comments_019662.json:
+archive/issue_comments_019621.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-10T01:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19662",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19621",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -182,15 +182,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_019663.json:
+archive/issue_comments_019622.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-04-10T04:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19663",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19622",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -200,15 +200,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_019664.json:
+archive/issue_comments_019623.json:
 ```json
 {
     "body": "Bad solution:\nThe provided SConstruct should work, when using the LINKFLAGS parameter.\nscons LINKFLAGS= <SCONSTARGET>\n\nTry\nscons --help\nfor a list of parameters",
     "created_at": "2008-04-10T04:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19664",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19623",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -224,15 +224,15 @@ for a list of parameters
 
 ---
 
-archive/issue_comments_019665.json:
+archive/issue_comments_019624.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-04-10T04:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19665",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19624",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -242,15 +242,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_019666.json:
+archive/issue_comments_019625.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-10T12:43:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19666",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19625",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -260,15 +260,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_019667.json:
+archive/issue_comments_019626.json:
 ```json
 {
     "body": "This is not a bad solution. The provided SConstruct **apppends** `-s` regardless. Setting LINKFLAGS will not fix the problem.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-10T12:43:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19667",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19626",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -282,15 +282,15 @@ Michael
 
 ---
 
-archive/issue_comments_019668.json:
+archive/issue_comments_019627.json:
 ```json
 {
     "body": "Can you provide me the output of\n\n\nscons -h LINKFLAGS=\"\"\n\n\nplease?\nMichael, the **real** one",
     "created_at": "2008-04-11T08:35:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2865",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19668",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/2865#issuecomment-19627",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 

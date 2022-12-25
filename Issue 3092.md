@@ -6,7 +6,7 @@ archive/issues_003092.json:
     "body": "Assignee: @timabbott\n\nI've attached a patch that fixes the permissions issues with libsingular.so (and the oddly executable stuff in /usr/lib/singular).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3092\n\n",
     "created_at": "2008-05-03T08:21:36Z",
     "labels": [
-        "debian-package",
+        "component: debian-package",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003092.json:
     "title": "[with patch; needs review] Debian Singular permissions fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3092",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3092
 
 ---
 
-archive/issue_comments_021343.json:
+archive/issue_comments_021299.json:
 ```json
 {
     "body": "Attachment [singular-permissions.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.patch) by @timabbott created at 2008-05-03 08:21:42",
     "created_at": "2008-05-03T08:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21343",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21299",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [singular-permissions.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_021344.json:
+archive/issue_comments_021300.json:
 ```json
 {
     "body": "Patch looks good to me. Positive review. Slipped into singular-3-0-4-2-20080405.p1.spkg without increasing the release version.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-03T14:26:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21344",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21300",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +69,15 @@ Michael
 
 ---
 
-archive/issue_comments_021345.json:
+archive/issue_comments_021301.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-03T14:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21345",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21301",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +87,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021346.json:
+archive/issue_comments_021302.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.final",
     "created_at": "2008-05-03T14:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21346",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21302",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +105,15 @@ Merged in Sage 3.0.1.final
 
 ---
 
-archive/issue_comments_021347.json:
+archive/issue_comments_021303.json:
 ```json
 {
     "body": "That patch didn't actually work.  I've attached a patch on top of that one that fixes the real problem: dh_fixperms removing the executable bit.",
     "created_at": "2008-05-03T18:40:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21347",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21303",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -123,15 +123,15 @@ That patch didn't actually work.  I've attached a patch on top of that one that 
 
 ---
 
-archive/issue_comments_021348.json:
+archive/issue_comments_021304.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-05-03T18:40:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21348",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21304",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -141,15 +141,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_021349.json:
+archive/issue_comments_021305.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-05-03T18:40:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21349",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21305",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -159,15 +159,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_021350.json:
+archive/issue_comments_021306.json:
 ```json
 {
     "body": "Attachment [singular-permissions.2.patch](tarball://root/attachments/some-uuid/ticket3092/singular-permissions.2.patch) by @timabbott created at 2008-05-03 18:41:29",
     "created_at": "2008-05-03T18:41:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21350",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21306",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -177,15 +177,15 @@ Attachment [singular-permissions.2.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_021351.json:
+archive/issue_comments_021307.json:
 ```json
 {
     "body": "Ops, merged singular-permissions.2.patch in Sage 3.0.1.final.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-03T19:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21351",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21307",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -199,15 +199,15 @@ Michael
 
 ---
 
-archive/issue_comments_021352.json:
+archive/issue_comments_021308.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-03T19:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3092",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21352",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3092#issuecomment-21308",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

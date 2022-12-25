@@ -6,7 +6,7 @@ archive/issues_000196.json:
     "body": "Assignee: @williamstein\n\nSomewhat bizarrely, the SAGE _sig_on/_sig_off signal handling code\nappears to be completely not doing anything at all.  Weird!  This is a\nmajor bug that must be fixed before SAGE-2.0. \n\nIssue created by migration from https://trac.sagemath.org/ticket/196\n\n",
     "created_at": "2007-01-19T09:54:09Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000196.json:
     "title": "sage signal handler -- ctrl-c interrupt, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/196",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/196
 
 ---
 
-archive/issue_comments_000891.json:
+archive/issue_comments_000888.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2007-01-20T00:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-891",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-888",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -49,15 +49,15 @@ Changing assignee from @williamstein to @malb.
 
 ---
 
-archive/issue_comments_000892.json:
+archive/issue_comments_000889.json:
 ```json
 {
     "body": "I believe to have fixed this bug in\n\ncsage: rev6\nsage_source: rev2493",
     "created_at": "2007-01-20T00:16:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-892",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-889",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -70,15 +70,15 @@ sage_source: rev2493
 
 ---
 
-archive/issue_comments_000893.json:
+archive/issue_comments_000890.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-21T21:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-893",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-890",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -88,15 +88,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000894.json:
+archive/issue_comments_000891.json:
 ```json
 {
     "body": "Martin Albrecht fixed this -- it will be in SAGE-1.8.",
     "created_at": "2007-01-21T21:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-894",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/196#issuecomment-891",
+    "user": "https://github.com/williamstein"
 }
 ```
 

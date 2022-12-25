@@ -6,15 +6,14 @@ archive/issues_000915.json:
     "body": "Assignee: mabshoff\n\nKeywords: LinBox gmp\n\nTo quote William from linbox-use:\n\n```\nI would also like to know the answer to this.  In SAGE were currently do this\nconversion by not using PID_Integer, and instead using an old header file\nfrom an old version of Linbox that defined a GMP Integer wrapper type.\nFast conversion to/from mpz_t is critical for what we're doing.\n```\n\nDave Saunders came up with the following suggestion:\n\n```\nPID_integer ZZ;\nSparseMatrix<PID_integer> A (ZZ,m,m);  //defines empty sparse matrix\n\nmpz_t x;\nmpz_init_set_ui(x, 5);\n\n\n// Assign x into A, avoiding conversions and double copy.\nmpz_set ( SpyInteger::get_mpz(A.refEntry(1,2)), x);\n\nZZ.write(std::cout, A.getEntry(1,2)) << std::endl;\n\n-dave\n\nPS.  A more direct function could be desirable.\n```\n\nThis ticket is related to #824. For details see http://groups.google.com/group/linbox-use/t/7a687e8e5a5f4a81\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/915\n\n",
     "created_at": "2007-10-18T03:04:35Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Make LinBox used PID_Integer instead of using old header as workaround",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/915",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/915
 
 ---
 
-archive/issue_comments_005617.json:
+archive/issue_comments_005599.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-10-18T03:04:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5617",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5599",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -82,15 +81,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_005618.json:
+archive/issue_comments_005600.json:
 ```json
 {
     "body": "Attachment [trac915.patch](tarball://root/attachments/some-uuid/ticket915/trac915.patch) by @ClementPernet created at 2008-02-17 02:39:43\n\nRemove the usage of GMP-Integer implementation of Z",
     "created_at": "2008-02-17T02:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5618",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5600",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -102,15 +101,15 @@ Remove the usage of GMP-Integer implementation of Z
 
 ---
 
-archive/issue_comments_005619.json:
+archive/issue_comments_005601.json:
 ```json
 {
     "body": "Attachment [trac915.2.patch](tarball://root/attachments/some-uuid/ticket915/trac915.2.patch) by @ClementPernet created at 2008-02-17 02:49:05\n\nRemove the work-around with gmp-integers",
     "created_at": "2008-02-17T02:49:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5619",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5601",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -122,15 +121,15 @@ Remove the work-around with gmp-integers
 
 ---
 
-archive/issue_comments_005620.json:
+archive/issue_comments_005602.json:
 ```json
 {
     "body": "Patch looks good to me :)",
     "created_at": "2008-03-03T04:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5620",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5602",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -140,15 +139,15 @@ Patch looks good to me :)
 
 ---
 
-archive/issue_comments_005621.json:
+archive/issue_comments_005603.json:
 ```json
 {
     "body": "Merged Clement's patch in\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.3/rc1/linbox-1.1.5rc2.p0.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-03-03T04:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5621",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5603",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -164,15 +163,15 @@ Michael
 
 ---
 
-archive/issue_comments_005622.json:
+archive/issue_comments_005604.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc1",
     "created_at": "2008-03-03T04:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5622",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5604",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -182,15 +181,15 @@ Merged in Sage 2.10.3.rc1
 
 ---
 
-archive/issue_comments_005623.json:
+archive/issue_comments_005605.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-03T04:54:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5623",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/915#issuecomment-5605",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

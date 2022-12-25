@@ -6,15 +6,14 @@ archive/issues_003577.json:
     "body": "Assignee: cwitty\n\nThis is a followup to #3561.  It makes it so numpy is definiteley not imported on startup, and even has a test to ensure this. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3577\n\n",
     "created_at": "2008-07-06T23:34:11Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch; needs review] numpy -- don't import into sage on startup (take 2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3577",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3577
 
 ---
 
-archive/issue_comments_025261.json:
+archive/issue_comments_025211.json:
 ```json
 {
     "body": "Attachment [sage-3577.patch](tarball://root/attachments/some-uuid/ticket3577/sage-3577.patch) by @williamstein created at 2008-07-06 23:46:30",
     "created_at": "2008-07-06T23:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3577#issuecomment-25261",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3577#issuecomment-25211",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [sage-3577.patch](tarball://root/attachments/some-uuid/ticket3577/sag
 
 ---
 
-archive/issue_comments_025262.json:
+archive/issue_comments_025212.json:
 ```json
 {
     "body": "Passes tests in finance/ and modules/.  Looks good to me.",
     "created_at": "2008-07-07T00:30:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3577#issuecomment-25262",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3577#issuecomment-25212",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ Passes tests in finance/ and modules/.  Looks good to me.
 
 ---
 
-archive/issue_comments_025263.json:
+archive/issue_comments_025213.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-07T02:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3577#issuecomment-25263",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3577#issuecomment-25213",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +82,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025264.json:
+archive/issue_comments_025214.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha2. Note that due to a merge conflict #3580 deals with follow up.",
     "created_at": "2008-07-07T02:59:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3577#issuecomment-25264",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3577#issuecomment-25214",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

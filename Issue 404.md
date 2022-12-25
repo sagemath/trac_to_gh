@@ -6,14 +6,13 @@ archive/issues_000404.json:
     "body": "Assignee: @williamstein\n\nSomewhere along the line :-}, we added a requirement that GF(p^r) had to be created with a generator.\nThe code to create PSL(n,q) doesn't do this.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/404\n\n",
     "created_at": "2007-07-19T23:57:34Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "title": "Can't create PSL(n,q) for q a prime power",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/404",
-    "user": "justin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 Assignee: @williamstein
@@ -30,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/404
 
 ---
 
-archive/issue_comments_001983.json:
+archive/issue_comments_001974.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to basic arithmetic.",
     "created_at": "2007-07-27T19:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/404#issuecomment-1983",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/404#issuecomment-1974",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -48,15 +47,15 @@ Changing component from algebraic geometry to basic arithmetic.
 
 ---
 
-archive/issue_comments_001984.json:
+archive/issue_comments_001975.json:
 ```json
 {
     "body": "Attachment [trac404.patch](tarball://root/attachments/some-uuid/ticket404/trac404.patch) by @williamstein created at 2007-07-27 19:35:44\n\nThe patch trac404.patch fixes this bug, plus some related ones and adds doctests.\nThis will be in SAGE-2.7.2.\n\nWilliam",
     "created_at": "2007-07-27T19:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/404#issuecomment-1984",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/404#issuecomment-1975",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -71,15 +70,15 @@ William
 
 ---
 
-archive/issue_comments_001985.json:
+archive/issue_comments_001976.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2007-07-27T19:35:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/404#issuecomment-1985",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/404#issuecomment-1976",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing assignee from @williamstein to somebody.
 
 ---
 
-archive/issue_comments_001986.json:
+archive/issue_comments_001977.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-07-27T19:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/404#issuecomment-1986",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/404#issuecomment-1977",
+    "user": "https://github.com/williamstein"
 }
 ```
 

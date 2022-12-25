@@ -6,15 +6,13 @@ archive/issues_004240.json:
     "body": "Assignee: @williamstein\n\nCC:  georgsweber\n\nRight now the doctest coverage of devel/sage/sage/interfaces/magma.py is a pitiful 17%.  Increase this to 100%.   This will involving adding about 59 doctests and docstrings.  See also #4231, which adds two docstrings/doctests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4240\n\n",
     "created_at": "2008-10-04T03:42:48Z",
     "labels": [
-        "interfaces",
-        "major",
-        "enhancement"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "magma -- increase doctest coverage of magma.py from current 17% to 100%.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4240",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4240
 
 ---
 
-archive/issue_comments_030814.json:
+archive/issue_comments_030752.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-10-04T03:42:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30814",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30752",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +47,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_030815.json:
+archive/issue_comments_030753.json:
 ```json
 {
     "body": "Attachment [trac-4240.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240.patch) by @williamstein created at 2008-10-04 05:43:52",
     "created_at": "2008-10-04T05:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30815",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30753",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +65,15 @@ Attachment [trac-4240.patch](tarball://root/attachments/some-uuid/ticket4240/tra
 
 ---
 
-archive/issue_comments_030816.json:
+archive/issue_comments_030754.json:
 ```json
 {
     "body": "coverage up to 69% -- all non underscore methods are now documented.",
     "created_at": "2008-10-11T15:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30816",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30754",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +83,15 @@ coverage up to 69% -- all non underscore methods are now documented.
 
 ---
 
-archive/issue_comments_030817.json:
+archive/issue_comments_030755.json:
 ```json
 {
     "body": "Attachment [trac-4240-part2.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part2.patch) by @williamstein created at 2008-10-11 15:38:29\n\ninsert all needed # optional's",
     "created_at": "2008-10-11T15:38:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30817",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30755",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +103,15 @@ insert all needed # optional's
 
 ---
 
-archive/issue_comments_030818.json:
+archive/issue_comments_030756.json:
 ```json
 {
     "body": "Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket4240/trac-4240-part3.patch) by @williamstein created at 2008-10-11 15:39:22",
     "created_at": "2008-10-11T15:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30818",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30756",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -123,15 +121,15 @@ Attachment [trac-4240-part3.patch](tarball://root/attachments/some-uuid/ticket42
 
 ---
 
-archive/issue_comments_030819.json:
+archive/issue_comments_030757.json:
 ```json
 {
     "body": "Hi,\n\nseveral issues.\nOn the one hand, the first patch does not apply cleanly against 3.1.3 alpha series, since the hunk in gap.py does not fit (the \"prompt\" funtion to be removed did get a doctest, so the automatism breaks).\nMore severely, there are invalid absolute paths in beginning with \"/home/wstein/\", specific to your local install, see what I get:\n\n\n```\nsage -t -long devel/sage-main/sage/interfaces/magma.py      **********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 598:\n    sage: magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)\nExpected:\n    Traceback (most recent call last):\n    ...\n    RuntimeError: Can't open package spec file /home/wstein/sage/data/extcode/magma/spec2 for reading (No such file or directory)\nGot:\n    Traceback (most recent call last):\n      File \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[3]>\", line 1, in <module>\n        magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)###line 598:\n    sage: magma.attach_spec('%s/data/extcode/magma/spec2'%SAGE_ROOT)\n      File \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/local/lib/python2.5/site-packages/sage/interfaces/magma.py\", line 605, in attach_spec\n        raise RuntimeError, s.strip()\n    RuntimeError: Can't open package spec file /Users/georgweber/Public/sage/sage-3.1.3.alpha1/data/extcode/magma/spec2 for reading (No such file or directory)\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 626:\n    sage: print magma.load(SAGE_TMP + 'a.m')\nExpected:\n    Loading \"/home/wstein/.sage//temp/one/.../a.m\"\n    hi\nGot:\n    Loading \"/Users/georgweber/.sage//temp/susanne_webers_computer.local/602/a.m\"\n    hi\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 930:\n    sage: magma.get_verbose(\"Groebner\")\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/magma.py\", line 948:\n    sage: magma.GetVerbose(\"Groebner\")\nExpected:\n    2\nGot:\n    0\n**********************************************************************\n4 items had failures:\n   1 of   4 in __main__.example_18\n   1 of   5 in __main__.example_19\n   1 of   3 in __main__.example_27\n   1 of   3 in __main__.example_28\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /Users/georgweber/Public/sage/sage-3.1.3.alpha1/tmp/.doctest_magma.py\n         [34.6 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long devel/sage-main/sage/interfaces/magma.py\nTotal time for all tests: 34.6 seconds\n```\n\n\nThe path issues should go away with some triple dots.\n\nHowever, I have no idea yet what that last \"Groebner\" issue is (Expected: 2; Got: 0).\n\nMy Magma install says: \"Magma V2.14-9\", what does yours say?\n\nCheers,\ngsw",
     "created_at": "2008-10-11T22:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30819",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30757",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -216,15 +214,15 @@ gsw
 
 ---
 
-archive/issue_comments_030820.json:
+archive/issue_comments_030758.json:
 ```json
 {
     "body": "Ah,\n\nwe try to load a package, that can't be found.\nThis does not go away just using triple dots in paths, instead some environment variable magic has to be used, but might explain the Groebner thing.",
     "created_at": "2008-10-11T22:04:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30820",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30758",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -237,15 +235,15 @@ This does not go away just using triple dots in paths, instead some environment 
 
 ---
 
-archive/issue_comments_030821.json:
+archive/issue_comments_030759.json:
 ```json
 {
     "body": "> not apply cleanly against 3.1.3 alpha \n\nIt's against 3.1.2.\n\nRegarding the Groebner output, I think you didn't apply all the patches, since you have\n\n```\nsage: magma.get_verbose(\"Groebner\")\n```\n\nin your log above, but the input line should be\n\n```\nsage: magma.get_verbose(\"Groebner\")        # optional\n```\n\n\nIn particular, you are doing\n\n```\n        sage -t -long devel/sage-main/sage/interfaces/magma.py\n```\n\nwhich with the third patch above should essentially do almost nothing, since\nyou forgot to put --optional.\n\n\nRegarding\n> we try to load a package, that can't be found. This does not go away \n> just using triple dots in paths, instead some environment variable magic \n> has to be used, but might explain the Groebner thing. \n\nIt is unrelated to Groebner.  This will go away by putting in some ...'s.",
     "created_at": "2008-10-12T12:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30821",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30759",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -287,15 +285,15 @@ It is unrelated to Groebner.  This will go away by putting in some ...'s.
 
 ---
 
-archive/issue_comments_030822.json:
+archive/issue_comments_030760.json:
 ```json
 {
     "body": "I fixed all the problems and a trivial reviewer patch is coming up. I did delete two hunks from the part3 patch since it contained fixes already done independently due to a previous patch. Tests pass with and without optional except two failures due to using Magma 2.13 instead of 2.14 on the test machine, but I can live with that:\n\n```\nsage -t -long -optional devel/sage/sage/interfaces/magma.py \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/magma.py\", line 90:\n    sage: print M2\nExpected:\n    Space of modular forms on Gamma_1(5) with character $.1, weight 2, and dimension 2 over Integer Ring.\nGot:\n    Space of modular forms on Gamma_1(5) with character all conjugates of [$.1], weight 2, and dimension 2 over Integer Ring.\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.rc0/tmp/magma.py\", line 92:\n    sage: print M2.Basis()   # note -- this has been changed to be *wrong* as below in Magma 2.14!!\nExpected:\n    [\n    1 + 10*q^2 + 20*q^3 + 20*q^5 + 60*q^7 + 50*q^8 + 30*q^10 + O(q^12),\n    q + q^2 + 2*q^3 + 3*q^4 + 5*q^5 + 2*q^6 + 6*q^7 + 5*q^8 + 7*q^9 + 5*q^10 + 12*q^11 + O(q^12)\n    ]\nGot:\n    [\n    1 + 10*q^2 + 20*q^3 + 20*q^5 + 60*q^7 + O(q^8),\n    q + q^2 + 2*q^3 + 3*q^4 + 5*q^5 + 2*q^6 + 6*q^7 + O(q^8)\n    ]\n**********************************************************************\n```\n",
     "created_at": "2008-10-12T15:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30822",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30760",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -331,15 +329,15 @@ Got:
 
 ---
 
-archive/issue_comments_030823.json:
+archive/issue_comments_030761.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-12T15:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30823",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30761",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -349,15 +347,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030824.json:
+archive/issue_comments_030762.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.rc0",
     "created_at": "2008-10-12T15:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4240",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30824",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4240#issuecomment-30762",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

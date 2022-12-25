@@ -6,15 +6,14 @@ archive/issues_006480.json:
     "body": "CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker\n\nIn computing functional derivative, one needs to vary\na functional. For example, in sage-3.4 one can do as follows\n\n```\nsage: f(x) = function('f',x)\nsage: df(x) = function('df',x)\nsage: g = f(x).diff(x)\nsage: g\ndiff(f(x), x, 1)\nsage: g.subs_expr(f(x)==f(x)+df(x))\ndiff(f(x) + df(x), x, 1)\n```\n\n\nIn new symbolics, if I do the same I get\n\n\n```\nsage: g\nD[0](f)(x)\nsage: g.subs_expr(f(x)==f(x)+df(x))\nD[0](f)(x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6480\n\n",
     "created_at": "2009-07-08T11:37:56Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.0",
     "title": ".subs_expr() method doesn't work for argument of D derivative operator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6480",
-    "user": "@golam-m-hossain"
+    "user": "https://github.com/golam-m-hossain"
 }
 ```
 CC:  @kcrisman @orlitzky @eviatarbach jakobkroeker
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6480
 
 ---
 
-archive/issue_comments_052388.json:
+archive/issue_comments_052290.json:
 ```json
 {
     "body": "I duped this in #11842. We might be able to make use of the test cases there when this gets fixed.",
     "created_at": "2012-01-03T22:51:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52388",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52290",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -70,15 +69,15 @@ I duped this in #11842. We might be able to make use of the test cases there whe
 
 ---
 
-archive/issue_comments_052389.json:
+archive/issue_comments_052291.json:
 ```json
 {
     "body": "`.substitute_function` seems to work: http://ask.sagemath.org/question/2380/how-to-substitute-a-function-within-derivatives",
     "created_at": "2013-05-14T19:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52389",
-    "user": "@eviatarbach"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52291",
+    "user": "https://github.com/eviatarbach"
 }
 ```
 
@@ -88,15 +87,15 @@ archive/issue_comments_052389.json:
 
 ---
 
-archive/issue_comments_052390.json:
+archive/issue_comments_052292.json:
 ```json
 {
     "body": "One of the  cases in #11842 that used to crash now works, but a lot of them still don't. I updated the list.",
     "created_at": "2013-05-15T17:39:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52390",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52292",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -106,15 +105,15 @@ One of the  cases in #11842 that used to crash now works, but a lot of them stil
 
 ---
 
-archive/issue_comments_052391.json:
+archive/issue_comments_052293.json:
 ```json
 {
     "body": "I feel like if that one is closed, we should have the list here, so I'm updating the description.",
     "created_at": "2013-05-15T18:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52391",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52293",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -124,15 +123,15 @@ I feel like if that one is closed, we should have the list here, so I'm updating
 
 ---
 
-archive/issue_comments_052392.json:
+archive/issue_comments_052294.json:
 ```json
 {
     "body": "I think these are different issues because `substitute_function` handles a narrowly defined set of cases, and it expects two functions (`f, g, sin`) not expressions (`f(x), diff(f(x),x)`) as function arguments. Cases above that are in the former category:\n\n```\nsage: f = function('f')(x)\n....: g = function('g')(x)\n....: df = f(x).diff(x)\nsage: f.substitute_function(f,g)\nf(x)\nsage: f(1).substitute_function(f,g)\nf(1)\nsage: df.substitute_function(f,g)\ndiff(f(x), x)\nsage: df(1).substitute_function(f,g)\nD[0](f)(1)\n```\n\nThe problem is that `f` and `g` are not function objects like `sin`. Taking this into account:\n\n```\nsage: f.substitute_function(f.operator(), g.operator())\ng(x)\nsage: f(1).substitute_function(f.operator(), g.operator())\ng(1)\nsage: df.substitute_function(f.operator(), g.operator())\ndiff(g(x), x)\nsage: df(1).substitute_function(f.operator(), g.operator())\nD[0](g)(1)\n```\n\nI opened #22401 for this.",
     "created_at": "2017-02-21T09:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52392",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52294",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -171,15 +170,15 @@ I opened #22401 for this.
 
 ---
 
-archive/issue_comments_052393.json:
+archive/issue_comments_052295.json:
 ```json
 {
     "body": "Also, even if `subs` is fixed there is no way atm to get and use `diff(f(x)+g(x),x)`:\n\n```\nsage: diff(f(x)+g(x),x)\ndiff(f(x), x) + diff(g(x), x)\nsage: diff(f(x)+g(x),x,hold=True)\nTypeError: derivative() got an unexpected keyword argument 'hold'\n```\n\n`diff` is not a function, although it could well be theoretically:\n\n```\nsage: diff(f(x),x)\ndiff(f(x), x)\nsage: _._dbgprinttree()\nfderivative f @0x34a8c00, hash=0x1023d75fb40091, flags=0xb, nops=1, params=0\n    x (symbol) @0x2895f10, serial=7, hash=0xe3706ef, flags=0xf, domain=0, iflags=0000000000000000\n    =====\nsage: diff(f(x),x)\ndiff(f(x), x)\nsage: _.operator()\nD[0](f)\nsage: type(_)\n<class 'sage.symbolic.operators.FDerivativeOperator'>\n```\n\nI cannot see why `diff(f(x)+g(x),x,hold=True)` should be supported so I'm not opening a ticket. Just don't expect that as output from a fixed `subs`.",
     "created_at": "2017-02-21T14:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52393",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52295",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -215,15 +214,15 @@ I cannot see why `diff(f(x)+g(x),x,hold=True)` should be supported so I'm not op
 
 ---
 
-archive/issue_comments_052394.json:
+archive/issue_comments_052296.json:
 ```json
 {
     "body": "So, what should work is\n\n```\n            sage: f = function('f')\n            sage: g = function('g')\n            sage: f(x).subs(f(x) == g(x))\n            g(x)\n            sage: f(x).subs(f == g)\n            g(x)\n            sage: f(x).subs({f : g})\n            g(x)\n            sage: df = f(x).diff(x); df\n            diff(f(x), x)\n            sage: df.subs(f(x) == g(x))\n            diff(g(x), x)\n            sage: df.subs(f == g)\n            diff(g(x), x)\n            sage: df.subs(f(x) == f(x) + g(x))\n            diff(f(x), x) + diff(g(x), x)\n            sage: df.subs(f == f + g)\n            diff(f(x), x) + diff(g(x), x)\n```\n\nbut it mostly doesn't:\n\n```\nFailed example:\n    f(x).subs(f == g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[67]>\", line 1, in <module>\n        f(x).subs(f == g)\n      File \"sage/symbolic/expression.pyx\", line 4961, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:29715)\n        g(x)\n      File \"sage/symbolic/expression.pyx\", line 348, in sage.symbolic.expression._subs_make_dict (build/cythonized/sage/symbolic/expression.cpp:5364)\n        raise TypeError(msg.format(s))\n    TypeError: not able to determine a substitution from False\n**********************************************************************\nFailed example:\n    f(x).subs({f : g})\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[68]>\", line 1, in <module>\n        f(x).subs({f : g})\n      File \"sage/symbolic/expression.pyx\", line 4971, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:30001)\n        diff(f(x), x) + diff(g(x), x)\n      File \"sage/symbolic/expression.pyx\", line 2885, in sage.symbolic.expression.Expression.coerce_in (build/cythonized/sage/symbolic/expression.cpp:21682)\n        return self._parent._coerce_(z)\n      File \"sage/structure/parent_old.pyx\", line 241, in sage.structure.parent_old.Parent._coerce_ (build/cythonized/sage/structure/parent_old.c:4949)\n        return self.coerce(x)\n      File \"sage/structure/parent.pyx\", line 1195, in sage.structure.parent.Parent.coerce (build/cythonized/sage/structure/parent.c:11169)\n        raise TypeError(\"no canonical coercion from %s to %s\" % (parent(x), self))\n    TypeError: no canonical coercion from <class 'sage.symbolic.function_factory.NewSymbolicFunction'> to Symbolic Ring\n**********************************************************************\n    df.subs(f(x) == g(x))\nExpected:\n    diff(g(x), x)\nGot:\n    diff(f(x), x)\n**********************************************************************\n    df.subs(f == g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[71]>\", line 1, in <module>\n        df.subs(f == g)\n      File \"sage/symbolic/expression.pyx\", line 4961, in sage.symbolic.expression.Expression.substitute (build/cythonized/sage/symbolic/expression.cpp:29715)\n        g(x)\n      File \"sage/symbolic/expression.pyx\", line 348, in sage.symbolic.expression._subs_make_dict (build/cythonized/sage/symbolic/expression.cpp:5364)\n        raise TypeError(msg.format(s))\n    TypeError: not able to determine a substitution from False\n**********************************************************************\n    df.subs(f(x) == f(x) + g(x))\nExpected:\n    diff(f(x), x) + diff(g(x), x)\nGot:\n    diff(f(x), x)\n**********************************************************************\n    df.subs(f == f + g)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 498, in _run\n        self.compile_and_execute(example, compiler, test.globs)\n      File \"/home/ralf/sage/local/lib/python2.7/site-packages/sage/doctest/forker.py\", line 861, in compile_and_execute\n        exec(compiled, globs)\n      File \"<doctest sage.symbolic.expression.Expression.substitute[73]>\", line 1, in <module>\n        df.subs(f == f + g)\n    TypeError: unsupported operand type(s) for +: 'NewSymbolicFunction' and 'NewSymbolicFunction'\n```\n",
     "created_at": "2017-02-22T07:10:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52394",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52296",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -333,15 +332,15 @@ Exception raised:
 
 ---
 
-archive/issue_comments_052395.json:
+archive/issue_comments_052297.json:
 ```json
 {
     "body": "The above consists of three problems. The central one is the failure to `f(x).subs(f(x) == g(x))`; the `diff` case is probably only a result; it looks like this is a Pynac bug, and when fixed there it should be doctested here.\n\nThe second is the failure of `f(x).subs({f : g})`. Maybe we can delegate to `substitute_function` if the dict key/val pair consists of function objects.\n\nThe third is that `f+g` already bails out. But `SR('f')+SR('g')` does not so this would be a workaround.",
     "created_at": "2017-02-22T07:26:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52395",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52297",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -355,15 +354,15 @@ The third is that `f+g` already bails out. But `SR('f')+SR('g')` does not so thi
 
 ---
 
-archive/issue_comments_052396.json:
+archive/issue_comments_052298.json:
 ```json
 {
     "body": "Nah, it was wrong, only `diff(f(x),x).subs(f(x) == g(x))` doesn't work.",
     "created_at": "2017-02-22T07:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52396",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52298",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -373,15 +372,15 @@ Nah, it was wrong, only `diff(f(x),x).subs(f(x) == g(x))` doesn't work.
 
 ---
 
-archive/issue_comments_052397.json:
+archive/issue_comments_052299.json:
 ```json
 {
     "body": "Replying to [comment:11 rws]:\n> The above consists of three problems. The central one is the failure to `f(x).subs(f(x) == g(x))`; the `diff` case is probably only a result; it looks like this is a Pynac bug, and when fixed there it should be doctested here.\n\nThe special status of `fderivative` in Pynac (not a function) may be the reason, see also https://groups.google.com/d/msg/sage-support/lZ4AjbmvvQE/-BJ_xvMlAQAJ",
     "created_at": "2017-02-23T06:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52397",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52299",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -394,15 +393,15 @@ The special status of `fderivative` in Pynac (not a function) may be the reason,
 
 ---
 
-archive/issue_comments_052398.json:
+archive/issue_comments_052300.json:
 ```json
 {
     "body": "Milestone renamed",
     "created_at": "2017-02-24T10:47:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52398",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6480#issuecomment-52300",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

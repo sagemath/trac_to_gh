@@ -6,7 +6,7 @@ archive/issues_005743.json:
     "body": "Assignee: mabshoff\n\nThere are a couple doctests on Solaris 10/Sparc that fail due to numerical noise. Fix it. \n\nA patch is coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5743\n\n",
     "created_at": "2009-04-11T01:25:26Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005743.json:
     "title": "Solaris 10/Sparc: Fix numerical noise issues in doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5743",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5743
 
 ---
 
-archive/issue_comments_044902.json:
+archive/issue_comments_044817.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-04-11T01:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44902",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44817",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +53,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_044903.json:
+archive/issue_comments_044818.json:
 ```json
 {
     "body": "Attachment [trac_5743.patch](tarball://root/attachments/some-uuid/ticket5743/trac_5743.patch) by mabshoff created at 2009-04-16 10:05:39",
     "created_at": "2009-04-16T10:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44903",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44818",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +71,15 @@ Attachment [trac_5743.patch](tarball://root/attachments/some-uuid/ticket5743/tra
 
 ---
 
-archive/issue_comments_044904.json:
+archive/issue_comments_044819.json:
 ```json
 {
     "body": "This patch fixes the following two doctest failures on Solaris 10/Sparc:\n\n```\nsage -t  \"devel/sage/sage/modules/free_module_element.pyx\"  \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/modules/free_module_element.pyx\", line 505:\n    sage: vector(RDF, {1:pi, 1000:e})._sage_input_(SageInputBuilder(), False)\nExpected:\n    {call: {atomic:vector}({atomic:RDF}, {dict: {{atomic:1}:{atomic:3.1415926535897931}, {atomic:1000}:{atomic:2.7182818284590451}}})}\nGot:\n    {call: {atomic:vector}({atomic:RDF}, {dict: {{atomic:1}:{atomic:3.1415926535897931}, {atomic:1000}:{atomic:2.7182818284590455}}})}\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_8\n```\n\nand\n\n```\nsage -t  \"devel/sage/sage/rings/real_double.pyx\"            \n**********************************************************************\nFile \"/home/mabshoff/build-3.4.1.rc1/sage-3.4.1.rc1-mark-gcc-4.3.3/devel/sage/sage/rings/real_double.pyx\", line 727:\n    sage: sage_input(RDF(-e), verify=True, preparse=False)\nExpected:\n    # Verified\n    -RDF(2.7182818284590451)\nGot:\n    # Verified\n    -RDF(2.7182818284590455)\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T10:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44904",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44819",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -124,15 +124,15 @@ Michael
 
 ---
 
-archive/issue_comments_044905.json:
+archive/issue_comments_044820.json:
 ```json
 {
     "body": "Yep, that's some numerical noise.",
     "created_at": "2009-04-16T10:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44905",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44820",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -142,15 +142,15 @@ Yep, that's some numerical noise.
 
 ---
 
-archive/issue_comments_044906.json:
+archive/issue_comments_044821.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T10:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44906",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44821",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -164,15 +164,15 @@ Michael
 
 ---
 
-archive/issue_comments_044907.json:
+archive/issue_comments_044822.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-16T10:21:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44907",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5743#issuecomment-44822",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

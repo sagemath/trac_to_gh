@@ -6,7 +6,7 @@ archive/issues_002538.json:
     "body": "Assignee: wstein\n\n\n```\nsage-2.10.4.rc0$ ./sage -t -long devel/sage/sage/server/notebook/interact.py\nsage -t -long devel/sage-main/sage/server/notebook/interact.py\n**********************************************************************\nFile \"interact.py\", line 1641:\n    sage: selector([1,2,7], default=2).default()\nExpected:\n    2\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of   1 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_interact.py\n         [2.9 s]\nexit code: 256\n\n----------------------------------------------------------------------\nThe following tests failed:\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2538\n\n",
     "created_at": "2008-03-16T01:24:51Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002538.json:
     "title": "Sage 2.10.4.rc0: server/notebook/interact.py is broken due to #2530",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2538",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: wstein
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2538
 
 ---
 
-archive/issue_comments_017311.json:
+archive/issue_comments_017274.json:
 ```json
 {
     "body": "The new output, i.e., 1 is definitely now correct.   Feel free to\nmake this change and close this ticket.",
     "created_at": "2008-03-16T02:57:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2538",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17311",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17274",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -70,15 +70,15 @@ make this change and close this ticket.
 
 ---
 
-archive/issue_comments_017312.json:
+archive/issue_comments_017275.json:
 ```json
 {
     "body": "Attachment [trac_2538.patch](tarball://root/attachments/some-uuid/ticket2538/trac_2538.patch) by mabshoff created at 2008-03-16 05:27:35",
     "created_at": "2008-03-16T05:27:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2538",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17312",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17275",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -88,15 +88,15 @@ Attachment [trac_2538.patch](tarball://root/attachments/some-uuid/ticket2538/tra
 
 ---
 
-archive/issue_comments_017313.json:
+archive/issue_comments_017276.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-16T05:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2538",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17313",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17276",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -106,15 +106,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_017314.json:
+archive/issue_comments_017277.json:
 ```json
 {
     "body": "Changing assignee from wstein to mabshoff.",
     "created_at": "2008-03-16T05:28:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2538",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17314",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17277",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -124,15 +124,15 @@ Changing assignee from wstein to mabshoff.
 
 ---
 
-archive/issue_comments_017315.json:
+archive/issue_comments_017278.json:
 ```json
 {
     "body": "Looks okay to me.",
     "created_at": "2008-03-16T06:07:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2538",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17315",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17278",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -142,15 +142,15 @@ Looks okay to me.
 
 ---
 
-archive/issue_comments_017316.json:
+archive/issue_comments_017279.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-16T06:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2538",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17316",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17279",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -160,15 +160,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_017317.json:
+archive/issue_comments_017280.json:
 ```json
 {
     "body": "Merged in Sage 2.10.4.rc0",
     "created_at": "2008-03-16T06:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2538",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17317",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2538#issuecomment-17280",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

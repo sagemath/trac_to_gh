@@ -6,15 +6,13 @@ archive/issues_008016.json:
     "body": "Assignee: sage-combinat\n\nCC:  @saliola rkirov @qed777\n\nObviously `graph_editor(p)` doesn't work on its own, since `p` is not a graph. However, it should be possible to implement a few functions for `p` to make this work:\n\n\n```\nFile \"sage/graphs/graph_editor.py\", line 111, in graph_editor\n    if not isinstance(graph.get_pos(), dict):\nAttributeError: 'FinitePoset' object has no attribute 'get_pos'\n```\n\n\nWhile wishing, it would also be nice if the graph editor could be adapted to remember vertex labels, at least in the case that the labels are strings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8016\n\n",
     "created_at": "2010-01-20T20:21:57Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "graph_editor(p) should work for p a poset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8016",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: sage-combinat
@@ -41,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8016
 
 ---
 
-archive/issue_comments_070043.json:
+archive/issue_comments_069923.json:
 ```json
 {
     "body": "If the name of variable to save the (undirected) graph is `P`, then it is easy to just say\n\n\n```\nd = DiGraph()\nd.add_vertices(P.vertices())\npos = P.get_pos()\nfor e in P.edges(labels=False):\n    if pos[e[0]][1] < pos[e[1]][1]:\n        d.add_edge(e)\n    else:\n        d.add_edge([e[1], e[0]])\nP = Poset(d).canonical_label()\n```\n\n\nto convert it to poset. But really somebody should expand the code to handle digraphs.",
     "created_at": "2015-10-21T07:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8016",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8016#issuecomment-70043",
-    "user": "@jm58660"
+    "url": "https://github.com/sagemath/sagetest/issues/8016#issuecomment-69923",
+    "user": "https://github.com/jm58660"
 }
 ```
 
@@ -75,15 +73,15 @@ to convert it to poset. But really somebody should expand the code to handle dig
 
 ---
 
-archive/issue_comments_070044.json:
+archive/issue_comments_069924.json:
 ```json
 {
     "body": "Somewhat related:\n\n- #30214: Add to_digraph method to Permutation",
     "created_at": "2020-10-11T22:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8016",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8016#issuecomment-70044",
-    "user": "@slel"
+    "url": "https://github.com/sagemath/sagetest/issues/8016#issuecomment-69924",
+    "user": "https://github.com/slel"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_009258.json:
     "body": "Assignee: tbd\n\nFricas seems to have an api change which breaks a few tests in fricas.py.\n\n\n```\n\n\"\"\"\n        A helper function for converting FriCAS domains to the corresponding\n        Sage object.\n        \n        EXAMPLES::\n        \n            sage: fricas('Integer').sage() #optional - fricas\n            Integer Ring\n            sage: fricas('Fraction Integer').sage() #optional - fricas\n            Rational Field\n            sage: fricas('DoubleFloat').sage() #optional - fricas\n            Real Double Field\n\n        \"\"\"\n```\n\n\nThese now give either a different return value or simply results in raising a NotImplementedError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9258\n\n",
     "created_at": "2010-06-18T07:11:40Z",
     "labels": [
-        "packages: optional",
+        "component: packages: optional",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009258.json:
     "title": "problem with converting FriCAS domains to Sage objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9258",
-    "user": "@maxthemouse"
+    "user": "https://github.com/maxthemouse"
 }
 ```
 Assignee: tbd
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9258
 
 ---
 
-archive/issue_comments_087119.json:
+archive/issue_comments_086980.json:
 ```json
 {
     "body": "Attachment [trac_9258.patch](tarball://root/attachments/some-uuid/ticket9258/trac_9258.patch) by @mwhansen created at 2010-06-27 20:13:41",
     "created_at": "2010-06-27T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87119",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-86980",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -69,15 +69,15 @@ Attachment [trac_9258.patch](tarball://root/attachments/some-uuid/ticket9258/tra
 
 ---
 
-archive/issue_comments_087120.json:
+archive/issue_comments_086981.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-27T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87120",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-86981",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -87,15 +87,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_087121.json:
+archive/issue_comments_086982.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-02T12:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87121",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-86982",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -105,15 +105,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_087122.json:
+archive/issue_comments_086983.json:
 ```json
 {
     "body": "That was easier than I thought it would be. :-)\n\nAdam",
     "created_at": "2010-07-02T12:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87122",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-86983",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -125,15 +125,15 @@ Adam
 
 ---
 
-archive/issue_comments_087123.json:
+archive/issue_comments_086984.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T10:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-87123",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9258#issuecomment-86984",
+    "user": "https://github.com/qed777"
 }
 ```
 

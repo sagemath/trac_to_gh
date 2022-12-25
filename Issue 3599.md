@@ -6,15 +6,14 @@ archive/issues_003599.json:
     "body": "Assignee: @itolkov\n\nSlider update:\n\n* Sliders are now version 3, which is similar to current version 1, but longer\n\n* Label to the right of slider containing the current slider value (string representation), which is updated dynamically\n\n* User can hide label with \"display_value=False\".\n\nIssue created by migration from https://trac.sagemath.org/ticket/3599\n\n",
     "created_at": "2008-07-08T00:28:26Z",
     "labels": [
-        "notebook",
-        "minor",
-        "enhancement"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Longer slider and labels on sliders",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3599",
-    "user": "@itolkov"
+    "user": "https://github.com/itolkov"
 }
 ```
 Assignee: @itolkov
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3599
 
 ---
 
-archive/issue_comments_025424.json:
+archive/issue_comments_025374.json:
 ```json
 {
     "body": "Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_1.patch) by @itolkov created at 2008-07-08 00:30:01",
     "created_at": "2008-07-08T00:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25424",
-    "user": "@itolkov"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25374",
+    "user": "https://github.com/itolkov"
 }
 ```
 
@@ -53,33 +52,15 @@ Attachment [trac3599_extcode_1.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_025425.json:
-```json
-{
-    "body": "Changing priority from minor to major.",
-    "created_at": "2008-07-18T00:05:11Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/3599",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25425",
-    "user": "@itolkov"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_025426.json:
+archive/issue_comments_025375.json:
 ```json
 {
     "body": "Where does the png file go?",
     "created_at": "2008-07-21T22:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25426",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25375",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -89,15 +70,15 @@ Where does the png file go?
 
 ---
 
-archive/issue_comments_025427.json:
+archive/issue_comments_025376.json:
 ```json
 {
     "body": "Answering my question, it goes in:\n\n$SAGE_ROOT/data/extcode/notebook/javascript/jqueryui/themes/flora/i/slider-bg-3.png\n\nThis patch seems to do what it claims and looks like reasonable code, looks nice, and doctests pass in sage/server/notebook/*.py\n\n+1",
     "created_at": "2008-07-21T22:11:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25427",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25376",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -113,15 +94,15 @@ This patch seems to do what it claims and looks like reasonable code, looks nice
 
 ---
 
-archive/issue_comments_025428.json:
+archive/issue_comments_025377.json:
 ```json
 {
     "body": "the image of the slider",
     "created_at": "2008-07-29T18:38:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25428",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25377",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -131,15 +112,15 @@ the image of the slider
 
 ---
 
-archive/issue_comments_025429.json:
+archive/issue_comments_025378.json:
 ```json
 {
     "body": "Attachment [trac3599_extcode_2.patch](tarball://root/attachments/some-uuid/ticket3599/trac3599_extcode_2.patch) by @williamstein created at 2008-07-29 18:38:37\n\nI replaced the png by a proper patch.",
     "created_at": "2008-07-29T18:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25429",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25378",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -151,15 +132,15 @@ I replaced the png by a proper patch.
 
 ---
 
-archive/issue_comments_025430.json:
+archive/issue_comments_025379.json:
 ```json
 {
     "body": "I give this another positive review, by the way.  Very good.",
     "created_at": "2008-07-29T18:41:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25430",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25379",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -169,15 +150,15 @@ I give this another positive review, by the way.  Very good.
 
 ---
 
-archive/issue_comments_025431.json:
+archive/issue_comments_025380.json:
 ```json
 {
     "body": "Merged trac3599_sage_1.patch and trac3599_extcode_1.patch in Sage 3.1.alpha0. trac3599_extcode_2.patch is empty. You need to add a git style patch or reattach the png.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-31T01:19:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25431",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25380",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -191,15 +172,15 @@ Michael
 
 ---
 
-archive/issue_comments_025432.json:
+archive/issue_comments_025381.json:
 ```json
 {
     "body": "Attachment [slider-bg-3.png](tarball://root/attachments/some-uuid/ticket3599/slider-bg-3.png) by @itolkov created at 2008-07-31 17:55:17\n\nHere's the png again.",
     "created_at": "2008-07-31T17:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25432",
-    "user": "@itolkov"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25381",
+    "user": "https://github.com/itolkov"
 }
 ```
 
@@ -211,15 +192,15 @@ Here's the png again.
 
 ---
 
-archive/issue_comments_025433.json:
+archive/issue_comments_025382.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-31T21:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25433",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25382",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -229,15 +210,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025434.json:
+archive/issue_comments_025383.json:
 ```json
 {
     "body": "Merged slider-bg-3.png in Sage 3.1.alpha0. Thanks Igor for the png. In the future please export a git style patch in case binaries are involved.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-31T21:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25434",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3599#issuecomment-25383",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

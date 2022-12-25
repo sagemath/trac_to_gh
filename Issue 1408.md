@@ -6,15 +6,14 @@ archive/issues_001408.json:
     "body": "Assignee: @williamstein\n\nThis was reported by Matt Miller:\n\n```\n\n\n       then mv -f \".deps/darwin_stop_world.Tpo\" \".deps/\ndarwin_stop_world.Plo\"; else rm -f \".deps/darwin_stop_world.Tpo\"; exit\n1; fi\nrm -f .libs/darwin_stop_world.lo\ngcc -DPACKAGE_NAME=\\\"gc\\\" -DPACKAGE_TARNAME=\\\"gc\\\" -DPACKAGE_VERSION=\n\\\"6.8\\\" \"-DPACKAGE_STRING=\\\"gc 6.8\\\"\" -DPACKAGE_BUGREPORT=\n\\\"Hans.Boehm@hp.com\\\" -DGC_VERSION_MAJOR=6 -DGC_VERSION_MINOR=8 -\nDPACKAGE=\\\"gc\\\" -DVERSION=\\\"6.8\\\" -DGC_DARdarwin_stop_world.c:203:\nerror: 'ppc_thread_state_t' has no member named 'r1'\ndarwin_stop_world.c:205: error: 'ppc_thread_state_t' has no member\nnamed 'r0'\n...\ndarwin_stop_world.c:235: error: 'ppc_thread_state_t' has no member\nnamed 'r31'\nmake[1]: *** [darwin_stop_world.lo] Error 1\nmake: *** [install-recursive] Error 1\nError installing GC garbage collection library.\n\nreal    2m44.303s\nuser    0m33.283s\nsys     0m37.224s\nsage: An error occurred while installing macaulay2-20061014\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1408\n\n",
     "created_at": "2007-12-06T04:19:03Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "optional macaulay2 spkg doesn't install on osx10.5.1 due to problems with gc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1408",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -57,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1408
 
 ---
 
-archive/issue_comments_009084.json:
+archive/issue_comments_009060.json:
 ```json
 {
     "body": "Note also trac #1036.",
     "created_at": "2007-12-06T04:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1408",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1408#issuecomment-9084",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1408#issuecomment-9060",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -75,15 +74,15 @@ Note also trac #1036.
 
 ---
 
-archive/issue_comments_009085.json:
+archive/issue_comments_009061.json:
 ```json
 {
     "body": "And also #10.",
     "created_at": "2007-12-06T04:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1408",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1408#issuecomment-9085",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1408#issuecomment-9061",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ And also #10.
 
 ---
 
-archive/issue_comments_009086.json:
+archive/issue_comments_009062.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-29T17:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1408",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1408#issuecomment-9086",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1408#issuecomment-9062",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009087.json:
+archive/issue_comments_009063.json:
 ```json
 {
     "body": "This has been fixed by the new M2.spkg from #10.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-29T17:43:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1408",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1408#issuecomment-9087",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1408#issuecomment-9063",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

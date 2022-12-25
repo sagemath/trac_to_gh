@@ -6,15 +6,14 @@ archive/issues_000968.json:
     "body": "Assignee: @rlmill\n\nThese are a few changesets to increase readability and eliminate some pointer arithmetic in memory allocation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/968\n\n",
     "created_at": "2007-10-22T01:22:09Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "graph_isom: memory management, legibility",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/968",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/968
 
 ---
 
-archive/issue_comments_005909.json:
+archive/issue_comments_005891.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-10-22T01:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5909",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5891",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_005910.json:
+archive/issue_comments_005892.json:
 ```json
 {
     "body": "Attachment [mem_graph_isom.hg](tarball://root/attachments/some-uuid/ticket968/mem_graph_isom.hg) by @rlmill created at 2007-10-22 01:23:12",
     "created_at": "2007-10-22T01:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5910",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5892",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -65,15 +64,15 @@ Attachment [mem_graph_isom.hg](tarball://root/attachments/some-uuid/ticket968/me
 
 ---
 
-archive/issue_comments_005911.json:
+archive/issue_comments_005893.json:
 ```json
 {
     "body": "I should mention I found another bug like #939 when I cleaned up the allocation, too.",
     "created_at": "2007-10-22T01:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5911",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5893",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -83,15 +82,15 @@ I should mention I found another bug like #939 when I cleaned up the allocation,
 
 ---
 
-archive/issue_comments_005912.json:
+archive/issue_comments_005894.json:
 ```json
 {
     "body": "Attachment [7091.patch](tarball://root/attachments/some-uuid/ticket968/7091.patch) by @rlmill created at 2007-10-22 01:45:11\n\nThis should be patched on top of the bundle...",
     "created_at": "2007-10-22T01:45:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5912",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5894",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -103,15 +102,15 @@ This should be patched on top of the bundle...
 
 ---
 
-archive/issue_comments_005913.json:
+archive/issue_comments_005895.json:
 ```json
 {
     "body": "applied to 2.8.9.alpha0",
     "created_at": "2007-10-23T22:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5913",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5895",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -121,15 +120,15 @@ applied to 2.8.9.alpha0
 
 ---
 
-archive/issue_comments_005914.json:
+archive/issue_comments_005896.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-23T22:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5914",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/968#issuecomment-5896",
+    "user": "https://github.com/malb"
 }
 ```
 

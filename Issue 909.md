@@ -6,7 +6,7 @@ archive/issues_000909.json:
     "body": "Assignee: @williamstein\n\nLoading a file in sage by\n  load foo.spyx \nseems to result in a recompile every time--or at least it is doing something that takes time.  Is this really necessary, or is something else going on?  Shouldn't it instead check to see if there has been a change to foo.spyx?  (This recompiling is expensive if the Cython file is quite long!)\n\nIssue created by migration from https://trac.sagemath.org/ticket/909\n\n",
     "created_at": "2007-10-16T18:42:53Z",
     "labels": [
-        "interfaces",
+        "component: interfaces",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000909.json:
     "title": "Cython without recompile",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/909",
-    "user": "@jvoight"
+    "user": "https://github.com/jvoight"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/909
 
 ---
 
-archive/issue_comments_005590.json:
+archive/issue_comments_005572.json:
 ```json
 {
     "body": "Well, \n\nif we had a makefile or SCons based buildsystem for external Cython code like the sagelib this wouldn't happen. I think it used to be the way that the compiled objects would be kept around, but I am not sure why this no longer happens. There is also a problem with C++ files if you change compilers which break ABI compability, but this would be a rather rare occurance for the vast majority of people.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-16T18:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/909#issuecomment-5590",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/909#issuecomment-5572",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +55,15 @@ Michael
 
 ---
 
-archive/issue_comments_005591.json:
+archive/issue_comments_005573.json:
 ```json
 {
     "body": "RobertWB opened #4238 with a patch, so I am closing this as a dupe.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-03T00:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/909#issuecomment-5591",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/909#issuecomment-5573",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +77,15 @@ Michael
 
 ---
 
-archive/issue_comments_005592.json:
+archive/issue_comments_005574.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-10-03T00:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/909",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/909#issuecomment-5592",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/909#issuecomment-5574",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

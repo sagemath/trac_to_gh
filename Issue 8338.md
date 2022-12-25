@@ -6,15 +6,14 @@ archive/issues_008338.json:
     "body": "Assignee: @burcin\n\nCC:  @kcrisman\n\nKeywords: fourier,transform\n\nSage has got laplace and inverse_laplace. It should be fairly easy to add fourier and inverse_fourier. An adecuate definition for each should be agreed upon though...\n\nIssue created by migration from https://trac.sagemath.org/ticket/8338\n\n",
     "created_at": "2010-02-23T19:36:16Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Add Fourier transforms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8338",
-    "user": "olazo"
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 Assignee: @burcin
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8338
 
 ---
 
-archive/issue_comments_074443.json:
+archive/issue_comments_074319.json:
 ```json
 {
     "body": "Sage has Fourier series in the Piecewise class. \n\nFor the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.",
     "created_at": "2010-02-23T20:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74443",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74319",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -53,15 +52,15 @@ For the FT, I vote to use the normalization so that FT is an isometry from L<sup
 
 ---
 
-archive/issue_comments_074444.json:
+archive/issue_comments_074320.json:
 ```json
 {
     "body": "Changing assignee from @burcin to olazo.",
     "created_at": "2010-02-24T01:27:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74444",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74320",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -71,15 +70,15 @@ Changing assignee from @burcin to olazo.
 
 ---
 
-archive/issue_comments_074445.json:
+archive/issue_comments_074321.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-02-24T01:28:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74445",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74321",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_074446.json:
+archive/issue_comments_074322.json:
 ```json
 {
     "body": "Replying to [comment:1 wdj]:\n> Sage has Fourier series in the Piecewise class. \n\nI'll be checking that.\n\n> For the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.\n\nI don't understand what you mean there. Could you explain, perhaps post some latex formulas to show your proposed definition.\n\nthanks\n\nOscar",
     "created_at": "2010-02-24T01:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74446",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74322",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -118,15 +117,15 @@ Oscar
 
 ---
 
-archive/issue_comments_074447.json:
+archive/issue_comments_074323.json:
 ```json
 {
     "body": "Replying to [comment:4 olazo]:\n> Replying to [comment:1 wdj]:\n> \n> > For the FT, I vote to use the normalization so that FT is an isometry from L<sup>2</sup>(R) to itself.\n> \n> I don't understand what you mean there. Could you explain, perhaps \n> post some latex formulas to show your proposed definition.\n\n\nThe formulas are at http://en.wikipedia.org/wiki/Fourier_transform\n(which in turn refers to Rudin)\n\n> \n> thanks\n> \n> Oscar",
     "created_at": "2010-02-24T13:18:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74447",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74323",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -151,15 +150,15 @@ The formulas are at http://en.wikipedia.org/wiki/Fourier_transform
 
 ---
 
-archive/issue_comments_074448.json:
+archive/issue_comments_074324.json:
 ```json
 {
     "body": "I don't think anybody is working on this. I'm changing the milestone to `sage-wishlist`. \n\nSee also the [symbolics wiki page](http://wiki.sagemath.org/symbolics) for some general pointers about implementing transforms in Sage.",
     "created_at": "2010-04-05T12:42:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8338",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74448",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8338#issuecomment-74324",
+    "user": "https://github.com/burcin"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000482.json:
     "body": "Assignee: @williamstein\n\nCC:  mvngu @kcrisman\n\nHere are some ideas from a user for improving the SAGE tutorial:\n\n* 2nd para of abstract: point reader to the official python tutorial for syntax issues\n* section 5 \"programming\": mention X? and X?? again\n* why doesn't \"print?\" work?  \"attach?\"\n* why does att[tab] give me attr and not \"attach\"?\n* Why does \"time for M in L:\" break. \n* Putting cputime(t) alone by itself in the script doesn't print anything.  Why? (Because you have to put \"print cputime(t)\")\n* In many cases using xrange instead of range can be vastly better\n* nohup sage file.sage > out&   # very useful\n* How to change a .sage file to a .spyx file:\n   1. Profile your file.sage file with %prun -- premature optimization is root of all evil\n   2. Start with file.py instead of file.sage.\n   3. Use \"from sage.all import stuff you need\" at the top\n   4. Consider cdef'ing classes, cdef'ing methods, and cdef'ing variables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/482\n\n",
     "created_at": "2007-08-23T01:25:54Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "ideals for improving the SAGE tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/482",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/482
 
 ---
 
-archive/issue_comments_002406.json:
+archive/issue_comments_002396.json:
 ```json
 {
     "body": "Unless somebody thinks that anything here is still usefull I will close this ticket in the near future. \n\nCheers,\n\nMihcaek",
     "created_at": "2008-09-26T09:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2406",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2396",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +66,15 @@ Mihcaek
 
 ---
 
-archive/issue_comments_002407.json:
+archive/issue_comments_002397.json:
 ```json
 {
     "body": "Some comments, based on 3.1.3.alpha1:\n\n* attach? does work (so fixed)\n* print? does not work (so still an issue)\n* att[tab] gives attach, not attr (so fixed)\n* the following works when written on one line:\n\n```\nsage: time for i in range(10000): a = i^2\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n```\n\n* however, I cannot see how to make it work with a for loop spread over several lines\n\nSeveral of the other suggestions seem more appropriate for the FAQ (on the wiki) than for the tutorial (e.g. the cputime issue, the \"use screen instead of nohup\").  I think it is a good idea to mention screen somewhere in the tutorial, as well as a section about converting from .sage to .spyx.  I am happy to write a small paragraph about the former, but I'm not the right person for the latter.\n\nI've opened #4204 regarding screen, and someone who agrees that the \"sage 2 spyx\" section should exist should open a ticket for that.  Maybe there should also be a ticket for \"print?\".  Then we can close this ancient and somewhat vague ticket.",
     "created_at": "2008-09-27T02:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2407",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2397",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -102,15 +101,15 @@ I've opened #4204 regarding screen, and someone who agrees that the "sage 2 spyx
 
 ---
 
-archive/issue_comments_002408.json:
+archive/issue_comments_002398.json:
 ```json
 {
     "body": "Replying to [comment:6 AlexGhitza]:\n> Someone who agrees that the \"sage 2 spyx\" section should exist should open a ticket for that.\n\nIsn't that covered by Cython already? What exactly would the goal of that section be?\n\n> Maybe there should also be a ticket for \"print?\".  Then we can close this ancient and somewhat vague ticket.\n\nWell, that is really a Python issue. I do not recall it ever coming up.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-27T02:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2408",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2398",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -131,15 +130,15 @@ Michael
 
 ---
 
-archive/issue_comments_002409.json:
+archive/issue_comments_002399.json:
 ```json
 {
     "body": "CC'ing myself.",
     "created_at": "2009-06-27T00:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2409",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2399",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -149,15 +148,15 @@ CC'ing myself.
 
 ---
 
-archive/issue_comments_002410.json:
+archive/issue_comments_002400.json:
 ```json
 {
     "body": "See also #9790.",
     "created_at": "2015-01-28T15:50:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/482",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2410",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/482#issuecomment-2400",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 

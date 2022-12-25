@@ -6,15 +6,14 @@ archive/issues_005038.json:
     "body": "Assignee: @seblabbe\n\nCC:  sage-combinat @saliola abmasse\n\nThis module implements word paths which belongs to Discrete Geometry seen from Combinatorics on Words point of view. A word path is the representation of a word\nas a discrete path in a two (or more) dimensions space using a one-to-one\ncorrespondence between the alphabet and a set of vectors called steps. Using combinatorics on words, many problems on discrete polygons on 2d lattice grid may be solved in linear time in length of the perimeter (self-intersecting, area, inertia moment, etc.). For now, the goal is to create all the classes hierarchy. Cool algorithms will come into an other ticket.\n\nHere are some examples taken from the documentation of the current state of paths.py available in the sage-combinat tree.\n\nThe combinatorial class of all paths defined over three given steps:\n\n```\nsage: P = WordPaths('abc', steps=[(1,2), (-3,4), (0,-3)]); P\nFinite Word Paths over 3 steps\n```\n\n\nCreation of a path from the combinatorial class P:\n\n```\nsage: p = P('abaccba'); p\nPath: abaccba\nsage: list(p.points())\n[(0, 0), (1, 2), (-2, 6), (-1, 8), (-1, 5), (-1, 2), (-4, 6), (-3, 8)]\nsage: p.is_closed()\nFalse\nsage: p.plot() \n```\n\n\nSince p is a finite word, many functions from the word library are available:\n\n```\nsage: p.crochemore_factorization()\n(a.b.a.c.c.ba)\nsage: p.is_palindrome()\nFalse\nsage: p[:3]\nPath: aba\nsage: len(p)\n7 \n```\n\n\nSome built-in combinatorial classes of paths:\n\n```\nsage: P = WordPaths('abAB', steps='square_grid'); P\nFinite Word Paths on the square grid\n```\n\n\n```\nsage: D = WordPaths('()', steps='dyck'); D\nFinite Dyck paths\nsage: d = D('()()()(())'); d\nPath: ()()()(())\nsage: d.plot()\n```\n\n\n```\nsage: P = WordPaths('abcdef', steps='triangle_grid')\nsage: p = P('babaddefadabcadefaadfafabacdefa')\nsage: p.plot() \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5038\n\n",
     "created_at": "2009-01-20T19:56:41Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "Add word path support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5038",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: @seblabbe
@@ -94,15 +93,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5038
 
 ---
 
-archive/issue_comments_038348.json:
+archive/issue_comments_038276.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-20T19:58:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38348",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38276",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -112,15 +111,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_038349.json:
+archive/issue_comments_038277.json:
 ```json
 {
     "body": "I just uploaded a patch, but I forgot to do some stuff. Will upload another patch soon.",
     "created_at": "2009-09-07T23:02:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38349",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38277",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -130,15 +129,15 @@ I just uploaded a patch, but I forgot to do some stuff. Will upload another patc
 
 ---
 
-archive/issue_comments_038350.json:
+archive/issue_comments_038278.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-09-13T14:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38350",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38278",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -148,15 +147,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_038351.json:
+archive/issue_comments_038279.json:
 ```json
 {
     "body": "I refreshed the patch. Needs review !!\n\n...Should I do something somewhere so that `sage/combinat/words/paths.py` get added to the documentation?",
     "created_at": "2009-09-13T14:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38351",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38279",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -168,15 +167,15 @@ I refreshed the patch. Needs review !!
 
 ---
 
-archive/issue_comments_038352.json:
+archive/issue_comments_038280.json:
 ```json
 {
     "body": "I updated the patch after #6903 reviews.",
     "created_at": "2009-09-17T18:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38352",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38280",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -186,15 +185,15 @@ I updated the patch after #6903 reviews.
 
 ---
 
-archive/issue_comments_038353.json:
+archive/issue_comments_038281.json:
 ```json
 {
     "body": "I just realized that the doctest coverage is not perfect right now. Will post a new patch soon.",
     "created_at": "2009-09-18T14:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38353",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38281",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -204,15 +203,15 @@ I just realized that the doctest coverage is not perfect right now. Will post a 
 
 ---
 
-archive/issue_comments_038354.json:
+archive/issue_comments_038282.json:
 ```json
 {
     "body": "Depends on #6903.",
     "created_at": "2009-09-18T21:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38354",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38282",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -222,15 +221,15 @@ Depends on #6903.
 
 ---
 
-archive/issue_comments_038355.json:
+archive/issue_comments_038283.json:
 ```json
 {
     "body": "Attachment [trac_5038_paths-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_paths-sl.patch) by @seblabbe created at 2009-09-18 21:31:38\n\nNew patch uploaded. Doctest coverage of paths.py : 100%. Added paths.py to the documentation.",
     "created_at": "2009-09-18T21:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38355",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38283",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -242,15 +241,15 @@ New patch uploaded. Doctest coverage of paths.py : 100%. Added paths.py to the d
 
 ---
 
-archive/issue_comments_038356.json:
+archive/issue_comments_038284.json:
 ```json
 {
     "body": "Needs review!",
     "created_at": "2009-09-18T21:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38356",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38284",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -260,15 +259,15 @@ Needs review!
 
 ---
 
-archive/issue_comments_038357.json:
+archive/issue_comments_038285.json:
 ```json
 {
     "body": "Looks good to me.  I attached a patch to remove the import of GridLines since it isn't used.",
     "created_at": "2009-09-26T03:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38357",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38285",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -278,15 +277,15 @@ Looks good to me.  I attached a patch to remove the import of GridLines since it
 
 ---
 
-archive/issue_comments_038358.json:
+archive/issue_comments_038286.json:
 ```json
 {
     "body": "Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038-remove-gridlines.patch) by @mwhansen created at 2009-09-26 03:33:53",
     "created_at": "2009-09-26T03:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38358",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38286",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -296,15 +295,15 @@ Attachment [trac_5038-remove-gridlines.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_038359.json:
+archive/issue_comments_038287.json:
 ```json
 {
     "body": "I got the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/structure/sage_object.pyx\n**********************************************************************\nFile \"/scratch/mvngu/release/sage-4.1.2.alpha2/devel/sage-main/sage/structure/sage_object.pyx\", line 931:\n    sage: sage.structure.sage_object.unpickle_all(std)\nExpected:\n    doctest:...: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Successfully unpickled 572 objects.\n    Failed to unpickle 0 objects.\nGot:\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    ** failed:  _class__sage_combinat_words_utils_Factorization__.sobj\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_combinat_words_utils_Factorization__.sobj\n    Successfully unpickled 571 objects.\n    Failed to unpickle 1 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_21\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_sage_object.py\n\t [6.3 s]\n```\n",
     "created_at": "2009-09-26T06:19:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38359",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38287",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -344,15 +343,15 @@ For whitespace errors, see the file /home/mvngu/.sage//tmp/.doctest_sage_object.
 
 ---
 
-archive/issue_comments_038360.json:
+archive/issue_comments_038288.json:
 ```json
 {
     "body": "Applies over the precedent 2 patches.",
     "created_at": "2009-09-29T12:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38360",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38288",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -362,15 +361,15 @@ Applies over the precedent 2 patches.
 
 ---
 
-archive/issue_comments_038361.json:
+archive/issue_comments_038289.json:
 ```json
 {
     "body": "Attachment [trac_5038_pickle_jar_fix-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_pickle_jar_fix-sl.patch) by @seblabbe created at 2009-09-29 12:24:44\n\nThe above failure is now fixed by the patch I just uploaded. Needs review.",
     "created_at": "2009-09-29T12:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38361",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38289",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -382,15 +381,15 @@ The above failure is now fixed by the patch I just uploaded. Needs review.
 
 ---
 
-archive/issue_comments_038362.json:
+archive/issue_comments_038290.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-13T10:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38362",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38290",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -400,15 +399,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_038363.json:
+archive/issue_comments_038291.json:
 ```json
 {
     "body": "I am reviewing my own patch... There is something I dislike in the patch that I would like to discuss before including it into Sage. There are pros and cons for having a word path being a word. One thing I dislike right now is the pollution on the tab completion :\n\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('aaaaa')\nsage: p.\nDisplay all 146 possibilities? (y or n)\n```\n\n\nwhereas it could be something like below if a word path wouldn't inherit from `FiniteWord` (but still from `WordDatatype` :\n\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('abbbbccd')\nsage: p.\np.animate           p.find              p.points\np.area              p.has_prefix        p.rename\np.category          p.has_suffix        p.reset_name\np.count             p.is_closed         p.rfind\np.db                p.is_prefix         p.save\np.directive_vector  p.is_simple         p.start_point\np.dump              p.is_suffix         p.tikz_trajectory\np.dumps             p.length            p.version\np.end_point         p.plot          \n```\n\n\nBut since I still want to know if a wordpath is a palindrome and other questions already implemented for words, something like below could exist :\n\n\n```\nsage: P = WordPaths('abcd')\nsage: p = P('abbbbccd')\nsage: p.to_word()\nsage: p.\nDisplay all 146 possibilities? (y or n)\nsage: p.is_palindrome()\nFalse\n```\n\n\nOf course I would want the `to_word` to be constant time (no copy) : I am thinking of simply adding the `FiniteWord` class to the base classes of `p`.\n\n\nFranco, Mike Hansen : Do you have any comments ? I am sure you have useful ideas I could use!\n\nThank you,\n\nS\u00e9bastien",
     "created_at": "2009-10-13T10:06:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38363",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38291",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -469,15 +468,15 @@ Sébastien
 
 ---
 
-archive/issue_comments_038364.json:
+archive/issue_comments_038292.json:
 ```json
 {
     "body": "Replying to [comment:12 slabbe]:\n\n> But since I still want to know if a wordpath is a palindrome and other questions already implemented for words, something like below could exist :\n\nYou need to decide whether or not a \"wordpath\" is a word. If it is, then it\nshould inherit all the methods. A user will be totally confused if it is\nsupposed to be a word but doesn't behave like one.\n\nIf it is not a word, then having a `to_word` method is fine, but it\nneeds to return a word. In your suggestion, it returns `None` but this\nis unusual since most `to_*` methods in Sage (at least in combinatorics\ncode) do not modify the original object but return a new object. \n\nPerhaps you want to work with paths instead of word paths?\n\n\n> Of course I would want the `to_word` to be constant time (no copy) : I am thinking of simply adding the `FiniteWord` class to the base classes of `p`.\n\nThe creation of u in the following is constant time:\n\n```\nsage: w = Word([0,1,1,0,1,0,0,1])\nsage: u = Word(w._data)\n```\n\n\nHope this helps.",
     "created_at": "2009-10-15T15:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38364",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38292",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -513,15 +512,15 @@ Hope this helps.
 
 ---
 
-archive/issue_comments_038365.json:
+archive/issue_comments_038293.json:
 ```json
 {
     "body": "Attachment [trac_5038_improved_doc-sl.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_improved_doc-sl.patch) by @seblabbe created at 2009-10-20 11:24:14",
     "created_at": "2009-10-20T11:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38365",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38293",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -531,15 +530,15 @@ Attachment [trac_5038_improved_doc-sl.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_038366.json:
+archive/issue_comments_038294.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-20T11:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38366",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38294",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -549,15 +548,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_038367.json:
+archive/issue_comments_038295.json:
 ```json
 {
     "body": "> You need to decide whether or not a \"wordpath\" is a word. If it is, then it\n> should inherit all the methods. A user will be totally confused if it is\n> supposed to be a word but doesn't behave like one.\n\nI want a word path to be a word. So, I will keep it as it is.\n\n> Hope this helps.\n\nYes, thank you!\n\nI added a patch that improves the documentation and that suggests to use `help(p)` to get the specific word paths functions.\n\nNeeds review!",
     "created_at": "2009-10-20T11:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38367",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38295",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -579,15 +578,15 @@ Needs review!
 
 ---
 
-archive/issue_comments_038368.json:
+archive/issue_comments_038296.json:
 ```json
 {
     "body": "Attachment [trac_5038_doc_fixes-fs.patch](tarball://root/attachments/some-uuid/ticket5038/trac_5038_doc_fixes-fs.patch) by @saliola created at 2009-10-20 16:52:41\n\napply on top of the others",
     "created_at": "2009-10-20T16:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38368",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38296",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -599,15 +598,15 @@ apply on top of the others
 
 ---
 
-archive/issue_comments_038369.json:
+archive/issue_comments_038297.json:
 ```json
 {
     "body": "I posted a small patch to address some errors in the documentation introduced in the last patch. Otherwise, positive review. S\u00e9bastien, take a look at my patch, and if it is okay, then change the summary to positive review.",
     "created_at": "2009-10-20T16:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38369",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38297",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -617,15 +616,15 @@ I posted a small patch to address some errors in the documentation introduced in
 
 ---
 
-archive/issue_comments_038370.json:
+archive/issue_comments_038298.json:
 ```json
 {
     "body": "Great. Thanks for the grammatical corrections and for the '-' as well. I am giving positive review to your changes, so that I change the status of the ticket for positive review.",
     "created_at": "2009-10-21T08:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38370",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38298",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -635,15 +634,15 @@ Great. Thanks for the grammatical corrections and for the '-' as well. I am givi
 
 ---
 
-archive/issue_comments_038371.json:
+archive/issue_comments_038299.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-21T08:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38371",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38299",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -653,15 +652,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_038372.json:
+archive/issue_comments_038300.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-21T11:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5038",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38372",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5038#issuecomment-38300",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

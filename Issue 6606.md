@@ -6,15 +6,14 @@ archive/issues_006606.json:
     "body": "Assignee: @craigcitro\n\nCC:  @roed314\n\nGamma(N).index used the default implementation which was slow. Attached is a new implementation which works for the specific subgroup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6606\n\n",
     "created_at": "2009-07-23T21:13:12Z",
     "labels": [
-        "modular forms",
-        "minor",
-        "enhancement"
+        "component: modular forms",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "[with patch; needs review] Add a more efficient implementation of index for Gamma(N).",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6606",
-    "user": "simon"
+    "user": "https://trac.sagemath.org/admin/accounts/users/simon"
 }
 ```
 Assignee: @craigcitro
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6606
 
 ---
 
-archive/issue_comments_054088.json:
+archive/issue_comments_053987.json:
 ```json
 {
     "body": "Attachment [gamma.patch](tarball://root/attachments/some-uuid/ticket6606/gamma.patch) by simon created at 2009-07-23 21:13:39",
     "created_at": "2009-07-23T21:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54088",
-    "user": "simon"
+    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-53987",
+    "user": "https://trac.sagemath.org/admin/accounts/users/simon"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [gamma.patch](tarball://root/attachments/some-uuid/ticket6606/gamma.p
 
 ---
 
-archive/issue_comments_054089.json:
+archive/issue_comments_053988.json:
 ```json
 {
     "body": "The code loooked (though I would have written p**(3*e-2)*(p*p-1) ) but after applying to 4.1:\n\n```\nsage: Gamma(19).index()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/john/.sage/temp/ubuntu/25083/_home_john__sage_init_sage_0.py in <module>()\n\n/home/john/sage-4.1/local/lib/python2.6/site-packages/sage/modular/arithgroup/congroup_gamma.pyc in index(self)\n    105             32893086819240\n    106         \"\"\"\n--> 107         return prod([p**(3*e) - p**(3*e-2) for (p,e) in self.level().factor()])\n    108 \n```\n\n\nLooks like someone forgot to run sage -t before submitting the patch...",
     "created_at": "2009-07-24T20:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54089",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-53988",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -84,15 +83,15 @@ Looks like someone forgot to run sage -t before submitting the patch...
 
 ---
 
-archive/issue_comments_054090.json:
+archive/issue_comments_053989.json:
 ```json
 {
     "body": "Attachment [gamma.2.patch](tarball://root/attachments/some-uuid/ticket6606/gamma.2.patch) by simon created at 2009-07-24 21:13:16",
     "created_at": "2009-07-24T21:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54090",
-    "user": "simon"
+    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-53989",
+    "user": "https://trac.sagemath.org/admin/accounts/users/simon"
 }
 ```
 
@@ -102,15 +101,15 @@ Attachment [gamma.2.patch](tarball://root/attachments/some-uuid/ticket6606/gamma
 
 ---
 
-archive/issue_comments_054091.json:
+archive/issue_comments_053990.json:
 ```json
 {
     "body": "I ran sage -t after applying the patch, and all tests pass.  Looks good to me.",
     "created_at": "2009-07-24T21:22:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54091",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-53990",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -120,15 +119,15 @@ I ran sage -t after applying the patch, and all tests pass.  Looks good to me.
 
 ---
 
-archive/issue_comments_054092.json:
+archive/issue_comments_053991.json:
 ```json
 {
     "body": "That's better!",
     "created_at": "2009-07-24T21:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54092",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-53991",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -138,15 +137,15 @@ That's better!
 
 ---
 
-archive/issue_comments_054093.json:
+archive/issue_comments_053992.json:
 ```json
 {
     "body": "Simon: The patch `gamma.2.patch` doesn't contain your username. I've committed it in your name.",
     "created_at": "2009-07-24T22:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54093",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-53992",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -156,15 +155,15 @@ Simon: The patch `gamma.2.patch` doesn't contain your username. I've committed i
 
 ---
 
-archive/issue_comments_054094.json:
+archive/issue_comments_053993.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-24T22:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6606",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-54094",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6606#issuecomment-53993",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_009160.json:
     "body": "Assignee: GeorgSWeber\n\nCC:  @wjp @nexttime @qed777 alexanderdreyer polybori @malb\n\n## The problems\n\nThere were three things wrong with the Singular package, the last of which can cause build failures. \n\n* The ability to build 64-bit was restricted to the OS X operating system, as the -m64 flag was only added if both SAGE64 was set to \"yes\" and the operating system was OS X with the following line of code.\n* The package version was unconventional, with people sometimes updating a date, rather than incrementing the patch level as is standard Sage practice - see the developers guide at http://www.sagemath.org/doc/developer/patching_spkgs.html#overview-of-patching-spkg-s \n* The time stamp of the file `src/Singular/libparse.cc` was one second older than the file it was supposed to be created from ( `src/Singular/libparse.l`), so the build process was trying to use 'flex' to update `src/Singular/libparse.cc`, which fails if flex is not available. \n\n```\nmake install in Singular\nmake[4]: Entering directory `/export/home/drkirkby/32/sage-4.4.3/spkg/build/singular-3-1-0-4-20100214/src/Singular'\nsh flexer.sh -I -Pyylp -t libparse.l >libparse.cc.lmp\nflexer.sh: flex: not found\nflexer.sh: test: argument expected\nmake[4]: *** [libparse.cc] Error 1 \n```\n\n See http://groups.google.co.uk/group/sage-devel/browse_thread/thread/fbf5b7f781c3f523?hl=en for a discussion of this. \n\n == The solutions ==\nThree very minor changes are made. \n* The following\n\n\n```\n   if [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n```\n\n\n was changed to \n\n\n```\n   if [ \"x$SAGE64\" = xyes ]; then\n```\n\n\n to enable 64-bit builds on any platform when SAGE64 is set to \"yes\".\n\n* The time stamp of the file `src/Singular/libparse.cc` made the current time with:\n\n```\ntouch src/Singular/libparse.cc\n```\n \n\n* The package name was set in according with the Sage Developers Guide. Had this been done properly, it would be patch level 6, so the package was named singular-3.1.0.4.p6. \n\n == Why a blocker ? ==\nThe incorrect time stamp has caused build failures on Solaris and could cause them on other platforms too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9160\n\n",
     "created_at": "2010-06-06T13:13:55Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009160.json:
     "title": "Singular - change timestamp of file and sort out SAGE64 isssue.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9160",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: GeorgSWeber
@@ -80,15 +80,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9160
 
 ---
 
-archive/issue_comments_085492.json:
+archive/issue_comments_085355.json:
 ```json
 {
     "body": "Mercurial patch which resolves all 3 problems",
     "created_at": "2010-06-06T13:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85492",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85355",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -98,15 +98,15 @@ Mercurial patch which resolves all 3 problems
 
 ---
 
-archive/issue_comments_085493.json:
+archive/issue_comments_085356.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-06T13:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85493",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85356",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -116,15 +116,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_085494.json:
+archive/issue_comments_085357.json:
 ```json
 {
     "body": "Attachment [Three-Singular-issues.patch](tarball://root/attachments/some-uuid/ticket9160/Three-Singular-issues.patch) by drkirkby created at 2010-06-06 13:33:51\n\nAn updated .spkg may be found here\n\nhttp://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg\n\nDave",
     "created_at": "2010-06-06T13:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85494",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85357",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -140,15 +140,15 @@ Dave
 
 ---
 
-archive/issue_comments_085495.json:
+archive/issue_comments_085358.json:
 ```json
 {
     "body": "Funny, on Linux the Singular (sub-)packages are configured with `--without-lex --without-bison` (though I have flex and bison, with aliases \"lex\" and \"yacc\", installed).\nAnd `install.log` contains\n\n```\nconfigure: warning: building without lex -- make might fail\nchecking for bison... (cached) bison\n```\n\n\nThe patches look ok to me, I'll test them and the new spkg soon - but only on a Linux box...",
     "created_at": "2010-06-06T19:32:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85495",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85358",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -167,15 +167,15 @@ The patches look ok to me, I'll test them and the new spkg soon - but only on a 
 
 ---
 
-archive/issue_comments_085496.json:
+archive/issue_comments_085359.json:
 ```json
 {
     "body": "Nice, too:\n\n```\n...\nmake install in factory\nmake[4]: Entering directory '/home/leif/sage-4.4.3.rc0/spkg/build/singular-3-1-0-4-20100214/src/factory'\nWARNING: You need to rerun autoconf. I am proceeding, for now.\ntouch configure\n./config.status --recheck\nrunning /bin/sh ./configure  --prefix=/home/leif/sage-4.4.3.rc0/local --exec-prefix=/home/leif/sage-4.4.3.rc0/local --bindir=/home/leif/sage-4.4.3.rc0/local/bin --libdir=/home/leif/sage-4.4.3.rc0/local/lib --libexecdir=/home/leif/sage-4.4.3.rc0/local/lib --with-apint=gmp --with-gmp=/home/leif/sage-4.4.3.rc0/local --with-ntl=/home/leif/sage-4.4.3.rc0/local --with-NTL --without-MP --without-lex --without-bison --without-Boost --enable-gmp=/home/leif/sage-4.4.3.rc0/local --enable-Singular --enable-factory --enable-libfac --enable-IntegerProgramming --disable-doc --with-malloc=system --disable-debug --includedir=/home/leif/sage-4.4.3.rc0/local/include --enable-omalloc --with-external-config_h=/home/leif/sage-4.4.3.rc0/spkg/build/singular-3-1-0-4-20100214/src/Singular/omSingularConfig.h --with-track-custom --enable-Plural --with-factory --with-libfac --with-Singular=yes --cache-file=.././config.cache --srcdir=. --no-create --no-recursion\n...\n```\n",
     "created_at": "2010-06-06T19:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85496",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85359",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -197,15 +197,15 @@ running /bin/sh ./configure  --prefix=/home/leif/sage-4.4.3.rc0/local --exec-pre
 
 ---
 
-archive/issue_comments_085497.json:
+archive/issue_comments_085360.json:
 ```json
 {
     "body": "Replying to [comment:4 leif]:\n> Funny, on Linux the Singular (sub-)packages are configured with `--without-lex --without-bison` (though I have flex and bison, with aliases \"lex\" and \"yacc\", installed).\n> And `install.log` contains\n> {{{\n> configure: warning: building without lex -- make might fail\n> checking for bison... (cached) bison\n> }}}\n> \n> The patches look ok to me, I'll test them and the new spkg soon - but only on a Linux box...\n\nThe more I look at this, the more I think the Singular package as a whole is seriously screwed up. \n\nYou might notice in SPKG.txt my comment that there are 5-copies of `install-sh` in the package. Clearly someone was not short of disk space! \n\nAs you say, Singular is configured with `-without-lex --without-bison`, but there appears to be no such options to the configure script, as \n\n\n```\n$ configure --help | grep bison\n```\n\n\nproduces no output - same with lex. So I suspect those options are doing nothing at all. \n\nI've tested the new spkg on a Solaris box which **does** have flex in the path. In which case I see:\n\n\n```\nsh flexer.sh -I -Pyylp -t libparse.l >libparse.cc.lmp\ncp libparse.cc.lmp libparse.cc\n```\n\n\nSo the revised package works on Solaris 10 SPARC machines both with and without flex in the path. The two machines are:\n\n* Sun Blade 1000, Solaris 10 03/2005 (the first release of Solaris 10), 2 GB RAM, dual 900 MHz UltraSPARC III+ 64-bit processors, **with flex** in the path.\n* Sun Blade 2000, Solaris 10 10/2009 (the latest update of Solaris 10), 8 GB RAM, dual 1.2 GHz UltraSPARC III+ 64-bit processors, **without flex** in the path.\n\nHardware wise these machines are quite similar (the motherboards are interchangeable), but one has the oldest and one the latest release of Solaris 10. So I think this is a fair test that the changes are a reasonable hack to get a **very** poor package to work.\n\nI've just downloaded the latest source code (3.1.1) and discovered the Singular code still looks a complete mess \n* Multiple copies of install-sh etc\n* ` make distclean` clears nothing useful. \n* ` make check` or ` make test` has no test procedures. \n* ...etc etc. \n\nSo updating it unlikely to be very productive - just give us another set of problems to resolve. \n(It makes me wonder how much I could trust the results from such code). \n\nDave",
     "created_at": "2010-06-06T22:15:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85497",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85360",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -264,15 +264,15 @@ Dave
 
 ---
 
-archive/issue_comments_085498.json:
+archive/issue_comments_085361.json:
 ```json
 {
     "body": "Replying to [comment:6 drkirkby]:\n> I've just downloaded the latest source code (3.1.1) and discovered the Singular code still looks a complete mess \n>  * Multiple copies of install-sh etc\n>  * ` make distclean` clears nothing useful. \n>  * ` make check` or ` make test` has no test procedures. \n>  * ...etc etc. \n> \n> So updating it unlikely to be very productive - just give us another set of problems to resolve. \n\nI think further improvements to the Singular package should be made on another ticket (cf. sage-devel thread [\"Is flex needed to build Sage\"](http://groups.google.com/group/sage-devel/browse_thread/thread/fbf5b7f781c3f523#)).\n\nBuilt Sage 4.4.3 with the updated spkg from scratch on a 32-bit Linux; all doctests passed (see sage-release).\nI though have some minor changes to `SPKG.txt` (typo) and `spkg-install` I'll upload later (i.e. I haven't prepared a patch yet).\n\nAfter passing other sanity checks I've not yet done I'll give it a positive review; 4.4.4.alpha0 is out now though, but I hope it will make it into alpha1.\n\n-Leif",
     "created_at": "2010-06-07T18:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85498",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85361",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -298,15 +298,15 @@ After passing other sanity checks I've not yet done I'll give it a positive revi
 
 ---
 
-archive/issue_comments_085499.json:
+archive/issue_comments_085362.json:
 ```json
 {
     "body": "Replying to [comment:5 leif]:\n> Nice, too:\n\n```\n...\nmake install in factory\nmake[4]: Entering directory '/home/leif/sage-4.4.3.rc0/spkg/build/singular-3-1-0-4-20100214/src/factory'\nWARNING: You need to rerun autoconf. I am proceeding, for now.\ntouch configure\n./config.status --recheck\n...\n```\n\n\n\n```\n-rwxr-x--- 1 leif leif  86183 2008-08-20 14:52:31.000000000 +0200 ./src/factory/configure\n-rw-r----- 1 leif leif  13990 2008-08-20 14:52:32.000000000 +0200 ./src/factory/configure.in\n```\n\nMoreover:\n\n```\n-rw-r----- 1 leif leif 112167 2008-11-12 13:51:53.000000000 +0100 ./src/Singular/grammar.cc\n-rw-r----- 1 leif leif   2673 2008-03-19 18:51:43.000000000 +0100 ./src/Singular/grammar.h\n-rw-r----- 1 leif leif  44955 2009-02-27 18:25:22.000000000 +0100 ./src/Singular/grammar.y\n```\n\n(In addition to `libparse.l` which is newer than `libparse.cc` by only *one second*.)",
     "created_at": "2010-06-08T00:15:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85499",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85362",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -344,15 +344,15 @@ Moreover:
 
 ---
 
-archive/issue_comments_085500.json:
+archive/issue_comments_085363.json:
 ```json
 {
     "body": "Replying to [comment:7 leif]:\n\n> After passing other sanity checks I've not yet done I'll give it a positive review; 4.4.4.alpha0 is out now though, but I hope it will make it into alpha1.\n> \n> -Leif\n\nI could remake it and touch 'factory/configure' but this does not seem be causing any build problems. As you remarked above, other issues with this package need another ticket. \n\nI get the feeling this release is going to be made quite soon. See Mike Hansen's comment when he announced the alpha0.\n\n*Sage 4.4.4.alpha0 has been released.  With the exception of a few more patches, I think this should be pretty close to final.*\n\nso I'd rather not try to solve too much in this Singular package, and let the ticket drag on. You know I feel the complete package needs work. \n\nDave",
     "created_at": "2010-06-08T00:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85500",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85363",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -376,15 +376,15 @@ Dave
 
 ---
 
-archive/issue_comments_085501.json:
+archive/issue_comments_085364.json:
 ```json
 {
     "body": "Replying to [comment:9 drkirkby]:\n> I could remake it and touch 'factory/configure' but this does not seem be causing any build problems.\n\n**Yes**, just to avoid the annoying message (as mentioned, it actually differs only by one second).\n\nWe should get another dumb message if bison is not installed (in contrast to flex, where `--without-lex` in fact only triggers \"... make *might* fail\").\n\n> As you remarked above, other issues with this package need another ticket. \n> \n> I get the feeling this release is going to be made quite soon. See Mike Hansen's comment when he announced the alpha0.\n\n:-)\n \n> *Sage 4.4.4.alpha0 has been released.  With the exception of a few more patches, I think this should be pretty close to final.*\n\nA few more...\n\nI'll try to hurry.\n\nBtw, in `spkg-install`: `s/create create/create/` (the typo I mentioned, **not** in `SPKG.txt`)",
     "created_at": "2010-06-08T01:25:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85501",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85364",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -413,15 +413,15 @@ Btw, in `spkg-install`: `s/create create/create/` (the typo I mentioned, **not**
 
 ---
 
-archive/issue_comments_085502.json:
+archive/issue_comments_085365.json:
 ```json
 {
     "body": "And you can substitute\n\n```\n  if [ \"x$SAGE64\" = xyes ]; then\n    echo \"64-bit of Singular\"\n    CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n    CXXFLAGS=\"-O2 -g -m64\"; export CXXFLAGS\n    CPPFLAGS=\"-O2 -g -m64\"; export CPPFLAGS\n    LDFLAGS=\"-m64 \"; export LDFLAGS\n    DYNAMIC_KERNEL=\"--without-dynamic-kernel\"; export DYNAMIC_KERNEL\n  fi\n```\n\nby\n\n```\n  if [ \"x$SAGE64\" = xyes ]; then\n    echo \"64-bit build of Singular\"\n    CFLAGS=\"-O2 -g -m64\"\n    CXXFLAGS=\"-O2 -g -m64\"\n    CPPFLAGS=\"-O2 -g -m64\"\n    LDFLAGS=\"-m64\"; export LDFLAGS\n    DYNAMIC_KERNEL=\"--without-dynamic-kernel\"; export DYNAMIC_KERNEL\n  fi\n```\n\n(Add *\"build\"* or change it to *\"Building 64-bit version of...\"*; I dont think 64 bits of Singular would be enough. The other flags are already exported a few lines below.)",
     "created_at": "2010-06-08T01:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85502",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85365",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -457,15 +457,15 @@ by
 
 ---
 
-archive/issue_comments_085503.json:
+archive/issue_comments_085366.json:
 ```json
 {
     "body": "Actually by:\n\n```\n  if [ \"x$SAGE64\" = xyes ]; then\n    echo \"64-bit build of Singular\"\n    CFLAGS=\"-O2 -g -m64\"\n    CXXFLAGS=\"-O2 -g -m64\"\n    CPPFLAGS=\"-O2 -g -m64\"\n    LDFLAGS=\"-m64\"; export LDFLAGS\n    if [ `uname` = \"Darwin\" ]; then\n      DYNAMIC_KERNEL=\"--without-dynamic-kernel\"; export DYNAMIC_KERNEL\n    fi\n  fi\n```\n\n\nThen I'll give it a positive review... :)",
     "created_at": "2010-06-08T01:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85503",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85366",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -491,15 +491,15 @@ Then I'll give it a positive review... :)
 
 ---
 
-archive/issue_comments_085504.json:
+archive/issue_comments_085367.json:
 ```json
 {
     "body": "OK, I've made some changes. I hope these are ok with you. \n\n* Changed the timestamp on the configure script with 'touch'\n* Moved all the 'export' commands to one place - it seemed a bit pointless exporting LDFLAGS and DYNAMIC_KERNEL from inside the SAGE64 code, whereas others were exported multiple times on other lines. Now all variables are exported once, and only once and done in one place. \n* Changed $RM to 'rm', $CHMOD to 'chmod' etc. I've done quite a few of these in the past, as it makes the code easier to read. \n* The 'SAGE64' test was actually inside an 'else' part of `if [ $SAGE_DEBUG = 1 ] ; then ` bit of code, so would have not been executed had someone set SAGE_DEBUG to 1. As such it would have been impossible to debug the code in 64-bit mode on systems where SAGE64 needed to be set. The SAGE64 test is now done irrespective of whether debugging or not. \n* Ensured $SAGE_LOCAL/include is the first CPPFLAG, so the Sage include files are loaded before others. A failure to do this was causing some old headers on Solaris to be included, instead of the newer ones in Sage. (The same is happening with mathplotlib I believe)\n* Removed \"-O2 -g -m64\" from CPPFLAGS, as these should not be passed to the pre-processor, but the compiler. They should go into CFLAGS and CXXFLAGS, not CPPFLAGS. \n* I did **not** change DYNAMIC_KERNEL to be only used on OS X (Darwin), as the Singular documentation specifically says this should be used on Solaris. \n\nI've tested on Solaris 32-bit (SPARC) on several systems, Linux and OS X - all work fine. It does not work fully on OpenSolaris x64, as the CFLAGS and CXXFLAGS are not getting passed every time the compiler is invoked - there are about 6 cases where the flag does not get passed. This needs to be resolved at a later date. \n\nHopefully the package is a bit cleaner now. It's still a mess, but it's a start to a cleaner build system. \n\nThe updated package is in the original place - http://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg An updated patch file is attached to the ticket.\n\nTest results are below for one Solaris system, one Linux system and one OS X system. \n\nDave \n\n == On bsd.math (OS X) ==\n\n```\nSuccessfully installed singular-3.1.0.4.p6\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing singular-3.1.0.4.p6.spkg\n[kirkby@bsd sage-4.4.2]$ uname -a \nDarwin bsd.local 10.3.0 Darwin Kernel Version 10.3.0: Fri Feb 26 11:58:09 PST 2010; root:xnu-1504.3.12~1/RELEASE_I386 i386 i386 MacPro1,\n1 Darwin\n[kirkby@bsd sage-4.4.2]$ \n```\n\n\n == On sage.math (Linux) ==\n\n```\nSuccessfully installed singular-3.1.0.4.p6\nNow cleaning up tmp files.\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing singular-3.1.0.4.p6.spkg\nkirkby@sage:~/sage-4.4.2$ uname -a\nLinux sage.math.washington.edu 2.6.24-26-server #1 SMP Tue Dec 1 18:26:43 UTC 2009 x86_64 GNU/Linux\n```\n\n\n == On t2.math (Solaris 10 on SPARC) ==\n\n```\nsys     4m38.647s\nSuccessfully installed singular-3.1.0.4.p6\nNow cleaning up tmp files.\nrm: Cannot remove any directory in the path of the current working directory\n/rootpool2/local/kirkby/sage-4.4.3/spkg/build/singular-3.1.0.4.p6\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing singular-3.1.0.4.p6.spkg\n```\n",
     "created_at": "2010-06-08T13:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85504",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85367",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -569,15 +569,15 @@ Finished installing singular-3.1.0.4.p6.spkg
 
 ---
 
-archive/issue_comments_085505.json:
+archive/issue_comments_085368.json:
 ```json
 {
     "body": "The more I look at it, the more things don't make sense to me... :(\n\nI would have been happy if you only fixed the *\"Solaris doesn't work with dynamic kernel\"* issue, but see below...\n\nReplying to [comment:13 drkirkby]:\n> OK, I've made some changes. I hope these are ok with you.\n> \n \n> * Changed the timestamp on the configure script with 'touch'\n\nOk. (The comment in `SPKG.txt` though mentions `factory/configure`, not `src/factory/configure`.)\n\n\n>  * Moved all the 'export' commands to one place - it seemed a bit pointless exporting LDFLAGS and DYNAMIC_KERNEL from inside the SAGE64 code, whereas others were exported multiple times on other lines. Now all variables are exported once, and only once and done in one place.\n\nI do not really agree.\n* `DYNAMIC_KERNEL` is **only** used in `spkg-install`, so we actually **don't** have to **export it at all**.\n* There is a difference between *exporting empty* variables and *not exporting* them, so in general variables should only be exported when necessary.\n \n\n>  * Changed $RM to 'rm', $CHMOD to 'chmod' etc. I've done quite a few of these in the past, as it makes the code easier to read.\n\nI don't agree either. This inhibits redefining them on ill or ill-configured systems. (Nor can I see it being easier to read.) They are all defined in `sage-env` (if not overridden by the user), so we can rely on them.\n\n\n>  * The 'SAGE64' test was actually inside an 'else' part of `if [ $SAGE_DEBUG = 1 ] ; then ` bit of code, so would have not been executed had someone set SAGE_DEBUG to 1. As such it would have been impossible to debug the code in 64-bit mode on systems where SAGE64 needed to be set. The SAGE64 test is now done irrespective of whether debugging or not.\n\nOk, though `SAGE_DEBUG` is set to zero in the same file.\n\n\n>  * Ensured $SAGE_LOCAL/include is the first CPPFLAG, so the Sage include files are loaded before others. A failure to do this was causing some old headers on Solaris to be included, instead of the newer ones in Sage. (The same is happening with mathplotlib I believe)\n\nOk. (This should usually be achievable by some `configure` option.)\n\n\n>  * Removed \"-O2 -g -m64\" from CPPFLAGS, as these should not be passed to the pre-processor, but the compiler. They should go into CFLAGS and CXXFLAGS, not CPPFLAGS.\n\nIn general, at least `-m64` **is required** for the preprocessor, too (optimization flags etc. *might* as well be used by it).\n\n\n>  * I did **not** change DYNAMIC_KERNEL to be only used on OS X (Darwin), as the Singular documentation specifically says this should be used on Solaris.\n\nWell, setting it for Darwin was already redundant, so Solaris actually does **not** need it either (and remember it previously worked on e.g. t2.math):\n\n```\n# disable the dynamic kernel, except on Linux\nif [ \"$UNAME\" = \"Linux\" ]; then\n     DYNAMIC_KERNEL=\"\"\nelse\n     DYNAMIC_KERNEL=\"--without-dynamic-kernel\"\nfi\n```\n\n(This otherwise shouldn't depend on `SAGE64`, because it is not directly related.)\nPerhaps we should add a comment to `SPKG.txt` that it is currently disabled on **all** systems but Linux, which especially includes MacOS/Darwin and Solaris.\n\n\n> I've tested on Solaris 32-bit (SPARC) on several systems, Linux and OS X - all work fine. It does not work fully on OpenSolaris x64, as the CFLAGS and CXXFLAGS are not getting passed every time the compiler is invoked - there are about 6 cases where the flag does not get passed. This needs to be resolved at a later date. \n> \n> Hopefully the package is a bit cleaner now. It's still a mess, but it's a start to a cleaner build system. \n\n> The updated package is in the original place - http://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg An updated patch file is attached to the ticket.\n\nThe second (newer) commit message isn't that nice:\n\n```\nchangeset:   93:6d0fd18da77b\ntag:         tip\nuser:        kirkby@localhost\ndate:        Tue Jun 08 06:18:30 2010 -0700\nsummary:     #9160 Singular - change timestamp of file and sort out SAGE64 isssue.\n\nchangeset:   92:342850f8fd31\nuser:        David Kirkby <david.kirkby@onetel.net>\ndate:        Sun Jun 06 14:15:05 2010 +0100\nsummary:     #9160 Singular - change timestamp of file and sort out SAGE64 isssue.\n```\n\n\nThanks for all the testing, looking forward to getting rid of this ticket... ;-)\n\n-Leif",
     "created_at": "2010-06-08T21:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85505",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85368",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -668,15 +668,15 @@ Thanks for all the testing, looking forward to getting rid of this ticket... ;-)
 
 ---
 
-archive/issue_comments_085506.json:
+archive/issue_comments_085369.json:
 ```json
 {
     "body": "Just for the record: [\"Ticket #3158 (closed defect: fixed) singular-3-0-4-2-20080405.p1 requires flex\"](http://trac.sagemath.org/sage_trac/ticket/3158) :-)",
     "created_at": "2010-06-08T22:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85506",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85369",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -686,15 +686,15 @@ Just for the record: ["Ticket #3158 (closed defect: fixed) singular-3-0-4-2-2008
 
 ---
 
-archive/issue_comments_085507.json:
+archive/issue_comments_085370.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-08T23:26:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85507",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85370",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -704,15 +704,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_085508.json:
+archive/issue_comments_085371.json:
 ```json
 {
     "body": "Thanks for all your comments. I'm just in the process of testing this, should be ready in under an hour.",
     "created_at": "2010-06-08T23:26:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85508",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85371",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -722,15 +722,15 @@ Thanks for all your comments. I'm just in the process of testing this, should be
 
 ---
 
-archive/issue_comments_085509.json:
+archive/issue_comments_085372.json:
 ```json
 {
     "body": "Part 2 of patch - much less changes than previous version.",
     "created_at": "2010-06-08T23:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85509",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -740,15 +740,15 @@ Part 2 of patch - much less changes than previous version.
 
 ---
 
-archive/issue_comments_085510.json:
+archive/issue_comments_085373.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-09T00:04:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85510",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85373",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -758,15 +758,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_085511.json:
+archive/issue_comments_085374.json:
 ```json
 {
     "body": "Attachment [Three-Singular-issues-part-2.patch](tarball://root/attachments/some-uuid/ticket9160/Three-Singular-issues-part-2.patch) by drkirkby created at 2010-06-09 00:04:59\n\nI went back to the first version, and made a few minor changes from that. So forget the version you did not like. I've overwritten the patch file. \n\n* Removed the code specific to DYNAMIC_KERNEL on OS X, since as you say, it had already been disabled on all platforms except Linux. \n* set CPPFLAGS=\"-I$SAGE_LOCAL/include $CPPFLAGS\" (All flags like -m64, -g etc are still there. I've not removed them, though I'm not convinced they are needed myself). \n* Added required sections to SPKG.txt according to Developers guide. I filled in what I could  - only \"PKG Maintainers\" is empty. \n* Documented in the new \"Special Update/Build Instructions\" section about Solaris and the use of --without-dynamic-kernel option and CONFIG_SHELL. No changes have been made to CONFIG_SHELL or --without-dynamic-kernel. \n* touched src/factory/configure \n* moved SAGE64 stuff outside the debugging section. Even though as you say SAGE_DEBUG is set to zero, it still seems illogical to have it in that section, as if someone wanted to chage SAGE_DEBUG, they would disable the possibility of building 64-bit, which would seem rather stupid. \n* I realised too late my email was not in the commit message, but I don't think that should be a major problem. The subject line is more informative \n\n```\nchangeset:   93:0283ade6e1ad\ntag:         tip\nuser:        kirkby@localhost\ndate:        Tue Jun 08 16:34:56 2010 -0700\nsummary:     #9160. Few code changes, mainly releated to the dynamic kernel, and improved documentation\n```\n\n\nPackage is still at http://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg\n\nThe two patches on the ticket need to be applied. \n\nDave",
     "created_at": "2010-06-09T00:04:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85511",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -801,15 +801,15 @@ Dave
 
 ---
 
-archive/issue_comments_085512.json:
+archive/issue_comments_085375.json:
 ```json
 {
     "body": "Just to clarify, the patches on the ticket do not need to be applied to the package at http://boxen.math.washington.edu/home/kirkby/patches/singular-3.1.0.4.p6.spkg - that package has both patches applied. My wording before may have been ambiguous",
     "created_at": "2010-06-09T00:09:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85512",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85375",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -819,15 +819,15 @@ Just to clarify, the patches on the ticket do not need to be applied to the pack
 
 ---
 
-archive/issue_comments_085513.json:
+archive/issue_comments_085376.json:
 ```json
 {
     "body": "Ah thanks, I just was wondering you unapplied the patches...\n\nAt first glance looks very good to me.\n\n(Only the *\"create create\"* got back in, and as you noticed, there's \n`kirkby`@`localhost` in the commit message. Never mind.)\n\nNow taking a final look at the new spkg...\n\n-Leif\n\nP.S.: `-m32`/`-m64` has a major effect on many preprocessor definitions (e.g. `__i386__` vs. `__x86_64__`, and the whole stuff in `stdint.h` etc., i.e. `SIZEOF_LONG` and the like.).",
     "created_at": "2010-06-09T00:27:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85513",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85376",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -848,15 +848,15 @@ P.S.: `-m32`/`-m64` has a major effect on many preprocessor definitions (e.g. `_
 
 ---
 
-archive/issue_comments_085514.json:
+archive/issue_comments_085377.json:
 ```json
 {
     "body": "Oh, and I forgot:\n\nIf ever somebody again works on this package, the discrepancy between the bison source file `grammar.y` and the currently *much* older files generated from it -- I suspect from a previous version -- (`grammar.cc` and `grammar.h`, all in `src/Singular`) should be inspected.\n\n\n```\n/****************************************\n*  Computer Algebra System SINGULAR     *\n****************************************/\n/* $Id: grammar.y,v 1.129 2009/02/27 17:25:22 Singular Exp $ */\n/*\n* ABSTRACT: SINGULAR shell grammatik\n*/\n```\n\n\n```\n-rw-r----- 1 leif leif 112167 2008-11-12 13:51:53.000000000 +0100 src/Singular/grammar.cc\n-rw-r----- 1 leif leif   2673 2008-03-19 18:51:43.000000000 +0100 src/Singular/grammar.h\n-rw-r----- 1 leif leif  44955 2009-02-27 18:25:22.000000000 +0100 src/Singular/grammar.y\n```\n\n\nPerhaps worth another note in `SPKG.txt`.",
     "created_at": "2010-06-09T00:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85514",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85377",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -889,15 +889,15 @@ Perhaps worth another note in `SPKG.txt`.
 
 ---
 
-archive/issue_comments_085515.json:
+archive/issue_comments_085378.json:
 ```json
 {
     "body": "Hi, \nit's 1:56 am here, so I am going to bed. If you want to add a reviewer patch to make that comment in SPKG.txt, feel free. Otherwise I'll address it if  you feel its necessary. Personally, the whole package is such a mess, it would seem a thankless task listing what is wrong with it. \n\nNice one you finding the *fixed* #3158. Not a very good fix! I've not looked at the ticket, but I assume it was perhaps fixed and someone removed the code - it is too late here now for me to bother to look. \n\nI never thought about what -m64 would do to the preprocessor and sizeof(long). I can see you have a point there. They say one  learns something every day. \n\n\nDave",
     "created_at": "2010-06-09T01:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85515",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85378",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -915,15 +915,15 @@ Dave
 
 ---
 
-archive/issue_comments_085516.json:
+archive/issue_comments_085379.json:
 ```json
 {
     "body": "\n```\nSuccessfully installed singular-3.1.0.4.p6\nYou can safely delete the temporary build directory\n/home/leif/sage-4.4.4.alpha0/spkg/build/singular-3.1.0.4.p6\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing singular-3.1.0.4.p6.spkg\nleif@californication:~/sage-4.4.4.alpha0$ uname -a\nLinux californication 2.6.28-19-generic #61-Ubuntu SMP Wed May 26 23:35:15 UTC 2010 i686 GNU/Linux\nleif@californication:~/sage-4.4.4.alpha0$ ./sage -t -long devel/sage/sage/libs/singular/\nsage -t -long \"devel/sage/sage/libs/singular/singular-cdefs.pxi\"\n\t [4.3 s]\nsage -t -long \"devel/sage/sage/libs/singular/__init__.py\"   \n\t [0.2 s]\nsage -t -long \"devel/sage/sage/libs/singular/function.pyx\"  \n\t [6.6 s]\nsage -t -long \"devel/sage/sage/libs/singular/ring.pyx\"      \n\t [4.9 s]\nsage -t -long \"devel/sage/sage/libs/singular/function_factory.py\"\n\t [4.3 s]\nsage -t -long \"devel/sage/sage/libs/singular/groebner_strategy.pyx\"\n\t [4.5 s]\nsage -t -long \"devel/sage/sage/libs/singular/singular.pxi\"  \n\t [0.2 s]\nsage -t -long \"devel/sage/sage/libs/singular/option.pyx\"    \n\t [4.9 s]\nsage -t -long \"devel/sage/sage/libs/singular/polynomial.pyx\"\n\t [4.4 s]\nsage -t -long \"devel/sage/sage/libs/singular/singular.pyx\"  \n\t [4.9 s]\n \n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 39.2 seconds\n```\n\n(Ubuntu 9.04 32-bit/Pentium4, new spkg installed on Sage 4.4.4.alpha0)\n\nI'm currently too tired to upload a reviewer patch adding more comments to `SPKG.txt` and perhaps `spkg-install`; it should perhaps also contain a link to the sage-devel thread [\"Is flex needed to build Sage?\"](http://groups.google.com/group/sage-devel/browse_thread/thread/fbf5b7f781c3f523#) which has further suggestions.\n\nWe could also update the ticket description to briefly reflect the outcome.\n\n----\n\n> [...] A huge amount of effort has gone into Singular, and I greatly\n> appreciate that it is open source.  I think the Sage project has a\n> very good relationship with the Singular project, and I hope criticism\n> of the quality of their work will be constructive and not offensive.\n> [...]\n\n> \n\n> It would be cool if some the ideas you guys have could be added to\n\n> http://wiki.sagemath.org/days23.5 \n\n> which is the joint Sage/Singular meeting this summer.\n\n> \n\n> -- William\n(from the sage-devel thread)",
     "created_at": "2010-06-09T02:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85516",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85379",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -995,15 +995,15 @@ We could also update the ticket description to briefly reflect the outcome.
 
 ---
 
-archive/issue_comments_085517.json:
+archive/issue_comments_085380.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-09T02:47:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85517",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85380",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1013,15 +1013,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_085518.json:
+archive/issue_comments_085381.json:
 ```json
 {
     "body": "Meanwhile, there's a new Singular package (p7; two simple patches to `SPKG.txt` and `spkg-install`) at http://trac.sagemath.org/sage_trac/ticket/9185#comment:2\n\n[comment:ticket:9185:2 mpatel]:\n> I've put a new spkg at\n> \n>  * http://sage.math.washington.edu/home/mpatel/trac/9185/singular-3.1.0.4.p7.spkg\n> \n> It's based on the package mentioned in [comment:ticket:9160:18 this comment] at #9160.  If there are more changes at that ticket, I can reapply the patch above and make a new spkg.\n\nI.e., the package there is currently up-to-date, based on our latest p6.\n\nAnd here is a shortcut to the [simple patch](http://trac.sagemath.org/sage_trac/attachment/ticket/9185/trac_9185-singular_makeflags.patch).",
     "created_at": "2010-06-09T03:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85518",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85381",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1042,15 +1042,15 @@ And here is a shortcut to the [simple patch](http://trac.sagemath.org/sage_trac/
 
 ---
 
-archive/issue_comments_085519.json:
+archive/issue_comments_085382.json:
 ```json
 {
     "body": "I've checked and this works on Cygwin as well.",
     "created_at": "2010-06-09T06:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85519",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85382",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1060,15 +1060,15 @@ I've checked and this works on Cygwin as well.
 
 ---
 
-archive/issue_comments_085520.json:
+archive/issue_comments_085383.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-09T06:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85520",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85383",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1078,15 +1078,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_085521.json:
+archive/issue_comments_085384.json:
 ```json
 {
     "body": "Attachment [singular-simplified.patch](tarball://root/attachments/some-uuid/ticket9160/singular-simplified.patch) by @kiwifb created at 2010-06-12 09:40:35\n\nRemove the rebuilding of factory and libfac from spkg-install",
     "created_at": "2010-06-12T09:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85521",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85384",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -1098,15 +1098,15 @@ Remove the rebuilding of factory and libfac from spkg-install
 
 ---
 
-archive/issue_comments_085522.json:
+archive/issue_comments_085385.json:
 ```json
 {
     "body": "After all the discussion we had on the mailing list about factory and libfac\nI am suggesting the above patch for inclusion.",
     "created_at": "2010-06-12T09:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85522",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85385",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -1117,15 +1117,15 @@ I am suggesting the above patch for inclusion.
 
 ---
 
-archive/issue_comments_085523.json:
+archive/issue_comments_085386.json:
 ```json
 {
     "body": "Sorry didn't notice the ticket was closed will open another ticket for this shortly.",
     "created_at": "2010-06-12T09:50:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85523",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85386",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -1135,15 +1135,15 @@ Sorry didn't notice the ticket was closed will open another ticket for this shor
 
 ---
 
-archive/issue_comments_085524.json:
+archive/issue_comments_085387.json:
 ```json
 {
     "body": "Reported upstream: http://www.singular.uni-kl.de:8002/trac/ticket/252",
     "created_at": "2010-08-16T22:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85524",
-    "user": "@alexanderdreyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85387",
+    "user": "https://github.com/alexanderdreyer"
 }
 ```
 
@@ -1153,15 +1153,15 @@ Reported upstream: http://www.singular.uni-kl.de:8002/trac/ticket/252
 
 ---
 
-archive/issue_comments_085525.json:
+archive/issue_comments_085388.json:
 ```json
 {
     "body": "While creating the tar file of the sources (from svn), touch Singular/grammar.cc and Singular/scanner.cc will be done.",
     "created_at": "2010-08-22T21:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85525",
-    "user": "@alexanderdreyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9160#issuecomment-85388",
+    "user": "https://github.com/alexanderdreyer"
 }
 ```
 

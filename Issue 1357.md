@@ -6,15 +6,13 @@ archive/issues_001357.json:
     "body": "Assignee: cwitty\n\nSomething like this should work:\n\n```\nsage: x = polygen(ZZ)\nsage: (x^2 + x + 1).roots(ring=QQbar)\n```\n\nbut currently it doesn't.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1357\n\n",
     "created_at": "2007-12-02T01:28:37Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "the polynomial .roots() method should work with ring=QQbar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1357",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: cwitty
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1357
 
 ---
 
-archive/issue_comments_008677.json:
+archive/issue_comments_008653.json:
 ```json
 {
     "body": "Attachment [1357.patch](tarball://root/attachments/some-uuid/ticket1357/1357.patch) by cwitty created at 2007-12-02 05:21:13",
     "created_at": "2007-12-02T05:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1357",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1357#issuecomment-8677",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1357#issuecomment-8653",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -54,15 +52,15 @@ Attachment [1357.patch](tarball://root/attachments/some-uuid/ticket1357/1357.pat
 
 ---
 
-archive/issue_comments_008678.json:
+archive/issue_comments_008654.json:
 ```json
 {
     "body": "Before:\n\n```\nsage: from sage.rings.polynomial.complex_roots import complex_roots\nsage: E = EllipticCurve('389a')\nsage: f = E.division_polynomial(3)\nsage: interval_roots = f.roots(ring=CIF)\nsage: x_coords = [QQbar.polynomial_root(f, x_interval[0]) for x_interval in interval_roots]\nsage: f = E.defining_polynomial()\nsage: y = polygen(QQbar,'y')\nsage: points = []\nsage: for x in x_coords:\n...       g = f(x,y,1)\n...       rootsg = complex_roots(g, min_prec=53)\n...       for root in rootsg:\n...           y_coord = root[0]\n...           yy = QQbar.polynomial_root(g, y_coord)\n...           points.append([x, yy])\n```\n\nAfter:\n\n```\nsage: E = EllipticCurve('389a')\nsage: f = E.division_polynomial(3)\nsage: x_coords = f.roots(ring=QQbar)\nsage: g = E.defining_polynomial()\nsage: y = polygen(QQbar, 'y')\nsage: points = []\nsage: for x in x_coords:\n...    h = g(x[0],y,1)\n...    rootsh = h.roots(ring=QQbar)\n...    for root in rootsh:\n...        points.append([x[0], root[0]])\n```\n",
     "created_at": "2007-12-02T19:23:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1357",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1357#issuecomment-8678",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1357#issuecomment-8654",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -107,15 +105,15 @@ sage: for x in x_coords:
 
 ---
 
-archive/issue_comments_008679.json:
+archive/issue_comments_008655.json:
 ```json
 {
     "body": "Merged in 2.8.15.rc0.",
     "created_at": "2007-12-02T20:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1357",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1357#issuecomment-8679",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1357#issuecomment-8655",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -125,15 +123,15 @@ Merged in 2.8.15.rc0.
 
 ---
 
-archive/issue_comments_008680.json:
+archive/issue_comments_008656.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-02T20:11:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1357",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1357#issuecomment-8680",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1357#issuecomment-8656",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_008296.json:
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nKeywords: tab completion, dir, getattr\n\nThis is caused by #7981.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8296\n\n",
     "created_at": "2010-02-17T21:12:53Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "tab completion broken in emacs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8296",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: @nthiery
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8296
 
 ---
 
-archive/issue_comments_073494.json:
+archive/issue_comments_073371.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-17T21:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73494",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73371",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_073495.json:
+archive/issue_comments_073372.json:
 ```json
 {
     "body": "Attachment [trac_8296-fix-tab-completion-emacs-nt.patch](tarball://root/attachments/some-uuid/ticket8296/trac_8296-fix-tab-completion-emacs-nt.patch) by @nthiery created at 2010-02-17 21:50:50",
     "created_at": "2010-02-17T21:50:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73495",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73372",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -69,15 +68,15 @@ Attachment [trac_8296-fix-tab-completion-emacs-nt.patch](tarball://root/attachme
 
 ---
 
-archive/issue_comments_073496.json:
+archive/issue_comments_073373.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2010-03-08T17:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73496",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73373",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_073497.json:
+archive/issue_comments_073374.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2010-03-08T20:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73497",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73374",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -105,15 +104,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_073498.json:
+archive/issue_comments_073375.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-08T20:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73498",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73375",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_073499.json:
+archive/issue_comments_073376.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-08T20:54:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8296",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73499",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8296#issuecomment-73376",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

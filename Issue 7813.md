@@ -6,15 +6,13 @@ archive/issues_007813.json:
     "body": "Assignee: @haraldschilly\n\nKeywords: docs\n\nTo disable at least temporarily the dead links, for instance, at\n\n1. http://sagemath.org/doc/genindex.html\n2. http://sagemath.org/doc/tutorial/modindex.html\n3. http://sagemath.org/doc/tutorial/genindex.html\n ...\n\nIssue created by migration from https://trac.sagemath.org/ticket/7813\n\n",
     "created_at": "2010-01-02T03:42:43Z",
     "labels": [
-        "website/wiki",
-        "major",
-        "enhancement"
+        "component: website/wiki"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "No empty links at docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7813",
-    "user": "slosoi"
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 Assignee: @haraldschilly
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7813
 
 ---
 
-archive/issue_comments_067602.json:
+archive/issue_comments_067485.json:
 ```json
 {
     "body": "Attachment [conf.py](tarball://root/attachments/some-uuid/ticket7813/conf.py) by slosoi created at 2010-01-02 03:46:15\n\nSee lines 156, 159, and 162. `hg qnew -f docs patch` did not work for me this time so I include the whole file.",
     "created_at": "2010-01-02T03:46:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7813",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7813#issuecomment-67602",
-    "user": "slosoi"
+    "url": "https://github.com/sagemath/sagetest/issues/7813#issuecomment-67485",
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 

@@ -6,14 +6,13 @@ archive/issues_006356.json:
     "body": "Assignee: tbd\n\nKeywords: doctest, notebook\n\nThe title says it all.\nSee http://groups.google.com/group/sage-devel/msg/636fda60ff2f4d1c\n\nAlso, it would be nice to have a button when using notebook that would\nlaunch sage -t on it and display the result.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6356\n\n",
     "created_at": "2009-06-18T16:55:04Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "title": "Implement sage -t notebook.sws",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6356",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: tbd
@@ -34,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6356
 
 ---
 
-archive/issue_comments_050832.json:
+archive/issue_comments_050735.json:
 ```json
 {
     "body": "#6357 duplicates this.  Since I commented on that one a lot before seeing this one, I've closed this.",
     "created_at": "2009-06-18T19:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6356#issuecomment-50832",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6356#issuecomment-50735",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -52,15 +51,15 @@ archive/issue_comments_050832.json:
 
 ---
 
-archive/issue_comments_050833.json:
+archive/issue_comments_050736.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-06-18T19:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6356#issuecomment-50833",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6356#issuecomment-50736",
+    "user": "https://github.com/williamstein"
 }
 ```
 

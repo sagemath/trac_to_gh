@@ -6,15 +6,13 @@ archive/issues_005650.json:
     "body": "Keywords: gamma_inc log performance speed\n\nThe following is from code for evaluating Riemann theta functions on sage.math:\n\n\n```\nsage: %prun siegel_theta(tau3p, 1/10*vector([1/2 + I, 2/3*I, 1.222*I]))\n         137700 function calls (136832 primitive calls) in 2.221 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n       23    1.668    0.073    1.674    0.073 {method 'gamma_inc' of 'sage.rings.complex_number.ComplexNumber' objects}\n    791/1    0.153    0.000    0.380    0.380 riemann_theta.py:313(find_integer_points)\n     1601    0.066    0.000    0.066    0.000 {method 'sin' of 'sage.rings.real_mpfr.RealNumber' objects}\n     5706    0.056    0.000    0.077    0.000 free_module.py:742(__call__)\n        1    0.029    0.029    0.137    0.137 riemann_theta.py:51(finite_sum_without_derivatives)\n     1602    0.026    0.000    0.026    0.000 {method 'exp' of 'sage.rings.real_mpfr.RealNumber' objects}\n```\n\n\nThe `finite_sum_without_derivatives` is the main loop, which calls sin, cos, and exp each iteration.  But the dominant part is computing an initial error approximation, which computes `gamma_inc` to very high precision a bunch of times, optimizing a parameter.  That takes longer than everything else!  Could a party interested in special functions please speed this up?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5650\n\n",
     "created_at": "2009-03-31T17:02:35Z",
     "labels": [
-        "symbolics",
-        "major",
-        "enhancement"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "speed up gamma_inc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5650",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Keywords: gamma_inc log performance speed
@@ -48,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5650
 
 ---
 
-archive/issue_comments_044118.json:
+archive/issue_comments_044033.json:
 ```json
 {
     "body": "How high precision and for what values of the arguments is this?",
     "created_at": "2009-04-02T08:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44118",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44033",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -66,15 +64,15 @@ How high precision and for what values of the arguments is this?
 
 ---
 
-archive/issue_comments_044119.json:
+archive/issue_comments_044034.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2012-06-01T18:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44119",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44034",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -84,15 +82,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_044120.json:
+archive/issue_comments_044035.json:
 ```json
 {
     "body": "> How high precision and for what values of the arguments is this?\n\nYeah, this is really vague, and the code involved is custom and not in Sage at this time.  It would be helpful to know if #7748, which changed the approximation to mpmath, helped here.  Until such time as we get more details, 'needs info'.",
     "created_at": "2012-06-01T18:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44120",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44035",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -104,15 +102,15 @@ Yeah, this is really vague, and the code involved is custom and not in Sage at t
 
 ---
 
-archive/issue_comments_044121.json:
+archive/issue_comments_044036.json:
 ```json
 {
     "body": "Changing status from needs_info to positive_review.",
     "created_at": "2014-10-11T19:29:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44121",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44036",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -122,15 +120,15 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_comments_044122.json:
+archive/issue_comments_044037.json:
 ```json
 {
     "body": "No answer, close as \"invalid\".",
     "created_at": "2014-10-11T19:29:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44122",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44037",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -140,15 +138,15 @@ No answer, close as "invalid".
 
 ---
 
-archive/issue_comments_044123.json:
+archive/issue_comments_044038.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2014-10-13T15:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5650",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44123",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5650#issuecomment-44038",
+    "user": "https://github.com/vbraun"
 }
 ```
 

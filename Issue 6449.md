@@ -6,15 +6,14 @@ archive/issues_006449.json:
     "body": "Assignee: joyner\n\nCC:  @jhpalmieri @mwhansen\n\nThis is the results of the Abelian groups project at SD16. This is not really finished, but I am going to be pretty busy for the next few weeks so I am posting it here anyway in the hope that somebody else will chip in and finish it off.\n\nThis relies on all of the patches at #5882.\n\nThe new functionality:\n\n- A new class for additive abelian groups. This is very similar to the finitely presented modules class, but with a slightly different print representation. This is mostly finished (although the string representation of morphisms needs a little work).\n\n- A class for \"additive abelian groups embedded in an arbitrary parent\". Think rational points on an elliptic curve, for instance, which should be able to derive from this class and transparently inherit code for things like morphisms and subgroups. This is a lot less complete.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6449\n\n",
     "created_at": "2009-06-30T12:10:53Z",
     "labels": [
-        "group theory",
-        "major",
+        "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Additive abelian groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6449",
-    "user": "@loefflerd"
+    "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: joyner
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6449
 
 ---
 
-archive/issue_comments_051834.json:
+archive/issue_comments_051736.json:
 ```json
 {
     "body": "Here are three patches: the first is the new classes, and the second make alterations to the two places where abelian groups are used \"in an additive way\" in the Sage library to convert them over (which I did chiefly in order to get a feel for how well it would owrk in practice).",
     "created_at": "2009-06-30T16:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51834",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51736",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -57,15 +56,15 @@ Here are three patches: the first is the new classes, and the second make altera
 
 ---
 
-archive/issue_comments_051835.json:
+archive/issue_comments_051737.json:
 ```json
 {
     "body": "I raised this issue in http://trac.sagemath.org/sage_trac/ticket/6291 , that abelian group has different interface that other groups. In particular, they have no identity function, as opposed to all other groups I've tried in Sage. It's a minor thing, but it makes it annoying when you have code that works with arbitrary group. I've looked at the patch, and it doesn't seem to implement it. I figured I should just complain about it now instead of later :)",
     "created_at": "2009-07-05T17:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51835",
-    "user": "jlefebvre"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51737",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jlefebvre"
 }
 ```
 
@@ -75,15 +74,15 @@ I raised this issue in http://trac.sagemath.org/sage_trac/ticket/6291 , that abe
 
 ---
 
-archive/issue_comments_051836.json:
+archive/issue_comments_051738.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"abelian group\".",
     "created_at": "2009-12-28T17:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51836",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51738",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -93,15 +92,15 @@ Changing keywords from "" to "abelian group".
 
 ---
 
-archive/issue_comments_051837.json:
+archive/issue_comments_051739.json:
 ```json
 {
     "body": "I'm hoping that we can sort this out and get it finished!\n\nComments on the patches:\n1. Lines 47-53 of patch 1.  Not sure I understand the issue here.  Isn't each coordinate just reduced modulo the appropriate integer (if positive)?\n2. Some functionality (e.g. annihilator()) is presumably inherited from one of the base classes.  I think it would help if this was written down explicitly in comments, especially as there is more than one base class.\n3. As well as an is_multiplicative() returning False, should tere not be an is_additive() returning True?  Or does that exist already from a base class?\n4. You mention a black-box discrete log would be desirable.  We have that in sage/groups/generic.py -- does that do what is needed here?  Or is the problem that that only deals with the cyclic case?\n5. Patch 2 looks quite simple, I have not looked at it in detail.\n6. Patch 3 is mainly changes on doctest output, but also shows how some code can be simplified using the new framework, which is good.\n\nNow I'll actually try applying the patches to 4.3 and see how it looks.",
     "created_at": "2009-12-28T17:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51837",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51739",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -121,15 +120,15 @@ Now I'll actually try applying the patches to 4.3 and see how it looks.
 
 ---
 
-archive/issue_comments_051838.json:
+archive/issue_comments_051740.json:
 ```json
 {
     "body": "We (Jim Stankewicz and John Cremona) have applied all three patches to sage-4.4.4.  A very small amount of rebasing was needed.  We have so far tested all of additive_abelian_groups, homology, and elliptic_curves;  some more fixing was needed which is in the 4th patch.  Some of the changes in this last patch were just fixing some mistakes made in rebasing manually.\n\nWe are now testing the whole Sage library, but the ticket is ready for review (again!)",
     "created_at": "2010-06-27T03:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51838",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51740",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -141,15 +140,15 @@ We are now testing the whole Sage library, but the ticket is ready for review (a
 
 ---
 
-archive/issue_comments_051839.json:
+archive/issue_comments_051741.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-27T03:25:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51839",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51741",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -159,15 +158,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_051840.json:
+archive/issue_comments_051742.json:
 ```json
 {
     "body": "Positive review on John Cremona's patch, and the rest (that I looked at) looks good too.",
     "created_at": "2010-06-27T05:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51840",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51742",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -177,15 +176,15 @@ Positive review on John Cremona's patch, and the rest (that I looked at) looks g
 
 ---
 
-archive/issue_comments_051841.json:
+archive/issue_comments_051743.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-27T05:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51841",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51743",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -195,15 +194,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_051842.json:
+archive/issue_comments_051744.json:
 ```json
 {
     "body": "Can you upload your rebased versions of the patches?",
     "created_at": "2010-06-30T17:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51842",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51744",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -213,15 +212,15 @@ Can you upload your rebased versions of the patches?
 
 ---
 
-archive/issue_comments_051843.json:
+archive/issue_comments_051745.json:
 ```json
 {
     "body": "Replying to [comment:9 davidloeffler]:\n> Can you upload your rebased versions of the patches?\n\nI think the 4th (review) patch does what is necessary.  Does it?  I remember doing some manual editing after applying the first three (there were some hunks rejected), and that would be reflected in the last patch.\n\nIf that does not work, ask again.  I still have that queue on my laptop.",
     "created_at": "2010-06-30T17:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51843",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51745",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -236,15 +235,15 @@ If that does not work, ask again.  I still have that queue on my laptop.
 
 ---
 
-archive/issue_comments_051844.json:
+archive/issue_comments_051746.json:
 ```json
 {
     "body": "I don't think it works like that. Perhaps the best thing is if you qfold what you've got on your laptop into a single new rebased patch.",
     "created_at": "2010-06-30T18:04:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51844",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51746",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -254,15 +253,15 @@ I don't think it works like that. Perhaps the best thing is if you qfold what yo
 
 ---
 
-archive/issue_comments_051845.json:
+archive/issue_comments_051747.json:
 ```json
 {
     "body": "Replying to [comment:11 davidloeffler]:\n> I don't think it works like that. Perhaps the best thing is if you qfold what you've got on your laptop into a single new rebased patch.\n\nSorry, this will have to wait, as I am falling asleep and it has not worked so far.",
     "created_at": "2010-06-30T19:46:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51845",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51747",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -275,15 +274,15 @@ Sorry, this will have to wait, as I am falling asleep and it has not worked so f
 
 ---
 
-archive/issue_comments_051846.json:
+archive/issue_comments_051748.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-07-01T09:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51846",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51748",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -293,15 +292,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_051847.json:
+archive/issue_comments_051749.json:
 ```json
 {
     "body": "Sorry about that.  There was only trivial rebasing needed to the first patch (it fixed some small bugs in mrange, and those had already been fixed elsewhere, so it was possible to just ignore the failing hunks).  The patch named trac_6449-1a-abgps.patch can therefore replace the one named trac_6449-1-abgps.patch, followed by -2, -3 and -review.  These apply to 4.5.alpha0 (and probably also to 4.4.4, but my 4.4.4 build is currently devoted to the pari upgrade).  I am currently testing the whole sage library -- done (see below).\n\nIf a single folded patch is still required I should be able to do that, but applying 4 patches is not as bad as on some tickets (and they are logically separate).\n\nThere is one doctest failure:\n\n```\nFile \"/storage/jec/sage-4.5.alpha0/devel/sage-6449/sage/groups/abelian_gps/abelian_group.py\", line 538:\n    sage: bool(T) # indirect doctest\nExpected:\n    False\nGot:\n    True\n```\n\nI suggest changing the code of that one-line function to \n\n```\nreturn self.order()>1\n```\n\nbut I don't actually know what is going on there as it's an indirect doctest!",
     "created_at": "2010-07-01T09:50:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51847",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51749",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -332,15 +331,15 @@ but I don't actually know what is going on there as it's an indirect doctest!
 
 ---
 
-archive/issue_comments_051848.json:
+archive/issue_comments_051750.json:
 ```json
 {
     "body": "Replying to [comment:13 cremona]:\n> Sorry about that.  There was only trivial rebasing needed to the first patch (it fixed some small bugs in mrange, and those had already been fixed elsewhere, so it was possible to just ignore the failing hunks).  \n\nYes, that part of the patch got factored out as #6561.\n\n> There is one doctest failure [...]\n> but I don't actually know what is going on there as it's an indirect doctest!\n\nHmm. I see what's happening: that doctest assumes that elliptic curve torsion subgroups are an instance of the old `AbelianGroup` class, while the new patch makes them an instance of my new `AdditiveAbelianGroup`. Patch coming up.\n\nDavid",
     "created_at": "2010-07-01T10:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51848",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51750",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -360,15 +359,15 @@ David
 
 ---
 
-archive/issue_comments_051849.json:
+archive/issue_comments_051751.json:
 ```json
 {
     "body": "Here's a patch. I haven't dealt with the more general problem of checking that `__nonzero__` is consistently implemented -- that's a matter for another ticket, if anybody cares -- but with this patch the offending doctest does pass.",
     "created_at": "2010-07-01T10:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51849",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51751",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -378,15 +377,15 @@ Here's a patch. I haven't dealt with the more general problem of checking that `
 
 ---
 
-archive/issue_comments_051850.json:
+archive/issue_comments_051752.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-01T10:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51850",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51752",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -396,15 +395,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_051851.json:
+archive/issue_comments_051753.json:
 ```json
 {
     "body": "Looks good, so I am putting this back to positive review (originally positively reviewed by Robert Bradshaw).",
     "created_at": "2010-07-01T10:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51851",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51753",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -414,15 +413,15 @@ Looks good, so I am putting this back to positive review (originally positively 
 
 ---
 
-archive/issue_comments_051852.json:
+archive/issue_comments_051754.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-01T10:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51852",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51754",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -432,15 +431,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_051853.json:
+archive/issue_comments_051755.json:
 ```json
 {
     "body": "I actually made that last patch without the other patches applied :-) So I've now realised that there is a problem with applying those patches; whatever I do it won't apply cleanly. If I apply\n\n```\ntrac_6449-1a-abgps.patch\ntrac_6449-2-homology.patch\ntrac_6449-3-elliptic.patch\n```\n\nthen I get a bunch of rejects. If I just delete the .rej files and apply `trac_6449-review.patch` I get even more rejects, and a whole load of doctests fail in elliptic curves. I spent a while fixing them -- most were trivial (although tedious), but one stubborn failure in BSD.py required me to add half a dozen lines of new code to get the coercion system to behave itself; this isn't something that can be left to the release manager!\n\nSo I urge you to go through your personal patch stack, check that everything's qrefreshed, qfold the lot, check it applies 100% cleanly and upload it. (Make sure you don't qpop patches that applied with rejects without qrefreshing them first, even if you didn't make any changes yourself before creating/applying the next patch -- you need to qrefresh so hg knows you've dealt with the rejects. I just made that mistake.) \n\nAlternatively, I can fold and upload what I've got here, and point you to the minor change I had to make to get BSD.py to pass.\n\nDavid",
     "created_at": "2010-07-01T12:10:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51853",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51755",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -464,15 +463,15 @@ David
 
 ---
 
-archive/issue_comments_051854.json:
+archive/issue_comments_051756.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-07-01T12:10:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51854",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51756",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -482,15 +481,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_051855.json:
+archive/issue_comments_051757.json:
 ```json
 {
     "body": "This does not make any sense at all.   I took a fresh clone of 4.5.alpha0 and applied the four patches with rejects and all relevant tests (except that little one) passed.  Can you try again with a pristine build?\n\nSince Jim and I already went through those minor doctest failures fixing them, it's a great pity that you repeated the work.",
     "created_at": "2010-07-01T12:39:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51855",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51757",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -502,15 +501,15 @@ Since Jim and I already went through those minor doctest failures fixing them, i
 
 ---
 
-archive/issue_comments_051856.json:
+archive/issue_comments_051758.json:
 ```json
 {
     "body": "I made a completely fresh clone. Here's what happened:\n\n```\nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel$ cd sage-abgp/\nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-1a-abgps.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-2-homology.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-3-elliptic.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-review.patch http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449-doctest_fix.patch                             \nadding trac_6449-1a-abgps.patch to series file                                                                \nadding trac_6449-2-homology.patch to series file                                                              \nadding trac_6449-3-elliptic.patch to series file                                                              \nadding trac_6449-review.patch to series file                                                                  \nadding trac_6449-doctest_fix.patch to series file                                                             \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               \napplying trac_6449-1a-abgps.patch                                                                             \nnow at: trac_6449-1a-abgps.patch                                                                              \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               \napplying trac_6449-2-homology.patch                                                                           \nnow at: trac_6449-2-homology.patch                                                                            \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush                               \napplying trac_6449-3-elliptic.patch                                                                           \npatching file sage/schemes/elliptic_curves/ell_finite_field.py                                                \nHunk #3 FAILED at 1205                                                                                        \nHunk #5 FAILED at 1295                                                                                        \n2 out of 6 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_finite_field.py.rej        \npatching file sage/schemes/elliptic_curves/ell_torsion.py                                                     \nHunk #6 succeeded at 102 with fuzz 2 (offset 0 lines).                                                        \nHunk #7 succeeded at 149 with fuzz 2 (offset 0 lines).                                                        \npatching file sage/schemes/elliptic_curves/padics.py                                                          \nHunk #2 FAILED at 611                                                                                         \n1 out of 2 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/padics.py.rej                  \npatch failed, unable to continue (try -v)                                                                     \npatch failed, rejects left in working dir                                                                     \nerrors during apply, please fix and refresh trac_6449-3-elliptic.patch                                        \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name \"*.rej\" | xargs rm; mysage -hg qrefresh                  \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpush\napplying trac_6449-review.patch                                                \npatching file sage/schemes/elliptic_curves/ell_finite_field.py                 \nHunk #1 FAILED at 1418                                                         \nHunk #2 FAILED at 1444                                                         \n2 out of 2 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_finite_field.py.rej\npatch failed, unable to continue (try -v)                                                             \npatch failed, rejects left in working dir                                                             \nerrors during apply, please fix and refresh trac_6449-review.patch                                    \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name \"*.rej\" | xargs rm; mysage -hg qrefresh                                                                                                           \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -hg qpushapplying trac_6449-doctest_fix.patch                                           \nnow at: trac_6449-doctest_fix.patch                                            \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ find -name \"*.rej\" | xargs rm; mysage -hg qrefresh                                                                                                           \nrm: missing operand                                                                                           \nTry `rm --help' for more information.                                                                         \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$ mysage -b; mysage -tp 16 sage/schemes/elliptic_curves/                                                                                                       \n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n[snip]\nTesting that Sage starts...\nYes, Sage starts.          \nGlobal iterations: 1       \nFile iterations: 1         \nUsing cached timings to run longest doctests first.\nDoctesting 38 files doing 16 jobs in parallel      \nsage -t  sage/schemes/elliptic_curves/__init__.py  \n         [0.1 s]                                   \nsage -t  sage/schemes/elliptic_curves/ec_database.py\n         [2.5 s]                                    \nsage -t  sage/schemes/elliptic_curves/all.py        \n         [2.7 s]                                    \nsage -t  sage/schemes/elliptic_curves/cm.py         \n         [2.8 s]\nsage -t  sage/schemes/elliptic_curves/ell_padic_field.py\n         [2.9 s]                                        \nsage -t  sage/schemes/elliptic_curves/ell_local_data.py \n         [5.8 s]                                        \nsage -t  sage/schemes/elliptic_curves/ell_wp.py         \n         [3.9 s]                                        \nsage -t  sage/schemes/elliptic_curves/ell_field.py\n         [8.8 s]\nsage -t  sage/schemes/elliptic_curves/descent_two_isogeny.pyx\n         [9.1 s]                                             \nsage -t  sage/schemes/elliptic_curves/ell_tate_curve.py      \n         [9.3 s]                                             \nsage -t  sage/schemes/elliptic_curves/gp_simon.py            \n         [3.8 s]                                             \nsage -t  sage/schemes/elliptic_curves/ell_torsion.py         \n         [10.5 s]                                            \nsage -t  sage/schemes/elliptic_curves/gp_cremona.py          \n         [4.9 s]                                             \nsage -t  sage/schemes/elliptic_curves/gal_reps.py            \n         [7.3 s]                                             \nsage -t  sage/schemes/elliptic_curves/kodaira_symbol.py      \n         [2.4 s]                                             \nsage -t  sage/schemes/elliptic_curves/mod5family.py          \n         [2.9 s]                                             \nsage -t  sage/schemes/elliptic_curves/modular_parametrization.py\n         [3.6 s]                                                \nsage -t  sage/schemes/elliptic_curves/monsky_washnitzer.py      \n         [4.0 s]                                                \nsage -t  sage/schemes/elliptic_curves/padic_height.py           \n         [3.2 s]                                                \nsage -t  sage/schemes/elliptic_curves/BSD.py                    \nException raised by doctesting framework. Use -verbose for details.\n         [20.7 s]                                                  \nsage -t  sage/schemes/elliptic_curves/lseries_ell.py               \n         [9.0 s]                                                   \nsage -t  sage/schemes/elliptic_curves/sea.py                       \n         [2.1 s]                                                   \nsage -t  sage/schemes/elliptic_curves/weierstrass_morphism.py      \n         [3.6 s]                                                   \nsage -t  sage/schemes/elliptic_curves/constructor.py\n         [29.8 s]\nsage -t  sage/schemes/elliptic_curves/ell_finite_field.py\n**********************************************************************\nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-abgp/sage/schemes/elliptic_curves/ell_finite_field.py\", line 1421:                                                                                                         \n    sage: E.abelian_group()                                                                                   \nExpected:                                                                                                     \n    (Multiplicative Abelian Group isomorphic to C10, ...                                                      \nGot:                                                                                                          \n    Additive abelian group isomorphic to Z/10 embedded in Abelian group of points on Elliptic Curve defined by y^2 = x^3 + 2*x + 5 over Finite Field of size 11                                                             \n**********************************************************************                                        \nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-abgp/sage/schemes/elliptic_curves/ell_finite_field.py\", line 1427:                                                                                                         \n    sage: E.abelian_group()                                                                                   \nExpected:                                                                                                     \n    (Multiplicative Abelian Group isomorphic to C22 x C2, ...                                                 \nGot:                                                                                                          \n    Additive abelian group isomorphic to Z/2 + Z/22 embedded in Abelian group of points on Elliptic Curve defined by y^2 = x^3 + 2*x + 5 over Finite Field of size 41                                                       \n**********************************************************************                                        \nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-abgp/sage/schemes/elliptic_curves/ell_finite_field.py\", line 1434:                                                                                                         \n    sage: E.abelian_group()                                                                                   \nExpected:                                                                                                     \n    (Multiplicative Abelian Group isomorphic to C26 x C26, ...                                                \nGot:                                                                                                          \n    Additive abelian group isomorphic to Z/26 + Z/26 embedded in Abelian group of points on Elliptic Curve defined by y^2 = x^3 + (a^4+a^3+2*a^2+2*a)*x + (2*a^5+2*a^3+2*a^2+1) over Finite Field in a of size 3^6          \n**********************************************************************                                        \nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-abgp/sage/schemes/elliptic_curves/ell_finite_field.py\", line 1441:                                                                                                         \n    sage: E.abelian_group()                                                                                   \nExpected:                                                                                                     \n    (Multiplicative Abelian Group isomorphic to C1031352, ...                                                 \nGot:                                                                                                          \n    Additive abelian group isomorphic to Z/1031352 embedded in Abelian group of points on Elliptic Curve defined by y^2 = x^3 + (2*a^2+48*a+27)*x + (89*a^2+76*a+24) over Finite Field in a of size 101^3                   \n**********************************************************************                                        \nFile \"/storage/masiao/sage-4.5.alpha1/devel/sage-abgp/sage/schemes/elliptic_curves/ell_finite_field.py\", line 1447:                                                                                                         \n    sage: E.abelian_group()                                                                                   \nExpected:                                                                                                     \n    (Trivial Abelian Group, ())                                                                               \nGot:                                                                                                          \n    Trivial group embedded in Abelian group of points on Elliptic Curve defined by y^2 + y = x^3 + x + 1 over Finite Field of size 2                                                                                        \n**********************************************************************                                        \n1 items had failures:                                                                                         \n   5 of  24 in __main__.example_24                                                                            \n***Test Failed*** 5 failures.                                                                                 \nFor whitespace errors, see the file /home/masiao/.sage//tmp/.doctest_ell_finite_field.py                      \n         [34.9 s]                                                                                             \nsage -t  sage/schemes/elliptic_curves/period_lattice.py                                                       \n         [18.6 s]                                                                                             \nsage -t  sage/schemes/elliptic_curves/formal_group.py                                                         \n         [33.2 s]                                                                                             \nsage -t  sage/schemes/elliptic_curves/ell_modular_symbols.py                                                  \n         [39.3 s]                                                                                             \nsage -t  sage/schemes/elliptic_curves/padics.py\n         [21.6 s]\nsage -t  sage/schemes/elliptic_curves/ell_egros.py\n         [41.1 s]\nsage -t  sage/schemes/elliptic_curves/ell_curve_isogeny.py\n         [45.4 s]\nsage -t  sage/schemes/elliptic_curves/ell_generic.py\n         [48.5 s]\nsage -t  sage/schemes/elliptic_curves/ell_point.py\n         [51.0 s]\nsage -t  sage/schemes/elliptic_curves/padic_lseries.py\n         [42.0 s]\nsage -t  sage/schemes/elliptic_curves/ell_rational_field.py\n         [62.7 s]\nsage -t  sage/schemes/elliptic_curves/ell_number_field.py\n         [67.5 s]\nsage -t  sage/schemes/elliptic_curves/sha_tate.py\n         [55.0 s]\nsage -t  sage/schemes/elliptic_curves/heegner.py\n         [97.1 s]\n\n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  devel/sage-abgp/sage/schemes/elliptic_curves/BSD.py # Exception from doctest framework\n        sage -t  devel/sage-abgp/sage/schemes/elliptic_curves/ell_finite_field.py # 5 doctests failed\n        \n----------------------------------------------------------------------\nTimings have been updated.\nTotal time for all tests: 109.3 seconds\nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgp$\n```\n\n\nThe only explanation I can come up with is that this has something to do with #9127, which was more or less the only non-graph-theory patch merged in 4.5.alpha1.\n\nDavid",
     "created_at": "2010-07-01T12:53:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51856",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51758",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -712,15 +711,15 @@ David
 
 ---
 
-archive/issue_comments_051857.json:
+archive/issue_comments_051759.json:
 ```json
 {
     "body": "I can't be #9127 -- all that does is add three dots to a doctest output!\n\nI'll try again with alpha1, but I am seeing tutees all afternoon.",
     "created_at": "2010-07-01T13:08:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51857",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51759",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -732,15 +731,15 @@ I'll try again with alpha1, but I am seeing tutees all afternoon.
 
 ---
 
-archive/issue_comments_051858.json:
+archive/issue_comments_051760.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-01T15:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51858",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51760",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -750,15 +749,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_051859.json:
+archive/issue_comments_051761.json:
 ```json
 {
     "body": "I guess the moral here is that one can't rely on an old outdated patch always failing in exactly the same way, i.e. the selection of exactly which hunks apply and which don't seems to be a bit random. \n\nAnyway: another issue here is the danger of conflicts with other positively-reviewed patches which touch elliptic curves. Right now there are 13 of these from 11 tickets: 7930, 8680, 9087, 9110, 9266, 9287, 9302, 9313, 9324, 9342 and 9372. \n\nSo I downloaded all of these, applied the patches from this ticket (including the review patch), and cleaned up the mess, and everything was fine except for one thing: there wasn't a coercion from the torsion subgroup of an elliptic curve to the full M-W group, and more generally from an additive abelian group wrapper to its \"universe\", which causes the doctest failure in BSD.py reported in my previous message. I added an UnwrappingMorphism class to additive_abelian_wrapper which does exactly that. With that change, all doctests seem to pass.\n\nIt turns out that the patch thus obtained actually doesn't conflict with any of the other positively reviewed patches above except #9278, but you need that one installed. It passes doctests both with and without the other 10 tickets. If someone could quickly check that the new UnwrappingMorphism looks plausible, then I think this will finally be ready to merge.",
     "created_at": "2010-07-01T15:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51859",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51761",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -774,15 +773,15 @@ It turns out that the patch thus obtained actually doesn't conflict with any of 
 
 ---
 
-archive/issue_comments_051860.json:
+archive/issue_comments_051762.json:
 ```json
 {
     "body": "Attachment [trac_6449_everything.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_everything.patch) by @loefflerd created at 2010-07-01 15:21:01\n\nQfolded patch. Applies to 4.5.alpha1 with the patches from #9287.",
     "created_at": "2010-07-01T15:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51860",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51762",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -794,15 +793,15 @@ Qfolded patch. Applies to 4.5.alpha1 with the patches from #9287.
 
 ---
 
-archive/issue_comments_051861.json:
+archive/issue_comments_051763.json:
 ```json
 {
     "body": "I'm very grateful to the time you have spent on this.  I guess it is not surprising that there are lots of e.c. patches in the pipeline given that we are nearing the end of a 2-week Sage Days on Computing with Elliptic Curves.\n\nI'm about to look through those patches, which I am re-listing here: #7930, #8680, #9087, #9110, #9266, #9287, #9302, #9313, #9324, #9342 and #9372 so that trac can make links to make the job easier!",
     "created_at": "2010-07-01T15:36:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51861",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51763",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -814,15 +813,15 @@ I'm about to look through those patches, which I am re-listing here: #7930, #868
 
 ---
 
-archive/issue_comments_051862.json:
+archive/issue_comments_051764.json:
 ```json
 {
     "body": "Well:   on my newly built 4.5.alpha1 and in a new clone:\n\n```\njec@selmer%pwd\n/home/jec/storage/sage-4.5.alpha1\njec@selmer%cd devel/sage-6449/\njec@selmer%hg qinit\njec@selmer%hg qimp ~/trac_6449-1a-abgps.patch \nadding trac_6449-1a-abgps.patch to series file\njec@selmer%hg qpush\napplying trac_6449-1a-abgps.patch\nnow at: trac_6449-1a-abgps.patch\njec@selmer%hg qimp ~/trac_6449-2-homology.patch \nadding trac_6449-2-homology.patch to series file\njec@selmer%hg qpush\napplying trac_6449-2-homology.patch\nnow at: trac_6449-2-homology.patch\njec@selmer%hg qimp ~/trac_6449-3-elliptic.patch \nadding trac_6449-3-elliptic.patch to series file\njec@selmer%hg qpush\napplying trac_6449-3-elliptic.patch\nnow at: trac_6449-3-elliptic.patch\njec@selmer%hg qimp ~/trac_6449-review.patch \nadding trac_6449-review.patch to series file\njec@selmer%hg qpush\napplying trac_6449-review.patch\nnow at: trac_6449-review.patch\njec@selmer%sage -b\n```\n\nwhich I am now testing.  Then I'll try again with the new folded patch!",
     "created_at": "2010-07-01T16:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51862",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51764",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -862,15 +861,15 @@ which I am now testing.  Then I'll try again with the new folded patch!
 
 ---
 
-archive/issue_comments_051863.json:
+archive/issue_comments_051765.json:
 ```json
 {
     "body": "The alpha1 test showed up these:\n\n```\n\tsage -t  devel/sage-6449/sage/groups/abelian_gps/abelian_group.py # 1 doctests failed\n\tsage -t  devel/sage-6449/sage/schemes/elliptic_curves/BSD.py # Exception from doctest framework\n\tsage -t  devel/sage-6449/sage/tests/book_stein_ent.py # 4 doctests failed\n\tsage -t  devel/sage-6449/sage/modular/modsym/space.py # 3 doctests failed\n```\n\nwhere the first one is the little one fixed by youur doctest patch and the others are trivialities caused by the different output of torsion groups now.\n\nNext I'll test the new folded patch... applies ok, starting to test.",
     "created_at": "2010-07-01T16:38:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51863",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51765",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -891,15 +890,15 @@ Next I'll test the new folded patch... applies ok, starting to test.
 
 ---
 
-archive/issue_comments_051864.json:
+archive/issue_comments_051766.json:
 ```json
 {
     "body": "The folded patch should deal with the first two. I also saw the other two you mention, which are both coming from the fact that `invariants` now returns a tuple instead of a string; and if you test the docs as well I imagine you will see a failure in `constructions/elliptic_curves.rst`. These remaining issues should be fixed by the patch I am about to upload.",
     "created_at": "2010-07-01T17:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51864",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51766",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -909,15 +908,15 @@ The folded patch should deal with the first two. I also saw the other two you me
 
 ---
 
-archive/issue_comments_051865.json:
+archive/issue_comments_051767.json:
 ```json
 {
     "body": "Attachment [trac_6449_ones_that_got_away.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.patch) by @loefflerd created at 2010-07-01 17:36:16\n\nApply on top of #9287 and trac_6449_everything.patch",
     "created_at": "2010-07-01T17:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51865",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51767",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -929,15 +928,15 @@ Apply on top of #9287 and trac_6449_everything.patch
 
 ---
 
-archive/issue_comments_051866.json:
+archive/issue_comments_051768.json:
 ```json
 {
     "body": "Strangely, when I applied the combined (folded) patch to 4.5.alpha1 (which applied cleanly) and then ran sage -t on everything there were thousands or errors including many totally unrelated.  I don't think that is a trustworthy test and will try again tomorrow.",
     "created_at": "2010-07-01T22:04:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51866",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51768",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -947,15 +946,15 @@ Strangely, when I applied the combined (folded) patch to 4.5.alpha1 (which appli
 
 ---
 
-archive/issue_comments_051867.json:
+archive/issue_comments_051769.json:
 ```json
 {
     "body": "OK, did sage -ba and then a complete test (this is with the big folded patch but not the ones-that-got-away) and found only these:\n\n```\n\tsage -t  devel/sage-6449/sage/all.py # 0 doctests failed\n\tsage -t  devel/sage-6449/sage/tests/book_stein_ent.py # 4 doctests failed\n\tsage -t  devel/sage-6449/sage/modular/modsym/space.py # 3 doctests failed\n```\n\nof which the first can be ignored, the second and third are treated by ones-that-got-away.\n\nBut applying the ones-that-got-away fails as follows:\n\n```\napplying trac_6449_ones_that_got_away.patch\npatching file sage/modular/modsym/space.py\nHunk #1 FAILED at 2203\nHunk #2 FAILED at 2213\nHunk #3 FAILED at 2226\n3 out of 3 hunks FAILED -- saving rejects to file sage/modular/modsym/space.py.rej\n```\n\nwhich is odd.  Still, we are nearly there.",
     "created_at": "2010-07-02T11:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51867",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51769",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -986,15 +985,15 @@ which is odd.  Still, we are nearly there.
 
 ---
 
-archive/issue_comments_051868.json:
+archive/issue_comments_051770.json:
 ```json
 {
     "body": "Oops, sorry. Mea culpa. I forgot to mention that I made the ones-that-got-away patch with the sage library patch from #8680 in place -- RLM has promised that nothing else will get merged until #8680 does. If you apply that before ones-that-got-away, the latter should apply fully cleanly.",
     "created_at": "2010-07-02T11:28:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51868",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51770",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -1004,15 +1003,15 @@ Oops, sorry. Mea culpa. I forgot to mention that I made the ones-that-got-away p
 
 ---
 
-archive/issue_comments_051869.json:
+archive/issue_comments_051771.json:
 ```json
 {
     "body": "apply instead of previous one",
     "created_at": "2010-07-02T12:00:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51869",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51771",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1022,15 +1021,15 @@ apply instead of previous one
 
 ---
 
-archive/issue_comments_051870.json:
+archive/issue_comments_051772.json:
 ```json
 {
     "body": "Attachment [trac_6449_ones_that_got_away.1.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_ones_that_got_away.1.patch) by @JohnCremona created at 2010-07-02 12:01:34\n\nOK, I will try that -- in which case we might ignore trac_6449_ones_that_got_away.1.patch which I just uploaded.",
     "created_at": "2010-07-02T12:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51870",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51772",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1042,15 +1041,15 @@ OK, I will try that -- in which case we might ignore trac_6449_ones_that_got_awa
 
 ---
 
-archive/issue_comments_051871.json:
+archive/issue_comments_051773.json:
 ```json
 {
     "body": "Please list exactly which patches one needs to apply, in order, to 4.5.alpha1, including those on the other ticket.  It's not clear from the above whether the tabs patches need applying before all these or in between or what: I found no order in which everything works, except when I ignore the tabs patches and apply just \n\ntrac_6449_everything.patch\ntrac_6449_ones_that_got_away.1.patch",
     "created_at": "2010-07-02T13:26:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51871",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51773",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1063,15 +1062,15 @@ trac_6449_ones_that_got_away.1.patch
 
 ---
 
-archive/issue_comments_051872.json:
+archive/issue_comments_051774.json:
 ```json
 {
     "body": "I'm mystified that it's not working for you. I just created yet another new clone on selmer, downloading the patches afresh from trac, and it works fine there too. See session transcript below.\n\nOne order of patches that works (for me) is:\n\n```\ntrac_9287.coverage_for_elliptic_curves_part1.patch                            \ntrac_9287.coverage_for_elliptic_curves_part2.patch                            \ntrac_6449_everything.patch                                                    \ntrac_8680-untabify-4.5.alpha1.patch                                           \ntrac_8680-tinyfix.patch                                                       \ntrac_6449_ones_that_got_away.patch                                            \n```\n\n\n#8680 can also come earlier in the sequence -- everything except trac_6449_ones_that_got_away.patch is independent of it.\n\n\n```\ndavid@rockhopper:~> ssh selmer.warwick.ac.uk\n[...]                           \nLast login: Fri Jul  2 09:42:07 2010 from 92.17.192.129\nmasiao@selmer:~$ cd /storage/masiao/sage-4.5.alpha1/\nmasiao@selmer:/storage/masiao/sage-4.5.alpha1$ ./sage -b main\n[...]\nmasiao@selmer:/storage/masiao/sage-4.5.alpha1$ ./sage -clone abgps\n[...]\nmasiao@selmer:/storage/masiao/sage-4.5.alpha1$ cd devel/sage-abgps\nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ ../../sage -hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9287/trac_9287.coverage_for_elliptic_curves_part1.patch \\\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/9287/trac_9287.coverage_for_elliptic_curves_part2.patch \\\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449_everything.patch \\\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/8680/trac_8680-untabify-4.5.alpha1.patch \\\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/8680/trac_8680-tinyfix.patch \\\nhttp://trac.sagemath.org/sage_trac/raw-attachment/ticket/6449/trac_6449_ones_that_got_away.patch                                                                                        \nadding trac_9287.coverage_for_elliptic_curves_part1.patch to series file                                      \nadding trac_9287.coverage_for_elliptic_curves_part2.patch to series file                                      \nadding trac_6449_everything.patch to series file                                                              \nadding trac_8680-untabify-4.5.alpha1.patch to series file                                                     \nadding trac_8680-tinyfix.patch to series file                                                                 \nadding trac_6449_ones_that_got_away.patch to series file                                                      \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ ../../sage -hg qpush -a\napplying trac_9287.coverage_for_elliptic_curves_part1.patch                            \napplying trac_9287.coverage_for_elliptic_curves_part2.patch                            \napplying trac_6449_everything.patch                                                    \napplying trac_8680-untabify-4.5.alpha1.patch                                           \napplying trac_8680-tinyfix.patch                                                       \napplying trac_6449_ones_that_got_away.patch                                            \nnow at: trac_6449_ones_that_got_away.patch                                             \nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$ export MAKE=\"make -j16\"; ../../sage -b\n[builds with no errors]\nmasiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$\n```\n",
     "created_at": "2010-07-02T17:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51872",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51774",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -1132,15 +1131,15 @@ masiao@selmer:/storage/masiao/sage-4.5.alpha1/devel/sage-abgps$
 
 ---
 
-archive/issue_comments_051873.json:
+archive/issue_comments_051775.json:
 ```json
 {
     "body": "Replying to [comment:31 davidloeffler]:\n> I'm mystified that it's not working for you. I just created yet another new clone on selmer, downloading the patches afresh from trac, and it works fine there too. See session transcript below.\n> \n> One order of patches that works (for me) is:\n\n```\ntrac_9287.coverage_for_elliptic_curves_part1.patch                            \ntrac_9287.coverage_for_elliptic_curves_part2.patch                            \ntrac_6449_everything.patch                                                    \ntrac_8680-untabify-4.5.alpha1.patch                                           \ntrac_8680-tinyfix.patch                                                       \ntrac_6449_ones_that_got_away.patch                                            \n```\n\n\nFor what it's worth, this worked for me on a fresh install of 4.5.alpha1 on two different machines.  All tests pass on sage.math.",
     "created_at": "2010-07-02T22:14:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51873",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51775",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1165,15 +1164,15 @@ For what it's worth, this worked for me on a fresh install of 4.5.alpha1 on two 
 
 ---
 
-archive/issue_comments_051874.json:
+archive/issue_comments_051776.json:
 ```json
 {
     "body": "OK, so I rebuilt my 4.5.alpha1 from scratch and now the patches do apply ok in the order you give.  I'll test too but do not expect any surprises.\n\nHowever, I definitely think it is unacceptable (to the release manager, for a start) for the patches on one ticket to have to be applied with two patches from another ticket *in between* them!  That will surely cause a delay.",
     "created_at": "2010-07-05T17:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51874",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51776",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1185,15 +1184,15 @@ However, I definitely think it is unacceptable (to the release manager, for a st
 
 ---
 
-archive/issue_comments_051875.json:
+archive/issue_comments_051777.json:
 ```json
 {
     "body": "#8680 has now been merged, and in one of my tests, I applied both of the patches from #8680 before both of the patches here, and it worked fine.  So I think at this point just merging the patches from #9287 before the patches here should be good enough.  No need to merge patches from any ticket in between two of the patches from another one.\n\nJohn (Cremona): I'll leave this to you to restore to \"positive review\" if your tests pass.",
     "created_at": "2010-07-05T18:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51875",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51777",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1205,15 +1204,15 @@ John (Cremona): I'll leave this to you to restore to "positive review" if your t
 
 ---
 
-archive/issue_comments_051876.json:
+archive/issue_comments_051778.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-05T19:32:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51876",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51778",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1223,15 +1222,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_051877.json:
+archive/issue_comments_051779.json:
 ```json
 {
     "body": "My tests passed , so let's roll.",
     "created_at": "2010-07-05T19:32:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51877",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51779",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1241,15 +1240,15 @@ My tests passed , so let's roll.
 
 ---
 
-archive/issue_comments_051878.json:
+archive/issue_comments_051780.json:
 ```json
 {
     "body": "What about all of the functions in additive_abelian_wrapper.py with no doctests?",
     "created_at": "2010-07-11T01:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51878",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51780",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1259,15 +1258,15 @@ What about all of the functions in additive_abelian_wrapper.py with no doctests?
 
 ---
 
-archive/issue_comments_051879.json:
+archive/issue_comments_051781.json:
 ```json
 {
     "body": "Replying to [comment:36 mhansen]:\n> What about all of the functions in additive_abelian_wrapper.py with no doctests?\n\nGood point.  David, any chance you could oblige?",
     "created_at": "2010-07-11T11:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51879",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51781",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1280,15 +1279,15 @@ Good point.  David, any chance you could oblige?
 
 ---
 
-archive/issue_comments_051880.json:
+archive/issue_comments_051782.json:
 ```json
 {
     "body": "Attachment [trac_6449_more_doctests.patch](tarball://root/attachments/some-uuid/ticket6449/trac_6449_more_doctests.patch) by @loefflerd created at 2010-07-11 15:15:37\n\nHere's a patch with the missing doctests. The current situation is that one needs to apply:\n\n- the #9287 patches\n- trac_6449_everything.patch\n- trac_6449_ones_that_got_away.patch\n- trac_6449_more_doctests.patch\n\nIf someone with trac admin rights could delete all the other patches that would be helpful.\n\nDavid",
     "created_at": "2010-07-11T15:15:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51880",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51782",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -1309,15 +1308,15 @@ David
 
 ---
 
-archive/issue_comments_051881.json:
+archive/issue_comments_051783.json:
 ```json
 {
     "body": "I checked that the patches as specified by David, and repeated here:\n\n1. trac_9287.coverage_for_elliptic_curves_part1.patch\n2. trac_9287.coverage_for_elliptic_curves_part2.patch\n3. trac_6449_everything.patch\n4. trac_6449_ones_that_got_away.patch\n5. trac_6449_more_doctests.patch\n\napply ok to 4.5.alpha4.  The new doctests look fine and pass, and coverage in this directory is now 100%.\n\nI have therefore left the tag as \"positive review\" and hope that mhansen is now happy!",
     "created_at": "2010-07-11T20:32:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51881",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51783",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1337,15 +1336,15 @@ I have therefore left the tag as "positive review" and hope that mhansen is now 
 
 ---
 
-archive/issue_comments_051882.json:
+archive/issue_comments_051784.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T07:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51882",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51784",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -1355,15 +1354,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_051883.json:
+archive/issue_comments_051785.json:
 ```json
 {
     "body": "Replying to [comment:39 cremona]:\n> I checked that the patches as specified by David, and repeated here:\n> \n>     1. trac_9287.coverage_for_elliptic_curves_part1.patch\n>     2. trac_9287.coverage_for_elliptic_curves_part2.patch\n>     3. trac_6449_everything.patch\n>     4. trac_6449_ones_that_got_away.patch\n>     5. trac_6449_more_doctests.patch\n> \n> apply ok to 4.5.alpha4.  The new doctests look fine and pass, and coverage in this directory is now 100%.\n> \n> I have therefore left the tag as \"positive review\" and hope that mhansen is now happy!\n\nFor the record, I did *not* apply [attachment:trac_6449_ones_that_got_away.1.patch] to 4.5.2.alpha0.",
     "created_at": "2010-07-20T07:12:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51883",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6449#issuecomment-51785",
+    "user": "https://github.com/qed777"
 }
 ```
 

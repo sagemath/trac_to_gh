@@ -6,15 +6,14 @@ archive/issues_005525.json:
     "body": "Assignee: @malb\n\n\n```\nsage: A = (QQ^1).span([[1/3]],ZZ); A\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1/3]\nsage: B = (QQ^1).span([[1]],ZZ); B\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1]\nsage: A.intersection(B)\nFree module of degree 1 and rank 1 over Integer Ring\nEchelon basis matrix:\n[1/3]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5525\n\n",
     "created_at": "2009-03-15T07:37:43Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "fix bug in intersection of ZZ-modules",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5525",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @malb
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5525
 
 ---
 
-archive/issue_comments_042987.json:
+archive/issue_comments_042903.json:
 ```json
 {
     "body": "Attachment [trac_5525.patch](tarball://root/attachments/some-uuid/ticket5525/trac_5525.patch) by @williamstein created at 2009-03-15 08:22:26",
     "created_at": "2009-03-15T08:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42987",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42903",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -62,15 +61,15 @@ Attachment [trac_5525.patch](tarball://root/attachments/some-uuid/ticket5525/tra
 
 ---
 
-archive/issue_comments_042988.json:
+archive/issue_comments_042904.json:
 ```json
 {
     "body": "This patch causes a massive number of failures:\n\n```\nThe following tests failed:\n\n        sage -t -long devel/sage/sage/modular/abvar/homspace.py # 49 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar.py # 292 doctests failed\n        sage -t -long devel/sage/sage/matrix/matrix_integer_dense.pyx # 2 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/padics.py # 7 doctests failed\n        sage -t -long devel/sage/doc/en/bordeaux_2008/elliptic_curves.rst # 3 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 22 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 12 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/element.py # 29 doctests failed\n        sage -t -long devel/sage/sage/modular/modsym/space.py # 41 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/morphism.py # 86 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/torsion_subgroup.py # 22 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/finite_subgroup.py # 99 doctests failed\n        sage -t -long devel/sage/sage/modular/modsym/subspace.py # 10 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/space.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/modsym/ambient.py # 18 doctests failed\n        sage -t -long devel/sage/sage/modular/modsym/tests.py # 3 doctests failed\n        sage -t -long devel/sage/doc/en/bordeaux_2008/modabvar.rst # 11 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_ambient_jacobian.py # 13 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/submodule.py # 20 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/module.py # 26 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py # 2 doctests failed\n        sage -t -long devel/sage/doc/fr/tutorial/tour_advanced.rst # 1 doctests failed\n        sage -t -long devel/sage/doc/en/tutorial/tour_advanced.rst # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/abvar_newform.py # 8 doctests failed\n        sage -t -long devel/sage/sage/tests/book_stein_modform.py # 7 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/cuspidal_subgroup.py # 38 doctests failed\n        sage -t -long devel/sage/sage/modular/dims.py # 3 doctests failed\n        sage -t -long devel/sage/sage/modular/modform/constructor.py # 1 doctests failed\n        sage -t -long devel/sage/sage/server/notebook/twist.py # 2 doctests failed\n        sage -t -long devel/sage/sage/structure/coerce.pyx # 5 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/ambient_module.py # 12 doctests failed\n        sage -t -long devel/sage/sage/structure/factorization.py # 5 doctests failed\n        sage -t -long devel/sage/sage/schemes/elliptic_curves/ell_modular_symbols.py # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/abvar/lseries.py # 22 doctests failed\n        sage -t -long devel/sage/doc/en/bordeaux_2008/modular_symbols.rst # 1 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/hecke_operator.py # 2 doctests failed\n        sage -t -long devel/sage/sage/modular/hecke/degenmap.py # 10 doctests failed\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T18:57:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42988",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42904",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -127,15 +126,15 @@ Michael
 
 ---
 
-archive/issue_comments_042989.json:
+archive/issue_comments_042905.json:
 ```json
 {
     "body": "This has been fixed via the patch at #5520.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-31T08:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42989",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42905",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -149,15 +148,15 @@ Michael
 
 ---
 
-archive/issue_comments_042990.json:
+archive/issue_comments_042906.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-31T08:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5525",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42990",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5525#issuecomment-42906",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_006260.json:
     "body": "Assignee: cwitty\n\nsubject says it all.  This has something to do with hitting new code because of factoring out dsage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6260\n\n",
     "created_at": "2009-06-11T15:31:33Z",
     "labels": [
-        "misc",
+        "component: misc",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006260.json:
     "title": "sage -startuptime is totally broken in sage-4.0.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6260",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6260
 
 ---
 
-archive/issue_comments_049990.json:
+archive/issue_comments_049894.json:
 ```json
 {
     "body": "Attachment [trac_6260-apply_to_scripts_repo.patch](tarball://root/attachments/some-uuid/ticket6260/trac_6260-apply_to_scripts_repo.patch) by @williamstein created at 2009-06-11 15:38:26",
     "created_at": "2009-06-11T15:38:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49990",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49894",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [trac_6260-apply_to_scripts_repo.patch](tarball://root/attachments/so
 
 ---
 
-archive/issue_comments_049991.json:
+archive/issue_comments_049895.json:
 ```json
 {
     "body": "Looks good to me.  The old version wouldn't work when importing any module that used absolute imports (whose import signature is different than the old import signature.",
     "created_at": "2009-06-11T18:06:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49991",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49895",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +65,15 @@ Looks good to me.  The old version wouldn't work when importing any module that 
 
 ---
 
-archive/issue_comments_049992.json:
+archive/issue_comments_049896.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-13T22:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49992",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6260#issuecomment-49896",
+    "user": "https://github.com/ncalexan"
 }
 ```
 

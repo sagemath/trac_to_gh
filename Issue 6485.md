@@ -6,7 +6,7 @@ archive/issues_006485.json:
     "body": "Assignee: tba\n\nBuild the HTML documentation, including the website, and navigate to `$SAGE_ROOT/devel/sage/doc/output/html/en/index.html`.  Clicking on a link to an  individual document yields a directory listing, instead of the expected index page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6485\n\n",
     "created_at": "2009-07-08T17:32:50Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006485.json:
     "title": "[with patch, needs review] broken links from website index to tutorial, constructions, etc.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6485",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: tba
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6485
 
 ---
 
-archive/issue_comments_052450.json:
+archive/issue_comments_052352.json:
 ```json
 {
     "body": "Attachment [trac_6485_website_links.patch](tarball://root/attachments/some-uuid/ticket6485/trac_6485_website_links.patch) by @loefflerd created at 2009-07-13 16:43:35\n\nThis ticket looks like a duplicate of #5550 to me. Since mpatel's already uploaded a patch here, I suggest we close #5550 as a duplicate and keep this one open.",
     "created_at": "2009-07-13T16:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52450",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52352",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -49,15 +49,15 @@ This ticket looks like a duplicate of #5550 to me. Since mpatel's already upload
 
 ---
 
-archive/issue_comments_052451.json:
+archive/issue_comments_052353.json:
 ```json
 {
     "body": "Works for me.",
     "created_at": "2009-07-13T19:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52451",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52353",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -67,15 +67,15 @@ Works for me.
 
 ---
 
-archive/issue_comments_052452.json:
+archive/issue_comments_052354.json:
 ```json
 {
     "body": "The patch fixes the index.html linking problem, but only for the page\n\nSAGE_ROOT/devel/sage/doc/output/html/en/index.html\n\nThere's also a \"website\" which can be built using\n\nsage -docbuild website html\n\nand the same problem is still with the page\n\nSAGE_ROOT/devel/sage/doc/output/html/en/website/index.html\n\nBut I doubt we need \"website\" at all. Its purpose is to link to the other 8 standard documents. This is already achieved with\n\nSAGE_ROOT/devel/sage/doc/output/html/en/index.html\n\nSo I'm closing this ticket as fixing the linking problem in the page \n\nSAGE_ROOT/devel/sage/doc/output/html/en/index.html\n\nFeel free to open another ticket to fix or delete the \"website\" page.",
     "created_at": "2009-07-18T21:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52452",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52354",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -105,15 +105,15 @@ Feel free to open another ticket to fix or delete the "website" page.
 
 ---
 
-archive/issue_comments_052453.json:
+archive/issue_comments_052355.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-18T21:17:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52453",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52355",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -123,15 +123,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_052454.json:
+archive/issue_comments_052356.json:
 ```json
 {
     "body": "I think `sage -docbuild website html` builds the top-level `index.html` in `website/` and just copies the output up one directory level.  (We could delete the original afterward.)  Perhaps I should have put \"web site\" in the summary instead of \"website.\"  I apologize, if I'm mistaken.",
     "created_at": "2009-07-19T05:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52454",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6485#issuecomment-52356",
+    "user": "https://github.com/qed777"
 }
 ```
 

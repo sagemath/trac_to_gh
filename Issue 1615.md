@@ -6,7 +6,7 @@ archive/issues_001615.json:
     "body": "Assignee: @williamstein\n\n\n```\n\nHi Kate,\n\n> When I build sage-2.9.1.1 from source on the architectures\n> of interest to me, I get an error when building\n>\n>      mpfi-1.3.4-cvs20071125.p2\n>\n> gcc -fPIC -o test_mpfi test_mpfi.o  ../src/.libs/libmpfi.a\n> /home/kate/sage/sage-2.9.1.1-x86_64-Linux/local/lib/libmpfr.a -lgmp\n> ../src/.libs/libmpfi.a(mpfi_io.o): In function `mpfi_inp_str':\n> mpfi_io.c:(.text+0x999): undefined reference to `__gmp_get_memory_functions'\n>\n> If I look in sage-2.9.1.1/local/lib, I notice that mpfr is built statically,\n> but gmp is not.  (Is there a good reason for this?)\n\nDefault policy is to build all libraries dynamically so that we do not\nneed to recompile loads of dependencies. What you encounter is a bug\nin mpfi.\n\n>  If I change\n> the line in gmp-4.2.1.p12/spkg-install from\n>\n>    SAGE_CONF_OPTS=\"--enable-shared --disable-static\"\n>\n> to\n>     SAGE_CONF_OPTS=\"--enable-shared\"\n>\n> then gmp builds a static version.\n>\n> If I then change mpfi-1.3.4-cvs20071125.p2/spkg-install\n> from\n>\n> ./configure --prefix=\"$SAGE_LOCAL\" --with-mpfr-dir=\"$SAGE_LOCAL\"\n> --with-gmp-incpath=\"$SAGE_LOCAL\"/include CFLAGS=\"-fPIC\"\n>\n> to\n>\n> ./configure --prefix=\"$SAGE_LOCAL\" --with-gmp-dir=\"$SAGE_LOCAL\"\n> --with-mpfr-dir=\"$SAGE_LOCAL\" CFLAGS=\"-fPIC\"\n>\n> then mpfi builds fine.\n\nWe should add the --with-gmp-dir to the mpfi configure per default and\nalso fix the the problem so that a dynamic gmp is accepted.\n\n> I suspect you are NOT seeing this problem because your compile\n> machines have a system gmp installed that is being picked up.\n>\n> Naturally, there may be a better way to fix the problem than\n> I have given.\n>\n\nCheers,\n\nMichael\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1615\n\n",
     "created_at": "2007-12-28T20:44:11Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001615.json:
     "title": "mpfi -- build is seriously broken on at least one system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1615",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -88,15 +88,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1615
 
 ---
 
-archive/issue_comments_010269.json:
+archive/issue_comments_010242.json:
 ```json
 {
     "body": "I changed the following two macros in `src/configure.ac`:\n\n```\n# Checks for MPFR lib (Before GMP!)\nif ` test \"$with_mpfr_lib\" `\nthen\n  AC_MSG_CHECKING(MPFR library)\n        if  test -r \"$with_mpfr_lib/libmpfr.so\"\n        then\n          LDADD=\"$LDADD -L$with_gmp_lib -lmpfr\"\n        else\n           AC_MSG_ERROR([$with_mpfr_lib/libmpfr.so not found])\n        fi\n  AC_MSG_RESULT(yes)\nelse\n  AC_CHECK_LIB(mpfr, main, , AC_MSG_ERROR([Library MPFR not found]))\nfi\n\n# Checks for GMP lib\nif ` test \"$with_gmp_lib\" `\nthen\n  AC_MSG_CHECKING(GMP library)\n        if  test -r \"$with_gmp_lib/libgmp.so\"\n        then\n          LDADD=\"$LDADD -L$with_gmp_lib -lgmp\"\n        else\n           AC_MSG_ERROR([$with_gmp_lib/libgmp.so not found])\n        fi\n  AC_MSG_RESULT(yes)\nelse\n  AC_CHECK_LIB(gmp, main, , AC_MSG_ERROR([Library GMP not found]))\nfi\n```\n\nThe updated spkg is at \n\n http://sage.math.washington.edu/home/mabshoff/mpfi-1.3.4-cvs20071125.p0.spkg\n\nand needs to be tested.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-04T09:27:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1615#issuecomment-10269",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1615#issuecomment-10242",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -148,15 +148,15 @@ Michael
 
 ---
 
-archive/issue_comments_010270.json:
+archive/issue_comments_010243.json:
 ```json
 {
     "body": "Arrg, the correct spkg is at \n\n http://sage.math.washington.edu/home/mabshoff/mpfi-1.3.4-cvs20071125.p3.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-01-04T09:32:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1615#issuecomment-10270",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1615#issuecomment-10243",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -172,15 +172,15 @@ Michael
 
 ---
 
-archive/issue_comments_010271.json:
+archive/issue_comments_010244.json:
 ```json
 {
     "body": "Ok, the above spkg didn't work on OSX since there the dynamic library extension is `dylib`. Change the macros to:\n\n```\n# Checks for MPFR lib (Before GMP!)\nif ` test \"$with_mpfr_lib\" `\nthen\n  AC_MSG_CHECKING(MPFR library)\n        if test -r \"$with_mpfr_lib/libmpfr.so\"\n        then\n          LDADD=\"$LDADD -L$with_gmp_lib -lmpfr\"\n        else\n           if test -r \"$with_mpfr_lib/libmpfr.dylib\"\n           then\n             LDADD=\"$LDADD -L$with_gmp_lib -lmpfr\"\n           else\n             AC_MSG_ERROR([$with_mpfr_lib/libmpfr.so or libmpfr.dylib not found])\n           fi\n        fi\n  AC_MSG_RESULT(yes)\nelse\n  AC_CHECK_LIB(mpfr, main, , AC_MSG_ERROR([Library MPFR not found]))\nfi\n\n# Checks for GMP lib\nif ` test \"$with_gmp_lib\" `\nthen\n  AC_MSG_CHECKING(GMP library)\n        if test -r \"$with_gmp_lib/libgmp.so\"\n        then\n          LDADD=\"$LDADD -L$with_gmp_lib -lgmp\"\n        else\n          if test -r \"$with_gmp_lib/libgmp.dylib\"\n          then\n            LDADD=\"$LDADD -L$with_gmp_lib -lgmp\"\n          else\n            AC_MSG_ERROR([$with_gmp_lib/libgmp.so or libgmp.dylib not found])\n          fi\n        fi\n  AC_MSG_RESULT(yes)\nelse\n  AC_CHECK_LIB(gmp, main, , AC_MSG_ERROR([Library GMP not found]))\nfi\n```\n\nThe spkg is linked at\n\nhttp://sage.math.washington.edu/home/mabshoff/mpfi-1.3.4-cvs20071125.p4.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-01-04T10:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1615#issuecomment-10271",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1615#issuecomment-10244",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -240,15 +240,15 @@ Michael
 
 ---
 
-archive/issue_comments_010272.json:
+archive/issue_comments_010245.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-04T10:13:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1615",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1615#issuecomment-10272",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1615#issuecomment-10245",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

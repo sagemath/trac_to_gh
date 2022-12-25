@@ -6,7 +6,7 @@ archive/issues_003245.json:
     "body": "Assignee: @williamstein\n\nRight now, there is just coeff and coeffs while other rings have both or just coefficients.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3245\n\n",
     "created_at": "2008-05-17T20:50:27Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003245.json:
     "title": "[with patch, needs review] provide coefficient and coefficients methods for symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3245",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3245
 
 ---
 
-archive/issue_comments_022465.json:
+archive/issue_comments_022418.json:
 ```json
 {
     "body": "Attachment [3245.patch](tarball://root/attachments/some-uuid/ticket3245/3245.patch) by mabshoff created at 2008-05-23 04:27:17\n\nPatch looks good to me, I am doctesting to make sure nothing was broken.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-23T04:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22465",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22418",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +53,15 @@ Michael
 
 ---
 
-archive/issue_comments_022466.json:
+archive/issue_comments_022419.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-23T06:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22466",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22419",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +71,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022467.json:
+archive/issue_comments_022420.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.rc0",
     "created_at": "2008-05-23T06:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22467",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3245#issuecomment-22420",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

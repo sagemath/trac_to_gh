@@ -6,7 +6,7 @@ archive/issues_000979.json:
     "body": "Assignee: @mwhansen\n\n\n```\nsage: a = .00000000000000000000001;a\n0.000000000000000000000010000000000000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/979\n\n",
     "created_at": "2007-10-24T03:49:28Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000979.json:
     "title": "printing error with small reals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/979",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -34,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/979
 
 ---
 
-archive/issue_comments_005970.json:
+archive/issue_comments_005951.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-10-24T05:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5970",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5951",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -52,15 +52,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_005971.json:
+archive/issue_comments_005952.json:
 ```json
 {
     "body": "Patch for this will be in the big patch for #962.",
     "created_at": "2007-10-24T05:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5971",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5952",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -70,15 +70,15 @@ Patch for this will be in the big patch for #962.
 
 ---
 
-archive/issue_comments_005972.json:
+archive/issue_comments_005953.json:
 ```json
 {
     "body": "I believe this has already been taken care of.\n\nIn 2.8.15, we have\n\n\n```\nsage: a = .00000000000000000000001;a\n1.00000000000000e-23\n```\n",
     "created_at": "2007-12-06T21:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5972",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5953",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -97,15 +97,15 @@ sage: a = .00000000000000000000001;a
 
 ---
 
-archive/issue_comments_005973.json:
+archive/issue_comments_005954.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-06T21:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5973",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5954",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -115,15 +115,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_005974.json:
+archive/issue_comments_005955.json:
 ```json
 {
     "body": "Merged in 2.8.15.",
     "created_at": "2007-12-06T21:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/979",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5974",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/979#issuecomment-5955",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

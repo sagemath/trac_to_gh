@@ -6,15 +6,13 @@ archive/issues_007227.json:
     "body": "Assignee: @seblabbe\n\nCC:  @videlec\n\nKeywords: factor complexity\n\nImproving the word complexity functions by\n- caching palindromic_lacunas_study\n- caching suffix_tree\n- caching suffix_trie\n- allowing factor_set to take an integer as input\n- adding rauzy_graph function for finite word\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7227\n\n",
     "created_at": "2009-10-15T14:28:38Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2.1",
     "title": "Improving factor complexity of words functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7227",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: @seblabbe
@@ -39,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7227
 
 ---
 
-archive/issue_comments_059940.json:
+archive/issue_comments_059828.json:
 ```json
 {
     "body": "Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_word_factor_complexity-sl.patch) by @seblabbe created at 2009-10-15 14:33:06",
     "created_at": "2009-10-15T14:33:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59940",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59828",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -57,15 +55,15 @@ Attachment [trac_7227_word_factor_complexity-sl.patch](tarball://root/attachment
 
 ---
 
-archive/issue_comments_059941.json:
+archive/issue_comments_059829.json:
 ```json
 {
     "body": "Here are some examples of the improvements made by the patch :\n\n\nBEFORE:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: w = t[:10000]\nsage: time _ = [w.number_of_factors(i) for i in range(20)]\nCPU times: user 4.19 s, sys: 0.00 s, total: 4.19 s\nWall time: 4.19 s\nsage: time _ = [w.number_of_factors(i) for i in range(50)]\nCPU times: user 10.28 s, sys: 0.00 s, total: 10.28 s\nWall time: 10.28 s\n```\n\n\nAFTER:\n\n\n```\nsage: t = words.ThueMorseWord()\nsage: w = t[:10000]\nsage: time _ = [w.number_of_factors(i) for i in range(20)]\nCPU times: user 0.30 s, sys: 0.00 s, total: 0.30 s\nWall time: 0.30 s\nsage: time _ = [w.number_of_factors(i) for i in range(50)]\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\nsage: time _ = [w.number_of_factors(i) for i in range(100)]\nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\nsage: time _ = [w.number_of_factors(i) for i in range(1000)]\nCPU times: user 4.90 s, sys: 0.00 s, total: 4.90 s\nWall time: 4.90 s\nsage: time _ = [w.number_of_factors(i) for i in range(1001)]\nCPU times: user 4.85 s, sys: 0.00 s, total: 4.85 s\nWall time: 4.85 s\nsage: time _ = [w.number_of_factors(i) for i in range(2000)]\nCPU times: user 27.64 s, sys: 0.00 s, total: 27.64 s\nWall time: 27.64 s\n```\n\n\n\nI should also add some Rauzy graphs examples and some timing improvements on palindrome complexity as well.",
     "created_at": "2009-10-15T14:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59941",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59829",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -121,15 +119,15 @@ I should also add some Rauzy graphs examples and some timing improvements on pal
 
 ---
 
-archive/issue_comments_059942.json:
+archive/issue_comments_059830.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-15T14:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59942",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59830",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -139,15 +137,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059943.json:
+archive/issue_comments_059831.json:
 ```json
 {
     "body": "Attachment [trac_7227_edge_labels-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_edge_labels-sl.patch) by @seblabbe created at 2009-10-20 11:29:10",
     "created_at": "2009-10-20T11:29:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59943",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59831",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -157,15 +155,15 @@ Attachment [trac_7227_edge_labels-sl.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_comments_059944.json:
+archive/issue_comments_059832.json:
 ```json
 {
     "body": "I added a patch that improves the rauzy graph function (adds the labels to the edges).\n\nStill needs review!",
     "created_at": "2009-10-20T11:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59944",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59832",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -177,15 +175,15 @@ Still needs review!
 
 ---
 
-archive/issue_comments_059945.json:
+archive/issue_comments_059833.json:
 ```json
 {
     "body": "rauzy_graph : why don't you use DiGraph method for the creation of edges ?\n\nThe rest is OK.",
     "created_at": "2009-10-28T18:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59945",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59833",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -197,15 +195,15 @@ The rest is OK.
 
 ---
 
-archive/issue_comments_059946.json:
+archive/issue_comments_059834.json:
 ```json
 {
     "body": "Replying to [comment:3 vdelecroix]:\n> rauzy_graph : why don't you use DiGraph method for the creation of edges ?\n\nYou mean the add_edge method? I don't know. Is it faster?",
     "created_at": "2009-10-29T01:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59946",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59834",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -218,15 +216,15 @@ You mean the add_edge method? I don't know. Is it faster?
 
 ---
 
-archive/issue_comments_059947.json:
+archive/issue_comments_059835.json:
 ```json
 {
     "body": "Replying to [comment:5 slabbe]:\n> Replying to [comment:3 vdelecroix]:\n> > rauzy_graph : why don't you use DiGraph method for the creation of edges ?\n> \n> You mean the add_edge method? I don't know. Is it faster?\n\nAt least it is not slower and I find it clearer:\n\n```\nsage: timeit('G = DiGraph(loops=True)\\nfor i in range(200):\\n  for j in range(200):\\n    d.add_edge(i,j)')\n5 loops, best of 3: 248 ms per loop\nsage: timeit('d = {}\\nfor i in range(200):\\n  d[i]=[]\\n  for j in range(200):\\n    d[i].append(j)\\nG=DiGraph(d,loops=True)')\n5 loops, best of 3: 266 ms per loop\n```\n",
     "created_at": "2009-10-29T12:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59947",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59835",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -250,15 +248,15 @@ sage: timeit('d = {}\nfor i in range(200):\n  d[i]=[]\n  for j in range(200):\n 
 
 ---
 
-archive/issue_comments_059948.json:
+archive/issue_comments_059836.json:
 ```json
 {
     "body": "Attachment [trac_7227_add_edge-sl.patch](tarball://root/attachments/some-uuid/ticket7227/trac_7227_add_edge-sl.patch) by @seblabbe created at 2009-10-29 14:40:42\n\nApplies over the precedent 2 patches.",
     "created_at": "2009-10-29T14:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59948",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59836",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -270,15 +268,15 @@ Applies over the precedent 2 patches.
 
 ---
 
-archive/issue_comments_059949.json:
+archive/issue_comments_059837.json:
 ```json
 {
     "body": "Thanks for the suggestion Vincent. I did the changes. I also changed the behavior for n=0 to agree with what is currently done in `digraphs.DeBruijn()` (see #7246).\n\nNeeds review!",
     "created_at": "2009-10-29T17:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59949",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59837",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -290,15 +288,15 @@ Needs review!
 
 ---
 
-archive/issue_comments_059950.json:
+archive/issue_comments_059838.json:
 ```json
 {
     "body": "Positive review.\n\nRemark for future: the graph rendering is quite bad because word renders \"word: xxxx\"",
     "created_at": "2009-10-29T20:07:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59950",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59838",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -310,15 +308,15 @@ Remark for future: the graph rendering is quite bad because word renders "word: 
 
 ---
 
-archive/issue_comments_059951.json:
+archive/issue_comments_059839.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-29T20:07:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59951",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59839",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -328,15 +326,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059952.json:
+archive/issue_comments_059840.json:
 ```json
 {
     "body": "> Remark for future: the graph rendering is quite bad because word renders \"word: xxxx\"\n\nOne way to avoid the `word: ` identifier is to set it empty using \n\n\n```\nsage: WordOptions(identifier='')\nsage: Word(range(10))\n0123456789\n```\n\n\nbut it affects not only the vertices of the Rauzy graph but every single print of a word which might not be exactly what you want...",
     "created_at": "2009-10-30T18:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59952",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59840",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -358,15 +356,15 @@ but it affects not only the vertices of the Rauzy graph but every single print o
 
 ---
 
-archive/issue_comments_059953.json:
+archive/issue_comments_059841.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-31T15:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59953",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7227#issuecomment-59841",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

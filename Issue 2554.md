@@ -6,15 +6,14 @@ archive/issues_002554.json:
     "body": "Assignee: @yqiang\n\nVarious users have reported that the dsage unit tests fail on linux. This is a known issue and a fix is being worked on by me. \n\nIssue created by migration from https://trac.sagemath.org/ticket/2554\n\n",
     "created_at": "2008-03-16T21:41:28Z",
     "labels": [
-        "dsage",
-        "major",
+        "component: dsage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "dsage unit tests fail on linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2554",
-    "user": "@yqiang"
+    "user": "https://github.com/yqiang"
 }
 ```
 Assignee: @yqiang
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2554
 
 ---
 
-archive/issue_comments_017438.json:
+archive/issue_comments_017401.json:
 ```json
 {
     "body": "This is a dupe of #2553",
     "created_at": "2008-03-16T21:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2554",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2554#issuecomment-17438",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2554#issuecomment-17401",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -47,15 +46,15 @@ This is a dupe of #2553
 
 ---
 
-archive/issue_comments_017439.json:
+archive/issue_comments_017402.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-03-16T21:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2554",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2554#issuecomment-17439",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2554#issuecomment-17402",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

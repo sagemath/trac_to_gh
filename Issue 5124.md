@@ -6,7 +6,7 @@ archive/issues_005124.json:
     "body": "Assignee: @williamstein\n\n\nThis doesn't depend on xmin!?\n\n\n```\nE = EllipticCurve('37a')\nE.plot(xmin=-10, xmax=10)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5124\n\n",
     "created_at": "2009-01-28T23:15:08Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005124.json:
     "title": "xmin ignored when plotting elliptic curves",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5124",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5124
 
 ---
 
-archive/issue_comments_039165.json:
+archive/issue_comments_039090.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-04-10T17:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39165",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39090",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -55,15 +55,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_039166.json:
+archive/issue_comments_039091.json:
 ```json
 {
     "body": "duplicate of #13368 (where more information is available)",
     "created_at": "2014-04-10T17:11:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39166",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39091",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -73,15 +73,15 @@ duplicate of #13368 (where more information is available)
 
 ---
 
-archive/issue_comments_039167.json:
+archive/issue_comments_039092.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-04-11T00:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39167",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39092",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -91,15 +91,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_039168.json:
+archive/issue_comments_039093.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2014-04-12T07:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5124",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39168",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5124#issuecomment-39093",
+    "user": "https://github.com/vbraun"
 }
 ```
 

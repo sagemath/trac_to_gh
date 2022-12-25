@@ -6,15 +6,14 @@ archive/issues_009417.json:
     "body": "Assignee: @JohnCremona\n\nCC:  @williamstein justin\n\nKeywords: tamagawa_number local_data\n\nIn 4.4.4 the following Tamagawa number gets evaluated as 2:\n\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: E = EllipticCurve(K, [0, -36, 0, 320, 0])\nsage: E.tamagawa_number(K.ideal(2))\n2\n```\n\n\nAccording to Magma this should be 4.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9417\n\n",
     "created_at": "2010-07-03T03:41:37Z",
     "labels": [
-        "elliptic curves",
-        "major",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Tamagawa number calculated incorrectly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9417",
-    "user": "@arminstraub"
+    "user": "https://github.com/arminstraub"
 }
 ```
 Assignee: @JohnCremona
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9417
 
 ---
 
-archive/issue_comments_089747.json:
+archive/issue_comments_089603.json:
 ```json
 {
     "body": "As the author of both Sage's and Magma's code for Tamagawa numbers, I have been tracking this one down. It turns out to be due to a bug in how elements of the rings of integers are mapped into residue fields:\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: P = K.ideal(2)\nsage: F = K.residue_field(P)\nsage: R = PolynomialRing(F, 'x')\nsage: R([0, a, a, 1])\nx^3 + abar*x^2 + abar*x\nsage: F(a)\n1\nsage: a.minpoly()\nx^2 + 18*x + 1\nsage: F.gen()\nabar\nsage: F.gen().minpoly()\nx^2 + x + 1\n```\n\nThe polynomial `x<sup>3+a*x</sup>2+a*x` reduced modulo P=(2) wrongly to `x<sup>3+abar*x</sup>2+abar*x`. Although the generator of the residue field F is suggestively called abar, it it *not* the reduction of a mod P (which is 1 mod P).\n\nI will open a new ticket for that, and try to fix it. This ticket can probably then be closed, so watch this space.",
     "created_at": "2011-03-26T22:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89747",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89603",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -83,15 +82,15 @@ I will open a new ticket for that, and try to fix it. This ticket can probably t
 
 ---
 
-archive/issue_comments_089748.json:
+archive/issue_comments_089604.json:
 ```json
 {
     "body": "See #11055",
     "created_at": "2011-03-26T22:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89748",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89604",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -101,15 +100,15 @@ See #11055
 
 ---
 
-archive/issue_comments_089749.json:
+archive/issue_comments_089605.json:
 ```json
 {
     "body": "Attachment [trac_9417-tamagawa.patch](tarball://root/attachments/some-uuid/ticket9417/trac_9417-tamagawa.patch) by @JohnCremona created at 2011-03-27 19:13:32\n\nApplies to 4.7.alpha2",
     "created_at": "2011-03-27T19:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89749",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89605",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -121,15 +120,15 @@ Applies to 4.7.alpha2
 
 ---
 
-archive/issue_comments_089750.json:
+archive/issue_comments_089606.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-03-27T19:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89750",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89606",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -139,15 +138,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_089751.json:
+archive/issue_comments_089607.json:
 ```json
 {
     "body": "The patch applies the simple workaround described at #11055.  Now we correctly get\n\n```\nsage: K.<a> = NumberField(x^2+18*x+1)\nsage: E = EllipticCurve(K, [0, -36, 0, 320, 0])\nsage: E.tamagawa_number(K.ideal(2))\n4\n```\n\nand a doctest has been added.",
     "created_at": "2011-03-27T19:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89751",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89607",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -166,15 +165,15 @@ and a doctest has been added.
 
 ---
 
-archive/issue_comments_089752.json:
+archive/issue_comments_089608.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-04-17T21:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89752",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89608",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -184,15 +183,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_089753.json:
+archive/issue_comments_089609.json:
 ```json
 {
     "body": "Looks good to me!",
     "created_at": "2011-04-17T21:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89753",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89609",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -202,15 +201,15 @@ Looks good to me!
 
 ---
 
-archive/issue_comments_089754.json:
+archive/issue_comments_089610.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-04-20T12:51:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89754",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9417#issuecomment-89610",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

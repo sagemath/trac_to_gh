@@ -6,15 +6,14 @@ archive/issues_001227.json:
     "body": "Assignee: @malb\n\nWith Linux x86, FC7 we get:\n\n```\n[jaap@paix sage-2.8.13.rc1]$ ./sage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py\nsage -t  devel/sage-main/sage/rings/polynomial/multi_polynomial_ideal.py**********************************************************************\nFile \"multi_polynomial_ideal.py\", line 376:\n     sage: GB.triangular_decomposition('singular:triangLfak')\nExpected:\n     [Ideal (a - 1, b - 1, c - 1, d^2 + 3*d + 1, e + d + 3) of\n     Multivariate Polynomial Ring in e, d, c, b, a over\n     Rational Field, Ideal (a - 1, b - 1, c^2 + 3*c + 1, d + c\n     + 3, e - 1) of Multivariate Polynomial Ring in e, d, c, b,\n     a over Rational Field, Ideal (a - 1, b^4 + b^3 + b^2 + b +\n     1, c - b^2, d - b^3, e + b^3 + b^2 + b + 1) of\n     Multivariate Polynomial Ring in e, d, c, b, a over\n     Rational Field, Ideal (a - 1, b^2 + 3*b + 1, c + b + 3, d\n     - 1, e - 1) of Multivariate Polynomial Ring in e, d, c, b,\n     a over Rational Field, Ideal (a^4 + a^3 + a^2 + a + 1, b -\n     1, c + a^3 + a^2 + a + 1, d - a^3, e - a^2) of\n     Multivariate Polynomial Ring in e, d, c, b, a over\n     Rational Field, Ideal (a^4 + a^3 + a^2 + a + 1, b - a, c -\n     a, d^2 + 3*d*a + a^2, e + d + 3*a) of Multivariate\n     Polynomial Ring in e, d, c, b, a over Rational Field,\n     Ideal (a^4 + a^3 + a^2 + a + 1, b - a, c^2 + 3*c*a + a^2,\n     d + c + 3*a, e - a) of Multivariate Polynomial Ring in e,\n     d, c, b, a over Rational Field, Ideal (a^4 + a^3 + a^2 + a\n     + 1, b^3 + b^2*a + b^2 + b*a^2 + b*a + b + a^3 + a^2 + a +\n     1, c + b^2*a^3 + b^2*a^2 + b^2*a + b^2, d - b^2*a^2 -\n     b^2*a - b^2 - b*a^2 - b*a - a^2, e - b^2*a^3 + b*a^2 + b*a\n     + b + a^2 + a) of Multivariate Polynomial Ring in e, d, c,\n     b, a over Rational Field, Ideal (a^4 + a^3 + a^2 + a + 1,\n     b^2 + 3*b*a + a^2, c + b + 3*a, d - a, e - a) of\n     Multivariate Polynomial Ring in e, d, c, b, a over\n     Rational Field, Ideal (a^4 - 4*a^3 + 6*a^2 + a + 1, 11*b^2\n     - 6*b*a^3 + 26*b*a^2 - 41*b*a + 4*b + 8*a^3 - 31*a^2 +\n     40*a + 24, 11*c + 3*a^3 - 13*a^2 + 26*a - 2, 11*d + 3*a^3\n     - 13*a^2 + 26*a - 2, 11*e + 11*b - 6*a^3 + 26*a^2 - 41*a +\n     4) of Multivariate Polynomial Ring in e, d, c, b, a over\n     Rational Field, Ideal (a^4 + a^3 + 6*a^2 - 4*a + 1, 11*b^2\n     - 6*b*a^3 - 10*b*a^2 - 39*b*a - 2*b - 16*a^3 - 23*a^2 -\n     104*a + 24, 11*c + 3*a^3 + 5*a^2 + 25*a + 1, 11*d + 3*a^3\n     + 5*a^2 + 25*a + 1, 11*e + 11*b - 6*a^3 - 10*a^2 - 39*a -\n     2) of Multivariate Polynomial Ring in e, d, c, b, a over\n     Rational Field, Ideal (a^2 + 3*a + 1, b - 1, c - 1, d - 1,\n     e + a + 3) of Multivariate Polynomial Ring in e, d, c, b,\n     a over Rational Field, Ideal (a^2 + 3*a + 1, b + a + 3, c\n     - 1, d - 1, e - 1) of Multivariate Polynomial Ring in e,\n     d, c, b, a over Rational Field]\nGot:\n     [Ideal (a - 1, b - 1, c - 1, d^2 + 3*d + 1, e + d + 3) of Multivariate Polynomial Ring in e, d, c, b, a over Rational Field, Ideal (a - 1, b - 1, c^2 + 3*c \n+ 1, d + c + 3, e - 1) of Multivariate Polynomial Ring in e, d, c, b, a over Rational Field, Ideal (a - 1, b^4 + b^3 + b^2 + b + 1, c - b^2, d - b^3, e + b^3 + \nb^2 + b + 1) of Multivariate Polynomial Ring in e, d, c, b, a over Rational Field, Ideal (a - 1, b^2 + 3*b + 1, c + b + 3, d - 1, e - 1) of Multivariate \nPolynomial Ring in e, d, c, b, a over Rational Field, Ideal (a^4 + a^3 + a^2 + a + 1, b - 1, c + a^3 + a^2 + a + 1, d - a^3, e - a^2) of Multivariate Polynomial \nRing in e, d, c, b, a over Rational Field, Ideal (a^4 + a^3 + a^2 + a + 1, b - a, c - a, d^2 + 3*d*a + a^2, e + d + 3*a) of Multivariate Polynomial Ring in e, \nd, c, b, a over Rational Field, Ideal (a^4 + a^3 + a^2 + a + 1, b - a, c^2 + 3*c*a + a^2, d + c + 3*a, e - a) of Multivariate Polynomial Ring in e, d, c, b, a \nover Rational Field, Ideal (a^4 + a^3 + a^2 + a + 1, b^3 + b^2*a + b^2 + b*a^2 + b*a + b + a^3 + a^2 + a + 1, c + b^2*a^3 + b^2*a^2 + b^2*a + b^2, d - b^2*a^2 - \nb^2*a - b^2 - b*a^2 - b*a - a^2, e - b^2*a^3 + b*a^2 + b*a + b + a^2 + a) of Multivariate Polynomial Ring in e, d, c, b, a over Rational Field, Ideal (a^4 + a^3 \n+ a^2 + a + 1, b^2 + 3*b*a + a^2, c + b + 3*a, d - a, e - a) of Multivariate Polynomial Ring in e, d, c, b, a over Rational Field, Ideal (a^4 + a^3 + 6*a^2 - \n4*a + 1, 11*b^2 - 6*b*a^3 - 10*b*a^2 - 39*b*a - 2*b - 16*a^3 - 23*a^2 - 104*a + 24, 11*c + 3*a^3 + 5*a^2 + 25*a + 1, 11*d + 3*a^3 + 5*a^2 + 25*a + 1, 11*e + \n11*b - 6*a^3 - 10*a^2 - 39*a - 2) of Multivariate Polynomial Ring in e, d, c, b, a over Rational Field, Ideal (a^4 - 4*a^3 + 6*a^2 + a + 1, 11*b^2 - 6*b*a^3 + \n26*b*a^2 - 41*b*a + 4*b + 8*a^3 - 31*a^2 + 40*a + 24, 11*c + 3*a^3 - 13*a^2 + 26*a - 2, 11*d + 3*a^3 - 13*a^2 + 26*a - 2, 11*e + 11*b - 6*a^3 + 26*a^2 - 41*a + \n4) of Multivariate Polynomial Ring in e, d, c, b, a over Rational Field, Ideal (a^2 + 3*a + 1, b - 1, c - 1, d - 1, e + a + 3) of Multivariate Polynomial Ring \nin e, d, c, b, a over Rational Field, Ideal (a^2 + 3*a + 1, b + a + 3, c - 1, d - 1, e - 1) of Multivariate Polynomial Ring in e, d, c, b, a over Rational Field]\n**********************************************************************\n1 items had failures:\n    1 of   4 in __main__.example_9\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file .doctest_multi_polynomial_ideal.py\n          [4.9 s]\nexit code: 256\n```\n\nSame things happens on OSX 10.5, but not on sage.math.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1227\n\n",
     "created_at": "2007-11-20T23:01:43Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "2.8.13.rc1: sage/rings/polynomial/multi_polynomial_ideal.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1227",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @malb
@@ -101,15 +100,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1227
 
 ---
 
-archive/issue_comments_007635.json:
+archive/issue_comments_007613.json:
 ```json
 {
     "body": "I hand-checked, and the above difference is just an ordering difference.",
     "created_at": "2007-11-21T06:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7635",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7613",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -119,15 +118,15 @@ I hand-checked, and the above difference is just an ordering difference.
 
 ---
 
-archive/issue_comments_007636.json:
+archive/issue_comments_007614.json:
 ```json
 {
     "body": "Attachment [trac1227.patch](tarball://root/attachments/some-uuid/ticket1227/trac1227.patch) by @williamstein created at 2007-11-21 14:11:44\n\nmaybe a fix ?",
     "created_at": "2007-11-21T14:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7636",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7614",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -139,15 +138,15 @@ maybe a fix ?
 
 ---
 
-archive/issue_comments_007637.json:
+archive/issue_comments_007615.json:
 ```json
 {
     "body": "Let's hope so. I had to merge the doctest bit of the patch manually, but the doctest does pass on sage.math [which it did before anyway]\n\nCheers,\n\nMichael",
     "created_at": "2007-11-21T14:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7637",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7615",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -161,15 +160,15 @@ Michael
 
 ---
 
-archive/issue_comments_007638.json:
+archive/issue_comments_007616.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-21T14:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7638",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7616",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -179,15 +178,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_007639.json:
+archive/issue_comments_007617.json:
 ```json
 {
     "body": "Merged in 2.8.13.rc2.",
     "created_at": "2007-11-21T14:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1227",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7639",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1227#issuecomment-7617",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

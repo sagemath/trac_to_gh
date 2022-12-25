@@ -6,15 +6,14 @@ archive/issues_005109.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5109\n\n",
     "created_at": "2009-01-27T00:14:11Z",
     "labels": [
-        "combinatorics",
-        "minor",
-        "enhancement"
+        "component: combinatorics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "add support for Bell polynomials in Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5109",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5109
 
 ---
 
-archive/issue_comments_039030.json:
+archive/issue_comments_038956.json:
 ```json
 {
     "body": "Attachment [trac_5109.patch](tarball://root/attachments/some-uuid/ticket5109/trac_5109.patch) by @mwhansen created at 2009-01-27 01:18:03",
     "created_at": "2009-01-27T01:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39030",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38956",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_5109.patch](tarball://root/attachments/some-uuid/ticket5109/tra
 
 ---
 
-archive/issue_comments_039031.json:
+archive/issue_comments_038957.json:
 ```json
 {
     "body": "This applies cleanly to 3.3.alpha2 and passes sage -t. The examples also agree with some examples given on http://en.wikipedia.org/wiki/Bell_polynomials, as well as this agreement: \n\n\n```\nsage: stirling_number2(6,2) == bell_polynomial(6,2)(1,1,1,1,1) \nTrue\nsage: stirling_number2(6,4) == bell_polynomial(6,4)(1,1,1) \nTrue\nsage: stirling_number2(7,4) == bell_polynomial(7,4)(1,1,1,1) \nTrue\n```\n\n\n\nI ran sage -testall and got this failure:\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/toy_d_basis.py\"  \n**********************************************************************\nFile \"/Volumes/G-DRIVE-MINI/sagestuff/sage-3.3.alpha2/devel/sage/sage/rings/polynomial/toy_d_basis.py\", line 91:\n    sage: d_basis(I)\nExpected:\n    [x + 170269749119, y + 2149906854, z + 735710619426, 282687803443]\nGot:\n    [x + 170269749119, y + 2149906854, z + 170335012540, 282687803443]\n**********************************************************************\n```\n\nThough I don't know what a d_basis is, I think it is an unrelated failure\nso I'm giving this a positive review.",
     "created_at": "2009-01-27T12:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39031",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38957",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -97,15 +96,15 @@ so I'm giving this a positive review.
 
 ---
 
-archive/issue_comments_039032.json:
+archive/issue_comments_038958.json:
 ```json
 {
     "body": "One more test (also positive):\n\n\n```\nsage: n=6\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 7\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 8\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: n = 20\nsage: add([bell_polynomial(n,i)((1,)*(n-i+1)) for i in range(1,n+1)]) == bell_number(n) \nTrue\nsage: bell_number(n)\n51724158235372\n```\n\nReturns these pretty fast too!",
     "created_at": "2009-01-27T12:24:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39032",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38958",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -135,15 +134,15 @@ Returns these pretty fast too!
 
 ---
 
-archive/issue_comments_039033.json:
+archive/issue_comments_038959.json:
 ```json
 {
     "body": "Note that partial credit goes to Blair - see \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/4ae02fd827f68eed#\n\nCheers,\n\nMichael",
     "created_at": "2009-01-28T12:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39033",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38959",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -159,15 +158,15 @@ Michael
 
 ---
 
-archive/issue_comments_039034.json:
+archive/issue_comments_038960.json:
 ```json
 {
     "body": "Yep, I did the patch in his name.",
     "created_at": "2009-01-28T12:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39034",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38960",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -177,15 +176,15 @@ Yep, I did the patch in his name.
 
 ---
 
-archive/issue_comments_039035.json:
+archive/issue_comments_038961.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-28T12:42:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39035",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38961",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -195,15 +194,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_039036.json:
+archive/issue_comments_038962.json:
 ```json
 {
     "body": "I got Blair's \"real name\" from the hg commit message, but I pinged him to see if he wants to be credited with that name or not.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-28T12:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39036",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38962",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -217,15 +216,15 @@ Michael
 
 ---
 
-archive/issue_comments_039037.json:
+archive/issue_comments_038963.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-28T13:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39037",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38963",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -235,15 +234,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_039038.json:
+archive/issue_comments_038964.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-28T13:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-39038",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5109#issuecomment-38964",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

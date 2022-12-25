@@ -6,15 +6,14 @@ archive/issues_008375.json:
     "body": "Assignee: drkirkby\n\n == The computer hardware & software ==\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM \n* Solaris 10 03/2005 - the first release of Solaris 10. \n\n == The Sage software ==\nSage 4.3.3 with various patches to get it to compile on Solaris. (The notebook is not working properly though). \n\n == The test failure == \n\n\n```\n**********************************************************************\nFile \"/export/home/drkirkby/sage-4.3.3/devel/sage/sage/symbolic/pynac.pyx\", line 1282:\n    sage: py_exp(float(1))\nExpected:\n    2.7182818284590451\nGot:\n    2.7182818284590455\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8375\n\n",
     "created_at": "2010-02-26T09:00:54Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Numerical noise in devel/sage/sage/symbolic/pynac.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8375",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8375
 
 ---
 
-archive/issue_comments_074888.json:
+archive/issue_comments_074764.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-26T14:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74888",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74764",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_074889.json:
+archive/issue_comments_074765.json:
 ```json
 {
     "body": "The attached patch fixes this. It also has some notes showing \n\n* A high precision value of e\n* The IEEE 754 value \n* The correctly rounded result\n* The value given on the SPARC processor. \n\n\n```\ndrkirkby@redstart:~/sage-4.3.3$ ./sage -t devel/sage/sage/symbolic/pynac.pyx\nsage -t  \"devel/sage/sage/symbolic/pynac.pyx\"\n         [156.7 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 156.7 seconds\nsage/sage/symbolic/pynac.pyx.3$ drkirkby@redstart:~/sage-4.3.3$ ./sage -t devel/\n-bash: drkirkby@redstart:~/sage-4.3.3$: No such file or directory\nsage -t  \"devel/sage/sage/symbolic/pynac.pyx\"\n         [156.7 s]\n\n```\n",
     "created_at": "2010-02-26T14:53:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74889",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74765",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -109,15 +108,15 @@ sage -t  "devel/sage/sage/symbolic/pynac.pyx"
 
 ---
 
-archive/issue_comments_074890.json:
+archive/issue_comments_074766.json:
 ```json
 {
     "body": "The patches at #8374 and here fix the corresponding doctest failures in 4.3.0.1 on t2 and still pass in 4.3.3 on sage.math.\n\nJust to check: Did \"sage-devel\" agree that this was the best approach to the problem? \n\nI'm not sure if Minh is already reviewing these tickets.  To the extent it counts, my review is positive, provided that you fix the [minor, admittedly] spelling / grammatical errors.",
     "created_at": "2010-03-03T09:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74890",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74766",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -131,15 +130,15 @@ I'm not sure if Minh is already reviewing these tickets.  To the extent it count
 
 ---
 
-archive/issue_comments_074891.json:
+archive/issue_comments_074767.json:
 ```json
 {
     "body": "Attachment [numerical-noise-on-SPARC.patch](tarball://root/attachments/some-uuid/ticket8375/numerical-noise-on-SPARC.patch) by drkirkby created at 2010-03-03 11:45:14\n\nWith grammer/spelling corrections.",
     "created_at": "2010-03-03T11:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74891",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74767",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -151,15 +150,15 @@ With grammer/spelling corrections.
 
 ---
 
-archive/issue_comments_074892.json:
+archive/issue_comments_074768.json:
 ```json
 {
     "body": "There was only one comment from Robert as to whether there was another way to get the SPARC processor to produce the same output as Intel. I mentioned there was, but it would require  very significant changes. \n\nThe exact same correction for 'e' was made once before for the SPARC processor. It has been implemented numerous time for other processors. \n\nI've corrected the grammar/spelling.",
     "created_at": "2010-03-03T11:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74892",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74768",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -173,15 +172,15 @@ I've corrected the grammar/spelling.
 
 ---
 
-archive/issue_comments_074893.json:
+archive/issue_comments_074769.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-03T20:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74893",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74769",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -191,15 +190,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_074894.json:
+archive/issue_comments_074770.json:
 ```json
 {
     "body": "Replying to [comment:3 drkirkby]:\n> There was only one comment from Robert as to whether there was another way to get the SPARC processor to produce the same output as Intel. I mentioned there was, but it would require  very significant changes. \n> \n> The exact same correction for 'e' was made once before for the SPARC processor. It has been implemented numerous time for other processors. \n> \n> I've corrected the grammar/spelling. \n\n\nFrom me a positive review.\n\nJaap",
     "created_at": "2010-03-03T20:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74894",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74770",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -219,15 +218,15 @@ Jaap
 
 ---
 
-archive/issue_comments_074895.json:
+archive/issue_comments_074771.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-06T08:24:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8375",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74895",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8375#issuecomment-74771",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

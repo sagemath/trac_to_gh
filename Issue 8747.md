@@ -6,15 +6,13 @@ archive/issues_008747.json:
     "body": "Assignee: @hivert\n\nThanks to #8742 one can speed up TestSuite by using `LazyFormat` to report failure. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8747\n\n",
     "created_at": "2010-04-22T19:58:57Z",
     "labels": [
-        "categories",
-        "major",
-        "enhancement"
+        "component: categories"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Speedup testsuite using LazyFormat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8747",
-    "user": "@hivert"
+    "user": "https://github.com/hivert"
 }
 ```
 Assignee: @hivert
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8747
 
 ---
 
-archive/issue_comments_080027.json:
+archive/issue_comments_079897.json:
 ```json
 {
     "body": "Attachment [trac_8747-testsuite-speedup-fh.patch](tarball://root/attachments/some-uuid/ticket8747/trac_8747-testsuite-speedup-fh.patch) by @hivert created at 2010-04-30 21:53:30",
     "created_at": "2010-04-30T21:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80027",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-79897",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [trac_8747-testsuite-speedup-fh.patch](tarball://root/attachments/som
 
 ---
 
-archive/issue_comments_080028.json:
+archive/issue_comments_079898.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-12T17:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80028",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-79898",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -65,15 +63,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080029.json:
+archive/issue_comments_079899.json:
 ```json
 {
     "body": "Private e-mail from Nicolas\n\n```\n- trac_8747-testsuite-speedup-fh.patch\n\n   \u00c7a m'a l'air bon! Est-ce que l'on veut syst\u00e9matiquement utiliser\n   des lazy-format dans tous les tests, ou seulement ceux o\u00f9 il y a un\n   impact de vitesse? Par exemple, Parent._test_category n'est\n   probablement pas critique.\n```\n\n\nTranslation: All looks good. Do we want to systematically use LazyFormat for all tests or only those impacting speed ? For example, Parent._test_category isn't critical.\n\n\nAnswer: I put them in parent to advertise the feature....",
     "created_at": "2010-05-12T17:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80029",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-79899",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -98,15 +96,15 @@ Answer: I put them in parent to advertise the feature....
 
 ---
 
-archive/issue_comments_080030.json:
+archive/issue_comments_079900.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"testsuite, lazy format strings\".",
     "created_at": "2010-05-12T17:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80030",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-79900",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -116,15 +114,15 @@ Changing keywords from "" to "testsuite, lazy format strings".
 
 ---
 
-archive/issue_comments_080031.json:
+archive/issue_comments_079901.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-07T17:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80031",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-79901",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -134,15 +132,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080032.json:
+archive/issue_comments_079902.json:
 ```json
 {
     "body": "All tests patch on Sage 4.4.3, with the following patches applied:\n\n```\ntrac_8704-integer_range_print-fh.patch\ntrac_9104_freemod_name-fix-nt.patch\ntrac_8881-functorial_constructions-nt.patch\ntrac_8742-lazy_format-fh.patch\ntrac_8742-lazy_format-review-nt.patch\ntrac_8930-enumerated_set_deprecate-fh.patch\n8691_permutation_plainchange_tjb.patch\ntrac_8926_family_repr-fh.patch\ntrac_8902-subsets_call_fix-fh.patch\ntrac_8888_partition_rim-fh.patch\ntrac_8888_reviewer_jb.patch\ntrac_8811_reduced_word_of_translations-nt.patch\ntrac_8500_transitive_groups-final.patch\ntrac_8549_cycle_enumerator-nb.patch\ntrac_8490_square_free-vd.patch\ntrac_9096_disj_union_sphinx_fix-fh.patch\ntrac_8954-nilTemperley-as.patch\ntrac_8913-cayley_graph_twosided_labels-nt.patch\ntrac_8887-typo_monoid_prod-fh.patch\ntrac_9106-UniqueRep_sphinx_fix-fh.patch\ntrac_8876-triangular_morphisms_improve-fh.patch\ntrac_8876-reviewer_patch-jb.patch\nsage-5.0.patch\ntrac_9178-attrcall_hash_fix-nt.patch\ngap3_interface_v4.3.3.patch\ngap3_interface_patch2.patch\ntrac_8747-testsuite-speedup-fh.patch\n```\n\n\nExcept maybe on sage.misc.sagedoc, but that's most likely a glitch from building the doc previously with later patches applied.",
     "created_at": "2010-06-07T17:57:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80032",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-79902",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -185,15 +183,15 @@ Except maybe on sage.misc.sagedoc, but that's most likely a glitch from building
 
 ---
 
-archive/issue_comments_080033.json:
+archive/issue_comments_079903.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-09T02:22:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-80033",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8747#issuecomment-79903",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

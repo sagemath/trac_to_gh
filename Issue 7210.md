@@ -6,15 +6,14 @@ archive/issues_007210.json:
     "body": "Assignee: @williamstein\n\nMathematica has something called RevolutionPlot3D.  Maybe we should too.\n\n[http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html](http://reference.wolfram.com/mathematica/ref/RevolutionPlot3D.html)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7210\n\n",
     "created_at": "2009-10-14T16:57:23Z",
     "labels": [
-        "graphics",
-        "minor",
-        "enhancement"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make revolution plot 3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7210",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7210
 
 ---
 
-archive/issue_comments_059836.json:
+archive/issue_comments_059724.json:
 ```json
 {
     "body": "I've already adressed this at #7889",
     "created_at": "2010-01-10T08:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59836",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59724",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -49,15 +48,15 @@ I've already adressed this at #7889
 
 ---
 
-archive/issue_comments_059837.json:
+archive/issue_comments_059725.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-02-01T02:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59837",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59725",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -67,15 +66,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_059838.json:
+archive/issue_comments_059726.json:
 ```json
 {
     "body": "Make sure you understand the guidelines on closing tickets. See [this section](http://www.sagemath.org/doc/developer/trac.html#closing-tickets) of the Developers' Guide for more information.",
     "created_at": "2010-02-01T03:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59838",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59726",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -85,15 +84,15 @@ Make sure you understand the guidelines on closing tickets. See [this section](h
 
 ---
 
-archive/issue_comments_059839.json:
+archive/issue_comments_059727.json:
 ```json
 {
     "body": "Whoops sorry!",
     "created_at": "2010-02-01T03:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59839",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59727",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -103,15 +102,15 @@ Whoops sorry!
 
 ---
 
-archive/issue_comments_059840.json:
+archive/issue_comments_059728.json:
 ```json
 {
     "body": "Resolution changed from duplicate to ",
     "created_at": "2010-02-01T03:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59840",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59728",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -121,15 +120,15 @@ Resolution changed from duplicate to
 
 ---
 
-archive/issue_comments_059841.json:
+archive/issue_comments_059729.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2010-02-01T03:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59841",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59729",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -139,15 +138,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_059842.json:
+archive/issue_comments_059730.json:
 ```json
 {
     "body": "Be careful not to reopen tickets. I'm closing this as a duplicate of #7889.",
     "created_at": "2010-02-01T04:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59842",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59730",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -157,15 +156,15 @@ Be careful not to reopen tickets. I'm closing this as a duplicate of #7889.
 
 ---
 
-archive/issue_comments_059843.json:
+archive/issue_comments_059731.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-02-01T04:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7210",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59843",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7210#issuecomment-59731",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

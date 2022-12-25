@@ -6,15 +6,14 @@ archive/issues_000817.json:
     "body": "Assignee: somebody\n\n\n```\nsage: O(3^-2)\n---------------------------------------------------------------------------\n<type 'exceptions.ValueError'>            Traceback (most recent call last)\n\n/home/was/<ipython console> in <module>()\n\n/home/was/s/local/lib/python2.5/site-packages/sage/rings/big_oh.py in O(x)\n     27             raise ArithmeticError, \"x must be prime power\"\n     28         p, r = F[0]\n---> 29         return padics.factory.Zp(p, prec = r, type = 'capped-rel')(0, absprec = r)\n     30\n     31     elif isinstance(x, padics.padic_generic.pAdicGeneric):\n\n/home/was/s/local/lib/python2.5/site-packages/sage/rings/padics/factory.py in Zp(p, prec, type, print_mode, halt, names, check)\n    327             return K\n    328     if (type == 'capped-rel'):\n--> 329         K = pAdicRingCappedRelative(p, prec, print_mode, name)\n    330     elif (type == 'fixed-mod'):\n    331         K = pAdicRingFixedMod(p, prec, print_mode, name)\n\n/home/was/s/local/lib/python2.5/site-packages/sage/rings/padics/padic_ring_capped_relative.py in __init__(self, p, prec, print_mode, names)\n    134 class pAdicRingCappedRelative(pAdicRingBaseGeneric, pAdicCappedRelativeRingGeneric):\n    135     def __init__(self, p, prec, print_mode, names):\n--> 136         pAdicRingBaseGeneric.__init__(self, p, prec, print_mode, names, pAdicCappedRelativeElement)\n    137\n    138     r\"\"\"\n\n/home/was/s/local/lib/python2.5/site-packages/sage/rings/padics/padic_generic.py in __init__(self, p, prec, print_mode, names, element_class)\n     72         #else:\n     73         #    self.prime_pow = PowComputer(p, 3, prec, self.is_field())\n---> 74         self.prime_pow = PowComputer(p, prec, self.is_field())\n     75         self.__set_print_mode(print_mode)\n     76         self._element_class = element_class\n\n/home/was/pow_computer.pyx in pow_computer.PowComputer()\n\n<type 'exceptions.ValueError'>: L must be positive\nsage:                                                  \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/817\n\n",
     "created_at": "2007-10-04T01:17:50Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "O(3^(-2)) is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/817",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -71,15 +70,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/817
 
 ---
 
-archive/issue_comments_005078.json:
+archive/issue_comments_005062.json:
 ```json
 {
     "body": "Attachment [6574.patch](tarball://root/attachments/some-uuid/ticket817/6574.patch) by @williamstein created at 2007-10-04 02:44:24",
     "created_at": "2007-10-04T02:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/817",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/817#issuecomment-5078",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/817#issuecomment-5062",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +88,15 @@ Attachment [6574.patch](tarball://root/attachments/some-uuid/ticket817/6574.patc
 
 ---
 
-archive/issue_comments_005079.json:
+archive/issue_comments_005063.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-04T02:47:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/817",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/817#issuecomment-5079",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/817#issuecomment-5063",
+    "user": "https://github.com/williamstein"
 }
 ```
 

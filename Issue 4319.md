@@ -6,7 +6,7 @@ archive/issues_004319.json:
     "body": "Assignee: tba\n\nMinor output change due in #4285.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4319\n\n",
     "created_at": "2008-10-18T15:58:05Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004319.json:
     "title": "Update Italian tutorial for #4285",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4319",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tba
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4319
 
 ---
 
-archive/issue_comments_031616.json:
+archive/issue_comments_031554.json:
 ```json
 {
     "body": "This may be a silly question, but what Italian tutorial?  In SAGE_ROOT/devel/sage/doc/, I see directories \"en\" and \"fr\", but no \"it\".",
     "created_at": "2010-06-21T22:12:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4319#issuecomment-31616",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/4319#issuecomment-31554",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -47,15 +47,15 @@ This may be a silly question, but what Italian tutorial?  In SAGE_ROOT/devel/sag
 
 ---
 
-archive/issue_comments_031617.json:
+archive/issue_comments_031555.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2012-09-12T07:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4319",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4319#issuecomment-31617",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4319#issuecomment-31555",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

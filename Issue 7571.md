@@ -6,15 +6,13 @@ archive/issues_007571.json:
     "body": "Assignee: @rlmill\n\nThis patch improves 3 methods in graph.py:\n\n* connected_components: we use python set instead of lists to enable fast lookup\n* blocks_and_cut_vertices: using dicts instead of lists enable us to avoid relabeling\n* girth: idem\n\nIssue created by migration from https://trac.sagemath.org/ticket/7571\n\n",
     "created_at": "2009-12-01T15:10:38Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "use more dicts in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7571",
-    "user": "ylchapuy"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 Assignee: @rlmill
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7571
 
 ---
 
-archive/issue_comments_064441.json:
+archive/issue_comments_064325.json:
 ```json
 {
     "body": "for the record:\n\nBefore:\n\n```\nsage: g=graphs.RandomGNP(10000,.00011)\nsage: time g.girth()\nCPU times: user 8.19 s, sys: 0.02 s, total: 8.20 s\nWall time: 8.21 s\n33\nsage: time g.connected_components_number()\nCPU times: user 2.06 s, sys: 0.00 s, total: 2.07 s\nWall time: 2.09 s\n4474\nsage: g=g.connected_components_subgraphs()[0]\nsage: len(g)\n1784\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 0.28 s, sys: 0.00 s, total: 0.28 s\nWall time: 0.28 s\n```\n\n\nAfter:\n\n```\nsage: g=graphs.RandomGNP(10000,.00011)\nsage: time g.girth()\nCPU times: user 5.00 s, sys: 0.00 s, total: 5.00 s\nWall time: 5.00 s\n33\nsage: time g.connected_components_number()\nCPU times: user 0.20 s, sys: 0.00 s, total: 0.20 s\nWall time: 0.20 s\n4487\nsage: g=g.connected_components_subgraphs()[0]\nsage: len(g)\n2509\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 0.16 s, sys: 0.00 s, total: 0.16 s\nWall time: 0.16 s\n```\n\n\nAnd more importantly:\n\n```\nsage: g = graphs.KrackhardtKiteGraph()\nsage: g.relabel(map(lambda i: 'x'+str(i),range(len(g))))\n```\n\n\nbefore:\n\n```\nsage: g.blocks_and_cut_vertices()\n([[9, 8], [8, 7], [7, 4, 6, 5, 2, 3, 1, 0]], [8, 7])\n```\n\n\nafter:\n\n```\nsage: g.blocks_and_cut_vertices()\n\n([['x9', 'x8'],\n  ['x5', 'x4', 'x1', 'x0', 'x2', 'x3', 'x6', 'x7'],\n  ['x7', 'x8']],\n ['x8', 'x7'])\n```\n",
     "created_at": "2009-12-01T15:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64441",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -121,15 +119,15 @@ sage: g.blocks_and_cut_vertices()
 
 ---
 
-archive/issue_comments_064442.json:
+archive/issue_comments_064326.json:
 ```json
 {
     "body": "Attachment [trac_7571.patch](tarball://root/attachments/some-uuid/ticket7571/trac_7571.patch) by ylchapuy created at 2009-12-01 15:47:54",
     "created_at": "2009-12-01T15:47:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64442",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64326",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -139,15 +137,15 @@ Attachment [trac_7571.patch](tarball://root/attachments/some-uuid/ticket7571/tra
 
 ---
 
-archive/issue_comments_064443.json:
+archive/issue_comments_064327.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-01T15:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64443",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64327",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -157,15 +155,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_064444.json:
+archive/issue_comments_064328.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2009-12-01T15:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64444",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64328",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -175,15 +173,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_064445.json:
+archive/issue_comments_064329.json:
 ```json
 {
     "body": "Your benchmarks would be more convincing if you used `set_random_seed` beforehand, so you're actually testing the same \"random\" graph.\n\nThe changes to the code look good, and the speedups are impressive.",
     "created_at": "2009-12-01T16:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64445",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64329",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -195,15 +193,15 @@ The changes to the code look good, and the speedups are impressive.
 
 ---
 
-archive/issue_comments_064446.json:
+archive/issue_comments_064330.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-01T16:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64446",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64330",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -213,15 +211,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_064447.json:
+archive/issue_comments_064331.json:
 ```json
 {
     "body": "that's true, benchmarks are not very convincing. Here are new ones:\n\nbefore:\n\n```\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(20000,.00005)\nsage: time g.girth()\nCPU times: user 17.55 s, sys: 0.07 s, total: 17.62 s\nWall time: 17.83 s\n16\nsage: time g.connected_components_number()\nCPU times: user 8.40 s, sys: 0.08 s, total: 8.48 s\nWall time: 8.72 s\n9810\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(10000,.005)\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 17.19 s, sys: 0.44 s, total: 17.63 s\nWall time: 17.98 s\n```\n\n\nafter:\n\n```\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(20000,.00005)\nsage: time g.girth()\nCPU times: user 2.15 s, sys: 0.00 s, total: 2.16 s\nWall time: 2.15 s\n16\nsage: time g.connected_components_number()\nCPU times: user 0.32 s, sys: 0.00 s, total: 0.32 s\nWall time: 0.32 s\n9810\nsage: set_random_seed(42)\nsage: g=graphs.RandomGNP(10000,.005)\nsage: time b=g.blocks_and_cut_vertices()\nCPU times: user 10.22 s, sys: 0.04 s, total: 10.27 s\nWall time: 10.57 s\n```\n",
     "created_at": "2009-12-01T16:30:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64447",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64331",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -273,15 +271,15 @@ Wall time: 10.57 s
 
 ---
 
-archive/issue_comments_064448.json:
+archive/issue_comments_064332.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-02T08:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64448",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7571#issuecomment-64332",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

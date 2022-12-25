@@ -6,7 +6,7 @@ archive/issues_003300.json:
     "body": "Assignee: @timabbott\n\nI've attached the patch to make the ntl Debian package use the soname library patch we made earlier (with a few other improvements).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3300\n\n",
     "created_at": "2008-05-25T18:57:23Z",
     "labels": [
-        "debian-package",
+        "component: debian-package",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003300.json:
     "title": "[with patch; needs review] ntl soname for Debian package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3300",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3300
 
 ---
 
-archive/issue_comments_022833.json:
+archive/issue_comments_022786.json:
 ```json
 {
     "body": "Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-debian-release.patch) by @timabbott created at 2008-05-25 18:57:38",
     "created_at": "2008-05-25T18:57:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22833",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22786",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [ntl-debian-release.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_022834.json:
+archive/issue_comments_022787.json:
 ```json
 {
     "body": "Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-forget-version.patch) by @timabbott created at 2008-05-25 22:29:01",
     "created_at": "2008-05-25T22:29:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22834",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22787",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -65,15 +65,15 @@ Attachment [ntl-forget-version.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_022835.json:
+archive/issue_comments_022788.json:
 ```json
 {
     "body": "I've also attached the patch that removes the ntl version number from spkg-install.",
     "created_at": "2008-05-25T22:29:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22835",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22788",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -83,15 +83,15 @@ I've also attached the patch that removes the ntl version number from spkg-insta
 
 ---
 
-archive/issue_comments_022836.json:
+archive/issue_comments_022789.json:
 ```json
 {
     "body": "I've also attached a patch that changes the ntl priority to optional and makes the copyright file not have a trivially weird format.",
     "created_at": "2008-05-26T04:36:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22836",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22789",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -101,15 +101,15 @@ I've also attached a patch that changes the ntl priority to optional and makes t
 
 ---
 
-archive/issue_comments_022837.json:
+archive/issue_comments_022790.json:
 ```json
 {
     "body": "Attachment [ntl-priority.patch](tarball://root/attachments/some-uuid/ticket3300/ntl-priority.patch) by @timabbott created at 2008-05-26 04:36:40",
     "created_at": "2008-05-26T04:36:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22837",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22790",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -119,15 +119,15 @@ Attachment [ntl-priority.patch](tarball://root/attachments/some-uuid/ticket3300/
 
 ---
 
-archive/issue_comments_022838.json:
+archive/issue_comments_022791.json:
 ```json
 {
     "body": "Positive review on the two patches for the Debian dist directory, but I will not apply ntl-forget-version.patch since that results in libntl.so and libntl-5.4.2.so being identical copies. There is a special option for cp on Linux [-d] that preserves the link, but this might break on Cygwin for example. Since updating NTL is rare we can certainly deal with changing the so name on occasion.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-28T07:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22838",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22791",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -141,15 +141,15 @@ Michael
 
 ---
 
-archive/issue_comments_022839.json:
+archive/issue_comments_022792.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-28T07:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22839",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22792",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -159,15 +159,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022840.json:
+archive/issue_comments_022793.json:
 ```json
 {
     "body": "Merged in Sage 3.0.3.alpha0\n\nThe patches have been merged in \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.3/alpha0/ntl-5.4.2.p3.spkg\n\nwithout incrementing the patch level to avoid rebuilds.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-28T07:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3300",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22840",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3300#issuecomment-22793",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

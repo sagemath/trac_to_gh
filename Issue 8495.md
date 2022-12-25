@@ -6,15 +6,14 @@ archive/issues_008495.json:
     "body": "Assignee: @williamstein\n\nCC:  @burcin @jasongrout\n\nSince #3587, which implements a _sage_() method for mathematica elements, many mathematica doctests fail.  E.g:\n\n\n```\nsage: def math_bessel_K(nu,x): \n     ...       return mathematica(nu).BesselK(x).N(20).sage() \n     ... \n     sage: math_bessel_K(2,I) \nNotImplementedError: Unable to parse \nMathematica output: \n-2.5928861754911969781676606702635284285719718407749199115289`20.1494653502 82203 \n+ \n0.1804899720669620266296208808560650432663536549483055754141`18.99213497581 376*i \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8495\n\n",
     "created_at": "2010-03-11T06:33:47Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "Regression: Many mathematica doctests fail",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8495",
-    "user": "flawrence"
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 Assignee: @williamstein
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8495
 
 ---
 
-archive/issue_comments_076616.json:
+archive/issue_comments_076489.json:
 ```json
 {
     "body": "Before #3587, mathematica's output was sent to ExpectElement._sage_repr() in expect.py, which called repr() and tidied up the results (converting {} to [], stripping new line characters etc) then sage_eval() was called on the results.  With this approach, mathematica functions that returned numbers, symbolic variables or arrays could be imported successfully into sage.  The approach had the disadvantage that all symbolic variables had to be passed in manually as locals, and that functions couldn't be translated from mathematica to their equivalents in sage.\n\n#3587 instead calls str() on mathematica's results (which has the alarming option ascii_art = True), then replaces []s by (), changes everything to lower case and sends it to SR.  This works for simple functions but fails for arrays and probably anything affected by ascii_art = True\n\nI'm not familiar with SR, but at a minimum MathematicaElement._sage_() should be patched to call sage_repr() instead of str().  I don't know whether SR has all the functionality of sage_eval(), e.g. supporting arrays.",
     "created_at": "2010-03-11T06:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76616",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76489",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -68,15 +67,15 @@ I'm not familiar with SR, but at a minimum MathematicaElement._sage_() should be
 
 ---
 
-archive/issue_comments_076617.json:
+archive/issue_comments_076490.json:
 ```json
 {
     "body": "I've uploaded a patch that has a thorough rewrite of MathematicaElement._sage_() to get the functionality from #3587 while keeping the functionality from before it (lists, complex numbers, numbers in scientific notation...).  I still need to write some documentation for the top of the file (i.e. documentation that makes it into the reference manual) but before I do that and submit this for formal review I'd like wise comments about my approach, e.g. \"The way you convert function names is really inefficient and problematic, do it this way...\", or \"You can efficiently get a list of all sage functions recognised by sage_eval() by ...\".\n\nAlso if someone could check the doctests on a 32-bit computer and let me know the result that they get instead of\n[[1.00000000000000, 4], pi, 3.20000000000000*e100, I]\nthat would be grand.",
     "created_at": "2010-03-14T12:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76617",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76490",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -90,15 +89,15 @@ that would be grand.
 
 ---
 
-archive/issue_comments_076618.json:
+archive/issue_comments_076491.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to flawrence.",
     "created_at": "2010-03-14T12:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76618",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76491",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -108,15 +107,15 @@ Changing assignee from @williamstein to flawrence.
 
 ---
 
-archive/issue_comments_076619.json:
+archive/issue_comments_076492.json:
 ```json
 {
     "body": "I've updated the patch file so that it updates the Mathematica module documentation.  This needs to be doctested on a 32-bit computer at some point.",
     "created_at": "2010-04-06T05:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76619",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76492",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -126,15 +125,15 @@ I've updated the patch file so that it updates the Mathematica module documentat
 
 ---
 
-archive/issue_comments_076620.json:
+archive/issue_comments_076493.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-06T05:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76620",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76493",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -144,15 +143,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_076621.json:
+archive/issue_comments_076494.json:
 ```json
 {
     "body": "There is dictionary in place from Mathematica to Sage.\n\n\n```\n\nsage: sage.symbolic.pynac.symbol_table['mathematica']\n{'Log[2]': log2, 'Cos': cos, 'DiracDelta': dirac_delta, 'EulerGamma': euler_gamma, 'Glaisher': glaisher, 'Sqrt': <function sqrt at 0x2c20f50>, 'Factorial': factorial, 'Khinchin': khinchin, 'Catalan': catalan, '(1+Sqrt[5])/2': golden_ratio, 'Binomial': binomial, 'PolyGamma': psi, 'HeavisideTheta': heaviside, 'KroneckerDelta': kronecker_delta, 'Pi': pi, 'UnitStep': unit_step, 'Sin': sin, 'Gamma': gamma, 'Sign': sgn}\n```\n\n\nThis is constructed at runtime and is filled in by the __init__ methods of the functions and constants.",
     "created_at": "2010-07-19T20:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76621",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76494",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -172,15 +171,15 @@ This is constructed at runtime and is filled in by the __init__ methods of the f
 
 ---
 
-archive/issue_comments_076622.json:
+archive/issue_comments_076495.json:
 ```json
 {
     "body": "Replying to [comment:2 flawrence]:\n> I've uploaded a patch that has a thorough rewrite of MathematicaElement._sage_() to get the functionality from #3587 while keeping the functionality from before it (lists, complex numbers, numbers in scientific notation...).  I still need to write some documentation for the top of the file (i.e. documentation that makes it into the reference manual) but before I do that and submit this for formal review I'd like wise comments about my approach, e.g. \"The way you convert function names is really inefficient and problematic, do it this way...\", or \"You can efficiently get a list of all sage functions recognised by sage_eval() by ...\".\n> \n> Also if someone could check the doctests on a 32-bit computer and let me know the result that they get instead of\n> [[1.00000000000000, 4], pi, 3.20000000000000*e100, I]\n> that would be grand.\n\nOn 32-bit Debian I get the same output. There is only one doctest failure:\n\n\n```\n./sage -t  -only-optional=mathematica \"devel/sage/sage/interfaces/mathematica.py\"\nsage -t -only-optional=mathematica \"devel/sage/sage/interfaces/mathematica.py\"\n**********************************************************************\nFile \"./sage-4.4.4/devel/sage/sage/interfaces/mathematica.py\", line 281:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nExpected:\n    0.180489972066962*I - 2.592886175491197\nGot:\n    -2.59288617549119697816765132253822887 + 0.180489972066962026629620880838378650*I\n**********************************************************************\n\n```\n\n\nBut this is probably unrelated to this patch, since also without this patch applied I get\nthings like:\n\n\n```\nsage: mathematica('N[Pi, 1]')\n3.1415926535897932385\nsage: mathematica('N[Pi, 10]')\n3.1415926535897932385\nsage: mathematica('N[Pi, 11]')\n3.1415926535897932384626433836\n```\n",
     "created_at": "2010-07-20T13:20:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76622",
-    "user": "whuss"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76495",
+    "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
 
@@ -227,15 +226,15 @@ sage: mathematica('N[Pi, 11]')
 
 ---
 
-archive/issue_comments_076623.json:
+archive/issue_comments_076496.json:
 ```json
 {
     "body": "Replying to [comment:5 mhansen]:\n> There is dictionary in place from Mathematica to Sage.\n> \n {{{\nsage: sage.symbolic.pynac.symbol_table['mathematica']\n{'Log[2]': log2, 'Cos': cos, 'DiracDelta': dirac_delta, 'EulerGamma': euler_gamma, 'Glaisher': glaisher, 'Sqrt': <function sqrt at 0x2c20f50>, 'Factorial': factorial, 'Khinchin': khinchin, 'Catalan': catalan, '(1+Sqrt[5])/2': golden_ratio, 'Binomial': binomial, 'PolyGamma': psi, 'HeavisideTheta': heaviside, 'KroneckerDelta': kronecker_delta, 'Pi': pi, 'UnitStep': unit_step, 'Sin': sin, 'Gamma': gamma, 'Sign': sgn}\n}}}\n\nExcellent! I've updated the patch so that it uses that dictionary.  I also added the ability to pass a locals dictionary to _sage_, which complements and/or overrides the symbol_table['mathematica'] dictionary.\n\nThe documentation for this function won't be very visible, since it starts with an underscore, so I was contemplating setting up a mathematica-specific .sage function that accepts a locals dictionary and has a copy of this documentation.  In the end I didn't do this because I don't understand the consequences (or why there are separate _sage_ and sage functions at all).  Opinions?\n\nReplying to [comment:6 whuss]:\n>On 32-bit Debian I get the same output. There is only one doctest failure:\n\n>But this is probably unrelated to this patch, since also without this patch applied I get things like:\n\nYes, I'm not sure it's related to the patch either.  For the record I get the correct behaviour with the patch:\n\n```\nsage: mathematica('N[Pi, 1]')\n3.1\nsage: mathematica('N[Pi, 10]')\n3.1415926536\nsage: mathematica('N[Pi, 11]')\n3.14159265359\n```\n",
     "created_at": "2010-07-21T08:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76623",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76496",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -272,15 +271,15 @@ sage: mathematica('N[Pi, 11]')
 
 ---
 
-archive/issue_comments_076624.json:
+archive/issue_comments_076497.json:
 ```json
 {
     "body": "This looks great! Many thanks for your work Felix.\n\nHere is my review:\n* Can you change the line lengths to be less than 78 characters? Some of us still edit code using the terminal.\n* There should be an empty line after `::` in the documentation. You can also put the `::` sign right after the text, you don't need to make it a separate line.\n* On line 648 of `interfaces/mathematica.py`, you can change the test `if result.find('\"') != -1:` to `if '\"' in result:`\n* The dictionary merge in the `_sage_()` method might be expensive. I think it's better to do it only if the locals dictionary is not empty. Perhaps `lsymbols = symbol_table['mathematica'].copy(); lsymbols.update(locals)` would be faster.\n* Using `sage_eval()` has lot's of security implications. Can we replace it with `sage.calculus.calculus.SR_parser` or `sage.calculus.calculus.symbolic_expression_from_string()` in this case?\n\nThis is definitely an improvement over what we have currently. I'd really like to see it included in the next release.",
     "created_at": "2010-09-08T14:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76624",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76497",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -299,15 +298,15 @@ This is definitely an improvement over what we have currently. I'd really like t
 
 ---
 
-archive/issue_comments_076625.json:
+archive/issue_comments_076498.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-08T14:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76625",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76498",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -317,15 +316,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_076626.json:
+archive/issue_comments_076499.json:
 ```json
 {
     "body": "One more:\n* The last two hunks applied to `sage/symbolic/constants.py` should be removed. The `conversions` dictionary defines how the current constant is represented in the given system. The values stored in the dictionary should be in MMA syntax.",
     "created_at": "2010-09-08T14:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76626",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76499",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -336,15 +335,15 @@ One more:
 
 ---
 
-archive/issue_comments_076627.json:
+archive/issue_comments_076500.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-11-03T04:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76627",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76500",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -354,15 +353,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_076628.json:
+archive/issue_comments_076501.json:
 ```json
 {
     "body": "Thanks for your suggestions Burcin.  I implemented all of them, and made some significant further changes:\n\nNow we actually check whether each function exists, before we try to convert the entire expression.  This allows us to check several variations of mma's function names, such as a downcased version, a down_cased version, and the original name.  In order to do this I needed to add an option to sage.calculus.calculus._find_func() whereby it wouldn't automatically create a symbolic function if none were present in Sage.  We now also try the same downcasing tricks for constants.\n\nIn order to convert from [CamelCase](CamelCase) to camel_case I used code from [stack overflow](http://stackoverflow.com/questions/1175208/does-the-python-standard-library-have-function-to-convert-camelcase-to-camel-case).  I presume such code is public domain and doesn't require attribution in the docstring.\n\nI also realised that the documentation for _sage_ won't get into Sage's HTML documentation so I added a short section in the module's documentation that reproduces some of the material in the docstring for _sage_().",
     "created_at": "2010-11-03T04:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76628",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76501",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -378,15 +377,15 @@ I also realised that the documentation for _sage_ won't get into Sage's HTML doc
 
 ---
 
-archive/issue_comments_076629.json:
+archive/issue_comments_076502.json:
 ```json
 {
     "body": "Attachment [diff_with_previous_review.patch](tarball://root/attachments/some-uuid/ticket8495/diff_with_previous_review.patch) by flawrence created at 2010-11-03 04:50:02\n\nWhat's changed since burcin's review",
     "created_at": "2010-11-03T04:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76629",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76502",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -398,15 +397,15 @@ What's changed since burcin's review
 
 ---
 
-archive/issue_comments_076630.json:
+archive/issue_comments_076503.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2011-03-09T06:19:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76630",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76503",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -416,15 +415,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_076631.json:
+archive/issue_comments_076504.json:
 ```json
 {
     "body": "What patch(s)  is supposed to be applied here? `trac_8495-rewrite-_sage_.patch` applied cleanly to sage-4.6.2.rc1, but `diff_with_previous_review.patch` neither applies cleanly on its own, or after applying `trac_8495-rewrite-_sage_.patch`.",
     "created_at": "2011-03-09T06:19:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76631",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76504",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -434,15 +433,15 @@ What patch(s)  is supposed to be applied here? `trac_8495-rewrite-_sage_.patch` 
 
 ---
 
-archive/issue_comments_076632.json:
+archive/issue_comments_076505.json:
 ```json
 {
     "body": "`trac_8495-rewrite-_sage_.patch` is the patch to apply.  The other patch is for the eye only: it shows what changed since the patch that burcin originally reviewed (which I perhaps foolishly overwrote with the current version of `trac_8495-rewrite-_sage_.patch`)",
     "created_at": "2011-03-09T08:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76632",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76505",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -452,15 +451,15 @@ archive/issue_comments_076632.json:
 
 ---
 
-archive/issue_comments_076633.json:
+archive/issue_comments_076506.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2011-03-09T08:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76633",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76506",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -470,15 +469,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_076634.json:
+archive/issue_comments_076507.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-03-09T10:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76634",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76507",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -488,15 +487,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_076635.json:
+archive/issue_comments_076508.json:
 ```json
 {
     "body": "For me at least, on OpenSolaris with Mathematica 7.0.1, this is a definite improvement, as it reduced the number of failures in `devel/sage/sage/interfaces/mathematica.py` from 17 to 2. \n\n == Prior to adding the patch ==\n\n```\n\n<snip out lots of failures>\n\n4 items had failures:\n   5 of  84 in __main__.example_0\n   4 of   6 in __main__.example_1\n   4 of  19 in __main__.example_12\n   4 of   6 in __main__.example_2\n***Test Failed*** 17 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_mathematica.py\n\t [5.4 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\nTotal time for all tests: 5.4 seconds\n```\n\n\n## After adding the patch\nAfter applying the patch, the number of failures is reduced to 2. \n\n\n```\nsage-4.6.2.rc1$ ./sage -t -optional devel/sage/sage/interfaces/\nsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\n**********************************************************************\nFile \"/export/home/drkirkby/3/sage-4.6.2.rc1/devel/sage/sage/interfaces/mathematica.py\", line 270:\n    sage: print n                   # optional - mathematica\nExpected:\n                  1.5707963267948966192313216916397514420985846996876\nGot:\n    1.5707963267949\n**********************************************************************\nFile \"/export/home/drkirkby/3/sage-4.6.2.rc1/devel/sage/sage/interfaces/mathematica.py\", line 311:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\nException raised:\n    Traceback (most recent call last):\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[75]>\", line 1, in <module>\n        math_bessel_K(Integer(2),I)                      # optional - mathematica###line 311:\n    sage: math_bessel_K(2,I)                      # optional - mathematica\n      File \"<doctest __main__.example_0[74]>\", line 2, in math_bessel_K\n        return mathematica(nu).BesselK(x).N(Integer(20))\n      File \"element.pyx\", line 617, in sage.structure.element.Element.numerical_approx (sage/structure/element.c:4658)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/misc/functional.py\", line 1265, in numerical_approx\n        return sage.rings.complex_field.ComplexField(prec)(x)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/rings/complex_field.py\", line 279, in __call__\n        return Parent.__call__(self, x)\n      File \"parent.pyx\", line 915, in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:6668)\n      File \"coerce_maps.pyx\", line 82, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3119)\n      File \"coerce_maps.pyx\", line 77, in sage.structure.coerce_maps.DefaultConvertMap_unique._call_ (sage/structure/coerce_maps.c:3022)\n      File \"/export/home/drkirkby/3/sage-4.6.2.rc1/local/lib/python/site-packages/sage/rings/complex_field.py\", line 310, in _element_constructor_\n        return complex_number.ComplexNumber(self, x)\n      File \"complex_number.pyx\", line 162, in sage.rings.complex_number.ComplexNumber.__init__ (sage/rings/complex_number.c:3995)\n    TypeError: unable to coerce to a ComplexNumber: <class 'sage.interfaces.mathematica.MathematicaElement'>\n**********************************************************************\n1 items had failures:\n   2 of  84 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /export/home/drkirkby/.sage//tmp/.doctest_mathematica.py\n\t [5.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -optional \"devel/sage/sage/interfaces/mathematica.py\"\nTotal time for all tests: 5.2 seconds\n```\n\n\n\n## Mathematica session on the sage machine computing Pi/2\n\n\n```\ndrkirkby@hawk:~$ math\nMathematica 7.0 for Sun Solaris x86 (64-bit)\nCopyright 1988-2009 Wolfram Research, Inc.\n\nIn[1]:= n=Pi/2\n\n        Pi\nOut[1]= --\n        2\n\nIn[2]:= N[n,50]\n\nOut[2]= 1.5707963267948966192313216916397514420985846996876\n```\n\n\n## Sage session on the same machine computing pi/2 with the Mathematica interface\n\n\n```\nsage: x = mathematica(pi/2)\nsage: print x\n        Pi\n        --\n        2\nsage: loads(dumps(x)) == x\nTrue\nsage: n = x.N(50)  \nsage: print n \n1.5707963267949\n```\n",
     "created_at": "2011-03-09T10:14:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76635",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76508",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -626,15 +625,15 @@ sage: print n
 
 ---
 
-archive/issue_comments_076636.json:
+archive/issue_comments_076509.json:
 ```json
 {
     "body": "OK, that's quite strange.  On my OS X 10.6 64-bit box with Sage 4.6.1, all tests pass.  But the two doctests that failed on your computer don't even call .sage(), which is the main thing that this ticket modifies!\n\nCan you see whether these doctests pass without my patch applied?\n\nCould you evaluate the following lines for me (with the patch applied) and give me the output from your computer:\n\n```\nsage: a = mathematica(2).BesselK(I).N(20)\nsage: repr(a)\n'-2.59288617549119697817 + 0.18048997206696202663*I'\nsage: a._sage_repr()\n'-2.59288617549119697817 + 0.18048997206696202663*I'\nsage: a.sage()\n-2.59288617549 + 0.180489972067*I\n```\n",
     "created_at": "2011-03-09T10:56:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76636",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76509",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -659,15 +658,15 @@ sage: a.sage()
 
 ---
 
-archive/issue_comments_076637.json:
+archive/issue_comments_076510.json:
 ```json
 {
     "body": "BTW, the use of `sage.calculus.calculus.symbolic_expression_from_string` seems to limit the accuracy of results:\n\n\n```\nsage: from sage.calculus.calculus import symbolic_expression_from_string as sefs \nsage: repr(mathematica(pi/2).N(50))\n'1.57079632679489661923132169163975144209858469968755'\nsage: sefs('1.57079632679489661923132169163975144209858469968755')\n1.57079632679\nsage: sage_eval('1.57079632679489661923132169163975144209858469968755')\n1.5707963267948966192313216916397514420985846996875\n```\n\n\n`sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?",
     "created_at": "2011-03-09T11:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76637",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76510",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -691,15 +690,15 @@ sage: sage_eval('1.57079632679489661923132169163975144209858469968755')
 
 ---
 
-archive/issue_comments_076638.json:
+archive/issue_comments_076511.json:
 ```json
 {
     "body": "Replying to [comment:16 flawrence]:\n> BTW, the use of `sage.calculus.calculus.symbolic_expression_from_string` seems to limit the accuracy of results:\n> \n {{{\n> sage: from sage.calculus.calculus import symbolic_expression_from_string as sefs \n> sage: repr(mathematica(pi/2).N(50))\n> '1.57079632679489661923132169163975144209858469968755'\n> sage: sefs('1.57079632679489661923132169163975144209858469968755')\n> 1.57079632679\n> sage: sage_eval('1.57079632679489661923132169163975144209858469968755')\n> 1.5707963267948966192313216916397514420985846996875\n }}}\n> \n> `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?\n\nSounds good to me. Can you open that ticket? :)",
     "created_at": "2011-03-09T14:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76638",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76511",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -724,15 +723,15 @@ Sounds good to me. Can you open that ticket? :)
 
 ---
 
-archive/issue_comments_076639.json:
+archive/issue_comments_076512.json:
 ```json
 {
     "body": "Replying to [comment:15 flawrence]:\n> OK, that's quite strange.  On my OS X 10.6 64-bit box with Sage 4.6.1, all tests pass.  But the two doctests that failed on your computer don't even call .sage(), which is the main thing that this ticket modifies!\n\nEm, it is strange. \n\nI'm a bit tied up now, but will repeat later. \n\nI'm actually willing to give this a positive review, on the basis that it fixes a very large number of the problems, and no new bugs are introduced. But I'll run the tests later and see what can be done. \n\nDave",
     "created_at": "2011-03-09T15:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76639",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76512",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -751,15 +750,15 @@ Dave
 
 ---
 
-archive/issue_comments_076640.json:
+archive/issue_comments_076513.json:
 ```json
 {
     "body": "Replying to [comment:17 burcin]:\n> Replying to [comment:16 flawrence]:\n> > `sage_eval` gets it right, but Burcin noted above that using it is a security risk.  I guess my suggestion would be to stick with `symbolic_expression_from_string` and open a ticket on improving its accuracy.  Thoughts?\n> \n> Sounds good to me. Can you open that ticket? :)\nDone: #10898",
     "created_at": "2011-03-10T00:58:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76640",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76513",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -774,15 +773,15 @@ Done: #10898
 
 ---
 
-archive/issue_comments_076641.json:
+archive/issue_comments_076514.json:
 ```json
 {
     "body": "Hi Dave,\n\nHave you had a chance to investigate what was happening on Solaris?\n\nCheers,\nFelix",
     "created_at": "2011-03-19T12:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76641",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76514",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -797,15 +796,15 @@ Felix
 
 ---
 
-archive/issue_comments_076642.json:
+archive/issue_comments_076515.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_info.",
     "created_at": "2011-03-19T12:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76642",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76515",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -815,15 +814,15 @@ Changing status from needs_work to needs_info.
 
 ---
 
-archive/issue_comments_076643.json:
+archive/issue_comments_076516.json:
 ```json
 {
     "body": "Replying to [comment:20 flawrence]:\n> Hi Dave,\n> \n> Have you had a chance to investigate what was happening on Solaris?\n> \n> Cheers,\n> Felix\n\nCan you clarify the exact commands you want tested with and without the patch?",
     "created_at": "2011-03-19T19:11:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76643",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76516",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -841,15 +840,15 @@ Can you clarify the exact commands you want tested with and without the patch?
 
 ---
 
-archive/issue_comments_076644.json:
+archive/issue_comments_076517.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2011-03-20T00:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76644",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76517",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -859,15 +858,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_076645.json:
+archive/issue_comments_076518.json:
 ```json
 {
     "body": "ARGH! I upgraded to 4.6.2 (from 4.6.1), ran the tests and get the same errors as Dave.\n\n#9032 modified Sage's .n(), and added (in two files)\n\n```\nn = numerical_approx\nN = n\n```\n\n\nThis means that Mathematica's `N[]` is no longer being called - instead Sage's `numerical_approx()` is being called, and it can't handle certain mma objects.  Furthermore the argument taken by `numerical_approx` is the number of bits (I think?) whereas `N[50]` gives 50 sig figs.\n\nI think that the way to fix this is by adjusting precedences so that on mathematica objects, mathematica functions take priority.  I also think that fixing this is beyond the scope of this ticket (which was a rewrite of `._sage_`).  I have created a new ticket regarding this issue: #10968",
     "created_at": "2011-03-20T00:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76645",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76518",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -889,15 +888,15 @@ I think that the way to fix this is by adjusting precedences so that on mathemat
 
 ---
 
-archive/issue_comments_076646.json:
+archive/issue_comments_076519.json:
 ```json
 {
     "body": "Replying to [comment:22 flawrence]:\n> ARGH! I upgraded to 4.6.2 (from 4.6.1), ran the tests and get the same errors as Dave.\n\nI'm glad I;m not going mad. \n\nSince the changes reduces the number of failures from 17 to 2, I believe this should be merged, so positive review. The remaining issues can be sorted out on #10968",
     "created_at": "2011-03-20T01:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76646",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76519",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -912,15 +911,15 @@ Since the changes reduces the number of failures from 17 to 2, I believe this sh
 
 ---
 
-archive/issue_comments_076647.json:
+archive/issue_comments_076520.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-03-20T01:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76647",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76520",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -930,15 +929,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_076648.json:
+archive/issue_comments_076521.json:
 ```json
 {
     "body": "Problems while building the documentation:\n\n```\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:282: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:284: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\ndochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.6/site-packages/sage/interfaces/mathematica.py:docstring of sage.interfaces.mathematica:277: (ERROR/3) Unexpected indentation.\n```\n",
     "created_at": "2011-03-23T13:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76648",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76521",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -955,15 +954,15 @@ dochtml.log:/mnt/usb1/scratch/jdemeyer/merger/sage-4.7.alpha3/local/lib/python2.
 
 ---
 
-archive/issue_comments_076649.json:
+archive/issue_comments_076522.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-03-23T13:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76649",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76522",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -973,15 +972,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_076650.json:
+archive/issue_comments_076523.json:
 ```json
 {
     "body": "Attachment [trac_8495-rewrite-_sage_.patch](tarball://root/attachments/some-uuid/ticket8495/trac_8495-rewrite-_sage_.patch) by flawrence created at 2011-03-23 14:15:20",
     "created_at": "2011-03-23T14:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76650",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76523",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -991,15 +990,15 @@ Attachment [trac_8495-rewrite-_sage_.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_comments_076651.json:
+archive/issue_comments_076524.json:
 ```json
 {
     "body": "Attachment [trac_8495-rewrite-_sage_.2.patch](tarball://root/attachments/some-uuid/ticket8495/trac_8495-rewrite-_sage_.2.patch) by flawrence created at 2011-03-23 14:27:23\n\nI made some minor formatting changes to the documentation to avoid the above problems.  The documentation now builds without errors and looks OK on my machine.\n\nI forgot to tick the 'replace attachment' box; please disregard the older (non \".2.\") patch.",
     "created_at": "2011-03-23T14:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76651",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76524",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -1013,15 +1012,15 @@ I forgot to tick the 'replace attachment' box; please disregard the older (non "
 
 ---
 
-archive/issue_comments_076652.json:
+archive/issue_comments_076525.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-03-23T14:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76652",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76525",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -1031,15 +1030,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_076653.json:
+archive/issue_comments_076526.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-03-23T17:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76653",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76526",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1049,15 +1048,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_076654.json:
+archive/issue_comments_076527.json:
 ```json
 {
     "body": "Yes, the documentation builds ok for me. That was something I did not check before I must admit. \n\n\nDave",
     "created_at": "2011-03-23T17:22:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76654",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76527",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1070,15 +1069,15 @@ Dave
 
 ---
 
-archive/issue_comments_076655.json:
+archive/issue_comments_076528.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-03-25T12:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8495",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76655",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8495#issuecomment-76528",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

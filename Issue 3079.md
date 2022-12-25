@@ -6,7 +6,7 @@ archive/issues_003079.json:
     "body": "Assignee: mabshoff\n\nThe current spkg-install keep the strange default of the qd \npackage. The proposed patch enable ieee error compliant addition\nand disable sloppy division and multiplication.\nFurther spkg-install currently comes with the following strange\nsettings:\n CXXFLAGS='-fPIC -O3 -Dx86'\n-fpic, beside being platform specific, is useless in this case\nas no shared object is produced. Flags like -Dx86 are best left\nto the configure script, fortunately this should be without effect,\nthe correct parameter being \"X86\". Both flags should be removed as well. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3079\n\n",
     "created_at": "2008-05-02T11:34:25Z",
     "labels": [
-        "build",
+        "component: build",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003079.json:
     "title": "quaddouble configuration and spkg-install cleaning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3079",
-    "user": "@kiwifb"
+    "user": "https://github.com/kiwifb"
 }
 ```
 Assignee: mabshoff
@@ -38,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3079
 
 ---
 
-archive/issue_comments_021237.json:
+archive/issue_comments_021193.json:
 ```json
 {
     "body": "Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3079/spkg-install.patch) by mabshoff created at 2008-05-02 11:59:25",
     "created_at": "2008-05-02T11:59:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21237",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21193",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -56,15 +56,15 @@ Attachment [spkg-install.patch](tarball://root/attachments/some-uuid/ticket3079/
 
 ---
 
-archive/issue_comments_021238.json:
+archive/issue_comments_021194.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_mabshoff\".",
     "created_at": "2008-06-15T21:58:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21238",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21194",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -74,15 +74,15 @@ Changing keywords from "" to "editor_mabshoff".
 
 ---
 
-archive/issue_comments_021239.json:
+archive/issue_comments_021195.json:
 ```json
 {
     "body": "Since we are dumping quaddouble this ticket is wontfix.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-11T05:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21239",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21195",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -96,15 +96,15 @@ Michael
 
 ---
 
-archive/issue_comments_021240.json:
+archive/issue_comments_021196.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-08-11T05:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3079",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21240",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3079#issuecomment-21196",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

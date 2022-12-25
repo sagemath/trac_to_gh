@@ -6,15 +6,14 @@ archive/issues_003885.json:
     "body": "Assignee: @craigcitro\n\nSalman Butt ran into the following bug:\n\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1])\n(2, 1)\n```\n\n\nFix is attached, but the fact that you can still do the following is possibly worrisome:\n\n\n```\nsage: V = QQ**2\nsage: W = V.subspace([[1,2]])\nsage: W([2,1], check=False) in W\nTrue\n```\n\n\nI just started a sage-devel thread to see if we should also stop this, i.e. not let users shoot themselves in the foot so easily.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3885\n\n",
     "created_at": "2008-08-17T21:58:14Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review and discussion] Bug in free module __call__ method",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3885",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3885
 
 ---
 
-archive/issue_comments_027716.json:
+archive/issue_comments_027658.json:
 ```json
 {
     "body": "Attachment [trac-3885.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885.patch) by @craigcitro created at 2008-08-17 21:59:43",
     "created_at": "2008-08-17T21:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27716",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27658",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -69,15 +68,15 @@ Attachment [trac-3885.patch](tarball://root/attachments/some-uuid/ticket3885/tra
 
 ---
 
-archive/issue_comments_027717.json:
+archive/issue_comments_027659.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-08-17T22:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27717",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27659",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_027718.json:
+archive/issue_comments_027660.json:
 ```json
 {
     "body": "Credit for this patch goes to Martin Albrecht and myself for the fix. (Sorry I didn't mention that above, Martin. :) )",
     "created_at": "2008-08-17T22:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27718",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27660",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -105,15 +104,15 @@ Credit for this patch goes to Martin Albrecht and myself for the fix. (Sorry I d
 
 ---
 
-archive/issue_comments_027719.json:
+archive/issue_comments_027661.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-08-29T01:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27719",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27661",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -123,15 +122,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_027720.json:
+archive/issue_comments_027662.json:
 ```json
 {
     "body": "With the patch applied I am seeing the following doctest failure:\n\n```\nsage -t -long devel/sage/sage/modular/modsym/ambient.py     **********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/ambient.py\", line 1027:\n    sage: M.factorization()                    # long time (about 8 seconds)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_20[6]>\", line 1, in <module>\n        M.factorization()                    # long time (about 8 seconds)###line 1027:\n    sage: M.factorization()                    # long time (about 8 seconds)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modular/modsym/ambient.py\", line 1143, in factorization\n        for E in self.eisenstein_submodule().decomposition(anemic=True):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modular/hecke/module.py\", line 582, in decomposition\n        X = t.decomposition_of_subspace(U[i], is_diagonalizable=is_diagonalizable)\n      File \"matrix2.pyx\", line 2169, in sage.matrix.matrix2.Matrix.decomposition_of_subspace (sage/matrix/matrix2.c:13376)\n      File \"matrix2.pyx\", line 2255, in sage.matrix.matrix2.Matrix.restrict (sage/matrix/matrix2.c:14068)\n      File \"element.pyx\", line 1899, in sage.structure.element.Vector.__mul__ (sage/structure/element.c:11232)\n      File \"coerce.pyx\", line 634, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6030)\n      File \"action.pyx\", line 195, in sage.categories.action.PrecomposedAction._call_ (sage/categories/action.c:3506)\n      File \"morphism.pyx\", line 88, in sage.categories.morphism.CallMorphism._call_ (sage/categories/morphism.c:2309)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/local/lib/python2.5/site-packages/sage/modules/free_module.py\", line 684, in __call__\n        raise ValueError, \"element (= %s) is not in free module\"%(x,)\n    ValueError: element (= [0, 1, 0, -1, -zeta3 + 1, 1/2*zeta3 + 1, zeta3 + 1/2]) is not in free module\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_20\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/tmp/.doctest_ambient.py\n         [10.9 s]\nexit code: 1024\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-08-29T02:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27720",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27662",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -179,15 +178,15 @@ Michael
 
 ---
 
-archive/issue_comments_027721.json:
+archive/issue_comments_027663.json:
 ```json
 {
     "body": "Yep, thank god for doctests. This was really hard to track down: elements of `CyclotomicField(3)` were getting created whose print representation was the same, but whose internal representation was different. (Even harder was finding out that was the problem.) The attached patch corrects the problem. I don't have a current alpha tree to test this against, so let me know if anything still breaks.",
     "created_at": "2008-09-02T06:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27721",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27663",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -197,15 +196,15 @@ Yep, thank god for doctests. This was really hard to track down: elements of `Cy
 
 ---
 
-archive/issue_comments_027722.json:
+archive/issue_comments_027664.json:
 ```json
 {
     "body": "Attachment [trac-3885-pt2.patch](tarball://root/attachments/some-uuid/ticket3885/trac-3885-pt2.patch) by mabshoff created at 2008-09-02 09:06:36\n\nWith Craig's second patch all doctests pass. Somebody more knowledgeable in this area of the code please check that this is the correct fix.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-02T09:06:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27722",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27664",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -221,15 +220,15 @@ Michael
 
 ---
 
-archive/issue_comments_027723.json:
+archive/issue_comments_027665.json:
 ```json
 {
     "body": "That looks good to me.",
     "created_at": "2008-09-02T17:28:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27723",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27665",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -239,15 +238,15 @@ That looks good to me.
 
 ---
 
-archive/issue_comments_027724.json:
+archive/issue_comments_027666.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.1.2.rc0. Nice work Craig :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-03T00:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27724",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27666",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -261,15 +260,15 @@ Michael
 
 ---
 
-archive/issue_comments_027725.json:
+archive/issue_comments_027667.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-03T00:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3885",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27725",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3885#issuecomment-27667",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

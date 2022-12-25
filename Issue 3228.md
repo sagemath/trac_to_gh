@@ -6,15 +6,13 @@ archive/issues_003228.json:
     "body": "Assignee: boothby\n\nThis is the follow up to #3213. Enhancements to implement on top of this include displaying a message on worksheet listings page when settings changed, inline error reporting, and automated login/logout to deal with changing of password.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3228\n\n",
     "created_at": "2008-05-16T20:01:38Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch; needs review] notebook -- Account Settings Page with auto save, better styling, etc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3228",
-    "user": "TimothyClemans"
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: boothby
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3228
 
 ---
 
-archive/issue_comments_022333.json:
+archive/issue_comments_022286.json:
 ```json
 {
     "body": "Attachment [3228.patch](tarball://root/attachments/some-uuid/ticket3228/3228.patch) by TimothyClemans created at 2008-05-16 20:03:19\n\nsee #3213 for depencies",
     "created_at": "2008-05-16T20:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3228",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3228#issuecomment-22333",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/3228#issuecomment-22286",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -49,15 +47,15 @@ see #3213 for depencies
 
 ---
 
-archive/issue_comments_022334.json:
+archive/issue_comments_022287.json:
 ```json
 {
     "body": "Works for me",
     "created_at": "2008-06-15T00:35:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3228",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3228#issuecomment-22334",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3228#issuecomment-22287",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -67,15 +65,15 @@ Works for me
 
 ---
 
-archive/issue_comments_022335.json:
+archive/issue_comments_022288.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-23T12:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3228",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3228#issuecomment-22335",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3228#issuecomment-22288",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +83,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022336.json:
+archive/issue_comments_022289.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha0",
     "created_at": "2008-06-23T12:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3228",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3228#issuecomment-22336",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3228#issuecomment-22289",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

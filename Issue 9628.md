@@ -6,14 +6,14 @@ archive/issues_009628.json:
     "body": "Assignee: mvngu\n\nKeywords: live, tutorial, documentation, missing\n\nI didn't check every page, but on http://sagenb.org/doc/live/tutorial/tour_algebra.html in the Solving Differential Equations section, some of the mass-spring differential equations are not shown.\n\nIf you compare that same section to the static tutorial, you will see the typeset equations (as images): http://sagenb.org/doc/static/tutorial/tour_algebra.html\n\nThis same problem also happens in other sections on that page.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9628\n\n",
     "created_at": "2010-07-28T21:07:39Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
     "title": "Live tutorial docs missing some equations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9628",
-    "user": "mikexstudios"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mikexstudios"
 }
 ```
 Assignee: mvngu
@@ -34,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9628
 
 ---
 
-archive/issue_comments_093308.json:
+archive/issue_comments_093152.json:
 ```json
 {
     "body": "This is apparently resolved (perhaps it was a pre-mathjax issue), but I think that there *is* a very minor thing that in the live documentation the two equations in the system  somehow are typeset directly next to each other.\n\n```\n\n.. math::\n\n    m_1 x_1'' + (k_1+k_2) x_1 - k_2 x_2 = 0\n\n    m_2 x_2''+ k_2 (x_2-x_1) = 0,\n\n```\n\nsomehow isn't rendering properly.",
     "created_at": "2014-11-20T16:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9628#issuecomment-93308",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9628#issuecomment-93152",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -64,15 +64,15 @@ somehow isn't rendering properly.
 
 ---
 
-archive/issue_comments_093309.json:
+archive/issue_comments_093153.json:
 ```json
 {
     "body": "Changing priority from minor to trivial.",
     "created_at": "2014-11-20T16:21:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9628",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9628#issuecomment-93309",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9628#issuecomment-93153",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004392.json:
     "body": "Assignee: @JohnCremona\n\nCC:  m.t.aranes@warwick.ac.uk\n\nKeywords: number field ideal\n\nFor number field ideals and fractional ideals, the smallest_integer() function is broken in 2 ways:\n\n```\nsage: K.<a>=QuadraticField(-5)\nsage: I=K.ideal(7)\nsage: I.smallest_integer()\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (237, 0))\n\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\n/local/jec/sage-3.2.alpha1/local/lib/python2.5/site-packages/sage/rings/number_field/number_field_ideal.pyc in smallest_integer(self)\n    731                         bound /= p\n    732                 self.smallest_integer = ZZ(bound)\n--> 733                 return self.__smallest_integer\n    734             I,d = self.integral_split() ## self = I/d\n    735             n = I.smallest_integer()    ## n/d in self\n\nAttributeError: 'NumberFieldFractionalIdeal' object has no attribute '_NumberFieldIdeal__smallest_integer'\nsage: I.smallest_integer\n1\nsage: I.smallest_integer()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/masgaj/PLMS/<ipython console> in <module>()\n\nTypeError: 'sage.rings.integer.Integer' object is not callable\n```\n\nFirst: in line 732 of number_field_ideal.py it has `self.smallest_integer` instead of `self.__smallest_integer`, so instead of caching the computed value we overwrite the function itself!\n\nSecond:  the answer is wrong (as the example shows).\n\nI will try to fix this and post a ptach today (Bug Day 2008-10-30).\n\nIssue created by migration from https://trac.sagemath.org/ticket/4392\n\n",
     "created_at": "2008-10-30T13:10:27Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "smallest_integer() is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4392",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @JohnCremona
@@ -71,15 +70,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4392
 
 ---
 
-archive/issue_comments_032321.json:
+archive/issue_comments_032258.json:
 ```json
 {
     "body": "Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392.patch) by @JohnCremona created at 2008-10-30 16:52:56",
     "created_at": "2008-10-30T16:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32321",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32258",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -89,15 +88,15 @@ Attachment [sage-trac4392.patch](tarball://root/attachments/some-uuid/ticket4392
 
 ---
 
-archive/issue_comments_032322.json:
+archive/issue_comments_032259.json:
 ```json
 {
     "body": "Attachment [sage-trac4392-2.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-2.patch) by @JohnCremona created at 2008-10-30 16:54:13\n\nThe patch sage-trac4392.patch (based on 3.2.alpha1) fixes this by completely reimplementing the function in a simpler way, using linear algebra instead of factorization.  Several new doctests have been added.  All tests in sage.rings.number_field pass.\n\nThe second patch applies after the first and handles the zero ideal properly (with another doctest to prove it!)",
     "created_at": "2008-10-30T16:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32322",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32259",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -111,15 +110,15 @@ The second patch applies after the first and handles the zero ideal properly (wi
 
 ---
 
-archive/issue_comments_032323.json:
+archive/issue_comments_032260.json:
 ```json
 {
     "body": "Attachment [sage-trac4392-3.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-3.patch) by @JohnCremona created at 2008-10-31 11:35:32",
     "created_at": "2008-10-31T11:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32323",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32260",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -129,15 +128,15 @@ Attachment [sage-trac4392-3.patch](tarball://root/attachments/some-uuid/ticket43
 
 ---
 
-archive/issue_comments_032324.json:
+archive/issue_comments_032261.json:
 ```json
 {
     "body": "The third patch sage-trac4392-3.patch adds a new rather useful function coordinates() to the class NumberFieldIdeal which expresses an element of the field as a QQ-linear combination of the integral basis of the ideal.  (This does not work for relative ideals, but then what does?).  This uses a change-of-basis matrix which is cached.  It results in simpler implementations for the _contains_() and is_integral() functions, as well as the smallest_integer() function where this started.\n\nI checked that all doctests in sage/rings/number_field pass.",
     "created_at": "2008-10-31T11:37:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32324",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32261",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -149,15 +148,15 @@ I checked that all doctests in sage/rings/number_field pass.
 
 ---
 
-archive/issue_comments_032325.json:
+archive/issue_comments_032262.json:
 ```json
 {
     "body": "Replaces the three earlier patches",
     "created_at": "2008-11-12T21:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32325",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32262",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -167,15 +166,15 @@ Replaces the three earlier patches
 
 ---
 
-archive/issue_comments_032326.json:
+archive/issue_comments_032263.json:
 ```json
 {
     "body": "Attachment [sage-trac4392-new.patch](tarball://root/attachments/some-uuid/ticket4392/sage-trac4392-new.patch) by @JohnCremona created at 2008-11-12 21:25:39\n\nFor ease of reviewing, the patch sage-trac4392-new.patch merges and replaces the three previous ones.  It applies to 3.2.alpha3.",
     "created_at": "2008-11-12T21:25:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32326",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32263",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -187,15 +186,15 @@ For ease of reviewing, the patch sage-trac4392-new.patch merges and replaces the
 
 ---
 
-archive/issue_comments_032327.json:
+archive/issue_comments_032264.json:
 ```json
 {
     "body": "Looks good to me. I tested it against 3.1.4 and 3.2.rc0, and in both it applies cleanly. I've tested it a bit under 3.1.4 and it passes all doctests in sage/rings/number_field, and the smallest_integer() and coordinates() functions both seem to work as expected.",
     "created_at": "2008-11-13T05:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32327",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32264",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -205,15 +204,15 @@ Looks good to me. I tested it against 3.1.4 and 3.2.rc0, and in both it applies 
 
 ---
 
-archive/issue_comments_032328.json:
+archive/issue_comments_032265.json:
 ```json
 {
     "body": "(On a closer inspection of the docstrings, I've noticed a typo in the docstring for the \"coordinates\" method -- \"amllest\" for \"smallest\". But that's the only \"issue\" I can find.)",
     "created_at": "2008-11-13T05:56:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32328",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32265",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -223,15 +222,15 @@ archive/issue_comments_032328.json:
 
 ---
 
-archive/issue_comments_032329.json:
+archive/issue_comments_032266.json:
 ```json
 {
     "body": "fixes docstring typo in sage-trac4392-new.patch",
     "created_at": "2008-11-13T05:59:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32329",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32266",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -241,15 +240,15 @@ fixes docstring typo in sage-trac4392-new.patch
 
 ---
 
-archive/issue_comments_032330.json:
+archive/issue_comments_032267.json:
 ```json
 {
     "body": "Attachment [sage-4392-typo.patch](tarball://root/attachments/some-uuid/ticket4392/sage-4392-typo.patch) by mabshoff created at 2008-11-13 19:35:04\n\nMerged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n\nJohn: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-13T19:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32330",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32267",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -267,15 +266,15 @@ Michael
 
 ---
 
-archive/issue_comments_032331.json:
+archive/issue_comments_032268.json:
 ```json
 {
     "body": "Merged in Sage 3.2.rc1",
     "created_at": "2008-11-13T19:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32331",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32268",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -285,15 +284,15 @@ Merged in Sage 3.2.rc1
 
 ---
 
-archive/issue_comments_032332.json:
+archive/issue_comments_032269.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-13T19:36:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32332",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32269",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -303,15 +302,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_032333.json:
+archive/issue_comments_032270.json:
 ```json
 {
     "body": "Replying to [comment:6 mabshoff]:\n> Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n> \n> John: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n\nSorry about that.  I had tried to make it easier, by using mercurial queues to merge my three earlier patches.  But clearly I am not doing it right.  Every time I uses queues I read the entire documentation from beginning to end, and think I understand it, but clearly I don't since every time I mess it up. John\n\n> \n> Cheers,\n> \n> Michael",
     "created_at": "2008-11-14T10:02:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32333",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32270",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -331,15 +330,15 @@ Sorry about that.  I had tried to make it easier, by using mercurial queues to m
 
 ---
 
-archive/issue_comments_032334.json:
+archive/issue_comments_032271.json:
 ```json
 {
     "body": "Replying to [comment:8 cremona]:\n> Replying to [comment:6 mabshoff]:\n> > Merged sage-trac4392-new.patch and sage-4392-typo.patch in Sage 3.2.rc1.\n> > \n> > John: The folded(?) patch was a diff a not a \"proper\" mercurial patch, so the credit in the log does not reflect your authorship. Please make sure to export patches.\n> \n> Sorry about that.  I had tried to make it easier, by using mercurial queues to merge my three earlier patches.  But clearly I am not doing it right.  Every time I uses queues I read the entire documentation from beginning to end, and think I understand it, but clearly I don't since every time I mess it up. John\n\nWell, I am more concerned about me getting credit for a patch I did not write. The solution to your problem is to export the que patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-14T14:47:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32334",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4392#issuecomment-32271",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

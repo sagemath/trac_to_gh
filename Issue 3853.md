@@ -6,15 +6,14 @@ archive/issues_003853.json:
     "body": "Assignee: tbd\n\nCC:  anakha @jasongrout\n\nI replaced all of the factories with individual functions.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3853\n\n",
     "created_at": "2008-08-14T17:56:23Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] plot.py improvements part 1: Remove all factories",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3853",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3853
 
 ---
 
-archive/issue_comments_027424.json:
+archive/issue_comments_027366.json:
 ```json
 {
     "body": "Attachment [trac_3853.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853.patch) by @mwhansen created at 2008-08-14 17:56:50",
     "created_at": "2008-08-14T17:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27424",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27366",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_3853.patch](tarball://root/attachments/some-uuid/ticket3853/tra
 
 ---
 
-archive/issue_comments_027425.json:
+archive/issue_comments_027367.json:
 ```json
 {
     "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2008-08-14T17:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27425",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27367",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing assignee from tbd to @williamstein.
 
 ---
 
-archive/issue_comments_027426.json:
+archive/issue_comments_027368.json:
 ```json
 {
     "body": "Changing component from algebra to graphics.",
     "created_at": "2008-08-14T17:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27426",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27368",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing component from algebra to graphics.
 
 ---
 
-archive/issue_comments_027427.json:
+archive/issue_comments_027369.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"jason\".",
     "created_at": "2008-08-14T18:21:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27427",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27369",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing keywords from "" to "jason".
 
 ---
 
-archive/issue_comments_027428.json:
+archive/issue_comments_027370.json:
 ```json
 {
     "body": "Changing keywords from \"jason\" to \"\".",
     "created_at": "2008-08-14T18:21:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27428",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27370",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -121,15 +120,15 @@ Changing keywords from "jason" to "".
 
 ---
 
-archive/issue_comments_027429.json:
+archive/issue_comments_027371.json:
 ```json
 {
     "body": "apply instead of trac_3853.patch",
     "created_at": "2008-08-19T14:54:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27429",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27371",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -139,15 +138,15 @@ apply instead of trac_3853.patch
 
 ---
 
-archive/issue_comments_027430.json:
+archive/issue_comments_027372.json:
 ```json
 {
     "body": "Attachment [trac_3853-rebased-3.1.1-trac_3880.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853-rebased-3.1.1-trac_3880.patch) by @jasongrout created at 2008-08-19 16:48:13\n\nExtra things this patch does:\n\n`line([(0,0,0),(1,1,1)])` no longer produces a 3d line, but a 2d line from the first 2 coordinates.  Use line3d to get a 3d line.\n\n`line(object)` no longer tries object.plot() first, which is a very, very good thing, since it is natural to assume that line(object) will be something like a line, but object.plot() could be *anything*.\n\n`line` no longer has a \"coerce\" argument; all input data is always coerced to float.  I've changed this to use numpy to convert to float; currently, that's a bit faster, from some tests that wstein ran.  As wstein mentioned on IRC, we should try to replace the float conversion with a snippet of Cython.\n\n`text` used to make 3d text when a 3d point was passed; now it only makes 2d text.  Use the text3d for 3d text.",
     "created_at": "2008-08-19T16:48:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27430",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27372",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -167,15 +166,15 @@ Extra things this patch does:
 
 ---
 
-archive/issue_comments_027431.json:
+archive/issue_comments_027373.json:
 ```json
 {
     "body": "well, that coerce comment should really be: I changed this to use numpy in one case; the case where we need to separate the x-values and y-values still coerces to float no matter what.  I guess the \"line\" function, a user-visible function, shouldn't have a coerce=False option; it's too unsafe.",
     "created_at": "2008-08-19T16:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27431",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27373",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -185,15 +184,15 @@ well, that coerce comment should really be: I changed this to use numpy in one c
 
 ---
 
-archive/issue_comments_027432.json:
+archive/issue_comments_027374.json:
 ```json
 {
     "body": "I take that back; I took back out the numpy stuff; we should just make a general cython function that ensures that a list is coerced to float.",
     "created_at": "2008-08-19T16:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27432",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27374",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -203,15 +202,15 @@ I take that back; I took back out the numpy stuff; we should just make a general
 
 ---
 
-archive/issue_comments_027433.json:
+archive/issue_comments_027375.json:
 ```json
 {
     "body": "That last patch also streamlines a few things and makes a few things more consistent.",
     "created_at": "2008-08-19T16:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27433",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27375",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -221,15 +220,15 @@ That last patch also streamlines a few things and makes a few things more consis
 
 ---
 
-archive/issue_comments_027434.json:
+archive/issue_comments_027376.json:
 ```json
 {
     "body": "Despite the name trac_3880 in the referee patch, it really is the referee patch for this ticket!",
     "created_at": "2008-08-19T17:17:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27434",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27376",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -239,15 +238,15 @@ Despite the name trac_3880 in the referee patch, it really is the referee patch 
 
 ---
 
-archive/issue_comments_027435.json:
+archive/issue_comments_027377.json:
 ```json
 {
     "body": "referee patch updated to correct documentation and doctests, plus simplify code in xydata... function.",
     "created_at": "2008-08-19T19:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27435",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27377",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -257,15 +256,15 @@ referee patch updated to correct documentation and doctests, plus simplify code 
 
 ---
 
-archive/issue_comments_027436.json:
+archive/issue_comments_027378.json:
 ```json
 {
     "body": "plus throw some errors when trying to do line() or text() and get back a 3d object.",
     "created_at": "2008-08-19T19:54:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27436",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27378",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -275,15 +274,15 @@ plus throw some errors when trying to do line() or text() and get back a 3d obje
 
 ---
 
-archive/issue_comments_027437.json:
+archive/issue_comments_027379.json:
 ```json
 {
     "body": "there are still some doctest errors from the referee patch",
     "created_at": "2008-08-19T21:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27437",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27379",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -293,15 +292,15 @@ there are still some doctest errors from the referee patch
 
 ---
 
-archive/issue_comments_027438.json:
+archive/issue_comments_027380.json:
 ```json
 {
     "body": "Attachment [trac_3880-referee.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3880-referee.patch) by @jasongrout created at 2008-08-21 21:59:02\n\nupdated referee patch to fix some more things.",
     "created_at": "2008-08-21T21:59:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27438",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27380",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -313,15 +312,15 @@ updated referee patch to fix some more things.
 
 ---
 
-archive/issue_comments_027439.json:
+archive/issue_comments_027381.json:
 ```json
 {
     "body": "Positive review for the initial part (mhansen's part).  The referee patch adds enough functionality that it probably ought to be reviewed as well.\n\nSo, apply trac_3853-rebased-3.1.1-trac_3880.patch and then the referee patch to review/merge this ticket.",
     "created_at": "2008-08-21T22:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27439",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27381",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -333,15 +332,15 @@ So, apply trac_3853-rebased-3.1.1-trac_3880.patch and then the referee patch to 
 
 ---
 
-archive/issue_comments_027440.json:
+archive/issue_comments_027382.json:
 ```json
 {
     "body": "I think now there is one doctest in plot.py that gives a weird error (it's a doctesting error, not a sage error, I think).",
     "created_at": "2008-08-21T22:03:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27440",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27382",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -351,15 +350,15 @@ I think now there is one doctest in plot.py that gives a weird error (it's a doc
 
 ---
 
-archive/issue_comments_027441.json:
+archive/issue_comments_027383.json:
 ```json
 {
     "body": "Apply \n\ntrac_3853-rebased-3.1.1-trac_3880.patch\ntrac_3880-referee.patch \ntrac_3853-fixes.patch \n\nin order.",
     "created_at": "2008-08-26T02:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27441",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27383",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -375,15 +374,15 @@ in order.
 
 ---
 
-archive/issue_comments_027442.json:
+archive/issue_comments_027384.json:
 ```json
 {
     "body": "There was a thread about the proposed new behavior of line:\n\nline([(0,0,0),(1,1,1)]) no longer produces a 3d line, but a 2d line from the first 2 coordinates. Use line3d to get a 3d line.\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/6f4b382145c09546\n\nAll the comments were negative.  That needs to be addressed, right?\n\nI suspect I may be overstepping my bounds by changing this from positive review to needs work--if so, I'll accept an appropriate wrist slapping.",
     "created_at": "2008-08-26T02:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27442",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27384",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -401,15 +400,15 @@ I suspect I may be overstepping my bounds by changing this from positive review 
 
 ---
 
-archive/issue_comments_027443.json:
+archive/issue_comments_027385.json:
 ```json
 {
     "body": "Attachment [trac_3853-fixes.2.patch](tarball://root/attachments/some-uuid/ticket3853/trac_3853-fixes.2.patch) by @mwhansen created at 2008-08-26 03:01:21",
     "created_at": "2008-08-26T03:01:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27443",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27385",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -419,15 +418,15 @@ Attachment [trac_3853-fixes.2.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_027444.json:
+archive/issue_comments_027386.json:
 ```json
 {
     "body": "This looks good to me, it restores the old behavior. If something else is desired it should be dealt with via a new ticket since this code should go in and would bitrot quickly.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-26T03:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27444",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27386",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -441,15 +440,15 @@ Michael
 
 ---
 
-archive/issue_comments_027445.json:
+archive/issue_comments_027387.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-26T03:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27445",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27387",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -459,15 +458,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_027446.json:
+archive/issue_comments_027388.json:
 ```json
 {
     "body": "Merged trac_3853-rebased-3.1.1-trac_3880.patch, trac_3880-referee.patch and trac_3853-fixes.2.patch in Sage 3.1.2.alpha1",
     "created_at": "2008-08-26T03:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27446",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3853#issuecomment-27388",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

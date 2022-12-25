@@ -6,15 +6,13 @@ archive/issues_001238.json:
     "body": "Assignee: @williamstein\n\n\n```\n\n\nAttached bundle fixes the point below: now cerr is only used for\nprompts, hence not at all in the library functions.  Instead, the\nfatal error conditions which send output now to cout are followed by a\ncall to abort().  Clearly this should never happen except if there's a\nbug.\n\nRalf -- a lot of those error outputs were in the linalg code which you\nare going to refactor.\n\nSecondly, I fixed the unintended output of \"transposing...\" reported by William.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1238\n\n",
     "created_at": "2007-11-21T17:30:10Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.14",
     "title": "update the cremona spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1238",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -44,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1238
 
 ---
 
-archive/issue_comments_007739.json:
+archive/issue_comments_007717.json:
 ```json
 {
     "body": "Attachment [a(2).hg](tarball://root/attachments/some-uuid/ticket1238/a(2).hg) by @williamstein created at 2007-11-21 17:30:54",
     "created_at": "2007-11-21T17:30:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1238",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1238#issuecomment-7739",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1238#issuecomment-7717",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -62,15 +60,15 @@ Attachment [a(2).hg](tarball://root/attachments/some-uuid/ticket1238/a(2).hg) by
 
 ---
 
-archive/issue_comments_007740.json:
+archive/issue_comments_007718.json:
 ```json
 {
     "body": "This issue will also be closed by the spkg at #1247.\n\nCheers,\n\nMichael",
     "created_at": "2007-11-24T10:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1238",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1238#issuecomment-7740",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1238#issuecomment-7718",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -84,15 +82,15 @@ Michael
 
 ---
 
-archive/issue_comments_007741.json:
+archive/issue_comments_007719.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-24T15:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1238",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1238#issuecomment-7741",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1238#issuecomment-7719",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

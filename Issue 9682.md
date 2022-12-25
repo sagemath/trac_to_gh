@@ -6,15 +6,14 @@ archive/issues_009682.json:
     "body": "Assignee: sage-combinat\n\nCC:  @hivert\n\neverything is in the title\n\n[[[\nsage: PerfectMatching(6)\n...\nNameError: global name 'sage' is not defined\n]]]\n\nIssue created by migration from https://trac.sagemath.org/ticket/9682\n\n",
     "created_at": "2010-08-04T03:59:47Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "fix a bug in message error in perfect mathings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9682",
-    "user": "vferay"
+    "user": "https://trac.sagemath.org/admin/accounts/users/vferay"
 }
 ```
 Assignee: sage-combinat
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9682
 
 ---
 
-archive/issue_comments_094123.json:
+archive/issue_comments_093966.json:
 ```json
 {
     "body": "Attachment [fix_perfectmatching_vf.patch](tarball://root/attachments/some-uuid/ticket9682/fix_perfectmatching_vf.patch) by vferay created at 2010-08-04 05:15:52",
     "created_at": "2010-08-04T05:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94123",
-    "user": "vferay"
+    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-93966",
+    "user": "https://trac.sagemath.org/admin/accounts/users/vferay"
 }
 ```
 
@@ -55,15 +54,15 @@ Attachment [fix_perfectmatching_vf.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_094124.json:
+archive/issue_comments_093967.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-04T05:15:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94124",
-    "user": "vferay"
+    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-93967",
+    "user": "https://trac.sagemath.org/admin/accounts/users/vferay"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_094125.json:
+archive/issue_comments_093968.json:
 ```json
 {
     "body": "Attachment [trac_9682_fix_perfectmatching_error_message_vf.patch](tarball://root/attachments/some-uuid/ticket9682/trac_9682_fix_perfectmatching_error_message_vf.patch) by @hivert created at 2010-08-04 05:23:31\n\nPatch good to go !",
     "created_at": "2010-08-04T05:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94125",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-93968",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -93,15 +92,15 @@ Patch good to go !
 
 ---
 
-archive/issue_comments_094126.json:
+archive/issue_comments_093969.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-04T05:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94126",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-93969",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094127.json:
+archive/issue_comments_093970.json:
 ```json
 {
     "body": "Should I merge only [attachment:trac_9682_fix_perfectmatching_error_message_vf.patch]?",
     "created_at": "2010-08-07T05:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94127",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-93970",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -129,15 +128,15 @@ Should I merge only [attachment:trac_9682_fix_perfectmatching_error_message_vf.p
 
 ---
 
-archive/issue_comments_094128.json:
+archive/issue_comments_093971.json:
 ```json
 {
     "body": "Replying to [comment:3 mpatel]:\n> Should I merge only [attachment:trac_9682_fix_perfectmatching_error_message_vf.patch]?\n\nOops, I missed the note in the description.  Sorry!",
     "created_at": "2010-08-08T04:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94128",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-93971",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -150,15 +149,15 @@ Oops, I missed the note in the description.  Sorry!
 
 ---
 
-archive/issue_comments_094129.json:
+archive/issue_comments_093972.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-08-09T09:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94129",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-93972",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -168,15 +167,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_094130.json:
+archive/issue_comments_093973.json:
 ```json
 {
     "body": "name with accent",
     "created_at": "2017-07-19T08:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9682",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-94130",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9682#issuecomment-93973",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

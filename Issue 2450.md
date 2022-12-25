@@ -6,15 +6,14 @@ archive/issues_002450.json:
     "body": "Assignee: failure\n\nJust a few doctests.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2450\n\n",
     "created_at": "2008-03-09T23:54:10Z",
     "labels": [
-        "doctest coverage",
-        "minor",
-        "enhancement"
+        "component: doctest coverage",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "[with patch] a few doctests for matrix_integer_dense",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2450",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: failure
@@ -30,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2450
 
 ---
 
-archive/issue_comments_016562.json:
+archive/issue_comments_016527.json:
 ```json
 {
     "body": "Attachment [matrix_integer_dense.patch](tarball://root/attachments/some-uuid/ticket2450/matrix_integer_dense.patch) by mabshoff created at 2008-03-10 03:23:29",
     "created_at": "2008-03-10T03:23:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2450#issuecomment-16562",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2450#issuecomment-16527",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -48,15 +47,15 @@ Attachment [matrix_integer_dense.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_016563.json:
+archive/issue_comments_016528.json:
 ```json
 {
     "body": "Worked for me:\n\n./sage -t devel/sage/sage/matrix all test passed",
     "created_at": "2008-03-14T14:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2450#issuecomment-16563",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/2450#issuecomment-16528",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -68,15 +67,15 @@ Worked for me:
 
 ---
 
-archive/issue_comments_016564.json:
+archive/issue_comments_016529.json:
 ```json
 {
     "body": "Merged in Sage 2.10.4.alpha0",
     "created_at": "2008-03-14T14:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2450#issuecomment-16564",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2450#issuecomment-16529",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -86,15 +85,15 @@ Merged in Sage 2.10.4.alpha0
 
 ---
 
-archive/issue_comments_016565.json:
+archive/issue_comments_016530.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-14T14:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2450#issuecomment-16565",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2450#issuecomment-16530",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

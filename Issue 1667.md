@@ -6,7 +6,7 @@ archive/issues_001667.json:
     "body": "Assignee: @williamstein\n\nKeywords: polybori\n\n`BooleanPolynomialRing` supports coercion from rings where the number of variables is greater than self. This code should be in `__call__` and coercion should first check for the number of variables of the parent ring.\n\nAttached patch fixes this problem, and adds similar coercion and `__call__` semantics to `BooleanMonomialMonoid`. It also fixes minor problems where using iterators of polynomials over a ring other than the current one messes `PolyBoRi` up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1667\n\n",
     "created_at": "2008-01-03T14:54:15Z",
     "labels": [
-        "interfaces",
+        "component: interfaces",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001667.json:
     "title": "[with patch, needs review] coercion fixes for PolyBoRi",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1667",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1667
 
 ---
 
-archive/issue_comments_010591.json:
+archive/issue_comments_010564.json:
 ```json
 {
     "body": "coercion & minor fixes to polybori",
     "created_at": "2008-01-03T14:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1667#issuecomment-10591",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1667#issuecomment-10564",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -51,15 +51,15 @@ coercion & minor fixes to polybori
 
 ---
 
-archive/issue_comments_010592.json:
+archive/issue_comments_010565.json:
 ```json
 {
     "body": "Attachment [polybori-coercion.patch](tarball://root/attachments/some-uuid/ticket1667/polybori-coercion.patch) by mabshoff created at 2008-01-03 16:00:27\n\nLooks good to me. This is isolated to polybori, so I merged it.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T16:00:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1667#issuecomment-10592",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1667#issuecomment-10565",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +75,15 @@ Michael
 
 ---
 
-archive/issue_comments_010593.json:
+archive/issue_comments_010566.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-03T16:01:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1667#issuecomment-10593",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1667#issuecomment-10566",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

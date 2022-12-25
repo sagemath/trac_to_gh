@@ -6,7 +6,7 @@ archive/issues_007328.json:
     "body": "Assignee: cwitty\n\nCC:  @kcrisman\n\nCompare:\n\n\n```\nsage: latex(float(3e-10))\n3e-10\nsage: latex(RR(3e-10))\n3.00000000000000 \\times 10^{-10}\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7328\n\n",
     "created_at": "2009-10-28T00:35:44Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007328.json:
     "title": "latex doesn't handle python floats correctly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7328",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: cwitty
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7328
 
 ---
 
-archive/issue_comments_061288.json:
+archive/issue_comments_061175.json:
 ```json
 {
     "body": "Attachment [trac-7328-latex-float.patch](tarball://root/attachments/some-uuid/ticket7328/trac-7328-latex-float.patch) by @jasongrout created at 2009-10-28 00:53:54",
     "created_at": "2009-10-28T00:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7328",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61288",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61175",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -59,15 +59,15 @@ Attachment [trac-7328-latex-float.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_061289.json:
+archive/issue_comments_061176.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-28T03:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7328",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61289",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61176",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -77,15 +77,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_061290.json:
+archive/issue_comments_061177.json:
 ```json
 {
     "body": "This seems good and consistent with the rest of the latex_table, and certainly makes sense for the notebook!  Unless there are other obvious places to put doctests for this (notebook?), positive review.",
     "created_at": "2009-10-29T18:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7328",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61290",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61177",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -95,15 +95,15 @@ This seems good and consistent with the rest of the latex_table, and certainly m
 
 ---
 
-archive/issue_comments_061291.json:
+archive/issue_comments_061178.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-29T18:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7328",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61291",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61178",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -113,15 +113,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_061292.json:
+archive/issue_comments_061179.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-31T15:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7328",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61292",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7328#issuecomment-61179",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

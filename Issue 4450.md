@@ -6,7 +6,7 @@ archive/issues_004450.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein acleone @qed777\n\nIn the notebook, hold down the down arrow in the last cell.  It doesn't just stop, but wraps around. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4450\n\n",
     "created_at": "2008-11-05T23:16:38Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004450.json:
     "title": "notebook -- cursor down in last cell wraps around cell, instead of just staying at bottom",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4450",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4450
 
 ---
 
-archive/issue_comments_032809.json:
+archive/issue_comments_032746.json:
 ```json
 {
     "body": "Is this still a problem?",
     "created_at": "2009-11-14T06:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32809",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32746",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -49,15 +49,15 @@ Is this still a problem?
 
 ---
 
-archive/issue_comments_032810.json:
+archive/issue_comments_032747.json:
 ```json
 {
     "body": "Attachment [trac_4450-cursor-wrap-last-cell.patch](tarball://root/attachments/some-uuid/ticket4450/trac_4450-cursor-wrap-last-cell.patch) by @TimDumol created at 2010-01-19 11:14:00\n\nPrevents the cursor from wrapping aroundat last cell.",
     "created_at": "2010-01-19T11:14:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32810",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32747",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -69,15 +69,15 @@ Prevents the cursor from wrapping aroundat last cell.
 
 ---
 
-archive/issue_comments_032811.json:
+archive/issue_comments_032748.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-19T11:14:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32811",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32748",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -87,15 +87,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_032812.json:
+archive/issue_comments_032749.json:
 ```json
 {
     "body": "This should do the trick.",
     "created_at": "2010-01-19T11:14:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32812",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32749",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -105,15 +105,15 @@ This should do the trick.
 
 ---
 
-archive/issue_comments_032813.json:
+archive/issue_comments_032750.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-19T13:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32813",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32750",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -123,15 +123,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_032814.json:
+archive/issue_comments_032751.json:
 ```json
 {
     "body": "LGTM.",
     "created_at": "2010-01-19T13:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32814",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32751",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -141,15 +141,15 @@ LGTM.
 
 ---
 
-archive/issue_comments_032815.json:
+archive/issue_comments_032752.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-25T00:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4450",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32815",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4450#issuecomment-32752",
+    "user": "https://github.com/qed777"
 }
 ```
 

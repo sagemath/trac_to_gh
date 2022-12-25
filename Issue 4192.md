@@ -6,7 +6,7 @@ archive/issues_004192.json:
     "body": "Assignee: @mwhansen\n\nKeywords: imports\n\nFunctions like `is_FractionField` should not be imported at the top level, since they don't necessarily make sense mathematically, only programmatically. Thus, situations like\n\n```\nsage: is_FractionField(FractionField(ZZ))\nFalse\n```\n\nmight confuse people.  \n\nSee the discussion in #4149. I think the best solution, as propounded there by cremona and robertwb, is to have `is_Blah` *methods* which are, as much as possible, mathematically correct.  In contrast, `is_Blah` *functions* should be data-checks, existing primarily for use in the code.\n\nmhansen has volunteered to do at least some of this work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4192\n\n",
     "created_at": "2008-09-24T17:04:34Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004192.json:
     "title": "is_Blah functions: deprecate and then remove them from top level imports",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4192",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @mwhansen
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4192
 
 ---
 
-archive/issue_comments_030422.json:
+archive/issue_comments_030360.json:
 ```json
 {
     "body": "There still might be some failures due to ones that I missed, but I think I got most of them.",
     "created_at": "2008-09-26T04:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30422",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30360",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -60,15 +60,15 @@ There still might be some failures due to ones that I missed, but I think I got 
 
 ---
 
-archive/issue_comments_030423.json:
+archive/issue_comments_030361.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-26T04:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30423",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30361",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -78,15 +78,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_030424.json:
+archive/issue_comments_030362.json:
 ```json
 {
     "body": "Mike,\n\nyou missed a couple (this is with -long):\n\n```\nsage -t -long devel/sage/sage/calculus/calculus.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/calculus.py\", line 5587:\n    sage: is_CallableSymbolicExpression(f)\nExpected:\n    True\nGot:\n    doctest:1: DeprecationWarning: \n    Using is_CallableSymbolicExpression from the top level is deprecated since it was designed to be used by developers rather than end users.\n    It most likely does not do what you would expect it to do.  If you really need to use it, import it from the module that it is defined in.\n    True\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/calculus.py\", line 431:\n    sage: is_SymbolicExpression(SR(I))\nExpected:\n    True\nGot:\n    doctest:1: DeprecationWarning: \n    Using is_SymbolicExpression from the top level is deprecated since it was designed to be used by developers rather than end users.\n    It most likely does not do what you would expect it to do.  If you really need to use it, import it from the module that it is defined in.\n    True\n**********************************************************************\n2 items had failures:\n   1 of   8 in __main__.example_159\n   1 of   9 in __main__.example_7\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_calculus.py\n```\n\nparent_old.pyx:\n\n```\nsage -t -long devel/sage/sage/structure/parent_old.pyx      \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/parent_old.py\", line 45:\n    sage: is_Parent(Primes())\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_parent_old.py\n         [3.1 s]\nexit code: 1024\n```\n\nschemes.py:\n\n```\nsage -t -long devel/sage/sage/schemes/generic/scheme.py     \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/scheme.py\", line 41:\n    sage: from sage.scheme.generic.scheme import is_Scheme\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        from sage.scheme.generic.scheme import is_Scheme###line 41:\n    sage: from sage.scheme.generic.scheme import is_Scheme\n    ImportError: No module named scheme.generic.scheme\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/scheme.py\", line 42:\n    sage: is_Scheme(5)\nExpected:\n    False\nGot:\n    doctest:1: DeprecationWarning: \n    Using is_Scheme from the top level is deprecated since it was designed to be used by developers rather than end users.\n    It most likely does not do what you would expect it to do.  If you really need to use it, import it from the module that it is defined in.\n    False\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/scheme.py\", line 505:\n    sage: from sage.schemes.generic.schemes import is_AffineScheme\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_23[2]>\", line 1, in <module>\n        from sage.schemes.generic.schemes import is_AffineScheme###line 505:\n    sage: from sage.schemes.generic.schemes import is_AffineScheme\n    ImportError: No module named schemes\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/scheme.py\", line 506:\n    sage: is_AffineScheme(5)\nExpected:\n    False\nGot:\n    doctest:1: DeprecationWarning: \n    Using is_AffineScheme from the top level is deprecated since it was designed to be used by developers rather than end users.\n    It most likely does not do what you would expect it to do.  If you really need to use it, import it from the module that it is defined in.\n    False\n**********************************************************************\n2 items had failures:\n   2 of   6 in __main__.example_1\n   2 of   6 in __main__.example_23\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_scheme.py\n         [11.2 s]\nexit code: 1024\n```\n\nfree_monoid.py:\n\n```\nsage -t -long devel/sage/sage/monoids/free_monoid.py        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/free_monoid.py\", line 75:\n    sage: is_FreeMonoid(5)\nExpected:\n    False\nGot:\n    doctest:1: DeprecationWarning: \n    Using is_FreeMonoid from the top level is deprecated since it was designed to be used by developers rather than end users.\n    It most likely does not do what you would expect it to do.  If you really need to use it, import it from the module that it is defined in.\n    False\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_free_monoid.py\n         [2.3 s]\nexit code: 1024\n```\n\nfree_ablian_monoid.py:\n\n```\nsage -t -long devel/sage/sage/monoids/free_abelian_monoid.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/free_abelian_monoid.py\", line 98:\n    sage: is_FreeAbelianMonoid(5)\nExpected:\n    False\nGot:\n    doctest:1: DeprecationWarning: \n    Using is_FreeAbelianMonoid from the top level is deprecated since it was designed to be used by developers rather than end users.\n    It most likely does not do what you would expect it to do.  If you really need to use it, import it from the module that it is defined in.\n    False\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_2\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_free_abelian_monoid.py\n         [2.5 s]\nexit code: 1024\n```\n\nA strange on in magma.py:\n\n```\nsage -t -long devel/sage/sage/interfaces/magma.py           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/magma.py\", line 1096:\n    sage: R.assign_names(['x'])\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_28[2]>\", line 1, in <module>\n        R.assign_names(['x'])###line 1096:\n    sage: R.assign_names(['x'])\n    AttributeError: type object 'R' has no attribute 'assign_names'\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_28\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_magma.py\n         [3.3 s]\n```\n\nhomset.py:\n\n```\nsage -t -long devel/sage/sage/categories/homset.py          \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/homset.py\", line 190:\n    sage: is_Endset(S)\nExpected:\n    True\nGot:\n    doctest:1: DeprecationWarning: \n    Using is_Endset from the top level is deprecated since it was designed to be used by developers rather than end users.\n    It most likely does not do what you would expect it to do.  If you really need to use it, import it from the module that it is defined in.\n    True\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_3\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_homset.py\n         [2.3 s]\nexit code: 1024\n```\n\nand finally functor.pyx:\n\n```\nsage -t -long devel/sage/sage/categories/functor.pyx        \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/functor.py\", line 38:\n    sage: is_Functor(F)\nExpected:\n    True\nGot:\n    doctest:1: DeprecationWarning: \n    Using is_Functor from the top level is deprecated since it was designed to be used by developers rather than end users.\n    It most likely does not do what you would expect it to do.  If you really need to use it, import it from the module that it is defined in.\n    True\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_1\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.1.3.alpha2/tmp/.doctest_functor.py\n         [2.3 s]\nexit code: 1024\n```\n\nOther than that the patch looks good.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T05:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30424",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30362",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -325,15 +325,15 @@ Michael
 
 ---
 
-archive/issue_comments_030425.json:
+archive/issue_comments_030363.json:
 ```json
 {
     "body": "Attachment [trac_4192.patch](tarball://root/attachments/some-uuid/ticket4192/trac_4192.patch) by @mwhansen created at 2008-09-26 07:02:57",
     "created_at": "2008-09-26T07:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30425",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30363",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -343,15 +343,15 @@ Attachment [trac_4192.patch](tarball://root/attachments/some-uuid/ticket4192/tra
 
 ---
 
-archive/issue_comments_030426.json:
+archive/issue_comments_030364.json:
 ```json
 {
     "body": "I've updated the patch to fix those issues.",
     "created_at": "2008-09-26T07:04:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30426",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30364",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -361,15 +361,15 @@ I've updated the patch to fix those issues.
 
 ---
 
-archive/issue_comments_030427.json:
+archive/issue_comments_030365.json:
 ```json
 {
     "body": "Ok, things work now. Positive review. Followup work should be directed to new tickets.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-26T07:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30427",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30365",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -383,15 +383,15 @@ Michael
 
 ---
 
-archive/issue_comments_030428.json:
+archive/issue_comments_030366.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-26T07:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30428",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30366",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -401,15 +401,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030429.json:
+archive/issue_comments_030367.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha2",
     "created_at": "2008-09-26T07:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4192",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30429",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4192#issuecomment-30367",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

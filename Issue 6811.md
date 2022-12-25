@@ -6,7 +6,7 @@ archive/issues_006811.json:
     "body": "Assignee: @williamstein\n\nI was computed Riemann's analytic formula for pi(X), and was disturbed it wasn't converging to pi(X).  It turned out that the function in Sage for a while for plotting prime_pi is buggy! For example, try this:\n\n```\nsage: prime_pi.plot(5,10).show(gridlines='minor',frame=True)\nsage: prime_pi(8)\n4\n```\n\nYou'll see a plot that has a horizontal line at height 5 on it.  \n\nThis is very bad and embarrassing!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6811\n\n",
     "created_at": "2009-08-23T04:11:08Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006811.json:
     "title": "prime_pi.plot is wrong (!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6811",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6811
 
 ---
 
-archive/issue_comments_056061.json:
+archive/issue_comments_055959.json:
 ```json
 {
     "body": "I've attached code to fix this bug.  It does things right.  \n\n  (1) I created a plot_step_function command that can be used to plot general step functions, and added it to the reference manual. \n\n  (2) I changed the current broken prime_pi.plot to use that and use a much easier to understand (hence right) algorithm to generate the plot.\n\n  (3) I fixed a bunch of ReST mistakes in prime_pi.pyx while I was at it.  \n\n  (4) I added prime_pi to the reference manual.",
     "created_at": "2009-08-23T05:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56061",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-55959",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -66,15 +66,15 @@ I've attached code to fix this bug.  It does things right.
 
 ---
 
-archive/issue_comments_056062.json:
+archive/issue_comments_055960.json:
 ```json
 {
     "body": "Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811.patch) by @williamstein created at 2009-08-23 05:14:09",
     "created_at": "2009-08-23T05:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56062",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-55960",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -84,15 +84,15 @@ Attachment [trac_6811.patch](tarball://root/attachments/some-uuid/ticket6811/tra
 
 ---
 
-archive/issue_comments_056063.json:
+archive/issue_comments_055961.json:
 ```json
 {
     "body": "Looks fine:\n1. Importing sage.plot.all is no longer necessary in prime_pi.pyx\n2. May want to change\n\n```\nfor i in range(len(v)):\n    w.append(v[i])\n    if i+1 < len(v):\n        w.append((v[i+1][0],v[i][1]))\n```\n\nto\n\n```\nfor i in range(len(v)-1):\n    w.append(v[i])\n    w.append((v[i+1][0],v[i][1]))\nw.append(v[len(v)-1])\n```\n\nfor readability.\n1. The plot_step_function always starts horizontal and ends vertically, this can sometimes lead to rather odd looking results in my opinion. For example, compare\n\n```\nsage: plot_step_function([(i,i^3) for i in range(6)])\nsage: plot_step_function([(i,i^3) for i in range(6)]) + line([(5,125),(6,125)])\n```\n\na. If we are to make any changes to this, we would need to consider uneven intervals of definition (say the function `[(i<sup>2,i</sup>3) for i in range(6)]`).\n1. Might be useful to use the plot_step_function elsewhere. For example, with Riemann sums it is either difficult or impossible to enable vertical lines, and the floor function is in the opposite situation.",
     "created_at": "2009-08-23T09:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56063",
-    "user": "@ohanar"
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-55961",
+    "user": "https://github.com/ohanar"
 }
 ```
 
@@ -131,15 +131,15 @@ a. If we are to make any changes to this, we would need to consider uneven inter
 
 ---
 
-archive/issue_comments_056064.json:
+archive/issue_comments_055962.json:
 ```json
 {
     "body": "Also, we need to fix the credit situation in prime_pi.pyx",
     "created_at": "2009-08-23T09:57:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56064",
-    "user": "@ohanar"
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-55962",
+    "user": "https://github.com/ohanar"
 }
 ```
 
@@ -149,15 +149,15 @@ Also, we need to fix the credit situation in prime_pi.pyx
 
 ---
 
-archive/issue_comments_056065.json:
+archive/issue_comments_055963.json:
 ```json
 {
     "body": "reviewer patch; fixes typos",
     "created_at": "2009-08-24T06:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56065",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-55963",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -167,15 +167,15 @@ reviewer patch; fixes typos
 
 ---
 
-archive/issue_comments_056066.json:
+archive/issue_comments_055964.json:
 ```json
 {
     "body": "Attachment [trac_6811-reviewer.patch](tarball://root/attachments/some-uuid/ticket6811/trac_6811-reviewer.patch) by mvngu created at 2009-08-24 06:05:53\n\nThe reviewer patch `trac_6811-reviewer.patch` fixes some typos in `trac_6811.patch`. One of these typos results in a warning when building the reference manual.",
     "created_at": "2009-08-24T06:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56066",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-55964",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -187,15 +187,15 @@ The reviewer patch `trac_6811-reviewer.patch` fixes some typos in `trac_6811.pat
 
 ---
 
-archive/issue_comments_056067.json:
+archive/issue_comments_055965.json:
 ```json
 {
     "body": "Merged both patches.",
     "created_at": "2009-08-24T06:43:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56067",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-55965",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -205,15 +205,15 @@ Merged both patches.
 
 ---
 
-archive/issue_comments_056068.json:
+archive/issue_comments_055966.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-08-24T06:43:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-56068",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6811#issuecomment-55966",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

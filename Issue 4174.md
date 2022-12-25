@@ -6,15 +6,14 @@ archive/issues_004174.json:
     "body": "Assignee: mabshoff\n\nTitle says it all, spkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4174\n\n",
     "created_at": "2008-09-23T06:49:46Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "Do not run \"make install\" in python.spkg in parallel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4174",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4174
 
 ---
 
-archive/issue_comments_030282.json:
+archive/issue_comments_030221.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-23T06:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30282",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_030283.json:
+archive/issue_comments_030222.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.3/alpha1/python-2.5.2.p8.spkg\n\nfixes the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T08:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30283",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30222",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +76,15 @@ Michael
 
 ---
 
-archive/issue_comments_030284.json:
+archive/issue_comments_030223.json:
 ```json
 {
     "body": "Looks good. Michael explained the changes to me, and everything looks good.",
     "created_at": "2008-09-24T10:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30284",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30223",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -95,15 +94,15 @@ Looks good. Michael explained the changes to me, and everything looks good.
 
 ---
 
-archive/issue_comments_030285.json:
+archive/issue_comments_030224.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha1",
     "created_at": "2008-09-24T10:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30285",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30224",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Merged in Sage 3.1.3.alpha1
 
 ---
 
-archive/issue_comments_030286.json:
+archive/issue_comments_030225.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-24T10:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30286",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4174#issuecomment-30225",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

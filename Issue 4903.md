@@ -6,15 +6,14 @@ archive/issues_004903.json:
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4903\n\n",
     "created_at": "2009-01-01T22:46:01Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "convert sage.calculus.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4903",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4903
 
 ---
 
-archive/issue_comments_037195.json:
+archive/issue_comments_037123.json:
 ```json
 {
     "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-01-02T03:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37195",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37123",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
-archive/issue_comments_037196.json:
+archive/issue_comments_037124.json:
 ```json
 {
     "body": "Patch at http://sage.math.washington.edu/home/mhansen/trac_4903.patch",
     "created_at": "2009-01-02T03:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37196",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37124",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ Patch at http://sage.math.washington.edu/home/mhansen/trac_4903.patch
 
 ---
 
-archive/issue_comments_037197.json:
+archive/issue_comments_037125.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-02T03:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37197",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37125",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_037198.json:
+archive/issue_comments_037126.json:
 ```json
 {
     "body": "* In minpoly (around line 1659)\n\n\n```\n+        ``self`` and use PARI's algdep to get a candidate\n+        minpoly `f`. If `f(``self``)`,\n+        evaluated to a higher precision, is close enough to 0 then evaluate\n+        `f(``self``)` symbolically, attempting to prove\n+        vanishing. If this fails, and ``epsilon`` is non-zero,\n+        return `f` if and only if\n+        `f(``self``) < ``epsilon```.\n```\n\nis not parsing correctly. See\n\n```\nhttp://sage.math.washington.edu/home/mhansen/sage-3.2.3-sage.math-only-x86_64-Linux/devel/sage/doc/output/html/en/reference/sage/calculus/calculus.html\n```\n\nI guess sphinx is having trouble with the nested quotes?\n\nAnother problem with the html conversion is that the footer (in ubuntu seamonkey) in that file is\nnot offset as blue. (Eg, the next link at the bottom of the page does not appear as it is overwritten by the white page background, but it is there if you mose over it.) It does render correctly in epiphany however. Does anyone but me even use seamonkey?",
     "created_at": "2009-01-02T12:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37198",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37126",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -123,15 +122,15 @@ not offset as blue. (Eg, the next link at the bottom of the page does not appear
 
 ---
 
-archive/issue_comments_037199.json:
+archive/issue_comments_037127.json:
 ```json
 {
     "body": "Attachment [trac_4903-2.patch](tarball://root/attachments/some-uuid/ticket4903/trac_4903-2.patch) by @mwhansen created at 2009-01-02 20:32:51\n\nI attached a patch which fixes the problem with the nested quotes.\n\nI'm not seeing the problem that you are in Firefox 3.0.",
     "created_at": "2009-01-02T20:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37199",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37127",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -145,15 +144,15 @@ I'm not seeing the problem that you are in Firefox 3.0.
 
 ---
 
-archive/issue_comments_037200.json:
+archive/issue_comments_037128.json:
 ```json
 {
     "body": "Attachment [sage.calculus-final.patch](tarball://root/attachments/some-uuid/ticket4903/sage.calculus-final.patch) by cwitty created at 2009-02-22 03:39:58",
     "created_at": "2009-02-22T03:39:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37200",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37128",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -163,15 +162,15 @@ Attachment [sage.calculus-final.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_037201.json:
+archive/issue_comments_037129.json:
 ```json
 {
     "body": "Attachment [trac4903-tiny-fix.patch](tarball://root/attachments/some-uuid/ticket4903/trac4903-tiny-fix.patch) by cwitty created at 2009-02-22 03:40:34\n\nI've posted a tiny fix to make doctests pass in sage.calculus.* after sphinxification.",
     "created_at": "2009-02-22T03:40:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37201",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37129",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -183,15 +182,15 @@ I've posted a tiny fix to make doctests pass in sage.calculus.* after sphinxific
 
 ---
 
-archive/issue_comments_037202.json:
+archive/issue_comments_037130.json:
 ```json
 {
     "body": "I looked through \n\n```\nhttp://sage.math.washington.edu/home/mhansen/sage-3.3.alpha0-sage.math-only-x86_64-Linux/devel/sage/doc/output/html/en/reference/calculus.html\n```\n\nand this looks good to me.",
     "created_at": "2009-02-22T12:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37202",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37130",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -207,15 +206,15 @@ and this looks good to me.
 
 ---
 
-archive/issue_comments_037203.json:
+archive/issue_comments_037131.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-24T17:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37203",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37131",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -225,15 +224,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_037204.json:
+archive/issue_comments_037132.json:
 ```json
 {
     "body": "Merged sage.calculus-final.patch in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T17:58:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37204",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37132",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -247,15 +246,15 @@ Michael
 
 ---
 
-archive/issue_comments_037205.json:
+archive/issue_comments_037133.json:
 ```json
 {
     "body": "Merged trac4903-tiny-fix.patch in Sage 3.4.alpha0 to fix a doctest failure not in Mike's patch.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T20:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4903",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37205",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4903#issuecomment-37133",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

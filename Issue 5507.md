@@ -6,7 +6,7 @@ archive/issues_005507.json:
     "body": "Assignee: @williamstein\n\nKeywords: sage-sage\n\nI think there is a superfluous \"shift\" in the \"sage-sage\" script, because this works:\n\n    $ sage -sh -c -c \"echo hi there\"\n\n    Starting subshell with Sage environment variables set.\n    Be sure to exit when you are done and do not do anything\n    with other copies of Sage!\n\n    Bypassing shell configuration files ...\n\n    hi there\n    Exited Sage subshell.\n\nbut this doesn't:\n\n    $ sage -sh -c \"echo hi there\"\n\n    Starting subshell with Sage environment variables set.\n    Be sure to exit when you are done and do not do anything\n    with other copies of Sage!\n\n    Bypassing shell configuration files ...\n\n    bash: echo hi there: No such file or directory\n    Exited Sage subshell.\n\n\n--\n\n$ sage --version\n| Sage Version 3.2.2, Release Date: 2008-12-18                       |\n\nIssue created by migration from https://trac.sagemath.org/ticket/5507\n\n",
     "created_at": "2009-03-13T03:04:47Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005507.json:
     "title": "fix sage-sage script",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5507",
-    "user": "@DanGrayson"
+    "user": "https://github.com/DanGrayson"
 }
 ```
 Assignee: @williamstein
@@ -61,15 +61,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5507
 
 ---
 
-archive/issue_comments_042764.json:
+archive/issue_comments_042681.json:
 ```json
 {
     "body": "The patch at #4644 fixes this problem, according to this thread: http://groups.google.com/group/sage-devel/browse_thread/thread/384d4fe7dabb722c/",
     "created_at": "2009-09-28T23:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5507#issuecomment-42764",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/5507#issuecomment-42681",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -79,15 +79,15 @@ The patch at #4644 fixes this problem, according to this thread: http://groups.g
 
 ---
 
-archive/issue_comments_042765.json:
+archive/issue_comments_042682.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-02T06:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5507#issuecomment-42765",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5507#issuecomment-42682",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -97,15 +97,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_042766.json:
+archive/issue_comments_042683.json:
 ```json
 {
     "body": "With Sage 4.3.2.alpha1, I get:\n\n```\n[mvngu@mod sage-4.3.2.alpha1]$ ./sage -version\n* Warning: this is a prerelease version, and it may be unstable.     *\n[mvngu@mod sage-4.3.2.alpha1]$ ./sage -sh -c -c \"echo hi there\"\n| Sage Version 4.3.2.alpha1, Release Date: 2010-01-31                |\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\nhi there\nExited Sage subshell.\n[mvngu@mod sage-4.3.2.alpha1]$ ./sage -sh -c \"echo hi there\"\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nBypassing shell configuration files ...\n\nhi there\nExited Sage subshell.\n```\n\nI'm closing this ticket as fixed by #4644.",
     "created_at": "2010-02-02T06:55:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5507#issuecomment-42766",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5507#issuecomment-42683",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

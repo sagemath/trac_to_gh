@@ -6,7 +6,7 @@ archive/issues_000841.json:
     "body": "Assignee: cwitty\n\nThe hash() function applied to a single algebraic real may give different results at different times:\n\n```\nsage: foo = sqrt(AA(4))\nsage: hash(foo)\n-1289340516\nsage: foo == 2\nTrue\nsage: hash(foo)\n2105051955\n```\n\n\n(I plan to fix this problem very soon.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/841\n\n",
     "created_at": "2007-10-09T00:42:55Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000841.json:
     "title": "hash() on algebraic reals is not stable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/841",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: cwitty
@@ -43,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/841
 
 ---
 
-archive/issue_comments_005206.json:
+archive/issue_comments_005190.json:
 ```json
 {
     "body": "Attachment [6719.patch](tarball://root/attachments/some-uuid/ticket841/6719.patch) by cwitty created at 2007-10-09 01:03:52\n\nOK, here's a patch that makes hash() on algebraic reals stable.  New results after the patch:\n\n\n```\nsage: foo = sqrt(AA(4))\nsage: hash(foo)\n-1968313278\nsage: foo == 2\nTrue\nsage: hash(foo)\n-1968313278\n```\n",
     "created_at": "2007-10-09T01:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/841#issuecomment-5206",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/841#issuecomment-5190",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -75,15 +75,15 @@ sage: hash(foo)
 
 ---
 
-archive/issue_comments_005207.json:
+archive/issue_comments_005191.json:
 ```json
 {
     "body": "Changing assignee from cwitty to tbd.",
     "created_at": "2007-10-09T01:03:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/841#issuecomment-5207",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/841#issuecomment-5191",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -93,15 +93,15 @@ Changing assignee from cwitty to tbd.
 
 ---
 
-archive/issue_comments_005208.json:
+archive/issue_comments_005192.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-13T07:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/841#issuecomment-5208",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/841#issuecomment-5192",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000274.json:
     "body": "Assignee: @williamstein\n\nLeaks like a bad ...\n\n\n```\n\nsage: get_memory_usage()\n'276M'\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: for i in range(1000):\n    s = K.random_element(); t = K.random_element()\n    poly = s + t*X\n....:     \nsage: get_memory_usage()\n'281M'\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/274\n\n",
     "created_at": "2007-02-21T08:50:03Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "memory leak --- Polynomial arithmetic over finite field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/274",
-    "user": "ifti"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ifti"
 }
 ```
 Assignee: @williamstein
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/274
 
 ---
 
-archive/issue_comments_001300.json:
+archive/issue_comments_001296.json:
 ```json
 {
     "body": "This much simpler example also leaks:\n\n```\nsage: K = GF(10007^2, 'a')\nsage: X = PolynomialRing(K, 'x').gen()\nsage: s = K.random_element(); t = K.random_element()\nsage: for i in range(1000):\n    _ = t*X\n```\n",
     "created_at": "2007-08-18T16:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1300",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1296",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -73,15 +72,15 @@ sage: for i in range(1000):
 
 ---
 
-archive/issue_comments_001301.json:
+archive/issue_comments_001297.json:
 ```json
 {
     "body": "\n```\n09:10 < was_> the problem is also *only* over GF(10007^2)\n09:10 < was_> not over GF(10007)\n09:10 < was_> so it's givaro, probably.\n```\n",
     "created_at": "2007-08-18T16:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1301",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1297",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -97,15 +96,15 @@ archive/issue_comments_001301.json:
 
 ---
 
-archive/issue_comments_001302.json:
+archive/issue_comments_001298.json:
 ```json
 {
     "body": "Not givaro, pari:\n\nsage: K = GF(10007^2, 'a')\nsage: type(K)\n<class 'sage.rings.finite_field.FiniteField_ext_pari'>",
     "created_at": "2007-08-18T16:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1302",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1298",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -119,15 +118,15 @@ sage: type(K)
 
 ---
 
-archive/issue_comments_001303.json:
+archive/issue_comments_001299.json:
 ```json
 {
     "body": "The problem is in polynomial creation.\n\n\n```\nK = GF(2^16, 'a')\nprint type(K)\nR.<x> = K[]\nprint type(R)\ns = K.random_element()\n\ndef leak(n):\n    m = get_memory_usage()\n    for i in range(n):\n        _ = R([1])\n    print get_memory_usage() - m\n\nleak(10000)\n```\n",
     "created_at": "2007-08-18T20:05:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1303",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1299",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -155,15 +154,15 @@ leak(10000)
 
 ---
 
-archive/issue_comments_001304.json:
+archive/issue_comments_001300.json:
 ```json
 {
     "body": "after much hunting, the bug appears to be in PARI gen __bool__ method, which currently is implemented as:\n\n\n```\ndef __bool__(gen self):\n   _sig_on\n   t = bool(self.g != stoi(0))\n   _sig_off\n   return t\n```\n\n\nwhich doesn't make a whole lot of sense.",
     "created_at": "2007-08-18T21:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1304",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1300",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -185,15 +184,15 @@ which doesn't make a whole lot of sense.
 
 ---
 
-archive/issue_comments_001305.json:
+archive/issue_comments_001301.json:
 ```json
 {
     "body": "Changing priority from major to critical.",
     "created_at": "2007-08-19T01:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1305",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1301",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -203,15 +202,15 @@ Changing priority from major to critical.
 
 ---
 
-archive/issue_comments_001306.json:
+archive/issue_comments_001302.json:
 ```json
 {
     "body": "This is really a symptom of some sort of much more general memory leak problem in the PARI C library interface, as the following bizarre example illustrates:\n\n\n```\nsage: n = pari('x')\nsage: m = pari(0)\nsage: s = get_memory_usage()\nsage: for i in range(2*10^5):\n...       _ = pari(0)\n...\nsage: print get_memory_usage() - s\n0.0\nsage: n = pari('x')\nsage: m = pari(0)\nsage: s = get_memory_usage()\nsage: for i in range(2*10^5):\n...       _ = n == m\n...\nsage: print get_memory_usage() - s\n0.0\nsage: n = pari('x')\nsage: m = pari(0)\nsage: s = get_memory_usage()\nsage: for i in range(2*10^5):\n...       _ = n == pari(0)\n...\nsage: print get_memory_usage() - s\n10.87109375\n```\n",
     "created_at": "2007-08-19T05:32:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1306",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1302",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -250,15 +249,15 @@ sage: print get_memory_usage() - s
 
 ---
 
-archive/issue_comments_001307.json:
+archive/issue_comments_001303.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-19T08:28:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/274",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1307",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/274#issuecomment-1303",
+    "user": "https://github.com/williamstein"
 }
 ```
 

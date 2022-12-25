@@ -6,15 +6,14 @@ archive/issues_006653.json:
     "body": "Assignee: tba\n\nCC:  @haraldschilly\n\nThe top-level `index.html` for Sage documentation now includes links to the corresponding PDF files (cf. #4460).  However, it can be useful to suppress these links.  Building on #6187, this ticket adds an option `--no-pdf-links` to `sage -docbuild`.\n\nSee #4460 for some history and an earlier version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6653\n\n",
     "created_at": "2009-07-29T08:39:16Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Add --no-pdf-links option for doc/html/index.html builder.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6653",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: tba
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6653
 
 ---
 
-archive/issue_comments_054608.json:
+archive/issue_comments_054507.json:
 ```json
 {
     "body": "Depends on #6187.",
     "created_at": "2009-07-29T09:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54608",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54507",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -51,15 +50,15 @@ Depends on #6187.
 
 ---
 
-archive/issue_comments_054609.json:
+archive/issue_comments_054508.json:
 ```json
 {
     "body": "Attachment [trac_6653-no_pdf_links.patch](tarball://root/attachments/some-uuid/ticket6653/trac_6653-no_pdf_links.patch) by @qed777 created at 2009-08-11 03:15:28",
     "created_at": "2009-08-11T03:15:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54609",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54508",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -69,15 +68,15 @@ Attachment [trac_6653-no_pdf_links.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_054610.json:
+archive/issue_comments_054509.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-19T21:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54610",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54509",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_054611.json:
+archive/issue_comments_054510.json:
 ```json
 {
     "body": "Looks good to me: running \"sage -docbuild website html --no-pdf-links\" turns the links off, and then running \"sage -docbuild website html\" turns them back on again.",
     "created_at": "2009-11-19T21:51:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54611",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54510",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -105,15 +104,15 @@ Looks good to me: running "sage -docbuild website html --no-pdf-links" turns the
 
 ---
 
-archive/issue_comments_054612.json:
+archive/issue_comments_054511.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-29T04:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6653",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54612",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6653#issuecomment-54511",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_006180.json:
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6180\n\n",
     "created_at": "2009-06-01T23:56:36Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006180.json:
     "title": "[with patch; needs review] fix typo in spkg-install for pynac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6180",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6180
 
 ---
 
-archive/issue_comments_049345.json:
+archive/issue_comments_049250.json:
 ```json
 {
     "body": "The spkg is here: http://sage.math.washington.edu/home/wstein/patches/pynac-0.1.7.p0.spkg",
     "created_at": "2009-06-01T23:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49345",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49250",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ The spkg is here: http://sage.math.washington.edu/home/wstein/patches/pynac-0.1.
 
 ---
 
-archive/issue_comments_049346.json:
+archive/issue_comments_049251.json:
 ```json
 {
     "body": "Looks good to me.\n\nMerged in 4.0.1.rc0.",
     "created_at": "2009-06-04T06:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49346",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49251",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +67,15 @@ Merged in 4.0.1.rc0.
 
 ---
 
-archive/issue_comments_049347.json:
+archive/issue_comments_049252.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-04T06:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6180",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49347",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6180#issuecomment-49252",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

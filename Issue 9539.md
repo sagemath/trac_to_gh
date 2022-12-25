@@ -6,15 +6,14 @@ archive/issues_009539.json:
     "body": "Assignee: @aghitza\n\nCC:  @burcin\n\nOn a MacBook Pro with 2Go (Mac OS X 10.4.11), filling the memory terminates with a seg fault:\n\ncode used:\n\n```\nfrom sage.all import LaurentSeriesRing, GF, timeit\nR = LaurentSeriesRing(GF(9001), 'x')\nf = R([1, 1])\nfor i in range(27):\n    timeit('g = f*f', number=1, repeat=1) ; f = f*f\n```\n\n\noutput is:\n\n```\n1 loops, best of 1: 16.5 s per loop\n1 loops, best of 1: 28.4 s per loop\n1 loops, best of 1: 88.6 s per loop\npython(6488) malloc: *** vm_allocate(size=2147614720) failed (error code=3)\npython(6488) malloc: *** error: can't allocate region\npython(6488) malloc: *** set a breakpoint in szone_error to debug\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in Sage.\nThis probably occured because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9539\n\n",
     "created_at": "2010-07-18T15:55:11Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "segfault after memory exhausted using GF(9001)((x))",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9539",
-    "user": "fchyzak"
+    "user": "https://trac.sagemath.org/admin/accounts/users/fchyzak"
 }
 ```
 Assignee: @aghitza
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9539
 
 ---
 
-archive/issue_comments_091927.json:
+archive/issue_comments_091773.json:
 ```json
 {
     "body": "Changing assignee from @aghitza to @rlmill.",
     "created_at": "2010-09-08T11:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9539",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9539#issuecomment-91927",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9539#issuecomment-91773",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -82,15 +81,15 @@ Changing assignee from @aghitza to @rlmill.
 
 ---
 
-archive/issue_comments_091928.json:
+archive/issue_comments_091774.json:
 ```json
 {
     "body": "Changing component from basic arithmetic to memleak.",
     "created_at": "2010-09-08T11:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9539",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9539#issuecomment-91928",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9539#issuecomment-91774",
+    "user": "https://github.com/burcin"
 }
 ```
 

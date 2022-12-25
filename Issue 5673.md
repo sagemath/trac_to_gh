@@ -6,15 +6,14 @@ archive/issues_005673.json:
     "body": "Assignee: @williamstein\n\nCC:  @categorie\n\nKeywords: elliptic curve twist\n\nThe patch does the following related things:\n\n1. Implements in ell_generic functions is_quadratic_twist(), is_quartic_twist(), is_sextic_twist(), which detect twists between curves (returning the appropriate twisting paramenter)\n2. Deprecates the EllipticCurve(j) constructor, replacing it with EllipticCurve_from_j(j).  Over Q this gives the minimal twist, i.e. a curve with the correct j and minimal conductor.\n3. Rewrites the function minimal_quadratic_twist() introduced in #4667 to use the previous function, with extra work in case j=0, 1728 since we need the minimal __quadratic__ twist, not the minimal twist.\n\nThere is likely to be a necessary change to documentation (pages 38 and 39 of the tutorial) which have not yet been made.\n\nThe patch is based on 3.4.1.alpha0 + patches at #4667.\nI have tested all files in sage/schemes/elliptic_curves.  There are two failures in sha_tate which I do not understand, so I am posting the patch anyway.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5673\n\n",
     "created_at": "2009-04-03T11:07:49Z",
     "labels": [
-        "number theory",
-        "minor",
-        "enhancement"
+        "component: number theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] Enhanced handling of elliptic curve twists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5673",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @williamstein
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5673
 
 ---
 
-archive/issue_comments_044375.json:
+archive/issue_comments_044290.json:
 ```json
 {
     "body": "Attachment [twist.patch](tarball://root/attachments/some-uuid/ticket5673/twist.patch) by @JohnCremona created at 2009-04-03 11:08:27\n\napply to 3.4.1.alpha0 + #4667 patches",
     "created_at": "2009-04-03T11:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44375",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44290",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -63,15 +62,15 @@ apply to 3.4.1.alpha0 + #4667 patches
 
 ---
 
-archive/issue_comments_044376.json:
+archive/issue_comments_044291.json:
 ```json
 {
     "body": "Attachment [5673-j-keyword.patch](tarball://root/attachments/some-uuid/ticket5673/5673-j-keyword.patch) by @robertwb created at 2009-04-03 22:48:37\n\napply after last patch",
     "created_at": "2009-04-03T22:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44376",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44291",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -83,15 +82,15 @@ apply after last patch
 
 ---
 
-archive/issue_comments_044377.json:
+archive/issue_comments_044292.json:
 ```json
 {
     "body": "Attachment [5673-j-keyword.2.patch](tarball://root/attachments/some-uuid/ticket5673/5673-j-keyword.2.patch) by @JohnCremona created at 2009-04-06 10:41:30\n\nreplaces previous (fixes typo)",
     "created_at": "2009-04-06T10:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44377",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44292",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -103,15 +102,15 @@ replaces previous (fixes typo)
 
 ---
 
-archive/issue_comments_044378.json:
+archive/issue_comments_044293.json:
 ```json
 {
     "body": "robertwb,  Thanks for your patch (which needs a typo fixing: change 3 to 2 in line 113 or the test does not pass! -- I have attached a fixed patch).  I am happy to give your patch a positive review, but did you review mine?",
     "created_at": "2009-04-06T10:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44378",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44293",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -121,15 +120,15 @@ robertwb,  Thanks for your patch (which needs a typo fixing: change 3 to 2 in li
 
 ---
 
-archive/issue_comments_044379.json:
+archive/issue_comments_044294.json:
 ```json
 {
     "body": "It looks good (and works) for me.",
     "created_at": "2009-04-12T09:44:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44379",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44294",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -139,15 +138,15 @@ It looks good (and works) for me.
 
 ---
 
-archive/issue_comments_044380.json:
+archive/issue_comments_044295.json:
 ```json
 {
     "body": "The only suggestion I have is that it might be better to return `False` rather than `0` for non-twists.",
     "created_at": "2009-04-12T09:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44380",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44295",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -157,15 +156,15 @@ The only suggestion I have is that it might be better to return `False` rather t
 
 ---
 
-archive/issue_comments_044381.json:
+archive/issue_comments_044296.json:
 ```json
 {
     "body": "Replying to [comment:3 robertwb]:\n> The only suggestion I have is that it might be better to return `False` rather than `0` for non-twists. \n\nI did that since I wanted the return type to be the same whatever.  But that stopped me doing the right thing in char. 2 when twists are additive (so a twist parameter of 0 means isomorphic).\n\nIt's the usual thing:  ideally I would want to return either (True, param) or False, but that is not allowed in Sage.  We could go for a more complicated function which by default just returns True/False, or if an optional parameter \"return_parameter\" is set to True returns a tuple either (True, param) or (False,).\n\nOne advantage of the current setup is that if you do not need the parameter you can use the output as if it were a bool with 0 converting to False.  I think.",
     "created_at": "2009-04-12T09:55:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44381",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44296",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -182,15 +181,15 @@ One advantage of the current setup is that if you do not need the parameter you 
 
 ---
 
-archive/issue_comments_044382.json:
+archive/issue_comments_044297.json:
 ```json
 {
     "body": "Replying to [comment:4 cremona]:\n> \n> I did that since I wanted the return type to be the same whatever.  But that stopped me doing the right thing in char. 2 when twists are additive (so a twist parameter of 0 means isomorphic).\n> \n> It's the usual thing:  ideally I would want to return either (True, param) or False, but that is not allowed in Sage.  We could go for a more complicated function which by default just returns True/False, or if an optional parameter \"return_parameter\" is set to True returns a tuple either (True, param) or (False,).\n\nOne could do this, but then it gets really messy to use. \n \n> One advantage of the current setup is that if you do not need the parameter you can use the output as if it were a bool with 0 converting to False.  I think.\n\nYes, that will work. Actually, I think the most Pythonic thing to do here would perhaps be to return None, but I think the current behavior is fine as well.",
     "created_at": "2009-04-12T10:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44382",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44297",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -210,15 +209,15 @@ Yes, that will work. Actually, I think the most Pythonic thing to do here would 
 
 ---
 
-archive/issue_comments_044383.json:
+archive/issue_comments_044298.json:
 ```json
 {
     "body": "Unfortunately there are a few doctest failures in \n\n```\nsage -t -long devel/sage/doc/en/bordeaux_2008/elliptic_curves.rst # 1 doctests failed\nsage -t -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py # 2 doctests failed\nsage -t -long devel/sage/doc/en/tutorial/tour_advanced.rst # 2 doctests failed\nsage -t -long devel/sage/doc/fr/tutorial/tour_advanced.rst # 2 doctests failed\n```\n\nOne issue here is certainly that **make check** does not doctest the ReST documentation - see #5702 for the ticket for that problem which I intend to fix before 3.4.1 is done. \n\nTo test **everything** run \n\n```\nsage -tp 1 devel/sage\n```\n\nwhich is what I use :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-13T07:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44383",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44298",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -249,15 +248,15 @@ Michael
 
 ---
 
-archive/issue_comments_044384.json:
+archive/issue_comments_044299.json:
 ```json
 {
     "body": "I am about to start fixing the rst failures which should not take long.\n\nNB the sha_tate failures were there when I posted this, and (via a message to sage-nt) I had hoped that Chris Wuthrich might have helped track that down.  I'll have a go myself now anyway.",
     "created_at": "2009-04-13T16:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44384",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44299",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -269,15 +268,15 @@ NB the sha_tate failures were there when I posted this, and (via a message to sa
 
 ---
 
-archive/issue_comments_044385.json:
+archive/issue_comments_044300.json:
 ```json
 {
     "body": "Apply after previous:  fixes rst doc failures in tutorial etc.",
     "created_at": "2009-04-13T17:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44385",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44300",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -287,15 +286,15 @@ Apply after previous:  fixes rst doc failures in tutorial etc.
 
 ---
 
-archive/issue_comments_044386.json:
+archive/issue_comments_044301.json:
 ```json
 {
     "body": "Attachment [trac_5763_rst.patch](tarball://root/attachments/some-uuid/ticket5673/trac_5763_rst.patch) by @JohnCremona created at 2009-04-13 17:20:05\n\nPatch trac_5763_rst.patch fixes the rst failures.  Now for sha_tate....",
     "created_at": "2009-04-13T17:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44386",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44301",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -307,15 +306,15 @@ Patch trac_5763_rst.patch fixes the rst failures.  Now for sha_tate....
 
 ---
 
-archive/issue_comments_044387.json:
+archive/issue_comments_044302.json:
 ```json
 {
     "body": "Apply after previous (fixes sha_tate doctest failure)",
     "created_at": "2009-04-13T17:59:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44387",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44302",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -325,15 +324,15 @@ Apply after previous (fixes sha_tate doctest failure)
 
 ---
 
-archive/issue_comments_044388.json:
+archive/issue_comments_044303.json:
 ```json
 {
     "body": "Attachment [trac_5673_review.patch](tarball://root/attachments/some-uuid/ticket5673/trac_5673_review.patch) by @JohnCremona created at 2009-04-13 18:01:11\n\nOK, the problem was that Chris's original minimal_quadratic_twist() function gave back the same curve it it already had minimal conductor, while mine did not, since my function takes the curve with smallest label.  But the padic code could not cope with a non-trivial twist of the same conductor!  (The bad example was '300b2' for which \"my\" minimal twist is '300a2' which is its 5-twist.)\n\nSolution:  if the minimal twist has the same conductor,  I just throw it away and use the original curve, as Chris's code used to do.\n\nThe patch trac_5673_review.patch fixes this.\n\nSorry I made two separate patches to fix the failures -- I was not sure I would succeed with both problems.",
     "created_at": "2009-04-13T18:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44388",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44303",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -351,15 +350,15 @@ Sorry I made two separate patches to fix the failures -- I was not sure I would 
 
 ---
 
-archive/issue_comments_044389.json:
+archive/issue_comments_044304.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-04-15T08:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44389",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44304",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -369,15 +368,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_044390.json:
+archive/issue_comments_044305.json:
 ```json
 {
     "body": "Merged \n\n* trac_5673_part_1_twist.patch\n* trac_5673_part_2-j-keyword.2.patch\n* trac_5673_part_3_rst.patch\n* trac_5673_part_4_review.patch\n\nin Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-16T12:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44390",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44305",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -398,15 +397,15 @@ Michael
 
 ---
 
-archive/issue_comments_044391.json:
+archive/issue_comments_044306.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-16T12:06:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5673",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44391",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5673#issuecomment-44306",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

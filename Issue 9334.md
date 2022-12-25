@@ -6,15 +6,14 @@ archive/issues_009334.json:
     "body": "Assignee: @loefflerd\n\nCC:  @mstreng @jdemeyer\n\nKeywords: hilbert symbol\n\nhilbert symbol over number fields\n\nIssue created by migration from https://trac.sagemath.org/ticket/9334\n\n",
     "created_at": "2010-06-25T03:51:53Z",
     "labels": [
-        "number fields",
-        "minor",
-        "enhancement"
+        "component: number fields",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "hilbert symbols!!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9334",
-    "user": "@adeines"
+    "user": "https://github.com/adeines"
 }
 ```
 Assignee: @loefflerd
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9334
 
 ---
 
-archive/issue_comments_088073.json:
+archive/issue_comments_087934.json:
 ```json
 {
     "body": "Here all the functions are better placed.  I still need to fix the code so that generalized_hilbert_symbol(a,b,P) doesn't assume a.valuation(P) and b.valuation(P) are 0 or 1.",
     "created_at": "2010-06-25T06:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88073",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87934",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -51,15 +50,15 @@ Here all the functions are better placed.  I still need to fix the code so that 
 
 ---
 
-archive/issue_comments_088074.json:
+archive/issue_comments_087935.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-06-25T06:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88074",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87935",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_088075.json:
+archive/issue_comments_087936.json:
 ```json
 {
     "body": "I changed the code as Tim (correctly) suggested so as it doesn't assume reduced input.",
     "created_at": "2010-06-25T07:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88075",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87936",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -87,15 +86,15 @@ I changed the code as Tim (correctly) suggested so as it doesn't assume reduced 
 
 ---
 
-archive/issue_comments_088076.json:
+archive/issue_comments_087937.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-25T07:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88076",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87937",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_088077.json:
+archive/issue_comments_087938.json:
 ```json
 {
     "body": "This has better uniformizer code.",
     "created_at": "2010-06-27T21:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88077",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87938",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -123,15 +122,15 @@ This has better uniformizer code.
 
 ---
 
-archive/issue_comments_088078.json:
+archive/issue_comments_087939.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-28T18:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88078",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87939",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -141,15 +140,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_088079.json:
+archive/issue_comments_087940.json:
 ```json
 {
     "body": "This doesn't seem to apply to 4.4.4. Does it require some other patch as a prerequisite? Also, the docstrings don't seem to be correctly ReST formatted (you should always run `sage -docbuild reference html` and check that there are no warnings before submitting a patch).",
     "created_at": "2010-06-28T18:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88079",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87940",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -159,15 +158,15 @@ This doesn't seem to apply to 4.4.4. Does it require some other patch as a prere
 
 ---
 
-archive/issue_comments_088080.json:
+archive/issue_comments_087941.json:
 ```json
 {
     "body": "I see. So it's supposed to be applied on top of the patches at #9317. That's fine, but you should explain this in your trac upload messages. Don't repost random patches from other tickets on this ticket -- that's just unnecessary duplication, and it's confusing for the release maintainer when s/he has to merge stuff later.\n\nAnyway: with the #9317 patches in place these four patches apply fine, and all doctests pass. But they're quite hard to review, since you seem to have added code in one place in the first patch and then removed it and added it again somewhere else in the second. Could I suggest that you use the Mercurial \"qfold\" command to combine the four patches into one single patch? That would make the reviewer's job vastly easier. And don't forget those docstring formatting problems; the two that stand out most at a quick glance are that the LaTeX formulae should be in backticks not dollar signs (``x^2 + 2`` etc), and the LaTeX fraction command is `\\frac` not `\\frak`.",
     "created_at": "2010-06-29T11:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88080",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87941",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -179,15 +178,15 @@ Anyway: with the #9317 patches in place these four patches apply fine, and all d
 
 ---
 
-archive/issue_comments_088081.json:
+archive/issue_comments_087942.json:
 ```json
 {
     "body": "Here is one single patch.  It does not depend on ticket #9317. This should have all the documentation fixed.  Thank you for your patience, I've learned a lot about Mercurial and ReST formatting recently.  \n\nI also applied this on a clean clone of 4.4.2 to check that it would build, all the doctest pass, and the -docbuild looks correct.",
     "created_at": "2010-06-29T22:11:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88081",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87942",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -199,15 +198,15 @@ I also applied this on a clean clone of 4.4.2 to check that it would build, all 
 
 ---
 
-archive/issue_comments_088082.json:
+archive/issue_comments_087943.json:
 ```json
 {
     "body": "Most of this looks fine, and the docstring formatting is much better; but there are some technical issues.\n\n- The code in ` solver_mod_p ` is obviously wrong for n > 1: it calculates the inverse modulo P<sup>n</sup> but then takes the square root of this modulo P. You need some kind of Hensel lifting or suchlike to get an answer that's right modulo P<sup>n</sup>.\n\n- The code in ` uniformizer ` is a mess (e.g. it trivially fails for any non-principal ideal in a number field of degree > 2, because you've assumed ` self.integral_basis()` has length 2). But there's already a method ` sage.rings.number_field.number_field.NumberField_generic.uniformizer ` (taking a prime as an argument). I agree that it is worth having uniformizers accessible via a method of ideals as well, but it should just be a thin wrapper around the existing code.",
     "created_at": "2010-06-30T09:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88082",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87943",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -221,15 +220,15 @@ Most of this looks fine, and the docstring formatting is much better; but there 
 
 ---
 
-archive/issue_comments_088083.json:
+archive/issue_comments_087944.json:
 ```json
 {
     "body": "I generally agree with David's points. This code will be very useful for a topic begin done at SD23 (solving conics over various fields) so I am keen to get this in (suitably modified).\n\nIn generalized_legendre_symbol: (1) test P for primality first, before trying to construct its residue field. (2) instead of K(2).valuation(P) just test that n is odd. (3) don't raise run-time errors, make them ValueErrors?. (4) make the return types consistent: you return either +1 in k or -1 as a python int. I would return a Sage integer in either case. (5) you do not test if P divides self. If so, return 0 (as a Sage integer)>\n\nWhy are generalized_hilbert_symbol and _legendre_symbol in sage/rings/arith.py? I would put them both in number_fields -- where you put the even one in fact.\n\nIn generalized_even_hilbert_symbol you define but do not use iprime, so delete it. And do the simple calculation to get the coefficients of jprime**2 so you don't need to construct the quaternion algebra. (You can leave in a comment about that).\n\n_voight_alg_6_2 has some ^ symbols which should be **. Check for others.\n\nDo what David said about uniformizer -- just call the existing function.\n\nSort out the solve function.",
     "created_at": "2010-07-06T20:06:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88083",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87944",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -251,15 +250,15 @@ Sort out the solve function.
 
 ---
 
-archive/issue_comments_088084.json:
+archive/issue_comments_087945.json:
 ```json
 {
     "body": "Great, I could use this.\n\nWhile you are still at it, I have a small wish list as well. Could you\n\n* Let the generalized even Hilbert symbol accept fractions (as the odd one and the QQ one do)?\n  {{{\nsage: hilbert_symbol(1/3, 1, 2)\n1\nsage: K.<i> = QuadraticField(-1)\nsage: O = K.maximal_order()\nsage: generalized_hilbert_symbol(K(1/2), K(1), 3*O)\n1\nsage: generalized_hilbert_symbol(K(1/3), K(1), (1+i)*O)\nNotImplementedError: inverse_mod is not implemented for non-integral elements\n   }}}\n\n* Also add the Hilbert symbol for infinite places? See e.g.\n  {{{\nsage: hilbert_symbol(-1, -1, -1)\n-1\n   }}}\n   This is almost trivial compared to what you've already done. I have code, contact me if you have questions.\n\n* Correct the doc text. The doc of generalized_even_hilbert_symbol should say that P must divide 2, while generalized_hilbert_symbol should not say that P must be odd",
     "created_at": "2010-07-12T12:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88084",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87945",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -292,15 +291,15 @@ sage: hilbert_symbol(-1, -1, -1)
 
 ---
 
-archive/issue_comments_088085.json:
+archive/issue_comments_087946.json:
 ```json
 {
     "body": "In addition to the first part of my precious comment: generalized_even_hilbert_symbol should accept a and b to both be divisible by p.\n\n```\nsage: hilbert_symbol(2,2,2)\n1\nsage: K.<i>=QuadraticField(-1)\nsage: O=K.maximal_order()\nsage: generalized_hilbert_symbol(3,3,3*O)\n1\nsage: generalized_hilbert_symbol(2,2,2*O)\nValueError: P must be a prime\n```\n",
     "created_at": "2010-07-12T12:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88085",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87946",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -322,15 +321,15 @@ ValueError: P must be a prime
 
 ---
 
-archive/issue_comments_088086.json:
+archive/issue_comments_087947.json:
 ```json
 {
     "body": "Oops, the last two lines of my previous comment should of course read\n\n```\nsage: p = 1+i\nsage: generalized_hilbert_symbol(p,p,p*O)\nRuntimeError: ord_P(a) or ord_P(b) must be zero\n```\n",
     "created_at": "2010-07-12T12:17:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88086",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87947",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -347,33 +346,15 @@ RuntimeError: ord_P(a) or ord_P(b) must be zero
 
 ---
 
-archive/issue_comments_088087.json:
-```json
-{
-    "body": "Changing priority from minor to major.",
-    "created_at": "2010-07-12T14:08:48Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/9334",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88087",
-    "user": "@mstreng"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_088088.json:
+archive/issue_comments_087948.json:
 ```json
 {
     "body": "Alyson, are you intending to fix the various points raised by reviewers here?  If not, someone else should.  Ticket #9320 is waiting on this one.",
     "created_at": "2010-08-11T20:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88088",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87948",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -383,15 +364,15 @@ Alyson, are you intending to fix the various points raised by reviewers here?  I
 
 ---
 
-archive/issue_comments_088089.json:
+archive/issue_comments_087949.json:
 ```json
 {
     "body": "Here are the changes I've made so far: \n1. in generalized_legendred_symbol I test for primality first\n2. instead of K(2).valuation(P) I just test that n is odd\n3. I've changed RunTime Errors to ValueErrors\n4. I return +/- 1 as sage integers\n5. I test if P|self and if so return 0 (as a sage integer)\n6. in generalized_hilbert_symbol I deleted iprime\n7. I did the calculation and have hard coded jprime^2\n8. I've replace ^ with ** where necessary in _voight_alg_6_2\n9. Things should work for fractions\n10. generalized_hilbert_symbol should also accept a,b, divisible by p\n\nOne question I have, does anyone know about hensel lifting in sage?",
     "created_at": "2010-08-11T22:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88089",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87949",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -413,15 +394,15 @@ One question I have, does anyone know about hensel lifting in sage?
 
 ---
 
-archive/issue_comments_088090.json:
+archive/issue_comments_087950.json:
 ```json
 {
     "body": "Excellent -- should it be \"needs review\" again then?\n\nThere must be places in Sage where Hensel lifting is done, but I do not know of any general framework for it.  You could try asking David Roe, who (I think) wrote a lot of the p-adic code.",
     "created_at": "2010-08-12T09:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88090",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87950",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -433,15 +414,15 @@ There must be places in Sage where Hensel lifting is done, but I do not know of 
 
 ---
 
-archive/issue_comments_088091.json:
+archive/issue_comments_087951.json:
 ```json
 {
     "body": "No, it shouldn't be \"needs review\" yet.  I still need to fix solver_mod_p.",
     "created_at": "2010-08-12T17:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88091",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87951",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -451,15 +432,15 @@ No, it shouldn't be "needs review" yet.  I still need to fix solver_mod_p.
 
 ---
 
-archive/issue_comments_088092.json:
+archive/issue_comments_087952.json:
 ```json
 {
     "body": "I have fixed solver_mod so that it computes the square root mod P^n.",
     "created_at": "2010-08-19T18:20:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88092",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87952",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -469,15 +450,15 @@ I have fixed solver_mod so that it computes the square root mod P^n.
 
 ---
 
-archive/issue_comments_088093.json:
+archive/issue_comments_087953.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-08-19T18:20:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88093",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87953",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -487,15 +468,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_088094.json:
+archive/issue_comments_087954.json:
 ```json
 {
     "body": "Fixes/added documentation.  Has the examples above in the documentation.",
     "created_at": "2010-08-19T21:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88094",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87954",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -505,15 +486,15 @@ Fixes/added documentation.  Has the examples above in the documentation.
 
 ---
 
-archive/issue_comments_088095.json:
+archive/issue_comments_087955.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-08-20T00:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88095",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87955",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -523,15 +504,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_088096.json:
+archive/issue_comments_087956.json:
 ```json
 {
     "body": "Based on 4.5.3.alpha1:\n\n\n```\nsage -t  sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"/home/rlmill/sage-4.5.3.alpha1/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 1212:\n    sage: P.uniformizer()\nExpected:\n    a + 4\nGot:\n    -2*a + 1\n**********************************************************************\nFile \"/home/rlmill/sage-4.5.3.alpha1/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 1219:\n    sage: P.uniformizer()\nExpected:\n    -7*a^4 + 13*a^3 - 13*a^2 - 2*a + 50\nGot:\n    a^4 - a^3 + a^2 - a + 1\n**********************************************************************\n```\n",
     "created_at": "2010-08-20T00:36:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88096",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87956",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -562,15 +543,15 @@ Got:
 
 ---
 
-archive/issue_comments_088097.json:
+archive/issue_comments_087957.json:
 ```json
 {
     "body": "Fixes some documentation.",
     "created_at": "2010-08-20T01:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88097",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87957",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -580,15 +561,15 @@ Fixes some documentation.
 
 ---
 
-archive/issue_comments_088098.json:
+archive/issue_comments_087958.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-08-20T01:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88098",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87958",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -598,15 +579,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_088099.json:
+archive/issue_comments_087959.json:
 ```json
 {
     "body": "Attachment [trac_9334-hilbert.patch](tarball://root/attachments/some-uuid/ticket9334/trac_9334-hilbert.patch) by @adeines created at 2010-08-20 01:20:53\n\nOk, I checked at P.uniformizer() is just wrapping K.uniformizer(P).  So assuming K.uniformizer(P) is correct (which it appears to be), I've fixed the documentation for P.uniformizer().",
     "created_at": "2010-08-20T01:20:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88099",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87959",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -618,15 +599,15 @@ Ok, I checked at P.uniformizer() is just wrapping K.uniformizer(P).  So assuming
 
 ---
 
-archive/issue_comments_088100.json:
+archive/issue_comments_087960.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-08-20T12:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88100",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87960",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -636,15 +617,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_088101.json:
+archive/issue_comments_087961.json:
 ```json
 {
     "body": "Here are some comments have already been mentioned above:\n* why aren't generalized_hilbert_symbol and generalized_even_hilbert_symbol in the same file? (e.g. both in number_field as John suggested)\n* the documentation of generalized_hilbert_symbol says that the prime should be odd, which isn't necessary, in fact, it would be good to have an even example in the doctest so this functionality doesn't get broken\n* the documentation of generalized_even_hilbert_symbol doesn't say that the prime must be even, which it should!\n\nAlso, generalized_even_hilbert_symbol is less powerful than the general one:\n\n```\nsage: K.<i> = QuadraticField(-1)                            \nsage: O = K.maximal_order()\nsage: generalized_hilbert_symbol(K(1/3), K(1), (1+i)*O)     \n1\nsage: generalized_even_hilbert_symbol(K(1/3), K(1), (1+i)*O)\n...\nNotImplementedError: inverse_mod is not implemented for non-integral elements\n```\n\nSo I guess the documentation of generalized_even_hilbert_symbol should say that the input should consist of integral elements? Possibly the documentation of generalized_even_hilbert_symbol could say that this is simply an auxiliary function and the user should call generalized_hilbert_symbol instead?\n\nneeds_work because of the documentation issues for generalized_even_hilbert_symbol",
     "created_at": "2010-08-20T12:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88101",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87961",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -673,15 +654,15 @@ needs_work because of the documentation issues for generalized_even_hilbert_symb
 
 ---
 
-archive/issue_comments_088102.json:
+archive/issue_comments_087962.json:
 ```json
 {
     "body": "here's a non-documentation reason for `needs_work`:\n\n```\nsage: K.<i> = QuadraticField(-1)                           \nsage: O = K.maximal_order()\nsage: generalized_hilbert_symbol(K(-1/3), K(-2/3), (1+i)*O)\n...\nValueError: self is not a square root mod P^n\n```\n",
     "created_at": "2010-08-20T13:00:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88102",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87962",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -700,15 +681,15 @@ ValueError: self is not a square root mod P^n
 
 ---
 
-archive/issue_comments_088103.json:
+archive/issue_comments_087963.json:
 ```json
 {
     "body": "And here's another one. In Magma, I get:\n\n```\n> L := QuadraticField(5);\n> O := MaximalOrder(L);    \n> HilbertSymbol(L!-3, L!-2, 2*O);\n1 1/2 + 1/2*i j\n```\n\nIn pari, I get:\n\n```\n? k = nfinit(x^2-5)\n...\n? nfhilbert(k, -3, -2, idealprimedec(k, 2)[1])\n%2 = 1\n```\n\nBut the patch gives:\n\n```\nsage: L.<a> = QuadraticField(5)\nsage: generalized_hilbert_symbol(L(-3), L(-2), 2*O)\n-1\n```\n\nSomething is wrong...",
     "created_at": "2010-08-20T13:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88103",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87963",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -744,15 +725,15 @@ Something is wrong...
 
 ---
 
-archive/issue_comments_088104.json:
+archive/issue_comments_087964.json:
 ```json
 {
     "body": "In fact, what are the reasons for implementing this independently rather than using pari's function?",
     "created_at": "2010-08-20T14:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88104",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87964",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -762,15 +743,15 @@ In fact, what are the reasons for implementing this independently rather than us
 
 ---
 
-archive/issue_comments_088105.json:
+archive/issue_comments_087965.json:
 ```json
 {
     "body": "interface to pari's nfhilbert, apply only this file",
     "created_at": "2010-12-08T09:48:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88105",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87965",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -780,15 +761,15 @@ interface to pari's nfhilbert, apply only this file
 
 ---
 
-archive/issue_comments_088106.json:
+archive/issue_comments_087966.json:
 ```json
 {
     "body": "Attachment [trac_9334_nfhilbert.patch](tarball://root/attachments/some-uuid/ticket9334/trac_9334_nfhilbert.patch) by @mstreng created at 2010-12-08 09:57:51\n\nAll that needed to be done was wrap pari's nfhilbert function and copy Aly's doctests, but...\n\nOne of those doctests revealed yet another bug introduced by the pari upgrade. See [http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1147](http://pari.math.u-bordeaux.fr/cgi-bin/bugreport.cgi?bug=1147)\n\nApply trac_9334_nfhilbert.patch once pari bug 1147 is fixed and that fix reaches Sage.\n\nPossible future improvements:\n\n* implement also for relative number fields by simply delegating to the absolute case\n\n* implement also for QQ by wrapping the global function hilbert_symbol as a member of QQ",
     "created_at": "2010-12-08T09:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88106",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87966",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -810,15 +791,15 @@ Possible future improvements:
 
 ---
 
-archive/issue_comments_088107.json:
+archive/issue_comments_087967.json:
 ```json
 {
     "body": "The pari bug resulting in incorrect outputs of nfhilbert was fixed in Pari svn revision 13063 2011-04-05 14:03:38 +0100 (Tue, 05 Apr 2011).\n\nHow do we get this fix into Sage?",
     "created_at": "2011-04-05T14:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88107",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87967",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -830,15 +811,15 @@ How do we get this fix into Sage?
 
 ---
 
-archive/issue_comments_088108.json:
+archive/issue_comments_087968.json:
 ```json
 {
     "body": "Replying to [comment:29 mstreng]:\n> The pari bug resulting in incorrect outputs of nfhilbert was fixed in Pari svn revision 13063 2011-04-05 14:03:38 +0100 (Tue, 05 Apr 2011).\n> \n> How do we get this fix into Sage?\n\nI am currently maintaining the PARI spkg for Sage, so asking me is the best way.",
     "created_at": "2011-04-05T14:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88108",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87968",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -853,15 +834,15 @@ I am currently maintaining the PARI spkg for Sage, so asking me is the best way.
 
 ---
 
-archive/issue_comments_088109.json:
+archive/issue_comments_087969.json:
 ```json
 {
     "body": "See #11130.",
     "created_at": "2011-04-05T15:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88109",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87969",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -871,15 +852,15 @@ See #11130.
 
 ---
 
-archive/issue_comments_088110.json:
+archive/issue_comments_087970.json:
 ```json
 {
     "body": "apply trac_9334_nfhilbert.patch",
     "created_at": "2011-09-27T10:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88110",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87970",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -889,15 +870,15 @@ apply trac_9334_nfhilbert.patch
 
 ---
 
-archive/issue_comments_088111.json:
+archive/issue_comments_087971.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-09-27T10:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88111",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87971",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -907,15 +888,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_088112.json:
+archive/issue_comments_087972.json:
 ```json
 {
     "body": "Patch applies fine to 4.7.2.alpha2 + #11130;  testing now.  Meanwhile, just a small point -- in the docstring it says that P must be a prime ideal of self, but it can also be (1) an element of self which generates a prime ideal, or (2) a real or complex place of self.  This is well illustrated in the examples, but it should also be stated in the INPUT block.\n\nAny chance you could change the docstring while I am doing the testing?",
     "created_at": "2011-09-27T10:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88112",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87972",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -927,15 +908,15 @@ Any chance you could change the docstring while I am doing the testing?
 
 ---
 
-archive/issue_comments_088113.json:
+archive/issue_comments_087973.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-09-27T10:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88113",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87973",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -945,15 +926,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_088114.json:
+archive/issue_comments_087974.json:
 ```json
 {
     "body": "Some doctests disagree with Magma, so I hope they will fail!",
     "created_at": "2011-09-27T10:48:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88114",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87974",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -963,15 +944,15 @@ Some doctests disagree with Magma, so I hope they will fail!
 
 ---
 
-archive/issue_comments_088115.json:
+archive/issue_comments_087975.json:
 ```json
 {
     "body": "According to Magma V2.17-9, the following changes make the doctests correct:\n\nreplace\n\n```\nsage: K.hilbert_symbol(p,p,p*O)  \n-1\n```\n\nby\n\n```\nsage: K.hilbert_symbol(p,p,p)  \n1\nsage: K.hilbert_symbol(p,3*p,p)\n-1\nsage: K.hilbert_symbol(3,p,p)\n-1\n```\n\n\nremove duplicate\n\n```\nsage: K.hilbert_symbol(a,b,P)\n-1\n```\n\nand for the remaining one, replace -1 by 1\n\nreplace -1 by 1 in\n\n```\nsage: K.hilbert_symbol(a, 2, P)  \n-1  \n```\n\n\nThen the \"various other examples\" contain a lot of uninteresting 1s, of which we can remove a few.",
     "created_at": "2011-09-27T10:56:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88115",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87975",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1019,15 +1000,15 @@ Then the "various other examples" contain a lot of uninteresting 1s, of which we
 
 ---
 
-archive/issue_comments_088116.json:
+archive/issue_comments_087976.json:
 ```json
 {
     "body": "Testing on 4.7.2.alpha2+#11130 I get these failures:\n\n```\nsage -t -long \"devel/sage-main/sage/rings/number_field/number_field.py\"\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6737:\n    sage: K.hilbert_symbol(p,p,p*O)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6763:\n    sage: K.hilbert_symbol(a,b,P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6770:\n    sage: K.hilbert_symbol(a, b, P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\nFile \"/home/jec/sage-4.7.2.alpha2.11130/devel/sage-main/sage/rings/number_field/number_field.py\", line 6772:\n    sage: K.hilbert_symbol(a, 2, P)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n```\n",
     "created_at": "2011-09-27T11:55:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88116",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87976",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1071,15 +1052,15 @@ Got:
 
 ---
 
-archive/issue_comments_088117.json:
+archive/issue_comments_087977.json:
 ```json
 {
     "body": "This looks bad:\n\n```\nsage: K.<t> = NumberField(x^3 - x + 1)\nsage: K.pari_nf().nfhilbert(t,t+1)\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n\n/usr/local/src/sage-4.7.2.alpha2/<ipython console> in <module>()\n\n/usr/local/src/sage-4.7.2.alpha2/local/lib/python2.6/site-packages/sage/libs/pari/gen.so in sage.libs.pari.gen.gen.nfhilbert (sage/libs/pari/gen.c:29966)()\n\nRuntimeError: Segmentation fault\n```\n\n\nI can't immediately figure out the cause, it is probably a bug somewhere in PARI or the Sage-PARI interface,",
     "created_at": "2011-09-27T12:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88117",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87977",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1105,15 +1086,15 @@ I can't immediately figure out the cause, it is probably a bug somewhere in PARI
 
 ---
 
-archive/issue_comments_088118.json:
+archive/issue_comments_087978.json:
 ```json
 {
     "body": "The Segmentation Fault is probably #11854.",
     "created_at": "2011-09-27T12:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88118",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87978",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1123,15 +1104,15 @@ The Segmentation Fault is probably #11854.
 
 ---
 
-archive/issue_comments_088119.json:
+archive/issue_comments_087979.json:
 ```json
 {
     "body": "Replying to [comment:38 jdemeyer]:\n> This looks bad:\n\nThis is about global Hilbert symbols, while all the doctests are about local ones. Thanks for noticing.\n\nDo you want to close this ticket at the same time as #11130? If not, then I'll wait until I can download a version with #11130 included, and then try to fix the problems here.",
     "created_at": "2011-09-27T15:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88119",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87979",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1146,15 +1127,15 @@ Do you want to close this ticket at the same time as #11130? If not, then I'll w
 
 ---
 
-archive/issue_comments_088120.json:
+archive/issue_comments_087980.json:
 ```json
 {
     "body": "Replying to [comment:40 mstreng]:\n> Do you want to close this ticket at the same time as #11130?\nI don't think there is any reason to do so.  I will leave it up to you to decide what to do.  For now, I will continue investigating the Segmentation Fault issue.",
     "created_at": "2011-09-27T16:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88120",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87980",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1166,15 +1147,15 @@ I don't think there is any reason to do so.  I will leave it up to you to decide
 
 ---
 
-archive/issue_comments_088121.json:
+archive/issue_comments_087981.json:
 ```json
 {
     "body": "Unfortunately, #11854 does *not* fix the Segmentation Fault.",
     "created_at": "2011-09-28T07:20:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88121",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87981",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1184,15 +1165,15 @@ Unfortunately, #11854 does *not* fix the Segmentation Fault.
 
 ---
 
-archive/issue_comments_088122.json:
+archive/issue_comments_087982.json:
 ```json
 {
     "body": "The Segmentation Fault actually shows a major design problem with the Sage->PARI interface (essentially, the `t0GEN` system is broken by design).\n\nAs for this ticket, as far as I'm concerned you may ignore this.  It has essentially nothing to do with this ticket and (hopefully) it can only be reproduced by *directly* calling PARI (i.e. doing `K.pari_nf().nfhilbert(t,t+1)` instead of `K.hilbert_symbol(t,t+1)`.)",
     "created_at": "2011-09-28T08:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88122",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87982",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1204,15 +1185,15 @@ As for this ticket, as far as I'm concerned you may ignore this.  It has essenti
 
 ---
 
-archive/issue_comments_088123.json:
+archive/issue_comments_087983.json:
 ```json
 {
     "body": "Replying to [comment:43 jdemeyer]:\n> The Segmentation Fault actually shows a major design problem with the Sage->PARI interface (essentially, the `t0GEN` system is broken by design).\n> \n\nSo there should be a new ticket made which explains this major design problem, so that it is on our todo-list at least.",
     "created_at": "2011-09-28T09:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88123",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87983",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1226,15 +1207,15 @@ So there should be a new ticket made which explains this major design problem, s
 
 ---
 
-archive/issue_comments_088124.json:
+archive/issue_comments_087984.json:
 ```json
 {
     "body": "Replying to [comment:44 cremona]:\n> So there should be a new ticket made which explains this major design problem, so that it is on our todo-list at least.\nSee #11868.",
     "created_at": "2011-09-29T08:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88124",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87984",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1246,15 +1227,15 @@ See #11868.
 
 ---
 
-archive/issue_comments_088125.json:
+archive/issue_comments_087985.json:
 ```json
 {
     "body": "I presume you didn't mean to apply two copies of the same patch! Is this ready for review again now?",
     "created_at": "2011-09-29T09:53:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88125",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87985",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -1264,15 +1245,15 @@ I presume you didn't mean to apply two copies of the same patch! Is this ready f
 
 ---
 
-archive/issue_comments_088126.json:
+archive/issue_comments_087986.json:
 ```json
 {
     "body": "I'm going to make some further changes.",
     "created_at": "2011-09-29T10:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88126",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87986",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1282,15 +1263,15 @@ I'm going to make some further changes.
 
 ---
 
-archive/issue_comments_088127.json:
+archive/issue_comments_087987.json:
 ```json
 {
     "body": "Replying to [comment:48 davidloeffler]:\n> Is this ready for review again now?\n\nThere is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\n\nAlso, what is the output type now? In my patch, I converted it to Integer. Jeroen removed that conversion, but what does cdef long give us?\n\nFinally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?",
     "created_at": "2011-09-29T10:12:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88127",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87987",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1307,15 +1288,15 @@ Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefull
 
 ---
 
-archive/issue_comments_088128.json:
+archive/issue_comments_087988.json:
 ```json
 {
     "body": "Replying to [comment:50 mstreng]:\n> Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?\n\nWow, even Sage doesn't check this:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a> = NumberField(x^3+x+1)\nsage: L.<b> = NumberField(x^3+2*x+2)\nsage: K(b)\na\n```\n\nso my `self(a)` was pretty useless and we may want to do this:\n\n```\nif not (a in self and b in self):\n    raise ValueError, ...\n```\n",
     "created_at": "2011-09-29T10:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88128",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87988",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1345,15 +1326,15 @@ if not (a in self and b in self):
 
 ---
 
-archive/issue_comments_088129.json:
+archive/issue_comments_087989.json:
 ```json
 {
     "body": "Attachment [9334_review_jdemeyer.patch](tarball://root/attachments/some-uuid/ticket9334/9334_review_jdemeyer.patch) by @jdemeyer created at 2011-09-29 10:24:54",
     "created_at": "2011-09-29T10:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88129",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87989",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1363,15 +1344,15 @@ Attachment [9334_review_jdemeyer.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_088130.json:
+archive/issue_comments_087990.json:
 ```json
 {
     "body": "Replying to [comment:50 mstreng]:\n> There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\nPlease do it!\n\n> Also, what is the output type now? In my patch, I converted it to Integer. Jeroen removed that conversion, but what does cdef long give us?\nIt will be Python `int`.  I see no reason to return a Sage Integer.\n\n> Finally, in my patch, I had self(a), but Jeroen turned this into a. How carefully does Pari check whether stuff is in the right field?\nI only *moved* ``a = self(a)`` up in the code.",
     "created_at": "2011-09-29T10:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88130",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87990",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1389,15 +1370,15 @@ I only *moved* ``a = self(a)`` up in the code.
 
 ---
 
-archive/issue_comments_088131.json:
+archive/issue_comments_087991.json:
 ```json
 {
     "body": "Replying to [comment:51 mstreng]:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: K.<a> = NumberField(x^3+x+1)\nsage: L.<b> = NumberField(x^3+2*x+2)\nsage: K(b)\na\n```\n\n| Sage Version 4.7.1, Release Date: 2011-08-11                       |\n| Type notebook() for the GUI, and license() for information.        |\nI think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.",
     "created_at": "2011-09-29T10:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88131",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87991",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1420,15 +1401,15 @@ I think this is a horrible bug. There is no embedding from L to K!  A very gener
 
 ---
 
-archive/issue_comments_088132.json:
+archive/issue_comments_087992.json:
 ```json
 {
     "body": "Replying to [comment:53 cremona]:\n> Replying to [comment:51 mstreng]:\n> {{{\n> ----------------------------------------------------------------------\n> | Sage Version 4.7.1, Release Date: 2011-08-11                       |\n> | Type notebook() for the GUI, and license() for information.        |\n> ----------------------------------------------------------------------\n> sage: K.<a> = NumberField(x^3+x+1)\n> sage: L.<b> = NumberField(x^3+2*x+2)\n> sage: K(b)\n> a\n> }}}\n> \n> I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n> \n\nI agree -- that's horrible! It's not so generic actually: the offending code is the  method `NumberField_absolute._coerce_from_other_number_field` which just converts to a polynomial and back: \n\n```\nf = self.polynomial_ring()(x.polynomial())\nreturn self._element_class(self, f)\n```\n\n\nThis is mathematically meaningless unless either the other field is isomorphic to self, or x is actually in Q. I suggest we raise this on sage-nt, and maybe open a ticket to fix it ASAP.",
     "created_at": "2011-09-29T10:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88132",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87992",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -1462,15 +1443,15 @@ This is mathematically meaningless unless either the other field is isomorphic t
 
 ---
 
-archive/issue_comments_088133.json:
+archive/issue_comments_087993.json:
 ```json
 {
     "body": "Replying to [comment:52 jdemeyer]:\n> It will be Python `int`.  I see no reason to return a Sage Integer.\n\nPython ints are fine with me, I was afraid it would be a pari object. I would have liked some uniformity, but that's missing already.\n\n```\nsage: type(legendre_symbol(3,5))\n<type 'int'>\nsage: type(hilbert_symbol(3,5,7))\n<type 'sage.rings.integer.Integer'>\nsage: type(jacobi_symbol(3,5))\n<type 'sage.rings.integer.Integer'>\n```\n\nI want all symbols to behave nicely with division by Sage integers, but that's fine with `int`\n\n```\nsage: int(1)/ZZ(2)\n1/2\n```\n",
     "created_at": "2011-09-29T10:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88133",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87993",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1500,15 +1481,15 @@ sage: int(1)/ZZ(2)
 
 ---
 
-archive/issue_comments_088134.json:
+archive/issue_comments_087994.json:
 ```json
 {
     "body": "Replying to [comment:53 cremona]:\n> I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n\nIs there a ticket for this yet?",
     "created_at": "2011-09-29T10:49:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88134",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87994",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1521,15 +1502,15 @@ Is there a ticket for this yet?
 
 ---
 
-archive/issue_comments_088135.json:
+archive/issue_comments_087995.json:
 ```json
 {
     "body": "Sage-nt thread here: http://groups.google.com/group/sage-nt/browse_thread/thread/9108218411e7f0a6",
     "created_at": "2011-09-29T10:57:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88135",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87995",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -1539,15 +1520,15 @@ Sage-nt thread here: http://groups.google.com/group/sage-nt/browse_thread/thread
 
 ---
 
-archive/issue_comments_088136.json:
+archive/issue_comments_087996.json:
 ```json
 {
     "body": "Replying to [comment:56 mstreng]:\n> Replying to [comment:53 cremona]:\n> > I think this is a horrible bug. There is no embedding from L to K!  A very generic `__call__` method is used, and is definitely not doing the right thing here.\n> \n> Is there a ticket for this yet? \n\nJust made one: #11869.",
     "created_at": "2011-09-29T12:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88136",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87996",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1563,15 +1544,15 @@ Just made one: #11869.
 
 ---
 
-archive/issue_comments_088137.json:
+archive/issue_comments_087997.json:
 ```json
 {
     "body": "Replying to [comment:52 jdemeyer]:\n> Replying to [comment:50 mstreng]:\n> > There is still a duplicate example, and a lot of examples that return 1 now that they are corrected. I think we should remove some of these, and add some -1's such as the ones in my comment 2 days ago.\n> Please do it!\n\nI could, but I wouldn't be able to test it, and it may need to be rebased afterwards: I failed to install #11130.",
     "created_at": "2011-09-29T21:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88137",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87997",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1586,15 +1567,15 @@ I could, but I wouldn't be able to test it, and it may need to be rebased afterw
 
 ---
 
-archive/issue_comments_088138.json:
+archive/issue_comments_087998.json:
 ```json
 {
     "body": "Positive review for the reviewer patch. I noticed that it included extra -1 examples and removed the duplicate example, and I did not find removing examples worth the trouble.\n\nI also managed to build #11130 and found that all tests pass. I'm assuming Jeroen gives a positive review to what he didn't change, and that his reviewer patch was ready for review, so I'm setting the whole ticket to positive review.",
     "created_at": "2011-09-30T19:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88138",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87998",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1606,15 +1587,15 @@ I also managed to build #11130 and found that all tests pass. I'm assuming Jeroe
 
 ---
 
-archive/issue_comments_088139.json:
+archive/issue_comments_087999.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2011-09-30T19:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88139",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-87999",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -1624,15 +1605,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_088140.json:
+archive/issue_comments_088000.json:
 ```json
 {
     "body": "Milestone sage-4.7.3 deleted",
     "created_at": "2011-11-03T16:14:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88140",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88000",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1642,15 +1623,15 @@ Milestone sage-4.7.3 deleted
 
 ---
 
-archive/issue_comments_088141.json:
+archive/issue_comments_088001.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-11-07T10:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9334",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88141",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9334#issuecomment-88001",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

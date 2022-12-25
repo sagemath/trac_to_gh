@@ -6,15 +6,14 @@ archive/issues_007444.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein @TimDumol\n\nFrom Tim Dumol (also [comment:6:ticket:7343 here]):\n\nCreating and publishing a worksheet, and then searching for it on the /pub/ page causes an HTTP 500. Server logs show:\n\n\n```\n[...]\nFile \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1652, in render\n            s = render_worksheet_list(ctx.args, pub=True, username=self.username)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/twist.py\", line 1483, in render_worksheet_list\n            search=search, reverse=reverse)\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/notebook.py\", line 1292, in worksheet_list_for_public\n            W = [x for x in W if x.satisfies_search(search)]\n          File \"/opt/sage-bin/local/lib/python2.6/site-packages/sagenb/notebook/worksheet.py\", line 1977, in satisfies_search\n            + open(filename).read().lower())\nexceptions.IOError: [Errno 2] No such file or directory: '/home/timdumol/.sage/sage_notebook.sagenb/home/pub/0/worksheet.html'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7444\n\n",
     "created_at": "2009-11-12T14:02:43Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Broken: searching published worksheets after publishing a worksheet for the first time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7444",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: boothby
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7444
 
 ---
 
-archive/issue_comments_062671.json:
+archive/issue_comments_062556.json:
 ```json
 {
     "body": "Save a newly initialized worksheet.  Apply to sagenb repo.",
     "created_at": "2009-11-12T14:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62671",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62556",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -66,15 +65,15 @@ Save a newly initialized worksheet.  Apply to sagenb repo.
 
 ---
 
-archive/issue_comments_062672.json:
+archive/issue_comments_062557.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-12T14:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62672",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62557",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -84,15 +83,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062673.json:
+archive/issue_comments_062558.json:
 ```json
 {
     "body": "Attachment [trac_7444-search_after_publish.patch](tarball://root/attachments/some-uuid/ticket7444/trac_7444-search_after_publish.patch) by @qed777 created at 2009-11-12 14:33:03\n\nNotes:\n\n* This depends on #7428.\n* I assume it's OK to call `worksheet.save` in `notebook._initialize_worksheet`.\n* `TestWorksheetList.test_searching_for_worksheets` no longer fails --- it now yields an error.",
     "created_at": "2009-11-12T14:33:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62673",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62558",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -108,15 +107,15 @@ Notes:
 
 ---
 
-archive/issue_comments_062674.json:
+archive/issue_comments_062559.json:
 ```json
 {
     "body": "Patch works. Positive review.\n\nThe error is due to the lack of the javascript libraries on the Log page. This is now #7455.",
     "created_at": "2009-11-13T20:28:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62674",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62559",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -128,15 +127,15 @@ The error is due to the lack of the javascript libraries on the Log page. This i
 
 ---
 
-archive/issue_comments_062675.json:
+archive/issue_comments_062560.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-13T20:28:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62675",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62560",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -146,15 +145,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062676.json:
+archive/issue_comments_062561.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-08T05:56:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7444",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62676",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7444#issuecomment-62561",
+    "user": "https://github.com/williamstein"
 }
 ```
 

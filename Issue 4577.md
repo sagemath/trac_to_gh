@@ -6,15 +6,14 @@ archive/issues_004577.json:
     "body": "Assignee: whuss\n\nThis patch adds a function `find_fit()`, which works similarly to Mathematica's `FindFit[]`.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4577\n\n",
     "created_at": "2008-11-21T15:06:00Z",
     "labels": [
-        "numerical",
-        "major",
+        "component: numerical",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] simple interface to scipy.optimize.leastsq",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4577",
-    "user": "whuss"
+    "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
 Assignee: whuss
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4577
 
 ---
 
-archive/issue_comments_034319.json:
+archive/issue_comments_034252.json:
 ```json
 {
     "body": "Attachment [trac_4577.patch](tarball://root/attachments/some-uuid/ticket4577/trac_4577.patch) by cwitty created at 2008-11-23 01:13:00",
     "created_at": "2008-11-23T01:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4577#issuecomment-34319",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/4577#issuecomment-34252",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_4577.patch](tarball://root/attachments/some-uuid/ticket4577/tra
 
 ---
 
-archive/issue_comments_034320.json:
+archive/issue_comments_034253.json:
 ```json
 {
     "body": "Attachment [trac_4577_reviewer.patch](tarball://root/attachments/some-uuid/ticket4577/trac_4577_reviewer.patch) by cwitty created at 2008-11-23 01:13:51\n\nCode looks reasonable, passes doctests.\n\nApply both patches.",
     "created_at": "2008-11-23T01:13:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4577#issuecomment-34320",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/4577#issuecomment-34253",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -71,15 +70,15 @@ Apply both patches.
 
 ---
 
-archive/issue_comments_034321.json:
+archive/issue_comments_034254.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-23T09:46:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4577#issuecomment-34321",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4577#issuecomment-34254",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_034322.json:
+archive/issue_comments_034255.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.2.1.alpha0",
     "created_at": "2008-11-23T09:46:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4577#issuecomment-34322",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4577#issuecomment-34255",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

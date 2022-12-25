@@ -6,15 +6,14 @@ archive/issues_009840.json:
     "body": "Assignee: mhampton\n\nCC:  @novoselt @vbraun mvngu @haraldschilly @mwhansen @jdemeyer\n\nKeywords: polyhedra, qhull, convex, Delaunay, Voronoi\n\nFrom the README.txt of Qhull:\n\nQhull computes convex hulls, Delaunay triangulations, Voronoi diagrams,\nfurthest-site Voronoi diagrams, and halfspace intersections about a point.\nIt runs in 2-d, 3-d, 4-d, or higher.  It implements the Quickhull algorithm\nfor computing convex hulls.   Qhull handles round-off errors from floating\npoint arithmetic.  It can approximate a convex hull.\n\nThe program includes options for hull volume, facet area, partial hulls,\ninput transformations, randomization, tracing, multiple output formats, and\nexecution statistics.\n\nFirst attempt at a spkg is at:\n\n[http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg](http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9841\n\n",
     "created_at": "2010-08-30T16:52:38Z",
     "labels": [
-        "geometry",
-        "minor",
-        "enhancement"
+        "component: geometry",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Make Qhull an optional package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9840",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: mhampton
@@ -47,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9841
 
 ---
 
-archive/issue_comments_097123.json:
+archive/issue_comments_096964.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-30T17:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97123",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-96964",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_097124.json:
+archive/issue_comments_096965.json:
 ```json
 {
     "body": "This doesn't require much review - can someone take a look?\nAll this spkg does is install qhull.  I have tested on OS X 10.6 and 10.5 and linux.",
     "created_at": "2010-10-20T01:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97124",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-96965",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -84,15 +83,15 @@ All this spkg does is install qhull.  I have tested on OS X 10.6 and 10.5 and li
 
 ---
 
-archive/issue_comments_097125.json:
+archive/issue_comments_096966.json:
 ```json
 {
     "body": "Looks good to me! \n\nIts a bit odd that qhull uses no buildsystem except for a bare-bones makefile, but then they don't use any external library nor build a shared library. Still, there are a lot of #ifdef's strewn around the source code. In any case, I'm in favor of having it as an optional package.",
     "created_at": "2010-10-20T11:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97125",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-96966",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -104,15 +103,15 @@ Its a bit odd that qhull uses no buildsystem except for a bare-bones makefile, b
 
 ---
 
-archive/issue_comments_097126.json:
+archive/issue_comments_096967.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-10-20T11:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97126",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-96967",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -122,15 +121,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_097127.json:
+archive/issue_comments_096968.json:
 ```json
 {
     "body": "Harald, Mike, or Minh, could you please add\n\n http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg\n\nas an optional package?",
     "created_at": "2010-11-01T10:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97127",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-96968",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -144,15 +143,15 @@ as an optional package?
 
 ---
 
-archive/issue_comments_097128.json:
+archive/issue_comments_096969.json:
 ```json
 {
     "body": "Replying to [comment:6 mpatel]:\n> Harald, Mike, or Minh, could you please add\n> \n>  http://sage.math.washington.edu/home/mhampton/qhull-2010.1.spkg\n> \n> as an optional package?\n\nDone. See the updated optional spkg page\n\nhttp://www.sagemath.org/packages/optional/\n\nThe new package is now being mirrored.",
     "created_at": "2010-11-01T10:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97128",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-96969",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -173,15 +172,15 @@ The new package is now being mirrored.
 
 ---
 
-archive/issue_comments_097129.json:
+archive/issue_comments_096970.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-11-01T11:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-97129",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9840#issuecomment-96970",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

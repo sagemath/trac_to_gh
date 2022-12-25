@@ -6,15 +6,14 @@ archive/issues_001061.json:
     "body": "Assignee: mabshoff\n\nI've posted a patched python spkg here:\n\nhttp://sage.math.washington.edu/tmp/python-2.5.1.p8.spkg\n\n--William\n\nIssue created by migration from https://trac.sagemath.org/ticket/1061\n\n",
     "created_at": "2007-11-02T01:30:28Z",
     "labels": [
-        "porting",
-        "major",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "fix python compile on OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1061",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1061
 
 ---
 
-archive/issue_comments_006447.json:
+archive/issue_comments_006427.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-02T01:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1061",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1061#issuecomment-6447",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1061#issuecomment-6427",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +50,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_006448.json:
+archive/issue_comments_006428.json:
 ```json
 {
     "body": "applied to 2.8.11.rc1 - via with new python-2.5.1.p8.spkg",
     "created_at": "2007-11-02T01:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1061",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1061#issuecomment-6448",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1061#issuecomment-6428",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000535.json:
     "body": "Assignee: mabshoff\n\nFrom Sage 2.8.3rc3:\n\n```\n==25034== Mismatched free() / delete / delete []\n==25034==    at 0x4A05130: operator delete(void*) (vg_replace_malloc.c:244)\n==25034==    by 0x923CCB6: del_charstar (in /tmp/Work2/sage-2.8.3.rc3/local/lib/libcsage.so)\n==25034==    by 0x17AC7793: __pyx_f_3ntl_string_delete (ntl.c:996)\n==25034==    by 0x17AC7F88: __pyx_f_3ntl_9ntl_ZZ_pX___repr__ (ntl.c:6314)\n==25034==    by 0x443C61: _PyObject_Str (object.c:406)\n==25034==    by 0x443D0A: PyObject_Str (object.c:426)\n==25034==    by 0x44EA8F: string_new (stringobject.c:3892)\n==25034==    by 0x45A272: type_call (typeobject.c:422)\n==25034==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==25034==    by 0x480783: PyEval_EvalFrameEx (ceval.c:3775)\n==25034==    by 0x485025: PyEval_EvalFrameEx (ceval.c:3650)\n==25034==    by 0x4865EF: PyEval_EvalCodeEx (ceval.c:2831)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/535\n\n",
     "created_at": "2007-08-30T18:53:30Z",
     "labels": [
-        "memleak",
-        "major",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "Mismatched free() / delete / delete [] (from modular/dirichlet.py)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/535",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/535
 
 ---
 
-archive/issue_comments_002727.json:
+archive/issue_comments_002715.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-30T18:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/535#issuecomment-2727",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/535#issuecomment-2715",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002728.json:
+archive/issue_comments_002716.json:
 ```json
 {
     "body": "This is caused because the char arrays in ntl_wrap.cc are created using 'new' and free'd in Cython using 'free'. This has been fixed before (i.e. it is a regression) by replacing the 'new' calls with 'malloc's. malloc is the correct memory allocator here because the string is returned to C land.",
     "created_at": "2007-08-30T19:28:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/535#issuecomment-2728",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/535#issuecomment-2716",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -85,15 +84,15 @@ This is caused because the char arrays in ntl_wrap.cc are created using 'new' an
 
 ---
 
-archive/issue_comments_002729.json:
+archive/issue_comments_002717.json:
 ```json
 {
     "body": "Unfortunately at least in the code I'm looking at right now the array is freed using delete.  Could you\nretest.  Here's all the relevant code (from ntl_wrap.cc, ntl.pyx and misc.pxi).  There's no malloc or free involved:\n\n```\n    def __repr__(self):\n        _sig_on\n        return string_delete(ZZ_pX_repr(self.x))\n\nchar* ZZ_pX_repr(struct ZZ_pX* x)\n{\n  ostringstream instore;\n  instore << (*x);\n  int n = strlen(instore.str().data());\n  char* buf = new char[n+1];\n  strcpy(buf, instore.str().data());\n  return buf;\n}\n\ncdef object string_delete(char* s):\n    \"\"\"\n    Takes a char* allocated using C++ new, and converts it to a Python\n    string, then deletes the allocated memory.  Also unsets the signal\n    handler, so you *must* call _sig_on right before calling this!\n    \"\"\"\n    _sig_off\n    t = str(s)\n    del_charstar(s)\n    return t\n\nvoid del_charstar(char* a) {\n  delete a;\n}\n```\n",
     "created_at": "2007-09-13T15:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/535#issuecomment-2729",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/535#issuecomment-2717",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -136,15 +135,15 @@ void del_charstar(char* a) {
 
 ---
 
-archive/issue_comments_002730.json:
+archive/issue_comments_002718.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-13T19:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/535",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/535#issuecomment-2730",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/535#issuecomment-2718",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

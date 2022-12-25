@@ -6,7 +6,7 @@ archive/issues_007894.json:
     "body": "Assignee: GeorgSWeber\n\nI just noticed something odd on Solaris 8. bzip2 built fine, but I started the build after modifying one a file in 'prereq'. Then I get:\n\n\n```\ncp -f libbz2.a /export/home/drkirkby/sage-4.3/spkg/../local/lib\nchmod a+r /export/home/drkirkby/sage-4.3/spkg/../local/lib/libbz2.a\ncp -f bzgrep /export/home/drkirkby/sage-4.3/spkg/../local/bin/bzgrep\nln -s -f /export/home/drkirkby/sage-4.3/spkg/../local/bin/bzgrep /export/home/drkirkby/sage-4.3/spkg/../local/bin/bzegrep\nln: cannot create /export/home/drkirkby/sage-4.3/spkg/../local/bin/bzegrep: File exists\nmake[2]: *** [install] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg/build/bzip2-1.0.5'\nError installing bzip2\nmake[1]: *** [installed/bzip2-1.0.5] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.3/spkg'\n\nreal    0m13.366s\nuser    0m7.790s\nsys     0m3.090s\nError building Sage. \n```\n\n\nIt actually leaves several files starting with the letters 'bz' in local/bin. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7894\n\n",
     "created_at": "2010-01-11T06:16:45Z",
     "labels": [
-        "build",
+        "component: build",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007894.json:
     "title": "bzip2 does not always clear up before building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7894",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: GeorgSWeber
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7894
 
 ---
 
-archive/issue_comments_068673.json:
+archive/issue_comments_068554.json:
 ```json
 {
     "body": "Fixed in #12102",
     "created_at": "2014-01-09T09:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7894#issuecomment-68673",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7894#issuecomment-68554",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -69,15 +69,15 @@ Fixed in #12102
 
 ---
 
-archive/issue_comments_068674.json:
+archive/issue_comments_068555.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-01-09T09:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7894#issuecomment-68674",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7894#issuecomment-68555",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -87,15 +87,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_068675.json:
+archive/issue_comments_068556.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-01-09T09:33:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7894#issuecomment-68675",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7894#issuecomment-68556",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -105,15 +105,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_068676.json:
+archive/issue_comments_068557.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2014-01-10T08:49:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7894#issuecomment-68676",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7894#issuecomment-68557",
+    "user": "https://github.com/vbraun"
 }
 ```
 

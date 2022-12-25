@@ -6,15 +6,14 @@ archive/issues_000976.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: from sage.libs.fplll.fplll import FP_LLL\nsage: FE = random_matrix(ZZ,10,10)\nsage: FE # result random\n[  2  -1  -1  -1  -3   1  -1 -32  -1  -1]\n[  1   2  -1  -1   1   1  -1  -1   8   1]\n[  1  -2  -2  -2  -6  -6   2  -1   1  -1]\n[  3   3  -1   1   1   6   1   1  -1  -1]\n[ -1  -1   1  -1  -2   3   1  -2   1  25]\n[ -1   1   1 -10  -1  -1   1   1  -1   1]\n[  1   1  25  -1   1  -4   4   5  -2   3]\n[  3  -2   2  -6  -4   1  -1  -3  -1   1]\n[  1  -4   2   3   1   1   1   2   3  -1]\n[  6  -8   1  -1 -16   2 -25  -1  -2   2]\nsage: F = FP_LLL(FE)\nsage: F.fast_early_red()\nTraceback (most recent call last):\n...\nRuntimeError: BUG: fast early reduction segfaults\n```\n\n\n\n```\n0x00002b137bc2695d in __gmpz_get_d_2exp () from /usr/local/sage-2.8.1/local/lib/libgmp.so.3\n(gdb) bt\n#0  0x00002b137bc2695d in __gmpz_get_d_2exp () from /usr/local/sage-2.8.1/local/lib/libgmp.so.3\n#1  0x00002b139820d63c in fast_early_red<__mpz_struct [1], double>::BabaiCall (this=0x1f310f0, alpha=<value optimized out>, zeros=-1, kappamax=2, var_k=<value optimized out>, ztmp=@0x7fff3036c7d0,\n    newvec=@0x7fff3036c7ec, newvecmax=@0x7fff3036c7e8, n=10) at /usr/local/sage-2.8.1/local//include/fplll/nr.cpp:237\n#2  0x00002b139821c65d in fast<__mpz_struct [1], double>::LLL (this=0x1f310f0) at /usr/local/sage-2.8.1/local//include/fplll/fast.cpp:591\n#3  0x00002b139820b4ec in __pyx_f_py_5fplll_6FP_LLL_fast_early_red (__pyx_v_self=0x2b80d90, __pyx_args=<value optimized out>, __pyx_kwds=<value optimized out>) at sage/libs/fplll/fplll.cpp:1642\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/976\n\n",
     "created_at": "2007-10-23T19:36:20Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.9",
     "title": "fpLLL fast early reduction segfaults",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/976",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @williamstein
@@ -62,15 +61,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/976
 
 ---
 
-archive/issue_comments_005959.json:
+archive/issue_comments_005940.json:
 ```json
 {
     "body": "Well, this code triggers and assetion in valgrind, but right before it spits out some interesting issues:\n\n```\n==21028== Invalid write of size 8\n==21028==    at 0x183EA302: fast_early_red<__mpz_struct[1], double>::BabaiCall(int*, int, int, int, Z_NR<__mpz_struct[1]>&,\nint&, int&, int) (util.h:257)\n==21028==    by 0x183EBECC: fast<__mpz_struct[1], double>::LLL() (fast.cpp:591)\n==21028==    by 0x183E262B: __pyx_f_py_5fplll_6FP_LLL_fast_early_red(_object*, _object*, _object*) (fplll.cpp:1651)\n==21028==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==21028==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==  Address 0x7f940b8 is 0 bytes after a block of size 80 alloc'd\n==21028==    at 0x4A1BFE4: operator new[](unsigned long) (vg_replace_malloc.c:271)\n==21028==    by 0x183EBAF9: fast<__mpz_struct[1], double>::LLL() (fast.cpp:497)\n==21028==    by 0x183E262B: __pyx_f_py_5fplll_6FP_LLL_fast_early_red(_object*, _object*, _object*) (fplll.cpp:1651)\n==21028==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==21028==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==\n==21028== Invalid read of size 8\n==21028==    at 0x60FC233: __gmpz_get_d_2exp (in /tmp/Work-mabshoff/sage-2.8.9.alpha0/local/lib/libgmp.so.3.4.1)\n==21028==    by 0x183EA301: fast_early_red<__mpz_struct[1], double>::BabaiCall(int*, int, int, int, Z_NR<__mpz_struct[1]>&,\nint&, int&, int) (nr.cpp:237)\n==21028==    by 0x183EBECC: fast<__mpz_struct[1], double>::LLL() (fast.cpp:591)\n==21028==    by 0x183E262B: __pyx_f_py_5fplll_6FP_LLL_fast_early_red(_object*, _object*, _object*) (fplll.cpp:1651)\n==21028==    by 0x483031: PyEval_EvalFrameEx (ceval.c:3564)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x483CC4: PyEval_EvalFrameEx (ceval.c:494)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==21028==    by 0x484F3A: PyEval_EvalCodeEx (ceval.c:2831)\n==21028==    by 0x48365C: PyEval_EvalFrameEx (ceval.c:3660)\n==21028==    by 0x48403A: PyEval_EvalFrameEx (ceval.c:3650)\n==21028==  Address 0x27d03488303d8 is not stack'd, malloc'd or (recently) free'd\n```\n\n\nI hope that somebody can take it from here.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-24T03:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5959",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5940",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -133,15 +132,15 @@ Michael
 
 ---
 
-archive/issue_comments_005960.json:
+archive/issue_comments_005941.json:
 ```json
 {
     "body": "Ok, it is my impression that in fast.cpp:442\n\n```\n  Z_NR<ZT> ztmp;\n```\n\nis not properly initialized if ZT is an mpz or somehow the index might be \"off\".\n\nCheers,\n\nMichael",
     "created_at": "2007-10-24T03:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5960",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5941",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -161,15 +160,15 @@ Michael
 
 ---
 
-archive/issue_comments_005961.json:
+archive/issue_comments_005942.json:
 ```json
 {
     "body": "Well, in nr.cpp we have a specialization for mpz_t for the constructor, so it might be an index issue. Otherwise I am out of ideas.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-24T03:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5961",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5942",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -183,15 +182,15 @@ Michael
 
 ---
 
-archive/issue_comments_005962.json:
+archive/issue_comments_005943.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-24T18:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5962",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5943",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -201,15 +200,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_005963.json:
+archive/issue_comments_005944.json:
 ```json
 {
     "body": "This is fixed upstream and the updated spkg is in 2.8.9.alpha1",
     "created_at": "2007-10-24T18:38:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5963",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/976#issuecomment-5944",
+    "user": "https://github.com/malb"
 }
 ```
 

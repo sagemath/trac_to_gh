@@ -6,14 +6,13 @@ archive/issues_000084.json:
     "body": "Assignee: dmharvey\n\nE.torsion_subgroup() returns an abstract group. There is no way to get hold of the torsion points (without some hacking).\n\n\n```\n---------- Forwarded message ----------\nDate: Mon, 25 Sep 2006 08:00:43 -0400\nFrom: David Harvey <dmharvey@math.harvard.edu>\nReply-To: bug reports and users' support questions\n    <sage-support@lists.sourceforge.net>\nTo: bug reports and users' support questions\n    <sage-support@lists.sourceforge.net>\nCc: Iftikhar Burhanuddin <burhanud@usc.edu>\nSubject: Re: [SAGEsupport] E(Q) torsion\n\n\nOn Sep 25, 2006, at 1:50 AM, Iftikhar Burhanuddin wrote:\n\n> How do I get hold of the actual torsion points?\n>\n> ===\n> sage: E = EllipticCurve([-5699,427500,427500,0,0])\n>\n> sage: G = E.torsion_subgroup()\n>\n> sage: G\n>  Multiplicative Abelian Group isomorphic to C7\n>\n> sage: G[1]\n>  f\n\nUse the source, Luke!\n\nE.torsion_subgroup??\n\nYou'll see the line:\n\nG = self.pari_curve().elltors(flag)\n\nThen later on you see\n\nself.__torsion = sage.groups.all.AbelianGroup(G[1].python())\n\nSo pari computes the group, puts it in G (including generators!) and\nthen SAGE throws away the generators and only stores G[1].\n\nSo I guess you want self.pari_curve().elltors(0)[2].\n\n(Actually what you *really* want is to wrap this in a new function in\nSAGE so that others don't have this problem again! My recommendation:\nadd a new cached private attribute __torsion_generators which gets\ncomputed whenever pari.elltors() gets called, and add a new function\nE.torsion_subgroup_generators() which returns it. Even better would\n\nbe if somehow SAGE's abelian group type knows how to store\ninformation about the \"meaning\" of its underlying group, but I don't\nknow anything about SAGE's abelian groups.\n\nIn other words, \"implement it and send me -- ahem, William -- a patch!\")\n\nIf this is not your style, file a bug on trac, and assign it to\ndmharvey :-)\n\nDavid\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/84\n\n",
     "created_at": "2006-09-25T18:52:35Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "title": "E.torsion_subgroup()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/84",
-    "user": "burhanud"
+    "user": "https://trac.sagemath.org/admin/accounts/users/burhanud"
 }
 ```
 Assignee: dmharvey
@@ -93,15 +92,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/84
 
 ---
 
-archive/issue_comments_000422.json:
+archive/issue_comments_000420.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-01-07T18:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-422",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-420",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_000423.json:
+archive/issue_comments_000421.json:
 ```json
 {
     "body": "Changing assignee from dmharvey to @ncalexan.",
     "created_at": "2007-02-19T02:04:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-423",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-421",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -129,15 +128,15 @@ Changing assignee from dmharvey to @ncalexan.
 
 ---
 
-archive/issue_comments_000424.json:
+archive/issue_comments_000422.json:
 ```json
 {
     "body": "Addressed in 2.1.5.\n\nAdded class EllipticCurveTorsionSubgroup class which exposes the points as generators.  This is very much a 'first cut', but it's closer to the expected behaviour.  Use E.torsion_subgroup() to access, as usual.",
     "created_at": "2007-02-19T02:05:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-424",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-422",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -149,15 +148,15 @@ Added class EllipticCurveTorsionSubgroup class which exposes the points as gener
 
 ---
 
-archive/issue_comments_000425.json:
+archive/issue_comments_000423.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-02-19T02:05:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/84",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-425",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/84#issuecomment-423",
+    "user": "https://github.com/ncalexan"
 }
 ```
 

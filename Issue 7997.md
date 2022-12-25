@@ -6,15 +6,13 @@ archive/issues_007997.json:
     "body": "Assignee: @williamstein\n\nCC:  @TimDumol acleone @qed777 @williamstein boothby @jasongrout @fchapoton\n\nSee http://docs.python.org/library/ast.html#ast.NodeTransformer\n\nReplace any Expr node in the ast tree with a function call to\n\n```\ndef __print_if_not_none(expr):\n    if expr is not None:\n        print expr\n```\n\nAn Expr node is anything like\n\n```\n123\ndo_foo()\nfor i in range(10):\n    i\n```\n\nWhich will be replaced by\n\n```\n__print_if_not_none(123)\n__print_if_not_none(do_foo())\nfor i in range(10):\n    __print_if_not_none(i)\n```\n\nWhich will output\n\n```\n123\n0\n1\n...\n9\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7997\n\n",
     "created_at": "2010-01-19T15:09:00Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use ast to replace display hook hack",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7997",
-    "user": "acleone"
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 Assignee: @williamstein
@@ -68,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7997
 
 ---
 
-archive/issue_comments_069864.json:
+archive/issue_comments_069744.json:
 ```json
 {
     "body": "Incomplete implementation",
     "created_at": "2010-01-19T16:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69864",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69744",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -86,15 +84,15 @@ Incomplete implementation
 
 ---
 
-archive/issue_comments_069865.json:
+archive/issue_comments_069745.json:
 ```json
 {
     "body": "Attachment [trac_7997-ast-display-hook-incomplete.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.patch) by @TimDumol created at 2010-01-20 23:59:18\n\nHey, are you working on the pexpect stuff yet? If not, I'll start work on it as soon as you reply.",
     "created_at": "2010-01-20T23:59:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69865",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69745",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -106,15 +104,15 @@ Hey, are you working on the pexpect stuff yet? If not, I'll start work on it as 
 
 ---
 
-archive/issue_comments_069866.json:
+archive/issue_comments_069746.json:
 ```json
 {
     "body": "Ok, you should probably work on this.  I think this patch should just change the way `%sage`/`%python` is executed:\n1. Preparse to valid python\n2. Save to a file.\n   * Not base64 encoded, etc, just straight the straight unicode text after Preparsing\n   * (So the file matches the cell exactly except for preparsing)\n3. Parse the source into an ast\n   * syntax errors are caught here\n4. Unless `%no_print_exprs` or something, add in `print_if_not_none` calls with the `ast.NodeTransformer` for any `Expr` nodes that aren't in function def's.\n5. exec the ast tree, with globals set to a dictionary built from all previously evaluated cells and sage globals",
     "created_at": "2010-01-21T02:28:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69866",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69746",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -132,15 +130,15 @@ Ok, you should probably work on this.  I think this patch should just change the
 
 ---
 
-archive/issue_comments_069867.json:
+archive/issue_comments_069747.json:
 ```json
 {
     "body": "Hey, I think I'm gonna be pretty busy till I graduate this March, so if anyone wants to work on this patch, I'm posting an updated incomplete patch now. The new interface based on multiprocessing seems to work quite well, with a 300ms speed boost (really makes things seem lightning fast on local calculation of cheap stuff), but I haven't quite found out exactly how to get file saving to work properly. It would be great if anyone could do so.\n\nPlease note that this patch does not work well with the pexpect implementation (changing location of preparsing, etc. means that it probably won't work at all), and so even after fixing the pipes implementation, either the remote pexpect implementation should be fixed, or a new remote implementation should be made (I'm thinking a quick Twisted [or even `asyncore`] server/client should do the job, with a similar interface as the pipes interface between server & client).",
     "created_at": "2010-02-01T10:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69867",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69747",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -152,15 +150,15 @@ Please note that this patch does not work well with the pexpect implementation (
 
 ---
 
-archive/issue_comments_069868.json:
+archive/issue_comments_069748.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-02-01T10:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69868",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69748",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -170,15 +168,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_069869.json:
+archive/issue_comments_069749.json:
 ```json
 {
     "body": "Incomplete implementation. See comments for elaboration.",
     "created_at": "2010-02-01T10:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69869",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69749",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -188,15 +186,15 @@ Incomplete implementation. See comments for elaboration.
 
 ---
 
-archive/issue_comments_069870.json:
+archive/issue_comments_069750.json:
 ```json
 {
     "body": "Attachment [trac_7997-ast-display-hook-incomplete.2.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.2.patch) by acleone created at 2010-02-01 18:11:03\n\nI'd like to work on this patch.  At this point we're doing a lot more than just replacing the display hook hack - what should the scope of this patch be?\n\n(Tom, correct me if I'm wrong) The patch currently:\n1. Replaces the display hook hack with a much more robust implementation using python's [ast library](http://docs.python.org/library/ast.html).\n2. Adds a new process implementation that passes a data object across\n   * The old implementation passed a string to get exec-ed.  The string was \"write this base64 encoded string to a file and exec it\".\n   * The new implementation gets the data object, writes the preparsed string to a file (just so exec will have line numbers), and exec's the string.  This is faster because it's only one exec.",
     "created_at": "2010-02-01T18:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69870",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69750",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -214,15 +212,15 @@ I'd like to work on this patch.  At this point we're doing a lot more than just 
 
 ---
 
-archive/issue_comments_069871.json:
+archive/issue_comments_069751.json:
 ```json
 {
     "body": "Actually I'm assuming it's faster due to the reduced I/O (less files) and post-processing (filtering things out with pexpect).\n\nI'd say the scope should be getting a working local and remote WorksheetProcess implementation, changing the interface as judged as needed. The resulting implementation should have functionality that is at least equivalent, if not a superset of, the local and remote pexpect interfaces. There should be no noticeable change in output for clients, except for speed differences. Notably, the traceback output should remain properly.\n\nBy the way, it's Tim.",
     "created_at": "2010-02-06T11:22:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69871",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69751",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -236,15 +234,15 @@ By the way, it's Tim.
 
 ---
 
-archive/issue_comments_069872.json:
+archive/issue_comments_069752.json:
 ```json
 {
     "body": "Hi, has there been any progress on this? I'd love to assist/continue any work done here.",
     "created_at": "2010-03-09T15:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69872",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69752",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -254,15 +252,15 @@ Hi, has there been any progress on this? I'd love to assist/continue any work do
 
 ---
 
-archive/issue_comments_069873.json:
+archive/issue_comments_069753.json:
 ```json
 {
     "body": "Unfortunately not - I overestimated the amount of time I had.",
     "created_at": "2010-03-09T16:40:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69873",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69753",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -272,15 +270,15 @@ Unfortunately not - I overestimated the amount of time I had.
 
 ---
 
-archive/issue_comments_069874.json:
+archive/issue_comments_069754.json:
 ```json
 {
     "body": "Attachment [trac_7997-ast-display-hook-incomplete.1.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook-incomplete.1.patch) by @TimDumol created at 2010-04-02 11:40:11\n\nCompletely working (hopefully) implementation of a local WorksheetProcess. Need to implement a remote version too, before this patch is ready.",
     "created_at": "2010-04-02T11:40:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69874",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69754",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -292,15 +290,15 @@ Completely working (hopefully) implementation of a local WorksheetProcess. Need 
 
 ---
 
-archive/issue_comments_069875.json:
+archive/issue_comments_069755.json:
 ```json
 {
     "body": "Hi,\n\nI have managed to finish the local implementation of WorksheetProcess_PipesImplementation (WPPI), and I have found it to be roughly 251.3 ms faster than WorksheetProcess_ExpectImplementation (WPEI). The patch, however, makes WPEI and its remote equivalent useless, due to an API change on the WorksheetProcess interface. This means that to finish this patch, a remote implementation must be made, and that both be *very* thoroughly tested.\n\nHere are the benchmark results, if anyone's interested:\n\n\n```\nsage: from sagenb.interfaces.pipes_interface import WorksheetProcess_PipesImpl as WPPI\nsage: wp = WPPI()\n\n# This is without the print_expressions, which is not equivalent to what WPEI does. Mean: 251.53 \u00b5s\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 488 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 451 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 424 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 481 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('print 1', preparse=False, print_expressions=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 479 \u00b5s per loop\n\nsage: wp.execute('from sage.all_notebook import *; import sagenb', preparse=False, print_expressions=False)\n\n# This, on the other hand, is. Mean: 680 \u00b5s\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 664 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 734 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n5 loops, best of 3: 601 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 739 \u00b5s per loop\nsage: timeit(\"\"\"wp.execute('1', preparse=False)\\nwhile wp.is_computing(): pass\"\"\")\n625 loops, best of 3: 664 \u00b5s per loop\n\n# Note, this has preparsing. This checks to see if the speedup scales. It does not.\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n5 loops, best of 3: 21.5 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.6 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.5 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 17.7 ms per loop\nsage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): pass\"\"\")\n25 loops, best of 3: 19.7 ms per loop\n```\n\n\nBy contrast, here is the benchmark for WPEI:\n\n\n```\nsage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation as WPEI\nsage: wp = WPEI()\n\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: timeit(\"\"\"wp.execute('1')\\nwhile wp.is_computing():\\n    wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\n\n# Transmission lag is much slower than computation time, which accounts for the lack of difference, I think.\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\nsage: sage: timeit(\"\"\"wp.execute('[x for x in primes(1e4)]')\\nwhile wp.is_computing(): wp.output_status()\"\"\")\n5 loops, best of 3: 252 ms per loop\n```\n",
     "created_at": "2010-04-02T12:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69875",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69755",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -391,15 +389,15 @@ sage: sage: timeit("""wp.execute('[x for x in primes(1e4)]')\nwhile wp.is_comput
 
 ---
 
-archive/issue_comments_069876.json:
+archive/issue_comments_069756.json:
 ```json
 {
     "body": "Wow - that's awesome - great work Tim!  I definitely need to read up on the `multiprocessing` module.  Using `multiprocessing.Pipe()` and `multiprocessing.Connection()` is definitely the way to go.  Also it should be fairly easy to create a remote implementation with `multiprocessing.connection.Client()`.\n\nJust a note for others on how this works: The worker process that executes the code has a `multiprocessing.Connection()` back to the manager process.  That connection can `send(obj)` and `recv() -> obj`, where `obj` is a picklable object, in this case:\n* Manager to Worker: `ExecutionData(preparse, print_expressions, string, tempdir, temp_file.name, transaction_number)` objects\n* Worker to Manager: either `(transaction_number, data)` where `data` is a string from `sys.stdout` or `sys.stderr`, or `(transaction_number, 0)` where the `0` means that the computation is finished.",
     "created_at": "2010-04-02T17:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69876",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69756",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -413,15 +411,15 @@ Just a note for others on how this works: The worker process that executes the c
 
 ---
 
-archive/issue_comments_069877.json:
+archive/issue_comments_069757.json:
 ```json
 {
     "body": "Completely working implementation of a remote WorksheetProcess. Deprecates pexepct-based WP's. See comments for more.",
     "created_at": "2010-04-03T15:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69877",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69757",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -431,15 +429,15 @@ Completely working implementation of a remote WorksheetProcess. Deprecates pexep
 
 ---
 
-archive/issue_comments_069878.json:
+archive/issue_comments_069758.json:
 ```json
 {
     "body": "Attachment [trac_7997-ast-display-hook.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.patch) by @TimDumol created at 2010-04-03 15:44:17\n\nTom Boothby, I'm adding you to the CC since this also fixes the problem with the tracebacks you mentioned to me last January.\n\nThis version of the patch is hopefully the final version of the patch. It does the following:\n\n* Uses ast to replace the displayhook_hack in `sagenb.misc.format`, this was achieved through the efforts of me and Alex Leone (thank you!).\n\n  * The new version, now named `parse_display_expr`, can now print either the last expression, as before:\n\n\n```\n1\n2\n3\n----\n3\n```\n\n\n  or all root level expressions:\n\n\n```\n1\n2\nfor x in range(3):\n    x\n3\n-----\n1\n2\n3\n```\n\n\n  or all expressions:\n\n\n```\n1\n2\nfor x in range(2):\n    x\n3\n-----\n1\n2\n0\n1\n3\n```\n\n\n     This new functionality is customizable via the Notebook Settings page.\n\n* Adds new WorksheetProcess implementations based on `multiprocessing`, and deprecates the pexpect based ones, since this also changes the WorksheetProcess API. The blocking reference implementation has been updated to the new API.\n\n  * The local implementation (`WorksheetProcess_PipesImpl`) is on average 251.3 ms faster than the pexpect based one.\n\n  * The remote implementation ('WorksheetProcess_RemoteSSHPipesImpl`) is on average 212 ms faster than the remote pexpect based one. For now, it has the same vulnerabilities as the old one, with one additional: the connection between the main server and the computing server is unencrypted, and thus may be snooped on. It is trivial to fix this, however I am not sure whether the speed (and extra computing load) tradeoffs are worth it.\n\n* It now formats tracebacks as:\n\n\n```\nTraceback (most recent call last):\n  Line 7, in <module>\n    bar()\n  Line 5, in bar\n    foo()\n  Line 2, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\n\ninstead of:\n\n\n```\nTraceback (most recent call last):    def baz():\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 13, in <module>\n    baz()\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpfzcGzr/___code___.py\", line 10, in baz\n    bar()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 7, in bar\n    foo()\n  File \"/tmp/tmpfzcGzr/___code___.py\", line 4, in foo\n    raise Exception(\"Hello\")\nException: Hello\n```\n\n\nwhich have their line numbers offset by +2, also.",
     "created_at": "2010-04-03T15:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69878",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69758",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -547,15 +545,15 @@ which have their line numbers offset by +2, also.
 
 ---
 
-archive/issue_comments_069879.json:
+archive/issue_comments_069759.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-04-03T15:44:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69879",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69759",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -565,15 +563,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_069880.json:
+archive/issue_comments_069760.json:
 ```json
 {
     "body": "Fixed bug with empty input to parse_display_expr.",
     "created_at": "2010-04-09T12:22:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69880",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69760",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -583,15 +581,15 @@ Fixed bug with empty input to parse_display_expr.
 
 ---
 
-archive/issue_comments_069881.json:
+archive/issue_comments_069761.json:
 ```json
 {
     "body": "Attachment [trac_7997-ast-display-hook.2.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.2.patch) by @TimDumol created at 2010-04-14 18:20:46",
     "created_at": "2010-04-14T18:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69881",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69761",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -601,15 +599,15 @@ Attachment [trac_7997-ast-display-hook.2.patch](tarball://root/attachments/some-
 
 ---
 
-archive/issue_comments_069882.json:
+archive/issue_comments_069762.json:
 ```json
 {
     "body": "Attachment [trac_7908-pub_interact_c11-rebase.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7908-pub_interact_c11-rebase.patch) by @TimDumol created at 2010-04-18 07:42:41\n\nFixes a doctest.",
     "created_at": "2010-04-18T07:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69882",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69762",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -621,15 +619,15 @@ Fixes a doctest.
 
 ---
 
-archive/issue_comments_069883.json:
+archive/issue_comments_069763.json:
 ```json
 {
     "body": "Fixes a doctest.",
     "created_at": "2010-04-18T07:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69883",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69763",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -639,15 +637,15 @@ Fixes a doctest.
 
 ---
 
-archive/issue_comments_069884.json:
+archive/issue_comments_069764.json:
 ```json
 {
     "body": "Attachment [trac_7997-ast-display-hook.3.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.3.patch) by @TimDumol created at 2010-04-18 07:43:45\n\nThis patch fixes a doctest. Please ignore attachment:trac_7908-pub_interact_c11-rebase.patch.",
     "created_at": "2010-04-18T07:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69884",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69764",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -659,15 +657,15 @@ This patch fixes a doctest. Please ignore attachment:trac_7908-pub_interact_c11-
 
 ---
 
-archive/issue_comments_069885.json:
+archive/issue_comments_069765.json:
 ```json
 {
     "body": "Fixes a bug with %time.",
     "created_at": "2010-04-21T20:31:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69885",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69765",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -677,15 +675,15 @@ Fixes a bug with %time.
 
 ---
 
-archive/issue_comments_069886.json:
+archive/issue_comments_069766.json:
 ```json
 {
     "body": "Attachment [trac_7997-ast-display-hook.4.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.4.patch) by @TimDumol created at 2010-05-04 04:27:19\n\nHow's the refactoring going?",
     "created_at": "2010-05-04T04:27:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69886",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69766",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -697,15 +695,15 @@ How's the refactoring going?
 
 ---
 
-archive/issue_comments_069887.json:
+archive/issue_comments_069767.json:
 ```json
 {
     "body": "Tim: Can you split this into 2 patches:\n1. The AST stuff and API changes.\n2. Adding the multiprocessing interface.\n\nWilliam mentioned that we should keep the pexpect interface working.",
     "created_at": "2010-05-20T08:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69887",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69767",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -719,15 +717,15 @@ William mentioned that we should keep the pexpect interface working.
 
 ---
 
-archive/issue_comments_069888.json:
+archive/issue_comments_069768.json:
 ```json
 {
     "body": "Attachment [trac_7997-ast-display-hook.5.patch](tarball://root/attachments/some-uuid/ticket7997/trac_7997-ast-display-hook.5.patch) by @TimDumol created at 2010-05-23 13:05:02\n\nMakes the pexpect implementation conform to the new API, and adds backend configuration.",
     "created_at": "2010-05-23T13:05:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69888",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69768",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -739,15 +737,15 @@ Makes the pexpect implementation conform to the new API, and adds backend config
 
 ---
 
-archive/issue_comments_069889.json:
+archive/issue_comments_069769.json:
 ```json
 {
     "body": "This new patch lets the pexpect interface work again, and allows one to configure the backend to pexpect, pipes or reference (defaulting to pipes). Is this enough, or shall I split it?",
     "created_at": "2010-05-23T13:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69889",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69769",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -757,15 +755,15 @@ This new patch lets the pexpect interface work again, and allows one to configur
 
 ---
 
-archive/issue_comments_069890.json:
+archive/issue_comments_069770.json:
 ```json
 {
     "body": "ping about reviewing.  If the two of you wrote this together, what do you want from a third reviewer?  I don't have time to read and understand it all right now.  But I can install and test it.\n\nI had a student complain the other day that Sage only did one thing at a time, so this patch would be appreciated!",
     "created_at": "2010-09-28T21:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69890",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69770",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -777,15 +775,15 @@ I had a student complain the other day that Sage only did one thing at a time, s
 
 ---
 
-archive/issue_comments_069891.json:
+archive/issue_comments_069771.json:
 ```json
 {
     "body": "I have a setup where I have apache forward port 80 to port 8000, and Sage runs the notebook on port 8000.  I also use the server_pool option.  I applied this patch to a slightly modified 4.5.2.  I logged in.  When I tried to open a new worksheet, I got the following error in the log (and I got an error page in the browser):\n\n\n```\n2010-09-28 16:42:52-0500 [HTTPChannel,0,127.0.0.1] User 'jason.grout' logged in.\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] ERROR initializing compute process:\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] \n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] find_next_available_port() takes at least 2 arguments (1 given)\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] Exception rendering:\n2010-09-28 16:42:58-0500 [HTTPChannel,1,127.0.0.1] Unhandled Error\n\tTraceback (most recent call last):\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 181, in addCallbacks\n\t    self._runCallbacks()\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 284, in _continue\n\t    self.unpause()\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 280, in unpause\n\t    self._runCallbacks()\n\t--- <exception caught here> ---\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/internet/defer.py\", line 323, in _runCallbacks\n\t    self.result = callback(self.result, *args, **kw)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/server.py\", line 296, in <lambda>\n\t    d.addCallback(lambda res, req: res.renderHTTP(req), self)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 85, in renderHTTP\n\t    return method(request)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 202, in http_GET\n\t    return super(Resource, self).http_GET(request)\n\t  File \"/home/sageserver/sage/local/lib/python2.6/site-packages/Twisted-9.0.0-py2.6-linux-x86_64.egg/twisted/web2/resource.py\", line 128, in http_GET\n\t    return self.render(request)\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/twist.py\", line 1534, in render\n\t    self.worksheet.sage()\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/worksheet.py\", line 2836, in sage\n\t    self.initialize_sage()\n\t  File \"/home/sageserver/sage-4.5.2-test/devel/sagenb-main/sagenb/notebook/worksheet.py\", line 2806, in initialize_sage\n\t    raise RuntimeError(msg)\n\texceptions.RuntimeError: find_next_available_port() takes at least 2 arguments (1 given)\n```\n",
     "created_at": "2010-09-28T21:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69891",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69771",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -833,15 +831,15 @@ I have a setup where I have apache forward port 80 to port 8000, and Sage runs t
 
 ---
 
-archive/issue_comments_069892.json:
+archive/issue_comments_069772.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-28T21:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69892",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69772",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -851,15 +849,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_069893.json:
+archive/issue_comments_069773.json:
 ```json
 {
     "body": "Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.",
     "created_at": "2020-08-18T00:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69893",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69773",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -869,15 +867,15 @@ Proposing to close all sagenb tickets as outdated, so that all remaining open ti
 
 ---
 
-archive/issue_comments_069894.json:
+archive/issue_comments_069774.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2020-08-18T00:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69894",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69774",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -887,15 +885,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_069895.json:
+archive/issue_comments_069775.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-08-25T09:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69895",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69775",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -905,15 +903,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069896.json:
+archive/issue_comments_069776.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-08-29T15:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7997",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69896",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7997#issuecomment-69776",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

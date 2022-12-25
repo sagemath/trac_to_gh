@@ -6,15 +6,14 @@ archive/issues_006492.json:
     "body": "Assignee: mabshoff\n\nI really should have tested this before letting this spkg get into Sage!   On OS X do the following:\n\n(1) export SAGE64=\"yes\"\n(2) Try to build Sage\n(3) install the experimental fortran spkg:\n\n```\nsage -i fortran-OSX64-20090120\n```\n\n\n\nThen continue the build and get DISASTER when ratpoints is hit:\n\n```\nFinished extraction\n****************************************************\nHost system\nuname -a:\nDarwin bsd.local 9.7.0 Darwin Kernel Version 9.7.0: Tue Mar 31 22:52:17 PDT 2009; root:xnu-1228.12.14~1/RELEASE_I386 i386\n****************************************************\n****************************************************\nGCC Version\ngcc -v\nUsing built-in specs.\nTarget: i686-apple-darwin9\nConfigured with: /var/tmp/gcc/gcc-5465~16/src/configure --disable-checking -enable-werror --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-transform-name=/^[cg][^.-]*$/s/$/-4.0/ --with-gxx-include-dir=/include/c++/4.0.0 --with-slibdir=/usr/lib --build=i686-apple-darwin9 --with-arch=apple --with-tune=generic --host=i686-apple-darwin9 --target=i686-apple-darwin9\nThread model: posix\ngcc version 4.0.1 (Apple Inc. build 5465)\n****************************************************\nBuilding without SSE2 instructions (OS X).\ngcc sift.c -c -o sift.o -I/Users/was/build/64bit/sage-4.1.rc1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -funroll-loops -fnested-functions\ngcc gen_init_sieve_h.c -o gen_init_sieve_h  -I/Users/was/build/64bit/sage-4.1.rc1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -L/Users/was/build/64bit/sage-4.1.rc1/local/lib -lgmp -lm -fnested-functions\nld: warning in /Users/was/build/64bit/sage-4.1.rc1/local/lib/libgmp.dylib, file is not of required architecture\n./gen_init_sieve_h > init_sieve.h\ngcc init.c -c -o init.o -I/Users/was/build/64bit/sage-4.1.rc1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -funroll-loops -O3 -fnested-functions\ngcc sturm.c -c -o sturm.o -I/Users/was/build/64bit/sage-4.1.rc1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -fnested-functions\ngcc gen_find_points_h.c -o gen_find_points_h  -I/Users/was/build/64bit/sage-4.1.rc1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -L/Users/was/build/64bit/sage-4.1.rc1/local/lib -lgmp -lm -fnested-functions\nld: warning in /Users/was/build/64bit/sage-4.1.rc1/local/lib/libgmp.dylib, file is not of required architecture\n./gen_find_points_h > find_points.h\ngcc find_points.c -c -o find_points.o -I/Users/was/build/64bit/sage-4.1.rc1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -fnested-functions\nar rs libratpoints.a sift.o init.o sturm.o find_points.o\nar: creating archive libratpoints.a\ngcc main.c -o ratpoints -I/Users/was/build/64bit/sage-4.1.rc1/local/include -Wall -O2 -fPIC -DRATPOINTS_MAX_BITS_IN_PRIME=7 -L/Users/was/build/64bit/sage-4.1.rc1/local/lib -lgmp -lm -L. -lratpoints -fnested-functions\nld: warning in /Users/was/build/64bit/sage-4.1.rc1/local/lib/libgmp.dylib, file is not of required architecture\nUndefined symbols:\n  \"___gmpz_init\", referenced from:\n      _read_input in cciW77q8.o\n      _main in cciW77q8.o\n      _main in cciW77q8.o\n      _main in cciW77q8.o\n      _find_points_init in libratpoints.a(find_points.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_mul_ui\", referenced from:\n      _scan_mpz in cciW77q8.o\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n  \"___gmpz_add\", referenced from:\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n      _eval_sign in libratpoints.a(sturm.o)\n  \"___gmpz_get_str\", referenced from:\n      _print_poly in cciW77q8.o\n      _print_poly in cciW77q8.o\n      _print_poly in cciW77q8.o\n  \"___gmpz_sqrt\", referenced from:\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_mul\", referenced from:\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_fdiv_q\", referenced from:\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_get_si\", referenced from:\n      _get_2adic_info in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_clear\", referenced from:\n      _read_input in cciW77q8.o\n      _main in cciW77q8.o\n      _main in cciW77q8.o\n      _main in cciW77q8.o\n      _main in cciW77q8.o\n      _main in cciW77q8.o\n      _find_points_clear in libratpoints.a(find_points.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_fdiv_q_2exp\", referenced from:\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_fdiv_r_ui\", referenced from:\n      _sieving_info in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_add_ui\", referenced from:\n      _scan_mpz in cciW77q8.o\n  \"___gmpz_set_si\", referenced from:\n      _scan_mpz in cciW77q8.o\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_sqrtrem\", referenced from:\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n  \"___gmpz_set\", referenced from:\n      _print_poly in cciW77q8.o\n      _scan_mpz in cciW77q8.o\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n      _valuation in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _eval_sign in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_submul\", referenced from:\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_fits_slong_p\", referenced from:\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_set_ui\", referenced from:\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_mul_2exp\", referenced from:\n      _eval_sign in libratpoints.a(sturm.o)\n  \"___gmpz_kronecker_si\", referenced from:\n      _sieving_info in libratpoints.a(find_points.o)\n  \"___gmpz_cmp_si\", referenced from:\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_cmp_ui\", referenced from:\n      _print_poly in cciW77q8.o\n      _print_poly in cciW77q8.o\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_fdiv_q_ui\", referenced from:\n      _valuation in libratpoints.a(find_points.o)\n      _valuation in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_scan1\", referenced from:\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_gcd\", referenced from:\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\n  \"___gmpz_out_str\", referenced from:\n      _process in cciW77q8.o\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpn_perfect_square_p\", referenced from:\n      _find_points_work in libratpoints.a(find_points.o)\n      _find_points_work in libratpoints.a(find_points.o)\n  \"___gmpz_mul_si\", referenced from:\n      __ratpoints_check_point in libratpoints.a(find_points.o)\n      _eval_sign in libratpoints.a(sturm.o)\n      __ratpoints_compute_sturm in libratpoints.a(sturm.o)\nld: symbol(s) not found\ncollect2: ld returned 1 exit status\nmake[2]: *** [ratpoints] Error 1\n./spkg-install: line 34: [: Darwin: integer expression expected\nError building ratpoints\n\nreal    0m2.012s\nuser    0m1.769s\nsys     0m0.215s\nsage: An error occurred while installing ratpoints-2.1.2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /Users/was/build/64bit/sage-4.1.rc1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/Users/was/build/64bit/sage-4.1.rc1/spkg/build/ratpoints-2.1.2 and type 'make'.\nInstead type \"/Users/was/build/64bit/sage-4.1.rc1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/Users/was/build/64bit/sage-4.1.rc1/spkg/build/ratpoints-2.1.2\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/ratpoints-2.1.2] Error 1\n\nreal    8m8.519s\nuser    5m29.564s\nsys     2m6.462s\nError building Sage.\nwstein@bsd:~/build/64bit/sage-4.1.rc1$ \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6492\n\n",
     "created_at": "2009-07-09T02:35:35Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "ratpoints -- new spkg is totally completely broken on OS X 64-bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6492",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -228,15 +227,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6492
 
 ---
 
-archive/issue_comments_052536.json:
+archive/issue_comments_052438.json:
 ```json
 {
     "body": "The first mistake in the spkg is this:\n\n```\nif [ $? -ne 0 ]; then\n    if [ `uname` -ne \"Darwin\" ]; then\n        echo \"Build failed. Trying without SSE2 instructions.\"\n```\n\n\nEvidently \"-ne\" can *only* be used for numerical comparisons. Here we must use the following.\n\n```\nif [ $? -ne 0 ]; then\n    if [ `uname` != \"Darwin\" ]; then\n        echo \"Build failed. Trying without SSE2 instructions.\"\n```\n\n\nAlso, I had to add an -m64 option...\n\nOK, here's the spkg that fixes all the problems:\n\n   http://sage.math.washington.edu/home/wstein/patches/ratpoints-2.1.2.p1.spkg",
     "created_at": "2009-07-09T02:46:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52536",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52438",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -268,15 +267,15 @@ OK, here's the spkg that fixes all the problems:
 
 ---
 
-archive/issue_comments_052537.json:
+archive/issue_comments_052439.json:
 ```json
 {
     "body": "ratpoints is also a problem on some Linux machines: see #6498. The new spkg seems to fix things.",
     "created_at": "2009-07-09T11:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52537",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52439",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -286,15 +285,15 @@ ratpoints is also a problem on some Linux machines: see #6498. The new spkg seem
 
 ---
 
-archive/issue_comments_052538.json:
+archive/issue_comments_052440.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2009-07-09T18:22:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52538",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52440",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -304,15 +303,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_052539.json:
+archive/issue_comments_052441.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-09T18:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52539",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52441",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -322,15 +321,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_052540.json:
+archive/issue_comments_052442.json:
 ```json
 {
     "body": "Merged in sage-4.1 final.",
     "created_at": "2009-07-09T18:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52540",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52442",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -340,15 +339,15 @@ Merged in sage-4.1 final.
 
 ---
 
-archive/issue_comments_052541.json:
+archive/issue_comments_052443.json:
 ```json
 {
     "body": "New spkg here: http://sage.math.washington.edu/home/wstein/patches/ratpoints-2.1.2.p2.spkg",
     "created_at": "2009-07-09T22:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52541",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52443",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -358,15 +357,15 @@ New spkg here: http://sage.math.washington.edu/home/wstein/patches/ratpoints-2.1
 
 ---
 
-archive/issue_comments_052542.json:
+archive/issue_comments_052444.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2009-07-09T22:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52542",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52444",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -376,15 +375,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_052543.json:
+archive/issue_comments_052445.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2009-07-09T22:08:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52543",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52445",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -394,15 +393,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_052544.json:
+archive/issue_comments_052446.json:
 ```json
 {
     "body": "Works this time... :)",
     "created_at": "2009-07-09T23:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52544",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52446",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -412,15 +411,15 @@ Works this time... :)
 
 ---
 
-archive/issue_comments_052545.json:
+archive/issue_comments_052447.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-09T23:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6492",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52545",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6492#issuecomment-52447",
+    "user": "https://github.com/rlmill"
 }
 ```
 

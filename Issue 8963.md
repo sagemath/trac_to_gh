@@ -6,7 +6,7 @@ archive/issues_008963.json:
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat-devel@googlegroups.com\n\nThe row_stabilizer method of a tableau ignores elements of the tableau which are alone in their row, and this can cause problems.  For example,\n\n\n```\nsage: t = Tableau([[1,2],[3]])\nsage: rs = t.row_stabilizer()\nsage: PermutationGroupElement([(1,2),(3,)]) in rs\nFalse\nsage: rs.one().list()\n[1, 2]\n```\n\n\nThe expected output is \"True\" and \"[1, 2, 3]\".\n\nI will attach a patch fixing this in a few minutes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8963\n\n",
     "created_at": "2010-05-14T15:32:55Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008963.json:
     "title": "Make tableau row_stabilizer return group of perms involving all elements of the tableau",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8963",
-    "user": "@jdchristensen"
+    "user": "https://github.com/jdchristensen"
 }
 ```
 Assignee: sage-combinat
@@ -46,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8963
 
 ---
 
-archive/issue_comments_082610.json:
+archive/issue_comments_082474.json:
 ```json
 {
     "body": "Attachment [trac_8963_row_stabilizer.patch](tarball://root/attachments/some-uuid/ticket8963/trac_8963_row_stabilizer.patch) by @jdchristensen created at 2010-05-14 15:41:34\n\nThe attached patch also adds a method called entries() which returns a list containing the entries of the tableau.  All tests pass and coverage for tableau.py is 100%.  The patch is based on sage-4.4.",
     "created_at": "2010-05-14T15:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82610",
-    "user": "@jdchristensen"
+    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82474",
+    "user": "https://github.com/jdchristensen"
 }
 ```
 
@@ -66,15 +66,15 @@ The attached patch also adds a method called entries() which returns a list cont
 
 ---
 
-archive/issue_comments_082611.json:
+archive/issue_comments_082475.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-15T02:56:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82611",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82475",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -84,15 +84,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_082612.json:
+archive/issue_comments_082476.json:
 ```json
 {
     "body": "Looks good to me.\n\nApplies cleanly to sage-4.4.4.alpha0, all tests pass.",
     "created_at": "2010-06-12T17:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82612",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82476",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -104,15 +104,15 @@ Applies cleanly to sage-4.4.4.alpha0, all tests pass.
 
 ---
 
-archive/issue_comments_082613.json:
+archive/issue_comments_082477.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-12T17:10:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82613",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82477",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -122,15 +122,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_082614.json:
+archive/issue_comments_082478.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-21T01:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8963",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82614",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8963#issuecomment-82478",
+    "user": "https://github.com/qed777"
 }
 ```
 

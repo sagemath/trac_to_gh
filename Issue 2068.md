@@ -6,15 +6,14 @@ archive/issues_002068.json:
     "body": "Assignee: mabshoff\n\n\n```\n\nHi,\n\nlibpng-1.2.22.p5 added this in spkg-install:\nLDFLAGS=\"-L\\\"$SAGE_LOCAL/lib\\\" $LDFLAGS\"\n\nI tried the following modification:\nLDFLAGS=\"-L$SAGE_LOCAL/lib $LDFLAGS\"\nand it worked.\n\nThe problem is that quoting the arg of -L seems still wise as the path\ncould contain a space but it seems it interferes with the (eval\n\"$ac_link\") 2>conftest.er1  in src/configure.\nE.g. the original LD_FLAGS definition works if we use instead: (eval\nbash -c \\\"$ac_link\\\") 2>conftest.er1\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2068\n\n",
     "created_at": "2008-02-05T23:13:09Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "zlib -- not picking up the right zlib when building libpng",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2068",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2068
 
 ---
 
-archive/issue_comments_013386.json:
+archive/issue_comments_013355.json:
 ```json
 {
     "body": "An updated spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.2/alpha0/libpng-1.2.22.p5.spkg\n\nCompile tested on Linux & OSX.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-15T02:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2068",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2068#issuecomment-13386",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2068#issuecomment-13355",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -74,15 +73,15 @@ Michael
 
 ---
 
-archive/issue_comments_013387.json:
+archive/issue_comments_013356.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-15T02:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2068",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2068#issuecomment-13387",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2068#issuecomment-13356",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -92,15 +91,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_013388.json:
+archive/issue_comments_013357.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha0",
     "created_at": "2008-02-15T02:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2068",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2068#issuecomment-13388",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2068#issuecomment-13357",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

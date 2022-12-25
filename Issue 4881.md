@@ -6,15 +6,14 @@ archive/issues_004881.json:
     "body": "Assignee: mabshoff\n\nKeywords: 2D and 3D plotting\n\nThe Enthought Tool Suite [http://code.enthought.com/projects/](http://code.enthought.com/projects/)\nhas a lot of external dependencies,\n\nThe easiest way to install ets-3.1.1.spkg is\n\n* download the spkgs from [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/) into\na $SAGE_ROOT of a reasonable recent sage\n\n* download the shell script [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/install_ets.sh](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/install_ets.sh) and run it in $SAGE_ROOT\n\n* wait a long time :)\n\nAfter installation do a ./sage -sh and type mayavi2 to test the installation of\nmayavi.\n\nYou can use mayavi mlab from within sage by starting with ./sage -wthread\n\nSee some screenshots: [http://picasaweb.google.com/j.spies88/ScreenshotsMlabMayavi210#](http://picasaweb.google.com/j.spies88/ScreenshotsMlabMayavi210#)\n\nThe user guide of Mayavi2 is Sphinxyfied: [http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/](http://code.enthought.com/projects/mayavi/docs/development/html/mayavi/)\n\nCheers,\n\nJaap\n\nIssue created by migration from https://trac.sagemath.org/ticket/4881\n\n",
     "created_at": "2008-12-26T15:52:24Z",
     "labels": [
-        "packages: experimental",
-        "minor",
-        "enhancement"
+        "component: packages: experimental",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with spkgs, needs review] Experimental spkg for ETS-3.1.1 (including Chaco and Mayavi2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4881",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: mabshoff
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4881
 
 ---
 
-archive/issue_comments_036966.json:
+archive/issue_comments_036894.json:
 ```json
 {
     "body": "Some screenshots from Chaco:\n\n[http://code.enthought.com/projects/chaco/gallery.php](http://code.enthought.com/projects/chaco/gallery.php)\n\nJaap",
     "created_at": "2008-12-26T17:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36966",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36894",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -76,15 +75,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036967.json:
+archive/issue_comments_036895.json:
 ```json
 {
     "body": "AT an absolutely bare minimum I would like to see this actually work on sage.math before it gets a positive review.  I just tried and even vtk wouldn't compile:\n\n```\n-- Looking for glXGetProcAddress - not found\n-- Could not find extension loader.  Extensions disabled.\nCMake Error: This project requires some variables to be set,\nand cmake can not find them.\nPlease set the following variables:\nOPENGL_INCLUDE_DIR (ADVANCED)\n\n-- Configuring done\nError configuring VTK\n\nreal    0m19.176s\nuser    0m13.070s\nsys     0m4.960s\nsage: An error occurred while installing vtk-5.2\n```\n\n\nI then installed the libgl1-mesa-dev deb.\n\nI do wish there could be a short quick sample .C program or autoconf script or something, that is very very unlikely to work unless opengl dev libraries, and all other obvious non-standard dependencies for building ETS are available.  Then this could be run first before the rest. \n\n\nBuildling takes a long time, so I'll comment further on this ticket as information becomes available.   I fully expect this to all work; it's just a matter of building the right dependencies.",
     "created_at": "2008-12-29T06:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36967",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36895",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -119,15 +118,15 @@ Buildling takes a long time, so I'll comment further on this ticket as informati
 
 ---
 
-archive/issue_comments_036968.json:
+archive/issue_comments_036896.json:
 ```json
 {
     "body": "After doing this:\n\n```\napt-get install libgl1-mesa-dev libglu1-mesa-dev\n```\n\non sage.math, I was able to install all spkg's on the system-wide sage.",
     "created_at": "2008-12-29T08:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36968",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36896",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -143,15 +142,15 @@ on sage.math, I was able to install all spkg's on the system-wide sage.
 
 ---
 
-archive/issue_comments_036969.json:
+archive/issue_comments_036897.json:
 ```json
 {
     "body": "Using vtk and wxPython we need an OpenGL (mesa is a good candidate).\n\nWe can test the installation of OpenGL at the start of spkg-install:\n\n\n```\n# Test OpenGL\nglxinfo\nif [ $? -ne 0 ]; then\n    echo \"Failed to find an OpenGL. Install mesa!\"\n    exit 1\nfi\n\n```\n\n\nI tested this by putting away /usr/bin/glxinfo. Works for me.\n\nI'll put up a changed vtk-5.2.skpg.\n\nSame for wxPython.\n\nJaap",
     "created_at": "2008-12-29T12:32:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36969",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36897",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -183,15 +182,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036970.json:
+archive/issue_comments_036898.json:
 ```json
 {
     "body": "On sage.math:\n\n\n\n```\njsp@sage:~/sage/sage$ glxinfo\nThe program 'glxinfo' is currently not installed.  To run 'glxinfo' please ask your administrator to install the package 'mesa-utils'\n-bash: glxinfo: command not found\njsp@sage:~/sage/sage$ \n\n```\n\n\nJaap",
     "created_at": "2008-12-29T13:40:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36970",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36898",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -214,15 +213,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036971.json:
+archive/issue_comments_036899.json:
 ```json
 {
     "body": "Yeah, glxinfo is evidently separate from `libgl1-mesa-dev libglu1-mesa-dev` which are the devel libraries related to opengl that have to be installed.   I think it might be better to make a small minimal C program that tests for the presence of those libraries.",
     "created_at": "2008-12-30T01:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36971",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36899",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -232,15 +231,15 @@ Yeah, glxinfo is evidently separate from `libgl1-mesa-dev libglu1-mesa-dev` whic
 
 ---
 
-archive/issue_comments_036972.json:
+archive/issue_comments_036900.json:
 ```json
 {
     "body": "Building is one thing. Using the package is another!\n\nI can't imagine a mesa (OpenGL) install under linux without glxinfo, but ...\n\nSo I think glxinfo -h is a good test.\n\nIf not available, we suggest installation of all mesa.\n\nIn Fedora: sudo yum install \"mesa*\"\n\nTesting the libraries is not enough!",
     "created_at": "2008-12-30T02:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36972",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36900",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -260,15 +259,15 @@ Testing the libraries is not enough!
 
 ---
 
-archive/issue_comments_036973.json:
+archive/issue_comments_036901.json:
 ```json
 {
     "body": "> \"Testing the libraries is not enough!\"\n\nI tried to test whether or not this is the case, since right now sage.math is the un-imaginable opengl without glxinfo.  But when I tried I get that mayavi2 doesn't work at all even installed even after successfully installing all the spkg's in your distro.  But it doesn't look like this has anything to do with glxinfo:\n\n```\nwstein@sage:~/tmp/ETS$ ls -l /usr/local/sage/spkg/installed/*ets*\n-rw-r--r-- 1 root root 260 2008-12-28 22:51 /usr/local/sage/spkg/installed/ets-3.1.1\nwstein@sage:~/tmp/ETS$ ls -l /usr/local/sage/spkg/installed/*vtk*\n-rw-r--r-- 1 root root 258 2008-12-28 22:28 /usr/local/sage/spkg/installed/vtk-5.2\nwstein@sage:~/tmp/ETS$ sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\nwstein@sage:~/tmp/ETS$ !which mayavi2\nwhich sage mayavi2\n/usr/local/sage/sage\n/usr/local/sage/local/bin/mayavi2\nwstein@sage:~/tmp/ETS$ !mayavi2\nmayavi2\nTraceback (most recent call last):\n  File \"/usr/local/sage/local/bin/mayavi2\", line 5, in <module>\n    from pkg_resources import load_entry_point\n  File \"build/bdist.linux-x86_64/egg/pkg_resources.py\", line 2561, in <module>\n  File \"build/bdist.linux-x86_64/egg/pkg_resources.py\", line 626, in require\n  File \"build/bdist.linux-x86_64/egg/pkg_resources.py\", line 524, in resolve\npkg_resources.DistributionNotFound: EnthoughtBase>=3.0.2.dev\n```\n\n\nI'm not giving this a positive review until it works on sage.math. Do you have an account on sage.math?  If so, I think you should get it to work there, so I can give it a positive review.",
     "created_at": "2008-12-30T18:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36973",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36901",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -309,15 +308,15 @@ I'm not giving this a positive review until it works on sage.math. Do you have a
 
 ---
 
-archive/issue_comments_036974.json:
+archive/issue_comments_036902.json:
 ```json
 {
     "body": "> I'm not giving this a positive review until it works on sage.math. Do you have an account \n> on sage.math? If so, I think you should get it to work there, so I can give it a positive \n> review.\n\nI just want to add that I'm fully willing to install any standard ubuntu packages to get this to work.",
     "created_at": "2008-12-30T18:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36974",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36902",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -331,15 +330,15 @@ I just want to add that I'm fully willing to install any standard ubuntu package
 
 ---
 
-archive/issue_comments_036975.json:
+archive/issue_comments_036903.json:
 ```json
 {
     "body": "Does wxPython work?\n\n\n\n```\nTo test do ./sage -sh\ncd to local/share/wxPython/demo\nThan try python demo.py\n```\n\n\nIf not the OpenGL install is not working.\n\nYes, I do have an account, but don't know how to test and run X applications through ssh.\n\nIs mesa-utils a standard ubuntu package? \n\nJaap",
     "created_at": "2008-12-30T18:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36975",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36903",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -366,15 +365,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036976.json:
+archive/issue_comments_036904.json:
 ```json
 {
     "body": "I need a proper X display:\n\n\n\n```\njsp@sage:~/sage/sage$ ./sage -wthread\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Unable to access the X Display, is $DISPLAY set properly?\njsp@sage:~/sage/sage$ \n| Sage Version 3.2.1, Release Date: 2008-12-01                       |\n| Type notebook() for the GUI, and license() for information.        |\n```\n\n\nCheers,\n\nJaap",
     "created_at": "2008-12-30T22:41:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36976",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36904",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -401,15 +400,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036977.json:
+archive/issue_comments_036905.json:
 ```json
 {
     "body": "Replying to [comment:11 jsp]:\n> I need a proper X display:\n\nLog into sage.math via \"ssh -X\"\n\nCheers,\n\nMichael",
     "created_at": "2008-12-30T22:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36977",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36905",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -426,15 +425,15 @@ Michael
 
 ---
 
-archive/issue_comments_036978.json:
+archive/issue_comments_036906.json:
 ```json
 {
     "body": "Replying to [comment:12 mabshoff]:\n> Replying to [comment:11 jsp]:\n> > I need a proper X display:\n> \n> Log into sage.math via \"ssh -X\"\n> \n> Cheers,\n> \n> Michael\n\n\nDid you test that?\n\n\n```\n/usr/bin/X11/xauth:  creating new authority file /home/jsp/.Xauthority\njsp@sage:~$ startx\n\nX: cannot stat /etc/X11/X (No such file or directory), aborting.\ngiving up.\nxinit:  No such file or directory (errno 2):  unable to connect to X server\nxinit:  No such process (errno 3):  Server error.\nCouldnt get a file descriptor referring to the console\njsp@sage:~$ \n\n\nJaap\n\n\n```\n",
     "created_at": "2008-12-31T11:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36978",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36906",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -474,15 +473,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036979.json:
+archive/issue_comments_036907.json:
 ```json
 {
     "body": "Replying to [comment:9 was]:\n\n> I just want to add that I'm fully willing to install any standard ubuntu packages to get this to work.  \n\nLet us be realistic. How can we test and run X programs without an X-server?\n\nThis packages should be run and tested on a local PC with a good configured /etc/xorg.conf, etcetera.\n\nJaap",
     "created_at": "2008-12-31T14:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36979",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36907",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -500,15 +499,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036980.json:
+archive/issue_comments_036908.json:
 ```json
 {
     "body": "Maybe the following will work:\n\n\n```\nThe use of ssh enables a secure connection from a local X server to a remote application server.\n\n    * Set X11Forwarding and AllowTcpForwarding entries to yes in /etc/ssh/sshd_config of the remote host, if you want to avoid corresponding command-line options.\n\n    * Start the X server on the local host. (running)\n\n    * Open an xterm in the local host. (done)\n\n    * Run ssh to establish a connection with the remote site.\n\n           localname @ localhost $ ssh -q -X -l loginname remotehost.domain\n           Password:\n           .....\n\n    * Run X application commands on the remote site.\n\n           loginname @ remotehost $ ./sage -wthread &\n\nThis method allows the display of the remote X client output as if it were locally connected through a local UNIX domain socket. \n```\n\n\n\nJaap",
     "created_at": "2008-12-31T14:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36980",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36908",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -545,15 +544,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036981.json:
+archive/issue_comments_036909.json:
 ```json
 {
     "body": "Replying to [comment:15 jsp]:\n> Maybe the following will work:\n> \n\n> This method allows the display of the remote X client output as if it were locally connected through a local UNIX domain socket. \n\n\n\nThis works on my local network.\n\nJaap",
     "created_at": "2008-12-31T15:32:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36981",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36909",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -573,15 +572,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036982.json:
+archive/issue_comments_036910.json:
 ```json
 {
     "body": "Testing this over the net is mission impossible!\n\nI now know what ETS means! Extra Terrestial Software.\n\nI installed Ubuntu on an old laptop. Installed mesa, and more. It works like a charm!\n\nsage.math is not the right platform to build, run and debug X11/OpenGL based software\nbased on interaction!\n\nJaap",
     "created_at": "2009-01-18T19:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36982",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36910",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -600,15 +599,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036983.json:
+archive/issue_comments_036911.json:
 ```json
 {
     "body": "Among others I installed the following (most as dependencies):\n\n\n```\nlibice-dev (version 2:1.0.4-1) will be installed\nlibpthread-stubs0 (version 0.1-2) will be installed\nlibpthread-stubs0-dev (version 0.1-2) will be installed\nlibsm-dev (version 2:1.0.3-2) will be installed\nlibx11-dev (version 2:1.1.5-2ubuntu1.1) will be installed\nlibxau-dev (version 1:1.0.3-3) will be installed\nlibxcb-xlib0-dev (version 1.1-1.1) will be installed\nlibxcb1-dev (version 1.1-1.1) will be installed\nlibxdmcp-dev (version 1:1.0.2-3) will be installed\nlibxext-dev (version 2:1.0.4-1) will be installed\nlibxi-dev (version 2:1.1.3-2build1) will be installed\nlibxt-dev (version 1:1.0.5-3) will be installed\ntcl8.4-dev (version 8.4.19-2) will be installed\ntk8.4-dev (version 8.4.19-1) will be installed\nx11proto-core-dev (version 7.0.12-1ubuntu0.1) will be installed\nx11proto-input-dev (version 1.4.3-2ubuntu6) will be installed\nx11proto-kb-dev (version 1.0.3-3ubuntu1) will be installed\nx11proto-xext-dev (version 7.0.2-6build1) will be installed\nxtrans-dev (version 1.2-2) will be installed\n\n\n\nbuild-essential (version 11.4) will be installed\ndebhelper (version 7.0.13ubuntu1) will be installed\ndpkg-dev (version 1.14.20ubuntu6) will be installed\nfreeglut3-dev (version 2.4.0-6.1) will be installed\ngettext (version 0.17-3ubuntu2) will be installed\nhtml2text (version 1.3.2a-5) will be installed\nintltool-debian (version 0.35.0+20060710.1) will be installed\nlesstif2 (version 1:0.95.0-2.1ubuntu1) will be installed\nlibatk1.0-dev (version 1.24.0-0ubuntu1) will be installed\nlibcairo2-dev (version 1.8.0-0ubuntu1.1) will be installed\nlibexpat1-dev (version 2.0.1-4) will be installed\nlibfontconfig1-dev (version 2.6.0-1ubuntu4) will be installed\nlibfreetype6-dev (version 2.3.7-2ubuntu1) will be installed\nlibgl1-mesa-dev (version 7.2-1ubuntu2) will be installed\nlibglib2.0-dev (version 2.18.2-0ubuntu2) will be installed\nlibglu1-mesa-dev (version 7.2-1ubuntu2) will be installed\nlibglw1-mesa (version 7.0.3-0ubuntu1) will be installed\nlibgtk2.0-dev (version 2.14.4-0ubuntu1) will be installed\nlibgtkgl2.0-1 (version 2.0.0-1) will be installed\nlibgtkgl2.0-dev (version 2.0.0-1) will be installed\nlibgtkglext1-dev (version 1.2.0-1ubuntu1) will be installed\nlibgtkglextmm-x11-1.2 (version 1.2.0-0ubuntu1) will be installed\nlibmail-sendmail-perl (version 0.79-5) will be installed\nlibpango1.0-dev (version 1.22.2-0ubuntu1) will be installed\nlibpixman-1-dev (version 0.12.0-1) will be installed\nlibpng12-dev (version 1.2.27-1) will be installed\nlibsys-hostname-long-perl (version 1.4-2) will be installed\nlibxcb-render-util0-dev (version 0.2+git36-1) will be installed\nlibxcb-render0-dev (version 1.1-1.1) will be installed\nlibxcomposite-dev (version 1:0.4.0-3) will be installed\nlibxcursor-dev (version 1:1.1.9-1) will be installed\nlibxdamage-dev (version 1:1.1.1-4) will be installed\nlibxfixes-dev (version 1:4.0.3-2) will be installed\nlibxft-dev (version 2.1.12-3ubuntu1) will be installed\nlibxinerama-dev (version 2:1.0.3-2) will be installed\nlibxmu-dev (version 2:1.0.4-1) will be installed\nlibxmu-headers (version 2:1.0.4-1) will be installed\nlibxrandr-dev (version 2:1.2.3-1) will be installed\nlibxrender-dev (version 1:0.9.4-2) will be installed\nmesa-common-dev (version 7.2-1ubuntu2) will be installed\nmesademos (version 6.2.1-1) will be installed\npo-debconf (version 1.0.15ubuntu1) will be installed\npython-opengl (version 3.0.0~b3-1ubuntu2) will be installed\nx11proto-composite-dev (version 1:0.4-2) will be installed\nx11proto-damage-dev (version 1:1.1.0-2build1) will be installed\nx11proto-fixes-dev (version 1:4.0-3) will be installed\nx11proto-gl-dev (version 1.4.9-1) will be installed\nx11proto-randr-dev (version 1.2.2-1) will be installed\nx11proto-render-dev (version 2:0.9.3-2) will be installed\nx11proto-xinerama-dev (version 1.1.2-5ubuntu1) will be installed\nzlib1g-dev (version 1:1.2.3.3.dfsg-12ubuntu1) will be installed\n\n```\n\n\nand xorg-dev: libXtst, etc,\n\nJaap",
     "created_at": "2009-01-19T00:00:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36983",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36911",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -701,15 +700,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036984.json:
+archive/issue_comments_036912.json:
 ```json
 {
     "body": "I hope that it would be possible to use from sage.math via X11 forwarding, but the OpenGL may be problematic.  As it is, I get:\n\n\n```\njason@sage:~$ sage -sh\n\nStarting subshell with Sage environment variables set.\nBe sure to exit when you are done and do not do anything\nwith other copies of Sage!\n\njason@sage:~$ mayavi2 \nTraceback (most recent call last):\n  File \"/usr/local/sage/local/bin/mayavi2\", line 5, in <module>\n    from pkg_resources import load_entry_point\n  File \"build/bdist.linux-x86_64/egg/pkg_resources.py\", line 2561, in <module>\n  File \"build/bdist.linux-x86_64/egg/pkg_resources.py\", line 626, in require\n  File \"build/bdist.linux-x86_64/egg/pkg_resources.py\", line 524, in resolve\npkg_resources.DistributionNotFound: EnthoughtBase>=3.0.2.dev\n```\n\n\nX11 Forwarding works for me (via ssh -X sage.math.washington.edu).\n\nI'll try installing these packages locally.",
     "created_at": "2009-01-30T17:06:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36984",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36912",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -742,15 +741,15 @@ I'll try installing these packages locally.
 
 ---
 
-archive/issue_comments_036985.json:
+archive/issue_comments_036913.json:
 ```json
 {
     "body": "I ran into some very annoying problems with this package, where it appeared to build successfully but then failed to work.  I can't recommend this spkg (even for experimental) until something is done.\n\nThere were two separate issues.  Both allowed an apparently successful build which then failed to run.  The first is that some X libraries were not installed on my machine; when I tried to run mayavi2, I got the \n\n```\npkg_resources.DistributionNotFound: EnthoughtBase>=3.0.2.dev\n```\n\nerror described above.\n\nOnce that was fixed, mayavi2 still would not run; this time I got this error:\n\n```\nImportError: cannot import name cached_property\n```\n\nThis time the problem was that I had installs of previous versions of these spkgs in site-python.  Once I removed those, I was able to successfully install and run this spkg.\n\nIMHO, the current status is not acceptable even for experimental.  At least, the package should detect at build time that it did not build successfully (that mayavi2 cannot be run successfully), and fail the build in this case; and also print out some useful text (Something along the lines of \"Try installing xorg-dev and removing old versions of this package from site-python\", but a bit more detailed and acknowledging the existence of systems other than Debian/Ubuntu).",
     "created_at": "2009-02-04T05:53:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36985",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -778,15 +777,15 @@ IMHO, the current status is not acceptable even for experimental.  At least, the
 
 ---
 
-archive/issue_comments_036986.json:
+archive/issue_comments_036914.json:
 ```json
 {
     "body": "Replying to [comment:20 cwitty]:\n> I ran into some very annoying problems with this package, where it appeared to build successfully but then failed to work.  I can't recommend this spkg (even for experimental) until something is done.\n> \n\nI added some tests.\n\n> There were two separate issues.  Both allowed an apparently successful build which then failed to run.  The first is that some X libraries were not installed on my machine; when I tried to run mayavi2, I got the \n> {{{\n> pkg_resources.DistributionNotFound: EnthoughtBase>=3.0.2.dev\n> }}}\n> error described above.\n> \n> Once that was fixed, mayavi2 still would not run; this time I got this error:\n> {{{\n> ImportError: cannot import name cached_property\n> }}}\n> This time the problem was that I had installs of previous versions of these spkgs in site-python.  Once I removed those, I was able to successfully install and run this spkg.\n> \n\nspkg-install now removes mayavi_2.x.y installs.\n\n> IMHO, the current status is not acceptable even for experimental.  At least, the package should detect at build time that it did not build successfully (that mayavi2 cannot be run successfully), and fail the build in this case; and also print out some useful text (Something along the lines of \"Try installing xorg-dev and removing old versions of this package from site-python\", but a bit more detailed and acknowledging the existence of systems other than Debian/Ubuntu).\n\nThe first installs were on Fedora 9 and 10! Ubuntu/Debian came along recently.\n\nI put in some more tests in spkg-install. Maybe this helps. I could build this package on sage.math (there are some runtime problems).\n\nAt the end I give some advice how to check the install.\n\nSee sage.math.washington.edu/home/jsp/sage/sage-3.2.3/\n\nTry ./sage -sh\n\nmayavi2\n\nthere\n\nCheers,\n\nJaap",
     "created_at": "2009-02-06T22:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36986",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36914",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -835,15 +834,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036987.json:
+archive/issue_comments_036915.json:
 ```json
 {
     "body": "OK, let me state once more: this is taking way to long! Remember this is experimental!!\n\nSome guys have installed this with success, among them Carl Witty, Jason Grout and Ondrej Certik on various hardware.\n\nI resign on having this run on sage.math. There are to much problems with building and debugging this on a remote server!\n\nSo I propose the wstein criterium: 'this should run on sage.math' will go away. If not, I'm off and propose this ticket to be closed. And I'll open a new ticket, more up to date: ets-3.1.1.rev23061.spkg\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ETS/ets-3.1.1.rev23061.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/ets-3.1.1.rev23061.spkg)\n\nto be found with dependencies in:\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ETS/](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/)\n\nAnyway time flies, so we better go for the latest.\n\nJaap",
     "created_at": "2009-02-26T22:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36987",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36915",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -869,15 +868,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036988.json:
+archive/issue_comments_036916.json:
 ```json
 {
     "body": "Replying to [comment:22 jsp]:\n\nHi Jaap,\n\n> OK, let me state once more: this is taking way to long! Remember this is experimental!!\n\nSee my comments on #4880.\n\n> Some guys have installed this with success, among them Carl Witty, Jason Grout and Ondrej Certik on various hardware.\n\nYes, but after updating the spkg you did not change the summary, hence if you look for things to review this ticket falls off my list since its status is \"needs work\".\n\n\n> I resign on having this run on sage.math. There are to much problems with building and debugging this on a remote server!\n> \n> So I propose the wstein criterium: 'this should run on sage.math' will go away.\n\nIt is only for optional spkgs, not experimental. Experimental can be broken badly, there is no guarantees. It would generally be nice if experimental spkgs worked on sage.math, but given the missing X and all that it is hard to make things like this spkg work.\n\n> If not, I'm off and propose this ticket to be closed. And I'll open a new ticket, more up to date: ets-3.1.1.rev23061.spkg\n> \n> [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/ets-3.1.1.rev23061.spkg](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/ets-3.1.1.rev23061.spkg)\n> \n> to be found with dependencies in:\n> \n> [http://sage.math.washington.edu/home/jsp/SPKGS/ETS/](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/)\n> \n> Anyway time flies, so we better go for the latest.\n> \n> Jaap\n\n\nI have updated the summary to reflect the updated spkg. Generally there is no point in closing this and opening another ticket if you updated the spkg in the admittedly too long review time.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-26T23:02:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36988",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36916",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -923,15 +922,15 @@ Michael
 
 ---
 
-archive/issue_comments_036989.json:
+archive/issue_comments_036917.json:
 ```json
 {
     "body": "Replying to [comment:23 mabshoff]:\n\n> > So I propose the wstein criterium: 'this should run on sage.math' will go away.\n> \n> It is only for optional spkgs, not experimental. Experimental can be broken badly, there is no guarantees. It would generally be nice if experimental spkgs worked on sage.math, but given the missing X and all that it is hard to make things like this spkg work.\n> \n\nCiting from a comment from wstein above: \n\nI'm not giving this a positive review until it works on sage.math. Do you have an account on sage.math? If so, I think you should get it to work there, so I can give it a positive review.\n\nSo, I was confused in some way! Let us have some clear criteria on experimental :).\n\nJaap",
     "created_at": "2009-02-26T23:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36989",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36917",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -954,15 +953,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036990.json:
+archive/issue_comments_036918.json:
 ```json
 {
     "body": "An animation, see:\n\n[http://sage.math.washington.edu/home/jsp/animations/anim_surf.mov](http://sage.math.washington.edu/home/jsp/animations/anim_surf.mov)\n\nCheers,\n\nJaap",
     "created_at": "2009-02-27T19:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36990",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36918",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -978,15 +977,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036991.json:
+archive/issue_comments_036919.json:
 ```json
 {
     "body": "\n```\n    So... do you want us to\n\n    [ ] drop all the spkg's in experimental, or\n\n\nDrop them in experimental. I think that will give them some exposure\nand who knows there are people around who can help porting to OSX\nand Windows. I would like to see comments in the second column of\nhttp://www.sagemath.org/packages/experimental/\n\n```\n\n\nSince these are experimental and our standards for that are \"we know where to find you if you sneak 'rm -rf *' in\", but not much else, and based on Jaap's wishes above, I give this a positive review.",
     "created_at": "2009-03-16T18:06:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36991",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36919",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -1011,15 +1010,15 @@ Since these are experimental and our standards for that are "we know where to fi
 
 ---
 
-archive/issue_comments_036992.json:
+archive/issue_comments_036920.json:
 ```json
 {
     "body": "For the latest spks see:\n\n[http://sage.math.washington.edu/home/jsp/SPKGS/ETS/?C=M;O=D](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/?C=M;O=D)\n\nFor instructions see the REAME.txt\n\nJaap",
     "created_at": "2009-03-17T18:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36992",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36920",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -1035,15 +1034,15 @@ Jaap
 
 ---
 
-archive/issue_comments_036993.json:
+archive/issue_comments_036921.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-01T05:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36993",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36921",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -1053,15 +1052,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_036994.json:
+archive/issue_comments_036922.json:
 ```json
 {
     "body": "Closed in the Sage 3.4.1 time frame by merging ets-3.1.1.rev23241.spkg into the experimental spkg repo.\n\nJaap: Is there anything else that needed uploading? In case there is just comment on the ticket and I will take care of it - no need to reopen this ticket or open another one.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-01T05:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36994",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36922",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -1077,15 +1076,15 @@ Michael
 
 ---
 
-archive/issue_comments_036995.json:
+archive/issue_comments_036923.json:
 ```json
 {
     "body": "Replying to [comment:28 mabshoff]:\n\n> Jaap: Is there anything else that needed uploading? In case there is just comment on the ticket and I will take care of it - no need to reopen this ticket or open another one.\n> \n\nNeeded to build ets:\n\n\n```\nconfigobj-4.5.3.spkg\nreportlab-2.2.spkg\nsetupdocs.spkg\nswig-1.3.31.spkg\nvtk-5.2.1.spkg\nwxPython-2.8.9.1.spkg\n```\n\n\nAll can be found here:\n[http://sage.math.washington.edu/home/jsp/SPKGS/ETS/](http://sage.math.washington.edu/home/jsp/SPKGS/ETS/)",
     "created_at": "2009-04-01T08:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4881",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36995",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/4881#issuecomment-36923",
+    "user": "https://github.com/jaapspies"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002896.json:
     "body": "Assignee: boothby\n\nCC:  @haraldschilly\n\nKeywords: utf-8\n\nLars Fischer wrote on [http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/a2e3a6c7e12a1e33 sage-support) (and I edited for the bug report):\n\nPlease note that before I published the worksheet the \u00dc in the cells\nwere a \u00dc, after publishing, the \"\u00dc\" look like \"\ufffd\" in the published document.\n\nMy workflow was\n* New worksheet\n* Edit, and I inserted everything in the Edit-Field.\n* Use, and evaluate the first two cells.\n* Then I published.\n\n\n```\nprint \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n\n\n```\nprint \"Ue\" #print \"\u00dc\"\n///\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\nUnicodeDecodeError: 'utf8' codec can't decode byte 0xdc in position 0:\nunexpected end of data\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2896\n\n",
     "created_at": "2008-04-12T12:05:51Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "Notebook can't handle publishing of Umlauts (UTF-8)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2896",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: boothby
@@ -65,15 +64,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2896
 
 ---
 
-archive/issue_comments_019931.json:
+archive/issue_comments_019890.json:
 ```json
 {
     "body": "Changing keywords from \"utf-8\" to \"utf-8, notebook, encoding\".",
     "created_at": "2008-04-12T12:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19931",
-    "user": "lars.fischer"
+    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19890",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lars.fischer"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing keywords from "utf-8" to "utf-8, notebook, encoding".
 
 ---
 
-archive/issue_comments_019932.json:
+archive/issue_comments_019891.json:
 ```json
 {
     "body": "Hello,\n\nwhat happened when I click on publish, is only a symptom. My problem is really simple:\n**I cannot use unicode inside a notebook cell.**\n\nPlease create a new empty worksheet and enter the next examples in different cells, to see the problem:\n\n```\n# this is what I want to do, but I only get exceptions\nprint '\u00dc'\n# also exceptions\nprint u'\u00dc'\nprint ur'\u00dc'\n\n# This works but it is ugly. If I want to convince some students to use sage with this, they will laugh\nprint u'\\xdc'   \n# \u00dc \n\n# An this is interesting because the same question mark occurs when I hit for example publish:\nprint '\\xdc'     \n# \ufffd  \n```\n\n\nWith best regards,\n\nLars Fischer",
     "created_at": "2008-04-12T12:46:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19932",
-    "user": "lars.fischer"
+    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19891",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lars.fischer"
 }
 ```
 
@@ -127,15 +126,15 @@ Lars Fischer
 
 ---
 
-archive/issue_comments_019933.json:
+archive/issue_comments_019892.json:
 ```json
 {
     "body": "Hello,\n\nWhen I open a new worksheet, I check that Firefox is set to unicode. I enter the print statements from my previous comment.\n\nThen I click on Text. And it seems that the Text-View is no longer in Unicode. To see what I mean, please toggle Encoding between Unicode and Western. \n\nWith best regards,\n\nLars Fischer",
     "created_at": "2008-04-12T13:04:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19933",
-    "user": "lars.fischer"
+    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19892",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lars.fischer"
 }
 ```
 
@@ -153,15 +152,15 @@ Lars Fischer
 
 ---
 
-archive/issue_comments_019934.json:
+archive/issue_comments_019893.json:
 ```json
 {
     "body": "This sounds very much like #1477. \n\nCheers,\n\nMichael",
     "created_at": "2008-04-20T05:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19934",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19893",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -175,15 +174,15 @@ Michael
 
 ---
 
-archive/issue_comments_019935.json:
+archive/issue_comments_019894.json:
 ```json
 {
     "body": "Changing assignee from boothby to tclemans.",
     "created_at": "2008-08-21T22:34:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19935",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19894",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -193,15 +192,15 @@ Changing assignee from boothby to tclemans.
 
 ---
 
-archive/issue_comments_019936.json:
+archive/issue_comments_019895.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-23T02:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19936",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19895",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -211,15 +210,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_019937.json:
+archive/issue_comments_019896.json:
 ```json
 {
     "body": "Fixed via #4547 and #5211.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T21:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19937",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19896",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -233,15 +232,15 @@ Michael
 
 ---
 
-archive/issue_comments_019938.json:
+archive/issue_comments_019897.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-23T21:38:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2896",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19938",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2896#issuecomment-19897",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

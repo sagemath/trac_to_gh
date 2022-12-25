@@ -6,15 +6,14 @@ archive/issues_008534.json:
     "body": "Assignee: tbd\n\nCC:  @jaapspies mvngu @jhpalmieri @fchapoton @dimpase\n\nSage version 4.3.4.alpha1 is the first release to actually build and pass all doc tests on Solaris 10 (SPARC). A list is given of the succeess and failures. The system used was:\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n* Patch #8509 removing the -o option to grep to allow optional packages to install. \n\n == Optional packages which fail to install == \nHere is a list of the optional packages which fail to install. Hopefully this list can be reduced over time. \n\n* ace-5.0.p0 #8531\n* database_gap-4.4.12 #8514\n* database_stein_watkins_mini #8512\n* extra_docs-20070208 #8518\n* frobby-0.7.6 #8515\n* gap_packages-4.4.12_2 #8520\n* ginv-1.9-20080723 #8516\n* gmpy-1.0.1 ##8517\n* graphviz-2.16.1.p0 #7438\n* libcocoa-0.9930 #8521 (see also #8527)\n* mpi4py-1.1.0 #8532\n* nauty-24b7.p1 #7439 (also fails on Ununta 9.10)\n* openmpi-1.1.4 #8522 (this is an old version of MPI)\n* p_group_cohomology-1.2 ##8523\n* valgrind (this will never install, as it is x86 only)\n\n\n == Optional packages that build successfully == \n\n* biopython-1.53.p0\n* cbc-2.3.p1\n* cunningham_tables-1.0\n* database_cremona_ellcurve-20071019.p0\n* database_jones_numfield-v4\n* database_kohel-20060803\n* database_odlyzko_zeta\n* database_sloane_oeis-2005-12\n* database_symbolic_data-20070206\n* fricas-1.0.8\n* gdbm-1.8.3\n* glpk-4.38.p4\n* gnuplotpy-1.8\n* guppy-0.1.8\n* java3d-20070901\n* jsmath-image-fonts-1.4.p3\n* kash3-2008-07-31\n* knoboo-20080411\n* lie-2.2.2.p3\n* lrs-4.2b.p1\n* mpc-0.5.p0\n* nzmath-0.6.0\n* openopt-0.24\n* openssl-0.9.8d.p1\n* phc-2.3.53.p0\n* pyopenssl-0.8\n* pyx-0.10\n* sage-mode-0.6\n* trac-0.11.5.p0\n\n == Important == \nAt the time of writing, no doc tests have been run on the installed packages\n\nIssue created by migration from https://trac.sagemath.org/ticket/8534\n\n",
     "created_at": "2010-03-14T01:31:15Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Optional packages that fail to install on Solaris 10 (SPARC) on sage-4.3.4.alpha1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8534",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -98,15 +97,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8534
 
 ---
 
-archive/issue_comments_077134.json:
+archive/issue_comments_077007.json:
 ```json
 {
     "body": "Removing fixed ones, and also \n* frobby-0.7.6 #8515\nbecause it is now an experimental spkg.  Updating #8515 accordingly.",
     "created_at": "2012-06-05T14:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8534",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8534#issuecomment-77134",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8534#issuecomment-77007",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -118,15 +117,15 @@ because it is now an experimental spkg.  Updating #8515 accordingly.
 
 ---
 
-archive/issue_comments_077135.json:
+archive/issue_comments_077008.json:
 ```json
 {
     "body": "solaris tickets should be closed as outdated",
     "created_at": "2020-06-19T18:07:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8534",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8534#issuecomment-77135",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/8534#issuecomment-77008",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -136,15 +135,15 @@ solaris tickets should be closed as outdated
 
 ---
 
-archive/issue_comments_077136.json:
+archive/issue_comments_077009.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-06-19T18:07:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8534",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8534#issuecomment-77136",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/8534#issuecomment-77009",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -154,15 +153,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_077137.json:
+archive/issue_comments_077010.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-06-19T18:48:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8534",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8534#issuecomment-77137",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8534#issuecomment-77010",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

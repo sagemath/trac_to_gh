@@ -6,7 +6,7 @@ archive/issues_000730.json:
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nBecause the order returned by iterkeys is not guaranteed, enum, and therefore, `__cmp__` do not seem to behave well.  This could possibly be fixed by sorting the boundary vertices in the vertices() function.\n\n\n```\nsage: g=Graph({0:[1,2],'a':[1],1:[0,2],2:[0,1]})\nsage: h=Graph({'a':[1],0:[1,2],1:[0,2],2:[0,1]})\nsage: enum(g)\n9174\nsage: enum(h)\n9174\nsage: g.set_boundary([0,'a'])\nsage: h.set_boundary([0,'a'])\nsage: enum(g)\n13018\nsage: enum(h)\n9174\nsage: g==h\nFalse\nsage: g.vertices()\n[0, 'a', 1, 2]\nsage: h.vertices()\n['a', 0, 1, 2]\n```\n\n\nIt seems that since the graphs are the same, with the same labels and everything, the equality test should return True.  However, the boundary vertices are not sorted, so g.vertices() and h.vertices() return in a non-specified order.\n\nWhy do we return the boundary vertices first anyway?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/730\n\n",
     "created_at": "2007-09-21T18:42:54Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000730.json:
     "title": "graphs: fickle equality testing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/730",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -59,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/730
 
 ---
 
-archive/issue_comments_004286.json:
+archive/issue_comments_004272.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to rlmiller.",
     "created_at": "2007-09-21T18:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4286",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4272",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,15 +77,15 @@ Changing assignee from @williamstein to rlmiller.
 
 ---
 
-archive/issue_comments_004287.json:
+archive/issue_comments_004273.json:
 ```json
 {
     "body": "This patch fixes the problem noted above by redefining vertices() to return just a list of vertices and then patching various places to explicitly sort the output of vertices().  An option to vertices, boundary_first=True, outputs the boundary vertices first (but sorts the boundary vertices, so it still is deterministic).\n\nThe patch takes this approach so that vertices() can be more efficient (it doesn't have to loop through and separate out the boundary vertices any time someone wants a list of vertices).  However, this does break backward compatibility (previous versions returned the boundary first by default).\n\n\n```\n--- a/sage/graphs/graph.py\tFri Sep 28 15:21:56 2007 -0500\n+++ b/sage/graphs/graph.py\tFri Sep 28 15:34:18 2007 -0500\n@@ -275,7 +275,9 @@ class GenericGraph(SageObject):\n         else:\n             if self.multiple_edges() != other.multiple_edges():\n                 return 1\n-        if self.vertices() != other.vertices():\n+\n+        # If the vertices have different labels, the graphs are not equal.\n+        if sorted(self.vertices()) != sorted(other.vertices()):\n             return 1\n         comp = enum(self) - enum(other)\n         if comp < 0:\n@@ -777,12 +779,17 @@ class GenericGraph(SageObject):\n         \"\"\"\n         return self._nxg.prepare_nbunch(vertices)\n \n-    def vertices(self):\n-        \"\"\"\n-        Return a list of the vertex keys. If the graph is a graph with\n-        boundary, boundary vertices are listed first.\n-\n-        \"\"\"\n+    def vertices(self, boundary_first=False):\n+        \"\"\"\n+        Return a list of the vertices.\n+\n+        INPUT:\n+            boundary_first -- Return the boundary vertices first.\n+\n+        \"\"\"\n+        if not boundary_first:\n+            return list(self.vertex_iterator())\n+        \n         bdy_verts = []\n         int_verts = []\n         for v in self.vertex_iterator():\n@@ -790,7 +797,7 @@ class GenericGraph(SageObject):\n                 bdy_verts.append(v)\n             else:\n                 int_verts.append(v)\n-        return bdy_verts + sorted(int_verts)\n+        return sorted(bdy_verts) + sorted(int_verts)\n \n     def relabel(self, perm, inplace=True, quick=False):\n         r\"\"\"\n@@ -2327,7 +2334,7 @@ class GenericGraph(SageObject):\n         elif layout == 'circular':\n             from math import sin, cos, pi\n             n = self.order()\n-            verts = self.vertices()\n+            verts = sorted(self.vertices())\n             pos = {}\n             for i in range(n):\n                 x = float(cos((pi/2) + ((2*pi)/n)*i))\n@@ -3466,7 +3473,7 @@ class Graph(GenericGraph):\n \n         \"\"\"\n         n = len(self._nxg.adj)\n-        verts = self.vertices()\n+        verts = sorted(self.vertices())\n         D = {}\n         for e in self.edge_iterator():\n             i,j,l = e\n@@ -3509,7 +3516,7 @@ class Graph(GenericGraph):\n         from sage.matrix.constructor import matrix\n         from copy import copy\n         n = len(self._nxg.adj)\n-        verts = self.vertices()\n+        verts = sorted(self.vertices())\n         d = [0]*n\n         cols = []\n         for i, j, l in self.edge_iterator():\n@@ -3904,7 +3911,7 @@ class Graph(GenericGraph):\n         if n > 262143:\n             raise ValueError, 'sparse6 format supports graphs on 0 to 262143 vertices only.'\n         else:\n-            vertices = self.vertices()\n+            vertices = sorted(self.vertices())\n             n = len(vertices)\n             edges = self.edges(labels=False)\n             for i in range(len(edges)): # replace edge labels with natural numbers (by index in vertices)\n@@ -4340,7 +4347,7 @@ class Graph(GenericGraph):\n             from sage.graphs.graph_isom import search_tree, perm_group_elt\n             from sage.groups.perm_gps.permgroup import PermutationGroup\n             if partition is None:\n-                partition = [self.vertices()]\n+                partition = [sorted(self.vertices())]\n             if translation:\n                 a,b = search_tree(self, partition, dict=True, lab=False, dig=self.loops(), verbosity=verbosity)\n             else:\n@@ -5398,7 +5405,7 @@ class DiGraph(GenericGraph):\n \n         \"\"\"\n         n = len(self._nxg.adj)\n-        verts = self.vertices()\n+        verts = sorted(self.vertices())\n         D = {}\n         for i,j,l in self.edge_iterator():\n             i = verts.index(i)\n@@ -5428,7 +5435,7 @@ class DiGraph(GenericGraph):\n         from sage.matrix.constructor import matrix\n         from copy import copy\n         n = len(self._nxg.adj)\n-        verts = self.vertices()\n+        verts = sorted(self.vertices())\n         d = [0]*n\n         cols = []\n         for i, j, l in self.edge_iterator():\n@@ -5715,7 +5722,7 @@ class DiGraph(GenericGraph):\n             from sage.graphs.graph_isom import search_tree, perm_group_elt\n             from sage.groups.perm_gps.permgroup import PermutationGroup\n             if partition is None:\n-                partition = [self.vertices()]\n+                partition = [sorted(self.vertices())]\n             if translation:\n                 a,b = search_tree(self, partition, dict=True, lab=False, dig=True, verbosity=verbosity)\n             else:\n```\n",
     "created_at": "2007-09-28T20:48:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4287",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4273",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -220,15 +220,15 @@ The patch takes this approach so that vertices() can be more efficient (it doesn
 
 ---
 
-archive/issue_comments_004288.json:
+archive/issue_comments_004274.json:
 ```json
 {
     "body": "The above patch breaks a doctest.  A determinant has the opposite sign, which would happen if two rows of the adjacency matrix were reversed because boundary vertices aren't returned first anymore.  It would be good to check if the failed doctest can be changed or if there is a problem in the patch.",
     "created_at": "2007-09-28T20:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4288",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4274",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -238,15 +238,15 @@ The above patch breaks a doctest.  A determinant has the opposite sign, which wo
 
 ---
 
-archive/issue_comments_004289.json:
+archive/issue_comments_004275.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-04T19:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/730",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4289",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/730#issuecomment-4275",
+    "user": "https://github.com/rlmill"
 }
 ```
 

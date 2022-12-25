@@ -6,7 +6,7 @@ archive/issues_002126.json:
     "body": "Assignee: @aghitza\n\nThe attached patch fixes a small typo and adds a small clarification to the docstring (specifying which normalization of the Eisenstein series is returned).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2126\n\n",
     "created_at": "2008-02-09T09:41:48Z",
     "labels": [
-        "modular forms",
+        "component: modular forms",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002126.json:
     "title": "[with patch, needs review] small fixes to eisenstein_series_qexp()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2126",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: @aghitza
@@ -30,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2126
 
 ---
 
-archive/issue_comments_013942.json:
+archive/issue_comments_013911.json:
 ```json
 {
     "body": "The last line should probably read\n\n\n```\nraise ValueError, \"-(2*k)/B_k (=%s) must be invertible in the %r\"%(a0inv, K) \n```\n\n\nrather than\n\n\n```\nraise ValueError, \"-(2*k)/B_k (=%s) must be invertible in the %s\"%(a0inv, K._repr_()) \n```\n\n\nOther than that, I approve.",
     "created_at": "2008-02-14T06:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13942",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13911",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -64,15 +64,15 @@ Other than that, I approve.
 
 ---
 
-archive/issue_comments_013943.json:
+archive/issue_comments_013912.json:
 ```json
 {
     "body": "Attachment [2126-eisenstein_series_qexp.patch](tarball://root/attachments/some-uuid/ticket2126/2126-eisenstein_series_qexp.patch) by @aghitza created at 2008-02-17 00:17:59\n\nI've incorporated Robert's suggested change and resubmitted the patch.",
     "created_at": "2008-02-17T00:17:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13943",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13912",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -84,15 +84,15 @@ I've incorporated Robert's suggested change and resubmitted the patch.
 
 ---
 
-archive/issue_comments_013944.json:
+archive/issue_comments_013913.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-17T21:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13944",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -102,15 +102,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_013945.json:
+archive/issue_comments_013914.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha1",
     "created_at": "2008-02-17T21:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2126",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13945",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2126#issuecomment-13914",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

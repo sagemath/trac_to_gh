@@ -6,15 +6,13 @@ archive/issues_007353.json:
     "body": "Assignee: mvngu\n\nThe text on the left bar in Sphinx-generated documents has phrases like \"Table of content\", \"quick search\", and so on. Sphinx includes translations of these phrases, so we should use that for our French documentation.\n\nThis is very easy: just put `language = 'fr'` in conf.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7353\n\n",
     "created_at": "2009-10-30T01:38:46Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "French documentation should use Sphinx's French localization",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7353",
-    "user": "@dandrake"
+    "user": "https://github.com/dandrake"
 }
 ```
 Assignee: mvngu
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7353
 
 ---
 
-archive/issue_comments_061590.json:
+archive/issue_comments_061477.json:
 ```json
 {
     "body": "Attachment [trac_7353.patch](tarball://root/attachments/some-uuid/ticket7353/trac_7353.patch) by @dandrake created at 2009-10-30 01:47:35",
     "created_at": "2009-10-30T01:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61590",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61477",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -49,15 +47,15 @@ Attachment [trac_7353.patch](tarball://root/attachments/some-uuid/ticket7353/tra
 
 ---
 
-archive/issue_comments_061591.json:
+archive/issue_comments_061478.json:
 ```json
 {
     "body": "I originally thought that the tutorial also needed this, but it doesn't. So maybe I should have just posted this micro-patch at #7190, but since I already opened the ticket, I uploaded the patch here.",
     "created_at": "2009-10-30T01:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61591",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61478",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -67,15 +65,15 @@ I originally thought that the tutorial also needed this, but it doesn't. So mayb
 
 ---
 
-archive/issue_comments_061592.json:
+archive/issue_comments_061479.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-30T01:49:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61592",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61479",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_061593.json:
+archive/issue_comments_061480.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-11-17T07:56:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61593",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61480",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -103,15 +101,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_061594.json:
+archive/issue_comments_061481.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-17T07:56:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61594",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61481",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -121,15 +119,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_061595.json:
+archive/issue_comments_061482.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-17T07:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7353",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61595",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7353#issuecomment-61482",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

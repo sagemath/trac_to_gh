@@ -6,15 +6,14 @@ archive/issues_002202.json:
     "body": "Assignee: @timabbott\n\nI created a new spkg for rubiks that has a global Makefile, and added Debian build support to it:\n\nhttp://sage.math.washington.edu/home/tabbott/rubiks-20070912.p2.spkg\n\nThe process involved adding distclean targets to the individual Makefiles for the various solvers; for now I made these changes in the spkg because I'm a bad person; but we should submit them upstream for those that we are not the official distribution point for.  I've attached patches for each to this ticket which we can submit to the upstream authors.\n\nThere are two things that bug me about this package.  One is that I'm not convinced Debian will want this motley assortment of rubiks cube solvers (so that we might end up leaving it as part of the \"sagemath\" package), and the other is that we don't install all the solvers that we build.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2202\n\n",
     "created_at": "2008-02-18T02:05:29Z",
     "labels": [
-        "debian-package",
-        "major",
+        "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with spkg; needs review] Debianize rubiks spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2202",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2202
 
 ---
 
-archive/issue_comments_014493.json:
+archive/issue_comments_014462.json:
 ```json
 {
     "body": "Attachment [dietz-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/dietz-makefile.patch) by @timabbott created at 2008-02-18 02:05:37",
     "created_at": "2008-02-18T02:05:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14493",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14462",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -53,15 +52,15 @@ Attachment [dietz-makefile.patch](tarball://root/attachments/some-uuid/ticket220
 
 ---
 
-archive/issue_comments_014494.json:
+archive/issue_comments_014463.json:
 ```json
 {
     "body": "Attachment [dik-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/dik-makefile.patch) by @timabbott created at 2008-02-18 02:05:43",
     "created_at": "2008-02-18T02:05:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14494",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14463",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -71,15 +70,15 @@ Attachment [dik-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/
 
 ---
 
-archive/issue_comments_014495.json:
+archive/issue_comments_014464.json:
 ```json
 {
     "body": "Attachment [reid-makefile.patch](tarball://root/attachments/some-uuid/ticket2202/reid-makefile.patch) by @timabbott created at 2008-02-18 02:05:52",
     "created_at": "2008-02-18T02:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14495",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14464",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -89,15 +88,15 @@ Attachment [reid-makefile.patch](tarball://root/attachments/some-uuid/ticket2202
 
 ---
 
-archive/issue_comments_014496.json:
+archive/issue_comments_014465.json:
 ```json
 {
     "body": "spkg looks good, nice fixes for the makefile.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-18T13:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14496",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14465",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Michael
 
 ---
 
-archive/issue_comments_014497.json:
+archive/issue_comments_014466.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-18T13:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14497",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14466",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +128,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014498.json:
+archive/issue_comments_014467.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha1",
     "created_at": "2008-02-18T13:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14498",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14467",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -147,15 +146,15 @@ Merged in Sage 2.10.2.alpha1
 
 ---
 
-archive/issue_comments_014499.json:
+archive/issue_comments_014468.json:
 ```json
 {
     "body": "The look fine to me.\n\nThe main reason for the rubiks solvers is that David Joyner has a book out on Rubik's cubes, and solving them via the word problem is *extremely* slow.",
     "created_at": "2008-02-18T23:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14499",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2202#issuecomment-14468",
+    "user": "https://github.com/robertwb"
 }
 ```
 

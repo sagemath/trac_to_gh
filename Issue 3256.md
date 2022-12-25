@@ -6,15 +6,13 @@ archive/issues_003256.json:
     "body": "Assignee: mabshoff\n\nCC:  f.r.bissey@massey.ac.nz dmharvey\n\nI've attached a patch (developed with Francois Bissey) that should make zn_poly have shared library versioning and build the shared library with -fPIC but the static library without -fPIC.\n\nMy patch includes the relevant changes to the Debian packaging to make it fully Debian policy-compliant.\n\nIt also includes the relevant changes to spkg-install and SAGE-style copy patches that should make SAGE use the new version, though I haven't tested that part.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3256\n\n",
     "created_at": "2008-05-19T18:43:23Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "[with patch; needs review] soname and correct -fPIC handling for zn_poly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3256",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3256
 
 ---
 
-archive/issue_comments_022527.json:
+archive/issue_comments_022480.json:
 ```json
 {
     "body": "Attachment [zn-poly-soname-pic.patch](tarball://root/attachments/some-uuid/ticket3256/zn-poly-soname-pic.patch) by mabshoff created at 2008-05-19 19:09:08\n\nI added David Harvey to the CC field since he is upstream. I did also do some work to get zn_poly to build in 64 bit mode on OSX [But I think I can limit this to spkg-install], so I will likely merge this in together with that patch into 3.0.2.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T19:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22527",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22480",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -59,15 +57,15 @@ Michael
 
 ---
 
-archive/issue_comments_022528.json:
+archive/issue_comments_022481.json:
 ```json
 {
     "body": "I bet you'll need to change the cp -a I used when patching to just cp for it to work on solaris.",
     "created_at": "2008-05-19T22:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22528",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22481",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -77,15 +75,15 @@ I bet you'll need to change the cp -a I used when patching to just cp for it to 
 
 ---
 
-archive/issue_comments_022529.json:
+archive/issue_comments_022482.json:
 ```json
 {
     "body": "By the way, the dist/debian/rules file in the current zn_poly spkg is incorrectly not marked as executable.\n\nAlso, I've attached a patch on top of the last patch that does some trivial improvements to the zn_poly Debian packaging.",
     "created_at": "2008-05-26T03:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22529",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22482",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -97,15 +95,15 @@ Also, I've attached a patch on top of the last patch that does some trivial impr
 
 ---
 
-archive/issue_comments_022530.json:
+archive/issue_comments_022483.json:
 ```json
 {
     "body": "Attachment [zn-poly-standards.patch](tarball://root/attachments/some-uuid/ticket3256/zn-poly-standards.patch) by mabshoff created at 2008-06-13 17:43:59\n\nThis patch as is breaks when using either the Solaris or *BSD linker. I would suggest that for the Debian package we patch in the soname and other options only when building the Debian package.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-13T17:43:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22530",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22483",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +119,15 @@ Michael
 
 ---
 
-archive/issue_comments_022531.json:
+archive/issue_comments_022484.json:
 ```json
 {
     "body": "What goes wrong?\n\nIn the long term, I'd like to see the patch fixed to work on all platforms and merged upstream.  It's of course fine to have them just on Debian in the short term, but it's bad for sonames to be different between different distributions.  So, I think our goal should be to fix the bugs.",
     "created_at": "2008-06-14T20:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22531",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22484",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -141,15 +139,15 @@ In the long term, I'd like to see the patch fixed to work on all platforms and m
 
 ---
 
-archive/issue_comments_022532.json:
+archive/issue_comments_022485.json:
 ```json
 {
     "body": "Hi guys,\n\nI am quite happy to merge the patch upstream as soon as y'all have figured it out. I have been distracted by another project for a couple of weeks. I will get back to zn_poly soon.",
     "created_at": "2008-06-14T20:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22532",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22485",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -161,15 +159,15 @@ I am quite happy to merge the patch upstream as soon as y'all have figured it ou
 
 ---
 
-archive/issue_comments_022533.json:
+archive/issue_comments_022486.json:
 ```json
 {
     "body": "Hi,\n\nthe problem is that on Solaris the ld available does not understand the GNUism of -Wlsoname as is. Check out the soname linker options for Solaris at\n\nhttp://www.fortran-2000.com/ArnaudRecipes/sharedlib.html\n\nI did not find anything comprehensive on linker options anywhere else on the quick, but it ought to do. The patch will work on all currently working platforms, but will break on Solaris and *BSD when using the default linker. The GNU linker is usually available, but normally not installed or not in the default $PATH. And on Solaris we want to be able to build Sage without relying on GNU tools in the future. In addition gcc can be compiled on Solaris to use the Sun ld and many people on Solaris do that, so even if GNU ld is available things go horribly wrong.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-14T21:00:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22533",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22486",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -189,15 +187,15 @@ Michael
 
 ---
 
-archive/issue_comments_022534.json:
+archive/issue_comments_022487.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_mabshoff\".",
     "created_at": "2008-06-20T04:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22534",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22487",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -207,15 +205,15 @@ Changing keywords from "" to "editor_mabshoff".
 
 ---
 
-archive/issue_comments_022535.json:
+archive/issue_comments_022488.json:
 ```json
 {
     "body": "I would second the comments about no using GNU specific options. Also note that .so is not the only extension used for libraries - on HP-UX it is .sl\n\nDave",
     "created_at": "2009-12-16T22:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22535",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22488",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -227,15 +225,15 @@ Dave
 
 ---
 
-archive/issue_comments_022536.json:
+archive/issue_comments_022489.json:
 ```json
 {
     "body": "I was almost going to blame Tim for that one, but I contributed quite a bit to that one\n(unlike ticket 3306 which is mostly his if I remember correctly). \nI agree that the patches are fine for debian and linux in general but that for sage we should \ntry to be less gld/gcc specific.\nWe need a strategy for dealing alternative extension though.\nShell variables including the correct suffixes?\nFix in spkg-install?\nThe problem with putting everything in spkg-install is become big and bloated.",
     "created_at": "2009-12-17T02:44:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22536",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22489",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -252,15 +250,15 @@ The problem with putting everything in spkg-install is become big and bloated.
 
 ---
 
-archive/issue_comments_022537.json:
+archive/issue_comments_022490.json:
 ```json
 {
     "body": "I believe what we need to do is to make better use of sage-env. \n\nVirtually every package has something like\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n  CFLAGS = \"$CFLAGS -m64\"\nfi\n```\n\n\nLets consider what are 3 major things wrong with this. \n\n* 64-bit builds are possible on other platforms like Solaris, which is a supported operating system. So SAGE64 should not be restricted to Darwin.\n* -m64 works for the GNU compiler and Sun compilers, but other options are used to generate 64-bit code on other platforms. \n* The same code is written in loads of packages, adding clutter. \n\nIt would be far more sensible to set the CFLAGS once, taking into account the compiler, platform, setting of SAGE64 and other variables. \n\nI'd suggest that we replace all this different library names (.dll on Cygwin, .so on most platforms, .dlyn on some, .sl on HP-UX), with a simple $SHARED_LIBRARY_EXTENSION. Then set that once and for all, and people don't have to worry about it, just refer to it as a variable. \n\n#6595 shows two examples of what William considers serious bugs, which were only found when the Sun compiler was used. In one case, a function computed an answer, but never returned it to what called it. g++ accepted that. The Sun compiler will not. There's a lot more to be gained by writing portable code than simply getting code to run on other systems. \n\n#7505 will allow the compiler to be determined easily, whether that be gcc, Sun Studio, HP's on HP-UX, IBM's on AIX, and several others. Once we know what compiler we have, we have a reasonable chance of knowing the right options. \n\n\nAnyway, there is a lot we can do to improve things, but I do agree that doing a lot of things in spkg-install is not sensible. It would seem sensible that only has things specific to that package, rather than code which needs to be in every package.",
     "created_at": "2009-12-24T03:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22537",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22490",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -296,15 +294,15 @@ Anyway, there is a lot we can do to improve things, but I do agree that doing a 
 
 ---
 
-archive/issue_comments_022538.json:
+archive/issue_comments_022491.json:
 ```json
 {
     "body": "I think that we should close this bug. Possibly as \"won't fix\" or \"invalid\". If it has been merged I suspect it has been obsoleted by some later work.",
     "created_at": "2011-05-01T23:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22538",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/3256#issuecomment-22491",
+    "user": "https://github.com/kiwifb"
 }
 ```
 

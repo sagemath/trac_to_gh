@@ -6,15 +6,13 @@ archive/issues_003662.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3662\n\n",
     "created_at": "2008-07-16T00:38:32Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "separate the module functionality of out CombinatorialAlgebra and move it into CombinatorialAlgebra",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3662",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @mwhansen
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3662
 
 ---
 
-archive/issue_comments_025880.json:
+archive/issue_comments_025826.json:
 ```json
 {
     "body": "Attachment [trac_3662-1.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-1.patch) by @mwhansen created at 2008-08-06 16:46:24",
     "created_at": "2008-08-06T16:46:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25880",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25826",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +47,15 @@ Attachment [trac_3662-1.patch](tarball://root/attachments/some-uuid/ticket3662/t
 
 ---
 
-archive/issue_comments_025881.json:
+archive/issue_comments_025827.json:
 ```json
 {
     "body": "Attachment [trac_3662-2.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-2.patch) by @mwhansen created at 2008-08-06 16:46:50",
     "created_at": "2008-08-06T16:46:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25881",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25827",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +65,15 @@ Attachment [trac_3662-2.patch](tarball://root/attachments/some-uuid/ticket3662/t
 
 ---
 
-archive/issue_comments_025882.json:
+archive/issue_comments_025828.json:
 ```json
 {
     "body": "Attachment [trac_3662-4.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-4.patch) by @mwhansen created at 2008-08-06 16:47:07",
     "created_at": "2008-08-06T16:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25882",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25828",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +83,15 @@ Attachment [trac_3662-4.patch](tarball://root/attachments/some-uuid/ticket3662/t
 
 ---
 
-archive/issue_comments_025883.json:
+archive/issue_comments_025829.json:
 ```json
 {
     "body": "Attachment [trac_3662-5.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-5.patch) by @mwhansen created at 2008-08-06 19:17:18\n\nCredit goes to Nicolas Thiery and Mike Hansen.",
     "created_at": "2008-08-06T19:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25883",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25829",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -105,15 +103,15 @@ Credit goes to Nicolas Thiery and Mike Hansen.
 
 ---
 
-archive/issue_comments_025884.json:
+archive/issue_comments_025830.json:
 ```json
 {
     "body": "Attachment [trac_3662-4.5.patch](tarball://root/attachments/some-uuid/ticket3662/trac_3662-4.5.patch) by @mwhansen created at 2008-08-06 22:06:54",
     "created_at": "2008-08-06T22:06:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25884",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25830",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -123,15 +121,15 @@ Attachment [trac_3662-4.5.patch](tarball://root/attachments/some-uuid/ticket3662
 
 ---
 
-archive/issue_comments_025885.json:
+archive/issue_comments_025831.json:
 ```json
 {
     "body": "Merged trac_3662-1.patch, trac_3662-2.patch, trac_3662-3.patch, trac_3662-4.patch, trac_3662-5.patch and trac_3662-4.5.patch in Sage 3.1.alpha1",
     "created_at": "2008-08-08T22:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25885",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25831",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -141,15 +139,15 @@ Merged trac_3662-1.patch, trac_3662-2.patch, trac_3662-3.patch, trac_3662-4.patc
 
 ---
 
-archive/issue_comments_025886.json:
+archive/issue_comments_025832.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-08T22:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3662",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25886",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3662#issuecomment-25832",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

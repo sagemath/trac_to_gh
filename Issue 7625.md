@@ -6,15 +6,14 @@ archive/issues_007625.json:
     "body": "Assignee: @williamstein\n\nIt's here:\n\n  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.5.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7625\n\n",
     "created_at": "2009-12-08T18:03:08Z",
     "labels": [
-        "notebook",
-        "blocker",
-        "enhancement"
+        "component: notebook",
+        "blocker"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "include new version of sagenb (0.4.5)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7625",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7625
 
 ---
 
-archive/issue_comments_065144.json:
+archive/issue_comments_065028.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-08T18:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65144",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65028",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_065145.json:
+archive/issue_comments_065029.json:
 ```json
 {
     "body": "\n```\n#7495: William Stein and Mitesh Patel: notebook: fix massive security vulnerability and get rid of all possible \"internal server errors\" when doing \"Data --> Upload or attach file [Reviewed by Mitesh Patel]\n#3619: William Stein: notebook -- record date & time each user logs in [Reviewed by Tim Dumol]\n#3849: William Stein and Mitesh Patel: notebook --get rid of internal server errors when uploading a worksheet [Reviewed by Tim Dumol]\n#7402: Tim Dumol: notebook -- Use `pkg_resources` to locate `DATA` directory [Reviwed by Mitesh Patel]\n#7428: Mitesh Patel: worksheets listed on published list only after they are republished, but not after initial publication [Reviewed by Tim Dumol]\n#7444: Mitesh Patel: Broken: searching published worksheets after publishing a worksheet for the first time [Reviewed by Tim Dumol]\n#7467: Tim Dumol: Make SageNB use `setuptools` instead of `distutils` [Reviewed by Mitesh Patel]\n#7390: Mitesh Patel: HTML notebook test report [Reviewed by Tim Dumol]\n#7470: Tim Dumol: SageNB -- Minor docstring fixes for `js.py` [Reviewed by Mitesh Patel]\n```\n",
     "created_at": "2009-12-08T18:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65145",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65029",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -79,15 +78,15 @@ archive/issue_comments_065145.json:
 
 ---
 
-archive/issue_comments_065146.json:
+archive/issue_comments_065030.json:
 ```json
 {
     "body": "I just posted the release notes for this above.",
     "created_at": "2009-12-08T18:04:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65146",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65030",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -97,15 +96,15 @@ I just posted the release notes for this above.
 
 ---
 
-archive/issue_comments_065147.json:
+archive/issue_comments_065031.json:
 ```json
 {
     "body": "This looks good to me, apart from the comedy of errors that is the notebook settings page.  Also, 14 out of 15 Selenium tests still pass (cf. #7455).\n\nI think Dr. Palmieri reviewed #7470.\n\nPositive review, pending Tim's confirmation?",
     "created_at": "2009-12-08T21:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65147",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65031",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -119,15 +118,15 @@ Positive review, pending Tim's confirmation?
 
 ---
 
-archive/issue_comments_065148.json:
+archive/issue_comments_065032.json:
 ```json
 {
     "body": "Hi, \n\nI merged in 9 more patches to make sagenb-0.4.6, which does fix the notebook settings page issues.  We should release sagenb-0.4.6 instead: \n\n   http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.5.spkg\n\n\n```\n#5100: Tim Dumol: worksheets: can't empty the trash (safari only?) [Reviewed by John Palmieri and William Stein]\n#3733: William Stein: document notebook.css; I also sphinxified the notebook? docstring [Reviewed by Tim Dumol]\n#7433: Tim Dumol: Changing title of worksheet changes title of corresponding published worksheet [Reviewed by William Stein]\n#7455: Tim Dumol: Searching on Log page does not work [Reviewed by William Stein]\n#4714: Mitesh Patel: use easy/load.js when loading jsmath in the notebook [Reviewed by William Stein]\n#7267: Mitesh Patel: Add a compact color picker to SageNB [Reviewed by William Stein and Tim Dumol]\n#7376: Mitesh Patel: searching published worksheets does not work to just search for username [Reviewed by William Stein]\n#7447: Mitesh Patel: SageNB version and install date / time [Reviewed by William Stein]\n#7611: Tim Dumol: Minor ReST improvements for the notebook object documentation [Reviewed by William Stein]\n```\n",
     "created_at": "2009-12-09T01:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65148",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65032",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -155,15 +154,15 @@ I merged in 9 more patches to make sagenb-0.4.6, which does fix the notebook set
 
 ---
 
-archive/issue_comments_065149.json:
+archive/issue_comments_065033.json:
 ```json
 {
     "body": "Here I meant  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.6.spkg of course.",
     "created_at": "2009-12-09T01:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65149",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65033",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -173,15 +172,15 @@ Here I meant  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.6.spkg of 
 
 ---
 
-archive/issue_comments_065150.json:
+archive/issue_comments_065034.json:
 ```json
 {
     "body": "All Se tests now pass.  But I'm a bit too tired right now to do further checking.\n\nPotential feature for the log page: A check box next to each cell, so the user can select a subset for a new worksheet?",
     "created_at": "2009-12-09T02:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65150",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65034",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -193,15 +192,15 @@ Potential feature for the log page: A check box next to each cell, so the user c
 
 ---
 
-archive/issue_comments_065151.json:
+archive/issue_comments_065035.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-09T11:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65151",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65035",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -211,15 +210,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_065152.json:
+archive/issue_comments_065036.json:
 ```json
 {
     "body": "Se tests pass on my machine as well. Nothing broke in my worksheets either.\n\nSince Patel also agrees, I'll mark this with a positive review.",
     "created_at": "2009-12-09T11:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65152",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65036",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -231,15 +230,15 @@ Since Patel also agrees, I'll mark this with a positive review.
 
 ---
 
-archive/issue_comments_065153.json:
+archive/issue_comments_065037.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-10T03:23:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65153",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65037",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -249,15 +248,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_065154.json:
+archive/issue_comments_065038.json:
 ```json
 {
     "body": "Correct me if I'm mistaken, but is #7467 actually included? I cannot find it in the merge log.",
     "created_at": "2009-12-10T14:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65154",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65038",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -267,15 +266,15 @@ Correct me if I'm mistaken, but is #7467 actually included? I cannot find it in 
 
 ---
 
-archive/issue_comments_065155.json:
+archive/issue_comments_065039.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2009-12-10T19:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65155",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65039",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -285,15 +284,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_065156.json:
+archive/issue_comments_065040.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2009-12-10T19:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65156",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65040",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -303,15 +302,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_065157.json:
+archive/issue_comments_065041.json:
 ```json
 {
     "body": "Replying to [comment:10 timdumol]:\n> Correct me if I'm mistaken, but is #7467 actually included? I cannot find it in the merge log.\n\nOh crap, you're right.  I don't know how I made that mistake.  Here's a sagenb-0.4.7 that includes that and one other patch I merged:\n\n  http://wstein.org/home/wstein/patches/sagenb/sagenb-0.4.7.spkg\n\n\n```\nSAGENB-0.4.7\n#7467: Tim Dumol: Make SageNB use `setuptools` instead of `distutils` [Reviewed by Mitesh Patel]\n#7628: Mitesh Patel: Error on account creation still creates (half of) an account [Reviewed by William Stein]\n```\n",
     "created_at": "2009-12-10T19:47:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65157",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65041",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -334,15 +333,15 @@ SAGENB-0.4.7
 
 ---
 
-archive/issue_comments_065158.json:
+archive/issue_comments_065042.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-10T19:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65158",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65042",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -352,15 +351,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_065159.json:
+archive/issue_comments_065043.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2009-12-11T02:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65159",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65043",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -370,15 +369,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_065160.json:
+archive/issue_comments_065044.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-11T02:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65160",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7625#issuecomment-65044",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

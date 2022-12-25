@@ -6,15 +6,13 @@ archive/issues_005348.json:
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nImplements:\n-  sage -combinat qselect <myguards>\n-  sage -combinat qselect -n <myguards>\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5348\n\n",
     "created_at": "2009-02-23T09:29:29Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "Implements guard selection in sage -combinat qselect",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5348",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: @nthiery
@@ -34,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5348
 
 ---
 
-archive/issue_comments_041205.json:
+archive/issue_comments_041124.json:
 ```json
 {
     "body": "Attachment [sage-combinat.patch](tarball://root/attachments/some-uuid/ticket5348/sage-combinat.patch) by @nthiery created at 2009-02-23 09:29:47",
     "created_at": "2009-02-23T09:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41205",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41124",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -52,15 +50,15 @@ Attachment [sage-combinat.patch](tarball://root/attachments/some-uuid/ticket5348
 
 ---
 
-archive/issue_comments_041206.json:
+archive/issue_comments_041125.json:
 ```json
 {
     "body": "Patch looks goods. It works as expected. Ready to go.\n\nCheers,\n\nFlorent",
     "created_at": "2009-02-24T17:34:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41206",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41125",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -74,15 +72,15 @@ Florent
 
 ---
 
-archive/issue_comments_041207.json:
+archive/issue_comments_041126.json:
 ```json
 {
     "body": "Merged in Sage 3.4.alpha0.\n\nNicolas: This was a diff, I applied it and check it in in your name :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T19:48:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41207",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41126",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -98,15 +96,15 @@ Michael
 
 ---
 
-archive/issue_comments_041208.json:
+archive/issue_comments_041127.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-24T19:48:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41208",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5348#issuecomment-41127",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

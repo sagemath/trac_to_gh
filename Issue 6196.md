@@ -6,15 +6,13 @@ archive/issues_006196.json:
     "body": "Assignee: mabshoff\n\nPatch description:\n\nAdds sage.libs.mpmath which provides wrapper functions and\nmonkey patches some internal mpmath functions for speed. Mpmath\nfunctions can be called from Sage as follows (with forward\nand backward conversions handled automatically):\n\nsage: import sage.libs.mpmath.all as a\nsage: a.call(a.hyp2f1, 2, 2/3, -1/2, 3+4*I)\n-0.111907858412569 - 0.536467867510390*I\nsage: a.call(a.hyp2f1, 2, 2/3, -1/2, 3+4*I, prec=100)\n-0.11190785841256900204178259859 - 0.53646786751038954277574814099*I\n\nSome partial support for direct conversion from Sage -> mpmath\nis also implemented (this is not completely working yet).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6196\n\n",
     "created_at": "2009-06-03T17:32:58Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "mpmath support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6196",
-    "user": "@fredrik-johansson"
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 Assignee: mabshoff
@@ -43,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6196
 
 ---
 
-archive/issue_comments_049479.json:
+archive/issue_comments_049384.json:
 ```json
 {
     "body": "Attachment [mpmath.patch](tarball://root/attachments/some-uuid/ticket6196/mpmath.patch) by @fredrik-johansson created at 2009-06-03 17:36:56",
     "created_at": "2009-06-03T17:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49479",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49384",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -61,15 +59,15 @@ Attachment [mpmath.patch](tarball://root/attachments/some-uuid/ticket6196/mpmath
 
 ---
 
-archive/issue_comments_049480.json:
+archive/issue_comments_049385.json:
 ```json
 {
     "body": "I am interested in using mpmath for numerical integration, but unfortunately I get major build errors with 4.0.2.alpha0.  See http://pastebin.com/d13f03d03 for details.  Any thoughts?",
     "created_at": "2009-06-19T18:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49480",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49385",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -79,15 +77,15 @@ I am interested in using mpmath for numerical integration, but unfortunately I g
 
 ---
 
-archive/issue_comments_049481.json:
+archive/issue_comments_049386.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-19T22:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49481",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49386",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -97,15 +95,15 @@ Changing assignee from mabshoff to @mwhansen.
 
 ---
 
-archive/issue_comments_049482.json:
+archive/issue_comments_049387.json:
 ```json
 {
     "body": "Attachment [trac_6196-review.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-review.patch) by @mwhansen created at 2009-06-19 22:20:55\n\nI put an spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.12.spkg",
     "created_at": "2009-06-19T22:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49482",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49387",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -117,15 +115,15 @@ I put an spkg at http://sage.math.washington.edu/home/mhansen/mpmath-0.12.spkg
 
 ---
 
-archive/issue_comments_049483.json:
+archive/issue_comments_049388.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-06-19T22:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49483",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49388",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -135,15 +133,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_049484.json:
+archive/issue_comments_049389.json:
 ```json
 {
     "body": "Apply all patches.",
     "created_at": "2009-06-19T22:52:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49484",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49389",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -153,15 +151,15 @@ Apply all patches.
 
 ---
 
-archive/issue_comments_049485.json:
+archive/issue_comments_049390.json:
 ```json
 {
     "body": "Positive review for me.  Change status after my tiny patch is refereed.",
     "created_at": "2009-06-19T22:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49485",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49390",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -171,15 +169,15 @@ Positive review for me.  Change status after my tiny patch is refereed.
 
 ---
 
-archive/issue_comments_049486.json:
+archive/issue_comments_049391.json:
 ```json
 {
     "body": "Attachment [trac_6196-ncalexan.patch](tarball://root/attachments/some-uuid/ticket6196/trac_6196-ncalexan.patch) by @ncalexan created at 2009-06-19 22:56:41",
     "created_at": "2009-06-19T22:56:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49486",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49391",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -189,15 +187,15 @@ Attachment [trac_6196-ncalexan.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_049487.json:
+archive/issue_comments_049392.json:
 ```json
 {
     "body": "Nick's changes look good.",
     "created_at": "2009-06-19T22:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49487",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49392",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -207,15 +205,15 @@ Nick's changes look good.
 
 ---
 
-archive/issue_comments_049488.json:
+archive/issue_comments_049393.json:
 ```json
 {
     "body": "Doctest failures:\n\n\n```\n\nsage -t -long devel/sage/sage/rings/real_mpfr.pyx\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/rings/real_mpfr.pyx\", line 2284:\n    sage: RR(-1.5)._mpmath_()\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_65[2]>\", line 1, in <module>\n        RR(-RealNumber('1.5'))._mpmath_()###line 2284:\n    sage: RR(-1.5)._mpmath_()\n      File \"real_mpfr.pyx\", line 2289, in sage.rings.real_mpfr.RealNumber._mpmath_ (sage/rings/real$\n        from sage.libs.mpmath.all import make_mpf\n      File \"/space/boothby/sage-4.0.3/local/lib/python2.5/site-packages/sage/libs/mpmath/all.py\", l$\n        import mpmath\n    ImportError: No module named mpmath\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_65\n***Test Failed*** 1 failures.\n```\n\n\n\n```\nsage -t -long devel/sage/sage/rings/complex_number.pyx\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/rings/complex_number.pyx\", line 484:\n    sage: CC(1,2)._mpmath_()\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_15[2]>\", line 1, in <module>\n        CC(Integer(1),Integer(2))._mpmath_()###line 484:\n    sage: CC(1,2)._mpmath_()\n      File \"complex_number.pyx\", line 489, in sage.rings.complex_number.ComplexNumber._mpmath_ (sag$\n        from sage.libs.mpmath.all import make_mpc\n      File \"/space/boothby/sage-4.0.3/local/lib/python2.5/site-packages/sage/libs/mpmath/all.py\", l$\n        import mpmath\n    ImportError: No module named mpmath\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_15\n***Test Failed*** 1 failures.\n```\n\n\n\n```\nsage -t -long devel/sage/sage/structure/element.pyx\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/structure/element.pyx\", line 426:\n    sage: from sage.libs.mpmath.all import mp, mpmathify\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[2]>\", line 1, in <module>\n        from sage.libs.mpmath.all import mp, mpmathify###line 426:\n    sage: from sage.libs.mpmath.all import mp, mpmathify\n      File \"/space/boothby/sage-4.0.3/local/lib/python2.5/site-packages/sage/libs/mpmath/all.py\", l$\n        import mpmath\n    ImportError: No module named mpmath\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/structure/element.pyx\", line 427:\n    sage: mp.dps = 30\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_13[3]>\", line 1, in <module>\n        mp.dps = Integer(30)###line 427:\n    sage: mp.dps = 30\n    NameError: name 'mp' is not defined\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/structure/element.pyx\", line 428:\n    sage: 25._mpmath_(53)\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n\n...\n```\n\n\n\n\n```\n\nsage -t -long devel/sage/sage/libs/mpmath/utils.pyx\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/libs/mpmath/utils.pyx\", line 27:\n    sage: from mpmath.libmpf import from_man_exp\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[2]>\", line 1, in <module>\n        from mpmath.libmpf import from_man_exp###line 27:\n    sage: from mpmath.libmpf import from_man_exp\n    ImportError: No module named mpmath.libmpf\n**********************************************************************\nFile \"/space/boothby/sage-4.0.3/devel/sage-main/sage/libs/mpmath/utils.pyx\", line 28:\n    sage: from_man_exp(-6, -1)\nException raised:\n    Traceback (most recent call last):\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/space/boothby/sage-4.0.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n...\n```\n",
     "created_at": "2009-06-24T18:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49488",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49393",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -370,15 +368,15 @@ Exception raised:
 
 ---
 
-archive/issue_comments_049489.json:
+archive/issue_comments_049394.json:
 ```json
 {
     "body": "There's an spkg; this looks a lot like you didn't install it.  I did *exactly* the same thing with malb's singular spkg update when I was release manager.  Maybe we need sage -merge to yell if it sees certain things, like spkgs?",
     "created_at": "2009-06-24T18:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49489",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49394",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -388,15 +386,15 @@ There's an spkg; this looks a lot like you didn't install it.  I did *exactly* t
 
 ---
 
-archive/issue_comments_049490.json:
+archive/issue_comments_049395.json:
 ```json
 {
     "body": "Oh damn.  Thanks, Nick.",
     "created_at": "2009-06-24T18:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49490",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49395",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -406,15 +404,15 @@ Oh damn.  Thanks, Nick.
 
 ---
 
-archive/issue_comments_049491.json:
+archive/issue_comments_049396.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-02T21:07:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49491",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49396",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -424,15 +422,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_049492.json:
+archive/issue_comments_049397.json:
 ```json
 {
     "body": "The milestone for this ticket should be 4.1. I can't change it, since I don't have admin privileges on trac.",
     "created_at": "2009-07-12T10:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49492",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6196#issuecomment-49397",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_003978.json:
     "body": "Assignee: mabshoff\n\nJohn Cremona reported:\n\n```\nsage -t  devel/sage/sage/stats/hmm/hmm.pyx \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha1/tmp/hmm.py\", line 678: \n    sage: a.viterbi([1,0,0,1,0,0,1,1]) \nExpected: \n    ([1, 0, 0, 1, 1, 0, 1, 1], -11.062453224772216) \nGot: \n    ([1, 0, 0, 1, 0, 0, 1, 1], -11.062453224772215) \n********************************************************************** \nFile \"/home/john/sage-3.1.2.alpha1/tmp/hmm.py\", line 686: \n    sage: a.viterbi([3/4, 'abc', 'abc'] + [3/4]*10) \nExpected: \n    ([0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], -25.299405845367794) \nGot: \n    ([0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], -25.299405845367794) \n********************************************************************** \n1 items had failures: \n   2 of   6 in __main__.example_19 \n***Test Failed*** 2 failures. \nFor whitespace errors, see the file \n/home/john/sage-3.1.2.alpha1/tmp/.doctest_hmm.py \n         [1.8 s] \nexit code: 1024 \n```\n\nWilliam then suggested:\n\n```\nI think the above is just numerical noise.  The Viterbi algorithm\nis an approximate numerical algorithm using double precision numbers,\nand can give slightly different answers on different hardware.\nCan you change the doctest to:\n\n     sage: a.viterbi([1,0,0,1,0,0,1,1])  # numerical instability on\nsome platforms\n    ([1, 0, 0, 1, ..., 0, 1, 1], -11.06245322477221...)\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3978\n\n",
     "created_at": "2008-08-28T19:55:32Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003978.json:
     "title": "Sage 3.1.2.alpha1: ghmm and hmm numerical noise doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3978",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -73,15 +73,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3978
 
 ---
 
-archive/issue_comments_028575.json:
+archive/issue_comments_028517.json:
 ```json
 {
     "body": "On Fedora 9, 32 bits I get:\n\n\n\n```\njaap@paix sage-3.1.2.alpha1]$ ./sage -t  devel/sage/sage/stats/hmm/chmm.pyx\nsage -t  devel/sage/sage/stats/hmm/chmm.pyx                 **********************************************************************\nFile \"/home/jaap/downloads/sage-3.1.2.alpha1/tmp/chmm.py\", line 392:\n    sage: m\nExpected:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [0.000368587006957    0.999631412993]\n    [              0.1               0.9]\n    Emission parameters:\n    [(0.0, 1.0), (1.0, 1.0)]\n    Initial probabilities: [1.0, 0.0]\nGot:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [0.000368587006957    0.999631412993]\n    [              0.1               0.9]\n    Emission parameters:\n    [(0.0, 1.0), (1.0, 1.0)]\n    Initial probabilities: [0.99999999999999989, 0.0]\n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.1.2.alpha1/tmp/chmm.py\", line 579:\n    sage: m.log_likelihood([ ([1,0,1,1], 10),  ([1,0,1,20], 0.1)  ])\nExpected:\n    -72.225116741468781\nGot:\n    -72.225116741468767\n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.1.2.alpha1/tmp/chmm.py\", line 599:\n    sage: m.log_likelihood(finance.TimeSeries(100).randomize('normal',0,1))\nExpected:\n    -5275.3082940787635\nGot:\n    -5275.3082940787644\n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.1.2.alpha1/tmp/chmm.py\", line 701:\n    sage: m\nExpected:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.946539535984342, 0.70508296299241024), (2.0208156913293394, 0.70680033099099593)]\n    Initial probabilities: [0.28024729110782109, 0.71975270889217891]\nGot:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.9465395359843407, 0.70508296299241002), (2.0208156913293394, 0.70680033099099593)]\n    Initial probabilities: [0.28024729110782109, 0.71975270889217891]\n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.1.2.alpha1/tmp/chmm.py\", line 713:\n    sage: m\nExpected:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.5851786151779879, 0.57264580740105153), (1.5945035666064733, 0.57928632238916189)]\n    Initial probabilities: [0.38546857052811945, 0.61453142947188055]\nGot:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [1.0 0.0]\n    [0.0 1.0]\n    Emission parameters:\n    [(1.5851786151779879, 0.5726458074010512), (1.5945035666064735, 0.579286322389162)]\n    Initial probabilities: [0.38546857052811911, 0.614531429471881]\n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.1.2.alpha1/tmp/chmm.py\", line 1012:\n    sage: m\nExpected:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [0.000368587006957    0.999631412993]\n    [              0.1               0.9]\n    Emission parameters:\n    [(0.0, 1.0), (1.0, 1.0)]\n    Initial probabilities: [1.0, 0.0]\nGot:\n    Gaussian Hidden Markov Model with 2 States\n    Transition matrix:\n    [0.000368587006957    0.999631412993]\n    [              0.1               0.9]\n    Emission parameters:\n    [(0.0, 1.0), (1.0, 1.0)]\n    Initial probabilities: [0.99999999999999989, 0.0]\n**********************************************************************\n4 items had failures:\n   1 of   9 in __main__.example_11\n   2 of  13 in __main__.example_18\n   2 of  13 in __main__.example_20\n   1 of   9 in __main__.example_27\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.1.2.alpha1/tmp/.doctest_chmm.py\n\t [8.9 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/stats/hmm/chmm.pyx\nTotal time for all tests: 8.9 seconds\n\n```\n\n\n\n\n```\nsage -t  devel/sage/sage/stats/hmm/hmm.pyx                  **********************************************************************\nFile \"/home/jaap/downloads/sage-3.1.2.alpha1/tmp/hmm.py\", line 678:\n    sage: a.viterbi([1,0,0,1,0,0,1,1])\nExpected:\n    ([1, 0, 0, 1, 1, 0, 1, 1], -11.062453224772216)\nGot:\n    ([1, 0, 0, 1, 0, 0, 1, 1], -11.062453224772215)\n**********************************************************************\nFile \"/home/jaap/downloads/sage-3.1.2.alpha1/tmp/hmm.py\", line 686:\n    sage: a.viterbi([3/4, 'abc', 'abc'] + [3/4]*10)\nExpected:\n    ([0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], -25.299405845367794)\nGot:\n    ([0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], -25.299405845367794)\n**********************************************************************\n1 items had failures:\n   2 of   6 in __main__.example_19\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/jaap/downloads/sage-3.1.2.alpha1/tmp/.doctest_hmm.py\n\t [3.2 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  devel/sage/sage/stats/hmm/hmm.pyx\nTotal time for all tests: 3.2 seconds\n\n```\n",
     "created_at": "2008-08-28T20:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3978",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28575",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28517",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -241,15 +241,15 @@ Total time for all tests: 3.2 seconds
 
 ---
 
-archive/issue_comments_028576.json:
+archive/issue_comments_028518.json:
 ```json
 {
     "body": "Attachment [trac_3978.patch](tarball://root/attachments/some-uuid/ticket3978/trac_3978.patch) by mabshoff created at 2008-09-12 23:14:59",
     "created_at": "2008-09-12T23:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3978",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28576",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28518",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -259,15 +259,15 @@ Attachment [trac_3978.patch](tarball://root/attachments/some-uuid/ticket3978/tra
 
 ---
 
-archive/issue_comments_028577.json:
+archive/issue_comments_028519.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-09-12T23:22:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3978",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28577",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28519",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -277,15 +277,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_028578.json:
+archive/issue_comments_028520.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc2",
     "created_at": "2008-09-12T23:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3978",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28578",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28520",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -295,15 +295,15 @@ Merged in Sage 3.1.2.rc2
 
 ---
 
-archive/issue_comments_028579.json:
+archive/issue_comments_028521.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-12T23:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3978",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28579",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3978#issuecomment-28521",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

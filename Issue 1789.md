@@ -6,7 +6,7 @@ archive/issues_001789.json:
     "body": "Assignee: @williamstein\n\n\n```\nHi Robert,\n\n    1. Is this a clean, from-source build of sage-2.9.3?\n\n\nYes, i tried it out on two different systems now, Athlon XP, and Core Duo, both running on Debian Etch, and both show the same behaviour\n\n    2. What is the output of /usr/bin/env for you? Mine (Intel OS X\n    10.5.1) doesn't mention sage at all, although mysteriously things are\n    working for me.\n\n\nthe  SAGE_ROOT directory is included in my path, i even defined a global variable with this name, i.e.  SAGE_ROOT.\n \n\n    > #!/usr/bin/env sage -python\n    > import sys\n\n    For me, I get\n    $ ./BMV.sage\n    $\n\n\nyou response encouraged me to try out some more things, and if i change the first line to\n\n#!/usr/bin/env sage-python\ninstead of\n\n#!/usr/bin/env sage -python\n(note that there is no space anymore) things work as excepted (at least import sys and print \"Hello World\"), seems like my /usr/bin/env does not like the space between (#!/usr/bin/env \"sage -python\" does not work either)\n\nbut however, using\n\n#!/path/to/sage_root/sage-python\nimport sys\n\nstill does not work and shows the same strange \"mouse behaviour\" as described in my original posting, on both systems!!\nno idea why the second one does not work on my systems!!\n\n\n    However, when I run the sage itself, it looks like it's pointing at\n    some weird version:\n    $ /usr/bin/env sage\n    ----------------------------------------------------------------------\n    | SAGE Version 2.9.2, Release Date: 2008-01-05                       |\n    | Type notebook() for the GUI, and license() for information.        |\n    ----------------------------------------------------------------------\n    Loading SAGE library. Current Mercurial branch is: demo\n\n\n$/usr/bin/env sage\n\nbrings me to the sage prompt as expected\n\n    Hopefully this helps, although I have a feeling this thread isn't\n    over... \n\n\nAnyway, at least i found a partial solution to carry on with, but it seems as there are still some things to clarify, especially the mouse thing concerning the import sys\n\nThank you very much,\nGeorg\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1789\n\n",
     "created_at": "2008-01-15T23:42:31Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001789.json:
     "title": "standalone Sage scripts don't work on Linux -- they work fine on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1789",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -96,15 +96,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1789
 
 ---
 
-archive/issue_comments_011319.json:
+archive/issue_comments_011291.json:
 ```json
 {
     "body": "fixes the examples and docs in the examples/programming/scripts to avoid a lot of confusion, e.g., so they work on both os x and linux instead of just os x.",
     "created_at": "2008-01-19T13:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1789",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11319",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11291",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -114,15 +114,15 @@ fixes the examples and docs in the examples/programming/scripts to avoid a lot o
 
 ---
 
-archive/issue_comments_011320.json:
+archive/issue_comments_011292.json:
 ```json
 {
     "body": "Attachment [examples-trac-1789.patch](tarball://root/attachments/some-uuid/ticket1789/examples-trac-1789.patch) by @williamstein created at 2008-01-19 13:58:30\n\nI've posted a patch that gets applied in the SAGE_ROOT/examples directory.",
     "created_at": "2008-01-19T13:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1789",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11320",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11292",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -134,15 +134,15 @@ I've posted a patch that gets applied in the SAGE_ROOT/examples directory.
 
 ---
 
-archive/issue_comments_011321.json:
+archive/issue_comments_011293.json:
 ```json
 {
     "body": "This seems like a reasonable change to make.  The situation is tricky and it appears that the best thing to be done is to document how it can be made to work.",
     "created_at": "2008-01-19T19:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1789",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11321",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11293",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -152,15 +152,15 @@ This seems like a reasonable change to make.  The situation is tricky and it app
 
 ---
 
-archive/issue_comments_011322.json:
+archive/issue_comments_011294.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-19T20:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1789",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11322",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11294",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -170,15 +170,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011323.json:
+archive/issue_comments_011295.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha0",
     "created_at": "2008-01-19T20:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1789",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11323",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1789#issuecomment-11295",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

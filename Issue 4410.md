@@ -6,15 +6,14 @@ archive/issues_004410.json:
     "body": "Assignee: @burcin\n\nCC:  @robertwb\n\n`sage.categories.map.Map.__pow__` calls `generic_power`, which messes up power 0. There is this todo note there:\n\n\n```\n        # todo -- what about the case n=0 -- need to specify the identity map somehow.\n```\n\n\nAttached patch returns the identity map for power 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4410\n\n",
     "created_at": "2008-10-31T09:05:10Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] Map.__pow__ should return identity for power 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4410",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @burcin
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4410
 
 ---
 
-archive/issue_comments_032421.json:
+archive/issue_comments_032358.json:
 ```json
 {
     "body": "make Map.__pow__ return identity for power 0",
     "created_at": "2008-10-31T09:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4410",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32421",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32358",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -57,15 +56,15 @@ make Map.__pow__ return identity for power 0
 
 ---
 
-archive/issue_comments_032422.json:
+archive/issue_comments_032359.json:
 ```json
 {
     "body": "Attachment [trac_4410_map_pow.patch](tarball://root/attachments/some-uuid/ticket4410/trac_4410_map_pow.patch) by mabshoff created at 2008-10-31 15:35:42\n\nThis is the suggested fix discussed by RobertWB and Burcin in IRC last night. The code looks correct and passes doctests, positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T15:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4410",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32422",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32359",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -81,15 +80,15 @@ Michael
 
 ---
 
-archive/issue_comments_032423.json:
+archive/issue_comments_032360.json:
 ```json
 {
     "body": "Merged in Sage 3.2.alpha2",
     "created_at": "2008-10-31T15:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4410",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32423",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32360",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -99,15 +98,15 @@ Merged in Sage 3.2.alpha2
 
 ---
 
-archive/issue_comments_032424.json:
+archive/issue_comments_032361.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-31T15:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4410",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32424",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4410#issuecomment-32361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002402.json:
     "body": "Assignee: @williamstein\n\nLike the summary says, there should be a hg_examples mercurial wrapper for the examples repository.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2402\n\n",
     "created_at": "2008-03-06T02:14:31Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "there should be a hg_examples mercurial wrapper for the examples repository",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2402",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2402
 
 ---
 
-archive/issue_comments_016221.json:
+archive/issue_comments_016186.json:
 ```json
 {
     "body": "Attachment [trac_2402.patch](tarball://root/attachments/some-uuid/ticket2402/trac_2402.patch) by @mwhansen created at 2009-01-23 13:30:11",
     "created_at": "2009-01-23T13:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16221",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16186",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_2402.patch](tarball://root/attachments/some-uuid/ticket2402/tra
 
 ---
 
-archive/issue_comments_016222.json:
+archive/issue_comments_016187.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-23T13:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16222",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16187",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_016223.json:
+archive/issue_comments_016188.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2009-01-23T13:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16223",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16188",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_016224.json:
+archive/issue_comments_016189.json:
 ```json
 {
     "body": "Nice. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T16:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16224",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16189",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +104,15 @@ Michael
 
 ---
 
-archive/issue_comments_016225.json:
+archive/issue_comments_016190.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-24T13:15:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16225",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16190",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -123,15 +122,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_016226.json:
+archive/issue_comments_016191.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha2",
     "created_at": "2009-01-24T13:15:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16226",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2402#issuecomment-16191",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

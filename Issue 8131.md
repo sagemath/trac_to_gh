@@ -6,7 +6,7 @@ archive/issues_008131.json:
     "body": "Assignee: sage-combinat\n\nKeywords: Catalan numbers\n\nThe patch makes Sage aware of this fact.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8131\n\n",
     "created_at": "2010-01-30T09:40:20Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008131.json:
     "title": "Catalan numbers are integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8131",
-    "user": "fwclarke"
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 Assignee: sage-combinat
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8131
 
 ---
 
-archive/issue_comments_071488.json:
+archive/issue_comments_071367.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-30T09:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71488",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71367",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -49,15 +49,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_071489.json:
+archive/issue_comments_071368.json:
 ```json
 {
     "body": "Attachment [trac_8131.patch](tarball://root/attachments/some-uuid/ticket8131/trac_8131.patch) by fwclarke created at 2010-01-30 09:42:37",
     "created_at": "2010-01-30T09:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71489",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71368",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -67,15 +67,15 @@ Attachment [trac_8131.patch](tarball://root/attachments/some-uuid/ticket8131/tra
 
 ---
 
-archive/issue_comments_071490.json:
+archive/issue_comments_071369.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-30T21:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71490",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71369",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -85,15 +85,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_071491.json:
+archive/issue_comments_071370.json:
 ```json
 {
     "body": "Thanks for spotting and fixing this!\n\nPlease add an:\n\n```\nOUTPUT: integer\n```\n\nline in the documentation, as per http://www.sagemath.org/doc/developer/conventions.html#documentation-strings, as well an\nexample in the doctests showing/testing that property, and I'll set a positive review!\n\nNote: you may want to use the method divide_knowing_divisible_by on ZZ elements.",
     "created_at": "2010-01-30T21:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71491",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71370",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -114,15 +114,15 @@ Note: you may want to use the method divide_knowing_divisible_by on ZZ elements.
 
 ---
 
-archive/issue_comments_071492.json:
+archive/issue_comments_071371.json:
 ```json
 {
     "body": "Replying to [comment:2 nthiery]:\n\nIn the replacement patch I've improved the documentation and added a doctest as suggested.\n\nIn addition, I've simplified an existing doctest and slightly modified another (because `divide_knowing_divisible_by` gives a different error when trying to divide by zero).  I've made one more adjustment to the documentation so that the mathematics displays properly; at least it does in the notebook now.",
     "created_at": "2010-02-06T13:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71492",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71371",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -136,15 +136,15 @@ In addition, I've simplified an existing doctest and slightly modified another (
 
 ---
 
-archive/issue_comments_071493.json:
+archive/issue_comments_071372.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-06T13:13:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71493",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -154,15 +154,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_071494.json:
+archive/issue_comments_071373.json:
 ```json
 {
     "body": "replaces earlier patch, based on 4.3.1",
     "created_at": "2010-02-06T13:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71494",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71373",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -172,15 +172,15 @@ replaces earlier patch, based on 4.3.1
 
 ---
 
-archive/issue_comments_071495.json:
+archive/issue_comments_071374.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-23T23:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71495",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -190,15 +190,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_071496.json:
+archive/issue_comments_071375.json:
 ```json
 {
     "body": "Attachment [trac_8131-replacement.patch](tarball://root/attachments/some-uuid/ticket8131/trac_8131-replacement.patch) by nborie created at 2010-02-23 23:09:08\n\nIt's look good for code, test and applying. I give this patch a positive review.",
     "created_at": "2010-02-23T23:09:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71496",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71375",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -210,15 +210,15 @@ It's look good for code, test and applying. I give this patch a positive review.
 
 ---
 
-archive/issue_comments_071497.json:
+archive/issue_comments_071376.json:
 ```json
 {
     "body": "Merged [trac_8131-replacement.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8131/trac_8131-replacement.patch).\n\n\n\nFrancis: You should put the ticket number in your commit message.",
     "created_at": "2010-03-02T21:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71497",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71376",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -232,15 +232,15 @@ Francis: You should put the ticket number in your commit message.
 
 ---
 
-archive/issue_comments_071498.json:
+archive/issue_comments_071377.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-02T21:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71498",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71377",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -250,15 +250,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_071499.json:
+archive/issue_comments_071378.json:
 ```json
 {
     "body": "Changing keywords from \"Catalan numbers\" to \"catalan\".",
     "created_at": "2016-12-06T13:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71499",
-    "user": "@pelegm"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71378",
+    "user": "https://github.com/pelegm"
 }
 ```
 
@@ -268,15 +268,15 @@ Changing keywords from "Catalan numbers" to "catalan".
 
 ---
 
-archive/issue_comments_071500.json:
+archive/issue_comments_071379.json:
 ```json
 {
     "body": "Replying to [comment:6 pelegm]:\n\nThe trouble with using the keyword 'catalan' is that it makes it look as though it concerns the Catalan constant rather than the Catalan numbers:\n\n```\nsage: catalan.n()\n0.915965594177219\nsage: catalan_number(7)\n429\n```\n",
     "created_at": "2016-12-07T14:44:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8131",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71500",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8131#issuecomment-71379",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 

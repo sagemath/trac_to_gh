@@ -6,7 +6,7 @@ archive/issues_003168.json:
     "body": "Assignee: cwitty\n\nIf you take a simple Cython extension module and install it in into SAGE via\n\n```\nsage -python setup.py install\n```\n\nsource introspection will not work.   \n\nThis appears to caused by two things\n\n1) cython is invoked without the \"-p\" option\n\n2) the relevant *pyx files are not put somewhere that the Sage interpreter can find them.\n\nAttached is a minimal Cython module illustrating the problem.   Source introspection can be made to work via\n\n\n```\nsage -cython -p introtest.pyx\nsage -python setup.py install\ncp introtest.pyx $SAGEROOT/devel/sage/\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/3168\n\n",
     "created_at": "2008-05-12T19:34:17Z",
     "labels": [
-        "misc",
+        "component: misc",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003168.json:
     "title": "Source introspection does not work for outside Cython extensions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3168",
-    "user": "@NathanDunfield"
+    "user": "https://github.com/NathanDunfield"
 }
 ```
 Assignee: cwitty
@@ -50,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3168
 
 ---
 
-archive/issue_comments_021954.json:
+archive/issue_comments_021907.json:
 ```json
 {
     "body": "Attachment [intro.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.tgz) by @NathanDunfield created at 2008-05-12 19:34:46\n\nMinimal example",
     "created_at": "2008-05-12T19:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21954",
-    "user": "@NathanDunfield"
+    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21907",
+    "user": "https://github.com/NathanDunfield"
 }
 ```
 
@@ -70,15 +70,15 @@ Minimal example
 
 ---
 
-archive/issue_comments_021955.json:
+archive/issue_comments_021908.json:
 ```json
 {
     "body": "Minimal example",
     "created_at": "2008-05-12T19:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21955",
-    "user": "@NathanDunfield"
+    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21908",
+    "user": "https://github.com/NathanDunfield"
 }
 ```
 
@@ -88,15 +88,15 @@ Minimal example
 
 ---
 
-archive/issue_comments_021956.json:
+archive/issue_comments_021909.json:
 ```json
 {
     "body": "Attachment [intro.2.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.2.tgz) by @NathanDunfield created at 2008-05-12 19:36:49",
     "created_at": "2008-05-12T19:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21956",
-    "user": "@NathanDunfield"
+    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21909",
+    "user": "https://github.com/NathanDunfield"
 }
 ```
 
@@ -106,15 +106,15 @@ Attachment [intro.2.tgz](tarball://root/attachments/some-uuid/ticket3168/intro.2
 
 ---
 
-archive/issue_comments_021957.json:
+archive/issue_comments_021910.json:
 ```json
 {
     "body": "Changing priority from trivial to minor.",
     "created_at": "2008-05-12T19:36:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21957",
-    "user": "@NathanDunfield"
+    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21910",
+    "user": "https://github.com/NathanDunfield"
 }
 ```
 
@@ -124,15 +124,15 @@ Changing priority from trivial to minor.
 
 ---
 
-archive/issue_comments_021958.json:
+archive/issue_comments_021911.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-23T02:46:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21958",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3168#issuecomment-21911",
+    "user": "https://github.com/aghitza"
 }
 ```
 

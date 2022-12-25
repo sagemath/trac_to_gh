@@ -6,15 +6,14 @@ archive/issues_001421.json:
     "body": "Assignee: @williamstein\n\nI have added a new method \"one_curve\" (maybe a better name can be found) to run exactly one\ncurve (either ECM or P-1 or P+1). Also added examples for find_factor() method.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1421\n\n",
     "created_at": "2007-12-07T19:34:29Z",
     "labels": [
-        "number theory",
-        "minor",
-        "enhancement"
+        "component: number theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "[with patch] finer control in ECM interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1421",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @williamstein
@@ -30,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1421
 
 ---
 
-archive/issue_comments_009166.json:
+archive/issue_comments_009142.json:
 ```json
 {
     "body": "Attachment [7544.patch](tarball://root/attachments/some-uuid/ticket1421/7544.patch) by @zimmermann6 created at 2007-12-07 19:34:50",
     "created_at": "2007-12-07T19:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9166",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9142",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -48,15 +47,15 @@ Attachment [7544.patch](tarball://root/attachments/some-uuid/ticket1421/7544.pat
 
 ---
 
-archive/issue_comments_009167.json:
+archive/issue_comments_009143.json:
 ```json
 {
     "body": "code looks good -- if it passes tests, put it in.",
     "created_at": "2007-12-15T10:18:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9167",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9143",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -66,15 +65,15 @@ code looks good -- if it passes tests, put it in.
 
 ---
 
-archive/issue_comments_009168.json:
+archive/issue_comments_009144.json:
 ```json
 {
     "body": "Fixed one line in the original patch -- it creates a string to return as the error message, and then accidentally returns something other than that string (which I'm assuming wasn't the intended behavior).",
     "created_at": "2007-12-18T01:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9168",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9144",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -84,15 +83,15 @@ Fixed one line in the original patch -- it creates a string to return as the err
 
 ---
 
-archive/issue_comments_009169.json:
+archive/issue_comments_009145.json:
 ```json
 {
     "body": "Attachment [1421-pt2.patch](tarball://root/attachments/some-uuid/ticket1421/1421-pt2.patch) by @craigcitro created at 2007-12-18 01:45:38",
     "created_at": "2007-12-18T01:45:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9169",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9145",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -102,15 +101,15 @@ Attachment [1421-pt2.patch](tarball://root/attachments/some-uuid/ticket1421/1421
 
 ---
 
-archive/issue_comments_009170.json:
+archive/issue_comments_009146.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-18T02:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9170",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9146",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -120,15 +119,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009171.json:
+archive/issue_comments_009147.json:
 ```json
 {
     "body": "Merged in 2.9.1.alpha1",
     "created_at": "2007-12-18T02:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1421",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9171",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1421#issuecomment-9147",
+    "user": "https://github.com/rlmill"
 }
 ```
 

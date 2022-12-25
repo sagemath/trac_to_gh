@@ -6,15 +6,13 @@ archive/issues_008807.json:
     "body": "Assignee: Simon King\n\nCC:  kohel @williamstein @wdjoyner @robertwb\n\nKeywords: morphisms functors categories\n\nWorking on the doc tests for sage.category at #8800, I found that support for morphisms is missing in the category framework. I think this is important, and therefore I am opening this ticket.\n\nSome thoughts on implementing support.\n\nLet f be a morphism in a category C, and let F be a functor, F.domain()==C. Then F(f) should by default try F(f.domain()).hom(f,F(f.codomain())). This relies on the call method of F(f.domain()).Hom(F.codomain()), which in turn uses _coerce_impl. I think it is there where the support should be implemented.\n\nExample:\n\nIn sage.rings.homset.RingHomset_generic_with_category._coerce_impl, one has\n\n```\n        ...\n        if x.parent() == self:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        raise TypeError\n```\n\nWhy not instead\n\n```\n        try:\n            if isinstance(x, morphism.RingHomomorphism_im_gens):\n                return morphism.RingHomomorphism_im_gens(self, x.im_gens())\n            elif isinstance(x, morphism.RingHomomorphism_cover):\n                return morphism.RingHomomorphism_cover(self)\n        except:\n            raise TypeError\n```\n\n\nIf I do so, the following works:\n\n```\nsage: R.<x> = QQ[]\nsage: f = R.hom([2*x],R)\nsage: C = Fields()\nsage: f2 = C(R).hom(f,C(R))\nsage: f2\nRing endomorphism of Fraction Field of Univariate Polynomial Ring in x over Rational Field\n  Defn: x |--> 2*x\nsage: f2(1/x)\n1/(2*x)\n```\n\n\nIt should be straight forward to change the call method of ``C`` so that ``C(f)`` reproduces the above construction. Similarly, if ``F`` is a functor then ``F(f)`` should call ``F(f.domain()).hom(f,F(f.codomain()))``.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8807\n\n",
     "created_at": "2010-04-28T18:17:42Z",
     "labels": [
-        "categories",
-        "major",
-        "enhancement"
+        "component: categories"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Adding support for morphisms to the category framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8807",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: Simon King
@@ -81,15 +79,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8807
 
 ---
 
-archive/issue_comments_080804.json:
+archive/issue_comments_080672.json:
 ```json
 {
     "body": "Implementing induced homomorphisms; Functors on morphisms; some doc tests",
     "created_at": "2010-04-30T13:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80804",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80672",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -99,15 +97,15 @@ Implementing induced homomorphisms; Functors on morphisms; some doc tests
 
 ---
 
-archive/issue_comments_080805.json:
+archive/issue_comments_080673.json:
 ```json
 {
     "body": "Attachment [8807functors_and_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.patch) by @simon-king-jena created at 2010-04-30 14:21:05\n\nFixing a buglet in the construction functor of Laurent Polynomial Rings. To be applied after the first patch",
     "created_at": "2010-04-30T14:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80805",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80673",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -119,15 +117,15 @@ Fixing a buglet in the construction functor of Laurent Polynomial Rings. To be a
 
 ---
 
-archive/issue_comments_080806.json:
+archive/issue_comments_080674.json:
 ```json
 {
     "body": "Attachment [8807functors_and_induced_morphisms.p1.patch](tarball://root/attachments/some-uuid/ticket8807/8807functors_and_induced_morphisms.p1.patch) by @simon-king-jena created at 2010-04-30 14:26:01\n\nCc to the original authors.\n\nI solved the problem. Please apply both patches in order.\n\n**__New Code__**\n\nI cleaned the framework for functors. There is a generic call method that (in contrast to the old generic call method) has a return value. It relies on three methods _coerce_into_domain, _apply_functor and _apply_functor_to_morphism. The default methods are already enough for forgetful functor and most construction functors.\n\nI implemented a new class for Ring Homomorphisms that are induced by a homomorphism of the base ring. This enables the application of the construction functors for matrix and polynomial rings.\n\n**__Tests__**\n\nAll new code is tested, and I added also some doc tests for old code. This is related with #8800. However, #8800 should not be closed, because the old code is still not completely covered by tests yet.\n\nSuggestion: The further work on #8800 will build upon this ticket.\n\n**__Showcases__**\n\nWe start with a homomorphism of polynomial rings.\n\n```\nsage: R.<x,y> = QQ[]\nsage: S.<z> = QQ[]\nsage: f = R.hom([2*z,3*z],S)\n```\n\n\nNow we construct polynomial rings based on ``R`` and ``S``, and let ``f`` act on the coefficients:\n\n```\nsage: PR.<t> = R[]\nsage: PS = S['t']\nsage: Pf = PR.hom(f,PS)\nsage: Pf\nRing morphism:\n  From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in z over Rational Field\n          Defn: x |--> 2*z\n                y |--> 3*z\nsage: p = (x - 4*y + 1/13)*t^2 + (1/2*x^2 - 1/3*y^2)*t + 2*y^2 + x\nsage: Pf(p)\n(-10*z + 1/13)*t^2 - z^2*t + 18*z^2 + 2*z\n```\n\n\nThe construction of induced homomorphisms is recursive, and so we have:\n\n```\nsage: MPR = MatrixSpace(PR, 2)\nsage: MPS = MatrixSpace(PS, 2)\nsage: M = MPR([(- x + y)*t^2 + 58*t - 3*x^2 + x*y, (- 1/7*x*y - 1/40*x)*t^2 + (5*x^2 + y^2)*t + 2*y, (- 1/3*y + 1)*t^2 + 1/3*x*y + y^2 + 5/2*y + 1/4, (x + 6*y + 1)*t^2])\nsage: MPf = MPR.hom(f,MPS); MPf\nRing morphism:\n  From: Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n  To:   Full MatrixSpace of 2 by 2 dense matrices over Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n  Defn: Induced from base ring by\n        Ring morphism:\n          From: Univariate Polynomial Ring in t over Multivariate Polynomial Ring in x, y over Rational Field\n          To:   Univariate Polynomial Ring in t over Univariate Polynomial Ring in z over Rational Field\n          Defn: Induced from base ring by\n                Ring morphism:\n                  From: Multivariate Polynomial Ring in x, y over Rational Field\n                  To:   Univariate Polynomial Ring in z over Rational Field\n                  Defn: x |--> 2*z\n                        y |--> 3*z\nsage: MPf(M)\n[                    z*t^2 + 58*t - 6*z^2 (-6/7*z^2 - 1/20*z)*t^2 + 29*z^2*t + 6*z]\n[    (-z + 1)*t^2 + 11*z^2 + 15/2*z + 1/4                           (20*z + 1)*t^2]\n```\n\n\nAnd this can also be achieved using construction functors:\n\n```\nsage: from sage.categories.pushout import CompositConstructionFunctor\nsage: F = CompositConstructionFunctor(QQ.construction()[0],ZZ['x'].construction()[0], QQ.construction()[0],ZZ['y'].construction()[0])\nsage: R.<a,b> = QQ[]\nsage: f = R.hom([a+b, a-b])\nsage: F(f) # indirect doctest\nRing endomorphism of Univariate Polynomial Ring in y over Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n  Defn: Induced from base ring by\n        Ring endomorphism of Fraction Field of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n          Defn: Induced from base ring by\n                Ring endomorphism of Univariate Polynomial Ring in x over Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                  Defn: Induced from base ring by\n                        Ring endomorphism of Fraction Field of Multivariate Polynomial Ring in a, b over Rational Field\n                          Defn: a |--> a + b\n                                b |--> a - b\n```\n\n\nWith the second patch, Laurent polynomial rings work as well:\n\n```\nsage: P = LaurentPolynomialRing(QQ,'t')\nsage: F = P.construction()[0]\nsage: X.<t> = LaurentPolynomialRing(R)\nsage: p = (a+b)*t^-1 + (a^2)*t + b\nsage: F(f)(p)\n(a^2 + 2*a*b + b^2)*t + a - b + 2*a*t^-1\n```\n",
     "created_at": "2010-04-30T14:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80806",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80674",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -244,15 +242,15 @@ sage: F(f)(p)
 
 ---
 
-archive/issue_comments_080807.json:
+archive/issue_comments_080675.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-30T14:26:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80807",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80675",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -262,15 +260,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_080808.json:
+archive/issue_comments_080676.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-07-20T14:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80808",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80676",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -280,15 +278,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_080809.json:
+archive/issue_comments_080677.json:
 ```json
 {
     "body": "I applied this patch to sage-4.5, and ran \"make ptestlong\", and their are failures all over the place, e.g.,\n\n```\n\nwstein@sage:~/build/sage-4.5.alphastein1$ ./sage -t  -long devel/sage/sage/matrix/misc.pyx\nsage -t -long \"devel/sage/sage/matrix/misc.pyx\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/devel/sage/sage/matrix/misc.pyx\", line 67:\n    sage: B = ((matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5])/3)%500).change_ring(ZZ)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/wstein/build/sage-4.5.alphastein1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        B = ((matrix(ZZ, Integer(3),Integer(4), [Integer(1),Integer(2),Integer(3),-Integer(4),Integer(7),Integer(2),Integer(18),Integer(3),Inte\nger(4),Integer(3),Integer(4),Integer(5)])/Integer(3))%Integer(500)).change_ring(ZZ)###line 67:\n    sage: B = ((matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5])/3)%500).change_ring(ZZ)\n      File \"element.pyx\", line 1529, in sage.structure.element.RingElement.__div__ (sage/structure/element.c:11992)\n      File \"coerce.pyx\", line 765, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6966)\n    TypeError: unsupported operand parent(s) for '/': 'Full MatrixSpace of 3 by 4 dense matrices over Integer Ring' and 'Integer Ring'\n...\n```\n",
     "created_at": "2010-07-20T14:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80809",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80677",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -324,15 +322,15 @@ ger(4),Integer(3),Integer(4),Integer(5)])/Integer(3))%Integer(500)).change_ring(
 
 ---
 
-archive/issue_comments_080810.json:
+archive/issue_comments_080678.json:
 ```json
 {
     "body": "Dear William,\n\nthanks for looking at this! Indeed it has been a long time since I wrote it, so it is time to resume work, taking a fresh look at my own code. I think this will be my project for the rest of Sage Days 24!",
     "created_at": "2010-07-20T19:40:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80810",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80678",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -344,15 +342,15 @@ thanks for looking at this! Indeed it has been a long time since I wrote it, so 
 
 ---
 
-archive/issue_comments_080811.json:
+archive/issue_comments_080679.json:
 ```json
 {
     "body": "It seems that my patch crashed the coercion system. Funny coincidence that I held a tutorial on coercion today...\n\n```\nsage: cm = get_coercion_model()\nsage: M = parent(matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5]))\nsage: cm.explain(M,QQ)\nWill try _r_action and _l_action\nUnknown result parent.\n```\n\n\nCheers,\nSimon",
     "created_at": "2010-07-20T21:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80811",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80679",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -374,15 +372,15 @@ Simon
 
 ---
 
-archive/issue_comments_080812.json:
+archive/issue_comments_080680.json:
 ```json
 {
     "body": "And there it is:\n\n```\nsage: M = parent(matrix(ZZ, 3,4, [1,2,3,-4,7,2,18,3,4,3,4,5]))\nsage: mf = M.construction()[0]\nsage: mf.domain()\nCategory of rings\nsage: mf.codomain()\nCategory of rings\nsage: M in Rings()\nFalse\n```\n\n\nSo, the problem is that I gave the matrix constructor got a wrong codomain, namely the category `Rings()` --- and my generic `__call__` method checks whether the output belongs to the intended category. What should be the right choice?\n\n```\nsage: M.categories()\n[Category of modules over Integer Ring, Category of bimodules over Integer Ring on the left and Integer Ring on the right, Category of left modules over Integer Ring, Category of right modules over Integer Ring, Category of commutative additive groups, Category of commutative additive monoids, Category of commutative additive semigroups, Category of additive magmas, Category of sets, Category of sets with partial maps, Category of objects]\n```\n\nSince the construction functor can not know about the base ring, I guess `CommutativeAdditiveGroups()` would be the way to go.",
     "created_at": "2010-07-20T21:08:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80812",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80680",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -413,15 +411,15 @@ Since the construction functor can not know about the base ring, I guess `Commut
 
 ---
 
-archive/issue_comments_080813.json:
+archive/issue_comments_080681.json:
 ```json
 {
     "body": "I went through the file and found that indeed in some cases wrong categories were chosen. I count this as an argument *pro* my approach to have a generic `__call__` method, because this checks whether the result is in the expected category.\n\nAfter doing the appropriate changes, I am running ptestlong as well.",
     "created_at": "2010-07-20T21:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80813",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80681",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -433,15 +431,15 @@ After doing the appropriate changes, I am running ptestlong as well.
 
 ---
 
-archive/issue_comments_080814.json:
+archive/issue_comments_080682.json:
 ```json
 {
     "body": "I produced a new patch (I hope I got the `hg -qfold` command right).\n\nThe problem was: \n\n* Some construction functors used to be defined on the wrong categories. E.g., the `MatrixFunctor` was defined as a functor from Rings() to Rings(), which is of course wrong if the number of rows is different from the number of columns.\n* In the good old times, every functor had a custom `__call__` method. Therefore, it was not noticed that sometimes the return value did not belong to the expected category.\n* My default `__call__` method does check the output - and raises an error if it is wrong.\n* For some reason I forgot to run `sage -testall`\n\nSolution:\n\n* Be more careful with defining domain and codomain of the construction functors.\n* Run `make ptestlong`. Result:\n  {{{\nAll tests passed!\nTotal time for all tests: 4078.1 seconds\n   }}}\n\nOne remark concerning doctests. The genuinely new code (induced morphisms) is doctested. In my patch, I however did not add tests for sage.categories.pushout. This is done in #8800. I hope that the ticket from #8800 still applies with the new patch that I posted here.",
     "created_at": "2010-07-21T08:32:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80814",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80682",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -469,15 +467,15 @@ One remark concerning doctests. The genuinely new code (induced morphisms) is do
 
 ---
 
-archive/issue_comments_080815.json:
+archive/issue_comments_080683.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-21T08:32:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80815",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80683",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -487,15 +485,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_080816.json:
+archive/issue_comments_080684.json:
 ```json
 {
     "body": "Replying to [comment:7 SimonKing]:\n> One remark concerning doctests. The genuinely new code (induced morphisms) is doctested. In my patch, I however did not add tests for sage.categories.pushout. This is done in #8800. I hope that the ticket from #8800 still applies with the new patch that I posted here.\n\nUnfortunately, #8800 does not apply with the new patch from here. \n\nSuggestion: I'll rebase #8800 relative to the new patch here. So, #8807 would be reviewed first, and the next to review would be #8800, which contains many doctests. I hope this is acceptable.",
     "created_at": "2010-07-21T08:43:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80816",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80684",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -510,15 +508,15 @@ Suggestion: I'll rebase #8800 relative to the new patch here. So, #8807 would be
 
 ---
 
-archive/issue_comments_080817.json:
+archive/issue_comments_080685.json:
 ```json
 {
     "body": "Review:\n\nJust a few trivial comments, after which I could give this a positive review.  The patch applies fine to 4.6.rc0 (though the related one at #8800 does not then apply cleanly) and all tests pass.  There is no time regression (long tests took 667s before and 642s after, using -tp 20).\n\nHere are the minor issues in docstrings:\n\nline 44: \"one should implement two methods\" -- do you mean three?\n\n_apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be \"Apply the functor to a morphism between ... something\" \n\nIn the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` \"\"%s is ill-defined, ...\"\n\nIs the spelling of \"`CompositConstructionFunctor`\" intentional?  Should it not be \"`CompositeConstructionFunctor`\"?",
     "created_at": "2010-10-26T20:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80817",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80685",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -540,15 +538,15 @@ Is the spelling of "`CompositConstructionFunctor`" intentional?  Should it not b
 
 ---
 
-archive/issue_comments_080818.json:
+archive/issue_comments_080686.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-10-26T20:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80818",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80686",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -558,15 +556,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_080819.json:
+archive/issue_comments_080687.json:
 ```json
 {
     "body": "Hi John!\n\nReplying to [comment:9 cremona]:\n> Review:\n> \n> Just a few trivial comments, after which I could give this a positive review.  The patch applies fine to 4.6.rc0 (though the related one at #8800 does not then apply cleanly) and all tests pass.  There is no time regression (long tests took 667s before and 642s after, using -tp 20).\n\nThat's good news! As my patch only adds functionality, without changing the method resolution order of existing classes and without replacing existing algorithms, it is no surprise that the speed remains fine.\n\n> Here are the minor issues in docstrings:\n> \n> line 44: \"one should implement two methods\" -- do you mean three?\n\nYou know, there are three types of mathematicians: Some can count, and others can't.\n\nBut isn't it pythonesque? Recall the Holy Hand Grenade of Antioch from the movie \"Monty Python and the Holy Grail\"... :)\n\n> _apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be \"Apply the functor to a morphism between ... something\" \n\nRight.\n\n> In the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` \"\"%s is ill-defined, ...\"\n\nOK, but I hope such example needs to be constructed on purpose. It used to happen with the matrix constructor, for example: The functor was supposed to take a ring R into the ring(!!) of m by n matrices over R. But if the matrix constructor does not produce square matrices, the result is of course not a ring. This bug existed before and is fixed in my patch (now, the functor's codomain is only expected to be the category of rings if m equals n). However, this is exactly the situation that is covered by the `TypeError`.\n\n> Is the spelling of \"`CompositConstructionFunctor`\" intentional?  Should it not be \"`CompositeConstructionFunctor`\"?\n\nThis wasn't my idea. `CompositConstructionFunctor` existed earlier (see pushout.py).\n\nAs I mentioned on the other ticket, I will be unable to do any programming work at least until next week. But it should be one of the first things I'll do once I'm settled in Jena.\n\nBest regards,\n\nSimon",
     "created_at": "2010-10-26T22:31:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80819",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80687",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -609,15 +607,15 @@ Simon
 
 ---
 
-archive/issue_comments_080820.json:
+archive/issue_comments_080688.json:
 ```json
 {
     "body": "Replying to [comment:9 cremona]:\n> ...\n> Here are the minor issues in docstrings:\n> \n> line 44: \"one should implement two methods\" -- do you mean three?\n\nCorrected.\n\n> _apply_functor_to_morphism: first line of docstring is a copy from the previous function but should presumably be \"Apply the functor to a morphism between ... something\" \n\nCorrected.\n\n> In the new `__call__` function, I would like to see a test of the branch which raises a `TypeError` \"\"%s is ill-defined, ...\"\n\nDone. I define a class that behaves like the matrix constructor used to.\n\n> Is the spelling of \"`CompositConstructionFunctor`\" intentional?  Should it not be \"`CompositeConstructionFunctor`\"?\n\nThat spelling is old, so, I won't touch it.\n\nI am running `sage -tp 3 sage` right now, but I am replacing the old patch in a minute.\n\nCheers,\nSimon",
     "created_at": "2010-11-24T07:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80820",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80688",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -650,15 +648,15 @@ Simon
 
 ---
 
-archive/issue_comments_080821.json:
+archive/issue_comments_080689.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-11-24T08:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80821",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80689",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -668,15 +666,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_080822.json:
+archive/issue_comments_080690.json:
 ```json
 {
     "body": "OK, patch is updated.\n\nPlease only apply `trac-8807_induced_morphisms.patch`.",
     "created_at": "2010-11-24T08:01:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80822",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80690",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -688,15 +686,15 @@ Please only apply `trac-8807_induced_morphisms.patch`.
 
 ---
 
-archive/issue_comments_080823.json:
+archive/issue_comments_080691.json:
 ```json
 {
     "body": "Attachment [trac-8807_induced_morphisms.patch](tarball://root/attachments/some-uuid/ticket8807/trac-8807_induced_morphisms.patch) by @simon-king-jena created at 2010-11-24 08:11:56\n\nThis patch applies to sage-4.6; it is the only patch to be applied",
     "created_at": "2010-11-24T08:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80823",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80691",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -708,15 +706,15 @@ This patch applies to sage-4.6; it is the only patch to be applied
 
 ---
 
-archive/issue_comments_080824.json:
+archive/issue_comments_080692.json:
 ```json
 {
     "body": "Looks good, about to test with 4.6.1.alpha2.",
     "created_at": "2010-11-24T09:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80824",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80692",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -726,15 +724,15 @@ Looks good, about to test with 4.6.1.alpha2.
 
 ---
 
-archive/issue_comments_080825.json:
+archive/issue_comments_080693.json:
 ```json
 {
     "body": "All tests pass -- but I forgot -long, so hold on...",
     "created_at": "2010-11-24T09:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80825",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80693",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -744,15 +742,15 @@ All tests pass -- but I forgot -long, so hold on...
 
 ---
 
-archive/issue_comments_080826.json:
+archive/issue_comments_080694.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-11-24T09:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80826",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80694",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -762,15 +760,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080827.json:
+archive/issue_comments_080695.json:
 ```json
 {
     "body": "...all long tests pass!",
     "created_at": "2010-11-24T09:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80827",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80695",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -780,15 +778,15 @@ archive/issue_comments_080827.json:
 
 ---
 
-archive/issue_comments_080828.json:
+archive/issue_comments_080696.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-11-24T09:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80828",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80696",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -798,15 +796,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_080829.json:
+archive/issue_comments_080697.json:
 ```json
 {
     "body": "Replying to [comment:15 cremona]:\n> ...all long tests pass!\nSorry, I am a complete idiot.  I imported the patch and did sage -b but never qpushed it.  Back to square one.",
     "created_at": "2010-11-24T09:56:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80829",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80697",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -818,15 +816,15 @@ Sorry, I am a complete idiot.  I imported the patch and did sage -b but never qp
 
 ---
 
-archive/issue_comments_080830.json:
+archive/issue_comments_080698.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-11-24T09:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80830",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80698",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -836,15 +834,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_080831.json:
+archive/issue_comments_080699.json:
 ```json
 {
     "body": "Third time lucky: I did apply the patch, and rebuild, and test the entire library with -long, and all tests pass.  (4.6.1.alpha2, 64-bit),",
     "created_at": "2010-11-24T10:25:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80831",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80699",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -854,15 +852,15 @@ Third time lucky: I did apply the patch, and rebuild, and test the entire librar
 
 ---
 
-archive/issue_comments_080832.json:
+archive/issue_comments_080700.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-11-24T10:25:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80832",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80700",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -872,15 +870,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080833.json:
+archive/issue_comments_080701.json:
 ```json
 {
     "body": "Release manager: after merging this patch, please also do the one at #10318 which has a positive review and just does a lot of spelling corrections, mostly on the file which this one affects most.",
     "created_at": "2010-11-24T13:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80833",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80701",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -890,15 +888,15 @@ Release manager: after merging this patch, please also do the one at #10318 whic
 
 ---
 
-archive/issue_comments_080834.json:
+archive/issue_comments_080702.json:
 ```json
 {
     "body": "To the buildbot and the release manager:\n\nApply trac-8807_induced_morphisms.patch",
     "created_at": "2010-12-08T10:14:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80834",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80702",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -910,15 +908,15 @@ Apply trac-8807_induced_morphisms.patch
 
 ---
 
-archive/issue_comments_080835.json:
+archive/issue_comments_080703.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-01-12T06:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80835",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8807#issuecomment-80703",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

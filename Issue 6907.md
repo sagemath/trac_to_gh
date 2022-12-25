@@ -6,7 +6,7 @@ archive/issues_006907.json:
     "body": "Assignee: @williamstein\n\nKeywords: implicit_plot\n\nIn sage 4.1.1, a call to implicit_plot() draws a perfectly fine graph, but also pops up a warning,\n\n```\n/usr/local/share/sage-4.1.1/local/lib/python2.6/site-packages/sage/plot/\\\nplot.py:2876: DeprecationWarning: Substitution using function-call\nsyntax and unnamed arguments is deprecated and will be removed from a\nfuture release of Sage; you can use named arguments instead, like\nEXPR(x=..., y=...)\n  k, _ = adapt_to_callable([f], 2)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6907\n\n",
     "created_at": "2009-09-09T02:42:38Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006907.json:
     "title": "implicit_plot reports deprecation warning",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6907",
-    "user": "@johnperry-math"
+    "user": "https://github.com/johnperry-math"
 }
 ```
 Assignee: @williamstein
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6907
 
 ---
 
-archive/issue_comments_057059.json:
+archive/issue_comments_056951.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2010-01-20T07:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57059",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-56951",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -59,15 +59,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_057060.json:
+archive/issue_comments_056952.json:
 ```json
 {
     "body": "Can you give us the command you used?  It's likely that the command you used is deprecated, which means that it still works, but will be removed in a future version of Sage, so you should get used to calling implicit_plot differently.",
     "created_at": "2010-01-20T07:16:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57060",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-56952",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -77,15 +77,15 @@ Can you give us the command you used?  It's likely that the command you used is 
 
 ---
 
-archive/issue_comments_057061.json:
+archive/issue_comments_056953.json:
 ```json
 {
     "body": "Replying to [comment:1 jason]:\n> Can you give us the command you used?\n\nAt the time, every implicit_plot() command was doing this for me.\n\nTo be honest I had forgotten about this. It looks like it was an internal command that hadn't yet been brought up to the new format, because it works fine now. The ticket should be closed.",
     "created_at": "2010-01-20T14:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57061",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-56953",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -100,15 +100,15 @@ To be honest I had forgotten about this. It looks like it was an internal comman
 
 ---
 
-archive/issue_comments_057062.json:
+archive/issue_comments_056954.json:
 ```json
 {
     "body": "Replying to [comment:2 john_perry]:\n> ...it works fine now. The ticket should be closed.\n\nThat's weird. I'm still using 4.1.1 and not getting the problem. I'm sorry; I can't reproduce it now.",
     "created_at": "2010-01-20T14:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57062",
-    "user": "@johnperry-math"
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-56954",
+    "user": "https://github.com/johnperry-math"
 }
 ```
 
@@ -121,15 +121,15 @@ That's weird. I'm still using 4.1.1 and not getting the problem. I'm sorry; I ca
 
 ---
 
-archive/issue_comments_057063.json:
+archive/issue_comments_056955.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-01-20T14:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57063",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-56955",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -139,15 +139,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_057064.json:
+archive/issue_comments_056956.json:
 ```json
 {
     "body": "Closing per request.  If this comes up again, let us know.",
     "created_at": "2010-01-20T14:07:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6907",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-57064",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6907#issuecomment-56956",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

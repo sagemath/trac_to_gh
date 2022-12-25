@@ -6,15 +6,13 @@ archive/issues_006765.json:
     "body": "Assignee: tba\n\nCC:  mvngu\n\nHello !!!\n\nFollowing http://groups.google.com/group/sage-devel/browse_thread/thread/9d9b09274f1eab83/79938a2139ba25d9?lnk=gst&q=isr#79938a2139ba25d9 , here is the requested Tutorial page for Linear Programming.\n\n.... Even if until now, the Linear Programming patch is still waiting to be merged, and GLPK is not even included in Sage ;-)\n\nI hope you will like it !!! And thanks to Minh for helping me with Sphinx !\n\nIssue created by migration from https://trac.sagemath.org/ticket/6765\n\n",
     "created_at": "2009-08-16T18:50:02Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] Linear Programming in Tutorial's Tour !",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6765",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: tba
@@ -37,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6765
 
 ---
 
-archive/issue_comments_055713.json:
+archive/issue_comments_055611.json:
 ```json
 {
     "body": "folded patch",
     "created_at": "2009-08-22T23:44:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55713",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55611",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -55,15 +53,15 @@ folded patch
 
 ---
 
-archive/issue_comments_055714.json:
+archive/issue_comments_055612.json:
 ```json
 {
     "body": "Attachment [trac_6765-tutorial-lp-folded.patch](tarball://root/attachments/some-uuid/ticket6765/trac_6765-tutorial-lp-folded.patch) by mvngu created at 2009-08-22 23:47:34\n\nThe patch `trac_6765-tutorial-lp-folded.patch` folds all three patches in `tutorial_lp.patch`. With the folded patch, changes are easier to review. Only `trac_6765-tutorial-lp-folded.patch` should be reviewed.",
     "created_at": "2009-08-22T23:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55714",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55612",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -75,15 +73,15 @@ The patch `trac_6765-tutorial-lp-folded.patch` folds all three patches in `tutor
 
 ---
 
-archive/issue_comments_055715.json:
+archive/issue_comments_055613.json:
 ```json
 {
     "body": "I get the following error even after installing both GLPK and CBC:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: linear_function = {\"variable1\" : 2, \"variable2\" : -1}\nsage: linear_function = {1 : 2, 2 : -1}\nsage: linear_function={(1,1) : 1, (1,2) : 2, (2,1) : 3, (2,2) : 4}\nsage: p = MIP(sense=1)\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n/home/mvngu/.sage/temp/sage.math.washington.edu/28962/_home_mvngu__sage_init_sage_0.py in <module>()\n\nNameError: name 'MIP' is not defined\n```\n\nNathann, you need to give commands on how to use the MIP capabilities of CBC. Where is `MIP()` defined? How do I import and use it? Please include those information in your patch.",
     "created_at": "2009-08-23T11:16:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55715",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55613",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -111,15 +109,15 @@ Nathann, you need to give commands on how to use the MIP capabilities of CBC. Wh
 
 ---
 
-archive/issue_comments_055716.json:
+archive/issue_comments_055614.json:
 ```json
 {
     "body": "Here's a conversion in IRC with Nathann:\n\n```\n05:00 < ncohen> mvngu: I do not understand the problem you have with MIP. It seems you copied some part of the examples into Sage\n05:00 < ncohen> mvngu: and Sage answered it did not know where to find the class MIP\n05:01 < ncohen> mvngu: even though I have added in sage/numerical/all.py a line : from MIP import *\n05:01 < mvngu> ncohen: David Joyner replied to me in an email that it depends on #6502.\n05:01 < mvngu> So I'll mark #6765 as depending on #6502.\n05:02 < ncohen> ooooops\n05:02 < ncohen> sorry ^^;\n05:02 < mvngu> This means that #6502 must be merged first.\n05:02 < ncohen> I've been working on this for some timme so sometimes I forget about it... ^^;\n05:02 < ncohen> indeed\n05:02 < ncohen> the thing is that I already posted something like 5 or 6 patches based upon #6502\n05:02 < ncohen> LP is so useful for graphs !\n05:03 < mvngu> Since GLPK is an optional spkg at the moment, so the doctests that depends on GLPK should be flagged as optional.\n05:03 < mvngu> Do so with the flag \"# optional\" in doctests.\n05:04 < mvngu> That way, when the test suite is run, anything with the flag \"# optional\" would be skipped over.\n05:04 < mvngu> Unless you have the required optional spkg installed.\n05:05 < ncohen> I see... :-/\n05:05 < mvngu> And any doctests that depend on CBC must also be flagged as \"# optional\".\n```\n\nAlso, this ticket depends on #6502.",
     "created_at": "2009-08-23T12:19:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55716",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55614",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -152,15 +150,15 @@ Also, this ticket depends on #6502.
 
 ---
 
-archive/issue_comments_055717.json:
+archive/issue_comments_055615.json:
 ```json
 {
     "body": "I just updated tutorial_lp.patch. Please do not use trac_6765-tutorial-lp-folded.patch which is now an outdated version !",
     "created_at": "2009-08-24T15:54:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55717",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55615",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -170,15 +168,15 @@ I just updated tutorial_lp.patch. Please do not use trac_6765-tutorial-lp-folded
 
 ---
 
-archive/issue_comments_055718.json:
+archive/issue_comments_055616.json:
 ```json
 {
     "body": "As the functions dealing with LP have not been reviewed, I prefer to rewrite the MIP class for Sage to make it easier to use. I will post a new version of the MIP patch as soon as possible, along with all the patches for functions using it.\n\nSorry for the trouble, I'll try to make it quick !\n\nNathann",
     "created_at": "2009-08-31T15:55:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55718",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55616",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -192,15 +190,15 @@ Nathann
 
 ---
 
-archive/issue_comments_055719.json:
+archive/issue_comments_055617.json:
 ```json
 {
     "body": "The new LP tutorial matching the Trac ticket #6869 is here, ready for review ;-)\n\nNathann",
     "created_at": "2009-09-03T12:40:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55719",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55617",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -212,15 +210,15 @@ Nathann
 
 ---
 
-archive/issue_comments_055720.json:
+archive/issue_comments_055618.json:
 ```json
 {
     "body": "Attachment [tutorial_lp.patch](tarball://root/attachments/some-uuid/ticket6765/tutorial_lp.patch) by @nathanncohen created at 2009-09-29 12:53:03",
     "created_at": "2009-09-29T12:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55720",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55618",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -230,15 +228,15 @@ Attachment [tutorial_lp.patch](tarball://root/attachments/some-uuid/ticket6765/t
 
 ---
 
-archive/issue_comments_055721.json:
+archive/issue_comments_055619.json:
 ```json
 {
     "body": "New version coherent with the changes from #7012",
     "created_at": "2009-09-29T12:53:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55721",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55619",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -248,15 +246,15 @@ New version coherent with the changes from #7012
 
 ---
 
-archive/issue_comments_055722.json:
+archive/issue_comments_055620.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-11-19T22:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55722",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55620",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -266,15 +264,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_055723.json:
+archive/issue_comments_055621.json:
 ```json
 {
     "body": "Some comments: \n\n(1) When I run \"sage -docbuild tutorial html\", it complains\n\n```\n/Applications/sage/devel/sage/doc/en/tutorial/tour_LP.rst:64: (WARNING/2) Title underline too short.\n\nVariables in ``MixedIntegerLinearProgram``\n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\n```\n\nThe string of double quotes should line up exactly with the previous line.  (Maybe it's good enough it is at least as long, but I think it should be the same length.)\n\n(2) In a string like `minimized ( for example `2 x + y` )`, you shouldn't have a space after `(` or before `)`: it should say `minimized (for example `2 x + y`)`.  This happens throughout the document.  Along the same lines, there should be no space before \"?\" or before \":\".  Before a block of examples (like lines 69-70), I think you want a visible colon, and you achieve that by having \"::\" with no preceding space.  (Using \"::\" with a preceding space signals a block of examples but doesn't print a colon at all.)\n\n(3) On line 75, \"remperature\" should presumably be \"temperature\".  Try running a spell check.\n\n(4) You don't have a period at the sentence ending the paragraph \"What is a Mixed Integer Linear Program ?\"  I haven't done any more careful proofreading, but you should check for other spelling, usage, and grammar errors.\n\n(5) In multiline doctests, you need to change \"....:\" to \"...\".  As it stands, doctesting bombs on these lines.\n\n(6) If I don't have GLPK or numerical.MIP installed, doctests have to pass anyway.  Also, if I don't have them, I absolutely don't want doctesting to try to install them, which the lines\n\n```\n     sage: # To install GLPK\n     sage: install_package('glpk')\n     sage: # To install Coin-OR Branch and Cut ( CBC )\n     sage: install_package('cbc')\n```\n\nwill do.  Maybe mark those lines as \"# not tested\"?",
     "created_at": "2009-11-19T22:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55723",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55621",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -314,15 +312,15 @@ will do.  Maybe mark those lines as "# not tested"?
 
 ---
 
-archive/issue_comments_055724.json:
+archive/issue_comments_055622.json:
 ```json
 {
     "body": "One more thing: since the content depends on the optional packages, you should say that at the *beginning* of the section, not the end.  Otherwise, someone may start working through the examples, only to have nothing go as advertised, and they quit trying before they get to the disclaimer at the end.",
     "created_at": "2009-11-20T01:34:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55724",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55622",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -332,15 +330,15 @@ One more thing: since the content depends on the optional packages, you should s
 
 ---
 
-archive/issue_comments_055725.json:
+archive/issue_comments_055623.json:
 ```json
 {
     "body": "We (me, John P., and Minh) discussed this on irc and think that optional packages shouldn't be required to work through the main Sage tutorial.",
     "created_at": "2009-11-20T01:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55725",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55623",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -350,15 +348,15 @@ We (me, John P., and Minh) discussed this on irc and think that optional package
 
 ---
 
-archive/issue_comments_055726.json:
+archive/issue_comments_055624.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2009-11-20T01:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55726",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55624",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -368,15 +366,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_055727.json:
+archive/issue_comments_055625.json:
 ```json
 {
     "body": "Feel free to open another ticket to put the linear programming tutorial in the [Constructions](http://www.sagemath.org/doc/constructions/) document.",
     "created_at": "2009-12-08T23:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55727",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55625",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -386,15 +384,15 @@ Feel free to open another ticket to put the linear programming tutorial in the [
 
 ---
 
-archive/issue_comments_055728.json:
+archive/issue_comments_055626.json:
 ```json
 {
     "body": "Could I do the same with my former ( and refused ) Graph Tour ?",
     "created_at": "2009-12-10T14:31:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55728",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55626",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -404,15 +402,15 @@ Could I do the same with my former ( and refused ) Graph Tour ?
 
 ---
 
-archive/issue_comments_055729.json:
+archive/issue_comments_055627.json:
 ```json
 {
     "body": "Replying to [comment:15 ncohen]:\n> Could I do the same with my former ( and refused ) Graph Tour ?\n\nSure! Go for it.",
     "created_at": "2009-12-10T18:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6765",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55729",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6765#issuecomment-55627",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

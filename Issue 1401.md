@@ -6,15 +6,13 @@ archive/issues_001401.json:
     "body": "Assignee: @williamstein\n\nSage currently works this way:\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\n(3, 4)\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nsage: a\n[1 2]\n[3 4]\n```\n\n\nInstead Sage should do this:\n\n\n```\nsage: a = matrix(ZZ, 2, [1..4])\nsage: a[1]\nboom!\nsage: a.row(1)\n(3, 4)\nsage: a[1][0] = 5\nboom!\n```\n\n\nWhere boom explains that one should use a.row(...) to get a row, or a[i,j] to get/set the ij entry.\n\nThis confuses the heck out of TONS of people!!!  (Not me, but others.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1401\n\n",
     "created_at": "2007-12-04T23:57:36Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "deprecate A[n] for n a matrix (easy to implement usability improvement)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1401",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -60,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1401
 
 ---
 
-archive/issue_comments_009034.json:
+archive/issue_comments_009010.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-06T21:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9034",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9010",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -78,15 +76,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_009035.json:
+archive/issue_comments_009011.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-06T21:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9035",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9011",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -96,15 +94,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_009036.json:
+archive/issue_comments_009012.json:
 ```json
 {
     "body": "Attachment [1401.patch](tarball://root/attachments/some-uuid/ticket1401/1401.patch) by @mwhansen created at 2007-12-06 23:15:40",
     "created_at": "2007-12-06T23:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9036",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9012",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -114,15 +112,15 @@ Attachment [1401.patch](tarball://root/attachments/some-uuid/ticket1401/1401.pat
 
 ---
 
-archive/issue_comments_009037.json:
+archive/issue_comments_009013.json:
 ```json
 {
     "body": "Patch attached.",
     "created_at": "2007-12-06T23:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9037",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9013",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -132,15 +130,15 @@ Patch attached.
 
 ---
 
-archive/issue_comments_009038.json:
+archive/issue_comments_009014.json:
 ```json
 {
     "body": "I just realized that a much better solution is to finish implementing immutable vectors and make the return of A[n] be an immutable row.  It accomplishes the same thing and is more usable.  So I did this.\n\nThat said, the above patch is fine -- using .row(...) all over in code is fine and faster.",
     "created_at": "2007-12-15T12:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9038",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9014",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -152,15 +150,15 @@ That said, the above patch is fine -- using .row(...) all over in code is fine a
 
 ---
 
-archive/issue_comments_009039.json:
+archive/issue_comments_009015.json:
 ```json
 {
     "body": "Attachment [trac-1401-part2.patch](tarball://root/attachments/some-uuid/ticket1401/trac-1401-part2.patch) by @williamstein created at 2007-12-15 12:57:27",
     "created_at": "2007-12-15T12:57:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9039",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9015",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -170,15 +168,15 @@ Attachment [trac-1401-part2.patch](tarball://root/attachments/some-uuid/ticket14
 
 ---
 
-archive/issue_comments_009040.json:
+archive/issue_comments_009016.json:
 ```json
 {
     "body": "Merged in 2.9.rc0.",
     "created_at": "2007-12-15T13:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9040",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9016",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -188,15 +186,15 @@ Merged in 2.9.rc0.
 
 ---
 
-archive/issue_comments_009041.json:
+archive/issue_comments_009017.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-15T13:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1401",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9041",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1401#issuecomment-9017",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

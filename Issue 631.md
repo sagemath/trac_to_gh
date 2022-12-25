@@ -6,15 +6,14 @@ archive/issues_000631.json:
     "body": "Assignee: @williamstein\n\n\n```\n\n...which is more or less what I had done before:  it's at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/\n\n(and you may also like to note that from now on my home page is at\n\nhttp://www.warwick.ac.uk/staff/J.E.Cremona\n)\n\nFor the future I guess I need to do \"hg push\" to somwhere.\n\nPS the changed files are gpslave.h/cc, parifact.h/cc, marith.cc\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/631\n\n",
     "created_at": "2007-09-09T19:39:23Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "update mwrank package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/631",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/631
 
 ---
 
-archive/issue_comments_003249.json:
+archive/issue_comments_003236.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-13T15:28:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3249",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3236",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -63,15 +62,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_003250.json:
+archive/issue_comments_003237.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-09-13T15:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3250",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3237",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -81,15 +80,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_003251.json:
+archive/issue_comments_003238.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-09-13T15:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3251",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3238",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -99,15 +98,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_003252.json:
+archive/issue_comments_003239.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-13T16:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/631",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3252",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/631#issuecomment-3239",
+    "user": "https://github.com/williamstein"
 }
 ```
 

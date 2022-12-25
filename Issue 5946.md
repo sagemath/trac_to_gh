@@ -6,7 +6,7 @@ archive/issues_005946.json:
     "body": "Assignee: @roed314\n\nKeywords: content p-adic polynomial\n\nWe ran into this at #5921.  There are two separate issues: polynomials with coefficients in a p-adic field should not have a `content()` method, since it doesn't make sense (the same way that having a `content()` method for polynomials with rational coefficients doesn't make sense).\n\nThe second issue is with the `content()` method for polynomials with coefficients in p-adic rings.  Here's an example:\n\n\n```\nsage: P.<x> = ZZ[]\nsage: f = x + 2\nsage: f.content()\n1\nsage: fp = f.change_ring(pAdicRing(2, 10))\nsage: fp\n(1 + O(2^10))*x + (2 + O(2^11))\nsage: fp.content()\n0\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5946\n\n",
     "created_at": "2009-04-30T06:44:15Z",
     "labels": [
-        "padics",
+        "component: padics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005946.json:
     "title": "bug in content for p-adic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5946",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: @roed314
@@ -48,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5946
 
 ---
 
-archive/issue_comments_047045.json:
+archive/issue_comments_046956.json:
 ```json
 {
     "body": "Looks good and passes doctests.",
     "created_at": "2009-04-30T07:29:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-47045",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-46956",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -66,15 +66,15 @@ Looks good and passes doctests.
 
 ---
 
-archive/issue_comments_047046.json:
+archive/issue_comments_046957.json:
 ```json
 {
     "body": "Fixed",
     "created_at": "2009-04-30T08:14:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-47046",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-46957",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -84,15 +84,15 @@ Fixed
 
 ---
 
-archive/issue_comments_047047.json:
+archive/issue_comments_046958.json:
 ```json
 {
     "body": "Attachment [trac_5946.patch](tarball://root/attachments/some-uuid/ticket5946/trac_5946.patch) by mabshoff created at 2009-04-30 08:52:22\n\nMerged in Sage 3.4.2.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-30T08:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-47047",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-46958",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -108,15 +108,15 @@ Michael
 
 ---
 
-archive/issue_comments_047048.json:
+archive/issue_comments_046959.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-30T08:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-47048",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5946#issuecomment-46959",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

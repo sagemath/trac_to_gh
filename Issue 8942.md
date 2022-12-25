@@ -6,7 +6,7 @@ archive/issues_008942.json:
     "body": "Assignee: @burcin\n\nCC:  @jasongrout mvngu @mwhansen\n\nKeywords: limit\n\nIn all three calculations below, the first result is false, whereas in a previous version of Sage, he returned Und what is the correct answer.\n\n\n```\nsage:f(x) = (cos(pi/4-x) - tan(x)) / (1 - sin(pi/4+x))\nsage:limit(f(x), x = pi/4) \n+Infinity\nsage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8942\n\n",
     "created_at": "2010-05-10T09:32:39Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008942.json:
     "title": "failing calculation with limit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8942",
-    "user": "casamayou"
+    "user": "https://trac.sagemath.org/admin/accounts/users/casamayou"
 }
 ```
 Assignee: @burcin
@@ -45,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8942
 
 ---
 
-archive/issue_comments_082331.json:
+archive/issue_comments_082196.json:
 ```json
 {
     "body": "This was fixed when we improved our recognition of Maxima's unsigned infinity.\n\n```\nsage: sage: limit(f(x), x = pi/4, dir='minus')           \n+Infinity\nsage: sage: limit(f(x), x = pi/4, dir='plus')            \n-Infinity\nsage: sage:limit(f(x), x = pi/4) \nInfinity\n```\n\nSo I guess this can be closed?  Or should we whip up a patch to document this...?",
     "created_at": "2010-05-26T20:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82331",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82196",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -74,15 +74,15 @@ So I guess this can be closed?  Or should we whip up a patch to document this...
 
 ---
 
-archive/issue_comments_082332.json:
+archive/issue_comments_082197.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-27T15:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82332",
-    "user": "casamayou"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82197",
+    "user": "https://trac.sagemath.org/admin/accounts/users/casamayou"
 }
 ```
 
@@ -92,15 +92,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_082333.json:
+archive/issue_comments_082198.json:
 ```json
 {
     "body": "Replying to [comment:1 kcrisman]:\n> This was fixed when we improved our recognition of Maxima's unsigned infinity.\n> {{{\n> sage: sage: limit(f(x), x = pi/4, dir='minus')           \n> +Infinity\n> sage: sage: limit(f(x), x = pi/4, dir='plus')            \n> -Infinity\n> sage: sage:limit(f(x), x = pi/4) \n> Infinity\n> }}}\n> So I guess this can be closed?  Or should we whip up a patch to document this...?\n\nThis can be closed. Thanks a lot !",
     "created_at": "2010-05-27T15:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82333",
-    "user": "casamayou"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82198",
+    "user": "https://trac.sagemath.org/admin/accounts/users/casamayou"
 }
 ```
 
@@ -122,15 +122,15 @@ This can be closed. Thanks a lot !
 
 ---
 
-archive/issue_comments_082334.json:
+archive/issue_comments_082199.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2010-05-27T15:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82334",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82199",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -140,15 +140,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_082335.json:
+archive/issue_comments_082200.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2010-05-27T15:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82335",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82200",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -158,15 +158,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_082336.json:
+archive/issue_comments_082201.json:
 ```json
 {
     "body": "Thanks.  One thing to point out is [http://www.sagemath.org/doc/developer/trac.html#closing-tickets](http://www.sagemath.org/doc/developer/trac.html#closing-tickets), so that in theory only the release manager should close a ticket.  For instance, we might want to document this somewhere (which is what I was really asking about).  \n\nI will now violate that same web page by re-opening it; since it hasn't actually been merged (nothing to merge) hopefully that is ok, Minh or Mike :)",
     "created_at": "2010-05-27T15:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82336",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82201",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -178,15 +178,15 @@ I will now violate that same web page by re-opening it; since it hasn't actually
 
 ---
 
-archive/issue_comments_082337.json:
+archive/issue_comments_082202.json:
 ```json
 {
     "body": "Attachment [trac_8942-unsigned-inf.patch](tarball://root/attachments/some-uuid/ticket8942/trac_8942-unsigned-inf.patch) by @kcrisman created at 2010-05-27 16:05:19\n\nBased on 4.4.2",
     "created_at": "2010-05-27T16:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82337",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82202",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -198,15 +198,15 @@ Based on 4.4.2
 
 ---
 
-archive/issue_comments_082338.json:
+archive/issue_comments_082203.json:
 ```json
 {
     "body": "If we want more documentation that we have fixed this, here it is.  Ready for review.",
     "created_at": "2010-05-27T16:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82338",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82203",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -216,15 +216,15 @@ If we want more documentation that we have fixed this, here it is.  Ready for re
 
 ---
 
-archive/issue_comments_082339.json:
+archive/issue_comments_082204.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-27T16:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82339",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82204",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -234,15 +234,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_082340.json:
+archive/issue_comments_082205.json:
 ```json
 {
     "body": "positive review (I've checked that all doctests still pass).\n\nA small comment: maybe the documentation could say more explicitly that the output `Infinity`\nindicates a complex infinity, whereas `+Infinity` means plus infinity.\n\nBy the way, there is a problem since Sage parses `Infinity` as `+Infinity`:\n\n```\nsage: Infinity\n+Infinity\nsage: Infinity == +Infinity\nTrue\nsage: a=limit(1/x, x=0)\nsage: a == +Infinity\nTrue\n```\n\nbut this could be in a different ticket.",
     "created_at": "2010-07-12T12:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82340",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82205",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -269,15 +269,15 @@ but this could be in a different ticket.
 
 ---
 
-archive/issue_comments_082341.json:
+archive/issue_comments_082206.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-12T12:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82341",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82206",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -287,15 +287,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_082342.json:
+archive/issue_comments_082207.json:
 ```json
 {
     "body": "> but this could be in a different ticket. \n\nsee #9480",
     "created_at": "2010-07-12T12:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82342",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82207",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -307,15 +307,15 @@ see #9480
 
 ---
 
-archive/issue_comments_082343.json:
+archive/issue_comments_082208.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T10:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8942",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82343",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8942#issuecomment-82208",
+    "user": "https://github.com/qed777"
 }
 ```
 

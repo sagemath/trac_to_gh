@@ -6,15 +6,14 @@ archive/issues_007658.json:
     "body": "Assignee: mvngu\n\nWe've switched to VirtualBox for using Sage on Windows, but the installation guide still refers to VMWare: http://www.sagemath.org/doc/installation/binary.html#microsoft-windows\n\nWe should update this to reflect our current setup.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7658\n\n",
     "created_at": "2009-12-11T06:27:15Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "installation guide still refers to VMWare, not VirtualBox",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7658",
-    "user": "@dandrake"
+    "user": "https://github.com/dandrake"
 }
 ```
 Assignee: mvngu
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7658
 
 ---
 
-archive/issue_comments_065506.json:
+archive/issue_comments_065390.json:
 ```json
 {
     "body": "based on Sage 4.3.rc0",
     "created_at": "2009-12-14T04:57:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65506",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65390",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -49,15 +48,15 @@ based on Sage 4.3.rc0
 
 ---
 
-archive/issue_comments_065507.json:
+archive/issue_comments_065391.json:
 ```json
 {
     "body": "Attachment [trac_7658-windows-install.patch](tarball://root/attachments/some-uuid/ticket7658/trac_7658-windows-install.patch) by mvngu created at 2009-12-14 04:57:53",
     "created_at": "2009-12-14T04:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65507",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65391",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -67,15 +66,15 @@ Attachment [trac_7658-windows-install.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_065508.json:
+archive/issue_comments_065392.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-14T04:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65508",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65392",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_065509.json:
+archive/issue_comments_065393.json:
 ```json
 {
     "body": "I didn't actually try to apply the patch, but how could it fail? It's now correct, so positive review here.",
     "created_at": "2009-12-14T05:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65509",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65393",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -103,15 +102,15 @@ I didn't actually try to apply the patch, but how could it fail? It's now correc
 
 ---
 
-archive/issue_comments_065510.json:
+archive/issue_comments_065394.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-14T05:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65510",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65394",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -121,15 +120,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_065511.json:
+archive/issue_comments_065395.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-14T16:13:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65511",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7658#issuecomment-65395",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

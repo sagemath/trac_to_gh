@@ -6,7 +6,7 @@ archive/issues_009449.json:
     "body": "Assignee: mvngu\n\nCC:  simonking @jhpalmieri @qed777 @nexttime\n\nThe following shows a summary of a doctest failures. They were actually observed on a Solaris machine, but that is unlikely to be relevant. After building Sage\n\n\n```\n$ make ptestlong\n```\n\n\nwas executed. \n\n* 5 of the 6 doctest failures in the summary have 0 tests failing.\n* BSD.py is the only one of the 6 doctest failures which has a non-zero number of failures. \n\n\n```\n\nThe following tests failed:\n\n    sage -t     -long devel/sage/doc/fr/tutorial/programming.rst # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/plane_curves/constructor.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/schemes/elliptic_curves/BSD.py # 1 doctests failed\n    sage -t     -long devel/sage/sage/parallel/decorate.py # 0 doctests failed\n    sage -t     -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 3990.8 seconds \n```\n\n\nIn the case of one of the tests, it would appear from the log that it actually passed \n\n\n```\nsage -t     -long devel/sage/sage/parallel/decorate.py\n     [44.0 s] \n```\n\n\nThis is pretty damn serious, as it means we can not rely on the doctest results. \n\n == Hardware and software used ==\n* sage-4.5.alpha4\n* A Sun T5240\n* 2 x 8 core, 64-thread UltraSPARC T2+ 1167 MHz\n* 32 GB RAM\n* Solaris 10 update 7 (05/09)\n* t2.math.washtington.edu\n* gcc 4.4.1 configured to use both the Sun linker and assembler.\n* MD5 checksum of matplotlib-1.0.0.spkg was cb9f3cb0ec3da550d2d67ea7e8b6094f\n* 32-bit build (This is the default). The environment variable `SAGE64` was **not** used.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9449\n\n",
     "created_at": "2010-07-07T19:57:20Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009449.json:
     "title": "The summary printed after running doctests is inaccurate.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9449",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: mvngu
@@ -79,15 +79,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9449
 
 ---
 
-archive/issue_comments_090545.json:
+archive/issue_comments_090397.json:
 ```json
 {
     "body": "Results from long doctests on t2.math.washington.edu (Solaris 10, UltraSPARC CPUs)",
     "created_at": "2010-07-07T19:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90545",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90397",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -97,15 +97,15 @@ Results from long doctests on t2.math.washington.edu (Solaris 10, UltraSPARC CPU
 
 ---
 
-archive/issue_comments_090546.json:
+archive/issue_comments_090398.json:
 ```json
 {
     "body": "Attachment [ptestlong.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong.log) by @wjp created at 2010-07-07 20:01:44\n\nCould you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.\n\nIf they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.",
     "created_at": "2010-07-07T20:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90546",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90398",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -119,15 +119,15 @@ If they don't fix it yet, I can give you a patch which adds some extra debugging
 
 ---
 
-archive/issue_comments_090547.json:
+archive/issue_comments_090399.json:
 ```json
 {
     "body": "I've attached a log. \n\nAlso corrected something which was cut and pasted from another ticket",
     "created_at": "2010-07-07T20:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90547",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90399",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -139,15 +139,15 @@ Also corrected something which was cut and pasted from another ticket
 
 ---
 
-archive/issue_comments_090548.json:
+archive/issue_comments_090400.json:
 ```json
 {
     "body": "Replying to [comment:1 wjp]:\n> Could you try with patches #8641, #9243, #9316 to the doctest framework? They clean up and fix parts of the error handling.\n\nYes. The only problem I have is that these test failures are not always reproducible. Tests which failed when I run \n\n`$ make ptestlong` \n\nactually passed later. There's a report from John H Palmieri on sage-release of `devel/sage/sage/misc/trace.py` failing for him three times on this machine, then working. This makes any sort of testing difficult, and means it will be hard for me to know if s #8641, #9243, #9316 really solve the problem or not. But I will try them and report back later. \n \n> If they don't fix it yet, I can give you a patch which adds some extra debugging info to track this down.\n\nOK, thank you. \n\nI know there was a recent patch to the doctesting to remove spurious errors about files not found - #9316. I don't know if these could be related or not. \n\nI've got other strange results from doctests too, but I'll put that on another ticket. \n\nDave",
     "created_at": "2010-07-07T20:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90548",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90400",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -174,15 +174,15 @@ Dave
 
 ---
 
-archive/issue_comments_090549.json:
+archive/issue_comments_090401.json:
 ```json
 {
     "body": "I was unable to apply the last patch cleanly - the first two were ok. \n\n\n```\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8641/trac_8641-doctest_exit_codes.3.patch\nadding trac_8641-doctest_exit_codes.3.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying trac_8641-doctest_exit_codes.3.patch\nnow at: trac_8641-doctest_exit_codes.3.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9243/trac_9243.patch\nadding trac_9243.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying trac_9243.patch\nnow at: trac_9243.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9316/scripts9316_timeout_rebased.patch\nadding scripts9316_timeout_rebased.patch to series file\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg qpush\napplying scripts9316_timeout_rebased.patch\npatching file sage-doctest\nHunk #1 FAILED at 18\n1 out of 2 hunks FAILED -- saving rejects to file sage-doctest.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh scripts9316_timeout_rebased.patch\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg status\nkirkby@t2:[/tmp/kirkby/sage-4.5.alpha4/local/bin] $ hg log | more\nchangeset:   1541:6510dc91cc05\ntag:         scripts9316_timeout_rebased.patch\ntag:         qtip\ntag:         tip\nuser:        Willem Jan Palenstijn <wpalenst@math.leidenuniv.nl>\ndate:        Tue Jul 06 22:58:13 2010 +0200\nsummary:     #9316: Add exit code 64 for time out to doctests\n\nchangeset:   1540:6e69aa36dd4d\ntag:         trac_9243.patch\nuser:        Dan Drake <drake@kaist.edu>\ndate:        Wed Jun 16 13:48:32 2010 +0900\nsummary:     trac 9243: sage-doctest should use powers of 2 for return codes\n\nchangeset:   1539:08d8519d03dc\ntag:         trac_8641-doctest_exit_codes.3.patch\ntag:         qbase\nuser:        Mitesh Patel <qed777@gmail.com>\ndate:        Wed Jun 16 00:06:03 2010 -0700\nsummary:     trac 8641: return nonzero code if tests fail.  Dan Drake, John Palmieri\n```\n",
     "created_at": "2010-07-07T20:46:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90549",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90401",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -239,15 +239,15 @@ summary:     trac 8641: return nonzero code if tests fail.  Dan Drake, John Palm
 
 ---
 
-archive/issue_comments_090550.json:
+archive/issue_comments_090402.json:
 ```json
 {
     "body": "You're missing the second patch at #9243.",
     "created_at": "2010-07-07T20:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90550",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90402",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -257,15 +257,15 @@ You're missing the second patch at #9243.
 
 ---
 
-archive/issue_comments_090551.json:
+archive/issue_comments_090403.json:
 ```json
 {
     "body": "Replying to [comment:5 wjp]:\n> You're missing the second patch at #9243.\n\nThank you. I've applied them all now and started the doctests, but I feel tired tonight and are going to sleep now.  So I doubt I'll post the results for a few hours yet. \n \n\nDave",
     "created_at": "2010-07-07T21:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90551",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90403",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -281,15 +281,15 @@ Dave
 
 ---
 
-archive/issue_comments_090552.json:
+archive/issue_comments_090404.json:
 ```json
 {
     "body": "Here's the results after applying #8641, #9243, #9316. As you can see, there are still tests which fail with 0 doctest failures (These results are again on the Sun T5240 t2.math.washington.edu, which is the same as before). \n\n\n```\n\nsage -t  -long devel/sage/sage/modular/ssmod/ssmod.py\n         [3001.1 s]\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\n         [3137.3 s]\n \n----------------------------------------------------------------------\n\nThe following tests failed:\n\n        sage -t  -long devel/sage/doc/en/constructions/number_fields.rst # 0 doctests failed\n        sage -t  -long devel/sage/sage/categories/examples/hopf_algebras_with_basis.py # 0 doctests failed\n        sage -t  -long devel/sage/sage/libs/galrep/wrapper.pyx # 0 doctests failed\n        sage -t  -long devel/sage/sage/parallel/decorate.py # 1 doctests failed\n----------------------------------------------------------------------\nTotal time for all tests: 4264.8 seconds\n```\n\n\n\n\nHere's the first one, which fails, but with 0 recorded failures. \n\n\n```\nsage -t  -long devel/sage/doc/en/constructions/number_fields.rst\npython: can't open file '/rootpool2/local/kirkby/.sage//tmp/number_fields.py': [Errno 2] No such file or directory\n\n         [1.9 s]\n```\n\n\nHere's the second recorded failure \n\n\n```\nsage -t  -long devel/sage/sage/categories/examples/hopf_algebras_with_basis.py\npython: can't open file '/rootpool2/local/kirkby/.sage//tmp/hopf_algebras_with_basis.py': [Errno 2] No such file or directory\n\n         [1.7 s]\n```\n\n\nThe third failure is where Sage crashed:\n\n\n```\nsage -t  -long devel/sage/sage/libs/galrep/wrapper.pyx\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occurred in Sage.\nThis probably occurred because a *compiled* component\nof Sage has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run Sage under gdb with 'sage -gdb' to debug this.\nSage will now terminate (sorry).\n------------------------------------------------------------\n\n\n         [21.5 s]\n```\n\n\nThis is recorded as 0 failures, despite the fact Sage crashed. \n\nThe only test that is recorded as a failure, with a non-zero number of failures, is the last test\n\n\n```\nsage -t  -long devel/sage/sage/parallel/decorate.py\n**********************************************************************\nFile \"/tmp/kirkby/sage-4.5.alpha4/devel/sage-testing/sage/parallel/decorate.py\", line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\nException raised:\n    Traceback (most recent call last):\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[9]>\", line 1, in <module>\n        v = list(f([Integer(1),Integer(2),Integer(4)])); v.sort(); v###line 152:\n    sage: v = list(f([1,2,4])); v.sort(); v\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python/site-packages/sage/parallel/multiprocessing_sage.py\", line 64, in parallel_iter\n        p = Pool(processes)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/__init__.py\", line 227, in Pool\n        return Pool(processes, initializer, initargs)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/pool.py\", line 104, in __init__\n        w.start()\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/process.py\", line 104, in start\n        self._popen = Popen(self)\n      File \"/tmp/kirkby/sage-4.5.alpha4/local/lib/python2.6/multiprocessing/forking.py\", line 94, in __init__\n        self.pid = os.fork()\n    OSError: [Errno 12] Not enough space\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_4\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /rootpool2/local/kirkby/.sage//tmp/.doctest_decorate.py\n         [51.3 s]\n```\n\n\nDave",
     "created_at": "2010-07-08T08:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90552",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90404",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -408,15 +408,15 @@ Dave
 
 ---
 
-archive/issue_comments_090553.json:
+archive/issue_comments_090405.json:
 ```json
 {
     "body": "Changing priority from critical to blocker.",
     "created_at": "2010-07-08T11:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90553",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90405",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -426,15 +426,15 @@ Changing priority from critical to blocker.
 
 ---
 
-archive/issue_comments_090554.json:
+archive/issue_comments_090406.json:
 ```json
 {
     "body": "I've marked this as a blocker, as I can't see how we can justify making a release if the summary of the doc tests can't be trusted to be correct. If we can't trust the tests, what can we trust?",
     "created_at": "2010-07-08T11:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90554",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90406",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -444,15 +444,15 @@ I've marked this as a blocker, as I can't see how we can justify making a releas
 
 ---
 
-archive/issue_comments_090555.json:
+archive/issue_comments_090407.json:
 ```json
 {
     "body": "The log file 'ptestlong.log' after trac items #8641, #9243- and #9316 had been applied. This is the same build of Sage as before",
     "created_at": "2010-07-08T14:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90555",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90407",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -462,15 +462,15 @@ The log file 'ptestlong.log' after trac items #8641, #9243- and #9316 had been a
 
 ---
 
-archive/issue_comments_090556.json:
+archive/issue_comments_090408.json:
 ```json
 {
     "body": "Attachment [ptestlong-after-trac-#8641-#9243-#9316.log](tarball://root/attachments/some-uuid/ticket9449/ptestlong-after-trac-#8641-#9243-#9316.log) by @nexttime created at 2010-07-08 15:50:11",
     "created_at": "2010-07-08T15:50:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90556",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90408",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -480,15 +480,15 @@ Attachment [ptestlong-after-trac-#8641-#9243-#9316.log](tarball://root/attachmen
 
 ---
 
-archive/issue_comments_090557.json:
+archive/issue_comments_090409.json:
 ```json
 {
     "body": "The \"# failures\" that sage reports is calculated very simply by counting the number of instances of \"Expected:\" \"Expected nothing\" and \"Exception raised:\".\n\nSage correctly detected that things went wrong, as you can tell from the fact that the files causing errors are listed in the summary at the end.\n\nAs far as I can tell, the only thing that's not quite right is the reporting of what exactly went wrong. There's likely a better way of reporting these specific crashes and missing file errors you're getting, but I don't see any reason to believe something is as seriously wrong with the error reporting as you seem to be implying on this ticket and on the mailing list.\n\n(Reverting priority to major.)\n\n\nThe file not found errors (Are you out of disk space?) should probably be caught before the doctesting process is launched in the first place. I'll have to think about the SIGBUS case some more.",
     "created_at": "2010-07-08T15:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90557",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90409",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -507,33 +507,15 @@ The file not found errors (Are you out of disk space?) should probably be caught
 
 ---
 
-archive/issue_comments_090558.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2010-07-08T15:59:51Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/9449",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90558",
-    "user": "@wjp"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_090559.json:
+archive/issue_comments_090410.json:
 ```json
 {
     "body": "To reproduce the singal reporting issue:\n\n\n```\n./sage -tp 1 bus.sage\n```\n\n\nwith bus.sage containing\n\n\n```\n\"\"\"\n    sage: import os\n    sage: os.kill(os.getpid(), 7)\n\"\"\"\n```\n",
     "created_at": "2010-07-08T16:08:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90559",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90410",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -560,15 +542,15 @@ with bus.sage containing
 
 ---
 
-archive/issue_comments_090560.json:
+archive/issue_comments_090411.json:
 ```json
 {
     "body": "It's not convenient for me to test these now, but take a look at the doctest `sage -t  -long devel/sage/sage/parallel/decorate.py`  on line 4732 of\n\nhttp://trac.sagemath.org/sage_trac/attachment/ticket/9449/ptestlong.log\n\nAs far as I can see, there is absolutely no error message there, so nothing to indicate that this failed, but rather that it passed in 44.0s. But at the end it is listed as failing. \n\nI did 64 tests in parallel. It's possible the file system may have got too full. I will retest with fewer parallel tasks. \n\nDave",
     "created_at": "2010-07-08T17:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90560",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90411",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -586,15 +568,15 @@ Dave
 
 ---
 
-archive/issue_comments_090561.json:
+archive/issue_comments_090412.json:
 ```json
 {
     "body": "I can only tell there are indeed flaws and inconsistencies in the doctest framework (I started examining it a few days ago, made some notes, but haven't finished yet).\n\nE.g. `sage-doctest` exit code 1 can either mean \"file not found\", a command line syntax error or even a keyboard interrupt.\nI don't understand why `sage-test` and `sage-ptest` are separated, though they contain common code that might get (or yet is) out of sync.\nDifferent scripts use different temporary directories...\nSome `make` targets for testing do `./sage -b`, others do not...\n\nJust to name a few; I'll continue to investigate the bunch of involved scripts further, but don't really know how soon.\n\n-Leif",
     "created_at": "2010-07-08T18:45:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90561",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90412",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -613,15 +595,15 @@ Just to name a few; I'll continue to investigate the bunch of involved scripts f
 
 ---
 
-archive/issue_comments_090562.json:
+archive/issue_comments_090413.json:
 ```json
 {
     "body": "Yes, it definitely needs more cleaning up. There are already a number of patches floating around doing part of this, though. (See the aforementioned #8641, #9243, #9316 that should at least take care of the exit code 1, and also #9224, #9225 for some future plans. There may also be more.)",
     "created_at": "2010-07-08T19:04:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90562",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90413",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -631,15 +613,15 @@ Yes, it definitely needs more cleaning up. There are already a number of patches
 
 ---
 
-archive/issue_comments_090563.json:
+archive/issue_comments_090414.json:
 ```json
 {
     "body": "I don't know if *this* one is the origin, but it's simply **horrible**:\n\n```python\ndef test_file(F):\n    \"\"\"\n    This is the function that actually tests a file\n    \"\"\"\n    outfile = tempfile.NamedTemporaryFile()\n    base, ext = os.path.splitext(F)\n\n    cmd = 'doctest ' + opts\n    if SAGE_SITE in os.path.realpath(F) and not '-force_lib' in cmd:\n        cmd += ' -force_lib'\n\n    filestr = os.path.split(F)[1]\n    for i in range(0,numiteration):\n        os.chdir(os.path.dirname(F))\n        command = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd)\n        s = 'bash -c \"%s %s > %s\" ' % (command, filestr, outfile.name)\n        try:\n            t = time.time()\n            ret = os.system(s)\n            finished_time = time.time() - t\n            if ret>=256:\n                ret=ret/256\n            ret = -ret\n        except:\n            ol = outfile.read()\n            return (-5, 0, ol)\n        ol = outfile.read()\n        if ret != 0:\n            break\n    return (F, ret, finished_time, ol)\n```\n\n(Excerpt from `sage-ptest`, note not just the returned tuples...)\n\nBeat me if I've missed something here...",
     "created_at": "2010-07-08T20:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90563",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90414",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -686,15 +668,15 @@ Beat me if I've missed something here...
 
 ---
 
-archive/issue_comments_090564.json:
+archive/issue_comments_090415.json:
 ```json
 {
     "body": "Replying to [comment:17 leif]:\n> I don't know if *this* one is the origin, but it's simply **horrible**:\n> {{{\n> #!python\n> def test_file(F):\n>     \"\"\"\n>     This is the function that actually tests a file\n>     \"\"\"\n>     outfile = tempfile.NamedTemporaryFile()\n>     base, ext = os.path.splitext(F)\n> \n>     cmd = 'doctest ' + opts\n>     if SAGE_SITE in os.path.realpath(F) and not '-force_lib' in cmd:\n>         cmd += ' -force_lib'\n> \n>     filestr = os.path.split(F)[1]\n>     for i in range(0,numiteration):\n>         os.chdir(os.path.dirname(F))\n>         command = os.path.join(SAGE_ROOT, 'local', 'bin', 'sage-%s' % cmd)\n>         s = 'bash -c \"%s %s > %s\" ' % (command, filestr, outfile.name)\n>         try:\n>             t = time.time()\n>             ret = os.system(s)\n>             finished_time = time.time() - t\n>             if ret>=256:\n>                 ret=ret/256\n>             ret = -ret\n>         except:\n>             ol = outfile.read()\n>             return (-5, 0, ol)\n>         ol = outfile.read()\n>         if ret != 0:\n>             break\n>     return (F, ret, finished_time, ol)\n> }}}\n> (Excerpt from `sage-ptest`, note not just the returned tuples...)\n> \n> Beat me if I've missed something here...\n> \nI barely know Python, so there is nothing I can do about this. But if you have a better solution, it would be worth trying it. I feel a bit uneasy about Sage, when we can't trust the mechanism for testing it. \n\nIt's odd why failures on some test is pretty repeatable when running `make ptestlong` but run individually, they pass. I'm pretty sure that is not a memory issue, as I've noticed that on my Sun Blade 2000 SPARC where I'm the only user. That machine has 8 GB RAM and only two processors (its not multi-cored or multi-threaded), so I don't run more than 3 tests in parallel.",
     "created_at": "2010-07-19T10:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90564",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90415",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -745,15 +727,15 @@ It's odd why failures on some test is pretty repeatable when running `make ptest
 
 ---
 
-archive/issue_comments_090565.json:
+archive/issue_comments_090416.json:
 ```json
 {
     "body": "Replying to [comment:7 drkirkby]:\n> The only test that is recorded as a failure, with a non-zero number of failures, is the last test\n\nI've opened #9895 for the recurring \"Not enough space\" error on Solaris raised by `os.fork` in `sage/parallel/decorate.py`.",
     "created_at": "2010-09-11T00:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90565",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90416",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -766,15 +748,15 @@ I've opened #9895 for the recurring "Not enough space" error on Solaris raised b
 
 ---
 
-archive/issue_comments_090566.json:
+archive/issue_comments_090417.json:
 ```json
 {
     "body": "Since #12415 completely rewrites the doctest framework with much better code, I'm assuming this problem is fixed.",
     "created_at": "2013-02-22T21:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90566",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90417",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -784,15 +766,15 @@ Since #12415 completely rewrites the doctest framework with much better code, I'
 
 ---
 
-archive/issue_comments_090567.json:
+archive/issue_comments_090418.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2013-02-22T21:37:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90567",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9449#issuecomment-90418",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

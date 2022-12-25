@@ -6,15 +6,13 @@ archive/issues_006750.json:
     "body": "Assignee: Simon King\n\nCC:  david.green@uni-jena.de graham.ellis@nuigalway.ie mik@math.stanford.edu\n\nKeywords: cohomology ring p-group\n\nThere is a new version 1.1 of our optional spkg for the computation of modular cohomology rings of finite p-groups. It can be installed by\n\n```\n> sage -i http://sage.math.washington.edu/home/SimonKing/p_group_cohomology-1.1.spkg\n```\n\n\nAs usual, if you did `export SAGE_CHECK=1` before installation, a test suite is automatically executed.\n\n__News and Changes__\n\nThere is now a basic implementation of the *Yoneda cocomplex*. This enables us to compute **Massey products**. These are higher structures on cohomology rings and related with Steenrod powers and Bockstein operation. See examples below.\n\nOur repository of cohomology rings now also provides the cohomology rings of the Sylow 2-subgroup of the Higman-Sims group (order 512) and of the Sylow 2-subgroup of the third Conway group (order 1024). They can be retrieved by\n\n```\nsage: H = CohomologyRing.web_db('Syl2HS')\n```\n\nor\n\n```\nsage: H = CohomologyRing.web_db('Syl2Co3')\n```\n\nI tested downloading the Conway example, and it took more than 30 minutes; but this is certainly faster than a computation from scratch, which would be about 3 days.\n\n__Massey products__\n\nThe Massey product of cohomology ring elements `c1,c2,...,cn` is a *set* of cohomology ring elements; it may be empty or may contain different cocycles.\n\nD. Kraines modified this notion in the case of the `p^i` fold Massey product of a cocylce with itself. I refer to this as the i-th restricted Massey power. It is either not defined or is a single cocycle.\n\nThe restricted Massey powers can be expressed in terms of a composition of Steenrod powers and Bockstein operation, and they can be used to distinguish isomorphic cohomology rings. In particular, on degree one cocycles, the 1st restricted Massey power is the same as minus the Bockstein operation.\n\nExample:\n\n```\nsage: from pGroupCohomology import CohomologyRing\nsage: H3 = CohomologyRing(3,1)\nsage: H3.make()\nsage: H9 = CohomologyRing(9,1)\nsage: H9.make()\nsage: print H3\n\nCohomology ring of Small Group number 1 of order 3 with coefficients in GF(3)\n\nComputation complete\nMinimal list of generators:\n[c_2_0, a 2-Cochain in H^*(SmallGroup(3,1); GF(3)),\n a_1_0, a 1-Cochain in H^*(SmallGroup(3,1); GF(3))]\nMinimal list of algebraic relations:\n[]\n\nsage: print H9\n\nCohomology ring of Small Group number 1 of order 9 with coefficients in GF(3)\n\nComputation complete\nMinimal list of generators:\n[c_2_0, a 2-Cochain in H^*(SmallGroup(9,1); GF(3)),\n a_1_0, a 1-Cochain in H^*(SmallGroup(9,1); GF(3))]\nMinimal list of algebraic relations:\n[]\n```\n\n\nSo, the cohomology rings of the cyclic groups of order 3 and order 9 coincide. Note that for p>2, any element in odd degree squares to zero (by graded commutativity). At some point in the past, I decided to not list such *obvious* relations, but I might change my mind...\n\nNow, we compute the 1st restricted Massey powers of the degree one generators:\n\n```\nsage: H3.cochain_to_polynomial(H3.2.massey_power())\n-c_2_0, a 2-Cochain in H^*(SmallGroup(3,1); GF(3))\nsage: H9.cochain_to_polynomial(H9.2.massey_power())\n0, a 2-Cochain in H^*(SmallGroup(9,1); GF(3))\n```\n\n\nThey are different! Note that the 2nd restricted Massey power of the degree one generator is non-trivial for the cyclic group of order 9:\n\n```\nsage: H9.cochain_to_polynomial(H9.2.massey_power(2))\n-c_2_0, a 2-Cochain in H^*(SmallGroup(9,1); GF(3))\n```\n\n\nAs I mentioned, the non-restricted Massey product is set valued. Indeed, for the cohomology ring of the elementary abelian group of order 9, we obtain:\n\n```\nsage: H3_3 = CohomologyRing(9,2)\nsage: H3_3.make()\nsage: H3_3.3\na_1_0, a 1-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: H3_3.massey_products(H3_3.3,H3_3.3,H3_3.3)\n\nset([-c_2_1, a 2-Cochain in H^*(SmallGroup(9,2); GF(3)),\n     a_1_0*a_1_1-c_2_1, a 2-Cochain in H^*(SmallGroup(9,2); GF(3)),\n     -a_1_0*a_1_1-c_2_1, a 2-Cochain in H^*(SmallGroup(9,2); GF(3))])\n```\n\n\nOr, with our default example, the Dihedral Group of order 8:\n\n```\nsage: H = CohomologyRing(8,3)\nsage: H.make()\nsage: print H\n\nCohomology ring of Dihedral group of order 8 with coefficients in GF(2)\n\nComputation complete\nMinimal list of generators:\n[c_2_2, a 2-Cochain in H^*(D8; GF(2)),\n b_1_0, a 1-Cochain in H^*(D8; GF(2)),\n b_1_1, a 1-Cochain in H^*(D8; GF(2))]\nMinimal list of algebraic relations:\n[b_1_0*b_1_1]\n\nsage: H.massey_products(H.2,H.3,H.2)\nset([0, a 2-Cochain in H^*(D8; GF(2)), b_1_0^2, a 2-Cochain in H^*(D8; GF(2))])\nsage: H.massey_products(H.3,H.2,H.3)\nset([0, a 2-Cochain in H^*(D8; GF(2)), b_1_1^2, a 2-Cochain in H^*(D8; GF(2))])\n```\n\n\n__Notes for the reviewer(s)__\n\nThe new stuff is documented at [http://sage.math.washington.edu/home/SimonKing/Cohomology/cochain.html#pGroupCohomology.cochain.YCOCH](http://sage.math.washington.edu/home/SimonKing/Cohomology/cochain.html#pGroupCohomology.cochain.YCOCH), [http://sage.math.washington.edu/home/SimonKing/Cohomology/resolution.html#pGroupCohomology.resolution.MasseyDefiningSystems](http://sage.math.washington.edu/home/SimonKing/Cohomology/resolution.html#pGroupCohomology.resolution.MasseyDefiningSystems), [http://sage.math.washington.edu/home/SimonKing/Cohomology/cochain.html#pGroupCohomology.cochain.COCH.massey_power](http://sage.math.washington.edu/home/SimonKing/Cohomology/cochain.html#pGroupCohomology.cochain.COCH.massey_power) and [http://sage.math.washington.edu/home/SimonKing/Cohomology/cohomology.html#pGroupCohomology.cohomology.COHO.massey_products](http://sage.math.washington.edu/home/SimonKing/Cohomology/cohomology.html#pGroupCohomology.cohomology.COHO.massey_products) \n\nIf you know about Steenrod powers and Bockstein operation and those things, you might be able to cook up some interesting examples, and in particular to do verifications. I would appreciate it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6750\n\n",
     "created_at": "2009-08-14T21:34:34Z",
     "labels": [
-        "packages: optional",
-        "major",
-        "enhancement"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with spkg, needs review] New version of optional Group Cohomology spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6750",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: Simon King
@@ -163,15 +161,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6750
 
 ---
 
-archive/issue_comments_055545.json:
+archive/issue_comments_055443.json:
 ```json
 {
     "body": "This applies fine to an intel macbook running 10.4.11 and sage 4.1.1.rc2. Positive test form me as an optional package.\n\nI cannot vouch for the mathematics though (however, I believe some functions on the older version were checked against some other programs for an independent.\n\nDoes this need further testing or can this be changed to \"positive review\".",
     "created_at": "2009-08-15T21:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55545",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55443",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -185,15 +183,15 @@ Does this need further testing or can this be changed to "positive review".
 
 ---
 
-archive/issue_comments_055546.json:
+archive/issue_comments_055444.json:
 ```json
 {
     "body": "Dear David,\n\nthank you that you found the time (despite of teaching) to look into it!\n\nReplying to [comment:4 wdj]:\n> This applies fine to an intel macbook running 10.4.11 and sage 4.1.1.rc2. Positive test form me as an optional package.\n> \n> I cannot vouch for the mathematics though (however, I believe some functions on the older version were checked against some other programs for an independent.\n\nYes. Of course, it is hardly possible to test different ring presentations for being isomorphic. So, what I did was to see if I get the same number of generators resp. of relations (sorted by degree), and the same Poincar\u00e9 series. This was mainly done for 2-groups: All groups of order 64, checked against the independent results of David Green and of Jon F. Carlson, and the Sylow 2-subgroup of the Higman-Sims group (order 512), whose cohomology ring was previously computed by Jon F. Carlson et al. There are only few cohomology computations for p-groups with p>2 available, but the results are consistent as well. \n\n> Does this need further testing or can this be changed to \"positive review\".\n\nThe main part of the programs, namely the computation of the ring structure, wasn't touched, and was carefully tested in the past. William did extensive installation tests on a multitude of platforms with the first package version, and I don't think that the new code can be critical for certain machines. \n\nSo, the only part that *really* needs review is the computation of Massey products. \n\nI tried to be careful in my implementation, of course, and to the best of my knowledge the results agree with what I found in the literature. But I find independent tests and peer reviewing quite important. So, I would not feel comfortable with a positive review before some experts assert that some non-trivial computational results involving Massey products are at least plausible.\n\nOne might try systematic cross verifications with the CRIME package, which computes Massey products as well. It would be quite difficult though to do it in detail, because one would have to deal with different ring presentations, and there might also be some different sign conventions around. \nAt least, CRIME agrees that the cohomology rings of C_3 and C_9 can be distinguished using Massey products.\n\nI should certainly ask Marcus Bishop, the author of CRIME, but I haven't seen him recently. \n\nBest regards,\nSimon",
     "created_at": "2009-08-15T22:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55546",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55444",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -228,15 +226,15 @@ Simon
 
 ---
 
-archive/issue_comments_055547.json:
+archive/issue_comments_055445.json:
 ```json
 {
     "body": "Perhaps I should point out in more detail *why* I believe that an expert for Steenrod actions  might be able to provide good examples.\n\nThere is a general result of David Kraines, \"Higher Products\", Bulletin of the AMS 72 (1966), Part 1:128-131.\n\n __Theorem A (page 131)__\n- Let p>2 be a prime.\n- Let P<sup>m</sup>: H<sup>q</sup>(X;Z/p)->H<sup>q+2m(p-1)</sup>(X;Z/p) be the Steenrod pth power operation.\n- Let \\beta denote the Bockstein operator associated with the exact sequence of coefficient groups 0 \u2014> Z/p -> Z/p<sup>2</sup> -> Z/p -> 0\n- Let u be an element of H<sup>2m+1</sup>(X;Z/p).\n- Let <u><sup>p</sup> denote the p-fold restricted Massey product of a cocycle u (as defined by Kraines, so it is a single cocycle, not a *set* of cocycles).\n Then   <u><sup>p</sup> = - \\beta P<sup>m</sup>(u)\n\nIn our spkg, one would compute this restricted p-fold Massey product by `u.massey_power()`\n\nI don't know of general results in the case of cocycles of even degree, though.",
     "created_at": "2009-08-16T08:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55547",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55445",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -260,15 +258,15 @@ I don't know of general results in the case of cocycles of even degree, though.
 
 ---
 
-archive/issue_comments_055548.json:
+archive/issue_comments_055446.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-08-16T15:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55548",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55446",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -278,15 +276,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_055549.json:
+archive/issue_comments_055447.json:
 ```json
 {
     "body": "Changing assignee from Simon King to @simon-king-jena.",
     "created_at": "2009-08-16T15:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55549",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55447",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -296,15 +294,15 @@ Changing assignee from Simon King to @simon-king-jena.
 
 ---
 
-archive/issue_comments_055550.json:
+archive/issue_comments_055448.json:
 ```json
 {
     "body": "I found some cases in which the method COHO.massey_products() raises errors when it shouldn't. \nSo, I need to sort it out -- \"with spkg, needs work\".\n\nMeanwhile I was talking with Mikael Vejdemo Johannson, and he might be able to provide me with good test cases.",
     "created_at": "2009-08-17T13:13:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55550",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55448",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -317,15 +315,15 @@ Meanwhile I was talking with Mikael Vejdemo Johannson, and he might be able to p
 
 ---
 
-archive/issue_comments_055551.json:
+archive/issue_comments_055449.json:
 ```json
 {
     "body": "I'd like to add Mikael Vejdemo Johansson to the Cc list, hope he doesn't mind.\n\nI fixed the bug that was uncovered when trying to do some computations that Mika asked me to do. \n\nThe spkg is updated and passes doc tests on sage.math, so, \"needs review\" (and \"still needs examples\"...).\n\nOne of the examples that failed previously is added as (long) doc test. Now, the following works (but takes a while):\n\n```\nsage: from pGroupCohomology import CohomologyRing\nsage: tmp_root = tmp_filename()\nsage: CohomologyRing.set_user_db(tmp_root)\nsage: H = CohomologyRing(16,2)\nsage: H.make()\nsage: H.massey_products(H.3*H.1,H.3,H.3*H.1)\n\nset([0, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_1*c_2_2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_1^2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_1*c_2_2*c_1_0*c_1_1+c_2_1^2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2))])\nsage: H.massey_products(H.3*H.2,H.3,H.3*H.1)\n\nset([c_2_1^2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_2^2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_1*c_2_2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_2^2*c_1_0*c_1_1+c_2_1*c_2_2*c_1_0*c_1_1+c_2_1^2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_2^2*c_1_0*c_1_1+c_2_1^2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_2^2*c_1_0*c_1_1+c_2_1*c_2_2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     0, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_1*c_2_2*c_1_0*c_1_1+c_2_1^2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2))])\nsage: H.massey_products(H.4*H.2,H.4,H.4*H.2)\n\nset([0, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_2^2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_2^2*c_1_0*c_1_1+c_2_1*c_2_2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2)),\n     c_2_1*c_2_2*c_1_0*c_1_1, a 6-Cochain in H^*(SmallGroup(16,2); GF(2))])\n```\n\n\nMika said that C4xC4 (=`SmallGroup(16,2)`) is particularly interesting to him. But I don't know what results would be expected.",
     "created_at": "2009-08-17T15:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55551",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55449",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -374,15 +372,15 @@ Mika said that C4xC4 (=`SmallGroup(16,2)`) is particularly interesting to him. B
 
 ---
 
-archive/issue_comments_055552.json:
+archive/issue_comments_055450.json:
 ```json
 {
     "body": "Meanwhile I learned more about Steenrod actions (thanks to David Green) and was able to construct some non-trivial example. Unfortunately, it failed. \n\nSo, I have to start a bug hunting, and it is \"needs work\". Sorry!",
     "created_at": "2009-08-18T11:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55552",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55450",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -394,15 +392,15 @@ So, I have to start a bug hunting, and it is "needs work". Sorry!
 
 ---
 
-archive/issue_comments_055553.json:
+archive/issue_comments_055451.json:
 ```json
 {
     "body": "The problem is fixed and the package is updated at http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.1.spkg \n\nTechnical reason for the problem was: \nIf Y is the composition of two Yoneda cochains Y1, Y2, I thought that for computing higher terms of the composition it suffices to compose the lowest terms and then lift Y, i.e., extend a certain (anti-)commutative diagram. This is in fact possible if one just wants to compute the cup product. But for computing higher Massey products, one must lift Y1, Y2 sufficiently, and then compose the higher terms.\n\nI extended the documentation, and thanks to the help of David Green I am now able to present a non-trivial example, explicitly verifying D. Kraines result for a cocycle of degree 3 of the Extraspecial 3-group of order 27 and exponent 3. It is also part of the doc tests.\n\nI think that the example indicates that my implementation makes sense, so, I hope that a positive review (after installation+doctests on a couple of platforms) is now possible.\n\nThe example works as follows.\n\n__First step:__ Study elementary abelian groups.\n\n\n```\nsage: tmp_root = tmp_filename()\nsage: from pGroupCohomology import CohomologyRing\nsage: CohomologyRing.set_user_db(tmp_root)\nsage: H = CohomologyRing.user_db(9,2)\nsage: H.make()\nsage: H.gens()\n[1,\n c_2_1, a 2-Cochain in H^*(SmallGroup(9,2); GF(3)),\n c_2_2, a 2-Cochain in H^*(SmallGroup(9,2); GF(3)),\n a_1_0, a 1-Cochain in H^*(SmallGroup(9,2); GF(3)),\n a_1_1, a 1-Cochain in H^*(SmallGroup(9,2); GF(3))]\n```\n\n\nOf course, there is a sign involved when choosing the generators, but in fact `c_2_1, c_2_2` are the Bocksteins of `a_1_0, a_1_1`. So, the following agrees with Kraines' theorem:\n\n```\nsage: H.cochain_to_polynomial(H.3.massey_power())\n-c_2_1, a 2-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: H.cochain_to_polynomial(H.4.massey_power())\n-c_2_2, a 2-Cochain in H^*(SmallGroup(9,2); GF(3))\n```\n\n\nFortunately the cohomology rings of elementary abelian groups are very simple, and thus allow for a direct computation of Steenrod powers and Bocksteins in higher degree. We consider C = a_1_0*c_2_1_. By Cartan formula and since P<sup>0</sup> is the identity, we have \n  P<sup>1</sup>(C) = P<sup>1</sup>(a_1_0) c_2_1 + a_1_0 P(c_2_1). \n\nSince P<sup>1</sup> vanishes in degree one and acts as the p-th power in degree two, we get \n  P<sup>1</sup>(C) = a_1_0 c_2_1<sup>3</sup>. \n\nApplying the Bockstein operator \\beta, we get \n  \\beta P<sup>1</sup>(C) = c_2_1<sup>4</sup>, \nsince \\beta(c_2_1) = \\beta<sup>2</sup>(a_1_0) = 0 and since \\beta(xy)=\\beta(x)y + (-1)^deg x^x\\beta(y). \n\nHence, according to Kraines, the first restricted Massey power of C should be  \n  <C; 1> = - c_2_1<sup>4</sup>. \n\nAnd indeed:\n\n```\nsage: (H.1*H.3).massey_power()\n<(c_2_1)*(a_1_0); 1>, a 8-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: H.cochain_to_polynomial(_)\n-c_2_1^4, a 8-Cochain in H^*(SmallGroup(9,2); GF(3))\n```\n\n\n__Second Step:__ Apply Kraines formula to the restrictions to maximal elementary abelian subgroups\n\nThis is the cohomology ring of the extraspecial 3-group of order 27 and exponent 3:\n\n```\nsage: H = CohomologyRing.user_db(27,3)\nsage: H.make()\n```\n\n\nWe want to compute the 1st Massey power of a generator in degree 3:\n\n```\nsage: C = H.8\nsage: C\na_3_4, a 3-Cochain in H^*(E27; GF(3))\n```\n\n\nThere are 4 maximal elementary abelian subgroups (all of order 9). We get the restriction maps and compute the restrictions of C:\n\n```\nsage: r1 = H.restriction_maps()[2][1]\nsage: r1\nInduced homomorphism of degree 0 from H^*(E27; GF(3)) to H^*(SmallGroup(9,2); GF(3))\nsage: r2 = H.restriction_maps()[3][1]\nsage: r3 = H.restriction_maps()[4][1]\nsage: r4 = H.restriction_maps()[5][1]\nsage: U = r1.codomain()\nsage: U.cochain_to_polynomial(r1(C))\n-c_2_2*a_1_0+c_2_1*a_1_1, a 3-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: U.cochain_to_polynomial(r2(C))\n0, a 3-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: U.cochain_to_polynomial(r3(C))\n-c_2_2*a_1_0+c_2_1*a_1_1, a 3-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: U.cochain_to_polynomial(r4(C))\nc_2_2*a_1_1+c_2_2*a_1_0-c_2_1*a_1_1, a 3-Cochain in H^*(SmallGroup(9,2); GF(3))\n```\n\n\nHence, after computing Bockstein and Steenrod power in the maximal elementary abelian subgroups as above, and since Steenrod power and Bockstein commute with restriction maps, the theorem of Kraines tells us that <C; 1> should restrict to \n* c_2_1 c_2_2<sup>3</sup> - c_2_1<sup>3</sup>c_2_2, \n* 0, \n* c_2_1 c_2_2<sup>3</sup> - c_2_1<sup>3</sup>c_2_2, and \n* -c_2_2<sup>4</sup> - c_2_1 c_2_2<sup>3</sup> + c_2_1<sup>3</sup>c_2_2. \n\nThis is indeed the case:\n\n```\nsage: CP = C.massey_power()\nsage: U.cochain_to_polynomial(r1(CP))\nc_2_1*c_2_2^3-c_2_1^3*c_2_2, a 8-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: U.cochain_to_polynomial(r2(CP))\n0, a 8-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: U.cochain_to_polynomial(r3(CP))\nc_2_1*c_2_2^3-c_2_1^3*c_2_2, a 8-Cochain in H^*(SmallGroup(9,2); GF(3))\nsage: U.cochain_to_polynomial(r4(CP))\n-c_2_2^4-c_2_1*c_2_2^3+c_2_1^3*c_2_2, a 8-Cochain in H^*(SmallGroup(9,2); GF(3))\n```\n\n\nIt is known that for this group, a cocycle is uniquely determined by its restrictions to the maximal elementary abelian subgroups. Hence, we have verified the computation of the first restricted Massey power of C.",
     "created_at": "2009-08-21T20:07:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55553",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55451",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -535,15 +533,15 @@ It is known that for this group, a cocycle is uniquely determined by its restric
 
 ---
 
-archive/issue_comments_055554.json:
+archive/issue_comments_055452.json:
 ```json
 {
     "body": "PS: Concerning installation tests, I don't know if it suffices to do `sage -f http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.1.spkg` or if you first need to remove the copy of the old spkg in $SAGE_ROOT/spkg/optional/. \n\nSo, please take care that you really get the updated version!",
     "created_at": "2009-08-21T20:38:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55554",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55452",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -555,15 +553,15 @@ So, please take care that you really get the updated version!
 
 ---
 
-archive/issue_comments_055555.json:
+archive/issue_comments_055453.json:
 ```json
 {
     "body": "This installs fine and passes all tests on an intel macbook running 10.4.11.",
     "created_at": "2009-08-21T22:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55555",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55453",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -573,15 +571,15 @@ This installs fine and passes all tests on an intel macbook running 10.4.11.
 
 ---
 
-archive/issue_comments_055556.json:
+archive/issue_comments_055454.json:
 ```json
 {
     "body": "A few installation issues: it requires database_gap, but if I download that spkg and install it from the downloaded version (that is, using \"sage -i path_to/database_gap-4.4.10.spkg\" rather than \"sage -i database_gap-4.4.10\", which downloads the file), then its installation is recorded in SAGE_ROOT/spkg/installed, but not in SAGE_ROOT/spkg/optional, which is where your spkg-install looks.\n\nSecond, it doesn't seem to install on my Intel Mac running 10.5, either 32-bit or 64-bit. I get this error:\n\n```\nar rv /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a os.o\nar rv /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a profile.o\nar: /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a: Resource temporarily unavailable\nmake[2]: *** [/Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a(profile.o)] Error 1\nmake[2]: *** Waiting for unfinished jobs....\na - os.o\nrm -f os.o\nmake[1]: *** [all] Error 2\nmake: *** [all] Error 2\nError building pGroupCohomology.\n```\n",
     "created_at": "2009-08-25T16:06:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55556",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55454",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -607,15 +605,15 @@ Error building pGroupCohomology.
 
 ---
 
-archive/issue_comments_055557.json:
+archive/issue_comments_055455.json:
 ```json
 {
     "body": "Hi John,\n\nReplying to [comment:14 jhpalmieri]:\n> A few installation issues: it requires database_gap, but if I download that spkg and install it from the downloaded version (that is, using \"sage -i path_to/database_gap-4.4.10.spkg\" rather than \"sage -i database_gap-4.4.10\", which downloads the file), then its installation is recorded in SAGE_ROOT/spkg/installed, but not in SAGE_ROOT/spkg/optional, which is where your spkg-install looks.\n\nI didn't know that. IIRC, the part of spkg-install that checks for the presence of the database is more or less copied from the Developer's Guide. So, do you think I should look in both locations?\n\n> Second, it doesn't seem to install on my Intel Mac running 10.5, either 32-bit or 64-bit. I get this error:\n> ...\n> ar: /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a: Resource temporarily unavailable\n> make[2]: *** [/Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a(profile.o)] Error 1\n> make[2]: *** Waiting for unfinished jobs....\n> ...\n> }}}\n\nThis is bad. I have never seen this error message. In particular, I don't know what is meant by \"Resource temporarily unavailable\": Is there a race condition? \n\nIf I am not mistaken, Intel Mac running 10.5 was one of the platforms where installation of the previous version worked. However, David Joyner said that in one case (I think on a MacBook) things only worked when trying to install for the second time, see [http://trac.sagemath.org/sage_trac/ticket/6491#comment:41](http://trac.sagemath.org/sage_trac/ticket/6491#comment:41) and the preceding comments. Of course, it would be good to understand why that happens sometimes. \n\nHow could one try to sort out these problems? Unfortunately, I have no access to an Intel Mac.\n\nBest regards,\nSimon",
     "created_at": "2009-08-25T18:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55557",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55455",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -647,15 +645,15 @@ Simon
 
 ---
 
-archive/issue_comments_055558.json:
+archive/issue_comments_055456.json:
 ```json
 {
     "body": "Replying to [comment:15 SimonKing]:\n> Replying to [comment:14 jhpalmieri]:\n> > A few installation issues: it requires database_gap, but if I download that spkg and install it from the downloaded version (that is, using \"sage -i path_to/database_gap-4.4.10.spkg\" rather than \"sage -i database_gap-4.4.10\", which downloads the file), then its installation is recorded in SAGE_ROOT/spkg/installed, but not in SAGE_ROOT/spkg/optional, which is where your spkg-install looks.\n> \n> I didn't know that. IIRC, the part of spkg-install that checks for the presence of the database is more or less copied from the Developer's Guide. So, do you think I should look in both locations?\n\nDefinitely it does not suffice to look in SAGE_ROOT/spkg/installed *only*, which I just checked.\n\nDo you think the following snipped would be fine for spkg-install?\n\n```\nSMALL_GROUPS=`cd $SAGE_ROOT/spkg/optional/; $SAGE_ROOT/spkg/standard/newest_version database_gap`\nif [ \"$SMALL_GROUPS\" = \"\" ]; then\n    SMALL_GROUPS=`cd $SAGE_ROOT/spkg/installed/; $SAGE_ROOT/spkg/standard/newest_version database_gap`\n    if [ \"$SMALL_GROUPS\" = \"\" ]; then\n        echo \"Failed to find SmallGroups library.  Please install the database_gap spkg\"\n        exit 1\n    fi\nfi\n```\n\n\nRegards,\nSimon",
     "created_at": "2009-08-25T21:42:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55558",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55456",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -688,15 +686,15 @@ Simon
 
 ---
 
-archive/issue_comments_055559.json:
+archive/issue_comments_055457.json:
 ```json
 {
     "body": "Replying to [comment:14 jhpalmieri]:\n...\n> Second, it doesn't seem to install on my Intel Mac running 10.5, either 32-bit or 64-bit. I get this error:\n> {{{\n> ar rv /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a os.o\n> ar rv /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a profile.o\n> ar: /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a: Resource temporarily unavailable\n> make[2]: *** [/Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a(profile.o)] Error 1\n> make[2]: *** Waiting for unfinished jobs....\n> a - os.o\n> rm -f os.o\n> make[1]: *** [all] Error 2\n> make: *** [all] Error 2\n> Error building pGroupCohomology.\n> }}}\n\nTwo things might be worth mentioning:\n\n1. If I am not mistaken, C-MeatAxe still does not explicitly mention support for OS X. So, it is perhaps not a surprise that OS X isn't easy here.\n\n2. Six months ago, it was a problem to build David Green's C-routines when linked against an optimized libmtx.a (i.e., using -O3). Therefore, I build libmtx.a twice: First with -O1, then I build David Green's programs, then I build libmtx.a again with a potentially higher optimization, and then I link my Cython code against the optimized libmtx.a. \n\nCould \"2.\" be the reason for the problem that you met? \n\nI just tested that at least on my new machine (Intel Core Duo, openSuse 11.0) this nastiness is actually not needed, even when building with -O3. \n\nSo, I suggest the following:\n\n* Search both SAGE_ROOT/spkg/optional and SAGE_ROOT/spkg/installed for database_gap.\n* Try using -O3 straight away. \n\nBut I think in this case, a thorough build test is needed, similar to what William has done with the first version of the spkg.",
     "created_at": "2009-08-25T22:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55559",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55457",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -737,15 +735,15 @@ But I think in this case, a thorough build test is needed, similar to what Willi
 
 ---
 
-archive/issue_comments_055560.json:
+archive/issue_comments_055458.json:
 ```json
 {
     "body": "Replying to [comment:16 SimonKing]:\n> Replying to [comment:15 SimonKing]:\n> > Replying to [comment:14 jhpalmieri]:\n> > > A few installation issues: it requires database_gap, but if I download that spkg and install it from the downloaded version (that is, using \"sage -i path_to/database_gap-4.4.10.spkg\" rather than \"sage -i database_gap-4.4.10\", which downloads the file), then its installation is recorded in SAGE_ROOT/spkg/installed, but not in SAGE_ROOT/spkg/optional, which is where your spkg-install looks.\n> > \n> > I didn't know that. IIRC, the part of spkg-install that checks for the presence of the database is more or less copied from the Developer's Guide. So, do you think I should look in both locations?\n\nI think the one in the Developer's Guide is checking for something in spkg/standard, which ought to be, well, more standard.  When checking for optional packages, maybe more care is needed?  Anyway, the code snippet looks okay to me.  It should be easy enough to test.\n\n>So, I suggest the following:\n> - Search both SAGE_ROOT/spkg/optional and SAGE_ROOT/spkg/installed for database_gap.\n> - Try using -O3 straight away.\n\nThese sound good to me.",
     "created_at": "2009-08-25T22:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55560",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55458",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -768,15 +766,15 @@ These sound good to me.
 
 ---
 
-archive/issue_comments_055561.json:
+archive/issue_comments_055459.json:
 ```json
 {
     "body": "Replying to [comment:18 jhpalmieri]:\n> >So, I suggest the following:\n> > - Search both SAGE_ROOT/spkg/optional and SAGE_ROOT/spkg/installed for database_gap.\n> > - Try using -O3 straight away.\n> \n> These sound good to me.\n\nUnfortunately, the \"-O3\" option does not work, at least on sage.math.\n\nSo, I have to try to sort these build problems out in the next few days.",
     "created_at": "2009-08-25T23:27:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55561",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55459",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -795,15 +793,15 @@ So, I have to try to sort these build problems out in the next few days.
 
 ---
 
-archive/issue_comments_055562.json:
+archive/issue_comments_055460.json:
 ```json
 {
     "body": "I try to summarize how I came to the idea to build libmtx.a twice.\n\n- When I tried higher optimizations, I found out that at least one executable of David Green (purpose: Computation of a particularly nice basis of the group algebra) only works when linked against a version of libmtx.a that was build with at most -O1.\n- In order to have higher optimization available (and faster code?) I separated things, so, I had one libmtx.a for David Green's executables and another libmtx.a for the rest.\n\nBut after looking at my Makefile, I realize that in fact the second version of libmtx.a is using -O1 as well. I remember that I made performance tests with different optimizations, and it could be that in fact -O2 or -O3 does not yield faster code.  \n\nNow, I suggest the following approach:\n\n1. I test -O1, -O2, -O3 on sage.math and another machine. \n\n2. Should it turn out that -O1 is the fastest anyway then I build libmtx.a only once, an I reckon this would solve the problem.\n\n3. If -O2 or -O3 is faster, then I should probably stick with two versions of libmtx.a. But then I must find a way to work around the sporadic build problems on a MacBook.\n\nJohn, I still  wonder about the error message in your report. Why can't libmtx.a be accessed? Is it perhaps the case that the MacBook tries a parallel build? If this is the case, how can I switch it off?\n\nCheers,\nSimon",
     "created_at": "2009-08-26T08:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55562",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55460",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -831,15 +829,15 @@ Simon
 
 ---
 
-archive/issue_comments_055563.json:
+archive/issue_comments_055461.json:
 ```json
 {
     "body": "It turned out that building libmtx.a twice was an artifact of my previous attempts to find a proper optimization. \n\nMy test case: Compute the cohomology for all groups of order 64 from scratch, and compare with the known result.\n\nI tested it with four different package versions. In all cases, I was first building libmtx.a with -O1, so that David's executables work. Then, I built libmtx.a again, with -O0, -O1, -O2, -O3, and -Os. Note that the Cython extensions are build with -O3 anyway. \n\nIn Galway (Intel Core Duo) and on sage.math, I got the following CPU times:\n\n* -O0, Galway: 18.73 min, sage.math: 29.73 min\n* -O1, Galway: 18.32 min, sage.math: 27.76 min\n* -O2, Galway: 18.31 min, sage.math: 28.70 min\n* -O3, Galway: 18.48 min, sage.math: 29.20 min\n* -Os, Galway: 18.74 min, sage.math: not finished yet.\n\nThis indicates that indeed a thorough -O1 optimization is good, perhaps best. \n\nI got similar results a few months ago. So, the logical consequence should have been to build libmtx.a only once, namely with -O1. But then I forgot to remove the double build approach.\n\n**Summary**\n\nUpdated spkg is at [http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.1.spkg](http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.1.spkg)\n\nThe build process is now probably cleaner, namely searching for database_gap both in spkg/optional and spkg/installed, and building libmtx.a only once. I hope that the problems on MacBook, where the resource libmtx.a wasn't available, are resolved by now.\n\nI use this occasion for another change: The \"public cohomology data base\", that is shared by all users of a Sage install, is now located in SAGE_DATA/pGroupCohomology/, rather than in SAGE_ROOT/local/pGroupCohomology/db. William wrote on sage-devel that this is a better location. I guess so far I am the only user who really did extensive computations with the package. So, I think there is no need for a warning message concerning the potential need of relocating the user's data.\n\nJohn, of course I'd appreciate if you could try it on your Intel Mac again. Since the build process changed, I am now asking William whether he thinks that a thorough test (on all machines in William's park) is needed.\n\nCheers,\nSimon",
     "created_at": "2009-08-26T22:32:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55563",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55461",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -878,15 +876,15 @@ Simon
 
 ---
 
-archive/issue_comments_055564.json:
+archive/issue_comments_055462.json:
 ```json
 {
     "body": "No luck with the new build.  What else can I try?",
     "created_at": "2009-08-27T01:53:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55564",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55462",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -896,15 +894,15 @@ No luck with the new build.  What else can I try?
 
 ---
 
-archive/issue_comments_055565.json:
+archive/issue_comments_055463.json:
 ```json
 {
     "body": "Replying to [comment:22 jhpalmieri]:\n> No luck with the new build.  What else can I try?\n\nI don't know. \n\nOn the one hand, this is strange, because I understood that William successfully tested building the first package version on all machines in his build park, and I thought this would also include an Intel Mac. And if I am not mistaken, I did not change our C-MeatAxe adaptation since then.\n\nOn the other hand, when I tried to build an earlier version (not yet spkg) on a Mac Book at the Sage Days in San Diego, C-MeatAxe was a problem as well, and in fact the C-MeatAxe web site does not explicitly mention support for OS X. From that point of view, I was positively surprised when David Joyner first reported a successful build on some OS X machine.\n\nDo you still get the same error,\n\n```\nar rv /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a os.o\nar rv /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a profile.o\nar: /Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a: Resource temporarily unavailable\nmake[2]: *** [/Applications/sage_builds/sage-4.1.1-binary/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a(profile.o)] Error 1\nmake[2]: *** Waiting for unfinished jobs....\na - os.o\n```\n\n?\n\nBut what does it mean that libmtx.a is temporarily unavailable? Of course, libmtx.a should eventually contain functions to link against. Can you see from the protocol output whether *some* functions made it into libmtx.a? Or is os.o and provile.o the first thing that is tried?\n\nWhat happens if you try to install older version, say, http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.0.1.spkg ?\n\nThere is an experimental meataxe spkg, \"meataxe-2.4.3\". Does this build on your Intel Mac? If this is the case, I may try to learn from its Makefile.\n\nI think I will ask on sage-devel whether some Mac expert can help to hunt the error down.\n\nBest regards,\nSimon",
     "created_at": "2009-08-27T13:52:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55565",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55463",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -945,15 +943,15 @@ Simon
 
 ---
 
-archive/issue_comments_055566.json:
+archive/issue_comments_055464.json:
 ```json
 {
     "body": "Replying to [comment:23 SimonKing]:\n> Replying to [comment:22 jhpalmieri]:\n> [...]\n> What happens if you try to install older version, say, http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.0.1.spkg ?\n\nSorry, I meant to write \"1.0.2\". Since it is an optional package, it should be available in a sage session by\n\n```\nsage: install_package('p_group_cohomology')\n```\n",
     "created_at": "2009-08-27T14:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55566",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55464",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -973,15 +971,15 @@ sage: install_package('p_group_cohomology')
 
 ---
 
-archive/issue_comments_055567.json:
+archive/issue_comments_055465.json:
 ```json
 {
     "body": "Note: Don't use \"export MAKE='make -j2'\"; that seems to be what's causing the problems.  (See [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/35c05ab37f77f888).)\n\nIf it's possible, the spkg-install file could check for this.",
     "created_at": "2009-08-27T15:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55567",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55465",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -993,15 +991,15 @@ If it's possible, the spkg-install file could check for this.
 
 ---
 
-archive/issue_comments_055568.json:
+archive/issue_comments_055466.json:
 ```json
 {
     "body": "This doesn't work with a 64-bit Mac OS X install.  It seems to install okay, although during the build process, I saw the message\n\n\"ld warning: in /Applications/sage/local/lib/libmtx.a, file is not of required architecture\"\n\nThen when I run it, I get\n\n```\nsage: from pGroupCohomology import CohomologyRing\n---------------------------------------------------------------------------\nImportError                               Traceback (most recent call last)\n\n/Users/palmieri/.sage/temp/Macintosh.local/76717/_Users_palmieri__sage_init_sage_0.py in <module>()\n\n/Applications/sage/local/lib/python2.6/site-packages/pGroupCohomology/__init__.py in <module>()\n   1073 from sage.rings.integer import Integer\n   1074 from sage.interfaces.singular import singular\n-> 1075 from pGroupCohomology.cohomology import COHO\n   1076 from pGroupCohomology.resolution import OPTION\n   1077 import re\n\nImportError: dlopen(/Applications/sage/local/lib/python2.6/site-packages/pGroupCohomology/cohomology.so, 2): Symbol not found: _LPR\n  Referenced from: /Applications/sage/local/lib/python2.6/site-packages/pGroupCohomology/cohomology.so\n  Expected in: dynamic lookup\n```\n\n\nIt seems to work with a 32-bit Sage build, though, so that's some good news.",
     "created_at": "2009-08-27T15:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55568",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55466",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1037,15 +1035,15 @@ It seems to work with a 32-bit Sage build, though, so that's some good news.
 
 ---
 
-archive/issue_comments_055569.json:
+archive/issue_comments_055467.json:
 ```json
 {
     "body": "How can I test whether \"make -j2\" is used? And what should be done *if* \"make -j2 is used? Exit with an error? Sorry, I am really not an expert for writing shell scripts.\n\nReplying to [comment:26 jhpalmieri]:\n> This doesn't work with a 64-bit Mac OS X install.  It seems to install okay, although during the build process, I saw the message\n> \n> \"ld warning: in /Applications/sage/local/lib/libmtx.a, file is not of required architecture\"\n\nOK, so something goes wrong.\n\n> Then when I run it, I get\n> {{{ [...]\n> ImportError: dlopen(/Applications/sage/local/lib/python2.6/site-packages/pGroupCohomology/cohomology.so, 2): Symbol not found: _LPR\n>   Referenced from: /Applications/sage/local/lib/python2.6/site-packages/pGroupCohomology/cohomology.so\n>   Expected in: dynamic lookup\n> }}}\n\nThis is very strange. There is the symbol \"LPR\" in libmtx.a, but no \"_LPR\". So, I wonder how this error message arose.",
     "created_at": "2009-08-27T16:11:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55569",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55467",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1071,15 +1069,15 @@ This is very strange. There is the symbol "LPR" in libmtx.a, but no "_LPR". So, 
 
 ---
 
-archive/issue_comments_055570.json:
+archive/issue_comments_055468.json:
 ```json
 {
     "body": "Replying to [comment:27 SimonKing]:\n> How can I test whether \"make -j2\" is used? And what should be done *if* \"make -j2 is used? Exit with an error? Sorry, I am really not an expert for writing shell scripts.\n\nMe neither, sorry.\n\nFor the 64-bit issue, at one point I browsed through some spkgs to see what they did in 64-bit mode (in an attempt to solve the problem at #6681).  Givaro does this:\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   CPPFLAGS=\"-O2 -g -m64 \"; export CPPFLAGS\n   LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\nI am not an expert at this by any stretch of the imagination, but this kind of thing seems more or less standard for 64-bit builds in Sage spkgs; the -m64 flag tells the compiler to build for 64-bit architecture.",
     "created_at": "2009-08-27T16:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55570",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55468",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1105,15 +1103,15 @@ I am not an expert at this by any stretch of the imagination, but this kind of t
 
 ---
 
-archive/issue_comments_055571.json:
+archive/issue_comments_055469.json:
 ```json
 {
     "body": "Replying to [comment:28 jhpalmieri]:\n> For the 64-bit issue, at one point I browsed through some spkgs to see what they did in 64-bit mode (in an attempt to solve the problem at #6681).  Givaro does this:\n> {{{\n> if [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n>    echo \"64 bit MacIntel\"\n>    CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n>    CPPFLAGS=\"-O2 -g -m64 \"; export CPPFLAGS\n>    LDFLAGS=\"-m64\"; export LDFLAGS\n> fi\n> }}}\n\nOK, I tried to do something similar: spkg-install is defining DARWIN64, which is either \"-m64\" or \"\". It is exported, and subsequently used by the Makefiles of meataxe and of David Green's programs.\n\nI updated the spkg at http://sage.math.washington.edu/home/SimonKing/Cohomology/p_group_cohomology-1.1.spkg which is preliminary, since it does not yet test for parallel build. \n\nBut it tries to deal with the 64 bit issue. John, can you please try again, with parallel build disabled? And could you please verify whether on the 64 bit machine the option \"-m64\" is really used?\n\nRegards,\nSimon",
     "created_at": "2009-08-27T17:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55571",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55469",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1141,15 +1139,15 @@ Simon
 
 ---
 
-archive/issue_comments_055572.json:
+archive/issue_comments_055470.json:
 ```json
 {
     "body": "Hi Simon,\n\n\"-m64\" is used some of the time, but not always, and so the build fails.  For example:\n\n```\ngcc\t -Wall -DASM_MMX -g -O1 -m64 -DOS_DEFAULT -fPIC -o maketab /Applications/sage/spkg/build/p_group_cohomology-1.1/src/mtx2.2.4/src/maketab.c  /Applications/sage/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a\n```\n\nlooks good.  On the other hand:\n\n```\ngcc -I/Applications/sage/spkg/build/p_group_cohomology-1.1/src/mtx2.2.4/src/ -Wall -g -fPIC -O1    -c -o mam.o /Applications/sage/spkg/build/p_group_cohomology-1.1/src/present/src/mam.c\n```\n\nAs the build process fails:\n\n```\ngcc -L/Applications/sage/spkg/build/p_group_cohomology-1.1/src/lib -o makeActionMatrices mam.o pgroup.o perror.o -lmtx\nld warning: in /Applications/sage/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a, file is not of required architecture\nUndefined symbols:\n  \"_tnull\", referenced from:\n      _tnull$non_lazy_ptr in pgroup.o\n  \"_matinv\", referenced from:\n      _makeBasisChangeMatrices in pgroup.o\n  \"_zalloc\", referenced from:\n      _allocateMatrixList in pgroup.o\n      _basisChangeReg2Nontips in pgroup.o\n      _changeActionMatricesReg2Nontips in pgroup.o\n      _makeLeftActionMatrices in pgroup.o\n\n[snip]\n\nld: symbol(s) not found\ncollect2: ld returned 1 exit status\nmake[1]: *** [makeActionMatrices] Error 1\n```\n\n\nI don't see DARWIN64 in",
     "created_at": "2009-08-27T18:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55572",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55470",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1197,15 +1195,15 @@ I don't see DARWIN64 in
 
 ---
 
-archive/issue_comments_055573.json:
+archive/issue_comments_055471.json:
 ```json
 {
     "body": "Replying to [comment:30 jhpalmieri]:\n> Hi Simon,\n> \n> \"-m64\" is used some of the time, but not always, and so the build fails.  For example:\n> [...]\n> {{{\n> gcc -L/Applications/sage/spkg/build/p_group_cohomology-1.1/src/lib -o makeActionMatrices mam.o pgroup.o perror.o -lmtx\n> ld warning: in /Applications/sage/spkg/build/p_group_cohomology-1.1/src/lib/libmtx.a, file is not of required architecture\n> [...]\n> }}}\n> \n> I don't see DARWIN64 in \n\nI think that's a progress, because this time we consider building of David Green's files, not of MeatAxe. \n\nPerhaps you downloaded the spkg 5 minutes too early, because I first forgot to modify `src/present/Makefile` as well. But meanwhile, it contains the lines \n\n```\nCFLAGS=-I$(MTXSRC) -Wall -g -fPIC -O1 $(DARWIN64)\nLFLAGS=-L$(MTXLIBDIR) $(DARWIN64)\nLFLAGS2=-l$(MTXLIBNAME) $(DARWIN64)\n```\n\n\nCheers,\nSimon",
     "created_at": "2009-08-27T18:59:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55573",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55471",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1240,15 +1238,15 @@ Simon
 
 ---
 
-archive/issue_comments_055574.json:
+archive/issue_comments_055472.json:
 ```json
 {
     "body": "William answered on sage-devel how one might kill the parallel build problem (namely by setting MAKE=make).\n\nI changed the spkg correspondingly (sorry if this created another \"race condition\" between John and me...)",
     "created_at": "2009-08-27T19:12:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55574",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55472",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1260,15 +1258,15 @@ I changed the spkg correspondingly (sorry if this created another "race conditio
 
 ---
 
-archive/issue_comments_055575.json:
+archive/issue_comments_055473.json:
 ```json
 {
     "body": "Okay, the 64-bit change looks good; I haven't looked at the \"MAKE\" vs. \"make\" change yet.  Builds on both 32- and 64-bit, and spkg-check works almost completely: with the 64-bit build, all tests pass, and with the 32-bit build, I get \n\n```\nTesting the components of the package pGroupCohomology...\npGroupCohomology --> Error\n```\n\nand then everything else passes.  The log file says\n\n```\nsage -t -optional -long \"RecDoctest.py\"                     \n**********************************************************************\nFile \"/Users/palmieri/.sage/temp/Macintosh.local/90792/RecDoctest.py\", line 399:\n    sage: H0.massey_products(H0.2,H0.3,H0.2,H0.3)\nExpected:\n    set([c_2_2, a 2-Cochain in H^*(D8; GF(2)),\n         b_1_0^2+c_2_2, a 2-Cochain in H^*(D8; GF(2)),\n         b_1_1^2+b_1_0^2+c_2_2, a 2-Cochain in H^*(D8; GF(2)),\n         b_1_1^2+c_2_2, a 2-Cochain in H^*(D8; GF(2))])\nGot:\n    set([b_1_0^2+c_2_2, a 2-Cochain in H^*(D8; GF(2)), c_2_2, a 2-Cochain in H^*(D8; GF(2)), b_1_1^2+c_2_2, a 2-Cochain in H^*(D8; GF(2)), b_1_1^2+b_1_0^2+c_2_2, a 2-Cochain in H^*(D8; GF(2))])\n**********************************************************************\nFile \"/Users/palmieri/.sage/temp/Macintosh.local/90792/RecDoctest.py\", line 404:\n    sage: H0.massey_products(H0.2*H0.1,H0.3*H0.1,H0.2*H0.1) # long time\nExpected:\n    set([c_2_2*b_1_0^6+c_2_2^2*b_1_0^4, a 8-Cochain in H^*(D8; GF(2)),\n         c_2_2*b_1_0^6, a 8-Cochain in H^*(D8; GF(2)),\n         c_2_2^3*b_1_0^2, a 8-Cochain in H^*(D8; GF(2)),\n         c_2_2^2*b_1_0^4+c_2_2^3*b_1_0^2, a 8-Cochain in H^*(D8; GF(2)),\n         c_2_2*b_1_0^6+c_2_2^2*b_1_0^4+c_2_2^3*b_1_0^2, a 8-Cochain in H^*(D8; GF(2)),\n         c_2_2^2*b_1_0^4, a 8-Cochain in H^*(D8; GF(2)),\n         0, a 8-Cochain in H^*(D8; GF(2)),\n         c_2_2*b_1_0^6+c_2_2^3*b_1_0^2, a 8-Cochain in H^*(D8; GF(2))])\nGot:\n    set([c_2_2^2*b_1_0^4, a 8-Cochain in H^*(D8; GF(2)), c_2_2*b_1_0^6+c_2_2^2*b_1_0^4, a 8-Cochain in H^*(D8; GF(2)), c_2_2*b_1_0^6+c_2_2^2*b_1_0^4+c_2_2^3*b_1_0^2, a 8-Cochain in H^*(D8; GF(2)), c_2_2^2*b_1_0^4+c_2_2^3*b_1_0^2, a 8-Cochain in H^*(D8; GF(2)), 0, a 8-Cochain in H^*(D8; GF(2)), c_2_2*b_1_0^6+c_2_2^3*b_1_0^2, a 8-Cochain in H^*(D8; GF(2)), c_2_2*b_1_0^6, a 8-Cochain in H^*(D8; GF(2)), c_2_2^3*b_1_0^2, a 8-Cochain in H^*(D8; GF(2))])\n```\n\nI haven't check carefully, but these look like the same sets, just in different orders.\n\nBy the way, to be really nitpicky, could we change \"a 8-cochain\" to \"an 8-cochain\"?  (What other numbers need this: 11, 18, 80-89?)",
     "created_at": "2009-08-27T20:04:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55575",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55473",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1317,15 +1315,15 @@ By the way, to be really nitpicky, could we change "a 8-cochain" to "an 8-cochai
 
 ---
 
-archive/issue_comments_055576.json:
+archive/issue_comments_055474.json:
 ```json
 {
     "body": "Okay, the newest version builds on both 32-bit and 64-bit, whether I have \"MAKE\" set to \"make -j2\" or not.",
     "created_at": "2009-08-27T20:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55576",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55474",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1335,15 +1333,15 @@ Okay, the newest version builds on both 32-bit and 64-bit, whether I have "MAKE"
 
 ---
 
-archive/issue_comments_055577.json:
+archive/issue_comments_055475.json:
 ```json
 {
     "body": "Replying to [comment:34 jhpalmieri]:\n> Okay, the newest version builds on both 32-bit and 64-bit, whether I have \"MAKE\" set to \"make -j2\" or not.\n\nGreat!\n\nSo, my homework for today is to try to find and fix the doc test that uses sets or dictionaries (there has been a remark of William on sage-devel or sage-support concerning doc tests that use dictionaries). Indeed you are right, in the failing doc test we have the same sets in different order.\n\nConcerning \"a 8-cochain\" to \"an 8-cochain\": Normally I try to be grammatically correct (as much as possible for me, a non-native speaker). If you look at some of the doc-tests, you will see that I use 1st, 2nd, 3rd, 101st and so on, rather than always doing `\"%d-th\"%n`. But I would prefer to do this change in the next version.\n\nCheers,\nSimon",
     "created_at": "2009-08-28T09:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55577",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55475",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1363,15 +1361,15 @@ Simon
 
 ---
 
-archive/issue_comments_055578.json:
+archive/issue_comments_055476.json:
 ```json
 {
     "body": "Hi John!\n\nAgain concerning \"an 8-cochain\" versus \"a 8-cochain\": What is the rule for having \"an\" rather than \"a\"? Would one say \"an onehundred-cochain\"? Or is \"an\" only in front of \"a,e,i\"? \n\nPerhaps the most elegant way out would be \"a cochain of degree 8\". But, as I said, I'd like to spare this for the next version, if you don't veto.\n\nMeanwhile I fixed the doc tests, i.e., if there are sets or dictionaries left then they contain precisely one item, so that there is no problem with ambiguity, and in all other cases I used ordered lists.\n\nI committed the changes in the spkg's hg repository, and put everything online. Hopefully all issues are fixed by now.\n\nBest regards,\nSimon",
     "created_at": "2009-08-28T16:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55578",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55476",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1392,15 +1390,15 @@ Simon
 
 ---
 
-archive/issue_comments_055579.json:
+archive/issue_comments_055477.json:
 ```json
 {
     "body": "Hi John,\n\nReplying to [comment:34 jhpalmieri]:\n> Okay, the newest version builds on both 32-bit and 64-bit, whether I have \"MAKE\" set to \"make -j2\" or not.\n\nThanks to William, I have now also access to a Darwin, apparently 32 bit, and the package builds and tests fine there. \n\nIt also builds and tests fine on Intel Core Duo (openSuse 11.0) and on sage.math\n\nsage.math is the slowest in that list. For whatever reason, our spkg seems to run quite good on Intel processors, although it was developed on AMD processors.\n\nPerhaps now is the time to turn to mathematics: Do you think that my example of Massey products makes sense? I was informed by Marcus Bishop that his CRIME package returns \"fail\" (which it shouldn't) when computing the triple Massey product of a degree 3 cocycle of the cyclic group of order 3. So, we can not cross check the results of our package with the results of CRIME.",
     "created_at": "2009-08-29T16:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55579",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55477",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1421,15 +1419,15 @@ Perhaps now is the time to turn to mathematics: Do you think that my example of 
 
 ---
 
-archive/issue_comments_055580.json:
+archive/issue_comments_055478.json:
 ```json
 {
     "body": "Thanks to Mikael Vejdemo Johansson, I detected another bug in the computation of restricted Massey powers. In this example (cohomology of C_4 times C_4), the answers of COHO.massey_products() and of COCH.massey_power() were inconsistent. \n\nIt is fixed, and used as a doc test, as follows:\n\n```\nsage: tmp_root = tmp_filename()\nsage: from pGroupCohomology import CohomologyRing\nsage: CohomologyRing.set_user_db(tmp_root)\nsage: H = CohomologyRing.user_db(16,2)\nsage: H.make()\nsage: x,a,b,c,d = H.gens()\nsage: c\nc_1_0, a 1-Cochain in H^*(SmallGroup(16,2); GF(2))\nsage: d\nc_1_1, a 1-Cochain in H^*(SmallGroup(16,2); GF(2))\nsage: H.cochain_to_polynomial(c.massey_power())\n0, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))\nsage: H.cochain_to_polynomial(d.massey_power())\n0, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))\nsage: H.cochain_to_polynomial(c.massey_power(2))\nc_2_1, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))\nsage: H.cochain_to_polynomial(d.massey_power(2))\nc_2_2, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))\n```\n\nAccording to Mikael, this is what he expected (but in the previous version, a null cocycle was returned). The result is consistent with the set-valued Massey products:\n\n```\nsage: sorted(list(H.massey_products(c,c,c,c)))\n[c_2_1, a 2-Cochain in H^*(SmallGroup(16,2); GF(2)),\n c_2_1+c_1_0*c_1_1, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))]\nsage: sorted(list(H.massey_products(d,d,d,d)))\n[c_2_2, a 2-Cochain in H^*(SmallGroup(16,2); GF(2)),\n c_2_2+c_1_0*c_1_1, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))]\n```\n\n\nThe example that I gave previously (a degree 3 cocycle of SmallGroup(27,3)) is still in accordance with theoretical results, it did not change.",
     "created_at": "2009-09-09T10:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55580",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55478",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1476,15 +1474,15 @@ The example that I gave previously (a degree 3 cocycle of SmallGroup(27,3)) is s
 
 ---
 
-archive/issue_comments_055581.json:
+archive/issue_comments_055479.json:
 ```json
 {
     "body": "Replying to [comment:38 SimonKing]:\n> Thanks to Mikael Vejdemo Johansson, I detected another bug in the computation of restricted Massey powers. In this example (cohomology of C_4 times C_4), the answers of COHO.massey_products() and of COCH.massey_power() were inconsistent. \n> \n> It is fixed, ...\n\n... and the technical problem was as follows: In COCH.massey_power() was a loop starting at 0, but it should have started at 1. By consequence, a cocycle (which in general would be non-zero) was added to itself, resulting in zero (in characteristic two). \n\nThe only change in the code is to let this loop start at 1, and then of course there are new doc tests.\n\nJust for the record...\n\nCheers, \nSimon",
     "created_at": "2009-09-09T13:03:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55581",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55479",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1506,15 +1504,15 @@ Simon
 
 ---
 
-archive/issue_comments_055582.json:
+archive/issue_comments_055480.json:
 ```json
 {
     "body": "I just had a chat with Mikael, and if I understood him correctly then the results of the current package version on the cohomology of C_4 times C_4 are what he expected.\n\nMikael, please correct me if the following contains too much nonsense.\n\n\n```\nsage: from pGroupCohomology import CohomologyRing\nsage: H = CohomologyRing.user_db(16,2)\nsage: H.make()\nsage: x,a,b,c,d = H.gens()\nsage: x,a,b,c,d\n\n(1,\n c_2_1, a 2-Cochain in H^*(SmallGroup(16,2); GF(2)),\n c_2_2, a 2-Cochain in H^*(SmallGroup(16,2); GF(2)),\n c_1_0, a 1-Cochain in H^*(SmallGroup(16,2); GF(2)),\n c_1_1, a 1-Cochain in H^*(SmallGroup(16,2); GF(2)))\n```\n\n\nThe Massey products allow to create the whole cohomology ring out of the degree-1-generators, c and d:\n\n```\nsage: H.massey_products(c,c,c,c,all=False)\nset([c_2_1, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))])\nsage: H.massey_products(d,d,d,d,all=False)\nset([c_2_2, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))])\n```\n\n\nAfter fixing the previous bug, massey_power yields the same result:\n\n```\nsage: H.cochain_to_polynomial(c.massey_power(2))\nc_2_1, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))\nsage: H.cochain_to_polynomial(d.massey_power(2))\nc_2_2, a 2-Cochain in H^*(SmallGroup(16,2); GF(2))\n```\n\n\nUsually, the Massey products behave multiplicatively in the first and last position:\n\n```\nsage: H.massey_products(c*d,c,c,c,all=False)\nset([c_2_1*c_1_1, a 3-Cochain in H^*(SmallGroup(16,2); GF(2))])\nsage: H.massey_products(c,c,c,c*d,all=False)\nset([c_2_1*c_1_1, a 3-Cochain in H^*(SmallGroup(16,2); GF(2))])\n```\n\n\nIn this example, it is actually multiplicative in *all* four positions:\n\n```\nsage: H.massey_products(c,c*d,c,c,all=False)\nset([c_2_1*c_1_1, a 3-Cochain in H^*(SmallGroup(16,2); GF(2))])\nsage: H.massey_products(c,c,c*d,c,all=False)\nset([c_2_1*c_1_1, a 3-Cochain in H^*(SmallGroup(16,2); GF(2))])\n```\n\n\nBy consequence, higher Massey products involving at least two factors `c*d` are either not defined or vanish:\n\n```\nsage: H.massey_products(c*d,c,c,c*d,c,all=False)\nset()\n```\n\nThis makes sense since `H.massey_products(c,c,c*d,c)` is non-zero, thus, the above fivefold product is not defined.\n\n\n```\nsage: H.massey_products(c*d,c*d,c*d,c*d,c*d,c*d,c*d,c*d,c*d,c,all=False)\nset([0, a 11-Cochain in H^*(SmallGroup(16,2); GF(2))])\n```\n\nThis makes sense since we can extract the `d` factors, but `d*d` is zero, so, the whole Massey product is zero.\n\nDavid and John, do you think that this now seems stable enough for being an optional package? AFAIK the build problems on Intel Mac are resolved: Meanwhile William provided me with access to such machines, and it works both 32 and 64 bit. Actually, I did the above examples on Intel Mac 64 bit, since on my computer in Galway and on sage.math I meanwhile have a package version 2.0 minus epsilon.\n\nBest regards,\nSimon",
     "created_at": "2009-09-10T11:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55582",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55480",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1604,15 +1602,15 @@ Simon
 
 ---
 
-archive/issue_comments_055583.json:
+archive/issue_comments_055481.json:
 ```json
 {
     "body": "Here is a comment of Mikael:\n\nReplying to [comment:40 SimonKing]:\n> I just had a chat with Mikael, and if I understood him correctly then the results of the current package version on the cohomology of C_4 times C_4 are what he expected.\n> \n> Mikael, please correct me if the following contains too much nonsense.\n[...]\n> Usually, the Massey products behave multiplicatively in the first and last position:\n> ...\n\nMikael answered\n\n\"\"\"\n\nI would hesitate to say _usually_ without an actual argument backing  \nit up. In what I have observed when computing on A-infinity  \nstructures, this seems very often to be the case.\n\n\"\"\"\n\nI misunderstood that there is a theorem for it. \n\nAnyway, here apparently it is the case.\n\nCheers,\nSimon",
     "created_at": "2009-09-10T12:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55583",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55481",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1647,15 +1645,15 @@ Simon
 
 ---
 
-archive/issue_comments_055584.json:
+archive/issue_comments_055482.json:
 ```json
 {
     "body": "Replying to [comment:41 SimonKing]:\n> Replying to [comment:40 SimonKing]:\n> > I just had a chat with Mikael, and if I understood him correctly then the results of the current package version on the cohomology of C_4 times C_4 are what he expected.\n> > \n> > Mikael, please correct me if the following contains too much nonsense.\n> [...]\n> > Usually, the Massey products behave multiplicatively in the first and last position:\n> > \n\n[snip]\n\n> I misunderstood that there is a theorem for it. \n\nThere is a theorem for it.  Look in *Complex cobordism and stable homotopy groups of spheres* by Ravenel, Appendix A1.4.  (You can download it [here](http://www.math.rochester.edu/people/faculty/doug/mu.html#repub)).  According to A1.4.6, up to a sign, b<x1, x2, ...> is contained in <bx1, x2, ...>, and similarly for the last position.  There is also an addition formula: see A1.4.5 in Ravenel.  If you can provide doctests for some of these in some examples, that would be great.",
     "created_at": "2009-09-10T14:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55584",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55482",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1678,15 +1676,15 @@ There is a theorem for it.  Look in *Complex cobordism and stable homotopy group
 
 ---
 
-archive/issue_comments_055585.json:
+archive/issue_comments_055483.json:
 ```json
 {
     "body": "Dear John,\n\nReplying to [comment:42 jhpalmieri]:\n> There is a theorem for it.  Look in *Complex cobordism and stable homotopy groups of spheres* by Ravenel, Appendix A1.4.  \n> According to A1.4.6, up to a sign, b<x1, x2, ...> is contained in <bx1, x2, ...>, and similarly for the last position. \n\nThank you for your hint!\n\nRavenel says \"In most cases the first page or two of the file is blank. These files are in the process of being revised and should not be quoted publicly.\" \n\nSo, it seems that I can not cite the theorems from his book. Or is the numbering in the printed version the same?\n\n> There is also an addition formula: see A1.4.5 in Ravenel.  If you can provide doctests for some of these in some examples, that would be great. \n\nThis theorem refers to the matric Massey product. If I understand correctly (but I am not an expert) what I implemented is not the matric version of the Massey products. So, can you explain how I can create an example out of Addition Theorem?\n\nBut the Juggling Theorem works:\n\n```\nsage: from pGroupCohomology import CohomologyRing\nsage: H = CohomologyRing.user_db(27,3)\nsage: H.make()\nsage: H.gens()\n[1,\n b_2_0, a 2-Cochain in H^*(E27; GF(3)),\n b_2_1, a 2-Cochain in H^*(E27; GF(3)),\n b_2_2, a 2-Cochain in H^*(E27; GF(3)),\n b_2_3, a 2-Cochain in H^*(E27; GF(3)),\n c_6_8, a 6-Cochain in H^*(E27; GF(3)),\n a_1_0, a 1-Cochain in H^*(E27; GF(3)),\n a_1_1, a 1-Cochain in H^*(E27; GF(3)),\n a_3_4, a 3-Cochain in H^*(E27; GF(3)),\n a_3_5, a 3-Cochain in H^*(E27; GF(3))]\nsage: H.massey_products(H.6,H.6,H.6,all=False)\nset([-b_2_0, a 2-Cochain in H^*(E27; GF(3))])\nsage: H.massey_products(H.1*H.6,H.6,H.6,all=False)\nset([-b_2_0^2, a 4-Cochain in H^*(E27; GF(3))])\nsage: H.massey_products(H.2*H.6,H.6,H.6,all=False)\nset([-b_2_0*b_2_1, a 4-Cochain in H^*(E27; GF(3))])\nsage: H.massey_products(H.3*H.6,H.6,H.6,all=False)\nset([-b_2_0*b_2_2, a 4-Cochain in H^*(E27; GF(3))])\nsage: H.massey_products(H.4*H.6,H.6,H.6,all=False)\nset([-b_2_0*b_2_1, a 4-Cochain in H^*(E27; GF(3))])\n```\n\nThere is no sign change, since we multiplied by cocycles of even degree. So far, so easy. \n\nBut now comes the really interesting example:\n\n```\nsage: H.massey_products(H.6,H.6,H.6*H.5,all=False)\nset([-b_2_0^2*a_1_1*a_3_5+b_2_0^2*a_1_0*a_3_5-b_2_0*c_6_8, a 8-Cochain in H^*(E27; GF(3))])\n```\n\n\nIs this fine?\n\nYes, it is!\n\nNote that there is the summand `-b_2_0*c_6_8` that we would expect. There remains to show that the other summands belong to the indeterminacy of the Massey product. More precisely, I want to show that `-b_2_0<sup>2*a_1_1*a_3_5+b_2_0</sup>2*a_1_0*a_3_5` is a multiple of `H.6`.\n\n\n```\nsage: H.6*(2*H.8*H.2*H.2+2*H.8*H.1*H.2 + H.1^2*H.9) == H('-b_2_0^2*a_1_1*a_3_5+b_2_0^2*a_1_0*a_3_5')\nTrue\n```\n\n\nI think this would be a nice example for the doc string of COHO.massey_products!",
     "created_at": "2009-09-10T16:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55585",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55483",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1764,15 +1762,15 @@ I think this would be a nice example for the doc string of COHO.massey_products!
 
 ---
 
-archive/issue_comments_055586.json:
+archive/issue_comments_055484.json:
 ```json
 {
     "body": "Replying to [comment:43 SimonKing]:\n[...]\n> I think this would be a nice example for the doc string of COHO.massey_products!\n\nDone! The package is updated, and the new test can be found at http://sage.math.washington.edu/home/SimonKing/Cohomology/cohomology.html#pGroupCohomology.cohomology.COHO.massey_products .\n\nDoc tests pass, at least for Intel Mac 64 bit.\n\nCheers,\nSimon",
     "created_at": "2009-09-10T18:04:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55586",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55484",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1791,15 +1789,15 @@ Simon
 
 ---
 
-archive/issue_comments_055587.json:
+archive/issue_comments_055485.json:
 ```json
 {
     "body": "Replying to [comment:43 SimonKing]:\n> Dear John,\n> \n> Replying to [comment:42 jhpalmieri]:\n> > There is a theorem for it.  Look in *Complex cobordism and stable homotopy groups of spheres* by Ravenel, Appendix A1.4.  \n> > According to A1.4.6, up to a sign, b<x1, x2, ...> is contained in <bx1, x2, ...>, and similarly for the last position. \n> \n> Thank you for your hint!\n> \n> Ravenel says \"In most cases the first page or two of the file is blank. These files are in the process of being revised and should not be quoted publicly.\" \n> \n> So, it seems that I can not cite the theorems from his book. Or is the numbering in the printed version the same?\n\nThe numbering I gave you is from the first edition of the book; the numbering in the on-line version is from a pre-print of the second edition, which has now been published.  I would guess that the numbering is probably the same in the published version of the second edition, but you could also just say \"Section A1.4\".\n\n> > There is also an addition formula: see A1.4.5 in Ravenel.  If you can provide doctests for some of these in some examples, that would be great. \n> \n> This theorem refers to the matric Massey product. If I understand correctly (but I am not an expert) what I implemented is not the matric version of the Massey products. So, can you explain how I can create an example out of Addition Theorem?\n\nYou're right, I'm not sure what to do with the matrices there.  But doctests for the juggling theorem are great -- thanks!\n\nI'm not good enough with group cohomology to come up with other examples to test this out; I think your doctests (and the evidence of the success of the juggling theorems) is enough for me to give this a positive review.",
     "created_at": "2009-09-10T20:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55587",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55485",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1830,15 +1828,15 @@ I'm not good enough with group cohomology to come up with other examples to test
 
 ---
 
-archive/issue_comments_055588.json:
+archive/issue_comments_055486.json:
 ```json
 {
     "body": "Trying to update some technical informations (milestone, reviewers). I hope I chose the right format (namely to give the real names, not the user names).\n\nQuestion: Must the people listed as reviewers have a Trac account, or does it suffice if they contributed off list? Namely, working on examples suggested by David Green and Mikael Vejdemo Johansson resulted in fixing some bugs and creating new doc tests. So, can they be named in the reviewer list as well? I think I'll ask sage-devel.\n\nIf you agree and want to add their names, note that Mikael's family name has two parts *without* hyphen, and Vejdemo is *not* a middle name. So, AFAIK, he would neither like \"Mikael V. Johansson\" nor \"Mikael Johansson\"...",
     "created_at": "2009-09-11T08:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55588",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55486",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1852,15 +1850,15 @@ If you agree and want to add their names, note that Mikael's family name has two
 
 ---
 
-archive/issue_comments_055589.json:
+archive/issue_comments_055487.json:
 ```json
 {
     "body": "On sage-devel, Minh said that it seems reasonable to mention David and Mikael as reviewers. I do it so.",
     "created_at": "2009-09-11T13:10:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55589",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55487",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1870,15 +1868,15 @@ On sage-devel, Minh said that it seems reasonable to mention David and Mikael as
 
 ---
 
-archive/issue_comments_055590.json:
+archive/issue_comments_055488.json:
 ```json
 {
     "body": "Minh elaborated on sage-devel that the \"Author(s)\" field of a ticket is not for the authors of the *ticket* but for the authors of the *code* that the ticket refers to. My misunderstanding was that naming the authors of the code in the code's documentation and in the Sage release tour is what really counts.\n\nSo, I am moving David Green from \"Reviewer(s)\" to \"Author(s)\".",
     "created_at": "2009-09-11T14:33:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55590",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55488",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1890,15 +1888,15 @@ So, I am moving David Green from "Reviewer(s)" to "Author(s)".
 
 ---
 
-archive/issue_comments_055591.json:
+archive/issue_comments_055489.json:
 ```json
 {
     "body": "Merged in the optional packages repository at\n\nhttp://www.sagemath.org/packages/optional/\n\nThe updated optional package can be found at \n\nhttp://www.sagemath.org/packages/optional/p_group_cohomology-1.1.spkg",
     "created_at": "2009-09-11T17:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55591",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55489",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1914,15 +1912,15 @@ http://www.sagemath.org/packages/optional/p_group_cohomology-1.1.spkg
 
 ---
 
-archive/issue_comments_055592.json:
+archive/issue_comments_055490.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-11T17:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6750",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55592",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6750#issuecomment-55490",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

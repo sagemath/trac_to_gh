@@ -6,15 +6,14 @@ archive/issues_000381.json:
     "body": "Assignee: @williamstein\n\n\n```\nOn May 28, 5:11 pm, Marshall Hampton <hampto...@gmail.com> wrote:\n> This is more of a unixy process control question but I am applying it\n> to sage.\n>\n> I would like to start a notebook on my office machine while I am at a\n> conference.  I tried logging in with ssh, starting the notebook,\n> suspending it with ctrl-z, and then putting the suspended process in\n> the background with bg.  This didn't really work, although I could\n> still restart the notebook server with a browser.  I could figure this\n> out eventually but I am hoping someone reading this list already knows\n> how to do this.\n\nThere are several options:\n\n1) use screen - see www.gnu.org/software/screen/\n2) use nohup - see man nohup\n3) use disown - see http://www.faqs.org/docs/bashman/bashref_79.html\n\nAll have their specific advantages, I would just go with screen.\n\nIt might be worthwhile to offer an option for SAGE to demonize itself.\n\nCheers,\nMichael Abshoff\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/381\n\n",
     "created_at": "2007-05-28T21:14:39Z",
     "labels": [
-        "user interface",
-        "minor",
-        "enhancement"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SAGE daemon mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/381",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/381
 
 ---
 
-archive/issue_comments_001844.json:
+archive/issue_comments_001836.json:
 ```json
 {
     "body": "\n```\n\n\nWell, the idea is to detach the running SAGE instance from the shell\nto let it run in the background until it is killed or the system is\nrebooted.\n\nThere is more than one way to do it: For a good C example see\nhttp://www.enderunix.org/docs/eng/daemon.php - for a python example\nsee http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/66012\n\nThe python example could be more or less copied (I guess because I am\nnot a python expert), but it should be done very early in the SAGE\nstartup as far as I can tell. Writing a little C wrapper that just\ndoes\n\n i=fork();\n if (i<0) exit(1); /* fork error */\n if (i>0) exit(0); /* parent exits */\n /* child (daemon) continues */\n execv(\"./sage\");\n\nmight be easier.\n```\n",
     "created_at": "2007-05-28T22:43:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1844",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1836",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -99,15 +98,15 @@ might be easier.
 
 ---
 
-archive/issue_comments_001845.json:
+archive/issue_comments_001837.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2007-08-23T11:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1845",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1837",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -117,15 +116,15 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_comments_001846.json:
+archive/issue_comments_001838.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-23T11:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1846",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1838",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -135,15 +134,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_001847.json:
+archive/issue_comments_001839.json:
 ```json
 {
     "body": "Look at #7893 ([http://trac.sagemath.org/sage_trac/ticket/7893](http://trac.sagemath.org/sage_trac/ticket/7893)).\n\nIt would be good to incorporate the idea of the example to the script in the previous ticket.",
     "created_at": "2010-10-17T04:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1847",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1839",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -155,15 +154,15 @@ It would be good to incorporate the idea of the example to the script in the pre
 
 ---
 
-archive/issue_comments_001848.json:
+archive/issue_comments_001840.json:
 ```json
 {
     "body": "Ping.\n\nThe Sage Installation Guide currently lacks this topic.  (There's only a reference from the [online FAQ](http://wiki.sagemath.org/faq#Other_questions) to *this* ticket.)",
     "created_at": "2012-12-02T16:06:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1848",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1840",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -175,15 +174,15 @@ The Sage Installation Guide currently lacks this topic.  (There's only a referen
 
 ---
 
-archive/issue_comments_001849.json:
+archive/issue_comments_001841.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"Sage server background process service\".",
     "created_at": "2012-12-02T16:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1849",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1841",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -193,15 +192,15 @@ Changing keywords from "" to "Sage server background process service".
 
 ---
 
-archive/issue_comments_001850.json:
+archive/issue_comments_001842.json:
 ```json
 {
     "body": "What's wrong with nohup? It does exactly what you want, why add a Sage option to emulate nohup?",
     "created_at": "2013-06-13T12:23:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1850",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1842",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -211,15 +210,15 @@ What's wrong with nohup? It does exactly what you want, why add a Sage option to
 
 ---
 
-archive/issue_comments_001851.json:
+archive/issue_comments_001843.json:
 ```json
 {
     "body": "I think nohup doesn't daemonize.  There is a long list of things that should happen when a process is damonized:\n\n     http://en.wikipedia.org/wiki/Daemon_(computing) \n\nThe right way to solve this problem would almost certainly involve including this Python module:  https://pypi.python.org/pypi/python-daemon/",
     "created_at": "2013-06-13T16:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1851",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1843",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -233,15 +232,15 @@ The right way to solve this problem would almost certainly involve including thi
 
 ---
 
-archive/issue_comments_001852.json:
+archive/issue_comments_001844.json:
 ```json
 {
     "body": "Replying to [comment:8 was]:\n> I think nohup doesn't daemonize.\nTrue, `nohup` itself doesn't daemonize. But normally you would do\n\n```\n$ nohup sage -n &\n```\n\nIt's the `&` at the end which does the \"daemonization\".\n\n> There is a long list of things that should happen when a process is damonized:\n> \n>      http://en.wikipedia.org/wiki/Daemon_(computing) \nThis refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n\nSo it's not clear to me what would be needed for a Sage daemon which is not covered by\n\n```\n$ nohup sage &\n```\n",
     "created_at": "2013-06-13T18:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1852",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1844",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -271,15 +270,15 @@ $ nohup sage &
 
 ---
 
-archive/issue_comments_001853.json:
+archive/issue_comments_001845.json:
 ```json
 {
     "body": "> This refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n\nI think traditional daemonization is the right way to solve this problem.  Moreover, it would be a useful step for making it easy to run a sage server as part of the usual system-wide daemons on Unix.",
     "created_at": "2013-06-13T18:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1853",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1845",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -291,15 +290,15 @@ I think traditional daemonization is the right way to solve this problem.  Moreo
 
 ---
 
-archive/issue_comments_001854.json:
+archive/issue_comments_001846.json:
 ```json
 {
     "body": "Replying to [comment:10 was]:\n> it would be a useful step for making it easy to run a sage server as part of the usual system-wide daemons on Unix. \nWhich is #7893, this ticket seems to be about single-user use.",
     "created_at": "2013-06-13T18:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1854",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1846",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -311,15 +310,15 @@ Which is #7893, this ticket seems to be about single-user use.
 
 ---
 
-archive/issue_comments_001855.json:
+archive/issue_comments_001847.json:
 ```json
 {
     "body": "Replying to [comment:9 jdemeyer]:\n> Replying to [comment:8 was]:\n> > I think nohup doesn't daemonize.\n> True, `nohup` itself doesn't daemonize. But normally you would do\n> {{{\n> $ nohup sage -n &\n> }}}\n> It's the `&` at the end which does the \"daemonization\".\n> \n> > There is a long list of things that should happen when a process is damonized:\n> > \n> >      http://en.wikipedia.org/wiki/Daemon_(computing) \n> This refers to traditional Unix daemons, which would be quite different from a Sage \"daemon\" started by an ordinary user.\n> \n> So it's not clear to me what would be needed for a Sage daemon which is not covered by\n> {{{\n> $ nohup sage &\n> }}}\n\nWell, you'd at least also have to `>/dev/null`.\n\nInherited file descriptors other than 0, 1 and 2 are left untouched.\n\n`nohup` doesn't change the working directory, nor e.g. modify the umask.\n\nThe background process doesn't get adopted by `init` until you logout, and similar process group specific stuff I think.\n\n(...)",
     "created_at": "2013-06-13T18:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1855",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1847",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -356,15 +355,15 @@ The background process doesn't get adopted by `init` until you logout, and simil
 
 ---
 
-archive/issue_comments_001856.json:
+archive/issue_comments_001848.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2016-03-23T04:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1856",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1848",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -374,15 +373,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_001857.json:
+archive/issue_comments_001849.json:
 ```json
 {
     "body": "The problem that this ticket deals with is nowadays solved by using the OS tools such as Upstart in Ubuntu for example. So I think there needs no further discussion on this matter.",
     "created_at": "2016-03-23T04:38:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1857",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1849",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -392,15 +391,15 @@ The problem that this ticket deals with is nowadays solved by using the OS tools
 
 ---
 
-archive/issue_comments_001858.json:
+archive/issue_comments_001850.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2016-04-16T18:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1858",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1850",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -410,15 +409,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_001859.json:
+archive/issue_comments_001851.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2016-06-12T12:02:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/381",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1859",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/381#issuecomment-1851",
+    "user": "https://github.com/vbraun"
 }
 ```
 

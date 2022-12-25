@@ -6,15 +6,13 @@ archive/issues_000743.json:
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nThe functionality for associating any vertex of a graph with an arbitrary object is very nice.  However, it seems like the implementation could be simplified.  Can we implement an interface that does the following?\n\n* Makes it easy to assign an object to a single vertex, multiple vertices, or all vertices.  (Currently, you must assign the entire graph at once).\n\n* Makes it easy to retrieve an object associated with a vertex or multiple objects associated with multiple vertices (currently we can only retrieve one vertex at a time).\n\n* Has symmetry in the get/set functions (currently there is an \"associate\" and a \"obj\" function).\n\nIt seems that the simplest way to deal with multiple vertices is to use a dictionary, as is currently done, to associate a set of vertices with their corresponding objects.\n\nHere's an example of a possible idea:\n\n\n```\n  sage: g=Graph();\n  sage: g.add_vertices(10);\n  sage: g.set_vertices({0: 'vertex0', 1: 'vertex1'})\n  sage: g.set_vertex({3: 'vertex3'})\n  sage: g.set_vertex(4,'vertex4')\n  sage: g.get_vertices()\n  {0: 'vertex0', 1: 'vertex1', 3: 'vertex3', 4: 'vertex4'}\n  sage: g.get_vertex(0)\n  'vertex0'\n  sage: g.get_vertices([0,1])\n  {0: 'vertex0', 1: 'vertex1'}\n```\n\n\nOf course, in the above example, the strings could have been replaced with any objects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/743\n\n",
     "created_at": "2007-09-24T18:12:25Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "graphs: simplify interface for accessing vertex objects",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/743",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -59,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/743
 
 ---
 
-archive/issue_comments_004348.json:
+archive/issue_comments_004333.json:
 ```json
 {
     "body": "Additional comments, stemming from Chris Godsil's wishlist:\n\n\n```\n>>> (c) Edge-colored graphs: A graph and functions from its edges to an index\n>>> set, and vice versa. These could also be represented as a set of\n>>> matchings,\n>>> and this data structure can be used to represent maps on surfaces.\n>> I think we should make a nice system for attaching arbitrary metadata to\n>> vertices and edges of a graph. Something like an attribute dictionary\n>> for each vertex and edge.\n> There is an existing trac ticket for improving the vertex association\n> setup- most likely these comments should just go on that ticket. Any\n> object at all can be the label for an edge, so I don't think there is\n> too much to do here.\n```\n",
     "created_at": "2007-11-28T19:47:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4348",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4333",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -93,15 +91,15 @@ Additional comments, stemming from Chris Godsil's wishlist:
 
 ---
 
-archive/issue_comments_004349.json:
+archive/issue_comments_004334.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-02T04:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4349",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4334",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -111,15 +109,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_004350.json:
+archive/issue_comments_004335.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @rlmill.",
     "created_at": "2007-12-02T04:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4350",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4335",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -129,15 +127,15 @@ Changing assignee from @williamstein to @rlmill.
 
 ---
 
-archive/issue_comments_004351.json:
+archive/issue_comments_004336.json:
 ```json
 {
     "body": "Changing keywords from \"graphs\" to \"\".",
     "created_at": "2007-12-17T15:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4351",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4336",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -147,15 +145,15 @@ Changing keywords from "graphs" to "".
 
 ---
 
-archive/issue_comments_004352.json:
+archive/issue_comments_004337.json:
 ```json
 {
     "body": "Changing component from combinatorics to graph theory.",
     "created_at": "2007-12-17T15:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4352",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4337",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -165,15 +163,15 @@ Changing component from combinatorics to graph theory.
 
 ---
 
-archive/issue_comments_004353.json:
+archive/issue_comments_004338.json:
 ```json
 {
     "body": "See the recent discussion on the networkx mailing list at:\n\nhttp://groups.google.com/group/networkx-discuss/browse_thread/thread/3fdfe1956c6e915?hl=en\n\nfor some comments on labels for vertices.",
     "created_at": "2008-01-19T06:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4353",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4338",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -187,15 +185,15 @@ for some comments on labels for vertices.
 
 ---
 
-archive/issue_comments_004354.json:
+archive/issue_comments_004339.json:
 ```json
 {
     "body": "Attachment [vertex_association.hg](tarball://root/attachments/some-uuid/ticket743/vertex_association.hg) by @rlmill created at 2008-01-27 02:06:27",
     "created_at": "2008-01-27T02:06:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4354",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4339",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -205,15 +203,15 @@ Attachment [vertex_association.hg](tarball://root/attachments/some-uuid/ticket74
 
 ---
 
-archive/issue_comments_004355.json:
+archive/issue_comments_004340.json:
 ```json
 {
     "body": "I don't know why the first two diffs on the patch are necessary, but the relevant changes are in the last two.",
     "created_at": "2008-01-27T02:08:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4355",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4340",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -223,15 +221,15 @@ I don't know why the first two diffs on the patch are necessary, but the relevan
 
 ---
 
-archive/issue_comments_004356.json:
+archive/issue_comments_004341.json:
 ```json
 {
     "body": "Code looks good; doctests pass.",
     "created_at": "2008-01-27T02:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4356",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4341",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -241,15 +239,15 @@ Code looks good; doctests pass.
 
 ---
 
-archive/issue_comments_004357.json:
+archive/issue_comments_004342.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc1",
     "created_at": "2008-01-27T02:47:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4357",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4342",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -259,15 +257,15 @@ Merged in Sage 2.10.1.rc1
 
 ---
 
-archive/issue_comments_004358.json:
+archive/issue_comments_004343.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-27T02:47:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4358",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4343",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -277,15 +275,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_004359.json:
+archive/issue_comments_004344.json:
 ```json
 {
     "body": "Attachment [trac-743-fix.patch](tarball://root/attachments/some-uuid/ticket743/trac-743-fix.patch) by cwitty created at 2008-01-27 04:14:27",
     "created_at": "2008-01-27T04:14:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4359",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4344",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -295,15 +293,15 @@ Attachment [trac-743-fix.patch](tarball://root/attachments/some-uuid/ticket743/t
 
 ---
 
-archive/issue_comments_004360.json:
+archive/issue_comments_004345.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-01-27T04:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4360",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4345",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -313,15 +311,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_004361.json:
+archive/issue_comments_004346.json:
 ```json
 {
     "body": "The attached trac-743-fix.patch fixes the fallout from this patch in ell_rational_field.py .",
     "created_at": "2008-01-27T04:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4361",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4346",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -331,15 +329,15 @@ The attached trac-743-fix.patch fixes the fallout from this patch in ell_rationa
 
 ---
 
-archive/issue_comments_004362.json:
+archive/issue_comments_004347.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-01-27T04:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4362",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4347",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -349,15 +347,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_004363.json:
+archive/issue_comments_004348.json:
 ```json
 {
     "body": "trac-743-fix.patch looks good to me. Merged in Sage 2.10.1.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-27T04:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4363",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4348",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -371,15 +369,15 @@ Michael
 
 ---
 
-archive/issue_comments_004364.json:
+archive/issue_comments_004349.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-27T04:20:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/743",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4364",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/743#issuecomment-4349",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

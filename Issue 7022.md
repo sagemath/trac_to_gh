@@ -6,7 +6,7 @@ archive/issues_007022.json:
     "body": "Assignee: @williamstein\n\nThis is a huge problem and total blocker:\n\n```\nflat:.matplotlib wstein$ mv fontList.cache fontList.cache.XXX\nflat:.matplotlib wstein$ cd\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: parallel\nsage: import pylab\n/Users/wstein/sage/build/64bit/sage/local/bin/sage-sage: line 199: 58213 Abort trap              sage-ipython \"$@\" -i\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nflat:.matplotlib wstein$ mv fontList.cache.XXX fontList.cache\nflat:.matplotlib wstein$ cd ..\nflat:~ wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: parallel\nsage: import pylab\nsage: \n```\n\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\nIdeas for solution: \n\n  (1) track down exactly where the problem happens in the matplotlib/freetype(?) code and fix it.\n\n  (2) Just ship the font cache with Sage until this gets resolved upstream.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7022\n\n",
     "created_at": "2009-09-27T01:34:49Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007022.json:
     "title": "os x -- 10.6 -- generated the matplotlib font cache crashes sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7022",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -58,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7022
 
 ---
 
-archive/issue_comments_058147.json:
+archive/issue_comments_058038.json:
 ```json
 {
     "body": "The spkg is here:\n\n    http://wstein.org/home/wstein/patches/matplotlib-0.99.1.p1.spkg\n\nThis supersedes what is at #6994.\n\nThe attached package *only* patches Matplotlib on OS X 10.6 by changing one line to use",
     "created_at": "2009-09-27T03:43:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58147",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58038",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -82,15 +82,15 @@ The attached package *only* patches Matplotlib on OS X 10.6 by changing one line
 
 ---
 
-archive/issue_comments_058148.json:
+archive/issue_comments_058039.json:
 ```json
 {
     "body": "Doctesting reveals that just using FONTCONFIG is not enough, e.g., any saving to pdf still breaks. \n\nHere is the problem narrowed down more:\n\n```\nsage: import ft2font; ft2font.FT2Font('/Library/Fonts/NISC18030.ttf')\n/Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/local/bin/sage-sage: line 199: 65960 Abort trap              sage-ipython \"$@\" -i\n```\n\n\nft2font.so is a C extension in matplotlib.",
     "created_at": "2009-09-27T04:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58148",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58039",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -110,15 +110,15 @@ ft2font.so is a C extension in matplotlib.
 
 ---
 
-archive/issue_comments_058149.json:
+archive/issue_comments_058040.json:
 ```json
 {
     "body": "above it should be\n\n```\nsage: import matplotlib.ft2font; ft2font.FT2Font('/Library/Fonts/NISC18030.ttf')\n/Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/local/bin/sage-sage: line 199: 65960 Abort trap    \n```\n",
     "created_at": "2009-09-27T04:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58149",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58040",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -134,15 +134,15 @@ sage: import matplotlib.ft2font; ft2font.FT2Font('/Library/Fonts/NISC18030.ttf')
 
 ---
 
-archive/issue_comments_058150.json:
+archive/issue_comments_058041.json:
 ```json
 {
     "body": "How about\n\n```\nimport matplotlib.ft2font; matplotlib.ft2font.FT2Font('/Library/Fonts/NISC18030.ttf')\n```\n",
     "created_at": "2009-09-27T04:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58150",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58041",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -157,15 +157,15 @@ import matplotlib.ft2font; matplotlib.ft2font.FT2Font('/Library/Fonts/NISC18030.
 
 ---
 
-archive/issue_comments_058151.json:
+archive/issue_comments_058042.json:
 ```json
 {
     "body": "I found yet another issue (X11 must be in the PATH), but this spkg fixes that issue too:\n\n  http://wstein.org/home/wstein/patches/matplotlib-0.99.1.p1.spkg",
     "created_at": "2009-09-27T06:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58151",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58042",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -177,15 +177,15 @@ I found yet another issue (X11 must be in the PATH), but this spkg fixes that is
 
 ---
 
-archive/issue_comments_058152.json:
+archive/issue_comments_058043.json:
 ```json
 {
     "body": "OK, even this doesn't fix the problem on all machines.  E.g., on bsd.math.washington.edu it does not fix the problem.",
     "created_at": "2009-09-28T03:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58152",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58043",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -195,15 +195,15 @@ OK, even this doesn't fix the problem on all machines.  E.g., on bsd.math.washin
 
 ---
 
-archive/issue_comments_058153.json:
+archive/issue_comments_058044.json:
 ```json
 {
     "body": "Comment -- upgrading freetype doesn't fix the problems at all.  Also, upgrading freetype is itself broken, and the only workaround that I found that worked was to alias \"rm\" to be \"rm -f\" -- then freetype built and installed fine.",
     "created_at": "2009-09-28T04:21:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58153",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58044",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -213,15 +213,15 @@ Comment -- upgrading freetype doesn't fix the problems at all.  Also, upgrading 
 
 ---
 
-archive/issue_comments_058154.json:
+archive/issue_comments_058045.json:
 ```json
 {
     "body": "See http://groups.google.com/group/sage-devel/browse_thread/thread/2c538915abc99946",
     "created_at": "2009-09-30T04:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58154",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58045",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -231,15 +231,15 @@ See http://groups.google.com/group/sage-devel/browse_thread/thread/2c538915abc99
 
 ---
 
-archive/issue_comments_058155.json:
+archive/issue_comments_058046.json:
 ```json
 {
     "body": "This spkg fixes the problems on all my test systems:\n\n   http://sage.math.washington.edu/home/wstein/patches/matplotlib-0.99.1.p2.spkg\n\nAll it does is take the plane vanilla matplotlib-0.99.1.spkg spkg and add a little script that simply rebuilds f2font.so again using *exactly* the same command lines used by distutils to build that extension.  That's it.  For some reason -- probably involving environment variables (?) -- this fixes the problem.  I consider this a temporary 1-sage release solution until the matplotlib developers (or me) come up with a real fix.",
     "created_at": "2009-09-30T04:49:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58155",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58046",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -253,15 +253,15 @@ All it does is take the plane vanilla matplotlib-0.99.1.spkg spkg and add a litt
 
 ---
 
-archive/issue_comments_058156.json:
+archive/issue_comments_058047.json:
 ```json
 {
     "body": "By the way, here is a simple test that things are working:\n\n```\nsage: import pylab\nsage: plot(sin).save('a.pdf')\n```\n",
     "created_at": "2009-09-30T04:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58156",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58047",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -277,15 +277,15 @@ sage: plot(sin).save('a.pdf')
 
 ---
 
-archive/issue_comments_058157.json:
+archive/issue_comments_058048.json:
 ```json
 {
     "body": "Looks good to me.  Everything worked for me on bsd.",
     "created_at": "2009-09-30T05:31:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58157",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58048",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -295,15 +295,15 @@ Looks good to me.  Everything worked for me on bsd.
 
 ---
 
-archive/issue_comments_058158.json:
+archive/issue_comments_058049.json:
 ```json
 {
     "body": "Merged `matplotlib-0.99.1.p2.spkg` in the standard packages repository.",
     "created_at": "2009-09-30T12:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58158",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58049",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -313,15 +313,15 @@ Merged `matplotlib-0.99.1.p2.spkg` in the standard packages repository.
 
 ---
 
-archive/issue_comments_058159.json:
+archive/issue_comments_058050.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-30T12:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58159",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58050",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -331,15 +331,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_058160.json:
+archive/issue_comments_058051.json:
 ```json
 {
     "body": "I'm still getting a crash with lines like these:\n\n```\nsage: import pylab\nsage: plot(sin).save('a.pdf')\n```\n\nI made a related comment at #7095 because I didn't know about this ticket.  Also, as opposed to this ticket, #7095 is still open, so further discussion should continue there (or on a new ticket?).",
     "created_at": "2009-12-21T17:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58160",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58051",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -356,15 +356,15 @@ I made a related comment at #7095 because I didn't know about this ticket.  Also
 
 ---
 
-archive/issue_comments_058161.json:
+archive/issue_comments_058052.json:
 ```json
 {
     "body": "The matplotlib problem may be in its spkg file: it says\n\n```\nif [ $UNAME = \"Darwin\" -a `uname -r` = \"10.0.0\" ]; then\n    echo \"Running a horrible hack to force ft2font.so to build in a way that doen't crash.\"\n    echo \"This is of course temporary.  See http://trac.sagemath.org/sage_trac/ticket/7022\"\n    ../patches/osx10.6hack\nfi\n```\n\nBut with my computer, \"uname -r\" returns \"10.2.0\", not \"10.0.0\".  How do you modify a shell script like this to make it work for a range of version numbers?  (We don't just want \"10.0.0\" or \"10.2.0\", I'm guessing.)",
     "created_at": "2010-01-06T04:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58161",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7022#issuecomment-58052",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003453.json:
     "body": "Assignee: cwitty\n\nCode from William to allow one to pickle functions. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3453\n\n",
     "created_at": "2008-06-18T00:05:15Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] add function pickling to sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3453",
-    "user": "@yqiang"
+    "user": "https://github.com/yqiang"
 }
 ```
 Assignee: cwitty
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3453
 
 ---
 
-archive/issue_comments_024349.json:
+archive/issue_comments_024300.json:
 ```json
 {
     "body": "Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpickle.patch) by @williamstein created at 2008-06-18 00:24:55",
     "created_at": "2008-06-18T00:24:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24349",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24300",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [fpickle.patch](tarball://root/attachments/some-uuid/ticket3453/fpick
 
 ---
 
-archive/issue_comments_024350.json:
+archive/issue_comments_024301.json:
 ```json
 {
     "body": "Attachment [sage-3453-part2.patch](tarball://root/attachments/some-uuid/ticket3453/sage-3453-part2.patch) by @williamstein created at 2008-06-18 06:16:33\n\npart 2 of 2  -- this adds full doctests.",
     "created_at": "2008-06-18T06:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24350",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24301",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +66,15 @@ part 2 of 2  -- this adds full doctests.
 
 ---
 
-archive/issue_comments_024351.json:
+archive/issue_comments_024302.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-23T09:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24351",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24302",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_024352.json:
+archive/issue_comments_024303.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha0",
     "created_at": "2008-06-23T09:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3453",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24352",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3453#issuecomment-24303",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_006776.json:
     "body": "Assignee: mhampton\n\nThis patch allows to\n\n- use plot3d for 1- and 2-dimensional polytopes\n\n- specify different colors for different facets\n\n- specify labels for vertices other than their numbers\n\n\n```\nsage: lattice_polytope.octahedron(2).plot3d(vlabels=[\"A\", \"B\", \"C\", \"D\"])\nsage: o = lattice_polytope.octahedron(3)\nsage: o.plot3d(facet_colors=sage.plot.plot.rainbow(o.nfacets(), 'rgbtuple'))\n```\n\n\nThe positioning of labels is slightly improved 0 they are now shifted away from the barycenter of the polytope, not just the origin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6776\n\n",
     "created_at": "2009-08-19T20:11:21Z",
     "labels": [
-        "geometry",
-        "major",
-        "enhancement"
+        "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] plot3d improvement for lattice polytopes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6776",
-    "user": "@novoselt"
+    "user": "https://github.com/novoselt"
 }
 ```
 Assignee: mhampton
@@ -45,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6776
 
 ---
 
-archive/issue_comments_055817.json:
+archive/issue_comments_055715.json:
 ```json
 {
     "body": "Attachment [trac_6776_plot3d_improvement_for_lattice_polytope.patch](tarball://root/attachments/some-uuid/ticket6776/trac_6776_plot3d_improvement_for_lattice_polytope.patch) by @novoselt created at 2009-08-19 20:14:24",
     "created_at": "2009-08-19T20:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55817",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55715",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -63,15 +61,15 @@ Attachment [trac_6776_plot3d_improvement_for_lattice_polytope.patch](tarball://r
 
 ---
 
-archive/issue_comments_055818.json:
+archive/issue_comments_055716.json:
 ```json
 {
     "body": "Looks good, passes tests and coverage.  I did notice that the code for vertices for 1-D polytopes is broken in plot3d.  I.e., the line:\n\n```\nvertices = [vector(ZZ, list(self.vertex(i))+[0]*(3-dim)) for i in range(self.nvertices())]\n```\n\n\nraises an error, but it isn't the fault of this code.  It turns out that line3d can modify the type of its arguments, which is a totally separate bug which I will make a new ticket for.  So I think that issue is OK for this patch, it should get resolved separately.\n\nI do have one comment about the vertex labels - if the vertex is at the barycenter, then it isn't shifted at all and the label is right on top of the vertex point.  Since its not directly addressed by this patch I don't think that should affect this review though.\n\nAlso, someday soon the polytope code should be unified (i.e. in polyhedra.py and lattice_polytope.py) and refactored.  There are so many functions in both that depend on dimension I think it does make sense to have a polytope-factory class with dimension-specific subclasses.  But that will be a relatively big job and it will be almost impossible not to break backward compatibility.",
     "created_at": "2009-09-22T17:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55818",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55716",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -92,15 +90,15 @@ Also, someday soon the polytope code should be unified (i.e. in polyhedra.py and
 
 ---
 
-archive/issue_comments_055819.json:
+archive/issue_comments_055717.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-22T21:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55819",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55717",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -110,15 +108,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_055820.json:
+archive/issue_comments_055718.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on the making the notebook a standalone package.",
     "created_at": "2009-09-27T09:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6776",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55820",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6776#issuecomment-55718",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

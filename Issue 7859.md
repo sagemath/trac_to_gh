@@ -6,15 +6,14 @@ archive/issues_007859.json:
     "body": "Assignee: @aghitza\n\n\n```\nThe code\n\nR.<x> = AA[]\nv1 = QQbar.polynomial_root(AA.common_polynomial(x^4 + 3*x^2 + 1),\\\n CIF(RIF(-RR(2.7018838812806391e-55), RR(2.5616917931009833e-55)),\\\n RIF(RR(1.6180339887498947), RR(1.6180339887498949))))\nv2 = (2/3*v1^3 + 2/3*v1^2 + 4/3*v1 + 1).norm()\nsqrt(v2 - 1)\n\nyields the error\n\nNameError: global name 'AlgebriacNumber' is not defined\n\nApparently there is a small typo in line 3394 of the file qqbar.py\n\nBest regards,\n\n/H\u00e5kan\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7859\n\n",
     "created_at": "2010-01-06T19:45:02Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "bug in QQbar (easy to fix!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7859",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @aghitza
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7859
 
 ---
 
-archive/issue_comments_068120.json:
+archive/issue_comments_068003.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-06T20:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68120",
-    "user": "hgranath"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68003",
+    "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"
 }
 ```
 
@@ -68,15 +67,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_068121.json:
+archive/issue_comments_068004.json:
 ```json
 {
     "body": "\n```\n\nThat's known.  And it was  fixed by an earlier version of the patch at\n#6887 which was merged in 4.3.1.alpha1.  But I now see that that fix\nhas got lost, very strange.  It will need fixing again....\n\nJohn\n```\n",
     "created_at": "2010-01-06T20:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68121",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68004",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -95,15 +94,15 @@ John
 
 ---
 
-archive/issue_comments_068122.json:
+archive/issue_comments_068005.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-06T20:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68122",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68005",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -113,15 +112,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_068123.json:
+archive/issue_comments_068006.json:
 ```json
 {
     "body": "Can you add a doctest to the patch to exercise this bit of code?",
     "created_at": "2010-01-06T20:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68123",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68006",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -131,15 +130,15 @@ Can you add a doctest to the patch to exercise this bit of code?
 
 ---
 
-archive/issue_comments_068124.json:
+archive/issue_comments_068007.json:
 ```json
 {
     "body": "new version with doctest",
     "created_at": "2010-01-06T21:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68124",
-    "user": "hgranath"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68007",
+    "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"
 }
 ```
 
@@ -149,15 +148,15 @@ new version with doctest
 
 ---
 
-archive/issue_comments_068125.json:
+archive/issue_comments_068008.json:
 ```json
 {
     "body": "Attachment [trac_7859.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859.patch) by hgranath created at 2010-01-06 21:48:32",
     "created_at": "2010-01-06T21:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68125",
-    "user": "hgranath"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68008",
+    "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"
 }
 ```
 
@@ -167,15 +166,15 @@ Attachment [trac_7859.patch](tarball://root/attachments/some-uuid/ticket7859/tra
 
 ---
 
-archive/issue_comments_068126.json:
+archive/issue_comments_068009.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-06T21:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68126",
-    "user": "hgranath"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68009",
+    "user": "https://trac.sagemath.org/admin/accounts/users/hgranath"
 }
 ```
 
@@ -185,15 +184,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_068127.json:
+archive/issue_comments_068010.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-07T00:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68127",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68010",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -203,15 +202,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_068128.json:
+archive/issue_comments_068011.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-01-13T08:44:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68128",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68011",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -221,15 +220,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_068129.json:
+archive/issue_comments_068012.json:
 ```json
 {
     "body": "\n```\npatching file sage/rings/qqbar.py\nHunk #2 FAILED at 3392\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/qqbar.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7859.patch\n```\n",
     "created_at": "2010-01-13T08:44:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68129",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68012",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -248,15 +247,15 @@ errors during apply, please fix and refresh trac_7859.patch
 
 ---
 
-archive/issue_comments_068130.json:
+archive/issue_comments_068013.json:
 ```json
 {
     "body": "This issue seems to be fixed already in 4.3.1:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<x> = AA[]\nsage: v1 = QQbar.polynomial_root(AA.common_polynomial(x^4 + 3*x^2 + 1),\\\n....:  CIF(RIF(-RR(2.7018838812806391e-55), RR(2.5616917931009833e-55)),\\\n....:  RIF(RR(1.6180339887498947), RR(1.6180339887498949))))\nsage: \nsage: v2 = (2/3*v1^3 + 2/3*v1^2 + 4/3*v1 + 1).norm()\nsage: sqrt(v2 - 1)\n0\n```\n",
     "created_at": "2010-02-05T21:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68130",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68013",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -280,15 +279,15 @@ sage: sqrt(v2 - 1)
 
 ---
 
-archive/issue_comments_068131.json:
+archive/issue_comments_068014.json:
 ```json
 {
     "body": "I agree.  This is fixed.  Possibly the doctest should be added, though.\n\n\n```\n~/sage/devel/sage/sage/rings% grep AlgebriacNumber *\n~/sage/devel/sage/sage/rings%\n```\n",
     "created_at": "2010-05-26T15:26:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68131",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68014",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -305,15 +304,15 @@ I agree.  This is fixed.  Possibly the doctest should be added, though.
 
 ---
 
-archive/issue_comments_068132.json:
+archive/issue_comments_068015.json:
 ```json
 {
     "body": "Attachment [trac_7859-qqbar_sqrt_doctest.patch](tarball://root/attachments/some-uuid/ticket7859/trac_7859-qqbar_sqrt_doctest.patch) by @loefflerd created at 2010-06-29 09:23:16\n\napply only this patch",
     "created_at": "2010-06-29T09:23:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68132",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68015",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -325,15 +324,15 @@ apply only this patch
 
 ---
 
-archive/issue_comments_068133.json:
+archive/issue_comments_068016.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-29T09:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68133",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68016",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -343,15 +342,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_068134.json:
+archive/issue_comments_068017.json:
 ```json
 {
     "body": "Here's a tiny patch (based on 4.4.4 if it matters) containing just the doctest extracted from H\u00e5kan's patch, as Jason suggested.",
     "created_at": "2010-06-29T09:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68134",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68017",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -361,15 +360,15 @@ Here's a tiny patch (based on 4.4.4 if it matters) containing just the doctest e
 
 ---
 
-archive/issue_comments_068135.json:
+archive/issue_comments_068018.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-30T07:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68135",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68018",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -379,15 +378,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_068136.json:
+archive/issue_comments_068019.json:
 ```json
 {
     "body": "I'm entering a guess in the Reviewer(s) field.  Please correct it, if I'm wrong.",
     "created_at": "2010-07-20T09:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68136",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68019",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -397,15 +396,15 @@ I'm entering a guess in the Reviewer(s) field.  Please correct it, if I'm wrong.
 
 ---
 
-archive/issue_comments_068137.json:
+archive/issue_comments_068020.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T09:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68137",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7859#issuecomment-68020",
+    "user": "https://github.com/qed777"
 }
 ```
 

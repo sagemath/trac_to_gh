@@ -6,7 +6,7 @@ archive/issues_000433.json:
     "body": "Assignee: @williamstein\n\nKeywords: version root branch\n\n Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.\n\nUseful from the command line.\n\nVersion information is taken from sage-banner; I would prefer it to be taken from the mercurial tags, but these are not kept updated.\n\nThe root information is taken from the environment via sage-env.\n\nThe branch information is taken from readlink SAGE_ROOT/devel/sage.\n\nmero:~/sage/local/bin ncalexan$ sage -v\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -version\nSAGE Version 2.8, Release Date: 2007-08-12\n\nmero:~/sage/local/bin ncalexan$ sage -branch\nnca\n\nmero:~/sage/local/bin ncalexan$ sage -root\n/Users/ncalexan/sage\n\nIssue created by migration from https://trac.sagemath.org/ticket/433\n\n",
     "created_at": "2007-08-16T20:06:59Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000433.json:
     "title": "Add -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/433",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -51,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/433
 
 ---
 
-archive/issue_comments_002173.json:
+archive/issue_comments_002164.json:
 ```json
 {
     "body": "This thing won't let me attach a bundle, so here's the text of the trivial patch.\n\n\n```\n# HG changeset patch\n# User Nick Alexander <ncalexander@gmail.com>\n# Date 1187292085 25200\n# Node ID da40e197fbefada36d098a0c449e65c3622387e1\n# Parent  840d064e20ea5bdbce4f71bb5ea5af07025d6f1b\nAdd -version, -root, and -branch for printing version, SAGE_ROOT, and branch information.\n\ndiff -r 840d064e20ea -r da40e197fbef sage-sage\n--- a/sage-sage Sun Aug 12 18:17:20 2007 -0700\n+++ b/sage-sage Thu Aug 16 12:21:25 2007 -0700\n@@ -6,6 +6,7 @@ usage() {\n     echo \"-----------------------------------------------------------\"\n     echo \" Optional arguments:\"\n     echo \"  -h            -- print this help message\"\n+    echo \"  -v, -version  -- print the SAGE version\"\n     echo \"  -notebook [options] -- start the SAGE notebook (options are\"\n     echo \"                   the same as to the notebook command in SAGE)\"\n     echo \"  -inotebook [options] -- start the *insecure* SAGE notebook \"\n@@ -32,6 +33,7 @@ usage_advanced() {\n     echo \"  -ba [branch]  -- switch to, rebuild all Cython code, and run SAGE branch in devel/sage-branch\"\n     echo \"  -ba-force [branch] -- same as -ba, but don't query before rebuilding\"\n     echo \"  -bdist VER    -- build a binary distribution of SAGE\"\n+    echo \"  -branch       -- print the current SAGE branch\"\n     echo \"  -cleaner      -- run the SAGE cleaner\"\n     echo \"  -clisp [...]  -- run Common Lisp\"\n     echo \"  -clone [new branch] -- clone and run a new branch of the SAGE library from current branch\"\n@@ -62,6 +64,7 @@ usage_advanced() {\n     echo \"  -preparse <file.sage> -- produce corresponding file.sage.py \"\n     echo \"  -python       -- run the python interpreter\"\n     echo \"  -q            -- quiet; start with no banner\"\n+    echo \"  -root         -- print the SAGE root directory\"\n     echo \"  -sdist VER    -- build a source distribution of SAGE\"\n     echo \"  -singular <..>-- run SAGE's singular with given arguments\"\n     echo \"  -twistd <..>  -- run Twisted server\"\n@@ -203,6 +206,25 @@ fi\n fi\n \n #####################################################################\n+# Report information about the SAGE environment\n+#####################################################################\n+\n+if [ $1 = '-v' -o $1 = '-version' ]; then\n+    cat \"$SAGE_LOCAL/bin/sage-banner\" | grep -i \"version\" | sed \"s/\\| //\" | sed \"s/ *\\|//\"\n+    exit $?\n+fi\n+\n+if [ $1 = '-root' ]; then\n+    echo \"$SAGE_ROOT\"\n+    exit 0\n+fi\n+\n+if [ $1 = '-branch' ]; then\n+    readlink \"$SAGE_ROOT/devel/sage\" | sed \"s/sage-//\"\n+    exit $?\n+fi\n+\n+#####################################################################\n # Run SAGE's versions of the standard Algebra/Geometry etc. software\n #####################################################################\n```\n",
     "created_at": "2007-08-16T20:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2173",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2164",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -133,15 +133,15 @@ diff -r 840d064e20ea -r da40e197fbef sage-sage
 
 ---
 
-archive/issue_comments_002174.json:
+archive/issue_comments_002165.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-08-17T06:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2174",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2165",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -151,15 +151,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_002175.json:
+archive/issue_comments_002166.json:
 ```json
 {
     "body": "Bundle at\n\nhttp://sage.math.washington.edu/home/ncalexan/patches/ncalexan-version-branch-root.hg",
     "created_at": "2007-08-18T19:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2175",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2166",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -171,15 +171,15 @@ http://sage.math.washington.edu/home/ncalexan/patches/ncalexan-version-branch-ro
 
 ---
 
-archive/issue_comments_002176.json:
+archive/issue_comments_002167.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @ncalexan.",
     "created_at": "2007-08-18T19:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2176",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2167",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -189,15 +189,15 @@ Changing assignee from @williamstein to @ncalexan.
 
 ---
 
-archive/issue_comments_002177.json:
+archive/issue_comments_002168.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-19T00:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/433",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2177",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/433#issuecomment-2168",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_003281.json:
     "body": "Assignee: @garyfurnish\n\nlibecm was moved without updating pbuild and thus pbuild fails to compile sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3281\n\n",
     "created_at": "2008-05-23T16:30:17Z",
     "labels": [
-        "pbuild",
+        "component: pbuild",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003281.json:
     "title": "libecm fails to pbuild",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3281",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3281
 
 ---
 
-archive/issue_comments_022694.json:
+archive/issue_comments_022647.json:
 ```json
 {
     "body": "Attachment [trac_3281.patch](tarball://root/attachments/some-uuid/ticket3281/trac_3281.patch) by @garyfurnish created at 2008-05-23 16:30:27",
     "created_at": "2008-05-23T16:30:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22694",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22647",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [trac_3281.patch](tarball://root/attachments/some-uuid/ticket3281/tra
 
 ---
 
-archive/issue_comments_022695.json:
+archive/issue_comments_022648.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-23T16:31:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22695",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22648",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -65,15 +65,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_022696.json:
+archive/issue_comments_022649.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-23T16:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22696",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22649",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +83,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022697.json:
+archive/issue_comments_022650.json:
 ```json
 {
     "body": "The patch is obviously correct. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-23T16:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22697",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22650",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +105,15 @@ Michael
 
 ---
 
-archive/issue_comments_022698.json:
+archive/issue_comments_022651.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.rc1",
     "created_at": "2008-05-23T16:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3281",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22698",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3281#issuecomment-22651",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

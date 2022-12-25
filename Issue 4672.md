@@ -6,15 +6,14 @@ archive/issues_004672.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: bar_chart??\nType:\t\tfunction\nBase Class:\t<type 'function'>\nString Form:\t<function bar_chart at 0x88b4b1c>\nNamespace:\tInteractive\nFile:\t\t/home/jason/sage/local/lib/python2.5/site-packages/sage/plot/misc.py\nDefinition:\tbar_chart(*args, **kwds)\nSource:\n        @wraps(func)\n        def wrapper(*args, **kwds):\n            options = copy(wrapper.options)\n            if self.original_opts:\n                options['__original_opts'] = kwds\n            options.update(kwds)\n            return func(*args, **options)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4672\n\n",
     "created_at": "2008-12-02T05:43:05Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "plot functions do not work with ?? because they are wrapped in @options",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4672",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -47,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4672
 
 ---
 
-archive/issue_comments_035194.json:
+archive/issue_comments_035125.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-02T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35194",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35125",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_035195.json:
+archive/issue_comments_035126.json:
 ```json
 {
     "body": "Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672.patch) by @mwhansen created at 2008-12-02 06:00:34",
     "created_at": "2008-12-02T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35195",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35126",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +82,15 @@ Attachment [trac_4672.patch](tarball://root/attachments/some-uuid/ticket4672/tra
 
 ---
 
-archive/issue_comments_035196.json:
+archive/issue_comments_035127.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-12-02T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35196",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35127",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -101,15 +100,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_035197.json:
+archive/issue_comments_035128.json:
 ```json
 {
     "body": "Code looks reasonable, applies (with fuzz) to my Sage 3.2, and fixes the issue pointed out above, so positive review.",
     "created_at": "2008-12-02T06:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35197",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35128",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -119,15 +118,15 @@ Code looks reasonable, applies (with fuzz) to my Sage 3.2, and fixes the issue p
 
 ---
 
-archive/issue_comments_035198.json:
+archive/issue_comments_035129.json:
 ```json
 {
     "body": "I also tried the code, etc., and it looks good, so another positive review from me. \n\nWhen I was reviewing though I noticed that, which has nothing a priori to do with this ticket but is worrisome. \n\n```\nsage: a = plot(sin)\nsage: a == loads(dumps(a))\nFalse\n```\n",
     "created_at": "2008-12-02T17:12:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35198",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35129",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -146,15 +145,15 @@ False
 
 ---
 
-archive/issue_comments_035199.json:
+archive/issue_comments_035130.json:
 ```json
 {
     "body": "This patch breaks one doctest:\n\n```\nsage -t -long \"devel/sage/sage/combinat/sloane_functions.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/devel/sage/sage/combinat/sloane_functions.py\", line 156:\n    sage: sloane.A000045._sage_src_()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_5[2]>\", line 1, in <module>\n        sloane.A000045._sage_src_()###line 156:\n    sage: sloane.A000045._sage_src_()\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/combinat/sloane_functions.py\", line 160, in _sage_src_\n        return sage_getsource(self.__class__)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/local/lib/python2.5/site-packages/sage/misc/sageinspect.py\", line 367, in sage_getsource\n        return obj._sage_src_()\n    TypeError: unbound method _sage_src_() must be called with A000045 instance as first argument (got nothing instead)\n**********************************************************************\n1 items had failures:\n   1 of   3 in __main__.example_5\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/mabshoff/release-cycle/sage-3.2.2.alpha0/tmp/.doctest_sloane_functions.py\n\t [6.6 s]\nexit code: 1024\n```\n",
     "created_at": "2008-12-03T10:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35199",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35130",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -195,15 +194,15 @@ exit code: 1024
 
 ---
 
-archive/issue_comments_035200.json:
+archive/issue_comments_035131.json:
 ```json
 {
     "body": "Attachment [trac_4672-2.patch](tarball://root/attachments/some-uuid/ticket4672/trac_4672-2.patch) by @mwhansen created at 2008-12-04 10:57:08",
     "created_at": "2008-12-04T10:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35200",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35131",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -213,15 +212,15 @@ Attachment [trac_4672-2.patch](tarball://root/attachments/some-uuid/ticket4672/t
 
 ---
 
-archive/issue_comments_035201.json:
+archive/issue_comments_035132.json:
 ```json
 {
     "body": "I've attached a second patch which fixes the issue.",
     "created_at": "2008-12-04T10:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35201",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35132",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -231,15 +230,15 @@ I've attached a second patch which fixes the issue.
 
 ---
 
-archive/issue_comments_035202.json:
+archive/issue_comments_035133.json:
 ```json
 {
     "body": "Mike's second patch fixes the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-04T14:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35202",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35133",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -253,15 +252,15 @@ Michael
 
 ---
 
-archive/issue_comments_035203.json:
+archive/issue_comments_035134.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.alpha0",
     "created_at": "2008-12-04T14:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35203",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35134",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -271,15 +270,15 @@ Merged in Sage 3.2.2.alpha0
 
 ---
 
-archive/issue_comments_035204.json:
+archive/issue_comments_035135.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-04T14:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4672",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35204",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4672#issuecomment-35135",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

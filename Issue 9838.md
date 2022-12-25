@@ -6,15 +6,13 @@ archive/issues_009838.json:
     "body": "Assignee: mhampton\n\nCC:  @vbraun\n\nThis patch allows computing dual cones, including non-strictly convex and non-full-dimensional cases. \n\nThe actual work is done in `facet_normals` which now works for non-strictly convex cones as well. The method `base_extend` for quotient lattices was added during one of the implementation attempts and I left it for future use as well (the hope was to create cones in quotient lattices, but it does not work yet).\n\nThere is still a dimension 6 limitation stemming from PALP for computing duals and facet normals. This is still our best option for low dimension, but perhaps it would be nice if `facet_normals` caught the exception when PALP does not work and used polyhedra module in this case. Then computing the dual cone and face lattices should work automatically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9839\n\n",
     "created_at": "2010-08-30T05:49:07Z",
     "labels": [
-        "geometry",
-        "major",
-        "enhancement"
+        "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Add dual cone computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9838",
-    "user": "@novoselt"
+    "user": "https://github.com/novoselt"
 }
 ```
 Assignee: mhampton
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9839
 
 ---
 
-archive/issue_comments_097106.json:
+archive/issue_comments_096947.json:
 ```json
 {
     "body": "Attachment [trac_9839_add_dual_cone_computation.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_add_dual_cone_computation.patch) by @novoselt created at 2010-08-30 05:53:15",
     "created_at": "2010-08-30T05:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97106",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96947",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -53,15 +51,15 @@ Attachment [trac_9839_add_dual_cone_computation.patch](tarball://root/attachment
 
 ---
 
-archive/issue_comments_097107.json:
+archive/issue_comments_096948.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-30T05:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97107",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96948",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -71,15 +69,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_097108.json:
+archive/issue_comments_096949.json:
 ```json
 {
     "body": "I don't like that your lattice now needs to have `self.dual()` implemented:\n\n```\nsage: c = Cone([(1,0), [0,1]], lattice = ZZ^2)\nsage: c.facet_normals()\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/vbraun/opt/sage-4.5.2/devel/sage-main/<ipython console> in <module>()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/geometry/cone.pyc in facet_normals(self)\n   1808         \"\"\"\n   1809         if \"_facet_normals\" not in self.__dict__:\n-> 1810             M = self.lattice().dual()\n   1811             P = self.lattice_polytope()\n   1812             rotate_lifts = not self.is_strictly_convex()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__getattr__ (sage/structure/parent.c:5311)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2757)()\n\n/home/vbraun/Sage/sage/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2629)()\n\nAttributeError: 'FreeModule_ambient_pid_with_category' object has no attribute 'dual'\n```\n\nThis essentially limits you to `ToricLattice`s now. I think it would be good for `factet_normals()` to use the same lattice otherwise, so `ZZ^n` works as well. \n\nThe rest looks good!",
     "created_at": "2010-08-30T12:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97108",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96949",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -117,15 +115,15 @@ The rest looks good!
 
 ---
 
-archive/issue_comments_097109.json:
+archive/issue_comments_096950.json:
 ```json
 {
     "body": "The absence of `dual()` also annoyed me in the divisor class stuff which is built on top of `ZZ^n`... So here is a patch. I added a new `cone.lattice_dual()` method which returns the dual toric lattice (if possible) or the original lattice (if not possible).\n\nI'm fine with the current state of affairs, so feel free to set positive review if its ok with you.",
     "created_at": "2010-08-30T15:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97109",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96950",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -137,15 +135,15 @@ I'm fine with the current state of affairs, so feel free to set positive review 
 
 ---
 
-archive/issue_comments_097110.json:
+archive/issue_comments_096951.json:
 ```json
 {
     "body": "Great additions for the dual lattice and documentation clarifications!\n\nJust a couple of suggestions: can we\n* name the method `dual_lattice` instead of `lattice_dual` and\n* add to the documentation of this method itself an explanation that \"dual lattice\" is the same as \"just lattice\" if it does not have `dual()` method?",
     "created_at": "2010-08-30T18:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97110",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96951",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -159,15 +157,15 @@ Just a couple of suggestions: can we
 
 ---
 
-archive/issue_comments_097111.json:
+archive/issue_comments_096952.json:
 ```json
 {
     "body": "Updated patch",
     "created_at": "2010-08-30T21:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97111",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96952",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -177,15 +175,15 @@ Updated patch
 
 ---
 
-archive/issue_comments_097112.json:
+archive/issue_comments_096953.json:
 ```json
 {
     "body": "Attachment [trac_9839_reviewer.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.patch) by @vbraun created at 2010-08-30 21:02:18\n\nRenamed to `dual_lattice` and added documentation.",
     "created_at": "2010-08-30T21:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97112",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96953",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -197,15 +195,15 @@ Renamed to `dual_lattice` and added documentation.
 
 ---
 
-archive/issue_comments_097113.json:
+archive/issue_comments_096954.json:
 ```json
 {
     "body": "Adjusted version",
     "created_at": "2010-08-31T00:27:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97113",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96954",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -215,15 +213,15 @@ Adjusted version
 
 ---
 
-archive/issue_comments_097114.json:
+archive/issue_comments_096955.json:
 ```json
 {
     "body": "Attachment [trac_9839_reviewer.2.patch](tarball://root/attachments/some-uuid/ticket9839/trac_9839_reviewer.2.patch) by @novoselt created at 2010-08-31 00:30:43\n\nThank you! I caught a broken link and changed a little bit documentation in lines 1743-1749 of the new patch. If it looks OK, please switch to positive review!",
     "created_at": "2010-08-31T00:30:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97114",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96955",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -235,15 +233,15 @@ Thank you! I caught a broken link and changed a little bit documentation in line
 
 ---
 
-archive/issue_comments_097115.json:
+archive/issue_comments_096956.json:
 ```json
 {
     "body": "Looks good. Positive review.\n\nFor the release coordinator: Apply \n\n1. `trac_9839_add_dual_cone_computation.patch`\n2. `trac_9839_reviewer.2.patch`",
     "created_at": "2010-08-31T19:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97115",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96956",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -258,15 +256,15 @@ For the release coordinator: Apply
 
 ---
 
-archive/issue_comments_097116.json:
+archive/issue_comments_096957.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-31T19:10:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97116",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96957",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -276,15 +274,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_097117.json:
+archive/issue_comments_096958.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-15T09:57:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-97117",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9838#issuecomment-96958",
+    "user": "https://github.com/qed777"
 }
 ```
 

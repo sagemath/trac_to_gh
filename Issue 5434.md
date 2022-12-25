@@ -6,7 +6,7 @@ archive/issues_005434.json:
     "body": "Assignee: cwitty\n\n\n```\nsage: K.<x> = RDF[]\nsage: K(0).shift(3).is_zero()\nFalse\nsage: K.<x> = RR[]\nsage: K(0).shift(3).is_zero()\nFalse\nsage: K.<x> = AA[]\nsage: K(0).shift(3).is_zero()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5434\n\n",
     "created_at": "2009-03-04T04:02:25Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005434.json:
     "title": "[with patch, needs review] .shift() of a zero polynomial is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5434",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: cwitty
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5434
 
 ---
 
-archive/issue_comments_042042.json:
+archive/issue_comments_041960.json:
 ```json
 {
     "body": "Attachment [poly-shift-of-zero.patch](tarball://root/attachments/some-uuid/ticket5434/poly-shift-of-zero.patch) by @williamstein created at 2009-03-04 07:04:38\n\nExcellent.  Thanks!",
     "created_at": "2009-03-04T07:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5434",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5434#issuecomment-42042",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5434#issuecomment-41960",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -62,15 +62,15 @@ Excellent.  Thanks!
 
 ---
 
-archive/issue_comments_042043.json:
+archive/issue_comments_041961.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-05T00:07:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5434",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5434#issuecomment-42043",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5434#issuecomment-41961",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -80,15 +80,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_042044.json:
+archive/issue_comments_041962.json:
 ```json
 {
     "body": "Merged in Sage 3.4.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-05T00:07:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5434",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5434#issuecomment-42044",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5434#issuecomment-41962",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

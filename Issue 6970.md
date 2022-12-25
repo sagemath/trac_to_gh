@@ -6,7 +6,7 @@ archive/issues_006970.json:
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6970\n\n",
     "created_at": "2009-09-20T22:23:29Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006970.json:
     "title": "port R spkg to os x 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6970",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6970
 
 ---
 
-archive/issue_comments_057659.json:
+archive/issue_comments_057551.json:
 ```json
 {
     "body": "The error message is:\n\n```\n...\nstration.o relop.o rlocale.o saveload.o scan.o seq.o serialize.o size.o sort.o source.o split.o sprintf.o startup.o subassign.o subscript.o subset.o summary.o sysutils.o unique.o util.o version.o vfonts.o xxxpr.o   `ls ../appl/*.o ../nmath/*.o ../unix/*.o  2>/dev/null|grep -v /ext-`  -L/Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/local/lib/gcc/i686-apple-darwin8/4.2.3/x86_64 -L/Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/local/lib/gcc/i686-apple-darwin8/4.2.3 -L/Users/wstein/sage/build/64bit/sage-4.1.2.alpha1/local/lib/gcc -L/usr/local/lib -lgfortran -lgcc_s.10.4  ../extra/zlib/libz.a ../extra/bzip2/libbz2.a ../extra/pcre/libpcre.a  ../extra/intl/libintl.a -liconv  -Wl,-framework -Wl,CoreFoundation -lreadline  -lm\nld: symbol dyld_stub_binding_helper not defined (usually in crt1.o/dylib1.o/bundle1.o)\ncollect2: ld returned 1 exit status\nmake[5]: *** [libR.dylib] Error 1\nmake[4]: *** [R] Error 2\nmake[3]: *** [R] Error 1\nmake[2]: *** [R] Error 1\nError building R.\n```\n",
     "created_at": "2009-09-20T23:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57659",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57551",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -60,15 +60,15 @@ Error building R.
 
 ---
 
-archive/issue_comments_057660.json:
+archive/issue_comments_057552.json:
 ```json
 {
     "body": "#6972 fixes everything so R works with 10.6",
     "created_at": "2009-09-21T02:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57660",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57552",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -78,15 +78,15 @@ archive/issue_comments_057660.json:
 
 ---
 
-archive/issue_comments_057661.json:
+archive/issue_comments_057553.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-09-21T02:00:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6970",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57661",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6970#issuecomment-57553",
+    "user": "https://github.com/williamstein"
 }
 ```
 

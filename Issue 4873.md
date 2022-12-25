@@ -6,7 +6,7 @@ archive/issues_004873.json:
     "body": "Assignee: mabshoff\n\n\n```\nwstein@sage:~$ /usr/local/bin/sage -optional\nUsing SAGE Server http://www.sagemath.org//packages\nhttp://www.sagemath.org//packages/optional/list --> /usr/local/sage/tmp/list\n[Errno 13] Permission denied: '/usr/local/sage/tmp/list'\n\n\n\n********************************************************************************\n\n\n\nError contacting http://www.sagemath.org//packages/optional/list. Try using an alternative server.\nFor example, from the bash prompt try typing\n\n   export SAGE_SERVER=http://sage.scipy.org/sage/\n\nthen try again.\n\n\n\n********************************************************************************\n\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4873\n\n",
     "created_at": "2008-12-24T18:36:36Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004873.json:
     "title": "sage -optional should not require write access to sage repo; e.g., people may want to check on what packages are installed system-wide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4873",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -56,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4873
 
 ---
 
-archive/issue_comments_036898.json:
+archive/issue_comments_036826.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-12-24T21:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4873",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4873#issuecomment-36898",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4873#issuecomment-36826",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -74,15 +74,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_036899.json:
+archive/issue_comments_036827.json:
 ```json
 {
     "body": "This is a dupe of #961\n\nCheers,\n\nMichael",
     "created_at": "2008-12-24T21:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4873",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4873#issuecomment-36899",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4873#issuecomment-36827",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

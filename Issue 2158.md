@@ -6,7 +6,7 @@ archive/issues_002158.json:
     "body": "Assignee: tba\n\nThe patch fixes a few typos in matrix2.pyx\n\nThe patch will be attached shortly\n\nIssue created by migration from https://trac.sagemath.org/ticket/2158\n\n",
     "created_at": "2008-02-14T16:56:02Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002158.json:
     "title": "Fix some typos in matrix/matrix2.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2158",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: tba
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2158
 
 ---
 
-archive/issue_comments_014169.json:
+archive/issue_comments_014138.json:
 ```json
 {
     "body": "Attachment [matrix2_typos.patch](tarball://root/attachments/some-uuid/ticket2158/matrix2_typos.patch) by @jaapspies created at 2008-02-14 16:57:51",
     "created_at": "2008-02-14T16:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14169",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14138",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -49,15 +49,15 @@ Attachment [matrix2_typos.patch](tarball://root/attachments/some-uuid/ticket2158
 
 ---
 
-archive/issue_comments_014170.json:
+archive/issue_comments_014139.json:
 ```json
 {
     "body": "Patch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-14T17:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14170",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14139",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +71,15 @@ Michael
 
 ---
 
-archive/issue_comments_014171.json:
+archive/issue_comments_014140.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha0",
     "created_at": "2008-02-14T17:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14171",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14140",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +89,15 @@ Merged in Sage 2.10.2.alpha0
 
 ---
 
-archive/issue_comments_014172.json:
+archive/issue_comments_014141.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-14T17:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14172",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2158#issuecomment-14141",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

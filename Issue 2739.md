@@ -6,15 +6,14 @@ archive/issues_002739.json:
     "body": "Assignee: @williamstein\n\nFrom the thread 'benchmarking CAS' in newsgroup sci.math.symbolic\n\nSzH>\n\n\n```\nI am not a SAGE user, but the sagemath.org website created the\nimpression that SAGE is just some kind of front end to other\npackages.  I wanted to learn more about this system, but there is no\n\"About SAGE\" link on the front page and the FAQ is not very\ninformative.\n```\n\n\nand\n\n\n```\n\n> SAGE might be a useful program, but the current website is somehow not\n> convincing (and not informative) enough to persuade me to attempt a\n> 500 MB download of something that will only run on a linux system\n> running inside an emulator ...  Just compare it with e.g. the orders\n> of magnitude better Yacas website to see what I mean.\n\n```\n\n\nMe>\n\n\n```\nYou are right! There is no 'about Sage' page on the web site. \n```\n\n\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2739\n\n",
     "created_at": "2008-03-31T15:50:14Z",
     "labels": [
-        "website/wiki",
-        "major",
+        "component: website/wiki",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "Sage web site lacking a clear 'About Sage' page",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2739",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: @williamstein
@@ -68,15 +67,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2739
 
 ---
 
-archive/issue_comments_018836.json:
+archive/issue_comments_018797.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-31T03:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2739",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2739#issuecomment-18836",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2739#issuecomment-18797",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -86,15 +85,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018837.json:
+archive/issue_comments_018798.json:
 ```json
 {
     "body": "Due to Harald Schilly's hard work we now have\n\nhttp://sagemath.org/tour.html\n\nwhich I consider a solution to the above ticket. So I am considering this issue resolved and should more specific issues be raised those should be done via new tickets.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-31T03:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2739",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2739#issuecomment-18837",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2739#issuecomment-18798",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

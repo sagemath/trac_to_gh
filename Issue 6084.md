@@ -6,15 +6,14 @@ archive/issues_006084.json:
     "body": "Assignee: tbd\n\nCC:  @nilesjohnson @kedlaya jpflori\n\nA reimplementation of p-adic polynomials in Cython with many different ways for handling precision.  Needed for more generic p-adic rings and fields and factoring of p-adic polynomials\n\nIssue created by migration from https://trac.sagemath.org/ticket/6084\n\n",
     "created_at": "2009-05-19T08:23:45Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Improved p-adic polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6084",
-    "user": "@roed314"
+    "user": "https://github.com/roed314"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6084
 
 ---
 
-archive/issue_comments_048419.json:
+archive/issue_comments_048327.json:
 ```json
 {
     "body": "Changing component from algebra to padics.",
     "created_at": "2009-05-19T08:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48419",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48327",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing component from algebra to padics.
 
 ---
 
-archive/issue_comments_048420.json:
+archive/issue_comments_048328.json:
 ```json
 {
     "body": "Changing assignee from tbd to @roed314.",
     "created_at": "2009-05-19T08:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48420",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48328",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing assignee from tbd to @roed314.
 
 ---
 
-archive/issue_comments_048421.json:
+archive/issue_comments_048329.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-05-19T08:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48421",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48329",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_048422.json:
+archive/issue_comments_048330.json:
 ```json
 {
     "body": "A patch of Craig that's applied before padicpoly.",
     "created_at": "2009-05-19T09:42:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48422",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48330",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -103,15 +102,15 @@ A patch of Craig that's applied before padicpoly.
 
 ---
 
-archive/issue_comments_048423.json:
+archive/issue_comments_048331.json:
 ```json
 {
     "body": "Attachment [padicpoly.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly.patch) by @roed314 created at 2009-05-21 06:58:35",
     "created_at": "2009-05-21T06:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48423",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48331",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -121,15 +120,15 @@ Attachment [padicpoly.patch](tarball://root/attachments/some-uuid/ticket6084/pad
 
 ---
 
-archive/issue_comments_048424.json:
+archive/issue_comments_048332.json:
 ```json
 {
     "body": "Attachment [powser-part1.2.patch](tarball://root/attachments/some-uuid/ticket6084/powser-part1.2.patch) by @roed314 created at 2009-05-26 21:58:29\n\nA patch of Craig's needed for the rest to apply cleanly",
     "created_at": "2009-05-26T21:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48424",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48332",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -141,15 +140,15 @@ A patch of Craig's needed for the rest to apply cleanly
 
 ---
 
-archive/issue_comments_048425.json:
+archive/issue_comments_048333.json:
 ```json
 {
     "body": "Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket6084/trac_5075.patch) by @roed314 created at 2009-05-26 21:59:00\n\nFixes aimed at ticket 5075",
     "created_at": "2009-05-26T21:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48425",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48333",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -161,15 +160,15 @@ Fixes aimed at ticket 5075
 
 ---
 
-archive/issue_comments_048426.json:
+archive/issue_comments_048334.json:
 ```json
 {
     "body": "Attachment [padicpoly_outside.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_outside.patch) by @roed314 created at 2009-05-26 22:00:08\n\nChanges outside sage.rings.padics and sage.rings.polynomial.padics",
     "created_at": "2009-05-26T22:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48426",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48334",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -181,15 +180,15 @@ Changes outside sage.rings.padics and sage.rings.polynomial.padics
 
 ---
 
-archive/issue_comments_048427.json:
+archive/issue_comments_048335.json:
 ```json
 {
     "body": "Attachment [padicpoly_ring_padic.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_ring_padic.patch) by @roed314 created at 2009-05-26 22:00:36\n\nChanges in sage.rings.padics",
     "created_at": "2009-05-26T22:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48427",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48335",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -201,15 +200,15 @@ Changes in sage.rings.padics
 
 ---
 
-archive/issue_comments_048428.json:
+archive/issue_comments_048336.json:
 ```json
 {
     "body": "Attachment [padicpoly_new.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_new.patch) by @roed314 created at 2009-05-26 22:00:56\n\nNew files in sage.rings.polynomial.padics",
     "created_at": "2009-05-26T22:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48428",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48336",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -221,15 +220,15 @@ New files in sage.rings.polynomial.padics
 
 ---
 
-archive/issue_comments_048429.json:
+archive/issue_comments_048337.json:
 ```json
 {
     "body": "Apply after other patches",
     "created_at": "2009-06-08T18:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48429",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48337",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -239,15 +238,15 @@ Apply after other patches
 
 ---
 
-archive/issue_comments_048430.json:
+archive/issue_comments_048338.json:
 ```json
 {
     "body": "Attachment [padicpoly_update1.patch](tarball://root/attachments/some-uuid/ticket6084/padicpoly_update1.patch) by @roed314 created at 2009-06-08 18:34:56",
     "created_at": "2009-06-08T18:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48430",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48338",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -257,15 +256,15 @@ Attachment [padicpoly_update1.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_048431.json:
+archive/issue_comments_048339.json:
 ```json
 {
     "body": "David, is this ready for review now?",
     "created_at": "2009-10-24T11:24:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48431",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48339",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -275,15 +274,15 @@ David, is this ready for review now?
 
 ---
 
-archive/issue_comments_048432.json:
+archive/issue_comments_048340.json:
 ```json
 {
     "body": "Ping.  Any updates on this?",
     "created_at": "2009-12-07T08:22:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48432",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48340",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -293,15 +292,15 @@ Ping.  Any updates on this?
 
 ---
 
-archive/issue_comments_048433.json:
+archive/issue_comments_048341.json:
 ```json
 {
     "body": "Yep.  I started working on this again a week and a half ago.  I'm currently fixing bugs and bringing it up to 100% doctests.  I hope to have a version ready to review soon.",
     "created_at": "2009-12-07T19:25:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48433",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48341",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -311,15 +310,15 @@ Yep.  I started working on this again a week and a half ago.  I'm currently fixi
 
 ---
 
-archive/issue_comments_048434.json:
+archive/issue_comments_048342.json:
 ```json
 {
     "body": "Attachment [6084_ALL.patch](tarball://root/attachments/some-uuid/ticket6084/6084_ALL.patch) by @roed314 created at 2010-02-23 17:58:54\n\nShould apply against 4.3.2 and build; there are still doctest failures.",
     "created_at": "2010-02-23T17:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48434",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48342",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -331,15 +330,15 @@ Should apply against 4.3.2 and build; there are still doctest failures.
 
 ---
 
-archive/issue_comments_048435.json:
+archive/issue_comments_048343.json:
 ```json
 {
     "body": "Any news on this ? (Iam asking becasue of #8198 and #4656.)",
     "created_at": "2010-07-28T12:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48435",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48343",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -349,15 +348,15 @@ Any news on this ? (Iam asking becasue of #8198 and #4656.)
 
 ---
 
-archive/issue_comments_048436.json:
+archive/issue_comments_048344.json:
 ```json
 {
     "body": "I eventually found this ticket after a bug hunt related to #9457.  That patch changes power series comparison to use `padded_list` instead of `list`; I noticed that this patch (6084_ALL.patch) also makes changes to power series comparison, so maybe it makes sense to incorporate #9457 into this patch?",
     "created_at": "2010-08-04T01:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48436",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48344",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -367,15 +366,15 @@ I eventually found this ticket after a bug hunt related to #9457.  That patch ch
 
 ---
 
-archive/issue_comments_048437.json:
+archive/issue_comments_048345.json:
 ```json
 {
     "body": "It is such a shame that this has frozen a year ago. There is a lot of good work here and I am sure it would solve quite a few problems in other tickets.",
     "created_at": "2011-01-27T13:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48437",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48345",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -385,15 +384,15 @@ It is such a shame that this has frozen a year ago. There is a lot of good work 
 
 ---
 
-archive/issue_comments_048438.json:
+archive/issue_comments_048346.json:
 ```json
 {
     "body": "I know.  I was just thinking the same thing after seeing the discussion at #10698.  It's nice to know that p-adic polynomials are getting used, but also sad that this bug is causing so much problems.\n\nUnfortunately, my thesis is due in a little over a month, so I cannot work on this right now.  I know it's difficult to pick up someone else's work, but the code is mostly done; it mainly needs doctests and fixes to any problems that they reveal.  If someone wants to take this on, let me know: I can make sure you have the latest patches and let you know what needs doing.",
     "created_at": "2011-01-27T13:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48438",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48346",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -405,15 +404,15 @@ Unfortunately, my thesis is due in a little over a month, so I cannot work on th
 
 ---
 
-archive/issue_comments_048439.json:
+archive/issue_comments_048347.json:
 ```json
 {
     "body": "I'm getting started on this.  Let me know if you want to help review it once I get it back in shape.",
     "created_at": "2011-04-07T14:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48439",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48347",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -423,15 +422,15 @@ I'm getting started on this.  Let me know if you want to help review it once I g
 
 ---
 
-archive/issue_comments_048440.json:
+archive/issue_comments_048348.json:
 ```json
 {
     "body": "Replying to [comment:11 roed]:\n> I'm getting started on this.  \n\nGreat!\n\n> Let me know if you want to help review it once I get it back in shape.\n\nIndeed, I'd be happy to help :)",
     "created_at": "2011-04-07T15:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48440",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48348",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -448,15 +447,15 @@ Indeed, I'd be happy to help :)
 
 ---
 
-archive/issue_comments_048441.json:
+archive/issue_comments_048349.json:
 ```json
 {
     "body": "Attachment [6084_2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_2.patch) by @roed314 created at 2011-06-10 15:07:01",
     "created_at": "2011-06-10T15:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48441",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48349",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -466,15 +465,15 @@ Attachment [6084_2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_2
 
 ---
 
-archive/issue_comments_048442.json:
+archive/issue_comments_048350.json:
 ```json
 {
     "body": "Attachment [6084_3.patch](tarball://root/attachments/some-uuid/ticket6084/6084_3.patch) by @roed314 created at 2011-06-10 15:07:12",
     "created_at": "2011-06-10T15:07:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48442",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48350",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -484,15 +483,15 @@ Attachment [6084_3.patch](tarball://root/attachments/some-uuid/ticket6084/6084_3
 
 ---
 
-archive/issue_comments_048443.json:
+archive/issue_comments_048351.json:
 ```json
 {
     "body": "Attachment [6084_4.patch](tarball://root/attachments/some-uuid/ticket6084/6084_4.patch) by @roed314 created at 2011-06-10 15:07:31",
     "created_at": "2011-06-10T15:07:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48443",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48351",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -502,15 +501,15 @@ Attachment [6084_4.patch](tarball://root/attachments/some-uuid/ticket6084/6084_4
 
 ---
 
-archive/issue_comments_048444.json:
+archive/issue_comments_048352.json:
 ```json
 {
     "body": "Attachment [6084_5.patch](tarball://root/attachments/some-uuid/ticket6084/6084_5.patch) by @roed314 created at 2011-06-10 15:07:40",
     "created_at": "2011-06-10T15:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48444",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48352",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -520,15 +519,15 @@ Attachment [6084_5.patch](tarball://root/attachments/some-uuid/ticket6084/6084_5
 
 ---
 
-archive/issue_comments_048445.json:
+archive/issue_comments_048353.json:
 ```json
 {
     "body": "Attachment [6084_7.patch](tarball://root/attachments/some-uuid/ticket6084/6084_7.patch) by @roed314 created at 2011-06-10 15:07:52",
     "created_at": "2011-06-10T15:07:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48445",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48353",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -538,15 +537,15 @@ Attachment [6084_7.patch](tarball://root/attachments/some-uuid/ticket6084/6084_7
 
 ---
 
-archive/issue_comments_048446.json:
+archive/issue_comments_048354.json:
 ```json
 {
     "body": "Attachment [6084_8.patch](tarball://root/attachments/some-uuid/ticket6084/6084_8.patch) by @roed314 created at 2011-06-10 15:08:37",
     "created_at": "2011-06-10T15:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48446",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48354",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -556,15 +555,15 @@ Attachment [6084_8.patch](tarball://root/attachments/some-uuid/ticket6084/6084_8
 
 ---
 
-archive/issue_comments_048447.json:
+archive/issue_comments_048355.json:
 ```json
 {
     "body": "Attachment [6084_10.patch](tarball://root/attachments/some-uuid/ticket6084/6084_10.patch) by @roed314 created at 2011-06-10 15:08:50",
     "created_at": "2011-06-10T15:08:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48447",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48355",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -574,15 +573,15 @@ Attachment [6084_10.patch](tarball://root/attachments/some-uuid/ticket6084/6084_
 
 ---
 
-archive/issue_comments_048448.json:
+archive/issue_comments_048356.json:
 ```json
 {
     "body": "Alright.  Let's try this again.\n\nApply 6084_1.patch, 6084_2.patch, 6084_3.patch, 6084_4.patch, 6084_5.patch, 6084_6.patch, 6084_7.patch, 6084_8.patch, 6084_9.patch, 6084_10.patch.  I'm happy to merge them, but I wanted them to be viewable on trac.  \n\nNot all doctests work yet, but I wanted to get this posted so that people could play with it and give me feedback.  I'd like to succeed this time in getting it into Sage.",
     "created_at": "2011-06-10T15:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48448",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48356",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -596,15 +595,15 @@ Not all doctests work yet, but I wanted to get this posted so that people could 
 
 ---
 
-archive/issue_comments_048449.json:
+archive/issue_comments_048357.json:
 ```json
 {
     "body": "Replying to [comment:13 roed]:\n\nGreat!  The patches do all apply and build on 4.7, but there are errors when starting sage:\n\n\n```\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/niles/sage/local/lib/python2.6/site-packages/IPython/ipmaker.pyc in force_import(modname)\n     64         reload(sys.modules[modname])\n     65     else:\n---> 66         __import__(modname)\n     67 \n     68 \n\n...\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._repr_ (sage/rings/polynomial/polynomial_element.c:14010)()\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._repr (sage/rings/polynomial/polynomial_element.c:13276)()\n\n/home/niles/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_element.so in sage.rings.polynomial.polynomial_element.Polynomial._top_nonzero_power (sage/rings/polynomial/polynomial_element.c:17586)()\n\nTypeError: degree() takes no arguments (1 given)\nError importing ipy_profile_sage - perhaps you should run %upgrade?\nWARNING: Loading of ipy_profile_sage failed.\nsage:\n```\n\n\nAlso, there are a number of failures on 4.7.1.alpha2 so this will have to be rebased.",
     "created_at": "2011-06-10T20:21:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48449",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48357",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -645,15 +644,15 @@ Also, there are a number of failures on 4.7.1.alpha2 so this will have to be reb
 
 ---
 
-archive/issue_comments_048450.json:
+archive/issue_comments_048358.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2011-06-10T20:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48450",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48358",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -663,15 +662,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_048451.json:
+archive/issue_comments_048359.json:
 ```json
 {
     "body": "I think to get this reviewed, some additional organization will be useful -- here's what I would suggest:\n\n* Give us an introductory description of what this patch accomplishes: What are the \"many different ways of handling precision\"?  Why was this needed?  What had to be done?  What are the main ideas of your implementation?\n\n* Presumably the patch has been broken into some conceptual pieces -- it would be useful if you could explain what these are, so that they can be reviewed somewhat independently if possible.\n\n* I would suggest versioning each separate patch piece (since they will surely need to be updated), so a naming scheme like `6084_1.n.patch`.\n\n* An always-up-to-date `6084_ALL.patch` will make for easy downloading and applying (but viewing the separate pieces on trac is very useful for me)\n\n* Any other ways you can think to break the review down into distinct pieces will be much appreciated",
     "created_at": "2011-06-10T20:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48451",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48359",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -691,15 +690,15 @@ I think to get this reviewed, some additional organization will be useful -- her
 
 ---
 
-archive/issue_comments_048452.json:
+archive/issue_comments_048360.json:
 ```json
 {
     "body": "I will build a copy of 4.7.1.alpha2 overnight and port the patches to there.\n\nThe key idea of this patch is that a polynomial over Zp should not be stored as a list of coefficients, but instead as an element of ZZ[x], together with some sort of precision object that records the precision to which each coefficient is known.  There are two main benefits of this approach:\n1. One can use fast algorithms for things like polynomial multiplication, rather than being forced back on naive multiplication due to a desire to preserve precision.  For example, Karatsuba multiplication uses the identity\n\n(f<sub>0</sub> + x<sup>n</sup> f<sub>1</sub>) (g<sub>0</sub> + x<sup>n</sup> g<sub>1</sub>) = (f<sub>0</sub> g<sub>0</sub>) + (f<sub>1</sub> g<sub>1</sub>) x<sup>2n</sup> + ((f<sub>0</sub> + f<sub>1</sub>)(g<sub>0</sub> + g<sub>1</sub>) - f<sub>0</sub> g<sub>0</sub> - f<sub>1</sub> g<sub>1</sub>)x<sup>n</sup>\n\nThis can lose precision over the naive definition since there are more additions than needed.  But if one computes an approximation over ZZ and then determines precision separately, one can use Karatsuba or FFT algorithms at will.\n1. If one wants to use different methods for tracking precision (see below), the separation makes the implementation more modular and thus easier to implement and maintain.\n\nThese patches implement two kinds of polynomials: an anchored polynomial type which stores an approximation (in ZZ[x] for example) and a precision object, and a floating polynomial type which stores a common power of p for all the coefficients together with an anchored polynomial (thus allowing polynomials over Qp).  \n\nThere are three kinds of precision defined so far:\n* Flat precision.  The precision of every entry is just a constant value n.  This is certainly the fastest option, and frequently is perfectly adequate.\n* Jagged precision.  Each coefficient has its own precision, subject only to the precision cap of the base ring.  This is mainly for backward compatibility, but might also be useful in generating functions (maybe?).\n* Newton precision.  The Newton polygon of the polynomial and of the precision are stored.  This is the default precision type, since it provides a compromise between the previous two types, and having precision above the Newton polygon is useless for evaluating the polynomial anyway.\n\nI'll write more about the contents of the individual patches and some more of the contents tomorrow morning.",
     "created_at": "2011-06-10T22:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48452",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48360",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -726,15 +725,15 @@ I'll write more about the contents of the individual patches and some more of th
 
 ---
 
-archive/issue_comments_048453.json:
+archive/issue_comments_048361.json:
 ```json
 {
     "body": "Attachment [6084_1.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_1.2.patch) by @roed314 created at 2011-06-12 20:28:26\n\nReplaces 6084_1.patch",
     "created_at": "2011-06-12T20:28:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48453",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48361",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -746,15 +745,15 @@ Replaces 6084_1.patch
 
 ---
 
-archive/issue_comments_048454.json:
+archive/issue_comments_048362.json:
 ```json
 {
     "body": "Attachment [6084_2.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_2.2.patch) by @roed314 created at 2011-06-12 20:28:44\n\nReplaces 6084_2.patch",
     "created_at": "2011-06-12T20:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48454",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48362",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -766,15 +765,15 @@ Replaces 6084_2.patch
 
 ---
 
-archive/issue_comments_048455.json:
+archive/issue_comments_048363.json:
 ```json
 {
     "body": "Replaces 6084_5.patch",
     "created_at": "2011-06-12T20:29:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48455",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48363",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -784,15 +783,15 @@ Replaces 6084_5.patch
 
 ---
 
-archive/issue_comments_048456.json:
+archive/issue_comments_048364.json:
 ```json
 {
     "body": "Attachment [6084_5.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_5.2.patch) by @roed314 created at 2011-06-12 20:29:30\n\nReplaces 6084_6.patch",
     "created_at": "2011-06-12T20:29:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48456",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48364",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -804,15 +803,15 @@ Replaces 6084_6.patch
 
 ---
 
-archive/issue_comments_048457.json:
+archive/issue_comments_048365.json:
 ```json
 {
     "body": "Attachment [6084_7.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_7.2.patch) by @roed314 created at 2011-06-12 20:29:59\n\nReplaces 6084_7.patch",
     "created_at": "2011-06-12T20:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48457",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48365",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -824,15 +823,15 @@ Replaces 6084_7.patch
 
 ---
 
-archive/issue_comments_048458.json:
+archive/issue_comments_048366.json:
 ```json
 {
     "body": "Attachment [6084_8.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_8.2.patch) by @roed314 created at 2011-06-12 20:30:25\n\nReplaces 6084_8.patch",
     "created_at": "2011-06-12T20:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48458",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48366",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -844,15 +843,15 @@ Replaces 6084_8.patch
 
 ---
 
-archive/issue_comments_048459.json:
+archive/issue_comments_048367.json:
 ```json
 {
     "body": "Replaces 6084_9.patch",
     "created_at": "2011-06-12T20:30:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48459",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48367",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -862,15 +861,15 @@ Replaces 6084_9.patch
 
 ---
 
-archive/issue_comments_048460.json:
+archive/issue_comments_048368.json:
 ```json
 {
     "body": "Attachment [6084_9.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_9.2.patch) by @roed314 created at 2011-06-12 20:31:06\n\nReplaces 6084_10.patch",
     "created_at": "2011-06-12T20:31:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48460",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48368",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -882,15 +881,15 @@ Replaces 6084_10.patch
 
 ---
 
-archive/issue_comments_048461.json:
+archive/issue_comments_048369.json:
 ```json
 {
     "body": "Attachment [6084_10.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_10.2.patch) by @roed314 created at 2011-06-12 20:31:56\n\nCollects all patches in the .2 revision.  Only apply this patch",
     "created_at": "2011-06-12T20:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48461",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48369",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -902,15 +901,15 @@ Collects all patches in the .2 revision.  Only apply this patch
 
 ---
 
-archive/issue_comments_048462.json:
+archive/issue_comments_048370.json:
 ```json
 {
     "body": "Attachment [6084_ALL.2.patch](tarball://root/attachments/some-uuid/ticket6084/6084_ALL.2.patch) by @roed314 created at 2011-06-12 20:39:41\n\nShould apply against 4.7.1.alpha4.  One can apply only 6084_ALL.2.patch, with the rest existing so that one can view code on trac.\n\nThe breakdown into patches is not the best, but here's a description.\nPatch 1: Some changes to polynomials and power series to allow leading terms that are indistinguishable from 0.\nPatch 2: Original changes outside both sage.rings.padics and sage.rings.polynomial.\nPatch 3: Changes to sage.rings.padics\nPatch 4: The new code in sage.rings.polynomial\nPatch 5: A small change to polynomial_ring_constructor to allow arbitrary kwds to be passed on to polynomial ring __init__ methods.\nPatch 6: First update, bugfixes\nPatch 7: Second update, bugfixes\nPatch 8: Third update, bugfixes\nPatch 9: Fourth update, bugfixes\nPatch 10: Removing an ill-advised attempt to use fmpz_montgomery types to speed up computations for polynomials over Zp with p odd.\n\nIf reviewers would like, I can split up the ALL patch into more reasonable chunks.  Suggestions are welcome.  Bugs still remain, which I will continue to hunt down.",
     "created_at": "2011-06-12T20:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48462",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48370",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -936,15 +935,15 @@ If reviewers would like, I can split up the ALL patch into more reasonable chunk
 
 ---
 
-archive/issue_comments_048463.json:
+archive/issue_comments_048371.json:
 ```json
 {
     "body": "It would be even better to split the patch over several tickets, which could then be reviewed, merged, and closed separately (this may also help with bug tracking). For instance, Patch 1 could perhaps go in independently, and would probably resolve a number of other outstanding tickets which point back here (e.g., with polynomials over power series rings).",
     "created_at": "2011-06-18T17:22:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48463",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48371",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -954,15 +953,15 @@ It would be even better to split the patch over several tickets, which could the
 
 ---
 
-archive/issue_comments_048464.json:
+archive/issue_comments_048372.json:
 ```json
 {
     "body": "What is the status of these patches? The ticket still says \"needs work\" but it seems you split the patch up as requested. So should it be \"needs review\"?\n\nCan this be made into several tickets somehow? It's quite frightening to see a patch that says \"HTML preview not available, since the file size exceeds 262144 bytes.\" ;) Anyway, I could try to split it up, just give me some hints where to start.\n\nIs this independent of #12555? Which one should be reviewed/merged first?",
     "created_at": "2012-07-10T11:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48464",
-    "user": "@saraedum"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48372",
+    "user": "https://github.com/saraedum"
 }
 ```
 
@@ -976,15 +975,15 @@ Is this independent of #12555? Which one should be reviewed/merged first?
 
 ---
 
-archive/issue_comments_048465.json:
+archive/issue_comments_048373.json:
 ```json
 {
     "body": "I've kinda given up on this ticket and am attempting to make the changes in smaller pieces elsewhere.  Feel free to raid it for changes.  #12555 is a much higher priority for me: help on that would be much appreciated!  Once the templating code there gets in, I think the changes in this ticket will be easier to make.",
     "created_at": "2012-07-10T19:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48465",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48373",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -994,15 +993,15 @@ I've kinda given up on this ticket and am attempting to make the changes in smal
 
 ---
 
-archive/issue_comments_048466.json:
+archive/issue_comments_048374.json:
 ```json
 {
     "body": "Changing status from needs_info to positive_review.",
     "created_at": "2015-08-13T18:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48466",
-    "user": "@saraedum"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48374",
+    "user": "https://github.com/saraedum"
 }
 ```
 
@@ -1012,15 +1011,15 @@ Changing status from needs_info to positive_review.
 
 ---
 
-archive/issue_comments_048467.json:
+archive/issue_comments_048375.json:
 ```json
 {
     "body": "I believe this ticket can be closed. Some of the patches here are still useful but it is clear that this can never be merged as is.",
     "created_at": "2015-08-13T18:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48467",
-    "user": "@saraedum"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48375",
+    "user": "https://github.com/saraedum"
 }
 ```
 
@@ -1030,15 +1029,15 @@ I believe this ticket can be closed. Some of the patches here are still useful b
 
 ---
 
-archive/issue_comments_048468.json:
+archive/issue_comments_048376.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2015-08-14T07:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6084",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48468",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/6084#issuecomment-48376",
+    "user": "https://github.com/vbraun"
 }
 ```
 

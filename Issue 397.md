@@ -6,14 +6,13 @@ archive/issues_000397.json:
     "body": "Assignee: somebody\n\nThe attache file is a patch to allow the following code to work:\n\n```\nsage: e = 7\nsage: e.digits(2)\n[1, 1, 1]\nsage: e.digits(3)\n[1, 2]\nsage: e.digits(10)\n[7]\nsage: ZZ(e.digits(3),3)\n7\n```\n\nThe return type of ZZ.digits() is a list with Integer entries in little endian order.\n\nIssue created by migration from https://trac.sagemath.org/ticket/397\n\n",
     "created_at": "2007-06-30T18:27:03Z",
     "labels": [
-        "basic arithmetic",
-        "trivial",
-        "enhancement"
+        "component: basic arithmetic",
+        "trivial"
     ],
     "title": "ZZ.digits(base) and inverse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/397",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: somebody
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/397
 
 ---
 
-archive/issue_comments_001953.json:
+archive/issue_comments_001944.json:
 ```json
 {
     "body": "main patch",
     "created_at": "2007-06-30T18:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1953",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1944",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -60,15 +59,15 @@ main patch
 
 ---
 
-archive/issue_comments_001954.json:
+archive/issue_comments_001945.json:
 ```json
 {
     "body": "Attachment [4867.patch](tarball://root/attachments/some-uuid/ticket397/4867.patch) by @malb created at 2007-06-30 20:08:33\n\nfollow-up patch for faster ZZ.digits()",
     "created_at": "2007-06-30T20:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1954",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1945",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -80,15 +79,15 @@ follow-up patch for faster ZZ.digits()
 
 ---
 
-archive/issue_comments_001955.json:
+archive/issue_comments_001946.json:
 ```json
 {
     "body": "Attachment [4868.patch](tarball://root/attachments/some-uuid/ticket397/4868.patch) by @malb created at 2007-06-30 20:11:14\n\nAdded follow-up patch based on William's input.",
     "created_at": "2007-06-30T20:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1955",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1946",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -100,15 +99,15 @@ Added follow-up patch based on William's input.
 
 ---
 
-archive/issue_comments_001956.json:
+archive/issue_comments_001947.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-09T13:32:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1956",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/397#issuecomment-1947",
+    "user": "https://github.com/malb"
 }
 ```
 

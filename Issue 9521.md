@@ -6,7 +6,7 @@ archive/issues_009521.json:
     "body": "Assignee: tbd\n\nCC:  @nathanncohen @nexttime\n\nFrom Cliquer's `spkg-install`:\n\n```sh\nif [ \"$SAGE_CHECK\" = \"yes\" ]; then\n    echo \"Compiling and running the test cases of cliquer...\"\n\n    make testcases\n    if [ $? -ne 0 ]; then\n        echo \"Failed to compile test cases of cliquer... exiting\"\n        exit 1\n    fi\n\n    ./testcases\n    if [ $? -ne 0 ]; then\n        echo \"Failed to run test cases of cliquer... exiting\"\n        exit 1\n    fi\nfi\n```\n\nWe can move this code (or most of it) to a new `spkg-check`.\n\nSince `SAGE_LOCAL/bin/sage-spkg` contains\n\n```sh\n    cd $BASEDIR\n    if [ \"$SAGE_CHECK\" != \"\" -a -f spkg-check ]; then\n        echo \"Running the test suite.\"\n        chmod +x spkg-check\n        ./spkg-check\n        if [ $? -ne 0 ]; then\n```\n\nwe don't need to check `SAGE_CHECK` in `spkg-install`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9521\n\n",
     "created_at": "2010-07-17T01:00:09Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009521.json:
     "title": "Cliquer: Move test commands from spkg-install to spkg-check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9521",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: tbd
@@ -64,15 +64,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9521
 
 ---
 
-archive/issue_comments_091527.json:
+archive/issue_comments_091374.json:
 ```json
 {
     "body": "See \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/88102b4c4eadbba7/0100c924f44cf18c?hl=en\n\nI think in this case, it is better to run the test code in `spkg-install` on every build, as it takes takes very little time - about 5 seconds to do so on my machine. As such, I suggest we \n\n* Remove the code that actually checks for SAGE_CHECK in spkg-install. \n* Run the tests all the time. \n* Make spkg-check just return 0 - there's not much point running it twice. \n\nOne issue here is that `make` exits with 0, even if the test suite fails. I found this after purposely inducing some failures. It makes me wonder how many other test suites do this too! \n\nSee also #9767 and some comments from myself and Leif. \n\nDave",
     "created_at": "2010-09-04T07:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9521",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91527",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -96,15 +96,15 @@ Dave
 
 ---
 
-archive/issue_comments_091528.json:
+archive/issue_comments_091375.json:
 ```json
 {
     "body": "I've closed #9767 as a duplicate of this one. I've cc'ed Leif, who commented on #9767 and Nathann as the package maintainer. \n\nI need to respond to Leif's comment on #9767 though: \n\n**Dave, be warned: You'll hate me if I should review this (`spkg-install`, `patches/Makefile`).**\n\nI think Leif has unreasonable expectations some times - in particular #9603, (an iconv change), has resulted in a large number of changes, which all took time, which could have been better spent addressing other more serious issues in Sage. The number of changes Leif requested on #9603 was excessive I feel. Six weeks after the ticket was created to just add \n\n`&& [ \"x$UNAME\" != xHP-UX ]` \n\nit is still awaiting a positive review. \n\nI'm not denying the changes Leif requested on #9603 has improved the iconv package - though I think it was one of the better packages to start with. I do however think the time spent on it could have been put to more productive use. \n\nIf tickets to add a very small change are going to result in weeks of iterations, then the changes are not going to be made - at least not by me. \n\nI am happy to attempt to clean up Cliquer, but on the understanding it does not become like #9603. I've no desire to spend so much time on endless small changes. \n\nThe only changes I would make to `patches/Makefile` are Solaris-specific, as the compiler flags are wrong. (Oh, and I might add the necessary change to package so it builds on HP-UX, where shared libraries are .sl and not .so.) But I have no intension of re-writing the whole of the Makefile. \n\nThere's a lot of unnecessary things in `spkg-install` and I'm happy to remove them, but I'm not willing to spend weeks on it. \n\nDave",
     "created_at": "2010-09-04T08:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9521",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91528",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91375",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -136,15 +136,15 @@ Dave
 
 ---
 
-archive/issue_comments_091529.json:
+archive/issue_comments_091376.json:
 ```json
 {
     "body": "See: \n* #9871 which updates Cliquer and runs the tests in a better way. \n* #9870 which will clean up Cliquer. \n\nDave",
     "created_at": "2010-09-07T22:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9521",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91529",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91376",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -158,15 +158,15 @@ Dave
 
 ---
 
-archive/issue_comments_091530.json:
+archive/issue_comments_091377.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-01-16T13:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9521",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91530",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91377",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -176,15 +176,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_091531.json:
+archive/issue_comments_091378.json:
 ```json
 {
     "body": "Duplicate of #9870.",
     "created_at": "2014-01-16T13:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9521",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91531",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91378",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -194,15 +194,15 @@ Duplicate of #9870.
 
 ---
 
-archive/issue_comments_091532.json:
+archive/issue_comments_091379.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-01-16T13:32:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9521",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91532",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91379",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -212,15 +212,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_091533.json:
+archive/issue_comments_091380.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2014-01-21T14:28:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9521",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91533",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9521#issuecomment-91380",
+    "user": "https://github.com/vbraun"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_001708.json:
     "body": "Assignee: mabshoff\n\n\n```\nOn Jan 6, 2008, at 22:08 , William Stein wrote:\n> On Jan 6, 2008 9:52 PM, Justin C. Walker <> wrote:\n>> On Jan 6, 2008, at 21:06 , William Stein wrote:\n[snip]\n>>> Options:\n>>>    (1) Add the pure tex files into bdist, or\n>>>    (2) Add all of doc-main to bdist (we include sage-main)\n>>>    (3) Remove testing the tex files from \"make check\" for bdist.\n>>>\n>>> What do you guys think?  I like (2).\n>>\n>> It costs a mere 80MB or so, right?  How critical is that size\n>> difference?\n>>\n>> I'd think it a good idea to include at least the primary doc set, or\n>> maybe just the html set...\n>\n> The html documentation is included.  It is in SAGE_ROOT/doc/\n>\n> However, I think the tex files are not in there.\n\nNeither the tex/pdf nor the html doc appear to be in the .dmg's I\ndownloaded.  'sage-bdist' certainly *looks* like it should copy it,\nbut there is no 'html' in $SAGE_ROOT.\n\nHere's what I see:\n\n$ ls\nCOPYING.txt             examples\nmatplotlibrc            test.log\nREADME.txt              install.log\nsage                    tmp\ndata                    ipython                 sage-2.9.1.txt\ndevel                   local                   sage-README-osx.txt\nexample.sage            makefile                spkg\n\n$ find . -name html\n./local/LIB/r/doc/html\n./local/LIB/r/src/gnuwin32/fixed/html\n./local/share/maxima/5.13.0/doc/html\n./local/share/maxima/5.13.0/xmaxima/html\n./local/share/moin/htdocs/applets/FCKeditor/_samples/html\n\nJustin\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1708\n\n",
     "created_at": "2008-01-07T09:02:56Z",
     "labels": [
-        "distribution",
-        "major",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "missing docs in dmg sage install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1708",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -76,15 +75,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1708
 
 ---
 
-archive/issue_comments_010834.json:
+archive/issue_comments_010807.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-02-12T16:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1708#issuecomment-10834",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1708#issuecomment-10807",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -94,15 +93,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_010835.json:
+archive/issue_comments_010808.json:
 ```json
 {
     "body": "This is a duplicate of #1539",
     "created_at": "2008-02-12T16:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1708#issuecomment-10835",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1708#issuecomment-10808",
+    "user": "https://github.com/williamstein"
 }
 ```
 

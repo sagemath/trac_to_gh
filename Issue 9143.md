@@ -6,15 +6,13 @@ archive/issues_009143.json:
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @nathanncohen @rlmill @robertwb\n\nIt's amazing how slow our graph generator is:\n\n\n```\nsage: %time gg=list(graphs(7))\nCPU times: user 12.31 s, sys: 0.10 s, total: 12.41 s\nWall time: 12.87 s\n```\n\n\nCompare this to nauty's C implementation (with approximately the same algorithm)\n\n\n```\nsage: %timeit hh=graphs.nauty_geng('-q 7')\n5 loops, best of 3: 171 ms per loop\n```\n\n\nNotice that the vast majority of the time is spent in some python calls, which presumably could be much, much faster if we instead used the underlying C structure via Cython.\n\n\n```\nsage: %prun gg=list(graphs(7))\n         4355876 function calls (4284237 primitive calls) in 14.011 CPU seconds\n\n   Ordered by: internal time\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n    46134    2.668    0.000    2.923    0.000 {iterator_edges}\n   362828    1.897    0.000    1.897    0.000 {add_edge}\n    33007    1.698    0.000    7.775    0.000 graph.py:760(__init__)\n   289792    1.209    0.000    1.209    0.000 {has_edge}\n   125832    0.625    0.000    0.625    0.000 {iterator_verts}\n     6564    0.604    0.000    5.020    0.001 {sage.groups.perm_gps.partn_ref.refinement_graphs.search_tree}\n    33006    0.476    0.000    8.523    0.000 generic_graph.py:416(__copy__)\n13050/1045    0.441    0.000   14.000    0.013 graph_generators.py:5059(canaug_traverse_edge)\n    33007    0.395    0.000    0.470    0.000 function_mangling.py:205(fix_to_pos)\n20064/13314    0.321    0.000    2.453    0.000 generic_graph.py:10582(relabel)\n    33006    0.318    0.000    0.318    0.000 {add_vertices}\n   289792    0.282    0.000    1.491    0.000 generic_graph.py:5256(has_edge)\n     6750    0.255    0.000    1.923    0.000 generic_graph.py:72(__eq__)\n     5893    0.235    0.000    0.354    0.000 graph_generators.py:5228(check_aut_edge)\n142579/89695    0.195    0.000    7.128    0.000 copy.py:65(copy)\n   546806    0.191    0.000    3.114    0.000 generic_graph.py:5386(edge_iterator)\n    46692    0.175    0.000    0.524    0.000 generic_graph.py:4817(vertices)\n    33007    0.166    0.000    0.824    0.000 generic_graph.py:28(__init__)\n    13314    0.162    0.000    0.162    0.000 {relabel}\n   128177    0.135    0.000    0.135    0.000 {sorted}\n   132025    0.126    0.000    0.171    0.000 generic_graph.py:1531(name)\n   125832    0.124    0.000    0.749    0.000 generic_graph.py:4731(vertex_iterator)\n   105955    0.110    0.000    0.110    0.000 {hasattr}\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9143\n\n",
     "created_at": "2010-06-04T22:05:44Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Speed up graph generation using Cython",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9143",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -86,15 +84,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9143
 
 ---
 
-archive/issue_comments_085380.json:
+archive/issue_comments_085243.json:
 ```json
 {
     "body": "Every time I ask about \"yield\" statements in Cython, I always get the same response: very close, not there yet. It will be very easy for me to fix this, once they are implemented. Until then, it's probably ten times the work...",
     "created_at": "2010-06-04T22:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85380",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85243",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -104,15 +102,15 @@ Every time I ask about "yield" statements in Cython, I always get the same respo
 
 ---
 
-archive/issue_comments_085381.json:
+archive/issue_comments_085244.json:
 ```json
 {
     "body": "Ah, okay, thanks for the update. I'm CCing robertwb so that he sees (yet again) another vote for yield statements in Cython.  I'm sure they'll come in time.",
     "created_at": "2010-06-05T00:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85381",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85244",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -122,15 +120,15 @@ Ah, okay, thanks for the update. I'm CCing robertwb so that he sees (yet again) 
 
 ---
 
-archive/issue_comments_085382.json:
+archive/issue_comments_085245.json:
 ```json
 {
     "body": "Well, we're very close, but not there yet ;). Realistically, I'm 90% sure they'll be implemented by the time the summer is out, now that I don't have to spend every waking minute on my thesis.",
     "created_at": "2010-06-05T04:18:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85382",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85245",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -140,15 +138,15 @@ Well, we're very close, but not there yet ;). Realistically, I'm 90% sure they'l
 
 ---
 
-archive/issue_comments_085383.json:
+archive/issue_comments_085246.json:
 ```json
 {
     "body": "Replying to [comment:3 robertwb]:\n> ... now that I don't have to spend every waking minute on my thesis. \n\n+1!\n\nI was also going to mention in response to\n\n> I'm CCing robertwb so that he sees (yet again) another vote for yield statements in Cython.\n\nthat I believe in one-person-one-vote, and I must disclose that I have already voted for this :)",
     "created_at": "2010-06-05T05:33:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85383",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85246",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -167,15 +165,15 @@ that I believe in one-person-one-vote, and I must disclose that I have already v
 
 ---
 
-archive/issue_comments_085384.json:
+archive/issue_comments_085247.json:
 ```json
 {
     "body": "This is now part of #9559.",
     "created_at": "2011-12-27T18:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85384",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85247",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -185,15 +183,15 @@ This is now part of #9559.
 
 ---
 
-archive/issue_comments_085385.json:
+archive/issue_comments_085248.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-03-30T01:09:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85385",
-    "user": "@DaveWitteMorris"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85248",
+    "user": "https://github.com/DaveWitteMorris"
 }
 ```
 
@@ -203,15 +201,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_085386.json:
+archive/issue_comments_085249.json:
 ```json
 {
     "body": "As mentioned in comment:5, the problem has been fixed, so this ticket can be closed as a duplicate of #9559.\n\n```\nsage: ### try sage\nsage: %time gg=list(graphs(7))\nCPU times: user 83.6 ms, sys: 15.4 ms, total: 99.1 ms\nWall time: 117 ms\nsage: ###\nsage: ### now compare with nauty\nsage: %timeit hh=graphs.nauty_geng('-q 7')\nThe slowest run took 11.31 times longer than the fastest. This could mean that an intermediate result is being cached.\n1000000 loops, best of 5: 409 ns per loop\nsage: ###\nsage: ### try a larger example with sage\nsage: %time gg=list(graphs(8))\nCPU times: user 390 ms, sys: 17.6 ms, total: 407 ms\nWall time: 426 ms\nsage: ###\nsage: ### now compare with nauty again\nsage: %timeit hh=graphs.nauty_geng('-q 8')\nThe slowest run took 9.17 times longer than the fastest. This could mean that an intermediate result is being cached.\n1000000 loops, best of 5: 456 ns per loop\n```\n",
     "created_at": "2020-03-30T01:09:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85386",
-    "user": "@DaveWitteMorris"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85249",
+    "user": "https://github.com/DaveWitteMorris"
 }
 ```
 
@@ -244,15 +242,15 @@ The slowest run took 9.17 times longer than the fastest. This could mean that an
 
 ---
 
-archive/issue_comments_085387.json:
+archive/issue_comments_085250.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-03-30T01:09:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85387",
-    "user": "@DaveWitteMorris"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85250",
+    "user": "https://github.com/DaveWitteMorris"
 }
 ```
 
@@ -262,15 +260,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_085388.json:
+archive/issue_comments_085251.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2020-04-14T16:06:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9143",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85388",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9143#issuecomment-85251",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

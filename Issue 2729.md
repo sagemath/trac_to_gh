@@ -6,15 +6,14 @@ archive/issues_002729.json:
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nFor example, try \n\n\n```\nsum([sphere((1+r,2,3), r/10, color='red') for r in [1..10]]).show(aspect_ratio=[1,1,1])\n```\n\n\nSee http://www.mail-archive.com/jmol-users`@`lists.sourceforge.net/msg07676.html (thanks to jason for this tip)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2729\n\n",
     "created_at": "2008-03-30T00:01:21Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch] tiny jmol spheres have holes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2729",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2729
 
 ---
 
-archive/issue_comments_018791.json:
+archive/issue_comments_018752.json:
 ```json
 {
     "body": "positive review pending the deletion of the print statement.",
     "created_at": "2008-03-30T00:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18791",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18752",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -57,15 +56,15 @@ positive review pending the deletion of the print statement.
 
 ---
 
-archive/issue_comments_018792.json:
+archive/issue_comments_018753.json:
 ```json
 {
     "body": "Attachment [2729-jmol-holes.patch](tarball://root/attachments/some-uuid/ticket2729/2729-jmol-holes.patch) by @robertwb created at 2008-03-30 00:38:35\n\nOK, print statement is gone.",
     "created_at": "2008-03-30T00:38:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18792",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18753",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -77,15 +76,15 @@ OK, print statement is gone.
 
 ---
 
-archive/issue_comments_018793.json:
+archive/issue_comments_018754.json:
 ```json
 {
     "body": "looks good.",
     "created_at": "2008-03-30T00:45:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18793",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18754",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -95,15 +94,15 @@ looks good.
 
 ---
 
-archive/issue_comments_018794.json:
+archive/issue_comments_018755.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha0",
     "created_at": "2008-03-31T13:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18794",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18755",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Merged in Sage 3.0.alpha0
 
 ---
 
-archive/issue_comments_018795.json:
+archive/issue_comments_018756.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-31T13:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18795",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2729#issuecomment-18756",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

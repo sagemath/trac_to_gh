@@ -6,15 +6,14 @@ archive/issues_009023.json:
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies\n\nThe spkg-install has the usual dumb code for building 64-bit on OS X. \n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -fPIC -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64\"; export LDFLAGS\nfi\n```\n\n\nThis should be easy to fix, by removing the OS X requirement. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9023\n\n",
     "created_at": "2010-05-23T20:59:54Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "ghmm is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to \"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9023",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9023
 
 ---
 
-archive/issue_comments_083482.json:
+archive/issue_comments_083346.json:
 ```json
 {
     "body": "Attachment [ghmm-64-bit-fix.patch](tarball://root/attachments/some-uuid/ticket9023/ghmm-64-bit-fix.patch) by drkirkby created at 2010-05-23 21:37:46\n\nMercurial patch to build GHMM 64-bit on any operating system.",
     "created_at": "2010-05-23T21:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83482",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83346",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -65,15 +64,15 @@ Mercurial patch to build GHMM 64-bit on any operating system.
 
 ---
 
-archive/issue_comments_083483.json:
+archive/issue_comments_083347.json:
 ```json
 {
     "body": "A revised package can be found at \n\nhttp://boxen.math.washington.edu/home/kirkby/patches/ghmm-20080813.p1.spkg\n\nDave",
     "created_at": "2010-05-23T21:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83483",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83347",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -87,15 +86,15 @@ Dave
 
 ---
 
-archive/issue_comments_083484.json:
+archive/issue_comments_083348.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-23T21:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83484",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83348",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083485.json:
+archive/issue_comments_083349.json:
 ```json
 {
     "body": "For other OpenSolaris issues, see #9026",
     "created_at": "2010-05-24T18:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83485",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83349",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -123,15 +122,15 @@ For other OpenSolaris issues, see #9026
 
 ---
 
-archive/issue_comments_083486.json:
+archive/issue_comments_083350.json:
 ```json
 {
     "body": "I'm not happy with this - are reverting to needs work. It appears to be linking to a 32-bit library. \n\nDave",
     "created_at": "2010-05-31T00:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83486",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83350",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -143,15 +142,15 @@ Dave
 
 ---
 
-archive/issue_comments_083487.json:
+archive/issue_comments_083351.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-31T00:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83487",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83351",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -161,15 +160,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_083488.json:
+archive/issue_comments_083352.json:
 ```json
 {
     "body": "I've decided to revert this back to 'needs review' and change the title slightly. The reason is that the patch, whilst not sufficient for a 64-bit build, does go some way to improving the situation, as objects are now created 64-bit. There's still a problem linking with the wrong library, which needs to be resolved. However, the attached patch may allow us to hack a fix, but putting the 64-bit libraries in the directory where the 32-bit ones should be. As such, this change is worth having, even though it is not a complete cure. \n\nDave",
     "created_at": "2010-06-14T17:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83488",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83352",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -181,15 +180,15 @@ Dave
 
 ---
 
-archive/issue_comments_083489.json:
+archive/issue_comments_083353.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-14T17:41:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83489",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83353",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -199,15 +198,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_083490.json:
+archive/issue_comments_083354.json:
 ```json
 {
     "body": "ghmm is now gone.",
     "created_at": "2010-06-22T17:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83490",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83354",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -217,15 +216,15 @@ ghmm is now gone.
 
 ---
 
-archive/issue_comments_083491.json:
+archive/issue_comments_083355.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2010-06-22T17:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9023",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83491",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9023#issuecomment-83355",
+    "user": "https://github.com/williamstein"
 }
 ```
 

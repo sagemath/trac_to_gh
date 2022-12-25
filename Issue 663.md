@@ -6,15 +6,14 @@ archive/issues_000663.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/663\n\n",
     "created_at": "2007-09-15T20:34:27Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5",
     "title": "get flint into SAGE!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/663",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/663
 
 ---
 
-archive/issue_comments_003447.json:
+archive/issue_comments_003434.json:
 ```json
 {
     "body": "\n```\nProblems with gcc-3.3:\n\n3:58 < williamstein> mabshoff -- regarding gcc and flint -- shouldn't sage still work with gcc-3.3?\n13:59 < williamstein> I.e., so far SAGe doesn't require gcc-3.4, so shouldn't we make it so flint can work with gcc-3.3.\n13:59 < williamstein> Or?\n13:59 < mabshoff> Well, gcc 3.3.x is a decent compiler.\n13:59 < mabshoff> So it should work, and there are some workarounds for the problems in FLINT.\n14:02 < mabshoff> well:\n14:02 < mabshoff>  GCC provides built-in versions of the ISO C99 floating point comparison\n14:02 < mabshoff> macros that avoid raising exceptions for unordered operands.  They have\n14:02 < mabshoff> the same names as the standard macros ( `isgreater', `isgreaterequal',\n14:02 < mabshoff> `isless', `islessequal', `islessgreater', and `isunordered') , with\n14:02 < mabshoff> `__builtin_' prefixed.  We intend for a library implementor to be able\n14:02 < mabshoff> to simply `#define' each standard macro to its built-in equivalent.\n```\n",
     "created_at": "2007-09-15T21:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/663",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/663#issuecomment-3447",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/663#issuecomment-3434",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -64,15 +63,15 @@ Problems with gcc-3.3:
 
 ---
 
-archive/issue_comments_003448.json:
+archive/issue_comments_003435.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-20T19:15:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/663",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/663#issuecomment-3448",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/663#issuecomment-3435",
+    "user": "https://github.com/williamstein"
 }
 ```
 

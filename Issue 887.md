@@ -6,7 +6,7 @@ archive/issues_000887.json:
     "body": "Assignee: failure\n\nAll three errors are essentially the same; here's one of them:\n\n```\nFile \"real_roots.pyx\", line 797:\n    sage: str(dbp)\nExpected:\n    '<IBP: (-1, 148, 901) + [0 .. 4); level 1; slope_err [-24.000000000000000 .. 24.000000000000000]>'\nGot:\n    '<IBP: (-1, 148, 901) + [0 .. 4); level 1>'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/887\n\n",
     "created_at": "2007-10-13T20:31:31Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000887.json:
     "title": "2.8.7-alpha0: doctest failure in rings/polynomial/real_roots.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/887",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: failure
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/887
 
 ---
 
-archive/issue_comments_005474.json:
+archive/issue_comments_005457.json:
 ```json
 {
     "body": "Attachment [6930.patch](tarball://root/attachments/some-uuid/ticket887/6930.patch) by cwitty created at 2007-10-13 22:11:40",
     "created_at": "2007-10-13T22:11:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/887#issuecomment-5474",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/887#issuecomment-5457",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -58,15 +58,15 @@ Attachment [6930.patch](tarball://root/attachments/some-uuid/ticket887/6930.patc
 
 ---
 
-archive/issue_comments_005475.json:
+archive/issue_comments_005458.json:
 ```json
 {
     "body": "This one was all my fault :-)\n\nMy original code was buggy, but the bug was masked by a Cython bug.  But I was the one who reported the Cython bug and triggered the fix, exposing this bug...",
     "created_at": "2007-10-13T22:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/887#issuecomment-5475",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/887#issuecomment-5458",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -78,15 +78,15 @@ My original code was buggy, but the bug was masked by a Cython bug.  But I was t
 
 ---
 
-archive/issue_comments_005476.json:
+archive/issue_comments_005459.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-14T22:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/887#issuecomment-5476",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/887#issuecomment-5459",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_006741.json:
     "body": "Assignee: @williamstein\n\nThe attached patch implements several functions providing a simpler interface to the Python Imaging Library. For example, you can sharpen the image of an image on the internet you have the url of and save it to Sage's tmp subdirectory.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6741\n\n",
     "created_at": "2009-08-13T23:15:11Z",
     "labels": [
-        "interfaces",
-        "major",
-        "enhancement"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "pil interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6741",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6741
 
 ---
 
-archive/issue_comments_055230.json:
+archive/issue_comments_055128.json:
 ```json
 {
     "body": "Attachment [trac_6741-pil.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741-pil.patch) by @wdjoyner created at 2009-08-13 23:20:20\n\nrequires pil-1.1.6, applies to 4.1.1.rc2",
     "created_at": "2009-08-13T23:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55230",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55128",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -49,15 +47,15 @@ requires pil-1.1.6, applies to 4.1.1.rc2
 
 ---
 
-archive/issue_comments_055231.json:
+archive/issue_comments_055129.json:
 ```json
 {
     "body": "Changing component from interfaces to packages.",
     "created_at": "2009-08-18T17:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55231",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55129",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -67,15 +65,15 @@ Changing component from interfaces to packages.
 
 ---
 
-archive/issue_comments_055232.json:
+archive/issue_comments_055130.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2009-08-18T17:45:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55232",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55130",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_comments_055233.json:
+archive/issue_comments_055131.json:
 ```json
 {
     "body": "This [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/caac9691d6fb0160) thread has a discussion about making PIL a standard spkg. The vote for doing so was carried out in that thread.",
     "created_at": "2009-08-18T17:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55233",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55131",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -103,15 +101,15 @@ This [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread
 
 ---
 
-archive/issue_comments_055234.json:
+archive/issue_comments_055132.json:
 ```json
 {
     "body": "This looks very nice.  However, the doctests write to SAGE_ROOT/tmp, which means that a normal user cannot run doctests on this file.  Isn't there somewhere else that we should write temporary data during a doctest?  Maybe using SAGE_TMP or something like that?",
     "created_at": "2009-09-17T09:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55234",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55132",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -121,15 +119,15 @@ This looks very nice.  However, the doctests write to SAGE_ROOT/tmp, which means
 
 ---
 
-archive/issue_comments_055235.json:
+archive/issue_comments_055133.json:
 ```json
 {
     "body": "I guess there isn't a SAGE_TMP.  How about a temporary directory under .sage?",
     "created_at": "2009-09-17T09:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55235",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55133",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -139,15 +137,15 @@ I guess there isn't a SAGE_TMP.  How about a temporary directory under .sage?
 
 ---
 
-archive/issue_comments_055236.json:
+archive/issue_comments_055134.json:
 ```json
 {
     "body": "Replying to [comment:6 jason]:\n> I guess there isn't a SAGE_TMP.  How about a temporary directory under .sage?\nYes.",
     "created_at": "2009-09-17T10:05:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55236",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55134",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -159,15 +157,15 @@ Yes.
 
 ---
 
-archive/issue_comments_055237.json:
+archive/issue_comments_055135.json:
 ```json
 {
     "body": "Nice work; thanks for doing this!\n\nMarking as \"needs work\" for the following reasons:\n\n* Doctests which rely on internet should be marked \"optional - requires internet\"\n* image_convert should probably let me specify an output file name, or by default write in the current directory so that we can use it easily in the notebook (e.g., we convert something and it magically appears in the cell output).\n* someone should test this on a mac and then remove the note about it not being tested on a mac\n* stylistically, it looks like there is lots of duplicated code that opens files from the internet; maybe this could be refactored into a single function (and then used for image_convert as well)?",
     "created_at": "2009-09-22T15:21:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55237",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55135",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -184,15 +182,15 @@ Marking as "needs work" for the following reasons:
 
 ---
 
-archive/issue_comments_055238.json:
+archive/issue_comments_055136.json:
 ```json
 {
     "body": "Replying to [comment:8 jason]:\n> Nice work; thanks for doing this!\n> \n> Marking as \"needs work\" for the following reasons:\n> \n\nArrgghh ...\nJust saw this now, going through old emails.\n\nI will try to work on these referee comments/suggestions now. It probably needs rebasing anyway.\nSorry for the late reply.",
     "created_at": "2010-01-04T03:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55238",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55136",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -212,15 +210,15 @@ Sorry for the late reply.
 
 ---
 
-archive/issue_comments_055239.json:
+archive/issue_comments_055137.json:
 ```json
 {
     "body": "Good news: it applies fine and does not need rebasing.\n\nBad news: Now I can't even get the code to work. I've tried on an imac (which requires some extra work to get libjpeg to install) and on an ubuntu machine. Probably I'm missing something obvious, but I don't know what it is.",
     "created_at": "2010-01-08T12:15:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55239",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55137",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -232,15 +230,15 @@ Bad news: Now I can't even get the code to work. I've tried on an imac (which re
 
 ---
 
-archive/issue_comments_055240.json:
+archive/issue_comments_055138.json:
 ```json
 {
     "body": "Attachment [trac_6741_cleanup1.patch](tarball://root/attachments/some-uuid/ticket6741/trac_6741_cleanup1.patch) by @fchapoton created at 2013-08-22 20:11:42\n\nok, here is a cleanup patch.\n\nThere is an issue with fontmanager that I do not understand",
     "created_at": "2013-08-22T20:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55240",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55138",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -254,15 +252,15 @@ There is an issue with fontmanager that I do not understand
 
 ---
 
-archive/issue_comments_055241.json:
+archive/issue_comments_055139.json:
 ```json
 {
     "body": "Can one mark in some way the tests that depends on the presence of libpeg ?\n\nSomething like # optional libjpeg ?",
     "created_at": "2013-08-31T14:46:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55241",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55139",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -274,15 +272,15 @@ Something like # optional libjpeg ?
 
 ---
 
-archive/issue_comments_055242.json:
+archive/issue_comments_055140.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2014-01-08T09:00:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55242",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55140",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -292,15 +290,15 @@ New commits:
 
 ---
 
-archive/issue_comments_055243.json:
+archive/issue_comments_055141.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-05-19T12:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55243",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55141",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -310,15 +308,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_055244.json:
+archive/issue_comments_055142.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-07-29T18:31:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6741",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55244",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/6741#issuecomment-55142",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 

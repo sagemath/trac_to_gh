@@ -6,7 +6,7 @@ archive/issues_006278.json:
     "body": "Assignee: tbd\n\nI noticed an error building linbox on the 16-core Sun T5240 't2' which currently runs Solaris 10 update 4 and uses gcc 4.4.0.\n\nIt would appear that linbox needs blas library, which the configure script does not find. Looking at the list of installed packages, this is true. The 'blas-20070724.spkg' has NOT been built. Only the following have been built at the time linbox attempted to compile. \n\n\n```\n\natlas-3.8.3.p2\nbzip2-1.0.5\nconway_polynomials-0.2\ndir-0.1\neclib-20080310.p7\nelliptic_curves-0.1\nextcode-4.0.1.alpha0\nflint-1.2.4.p3\nfortran-20071120.p5\nfreetype-2.3.5.p0\ngd-2.0.35.p1\ngdmodule-0.56.p5\ngivaro-3.2.13rc2\ngnutls-2.2.1.p1\ngraphs-20070722\ngsl-1.10.p1\niml-1.0.1.p11\nipython-0.9.1\nlapack-20071123.p0\nlibgcrypt-1.4.3.p0\nlibgpg_error-1.6.p0\nlibpng-1.2.35\nmpir-1.2.p0\nntl-5.4.2.p7\nopencdk-0.6.6\npari-2.3.3.p0\nprereq-0.3\npython-2.5.4.p1\nreadline-5.2.p6\nsage_scripts-4.0.1.alpha0\nsqlite-3.5.3.p3\ntermcap-1.3.1.p0\nzlib-1.2.3.p4\n```\n\n\n\nI'm a bit puzzled by this one. I would not have thought this to be a Solaris-specific issue, so why it should not have been caught earlier by others I don't know. \n\n\n```\n\nMachine:\nSunOS t2 5.10 Generic_127111-09 sun4v sparc SUNW,T5240\nDeleting directories from past builds of previous/current versions of linbox-1.1.6\nExtracting package /home/kirkby/sage-4.0.1.alpha0/spkg/standard/linbox-1.1.6.spkg ...\n-rw-r--r--   1 kirkby   1093     1577140 May 15 18:42 /home/kirkby/sage-4.0.1.alpha0/spkg/standard/linbox-1.1.6.spkg\nlinbox-1.1.6/\nlinbox-1.1.6/spkg-rebuild\nlinbox-1.1.6/.hgignore\nlinbox-1.1.6/.hg/\nlinbox-1.1.6/.hg/dirstate\nlinbox-1.1.6/.hg/requires\nlinbox-1.1.6/.hg/store/\nlinbox-1.1.6/.hg/store/undo\nlinbox-1.1.6/.hg/store/data/\n<SNIP >\nlinbox-1.1.6/src/examples/sparseelimrank.C\nlinbox-1.1.6/src/examples/valence.C\nlinbox-1.1.6/src/examples/fields/\nlinbox-1.1.6/src/examples/fields/Makefile.am\nlinbox-1.1.6/src/examples/fields/Makefile.in\nlinbox-1.1.6/src/examples/fields/ex-fields.C\nlinbox-1.1.6/src/examples/fields/ex-fields-archetype.C\nlinbox-1.1.6/src/examples/fields/modular-int.C\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS t2 5.10 Generic_127111-09 sun4v sparc SUNW,T5240\n****************************************************\n****************************************************\nGCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.0/configure --with-gnu-as --with-as=/home/kirkby/bin/as --with-gnu-ld --with-ld=/home/kirkby/bin/ld --with-gmp=/home/kirkby/dependencies/ --with-mpfr=/home/kirkby/dependencies/ --enable-languages=c,c++,fortran --prefix=/home/kirkby/dependencies/\nThread model: posix\ngcc version 4.4.0 (GCC)\n****************************************************\nCopying commentator patch\nSolaris cblas\n*************************************************\n Using LINBOX_BLAS=-lcblas -latlas\n*************************************************\nchecking for a BSD-compatible install... ./install-sh -c\nchecking whether build environment is sane... yes\nchecking for a thread-safe mkdir -p... ./install-sh -c -d\nchecking for gawk... no\nchecking for mawk... no\nchecking for nawk... nawk\nchecking whether make sets $(MAKE)... yes\nchecking whether to enable maintainer-specific portions of Makefiles... no\nchecking for gcc... gcc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables...\nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether gcc accepts -g... yes\nchecking for gcc option to accept ISO C89... none needed\nchecking whether we are using the GNU C++ compiler... yes\nchecking whether g++ accepts -g... yes\nchecking how to run the C preprocessor... gcc -E\nchecking for grep that handles long lines and -e... /usr/sfw/bin/ggrep\nchecking for egrep... /usr/sfw/bin/ggrep -E\nchecking for ANSI C header files... yes\nchecking build system type... sparc-sun-solaris2.10\nchecking host system type... sparc-sun-solaris2.10\nchecking for a sed that does not truncate output... /home/kirkby/dependencies/bin/sed\nchecking for ld used by gcc... ld\nchecking if the linker (ld) is GNU ld... yes\nchecking for ld option to reload object files... -r\nchecking for BSD-compatible nm... /home/kirkby/bin/nm -B\nchecking whether ln -s works... yes\nchecking how to recognize dependent libraries... pass_all\nchecking for sys/types.h... yes\nchecking for sys/stat.h... yes\nchecking for stdlib.h... yes\nchecking for string.h... yes\nchecking for memory.h... yes\nchecking for strings.h... yes\nchecking for inttypes.h... yes\nchecking for stdint.h... yes\nchecking for unistd.h... yes\nchecking dlfcn.h usability... yes\nchecking dlfcn.h presence... yes\nchecking for dlfcn.h... yes\nchecking how to run the C++ preprocessor... g++ -E\nchecking for g77... no\nchecking for xlf... no\nchecking for f77... f77\nchecking whether we are using the GNU Fortran 77 compiler... yes\nchecking whether f77 accepts -g... yes\nchecking the maximum length of command line arguments... 786240\nchecking command to parse /home/kirkby/bin/nm -B output from gcc object... ok\nchecking for objdir... .libs\nchecking for ar... ar\nchecking for ranlib... ranlib\nchecking for strip... strip\nchecking if gcc supports -fno-rtti -fno-exceptions... no\nchecking for gcc option to produce PIC... -fPIC\nchecking if gcc PIC flag -fPIC works... yes\nchecking if gcc static flag -static works... no\nchecking if gcc supports -c -o file.o... yes\nchecking whether the gcc linker (ld) supports shared libraries... yes\nchecking whether -lc should be explicitly linked in... yes\nchecking dynamic linker characteristics... solaris2.10 ld.so\nchecking how to hardcode library paths into programs... immediate\nchecking whether stripping libraries is possible... yes\nchecking if libtool supports shared libraries... yes\nchecking whether to build shared libraries... yes\nchecking whether to build static libraries... no\nconfigure: creating libtool\nappending configuration tag \"CXX\" to libtool\nchecking for ld used by g++... ld\nchecking if the linker (ld) is GNU ld... yes\nchecking whether the g++ linker (ld) supports shared libraries... yes\nchecking for g++ option to produce PIC... -fPIC\nchecking if g++ PIC flag -fPIC works... yes\nchecking if g++ static flag -static works... no\nchecking if g++ supports -c -o file.o... yes\nchecking whether the g++ linker (ld) supports shared libraries... yes\nchecking dynamic linker characteristics... solaris2.10 ld.so\n(cached) (cached) checking how to hardcode library paths into programs... immediate\nappending configuration tag \"F77\" to libtool\nchecking if libtool supports shared libraries... yes\nchecking whether to build shared libraries... yes\nchecking whether to build static libraries... no\nchecking for f77 option to produce PIC... -fPIC\nchecking if f77 PIC flag -fPIC works... yes\nchecking if f77 static flag -static works... no\nchecking if f77 supports -c -o file.o... yes\nchecking whether the f77 linker (ld) supports shared libraries... yes\nchecking dynamic linker characteristics... solaris2.10 ld.so\n(cached) (cached) checking how to hardcode library paths into programs... immediate\nchecking for char... yes\nchecking size of char... 1\nchecking for short... yes\nchecking size of short... 2\nchecking for int... yes\nchecking size of int... 4\nchecking for long... yes\nchecking size of long... 4\nchecking for long long... yes\nchecking size of long long... 8\nchecking for __int64... no\nchecking size of __int64... 0\nchecking whether byte ordering is bigendian... yes\nDefault path = /usr /usr/local\nchecking whether to compile the drivers... no\nchecking for GMP >= 3.1.1... found\nchecking whether GMP is 4.0 or greater... yes\nchecking whether GMP was compiled with --enable-cxx... yes\nchecking for NTL >= 5.0... found\nchecking for GIVARO >= 3.2.10... found\nchecking whether to compile the sage interface... yes\nchecking for C interface to BLAS... not found\nchecking for others BLAS... not found\n\n*******************************************************************************\n ERROR: BLAS not found!\n\n BLAS routines are required for this library to compile. Please\n make sure BLAS are installed and specify its location with the option\n --with-blas=<lib> when running configure.\n*******************************************************************************\nError configuring linbox\n\nreal    0m53.809s\nuser    0m20.064s\nsys     0m21.375s\nsage: An error occurred while installing linbox-1.1.6\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /home/kirkby/sage-4.0.1.alpha0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/home/kirkby/sage-4.0.1.alpha0/spkg/build/linbox-1.1.6 and type 'make'.\nInstead type \"/home/kirkby/sage-4.0.1.alpha0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/home/kirkby/sage-4.0.1.alpha0/spkg/build/linbox-1.1.6\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/linbox-1.1.6] Error 1\nmake[1]: Leaving directory `/home/kirkby/sage-4.0.1.alpha0/spkg'\n\nreal    497m40.205s\nuser    443m47.011s\nsys     25m30.557s\npython: can't open file '/home/kirkby/sage-4.0.1.alpha0/devel/sage/doc/common/builder.py': [Errno 2] No such file or directory\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6278\n\n",
     "created_at": "2009-06-14T07:38:34Z",
     "labels": [
-        "porting: Solaris",
+        "component: porting: solaris",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006278.json:
     "title": "linbox-1.1.6 fails to build in sage 4.0.1 with Solaris and gcc 4.4.0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6278",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -270,15 +270,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6278
 
 ---
 
-archive/issue_comments_050138.json:
+archive/issue_comments_050042.json:
 ```json
 {
     "body": "Changing priority from blocker to critical.",
     "created_at": "2009-06-15T23:38:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6278",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50138",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50042",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -288,15 +288,15 @@ Changing priority from blocker to critical.
 
 ---
 
-archive/issue_comments_050139.json:
+archive/issue_comments_050043.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-06-19T10:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6278",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50139",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50043",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -306,15 +306,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_050140.json:
+archive/issue_comments_050044.json:
 ```json
 {
     "body": "Changing assignee from tbd to drkirkby.",
     "created_at": "2009-06-19T10:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6278",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50140",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50044",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -324,15 +324,15 @@ Changing assignee from tbd to drkirkby.
 
 ---
 
-archive/issue_comments_050141.json:
+archive/issue_comments_050045.json:
 ```json
 {
     "body": "I've found this is not a bug, but a result of a bug in the GNU linker, version 2.15 at /usr/sfw/bin/gld in Solaris 10. \n\nHow does one close the bug?",
     "created_at": "2009-06-19T10:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6278",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50141",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50045",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -344,15 +344,15 @@ How does one close the bug?
 
 ---
 
-archive/issue_comments_050142.json:
+archive/issue_comments_050046.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-06-20T10:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6278",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50142",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6278#issuecomment-50046",
+    "user": "https://github.com/williamstein"
 }
 ```
 

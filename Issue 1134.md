@@ -6,15 +6,13 @@ archive/issues_001134.json:
     "body": "Assignee: @williamstein\n\n\n```\nOn Nov 8, 2007 9:52 PM, mabshoff <Michael.Abshoff@fsmath.mathematik.uni-dortmund.de> wrote:\n[...]\n> > Woah!  Can someone explain to me the various calls above?  I'd think\n> > this should take epsilon time to coerce the elements of the sequence.\n> > Or perhaps is there another better way to coerce into Z_F (or,\n> > equivalently for me, F)?\n> >\n> \n> There is without a doubt something fishy going on with coercion. See\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n> also malb's report with polynomial rings at\n> http://www.sagetrac.org/sage_trac/ticket/1046\n\nI have some doubt that John Voight's observation above has  to do with\nMalb's speed regression report.    I think it's just that a particular way\nof constructing elements in an order (coercing from a list) hasn't been optimized\none speck since when we implement orders a month ago.   And code that\nhas had zero optimization tends to be slow.  The sort answer is that *right now*\nit's vastly faster to construct the element of the order via doing arithmetic\ninstead of explicitly coercing in a list, since we've optimized arithmetic more.\nSee the timings and examples in the worksheet below. \n```\n\n\ncoerce speed question from john voight\nsystem:sage\n\n\n```\nid=0|\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     for i in range(n):\n         Z_F([5,1])\n```\n\n\n\n```\nid=1|\ntime stupid_function(10^4)\n///\nCPU time: 7.88 s,  Wall time: 9.31 s\n```\n\n\n\n```\nid=10|\ndef stupid_function(n):\n     Z_F = NumberField(x^2-x-1, 't').maximal_order()\n     a,b = Z_F.gens()\n     for i in range(n):\n         w = a + 5*b\n```\n\n\n\n```\nid=11|\ntime stupid_function(10^4)\n///\nCPU time: 0.05 s,  Wall time: 0.05 s\n```\n\n\n\n```\nid=2|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     for i in range(n):\n         K([5,1])\n```\n\n\n\n```\nid=3|\ntime stupid_function(10^4)\n///\nCPU time: 4.81 s,  Wall time: 4.88 s\n```\n\n\n\n```\nid=4|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     v = [5,1]\n     for i in range(n):\n         K(v)\n```\n\n\n\n```\nid=5|\ntime stupid_function(10^4)\n///\nCPU time: 4.78 s,  Wall time: 4.81 s\n```\n\n\n\n```\nid=6|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     one = K(1); t = K.gen(); five = K(5)\n     for i in range(n):\n         w = five*t + one\n```\n\n\n\n```\nid=7|\ntime stupid_function(10^4)\n///\nCPU time: 0.04 s,  Wall time: 0.04 s\n```\n\n\n\n```\nid=8|\ndef stupid_function(n):\n     K = NumberField(x^2-x-1, 't')\n     t = K.gen()\n     for i in range(n):\n         w = 5*t + 1\n```\n\n\n\n```\nid=9|\ntime stupid_function(10^4)\n///\nCPU time: 0.38 s,  Wall time: 0.38 s\n```\n\n\n\n\n\n```\nid=12|\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1134\n\n",
     "created_at": "2007-11-09T08:20:30Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "optimize creating elements of orders and number fields by coercing in lists",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1134",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -183,15 +181,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1134
 
 ---
 
-archive/issue_comments_006873.json:
+archive/issue_comments_006852.json:
 ```json
 {
     "body": "Attached bundle partially addresses this issue, by implementing a fast QQ => quadratic number field element coercion. Currently this only affects implicit coercions, but when Robert+David's new coercion framework is finished, it should help explicit coercions too. But it still doesn't totally address the issue for this ticket.\n\nExample:\n\n\n```\ndef stupid_function(n):\n    Z_F = NumberField(x^2-x-1, 't')\n    y = Z_F.gen()\n    u = 2/3\n    for i in range(n):\n        z = y + u\n\ntime stupid_function(50000)\n```\n\n\n\nBefore:\n\n```\nTime: CPU 13.68 s, Wall: 14.07 s\n```\n\n\nAfter:\n\n```\nTime: CPU 0.25 s, Wall: 0.52 s\n```\n",
     "created_at": "2007-11-14T23:30:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6873",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6852",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -231,15 +229,15 @@ Time: CPU 0.25 s, Wall: 0.52 s
 
 ---
 
-archive/issue_comments_006874.json:
+archive/issue_comments_006853.json:
 ```json
 {
     "body": "I think it's worth applying this patch, even if it doesn't solve the whole problem.\n\nIn my tests, it applied cleanly, sage/rings/number_field/* doctests still passed, and the code looks reasonable.  I approve.",
     "created_at": "2007-12-01T03:06:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6874",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6853",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -251,15 +249,15 @@ In my tests, it applied cleanly, sage/rings/number_field/* doctests still passed
 
 ---
 
-archive/issue_comments_006875.json:
+archive/issue_comments_006854.json:
 ```json
 {
     "body": "Applied 1134.hg (1.4 kB) - added by dmharvey on 11/14/2007 03:30:21 PM.\n\nWhat are we supposed to do about this now? Close this and open another ticket for the remaining issue?\n\nCheers,\n\nMichael",
     "created_at": "2007-12-01T11:42:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6875",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6854",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -275,15 +273,15 @@ Michael
 
 ---
 
-archive/issue_comments_006876.json:
+archive/issue_comments_006855.json:
 ```json
 {
     "body": "Changing component from number theory to number fields.",
     "created_at": "2009-07-20T19:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6876",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6855",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -293,15 +291,15 @@ Changing component from number theory to number fields.
 
 ---
 
-archive/issue_comments_006877.json:
+archive/issue_comments_006856.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T19:59:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6877",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6856",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -311,15 +309,15 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
-archive/issue_comments_006878.json:
+archive/issue_comments_006857.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2009-10-06T19:25:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6878",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6857",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -329,15 +327,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_006879.json:
+archive/issue_comments_006858.json:
 ```json
 {
     "body": "Attachment [trac_1134.patch](tarball://root/attachments/some-uuid/ticket1134/trac_1134.patch) by @mwhansen created at 2013-07-22 13:39:33",
     "created_at": "2013-07-22T13:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6879",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6858",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -347,15 +345,15 @@ Attachment [trac_1134.patch](tarball://root/attachments/some-uuid/ticket1134/tra
 
 ---
 
-archive/issue_comments_006880.json:
+archive/issue_comments_006859.json:
 ```json
 {
     "body": "I posted a patch which adds a fast case for tuples / lists of coefficients in the power basis.  For the timings with Z_F, most of the time is spent checking the embedding.  I've added a check option to disable that check if you know that the element is already in the order.\n\nThe bundle which was attached had been previously merged in.",
     "created_at": "2013-07-22T13:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6880",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6859",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -367,15 +365,15 @@ The bundle which was attached had been previously merged in.
 
 ---
 
-archive/issue_comments_006881.json:
+archive/issue_comments_006860.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-07-22T13:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6881",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6860",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -385,15 +383,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_006882.json:
+archive/issue_comments_006861.json:
 ```json
 {
     "body": "Patch applies with some fuzz to sage-6.0 if you use `patch -l`",
     "created_at": "2014-02-13T08:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6882",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6861",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -403,15 +401,15 @@ Patch applies with some fuzz to sage-6.0 if you use `patch -l`
 
 ---
 
-archive/issue_comments_006883.json:
+archive/issue_comments_006862.json:
 ```json
 {
     "body": "With some careful merge I was able to make the patch applied and work on sage-6.3.beta3. But, the map `list_to_quadratic_field_element` is completely useless as there is no gain at all. Moreover, it is one more map added to the list of conversions. So I would suggest to not add it with that ticket.\n\nOne interesting optimization in the ticket is the `check` parameter added to the `_element_constructor_`. Do you agree if I provide a branch that contains only that?\n\nAlso, as it was said in comment:9 most of the time in the construction is spent in checking. So it would be worth to optimize it. The longest part comes from decomposing a vector on a given basis as the timings below show.\n\nThe construction takes roughly 600 micro seconds\n\n```\nsage: K = NumberField(x^2-x-1, 't')\nsage: Z_F = K.maximal_order()\nsage: x = K([5,1])\nsage: %timeit Z_F(x)\n1000 loops, best of 3: 674 \u00b5s per loop\n```\n\nBut most of the time is spent in checking that some vector belong to some submodule\n\n```\nsage: %timeit K.vector_space()      # <--- this is very quick\n1000000 loops, best of 3: 431 ns per loop\nsage: embedding = K.vector_space()[2]\nsage: embedding\nIsomorphism map:\n  From: Number Field in t with defining polynomial x^2 - x - 1\n  To:   Vector space of dimension 2 over Rational Field\nsage: %timeit embedding(x)          # <--- this is quick\n10000 loops, best of 3: 49.8 \u00b5s per loop\nsage: v = phi(x)\nsage: %timeit v in Z_F._module_rep  # <--- this is damn slow\n1000 loops, best of 3: 608 \u00b5s per loop\n```\n\nAnd in `__contains__` of `FreeModule`, the mess comes from calling `coordinates` that decompose the vector on the basis of the module:\n\n```\nsage: V = Z_F._module_rep\nsage: %timeit V.coordinates(v)\n1000 loops, best of 3: 612 \u00b5s per loop\n```\n",
     "created_at": "2014-06-13T18:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6883",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6862",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -461,15 +459,15 @@ sage: %timeit V.coordinates(v)
 
 ---
 
-archive/issue_comments_006884.json:
+archive/issue_comments_006863.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2014-06-13T18:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1134",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6884",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/1134#issuecomment-6863",
+    "user": "https://github.com/videlec"
 }
 ```
 

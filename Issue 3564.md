@@ -6,15 +6,13 @@ archive/issues_003564.json:
     "body": "Assignee: @garyfurnish\n\nThe attached patch works and speeds up the sage import from between 0.1 and 0.5 seconds, depending on caching. \n\nNOTE: It is necessary to fix a bug in sympy first.  \n\n\n```\n11:57 < wstein> The fix would be to change line 99 of printing/pretty/pretty_symbology.py to\n11:57 < wstein>             try:\n11:57 < wstein>                encoding = sys.stdout.encoding\n11:57 < wstein>             except AttributeError: return\n11:58 < wstein> Yep, that 100% fixes the problem.\n11:58 < ondrej> ok, I'll commit it. thanks\n11:58 < wstein> Maybe you already did that?\n11:58 < wstein> It is right, I think, since you do almost the same thing 2 lines later.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3564\n\n",
     "created_at": "2008-07-06T19:02:13Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.6",
     "title": "[with patch; needs review] optimize sage startup: don't import sympy by default",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3564",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @garyfurnish
@@ -44,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3564
 
 ---
 
-archive/issue_comments_025182.json:
+archive/issue_comments_025132.json:
 ```json
 {
     "body": "To verify that this indeed fixes the \"sympy gets imported\" problem, do this:\n\nteragon-2:calculus was$ sage -startuptime |grep sympy\nteragon-2:calculus was$ \n\nafter applying the startuptime patch: #3559",
     "created_at": "2008-07-06T19:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25182",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25132",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +65,15 @@ after applying the startuptime patch: #3559
 
 ---
 
-archive/issue_comments_025183.json:
+archive/issue_comments_025133.json:
 ```json
 {
     "body": "Attachment [sage-3564.patch](tarball://root/attachments/some-uuid/ticket3564/sage-3564.patch) by @williamstein created at 2008-07-06 19:04:34\n\nThis bug is fixed in the new version of sympy:\n\n\n```\n12:01 < ondrej> now it is not\n12:01 < ondrej> we fixed that in 0.5.15\n12:01 < ondrej> bug I fixed important bug in our hg\n12:01 < ondrej> and I am releasing the whole weekend...\n12:02 < ondrej> (important sage<-> sympy bug)\n12:02 < ondrej> so when I release, I'll create a spkg\n```\n",
     "created_at": "2008-07-06T19:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25183",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25133",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -98,15 +96,15 @@ This bug is fixed in the new version of sympy:
 
 ---
 
-archive/issue_comments_025184.json:
+archive/issue_comments_025134.json:
 ```json
 {
     "body": "Thanks for the bug report. This is fixed in sympy 0.5.15. Sympy 0.5.16 that is about to be released tomorrow fixes another important bug with sympy matrices in Sage, so I'll create a new spkg tomorrow, or on Tuesday the latest.",
     "created_at": "2008-07-06T19:07:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25184",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25134",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -116,15 +114,15 @@ Thanks for the bug report. This is fixed in sympy 0.5.15. Sympy 0.5.16 that is a
 
 ---
 
-archive/issue_comments_025185.json:
+archive/issue_comments_025135.json:
 ```json
 {
     "body": "A new sympy-0.6.0.spkg together with a patch for sage was attached to #3592.",
     "created_at": "2008-07-07T22:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25185",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25135",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -134,15 +132,15 @@ A new sympy-0.6.0.spkg together with a patch for sage was attached to #3592.
 
 ---
 
-archive/issue_comments_025186.json:
+archive/issue_comments_025136.json:
 ```json
 {
     "body": "The does what it advertises, \"testall long\" passes with the patch applied. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-16T06:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25186",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25136",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -156,15 +154,15 @@ Michael
 
 ---
 
-archive/issue_comments_025187.json:
+archive/issue_comments_025137.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-16T06:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25187",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25137",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -174,15 +172,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025188.json:
+archive/issue_comments_025138.json:
 ```json
 {
     "body": "Merged in Sage 3.0.6.alpha1",
     "created_at": "2008-07-16T06:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25188",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3564#issuecomment-25138",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

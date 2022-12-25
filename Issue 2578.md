@@ -6,15 +6,14 @@ archive/issues_002578.json:
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\nI wanted to verify that Sage could symbolically compute the derivative\nof Bn(x), the nth Bernoulli polynomial in (x): Dx[Bn(x)]=n*Bn-1(x).\nThe following code causes Sage to lockup:\n\n```\nBn = bernoulli_polynomial(x,n)\n```\n\n\nThe command \"bernpoly(x,n)\" in Maxima does not lock up but Maxima\nwill not compute symbolically.\n\n\n```\nsage: B3 = bernoulli_polynomial(x,3)\nsage: B4 = bernoulli_polynomial(x,4)\nsage: DxB4 = diff(B4,x)\nsage: print expand(DxB4-4*B3)\n                                      0\nsage: Bn = bernoulli_polynomial(x,n)\nTraceback (most recent call last):\n...\nKeyboardInterrupt\n>>>\n>>>\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2578\n\n",
     "created_at": "2008-03-17T23:29:04Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "bug in bernoulli_polynomial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2578",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -59,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2578
 
 ---
 
-archive/issue_comments_017631.json:
+archive/issue_comments_017593.json:
 ```json
 {
     "body": "I forgot to define (n) as a variable in the above session.\nNow, Sage does not lockup but instead gives the traceback.\n\n\n```\nvar('y,x,n')\ny = bernoulli_polynomial(x,n)\n\nException (click to the left for traceback):\n...\nNameError: name 'bernpoly' is not defined\n\nTraceback (most recent call last):\n File \"<stdin>\", line 1, in <module>\n File \"/home/server2/sage_notebook/worksheets/5463/24/code/18.py\",\nline 7, in <module>\n   y = bernoulli_polynomial(x,n)\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sympy/\nplotting/\", line 1, in <module>\n\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/\ncombinat/combinat.py\", line 1806, in bernoulli_polynomial\n   return sage_eval(maxima.eval(\"bernpoly(x,%s)\"%n), {'x':x})\n File \"/usr/local/sage/local/lib/python2.5/site-packages/sage/misc/\nsage_eval.py\", line 110, in sage_eval\n   return eval(p, sage.all.__dict__, locals)\n File \"<string>\", line 1, in <module>\nNameError: name 'bernpoly' is not defined\n```\n",
     "created_at": "2008-03-17T23:45:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17631",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17593",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -106,15 +105,15 @@ NameError: name 'bernpoly' is not defined
 
 ---
 
-archive/issue_comments_017632.json:
+archive/issue_comments_017594.json:
 ```json
 {
     "body": "Since combinat.py is involved I am CCind Mike Hansen :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-14T09:43:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17632",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17594",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +127,15 @@ Michael
 
 ---
 
-archive/issue_comments_017633.json:
+archive/issue_comments_017595.json:
 ```json
 {
     "body": "Oh, and definitely not invalid.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-14T09:45:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17633",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17595",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -150,15 +149,15 @@ Michael
 
 ---
 
-archive/issue_comments_017634.json:
+archive/issue_comments_017596.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @craigcitro.",
     "created_at": "2009-01-23T09:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17634",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17596",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -168,15 +167,15 @@ Changing assignee from @williamstein to @craigcitro.
 
 ---
 
-archive/issue_comments_017635.json:
+archive/issue_comments_017597.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-23T09:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17635",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17597",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -186,15 +185,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_017636.json:
+archive/issue_comments_017598.json:
 ```json
 {
     "body": "The attached patch rewrites `bernoulli_polynomial` to avoid Maxima completely. This gives roughly a factor of 10 speedup.\n\nUnfortunately, the originial request doesn't quite make sense -- `bernoulli_polynomial(x,n)` for `n` a symbolic variable would have to return a polynomial of variable degree. As it stands, we don't have any sort of \"symbolic sum\" to use for that kind of thing. I did add the formula for the `n`th Bernoulli polynomial to the docstring, though.",
     "created_at": "2009-01-23T09:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17636",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17598",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -206,15 +205,15 @@ Unfortunately, the originial request doesn't quite make sense -- `bernoulli_poly
 
 ---
 
-archive/issue_comments_017637.json:
+archive/issue_comments_017599.json:
 ```json
 {
     "body": "Attachment [trac-2578.patch](tarball://root/attachments/some-uuid/ticket2578/trac-2578.patch) by @williamstein created at 2009-01-23 10:34:38\n\npositive review;\n\nit could be optimized by using horner's rule",
     "created_at": "2009-01-23T10:34:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17637",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17599",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -228,15 +227,15 @@ it could be optimized by using horner's rule
 
 ---
 
-archive/issue_comments_017638.json:
+archive/issue_comments_017600.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha1",
     "created_at": "2009-01-23T10:46:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17638",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17600",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -246,15 +245,15 @@ Merged in Sage 3.3.alpha1
 
 ---
 
-archive/issue_comments_017639.json:
+archive/issue_comments_017601.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-23T10:46:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2578",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17639",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2578#issuecomment-17601",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

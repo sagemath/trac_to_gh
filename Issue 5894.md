@@ -6,7 +6,7 @@ archive/issues_005894.json:
     "body": "Assignee: mabshoff\n\nOn a rather minimal Ubuntu 8.04 system:\n\n```\n[03:52am] pamcd: ufff, thats almost what i have available\n[03:52am] pamcd: ./install: 352: time: not found\n<SNIP>\n[03:56am] mabs: Ok, can you edit spkg/install ?\n[03:56am] mabs: Change #!/bin/sh to #!/usr/bin/env bash and restart?\n[03:57am] pamcd: ok, restarting\n[03:58am] pamcd: what is that change for?\n[03:58am] mabs: Well, it runs the shell script via bash instead of the default shell.\n[03:58am] mabs: For most systems /bin/sh is in effect bash, but that has been changing.\n[03:59am] pamcd: the default shell misses some needed functionallity?\n[03:59am] mabs: On non-linux systems /bin/sh is often the original shell.\n[03:59am] mabs: Well, it seems to not have a build in time command in your case.\n[03:59am] pamcd: btw, it seems to have solved the problem: compiling\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5894\n\n",
     "created_at": "2009-04-25T11:05:45Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005894.json:
     "title": "spkg/install shoud use #!/usr/bin/env bash",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5894",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -46,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5894
 
 ---
 
-archive/issue_comments_046605.json:
+archive/issue_comments_046516.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-04-25T11:06:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5894#issuecomment-46605",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5894#issuecomment-46516",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -64,15 +64,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_046606.json:
+archive/issue_comments_046517.json:
 ```json
 {
     "body": "Trivial to fix and a real bug, 4.0 material.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-15T14:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5894#issuecomment-46606",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5894#issuecomment-46517",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -86,15 +86,15 @@ Michael
 
 ---
 
-archive/issue_comments_046607.json:
+archive/issue_comments_046518.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-28T06:42:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5894#issuecomment-46607",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5894#issuecomment-46518",
+    "user": "https://github.com/williamstein"
 }
 ```
 

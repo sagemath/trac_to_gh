@@ -6,15 +6,14 @@ archive/issues_006076.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nThe problem is that Sage notebook doesn't allow the user to redefine the \"python\" symbol. \n\nAs a consequence,\n\n\n```\nfrom sympy import *\n```\n\n\nfails. We can of course fix this particular problem in sympy, but I think this is a bug that should be fixed in the notebook. See this thread for more info:\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/ed5db1f344ed6371/\n\nIssue created by migration from https://trac.sagemath.org/ticket/6076\n\n",
     "created_at": "2009-05-18T21:20:07Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "Allow to redefine the python symbol in the Notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6076",
-    "user": "@certik"
+    "user": "https://github.com/certik"
 }
 ```
 Assignee: boothby
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6076
 
 ---
 
-archive/issue_comments_048364.json:
+archive/issue_comments_048272.json:
 ```json
 {
     "body": "Works for me now. Anyone mind checking if it's a problem, and close otherwise?",
     "created_at": "2009-11-30T08:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6076",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48364",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48272",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -61,15 +60,15 @@ Works for me now. Anyone mind checking if it's a problem, and close otherwise?
 
 ---
 
-archive/issue_comments_048365.json:
+archive/issue_comments_048273.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-30T08:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6076",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48365",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48273",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -79,15 +78,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_048366.json:
+archive/issue_comments_048274.json:
 ```json
 {
     "body": "I can confirm that this is now fixed on sagenb.org, so this ticket can be closed. Thanks for fixing it!\n\nOndrej",
     "created_at": "2009-11-30T08:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6076",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48366",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/6076#issuecomment-48274",
+    "user": "https://github.com/certik"
 }
 ```
 

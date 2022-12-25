@@ -6,15 +6,14 @@ archive/issues_007524.json:
     "body": "Assignee: @williamstein\n\nCC:  @novoselt @jasongrout\n\nNotice that the frame axes are shown when using \"show\", but are missing when using \"save\"\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('x,y')                \n(x, y)\nsage: a=plot_vector_field((x,-y),(x,-1,1),(y,-1,1))\nsage: a.show()\nsage: a.save('test.png')\n```\n\n| Sage Version 4.2.1, Release Date: 2009-11-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n\nIssue created by migration from https://trac.sagemath.org/ticket/7524\n\n",
     "created_at": "2009-11-24T08:28:25Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "frame axes are lost when saving a graphic to a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7524",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7524
 
 ---
 
-archive/issue_comments_063773.json:
+archive/issue_comments_063657.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-19T04:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63773",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63657",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -63,15 +62,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_063774.json:
+archive/issue_comments_063658.json:
 ```json
 {
     "body": "This is fixed with #7981",
     "created_at": "2010-01-19T04:47:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63774",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63658",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -81,15 +80,15 @@ This is fixed with #7981
 
 ---
 
-archive/issue_comments_063775.json:
+archive/issue_comments_063659.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-31T05:46:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63775",
-    "user": "rossk"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63659",
+    "user": "https://trac.sagemath.org/admin/accounts/users/rossk"
 }
 ```
 
@@ -99,15 +98,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_063776.json:
+archive/issue_comments_063660.json:
 ```json
 {
     "body": "Got the following on applying  trac-7981-show_options.patch to sage-4.3.2-alpha\n\n~/sage-4.3.2.alpha0/devel/sage-main$ hg qpush\napplying trac-7981-show_options.patch\npatching file sage/plot/plot.py\nHunk #3 FAILED at 1913\n1 out of 5 hunks FAILED -- saving rejects to file sage/plot/plot.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac-7981-show_options.patch",
     "created_at": "2010-01-31T05:46:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63776",
-    "user": "rossk"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63660",
+    "user": "https://trac.sagemath.org/admin/accounts/users/rossk"
 }
 ```
 
@@ -126,15 +125,15 @@ errors during apply, please fix and refresh trac-7981-show_options.patch
 
 ---
 
-archive/issue_comments_063777.json:
+archive/issue_comments_063661.json:
 ```json
 {
     "body": "Might be worth trying this again, now that #7981 has positive review.  Would need a patch to document.",
     "created_at": "2011-01-17T20:23:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63777",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63661",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -144,15 +143,15 @@ Might be worth trying this again, now that #7981 has positive review.  Would nee
 
 ---
 
-archive/issue_comments_063778.json:
+archive/issue_comments_063662.json:
 ```json
 {
     "body": "I can confirm that this works after #7981.",
     "created_at": "2011-01-17T21:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63778",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63662",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -162,15 +161,15 @@ I can confirm that this works after #7981.
 
 ---
 
-archive/issue_comments_063779.json:
+archive/issue_comments_063663.json:
 ```json
 {
     "body": "This test checks that it works.  Passes relevant test, plot looks good.",
     "created_at": "2011-01-17T21:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63779",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63663",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -180,15 +179,15 @@ This test checks that it works.  Passes relevant test, plot looks good.
 
 ---
 
-archive/issue_comments_063780.json:
+archive/issue_comments_063664.json:
 ```json
 {
     "body": "Attachment [trac_7524-options-save.patch](tarball://root/attachments/some-uuid/ticket7524/trac_7524-options-save.patch) by @kcrisman created at 2011-01-17 21:18:35",
     "created_at": "2011-01-17T21:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63780",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63664",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -198,15 +197,15 @@ Attachment [trac_7524-options-save.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_063781.json:
+archive/issue_comments_063665.json:
 ```json
 {
     "body": "This definitely depends on #7981, #8632, and #10244.  It's conceivable, but unlikely, that it depends on #10143, and might also depend on #2100.  All in that order.  This is because it applies to the very popular file `plot.py`.",
     "created_at": "2011-01-17T21:22:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63781",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63665",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -216,15 +215,15 @@ This definitely depends on #7981, #8632, and #10244.  It's conceivable, but unli
 
 ---
 
-archive/issue_comments_063782.json:
+archive/issue_comments_063666.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-01-17T21:22:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63782",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63666",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -234,15 +233,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_063783.json:
+archive/issue_comments_063667.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-01-20T05:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63783",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63667",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -252,15 +251,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_063784.json:
+archive/issue_comments_063668.json:
 ```json
 {
     "body": "Let's say it depends on #10143, since it has positive review already. The patch looks and applies fine, positive review!",
     "created_at": "2011-01-20T05:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63784",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63668",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -270,15 +269,15 @@ Let's say it depends on #10143, since it has positive review already. The patch 
 
 ---
 
-archive/issue_comments_063785.json:
+archive/issue_comments_063669.json:
 ```json
 {
     "body": "I've set #2100 to 'needs work', but this still applies fine after #7981, #8632, #10244, and #10143 on 4.6.2.alpha1, so still should be included in the next alpha.",
     "created_at": "2011-01-21T13:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63785",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63669",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -288,15 +287,15 @@ I've set #2100 to 'needs work', but this still applies fine after #7981, #8632, 
 
 ---
 
-archive/issue_comments_063786.json:
+archive/issue_comments_063670.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-01-27T13:14:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7524",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63786",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7524#issuecomment-63670",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

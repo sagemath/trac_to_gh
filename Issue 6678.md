@@ -6,15 +6,14 @@ archive/issues_006678.json:
     "body": "Assignee: tbd\n\nKeywords: medical imaging, mri, pynifti\n\npynifti is an interface to c libraries for I/O of medical imaging formats (MRI for example).  \n\nIssue created by migration from https://trac.sagemath.org/ticket/6678\n\n",
     "created_at": "2009-08-06T14:24:51Z",
     "labels": [
-        "packages: experimental",
-        "minor",
-        "enhancement"
+        "component: packages: experimental",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "new experimental package for pynifti and dependencies",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6678",
-    "user": "mhampton"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6678
 
 ---
 
-archive/issue_comments_054886.json:
+archive/issue_comments_054784.json:
 ```json
 {
     "body": "A first attempt is at:\n\nhttp://sage.math.washington.edu/home/mhampton/pynifti-p0.spkg\n\nThis installs fine on my mac running 10.5, but I have not tested it on anything else.  However, the build instructions are very generic, and no patches were necessary, so I would think this would be OK on most linux systems at least.",
     "created_at": "2009-08-06T14:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6678#issuecomment-54886",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/6678#issuecomment-54784",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -53,15 +52,15 @@ This installs fine on my mac running 10.5, but I have not tested it on anything 
 
 ---
 
-archive/issue_comments_054887.json:
+archive/issue_comments_054785.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2020-06-19T18:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6678#issuecomment-54887",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/6678#issuecomment-54785",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -71,15 +70,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_054888.json:
+archive/issue_comments_054786.json:
 ```json
 {
     "body": "Setting spkg proposals that have not seen recent activity to \"sage-wishlist\".",
     "created_at": "2020-06-19T18:16:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6678#issuecomment-54888",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/6678#issuecomment-54786",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 

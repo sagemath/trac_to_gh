@@ -6,15 +6,14 @@ archive/issues_001517.json:
     "body": "Assignee: @williamstein\n\nMany people have run out of disc space while building Sage. So check in `sage-spkg` if at least K MB are free on the partition we are building Sage in. K should be a couple hundred Megabytes in my opinion ;) We might also print a warning once we go below another, higher threshold. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1517\n\n",
     "created_at": "2007-12-15T02:35:11Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make sure a minimum of space is available to build component",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1517",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1517
 
 ---
 
-archive/issue_comments_009723.json:
+archive/issue_comments_009698.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-06-13T12:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9723",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9698",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_009724.json:
+archive/issue_comments_009699.json:
 ```json
 {
     "body": "It's not the job of Sage to check filesystem space. Besides, this looks very hard to do in a portable way.",
     "created_at": "2013-06-13T12:31:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9724",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9699",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -69,15 +68,15 @@ It's not the job of Sage to check filesystem space. Besides, this looks very har
 
 ---
 
-archive/issue_comments_009725.json:
+archive/issue_comments_009700.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-06-13T12:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9725",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9700",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_009726.json:
+archive/issue_comments_009701.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2013-06-19T12:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9726",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1517#issuecomment-9701",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

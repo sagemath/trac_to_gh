@@ -6,15 +6,14 @@ archive/issues_004288.json:
     "body": "Assignee: @williamstein\n\nCC:  @williamstein\n\na test is failing, with _magma_init_(), and I wasn't able to fix it, it seems the _magma_().name() implementation is buggy:\n\n```\nFile \"/usr/local/sage-3.1.2/sage/tmp/ell_point.py\", line 1289:\n    sage: P._magma_init_()\nExpected:\n    'EllipticCurve([GF(17)!1,GF(17)!16])![13,4]'\nGot:\n    '_sage_[2]![_sage_[3],_sage_[4]]'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4288\n\n",
     "created_at": "2008-10-14T21:11:19Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "_magma_init_ bug elliptic curve points",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4288",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4288
 
 ---
 
-archive/issue_comments_031387.json:
+archive/issue_comments_031325.json:
 ```json
 {
     "body": "This is related to #4277.",
     "created_at": "2008-10-15T07:08:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31387",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31325",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -59,15 +58,15 @@ This is related to #4277.
 
 ---
 
-archive/issue_comments_031388.json:
+archive/issue_comments_031326.json:
 ```json
 {
     "body": "Attachment [sage-trac4288.patch](tarball://root/attachments/some-uuid/ticket4288/sage-trac4288.patch) by @JohnCremona created at 2008-10-19 19:50:37\n\nThe attached patch seems to do the trick.  It's wrong to use \"magma_name\" since that just gives somethin like \"sage[0]\", while \"_magma_init_()\" return a string which can be passed to a fresh magma session to create the equivalent object.\n\n#4277 is ok now too.",
     "created_at": "2008-10-19T19:50:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31388",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31326",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -81,15 +80,15 @@ The attached patch seems to do the trick.  It's wrong to use "magma_name" since 
 
 ---
 
-archive/issue_comments_031389.json:
+archive/issue_comments_031327.json:
 ```json
 {
     "body": "Note for the release manager: that patch should be applied after that for #4277.",
     "created_at": "2008-10-19T20:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31389",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31327",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -99,15 +98,15 @@ Note for the release manager: that patch should be applied after that for #4277.
 
 ---
 
-archive/issue_comments_031390.json:
+archive/issue_comments_031328.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-20T14:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31390",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31328",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -117,15 +116,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_031391.json:
+archive/issue_comments_031329.json:
 ```json
 {
     "body": "Merged in Sage 3.2.alpha0",
     "created_at": "2008-10-20T14:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4288",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31391",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4288#issuecomment-31329",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

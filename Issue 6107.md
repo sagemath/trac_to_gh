@@ -6,15 +6,14 @@ archive/issues_006107.json:
     "body": "Assignee: tbd\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6107\n\n",
     "created_at": "2009-05-21T05:53:20Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] misc. fixes for symbolics for 4.0.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6107",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tbd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6107
 
 ---
 
-archive/issue_comments_048794.json:
+archive/issue_comments_048699.json:
 ```json
 {
     "body": "Changing assignee from tbd to @mwhansen.",
     "created_at": "2009-05-21T05:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48794",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48699",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing assignee from tbd to @mwhansen.
 
 ---
 
-archive/issue_comments_048795.json:
+archive/issue_comments_048700.json:
 ```json
 {
     "body": "Attachment [trac_6107.patch](tarball://root/attachments/some-uuid/ticket6107/trac_6107.patch) by @mwhansen created at 2009-05-21 05:54:39\n\nThis should fix problems with sage/calculus/all.py and the reference manual.",
     "created_at": "2009-05-21T05:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48795",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48700",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ This should fix problems with sage/calculus/all.py and the reference manual.
 
 ---
 
-archive/issue_comments_048796.json:
+archive/issue_comments_048701.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-21T05:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48796",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48701",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_048797.json:
+archive/issue_comments_048702.json:
 ```json
 {
     "body": "Note that one followup patch is needed.  After that everything works (all long doctests).",
     "created_at": "2009-05-21T08:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48797",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48702",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -103,15 +102,15 @@ Note that one followup patch is needed.  After that everything works (all long d
 
 ---
 
-archive/issue_comments_048798.json:
+archive/issue_comments_048703.json:
 ```json
 {
     "body": "Attachment [trac-6107-part2.patch](tarball://root/attachments/some-uuid/ticket6107/trac-6107-part2.patch) by mabshoff created at 2009-05-21 13:40:49\n\nMerged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-21T13:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48798",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48703",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -127,15 +126,15 @@ Michael
 
 ---
 
-archive/issue_comments_048799.json:
+archive/issue_comments_048704.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-21T13:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6107",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48799",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6107#issuecomment-48704",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

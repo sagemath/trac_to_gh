@@ -6,15 +6,14 @@ archive/issues_002619.json:
     "body": "Assignee: @malb\n\nAfter the patch was applied (which depends on #2618) this should work again:\n\n```\nsage: P.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nsage: I1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nsage: Q = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nsage: I2 = ideal([Q(f) for f in I1.gens()])\nsage: I2.groebner_basis()\n[ebar, cbar + 1, bbar + 1, abar + dbar + 1]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2619\n\n",
     "created_at": "2008-03-20T21:58:52Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch, needs review] Gr\u00f6bner bases over quotient rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2619",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2619
 
 ---
 
-archive/issue_comments_017992.json:
+archive/issue_comments_017953.json:
 ```json
 {
     "body": "Attachment [quotient_ring_gb.patch](tarball://root/attachments/some-uuid/ticket2619/quotient_ring_gb.patch) by @mwhansen created at 2008-03-21 02:05:40\n\nLooks good to me.",
     "created_at": "2008-03-21T02:05:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2619",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2619#issuecomment-17992",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2619#issuecomment-17953",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -59,15 +58,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_017993.json:
+archive/issue_comments_017954.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha1",
     "created_at": "2008-03-21T02:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2619",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2619#issuecomment-17993",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2619#issuecomment-17954",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +76,15 @@ Merged in Sage 2.11.alpha1
 
 ---
 
-archive/issue_comments_017994.json:
+archive/issue_comments_017955.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-21T02:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2619",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2619#issuecomment-17994",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2619#issuecomment-17955",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

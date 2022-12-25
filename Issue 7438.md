@@ -6,15 +6,14 @@ archive/issues_007438.json:
     "body": "Assignee: tbd\n\nCC:  @nthiery @rlmill @mwhansen @nathanncohen @jdemeyer @dimpase\n\nI installed ubuntu-9.10, sage-4.2.1 and tried to install all optional spkg.  Graphviz fails after a long time with:\n\n```\ngcc -DHAVE_CONFIG_H -I. -I../..  -I../../lib/common -I../../lib/gvc -I../../lib/pathplan -I../../lib/graph -I../../lib/cdt -I/home/sage/sage/local/include -I/home/sage/sage/local/include  -g -O2 -Wno-unknown-pragmas -Wstrict-prototypes -Wpointer-arith -Wall -ffast-math -MT no_demand_loading.o -MD -MP -MF .deps/no_demand_loading.Tpo -c -o no_demand_loading.o `test -f '../../lib/gvc/no_demand_loading.c' || echo './'`../../lib/gvc/no_demand_loading.c\nmv -f .deps/no_demand_loading.Tpo .deps/no_demand_loading.Po\nmake[3]: *** No rule to make target `../../plugin/pango/libgvplugin_pango.la', needed by `dot_builtins'.  Stop.\nmake[3]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd/dot'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src/cmd'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/sage/sage/spkg/build/graphviz-2.16.1.p0/src'\nmake: *** [all] Error 2\nError building Graphviz\n\nreal    14m54.042s\nuser    3m50.614s\nsys     10m25.267s\nsage: An error occurred while installing graphviz-2.16.1.p0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7438\n\n",
     "created_at": "2009-11-12T05:24:09Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "the graphviz-2.16.1.p0 optional spkg fails to build on ubuntu-9.10 with a sage-4.2.1 install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7438",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7438
 
 ---
 
-archive/issue_comments_062587.json:
+archive/issue_comments_062472.json:
 ```json
 {
     "body": "It also fails on Solaris 10 (SPARC) with the same error message with Sage 4.3.4.alpha1. \n\nShould this be moved to 'experimental' as it appears to be broken?",
     "created_at": "2010-03-13T01:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62587",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62472",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -70,15 +69,15 @@ Should this be moved to 'experimental' as it appears to be broken?
 
 ---
 
-archive/issue_comments_062588.json:
+archive/issue_comments_062473.json:
 ```json
 {
     "body": "Me too.  Same setup, same result - except on 4.4.2.rc0 and failure came in about 2 minutes of runtime.\n\nI've cc'ed Nicolas Thiery who may be interested.",
     "created_at": "2010-06-17T04:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62588",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62473",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -90,15 +89,15 @@ I've cc'ed Nicolas Thiery who may be interested.
 
 ---
 
-archive/issue_comments_062589.json:
+archive/issue_comments_062474.json:
 ```json
 {
     "body": "I've added Robert Miller, as he is listed in SPKG.txt as the package maintainer. \n\nAny attempt to fix this broken package should probably start at updating to the latest version, as the version in Sage is very old. \n\nI had a **quick** look at spkg-install and see some odd things. \n\n* On OS X, the option --enable-shared=yes is given twice. \n* There's no code to make this build 64-bit if SAGE64 is set to \"yes\" - it needs something like the following added near the top of spkg-install. \n\n```\nif [ \"x$SAGE64\" = xyes ] ; then \n  CFLAGS=\"$CFLAGS -m64\"\n  CXXFLAGS=\"$CXXFLAGS -m64\"\n  LDFLAGS=\"$LDFLAGS -m64\"\n  CPPFLAGS=\"CPPFLAGS -m64\"\n  export CFLAGS\n  export CXXFLAGS\n  export LDFLAGS\n  export CPPFLAGS\nfi\n```\n\n* Although iconv is in Sage, and this package wants iconv, the configure option to specify the location of iconv is not used. \n* Same as above, but with freetype2. \n* The program seems to want many libraries and gives warnings they are not present. How essential they are I don't know, but Sage does not include pango, which is one of the libraries this checks for. The final error message is related to pango. \n* Lots of the recommended libraries are not in Sage, so it's not clear how useful this would be even if one did manage to build it. (I don't think building it should be too hard, but I don't have the inclination myself). \n\n#9208 could be useful to this, as it would resolve at least the freetype2 issue. \n\nI changed the title slightly to reflect the fact this fails to build on several operating systems (Ubunta, OpenSolaris and Solaris 10 to my knowledge), and that it is not specific to version 4.2.1 of Sage - I just tried it on 4.4.3 on Solaris 10 and 4.4.4.alpha0 on OpenSolaris - both fail. \n\nDave",
     "created_at": "2010-06-17T07:05:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62589",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62474",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -139,15 +138,15 @@ Dave
 
 ---
 
-archive/issue_comments_062590.json:
+archive/issue_comments_062475.json:
 ```json
 {
     "body": "I cannot install graphviz on MacOSX 10.6.8 in 64-bit mode (Sage 4.7.1).\nI get exactly the same error.",
     "created_at": "2011-11-21T12:59:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62590",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62475",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -158,15 +157,15 @@ I get exactly the same error.
 
 ---
 
-archive/issue_comments_062591.json:
+archive/issue_comments_062476.json:
 ```json
 {
     "body": "According to #11433 and #4864, this is a simple lack of dependencies - pango, and perhaps some version of perl dev stuff.  See #14398 also, which is probably a duplicate of this ticket, for a little more discussion.\n\n----\n\nUpdate: actually, maybe not: something seems to have confused the freetype thing.  On boxen.math:\n\n```\n\ncreating libgvplugin_gd_C.la\n(cd .libs && rm -f libgvplugin_gd_C.la && ln -s ../libgvplugin_gd_C.la libgvplugin_gd_C.la)\n/bin/bash ../../libtool --tag=CC   --mode=link gcc  -g -O2 -Wno-unknown-pragmas -Wstrict-prototypes -Wpointer-arith -Wall -ffast-math -version-info 5:0:0 -L/home/kcrisman/sage-5.8-sage.math.washington.edu-x86_64-Linux/local/lib -L/home/kcrisman/sage-5.8-sage.math.washington.edu-x86_64-Linux/local/lib -o libgvplugin_gd.la -rpath /home/kcrisman/sage-5.8-sage.math.washington.edu-x86_64-Linux/local/lib/graphviz gvplugin_gd.lo gvrender_gd.lo gvrender_gd_vrml.lo gvtextlayout_gd.lo gvloadimage_gd.lo gvdevice_gd.lo ../../lib/gvc/libgvc.la -L/home/kcrisman/sage-5.8-sage.math.washington.edu-x86_64-Linux/local/include -lgd -lfontconfig -lfreetype -lpng12 -lz -lm -lm \nlibtool: link: warning: `/usr/lib64/libexpat.la' seems to be moved\nlibtool: link: warning: library `/home/kcrisman/sage-5.8-sage.math.washington.edu-x86_64-Linux/local/lib/libgd.la' was moved.\ngrep: /release/merger/sage-5.8/local/lib/libfreetype.la: No such file or directory\n/bin/sed: can't read /release/merger/sage-5.8/local/lib/libfreetype.la: No such file or directory\nlibtool: link: `/release/merger/sage-5.8/local/lib/libfreetype.la' is not a valid libtool archive\nmake[3]: *** [libgvplugin_gd.la] Error 1\nmake[3]: Leaving directory `/home/kcrisman/sage-5.8-sage.math.washington.edu-x86_64-Linux/spkg/build/graphviz-2.16.1.p0/src/plugin/gd'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/home/kcrisman/sage-5.8-sage.math.washington.edu-x86_64-Linux/spkg/build/graphviz-2.16.1.p0/src/plugin'\nmake[1]: *** [all-recursive] Error 1\nmake[1]: Leaving directory `/home/kcrisman/sage-5.8-sage.math.washington.edu-x86_64-Linux/spkg/build/graphviz-2.16.1.p0/src'\nmake: *** [all] Error 2\nError building Graphviz\n\nreal\t3m39.740s\nuser\t1m29.320s\nsys\t1m41.210s\n************************************************************************\nError installing package graphviz-2.16.1.p0\n************************************************************************\n```\n",
     "created_at": "2013-04-02T13:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62591",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62476",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -208,15 +207,15 @@ Error installing package graphviz-2.16.1.p0
 
 ---
 
-archive/issue_comments_062592.json:
+archive/issue_comments_062477.json:
 ```json
 {
     "body": "Ah, I think the problem is that I didn't run Sage first to change those hardcoded paths.",
     "created_at": "2013-04-02T13:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62592",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62477",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -226,15 +225,15 @@ Ah, I think the problem is that I didn't run Sage first to change those hardcode
 
 ---
 
-archive/issue_comments_062593.json:
+archive/issue_comments_062478.json:
 ```json
 {
     "body": "Yes, it still builds on sage.math, once you do run Sage once.",
     "created_at": "2013-04-02T13:57:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62593",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62478",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -244,15 +243,15 @@ Yes, it still builds on sage.math, once you do run Sage once.
 
 ---
 
-archive/issue_comments_062594.json:
+archive/issue_comments_062479.json:
 ```json
 {
     "body": "> If you want to open a sage-devel discussion about how non-broken experimental packages should be, that's fine.\n\nI don't want to \"start debates\", again and again, and I don't want to debate generally about experimental spkg. We waste our lifetime discussing uselessly. Here's where the discussion is happening. I just talk about this very spkg, nothing else.\n\n> In my view - and as you know, I am pretty conservative on such things - experimental can be as broken as they want to be. Someone probably does have the expertise to fix each of them, and removing them completely means no one will even have the chance.\n\n* Here are the two spkg maintainers : Robert Miller, Michael Abshoff. They don't do much development here anymore, do they ?\n* Last update of the spkg : 2008\n* 3 tickets have been created since by people who tried to used it and only found this bug\n\nConservative as you may be, would you accept to take these elements as hints that this spkg is plainly *forgotten*, has no reason to be fixed tomorrow, and just makes some developpers waste a few hours of their life each year ?\n\nWe cannot advertise the spkg in the doc, as we cannot hope it to run on their machines. Hence, in the *best case*, nobody knows the spkg exist (if they do they will probably meet a bug).\n\nWe would be better without this in Sage's list of packages. We would be better with a \"package no found\" message to answer \"`sage -i graphviz`\". It would help users look the right way : this software should be installed manually.\n\nNathann",
     "created_at": "2013-04-02T14:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62594",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62479",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -278,15 +277,15 @@ Nathann
 
 ---
 
-archive/issue_comments_062595.json:
+archive/issue_comments_062480.json:
 ```json
 {
     "body": "Replying to [comment:9 ncohen]:\n> > If you want to open a sage-devel discussion about how non-broken experimental packages should be, that's fine.\n> \n> I don't want to \"start debates\", again and again, and I don't want to debate generally about experimental spkg. We waste our lifetime discussing uselessly. Here's where the discussion is happening. I just talk about this very spkg, nothing else.\n> \nThe problem is that most of the experimental packages are even worse than this package, if I recall correctly; this one actually builds on sage.math!   So it really does have to be \"the whole discussion\".\n\nWe even have standard spkgs that haven't been updated (essentially) in 4-5 years.  So I don't know that this holds water either, other than to say we need more people working on spkgs!\n\n----\n\nBut all this is superseded by Jeroen's patch and your review at #14398.  So now I will change this ticket to being about something a little more specific.",
     "created_at": "2013-04-02T16:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62595",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62480",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -307,15 +306,15 @@ But all this is superseded by Jeroen's patch and your review at #14398.  So now 
 
 ---
 
-archive/issue_comments_062596.json:
+archive/issue_comments_062481.json:
 ```json
 {
     "body": "Changing component from packages: optional to packages: experimental.",
     "created_at": "2013-04-02T16:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62596",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62481",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -325,15 +324,15 @@ Changing component from packages: optional to packages: experimental.
 
 ---
 
-archive/issue_comments_062597.json:
+archive/issue_comments_062482.json:
 ```json
 {
     "body": "Amazingly, this also installed fine on my Mac 10.7 without any problems!",
     "created_at": "2013-04-02T16:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62597",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62482",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -343,15 +342,15 @@ Amazingly, this also installed fine on my Mac 10.7 without any problems!
 
 ---
 
-archive/issue_comments_062598.json:
+archive/issue_comments_062483.json:
 ```json
 {
     "body": "For what it is worth, it still builds on OS X 10.12.4 with sage.8.1.beta7.",
     "created_at": "2017-10-07T22:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62598",
-    "user": "@koffie"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62483",
+    "user": "https://github.com/koffie"
 }
 ```
 
@@ -361,15 +360,15 @@ For what it is worth, it still builds on OS X 10.12.4 with sage.8.1.beta7.
 
 ---
 
-archive/issue_comments_062599.json:
+archive/issue_comments_062484.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-08-17T16:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62599",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62484",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -379,15 +378,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062600.json:
+archive/issue_comments_062485.json:
 ```json
 {
     "body": "Outdated spkg or build system ticket, should be closed",
     "created_at": "2020-08-17T16:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62600",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62485",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -397,15 +396,15 @@ Outdated spkg or build system ticket, should be closed
 
 ---
 
-archive/issue_comments_062601.json:
+archive/issue_comments_062486.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-08-22T07:17:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7438",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62601",
-    "user": "@slel"
+    "url": "https://github.com/sagemath/sagetest/issues/7438#issuecomment-62486",
+    "user": "https://github.com/slel"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000586.json:
     "body": "Assignee: @williamstein\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/586\n\n",
     "created_at": "2007-09-04T08:52:22Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "remove merge-conflict lines from sage-sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/586",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/586
 
 ---
 
-archive/issue_comments_003022.json:
+archive/issue_comments_003010.json:
 ```json
 {
     "body": "Attachment [patch-gone-wild.patch](tarball://root/attachments/some-uuid/ticket586/patch-gone-wild.patch) by @malb created at 2007-09-04 08:52:48",
     "created_at": "2007-09-04T08:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/586",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3022",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3010",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [patch-gone-wild.patch](tarball://root/attachments/some-uuid/ticket58
 
 ---
 
-archive/issue_comments_003023.json:
+archive/issue_comments_003011.json:
 ```json
 {
     "body": "fixed for sage-2.8.3.4",
     "created_at": "2007-09-05T04:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/586",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3023",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3011",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +64,15 @@ fixed for sage-2.8.3.4
 
 ---
 
-archive/issue_comments_003024.json:
+archive/issue_comments_003012.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-05T04:23:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/586",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3024",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/586#issuecomment-3012",
+    "user": "https://github.com/williamstein"
 }
 ```
 

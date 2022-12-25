@@ -6,15 +6,14 @@ archive/issues_008562.json:
     "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\nKeywords: categories, integer mod rings\n\nAfter this patch, IntegerModRing's inherit properly from categories:\n\n```\n    sage: Z3 = IntegerModRing(3)\n    sage: Z3.category()\n    Category of fields\n    sage: TestSuite(Z3).run(verbose = True)\n    running ._test_additive_associativity() . . . pass\n    running ._test_an_element() . . . pass\n    running ._test_associativity() . . . pass\n    running ._test_category() . . . pass\n    running ._test_elements() . . . \n      Running the test suite of self.an_element()\n      running ._test_category() . . . pass\n      running ._test_not_implemented_methods() . . . pass\n      running ._test_pickling() . . . pass\n      pass\n    running ._test_not_implemented_methods() . . . pass\n    running ._test_one() . . . pass\n    running ._test_pickling() . . . pass\n    running ._test_prod() . . . pass\n    running ._test_some_elements() . . . pass\n    running ._test_zero() . . . pass\n```\n\n\nThis is required to use the cool features from #7555.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8562\n\n",
     "created_at": "2010-03-19T21:48:27Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Categories for IntegerMod rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8562",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: @aghitza
@@ -59,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8562
 
 ---
 
-archive/issue_comments_077514.json:
+archive/issue_comments_077386.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-03-19T22:29:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77514",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77386",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -77,15 +76,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_077515.json:
+archive/issue_comments_077387.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-19T23:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77515",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77387",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -95,15 +94,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_077516.json:
+archive/issue_comments_077388.json:
 ```json
 {
     "body": "Ok, the tests passed fine up to some trivialities (*_with_category class name changes). I'll fix this and upload an updated patch soon. The review can start in parallel",
     "created_at": "2010-03-19T23:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77516",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77388",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -113,15 +112,15 @@ Ok, the tests passed fine up to some trivialities (*_with_category class name ch
 
 ---
 
-archive/issue_comments_077517.json:
+archive/issue_comments_077389.json:
 ```json
 {
     "body": "This applies, builds and limited testing (prime and composite orders) indicates that it plays nicely with \"addition tables\" at #7555 which rely heavily on the category framework.  Didn't run tests, but witnessed no problems otherwise.\n\nGood to see how easy it is to insert a new object into the category framework.\n\nI'll come back when the patch is completed.",
     "created_at": "2010-03-20T04:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77517",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77389",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -135,15 +134,15 @@ I'll come back when the patch is completed.
 
 ---
 
-archive/issue_comments_077518.json:
+archive/issue_comments_077390.json:
 ```json
 {
     "body": "Just a heads-up: this looks rather like it might clash with #8218, which is the first of several patches by David Roe which do a substantial amount of work improving finite fields. #8218 has been held up for ages because it moves loads of files around (without substantially changing their content) so even small changes to finite fields will cause conflicts, and there is a lot of really good code waiting on it, so it would be a shame to have to put it off even longer.\n\nDavid",
     "created_at": "2010-03-21T14:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77518",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77390",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -155,15 +154,15 @@ David
 
 ---
 
-archive/issue_comments_077519.json:
+archive/issue_comments_077391.json:
 ```json
 {
     "body": "Replying to [comment:4 davidloeffler]:\n> Just a heads-up: this looks rather like it might clash with #8218, which is the first of several patches by David Roe which do a substantial amount of work improving finite fields. #8218 has been held up for ages because it moves loads of files around (without substantially changing their content) so even small changes to finite fields will cause conflicts, and there is a lot of really good code waiting on it, so it would be a shame to have to put it off even longer.\n\nThanks for the notice. There is no urgency for that one, so sure, if there is any conflict, #8218 should go first.\n\nDavid: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.",
     "created_at": "2010-03-21T20:40:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77519",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77391",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -178,15 +177,15 @@ David: I won't be touching this patch further. Feel free to update / refactor / 
 
 ---
 
-archive/issue_comments_077520.json:
+archive/issue_comments_077392.json:
 ```json
 {
     "body": "> David: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.\n\nNote: I meant David Roe, but any other David is welcome too :-)\n\nOh: would you agree to take over that patch, and finalize it (or ping me) when it's ripe to get in?\n\n(then I could forget about it).",
     "created_at": "2010-03-21T20:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77520",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77392",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -202,15 +201,15 @@ Oh: would you agree to take over that patch, and finalize it (or ping me) when i
 
 ---
 
-archive/issue_comments_077521.json:
+archive/issue_comments_077393.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-03-21T20:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77521",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77393",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -220,15 +219,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_077522.json:
+archive/issue_comments_077394.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-03-22T22:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77522",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77394",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -238,15 +237,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_077523.json:
+archive/issue_comments_077395.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-22T22:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77523",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77395",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -256,15 +255,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_077524.json:
+archive/issue_comments_077396.json:
 ```json
 {
     "body": "Replying to [comment:6 nthiery]:\n> > David: I won't be touching this patch further. Feel free to update / refactor / merge /... it within the other series of patch whenever it feels right.\n\nWell, actually I did. But I should be done now, unless I notice a test failure.",
     "created_at": "2010-03-22T22:13:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77524",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77396",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -277,15 +276,15 @@ Well, actually I did. But I should be done now, unless I notice a test failure.
 
 ---
 
-archive/issue_comments_077525.json:
+archive/issue_comments_077397.json:
 ```json
 {
     "body": "Attachment [trac_8562-category-integer_mod_ring-nt.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-category-integer_mod_ring-nt.patch) by @nthiery created at 2010-03-22 22:24:12",
     "created_at": "2010-03-22T22:24:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77525",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77397",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -295,15 +294,15 @@ Attachment [trac_8562-category-integer_mod_ring-nt.patch](tarball://root/attachm
 
 ---
 
-archive/issue_comments_077526.json:
+archive/issue_comments_077398.json:
 ```json
 {
     "body": "Here's a rebased patch.  It looks good and all tests pass for me so I'm willing to give it a positive review, but since I made the rebased patch, can someone else (Nicolas, for example) take a look at it also?",
     "created_at": "2010-06-21T18:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77526",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77398",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -313,15 +312,15 @@ Here's a rebased patch.  It looks good and all tests pass for me so I'm willing 
 
 ---
 
-archive/issue_comments_077527.json:
+archive/issue_comments_077399.json:
 ```json
 {
     "body": "Hi John!\n\nThanks much for rebasing the patch. I looked through the changes, and am happy to give my green light, up to three minor comments:\n\n* Is the convention to use as ticket summary \"trac 8562:\" or \"#8562:\"? (I personally prefer the later).\n* With the updated patch, sage -coverage complains because of the absence of #indirect doctest for create_object in sage/rings/finite_rings/integer_mod_ring.py. Just wanted to check; if this is voluntary, because you consider that this requires better tests, that's all fine with me.\n* I like the options `nodates=1` and `showfunc = 1` of hg :-)\n\nI let you set up the positive review as you feel appropriate.\n\nThanks again,\n                          Nicolas",
     "created_at": "2010-06-21T20:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77527",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77399",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -342,15 +341,15 @@ Thanks again,
 
 ---
 
-archive/issue_comments_077528.json:
+archive/issue_comments_077400.json:
 ```json
 {
     "body": "Replying to [comment:10 nthiery]:\n \n> Is the convention to use as ticket summary \"trac 8562:\" or \"#8562:\"? (I personally prefer the later).\n\nI think either is fine.  I've been using \"trac 8562\" for a while and have not had any complaints from release managers.\n\n>  * With the updated patch, sage -coverage complains because of the absence of #indirect doctest for create_object in sage/rings/finite_rings/integer_mod_ring.py. Just wanted to check; if this is voluntary, because you consider that this requires better tests, that's all fine with me.\n\nThis wasn't voluntary, it was an oversight.  I'll fix it.\n\n>  * I like the options `nodates=1` and `showfunc = 1` of hg :-)\n\nNice, I didn't know about those.",
     "created_at": "2010-06-21T20:36:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77528",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77400",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -372,15 +371,15 @@ Nice, I didn't know about those.
 
 ---
 
-archive/issue_comments_077529.json:
+archive/issue_comments_077401.json:
 ```json
 {
     "body": "rebased version. apply only this patch.",
     "created_at": "2010-06-21T20:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77529",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77401",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -390,15 +389,15 @@ rebased version. apply only this patch.
 
 ---
 
-archive/issue_comments_077530.json:
+archive/issue_comments_077402.json:
 ```json
 {
     "body": "Attachment [trac_8562-rebased.patch](tarball://root/attachments/some-uuid/ticket8562/trac_8562-rebased.patch) by @jhpalmieri created at 2010-06-21 20:37:58",
     "created_at": "2010-06-21T20:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77530",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77402",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -408,15 +407,15 @@ Attachment [trac_8562-rebased.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_077531.json:
+archive/issue_comments_077403.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-21T20:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77531",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77403",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -426,15 +425,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_077532.json:
+archive/issue_comments_077404.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T09:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8562",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77532",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8562#issuecomment-77404",
+    "user": "https://github.com/qed777"
 }
 ```
 

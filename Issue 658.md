@@ -6,15 +6,13 @@ archive/issues_000658.json:
     "body": "Assignee: somebody\n\n\n```\n$ magma\nMagma V2.13-5     Fri Sep 14 2007 17:16:36 on sage     [Seed = 2401430993]\nType ? for help.  Type <Ctrl>-D to quit.\n>\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/658\n\n",
     "created_at": "2007-09-15T00:22:37Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "print the random seed use to initialize the rng, add ability to set seed via command line parameter",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/658",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: somebody
@@ -39,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/658
 
 ---
 
-archive/issue_comments_003425.json:
+archive/issue_comments_003412.json:
 ```json
 {
     "body": "\n```\n> > We *really* need a way of specifying a random seed at startup.\n> >\n>\n> When we fixed all the leaks in the random seed code William wrote some\n> code to specify the random seed via an environment variable. I grepped\n> $SAGE_LOCAL/bin and couldn't find anything, so maybe it wasn't merged.\n\nI removed it because the implementation was way too hack-ish.  It was\nmainly for experimenting.\n\nI do encourage David to open a trac ticket about this.  He's right that\nseeding the random number generator should be possible via a command\nline argument at startup.\n\nOne perhaps reasonable way to do this is by setting an environment variable\nin local/bin/sage-sage if a certain command line option is set, then in\next/random.pxi (and anywhere else), somehow using that environment variable\n(if set) to seed the random number generator.     The tricky part is one has\nto also make sure in all cases that all seeding is done from one place, and\nthat the random seed is easily available from Sage on startup or in\ncrash messages.\n```\n",
     "created_at": "2007-10-08T14:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/658#issuecomment-3425",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/658#issuecomment-3412",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -81,15 +79,15 @@ crash messages.
 
 ---
 
-archive/issue_comments_003426.json:
+archive/issue_comments_003413.json:
 ```json
 {
     "body": "The randstate framework essentially fixes this.  It doesn't print the seed on startup, but you can retrieve it with initial_seed(); and it doesn't have a command-line argument for setting the seed, but you can set it with set_random_seed().",
     "created_at": "2008-08-23T20:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/658#issuecomment-3426",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/658#issuecomment-3413",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -99,15 +97,15 @@ The randstate framework essentially fixes this.  It doesn't print the seed on st
 
 ---
 
-archive/issue_comments_003427.json:
+archive/issue_comments_003414.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-23T20:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/658",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/658#issuecomment-3427",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/658#issuecomment-3414",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

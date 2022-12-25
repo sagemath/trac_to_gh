@@ -6,15 +6,14 @@ archive/issues_008967.json:
     "body": "Assignee: @aghitza\n\nCC:  @mstreng\n\n\n```\nsage: P.<t> = GF(5)[]\nsage: GF(5).extension(t^2 - 2, name='a')\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 5 with modulus a^2 + 3\nsage: F.<a> = GF(5).extension(t^2 - 2)\nTraceback (most recent call last)\n...\nValueError: variable names must be alphanumeric, but one is '('a' which is not.\n```\n\nand\n\n\n```\nsage: GF(5).extension(x^2 - 2, name='a')\nTraceback (most recent call last)\n...\nAttributeError: 'sage.symbolic.expression.Expression' object has no attribute 'list'\n```\n\nThe patch solves both these problems, and provides a more useful error  message for mistakes like `GF(5).extension(\"not_a_poly\", name='a'),` by  splicing in code from the number field version.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8967\n\n",
     "created_at": "2010-05-14T18:28:12Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Make extensions of general rings work in the same way as they do for number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8967",
-    "user": "fwclarke"
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 Assignee: @aghitza
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8967
 
 ---
 
-archive/issue_comments_082644.json:
+archive/issue_comments_082508.json:
 ```json
 {
     "body": "Attachment [trac_8967.patch](tarball://root/attachments/some-uuid/ticket8967/trac_8967.patch) by fwclarke created at 2010-05-14 18:35:25",
     "created_at": "2010-05-14T18:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82644",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82508",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -70,15 +69,15 @@ Attachment [trac_8967.patch](tarball://root/attachments/some-uuid/ticket8967/tra
 
 ---
 
-archive/issue_comments_082645.json:
+archive/issue_comments_082509.json:
 ```json
 {
     "body": "Is this ready for review?",
     "created_at": "2010-05-15T02:58:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82645",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82509",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -88,15 +87,15 @@ Is this ready for review?
 
 ---
 
-archive/issue_comments_082646.json:
+archive/issue_comments_082510.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-15T06:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82646",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82510",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -106,15 +105,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_082647.json:
+archive/issue_comments_082511.json:
 ```json
 {
     "body": "Yes",
     "created_at": "2010-05-15T06:35:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82647",
-    "user": "fwclarke"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82511",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fwclarke"
 }
 ```
 
@@ -124,15 +123,15 @@ Yes
 
 ---
 
-archive/issue_comments_082648.json:
+archive/issue_comments_082512.json:
 ```json
 {
     "body": "This patch does what it says. It did however take over a bad habit of \"extension\" for number fields. See the examples below, where I think the behavior of QQ is preferred.\n\n```\nsage: QQ.extension(x^2-2, ('a', 'b'))\nIndexError: the number of names must equal the number of generators\nsage: GF(3).extension(x^2-2, ('a', 'b'))\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 3 with modulus a^2 + 1\nsage: QuadraticField(-1, 'i').extension(x^2 - 2, ('a', 'b'))\nNumber Field in a with defining polynomial x^2 - 2 over its base field\n\nsage: QQ.extension(x^2 - 2, ('a', QQ))\nValueError: variable names must be alphanumeric, but one is 'Rational Field' which is not.\nsage: GF(3).extension(x^2 - 2, ('a', QQ))\nUnivariate Quotient Polynomial Ring in a over Finite Field of size 3 with modulus a^2 + 1\nsage: QuadraticField(-1, 'i').extension(x^2 - 2, ('a', QQ))\nNumber Field in a with defining polynomial x^2 - 2 over its base field\n```\n",
     "created_at": "2010-07-12T14:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82648",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82512",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -159,15 +158,15 @@ Number Field in a with defining polynomial x^2 - 2 over its base field
 
 ---
 
-archive/issue_comments_082649.json:
+archive/issue_comments_082513.json:
 ```json
 {
     "body": "All tests pass, and as I said before: the patch does what it claims. I've tried a couple more examples and everything seems fine.\n\nThe bad behavior in my previous comment was there for number fields already and I don't consider it to be a blocker for this patch.",
     "created_at": "2010-07-12T15:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82649",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82513",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -179,15 +178,15 @@ The bad behavior in my previous comment was there for number fields already and 
 
 ---
 
-archive/issue_comments_082650.json:
+archive/issue_comments_082514.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-12T15:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82650",
-    "user": "@mstreng"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82514",
+    "user": "https://github.com/mstreng"
 }
 ```
 
@@ -197,15 +196,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_082651.json:
+archive/issue_comments_082515.json:
 ```json
 {
     "body": "I've updated the Author(s) and Reviewer(s) fields, which should contain full names.  Please correct the fields, if I'm wrong.",
     "created_at": "2010-07-20T09:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82651",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82515",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -215,15 +214,15 @@ I've updated the Author(s) and Reviewer(s) fields, which should contain full nam
 
 ---
 
-archive/issue_comments_082652.json:
+archive/issue_comments_082516.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T09:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82652",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8967#issuecomment-82516",
+    "user": "https://github.com/qed777"
 }
 ```
 

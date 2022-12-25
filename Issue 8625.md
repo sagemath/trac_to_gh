@@ -6,15 +6,13 @@ archive/issues_008625.json:
     "body": "Assignee: olazo\n\nCC:  @jasongrout\n\nKeywords: scalar,plot\n\nThis should be a function that plots a two variable funtion as a group of isolines along a given place of the xy plane.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8625\n\n",
     "created_at": "2010-03-29T18:46:11Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "plot_scalar_field (a scalar version of plot_vector_field)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8625",
-    "user": "olazo"
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 Assignee: olazo
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8625
 
 ---
 
-archive/issue_comments_078196.json:
+archive/issue_comments_078068.json:
 ```json
 {
     "body": "Would this be like a density plot or contour plot?  Even after consulting the internet I'm not quite sure what the difference would be, though perhaps a shortcut would be useful (?).",
     "created_at": "2010-07-27T17:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78196",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78068",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -51,15 +49,15 @@ Would this be like a density plot or contour plot?  Even after consulting the in
 
 ---
 
-archive/issue_comments_078197.json:
+archive/issue_comments_078069.json:
 ```json
 {
     "body": "Attachment [two_positive_charges2d.png](tarball://root/attachments/some-uuid/ticket8625/two_positive_charges2d.png) by olazo created at 2010-08-01 01:06:04",
     "created_at": "2010-08-01T01:06:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78197",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78069",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -69,15 +67,15 @@ Attachment [two_positive_charges2d.png](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_078198.json:
+archive/issue_comments_078070.json:
 ```json
 {
     "body": "Attachment [electric_dipole3d.png](tarball://root/attachments/some-uuid/ticket8625/electric_dipole3d.png) by olazo created at 2010-08-01 01:09:50\n\nI have just attatched two pictures of the intended results. Both are plots of electric potentials the first one comes with a plot_vector_field of the corresponding electric field.\n\nI also attatched a picture of the 3d version, although I mean to make a new ticket for that once this one is finished.",
     "created_at": "2010-08-01T01:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78198",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78070",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -91,15 +89,15 @@ I also attatched a picture of the 3d version, although I mean to make a new tick
 
 ---
 
-archive/issue_comments_078199.json:
+archive/issue_comments_078071.json:
 ```json
 {
     "body": "It sounds like you are looking for a contour plot (?).  Can you describe what command you used to create the first plot?  Maybe we could make a shortcut to the specific type of contour plot you need, which would give the functionality you are looking for.",
     "created_at": "2010-08-02T15:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78199",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78071",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -109,15 +107,15 @@ It sounds like you are looking for a contour plot (?).  Can you describe what co
 
 ---
 
-archive/issue_comments_078200.json:
+archive/issue_comments_078072.json:
 ```json
 {
     "body": "Yes! I had not seen that command. I used implicit_plot. Now that I've checked contour_plot it is exactly what I wanted.\n\nThe only thing I don't like is the automatic choosing of contour levels. They usually get too high values that concentrate around the poles of the function so that there are almost no curves in parts of the picture away from the poles. I'll make a patch to improve that.\n\nAlso, it seems like there's no contour_plot3d I'll also work on that.",
     "created_at": "2010-08-02T15:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78200",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78072",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -131,15 +129,15 @@ Also, it seems like there's no contour_plot3d I'll also work on that.
 
 ---
 
-archive/issue_comments_078201.json:
+archive/issue_comments_078073.json:
 ```json
 {
     "body": "Replying to [comment:4 olazo]:\n> Yes! I had not seen that command. I used implicit_plot. Now that I've checked contour_plot it is exactly what I wanted.\n\nGreat!\n\n> The only thing I don't like is the automatic choosing of contour levels. They usually get too high values that concentrate around the poles of the function so that there are almost no curves in parts of the picture away from the poles. I'll make a patch to improve that.\n\nWhat I would do is leave the current functionality alone, but add an option for the sorts of situations you encounter - or something like that.  You can also choose the contours you want - see\n\n```\nsage: contour_plot?\n```\n\n\n\n> Also, it seems like there's no contour_plot3d I'll also work on that.\n\nHave you tried `implicit_plot3d`? Presumably one would use this to start.",
     "created_at": "2010-08-02T16:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78201",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78073",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -166,15 +164,15 @@ Have you tried `implicit_plot3d`? Presumably one would use this to start.
 
 ---
 
-archive/issue_comments_078202.json:
+archive/issue_comments_078074.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-08-02T16:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78202",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78074",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -184,15 +182,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_078203.json:
+archive/issue_comments_078075.json:
 ```json
 {
     "body": "Replying to [comment:5 kcrisman]:\n> What I would do is leave the current functionality alone, but add an option for the sorts of situations you encounter - or something like that.  You can also choose the contours you want - see\n\nYes, that's what I was thinking of, add something like an `,avoid_poles=False` option. Yes, I have seen the option to choose the contours.\n\n> Have you tried `implicit_plot3d`? Presumably one would use this to start.\n\nYes, that is what I used to produce the 3d picture. I have just made #9669",
     "created_at": "2010-08-02T16:10:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78203",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78075",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 
@@ -209,15 +207,15 @@ Yes, that is what I used to produce the 3d picture. I have just made #9669
 
 ---
 
-archive/issue_comments_078204.json:
+archive/issue_comments_078076.json:
 ```json
 {
     "body": "Attachment [concentrated_contours.png](tarball://root/attachments/some-uuid/ticket8625/concentrated_contours.png) by olazo created at 2010-10-23 23:19:22",
     "created_at": "2010-10-23T23:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8625",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78204",
-    "user": "olazo"
+    "url": "https://github.com/sagemath/sagetest/issues/8625#issuecomment-78076",
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 

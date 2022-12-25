@@ -6,15 +6,14 @@ archive/issues_000748.json:
     "body": "Assignee: @williamstein\n\nCC:  jpflori\n\n\n```\n\n2. For iml-1.0.1.p8, there is some autotools problem\nthat I have not been able to track down.  Is\neverything up-to-date with configure, etc.\nfor this package?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/748\n\n",
     "created_at": "2007-09-24T20:58:43Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.11",
     "title": "iml autohell",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/748",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/748
 
 ---
 
-archive/issue_comments_004374.json:
+archive/issue_comments_004359.json:
 ```json
 {
     "body": "I've reverted the iml package that will be distributed with Sage to version 1.0.1.p6 (from sage-2.8.4)\nuntil this gets resolved.",
     "created_at": "2007-09-25T05:20:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4374",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4359",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -58,15 +57,15 @@ until this gets resolved.
 
 ---
 
-archive/issue_comments_004375.json:
+archive/issue_comments_004360.json:
 ```json
 {
     "body": "The 1.0.1.p8 version is in sage-2.8.5",
     "created_at": "2007-09-25T05:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4375",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4360",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -76,15 +75,15 @@ The 1.0.1.p8 version is in sage-2.8.5
 
 ---
 
-archive/issue_comments_004376.json:
+archive/issue_comments_004361.json:
 ```json
 {
     "body": "A couple commets:\n\n* Arne merged the nullspace patch and a couple of the other fixes. Some of the other fixes no longer apply\n* spkg-install does odd things, i.e  fall back to non-ATLAS which is no longer needed\n* The SPKG needs some general cleanup\n* on OSX without creating 'repl' the build on the vanilla sources fails\n \nArne is putting together some 1.0.3 release which we can then test in Sage\n\nCheers,\n\nMichael",
     "created_at": "2008-06-15T23:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4376",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +104,15 @@ Michael
 
 ---
 
-archive/issue_comments_004377.json:
+archive/issue_comments_004362.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-06-15T23:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4377",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4362",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_004378.json:
+archive/issue_comments_004363.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-06-15T23:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4378",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4363",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -141,15 +140,15 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_comments_004379.json:
+archive/issue_comments_004364.json:
 ```json
 {
     "body": "Changing status from new to needs_info_new.",
     "created_at": "2009-10-06T19:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4379",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4364",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -159,15 +158,15 @@ Changing status from new to needs_info_new.
 
 ---
 
-archive/issue_comments_004380.json:
+archive/issue_comments_004365.json:
 ```json
 {
     "body": "I'm closing this as a duplicate of #9568.",
     "created_at": "2011-09-13T09:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4380",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4365",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -177,15 +176,15 @@ I'm closing this as a duplicate of #9568.
 
 ---
 
-archive/issue_comments_004381.json:
+archive/issue_comments_004366.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"spkg upgrade\".",
     "created_at": "2011-09-13T09:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4381",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4366",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -195,15 +194,15 @@ Changing keywords from "" to "spkg upgrade".
 
 ---
 
-archive/issue_comments_004382.json:
+archive/issue_comments_004367.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-09-13T09:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4382",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4367",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -213,15 +212,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_004383.json:
+archive/issue_comments_004368.json:
 ```json
 {
     "body": "Is it not more sensible for the duplicated ticket to be closed, rather than the original one? That's the way gcc handle it. If you report something that's a duplicate of an older ticket, the newer ticket gets closed - not the older one. \n\n\nDave",
     "created_at": "2012-05-28T05:20:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4383",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4368",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -234,15 +233,15 @@ Dave
 
 ---
 
-archive/issue_comments_004384.json:
+archive/issue_comments_004369.json:
 ```json
 {
     "body": "I guess it depends on which ticket has the most useful comments / patches and the most relevant people CC'd to it. At least #13027 has an SPKG attached. #9568 and this ticket certainly have more useful comments than #13027, though.",
     "created_at": "2012-05-28T05:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4384",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4369",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -252,15 +251,15 @@ I guess it depends on which ticket has the most useful comments / patches and th
 
 ---
 
-archive/issue_comments_004385.json:
+archive/issue_comments_004370.json:
 ```json
 {
     "body": "Resolution changed from duplicate to ",
     "created_at": "2012-05-28T05:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4385",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4370",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -270,15 +269,15 @@ Resolution changed from duplicate to
 
 ---
 
-archive/issue_comments_004386.json:
+archive/issue_comments_004371.json:
 ```json
 {
     "body": "I have no objection to reopening this ticket, anyway. In any case, once someone actually solves the problem, all three will be closed.",
     "created_at": "2012-05-28T05:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4386",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4371",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -288,15 +287,15 @@ I have no objection to reopening this ticket, anyway. In any case, once someone 
 
 ---
 
-archive/issue_comments_004387.json:
+archive/issue_comments_004372.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2012-05-28T05:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4387",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4372",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -306,15 +305,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_004388.json:
+archive/issue_comments_004373.json:
 ```json
 {
     "body": "Changing keywords from \"spkg upgrade\" to \"spkg upgrade iml\".",
     "created_at": "2012-05-28T05:55:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4388",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4373",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -324,15 +323,15 @@ Changing keywords from "spkg upgrade" to "spkg upgrade iml".
 
 ---
 
-archive/issue_comments_004389.json:
+archive/issue_comments_004374.json:
 ```json
 {
     "body": "I have a patch for repl problem in sage-on-gentoo but all the autotool chain needs to be regenerated after you apply it.\n[https://github.com/cschwan/sage-on-gentoo/blob/master/sci-libs/iml/files/iml-1.0.3-repl_removal.patch](https://github.com/cschwan/sage-on-gentoo/blob/master/sci-libs/iml/files/iml-1.0.3-repl_removal.patch)",
     "created_at": "2012-05-28T09:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4389",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4374",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -343,15 +342,15 @@ I have a patch for repl problem in sage-on-gentoo but all the autotool chain nee
 
 ---
 
-archive/issue_comments_004390.json:
+archive/issue_comments_004375.json:
 ```json
 {
     "body": "Thanks, that will help. We cannot run autotools at build time, only at packaging time, since we don't have autotools as a dependency of Sage, nor do we package it in Sage. So rather than including your patch I guess I should apply it, run autotools, and then save *that* diff as a patch to apply at build time.\n\nBefore seeing your diff I had solved the repl problem like this:\n\n\n```diff\ndiff --git a/repl/Makefile.am b/repl/Makefile.am\nindex 4cf001b..7be2e86 100644\n--- a/repl/Makefile.am\n+++ b/repl/Makefile.am\n@@ -1,4 +1,4 @@\n noinst_LTLIBRARIES      = librepl.la\n-librepl_la_SOURCES   =\n+librepl_la_SOURCES   = dummy.c\n librepl_la_LIBADD    = @LTLIBOBJS@\n \ndiff --git a/repl/Makefile.in b/repl/Makefile.in\nindex 5c65bfa..ba963ec 100644\n--- a/repl/Makefile.in\n+++ b/repl/Makefile.in\n@@ -51,7 +51,7 @@ CONFIG_HEADER = $(top_builddir)/config.h\n CONFIG_CLEAN_FILES =\n LTLIBRARIES = $(noinst_LTLIBRARIES)\n librepl_la_DEPENDENCIES = @LTLIBOBJS@\n-am_librepl_la_OBJECTS =\n+am_librepl_la_OBJECTS = dummy.lo\n librepl_la_OBJECTS = $(am_librepl_la_OBJECTS)\n DEFAULT_INCLUDES = -I. -I$(srcdir) -I$(top_builddir)\n depcomp = $(SHELL) $(top_srcdir)/config/depcomp\n@@ -172,7 +172,7 @@ sharedstatedir = @sharedstatedir@\n sysconfdir = @sysconfdir@\n target_alias = @target_alias@\n noinst_LTLIBRARIES = librepl.la\n-librepl_la_SOURCES = \n+librepl_la_SOURCES = dummy.c\n librepl_la_LIBADD = @LTLIBOBJS@\n all: all-am\n \n@@ -226,6 +226,7 @@ distclean-compile:\n \t-rm -f *.tab.c\n \n @AMDEP_TRUE@@am__include@ @am__quote@$(DEPDIR)/realloc.Plo@am__quote@\n+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/dummy.Plo@am__quote@\n \n .c.o:\n @am__fastdepCC_TRUE@\tif $(COMPILE) -MT $@ -MD -MP -MF \"$(DEPDIR)/$*.Tpo\" -c -o $@ $<; \\\n@@ -367,7 +368,7 @@ clean-am: clean-generic clean-libtool clean-noinstLTLIBRARIES \\\n \tmostlyclean-am\n \n distclean: distclean-am\n-\t-rm -rf $(DEPDIR)\n+\t-rm -rf $(DEPDIR) ./$(DEPDIR)\n \t-rm -f Makefile\n distclean-am: clean-am distclean-compile distclean-generic \\\n \tdistclean-libtool distclean-tags\n@@ -393,7 +394,7 @@ install-man:\n installcheck-am:\n \n maintainer-clean: maintainer-clean-am\n-\t-rm -rf $(DEPDIR)\n+\t-rm -rf $(DEPDIR) ./$(DEPDIR)\n \t-rm -f Makefile\n maintainer-clean-am: distclean-am maintainer-clean-generic\n \ndiff --git a/repl/dummy.c b/repl/dummy.c\nnew file mode 100644\nindex 0000000..39e7442\n--- /dev/null\n+++ b/repl/dummy.c\n@@ -0,0 +1 @@\n+void dummy () { return; }\ndiff --git a/src/Makefile.in b/src/Makefile.in\nindex e9ca293..a1f5a81 100644\n--- a/src/Makefile.in\n+++ b/src/Makefile.in\n@@ -223,6 +223,7 @@ libiml_la_CFLAGS = $(AM_CFLAGS)\n libiml_la_LIBADD = $(EXTERNLIB) \\\n \t \t   $(top_builddir)/repl/librepl.la\n \n+libiml_la_LDFLAGS = -version-info 1:0:1\n all: all-am\n \n .SUFFIXES:\n```\n\n\nThe first hunk is manually edited, as is the hunk adding the file `repl/dummy.c`; the rest are created by running automake in the src directory.\n\nThere are a couple of things that worry me, such as the `-version-info 1:0:1` near the end of the diff. Does that mean that autotools are misunderstanding the version of IML as 1.0.1 instead of 1.0.3? Why does a similar line not already exist in that file? As far as I can tell, I made sure I was using the same versions of autotools that the authors of IML were - autoconf 2.59, automake 1.9.6, and libtool 1.5.22.\n\nAnyway, I'll try again with your patch instead of this dummy function and see what's different. This time I'll also try the whole autotools suite by running `autoreconf -i` (as recommended to me by Jeroen) - is this what you recommend too, fbissey?",
     "created_at": "2012-05-28T16:32:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4390",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4375",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -451,15 +450,15 @@ Anyway, I'll try again with your patch instead of this dummy function and see wh
 
 ---
 
-archive/issue_comments_004391.json:
+archive/issue_comments_004376.json:
 ```json
 {
     "body": "Oh, I should mention that the patch I pasted in the previous comment actually does work to get rid of the build failure caused in `repl/`. Now the problem seems to be something with dynamic linking. To copy from #13027:\n\n\n```\ncreating test-largeentry\ndyld: lazy symbol binding failed: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\ndyld: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\n/bin/sh: line 1: 74987 Trace/BPT trap          ${dir}$tst\nFAIL: test-smallentry\ndyld: lazy symbol binding failed: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\ndyld: Symbol not found: _cblas_dgemm\n  Referenced from: /Users/wstein/build/sage-5.0/spkg/build/iml-1.0.3.p0/src/src/.libs/libiml.0.dylib\n  Expected in: flat namespace\n\n/bin/sh: line 1: 75006 Trace/BPT trap          ${dir}$tst\nFAIL: test-largeentry\n===================\n2 of 2 tests failed\n===================\nmake[2]: *** [check-TESTS] Error 1\nmake[1]: *** [check-am] Error 2\nmake: *** [check-recursive] Error 1\nError testing IML\n```\n\n\nAs you can see, this is during the testing phase, so building completes successfully with the patch I pasted in the previous comment.",
     "created_at": "2012-05-28T16:34:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4391",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4376",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -504,15 +503,15 @@ As you can see, this is during the testing phase, so building completes successf
 
 ---
 
-archive/issue_comments_004392.json:
+archive/issue_comments_004377.json:
 ```json
 {
     "body": "If after five years we haven't heard anything from upstream, by the way, I don't think we should any longer \"wait on upstream\", so I'm changing the title of the ticket...",
     "created_at": "2012-05-28T16:37:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4392",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4377",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -522,15 +521,15 @@ If after five years we haven't heard anything from upstream, by the way, I don't
 
 ---
 
-archive/issue_comments_004393.json:
+archive/issue_comments_004378.json:
 ```json
 {
     "body": "I spoke too soon - Arne Storjohann just contacted me to tell me that he has corrected the links on the IML webpage for older versions of IML, so now I have been able to produce a diff between clean upstream 1.0.1 and the version in the current standard spkg iml-1.0.1.p14.spkg. I will attach it after posting this comment, for reference.",
     "created_at": "2012-05-28T18:02:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4393",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4378",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -540,15 +539,15 @@ I spoke too soon - Arne Storjohann just contacted me to tell me that he has corr
 
 ---
 
-archive/issue_comments_004394.json:
+archive/issue_comments_004379.json:
 ```json
 {
     "body": "I don't think I ever ran the test with the sage-on-gento ebuild on OS X. I will try that.What OS X version were you testing?",
     "created_at": "2012-05-28T19:28:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4394",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4379",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -558,15 +557,15 @@ I don't think I ever ran the test with the sage-on-gento ebuild on OS X. I will 
 
 ---
 
-archive/issue_comments_004395.json:
+archive/issue_comments_004380.json:
 ```json
 {
     "body": "Reread the whole thing again. Yes autoreconf -i sounds good. Just for reference while upstream claims you need atlas cblas it doesn't use any atlas specific bits but the configure script is set to find atlas and nothing else.\n\nWhen we regenerate configure we usually don't ship it as a patch, the diff is usually too big. Historically in the case of cddlib Id on't think we ship pristine source in that case but the patch we used and the recipe to regenerate configure and friends. cddlib is a spkg you could look at for reference.\n\nTests pass on sage-on-gentoo on OS X 10.5.8 by the way.",
     "created_at": "2012-05-29T02:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4395",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4380",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -580,15 +579,15 @@ Tests pass on sage-on-gentoo on OS X 10.5.8 by the way.
 
 ---
 
-archive/issue_comments_004396.json:
+archive/issue_comments_004381.json:
 ```json
 {
     "body": "Changing keywords from \"spkg upgrade iml\" to \"spkg upgrade iml sd40.5\".",
     "created_at": "2012-05-29T16:26:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4396",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4381",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -598,15 +597,15 @@ Changing keywords from "spkg upgrade iml" to "spkg upgrade iml sd40.5".
 
 ---
 
-archive/issue_comments_004397.json:
+archive/issue_comments_004382.json:
 ```json
 {
     "body": "Hi jpflori! I was working on this a couple months ago, and as I recall I was running into a similar autotools dilemma to the one you were discussing on sage-devel recently. I never did get it to build on OS X...\n\nHere's an unfinished SPKG if you want to take a look at what I did so far (not much): http://boxen.math.washington.edu/home/keshav/files/iml-1.0.3.p0.unfinished.spkg",
     "created_at": "2012-08-09T10:49:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4397",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4382",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -618,15 +617,15 @@ Here's an unfinished SPKG if you want to take a look at what I did so far (not m
 
 ---
 
-archive/issue_comments_004398.json:
+archive/issue_comments_004383.json:
 ```json
 {
     "body": "What is happening to you on OS X?",
     "created_at": "2012-08-09T10:56:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4398",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4383",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -636,15 +635,15 @@ What is happening to you on OS X?
 
 ---
 
-archive/issue_comments_004399.json:
+archive/issue_comments_004384.json:
 ```json
 {
     "body": "As I recall, tests were failing because the built binaries weren't linking to the system's BLAS properly, or something. See earlier comments on this ticket and on #13027.",
     "created_at": "2012-08-09T11:08:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4399",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4384",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -654,15 +653,15 @@ As I recall, tests were failing because the built binaries weren't linking to th
 
 ---
 
-archive/issue_comments_004400.json:
+archive/issue_comments_004385.json:
 ```json
 {
     "body": "(Sorry, I see that I said I didn't get it to *build* on OS X - that's incorrect, I got it to *build* but not to *work*.)",
     "created_at": "2012-08-09T11:16:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4400",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4385",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -672,15 +671,15 @@ archive/issue_comments_004400.json:
 
 ---
 
-archive/issue_comments_004401.json:
+archive/issue_comments_004386.json:
 ```json
 {
     "body": "Yes of course I should really have tried to be more helpful there. I'll look at what you have done so far. Using atlas on OS X may help here.",
     "created_at": "2012-08-09T11:19:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4401",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4386",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -690,15 +689,15 @@ Yes of course I should really have tried to be more helpful there. I'll look at 
 
 ---
 
-archive/issue_comments_004402.json:
+archive/issue_comments_004387.json:
 ```json
 {
     "body": "I've got no access to OS X based computers, so if the problem is mainly about that, I'll have trouble helping...\n\nI mainly want to add -no-undefined to LDFLAGS on Cygwin (not the proper solution, if it works which has to be checked... we should only add it to the lib..._la_LDFLAGS in some Makefile.am, but that's looking for trouble, and adding it to LDFLAGS should be ok, even though it will be used all the time, even when it's useless, but a priori not harmful).",
     "created_at": "2012-08-09T16:03:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4402",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4387",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -710,15 +709,15 @@ I mainly want to add -no-undefined to LDFLAGS on Cygwin (not the proper solution
 
 ---
 
-archive/issue_comments_004403.json:
+archive/issue_comments_004388.json:
 ```json
 {
     "body": "OK there are two options:\n1 - we wait for sage to default to ATLAS-3.10 on OS X and use that\n2 - rewrite the configure.ac to provide any cblas we want and regenerate configure. We are going to regenerate configure in the process anyway.",
     "created_at": "2012-08-10T03:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4403",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4388",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -730,15 +729,15 @@ OK there are two options:
 
 ---
 
-archive/issue_comments_004404.json:
+archive/issue_comments_004389.json:
 ```json
 {
     "body": "Do you have some nonzero expectation of Sage defaulting to building and using ATLAS on OS X rather than using the BLAS that's built into the operating system? When I was working on this I assumed waiting for ATLAS on OS X was a non-option, but maybe you know something I don't.\n\nI only saw the second option remaining, and that's actually why I sort of gave up on this - I didn't want to start writing autotools scripts if possible, after seeing David Kirkby's dire warnings on sage-devel to the effect that in order to write autotools scripts you have to carefully read the autotools manual from cover to cover first...\n\nI suppose a third option would be to ask the iml authors themselves to support generic BLAS.",
     "created_at": "2012-08-10T07:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4404",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4389",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -752,15 +751,15 @@ I suppose a third option would be to ask the iml authors themselves to support g
 
 ---
 
-archive/issue_comments_004405.json:
+archive/issue_comments_004390.json:
 ```json
 {
     "body": "You could say I know enough. And we have already done the work on gentoo. The gentoo solution itself cannot be adopted as it rely on blas/lapack installing pkgconfig files. But I know enough. The easiest thing is just to remove all traces of Atlas autodetection and provide the necessary stuff by compile flags. More sophisticated is to include a \"--with-cblas\" statement that would be basically do the same thing.\n\nI am otherwise positive that #10508 is opening the possibility of ATLAS on OS X - but all spkg using blas/lapack need to be adjusted for it to be useful.\n\nPatching the detection can be done orthogonally to getting atlas, the autodetection is a tricky business in this case.",
     "created_at": "2012-08-10T09:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4405",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4390",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -774,15 +773,15 @@ Patching the detection can be done orthogonally to getting atlas, the autodetect
 
 ---
 
-archive/issue_comments_004406.json:
+archive/issue_comments_004391.json:
 ```json
 {
     "body": "I think I can spend a little bit of time sorting stuff on this in the next few days. I will try to future proof it for #10508 so that there is no need to change the spkg when it is changed to positive review.",
     "created_at": "2012-10-26T10:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4406",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4391",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -792,15 +791,15 @@ I think I can spend a little bit of time sorting stuff on this in the next few d
 
 ---
 
-archive/issue_comments_004407.json:
+archive/issue_comments_004392.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-06-12T12:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4407",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4392",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -810,15 +809,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_004408.json:
+archive/issue_comments_004393.json:
 ```json
 {
     "body": "**not yet doctested** but at least the spkg and its testsuite work on Linux and OS X.",
     "created_at": "2013-06-12T12:47:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4408",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4393",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -828,15 +827,15 @@ archive/issue_comments_004408.json:
 
 ---
 
-archive/issue_comments_004409.json:
+archive/issue_comments_004394.json:
 ```json
 {
     "body": "I still get\n\n```\n./configure: line 18624: -O2: command not found\n```\n",
     "created_at": "2013-06-12T13:28:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4409",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4394",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -851,15 +850,15 @@ I still get
 
 ---
 
-archive/issue_comments_004410.json:
+archive/issue_comments_004395.json:
 ```json
 {
     "body": "Replying to [comment:37 leif]:\n> I still get\n> {{{\n> ./configure: line 18624: -O2: command not found\n> }}}\nFixed in new spkg.\n\nDoctests on boxen.math pass.",
     "created_at": "2013-06-12T16:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4410",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4395",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -876,15 +875,15 @@ Doctests on boxen.math pass.
 
 ---
 
-archive/issue_comments_004411.json:
+archive/issue_comments_004396.json:
 ```json
 {
     "body": "I already checked the spkg looks sane and installs fine.\nSage still pass its (not long) tests.\n\nI just have to check the changes in the patches and I'll give it positive review.",
     "created_at": "2013-06-14T11:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4411",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4396",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -897,15 +896,15 @@ I just have to check the changes in the patches and I'll give it positive review
 
 ---
 
-archive/issue_comments_004412.json:
+archive/issue_comments_004397.json:
 ```json
 {
     "body": "Why merge tinyatlas.patch into sage1.patch?\n\nOn top of that I don't really get the use of the tinyatlas patch.\nThe function it defines (in a header file) is used nor in IML nor in Sage.\nI'm testing Sage without it (no problems for IML).\n\nSo maybe renaming sage1.patch to memory.patch and discarding tinyatlas.patch would be enough.\nAnd lets move the sage3_memleak.patch to memleak.patch while at it.",
     "created_at": "2013-06-14T12:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4412",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4397",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -922,15 +921,15 @@ And lets move the sage3_memleak.patch to memleak.patch while at it.
 
 ---
 
-archive/issue_comments_004413.json:
+archive/issue_comments_004398.json:
 ```json
 {
     "body": "Replying to [comment:40 jpflori]:\n> Why merge tinyatlas.patch into sage1.patch?\nBecause those patches seem related: `sage1.patch` adds some include for `tinyatlas.h`.\n\n> On top of that I don't really get the use of the tinyatlas patch.\n> The function it defines (in a header file) is used nor in IML nor in Sage.\nThat's certainly not true. The files `RNSop.c` and `certsolve.c` in the `src/src` directory in `IML` use `catlas_daxpby()`.\n\nMy guess is that's a function which normally comes from ATLAS, but which is needed on systems where ATLAS is not installed.",
     "created_at": "2013-06-14T13:06:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4413",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4398",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -948,15 +947,15 @@ My guess is that's a function which normally comes from ATLAS, but which is need
 
 ---
 
-archive/issue_comments_004414.json:
+archive/issue_comments_004399.json:
 ```json
 {
     "body": "Replying to [comment:41 jdemeyer]:\n> Replying to [comment:40 jpflori]:\n> > Why merge tinyatlas.patch into sage1.patch?\n> Because those patches seem related: `sage1.patch` adds some include for `tinyatlas.h`.\nOk, i thought the include was in tinyatlas.h as well, so I did not check.\n> \n> > On top of that I don't really get the use of the tinyatlas patch.\n> > The function it defines (in a header file) is used nor in IML nor in Sage.\n> That's certainly not true. The files `RNSop.c` and `certsolve.c` in the `src/src` directory in `IML` use `catlas_daxpby()`.\n> \nIt seems to be true with IML 1.0.3 but not with 1.0.1 indeed.\n(I mean the daxpby function was needed in 1.0.1 but is not anymore in 1.0.3.)\n> My guess is that's a function which normally comes from ATLAS, but which is needed on systems where ATLAS is not installed.",
     "created_at": "2013-06-14T13:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4414",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4399",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -978,15 +977,15 @@ It seems to be true with IML 1.0.3 but not with 1.0.1 indeed.
 
 ---
 
-archive/issue_comments_004415.json:
+archive/issue_comments_004400.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2013-06-14T13:11:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4415",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4400",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -996,15 +995,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_004416.json:
+archive/issue_comments_004401.json:
 ```json
 {
     "body": "Replying to [comment:42 jpflori]:\n> It seems to be true with IML 1.0.3 but not with 1.0.1.\nOK, right, I checked the old sources.",
     "created_at": "2013-06-14T13:12:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4416",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4401",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1016,15 +1015,15 @@ OK, right, I checked the old sources.
 
 ---
 
-archive/issue_comments_004417.json:
+archive/issue_comments_004402.json:
 ```json
 {
     "body": "I confirm that `catlas_daxpby()` is indeed nowhere used outside of the ATLAS sources.\n\nWorking on new spkg...",
     "created_at": "2013-06-14T13:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4417",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4402",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1036,15 +1035,15 @@ Working on new spkg...
 
 ---
 
-archive/issue_comments_004418.json:
+archive/issue_comments_004403.json:
 ```json
 {
     "body": "Applying the following changes:\n\n```diff\ndiff --git a/SPKG.txt b/SPKG.txt\n--- a/SPKG.txt\n+++ b/SPKG.txt\n@@ -32,21 +32,27 @@\n\n === Patches ===\n\n- * rename_lift.patch: Change lift to iml_lift in padiclift.* and\n-   nonsingsolve.*, since otherwise  on OSX you'll have horrible weird\n-   conflict problems.\n+ * blas_headers.patch: Add BLAS header files from GSL, needed in case\n+   ATLAS has not been installed.\n+ * build.patch: Made build scripts that work.\n  * configure_default_cflags.patch: get rid of the following error\n    during configure:\n      ./configure: line 18624: -O3: command not found\n- * Modified some of the examples, and made build scripts that work.\n+ * examples.patch: Modified some of the examples.\n+ * memleak.patch: use mpz_set_ui instead of mpz_init_set_ui on mpz\n+   which is already allocated.\n+ * remove_repl.patch: Do not build/install src/repl at all, since it\n+   does nothing anyway and creating empty archives fails on OS X.\n\n == Changelog ==\n\n === iml-1.0.3.p0 (Jeroen Demeyer, 12 June 2013) ===\n  * #748: Upgrade to latest upstream version, rebase patches.\n  * Remove rename_lift.patch and sage2.patch, which were upstreamed.\n- * Merged tinyatlas.patch into sage1.patch.\n- * Apply sage3_memleak.patch in all 3 places with similar code.\n+ * Removed tinyatlas.patch and #include \"tinyatlas.h\"\n+ * Removed sage1.patch\n+ * Apply sage3_memleak.patch in all 3 places with similar code, rename\n+   to memleak.patch\n  * Use -O3 optimization level by default.\n  * Add configure_default_cflags.patch.\n\ndiff --git a/patches/sage3_memleak.patch b/patches/memleak.patch\nrename from patches/sage3_memleak.patch\nrename to patches/memleak.patch\ndiff --git a/patches/sage1.patch b/patches/sage1.patch\ndeleted file mode 100644\n--- a/patches/sage1.patch\n+++ /dev/null\n@@ -1,80 +0,0 @@\n-diff -ruN b/src/RNSop.c a/src/RNSop.c\n---- b/src/RNSop.c      2006-11-23 22:25:23.000000000 +0100\n-+++ a/src/RNSop.c      2013-06-10 23:05:18.872404179 +0200\n-@@ -46,6 +46,7 @@\n- \n- \n- #include \"RNSop.h\"\n-+#include \"tinyatlas.h\"\n- \n- /*\n-  *\n-diff -ruN b/src/memalloc.c a/src/memalloc.c\n---- b/src/memalloc.c   2006-11-23 22:25:23.000000000 +0100\n-+++ a/src/memalloc.c   2013-06-10 23:05:18.872404179 +0200\n-@@ -48,13 +48,16 @@\n- \n- #include \"error.h\"\n- #include \"common.h\"\n-+#include \"stdio.h\"\n- \n- void *\n- xmalloc (size_t num)\n- {\n-   void * new = malloc(num);\n--  if (!new)\n--    iml_fatal (\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal (\"Memory exhausted in xmalloc\");\n-+  }\n-   return new;\n- }\n- \n-@@ -65,8 +68,10 @@\n-   if (!p)\n-     return xmalloc(num);\n-   new = realloc(p, num);\n--  if (!new)\n--    iml_fatal(\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal(\"Memory exhausted in xrealloc\");\n-+  }\n-   return new;\n- }\n- \n-@@ -76,8 +81,10 @@\n- {\n- #if HAVE_CALLOC\n-   void * new = calloc(num, size);\n--  if (!new)\n--    iml_fatal(\"Memory exhausted\");\n-+  if (!new) {\n-+    printf(\"%ul\\n\", num);\n-+    iml_fatal(\"Memory exhausted in xcalloc\");\n-+  }\n- #else\n-   void * new = xmalloc(num*size);\n-   bzero(new, num*size);\n-diff -ruN iml-1.0.1-sage/src/tinyatlas.h src/src/tinyatlas.h\n---- iml-1.0.1-sage/src/tinyatlas.h     1970-01-01 01:00:00.000000000 +0100\n-+++ src/src/tinyatlas.h        2007-03-01 04:11:42.000000000 +0100\n-@@ -0,0 +1,17 @@\n-+/* \n-+Compute Y = alpha * X + beta * Y\n-+\n-+where \n-+   N = degree of each vector\n-+   incX = X stride\n-+   incY = Y stride\n-+*/\n-+\n-+void catlas_daxpby(const int N, const double alpha, const double *X,\n-+const int incX, const double beta, double *Y, const int incY) \n-+{\n-+  int i;\n-+  for(i=0; i < N; i++) {\n-+    Y[i*incY] = alpha * X[i*incX] + beta * Y[i*incY];\n-+  }\n-+}\n```\n",
     "created_at": "2013-06-14T13:23:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4418",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4403",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1183,15 +1182,15 @@ deleted file mode 100644
 
 ---
 
-archive/issue_comments_004419.json:
+archive/issue_comments_004404.json:
 ```json
 {
     "body": "Attachment [iml-1.0.3.p0.diff](tarball://root/attachments/some-uuid/ticket748/iml-1.0.3.p0.diff) by @jdemeyer created at 2013-06-14 13:24:37",
     "created_at": "2013-06-14T13:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4419",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4404",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1201,15 +1200,15 @@ Attachment [iml-1.0.3.p0.diff](tarball://root/attachments/some-uuid/ticket748/im
 
 ---
 
-archive/issue_comments_004420.json:
+archive/issue_comments_004405.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-06-14T13:27:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4420",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4405",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1219,15 +1218,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_004421.json:
+archive/issue_comments_004406.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-06-14T13:27:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4421",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4406",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -1237,15 +1236,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_004422.json:
+archive/issue_comments_004407.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2013-06-19T12:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4422",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4407",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1255,15 +1254,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_004423.json:
+archive/issue_comments_004408.json:
 ```json
 {
     "body": "**Sign of life of IML upstream** on #14648 !!1!111!",
     "created_at": "2014-04-16T16:41:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4423",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4408",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1273,15 +1272,15 @@ archive/issue_comments_004423.json:
 
 ---
 
-archive/issue_comments_004424.json:
+archive/issue_comments_004409.json:
 ```json
 {
     "body": "Replying to [comment:50 leif]:\n> **Sign of life of IML upstream** on #14648 !!1!111!\n\nhttp://trac.sagemath.org/ticket/14648#comment:51 ff. that is.",
     "created_at": "2014-04-16T16:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4424",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/748#issuecomment-4409",
+    "user": "https://github.com/nexttime"
 }
 ```
 

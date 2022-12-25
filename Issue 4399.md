@@ -6,15 +6,14 @@ archive/issues_004399.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage -t -long -optional devel/sage/sage/matrix/matrix1.pyx  \n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/matrix1.py\", line 222:\n    sage: magma(M)                             # optional -- requires magma\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[19]>\", line 1, in <module>\n        magma(M)                             # optional -- requires magma###line 222:\n    sage: magma(M)                             # optional -- requires magma\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/magma.py\", line 509, in __call__\n        return Expect.__call__(self, x)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 967, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 991, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"matrix1.pyx\", line 237, in sage.matrix.matrix1.Matrix._magma_ (sage/matrix/matrix1.c:2559)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/magma.py\", line 509, in __call__\n        return Expect.__call__(self, x)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 965, in __call__\n        return cls(self, x, name=name)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1293, in __init__\n        raise TypeError, x\n    TypeError: Error evaluating Magma code.\n    IN:\n[13] := MatrixAlgebra(_sage_[14], 3)![0,1,3,zeta9,zeta9^4,zeta9 - 1,-zeta9^5 - zeta9^2,1,0];\n    OUT:\n    >> _sage_[13] := MatrixAlgebra(_sage_[14], 3)![0,1,3,zeta9,zeta9^4,zeta9 - 1,-\n                                                         ^\n    User error: Identifier 'zeta9' has not been declared or assigned\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/matrix1.py\", line 226:\n    sage: magma(M**2) == magma(M)**2           # optional -- requires magma\nException raised:\n    Traceback (most recent call last):\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[20]>\", line 1, in <module>\n        magma(M**Integer(2)) == magma(M)**Integer(2)           # optional -- requires magma###line 226:\n    sage: magma(M**2) == magma(M)**2           # optional -- requires magma\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/magma.py\", line 509, in __call__\n        return Expect.__call__(self, x)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 967, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 991, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"matrix1.pyx\", line 237, in sage.matrix.matrix1.Matrix._magma_ (sage/matrix/matrix1.c:2559)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/magma.py\", line 509, in __call__\n        return Expect.__call__(self, x)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 965, in __call__\n        return cls(self, x, name=name)\n      File \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1293, in __init__\n        raise TypeError, x\n    TypeError: Error evaluating Magma code.\n    IN:\n[9] := MatrixAlgebra(_sage_[14], 3)![-3*zeta9^5 - 3*zeta9^2 + zeta9,zeta9^4 + 3,zeta9 - 1,2*zeta9^5 + zeta9^2 + 1,-zeta9^5 - zeta9^2 + 2*zeta9 - 1,zeta9^5 - zeta9^4 + 3*zeta9,zeta9,-zeta9^5 + zeta9^4 - zeta9^2,-3*zeta9^5 - 3*zeta9^2 + zeta9 - 1];\n    OUT:\n    In file \"/home/mabshoff/.sage//temp/iras/20404//interface//tmp20404\", line 1, column 47:\n    >> _sage_[9] := MatrixAlgebra(_sage_[14], 3)![-3*zeta9^5 - 3*zeta9^2 + zeta9,z\n                                                     ^\n    User error: Identifier 'zeta9' has not been declared or assigned\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4399\n\n",
     "created_at": "2008-10-30T17:19:20Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "Sage 3.1.4: magma related optional doctest failure in sage/matrix/matrix1.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4399",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -95,15 +94,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4399
 
 ---
 
-archive/issue_comments_032363.json:
+archive/issue_comments_032300.json:
 ```json
 {
     "body": "The two extcode patches were not merged from #2169, but I have now merged them. So these two patches should be ignored.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-30T23:49:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4399",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4399#issuecomment-32363",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4399#issuecomment-32300",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -117,15 +116,15 @@ Michael
 
 ---
 
-archive/issue_comments_032364.json:
+archive/issue_comments_032301.json:
 ```json
 {
     "body": "I deleted the two extcode patches to less the potential confusion when a new patch is posted here.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T20:27:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4399",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4399#issuecomment-32364",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4399#issuecomment-32301",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +138,15 @@ Michael
 
 ---
 
-archive/issue_comments_032365.json:
+archive/issue_comments_032302.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-24T22:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4399",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4399#issuecomment-32365",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4399#issuecomment-32302",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -157,15 +156,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_032366.json:
+archive/issue_comments_032303.json:
 ```json
 {
     "body": "Fixed in Sage 3.2.1.alpha1 via #4601.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-24T22:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4399",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4399#issuecomment-32366",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4399#issuecomment-32303",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

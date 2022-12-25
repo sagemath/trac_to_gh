@@ -6,15 +6,14 @@ archive/issues_009040.json:
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies @jhpalmieri @kcrisman @dimpase\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## How the Sage build was attempted\n* 64-bit build. SAGE64 was set to \"yes\"\n* #9008 update zlib to latest upstream release to allow a 64-bit library to be built. \n* #9009 update mercurial spkg to build 64-bit.\n* #7982 update sage_fortran so it can build 64-bit binaries.\n* Run 'make -k' so make did not stop on errors, so errors can be listed. \n\n## The problem\n\n```\nmake[7]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/lapack'\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmaking g_alab_her.d from g_alab_her.c\nmaking g_cntrlify.d from g_cntrlify.c\nmaking g_fontdb.d from g_fontdb.c\nmaking g_her_glyph.d from g_her_glyph.c\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: `Makedeps' is up to date.\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_alab_her.c -o g_alab_her.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_cntrlify.c -o g_cntrlify.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_fontdb.c -o g_fontdb.o\ngcc -std=gnu99 -I. -I../../../src/include -I../../../src/include -I/export/home/drkirkby/sage-4.4.2/local/include  -DHAVE_CONFIG_H   -fpic  -I/export/home/drkirkby/sage-4.4.2/local/include -L/export/home/drkirkby/sage-4.4.2/local/lib/ -O2 -g -m64  -c g_her_glyph.c -o g_her_glyph.o\ngcc -std=gnu99 -G -L/export/home/drkirkby/sage-4.4.2/local/lib/ -m64  -o vfonts.so g_alab_her.o g_cntrlify.o g_fontdb.o g_her_glyph.o -L../../../lib -lR -lm\nmake[7]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[7]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules/vfonts'\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/modules'\nmake[4]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library'\nmkdir ../../library\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/profile'\nbuilding system startup profile\nmkdir ../../../library/base\nmkdir ../../../library/base/R\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/profile'\nmake[5]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nbuilding package 'base'\nmake[6]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nmkdir ../../../library/base/demo\nmkdir ../../../library/base/po\nmake[6]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nld.so.1: R: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/lib/libR.so: symbol _init: value 0x228000984acd does not fit\n/bin/sh: line 1: 3520: Killed\nmake[5]: *** [all] Killed\nmake[5]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library/base'\nmake[4]: *** [R] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src/library'\nmake[3]: *** [R] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src/src'\nmake[2]: *** [R] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/r-2.10.1.p1/src'\nError building R.\n\nreal    2m34.249s\nuser    2m6.818s\nsys     0m23.514s\nsage: An error occurred while installing r-2.10.1.p1\n```\n\n\nI will try to build R outside of Sage next. \n\nOther OpenSolaris issues are shown at #9026\n\nIssue created by migration from https://trac.sagemath.org/ticket/9040\n\n",
     "created_at": "2010-05-25T00:52:46Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "fatal relocation error installing R on OpenSolaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9040",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -119,15 +118,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9040
 
 ---
 
-archive/issue_comments_083685.json:
+archive/issue_comments_083549.json:
 ```json
 {
     "body": "This might be difficult to solve. \n\n1) The R manual \n\nhttp://cran.r-project.org/doc/manuals/R-admin.html#Solaris\n\nmakes it clear that R has never been successfully built with gcc on OpenSolaris, though it can be built with Sun Studio. I'd prefer not to need to have both compilers installed, but it may be the only option, as there are too many GNUisms to get Sage to build all with Sun Studio. \n\n2) If the particular error message occurs with Sun Studio, \n\nhttp://developers.sun.com/solaris/articles/about_amd64_abi.html\n\nsuggests using the Sun Studio option '-Kpic' to build Position Independent Code (PIC) code. \n\nSince the R package appears to use '-fpic' with gcc, which generates PIC code, generating PIC code does not appear to be working with gcc. (However, normally one uses -fPIC, which is slightly different.) \n\nSo I'm not sure how to solve this. Maybe making Sun Studio (which is free) a prequisite is the only sensible option on OpenSolaris on x64 hardware. \n\nDave",
     "created_at": "2010-06-01T08:06:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83685",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83549",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -155,15 +154,15 @@ Dave
 
 ---
 
-archive/issue_comments_083686.json:
+archive/issue_comments_083550.json:
 ```json
 {
     "body": "This also seems like an issue on Solaris on x64 (not just OpenSolaris).  At least, I can't build R on fulvia, and I get a similar error message.",
     "created_at": "2010-08-02T05:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83686",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83550",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -173,15 +172,15 @@ This also seems like an issue on Solaris on x64 (not just OpenSolaris).  At leas
 
 ---
 
-archive/issue_comments_083687.json:
+archive/issue_comments_083551.json:
 ```json
 {
     "body": "Replying to [comment:4 jhpalmieri]:\n> This also seems like an issue on Solaris on x64 (not just OpenSolaris).  At least, I can't build R on fulvia, and I get a similar error message.\n\nYou do not surprise me there. Page 49 of the [R Installation and Administration Guide](http://cran.r-project.org/doc/manuals/R-admin.pdf) says in the section on Solaris:\n\n*Tests with gcc4 on x86 and amd64 have been less successful: x86 builds have failed on tests using complex arithmetic, whereas on amd64 the builds have failed to complete in several different ways, most recently with relocation errors for libRblas.so* I'm not sure if R is built with the -fPIC option, but if not, that is likely to be the cause of relocation errors. I finally convinced the Pari developers that one should use -fPIC on shared libraries. \n\nSince R runs as a stand-alone program, building with the recommended Sun compilers should not cause any linking problems. \n\nIt means one needs to have two sets of compilers installed, which is a bit annoying, but there may be no way around it. I guess if we had a patch that worked with gcc, we could submit that to the R developers. I thought I'd worry about the R issue when the rest of Sage was building on this hardware, since R is not a critical component to getting something working. \n\nAn older version of the Sun compilers is installed on 't2' in the directory `/opt/SUNWspro`. The C compiler is `/opt/SUNWspro/bin/cc` and the C++ compiler is `/opt/SUNWspro/bin/CC`. That might be sufficient. It is not the latest SunStudio, but I doubt one needs to have the latest version. If it is needed, SunStudio is a free download, though there's a lack of disk space on t2, so I am not keen to install it now. \n\nBTW, there's several errors in the R guide about Solaris, which I have raised, but I've had no positive response about. First I sent to the r-help, but was told they should go to r-devel or the bug database. Then after sending them to r-devel it was ignored. Then a reminder got ignored too. I guess I should submit them to the bug database. \n\nDave",
     "created_at": "2010-08-02T09:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83687",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83551",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -206,15 +205,15 @@ Dave
 
 ---
 
-archive/issue_comments_083688.json:
+archive/issue_comments_083552.json:
 ```json
 {
     "body": "I know more about this problem than was on the ticket. The shared libraries generated by R have non-PIC code in them. This is easy to prove, as detailed here\n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nbasically running\n\n\n```\n$ elfdump -d library | grep TEXTREL\n```\n\n\nshould produce no output, but it does in the case of the three R libraries \n\n\n```\ndrkirkby@hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libR.so | fgrep TEXTREL \n      [25]  TEXTREL           0                   \n      [34]  FLAGS             0x4                 [ TEXTREL ]\ndrkirkby@hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libRblas.so | fgrep TEXTREL \n      [19]  TEXTREL           0                   \n      [28]  FLAGS             0x4                 [ TEXTREL ]\ndrkirkby@hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ elfdump -d libRlapack.so | fgrep TEXTREL \n      [18]  TEXTREL           0                   \n      [27]  FLAGS             0x4                 [ TEXTREL ]\ndrkirkby@hawk:~/sage-4.6.2.rc1/local/lib/R/lib$ \n```\n\n\nThat blog page also describes how to track down the bad code, but its far from obvious to me what to do. I am totally lost. \n\nThe problem is also seen on 32-bit code on both SPARC and x86, but it only causing linking issues on 64-bit code. So essentially one could debug this problem on t2.math with either a 32-bit or 64-bit build. But I can't follow the logic needed to do this debugging. \n\n\nDave",
     "created_at": "2011-03-04T23:43:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83688",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83552",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -258,15 +257,15 @@ Dave
 
 ---
 
-archive/issue_comments_083689.json:
+archive/issue_comments_083553.json:
 ```json
 {
     "body": "Could you make available the complete build log? We could at least try to see where things go wrong when we compile these libraries.",
     "created_at": "2011-03-05T19:56:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83689",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83553",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -276,15 +275,15 @@ Could you make available the complete build log? We could at least try to see wh
 
 ---
 
-archive/issue_comments_083690.json:
+archive/issue_comments_083554.json:
 ```json
 {
     "body": "Replying to [comment:9 fbissey]:\n> Could you make available the complete build log? We could at least try to see where things go wrong when we compile these libraries. \n\nSure, though I don't think it will help much. See attached file r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2 The file that is probably causing the problem is `eval.c`. \n\nThe software system is slightly different to that in the description - both gcc and Sage have been updated, though the hardware is the same. \n\n* Sun Ultra 27 \n* 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. \n* 12 GB RAM\n* OpenSolaris 2009.06 snv_134 X86\n* Sage 4.6.2.rc1 (which is exactly the same as Sage 4.6.2 I gather)\n* gcc 4.5.0\n\nIf I compile with:\n\n\n```\nLD_OPTIONS=-Dreloc,detail\n```\n\n\nas suggested in that Sun blog, then the output will be several hundred MB. (If you want to see it, then it would be easier if I created you an account on this machine) or you tried on t2.math (I assume you have an account, if not I can create you one). But t2.math is desperately slow. \n\nI'm told on the R developers list that defining `NO_THREADED_CODE` will stop the use of the gcc extensions. Hopefully that will allow the library to build properly. I'm not sure of what negative impacts it will have.",
     "created_at": "2011-03-05T22:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83690",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83554",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -318,15 +317,15 @@ I'm told on the R developers list that defining `NO_THREADED_CODE` will stop the
 
 ---
 
-archive/issue_comments_083691.json:
+archive/issue_comments_083555.json:
 ```json
 {
     "body": "Failed build of R in sage-4.6.2.rc1 when compiling with gcc.",
     "created_at": "2011-03-05T22:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83691",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83555",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -336,15 +335,15 @@ Failed build of R in sage-4.6.2.rc1 when compiling with gcc.
 
 ---
 
-archive/issue_comments_083692.json:
+archive/issue_comments_083556.json:
 ```json
 {
     "body": "Attachment [r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2](tarball://root/attachments/some-uuid/ticket9040/r-2.10.1.p4-Failed-on-Sage-4.6.2.rc1_OpenSolaris-64-bit.log.bz2) by @kiwifb created at 2011-03-06 01:34:56\n\nOh dear, I stumbled on something quite similar while compiling my own fortran code on amd64 for the first time last month. The key point that sends my bells ringing is this\n\n```\nrelocation error: R_AMD64_PC32\n```\n\nI think you should totally try the -mcmodel option in C{XX}FLAGS:\n\n```\n`-mcmodel=small'\n     Generate code for the small code model: the program and its\n     symbols must be linked in the lower 2 GB of the address space.\n     Pointers are 64 bits.  Programs can be statically or dynamically\n     linked.  This is the default code model.\n\n`-mcmodel=kernel'\n     Generate code for the kernel code model.  The kernel runs in the\n     negative 2 GB of the address space.  This model has to be used for\n     Linux kernel code.\n\n`-mcmodel=medium'\n     Generate code for the medium model: The program is linked in the\n     lower 2 GB of the address space.  Small symbols are also placed\n     there.  Symbols with sizes larger than `-mlarge-data-threshold'\n     are put into large data or bss sections and can be located above\n     2GB.  Programs can be statically or dynamically linked.\n\n`-mcmodel=large'\n     Generate code for the large model: This model makes no assumptions\n     about addresses and sizes of sections.\n```\n\nmedium would probably work, if it doesn't try large.",
     "created_at": "2011-03-06T01:34:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83692",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83556",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -388,15 +387,15 @@ medium would probably work, if it doesn't try large.
 
 ---
 
-archive/issue_comments_083693.json:
+archive/issue_comments_083557.json:
 ```json
 {
     "body": "Replying to [comment:11 fbissey]:\n> Oh dear, I stumbled on something quite similar while compiling my own fortran code on amd64 for the first time last month. The key point that sends my bells ringing is this\n> {{{\n> relocation error: R_AMD64_PC32\n> }}}\n> I think you should totally try the -mcmodel option in C{XX}FLAGS:\n> {{{\n> `-mcmodel=small'\n>      Generate code for the small code model: the program and its\n>      symbols must be linked in the lower 2 GB of the address space.\n>      Pointers are 64 bits.  Programs can be statically or dynamically\n>      linked.  This is the default code model.\n> \n> `-mcmodel=kernel'\n>      Generate code for the kernel code model.  The kernel runs in the\n>      negative 2 GB of the address space.  This model has to be used for\n>      Linux kernel code.\n> \n> `-mcmodel=medium'\n>      Generate code for the medium model: The program is linked in the\n>      lower 2 GB of the address space.  Small symbols are also placed\n>      there.  Symbols with sizes larger than `-mlarge-data-threshold'\n>      are put into large data or bss sections and can be located above\n>      2GB.  Programs can be statically or dynamically linked.\n> \n> `-mcmodel=large'\n>      Generate code for the large model: This model makes no assumptions\n>      about addresses and sizes of sections.\n> }}}\n> medium would probably work, if it doesn't try large.\n\nThis does not help. Medium causes no change in behavior, whereas 'large;' causes an early exit with a message about longs were expected to be 4 bytes, not 8. (But since I'm building 64-bit, longs are 8 bytes). Whereas normally without either of those options, 5 shared libraries get built in R, this reduces to two if `-mcmodel=large`. \n\nI think the key to this is \n\nhttp://blogs.sun.com/rie/entry/my_relocations_don_t_fit\n\nI posted a log with the suggested debugging option (`LD_OPTIONS=-Dreloc,detail`) to \n\nhttp://boxen.math.washington.edu/home/kirkby/r-2.10.1.p4-with-debug-info.log.bz2\n\nI think you will see, its not easy to debug.",
     "created_at": "2011-03-06T20:21:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83693",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83557",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -447,15 +446,15 @@ I think you will see, its not easy to debug.
 
 ---
 
-archive/issue_comments_083694.json:
+archive/issue_comments_083558.json:
 ```json
 {
     "body": "Jumped the gun a little bit. It seemed worth a try.",
     "created_at": "2011-03-06T22:47:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83694",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83558",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -465,15 +464,15 @@ Jumped the gun a little bit. It seemed worth a try.
 
 ---
 
-archive/issue_comments_083695.json:
+archive/issue_comments_083559.json:
 ```json
 {
     "body": "Outdated, should be closed",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83695",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83559",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -483,15 +482,15 @@ Outdated, should be closed
 
 ---
 
-archive/issue_comments_083696.json:
+archive/issue_comments_083560.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83696",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83560",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -501,15 +500,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083697.json:
+archive/issue_comments_083561.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-07-15T06:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9040",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83697",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9040#issuecomment-83561",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

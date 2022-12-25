@@ -6,15 +6,13 @@ archive/issues_001722.json:
     "body": "Assignee: @williamstein\n\nMatrices of symbolic objects should either be callable, or support substitution, per user request at conference.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1722\n\n",
     "created_at": "2008-01-08T19:11:43Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Symbolic Matrices should be callable.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1722",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1722
 
 ---
 
-archive/issue_comments_010913.json:
+archive/issue_comments_010886.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-01-27T01:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10913",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10886",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +45,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_010914.json:
+archive/issue_comments_010887.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-27T01:17:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10914",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10887",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +63,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_010915.json:
+archive/issue_comments_010888.json:
 ```json
 {
     "body": "Great doctests, good comments, looks good to me.  I say apply.",
     "created_at": "2008-02-15T05:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10915",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10888",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -83,15 +81,15 @@ Great doctests, good comments, looks good to me.  I say apply.
 
 ---
 
-archive/issue_comments_010916.json:
+archive/issue_comments_010889.json:
 ```json
 {
     "body": "Against my 2.10.2.alpha0 I get a reject:\n\n```\npatch -p1 --dry-run < trac_1722.patch\npatching file sage/matrix/matrix_symbolic_dense.pxd\npatching file sage/matrix/matrix_symbolic_dense.pyx\nHunk #1 succeeded at 15 with fuzz 2 (offset 9 lines).\nHunk #2 succeeded at 48 with fuzz 2 (offset 8 lines).\nHunk #3 succeeded at 536 (offset 248 lines).\nHunk #4 FAILED at 617.\nHunk #5 FAILED at 681.\n2 out of 5 hunks FAILED -- saving rejects to file sage/matrix/matrix_symbolic_dense.pyx.rej\n```\n\nThe patch should be rebased against 2.10.2.alpha0 once it is out.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-15T05:20:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10916",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10889",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +117,15 @@ Michael
 
 ---
 
-archive/issue_comments_010917.json:
+archive/issue_comments_010890.json:
 ```json
 {
     "body": "Attachment [1722.patch](tarball://root/attachments/some-uuid/ticket1722/1722.patch) by @mwhansen created at 2008-02-27 20:16:25",
     "created_at": "2008-02-27T20:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10917",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10890",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -137,15 +135,15 @@ Attachment [1722.patch](tarball://root/attachments/some-uuid/ticket1722/1722.pat
 
 ---
 
-archive/issue_comments_010918.json:
+archive/issue_comments_010891.json:
 ```json
 {
     "body": "New rebased patch attached.",
     "created_at": "2008-02-27T20:16:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10918",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10891",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -155,15 +153,15 @@ New rebased patch attached.
 
 ---
 
-archive/issue_comments_010919.json:
+archive/issue_comments_010892.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc0",
     "created_at": "2008-02-28T00:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10919",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10892",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +171,15 @@ Merged in Sage 2.10.3.rc0
 
 ---
 
-archive/issue_comments_010920.json:
+archive/issue_comments_010893.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-28T00:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10920",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1722#issuecomment-10893",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

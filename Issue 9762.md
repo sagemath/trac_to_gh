@@ -6,15 +6,14 @@ archive/issues_009762.json:
     "body": "Assignee: @burcin\n\nCC:  @kini\n\nKeywords: units, SI, metrology\n\nThis is a module that implements physical units in a more convenient way than the already existing units module: instead of creating separate variables for each unit, it creates an object containing the value, the dimension (mass, length, time...) as a list, and the units as an expression, plus the conversion factor. \n\nIt includes an easy-to-use function to create units from a string, implements `SI` prefixes and has a nice `LaTeX` output.\n\nTO DO: Add more units (there are currently only 74, plus 13 constants), review the documentation and code in case it doesn't follow the Sage style, modify sage/symbolic/all.py to include this module (adding \"import metrology\" causes Sage to throw exceptions when starting).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9763\n\n",
     "created_at": "2010-08-18T18:49:10Z",
     "labels": [
-        "symbolics",
-        "minor",
-        "enhancement"
+        "component: symbolics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Metrology module (a different implementation of the units module)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9762",
-    "user": "@cousteaulecommandant"
+    "user": "https://github.com/cousteaulecommandant"
 }
 ```
 Assignee: @burcin
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9763
 
 ---
 
-archive/issue_comments_095643.json:
+archive/issue_comments_095484.json:
 ```json
 {
     "body": "Attachment [trac_9763_add_metrology.patch](tarball://root/attachments/some-uuid/ticket9763/trac_9763_add_metrology.patch) by @cousteaulecommandant created at 2010-08-18 18:58:49\n\nCreates the metrology.py file, but doesn't edit the corresponding all.py",
     "created_at": "2010-08-18T18:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95643",
-    "user": "@cousteaulecommandant"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95484",
+    "user": "https://github.com/cousteaulecommandant"
 }
 ```
 
@@ -57,15 +56,15 @@ Creates the metrology.py file, but doesn't edit the corresponding all.py
 
 ---
 
-archive/issue_comments_095644.json:
+archive/issue_comments_095485.json:
 ```json
 {
     "body": "The metrology.py file itself, in case it's preferred",
     "created_at": "2010-08-18T19:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95644",
-    "user": "@cousteaulecommandant"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95485",
+    "user": "https://github.com/cousteaulecommandant"
 }
 ```
 
@@ -75,15 +74,15 @@ The metrology.py file itself, in case it's preferred
 
 ---
 
-archive/issue_comments_095645.json:
+archive/issue_comments_095486.json:
 ```json
 {
     "body": "Attachment [metrology.py](tarball://root/attachments/some-uuid/ticket9763/metrology.py) by @cousteaulecommandant created at 2010-08-18 19:00:41\n\nExample of usage, Pi theorem",
     "created_at": "2010-08-18T19:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95645",
-    "user": "@cousteaulecommandant"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95486",
+    "user": "https://github.com/cousteaulecommandant"
 }
 ```
 
@@ -95,15 +94,15 @@ Example of usage, Pi theorem
 
 ---
 
-archive/issue_comments_095646.json:
+archive/issue_comments_095487.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-18T19:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95646",
-    "user": "@cousteaulecommandant"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95487",
+    "user": "https://github.com/cousteaulecommandant"
 }
 ```
 
@@ -113,15 +112,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_095647.json:
+archive/issue_comments_095488.json:
 ```json
 {
     "body": "Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9763/example_metrology.sage) by @cousteaulecommandant created at 2010-08-18 19:02:29",
     "created_at": "2010-08-18T19:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95647",
-    "user": "@cousteaulecommandant"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95488",
+    "user": "https://github.com/cousteaulecommandant"
 }
 ```
 
@@ -131,15 +130,15 @@ Attachment [example_metrology.sage](tarball://root/attachments/some-uuid/ticket9
 
 ---
 
-archive/issue_comments_095648.json:
+archive/issue_comments_095489.json:
 ```json
 {
     "body": "This needs more work as stated in the ticket description and seen by the fact that not all functions included have doctests.\n\nI don't think it makes sense to have 2 different units modules. I suppose the goal here is to replace the existing one at some point. Is the functionality here a clear extension of the existing one? Is there anything that the current module does that this will not be able to do? (I never used the units module.)\n\nBesides the questions of functionality, here are a few things I noticed when I read the patch:\n\n* The `Units` class should derive from `SageObject`.\n* I don't think introducing a function named `U` to the top level namespace is appropriate. Users which need this functionality so often can define such a shortcut in their initialization file.",
     "created_at": "2011-05-10T12:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95648",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95489",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -156,15 +155,15 @@ Besides the questions of functionality, here are a few things I noticed when I r
 
 ---
 
-archive/issue_comments_095649.json:
+archive/issue_comments_095490.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-05-10T12:20:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95649",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95490",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -174,15 +173,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_095650.json:
+archive/issue_comments_095491.json:
 ```json
 {
     "body": "As burcin said, the idea was to have this as a replacement for the current units module, without removing the old one. (Another idea was to call it units2, but that looked kind of ugly)\n\nMaking `Units` derive from `SageObject` might be a good idea; however I didn't know much about Sage (nor do I now, actually) so I didn't consider this possibility. Maybe a Units ring could be made too.\n\nThe `U()` function was called this way so one could create units conveniently, like\n\n```python\nfrom metrology import U\nlength = U(\"1 m\")\n```\n\nHowever, it's not necessary to have this function on the top level namespace, and Python guidelines usually suggest something like\n\n```python\nimport metrology\nlength = metrology.U(\"1 m\")\n```\n\n\nAs for advantages/disadvantages, well, I don't remember them all, but here's a rough list:\n\n### Pros\n\n* Create units from a text string, including multiples and fractions.\n* LaTeX representation of units.\n* Abstraction of units, as (value, unit !SI value, unit dimmensions), which allows to know the mass-length-time decomposition of the magnitude.\n* `0 * 1m = 0 m`, not just `0`. Also, it's possible to convert from 0 degrees Celsius to Fahrenheit, which is impossible with the current `units` module.\n\n### Cons\n\n* `Units` is a class written from scratch, with all operations (`__add__()`, `__mul__()`...) coded explicitly.\n* Interoperability with other data types (for example, a matrix of units) might be messy.\n* The `units` module has a pretty nice documentation for each unit, not present in this module.\n* It's very incomplete, missing a lot of units.",
     "created_at": "2011-05-10T21:41:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95650",
-    "user": "@cousteaulecommandant"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95491",
+    "user": "https://github.com/cousteaulecommandant"
 }
 ```
 
@@ -225,15 +224,15 @@ As for advantages/disadvantages, well, I don't remember them all, but here's a r
 
 ---
 
-archive/issue_comments_095651.json:
+archive/issue_comments_095492.json:
 ```json
 {
     "body": "(Apparently I forgot the space before each \"*\", resulting on a bad formatting. Since comments cannot be edited, I'll put the points again here for better readability)\n\n**Pros**\n\n* Create units from a text string, including multiples and fractions.\n* LaTeX representation of units.\n* Abstraction of units, as (value, unit SI value, unit dimmensions), which allows to know the mass-length-time decomposition of the magnitude.\n* `0 * 1m = 0 m`, not just `0`. Also, it's possible to convert from 0 degrees Celsius to Fahrenheit, which is impossible with the current `units` module.\n\n**Cons**\n\n* `Units` is a class written from scratch, with all operations (`__add__()`, `__mul__()`...) coded explicitly.\n* Interoperability with other data types (for example, a matrix of units) might be messy.\n* The `units` module has a pretty nice documentation for each unit, not present in this module.\n* It's very incomplete, missing a lot of units.",
     "created_at": "2011-05-10T21:50:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95651",
-    "user": "@cousteaulecommandant"
+    "url": "https://github.com/sagemath/sagetest/issues/9762#issuecomment-95492",
+    "user": "https://github.com/cousteaulecommandant"
 }
 ```
 

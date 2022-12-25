@@ -6,15 +6,14 @@ archive/issues_008568.json:
     "body": "Assignee: @burcin\n\nCC:  @jasongrout @burcin\n\nSometimes sage can differentiate erf, but if there are two variables involved it gets confused in simplification and passes too many arguments to erf in maxima.\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('c x')\n(c, x)\nsage: diff(erf(x), x)\nD[0](erf)(x)\nsage: simplify(diff(erf(x), x))\n2*e^(-x^2)/sqrt(pi)\nsage: diff(erf(c * x), x)\nc*D[0](erf)(c*x)\nsage: simplify(diff(erf(c * x), x))\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n| Sage Version 4.3.3, Release Date: 2010-02-21                       |\n| Type notebook() for the GUI, and license() for information.        |\n/.../<ipython console> in <module>()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/calculus/functional.pyc\nin simplify(f)\n     49     \"\"\"\n     50     try:\n---> 51         return f.simplify()\n     52     except AttributeError:\n     53         return f\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so\nin sage.symbolic.expression.Expression.simplify (sage/symbolic/expression.cpp:21495)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so\nin sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3435)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/structure/sage_object.so\nin sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3501)()\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc\nin __call__(self, x, name)\n   1030             \n   1031         if isinstance(x, basestring):\n-> 1032             return cls(self, x, name=name)\n   1033         try:\n   1034             return self._coerce_from_special_method(x)\n\n/.../sage-4.3.3-linux-64bit-ubuntu_9.10-x86_64-Linux/local/lib/python2.6/site-packages/sage/interfaces/expect.pyc\nin __init__(self, parent, value, is_name, name)\n   1449             except (TypeError, KeyboardInterrupt, RuntimeError, ValueError), x:\n   1450                 self._session_number = -1\n-> 1451                 raise TypeError, x\n   1452         self._session_number = parent._session_number\n   1453 \n\nTypeError: Error executing code in Maxima\nCODE:\n        sage4 : (c)*(diff('erf(c, x), c, 1))$\nMaxima ERROR:\n        \nWrong number of arguments to erf\n -- an error. To debug this try: debugmode(true);\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8568\n\n",
     "created_at": "2010-03-21T07:36:42Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "can not simplify derivative of erf",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8568",
-    "user": "gmcmanus"
+    "user": "https://trac.sagemath.org/admin/accounts/users/gmcmanus"
 }
 ```
 Assignee: @burcin
@@ -93,15 +92,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8568
 
 ---
 
-archive/issue_comments_077598.json:
+archive/issue_comments_077470.json:
 ```json
 {
     "body": "\n```\nCODE:\n        sage4 : (c)*(diff('erf(c, x), c, 1))$\nMaxima ERROR:\n```\n\nThis looks suspicious.  Why is it not erf(c*x)?  I will investigate.",
     "created_at": "2010-05-26T20:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77598",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77470",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -118,15 +117,15 @@ This looks suspicious.  Why is it not erf(c*x)?  I will investigate.
 
 ---
 
-archive/issue_comments_077599.json:
+archive/issue_comments_077471.json:
 ```json
 {
     "body": "Another problem... note that the variable being used in differentiation is c, not x!",
     "created_at": "2010-05-26T21:10:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77599",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77471",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -136,15 +135,15 @@ Another problem... note that the variable being used in differentiation is c, no
 
 ---
 
-archive/issue_comments_077600.json:
+archive/issue_comments_077472.json:
 ```json
 {
     "body": "Somehow it must be related to this inconsistency.\n\n```\nsage: a\nc*D[0](erf)(c*x)\nsage: a._maxima_init_()\n\"(c)*(diff('erf(c, x), c, 1))\"\nsage: a.operands()[1].operands()[0]\nc*x\nsage: a.operands()[1].operands()[0]._maxima_init_()\n'(c)*(x)'\n```\n\nAny ideas?",
     "created_at": "2010-05-26T21:25:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77600",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77472",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -167,15 +166,15 @@ Any ideas?
 
 ---
 
-archive/issue_comments_077601.json:
+archive/issue_comments_077473.json:
 ```json
 {
     "body": "Attachment [trac_8568-diff_conversion.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff_conversion.patch) by @burcin created at 2010-05-27 10:38:43",
     "created_at": "2010-05-27T10:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77601",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77473",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -185,15 +184,15 @@ Attachment [trac_8568-diff_conversion.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_077602.json:
+archive/issue_comments_077474.json:
 ```json
 {
     "body": "I attached a patch which fixes the conversion to maxima. This doesn't fix the problem in the title of this ticket, \"cannot simplify derivative of erf\", since we cannot convert derivatives to maxima format if the arguments to the function are not variables.\n\nIn order to fix the problem reported here, we can add a `_derivative_` method to the `Function_erf()` class defined in `sage.functions.other`.",
     "created_at": "2010-05-27T10:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77602",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77474",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -205,15 +204,15 @@ In order to fix the problem reported here, we can add a `_derivative_` method to
 
 ---
 
-archive/issue_comments_077603.json:
+archive/issue_comments_077475.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-05-27T10:45:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77603",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77475",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -223,15 +222,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_077604.json:
+archive/issue_comments_077476.json:
 ```json
 {
     "body": "That sounds like a great idea.  Patch coming up.",
     "created_at": "2010-05-27T15:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77604",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77476",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -241,15 +240,15 @@ That sounds like a great idea.  Patch coming up.
 
 ---
 
-archive/issue_comments_077605.json:
+archive/issue_comments_077477.json:
 ```json
 {
     "body": "Apply only this.",
     "created_at": "2010-05-27T15:46:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77605",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77477",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -259,15 +258,15 @@ Apply only this.
 
 ---
 
-archive/issue_comments_077606.json:
+archive/issue_comments_077478.json:
 ```json
 {
     "body": "Attachment [trac_8568-diff-conv-and-erf-deriv.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff-conv-and-erf-deriv.patch) by @kcrisman created at 2010-05-27 15:48:04\n\nThis looks like a good change.  I did the other thing, and put the test of the original bug report in that file, since it seemed like it belonged there now that it works :)  Should pass all tests (only failures for me were related to Maxima upgrade).",
     "created_at": "2010-05-27T15:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77606",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77478",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -279,15 +278,15 @@ This looks like a good change.  I did the other thing, and put the test of the o
 
 ---
 
-archive/issue_comments_077607.json:
+archive/issue_comments_077479.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-27T15:48:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77607",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77479",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -297,15 +296,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_077608.json:
+archive/issue_comments_077480.json:
 ```json
 {
     "body": "Attachment [trac_8568-erf-deriv.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-erf-deriv.patch) by @burcin created at 2010-05-27 16:04:10",
     "created_at": "2010-05-27T16:04:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77608",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77480",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -315,15 +314,15 @@ Attachment [trac_8568-erf-deriv.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_077609.json:
+archive/issue_comments_077481.json:
 ```json
 {
     "body": "Attachment [trac_8568-diff_conversion.take2.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-diff_conversion.take2.patch) by @burcin created at 2010-05-27 16:18:25\n\nThanks for the quick fix!\n\nYour patch removes my commit message, which I tried hard to make long and explanatory. :) Please submit a separate patch in the future.\n\nI uploaded two new patches, one including your changes to the `erf` function, and the other my fixes for `expression_conversions.py`.\n\nPatches to be applied:\n* attachment:trac_8568-diff_conversion.take2.patch\n* attachment:trac_8568-erf-deriv.patch",
     "created_at": "2010-05-27T16:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77609",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77481",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -343,15 +342,15 @@ Patches to be applied:
 
 ---
 
-archive/issue_comments_077610.json:
+archive/issue_comments_077482.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-27T16:18:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77610",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77482",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -361,15 +360,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_077611.json:
+archive/issue_comments_077483.json:
 ```json
 {
     "body": "Sorry, Burcin, truthfully I hadn't even noticed that!  I was just trying to make a unified patch, because I hate all these five-patch tickets where they move things around from patch to patch - in this case, the actual test for the fix - since they are very hard for me to read.  But I'll be more careful now :)",
     "created_at": "2010-05-27T16:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77611",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77483",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -379,15 +378,15 @@ Sorry, Burcin, truthfully I hadn't even noticed that!  I was just trying to make
 
 ---
 
-archive/issue_comments_077612.json:
+archive/issue_comments_077484.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T01:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77612",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77484",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -397,15 +396,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_077613.json:
+archive/issue_comments_077485.json:
 ```json
 {
     "body": "This actually causes a failure in sage/interfaces/maxima.py",
     "created_at": "2010-06-07T06:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77613",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77485",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -415,15 +414,15 @@ This actually causes a failure in sage/interfaces/maxima.py
 
 ---
 
-archive/issue_comments_077614.json:
+archive/issue_comments_077486.json:
 ```json
 {
     "body": "Changing status from closed to needs_work.",
     "created_at": "2010-06-07T06:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77614",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77486",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -433,15 +432,15 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_comments_077615.json:
+archive/issue_comments_077487.json:
 ```json
 {
     "body": "Here it is.  I'll try to fix it quickly, hopefully this can still get in 4.4.4.\n\n```\nFile \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/devel/sage/sage/interfaces/maxima.py\", line 2245:\n    sage: latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_70[4]>\", line 1, in <module>\n        latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))###line 2245:\n    sage: latex(maxima(derivative(ceil(x*y*d), d,x,x,y)))\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1034, in __call__\n        return self._coerce_from_special_method(x)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/interfaces/expect.py\", line 1058, in _coerce_from_special_method\n        return (x.__getattribute__(s))(self)\n      File \"expression.pyx\", line 435, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3420)\n      File \"sage_object.pyx\", line 379, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3374)\n      File \"sage_object.pyx\", line 468, in sage.structure.sage_object.SageObject._maxima_init_ (sage/structure/sage_object.c:5083)\n      File \"expression.pyx\", line 458, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3510)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 515, in arithmetic\n        args = [\"(%s)\"%self(op) for op in ex.operands()]\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n        return self.arithmetic(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 515, in arithmetic\n        args = [\"(%s)\"%self(op) for op in ex.operands()]\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 218, in __call__\n        return self.derivative(ex, operator)\n      File \"/mnt/usb1/scratch/kcrisman/sage-4.4.4.alpha0-boxen.math.washington.edu-x86_64-Linux/local/lib/python/site-packages/sage/symbolic/expression_conversions.py\", line 495, in derivative\n        raise NotImplementedError, \"arguments must be distinct variables\"\n    NotImplementedError: arguments must be distinct variables\n**********************************************************************\n1 items had failures:\n   1 of   6 in __main__.example_70\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/kcrisman/.sage//tmp/.doctest_maxima.py\n\t [14.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n",
     "created_at": "2010-06-08T01:03:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77615",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77487",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -501,15 +500,15 @@ The following tests failed:
 
 ---
 
-archive/issue_comments_077616.json:
+archive/issue_comments_077488.json:
 ```json
 {
     "body": "Or not.\n\n```\nsage: maxima(derivative(ceil(d),d))\n'diff('ceil(d),d,1)\nsage: maxima(derivative(ceil(x*d),d))\n<same NotImplementedError>\n```\n\nSo the problem is that Burcin's Maxima conversion change now doesn't work with\n\n```\n    493         if (not all(is_SymbolicVariable(v) for v in args) or\n    494             len(args) != len(set(args))):\n--> 495             raise NotImplementedError, \"arguments must be distinct variables\"\n    496 \n    497         f = operator.function()\n```\n\nin derivative().  In fact, he even included a doctest for it!\n\n```\nWe can only convert to Maxima derivatives if the corresponding operand of the function is a variable:: \nsage: y = var('y') \nsage: t = f(x*y).diff(x) \nsage: m.derivative(t, t.operator()) \nTraceback (most recent call last): \n... \nNotImplementedError: arguments must be distinct variables \n```\n\nThis example could be fixed if one fixed\n\n```\nsage: derivative(ceil(x),x)\nD[0](ceil)(x)\n```\n\nso that there isn't a derivative function defined for ceil.  I'm not sure exactly what would count, though... just the zero function?",
     "created_at": "2010-06-08T01:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77616",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77488",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -557,15 +556,15 @@ so that there isn't a derivative function defined for ceil.  I'm not sure exactl
 
 ---
 
-archive/issue_comments_077617.json:
+archive/issue_comments_077489.json:
 ```json
 {
     "body": "Attachment [trac_8568-fix_doctests.patch](tarball://root/attachments/some-uuid/ticket8568/trac_8568-fix_doctests.patch) by @burcin created at 2010-09-08 11:44:30",
     "created_at": "2010-09-08T11:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77617",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77489",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -575,15 +574,15 @@ Attachment [trac_8568-fix_doctests.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_077618.json:
+archive/issue_comments_077490.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-08T11:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77618",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77490",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -593,15 +592,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_077619.json:
+archive/issue_comments_077491.json:
 ```json
 {
     "body": "I attached a new patch which fixes the doctest failures in `interfaces/maxima.py`. The patch changes the test to use a symbolic function `f` instead of `ceil`, adds the error message that we need distinct arguments to convert to maxima and a test with an expression where the variables are indeed distinct arguments.\n\nAdding a function to represent the derivative of `ceil()` and `floor()` is now #9874.\n\nPatches should be applied in this order:\n\n* attachment:trac_8568-diff_conversion.take2.patch\n* attachment:trac_8568-erf-deriv.patch\n* attachment:trac_8568-fix_doctests.patch",
     "created_at": "2010-09-08T11:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77619",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77491",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -619,15 +618,15 @@ Patches should be applied in this order:
 
 ---
 
-archive/issue_comments_077620.json:
+archive/issue_comments_077492.json:
 ```json
 {
     "body": "This all still applies fine to Sage 4.6.alpha1, and all doctests I could think of pass.  Everything else is the same - positive review!\n\nBy the way, thanks for opening that other ticket, Burcin - sometimes I get paralyzed trying to decide what the best course of action is on reviews.",
     "created_at": "2010-09-21T20:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77620",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77492",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -639,15 +638,15 @@ By the way, thanks for opening that other ticket, Burcin - sometimes I get paral
 
 ---
 
-archive/issue_comments_077621.json:
+archive/issue_comments_077493.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-09-21T20:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8568",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77621",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8568#issuecomment-77493",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

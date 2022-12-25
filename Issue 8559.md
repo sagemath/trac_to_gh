@@ -6,15 +6,13 @@ archive/issues_008559.json:
     "body": "Assignee: mvngu\n\nCC:  amca01@gmail.com\n\nFrom Alasdair McAndrew:\n\n```\nHere is some code to implement the Playfair cipher.  Maybe you could take it and squeeze it into the Sage \"Classical Cryptosystems\" section - I don't know how to do this.\n\ncheers,\nAlasdair\n\n-- \nBlog: http://amca01.wordpress.com\nWeb:  http://bit.ly/Alasdair\nFacebook: http://www.facebook.com/alasdair.mcandrew\n--\n# Playfair cipher\n\ndef makePF(word): #creates 5 x 5 Playfair array beginning with \"word\"\n    alph='ABCDEFGHIKLMNOPQRSTUVWXYZ'\n    pf=''\n    for ch in word:\n        if (ch<>\"J\") & (pf.find(ch)==-1):  # ensures no letter is repeated\n            pf+=ch\n    for ch in alph:\n        if pf.find(ch)==-1:  #only uses unused letters from alph\n            pf+=ch\n    PF=[[pf[5*i+j] for j in range(5)] for i in range(5)]\n    return PF\n\ndef pf_encrypt(di,PF): # encrypts a digraph di with a Playfair array PF\n    for i in range(5):\n        for j in range(5):\n            if PF[i][j]==di[0]:\n                i0=i\n                j0=j\n            if PF[i][j]==di[1]:\n                i1=i\n                j1=j\n    if (i0<>i1) & (j0<>j1):\n        return PF[i0][j1]+PF[i1][j0]\n    if (i0==i1) & (j0<>j1):\n        return PF[i0][(j0+1)%5]+PF[i1][(j1+1)%5]\n    if (i0<>i1) & (j0==j1):\n        return PF[(i0+1)%5][j0]+PF[(i1+1)%5][j1]\n\ndef insert(ch,str,j):  # a helper function: inserts a character \"ch\" into\n    tmp=''             # a string \"str\" at position j\n    for i in range(j):\n        tmp+=str[i]\n    tmp+=ch\n    for i in range(len(str)-j):\n        tmp+=str[i+j]\n    return tmp\n\n\ndef playfair(pl,word): # encrypts a plaintext \"pl\" with a Playfair cipher\n    PF=makePF(word)    # using a keyword \"word\"\n    pl2=makeDG(pl)\n    tmp=''\n    for i in range(len(pl2)//2):\n        tmp+=pf_encrypt(pl2[2*i]+pl2[2*i+1],PF)\n    return tmp\n\ndef makeDG(str): # creates digraphs with different values from a string \"str\"\n    tmp=str.replace('J','I')  # replace all 'J's with 'I's\n    c=len(tmp)\n    i=0\n    while (c>0) & (2*i+1<len(tmp)):\n        if tmp[2*i]==tmp[2*i+1]:\n            tmp=insert(\"X\",tmp,2*i+1)\n            c-=1\n            i+=1\n        else:\n            c-=2\n            i+=1\n    if len(tmp)%2==1:\n        tmp+='X'\n    return tmp\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8559\n\n",
     "created_at": "2010-03-19T08:14:07Z",
     "labels": [
-        "cryptography",
-        "major",
-        "enhancement"
+        "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "add Playfair cipher as a classical cryptosystem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8559",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: mvngu

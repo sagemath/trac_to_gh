@@ -6,15 +6,14 @@ archive/issues_001771.json:
     "body": "Assignee: @williamstein\n\n\n```\nPeter.Jipsen\nHi,\n\nwith lprint() on, I calculated\n\ndiff(1/x-1/ln(x))\n\nfollowed by\n\nfactor(_)\n\nand the displayed answer is incorrect because prefix negation is not\nhandled correctly in the _latex_ method.\n\nThe same error in a simpler setting can be observed with:\n\n(-(x-1)/2)._latex_(simplify=False)\n\noutput:\n\n'\\\\frac{-x - 1}{2}'\n\n(The error is usually masked by the fact that symbolic expressions are\nnormalized to avoid prefix negation.)\n\nI think the last two lines of the _latex_ method should probably\nchange from\n\n       elif op is operator.neg:\n           return '-%s' % s[0]\n\nto something like:\n\n       elif op is operator.neg:\n           if ops[0]._has_op(operator.add) or\nops[0]._has_op(operator.sub):\n               s[0] = r'\\left( %s \\right)' %s[0]\n           return '-%s' % s[0]\n\nSorry, I haven't figured out how to turn this into a hg patch (if the\nsolution is even appropriate).\n\n--Peter\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1771\n\n",
     "created_at": "2008-01-14T05:08:50Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "latex bug with symbolics [with fix]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1771",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -75,15 +74,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1771
 
 ---
 
-archive/issue_comments_011200.json:
+archive/issue_comments_011173.json:
 ```json
 {
     "body": "Attachment [1771.patch](tarball://root/attachments/some-uuid/ticket1771/1771.patch) by @williamstein created at 2008-01-14 05:44:50\n\nThis looks good to me.  Thanks for turning it into a patch Mike!",
     "created_at": "2008-01-14T05:44:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11200",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11173",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -95,15 +94,15 @@ This looks good to me.  Thanks for turning it into a patch Mike!
 
 ---
 
-archive/issue_comments_011201.json:
+archive/issue_comments_011174.json:
 ```json
 {
     "body": "Merged in Sage 2.10.alpha3.",
     "created_at": "2008-01-14T05:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11201",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11174",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Merged in Sage 2.10.alpha3.
 
 ---
 
-archive/issue_comments_011202.json:
+archive/issue_comments_011175.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-14T05:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1771",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11202",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1771#issuecomment-11175",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

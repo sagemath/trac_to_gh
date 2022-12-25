@@ -6,15 +6,14 @@ archive/issues_002612.json:
     "body": "Assignee: somebody\n\nSince python does well with a leading sign (+ or -)\n\n```\nsage: int('+1')\n1\nsage: int('-1')\n-1\n```\n\nthe sage Integers should do the same.\n\n```\nsage: Integer('-1')\n-1\nsage: Integer('+1')\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/mrk/<ipython console> in <module>()\n\n/home/mrk/integer.pyx in sage.rings.integer.Integer.__init__()\n\n<type 'exceptions.TypeError'>: unable to convert x (=+1) to an integer\n```\n\nSo the case of a leading \"+\" must be fixed\n\nIssue created by migration from https://trac.sagemath.org/ticket/2612\n\n",
     "created_at": "2008-03-20T12:40:51Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "String to Integer Conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2612",
-    "user": "@m-r-k"
+    "user": "https://github.com/m-r-k"
 }
 ```
 Assignee: somebody
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2612
 
 ---
 
-archive/issue_comments_017926.json:
+archive/issue_comments_017888.json:
 ```json
 {
     "body": "Attachment [2612-integer_plus.patch](tarball://root/attachments/some-uuid/ticket2612/2612-integer_plus.patch) by @robertwb created at 2008-03-26 06:16:58",
     "created_at": "2008-03-26T06:16:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17926",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17888",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -72,15 +71,15 @@ Attachment [2612-integer_plus.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_017927.json:
+archive/issue_comments_017889.json:
 ```json
 {
     "body": "Looks good: fixes the bug, doesn't break anything else.",
     "created_at": "2008-03-27T22:47:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17927",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17889",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -90,15 +89,15 @@ Looks good: fixes the bug, doesn't break anything else.
 
 ---
 
-archive/issue_comments_017928.json:
+archive/issue_comments_017890.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha2. I had to merge the first hunk of 2612-integer_plus.patch manually due to trivial merge conflicts.",
     "created_at": "2008-03-28T08:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17928",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17890",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -108,15 +107,15 @@ Merged in Sage 2.11.alpha2. I had to merge the first hunk of 2612-integer_plus.p
 
 ---
 
-archive/issue_comments_017929.json:
+archive/issue_comments_017891.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-28T08:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2612",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17929",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2612#issuecomment-17891",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

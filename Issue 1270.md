@@ -6,15 +6,14 @@ archive/issues_001270.json:
     "body": "Assignee: somebody\n\nThe attached patch provides a simple implementation of complex intervals.  Tested with testall on 32-bit x86 Linux.\n\nRequires the new MPFI spkg from #1268; otherwise, some tests will fail.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1270\n\n",
     "created_at": "2007-11-25T17:13:57Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with patch] implement complex intervals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1270",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: somebody
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1270
 
 ---
 
-archive/issue_comments_007960.json:
+archive/issue_comments_007937.json:
 ```json
 {
     "body": "Attachment [7425.patch](tarball://root/attachments/some-uuid/ticket1270/7425.patch) by cwitty created at 2007-11-25 17:14:08",
     "created_at": "2007-11-25T17:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1270#issuecomment-7960",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1270#issuecomment-7937",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [7425.patch](tarball://root/attachments/some-uuid/ticket1270/7425.pat
 
 ---
 
-archive/issue_comments_007961.json:
+archive/issue_comments_007938.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-11-25T17:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1270#issuecomment-7961",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1270#issuecomment-7938",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_007962.json:
+archive/issue_comments_007939.json:
 ```json
 {
     "body": "Merged in 2.8.15.alpha0.",
     "created_at": "2007-12-01T10:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1270#issuecomment-7962",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1270#issuecomment-7939",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Merged in 2.8.15.alpha0.
 
 ---
 
-archive/issue_comments_007963.json:
+archive/issue_comments_007940.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-01T10:57:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1270#issuecomment-7963",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1270#issuecomment-7940",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

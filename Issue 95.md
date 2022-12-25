@@ -6,14 +6,13 @@ archive/issues_000095.json:
     "body": "Assignee: @wdjoyner\n\nKeywords: GAP\n\nThis was reported by David Loeffler on 9-28-2006:\n\nI'm running SAGE 1.3.7.3.3 on one of Imperial College's public RedHat Linux boxes.\n\nIf I load the interpreter and type:\n\nM=MatrixSpace(QQ,3)\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1])])\nG.order()\n\nit works fine, and returns the obvious answer 6.\n\nIf I say instead\n\nG=MatrixGroup([M([0,1,0,0,0,1,1,0,0]), M([0,1,0,1,0,0,0,0,1]), M([-1,0,0,0,1,0,0,0,1])])\n\nthen whenever I call any methods on G, it dies:\n\nsage: G.order()\n---------------------------------------------------------------------------\nexceptions.TypeError                                 Traceback (most recent call last)\n\nIssue created by migration from https://trac.sagemath.org/ticket/95\n\n",
     "created_at": "2006-09-28T23:57:56Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "title": "_gap_init_ bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/95",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @wdjoyner
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/95
 
 ---
 
-archive/issue_comments_000454.json:
+archive/issue_comments_000452.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2006-09-29T00:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-454",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-452",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -68,15 +67,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000455.json:
+archive/issue_comments_000453.json:
 ```json
 {
     "body": "This is bad. However, I get a bug even on your working example:\n\nsage: M = MatrixSpace(GF(3),3,3)\n\nsage: G = MatrixGroup([M([[0,1,0],[0,0,1],[1,0,0]]), M([[0,1,0],[1,0,0],[0,0,1]])])\n\nsage: G._gap_init_()\n\n''\n\nThe bug is in the _gap_init_ method in the MatrixGroup class. If you use\n\n   def _gap_init_(self):\n       \"\"\"\n       Returns the string representation of the corresponding GAP command.\n\n       EXAMPLES:\n           sage: F = GF(5); MS = MatrixSpace(F,2,2)\n\n           sage: gens = [MS([[1,2],[-1,1]]),MS([[1,1],[0,1]])]\n\n           sage: G = MatrixGroup(gens)\n\n           sage: G._gap_init_()\n\n           'Group([ [ [ Z(5)0, Z(5) ], [ Z(5)2, Z(5)0 ] ],        \n              [ [ Z(5)0, Z(5)0 ], [ 0*Z(5), Z(5)0 ] ] ])'\n       \"\"\"\n       gens_gap = [gap(x) for x in self.gens()]\n\n       cmd = \"Group(\"+str(gens_gap)+\")\"\n\n       cmd = cmd.replace(\"\\n\",\"\")\n\n       return gap(cmd)\n\ninstead it will work (I'm sure the wiki will destroy the indenting, but you get the idea).",
     "created_at": "2006-09-29T00:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-455",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-453",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -122,15 +121,15 @@ instead it will work (I'm sure the wiki will destroy the indenting, but you get 
 
 ---
 
-archive/issue_comments_000456.json:
+archive/issue_comments_000454.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2006-09-29T00:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-456",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-454",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -140,15 +139,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_000457.json:
+archive/issue_comments_000455.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2006-09-29T00:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-457",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-455",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -158,15 +157,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_000458.json:
+archive/issue_comments_000456.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-12T22:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-458",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-456",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -176,15 +175,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000459.json:
+archive/issue_comments_000457.json:
 ```json
 {
     "body": "This was already fixed.  But another bug appeared (and got fixed)\nwhen I tested the example:\n\n```\n\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1168641553 28800\n# Node ID e7e66d37ff7a6bc0c31efa693c0dcd5be1c6d048\n# Parent  85b96a510e10e13d5e71aa12afb2a3f1a3564fb8\nFix bug in matrix hessenberg form.\n\ndiff -r 85b96a510e10 -r e7e66d37ff7a sage/matrix/matrix_modn_dense.pyx\n--- a/sage/matrix/matrix_modn_dense.pyx Fri Jan 12 14:26:44 2007 -0800\n+++ b/sage/matrix/matrix_modn_dense.pyx Fri Jan 12 14:39:13 2007 -0800\n@@ -48,6 +48,19 @@ EXAMPLES:\n     sage: b.echelonize(); b\n     [ 1  0 36]\n     [ 0  1  2]\n+\n+We create a matrix group and coerce it to GAP:\n+    sage: M = MatrixSpace(GF(3),3,3)\n+    sage: G = MatrixGroup([M([[0,1,0],[0,0,1],[1,0,0]]), M([[0,1,0],[1,0,0],[0,0,1]])])\n+    sage: G\n+    Matrix group over Finite Field of size 3 with 2 generators: \n+     [[[0, 1, 0], [0, 0, 1], [1, 0, 0]], [[0, 1, 0], [1, 0, 0], [0, 0, 1]]]\n+    sage: gap(G)\n+    Group(\n+    [ [ [ 0*Z(3), Z(3)^0, 0*Z(3) ], [ 0*Z(3), 0*Z(3), Z(3)^0 ], [ Z(3)^0, 0*Z(3),\n+               0*Z(3) ] ], \n+      [ [ 0*Z(3), Z(3)^0, 0*Z(3) ], [ Z(3)^0, 0*Z(3), 0*Z(3) ], \n+          [ 0*Z(3), 0*Z(3), Z(3)^0 ] ] ])\n \"\"\"\n \n include \"../ext/interrupt.pxi\"\n@@ -419,8 +432,8 @@ cdef class Matrix_modn_dense(matrix_dens\n                  t = h[i][m-1]\n                  t_inv = ai.c_inverse_mod_int(t,p)\n                  if i > m:\n-                     self._swap_rows_c(i,m)\n-                     self._swap_columns_c(i,m)\n+                     self.swap_rows_c(i,m)\n+                     self.swap_columns_c(i,m)\n \n                  # Now the nonzero entry in position (m,m-1) is t.\n                  # Use t to clear the entries in column m-1 below m.\n```\n",
     "created_at": "2007-01-12T22:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/95",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-459",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/95#issuecomment-457",
+    "user": "https://github.com/williamstein"
 }
 ```
 

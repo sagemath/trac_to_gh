@@ -6,15 +6,13 @@ archive/issues_001793.json:
     "body": "Assignee: @malb\n\nCC:  @williamstein mabshoff\n\nThe attached bundle implements everything to make the following work:\n\n\n```\nsage: P.<x11,x12,x13,x14,x21,x22,x23,x24,x31,x32,x33,x34,x41,x42,x43,x44> = PolynomialRing(QQ,order='degrevlex')\nsage: I = Ideal([\n    x11^2 + x12*x21 + x13*x31 + x14*x41,   x11*x12 + x12*x22 + x13*x32 + x14*x42,\n    x11*x13 + x12*x23 + x13*x33 + x14*x43, x11*x14 + x12*x24 + x13*x34 + x14*x44,\n    x11*x21 + x21*x22 + x23*x31 + x24*x41, x12*x21 + x22^2 + x23*x32 + x24*x42,\n    x13*x21 + x22*x23 + x23*x33 + x24*x43, x14*x21 + x22*x24 + x23*x34 + x24*x44,\n    x11*x31 + x21*x32 + x31*x33 + x34*x41, x12*x31 + x22*x32 + x32*x33 + x34*x42,\n    x13*x31 + x23*x32 + x33^2 + x34*x43,   x14*x31 + x24*x32 + x33*x34 + x34*x44,\n    x11*x41 + x21*x42 + x31*x43 + x41*x44, x12*x41 + x22*x42 + x32*x43 + x42*x44,\n    x13*x41 + x23*x42 + x33*x43 + x43*x44, x14*x41 + x24*x42 + x34*x43 + x44^2\n    ])\nsage: S = I.hilbert_series(); S\n(t^12 - 7*t^11 + 20*t^10 - 28*t^9 + 14*t^8 + 15*t^7 - 20*t^6 + 19*t^5 - 22*t^4 + 7*t^3 + 20*t^2 + 8*t + 1)/(t^8 - 8*t^7 + 28*t^6 - 56*t^5 + 70*t^4 - 56*t^3 + 28*t^2 - 8*t + 1)\n\nsage: H = I.hilbert_polynomial(); H\n1/180*t^7 + 7/90*t^6 + 293/360*t^5 + 61/36*t^4 + 1553/360*t^3 + 851/180*t^2 + 101/30*t + 1\n\nsage: L.<u> = LaurentSeriesRing(ZZ)\nsage: L(S)\n1 + 16*u + 120*u^2 + 575*u^3 + 2044*u^4 + 5927*u^5 + 14832*u^6 + 33209*u^7 + 68189*u^8 + 130642*u^9 + 236488*u^10 + 408288*u^11 + 677143*u^12 + 1084929*u^13 + 1686896*u^14 + 2554659*u^15 + 3779609*u^16 + 5476772*u^17 + 7789144*u^18 + 10892530*u^19 + O(u^20)\n\nsage: [H(n) for n in range(20)] # matches above for n>=5\n[1, 16, 120, 574, 2043, 5927, 14832, 33209, 68189, 130642]\n```\n\n\nHowever, it needs careful review especially in the `LaurentSeries` department because I am not very experienced there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1793\n\n",
     "created_at": "2008-01-16T14:28:48Z",
     "labels": [
-        "commutative algebra",
-        "major",
-        "enhancement"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs careful review] Hilbert series, Hilbert polynomial, Laurent series expansion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1793",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -61,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1793
 
 ---
 
-archive/issue_comments_011346.json:
+archive/issue_comments_011318.json:
 ```json
 {
     "body": "A relevant [sage-support] thread is here\n\nhttp://groups.google.com/group/sage-support/browse_thread/thread/db22a8fa713b8da2\n\nAlso, the bundle contains some old patches as well, if that presents a problem, I'll provide clean patches instead.",
     "created_at": "2008-01-16T14:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11346",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11318",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -83,15 +81,15 @@ Also, the bundle contains some old patches as well, if that presents a problem, 
 
 ---
 
-archive/issue_comments_011347.json:
+archive/issue_comments_011319.json:
 ```json
 {
     "body": "mabshoff wrote at #1756:\n> Singular's Hilbert series has overflow issues in certain situations. Let me digg \n> out some email about a test case and report this to the Singular team.",
     "created_at": "2008-01-16T15:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11347",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11319",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -103,15 +101,15 @@ mabshoff wrote at #1756:
 
 ---
 
-archive/issue_comments_011348.json:
+archive/issue_comments_011320.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-16T15:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11348",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11320",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -121,15 +119,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_011349.json:
+archive/issue_comments_011321.json:
 ```json
 {
     "body": "`hilbert2.hg` contains the corrections William suggested on IRC and replaces `hilbert.hg`.",
     "created_at": "2008-01-16T19:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11349",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11321",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -139,15 +137,15 @@ archive/issue_comments_011349.json:
 
 ---
 
-archive/issue_comments_011350.json:
+archive/issue_comments_011322.json:
 ```json
 {
     "body": "The patches from hilbery2.hg with ids a692e0df3534, 0b92c1071492, 6f3a99024ee7 should be applied.\n\nI didn't look at the other patches.",
     "created_at": "2008-01-20T06:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11350",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11322",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -159,15 +157,15 @@ I didn't look at the other patches.
 
 ---
 
-archive/issue_comments_011351.json:
+archive/issue_comments_011323.json:
 ```json
 {
     "body": "Because the bundle contained many irrelevant patches I tried to provide clean patches instead and deleted every copy of my patches on the way (and all attachments to avoid confusion for the release maintainer). Me stupid. I'll provide new patches as soon as I have re-implemented the functionality.",
     "created_at": "2008-01-20T14:37:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11351",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11323",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -177,15 +175,15 @@ Because the bundle contained many irrelevant patches I tried to provide clean pa
 
 ---
 
-archive/issue_comments_011352.json:
+archive/issue_comments_011324.json:
 ```json
 {
     "body": "Attachment [trac_1793_laurent.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_laurent.patch) by @malb created at 2008-01-20 16:47:19",
     "created_at": "2008-01-20T16:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11352",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11324",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -195,15 +193,15 @@ Attachment [trac_1793_laurent.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_011353.json:
+archive/issue_comments_011325.json:
 ```json
 {
     "body": "The attached files `trac_1793_hilbert.patch` and `trac_1793_laurent.patch` re-implement the desired functionality and need review.",
     "created_at": "2008-01-20T16:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11353",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11325",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -213,15 +211,15 @@ The attached files `trac_1793_hilbert.patch` and `trac_1793_laurent.patch` re-im
 
 ---
 
-archive/issue_comments_011354.json:
+archive/issue_comments_011326.json:
 ```json
 {
     "body": "I say apply both patches.\n\nI think that the Laurent series patch touches coercion code that will be completely rewritten soon, so I'm not worried that it's not particularily general.\n\nThere is an unclear comment in the hilbert_polynomial docstring.  The comment could be removed.  From IRC:\n\n```\nncalexan: malb: let's took 1793.\n[3:12pm] ncalexan: The docstring to hilbert_polynomial says, ' This $d$ is called the index of regularity of\n[3:12pm] ncalexan:  1116        $I$. '\n[3:12pm] ncalexan: Which $d$?  The minimal one?\n[3:13pm] malb: yes\n[3:13pm] malb:  for all but finitely many positive  integers $d$\n[3:14pm] malb: that encodes minimal for me?\n[3:15pm] ncalexan: malb: that is unclear to me.  Is there a function to return the index of regularity?\n[3:15pm] malb: no\n[3:15pm] ncalexan: If not, I say drop the remark.  Or clarify it.  Why is it there?\n[3:15pm] ncalexan: (The remark about $d$ being the index)\n[3:15pm] malb: because there should be such a function\n[3:15pm] malb: but I can drop it\n[3:16pm] ncalexan: malb: is that easy to determine?  'cuz it would be useful :)\n```\n",
     "created_at": "2008-02-14T23:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11354",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11326",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -253,15 +251,15 @@ ncalexan: malb: let's took 1793.
 
 ---
 
-archive/issue_comments_011355.json:
+archive/issue_comments_011327.json:
 ```json
 {
     "body": "Attachment [trac_1793_review.patch](tarball://root/attachments/some-uuid/ticket1793/trac_1793_review.patch) by @malb created at 2008-02-14 23:27:13\n\npatch removes remark about index of regularity",
     "created_at": "2008-02-14T23:27:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11355",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11327",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -273,15 +271,15 @@ patch removes remark about index of regularity
 
 ---
 
-archive/issue_comments_011356.json:
+archive/issue_comments_011328.json:
 ```json
 {
     "body": "Merged all three patches in Sage 2.10.2.alpha0",
     "created_at": "2008-02-15T00:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11356",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11328",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -291,15 +289,15 @@ Merged all three patches in Sage 2.10.2.alpha0
 
 ---
 
-archive/issue_comments_011357.json:
+archive/issue_comments_011329.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-15T00:29:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1793",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11357",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1793#issuecomment-11329",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_000702.json:
     "body": "Assignee: @williamstein\n\nThere have been proposal to add syntax to SAGE similar to magma/mathmatica/etc 1..n for ranges. See the mailing list for much discusssion. \n\nIssue created by migration from https://trac.sagemath.org/ticket/702\n\n",
     "created_at": "2007-09-20T11:00:18Z",
     "labels": [
-        "user interface",
-        "major",
-        "enhancement"
+        "component: user interface"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.5.1",
     "title": "Ellipsis range notation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/702",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/702
 
 ---
 
-archive/issue_comments_003681.json:
+archive/issue_comments_003668.json:
 ```json
 {
     "body": "Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator2.diff) by @robertwb created at 2007-09-20 11:01:00",
     "created_at": "2007-09-20T11:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3681",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3668",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [ellipsis_iterator2.diff](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_003682.json:
+archive/issue_comments_003669.json:
 ```json
 {
     "body": "The above patches are one such proposal. NOTE: it has not been decided whether or not to include this feature. However, I like it. \n\n\n```\nsage: [1..10]\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nsage: n = 5\nsage: [1..n]\n[1, 2, 3, 4, 5]\nsage: [0,2,..,10]\n[0, 2, 4, 6, 8, 10]\nsage: [0,2,..,10,20..30]\n[0, 2, 4, 6, 8, 10, 20, 22, 24, 26, 28, 30]\n\nsage: (0,2,..,10)       \n<generator object at 0xc57cd78>\nsage: A = (5,7,..)\nsage: [A.next() for _ in range(20)]\n[5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]\n\n```\n\n\nAnd a non-trivial example\n\n\n```\nsage: L = [1..5]\nsage: [L[4], .., next_prime(10), 3, 2, 1]\n[5, 6, 7, 8, 9, 10, 11, 3, 2, 1]\n```\n",
     "created_at": "2007-09-20T11:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3682",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3669",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -96,15 +94,15 @@ sage: [L[4], .., next_prime(10), 3, 2, 1]
 
 ---
 
-archive/issue_comments_003683.json:
+archive/issue_comments_003670.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-20T11:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3683",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3670",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -114,15 +112,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_003684.json:
+archive/issue_comments_003671.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @robertwb.",
     "created_at": "2007-09-20T11:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3684",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3671",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -132,15 +130,15 @@ Changing assignee from @williamstein to @robertwb.
 
 ---
 
-archive/issue_comments_003685.json:
+archive/issue_comments_003672.json:
 ```json
 {
     "body": "Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator3.diff) by @robertwb created at 2007-09-20 11:21:33",
     "created_at": "2007-09-20T11:21:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3685",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3672",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -150,15 +148,15 @@ Attachment [ellipsis_iterator3.diff](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_003686.json:
+archive/issue_comments_003673.json:
 ```json
 {
     "body": "Fixed:\n\n\n```\nsage: A = (5,7,..)\nsage: [A.next() for _ in range(10)]\n[5, 7, 9, 11, 13, 15, 17, 19, 21, 23]\n```\n",
     "created_at": "2007-09-20T11:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3686",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3673",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -176,15 +174,15 @@ sage: [A.next() for _ in range(10)]
 
 ---
 
-archive/issue_comments_003687.json:
+archive/issue_comments_003674.json:
 ```json
 {
     "body": "Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator4.diff) by @robertwb created at 2007-09-20 19:06:10",
     "created_at": "2007-09-20T19:06:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3687",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3674",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -194,15 +192,15 @@ Attachment [ellipsis_iterator4.diff](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_003688.json:
+archive/issue_comments_003675.json:
 ```json
 {
     "body": "Fixed an issue with double quotes, and now this works as well \n\n\n```\nsage: list(1..5)\n[1, 2, 3, 4, 5]\n```\n",
     "created_at": "2007-09-20T19:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3688",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3675",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -219,15 +217,15 @@ sage: list(1..5)
 
 ---
 
-archive/issue_comments_003689.json:
+archive/issue_comments_003676.json:
 ```json
 {
     "body": "Attachment [ellipsis_iterator1-4.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis_iterator1-4.hg) by @williamstein created at 2007-09-20 20:11:03\n\nApplied.  (And I fixed a few bugs.)",
     "created_at": "2007-09-20T20:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3689",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3676",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -239,15 +237,15 @@ Applied.  (And I fixed a few bugs.)
 
 ---
 
-archive/issue_comments_003690.json:
+archive/issue_comments_003677.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-20T20:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3690",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3677",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -257,15 +255,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_003691.json:
+archive/issue_comments_003678.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-09-21T22:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3691",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3678",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -275,15 +273,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_003692.json:
+archive/issue_comments_003679.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-09-21T22:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3692",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3679",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -293,15 +291,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_003693.json:
+archive/issue_comments_003680.json:
 ```json
 {
     "body": "[1,2,..,-10] should return the empty list.",
     "created_at": "2007-09-21T22:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3693",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3680",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -311,15 +309,15 @@ archive/issue_comments_003693.json:
 
 ---
 
-archive/issue_comments_003694.json:
+archive/issue_comments_003681.json:
 ```json
 {
     "body": "Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket702/ellipsis-empty-range.hg) by @robertwb created at 2007-09-21 22:58:52",
     "created_at": "2007-09-21T22:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3694",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3681",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -329,15 +327,15 @@ Attachment [ellipsis-empty-range.hg](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_003695.json:
+archive/issue_comments_003682.json:
 ```json
 {
     "body": "Fixed. \n\n\n```\nsage: [1,2..-1]\n[]\nsage: [10..1]\n[]\nsage: [1..10]\n[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nsage: [1..10,step=2] # no extra preparsing needed\n[1, 3, 5, 7, 9]\n```\n",
     "created_at": "2007-09-21T23:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3695",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3682",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -360,15 +358,15 @@ sage: [1..10,step=2] # no extra preparsing needed
 
 ---
 
-archive/issue_comments_003696.json:
+archive/issue_comments_003683.json:
 ```json
 {
     "body": "Why doesn't [10..1] return [10,9,8,7,6,5,4,3,2,1]?",
     "created_at": "2007-09-22T00:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3696",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3683",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -378,15 +376,15 @@ Why doesn't [10..1] return [10,9,8,7,6,5,4,3,2,1]?
 
 ---
 
-archive/issue_comments_003697.json:
+archive/issue_comments_003684.json:
 ```json
 {
     "body": "I don't think this should be an error:\n\n\n```\nsage: [1..5, step=0.5]\n<type 'exceptions.TypeError'>: unable to coerce element to an integer\n```\n\n\ni.e., the universe stuff should take into account the step if given.",
     "created_at": "2007-09-23T21:35:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3697",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3684",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -405,15 +403,15 @@ i.e., the universe stuff should take into account the step if given.
 
 ---
 
-archive/issue_comments_003698.json:
+archive/issue_comments_003685.json:
 ```json
 {
     "body": "Fixed now by Robert...",
     "created_at": "2007-09-25T05:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3698",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3685",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -423,15 +421,15 @@ Fixed now by Robert...
 
 ---
 
-archive/issue_comments_003699.json:
+archive/issue_comments_003686.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-25T05:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3699",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/702#issuecomment-3686",
+    "user": "https://github.com/williamstein"
 }
 ```
 

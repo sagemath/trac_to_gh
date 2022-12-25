@@ -6,15 +6,13 @@ archive/issues_008452.json:
     "body": "Assignee: tbd\n\nCC:  @hivert @jhpalmieri @nthiery\n\nFlorent Hivert has recently devised a nice way to use Sphinx to test that nested classes in Sage are picklable.  Please see [attachment:ticket:7448:trac_7448-nested_class_sphinx-fh.4.patch V4] at #7448.  From #7448's description:\n\n   \"I also took the chance to raise a warning if someone forgot to set the metaclass leading to a unpicklable class. Several bug have been found that way. I'll add a ticket for this.\"\n\nThis ticket is about implementing Hivert's idea.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8452\n\n",
     "created_at": "2010-03-06T00:43:33Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Code check: Pickling of nested classes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8452",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: tbd
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8452
 
 ---
 
-archive/issue_comments_076046.json:
+archive/issue_comments_075920.json:
 ```json
 {
     "body": "Attachment [trac_8452-nested_class_check.patch](tarball://root/attachments/some-uuid/ticket8452/trac_8452-nested_class_check.patch) by @qed777 created at 2010-03-06 09:44:12\n\nAdd `sage -docbuild` option `--check-nested` to check picklability",
     "created_at": "2010-03-06T09:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76046",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75920",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -55,15 +53,15 @@ Add `sage -docbuild` option `--check-nested` to check picklability
 
 ---
 
-archive/issue_comments_076047.json:
+archive/issue_comments_075921.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-06T09:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76047",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75921",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -73,15 +71,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_076048.json:
+archive/issue_comments_075922.json:
 ```json
 {
     "body": "I've attached a patch that adds an option `--check-nested` to the Sage doc builder.  If the flag is present, Sphinx will check [nested classes for picklability](http://stackoverflow.com/questions/1947904/how-can-i-pickle-a-nested-class-in-python).\n\nI've adapted `sage.misc.nested_class.modify_for_nested_pickle`, so that we can put the check in `conf.py` instead of `sage_autodoc.py`.  We may not need to patch Sphinx.  Please test and let me know if this works.\n\nNote: The patch depends on #7448.",
     "created_at": "2010-03-06T09:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76048",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75922",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -95,15 +93,15 @@ Note: The patch depends on #7448.
 
 ---
 
-archive/issue_comments_076049.json:
+archive/issue_comments_075923.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2010-03-06T09:59:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76049",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75923",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -113,15 +111,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_076050.json:
+archive/issue_comments_075924.json:
 ```json
 {
     "body": "Replying to [comment:1 mpatel]:\n> I've adapted `sage.misc.nested_class.modify_for_nested_pickle`, so that we can put the check in `conf.py` instead of `sage_autodoc.py`.  We may not need to patch Sphinx.  Please test and let me know if this works.\n> \n> Note: The patch depends on #7448.\n\nHi Mitesh,\n\nAs far as I understand, the goal of this ticket is twofold:\n- make the check optional;\n- put it in a sage plugin of sphinx to avoig patching Sphinx for that. \nSo you still relies on sphinx to do this check. As I previously said, a priori, checking for nested class has nothing to do with Sphinx. \n\nThough I definitely don't know where to do it, if possible, it would even be better to do it in sage eg. during the import of the class... Any idea on this way ? Maybe it's not possible without patching `type` which is exactly what `NestedClassMetaclass` does, at least conceptually.  \n\nBy the way, am I allowed to review this patch (there is some code from me in it) ?",
     "created_at": "2010-03-06T10:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76050",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75924",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -145,15 +143,15 @@ By the way, am I allowed to review this patch (there is some code from me in it)
 
 ---
 
-archive/issue_comments_076051.json:
+archive/issue_comments_075925.json:
 ```json
 {
     "body": "The patch really just takes advantage of Sphinx's iteration over the contents of the [documented] modules.  Sphinx has a [doctest extension](http://sphinx.pocoo.org/ext/doctest.html), which blurs the \"line\" between building the documentation and checking the code.  If the patch actually works, we could take it as an immediately available but temporary solution while we consider other possibilities.   But I don't mind at all if we adopt a different approach. \n\nWe could create a new script `SAGE_LOCAL/bin/sage-analyze` with options to run various checks on library source code.  Users would call the script directly or via `sage -analyze --option file ...`.\n\nInstead of starting completely from scratch, we could adapt or extend an existing tool: [PyChecker](http://pychecker.sourceforge.net/), [PyFlakes](http://divmod.org/trac/wiki/DivmodPyflakes), [Pylint](http://www.logilab.org/project/pylint).  From my very limited experience, I think Pylint is the most promising of these, as long as we adjust the settings.\n\nI think we could each review the other's contributions and maybe get an assist from a third reviewer.\n\nI just noticed that I didn't put your name in the Author(s) field.  I apologize for that.",
     "created_at": "2010-03-06T14:27:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76051",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75925",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -171,15 +169,15 @@ I just noticed that I didn't put your name in the Author(s) field.  I apologize 
 
 ---
 
-archive/issue_comments_076052.json:
+archive/issue_comments_075926.json:
 ```json
 {
     "body": "Replying to [comment:3 mpatel]:\n> The patch really just takes advantage of Sphinx's iteration over the contents of the [documented] modules.  Sphinx has a [doctest extension](http://sphinx.pocoo.org/ext/doctest.html), which blurs the \"line\" between building the documentation and checking the code.  If the patch actually works, we could take it as an immediately available but temporary solution while we consider other possibilities.   But I don't mind at all if we adopt a different approach. \n\nI'm happy to report that the temporary solution is fully working. Running a docbuild \nI got\n\n```\nWARNING: Pickling of nested class 'sage.combinat.words.words.Words_all._python_object_alphabet' is probably broken. Please set __metaclass__ of the parent class to sage.misc.nested_class.NestedClassMetaclass.\n```\n\nAnd indeed:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: review\nsage: sage: W = Words()\nsage: sage: A = W._python_object_alphabet()\nsage: sage: loads(dumps(A))\n---------------------------------------------------------------------------\nPicklingError                             Traceback (most recent call last)\n...\nPicklingError: Can't pickle <class 'sage.combinat.words.words._python_object_alphabet'>: attribute lookup sage.combinat.words.words._python_object_alphabet failed\n```\n\nI'll report it to the author and create the ticket tomorrow.\n| Sage Version 4.3.4.alpha0, Release Date: 2010-03-03                |\n| Type notebook() for the GUI, and license() for information.        |\n> We could create a new script `SAGE_LOCAL/bin/sage-analyze` with options to run various checks on library source code.  Users would call the script directly or via `sage -analyze --option file ...`.\n> \n> Instead of starting completely from scratch, we could adapt or extend an existing tool: [PyChecker](http://pychecker.sourceforge.net/), [PyFlakes](http://divmod.org/trac/wiki/DivmodPyflakes), [Pylint](http://www.logilab.org/project/pylint).  From my very limited experience, I think Pylint is the most promising of these, as long as we adjust the settings.\n\nI think this is a very good idea. Nicolas advised me to use PyFlakes. It work for what I need but I've no idea how to extend it.\n\n> I think we could each review the other's contributions and maybe get an assist from a third reviewer.\n> \n> I just noticed that I didn't put your name in the Author(s) field.  I apologize for that.\n\nNo problem. My work is already acknowledged as the author of #7448. Symmetrically, You've done more than a review work on this ticket and didn't add yourself as author... So please do as you consider fair. I don't feel offended either way.",
     "created_at": "2010-03-06T22:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76052",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75926",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -232,15 +230,15 @@ No problem. My work is already acknowledged as the author of #7448. Symmetricall
 
 ---
 
-archive/issue_comments_076053.json:
+archive/issue_comments_075927.json:
 ```json
 {
     "body": "Replying to [comment:3 mpatel]:\n> I think we could each review the other's contributions and maybe get an assist from a third reviewer.\n\nFrom what's concern me the patch is ready to go. Should we keep the idea of `sage -analyze ...` for another ticket ? \n\nFlorent",
     "created_at": "2010-03-08T21:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76053",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75927",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -255,15 +253,15 @@ Florent
 
 ---
 
-archive/issue_comments_076054.json:
+archive/issue_comments_075928.json:
 ```json
 {
     "body": "Sure.  If anyone objects, please let us know.",
     "created_at": "2010-03-09T04:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76054",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75928",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -273,15 +271,15 @@ Sure.  If anyone objects, please let us know.
 
 ---
 
-archive/issue_comments_076055.json:
+archive/issue_comments_075929.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-09T04:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76055",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75929",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -291,15 +289,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_076056.json:
+archive/issue_comments_075930.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-09T07:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-76056",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8452#issuecomment-75930",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

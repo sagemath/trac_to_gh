@@ -6,15 +6,14 @@ archive/issues_007091.json:
     "body": "Assignee: tbd\n\nCC:  drkirkby @jaapspies\n\nKeywords: sqlalchemy\n\nBuilding 4.1.2.rc0 under 64-bit SuSE Linux with SAGE_CHECK set to \"yes\", I got the following errors in the sqlalchemy test suite:\n\n\n```\n\n======================================================================\nERROR: testbasic (sql.testtypes.UnicodeTest)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/test/sql/testtypes.py\", line 327, in testbasic\n    plain_varchar=rawdata)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/sql/expression.py\", line 1087, in execute\n    return e.execute_clauseelement(self, multiparams, params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 1219, in execute_clauseelement\n    return connection.execute_clauseelement(elem, multiparams, params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 895, in execute_clauseelement\n    return self._execute_compiled(elem.compile(dialect=self.dialect, column_keys=keys, inline=len(params) > 1), distilled_params=params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 907, in _execute_compiled\n    self.__execute_raw(context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 916, in __execute_raw\n    self._cursor_execute(context.cursor, context.statement, context.parameters[0], context=context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 960, in _cursor_execute\n    self._handle_dbapi_exception(e, statement, parameters, cursor)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 942, in _handle_dbapi_exception\n    raise exceptions.DBAPIError.instance(statement, parameters, e, connection_invalidated=is_disconnect)\nProgrammingError: (ProgrammingError) You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings. u'INSERT INTO unicode_table (unicode_varchar, unicode_text, plain_varchar) VALUES (?, ?, ?)' ['Alors vous imaginez ma surprise, au lever du jour, quand une dr\\xc3\\xb4le de petit voix m\\xe2\\x80\\x99a r\\xc3\\xa9veill\\xc3\\xa9. Elle disait: \\xc2\\xab S\\xe2\\x80\\x99il vous pla\\xc3\\xaet\\xe2\\x80\\xa6 dessine-moi un mouton! \\xc2\\xbb\\n', 'Alors vous imaginez ma surprise, au lever du jour, quand une dr\\xc3\\xb4le de petit voix m\\xe2\\x80\\x99a r\\xc3\\xa9veill\\xc3\\xa9. Elle disait: \\xc2\\xab S\\xe2\\x80\\x99il vous pla\\xc3\\xaet\\xe2\\x80\\xa6 dessine-moi un mouton! \\xc2\\xbb\\n', 'Alors vous imaginez ma surprise, au lever du jour, quand une dr\\xc3\\xb4le de petit voix m\\xe2\\x80\\x99a r\\xc3\\xa9veill\\xc3\\xa9. Elle disait: \\xc2\\xab S\\xe2\\x80\\x99il vous pla\\xc3\\xaet\\xe2\\x80\\xa6 dessine-moi un mouton! \\xc2\\xbb\\n']\n\n======================================================================\nERROR: testengineparam (sql.testtypes.UnicodeTest)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/test/sql/testtypes.py\", line 385, in testengineparam\n    plain_varchar=rawdata)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/sql/expression.py\", line 1087, in execute\n    return e.execute_clauseelement(self, multiparams, params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 1219, in execute_clauseelement\n    return connection.execute_clauseelement(elem, multiparams, params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 895, in execute_clauseelement\n    return self._execute_compiled(elem.compile(dialect=self.dialect, column_keys=keys, inline=len(params) > 1), distilled_params=params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 907, in _execute_compiled\n    self.__execute_raw(context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 916, in __execute_raw\n    self._cursor_execute(context.cursor, context.statement, context.parameters[0], context=context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 960, in _cursor_execute\n    self._handle_dbapi_exception(e, statement, parameters, cursor)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 942, in _handle_dbapi_exception\n    raise exceptions.DBAPIError.instance(statement, parameters, e, connection_invalidated=is_disconnect)\nProgrammingError: (ProgrammingError) You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings. u'INSERT INTO unicode_table (unicode_varchar, unicode_text, plain_varchar) VALUES (?, ?, ?)' ['Alors vous imaginez ma surprise, au lever du jour, quand une dr\\xc3\\xb4le de petit voix m\\xe2\\x80\\x99a r\\xc3\\xa9veill\\xc3\\xa9. Elle disait: \\xc2\\xab S\\xe2\\x80\\x99il vous pla\\xc3\\xaet\\xe2\\x80\\xa6 dessine-moi un mouton! \\xc2\\xbb\\n', 'Alors vous imaginez ma surprise, au lever du jour, quand une dr\\xc3\\xb4le de petit voix m\\xe2\\x80\\x99a r\\xc3\\xa9veill\\xc3\\xa9. Elle disait: \\xc2\\xab S\\xe2\\x80\\x99il vous pla\\xc3\\xaet\\xe2\\x80\\xa6 dessine-moi un mouton! \\xc2\\xbb\\n', 'Alors vous imaginez ma surprise, au lever du jour, quand une dr\\xc3\\xb4le de petit voix m\\xe2\\x80\\x99a r\\xc3\\xa9veill\\xc3\\xa9. Elle disait: \\xc2\\xab S\\xe2\\x80\\x99il vous pla\\xc3\\xaet\\xe2\\x80\\xa6 dessine-moi un mouton! \\xc2\\xbb\\n']\n\n======================================================================\nERROR: test_unicode (orm.query.GetTest)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/test/testlib/testing.py\", line 174, in maybe\n    return fn(*args, **kw)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/test/orm/query.py\", line 155, in test_unicode\n    table.insert().execute(id=ustring, data=ustring)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/sql/expression.py\", line 1087, in execute\n    return e.execute_clauseelement(self, multiparams, params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 1219, in execute_clauseelement\n    return connection.execute_clauseelement(elem, multiparams, params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 895, in execute_clauseelement\n    return self._execute_compiled(elem.compile(dialect=self.dialect, column_keys=keys, inline=len(params) > 1), distilled_params=params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 907, in _execute_compiled\n    self.__execute_raw(context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 916, in __execute_raw\n    self._cursor_execute(context.cursor, context.statement, context.parameters[0], context=context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 960, in _cursor_execute\n    self._handle_dbapi_exception(e, statement, parameters, cursor)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 942, in _handle_dbapi_exception\n    raise exceptions.DBAPIError.instance(statement, parameters, e, connection_invalidated=is_disconnect)\nProgrammingError: (ProgrammingError) You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings. u'INSERT INTO unicode_data (id, data) VALUES (?, ?)' ['petit voix m\\xe2\\x80\\x99a', 'petit voix m\\xe2\\x80\\x99a']\n\n======================================================================\nERROR: test_basic (orm.unitofwork.UnicodeTest)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/test/orm/unitofwork.py\", line 168, in test_basic\n    Session.commit()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/scoping.py\", line 98, in do\n    return getattr(self.registry(), name)(*args, **kwargs)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/session.py\", line 554, in commit\n    self.transaction.commit()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/session.py\", line 259, in commit\n    self._prepare_impl()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/session.py\", line 243, in _prepare_impl\n    self.session.flush()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/session.py\", line 786, in flush\n    self.uow.flush(self, objects)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 233, in flush\n    flush_context.execute()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 445, in execute\n    UOWExecutor().execute(self, tasks)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 930, in execute\n    self.execute_save_steps(trans, task)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 945, in execute_save_steps\n    self.save_objects(trans, task)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 936, in save_objects\n    task.mapper._save_obj(task.polymorphic_tosave_objects, trans)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/mapper.py\", line 1161, in _save_obj\n    c = connection.execute(statement.values(value_params), params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 844, in execute\n    return Connection.executors[c](self, object, multiparams, params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 895, in execute_clauseelement\n    return self._execute_compiled(elem.compile(dialect=self.dialect, column_keys=keys, inline=len(params) > 1), distilled_params=params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 907, in _execute_compiled\n    self.__execute_raw(context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 916, in __execute_raw\n    self._cursor_execute(context.cursor, context.statement, context.parameters[0], context=context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 960, in _cursor_execute\n    self._handle_dbapi_exception(e, statement, parameters, cursor)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 942, in _handle_dbapi_exception\n    raise exceptions.DBAPIError.instance(statement, parameters, e, connection_invalidated=is_disconnect)\nProgrammingError: (ProgrammingError) You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings. u'INSERT INTO uni_test (id, txt) VALUES (?, ?)' [1, '\\xc5\\xa0\\xc4\\x90\\xc4\\x86\\xc4\\x8c\\xc5\\xbd']\n\n======================================================================\nERROR: test_relation (orm.unitofwork.UnicodeTest)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/test/orm/unitofwork.py\", line 186, in test_relation\n    Session.commit()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/scoping.py\", line 98, in do\n    return getattr(self.registry(), name)(*args, **kwargs)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/session.py\", line 554, in commit\n    self.transaction.commit()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/session.py\", line 259, in commit\n    self._prepare_impl()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/session.py\", line 243, in _prepare_impl\n    self.session.flush()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/session.py\", line 786, in flush\n    self.uow.flush(self, objects)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 233, in flush\n    flush_context.execute()\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 445, in execute\n    UOWExecutor().execute(self, tasks)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 930, in execute\n    self.execute_save_steps(trans, task)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 945, in execute_save_steps\n    self.save_objects(trans, task)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/unitofwork.py\", line 936, in save_objects\n    task.mapper._save_obj(task.polymorphic_tosave_objects, trans)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/orm/mapper.py\", line 1161, in _save_obj\n    c = connection.execute(statement.values(value_params), params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 844, in execute\n    return Connection.executors[c](self, object, multiparams, params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 895, in execute_clauseelement\n    return self._execute_compiled(elem.compile(dialect=self.dialect, column_keys=keys, inline=len(params) > 1), distilled_params=params)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 907, in _execute_compiled\n    self.__execute_raw(context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 916, in __execute_raw\n    self._cursor_execute(context.cursor, context.statement, context.parameters[0], context=context)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 960, in _cursor_execute\n    self._handle_dbapi_exception(e, statement, parameters, cursor)\n  File \"/home/david/sage-4.1.2.rc0/spkg/build/sqlalchemy-0.4.6.p1/src/lib/sqlalchemy/engine/base.py\", line 942, in _handle_dbapi_exception\n    raise exceptions.DBAPIError.instance(statement, parameters, e, connection_invalidated=is_disconnect)\nProgrammingError: (ProgrammingError) You must not use 8-bit bytestrings unless you use a text_factory that can interpret 8-bit bytestrings (like text_factory = str). It is highly recommended that you instead just switch your application to Unicode strings. u'INSERT INTO uni_test (txt) VALUES (?)' ['\\xc5\\xa0\\xc4\\x90\\xc4\\x86\\xc4\\x8c\\xc5\\xbd']\n\n----------------------------------------------------------------------\nRan 1369 tests in 59.812s\n\nFAILED (errors=5)\nThere was a problem during the SQLAlchemy unit tests\n*************************************\nError testing package ** sqlalchemy-0.4.6.p1 **\n*************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7091\n\n",
     "created_at": "2009-10-01T16:01:30Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "sqlachemy test suite fails when building with SAGE_CHECK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7091",
-    "user": "@loefflerd"
+    "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: tbd
@@ -199,15 +198,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7091
 
 ---
 
-archive/issue_comments_058598.json:
+archive/issue_comments_058488.json:
 ```json
 {
     "body": "I've make a new package with [SQLAlchemy](http://www.sqlalchemy.org/) 0.5.8:\n\n* http://sage.math.washington.edu/home/mpatel/trac/7091/sqlalchemy-0.5.8.p0.spkg\n\nThere's no change in Sage 4.3.4.alpha0's long doctest results on sage.math.\n\nBut it seems that 0.5.8 now requires [nose](http://somethingaboutorange.com/mrl/projects/nose/0.11.2/) to run its tests.  I've commented them out in `spkg-check`, but I haven't yet \"qfinished\" the applied patch, in case I'm wrong or we should just delete `spkg-check`.\n\nThoughts?",
     "created_at": "2010-03-05T02:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58598",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58488",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -225,15 +224,15 @@ Thoughts?
 
 ---
 
-archive/issue_comments_058599.json:
+archive/issue_comments_058489.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-03-05T02:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58599",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58489",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -243,15 +242,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_058600.json:
+archive/issue_comments_058490.json:
 ```json
 {
     "body": "This looks good.  \n\nCan you change the spkg maintainer from:\n\n```\n## SPKG Maintainers\n\n * Yi Qiang\n```\n\n\nto you?  \n\nRegarding nose, it's a bummer that they switched so that we can't run their test suite.  Oh well.  I can't think of any better solution though... until nose were to say get added to sage.  \n\nSo I say \"positive review\" (subject to you qfinishing this).   And it's *really* good that we're upgrading to the latest version, since the version of sqlalchemy in sage now is very out of date. \n\nWilliam",
     "created_at": "2010-03-06T23:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58600",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58490",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -278,15 +277,15 @@ William
 
 ---
 
-archive/issue_comments_058601.json:
+archive/issue_comments_058491.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-06T23:01:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58601",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58491",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -296,15 +295,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_058602.json:
+archive/issue_comments_058492.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-06T23:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58602",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58492",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -314,15 +313,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058603.json:
+archive/issue_comments_058493.json:
 ```json
 {
     "body": "I've made an spkg with the changes William mentioned at http://sage.math.washington.edu/home/mhansen/sqlalchemy-0.5.8.spkg",
     "created_at": "2010-03-06T23:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58603",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58493",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -332,15 +331,15 @@ I've made an spkg with the changes William mentioned at http://sage.math.washing
 
 ---
 
-archive/issue_comments_058604.json:
+archive/issue_comments_058494.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-08T20:50:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58604",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7091#issuecomment-58494",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

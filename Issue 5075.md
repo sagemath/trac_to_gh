@@ -6,15 +6,14 @@ archive/issues_005075.json:
     "body": "Assignee: @roed314\n\nCC:  dmharvey @nilesjohnson @categorie\n\nKeywords: polynomials, power series, inexact rings\n\nThe generic polynomial class truncates leading zeroes, and this can cause problems when working over an inexact ring in which is_zero can return True even for an inexact zero (e.g., see #2943). Here is a simple example:\n\n```\nsage: C.<t> = PowerSeriesRing(Integers())\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(t)\nsage: y\nO(t^1)\nsage: z = y*s\nsage: z\n0\nsage: z.list()\n[]\n```\n\nThis was recognized earlier for p-adics and fixed (I'm not sure which ticket this was):\n\n```\nsage: C = pAdicField(11)\nsage: D.<s> = PolynomialRing(C)\nsage: y = O(11)\nsage: y\nO(11)\nsage: z = y*s\nsage: z\n(O(11))*s\n```\n\nThe other main class of inexact rings are interval fields, but I believe for those is_zero returns False for an inexact zero, so this doesn't come up.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5075\n\n",
     "created_at": "2009-01-23T19:04:16Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Polynomials over inexact rings should not truncate inexact leading zeroes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5075",
-    "user": "@kedlaya"
+    "user": "https://github.com/kedlaya"
 }
 ```
 Assignee: @roed314
@@ -61,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5075
 
 ---
 
-archive/issue_comments_038649.json:
+archive/issue_comments_038575.json:
 ```json
 {
     "body": "A closely related issue is #3979.",
     "created_at": "2009-01-23T19:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38649",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38575",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -79,15 +78,15 @@ A closely related issue is #3979.
 
 ---
 
-archive/issue_comments_038650.json:
+archive/issue_comments_038576.json:
 ```json
 {
     "body": "Attachment [trac_5075.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.patch) by @roed314 created at 2009-04-26 19:42:28\n\nIn progress.  I think it fixes the problem, but I'm working on a larger project for p-adic polynomials that this is part of.",
     "created_at": "2009-04-26T19:42:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38650",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38576",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -99,15 +98,15 @@ In progress.  I think it fixes the problem, but I'm working on a larger project 
 
 ---
 
-archive/issue_comments_038651.json:
+archive/issue_comments_038577.json:
 ```json
 {
     "body": "Attachment [trac_5075.2.patch](tarball://root/attachments/some-uuid/ticket5075/trac_5075.2.patch) by @roed314 created at 2009-06-11 21:04:01\n\nrebased against 4.0",
     "created_at": "2009-06-11T21:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38651",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38577",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -119,15 +118,15 @@ rebased against 4.0
 
 ---
 
-archive/issue_comments_038652.json:
+archive/issue_comments_038578.json:
 ```json
 {
     "body": "I tried to apply this against 4.7.1.rc1 and got a bunch of merge failures in power_series_poly.pyx. Probably another trivial rebase is needed.",
     "created_at": "2011-08-01T08:12:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38652",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38578",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -137,15 +136,15 @@ I tried to apply this against 4.7.1.rc1 and got a bunch of merge failures in pow
 
 ---
 
-archive/issue_comments_038653.json:
+archive/issue_comments_038579.json:
 ```json
 {
     "body": "David, could you give us a rebase for sage 6.1?  I know you're doing a lot of other work for padics, but we're trying to solve a more basic issue with power series comparison at #9457.  Power series over padics are a confusing obstacle there, and we wanted to see if the patch here would help.\n\nHere's the specific bug we're trying to track down (in sage 6.1):  Power series over p-adics are changing inexact zeros to exact zeros -- this looks similar to the problem with polynomials on this ticket, but notice that the problem happens even for p-adics:\n\n\n```\nsage: Ct.<t> = PowerSeriesRing(Qp(11))\nsage: O(11^2) # inexact zero\nO(11^2)\nsage: Ct(O(11^2)) # coercing to power series ring looses finite precision\n0\nsage: Ct(1+O(11^2)) # finite precision is retained for non-zero elements\n1 + O(11^2)\n```\n\n\nThere is a problem with multiplication of a p-adic by an element of the power series ring, which might be caused by the problem above:\n\n```\nsage: 1+O(11^2)*t  # finite precision is retained\n1 + O(11^20) + O(11^2)*t  \n\nsage: O(11^2)*t  # finite precision is lost\n0\n```\n\n\nNote that there is a similar problem for more general power series ring over power series ring:\n\n\n```\nsage: D.<x> = PowerSeriesRing(QQ)\nsage: Ds.<s> = PowerSeriesRing(D)\nsage: O(x)  # inexact zero\nO(x^1)\nsage: Ds(O(x)) # finite precision is lost\n0\nsage: Ds(1+O(x)) # finite precision is retained\n1 + O(x)\n\nsage: 1+O(x)*s # !! this is different from behavior of power series over padic ring\n1\n```\n\n\nMy hope is that starting with a rebase of this patch would be a step toward solving this problem.  Perhaps it will have to be extended to power series over inexact rings too.  Unfortunately I don't understand the current status of padics well enough to do this rebase myself.",
     "created_at": "2014-02-03T15:00:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38653",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38579",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -200,15 +199,15 @@ My hope is that starting with a rebase of this patch would be a step toward solv
 
 ---
 
-archive/issue_comments_038654.json:
+archive/issue_comments_038580.json:
 ```json
 {
     "body": "Ping. Is this issue due to be resolved by other developments on p-adics?",
     "created_at": "2016-03-23T23:30:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38654",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38580",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -218,15 +217,15 @@ Ping. Is this issue due to be resolved by other developments on p-adics?
 
 ---
 
-archive/issue_comments_038655.json:
+archive/issue_comments_038581.json:
 ```json
 {
     "body": "Ping again. The original example still behaves the same way in Sage 8.0.",
     "created_at": "2017-09-06T03:24:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5075",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38655",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/5075#issuecomment-38581",
+    "user": "https://github.com/kedlaya"
 }
 ```
 

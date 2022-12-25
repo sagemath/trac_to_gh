@@ -6,7 +6,7 @@ archive/issues_005209.json:
     "body": "Assignee: mabshoff\n\n\n```\nsage -t -long \"devel/sage/sage/plot/plot.py\" \n********************************************************************** \nFile \"/space/build/sage-3.3.alpha6/devel/sage/sage/plot/plot.py\", line 2582: \n    sage: generate_plot_points(sin(x), (-pi, pi), randomize=False) \nExpected: \n    [(-3.1415926535897931, -1.2246...e-16), (-2.748893571891069, \n    -0.38268343236508989), (-2.3561944901923448, -0.707106781186547...), \n    (-2.1598449493429825, -0.83146961230254546), (-1.9634954084936207, \n    -0.92387953251128674), (-1.7671458676442586, -0.98078528040323043), \n    (-1.5707963267948966, -1.0), (-1.3744467859455345, \n    -0.98078528040323043), (-1.1780972450961724, -0.92387953251128674), \n    (-0.98174770424681035, -0.83146961230254524), (-0.78539816339744828, \n    -0.707106781186547...), (-0.39269908169872414, -0.38268343236508978), \n    (0.0, 0.0), (0.39269908169872414, 0.38268343236508978), \n    (0.78539816339744828, 0.707106781186547...), (0.98174770424681035, \n    0.83146961230254524), (1.1780972450961724, 0.92387953251128674), \n    (1.3744467859455345, 0.98078528040323043), (1.5707963267948966, 1.0), \n    (1.7671458676442586, 0.98078528040323043), (1.9634954084936207, \n    0.92387953251128674), (2.1598449493429825, 0.83146961230254546), \n    (2.3561944901923448, 0.707106781186547...), (2.748893571891069, \n    0.38268343236508989), (3.1415926535897931, 1.2246...e-16)] \nGot: \n    [(-3.1415926535897931, -1.2246467991473532e-16), \n(-2.748893571891069, -0.38268343236508989), (-2.3561944901923448, \n-0.70710678118654757), (-2.1598449493429825, -0.83146961230254535), \n(-1.9634954084936207, -0.92387953251128674), (-1.7671458676442586, \n-0.98078528040323043), (-1.5707963267948966, -1.0), \n(-1.3744467859455345, -0.98078528040323043), (-1.1780972450961724, \n-0.92387953251128674), (-0.98174770424681035, -0.83146961230254524), \n(-0.78539816339744828, -0.70710678118654746), (-0.39269908169872414, \n-0.38268343236508978), (0.0, 0.0), (0.39269908169872414, \n0.38268343236508978), (0.78539816339744828, 0.70710678118654746), \n(0.98174770424681035, 0.83146961230254524), (1.1780972450961724, \n0.92387953251128674), (1.3744467859455345, 0.98078528040323043), \n(1.5707963267948966, 1.0), (1.7671458676442586, 0.98078528040323043), \n(1.9634954084936207, 0.92387953251128674), (2.1598449493429825, \n0.83146961230254535), (2.3561944901923448, 0.70710678118654757), \n(2.748893571891069, 0.38268343236508989), (3.1415926535897931, \n1.2246467991473532e-16)] \n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5209\n\n",
     "created_at": "2009-02-08T20:16:44Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005209.json:
     "title": "Sage 3.3.a6: numerical noise in sage/plot/plot.py on OpenSUSE 11.1 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5209",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -72,15 +72,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5209
 
 ---
 
-archive/issue_comments_039909.json:
+archive/issue_comments_039831.json:
 ```json
 {
     "body": "And another one - it might be the same noise since it is also from an OpenSUSE box:\n\n```\n**********************************************************************\nFile \"/home/mabshoff/build-3.3.alpha6/sage-3.3.alpha6-menas/devel/sage/sage/plot/plot.py\", line 2582:\n    sage: generate_plot_points(sin(x), (-pi, pi), randomize=False)\nExpected:\n    [(-3.1415926535897931, -1.2246...e-16), (-2.748893571891069,\n    -0.38268343236508989), (-2.3561944901923448, -0.707106781186547...),\n    (-2.1598449493429825, -0.83146961230254546), (-1.9634954084936207,\n    -0.92387953251128674), (-1.7671458676442586, -0.98078528040323043),\n    (-1.5707963267948966, -1.0), (-1.3744467859455345,\n    -0.98078528040323043), (-1.1780972450961724, -0.92387953251128674),\n    (-0.98174770424681035, -0.83146961230254524), (-0.78539816339744828,\n    -0.707106781186547...), (-0.39269908169872414, -0.38268343236508978),\n    (0.0, 0.0), (0.39269908169872414, 0.38268343236508978),\n    (0.78539816339744828, 0.707106781186547...), (0.98174770424681035,\n    0.83146961230254524), (1.1780972450961724, 0.92387953251128674),\n    (1.3744467859455345, 0.98078528040323043), (1.5707963267948966, 1.0),\n    (1.7671458676442586, 0.98078528040323043), (1.9634954084936207,\n    0.92387953251128674), (2.1598449493429825, 0.83146961230254546),\n    (2.3561944901923448, 0.707106781186547...), (2.748893571891069,\n    0.38268343236508989), (3.1415926535897931, 1.2246...e-16)]\nGot:\n    [(-3.1415926535897931, -1.2246467991473532e-16), (-2.748893571891069, \n    -0.38268343236508989), (-2.3561944901923448, -0.70710678118654757), \n    (-2.1598449493429825, -0.83146961230254535), (-1.9634954084936207, \n    -0.92387953251128674), (-1.7671458676442586, -0.98078528040323043), \n    (-1.5707963267948966, -1.0), (-1.3744467859455345, \n    -0.98078528040323043), (-1.1780972450961724, -0.92387953251128674), \n    (-0.98174770424681035, -0.83146961230254524), (-0.78539816339744828, \n    -0.70710678118654746), (-0.39269908169872414, -0.38268343236508978), \n    (0.0, 0.0), (0.39269908169872414, 0.38268343236508978), \n    (0.78539816339744828, 0.70710678118654746), (0.98174770424681035, \n    0.83146961230254524), (1.1780972450961724, 0.92387953251128674), \n    (1.3744467859455345, 0.98078528040323043), (1.5707963267948966, 1.0), \n    (1.7671458676442586, 0.98078528040323043), (1.9634954084936207, \n    0.92387953251128674), (2.1598449493429825, 0.83146961230254535), \n    (2.3561944901923448, 0.70710678118654757), (2.748893571891069, \n    0.38268343236508989), (3.1415926535897931, 1.2246467991473532e-16)]\n**********************************************************************\n```\n",
     "created_at": "2009-02-08T20:37:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39909",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39831",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +132,15 @@ Got:
 
 ---
 
-archive/issue_comments_039910.json:
+archive/issue_comments_039832.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-09T10:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39910",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39832",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -150,15 +150,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_039911.json:
+archive/issue_comments_039833.json:
 ```json
 {
     "body": "In both cases the failure is the following:\n\n```\n    (-2.1598449493429825, -0.83146961230254546), (-1.9634954084936207,\n    (-2.1598449493429825, -0.83146961230254535), (-1.9634954084936207, \n\n    0.92387953251128674), (2.1598449493429825, 0.83146961230254546),\n    0.92387953251128674), (2.1598449493429825, 0.83146961230254535), \n```\n\nPatch coming up.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T10:48:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39911",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39833",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -182,15 +182,15 @@ Michael
 
 ---
 
-archive/issue_comments_039912.json:
+archive/issue_comments_039834.json:
 ```json
 {
     "body": "With the patch applied:\n\n```\nsage -t -long \"devel/sage/sage/plot/plot.py\"                \n\t [41.5 s]\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T11:01:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39912",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39834",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -210,15 +210,15 @@ Michael
 
 ---
 
-archive/issue_comments_039913.json:
+archive/issue_comments_039835.json:
 ```json
 {
     "body": "Attachment [trac_5209_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket5209/trac_5209_numerical_noise.patch) by mhampton created at 2009-02-09 14:52:30\n\nStandard sort of minimal fix for this type of issue; I did not test it directly but it seems clear that this is OK based on other similar problems.  Only affects the doctest.  Positive review.",
     "created_at": "2009-02-09T14:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39913",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39835",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -230,15 +230,15 @@ Standard sort of minimal fix for this type of issue; I did not test it directly 
 
 ---
 
-archive/issue_comments_039914.json:
+archive/issue_comments_039836.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-10T06:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39914",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39836",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -248,15 +248,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_039915.json:
+archive/issue_comments_039837.json:
 ```json
 {
     "body": "Merged in Sage 3.3.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T06:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5209",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39915",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5209#issuecomment-39837",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

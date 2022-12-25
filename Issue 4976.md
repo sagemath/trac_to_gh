@@ -6,15 +6,13 @@ archive/issues_004976.json:
     "body": "Assignee: whuss\n\nThis patch adds the new options \"fill\", \"fillcolor\", and \"fillalpha\" to the plot functions,\nwhich allow to fill the area between two functions in a plot, or to fill the area between \nthe function and the x-axis.\n\nThe syntax for fill is similar to what Mathematica uses.\n\nI also attach a file with some examples for easier testing.\n\nGreetings,\n\nWilfried\n\nIssue created by migration from https://trac.sagemath.org/ticket/4976\n\n",
     "created_at": "2009-01-14T17:17:39Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] fill option for plot, polar_plot and parametric_plot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4976",
-    "user": "whuss"
+    "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
 Assignee: whuss
@@ -39,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4976
 
 ---
 
-archive/issue_comments_037937.json:
+archive/issue_comments_037865.json:
 ```json
 {
     "body": "some examples",
     "created_at": "2009-01-14T17:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37937",
-    "user": "whuss"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37865",
+    "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
 
@@ -57,15 +55,15 @@ some examples
 
 ---
 
-archive/issue_comments_037938.json:
+archive/issue_comments_037866.json:
 ```json
 {
     "body": "Attachment [fill_examples.sage](tarball://root/attachments/some-uuid/ticket4976/fill_examples.sage) by whuss created at 2009-01-14 17:20:54",
     "created_at": "2009-01-14T17:20:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37938",
-    "user": "whuss"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37866",
+    "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
 
@@ -75,15 +73,15 @@ Attachment [fill_examples.sage](tarball://root/attachments/some-uuid/ticket4976/
 
 ---
 
-archive/issue_comments_037939.json:
+archive/issue_comments_037867.json:
 ```json
 {
     "body": "Attachment [fill1.png](tarball://root/attachments/some-uuid/ticket4976/fill1.png) by @kcrisman created at 2009-01-29 04:05:31\n\nI think that someone who does heavier-duty plotting (and who has a machine new enough that plot.py doesn't time out while testing) should give a final review, but it very nicely solves a lot of problems, and didn't break any of the examples I thought it might when I tried it.  After some thought, probably putting generate_plot_points separately (and with very nice documentation) is a wise idea as well, and hopefully someone who originated that code will agree.\n\nMy only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.\n\nThere should probably also be more explicit documentation of how the fillcolor option works, as opposed to seeing fillcolor='#ccc' in the tests - all legal input categories should be listed, perhaps there are others.\n\nBut that's all quibbles and my own ignorance; this is a beautiful addition, and someone else should review it very soon to avoid bitrot.",
     "created_at": "2009-01-29T04:05:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37939",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37867",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -101,15 +99,15 @@ But that's all quibbles and my own ignorance; this is a beautiful addition, and 
 
 ---
 
-archive/issue_comments_037940.json:
+archive/issue_comments_037868.json:
 ```json
 {
     "body": "This patch seems to also be a big refactoring of the plot code, and also seems to change the code to plot a list of functions in multiple colors.  I'm not disagreeing with it, but just commenting that this patch addresses more than the ticket says it does.",
     "created_at": "2009-01-29T05:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37940",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37868",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -119,15 +117,15 @@ This patch seems to also be a big refactoring of the plot code, and also seems t
 
 ---
 
-archive/issue_comments_037941.json:
+archive/issue_comments_037869.json:
 ```json
 {
     "body": "First, I really appreciate this patch and the beautiful functionality it adds.  We've needed it for a long time.  It also appears to do a much-needed refactoring of the plot code.  I haven't tested the patch, though, or looked at it extremely closely.  \n\nJust a short comment about a piece of code.  The patch uses map and max/min to calculate filling to the max or min of the function.  It would be slightly faster and probably a lot clearer to just use list comprehensions:\n\n\n```\n\nsage: data=[(x,x*x) for x in [0..10,step=0.01]]\nsage: timeit('min(map(lambda t: t[1], data))')\n625 loops, best of 3: 1.29 ms per loop\nsage: timeit('min(i[1] for i in data)')\n625 loops, best of 3: 1.15 ms per loop\n```\n\n\nIt would be orders of magnitude faster to use numpy to store the list of data.  This would be a more major change in the plotting code, but here is the equivalent numpy code:\n\n\n```\nsage: import numpy\nsage: ndata=numpy.array(data,dtype=float)\nsage: timeit('numpy.max(ndata[:,1])')\n625 loops, best of 3: 30.7 \u00b5s per loop\n```\n",
     "created_at": "2009-01-29T05:39:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37941",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37869",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -161,15 +159,15 @@ sage: timeit('numpy.max(ndata[:,1])')
 
 ---
 
-archive/issue_comments_037942.json:
+archive/issue_comments_037870.json:
 ```json
 {
     "body": "Attachment [fill_plot.patch](tarball://root/attachments/some-uuid/ticket4976/fill_plot.patch) by whuss created at 2009-02-02 14:51:47\n\nrebased for sage-3.3.alpha2",
     "created_at": "2009-02-02T14:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37942",
-    "user": "whuss"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37870",
+    "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
 
@@ -181,15 +179,15 @@ rebased for sage-3.3.alpha2
 
 ---
 
-archive/issue_comments_037943.json:
+archive/issue_comments_037871.json:
 ```json
 {
     "body": "Replying to [comment:1 kcrisman]:\n> My only functional caveat is that you may want to put in a catch for fill=min and fill=max (as opposed to fill='min' and fill='max') because it parses these as functions, which they are, but it should probably raise an error (in both cases seems to have net effect of fill='axis'), since max and min are not really functions of one variable.\n\nIn the new patch a warning gets printed if min or max is used as the parameter for fill.\n\nReplying to [comment:3 jason]:\n> The patch uses map and max/min to calculate filling to the max or min of the function. It would be slightly faster and probably a lot clearer to just use list comprehensions\n\nI changed it to use generator comprehensions.",
     "created_at": "2009-02-02T14:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37943",
-    "user": "whuss"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37871",
+    "user": "https://trac.sagemath.org/admin/accounts/users/whuss"
 }
 ```
 
@@ -207,15 +205,15 @@ I changed it to use generator comprehensions.
 
 ---
 
-archive/issue_comments_037944.json:
+archive/issue_comments_037872.json:
 ```json
 {
     "body": "Attachment [4976-reviewer.patch](tarball://root/attachments/some-uuid/ticket4976/4976-reviewer.patch) by @kcrisman created at 2009-02-04 03:51:23",
     "created_at": "2009-02-04T03:51:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37944",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37872",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -225,15 +223,15 @@ Attachment [4976-reviewer.patch](tarball://root/attachments/some-uuid/ticket4976
 
 ---
 
-archive/issue_comments_037945.json:
+archive/issue_comments_037873.json:
 ```json
 {
     "body": "Positive review off 3.3.alpha4; as we've all noted, this will be a great addition.  I did try quite a bit to crack it, but couldn't; I can't check plot.py doctests, unfortunately, so there is still the potential, but I doubt it.\n\nTwo comments: \n\n1. I added the reviewer patch because it was not clear that in parametric_plot, all fill options behave the same.  This is ok behavior, I think, for the parametric case, but should be documented.  \n\n2. With the fix for max/min versus 'max'/'min', the behavior of max and min (without quotes) has changed, in a very interesting way; in fact, it behaves somewhat similarly to the parametric filling.  I think it's a feature, not a bug, which should be documented and made easily available, but that should be on another ticket.",
     "created_at": "2009-02-04T03:57:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37945",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37873",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -249,15 +247,15 @@ Two comments:
 
 ---
 
-archive/issue_comments_037946.json:
+archive/issue_comments_037874.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-05T13:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37946",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37874",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -267,15 +265,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_037947.json:
+archive/issue_comments_037875.json:
 ```json
 {
     "body": "Attachment [trac_4976_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket4976/trac_4976_numerical_noise.patch) by mabshoff created at 2009-02-05 13:02:10\n\nMerged all three patches in Sage 3.3.alpha6.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-05T13:02:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37947",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4976#issuecomment-37875",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

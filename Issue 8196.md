@@ -6,15 +6,14 @@ archive/issues_008196.json:
     "body": "Assignee: mvngu\n\n\n```\nsage: a=mod(3,15)\nsage: a.is_square?\n...\n            ALGORITHM: Calculate the Jacobi symbol\n            `(mathtt{self}/p)` at each prime `p`\n            dividing `n`. It must be 1 or 0 for each prime, and if it\n            is 0 mod `p`, where `p^k || n`, then\n            `ord_p(mathtt{self})` must be even or greater than\n```\n\nClearly the math formulae are not displayed correctly in tty mode.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8196\n\n",
     "created_at": "2010-02-05T20:14:00Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bad documentation output in tty mode",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8196",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: mvngu
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8196
 
 ---
 
-archive/issue_comments_072286.json:
+archive/issue_comments_072164.json:
 ```json
 {
     "body": "> Clearly the math formulae are not displayed correctly in tty mode.\n\nHow would you expect them to be displayed, given that it's tty mode?",
     "created_at": "2010-02-05T20:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72286",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72164",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -61,15 +60,15 @@ How would you expect them to be displayed, given that it's tty mode?
 
 ---
 
-archive/issue_comments_072287.json:
+archive/issue_comments_072165.json:
 ```json
 {
     "body": "> How would you expect them to be displayed, given that it's tty mode? \n\nthe \"mathtt{...}\" should not appear, thus we should get something like:\n\n```\n            ALGORITHM: Calculate the Jacobi symbol\n            `(self/p)` at each prime `p`\n            dividing `n`. It must be 1 or 0 for each prime, and if it\n            is 0 mod `p`, where `p^k || n`, then\n            `ord_p(self)` must be even or greater than\n```\n",
     "created_at": "2010-02-07T21:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72287",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72165",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -90,15 +89,15 @@ the "mathtt{...}" should not appear, thus we should get something like:
 
 ---
 
-archive/issue_comments_072288.json:
+archive/issue_comments_072166.json:
 ```json
 {
     "body": "Replying to [comment:2 zimmerma]:\n> the \"mathtt{...}\" should not appear\n\nThe patch at #8209 does this, but really only because mathtt is broken everywhere: broken in notebook documentation and in the reference manual, so might as well fix it from the command line, too.  I really don't think we want to write what would essentially be a LaTeX --> text converter, so there are limits to how good the help strings will look from the command line.\n\nI suggest we close this, since #8209 takes care of the specific issue here.",
     "created_at": "2010-02-07T21:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72288",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72166",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -113,15 +112,15 @@ I suggest we close this, since #8209 takes care of the specific issue here.
 
 ---
 
-archive/issue_comments_072289.json:
+archive/issue_comments_072167.json:
 ```json
 {
     "body": "I confirm #8209 fixes that issue, thus ok to close #8196.",
     "created_at": "2010-02-07T21:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72289",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72167",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -131,15 +130,15 @@ I confirm #8209 fixes that issue, thus ok to close #8196.
 
 ---
 
-archive/issue_comments_072290.json:
+archive/issue_comments_072168.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2010-02-07T22:43:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8196",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72290",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8196#issuecomment-72168",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002363.json:
     "body": "Assignee: mabshoff\n\nSee 1337. This patch fixes a wrong ordering in a mpz structure used by the integer.pyx memory manager. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2363\n\n",
     "created_at": "2008-03-01T20:25:50Z",
     "labels": [
-        "memleak",
-        "major",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with patch, needs review]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2363",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: mabshoff
@@ -30,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2363
 
 ---
 
-archive/issue_comments_015933.json:
+archive/issue_comments_015898.json:
 ```json
 {
     "body": "Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket2363/integer.pyx.patch) by @garyfurnish created at 2008-03-01 20:26:22",
     "created_at": "2008-03-01T20:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15933",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15898",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -48,15 +47,15 @@ Attachment [integer.pyx.patch](tarball://root/attachments/some-uuid/ticket2363/i
 
 ---
 
-archive/issue_comments_015934.json:
+archive/issue_comments_015899.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @garyfurnish.",
     "created_at": "2008-03-01T20:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15934",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15899",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -66,15 +65,15 @@ Changing assignee from mabshoff to @garyfurnish.
 
 ---
 
-archive/issue_comments_015935.json:
+archive/issue_comments_015900.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-01T20:27:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15935",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15900",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -84,15 +83,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_015936.json:
+archive/issue_comments_015901.json:
 ```json
 {
     "body": "Robert gave this a positive at #1337, so I am moving that review over here.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-01T22:30:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15936",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15901",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -106,15 +105,15 @@ Michael
 
 ---
 
-archive/issue_comments_015937.json:
+archive/issue_comments_015902.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-01T22:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15937",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15902",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -124,15 +123,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_015938.json:
+archive/issue_comments_015903.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc1",
     "created_at": "2008-03-01T22:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2363",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15938",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2363#issuecomment-15903",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_009802.json:
     "body": "Assignee: jason, was\n\nCC:  bwonderly @mwhansen @wdjoyner @jasongrout\n\nThis will vastly improve the documentation of the `random_matrix` command in common use cases (integers, rationals,...).\n\nIt will also allow for new, more specialized constructions, such as Billy Wonderly's work at #9720, #9754, #9820.\n\nSee #9720 for motivating discussion.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9803\n\n",
     "created_at": "2010-08-26T00:27:48Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Generalize and document the random_matrix constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9802",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: jason, was
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9803
 
 ---
 
-archive/issue_comments_096306.json:
+archive/issue_comments_096147.json:
 ```json
 {
     "body": "Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v1.patch) by @rbeezer created at 2010-08-26 22:16:20",
     "created_at": "2010-08-26T22:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96306",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96147",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -53,15 +51,15 @@ Attachment [trac_9803-random-matrix-constructor-v1.patch](tarball://root/attachm
 
 ---
 
-archive/issue_comments_096307.json:
+archive/issue_comments_096148.json:
 ```json
 {
     "body": "Patch expands the functionality of the `random_matrix` routine.  A matrix space is used to accumulate the base ring, dimensions and representation (sparse/dense).  This can then be passed to the new `random_*_matrix` routines where a matrix can actually be constructed and returned.\n\nDocumentation for previous behavior greatly expanded, notably for integer and rational matrices.  New routines are demonstrated, with clear directions (links, imports) to expanded documentation.\n\nHad to handle density and sparse keywords in a backwards-compatible fashion, so they are \"popped\" out of the `kwds` dictionary and passed as before to the matrix randomize() routine.  The keywords are now required and won't work as positional arguments.  Had to adjust code in the group theory isomorphism code in a couple of modules as a result.  Also the `random_matrix` command was employed coincidentally in a doctest in the lazy import routine.  I think the new version works just as well as a test, so I changed the output.\n\nThis code below looks like some artifact of the switch to allowing/disallowing zero entries.  I've left it in, though it *never* gets called in any of the tests (I checked).  Before my changes, `density` had a default value of 1, so you would have to consciously pass in `None` to make this happen.  It was not documented.\n\n\n```\n        if density is None:\n            A.randomize(density=float(1), nonzero=False, *args, **kwds)\n        else:\n            A.randomize(density=density, nonzero=True, *args, **kwds)\n```\n\n\nOne fix in mod n dense matrix code.  Could not figure out how `range(25)` was doing anything useful, and it was ending up in the algorithm argument, so in the end I just removed it and the affected test passes.",
     "created_at": "2010-08-26T22:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96307",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96148",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -88,15 +86,15 @@ One fix in mod n dense matrix code.  Could not figure out how `range(25)` was do
 
 ---
 
-archive/issue_comments_096308.json:
+archive/issue_comments_096149.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-26T22:19:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96308",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96149",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -106,15 +104,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_096309.json:
+archive/issue_comments_096150.json:
 ```json
 {
     "body": "Attachment [trac_9803-random-matrix-constructor-v2.patch](tarball://root/attachments/some-uuid/ticket9803/trac_9803-random-matrix-constructor-v2.patch) by @rbeezer created at 2010-08-27 01:43:36\n\nStandalone patch",
     "created_at": "2010-08-27T01:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96309",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96150",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -126,15 +124,15 @@ Standalone patch
 
 ---
 
-archive/issue_comments_096310.json:
+archive/issue_comments_096151.json:
 ```json
 {
     "body": "First patch contained:\n\n\n```\ncolumns = parent.nrows()\n```\n\n\nwhich is just plain wrong, but also `columns` was never referenced (which is why the doctests were unaffected).  Its gone now.  Use just the v2 patch.",
     "created_at": "2010-08-27T01:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96310",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96151",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -152,15 +150,15 @@ which is just plain wrong, but also `columns` was never referenced (which is why
 
 ---
 
-archive/issue_comments_096311.json:
+archive/issue_comments_096152.json:
 ```json
 {
     "body": "Does this patch depend on any other patches?",
     "created_at": "2010-08-27T17:16:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96311",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96152",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -170,15 +168,15 @@ Does this patch depend on any other patches?
 
 ---
 
-archive/issue_comments_096312.json:
+archive/issue_comments_096153.json:
 ```json
 {
     "body": "Replying to [comment:3 wdj]:\n> Does this patch depend on any other patches?\n\nAh, yes, totally forgot.  It needs to have #9720 (just the v4 patch) applied first.  Thanks.",
     "created_at": "2010-08-27T17:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96312",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96153",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -191,15 +189,15 @@ Ah, yes, totally forgot.  It needs to have #9720 (just the v4 patch) applied fir
 
 ---
 
-archive/issue_comments_096313.json:
+archive/issue_comments_096154.json:
 ```json
 {
     "body": "Applied (with #9720) to 4.5.1 and passed sage -testall. Positive review as far as I see, but maybe Mike Hansen should weight in.",
     "created_at": "2010-08-28T19:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96313",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96154",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -209,15 +207,15 @@ Applied (with #9720) to 4.5.1 and passed sage -testall. Positive review as far a
 
 ---
 
-archive/issue_comments_096314.json:
+archive/issue_comments_096155.json:
 ```json
 {
     "body": "This looks good to me.",
     "created_at": "2010-08-30T03:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96314",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96155",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -227,15 +225,15 @@ This looks good to me.
 
 ---
 
-archive/issue_comments_096315.json:
+archive/issue_comments_096156.json:
 ```json
 {
     "body": "Replying to [comment:6 mhansen]:\n> This looks good to me.\n\nThanks for your input.  I think this is much improved organized this way, and I finally did something about the documentation for the `random_matrix()` command.  ;-)\n\nLooks like this can go to positive review along with the rest of Billy's work.",
     "created_at": "2010-08-30T03:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96315",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96156",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -250,15 +248,15 @@ Looks like this can go to positive review along with the rest of Billy's work.
 
 ---
 
-archive/issue_comments_096316.json:
+archive/issue_comments_096157.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-30T03:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96316",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96157",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -268,15 +266,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_096317.json:
+archive/issue_comments_096158.json:
 ```json
 {
     "body": "## Release Manager\n\n#9720, #9803, #9802, #9754 is each dependent on the predecessor, merge in this\norder.",
     "created_at": "2010-09-03T06:27:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96317",
-    "user": "bwonderly"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96158",
+    "user": "https://trac.sagemath.org/admin/accounts/users/bwonderly"
 }
 ```
 
@@ -289,15 +287,15 @@ order.
 
 ---
 
-archive/issue_comments_096318.json:
+archive/issue_comments_096159.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-15T09:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9802",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96318",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9802#issuecomment-96159",
+    "user": "https://github.com/qed777"
 }
 ```
 

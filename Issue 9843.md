@@ -6,14 +6,13 @@ archive/issues_009843.json:
     "body": "Assignee: mvngu\n\n[Reported Leif Leonhardy on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/a865f2fa728335c0/cc9e52f4c97dd887#cc9e52f4c97dd887):\n\n\n```sh\n$ grep -i warning docpdf.log | grep -v \"0 warn\" | sort | uniq -c | sort -n \n      1 /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/en/tutorial/sagetex.rst:: WARNING: unusable reference target found: ../installation/index.html\n      1 /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/fr/tutorial/sagetex.rst:: WARNING: unusable reference target found: ../../en/installation/index.html\n      1 writing... /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/en/faq/faq-usage.rst:: WARNING: unusable reference target found: about:plugins\n      1 writing... /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/en/reference/other/sagetex.rst:: WARNING: unusable reference target found: ../../installation/index.html\n      1 writing... /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/en/tutorial/introduction.rst:: WARNING: unusable reference target found: ../installation/index.html\n      1 writing... /mnt/usb1/scratch/mpatel/tmp/sage-4.5.3.rc0/devel/sage/doc/fr/tutorial/introduction.rst:: WARNING: unusable reference target found: ../../en/installation/index.html\n      2 build succeeded, 1 warning.\n      2 build succeeded, 2 warnings.\n      3 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.\n      4 )pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha\n      5 [5322] [5323] [5324] [5325] [5326] [5327] [5328]pdfTeX warning (ext4): destinat\n      5                                                    [5329]pdfTeX warning (ext4):\n      5 [5330]pdfTeX warning (ext4): destination with the same identifier (name{sage.mo\n      5 [5331]pdfTeX warning (ext4): destination with the same identifier (name{sage.mo\n      5 [5332]pdfTeX warning (ext4): destination with the same identifier (name{sage.mo\n      5 [5333]pdfTeX warning (ext4): destination with the same identifier (name{sage.mo\n      5 [5504pdfTeX warning (ext4): destination with the same identifier (name{mcd}) ha\n      5 dfTeX warning (ext4): destination with the same identifier (name{sage.modular.m\n      5 Package amsmath Warning: Foreign command \\atopwithdelims;\n      5 Package amsmath Warning: Foreign command \\over;\n      5 pdfTeX warning (dest): name{sudoku-escargot} has been referenced but does not e\n      5 pdfTeX warning (dest): name{sudoku-royle} has been referenced but does not exis\n      5 pdfTeX warning (dest): name{sudoku-top95} has been referenced but does not exis\n      5 pdfTeX warning (dest): name{sudoku-wikipedia} has been referenced but does not \n      5                                                   pdfTeX warning (ext4): destin\n      5 (see the transcript file for additional information)pdfTeX warning (dest): name\n      5 []\\T1/ptm/b/n/10 Warning:  \\T1/ptm/m/n/10 You should not cre-ate in-stances of \n      5 TeX warning (ext4): destination with the same identifier (name{sage.modular.mod\n      8                                                    [1])pdfTeX warning (ext4): d\n      8                                                    [1]pdfTeX warning (ext4): de\n     20 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd)pdfTeX warning (ext4): des\n     45                        [1]pdfTeX warning (ext4): destination with the same iden\n     45 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has \n     50 pdfTeX warning (ext4): destination with the same identifier (name{sage.modular.\n    735 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,\n```\n\n\n(The output above is from `make doc-pdf` for 4.5.3.rc0 on sage.math.  [Here's] the full log.)\n\nAs [John Cremona suggests](http://groups.google.com/group/sage-release/browse_thread/thread/a865f2fa728335c0/6a2c74b8b1490f51#6a2c74b8b1490f51), many of these may be raised by Sphinx itself.\n\nSome of the others are false positives, but others appears to be problems with the Sage documentation.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9844\n\n",
     "created_at": "2010-08-31T23:27:06Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "title": "Fix relevant 'make doc-pdf' warnings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9843",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: mvngu
@@ -75,15 +74,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9844
 
 ---
 
-archive/issue_comments_097145.json:
+archive/issue_comments_096986.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"LaTeX, documentation, PDF, Sphinx, warning\".",
     "created_at": "2010-09-01T13:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9843#issuecomment-97145",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9843#issuecomment-96986",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -93,15 +92,15 @@ Changing keywords from "" to "LaTeX, documentation, PDF, Sphinx, warning".
 
 ---
 
-archive/issue_comments_097146.json:
+archive/issue_comments_096987.json:
 ```json
 {
     "body": "Thanks for doing my job, Mitesh. :)\n\n(I wanted to sort the warnings by category, but trac was continually unavailable... In general, `\"0 warn\"` should be substituted by `\" 0 warn\"`.)",
     "created_at": "2010-09-01T13:40:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9843#issuecomment-97146",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9843#issuecomment-96987",
+    "user": "https://github.com/nexttime"
 }
 ```
 

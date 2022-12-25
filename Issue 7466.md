@@ -6,7 +6,7 @@ archive/issues_007466.json:
     "body": "Assignee: mvngu\n\nCC:  sage-combinat\n\nBuilding the HTML version of the reference manual for Sage 4.2.1, I received 21 warnings. These are warnings are:\n\n```\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/geometry/lattice_polytope.rst:: (ERROR/3) Content block expected for the \"note\" directive; none found.\n/scratch/mvngu/build/sage-4.2.1/local/lib/python2.6/site-packages/sage/plot/contour_plot.py:docstring of sage.plot.contour_plot.region_plot:30: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/rings/polynomial/polynomial_element.rst:: (ERROR/3) Content block expected for the \"warning\" directive; none found.\n/scratch/mvngu/build/sage-4.2.1/local/lib/python2.6/site-packages/sage/rings/polynomial/polynomial_ring_constructor.py:docstring of sage.rings.polynomial.polynomial_ring_constructor.PolynomialRing:200: (WARNING/2) Definition list ends without a blank line; unexpected unindent.\n/scratch/mvngu/build/sage-4.2.1/local/lib/python2.6/site-packages/sagenb/notebook/config.py:docstring of sagenb.notebook.config:26: (WARNING/2) Inline interpreted text or phrase reference start-string without end-string.\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sagenb/notebook/twist.rst:6: (WARNING/2) autodoc can't import/find class 'sagenb.notebook.twist.UserToplevel.userchild_download_worksheets.zip', it reported error: \"userchild_download_worksheets\", please check your spelling and sys.path\n/scratch/mvngu/build/sage-4.2.1/local/lib/python2.6/site-packages/sagenb/storage/abstract_storage.py:docstring of sagenb.storage.abstract_storage.Datastore.worksheets:7: (WARNING/2) Literal block expected; none found.\n/scratch/mvngu/build/sage-4.2.1/local/lib/python2.6/site-packages/sagenb/storage/filesystem_storage.py:docstring of sagenb.storage.filesystem_storage.FilesystemDatastore.worksheets:7: (WARNING/2) Literal block expected; none found.\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... /scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/introspect.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/misc.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/cell.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/css.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/docHTMLProcessor.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/interact.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/js.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/notebook.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/template.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/twist.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/notebook/worksheet.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/simple/twist.rst:: WARNING: document isn't included in any toctree\n/scratch/mvngu/build/sage-4.2.1/devel/sage/doc/en/reference/sage/server/support.rst:: WARNING: document isn't included in any toctree\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7466\n\n",
     "created_at": "2009-11-15T01:10:46Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007466.json:
     "title": "21 warnings when building the HTML version of the reference manual, Sage 4.2.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7466",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: mvngu
@@ -58,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7466
 
 ---
 
-archive/issue_comments_062877.json:
+archive/issue_comments_062762.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-05T05:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62877",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62762",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -76,15 +76,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_062878.json:
+archive/issue_comments_062763.json:
 ```json
 {
     "body": "With 4.3.alpha1, I get these warnings and some others.  The attached patch fixes some of these, leaving seven.  Four of those come from sagenb, and so should that spkg should be patched.  The other three have to do with the new category stuff, and I don't know how to fix them:\n\n```\n/Applications/sage/devel/sage/doc/en/reference/sage/categories/hopf_algebras.rst:6: (WARNING/2) autodoc can't import/find class 'sage.categories.hopf_algebras.DualCategory.ParentMethods', it reported error: \"DualCategory\", please check your spelling and sys.path\n/Applications/sage/devel/sage/doc/en/reference/sage/categories/semigroups.rst:6: (WARNING/2) autodoc can't import/find class 'sage.categories.semigroups.SubQuotients.ElementMethods', it reported error: \"SubQuotients\", please check your spelling and sys.path\n/Applications/sage/devel/sage/doc/en/reference/sage/categories/semigroups.rst:6: (WARNING/2) autodoc can't import/find class 'sage.categories.semigroups.SubQuotients.ParentMethods', it reported error: \"SubQuotients\", please check your spelling and sys.path\n```\n\nInstructions: apply the patch.  Also delete (by hand) everything in the directory `SAGE_ROOT/devel/sage/doc/en/reference/sage/server/` *except* for \n\n```\ntrac/trac.rst\nwiki/moin.rst\n```\n\n(These files are not tracked by Mercurial, so we have to delete them by hand, as far as I can tell.)",
     "created_at": "2009-12-05T05:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62878",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62763",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -109,15 +109,15 @@ wiki/moin.rst
 
 ---
 
-archive/issue_comments_062879.json:
+archive/issue_comments_062764.json:
 ```json
 {
     "body": "Attachment [trac_7466.patch](tarball://root/attachments/some-uuid/ticket7466/trac_7466.patch) by @jhpalmieri created at 2009-12-05 05:00:19",
     "created_at": "2009-12-05T05:00:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62879",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62764",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -127,15 +127,15 @@ Attachment [trac_7466.patch](tarball://root/attachments/some-uuid/ticket7466/tra
 
 ---
 
-archive/issue_comments_062880.json:
+archive/issue_comments_062765.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-05T14:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62880",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62765",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -145,15 +145,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062881.json:
+archive/issue_comments_062766.json:
 ```json
 {
     "body": "On Sage 4.3.alpha1, I first deleted the `output/` directory and then proceeded to rebuild the HTML version of the reference manual:\n\n```\n[mvngu@sage sage-4.3.alpha1-7466-reference]$ rm -rf devel/sage-main/doc/output/\n./sage -docbuild reference html\n```\n\nThis resulted in 34 warnings. To apply patches to Sage 4.3.alpha1, first you must resolve the issue of missing image files as reported at ticket #7606. I again removed the `output/` directory, deleted everything under the directory `SAGE_ROOT/devel/sage/doc/en/reference/sage/server/` *except* for\n\n```\ntrac/trac.rst\nwiki/moin.rst\n```\n\nand finally I applied the patch `trac_7466.patch`. Rebuilding the HTML version of the reference manual now only resulted in 8 warnings. So positive review from me. The remaining warnings can be dealt with in another ticket. I don't see those remaining warnings as a reason to hold back this ticket.",
     "created_at": "2009-12-05T14:52:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62881",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62766",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -177,15 +177,15 @@ and finally I applied the patch `trac_7466.patch`. Rebuilding the HTML version o
 
 ---
 
-archive/issue_comments_062882.json:
+archive/issue_comments_062767.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-06T08:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7466",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62882",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7466#issuecomment-62767",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

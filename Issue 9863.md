@@ -6,15 +6,14 @@ archive/issues_009863.json:
     "body": "Assignee: GeorgSWeber\n\nCC:  mvngu @TimDumol\n\nMinh Nguyen reported this about building a trial \"final\" 4.5.3 (essentially the same as 4.5.3.rc0) on rosemary.math, which is an Intel(R) Xeon(R) CPU X7460 `@` 2.66GHz system running RedHat Enterprise Linux (RHEL) Server 5.5\n\n```\nbuilding '_imaging' extension\ngcc -pthread -shared build/temp.linux-x86_64-2.6/_imaging.o build/temp.linux-x86\n_64-2.6/decode.o build/temp.linux-x86_64-2.6/encode.o build/temp.linux-x86_64-2.\n6/map.o build/temp.linux-x86_64-2.6/display.o build/temp.linux-x86_64-2.6/outlin\ne.o build/temp.linux-x86_64-2.6/path.o build/temp.linux-x86_64-2.6/libImaging/Ac\ncess.o build/temp.linux-x86_64-2.6/libImaging/Antialias.o build/temp.linux-x86_6\n4-2.6/libImaging/Bands.o build/temp.linux-x86_64-2.6/libImaging/BitDecode.o buil\nd/temp.linux-x86_64-2.6/libImaging/Blend.o build/temp.linux-x86_64-2.6/libImagin\ng/Chops.o build/temp.linux-x86_64-2.6/libImaging/Convert.o build/temp.linux-x86_\n64-2.6/libImaging/ConvertYCbCr.o build/temp.linux-x86_64-2.6/libImaging/Copy.o b\nuild/temp.linux-x86_64-2.6/libImaging/Crc32.o build/temp.linux-x86_64-2.6/libIma\nging/Crop.o build/temp.linux-x86_64-2.6/libImaging/Dib.o build/temp.linux-x86_64\n-2.6/libImaging/Draw.o build/temp.linux-x86_64-2.6/libImaging/Effects.o build/te\nmp.linux-x86_64-2.6/libImaging/EpsEncode.o build/temp.linux-x86_64-2.6/libImagin\ng/File.o build/temp.linux-x86_64-2.6/libImaging/Fill.o build/temp.linux-x86_64-2\n.6/libImaging/Filter.o build/temp.linux-x86_64-2.6/libImaging/FliDecode.o build/\ntemp.linux-x86_64-2.6/libImaging/Geometry.o build/temp.linux-x86_64-2.6/libImagi\nng/GetBBox.o build/temp.linux-x86_64-2.6/libImaging/GifDecode.o build/temp.linux\n-x86_64-2.6/libImaging/GifEncode.o build/temp.linux-x86_64-2.6/libImaging/HexDec\node.o build/temp.linux-x86_64-2.6/libImaging/Histo.o build/temp.linux-x86_64-2.6\n/libImaging/JpegDecode.o build/temp.linux-x86_64-2.6/libImaging/JpegEncode.o bui\nld/temp.linux-x86_64-2.6/libImaging/LzwDecode.o build/temp.linux-x86_64-2.6/libI\nmaging/Matrix.o build/temp.linux-x86_64-2.6/libImaging/ModeFilter.o build/temp.l\ninux-x86_64-2.6/libImaging/MspDecode.o build/temp.linux-x86_64-2.6/libImaging/Ne\ngative.o build/temp.linux-x86_64-2.6/libImaging/Offset.o build/temp.linux-x86_64\n-2.6/libImaging/Pack.o build/temp.linux-x86_64-2.6/libImaging/PackDecode.o build\n/temp.linux-x86_64-2.6/libImaging/Palette.o build/temp.linux-x86_64-2.6/libImagi\nng/Paste.o build/temp.linux-x86_64-2.6/libImaging/Quant.o build/temp.linux-x86_6\n4-2.6/libImaging/QuantHash.o build/temp.linux-x86_64-2.6/libImaging/QuantHeap.o \nbuild/temp.linux-x86_64-2.6/libImaging/PcdDecode.o build/temp.linux-x86_64-2.6/l\nibImaging/PcxDecode.o build/temp.linux-x86_64-2.6/libImaging/PcxEncode.o build/t\nemp.linux-x86_64-2.6/libImaging/Point.o build/temp.linux-x86_64-2.6/libImaging/R\nankFilter.o build/temp.linux-x86_64-2.6/libImaging/RawDecode.o build/temp.linux-\nx86_64-2.6/libImaging/RawEncode.o build/temp.linux-x86_64-2.6/libImaging/Storage\n.o build/temp.linux-x86_64-2.6/libImaging/SunRleDecode.o build/temp.linux-x86_64\n-2.6/libImaging/TgaRleDecode.o build/temp.linux-x86_64-2.6/libImaging/Unpack.o b\nuild/temp.linux-x86_64-2.6/libImaging/UnpackYCC.o build/temp.linux-x86_64-2.6/li\nbImaging/XbmDecode.o build/temp.linux-x86_64-2.6/libImaging/XbmEncode.o build/te\nmp.linux-x86_64-2.6/libImaging/ZipDecode.o build/temp.linux-x86_64-2.6/libImagin\ng/ZipEncode.o -L/usr/local/lib -L/home/wstein/mvngu/sage-4.5.3/local/lib -L/usr/\nlib -L/home/wstein/mvngu/sage-4.5.3/local/lib -ljpeg -lz -lpython2.6 -o build/li\nb.linux-x86_64-2.6/_imaging.so\ngcc -O3 -g -fPIC -I. -I/home/wstein/mvngu/sage-4.5.3/local/include -I/home/wstei\nn/mvngu/sage-4.5.3/local/include  -DHAVE_CONFIG_H -c omList.c\n/usr/bin/ld: skipping incompatible /usr/lib/libjpeg.so when searching for -ljpeg\n/usr/bin/ld: /usr/local/lib/libpython2.6.a(abstract.o): relocation R_X86_64_32 a\ngainst `a local symbol' can not be used when making a shared object; recompile w\nith -fPIC\n/usr/local/lib/libpython2.6.a: could not read symbols: Bad value\ncollect2: ld returned 1 exit status\nerror: command 'gcc' failed with exit status 1\nError building PIL: 'Error installing PIL'\n\nreal    0m10.654s\nuser    0m8.426s\nsys     0m2.141s\nsage: An error occurred while installing pil-1.1.6.p2\n```\n\nThe full build log is [here](http://wiki.sagemath.org/devel/BuildFarm/sage-4.5.3?action=AttachFile&do=get&target=rosemary.math-build.log.bz2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/9864\n\n",
     "created_at": "2010-09-07T06:52:51Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Error building PIL on RHEL Server 5.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9863",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: GeorgSWeber
@@ -93,15 +92,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9864
 
 ---
 
-archive/issue_comments_097398.json:
+archive/issue_comments_097238.json:
 ```json
 {
     "body": "I would triple-check that all objects are built with position independent code (PIC), using the -fPIC option. There are three problems with PIC.\n\n* Libraries built without PIC run a bit more slowly. \n* You can often get away without compiling PIC\n* Building shared libraries often works if one does not use PIC.\n\nBecause of this, sometimes people don't build PIC code. The GNU manual implies you should, but is not very clear about it. The Sun linker manual is absolutely clear - shared libraries should be built with PIC. \n\nI've also found that some libraries that should be position independent, do not appear to do so according to the link editor. See #9840 \n\nI know of 2 possible issues that can arise. \n\n* If the objects are compiled with -fPIC, but there's assembly code that is not  position independent then the resulting library may not work reliably. \n* If shared libraries are created with the wrong options, which is the case with #9833, though only Solaris will be affected, as the options are only wrong on Solaris. \n\nbut there are others. \n\nI'm aware of three libraries which show problems related to this on Solaris or OpenSolaris in 64-bit mode, but two of them might be an issue on all platforms. \n\n* PolyBori \n* Cliquer (will only affect Solaris or OpenSolaris)\n* ECL\n\nIf the system has the `elfdump` command, you might try this:\n\n\n```\n$ elfdump -d ./build/libecl.so |  grep TEXTREL\n```\n\n\nAt least on Solaris, that should produce no output. If it does, it indicates a problem with the library. \n\nDave",
     "created_at": "2010-09-07T08:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97398",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97238",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -144,15 +143,15 @@ Dave
 
 ---
 
-archive/issue_comments_097399.json:
+archive/issue_comments_097239.json:
 ```json
 {
     "body": "`libecl.so` was just an example - do this on **all** libraries.",
     "created_at": "2010-09-07T08:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97399",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97239",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -162,15 +161,15 @@ archive/issue_comments_097399.json:
 
 ---
 
-archive/issue_comments_097400.json:
+archive/issue_comments_097240.json:
 ```json
 {
     "body": "I just noticed something else - this is using the wrong python:\n\n\n```\n/usr/local/lib/libpython2.6.a: could not read symbols: Bad value\n```\n\n\nI've seen this problem before - see #9209. In fact, perhaps this should be marked as a duplicate of #9209. \n\nDave",
     "created_at": "2010-09-07T08:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97400",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97240",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -190,15 +189,15 @@ Dave
 
 ---
 
-archive/issue_comments_097401.json:
+archive/issue_comments_097241.json:
 ```json
 {
     "body": "Here is another data point: I just built 4.5.3 from scratch on a machine\nrunning RHEL Server 5.5, and had no problems whatsoever; also longtests\npassed.  Here are the specs:\n\n\n```\n [aghitza@soleil sage-4.5.3]$ uname -a\n Linux soleil.ms.unimelb.edu.au 2.6.18-194.11.3.el5 #1 SMP Mon Aug 23 15:51:38 EDT 2010 x86_64 x86_64 x86_64 GNU/Linux\n\n [aghitza@soleil sage-4.5.3]$ cat /etc/issue\n Red Hat Enterprise Linux Server release 5.5 (Tikanga)\n Kernel \\r on an \\m\n\n [aghitza@soleil sage-4.5.3]$ gcc -v\n Using built-in specs.\n Target: x86_64-redhat-linux\n Configured with: ../configure --prefix=/usr --mandir=/usr/share/man \n --infodir=/usr/share/info --enable-shared --enable-threads=posix \n --enable-checking=release --with-system-zlib --enable-__cxa_atexit \n --disable-libunwind-exceptions --enable-libgcj-multifile \n --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk \n --disable-dssi --enable-plugin \n --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre \n --with-cpu=generic --host=x86_64-redhat-linux\n Thread model: posix\n gcc version 4.1.2 20080704 (Red Hat 4.1.2-48)\n\n [aghitza@soleil ~]$ which python\n /usr/bin/python\n\n [aghitza@soleil ~]$ python\n Python 2.4.3 (#1, Jun 11 2009, 14:09:37) \n [GCC 4.1.2 20080704 (Red Hat 4.1.2-44)] on linux2\n Type \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n >>> \n```\n\n \nNote in particular that the machine does have Python installed independently of Sage, but that did not seem to cause problems.",
     "created_at": "2010-09-07T14:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97401",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97241",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -246,15 +245,15 @@ Note in particular that the machine does have Python installed independently of 
 
 ---
 
-archive/issue_comments_097402.json:
+archive/issue_comments_097242.json:
 ```json
 {
     "body": "Replying to [comment:5 AlexGhitza]:\n> Here is another data point: I just built 4.5.3 from scratch on a machine\n> running RHEL Server 5.5, and had no problems whatsoever; also longtests\n> passed.  Here are the specs:\n> \n> {{{\n>  [aghitza`@`soleil sage-4.5.3]$ uname -a\n>  Linux soleil.ms.unimelb.edu.au 2.6.18-194.11.3.el5 #1 SMP Mon Aug 23 15:51:38 EDT 2010 x86_64 x86_64 x86_64 GNU/Linux\n> \n>  [aghitza`@`soleil sage-4.5.3]$ cat /etc/issue\n>  Red Hat Enterprise Linux Server release 5.5 (Tikanga)\n>  Kernel \\r on an \\m\n> \n>  [aghitza`@`soleil sage-4.5.3]$ gcc -v\n>  Using built-in specs.\n>  Target: x86_64-redhat-linux\n>  Configured with: ../configure --prefix=/usr --mandir=/usr/share/man \n>  --infodir=/usr/share/info --enable-shared --enable-threads=posix \n>  --enable-checking=release --with-system-zlib --enable-__cxa_atexit \n>  --disable-libunwind-exceptions --enable-libgcj-multifile \n>  --enable-languages=c,c++,objc,obj-c++,java,fortran,ada --enable-java-awt=gtk \n>  --disable-dssi --enable-plugin \n>  --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre \n>  --with-cpu=generic --host=x86_64-redhat-linux\n>  Thread model: posix\n>  gcc version 4.1.2 20080704 (Red Hat 4.1.2-48)\n> \n>  [aghitza`@`soleil ~]$ which python\n>  /usr/bin/python\n> \n>  [aghitza`@`soleil ~]$ python\n>  Python 2.4.3 (#1, Jun 11 2009, 14:09:37) \n>  [GCC 4.1.2 20080704 (Red Hat 4.1.2-44)] on linux2\n>  Type \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>  >>> \n> }}}\n>  \n> Note in particular that the machine does have Python installed independently of Sage, but that did not seem to cause problems.\n\n\nNote however that \n* The above example\n* My Solaris failure on #9209\n* The Redhat Linux failure I link to on #9209 -  http://groups.google.com/group/sage-devel/browse_thread/thread/37a67ce63e68d55b?hl=en-GB\n\n**all** had the directory `/usr/local/lib/libpython2.6.a` involved. \n\nI suspect there might be some packages which look under /usr/local/lib, before whatever is specific in Sage. \n\nDave",
     "created_at": "2010-09-07T14:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97402",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97242",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -313,15 +312,15 @@ Dave
 
 ---
 
-archive/issue_comments_097403.json:
+archive/issue_comments_097243.json:
 ```json
 {
     "body": "And I can confirm that `/usr/local/lib` doesn't have any Python libraries in it on the machine I tested.",
     "created_at": "2010-09-07T14:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97403",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97243",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -331,15 +330,15 @@ And I can confirm that `/usr/local/lib` doesn't have any Python libraries in it 
 
 ---
 
-archive/issue_comments_097404.json:
+archive/issue_comments_097244.json:
 ```json
 {
     "body": "Another, somewhat related issue is #9551. In that case, Sage tried to write to `/usr/lib/python2.4/site-packages/` on `t2.math.washington.edu` despite I'd tried to build Sage under my home directory. \n\nI think any assumption that having the first python in the path being `$SAGE_LOCAL/bin/python` will mean Sage will **never** try to do anything with python outside `$SAGE_ROOT` is rather flawed. That assumption would seem to be valid 99% of the time, but there are the odd exceptions. I wish I could pin down what causes these rare exceptions. \n\nAnother assumption that is sometimes flawed, is that having a library in `$SAGE_LOCAL/lib` will mean the same library anywhere else will always be ignored and not present any conflicts with the library in Sage. The fact the `iconv` library can't be installed reliably on Fedora and OpenSuse (see #8567) is one example of that. \n\nOne possible hack to solve this PIL issue might be to change any occurrence of `/usr/local` in any PIL file to `/some/stupid/junk/path`. If that does not work, we could consider changing any occurances of `/usr/local` in the Python package to `/some/stupid/junk/path`. \n\nDave",
     "created_at": "2010-09-07T17:58:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97404",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97244",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -357,15 +356,15 @@ Dave
 
 ---
 
-archive/issue_comments_097405.json:
+archive/issue_comments_097245.json:
 ```json
 {
     "body": "Should this be a blocker for releasing 4.5.3? It's a pretty serious issue when copies of python in /usr/local are sometimes screwing up building Sage on two supported platforms (Solaris 10 and Redhat Linux).",
     "created_at": "2010-09-07T18:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97405",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97245",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -375,15 +374,15 @@ Should this be a blocker for releasing 4.5.3? It's a pretty serious issue when c
 
 ---
 
-archive/issue_comments_097406.json:
+archive/issue_comments_097246.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2010-09-07T18:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97406",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97246",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -393,15 +392,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_097407.json:
+archive/issue_comments_097247.json:
 ```json
 {
     "body": "I've changed the milestone to 4.6, as I'll release 4.5.3 later today.",
     "created_at": "2010-09-07T21:58:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97407",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97247",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -411,15 +410,15 @@ I've changed the milestone to 4.6, as I'll release 4.5.3 later today.
 
 ---
 
-archive/issue_comments_097408.json:
+archive/issue_comments_097248.json:
 ```json
 {
     "body": "\n```\n... -L/usr/local/lib -L/home/wstein/mvngu/sage-4.5.3/local/lib -L/usr/lib ...\n```\n\nis obviously wrong.",
     "created_at": "2010-09-07T23:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97408",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97248",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -434,15 +433,15 @@ is obviously wrong.
 
 ---
 
-archive/issue_comments_097409.json:
+archive/issue_comments_097249.json:
 ```json
 {
     "body": "Replying to [comment:12 leif]:\n> {{{\n> ... -L/usr/local/lib -L/home/wstein/mvngu/sage-4.5.3/local/lib -L/usr/lib ...\n> }}}\n> is obviously wrong.\n\nYes. \n\nThere's some things in `patches/setup.py` which look odd to me, though since I don't know what SAGE_BINARY_BUILD is, I can't say for sure. \n\n\n```\n       #\n        # add standard directories\n\n        if not SAGE_BINARY_BUILD:\n            add_directory(library_dirs, \"/usr/local/lib\")\n            add_directory(include_dirs, \"/usr/local/include\")\n\n            add_directory(library_dirs, \"/usr/lib\")\n            add_directory(include_dirs, \"/usr/include\")\n\n        #\n```\n\n\nI think they should be removed from the pil package.",
     "created_at": "2010-09-08T00:51:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97409",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97249",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -478,15 +477,15 @@ I think they should be removed from the pil package.
 
 ---
 
-archive/issue_comments_097410.json:
+archive/issue_comments_097250.json:
 ```json
 {
     "body": "From the [Installation Guide](http://www.sagemath.org/doc/installation/source.html#environment-variables):\n\n SAGE_BINARY_BUILD - used by the pil package. If set to \u201cyes\u201d, then force Sage to use the versions of libjpeg, libtiff and libpng from $SAGE_ROOT/local/lib. Otherwise, allow the use of the system\u2019s versions of these libraries.",
     "created_at": "2010-09-08T01:10:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97410",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97250",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -498,15 +497,15 @@ From the [Installation Guide](http://www.sagemath.org/doc/installation/source.ht
 
 ---
 
-archive/issue_comments_097411.json:
+archive/issue_comments_097251.json:
 ```json
 {
     "body": "I'm pretty sure we can simply delete the *first occurrence* of\n\n```python\n            add_directory(library_dirs, \"/usr/local/lib\")\n            # FIXME: check /opt/stuff directories here?\n```\n\nWho knows if at all the indentation is correct? The comment **below** apparently refers to the (closed) `elif`-Darwin branch. `/usr/local/lib` is added *again* later (in the code, in the snippet Dave gave above), **after** `SAGE_LOCAL/lib` and `/usr/lib`, but since it's already in the path, the Sage directory ends up in the middle.",
     "created_at": "2010-09-08T01:50:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97411",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97251",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -523,15 +522,15 @@ Who knows if at all the indentation is correct? The comment **below** apparently
 
 ---
 
-archive/issue_comments_097412.json:
+archive/issue_comments_097252.json:
 ```json
 {
     "body": "Btw, `s/2008/2009/` in the changelog for p1 and p2. ;-)",
     "created_at": "2010-09-08T02:33:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97412",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97252",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -541,15 +540,15 @@ Btw, `s/2008/2009/` in the changelog for p1 and p2. ;-)
 
 ---
 
-archive/issue_comments_097413.json:
+archive/issue_comments_097253.json:
 ```json
 {
     "body": "Replying to [comment:2 drkirkby]:\n>  * Libraries built without PIC run a bit more slowly.\n\nI guess you meant *\"**with** PIC\"* (`-fpic` or `-fPIC`). (In general that depends on the architecture, and how the code is used.)\n\n> I'm aware of three libraries which show problems related to this on Solaris or OpenSolaris in 64-bit mode, but two of them might be an issue on all platforms. \n\n>  * PolyBori\n\nDid you report *that*, too? (Ticket?)\n \n> If the system has the `elfdump` command, you might try this:\n> \n\n```\n$ elfdump -d ./build/libecl.so |  grep TEXTREL\n```\n\n\nThere's also `nm`, binutils' `objdump`, and `readelf`.",
     "created_at": "2010-09-08T18:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97413",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97253",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -578,15 +577,15 @@ There's also `nm`, binutils' `objdump`, and `readelf`.
 
 ---
 
-archive/issue_comments_097414.json:
+archive/issue_comments_097254.json:
 ```json
 {
     "body": "Replying to [comment:17 leif]:\n> Replying to [comment:2 drkirkby]:\n> >  * Libraries built without PIC run a bit more slowly.\n> \n> I guess you meant *\"**with** PIC\"* (`-fpic` or `-fPIC`). (In general that depends on the architecture, and how the code is used.)\n\nYes, I did. \n\n> > I'm aware of three libraries which show problems related to this on Solaris or OpenSolaris in 64-bit mode, but two of them might be an issue on all platforms. \n> \n> >  * PolyBori\n> \n> Did you report *that*, too? (Ticket?)\n\nYes, I created a ticket yesterday. Alexander Dreyer is already working on it - see #9872 \n  \nDave",
     "created_at": "2010-09-08T19:22:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97414",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97254",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -612,15 +611,15 @@ Dave
 
 ---
 
-archive/issue_comments_097415.json:
+archive/issue_comments_097255.json:
 ```json
 {
     "body": "Georg Weber [has suggested on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4dbd239d7e9d7b0c/d409f9a25b8891fd#d409f9a25b8891fd) that we set `SAGE_BINARY_BUILD='yes'` by default.  Thoughts?",
     "created_at": "2010-09-11T22:29:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97415",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97255",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -630,15 +629,15 @@ Georg Weber [has suggested on sage-release](http://groups.google.com/group/sage-
 
 ---
 
-archive/issue_comments_097416.json:
+archive/issue_comments_097256.json:
 ```json
 {
     "body": "Replying to [comment:19 mpatel]:\n> Georg Weber [has suggested on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4dbd239d7e9d7b0c/d409f9a25b8891fd#d409f9a25b8891fd) that we set `SAGE_BINARY_BUILD='yes'` by default.  Thoughts?\n\n**Defiantly not.** \n\nThe problem here is PIL looking for things in /usr/local. This is happening during the build process. I don't see how this is going to help this problem. The reason for looking for things in `/usr/local` needs to be resolved. Adding options like \n\n\n```\n$ export SAGE_INCLUDE_pil_greatest-ever-library=/usr/local/greatest-ever-library\n```\n\n\nwould be OK by me. Forcing `SAGE_BINARY_BUILD=yes` is not the answer IMHO. \n\nDave",
     "created_at": "2010-09-11T22:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97416",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97256",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -663,15 +662,15 @@ Dave
 
 ---
 
-archive/issue_comments_097417.json:
+archive/issue_comments_097257.json:
 ```json
 {
     "body": "Replying to [comment:19 mpatel]:\n> Georg Weber [has suggested on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4dbd239d7e9d7b0c/d409f9a25b8891fd#d409f9a25b8891fd) that we set `SAGE_BINARY_BUILD='yes'` by default.  Thoughts?\n\nAs far as I understand this, one has to (manually) copy the build system's respective shared libraries into `$SAGE_LOCAL/lib` (*before* building PIL) anyhow to make this effective. (Probably some headers into `$SAGE_LOCAL/include`, too.) So enabling `SAGE_BINARY_BUILD` by default (where?) doesn't make much sense to me.",
     "created_at": "2010-09-11T23:05:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97417",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97257",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -684,15 +683,15 @@ As far as I understand this, one has to (manually) copy the build system's respe
 
 ---
 
-archive/issue_comments_097418.json:
+archive/issue_comments_097258.json:
 ```json
 {
     "body": "Replying to [comment:21 leif]:\n> Replying to [comment:19 mpatel]:\n> > Georg Weber [has suggested on sage-release](http://groups.google.com/group/sage-release/browse_thread/thread/4dbd239d7e9d7b0c/d409f9a25b8891fd#d409f9a25b8891fd) that we set `SAGE_BINARY_BUILD='yes'` by default.  Thoughts?\n> \n> As far as I understand this, one has to (manually) copy the build system's respective shared libraries into `$SAGE_LOCAL/lib` (*before* building PIL) anyhow to make this effective. (Probably some headers into `$SAGE_LOCAL/include`, too.) So enabling `SAGE_BINARY_BUILD` by default (where?) doesn't make much sense to me.\n\nMaybe, as with [SAGE_PIL_NOTK](http://www.sagemath.org/doc/installation/source.html), sage should set `SAGE_BINARY_BUILD='yes'` if building PIL fails.",
     "created_at": "2010-09-24T15:23:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97418",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97258",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -708,15 +707,15 @@ Maybe, as with [SAGE_PIL_NOTK](http://www.sagemath.org/doc/installation/source.h
 
 ---
 
-archive/issue_comments_097419.json:
+archive/issue_comments_097259.json:
 ```json
 {
     "body": "Are there any comments about the proposal by Niles?",
     "created_at": "2010-10-09T05:38:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97419",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97259",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -726,15 +725,15 @@ Are there any comments about the proposal by Niles?
 
 ---
 
-archive/issue_comments_097420.json:
+archive/issue_comments_097260.json:
 ```json
 {
     "body": "Niles' suggestion seems optimal, however I do not have enough time at the moment (this week and the next) to think hard about it.",
     "created_at": "2010-10-09T13:49:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97420",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97260",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -744,15 +743,15 @@ Niles' suggestion seems optimal, however I do not have enough time at the moment
 
 ---
 
-archive/issue_comments_097421.json:
+archive/issue_comments_097261.json:
 ```json
 {
     "body": "For what it's worth, in Tachyon's `spkg-install`, there's an example of retrying an spkg installation after an initial failure:\n\n```sh\nif [ $UNAME = \"Linux\" ]; then\n    GCCVERSION=`gcc -dumpversion`\n    case $GCCVERSION in\n      4.2.4* | 4.3*)\n        export GCCFIX=\"-fno-crossjumping -fno-reorder-blocks\";;\n      *);;\n    esac\n    make linux-thr\n    if [ $? -ne 0 ]; then\n        echo \"Maybe your system is 64-bit; trying again.\"\n        if [ `uname -m` = \"ia64\" ]; then\n          echo \"ia64\"\n          make linux-ia64-thr\n        else\n          echo \"64-bit arch\"\n          make linux-64-thr\n        fi\n    fi\n    finished\nfi\n```\n\n(If it's possible to avoid doing this with Tachyon, we can open a new ticket for it.)",
     "created_at": "2010-10-18T02:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97421",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97261",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -787,15 +786,15 @@ fi
 
 ---
 
-archive/issue_comments_097422.json:
+archive/issue_comments_097262.json:
 ```json
 {
     "body": "I'm changing the milestone to 4.6.1.  Of course, the next release manager is welcome to change the priority.",
     "created_at": "2010-10-19T02:20:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97422",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97262",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -805,15 +804,15 @@ I'm changing the milestone to 4.6.1.  Of course, the next release manager is wel
 
 ---
 
-archive/issue_comments_097423.json:
+archive/issue_comments_097263.json:
 ```json
 {
     "body": "I've added a [RHEL 5.5 builder on Jon Hanke's machine rosemary](http://build.sagemath.org/sage/builders/RHEL%205.5-64%20(rosemary)).  The zeroth build [failed on PIL](http://build.sagemath.org/sage/builders/RHEL%205.5-64%20(rosemary)/builds/0/steps/shell_2/logs/pil).",
     "created_at": "2010-11-12T08:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97423",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97263",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -823,15 +822,15 @@ I've added a [RHEL 5.5 builder on Jon Hanke's machine rosemary](http://build.sag
 
 ---
 
-archive/issue_comments_097424.json:
+archive/issue_comments_097264.json:
 ```json
 {
     "body": "Replying to [comment:15 leif]:\n> I'm pretty sure we can simply delete the *first occurrence* of\n\n\n```python\n            add_directory(library_dirs, \"/usr/local/lib\")\n            # FIXME: check /opt/stuff directories here?\n```\n\n\nIf I comment out this `add_directory` line, PIL builds successfully on rosemary.  The doctests that didn't pass previously -- in `plot/plot3d/base.pyx` -- now pass.\n\nDoes anyone see a reason to keep this line for any platform?  Has it not caused problems on other systems, because the systems haven't had a `/usr/local/lib/libpython2.6.a`?\n\n\n> Who knows if at all the indentation is correct? The comment **below** apparently refers to the (closed) `elif`-Darwin branch. `/usr/local/lib` is added *again* later (in the code, in the snippet Dave gave above), **after** `SAGE_LOCAL/lib` and `/usr/lib`, but since it's already in the path, the Sage directory ends up in the middle.\n\nIndeed, with the original line, I get\n\n```python\n['/usr/local/lib', '/home/buildbot/build/sage/rosemary-1/rosemary_full/build/sage-4.6.1.alpha2/local/lib', '/usr/lib']  # library_dirs\n['libImaging', '/home/buildbot/build/sage/rosemary-1/rosemary_full/build/sage-4.6.1.alpha2/local/include', '/usr/local/include', '/usr/include']  # include_dirs\n```\n\nbut without it, I get\n\n```python\n\n['/home/buildbot/build/sage/rosemary-1/rosemary_full/build/sage-4.6.1.alpha2/local/lib', '/usr/local/lib', '/usr/lib']  # library_dirs\n['libImaging', '/home/buildbot/build/sage/rosemary-1/rosemary_full/build/sage-4.6.1.alpha2/local/include', '/usr/local/include', '/usr/include']  # include_dirs\n```\n",
     "created_at": "2010-11-25T12:15:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97424",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97264",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -872,15 +871,15 @@ but without it, I get
 
 ---
 
-archive/issue_comments_097425.json:
+archive/issue_comments_097265.json:
 ```json
 {
     "body": "Replying to [comment:28 mpatel]:\n> Replying to [comment:15 leif]:\n> > I'm pretty sure we can simply delete the *first occurrence* of\n> \n\n```python\n            add_directory(library_dirs, \"/usr/local/lib\")\n            # FIXME: check /opt/stuff directories here?\n```\n\n> \n> If I comment out this `add_directory` line, PIL builds successfully on rosemary.  The doctests that didn't pass previously -- in `plot/plot3d/base.pyx` -- now pass.\n> \n> Does anyone see a reason to keep this line for any platform?  Has it not caused problems on other systems, because the systems haven't had a `/usr/local/lib/libpython2.6.a`?\n\nYes please, can you create a patch such that we can close this ticket after month of deep thinking?\n\nIf new failures occur, we can open another ticket (I'm hopefully not cc'ed on ;-) ).\n\n----\n\nI'm wondering if I should open a ticket for changing `SAGE_PIL_NOTK` to `SAGE_PIL_NO_TK`...",
     "created_at": "2010-11-25T13:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97425",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97265",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -911,15 +910,15 @@ I'm wondering if I should open a ticket for changing `SAGE_PIL_NOTK` to `SAGE_PI
 
 ---
 
-archive/issue_comments_097426.json:
+archive/issue_comments_097266.json:
 ```json
 {
     "body": "Fix `library_dirs` order.  Use patch.  SPKG patch.",
     "created_at": "2010-11-26T10:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97426",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97266",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -929,15 +928,15 @@ Fix `library_dirs` order.  Use patch.  SPKG patch.
 
 ---
 
-archive/issue_comments_097427.json:
+archive/issue_comments_097267.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-11-26T11:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97427",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97267",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -947,15 +946,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_097428.json:
+archive/issue_comments_097268.json:
 ```json
 {
     "body": "Attachment [trac_9864-PIL_library_path.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-PIL_library_path.patch) by @qed777 created at 2010-11-26 11:14:12\n\nI've added a spkg link to the description and attached an SPKG patch.  The main changes:\n\n* Comment out the `/usr/local/lib` line [comment:15 pointed out by Leif].\n* Use `patch` to apply the patch.\n\nThe package installs successfully and the long doctests pass for me on bsd (OSX 10.6-32), eno (Fedora 13-64), hawk (OpenSolaris 06.2009-32), redhawk (Ubuntu 10-64), rosemary (RHEL 5.5-64), and sage.math (Ubuntu 8-64).",
     "created_at": "2010-11-26T11:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97428",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97268",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -972,15 +971,15 @@ The package installs successfully and the long doctests pass for me on bsd (OSX 
 
 ---
 
-archive/issue_comments_097429.json:
+archive/issue_comments_097269.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-11-28T15:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97429",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97269",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -990,15 +989,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_097430.json:
+archive/issue_comments_097270.json:
 ```json
 {
     "body": "Thanks for the work on this ticket, I will do some more testing\n\nAbout using `patch`: for sake of consistency, please follow the following instructions from [http://trac.sagemath.org/sage_trac/ticket/9419#comment:5](http://trac.sagemath.org/sage_trac/ticket/9419#comment:5):\n\n```\n1) create a directory pil-1.1.6.p2\n2) cd pil-1.1.6.p2\n3) put upstream source inpil-1.1.6.p2/src\nFor every ISSUE which needs to be patched, do the following:\n    4) cp -pr src src.patched\n    5) edit src.patched to fix ISSUE.\n    6) diff -ur src src.patched >patches/ISSUE.patch\n    7) rm -r src.patched\n```\n\n\nTo apply the patches in `spkg-install`:\n\n```\n1) cd src\n2) patch -p1 <../patches/ISSUE.patch\n```\n",
     "created_at": "2010-11-28T15:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97430",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97270",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1030,15 +1029,15 @@ To apply the patches in `spkg-install`:
 
 ---
 
-archive/issue_comments_097431.json:
+archive/issue_comments_097271.json:
 ```json
 {
     "body": "Replying to [comment:31 jdemeyer]:\n> About using `patch`: for sake of consistency, please follow the following instructions from [http://trac.sagemath.org/sage_trac/ticket/9419#comment:5](http://trac.sagemath.org/sage_trac/ticket/9419#comment:5)...\n\nWell, #9419 is not even in \"needs review\" state. I'm not sure if your method is the only desirable one; it at least lacks how we should document patches.\n\nIMHO Mitesh's way is as appropiate here.",
     "created_at": "2010-11-29T16:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97431",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97271",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1053,15 +1052,15 @@ IMHO Mitesh's way is as appropiate here.
 
 ---
 
-archive/issue_comments_097432.json:
+archive/issue_comments_097272.json:
 ```json
 {
     "body": "New package works fine on 64-bit Gentoo Linux, 32-bit Gentoo Linux, 32-bit OS X PPC.  So from a functionality point of view, this package gets a positive review from me.  I don't think I'm able to review the actual code though.",
     "created_at": "2010-11-29T20:23:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97432",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97272",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1071,15 +1070,15 @@ New package works fine on 64-bit Gentoo Linux, 32-bit Gentoo Linux, 32-bit OS X 
 
 ---
 
-archive/issue_comments_097433.json:
+archive/issue_comments_097273.json:
 ```json
 {
     "body": "I'm having issues with PIL 1.1.6p2 (the release version) not finding its JPEG libraries. These are located in /usr/lib64 on CentOS 5.5 / OpenSuse, however the default library path only considers /usr/lib. Adding /usr/lib64 as a library path fixes the problem in my stand-alone PIL build. I'm not quite sure how to patch the setup.py in SAGE to add this path by default.\n\nThe following part of the log shows the problem (or the lack of a jpeg_decoder function in PIL.Image.core)\n\n--------------------------------------------------------------------\nPIL 1.1.6 BUILD SUMMARY\n--------------------------------------------------------------------\nversion       1.1.6\nplatform      linux2 2.6.4 (r264:75706, Oct  4 2010, 14:47:23)\n              [GCC 4.3.4]\n--------------------------------------------------------------------\n*** TKINTER support not available\n*** JPEG support not available\n--- ZLIB (PNG/ZIP) support ok\n--- FREETYPE2 support ok\n--------------------------------------------------------------------",
     "created_at": "2010-11-30T15:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97433",
-    "user": "Koen"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97273",
+    "user": "https://trac.sagemath.org/admin/accounts/users/Koen"
 }
 ```
 
@@ -1104,15 +1103,15 @@ platform      linux2 2.6.4 (r264:75706, Oct  4 2010, 14:47:23)
 
 ---
 
-archive/issue_comments_097434.json:
+archive/issue_comments_097274.json:
 ```json
 {
     "body": "Replying to [comment:34 Koen]:\n> I'm having issues with PIL 1.1.6p2 (the release version) not finding its JPEG libraries. These are located in /usr/lib64 on CentOS 5.5 / OpenSuse, however the default library path only considers /usr/lib. Adding /usr/lib64 as a library path fixes the problem in my stand-alone PIL build. I'm not quite sure how to patch the setup.py in SAGE to add this path by default.\n\nWell, we should just check if `/usr/lib64` (and `/usr/local/lib64`) exist, and if so, add these **instead of** `/usr/lib` etc., unless `realpath(\"/usr/lib64\") == realpath(\"/usr/lib\")`. (We may also check we're really on a 64-bit system, too, though the presence of `/usr/lib64` should normally indicate that.)\n\nNote that on other (64-bit) Linuces (e.g. Debian), `/usr/lib64` is a symbolic link to `/usr/lib`, while on Fedora etc. `/usr/lib` is a synonym of `/usr/lib32` (like on 32-bit systems).",
     "created_at": "2010-11-30T16:51:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97434",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97274",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1127,15 +1126,15 @@ Note that on other (64-bit) Linuces (e.g. Debian), `/usr/lib64` is a symbolic li
 
 ---
 
-archive/issue_comments_097435.json:
+archive/issue_comments_097275.json:
 ```json
 {
     "body": "Just noticed our `src/` isn't vanilla upstream:\n\n```sh\n~/Sage/spkgs$ diff -ur upstream/Imaging-1.1.6/ pil-1.1.6.p3/src/\nOnly in pil-1.1.6.p3/src/: ff\ndiff -ur upstream/Imaging-1.1.6/setup.py pil-1.1.6.p3/src/setup.py\n--- upstream/Imaging-1.1.6/setup.py\t2006-12-03 12:37:29.000000000 +0100\n+++ pil-1.1.6.p3/src/setup.py\t2010-11-26 10:39:04.000000000 +0100\n@@ -90,6 +90,9 @@\n except ImportError:\n     _tkinter = None\n \n+# Force None, so don't build tk -- this helps on some platforms.\n+_tkinter = None\n+\n def add_directory(path, dir, where=None):\n     if dir and os.path.isdir(dir) and dir not in path:\n         if where is None:\n```\n\n\n(p3's `ff` is some left-over diff file.)",
     "created_at": "2010-11-30T17:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97435",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97275",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1166,15 +1165,15 @@ diff -ur upstream/Imaging-1.1.6/setup.py pil-1.1.6.p3/src/setup.py
 
 ---
 
-archive/issue_comments_097436.json:
+archive/issue_comments_097276.json:
 ```json
 {
     "body": "Replying to [comment:35 leif]:\n> Replying to [comment:34 Koen]:\n> > I'm having issues with PIL 1.1.6p2 (the release version) not finding its JPEG libraries. These are located in /usr/lib64 on CentOS 5.5 / OpenSuse, however the default library path only considers /usr/lib. Adding /usr/lib64 as a library path fixes the problem in my stand-alone PIL build. I'm not quite sure how to patch the setup.py in SAGE to add this path by default.\n> \n> Well, we should just check if `/usr/lib64` (and `/usr/local/lib64`) exist, and if so, add these **instead of** `/usr/lib` etc., unless `realpath(\"/usr/lib64\") == realpath(\"/usr/lib\")`. (We may also check we're really on a 64-bit system, too, though the presence of `/usr/lib64` should normally indicate that.\n\n> I'm having issues with PIL 1.1.6p2 (the release version) not finding its JPEG libraries. These are located in /usr/lib64 on CentOS 5.5 / OpenSuse, however the default library path only considers /usr/lib. Adding /usr/lib64 as a library path fixes the problem in my stand-alone PIL build. I'm not quite sure how to patch the setup.py in SAGE to add this path by default.\n\nIs it essential to have the JPEG libraries? If not, then they should be excluded when `SAGE_FAT_BINARY=yes`, otherwise we risk breakages if people install a Sage binary on a system without these libraries. \n\nI'm puzzled why it should be necessary to so add `/usr/lib64`. Has someone mis-configured the system? \n\nOn every system that I know, that is able to build both 32-bit and 64-bit libraries, the runtime lnker will always search for the 64-bit ones when building 64-bit code. On Solaris the 64-bit libraries are in `/usr/lib/sparcv9` or `/usr/lib/amd64`, depending on the CPU type. But the run time linker knows that, and will search for them:One never needs to put `/usr/lib/sparcv9` or `/usr/lib/amd64` in any sort of PATH (LD_LIBRARY_PATH etc). \n\n\n```\n-bash-3.00$ crle    \n\nDefault configuration file (/var/ld/ld.config) not found\n  Default Library Path (ELF):   /lib:/usr/lib  (system default)\n  Trusted Directories (ELF):    /lib/secure:/usr/lib/secure  (system default)\n-bash-3.00$ crle -64\n\nDefault configuration file (/var/ld/64/ld.config) not found\n  Default Library Path (ELF):   /lib/64:/usr/lib/64  (system default)\n  Trusted Directories (ELF):    /lib/secure/64:/usr/lib/secure/64  (system default)\n-bash-3.00$ \n```\n\n\nIt's a complely different matter in directories like `/usr/local/lib/sparcv9` since the run time linker does not to search there. \n\nI know this is true on HP-UX too. \n\nOn AIX, the libraries are in an archives containing both 32-bit and 64-bit libraries in the same archive. But again, the run-time linker knows how to find them. \n\nClearly if the system is mis-configured, we should not work around the problem. \n\nI think we should ascertain if someone has mis-configured the system before proceeding to patch Sage\n\nDave",
     "created_at": "2010-11-30T17:37:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97436",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97276",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1224,15 +1223,15 @@ Dave
 
 ---
 
-archive/issue_comments_097437.json:
+archive/issue_comments_097277.json:
 ```json
 {
     "body": "Replying to [comment:37 drkirkby]:\n> I'm puzzled why it should be necessary to so add `/usr/lib64`. Has someone mis-configured the system? ;\n> \n> On every system that I know, that is able to build both 32-bit and 64-bit libraries, the runtime lnker will always search for the 64-bit ones when building 64-bit code. [...]\n\nPerhaps a look at `setup.py` answers some of your questions... ;-)\n\n(And no, the Linux system having 64-bit libraries [only] in `/usr/lib64` is not \"misconfigured\", see above. We had to add a similar patch to PARI's graphics detection for the same reason btw.)",
     "created_at": "2010-11-30T18:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97437",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97277",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1249,15 +1248,15 @@ Perhaps a look at `setup.py` answers some of your questions... ;-)
 
 ---
 
-archive/issue_comments_097438.json:
+archive/issue_comments_097278.json:
 ```json
 {
     "body": "Replying to [comment:38 leif]:\n\n> (And no, the Linux system having 64-bit libraries [only] in `/usr/lib64` is not \"misconfigured\", \n\nI was not saying having the 64-bit libraries only in /usr/lib64 was mis-configured - I would expect that. What I question is why the 64-bit libraries are not found. I would have thought the operating system would have been configured so linking them would find them, without one needing to specify a path. Clearly if the libraries are in a non-standard place, then I would expect it, but not when they are in the standard",
     "created_at": "2010-11-30T21:00:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97438",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97278",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1271,15 +1270,15 @@ I was not saying having the 64-bit libraries only in /usr/lib64 was mis-configur
 
 ---
 
-archive/issue_comments_097439.json:
+archive/issue_comments_097279.json:
 ```json
 {
     "body": "It's because the PIL setup.py is trying to be smart: it creates its own list of search paths for includes & libs, and when it cannot find jpeglib.h in the includes or libjpeg.so in the libraries search paths, it will disable its own JPEG support. However, it does not check a common place for 64-bit Linuxes (which are not Debian-based), so right now it is too eager in disabling JPEG support.\nNote that SciPy uses PIL to read JPEG images, so not having it working is quite annoying.",
     "created_at": "2010-11-30T21:37:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97439",
-    "user": "Koen"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97279",
+    "user": "https://trac.sagemath.org/admin/accounts/users/Koen"
 }
 ```
 
@@ -1290,15 +1289,15 @@ Note that SciPy uses PIL to read JPEG images, so not having it working is quite 
 
 ---
 
-archive/issue_comments_097440.json:
+archive/issue_comments_097280.json:
 ```json
 {
     "body": "Replying to [comment:40 Koen]:\n> It's because the PIL setup.py is trying to be smart: it creates its own list of search paths for includes & libs, and when it cannot find jpeglib.h in the includes or libjpeg.so in the libraries search paths, it will disable its own JPEG support. However, it does not check a common place for 64-bit Linuxes (which are not Debian-based), so right now it is too eager in disabling JPEG support.\n> Note that SciPy uses PIL to read JPEG images, so not having it working is quite annoying.\n\nYep. If we don't fix that (here), you could still create symbolic links in `SAGE_LOCAL/{include,lib}`; then PIL should find them as well.\n\n(If we build binary distributions (with e.g. JPEG support enabled), we have to manually *copy* the system's respective libraries and headers to `SAGE_LOCAL/...` anyway.)",
     "created_at": "2010-12-01T00:28:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97440",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97280",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1314,15 +1313,15 @@ Yep. If we don't fix that (here), you could still create symbolic links in `SAGE
 
 ---
 
-archive/issue_comments_097441.json:
+archive/issue_comments_097281.json:
 ```json
 {
     "body": "Replying to [comment:41 leif]:\n> If we don't fix that (here), you could still create symbolic links in `SAGE_LOCAL/{include,lib}`; then PIL should find them as well.\n\nP.S.: PIL 1.1.7 adds a `find_include_file()` function, but still won't find a library in `/usr/lib64`, so I think we should fix that, not sure if on this ticket though.",
     "created_at": "2010-12-01T00:44:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97441",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97281",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1335,15 +1334,15 @@ P.S.: PIL 1.1.7 adds a `find_include_file()` function, but still won't find a li
 
 ---
 
-archive/issue_comments_097442.json:
+archive/issue_comments_097282.json:
 ```json
 {
     "body": "I've uploaded a slightly modified p3 spkg:\n\n**http://spkg-upload.googlecode.com/files/pil-1.1.6.p3.spkg**\n\n**md5sum:** `5453cd4356f1cfa9e1c097b0f7dcc609  pil-1.1.6.p3.spkg`\n\n(`src/` is now vanilla -> patch rebased; some clean-up, additions to `SPKG.txt`.)\n\nDoes **not** fix the `.../lib64` issue; this should IMHO go onto another ticket.",
     "created_at": "2010-12-01T03:29:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97442",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97282",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1361,15 +1360,15 @@ Does **not** fix the `.../lib64` issue; this should IMHO go onto another ticket.
 
 ---
 
-archive/issue_comments_097443.json:
+archive/issue_comments_097283.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-12-01T03:29:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97443",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97283",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1379,15 +1378,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_097444.json:
+archive/issue_comments_097284.json:
 ```json
 {
     "body": "SPKG patch, based on Mitesh's p3. Upstream now vanilla, some clean-up.",
     "created_at": "2010-12-01T03:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97444",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97284",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1397,15 +1396,15 @@ SPKG patch, based on Mitesh's p3. Upstream now vanilla, some clean-up.
 
 ---
 
-archive/issue_comments_097445.json:
+archive/issue_comments_097285.json:
 ```json
 {
     "body": "Attachment [trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch](tarball://root/attachments/some-uuid/ticket9864/trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch) by @nexttime created at 2010-12-01 03:36:37",
     "created_at": "2010-12-01T03:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97445",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97285",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1415,15 +1414,15 @@ Attachment [trac_9864-remove_duplicate_usr_local_lib_dir-v2-spkg.patch](tarball:
 
 ---
 
-archive/issue_comments_097446.json:
+archive/issue_comments_097286.json:
 ```json
 {
     "body": "Replying to [comment:43 leif]:\n> Does **not** fix the `.../lib64` issue; this should IMHO go onto another ticket.\n\nI've opened http://trac.sagemath.org/sage_trac/ticket/10359 to address that issue.",
     "created_at": "2010-12-01T03:53:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97446",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97286",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1436,15 +1435,15 @@ I've opened http://trac.sagemath.org/sage_trac/ticket/10359 to address that issu
 
 ---
 
-archive/issue_comments_097447.json:
+archive/issue_comments_097287.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"pil spkg\".",
     "created_at": "2010-12-02T13:05:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97447",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97287",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1454,15 +1453,15 @@ Changing keywords from "" to "pil spkg".
 
 ---
 
-archive/issue_comments_097448.json:
+archive/issue_comments_097288.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-12-05T11:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97448",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97288",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1472,15 +1471,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_097449.json:
+archive/issue_comments_097289.json:
 ```json
 {
     "body": "Positive review implicit by #10359.",
     "created_at": "2010-12-05T11:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97449",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97289",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1490,15 +1489,15 @@ Positive review implicit by #10359.
 
 ---
 
-archive/issue_comments_097450.json:
+archive/issue_comments_097290.json:
 ```json
 {
     "body": "Thanks, Leif!",
     "created_at": "2010-12-07T02:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9863",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97450",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9863#issuecomment-97290",
+    "user": "https://github.com/qed777"
 }
 ```
 

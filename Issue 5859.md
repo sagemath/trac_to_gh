@@ -6,15 +6,14 @@ archive/issues_005859.json:
     "body": "Assignee: mabshoff\n\nCC:  @orlitzky\n\n\n```\n./sage -coverageall devel/sage/sage/catalogue/\n```\n\nresults in\n\n```\nTraceback (most recent call last):\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 44, in <module>\n    coverage_all(sys.argv[1])\n  File \"/scratch/mabshoff/sage-3.4.2.alpha0/local/bin/sage-coverageall\", line 28, in coverage_all\n    score = (float(scr) / total)\nZeroDivisionError: float division\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5859\n\n",
     "created_at": "2009-04-22T23:31:00Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "sage -coverageall fails on directories with zero tests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5859",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5859
 
 ---
 
-archive/issue_comments_046292.json:
+archive/issue_comments_046203.json:
 ```json
 {
     "body": "Default to 100% coverage when there are no tests.",
     "created_at": "2012-01-09T05:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46292",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46203",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -64,15 +63,15 @@ Default to 100% coverage when there are no tests.
 
 ---
 
-archive/issue_comments_046293.json:
+archive/issue_comments_046204.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-01-09T05:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46293",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46204",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -82,15 +81,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_046294.json:
+archive/issue_comments_046205.json:
 ```json
 {
     "body": "Attachment [sage-trac_5859.patch](tarball://root/attachments/some-uuid/ticket5859/sage-trac_5859.patch) by @orlitzky created at 2012-01-09 05:03:05\n\nThis was a pretty small fix, so there it is.\n\nThe coverage score would naturally be undefined, but saying it's 100% of zero is a useful fiction in this case.",
     "created_at": "2012-01-09T05:03:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46294",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46205",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -104,15 +103,15 @@ The coverage score would naturally be undefined, but saying it's 100% of zero is
 
 ---
 
-archive/issue_comments_046295.json:
+archive/issue_comments_046206.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-04-29T17:12:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46295",
-    "user": "@a-andre"
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46206",
+    "user": "https://github.com/a-andre"
 }
 ```
 
@@ -122,15 +121,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_046296.json:
+archive/issue_comments_046207.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2012-05-01T05:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5859",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46296",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5859#issuecomment-46207",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_003214.json:
     "body": "Assignee: somebody\n\nCC:  @robertwb @craigcitro @JohnCremona @burcin\n\nI got very confused by the first line since I used to use gcd for clearing denominators:\n\n\n```\nsage: gcd((1, 2/3, 1/6, 1/6))\n1\nsage: gcd((2/3, 1/6, 1/6))\n1/6\nsage: gcd((2/3, 1, 1/6, 1/6))\nTraceback (most recent call last):\n...\nTypeError: Argument 'other' has incorrect type (expected sage.rings.rational.Rational, got sage.rings.integer.Integer)\nsage: gcd((2/3, 2/2, 1/6, 1/6))\n1/6\n```\n\n\nI'd expect all calls above to return 1/6.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3214\n\n",
     "created_at": "2008-05-16T02:25:48Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003214.json:
     "title": "gcd needs improved coersion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3214",
-    "user": "@novoselt"
+    "user": "https://github.com/novoselt"
 }
 ```
 Assignee: somebody
@@ -48,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3214
 
 ---
 
-archive/issue_comments_022242.json:
+archive/issue_comments_022195.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-27T06:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22242",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22195",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -66,15 +66,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022243.json:
+archive/issue_comments_022196.json:
 ```json
 {
     "body": "This works now:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| Sage Version 3.2.alpha1, Release Date: 2008-10-26                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: gcd((2/3, 1, 1/6, 1/6))\n1/6\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-10-27T06:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22243",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22196",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -98,15 +98,15 @@ Michael
 
 ---
 
-archive/issue_comments_022244.json:
+archive/issue_comments_022197.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-10-27T06:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22244",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22197",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -116,15 +116,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_022245.json:
+archive/issue_comments_022198.json:
 ```json
 {
     "body": "But the first case is still broken. This might not be coercion related, though.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-27T06:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22245",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22198",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -138,15 +138,15 @@ Michael
 
 ---
 
-archive/issue_comments_022246.json:
+archive/issue_comments_022199.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-10-27T06:19:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22246",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22199",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -156,15 +156,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_022247.json:
+archive/issue_comments_022200.json:
 ```json
 {
     "body": "This seems critical enough to elevate its priority. Also CC some people who might be able and willing to fix it :)\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T23:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22247",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22200",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -178,15 +178,15 @@ Michael
 
 ---
 
-archive/issue_comments_022248.json:
+archive/issue_comments_022201.json:
 ```json
 {
     "body": "Changing priority from minor to critical.",
     "created_at": "2008-11-30T23:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22248",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22201",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -196,15 +196,15 @@ Changing priority from minor to critical.
 
 ---
 
-archive/issue_comments_022249.json:
+archive/issue_comments_022202.json:
 ```json
 {
     "body": "It is indeed not coercion-related.  The computation of the gcd is done in a loop, from which one exits as soon as a gcd of 1 is obtained (ignoring the rest of the elements).  In the case of elements with denominators (such as rational numbers or rational functions) this gives rise to the wrong answers reported above.\n\nThe attached trivial patch fixes this so that correct answers are returned.",
     "created_at": "2008-12-28T13:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22249",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22202",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -216,15 +216,15 @@ The attached trivial patch fixes this so that correct answers are returned.
 
 ---
 
-archive/issue_comments_022250.json:
+archive/issue_comments_022203.json:
 ```json
 {
     "body": "Changing priority from critical to blocker.",
     "created_at": "2008-12-28T15:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22250",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22203",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -234,15 +234,15 @@ Changing priority from critical to blocker.
 
 ---
 
-archive/issue_comments_022251.json:
+archive/issue_comments_022204.json:
 ```json
 {
     "body": "Arg, this really ought to go into 3.3.\n\nThanks for tracking this down Alex,\n\nMichael",
     "created_at": "2008-12-28T15:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22251",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22204",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -256,15 +256,15 @@ Michael
 
 ---
 
-archive/issue_comments_022252.json:
+archive/issue_comments_022205.json:
 ```json
 {
     "body": "Hmmm.  It seems a real pity to just delete the quick exit line since in most circumstances as soon as you have a unit you can return 1.  This will result in a lot of calls to vi.gcd(g) where vi is random and g==1, so those had better be caught efficiently in the member gcd() function.  (Incidentally, there was a reason for putting vi.gcd(g) and not g.gcd(vi), which I now forget.) \n\nIt's another field-of-fractions thing;  in the example we are not really treating the rationals as elements of QQ, but as scaled elements of ZZ, where x.div(y) means y/x in ZZ even though x,y may be in QQ.  Testing for .is_unit() certainly would not be appropriate.  I cannot see a better way than what the patch does, unless we give up the nice behaviour that the gcd of a set of rationals is defined to be a generator of the ZZ-module they span.",
     "created_at": "2008-12-28T16:57:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22252",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22205",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -276,15 +276,15 @@ It's another field-of-fractions thing;  in the example we are not really treatin
 
 ---
 
-archive/issue_comments_022253.json:
+archive/issue_comments_022206.json:
 ```json
 {
     "body": "I agree that the quick exit shouldn't be deleted. I would propose either constructing a sequence (so all elements live in the same domain to begin with) or having the exit verify that the parents are all the same type (much faster than calling gcd).",
     "created_at": "2008-12-29T19:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22253",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22206",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -294,15 +294,15 @@ I agree that the quick exit shouldn't be deleted. I would propose either constru
 
 ---
 
-archive/issue_comments_022254.json:
+archive/issue_comments_022207.json:
 ```json
 {
     "body": "Robert, I'm not sure I understand your suggestion.  The current code already constructs a sequence.  The problem is that when the universe of that sequence is QQ, bailing out of the loop as soon as one gets 1 is wrong.\n\nIf QQ were the only obstruction this would be easy to fix, but the same will happen with other fraction fields (number fields, p-adics, rational functions, etc.)\n\nI'm actually getting more and more convinced that I don't like this use of gcd for fraction fields anyway; but I'll take this to sage-devel and see what people think.",
     "created_at": "2008-12-30T09:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22254",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22207",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -316,15 +316,15 @@ I'm actually getting more and more convinced that I don't like this use of gcd f
 
 ---
 
-archive/issue_comments_022255.json:
+archive/issue_comments_022208.json:
 ```json
 {
     "body": "You have a good point. I've never used this function for elements of a fraction field, so I'm not even sure what the intended behavior/use cases are.\n\nPlease post to sage-devel, hopefully it will shed some light on what should happen here.",
     "created_at": "2008-12-30T09:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22255",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22208",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -336,15 +336,15 @@ Please post to sage-devel, hopefully it will shed some light on what should happ
 
 ---
 
-archive/issue_comments_022256.json:
+archive/issue_comments_022209.json:
 ```json
 {
     "body": "Attachment [trac_3214.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214.patch) by @aghitza created at 2009-01-04 18:28:23\n\nOK, following the discussion at http://groups.google.com/group/sage-devel/browse_thread/thread/35abc577b5ba78e7/170c0da22b9a36b9#170c0da22b9a36b9 I am implementing a trivial gcd() method for rational numbers and renaming the current rational gcd() to content().\nThe (newly) attached patch also touches a few other files in the sage library that are affected by this.\n\nThere is one doctest failure that I don't know how to deal with, in the symbolic gcd of ginac; sage -t symbolic/expression.pyx exposes this.",
     "created_at": "2009-01-04T18:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22256",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22209",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -359,15 +359,15 @@ There is one doctest failure that I don't know how to deal with, in the symbolic
 
 ---
 
-archive/issue_comments_022257.json:
+archive/issue_comments_022210.json:
 ```json
 {
     "body": "I applied the patch successfully to 3.2.3.   Alex has done a good job of testing -- I did not do a testall, just tested all in sage/rings.\n\nIt took me a few seconds (well, minutes) to see that gcd(nums)/lcm(denoms) was the right answer.  nice!\n\nI found it hard to use the content function though.  None of these work if L is a list of integers or rationals:  L.content(), content(L), QQ.content(L), ZZ.content(L).  Can we not have these?  Also if v is an element of `ZZ^n` then v.content() would also be useful.  I could perhaps be persuaded to put these enhancements into a different ticket.\n\nI don't know what to do about the ginac failure:\n\n```\nsage: var('x,y',ns=1)\n(x, y)\nsage: f = -289*x*y - 17*x^2*y + 3/7*x^5*y + x^7 + 17*x^6 + 2/3*x^2 - 51/7*y^2 + 34/3*x + 2/7*y\nsage: g = -289*x*y + 3/7*x^5*y - 17*x^13*y + x^18 + 2/3*x^13 + 17*x^6 - 51/7*y^2 + 34/3*x + 2/7*y\nsage: f.gcd(g)\n<boom>\n```\n\nIt fails trying to convert a non-integral rational to an integer.  Simpler polys in place of f anf g work fine.  As I don't even know what ginac is or does I'm stuck!",
     "created_at": "2009-01-13T21:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22257",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22210",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -394,15 +394,15 @@ It fails trying to convert a non-integral rational to an integer.  Simpler polys
 
 ---
 
-archive/issue_comments_022258.json:
+archive/issue_comments_022211.json:
 ```json
 {
     "body": "Burcin,\n\ncan you take a look at this since the pynac issue is holding up this patch?\n\nSomebody else ought to change the summary of this ticket since this is not related to coercion at all.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T02:22:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22258",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22211",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -420,15 +420,15 @@ Michael
 
 ---
 
-archive/issue_comments_022259.json:
+archive/issue_comments_022212.json:
 ```json
 {
     "body": "Changed the summary to something a little more descriptive.\n\nThe right time to work on fixing the pynac issue would have been SD12 since both Burcin and I were there, but (as always) other stuff got in the way.  Anyway, I really don't know how to even start fixing this issue, so hints (or fixes) would be highly appreciated.",
     "created_at": "2009-02-02T03:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22259",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22212",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -440,15 +440,15 @@ The right time to work on fixing the pynac issue would have been SD12 since both
 
 ---
 
-archive/issue_comments_022260.json:
+archive/issue_comments_022213.json:
 ```json
 {
     "body": "Attachment [trac_3214-py_gcd.patch](tarball://root/attachments/some-uuid/ticket3214/trac_3214-py_gcd.patch) by @burcin created at 2009-02-08 18:30:23\n\nI finally found time to look at this.\n\nattachment:trac_3214-py_gcd.patch fixes the doctest problem. It is not a very clean solution, but since we are going to switch to using Sage/Singular for gcd's it's not worth investing more time in this.\n\nIf someone can look over my 2 line patch, and change the subject to \"positive review\", maybe this can still make it to 3.3.",
     "created_at": "2009-02-08T18:30:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22260",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22213",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -464,15 +464,15 @@ If someone can look over my 2 line patch, and change the subject to "positive re
 
 ---
 
-archive/issue_comments_022261.json:
+archive/issue_comments_022214.json:
 ```json
 {
     "body": "Looks good.\n\nThanks a lot, Burcin.",
     "created_at": "2009-02-08T22:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22261",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22214",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -484,15 +484,15 @@ Thanks a lot, Burcin.
 
 ---
 
-archive/issue_comments_022262.json:
+archive/issue_comments_022215.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.3.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-09T08:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22262",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22215",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -506,15 +506,15 @@ Michael
 
 ---
 
-archive/issue_comments_022263.json:
+archive/issue_comments_022216.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-09T08:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3214",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22263",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3214#issuecomment-22216",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_004269.json:
     "body": "Assignee: cwitty\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4269\n\n",
     "created_at": "2008-10-12T18:02:57Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "add code to help detect which systems are used in performing a computation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4269",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: cwitty
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4269
 
 ---
 
-archive/issue_comments_031166.json:
+archive/issue_comments_031104.json:
 ```json
 {
     "body": "Attachment [trac_4269.patch](tarball://root/attachments/some-uuid/ticket4269/trac_4269.patch) by @mwhansen created at 2008-10-12 18:09:02\n\nThe detection strings could probably use some refinement, but I'm going to spend some time working one something else.",
     "created_at": "2008-10-12T18:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31166",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31104",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +47,15 @@ The detection strings could probably use some refinement, but I'm going to spend
 
 ---
 
-archive/issue_comments_031167.json:
+archive/issue_comments_031105.json:
 ```json
 {
     "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2008-10-12T18:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31167",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31105",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +65,15 @@ Changing assignee from cwitty to @mwhansen.
 
 ---
 
-archive/issue_comments_031168.json:
+archive/issue_comments_031106.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-10-12T18:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31168",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31106",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_031169.json:
+archive/issue_comments_031107.json:
 ```json
 {
     "body": "Attachment [4269-referee.patch](tarball://root/attachments/some-uuid/ticket4269/4269-referee.patch) by @robertwb created at 2008-10-14 20:17:37",
     "created_at": "2008-10-14T20:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31169",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31107",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -103,15 +101,15 @@ Attachment [4269-referee.patch](tarball://root/attachments/some-uuid/ticket4269/
 
 ---
 
-archive/issue_comments_031170.json:
+archive/issue_comments_031108.json:
 ```json
 {
     "body": "I added a bit more of a disclaimer, and raised a better error on non-strings (so when one types `get_systems('integrate(x^2, x)')` one doesn't get an obscure error. \n\nI give this a positive review, but someone should look at my changes.",
     "created_at": "2008-10-14T20:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31170",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31108",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -123,15 +121,15 @@ I give this a positive review, but someone should look at my changes.
 
 ---
 
-archive/issue_comments_031171.json:
+archive/issue_comments_031109.json:
 ```json
 {
     "body": "I tested the type checking and ran some other example.\nMichael",
     "created_at": "2008-10-21T09:12:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31171",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31109",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -142,15 +140,15 @@ Michael
 
 ---
 
-archive/issue_comments_031172.json:
+archive/issue_comments_031110.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.2.alpha1",
     "created_at": "2008-10-26T02:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31172",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31110",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -160,15 +158,15 @@ Merged both patches in Sage 3.2.alpha1
 
 ---
 
-archive/issue_comments_031173.json:
+archive/issue_comments_031111.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-26T02:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4269",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31173",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4269#issuecomment-31111",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

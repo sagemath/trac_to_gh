@@ -6,15 +6,14 @@ archive/issues_001448.json:
     "body": "Assignee: @williamstein\n\nThis should work:\n\n```\nsage: MS = MatrixSpace(GF(2),2)\nsage: for A in MS:\n...     print A\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1448\n\n",
     "created_at": "2007-12-10T14:20:20Z",
     "labels": [
-        "linear algebra",
-        "minor",
-        "enhancement"
+        "component: linear algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "iterate over MatrixSpace",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1448",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @williamstein
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1448
 
 ---
 
-archive/issue_comments_009327.json:
+archive/issue_comments_009302.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2007-12-14T07:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9327",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9302",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -54,15 +53,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_009328.json:
+archive/issue_comments_009303.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-14T07:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9328",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9303",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -72,15 +71,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_009329.json:
+archive/issue_comments_009304.json:
 ```json
 {
     "body": "Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.patch) by @mwhansen created at 2007-12-14 07:10:41",
     "created_at": "2007-12-14T07:10:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9329",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9304",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -90,15 +89,15 @@ Attachment [1448.patch](tarball://root/attachments/some-uuid/ticket1448/1448.pat
 
 ---
 
-archive/issue_comments_009330.json:
+archive/issue_comments_009305.json:
 ```json
 {
     "body": "Attachment [1448-2.patch](tarball://root/attachments/some-uuid/ticket1448/1448-2.patch) by dmharvey created at 2007-12-21 17:57:54\n\nI've been reviewing this patch. Generally pretty good (I like the implementation for infinite base rings, very neat)... a few minor issues to address:\n\n* I'd like to see more (i.e. nonzero) documentation in the docstring, in particular giving the definition of what ordering is being produced, and explaining what's going on in the case of an infinite base ring\n\n* The doctests should show more than that just the number of generated matrices is correct; currently they only give the number of matrices and the first matrix (which is all zero)\n\n* I'm a bit puzzled by the order of iteration. It starts by incrementing in the bottom right and then moves upwards. To me the other direction seems more natural. Maybe I'm \"wrong\" about this though.\n\n* There are some corner cases to address:\n\n\n```\nsage: MS = MatrixSpace(ZZ, 2, 0)\nsage: i = iter(MS)\nsage: i.next()\n[]\nsage: i.next()\n(boom)\n```\n\n\n* The doctests should include examples for 0xN, Nx0, 0x0 matrices.",
     "created_at": "2007-12-21T17:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9330",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9305",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -131,15 +130,15 @@ sage: i.next()
 
 ---
 
-archive/issue_comments_009331.json:
+archive/issue_comments_009306.json:
 ```json
 {
     "body": "Attachment [1448-3.patch](tarball://root/attachments/some-uuid/ticket1448/1448-3.patch) by dmharvey created at 2007-12-22 16:14:30\n\nok, I'm happy with this now.",
     "created_at": "2007-12-22T16:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9331",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9306",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -151,15 +150,15 @@ ok, I'm happy with this now.
 
 ---
 
-archive/issue_comments_009332.json:
+archive/issue_comments_009307.json:
 ```json
 {
     "body": "merged in 2.9.1 rc0",
     "created_at": "2007-12-22T17:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9332",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9307",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -169,15 +168,15 @@ merged in 2.9.1 rc0
 
 ---
 
-archive/issue_comments_009333.json:
+archive/issue_comments_009308.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-22T17:55:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1448",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9333",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1448#issuecomment-9308",
+    "user": "https://github.com/rlmill"
 }
 ```
 

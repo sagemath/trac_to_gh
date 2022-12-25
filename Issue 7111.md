@@ -6,7 +6,7 @@ archive/issues_007111.json:
     "body": "Assignee: tbd\n\nOn many platforms this times out:\n\n```\nsage -t -long \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n*** *** Error: TIMED OUT! PROCESS KILLED! *** ***\n*** *** Error: TIMED OUT! *** ***\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [1800.1 s]\n\nThe test that fails with a timeout is:\n\nsage.groups.perm_gps.partn_ref.refinement_matrices.random_tests(180.0, 100, 200, 40)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7111\n\n",
     "created_at": "2009-10-04T17:16:56Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007111.json:
     "title": "timeout when doctesting partition refinement code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7111",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7111
 
 ---
 
-archive/issue_comments_058936.json:
+archive/issue_comments_058825.json:
 ```json
 {
     "body": "After deleting the line causing the timeout, I found a *bug* in partition refinement by testing on Centos32!\n\n```\nwstein@centos53-32:/tmp/wstein/farm/sage-4.1.2.rc1.alpha3$ ./sage -t devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx \ninit.sage does not exist ... creating\nsage -t  \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\n**********************************************************************\nFile \"/tmp/wstein/farm/sage-4.1.2.rc1.alpha3/devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\", line 340:\n    sage: sage.groups.perm_gps.partn_ref.refinement_matrices.random_tests()\nExpected:\n    All passed: ... random tests on ... matrices.\nGot:\n    M:\n    [ 0 18  0  0  0  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0  4]\n    [ 0  0  0  0  0  0  0  0  0  0  0 15  0  0  0  0  0  0  6  0  0  0  0]\n    [ 0  0  0  0  0  0  0  0  0  0  0  0  0  8  0  0  0  0 15  0  0 13  0]\n    [ 0  0  0  0  7  0  0  0  0  0 16  0  0  0  0  0  0  0  0 22  0  0  0]\n    [ 0  0 14  0  0  0  0  0  2  0  0  0  0  0  0  0 12  0  0  0  0  0  0]\n    [ 0  0 13  0  0  0 21  0  0 16  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0 18  0  0  0  0  0  0  0  0  0  0  0  0  0 13  0  0  0  0  0]\n    [ 0  0 18  0  3  0  0  0  0  0  0  0 22  0  0  0  0  0  0  0  0  0  0]\n    [ 0 12  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0 16  0  0  0  0  0]\n    [ 0  0  2 13  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 21]\n    [ 0  0  0 21  0  0  0  0  0  0  0  1  0  0  9  0  0  0  0  0  0  0  0]\n    [ 0 11  0  0  6  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 21  0]\n    [19  0  0  0  0  0  0  0  0  0  0  0  0  0  8  0 17  0  0  0  0  0  0]\n    [ 0  1  0  0  0  0  0  0  0 14  0  0  0  0  0 16  0  0  0  0  0  0  0]\n    [ 0  0  6  0  0  0  0  0  0  0  0  0  3  1  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0 11  0  0 15  0  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0  0  0  0  0  0  0  2 12  0  0 10  0  0  0  0  0]\n    [ 0  0  0  0  0  0  0 19  0  0  0  0  0  0  0  0  0  0  0 17  0  0  0]\n    [ 0  0  2 11  0  0  0  0  0  4  0  0  0  0  0  0  0  0  0  0  0  0  0]\n    [ 0  0  0  0  0  0  6  0  0  0  0  0  0 10  0  0  0 10  0  0  0  0  0]\n    perm:\n    [15, 5, 17, 20, 10, 3, 21, 7, 11, 8, 4, 16, 19, 2, 9, 12, 6, 22, 14, 0, 13, 18, 1]\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_6\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /scratch/wstein/sage//tmp/.doctest_refinement_matrices.py\n         [8.0 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/groups/perm_gps/partn_ref/refinement_matrices.pyx\"\nTotal time for all tests: 8.0 seconds\nwstein@centos53-32:/tmp/wstein/farm/sage-4.1.2.rc1.alpha3$ \n```\n\n\nSo the timeout is probably really a hang caused by a serious bug.  (?)",
     "created_at": "2009-10-07T12:22:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58936",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58825",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -113,15 +113,15 @@ So the timeout is probably really a hang caused by a serious bug.  (?)
 
 ---
 
-archive/issue_comments_058937.json:
+archive/issue_comments_058826.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-30T05:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58937",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58826",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -131,15 +131,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_058938.json:
+archive/issue_comments_058827.json:
 ```json
 {
     "body": "Attachment [trac_7111.patch](tarball://root/attachments/some-uuid/ticket7111/trac_7111.patch) by @rlmill created at 2009-10-30 05:06:22\n\nThis was due to a bad assumption I made while I was writing `refinement_matrices`. This fixes that assumption, and the fact that this fixes at least the example above is shown here:\n\n\n```\nsage: M = matrix([[0, 18, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 15, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 15, 0, 0, 13, 0],\n   ....:  [0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0],\n   ....:  [0, 0, 14, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 13, 0, 0, 0, 21, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 18, 0, 3, 0, 0, 0, 0, 0, 0, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 12, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 2, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21],\n   ....:  [0, 0, 0, 21, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 9, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 11, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 21, 0],\n   ....:  [19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 17, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 1, 0, 0, 0, 0, 0, 0, 0, 14, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 11, 0, 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 12, 0, 0, 10, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 0, 19, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 0, 0, 0],\n   ....:  [0, 0, 2, 11, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],\n   ....:  [0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0, 0]])\nsage: perm = [15, 5, 17, 20, 10, 3, 21, 7, 11, 8, 4, 16, 19, 2, 9, 12, 6, 22, 14, 0, 13, 18, 1]\nsage: from sage.groups.perm_gps.partn_ref.refinement_matrices import MatrixStruct\nsage: MS = MatrixStruct(M)\nsage: MS.run()\nsage: N = Matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: for j in range(M.ncols()):\n   ....:     N.set_column(perm[j], M.column(j))\n   ....: \nsage: NS = MatrixStruct(N)\nsage: NS.run()\nsage: M_relab = MS.canonical_relabeling()\nsage: N_relab = NS.canonical_relabeling()\nsage: M_C = matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: N_C = matrix(M.base_ring(), M.nrows(), M.ncols())\nsage: for j in range(M.ncols()):\n   ....:     M_C.set_column(M_relab[j], M.column(j))\n   ....:     N_C.set_column(N_relab[j], N.column(j))\n   ....: \nsage: M_C = matrix(M.base_ring(), sorted(M_C.rows()))\nsage: N_C = matrix(M.base_ring(), sorted(N_C.rows()))\nsage: M_C==N_C\nTrue\n```\n",
     "created_at": "2009-10-30T05:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58938",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58827",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -198,15 +198,15 @@ True
 
 ---
 
-archive/issue_comments_058939.json:
+archive/issue_comments_058828.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2009-11-05T03:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58939",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58828",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -216,15 +216,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_058940.json:
+archive/issue_comments_058829.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-05T03:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58940",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58829",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -234,15 +234,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058941.json:
+archive/issue_comments_058830.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-05T03:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7111",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58941",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7111#issuecomment-58830",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

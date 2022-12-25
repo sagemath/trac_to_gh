@@ -6,7 +6,7 @@ archive/issues_003867.json:
     "body": "Assignee: mabshoff\n\n\n```\n         [6.9 s]\nsage -t -long devel/sage/sage/graphs/graph.py               **********************************************************************\nFile \"/home/was/build/sage-3.1.alpha2/tmp/graph.py\", line 5233:\n    sage: G.get_pos()\nExpected: \n    {0: [-0.39..., 0.06...],\n     1: [-0.26..., 0.94...],\n     2: [-0.29..., 0.43...],\n     3: [-0.40..., -0.70...],\n     4: [-0.88..., -0.46...],\n     5: [0.75..., -0.16...],\n     6: [0.32..., 0.28...],\n     7: [0.67..., 0.52...],\n     8: [0.44..., -0.72...],\n     9: [0.05..., -0.19...]}\nGot:\n    {0: [-0.39224507078505738, 0.064423438834940699], 1: [-0.2616497839815306, 0.94923940803846718], 2: [-0.29753651819885235, 0.43107759793361461], 3: [-0.4079690141981453, -0.70787463618828417], 4: [-0.88764715713391851, -0.46052418441605503], 5: [0.75138278139293446, -0.17000101533997652], 6: [0.32390924920002728, 0.28668268344881481], 7: [0.67388121773389487, 0.52838252201932256], 8: [0.44564785869604684, -0.72172615352578218], 9: [0.052226437274600954, -0.19967966080505992]}\n**********************************************************************\n1 items had failures:\n   1 of  48 in __main__.example_124\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3867\n\n",
     "created_at": "2008-08-15T08:02:01Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003867.json:
     "title": "sage-3.1.alpha2: graph.py numerical noise",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3867",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -53,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3867
 
 ---
 
-archive/issue_comments_027569.json:
+archive/issue_comments_027511.json:
 ```json
 {
     "body": "Attachment [sage-3867.patch](tarball://root/attachments/some-uuid/ticket3867/sage-3867.patch) by @williamstein created at 2008-08-15 08:11:13",
     "created_at": "2008-08-15T08:11:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3867#issuecomment-27569",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3867#issuecomment-27511",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -71,15 +71,15 @@ Attachment [sage-3867.patch](tarball://root/attachments/some-uuid/ticket3867/sag
 
 ---
 
-archive/issue_comments_027570.json:
+archive/issue_comments_027512.json:
 ```json
 {
     "body": "Positive review. :)\n\nCheers,\n\nMichael",
     "created_at": "2008-08-15T08:22:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3867#issuecomment-27570",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3867#issuecomment-27512",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +93,15 @@ Michael
 
 ---
 
-archive/issue_comments_027571.json:
+archive/issue_comments_027513.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-15T08:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3867#issuecomment-27571",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3867#issuecomment-27513",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +111,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_027572.json:
+archive/issue_comments_027514.json:
 ```json
 {
     "body": "Merged in Sage 3.1.rc0",
     "created_at": "2008-08-15T08:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3867",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3867#issuecomment-27572",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3867#issuecomment-27514",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

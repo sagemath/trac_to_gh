@@ -6,15 +6,14 @@ archive/issues_008062.json:
     "body": "Assignee: drkirkby\n\nLet spkg-install work with SAGE64=\"yes\" on Open Solaris.\n\n[http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8062\n\n",
     "created_at": "2010-01-25T21:23:19Z",
     "labels": [
-        "porting",
-        "major",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New givaro-3.2.13rc2.p0.spkg works with Open Solaris 64 bit, SAGE64=\"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8062",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8062
 
 ---
 
-archive/issue_comments_070662.json:
+archive/issue_comments_070541.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-25T21:23:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70662",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70541",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -53,15 +52,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_070663.json:
+archive/issue_comments_070542.json:
 ```json
 {
     "body": "Attachment [givaro-3.2.13rc2.p0,patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0,patch) by @jaapspies created at 2010-01-26 20:54:56",
     "created_at": "2010-01-26T20:54:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70663",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70542",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -71,15 +70,15 @@ Attachment [givaro-3.2.13rc2.p0,patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_070664.json:
+archive/issue_comments_070543.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-28T08:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70664",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70543",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_070665.json:
+archive/issue_comments_070544.json:
 ```json
 {
     "body": "Attachment [givaro-3.2.13rc2.p0.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0.patch) by drkirkby created at 2010-01-28 08:44:40\n\nThe comment in SPKG.txt is inaccurate, as the patch is not specific to Open Solaris. \n\n\nA more accurate comment would be. \n\nEnsures the compiler flag -m64 is added when the environment variable SAGE64 was set to yes - previously this was only happening on OS X. This should aid building 64-bit on any platform, though it has only been tested on Open Solaris. \n\nAlso, add the trac ticket number #8062 to the comment. \n\nIt's far better to open a ticket for the bug first, before trying to fix it. Then the ticket number can be placed in the comments in SPKG.txt. \n\nYou might want to remove Martin Albrecht as a maintainer, as his name is duplicated.",
     "created_at": "2010-01-28T08:44:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70665",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70544",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -120,15 +119,15 @@ You might want to remove Martin Albrecht as a maintainer, as his name is duplica
 
 ---
 
-archive/issue_comments_070666.json:
+archive/issue_comments_070545.json:
 ```json
 {
     "body": "Replying to [comment:2 drkirkby]:\n> The comment in SPKG.txt is inaccurate, as the patch is not specific to Open Solaris. \n> \n> \n> A more accurate comment would be. \n> \n> Ensures the compiler flag -m64 is added when the environment variable SAGE64 was set to yes - previously this was only happening on OS X. This should aid building 64-bit on any platform, though it has only been tested on Open Solaris. \n>\n\nThat maybe better, but rather long for a short comment.\n \n> Also, add the trac ticket number #8062 to the comment. \n> \n> It's far better to open a ticket for the bug first, before trying to fix it. Then the ticket number can be placed in the comments in SPKG.txt. \n>\n\nSure that is a possibility. I've seen a lot of SPKG.txt files without trac numbers.\n\n> You might want to remove Martin Albrecht as a maintainer, as his name is duplicated. \n\nThat is what I did. As you can see in the patch.\n\nJaap",
     "created_at": "2010-01-28T11:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70666",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70545",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -160,15 +159,15 @@ Jaap
 
 ---
 
-archive/issue_comments_070667.json:
+archive/issue_comments_070546.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-28T13:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70667",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70546",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -178,15 +177,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_070668.json:
+archive/issue_comments_070547.json:
 ```json
 {
     "body": "Attachment [givaro-3.2.13rc2.p0+.patch](tarball://root/attachments/some-uuid/ticket8062/givaro-3.2.13rc2.p0+.patch) by @jaapspies created at 2010-01-28 13:11:48\n\nUpdated SPKG.txt\n\nLeft patch level p0.\n\nLink is still\n[http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg](http://boxen.math.washington.edu/home/jsp/ports/givaro-3.2.13rc2.p0.spkg)\n\n\nJaap",
     "created_at": "2010-01-28T13:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70668",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70547",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -206,15 +205,15 @@ Jaap
 
 ---
 
-archive/issue_comments_070669.json:
+archive/issue_comments_070548.json:
 ```json
 {
     "body": "Positive review. All dynamic libraries are 64-bit. I don't know how one can determine this with static libraries, as 'ldd' does not indicate anything about them. But I assume they are probably ok\n\n\n```\ndrkirkby@hawk:~/sage-4.3.1$ file local/lib/libgivaro*\nlocal/lib/libgivaro.a:\tcurrent ar archive, not a dynamic executable or shared object\nlocal/lib/libgivaro.la:\tcommands text\nlocal/lib/libgivaro.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgivaro.so.0:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\nlocal/lib/libgivaro.so.0.0.2:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n\n\nIt would be worth trying to find out a way of confirming the exact type of static libraries, but I think the fact the shared libraries are ok, this patch is fine. \n\nDave",
     "created_at": "2010-01-28T13:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70669",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70548",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -239,15 +238,15 @@ Dave
 
 ---
 
-archive/issue_comments_070670.json:
+archive/issue_comments_070549.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-28T13:39:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70670",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70549",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -257,15 +256,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_070671.json:
+archive/issue_comments_070550.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T15:16:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8062",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70671",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8062#issuecomment-70550",
+    "user": "https://github.com/qed777"
 }
 ```
 

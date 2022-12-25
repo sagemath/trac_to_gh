@@ -6,7 +6,7 @@ archive/issues_006754.json:
     "body": "Assignee: @loefflerd\n\n\n```\n\n\n**********************************************************************\nFile \"/Users/wstein/build/sage-4.1.1/devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\", line 2881:\n    sage: E.division_polynomial(3).roots(CC,multiplicities=False)\nExpected:\n    [-2.88288879135334,\n    1.39292799513138,\n    0.078313731444316... - 0.492840991709879*I,\n    0.078313731444316... + 0.492840991709879*I]\nGot:\n    [-2.88288879135335, 1.39292799513138, 0.0783137314443168 - 0.492840991709879*I, 0.0783137314443168 + 0.492840991709879*I]\n**********************************************************************\n1 items had failures:\n   1 of  22 in __main__.example_61\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6754\n\n",
     "created_at": "2009-08-15T16:36:55Z",
     "labels": [
-        "elliptic curves",
+        "component: elliptic curves",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006754.json:
     "title": "sage-4.1.1 -- numerical noise on OS X 10.5 PPC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6754",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @loefflerd
@@ -48,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6754
 
 ---
 
-archive/issue_comments_055600.json:
+archive/issue_comments_055498.json:
 ```json
 {
     "body": "I don't see why this is not ok, give the \"...\" in the Expected text (assuming whitespace differences are also ok).",
     "created_at": "2009-08-15T17:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6754",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6754#issuecomment-55600",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6754#issuecomment-55498",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -66,15 +66,15 @@ I don't see why this is not ok, give the "..." in the Expected text (assuming wh
 
 ---
 
-archive/issue_comments_055601.json:
+archive/issue_comments_055499.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-02T16:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6754",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6754#issuecomment-55601",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6754#issuecomment-55499",
+    "user": "https://github.com/williamstein"
 }
 ```
 

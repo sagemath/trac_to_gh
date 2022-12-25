@@ -6,15 +6,14 @@ archive/issues_005267.json:
     "body": "Assignee: @malb\n\nI just ran into this (on 3.3.rc0):\n\n\n```\nsage: S.<u, v> = QQ[]\nsage: I = Ideal(-u^2*v+1)\nsage: I.plot()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/23695/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_ideal.pyc in plot(self, *args, **kwds)\n   2387                     v, mi, ma = variables[var_index], -10, 10\n   2388                     for i in range(mi, ma):\n-> 2389                         roots = f.subs({v:i}).univariate_polynomial().change_ring(RR).roots()\n   2390                         if len(roots) > 0:\n   2391                             mi = i - 1\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.univariate_polynomial (sage/rings/polynomial/multi_polynomial_libsingular.cpp:21299)()\n\nIndexError: list index out of range\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5267\n\n",
     "created_at": "2009-02-14T10:46:56Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "bug in plotting the zero locus of an ideal in an mpoly ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5267",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: @malb
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5267
 
 ---
 
-archive/issue_comments_040434.json:
+archive/issue_comments_040355.json:
 ```json
 {
     "body": "Tracked it down to a bug in turning a constant multivariate polynomial into a univariate one, as in the following example:\n\n\n```\nsage: S.<u, v> = QQ[]\nsage: f = S(1)\nsage: f.univariate_polynomial()\n---------------------------------------------------------------------------\nIndexError                                Traceback (most recent call last)\n\n/home/ghitza/.sage/temp/artin/769/_home_ghitza__sage_init_sage_0.py in <module>()\n\n/opt/sage/local/lib/python2.5/site-packages/sage/rings/polynomial/multi_polynomial_libsingular.so in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular.univariate_polynomial (sage/rings/polynomial/multi_polynomial_libsingular.cpp:21299)()\n\nIndexError: list index out of range\n```\n\n\nIn light of this, I'm changing the summary of the ticket.  I'll have a patch up soon.",
     "created_at": "2009-02-14T11:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40434",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40355",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -89,15 +88,15 @@ In light of this, I'm changing the summary of the ticket.  I'll have a patch up 
 
 ---
 
-archive/issue_comments_040435.json:
+archive/issue_comments_040356.json:
 ```json
 {
     "body": "The attached patch fixes the bug causing all this, and adds doctests for both the bug and the initial (plotting) issue.\n\nThe fix is quite trivial, so should be easy to review.",
     "created_at": "2009-02-14T11:21:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40435",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40356",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -109,15 +108,15 @@ The fix is quite trivial, so should be easy to review.
 
 ---
 
-archive/issue_comments_040436.json:
+archive/issue_comments_040357.json:
 ```json
 {
     "body": "Attachment [trac_5267-const_mpoly.patch](tarball://root/attachments/some-uuid/ticket5267/trac_5267-const_mpoly.patch) by @aghitza created at 2009-02-14 11:53:00",
     "created_at": "2009-02-14T11:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40436",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40357",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -127,15 +126,15 @@ Attachment [trac_5267-const_mpoly.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_040437.json:
+archive/issue_comments_040358.json:
 ```json
 {
     "body": "Changing assignee from @malb to @aghitza.",
     "created_at": "2009-02-14T11:53:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40437",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40358",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -145,15 +144,15 @@ Changing assignee from @malb to @aghitza.
 
 ---
 
-archive/issue_comments_040438.json:
+archive/issue_comments_040359.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-14T11:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40438",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40359",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -163,15 +162,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_040439.json:
+archive/issue_comments_040360.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2009-02-14T15:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40439",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40360",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -181,15 +180,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_040440.json:
+archive/issue_comments_040361.json:
 ```json
 {
     "body": "Merged in Sage 3.3.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T16:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40440",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -203,15 +202,15 @@ Michael
 
 ---
 
-archive/issue_comments_040441.json:
+archive/issue_comments_040362.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-14T16:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5267",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40441",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5267#issuecomment-40362",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

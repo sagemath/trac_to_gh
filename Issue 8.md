@@ -6,14 +6,12 @@ archive/issues_000008.json:
     "body": "Assignee: somebody\n\nIt would be useful for Integer and Rational classes to have:\n\n(1) nth_root: this would wrap GMP's mpz_root.\n(2) exact_power: would accept a *rational* number as an index, and work out which root to take. For example\n\n(-8/27).exact_power(2/3) == 4/9\n\nI had to take an exact 6th root of a rational in some code the other day and it was **painful** going via real numbers, worrying about bits of precision and all that.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8\n\n",
     "created_at": "2006-09-12T02:39:12Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "title": "Integer and Rational classes need nth_root and exact_power functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -44,7 +42,7 @@ archive/issue_comments_000026.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8#issuecomment-26",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -68,7 +66,7 @@ archive/issue_comments_000027.json:
     "issue": "https://github.com/sagemath/sagetest/issues/8",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/8#issuecomment-27",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 

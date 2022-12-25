@@ -6,15 +6,14 @@ archive/issues_008822.json:
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: combinat, family\n\n\n```\nsage: f = Family(Zmod(3), lambda i: 2*i, lazy=False)\nsage: f\nLazy family (<lambda>(i))_{i in Ring of integers modulo 3}\n```\n\n\nShould we really just silently ignore the intent here, or should\n\n`Family(S, f, lazy=False)` always return `Family([i for i in S], f)`\n\n(I guess the default for lazy should then be made 'None' so that 'True',\n'False' and 'None' could all have different behaviors.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8822\n\n",
     "created_at": "2010-04-29T12:25:31Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.8",
     "title": "Bug in Family constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8822",
-    "user": "@jbandlow"
+    "user": "https://github.com/jbandlow"
 }
 ```
 Assignee: sage-combinat
@@ -47,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8822
 
 ---
 
-archive/issue_comments_081024.json:
+archive/issue_comments_080891.json:
 ```json
 {
     "body": "Changing assignee from sage-combinat to @hivert.",
     "created_at": "2010-05-13T22:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-81024",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-80891",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing assignee from sage-combinat to @hivert.
 
 ---
 
-archive/issue_comments_081025.json:
+archive/issue_comments_080892.json:
 ```json
 {
     "body": "I'm working on this one\n\nFlorent",
     "created_at": "2010-05-13T22:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-81025",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-80892",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -85,15 +84,15 @@ Florent
 
 ---
 
-archive/issue_comments_081026.json:
+archive/issue_comments_080893.json:
 ```json
 {
     "body": "Setting new milestone based on a cursory review of ticket status, priority, and last modification date.",
     "created_at": "2021-02-13T20:51:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8822",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-81026",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/8822#issuecomment-80893",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 

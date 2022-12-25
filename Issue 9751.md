@@ -6,7 +6,7 @@ archive/issues_009751.json:
     "body": "Assignee: @nthiery\n\nWhen addition_table() was added to `AdditiveMagmas` there were scant examples of additive structures with finite closed subsets.  So there was (temporarily) very little documentation.\n\nWith the addition of integers mod n to the category framework, we can document and test some additive structures.  This patch is all documentation - no code, and modeled after the documentation for multiplication_table() for `Magmas`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9751\n\n",
     "created_at": "2010-08-15T05:37:05Z",
     "labels": [
-        "categories",
+        "component: categories",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009751.json:
     "title": "Documentation for AdditiveMagmas' addition_table",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9751",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: @nthiery
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9751
 
 ---
 
-archive/issue_comments_095492.json:
+archive/issue_comments_095333.json:
 ```json
 {
     "body": "Attachment [trac_9751-document-addition-table.patch](tarball://root/attachments/some-uuid/ticket9751/trac_9751-document-addition-table.patch) by @rbeezer created at 2010-08-15 05:41:16",
     "created_at": "2010-08-15T05:41:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95492",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95333",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -49,15 +49,15 @@ Attachment [trac_9751-document-addition-table.patch](tarball://root/attachments/
 
 ---
 
-archive/issue_comments_095493.json:
+archive/issue_comments_095334.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-15T05:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95493",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95334",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_095494.json:
+archive/issue_comments_095335.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"additive magma multiplication\".",
     "created_at": "2011-11-21T22:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95494",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95335",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -85,15 +85,15 @@ Changing keywords from "" to "additive magma multiplication".
 
 ---
 
-archive/issue_comments_095495.json:
+archive/issue_comments_095336.json:
 ```json
 {
     "body": "This patch contains a very nice documentation page and that would be a shame not including it into sage. Ready to go.\n\nFlorent",
     "created_at": "2011-11-21T22:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95495",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95336",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -105,15 +105,15 @@ Florent
 
 ---
 
-archive/issue_comments_095496.json:
+archive/issue_comments_095337.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-11-21T22:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95496",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95337",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -123,15 +123,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_095497.json:
+archive/issue_comments_095338.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-11-26T09:34:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95497",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95338",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -141,15 +141,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_095498.json:
+archive/issue_comments_095339.json:
 ```json
 {
     "body": "Florent,\n\nJust back from some time away - thanks for the review on this one!\n\nRob",
     "created_at": "2011-12-05T05:47:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9751",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95498",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9751#issuecomment-95339",
+    "user": "https://github.com/rbeezer"
 }
 ```
 

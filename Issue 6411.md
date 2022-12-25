@@ -6,15 +6,14 @@ archive/issues_006411.json:
     "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nWilliam was complaining about being unable to reproduce this, so here's an easy way to reproduce it:\n\nTake sage-4.1.alpha1, do an sdist, and try running sage. Boom.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6411\n\n",
     "created_at": "2009-06-25T17:28:23Z",
     "labels": [
-        "distribution",
-        "major",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "sdist makes sage unable to run without building",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6411",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @craigcitro
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6411
 
 ---
 
-archive/issue_comments_051484.json:
+archive/issue_comments_051387.json:
 ```json
 {
     "body": "I think if you run a \"sage -br\" afterward, it will work.  There are just a few things that get compiled when doing that.  Looking at those, it should be easy to trac down what changed.",
     "created_at": "2009-06-25T20:19:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51484",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51387",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -51,15 +50,15 @@ I think if you run a "sage -br" afterward, it will work.  There are just a few t
 
 ---
 
-archive/issue_comments_051485.json:
+archive/issue_comments_051388.json:
 ```json
 {
     "body": "This is because in spkg-dist, we do the following:\n\n\n```\nrm -rf c_lib/*.so c_lib/*.os c_lib/*/*.os c_lib/*/*/*.os\n```\n\n\nThis causes libcsage to be built again.  What we should do instead is delete the files from the tmp directory that we copy things into.",
     "created_at": "2010-01-17T01:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51485",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51388",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -77,15 +76,15 @@ This causes libcsage to be built again.  What we should do instead is delete the
 
 ---
 
-archive/issue_comments_051486.json:
+archive/issue_comments_051389.json:
 ```json
 {
     "body": "Attachment [trac_6411.patch](tarball://root/attachments/some-uuid/ticket6411/trac_6411.patch) by @mwhansen created at 2010-01-17 01:53:22",
     "created_at": "2010-01-17T01:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51486",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51389",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -95,15 +94,15 @@ Attachment [trac_6411.patch](tarball://root/attachments/some-uuid/ticket6411/tra
 
 ---
 
-archive/issue_comments_051487.json:
+archive/issue_comments_051390.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-17T02:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51487",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51390",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -113,15 +112,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_051488.json:
+archive/issue_comments_051391.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-17T18:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51488",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51391",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -131,15 +130,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_051489.json:
+archive/issue_comments_051392.json:
 ```json
 {
     "body": "This looks good, and fixes the problem for me.",
     "created_at": "2010-01-17T18:04:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51489",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51392",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -149,15 +148,15 @@ This looks good, and fixes the problem for me.
 
 ---
 
-archive/issue_comments_051490.json:
+archive/issue_comments_051393.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-18T22:20:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51490",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6411#issuecomment-51393",
+    "user": "https://github.com/rlmill"
 }
 ```
 

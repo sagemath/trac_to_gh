@@ -6,7 +6,7 @@ archive/issues_004140.json:
     "body": "Assignee: mabshoff\n\nKeywords: naughty libraries\n\nWhen fink is in the path, sage-check-libraries.py reveals that the following libraries get called in to vanilla sage:\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\n\nAlso, clisp didn't biuld, with \n\n```\ndyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /sw/lib/libJPEG.dylib\n```\n\n\nand if it had built, maybe more bad linkages would have shown up.  \n\nAt the moment, this ticket is quite open ended, and probably needs to be split into little specific tickets.  Would appreciate any vision on exactly what would go in those tickets.\n\nIf have attached the whitelist built on my system.  (I edited it to remove libraries in /sw.)  It is likely to be incomplete because sage didn't finish building.  It is also likely to have some improper files (/usr/local stuff) that got installed e.g. by GIMP.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4140\n\n",
     "created_at": "2008-09-17T23:13:47Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004140.json:
     "title": "\"Naughty\" libraries that get called in by sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4140",
-    "user": "dphilp"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 Assignee: mabshoff
@@ -53,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4140
 
 ---
 
-archive/issue_comments_030061.json:
+archive/issue_comments_030001.json:
 ```json
 {
     "body": "Attachment [sage-library-whitelist-osx-](tarball://root/attachments/some-uuid/ticket4140/sage-library-whitelist-osx-) by mabshoff created at 2008-09-18 00:25:20\n\nHi David,\n\nit should be one issue per ticket, so I edited this ticket to be limited to the clisp issue. \n\nThe problem with R should be another ticket and fixed:\n\n```\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtcl8.4.dylib\nsage-3.1.2/local/lib/R/library/tcltk/libs/tcltk.so links to non-whitelisted file /sw/lib/libtk8.4.dylib\n```\n\nThe db extension with Python\n\n```\nsage-3.1.2/local/lib/python2.5/lib-dynload/_bsddb.so links to non-whitelisted file /sw/lib/libdb-4.4.dylib\n```\n\nis something we will likely not fix since it should not cause any trouble.\n\nYou alsp don't need to add your email address to the CC field since that should happen automatically for any ticket you are involved with. If not check \"settings\" in the upper right corner. \n\nCheers,\n\nMichael",
     "created_at": "2008-09-18T00:25:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30061",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30001",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -96,15 +96,15 @@ Michael
 
 ---
 
-archive/issue_comments_030062.json:
+archive/issue_comments_030002.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-18T00:25:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30062",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30002",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +114,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_030063.json:
+archive/issue_comments_030003.json:
 ```json
 {
     "body": "Michael:\n\nGot the CC thing, thanks.\n\nI didn't think we cared about clisp?  Anyway, it's up to you.\n\nI will add another ticket for R.\n\nD",
     "created_at": "2008-09-18T00:37:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30063",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30003",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -140,15 +140,15 @@ D
 
 ---
 
-archive/issue_comments_030064.json:
+archive/issue_comments_030004.json:
 ```json
 {
     "body": "Similar problem with MacPorts:\n\n```\ndyld: Symbol not found: __cg_png_create_info_struct\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Users/dphilp/s312/sage-3.1.2/local/lib//libPng.dylib\n```\n\noddly enough it says nothing about /opt.  The preceding line is:\n\n```\ndvipdf clisp.dvi clisp.pdf\n```\n\nand so I assume it's Ports' dvipdf that is calling the ImageIO framework.",
     "created_at": "2008-09-18T04:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30064",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30004",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -172,15 +172,15 @@ and so I assume it's Ports' dvipdf that is calling the ImageIO framework.
 
 ---
 
-archive/issue_comments_030065.json:
+archive/issue_comments_030005.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-16T04:31:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30065",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30005",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -190,15 +190,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_030066.json:
+archive/issue_comments_030006.json:
 ```json
 {
     "body": "This has been fixed via #5217.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T04:31:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4140",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30066",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4140#issuecomment-30006",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

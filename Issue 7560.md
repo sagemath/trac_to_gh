@@ -6,7 +6,7 @@ archive/issues_007560.json:
     "body": "Assignee: jkantor\n\nCC:  rnelsonchem@gmail.com\n\nKeywords: t_span\n\nFrom: Ryan\n\n\n```\nHello all,\n\nI've just started using Sage, and I'm currently trying to use the\node_solver class to solve some simple differential equations. I was\nhaving some problems setting up my own program based on this class\nuntil I realized that the number of points in the solution does not\nmatch the number of points requested by the t_span variable. For\nexample, when I run this script:\n_________\n#!/usr/bin/env sage-python\nfrom sage.all import ode_solver\n\ndef f(t, y):\n   return [y[1], -y[0]]\nT = ode_solver()\nT.function=f\nT.y_0=[1, 1]\nT.ode_solve(t_span=[0, 10], num_points=100)\nprint len(T.solution)\nT.ode_solve(t_span=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\nprint len(T.solution)\n_________\n\nI get returned values of 101 and 10, where I would expect 100 and 11.\n\nI don't know about the first case, but for the second case, the\nsolution for the last value (10) is missing. I was able to circumvent\nthis problem by appending a dummy variable to the end of t_span, but\nI'm wondering if this is the expected behavior. Is there something\nabout the solution that I'm missing? I am currently using Sage 4.2.1\nthat I built from source in a Gentoo Linux distro.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7560\n\n",
     "created_at": "2009-11-30T16:46:19Z",
     "labels": [
-        "numerical",
+        "component: numerical",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007560.json:
     "title": "len(t_span) > 2 case creates len(t_span) -  1 solutions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7560",
-    "user": "adavid"
+    "user": "https://trac.sagemath.org/admin/accounts/users/adavid"
 }
 ```
 Assignee: jkantor
@@ -69,15 +69,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7560
 
 ---
 
-archive/issue_comments_064308.json:
+archive/issue_comments_064192.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-10-16T02:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64308",
-    "user": "@janmedlock"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64192",
+    "user": "https://github.com/janmedlock"
 }
 ```
 
@@ -87,15 +87,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_064309.json:
+archive/issue_comments_064193.json:
 ```json
 {
     "body": "Changing keywords from \"t_span\" to \"ode_solver, ode_solve, t_span\".",
     "created_at": "2010-10-16T02:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64309",
-    "user": "@janmedlock"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64193",
+    "user": "https://github.com/janmedlock"
 }
 ```
 
@@ -105,15 +105,15 @@ Changing keywords from "t_span" to "ode_solver, ode_solve, t_span".
 
 ---
 
-archive/issue_comments_064310.json:
+archive/issue_comments_064194.json:
 ```json
 {
     "body": "Attachment [trac_7560_ode_off-by-one_fix.patch](tarball://root/attachments/some-uuid/ticket7560/trac_7560_ode_off-by-one_fix.patch) by @janmedlock created at 2010-10-16 02:58:41\n\nThere are two separate issues here, one of which is clearly a bug:\n\n1. There's an off-by-one in the code for handling the case where t_span specifies all the time points for the solution (len(t_span) > 2).  I put together a patch for this above.  The upper limit of the loop was changed from n-1 to n and the setting of t_end was moved to the beginning of the loop.  I also changed t_span to self.t_span in two spots.\n\n2. num_points specifies the number of points *after* the initial point, so there are num_points + 1 total.  This is not clear one way or the other.  I tend to like the current version, so that, e.g. t_span = [0, 1], num_points = 10, gives points at 0, 0.1, 0.2, ..., 0.9, 1 instead of 0, 0.11111, 0.22222, ..., 0.88888, 1.",
     "created_at": "2010-10-16T02:58:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64310",
-    "user": "@janmedlock"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64194",
+    "user": "https://github.com/janmedlock"
 }
 ```
 
@@ -129,15 +129,15 @@ There are two separate issues here, one of which is clearly a bug:
 
 ---
 
-archive/issue_comments_064311.json:
+archive/issue_comments_064195.json:
 ```json
 {
     "body": "Please fill in your real name as Author.",
     "created_at": "2012-07-27T20:42:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64311",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64195",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -147,15 +147,15 @@ Please fill in your real name as Author.
 
 ---
 
-archive/issue_comments_064312.json:
+archive/issue_comments_064196.json:
 ```json
 {
     "body": "Replying to [comment:2 jdemeyer]:\n> Please fill in your real name as Author.\n\nI'm not sure what exactly you're asking for.  My real name is Jan Medlock.  It's already in the patch.",
     "created_at": "2012-07-27T23:03:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64312",
-    "user": "@janmedlock"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64196",
+    "user": "https://github.com/janmedlock"
 }
 ```
 
@@ -168,15 +168,15 @@ I'm not sure what exactly you're asking for.  My real name is Jan Medlock.  It's
 
 ---
 
-archive/issue_comments_064313.json:
+archive/issue_comments_064197.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2012-12-23T21:29:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64313",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64197",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -186,15 +186,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_064314.json:
+archive/issue_comments_064198.json:
 ```json
 {
     "body": "I tested this and it seems to work well.\n\nI agree with what you say about the documentation being a bit unclear about the interpretation of `num_points`. I also agree that it is nicest to interpret it as the number of intervals. Maybe you can update the documentation in you patch? I'll give it a positive review after that.",
     "created_at": "2012-12-23T21:29:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64314",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64198",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -206,15 +206,15 @@ I agree with what you say about the documentation being a bit unclear about the 
 
 ---
 
-archive/issue_comments_064315.json:
+archive/issue_comments_064199.json:
 ```json
 {
     "body": "Replying to [comment:6 tkluck]:\n> I tested this and it seems to work well.\n> \n> I agree with what you say about the documentation being a bit unclear about the interpretation of `num_points`. I also agree that it is nicest to interpret it as the number of intervals. Maybe you can update the documentation in you patch? I'll give it a positive review after that.\n\ntkluck, I updated the patch with clarification of the documentation.  I'd appreciate if you would have a look.",
     "created_at": "2013-01-05T23:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64315",
-    "user": "@janmedlock"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64199",
+    "user": "https://github.com/janmedlock"
 }
 ```
 
@@ -229,15 +229,15 @@ tkluck, I updated the patch with clarification of the documentation.  I'd apprec
 
 ---
 
-archive/issue_comments_064316.json:
+archive/issue_comments_064200.json:
 ```json
 {
     "body": "This is a very clear explanation in the doctext, thanks.\n\nThis part is not entirely right, though:\n\n```\n    * If ``t_span`` is a tuple with more than 2 values, then (...)\n\n    * If ``t_span`` is a tuple with just 2 time values, then (...) the user must also specify\n      ``num_points``.\n```\n\n\nIn the code, the distinction is made based on whether `num_points` is specified, and not based on the length of `t_span`. That's a good thing. (remember how your matlab code always breaks when you pass 1x1 matrices to your generic code for NxN matrices.)\n\nI would also be tempted to change the name of the parameter `num_points` to `num_intervals`, raising a `DeprecationWarning` for `num_points`. How do you feel about that?",
     "created_at": "2013-01-06T17:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64316",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64200",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -261,15 +261,15 @@ I would also be tempted to change the name of the parameter `num_points` to `num
 
 ---
 
-archive/issue_comments_064317.json:
+archive/issue_comments_064201.json:
 ```json
 {
     "body": "Replying to [comment:8 tkluck]:\n> This is a very clear explanation in the doctext, thanks.\n> \n> This part is not entirely right, though:\n> {{{\n>     * If ``t_span`` is a tuple with more than 2 values, then (...)\n> \n>     * If ``t_span`` is a tuple with just 2 time values, then (...) the user must also specify\n>       ``num_points``.\n> }}}\n> \n> In the code, the distinction is made based on whether `num_points` is specified, and not based on the length of `t_span`. That's a good thing. (remember how your matlab code always breaks when you pass 1x1 matrices to your generic code for NxN matrices.)\n\nI'm not sure I understand what you're saying.  I believe what I've written is exactly correct.  The code in question is:\n\n```\nif len(self.t_span)==2 and num_points!=False:\n    # Solve at num_points time steps.\n\nelif len(self.t_span) > 2:\n     # Solve using t_span as the times.\n```\n\nhttp://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L495\n&\nhttp://trac.sagemath.org/sage_trac/browser/sage/gsl/ode.pyx#L538\n\nI agree that it is not ideal: the second condition should be `len(self.t_span) >= 2` and there should be an `else` clause to catch mis-specified `self.t_span`.  As for what to do if `len(self.t_span) > 2` and `num_points` is defined, I think the best thing to do is to use the values in `self.t_span` and ignore `num_points`.  I will put together a patch with this addition.\n\n> I would also be tempted to change the name of the parameter `num_points` to `num_intervals`, raising a `DeprecationWarning` for `num_points`. How do you feel about that?\n\nI personally find points more natural than intervals in this setting, even though intervals don't have the +1 issue.",
     "created_at": "2013-01-06T19:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64317",
-    "user": "@janmedlock"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64201",
+    "user": "https://github.com/janmedlock"
 }
 ```
 
@@ -310,15 +310,15 @@ I personally find points more natural than intervals in this setting, even thoug
 
 ---
 
-archive/issue_comments_064318.json:
+archive/issue_comments_064202.json:
 ```json
 {
     "body": "> I'm not sure I understand what you're saying. I believe what I've written is exactly correct. \n\nI'm sorry, you're right. I think the `elif` condition needs to be changed to `>= 2` as you suggest, even though I realize it's technically a different issue. If we don't, this will really bite people. \n\n> As for what to do if len(self.t_span) > 2 and num_points is defined, I think the best thing to do is to use the values in self.t_span and ignore num_points.\n\nI agree.\n\n> I personally find points more natural than intervals in this setting,\n\nI'll trust your judgment since I haven't actually used this.",
     "created_at": "2013-01-06T22:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64318",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64202",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -338,15 +338,15 @@ I'll trust your judgment since I haven't actually used this.
 
 ---
 
-archive/issue_comments_064319.json:
+archive/issue_comments_064203.json:
 ```json
 {
     "body": "Actually, why restrict to `len(t_span) >= 2` at all? I think we should just:\n\n* return only the initial condition as a list with one element if `len(t_span) == 1`;\n* return an empty list `[]` if we get `t_span == []`.\n\nFor example, this can be useful if someone wants to find solutions on the intersection of two sets. Then s/he does not have to treat an empty intersection as a special case.",
     "created_at": "2013-01-07T03:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64319",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64203",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -361,15 +361,15 @@ For example, this can be useful if someone wants to find solutions on the inters
 
 ---
 
-archive/issue_comments_064320.json:
+archive/issue_comments_064204.json:
 ```json
 {
     "body": "Attachment [trac_7560_ode_off-by-one+doc.patch](tarball://root/attachments/some-uuid/ticket7560/trac_7560_ode_off-by-one+doc.patch) by @janmedlock created at 2013-01-07 04:40:30\n\nUpdated patch (v3).",
     "created_at": "2013-01-07T04:40:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64320",
-    "user": "@janmedlock"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64204",
+    "user": "https://github.com/janmedlock"
 }
 ```
 
@@ -381,15 +381,15 @@ Updated patch (v3).
 
 ---
 
-archive/issue_comments_064321.json:
+archive/issue_comments_064205.json:
 ```json
 {
     "body": "Replying to [comment:11 tkluck]:\n> Actually, why restrict to `len(t_span) >= 2` at all? I think we should just:\n> \n>  * return only the initial condition as a list with one element if `len(t_span) == 1`;\n>  * return an empty list `[]` if we get `t_span == []`.\n> \n> For example, this can be useful if someone wants to find solutions on the intersection of two sets. Then s/he does not have to treat an empty intersection as a special case.\n\nPatch updated.\n\nThanks for your comments.  I implemented `len(t_span) == 2` and `num_points` not specified.  I also implemented `len(t_span) == 1` because it was very easy.\n\nI did not implement `len(t_span) == 0` because it would have required a separate `if-then` branch.  My further reasoning was that the initial condition `y_0` is required, so `t_span[0]` is also required, although I do see your point about how one could end up with `t_span` being empty.\n\nI have a big rewriting of this file in the works: I hope you'll be able to have a look.",
     "created_at": "2013-01-07T04:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64321",
-    "user": "@janmedlock"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64205",
+    "user": "https://github.com/janmedlock"
 }
 ```
 
@@ -413,15 +413,15 @@ I have a big rewriting of this file in the works: I hope you'll be able to have 
 
 ---
 
-archive/issue_comments_064322.json:
+archive/issue_comments_064206.json:
 ```json
 {
     "body": "I have no more comments. Positive review!",
     "created_at": "2013-01-09T21:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64322",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64206",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -431,15 +431,15 @@ I have no more comments. Positive review!
 
 ---
 
-archive/issue_comments_064323.json:
+archive/issue_comments_064207.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2013-01-09T21:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64323",
-    "user": "@tkluck"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64207",
+    "user": "https://github.com/tkluck"
 }
 ```
 
@@ -449,15 +449,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_064324.json:
+archive/issue_comments_064208.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2013-01-12T08:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64324",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7560#issuecomment-64208",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

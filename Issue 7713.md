@@ -6,15 +6,14 @@ archive/issues_007713.json:
     "body": "Assignee: @williamstein\n\nThis causes errors, such as those noted in L2261-2266 of `worksheet.py` (UnicodeDecodeError). This is also needed for transition to Python 3, and blocks #7269.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7713\n\n",
     "created_at": "2009-12-16T13:16:28Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Use unicode strings for all text in the Sage notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7713",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7713
 
 ---
 
-archive/issue_comments_066245.json:
+archive/issue_comments_066129.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-01-19T16:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7713",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7713#issuecomment-66245",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7713#issuecomment-66129",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -47,15 +46,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_066246.json:
+archive/issue_comments_066130.json:
 ```json
 {
     "body": "#7249 resolves this.",
     "created_at": "2010-01-19T16:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7713",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7713#issuecomment-66246",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7713#issuecomment-66130",
+    "user": "https://github.com/TimDumol"
 }
 ```
 

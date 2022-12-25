@@ -6,15 +6,14 @@ archive/issues_000622.json:
     "body": "Assignee: somebody\n\nIn short, modify the factor function in SAGE to test primality with isprime of\nall factors < 10**15.  The best place to put this is libs/pari/gen.pyx, by\nmodifying the isprime function there to have an extra proof flag that defaults\nto True. \n\n\n```\nOn 9/7/07, Bill Hart <goodwillhart@googlemail.com> wrote:\n>\n\n>\n> Are there other algorithms available in SAGE from Pari that rely on\n> conjectures? This would include the stuff for totally real fields that\n> relies on the Stark conjectures.\n\nmwrank uses the pari library for factorization of integers, so the\ncorrectness of mwrank funtions (and in particular, elliptic curve\nranks) relies on pari giving actual prime numbers when asked to\nfactor.\n\nThe pari manual says (about factor(x)):\n\nIf $x$ is of type integer or rational, the factors are \\var{pseudoprimes}\n(see \\kbd{ispseudoprime}), and in general not rigorously proven primes. In\nfact, any factor which is $\\leq 10^{15}$ is a genuine prime number. Use\n\\kbd{isprime} to prove primality of other factors,\n\nI would need to change the mwrank code to test \"primes\" > 10^15 for\nprimality as recommended.   A better solution would be to ask the pari\ndevelopers to add an optional \"proof=true\" flag to factor() which does\nthe isprime() calls automatically.  I will do that.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/622\n\n",
     "created_at": "2007-09-07T17:25:19Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4.2",
     "title": "SAGE's factor function is not provably correct",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/622",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -61,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/622
 
 ---
 
-archive/issue_comments_003199.json:
+archive/issue_comments_003186.json:
 ```json
 {
     "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-09-12T16:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/622",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3199",
-    "user": "@syazdani77"
+    "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3186",
+    "user": "https://github.com/syazdani77"
 }
 ```
 
@@ -79,15 +78,15 @@ Changing assignee from somebody to @williamstein.
 
 ---
 
-archive/issue_comments_003200.json:
+archive/issue_comments_003187.json:
 ```json
 {
     "body": "Attachment [6288.patch](tarball://root/attachments/some-uuid/ticket622/6288.patch) by @williamstein created at 2007-09-12 18:32:38\n\nthis should fix the problem pretty well",
     "created_at": "2007-09-12T18:32:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/622",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3200",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3187",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -99,15 +98,15 @@ this should fix the problem pretty well
 
 ---
 
-archive/issue_comments_003201.json:
+archive/issue_comments_003188.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-12T18:32:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/622",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3201",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/622#issuecomment-3188",
+    "user": "https://github.com/williamstein"
 }
 ```
 

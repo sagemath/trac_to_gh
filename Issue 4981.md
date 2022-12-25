@@ -6,15 +6,13 @@ archive/issues_004981.json:
     "body": "Assignee: @burcin\n\nCC:  @malb\n\nThe way element classes are chosen in `sage/rings/polynomial/polynomial_ring.py` goes very much against object oriented design, and is basically ugly. :)\n\nAttached patch tries to clean up this file, moves the decision of element classes to the immediate parents, adds some tests, and unifies the `__call__` methods. This also makes it much easier to add support for specialized polynomial classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4981\n\n",
     "created_at": "2009-01-15T13:17:33Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "[with patch, needs review] clean up polynomial_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4981",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @burcin
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4981
 
 ---
 
-archive/issue_comments_037968.json:
+archive/issue_comments_037896.json:
 ```json
 {
     "body": "Review:  Patch applies cleanly to 3.2.3.  All looks very sensible to me, and I trust burcin to know what he is doing, though I cannot say that I followed through all the logic.  All doctests in rings/polynomial pass, so I think that this is good to go.",
     "created_at": "2009-01-18T17:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37968",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37896",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -51,15 +49,15 @@ Review:  Patch applies cleanly to 3.2.3.  All looks very sensible to me, and I t
 
 ---
 
-archive/issue_comments_037969.json:
+archive/issue_comments_037897.json:
 ```json
 {
     "body": "This patch causes the following trivial to fix doctest failure:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha0$ ./sage -t -long devel/sage/sage/calculus/calculus.py\nsage -t -long \"devel/sage/sage/calculus/calculus.py\"        \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha0/devel/sage/sage/calculus/calculus.py\", line 1912:\n    sage: type(a)\nExpected:\n    <type 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense'>\nGot:\n    <class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_generic_dense_field'>\n**********************************************************************\n```\n\nUnfortunately the following test\n\n```\nTrying:\n    Integer(2)*P + Integer(2)*Q # indirect doctest###line 208:_sage_    >>> 2*P + 2*Q # indirect doctest\nExpecting:\n    (x^2 - 2*x + 1, y - 3/2*a*x + 1/2*a)\n```\n\nin sage/schemes/hyperelliptic_curves/jacobian_morphism.py seems to loop forever - at least I killed it after it used 22 minutes of CPU time on the new sage.math.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-19T03:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37969",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37897",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -97,15 +95,15 @@ Michael
 
 ---
 
-archive/issue_comments_037970.json:
+archive/issue_comments_037898.json:
 ```json
 {
     "body": "A new patch which fixes the doctests is attached.",
     "created_at": "2009-01-21T08:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37970",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37898",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -115,15 +113,15 @@ A new patch which fixes the doctests is attached.
 
 ---
 
-archive/issue_comments_037971.json:
+archive/issue_comments_037899.json:
 ```json
 {
     "body": "Code wise: this looks great!  I heartily agree with the sentiment and implementation.\n\nTesting wise: I tested this on sage.math and think that it works.",
     "created_at": "2009-01-21T19:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37971",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37899",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -135,15 +133,15 @@ Testing wise: I tested this on sage.math and think that it works.
 
 ---
 
-archive/issue_comments_037972.json:
+archive/issue_comments_037900.json:
 ```json
 {
     "body": "Unfortunately this has been broken due to other merges, probably #4965:\n\n```\nmabshoff@geom:/scratch/mabshoff/sage-3.3.alpha1/devel/sage$ patch -p1 < trac_4981_polynomial_ring.patch \npatching file sage/calculus/calculus.py\npatching file sage/misc/classgraph.py\npatching file sage/rings/polynomial/polynomial_ring.py\nHunk #2 succeeded at 86 with fuzz 2 (offset 2 lines).\nHunk #3 succeeded at 102 (offset 2 lines).\nHunk #4 succeeded at 111 (offset 2 lines).\nHunk #5 succeeded at 156 (offset 2 lines).\nHunk #6 succeeded at 167 (offset 2 lines).\nHunk #7 succeeded at 231 (offset 2 lines).\nHunk #8 succeeded at 277 (offset 2 lines).\nHunk #9 succeeded at 490 (offset 2 lines).\nHunk #10 FAILED at 504.\nHunk #11 succeeded at 968 (offset 2 lines).\nHunk #12 succeeded at 983 (offset 2 lines).\nHunk #13 FAILED at 1125.\n2 out of 13 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_ring.py.rej\npatching file sage/rings/polynomial/polynomial_template.pxi\nHunk #1 FAILED at 85.\n1 out of 1 hunk FAILED -- saving rejects to file sage/rings/polynomial/polynomial_template.pxi.rej\n```\n\nPlease rebase for 3.3.alpha1.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T02:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37972",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37900",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -182,15 +180,15 @@ Michael
 
 ---
 
-archive/issue_comments_037973.json:
+archive/issue_comments_037901.json:
 ```json
 {
     "body": "I fixed a tiny doctesting issue in the second patch:\n\n```\nsage -t -long \"devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.alpha2/devel/sage/sage/rings/polynomial/polynomial_quotient_ring.py\", line 84:\n    sage: A.<y> = PolynomialRing(GF(2)); A\nExpected:\n    Univariate Polynomial Ring in y over Finite Field of size 2\nGot:\n    Univariate Polynomial Ring in y over Finite Field of size 2 (using NTL)\n**********************************************************************\n1 items had failures:\n```\n\nBurcin explained how he fixed the hang, positive review.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-24T17:33:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37973",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37901",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -219,15 +217,15 @@ Michael
 
 ---
 
-archive/issue_comments_037974.json:
+archive/issue_comments_037902.json:
 ```json
 {
     "body": "clean up polynomial_ring.py (take 4)",
     "created_at": "2009-01-24T17:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37974",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37902",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -237,15 +235,15 @@ clean up polynomial_ring.py (take 4)
 
 ---
 
-archive/issue_comments_037975.json:
+archive/issue_comments_037903.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-24T17:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37975",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37903",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -255,15 +253,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_037976.json:
+archive/issue_comments_037904.json:
 ```json
 {
     "body": "Attachment [polynomial_ring.patch](tarball://root/attachments/some-uuid/ticket4981/polynomial_ring.patch) by mabshoff created at 2009-01-24 17:45:36\n\nMerged polynomial_ring.py (take 4) in Sage 3.3.alpha2",
     "created_at": "2009-01-24T17:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37976",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4981#issuecomment-37904",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

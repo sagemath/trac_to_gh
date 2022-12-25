@@ -6,15 +6,14 @@ archive/issues_003975.json:
     "body": "Assignee: @williamstein\n\ndelta is computed with xmin and xmax in the wrong order resulting in a negative delta.\n\nThis makes the rest of the code go very slowly.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3975\n\n",
     "created_at": "2008-08-28T14:42:56Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Small mistake in the new plot() code.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3975",
-    "user": "anakha"
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3975
 
 ---
 
-archive/issue_comments_028561.json:
+archive/issue_comments_028503.json:
 ```json
 {
     "body": "Attachment [trac_3975.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.patch) by anakha created at 2008-08-28 14:49:41",
     "created_at": "2008-08-28T14:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28561",
-    "user": "anakha"
+    "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28503",
+    "user": "https://trac.sagemath.org/admin/accounts/users/anakha"
 }
 ```
 
@@ -51,15 +50,15 @@ Attachment [trac_3975.patch](tarball://root/attachments/some-uuid/ticket3975/tra
 
 ---
 
-archive/issue_comments_028562.json:
+archive/issue_comments_028504.json:
 ```json
 {
     "body": "Attachment [trac_3975.2.patch](tarball://root/attachments/some-uuid/ticket3975/trac_3975.2.patch) by @mwhansen created at 2008-08-28 19:31:34\n\nI posted a rebased patch which should apply with all of the new plotting patches applied.\n\nPositive review.",
     "created_at": "2008-08-28T19:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28562",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28504",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -73,15 +72,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_028563.json:
+archive/issue_comments_028505.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-28T20:39:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28563",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28505",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +90,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028564.json:
+archive/issue_comments_028506.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha2",
     "created_at": "2008-08-28T20:39:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28564",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3975#issuecomment-28506",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

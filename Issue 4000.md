@@ -6,15 +6,13 @@ archive/issues_004000.json:
     "body": "Assignee: somebody\n\nCC:  @burcin drkirkby spancratz @mwhansen @malb @jdemeyer @peterjeremy\n\nBill Hart wrote on [sage-devel]:\n\n\"\"\"\nAlmost everything over Q should probably be converted to a problem\nover Z. I haven't seen any polynomial problems over Q which should not\nbe dealt with this way so far, but I suppose they may exist.\n\"\"\"\n\nFurther justification:\n\n```\nsage: f = R.random_element(2000)\nsage: g = R.random_element(2000)\nsage: fD = f.denominator()\nsage: gD = g.denominator()\nsage: fZ = (fD * f).change_ring(ZZ)\nsage: gZ = (gD * g).change_ring(ZZ)\nsage: %time _ = f*g\nCPU times: user 0.63 s, sys: 0.02 s, total: 0.66 s\nWall time: 0.67 s\n\nsage: %time _ = (fZ*gZ)\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\n\nsage: %time _ = (fZ*gZ)/(fD*gD) \nCPU times: user 0.06 s, sys: 0.00 s, total: 0.06 s\nWall time: 0.06 s\n\nsage: fM = magma(f)\nsage: gM = magma(g)\nsage: t = magma.cputime()\nsage: _ = fM*gM\nsage: magma.cputime(t)\n0.059999999999999998\n```\n\n\n\n```\nsage: f = R.random_element(4000) \nsage: g = R.random_element(4000) \nsage: fD = f.denominator()\nsage: gD = g.denominator()\nsage: fZ = (fD * f).change_ring(ZZ)\nsage: gZ = (gD * g).change_ring(ZZ)\nsage: %time _ = f*g\nCPU times: user 2.11 s, sys: 0.00 s, total: 2.12 s\nWall time: 2.14 s\nsage: %time _ = (fZ*gZ)\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\nsage: %time _ = (fZ*gZ)/(fD*gD)\nCPU times: user 0.14 s, sys: 0.01 s, total: 0.15 s\nWall time: 0.15 s\nsage: fM = magma(f)\nsage: gM = magma(g)\nsage: t = magma.cputime()\nsage: _ = fM*gM\nsage: magma.cputime(t)\n0.10000000000000001\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4000\n\n",
     "created_at": "2008-08-30T12:21:46Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Implement QQ['x'] via Flint ZZ['x'] + denominator",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4000",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: somebody
@@ -93,15 +91,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4000
 
 ---
 
-archive/issue_comments_028738.json:
+archive/issue_comments_028680.json:
 ```json
 {
     "body": "The attached patch provides the basic skeleton for the proposed new implementation. The following already works with the attached patch:\n\n\n```python\nsage: from sage.rings.polynomial.polynomial_rational_flint import Polynomial_rational_dense_flint\nsage: P.<t> = QQ[]\nsage: a = Polynomial_rational_dense_flint(P,1/2)\nsage: b = Polynomial_rational_dense_flint(P,2/1)\nsage: t = Polynomial_rational_dense_flint(P,is_gen=True)\nsage: a*t\n1/2*t\nsage: a*t*b\nt\nsage: a*t*b*b\n2*t\nsage: a*t*b*(b*t)\n2*t^2\nsage: a*t*b*(b*t)*a\nt^2\n```\n",
     "created_at": "2009-09-02T14:08:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28738",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28680",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -131,15 +129,15 @@ t^2
 
 ---
 
-archive/issue_comments_028739.json:
+archive/issue_comments_028681.json:
 ```json
 {
     "body": "I've now implemented most methods in the prototype from the previous patch uploaded, and sent a message to sage-devel under the thread \"Improving QQ['x']\" with some questions.\n\nSebastian",
     "created_at": "2009-09-07T23:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28739",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28681",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -151,15 +149,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028740.json:
+archive/issue_comments_028682.json:
 ```json
 {
     "body": "**Some remarks**\n\n* the patch uses the old style docstring format, cf. http://wiki.sagemath.org/combinat/HelpOnTheDoc \n* you should claim copyright\n* `cdef inline int _celement_canonicalise` why not `void`?\n* **all** `celement_foo` functions should have doctests, which call the `QQ[x]` methods which call the `celement_` functions\n* have you tried switching the default to this implementation to see how many doctests fail?",
     "created_at": "2009-09-08T09:56:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28740",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28682",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -175,15 +173,15 @@ archive/issue_comments_028740.json:
 
 ---
 
-archive/issue_comments_028741.json:
+archive/issue_comments_028683.json:
 ```json
 {
     "body": "Hi Martin,\n\nI've now implemented all methods in the prototype.  (I'll attach a new patch in a few minutes.)  All of your above comments make sense and I can go through this tomorrow.  One thing I could not get done is make SAGE use this implementation by default.  In the file polynomial_ring.py, I tried replacing the line 1185 with\n\n    from sage.rings.polynomial.polynomial_rational_flint import Polynomial_rational_dense_flint\n    element_class = Polynomial_rational_dense_flint\n\nand while building still works, executing ./sage results in a whole screen full output, ending with\n\n    b37bb0/home/suser/sage-4.1.2.alpha0/local/bin/sage-sage: line 199: 16297 Aborted                 sage-ipython \"$`@`\" -i\n\nAm I making a mistake in the way I am trying to switch the default, or does this due to problems in the actual new implementation?  I've got no idea how to fix this.  Of course, I am then happy to do lots of testing.\n\nKind regards,\n\nSebastian",
     "created_at": "2009-09-09T22:06:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28741",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28683",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -208,15 +206,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028742.json:
+archive/issue_comments_028684.json:
 ```json
 {
     "body": "I can take a look tomorrow to debug this.",
     "created_at": "2009-09-09T23:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28742",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28684",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -226,15 +224,15 @@ I can take a look tomorrow to debug this.
 
 ---
 
-archive/issue_comments_028743.json:
+archive/issue_comments_028685.json:
 ```json
 {
     "body": "I fixed the startup crash. I suggest you take a look at `fmpq.diff` to see what I changed. If you want to debug these kind of issues start Sage using `sage -gdb` or `sage -valgrind` (you will need to install the optional Valgrind SPKG for this to work). Note that there is still some conversion code missing in `polynomial_rational_flint.pyx`.\n\n\n```python\nsage: P.<x> = QQ[]\nsage: f = P.random_element(2000)\nsage: g = P.random_element(2000)\nsage: %time _ = f*g\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.02 s\n```\n\n\n\n```python\nsage: P.<x> = PolynomialRing(QQ,'x',implementation='pari')\nsage: f = P.random_element(2000)\nsage: g = P.random_element(2000)\nsage: %time _ = f*g\nCPU times: user 0.59 s, sys: 0.00 s, total: 0.59 s\nWall time: 0.59 s\n```\n\n\n\n```python\nsage: P.<x> = QQ[]\nsage: f = P.random_element(5000)\nsage: g = P.random_element(5000)\nsage: %time _ = f*g\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.04 s\n```\n\n\n\n```python\nsage: fM = magma(f)\nsage: gM = magma(g)\nsage: t = magma.cputime()\nsage: _ = fM*gM\nsage: magma.cputime(t)\n0.12\n```\n",
     "created_at": "2009-09-10T11:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28743",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28685",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -288,15 +286,15 @@ sage: magma.cputime(t)
 
 ---
 
-archive/issue_comments_028744.json:
+archive/issue_comments_028686.json:
 ```json
 {
     "body": "Thanks for the quick debugging and making the code accessible in SAGE for testing!  I'll upload a new version of the patch later.  Here are a few (unsorted) remarks:\n\n- The printing isn't \"nice\" yet:  Rationals are still printed in the form r/s even if s divides r.  In fact, all coefficients are printed with the common denominator of the polynomial.  I've got an idea of how to fix that, but I am not sure it'll work;  I'll give it a try later.\n\n- Say we set up to polynomial rings R[x] and S[y], one using the generic implementation and one using FLINT.  Then sometimes (usually?) coercion like \"f_flint = S(f_generic)\" or \"f_generic = R(f_flint)\" works, but sometimes it ends in a segfault.  For two random polynomials f and d, of two successive calls \"q, s, t = xgcd(f, d)\" the first one succeeded and the second one ended in a segfault.  This seems *very* strange to me!\n\n- We achieve a performance gain except in the cases of addition and subtraction.  (See below.)\n\n- The method xgcd doesn't give the right result yet, I'll look into that later.\n\n- I have no idea what you mean by \"Note that there is still some conversion code missing in polynomial_rational_flint.pyx.\"  Are there any examples of this in other files?\n\n- I'll write up the doctests later.  Regarding your comments on using the \"old\" documentation style, I don't quite understand this.\n\nHere is a complete (except for XGCD) list of performance comparisons, using the local installation of SAGE 4.1.2.alpha0 plus this patch on my laptop (Ubuntu 8.10, Intel Core 2 Duo).  The first few tests, from comparison through to power, involve random polynomials f and g of degrees 2000, the division tests use random polynomials f and d of degrees 800 and 560, and for the GCD test f and d have degree 60 and 42.  In each case, the first output line is for the generic implementation, the second output line is for the new implementation using FLINT.\n\n    {{{\n    Comparison: f == g\n    1 loops, best of 3: 10 \u00b5s per loop\n    1 loops, best of 3: 954 ns per loop\n    Comparison: f < g\n    1 loops, best of 3: 11 \u00b5s per loop\n    1 loops, best of 3: 1.91 \u00b5s per loop\n    Addition: f + g\n    1 loops, best of 3: 373 \u00b5s per loop\n    1 loops, best of 3: 2.26 ms per loop\n    Subtraction: f - g\n    1 loops, best of 3: 474 \u00b5s per loop\n    1 loops, best of 3: 2.23 ms per loop\n    Negation: -f\n    1 loops, best of 3: 12.9 ms per loop\n    1 loops, best of 3: 39.8 \u00b5s per loop\n    Multiplication: f * g\n    1 loops, best of 3: 549 ms per loop\n    1 loops, best of 3: 15.9 ms per loop\n    Power: f ** 4\n    1 loops, best of 3: 15.1 s per loop\n    1 loops, best of 3: 63.7 ms per loop\n    Division: q, r = f.quo_rem(d)\n    1 loops, best of 3: 2.42 s per loop\n    1 loops, best of 3: 177 ms per loop\n    Division: q = f // d\n    1 loops, best of 3: 2.43 s per loop\n    1 loops, best of 3: 63.9 ms per loop\n    Division: r = f % d\n    1 loops, best of 3: 2.43 s per loop\n    1 loops, best of 3: 193 ms per loop\n    GCD\n    1 loops, best of 3: 1.81 s per loop\n    1 loops, best of 3: 88.9 \u00b5s per loop\n    }}}\n\nSebastian",
     "created_at": "2009-09-10T21:24:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28744",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28686",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -358,15 +356,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028745.json:
+archive/issue_comments_028687.json:
 ```json
 {
     "body": "Replying to [comment:8 spancratz]:\n> - Say we set up to polynomial rings R[x] and S[y], one using the generic implementation and one using FLINT.  Then sometimes (usually?) coercion like \"f_flint = S(f_generic)\" or \"f_generic = R(f_flint)\" works, but sometimes it ends in a segfault.  For two random polynomials f and d, of two successive calls \"q, s, t = xgcd(f, d)\" the first one succeeded and the second one ended in a segfault.  This seems *very* strange to me!\n\nTry running Sage with `sage -gdb` and/or `sage -valgrind`. The later requires the optional Valgrind SPKG. The output of valgrind is incredibly useful and can be found in `~/.sage/valgrind`. If you don't get anywhere, I can take a look. But learning Valgrind is well worth it :)\n\n> - We achieve a performance gain except in the cases of addition and subtraction.  (See below.)\n\nWe should think about how to make it more efficient, e.g. by only multiplying by the multiplier to get the LCM? Magma can do it faster than what we can do it seems.\n\n> - The method xgcd doesn't give the right result yet, I'll look into that later.\n> \n> - I have no idea what you mean by \"Note that there is still some conversion code missing in polynomial_rational_flint.pyx.\"  Are there any examples of this in other files?\n\nYou are right, the overflow I was expecting doesn't happen (I think this is handled correctly in the base ring). We should consider making `x + 1` (1 either int or Integer) fast though by writing special code similar to the Rational code in the `__init__` function of `polynomial_rational_flint.pyx`. Also, construction from a list `P([1,2,3,4])` should be made faster, cf. the zmod_poly implementation.\n\n> - I'll write up the doctests later.  Regarding your comments on using the \"old\" documentation style, I don't quite understand this.\n\nYou wrote e.g. ` \\code{foo} ` which is the old LaTeX style. It should be using the Sphinx markup now.\n\n> Here is a complete (except for XGCD) list of performance comparisons, using the local installation of SAGE 4.1.2.alpha0 plus this patch on my laptop (Ubuntu 8.10, Intel Core 2 Duo).  The first few tests, from comparison through to power, involve random polynomials f and g of degrees 2000, the division tests use random polynomials f and d of degrees 800 and 560, and for the GCD test f and d have degree 60 and 42.  In each case, the first output line is for the generic implementation, the second output line is for the new implementation using FLINT.\n\nThis is encouraging!",
     "created_at": "2009-09-10T23:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28745",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28687",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -397,15 +395,15 @@ This is encouraging!
 
 ---
 
-archive/issue_comments_028746.json:
+archive/issue_comments_028688.json:
 ```json
 {
     "body": "Also, I think our design for `.den` is false. It shouldn't be preallocated because this makes you call realloc, i.e. we have two system calls instead of one. This is quite expensive.",
     "created_at": "2009-09-11T00:01:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28746",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28688",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -415,15 +413,15 @@ Also, I think our design for `.den` is false. It shouldn't be preallocated becau
 
 ---
 
-archive/issue_comments_028747.json:
+archive/issue_comments_028689.json:
 ```json
 {
     "body": "Actually, I am not quite sure about this.  When working with a random polynomial of degree 2000, which will have lots of non-zero entries all of type fmpz_t, it shouldn't really matter whether we manually initialise a few more for the denominators.\n\nI've tried implementing the denominator with the convention that it is either ``NULL`` (which should be interpreted as one) or initialised to a positive integer.  But this didn't really change the performance.\n\nAnother idea, which will sometimes help to keep numbers small, is to instead represented the polynomial over the rationals as ``(num / dem) prim`` where ``num / dem`` is a rational number in reduced form and ``prim`` is a primitive integer polynomial with positive leading coefficient.  Obviously, this change vastly improved the performance of negation (which then only operates on the rational number and leaves the integer polynomial part alone).  But it didn't change much apart from that.  Anyway, given we need to compute the content of the numerator anyway to ensure that it is coprime to the denominator, we might as well store it separately.  I'll implement this throughout the patch and upload a new version later today.\n\nThis still leaves the problem:  How can we speed up addition?\n\nAt the moment, I don't have any further ideas.  In fact, I think it might perhaps be the case that we simply can't, since in this kind of implementation we have to at least do a few polynomial scalar multiplications (and perhaps polynomial scalar divisions as well as integer gcd computations to maintain the form of the representation) plus all the coefficient additions.  In contrast to this, implementing polynomials as an array of coefficients one only has to do the (rational!) coefficient additions.\n\nSo the next things I'll do are\n\n- Change the fmpq_poly_t data type\n- Change all the methods accordingly\n- Write docstrings\n\nDoes anyone have any ideas about the addition?\n\nSebastian",
     "created_at": "2009-09-11T11:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28747",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28689",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -451,15 +449,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028748.json:
+archive/issue_comments_028690.json:
 ```json
 {
     "body": "Replying to [comment:11 spancratz]:\n> Actually, I am not quite sure about this.  When working with a random polynomial of degree 2000, which will have lots of non-zero entries all of type fmpz_t, it shouldn't really matter whether we manually initialise a few more for the denominators.\n\nWe shouldn't forget about small polynomials, they should be fast too. Two instead of one system call sounds rather expensive to me for basic arithmetic.\n \n> I've tried implementing the denominator with the convention that it is either ``NULL`` (which should be interpreted as one) or initialised to a positive integer.  But this didn't really change the performance.\n\nDid you try small examples? Also, how much does the realloc trick you implemented give you?\n\n> Another idea, which will sometimes help to keep numbers small, is to instead represented the polynomial over the rationals as ``(num / dem) prim`` where ``num / dem`` is a rational number in reduced form and ``prim`` is a primitive integer polynomial with positive leading coefficient.  Obviously, this change vastly improved the performance of negation (which then only operates on the rational number and leaves the integer polynomial part alone).  But it didn't change much apart from that.  Anyway, given we need to compute the content of the numerator anyway to ensure that it is coprime to the denominator, we might as well store it separately.  I'll implement this throughout the patch and upload a new version later today.\n> \n> This still leaves the problem:  How can we speed up addition?\n\nDid you try the LCM idea? Rationale:\n\n\n```python\nsage: P.<x> = QQ[]\nsage: f = P.random_element(3000)\nsage: g = P.random_element(3000)\nsage: fD = f.denominator()\nsage: gD = g.denominator()\nsage: (fD*gD).nbits()\n320\nsage: (fD.lcm(gD)).nbits()\n228\n```\n\n\n> At the moment, I don't have any further ideas.  In fact, I think it might perhaps be the case that we simply can't, since in this kind of implementation we have to at least do a few polynomial scalar multiplications (and perhaps polynomial scalar divisions as well as integer gcd computations to maintain the form of the representation) plus all the coefficient additions.  In contrast to this, implementing polynomials as an array of coefficients one only has to do the (rational!) coefficient additions.\n\nWell, this other implementation would have to do quite a few rational additions where it would have to deal with denominators quite a bit. I am not convinced yet it has to be this slow. You could also ask on [sage-devel] I am sure, e.g. Bill Hart (main author of FLINT) would have some cool ideas.",
     "created_at": "2009-09-11T12:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28748",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28690",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -500,15 +498,15 @@ Well, this other implementation would have to do quite a few rational additions 
 
 ---
 
-archive/issue_comments_028749.json:
+archive/issue_comments_028691.json:
 ```json
 {
     "body": "I am sorry for the delay in working on this.  Rather than trying the approach of writing the polynomial as `r A / s`, I've tried again to write this as `A / s` only as you laid out initially, this time trying really hard to avoid allocating anything new.  Not everything is working again yet, I still need to re-write the three division functions, exponentiation and the two gcd functions.  The upside is that everything seems to be lots faster now :).\n\nHopefully I'll be able to upload something useful tomorrow.\n\nSebastian",
     "created_at": "2009-09-12T23:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28749",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28691",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -522,15 +520,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028750.json:
+archive/issue_comments_028692.json:
 ```json
 {
     "body": "The switch to include NULL denominators still isn't quite done.  However, I *think* addition and multiplication are bug-free already and show another massive improvement in speed.  There are definitely still bugs in the division method, and the modular exponentiation as well as the gcd methods aren't implemented yet.  I should be able to look into this tomorrow.\n\nSebastian",
     "created_at": "2009-09-14T00:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28750",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28692",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -542,15 +540,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028751.json:
+archive/issue_comments_028693.json:
 ```json
 {
     "body": "I can't test the most current patch (on geom.math):\n\n```python\nsage: P.<x> = PolynomialRing(QQ)\nsage: f = P.random_element(2000)\n...\n__celement_den_fit_limbs\nError: division by zero!\n/scratch/malb/sage-4.1.2.alpha1/local/bin/sage-sage: line 199: 12195 Aborted                 sage-ipython \"$@\" -i\n```\n",
     "created_at": "2009-09-14T11:47:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28751",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28693",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -570,15 +568,15 @@ Error: division by zero!
 
 ---
 
-archive/issue_comments_028752.json:
+archive/issue_comments_028694.json:
 ```json
 {
     "body": "Hi Martin,\n\nI am sorry for that.  Last night and this morning I fixed another couple of bugs.  In a few minutes, I'll upload a new patch (or rather, again the difference from the 20090911 patch).  By the way, for debugging purposes all methods in the linkage file now begin with printing the method's name (although in all but the floordiv method, that line begins with '#').\n\nRandom (performance!, not correctness...) tests ran fine last night for polynomials of degree 2000 for the methods ==, <, +, -, neg, *, ^.  I thought the three division methods should work fine now, until I stumbled across the following segfault:\n\n    {{{\n    sage: S.<y> = QQ[]\n    sage: f = -3 * y^10 - 4 * y^9\n    sage: g = (1/2) * y^6 + 3 * y^5 + 160930 * y^4\n    sage: f // g\n    celement_floordiv\n    Perform pseudo division -3*x<sup>10-4*x</sup>9 x<sup>6+6*x</sup>5+321860*x^4\n    \n    \n    ------------------------------------------------------------\n    Unhandled SIGSEGV: A segmentation fault occured in SAGE.\n    This probably occured because a *compiled* component\n    of SAGE has a bug in it (typically accessing invalid memory)\n    or is not properly wrapped with _sig_on, _sig_off.\n    You might want to run SAGE under gdb with 'sage -gdb' to debug this.\n    SAGE will now terminate (sorry).\n    ------------------------------------------------------------\n    }}}\n\nThis strikes me as very odd because the segfault seems to occur in the call ``fmpz_poly_pseudo_div(q.num, &m, a.num, b.num)`` with ``a.num`` the polynomial ``-3*x<sup>10-4*x</sup>9`` and ``b.den`` the polynomial ``x<sup>6+6*x</sup>5+321860*x^4``.  Perhaps you could have a look at this one?\n\nI haven't looked at the two gcd methods yet, but I'll do that later today or tomorrow.\n\nAs the last question about the implementation (for this method), I noticed that polynomials over QQ in SAGE have the method ``denominator``, which clearly this implementation should overwrite.  On which level/ in which file should this be done?\n\nFinally, here are the performance timings, in each case for ten random polynomials of degree 2000, first the time for the generic implementation and then the time for this implementation with FLINT:\n\n- ``==`` -  20\u00b5s, 1\u00b5s\n- ``<`` -  20\u00b5s, 1\u00b5s\n- ``+`` -  400\u00b5s, 100\u00b5s\n- ``-`` -  400\u00b5s, 100\u00b5s\n- ``neg`` -  20ms, 20\u00b5s\n- ``*`` -  500ms, 1ms\n- ``^`` (to the 4th power) -  15s, 30\u00b5s\n\nKind regards,\n\nSebastian",
     "created_at": "2009-09-14T14:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28752",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28694",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -631,15 +629,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028753.json:
+archive/issue_comments_028695.json:
 ```json
 {
     "body": "Hi Martin,\n\nI just started to look at the gcd methods again and I also looked at the logic in polynomial_template.pxi.  Here's the question:\n\nSince the gcd of two polynomials is only defined up to multiplication by rationals, what's the *right* way of dealing with this?  I think one can make a good argument for always returning the same normalisation.  This would also mean that we do *not* necessarily have gcd(a,0) == a.  This is currently the way it's handled in the file polynomial_template.pxi.  If we want to normalise the gcd, in which way should this be done?  If it's non-zero..\n\n-  Monic rational polynomial\n-  Primitive integer polynomial with positive leading coefficient\n\nOf course, there are lots more but I think these two might be the most sensible choices.\n\nThe first one has the advantage that it generalises to all polynomial rings (over commutative rings with 1, at least).  Upon adding a method returning the monic scalar multiple of a polynomial to the template file, one can still handle the cases of gcd(a,0) and gcd(0,b) in the template file.\n\nPersonally though, I am more in favour of the second option, since this might lead to faster code when working with QQ[].  In this case, we should remove the handling of the above two cases from the template file and always pass the call on to celement_gcd.  This would mean that we leave the normalisation up to the actual implementation of the polynomial ring, rather than enforcing it across all base rings using the template file.  We would then also have to make sure that all celement_gcd methods are happy to deal with zero arguments.\n\nWhat do you think?\n\nSebastian",
     "created_at": "2009-09-14T16:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28753",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28695",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -666,15 +664,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028754.json:
+archive/issue_comments_028696.json:
 ```json
 {
     "body": "Replying to [comment:16 spancratz]:\n> Perhaps you could have a look at this one?\n\nI will (hopefully) take a look later this week.\n\n> As the last question about the implementation (for this method), I noticed that polynomials over QQ in SAGE have the method ``denominator``, which clearly this implementation should overwrite.  On which level/ in which file should this be done?\n\nYou would add a method `denominator()` to `Polynomial_rational_dense_flint`.\n\n> Finally, here are the performance timings, in each case for ten random polynomials of degree 2000, first the time for the generic implementation and then the time for this implementation with FLINT:\n\nIf I understand this correctly, then addition is 20x faster than the previous implementation just because you avoid a remalloc?",
     "created_at": "2009-09-14T20:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28754",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28696",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -695,15 +693,15 @@ If I understand this correctly, then addition is 20x faster than the previous im
 
 ---
 
-archive/issue_comments_028755.json:
+archive/issue_comments_028697.json:
 ```json
 {
     "body": "Replying to [comment:17 spancratz]:\n> Since the gcd of two polynomials is only defined up to multiplication by rationals, what's the *right* way of dealing with this?  I think one can make a good argument for always returning the same normalisation.  This would also mean that we do *not* necessarily have gcd(a,0) == a.  This is currently the way it's handled in the file polynomial_template.pxi.  If we want to normalise the gcd, in which way should this be done?  If it's non-zero..\n\nI think we should have `gcd(a,0) = 1` because this is what `gcd(1/2,0)` returns. I would like to avoid to put this logic in the celement_gcd implementations but if we have to then ... well we have to :)\n\n> Personally though, I am more in favour of the second option, since this might lead to faster code when working with QQ[].  In this case, we should remove the handling of the above two cases from the template file and always pass the call on to celement_gcd.  This would mean that we leave the normalisation up to the actual implementation of the polynomial ring, rather than enforcing it across all base rings using the template file.  We would then also have to make sure that all celement_gcd methods are happy to deal with zero arguments.\n\nThis might be worth raising on [sage-devel] where people care much more about this than I do, i.e. I guess it is a relevant corner case for number theory and thus people might have strong feelings about it?",
     "created_at": "2009-09-14T20:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28755",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28697",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -720,15 +718,15 @@ This might be worth raising on [sage-devel] where people care much more about th
 
 ---
 
-archive/issue_comments_028756.json:
+archive/issue_comments_028698.json:
 ```json
 {
     "body": "> > As the last question about the implementation (for this method), I noticed that polynomials over QQ in SAGE have the method ``denominator``, which clearly this implementation should overwrite.  On which level/ in which file should this be done?\n> \n> You would add a method `denominator()` to `Polynomial_rational_dense_flint`.\n\nOK, I'll do that.\n\n> > Finally, here are the performance timings, in each case for ten random polynomials of degree 2000, first the time for the generic implementation and then the time for this implementation with FLINT:\n> \n> If I understand this correctly, then addition is 20x faster than the previous implementation just because you avoid a remalloc?\n\nYes.  Actually, throughout I am now trying very hard to re-use variables rather than allocating new variables all over the place.  It makes the code quite ugly...  but definitely faster, which this is about, right? :)",
     "created_at": "2009-09-14T21:20:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28756",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28698",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -748,15 +746,15 @@ Yes.  Actually, throughout I am now trying very hard to re-use variables rather 
 
 ---
 
-archive/issue_comments_028757.json:
+archive/issue_comments_028699.json:
 ```json
 {
     "body": "Replying to [comment:19 malb]:\n> Replying to [comment:17 spancratz]:\n> I think we should have `gcd(a,0) = 1` because this is what `gcd(1/2,0)` returns. I would like to avoid to put this logic in the celement_gcd implementations but if we have to then ... well we have to :)\n\nI didn't mean the above for rational numbers ``a``, but for rational polynomials ``a``.  Your integer example above highlights that ``gcd`` doesn't necessarily guarantee ``gcd(a, 0) == a``.  The behaviour of ``gcd`` for integers suggests the method should return the monic normalisation.  However, the current logic in ``template_polynomial.pxi`` doesn't do this, for example:\n\n    {{{\n    sage: R.<t> = PolynomialRing(IntegerModRing(3), 't')\n    sage: f = 2*t + 1\n    sage: type(f)\n    <type 'sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint'>\n    sage: gcd(f, R(0))\n    2*t + 1\n    }}}\n\nIn the above case, the monic version would be ``t + 2``.\n\n> This might be worth raising on [sage-devel] where people care much more about this than I do, i.e. I guess it is a relevant corner case for number theory and thus people might have strong feelings about it?\n\nOK, I'll do this.\n\nSebastian",
     "created_at": "2009-09-14T21:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28757",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28699",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -787,15 +785,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028758.json:
+archive/issue_comments_028700.json:
 ```json
 {
     "body": "I have now opened another ticket, #6941, to change the template implementation, pushing all the logic into the ``celement_foo`` methods rather than taking away the cases ``gcd(a,0)`` and ``gcd(0,b)`` on a higher level.  The patch is very short --- it only does the small expected changes to the template file and the GF2X and ZMOD linkage files, plus one other file in the hyperelliptic curve module where the current behaviour of xgcd is used.\n\nMartin, would you be happy to review that patch?\n\nSebastian",
     "created_at": "2009-09-16T13:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28758",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28700",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -809,15 +807,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028759.json:
+archive/issue_comments_028701.json:
 ```json
 {
     "body": "I've now implemented almost all functionality from the former generic implementation, most of it massively improved through FLINT.  There are also some new methods.  All of this is in the patch I uploaded just now, still as a difference to the 20090911 patch.  Running make test still results in many failures, although fewer than last week.\n\nSebastian",
     "created_at": "2009-09-19T19:40:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28759",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28701",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -829,15 +827,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028760.json:
+archive/issue_comments_028702.json:
 ```json
 {
     "body": "Apart from a bad indentation in ``polynomial_quotient_ring_element``, for which I didn't want to re-upload a patch, I am now down to the following doctest failures:\n\n        {{{\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/padic_lseries.py\"\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_generic.py\"\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/padics.py\"\n        sage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_curve_isogeny.py\"\n        sage -t  \"devel/sage/sage/tests/book_stein_modform.py\"\n        sage -t  \"devel/sage/sage/rings/qqbar.py\"\n        sage -t  \"devel/sage/sage/rings/number_field/number_field_element.pyx\"\n        sage -t  \"devel/sage/sage/modular/modform/element.py\"\n        sage -t  \"devel/sage/sage/modular/overconvergent/genus0.py\"\n        sage -t  \"devel/sage/sage/modular/hecke/submodule.py\"\n        sage -t  \"devel/sage/sage/structure/sage_object.pyx\"\n        }}}\n\nAll but one of them are memory problems, either in ``mpq_canonicalize`` (called in the ``__getitem__`` method) or in ``fmpz_poly_mul`` called in ``celement_mul``.  At the moment, I do not know how to resolve these.\n\nSebastian",
     "created_at": "2009-09-21T22:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28760",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28702",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -865,15 +863,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028761.json:
+archive/issue_comments_028703.json:
 ```json
 {
     "body": "Almost all of the memory problems are now resolved.  They were arising because I wrongly assumed ``fmpz_`` methods (*not* ``fmpz_poly_``;  they work just fine) supported aliasing of the inputs and outputs.  Apart from the method ``fmpz_neg``, I think I have fixed this in all places where I am using it, apart from the square-free decomposition in polynomial_rational_flint.pyx.  I'll rewrite that, too, but I've already checked that this method does not get called in the following last two remaining doctest failures:\n\n    {{{\n    The following tests failed:\n    \n        sage -t  \"devel/sage/sage/rings/qqbar.py\"\n        sage -t  \"devel/sage/sage/structure/sage_object.pyx\"\n    }}}\n\nThe test in ``qqbar.py`` that seems to break down is the following piece of code:\n\n    {{{\n    sage: x = polygen(AA)\n    sage: r = QQbar.polynomial_root(x^5 - x - 1, CIF(RIF(0.1, 0.2), RIF(1.0, 1.1))); r\n    sage: r.real().minpoly()\n    }}}\n\nThe test in ``sage_object.pyx`` that breaks has to do with unpickling, and it's triggered by the following two lines:\n\n    {{{\n    sage: std = os.environ['SAGE_DATA'] + '/extcode/pickle_jar/pickle_jar.tar.bz2'\n    sage: sage.structure.sage_object.unpickle_all(std)\n    }}}\n\nI will try to chase down the first problem a little further than the ``minpoly()`` function, perhaps I can resolve it myself.  But any help with the second problem in particular would be very much appreciated.\n\nSebastian",
     "created_at": "2009-09-23T10:53:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28761",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28703",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -909,15 +907,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028762.json:
+archive/issue_comments_028704.json:
 ```json
 {
     "body": "I've added a patch which fixes the unpickling problem making sure that the old polynomials unpickle as the new polynomials.",
     "created_at": "2009-09-24T05:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28762",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28704",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -927,15 +925,15 @@ I've added a patch which fixes the unpickling problem making sure that the old p
 
 ---
 
-archive/issue_comments_028763.json:
+archive/issue_comments_028705.json:
 ```json
 {
     "body": "This gives the same answers for me before and after the patch.\n\n\n```\n    sage: x = polygen(AA)\n    sage: r = QQbar.polynomial_root(x^5 - x - 1, CIF(RIF(0.1, 0.2), RIF(1.0, 1.1))); r\n    sage: r.real().minpoly()\n```\n\n\nThe only difference is the test on line 2262. It expected \n\n\n```\n    cp = AA.common_polynomial(1/2*x^4 - 1/95*x^3 - 1/2*x^2 - 4)\n```\n\n\nbut got \n\n\n```\n    cp = AA.common_polynomial(x^4 - 2/95*x^3 - x^2 - 8)\n```\n\n\nI think that this is okay since they only differ by a multiple of 2 and thus have the exact same roots.",
     "created_at": "2009-09-24T05:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28763",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28705",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -971,15 +969,15 @@ I think that this is okay since they only differ by a multiple of 2 and thus hav
 
 ---
 
-archive/issue_comments_028764.json:
+archive/issue_comments_028706.json:
 ```json
 {
     "body": "Hello Mike,\n\nThank you for fixing the unpickling problem!\n\nAbout the second problem, the one in ``qqbar.py``, are you saying that the following code\n\n    {{{\n    sage: x = polygen(AA)\n    sage: r = QQbar.polynomial_root(x^5 - x - 1, CIF(RIF(0.1, 0.2), RIF(1.0, 1.1))); r\n    sage: r.real().minpoly()\n    }}}\n\nnow executes without problems on your setup?  On mine, it still crashes with a segmentation fault.  I've uploaded the complete traceback to http://sage.pastebin.com/m5249e09.  I still seems strange to me that the traceback doesn't seem to contain methods that this patch modifies directly.\n\nThe other difference you mention is no problem, of course.  That's because I have taken care to ensure that methods returning results that are only defined up to units return monic normalisations.\n\nMany thanks again for taking a look at this patch,\n\nSebastian",
     "created_at": "2009-09-24T10:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28764",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28706",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1007,15 +1005,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028765.json:
+archive/issue_comments_028707.json:
 ```json
 {
     "body": "As said, the above three lines of code extracted from the ``qqbar.py`` doctests still cause a problem for me.  I've chased it down for the last three hours now, and the following code breaks on my setup:\n\n    {{{\n    sage: R.<x> = QQ[]\n    sage: f = 422826864750/4773824138704099*x^18 - 8134231405059/9547648277408198*x^16 + 11311262264874/4773824138704099*x^14 - 12814039341867/4773824138704099*x^12 - 8509019074752/4773824138704099*x^10 + 707815020483605/9547648277408198*x^8 - 1781974116019893/4773824138704099*x^6+ 1316925435907659/4773824138704099*x^4 - 1088322011947813/9547648277408198*x^2 - 1/2*x + 1289415905296105/4773824138704099\n    sage: g = -76937/62774*x^19 - 30011/62774*x^18 + 144945/31387*x^17 + 174999/62774*x^16 - 377075/31387*x^15 - 354028/31387*x^14 + 929437/62774*x^13 + 983229/62774*x^12 - 725164/31387*x^11 - 984029/31387*x^10 + 945031/62774*x^9 + 1132829/31387*x^8 + 277343/31387*x^7 - 1107925/62774*x^6 - 432756/31387*x^5 - 23909/62774*x^4 + 202423/31387*x^3 + 167709/31387*x^2 - 10729/31387*x - 47216/31387\n    sage: f(g)\n    }}}\n\nI've upload a complete log of the session to [url]http://sage.pastebin.com/m7757deba[/url].  I am happy also re-implement polynomial composition using FLINT, it should be a lot faster than the generic code for this anyway.  (Idea:  To compose F = f/d with G = g/e, where f, g are in ZZ[] and d, e are integers, first \"rescale\" F by 1/e --- this method is implemented already --- and then compose the new polynomial with g.  There is a FLINT function for the last part.)  However, I don't know how or where the generic code is implemented in SAGE.\n\nSebastian",
     "created_at": "2009-09-24T18:20:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28765",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28707",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1036,15 +1034,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028766.json:
+archive/issue_comments_028708.json:
 ```json
 {
     "body": "Replying to [comment:29 spancratz]:\n> As said, the above three lines of code extracted from the ``qqbar.py`` doctests still cause a problem for me.  I've chased it down for the last three hours now, and the following code breaks on my setup:\n> \n>     {{{\n>     sage: R.<x> = QQ[]\n>     sage: f = 422826864750/4773824138704099*x^18 - 8134231405059/9547648277408198*x^16 + 11311262264874/4773824138704099*x^14 - 12814039341867/4773824138704099*x^12 - 8509019074752/4773824138704099*x^10 + 707815020483605/9547648277408198*x^8 - 1781974116019893/4773824138704099*x^6+ 1316925435907659/4773824138704099*x^4 - 1088322011947813/9547648277408198*x^2 - 1/2*x + 1289415905296105/4773824138704099\n>     sage: g = -76937/62774*x^19 - 30011/62774*x^18 + 144945/31387*x^17 + 174999/62774*x^16 - 377075/31387*x^15 - 354028/31387*x^14 + 929437/62774*x^13 + 983229/62774*x^12 - 725164/31387*x^11 - 984029/31387*x^10 + 945031/62774*x^9 + 1132829/31387*x^8 + 277343/31387*x^7 - 1107925/62774*x^6 - 432756/31387*x^5 - 23909/62774*x^4 + 202423/31387*x^3 + 167709/31387*x^2 - 10729/31387*x - 47216/31387\n>     sage: f(g)\n>     }}}\n> \n> I've upload a complete log of the session to [url]http://sage.pastebin.com/m7757deba[/url].  I am happy also re-implement polynomial composition using FLINT, it should be a lot faster than the generic code for this anyway.  (Idea:  To compose F = f/d with G = g/e, where f, g are in ZZ[] and d, e are integers, first \"rescale\" F by 1/e --- this method is implemented already --- and then compose the new polynomial with g.  There is a FLINT function for the last part.)  However, I don't know how or where the generic code is implemented in SAGE.\n> \n> Sebastian\n\nThis does not crash for me on 64-bit linux with both FLINT 1.3.0 and FLINT 1.5.0.  You should try the FLINT 1.5.0 spkg at http://sage.math.washington.edu/home/mhansen/flint-1.5.0.spkg.\n\n--Mike\n>     sage: f = 422826864750/4773824138704099*x^18 - 8134231405059/9547648277408198*x^16 + 11311262264874/4773824138704099*x^14 - 12814039341867/4773824138704099*x^12 - 8509019074752/4773824138704099*x^10 + 707815020483605/9547648277408198*x^8 - 1781974116019893/4773824138704099*x^6+ 1316925435907659/4773824138704099*x^4 - 1088322011947813/9547648277408198*x^2 - 1/2*x + 1289415905296105/4773824138704099\n>     sage: g = -76937/62774*x^19 - 30011/62774*x^18 + 144945/31387*x^17 + 174999/62774*x^16 - 377075/31387*x^15 - 354028/31387*x^14 + 929437/62774*x^13 + 983229/62774*x^12 - 725164/31387*x^11 - 984029/31387*x^10 + 945031/62774*x^9 + 1132829/31387*x^8 + 277343/31387*x^7 - 1107925/62774*x^6 - 432756/31387*x^5 - 23909/62774*x^4 + 202423/31387*x^3 + 167709/31387*x^2 - 10729/31387*x - 47216/31387\n>     sage: f(g)\n>     }}}\n> \n> I've upload a complete log of the session to [url]http://sage.pastebin.com/m7757deba[/url].  I am happy also re-implement polynomial composition using FLINT, it should be a lot faster than the generic code for this anyway.  (Idea:  To compose F = f/d with G = g/e, where f, g are in ZZ[] and d, e are integers, first \"rescale\" F by 1/e --- this method is implemented already --- and then compose the new polynomial with g.  There is a FLINT function for the last part.)  However, I don't know how or where the generic code",
     "created_at": "2009-09-25T04:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28766",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28708",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1076,15 +1074,15 @@ This does not crash for me on 64-bit linux with both FLINT 1.3.0 and FLINT 1.5.0
 
 ---
 
-archive/issue_comments_028767.json:
+archive/issue_comments_028709.json:
 ```json
 {
     "body": "Firstly, I am sorry for the bad patches I uploaded earlier --- I didn't realise that new files aren't included in a patch by default.  I have changed this now and uploaded a new complete patch ``fmpq_20090925.patch``.\n\nThere is one problem with the ``squarefree_decomposition`` method, which for some unknown reason was causing memory failures in the latest version.  For the time being, I've just changed it back to my earlier code, which still uses bad aliasing of arguments to ``fmpz_`` methods.\n\nMike:  Thanks for taking a look at the composition problem, too.  The failure on my setup must be rather strange, since the traceback also includes ``finance/fractal.so``.  I don't think I understand the ``__call__`` method well enough to do much about it.  In any case, I think the current code (catching polynomial composition, and otherwise passing the call on to ``Polynomial.__call__``) should be preferable.\n\nI am not quite sure what I should do at this point.  I think it would be best to wait until the release of the next stable release of SAGE and then look at this again with the goal to have sorted out as soon as possible.  What do other people think?  If someone has a suggestion for what I should do at the moment, while I might not have too much time during the next few weeks, I should definitely be able to look at this every weekend.\n\nSebastian",
     "created_at": "2009-09-25T22:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28767",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28709",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1102,15 +1100,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028768.json:
+archive/issue_comments_028710.json:
 ```json
 {
     "body": "Sebastian, what's the current status of this code? What needs to be done to finish it etc?",
     "created_at": "2009-11-17T22:50:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28768",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28710",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1120,15 +1118,15 @@ Sebastian, what's the current status of this code? What needs to be done to fini
 
 ---
 
-archive/issue_comments_028769.json:
+archive/issue_comments_028711.json:
 ```json
 {
     "body": "The plan is to re-base this on #383, which should take care of two segfaults that currently remain.",
     "created_at": "2010-01-20T10:37:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28769",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28711",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1138,15 +1136,15 @@ The plan is to re-base this on #383, which should take care of two segfaults tha
 
 ---
 
-archive/issue_comments_028770.json:
+archive/issue_comments_028712.json:
 ```json
 {
     "body": "I've now added two patches to this.  The first one ``trac383.patch`` contains all three patches from ticket #383.  The second patch ``trac4000_rebase_431rc0_383.patch`` is the main patch from this patch, which is now rebased on 4.3.1.rc0 *and* the first patch.  With this, the only remaining doctests failures are\n\n\n```\nsage -t  \"devel/sage-qq/sage/combinat/species/composition_species.py\"\n**********************************************************************\nFile \"/scratch/pancratz/sage-4.3.1.rc0/devel/sage-qq/sage/combinat/species/composition_species.py\", line 235:\n    sage: S.isotype_generating_series().coefficients(5) #indirect\nExpected:\n    [1, t, t^2 + t, t^3 + t^2 + t, t^4 + t^3 + 2*t^2 + t]\nGot:\n    [1, t, 1/2*t^2, 1/6*t^3, 1/24*t^4]\n**********************************************************************\nFile \"/scratch/pancratz/sage-4.3.1.rc0/devel/sage-qq/sage/combinat/species/composition_species.py\", line 247:\n    sage: Par.isotype_generating_series().coefficients(5)\nExpected:\n    [1, t, t^2 + t, t^3 + t^2 + t, t^4 + t^3 + 2*t^2 + t]\nGot:\n    [1, t, 1/2*t^2 + 1/2*t, 1/6*t^3 + 1/2*t^2 + 1/6*t, 1/24*t^4 + 1/4*t^3 + 7/24*t^2 + 1/24*t]\n**********************************************************************\n1 items had failures:\n   2 of  15 in __main__.example_11\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/pancratz/.sage//tmp/.doctest_composition_species.py\n         [5.7 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage-qq/sage/combinat/species/composition_species.py\"\n```\n\n\nI am not sure what's going on here.  Could someone else please take a look at this?\n\nThanks!\n\nSebastian",
     "created_at": "2010-01-20T15:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28770",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28712",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1195,15 +1193,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028771.json:
+archive/issue_comments_028713.json:
 ```json
 {
     "body": "In addition to my earlier post, I seems there is a problem with the first patch (the one collecting the three patches from #383 for convenience), which I am sorry for.  Nonetheless, applying the three patches straight from that ticket and adding the second patch above yields the desired state, apart from the one remaining doctest.\n\nSebastian",
     "created_at": "2010-01-20T16:12:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28771",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28713",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1215,15 +1213,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028772.json:
+archive/issue_comments_028714.json:
 ```json
 {
     "body": "The above ticket provided by Mike Hanses applies to 4.3.1.rc0 after applying the three tickets from #383.  We've tested on two separate machines and it passes all doctests.\n\nThanks to Mike for helping to track down the (hopefully) last remaining bug before lunchtime!\n\nI'll go over the code again in the next week or two, adding further documentation and more doctests.  In the meantime, I would be very grateful if other people interested in reviewing it could start looking at the code and provide further comments.\n\nSebastian",
     "created_at": "2010-01-20T23:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28772",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28714",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1239,15 +1237,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028773.json:
+archive/issue_comments_028715.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-20T23:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28773",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28715",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1257,15 +1255,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_028774.json:
+archive/issue_comments_028716.json:
 ```json
 {
     "body": "In the above three patches, I've now added some further documentation and made cosmetic changes to the layout in some files.  I still want to add many more test cases for the polynomial arithmetic.  Please let me know if there is something else that you think I ought to change.\n\nSebastian",
     "created_at": "2010-01-21T03:26:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28774",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28716",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1277,15 +1275,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028775.json:
+archive/issue_comments_028717.json:
 ```json
 {
     "body": "Sebastian, I am marking this ticket as needs_work since you are saying that you want to add more tests.  Just mark it needs_review when you feel it's ready.",
     "created_at": "2010-01-23T00:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28775",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28717",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1295,15 +1293,15 @@ Sebastian, I am marking this ticket as needs_work since you are saying that you 
 
 ---
 
-archive/issue_comments_028776.json:
+archive/issue_comments_028718.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-23T00:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28776",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28718",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1313,15 +1311,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_028777.json:
+archive/issue_comments_028719.json:
 ```json
 {
     "body": "`@`Sebastian, what do I have to apply in which order to test your patches? `@`Alex, we can probably start testing stuff except we shouldn't complain about missing doctests yet.",
     "created_at": "2010-01-23T12:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28777",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28719",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1331,15 +1329,15 @@ archive/issue_comments_028777.json:
 
 ---
 
-archive/issue_comments_028778.json:
+archive/issue_comments_028720.json:
 ```json
 {
     "body": "I believe all of the above patches in the order they appear.",
     "created_at": "2010-01-23T19:58:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28778",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28720",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1349,15 +1347,15 @@ I believe all of the above patches in the order they appear.
 
 ---
 
-archive/issue_comments_028779.json:
+archive/issue_comments_028721.json:
 ```json
 {
     "body": "Martin:  Yes, they should apply to 4.3.1.rc0 in the order they appear.  Although, after applying the main patch, there should be some choice on the order in which you apply the patches as they mostly (apart from fmpq_poly and fmpq_poly_alias) touch distinct sets of files, I think.\n\nMorally speaking, this should definitely be ``needs_review`` (although I understand if someone would formally want to argue that this should be ``needs_work``), and it'd be great if you could let me know of any changes I should make, including doctests.  The ones I intend to add weren't for any specific method, but rather for the arithmetic in `\\QQ[t]`, which I think would have to go to the top of the file ``polynomial_rational_flint`` since the methods themselves are in the polynomial template file.\n\nThanks,\n\nSebastian",
     "created_at": "2010-01-23T20:41:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28779",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28721",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1373,15 +1371,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028780.json:
+archive/issue_comments_028722.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-24T04:01:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28780",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28722",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1391,15 +1389,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_028781.json:
+archive/issue_comments_028723.json:
 ```json
 {
     "body": "Having applied all the patches, I'm getting:\n\n\n```\nsage: R.<x> = QQ[]\nsage: S.<a> = R.quotient(3*x^3 + 3/2*x -1/3)\nsage: 3 * a^3 + S.modulus()\nError: unable to alloc/realloc memory\n/home/ghitza/sage-devel/local/bin/sage-sage: line 206: 13092 Aborted                 (core dumped) sage-ipython \"$@\" -i\n```\n\n\n(This is a doctest in `rings/polynomial/polynomial_quotient_ring_element.py`, which is how I ran into it.)\n\nI don't know if it matters, but this is happening on a 32-bit machine.",
     "created_at": "2010-01-24T04:01:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28781",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28723",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1423,15 +1421,15 @@ I don't know if it matters, but this is happening on a 32-bit machine.
 
 ---
 
-archive/issue_comments_028782.json:
+archive/issue_comments_028724.json:
 ```json
 {
     "body": "There's clearly something dodgy going on here.  On my 32-bit laptop, with a clean 4.3.1.rc0 install and only the patches from this thread,\n\n\n```\nsage: R.<x> = QQ[]\nsage: S.<a> = R.quotient(3*x^3 + 3/2*x -1/3)\nsage: 3 * a^3 + S.modulus()\n-3/2*a + 1/3\nsage: timeit('_ = 3 * a^3 + S.modulus()')\n5 loops, best of 3: 14.3 s per loop\n```\n\n\nThat is, it takes forever...  Alex, could you perhaps elaborate on your setup?\n\nThanks,\nSebastian",
     "created_at": "2010-01-24T14:40:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28782",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28724",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1457,15 +1455,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028783.json:
+archive/issue_comments_028725.json:
 ```json
 {
     "body": "Here is a simpler instance of the problem:\n\n```\nsage: R.<x> = QQ[]\nsage: f = 3/2*x - 1/3\nsage: %time _ = f % f\nCPU times: user 5.67 s, sys: 0.17 s, total: 5.84 s\nWall time: 5.86 s\n```\n\n\nI do *not* think that the problem is a coercion problem.  After inserting \"print\" statements into the Cython code at various points, I instead think the code in the block from line 881 in fmpq_poly_linkage.pxi actually takes this long, although I do not understand at all why this might be the case.\n\nThe two lines at actually seem to take time (assuming that inserting \"print\" statements is a valid way to determine this) are\n\n```\n    fmpz_pow_ui(t, lead, m)\n    fmpz_mul(r.den, t, a.den)\n```\n\nbut, once again, I've got not clue why this might be the case.\n\nTomorrow or on Tuesday, I will try to reproduce the problem in plain C.  If I manage to do this, I'll forward it to Bill Hart.  If not, I wouldn't really know what else to look into.\n\nSebastian",
     "created_at": "2010-01-25T00:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28783",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28725",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1499,15 +1497,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028784.json:
+archive/issue_comments_028726.json:
 ```json
 {
     "body": "Replying to [comment:43 spancratz]:\n> There's clearly something dodgy going on here.  On my 32-bit laptop, with a clean 4.3.1.rc0 install and only the patches from this thread,\n> \n> {{{\n> sage: R.<x> = QQ[]\n> sage: S.<a> = R.quotient(3*x^3 + 3/2*x -1/3)\n> sage: 3 * a^3 + S.modulus()\n> -3/2*a + 1/3\n> sage: timeit('_ = 3 * a^3 + S.modulus()')\n> 5 loops, best of 3: 14.3 s per loop\n> }}}\n\nI've tried a couple more times and I'm still getting the memory problem followed by crash and core dump.  I'm running 32-bit archlinux on a Dell laptop, with version 4.4.2 of gcc.  It's a clean build of sage-4.3.1 with the patches here.\n\nI also have a macbook running 64-bit archlinux.  It's busy doing other things now, but I can try to test this on it later.",
     "created_at": "2010-01-25T06:13:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28784",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28726",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1531,15 +1529,15 @@ I also have a macbook running 64-bit archlinux.  It's busy doing other things no
 
 ---
 
-archive/issue_comments_028785.json:
+archive/issue_comments_028727.json:
 ```json
 {
     "body": "Replying to [comment:44 spancratz]:\n> Here is a simpler instance of the problem:\n> {{{\n> sage: R.<x> = QQ[]\n> sage: f = 3/2*x - 1/3\n> sage: %time _ = f % f\n> CPU times: user 5.67 s, sys: 0.17 s, total: 5.84 s\n> Wall time: 5.86 s\n> }}}\n\nOn my laptop, this gives me\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: sage: R.<x> = QQ[]\nsage: sage: f = 3/2*x - 1/3\nsage: sage: %time _ = f % f\nError: unable to alloc/realloc memory\n/opt/sage-4.3.1-archlinux-32bit-i686-Linux/local/bin/sage-sage: line 206: 17772 Aborted                 (core dumped) sage-ipython \"$@\" -i\n```\n",
     "created_at": "2010-01-25T06:15:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28785",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28727",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1571,15 +1569,15 @@ Error: unable to alloc/realloc memory
 
 ---
 
-archive/issue_comments_028786.json:
+archive/issue_comments_028728.json:
 ```json
 {
     "body": "I am sorry for only getting on with this today.  Just now I tried to re-produce the problem in plain C with FLINT, but needless to say, I didn't manage.  A simple-minded reproduction of the relevant code executed in no time and without any problems.  Currently, I am completely out of ideas on how to fix this problem.  That's why I'll raise the issue on sage-devel and conclude this message with a description of the behaviour that I experience on my machine (Lenovo T500 laptop, Intel Core2 Duo CPU, Ubuntu 9.10):\n\nAfter applying all patches from this ticket to a 4.3.1.rc0 installation, modify the ``else`` block from line 882 in ``sage/libs/flint/fmpq_poly_linkage.pxi`` to the following:\n\n```\n            print \"In case 3B\"\n            t = fmpz_init(limbs)\n            print \"den_fit_limbs\"\n            __fmpq_poly_den_fit_limbs(r, limbs + fmpz_size(a.den))\n            print \"pow_ui\"\n            fmpz_pow_ui(t, lead, m)\n            print \"mul\"\n            fmpz_mul(r.den, t, a.den)\n            print \"clear\"\n            fmpz_clear(t)\n```\n\nThis only includes the ``print`` commands.\n\nThen, upon executing the same sequence of commands that produce the crash in Alex' previous message, I receive the following output:\n\n```\nsage: R.<x> = QQ[]\nsage: f = 3/2*x - 1/3\nsage: %time _ = f % f\nIn case 3B\nden_fit_limbs\npow_ui\nmul\nclear\nCPU times: user 19.10 s, sys: 0.54 s, total: 19.64 s\nWall time: 19.72 s\n```\n\n\nWhat I find very strange (besides the fact that this takes 20s to obtain the correct result) is that there are two very noticeable delays of a couple of seconds, one after the output ``\"pow_ui\"``, and another after the output of ``\"mul\"``.\n\nSebastian",
     "created_at": "2010-01-28T23:31:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28786",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28728",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1626,15 +1624,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028787.json:
+archive/issue_comments_028729.json:
 ```json
 {
     "body": "Did you do a sanity checks on the inputs to each function? E.g. what is `limbs`, What is `r`? What does `fmpz_size(a.den)` return? and so forth? Alex error message complains about some allocation not working so I'd assume some wrong size (negative or unitialised?) is passed to FLINT?",
     "created_at": "2010-01-29T00:04:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28787",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28729",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1644,15 +1642,15 @@ Did you do a sanity checks on the inputs to each function? E.g. what is `limbs`,
 
 ---
 
-archive/issue_comments_028788.json:
+archive/issue_comments_028730.json:
 ```json
 {
     "body": "Hi Martin,\n\nThank you for joining in!  I've just done this now and posted on sage-devel.  The problem doesn't seem to be in fmpz_pow_ui or fmpz_mul, but in fmpz_poly_pseudo_divrem.  Well, I am not sure it's a problem in FLINT, since I couldn't reproduce it in plain C yet, but's related to that bit in the code rather than the later calls.\n\nSebastian",
     "created_at": "2010-01-29T14:02:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28788",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28730",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1666,15 +1664,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028789.json:
+archive/issue_comments_028731.json:
 ```json
 {
     "body": "I've just uploaded a file which if applied adds some debug output.  If the file is copied into the directory ``devel/sage`` then from within the directory it can be applied via \n\n\n```\npatch -p1 < trac4000_fmpz_poly_pseudo_divrem_debug.diff\n```\n\n\nSebastian",
     "created_at": "2010-01-29T14:05:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28789",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28731",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1692,15 +1690,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028790.json:
+archive/issue_comments_028732.json:
 ```json
 {
     "body": "Dear Alex,\n\nI've just uploaded a patch which should fix problem you reported, which was related to a bug in FLINT that you stumbled upon (see sage-devel).  Is there anything else that you think I should change related to this ticket, at the moment?\n\nThank you very much again for looking at this!\n\nSebastian",
     "created_at": "2010-01-30T01:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28790",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28732",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1716,15 +1714,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028791.json:
+archive/issue_comments_028733.json:
 ```json
 {
     "body": "I have just applied your last patch, and I confirm that it gets rid of the nasty doctest failure.\n\nI'd like to test this on some more machines to see if all is well.  And it will most likely have to be rebased, since it touches so many files.  For now I'll keep using 4.3.1, on which it applies fine.",
     "created_at": "2010-01-30T02:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28791",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28733",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1736,15 +1734,15 @@ I'd like to test this on some more machines to see if all is well.  And it will 
 
 ---
 
-archive/issue_comments_028792.json:
+archive/issue_comments_028734.json:
 ```json
 {
     "body": "When there's a version which applies to 4.3.2 I'll be happy to test it too.",
     "created_at": "2010-02-07T15:41:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28792",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28734",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1754,15 +1752,15 @@ When there's a version which applies to 4.3.2 I'll be happy to test it too.
 
 ---
 
-archive/issue_comments_028793.json:
+archive/issue_comments_028735.json:
 ```json
 {
     "body": "Dear John,\n\nI am sorry I am only reading this now --- I was out of the country for a while this past week.  I am busy teaching on Monday and Tuesday, but I can hopefully (try to re-base) this to 4.3.2 in the second half of the week.\n\nThank you for offering your help with testing this,\n\nSebastian",
     "created_at": "2010-02-15T00:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28793",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28735",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1778,15 +1776,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028794.json:
+archive/issue_comments_028736.json:
 ```json
 {
     "body": "I think 7 consecutive patches is too much to ask -- please may we have a single combined patch?",
     "created_at": "2010-02-20T16:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28794",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28736",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1796,15 +1794,15 @@ I think 7 consecutive patches is too much to ask -- please may we have a single 
 
 ---
 
-archive/issue_comments_028795.json:
+archive/issue_comments_028737.json:
 ```json
 {
     "body": "I've just uploaded a new patch combining all previous ones, rebased to 4.3.3.  I am currently running a test with ``sage -t devel/sage/sage`` and I am certainly expecting the odd new doctest failure with 4.3.3, but overall I expect it to mostly work fine.  In any case, I will post the results tomorrow.\n\nSebastian",
     "created_at": "2010-02-27T00:40:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28795",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28737",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1816,15 +1814,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028796.json:
+archive/issue_comments_028738.json:
 ```json
 {
     "body": "\n```\nThe following tests failed:\n\n        sage -t  devel/sage/sage/rings/polynomial/infinite_polynomial_element.py # 1 doctests failed\n        sage -t  devel/sage/sage/structure/parent.pyx # 2 doctests failed\n```\n\n\nMore precisely,\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\"\n**********************************************************************\nFile \"/home/suser/sage-4.3.3/devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\", line 853:\n    sage: type(Z._P)\nExpected:\n    <class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict'>\nGot:\n    <class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict_domain'>\n**********************************************************************\n1 items had failures:\n   1 of  12 in __main__.example_26\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/suser/.sage//tmp/.doctest_infinite_polynomial_element.py\n         [3.4 s]\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\"\n```\n\nand\n\n```\nsage -t  \"devel/sage/sage/structure/parent.pyx\"                                                                                \n**********************************************************************                                                         \nFile \"/home/suser/sage-4.3.3/devel/sage/sage/structure/parent.pyx\", line 162:                                                  \n    sage: sage.structure.parent.raise_attribute_error(QQ[x].gen(), \"bla\")                                                      \nExpected:                                                                                                                      \n    Traceback (most recent call last):                                                                                         \n    ...                                                                                                                        \n    AttributeError: 'Polynomial_rational_dense' object has no attribute 'bla'                                                  \nGot:                                                                                                                           \n    Traceback (most recent call last):                                                                                         \n      File \"/home/suser/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/suser/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/suser/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 1, in <module>\n        sage.structure.parent.raise_attribute_error(QQ[x].gen(), \"bla\")###line 162:\n    sage: sage.structure.parent.raise_attribute_error(QQ[x].gen(), \"bla\")\n      File \"parent.pyx\", line 169, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2611)\n    AttributeError: 'sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_dense_flint' object has no attribute 'bla'\n**********************************************************************\nFile \"/home/suser/sage-4.3.3/devel/sage/sage/structure/parent.pyx\", line 220:\n    sage: getattr_from_other_class(QQ[x].one(), A, \"lazy_attribute\")\nException raised:\n    Traceback (most recent call last):\n      File \"/home/suser/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/suser/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/suser/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[8]>\", line 1, in <module>\n        getattr_from_other_class(QQ[x].one(), A, \"lazy_attribute\")###line 220:\n    sage: getattr_from_other_class(QQ[x].one(), A, \"lazy_attribute\")\n      File \"parent.pyx\", line 245, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2953)\n      File \"/home/suser/sage-4.3.3/local/lib/python/site-packages/sage/misc/lazy_attribute.py\", line 502, in __get__\n        setattr(a, self.f.__name__, result)\n    AttributeError: 'sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_dense_flint' object has no attribute 'lazy_attribute'\n**********************************************************************\n2 items had failures:\n   1 of   4 in __main__.example_2\n   1 of  10 in __main__.example_3\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/suser/.sage//tmp/.doctest_parent.py\n         [9.9 s]\n```\n\n\nI think the correct fix for the first problem is a change in the docstring, but I am not sure about this.  For the second one, the docstring needs to be changed.  And, finally, for the third one (about the lazy_attribute), I have no idea.\n\nCan someone else please comment on this?\n\nMany thanks,\nSebastian",
     "created_at": "2010-02-27T17:07:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28796",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28738",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -1925,15 +1923,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028797.json:
+archive/issue_comments_028739.json:
 ```json
 {
     "body": "Replying to [comment:57 spancratz]:\nHi, sorry for the late reply:\n\n\n\n```\nsage -t  \"devel/sage/sage/rings/polynomial/infinite_polynomial_element.py\"\n**********************************************************************\n    sage: type(Z._P)\nExpected:\n    <class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict'>\nGot:\n    <class 'sage.rings.polynomial.multi_polynomial_ring.MPolynomialRing_polydict_domain'>\n**********************************************************************\n```\n\n\nIf `Z._P` is over a domain, then yes change the doctest.\n\n\n```\n    sage: sage.structure.parent.raise_attribute_error(QQ[x].gen(), \"bla\")                                                      \nExpected:                                                                                                                      \n    Traceback (most recent call last):                                                                                         \n    ...                                                                                                                        \n    AttributeError: 'Polynomial_rational_dense' object has no attribute 'bla'                                                  \nGot:                                                                                                                           \n    Traceback (most recent call last):                                                                                         \n      File \"/home/suser/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/suser/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/suser/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 1, in <module>\n        sage.structure.parent.raise_attribute_error(QQ[x].gen(), \"bla\")###line 162:\n    sage: sage.structure.parent.raise_attribute_error(QQ[x].gen(), \"bla\")\n      File \"parent.pyx\", line 169, in sage.structure.parent.raise_attribute_error (sage/structure/parent.c:2611)\n    AttributeError: 'sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_dense_flint' object has no attribute 'bla'\n```\n\n\nYes, you need to change the doctest.\n\n\n```\nException raised:\n    Traceback (most recent call last):\n      File \"/home/suser/sage-4.3.3/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/suser/sage-4.3.3/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/suser/sage-4.3.3/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[8]>\", line 1, in <module>\n        getattr_from_other_class(QQ[x].one(), A, \"lazy_attribute\")###line 220:\n    sage: getattr_from_other_class(QQ[x].one(), A, \"lazy_attribute\")\n      File \"parent.pyx\", line 245, in sage.structure.parent.getattr_from_other_class (sage/structure/parent.c:2953)\n      File \"/home/suser/sage-4.3.3/local/lib/python/site-packages/sage/misc/lazy_attribute.py\", line 502, in __get__\n        setattr(a, self.f.__name__, result)\n    AttributeError: 'sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_dense_flint' object has no attribute 'lazy_attribute'\n```\n\n\nYou probably need to implement `lazy_attribute`. I don't know what it is supposed to be doing, so you should ask on [sage-devel].",
     "created_at": "2010-03-07T16:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28797",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28739",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -2007,15 +2005,15 @@ You probably need to implement `lazy_attribute`. I don't know what it is suppose
 
 ---
 
-archive/issue_comments_028798.json:
+archive/issue_comments_028740.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-04-05T15:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28798",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28740",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -2025,15 +2023,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_028799.json:
+archive/issue_comments_028741.json:
 ```json
 {
     "body": "I just checked that the combined patch applies fine to 4.3.5.  I got just two doctest failures, as in the above report.  Otherwise all pass (64-bit ubuntu).\n\nFor parent.pyx: this must be the same thing as in #8332?  You could just delete that doctest, since it tests something on an essentailly random class to which it used to apply but no longer does.\n\nLet's get these last two little things fixed, then this can at last get merged!",
     "created_at": "2010-04-05T15:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28799",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28741",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -2047,15 +2045,15 @@ Let's get these last two little things fixed, then this can at last get merged!
 
 ---
 
-archive/issue_comments_028800.json:
+archive/issue_comments_028742.json:
 ```json
 {
     "body": "On 4.4 there needs to be a little rebasing:\n\n```\napplying trac4000_433_combined.patch\npatching file sage/rings/integer.pyx\nHunk #1 FAILED at 1688\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 succeeded at 2622 with fuzz 2 (offset 0 lines).\npatching file sage/rings/polynomial/polynomial_element.pyx\nHunk #1 FAILED at 1096\n1 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_element.pyx.rej\npatching file sage/rings/polynomial/polynomial_element_generic.py\nHunk #1 FAILED at 604\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/polynomial/polynomial_element_generic.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac4000_433_combined.patch\n```\n",
     "created_at": "2010-04-30T14:24:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28800",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28742",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -2084,15 +2082,15 @@ errors during apply, please fix and refresh trac4000_433_combined.patch
 
 ---
 
-archive/issue_comments_028801.json:
+archive/issue_comments_028743.json:
 ```json
 {
     "body": "Dear all,\n\nFor my own work, I have re-written the fmpq_poly_ methods in plain C with a FLINT-like interface and set up more detailed test routines (triggering essentially every line of code).  From memory (since I have the relevant sheets of paper on my desk in Oxford), as a result of that I found three possible memory leaks.\n\nDuring the last few days, I was wondering whether it might be better to include this C code instead of the Cython code from the patch?  I somehow feel that this would be cleaner, however, this might just be me preferring C to Cython.\n\nAs for a possible schedule, I recently signed up to attend Sage Days 23 at Leiden, which might be a very convenient place to discuss this and work on the code as necessary.  Perhaps it might then be possible to review this at least before the end of Sage Days 24 in Linz, if not before that.\n\nBest wishes,\nSebastian",
     "created_at": "2010-05-26T09:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28801",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28743",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2111,15 +2109,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028802.json:
+archive/issue_comments_028744.json:
 ```json
 {
     "body": "Hi Sebastian, \n\nI was just wondering what was up with this ticket yesterday. If you think this is eventually going to make it into FLINT itself, it may be better to provide the C (or even a patched FLINT spkg). Otherwise, Cython is preferable as many more people in the Sage community will be able and willing to edit it. \n\nGiven the history of this ticket, I would be more comfortable with first a very clean, straightforward implementation based on FLINT (without avoiding allocation at all costs, the NULL denominator savings, etc.) and get that fully vetted, refereed, and in. Hopefully that should be a simpler task (i.e. less endless chasing down segfaults, random doctest failures, and a much simpler referee process with a high confidence in the correctness of the implementation). That should (I'd guess) already be a significant performance improvement (right?). Once we've done that, then we can go ahead and optimize things further.",
     "created_at": "2010-05-27T22:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28802",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28744",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -2133,15 +2131,15 @@ Given the history of this ticket, I would be more comfortable with first a very 
 
 ---
 
-archive/issue_comments_028803.json:
+archive/issue_comments_028745.json:
 ```json
 {
     "body": "Hi Robert,\n\nThank you for the suggestions.  I've been in touch with Bill Hart and he is quite keen to have a module for Q[t] in FLINT.  Given this, I think the following seems sensible:\n\n- Make a separate spkg for Q[t] on top of FLINT\n- Check that the interface for Q[t] is such that it will require as little work as possible during the antipated change from FLINT 1 to FLINT 2\n- Go over the C code again, simplifying the fmpz_t memory management where possible, since this won't be necessary in FLINT 2 any more\n- Go over the documentation again\n- Add further test cases\n\nI'm happy to do all the work on the C side of things.  Hopefully, I can ask someone for help regarding the Sage spkg side of things at the workshop in Leiden.\n\nBest wishes,\nSebastian",
     "created_at": "2010-07-03T22:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28803",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28745",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2164,15 +2162,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028804.json:
+archive/issue_comments_028746.json:
 ```json
 {
     "body": "On sage.math, qq.patch applies to sage-4.5 and passes all tests except the pickling test:\n\n```\nThe following tests failed:\n\n        sage -t  -long devel/sage/sage/misc/explain_pickle.py # 2 doctests failed\n        sage -t  -long devel/sage/sage/structure/sage_object.pyx # 0 doctests failed\n```\n\n\nAnd it's damned fast, compared to what is in sage now:\n\n```\nsage: R.<x> = QQ[]\nsage: f = R.random_element(degree=100)\nsage: timeit('f*f')\n625 loops, best of 3: 29 \u00b5s per loop\nsage: S.<x> = PolynomialRing(QQ,implementation='ntl')\nsage: g = S.random_element(degree=100)\nsage: timeit('g*g')\n625 loops, best of 3: 1.29 ms per loop\nsage: 1.29/0.029\n44.4827586206897\nsage: f = R.random_element(degree=1000)\nsage: g = S.random_element(degree=1000)\nsage: timeit('f*f')\n625 loops, best of 3: 1.31 ms per loop\nsage: timeit('g*g')\n5 loops, best of 3: 104 ms per loop\nsage: 104/1.31\n79.3893129770992\n```\n",
     "created_at": "2010-07-21T12:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28804",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28746",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -2214,15 +2212,15 @@ sage: 104/1.31
 
 ---
 
-archive/issue_comments_028805.json:
+archive/issue_comments_028747.json:
 ```json
 {
     "body": "Comments\n\n* add copyright note to sage/libs/flint/fmpq_poly.pxd\n* delete old example module\n* add copyright note to polynomial/polynomial_rational_flint.pxd\n* add class docstring to Polynomial_rational_flint and to the file\n* There are many r\"\"\" which aren't needed\n* !__init!__ doesn't document parameters\n* many functions need docstrings\n* ell_foo.py remove?\n* remove the explicit implementation=\"FLINT\" stuff?",
     "created_at": "2010-07-21T14:10:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28805",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28747",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -2242,15 +2240,15 @@ Comments
 
 ---
 
-archive/issue_comments_028806.json:
+archive/issue_comments_028748.json:
 ```json
 {
     "body": "Hi Martin,\n\nThank you for the feedback.  I've just uploaded three separate patches.  I'd be grateful if you could have another look at the main patch file and provide some more feedback!\n\nPlease note that at the moment there are a few test failures, which weren't there before, but I'll fix them during the next few days and upload another patch then.\n\nThanks,\nSebastian",
     "created_at": "2010-07-24T14:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28806",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28748",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2267,15 +2265,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028807.json:
+archive/issue_comments_028749.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-26T00:35:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28807",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28749",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2285,15 +2283,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_028808.json:
+archive/issue_comments_028750.json:
 ```json
 {
     "body": "Dear all,\n\nI've uploaded a set of four patches now, which can be applied in any order.  They should pass all doctests, although on sage.math there is an error as follows\n\n\n```\n    sage -t  \"devel/sage-qq/sage/rings/polynomial/polynomial_rational_flint.pyx\"\n    Error: unable to alloc/realloc memory\n```\n\n\nI do not know why this error is there since this test works just fine for me on my laptop.\n\nThe test failures I mentioned in the earlier post have all been resolved.\n\nSebastian",
     "created_at": "2010-07-26T00:35:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28808",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28750",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2318,15 +2316,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028809.json:
+archive/issue_comments_028751.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-07-26T11:32:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28809",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28751",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -2336,15 +2334,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_028810.json:
+archive/issue_comments_028752.json:
 ```json
 {
     "body": "i tested on ubuntu 9.04 32bit, Intel(R) Core(TM)2 Duo CPU and gcc version 4.3.3 (Ubuntu 4.3.3-5ubuntu4) ... 2 times the same failure in \"en\" and \"fr\" tutorial:\n\n\n```\nFile \"/scratch/scratch/schilly/sage/sage-4.5/devel/sage/doc/en/tutorial/tour_polynomial.rst\", line 166:\n    sage: R.<x> = PolynomialRing(QQ)\n    sage: S.<y> = PolynomialRing(QQ)\n    sage: x == y\nExpected:\n    False\nGot:\n    True\n```\n",
     "created_at": "2010-07-26T11:32:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28810",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28752",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -2367,15 +2365,15 @@ Got:
 
 ---
 
-archive/issue_comments_028811.json:
+archive/issue_comments_028753.json:
 ```json
 {
     "body": "Hi Harald,\n\nThank you for testing this.  The easiest way to deal with this is to simply leave the current behaviour unchanged by not overwriting ``hash`` or any of the comparison methods.  This is a bit of a shame since the C-based test for equality should be much faster than the inherited method, but I think it is the sensible decision at this point.  I will update the patches accordingly later.\n\nSebastian",
     "created_at": "2010-07-26T16:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28811",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28753",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2389,15 +2387,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028812.json:
+archive/issue_comments_028754.json:
 ```json
 {
     "body": "The ticket now consists of five patches:\n\n#. trac4000_0.patch\n#. trac4000_1.patch\n#. trac4000_doctest_output.patch\n#. trac4000_fmpq_poly_c.patch\n#. trac4000_fmpq_poly_pxd.patch\n\nOnly 0 and 1 have to be applied in this order.  The remaining patches can be applied in any order.  After having removed the methods for comparisons (which caused a problem as Harald noticed above), these should now hopefully be very, very close to finalised.  I've also included the signal handling around most C library calls.\n\nBest wishes, and many thanks for looking at this ticket!\n\nSebastian\n\nPS:  Perhaps someone with the appropriate rights could delete all the unnecessary attachments to this ticket?  I don't think we need the earlier ones any more.  In any case, I accidentally added this one, ``trac4000_fmpq_poly_c.2.patch``.",
     "created_at": "2010-07-26T20:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28812",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28754",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2421,15 +2419,15 @@ PS:  Perhaps someone with the appropriate rights could delete all the unnecessar
 
 ---
 
-archive/issue_comments_028813.json:
+archive/issue_comments_028755.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-26T20:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28813",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28755",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2439,15 +2437,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_028814.json:
+archive/issue_comments_028756.json:
 ```json
 {
     "body": "Replying to [comment:70 spancratz]:\n> PS:  Perhaps someone with the appropriate rights could delete all the unnecessary attachments to this ticket?  I don't think we need the earlier ones any more.  In any case, I accidentally added this one, ``trac4000_fmpq_poly_c.2.patch``.\n\nDone.",
     "created_at": "2010-07-27T08:09:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28814",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28756",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -2460,15 +2458,15 @@ Done.
 
 ---
 
-archive/issue_comments_028815.json:
+archive/issue_comments_028757.json:
 ```json
 {
     "body": "Some minor quibbles:\n\n1. You might want to clean up the commit messages in the patches. Right now they don't include the ticket number, etc. If you're using queues this is `hg qrefresh -e` when the relevant patch is at the top of the applied part of the queue.\n\n2. I'm not sure it's necessary to have things like\n\n```\nNOTES: \n\n    (S Pancratz)  Extracted from polynomial_template.pxi. \n```\n\nsince the files are all under revision control, and in fact every line has a list of authors associated to it.\n\n3. It might be useful to have the cimports and the imports in separate blocks, since the cimports happen at compile time, and the imports happen at runtime, frequently on startup.",
     "created_at": "2010-07-27T08:44:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28815",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28757",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -2492,15 +2490,15 @@ since the files are all under revision control, and in fact every line has a lis
 
 ---
 
-archive/issue_comments_028816.json:
+archive/issue_comments_028758.json:
 ```json
 {
     "body": "Hi Robert,\n\nThanks for the suggestions.  As for 1), yes, I'll do that.  The note in 2) should have disappeared (along with the method __hash__) by applying trac4000_1.patch.  Finally, I'll do 3), too.  That said, I'm about to begin catching up on more than a week's administrative work, so I'll probably upload new patches very late tonight.\n\nSebastian",
     "created_at": "2010-07-27T12:05:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28816",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28758",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2514,15 +2512,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028817.json:
+archive/issue_comments_028759.json:
 ```json
 {
     "body": "I've now made the changes that Robert suggested.",
     "created_at": "2010-07-27T22:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28817",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28759",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2532,15 +2530,15 @@ I've now made the changes that Robert suggested.
 
 ---
 
-archive/issue_comments_028818.json:
+archive/issue_comments_028760.json:
 ```json
 {
     "body": "Main patch",
     "created_at": "2010-07-31T23:02:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28818",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28760",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2550,15 +2548,15 @@ Main patch
 
 ---
 
-archive/issue_comments_028819.json:
+archive/issue_comments_028761.json:
 ```json
 {
     "body": "Attachment [trac4000_fmpq_poly_c.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_fmpq_poly_c.patch) by spancratz created at 2010-07-31 23:03:09\n\nfmpq_poly.c and header",
     "created_at": "2010-07-31T23:03:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28819",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28761",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2570,15 +2568,15 @@ fmpq_poly.c and header
 
 ---
 
-archive/issue_comments_028820.json:
+archive/issue_comments_028762.json:
 ```json
 {
     "body": "Attachment [trac4000_fmpq_poly_pxd.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_fmpq_poly_pxd.patch) by spancratz created at 2010-07-31 23:03:18\n\nfmpq_poly.pxd",
     "created_at": "2010-07-31T23:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28820",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28762",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2590,15 +2588,15 @@ fmpq_poly.pxd
 
 ---
 
-archive/issue_comments_028821.json:
+archive/issue_comments_028763.json:
 ```json
 {
     "body": "Hi, william's nagbot reminded me of this here and I installed these last 3 patches on my 4.5.2 RC build. I tried to replicate your timings, but they are less convincing than I thought:\n\n\n```\nsage: S = PolynomialRing(QQ, 'x', implementation=\"flint\")\nsage: R = PolynomialRing(QQ, 'y', implementation=\"NTL\")\nsage: f = R.random_element(degree=30); timeit('f*f')\n625 loops, best of 3: 15.6 \u00b5s per loop\nsage: g = S.random_element(degree=30); timeit('g*g')\n625 loops, best of 3: 14.7 \u00b5s per loop\nsage: f = R.random_element(degree=300); timeit('f*f')\n625 loops, best of 3: 602 \u00b5s per loop\nsage: g = S.random_element(degree=300); timeit('g*g')\n625 loops, best of 3: 350 \u00b5s per loop\nsage: f = R.random_element(degree=3000); timeit('f*f')\n25 loops, best of 3: 15.2 ms per loop\nsage: g = S.random_element(degree=3000); timeit('g*g')\n25 loops, best of 3: 19.5 ms per loop\nsage: f = R.random_element(degree=3000); timeit('f*f')\n25 loops, best of 3: 16.3 ms per loop\nsage: g = S.random_element(degree=3000); timeit('g*g')\n25 loops, best of 3: 14.3 ms per loop\nsage: f = R.random_element(degree=30000); timeit('f*f')\n5 loops, best of 3: 1.03 s per loop\nsage: g = S.random_element(degree=30000); timeit('g*g')\n5 loops, best of 3: 1.04 s per loop\nsage: f = R.random_element(degree=30000); timeit('f*f')\n5 loops, best of 3: 995 ms per loop\nsage: g = S.random_element(degree=30000); timeit('g*g')\n5 loops, best of 3: 1.09 s per loop\n```\n\n\nMaybe I did something wrong?\n\nI also got this doctest error (my RC built w/o any errors) when checking the rings/polynomial dir.\n\n\n```\nFile \"/scratch/scratch/schilly/sage/sage-4.5.2.rc0/devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\", line 474:\n    sage: f(x) is f\nExpected:\n    True\nGot:\n    False\n```\n\n\nBtw, the doctest failure in the tutorial I reported earlier is fixed.\n\nThe system were I did run this is Ubuntu 8.10 32 bit, gcc version 4.3.2 (Ubuntu 4.3.2-1ubuntu12),  Intel(R) Core(TM)2 Quad CPU    Q9400",
     "created_at": "2010-08-01T21:34:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28821",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28763",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -2658,15 +2656,15 @@ The system were I did run this is Ubuntu 8.10 32 bit, gcc version 4.3.2 (Ubuntu 
 
 ---
 
-archive/issue_comments_028822.json:
+archive/issue_comments_028764.json:
 ```json
 {
     "body": "Hi Harald,\n\nThank you for looking at this again.  The timings you provide are all obtained by the new implementation.  For example, multiplying to degree 3000 polynomials takes 15ms with the new implementation as you show, but took 600ms before as explained in the description at the top of this ticket! --- And this is the advertised improvement by a factor of 40 in a basic arithmetic operation :)\n\nThis is because the implementation is provided alongside the old, it is simply a drop in replacement for the old one.  Using the parameter \"implementation\" doesn't raise an error, but it doesn't do anything useful either.\n\nSo far, I have only tested the patch against Sage 4.4.4 and so I can't comment on the last problem that you mention.  I will look at that soon.  As a preliminary opinion I believe that the test is a very bad one:  I can see that f(x) == f should return true.  However, I do not think that f(x) is f should return true.  After all, f(g) for any other g, e.g. g = x*x, returns a new polynomial object.\n\nMany thanks for looking at this,\n\nSebastian",
     "created_at": "2010-08-01T23:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28822",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28764",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2686,15 +2684,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028823.json:
+archive/issue_comments_028765.json:
 ```json
 {
     "body": "Ah ok, lol. I've also complete a ptestlong and it's just this f(x) is or == f thing. I also think that this depends on what f is. if f is already an \"f(x)\" then f(x) should be the same as f, otherwise not. Behind the scene it is symbolic_expression(f).function(x) and I can only speculate that it makes sense to make this function behave idempotent, but only in special cases. Sorry that I don't know more about this and I also cannot comment on the code itself, apart from that it is apparently working for me ;)",
     "created_at": "2010-08-02T10:24:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28823",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28765",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -2704,15 +2702,15 @@ Ah ok, lol. I've also complete a ptestlong and it's just this f(x) is or == f th
 
 ---
 
-archive/issue_comments_028824.json:
+archive/issue_comments_028766.json:
 ```json
 {
     "body": "I get the following error:\n\n```\nsage -t -long \"devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\"\nError: unable to alloc/realloc memory\n**********************************************************************\nFile \"/scratch/rlmill/sage-4.5.1.vg/devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\", line 992:\n    sage: (1 + t)^(2^31)\nExpected:\n    Traceback (most recent call last):\n    ...\n    OverflowError: long int too large to convert to int\nGot:\n    Traceback (most recent call last):\n      File \"/scratch/rlmill/sage-4.5.1.vg/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/rlmill/sage-4.5.1.vg/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/rlmill/sage-4.5.1.vg/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_32[11]>\", line 1, in <module>\n        (Integer(1) + t)**(Integer(2)**Integer(31))###line 992:\n    sage: (1 + t)^(2^31)\n    RuntimeError\n**********************************************************************\n```\n",
     "created_at": "2010-08-03T21:18:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28824",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28766",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -2748,15 +2746,15 @@ Got:
 
 ---
 
-archive/issue_comments_028825.json:
+archive/issue_comments_028767.json:
 ```json
 {
     "body": "Hi Robert and Harald,\n\nThank you for looking at this.\n\nAbout the first problem (the ``f(x) is f`` issue), I won't fix this on this ticket yet since I believe this doctest simply should not be merged into 4.5.2 and I don't want to play catching up with the moving target that a current release candidate is.  If this doctest does end up getting into 4.5.2, I'll adjust it on this ticket as soon as 4.5.2 is out.\n\nThe second problem Robert mentions is a 32-bit versus 64-bit issue.  I'm sorry I've missed this, in particular since in the same file there is a similar issue already which I did attend to.  Anyway, I've got an updated patch (just replacing ``31`` by ``64``) which I'll upload later.  With this, all tests pass on sage.math.\n\nThanks again,\n\nSebastian\n\nPS:  I'm sorry for the delay in replying to this.  I've been very busy working on FLINT2, but that now compiles with ``-ansi -pedantic -Wall -Werror`` :)",
     "created_at": "2010-08-04T14:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28825",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28767",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2778,15 +2776,15 @@ PS:  I'm sorry for the delay in replying to this.  I've been very busy working o
 
 ---
 
-archive/issue_comments_028826.json:
+archive/issue_comments_028768.json:
 ```json
 {
     "body": "Seb,\n\nReplying to [comment:79 spancratz]:\n> PS:  I'm sorry for the delay in replying to this.  I've been very busy working on FLINT2, but that now compiles with ``-ansi -pedantic -Wall -Werror`` :)\n\nNice work! I think that once the 32/64 bit issue is fixed, this should be ready to go, and unless anyone else objects, I'll move it to positive review once that's finished. I think this is an impressive bit of work and definitely needs to be merged before bits start rotting.",
     "created_at": "2010-08-06T15:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28826",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28768",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -2801,15 +2799,15 @@ Nice work! I think that once the 32/64 bit issue is fixed, this should be ready 
 
 ---
 
-archive/issue_comments_028827.json:
+archive/issue_comments_028769.json:
 ```json
 {
     "body": "fix the 32/64-bit doctest that Robert found... thus hopefully meaning this is ready for positive review!",
     "created_at": "2010-08-11T18:21:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28827",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28769",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -2819,15 +2817,15 @@ fix the 32/64-bit doctest that Robert found... thus hopefully meaning this is re
 
 ---
 
-archive/issue_comments_028828.json:
+archive/issue_comments_028770.json:
 ```json
 {
     "body": "Attachment [trac4000_64bit.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_64bit.patch) by @williamstein created at 2010-08-11 18:22:36\n\nReplying to [comment:80 rlm]:\n> Nice work! I think that once the 32/64 bit issue is fixed, this should be ready to go, and unless anyone else objects, I'll move it to positive review once that's finished.\n\nI posted a patch that finishes the 32/64 bit issue.",
     "created_at": "2010-08-11T18:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28828",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28770",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -2842,15 +2840,15 @@ I posted a patch that finishes the 32/64 bit issue.
 
 ---
 
-archive/issue_comments_028829.json:
+archive/issue_comments_028771.json:
 ```json
 {
     "body": "Attachment [trac4000_is.patch](tarball://root/attachments/some-uuid/ticket4000/trac4000_is.patch) by @williamstein created at 2010-08-11 18:54:51\n\nthere was another issue with an \"is\" in a doctest...",
     "created_at": "2010-08-11T18:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28829",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28771",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -2862,15 +2860,15 @@ there was another issue with an "is" in a doctest...
 
 ---
 
-archive/issue_comments_028830.json:
+archive/issue_comments_028772.json:
 ```json
 {
     "body": "I can give this a positive review, since I didn't write it, and I'm just adding two trivial patches exactly as discussed above.",
     "created_at": "2010-08-11T18:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28830",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28772",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -2880,15 +2878,15 @@ I can give this a positive review, since I didn't write it, and I'm just adding 
 
 ---
 
-archive/issue_comments_028831.json:
+archive/issue_comments_028773.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-11T18:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28831",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28773",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -2898,15 +2896,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_028832.json:
+archive/issue_comments_028774.json:
 ```json
 {
     "body": "I'm sorry I didn't post on this ticket in a while.  Just this afternoon I had a quick look at how this patch played with 4.5.3.alpha1 and I was going to make exactly the changes that William has made already --- as I notice now!\n\nIn any case, a big THANK YOU for finally pushing this one over the line,\n\nSebastian",
     "created_at": "2010-08-22T16:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28832",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28774",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -2920,15 +2918,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028833.json:
+archive/issue_comments_028775.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-15T11:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28833",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28775",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -2938,15 +2936,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028834.json:
+archive/issue_comments_028776.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2010-09-16T22:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28834",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28776",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -2956,15 +2954,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_028835.json:
+archive/issue_comments_028777.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2010-09-16T22:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28835",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28777",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -2974,15 +2972,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_028836.json:
+archive/issue_comments_028778.json:
 ```json
 {
     "body": "I get a build error on the Solaris machines t2.math and {fulvia,mark,mark2}.skynet:\n\n```\nbuilding 'sage.rings.polynomial.polynomial_rational_flint' extension\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/mpatel/build/fulvia/sage-4.6.alpha1/local/include/FLINT/ -I/home/mpatel/build/fulvia/sage-4.6.alpha1/devel/sage/sage/libs/flint/ -I/home/mpatel/build/fulvia/sage-4.6.alpha1/local//include -I/home/mpatel/build/fulvia/sage-4.6.alpha1/local//include/csage -I/home/mpatel/build/fulvia/sage-4.6.alpha1/devel//sage/sage/ext -I/home/mpatel/build/fulvia/sage-4.6.alpha1/local/include/python2.6 -c sage/rings/polynomial/polynomial_rational_flint.cpp -o build/temp.solaris-2.10-i86pc-2.6/sage/rings/polynomial/polynomial_rational_flint.o -std=c99 -D_XPG6 -w\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\nIn file included from /usr/include/limits.h:18:0,\n                 from /usr/local/gcc-4.5.1/x86_64-SunOS-core2-sun-ld/lib/gcc/i386-pc-solaris2.10/4.5.1/include-fixed/limits.h:169,\n                 from /usr/local/gcc-4.5.1/x86_64-SunOS-core2-sun-ld/lib/gcc/i386-pc-solaris2.10/4.5.1/include-fixed/syslimits.h:7,\n                 from /usr/local/gcc-4.5.1/x86_64-SunOS-core2-sun-ld/lib/gcc/i386-pc-solaris2.10/4.5.1/include-fixed/limits.h:34,\n                 from /home/mpatel/build/fulvia/sage-4.6.alpha1/local/include/python2.6/Python.h:19,\n                 from sage/rings/polynomial/polynomial_rational_flint.cpp:4:\n/usr/local/gcc-4.5.1/x86_64-SunOS-core2-sun-ld/lib/gcc/i386-pc-solaris2.10/4.5.1/include-fixed/sys/feature_tests.h:345:2: error: #error \"Compiler or options invalid; UNIX 03 and POSIX.1-2001 applications     require the use of c99\"\nerror: command 'gcc' failed with exit status 1\nsage: There was an error installing modified sage library code.\n```\n\n\nI'm reopening this ticket.  Unless someone can post a patch within a day or so, I'll \"unmerge\" the changes from 4.6.alpha1.\n\nThere are also some doctest errors...",
     "created_at": "2010-09-16T22:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28836",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28778",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3012,15 +3010,15 @@ There are also some doctest errors...
 
 ---
 
-archive/issue_comments_028837.json:
+archive/issue_comments_028779.json:
 ```json
 {
     "body": "I get this error on sage.math and several other Sage cluster and Skynet machines on which 4.6.alpha1 builds successfully:\n\n```\nsage -t -long  devel/sage/sage/rings/polynomial/polynomial_rational_flint.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\", line 1549:\n    sage: R((x-1)*(x+1)).hensel_lift(7, 2)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_44[3]>\", line 1, in <module>\n        R((x-Integer(1))*(x+Integer(1))).hensel_lift(Integer(7), Integer(2))###line 1549:\n    sage: R((x-1)*(x+1)).hensel_lift(7, 2)\n      File \"polynomial_rational_flint.pyx\", line 1588, in sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint.hensel_lift (sage/rings/polynomial/polynomial_rational_flint.cpp:12625)\n        H = self._pari_().polhensellift(y, p, e)\n      File \"gen.pyx\", line 9460, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45047)\n    PariError:  (5)\n```\n\nIs this easy to fix?",
     "created_at": "2010-09-16T23:01:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28837",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28779",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3054,15 +3052,15 @@ Is this easy to fix?
 
 ---
 
-archive/issue_comments_028838.json:
+archive/issue_comments_028780.json:
 ```json
 {
     "body": "For the Solaris / fulvia issue, what if you change the \"-std=c99\" in module_list.py to \"-std=gnu99\" ?",
     "created_at": "2010-09-16T23:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28838",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28780",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -3072,15 +3070,15 @@ For the Solaris / fulvia issue, what if you change the "-std=c99" in module_list
 
 ---
 
-archive/issue_comments_028839.json:
+archive/issue_comments_028781.json:
 ```json
 {
     "body": "I get these doctest errors on sage.math and several other Sage cluster and Skynet machines on which 4.6.alpha1 builds successfully:\n\n```python\nsage -t -long  devel/sage/sage/graphs/generic_graph.py\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/generic_graph.py\", line 6563:\n    sage: dsc = sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense.discriminant\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_98[12]>\", line 1, in <module>\n        dsc = sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense.discriminant###line 6563:\n    sage: dsc = sage.rings.polynomial.polynomial_element_generic.Polynomial_rational_dense.discriminant\n    AttributeError: 'module' object has no attribute 'Polynomial_rational_dense'\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/graphs/generic_graph.py\", line 6564:\n    sage: K.vertices(key=dsc)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_98[13]>\", line 1, in <module>\n        K.vertices(key=dsc)###line 6564:\n    sage: K.vertices(key=dsc)\n    NameError: name 'dsc' is not defined\n```\n\nThe second just follows from the first.",
     "created_at": "2010-09-16T23:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28839",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28781",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3126,15 +3124,15 @@ The second just follows from the first.
 
 ---
 
-archive/issue_comments_028840.json:
+archive/issue_comments_028782.json:
 ```json
 {
     "body": "Replying to [comment:87 mhansen]:\n> For the Solaris / fulvia issue, what if you change the \"-std=c99\" in module_list.py to \"-std=gnu99\" ?\n\nI get the same error message.",
     "created_at": "2010-09-16T23:35:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28840",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28782",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3147,15 +3145,15 @@ I get the same error message.
 
 ---
 
-archive/issue_comments_028841.json:
+archive/issue_comments_028783.json:
 ```json
 {
     "body": "By the way, the unofficial, trial 4.6.alpha1 is in `/home/release/sage-4.6.alpha1` on the Sage cluster.",
     "created_at": "2010-09-17T00:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28841",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28783",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3165,15 +3163,15 @@ By the way, the unofficial, trial 4.6.alpha1 is in `/home/release/sage-4.6.alpha
 
 ---
 
-archive/issue_comments_028842.json:
+archive/issue_comments_028784.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-09-17T01:00:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28842",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28784",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3183,15 +3181,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_028843.json:
+archive/issue_comments_028785.json:
 ```json
 {
     "body": "David, do you have any thoughts about [comment:85 comment 85ff]?",
     "created_at": "2010-09-17T01:00:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28843",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28785",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3201,15 +3199,15 @@ David, do you have any thoughts about [comment:85 comment 85ff]?
 
 ---
 
-archive/issue_comments_028844.json:
+archive/issue_comments_028786.json:
 ```json
 {
     "body": "Replying to [comment:91 mpatel]:\n> David, do you have any thoughts about [comment:85 comment 85ff]?\n\nIt looks like the compiler is compiling for a different standard to what the code is. Changing to C99 mode might cure it, but that can cause problems too, as some code may not compile in C99 mode - there are some compatibility issues. \n\nThe Solaris headers are stricter than the Linux ones, so something things that you can get away with on linux, you can't on Solaris. For example, the macro infinity is not defined until C99, but linux header seems to define it irrespective of what mode the compiler is in. For Solaris, the compiler will have to be set to C99 otherwise it wont work. \n\nI've no idea precisely what the problem is here, as others have suggested, it looks like the code does not agree with what the compiler is set to.",
     "created_at": "2010-09-17T01:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28844",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28786",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -3226,15 +3224,15 @@ I've no idea precisely what the problem is here, as others have suggested, it lo
 
 ---
 
-archive/issue_comments_028845.json:
+archive/issue_comments_028787.json:
 ```json
 {
     "body": "From around line 345 of Skynet's `/usr/local/gcc-4.5.1/x86_64-SunOS-core2-sun-ld/lib/gcc/i386-pc-solaris2.10/4.5.1/include-fixed/sys/feature_tests.h`:\n\n```c\n/*\n * It is invalid to compile an XPG3, XPG4, XPG4v2, or XPG5 application\n * using c99.  The same is true for POSIX.1-1990, POSIX.2-1992, POSIX.1b,\n * and POSIX.1c applications. Likewise, it is invalid to compile an XPG6\n * or a POSIX.1-2001 application with anything other than a c99 or later\n * compiler.  Therefore, we force an error in both cases.\n */\n#if defined(_STDC_C99) && (defined(__XOPEN_OR_POSIX) && !defined(_XPG6))\n#error \"Compiler or options invalid for pre-UNIX 03 X/Open applications \\\n        and pre-2001 POSIX applications\"\n#elif !defined(_STDC_C99) && \\\n        (defined(__XOPEN_OR_POSIX) && defined(_XPG6))\n#error \"Compiler or options invalid; UNIX 03 and POSIX.1-2001 applications \\\n        require the use of c99\"\n#endif\n```\n",
     "created_at": "2010-09-17T02:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28845",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28787",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3263,15 +3261,15 @@ From around line 345 of Skynet's `/usr/local/gcc-4.5.1/x86_64-SunOS-core2-sun-ld
 
 ---
 
-archive/issue_comments_028846.json:
+archive/issue_comments_028788.json:
 ```json
 {
     "body": "Replying to [comment:89 mpatel]:\n> Replying to [comment:87 mhansen]:\n> > For the Solaris / fulvia issue, what if you change the \"-std=c99\" in module_list.py to \"-std=gnu99\" ?\n> \n> I get the same error message.\n\nFor what it's worth, dropping `-D_XPG6` allows `sage -b` and the build to finish on fulvia.  I'm running the tests now.",
     "created_at": "2010-09-17T08:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28846",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28788",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3287,15 +3285,15 @@ For what it's worth, dropping `-D_XPG6` allows `sage -b` and the build to finish
 
 ---
 
-archive/issue_comments_028847.json:
+archive/issue_comments_028789.json:
 ```json
 {
     "body": "Replying to [comment:94 mpatel]:\n> Replying to [comment:89 mpatel]:\n> > Replying to [comment:87 mhansen]:\n> > > For the Solaris / fulvia issue, what if you change the \"-std=c99\" in module_list.py to \"-std=gnu99\" ?\n> > \n> > I get the same error message.\n> \n> For what it's worth, dropping `-D_XPG6` allows `sage -b` and the build to finish on fulvia.  I'm running the tests now.\n\nThe long doctests pass, except for the errors I mentioned above, #9916, and #9924.",
     "created_at": "2010-09-17T10:28:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28847",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28789",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3314,15 +3312,15 @@ The long doctests pass, except for the errors I mentioned above, #9916, and #992
 
 ---
 
-archive/issue_comments_028848.json:
+archive/issue_comments_028790.json:
 ```json
 {
     "body": "Replying to [comment:92 drkirkby]:\n> Replying to [comment:91 mpatel]:\n> > David, do you have any thoughts about [comment:85 comment 85ff]?\n> \n> It looks like the compiler is compiling for a different standard to what the code is. Changing to C99 mode might cure it, but that can cause problems too, as some code may not compile in C99 mode - there are some compatibility issues. \n> \n> The Solaris headers are stricter than the Linux ones, so something things that you can get away with on linux, you can't on Solaris. For example, the macro infinity is not defined until C99, but linux header seems to define it irrespective of what mode the compiler is in. For Solaris, the compiler will have to be set to C99 otherwise it wont work. \n\nHow does one compile C++ with `-std=c99`? ;-)",
     "created_at": "2010-09-17T21:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28848",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28790",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3340,15 +3338,15 @@ How does one compile C++ with `-std=c99`? ;-)
 
 ---
 
-archive/issue_comments_028849.json:
+archive/issue_comments_028791.json:
 ```json
 {
     "body": "Replying to [comment:86 mpatel]:\n> I get this error on sage.math and several other Sage cluster and Skynet machines on which 4.6.alpha1 builds successfully:\n\n```\nsage -t -long  devel/sage/sage/rings/polynomial/polynomial_rational_flint.pyx\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/devel/sage-main/sage/rings/polynomial/polynomial_rational_flint.pyx\", line 1549:\n    sage: R((x-1)*(x+1)).hensel_lift(7, 2)\nException raised:\n    Traceback (most recent call last):\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/mnt/usb1/scratch/mpatel/tmp/sage-4.6.alpha1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_44[3]>\", line 1, in <module>\n        R((x-Integer(1))*(x+Integer(1))).hensel_lift(Integer(7), Integer(2))###line 1549:\n    sage: R((x-1)*(x+1)).hensel_lift(7, 2)\n      File \"polynomial_rational_flint.pyx\", line 1588, in sage.rings.polynomial.polynomial_rational_flint.Polynomial_rational_flint.hensel_lift (sage/rings/polynomial/polynomial_rational_flint.cpp:12625)\n        H = self._pari_().polhensellift(y, p, e)\n      File \"gen.pyx\", line 9460, in sage.libs.pari.gen._pari_trap (sage/libs/pari/gen.c:45047)\n    PariError:  (5)\n```\n\n> Is this easy to fix?\n\n**No! ** (I wonder who decided to give such error messages.)\n\n----\n\nThere are at least two ways to fix this, either in the Sage library:\n\n```diff\ndiff --git a/sage/libs/pari/gen.pyx b/sage/libs/pari/gen.pyx\n--- a/sage/libs/pari/gen.pyx\n+++ b/sage/libs/pari/gen.pyx\n@@ -7025,7 +7025,7 @@\n         t0GEN(y)\n         t1GEN(p)\n         _sig_on\n-        return self.new_gen(polhensellift(self.g, t0, t1, e))\n+        return self.new_gen(polhensellift(self.g, lift(t0), t1, e))\n \n     def polisirreducible(self):\n         \"\"\"\n```\n\nor \"upstream\" / in the PARI 2.4.3.svn-12577.* spkg (e.g. in #9876's `.p6`, too):\n\n```diff\ndiff --git a/src/src/modules/Hensel.c b/src/src/modules/Hensel.c\n--- a/src/src/modules/Hensel.c\n+++ b/src/src/modules/Hensel.c\n@@ -394,6 +394,7 @@\n   if (N < 1) pari_err(talker, \"not a positive exponent in polhensellift\");\n \n   l = lg(L); L = leafcopy(L);\n+  L = lift(L); /* make sure the coeffs are integers and not intmods */\n   for (i = 1; i < l; i++)\n   {\n     if (typ(gel(L,i)) != t_POL)\n```\n\n\nProbably someone more knowledgeable could fix this in a better way.",
     "created_at": "2010-09-18T06:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28849",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28791",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3423,15 +3421,15 @@ Probably someone more knowledgeable could fix this in a better way.
 
 ---
 
-archive/issue_comments_028850.json:
+archive/issue_comments_028792.json:
 ```json
 {
     "body": "Attachment [4000_fix_hensel_lift.patch](tarball://root/attachments/some-uuid/ticket4000/4000_fix_hensel_lift.patch) by @jdemeyer created at 2010-09-18 19:58:44\n\nFixes issue with hensel_lift()",
     "created_at": "2010-09-18T19:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28850",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28792",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3443,15 +3441,15 @@ Fixes issue with hensel_lift()
 
 ---
 
-archive/issue_comments_028851.json:
+archive/issue_comments_028793.json:
 ```json
 {
     "body": "Replying to [comment:86 mpatel]:\n> Is this easy to fix?\n\nYes, see patch.  Note that I have not tested this patch yet against the rest of Sage.",
     "created_at": "2010-09-18T20:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28851",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28793",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3464,15 +3462,15 @@ Yes, see patch.  Note that I have not tested this patch yet against the rest of 
 
 ---
 
-archive/issue_comments_028852.json:
+archive/issue_comments_028794.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-18T20:00:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28852",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28794",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3482,15 +3480,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_028853.json:
+archive/issue_comments_028795.json:
 ```json
 {
     "body": "Replying to [comment:97 leif]:\n> (I wonder who decided to give such error messages.)\n\nThis is one of the issues with PARI I would like to address, but it won't be soon.",
     "created_at": "2010-09-18T20:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28853",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28795",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3503,15 +3501,15 @@ This is one of the issues with PARI I would like to address, but it won't be soo
 
 ---
 
-archive/issue_comments_028854.json:
+archive/issue_comments_028796.json:
 ```json
 {
     "body": "I'm \"unmerging\" this from 4.6.alpha1, since alpha1 is otherwise almost ready to release.  We'll still have a 4.6.alpha2 into which I can merge this important and long-awaited improvement.\n\nI can't test Jeroen's patch now.  The `generic_graph.py` error appears easy to fix.  We just need to get `sage -b` to succeed on Solaris.",
     "created_at": "2010-09-18T21:33:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28854",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28796",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3523,15 +3521,15 @@ I can't test Jeroen's patch now.  The `generic_graph.py` error appears easy to f
 
 ---
 
-archive/issue_comments_028855.json:
+archive/issue_comments_028797.json:
 ```json
 {
     "body": "Replying to [comment:96 leif]:\n> Replying to [comment:92 drkirkby]:\n\n> > The Solaris headers are stricter than the Linux ones, so something things that you can get away with on linux, you can't on Solaris. For example, the macro infinity is not defined until C99, but linux header seems to define it irrespective of what mode the compiler is in. For Solaris, the compiler will have to be set to C99 otherwise it wont work. \n> \n> How does one compile C++ with `-std=c99`? ;-)\n\nIt would be a lot less confusing if people used gcc to compile C and g++ to compile C++. What next, g++ to compile Fortran? \n\nIt would be nice to get rid of the endless warnings like:\n\n\n```\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n```\n",
     "created_at": "2010-09-18T22:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28855",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28797",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -3556,15 +3554,15 @@ cc1plus: warning: command line option "-Wstrict-prototypes" is valid for Ada/C/O
 
 ---
 
-archive/issue_comments_028856.json:
+archive/issue_comments_028798.json:
 ```json
 {
     "body": "The failures in `generic_graph.py` stem from the newly merged #9741.  I've added a comment there.",
     "created_at": "2010-09-18T23:12:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28856",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28798",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3574,15 +3572,15 @@ The failures in `generic_graph.py` stem from the newly merged #9741.  I've added
 
 ---
 
-archive/issue_comments_028857.json:
+archive/issue_comments_028799.json:
 ```json
 {
     "body": "I asked Bill Hart, FLINT's lead developer, about the Solaris error.  He replied:\n\n```\n>> It looks to me like _STDC_C99 is not defined by the compiler on this\n>> platform. Due to a bug in Solaris's headers, this causes it to fail.\n>>\n>> You *might* be able to work around it with one of the following fixes:\n>>\n>> 1) pass -std=gnu99 instead of -std=c99 (I do not guarantee flint will\n>> compile with this flag)\n>>\n>> 2) don't pass XPG6 (it's technically correct, but triggers the bug, basically)\n>>\n>> 3) pass -stdc=c99 (I am unsure if this will work)\n>>\n>> If none of those work, I suggest you report the bug to Sun. It is\n>> certainly not a flint bug.\n```\n\n(I've reproduced this with Bill's permission.)  Thoughts?",
     "created_at": "2010-09-18T23:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28857",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28799",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3611,15 +3609,15 @@ I asked Bill Hart, FLINT's lead developer, about the Solaris error.  He replied:
 
 ---
 
-archive/issue_comments_028858.json:
+archive/issue_comments_028800.json:
 ```json
 {
     "body": "Using Google, there are plenty of references to the fact `_STDC_C99` should not be defined for C++, only C99. But this is C++ code.",
     "created_at": "2010-09-19T00:22:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28858",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28800",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -3629,15 +3627,15 @@ Using Google, there are plenty of references to the fact `_STDC_C99` should not 
 
 ---
 
-archive/issue_comments_028859.json:
+archive/issue_comments_028801.json:
 ```json
 {
     "body": "BTW, in the next week or so I should be able to try this on AIX 5.3 with the IBM C and C++ compilers. That would bypass gcc/g++ and Solaris headers. It would be a **completely** different build environment. It would be interesting to see what happens there. \n\nDoes anyone have a copy of the latest C and C++ standards? \n\nDave",
     "created_at": "2010-09-19T01:00:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28859",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28801",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -3651,15 +3649,15 @@ Dave
 
 ---
 
-archive/issue_comments_028860.json:
+archive/issue_comments_028802.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2010-09-19T06:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28860",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28802",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3669,15 +3667,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_028861.json:
+archive/issue_comments_028803.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-19T06:51:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28861",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28803",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3687,15 +3685,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_028862.json:
+archive/issue_comments_028804.json:
 ```json
 {
     "body": "I've changed the status to \"needs work\", because we still need fixes for the other problems.",
     "created_at": "2010-09-19T06:52:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28862",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28804",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3705,15 +3703,15 @@ I've changed the status to "needs work", because we still need fixes for the oth
 
 ---
 
-archive/issue_comments_028863.json:
+archive/issue_comments_028805.json:
 ```json
 {
     "body": "Replying to [comment:101 drkirkby]:\n> It would be a lot less confusing if people used gcc to compile C and g++ to compile C++. What next, g++ to compile Fortran? \n\nNote that `gcc` is not the C compiler, but a compiler *driver* (and GCC is the GNU *Compiler Collection*, renamed years ago).\n\nSo it's in general pretty ok to use `gcc` to preprocess, assemble or link files, compile C, C++ or even Fortran files with `gcc`, but one should pass the appropriate options (and e.g. libraries that are *not* added by default in that case) depending on the source language.\n\nOf course using `gjc` for Java, `g++` for C++ and `gfortran` for Fortran is less confusing (and perhaps less error-prone).\n\n> It would be nice to get rid of the endless warnings like:\n> \n\n```\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n```\n\n\nAgain *ceterum censeo ...* (I don't recall how often I complained about that).\n\nAlso, (besides `libcsage.*`) `libstdc++.*` is linked to each and every extension module regardless of the `language`.\n\nNote also that the XPG6 / C99 issue is not an upstream (FLINT) problem, since FLINT is C, not C++, but we compile FLINT source code as C++.\n\nIn addition, the Solaris headers are patched by GCC's `fix-includes`, so I'm not sure who's to blame for the failure. The relevant test should certainly also make a distinction on C++.",
     "created_at": "2010-09-19T11:52:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28863",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28805",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3746,15 +3744,15 @@ In addition, the Solaris headers are patched by GCC's `fix-includes`, so I'm not
 
 ---
 
-archive/issue_comments_028864.json:
+archive/issue_comments_028806.json:
 ```json
 {
     "body": "On the Solaris build error: From `SAGE_ROOT/devel/sage/module_list.py`:\n\n```python\n    Extension('sage.rings.polynomial.polynomial_rational_flint',\n              sources = ['sage/rings/polynomial/polynomial_rational_flint.pyx', 'sage/libs/flint/fmpq_poly.c'],\n              language = 'c++',\n              extra_compile_args=[\"-std=c99\", \"-D_XPG6\"],\n              libraries = [\"csage\", \"flint\", \"ntl\", \"gmpxx\", \"gmp\"],\n              include_dirs = [SAGE_ROOT + '/local/include/FLINT/', SAGE_ROOT + '/devel/sage/sage/libs/flint/'],\n              depends = [SAGE_ROOT + \"/local/include/FLINT/flint.h\"]),\n```\n\nIf I understand correctly (and to recap, somewhat):\n\n* The `language` option just tells Cython to create a C++ file `polynomial_rational_flint.cpp` from the Cython file `polynomial_rational_flint.pyx`, so that we can compile the .cpp file with NTL's C++ headers, etc.\n* The `extra_compile_args` here are really only for compiling the C99 file `fmpq_poly.c`.  But distutils also uses them (and `-Wstrict-prototypes`) to compile `polynomial_rational_flint.cpp`, too.  This can give the warnings\n\n```\ncc1plus: warning: command line option \"-std=c99\" is valid for C/ObjC but not for C++\ncc1plus: warning: command line option \"-Wstrict-prototypes\" is valid for Ada/C/ObjC but not for C++\n```\n\n* We need `-std=c99` to compile the C99 file `fmpq_poly.c`.  Using `-std=gnu99` instead, gives, e.g.,\n\n```\nIn file included from /usr/include/time.h:22:0,\n                 from /home/mpatel/build/fulvia/sage-4.6.alpha1pre-4000/local/include/FLINT/zmod_poly.h:35,\n                 from /home/mpatel/build/fulvia/sage-4.6.alpha1pre-4000/local/include/FLINT/fmpz_poly.h:40,\n                 from sage/libs/flint/fmpq_poly.h:22,\n                 from sage/libs/flint/fmpq_poly.c:15:\n/usr/include/sys/types.h:536:23: error: duplicate \u2018unsigned\u2019\n```\n\n The other extra argument, `-D_XPG6` is technically correct, as Bill says, but causes problems with gcc on Solaris.\n\nAre there any objections to using\n\n```python\n              extra_compile_args=[\"-std=c99\"] + uname_specific('SunOS', [], ['-D_XPG6']),\n```\n\ninstead?",
     "created_at": "2010-09-20T10:42:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28864",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28806",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3805,15 +3803,15 @@ instead?
 
 ---
 
-archive/issue_comments_028865.json:
+archive/issue_comments_028807.json:
 ```json
 {
     "body": "Replying to [comment:110 mpatel]:\n> [...]\n> Are there any objections to using\n\n```python\n              extra_compile_args=[\"-std=c99\"] + uname_specific('SunOS', [], ['-D_XPG6']),\n```\n\n> instead?\n\nI would really appreciate if this got fixed in a proper way, and not with yet another work-around.\n\nI.e., IMHO one should\n* **drop the** `language=\"c++\"` (since it is in fact C code),\n* clean up - unfortunately lots of - Cython header files (`.pxi`, `.pxd`) to not rather randomly include NTL[-related] wrappers / headers which trigger the need for C++. Some `.pyx` files then have to explicitly include these elsewhere omitted ones (but IIRC only `sage/algebras/quatalg/quaternion_algebra_element.pyx`).\n* Remove `\"ntl\"` and `\"gmpxx\"` from `libraries`.\n\nI've actually given up to complete the second step, since for some reason Cython insists to put both\n\n```C\n#include \"ntl_wrap.h\"\n```\n\nand\n\n```C\n#include \"FLINT/NTL-interface.h\"\n```\n\ninto the generated `polynomial_rational_flint.c` (for me, line 168 and 170).\n\nIf I manually remove these two lines, the extension module gets properly built and apparently works.\n\nIf we solve just the XPG6 issue (by getting around the bad Solaris headers), but keep the underlying cause, I'm pretty sure we'll revisit the same problem (needing to compile C code as if it was C++) soon.\n\nPerhaps one should ask the authors why they added `language=\"c++\"`; I guess just because they ran into the real problem.",
     "created_at": "2010-09-20T13:37:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28865",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28807",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3858,15 +3856,15 @@ Perhaps one should ask the authors why they added `language="c++"`; I guess just
 
 ---
 
-archive/issue_comments_028866.json:
+archive/issue_comments_028808.json:
 ```json
 {
     "body": "P.S.: The `-Wstrict-prototypes` is a separate Cython / distutils problem. Perhaps fixed in Cython 0.13 (Robert B. is well aware of this), but I think it isn't yet.",
     "created_at": "2010-09-20T13:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28866",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28808",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3876,15 +3874,15 @@ P.S.: The `-Wstrict-prototypes` is a separate Cython / distutils problem. Perhap
 
 ---
 
-archive/issue_comments_028867.json:
+archive/issue_comments_028809.json:
 ```json
 {
     "body": "P.P.S.:\n\n```python\nfrom sage.libs.flint.ntl_interface cimport *\n```\n\nalso has to be removed from `polynomial_rational_flint.pyx`.",
     "created_at": "2010-09-20T14:02:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28867",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28809",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3900,15 +3898,15 @@ also has to be removed from `polynomial_rational_flint.pyx`.
 
 ---
 
-archive/issue_comments_028868.json:
+archive/issue_comments_028810.json:
 ```json
 {
     "body": "Fixes doctest for graph vertex sorting, see #9741",
     "created_at": "2010-09-20T18:12:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28868",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28810",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -3918,15 +3916,15 @@ Fixes doctest for graph vertex sorting, see #9741
 
 ---
 
-archive/issue_comments_028869.json:
+archive/issue_comments_028811.json:
 ```json
 {
     "body": "Attachment [trac_4000-graph-vertex-sort-fix.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-graph-vertex-sort-fix.patch) by @rbeezer created at 2010-09-20 18:16:05\n\nReplying to [comment:102 mpatel]:\n> The failures in `generic_graph.py` stem from the newly merged #9741.  I've added a comment there.\n\n#9741 has a doctest that uses vertices that are polynomials.  With module name changes here at #4000, one of the doctests needs to change.  I've added a bit of documentation (and expanded the test slightly) to make it clear why the fully-qualified name is being used - more discussion is on #9741.\n\nI built this patch after applying everything up through the \"hensel_lift\" patch, but it should just depend on the renaming of the modules.  Tests now pass on `sage/graphs/generic_graph.py` and the documentation for this module looks fine.",
     "created_at": "2010-09-20T18:16:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28869",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28811",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -3943,15 +3941,15 @@ I built this patch after applying everything up through the "hensel_lift" patch,
 
 ---
 
-archive/issue_comments_028870.json:
+archive/issue_comments_028812.json:
 ```json
 {
     "body": "Another P.S.:\n\nWhile `ntl_wrap.h` does no harm (it can be included in C programs), `FLINT/NTL-interface.h` is quite funny:\n\n```CC\n...\nNTL-interface.h: Header file for NTL-interface.cpp\n\nCopyright (C) 2007, William Hart\n\n*****************************************************************************/\n\n#ifndef FLINT_NTL_INT_H\n#define FLINT_NTL_INT_H\n\n#ifdef __cplusplus\n extern \"C\" {\n#endif\n\n#include <NTL/ZZ.h>\n#include <NTL/ZZX.h>\n\n#include \"flint.h\"\n#include \"F_mpz.h\"\n#include \"fmpz.h\"\n#include \"fmpz_poly.h\"\n\nNTL_CLIENT\n\n/*\n   Returns the number of limbs taken up by an NTL ZZ\n*/\n\nunsigned long ZZ_limbs(const ZZ& z);\n\n...\n```\n",
     "created_at": "2010-09-22T04:48:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28870",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28812",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3998,15 +3996,15 @@ unsigned long ZZ_limbs(const ZZ& z);
 
 ---
 
-archive/issue_comments_028871.json:
+archive/issue_comments_028813.json:
 ```json
 {
     "body": "I've finally managed to build `sage.rings.polynomial.polynomial_rational_flint` as a **C** extension module; have to sort out the changes though (but not today).\n\nThis also fixes the Solaris headers issue.",
     "created_at": "2010-09-23T13:37:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28871",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28813",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4018,15 +4016,15 @@ This also fixes the Solaris headers issue.
 
 ---
 
-archive/issue_comments_028872.json:
+archive/issue_comments_028814.json:
 ```json
 {
     "body": "Dear Leif,\n\nI just wanted to say thank you for looking at this.\n\nBest wishes,\nSebastian",
     "created_at": "2010-09-23T15:42:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28872",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28814",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -4041,15 +4039,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_028873.json:
+archive/issue_comments_028815.json:
 ```json
 {
     "body": "Replying to [comment:118 spancratz]:\n> Dear Leif, I just wanted to say thank you for looking at this. Best wishes, Sebastian\n\nIndeed, thanks very much for working on a proper solution.  It would be nice to get #4000 into 4.6.alpha3 for wider testing.  What do you think about using the workaround temporarily and having a separate ticket for doing it right?",
     "created_at": "2010-10-05T05:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28873",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28815",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4062,15 +4060,15 @@ Indeed, thanks very much for working on a proper solution.  It would be nice to 
 
 ---
 
-archive/issue_comments_028874.json:
+archive/issue_comments_028816.json:
 ```json
 {
     "body": "I think this would be the appropriate way to handle this.  Sebastian",
     "created_at": "2010-10-06T23:08:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28874",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28816",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -4080,15 +4078,15 @@ I think this would be the appropriate way to handle this.  Sebastian
 
 ---
 
-archive/issue_comments_028875.json:
+archive/issue_comments_028817.json:
 ```json
 {
     "body": "Applying [attachment:trac4000_0.patch] to 4.6.alpha2, I get a failed \"hunk\":\n\n```diff\n--- polynomial_ring.py\n+++ polynomial_ring.py\n@@ -1220,28 +1220,34 @@\n             sage: type(R.gen())\n             <class 'sage.rings.polynomial.polynomial_element_generic.Polynomial_generic_dense_field'>\n         \"\"\"\n-        if implementation is None: implementation=\"NTL\"\n         from sage.rings.finite_rings.finite_field_base import is_FiniteField\n+        from sage.rings.rational_field import QQ\n+        from sage.rings.polynomial.polynomial_singular_interface import can_convert_to_singular\n+        if implementation is None:\n+            implementation = \"NTL\"\n+\n         if implementation == \"NTL\" and is_FiniteField(base_ring):\n-            p=base_ring.characteristic()\n             from sage.libs.ntl.ntl_ZZ_pEContext import ntl_ZZ_pEContext\n             from sage.libs.ntl.ntl_ZZ_pX import ntl_ZZ_pX\n+            from sage.rings.polynomial.polynomial_zz_pex import Polynomial_ZZ_pEX\n+\n+            p = base_ring.characteristic()\n             self._modulus = ntl_ZZ_pEContext(ntl_ZZ_pX(list(base_ring.polynomial()), p))\n-            from sage.rings.polynomial.polynomial_zz_pex import Polynomial_ZZ_pEX\n-            element_class=Polynomial_ZZ_pEX\n+            element_class = Polynomial_ZZ_pEX\n \n         if not element_class:\n             if sparse:\n                 element_class = polynomial_element_generic.Polynomial_generic_sparse_field\n             elif isinstance(base_ring, rational_field.RationalField):\n-                element_class = polynomial_element_generic.Polynomial_rational_dense\n+                from sage.rings.polynomial.polynomial_rational_flint import Polynomial_rational_flint\n+                element_class = Polynomial_rational_flint\n             elif is_RealField(base_ring):\n                 element_class = PolynomialRealDense\n             else:\n                 element_class = polynomial_element_generic.Polynomial_generic_dense_field\n+\n         PolynomialRing_integral_domain.__init__(self, base_ring, name=name, sparse=sparse, element_class=element_class)\n \n-        from sage.rings.polynomial.polynomial_singular_interface import can_convert_to_singular\n         self._has_singular = can_convert_to_singular(self)\n \n     def divided_difference(self, points, full_table=False):\n```\n\nCould someone who knows this code please rebase the patch?",
     "created_at": "2010-10-07T06:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28875",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28817",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4146,15 +4144,15 @@ Could someone who knows this code please rebase the patch?
 
 ---
 
-archive/issue_comments_028876.json:
+archive/issue_comments_028818.json:
 ```json
 {
     "body": "Main patch rebased against 4.6.alpha3",
     "created_at": "2010-10-08T08:41:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28876",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28818",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4164,15 +4162,15 @@ Main patch rebased against 4.6.alpha3
 
 ---
 
-archive/issue_comments_028877.json:
+archive/issue_comments_028819.json:
 ```json
 {
     "body": "Attachment [trac_4000-sunos_workaround.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-sunos_workaround.patch) by @qed777 created at 2010-10-08 08:51:32\n\nSolaris work around",
     "created_at": "2010-10-08T08:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28877",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28819",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4184,15 +4182,15 @@ Solaris work around
 
 ---
 
-archive/issue_comments_028878.json:
+archive/issue_comments_028820.json:
 ```json
 {
     "body": "I've attached a rebased patch and a workaround for the Solaris GCC problem.  The patches to apply are now:\n\n* [attachment:trac4000_0.2.patch]\n* [attachment:trac4000_fmpq_poly_c.patch]\n* [attachment:trac4000_fmpq_poly_pxd.patch]\n* [attachment:trac4000_64bit.patch]\n* [attachment:trac4000_is.patch]\n* [attachment:4000_fix_hensel_lift.patch]\n* [attachment:trac_4000-graph-vertex-sort-fix.patch]\n* [attachment:trac_4000-sunos_workaround.patch]",
     "created_at": "2010-10-08T09:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28878",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28820",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4211,15 +4209,15 @@ I've attached a rebased patch and a workaround for the Solaris GCC problem.  The
 
 ---
 
-archive/issue_comments_028879.json:
+archive/issue_comments_028821.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-10-08T09:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28879",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28821",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4229,15 +4227,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_028880.json:
+archive/issue_comments_028822.json:
 ```json
 {
     "body": "The tests pass with a trial 4.6.alpha3 (which is probably the same as alpha2 for this ticket) on sage.math, except for\n\n```python\nsage -t -long -force_lib \"devel/sage/sage/rings/number_field/number_field_ideal.py\"\n**********************************************************************\nFile \"/mnt/usb1/scratch/mpatel/apps/sage-4.6.a3/devel/sage/sage/rings/number_field/number_field_ideal.py\", line 194:\n    sage: NumberField(x^2 + 1, 'a').ideal(7).__hash__()\nExpected:\n    -9223372036854775779                 \nGot:\n    -288230376151711715\n```\n\nOn David Kirkby's OpenSolaris machine hawk, I get\n\n```python\nsage -t -long -force_lib \"devel/sage/sage/rings/number_field/number_field_ideal.py\"\n**********************************************************************\nFile \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.6.alpha3/devel/sage/sage/rings/number_field/number_field_ideal.py\", line 194:\n    sage: NumberField(x^2 + 1, 'a').ideal(7).__hash__()\nExpected:\n    -2147483619\nGot:\n    -67108835\n```\n\n\nI'm inclined to merge this into 4.6.alpha3.  We can open a new ticket for the new error, unless it indicates a serious problem.  I'd like to release 4.6.alpha3 in a day or so, so please let me know as soon as possible.",
     "created_at": "2010-10-08T09:27:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28880",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28822",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4274,15 +4272,15 @@ I'm inclined to merge this into 4.6.alpha3.  We can open a new ticket for the ne
 
 ---
 
-archive/issue_comments_028881.json:
+archive/issue_comments_028823.json:
 ```json
 {
     "body": "Combined patch that replaces all of the others",
     "created_at": "2010-10-08T09:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28881",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28823",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4292,15 +4290,15 @@ Combined patch that replaces all of the others
 
 ---
 
-archive/issue_comments_028882.json:
+archive/issue_comments_028824.json:
 ```json
 {
     "body": "Attachment [trac_4000-combined.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-combined.patch) by @qed777 created at 2010-10-08 09:28:12\n\nI've also attached a combined patch that replaces all of the others.",
     "created_at": "2010-10-08T09:28:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28882",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28824",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4312,15 +4310,15 @@ I've also attached a combined patch that replaces all of the others.
 
 ---
 
-archive/issue_comments_028883.json:
+archive/issue_comments_028825.json:
 ```json
 {
     "body": "Replying to [comment:123 mpatel]:\n> The tests pass with a trial 4.6.alpha3 (which is probably the same as alpha2 for this ticket) on sage.math, except for\n> {{{\n> #!python\n> sage -t -long -force_lib \"devel/sage/sage/rings/number_field/number_field_ideal.py\"\n> **********************************************************************\n> File \"/mnt/usb1/scratch/mpatel/apps/sage-4.6.a3/devel/sage/sage/rings/number_field/number_field_ideal.py\", line 194:\n>     sage: NumberField(x^2 + 1, 'a').ideal(7).__hash__()\n> Expected:\n>     -9223372036854775779                 \n> Got:\n>     -288230376151711715\n> }}}\n> On David Kirkby's OpenSolaris machine hawk, I get\n> {{{\n> #!python\n> sage -t -long -force_lib \"devel/sage/sage/rings/number_field/number_field_ideal.py\"\n> **********************************************************************\n> File \"/export/home/buildbot/build/sage/hawk-1/hawk_full/build/sage-4.6.alpha3/devel/sage/sage/rings/number_field/number_field_ideal.py\", line 194:\n>     sage: NumberField(x^2 + 1, 'a').ideal(7).__hash__()\n> Expected:\n>     -2147483619\n> Got:\n>     -67108835\n> }}}\n> \n> I'm inclined to merge this into 4.6.alpha3.  We can open a new ticket for the new error, unless it indicates a serious problem.  I'd like to release 4.6.alpha3 in a day or so, so please let me know as soon as possible.\n\n\n\n\nPersonally, I think it would be best to fix it first. Otherwise it strikes me of this comment\n\nhttp://trac.sagemath.org/sage_trac/ticket/6456#comment:67\n\nby Peter Jeremy.\n----\n**I am very concerned at this \"release it now, we'll make it work later\" mentality.**\n----\n \nIf it is on the strict understanding it does not get into a release until fixed, then I'm OK with it. That is the purpose of alphas. But I thought the intension was to have a feature freeze after this alpha. Merging this could be dangerous thing to do. \n\nThe ticket has been open two years - I would have thought those working on it would have had time to checked it! \n\nDave",
     "created_at": "2010-10-08T10:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28883",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28825",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -4374,15 +4372,15 @@ Dave
 
 ---
 
-archive/issue_comments_028884.json:
+archive/issue_comments_028826.json:
 ```json
 {
     "body": "As a matter of interest, what is the rationale for making a ticket a blocker, when it has been open for two years? If we have lived without it for two years, I find the 'blocker' status a bit unnecessary.",
     "created_at": "2010-10-08T10:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28884",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28826",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -4392,15 +4390,15 @@ As a matter of interest, what is the rationale for making a ticket a blocker, wh
 
 ---
 
-archive/issue_comments_028885.json:
+archive/issue_comments_028827.json:
 ```json
 {
     "body": "On bsd.math, I get\n\n```python\nsage -t -long  -force_lib devel/sage/sage/rings/number_field/number_field_ideal.py\n**********************************************************************\nFile \"/Users/buildbot/build/sage/bsd-1/bsd_full/build/sage-4.6.alpha3/devel/sage-main/sage/rings/number_field/number_field_ideal.py\", line 194:\n    sage: NumberField(x^2 + 1, 'a').ideal(7).__hash__()\nExpected:\n    -9223372036854775779                 \nGot:\n    -288230376151711715\n```\n\nso it seems we can just update the example at line 194 in `number_field_ideal.py`, which is currently:\n\n```python\n            sage: NumberField(x^2 + 1, 'a').ideal(7).__hash__()\n            -9223372036854775779                 # 64-bit\n            -2147483619                          # 32-bit\n```\n\nIs is OK?",
     "created_at": "2010-10-08T10:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28885",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28827",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4431,15 +4429,15 @@ Is is OK?
 
 ---
 
-archive/issue_comments_028886.json:
+archive/issue_comments_028828.json:
 ```json
 {
     "body": "For the record, here is a slightly longer quote of what Peter said:\n\n*I am very concerned at this \"release it now, we'll make it work later\" mentality. If Sage is going to be a viable alternative to the M's, it needs to be trustworthy - complaints of \"feature X is missing\" are easily rectified, claims of \"Sage gave me wrong answers\" can quickly turn into \"you can't trust the output from Sage\" and are far more difficult to refute. *",
     "created_at": "2010-10-08T10:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28886",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28828",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -4451,15 +4449,15 @@ For the record, here is a slightly longer quote of what Peter said:
 
 ---
 
-archive/issue_comments_028887.json:
+archive/issue_comments_028829.json:
 ```json
 {
     "body": "Fix 32/64-bit number_field_ideal doctest.  Apply only this patch.",
     "created_at": "2010-10-08T10:23:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28887",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28829",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4469,15 +4467,15 @@ Fix 32/64-bit number_field_ideal doctest.  Apply only this patch.
 
 ---
 
-archive/issue_comments_028888.json:
+archive/issue_comments_028830.json:
 ```json
 {
     "body": "Attachment [trac_4000-combined.2.patch](tarball://root/attachments/some-uuid/ticket4000/trac_4000-combined.2.patch) by @qed777 created at 2010-10-08 10:29:52\n\nI made this ticket a 4.6 blocker three weeks ago.  The most recent doctest error appeared because of a recent change, probably in 4.6.alpha2.  Yes, I meant to say that I'd make the new ticket a 4.6 blocker.  4.6.alpha3 is not out yet and we are not yet in feature freeze.\n\nI've added V2 of the combined patch, which adjusts the `number_field_ideal.py` example as I suggest above.\n\nThis ticket still needs a final review, and if it's positively reviewed by the time #10097 is merged, I'll merge it into 4.6.alpha3.",
     "created_at": "2010-10-08T10:29:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28888",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28830",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4493,15 +4491,15 @@ This ticket still needs a final review, and if it's positively reviewed by the t
 
 ---
 
-archive/issue_comments_028889.json:
+archive/issue_comments_028831.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-10-08T21:59:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28889",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28831",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -4511,15 +4509,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_028890.json:
+archive/issue_comments_028832.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-10-08T22:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28890",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28832",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4529,15 +4527,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028891.json:
+archive/issue_comments_028833.json:
 ```json
 {
     "body": "And there was much rejoicing.",
     "created_at": "2010-10-11T17:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28891",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28833",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -4547,15 +4545,15 @@ And there was much rejoicing.
 
 ---
 
-archive/issue_comments_028892.json:
+archive/issue_comments_028834.json:
 ```json
 {
     "body": "For the record:\n\nThere's a bug in `fmpq_poly_xgcd()` that can lead to severe heap corruption, which in turn can cause almost any kind of failure.\n\nSee #11771 for details.\n\n(Unfortunately FLINT 2.2, which includes its own / a newer version of `fmpq_poly`, doesn't yet provide `xgcd()` for rational polynomials.)",
     "created_at": "2011-09-05T22:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28892",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28834",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4571,15 +4569,15 @@ See #11771 for details.
 
 ---
 
-archive/issue_comments_028893.json:
+archive/issue_comments_028835.json:
 ```json
 {
     "body": "Replying to [comment:134 leif]:\n> There's a bug in `fmpq_poly_xgcd()` that can lead to severe heap corruption, which in turn can cause almost any kind of failure.\n> \n> See #11771 for details.\n\nPatch is up there.\n\nIt would be nice if one of the many reviewers here could review my patch there. He/she should IMHO also take a look at the sizes used in other memory (re)allocations / for other variables, in `fmpq_poly_xgcd()` at least.",
     "created_at": "2011-09-05T23:46:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4000",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28893",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4000#issuecomment-28835",
+    "user": "https://github.com/nexttime"
 }
 ```
 

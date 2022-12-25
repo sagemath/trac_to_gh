@@ -6,15 +6,14 @@ archive/issues_005671.json:
     "body": "Assignee: boothby\n\nCC:  fichtejo\n\nWe want miniSAT.  spkg it up!\n\nIssue created by migration from https://trac.sagemath.org/ticket/5671\n\n",
     "created_at": "2009-04-02T22:10:41Z",
     "labels": [
-        "packages: standard",
-        "minor",
-        "enhancement"
+        "component: packages: standard",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Create a spkg for minisat",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5671",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: boothby
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5671
 
 ---
 
-archive/issue_comments_044358.json:
+archive/issue_comments_044273.json:
 ```json
 {
     "body": "Attachment [trac_5671-part1.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part1.patch) by boothby created at 2009-04-02 22:28:11",
     "created_at": "2009-04-02T22:28:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44358",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44273",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_5671-part1.patch](tarball://root/attachments/some-uuid/ticket56
 
 ---
 
-archive/issue_comments_044359.json:
+archive/issue_comments_044274.json:
 ```json
 {
     "body": "Might I point out that this is a dupe of #418.\n\nYou also \n\n* should assign a milestone when you open a ticket\n* not attach spkgs to tickets, but post a link. Given that this one is 77kb it might be a borderline case.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-02T22:42:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44359",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44274",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -76,15 +75,15 @@ Michael
 
 ---
 
-archive/issue_comments_044360.json:
+archive/issue_comments_044275.json:
 ```json
 {
     "body": "Attachment [trac_5671-part2.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part2.patch) by boothby created at 2009-04-02 22:55:32",
     "created_at": "2009-04-02T22:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44360",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44275",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -94,15 +93,15 @@ Attachment [trac_5671-part2.patch](tarball://root/attachments/some-uuid/ticket56
 
 ---
 
-archive/issue_comments_044361.json:
+archive/issue_comments_044276.json:
 ```json
 {
     "body": "Attachment [trac_5671-part3.patch](tarball://root/attachments/some-uuid/ticket5671/trac_5671-part3.patch) by @williamstein created at 2009-04-02 23:11:34\n\nWith just the posted code to this point:\n\n```\nsage: S = minisat.Solver(verbosity=2)\nsage: S.new_var()\n0\nsage: S.new_var()\n1\nsage: S.new_var()\n2\nsage: S.new_var()\n3\nsage: S.add_clause([1])\npushing lit.p =  Literal 1\nsage: S.add_clause([2])\npushing lit.p =  Literal 2\nsage: S.solve()\n============================[ Search Statistics ]==============================\n===============================================================================\n===============================================================================\nVerified 0 original clauses.\nTrue\n```\n",
     "created_at": "2009-04-02T23:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44361",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44276",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -137,15 +136,15 @@ True
 
 ---
 
-archive/issue_comments_044362.json:
+archive/issue_comments_044277.json:
 ```json
 {
     "body": "This\n\n   http://planete.inrialpes.fr/~soos/CryptoMiniSat/index.html\n\nmight be relevant. It is an enhanced MiniSat with:\n\n* Natively handled XOR functions\n* Statistics generation\n* Search randomization\n* Detailed solving process visualization\n* Clause grouping and group naming\n* Variable naming\n* Debug mode\n* Code cleanup",
     "created_at": "2009-09-02T10:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44362",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44277",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -168,15 +167,15 @@ might be relevant. It is an enhanced MiniSat with:
 
 ---
 
-archive/issue_comments_044363.json:
+archive/issue_comments_044278.json:
 ```json
 {
     "body": "Replying to [comment:5 malb]:\n> This\n> \n>    http://planete.inrialpes.fr/~soos/CryptoMiniSat/index.html\n> \n> might be relevant. It is an enhanced MiniSat with:\n> \n>  * Natively handled XOR functions\n>  * Statistics generation\n>  * Search randomization\n>  * Detailed solving process visualization\n>  * Clause grouping and group naming\n>  * Variable naming\n>  * Debug mode\n>  * Code cleanup\n\nGiven this and recent developments at #418, perhaps this is a dupe?",
     "created_at": "2012-06-04T19:14:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44363",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44278",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -202,15 +201,15 @@ Given this and recent developments at #418, perhaps this is a dupe?
 
 ---
 
-archive/issue_comments_044364.json:
+archive/issue_comments_044279.json:
 ```json
 {
     "body": "I vote for declaring this ticket a dupe.",
     "created_at": "2012-06-15T16:19:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44364",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44279",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -220,15 +219,15 @@ I vote for declaring this ticket a dupe.
 
 ---
 
-archive/issue_comments_044365.json:
+archive/issue_comments_044280.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-03-14T15:29:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44365",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44280",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -238,15 +237,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_044366.json:
+archive/issue_comments_044281.json:
 ```json
 {
     "body": "I'm not sure what needs review here?",
     "created_at": "2014-03-14T15:47:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44366",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44281",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -256,15 +255,15 @@ I'm not sure what needs review here?
 
 ---
 
-archive/issue_comments_044367.json:
+archive/issue_comments_044282.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-03-14T15:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44367",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44282",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -274,15 +273,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_044368.json:
+archive/issue_comments_044283.json:
 ```json
 {
     "body": "Replying to [comment:12 malb]:\n> I'm not sure what needs review here?\n\nAs far as I understand the way to have a ticket closes as \"wontfix\" or similar is to set the milestone to `duplicate/invalid/wontfix` and wait for someone else to review that choice.",
     "created_at": "2014-03-14T16:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44368",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44283",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -295,15 +294,15 @@ As far as I understand the way to have a ticket closes as "wontfix" or similar i
 
 ---
 
-archive/issue_comments_044369.json:
+archive/issue_comments_044284.json:
 ```json
 {
     "body": "Which has been done :)  mmezz, just add your real name in the reviewers field.",
     "created_at": "2014-03-14T16:23:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44369",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44284",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -313,15 +312,15 @@ Which has been done :)  mmezz, just add your real name in the reviewers field.
 
 ---
 
-archive/issue_comments_044370.json:
+archive/issue_comments_044285.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2014-03-19T04:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5671",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44370",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5671#issuecomment-44285",
+    "user": "https://github.com/vbraun"
 }
 ```
 

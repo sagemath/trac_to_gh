@@ -6,15 +6,14 @@ archive/issues_001950.json:
     "body": "Assignee: boothby\n\nSuggested by Bill Purvis.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1950\n\n",
     "created_at": "2008-01-27T20:27:56Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "When one clicks the print button in the notebook it should render the html with jsmath but with no warning at all.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1950",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1950
 
 ---
 
-archive/issue_comments_012414.json:
+archive/issue_comments_012383.json:
 ```json
 {
     "body": "This is fixed, since now we never show a jsmath warning.",
     "created_at": "2008-04-21T14:23:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1950#issuecomment-12414",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1950#issuecomment-12383",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ This is fixed, since now we never show a jsmath warning.
 
 ---
 
-archive/issue_comments_012415.json:
+archive/issue_comments_012384.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-21T14:23:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1950",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1950#issuecomment-12415",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1950#issuecomment-12384",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,14 +6,12 @@ archive/issues_000234.json:
     "body": "Assignee: @williamstein\n\nThere is an amazing program called Lie for computing with compact Lie groups.\nIt's available as an optional sage package, e.g., \n\n```\n   sage -i lie-2.2\n```\n\n\n(But check to see if this is the latest version...)\n\nAnyway, for this project, research ways to make a SAGE <--> Lie interface.\nVia pexpect?  Via C library? ???\n\nIssue created by migration from https://trac.sagemath.org/ticket/234\n\n",
     "created_at": "2007-01-30T19:47:12Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "title": "Lie -- create a SAGE wrapper for computing with lie groups",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/234",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/234
 
 ---
 
-archive/issue_comments_001036.json:
+archive/issue_comments_001033.json:
 ```json
 {
     "body": "Hello,\n\nMike Hansen opened ticket #489 about the same issue. That ticket now has some more info on issues regarding compilation. So I close this ticket as a duplicate instead of the other way around.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-24T21:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/234",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/234#issuecomment-1036",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/234#issuecomment-1033",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -63,15 +61,15 @@ Michael
 
 ---
 
-archive/issue_comments_001037.json:
+archive/issue_comments_001034.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2007-08-24T21:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/234",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/234#issuecomment-1037",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/234#issuecomment-1034",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

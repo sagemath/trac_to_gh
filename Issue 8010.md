@@ -6,15 +6,14 @@ archive/issues_008010.json:
     "body": "Assignee: tbd\n\nCC:  georgsweber\n\nAny use of f2py, e.g. following the examples at http://www.sagemath.org/doc/numerical_sage/f2py.html lead to a crash:\n\n\n```\nerror: Command \"sage_fortran -Wall -shared /var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/src.macosx-10.6-i386-2.6/fortran_module_0module.o \n/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/src.macosx-10.6-i386-2.6/fortranobject.o \n/var/folders/LQ/LQFRAKFTGCCurtDiHcxv1k++-5I/-Tmp-\n/tmpisjCMl/Users/felix/.sage/temp/<my domain name>/52076/tmp_0.o -L\"Using built-in specs.\n/Applications/sage-4.3.1.rc1/local/bin/../lib/gcc/i686-apple-darwin8/4.2.3/x86_64\" \n-lgfortran -o ./fortran_module_0.so\" failed with exit status 1\n\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\ni686-apple-darwin8-gfortran-4.2: unrecognized option '-shared'\ni686-apple-darwin8-gfortran-4.2: no input files\nUsing built-in specs.\nTarget: i686-apple-darwin8\nConfigured with: /Builds/unix/gcc/gcc-4.2/configure --prefix=/usr/local \n--mandir=/share/man --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ \n--build=i686-apple-darwin8 --host=i686-apple-darwin8 --target=i686-apple-\ndarwin8 --enable-languages=fortran\nThread model: posix\ngcc version 4.2.3\n\n<SNIP>\n```\n\n\nThis is using 4.3.1rc1 on 10.6, 64-bit.\n\nThe problem is that local/lib/python2.6/site-packages/numpy/distutils/fcompiler/gnu.py adds a \"-shared\" flag when linking, even though OS X doesn't support it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8010\n\n",
     "created_at": "2010-01-20T06:42:41Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "f2py broken on some mac systems",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8010",
-    "user": "flawrence"
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 Assignee: tbd
@@ -73,15 +72,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8010
 
 ---
 
-archive/issue_comments_070008.json:
+archive/issue_comments_069888.json:
 ```json
 {
     "body": "Attachment [8010.numpy.patch](tarball://root/attachments/some-uuid/ticket8010/8010.numpy.patch) by flawrence created at 2010-01-20 06:43:48",
     "created_at": "2010-01-20T06:43:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70008",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69888",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -91,15 +90,15 @@ Attachment [8010.numpy.patch](tarball://root/attachments/some-uuid/ticket8010/80
 
 ---
 
-archive/issue_comments_070009.json:
+archive/issue_comments_069889.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-20T06:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70009",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69889",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -109,15 +108,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_070010.json:
+archive/issue_comments_069890.json:
 ```json
 {
     "body": "An updated spkg with Felix's patch is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/numpy/version2/numpy-1.3.0.p3.spkg\n\nThis ticket might clash with #7831.",
     "created_at": "2010-02-15T05:15:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70010",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69890",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -131,15 +130,15 @@ This ticket might clash with #7831.
 
 ---
 
-archive/issue_comments_070011.json:
+archive/issue_comments_069891.json:
 ```json
 {
     "body": "Has this been checked on Solaris? \n\nThere's general information about building on Solaris at\n\nhttp://wiki.sagemath.org/solaris\n\nInformation specifically for 't2' at \n\nhttp://wiki.sagemath.org/devel/Building-Sage-on-the-T5240-t2\n\nBoth the source (4.3.0.1 is the latest to build on Solaris) and a binary which will run on any SPARC can be found at http://www.sagemath.org/download-source.html \n\nDave",
     "created_at": "2010-02-18T13:35:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70011",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69891",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -161,15 +160,15 @@ Dave
 
 ---
 
-archive/issue_comments_070012.json:
+archive/issue_comments_069892.json:
 ```json
 {
     "body": "I haven't checked this on Solaris, but it shouldn't affect behaviour on any platform other than OS X.  All this patch does is substitute the options \"-undefined dynamic_lookup -bundle\" for \"-shared\" under OS X, since on OS X the compiler doesn't support \"-shared\".\n\nThis platform-check and substitution is already being done elsewhere in the file (in the Sage_FCompiler class), but was not being done in Sage_FCompiler_1, so it's a pretty innocuous patch.\n\nCheers,\nFelix",
     "created_at": "2010-02-19T05:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70012",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69892",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -184,15 +183,15 @@ Felix
 
 ---
 
-archive/issue_comments_070013.json:
+archive/issue_comments_069893.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-02-19T09:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70013",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69893",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -202,15 +201,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_070014.json:
+archive/issue_comments_069894.json:
 ```json
 {
     "body": "The title says this breaks on \"on some mac systems\", but the patch is applied on all Mac systems (well, all running OS X). Is that wise? \n\nIt would be good if it could be tested on Solaris too, as often what are perceived as pretty innocuous patches do break on some systems.",
     "created_at": "2010-02-19T09:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70014",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69894",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -222,15 +221,15 @@ It would be good if it could be tested on Solaris too, as often what are perceiv
 
 ---
 
-archive/issue_comments_070015.json:
+archive/issue_comments_069895.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-02-19T11:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70015",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69895",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -240,15 +239,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_070016.json:
+archive/issue_comments_069896.json:
 ```json
 {
     "body": "Mac OS X (Darwin) compilers do not support the \"-shared\" option.  The class Sage_FCompiler_1 currently calls compilers on all platforms using the \"-shared\" option.  So whenever this class is used on Mac, it fails.  On my computer, this led to f2py failing.  This is a five line patch (plus documentation) that changes the compiler options on Mac to be in line with those already used in Sage_FCompiler, while leaving the compiler options on other platforms such as Solaris unchanged.  If you'd like to check it on Solaris, then go ahead, but the patch was intentionally written to avoid changing behaviour on platforms other than OS X.\n\nThis breaks \"on some mac systems\" - f2py is broken on my 64-bit sage, but seems to be working on 32-bit mac systems without this patch.  My guess is that 32-bit macs use Sage_FCompiler rather than Sage_FCompiler_1.  Anyone who is familiar with the numpy spkg, please confirm or correct me!",
     "created_at": "2010-02-19T11:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70016",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69896",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -260,15 +259,15 @@ This breaks "on some mac systems" - f2py is broken on my 64-bit sage, but seems 
 
 ---
 
-archive/issue_comments_070017.json:
+archive/issue_comments_069897.json:
 ```json
 {
     "body": "This looks good for me, and works for people who've tested it.  Hence a positive review.",
     "created_at": "2010-06-02T05:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70017",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69897",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -278,15 +277,15 @@ This looks good for me, and works for people who've tested it.  Hence a positive
 
 ---
 
-archive/issue_comments_070018.json:
+archive/issue_comments_069898.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-02T05:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70018",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69898",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -296,15 +295,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_070019.json:
+archive/issue_comments_069899.json:
 ```json
 {
     "body": "There is another ticket updating numpy as well: #7831. These two conflicting spkg's need to be resolved.",
     "created_at": "2010-06-25T05:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70019",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69899",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -314,15 +313,15 @@ There is another ticket updating numpy as well: #7831. These two conflicting spk
 
 ---
 
-archive/issue_comments_070020.json:
+archive/issue_comments_069900.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-06-28T17:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70020",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69900",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -332,15 +331,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_070021.json:
+archive/issue_comments_069901.json:
 ```json
 {
     "body": "How does this conflict with #7831?  What can I do to resolve the problem?",
     "created_at": "2010-06-28T23:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70021",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69901",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -350,15 +349,15 @@ How does this conflict with #7831?  What can I do to resolve the problem?
 
 ---
 
-archive/issue_comments_070022.json:
+archive/issue_comments_069902.json:
 ```json
 {
     "body": "These are both independent patches to the numpy package. take one, and incorporate the changes in the other, and post a new spkg. Then I will merge it and close both as merged, so the release note gives proper credit.",
     "created_at": "2010-06-28T23:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70022",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69902",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -368,15 +367,15 @@ These are both independent patches to the numpy package. take one, and incorpora
 
 ---
 
-archive/issue_comments_070023.json:
+archive/issue_comments_069903.json:
 ```json
 {
     "body": "Was this reported upstream?  Did it have to be?",
     "created_at": "2010-09-09T12:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70023",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69903",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -386,15 +385,15 @@ Was this reported upstream?  Did it have to be?
 
 ---
 
-archive/issue_comments_070024.json:
+archive/issue_comments_069904.json:
 ```json
 {
     "body": ">Was this reported upstream? Did it have to be?\nI haven't reported this upstream.  The change was made to a class called Sage_FCompiler_1, which sounds like Sage-specific code.  The problem was already fixed in the very similar Sage_FCompiler.",
     "created_at": "2010-09-09T13:16:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70024",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69904",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -405,15 +404,15 @@ I haven't reported this upstream.  The change was made to a class called Sage_FC
 
 ---
 
-archive/issue_comments_070025.json:
+archive/issue_comments_069905.json:
 ```json
 {
     "body": "I see, so there were already custom patches made to numpy.",
     "created_at": "2010-09-09T13:20:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70025",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69905",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -423,15 +422,15 @@ I see, so there were already custom patches made to numpy.
 
 ---
 
-archive/issue_comments_070026.json:
+archive/issue_comments_069906.json:
 ```json
 {
     "body": "This is a duplicate of #7465",
     "created_at": "2010-11-03T05:57:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70026",
-    "user": "flawrence"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69906",
+    "user": "https://trac.sagemath.org/admin/accounts/users/flawrence"
 }
 ```
 
@@ -441,15 +440,15 @@ This is a duplicate of #7465
 
 ---
 
-archive/issue_comments_070027.json:
+archive/issue_comments_069907.json:
 ```json
 {
     "body": "Closed as a duplicate of #7465.",
     "created_at": "2010-11-03T06:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70027",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69907",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -459,15 +458,15 @@ Closed as a duplicate of #7465.
 
 ---
 
-archive/issue_comments_070028.json:
+archive/issue_comments_069908.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-11-03T06:30:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70028",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69908",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -477,15 +476,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_070029.json:
+archive/issue_comments_069909.json:
 ```json
 {
     "body": "It is frustrating that this detailed ticket, which includes information about possible solutions, is closed, while the nearly totally uninformative #7465 is kept open.   Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? \n\nAlso, it would be worth investigating the status of this issue (as well as #7831) in light of the fact that we have now upgraded to newer versions (see #9808).  I haven't compiled 4.6.1.alpha0 yet, but that should be tested.",
     "created_at": "2010-11-03T12:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70029",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69909",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -497,15 +496,15 @@ Also, it would be worth investigating the status of this issue (as well as #7831
 
 ---
 
-archive/issue_comments_070030.json:
+archive/issue_comments_069910.json:
 ```json
 {
     "body": "Replying to [comment:19 kcrisman]:\n> Minh, could you at the very least take relevant information from #8010 and put it on the non-closed ticket? \n\nDone.",
     "created_at": "2010-11-04T11:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-70030",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8010#issuecomment-69910",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

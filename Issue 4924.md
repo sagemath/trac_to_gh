@@ -6,15 +6,13 @@ archive/issues_004924.json:
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4924\n\n",
     "created_at": "2009-01-01T22:55:32Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "convert sage.probability.* docstrings to Sphinx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4924",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tba
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4924
 
 ---
 
-archive/issue_comments_037365.json:
+archive/issue_comments_037293.json:
 ```json
 {
     "body": "Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/trac_4924.patch) by @mwhansen created at 2009-01-02 02:19:17",
     "created_at": "2009-01-02T02:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37365",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37293",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [trac_4924.patch](tarball://root/attachments/some-uuid/ticket4924/tra
 
 ---
 
-archive/issue_comments_037366.json:
+archive/issue_comments_037294.json:
 ```json
 {
     "body": "Attachment [sage.probability-final.patch](tarball://root/attachments/some-uuid/ticket4924/sage.probability-final.patch) by @mwhansen created at 2009-02-21 19:21:39",
     "created_at": "2009-02-21T19:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37366",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37294",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +63,15 @@ Attachment [sage.probability-final.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_037367.json:
+archive/issue_comments_037295.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-24T18:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37367",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37295",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +81,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_037368.json:
+archive/issue_comments_037296.json:
 ```json
 {
     "body": "Merged in Sage 3.4.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-24T18:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37368",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4924#issuecomment-37296",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005404.json:
     "body": "Assignee: @burcin\n\nCC:  @jasongrout\n\nNow we have sqrt(a, prec=1000). Also, it doesn't even do what it says. \n\n\n```\nsage: numerical_sqrt(3)\nsqrt(3)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5404\n\n",
     "created_at": "2009-02-28T21:55:42Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "deprecate numerical_sqrt",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5404",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @burcin
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5404
 
 ---
 
-archive/issue_comments_041756.json:
+archive/issue_comments_041674.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2009-02-28T22:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41756",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41674",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -56,15 +55,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_041757.json:
+archive/issue_comments_041675.json:
 ```json
 {
     "body": "Attachment [5404-numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/5404-numerical_sqrt.patch) by @robertwb created at 2009-02-28 22:02:51\n\nNot used anywhere in the Sage source.",
     "created_at": "2009-02-28T22:02:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41757",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41675",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -76,15 +75,15 @@ Not used anywhere in the Sage source.
 
 ---
 
-archive/issue_comments_041758.json:
+archive/issue_comments_041676.json:
 ```json
 {
     "body": "It would be good to mention the deprecation in the docstring of the function as well.\n\nWe could also change the doctests, which test the wrong function now anyway, to demonstrate using sqrt with the prec parameter.",
     "created_at": "2009-03-01T15:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41758",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41676",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -96,15 +95,15 @@ We could also change the doctests, which test the wrong function now anyway, to 
 
 ---
 
-archive/issue_comments_041759.json:
+archive/issue_comments_041677.json:
 ```json
 {
     "body": "The deprecation message doesn't make sense to me:\n\n```\nsage: sqrt(10.1, prec=5)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: sqrt() got an unexpected keyword argument 'prec'\n```\n\nI think the issue here is that in real_mpfr.pyx, the sqrt method doesn't accept a 'prec' argument. If I do `search_def('sqrt')`, I see lots of sqrt methods without a prec argument.  Perhaps the sqrt function in calculus/calculus.py should check for a `TypeError` in addition to an `AttributeError`?  In any case, we can't give a deprecation message which suggests using code which doesn't work.\n\nWe also need some doctests in the sqrt function in calculus/calculus.py using all of the advertised arguments.",
     "created_at": "2009-05-10T22:30:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41759",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41677",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -126,15 +125,15 @@ We also need some doctests in the sqrt function in calculus/calculus.py using al
 
 ---
 
-archive/issue_comments_041760.json:
+archive/issue_comments_041678.json:
 ```json
 {
     "body": "See #6171 for a possible fix to the 'prec' issue.  Maybe with this fix, the patch here is okay?",
     "created_at": "2009-05-31T21:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41760",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41678",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -144,15 +143,15 @@ See #6171 for a possible fix to the 'prec' issue.  Maybe with this fix, the patc
 
 ---
 
-archive/issue_comments_041761.json:
+archive/issue_comments_041679.json:
 ```json
 {
     "body": "Okay, I think with #6171, my main complaint is taken care of.  Here's a new patch; the only difference is the docstring.  The code gets a positive review from me, so if you're happy with my docstring, give the ticket a positive review.\n\nThis depends on #6171, not to apply and to pass doctests, but in the sense that the deprecation message is inaccurate without #6171.",
     "created_at": "2009-05-31T23:39:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41761",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41679",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -164,15 +163,15 @@ This depends on #6171, not to apply and to pass doctests, but in the sense that 
 
 ---
 
-archive/issue_comments_041762.json:
+archive/issue_comments_041680.json:
 ```json
 {
     "body": "Attachment [numerical_sqrt.patch](tarball://root/attachments/some-uuid/ticket5404/numerical_sqrt.patch) by @jhpalmieri created at 2009-05-31 23:40:07\n\napply only this patch",
     "created_at": "2009-05-31T23:40:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41762",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41680",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -184,15 +183,15 @@ apply only this patch
 
 ---
 
-archive/issue_comments_041763.json:
+archive/issue_comments_041681.json:
 ```json
 {
     "body": "Looks good to me.\n\nMerged numerical_sqrt.patch in 4.0.1.rc1.",
     "created_at": "2009-06-04T19:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41763",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41681",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -204,15 +203,15 @@ Merged numerical_sqrt.patch in 4.0.1.rc1.
 
 ---
 
-archive/issue_comments_041764.json:
+archive/issue_comments_041682.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-04T19:10:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5404",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41764",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5404#issuecomment-41682",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_005286.json:
     "body": "Assignee: mabshoff\n\nWhen merging the python-2.5.4.spkg from #5218 everything goes fine, but -sdist. In that case the .hg repo is copied into the tmp directory in spkg-dist, but it is not copied into the tar.gz created by distutils. Until this is resolved we cannot update to the latest python-2.5.4.spkg.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5286\n\n",
     "created_at": "2009-02-16T16:03:38Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005286.json:
     "title": "python 2.5.4 breaks -sdist due to missing .hg repo in the sage-3.3.rc1.spkg (followup to #5218)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5286",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5286
 
 ---
 
-archive/issue_comments_040624.json:
+archive/issue_comments_040545.json:
 ```json
 {
     "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-01T02:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40624",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40545",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +55,15 @@ Michael
 
 ---
 
-archive/issue_comments_040625.json:
+archive/issue_comments_040546.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-05-28T20:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40625",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40546",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -73,15 +73,15 @@ Changing assignee from mabshoff to @mwhansen.
 
 ---
 
-archive/issue_comments_040626.json:
+archive/issue_comments_040547.json:
 ```json
 {
     "body": "This is caused by http://bugs.python.org/issue1725737\n\nThere is a fix in the new spkg at #5218.",
     "created_at": "2009-05-28T20:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40626",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40547",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -93,15 +93,15 @@ There is a fix in the new spkg at #5218.
 
 ---
 
-archive/issue_comments_040627.json:
+archive/issue_comments_040548.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-28T20:24:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40627",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40548",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -111,15 +111,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_040628.json:
+archive/issue_comments_040549.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-29T13:38:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40628",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5286#issuecomment-40549",
+    "user": "https://github.com/williamstein"
 }
 ```
 

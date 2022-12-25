@@ -6,7 +6,7 @@ archive/issues_005722.json:
     "body": "Assignee: somebody\n\nCC:  cwitty\n\npow(double, double) inconsistent for bad input. See extensive documentation in floatobject.c\n\nIssue created by migration from https://trac.sagemath.org/ticket/5722\n\n",
     "created_at": "2009-04-09T02:15:41Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005722.json:
     "title": "fast callable pow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5722",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: somebody
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5722
 
 ---
 
-archive/issue_comments_044711.json:
+archive/issue_comments_044626.json:
 ```json
 {
     "body": "Oops, I spoke too soon in person. There are two doctest failures that need fixing:\n\n```\nsage -t -long \"devel/sage/sage/ext/fast_callable.pyx\"       \n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/ext/fast_callable.pyx\", line 2213:\n    sage: fast_callable(sin(x)/x, vars=[x], domain=RDF).get_orig_args()\nExpected:\n    {'domain': Real Double Field, 'code': [0, 0, 16, 0, 0, 7, 2], 'py_constants': [], 'args': 1, 'stack': 2, 'constants': []}\nGot:\n    {'domain': Real Double Field, 'code': [0, 0, 16, 0, 0, 8, 2], 'py_constants': [], 'args': 1, 'stack': 2, 'constants': []}\n**********************************************************************\n1 items had failures:\n```\n\nAnd\n\n```\nsage -t -long \"devel/sage/sage/ext/gen_interpreters.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage/sage/ext/gen_interpreters.py\", line 2772:\n    sage: print buff.getvalue()\nExpected:\n        case 7: /* div */\n          {\n            double i1 = *--stack;\n            double i0 = *--stack;\n            double o0;\n            o0 = i0 / i1;\n            *stack++ = o0;\n          }\n          break;\n    <BLANKLINE>\nGot:\n        case 8: /* div */\n          {\n            double i1 = *--stack;\n            double i0 = *--stack;\n            double o0;\n            o0 = i0 / i1;\n            *stack++ = o0;\n          }\n          break;\n    <BLANKLINE>\n<SNIP>\n```\n\n\nI think that just the doctests need to be updated, but I will leave this to you :)\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T02:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44711",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44626",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -101,15 +101,15 @@ Michael
 
 ---
 
-archive/issue_comments_044712.json:
+archive/issue_comments_044627.json:
 ```json
 {
     "body": "Yes, those are both inconsequential ordering issues.",
     "created_at": "2009-04-09T06:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44712",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44627",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -119,15 +119,15 @@ Yes, those are both inconsequential ordering issues.
 
 ---
 
-archive/issue_comments_044713.json:
+archive/issue_comments_044628.json:
 ```json
 {
     "body": "Hi Robert,\n\nthere are actually two more doctest failure that I cut off since the failure message is quite long:\n\n```\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/ext/gen_interpreters.py\", line 3592:\nFile \"/scratch/mabshoff/sage-3.4.1.rc2/devel/sage-main/sage/ext/gen_interpreters.py\", line 3608:\n```\n\nSorry for causing confusion ;)\n\nBut the other doctest failures are fixed.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T06:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44713",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44628",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -152,15 +152,15 @@ Michael
 
 ---
 
-archive/issue_comments_044714.json:
+archive/issue_comments_044629.json:
 ```json
 {
     "body": "Attachment [5722-fast-callable-pow.patch](tarball://root/attachments/some-uuid/ticket5722/5722-fast-callable-pow.patch) by @robertwb created at 2009-04-09 07:52:56",
     "created_at": "2009-04-09T07:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44714",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44629",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -170,15 +170,15 @@ Attachment [5722-fast-callable-pow.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_044715.json:
+archive/issue_comments_044630.json:
 ```json
 {
     "body": "OK, all doctests in that file pass now.",
     "created_at": "2009-04-09T07:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44715",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44630",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -188,15 +188,15 @@ OK, all doctests in that file pass now.
 
 ---
 
-archive/issue_comments_044716.json:
+archive/issue_comments_044631.json:
 ```json
 {
     "body": "Positive review. Doctests do pass :). \n\nI also read the patch and I am happy with it.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T18:52:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44716",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44631",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -212,15 +212,15 @@ Michael
 
 ---
 
-archive/issue_comments_044717.json:
+archive/issue_comments_044632.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-09T18:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44717",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44632",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -230,15 +230,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_044718.json:
+archive/issue_comments_044633.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.rc2.\n\nCCing cwitty so he is aware of this patch. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-09T18:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44718",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5722#issuecomment-44633",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

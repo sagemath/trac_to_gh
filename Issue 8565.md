@@ -6,15 +6,14 @@ archive/issues_008565.json:
     "body": "Assignee: @burcin\n\nKeywords: pynac\n\nFrom sage-devel:\n\n\n```\nthe summary is:\n-------------------\natan2(3,0)   --> 1/2*pi\natan2(-3,0)  --> -1/2*pi\natan2(pi,0)  --> 1/2*pi\natan2(-pi,0) -->  RuntimeError: power::eval(): division by zero\n--------------------\n```\n\n\nsage-devel thread is here:\n\nhttp://groups.google.com/group/sage-devel/t/317e6bfe11fabb4\n\nalso reported on sage-support:\n\nhttp://groups.google.com/group/sage-support/t/02f3446e68381346\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8565\n\n",
     "created_at": "2010-03-20T10:33:22Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.1",
     "title": "atan2(-pi,0) throws \"divide by zero\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8565",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @burcin
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8565
 
 ---
 
-archive/issue_comments_077544.json:
+archive/issue_comments_077416.json:
 ```json
 {
     "body": "add doctests",
     "created_at": "2010-04-02T14:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77544",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77416",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -70,15 +69,15 @@ add doctests
 
 ---
 
-archive/issue_comments_077545.json:
+archive/issue_comments_077417.json:
 ```json
 {
     "body": "Attachment [trac_8565-neg_pi.patch](tarball://root/attachments/some-uuid/ticket8565/trac_8565-neg_pi.patch) by @burcin created at 2010-04-02 14:52:12\n\nThe pynac package at #8644 includes the patches that were merged in `GiNaC` to fix this problem. attachment:trac_8565-neg_pi.patch adds doctests for the fix.\n\nThis ticket now depends on #8644.",
     "created_at": "2010-04-02T14:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77545",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77417",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -92,15 +91,15 @@ This ticket now depends on #8644.
 
 ---
 
-archive/issue_comments_077546.json:
+archive/issue_comments_077418.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-02T14:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77546",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77418",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -110,15 +109,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_077547.json:
+archive/issue_comments_077419.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-09T11:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77547",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77419",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -128,15 +127,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_077548.json:
+archive/issue_comments_077420.json:
 ```json
 {
     "body": "Installs fine, all tests passed, works ad advertised. Positive review and thanks for fixing.",
     "created_at": "2010-04-09T11:09:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77548",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77420",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -146,15 +145,15 @@ Installs fine, all tests passed, works ad advertised. Positive review and thanks
 
 ---
 
-archive/issue_comments_077549.json:
+archive/issue_comments_077421.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-29T04:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8565",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77549",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8565#issuecomment-77421",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007439.json:
     "body": "Assignee: tbd\n\nWith gcc version 4.4.1 (Ubuntu 4.4.1-4ubuntu8):\n\n\n```\n...\ndreadnaut.c:983: warning: format \u2018%lu\u2019 expects type \u2018long unsigned int\u2019, but argument 3 has type \u2018unsigned int\u2019\ndreadnaut.c:985: warning: format \u2018%lu\u2019 expects type \u2018long unsigned int\u2019, but argument 3 has type \u2018unsigned int\u2019\ngcc -c -O4 -march=i686  gtools.c\nIn file included from gtools.c:6:\ngtools.h:159: error: conflicting types for \u2018getline\u2019\n/usr/include/stdio.h:651: note: previous declaration of \u2018getline\u2019 was here\ngtools.c:375: error: conflicting types for \u2018getline\u2019\n/usr/include/stdio.h:651: note: previous declaration of \u2018getline\u2019 was here\ngtools.c: In function \u2018gt_abort\u2019:\ngtools.c:1835: warning: format not a string literal and no format arguments\nmake: *** [gtools.o] Error 1\nCopying nauty...\ncp: cannot stat `addedgeg': No such file or directory\ncp: cannot stat `amtog': No such file or directory\ncp: cannot stat `biplabg': No such file or directory\ncp: cannot stat `catg': No such file or directory\ncp: cannot stat `complg': No such file or directory\ncp: cannot stat `copyg': No such file or directory\ncp: cannot stat `countg': No such file or directory\ncp: cannot stat `deledgeg': No such file or directory\ncp: cannot stat `directg': No such file or directory\ncp: cannot stat `dretog': No such file or directory\ncp: cannot stat `genbg': No such file or directory\ncp: cannot stat `geng': No such file or directory\ncp: cannot stat `genrang': No such file or directory\ncp: cannot stat `labelg': No such file or directory\ncp: cannot stat `listg': No such file or directory\ncp: cannot stat `multig': No such file or directory\ncp: cannot stat `newedgeg': No such file or directory\ncp: cannot stat `NRswitchg': No such file or directory\ncp: cannot stat `pickg': No such file or directory\ncp: cannot stat `planarg': No such file or directory\ncp: cannot stat `shortg': No such file or directory\ncp: cannot stat `showg': No such file or directory\n\nreal    0m29.370s\nuser    0m10.093s\nsys     0m18.105s\nsage: An error occurred while installing nauty-24b7.p1\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7439\n\n",
     "created_at": "2009-11-12T05:31:22Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "optional spkg nauty-24b7.p1  fails to build with sage-4.2.1 and ubuntu 9.10 (gcc-4.4.1)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7439",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -74,15 +73,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7439
 
 ---
 
-archive/issue_comments_062602.json:
+archive/issue_comments_062487.json:
 ```json
 {
     "body": "\n```\n\nI confirmed that this is a problem with the latest nauty 2.4 as well.\nI've sent a message to the nauty mailing list.\n\nThanks,\n\nJason\n```\n",
     "created_at": "2009-11-12T06:30:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62602",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62487",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -102,15 +101,15 @@ Jason
 
 ---
 
-archive/issue_comments_062603.json:
+archive/issue_comments_062488.json:
 ```json
 {
     "body": "Using sage 4.3.4.alpha1 on Solaris 10 (SPARC) and don't even get as far as you do on Ununta. Instead I get problems with:\n\n\n```\nnauty-24b7.p1/nauty24b7.tar.gz\nnauty-24b7.p1/SPKG.txt\nnauty-24b7.p1/license.txt\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: top_level=/export/home/drkirkby/sage-4.3.4.alpha1/spkg/build/nauty-24b7.p1: is not an identifier\n\nreal    0m0.011s\nuser    0m0.003s\nsys     0m0.007s\nsage: An error occurred while installing nauty-24b7.p1\n```\n",
     "created_at": "2010-03-13T01:44:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62603",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62488",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -149,15 +148,15 @@ sage: An error occurred while installing nauty-24b7.p1
 
 ---
 
-archive/issue_comments_062604.json:
+archive/issue_comments_062489.json:
 ```json
 {
     "body": "http://dcsmail.anu.edu.au/pipermail/nauty-list/2009-November/000546.html\n\nshows Brendan's reply to Jason as well as possible work-arounds. \n\nUsing -ansi did not work reporting same problem if put in CFLAGS and gave other errors (below) if put in CC definition:\n\n\n```\n...\ngcc -ansi -o genrang -O4  genrang.c nausparse.o \\\n                gtools.o nautil.o naututil.o naugraph.o rng.o\ngenrang.c: In function \u2018main\u2019:\ngenrang.c:405: error: storage size of \u2018nauty_tz\u2019 isn\u2019t known\nmake: *** [genrang] Error 1\n\n```\n\n\nhowever, his other suggestion, did make a compile work:\n\n\n```\nsed -i 's/getline/readline/g' gtools-h.in\nsed -i 's/getline/readline/g' shortg.c\nsed -i 's/getline/readline/g' gtools.c\n./configure\nmake\n```\n\n\nI'm not sure how to test that this doesn't brake anything within sage though.",
     "created_at": "2010-03-29T20:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62604",
-    "user": "wjlaffin"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62489",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wjlaffin"
 }
 ```
 
@@ -197,15 +196,15 @@ I'm not sure how to test that this doesn't brake anything within sage though.
 
 ---
 
-archive/issue_comments_062605.json:
+archive/issue_comments_062490.json:
 ```json
 {
     "body": "In a personal email from Brendan McKay (author):\n\n  Version 2.5 has some serious changes and won't be released for a while. An alternative to changing multiple files would be to insert\n\n```\n#define getline gtools_getline\n```\n \n  into nauty-h.in .",
     "created_at": "2010-03-30T19:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62605",
-    "user": "wjlaffin"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62490",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wjlaffin"
 }
 ```
 
@@ -223,15 +222,15 @@ In a personal email from Brendan McKay (author):
 
 ---
 
-archive/issue_comments_062606.json:
+archive/issue_comments_062491.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-03-30T19:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62606",
-    "user": "wjlaffin"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62491",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wjlaffin"
 }
 ```
 
@@ -241,15 +240,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_062607.json:
+archive/issue_comments_062492.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-18T07:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62607",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62492",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -259,15 +258,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_062608.json:
+archive/issue_comments_062493.json:
 ```json
 {
     "body": "I confirm the following works (tried with sage-4.4.1 and nauty-24b7.p1.spkg):\n\n```\nIf you insert\n  #define getline nauty_getline\ninto gtools-h.in after all the #includes in that file, it should compile.\n```\n\nThanks to Brendan McKay for that patch. I have put an updated spkg at\nhttp://www.loria.fr/~zimmerma/nauty-24b7.p1.spkg. Please could someone review it?\n\nPaul",
     "created_at": "2010-05-18T07:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62608",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62493",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -288,15 +287,15 @@ Paul
 
 ---
 
-archive/issue_comments_062609.json:
+archive/issue_comments_062494.json:
 ```json
 {
     "body": "This spkg was horribly out of conformance with the current spkg guidelines.  So I redid the spkg, upgraded to nauty 2.4 (final), and applied the above patch.  The result is here: http://sage.math.washington.edu/home/jason/nauty-24.spkg\n\nPaul, could you in turn review the above spkg?  It works for me on OSX 10.6 and Ubuntu 9.10.",
     "created_at": "2010-05-18T14:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62609",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62494",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -308,15 +307,15 @@ Paul, could you in turn review the above spkg?  It works for me on OSX 10.6 and 
 
 ---
 
-archive/issue_comments_062610.json:
+archive/issue_comments_062495.json:
 ```json
 {
     "body": "Jason, sorry for the horrible spkg, this was my first spkg... Your new spkg works like a charm\n(tested under Fedora 12). I did not run the doctests (do they test optional packages) but the\nfollowing did work:\n\n```\nsage: graph_list = graphs.nauty_geng(\"-q 3\")\nsage: len(graph_list)\n4\n```\n\n(I've removed my name as author since the new spkg is your work.)",
     "created_at": "2010-05-18T21:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62610",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62495",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -336,15 +335,15 @@ sage: len(graph_list)
 
 ---
 
-archive/issue_comments_062611.json:
+archive/issue_comments_062496.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-18T21:39:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62611",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62496",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -354,15 +353,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_062612.json:
+archive/issue_comments_062497.json:
 ```json
 {
     "body": "Replying to [comment:7 zimmerma]:\n> Jason, sorry for the horrible spkg, this was my first spkg... Your new spkg works like a charm\n\nOh, I thought it was my fault, as I did the original nauty spkg, and there weren't nice guidelines back then.\n\n\n> (tested under Fedora 12). I did not run the doctests (do they test optional packages) \n\nYes, but I don't know if there are any #optional doctests for nauty in the sage library.\n\nbut the\n> following did work:\n> {{{\n> sage: graph_list = graphs.nauty_geng(\"-q 3\")\n> sage: len(graph_list)\n> 4\n> }}}\n\nGreat!",
     "created_at": "2010-05-18T21:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62612",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62497",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -390,15 +389,15 @@ Great!
 
 ---
 
-archive/issue_comments_062613.json:
+archive/issue_comments_062498.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-07T05:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7439",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62613",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7439#issuecomment-62498",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

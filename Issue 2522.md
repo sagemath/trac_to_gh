@@ -6,15 +6,13 @@ archive/issues_002522.json:
     "body": "Assignee: mabshoff\n\nIt looks like maybe we only need to set an environment variable to eliminate at least some of the junk; see http://norman.walsh.name/2008/02/22/tar for details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2522\n\n",
     "created_at": "2008-03-14T23:54:05Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "modify \"sage -pkg\" to not include OSX junk in spkgs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2522",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2522
 
 ---
 
-archive/issue_comments_017202.json:
+archive/issue_comments_017165.json:
 ```json
 {
     "body": "Attachment [trac_2522.patch](tarball://root/attachments/some-uuid/ticket2522/trac_2522.patch) by @williamstein created at 2009-02-16 04:31:30\n\nOne just has to set\n\n```\nCOPYFILE_DISABLE=true\n```\n\non OS X.",
     "created_at": "2009-02-16T04:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17202",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17165",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -55,15 +53,15 @@ on OS X.
 
 ---
 
-archive/issue_comments_017203.json:
+archive/issue_comments_017166.json:
 ```json
 {
     "body": "Yep, that does the trick.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T04:34:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17203",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17166",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +75,15 @@ Michael
 
 ---
 
-archive/issue_comments_017204.json:
+archive/issue_comments_017167.json:
 ```json
 {
     "body": "Merged in Sage 3.3.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T04:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17204",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17167",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -99,15 +97,15 @@ Michael
 
 ---
 
-archive/issue_comments_017205.json:
+archive/issue_comments_017168.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-16T04:34:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17205",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2522#issuecomment-17168",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

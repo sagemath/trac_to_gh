@@ -6,15 +6,14 @@ archive/issues_003002.json:
     "body": "Assignee: mabshoff\n\n\n```\nA lot of configure scripts seem to check for\nfortran, even if they don't use it. It appears the relevant\nenvironment variables are F77 and FFLAGS. Anyway, the variable\nSAGE_FORTRAN seems to be honored fine for the packages that actually\nneed fortran.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3002\n\n",
     "created_at": "2008-04-22T16:52:04Z",
     "labels": [
-        "spkg-check",
-        "major",
+        "component: spkg-check",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "A lot of  spkgs check for fortran even if they don't need it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3002",
-    "user": "@dfdeshom"
+    "user": "https://github.com/dfdeshom"
 }
 ```
 Assignee: mabshoff
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3002
 
 ---
 
-archive/issue_comments_020655.json:
+archive/issue_comments_020612.json:
 ```json
 {
     "body": "Changing component from spkg-check to packages.",
     "created_at": "2008-04-22T16:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3002",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3002#issuecomment-20655",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3002#issuecomment-20612",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +54,15 @@ Changing component from spkg-check to packages.
 
 ---
 
-archive/issue_comments_020656.json:
+archive/issue_comments_020613.json:
 ```json
 {
     "body": "This is not the case and if we don't use an F77 compiler we shouldn't use the F77 env variable. The fact that a lot of them check for a Fortran compiler and don't use them is also something that doesn't matter since the configure process will not fail. So, the whole ticket is clearly \"won't fix\" to me.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-22T16:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3002",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3002#issuecomment-20656",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3002#issuecomment-20613",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +78,15 @@ Michael
 
 ---
 
-archive/issue_comments_020657.json:
+archive/issue_comments_020614.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-04-22T17:08:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3002",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3002#issuecomment-20657",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3002#issuecomment-20614",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_006729.json:
     "body": "Assignee: boothby\n\nCC:  @TimDumol\n\n\n```\n\n\nOn Mon, Aug 10, 2009 at 8:43 AM, Kiran Kedlaya <kskedl@gmail.com> wrote:\n\n\n    What would you expect from the following input into the notebook?\n\n    CELL 1:\n       u = 2+2\n       u = 2+3\n\n    CELL 2:\n    print u\n\n    If you try something like this at a command line, the first line gives\n    an error due to the spaces in front. \n\n\nNo it doesn't, at least not for me.\n\nflat wstein$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nLoading Sage library. Current Mercurial branch is: heckeindex\nsage:    u = 2+2\nsage:    u = 2+3\nsage: print u\n5\n| Sage Version 4.1, Release Date: 2009-07-09                         |\n| Type notebook() for the GUI, and license() for information.        |\nI know it won't give an error, because on the command line all spaces and sage: and >>> prompts are stripped from the left for non-continuation lines.\n\nHowever, you might have meant the pure python command line, which does give an error:\n\nflat:kamienny wstein$ sage -python\nPython 2.6.2 (r262:71600, Jul  8 2009, 17:42:25)\n[GCC 4.0.1 (Apple Inc. build 5465)] on darwin\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>>    u = 2 + 2\n  File \"<stdin>\", line 1\n    u = 2 + 2\n    ^\nIndentationError: unexpected indent\n>>>\n\n \n\n    But on my notebook server\n    (running 4.1), the first cell evaluates without an error, and the\n    second one returns 4, not 5. ?!\n\n    Kiran\n\n\nThis must be a bug in the notebook, related to exec compile, which the notebook uses to evaluate cells.   Here's the code that actually gets executed:\n\n----------------------------------------------------------------\n\nflat:code wstein$ pwd\n/Users/wstein/.sage/sage_notebook/worksheets/admin/222/code\nflat:code wstein$ more 16.py\n# -*- coding: utf_8 -*-\nfrom __future__ import with_statement\nprint \"^Ab14\"\nos.chdir(\"/Users/wstein/.sage/sage_notebook/worksheets/admin/222/cells/5\")\nsage.server.notebook.interact.SAGE_CELL_ID=5\n_sage_const_3 = Integer(3); _sage_const_2 = Integer(2)\nexec compile(ur'u = _sage_const_2 +_sage_const_2\\u000a   u = _sage_const_2 +_sage_const_3' + '\\n',\n '', 'single')\n\nprint \"^Ae14\"\n----------------------------------------------------------------\n\nThe code if you get rid of the spaces to the left we get:\n\nflat:code wstein$ more 23.py\n...\n_sage_const_3 = Integer(3); _sage_const_2 = Integer(2)\nu = _sage_const_2 +_sage_const_2\nexec compile(ur'u = _sage_const_2 +_sage_const_3' + '\\n', '', 'single')\n\n-------------------------\n\nNotice that \"exec compile\" is supposed to only be used on the *last* line of input.    The reason for this is so that the display print hook is called, e.g., so if you type\n\n  a = 5\n  a + 1\n  b = 7\n  a + b\n\nin a notebook cell, at least you'll see 12 (=a+b) come out.  You will not see 6 from \"a+1\" though.  So the problem you're seeing is because the code in the notebook to determine \"the last line of code\" takes account special cases when the last line is indented, so e.g., the following would work:\n\n   for z in range(10):\n        z\n\nand print out each of the z's (just like \"for z in range(10): z\").  In fact, the above is turned into:\n\n_sage_const_5 = Integer(5)\nexec compile(ur'for z in range(_sage_const_5 ):\\u000a    z' + '\\n', '', 'single')\n\nThe problem is that when we input\n     u = 2 +2\n     u = 2 + 3\nboth indented, then everything is combined into one single exec compile, and surprisingly we have in pure python:\n\n>>> _sage_const_3 =3; _sage_const_2 = 2>>> exec compile(ur'u = _sage_const_2 +_sage_const_2\\u000a   u = _sage_const_2 +_sage_const_3' + '\\n',\n...  '', 'single')>>>\n>>> u\n4\n \nI'm surprised this doesn't set u to 5.  It might have something to do with the \"\\u000a\" which is the unicode character for linefeed.    Basically, I find the following behavior of Python's exec command really weird/broken/surprising.  I would expect an error in the latter two cases:\n\n>>> exec compile(ur'for z in range(5):\\u000a   z', '','single')0\n1\n2\n3\n4\n>>> exec compile(ur'u=2+2\\u000a  u=3+3', '','single')\n>>> print u\n4\n>>> exec compile(ur'u=10\\u000a  u=3+*fr%Acn @#!^2n2azzz3', '','single')\n>>> print u\n10\n \nI hope a Python interpreter expert such as Robert Bradshaw can comment on this.  In the meantime, if I were to spend more time on this now (which I won't), I would read the docs for exec and compile carefully, then probably just find a way to program around this surprising (to me) case in server/notebook/worksheet.py (which generates the exec compile code that is run above).\n\n-- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6729\n\n",
     "created_at": "2009-08-10T16:07:47Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "notebook -- bug when input contains uniform leading space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6729",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -161,15 +160,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6729
 
 ---
 
-archive/issue_comments_055177.json:
+archive/issue_comments_055075.json:
 ```json
 {
     "body": "Dorian's remarks:\n\n```\nEvaluating Kiran's CELL 1 in a codenode python notebook returns a similar error:\n\n  File \"<input>\", line 1\n    u = 2+3\n   ^\nIndentationError: unexpected indent\n\nI don't think this is a sign of any bug, it is simply bad Python syntax. It doesn't make sense to exec something with leading white space with no preceding lines.\n\nOne interesting clue to add to William's investigation... If you strip the leading white space of the first line, and evaluate in codenode, you get this:\n\nCELL 1:\n2+2\n   2+3\n\nOUTPUT 1:\n4\n  File \"<input>\", line 1\n    2+3\n   ^\nIndentationError: unexpected indent\n\n\nIn the sage notebook, the output of the same input is \"4\" *without* the IndentationError statement, the same as the result in question (when the first line has 3 initial white spaces).\n\nThis must have to do with sage pre-parsing out the white space of the initial line. In codenode, valid command blocks are built up (similar to sage, have look at _runcommands if you want). A cell may contain one or more valid commands. The interpreter processes the input looking for complete commands to compile. Once it has a complete command, it pauses processing the raw input, execs that command, and then resumes processing the raw input until it has all been compiled and exec'd.\n\nSo, the experiment I showed in codenode (above, no leading white space on the first line) shows that the first line is a valid and complete command, and the second line is not.\nThis is consistent with sage pre-parsing out the leading white space of the first line, and then maybe not printing the IndentationError, which shows up in codenode and the regular Python CLI.\n\nWhat do you all think?\n```\n",
     "created_at": "2009-08-11T00:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55177",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55075",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -214,15 +213,15 @@ What do you all think?
 
 ---
 
-archive/issue_comments_055178.json:
+archive/issue_comments_055076.json:
 ```json
 {
     "body": "Attachment [trac_6729_incomplete.patch](tarball://root/attachments/some-uuid/ticket6729/trac_6729_incomplete.patch) by acleone created at 2010-01-19 11:40:44",
     "created_at": "2010-01-19T11:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55178",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55076",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -232,15 +231,15 @@ Attachment [trac_6729_incomplete.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_055179.json:
+archive/issue_comments_055077.json:
 ```json
 {
     "body": "Strips uniform leading spaces before evaluating sage cells",
     "created_at": "2010-01-20T01:34:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55179",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55077",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -250,15 +249,15 @@ Strips uniform leading spaces before evaluating sage cells
 
 ---
 
-archive/issue_comments_055180.json:
+archive/issue_comments_055078.json:
 ```json
 {
     "body": "Attachment [trac_6729-leading_space.patch](tarball://root/attachments/some-uuid/ticket6729/trac_6729-leading_space.patch) by acleone created at 2010-01-20 01:47:53\n\nOk, trac_6729-leading_space.patch adds the expected behavior.\n\n```\nCELL 1:\n    u = 2\n    u = 3\nCELL 2:\nprint u  # = 3\n```\n\n\nHowever, this fails silently (regardless of the patch):\n\n```\nCELL 1:\n u = 2\n  u = 3\nCELL 2:\nprint u  # = 2\n```\n\n\nWith `%python`, it correctly throws an indentation error:\n\n```\nCELL 1:\n%python\n u = 2\n  u = 3\n# Identation error\n```\n\n\nSo this is a bug in the `%sage` compile system.",
     "created_at": "2010-01-20T01:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55180",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55078",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -303,15 +302,15 @@ So this is a bug in the `%sage` compile system.
 
 ---
 
-archive/issue_comments_055181.json:
+archive/issue_comments_055079.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-20T01:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55181",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55079",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -321,15 +320,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_055182.json:
+archive/issue_comments_055080.json:
 ```json
 {
     "body": "See #8006 for the silent Indentation errors",
     "created_at": "2010-01-20T02:02:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55182",
-    "user": "acleone"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55080",
+    "user": "https://trac.sagemath.org/admin/accounts/users/acleone"
 }
 ```
 
@@ -339,15 +338,15 @@ See #8006 for the silent Indentation errors
 
 ---
 
-archive/issue_comments_055183.json:
+archive/issue_comments_055081.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-20T07:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55183",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55081",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -357,15 +356,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_055184.json:
+archive/issue_comments_055082.json:
 ```json
 {
     "body": "The first indent goes away after saving, e.g., this:\n\n\n```\n  print 2\n  print 4\n  print 6\n```\n\n\nbecomes \n\n\n```\nprint 2\n  print 4\n  print 6\n```\n\n\nupon save & quit and re-opening.",
     "created_at": "2010-01-20T07:37:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55184",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55082",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -395,15 +394,15 @@ upon save & quit and re-opening.
 
 ---
 
-archive/issue_comments_055185.json:
+archive/issue_comments_055083.json:
 ```json
 {
     "body": "It's pretty likely that this is caused by the same thing as https://github.com/sagemath/sagenb/issues/288",
     "created_at": "2014-12-09T19:37:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55185",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55083",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -413,15 +412,15 @@ It's pretty likely that this is caused by the same thing as https://github.com/s
 
 ---
 
-archive/issue_comments_055186.json:
+archive/issue_comments_055084.json:
 ```json
 {
     "body": "> The first indent goes away after saving, e.g., this:\n> \n> {{{\n>   print 2\n>   print 4\n>   print 6\n> }}}\n> \n> becomes \n> \n> {{{\n> print 2\n>   print 4\n>   print 6\n> }}}\n> \n> upon save & quit and re-opening.\nTo be fair, that happens no matter what we do.",
     "created_at": "2014-12-10T04:00:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55186",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55084",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -448,15 +447,15 @@ To be fair, that happens no matter what we do.
 
 ---
 
-archive/issue_comments_055187.json:
+archive/issue_comments_055085.json:
 ```json
 {
     "body": "Closing deprecated notebook tickets",
     "created_at": "2020-03-29T02:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55187",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55085",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -466,15 +465,15 @@ Closing deprecated notebook tickets
 
 ---
 
-archive/issue_comments_055188.json:
+archive/issue_comments_055086.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-03-29T02:12:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6729",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55188",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/6729#issuecomment-55086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

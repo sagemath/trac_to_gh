@@ -6,15 +6,14 @@ archive/issues_003934.json:
     "body": "Assignee: @loefflerd\n\nAt the Heilbronn Institute workshop \"Computations with Modular Forms\", Ken McMurdy requested code for handling eta products on X_0(N). Theory background and wish-list here: http://maths.pratum.net/CMF/resources/McMurdyTalk.pdf.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3934\n\n",
     "created_at": "2008-08-23T11:46:53Z",
     "labels": [
-        "modular forms",
-        "minor",
-        "enhancement"
+        "component: modular forms",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Eta product modular functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3934",
-    "user": "@loefflerd"
+    "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: @loefflerd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3934
 
 ---
 
-archive/issue_comments_028182.json:
+archive/issue_comments_028124.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-08-23T11:56:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28182",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28124",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_028183.json:
+archive/issue_comments_028125.json:
 ```json
 {
     "body": "Attachment [10292.patch](tarball://root/attachments/some-uuid/ticket3934/10292.patch) by @loefflerd created at 2008-08-24 12:09:19\n\nFirst version: patch against sage 3.1.1",
     "created_at": "2008-08-24T12:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28183",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28125",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -67,15 +66,15 @@ First version: patch against sage 3.1.1
 
 ---
 
-archive/issue_comments_028184.json:
+archive/issue_comments_028126.json:
 ```json
 {
     "body": "Patch applies fine to 3.1.1.  Doctests for the new file pass.\n\nProblem:  doctesting all in sage/modular, some strange errors appear in modular/abvar to do with latex.  They went away when I deleted the line \"... import latex\" in the new file, which is not actually used anyway.\n\nIn the constructor, in checking Ligozat, you loop over divisors of N.  Would it not be faster to loop over the keys in the dict?  There is then no need to factor N, or to look at (however briefly) the divisors which are not in the dict.\n\nThere is something similar at line 146.  Instead of \n\n```\n eta_n = max([ (n/d).floor() for d in divisors(self.level()) if self.r(d) != 0])\n```\n\nyou could write \n\n```\n eta_n = max([ (n/d).floor() for d in self.r().keys()]) \n```\n\n\nIf you really wanted to have the full list of divisors of the level around, you could compute it and cache the result in the constructor.\n\nIn the function r(d) you can just say\n\n```\n   return self._rdict.get(d,0)\n```\n\nsince the get function on a dict returns the value if the key is there or a default value (here 0) if not.\n\nThat's all I have time for now: I got as far as line 235 (def basis_eta_products).",
     "created_at": "2008-08-24T17:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28184",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28126",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -114,15 +113,15 @@ That's all I have time for now: I got as far as line 235 (def basis_eta_products
 
 ---
 
-archive/issue_comments_028185.json:
+archive/issue_comments_028127.json:
 ```json
 {
     "body": "Thanks very much for the comments. Since that first version was written I have realised a much better way of fitting the code into Sage's object hierarchy; I will combine that with your suggestions and submit a new version.",
     "created_at": "2008-08-26T18:00:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28185",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28127",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -132,15 +131,15 @@ Thanks very much for the comments. Since that first version was written I have r
 
 ---
 
-archive/issue_comments_028186.json:
+archive/issue_comments_028128.json:
 ```json
 {
     "body": "Attachment [10293.patch](tarball://root/attachments/some-uuid/ticket3934/10293.patch) by @loefflerd created at 2008-08-27 14:19:40",
     "created_at": "2008-08-27T14:19:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28186",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28128",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -150,15 +149,15 @@ Attachment [10293.patch](tarball://root/attachments/some-uuid/ticket3934/10293.p
 
 ---
 
-archive/issue_comments_028187.json:
+archive/issue_comments_028129.json:
 ```json
 {
     "body": "OK, here's a second attempt (patch to be installed on top of the first attempt). I've refactored it extensively, creating a new class EtaGroup which is the parent of eta product objects; changed it so it doesn't use divisors() unless it really has to; and added a new module-level function eta_poly_relations which finds polynomial relations between two eta products.",
     "created_at": "2008-08-27T14:23:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28187",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28129",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -168,15 +167,15 @@ OK, here's a second attempt (patch to be installed on top of the first attempt).
 
 ---
 
-archive/issue_comments_028188.json:
+archive/issue_comments_028130.json:
 ```json
 {
     "body": "Replying to [comment:5 davidloeffler]:\n> OK, here's a second attempt (patch to be installed on top of the first attempt). I've refactored it extensively, creating a new class EtaGroup which is the parent of eta product objects; changed it so it doesn't use divisors() unless it really has to; and added a new module-level function eta_poly_relations which finds polynomial relations between two eta products.\n\nExcellent -- I will review this right away.  John",
     "created_at": "2008-08-27T14:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28188",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28130",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -189,15 +188,15 @@ Excellent -- I will review this right away.  John
 
 ---
 
-archive/issue_comments_028189.json:
+archive/issue_comments_028131.json:
 ```json
 {
     "body": "Apply after the previous two patches",
     "created_at": "2008-08-27T15:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28189",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28131",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -207,15 +206,15 @@ Apply after the previous two patches
 
 ---
 
-archive/issue_comments_028190.json:
+archive/issue_comments_028132.json:
 ```json
 {
     "body": "Attachment [10294.patch](tarball://root/attachments/some-uuid/ticket3934/10294.patch) by @JohnCremona created at 2008-08-27 15:37:13\n\nReview summary:  This is a great piece of work, especially after the second patch.  I have made a few changes, detailed below, which are in the 3rd patch.\n\n* I changed the type-checking of the level parameter so that it forces it to be a Sage integer.  This is a good idea since some integer methods would not work if the level was a Python integer, and it also allows you to say `EtaGroup_class(4/2)` should you ever want to.\n\n* docstring for EtaGroup_class.basis() had a spurious redundant INPUT line (N)\n\n* I added a little more type and value checking of parameters\n\n* In  eta_poly_relations there is a lot of output which cannot be turned off.   Why not include a parameter verbose, default False, and only print the output if it is True?  I put this in and changed the doctests accordingly.\n\n* I commented out the NotImplemented plot function, as it seemed pointless to have it!\n\nCoverage test gives this:\n\n```\n ./sage -coverage devel/sage-eta/sage/modular/etaproducts.py \n\ndevel/sage-eta/sage/modular/etaproducts.py\nERROR: Please define a s == loads(dumps(s)) doctest.\nSCORE devel/sage-eta/sage/modular/etaproducts.py: 74% (23 of 31)\n\nMissing documentation:\n\t * __init__(self, level)\n\t * _repr_(self)\n\t * __call__(self, dict)\n\t * __init__(self, parent, rdict)\n\t * __cmp__(self, other)\n\t * __eq__(self, other)\n\t * _short_repr(self)\n\t * _eta_relations_helper(eta1, eta2, degree, qexp_terms, labels, verbose)\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _mul_(self, other)\n\t * _div_(self, other)\n\t * _repr_(self)\n\t * _repr_(self)\n```\n\nI have never been sure about the loads(dumps) message.  Apart from that all functions which are not preceded by an underscore have docstrings and doctests, which is the main thing:  it would be better if they had a little documentation, but then you'll get the complaint that they should also have doctests.\n\n\nConclusion:  I am very happy with this, but it would be even better if someone who knows a lot more about eta products (such as Ken McMurdy) could put it through its paces.",
     "created_at": "2008-08-27T15:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28190",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28132",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -269,15 +268,15 @@ Conclusion:  I am very happy with this, but it would be even better if someone w
 
 ---
 
-archive/issue_comments_028191.json:
+archive/issue_comments_028133.json:
 ```json
 {
     "body": "Ok, anything going on here? The patches here have been bitrotting for a while and it would be nice if someone wrote the missing doctests. In order to have the right report pick it up I am renaming it to \"needs work\".\n\nCheers,\n\nMichael",
     "created_at": "2008-09-23T00:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28191",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28133",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -291,15 +290,15 @@ Michael
 
 ---
 
-archive/issue_comments_028192.json:
+archive/issue_comments_028134.json:
 ```json
 {
     "body": "David,\n\nIf you are happy with the additions I made then we can get this accepted soon.  I have not yet tried applying the patches to 3.1.3.*.  John",
     "created_at": "2008-09-23T08:07:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28192",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28134",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -311,15 +310,15 @@ If you are happy with the additions I made then we can get this accepted soon.  
 
 ---
 
-archive/issue_comments_028193.json:
+archive/issue_comments_028135.json:
 ```json
 {
     "body": "I'm very happy with John's changes. I've sent a copy to Ken McMurdy for review; he said he'll reply by September 26th. I doubt that bit rot will be a problem with this one as it's a single new source file which is entirely self-contained.\n\nI'll get to work on the missing doctests and post a new patch.\n\nDavid",
     "created_at": "2008-09-23T09:33:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28193",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28135",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -333,15 +332,15 @@ David
 
 ---
 
-archive/issue_comments_028194.json:
+archive/issue_comments_028136.json:
 ```json
 {
     "body": "Attachment [10295.patch](tarball://root/attachments/some-uuid/ticket3934/10295.patch) by @loefflerd created at 2008-09-23 10:35:57\n\nI've added doctests for the underscore methods, and a loads(dumps()) test; sage -coverage now returns 100%.",
     "created_at": "2008-09-23T10:35:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28194",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28136",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -353,15 +352,15 @@ I've added doctests for the underscore methods, and a loads(dumps()) test; sage 
 
 ---
 
-archive/issue_comments_028195.json:
+archive/issue_comments_028137.json:
 ```json
 {
     "body": "Excellent!  I just checked that the sequence of 4 patches applies cleanly to 3.1.3.alpha0, and all tests in sage/modular pass.\n\nLet it roll: even if Ken McMurdy suggests changes and additions, why not merge this now?\n\nI'll inform Lloyd, Gabor and Lassina about this once it is merged, since it sefinitely a success story coming out of their August workshop.",
     "created_at": "2008-09-23T11:15:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28195",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28137",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -375,15 +374,15 @@ I'll inform Lloyd, Gabor and Lassina about this once it is merged, since it sefi
 
 ---
 
-archive/issue_comments_028196.json:
+archive/issue_comments_028138.json:
 ```json
 {
     "body": "Cremona gave this a positive review (above), so I'm changing the heading.",
     "created_at": "2008-10-23T16:18:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28196",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28138",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -393,15 +392,15 @@ Cremona gave this a positive review (above), so I'm changing the heading.
 
 ---
 
-archive/issue_comments_028197.json:
+archive/issue_comments_028139.json:
 ```json
 {
     "body": "I'm also changing this to target 3.2",
     "created_at": "2008-10-23T16:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28197",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28139",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -411,15 +410,15 @@ I'm also changing this to target 3.2
 
 ---
 
-archive/issue_comments_028198.json:
+archive/issue_comments_028140.json:
 ```json
 {
     "body": "Merged all four patches in Sage 3.2.alpha1",
     "created_at": "2008-10-26T04:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28198",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28140",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -429,15 +428,15 @@ Merged all four patches in Sage 3.2.alpha1
 
 ---
 
-archive/issue_comments_028199.json:
+archive/issue_comments_028141.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-26T04:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3934",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28199",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3934#issuecomment-28141",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

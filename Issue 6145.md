@@ -6,7 +6,7 @@ archive/issues_006145.json:
     "body": "Assignee: mabshoff\n\nAccording to Bill Hart this is a build fix version of mpir specifically for sage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6145\n\n",
     "created_at": "2009-05-28T06:26:11Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006145.json:
     "title": "upgrade mpir to 1.1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6145",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6145
 
 ---
 
-archive/issue_comments_049056.json:
+archive/issue_comments_048961.json:
 ```json
 {
     "body": "New spkg up here: http://sage.math.washington.edu/home/wstein/patches/gmp-mpir-1.1.2.spkg",
     "created_at": "2009-05-28T06:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6145",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-49056",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-48961",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ New spkg up here: http://sage.math.washington.edu/home/wstein/patches/gmp-mpir-1
 
 ---
 
-archive/issue_comments_049057.json:
+archive/issue_comments_048962.json:
 ```json
 {
     "body": "Looks good to me.\n\nMerged in 4.0.rc1.",
     "created_at": "2009-05-28T06:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6145",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-49057",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-48962",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +67,15 @@ Merged in 4.0.rc1.
 
 ---
 
-archive/issue_comments_049058.json:
+archive/issue_comments_048963.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-28T06:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6145",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-49058",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-48963",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +85,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_049059.json:
+archive/issue_comments_048964.json:
 ```json
 {
     "body": "Fixed the build issue on OS X 10.4 for me.",
     "created_at": "2009-05-28T21:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6145",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-49059",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6145#issuecomment-48964",
+    "user": "https://github.com/robertwb"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_006337.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: version()\n'Sage Version 4.0.1, Release Date: 2009-06-06'\nsage: var('a d')\n(a, d)\nsage: A = matrix([[a,0],[1,d]])\nsage: A.eigenvalues()\n[d, a]\nsage: A.jordan_form()\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call\nlast)\n\n/home/bo198214/.sage/temp/darkdepth/6404/\n_home_bo198214__sage_init_sage_0.py in <module>()\n\n/usr/src/sage-4.0.1-linux-Debian_GNU_Linux_5.0_lenny-sse2-x86_64-Linux/\nlocal/lib/python2.5/site-packages/sage/matrix/matrix2.so in\nsage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:27915)()\n\nRuntimeError: Some eigenvalue does not exist in Symbolic Ring.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6337\n\n",
     "created_at": "2009-06-16T16:58:27Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.9",
     "title": "bug in jorder form over symbolic ring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6337",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -52,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6337
 
 ---
 
-archive/issue_comments_050574.json:
+archive/issue_comments_050478.json:
 ```json
 {
     "body": "Things are failing early on, with the roots command.  E.g.:\n\nsage: var('a, d')\nsage: ((d - x)*(a - x)).roots()\n[(x, 1)]\n\nWhile the eigenvalues method works, it doesn't compute multiplicities, so I am not sure what the easiest fix is.",
     "created_at": "2009-06-16T17:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50574",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50478",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -76,15 +75,15 @@ While the eigenvalues method works, it doesn't compute multiplicities, so I am n
 
 ---
 
-archive/issue_comments_050575.json:
+archive/issue_comments_050479.json:
 ```json
 {
     "body": "This one looks different now:\n\n```\nsage: sage: var('a d')\n(a, d)\nsage: sage: A = matrix([[a,0],[1,d]])\nsage: sage: A.eigenvalues()\n[d, a]\nsage: sage: A.jordan_form()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-8-708dc91119f4> in <module>()\n----> 1 A.jordan_form()\n\n/home/darij/sage-5.11.beta3/local/lib/python2.7/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.jordan_form (sage/matrix/matrix2.c:44267)()\n\nValueError: Jordan normal form not implemented over inexact rings.\n```\n\n\nI agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...",
     "created_at": "2013-06-22T23:04:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50575",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50479",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -114,15 +113,15 @@ I agree that the symbolic ring is inexact, and that Jordan normal form requires 
 
 ---
 
-archive/issue_comments_050576.json:
+archive/issue_comments_050480.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2015-07-31T13:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50576",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50480",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -132,15 +131,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_050577.json:
+archive/issue_comments_050481.json:
 ```json
 {
     "body": "Replying to [comment:3 darij]:\n> I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...\nSo this would be invalid now?",
     "created_at": "2015-07-31T13:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50577",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50481",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -152,15 +151,15 @@ So this would be invalid now?
 
 ---
 
-archive/issue_comments_050578.json:
+archive/issue_comments_050482.json:
 ```json
 {
     "body": "I think someone who understands symbolic better should weigh in.",
     "created_at": "2015-07-31T13:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50578",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50482",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -170,15 +169,15 @@ I think someone who understands symbolic better should weigh in.
 
 ---
 
-archive/issue_comments_050579.json:
+archive/issue_comments_050483.json:
 ```json
 {
     "body": "Replying to [comment:1 mhampton]:\n> Things are failing early on, with the roots command.  E.g.:\n> \n> sage: var('a, d')\n> sage: ((d - x)*(a - x)).roots()\n> [(x, 1)]\n\nWhat is failing here? In order to get the expected answer you need of course to specify the variable\n\n```\nsage: var('a d')\n(a, d)\nsage:  ((d - x)*(a - x)).roots()\n[(x, 1)]\nsage:  ((d - x)*(a - x)).roots(x)\n[(d, 1), (a, 1)]\nsage:  ((d - x)**2).roots()\n[(x, 2)]\n```\n",
     "created_at": "2015-08-09T14:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50579",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50483",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -207,15 +206,15 @@ sage:  ((d - x)**2).roots()
 
 ---
 
-archive/issue_comments_050580.json:
+archive/issue_comments_050484.json:
 ```json
 {
     "body": "Here is a straightforward implementation of `jordan_form()` for symbolic matrices using Maxima.  Even though the \"symbolic ring\" is considered to be inexact, it still seems useful to have a working `jordan_form()` method for it.",
     "created_at": "2015-08-31T18:13:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50580",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50484",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -225,15 +224,15 @@ Here is a straightforward implementation of `jordan_form()` for symbolic matrice
 
 ---
 
-archive/issue_comments_050581.json:
+archive/issue_comments_050485.json:
 ```json
 {
     "body": "This looks fine to me.\n\n\nReplying to [comment:8 rws]:\n> Replying to [comment:3 darij]:\n> > I agree that the symbolic ring is inexact, and that Jordan normal form requires exactness...\n> So this would be invalid now?\nThe Jordan normal form does not require more \"exactness\" from the ring as do the eigenvalues which are already implemented for symbolic matrices (calling maxima). Hence I see no point in discussing whether or not we should offer a jordan_form method for symbolic matrices, it seems natural to do it as what is proposed here.\n\nJust one thing: to be consistent with what is returned over other coefficient domains, the Jordan form should display the subdivision of the block matrix.\n  {{{#!python\n  sage: a = matrix(QQ,3,[1,0,1,0,2,0,0,0,1])\n  sage: a.jordan_form()\n  [2|0 0]\n  [-+---]\n  [0|1 1]\n  [0|0 1]\n  }}}",
     "created_at": "2015-09-15T16:09:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50581",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50485",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -260,15 +259,15 @@ Just one thing: to be consistent with what is returned over other coefficient do
 
 ---
 
-archive/issue_comments_050582.json:
+archive/issue_comments_050486.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2015-09-15T16:09:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50582",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50486",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -278,15 +277,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_050583.json:
+archive/issue_comments_050487.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-09-17T15:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50583",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50487",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -296,15 +295,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_050584.json:
+archive/issue_comments_050488.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2015-09-17T15:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50584",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50488",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -314,15 +313,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_050585.json:
+archive/issue_comments_050489.json:
 ```json
 {
     "body": "Replying to [comment:12 cpernet]:\n> Just one thing: to be consistent with what is returned over other coefficient domains, the Jordan form should display the subdivision of the block matrix.\nThanks for noticing, I added this in the latest commit.",
     "created_at": "2015-09-17T15:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50585",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50489",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -334,15 +333,15 @@ Thanks for noticing, I added this in the latest commit.
 
 ---
 
-archive/issue_comments_050586.json:
+archive/issue_comments_050490.json:
 ```json
 {
     "body": "Thanks, this is all good to me.",
     "created_at": "2015-09-18T05:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50586",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50490",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -352,15 +351,15 @@ Thanks, this is all good to me.
 
 ---
 
-archive/issue_comments_050587.json:
+archive/issue_comments_050491.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-09-18T05:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50587",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50491",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -370,15 +369,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_050588.json:
+archive/issue_comments_050492.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2015-09-18T07:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50588",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50492",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -388,15 +387,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_050589.json:
+archive/issue_comments_050493.json:
 ```json
 {
     "body": "Reviewer name missing",
     "created_at": "2015-09-18T07:36:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50589",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50493",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -406,15 +405,15 @@ Reviewer name missing
 
 ---
 
-archive/issue_comments_050590.json:
+archive/issue_comments_050494.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2015-09-18T11:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50590",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50494",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -424,15 +423,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_050591.json:
+archive/issue_comments_050495.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-09-18T19:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6337",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50591",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/6337#issuecomment-50495",
+    "user": "https://github.com/vbraun"
 }
 ```
 

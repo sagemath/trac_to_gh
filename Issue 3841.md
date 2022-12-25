@@ -6,15 +6,13 @@ archive/issues_003841.json:
     "body": "Assignee: @garyfurnish\n\nThis patch makes symbolic polynomials use libsingular via the ring interface by default.\nIt also contains a large number of doctest changes because polynomials in Sage have a better ordering.\n\n\n```\n%cython\nfrom sage.calculus.calculus import var\nfrom sage.rings.integer cimport Integer\nfrom random import random\ndef blah(rng):\n    global five\n    x,y = var('x,y')\n    foo = x\n    cdef i\n    for i from 0<=i<rng:\n        foo+= x**int(random()*1000)+y**int(random()*10000)+x+1\n    return foo\n\nThe python code used to test maxima was:\nsage: def blah(rng):\n   foo = x\n   for i in xrange(0, rng):\n       foo+=x^int(random()*10000)+y^int(random()*10000)+x+1; foo = simplify(foo)             \n   return foo\n\nI'm well aware that I'm comparing cython timings to python timings.. but the cython overhead isn't the dominating factor here.\nThe simplify exists to force it to go to maxima to evaluate the expression between additions (as singular does).  Otherwise this is not a very fair/real world comparison if Maxima gets to build the entire addition and send it to Maxima as one batch (and only do the addition once as opposed to rng times).  \n\n%timeit blah(10)\n\n125 loops, best of 3: 1.98 ms per loop\n\nMaxima: \nCPU times: user 0.14 s, sys: 0.05 s, total: 0.18 s\nWall time: 1.97 s\n\n%timeit blah(100)\n \t\n25 loops, best of 3: 20.8 ms per loop\n\nMaxima:\nCPU times: user 3.30 s, sys: 1.16 s, total: 4.47 s\nWall time: 28.89 s\n\n\n%timeit blah(1000)\n\t\n5 loops, best of 3: 214 ms per loop\n\nMaxima: Raises exception\n\n%timeit blah(10000)\n\n5 loops, best of 3: 2.09 s per loop\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3841\n\n",
     "created_at": "2008-08-13T18:31:46Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, not ready for review] Use singular for calculus by default.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3841",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -86,15 +84,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3841
 
 ---
 
-archive/issue_comments_027310.json:
+archive/issue_comments_027252.json:
 ```json
 {
     "body": "Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_2.patch) by @garyfurnish created at 2008-08-14 04:45:45",
     "created_at": "2008-08-14T04:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27310",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27252",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -104,15 +102,15 @@ Attachment [trac_3841_2.patch](tarball://root/attachments/some-uuid/ticket3841/t
 
 ---
 
-archive/issue_comments_027311.json:
+archive/issue_comments_027253.json:
 ```json
 {
     "body": "Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_3.patch) by @garyfurnish created at 2008-08-14 04:45:51",
     "created_at": "2008-08-14T04:45:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27311",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27253",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -122,15 +120,15 @@ Attachment [trac_3841_3.patch](tarball://root/attachments/some-uuid/ticket3841/t
 
 ---
 
-archive/issue_comments_027312.json:
+archive/issue_comments_027254.json:
 ```json
 {
     "body": "Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_4.patch) by @garyfurnish created at 2008-08-14 04:51:27",
     "created_at": "2008-08-14T04:51:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27312",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27254",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -140,15 +138,15 @@ Attachment [trac_3841_4.patch](tarball://root/attachments/some-uuid/ticket3841/t
 
 ---
 
-archive/issue_comments_027313.json:
+archive/issue_comments_027255.json:
 ```json
 {
     "body": "Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_fix.patch) by @mwhansen created at 2008-08-14 05:34:10",
     "created_at": "2008-08-14T05:34:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27313",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27255",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -158,15 +156,15 @@ Attachment [llt_fix.patch](tarball://root/attachments/some-uuid/ticket3841/llt_f
 
 ---
 
-archive/issue_comments_027314.json:
+archive/issue_comments_027256.json:
 ```json
 {
     "body": "Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_5.patch) by @garyfurnish created at 2008-08-14 19:01:22",
     "created_at": "2008-08-14T19:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27314",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27256",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -176,15 +174,15 @@ Attachment [trac_3841_5.patch](tarball://root/attachments/some-uuid/ticket3841/t
 
 ---
 
-archive/issue_comments_027315.json:
+archive/issue_comments_027257.json:
 ```json
 {
     "body": "Attachment [trac_3841_flat.patch](tarball://root/attachments/some-uuid/ticket3841/trac_3841_flat.patch) by @garyfurnish created at 2008-08-14 22:10:25\n\nReplaces the other patches.",
     "created_at": "2008-08-14T22:10:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27315",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27257",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -196,15 +194,15 @@ Replaces the other patches.
 
 ---
 
-archive/issue_comments_027316.json:
+archive/issue_comments_027258.json:
 ```json
 {
     "body": "Pre-review comments.",
     "created_at": "2008-08-14T23:19:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27316",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27258",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -214,15 +212,15 @@ Pre-review comments.
 
 ---
 
-archive/issue_comments_027317.json:
+archive/issue_comments_027259.json:
 ```json
 {
     "body": "Attachment [symbolic_comments.txt](tarball://root/attachments/some-uuid/ticket3841/symbolic_comments.txt) by @rlmill created at 2008-08-14 23:20:32\n\nI didn't make it through the whole patch, but these are my initial impressions. I'll have much more time to give this my full attention tomorrow.",
     "created_at": "2008-08-14T23:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27317",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27259",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -234,15 +232,15 @@ I didn't make it through the whole patch, but these are my initial impressions. 
 
 ---
 
-archive/issue_comments_027318.json:
+archive/issue_comments_027260.json:
 ```json
 {
     "body": "1) Fixed \n2) I disagree, but will comply.  Symbolic polynomials be default still printed in this ordering.  However, before most polynomials were not actually constructed as polynomials.  This is what the ordering should have been.\n3) The doctests were moved to 4485\n4) Functionality was subsumed by other substitutes (For instance variable now uses polynomial's substitute)\n5) It corrects for an issue where the equation is lexically reversed (so that x<=y becomes y>=x in some cases) because of changes to polynomial ordering. \n6) I'll move existing doctests that cover the functions to the functions in question.",
     "created_at": "2008-08-14T23:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27318",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27260",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -257,15 +255,15 @@ archive/issue_comments_027318.json:
 
 ---
 
-archive/issue_comments_027319.json:
+archive/issue_comments_027261.json:
 ```json
 {
     "body": "Replying to [comment:2 gfurnish]:\n> 2) I disagree, but will comply.  Symbolic polynomials be default still printed in this ordering.  However, before most polynomials were not actually constructed as polynomials.  This is what the ordering should have been.\n\nYou disagree with the need to discuss one of your proposed changes? Perhaps you should then be developing your own project, to avoid the inconvenience of other's opinions.",
     "created_at": "2008-08-14T23:40:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27319",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27261",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -278,15 +276,15 @@ You disagree with the need to discuss one of your proposed changes? Perhaps you 
 
 ---
 
-archive/issue_comments_027320.json:
+archive/issue_comments_027262.json:
 ```json
 {
     "body": "I don't see why fixing a bug (and yes, it is a bug.  Symbolic Polynomials have always used the same representation as the underlying object) has suddenly become a new feature.  I said I would ask because people may be interested, but the ordering was entirely determined by existing code in SymbolicPolynomial.",
     "created_at": "2008-08-14T23:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27320",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27262",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -296,15 +294,15 @@ I don't see why fixing a bug (and yes, it is a bug.  Symbolic Polynomials have a
 
 ---
 
-archive/issue_comments_027321.json:
+archive/issue_comments_027263.json:
 ```json
 {
     "body": "> I don't see why fixing a bug (and yes, it is a bug.  ...) has suddenly become a new feature.\n\nThis isn't a bug or a new feature: it is a convention. Based on William's comments in the lab today, I don't think there will be a huge amount of support for printing polynomials the way they are here. The point is that it is just a convention, and in changing such, you are not doing things the way people expect them to be done. If you make a change in conventions, there had better be a very good reason for it, and the Sage community must support it. Probably \"Symbolic Polynomials alway use the same representation as the underlying object\" should change if this is going to fly (also, this is hardly a justification of anything...).\n\nApplied to sage-3.1.alpha2, the following test fails, aside from the two (now) resolved issues for coercion:\n\n```\nsage -t  devel/sage/sage/structure/coerce_maps.pyx\n**********************************************************************\nFile \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/tmp/coerce_maps.py\", line 113:\n    sage: mor(x^2/4+1)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[5]>\", line 1, in <module>\n        mor(x**Integer(2)/Integer(4)+Integer(1))###line 113:    sage: mor(x^2/4+1)\n      File \"map.pyx\", line 128, in sage.categories.map.Map.__call__ (sage/categories/map.c:2676)\n      File \"coerce_maps.pyx\", line 146, in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:3333)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 1833, in _polynomial_\n        return self.substitute_over_ring(dict(sub), ring=R)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 3682, in substitute_over_ring\n        return self._recursive_sub_over_ring(kwds, ring)\n(*)   File \"/home/rlmill/sage-3.1.alpha2-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/calculus/calculus.py\", line 4591, in _recursive_sub_over_ring\n        return ring(f(kwds[v]))\n      File \"polynomial_element.pyx\", line 489, in sage.rings.polynomial.polynomial_element.Polynomial.__call__ (sage/rings/polynomial/polynomial_element.c:4775)\n      File \"element.pyx\", line 1382, in sage.structure.element.RingElement.__mul__(sage/structure/element.c:9190)\n      File \"coerce.pyx\", line 662, in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6288)\n    TypeError: unsupported operand parent(s) for '*': 'Rational Field' and 'Power Series Ring in t over Finite Field of size 7'\n```\n\n\nHere is the original docstring:\n\n```\n\"\"\"\nEXAMPLES: \n    sage: from sage.structure.coerce_maps import NamedConvertMap\n    sage: mor = NamedConvertMap(SR, QQ['t'], '_polynomial_')\n    sage: mor(x^2/4+1)\n    1/4*t^2 + 1\n    sage: mor = NamedConvertMap(SR, GF(7)[['t']], '_polynomial_')\n    sage: mor(x^2/4+1)\n    1 + 2*t^2\n\"\"\"\n```\n",
     "created_at": "2008-08-15T14:01:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27321",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27263",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -360,15 +358,15 @@ EXAMPLES:
 
 ---
 
-archive/issue_comments_027322.json:
+archive/issue_comments_027264.json:
 ```json
 {
     "body": "Probably \"Symbolic Polynomials alway use the same representation as the underlying object\" should change if this is going to fly (also, this is hardly a justification of anything...).  << Symbolic polynomials now use the representation as determined by the coefficient and exponent functions.  Therefore while we can easily reverse it, it is pretty much determined by the underlying object.  If this is not to be the case, I strongly recommend putting it off past here as this is an unrelated issue (although the polynomial repr should go to devel as it relevant to both GiNaC and this patch).  \n\nThe doctest failure is known to be related to bug 3856 (if it is a bug or not depends on how exactly _polynomial_ should behave (So pending on figuring out how coercion specs this)).",
     "created_at": "2008-08-15T19:35:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27322",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27264",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -380,15 +378,15 @@ The doctest failure is known to be related to bug 3856 (if it is a bug or not de
 
 ---
 
-archive/issue_comments_027323.json:
+archive/issue_comments_027265.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-08-15T20:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27323",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27265",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -398,15 +396,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_027324.json:
+archive/issue_comments_027266.json:
 ```json
 {
     "body": "After some discussion with gfurnish, it is clear that there is no point in trying to merge this patch. Although there are some merits to this patch, the current situation with GiNaC would render it obsolete in short time, and thus it is not worth the effort. \n\nI should also (on record) apologize for my flame on this ticket. I was under time pressure and very impatient and I didn't mean it the way it came across.\n\nFor what it's worth, Maxima still sucks. :-)",
     "created_at": "2008-08-15T20:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3841",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27324",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3841#issuecomment-27266",
+    "user": "https://github.com/rlmill"
 }
 ```
 

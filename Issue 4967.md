@@ -6,7 +6,7 @@ archive/issues_004967.json:
     "body": "Assignee: mabshoff\n\n## How to reproduce the problem\n\n* Create a file called `~/.gaprc' containing the following line\n\n```\nColorPrompt(true);\n```\n\n* Compile sage from source\n* Start sage and try the following\n\n```\nsage: gap._eval_line('1+3;')\n'4\\n\\x1b[1m\\x1b[34mgap> \\x1b[0m'\n```\n\n\n## Solution\nAs William Stein suggested on sage-devel (Sat, 11 Oct 2008), changing line 169 of `gap.py' from \n\n```\ngap_cmd = \"gap\"\n```\n\nto \n\n```\ngap_cmd = \"gap -r\"\n```\n\nsolve the problem.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4967\n\n",
     "created_at": "2009-01-12T16:50:51Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004967.json:
     "title": "[with patch] Trouble with .gaprc file when compiling from source",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4967",
-    "user": "@orontee"
+    "user": "https://github.com/orontee"
 }
 ```
 Assignee: mabshoff
@@ -62,15 +62,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4967
 
 ---
 
-archive/issue_comments_037798.json:
+archive/issue_comments_037726.json:
 ```json
 {
     "body": "diff -c a/sage/interfaces/gap.py b/sage/interfaces/gap.py >> ticket.patch",
     "created_at": "2009-01-12T16:51:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37798",
-    "user": "@orontee"
+    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37726",
+    "user": "https://github.com/orontee"
 }
 ```
 
@@ -80,15 +80,15 @@ diff -c a/sage/interfaces/gap.py b/sage/interfaces/gap.py >> ticket.patch
 
 ---
 
-archive/issue_comments_037799.json:
+archive/issue_comments_037727.json:
 ```json
 {
     "body": "Attachment [ticket.patch](tarball://root/attachments/some-uuid/ticket4967/ticket.patch) by mabshoff created at 2009-01-17 16:56:48\n\nHi,\n\nany chance you can post a proper mercurial patch? The attachment is \"just\" a diff, but I can commit it in your name.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-17T16:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37799",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37727",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -106,15 +106,15 @@ Michael
 
 ---
 
-archive/issue_comments_037800.json:
+archive/issue_comments_037728.json:
 ```json
 {
     "body": "Attachment [trac_4967_ticket.patch](tarball://root/attachments/some-uuid/ticket4967/trac_4967_ticket.patch) by mabshoff created at 2009-01-18 05:11:59",
     "created_at": "2009-01-18T05:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37800",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37728",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -124,15 +124,15 @@ Attachment [trac_4967_ticket.patch](tarball://root/attachments/some-uuid/ticket4
 
 ---
 
-archive/issue_comments_037801.json:
+archive/issue_comments_037729.json:
 ```json
 {
     "body": "Positive review. I have attached a proper hg patch with check in credit given to Matthias Meulien.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-18T05:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37801",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37729",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -146,15 +146,15 @@ Michael
 
 ---
 
-archive/issue_comments_037802.json:
+archive/issue_comments_037730.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha0",
     "created_at": "2009-01-18T05:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37802",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37730",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -164,15 +164,15 @@ Merged in Sage 3.3.alpha0
 
 ---
 
-archive/issue_comments_037803.json:
+archive/issue_comments_037731.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-18T05:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4967",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37803",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4967#issuecomment-37731",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

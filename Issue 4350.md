@@ -6,15 +6,14 @@ archive/issues_004350.json:
     "body": "Assignee: @williamstein\n\nSee trac #4346 first and apply that patch.  \n\n2. In this patch, matrix_window does *not* do bounds checking by default.  This is because there is a bunch of internal usage of matrix_window for strassen algorithms, which actually relies on matrix_window not being bounds checked (it's ok as used by those algorithms).  However, a bunch of code would have to be changed to make bounds checking of matrix_window the default.  That said it is currently easy (even with this patch) to segfault sage interactively:\n\n```\nsage: a = matrix([1]).matrix_window(1,1,1,1)\nsage: a\n\nMatrix window of size 1 x 1 at (1,1):\n[1]\nsage: a[0,0] = 1\n\n\n------------------------------------------------------------\nUnhandled SIGSEGV: A segmentation fault occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4350\n\n",
     "created_at": "2008-10-23T19:33:47Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "matrix_window -- easy to segfault sage at command line",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4350",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -51,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4350
 
 ---
 
-archive/issue_comments_031951.json:
+archive/issue_comments_031889.json:
 ```json
 {
     "body": "Attachment [sage-4350-part2.patch](tarball://root/attachments/some-uuid/ticket4350/sage-4350-part2.patch) by @williamstein created at 2008-10-23 20:19:53",
     "created_at": "2008-10-23T20:19:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4350",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31951",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31889",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -69,15 +68,15 @@ Attachment [sage-4350-part2.patch](tarball://root/attachments/some-uuid/ticket43
 
 ---
 
-archive/issue_comments_031952.json:
+archive/issue_comments_031890.json:
 ```json
 {
     "body": "NOTE: In writing this patch, I discovered that there was an off-by-one bug in the patch for #4346, which is fixed here.  That was why the strassen code wasn't working.  Now by default everything uses bounds checking.  Very nice. \n\nNote: the bugs in modular abelian varieties homspaces (trac #4351) are also fixed.",
     "created_at": "2008-10-23T20:26:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4350",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31952",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31890",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -89,15 +88,15 @@ Note: the bugs in modular abelian varieties homspaces (trac #4351) are also fixe
 
 ---
 
-archive/issue_comments_031953.json:
+archive/issue_comments_031891.json:
 ```json
 {
     "body": "Attachment [sage-4350-part3.patch](tarball://root/attachments/some-uuid/ticket4350/sage-4350-part3.patch) by @craigcitro created at 2008-10-23 22:29:47",
     "created_at": "2008-10-23T22:29:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4350",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31953",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31891",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -107,15 +106,15 @@ Attachment [sage-4350-part3.patch](tarball://root/attachments/some-uuid/ticket43
 
 ---
 
-archive/issue_comments_031954.json:
+archive/issue_comments_031892.json:
 ```json
 {
     "body": "Looks good. I've cleaned up a little bit of the code, and `cpdef`'d several of the functions in `sage/matrix/matrix_window.pyx`. I tested to see that this doesn't seem to slow down anything (such as matrix multiply), and now one can actually use the `matrix_window` class from the command line. (This is useful for debugging purposes in particular.)",
     "created_at": "2008-10-23T22:33:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4350",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31954",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31892",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -125,15 +124,15 @@ Looks good. I've cleaned up a little bit of the code, and `cpdef`'d several of t
 
 ---
 
-archive/issue_comments_031955.json:
+archive/issue_comments_031893.json:
 ```json
 {
     "body": "Merged all three patches in Sage 3.2.alpha1",
     "created_at": "2008-10-26T02:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4350",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31955",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31893",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -143,15 +142,15 @@ Merged all three patches in Sage 3.2.alpha1
 
 ---
 
-archive/issue_comments_031956.json:
+archive/issue_comments_031894.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-26T02:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4350",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31956",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4350#issuecomment-31894",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

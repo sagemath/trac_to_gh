@@ -6,15 +6,14 @@ archive/issues_008652.json:
     "body": "Assignee: @williamstein\n\nCC:  @nexttime\n\nI got this bug/traceback today by making a file grader.py and a file grader.sage (their content doesn't matter).  \n\n\n```\nsage: import grader\nsage: load grader.sage\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/Users/wstein/edu/2010/480/grading/<ipython console> in <module>()\n\n/Users/wstein/sage/build/sage/local/lib/python2.6/site-packages/sage/misc/preparser.pyc in load(filename, globals, attach)\n   1487             return\n   1488         \n-> 1489     filename = filename.strip()\n   1490     \n   1491     if filename.lower().startswith('http://'):\n\nAttributeError: 'module' object has no attribute 'strip'\nsage: \n```\n\n\nThe above bug is the fault of the rewrite *I* did of load and attach, so is my fault. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8652\n\n",
     "created_at": "2010-04-06T05:25:31Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "load uses \"strip\" on non-strings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8652",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8652
 
 ---
 
-archive/issue_comments_078503.json:
+archive/issue_comments_078373.json:
 ```json
 {
     "body": "Did I miss something?\n\nIf I create both files `foo.py` and `foo.sage`, then\n\n\n```\nsage: import foo\nI am foo.py\nsage: load foo.sage\nI am foo.sage\n```\n\n\ndoesn't give an error (in 4.3.5).",
     "created_at": "2010-04-07T17:04:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78503",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78373",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -85,15 +84,15 @@ doesn't give an error (in 4.3.5).
 
 ---
 
-archive/issue_comments_078504.json:
+archive/issue_comments_078374.json:
 ```json
 {
     "body": "I'm using 4.3.4 and I see the same thing as leif -- worksforme. Perhaps the content of grader.py and grader.sage does matter?",
     "created_at": "2010-04-28T03:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78504",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78374",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -103,15 +102,15 @@ I'm using 4.3.4 and I see the same thing as leif -- worksforme. Perhaps the cont
 
 ---
 
-archive/issue_comments_078505.json:
+archive/issue_comments_078375.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"sd40.5\".",
     "created_at": "2012-05-28T22:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78505",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78375",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -121,15 +120,15 @@ Changing keywords from "" to "sd40.5".
 
 ---
 
-archive/issue_comments_078506.json:
+archive/issue_comments_078376.json:
 ```json
 {
     "body": "This still works properly on 5.1.beta0. In two years no one has reported or reproduced this bug; I propose we close it.",
     "created_at": "2012-05-28T22:32:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78506",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78376",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -139,15 +138,15 @@ This still works properly on 5.1.beta0. In two years no one has reported or repr
 
 ---
 
-archive/issue_comments_078507.json:
+archive/issue_comments_078377.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-03-15T18:47:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78507",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78377",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -157,15 +156,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_078508.json:
+archive/issue_comments_078378.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-03-15T18:47:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78508",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78378",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -175,15 +174,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_078509.json:
+archive/issue_comments_078379.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2014-03-19T04:36:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8652",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78509",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8652#issuecomment-78379",
+    "user": "https://github.com/vbraun"
 }
 ```
 

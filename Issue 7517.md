@@ -6,7 +6,7 @@ archive/issues_007517.json:
     "body": "Assignee: @aghitza\n\n\n```\n\n\nOn Sun, Nov 22, 2009 at 4:57 PM, Ricky Farr <> wrote:\n> Dear All,\n>\n> I'd like to sincerely thank you for your help before hand.  I'm having\n> some issues that need to be straightened out.  I was under the\n> impression that xgcd(a,b) returned (g,s,t) so that g = s*a + t*b,\n> where g=gcd(a,b).  Please review the following code, and tell me why\n> this happens:\n>\n> sage: Q.<x> = PolynomialRing(ZZ);\n> sage: gcd(x-2,x^3+2*x^2);\n> 1\n> sage: g,s,t = xgcd(x-2,x^3+2*x^2);\n> sage: g\n> 16\n> sage: s*(x-2)+t*(x^3+2*x^2)\n> 16\n>\n> I was under the impression, like I said that g would have been equal\n> to 1.  Why is g, 16?\n\nThe ring ZZ[x] is not a principal ideal domain (e.g., the ideal (2, x) isn't principal), so xgcd *can't* in general return polynomials s, t such that g = s*a+t*b.    A simple example is a=2*x and b=x^2. Then x is the gcd, but you can't write x as a ZZ[x] linear combination of 2*x and x^2, since the linear term of s*(2*x) + t*x^2 is even. \n\n\nWhat it does return is the next best thing, which is s, t such that \n\n   s*a + t*b = resultant(a,b), \n\nassuming a, b are coprime (if they aren't, rescale so they are, do the above, then multiply through). \n\nNote that Sage just calls the FLINT library, and this behavior of xgcd is documented there. \n\nI did just maybe (?) find a bug in FLINT though (and certainly one in sage):\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n<hang forever> \n\nDoing the same using NTL works fine:\nsage: Q.<x> = PolynomialRing(ZZ,implementation=\"NTL\")\nsage: type(x)\n<type 'sage.rings.polynomial.polynomial_integer_dense_ntl.Polynomial_integer_dense_ntl'>\nsage: gcd(Q(2),x^2)\n1\nsage: xgcd(Q(2),x^2)\n(4, 2, 0)\nsage: xgcd(x-2, x^3+2*x^2)\n(16, -x^2 - 4*x - 8, 1)\n\n--\n\nSo, the docs in Sage need to change to correctly define xgcd over a non-PID.  Also, there is maybe a serious bug in FLINT. \n\n -- William\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7517\n\n",
     "created_at": "2009-11-23T06:47:33Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007517.json:
     "title": "improve documentation of xgcd command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7517",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @aghitza
@@ -88,15 +88,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7517
 
 ---
 
-archive/issue_comments_063677.json:
+archive/issue_comments_063561.json:
 ```json
 {
     "body": "I'm making the xgcd *hang* another ticket: #7518",
     "created_at": "2009-11-23T07:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63677",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63561",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -106,15 +106,15 @@ I'm making the xgcd *hang* another ticket: #7518
 
 ---
 
-archive/issue_comments_063678.json:
+archive/issue_comments_063562.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-23T07:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63678",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63562",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -124,15 +124,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_063679.json:
+archive/issue_comments_063563.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"xgcd docstring\".",
     "created_at": "2009-12-08T09:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63679",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63563",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -142,15 +142,15 @@ Changing keywords from "" to "xgcd docstring".
 
 ---
 
-archive/issue_comments_063680.json:
+archive/issue_comments_063564.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-08T09:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63680",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63564",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -160,15 +160,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_063681.json:
+archive/issue_comments_063565.json:
 ```json
 {
     "body": "Attachment [sagelib_7517.patch](tarball://root/attachments/some-uuid/ticket7517/sagelib_7517.patch) by @aghitza created at 2009-12-08 09:52:44",
     "created_at": "2009-12-08T09:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63681",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63565",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -178,15 +178,15 @@ Attachment [sagelib_7517.patch](tarball://root/attachments/some-uuid/ticket7517/
 
 ---
 
-archive/issue_comments_063682.json:
+archive/issue_comments_063566.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-09T02:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63682",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7517#issuecomment-63566",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

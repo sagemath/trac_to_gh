@@ -6,7 +6,7 @@ archive/issues_000984.json:
     "body": "Assignee: @williamstein\n\nsage is missing its startup message in 2.8.9.rc1:\n\n```\ncwitty@magnetar:~/sage-2.8.9.rc1$ ./sage\n\nsage: \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/984\n\n",
     "created_at": "2007-10-25T00:50:42Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000984.json:
     "title": "sage-2.8.9.rc1: sage-banner is empty",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/984",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/984
 
 ---
 
-archive/issue_comments_006018.json:
+archive/issue_comments_005998.json:
 ```json
 {
     "body": "When I do sage -sdist even using that binary I get that a banner\nis created.  I banner certainly gets created when I do -sdist from\nmy sage install.  So it will be in the released version.",
     "created_at": "2007-10-25T07:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/984",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/984#issuecomment-6018",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/984#issuecomment-5998",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -57,15 +57,15 @@ my sage install.  So it will be in the released version.
 
 ---
 
-archive/issue_comments_006019.json:
+archive/issue_comments_005999.json:
 ```json
 {
     "body": "So this ought to be close against 2.8.9 then.\n\nMichael",
     "created_at": "2007-10-25T10:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/984",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/984#issuecomment-6019",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/984#issuecomment-5999",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +77,15 @@ Michael
 
 ---
 
-archive/issue_comments_006020.json:
+archive/issue_comments_006000.json:
 ```json
 {
     "body": "Fixed in final 2.8.9 and verified with local build.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-27T05:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/984",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/984#issuecomment-6020",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/984#issuecomment-6000",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -99,15 +99,15 @@ Michael
 
 ---
 
-archive/issue_comments_006021.json:
+archive/issue_comments_006001.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-27T05:17:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/984",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/984#issuecomment-6021",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/984#issuecomment-6001",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_003458.json:
     "body": "Assignee: @yqiang\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3458\n\n",
     "created_at": "2008-06-18T03:14:08Z",
     "labels": [
-        "dsage",
-        "major",
-        "enhancement"
+        "component: dsage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "parallel -- a very simple reference api for @parallel and parallel_eval",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3458",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @yqiang
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3458
 
 ---
 
-archive/issue_comments_024379.json:
+archive/issue_comments_024330.json:
 ```json
 {
     "body": "Attachment [sage-3458.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458.patch) by @williamstein created at 2008-06-18 03:15:04\n\nThis depends on #3453.",
     "created_at": "2008-06-18T03:15:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24379",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24330",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +47,15 @@ This depends on #3453.
 
 ---
 
-archive/issue_comments_024380.json:
+archive/issue_comments_024331.json:
 ```json
 {
     "body": "Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part2.patch) by @williamstein created at 2008-06-18 06:30:09",
     "created_at": "2008-06-18T06:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24380",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24331",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +65,15 @@ Attachment [sage-3458-part2.patch](tarball://root/attachments/some-uuid/ticket34
 
 ---
 
-archive/issue_comments_024381.json:
+archive/issue_comments_024332.json:
 ```json
 {
     "body": "Attachment [sage-3458-part3.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part3.patch) by @williamstein created at 2008-06-18 08:52:06",
     "created_at": "2008-06-18T08:52:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24381",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24332",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +83,15 @@ Attachment [sage-3458-part3.patch](tarball://root/attachments/some-uuid/ticket34
 
 ---
 
-archive/issue_comments_024382.json:
+archive/issue_comments_024333.json:
 ```json
 {
     "body": "first three patches have positive review",
     "created_at": "2008-06-19T00:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24382",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24333",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -103,15 +101,15 @@ first three patches have positive review
 
 ---
 
-archive/issue_comments_024383.json:
+archive/issue_comments_024334.json:
 ```json
 {
     "body": "Attachment [sage-3458-part4.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part4.patch) by @mwhansen created at 2008-06-19 01:33:45",
     "created_at": "2008-06-19T01:33:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24383",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24334",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -121,15 +119,15 @@ Attachment [sage-3458-part4.patch](tarball://root/attachments/some-uuid/ticket34
 
 ---
 
-archive/issue_comments_024384.json:
+archive/issue_comments_024335.json:
 ```json
 {
     "body": "Example test function:\n\n\n```\ndef MS1(N,k):\n    return ModularSymbols(N,k,sign=1).decomposition(10)[0]\n```\n\n\nTypical inputs:\n\n```\ntime v = MS1([(250,2), (11,2), (37,2)])\n```\n",
     "created_at": "2008-06-19T01:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24384",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24335",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -153,15 +151,15 @@ time v = MS1([(250,2), (11,2), (37,2)])
 
 ---
 
-archive/issue_comments_024385.json:
+archive/issue_comments_024336.json:
 ```json
 {
     "body": "Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-processing.patch) by @mwhansen created at 2008-06-19 02:47:09",
     "created_at": "2008-06-19T02:47:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24385",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24336",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -171,15 +169,15 @@ Attachment [sage-3458-processing.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_024386.json:
+archive/issue_comments_024337.json:
 ```json
 {
     "body": "patch 3 should not be used anymore since the p_iter implementation is in \n\n```\nsage.dsage.interface.parallel_iter\n```\n",
     "created_at": "2008-06-19T21:12:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24386",
-    "user": "@yqiang"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24337",
+    "user": "https://github.com/yqiang"
 }
 ```
 
@@ -194,15 +192,15 @@ sage.dsage.interface.parallel_iter
 
 ---
 
-archive/issue_comments_024387.json:
+archive/issue_comments_024338.json:
 ```json
 {
     "body": "patch 3 should still be applied since it changes things other then dsage.",
     "created_at": "2008-06-19T23:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24387",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24338",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -212,15 +210,15 @@ patch 3 should still be applied since it changes things other then dsage.
 
 ---
 
-archive/issue_comments_024388.json:
+archive/issue_comments_024339.json:
 ```json
 {
     "body": "Attachment [sage-3458-part6.patch](tarball://root/attachments/some-uuid/ticket3458/sage-3458-part6.patch) by @williamstein created at 2008-06-20 01:30:36",
     "created_at": "2008-06-20T01:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24388",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24339",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -230,15 +228,15 @@ Attachment [sage-3458-part6.patch](tarball://root/attachments/some-uuid/ticket34
 
 ---
 
-archive/issue_comments_024389.json:
+archive/issue_comments_024340.json:
 ```json
 {
     "body": "Patch 6 does not apply for me after having applied the first 5 patches. Specifically, decorate.py, ncpus.py and multiprocessing.py result in .rej's. Can you post plain copies of those files?",
     "created_at": "2008-06-20T20:25:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24389",
-    "user": "@yqiang"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24340",
+    "user": "https://github.com/yqiang"
 }
 ```
 
@@ -248,15 +246,15 @@ Patch 6 does not apply for me after having applied the first 5 patches. Specific
 
 ---
 
-archive/issue_comments_024390.json:
+archive/issue_comments_024341.json:
 ```json
 {
     "body": "This is a clean bundle that one can apply instead of all the patches.",
     "created_at": "2008-06-21T23:53:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24390",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24341",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -266,15 +264,15 @@ This is a clean bundle that one can apply instead of all the patches.
 
 ---
 
-archive/issue_comments_024391.json:
+archive/issue_comments_024342.json:
 ```json
 {
     "body": "Attachment [sage-3458.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458.hg) by @williamstein created at 2008-06-21 23:53:56\n\nYi: bundle posted.",
     "created_at": "2008-06-21T23:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24391",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24342",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -286,15 +284,15 @@ Yi: bundle posted.
 
 ---
 
-archive/issue_comments_024392.json:
+archive/issue_comments_024343.json:
 ```json
 {
     "body": "Updated bundle which uses sage.dsage.interface.dsage_interface.BlockingDSage's parallel_iter instead of the one supplied in the bundle. This will only work after #3467 gets merged in.",
     "created_at": "2008-06-23T20:04:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24392",
-    "user": "@yqiang"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24343",
+    "user": "https://github.com/yqiang"
 }
 ```
 
@@ -304,15 +302,15 @@ Updated bundle which uses sage.dsage.interface.dsage_interface.BlockingDSage's p
 
 ---
 
-archive/issue_comments_024393.json:
+archive/issue_comments_024344.json:
 ```json
 {
     "body": "Attachment [sage-3458-fixed.hg](tarball://root/attachments/some-uuid/ticket3458/sage-3458-fixed.hg) by @williamstein created at 2008-06-24 03:04:45",
     "created_at": "2008-06-24T03:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24393",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24344",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -322,15 +320,15 @@ Attachment [sage-3458-fixed.hg](tarball://root/attachments/some-uuid/ticket3458/
 
 ---
 
-archive/issue_comments_024394.json:
+archive/issue_comments_024345.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_wstein\".",
     "created_at": "2008-06-24T03:04:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24394",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24345",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -340,15 +338,15 @@ Changing keywords from "" to "editor_wstein".
 
 ---
 
-archive/issue_comments_024395.json:
+archive/issue_comments_024346.json:
 ```json
 {
     "body": "Patch looks great. Doctests pass on 3.0.3 OS X 10.5.",
     "created_at": "2008-06-26T02:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24395",
-    "user": "@yqiang"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24346",
+    "user": "https://github.com/yqiang"
 }
 ```
 
@@ -358,15 +356,15 @@ Patch looks great. Doctests pass on 3.0.3 OS X 10.5.
 
 ---
 
-archive/issue_comments_024396.json:
+archive/issue_comments_024347.json:
 ```json
 {
     "body": "Merged sage-3458-fixed.hg in Sage 3.0.4.alpha1",
     "created_at": "2008-06-26T04:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24396",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24347",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -376,15 +374,15 @@ Merged sage-3458-fixed.hg in Sage 3.0.4.alpha1
 
 ---
 
-archive/issue_comments_024397.json:
+archive/issue_comments_024348.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-26T04:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24397",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3458#issuecomment-24348",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

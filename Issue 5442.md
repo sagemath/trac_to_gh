@@ -6,7 +6,7 @@ archive/issues_005442.json:
     "body": "Assignee: @williamstein\n\nThis works:\n\nsage: s = \"\"\"\nx := [\n    1,\n    2,\n    3 ];\nx;\n\"\"\"\nsage: magma.eval(s)\n\nHowever, if one try to type the above interactively \nin the %magma shell, it crashes on the the first line \n'x := ['.\n\nThe problem is that either preparse_ipython or \nmagma.eval is too naive, inserting a ';' rather \nthan waiting for the completion of the expression.\n\nAs a start, I think the block:\n\nif interface_name in ['gap', 'magma', 'kash', 'singular']:\n    if not line.endswith(';'):\n        line += ';'\n\nshould be deleted, but I don't know the Expect \ninterface well-enough to suggest a complete fix.\n\nRemark: The magma.eval function handles for .. do,\nbut not if the logical is split over more than one \nline, so maybe this function can be easily fixed \nto not insert a ';' when an expression is incomplete\n(e.g. '\"..\"', 'for .. do', '[ .. ]', etc.).\n\nSubtleties arise when a opening to an expression is \ncontained in a string.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5442\n\n",
     "created_at": "2009-03-05T16:56:35Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005442.json:
     "title": "preparser or magma.eval bug?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5442",
-    "user": "kohel"
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 Assignee: @williamstein
@@ -65,15 +65,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5442
 
 ---
 
-archive/issue_comments_042083.json:
+archive/issue_comments_042001.json:
 ```json
 {
     "body": "> The problem is that either preparse_ipython or magma.eval is too \n> naive, inserting a ';' rather than waiting for the completion\n>  of the expression. \n\nFor the record, this was on purpose and is by design.   The magma\ninterpreter via magma.eval is a blocking call, and if you send it\na chunk of code without a semicolon it will block forever.   If one\nwere to do what you suggest above, then typing\n\nmagma.eval('2+2')\n\nwould lead to a total hang of Sage. \n\nI'm marking this ticket as invalid unless you see a good reason to totally change the design of the interface to be nonblocking, which I doubt you'll do unless you really understand how they work and what the many negatives of doing that are.",
     "created_at": "2009-03-06T15:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5442#issuecomment-42083",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5442#issuecomment-42001",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -96,15 +96,15 @@ I'm marking this ticket as invalid unless you see a good reason to totally chang
 
 ---
 
-archive/issue_comments_042084.json:
+archive/issue_comments_042002.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-03-06T15:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5442",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5442#issuecomment-42084",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5442#issuecomment-42002",
+    "user": "https://github.com/williamstein"
 }
 ```
 

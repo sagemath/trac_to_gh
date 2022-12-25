@@ -6,15 +6,14 @@ archive/issues_001853.json:
     "body": "Assignee: mabshoff\n\nAlso make sure to add 64 bit OSX support\n\nIssue created by migration from https://trac.sagemath.org/ticket/1853\n\n",
     "created_at": "2008-01-19T22:11:08Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "update libgpg_error to 1.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1853",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1853
 
 ---
 
-archive/issue_comments_011728.json:
+archive/issue_comments_011699.json:
 ```json
 {
     "body": "An updated spkg with 64 bit OSX build support can be found at:\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/alpha0/libgpg_error-1.6.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-01-19T22:39:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1853#issuecomment-11728",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1853#issuecomment-11699",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +52,15 @@ Michael
 
 ---
 
-archive/issue_comments_011729.json:
+archive/issue_comments_011700.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha0",
     "created_at": "2008-01-19T22:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1853#issuecomment-11729",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1853#issuecomment-11700",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +70,15 @@ Merged in Sage 2.10.1.alpha0
 
 ---
 
-archive/issue_comments_011730.json:
+archive/issue_comments_011701.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-19T22:57:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1853",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1853#issuecomment-11730",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1853#issuecomment-11701",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_009415.json:
     "body": "Assignee: @JohnCremona\n\nOver QQ everything works fine:\n\n```\nsage: E = EllipticCurve([-1,0])\nsage: L = [E(0,0),E(1,0)]\nsage: L2 = [L[1],L[0]]\nsage: print sorted(L)\n[(0 : 0 : 1), (1 : 0 : 1)]\nsage: print sorted(L2)\n[(0 : 0 : 1), (1 : 0 : 1)]\n```\n\n\nBut over number fields, sorting quietly returns the same list as input, with no warnings.\n\n```\nsage: K2.<b> = NumberField(x^2+2)\nsage: E2 = EllipticCurve(K2,[-16,16])\nsage: L = [E2(4*b - 10 ,18*b + 28) , E2(4*b - 4 , 20 )]\nsage: L2 = [L[1],L[0]]\nsage: print sorted(L)\n[(4*b - 10 : 18*b + 28 : 1), (4*b - 4 : 20 : 1)]\nsage: print sorted(L2)\n[(4*b - 4 : 20 : 1), (4*b - 10 : 18*b + 28 : 1)]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9415\n\n",
     "created_at": "2010-07-03T02:56:21Z",
     "labels": [
-        "elliptic curves",
-        "major",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "sorting points on elliptic curves over number fields silently fails",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9415",
-    "user": "rkirov"
+    "user": "https://trac.sagemath.org/admin/accounts/users/rkirov"
 }
 ```
 Assignee: @JohnCremona
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9415
 
 ---
 
-archive/issue_comments_089742.json:
+archive/issue_comments_089598.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-01-10T22:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9415",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9415#issuecomment-89742",
-    "user": "rkirov"
+    "url": "https://github.com/sagemath/sagetest/issues/9415#issuecomment-89598",
+    "user": "https://trac.sagemath.org/admin/accounts/users/rkirov"
 }
 ```
 
@@ -72,15 +71,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_089743.json:
+archive/issue_comments_089599.json:
 ```json
 {
     "body": "culprit is in #10583",
     "created_at": "2011-01-10T22:45:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9415",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9415#issuecomment-89743",
-    "user": "rkirov"
+    "url": "https://github.com/sagemath/sagetest/issues/9415#issuecomment-89599",
+    "user": "https://trac.sagemath.org/admin/accounts/users/rkirov"
 }
 ```
 

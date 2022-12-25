@@ -6,15 +6,13 @@ archive/issues_008154.json:
     "body": "Assignee: sage-combinat\n\nCC:  sage-combinat\n\nKeywords: combinatorics, crystals, KR crystals\n\nNew features for crystals:\n\n- Started framework for general highest weight crystals in /combinat/crystals/highest_weight.py\n  - Implementation of finite dimensional highest weight crystals for type E6 and E7\n- Added new class for direct sums of crystals in /combinat/crystals/direct_sum.py\n- Added a new crystal morphism function for acyclic crystals\n- Added the Demazure operators on crystals\n- Added Demazure characters for finite crystals in the ambient weight lattice\n- Added _test_fast_iter method to compare two different ways of creating list of classical crystals\n\nNew features for Kirillov-Reshetikhin crystals:\n\n- Implementation of Kirillov-Reshetikhin crystals B^{r,s} of type E_6^{(1)} for r=1,2,6\n- Pointer to KirillovReshetikhin crystals given in /combinat/crystals/affine.py (as requested by Dan Bump)\n- Added R-matrix for tensor product of two KR crystals\n\nBug fix:\n\n- Fixed whitespace problems in\n/combinat/crystals/crystals.py\n/combinat/crystals/kirillov_reshetikhin.py\n/combinat/crystals/affine.py\n/combinat/crystals/spins.py\n/combinat/crystals/tensor_products.py\n/combinat/crystals/fast_crystals.py\n/combinat/crystals/letters.py\n\nDepends on trac ticket #7978 (trac_7978_crystal_cleanup-as.patch)\n\nIssue created by migration from https://trac.sagemath.org/ticket/8154\n\n",
     "created_at": "2010-02-02T16:31:40Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "Enhencement for crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8154",
-    "user": "@anneschilling"
+    "user": "https://github.com/anneschilling"
 }
 ```
 Assignee: sage-combinat
@@ -60,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8154
 
 ---
 
-archive/issue_comments_071692.json:
+archive/issue_comments_071571.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-02T16:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71692",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71571",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -78,15 +76,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_071693.json:
+archive/issue_comments_071572.json:
 ```json
 {
     "body": "Attachment [trac_8154_affine-E-as.patch](tarball://root/attachments/some-uuid/ticket8154/trac_8154_affine-E-as.patch) by @anneschilling created at 2010-02-02 22:51:35",
     "created_at": "2010-02-02T22:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71693",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71572",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -96,15 +94,15 @@ Attachment [trac_8154_affine-E-as.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_071694.json:
+archive/issue_comments_071573.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-12T13:05:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71694",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71573",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -114,15 +112,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_071695.json:
+archive/issue_comments_071574.json:
 ```json
 {
     "body": "The patch (which goes on top of #7978) applies cleanly to Sage 4.3.2. It passes sage -testall.\nI also tested various things to my satisfaction.\n\nThe Demazure operators can be described at two different levels: either as difference\noperators on the weight space or (following Littelmann) as operators on the crystal.\nHere they are implemented as operators on the crystal. They seem to work correctly.\nLater it might be useful to implement them independently in \nsage.combinat.root_systems.weyl_characters in the WeightRing.\n\nThe direct sums of crystals are implemented.This is essentially just the disjoint\nunion. One point is that if two component crystals are equal, a \"keepkey\" can be\nused to paint them different colors. Then the disjoint union produces a multiset.\nThis scheme is inherited from the parent class DisjointUnionEnumeratedSets where\nit is noted that it is subject to future change. I suppose this could be improved\nbut that changes must first come in sage.sets.disjoint_union_enumerated_set.py.\n\nThe framework for general highest weight crystals is important. Currently one can\nproduce all finite highest weight crystals for types A,B,C,D and G2, but one must know how to do it.\nFor types A and C, the CrystalOfTableaux is sufficient but for types B and D one has half integral\nweights and crystals with half-integral highest weight must be created by tensoring a spin crystal\nwith a CrystalOfTableaux. The framework in highest_weight.py is a step towards making this easier.\nIt should not be hard to implement this for the finite classical Cartan types.\n\nVarious other enhancements and fixes.\n\nI tested the patch to my satisfaction and recommend merging it.",
     "created_at": "2010-02-12T13:05:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71695",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71574",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -157,15 +155,15 @@ I tested the patch to my satisfaction and recommend merging it.
 
 ---
 
-archive/issue_comments_071696.json:
+archive/issue_comments_071575.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-14T14:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8154",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71696",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8154#issuecomment-71575",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

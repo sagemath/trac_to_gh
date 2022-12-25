@@ -6,15 +6,14 @@ archive/issues_005263.json:
     "body": "Assignee: boothby\n\nCC:  @kcrisman @williamstein @qed777\n\nWhen I publish a worksheet on sagenb.org, it says I can find the sheet at: http://:8000/home/pub/243\n\nOf course, this is silly nonsense.\n\nIt might have to do with starting the notebook with address='', maybe?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5263\n\n",
     "created_at": "2009-02-14T02:16:51Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "publishing a worksheet displays the URL without the hostname",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5263",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: boothby
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5263
 
 ---
 
-archive/issue_comments_040403.json:
+archive/issue_comments_040324.json:
 ```json
 {
     "body": "Yes it does use address. I just discovered that on my computer if I set address='sagenb.org' then I can't start the notebook.",
     "created_at": "2009-02-14T12:47:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40403",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40324",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -53,15 +52,15 @@ Yes it does use address. I just discovered that on my computer if I set address=
 
 ---
 
-archive/issue_comments_040404.json:
+archive/issue_comments_040325.json:
 ```json
 {
     "body": "#5675 appears to be a duplicate, but with wider scope.",
     "created_at": "2009-08-10T09:35:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40404",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40325",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -71,15 +70,15 @@ archive/issue_comments_040404.json:
 
 ---
 
-archive/issue_comments_040405.json:
+archive/issue_comments_040326.json:
 ```json
 {
     "body": "I agree that this will probably be closed when #5675 is closed.  I think that when #5675 is closed, this ought to be checked, and then closed if everything works.",
     "created_at": "2009-08-10T14:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40405",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40326",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -89,15 +88,15 @@ I agree that this will probably be closed when #5675 is closed.  I think that wh
 
 ---
 
-archive/issue_comments_040406.json:
+archive/issue_comments_040327.json:
 ```json
 {
     "body": "It looks like this has been a long standing bug, which nobody has worked on. I would make two suggestion, though. \n\nFirstly, if this gets fixed, it would be sensible to detect the following range of IP addresses, and indicate they can not be routed over the internet. \n\n* 10.x.x.x\n* 172.16.x.x to 172.31.x.x\n* 192.168.x.x\n\nSecondly, perhaps a further reminder about the security risks would not go amiss either. \n\nDave",
     "created_at": "2009-12-21T11:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40406",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40327",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -117,15 +116,15 @@ Dave
 
 ---
 
-archive/issue_comments_040407.json:
+archive/issue_comments_040328.json:
 ```json
 {
     "body": "Following the suggestions [here](http://groups.google.com/group/comp.lang.python/browse_thread/thread/d931cdc326d7032b?hl=en) and [here](http://stackoverflow.com/questions/166545/finding-a-public-facing-ip-address-in-python), I get:\n\n```python\nsage: import socket\nsage: socket.gethostbyname(socket.gethostname())\n'127.0.0.1'\nsage: s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\nsage: s.connect(('google.com', 0))\nsage: s.getsockname()[0]\n'192.168.x.y'\nsage: import urllib\nsage: urllib.urlopen('http://whatismyip.org').read()\n'a.b.c.d'\n```\n\nI'm looking now for ways to iterate over the available interfaces in Twisted...\n\nBy the way, there are a few suggestions to the main problem at #5675.\n\nWhat is a good name for a keyword option that's inserted instead of the `interface` (post-#7639, `address` is deprecated) when `interface=''`?",
     "created_at": "2010-01-16T04:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40407",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40328",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -154,15 +153,15 @@ What is a good name for a keyword option that's inserted instead of the `interfa
 
 ---
 
-archive/issue_comments_040408.json:
+archive/issue_comments_040329.json:
 ```json
 {
     "body": "Replying to [comment:6 mpatel]:\n> I'm looking now for ways to iterate over the available interfaces in Twisted...\nI *think* Twisted just uses [socket](http://docs.python.org/library/socket.html), which \nuses the underlying system's socket library.  I don't know if there is a local, cross-platform way to iterate over `'0.0.0.0'` (all interfaces) and map each to an IP address.",
     "created_at": "2010-01-16T06:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40408",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40329",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -175,15 +174,15 @@ uses the underlying system's socket library.  I don't know if there is a local, 
 
 ---
 
-archive/issue_comments_040409.json:
+archive/issue_comments_040330.json:
 ```json
 {
     "body": "I think using the [HTTP-HOST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.23) header will be easier and more reliable. Here's a patch implementing that. Feel free to comment.",
     "created_at": "2010-01-19T00:33:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40409",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40330",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -193,15 +192,15 @@ I think using the [HTTP-HOST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.
 
 ---
 
-archive/issue_comments_040410.json:
+archive/issue_comments_040331.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-19T00:33:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40410",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40331",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -211,15 +210,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_040411.json:
+archive/issue_comments_040332.json:
 ```json
 {
     "body": "Uses the HTTP-HOST header to attempt to get the host name.",
     "created_at": "2010-01-19T00:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40411",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40332",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -229,15 +228,15 @@ Uses the HTTP-HOST header to attempt to get the host name.
 
 ---
 
-archive/issue_comments_040412.json:
+archive/issue_comments_040333.json:
 ```json
 {
     "body": "Attachment [trac_5263-publish-url.patch](tarball://root/attachments/some-uuid/ticket5263/trac_5263-publish-url.patch) by @qed777 created at 2010-01-20 03:20:16\n\nNice!",
     "created_at": "2010-01-20T03:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40412",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40333",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -249,15 +248,15 @@ Nice!
 
 ---
 
-archive/issue_comments_040413.json:
+archive/issue_comments_040334.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-20T03:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40413",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40334",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -267,15 +266,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_040414.json:
+archive/issue_comments_040335.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-25T00:52:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5263",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40414",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/5263#issuecomment-40335",
+    "user": "https://github.com/qed777"
 }
 ```
 

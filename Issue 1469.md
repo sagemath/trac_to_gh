@@ -6,7 +6,7 @@ archive/issues_001469.json:
     "body": "Assignee: @burcin\n\nThe doctest script sage-doctest should try to import the namespace of the file being tested. It is not very convenient to add\n\n\n```\nfrom sage.foo import bar\n```\n\n\nat the beginning of every doctest in a file.\n\nThis would simplify some of the doctests in ~100 files, removing ~450 lines.\n\nImporting the module might have an impact on the speed of the doctests. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1469\n\n",
     "created_at": "2007-12-12T08:56:24Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001469.json:
     "title": "sage-doctest should import the namespace of the file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1469",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @burcin
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1469
 
 ---
 
-archive/issue_comments_009449.json:
+archive/issue_comments_009424.json:
 ```json
 {
     "body": "\n```\n<craigcitro> let's say the user types foo?\n<craigcitro> and gets the docstring for some function\n<craigcitro> then since they don't see this import that you've added\n<craigcitro> they can't actually run those doctests\n<craigcitro> they have to modify them by adding the sage.path.to.file at the beginning\n<craigcitro> which would be confusing if you've never run into it before\n```\n",
     "created_at": "2007-12-12T12:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1469",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1469#issuecomment-9449",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1469#issuecomment-9424",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -68,15 +68,15 @@ archive/issue_comments_009449.json:
 
 ---
 
-archive/issue_comments_009450.json:
+archive/issue_comments_009425.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2007-12-12T12:17:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1469",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1469#issuecomment-9450",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1469#issuecomment-9425",
+    "user": "https://github.com/burcin"
 }
 ```
 

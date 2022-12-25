@@ -6,15 +6,14 @@ archive/issues_003024.json:
     "body": "Assignee: boothby\n\nThe Traceback thing gets all messed up by worksheet.py or cell.py below:\n\n\n```\nsage: help(VectorSpace)\n          \t\n\nHelp on function VectorSpace in module sage.modules.free_module:\n\nVectorSpace(K, dimension, sparse=False, inner_product_matrix=None)\n    EXAMPLES:\n    The base can be complicated, as long as it is a field. \n        sage: V = VectorSpace(FractionField(PolynomialRing(ZZ,'x')),3)\n        sage: V\n        Vector space of dimension 3 over Fraction Field of Univariate\nPolynomial Ring in x over Integer Ring\n        sage: V.basis()\n        [\n        (1, 0, 0),\n        (0, 1, 0),\n        (0, 0, 1)\n        ]\n    \n    The base must be a field or a \\code{TypeError} is raised.\n        sage: VectorSpace(ZZ,5)\nTraceback (click to the left for traceback)\n...\n        TypeError: K must be a field\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3024\n\n",
     "created_at": "2008-04-25T17:32:45Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "notebook -- parses tracebacks in the output of docstrings of help command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3024",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -59,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3024
 
 ---
 
-archive/issue_comments_020797.json:
+archive/issue_comments_020754.json:
 ```json
 {
     "body": "Attachment [sage-3024.patch](tarball://root/attachments/some-uuid/ticket3024/sage-3024.patch) by @williamstein created at 2008-05-11 08:05:14",
     "created_at": "2008-05-11T08:05:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3024",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20797",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20754",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,15 +76,15 @@ Attachment [sage-3024.patch](tarball://root/attachments/some-uuid/ticket3024/sag
 
 ---
 
-archive/issue_comments_020798.json:
+archive/issue_comments_020755.json:
 ```json
 {
     "body": "works for me",
     "created_at": "2008-05-12T05:58:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3024",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20798",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20755",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -95,15 +94,15 @@ works for me
 
 ---
 
-archive/issue_comments_020799.json:
+archive/issue_comments_020756.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-17T19:55:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3024",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20799",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20756",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020800.json:
+archive/issue_comments_020757.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.alpha1",
     "created_at": "2008-05-17T19:55:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3024",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20800",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3024#issuecomment-20757",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

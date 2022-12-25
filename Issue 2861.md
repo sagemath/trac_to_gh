@@ -6,15 +6,14 @@ archive/issues_002861.json:
     "body": "Assignee: @williamstein\n\nIf I call `sys.exit()` from a Sage script, the script exits but not with the correct exit code. For example, the script\n\n```\nimport sys\n\nprint 'exiting!'\nsys.exit(1)\n```\n\nexits with exit code 0 when run from Sage:\n\n```\n$ sage exitcode.sage \nexiting!\n1\n$ echo $?\n0\n```\n\n(the 1 gets printed because the preparser turns it into a Sage integer, and Python prints out anything except Python integers.) But the same script works properly when run from Python:\n\n```\n$ python exitcode.sage\nexiting!\n$ echo $?\n1\n```\n\nI don't know if this is Sage or IPython behavior, but having this work would be really useful.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2861\n\n",
     "created_at": "2008-04-09T06:42:30Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "scripts do not exit with correct exit code when sys.exit() is used",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2861",
-    "user": "@dandrake"
+    "user": "https://github.com/dandrake"
 }
 ```
 Assignee: @williamstein
@@ -58,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2861
 
 ---
 
-archive/issue_comments_019630.json:
+archive/issue_comments_019589.json:
 ```json
 {
     "body": "Attachment [trac_2861-scripts.patch](tarball://root/attachments/some-uuid/ticket2861/trac_2861-scripts.patch) by @williamstein created at 2009-01-24 15:08:00",
     "created_at": "2009-01-24T15:08:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2861",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19630",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19589",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -76,15 +75,15 @@ Attachment [trac_2861-scripts.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_019631.json:
+archive/issue_comments_019590.json:
 ```json
 {
     "body": "+1\n\nwas showed me this patch working in all the permutations of inputs... Looks good to me.",
     "created_at": "2009-01-24T15:21:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2861",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19631",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19590",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -96,15 +95,15 @@ was showed me this patch working in all the permutations of inputs... Looks good
 
 ---
 
-archive/issue_comments_019632.json:
+archive/issue_comments_019591.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-24T22:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2861",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19632",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19591",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +113,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_019633.json:
+archive/issue_comments_019592.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha2",
     "created_at": "2009-01-24T22:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2861",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19633",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19592",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +131,15 @@ Merged in Sage 3.3.alpha2
 
 ---
 
-archive/issue_comments_019634.json:
+archive/issue_comments_019593.json:
 ```json
 {
     "body": "I was going to reopen this ticket, but instead I'll leave this comment as warning to anyone else trying to use this:\n\nIf you do `sys.exit(0)` in a Sage script, because of preparsing, you effectively get `sys.exit(Integer(0))`, which results in the script exiting with code 1! This is not what anyone would expect! This is because of [how sys.exit works](http://docs.python.org/library/sys.html#sys.exit) when given non-Python-integer arguments. To make sure that you get the desired behavior, use `int` inside the call to get a Python integer: `sys.exit(int(2))` or whatever.",
     "created_at": "2009-04-21T01:48:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2861",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19634",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2861#issuecomment-19593",
+    "user": "https://github.com/dandrake"
 }
 ```
 

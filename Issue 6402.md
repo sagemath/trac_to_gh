@@ -6,15 +6,14 @@ archive/issues_006402.json:
     "body": "Assignee: @craigcitro\n\nCC:  @williamstein\n\nThis patch fixes lots of bugs + adds a substantial amount of documentation and examples, based on my talk at Sage Days 16.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6402\n\n",
     "created_at": "2009-06-25T12:11:59Z",
     "labels": [
-        "modular forms",
-        "major",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Fix bugs + improve documentation for overconvergent modular forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6402",
-    "user": "@loefflerd"
+    "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: @craigcitro
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6402
 
 ---
 
-archive/issue_comments_051417.json:
+archive/issue_comments_051320.json:
 ```json
 {
     "body": "patch against 4.0.2",
     "created_at": "2009-06-25T12:13:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51417",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51320",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -49,15 +48,15 @@ patch against 4.0.2
 
 ---
 
-archive/issue_comments_051418.json:
+archive/issue_comments_051321.json:
 ```json
 {
     "body": "Attachment [trac_6402-overconvergent_fixes.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-overconvergent_fixes.patch) by @loefflerd created at 2009-06-25 12:15:35\n\nHere's a patch.",
     "created_at": "2009-06-25T12:15:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51418",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51321",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -69,15 +68,15 @@ Here's a patch.
 
 ---
 
-archive/issue_comments_051419.json:
+archive/issue_comments_051322.json:
 ```json
 {
     "body": "Looks good, and the added documentation is really great.\n\nI'm attaching a tiny referee patch fixing a few typos, and if you are ok with it we can give this a positive review.\n\nThere is one small issue, which I leave up to you whether you want to fix it or not: in the method `valuation_plot`, you added an optional argument `rmax`, but the docstring says nothing about its role.",
     "created_at": "2009-08-19T09:44:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51419",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51322",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -91,15 +90,15 @@ There is one small issue, which I leave up to you whether you want to fix it or 
 
 ---
 
-archive/issue_comments_051420.json:
+archive/issue_comments_051323.json:
 ```json
 {
     "body": "apply after the previous patch",
     "created_at": "2009-08-19T09:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51420",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51323",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -109,15 +108,15 @@ apply after the previous patch
 
 ---
 
-archive/issue_comments_051421.json:
+archive/issue_comments_051324.json:
 ```json
 {
     "body": "Attachment [trac_6402-referee.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-referee.patch) by @loefflerd created at 2009-08-19 09:52:05\n\nFine by me.",
     "created_at": "2009-08-19T09:52:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51421",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51324",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -129,15 +128,15 @@ Fine by me.
 
 ---
 
-archive/issue_comments_051422.json:
+archive/issue_comments_051325.json:
 ```json
 {
     "body": "reviewer patch: more typo fixes",
     "created_at": "2009-08-23T13:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51422",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -147,15 +146,15 @@ reviewer patch: more typo fixes
 
 ---
 
-archive/issue_comments_051423.json:
+archive/issue_comments_051326.json:
 ```json
 {
     "body": "Attachment [trac_6402-typos.patch](tarball://root/attachments/some-uuid/ticket6402/trac_6402-typos.patch) by mvngu created at 2009-08-23 13:29:55\n\nThe reviewer patch `trac_6402-typos.patch` fixes some typos left over from the previous two patches. If that is OK, then the whole ticket can be merged.",
     "created_at": "2009-08-23T13:29:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51423",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51326",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -167,15 +166,15 @@ The reviewer patch `trac_6402-typos.patch` fixes some typos left over from the p
 
 ---
 
-archive/issue_comments_051424.json:
+archive/issue_comments_051327.json:
 ```json
 {
     "body": "I certainly have no problems with Minh's suggestions. Can I suggest we get this in soon, rather than fixing every conceivable micro-bug, since the initial patch fixes some rather major and embarassing bugs that render the whole module basically unusable?",
     "created_at": "2009-08-24T08:30:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51424",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51327",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -185,15 +184,15 @@ I certainly have no problems with Minh's suggestions. Can I suggest we get this 
 
 ---
 
-archive/issue_comments_051425.json:
+archive/issue_comments_051328.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-08-24T12:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51425",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51328",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -203,15 +202,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_051426.json:
+archive/issue_comments_051329.json:
 ```json
 {
     "body": "Merged all three patches in this order:\n\n1. `trac_6402-overconvergent_fixes.patch`\n2. `trac_6402-referee.patch`\n3. `trac_6402-typos.patch`",
     "created_at": "2009-08-24T12:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6402",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51426",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6402#issuecomment-51329",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

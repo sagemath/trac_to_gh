@@ -6,7 +6,7 @@ archive/issues_005915.json:
     "body": "Assignee: mabshoff\n\nFor obvious reasons I can't copy and paste any code on the subject here, but Sage LiveCD 3.4 hangs trying to find livecd.sgn\n\nIssue created by migration from https://trac.sagemath.org/ticket/5915\n\n",
     "created_at": "2009-04-27T23:39:27Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005915.json:
     "title": "Sage LiveCD 3.4 does not boot",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5915",
-    "user": "stankewicz"
+    "user": "https://trac.sagemath.org/admin/accounts/users/stankewicz"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5915
 
 ---
 
-archive/issue_comments_046751.json:
+archive/issue_comments_046662.json:
 ```json
 {
     "body": "Sorry, this is not the place to file those bug reports. The sage project does not provide any live CD in an official matter, but some private people do. Please complain to them directly or to the mailing list.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-28T00:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5915#issuecomment-46751",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5915#issuecomment-46662",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +51,15 @@ Michael
 
 ---
 
-archive/issue_comments_046752.json:
+archive/issue_comments_046663.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2009-04-28T00:31:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5915#issuecomment-46752",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5915#issuecomment-46663",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_008866.json:
     "body": "Assignee: @burcin\n\nCC:  @mwhansen @burcin @kcrisman @rbeezer\n\nHere is a rough patch which enables the following:\n\n\n```\nsage: T(r,theta)=[r*cos(theta),r*sin(theta)]\nsage: T\n((r, theta) |--> r*cos(theta), (r, theta) |--> r*sin(theta))\nsage: T.diff() # Jacobian matrix\n[   (r, theta) |--> cos(theta) (r, theta) |--> -r*sin(theta)]\n[   (r, theta) |--> sin(theta)  (r, theta) |--> r*cos(theta)]\nsage: diff(T) # Jacobian matrix\n[   (r, theta) |--> cos(theta) (r, theta) |--> -r*sin(theta)]\n[   (r, theta) |--> sin(theta)  (r, theta) |--> r*cos(theta)]\nsage: T.diff().det() # Jacobian \n(r, theta) |--> r*sin(theta)^2 + r*cos(theta)^2\n\nsage: f(x,y)=x^2+y\nsage: f.diff() # gradient\n((x, y) |--> 2*x, (x, y) |--> 1)\nsage: f.diff().diff() # Hessian matrix\n[(x, y) |--> 2 (x, y) |--> 0]\n[(x, y) |--> 0 (x, y) |--> 0]\nsage: r(t)=[cos(t),sin(t)]\nsage: parametric_plot(r(t), (t,0,2*pi))\n\nsage: # multivariable 2nd derivative test\nsage: f(x,y)=x^2*y+y^2+y\nsage: f.diff() # gradient\n((x, y) |--> 2*x*y, (x, y) |--> x^2 + 2*y + 1)\nsage: solve(list(f.diff()),[x,y])\n[[x == -I, y == 0], [x == I, y == 0], [x == 0, y == (-1/2)]]\nsage: f.diff(2)  # Hessian matrix\n[(x, y) |--> 2*y (x, y) |--> 2*x]\n[(x, y) |--> 2*x   (x, y) |--> 2]\nsage: f.diff(2)(x=0,y=-1/2)\n[-1  0]\n[ 0  2]\nsage: f.diff(2)(x=0,y=-1/2).eigenvalues()\n[-1, 2]\nsage: # we have a saddle point\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8866\n\n",
     "created_at": "2010-05-04T03:14:57Z",
     "labels": [
-        "symbolics",
-        "major",
-        "enhancement"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.2",
     "title": "preparse vector-valued functions and derivatives",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8866",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @burcin
@@ -73,15 +71,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8866
 
 ---
 
-archive/issue_comments_081473.json:
+archive/issue_comments_081339.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-05-04T03:18:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81473",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81339",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -91,15 +89,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_081474.json:
+archive/issue_comments_081340.json:
 ```json
 {
     "body": "Right now, all the docs are wrong or missing for the added functionality.",
     "created_at": "2010-05-04T03:18:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81474",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81340",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -109,15 +107,15 @@ Right now, all the docs are wrong or missing for the added functionality.
 
 ---
 
-archive/issue_comments_081475.json:
+archive/issue_comments_081341.json:
 ```json
 {
     "body": "Attachment [trac-8866-preparse-vector-functions-derivatives.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.patch) by @jasongrout created at 2010-05-04 03:57:15",
     "created_at": "2010-05-04T03:57:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81475",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81341",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -127,15 +125,15 @@ Attachment [trac-8866-preparse-vector-functions-derivatives.patch](tarball://roo
 
 ---
 
-archive/issue_comments_081476.json:
+archive/issue_comments_081342.json:
 ```json
 {
     "body": "I added docs for each functionality that changed.",
     "created_at": "2010-05-04T04:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81476",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81342",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -145,15 +143,15 @@ I added docs for each functionality that changed.
 
 ---
 
-archive/issue_comments_081477.json:
+archive/issue_comments_081343.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-04T04:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81477",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81343",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -163,15 +161,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_081478.json:
+archive/issue_comments_081344.json:
 ```json
 {
     "body": "make ptestlong appears to pass on 4.4.1 (ubuntu 64-bit).",
     "created_at": "2010-05-04T05:12:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81478",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81344",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -181,15 +179,15 @@ make ptestlong appears to pass on 4.4.1 (ubuntu 64-bit).
 
 ---
 
-archive/issue_comments_081479.json:
+archive/issue_comments_081345.json:
 ```json
 {
     "body": "I'm running tests right now.  In the meantime, could this be less ugly?  I realize that the naked '4's are not callable, so there is the deprecation warning, but the error warning seems severe.\n\n\n```\nsage: d=matrix(SR, [[4, 4]])\nsage: d(3)\n/sage/dev/local/lib/python2.6/site-packages/IPython/iplib.py:2073: DeprecationWarning: Substitution using function-call syntax and unnamed arguments is deprecated and will be removed from a future release of Sage; you can use named arguments instead, like EXPR(x=..., y=...)\n  exec code_obj in self.user_global_ns, self.user_ns\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/sage/dev/<ipython console> in <module>()\n\n/sage/dev/local/lib/python2.6/site-packages/sage/matrix/matrix_symbolic_dense.so in sage.matrix.matrix_symbolic_dense.Matrix_symbolic_dense.__call__ (sage/matrix/matrix_symbolic_dense.c:3956)()\n\nValueError: the number of arguments must be less than or equal to 0\n```\n\n\nI didn't know you could create a vector space of functions.  Complete with a basis.  ;-)\n\n\n```\nsage: g(x,y)=x^2+y^3\nsage: g\n(x, y) |--> x^2 + y^3\nsage: grad=g.diff()\nsage: grad\n((x, y) |--> 2*x, (x, y) |--> 3*y^2)\nsage: grad.parent()\nVector space of dimension 2 over Callable function ring with arguments (x, y)\nsage: grad.parent().basis()\n[\n((x, y) |--> 1, (x, y) |--> 0),\n((x, y) |--> 0, (x, y) |--> 1)\n]\n```\n",
     "created_at": "2010-05-05T05:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81479",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81345",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -236,15 +234,15 @@ sage: grad.parent().basis()
 
 ---
 
-archive/issue_comments_081480.json:
+archive/issue_comments_081346.json:
 ```json
 {
     "body": "Replying to [comment:4 rbeezer]:\n\n> I'm running tests right now.  In the meantime, could this be less ugly?  I realize that the naked '4's are not callable, so there is the deprecation warning, but the error warning seems severe. \n\nThat's stemming from this, of course:\n\n\n```\n\nsage: SR(4)(2)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/home/jason/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.__call__ (sage/symbolic/expression.cpp:15477)()\n\n/home/jason/sage/local/lib/python2.6/site-packages/sage/symbolic/ring.so in sage.symbolic.ring.SymbolicRing._call_element_ (sage/symbolic/ring.cpp:6523)()\n\nValueError: the number of arguments must be less than or equal to 0\n```\n\n\nI don't know what should be done about that to make it prettier.  Usually you wouldn't \"call\" an integer by itself (as just a symbolic integer is not a function...)\n\nNote that making matrices callable is just extending the existing behavior for vectors.\n\n\n>I didn't know you could create a vector space of functions.  Complete with a basis.  ;-) \n\nYes, interesting.  That stems from callable expressions being just normal expressions with a bit of extra information (default variable order for calls).  Of course, it gave you back a basis for symbolic expressions.",
     "created_at": "2010-05-05T06:17:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81480",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81346",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -284,15 +282,15 @@ Yes, interesting.  That stems from callable expressions being just normal expres
 
 ---
 
-archive/issue_comments_081481.json:
+archive/issue_comments_081347.json:
 ```json
 {
     "body": "Replying to [comment:5 jason]:\n> I don't know what should be done about that to make it prettier.\n\nMe either.  ;-)  I guess I found it odd that there was a deprecation warning, then a failure.  But maybe that's just the way it goes.",
     "created_at": "2010-05-06T03:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81481",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81347",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -305,15 +303,15 @@ Me either.  ;-)  I guess I found it odd that there was a deprecation warning, th
 
 ---
 
-archive/issue_comments_081482.json:
+archive/issue_comments_081348.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-06T03:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81482",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81348",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -323,15 +321,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_081483.json:
+archive/issue_comments_081349.json:
 ```json
 {
     "body": "This all checks out fine: builds and runs, passes all tests, documentation is fine.\n\nSo, positive review.",
     "created_at": "2010-05-06T03:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81483",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81349",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -343,15 +341,15 @@ So, positive review.
 
 ---
 
-archive/issue_comments_081484.json:
+archive/issue_comments_081350.json:
 ```json
 {
     "body": "same as previous but with ticket number in commit message",
     "created_at": "2010-05-08T04:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81484",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81350",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -361,15 +359,15 @@ same as previous but with ticket number in commit message
 
 ---
 
-archive/issue_comments_081485.json:
+archive/issue_comments_081351.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-08T22:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81485",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81351",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -379,15 +377,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_081486.json:
+archive/issue_comments_081352.json:
 ```json
 {
     "body": "Attachment [trac-8866-preparse-vector-functions-derivatives.2.patch](tarball://root/attachments/some-uuid/ticket8866/trac-8866-preparse-vector-functions-derivatives.2.patch) by mvngu created at 2010-05-08 22:14:17",
     "created_at": "2010-05-08T22:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8866",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81486",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8866#issuecomment-81352",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

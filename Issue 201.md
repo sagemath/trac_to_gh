@@ -6,15 +6,14 @@ archive/issues_000201.json:
     "body": "Assignee: @williamstein\n\nI'm not sure if this is a bug in SAGE or mwrank or if I'm just getting unlucky....\n\n\n```\nsage: E = EllipticCurve([3, -15675])\n\nsage: E.rank()\n---------------------------------------------------------------------------\n<type 'exceptions.RuntimeError'>          Traceback (most recent call last)\n\n/home/dmharvey/<ipython console> in <module>()\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in rank(self, use_database, verbose, only_use_mwrank, algorithm)\n    839             elif algorithm == 'mwrank_shell':\n    840                 misc.verbose(\"using mwrank shell\")\n--> 841                 X = self.mwrank()\n    842                 if not 'The rank and full Mordell-Weil basis have been determined unconditionally' in X:\n    843                     raise RuntimeError, '%s\\nRank not provably correct (maybe try rank with only_use_mwrank=False).'%X\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py in mwrank(self, options)\n    142             from sage.interfaces.all import Mwrank\n    143             mwrank = Mwrank(options=options)\n--> 144         return mwrank(self.a_invariants())\n    145 \n    146     def conductor(self, algorithm=\"pari\"):\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/mwrank.py in __call__(self, cmd)\n     68 \n     69     def __call__(self, cmd):\n---> 70         return self.eval(cmd)\n     71 \n     72     def console(self):\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip)\n    463         code = code.strip()\n    464         try:\n--> 465             return '\\n'.join([self._eval_line(L) for L in code.split('\\n') if L != ''])\n    466         except KeyboardInterrupt:\n    467             self._keyboard_interrupt()\n\n/home/was/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in _eval_line(self, line, allow_use_file, wait_for_prompt)\n    426                         return ''\n    427                     raise RuntimeError, \"%s\\n%s crashed executing %s\"%(msg,\n--> 428                                                    self, line)\n    429                 out = E.before\n    430             else:\n\n<type 'exceptions.RuntimeError'>: End Of File (EOF) in read_nonblocking(). Exception style platform.\n<pexpect.spawn instance at 0x2aaabad74d40>\nversion: 2.0 ($Revision: 1.151 $)\ncommand: /home/was/sage/local/bin/mwrank\nargs: ['/home/was/sage/local/bin/mwrank']\npatterns:\n    Enter curve: \nbuffer (last 100 chars): \nbefore (last 100 chars): [0, 0, 0, 3, -15675]\n\nafter: <class 'pexpect.EOF'>\nmatch: None\nmatch_index: None\nexitstatus: None\nflag_eof: 1\npid: 20884\nchild_fd: 3\ntimeout: None\ndelimiter: <class 'pexpect.EOF'>\nlogfile: None\nmaxread: 10000\nsearchwindowsize: None\ndelaybeforesend: 0\nMwrank crashed executing [0, 0, 0, 3, -15675]\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/201\n\n",
     "created_at": "2007-01-19T21:27:32Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "mwrank crashing",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/201",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: @williamstein
@@ -102,15 +101,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/201
 
 ---
 
-archive/issue_comments_000905.json:
+archive/issue_comments_000902.json:
 ```json
 {
     "body": "As of 2.1.5, it appears to be an error in mwrank, or at least sage's build of mwrank:\n\n\n\n```\nleeto:~/Devel/sage-alpha8/local/bin nalexand$ ./mwrankProgram mwrank: uses 2-descent (via 2-isogeny if possible) to\ndetermine the rank of an elliptic curve E over Q, and list a\nset of points which generate E(Q) modulo 2E(Q).\nand finally saturate to obtain generating points on the curve.\nFor more details see the file mwrank.doc.\nFor details of algorithms see the author's book.\n\nPlease acknowledge use of this program in published work, \nand send problems to John.Cremona@nottingham.ac.uk.\n\nVersion compiled on Dec  8 2006 at 12:52:17 by GCC 4.0.1 (Apple Computer, Inc. build 5247)\nusing base arithmetic option NTL_ALL (NTL bigints and multiprecision floating point)\nUsing NTL multiprecision floating point with 15 decimal places.\nEnter curve: [0,0,0,3, -15675]\n\nCurve [0,0,0,3,-15675] :        Basic pair: I=-9, J=423225\ndisc=-179119403541\n2-adic index bound = 2\n2-adic index = 2\nTwo (I,J) pairs\nLooking for quartics with I = -9, J = 423225\nLooking for Type 3 quartics:\nTrying positive a from 1 up to 14 (square a first...)\n(1,1,-72,275,-364)      --nontrivial...(x:y:z) = (1 : 1 : 0)\nPoint = [386:2489:8]\n        height = 5.56883271776712\nRank of B=im(eps) increases to 1\nTrying positive a from 1 up to 14 (...then non-square a)\nTrying negative a from -1 down to -21\nFinished looking for Type 3 quartics.\nLooking for quartics with I = -144, J = 27086400\nLooking for Type 3 quartics:\nTrying positive a from 1 up to 57 (square a first...)\n(9,-4,-600,2784,-3644)  --nontrivial...(x:y:z) = (1 : 3 : 0)\nPoint = [2703:26837:27]\n        height = 6.49337125992467\nDoubling global 2-adic index to 2\nglobal 2-adic index is equal to local index\nso we abort the search for large quartics\nRank of B=im(eps) increases to 2\nExiting search for large quartics after finding enough globally soluble ones.\nMordell rank contribution from B=im(eps) = 2\nSelmer  rank contribution from B=im(eps) = 2\nSha     rank contribution from B=im(eps) = 0\nMordell rank contribution from A=ker(eps) = 0\nSelmer  rank contribution from A=ker(eps) = 0\nSha     rank contribution from A=ker(eps) = 0\nRank = 2\n\nRegulator (before saturation) = 16.9955132982626\nSearching for points (bound = 10)...done\nRegulator (after searching) = 16.9955132982626\nSaturating (bound = 100)...RR: division by zero\nAbort trap\n```\n",
     "created_at": "2007-02-19T07:39:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-905",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-902",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -180,15 +179,15 @@ Abort trap
 
 ---
 
-archive/issue_comments_000906.json:
+archive/issue_comments_000903.json:
 ```json
 {
     "body": "\n```\nOn 8/17/07, John Cremona <john.cremona@gmail.com> wrote:\n> It's a simple precision problem -- even running mwrank with precision\n> 20 (\"-p20\") sorts it.  This happens in the code to find the real roots\n> of a real cubic, and it's the classical problem where subtracting two\n> close reals gives a bad answer (in this case it gave 0 in a situation\n> where theory said that the number cannot be zero).\n>\n> Testing this using sage I found that the command\n> mwrank_set_precision() does not work:\n>\n> sage: mwrank_set_precision(30)\n> ---------------------------------------------------------------------------\n> <type 'exceptions.ImportError'>           Traceback (most recent call last)\n>\n> /home/jec/gp/<ipython console> in <module>()\n>\n> /home/jec/sage-2.7/local/lib/python2.5/site-packages/sage/libs/mwrank/interface.py\n> in set_precision(n)\n>      27         n -- long\n>      28     \"\"\"\n> ---> 29     from sage.libs.mwrank.mwrank import _set_precision #\n> import here to save time\n>      30     _set_precision(n)\n>      31\n>\n> <type 'exceptions.ImportError'>: cannot import name _set_precision\n>\n> -- can you fix that?  [Also, while preparing this email:  version() returns\n> sage: version()\n\nYes, I'll add this to the bug list.\n\n http://www.sagemath.org:9002/sage_trac/ticket/434\n\nWe're organizing big \"bug squashing days\" now (this first is tomorrow).\n\n>  'SAGE Version 2.7.3, Release Date: 2007-08-02'\n>\n> although this is 2.8 (according to the banner at the top), though it's\n> in a directory called sage-2.7 since that was where I last did a build\n> from scratch;  since then I have been upgrade()-ing.\n\nDo \"sage -br\" (and possibly hg_sage.pull(); hg_sage.merge() from in SAGE).\nThat the above says 2.7.3 means that your the SAGE Python library is still\nat version 2.7.3.  Some sort of interactive confirmation might be needed to\nmerge the new version of SAGE with your changes.\n\n> Finally, the attached file realroots.cc includes a patch which\n> improves the stability of the offending function (so that mwrank -p15\n> now works OK on that curve).  And options.h for the email address.\n>\n> Thanks for the bug report!\n\nExcellent, thanks!\n```\n",
     "created_at": "2007-08-17T14:34:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-906",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-903",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -255,15 +254,15 @@ Excellent, thanks!
 
 ---
 
-archive/issue_comments_000907.json:
+archive/issue_comments_000904.json:
 ```json
 {
     "body": "Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h) by @williamstein created at 2007-08-17 14:35:10",
     "created_at": "2007-08-17T14:35:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-907",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-904",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -273,15 +272,15 @@ Attachment [options.h](tarball://root/attachments/some-uuid/ticket201/options.h)
 
 ---
 
-archive/issue_comments_000908.json:
+archive/issue_comments_000905.json:
 ```json
 {
     "body": "Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroots.cc) by @williamstein created at 2007-08-18 21:18:23",
     "created_at": "2007-08-18T21:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-908",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-905",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -291,15 +290,15 @@ Attachment [realroots.cc](tarball://root/attachments/some-uuid/ticket201/realroo
 
 ---
 
-archive/issue_comments_000909.json:
+archive/issue_comments_000906.json:
 ```json
 {
     "body": "Hello,\n\nvalgrind did reveal some issues:\n\n\n```\n==5927== Mismatched free() / delete / delete []\n==5927==    at 0x4A05130: operator delete(void*) (vg_replace_malloc.c:244)\n==5927==    by 0x4CCA293: vec_l::init(long) (vec.cc:62)\n==5927==    by 0x4CD40B2: echmodp(mat_l const&, vec_l&, vec_l&, long&, long&, long) (mat.cc:1366)\n==5927==    by 0x4D74CA4: saturator::nextq() (saturate.cc:155)\n==5927==    by 0x4D753AA: saturator::test_saturation(int, int) (saturate.cc:90)\n==5927==    by 0x4D75483: saturator::do_saturation(int, int) (saturate.cc:236)\n==5927==    by 0x4D7614C: saturator::do_saturation_upto(int, int) (saturate.cc:268)\n==5927==    by 0x4D3190E: mw::process(Point const&, int) (mwprocs.cc:382)\n==5927==    by 0x4D37640: mw::process(NTL::ZZ const&, NTL::ZZ const&, NTL::ZZ const&, int) (mwprocs.cc:275)\n==5927==    by 0x4D37888: mw::process(NTL::ZZ const&, NTL::ZZ const&, NTL::ZZ const&) (mwprocs.cc:258)\n==5927==    by 0x4D43254: qsieve::check_point(unsigned long, long, long, long*, int) (sieve_search.cc:994)\n==5927==    by 0x4D43890: qsieve::sift0(long, long, long, int) (sieve_search.cc:905)\n==5927==  Address 0x713F1B8 is 0 bytes after a block of size 0 alloc'd\n==5927==    at 0x4A05CB9: operator new[](unsigned long) (vg_replace_malloc.c:199)\n==5927==    by 0x4CCA5D7: vec_l::vec_l(long) (vec.cc:36)\n==5927==    by 0x4D74C1C: saturator::nextq() (saturate.cc:153)\n==5927==    by 0x4D753AA: saturator::test_saturation(int, int) (saturate.cc:90)\n==5927==    by 0x4D75483: saturator::do_saturation(int, int) (saturate.cc:236)\n==5927==    by 0x4D7614C: saturator::do_saturation_upto(int, int) (saturate.cc:268)\n==5927==    by 0x4D3190E: mw::process(Point const&, int) (mwprocs.cc:382)\n==5927==    by 0x4D37640: mw::process(NTL::ZZ const&, NTL::ZZ const&, NTL::ZZ const&, int) (mwprocs.cc:275)\n==5927==    by 0x4D37888: mw::process(NTL::ZZ const&, NTL::ZZ const&, NTL::ZZ const&) (mwprocs.cc:258)\n==5927==    by 0x4D43254: qsieve::check_point(unsigned long, long, long, long*, int) (sieve_search.cc:994)\n==5927==    by 0x4D43890: qsieve::sift0(long, long, long, int) (sieve_search.cc:905)\n==5927==    by 0x4D43E68: qsieve::sift(long) (sieve_search.cc:829)\n```\n",
     "created_at": "2007-08-18T21:33:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-909",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-906",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -342,15 +341,15 @@ valgrind did reveal some issues:
 
 ---
 
-archive/issue_comments_000910.json:
+archive/issue_comments_000907.json:
 ```json
 {
     "body": "Okay, with the two files from above and a patch a things are working better.\n\nFor the patch see http://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/mwrank-fix-delete-operators-in-vec.cc.patch\n\nValgrind still complains:\n\n```\nRank = 2\nSearching for points (bound = 8)...==7030== Conditional jump or move depends on uninitialised value(s)\n==7030==    at 0x4D48750: qsieve::sift0(long, long, long, int) (sieve_search.cc:903)\n==7030==    by 0x4D48D54: qsieve::sift(long) (sieve_search.cc:829)\n==7030==    by 0x4D4B9B3: qsieve::search() (sieve_search.cc:1119)\n==7030==    by 0x4D3BD93: mw::search(NTL::RR, int, int) (mwprocs.cc:724)\n==7030==    by 0x4E036F9: two_descent::saturate(long) (descent.cc:93)\n==7030==    by 0x401D7E: main (mwrank.cc:91)\n==7030==\n==7030== Conditional jump or move depends on uninitialised value(s)\n==7030==    at 0x4D47D95: qsieve::check_point(unsigned long, long, long, long*, int) (sieve_search.cc:942)\n==7030==    by 0x4D4877C: qsieve::sift0(long, long, long, int) (sieve_search.cc:905)\n==7030==    by 0x4D48D54: qsieve::sift(long) (sieve_search.cc:829)\n==7030==    by 0x4D4B9B3: qsieve::search() (sieve_search.cc:1119)\n==7030==    by 0x4D3BD93: mw::search(NTL::RR, int, int) (mwprocs.cc:724)\n==7030==    by 0x4E036F9: two_descent::saturate(long) (descent.cc:93)\n==7030==    by 0x401D7E: main (mwrank.cc:91)\n==7030==\n==7030== Conditional jump or move depends on uninitialised value(s)\n==7030==    at 0x4D47D9F: qsieve::check_point(unsigned long, long, long, long*, int) (sieve_search.cc:951)\n==7030==    by 0x4D4877C: qsieve::sift0(long, long, long, int) (sieve_search.cc:905)\n==7030==    by 0x4D48D54: qsieve::sift(long) (sieve_search.cc:829)\n==7030==    by 0x4D4B9B3: qsieve::search() (sieve_search.cc:1119)\n==7030==    by 0x4D3BD93: mw::search(NTL::RR, int, int) (mwprocs.cc:724)\n==7030==    by 0x4E036F9: two_descent::saturate(long) (descent.cc:93)\n==7030==    by 0x401D7E: main (mwrank.cc:91)\ndone:\n  found points of rank 2\n```\n\n\nand \n\n\n```\n==7311== Conditional jump or move depends on uninitialised value(s)\n==7311==    at 0x4CF4F5F: Curvedata::minimalize() (curvedata.cc:133)\n==7311==    by 0x4CF92F4: Curvedata::Curvedata(Curvedata const&, int) (curvedata.cc:81)\n==7311==    by 0x4CFE99F: CurveRed::CurveRed(Curvedata const&) (curvered.cc:121)\n==7311==    by 0x4D4C7C8: annihilators(Curvedata const&, long) (htconst.cc:1676)\n==7311==    by 0x4D60180: CurveHeightConst::CurveHeightConst(Curvedata const&) (htconst.cc:1445)\n==7311==    by 0x4D77343: index_bound(Curvedata*, std::vector<Point, std::allocator<Point> >&, int, int) (saturate.cc:509)\n==7311==    by 0x4D79ABF: saturator::saturate(std::vector<long, std::allocator<long> >&, NTL::ZZ&, long, int, int, int) (saturate.cc:359)\n==7311==    by 0x4D320DA: mw::saturate(NTL::ZZ&, std::vector<long, std::allocator<long> >&, long, int) (mwprocs.cc:645)\n==7311==    by 0x4E03AE4: two_descent::saturate(long) (descent.cc:137)\n==7311==    by 0x401D7E: main (mwrank.cc:91)\n==7311==\n==7311== Conditional jump or move depends on uninitialised value(s)\n==7311==    at 0x4CF4F5F: Curvedata::minimalize() (curvedata.cc:133)\n==7311==    by 0x4CF92F4: Curvedata::Curvedata(Curvedata const&, int) (curvedata.cc:81)\n==7311==    by 0x4CFE99F: CurveRed::CurveRed(Curvedata const&) (curvered.cc:121)\n==7311==    by 0x4D76CD2: tamagawa_primes(Curvedata const&) (saturate.cc:532)\n==7311==    by 0x4D79C88: saturator::saturate(std::vector<long, std::allocator<long> >&, NTL::ZZ&, long, int, int, int) (saturate.cc:390)\n==7311==    by 0x4D320DA: mw::saturate(NTL::ZZ&, std::vector<long, std::allocator<long> >&, long, int) (mwprocs.cc:645)\n==7311==    by 0x4E03AE4: two_descent::saturate(long) (descent.cc:137)\n==7311==    by 0x401D7E: main (mwrank.cc:91)\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2007-08-18T22:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-910",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-907",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -428,15 +427,15 @@ Michael
 
 ---
 
-archive/issue_comments_000911.json:
+archive/issue_comments_000908.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-18T22:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-911",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-908",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -446,15 +445,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000912.json:
+archive/issue_comments_000909.json:
 ```json
 {
     "body": "fixed! for sage-2.8.2.",
     "created_at": "2007-08-18T22:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-912",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/201#issuecomment-909",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_001447.json:
     "body": "Assignee: @burcin\n\n\n```\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/gbrefs.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/memusage.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/nf.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/ll.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/randompoly.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/PyPolyBoRi.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/heuristics.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/coding.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/statistics.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/blocks.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/__init__.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/dynamic/__init__.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/gbcore.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/specialsets.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/aes.pyc'\n[Errno 13] Permission denied: '/home/rlmill/sage-2.9.alpha4-sage-math-only-x86_64-Linux/local/lib/python//site-packages/polybori/check_claims.pyc'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1447\n\n",
     "created_at": "2007-12-10T10:18:19Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9",
     "title": "Polybori permissions issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1447",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @burcin
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1447
 
 ---
 
-archive/issue_comments_009324.json:
+archive/issue_comments_009299.json:
 ```json
 {
     "body": "Changing component from commutative algebra to packages.",
     "created_at": "2007-12-15T10:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9324",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9299",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -66,15 +65,15 @@ Changing component from commutative algebra to packages.
 
 ---
 
-archive/issue_comments_009325.json:
+archive/issue_comments_009300.json:
 ```json
 {
     "body": "This was caused by an absolute symlink in the polybori package polybori-0.1.p4.spkg, included in alpha4. Update to polybori-0.1-r5.spkg makes the symlinks relative and fixes the problem.\n\nNew package is included in 2.9.alpha7.",
     "created_at": "2007-12-15T10:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9325",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9300",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -86,15 +85,15 @@ New package is included in 2.9.alpha7.
 
 ---
 
-archive/issue_comments_009326.json:
+archive/issue_comments_009301.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-15T10:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1447",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9326",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1447#issuecomment-9301",
+    "user": "https://github.com/burcin"
 }
 ```
 

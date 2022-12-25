@@ -6,15 +6,13 @@ archive/issues_007344.json:
     "body": "Assignee: mabshoff\n\nCC:  david.kirkby@onetel.net @kcrisman @nexttime\n\nThis is used by PIL (c.f. #7273). Inclusion as an optional or even as a standard package would be helpful.\n\nThe package is here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p0.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/7344\n\n",
     "created_at": "2009-10-29T04:24:27Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "New libjpeg package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7344",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7344
 
 ---
 
-archive/issue_comments_061479.json:
+archive/issue_comments_061366.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-01T02:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61479",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61366",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_061480.json:
+archive/issue_comments_061367.json:
 ```json
 {
     "body": "There is an extra file, SPKG.txt~, in the package.\n\nI don't know if this should block its inclusion (I think this should go in as an optional package ASAP so it gets wider testing) but the show function doesn't work on my intel mac, 10.4.11, opening a TIFF file:\n\n\n```\nsage: import Image\nsage: im = Image.open(\"/Users/mh/Pictures/psym.tiff\")\nsage: print im.format, im.size, im.mode\nTIFF (455, 495) 1\nsage: im.show()\nsage: dyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Volumes/E/sage-4.2.1/local/lib//libJPEG.dylib\n```\n",
     "created_at": "2009-11-17T15:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61480",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61367",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -84,15 +82,15 @@ sage: dyld: Symbol not found: __cg_jpeg_resync_to_restart
 
 ---
 
-archive/issue_comments_061481.json:
+archive/issue_comments_061368.json:
 ```json
 {
     "body": "Oops that was a TIFF example, but it happens with jpegs too:\n\n```\nsage: im = Image.open(\"/Users/mh/Pictures/v2shot.jpg\")\nsage: im.show()\nsage: dyld: Symbol not found: __cg_jpeg_resync_to_restart\n  Referenced from: /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ImageIO.framework/Versions/A/ImageIO\n  Expected in: /Volumes/E/sage-4.2.1/local/lib//libJPEG.dylib\n```\n",
     "created_at": "2009-11-17T15:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61481",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61368",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -111,15 +109,15 @@ sage: dyld: Symbol not found: __cg_jpeg_resync_to_restart
 
 ---
 
-archive/issue_comments_061482.json:
+archive/issue_comments_061369.json:
 ```json
 {
     "body": "The error seems to be an issue with having multiple versions of libjpeg in OS X. Refer to: http://old.nabble.com/dyld:-Symbol-not-found:-__cg_jpeg_resync_to_restart-to9949988.html. I am unsure as to how to fix that problem (I haven ever used a Mac).",
     "created_at": "2009-11-18T15:50:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61482",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61369",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -129,15 +127,15 @@ The error seems to be an issue with having multiple versions of libjpeg in OS X.
 
 ---
 
-archive/issue_comments_061483.json:
+archive/issue_comments_061370.json:
 ```json
 {
     "body": "A new version without SPKG.txt~ is up at http://sage.math.washington.edu/home/timdumol/libjpeg-7.p1.spkg.",
     "created_at": "2009-11-18T15:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61483",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61370",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -147,15 +145,15 @@ A new version without SPKG.txt~ is up at http://sage.math.washington.edu/home/ti
 
 ---
 
-archive/issue_comments_061484.json:
+archive/issue_comments_061371.json:
 ```json
 {
     "body": "This needs checking on Solaris",
     "created_at": "2009-12-03T05:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61484",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61371",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -165,15 +163,15 @@ This needs checking on Solaris
 
 ---
 
-archive/issue_comments_061485.json:
+archive/issue_comments_061372.json:
 ```json
 {
     "body": "When I try an example like mhampton's above (`im = Image.open(...), im.show()`, I get the message\n\n```\nImportError: The _imaging C module is not installed\n```\n\n(This is on OS X 10.6.)  Is this an issue?",
     "created_at": "2009-12-22T06:13:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61485",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61372",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -189,15 +187,15 @@ ImportError: The _imaging C module is not installed
 
 ---
 
-archive/issue_comments_061486.json:
+archive/issue_comments_061373.json:
 ```json
 {
     "body": "Sorry, I did not  set up email notifications until recently, so cc'ing me did not help. I only stumbled across this when looking for tickets to review. I will check it on Solaris. \n\nDave",
     "created_at": "2010-01-10T04:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61486",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61373",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -209,15 +207,15 @@ Dave
 
 ---
 
-archive/issue_comments_061487.json:
+archive/issue_comments_061374.json:
 ```json
 {
     "body": "A few points looking at spkg-install, which is overly complicated following recent updates to sage-env. \n\n* The recent changes to sage-env (#7818) will mean a **lot** of spkg-install can be removed. In particular most, if not all the SAGE64 stuff, as sage-env will automatically add the right flags to CFLAGS, CXFLAGS etc for a 64-bit build. It will not do this (yet) for LDFLAGS so it **may** be necessary to add that, but I'm not convinced it will be necessary. It needs testing on bsd.math without the LD flags set. If it builds, then forgot it all. If it needs LDFLAGS to have -m64, replace -m64 with \n\n```\nif [ \"x$SAGE64\" = xyes ] ; then\n  LDFLAGS=\"$LDFLAGS $CFLAG64\" \n  export $LDFLAGS\nfi\n```\n\nthen it will work irrespective of the flag needed to generate 64-bit binaries. (Not all compilers need -m64, as others use -q64 and other flags). I'm not totally convinced LDFLAGS ever needs -m64, as I believe LDFLAGS gets passed to the linker. No linker I am aware of has the -m64 option (check GNU binutils manual if you wish). But I'm not 100% sure it is never needed. I think the right flag if needed is -64 for the GNU linker, but it is rarely needed, as normally the linker can work out whether a 32 or 64 bit binary is needed, based on the object files. The exception is when creasting shared libraries from archives, where the linker may not be able to determine this.\n* Remove the checks for the Sun compiler and adding -Wall with gcc. The updates to sage-env will add the -Wall for you with gcc. \n* Remove the checks to see if there is a mix of Sun and GNU compilers - that is taken care of elsewhere now. \n\n* Unless there is good reason, remove the \n\n\n```\n: ${CP=cp}; CP=\"$CP -f\"; export CP\n: ${MV=mv}; MV=\"$MV -f\"; export MV\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\n\nas it was agreed recently (see sage-devel) that there is no need for there to be variables for very basic commands. However, if the source code makes use of $CP etc, then they might have to stay. But if possible, just use mv, cp etc. \n\n* Someting called 'CC' is used here. I'm not sure what that is, but be aware the Sun C++ compiler is called 'CC' so there might be a name clash. Make sure the absolute path to CC is specified if it's not already done, otherwise it may break if the Sun C++ compiler is in the path. \n\n* Give me a day or so, and I'll put on sage-devel a **considerably** simpler skeleton spkg-install which will remove 95% of this. \n\nIt does actually build on Solaris, but the spkg-install could be reduced considerably in size, as most of these checks are now done in once place. \n\nI'll help you do this. \n\nDave",
     "created_at": "2010-01-10T05:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61487",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -261,15 +259,15 @@ Dave
 
 ---
 
-archive/issue_comments_061488.json:
+archive/issue_comments_061375.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-10T05:13:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61488",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61375",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -279,15 +277,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_061489.json:
+archive/issue_comments_061376.json:
 ```json
 {
     "body": "Replying to [comment:9 drkirkby]:\n> [...]\n>  * Give me a day or so, and I'll put on sage-devel a **considerably** simpler skeleton spkg-install which will remove 95% of this. \n> \n> It does actually build on Solaris, but the spkg-install could be reduced considerably in size, as most of these checks are now done in once place. \n> \n> I'll help you do this. \n> \n> Dave \n> \n>  \n\nPerfect, thanks. The libjpeg makefile actually uses $CP, $RM and $MV, so that section can't be removed.",
     "created_at": "2010-01-10T05:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61489",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61376",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -309,15 +307,15 @@ Perfect, thanks. The libjpeg makefile actually uses $CP, $RM and $MV, so that se
 
 ---
 
-archive/issue_comments_061490.json:
+archive/issue_comments_061377.json:
 ```json
 {
     "body": "Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7344/spkg-install) by drkirkby created at 2010-01-11 20:15:12",
     "created_at": "2010-01-11T20:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61490",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61377",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -327,15 +325,15 @@ Attachment [spkg-install](tarball://root/attachments/some-uuid/ticket7344/spkg-i
 
 ---
 
-archive/issue_comments_061491.json:
+archive/issue_comments_061378.json:
 ```json
 {
     "body": "I've looked at this, and have attached a revised spkg-install, which is a lot simpler. However, there are some odd things about this. \n\n* Why is the package called libjpeg-7.p1, rather than libjpeg-7 ? The .p0 is appended when a patch is applied, .p1 is used when a second patch is applied. This would therefore imply it's been patched twice, whereas in fact it has not. \n* There is no need for a patches directory when there are no patches.\n* What is the purpose of this code \n\n\n```\n: ${CP=cp}; CP=\"$CP -f\"; export CP\n: ${MV=mv}; MV=\"$MV -f\"; export MV\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\n\n\nI just took the libjpeg source code, then built it with:\n\n```\n$ ./configure --prefix=/tmp\n$ make \n$ make install\n```\n\nand it all went ok, without me having to override 'cp', 'mv' or 'rm'. \n\n* You would need to get William or someone else to look over the license. I know there is one requirement there, which is not a requirement of the GPL. That is, if you use their code, you must acknowledge them. Having had some GPL'ed code of mine ripped off without acknowledgment, I was a bit annoyed, but I've been told there is no requirement to acknowledge anyone if you use their GPL code. I am not a lawyer are more interested in the technical aspects than license conditions, but someone would need to verify this license is compatible. \n\nIn the attacked in spkg-install I've left all the overriding of cp, but I don't feel it should be necessary. \n\nDave",
     "created_at": "2010-01-11T20:16:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61491",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61378",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -373,15 +371,15 @@ Dave
 
 ---
 
-archive/issue_comments_061492.json:
+archive/issue_comments_061379.json:
 ```json
 {
     "body": "See also [here](http://groups.google.com/group/sage-devel/browse_frm/thread/48f720062cc4e38b/ff817dfb819e5ce).",
     "created_at": "2010-08-02T17:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61492",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61379",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -391,15 +389,15 @@ See also [here](http://groups.google.com/group/sage-devel/browse_frm/thread/48f7
 
 ---
 
-archive/issue_comments_061493.json:
+archive/issue_comments_061380.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-08-17T18:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61493",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61380",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -409,15 +407,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_061494.json:
+archive/issue_comments_061381.json:
 ```json
 {
     "body": "New package version here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p2.spkg\n\nAs stated in #7818, some makefiles depend on $RM being unset or set to \"rm -f\". The above code overrides any $RM setting, which otherwise causes compilation failure (at least for me).\n\nI am unsure of the GPL compatibility of libjpeg's licensing, but this message on: http://www.mail-archive.com/mozilla-license`@`mozilla.org/msg00143.html seems to suggest that it is widely considered GPL compatible. Otherwise, we may want to consider libjpeg-turbo (http://sourceforge.net/projects/libjpeg-turbo/) and patch PIL to use that.\n\nRegarding review of this package:\n\nThe package may be reviewed by using the PIL package, as above:\n\n\n```\nsage: import Image\nsage: im = Image.open(\"<your-jpeg-file-here>\")\nsage: im.resize((im.size[0]/2,im.size[1]/2))\nsage: print im.format, im.size, im.mode\nTIFF (455, 495) 1\nsage: im.show()\nsage: im.save(\"wherever.jpg\")\n```\n",
     "created_at": "2010-08-17T18:17:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61494",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61381",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -447,15 +445,15 @@ sage: im.save("wherever.jpg")
 
 ---
 
-archive/issue_comments_061495.json:
+archive/issue_comments_061382.json:
 ```json
 {
     "body": "(I could have deleted Dave from the cc-list, but just added the missing trailing \"t\"...)",
     "created_at": "2010-09-03T21:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61495",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61382",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -465,15 +463,15 @@ archive/issue_comments_061495.json:
 
 ---
 
-archive/issue_comments_061496.json:
+archive/issue_comments_061383.json:
 ```json
 {
     "body": "Replying to [comment:13 timdumol]:\n> New package version here: http://sage.math.washington.edu/home/timdumol/libjpeg-7.p2.spkg\n> \n> As stated in #7818, some makefiles depend on $RM being unset or set to \"rm -f\". The above code overrides any $RM setting, which otherwise causes compilation failure (at least for me).\n\nThere's a much simpler way to unset RM than use\n\n\n```\n: ${RM=rm}; RM=\"$RM -f\"; export RM\n```\n\n\none can use:\n\n\n```\nunset RM\n```\n\n\nIf a Makefile needs RM set, I feel it would be better to fix the Makefile and report that upstream. Likewise if a Makefile needs `rm -f`, it should use `rm -f`",
     "created_at": "2011-04-08T08:11:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61496",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61383",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -504,15 +502,15 @@ If a Makefile needs RM set, I feel it would be better to fix the Makefile and re
 
 ---
 
-archive/issue_comments_061497.json:
+archive/issue_comments_061384.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-05-13T13:20:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61497",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61384",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -522,15 +520,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_061498.json:
+archive/issue_comments_061385.json:
 ```json
 {
     "body": "If this package causes compilation failure, then it needs work, not\nreview.",
     "created_at": "2011-05-13T13:20:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61498",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61385",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -541,15 +539,15 @@ review.
 
 ---
 
-archive/issue_comments_061499.json:
+archive/issue_comments_061386.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-08-02T18:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61499",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61386",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -559,15 +557,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_061500.json:
+archive/issue_comments_061387.json:
 ```json
 {
     "body": ".p1 gave compilation failure. .p2 fixes it.",
     "created_at": "2011-08-02T18:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61500",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61387",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -577,15 +575,15 @@ archive/issue_comments_061500.json:
 
 ---
 
-archive/issue_comments_061501.json:
+archive/issue_comments_061388.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-08-02T21:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61501",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61388",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -595,15 +593,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_061502.json:
+archive/issue_comments_061389.json:
 ```json
 {
     "body": "It seems that libjpeg's license is not compatible with GPL, according to: http://www.thomasalspaugh.org/pub/osl-sps/libjpeg8c.html. Also, libjpeg-turbo seems to be significantly faster than libjpeg, while being licensed under GPL. I'm making a package for that now.",
     "created_at": "2011-08-02T21:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61502",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61389",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -613,15 +611,15 @@ It seems that libjpeg's license is not compatible with GPL, according to: http:/
 
 ---
 
-archive/issue_comments_061503.json:
+archive/issue_comments_061390.json:
 ```json
 {
     "body": "Here is the new libjpeg-turbo package: http://sage.math.washington.edu/home/timdumol/libjpeg_turbo-1.1.1.spkg",
     "created_at": "2011-08-02T22:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61503",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61390",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -631,15 +629,15 @@ Here is the new libjpeg-turbo package: http://sage.math.washington.edu/home/timd
 
 ---
 
-archive/issue_comments_061504.json:
+archive/issue_comments_061391.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-08-02T22:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61504",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61391",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -649,15 +647,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_061505.json:
+archive/issue_comments_061392.json:
 ```json
 {
     "body": "Review instructions are as above. This definitely needs testing on a Mac, as I am unsure as to whether the patches that were included in the libjpeg package are required for libjpeg-turbo. This version does not include those patches.",
     "created_at": "2011-08-02T22:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61505",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61392",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -667,15 +665,15 @@ Review instructions are as above. This definitely needs testing on a Mac, as I a
 
 ---
 
-archive/issue_comments_061506.json:
+archive/issue_comments_061393.json:
 ```json
 {
     "body": "This fails to build on my OS X box. Here is the tail end of the log:\n\n```\nchecking whether to use version script when building libjpeg-turbo... yes\nchecking whether to include arithmetic encoding support... yes\nchecking whether to include arithmetic decoding support... yes\nchecking if we have SIMD optimisations for cpu type... yes (i386)\nchecking for nasm... nasm\nchecking for object file format of host system... Mach-O\nchecking for object file format specifier (NAFLAGS) ... -fmacho -DMACHO\nchecking whether the assembler (nasm -fmacho -DMACHO) works... yes\nchecking whether the linker accepts assembler output... no\nconfigure: error: configuration problem: maybe object file format mismatch.\nFailed to configure libjpeg ... exiting\n```\n",
     "created_at": "2011-08-02T23:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61506",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61393",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -700,15 +698,15 @@ Failed to configure libjpeg ... exiting
 
 ---
 
-archive/issue_comments_061507.json:
+archive/issue_comments_061394.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-08-02T23:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61507",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61394",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -718,15 +716,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_061508.json:
+archive/issue_comments_061395.json:
 ```json
 {
     "body": "Replying to [comment:21 jhpalmieri]:\n> This fails to build on my OS X box. Here is the tail end of the log:\n\nHaven't looked at the spkg yet, but perhaps attach your `config.log`; I'm not sure if (i.e., rather doubt that) we intend to use `nasm` at all, which probably requires some additional `configure` option (if `nasm` is installed) or perhaps setting `AS`.",
     "created_at": "2011-08-03T00:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61508",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61395",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -739,15 +737,15 @@ Haven't looked at the spkg yet, but perhaps attach your `config.log`; I'm not su
 
 ---
 
-archive/issue_comments_061509.json:
+archive/issue_comments_061396.json:
 ```json
 {
     "body": "Replying to [comment:22 leif]:\n> Replying to [comment:21 jhpalmieri]:\n> > This fails to build on my OS X box. Here is the tail end of the log:\n> \n> Haven't looked at the spkg yet, but perhaps attach your `config.log`\n\nI've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).",
     "created_at": "2011-08-03T03:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61509",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61396",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -763,15 +761,15 @@ I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.
 
 ---
 
-archive/issue_comments_061510.json:
+archive/issue_comments_061397.json:
 ```json
 {
     "body": "Replying to [comment:23 jhpalmieri]:\n> I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).\n\nHmmm, the error is just that `nasm` doesn't produce 64-bit object files by default. (`configure` should notice that, and use `-fmacho64` instead of `-fmacho`.)\n\nJohn, did you set `SAGE64=yes`?\n\nHaven't yet looked if there are further `configure` options (`./configure --help` doesn't show appropriate ones), or what happens if `nasm` isn't installed. (Guess it then just defaults to C implementations rather than using GCC with inline assembly; MacOS X / XCode doesn't have a `gas` IIRC.)\n\n----\n\nBtw., there's crap in the spkg, and I can't read the Mercurial files:\n\n```sh\n$ ls -a\n.   .hg        .hgignore~     spkg-install       SPKG.txt       src\n..  .hgignore  .hgignore.swp  .spkg-install.swp  .SPKG.txt.swp\n$ hg log ; hg status\nabort: requirement 'dotencode' not supported!\nabort: requirement 'dotencode' not supported!\n```\n\n\nAlso, unfortunately Tim has deleted the old \"patches\" that were applied on MacOS X\n\n```sh\n# This was needed for libjpeg. Is this needed for libjpeg-turbo?\n#if [ -n \"`uname -s | grep Darwin`\" ]; then\n#   $CP ../patches/config.sub .\n#   $CP ../patches/config.guess .\n#   # Required for Mac OS (http://jetfar.com/libjpeg-and-python-imaging-pil-on-snow-leopard/)\n#   ./configure --enable-shared --enable-static --prefix=\"$SAGE_LOCAL\"\n#else\n./configure --prefix=\"$SAGE_LOCAL\"\n#fi\n```\n\nthough that's not necessarily the problem.",
     "created_at": "2011-08-03T05:01:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61510",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61397",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -818,15 +816,15 @@ though that's not necessarily the problem.
 
 ---
 
-archive/issue_comments_061511.json:
+archive/issue_comments_061398.json:
 ```json
 {
     "body": "> John, did you set SAGE64=yes?\n\nI hadn't, because with OS X 10.6 on 64-bit machines, it shouldn't be necessary.  I just tried it anyway, and got the same result.\n\nThe file BUILDING.txt in the src directory says this:\n\n```\n-- NASM\n   * 0.98, or 2.01 or later is required for a 32-bit build\n   * NASM 2.00 or later is required for a 64-bit build\n   * NASM 2.07 or later is required for a 64-bit build on OS X.  This can be\n     obtained from MacPorts (http://www.macports.org/).\n```\n\nThe default version of nasm seems to be 0.98.40, or at least that's what I have installed.  The same file also says this; perhaps this is the way to go:\n\n```\n32-bit Library Build on 64-bit OS X\n-----------------------------------\n\nAdd\n\n  CFLAGS='-O3 -m32' LDFLAGS=-m32\n\nto the configure command line.\n```\n\nIf I configure with those options, it seems to succeed.  That is, I ran \"sage -sh\", then changed to the directory `sage/spkg/build/libjpeg_turbo-1.1.1/src` and ran\n\n```\nCFLAGS='-O3 -m32' LDFLAGS=-m32 ./configure --prefix=/Applications/sage/local\n```\n\nThen `make` succeeded.  I haven't tried `make install` or testing it inside of Sage.",
     "created_at": "2011-08-03T05:35:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61511",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61398",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -869,15 +867,15 @@ Then `make` succeeded.  I haven't tried `make install` or testing it inside of S
 
 ---
 
-archive/issue_comments_061512.json:
+archive/issue_comments_061399.json:
 ```json
 {
     "body": "> perhaps this is the way to go\n\nOr maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build, but it doesn't seem to work in Sage: it keeps telling me \"IOError: decoder jpeg not available\".  Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)",
     "created_at": "2011-08-03T05:41:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61512",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61399",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -889,15 +887,15 @@ Or maybe not; either I did something wrong or I can't use the 32-bit library in 
 
 ---
 
-archive/issue_comments_061513.json:
+archive/issue_comments_061400.json:
 ```json
 {
     "body": "Replying to [comment:26 jhpalmieri]:\n> Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build\n\nYeah, you cannot use both 32- and 64-bit libraries or modules within / from the same executable.\n\n> Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)\n\nI wonder if it builds (on MacOS X) without assembly parts (perhaps with `--without-simd` passed to `configure`), as I mentioned above.\n\n(You could also try temporarily \"removing\" `nasm` by renaming it to something obscure and then run `./configure`.)\n\nIf `libjpeg` stays an optional package, we could of course also add an optional `nasm` package (if the licence allows this), but I won't add more (binary?) standard spkgs just to accomplish prerequisites. Fortran is IMHO bad enough.\n\nOr we have to resort to some other (upstream) `libjpeg` package.",
     "created_at": "2011-08-03T06:05:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61513",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61400",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -920,15 +918,15 @@ Or we have to resort to some other (upstream) `libjpeg` package.
 
 ---
 
-archive/issue_comments_061514.json:
+archive/issue_comments_061401.json:
 ```json
 {
     "body": "Replying to [comment:27 leif]:\n> I wonder if it builds (on MacOS X) without assembly parts (perhaps with `--without-simd` passed to `configure`), as I mentioned above.\n\nYep, configuring with `--without-simd` should work, as the only assembler source files are all in `src/simd/`.",
     "created_at": "2011-08-03T06:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61514",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61401",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -941,15 +939,15 @@ Yep, configuring with `--without-simd` should work, as the only assembler source
 
 ---
 
-archive/issue_comments_061515.json:
+archive/issue_comments_061402.json:
 ```json
 {
     "body": "Replying to [comment:24 leif]:\n> Replying to [comment:23 jhpalmieri]:\n> > I've posted it here: [http://sage.math.washington.edu/home/palmieri/misc/config.log](http://sage.math.washington.edu/home/palmieri/misc/config.log).\n> \n> Hmmm, the error is just that `nasm` doesn't produce 64-bit object files by default. (`configure` should notice that, and use `-fmacho64` instead of `-fmacho`.)\n> \n> John, did you set `SAGE64=yes`?\n> \n> Haven't yet looked if there are further `configure` options (`./configure --help` doesn't show appropriate ones), or what happens if `nasm` isn't installed. (Guess it then just defaults to C implementations rather than using GCC with inline assembly; MacOS X / XCode doesn't have a `gas` IIRC.)\n> \n> ----\n> \n> Btw., there's crap in the spkg, and I can't read the Mercurial files:\n> {{{\n> #!sh\n> $ ls -a\n> .   .hg        .hgignore~     spkg-install       SPKG.txt       src\n> ..  .hgignore  .hgignore.swp  .spkg-install.swp  .SPKG.txt.swp\n> $ hg log ; hg status\n> abort: requirement 'dotencode' not supported!\n> abort: requirement 'dotencode' not supported!\n> }}}\n\nSorry, I used a pretty recent version of Mercurial to create the repository, and it seems that it is backwards incompatible. I'll use `sage -hg` instead. I'll delete the trash files.\n\n> \n> Also, unfortunately Tim has deleted the old \"patches\" that were applied on MacOS X\n> {{{\n> #!sh\n> # This was needed for libjpeg. Is this needed for libjpeg-turbo?\n> #if [ -n \"`uname -s | grep Darwin`\" ]; then\n> #   $CP ../patches/config.sub .\n> #   $CP ../patches/config.guess .\n> #   # Required for Mac OS (http://jetfar.com/libjpeg-and-python-imaging-pil-on-snow-leopard/)\n> #   ./configure --enable-shared --enable-static --prefix=\"$SAGE_LOCAL\"\n> #else\n> ./configure --prefix=\"$SAGE_LOCAL\"\n> #fi\n> }}}\n> though that's not necessarily the problem.",
     "created_at": "2011-08-03T09:21:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61515",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61402",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -998,15 +996,15 @@ Sorry, I used a pretty recent version of Mercurial to create the repository, and
 
 ---
 
-archive/issue_comments_061516.json:
+archive/issue_comments_061403.json:
 ```json
 {
     "body": "Replying to [comment:26 jhpalmieri]:\n> > perhaps this is the way to go\n> \n> Or maybe not; either I did something wrong or I can't use the 32-bit library in the 64-bit Sage build, but it doesn't seem to work in Sage: it keeps telling me \"IOError: decoder jpeg not available\".  Maybe we should require nasm as a prerequisite on 64-bit OS X.  (That could be another spkg.)\n\nI am uncertain, but I believe that you need to reinstall PIL (sage -f pil) in order to enable JPEG capabilities.",
     "created_at": "2011-08-03T09:26:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61516",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61403",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -1021,15 +1019,15 @@ I am uncertain, but I believe that you need to reinstall PIL (sage -f pil) in or
 
 ---
 
-archive/issue_comments_061517.json:
+archive/issue_comments_061404.json:
 ```json
 {
     "body": "I think we should simply check whether `nasm` is installed (`command -v nasm >/dev/null`), and if so, its version (`nasm -v`), and then -- depending on the operating system (especially 32-bit vs. 64-bit on Darwin) -- decide whether we configure with `--without-simd` or not.\n\nThis should work on all platforms, and this way machines having (at least) the required version installed won't suffer from not using faster implementations.\n\nIf `SAGE_FAT_BINARY=yes`, we should perhaps disable it too.\n\nAccording to the docs, it might also be necessary to either pass `--build=...` or update the **very old** `config.guess`, at least on / for 64-bit Darwin (MacOS X >=10.6, or 10.5 if `SAGE64=yes`). Maybe setting `ABI` accordingly also works.",
     "created_at": "2011-08-03T11:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61517",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61404",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1045,15 +1043,15 @@ According to the docs, it might also be necessary to either pass `--build=...` o
 
 ---
 
-archive/issue_comments_061518.json:
+archive/issue_comments_061405.json:
 ```json
 {
     "body": "Building with `--without-simd` and then reinstalling PIL allows me to execute the code above (although `im.format` is `None`).",
     "created_at": "2011-08-03T15:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61518",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61405",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1063,15 +1061,15 @@ Building with `--without-simd` and then reinstalling PIL allows me to execute th
 
 ---
 
-archive/issue_comments_061519.json:
+archive/issue_comments_061406.json:
 ```json
 {
     "body": "As with the spkg at #7345, you should also provide a patch to the scripts repo, adding the appropriate files to .hgignore there.",
     "created_at": "2011-08-03T22:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61519",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61406",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1081,15 +1079,15 @@ As with the spkg at #7345, you should also provide a patch to the scripts repo, 
 
 ---
 
-archive/issue_comments_061520.json:
+archive/issue_comments_061407.json:
 ```json
 {
     "body": "Replying to [comment:33 jhpalmieri]:\n> As with the spkg at #7345, you should also provide a patch to the scripts repo, adding the appropriate files to .hgignore there.\n\n... if we really want to install any executables as well.\n\nUsing them from Sage would certainly be inefficient, and `local/bin/` is already filled up with a lot of .... useful tools.",
     "created_at": "2011-08-04T11:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61520",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61407",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1104,15 +1102,15 @@ Using them from Sage would certainly be inefficient, and `local/bin/` is already
 
 ---
 
-archive/issue_comments_061521.json:
+archive/issue_comments_061408.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"sd32\".",
     "created_at": "2011-08-24T23:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61521",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61408",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -1122,15 +1120,15 @@ Changing keywords from "" to "sd32".
 
 ---
 
-archive/issue_comments_061522.json:
+archive/issue_comments_061409.json:
 ```json
 {
     "body": "Replying to [comment:18 timdumol]:\n> It seems that libjpeg's license is not compatible with GPL, \n> according to: http://www.thomasalspaugh.org/pub/osl-sps/libjpeg8c.html. \n> Also, libjpeg-turbo seems to be significantly faster than libjpeg, while being \n> licensed under GPL. I'm making a package for that now.\n\nThere is a discussion of the libjpeg-turbo license by the main developer (I think) here: http://sourceforge.net/projects/libjpeg-turbo/forums/forum/1086868/topic/4519797\n\nIt's definitely \"licensed under GPL\".   However, it seems to be licensed under a subset of LGPL, which would definitely be GPL compatible.",
     "created_at": "2011-11-14T16:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61522",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61409",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -1148,15 +1146,15 @@ It's definitely "licensed under GPL".   However, it seems to be licensed under a
 
 ---
 
-archive/issue_comments_061523.json:
+archive/issue_comments_061410.json:
 ```json
 {
     "body": "I tried building libjpeg_turbo-1.1.1.spkg on OS X 10.7 (Lion) with XCode 4.2.x and it fails during the ./configure stage:\n\n```\n...\nchecking whether the assembler (nasm -fmacho -DMACHO) works... yes\nchecking whether the linker accepts assembler output... no\nconfigure: error: configuration problem: maybe object file format mismatch.\nFailed to configure libjpeg ... exiting\n\nreal\t0m14.878s\n```\n",
     "created_at": "2011-11-14T16:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61523",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61410",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -1177,15 +1175,15 @@ real	0m14.878s
 
 ---
 
-archive/issue_comments_061524.json:
+archive/issue_comments_061411.json:
 ```json
 {
     "body": "Changing component from packages: standard to packages: optional.",
     "created_at": "2014-11-13T14:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61524",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61411",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1195,15 +1193,15 @@ Changing component from packages: standard to packages: optional.
 
 ---
 
-archive/issue_comments_061525.json:
+archive/issue_comments_061412.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2021-08-26T02:40:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61525",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61412",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -1213,15 +1211,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_061526.json:
+archive/issue_comments_061413.json:
 ```json
 {
     "body": "outdated, should close",
     "created_at": "2021-08-26T02:40:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61526",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61413",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -1231,15 +1229,15 @@ outdated, should close
 
 ---
 
-archive/issue_comments_061527.json:
+archive/issue_comments_061414.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2021-08-26T03:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61527",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61414",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1249,15 +1247,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_061528.json:
+archive/issue_comments_061415.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2021-09-01T06:17:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61528",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7344#issuecomment-61415",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

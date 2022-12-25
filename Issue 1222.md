@@ -6,7 +6,7 @@ archive/issues_001222.json:
     "body": "Assignee: mabshoff\n\n\n```\nmichael-abshoffs-ibook-g4:~/Desktop/sage-2.8.13.rc0 mabshoff$ ./sage -\nt  devel/sage-main/sage/numerical/test.py\nsage -t  devel/sage-main/sage/numerical/test.py\n**********************************************************************\nFile \"test.py\", line 4:\n    : from cvxopt.base import *\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/lib/\npython2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[0]>\", line 1, in <module>\n        from cvxopt.base import *###line 4:\n    : from cvxopt.base import *\n    ImportError: dlopen(/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/base.so, 2): Symbol not found:\n__g95_ioparm\n      Referenced from: /Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/base.so\n      Expected in: dynamic lookup\n\n**********************************************************************\nFile \"test.py\", line 5:\n    : from cvxopt import umfpack\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/lib/\npython2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[1]>\", line 1, in <module>\n        from cvxopt import umfpack###line 5:\n    : from cvxopt import umfpack\n    ImportError: dlopen(/Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/umfpack.so, 2): Symbol not found:\n__g95_st_write_done\n      Referenced from: /Users/mabshoff/Desktop/sage-2.8.13.rc0/local/\nlib/python/site-packages/cvxopt/umfpack.so\n      Expected in: dynamic lookup\n\n**********************************************************************\n1 items had failures:\n   2 of   6 in __main__.example_0\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file .doctest_test.py\n         [13.2 s]\nexit code: 256\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1222\n\n",
     "created_at": "2007-11-20T22:51:10Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001222.json:
     "title": "cvxopt import trouble on PPC OSX 10.4 with 2.8.13.rc0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1222",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -82,15 +82,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1222
 
 ---
 
-archive/issue_comments_007605.json:
+archive/issue_comments_007583.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-11-20T22:51:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7605",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -100,15 +100,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_007606.json:
+archive/issue_comments_007584.json:
 ```json
 {
     "body": "This should be easy to fix. I would do it myself, except I don't have access to a ppc machine so its probably easier to explain what to do. \nIn the /patches/ directory of the spkg the file setup_f95.py is the setup.py used if they are compiling with g95. Near the top there is a block.\n\nif os.uname()[0].startswith('Linux'):\n    if os.uname()[-1]!='x86_64':\n        GCC_LIB_DIR= SAGE_LOCAL+'/lib/gcc-lib/i686-pc-linux-gnu/4.0.3'\n    else:\n        GCC_LIB_DIR= SAGE_LOCAL+'/lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3'\n    library_dirs = [ ATLAS_LIB_DIR,GCC_LIB_DIR]\n\nIf that error is showing up then this should be changed to \n\nif os.uname()[0].startswith('Linux'):\n    if os.uname()[-1]!='x86_64':\n        GCC_LIB_DIR= SAGE_LOCAL+'/lib/gcc-lib/i686-pc-linux-gnu/4.0.3'\n    else:\n        GCC_LIB_DIR= SAGE_LOCAL+'/lib/gcc-lib/x86_64-unknown-linux-gnu/4.0.3'\n    if <we are on OSX ppc >:\n        GCC_LIB_DIR= 'lib/gcc-lib/powerpc-apple-darwin6.8/4.0.3'\n    library_dirs = [ ATLAS_LIB_DIR,GCC_LIB_DIR]\n\nStrangely, explicitly specifying the directory of the libf95.a does not appear to be necessary on \nOSX intel.",
     "created_at": "2007-11-21T06:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7606",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7584",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -140,15 +140,15 @@ OSX intel.
 
 ---
 
-archive/issue_comments_007607.json:
+archive/issue_comments_007585.json:
 ```json
 {
     "body": "Hopefully this spkg fixes this, however I have not tested it since I don't have a ppc\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.p2.spkg",
     "created_at": "2007-11-23T21:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7607",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7585",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -160,15 +160,15 @@ http://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.p2.spkg
 
 ---
 
-archive/issue_comments_007608.json:
+archive/issue_comments_007586.json:
 ```json
 {
     "body": "New package fixing the ppc problem. \n\nhttp://sage.math.washington.edu/home/jkantor/cvxopt-0.9.p3.spkg",
     "created_at": "2007-11-27T04:26:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7608",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7586",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -180,15 +180,15 @@ http://sage.math.washington.edu/home/jkantor/cvxopt-0.9.p3.spkg
 
 ---
 
-archive/issue_comments_007609.json:
+archive/issue_comments_007587.json:
 ```json
 {
     "body": "Hmm, does cvxopt assume that ATLAS is installed now? On sage.math without ATLAS I now get:\n\n```\nUsing g95Traceback (most recent call last):\n  File \"setup.py\", line 56, in <module>\n    if os.path.exists(ATLAS_LIB_DIR+'/libatlas.a') or os.path.exists(ATLAS_LIB_DIR+'/libatlas.dylib') or os.path.exits(ATLAS_LIB_DIR+'/libatlas.so'):\nAttributeError: 'module' object has no attribute 'exits'\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-11-27T13:39:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7609",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7587",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -209,15 +209,15 @@ Michael
 
 ---
 
-archive/issue_comments_007610.json:
+archive/issue_comments_007588.json:
 ```json
 {
     "body": "You must have been too quick. I had an os.exits, instead of os.exists. I changed it a moment after I posted the package. But you must have grabbed the old one first.",
     "created_at": "2007-11-28T04:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7610",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7588",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -227,15 +227,15 @@ You must have been too quick. I had an os.exits, instead of os.exists. I changed
 
 ---
 
-archive/issue_comments_007611.json:
+archive/issue_comments_007589.json:
 ```json
 {
     "body": "The current cvxopt.p3 has the above problem fixed, as well as correctly links against atlas (when present).",
     "created_at": "2007-11-28T06:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7611",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7589",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -245,15 +245,15 @@ The current cvxopt.p3 has the above problem fixed, as well as correctly links ag
 
 ---
 
-archive/issue_comments_007612.json:
+archive/issue_comments_007590.json:
 ```json
 {
     "body": "New version that will use our local libatlas on osx intel. \n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.p4.spkg",
     "created_at": "2007-11-28T10:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7612",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7590",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -265,15 +265,15 @@ http://sage.math.washington.edu/home/jkantor/spkgs/cvxopt-0.9.p4.spkg
 
 ---
 
-archive/issue_comments_007613.json:
+archive/issue_comments_007591.json:
 ```json
 {
     "body": "the package above (.p4) was recently changed to reflect the fact that we won't be building libff7blas on OSX yet.",
     "created_at": "2007-11-29T10:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7613",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7591",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -283,15 +283,15 @@ the package above (.p4) was recently changed to reflect the fact that we won't b
 
 ---
 
-archive/issue_comments_007614.json:
+archive/issue_comments_007592.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-01T22:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7614",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7592",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -301,15 +301,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_007615.json:
+archive/issue_comments_007593.json:
 ```json
 {
     "body": "Merged in 2.8.15.alpha2.",
     "created_at": "2007-12-01T22:39:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7615",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1222#issuecomment-7593",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

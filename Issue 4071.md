@@ -6,7 +6,7 @@ archive/issues_004071.json:
     "body": "Assignee: @williamstein\n\n\n```\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 5:\n    sage: lisp.eval('(* 4 5)')\nExpected:\n    '20'\nGot:\n    '(* 4 5)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n20'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 22:\n    sage: lisp.eval('(+ %s %s)'%(a.name(), b.name()))\nExpected:\n    '8'\nGot:\n    '(+ sage0 sage1)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n8'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 27:\n    sage: lisp.eval('(defun factorial (n) (if (= n 1) 1 (* n (factorial (- n 1)))))')\nExpected:\n    'FACTORIAL'\nGot:\n    '(defun factorial (n)\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C (if (= n 1)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C 1 (* n (factorial (- n 1)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x08\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\nFACTORIAL'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 112:\n    sage: lisp.eval('(+ 2 2)')\nExpected:\n    '4'\nGot:\n    '(+ 2 2)\\r\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\x1b[C\\n4'\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 390:\n    sage: one == one\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 394:\n    sage: one < two\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 400:\n    sage: two == 2\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/mhansen/sage-3.1.2.rc0/tmp/lisp.py\", line 420:\n    sage: lisp(0).bool()\nExpected:\n    False\nGot:\n    True\n**********************************************************************\n4 items had failures:\n   3 of  17 in __main__.example_0\n   1 of   3 in __main__.example_2\n   3 of   9 in __main__.example_23\n   1 of   5 in __main__.example_24\n***Test Failed*** 8 failures.\nFor whitespace errors, see the file /Users/mhansen/sage-3.1.2.rc0/tmp/.doctest_lisp.py\n         [7.4 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4071\n\n",
     "created_at": "2008-09-07T18:09:06Z",
     "labels": [
-        "interfaces",
+        "component: interfaces",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004071.json:
     "title": "Fix issues in the lisp interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4071",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -97,15 +97,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4071
 
 ---
 
-archive/issue_comments_029380.json:
+archive/issue_comments_029321.json:
 ```json
 {
     "body": "Attachment [trac_4071.patch](tarball://root/attachments/some-uuid/ticket4071/trac_4071.patch) by @mwhansen created at 2008-09-07 18:10:28",
     "created_at": "2008-09-07T18:10:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29380",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29321",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -115,15 +115,15 @@ Attachment [trac_4071.patch](tarball://root/attachments/some-uuid/ticket4071/tra
 
 ---
 
-archive/issue_comments_029381.json:
+archive/issue_comments_029322.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-07T18:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29381",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29322",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -133,15 +133,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_029382.json:
+archive/issue_comments_029323.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-09-07T18:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29382",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29323",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -151,15 +151,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_029383.json:
+archive/issue_comments_029324.json:
 ```json
 {
     "body": "Patch looks good to me and fixes the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-07T18:25:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29383",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29324",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +173,15 @@ Michael
 
 ---
 
-archive/issue_comments_029384.json:
+archive/issue_comments_029325.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-07T23:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29384",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -191,15 +191,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029385.json:
+archive/issue_comments_029326.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc1",
     "created_at": "2008-09-07T23:06:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29385",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4071#issuecomment-29326",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

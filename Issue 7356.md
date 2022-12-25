@@ -6,15 +6,14 @@ archive/issues_007356.json:
     "body": "Assignee: @aghitza\n\nFloats have no LaTeX representation and are formated using str function. Thus output of latex(float(1e25)) is '1e+25' and not '1 \\times 10^{25}'. \n\nThe solution is to define function to handle this like the function below\n\n```\n\ndef float_function(x):\n    r\"\"\"\n    Returns the LaTeX code for a float ``x``.\n\n    INPUT: ``x`` - float number\n\n    EXAMPLES::\n\n        sage: from sage.misc.latex import float_function\n        sage: float_function(float(123.05))\n        '123.05'\n        sage: float_function(float(3e-15))\n        '3 \\\\times 10^{-15}'\n        sage: float_function(float(3.2e25))\n        '3.2 \\\\times 10^{25}'\n        sage: float_function(float(3.2e+15))\n        '3.2 \\\\times 10^{15}'\n\n        The output is in some cases shorter than latex method for real numbers.\n\n        sage: float_function(float(1e+15))\n        '1 \\\\times 10^{15}'\n    \"\"\"\n    s = str(x)\n    parts = s.split('e')\n    if len(parts) > 1:\n        # scientific notation\n        if parts[1][0] == '+':\n            parts[1] = parts[1][1:]\n        s = \"%s \\\\times 10^{%s}\" % (parts[0], parts[1])\n    return s\n```\n\n\nWill post simple patch, provided it passes tests.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7356\n\n",
     "created_at": "2009-10-30T09:12:06Z",
     "labels": [
-        "basic arithmetic",
-        "minor",
-        "enhancement"
+        "component: basic arithmetic",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "fixed latex representation for floats",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7356",
-    "user": "@robert-marik"
+    "user": "https://github.com/robert-marik"
 }
 ```
 Assignee: @aghitza
@@ -69,15 +68,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7356
 
 ---
 
-archive/issue_comments_061634.json:
+archive/issue_comments_061521.json:
 ```json
 {
     "body": "Attachment [trac_7356_marik.patch](tarball://root/attachments/some-uuid/ticket7356/trac_7356_marik.patch) by @robert-marik created at 2009-10-30 10:42:44\n\nThe patch for 4.2 is attached. When running tests I got two errors not related to the change in this trac. The first one is solved in #6479.\n\n\n```\nsage -t  \"devel/sage/sage/calculus/desolvers.py\"\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n",
     "created_at": "2009-10-30T10:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61634",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61521",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -96,15 +95,15 @@ sage -t  "devel/sage/sage/interfaces/maxima.py"
 
 ---
 
-archive/issue_comments_061635.json:
+archive/issue_comments_061522.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-30T10:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61635",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61522",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -114,15 +113,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_061636.json:
+archive/issue_comments_061523.json:
 ```json
 {
     "body": "\n```\nsage -t  \"devel/sage/sage/interfaces/maxima.py\"\n```\n\nThis test passed as well. (Error has been introduced by my custom settings in maxima-init.lisp file)",
     "created_at": "2009-10-30T11:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61636",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61523",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -137,15 +136,15 @@ This test passed as well. (Error has been introduced by my custom settings in ma
 
 ---
 
-archive/issue_comments_061637.json:
+archive/issue_comments_061524.json:
 ```json
 {
     "body": "According to [this](http://groups.google.cz/group/sage-devel/browse_thread/thread/67657d52cbc5a915) thread, there is another patch for this with slightly different output: #7328",
     "created_at": "2009-10-30T14:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61637",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61524",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -155,15 +154,15 @@ According to [this](http://groups.google.cz/group/sage-devel/browse_thread/threa
 
 ---
 
-archive/issue_comments_061638.json:
+archive/issue_comments_061525.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2009-11-06T06:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61638",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61525",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -173,15 +172,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_061639.json:
+archive/issue_comments_061526.json:
 ```json
 {
     "body": "Should this be closed as a duplicate since #7328 has been closed with a positive review?",
     "created_at": "2009-11-06T06:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61639",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61526",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -191,15 +190,15 @@ Should this be closed as a duplicate since #7328 has been closed with a positive
 
 ---
 
-archive/issue_comments_061640.json:
+archive/issue_comments_061527.json:
 ```json
 {
     "body": "Replying to [comment:4 jhpalmieri]:\n> Should this be closed as a duplicate since #7328 has been closed with a positive review?\n\nPerhaps yes, but the patch in this trac produces shorter output, so I think that this is better. The patch #7328 produces sometimes zeros which are not necessary at the end of decimal number.",
     "created_at": "2009-11-07T21:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61640",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61527",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -212,15 +211,15 @@ Perhaps yes, but the patch in this trac produces shorter output, so I think that
 
 ---
 
-archive/issue_comments_061641.json:
+archive/issue_comments_061528.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2009-11-20T05:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61641",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61528",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -230,15 +229,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_061642.json:
+archive/issue_comments_061529.json:
 ```json
 {
     "body": "Attachment [latex-float-4.2.1.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1.patch) by @robertwb created at 2009-11-20 05:30:03\n\nUse instead of other, applies on top of #7328",
     "created_at": "2009-11-20T05:30:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61642",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61529",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -250,15 +249,15 @@ Use instead of other, applies on top of #7328
 
 ---
 
-archive/issue_comments_061643.json:
+archive/issue_comments_061530.json:
 ```json
 {
     "body": "I agree, less digits should be printed. Floats are more like RDF than RR, so I've posted a patch that applies on top of #7328. The attached patch works fine to (though will conflict with 4.2.1).",
     "created_at": "2009-11-20T05:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61643",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61530",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -268,15 +267,15 @@ I agree, less digits should be printed. Floats are more like RDF than RR, so I'v
 
 ---
 
-archive/issue_comments_061644.json:
+archive/issue_comments_061531.json:
 ```json
 {
     "body": "Attachment [latex-float-4.2.1-reviewer.patch](tarball://root/attachments/some-uuid/ticket7356/latex-float-4.2.1-reviewer.patch) by @robert-marik created at 2009-11-20 07:44:59\n\napply on top of latex-float-4.2.1.patch",
     "created_at": "2009-11-20T07:44:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61644",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61531",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -288,15 +287,15 @@ apply on top of latex-float-4.2.1.patch
 
 ---
 
-archive/issue_comments_061645.json:
+archive/issue_comments_061532.json:
 ```json
 {
     "body": "Seems good, thanks for fixing. Since one test failed, I fixed it in reviewers patch which should be installed on the top of latex-float-4.2.1.patch  \n\nTests are O.K. now. Positive review.",
     "created_at": "2009-11-20T07:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61645",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61532",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -308,15 +307,15 @@ Tests are O.K. now. Positive review.
 
 ---
 
-archive/issue_comments_061646.json:
+archive/issue_comments_061533.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-20T07:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61646",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61533",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -326,15 +325,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_061647.json:
+archive/issue_comments_061534.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-22T07:56:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7356",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61647",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7356#issuecomment-61534",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

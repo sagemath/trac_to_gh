@@ -6,15 +6,14 @@ archive/issues_006630.json:
     "body": "Assignee: @hivert\n\nKeywords: species zero\n\nI'm writing a patch which create the empty species. Before the patch I didn't find any way to create it...\nIt is the species which contains no structure at all and as such does not seems very useful. However, it is the zero of the semi-ring of the species and may be needed when you do computation on species, for example to give the default value for the function sum()...\n\nAnd this is yet another patch from me about empty objects :)\n\nFlorent\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6630\n\n",
     "created_at": "2009-07-26T20:49:01Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "The empty species exists !!!",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6630",
-    "user": "@hivert"
+    "user": "https://github.com/hivert"
 }
 ```
 Assignee: @hivert
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6630
 
 ---
 
-archive/issue_comments_054330.json:
+archive/issue_comments_054229.json:
 ```json
 {
     "body": "The attached patch should solve the problem. I didn't address the question of making the empty species an actual neutral and zero element with respect to the sum and the product of the semi-ring of species. This means that if you add the empty species with another species you get a different species (an instance of the class `SumSpecies_class`), and the same with the product. This should be solved in a patch which actually create the semi-ring of species...\n\nFlorent",
     "created_at": "2009-07-26T21:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54330",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54229",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -57,15 +56,15 @@ Florent
 
 ---
 
-archive/issue_comments_054331.json:
+archive/issue_comments_054230.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-07-26T21:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54331",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54230",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -75,15 +74,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_054332.json:
+archive/issue_comments_054231.json:
 ```json
 {
     "body": "The patch applies cleanly to sage-4.1.1, passes doctests, and is very nicely written. Positive review.",
     "created_at": "2009-08-24T21:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54332",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54231",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -93,15 +92,15 @@ The patch applies cleanly to sage-4.1.1, passes doctests, and is very nicely wri
 
 ---
 
-archive/issue_comments_054333.json:
+archive/issue_comments_054232.json:
 ```json
 {
     "body": "The patch `trac_6630-reviewer.patch` fixes a number of typos found in `empty_species-fh-6630.patch`. It also adds the new module `sage/combinat/species/empty_species.py` to the reference manual; the module is too good to be buried among the source files of the Sage library! In adding the module to the reference manual, the patch fixes some ReST formatting typos. The docstring of the function `EmptySpecies()` has been moved to the class `EmptySpecies_class`. This is so that docstrings for empty species show up in the reference manual. \n\n\n\nThe following private methods have doctests, but no docstrings:\n \n1. `__init__()`\n2. `_gs()`\n3. `_structures()`\n\nThis lack of docstring would come back to haunt the documentation writer and user because when #6586 is merged then private methods would show up in the reference manual. So two things remain to be done:\n\n1. Someone needs to review the patch `trac_6630-reviewer.patch`.\n2. Add docstrings to the above private methods. One easy way to do so is to first apply `empty_species-fh-6630.patch`, followed by `trac_6630-reviewer.patch`. Then write docstrings based upon those two patches and upload another patch. I'm marking this ticket as \"needs work\".",
     "created_at": "2009-08-24T23:20:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54333",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54232",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -124,15 +123,15 @@ This lack of docstring would come back to haunt the documentation writer and use
 
 ---
 
-archive/issue_comments_054334.json:
+archive/issue_comments_054233.json:
 ```json
 {
     "body": "And here is another reason why this ticket needs work: the docstring coverage is not 100%:\n\n```\n[mvngu@sage sage-4.1.1]$ ./sage -coverage devel/sage-main/sage/combinat/species/empty_species.py \n----------------------------------------------------------------------\ndevel/sage-main/sage/combinat/species/empty_species.py\nSCORE devel/sage-main/sage/combinat/species/empty_species.py: 83% (5 of 6)\n\nMissing documentation:\n\t * __init__(self, min=None, max=None, weight=None):\n\n\nPossibly wrong (function name doesn't occur in doctests):\n\t * _gs(self, series_ring, base_ring):\n\t * _structures(self, structure_class, labels):\n\n----------------------------------------------------------------------\n```\n\nDocstring coverage must be 100% for any new module.",
     "created_at": "2009-08-25T00:19:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54334",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54233",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -161,15 +160,15 @@ Docstring coverage must be 100% for any new module.
 
 ---
 
-archive/issue_comments_054335.json:
+archive/issue_comments_054234.json:
 ```json
 {
     "body": "Attachment [empty_species-fh-6630-v2.patch](tarball://root/attachments/some-uuid/ticket6630/empty_species-fh-6630-v2.patch) by @hivert created at 2009-09-11 15:18:26\n\nNew version of the patch with mgnvu's one folded.",
     "created_at": "2009-09-11T15:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54335",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54234",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -181,15 +180,15 @@ New version of the patch with mgnvu's one folded.
 
 ---
 
-archive/issue_comments_054336.json:
+archive/issue_comments_054235.json:
 ```json
 {
     "body": "Dear Franco and Minh,\n\nI just uploaded the hopefully final version of the patch with full doctests coverage. I reviewed positively mvngu's patch and folded into mine. Please rereview.\n\nNote: There are two slight change in the code:\n- I corrected the output of the species (I never tried to print an empty species).\n- The internal function _structure should never be called. I let it raise an error rather than pass and update the doc accordingly.\n\nNote: for the release manager: use only `empty_species-fh-6630-v2.patch`.\n\nCheers,\n\nFlorent",
     "created_at": "2009-09-11T15:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54336",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54235",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -211,15 +210,15 @@ Florent
 
 ---
 
-archive/issue_comments_054337.json:
+archive/issue_comments_054236.json:
 ```json
 {
     "body": "Everything looks good to me.  I will delete the other old patches.",
     "created_at": "2009-09-26T04:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54337",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54236",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -229,15 +228,15 @@ Everything looks good to me.  I will delete the other old patches.
 
 ---
 
-archive/issue_comments_054338.json:
+archive/issue_comments_054237.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-26T05:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54338",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54237",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -247,15 +246,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_054339.json:
+archive/issue_comments_054238.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on making the notebook a standalone package.",
     "created_at": "2009-09-27T10:43:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54339",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6630#issuecomment-54238",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

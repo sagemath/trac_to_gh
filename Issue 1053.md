@@ -6,15 +6,14 @@ archive/issues_001053.json:
     "body": "Assignee: @williamstein\n\nSpkg up at http://sage.math.washington.edu/home/robertwb/cython/ The biggest change is it incorporates changes from Pyrex 0.9.6.3, and it also has some memory leak and refcount bug fixes. \n\nCompiles and tests SAGE fine. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1053\n\n",
     "created_at": "2007-11-01T19:47:09Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "Cython 0.9.6.8b",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1053",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1053
 
 ---
 
-archive/issue_comments_006410.json:
+archive/issue_comments_006390.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-01T21:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1053",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1053#issuecomment-6410",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1053#issuecomment-6390",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -49,15 +48,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_006411.json:
+archive/issue_comments_006391.json:
 ```json
 {
     "body": "applied to 2.8.11.rc1",
     "created_at": "2007-11-01T21:46:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1053",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1053#issuecomment-6411",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1053#issuecomment-6391",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

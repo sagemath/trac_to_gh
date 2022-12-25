@@ -6,15 +6,13 @@ archive/issues_001359.json:
     "body": "Assignee: @williamstein\n\nHere's the code, basically:\n\nbug day 6 -- #1342\nsystem:sage\n\n\n```\nK.<zeta> = CyclotomicField(7)\n```\n\n\n\n```\ndef norm_symbol_prime(a, P):\n     K = P.number_field()\n     zeta = K.gen()\n     n = K.zeta_order()\n     exponent = (1/n) * ( P.norm() - 1)\n     exponent = ZZ(exponent)\n     FF = K.residue_field(P)\n     aa = FF(a)\n     b = FF(a)^exponent\n     zeta_mod = FF(zeta)\n     # Find power m of zeta_mod that is equal to b, then\n     # return zeta^m\n     m = 0\n     w = FF(1)\n     while w != b:\n         w = w * zeta_mod\n         m += 1\n         assert m <= n, \"bug in norm_symbol_prime\"\n     return zeta^m\n\ndef norm_symbol(a, b):\n     F = K.fractional_ideal([b]).factor()\n     return prod([norm_symbol_prime(a, P)^e for P, e in F],\n               K(1))\n```\n\n\n\n```\nnorm_symbol(zeta^3, 13*zeta)\n///\n-zeta^5 - zeta^4 - zeta^3 - zeta^2 - zeta - 1\n```\n\n\n\n```\nnorm_symbol(zeta^7, K(11))\n///\n1\n```\n\n\n\n```\nnorm_symbol((1+zeta)^2, 23*zeta)\n///\nzeta^4\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1359\n\n",
     "created_at": "2007-12-02T02:52:02Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "implement cyclotomic norm residues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1359",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -92,15 +90,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1359
 
 ---
 
-archive/issue_comments_008689.json:
+archive/issue_comments_008665.json:
 ```json
 {
     "body": "Changing component from number theory to number fields.",
     "created_at": "2009-07-20T20:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8689",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8665",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -110,15 +108,15 @@ Changing component from number theory to number fields.
 
 ---
 
-archive/issue_comments_008690.json:
+archive/issue_comments_008666.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T20:00:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8690",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8666",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -128,15 +126,15 @@ Changing assignee from @williamstein to @loefflerd.
 
 ---
 
-archive/issue_comments_008691.json:
+archive/issue_comments_008667.json:
 ```json
 {
     "body": "Please explain what are \"cyclotomic norm residues\".",
     "created_at": "2011-10-09T11:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8691",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8667",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -146,15 +144,15 @@ Please explain what are "cyclotomic norm residues".
 
 ---
 
-archive/issue_comments_008692.json:
+archive/issue_comments_008668.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2011-10-09T11:08:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8692",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8668",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -164,15 +162,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_008693.json:
+archive/issue_comments_008669.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"cyclotomic field\".",
     "created_at": "2014-04-14T20:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8693",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8669",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -182,15 +180,15 @@ Changing keywords from "" to "cyclotomic field".
 
 ---
 
-archive/issue_comments_008694.json:
+archive/issue_comments_008670.json:
 ```json
 {
     "body": "Here is a git branch. But some of the original tests do not work..\n----\nNew commits:",
     "created_at": "2014-04-14T20:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8694",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8670",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -202,15 +200,15 @@ New commits:
 
 ---
 
-archive/issue_comments_008695.json:
+archive/issue_comments_008671.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-04-18T19:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8695",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8671",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -220,15 +218,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_008696.json:
+archive/issue_comments_008672.json:
 ```json
 {
     "body": "Don't get caught out:\n\n```\nsage: K.<z> = CyclotomicField(7)\nsage: z^7\n1\nsage: z^6\n-z^5 - z^4 - z^3 - z^2 - z - 1\n```\n",
     "created_at": "2014-04-18T21:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8696",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8672",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -247,15 +245,15 @@ sage: z^6
 
 ---
 
-archive/issue_comments_008697.json:
+archive/issue_comments_008673.json:
 ```json
 {
     "body": "Yes, sure. So indeed the original answers are powers of zeta. But are they correct ?",
     "created_at": "2014-04-19T06:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8697",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8673",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -265,15 +263,15 @@ Yes, sure. So indeed the original answers are powers of zeta. But are they corre
 
 ---
 
-archive/issue_comments_008698.json:
+archive/issue_comments_008674.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-05-10T16:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8698",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8674",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -283,15 +281,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_008699.json:
+archive/issue_comments_008675.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2014-05-10T16:59:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8699",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8675",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -301,15 +299,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_008700.json:
+archive/issue_comments_008676.json:
 ```json
 {
     "body": "This should be good. It takes some expert to check the mathematical correctness.",
     "created_at": "2014-05-10T16:59:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8700",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8676",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -319,15 +317,15 @@ This should be good. It takes some expert to check the mathematical correctness.
 
 ---
 
-archive/issue_comments_008701.json:
+archive/issue_comments_008677.json:
 ```json
 {
     "body": "This does not merge with 6.3.beta0, probably because of #11670.  Apart from that, the new code is definitely in need of documentation and references (see comment:2).",
     "created_at": "2014-05-11T23:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8701",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8677",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -337,15 +335,15 @@ This does not merge with 6.3.beta0, probably because of #11670.  Apart from that
 
 ---
 
-archive/issue_comments_008702.json:
+archive/issue_comments_008678.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2014-05-11T23:40:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8702",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8678",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -355,15 +353,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_008703.json:
+archive/issue_comments_008679.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-05-16T12:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8703",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8679",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -373,15 +371,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_008704.json:
+archive/issue_comments_008680.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-08-25T19:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8704",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8680",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -391,15 +389,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_008705.json:
+archive/issue_comments_008681.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-03-01T11:08:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8705",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8681",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -409,15 +407,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_008706.json:
+archive/issue_comments_008682.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-06-10T18:20:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8706",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8682",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -427,15 +425,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_008707.json:
+archive/issue_comments_008683.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-06-08T19:39:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8707",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8683",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -445,15 +443,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_008708.json:
+archive/issue_comments_008684.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-09-13T18:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8708",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8684",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -463,15 +461,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_008709.json:
+archive/issue_comments_008685.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2018-08-11T19:44:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1359",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8709",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/1359#issuecomment-8685",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 

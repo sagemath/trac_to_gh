@@ -6,15 +6,14 @@ archive/issues_004488.json:
     "body": "Assignee: boothby\n\nCC:  @mwhansen\n\nShould redirect to login page instead of giving an error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4488\n\n",
     "created_at": "2008-11-10T03:28:03Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "notebook -- login page not given when logged out and trying to view your worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4488",
-    "user": "TimothyClemans"
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: boothby
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4488
 
 ---
 
-archive/issue_comments_033148.json:
+archive/issue_comments_033083.json:
 ```json
 {
     "body": "Attachment [sage-4488.patch](tarball://root/attachments/some-uuid/ticket4488/sage-4488.patch) by TimothyClemans created at 2008-11-10 03:32:31",
     "created_at": "2008-11-10T03:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33148",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33083",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [sage-4488.patch](tarball://root/attachments/some-uuid/ticket4488/sag
 
 ---
 
-archive/issue_comments_033149.json:
+archive/issue_comments_033084.json:
 ```json
 {
     "body": "Changing assignee from boothby to TimothyClemans.",
     "created_at": "2008-11-10T04:27:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33149",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33084",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing assignee from boothby to TimothyClemans.
 
 ---
 
-archive/issue_comments_033150.json:
+archive/issue_comments_033085.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-11-10T04:27:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33150",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33085",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_033151.json:
+archive/issue_comments_033086.json:
 ```json
 {
     "body": "Mike could you please review this? Thanks",
     "created_at": "2008-11-10T04:28:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33151",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -103,15 +102,15 @@ Mike could you please review this? Thanks
 
 ---
 
-archive/issue_comments_033152.json:
+archive/issue_comments_033087.json:
 ```json
 {
     "body": "Looks very good.  I like this and it moves things to be more the way standard web apps work.  Plus it's a simple 2-liner which is well done.",
     "created_at": "2008-11-28T23:55:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33152",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33087",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +120,15 @@ Looks very good.  I like this and it moves things to be more the way standard we
 
 ---
 
-archive/issue_comments_033153.json:
+archive/issue_comments_033088.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-29T00:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33153",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33088",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +138,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_033154.json:
+archive/issue_comments_033089.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1.rc0",
     "created_at": "2008-11-29T00:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4488",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33154",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4488#issuecomment-33089",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

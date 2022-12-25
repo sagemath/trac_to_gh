@@ -6,15 +6,14 @@ archive/issues_003811.json:
     "body": "Assignee: @williamstein\n\nKeywords: number field comparison cmp\n\nThe doctests describe it best, but it was the case that\n\n\n```\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(ZZ['y'].0^4 + 23, 'a')\nTrue\nsage: NumberField(ZZ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\nsage: NumberField(QQ['x'].0^4 + 23, 'a') == NumberField(QQ['y'].0^4 + 23, 'a')\nFalse\n```\n\n\nNot good.  The variable of the defining polynomial should not matter.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3811\n\n",
     "created_at": "2008-08-12T05:06:52Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "number fields in different polynomials compare differently",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3811",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3811
 
 ---
 
-archive/issue_comments_027089.json:
+archive/issue_comments_027031.json:
 ```json
 {
     "body": "Attachment [3811-ncalexan-number-field-comparision.patch](tarball://root/attachments/some-uuid/ticket3811/3811-ncalexan-number-field-comparision.patch) by @ncalexan created at 2008-08-12 05:07:27",
     "created_at": "2008-08-12T05:07:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27089",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27031",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -62,15 +61,15 @@ Attachment [3811-ncalexan-number-field-comparision.patch](tarball://root/attachm
 
 ---
 
-archive/issue_comments_027090.json:
+archive/issue_comments_027032.json:
 ```json
 {
     "body": "EXCELLENT PATCH!\n\n\nRequest: Please stop exporting plain text patches.  Export hg patches instead, or there will be no commit messages in the hg log, and the default is to check the patch in as the person applying it.",
     "created_at": "2008-08-13T02:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27090",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27032",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -83,15 +82,15 @@ Request: Please stop exporting plain text patches.  Export hg patches instead, o
 
 ---
 
-archive/issue_comments_027091.json:
+archive/issue_comments_027033.json:
 ```json
 {
     "body": "Nick,\n\nthere is a qexport command that you should use. It will produce proper patches.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-13T02:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27091",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27033",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +106,15 @@ Michael
 
 ---
 
-archive/issue_comments_027092.json:
+archive/issue_comments_027034.json:
 ```json
 {
     "body": "Merged in Nick's name in Sage 3.1.alpha2",
     "created_at": "2008-08-13T08:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27092",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27034",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -125,15 +124,15 @@ Merged in Nick's name in Sage 3.1.alpha2
 
 ---
 
-archive/issue_comments_027093.json:
+archive/issue_comments_027035.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-13T08:35:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27093",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3811#issuecomment-27035",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

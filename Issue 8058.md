@@ -6,15 +6,14 @@ archive/issues_008058.json:
     "body": "Assignee: drkirkby\n\nSimple patch is spkg-install made it work for Open Solaris 64 bit.\n\n\nRemoved mabs from the maintainers list.\n\nThe package can be found here:\n[http://boxen.math.washington.edu/home/jsp/ports/ecm-6.2.1.p2.spkg](http://boxen.math.washington.edu/home/jsp/ports/ecm-6.2.1.p2.spkg)\n\nJaap\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8058\n\n",
     "created_at": "2010-01-25T18:42:49Z",
     "labels": [
-        "porting",
-        "major",
+        "component: porting",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "New ecm-6.2.1.p2.spkg now wokrs with Open Solaris 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8058",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: drkirkby
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8058
 
 ---
 
-archive/issue_comments_070500.json:
+archive/issue_comments_070379.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-25T20:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70500",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70379",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -57,15 +56,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_070501.json:
+archive/issue_comments_070380.json:
 ```json
 {
     "body": "Attachment [ecm-6.2.1.p2.patch](tarball://root/attachments/some-uuid/ticket8058/ecm-6.2.1.p2.patch) by @jaapspies created at 2010-01-26 17:29:34",
     "created_at": "2010-01-26T17:29:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70501",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70380",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -75,15 +74,15 @@ Attachment [ecm-6.2.1.p2.patch](tarball://root/attachments/some-uuid/ticket8058/
 
 ---
 
-archive/issue_comments_070502.json:
+archive/issue_comments_070381.json:
 ```json
 {
     "body": "That is fine. But in future, create a ticket for the defect first, then you can put the trac number in SPKG.txt, so anyone looking there, can see exactly what you fixed.",
     "created_at": "2010-01-27T13:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70502",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70381",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -93,15 +92,15 @@ That is fine. But in future, create a ticket for the defect first, then you can 
 
 ---
 
-archive/issue_comments_070503.json:
+archive/issue_comments_070382.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-27T13:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70503",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70382",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_070504.json:
+archive/issue_comments_070383.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-11T15:16:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8058",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70504",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8058#issuecomment-70383",
+    "user": "https://github.com/qed777"
 }
 ```
 

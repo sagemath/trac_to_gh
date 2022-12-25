@@ -6,7 +6,7 @@ archive/issues_005956.json:
     "body": "Assignee: @williamstein\n\nCC:  @kcrisman\n\nKeywords: image dimensions, figsize\n\nAs discussed at this [sage-devel thread](http://groups.google.com/group/sage-devel/browse_thread/thread/c411254b7bc0bb97), the optional argument `figsize` of the command `show()` needs to clearly state that the units of the image are in inches. As of Sage 3.4.1, the docstring for `show()` says:\n\n```\n- ``figsize``- [width, height] (same for square aspect)\n```\n\nwhich can be interpreted to mean that one can do something like `figsize=[w,h]`. But something like the following produces a segmentation fault:\n\n```\n[mvngu@sage ~]$ sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[256,256])\n```\n\nwhile the following results in a `ValueError`:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: q = var(\"q\")\nsage: f(q) = (q^4 - q^2 + 1) * (q^4 + q^3 + q^2 + q + 1) * (q^4 - q^3 \\\n+ q^2 - q + 1) * (q^6 + q^5 + q^4 + q^3 + q^2 + q + 1) * (q^6 - q^5 + \\\nq^4 - q^3 + q^2 - q + 1) * (q^(20) - q^(18) - q^(14) - q^(12) + q^(10) \\\n- q^8 - q^6 - q^2 + 1)\nsage: g(q) = q^8 * (q^4 + q^2 + 1)^2 * (q^4 + 1)^5\nsage: p = complex_plot(f/g, (-2,2), (-2,2))\nsage: p.show(figsize=[500,500])\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n...\nValueError: width and height must each be below 32768\n```\n\nEssentially, the documentation for `show()` needs to be updated, especially the optional arguments, to clearly explain the units of measurement of the width and height of the image size. Also, it would be a good idea to specify how one can pass in values for those dimensions. For example, can one do this `figsize=[124,124]`?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5956\n\n",
     "created_at": "2009-05-01T07:17:25Z",
     "labels": [
-        "graphics",
+        "component: graphics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005956.json:
     "title": "image dimensions for show() are in inches",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5956",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: @williamstein
@@ -74,15 +74,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5956
 
 ---
 
-archive/issue_comments_047109.json:
+archive/issue_comments_047019.json:
 ```json
 {
     "body": "Changing keywords from \"image dimensions, figsize\" to \"image dimensions, figsize, beginner\".",
     "created_at": "2010-05-26T15:32:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47109",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47019",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -92,15 +92,15 @@ Changing keywords from "image dimensions, figsize" to "image dimensions, figsize
 
 ---
 
-archive/issue_comments_047110.json:
+archive/issue_comments_047020.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-11-03T21:42:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47110",
-    "user": "emchennyc"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47020",
+    "user": "https://trac.sagemath.org/admin/accounts/users/emchennyc"
 }
 ```
 
@@ -110,15 +110,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_047111.json:
+archive/issue_comments_047021.json:
 ```json
 {
     "body": "Made a doc update after reading this thread:  https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/xBElS3vAu5c\n\nDo you think any more info should be included in the changes?",
     "created_at": "2012-11-03T21:42:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47111",
-    "user": "emchennyc"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47021",
+    "user": "https://trac.sagemath.org/admin/accounts/users/emchennyc"
 }
 ```
 
@@ -130,15 +130,15 @@ Do you think any more info should be included in the changes?
 
 ---
 
-archive/issue_comments_047112.json:
+archive/issue_comments_047022.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2012-11-04T01:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47112",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47022",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -148,15 +148,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_047113.json:
+archive/issue_comments_047023.json:
 ```json
 {
     "body": "This would be a good start.  \n\nWhat's the reference for the dpi, just out of curiosity?  (I assume it's right in the Sage or mpl source.)  Also, telling us the maximum possible would be helpful, given the errors - especially since the one above is confusing since the `32768` is in \"dots\", not inches.  Presumably if one reset the default dpi...\n\n```\nsage: P.show(figsize=[1,327],dpi=100)\nsage: P.show(figsize=[1,328],dpi=100)\n<ValueError>\nsage: P.show(figsize=[1,328],dpi=80)\n```\n\nSo this should be very, very clear, in order to resolve this ticket.\n\nAdditionally, you'll want to add a doctest to verify that some things don't go boom, and that the error is correctly raised, etc.  Maybe even a `# not tested` line with the segfault.\n\nFinally, we may also want to report the segfault upstream with a \"pure\" matplotlib example, if you can concoct one.\n\nBut all that said, thanks very much for looking at this - this is just part of the normal review process, good start.",
     "created_at": "2012-11-04T01:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47113",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47023",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -183,15 +183,15 @@ But all that said, thanks very much for looking at this - this is just part of t
 
 ---
 
-archive/issue_comments_047114.json:
+archive/issue_comments_047024.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-11-10T18:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47114",
-    "user": "emchennyc"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47024",
+    "user": "https://trac.sagemath.org/admin/accounts/users/emchennyc"
 }
 ```
 
@@ -201,15 +201,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_047115.json:
+archive/issue_comments_047025.json:
 ```json
 {
     "body": "Thank you for the pointers. In matplotlib/rcsetup.py the default figure properties start at line 508. \nline 509 # figure size in inches: width by height 'figure.figsize'    : [ [8.0,6.0], validate_nseq_float(2)]\nline 523 'savefig.dpi'         : [100, validate_float],   # DPI\n\nI submitted a new patch to include what I think you mean by a doctest. I wasn't sure what you meant about including '# not tested line with the segfault'. Should I include an example with the segfault in the docstring?\n\nStrangely enough, I did not raise any errors when I tried a 'pure' matplotlib example...\n\n\n```\nfrom matplotlib import pyplot as plt\nf=plt.figure(figsize=[28,10],dpi=100)\nf.show()\n```\n\n\n\nWould someone kindly review  and let me know what else should be included in the doctest? I appreciate your patience with this, as I am (obviously) new and hoping to learn. Thank you!",
     "created_at": "2012-11-10T18:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47115",
-    "user": "emchennyc"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47025",
+    "user": "https://trac.sagemath.org/admin/accounts/users/emchennyc"
 }
 ```
 
@@ -236,15 +236,15 @@ Would someone kindly review  and let me know what else should be included in the
 
 ---
 
-archive/issue_comments_047116.json:
+archive/issue_comments_047026.json:
 ```json
 {
     "body": "This ticket is awesome! Brought my laptop to a crawl! :)\n\n`@`emchennyc: I might come back to this ticket if kcrisman doesn't. For now, it seems that matplotlib (even the latest 1.2.0 release) does not handle the parameters `[256,256]` properly. It tries to allocate memory and then fails, resulting in a segfault.\n\nWhat kcrisman asks is a doctest like this (under a `TEST:` section; look at how these sections are written in other functions or other files):\n\n```\nTEST:\n\nThe following plot segfaults sage and should not be doctested.::\n\n    sage: plot(x).show(figsize=[256,256]) # not tested\n\n```\n\n\nIf you do happen to run this command, be very careful. I suggest you set a ulimit before you start sage. If you have, say 3G, of memory/RAM, then set ulimit to 2G and only then start sage. If you have even less memory then you will need to set even lower ulimit, but sage won't run properly below 1G.\n\n```\n$ ulimit -v 2000000\n$ sage\nsage: plot(x).show(figsize=[256,256]) # boom, segv!!\n```\n\n\nThat said, I would like you to set some defaults in your editor. Currently, your patch contains a mixture of tabs and spaces. I suggest you change the settings in your editor to not insert tabs, and instead insert 4 spaces every time you press a tab key.",
     "created_at": "2012-11-16T10:05:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47116",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47026",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -279,15 +279,15 @@ That said, I would like you to set some defaults in your editor. Currently, your
 
 ---
 
-archive/issue_comments_047117.json:
+archive/issue_comments_047027.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2013-01-03T20:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47117",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47027",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -297,15 +297,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_047118.json:
+archive/issue_comments_047028.json:
 ```json
 {
     "body": "Needs work due to the issues raise by ppurka, but getting close!",
     "created_at": "2013-01-03T20:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47118",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47028",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -315,15 +315,15 @@ Needs work due to the issues raise by ppurka, but getting close!
 
 ---
 
-archive/issue_comments_047119.json:
+archive/issue_comments_047029.json:
 ```json
 {
     "body": "`@`ppurka Thank you for the feedback! The tests I included in the attached patch pass when I run:\n./sage -t -verbose 'devel/sage-5956/sage/plot/graphics.py'\n\nThen, I\n- ran ./sage -docbuild reference html\n- navigated to SAGEROOT/devel/branch/doc/output/html/en/reference\n- opened plotting.html in a browser\n- visited the doc page for Graphics objects\nbut did not see the documentation that I added. Did I miss a step?\n\nAlso, here is a matplotlib example which I believe this bug is related to. Please correct me if I'm wrong and feel free to advise if I should use this example to report as a matplotlib issue: http://pastebin.com/raw.php?i=5Arg52e2",
     "created_at": "2013-01-05T13:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47119",
-    "user": "emchennyc"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47029",
+    "user": "https://trac.sagemath.org/admin/accounts/users/emchennyc"
 }
 ```
 
@@ -343,15 +343,15 @@ Also, here is a matplotlib example which I believe this bug is related to. Pleas
 
 ---
 
-archive/issue_comments_047120.json:
+archive/issue_comments_047030.json:
 ```json
 {
     "body": "Replying to [comment:9 emchennyc]:\n> `@`ppurka Thank you for the feedback! The tests I included in the attached patch pass when I run:\n> ./sage -t -verbose 'devel/sage-5956/sage/plot/graphics.py'\n> \n> Then, I\n\nYou have to do ./sage -b first.  The tests run on the copy of the code in the devel/sage directory, but the docs build off the ones in the build directory which that command does.\n\n> - ran ./sage -docbuild reference html\n> - navigated to SAGEROOT/devel/branch/doc/output/html/en/reference\n> - opened plotting.html in a browser\n> - visited the doc page for Graphics objects\n> but did not see the documentation that I added. Did I miss a step?\n> \n> Also, here is a matplotlib example which I believe this bug is related to. Please correct me if I'm wrong and feel free to advise if I should use this example to report as a matplotlib issue: http://pastebin.com/raw.php?i=5Arg52e2",
     "created_at": "2013-01-05T13:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47120",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47030",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -375,15 +375,15 @@ You have to do ./sage -b first.  The tests run on the copy of the code in the de
 
 ---
 
-archive/issue_comments_047121.json:
+archive/issue_comments_047031.json:
 ```json
 {
     "body": "Thanks for the update. There is one more thing that I overlooked earlier. The documentation should mention that the number `32768` is in dots per inch. Maybe the text of `ValueError` should also end in **32768 dots per inch**.\n\n```\nsage: e.show(figsize=[328,10],dpi=100)\nValueError: width and height must each be below 32768 dots per inch.\n```\n\nI think the following modification to the `figsize` documentation is warranted.\n\n```\n- ``figsize`` - (default: [8.0,6.0]) [width, height] inches. The maximum value\n  of each of the width and the height can be 327 inches, at the default ``dpi``\n  of 100 dpi, which is just shy of the maximum allowed value of 32768 dots\n  per inch.\n```\n\nThen, the test should have the following description:\n\n```\n        The figsize width and height parameters must be less than 328 inches each,\n        corresponding to the maximum allowed dpi of 32768.::\n```\n\nThis will make the number 32768 more clear to anyone who is curious what that number means in the `ValueError`.\n\nI am unable to replicate your matplotlib example. A figure doesn't seem to have a `show()` attribute. However, the following example successfully crashes matplotlib.\n\n```\n~\u00bb ulimit -v 2000000\n~\u00bb sage -ipython\nPython 2.7.3 (default, Dec 30 2012, 21:34:30)\nType \"copyright\", \"credits\" or \"license\" for more information.\n\nIPython 0.10.2 -- An enhanced Interactive Python.\n?         -> Introduction and overview of IPython's features.\n%quickref -> Quick reference.\nhelp      -> Python's own help system.\nobject?   -> Details about 'object'. ?object also works, ?? prints more.\n\nIn [1]: from matplotlib import pyplot\n\nIn [2]: pyplot.figure(figsize=[232,232])\nOut[2]: <matplotlib.figure.Figure object at 0x12ba950>\n\nIn [3]: pyplot.savefig('/tmp/a.png')\n...\nRuntimeError: Could not allocate memory for image\n```\n",
     "created_at": "2013-01-05T14:25:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47121",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47031",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -441,15 +441,15 @@ RuntimeError: Could not allocate memory for image
 
 ---
 
-archive/issue_comments_047122.json:
+archive/issue_comments_047032.json:
 ```json
 {
     "body": "Attachment [trac_5956_figsize_units.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.patch) by emchennyc created at 2013-01-05 14:43:56",
     "created_at": "2013-01-05T14:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47122",
-    "user": "emchennyc"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47032",
+    "user": "https://trac.sagemath.org/admin/accounts/users/emchennyc"
 }
 ```
 
@@ -459,15 +459,15 @@ Attachment [trac_5956_figsize_units.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_047123.json:
+archive/issue_comments_047033.json:
 ```json
 {
     "body": "Attachment [trac_5956_figsize_units.1.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956_figsize_units.1.patch) by @ppurka created at 2013-02-02 08:42:37\n\napply only this",
     "created_at": "2013-02-02T08:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47123",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47033",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -479,15 +479,15 @@ apply only this
 
 ---
 
-archive/issue_comments_047124.json:
+archive/issue_comments_047034.json:
 ```json
 {
     "body": "Attachment [only_for_review.patch](tarball://root/attachments/some-uuid/ticket5956/only_for_review.patch) by @ppurka created at 2013-02-02 08:43:03\n\nnot to be merged. only for review.",
     "created_at": "2013-02-02T08:43:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47124",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47034",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -499,15 +499,15 @@ not to be merged. only for review.
 
 ---
 
-archive/issue_comments_047125.json:
+archive/issue_comments_047035.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-02-02T08:46:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47125",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47035",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -517,15 +517,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_047126.json:
+archive/issue_comments_047036.json:
 ```json
 {
     "body": "Updated the patch to sage-5.7beta0 and introduced some other changes.\n\nThe patch [attachment:only_for_review.patch] contains the changes I made after rebasing the patch to 5.7beta0. In particular, I have introduced the changes I suggested in my comments, and have fixed failing doctests due to the use/redefining of `e` in the earlier patch.\n\nThe changes needs review.\n\nPatchbot apply trac_5956_figsize_units.1.patch",
     "created_at": "2013-02-02T08:46:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47126",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47036",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -541,15 +541,15 @@ Patchbot apply trac_5956_figsize_units.1.patch
 
 ---
 
-archive/issue_comments_047127.json:
+archive/issue_comments_047037.json:
 ```json
 {
     "body": "This hit me today in class!  At least, I think so - `figsize=[5,5]` shouldn't necessarily yield this, but it was the same message.  I thought it was in, but high priority now.\n\nAlso, I think that #12592 is a dup.",
     "created_at": "2013-03-22T21:08:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47127",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47037",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -561,15 +561,15 @@ Also, I think that #12592 is a dup.
 
 ---
 
-archive/issue_comments_047128.json:
+archive/issue_comments_047038.json:
 ```json
 {
     "body": "Oh, I figured out my (very stupid) problem - I used `figsize=[-5,5]`, which is of course absurd.  Still, probably wouldn't hurt to put in a check for absurd values... such typos are \"all too easy\".",
     "created_at": "2013-03-22T21:14:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47128",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47038",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -579,15 +579,15 @@ Oh, I figured out my (very stupid) problem - I used `figsize=[-5,5]`, which is o
 
 ---
 
-archive/issue_comments_047129.json:
+archive/issue_comments_047039.json:
 ```json
 {
     "body": "Needs a bit of work.  The limit is in pixels (dots), not dots per inch.  `2^15` dots per inch would be impressive indeed.  Notice also that [apparently this could be raised](http://matplotlib.1069221.n5.nabble.com/the-32768-pixel-limit-tt30382.html#none) if one really wanted to.\n\nI'll add a reviewer patch momentarily.",
     "created_at": "2013-03-23T01:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47129",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47039",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -599,15 +599,15 @@ I'll add a reviewer patch momentarily.
 
 ---
 
-archive/issue_comments_047130.json:
+archive/issue_comments_047040.json:
 ```json
 {
     "body": "Attachment [trac_5956-reviewer.patch](tarball://root/attachments/some-uuid/ticket5956/trac_5956-reviewer.patch) by @kcrisman created at 2013-03-23 02:24:38\n\nI think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.\n\nppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.\n\nPatchbot: apply trac_5956_figsize_units.1.patch and trac_5956-reviewer.patch to devel/sage.",
     "created_at": "2013-03-23T02:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47130",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47040",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -623,15 +623,15 @@ Patchbot: apply trac_5956_figsize_units.1.patch and trac_5956-reviewer.patch to 
 
 ---
 
-archive/issue_comments_047131.json:
+archive/issue_comments_047041.json:
 ```json
 {
     "body": "Replying to [comment:17 kcrisman]:\n> I think this needs some review, since I add some assertions and so forth.   I hope this clarifies things more, though, and adds doc in the main plot page where it is probably needed.\n\nThanks. Looks good to me.\n\n> ppurka, if you are an author too, feel free to add yourself.  Positive review to everything before my patch.\n\nI did change some doctests.",
     "created_at": "2013-03-23T07:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47131",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47041",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -648,15 +648,15 @@ I did change some doctests.
 
 ---
 
-archive/issue_comments_047132.json:
+archive/issue_comments_047042.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-03-23T07:09:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47132",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47042",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -666,15 +666,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_047133.json:
+archive/issue_comments_047043.json:
 ```json
 {
     "body": "Use `ValueError` for bad user input, not `AssertionError`. If there is any way to produce an `AssertionError` using public functions, that is by definition a bug.\n\nAssertions are meant to check internal consistency inside algorithms. They express \"I *know* this condition is true\", not \"I want to *check* that this condition is true\".",
     "created_at": "2013-03-23T10:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47133",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47043",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -686,15 +686,15 @@ Assertions are meant to check internal consistency inside algorithms. They expre
 
 ---
 
-archive/issue_comments_047134.json:
+archive/issue_comments_047044.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2013-03-23T10:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47134",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47044",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -704,15 +704,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_047135.json:
+archive/issue_comments_047045.json:
 ```json
 {
     "body": "> Assertions are meant to check internal consistency inside algorithms. They express \"I *know* this condition is true\", not \"I want to *check* that this condition is true\".\nOkay, fair enough.  The problem is that now I have to go remember how to check that something is a numeric type as well - which is better in the long run, but which is tricky with all the zillions of numeric input types Sage has... does something like `isnumeric` work?  It sounds familiar.",
     "created_at": "2013-03-23T12:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47135",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47045",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -723,15 +723,15 @@ Okay, fair enough.  The problem is that now I have to go remember how to check t
 
 ---
 
-archive/issue_comments_047136.json:
+archive/issue_comments_047046.json:
 ```json
 {
     "body": "Replying to [comment:20 kcrisman]:\n> > Assertions are meant to check internal consistency inside algorithms. They express \"I *know* this condition is true\", not \"I want to *check* that this condition is true\".\n> Okay, fair enough.  The problem is that now I have to go remember how to check that something is a numeric type as well\n\nJust convert, for example\n\n```\nx = float(x)\n```\n",
     "created_at": "2013-03-23T12:47:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47136",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47046",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -750,15 +750,15 @@ x = float(x)
 
 ---
 
-archive/issue_comments_047137.json:
+archive/issue_comments_047047.json:
 ```json
 {
     "body": "Why should we go around checking for numeric types? This is not a \"critical\" application that should ensure sane inputs for all kinds of inputs. If the user sends in garbage, they will eventually get garbage out from at least matplotlib, if not earlier in the process.",
     "created_at": "2013-03-23T13:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47137",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47047",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -768,15 +768,15 @@ Why should we go around checking for numeric types? This is not a "critical" app
 
 ---
 
-archive/issue_comments_047138.json:
+archive/issue_comments_047048.json:
 ```json
 {
     "body": "It's not critical in that sense, but it's the kind of thing where I figure we might as well make sure that any error message sent makes sense.  The current error\n\n```\nValueError: width and height must each be below 32768\n```\n\ndoesn't refer to `figsize` and at least made me totally miss that I had somehow smuggled a minus sign in there, since I was frantically trying to make the image smaller and wondering why five was too big :-)  I figure if it can happen to an experienced Sage user \"on the spot\", it will definitely happen to a new user.  Jeroen's comment seems quite reasonable especially as everything matplotlib is going to end up a float anyway, if I recall correctly.\n\nI'll try to get this all packaged up in the next day or two.",
     "created_at": "2013-03-26T03:01:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47138",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47048",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -794,15 +794,15 @@ I'll try to get this all packaged up in the next day or two.
 
 ---
 
-archive/issue_comments_047139.json:
+archive/issue_comments_047049.json:
 ```json
 {
     "body": "Added a git version of the patch. This is based on 6.1.beta5.",
     "created_at": "2014-01-19T14:31:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47139",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47049",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -812,15 +812,15 @@ Added a git version of the patch. This is based on 6.1.beta5.
 
 ---
 
-archive/issue_comments_047140.json:
+archive/issue_comments_047050.json:
 ```json
 {
     "body": "> I'll try to get this all packaged up in the next day or two.\nNext day or two, next year or two...\n> Added a git version of the patch. This is based on 6.1.beta5.\nAmazingly, apparently still applies.\n\nBut we still haven't taken care of Jeroen's comment.  So I will try to do that now.\n----\nNew commits:",
     "created_at": "2014-11-07T19:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47140",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47050",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -837,15 +837,15 @@ New commits:
 
 ---
 
-archive/issue_comments_047141.json:
+archive/issue_comments_047051.json:
 ```json
 {
     "body": "Okay, the last commit only needs review.\n----\nNew commits:",
     "created_at": "2014-11-07T19:39:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47141",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47051",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -857,15 +857,15 @@ New commits:
 
 ---
 
-archive/issue_comments_047142.json:
+archive/issue_comments_047052.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2014-11-07T19:39:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47142",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47052",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -875,15 +875,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_047143.json:
+archive/issue_comments_047053.json:
 ```json
 {
     "body": "Replying to [comment:22 ppurka]:\n> Why should we go around checking for numeric types? This is not a \"critical\" application that should ensure sane inputs for all kinds of inputs. If the user sends in garbage, they will eventually get garbage out from at least matplotlib, if not earlier in the process.\n\nWell, it could be that the user will send some Sage numeric type, which matplotlib might treat like garbage. A conversion like\n\n```\nx = float(x)   # assuming that it's a float that you need\n```\n\nwill solve both problems: it will raise a `TypeError` when true garbage is given but it should work for all Sage numeric types.",
     "created_at": "2014-11-08T11:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47143",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47053",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -902,15 +902,15 @@ will solve both problems: it will raise a `TypeError` when true garbage is given
 
 ---
 
-archive/issue_comments_047144.json:
+archive/issue_comments_047054.json:
 ```json
 {
     "body": "A minor point, but I wouldn't write segfaulting examples. Imagine the user tries those \"examples\" without reading the surrounding text...",
     "created_at": "2014-11-08T11:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47144",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47054",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -920,15 +920,15 @@ A minor point, but I wouldn't write segfaulting examples. Imagine the user tries
 
 ---
 
-archive/issue_comments_047145.json:
+archive/issue_comments_047055.json:
 ```json
 {
     "body": "Replying to [comment:34 jdemeyer]:\n> A minor point, but I wouldn't write segfaulting examples. Imagine the user tries those \"examples\" without reading the surrounding text...\nHow about we prepend the segfaulting line with a comment? Like this:\n\n```\nsage: #p.show(figsize=[232,232],dpi=100) # not tested\n```\n\nSo, anyone who blindly copy pastes will get nothing out of it. And has to make two mistakes to make it segfault. I think the reason this example is there is to make the user aware that unreasonable parameters will result in an uncomfortable end.",
     "created_at": "2014-11-09T14:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47145",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47055",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -946,15 +946,15 @@ So, anyone who blindly copy pastes will get nothing out of it. And has to make t
 
 ---
 
-archive/issue_comments_047146.json:
+archive/issue_comments_047056.json:
 ```json
 {
     "body": "That sounds very reasonable.\n\nJeroen, are you saying that my latest commit needs something added like the `float` business?",
     "created_at": "2014-11-10T13:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47146",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47056",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -966,15 +966,15 @@ Jeroen, are you saying that my latest commit needs something added like the `flo
 
 ---
 
-archive/issue_comments_047147.json:
+archive/issue_comments_047057.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-11-13T19:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47147",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47057",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -984,15 +984,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_047148.json:
+archive/issue_comments_047058.json:
 ```json
 {
     "body": "Okay, I think this is ready for review.  The `float` stuff is actually unnecessary but it can't hurt, since we definitely only want things that can be floats in there.\n----\nNew commits:",
     "created_at": "2014-11-13T19:03:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47148",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47058",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1004,15 +1004,15 @@ New commits:
 
 ---
 
-archive/issue_comments_047149.json:
+archive/issue_comments_047059.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2014-11-13T20:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47149",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47059",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1022,15 +1022,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_047150.json:
+archive/issue_comments_047060.json:
 ```json
 {
     "body": "Is there a check that `len(figsize) == 2`?\n\nI would change the logic of those branches to\n\n```\nif figure is None:\n    # add a good comment here\n    ...\nelif isinstance(figsize, (list, tuple)):\n    # figsize should be two positive numbers\n    if len(figsize) != 2:\n        raise ValueError('...')\n    ...\nelse:\n    # figsize should be a single positive number\n    figsize = float(figsize) # to pass to mpl\n    if figsize <= 0:\n        raise ValueError(\"figsize should be positive, not {0}\".format(figsize))\n    ...\n```\n\n\nAnd add a doctest for some non-float `figsize` argument like\n\n```\nsage: var('x')\nsage: ...figsize=x...\n```\n",
     "created_at": "2014-11-13T20:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47150",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47060",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1068,15 +1068,15 @@ sage: ...figsize=x...
 
 ---
 
-archive/issue_comments_047151.json:
+archive/issue_comments_047061.json:
 ```json
 {
     "body": "The `Unhandled SIGSEGV:` message isn't the current message (which is shorter).",
     "created_at": "2014-11-13T20:10:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47151",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47061",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1086,15 +1086,15 @@ The `Unhandled SIGSEGV:` message isn't the current message (which is shorter).
 
 ---
 
-archive/issue_comments_047152.json:
+archive/issue_comments_047062.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-11-13T21:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47152",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47062",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1104,15 +1104,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_047153.json:
+archive/issue_comments_047063.json:
 ```json
 {
     "body": "Okay, that's what I can do today.  If you really want the code reorganized that badly it will have to fall to you, I'm afraid.  But everything else should be taken care of.",
     "created_at": "2014-11-13T21:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47153",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47063",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1122,15 +1122,15 @@ Okay, that's what I can do today.  If you really want the code reorganized that 
 
 ---
 
-archive/issue_comments_047154.json:
+archive/issue_comments_047064.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2014-11-13T21:22:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47154",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47064",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1140,15 +1140,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_047155.json:
+archive/issue_comments_047065.json:
 ```json
 {
     "body": "I think you have addressed Jeroen's concerns.",
     "created_at": "2014-11-16T08:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47155",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47065",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -1158,15 +1158,15 @@ I think you have addressed Jeroen's concerns.
 
 ---
 
-archive/issue_comments_047156.json:
+archive/issue_comments_047066.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-11-16T08:40:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47156",
-    "user": "@ppurka"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47066",
+    "user": "https://github.com/ppurka"
 }
 ```
 
@@ -1176,15 +1176,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_047157.json:
+archive/issue_comments_047067.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2014-11-17T13:17:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47157",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47067",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1194,15 +1194,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_047158.json:
+archive/issue_comments_047068.json:
 ```json
 {
     "body": "Followup #17057.",
     "created_at": "2014-11-20T21:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5956",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47158",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5956#issuecomment-47068",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

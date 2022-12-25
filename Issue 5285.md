@@ -6,15 +6,14 @@ archive/issues_005285.json:
     "body": "Assignee: @jbandlow\n\nCC:  sage-combinat\n\nKeywords: dyck words\n\nMike Zabrocki posted the following to sage.combinat.devel:\n\nHi,\nI'm making a bug report instead of fixing this myself.\n\nI have a student who is working on Dyck paths and\nshe read the documentation for some of the code\nand noticed a few inconsistencies.\n\na.b_statistic(self)\n\nReturns the b-statistic for the Dyck word.\n\nOne can view a balanced Dyck word as a lattice path from (0,0) to\n(n,n) in the first quadrant by letting '1's represent steps in\nthe direction (1,0) and '0's represent steps in the direction\n(0,1).  The resulting path will remain weakly above the\ndiagonal y = x.\n\nAs she points out (1,0) should mean horizontal step (following\nDescartes) and (0,1) should be a vertical step in which case\nthe path will be below the diagonal compared to what the code\nused (e.g. 11100010 steps horizontally first by the documentation\nhence is 'below' the diagonal).  I believe that interchanging (1,0)\nand (0,1) should fix the inconsistency in this part of the\ndocumentation.\n\nThen further down the documentation reads:\n\nWe can think of our bounce path as describing the trail of a \nbilliard ball shot North from (0, 0), which \"bounces\" right\nwhenever it encounters a horizontal step and \"bounces\" up\nwhen it encounters the line y = x. The bouncing ball will strike\nthe diagonal at places (0, 0), (j_1, j_1), (j_2, j_2), ... ,\n(j_r-1, j_r-1), (j_r, j_r) = (n, n). We define the b-statistic to\nbe the sum sum_{i=1}^{r-1} n - j_i.\n\nand in the the examples (one of many):\n\n```\n  sage: DyckWord([1,1,1,0,0,1,0,0]).b_statistic()\n  2\n```\n\n\ndoes not agree with the description because the diagonal\nplaces it hits are (0,0), (3,3), (4,4) and 4-3 = 1.\nThe documentation does not agree with the code.\n\nWhat is really happening is different.  The bounce path starts\nat (n,n), moves left and down and the statistic is the sum\nof the coordinates j_i where the bounce path hits the diagonal\nat (j_i, j_i).\n\nThe paragraph should read (which is no\nlonger quoting *directly* from Jim Haglund's reference):\n\nWe can think of our bounce path as describing the trail of a\nbilliard ball shot West from (n, n), which \"bounces\" down\nwhenever it encounters a vertical step and \"bounces\" left\nwhen it encounters the line y = x. The bouncing ball will strike\nthe diagonal at places (0, 0), (j_1, j_1), (j_2, j_2), ... ,\n(j_r-1, j_r-1), (j_r, j_r) = (n, n). We define the b-statistic to\nbe the sum sum_{i=1}^{r-1} j_i.\n\nIt seems easier to me to change the documentation than the code.\nBoth definitions of bounce statistic are valid.\nThe documentation was included directly from the reference,\nbut does not follow the code which does indeed refer to \"left\" and\n\"drop\" rather than \"right\" and \"up\"\n\n-Mike\n\nIssue created by migration from https://trac.sagemath.org/ticket/5285\n\n",
     "created_at": "2009-02-16T14:30:22Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Dyck Paths documentation problem",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5285",
-    "user": "@jbandlow"
+    "user": "https://github.com/jbandlow"
 }
 ```
 Assignee: @jbandlow
@@ -104,15 +103,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5285
 
 ---
 
-archive/issue_comments_040617.json:
+archive/issue_comments_040538.json:
 ```json
 {
     "body": "Changing component from algebra to combinatorics.",
     "created_at": "2009-02-16T14:35:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40617",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40538",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -122,15 +121,15 @@ Changing component from algebra to combinatorics.
 
 ---
 
-archive/issue_comments_040618.json:
+archive/issue_comments_040539.json:
 ```json
 {
     "body": "Attachment [5285.patch](tarball://root/attachments/some-uuid/ticket5285/5285.patch) by @jbandlow created at 2009-02-16 14:45:12",
     "created_at": "2009-02-16T14:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40618",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40539",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -140,15 +139,15 @@ Attachment [5285.patch](tarball://root/attachments/some-uuid/ticket5285/5285.pat
 
 ---
 
-archive/issue_comments_040619.json:
+archive/issue_comments_040540.json:
 ```json
 {
     "body": "Michael,\n\nAny chance of this getting into 3.3 if it gets a quick review?",
     "created_at": "2009-02-16T14:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40619",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40540",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -160,15 +159,15 @@ Any chance of this getting into 3.3 if it gets a quick review?
 
 ---
 
-archive/issue_comments_040620.json:
+archive/issue_comments_040541.json:
 ```json
 {
     "body": "Replying to [comment:2 jbandlow]:\n> Michael,\n\nHi Jason,\n\n> Any chance of this getting into 3.3 if it gets a quick review?\n\nYep, the patch is documentation only, so get a review and it will be merged.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-16T14:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40620",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40541",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -189,15 +188,15 @@ Michael
 
 ---
 
-archive/issue_comments_040621.json:
+archive/issue_comments_040542.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-02-17T13:51:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40621",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40542",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -207,15 +206,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_040622.json:
+archive/issue_comments_040543.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-17T20:21:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40622",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40543",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -225,15 +224,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_040623.json:
+archive/issue_comments_040544.json:
 ```json
 {
     "body": "Merged in Sage 3.3.rc2.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-17T20:21:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5285",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40623",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5285#issuecomment-40544",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

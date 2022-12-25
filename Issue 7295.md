@@ -6,7 +6,7 @@ archive/issues_007295.json:
     "body": "Assignee: tbd\n\nThe removal of the old version of ecm in ecm-6.2.1_p0.spkg\nis broken because of typo:\n\n\nrm -f \"$SAGE_LCOAL\"/lib/libecm.*\n\n\nshould be:\n\n\nrm -f \"$SAGE_LOCAL\"/lib/libecm.*\n\nNotice LOCAL\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7295\n\n",
     "created_at": "2009-10-25T09:35:57Z",
     "labels": [
-        "build",
+        "component: build",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007295.json:
     "title": "typo in ecm spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7295",
-    "user": "@kiwifb"
+    "user": "https://github.com/kiwifb"
 }
 ```
 Assignee: tbd
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7295
 
 ---
 
-archive/issue_comments_060734.json:
+archive/issue_comments_060621.json:
 ```json
 {
     "body": "patch to spkg-install",
     "created_at": "2009-10-26T01:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60734",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60621",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -60,15 +60,15 @@ patch to spkg-install
 
 ---
 
-archive/issue_comments_060735.json:
+archive/issue_comments_060622.json:
 ```json
 {
     "body": "Attachment [ecm-6.2.1_p0-spkg-install.patch](tarball://root/attachments/some-uuid/ticket7295/ecm-6.2.1_p0-spkg-install.patch) by @kiwifb created at 2009-10-26 01:02:32",
     "created_at": "2009-10-26T01:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60735",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60622",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -78,15 +78,15 @@ Attachment [ecm-6.2.1_p0-spkg-install.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_060736.json:
+archive/issue_comments_060623.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-26T01:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60736",
-    "user": "@kiwifb"
+    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60623",
+    "user": "https://github.com/kiwifb"
 }
 ```
 
@@ -96,15 +96,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060737.json:
+archive/issue_comments_060624.json:
 ```json
 {
     "body": "The updated spkg can be found at\n\nhttp://sage.math.washington.edu/home/mvngu/release/spkg/standard/ecm/ecm-6.2.1.p1.spkg\n\nAll changes have been committed in fbissey's name.",
     "created_at": "2009-10-28T14:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60737",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60624",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -118,15 +118,15 @@ All changes have been committed in fbissey's name.
 
 ---
 
-archive/issue_comments_060738.json:
+archive/issue_comments_060625.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-28T14:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60738",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60625",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -136,15 +136,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060739.json:
+archive/issue_comments_060626.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-31T16:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7295",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60739",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7295#issuecomment-60626",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

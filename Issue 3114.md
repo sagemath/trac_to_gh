@@ -6,7 +6,7 @@ archive/issues_003114.json:
     "body": "Assignee: mabshoff\n\nAny gcc 4.0.0 provided by Apple is buggier than a Florida swamp. Refuse to build Sage with it at start up!\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3114\n\n",
     "created_at": "2008-05-06T22:06:10Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003114.json:
     "title": "blacklist  gcc version 4.0.0 on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3114",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,33 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3114
 
 ---
 
-archive/issue_comments_021563.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2009-06-15T23:19:02Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/3114",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3114#issuecomment-21563",
-    "user": "@williamstein"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_021564.json:
+archive/issue_comments_021519.json:
 ```json
 {
     "body": "`prereq` currently checks for gcc >= 4.0.1, so this has already been taken care of.",
     "created_at": "2010-01-17T06:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3114#issuecomment-21564",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3114#issuecomment-21519",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -69,15 +51,15 @@ archive/issue_comments_021564.json:
 
 ---
 
-archive/issue_comments_021565.json:
+archive/issue_comments_021520.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-17T06:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3114",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3114#issuecomment-21565",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3114#issuecomment-21520",
+    "user": "https://github.com/wjp"
 }
 ```
 

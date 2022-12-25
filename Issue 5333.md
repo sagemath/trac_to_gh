@@ -6,7 +6,7 @@ archive/issues_005333.json:
     "body": "Assignee: mabshoff\n\nLeft over pynac libraries in $SAGE_LOCAL/lib cause upgrade trouble from some releases. William reported some as well as John Cremona in \n\nhttp://groups.google.com/group/sage-devel/t/d1105e1b1cd3d057\n\nThe fix is trivial, but very important to get into 3.4.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5333\n\n",
     "created_at": "2009-02-21T22:54:28Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005333.json:
     "title": "pynac.spkg: Delete old pynac libray during spkg-install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5333",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5333
 
 ---
 
-archive/issue_comments_041080.json:
+archive/issue_comments_041000.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-21T22:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41080",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41000",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +55,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_041081.json:
+archive/issue_comments_041001.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-26T11:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41081",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41001",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -73,15 +73,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_041082.json:
+archive/issue_comments_041002.json:
 ```json
 {
     "body": "The pynac package already deletes the existing libraries before installing new ones. The errors mentioned on the linked threads were seen because the sage library was not updated properly.\n\nHere are the relevant lines from spkg-install in pynac-0.1.2.spkg, which is included in Sage-3.3:\n\n```\ninstall_pynac()\n{\n    rm ${SAGE_LOCAL}/lib/*ginac*\n    rm ${SAGE_LOCAL}/lib/*pynac*\n    rm -rf ${SAGE_LOCAL}/include/ginac\n    rm -rf ${SAGE_LOCAL}/include/pynac\n    cd ${PYNACDIR}\n    $MAKE install\n    if [ $? -ne 0 ]; then\n        echo \"Error installing pynac.\"\n        exit 1\n    fi\n    cd ${WORKDIR} \n}\n```\n\n\nI suggest resolving this as invalid.",
     "created_at": "2009-02-26T11:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41082",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41002",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -113,15 +113,15 @@ I suggest resolving this as invalid.
 
 ---
 
-archive/issue_comments_041083.json:
+archive/issue_comments_041003.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2009-02-26T11:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41083",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41003",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -131,15 +131,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_041084.json:
+archive/issue_comments_041004.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2009-02-26T11:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41084",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41004",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -149,15 +149,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_041085.json:
+archive/issue_comments_041005.json:
 ```json
 {
     "body": "I need to learn how to use trac.",
     "created_at": "2009-02-26T11:10:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41085",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41005",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -167,15 +167,15 @@ I need to learn how to use trac.
 
 ---
 
-archive/issue_comments_041086.json:
+archive/issue_comments_041006.json:
 ```json
 {
     "body": "Replying to [comment:3 burcin]:\n> I need to learn how to use trac. \n\n:)\n\nBut you are right -> invalid.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-26T11:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41086",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41006",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -194,15 +194,15 @@ Michael
 
 ---
 
-archive/issue_comments_041087.json:
+archive/issue_comments_041007.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-02-26T11:50:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41087",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5333#issuecomment-41007",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004004.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4004\n\n",
     "created_at": "2008-08-30T18:00:40Z",
     "labels": [
-        "interfaces",
-        "minor",
-        "enhancement"
+        "component: interfaces",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] increase coverage of sage/interfaces/gap.py and sage/interfaces/gp.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4004",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4004
 
 ---
 
-archive/issue_comments_028915.json:
+archive/issue_comments_028857.json:
 ```json
 {
     "body": "Attachment [trac_4004.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004.patch) by @mwhansen created at 2008-08-30 18:01:31",
     "created_at": "2008-08-30T18:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28915",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28857",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_4004.patch](tarball://root/attachments/some-uuid/ticket4004/tra
 
 ---
 
-archive/issue_comments_028916.json:
+archive/issue_comments_028858.json:
 ```json
 {
     "body": "This patch creates some problems:\n\n```\n        sage -t -long devel/sage/sage/interfaces/lisp.py # 1 doctests failed\n        sage -t -long devel/sage/sage/interfaces/gp.py # 1 doctests failed\n        sage -t -long devel/sage/sage/groups/matrix_gps/matrix_group.py # 2 doctests failed\n```\n\nSpecifically: matrix_group.py:\n\n```\nsage -t -long devel/sage/sage/groups/matrix_gps/matrix_group.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/tmp/matrix_group.py\", line 313:\n    sage: G.order()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[11]>\", line 1, in <module>\n        G.order()###line 313:\n    sage: G.order()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/groups/matrix_gps/matrix_group.py\", line 316, in order\n        g = self._gap_()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/groups/matrix_gps/matrix_group.py\", line 177, in _gap_\n        raise NotImplementedError, \"Matrix group over %s not implemented.\"%self.__R\n    NotImplementedError: Matrix group over Integer Ring not implemented.\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/tmp/matrix_group.py\", line 475:\n    sage: G.order()\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_17[11]>\", line 1, in <module>\n        G.order()###line 475:\n    sage: G.order()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/groups/matrix_gps/matrix_group.py\", line 316, in order\n        g = self._gap_()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/groups/matrix_gps/matrix_group.py\", line 177, in _gap_\n        raise NotImplementedError, \"Matrix group over %s not implemented.\"%self.__R\n    NotImplementedError: Matrix group over Integer Ring not implemented.\n**********************************************************************\n```\n\ninterfaces/gp.py:\n\n```\nsage -t -long devel/sage/sage/interfaces/gp.py              **********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/tmp/gp.py\", line 583:\n    sage: bool(gp(2))\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n\ninterfaces/lisp.py:\n\n```\nsage -t -long devel/sage/sage/interfaces/lisp.py            \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/tmp/lisp.py\", line 460:\n    sage: a^3\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_28[3]>\", line 1, in <module>\n        a**Integer(3)###line 460:\n    sage: a^3\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/lisp.py\", line 463, in __pow__\n        return RingElement.__pow__(self, n)\n      File \"element.pyx\", line 1469, in sage.structure.element.RingElement.__pow__ (sage/structure/element.c:9721)\n      File \"element.pyx\", line 2866, in sage.structure.element.generic_power_c (sage/structure/element.c:18642)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1458, in __nonzero__\n        return self.bool()\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1447, in bool\n        cmd = '%s %s %s'%(self._name, P._equality_symbol(), t)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/lisp.py\", line 351, in _equality_symbol\n        \"Please report this as a bug.\")\n    NotImplementedError: We should never reach here in the Lisp interface. Please report this as a bug.\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-08-30T19:10:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28916",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28858",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -154,15 +153,15 @@ Michael
 
 ---
 
-archive/issue_comments_028917.json:
+archive/issue_comments_028859.json:
 ```json
 {
     "body": "Attachment [trac_4004-2.patch](tarball://root/attachments/some-uuid/ticket4004/trac_4004-2.patch) by @mwhansen created at 2008-08-31 05:25:56\n\nI renamed the clear method to unbind (which is what it is in GAP) because the garbage collector was calling the deallocation routine which called clear and caused problems in the matrix_group.py doctest.",
     "created_at": "2008-08-31T05:25:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28917",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28859",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -174,15 +173,15 @@ I renamed the clear method to unbind (which is what it is in GAP) because the ga
 
 ---
 
-archive/issue_comments_028918.json:
+archive/issue_comments_028860.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-31T06:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28918",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28860",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -192,15 +191,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028919.json:
+archive/issue_comments_028861.json:
 ```json
 {
     "body": "With the second patch doctests do pass again. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T06:02:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4004",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28919",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4004#issuecomment-28861",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_008999.json:
     "body": "Assignee: joyner\n\n\n```\nsage-4.4.2 built with gcc-4.5.0 on x86_64-Linux-nehalem-fc (Skynet/taurus) fails test:\n\ntaurus% ./sage -t  -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\nsage -t -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.4.2-x86_64-Linux-nehalem-fc/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 626:\n    sage: G.random_element()\nExpected:\n    [2 1 1 1]\n    [1 0 2 1]\n    [0 1 1 0]\n    [1 0 0 1]\nGot:\n    [0 1 1 0]\n    [1 2 2 2]\n    [1 1 1 0]\n    [2 0 1 2]\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.4.2-x86_64-Linux-nehalem-fc/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 637:\n    sage: G.random_element()\nExpected:\n    [1 3]\n    [0 3]\nGot:\n    [4 2]\n    [1 0]\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.4.2-x86_64-Linux-nehalem-fc/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 640:\n    sage: G.random_element()\nExpected:\n    [2 2]\n    [1 0]\nGot:\n    [4 1]\n    [0 2]\n**********************************************************************\nFile \"/home/mariah/sage/sage-4.4.2-x86_64-Linux-nehalem-fc/devel/sage/sage/groups/matrix_gps/matrix_group.py\", line 643:\n    sage: G.random_element()\nExpected:\n    [4 0]\n    [1 4]\nGot:\n    [2 4]\n    [2 3]\n**********************************************************************\n1 items had failures:\n   4 of  10 in __main__.example_21\n***Test Failed*** 4 failures.\nFor whitespace errors, see the file /home/mariah/.sage//tmp/.doctest_matrix_group.py\n         [68.8 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage/sage/groups/matrix_gps/matrix_group.py\"\nTotal time for all tests: 68.8 seconds\ntaurus%\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8999\n\n",
     "created_at": "2010-05-20T13:10:10Z",
     "labels": [
-        "group theory",
-        "major",
+        "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "sage-4.4.2 test \"groups/matrix_gps/matrix_group.py\" fails on x86_64-Linux-nehalem-fc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8999",
-    "user": "mariah"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 Assignee: joyner
@@ -91,15 +90,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8999
 
 ---
 
-archive/issue_comments_083219.json:
+archive/issue_comments_083083.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2010-05-20T19:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8999",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8999#issuecomment-83219",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8999#issuecomment-83083",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -109,15 +108,15 @@ Resolution: worksforme
 
 ---
 
-archive/issue_comments_083220.json:
+archive/issue_comments_083084.json:
 ```json
 {
     "body": "\n```\nbug disappeared when I rebuilt sage.\n```\n",
     "created_at": "2010-05-20T19:06:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8999",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8999#issuecomment-83220",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/8999#issuecomment-83084",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 

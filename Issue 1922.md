@@ -6,15 +6,13 @@ archive/issues_001922.json:
     "body": "Assignee: @williamstein\n\nThis is an update for lprint().\n\n* renamed to pretty_print_default()\n* _show_hook is now pretty_print()\n\nBoth functions are smarter now.\n\nSomeone (me?) should go through latex.py and clean it out.  There are lots of other functions like jsMath(), typeset(), etc. that all appear to do the same thing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1922\n\n",
     "created_at": "2008-01-25T08:03:08Z",
     "labels": [
-        "algebraic geometry",
-        "major",
-        "enhancement"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "change and update lprint",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1922",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1922
 
 ---
 
-archive/issue_comments_012186.json:
+archive/issue_comments_012156.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to notebook.",
     "created_at": "2008-01-25T08:03:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12186",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12156",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -54,15 +52,15 @@ Changing component from algebraic geometry to notebook.
 
 ---
 
-archive/issue_comments_012187.json:
+archive/issue_comments_012157.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to boothby.",
     "created_at": "2008-01-25T08:03:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12187",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12157",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -72,15 +70,15 @@ Changing assignee from @williamstein to boothby.
 
 ---
 
-archive/issue_comments_012188.json:
+archive/issue_comments_012158.json:
 ```json
 {
     "body": "Attachment [pretty-print.patch](tarball://root/attachments/some-uuid/ticket1922/pretty-print.patch) by @jasongrout created at 2008-01-25 08:03:56",
     "created_at": "2008-01-25T08:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12188",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12158",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -90,15 +88,15 @@ Attachment [pretty-print.patch](tarball://root/attachments/some-uuid/ticket1922/
 
 ---
 
-archive/issue_comments_012189.json:
+archive/issue_comments_012159.json:
 ```json
 {
     "body": "looks good.",
     "created_at": "2008-01-27T17:30:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12189",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12159",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -108,15 +106,15 @@ looks good.
 
 ---
 
-archive/issue_comments_012190.json:
+archive/issue_comments_012160.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-27T18:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12190",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12160",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -126,15 +124,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_012191.json:
+archive/issue_comments_012161.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc2",
     "created_at": "2008-01-27T18:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12191",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1922#issuecomment-12161",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

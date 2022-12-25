@@ -6,15 +6,14 @@ archive/issues_005964.json:
     "body": "Assignee: @williamstein\n\nCC:  @EmmanuelCharpentier @fchapoton\n\nThe doctest failures:\n\n```\nsage -t  \"devel/sage/sage/interfaces/r.py\"\n**********************************************************************\nFile \"/usr/src/sage-3.4.1/devel/sage/sage/interfaces/r.py\", line 665:\n    sage: r.help('print.anova')\nExpected:\n    anova                 package:stats                 R Documentation\n    ...  \n         'coefficients', 'effects', 'fitted.values', 'residuals',\n         'summary', 'drop1', 'add1'.\nGot:\n    No documentation for 'print.anova' in specified packages and libraries:\n    you could try 'help.search(\"print.anova\")'\n**********************************************************************\nFile \"/usr/src/sage-3.4.1/devel/sage/sage/interfaces/r.py\", line 1707:\n    sage: print length._sage_doc_()\nExpected:\n    length                 package:base                 R Documentation\n    ...\n    <BLANKLINE>\nGot:\n    No documentation for 'length' in specified packages and libraries:\n    you could try 'help.search(\"length\")'\n**********************************************************************\nFile \"/usr/src/sage-3.4.1/devel/sage/sage/interfaces/r.py\", line 1780:\n    sage: print length._sage_doc_()\nExpected:\n    length                 package:base                 R Documentation\n    ...\n    <BLANKLINE>\nGot:\n    No documentation for 'length' in specified packages and libraries:\n    you could try 'help.search(\"length\")'\n**********************************************************************\n3 items had failures:\n   1 of   3 in __main__.example_23\n   1 of   5 in __main__.example_68\n   1 of   4 in __main__.example_73\n***Test Failed*** 3 failures.\nFor whitespace errors, see the file /usr/src/sage-3.4.1/tmp/.doctest_r.py\n         [5.1 s]\n```\n\n\n----\n\nLooking at the `install.log` shows two types of \"failure\":\n\n- missing `makeinfo`:\n\n```\nyou should 'make docs' now ...\nmake[3]: Entering directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/doc'\nmake[4]: Entering directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/doc/manual'\n'makeinfo' v4.7 or later needed to make HTML docs but missing on your system.\nfile R-FAQ.html will be missing\ncreating doc/manual/version.texi\n'makeinfo' v4.7 or later needed to make HTML docs but missing on your system.\nfile R-data.html will be missing\n'makeinfo' v4.7 or later needed to make HTML docs but missing on your system.\nfile R-exts.html will be missing\n'makeinfo' v4.7 or later needed to make HTML docs but missing on your system.\nfile R-intro.html will be missing\n'makeinfo' v4.7 or later needed to make HTML docs but missing on your system.\nfile R-ints.html will be missing\n'makeinfo' v4.7 or later needed to make HTML docs but missing on your system.\nfile R-lang.html will be missing\nmake[5]: Entering directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/doc/html'\nmake[5]: Leaving directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/doc/html'\nmake[4]: Leaving directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/doc/manual'\nmake[3]: Leaving directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/doc'\n```\n\n- missing perl module `File/Basename.pm`:\n\n```\nmake[3]: Entering directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/src/library'\nbuilding all R object docs (text, HTML, LaTeX, examples)\nmake[4]: Entering directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/src/library'\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nCan't locate File/Basename.pm in @INC (@INC contains: /usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/share/perl /etc/perl /usr/local/lib/perl/5.10.0 /usr/local/share/perl/5.10.0 /usr/lib/perl5 /usr/share/perl5 /usr/lib/perl/5.10 /usr/share/perl/5.10 /usr/local/lib/site_perl .) at ../../share/perl/build-help.pl line 18.\nBEGIN failed--compilation aborted at ../../share/perl/build-help.pl line 18.\nmake[4]: *** [help-indices] Error 2\nmake[4]: Leaving directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/src/library'\nmake[3]: *** [docs] Error 2\nmake[3]: Leaving directory `/usr/src/sage-3.4.1/spkg/build/r-2.6.1.p22/src/src/library'\nmake[2]: [docs] Error 2 (ignored)\n```\n\n----\nThis is on a \"barebones\" debian lenny, which only has `perl-base`, but no `perl-modules` installed, thus `File/Basename.pm` is indeed missing.\n\nReinstalling r-2.6.1.p22.spkg *after* `apt-get install perl-modules` fixes the issue: the `install.log` still complains about missing `makeinfo`, but that seems irrelevant, and the doctest in `devel/sage/sage/interfaces/r.py` pass.\n\nI believe the prereq test actually checks if perl is installed, but that seems to not be enough. Adding a check for a few required perl modules may be in order... (cf #5517, whose dependency on `File/Copy.pm` was actually eliminated, but the point stands).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5964\n\n",
     "created_at": "2009-05-02T22:59:26Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Some R doctests related to documentation fail when perl-modules not installed at compile-time",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5964",
-    "user": "@tornaria"
+    "user": "https://github.com/tornaria"
 }
 ```
 Assignee: @williamstein
@@ -148,15 +147,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5964
 
 ---
 
-archive/issue_comments_047234.json:
+archive/issue_comments_047144.json:
 ```json
 {
     "body": "Emmanuel, I found this on oooold tickets. I guess this can be closed. (Or could have been years ago.)",
     "created_at": "2015-07-17T05:32:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47234",
-    "user": "@jm58660"
+    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47144",
+    "user": "https://github.com/jm58660"
 }
 ```
 
@@ -166,15 +165,15 @@ Emmanuel, I found this on oooold tickets. I guess this can be closed. (Or could 
 
 ---
 
-archive/issue_comments_047235.json:
+archive/issue_comments_047145.json:
 ```json
 {
     "body": "Can't reproduce. Fr\u00e9d\u00e9ric, put on positive review if you agree.",
     "created_at": "2016-08-25T10:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47235",
-    "user": "@jm58660"
+    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47145",
+    "user": "https://github.com/jm58660"
 }
 ```
 
@@ -184,15 +183,15 @@ Can't reproduce. Frédéric, put on positive review if you agree.
 
 ---
 
-archive/issue_comments_047236.json:
+archive/issue_comments_047146.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2016-08-25T10:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47236",
-    "user": "@jm58660"
+    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47146",
+    "user": "https://github.com/jm58660"
 }
 ```
 
@@ -202,15 +201,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_047237.json:
+archive/issue_comments_047147.json:
 ```json
 {
     "body": "ok, no perl-modules and no problem",
     "created_at": "2016-08-25T12:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47237",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47147",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -220,15 +219,15 @@ ok, no perl-modules and no problem
 
 ---
 
-archive/issue_comments_047238.json:
+archive/issue_comments_047148.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2016-08-25T12:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47238",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47148",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -238,15 +237,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_047239.json:
+archive/issue_comments_047149.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2016-08-30T13:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47239",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47149",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -256,15 +255,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_047240.json:
+archive/issue_comments_047150.json:
 ```json
 {
     "body": "Determined to be invalid/duplicate/wontfix (closing as \"wontfix\" as a catch-all resolution).",
     "created_at": "2016-08-30T13:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5964",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47240",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/5964#issuecomment-47150",
+    "user": "https://github.com/embray"
 }
 ```
 

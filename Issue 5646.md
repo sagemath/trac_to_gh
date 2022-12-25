@@ -6,15 +6,14 @@ archive/issues_005646.json:
     "body": "Assignee: @williamstein\n\nCC:  @robertwb @orlitzky\n\nKeywords: complex vector coercion\n\nThese are incompatible and I claim the first one is wrong!\n\n\n```\nsage: (CDF^2)(1)\n(1.0, 1.0)\nsage: (CC^2)(1)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/ncalexan/sage-3.4.1.alpha0-sage.math-only-x86_64-Linux/devel/sage/sage/functions/riemann_theta.py in <module>()\n\n/home/ncalexan/sage-3.4.1.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/modules/free_module.pyc in __ca\\\nll__(self, e, coerce, copy, check)\n   4394         except AttributeError:\n   4395             pass\n-> 4396         return FreeModule_generic_field.__call__(self,e)\n   4397\n   4398 ###############################################################################\n\n/home/ncalexan/sage-3.4.1.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/modules/free_module.pyc in __ca\\\nll__(self, x, coerce, copy, check)\n    813             except ArithmeticError:\n    814                 raise ValueError, \"element (= %s) is not in free module\"%(x,)\n--> 815         return self._element_class(self, x, coerce, copy)\n    816\n    817     def is_submodule(self, other):\n\n/home/ncalexan/sage-3.4.1.alpha0-sage.math-only-x86_64-Linux/local/lib/python2.5/site-packages/sage/modules/free_module_element.so \\\nin sage.modules.free_module_element.FreeModuleElement_generic_dense.__init__ (sage/modules/free_module_element.c:15739)()\n\nTypeError: entries (=1) must be a list\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5646\n\n",
     "created_at": "2009-03-30T23:59:39Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.0",
     "title": "vectors over CDF allow a coercion from scalars",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5646",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -66,15 +65,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5646
 
 ---
 
-archive/issue_comments_044091.json:
+archive/issue_comments_044006.json:
 ```json
 {
     "body": "I second that the first one is wrong, but this is not a coercion issue. \n\n\n```\nsage: (CDF^2).has_coerce_map_from(CDF)\nFalse\n```\n",
     "created_at": "2009-03-31T00:04:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44091",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44006",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -91,15 +90,15 @@ False
 
 ---
 
-archive/issue_comments_044092.json:
+archive/issue_comments_044007.json:
 ```json
 {
     "body": "Attachment [trac_5646.patch](tarball://root/attachments/some-uuid/ticket5646/trac_5646.patch) by @williamstein created at 2010-01-18 13:44:04",
     "created_at": "2010-01-18T13:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44092",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44007",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -109,15 +108,15 @@ Attachment [trac_5646.patch](tarball://root/attachments/some-uuid/ticket5646/tra
 
 ---
 
-archive/issue_comments_044093.json:
+archive/issue_comments_044008.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-01-09T04:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44093",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44008",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -127,15 +126,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_044094.json:
+archive/issue_comments_044009.json:
 ```json
 {
     "body": "(I think this was left 'new' by mistake)\n\nWhy is an exception made for zero? Is it just convenience? We have `(CDF^2).zero()` which does the same thing as far as I can tell.",
     "created_at": "2012-01-09T04:48:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44094",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44009",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -147,15 +146,15 @@ Why is an exception made for zero? Is it just convenience? We have `(CDF^2).zero
 
 ---
 
-archive/issue_comments_044095.json:
+archive/issue_comments_044010.json:
 ```json
 {
     "body": "Every vector space has a zero element, which is denoted by 0.  There are generally no elements in a vector space denoted by 1.",
     "created_at": "2012-03-18T17:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44095",
-    "user": "johanbosman"
+    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44010",
+    "user": "https://trac.sagemath.org/admin/accounts/users/johanbosman"
 }
 ```
 
@@ -165,15 +164,15 @@ Every vector space has a zero element, which is denoted by 0.  There are general
 
 ---
 
-archive/issue_comments_044096.json:
+archive/issue_comments_044011.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-03-18T17:21:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44096",
-    "user": "johanbosman"
+    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44011",
+    "user": "https://trac.sagemath.org/admin/accounts/users/johanbosman"
 }
 ```
 
@@ -183,15 +182,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_044097.json:
+archive/issue_comments_044012.json:
 ```json
 {
     "body": "Attachment [trac_5646_rebased.patch](tarball://root/attachments/some-uuid/ticket5646/trac_5646_rebased.patch) by @jdemeyer created at 2012-03-23 16:33:35",
     "created_at": "2012-03-23T16:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44097",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44012",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -201,15 +200,15 @@ Attachment [trac_5646_rebased.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_044098.json:
+archive/issue_comments_044013.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2012-03-28T10:03:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5646",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44098",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5646#issuecomment-44013",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

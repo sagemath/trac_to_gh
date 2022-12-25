@@ -6,15 +6,14 @@ archive/issues_009099.json:
     "body": "Assignee: drkirkby\n\n## Build environment\n* Sun Ultra 27 3.33 GHz Intel W3580 Xeon. Quad core. 8 threads. 12 GB RAM\n* OpenSolaris 2009.06 snv_111b X86\n* Sage 4.4.2\n* gcc 4.4.4\n\n## How gcc 4.4.4 was configured\nSince the configuration of gcc is fairly critical on OpenSolaris, here's how it was built. \n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ gcc -v\nUsing built-in specs.\nTarget: i386-pc-solaris2.11\nConfigured with: ../gcc-4.4.4/configure --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/local/binutils-2.20/bin/as --with-ld=/usr/ccs/bin/ld --with-gmp=/usr/local --with-mpfr=/usr/local\nThread model: posix\ngcc version 4.4.4 (GCC) \n```\n\n\ngcc 4.3.4 was failing to build iconv. \n\n## The problem\n\n```\nconfig.status: creating plotting/mgnuplot\nconfig.status: creating share/Makefile\nconfig.status: creating demo/Makefile\nconfig.status: creating plotting/Makefile\nconfig.status: creating locale/Makefile\n\nSummary:\nECL enabled. Executable name: \"ecl\"\ndefault lisp: ecl\nwish executable name: \"wish\"\nmake[2]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/maxima-5.20.1.p0/src'\nMaking all in src\nmake[3]: Entering directory `/export/home/drkirkby/sage-4.4.2/spkg/build/maxima-5.20.1.p0/src/src'\ntest -d binary-ecl || mkdir binary-ecl\necl -norc -eval '(progn (load \"../lisp-utils/defsystem.lisp\") (funcall (intern (symbol-name :operate-on-system) :mk) \"maxima\" :compile :verbose t) (build-maxima-lib))' -eval '(ext:quit)'\nld.so.1: ecl: fatal: relocation error: R_AMD64_PC32: file /export/home/drkirkby/sage-4.4.2/local/lib//libecl.so: symbol main: value 0x22800097de04 does not fit\nmake[3]: *** [binary-ecl/maxima] Killed\nmake[3]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/maxima-5.20.1.p0/src/src'\nmake[2]: *** [all-recursive] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/maxima-5.20.1.p0/src'\n***********************************************************\nFailed to make Maxima.\n***********************************************************\n\nreal\t0m2.050s\nuser\t0m0.506s\nsys\t0m0.833s\nsage: An error occurred while installing maxima-5.20.1.p0\n```\n\n\nThe ECL library is a 64-bit library:\n\n\n```\ndrkirkby@hawk:~/sage-4.4.2$ file /export/home/drkirkby/sage-4.4.2/local/lib//libecl.so\n/export/home/drkirkby/sage-4.4.2/local/lib//libecl.so:\tELF 64-bit LSB dynamic lib AMD64 Version 1, dynamically linked, not stripped\n```\n \n\nbut obviously something is wrong. Whether it is an Sage, ECL or Maxima issue I don't know.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9099\n\n",
     "created_at": "2010-05-31T01:09:33Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Maxima fails to build on OpenSolaris x64, though ECL does.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9099",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -94,15 +93,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9099
 
 ---
 
-archive/issue_comments_084541.json:
+archive/issue_comments_084405.json:
 ```json
 {
     "body": "Another thing to try would be the ECL spkg from #8951 and the Maxima spkg from #8731.",
     "created_at": "2010-05-31T03:56:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84541",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84405",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -112,15 +111,15 @@ Another thing to try would be the ECL spkg from #8951 and the Maxima spkg from #
 
 ---
 
-archive/issue_comments_084542.json:
+archive/issue_comments_084406.json:
 ```json
 {
     "body": "Replying to [comment:2 mhansen]:\n> Another thing to try would be the ECL spkg from #8951 and the Maxima spkg from #8731.\nI've tried that - the same result. \n\nGoogling, I find this error is not specific to ECL or Maxima, but can crop up in all sort of programs. \n\nhttp://developers.sun.com/solaris/articles/about_amd64_abi.html\n\nindicates a couple of possible workarounds, but I'm unsure what is the best course of action. I guess building with position independent code might be, as it might hopefully be fairly easy to add -fPIC to the ECL build, though I'll take advice from the ECL developer on that.",
     "created_at": "2010-05-31T04:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84542",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84406",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -138,15 +137,15 @@ indicates a couple of possible workarounds, but I'm unsure what is the best cour
 
 ---
 
-archive/issue_comments_084543.json:
+archive/issue_comments_084407.json:
 ```json
 {
     "body": "I should have added that in order to get ECL to build, I had added the option\n\n\n```\n--with-dffi=no\n```\n\n\nWithout that option ECL will not build. With the option, ECL builds ok, but Maxima does not. \n\nI have tried compiling with position independant code, by adding -fPIC to the CFLAGS, but that did not help. \n\nDave",
     "created_at": "2010-06-18T22:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84543",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84407",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -168,15 +167,15 @@ Dave
 
 ---
 
-archive/issue_comments_084544.json:
+archive/issue_comments_084408.json:
 ```json
 {
     "body": "More data: maxima failed with a 64-bit build in fulvia (Solaris on x86), but seems to have succeeded with a 64-bit build on t2 (Solaris on sparc).  The 32-bit build on fulvia succeeded, but some of the output is different than on other platforms, causing some doctest failures:\n\n```\nsage -t  -long devel/sage/sage/symbolic/expression.pyx\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 498\\\n3:\n    sage: maxima('sinh(1.0)')\nExpected:\n    1.175201193643801\nGot:\n    1.175201193643802\n**********************************************************************\nFile \"/home/palmieri/fulvia/sage-4.5.2.rc0/devel/sage-main/sage/symbolic/expression.pyx\", line 508\\\n8:\n    sage: maxima('asinh(1.0)')\nExpected:\n    0.881373587019543\nGot:\n    .8813735870195429\n**********************************************************************\n```\n\n(This is a somewhat hacked build: R didn't build, so it is missing completely.  I don't think that would have anything to do with this failure.)",
     "created_at": "2010-08-04T04:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84544",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84408",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -209,15 +208,15 @@ Got:
 
 ---
 
-archive/issue_comments_084545.json:
+archive/issue_comments_084409.json:
 ```json
 {
     "body": "I'd agree, a lack of R will not affect these results. \n\nI computed results to 30 digits of precision with Mathematica\n\n\n```\nIn[1]:= a=N[Sinh[1],30]   \n\nOut[1]= 1.17520119364380145688238185060\n\nIn[2]:= b=N[ArcSinh[1],30]\n\nOut[2]= 0.881373587019543025232609324980\n```\n\nThat means the absolute error on the expected value is 4.5688e-16 and the absolute error on the Solaris case is -5.43117e-16. I think it's quite reasonable to attribute the `sinh()` case to numerical noise. I need to go out soon, but if you don't beat me to it, I'll open a numerical-noise ticket for this within the next 5 hours. \n\nThe `asinh()` case is not so obvious, as while the actual error is small, the zero is missing from the start on the 64-bit SPARC case, with only `.8813735870195429` instead of `0.8813735870195429`. I find that a bit harder to explain - it is not just a numerical noise issue. Have you any ideas? \n\nDave",
     "created_at": "2010-08-04T09:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84545",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84409",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -246,15 +245,15 @@ Dave
 
 ---
 
-archive/issue_comments_084546.json:
+archive/issue_comments_084410.json:
 ```json
 {
     "body": "Replying to [comment:3 drkirkby]:\n\n> Googling, I find this error is not specific to ECL or Maxima, but can crop up in all sort of programs. \n> \n> http://developers.sun.com/solaris/articles/about_amd64_abi.html\n> \n> indicates a couple of possible workarounds, but I'm unsure what is the best course of action. I guess building with position independent code might be, as it might hopefully be fairly easy to add -fPIC to the ECL build, though I'll take advice from the ECL developer on that. \n\nI'm now aware that any shared library should be build as position independent code. The Sun linker manual is very clear on this and the GCC manual implies it. I've managed to convince the Pari developers to always add -fPIC on all platforms, despite it gives a small (about 10%) performance decrease in Pari. Quite simply, it is not correct to build shared libraries with objects which are not position independent. However, I'm not sure if this is a shared library or not.",
     "created_at": "2010-08-04T10:00:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84546",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84410",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -272,15 +271,15 @@ I'm now aware that any shared library should be build as position independent co
 
 ---
 
-archive/issue_comments_084547.json:
+archive/issue_comments_084411.json:
 ```json
 {
     "body": "Replying to [comment:6 drkirkby]:\n> The `asinh()` case is not so obvious, as while the actual error is small, the zero is missing from the start on the 64-bit SPARC case, with only `.8813735870195429` instead of `0.8813735870195429`. I find that a bit harder to explain - it is not just a numerical noise issue. Have you any ideas? \n> \n> Dave \n\nI realise this was on fulvia (Solaris 10 x86), not SPARC. Still, the same issues concern arises why does the second test not print the leading zero? \n\nDave",
     "created_at": "2010-08-04T13:35:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84547",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84411",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -297,15 +296,15 @@ Dave
 
 ---
 
-archive/issue_comments_084548.json:
+archive/issue_comments_084412.json:
 ```json
 {
     "body": "Relocation errors seen on 64-bit SPARC (t2.math) when buidling with LD_OPTIONS=-Dreloc,detail",
     "created_at": "2010-08-30T11:30:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84548",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84412",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -315,15 +314,15 @@ Relocation errors seen on 64-bit SPARC (t2.math) when buidling with LD_OPTIONS=-
 
 ---
 
-archive/issue_comments_084549.json:
+archive/issue_comments_084413.json:
 ```json
 {
     "body": "Attachment [SPARC-reloaction-errors.txt](tarball://root/attachments/some-uuid/ticket9099/SPARC-reloaction-errors.txt) by drkirkby created at 2011-04-02 11:53:25\n\nThis has been fixed by the upgrade to ECL on #10766, so this can be closed as fixed in sage-4.7.alpha1. \n\nDave",
     "created_at": "2011-04-02T11:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84549",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84413",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -337,15 +336,15 @@ Dave
 
 ---
 
-archive/issue_comments_084550.json:
+archive/issue_comments_084414.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-04-05T15:55:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84550",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9099#issuecomment-84414",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

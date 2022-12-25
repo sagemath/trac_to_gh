@@ -6,15 +6,14 @@ archive/issues_002055.json:
     "body": "Assignee: @malb\n\nCC:  @burcin\n\n\n```\nsage: B.<x,y,z> = BooleanPolynomialRing(3)\nsage: P.<x,y,z> = MPolynomialRing(QQ,3)\nsage: P(B.gen(0))\nx\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2055\n\n",
     "created_at": "2008-02-05T15:09:15Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "[with patch, needs review] MPolynomialRing(BooleanPolynomial)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2055",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2055
 
 ---
 
-archive/issue_comments_013306.json:
+archive/issue_comments_013275.json:
 ```json
 {
     "body": "Attachment [trac_2055_mpolyring_call.patch](tarball://root/attachments/some-uuid/ticket2055/trac_2055_mpolyring_call.patch) by @malb created at 2008-02-05 15:09:35",
     "created_at": "2008-02-05T15:09:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2055",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13306",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13275",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -56,15 +55,15 @@ Attachment [trac_2055_mpolyring_call.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_comments_013307.json:
+archive/issue_comments_013276.json:
 ```json
 {
     "body": "fixes an exposed sigsegv in libsingular interface",
     "created_at": "2008-02-14T23:35:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2055",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13307",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13276",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -74,15 +73,15 @@ fixes an exposed sigsegv in libsingular interface
 
 ---
 
-archive/issue_comments_013308.json:
+archive/issue_comments_013277.json:
 ```json
 {
     "body": "Attachment [sigsegv.patch](tarball://root/attachments/some-uuid/ticket2055/sigsegv.patch) by @ncalexan created at 2008-02-14 23:36:14\n\nThis should be applied.\n\nThe `__call__` method is not as general as it could be.  See ticket #2165 for an enhancement.",
     "created_at": "2008-02-14T23:36:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2055",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13308",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13277",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -96,15 +95,15 @@ The `__call__` method is not as general as it could be.  See ticket #2165 for an
 
 ---
 
-archive/issue_comments_013309.json:
+archive/issue_comments_013278.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-15T00:20:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2055",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13309",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13278",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +113,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_013310.json:
+archive/issue_comments_013279.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha0",
     "created_at": "2008-02-15T00:20:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2055",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13310",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2055#issuecomment-13279",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

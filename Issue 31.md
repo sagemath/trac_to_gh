@@ -6,14 +6,14 @@ archive/issues_000031.json:
     "body": "Assignee: somebody\n\n q_eigenform on old factors doesn't work:\n\n\n```\nsage: M = ModularSymbols(63,2,sign=1).cuspidal_subspace()\nsage: M[2].q_eigenform()\nTraceback (most recent call last):\n    M[2].q_eigenform()\n...\nAttributeError: 'ModularSymbolsAmbient_wt2_g0' object has no attribute 'subspace_generated_by_images'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/31\n\n",
     "created_at": "2006-09-12T23:27:20Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
     "title": "modular forms -- missing q_eigenform functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/31",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/31
 
 ---
 
-archive/issue_comments_000210.json:
+archive/issue_comments_000209.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-13T02:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/31",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/31#issuecomment-210",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/31#issuecomment-209",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -57,15 +57,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000211.json:
+archive/issue_comments_000210.json:
 ```json
 {
     "body": "Fixed -- or rather, now there is the *correct* error message:\n\n```\n\nsage: M = ModularSymbols(63,2,sign=1).cuspidal_subspace()\nsage: M[2].q_eigenform()\nTraceback (most recent call last):\n...\nArithmeticError: self must be simple.\n\n\n```\n",
     "created_at": "2007-01-13T02:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/31",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/31#issuecomment-211",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/31#issuecomment-210",
+    "user": "https://github.com/williamstein"
 }
 ```
 

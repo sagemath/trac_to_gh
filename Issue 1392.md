@@ -6,15 +6,14 @@ archive/issues_001392.json:
     "body": "Assignee: somebody\n\nfactors of factorizations weren't fully sorted -- they were only sorted based on the degree and exponent, but not the actual irreducible factor.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1392\n\n",
     "created_at": "2007-12-04T04:54:43Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "factors of factorizations weren't fully sorted -- they were only sorted based on the degree and exponent, but not the actual irreducible factor.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1392",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1392
 
 ---
 
-archive/issue_comments_008956.json:
+archive/issue_comments_008932.json:
 ```json
 {
     "body": "Attachment [trac1392-part2.patch](tarball://root/attachments/some-uuid/ticket1392/trac1392-part2.patch) by @williamstein created at 2007-12-04 05:41:07",
     "created_at": "2007-12-04T05:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1392#issuecomment-8956",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1392#issuecomment-8932",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac1392-part2.patch](tarball://root/attachments/some-uuid/ticket139
 
 ---
 
-archive/issue_comments_008957.json:
+archive/issue_comments_008933.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-04T07:19:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1392",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1392#issuecomment-8957",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1392#issuecomment-8933",
+    "user": "https://github.com/williamstein"
 }
 ```
 

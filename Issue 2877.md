@@ -6,15 +6,14 @@ archive/issues_002877.json:
     "body": "Assignee: cwitty\n\nCC:  @tscrim @slel @kliem @kwankyu\n\nThere are valid uses for eval() and sage_eval(), it makes it much easier to parse output from  interfaces for example. \n\nIt is difficult (if not impossible) to completely sanitize arbitrary input, but one should be able to be able to (say) write a backend that takes specific data, calls on Sage to process it, and then returns the result. For example, I might want a webpage that uses Sage to compute Julia sets, and takes as input a complex number. That the following work is scary \n\n\n```\nsage: CC(\"os.getpid()\")\n10324.0000000000\nsage: CC(\"os.mkdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.rmdir('a')\")\nNaN - NaN*I\nsage: CC(\"os.exec(...)\")\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2877\n\n",
     "created_at": "2008-04-11T11:39:56Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-9.5",
     "title": "security risk -- several constructors use eval to parse input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2877",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: cwitty
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2877
 
 ---
 
-archive/issue_comments_019760.json:
+archive/issue_comments_019719.json:
 ```json
 {
     "body": "See #2347 which is related.",
     "created_at": "2008-04-11T11:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19760",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19719",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -63,15 +62,15 @@ See #2347 which is related.
 
 ---
 
-archive/issue_comments_019761.json:
+archive/issue_comments_019720.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-23T02:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19761",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19720",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -81,15 +80,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_019762.json:
+archive/issue_comments_019721.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-09-02T09:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19762",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19721",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -99,15 +98,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_019763.json:
+archive/issue_comments_019722.json:
 ```json
 {
     "body": "Sage is not a secure program and nobody ever claimed it was. Sanitise your input before sending it to Sage!",
     "created_at": "2014-09-02T09:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19763",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19722",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -117,15 +116,15 @@ Sage is not a secure program and nobody ever claimed it was. Sanitise your input
 
 ---
 
-archive/issue_comments_019764.json:
+archive/issue_comments_019723.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-09-02T09:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19764",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19723",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -135,15 +134,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_019765.json:
+archive/issue_comments_019724.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2014-09-09T14:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19765",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19724",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -153,15 +152,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_019766.json:
+archive/issue_comments_019725.json:
 ```json
 {
     "body": "A strange response coming from Jeroen.  The use of `sage_eval` to convert arbitrary string inputs to elements of different fields is, I think, obviously bad on so many levels, and badly mishandled in several cases (e.g. some of them will catch `NameError`s, but not `SyntaxError`s; some will just work, but in weird ways, if you pass some arbitrary string; some are just broken as in https://ask.sagemath.org/question/47068/possible-bug-in-cc-needs-confirmation )\n\nIf you want to convert string representations of some elements of a field to actual elements of that field there should be proper parsing, not just arbitrary evals.",
     "created_at": "2019-07-05T16:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19766",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19725",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -173,15 +172,15 @@ If you want to convert string representations of some elements of a field to act
 
 ---
 
-archive/issue_comments_019767.json:
+archive/issue_comments_019726.json:
 ```json
 {
     "body": "Resolution changed from invalid to ",
     "created_at": "2019-07-05T16:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19767",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19726",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -191,15 +190,15 @@ Resolution changed from invalid to
 
 ---
 
-archive/issue_comments_019768.json:
+archive/issue_comments_019727.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2019-07-05T16:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19768",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19727",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -209,15 +208,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_019769.json:
+archive/issue_comments_019728.json:
 ```json
 {
     "body": "A simpler fix would be to use a limited eval, e.g. https://newville.github.io/asteval/\n\nThe reason for the eval in CC is of course that you want to allow expressions like `2+3*I` that exceed python's `literal_eval` capabilities.",
     "created_at": "2019-07-06T12:05:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19769",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19728",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -229,15 +228,15 @@ The reason for the eval in CC is of course that you want to allow expressions li
 
 ---
 
-archive/issue_comments_019770.json:
+archive/issue_comments_019729.json:
 ```json
 {
     "body": "I fully agree with Erik.\n\nThe following does not work (as expected)\n\n```\nsage: ZZ('2**3 + 3*g - 2')\nTraceback (most recent call last):\n...\nTypeError: unable to convert '2**3 + 3*g - 2' to an integer\nsage: RR('2**2 + 3*5 - 2')\nTraceback (most recent call last):\n...\nTypeError: unable to convert '2**3+5*I-2' to a real number\n```\n\nSupporting the following with `CC` is a nonsense\n\n```\nsage: CC('2**2 + 3*5 - 2')\n17.0000000000000\nsage: CC('erf(2)')\n0.995322265018953\n```\n\nWe don't want the element constructor to evaluate a string in hope that it gives a complex number. There should be a clear definition of what is the input format. And the constructor should just stick to specifications. The element constructor of CC is trying to do much more than what it is supposed to.",
     "created_at": "2019-07-11T19:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19770",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19729",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -271,15 +270,15 @@ We don't want the element constructor to evaluate a string in hope that it gives
 
 ---
 
-archive/issue_comments_019771.json:
+archive/issue_comments_019730.json:
 ```json
 {
     "body": "And to my mind the main problem is **not** the security risk (I agree with Jeroen on that point). I would advice to open another ticket \"fix element constructor of CC\".",
     "created_at": "2019-07-11T19:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19771",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19730",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -289,15 +288,15 @@ And to my mind the main problem is **not** the security risk (I agree with Jeroe
 
 ---
 
-archive/issue_comments_019772.json:
+archive/issue_comments_019731.json:
 ```json
 {
     "body": "It's not just CC.  It's all of them.  It's really flaky to allow a general eval to construct instances of some particular type.  Instead, it should really just parse constant-valued expressions for whatever that type is, at the most.  That can either involve custom parsing code, or as Volker suggested a custom AST parser.",
     "created_at": "2019-07-12T08:47:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19772",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19731",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -307,15 +306,15 @@ It's not just CC.  It's all of them.  It's really flaky to allow a general eval 
 
 ---
 
-archive/issue_comments_019773.json:
+archive/issue_comments_019732.json:
 ```json
 {
     "body": "Replying to [comment:12 vbraun]:\n> A simpler fix would be to use a limited eval, e.g. https://newville.github.io/asteval/\n> \n> The reason for the eval in CC is of course that you want to allow expressions like `2+3*I` that exceed python's `literal_eval` capabilities.\n\n+1",
     "created_at": "2019-07-12T08:47:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19773",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19732",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -330,15 +329,15 @@ Replying to [comment:12 vbraun]:
 
 ---
 
-archive/issue_comments_019774.json:
+archive/issue_comments_019733.json:
 ```json
 {
     "body": "Ticket retargeted after milestone closed",
     "created_at": "2019-12-30T14:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19774",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19733",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -348,15 +347,15 @@ Ticket retargeted after milestone closed
 
 ---
 
-archive/issue_comments_019775.json:
+archive/issue_comments_019734.json:
 ```json
 {
     "body": "Batch modifying tickets that will likely not be ready for 9.1, based on a review of the ticket title, branch/review status, and last modification date.",
     "created_at": "2020-04-14T19:41:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19775",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19734",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -366,15 +365,15 @@ Batch modifying tickets that will likely not be ready for 9.1, based on a review
 
 ---
 
-archive/issue_comments_019776.json:
+archive/issue_comments_019735.json:
 ```json
 {
     "body": "Setting new milestone based on a cursory review of ticket status, priority, and last modification date.",
     "created_at": "2021-02-13T20:51:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19776",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19735",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -384,15 +383,15 @@ Setting new milestone based on a cursory review of ticket status, priority, and 
 
 ---
 
-archive/issue_comments_019777.json:
+archive/issue_comments_019736.json:
 ```json
 {
     "body": "here is a simple-minded patch. Unless somebody proposes something better, I think it makes sense to merge that now\n----\nNew commits:",
     "created_at": "2021-10-19T15:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19777",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19736",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -404,15 +403,15 @@ New commits:
 
 ---
 
-archive/issue_comments_019778.json:
+archive/issue_comments_019737.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2021-10-19T15:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19778",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19737",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -422,15 +421,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_019779.json:
+archive/issue_comments_019738.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2021-10-19T18:19:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19779",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19738",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -440,15 +439,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_019780.json:
+archive/issue_comments_019739.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2021-10-20T07:18:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19780",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19739",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -458,15 +457,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_019781.json:
+archive/issue_comments_019740.json:
 ```json
 {
     "body": "bot is morally green, so please review",
     "created_at": "2021-10-20T11:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19781",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19740",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -476,15 +475,15 @@ bot is morally green, so please review
 
 ---
 
-archive/issue_comments_019782.json:
+archive/issue_comments_019741.json:
 ```json
 {
     "body": "Do we also want to allow `j` to match Python's convention for complex numbers:\n\n```sage\nsage: complex('1+2j')\n(1+2j)\nsage: complex('1+2i')\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n<ipython-input-2-a2113f9c148b> in <module>\n----> 1 complex('1+2i')\n\nValueError: complex() arg is a malformed string\n```\n",
     "created_at": "2021-10-20T23:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19782",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19741",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -507,15 +506,15 @@ ValueError: complex() arg is a malformed string
 
 ---
 
-archive/issue_comments_019783.json:
+archive/issue_comments_019742.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2021-10-21T07:00:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19783",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19742",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -525,15 +524,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_019784.json:
+archive/issue_comments_019743.json:
 ```json
 {
     "body": "ok, done (and squashed the commits)",
     "created_at": "2021-10-21T07:01:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19784",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19743",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -543,15 +542,15 @@ ok, done (and squashed the commits)
 
 ---
 
-archive/issue_comments_019785.json:
+archive/issue_comments_019744.json:
 ```json
 {
     "body": "but this will break the doctest in singular.pyx... (sigh)",
     "created_at": "2021-10-21T07:02:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19785",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19744",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -561,15 +560,15 @@ but this will break the doctest in singular.pyx... (sigh)
 
 ---
 
-archive/issue_comments_019786.json:
+archive/issue_comments_019745.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2021-10-21T07:03:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19786",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19745",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -579,15 +578,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_019787.json:
+archive/issue_comments_019746.json:
 ```json
 {
     "body": "bot is morally green now",
     "created_at": "2021-10-21T11:50:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19787",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19746",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -597,15 +596,15 @@ bot is morally green now
 
 ---
 
-archive/issue_comments_019788.json:
+archive/issue_comments_019747.json:
 ```json
 {
     "body": "Sorry for late comment, but how about this?\n\n```diff\n--- a/src/sage/rings/complex_mpfr.pyx\n+++ b/src/sage/rings/complex_mpfr.pyx\n@@ -504,7 +504,7 @@ class ComplexField_class(sage.rings.abc.ComplexField):\n             sage: CC('hello')\n             Traceback (most recent call last):\n             ...\n-            ValueError: given string (hello) is not a complex number\n+            ValueError: given string 'hello' is not a complex number\n         \"\"\"\n         if not isinstance(x, (RealNumber, tuple)):\n             if isinstance(x, ComplexDoubleElement):\n@@ -516,7 +516,7 @@ class ComplexField_class(sage.rings.abc.ComplexField):\n                 x = x.replace('E', 'e')\n                 allowed = '+-.*0123456789Ie'\n                 if not all(letter in allowed for letter in x):\n-                    raise ValueError(f'given string ({x}) is not a complex number')\n+                    raise ValueError(f'given string {x!r} is not a complex number')\n                 # This should rather use a proper parser to validate input.\n                 # TODO: this is probably not the best and most\n                 # efficient way to do this.  -- Martin Albrecht\n```\n\n\nand `does not express a complex number`.",
     "created_at": "2021-10-22T04:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19788",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19747",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -641,15 +640,15 @@ and `does not express a complex number`.
 
 ---
 
-archive/issue_comments_019789.json:
+archive/issue_comments_019748.json:
 ```json
 {
     "body": "Thank you. I am also wondering a bit if we want to document that `CC` also supports `j` as a valid string input. Although I don't hold a strong opinion on this.",
     "created_at": "2021-10-22T05:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19789",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19748",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -659,15 +658,15 @@ Thank you. I am also wondering a bit if we want to document that `CC` also suppo
 
 ---
 
-archive/issue_comments_019790.json:
+archive/issue_comments_019749.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2021-10-22T06:39:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19790",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19749",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -677,15 +676,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_019791.json:
+archive/issue_comments_019750.json:
 ```json
 {
     "body": "ok, done.\n\nWARNING: note that CC('1.0+2.0*j') works, but not CC('1.0+2.0j').",
     "created_at": "2021-10-22T06:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19791",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19750",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -697,15 +696,15 @@ WARNING: note that CC('1.0+2.0*j') works, but not CC('1.0+2.0j').
 
 ---
 
-archive/issue_comments_019792.json:
+archive/issue_comments_019751.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2021-10-24T07:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19792",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19751",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -715,15 +714,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_019793.json:
+archive/issue_comments_019752.json:
 ```json
 {
     "body": "I fixed the failing doctest",
     "created_at": "2021-10-24T07:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19793",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19752",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -733,15 +732,15 @@ I fixed the failing doctest
 
 ---
 
-archive/issue_comments_019794.json:
+archive/issue_comments_019753.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2021-10-24T23:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19794",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19753",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -751,15 +750,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_019795.json:
+archive/issue_comments_019754.json:
 ```json
 {
     "body": "Great, thank you. LGTM. Kwankyu, if you do not agree, feel free to revert the positive review.",
     "created_at": "2021-10-24T23:42:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19795",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19754",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -769,15 +768,15 @@ Great, thank you. LGTM. Kwankyu, if you do not agree, feel free to revert the po
 
 ---
 
-archive/issue_comments_019796.json:
+archive/issue_comments_019755.json:
 ```json
 {
     "body": "Replying to [comment:39 tscrim]:\n> Great, thank you. LGTM. Kwankyu, if you do not agree, feel free to revert the positive review.\n\nI fully agree. Thanks.",
     "created_at": "2021-10-25T06:11:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19796",
-    "user": "@kwankyu"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19755",
+    "user": "https://github.com/kwankyu"
 }
 ```
 
@@ -790,15 +789,15 @@ I fully agree. Thanks.
 
 ---
 
-archive/issue_comments_019797.json:
+archive/issue_comments_019756.json:
 ```json
 {
     "body": "Update ticket summary and description\nto better describe the changes made here?\n\n(Or just contract \"should be able to be able to\"\nif the rest is still fine?)",
     "created_at": "2021-10-25T09:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19797",
-    "user": "@slel"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19756",
+    "user": "https://github.com/slel"
 }
 ```
 
@@ -812,15 +811,15 @@ if the rest is still fine?)
 
 ---
 
-archive/issue_comments_019798.json:
+archive/issue_comments_019757.json:
 ```json
 {
     "body": "voil\u00e0, voil\u00e0.",
     "created_at": "2021-10-25T12:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19798",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19757",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -830,15 +829,15 @@ voilà, voilà.
 
 ---
 
-archive/issue_comments_019799.json:
+archive/issue_comments_019758.json:
 ```json
 {
     "body": "Merci.",
     "created_at": "2021-10-25T12:23:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19799",
-    "user": "@slel"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19758",
+    "user": "https://github.com/slel"
 }
 ```
 
@@ -848,15 +847,15 @@ Merci.
 
 ---
 
-archive/issue_comments_019800.json:
+archive/issue_comments_019759.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2021-10-28T22:40:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2877",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19800",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2877#issuecomment-19759",
+    "user": "https://github.com/vbraun"
 }
 ```
 

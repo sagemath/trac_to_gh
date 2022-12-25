@@ -6,15 +6,14 @@ archive/issues_003175.json:
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3175\n\n",
     "created_at": "2008-05-13T01:55:59Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "add 64 bit OSX build support to zlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3175",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3175
 
 ---
 
-archive/issue_comments_021992.json:
+archive/issue_comments_021945.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-13T01:56:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3175",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21992",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21945",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_021993.json:
+archive/issue_comments_021946.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha0/zlib-1.2.3.p4.spkg\n\nadds 64 bit OSX build support.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-19T01:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3175",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21993",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21946",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +76,15 @@ Michael
 
 ---
 
-archive/issue_comments_021994.json:
+archive/issue_comments_021947.json:
 ```json
 {
     "body": "This too builds.",
     "created_at": "2008-08-19T01:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3175",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21994",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21947",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -95,15 +94,15 @@ This too builds.
 
 ---
 
-archive/issue_comments_021995.json:
+archive/issue_comments_021948.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha0",
     "created_at": "2008-08-19T01:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3175",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21995",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21948",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Merged in Sage 3.1.2.alpha0
 
 ---
 
-archive/issue_comments_021996.json:
+archive/issue_comments_021949.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-19T01:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3175",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21996",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3175#issuecomment-21949",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

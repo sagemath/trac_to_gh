@@ -6,15 +6,13 @@ archive/issues_006187.json:
     "body": "Assignee: tba\n\nCC:  @mwhansen mvngu @loefflerd\n\nFrom [sage-devel](http://groups.google.com/group/sage-devel/browse_frm/thread/87a143a395bd1297):\n\n```\n> What does force a complete rebuild is making a new branch with \"sage - \n> clone\". This is annoying; I don't know enough about the build \n> machinery to know if this can be changed. \n\nI agree.  If I have built the docs in the main branch and make a \nclone, it would be great of the docs were clones too, as then we would \nonly need to build the docs once per release. \nI imagine this is easily doable by adapting the clone script.  If \npeople agree, could someone  make a ticket? \n```\n\nNote that the documentation output is copied (because of #5469), but something is still triggering a rebuild.  I don't know enough about Sphinx to know what is causing this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6187\n\n",
     "created_at": "2009-06-02T17:00:10Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "After making a clone, the reference manual (and other docs) should not have to be completely rebuilt.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6187",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: tba
@@ -45,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6187
 
 ---
 
-archive/issue_comments_049393.json:
+archive/issue_comments_049298.json:
 ```json
 {
     "body": "I think the file modification times need to be copied over as well with a \"cp -a\" instead of \"cp -r\".  I'm not sure if there are any hardcoded paths in the Sphinx environment pickle that would need to be changed.",
     "created_at": "2009-06-02T20:24:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49393",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49298",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -63,15 +61,15 @@ I think the file modification times need to be copied over as well with a "cp -a
 
 ---
 
-archive/issue_comments_049394.json:
+archive/issue_comments_049299.json:
 ```json
 {
     "body": "I'm not having any luck with this.  If in sage-clone I copy the library files with \"cp -a\" (or what I think is the equivalent, e.g. \"cp -pr\" on my mac, or `shutil.copytree(\"sage/build\",\"%s/build\"%branch)`), then when it gets to the `sage -b` part of things, it rebuilds all of the cython files, so cloning takes way too long.\n\nNo matter what, if after cloning, I delete the directory doc/output and then recopy it, `sage -docbuild reference html` rebuilds everything.  This happens whether the modification times are preserved or not: even if the times are not preserved, so everything in the output directory is newer than everything in the build directory, Sphinx seems to think that the files have changed and so need to be rebuilt.  Same thing if I recopy the entire \"doc\" directory.  So I'm confused.",
     "created_at": "2009-06-02T21:25:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49394",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49299",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -83,15 +81,15 @@ No matter what, if after cloning, I delete the directory doc/output and then rec
 
 ---
 
-archive/issue_comments_049395.json:
+archive/issue_comments_049300.json:
 ```json
 {
     "body": "#5350 might be relevant here. The script there could be adapted to create hard links for the documentation.",
     "created_at": "2009-06-03T07:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49395",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49300",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -101,15 +99,15 @@ archive/issue_comments_049395.json:
 
 ---
 
-archive/issue_comments_049396.json:
+archive/issue_comments_049301.json:
 ```json
 {
     "body": "This is kind of brutal, but we can replace the cloning part of sage-clone with a single line like\n\n```\ncmd = 'cp -pr sage %s'%branch\n```\n\n(This is with the BSD version of cp on Mac OS X; it might be more portable to use a python equivalent, like shutil.copytree.)\n\nThis has the disadvantage that some crap gets copied along with the good stuff. This is probably a bad idea from other points of view, too; what else goes wrong?  \n\nIt has the advantage that modification times are preserved, while they are not (as far as I can tell) when you use 'hg clone' to copy the repository.\n\nBy the way, the 'clone' section of the hg man page says:\n\n```\nIn some cases, you can clone repositories and checked out files\nusing full hardlinks with\n$ cp -al REPO REPOCLONE\nThis is the fastest way to clone, but it is not always safe. The\noperation is not atomic (making sure REPO is not modified during\nthe operation is up to you) and you have to make sure your editor\nbreaks hardlinks (Emacs and most Linux Kernel tools do so). Also,\nthis is not compatible with certain extensions that place their\nmetadata under the .hg directory, such as mq.\n```\n\nThis is where I got the idea, although their version creates hard links, which I suppose is why it would be \"the fastest way\"...",
     "created_at": "2009-06-14T17:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49396",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49301",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -145,15 +143,15 @@ This is where I got the idea, although their version creates hard links, which I
 
 ---
 
-archive/issue_comments_049397.json:
+archive/issue_comments_049302.json:
 ```json
 {
     "body": "One issue to keep in mind when testing: if you do\n\n```\nsage -docbuild --jsmath reference html\n```\n\nas is done at the end of 'make', and then you do\n\n```\nsage -docbuild reference html\n```\n\nthe entire reference manual gets rebuilt (and similarly for the other pieces of documentation).  So if you're testing out an idea for how to fix this, make sure that you're consistent with the `--jsmath` setting before and after cloning.",
     "created_at": "2009-06-16T02:19:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49397",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49302",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -175,15 +173,15 @@ the entire reference manual gets rebuilt (and similarly for the other pieces of 
 
 ---
 
-archive/issue_comments_049398.json:
+archive/issue_comments_049303.json:
 ```json
 {
     "body": "This patch might very well be a bad idea, but I don't know enough about the Sage cloning process to know any better.  Please review it carefully.\n\n(Actually, I'm posting two patches.  'cloning_scripts_short.patch' just copies over the whole Sage library.  'cloning_scripts.patch' uses the Python 2.6 version of shutil.copytree to allow us to skip certain files when copying, so I copied the source code for that into sage-clone and used that, thereby not copying absolutely everything.  If I'm skipping too many things or not enough things, this is easy to adjust.  Only apply one of these two patches.)",
     "created_at": "2009-06-16T04:11:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49398",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49303",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -195,15 +193,15 @@ This patch might very well be a bad idea, but I don't know enough about the Sage
 
 ---
 
-archive/issue_comments_049399.json:
+archive/issue_comments_049304.json:
 ```json
 {
     "body": "Attachment [cloning_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts.patch) by @jhpalmieri created at 2009-06-16 04:14:02\n\nuse this patch or cloning_scripts.patch, but not both -- see my comments",
     "created_at": "2009-06-16T04:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49399",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49304",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -215,15 +213,15 @@ use this patch or cloning_scripts.patch, but not both -- see my comments
 
 ---
 
-archive/issue_comments_049400.json:
+archive/issue_comments_049305.json:
 ```json
 {
     "body": "Attachment [cloning_scripts_short.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_scripts_short.patch) by @JohnCremona created at 2009-06-17 14:32:05\n\nI have read the comments here with interest, and could try out those patches, but I'm not qualified to say whether they work \"well\" or are robust enough to be released -- sorry!",
     "created_at": "2009-06-17T14:32:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49400",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49305",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -235,15 +233,15 @@ I have read the comments here with interest, and could try out those patches, bu
 
 ---
 
-archive/issue_comments_049401.json:
+archive/issue_comments_049306.json:
 ```json
 {
     "body": "Here's a patch rebased against 4.1.alpha1.",
     "created_at": "2009-06-26T15:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49401",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49306",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -253,15 +251,15 @@ Here's a patch rebased against 4.1.alpha1.
 
 ---
 
-archive/issue_comments_049402.json:
+archive/issue_comments_049307.json:
 ```json
 {
     "body": "rebased against 4.1.alpha1, use instead of either of the other patches",
     "created_at": "2009-06-26T15:13:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49402",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49307",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -271,15 +269,15 @@ rebased against 4.1.alpha1, use instead of either of the other patches
 
 ---
 
-archive/issue_comments_049403.json:
+archive/issue_comments_049308.json:
 ```json
 {
     "body": "Attachment [cloning_6187_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/cloning_6187_scripts.patch) by @JohnCremona created at 2009-06-28 14:24:21\n\nHere's what I did.  1. Starting in main branch of a 4.1.alpha2 build, did \"sage -docbuild all html\" and waited until it finished.  2. Made a clone called test1.  3.  In that clone, did \"sage -docbuild again\" and watched it build all over again.  4. In the clone, applied the third patch.  5. From that clone made a new clone test2.  6. In the new clone once again did \"sage -docbuild all html\" -- and nothing was rebuilt!\n\nThat looks like success to me.  The new script also looks very much simpler than the old one, which is good.\n\nThis is on linux (ubuntu 32-bit);  since you use a standard python utility for the copying I would hope that it would work anywhere, so I'm giving it a positive review and hope that others will try on other systems.",
     "created_at": "2009-06-28T14:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49403",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49308",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -295,15 +293,15 @@ This is on linux (ubuntu 32-bit);  since you use a standard python utility for t
 
 ---
 
-archive/issue_comments_049404.json:
+archive/issue_comments_049309.json:
 ```json
 {
     "body": "The following may help with rebuilding the reference manual after cloning:\n\n* Start with v4.0.2, or a vanilla `sage-clone` script, at least.\n* Apply \n\n```\ndiff --git a/doc/common/builder.py b/doc/common/builder.py\n--- a/doc/common/builder.py\n+++ b/doc/common/builder.py\n@@ -353,6 +353,16 @@ class ReferenceBuilder(DocBuilder):\n         if os.path.exists(_sage):\n             copytree(_sage, os.path.join(self.dir, 'sage'))\n                 \n+        # After \"sage -clone\", refresh the .rst file mtimes in\n+        # environment.pickle.\n+        if update_mtimes:\n+            import time\n+            env = self.get_sphinx_environment()\n+            for doc in env.all_docs:\n+                env.all_docs[doc] = time.time()\n+            env_pickle = os.path.join(self._doctrees_dir(), 'environment.pickle')\n+            env.topickle(env_pickle)\n+\n         getattr(DocBuilder, build_type)(self, *args, **kwds)\n     \n     def cache_filename(self):\n@@ -645,6 +655,8 @@ def help_message():\n parser = optparse.OptionParser(usage=\"usage: sage -docbuild [options] name type\")\n parser.add_option(\"--jsmath\", action=\"store_true\",\n                   help=\"render math using jsMath\")\n+parser.add_option(\"--update_mtimes\", action=\"store_true\",\n+                  help='update .rst file mtimes (e.g., after \"sage -clone\")')\n parser.print_help = help_message\n \n if __name__ == '__main__':\n@@ -653,6 +665,11 @@ if __name__ == '__main__':\n     if options.jsmath:\n         os.environ['SAGE_DOC_JSMATH'] = \"True\"\n \n+    if options.update_mtimes:\n+        update_mtimes = True\n+    else:\n+        update_mtimes = False\n+\n     #Get the name of the document we are trying to build\n     try:\n         name, type = args\n```\n\n* Do `sage -clone foo` or, e.g., `cd $SAGE_ROOT/devel/sage-foo; cp -pr ../sage-bar/doc .`\n* Update `builder.py`, if necessary.\n* Do `sage -docbuild reference html --update_mtimes --jsmath`\n* Do `sage -docbuild reference html --jsmath`\n\nNote: I haven't tested this idea with #5350, other documents, other builders, etc.",
     "created_at": "2009-06-29T00:21:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49404",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49309",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -367,15 +365,15 @@ Note: I haven't tested this idea with #5350, other documents, other builders, et
 
 ---
 
-archive/issue_comments_049405.json:
+archive/issue_comments_049310.json:
 ```json
 {
     "body": "So we could add `sage -docbuild reference html --update_mtimes --jsmath` to the `sage-clone` script, right?\n\nThe only issue I see is that if someone has made some changes and then clones before rebuilding the reference manual, the `-update_mtimes` option tells Sage/Sphinx that the ref manual page doesn't need to be changed.  I guess we can add a warning to sage-clone like the warning already there.\n\nThis works with or without the patch at #5350, and it works appropriately with or without the `--jsmath` switch.  It has no effect on other documents, as one would expect, but I think that's fine.  Same for the other builders.\n\nHere are two new patches, one which is just mpatel's patch to builder.py (and which receives a positive review from me).  The other adds some code to sage-clone to do the `update_mtimes` thing to the reference manual; it tries to figure out whether to use `--jsmath` or not; is there a better way to do this than what I have?  It also prints a brief message about the reference manual. The only thing that needs to be reviewed is this second patch (to the scripts repository).\n\nI like this version better than my old patch: it keeps the old cloning process, so it seems safer to me.  So I'm changing this from \"positive review\" (for the old patch) to \"needs review\" (for the new scripts patch).\n\nApply \"trac_6187_mpatel.patch\" to the sage repository, and apply \"trac_6187_new_scripts.patch\" to the scripts repository.",
     "created_at": "2009-06-29T03:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49405",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49310",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -395,15 +393,15 @@ Apply "trac_6187_mpatel.patch" to the sage repository, and apply "trac_6187_new_
 
 ---
 
-archive/issue_comments_049406.json:
+archive/issue_comments_049311.json:
 ```json
 {
     "body": "Attachment [trac_6187_mpatel.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel.patch) by @qed777 created at 2009-07-01 09:40:21\n\nI noticed an error occurs during cloning if `environment.pickle` doesn't already exist.\n\nI'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.",
     "created_at": "2009-07-01T09:40:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49406",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49311",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -417,15 +415,15 @@ I'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.
 
 ---
 
-archive/issue_comments_049407.json:
+archive/issue_comments_049312.json:
 ```json
 {
     "body": "use this and trac_6187_new_scripts.patch only",
     "created_at": "2009-07-01T15:01:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49407",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49312",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -435,15 +433,15 @@ use this and trac_6187_new_scripts.patch only
 
 ---
 
-archive/issue_comments_049408.json:
+archive/issue_comments_049313.json:
 ```json
 {
     "body": "Attachment [trac_6187_mpatel_v2.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v2.patch) by @qed777 created at 2009-07-01 15:18:52\n\nReplying to [comment:12 mpatel]:\n> I noticed an error occurs during cloning if `environment.pickle` doesn't already exist.\n\nThe new patch should now work in this case.\n\nThe pickle's `srcdir` attribute contains what appears to be the only trace of the name of the cloned (i.e., previous) branch.  This can become an issue when branches are renamed or deleted, as Sphinx will throw an OSError.  The new patch now tells Sphinx to use the sym-linked '.../devel/sage/...'\n\n> I'll try to make a new patch for `builder.py,` after I build 4.1.alpha2.\n\nApply [trac_6187_new_scripts.patch] to the scripts repository and [trac_6187_mpatel_v2.patch] to the sage repository.",
     "created_at": "2009-07-01T15:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49408",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49313",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -464,15 +462,15 @@ Apply [trac_6187_new_scripts.patch] to the scripts repository and [trac_6187_mpa
 
 ---
 
-archive/issue_comments_049409.json:
+archive/issue_comments_049314.json:
 ```json
 {
     "body": "What should the output from 'sage -docbuild --update_mtimes reference html' look like?  Right now I see\n\n```\nsphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/reference    /Applications/sage/devel/sage/doc/en/reference /Applications/sage/devel/sage/doc/output/html/en/reference\nSphinx v0.5.1, building html\nloading pickled environment... done\nbuilding [html]: targets for 0 source files that are out of date\nupdating environment: 0 added, 0 changed, 0 removed\nno targets are out of date.\nBuild finished.  The built documents can be found in /Applications/sage/devel/sage/doc/output/html/en/reference\n```\n\nSince it's not actually building anything (is it?), I think this is misleading.  In the new scripts patch, I've changed sage-clone so that it suppresses the standard output from this command.",
     "created_at": "2009-07-02T22:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49409",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49314",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -494,15 +492,15 @@ Since it's not actually building anything (is it?), I think this is misleading. 
 
 ---
 
-archive/issue_comments_049410.json:
+archive/issue_comments_049315.json:
 ```json
 {
     "body": "Attachment [trac_6187_new_scripts.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts.patch) by @jhpalmieri created at 2009-07-02 22:54:45\n\napply to scripts repo. use this and trac_6187_mpatel_v2.patch only.",
     "created_at": "2009-07-02T22:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49410",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49315",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -514,15 +512,15 @@ apply to scripts repo. use this and trac_6187_mpatel_v2.patch only.
 
 ---
 
-archive/issue_comments_049411.json:
+archive/issue_comments_049316.json:
 ```json
 {
     "body": "Attachment [trac_6187_new_scripts_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v3.patch) by @qed777 created at 2009-07-06 11:01:48\n\nApply this to scripts repo and trac_6187_mpatel_v3.patch to sage repo.",
     "created_at": "2009-07-06T11:01:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49411",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49316",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -534,15 +532,15 @@ Apply this to scripts repo and trac_6187_mpatel_v3.patch to sage repo.
 
 ---
 
-archive/issue_comments_049412.json:
+archive/issue_comments_049317.json:
 ```json
 {
     "body": "Apply this to sage repo and trac_6187_new_scripts_v3.patch to scripts repo.",
     "created_at": "2009-07-06T11:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49412",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49317",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -552,15 +550,15 @@ Apply this to sage repo and trac_6187_new_scripts_v3.patch to scripts repo.
 
 ---
 
-archive/issue_comments_049413.json:
+archive/issue_comments_049318.json:
 ```json
 {
     "body": "Attachment [trac_6187_mpatel_v3.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_mpatel_v3.patch) by @qed777 created at 2009-07-06 11:51:20\n\nI've attached new versions of both patches.  Apply only the `v3` pair to the indicated repositories.  Changes:\n\n* `sage-clone` now copies any existing auto-generated `.rst` files to the new branch, preserving modification times.\n* `builder.py` now updates the pickle first, since otherwise it always regenerates existing `.rst` files after cloning.\n* `jsMath` --> `jsmath` in `sage-clone`.\n\nIt's OK to delete existing auto-generated `.rst` files prior to cloning, as long as `doc/output/doctrees/en/reference/reference.pickle` disappears, too.  The patches don't cover this case, since I think it occurs rarely in practice.  I conjecture that **most** of the time, the `update_mtimes` line doesn't actually build anything, but I've been wrong before.",
     "created_at": "2009-07-06T11:51:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49413",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49318",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -578,15 +576,15 @@ It's OK to delete existing auto-generated `.rst` files prior to cloning, as long
 
 ---
 
-archive/issue_comments_049414.json:
+archive/issue_comments_049319.json:
 ```json
 {
     "body": "Adds a document called 'testreference' for testing the reference builder.  It's non-essential and should be independent of the other patches.",
     "created_at": "2009-07-14T18:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49414",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49319",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -596,15 +594,15 @@ Adds a document called 'testreference' for testing the reference builder.  It's 
 
 ---
 
-archive/issue_comments_049415.json:
+archive/issue_comments_049320.json:
 ```json
 {
     "body": "Attachment [trac_6187_testreference.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_testreference.patch) by @qed777 created at 2009-07-14 19:22:03\n\nApply to scripts repo.  Apply trac_6187_builder_v4.patch to the sage repo.",
     "created_at": "2009-07-14T19:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49415",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49320",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -616,15 +614,15 @@ Apply to scripts repo.  Apply trac_6187_builder_v4.patch to the sage repo.
 
 ---
 
-archive/issue_comments_049416.json:
+archive/issue_comments_049321.json:
 ```json
 {
     "body": "Attachment [trac_6187_new_scripts_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_new_scripts_v4.patch) by @qed777 created at 2009-07-14 19:22:42\n\nApply to sage repo.  Apply trac_6187_new_scripts_v4.patch to the scripts repo.",
     "created_at": "2009-07-14T19:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49416",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49321",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -636,15 +634,15 @@ Apply to sage repo.  Apply trac_6187_new_scripts_v4.patch to the scripts repo.
 
 ---
 
-archive/issue_comments_049417.json:
+archive/issue_comments_049322.json:
 ```json
 {
     "body": "Attachment [trac_6187_builder_v4.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187_builder_v4.patch) by @qed777 created at 2009-07-14 20:23:59\n\nApply only the v4 pair to the appropriate repositories.  The `testreference` patch just adds a non-trivial test document that should build quickly.  It may give an indication, at least, of the behavior to expect when building the full reference manual.\n\nChanges in v4:\n* Reordering of some code and somewhat better case / exception handling in the reference builder.\n* First steps with Python's [logging](http://docs.python.org/library/logging.html) framework.  It's powerful and easy to use, at least inside one module.  One of Sphinx's utility modules colorizes some of the output.\n* More aggressive use of Python's [optparse](http://docs.python.org/library/optparse.html) module, in order to provide several new command-line options (cf. #6488).  The previous syntax should still work, however.\n* `sage-clone` should now be compatible with #6512. `--update_mtimes` is now `--update-mtimes`.\n\nI've focused on the reference manual, but I hope the new pieces make it easier to improve the docbuild system for the other documents, too.  Feel free to make constructive comments, as well as changes.  In particular, we should settle on the option names.\n\nAnyway, if possible, please test the patches in multiple real-world scenarios, including those mentioned on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/f28cef82a0a3ccd1/05b695146514021d?#05b695146514021d).  I'd like to take care of all known, relevant \"ref-cloning\" issues (cf. #5350) before this ticket closes.  It is likely we're not there yet.\n\nI've added a few recipients to the CC list.  I hope that's OK.",
     "created_at": "2009-07-14T20:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49417",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49322",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -668,15 +666,15 @@ I've added a few recipients to the CC list.  I hope that's OK.
 
 ---
 
-archive/issue_comments_049418.json:
+archive/issue_comments_049323.json:
 ```json
 {
     "body": "I should add that I selected capital letters for listing commands (`-C`), formats (`-F`), and documents (`-D`), so that we could use the corresponding lower-case letters, if it's desired, to carry out multiple actions, e.g.,\n\n```\nsage -docbuild -d reference,tutorial -f pdf,html -jv2\n```\n\nIs the command-format distinction useful?  We could add commands to \"pre-process\" groups of docstrings, e.g., to check for and enforce style conventions or to search for cross-references that point to a given object.  However, I'm not very familiar with actually writing ReST docstrings.",
     "created_at": "2009-07-14T20:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49418",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49323",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -692,15 +690,15 @@ Is the command-format distinction useful?  We could add commands to "pre-process
 
 ---
 
-archive/issue_comments_049419.json:
+archive/issue_comments_049324.json:
 ```json
 {
     "body": "Run, e.g., `sage -docbuild` to see a \"short\" help message and `sage -docbuild -H` to see an extended message, including several examples.  Please feel free to edit any parts to make the system easier to use.  Should I post to sage-devel about the new options?\n\nI'm changing the status of this ticket to WPNR to signal that the patches are [again] ready for testing, comment, and perhaps even review.",
     "created_at": "2009-07-22T04:35:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49419",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49324",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -712,15 +710,15 @@ I'm changing the status of this ticket to WPNR to signal that the patches are [a
 
 ---
 
-archive/issue_comments_049420.json:
+archive/issue_comments_049325.json:
 ```json
 {
     "body": "To see colored logging output, try `sage -docbuild testreference html -jv3 -S -E`, say.  I haven't colorized the help messages, since the user's terminal may not support ANSI color escape sequences.",
     "created_at": "2009-07-22T04:40:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49420",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49325",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -730,15 +728,15 @@ To see colored logging output, try `sage -docbuild testreference html -jv3 -S -E
 
 ---
 
-archive/issue_comments_049421.json:
+archive/issue_comments_049326.json:
 ```json
 {
     "body": "Reminder: Make sure to include something like the patch at #6488 (documenting \"--jsmath\").  \n\nWhen this ticket is closed, close #6488 as well.",
     "created_at": "2009-07-22T23:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49421",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49326",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -750,15 +748,15 @@ When this ticket is closed, close #6488 as well.
 
 ---
 
-archive/issue_comments_049422.json:
+archive/issue_comments_049327.json:
 ```json
 {
     "body": "Overall, this works as advertised.  I like the new options, the new option parsing, and the help messages.  We might consider eventually updating mtimes on all of the docs, not just the reference manual, but everything else is quick enoug to build that it's not a big deal.  (To test: I installed the two patches here and made sure the docs were built.  Then I cloned the current repository and rebuilt the docs.  The reference manual built almost instantly, because it was using the version from the clone.)\n\nSomeone else should take a good look at it, though, since I am an author of part of this (the scripts part).  Also, there are a number of changes to builder.py, and other people should look carefully at them, more carefully than I have so far.\n\nOther comments: if I do something like `sage -docbuild hello html`, then it says\n\n```\nsphinx-build -b html -d /Applications/sage/devel/sage/doc/output/doctrees/en/hello    /Applications/sage/devel/sage/doc/en/hello /Applications/sage/devel/sage/doc/output/html/en/hello\nError: Source directory doesn't contain conf.py file.\nBuild finished.  The built documents can be found in /Applications/sage/devel/sage/doc/output/html/en/hello\n```\n\nThe problem is, it creates a directory SAGE_ROOT/devel/sage/doc/en/hello, and now \"hello\" appears in the list of documents.  Should there be better error checking to prevent this from happening?\n\nActually, I think this belongs on another ticket: it's a \"pre-existing condition\", and can be dealt with separately.  See #6605.",
     "created_at": "2009-07-23T17:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49422",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49327",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -782,15 +780,15 @@ Actually, I think this belongs on another ticket: it's a "pre-existing condition
 
 ---
 
-archive/issue_comments_049423.json:
+archive/issue_comments_049328.json:
 ```json
 {
     "body": "A reminder to myself:  Change `sys.exit(0)` to `sys.exit(1)`.",
     "created_at": "2009-07-24T15:47:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49423",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49328",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -800,15 +798,15 @@ A reminder to myself:  Change `sys.exit(0)` to `sys.exit(1)`.
 
 ---
 
-archive/issue_comments_049424.json:
+archive/issue_comments_049329.json:
 ```json
 {
     "body": "Replying to [comment:23 mpatel]:\n> A reminder to myself:  Change `sys.exit(0)` to `sys.exit(1)`.\nAlso:  Update the scripts patch, if necessary, for consistency with #6614.",
     "created_at": "2009-08-02T22:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49424",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49329",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -820,15 +818,15 @@ Also:  Update the scripts patch, if necessary, for consistency with #6614.
 
 ---
 
-archive/issue_comments_049425.json:
+archive/issue_comments_049330.json:
 ```json
 {
     "body": "Attachment [trac_6187-new_scripts_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-new_scripts_v5.patch) by @qed777 created at 2009-08-22 14:35:03\n\nUpdated for #6673.  Apply to scripts repo.",
     "created_at": "2009-08-22T14:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49425",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49330",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -840,15 +838,15 @@ Updated for #6673.  Apply to scripts repo.
 
 ---
 
-archive/issue_comments_049426.json:
+archive/issue_comments_049331.json:
 ```json
 {
     "body": "Attachment [trac_6187-builder_v5.patch](tarball://root/attachments/some-uuid/ticket6187/trac_6187-builder_v5.patch) by @qed777 created at 2009-08-22 14:45:50\n\nFixed sys.exit() code. Apply to sage repo.",
     "created_at": "2009-08-22T14:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49426",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49331",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -860,15 +858,15 @@ Fixed sys.exit() code. Apply to sage repo.
 
 ---
 
-archive/issue_comments_049427.json:
+archive/issue_comments_049332.json:
 ```json
 {
     "body": "V5 just squares `sage-clone` with #6673 and changes `sys.exit(0)` to `sys.exit(1)` in one instance in `builder.py`.",
     "created_at": "2009-08-22T14:51:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49427",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49332",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -878,15 +876,15 @@ V5 just squares `sage-clone` with #6673 and changes `sys.exit(0)` to `sys.exit(1
 
 ---
 
-archive/issue_comments_049428.json:
+archive/issue_comments_049333.json:
 ```json
 {
     "body": "It's asking a lot of a reviewer to apply over a dozen patches!  Any chance of combining them all into one?",
     "created_at": "2009-09-06T16:45:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49428",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49333",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -896,15 +894,15 @@ It's asking a lot of a reviewer to apply over a dozen patches!  Any chance of co
 
 ---
 
-archive/issue_comments_049429.json:
+archive/issue_comments_049334.json:
 ```json
 {
     "body": "I apologize for not being explicit.  Please apply just the v5 pair: the \"new_scripts\" patch to the scripts repository and the \"builder\" patch to the sage repository.",
     "created_at": "2009-09-06T17:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49429",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49334",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -914,15 +912,15 @@ I apologize for not being explicit.  Please apply just the v5 pair: the "new_scr
 
 ---
 
-archive/issue_comments_049430.json:
+archive/issue_comments_049335.json:
 ```json
 {
     "body": "After look at this and testing it out, I think that it can go in.",
     "created_at": "2009-10-15T16:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49430",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49335",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -932,15 +930,15 @@ After look at this and testing it out, I think that it can go in.
 
 ---
 
-archive/issue_comments_049431.json:
+archive/issue_comments_049336.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-15T16:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49431",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49336",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -950,15 +948,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_049432.json:
+archive/issue_comments_049337.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-15T16:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6187",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49432",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6187#issuecomment-49337",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

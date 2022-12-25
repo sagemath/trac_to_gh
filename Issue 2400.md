@@ -6,15 +6,14 @@ archive/issues_002400.json:
     "body": "Assignee: @williamstein\n\n\n```\nI tried doing some integrals today and the output doesn't make much  \nsense to me:\n\nsage: f = e^(-x2)\nsage: f.integrate(x, 0, 0.1)\n2066*sqrt(pi)/36741\nsage: f.integrate(x, 0, 1/10)\nsqrt(pi)*erf(1/10)/2\n\nHmmmm. Does this mean erf(1/10) is a rational number? That's a little  \nsurprising to me. In fact:\n\nsage: RR(f.integrate(x, 0, 0.1))\n0.0996676643523801\nsage: RR(f.integrate(x, 0, 1/10))\n0.0996676642903363\n\nWhat's going on here?\n\ndavid\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2400\n\n",
     "created_at": "2008-03-06T00:44:39Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.4",
     "title": "maxima automatically simplifies floats to rationals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2400",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2400
 
 ---
 
-archive/issue_comments_016200.json:
+archive/issue_comments_016165.json:
 ```json
 {
     "body": "Following a lead from the mailing list, I added \"keepfloat: true\" to the init_code for the maxima interfaces.  The patch is attached.",
     "created_at": "2008-03-06T00:45:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16200",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16165",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -71,15 +70,15 @@ Following a lead from the mailing list, I added "keepfloat: true" to the init_co
 
 ---
 
-archive/issue_comments_016201.json:
+archive/issue_comments_016166.json:
 ```json
 {
     "body": "Jason, please improve the comment \"# no ascii art output\" to indicate what the new flag does.",
     "created_at": "2008-03-06T01:26:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16201",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16166",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -89,15 +88,15 @@ Jason, please improve the comment "# no ascii art output" to indicate what the n
 
 ---
 
-archive/issue_comments_016202.json:
+archive/issue_comments_016167.json:
 ```json
 {
     "body": "Attachment [keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/keepfloat.patch) by @jasongrout created at 2008-03-06 01:38:50\n\nI replaced the patch with an updated one addressing dmharvey's concerns.  The patch is ready to be reviewed again.",
     "created_at": "2008-03-06T01:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16202",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16167",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -109,15 +108,15 @@ I replaced the patch with an updated one addressing dmharvey's concerns.  The pa
 
 ---
 
-archive/issue_comments_016203.json:
+archive/issue_comments_016168.json:
 ```json
 {
     "body": "This patch fails doctests on\n\n`sage -t  devel/sage-2400/sage/matrix/matrix_symbolic_dense.pyx`\n\n(There might be more; I don't know, I killed it.)",
     "created_at": "2008-03-06T02:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16203",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16168",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -131,15 +130,15 @@ This patch fails doctests on
 
 ---
 
-archive/issue_comments_016204.json:
+archive/issue_comments_016169.json:
 ```json
 {
     "body": "The code itself is fine but symbolic matrices with keepfloat appear to be broken in Maxima.  When/if symbolic matrices do not use maxima this will be a good patch.  \n\n\n```\n    TypeError: Error executing code in Maxima\n    CODE:\n    \tsage173 : matrixexp(sage172)$\n    Maxima ERROR:\n    \t\n    `rat' replaced 1.0 by 1/1 = 1.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced -12.0 by -12/1 = -12.0\n    \n    `rat' replaced 2.0 by 2/1 = 2.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced 5.0 by 5/1 = 5.0\n    \n    `rat' replaced -26.0 by -26/1 = -26.0\n    \n    `rat' replaced -60.0 by -60/1 = -60.0\n    \n    `rat' replaced 10.0 by 10/1 = 10.0\n    \n    `rat' replaced -26.0 by -26/1 = -26.0\n    \n    `rat' replaced -12.0 by -12/1 = -12.0\n    \n    `rat' replaced -5.2 by -26/5 = -5.2\n    \n    `rat' replaced 1.0 by 1/1 = 1.0\n    Unable to find the spectral representation\n     \n```\n",
     "created_at": "2008-03-10T14:31:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16204",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16169",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -186,15 +185,15 @@ The code itself is fine but symbolic matrices with keepfloat appear to be broken
 
 ---
 
-archive/issue_comments_016205.json:
+archive/issue_comments_016170.json:
 ```json
 {
     "body": "The matrixexp command seems to work fine in maxima (see below).  How do you reproduce your error?  (can you give a short sage session that gives the error above?)\n\n\n```\nsage: maxima.interact()\n\n  --> Switching to Maxima <--\n\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([x,1],[1,x]));\nmatrix([(%e^2+1)*%e^(x-1)/2,(%e^2-1)*%e^(x-1)/2],[(%e^2-1)*%e^(x-1)/2,(%e^2+1)*%e^(x-1)/2])\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([x,1],[1,x]));\nmatrix([(%e^2+1)*%e^(x-1)/2,(%e^2-1)*%e^(x-1)/2],[(%e^2-1)*%e^(x-1)/2,(%e^2+1)*%e^(x-1)/2])\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([3,1],[1,2]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([3,1],[1,2]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\n```\n",
     "created_at": "2008-03-10T17:23:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16205",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16170",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -229,15 +228,15 @@ matrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)
 
 ---
 
-archive/issue_comments_016206.json:
+archive/issue_comments_016171.json:
 ```json
 {
     "body": "Here is a way to reproduce the above error:\n\n\n```\nmaxima: keepfloat: true\ntrue\nmaxima: matrixexp(matrix([3.0,1.0],[1.0,2.0]));\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/interpreter.py in sage_prefilter(self, block, continuation)\n    406         for i in range(len(B)):\n    407             L = B[i]\n--> 408             M = do_prefilter_paste(L, continuation or (not first))\n    409             first = False\n    410             # The L[:len(L)-len(L.lstrip())]  business here preserves\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/interpreter.py in do_prefilter_paste(line, continuation)\n    347\n    348     if len(line) > 0:\n--> 349         line = preparser_ipython.preparse_ipython(line, not continuation)\n    350     return line\n    351\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/misc/preparser_ipython.py in preparse_ipython(line, reset)\n    104         # TODO: do sage substitutions here\n    105         #t = interface._eval_line(line)\n--> 106         t = interface.eval(line)\n    107\n    108     import sage.misc.interpreter\n\n/home/grout/sage/local/lib/python2.5/site-packages/sage/interfaces/expect.py in eval(self, code, strip, **kwds)\n    712             raise\n    713         except TypeError, s:\n--> 714             raise TypeError, 'error evaluating \"%s\":\\n%s'%(code,s)\n    715\n    716     def execute(self, *args, **kwds):\n\n<type 'exceptions.TypeError'>: error evaluating \"matrixexp(matrix([3.0,1.0],[1.0,2.0]));\":\nError executing code in Maxima\nCODE:\n        matrixexp(matrix([3.0,1.0],[1.0,2.0]));\nMaxima ERROR:\n\n`rat' replaced 1.0 by 1/1 = 1.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced 2.0 by 2/1 = 2.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 1.0 by 1/1 = 1.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced 2.0 by 2/1 = 2.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 5.0 by 5/1 = 5.0\n\n`rat' replaced -5.0 by -5/1 = -5.0\n\n`rat' replaced 1.0 by 1/1 = 1.0\nUnable to find the spectral representation\n\n\nmaxima: keepfloat: false\nfalse\nmaxima: matrixexp(matrix([3.0,1.0],[1.0,2.0]));\nmatrix([%e^(5/2-sqrt(5)/2)*((sqrt(5)+5)*%e^sqrt(5)-sqrt(5)+5)/10,%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5],[%e^(5/2-sqrt(5)/2)*(sqrt(5)*%e^sqrt(5)-sqrt(5))/5,-%e^(5/2-sqrt(5)/2)*((sqrt(5)-5)*%e^sqrt(5)-sqrt(5)-5)/10])\nmaxima:\n```\n",
     "created_at": "2008-03-10T17:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16206",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16171",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -325,15 +324,15 @@ maxima:
 
 ---
 
-archive/issue_comments_016207.json:
+archive/issue_comments_016172.json:
 ```json
 {
     "body": "This post talks about the weakness of the maxima linear algebra functionality and explicitly includes the above error: http://www.ma.utexas.edu/pipermail/maxima/2006/003031.html",
     "created_at": "2008-03-10T17:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16207",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16172",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -343,15 +342,15 @@ This post talks about the weakness of the maxima linear algebra functionality an
 
 ---
 
-archive/issue_comments_016208.json:
+archive/issue_comments_016173.json:
 ```json
 {
     "body": "The last post at http://www.nabble.com/matrix-exponential--td6816907.html suggests using the \"diag\" package instead of the \"linearalgebra\" package for calculating the matrix exponential.  This works with keepfloat:\n\n\n```\nsage: maxima.interact()\n\n  --> Switching to Maxima <--\n\nmaxima: keepfloat: true\ntrue\nmaxima: load(\"diag\")\n?\\/home\\/grout\\/sage\\/local\\/share\\/maxima\\/5\\.13\\.0\\/share\\/contrib\\/diag\\.mac\nmaxima: mat_function(exp,matrix([3.0,1.0],[1.0,2.0]));\nmatrix([(sqrt(5)+1)*%e^((sqrt(5)+5)/2)/(2*sqrt(5))+(sqrt(5)-1)*%e^-((sqrt(5)-5)/2)/(2*sqrt(5)),%e^((sqrt(5)+5)/2)/sqrt(5)-%e^-((sqrt(5)-5)/2)/sqrt(5)],[%e^((sqrt(5)+5)/2)/sqrt(5)-%e^-((sqrt(5)-5)/2)/sqrt(5),2*%e^((sqrt(5)+5)/2)/(sqrt(5)*(sqrt(5)+1))+2*%e^-((sqrt(5)-5)/2)/(sqrt(5)*(sqrt(5)-1))])\n```\n",
     "created_at": "2008-03-10T17:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16208",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16173",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -376,15 +375,15 @@ matrix([(sqrt(5)+1)*%e^((sqrt(5)+5)/2)/(2*sqrt(5))+(sqrt(5)-1)*%e^-((sqrt(5)-5)/
 
 ---
 
-archive/issue_comments_016209.json:
+archive/issue_comments_016174.json:
 ```json
 {
     "body": "The maxima matrixexp function has problems with floating point entries.  I don't think that should keep us from fixing *wrong* output (or at least, unnecessarily rounded) from maxima due to their rounding floating points to rationals.\n\nI've attached a patch which works around the problems in the matrixexp function by specifying keepfloat: false for that one command.  I've also added a note talking about maxima automatically rounding floating point numbers to the docstring for matrixexp.",
     "created_at": "2008-03-10T19:34:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16209",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16174",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -396,15 +395,15 @@ I've attached a patch which works around the problems in the matrixexp function 
 
 ---
 
-archive/issue_comments_016210.json:
+archive/issue_comments_016175.json:
 ```json
 {
     "body": "Attachment [matrixexp-keepfloat.patch](tarball://root/attachments/some-uuid/ticket2400/matrixexp-keepfloat.patch) by @jasongrout created at 2008-03-10 19:35:09\n\napply on top of  keepfloat.patch",
     "created_at": "2008-03-10T19:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16210",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16175",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -416,15 +415,15 @@ apply on top of  keepfloat.patch
 
 ---
 
-archive/issue_comments_016211.json:
+archive/issue_comments_016176.json:
 ```json
 {
     "body": "These two patches apply against 2.10.4.alpha0, fix the problems, and pass tests for me.",
     "created_at": "2008-03-15T21:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16211",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16176",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -434,15 +433,15 @@ These two patches apply against 2.10.4.alpha0, fix the problems, and pass tests 
 
 ---
 
-archive/issue_comments_016212.json:
+archive/issue_comments_016177.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-16T02:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16212",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16177",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -452,15 +451,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_016213.json:
+archive/issue_comments_016178.json:
 ```json
 {
     "body": "Merged both patches in Sage 2.10.4.rc0",
     "created_at": "2008-03-16T02:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16213",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16178",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -470,15 +469,15 @@ Merged both patches in Sage 2.10.4.rc0
 
 ---
 
-archive/issue_comments_016214.json:
+archive/issue_comments_016179.json:
 ```json
 {
     "body": "For some reason this hack doesn't work anymore in Maxima 5.30, see #13973.",
     "created_at": "2013-06-18T18:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2400",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16214",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2400#issuecomment-16179",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_007584.json:
     "body": "Assignee: tbd\n\nFrom IRC:\n\n```\n08:32 < schilly> mvngu: i found a spkg inside the pari spkg. was that me while \n                 scripting or is is this everywhere?\n08:32 < mvngu> schilly: Let me check with Sage 4.3.alpha0\n08:33 < schilly> ok\n08:36 < mvngu> With Sage 4.2.1, it's the file pari-2.3.3.p5/pari-2.3.3.p5.spkg, \n               which a small file. The same goes for Sage 4.3.alpha0.\n08:37 < mvngu> That file should be removed; it's not used anywhere as far as I \n               can tell.\n08:37 < mvngu> I think it was introduced during the update to .p5\n08:37 < mvngu> Unintentionally, of course.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7584\n\n",
     "created_at": "2009-12-02T16:57:41Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007584.json:
     "title": "Pari spkg: remove junk file pari-2.3.3.p5.spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7584",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: tbd
@@ -43,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7584
 
 ---
 
-archive/issue_comments_064648.json:
+archive/issue_comments_064532.json:
 ```json
 {
     "body": "I went ahead and removed this from the spkg.  I also checked in the changes that had been made into the repo.",
     "created_at": "2009-12-02T19:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7584#issuecomment-64648",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7584#issuecomment-64532",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -61,15 +61,15 @@ I went ahead and removed this from the spkg.  I also checked in the changes that
 
 ---
 
-archive/issue_comments_064649.json:
+archive/issue_comments_064533.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-02T19:03:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7584",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7584#issuecomment-64649",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7584#issuecomment-64533",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

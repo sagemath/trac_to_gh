@@ -6,15 +6,14 @@ archive/issues_000708.json:
     "body": "Assignee: somebody\n\nCC:  @burcin\n\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 31.45 s, sys: 0.10 s, total: 31.54 s\nWall time: 31.79\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 2.57\ntrue\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/708\n\n",
     "created_at": "2007-09-20T17:40:44Z",
     "labels": [
-        "basic arithmetic",
-        "minor",
-        "enhancement"
+        "component: basic arithmetic",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "performance issue -- Magma is way faster at testing some polynomials for irreducibility",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/708",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/708
 
 ---
 
-archive/issue_comments_003718.json:
+archive/issue_comments_003705.json:
 ```json
 {
     "body": "This is still the case:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.1.2.alpha0, Release Date: 2008-08-22                |\n| Type notebook() for the GUI, and license() for information.        |\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 57.86 s, sys: 0.13 s, total: 57.99 s\nWall time: 58.02 s\nTrue\nsage: g = magma(f)\nsage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 4.22 s\ntrue\nsage: \nExiting SAGE (CPU time 0m58.11s, Wall time 3m26.33s).\nExiting spawned Magma process.\n```\n\nIs anyone working in that area?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-27T01:29:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3718",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3705",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -90,15 +89,15 @@ Michael
 
 ---
 
-archive/issue_comments_003719.json:
+archive/issue_comments_003706.json:
 ```json
 {
     "body": "Attachment [708-speedup_poly_irred.patch](tarball://root/attachments/some-uuid/ticket708/708-speedup_poly_irred.patch) by @aghitza created at 2008-08-29 22:38:15\n\nThere is a simple way of getting within range of Magma's speed: by Gauss' lemma, we can clear the denominators to get a polynomial over the integers, then test it for irreducibility using the significantly faster code over ZZ.\n\nSee the attached patch.  I'm getting a speedup factor of about 10, but I can't compare to Magma since I don't have it.",
     "created_at": "2008-08-29T22:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3719",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3706",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -112,15 +111,15 @@ See the attached patch.  I'm getting a speedup factor of about 10, but I can't c
 
 ---
 
-archive/issue_comments_003720.json:
+archive/issue_comments_003707.json:
 ```json
 {
     "body": "Speed report:\n\n\n```\nsage: R = QQ['x']\nsage: f = R.random_element(1000)\nsage: time f.is_irreducible()\nCPU times: user 2.06 s, sys: 0.00 s, total: 2.06 s\nWall time: 2.06 s\nTrue\nsage: g = magma(f)\nsage: t = magma.cputime()\nsage: sage: time g.IsIrreducible()\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 5.24 s\ntrue\nsage: magma.cputime(t)\n5.2400000000000002\n```\n\n\nThe new code seems to compare favorably to Magma. IIRC Bill Hart suggested to do pretty much everything with Flint w.r.t. to QQ[x]. Maybe that could be another ticket/task.",
     "created_at": "2008-08-30T00:31:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3720",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3707",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -151,15 +150,15 @@ The new code seems to compare favorably to Magma. IIRC Bill Hart suggested to do
 
 ---
 
-archive/issue_comments_003721.json:
+archive/issue_comments_003708.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha3",
     "created_at": "2008-08-30T01:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3721",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3708",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -169,15 +168,15 @@ Merged in Sage 3.1.2.alpha3
 
 ---
 
-archive/issue_comments_003722.json:
+archive/issue_comments_003709.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-30T01:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/708",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3722",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/708#issuecomment-3709",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

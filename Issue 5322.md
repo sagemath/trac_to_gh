@@ -6,7 +6,7 @@ archive/issues_005322.json:
     "body": "Assignee: mabshoff\n\nThis might be relevant, but seems to be rather old:\n\n  http://mail.python.org/pipermail/python-list/2003-February/190047.html\n\n\nThis is the tail of the log:\n\n```\ngcc -pthread -fPIC -fno-strict-aliasing -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I. -I/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/./Include -I. -IInclude -I./Include -I/space/wstein/farm/sage-3.3.rc2/local/include -I/usr/local/include -I/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Include -I/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src -c /space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Modules/readline.c -o build/temp.linux-i686-2.5/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Modules/readline.o\nIn file included from /space/wstein/farm/sage-3.3.rc2/local/include/readline/readline.h:37,\n                 from /space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Modules/readline.c:31:\n/space/wstein/farm/sage-3.3.rc2/local/include/readline/rltypedefs.h:35: warning: function declaration isn\u2019t a prototype\n/space/wstein/farm/sage-3.3.rc2/local/include/readline/rltypedefs.h:36: warning: function declaration isn\u2019t a prototype\n/space/wstein/farm/sage-3.3.rc2/local/include/readline/rltypedefs.h:37: warning: function declaration isn\u2019t a prototype\n/space/wstein/farm/sage-3.3.rc2/local/include/readline/rltypedefs.h:38: warning: function declaration isn\u2019t a prototype\nIn file included from /space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Modules/readline.c:31:\n/space/wstein/farm/sage-3.3.rc2/local/include/readline/readline.h:378: warning: function declaration isn\u2019t a prototype\n/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Modules/readline.c: In function \u2018flex_complete\u2019:\n/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Modules/readline.c:681: warning: implicit declaration of function \u2018completion_matches\u2019\n/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Modules/readline.c:681: warning: return makes pointer from integer without a cast\ngcc -pthread -shared -L/space/wstein/farm/sage-3.3.rc2/local/lib -I. -IInclude -I./Include -I/space/wstein/farm/sage-3.3.rc2/local/include build/temp.linux-i686-2.5/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src/Modules/readline.o -L/usr/lib/termcap -L/space/wstein/farm/sage-3.3.rc2/local/lib -L/usr/local/lib -lreadline -ltermcap -o build/lib.linux-i686-2.5/readline.so\n/bin/sh: line 1: 16345 Segmentation fault      CC='gcc -pthread' LDSHARED='gcc -pthread -shared' OPT='-DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes' ./python -E ./setup.py build\nmake[2]: *** [sharedmods] Error 139\nmake[2]: Leaving directory `/space/wstein/farm/sage-3.3.rc2/spkg/build/python-2.5.2.p8/src'\nError building Python.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5322\n\n",
     "created_at": "2009-02-20T13:20:39Z",
     "labels": [
-        "build",
+        "component: build",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005322.json:
     "title": "Sage 3.3.rc2: mandriva 32/64 bit fails with mysterious error 139 in make",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5322",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -55,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5322
 
 ---
 
-archive/issue_comments_040977.json:
+archive/issue_comments_040897.json:
 ```json
 {
     "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-01T02:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5322",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5322#issuecomment-40977",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5322#issuecomment-40897",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +77,15 @@ Michael
 
 ---
 
-archive/issue_comments_040978.json:
+archive/issue_comments_040898.json:
 ```json
 {
     "body": "Closing since this refers to a very old version.",
     "created_at": "2013-04-11T16:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5322",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5322#issuecomment-40978",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5322#issuecomment-40898",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -95,15 +95,15 @@ Closing since this refers to a very old version.
 
 ---
 
-archive/issue_comments_040979.json:
+archive/issue_comments_040899.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-04-11T16:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5322",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5322#issuecomment-40979",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5322#issuecomment-40899",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

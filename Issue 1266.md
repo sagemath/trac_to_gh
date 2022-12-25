@@ -6,15 +6,14 @@ archive/issues_001266.json:
     "body": "Assignee: tba\n\nThere's nothing in the reference manual about piecewise functions (except for some brief mentions in sage.calculus.wester); the piecewise module is missing.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1266\n\n",
     "created_at": "2007-11-25T14:06:07Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "sage.functions.piecewise is missing from reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1266",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1266
 
 ---
 
-archive/issue_comments_007936.json:
+archive/issue_comments_007913.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-06T21:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7936",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7913",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_007937.json:
+archive/issue_comments_007914.json:
 ```json
 {
     "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2007-12-06T21:15:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7937",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7914",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
-archive/issue_comments_007938.json:
+archive/issue_comments_007915.json:
 ```json
 {
     "body": "Attachment [1266.patch](tarball://root/attachments/some-uuid/ticket1266/1266.patch) by @mwhansen created at 2008-01-17 00:51:35",
     "created_at": "2008-01-17T00:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7938",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7915",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +82,15 @@ Attachment [1266.patch](tarball://root/attachments/some-uuid/ticket1266/1266.pat
 
 ---
 
-archive/issue_comments_007939.json:
+archive/issue_comments_007916.json:
 ```json
 {
     "body": "Looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-17T00:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7939",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7916",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +104,15 @@ Michael
 
 ---
 
-archive/issue_comments_007940.json:
+archive/issue_comments_007917.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-17T00:59:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7940",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7917",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -123,15 +122,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_007941.json:
+archive/issue_comments_007918.json:
 ```json
 {
     "body": "Merged in Sage 2.10.alpha4",
     "created_at": "2008-01-17T00:59:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1266",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7941",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1266#issuecomment-7918",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

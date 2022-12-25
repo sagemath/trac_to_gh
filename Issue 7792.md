@@ -6,7 +6,7 @@ archive/issues_007792.json:
     "body": "Assignee: @williamstein\n\nKeywords: povray\n\nTo improve docs of Povray.\nTo have width and height parameters in Povray.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7792\n\n",
     "created_at": "2009-12-29T23:01:38Z",
     "labels": [
-        "interfaces",
+        "component: interfaces",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007792.json:
     "title": "Improved docs and added Width and Height at /interfaces/povray.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7792",
-    "user": "slosoi"
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 Assignee: @williamstein
@@ -32,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7792
 
 ---
 
-archive/issue_comments_067250.json:
+archive/issue_comments_067133.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2009-12-29T23:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67250",
-    "user": "slosoi"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67133",
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 
@@ -50,15 +50,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_067251.json:
+archive/issue_comments_067134.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2009-12-29T23:01:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67251",
-    "user": "slosoi"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67134",
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 
@@ -68,15 +68,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_067252.json:
+archive/issue_comments_067135.json:
 ```json
 {
     "body": "There are some bugs apparently in the width and height parameters in the changed code. \nThe parameters F and P work differently as I expected.",
     "created_at": "2009-12-30T03:09:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67252",
-    "user": "slosoi"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67135",
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 
@@ -87,15 +87,15 @@ The parameters F and P work differently as I expected.
 
 ---
 
-archive/issue_comments_067253.json:
+archive/issue_comments_067136.json:
 ```json
 {
     "body": "Attachment [povray.py](tarball://root/attachments/some-uuid/ticket7792/povray.py) by slosoi created at 2009-12-30 04:23:55",
     "created_at": "2009-12-30T04:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67253",
-    "user": "slosoi"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67136",
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 
@@ -105,15 +105,15 @@ Attachment [povray.py](tarball://root/attachments/some-uuid/ticket7792/povray.py
 
 ---
 
-archive/issue_comments_067254.json:
+archive/issue_comments_067137.json:
 ```json
 {
     "body": "Replying to [comment:3 slosoi]:\n> There are some bugs apparently in the width and height parameters in the changed code. \n> The parameters F and P work differently as I expected.\n\nThe patch -file is old one. I will submit a new one after the compilation of Sage.",
     "created_at": "2009-12-30T04:26:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67254",
-    "user": "slosoi"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67137",
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 
@@ -127,15 +127,15 @@ The patch -file is old one. I will submit a new one after the compilation of Sag
 
 ---
 
-archive/issue_comments_067255.json:
+archive/issue_comments_067138.json:
 ```json
 {
     "body": "Attachment [povray_doc.2.patch](tarball://root/attachments/some-uuid/ticket7792/povray_doc.2.patch) by slosoi created at 2009-12-30 19:09:36",
     "created_at": "2009-12-30T19:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67255",
-    "user": "slosoi"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67138",
+    "user": "https://trac.sagemath.org/admin/accounts/users/slosoi"
 }
 ```
 
@@ -145,15 +145,15 @@ Attachment [povray_doc.2.patch](tarball://root/attachments/some-uuid/ticket7792/
 
 ---
 
-archive/issue_comments_067256.json:
+archive/issue_comments_067139.json:
 ```json
 {
     "body": "Attachment [povray_doc.patch](tarball://root/attachments/some-uuid/ticket7792/povray_doc.patch) by mhampton created at 2010-02-07 23:34:21\n\nWhy are you removing the docstring from the class definition?",
     "created_at": "2010-02-07T23:34:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67256",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67139",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -165,15 +165,15 @@ Why are you removing the docstring from the class definition?
 
 ---
 
-archive/issue_comments_067257.json:
+archive/issue_comments_067140.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-23T16:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67257",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67140",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -183,15 +183,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_067258.json:
+archive/issue_comments_067141.json:
 ```json
 {
     "body": "Somethings up with these patches.  Both povray_doc.patch and povray_doc.2.patch are identical and won't apply on top of povray.py.  Also, the file is missing class-level documentation and doctests, (as mhampton noted, you should move the file-level doc back) and nothing is doctested in the methods.",
     "created_at": "2010-06-23T16:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7792",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67258",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/7792#issuecomment-67141",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

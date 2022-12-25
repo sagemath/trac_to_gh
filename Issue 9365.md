@@ -6,7 +6,7 @@ archive/issues_009365.json:
     "body": "Assignee: GeorgSWeber\n\nSee\n\n  http://sage.math.washington.edu/home/wstein/tmp/install-4.5.alpha0.log\n\nand \n\n  http://sage.math.washington.edu/home/justin/logs/install-4.5.a0.log\n\nfor potentially two different issues with building R on OS X 10.6\n\nIssue created by migration from https://trac.sagemath.org/ticket/9365\n\n",
     "created_at": "2010-06-28T21:08:45Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009365.json:
     "title": "sage-4.5.alpha0: R fails to build on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9365",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9365
 
 ---
 
-archive/issue_comments_088962.json:
+archive/issue_comments_088822.json:
 ```json
 {
     "body": "I suspect it is related to this - #9346 \n\nDave",
     "created_at": "2010-06-28T21:17:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9365",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88962",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88822",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -57,15 +57,15 @@ Dave
 
 ---
 
-archive/issue_comments_088963.json:
+archive/issue_comments_088823.json:
 ```json
 {
     "body": "The fix for Justin's problem is up at #9388.\n\nI suspect the fixes to fortran in 4.5.alpha1 will fix William's, so once we see a successful R build on bsd.math, we can close this ticket.",
     "created_at": "2010-06-30T01:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9365",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88963",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88823",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -77,15 +77,15 @@ I suspect the fixes to fortran in 4.5.alpha1 will fix William's, so once we see 
 
 ---
 
-archive/issue_comments_088964.json:
+archive/issue_comments_088824.json:
 ```json
 {
     "body": "This has been fixed by the fortran spkg updates in sage-4.5.alpha1.",
     "created_at": "2010-06-30T22:10:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9365",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88964",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88824",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -95,15 +95,15 @@ This has been fixed by the fortran spkg updates in sage-4.5.alpha1.
 
 ---
 
-archive/issue_comments_088965.json:
+archive/issue_comments_088825.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2010-06-30T22:10:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9365",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88965",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9365#issuecomment-88825",
+    "user": "https://github.com/rlmill"
 }
 ```
 

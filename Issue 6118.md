@@ -6,15 +6,14 @@ archive/issues_006118.json:
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6118\n\n",
     "created_at": "2009-05-22T00:38:29Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "integer shifting slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6118",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: somebody
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6118
 
 ---
 
-archive/issue_comments_048887.json:
+archive/issue_comments_048792.json:
 ```json
 {
     "body": "Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticket6118/6118-integer-shift.patch) by @robertwb created at 2009-05-22 00:39:11",
     "created_at": "2009-05-22T00:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48887",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48792",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [6118-integer-shift.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_048888.json:
+archive/issue_comments_048793.json:
 ```json
 {
     "body": "Before\n\n\n```\nsage: a = 123; b = 11; timeit(\"a << b\")\n625 loops, best of 3: 3.61 \u00b5s per loop\nsage: a = 123; b = int(11); timeit(\"a << b\")\n625 loops, best of 3: 3.99 \u00b5s per loop\n```\n\n\nAfter\n\n\n```\nsage: a = 123; b = 11; timeit(\"a << b\")\n625 loops, best of 3: 230 ns per loop\nsage: a = 123; b = int(11); timeit(\"a << b\")\n625 loops, best of 3: 256 ns per loop\n```\n",
     "created_at": "2009-05-22T00:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48888",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48793",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -85,15 +84,15 @@ sage: a = 123; b = int(11); timeit("a << b")
 
 ---
 
-archive/issue_comments_048889.json:
+archive/issue_comments_048794.json:
 ```json
 {
     "body": "Thumbs up from me. The patch successfully applied to my 4.0 install and the tests in integer.pyx pass.\n\nThis patch is important for mpmath performance (#6196). Time for sage.libs.mpmath.all.runtests() without patch = 63.66 seconds, with patch = 51.88 seconds.",
     "created_at": "2009-06-03T18:26:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48889",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48794",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -105,15 +104,15 @@ This patch is important for mpmath performance (#6196). Time for sage.libs.mpmat
 
 ---
 
-archive/issue_comments_048890.json:
+archive/issue_comments_048795.json:
 ```json
 {
     "body": "I'm definitely happy with this patch. As Robert points out in the patch, there are a few inconsistencies in some of the `integer.pyx` code -- for instance, there are the incongruously named `_lshift` and `_rshift_`, which are basically the same and are barely used. I've removed them, cleaned up the bits of code that used them, and made one or two (morally) small changes to Robert's `_shift_helper` code, such as some comments and more error checking.\n\nInterestingly, I'm having some funny results using `timeit` vs. `%timeit`, namely that `timeit` tends to be inconsistent on timings this tiny:\n\n```\nsage: a = 123 ; b = 11\nsage: timeit(\"a << b\")\n625 loops, best of 3: 200 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 323 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 371 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 360 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 360 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 370 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 368 ns per loop\nsage: timeit(\"a << b\")\n625 loops, best of 3: 418 ns per loop\n```\n\n\nAs you can see, it's generally around `368 ns`, but the timings have several outliers. But IPython `%timeit` thinks the fast outlier is the **correct** value!\n\n\n```\nsage: %timeit a << b\n10000000 loops, best of 3: 188 ns per loop\nsage: %timeit a << b\n10000000 loops, best of 3: 187 ns per loop\n```\n\n\nI tend to trust it, because it's running a ton of loops -- maybe the fact that my computer is doing several things at once is disturbing `timeit`?\n\nAnyway, new patch attached. Robert, if you could look over the changes, I'd say this is a positive review. It seems to give me a nominally faster (around `5%`) timing than the previous version, but that's probably just my computer being weird.",
     "created_at": "2009-06-04T09:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48890",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48795",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -161,15 +160,15 @@ Anyway, new patch attached. Robert, if you could look over the changes, I'd say 
 
 ---
 
-archive/issue_comments_048891.json:
+archive/issue_comments_048796.json:
 ```json
 {
     "body": "I just realized this touched integer.pxd, so some comments first. We care about shifting by ints a lot because library code (especially mpmath) does a lot of stuff like \"x << 1\". I think the patch may make that path slower. Also, the error checking and cpdefing may make it slower too (I'll test, might be negligible). \n\nAlso, why do \n\n\n```\nif n < 0: \n    n *= -1 \n    sign *= -1 \n```\n\n\nrather than \n\n\n```\nn *= sign\n```\n",
     "created_at": "2009-06-05T11:25:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48891",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48796",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -197,15 +196,15 @@ n *= sign
 
 ---
 
-archive/issue_comments_048892.json:
+archive/issue_comments_048797.json:
 ```json
 {
     "body": "Here's after just the first patch: \n\n\n```\nsage: a = 5; b = 6; c = 6r\nsage: %timeit a << b\n10000000 loops, best of 3: 195 ns per loop\nsage: %timeit a >> b\n1000000 loops, best of 3: 218 ns per loop\nsage: %timeit a << c\n10000000 loops, best of 3: 188 ns per loop\nsage: %timeit a >> c\n1000000 loops, best of 3: 217 ns per loop\n\nsage: b = -6; c = -6r\nsage: %timeit a << b\n1000000 loops, best of 3: 204 ns per loop\nsage: %timeit a >> b\n10000000 loops, best of 3: 196 ns per loop\nsage: %timeit a >> c\n10000000 loops, best of 3: 190 ns per loop\nsage: %timeit a << c\n1000000 loops, best of 3: 222 ns per loop\n```\n\n\nand after the second patch \n\n\n```\nsage: sage: a = 5; b = 6; c = 6r\nsage: sage: %timeit a << b\n1000000 loops, best of 3: 192 ns per loop\nsage: sage: %timeit a >> b\n1000000 loops, best of 3: 204 ns per loop\nsage: sage: %timeit a << c\n1000000 loops, best of 3: 203 ns per loop\nsage: sage: %timeit a >> c\n1000000 loops, best of 3: 217 ns per loop\nsage: \nsage: sage: b = -6; c = -6r\nsage: sage: %timeit a << b\n1000000 loops, best of 3: 206 ns per loop\nsage: sage: %timeit a >> b\n1000000 loops, best of 3: 197 ns per loop\nsage: sage: %timeit a >> c\n1000000 loops, best of 3: 203 ns per loop\nsage: sage: %timeit a << c\n1000000 loops, best of 3: 222 ns per loop\n```\n\n\nWith repeated timings, the variance seems to be about 5 or so ns. The only significant differences are that Integer >> Integer is a bit faster with the second patch, and Integer << int and Integer >> int are faster with the first. \n\nI'm (pleasantly) surprised making it a cpdef function didn't slow it down. I don't think `shift_helper` needs to do error checking, and it seems odd to introduce a new auxiliary variable `normalize_Integer`.",
     "created_at": "2009-06-06T03:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48892",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48797",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -269,15 +268,15 @@ I'm (pleasantly) surprised making it a cpdef function didn't slow it down. I don
 
 ---
 
-archive/issue_comments_048893.json:
+archive/issue_comments_048798.json:
 ```json
 {
     "body": "Attachment [trac-6118-pt2.patch](tarball://root/attachments/some-uuid/ticket6118/trac-6118-pt2.patch) by @craigcitro created at 2009-06-20 08:38:50\n\nI've added a new version of the second patch, which mostly just adds comments and removes the inconsistencies with things like `_lshift` and `_rshift_`. \n\nIn particular, I've come around to Robert's point that we want to speed up the `Integer << int` and `Integer >> int` cases the most -- I just did a `search_src('>>')`, and there seems to be a lot of code that shifts by literals (which will be Python `int`s). I also removed the one extra error check in `_shift_helper` and made a note about it. \n\nOne last question, though -- do we really need the case where `y = ZZ(y)` raises a `ValueError`? Looking at the `Integer` constructor, this seems to only happen when we're given a string in a base larger than 36; in this case, the code in the `except` clause won't work, anyway. So are there other cases where this is used that I'm not thinking of? (It's obviously not too important, but I'm curious.)",
     "created_at": "2009-06-20T08:38:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48893",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48798",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -293,15 +292,15 @@ One last question, though -- do we really need the case where `y = ZZ(y)` raises
 
 ---
 
-archive/issue_comments_048894.json:
+archive/issue_comments_048799.json:
 ```json
 {
     "body": "I think that Craig's patch looks good, and his question shouldn't really hold this up.  I'll open a new ticket for that so that these can go in.",
     "created_at": "2009-09-08T06:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48894",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48799",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -311,15 +310,15 @@ I think that Craig's patch looks good, and his question shouldn't really hold th
 
 ---
 
-archive/issue_comments_048895.json:
+archive/issue_comments_048800.json:
 ```json
 {
     "body": "I got some hunk failures when applying `trac-6118-pt2.patch`:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6118/trac-6118-pt2.patch && hg qpush\nadding trac-6118-pt2.patch to series file\napplying trac-6118-pt2.patch\npatching file sage/rings/integer.pxd\nHunk #1 FAILED at 15\n1 out of 1 hunks FAILED -- saving rejects to file sage/rings/integer.pxd.rej\npatching file sage/rings/integer.pyx\nHunk #1 FAILED at 4363\nHunk #2 FAILED at 4405\nHunk #3 FAILED at 4417\nHunk #4 FAILED at 4434\nHunk #5 FAILED at 4443\n5 out of 5 hunks FAILED -- saving rejects to file sage/rings/integer.pyx.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac-6118-pt2.patch\n```\n\nThis needs a rebase against Sage 4.1.2.alpha1 or a later version.",
     "created_at": "2009-09-08T10:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48895",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48800",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -350,15 +349,15 @@ This needs a rebase against Sage 4.1.2.alpha1 or a later version.
 
 ---
 
-archive/issue_comments_048896.json:
+archive/issue_comments_048801.json:
 ```json
 {
     "body": "Minh, were you applying both patches?  The second applies on top of the first.",
     "created_at": "2009-09-08T20:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48896",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48801",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -368,15 +367,15 @@ Minh, were you applying both patches?  The second applies on top of the first.
 
 ---
 
-archive/issue_comments_048897.json:
+archive/issue_comments_048802.json:
 ```json
 {
     "body": "mhansen -- what's up?  a bunch of us are at the HUB working on Sage...",
     "created_at": "2009-09-08T20:19:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48897",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48802",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -386,15 +385,15 @@ mhansen -- what's up?  a bunch of us are at the HUB working on Sage...
 
 ---
 
-archive/issue_comments_048898.json:
+archive/issue_comments_048803.json:
 ```json
 {
     "body": "Both patches should be applied -- not just the last one.",
     "created_at": "2009-09-30T07:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48898",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48803",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -404,15 +403,15 @@ Both patches should be applied -- not just the last one.
 
 ---
 
-archive/issue_comments_048899.json:
+archive/issue_comments_048804.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-15T08:48:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6118",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48899",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6118#issuecomment-48804",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

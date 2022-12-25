@@ -6,15 +6,14 @@ archive/issues_008257.json:
     "body": "Assignee: tbd\n\nThe gd-2.0.35.p4 spkg fails to build on cygwin.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8257\n\n",
     "created_at": "2010-02-13T20:04:09Z",
     "labels": [
-        "porting: Cygwin",
-        "major",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.3",
     "title": "cygwin: gd-2.0.35.p4 fails to build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8257",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8257
 
 ---
 
-archive/issue_comments_073070.json:
+archive/issue_comments_072947.json:
 ```json
 {
     "body": "The errors are:\n\n```\n...\ngcc -shared  .libs/gd.o .libs/gdfx.o .libs/gd_security.o .libs/gd_gd.o .libs/gd_gd2.o .libs/gd_io.o .libs/gd_io_dp.o .libs/gd_gif_in.o .libs/gd_gif_out.o .libs/gd_io_file.o .libs/gd_io_ss.o .libs/gd_jpeg.o .libs/gd_png.o .libs/gd_ss.o .libs/gd_topal.o .libs/gd_wbmp.o .libs/gdcache.o .libs/gdfontg.o .libs/gdfontl.o .libs/gdfontmb.o .libs/gdfonts.o .libs/gdfontt.o .libs/gdft.o .libs/gdhelpers.o .libs/gdkanji.o .libs/gdtables.o .libs/gdxpm.o .libs/wbmp.o  -L/home/wstein/build/sage-4.3.3.alpha0/local/lib /usr/lib/libiconv.dll.a /home/wstein/build/sage-4.3.3.alpha0/local/lib/libfreetype.dll.a -lz  -o .libs/cyggd-2.dll -Wl,--enable-auto-image-base -Xlinker --out-implib -Xlinker .libs/libgd.dll.a \nCreating library file: .libs/libgd.dll.a                                                                                   \n.libs/gd_png.o: In function `gdPngErrorHandler':                                                                           \n/home/wstein/build/sage-4.3.3.alpha0/spkg/build/gd-2.0.35.p4/src/gd_png.c:70: undefined reference to `_png_get_error_ptr'  \n.libs/gd_png.o: In function `gdPngReadData':                                                                               \n/home/wstein/build/sage-4.3.3.alpha0/spkg/build/gd-2.0.35.p4/src/gd_png.c:85: undefined reference to `_png_get_io_ptr'     \n/home/wstein/build/sage-4.3.3.alpha0/spkg/build/gd-2.0.35.p4/src/gd_png.c:87: undefined reference to `_png_error'          \n.libs/gd_png.o: In function `gdPngWriteData':   \n```\n\n\nPutting -lpng12  in the build line makes the line complete without errors.  So that's a hint.",
     "created_at": "2010-02-13T20:05:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73070",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-72947",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -62,15 +61,15 @@ Putting -lpng12  in the build line makes the line complete without errors.  So t
 
 ---
 
-archive/issue_comments_073071.json:
+archive/issue_comments_072948.json:
 ```json
 {
     "body": "Upgrading to gd-2.0.36rc1 didn't help.",
     "created_at": "2010-02-13T20:29:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73071",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-72948",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -80,15 +79,15 @@ Upgrading to gd-2.0.36rc1 didn't help.
 
 ---
 
-archive/issue_comments_073072.json:
+archive/issue_comments_072949.json:
 ```json
 {
     "body": "I believe the failure is caused by a bad version of expr.  I'm attaching a  wrapper script that needs to be put in `$SAGE_LOCAL/bin`.  I'm not sure where the best place to put this script is. In the gd spkg?  In something like base?",
     "created_at": "2010-04-06T17:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73072",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-72949",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -98,15 +97,15 @@ I believe the failure is caused by a bad version of expr.  I'm attaching a  wrap
 
 ---
 
-archive/issue_comments_073073.json:
+archive/issue_comments_072950.json:
 ```json
 {
     "body": "Attachment [expr](tarball://root/attachments/some-uuid/ticket8257/expr) by @mwhansen created at 2010-04-06 17:40:31",
     "created_at": "2010-04-06T17:40:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73073",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-72950",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -116,15 +115,15 @@ Attachment [expr](tarball://root/attachments/some-uuid/ticket8257/expr) by @mwha
 
 ---
 
-archive/issue_comments_073074.json:
+archive/issue_comments_072951.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-27T04:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73074",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-72951",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -134,15 +133,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_073075.json:
+archive/issue_comments_072952.json:
 ```json
 {
     "body": "I've put an spkg up at http://sage.math.washington.edu/home/mhansen/cygwin_port/gd-2.0.35.p5.spkg",
     "created_at": "2010-04-27T04:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73075",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-72952",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -152,15 +151,15 @@ I've put an spkg up at http://sage.math.washington.edu/home/mhansen/cygwin_port/
 
 ---
 
-archive/issue_comments_073076.json:
+archive/issue_comments_072953.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-26T00:29:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73076",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-72953",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -170,15 +169,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_073077.json:
+archive/issue_comments_072954.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-26T00:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8257",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-73077",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8257#issuecomment-72954",
+    "user": "https://github.com/williamstein"
 }
 ```
 

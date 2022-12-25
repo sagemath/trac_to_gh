@@ -6,15 +6,14 @@ archive/issues_006904.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage: matrix(QQ,2,[1,0,0,1]).change_ring(GF(2)) - 1\nTraceback (most recent call last):\n...\nRuntimeError\n}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/6904\n\n",
     "created_at": "2009-09-08T20:13:34Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "change ring broken over QQ and GF(2)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6904",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6904
 
 ---
 
-archive/issue_comments_057035.json:
+archive/issue_comments_056927.json:
 ```json
 {
     "body": "Here's another bug that bit me while doing research today and might be caused by the same problem:\n\n```\nsage: a = matrix(QQ,22,[0, 0, 0, -1, 1, -1, -1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0,\n0, 1, 0, 1, 0, 0, 0, -1, 1, 0, -1, 0, 1, 0, 0, -1, 0, -2, 1, -1, -1, 1,\n0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0,\n0, 1, -1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, -1, 0,\n0, -1, 1, 0, 0, -1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, -1, 0, -1, 0, 0,\n-1, 1, 0, 1, -1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, -1, 0, 0, 0, -1, 0,\n0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0,\n0, 1, -1, 0, 1, 0, -1, 0, 1, 1, 0, 2, 0, 0, 1, -1, 1, 0, 0, 0, 0, 0, 0,\n1, 0, 0, 0, 0, 0, 0, 0, 1, -1, 1, 0, 0, 1, 0, 0, 0, 0, 1, -2, 1, 1, 0,\n0, 0, 0, 0, 1, -1, -1, 0, -1, 0, -1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1,\n0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, -1, 1, 0, 0, 0, 0,\n0, 0, 1, -1, -1, 0, 0, -1, -1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, -1, 1, 0,\n-1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, -1, 0, 0,\n0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 1, 0, 0,\n0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, -1, 0, 0, 0, 0, 0, 0, 0,\n0, 0, -1, 0, 0, 0, 0, 0, 1, 0, 0, 1, -1, 0, -1, 1, 0, -1, 0, 0, 0, 0, 0,\n0, -2, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, -1, 1, 0, -1, -1, 1, 0, 0, 0, 0,\n-2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 1, 0, -1, 0, 0, 0, 0, 0, -1,\n0, 0, 0, 0, 0, -1, 0, 0, 0, 0, -1, 0, -1, 1, 1, -1, 0, 0, 0, 0, 0, 0, 0,\n0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0,\n0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0, 0, 1, -1, 0, 0, 0,\n1]).change_ring(GF(2))\n\nsage: a^21\nTraceback (click to the left of this block for traceback)\n...\nTypeError: Cannot convert\nsage.matrix.matrix_modn_dense.Matrix_modn_dense to\nsage.matrix.matrix_mod2_dense.Matrix_mod2_dense\n\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"_sage_input_79.py\", line 9, in <module>\n    open(\"___code___.py\",\"w\").write(\"# -*- coding: utf-8 -*-\\n\" + _support_.preparse_worksheet_cell(base64.b64decode(\"diA9IFsoYV5pKS5saXN0KCkgZm9yIGkgaW4gWzEuLjIxXV0=\"),globals())+\"\\n\"); execfile(os.path.abspath(\"___code___.py\"))\n  File \"\", line 1, in <module>\n    \n  File \"/tmp/tmpVclvdc/___code___.py\", line 3, in <module>\n    v = [(a**i).list() for i in (ellipsis_range(_sage_const_1 ,Ellipsis,_sage_const_21 ))]\n  File \"\", line 1, in <module>\n    \n  File \"matrix0.pyx\", line 3893, in sage.matrix.matrix0.Matrix.__pow__ (sage/matrix/matrix0.c:21527)\n  File \"element.pyx\", line 1409, in sage.structure.element.RingElement.__pow__ (sage/structure/element.c:11201)\n  File \"element.pyx\", line 3264, in sage.structure.element.generic_power_c (sage/structure/element.c:23714)\n  File \"element.pyx\", line 2134, in sage.structure.element.Matrix.__mul__ (sage/structure/element.c:14292)\n  File \"matrix_mod2_dense.pyx\", line 645, in sage.matrix.matrix_mod2_dense.Matrix_mod2_dense._matrix_times_matrix_ (sage/matrix/matrix_mod2_dense.c:5144)\nTypeError: Cannot convert sage.matrix.matrix_modn_dense.Matrix_modn_dense to sage.matrix.matrix_mod2_dense.Matrix_mod2_dense\n\n```\n",
     "created_at": "2010-02-18T23:45:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57035",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56927",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -104,15 +103,15 @@ TypeError: Cannot convert sage.matrix.matrix_modn_dense.Matrix_modn_dense to sag
 
 ---
 
-archive/issue_comments_057036.json:
+archive/issue_comments_056928.json:
 ```json
 {
     "body": "Amazingly, this is still broken in Sage-4.5.alpha4!\n\n```\n\nwstein@sage:~/build/sage-4.5.alpha4$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nsage: matrix(QQ,2,[1,0,0,1]).change_ring(GF(2)) - 1\n---------------------------------------------------------------------------\nRuntimeError                              Traceback (most recent call last)\n| Sage Version 4.5.alpha4, Release Date: 2010-07-06                  |\n| Type notebook() for the GUI, and license() for information.        |\n/mnt/usb1/scratch/wstein/build/sage-4.5.alpha4/<ipython console> in <module>()\n\n/mnt/usb1/scratch/wstein/build/sage-4.5.alpha4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__sub__ (sage/structure/element.c:11073)()\n\n/mnt/usb1/scratch/wstein/build/sage-4.5.alpha4/local/lib/python2.6/site-packages/sage/structure/coerce.so in sage.structure.coerce.CoercionModel_cache_maps.bin_op (sage/structure/coerce.c:6123)()\n\n/mnt/usb1/scratch/wstein/build/sage-4.5.alpha4/local/lib/python2.6/site-packages/sage/structure/element.so in sage.structure.element.RingElement.__sub__ (sage/structure/element.c:11005)()\n\nRuntimeError: \nsage: \n```\n",
     "created_at": "2010-07-07T06:26:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57036",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56928",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -150,15 +149,15 @@ sage:
 
 ---
 
-archive/issue_comments_057037.json:
+archive/issue_comments_056929.json:
 ```json
 {
     "body": "This is occurring in `Matrix_modn_dense._sub_()`. It gets called with 'right' of type Matrix_mod2_dense, but casts it to Matrix_modn_dense internally. (I haven't looked at all at why this is happening and if it should be happening.)",
     "created_at": "2010-07-07T09:01:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57037",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56929",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -168,15 +167,15 @@ This is occurring in `Matrix_modn_dense._sub_()`. It gets called with 'right' of
 
 ---
 
-archive/issue_comments_057038.json:
+archive/issue_comments_056930.json:
 ```json
 {
     "body": "Proposed fix for the bug #6904",
     "created_at": "2010-07-07T13:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57038",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56930",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -186,15 +185,15 @@ Proposed fix for the bug #6904
 
 ---
 
-archive/issue_comments_057039.json:
+archive/issue_comments_056931.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-07T13:12:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57039",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56931",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -204,15 +203,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_057040.json:
+archive/issue_comments_056932.json:
 ```json
 {
     "body": "Attachment [sage-6904.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904.patch) by @ClementPernet created at 2010-07-07 13:12:16\n\nThe problem is due to the fact that with p=2, the change_ring() method \u00a0should not create a matrix_modn_dense but a matrix_mod2_dense (wrapping m4ri).\n\nI added this special case.\n\nMeanwhile, it revealed a conflict in the declaration of ONE (in libs/pari/gens.pyx, and in m4ri). So I renammed the macros in pari/gens.*.",
     "created_at": "2010-07-07T13:12:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57040",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56932",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -228,15 +227,15 @@ Meanwhile, it revealed a conflict in the declaration of ONE (in libs/pari/gens.p
 
 ---
 
-archive/issue_comments_057041.json:
+archive/issue_comments_056933.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @ClementPernet.",
     "created_at": "2010-07-07T13:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57041",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56933",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -246,15 +245,15 @@ Changing assignee from @williamstein to @ClementPernet.
 
 ---
 
-archive/issue_comments_057042.json:
+archive/issue_comments_056934.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-07-08T12:33:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57042",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56934",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -264,15 +263,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_057043.json:
+archive/issue_comments_056935.json:
 ```json
 {
     "body": "Two changes needed:\n\n* Add the example as a doctest.\n\n* Change _mod_int_c(self, mod_int p) so it calls _mod_two if p=2.",
     "created_at": "2010-07-08T12:33:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57043",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56935",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -286,15 +285,15 @@ Two changes needed:
 
 ---
 
-archive/issue_comments_057044.json:
+archive/issue_comments_056936.json:
 ```json
 {
     "body": "Attachment [sage-6904-v2.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v2.patch) by @ClementPernet created at 2010-07-08 12:54:45\n\ncorrected version following the remarks by was",
     "created_at": "2010-07-08T12:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57044",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56936",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -306,15 +305,15 @@ corrected version following the remarks by was
 
 ---
 
-archive/issue_comments_057045.json:
+archive/issue_comments_056937.json:
 ```json
 {
     "body": "fix a typo in the docstring",
     "created_at": "2010-07-08T13:02:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57045",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56937",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -324,15 +323,15 @@ fix a typo in the docstring
 
 ---
 
-archive/issue_comments_057046.json:
+archive/issue_comments_056938.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2010-07-08T13:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57046",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56938",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -342,15 +341,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_057047.json:
+archive/issue_comments_056939.json:
 ```json
 {
     "body": "Attachment [sage-6904-v3.patch](tarball://root/attachments/some-uuid/ticket6904/sage-6904-v3.patch) by @williamstein created at 2010-07-08 13:03:45",
     "created_at": "2010-07-08T13:03:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57047",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56939",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -360,15 +359,15 @@ Attachment [sage-6904-v3.patch](tarball://root/attachments/some-uuid/ticket6904/
 
 ---
 
-archive/issue_comments_057048.json:
+archive/issue_comments_056940.json:
 ```json
 {
     "body": "I've filled in the Author(s) and Reviewer(s) fields.  If I'm wrong, please correct them.",
     "created_at": "2010-07-20T08:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57048",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56940",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -378,15 +377,15 @@ I've filled in the Author(s) and Reviewer(s) fields.  If I'm wrong, please corre
 
 ---
 
-archive/issue_comments_057049.json:
+archive/issue_comments_056941.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T08:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6904",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-57049",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6904#issuecomment-56941",
+    "user": "https://github.com/qed777"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_008703.json:
     "body": "Assignee: @hivert\n\nCC:  @fchapoton sage-combinat vivianepons @darijgr\n\nPatch in preparation in sage-combinat queue\n\nDepends on #8702\n\nIssue created by migration from https://trac.sagemath.org/ticket/8703\n\n",
     "created_at": "2010-04-17T09:36:21Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "Combinatorial Rooted Ordered and Binary Trees",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8703",
-    "user": "@hivert"
+    "user": "https://github.com/hivert"
 }
 ```
 Assignee: @hivert
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8703
 
 ---
 
-archive/issue_comments_079325.json:
+archive/issue_comments_079195.json:
 ```json
 {
     "body": "This is an experiment to see if user chapoton is receiving e-mail from trac...",
     "created_at": "2010-06-08T17:07:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79325",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79195",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -51,15 +50,15 @@ This is an experiment to see if user chapoton is receiving e-mail from trac...
 
 ---
 
-archive/issue_comments_079326.json:
+archive/issue_comments_079196.json:
 ```json
 {
     "body": "Updated a new patch after modification in #8702. Close to but not ready for review.",
     "created_at": "2010-10-24T09:51:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79326",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79196",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -69,15 +68,15 @@ Updated a new patch after modification in #8702. Close to but not ready for revi
 
 ---
 
-archive/issue_comments_079327.json:
+archive/issue_comments_079197.json:
 ```json
 {
     "body": "Added Fr\u00e9d\u00e9ric as an author to make sure not to forget him. He contributed several functions.",
     "created_at": "2010-11-01T15:17:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79327",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79197",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -87,15 +86,15 @@ Added Frédéric as an author to make sure not to forget him. He contributed sev
 
 ---
 
-archive/issue_comments_079328.json:
+archive/issue_comments_079198.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"trees\".",
     "created_at": "2011-05-31T14:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79328",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79198",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing keywords from "" to "trees".
 
 ---
 
-archive/issue_comments_079329.json:
+archive/issue_comments_079199.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2011-05-31T14:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79329",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79199",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_079330.json:
+archive/issue_comments_079200.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-05-31T14:58:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79330",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79200",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -141,15 +140,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_079331.json:
+archive/issue_comments_079201.json:
 ```json
 {
     "body": "I just uploaded a new patch wich speedup element creation and remove some unnecessary imports.",
     "created_at": "2011-06-02T15:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79331",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79201",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -159,15 +158,15 @@ I just uploaded a new patch wich speedup element creation and remove some unnece
 
 ---
 
-archive/issue_comments_079332.json:
+archive/issue_comments_079202.json:
 ```json
 {
     "body": "There seems to be a problem with attributes insert, contains, get, get_min, get_max and contains. Please see the report of the buildbot.",
     "created_at": "2011-06-11T21:21:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79332",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79202",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -177,15 +176,15 @@ There seems to be a problem with attributes insert, contains, get, get_min, get_
 
 ---
 
-archive/issue_comments_079333.json:
+archive/issue_comments_079203.json:
 ```json
 {
     "body": "Replying to [comment:6 chapoton]:\n> There seems to be a problem with attributes insert, contains, get, get_min, get_max and contains. Please see the report of the buildbot.\n\nYes ! There is already something in sage which is called `BinaryTree`. I\njust asked for an incompatible change on\n[sage-devel](https://groups.google.com/group/sage-devel/browse_thread/thread/1856db31a5cc54f2?hl=fr) and\n[sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/1856db31a5cc54f2)",
     "created_at": "2011-06-13T11:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79333",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79203",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -201,15 +200,15 @@ just asked for an incompatible change on
 
 ---
 
-archive/issue_comments_079334.json:
+archive/issue_comments_079204.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2011-06-13T11:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79334",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79204",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -219,15 +218,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_079335.json:
+archive/issue_comments_079205.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2011-06-13T20:44:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79335",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79205",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -237,15 +236,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_079336.json:
+archive/issue_comments_079206.json:
 ```json
 {
     "body": "Fixed 'labeled' vs 'labelled'",
     "created_at": "2011-11-21T16:52:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79336",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79206",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -255,15 +254,15 @@ Fixed 'labeled' vs 'labelled'
 
 ---
 
-archive/issue_comments_079337.json:
+archive/issue_comments_079207.json:
 ```json
 {
     "body": "Addressed Frederic Chaponton's remark (private email) about labelled/unlabelled.",
     "created_at": "2011-12-03T14:30:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79337",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79207",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -273,15 +272,15 @@ Addressed Frederic Chaponton's remark (private email) about labelled/unlabelled.
 
 ---
 
-archive/issue_comments_079338.json:
+archive/issue_comments_079208.json:
 ```json
 {
     "body": "Fixed doctests.",
     "created_at": "2012-01-21T12:09:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79338",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79208",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -291,15 +290,15 @@ Fixed doctests.
 
 ---
 
-archive/issue_comments_079339.json:
+archive/issue_comments_079209.json:
 ```json
 {
     "body": "Changing keywords from \"trees\" to \"trees, Cernay2012\".",
     "created_at": "2012-02-06T14:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79339",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79209",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -309,15 +308,15 @@ Changing keywords from "trees" to "trees, Cernay2012".
 
 ---
 
-archive/issue_comments_079340.json:
+archive/issue_comments_079210.json:
 ```json
 {
     "body": "Hellooooooo Florent !\n\nHere is a patch with some more documentation for the class. We discussed it a lot already, and there were two more things I had stored in a file while beginning the review.\n\nSome notes before we forget :\n* The symmetry_factor should not be there, and only works for RootedTrees (not OrderedDDTrees)\n* What about the name itself ? I know \"automorphism_group_size\" is a bit long, but it woul be nice to find something more meaningful.\n* And I probably already forgot what I should have written there. Well, we wll find it again `^^;`\n\nNathann\n\nP.S. : I updated the combinat queue -- how unusual for me !",
     "created_at": "2012-02-07T22:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79340",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79210",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -338,15 +337,15 @@ P.S. : I updated the combinat queue -- how unusual for me !
 
 ---
 
-archive/issue_comments_079341.json:
+archive/issue_comments_079211.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2012-02-07T22:47:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79341",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79211",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -356,15 +355,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_079342.json:
+archive/issue_comments_079212.json:
 ```json
 {
     "body": "Hello,\n\nNathan, your review patch has 2 problems :\n\n* there lacks the ticket number in the first line of the description\n\n* there is a trailing whitespace, see the bot report for the exact location\n\nFlorent, it seems the you are using several non-existing options for DiGraph, unless these options are introduced in another ticket ?\n\n\n```\nDiGraph(loop=False, layout='tree', tree_root=0)\n```\n\n\nI guess it has to be replaced by\n\n\n```\nDiGraph(loops=False)\n```\n",
     "created_at": "2012-06-08T18:59:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79342",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79212",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -396,15 +395,15 @@ DiGraph(loops=False)
 
 ---
 
-archive/issue_comments_079343.json:
+archive/issue_comments_079213.json:
 ```json
 {
     "body": "Hi,\n\nI wonder what the the current situation is here: we would very much appreciate if we could have a version of this patch that we can actually review. Do you think this is feasible during this week, or are there any complicated issues remaining?\n\nThanks, Christian",
     "created_at": "2013-02-13T18:29:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79343",
-    "user": "stumpc5"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79213",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stumpc5"
 }
 ```
 
@@ -418,15 +417,15 @@ Thanks, Christian
 
 ---
 
-archive/issue_comments_079344.json:
+archive/issue_comments_079214.json:
 ```json
 {
     "body": "Hi Christian,\n\nNo there is nothing complicated. The doc still need to be reread. I did some improvement in the train yesterday so I can upload a new version of the patch which can readily stated to be reviewed. However, I won't get time to rework it before the end of the week. So feel free to do whatever you think is good to improve the doc.\n\nFlorent",
     "created_at": "2013-02-13T18:45:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79344",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79214",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -440,15 +439,15 @@ Florent
 
 ---
 
-archive/issue_comments_079345.json:
+archive/issue_comments_079215.json:
 ```json
 {
     "body": "Also the LateX output is currently crappy. Jean-Baptiste has a much better tikz output but it needs some cleanup. So I think we should leave this for another ticket.",
     "created_at": "2013-02-13T18:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79345",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79215",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -458,15 +457,15 @@ Also the LateX output is currently crappy. Jean-Baptiste has a much better tikz 
 
 ---
 
-archive/issue_comments_079346.json:
+archive/issue_comments_079216.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-02-13T18:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79346",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79216",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -476,15 +475,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_079347.json:
+archive/issue_comments_079217.json:
 ```json
 {
     "body": "Replying to [comment:16 VivianePons]:\n\nViviane, do you want to take this over, should we do that later together, or should I do this?",
     "created_at": "2013-02-14T10:48:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79347",
-    "user": "stumpc5"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79217",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stumpc5"
 }
 ```
 
@@ -496,15 +495,15 @@ Viviane, do you want to take this over, should we do that later together, or sho
 
 ---
 
-archive/issue_comments_079348.json:
+archive/issue_comments_079218.json:
 ```json
 {
     "body": "Attachment [trac_8703-trees-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh.patch) by stumpc5 created at 2013-02-16 11:00:01\n\nThe patch looks very complete, thanks you!\n\nOne thing I noticed: I would like to be able to reconstruct a tree from its string representation. I.e.,\n\n```\nsage: BinaryTree(\"[., [[., [., .]], .]]\")\n```\n\nUnfortunately, this resulted in an infinite recursion. It would be great if you could fix this.\n\n(I am not yet done with my review...)\n\nCheers, Christian",
     "created_at": "2013-02-16T11:00:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79348",
-    "user": "stumpc5"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79218",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stumpc5"
 }
 ```
 
@@ -528,15 +527,15 @@ Cheers, Christian
 
 ---
 
-archive/issue_comments_079349.json:
+archive/issue_comments_079219.json:
 ```json
 {
     "body": "I added an extra patch to do exactly what you were asking. You can check and merge the two patches.",
     "created_at": "2013-02-16T13:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79349",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79219",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -546,15 +545,15 @@ I added an extra patch to do exactly what you were asking. You can check and mer
 
 ---
 
-archive/issue_comments_079350.json:
+archive/issue_comments_079220.json:
 ```json
 {
     "body": "(I added the feature for both ordered tree and binary trees)",
     "created_at": "2013-02-16T13:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79350",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79220",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -564,15 +563,15 @@ archive/issue_comments_079350.json:
 
 ---
 
-archive/issue_comments_079351.json:
+archive/issue_comments_079221.json:
 ```json
 {
     "body": "Replying to [comment:23 VivianePons]:\n> (I added the feature for both ordered tree and binary trees)\n\nThanks -- I wait for Florent or Fred for approval of your change.",
     "created_at": "2013-02-16T13:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79351",
-    "user": "stumpc5"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stumpc5"
 }
 ```
 
@@ -585,15 +584,15 @@ Thanks -- I wait for Florent or Fred for approval of your change.
 
 ---
 
-archive/issue_comments_079352.json:
+archive/issue_comments_079222.json:
 ```json
 {
     "body": "Attachment [trac_8703-additional-feature-fh.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-fh.patch) by @hivert created at 2013-02-18 17:56:56\n\nReplying to [comment:24 stumpc5]:\n> Thanks -- I wait for Florent or Fred for approval of your change.\n\nThanks Viviane for this very good idea ! However, I feel that it should be more documented as well as tested. That's why I revamped your patch in a bigger patch. Please review it knowing that I'm Ok with your changes (the tests I added pass :-).\n\nFlorent",
     "created_at": "2013-02-18T17:56:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79352",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79222",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -610,15 +609,15 @@ Florent
 
 ---
 
-archive/issue_comments_079353.json:
+archive/issue_comments_079223.json:
 ```json
 {
     "body": "Replying to [comment:25 hivert]:\n\nTwo more things:\n\n- what about lazily importing the new trees as this should be done by default?\n- an_example / some_examples do not exist, so how am I supposed to get some binary tree to see what I can do with it?\n\nbtw: I would be okay with folding trac_8703-additional-feature-fh.patch and removing Viviane's patch in order to keep the ticket organized and the patchbot happy.\n\nCheers, Christian",
     "created_at": "2013-02-18T18:13:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79353",
-    "user": "stumpc5"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79223",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stumpc5"
 }
 ```
 
@@ -637,15 +636,15 @@ Cheers, Christian
 
 ---
 
-archive/issue_comments_079354.json:
+archive/issue_comments_079224.json:
 ```json
 {
     "body": "Replying to [comment:26 stumpc5]:\n> Replying to [comment:25 hivert]:\n> \n> Two more things:\n> \n> - what about lazily importing the new trees as this should be done by default?\n\nAll the combinatorial objects are currently imported (not lazily). So I'd rather switching this once for all. Also there are some problems with lazy import (see eg #10906). \n\n> - an_example / some_examples do not exist, so how am I supposed to get some binary tree to see what I can do with it?\n\nFor combinatorial sets the convention is element rather than example which is\nfor categories. Anyway, if I had forgotten, `TestSuite` would had\ncomplained.\n\n```\nsage: BinaryTrees().an_element()\n.\nsage: list(BinaryTrees().some_elements())\n[., [., .],\n...\n[., [[[., .], [[., .], .]], .]]]\n```\n\n\n> btw: I would be okay with folding trac_8703-additional-feature-fh.patch and\n> removing Viviane's patch in order to keep the ticket organized and the\n> patchbot happy.\n\nI kept thing separated to ease the review, planning to fold everything at the\nend.\n\nFlorent",
     "created_at": "2013-02-18T19:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79354",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79224",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -687,15 +686,15 @@ Florent
 
 ---
 
-archive/issue_comments_079355.json:
+archive/issue_comments_079225.json:
 ```json
 {
     "body": "This is mostly way over my head, but I'm adding myself to cc because I'm highly interested in what comes out of this.\n\nA bug: The as_digraph method yields not what it should yield when some labels are equal. Example:\n\n\n```\nsage: Q = LBT([LBT([],label=2),LBT([],label=4)],label=2) \nsage: Q.as_digraph()                                     \nDigraph on 2 vertices\nsage: Q\n2[2[., .], 4[., .]]\n```\n\n\nWhile small examples suggest that this doesn't happen with \"None\" labels, this isn't actually the case (even though they somehow magically become nonnegative integers):\n\n\n```\nsage: Z = LabelledOrderedTree([[],[[[],[]], []]])\nsage: Z   \nNone[None[], None[None[None[], None[]], None[]]]\nsage: Z.as_digraph()\nDigraph on 5 vertices\n```\n\n\nI suggest rewriting as_digraph from scratch, no longer using the labels as unique identifiers for nodes; independently, I think there should be more doctests checking what happens to trees with equal labels.\n\nSome docstring gripes:\n\n- I would add \"BinaryTree([])\" and \"BinaryTree(None)\" to the examples in te docstring of the BinaryTree class. Also, in the \"INPUT\" section, maybe add that [] is the same as [None, None]? I must say the \"INPUT\" part of the docstring for BinaryTree doesn't exactly explain to me how exactly the \"children\" argument is getting parsed; I am used to constructors for trees being free (in the sense of, no two different inputs lead to the same tree), so I wouldn't say this is very intuitive. It's \"explained\" in the __init__ sourcecode, but that's uncommented and I have no idea what it does :(\n\nMight also want to point out that these binary trees are planar aka what you call ordered, i. e., the order of the children on each node matters. \n\n- In the \"show\" method of BinaryTree, can the tree_orientation be passed as a keyword? I know a lot of people who don't draw trees upside down...\n\n- I don't understand from the docstrings what \"make_node\" and \"make_leaf\" do... Just replace the tree by a node resp. leaf? If so, what's the advantage over just redefining the tree?\n\n- Docstring for \"to_dyck_word\": replace \"where `T(l)` and `T(r)` are the trees\" by \"where `T(l)` and `T(r)` are the Dyck words\".\n\n- The docstring for \"canopee\" has a grammar error (\"`1` is a left leaf\" should be \"`1` if the leaf is a left leaf\").\n\n- ordered_tree.py: Isn't this kind of \"ordered trees\" usually called planar trees? (Not like I want anything renamed. But it might be good to point out in the docstring that these ordered trees are not, e. g., Foissy's ordered trees.)\n\n- Couple of typos in the docstring for OrderedTree: \"a constructed\" and \"the the order\".\n\n- This appears weird to me: \"The actual canonical labelling is currently unspecified.\" Isn't it just the left-to-right labelling, or are you saying that we shouldn't count on it staying that way?\n\nSuggestions (I can figure myself working on them as well):\n\nDo we have a checker function that looks if a given labelled binary tree is a binary search tree? A decreasing tree? The RSK-like algorithms from http://arxiv.org/abs/math/0401089 ? An binary_search_tree and an increasing_tree method for arbitrary words, not just permutations? (The \"gen = self[::-1]\" trick won't work here anymore, though.) Oh, well, and forests, of course, even if they can be internally the same as trees with one more vertex...",
     "created_at": "2013-02-19T02:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79355",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79225",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -755,15 +754,15 @@ Do we have a checker function that looks if a given labelled binary tree is a bi
 
 ---
 
-archive/issue_comments_079356.json:
+archive/issue_comments_079226.json:
 ```json
 {
     "body": "Hi,\n\nThanks for all these comments. Before replying point by point, let me mention\nthat there is a lot of work done around the trees and that several patch are\nwaiting between this one. So we don't need to write everything in this patch\nand we hope to have it in Sage soon.\n\nReplying to [comment:28 darij]:\n> This is mostly way over my head, but I'm adding myself to cc because I'm highly interested in what comes out of this.\n> \n> A bug: The as_digraph method yields not what it should yield when some labels are equal. Example:\n> I suggest rewriting as_digraph from scratch, no longer using the labels as unique identifiers for nodes; independently, I think there should be more doctests checking what happens to trees with equal labels.\n\nWhen I wrote this function I plan to use it only for graph with distinct\nlabel. I'm not sure what we want when there are repeated label. This must be\ndiscussed. The particular case of None is by chance handled by the graph but\nI'm not sure we should rely on it. In the mean time, I'd like to document that\nthe function currently only work for graph with disctinct label and open a new\nticket for more general cases. What do you think ?\n\n> - I would add \"BinaryTree([])\" and \"BinaryTree(None)\"\n> to the examples in te docstring of the BinaryTree class. Also, in the\n> \"INPUT\" section, maybe add that [] is the same as [None, None]? I must say\n> the \"INPUT\" part of the docstring for BinaryTree doesn't exactly explain to\n> me how exactly the \"children\" argument is getting parsed; I am used to\n> constructors for trees being free (in the sense of, no two different inputs\n> lead to the same tree), so I wouldn't say this is very intuitive. It's\n> \"explained\" in the __init__ sourcecode, but that's uncommented and I have no\n> idea what it does :(\n\nThe idea is that to allows for short input, None can be omitted where there is\nno ambiguity. Please, feel free to suggest a patch for doc improvements.\n\n> Might also want to point out that these binary trees are planar aka what you\n> call ordered, i. e., the order of the children on each node matters.\n\nWhen you see tree from the graph point of view, all trees are of course planar\n(IE: can be embedded in the plane without crossing). So I rather call them\nordered trees. From this point of view, the proper name is plane tree (See eg\nhttp://en.wikipedia.org/wiki/Tree_%28graph_theory%29#Plane_Tree). Note that\nthey freely mix plane and ordered there. I feel (and I wasn't alone when\ndiscussed on Sage-combinat-devel) that OrderedBinaryTree is too long.\n\n> - In the \"show\" method of BinaryTree, can the tree_orientation be passed as\n> a keyword? I know a lot of people who don't draw trees upside down...\n\nUnless a quick fix is proposed, I'd rather leave it for a forthcomming patch.\n\n> - I don't understand from the docstrings what \"make_node\" and \"make_leaf\"\n> do... Just replace the tree by a node resp. leaf? If so, what's the\n> advantage over just redefining the tree?\n\nSome times it could be useful for algorithmic reason to modify a tree in place\nwithout allocating a new object.\n\n> - ordered_tree.py: Isn't this kind of \"ordered trees\" usually called planar trees? (Not like I want anything renamed. But it might be good to point out in the docstring that these ordered trees are not, e. g., Foissy's ordered trees.)\n\nSee my former comment on planar being improper.\n\n> - This appears weird to me: \"The actual canonical labelling is currently\n> unspecified.\" Isn't it just the left-to-right labelling, or are you saying\n> that we shouldn't count on it staying that way?\n\nYes it is for ordered trees, but it is defined in an abtract class and soon\nafter this patch there is another one for rooted unordered tree. Then\nleft-to-right labelling doesn't mean anything. There is also another\nforthcoming patch where you can specify which order you want. I don't want to\nchoose the default now.\n\n> Suggestions (I can figure myself working on them as well):\n\n> Do we have a checker function that looks if a given labelled binary tree is\n> a binary search tree? A decreasing tree? The RSK-like algorithms from\n> http://arxiv.org/abs/math/0401089 ? An binary_search_tree and an\n> increasing_tree method for arbitrary words, not just permutations? (The \"gen\n> = self[::-1]\" trick won't work here anymore, though.) Oh, well, and forests,\n> of course, even if they can be internally the same as trees with one more\n> vertex...\n\nThere is also several other patch done around those question. In the\nSage-combinat queue there are implementation of the Loday-Ronco algebra, the\ndendriform, prelie operads and more. As I said, this is just the beginning :-).",
     "created_at": "2013-02-19T20:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79356",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79226",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -854,15 +853,15 @@ dendriform, prelie operads and more. As I said, this is just the beginning :-).
 
 ---
 
-archive/issue_comments_079357.json:
+archive/issue_comments_079227.json:
 ```json
 {
     "body": "Hi Florent! Thanks for the reply. One reason why I did not propose any concrete changes to the code is that I have no idea what patches are currently dependent on this one (I only knew of Viviane's new one with the Dyck paths) and I want to avoid merge conflicts. I hoped some of you had a better overview of what's happening with trees these days. If you tell me there's no danger of conflicting changes, I can add the fixes I'd like to see; otherwise I'd prefer someone else to do it or to wait until the current slew of tree patches is merged. I'll try to come up with a doc for the initialization later today, though, provided I can wrap my head around it.\n\n> When I wrote this function I plan to use it only for graph with\n> distinct label. I'm not sure what we want when there are\n> repeated label. This must be discussed.\n\nCan we have a docstring warning about this, or a _ in the function name so as to avoid people getting a wrong impression?\n\n> The particular case of None is by chance handled by the graph\n> but I'm not sure we should rely on it.\n\nAs my second example shows, we should definitely *not* rely on it. Apparently None labels get translated into 0, 1, 2, 3, ..., but this translation starts anew for every subtree, so the resulting graph isn't the one you would expect.\n\n> In the mean time, I'd like to document that the function\n> currently only work for graph with disctinct label and open\n> a new ticket for more general cases. What do you think ? \n\nGood idea.\n\nI completely agree with you that planar/plane aren't good terms for this kind of trees. What I'd like is a mention in the docstring that these terms are occasionally used, whereas \"ordered\" is occasionally used for something else.\n\nI can't wait to work with a real Loday-Ronco Hopf algebra rather than my hacky implementation from a year ago...",
     "created_at": "2013-02-19T21:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79357",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79227",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -893,15 +892,15 @@ I can't wait to work with a real Loday-Ronco Hopf algebra rather than my hacky i
 
 ---
 
-archive/issue_comments_079358.json:
+archive/issue_comments_079228.json:
 ```json
 {
     "body": "Hi Darij,\n\nReplying to [comment:31 darij]:\n> Hi Florent! Thanks for the reply. One reason why I did not propose any\n> concrete changes to the code is that I have no idea what patches are\n> currently dependent on this one (I only knew of Viviane's new one with the\n> Dyck paths) and I want to avoid merge conflicts. I hoped some of you had a\n> better overview of what's happening with trees these days.\n\nHere is some basic overview :-)\n\n```\npopcorn-*inat/.hg/patches $ grep -l Trees *.patch\nalgebras_over_operads-fc.patch\nfinite_semigroup-nt.patch\noperads-fh.patch\noperads_more-fc.patch\nposet-from-tree-fc.patch\npretty_console_print-EliX-jbp.patch\nq_tree_factorial-fc.patch\nsage-demos-and-tutorials-nt.patch\nshape_tree-fc.patch\nshuffle-operads-fc.patch\ntrac_11529-rooted_trees-fh.patch\ntrac_13855_planar_binary_trees_hopf_algebra-EliX-jbp.patch\ntrac_13987_mary_trees-vp.patch\ntrac_14086-parking_functions-dm.patch\ntrac_8703-trees-fh.patch\ntrees_symmetry_factor-fh.patch\n```\n\n\n\n> If you tell me there's no danger of conflicting changes, I can add the fixes\n> I'd like to see; otherwise I'd prefer someone else to do it or to wait until\n> the current slew of tree patches is merged. I'll try to come up with a doc\n> for the initialization later today, though, provided I can wrap my head\n> around it.\n\nI think if it's just docstring, there will only be trivial rebasing. Anyway,\nthey must be fixed. Unfortunately, I'm moving from my flat from a new house on\nSaturday and Sunday so I won't have a lot of time working on trees... If you\ncan take care of all the docstring problem you mentioned once for all in a\nreview patch, I will really appreciate.",
     "created_at": "2013-02-19T21:34:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79358",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79228",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -954,15 +953,15 @@ review patch, I will really appreciate.
 
 ---
 
-archive/issue_comments_079359.json:
+archive/issue_comments_079229.json:
 ```json
 {
     "body": "attempting manual override",
     "created_at": "2013-02-20T06:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79359",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79229",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -972,15 +971,15 @@ attempting manual override
 
 ---
 
-archive/issue_comments_079360.json:
+archive/issue_comments_079230.json:
 ```json
 {
     "body": "Attachment [trees.tar.gz](tarball://root/attachments/some-uuid/ticket8703/trees.tar.gz) by @darijgr created at 2013-02-20 06:57:22\n\nOK, I'm really not getting this:\n\n```\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ hg commit\nabort: cannot commit over an applied mq patch\n```\n\n\nAnyway, attaching my changed versions as a tar.gz [trees.tar.gz] containing the three relevant .py files (I only modified docstrings). Sorry for the format :( Hope someone transforms it into a .patch.\n\nHere's something else I'm finding weird:\n\n```\nsage: a = []\nsage: BinaryTree(a)\n[., .]\nsage: b = ()\nsage: BinaryTree(b)\n.\n```\n\nOr shouldn't lists and tuples behave alike here?",
     "created_at": "2013-02-20T06:57:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79360",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79230",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1013,15 +1012,15 @@ Or shouldn't lists and tuples behave alike here?
 
 ---
 
-archive/issue_comments_079361.json:
+archive/issue_comments_079231.json:
 ```json
 {
     "body": "Hi Darij,\n\nI looked at your files, but you seemed to have also other patches applied because I see methods in your file that are not in mine. I don't want to mess everything up, so I would prefer if you put your changes into a patch: the reason it was not working is because the right command is \"hg qrefresh\". Thank's for reading the doc by the way.\n\nAlso, does anyone have sage 5.8.b2 to see why it is not applying ?",
     "created_at": "2013-03-01T15:18:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79361",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79231",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -1035,15 +1034,15 @@ Also, does anyone have sage 5.8.b2 to see why it is not applying ?
 
 ---
 
-archive/issue_comments_079362.json:
+archive/issue_comments_079232.json:
 ```json
 {
     "body": "Hmm......\n\n\n```\ndarij@travis-virtualbox:~/sage-5.6$ ./sage -hg qrefresh\n/bin/sh: 1: [[: not found\nAre you sure you want to refresh the following changes:\ninto the patch: no patches applied\n(y/n)y\nno patches applied\ndarij@travis-virtualbox:~/sage-5.6$ \n```\n\n\nBut maybe it's the wrong folder?\n\n\n```\ndarij@travis-virtualbox:~/sage-5.6$ cd devel/sage-combinat/\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ ../../sage -hg qrefresh\n/bin/sh: 1: [[: not found\nAre you sure you want to refresh the following changes:\ninto the patch: patch.patch\n(y/n)y\ndarij@travis-virtualbox:~/sage-5.6/devel/sage-combinat$ \n```\n\n\nThe fact that I have a newer file than you, Viviane, surprises me a bit since I remember the last trees-related activity on Sage to be from you...",
     "created_at": "2013-03-01T17:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79362",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79232",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1081,15 +1080,15 @@ The fact that I have a newer file than you, Viviane, surprises me a bit since I 
 
 ---
 
-archive/issue_comments_079363.json:
+archive/issue_comments_079233.json:
 ```json
 {
     "body": "I think you're working on sage-combinat and you have other patches applied. There are patches on sage-combinat that are changing these files. I work on sage with only these two patches applied. \n\nI think your problem comes from the fact that you made changes but didn't create a patch beforehand to put your changes into.",
     "created_at": "2013-03-01T17:14:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79363",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79233",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -1101,15 +1100,15 @@ I think your problem comes from the fact that you made changes but didn't create
 
 ---
 
-archive/issue_comments_079364.json:
+archive/issue_comments_079234.json:
 ```json
 {
     "body": "Thanks! Looks like I missed qnew.\nWill redo when sage 5.7 is finished installing.",
     "created_at": "2013-03-01T17:22:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79364",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79234",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1120,15 +1119,15 @@ Will redo when sage 5.7 is finished installing.
 
 ---
 
-archive/issue_comments_079365.json:
+archive/issue_comments_079235.json:
 ```json
 {
     "body": "And by the way, you don't have to install sage-combinat to do that. You can clone your sage version and apply only the two patches which are on the ticket (this way, you're sure you don't have other changes to these files applied).",
     "created_at": "2013-03-01T17:28:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79365",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79235",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -1138,15 +1137,15 @@ And by the way, you don't have to install sage-combinat to do that. You can clon
 
 ---
 
-archive/issue_comments_079366.json:
+archive/issue_comments_079236.json:
 ```json
 {
     "body": "Viviane: thanks -- but I was installing 5.7 anyway due to the conference in a couple of days.\n\nIt seems I'm getting crazy or something, but now that I reinstalled sage again (and, yes, sage-combinat), there is no abstract_tree.py file in my devel/sage-combinat/sage/combinat folder. What did I do wrong? And how can I manually apply a patch that I've downloaded from trac?",
     "created_at": "2013-03-02T05:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79366",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79236",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1158,15 +1157,15 @@ It seems I'm getting crazy or something, but now that I reinstalled sage again (
 
 ---
 
-archive/issue_comments_079367.json:
+archive/issue_comments_079237.json:
 ```json
 {
     "body": "Replying to [comment:39 darij]:\n> Viviane: thanks -- but I was installing 5.7 anyway due to the conference in a couple of days.\n> \n> It seems I'm getting crazy or something, but now that I reinstalled sage again (and, yes, sage-combinat), there is no abstract_tree.py file in my devel/sage-combinat/sage/combinat folder. What did I do wrong? And how can I manually apply a patch that I've downloaded from trac?\n\nI think you should\n- build the main Sage branch\n\n```\n$ sage -b main\n```\n\n- and clone it\n\n```\n$ sage -clone 8703\n```\n\n- then apply the patches\n\n```\n$ cd SAGEROOT/devel/sage-8703\n$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8703/trac_8703-trees-fh.patch\n$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/8703/trac_8703-additional-feature-fh.patch\n```\n\nYou should then have everything set to work on your features...\n\nCheers, Christian",
     "created_at": "2013-03-02T05:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79367",
-    "user": "stumpc5"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79237",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stumpc5"
 }
 ```
 
@@ -1204,15 +1203,15 @@ Cheers, Christian
 
 ---
 
-archive/issue_comments_079368.json:
+archive/issue_comments_079238.json:
 ```json
 {
     "body": "Thank you, at least I've got the trees patch on my machine now... too bad hg still considers the patch itself, rather than only my meager additions to it, as my changes. Well, I guess it's easier if you just show me the right workflow in Providence in about 2 days; I'm groping in the dark for now as far as hg mq is concerned.",
     "created_at": "2013-03-02T06:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79368",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79238",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1222,15 +1221,15 @@ Thank you, at least I've got the trees patch on my machine now... too bad hg sti
 
 ---
 
-archive/issue_comments_079369.json:
+archive/issue_comments_079239.json:
 ```json
 {
     "body": "Replying to [comment:41 darij]:\n> Thank you, at least I've got the trees patch on my machine now... too bad hg still considers the patch itself, rather than only my meager additions to it, as my changes. Well, I guess it's easier if you just show me the right workflow in Providence in about 2 days; I'm groping in the dark for now as far as hg mq is concerned.\n\nOkay. After the above steps, you have to start a new patch\n\n```\n$ hg qnew trac_8703-trees_addition-dg.patch\n```\n\nand then you do your changes. Afterwards, you can review which files you have changed\n\n```\n$ hg status\n```\n\nand what you changed\n\n```\n$ hg diff\n```\n\nIf you are happy with your changes, save them in the path using\n\n```\n$ hg qrefresh\n```\n\nand save this patch in your home folder\n\n```\n$ hg export tip > ~/trac_8703-trees_addition-dg.patch\n```\n\nFinally, upload it to trac!",
     "created_at": "2013-03-02T07:13:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79369",
-    "user": "stumpc5"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79239",
+    "user": "https://trac.sagemath.org/admin/accounts/users/stumpc5"
 }
 ```
 
@@ -1273,15 +1272,15 @@ Finally, upload it to trac!
 
 ---
 
-archive/issue_comments_079370.json:
+archive/issue_comments_079240.json:
 ```json
 {
     "body": "Finally, it worked. Thank you!!\n\nIs there a quick way to check the validity of the patch? I ended up with some changes I didn't want to make due to being new to kdiff3's merging function; I sanitized them out of the .patch file manually. Here's hoping I didn't corrupt it...\n\nEDIT: Ooops... The changes to ordered_tree.py look weird to me; I certainly did not delete stuff but I added a sentence and fixed two typos. Am I reading the diff wrong or does it really have rogue changes?",
     "created_at": "2013-03-02T07:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79370",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79240",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1295,15 +1294,15 @@ EDIT: Ooops... The changes to ordered_tree.py look weird to me; I certainly did 
 
 ---
 
-archive/issue_comments_079371.json:
+archive/issue_comments_079241.json:
 ```json
 {
     "body": "Attachment [trac_8703-trees_addition-dg.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg.patch) by @darijgr created at 2013-03-02 08:23:11\n\ndocstrings improved. let's see if this works...",
     "created_at": "2013-03-02T08:23:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79371",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79241",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1315,15 +1314,15 @@ docstrings improved. let's see if this works...
 
 ---
 
-archive/issue_comments_079372.json:
+archive/issue_comments_079242.json:
 ```json
 {
     "body": "File updated. Please ignore trees.tar.gz (no longer relevant), trac_8703-trees_addition-dg.2.patch (accidentally created by forgetting to check the \"Replace existing file\" toolbox) and trac_8703-trees_addition-dg.2.2.patch (accidentally created by trying to overwrite previous file).\n\nRogue edits are gone (they were due to me incorrectly resolving a conflict with fh's changes).",
     "created_at": "2013-03-02T08:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79372",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79242",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1335,15 +1334,15 @@ Rogue edits are gone (they were due to me incorrectly resolving a conflict with 
 
 ---
 
-archive/issue_comments_079373.json:
+archive/issue_comments_079243.json:
 ```json
 {
     "body": "Attachment [trac_8703-trees-fh-rebase.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-fh-rebase.patch) by @VivianePons created at 2013-03-20 10:16:39",
     "created_at": "2013-03-20T10:16:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79373",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79243",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -1353,15 +1352,15 @@ Attachment [trac_8703-trees-fh-rebase.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_079374.json:
+archive/issue_comments_079244.json:
 ```json
 {
     "body": "I have rebased trac_8703-trees-fh.patch so that it applies on sage-5.8. I cannot get trac_8703-trees_addition-dg.patch to apply, I get a \"bad hunck\" error and really, I just don't know what is wrong...",
     "created_at": "2013-03-20T10:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79374",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79244",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -1371,15 +1370,15 @@ I have rebased trac_8703-trees-fh.patch so that it applies on sage-5.8. I cannot
 
 ---
 
-archive/issue_comments_079375.json:
+archive/issue_comments_079245.json:
 ```json
 {
     "body": "I have redone the dg review patch (with one or two more things)\n\nfor the bot:\n\napply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-fh.patch trac_8703-trees_addition-dg-v2.patch",
     "created_at": "2013-03-20T20:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79375",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79245",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1393,15 +1392,15 @@ apply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-fh.patch trac
 
 ---
 
-archive/issue_comments_079376.json:
+archive/issue_comments_079246.json:
 ```json
 {
     "body": "Thanks, Fr\u00e9d\u00e9ric! I was about to tell Viviane not to bother fixing my patch, as it was way more trouble than it was ever worth.\n\n(I'm not surprised it had bank hunk errors since I messed around with the ,patch file in a text editor...)",
     "created_at": "2013-03-20T20:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79376",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79246",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1413,15 +1412,15 @@ Thanks, Frédéric! I was about to tell Viviane not to bother fixing my patch, a
 
 ---
 
-archive/issue_comments_079377.json:
+archive/issue_comments_079247.json:
 ```json
 {
     "body": "Attachment [trac_8703-additional-feature-vp.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-additional-feature-vp.patch) by @VivianePons created at 2013-03-21 09:01:51\n\nThanks a lot Fr\u00e9d\u00e9ric.\n\nI just uploaded a new version of \"additional feature\", it's just a small fix about the \"eval\" function. I was using the \"eval\" function to transform a string into an object, I changed it to use \"litteral_eval\" which is more secured (it won't eval just any python code, it is restricted to simple objects).\n\nOnce the bot is happy, is there anything else to do on this patch or can it go with \"positive review\" ?\n\n for the bot:\n\napply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac_8703-trees_addition-dg-v2.patch",
     "created_at": "2013-03-21T09:01:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79377",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79247",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -1441,15 +1440,15 @@ apply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac
 
 ---
 
-archive/issue_comments_079378.json:
+archive/issue_comments_079248.json:
 ```json
 {
     "body": "better not import all of ast, but rather\n\n```\nfrom ast import literal_eval\n```\n",
     "created_at": "2013-03-21T13:11:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79378",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79248",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1464,15 +1463,15 @@ from ast import literal_eval
 
 ---
 
-archive/issue_comments_079379.json:
+archive/issue_comments_079249.json:
 ```json
 {
     "body": "There is still work to be done\n\n* a whole paragraph about partitions at the beginning of BinaryTrees should be removed\n\n* one should avoid using AssertionError\n\n* a typo \"only if they canonical labelled trees\"\n\n* a typo \"labellel ordered tree\"\n\nI will try to make a review patch later.",
     "created_at": "2013-03-21T13:46:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79379",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79249",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1492,15 +1491,15 @@ I will try to make a review patch later.
 
 ---
 
-archive/issue_comments_079380.json:
+archive/issue_comments_079250.json:
 ```json
 {
     "body": "Has anyone looked at the weirdness in http://trac.sagemath.org/sage_trac/ticket/8703#comment:33 ? It's not a serious problem, but might deserve documentation.",
     "created_at": "2013-03-21T15:49:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79380",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79250",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1510,15 +1509,15 @@ Has anyone looked at the weirdness in http://trac.sagemath.org/sage_trac/ticket/
 
 ---
 
-archive/issue_comments_079381.json:
+archive/issue_comments_079251.json:
 ```json
 {
     "body": "I have made more changes in the new review patch. And yes, comment 33 should be clarified.",
     "created_at": "2013-03-21T18:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79381",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79251",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1528,15 +1527,15 @@ I have made more changes in the new review patch. And yes, comment 33 should be 
 
 ---
 
-archive/issue_comments_079382.json:
+archive/issue_comments_079252.json:
 ```json
 {
     "body": "Attachment [trac_8703-trees_addition-dg-v2.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees_addition-dg-v2.patch) by @fchapoton created at 2013-03-21 18:37:12\n\nnew patch, solving all issues in comments 33,52 and 53",
     "created_at": "2013-03-21T18:37:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79382",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79252",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1548,15 +1547,15 @@ new patch, solving all issues in comments 33,52 and 53
 
 ---
 
-archive/issue_comments_079383.json:
+archive/issue_comments_079253.json:
 ```json
 {
     "body": "a new small review patch, with typos essentially\n\nMaybe this is good to go ?\n\nfor the bot:\n\napply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac_8703-trees_addition-dg-v2.patch trac_8703-review-fc.patch",
     "created_at": "2013-03-31T19:27:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79383",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79253",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1572,15 +1571,15 @@ apply trac_8703-trees-fh-rebase.patch trac_8703-additional-feature-vp.patch trac
 
 ---
 
-archive/issue_comments_079384.json:
+archive/issue_comments_079254.json:
 ```json
 {
     "body": "Attachment [trac_8703-review-fc.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-review-fc.patch) by @fchapoton created at 2013-03-31 19:29:18",
     "created_at": "2013-03-31T19:29:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79384",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79254",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1590,15 +1589,15 @@ Attachment [trac_8703-review-fc.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_079385.json:
+archive/issue_comments_079255.json:
 ```json
 {
     "body": "Thanks Fr\u00e9d\u00e9ric for the review patches.\n\nI have had a quick look and it seems alright. Anyway, Florent should look at the state of things now to see if he's happy and maybe we can go for a positive review!",
     "created_at": "2013-04-09T14:59:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79385",
-    "user": "@VivianePons"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79255",
+    "user": "https://github.com/VivianePons"
 }
 ```
 
@@ -1610,15 +1609,15 @@ I have had a quick look and it seems alright. Anyway, Florent should look at the
 
 ---
 
-archive/issue_comments_079386.json:
+archive/issue_comments_079256.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-04-09T19:53:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79386",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79256",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -1628,15 +1627,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_079387.json:
+archive/issue_comments_079257.json:
 ```json
 {
     "body": "Attachment [trac_8703-trees-folded.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-folded.patch) by @hivert created at 2013-04-11 10:19:26\n\nI folded the patches for the release manager.\n\nFlorent",
     "created_at": "2013-04-11T10:19:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79387",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79257",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -1650,15 +1649,15 @@ Florent
 
 ---
 
-archive/issue_comments_079388.json:
+archive/issue_comments_079258.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2013-04-11T13:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79388",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79258",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1668,15 +1667,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_079389.json:
+archive/issue_comments_079259.json:
 ```json
 {
     "body": "This shouldn't be in the commit message:\n\n```\n[mq]: trac_8703-additional-feature-vp.patch\n```\n",
     "created_at": "2013-04-11T13:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79389",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79259",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1691,15 +1690,15 @@ This shouldn't be in the commit message:
 
 ---
 
-archive/issue_comments_079390.json:
+archive/issue_comments_079260.json:
 ```json
 {
     "body": "And this patch should be rebased to sage-5.9.beta5.",
     "created_at": "2013-04-12T07:12:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79390",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79260",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1709,15 +1708,15 @@ And this patch should be rebased to sage-5.9.beta5.
 
 ---
 
-archive/issue_comments_079391.json:
+archive/issue_comments_079261.json:
 ```json
 {
     "body": "Attachment [trac_8703-trees-rebased.patch](tarball://root/attachments/some-uuid/ticket8703/trac_8703-trees-rebased.patch) by @tscrim created at 2013-04-15 00:32:40\n\nRebased patch.\n\nFor patchbot:\n\nApply: trac_8703-trees-rebased.patch",
     "created_at": "2013-04-15T00:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79391",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79261",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -1733,15 +1732,15 @@ Apply: trac_8703-trees-rebased.patch
 
 ---
 
-archive/issue_comments_079392.json:
+archive/issue_comments_079262.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2013-04-15T00:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79392",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79262",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -1751,15 +1750,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_079393.json:
+archive/issue_comments_079263.json:
 ```json
 {
     "body": "Please review #14433, otherwise this patch cannot be merged.",
     "created_at": "2013-04-15T08:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79393",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79263",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1769,15 +1768,15 @@ Please review #14433, otherwise this patch cannot be merged.
 
 ---
 
-archive/issue_comments_079394.json:
+archive/issue_comments_079264.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2013-04-23T09:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8703",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79394",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8703#issuecomment-79264",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

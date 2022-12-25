@@ -6,15 +6,14 @@ archive/issues_003511.json:
     "body": "Assignee: @rlmill\n\nIn my education, this matrix was always referred to as the laplacian of the graph; I think the term may be more common.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3511\n\n",
     "created_at": "2008-06-25T17:32:51Z",
     "labels": [
-        "graph theory",
-        "minor",
-        "enhancement"
+        "component: graph theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "make laplacian_matrix a synonym for kirchoff_matrix",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3511",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3511
 
 ---
 
-archive/issue_comments_024736.json:
+archive/issue_comments_024687.json:
 ```json
 {
     "body": "Great, do it!",
     "created_at": "2008-06-25T17:35:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3511",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24736",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24687",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -47,15 +46,15 @@ Great, do it!
 
 ---
 
-archive/issue_comments_024737.json:
+archive/issue_comments_024688.json:
 ```json
 {
     "body": "Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket3511/3511-laplacian.patch) by @jasongrout created at 2008-06-26 11:48:34",
     "created_at": "2008-06-26T11:48:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3511",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24737",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24688",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -65,15 +64,15 @@ Attachment [3511-laplacian.patch](tarball://root/attachments/some-uuid/ticket351
 
 ---
 
-archive/issue_comments_024738.json:
+archive/issue_comments_024689.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-26T23:04:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3511",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24738",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24689",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +82,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_024739.json:
+archive/issue_comments_024690.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha1",
     "created_at": "2008-06-26T23:04:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3511",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24739",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3511#issuecomment-24690",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

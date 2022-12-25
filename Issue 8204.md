@@ -6,7 +6,7 @@ archive/issues_008204.json:
     "body": "Assignee: tbd\n\nThere is something very broken about the new cddlib-094f.p2 standard spkg.  When I upgrade from sage-4.3.1 on any machine, it always asks me questions about some messed up patch.  This is very, very bad. \n\n\n```\n...\ncddlib-094f.p2/.hg/branch                                         \ncddlib-094f.p2/.hg/branch.cache                                   \ncddlib-094f.p2/.hg/requires                                       \ncddlib-094f.p2/SPKG.txt                                           \nFinished extraction                                               \n****************************************************              \nHost system                                                       \nuname -a:                                                         \nLinux boxen 2.6.24-24-server #1 SMP Fri Sep 18 16:47:05 UTC 2009 x86_64 GNU/Linux\n****************************************************                             \n****************************************************                             \nCC Version                                                                       \ngcc -v                                                                           \nUsing built-in specs.                                                            \nTarget: x86_64-linux-gnu                                                         \nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu                           \nThread model: posix                                                                                                         \ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)                                                                                   \n****************************************************                                                                        \npatching file src/src-gmp/Makefile.am                                                                                       \nReversed (or previously applied) patch detected!  Assume -R? [n]                                                            \nApply anyway? [n]                                                                                                           \nSkipping patch.                                                                                                             \n2 out of 2 hunks ignored -- saving rejects to file src/src-gmp/Makefile.am.rej                                              \npatching file src/src/Makefile.am                                                                                           \nReversed (or previously applied) patch detected!  \nAssume -R? [n]     *** INTERACTIVE QUESTION!!! **** \nApply anyway? [n]                                                                                                           \nSkipping patch.                            \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8204\n\n",
     "created_at": "2010-02-07T05:15:06Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008204.json:
     "title": "when upgrading sage, cddlib spkg goes interactive due to some errors in it",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8204",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -64,15 +64,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8204
 
 ---
 
-archive/issue_comments_072360.json:
+archive/issue_comments_072238.json:
 ```json
 {
     "body": "The problem is due to #7109. See #8115 for the same problem.",
     "created_at": "2010-02-07T05:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72360",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72238",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -82,15 +82,15 @@ The problem is due to #7109. See #8115 for the same problem.
 
 ---
 
-archive/issue_comments_072361.json:
+archive/issue_comments_072239.json:
 ```json
 {
     "body": "On a similar, but not identical issue, #8122 has edits to the source directly, not via creating new versions of files, or by calling patch. It's bad practice, but not as serious as this one.",
     "created_at": "2010-02-07T08:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72361",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72239",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -100,15 +100,15 @@ On a similar, but not identical issue, #8122 has edits to the source directly, n
 
 ---
 
-archive/issue_comments_072362.json:
+archive/issue_comments_072240.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-20T17:38:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72362",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72240",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -118,15 +118,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072363.json:
+archive/issue_comments_072241.json:
 ```json
 {
     "body": "Fixed by cddlib-094f.p4.spkg, see #8115.",
     "created_at": "2010-02-20T17:38:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72363",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72241",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -136,15 +136,15 @@ Fixed by cddlib-094f.p4.spkg, see #8115.
 
 ---
 
-archive/issue_comments_072364.json:
+archive/issue_comments_072242.json:
 ```json
 {
     "body": "Close as a duplicate of #8115.",
     "created_at": "2010-02-20T17:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72364",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72242",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -154,15 +154,15 @@ Close as a duplicate of #8115.
 
 ---
 
-archive/issue_comments_072365.json:
+archive/issue_comments_072243.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-02-20T17:43:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72365",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8204#issuecomment-72243",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

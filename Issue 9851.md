@@ -6,15 +6,13 @@ archive/issues_009851.json:
     "body": "Assignee: jason, ncohen, rlm\n\nThis method contains an error, as reported in \nhttp://groups.google.com/group/sage-support/browse_thread/thread/f747663b0b315105/5c1314c9855e0cfb?show_docid=5c1314c9855e0cfb&pli=1\n\nThis (very) short patch fixes it. I do not even understand why it was not like that fromt he beginning. I'm guessing a copy/paste is responsible `:-D`\n\nTo be applied on top of #9350 which is an important update and may be broken if this patch was to be applied first.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9852\n\n",
     "created_at": "2010-09-03T18:24:28Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6",
     "title": "Error in edge_cut",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9851",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -34,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9852
 
 ---
 
-archive/issue_comments_097234.json:
+archive/issue_comments_097075.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-03T18:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97234",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97075",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -52,15 +50,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_097235.json:
+archive/issue_comments_097076.json:
 ```json
 {
     "body": "Changing priority from major to critical.",
     "created_at": "2010-09-03T18:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97235",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97076",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -70,15 +68,15 @@ Changing priority from major to critical.
 
 ---
 
-archive/issue_comments_097236.json:
+archive/issue_comments_097077.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-09-04T03:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97236",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97077",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -88,15 +86,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_097237.json:
+archive/issue_comments_097078.json:
 ```json
 {
     "body": "Attachment [trac_9852.patch](tarball://root/attachments/some-uuid/ticket9852/trac_9852.patch) by @dimpase created at 2010-09-04 03:57:46\n\nlooks reasonable.",
     "created_at": "2010-09-04T03:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97237",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97078",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -108,15 +106,15 @@ looks reasonable.
 
 ---
 
-archive/issue_comments_097238.json:
+archive/issue_comments_097079.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-09-15T22:52:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9851",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97238",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9851#issuecomment-97079",
+    "user": "https://github.com/qed777"
 }
 ```
 

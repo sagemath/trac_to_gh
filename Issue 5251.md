@@ -6,15 +6,14 @@ archive/issues_005251.json:
     "body": "Assignee: cwitty\n\n\n```\nsage: A = matrix(QQ,2,2,[1..4])\nsage: A \\ matrix(QQ,2,1,[1,2])\n\n[  0]\n[1/2]\nsage: A \\ matrix(QQ,2,1,[1/3,2/3])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1))/Integer(3),Integer(2)/Integer(3)])\n                                                                ^\nSyntaxError: invalid syntax\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5251\n\n",
     "created_at": "2009-02-13T00:06:12Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "preparser bug in parsing the backslash \"solve right\" notation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5251",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: cwitty
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5251
 
 ---
 
-archive/issue_comments_040287.json:
+archive/issue_comments_040208.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-15T03:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40287",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40208",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -62,15 +61,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_040288.json:
+archive/issue_comments_040209.json:
 ```json
 {
     "body": "Changing assignee from cwitty to @mwhansen.",
     "created_at": "2009-02-15T03:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40288",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40209",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -80,15 +79,15 @@ Changing assignee from cwitty to @mwhansen.
 
 ---
 
-archive/issue_comments_040289.json:
+archive/issue_comments_040210.json:
 ```json
 {
     "body": "Attachment [trac_5251.patch](tarball://root/attachments/some-uuid/ticket5251/trac_5251.patch) by @mwhansen created at 2009-02-15 03:23:50\n\nI posted a patch which fixes this, but I don't completely understand the intention behind the stopping condition in question.  I'm not sure what the '/' in the list of characters was meant to prevent.",
     "created_at": "2009-02-15T03:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40289",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40210",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -100,15 +99,15 @@ I posted a patch which fixes this, but I don't completely understand the intenti
 
 ---
 
-archive/issue_comments_040290.json:
+archive/issue_comments_040211.json:
 ```json
 {
     "body": "I read the stopping condition code, and realized it is easy to make up many other examples that break the \\ notation, even after the above patch is applied:\n\n```\nsage: A = matrix(QQ,2,2,[1..4])\nsage: matrix(QQ,2,1,[1/3,\"2/3\"])  # valid notation\n\n[1/3]\n[2/3]\nsage: A \\ matrix(QQ,2,1,[1/3,\"2/3\"])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),)\"2/3\"])\n                                                                            ^\nSyntaxError: invalid syntax\n\nsage: A \\ matrix(QQ,2,1,[1/3,'2/3'])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),)'2/3'])\n                                                                            ^\nSyntaxError: invalid syntax\n\nsage: A \\ matrix(QQ,2,1,[1/3,2*3])\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     A ._backslash_( matrix(QQ,Integer(2),Integer(1),[Integer(1)/Integer(3),Integer(2))*Integer(3)])\n                                                                                      ^\nSyntaxError: invalid syntax\n```\n\n\nThe point of the stopping condition is that one should be able to do, e.g.,\n\n```\nA \\ stuff # this does something, \n```\n\nand get\n\n```\nA._backslash_(stuff)  # this does something\n```\n\ninstead of\n\n```\nA._backslash_(stuff  # this does something)\n```\n\nAnother example:\n\n```\nA \\ B + C\n```\n\nshould become\n\n```\nA._backslash_(B) + C\n```\n\n\nNow that is *not* correctly parsed:\n\n```\nsage: preparse('A \\ B + C')\n'A ._backslash_( B + C)'\n```\n\nIt should be parsed to\n\n```\nA._backslash_(B) + C\n```\n\n\nHere is another that isn't correctly parsed:\n\n```\nsage: preparse( 'A\\eval(\"C+D\")' )\n'A._backslash_(eval()\"C+D\")'\n```\n\n\nIt should be\n\n```\nA._backslash_(eval(\"C+D\"))\n```\n\n\nFinally, the / was there before because of precedence.  I.e., the following\nis now wrong after the patch:\n\n```\nsage: preparse('A \\\\ x  / 5')\n'A ._backslash_( x  / Integer(5))'\n```\n\nbut we should get\n\n```\nsage: preparse('A \\\\ x  / 5')\n'A ._backslash_( x ) / Integer(5)'\n```\n\nsince precedence of backslash should be left to right (just like that of /).\n\n\n----\n\nComments:\n\n1. I find the backslash notation -- which is from Matlab -- very useful and do use it all the time. Otherwise, I wouldn't have noticed the bug I reported in this ticket.\n\n2. Clearly whoever (=me, of course!) implemented this in preparser.py did a very bad job, and this is an extremely buggy feature with the potential to lead to serious confusion and wrong answers.  It's not the sort of thing that should be implemented without using a more sophisticated parsing technique.  \n\n3. I almost think it would be better that this feature didn't exist given the bugs I listed above.",
     "created_at": "2009-02-15T07:01:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40290",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40211",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -235,15 +234,15 @@ Comments:
 
 ---
 
-archive/issue_comments_040291.json:
+archive/issue_comments_040212.json:
 ```json
 {
     "body": "\n```\n22:57 < wstein> mhansen -- Hi -- I posted some remarks on #5251\n22:58 < mhansen> I'm reading them now.\n22:58 < wstein> I'm ashamed of how bad the preparser is on \\.\n22:58 < wstein> It's all my fault, of course.\n22:58 < wstein> I also just wrote Robertwb to ask him to comment on the ticket... even though that\n                might mean waiting for his\n22:58 < wstein> feedback until Monday.\n23:02 < mhansen> One quick fix on the safe side would be to eliminate the stopping condition.  That's\n                 how I figured it was implemented anyway.  I only thought a simple \"A \\ x\" syntax was\n                 supported.\n23:02 < wstein> A\\x + B\\y would be a disaster.\n23:02 < wstein> Of course, it already is :-)\n23:02 < mabs> :)\n23:02 < wstein> sage: preparse(r'A\\x + B\\y')\n23:02 < wstein> 'A._backslash_(x + B)._backslash_(y)'\n23:03 < mhansen> Obviously no one has used it for anything too involved :-)\n23:03 < wstein> without the stopping, we would have\n23:03 < wstein> sage: preparse(r'v = A\\x  # find the solution')\n23:03 < wstein> 'v = A._backslash_(x  )# find the solution'\n23:03 < wstein> oops\n23:03 < wstein> that's now\n23:03 < wstein> we would have\n23:03 < wstein> 'v = A._backslash_(x  # find the solution)'\n23:04 < wstein> I wonder if we should deprecate it?\n23:04 < wstein> I like the feature, but the implementation is so bad.\n23:04 < wstein> And doing it right might be quite hard.\n23:04 < wstein> Also, it clearly can't be used that much...\n23:05 < mhansen> I would probably throw in a deprecation warning until we do a proper fix.\n23:05 < wstein> Use, I definitely mean by deprecate that there would be a deprecation warning.\n23:05 < mhansen> Just so anyone who uses it knows there are \"issues\".\n23:05 < wstein> Yep.\n23:05 < wstein> How to do it -- ?\n23:05 < wstein> One way would be to add something to A._backslash_\n23:05 < wstein> The other would be to actually make the preparser itself emit a warning as it preparses.\n23:05 < wstein> The latter would be more robust.\n23:06 < mhansen> That was what I was envisioning.\n23:06 < wstein> It's possible other code already in preparser.py can be used though to quickly fix this\n                problem well.\n23:06 < wstein> Robertwb wrote is particularly good at this sort of thing, being a \"compiler guy\".\n23:06 < mhansen> Agreed.  He has some other improvements to the preparser at #5106.\n```\n",
     "created_at": "2009-02-15T07:20:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40291",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40212",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -296,15 +295,15 @@ archive/issue_comments_040291.json:
 
 ---
 
-archive/issue_comments_040292.json:
+archive/issue_comments_040213.json:
 ```json
 {
     "body": "Yeah, this is horribly broken. I completely rewrote the preparser in #5106, but I don't think I changed the behavior of the backslash operator much. I've got an idea and will post a new patch as soon as I rebase #5106.",
     "created_at": "2009-02-15T08:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40292",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40213",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -314,15 +313,15 @@ Yeah, this is horribly broken. I completely rewrote the preparser in #5106, but 
 
 ---
 
-archive/issue_comments_040293.json:
+archive/issue_comments_040214.json:
 ```json
 {
     "body": "I introduced a new class called \"BackslashOperator\" which has a __mul__ and __rmul__ and gives the \\ operator the same precedence as multiplication. \n\nThis patch depends on #5106 (which has been rebased).",
     "created_at": "2009-02-15T09:11:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40293",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40214",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -334,15 +333,15 @@ This patch depends on #5106 (which has been rebased).
 
 ---
 
-archive/issue_comments_040294.json:
+archive/issue_comments_040215.json:
 ```json
 {
     "body": "This looks good to me, apart from the issues mentioned on 5106, which I also applied.",
     "created_at": "2009-02-17T11:47:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40294",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40215",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -352,15 +351,15 @@ This looks good to me, apart from the issues mentioned on 5106, which I also app
 
 ---
 
-archive/issue_comments_040295.json:
+archive/issue_comments_040216.json:
 ```json
 {
     "body": "I did a test-run, and this seems to break a few doctests, so I am withdrawing my fully positive review.  \n\nschemes/elliptic_curves/padics.py \n\nis one example, where a wrap-around \\ character is parsed incorrectly.  I think this is the only issue but this ticket does deserve a \"testall\" I think.",
     "created_at": "2009-02-17T13:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40295",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40216",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -374,15 +373,15 @@ is one example, where a wrap-around \ character is parsed incorrectly.  I think 
 
 ---
 
-archive/issue_comments_040296.json:
+archive/issue_comments_040217.json:
 ```json
 {
     "body": "I thought I had taken care of this case, but I guess not. I'll look into this after eating and feeding the babies.",
     "created_at": "2009-02-17T23:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40296",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40217",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -392,15 +391,15 @@ I thought I had taken care of this case, but I guess not. I'll look into this af
 
 ---
 
-archive/issue_comments_040297.json:
+archive/issue_comments_040218.json:
 ```json
 {
     "body": "Attachment [5251-backslash.patch](tarball://root/attachments/some-uuid/ticket5251/5251-backslash.patch) by @robertwb created at 2009-02-18 01:57:55\n\nOK, a better patch is attached. I see what the error was now--it's worked on all the examples and files I've tested, but I'm doing a -testall now, but things look good so far.",
     "created_at": "2009-02-18T01:57:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40297",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40218",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -412,15 +411,15 @@ OK, a better patch is attached. I see what the error was now--it's worked on all
 
 ---
 
-archive/issue_comments_040298.json:
+archive/issue_comments_040219.json:
 ```json
 {
     "body": "All tests pass.",
     "created_at": "2009-02-18T03:23:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40298",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40219",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -430,15 +429,15 @@ All tests pass.
 
 ---
 
-archive/issue_comments_040299.json:
+archive/issue_comments_040220.json:
 ```json
 {
     "body": "Looks good to me.  Nice work on this Robert!",
     "created_at": "2009-02-18T04:33:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40299",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40220",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -448,15 +447,15 @@ Looks good to me.  Nice work on this Robert!
 
 ---
 
-archive/issue_comments_040300.json:
+archive/issue_comments_040221.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-20T07:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40300",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -466,15 +465,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_040301.json:
+archive/issue_comments_040222.json:
 ```json
 {
     "body": "Merged 5251-backslash.patch only in Sage 3.3.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-20T07:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5251",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40301",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5251#issuecomment-40222",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

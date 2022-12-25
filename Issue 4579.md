@@ -6,15 +6,14 @@ archive/issues_004579.json:
     "body": "Assignee: somebody\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4579\n\n",
     "created_at": "2008-11-22T00:42:03Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] put mpz_longlong functions in c_lib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4579",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: somebody
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4579
 
 ---
 
-archive/issue_comments_034336.json:
+archive/issue_comments_034269.json:
 ```json
 {
     "body": "Attachment [4579-move-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4579/4579-move-mpz-longlong.patch) by @robertwb created at 2008-11-22 00:42:44",
     "created_at": "2008-11-22T00:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4579",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34336",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34269",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [4579-move-mpz-longlong.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_034337.json:
+archive/issue_comments_034270.json:
 ```json
 {
     "body": "This patch removes mpz_set_longlong from integer.pyx; but Sage 3.2 doesn't have that function in integer.pyx at all (in fact, I can't find it anywhere).  Does this depend on some other patch that hasn't been applied yet?",
     "created_at": "2008-11-23T03:37:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4579",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34337",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34270",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -65,15 +64,15 @@ This patch removes mpz_set_longlong from integer.pyx; but Sage 3.2 doesn't have 
 
 ---
 
-archive/issue_comments_034338.json:
+archive/issue_comments_034271.json:
 ```json
 {
     "body": "mabshoff points out that #4564 is the patch I was missing.",
     "created_at": "2008-11-23T04:32:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4579",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34338",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34271",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -83,15 +82,15 @@ mabshoff points out that #4564 is the patch I was missing.
 
 ---
 
-archive/issue_comments_034339.json:
+archive/issue_comments_034272.json:
 ```json
 {
     "body": "Patch looks good; doctests pass.\n\nPositive review.",
     "created_at": "2008-11-23T05:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4579",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34339",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34272",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -103,15 +102,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_034340.json:
+archive/issue_comments_034273.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1.alpha0",
     "created_at": "2008-11-23T06:43:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4579",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34340",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34273",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +120,15 @@ Merged in Sage 3.2.1.alpha0
 
 ---
 
-archive/issue_comments_034341.json:
+archive/issue_comments_034274.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-23T06:43:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4579",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34341",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4579#issuecomment-34274",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

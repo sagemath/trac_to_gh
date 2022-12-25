@@ -6,15 +6,14 @@ archive/issues_007139.json:
     "body": "Assignee: tbd\n\nUsing\n\n* A Sun Blade 2000 running Solaris 10 update 7\n* Sage 4.1.2.rc0\n* gcc 4.4.1\n* SAGE64 exported to \"yes\" \n\nLooking at the directory $SAGE_HOME/local/lib, we can see the flint  library is 32-bit, even though SAGE64 was set to \"yes\", so flint is ignoring the setting of SAGE64. It should also be notes that flint ignores CC and CXX too - see #7024\n\n\nThis is far from the only package building 32-bit when SAGE64 is set to \"yes\" on Solaris. All of the following do, and I suspect there are many others too.\n\n* zlib #7128\n* libgpg_error #7129\n* libpng #7130\n* libcliquer #7131\n* pari #7133\n* ntl #7134\n* python #7135\n* gp #7136 \n* ratpoints #7137\n* freetype #7138\n\nmpir currently mixes 32 and 64-bit objects, so does not build at all #7132.\n\nI will sort this package out after creating a new sage-env, which exports all the variables properly, including the flag for building 64-bit code, which is not always -m64.\n\nAlthough there is no support for AIX or HP-UX in Sage yet, we could potentially add it - I personally own machines running AIX and HP-UX.\n\nIBM's compiler on AIX uses -q64, and HP's on HP-UX uses +DD64.\n\nThe sensible way to resolve this is to add the correct flag on every platform. This is not a very difficult task really. Whilst any changes to the source that might be necessary for a port would take a lot of time, finding the right flags to build with should be quite easy. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7139\n\n",
     "created_at": "2009-10-06T01:23:31Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "flint always building 32-bit on Solaris even when SAGE64=\"yes\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7139",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -60,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7139
 
 ---
 
-archive/issue_comments_059173.json:
+archive/issue_comments_059061.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-01-02T06:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7139",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7139#issuecomment-59173",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7139#issuecomment-59061",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -78,15 +77,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_059174.json:
+archive/issue_comments_059062.json:
 ```json
 {
     "body": "Like an idiot, I created another ticket for this same problem. I'm closing this one, as the other one has the patch and is more upto date.",
     "created_at": "2010-01-02T06:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7139",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7139#issuecomment-59174",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7139#issuecomment-59062",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 

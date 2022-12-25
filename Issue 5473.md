@@ -6,15 +6,14 @@ archive/issues_005473.json:
     "body": "Assignee: cwitty\n\nCC:  @mkoeppe\n\nWhen we currently update the pickle jar we do not keep pickles for older versions around. Due to this we could break unconverted pickles without knowing it. \n\nIn that context it might also be nice to check that format conversion works.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5473\n\n",
     "created_at": "2009-03-10T20:39:38Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "create extra pickle jar for old format pickles (followup of #4640)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5473",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: cwitty
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5473
 
 ---
 
-archive/issue_comments_042462.json:
+archive/issue_comments_042379.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2021-10-20T08:22:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42462",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42379",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -55,15 +54,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_042463.json:
+archive/issue_comments_042380.json:
 ```json
 {
     "body": "outdated, can we close ?",
     "created_at": "2021-10-20T08:22:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42463",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42380",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -73,15 +72,15 @@ outdated, can we close ?
 
 ---
 
-archive/issue_comments_042464.json:
+archive/issue_comments_042381.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2021-10-20T16:00:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42464",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42381",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -91,15 +90,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_042465.json:
+archive/issue_comments_042382.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2021-10-20T17:49:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5473",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42465",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/5473#issuecomment-42382",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

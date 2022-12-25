@@ -6,15 +6,14 @@ archive/issues_008633.json:
     "body": "Assignee: tbd\n\nTry this in the notebook with the \"Typeset\" box checked:\n\n```\nrandom_matrix(ZZ, 5, 5).eigenvalues()\n```\n\nYou will see a box saying \"Unknown control sequence '\\texttt'\".  The attached patch fixes this by replacing \"\\texttt\" with \"\\hbox\" before processing the LaTeX string with jsMath.\n\nThis was reported on [sage-support](http://groups.google.com/group/sage-support/browse_thread/thread/b35dc4f890f48677?tvc=2).\n\nIssue created by migration from https://trac.sagemath.org/ticket/8633\n\n",
     "created_at": "2010-03-30T17:40:22Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "remove more instances of 'texttt' from jsmath output",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8633",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: tbd
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8633
 
 ---
 
-archive/issue_comments_078297.json:
+archive/issue_comments_078168.json:
 ```json
 {
     "body": "Attachment [trac_8633-texttt.patch](tarball://root/attachments/some-uuid/ticket8633/trac_8633-texttt.patch) by @novoselt created at 2010-04-01 01:47:20\n\nWorks for me (I had another case of \\texttt - thank you for providing such a timely patch!) and for the given code.\n\nIs it ready for review? The patch does not add any doctests, but I am not sure if it is possible to test such an issue in doctests. At least it does not break any existing ones.",
     "created_at": "2010-04-01T01:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78297",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78168",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -59,15 +58,15 @@ Is it ready for review? The patch does not add any doctests, but I am not sure i
 
 ---
 
-archive/issue_comments_078298.json:
+archive/issue_comments_078169.json:
 ```json
 {
     "body": "Yes, it's ready for review.",
     "created_at": "2010-04-01T01:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78298",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78169",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -77,15 +76,15 @@ Yes, it's ready for review.
 
 ---
 
-archive/issue_comments_078299.json:
+archive/issue_comments_078170.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-01T01:55:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78299",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78170",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -95,15 +94,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_078300.json:
+archive/issue_comments_078171.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-01T02:12:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78300",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78171",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -113,15 +112,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_078301.json:
+archive/issue_comments_078172.json:
 ```json
 {
     "body": "Merged \"trac_8633-texttt.patch\" in 4.4.alpha0.",
     "created_at": "2010-04-16T18:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78301",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78172",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -131,15 +130,15 @@ Merged "trac_8633-texttt.patch" in 4.4.alpha0.
 
 ---
 
-archive/issue_comments_078302.json:
+archive/issue_comments_078173.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-16T18:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78302",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78173",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -149,15 +148,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_078303.json:
+archive/issue_comments_078174.json:
 ```json
 {
     "body": "I get the same problem on 4.4.2 with\n\n\n```\nhtml.table([random_matrix(ZZ, 5, 5).eigenvalues()])\n```\n\n\neven though the example in this ticket does work.",
     "created_at": "2010-09-22T02:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78303",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78174",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -175,15 +174,15 @@ even though the example in this ticket does work.
 
 ---
 
-archive/issue_comments_078304.json:
+archive/issue_comments_078175.json:
 ```json
 {
     "body": "I think that the two calls to `latex` in sage/misc/html.py need to be changed from\n\n```\nlatex(XXX)\n```\n\nto \n\n```\nlatex(XXX).replace('\\\\texttt','\\\\hbox')\n```\n\nOpen another ticket, cc me, and post a patch.",
     "created_at": "2010-09-22T03:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78304",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78175",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -205,15 +204,15 @@ Open another ticket, cc me, and post a patch.
 
 ---
 
-archive/issue_comments_078305.json:
+archive/issue_comments_078176.json:
 ```json
 {
     "body": "(Oh, and add a doctest in the patch.)",
     "created_at": "2010-09-22T03:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8633",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78305",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8633#issuecomment-78176",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

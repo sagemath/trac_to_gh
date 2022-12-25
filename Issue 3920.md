@@ -6,7 +6,7 @@ archive/issues_003920.json:
     "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\nWhile reading the Developer's guide update at #3905 it occurred to me that `vector()`/`matrix()` methods are supposed to be called `_vector_`/`_matrix_()` methods so that `matrix(foo)` works. The attached patch changes those functions for finite field elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3920\n\n",
     "created_at": "2008-08-21T09:01:34Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003920.json:
     "title": "[with patch, needs review] FiniteFieldElement.vector/matrix -> _vector_/_matrix_",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3920",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3920
 
 ---
 
-archive/issue_comments_028037.json:
+archive/issue_comments_027979.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-20T16:00:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28037",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27979",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -49,15 +49,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_028038.json:
+archive/issue_comments_027980.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @malb.",
     "created_at": "2008-09-20T16:00:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28038",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27980",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing assignee from @williamstein to @malb.
 
 ---
 
-archive/issue_comments_028039.json:
+archive/issue_comments_027981.json:
 ```json
 {
     "body": "Just a short comment: could you put back in the matrix() and vector() functions and add a deprecation warning for now?  That way code doesn't suddenly break.",
     "created_at": "2008-09-26T16:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28039",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27981",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -85,15 +85,15 @@ Just a short comment: could you put back in the matrix() and vector() functions 
 
 ---
 
-archive/issue_comments_028040.json:
+archive/issue_comments_027982.json:
 ```json
 {
     "body": "Attachment [vector_matrix.patch](tarball://root/attachments/some-uuid/ticket3920/vector_matrix.patch) by @jhpalmieri created at 2008-10-17 21:25:37\n\nSince you use \"\\code\" in the docstring for vector and matrix, the docstrings need to start with r\"\"\" instead of \"\"\".  Patch attached.",
     "created_at": "2008-10-17T21:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28040",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27982",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -105,15 +105,15 @@ Since you use "\code" in the docstring for vector and matrix, the docstrings nee
 
 ---
 
-archive/issue_comments_028041.json:
+archive/issue_comments_027983.json:
 ```json
 {
     "body": "Attachment [10736.patch](tarball://root/attachments/some-uuid/ticket3920/10736.patch) by @jhpalmieri created at 2008-10-17 21:25:55\n\napply after malb's patch",
     "created_at": "2008-10-17T21:25:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28041",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27983",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -125,15 +125,15 @@ apply after malb's patch
 
 ---
 
-archive/issue_comments_028042.json:
+archive/issue_comments_027984.json:
 ```json
 {
     "body": "Otherwise, your patch looks good to me. Now I finally know of an example of the `_vector_` method -- I was looking for one when I was revising the Developer's guide...\n\nI've doctested the changed files with complete success. I'm currently running `sage -testall` to make sure nothing else is screwed up by this. I'll give it a tentative positive review now while I'm thinking about it, then change it one way or the other depending on how the testing works out.",
     "created_at": "2008-10-17T21:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28042",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27984",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -145,15 +145,15 @@ I've doctested the changed files with complete success. I'm currently running `s
 
 ---
 
-archive/issue_comments_028043.json:
+archive/issue_comments_027985.json:
 ```json
 {
     "body": "All tests passed!",
     "created_at": "2008-10-17T22:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28043",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27985",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -163,15 +163,15 @@ All tests passed!
 
 ---
 
-archive/issue_comments_028044.json:
+archive/issue_comments_027986.json:
 ```json
 {
     "body": "Positive review on John's additional patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T10:30:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28044",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27986",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -185,15 +185,15 @@ Michael
 
 ---
 
-archive/issue_comments_028045.json:
+archive/issue_comments_027987.json:
 ```json
 {
     "body": "Robert: This patch touches\n\n* sage/rings/finite_field_givaro.pyx\n* sage/rings/finite_field_ntl_gf2e.pyx\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T10:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28045",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27987",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -210,15 +210,15 @@ Michael
 
 ---
 
-archive/issue_comments_028046.json:
+archive/issue_comments_027988.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.2.alpha0",
     "created_at": "2008-10-18T11:05:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28046",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27988",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -228,15 +228,15 @@ Merged both patches in Sage 3.2.alpha0
 
 ---
 
-archive/issue_comments_028047.json:
+archive/issue_comments_027989.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-18T11:05:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3920",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-28047",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3920#issuecomment-27989",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

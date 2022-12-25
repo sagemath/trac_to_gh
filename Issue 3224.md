@@ -6,15 +6,14 @@ archive/issues_003224.json:
     "body": "Assignee: mabshoff\n\nspkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3224\n\n",
     "created_at": "2008-05-16T19:36:00Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "add 64 bit OSX build support for lcalc",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3224",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3224
 
 ---
 
-archive/issue_comments_022314.json:
+archive/issue_comments_022267.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-16T19:36:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22314",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22267",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_022315.json:
+archive/issue_comments_022268.json:
 ```json
 {
     "body": "Attachment [lcalc-20080205.p0-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3224/lcalc-20080205.p0-64bit-osx.patch) by mabshoff created at 2008-05-18 23:27:55",
     "created_at": "2008-05-18T23:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22315",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22268",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Attachment [lcalc-20080205.p0-64bit-osx.patch](tarball://root/attachments/some-u
 
 ---
 
-archive/issue_comments_022316.json:
+archive/issue_comments_022269.json:
 ```json
 {
     "body": "The updated spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/lcalc-20080205.p1.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-18T23:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22316",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22269",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Michael
 
 ---
 
-archive/issue_comments_022317.json:
+archive/issue_comments_022270.json:
 ```json
 {
     "body": "Positive review.  It works.",
     "created_at": "2008-05-18T23:37:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22317",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22270",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -111,15 +110,15 @@ Positive review.  It works.
 
 ---
 
-archive/issue_comments_022318.json:
+archive/issue_comments_022271.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.alpha1",
     "created_at": "2008-05-18T23:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22318",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22271",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +128,15 @@ Merged in Sage 3.0.2.alpha1
 
 ---
 
-archive/issue_comments_022319.json:
+archive/issue_comments_022272.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-18T23:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22319",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3224#issuecomment-22272",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

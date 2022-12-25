@@ -6,15 +6,14 @@ archive/issues_006975.json:
     "body": "Assignee: tbd\n\nfixed package is here:\n\nhttp://wstein.org/home/ondrej/patches/flint-1.3.0.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6975\n\n",
     "created_at": "2009-09-21T05:19:03Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "flint package fixed to work in cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6975",
-    "user": "@certik"
+    "user": "https://github.com/certik"
 }
 ```
 Assignee: tbd
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6975
 
 ---
 
-archive/issue_comments_057693.json:
+archive/issue_comments_057585.json:
 ```json
 {
     "body": "See #6919 for a FLINT 1.5.0 spkg which is based off the spkg here.",
     "created_at": "2009-09-25T05:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57693",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57585",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ See #6919 for a FLINT 1.5.0 spkg which is based off the spkg here.
 
 ---
 
-archive/issue_comments_057694.json:
+archive/issue_comments_057586.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-09-28T04:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57694",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57586",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -67,15 +66,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_057695.json:
+archive/issue_comments_057587.json:
 ```json
 {
     "body": "Closing this ticket as a duplicate of #6919.",
     "created_at": "2009-09-28T04:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57695",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6975#issuecomment-57587",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

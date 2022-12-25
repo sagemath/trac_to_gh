@@ -6,15 +6,14 @@ archive/issues_001678.json:
     "body": "Assignee: tba\n\nSomebody wrote those\ncomments to me about Sage.  I envision the tutorial mainly having a \ngotchas section that would address all of these confusions and issues below. \n\n```\nMetacomment: Using SAGE Version 2.5.3, Release Date: 2007-05-22.\nI did\n*not* use the python documentation (I didn't have access to it, due to\nsome uninteresting technical problems that have now been fixed).\n\n(9) This might be an unreasonable request, but: it might be nice to be\n   able to get sage documentation w/out the python doc -- for example,\n   my python documentation might be from somewhere on the Internet, and\n   my Internet connection might be down (perhaps I'm flying on a\n   plane) -- the specific case I ran across was trying to get the `if'\n   syntax: it might be nice if somehow ?if, too, worked in sage.\n\n(10) The Abstract on the Front Matter page of the tutorial says \"[...]\n    from the SAGE notebook click Documentation [...]\" but doesn't\n    tell you how to get to the sage notebook; perhaps a pointer (say\n    to Section 3.10) at that point would help.\n\n(11) I couldn't easily find the right way to get an integer/float (not\n    symbolic) square root.  Should ?sqrt tell me how to do that?\n\n(12) In general, it would be nice to know, for example, what types of\n    sqrt are available, what types of arguments they take, etc.\n    (Perhaps somewhat similar to what, e.g., Emacs-calc allows if you\n    type M-x apropos, then sqrt to the prompt, then you can click on\n    a sqrt of interest.)\n\n(13) More generally, perhaps a way to see the names of all \"available\"\n    functions would be nice.  (It may exist, but I couldn't see in\n    two minutes how to get it.)  For example, I guessed `nextprime',\n    but that didn't exist; it was only much later that I stumbled\n    across the next_prime function, with an underscore.\n\n(14) Back to sqrt?; it gave me --\n\n    Type:              Function_sqrt\n    Base Class:        <class 'sage.calculus.calculus.Function_sqrt'>\n    String Form:                                            sqrt\n    Namespace: Interactive\n    Docstring:\n       The square root function. This is a symbolic square root.\n       EXAMPLES:\n           sage: sqrt(-1)\n           I\n           sage: sqrt(2)\n           sqrt(2)\n           sage: sqrt(x^2)\n           abs(x)\n\n    -- but from this I couldn't figure out what type the argument had\n    to be.  For example, I was surprised that\n\n      sage: M = 3099044504245996706400\n      sage: float(sqrt(M))\n      55669062361.836098\n\n    worked but then doing\n\n      sage: M = int(M)\n      sage: float(sqrt(M))\n\n    gave an error.  Part of my surprise was that the next_prime\n    function that I came across *did* work with both integer types\n    (sage and python).\n\n(15) Eventually someone showed me the timeit function, which I found\n    really useful (with it, I easily found out that the X.is_square()\n    form ran much faster than the is_square(X) form).  Perhaps some\n    quick mention of timeit should be in the 3.4 Timing Commands\n    section of the tutorial.\n\n(16) I was a bit surprised when\n\n      print \"N = %d\" %N\n\n    didn't work if N got too large (more than about 63 bits); I guess\n    I expected sage?python? to do the coercion.  (I wound up using\n\n      print \"N = %d\" %(int(N))\n\n    and that worked for smallish large N but I wasn't sure it would\n    work for arbitrarily large N; I now know to use %s for this.)\n\n(17) I was surprised that this code failed --\n\n     for p in range(1,50) :\n        if (p.is_prime()) :\n           print p\n\n    -- apparently because p somehow has become a python int, not a\n    sage Integer.  Here was the error message:\n\n<type 'exceptions.AttributeError'>: 'int' object has no attribute 'is_prime'\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n(18) I unexpectedly got this error:\n\n <type 'exceptions.OverflowError'>         Traceback (most recent call last)\n [ . . . ]\n ---> 22  for N in xrange(BASE, MAXBOUND, BASE) :\n [ . . . ]\n <type 'exceptions.OverflowError'>: long int too large to convert to int\n\n Also, it would have been nice if the error had told me which variable\n caused the overflow.  (I forget how I figured this out, but I wound up\n using xsrange instead.)\n\n(19) I was surprised that with s defined as\n\n   s = RealField(5000)(X).sqrt()\n\n that (where X is a very large nonsquare integer)\n\n   print \"%.4f [...]\" %(s, [...])\n\n \"stops\" working if s gets too large.  Presumably this is a coercion\n problem.\n\n(20) I was a little surprised that something of length 725760\n (apparently) would cause a problem:\n\n sage: len(quadratic_residues(232792560))\n /usr/local/sage-2.8.2/local/bin/sage-sage: line 182: 25097 Killed\n     sage-ipython -c \"$SAGE_STARTUP_COMMAND;\" \"$@\"\n----------------------------------------------------------------------\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1678\n\n",
     "created_at": "2008-01-04T04:35:08Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.5",
     "title": "docs -- tutorial: modification to the tutorial to address numerous gotcha's",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1678",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -159,15 +158,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1678
 
 ---
 
-archive/issue_comments_010641.json:
+archive/issue_comments_010614.json:
 ```json
 {
     "body": "The above laundry list should be checked, broken down into individual problems, the ones that are still valid should become their own tickets and then this ticket should be closed.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-19T19:21:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10641",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10614",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -181,15 +180,15 @@ Michael
 
 ---
 
-archive/issue_comments_010642.json:
+archive/issue_comments_010615.json:
 ```json
 {
     "body": "20 - doesn't crash, though very long hang, probably because it has an incredibly naive algorithm.  See #17372.\n\n19 - ???  I think I know what is meant, though.\n\n```\nsage: X = 100000000000000000000000000000000000000000000000000^2+1\nsage: s = RealField(5000)(X).sqrt()\nsage: print \"%.4f\"%s\n100000000000000007629769841091887003294964970946560.0000  # really not close to the square root\nsage: RealField(5000)(X)\n1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e100\nsage: _.sqrt()\n1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000049999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999998750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000062499999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999996093750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000273437499999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999979492187500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001611328124999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999869079589843750000000000000000000000000000000000000000000000000000000000000000000000000000000000000010910034179687499999999999999999999999999999999999999999999999999999999999999999999999999999999999999072647094726562500000000000000000000000000000000000000000000000000000000000000000000000000000000000080089569091796874999999999999999999999999999999999999999999999999999999999999999999999999999999999992992162704467773437500000000000000000000000000000000000000000000000000000000000000000000000000000000619924068450927734374999999999999999999999999999999999999999999999999999999999999999999999999999999944649636745452880859375000000000000000000000000000000000000000000000000000000000000000000000000000005e50\nsage: _^2\n1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e100\n```\n\nWell, that's what you get when you do float formatting, as it's not a float.  In fact,\n\n```\nprint \"%f\"%100000000000000000000000000000000000000000000000000\n```\n\nso invalid, or at least not fixable by us, I think.\n\n18 - this is a pure Python error which we could in principle try to catch, but there are SO many places you'd have to do it.  I think wontfix.\n\n17 - valid and truly a problem in many interesting places.  I don't know how to fix that other than education, though; removing \"range\" from everywhere is not so good.  This has been discussed before, whether `srange` or `range` is better - well, each has its uses.\n\n16 - I can't reproduce this, and with formatting it's buyer beware, I think, as that is not a \"basic\" thing in Sage, but rather for people who actually know something about programming.\n\n```\nsage:  print \"N = %d\" %1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111112222222222222\nN = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111112222222222222\n```\n\n\n15 - absolutely,  http://sagemath.org/doc/tutorial/interactive_shell.html#timing-commands should have timeit mentioned.\n\n10 - This is really no longer valid, the tutorial has changed so much.\n\n9 - I don't know what this means, but it is true that there are external links to Python docs.  In principle, we could include them - see #10831 - but I don't think that is necessary here.\n\n11 - I guess we could add an example for `sqrt(2.)` or `sqrt(4.)`.\n\n12 - I don't get this question.\n\n13 - this is tab-completion.  Perhaps that didn't exist yet then.\n\n14 - no longer valid for `sqrt` and we are making progress updating doc in cases where it might be valid, way too big for any one ticket.\n\n----\n\nSummary of what could still be done here:\n* Education on range versus srange\n* Mention `timeit` in the tutorial\n* Include example in `sqrt` for `sqrt(2.)` or `sqrt(4.)` or both",
     "created_at": "2014-11-20T17:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10642",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10615",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -255,15 +254,15 @@ Summary of what could still be done here:
 
 ---
 
-archive/issue_comments_010643.json:
+archive/issue_comments_010616.json:
 ```json
 {
     "body": "> * Education on range versus srange\n#17373\n> * Mention `timeit` in the tutorial\nIn the branch needing review.  Naturally, one could do more, but this is a start.\n> * Include example in `sqrt` for `sqrt(2.)` or `sqrt(4.)` or both\nIn the branch needing review.",
     "created_at": "2014-11-20T17:59:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10643",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10616",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -278,15 +277,15 @@ In the branch needing review.
 
 ---
 
-archive/issue_comments_010644.json:
+archive/issue_comments_010617.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2014-11-20T17:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10644",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10617",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -296,15 +295,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_010645.json:
+archive/issue_comments_010618.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-11-20T17:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10645",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10618",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -314,15 +313,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_010646.json:
+archive/issue_comments_010619.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2014-11-20T17:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10646",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10619",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -332,15 +331,15 @@ New commits:
 
 ---
 
-archive/issue_comments_010647.json:
+archive/issue_comments_010620.json:
 ```json
 {
     "body": "Good to go !\n\nNathann",
     "created_at": "2014-12-31T10:53:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10647",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10620",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -352,15 +351,15 @@ Nathann
 
 ---
 
-archive/issue_comments_010648.json:
+archive/issue_comments_010621.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-12-31T10:53:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10648",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10621",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -370,15 +369,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_010649.json:
+archive/issue_comments_010622.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-01-02T22:12:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1678",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10649",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/1678#issuecomment-10622",
+    "user": "https://github.com/vbraun"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_006165.json:
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen mvngu\n\nThe spkg applies the patch given by Robert Dodier in this thread: http://www.math.utexas.edu/pipermail/maxima/2009/017242.html\n\nBasically, it makes Maxima return eigenvectors associated with each eigenvalue separately, rather than just returning a list of eigenvectors.  It makes it possible to determine the eigenvector associated with an eigenvalue when algebraic multiplicities do not match up with geometric multiplicities.  See the mailing list thread above for an example.\n\nThe new spkg is here: http://sage.math.washington.edu/home/jason/maxima-5.16.3.p3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/6165\n\n",
     "created_at": "2009-05-31T04:35:49Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "new maxima spkg that enhances eigenvector results so they can be useable from symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6165",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6165
 
 ---
 
-archive/issue_comments_049186.json:
+archive/issue_comments_049091.json:
 ```json
 {
     "body": "The reason for this is to make it trivial to have eigenvector and eigenmatrix functions for symbolic matrices.",
     "created_at": "2009-05-31T04:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49186",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49091",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -53,15 +52,15 @@ The reason for this is to make it trivial to have eigenvector and eigenmatrix fu
 
 ---
 
-archive/issue_comments_049187.json:
+archive/issue_comments_049092.json:
 ```json
 {
     "body": "\n```\n21:59 < wstein> wstein@sage:~/tmp/maxima-5.16.3.p3$ hg status\n21:59 < wstein> ? patches/eigen.mac\n21:59 < wstein> yep, that pynac segfault looks *very* serious.\n21:59 < wstein> ouch.\n21:59 < jason> oh, grr, I forgot to add that file.\n21:59 < wstein> but it is inevitable.\n21:59 < jason> hang on.\n22:00 < jason> it'd be nice if -spkg ran hg status and reported any funny things.\n22:01 < wstein> good idea.  implement it and send me a patch.\n22:01 < wstein> it's easy.\n22:01 < jason> yeah, I know.\n22:02 < wstein> my only concern about 6165 -- is this going to be upstreamed to maxima?\n22:02 < wstein> i.e., or have you just made it so for the first time ever when debian sage tries to use the systemwide maxima\n22:02 < wstein> it'll just totally break no matter what forever when doing eigenvectors.\n22:02 < wstein> Just curious.\n22:02 < wstein> As long as robert dodier is putting that patch into maxima, no prob.\n22:03 < wstein> but he doesn't say so in the thread as far as I can tell.\n```\n",
     "created_at": "2009-05-31T05:03:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49187",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49092",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -91,15 +90,15 @@ archive/issue_comments_049187.json:
 
 ---
 
-archive/issue_comments_049188.json:
+archive/issue_comments_049093.json:
 ```json
 {
     "body": "Positive review pending a statement from Dodier on this.",
     "created_at": "2009-05-31T05:05:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49188",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49093",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -109,15 +108,15 @@ Positive review pending a statement from Dodier on this.
 
 ---
 
-archive/issue_comments_049189.json:
+archive/issue_comments_049094.json:
 ```json
 {
     "body": "I've posted a reply to the thread mentioned above asking that the patch be included in maxima.  I'll check on this later.",
     "created_at": "2009-05-31T05:08:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49189",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49094",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -127,15 +126,15 @@ I've posted a reply to the thread mentioned above asking that the patch be inclu
 
 ---
 
-archive/issue_comments_049190.json:
+archive/issue_comments_049095.json:
 ```json
 {
     "body": "Jason, I think this has now been integrated in Maxima 5.19.1.  You can have a look at #6699 to double-check.",
     "created_at": "2009-08-24T09:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49190",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49095",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -145,15 +144,15 @@ Jason, I think this has now been integrated in Maxima 5.19.1.  You can have a lo
 
 ---
 
-archive/issue_comments_049191.json:
+archive/issue_comments_049096.json:
 ```json
 {
     "body": "Replying to [comment:6 AlexGhitza]:\n> Jason, I think this has now been integrated in Maxima 5.19.1.  You can have a look at #6699 to double-check.\n\nYes, this is the case:\n\n```\nMaxima 5.19.1 http://maxima.sourceforge.netUsing Lisp SBCL 1.0.30Distributed under the GNU Public License. See the file COPYING.Dedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) M1 : matrix ([0, 1, 0, 0], [0, 0, 0, 0], [0, 0, 2, 0], [0, 0, 0, 2]);\n                                [ 0  1  0  0 ]\n                                [            ]\n                                [ 0  0  0  0 ]\n(%o1)                           [            ]\n                                [ 0  0  2  0 ]\n                                [            ]\n                                [ 0  0  0  2 ]\n(%i2) [vals, vecs] : eigenvectors (M1);\n(%o2) [[[0, 2], [2, 2]], [[[1, 0, 0, 0]], [[0, 0, 1, 0], [0, 0, 0, 1]]]]\n(%i3) for i thru length (vals) do disp (val[i] = vals[i][1], mult[i] =\nvals[i][2], vec[i] = vecs[i]);\n                                   val  = 0\n                                      1\n\n                                   mult  = 2\n                                       1\n\n                             vec  = [[1, 0, 0, 0]]\n                                1\n\n                                   val  = 2\n                                      2\n\n                                   mult  = 2\n                                       2\n\n                      vec  = [[0, 0, 1, 0], [0, 0, 0, 1]]\n                         2\n\n(%o3)                                done\n```\n",
     "created_at": "2009-09-15T13:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49191",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49096",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -203,15 +202,15 @@ vals[i][2], vec[i] = vecs[i]);
 
 ---
 
-archive/issue_comments_049192.json:
+archive/issue_comments_049097.json:
 ```json
 {
     "body": "From the above comments, it sounds like this ticket can be closed, as it has been superseded.",
     "created_at": "2009-09-25T06:00:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49192",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49097",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -221,15 +220,15 @@ From the above comments, it sounds like this ticket can be closed, as it has bee
 
 ---
 
-archive/issue_comments_049193.json:
+archive/issue_comments_049098.json:
 ```json
 {
     "body": "Closing this ticket as a duplicate of #6699.",
     "created_at": "2009-09-25T06:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49193",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49098",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -239,15 +238,15 @@ Closing this ticket as a duplicate of #6699.
 
 ---
 
-archive/issue_comments_049194.json:
+archive/issue_comments_049099.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-09-25T06:04:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6165",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49194",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6165#issuecomment-49099",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

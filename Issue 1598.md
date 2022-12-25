@@ -6,15 +6,14 @@ archive/issues_001598.json:
     "body": "Assignee: @malb\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1598\n\n",
     "created_at": "2007-12-25T20:52:31Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "[with patch] fix SIGSEGV in libSINGULAR interface on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1598",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1598
 
 ---
 
-archive/issue_comments_010165.json:
+archive/issue_comments_010138.json:
 ```json
 {
     "body": "Attachment [trac_1598.patch](tarball://root/attachments/some-uuid/ticket1598/trac_1598.patch) by @malb created at 2007-12-25 20:52:57",
     "created_at": "2007-12-25T20:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1598",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1598#issuecomment-10165",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1598#issuecomment-10138",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_1598.patch](tarball://root/attachments/some-uuid/ticket1598/tra
 
 ---
 
-archive/issue_comments_010166.json:
+archive/issue_comments_010139.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-01-07T17:18:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1598",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1598#issuecomment-10166",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1598#issuecomment-10139",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -65,15 +64,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_010167.json:
+archive/issue_comments_010140.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-07T17:19:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1598",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1598#issuecomment-10167",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1598#issuecomment-10140",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

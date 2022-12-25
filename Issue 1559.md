@@ -6,15 +6,14 @@ archive/issues_001559.json:
     "body": "Assignee: @williamstein\n\nWhen loading a .spyx file with 'load' from the sage: prompt, Sage builds an .so file in ~/.sage/temp/HOST/PID/spyx/FILE/. Before doing this, it tries to unlink all files in that directory. (Search for 'unlink' in sage/misc/cython.py)\n\nWhen performing the same 'load' again (e.g., while writing/debugging the .spyx file), the previous .so file is deleted, but since it is still held open by python, this causes an .nfs0000... file to appear in the build directory, since my $HOME is mounted over NFS. (This is how the NFS client of Linux works, I assume.)\n\nThe third time I do this 'load', it'll try to unlink the .nfs0000... file and fail, since you can't delete such files. This causes the load to fail with \"[Errno 16] Device or resource busy\".\n\n\nI'm not sure what the cleanest way of fixing this would be. Two possible solutions that I can think of are explicitly checking for files starting with '.nfs', or ignoring 'device or resource busy' errors while unlinking.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1559\n\n",
     "created_at": "2007-12-18T16:43:02Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "repeated loading of cython file with home on NFS",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1559",
-    "user": "@wjp"
+    "user": "https://github.com/wjp"
 }
 ```
 Assignee: @williamstein
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1559
 
 ---
 
-archive/issue_comments_009934.json:
+archive/issue_comments_009908.json:
 ```json
 {
     "body": "After discussion with cwitty and mabshoff on IRC:\n\nother solutions include using a directory in /tmp for these temporary files, or\nusing a new filename for each new module. Something like this last solution might also be necessary for a future Windows port, where it's not possible to delete .dll's that are still in use, as mentioned by mabshoff.",
     "created_at": "2007-12-18T21:17:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9934",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9908",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -59,15 +58,15 @@ using a new filename for each new module. Something like this last solution migh
 
 ---
 
-archive/issue_comments_009935.json:
+archive/issue_comments_009909.json:
 ```json
 {
     "body": "I hate the idea of checking for .nfs files -- that doesn't scale.  I say ignore non-catastrophic errors.\n\nBetter still, make it easy to set the temp directory -- so the user can set the temp director to /tmp or something that makes sense.",
     "created_at": "2008-01-19T22:12:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9935",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9909",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -79,15 +78,15 @@ Better still, make it easy to set the temp directory -- so the user can set the 
 
 ---
 
-archive/issue_comments_009936.json:
+archive/issue_comments_009910.json:
 ```json
 {
     "body": "From recreating this ticket (as a dupe, since I never saw it), since it didn't get fixed for a long time:\n\nWhen\n\n```\n sage: load filename.spyx\n```\n\nis done repeatedly on a specific single file filename.spyx, after about 3-4\ntries Sage tries to delete some files.  On some NFS mounted filesystems, there\nare lock files, and these can't be deleted for permissions reasons.  Instead of \nsage gracefully continuing on it fails at this point, and bombs out.  This makes\nloading cython files fail henceforth, making spyx files completely useless.\n\nThe fix is probably just to put a try/except block around any code that deletes files that is related to attaching and loading [s]pyx files.\n\nDeleting the temp files is completely not needed -- it's just to save disk space. They'll be cleaned up by the sage-cleaner at some point anyways.",
     "created_at": "2008-01-31T04:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9936",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9910",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -113,15 +112,15 @@ Deleting the temp files is completely not needed -- it's just to save disk space
 
 ---
 
-archive/issue_comments_009937.json:
+archive/issue_comments_009911.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-03-14T16:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9937",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9911",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -131,15 +130,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_009938.json:
+archive/issue_comments_009912.json:
 ```json
 {
     "body": "This is a dupe of #2449.",
     "created_at": "2008-03-14T16:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9938",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9912",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -149,15 +148,15 @@ This is a dupe of #2449.
 
 ---
 
-archive/issue_comments_009939.json:
+archive/issue_comments_009913.json:
 ```json
 {
     "body": "Ehh, this is a dupe of 2499 - butterfinger ;)",
     "created_at": "2008-03-14T16:35:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9939",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1559#issuecomment-9913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007148.json:
     "body": "Assignee: @jhpalmieri\n\nThe section in the tutorial on rings can be confusing to people who aren't familiar with them, and since this precedes the material on matrices (for example), people wanting to know how to solve linear equations might be thrown off.  This patch attempts to remedy this, at least partially.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7148\n\n",
     "created_at": "2009-10-07T23:59:08Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "[with patch, needs review] tutorial: try to clarify the 'rings' section",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7148",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jhpalmieri
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7148
 
 ---
 
-archive/issue_comments_059230.json:
+archive/issue_comments_059118.json:
 ```json
 {
     "body": "Attachment [trac_7148-tutorial-rings.patch](tarball://root/attachments/some-uuid/ticket7148/trac_7148-tutorial-rings.patch) by @jhpalmieri created at 2009-10-07 23:59:39",
     "created_at": "2009-10-07T23:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59230",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59118",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_7148-tutorial-rings.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_comments_059231.json:
+archive/issue_comments_059119.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-08T00:01:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59231",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59119",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059232.json:
+archive/issue_comments_059120.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-10-08T18:35:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59232",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59120",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +82,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_059233.json:
+archive/issue_comments_059121.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-08T18:35:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59233",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59121",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -101,15 +100,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059234.json:
+archive/issue_comments_059122.json:
 ```json
 {
     "body": "Attachment [trac_7148-tutorial-rings.2.patch](tarball://root/attachments/some-uuid/ticket7148/trac_7148-tutorial-rings.2.patch) by @mwhansen created at 2009-10-15 09:21:56",
     "created_at": "2009-10-15T09:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59234",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59122",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -119,15 +118,15 @@ Attachment [trac_7148-tutorial-rings.2.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_059235.json:
+archive/issue_comments_059123.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-15T09:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59235",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59123",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -137,15 +136,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_059236.json:
+archive/issue_comments_059124.json:
 ```json
 {
     "body": "I had to update the patch to take care of a change from #7007.",
     "created_at": "2009-10-15T09:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7148",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59236",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7148#issuecomment-59124",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

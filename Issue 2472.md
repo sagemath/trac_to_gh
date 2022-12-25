@@ -6,7 +6,7 @@ archive/issues_002472.json:
     "body": "Assignee: somebody\n\nCC:  @ncalexan\n\nKeywords: floor truncate ceil ceiling parent integer\n\nI think `floor` and `ceil` and `truncate` should return integers.\n\n\n```\nsage: floor(2).parent()\nInteger Ring\nsage: floor(2.0).parent()\nInteger Ring\nsage: floor(RIF(2.0)).parent()\nReal Interval Field with 53 bits of precision\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2472\n\n",
     "created_at": "2008-03-11T20:58:33Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002472.json:
     "title": "what parent should floor return?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2472",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: somebody
@@ -44,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2472
 
 ---
 
-archive/issue_comments_016738.json:
+archive/issue_comments_016702.json:
 ```json
 {
     "body": "> I think floor and ceil and truncate should return integers.\n\nI agree, though this goes against what Python does:\n\n\n```\nsage: math.floor(float(2.3))\n2.0    \n```\n\n\nI don't like Python's math.floor behavior, but I bet it agrees with the C library.\nYep:\n\n```\n     double\n     floor(double x);\n\n     long double\n     floorl(long double x);\n```\n\n\nI still vote for making floor always return Integer.",
     "created_at": "2008-03-11T21:03:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16738",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16702",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +85,15 @@ I still vote for making floor always return Integer.
 
 ---
 
-archive/issue_comments_016739.json:
+archive/issue_comments_016703.json:
 ```json
 {
     "body": "But what integer should it return?  In particular, what do you want floor(RIF(1.5, 12345.678)) to return, and why?  \n\nMy vote would be that floor and ceiling should not be implemented for RIF at all, because I don't think they have a sensible meaning.\n\nNote that when William first implemented floor and ceiling for RIF, he had them return integers; but he immediately (38 minutes later, according to Mercurial) changed them to return intervals, calling this a '\"moral\" improvement'.",
     "created_at": "2008-03-12T01:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16739",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16703",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -107,15 +107,15 @@ Note that when William first implemented floor and ceiling for RIF, he had them 
 
 ---
 
-archive/issue_comments_016740.json:
+archive/issue_comments_016704.json:
 ```json
 {
     "body": "Perhaps what we need is an `IntegerInterval` class which represents an interval in ZZ.\n\nI think this might even have come up in the context of valuations of p-adic numbers, and I might have even discussed it with David Roe, but I can't remember if anything came out of it.",
     "created_at": "2008-03-13T18:50:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16740",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16704",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -127,15 +127,15 @@ I think this might even have come up in the context of valuations of p-adic numb
 
 ---
 
-archive/issue_comments_016741.json:
+archive/issue_comments_016705.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-09-02T08:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16741",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16705",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -145,15 +145,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_016742.json:
+archive/issue_comments_016706.json:
 ```json
 {
     "body": "We now have `unique_floor()` for `RIF` returning an integer, which solves the problem I guess.",
     "created_at": "2014-09-02T08:57:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16742",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16706",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -163,15 +163,15 @@ We now have `unique_floor()` for `RIF` returning an integer, which solves the pr
 
 ---
 
-archive/issue_comments_016743.json:
+archive/issue_comments_016707.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-09-02T08:57:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16743",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16707",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -181,15 +181,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_016744.json:
+archive/issue_comments_016708.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2014-09-09T14:53:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16744",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2472#issuecomment-16708",
+    "user": "https://github.com/vbraun"
 }
 ```
 

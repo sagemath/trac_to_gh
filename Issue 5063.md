@@ -6,15 +6,13 @@ archive/issues_005063.json:
     "body": "Assignee: @williamstein\n\nThis is to allow one to take more advantages of matplotlib functionality.\n\nI'm posting a patch so that I can look at the diff.  It's definitely not ready.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5063\n\n",
     "created_at": "2009-01-23T01:32:50Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "major reworking of plotting",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5063",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5063
 
 ---
 
-archive/issue_comments_038571.json:
+archive/issue_comments_038498.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-01-18T22:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5063",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5063#issuecomment-38571",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5063#issuecomment-38498",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +47,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_038572.json:
+archive/issue_comments_038499.json:
 ```json
 {
     "body": "Attachment [plot.patch](tarball://root/attachments/some-uuid/ticket5063/plot.patch) by @mwhansen created at 2010-01-18 22:39:52\n\nI'm going to mark this as invalid.",
     "created_at": "2010-01-18T22:39:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5063",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5063#issuecomment-38572",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5063#issuecomment-38499",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

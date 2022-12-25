@@ -6,7 +6,7 @@ archive/issues_008916.json:
     "body": "Assignee: mvngu\n\nKeywords: documentation\n\nThe word NotImplementedError is latexed but it shouldn't be:\n\n```\nEnumeratedSets.ParentMethods.cardinality\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8916\n\n",
     "created_at": "2010-05-07T16:14:21Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008916.json:
     "title": "documentation error in cardinality for Enumerated Sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8916",
-    "user": "imarquez"
+    "user": "https://trac.sagemath.org/admin/accounts/users/imarquez"
 }
 ```
 Assignee: mvngu
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8916
 
 ---
 
-archive/issue_comments_082124.json:
+archive/issue_comments_081989.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-07T22:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8916",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82124",
-    "user": "sageoscart"
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-81989",
+    "user": "https://trac.sagemath.org/admin/accounts/users/sageoscart"
 }
 ```
 
@@ -54,15 +54,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_082125.json:
+archive/issue_comments_081990.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-07T23:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8916",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82125",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-81990",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -72,15 +72,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_082126.json:
+archive/issue_comments_081991.json:
 ```json
 {
     "body": "I don't see any changes in the patch.",
     "created_at": "2010-05-07T23:11:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8916",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82126",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-81991",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -90,15 +90,15 @@ I don't see any changes in the patch.
 
 ---
 
-archive/issue_comments_082127.json:
+archive/issue_comments_081992.json:
 ```json
 {
     "body": "Attachment [trac8916.patch](tarball://root/attachments/some-uuid/ticket8916/trac8916.patch) by sageoscart created at 2010-05-07 23:31:57",
     "created_at": "2010-05-07T23:31:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8916",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82127",
-    "user": "sageoscart"
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-81992",
+    "user": "https://trac.sagemath.org/admin/accounts/users/sageoscart"
 }
 ```
 
@@ -108,15 +108,15 @@ Attachment [trac8916.patch](tarball://root/attachments/some-uuid/ticket8916/trac
 
 ---
 
-archive/issue_comments_082128.json:
+archive/issue_comments_081993.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-07T23:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8916",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82128",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-81993",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -126,15 +126,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_082129.json:
+archive/issue_comments_081994.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-07T23:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8916",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82129",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-81994",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -144,15 +144,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_082130.json:
+archive/issue_comments_081995.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-08T21:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8916",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-82130",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8916#issuecomment-81995",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

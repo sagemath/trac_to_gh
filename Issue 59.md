@@ -6,15 +6,14 @@ archive/issues_000059.json:
     "body": "Assignee: somebody\n\nWilliam, my student noticed some slow performance with elliptic curves \ngroup law.  I think there was a huge overhead in duplication:\n \nsage: E = EllipticCurve([GF(101)(1),3])\nsage: P = E([-1,1,1])\nsage: timeit 2*P\n100 loops, best of 3: 3.81 ms per loop\nsage: timeit P+P\n1000 loops, best of 3: 1.81 ms per loop\n \nBasically n*P was passing through all sorts of high-level layers for \ngroup schemes, abelian groups, and the like.\n \nI've started teaching two courses here, and at the latest, will have to \nadapt to becoming a Dad next Tuesday (my wife Martine is overdue). But I \nmay be able to add some code in the next three weeks.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/59\n\n",
     "created_at": "2006-09-14T12:37:01Z",
     "labels": [
-        "basic arithmetic",
-        "minor",
-        "enhancement"
+        "component: basic arithmetic",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "optimize elliptic curve arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/59",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/59
 
 ---
 
-archive/issue_comments_000307.json:
+archive/issue_comments_000306.json:
 ```json
 {
     "body": "This was from David Kohel.  Here's a better formated version:\n\nWilliam, my student noticed some slow performance with elliptic curves \ngroup law.  I think there was a huge overhead in duplication:\n\n``` \nsage: E = EllipticCurve([GF(101)(1),3])\nsage: P = E([-1,1,1])\nsage: timeit 2*P\n100 loops, best of 3: 3.81 ms per loop\nsage: timeit P+P\n1000 loops, best of 3: 1.81 ms per loop\n }}}\nBasically n*P was passing through all sorts of high-level layers for \ngroup schemes, abelian groups, and the like.",
     "created_at": "2006-09-14T12:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-307",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-306",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,15 +76,15 @@ group schemes, abelian groups, and the like.
 
 ---
 
-archive/issue_comments_000308.json:
+archive/issue_comments_000307.json:
 ```json
 {
     "body": "I guess this has been fixed. With Sage 2.8.2 I get:\n\n```\nsage: E = EllipticCurve([GF(101)(1),3])\nsage: P = E([-1,1,1])\nsage: timeit 2*P\n1000 loops, best of 3: 317 \u00b5s per loop\nsage: timeit P+P\n10000 loops, best of 3: 92.7 \u00b5s per loop\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-08-22T19:46:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-308",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-307",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -108,15 +107,15 @@ Michael
 
 ---
 
-archive/issue_comments_000309.json:
+archive/issue_comments_000308.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-23T05:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-309",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-308",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -126,15 +125,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000310.json:
+archive/issue_comments_000309.json:
 ```json
 {
     "body": "Fixed by Robert bradshaw.",
     "created_at": "2007-08-23T05:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-310",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-309",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -144,15 +143,15 @@ Fixed by Robert bradshaw.
 
 ---
 
-archive/issue_comments_000311.json:
+archive/issue_comments_000310.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-08-24T06:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-311",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-310",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -162,15 +161,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_000312.json:
+archive/issue_comments_000311.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-08-24T06:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-312",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-311",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -180,15 +179,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_000313.json:
+archive/issue_comments_000312.json:
 ```json
 {
     "body": "Ok, reopened.\n\nFor details see http://groups.google.com/group/sage-devel/t/e884bb605728649a\n\nTo quote David Kohel:\n\n```\nI think the problem needs to be profiled.  The problem is likely NOT\nin elliptic curves, but some\nhorrendous chain of calls to module operations before getting to the\n(same) actual algorithms.\nNote that P*2 is slightly faster since it calls directly the member\nfunction of P rather than a\nfunction on integers.\n\nsage: E = EllipticCurve([GF(101)(1),3])\nsage: P = E([-1,1,1])\nsage: timeit 2*P\n1000 loops, best of 3: 309 \u00b5s per loop\nsage: timeit P+P\n10000 loops, best of 3: 89.8 \u00b5s per loop\nsage: timeit P*2\n1000 loops, best of 3: 204 \u00b5s per loop\n\nYes, reopen it: these sorts of problems need to be looked at and\noptimized.  The same problem\napplies to points on Jacobians (compare 2*P, P*2, and P+P).\n\n--David \n```\n",
     "created_at": "2007-08-24T06:55:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-313",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-312",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -228,15 +227,15 @@ applies to points on Jacobians (compare 2*P, P*2, and P+P).
 
 ---
 
-archive/issue_comments_000314.json:
+archive/issue_comments_000313.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-29T02:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-314",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-313",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -246,15 +245,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000315.json:
+archive/issue_comments_000314.json:
 ```json
 {
     "body": "As of SAGE-2.8.3 (probably due to Tom Boothby's work), this is now resolved:\n\n```\nsage: E = EllipticCurve([GF(101)(1),3])\nsage: P = E([-1,1,1])\nsage: import timeit\nsage: t = timeit.Timer('2*P', 'from sage.all import EllipticCurve, GF; E = EllipticCurve([GF(101)(1),3]); P = E([-1,1,1])')\nsage: t.timeit(10000)\n1.0524919033050537\nsage: s = timeit.Timer('P+P', 'from sage.all import EllipticCurve, GF; E = EllipticCurve([GF(101)(1),3]); P = E([-1,1,1])')\nsage: s.timeit(10000)\n1.067209005355835\n```\n",
     "created_at": "2007-08-29T02:05:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/59",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-315",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/59#issuecomment-314",
+    "user": "https://github.com/williamstein"
 }
 ```
 

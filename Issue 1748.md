@@ -6,15 +6,14 @@ archive/issues_001748.json:
     "body": "Assignee: @williamstein\n\nFrom the thread in gg:sage-devel: Enthought mayavi2 as a library\n\n\n```\nMy question: Is there a better way to pass the argument \"-wthread\" to ipython?\nAnd than run the real sage.\n\nWhat I do is a kind of cheating: ipython comes back with the prompt\nsage:\n\nSo it looks like sage but it isn't.\n\nJaap\n\n```\n\n\n\n\n```\nYes, the issue is really that I explained myself poorly to Jaap.  He's running\n\nimport IPython\nIPython.Shell.IPShellWX().mainloop()\n\nInside an already started Sage session.  But at the exit of that\nmainloop(), ipython will tear down the threading support (absolutely\nnecessary for WX to work without blocking the interactive console).\nThat mainloop is hooked into the WX event loop, so it can't really be\nrestarted.\n\nThe solution is to have Sage start ipython with the wthread option, if\nyou want full Sage support.  As a starter, you can test this. Make a\nlittle file that's simply\n\n#!/path/to/sage/python\nimport IPython\nIPython.Shell.IPShellWX().mainloop()\n\n\nmake it executable, and run it *standalone* in a sage-sh configured\nshell.  This standalone ipython is equivalent to running\n\nipython -wthread\n\nand will simply exit at the end.  If that works and closes without\ncrashing, then someone more familiar than myself with how sage starts\nitself can then offer an option for sage to fire up ipython with\n'-wthread' at startup.  This will ensure that the threads cleanup only\nhappens when sage itself exits, not in the middle of the enclosing\nSage session.\n\nMy originally incomplete explanation led Jaap to have a main event\nloop inside another one.  That's always bad news.\n\nI hope this is now clearer.\n\nCheers,\n\nf\n\n```\n\n\nThis worked for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1748\n\n",
     "created_at": "2008-01-10T15:14:41Z",
     "labels": [
-        "user interface",
-        "minor",
-        "enhancement"
+        "component: user interface",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Passing the ipython argument '-wthread' at startup",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1748",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: @williamstein
@@ -93,15 +92,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1748
 
 ---
 
-archive/issue_comments_011037.json:
+archive/issue_comments_011010.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to cwitty.",
     "created_at": "2008-03-01T01:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11037",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11010",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing assignee from @williamstein to cwitty.
 
 ---
 
-archive/issue_comments_011038.json:
+archive/issue_comments_011011.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-01T01:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11038",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11011",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -129,15 +128,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_011039.json:
+archive/issue_comments_011012.json:
 ```json
 {
     "body": "I can think of a couple of ways to handle this.  One is for sage (specifically, the sage-sage script) to automatically detect whether wxPython has been installed, and if so, automatically start ipython with the -wthread argument.  Another is to have \"sage -wthread\" pass the thread argument on to ipython.\n\nI'm willing to create either of these patches.  I would prefer the former, just because it's simpler for the user, as long as the -wthread argument has no bad side effects.  I've been running with -wthread myself for a few weeks now (hardcoded by editing sage-sage to add -wthread unconditionally), and have noticed no problems; but that's just one user and one machine.\n\nAny thoughts on which option is better?",
     "created_at": "2008-03-01T01:35:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11039",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11012",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -151,15 +150,15 @@ Any thoughts on which option is better?
 
 ---
 
-archive/issue_comments_011040.json:
+archive/issue_comments_011013.json:
 ```json
 {
     "body": "Attachment [trac1748-wthread.patch](tarball://root/attachments/some-uuid/ticket1748/trac1748-wthread.patch) by cwitty created at 2008-03-01 20:00:56",
     "created_at": "2008-03-01T20:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11040",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11013",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -169,15 +168,15 @@ Attachment [trac1748-wthread.patch](tarball://root/attachments/some-uuid/ticket1
 
 ---
 
-archive/issue_comments_011041.json:
+archive/issue_comments_011014.json:
 ```json
 {
     "body": "This patch makes \"sage -wthread\" pass the -wthread argument to ipython.  (It also adds support for -gthread, -qthread, -q4thread, and -pylab.)",
     "created_at": "2008-03-01T20:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11041",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11014",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -187,15 +186,15 @@ This patch makes "sage -wthread" pass the -wthread argument to ipython.  (It als
 
 ---
 
-archive/issue_comments_011042.json:
+archive/issue_comments_011015.json:
 ```json
 {
     "body": "Patch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-01T21:28:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11042",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11015",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -209,15 +208,15 @@ Michael
 
 ---
 
-archive/issue_comments_011043.json:
+archive/issue_comments_011016.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-01T21:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11043",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11016",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -227,15 +226,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011044.json:
+archive/issue_comments_011017.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc1",
     "created_at": "2008-03-01T21:29:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1748",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11044",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1748#issuecomment-11017",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

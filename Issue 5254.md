@@ -6,7 +6,7 @@ archive/issues_005254.json:
     "body": "Assignee: mabshoff\n\nCC:  @mwhansen\n\nFrom \n\nWhen starting Sage right after copying it over from the dmg Maxima as well as clisp do not work. After quitting a manual start triggers the rewrite:\n\n```\nSprocketer:sage michaelabshoff$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nThe SAGE install tree may have moved.\nRegenerating Python.pyo and .pyc files that hardcode the install PATH (please wait at\nmost a few minutes)...\nDo not interrupt this.\n```\n\nThen Maxima as well as clisp work:\n\n```\nsage: !maxima\nMaxima 5.16.3 http://maxima.sourceforge.net\nUsing Lisp CLISP 2.46 (2008-07-02)\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) 2+2;\n(%o1)                                  4\n(%i2) \nsage: !clisp\n  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo\n  I I I I I I I      8     8   8           8     8     o  8    8\n  I  \\ `+' /  I      8         8           8     8        8    8\n   \\  `-+-'  /       8         8           8      ooooo   8oooo\n    `-__|__-'        8         8           8           8  8\n        |            8     o   8           8     o     8  8\n  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8\n| Sage Version 3.3.rc0, Release Date: 2009-02-11                     |\n| Type notebook() for the GUI, and license() for information.        |\nWelcome to GNU CLISP 2.46 (2008-07-02) <http://clisp.cons.org/>\n\nCopyright (c) Bruno Haible, Michael Stoll 1992, 1993\nCopyright (c) Bruno Haible, Marcus Daniels 1994-1997\nCopyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998\nCopyright (c) Bruno Haible, Sam Steingold 1999-2000\nCopyright (c) Sam Steingold, Bruno Haible 2001-2008\n\nType :h and hit Enter for context help.\n\n[1]> \nBye.\nsage: \nExiting SAGE (CPU time 0m0.12s, Wall time 0m21.46s).\nSprocketer:sage michaelabshoff$ \n```\n\n\nChange the logic of the Sage startup script to trigger the relocation script in case Sage has moved. \n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5254\n\n",
     "created_at": "2009-02-13T10:32:41Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005254.json:
     "title": "Mac app bundle: check for relocation at startup since the bundle version does not trigger the move check",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5254",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -89,15 +89,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5254
 
 ---
 
-archive/issue_comments_040314.json:
+archive/issue_comments_040235.json:
 ```json
 {
     "body": "replaces the file \"script\" under $SAGE_APP_ROOT/Contents/Resources/",
     "created_at": "2009-02-15T09:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40314",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40235",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -107,15 +107,15 @@ replaces the file "script" under $SAGE_APP_ROOT/Contents/Resources/
 
 ---
 
-archive/issue_comments_040315.json:
+archive/issue_comments_040236.json:
 ```json
 {
     "body": "Attachment [trac_5254_Contents_Resources_script](tarball://root/attachments/some-uuid/ticket5254/trac_5254_Contents_Resources_script) by GeorgSWeber created at 2009-02-15 10:01:17\n\nHi Michael,\n\nI couldn't trigger the Maxima failure (don't know why), but I could see that the Sage app bundle's \"/local/lib/sage-current-location.txt\" wasn't updated as it should. The new script I attached does fix this and should handle environmental settings cleaner on a broader scale. I didn't know where you want me to put it (certainly not inside some \"tar.gz\"), so I uploaded it plain as-is.\n\nYou said in sage-devel (Google thread) that you had a fix for dir names with spaces -- I don't see where, but anyway that fix of yours should apply as before.\n\nOne important thing I noted: The README.txt in the .dmg dates from Sage 2.9.2 and should definiteley either be updated, or killed. Probably you have to adjust sage-sdist and sage-bdist a bit to stop remnants of this (e.g. \"$SAGE_ROOT/sage-README-osx.txt\") from lurking around.\n\nOne other thing:\n\n+1 to your idea to name the app bundle \"Sage.x.y.z\" instead of \"Sage\". What do you think of putting in the name also the dependency \"Intel vs. PPC\" resp. \"32Bit vs. 64Bit\"? (It's not a \"universal binary\" we deliver, do we?)\n\nCheers, gsw",
     "created_at": "2009-02-15T10:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40315",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40236",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -139,15 +139,15 @@ Cheers, gsw
 
 ---
 
-archive/issue_comments_040316.json:
+archive/issue_comments_040237.json:
 ```json
 {
     "body": "Replying to [comment:1 GeorgSWeber]:\n> Hi Michael,\n\nHi Georg,\n\n> I couldn't trigger the Maxima failure (don't know why),\n\nThe original poster in that thread had some other issues, too, but I could certainly hit it when I used a dmg build on another box where my home directory was different. If the original Sage build is still in place it should \"just work\" since the old install is being picked up.\n\n> but I could see that the Sage app bundle's \"/local/lib/sage-current-location.txt\" wasn't updated as it should. The new script I attached does fix this and should handle environmental settings cleaner on a broader scale. I didn't know where you want me to put it (certainly not inside some \"tar.gz\"), so I uploaded it plain as-is.\n\nCool.\n\n> You said in sage-devel (Google thread) that you had a fix for dir names with spaces -- I don't see where, but anyway that fix of yours should apply as before.\n\nThe fix isn't up yet and it is mostly in the \"I think I know how to fix this stage\", so no tested code yet. Notice that at #5261 there are all the other issues I would like to sort out.\n\n> One important thing I noted: The README.txt in the .dmg dates from Sage 2.9.2 and should definiteley either be updated, or killed. Probably you have to adjust sage-sdist and sage-bdist a bit to stop remnants of this (e.g. \"$SAGE_ROOT/sage-README-osx.txt\") from lurking around.\n\nOk, please open a critical ticket against 3.3 to update the OSX readme. \n\n> One other thing:\n> \n> +1 to your idea to name the app bundle \"Sage.x.y.z\" instead of \"Sage\". What do you think of putting in the name also the dependency \"Intel vs. PPC\" resp. \"32Bit vs. 64Bit\"? (It's not a \"universal binary\" we deliver, do we?)\n\nYep, please add that as a comment to #5261 so it doesn't get lost. We don't do universal since there are issues with the build all over the place, i.e. gmp doesn't support it. MPIR might at some point in the future, but that leaves other issues to be fixed. \n\nI can imagine to fix this in three ways: \n\n* Make everything build universal by adjusting and fixing all build systems in Sage's spkg (giant amount of work)\n* use lipo to join all binaries and libraries after building them locally (I have played with this)\n* add a wrapper script that starts the appropriate sage since we could have sage-x86, sage-x86-64, sage-ppc and sage-ppc64 sitting inside the DMG all in parallel. This causes its own set of issues (how do you upgrade something like that? Will people download the 1.2GB?), but if there is interest given that we now have the DMG + App bundle in place this would be the quickest way to get a universal binary going (Once we have fixed the last couple pesky bugs for 64 bit OSX support :)\n \nAnyway, if you feel this point warrants discussion and/or interest please open a new thread on sage-devel.\n\n> Cheers, gsw\n\nThanks for fixing this, I am *swamped* :)\n\nCheers,\n\nMichael",
     "created_at": "2009-02-15T10:49:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40316",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40237",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -198,15 +198,15 @@ Michael
 
 ---
 
-archive/issue_comments_040317.json:
+archive/issue_comments_040238.json:
 ```json
 {
     "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-01T02:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40317",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40238",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -220,15 +220,15 @@ Michael
 
 ---
 
-archive/issue_comments_040318.json:
+archive/issue_comments_040239.json:
 ```json
 {
     "body": "I found the following while testing this:\n\n1) lisp.run crashes each time I quit Sage.app (I don't think the crash is related to the script; just mentioning it).\n\n2) The app can be repeatedly run and maxima exits and restarts as appropriate, with no apparent issues.  This is good.\n\n3) The script is run each time Sage.app starts.  The script should only be run if the .app has been moved, correct?\n\nSee #5261 for related issues, and coordinate this (which should be a true patch) with fixes for that Trac report.",
     "created_at": "2009-03-16T04:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40318",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40239",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -246,15 +246,15 @@ See #5261 for related issues, and coordinate this (which should be a true patch)
 
 ---
 
-archive/issue_comments_040319.json:
+archive/issue_comments_040240.json:
 ```json
 {
     "body": "Hi Justin, thanks for the comments!\n\nHaving slept over them, I feel a bit at a loss, however:\n\n1, 2) I have seen \"lisp.run\" threads (via the OS X \"activity monitor\") only during doctests, or when Maxima was somehow started explicitly or implicitly during a Sage session. I have no clue how the \"app\" mechanism is related to the crashes you see. Perhaps an \"exit\" command at the end of the script might help, but this is wild guessing, and right now I don't have the time to poke around.\n\n3) Incorrect. The script itself is the \"app\" script that starts Sage up, so has to be called itself every time. And as for checking whether the Sage app has moved, we have to call the \"sage-location\" script every time, too --- or double somehow its content. How should we know that the Sage app has moved without checking whether it has moved? And checking this is exactly what the \"sage-location\" script does, so there. (Why reinvent the wheel?)",
     "created_at": "2009-03-17T22:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40319",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40240",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -270,15 +270,15 @@ Having slept over them, I feel a bit at a loss, however:
 
 ---
 
-archive/issue_comments_040320.json:
+archive/issue_comments_040241.json:
 ```json
 {
     "body": "These changes were incorporated into #5261.\n\nI haven't been able to reproduce the lisp.run crashes.",
     "created_at": "2009-11-28T09:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40320",
-    "user": "@gvol"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40241",
+    "user": "https://github.com/gvol"
 }
 ```
 
@@ -290,15 +290,15 @@ I haven't been able to reproduce the lisp.run crashes.
 
 ---
 
-archive/issue_comments_040321.json:
+archive/issue_comments_040242.json:
 ```json
 {
     "body": "I recommend this ticket be closed.  #5261 and #7546 do take care of the other issues, or at the very least are responsible for them (I'm almost done reviewing them on two different Mac platforms).",
     "created_at": "2009-12-08T15:24:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40321",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40242",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -308,15 +308,15 @@ I recommend this ticket be closed.  #5261 and #7546 do take care of the other is
 
 ---
 
-archive/issue_comments_040322.json:
+archive/issue_comments_040243.json:
 ```json
 {
     "body": "Sounds good to me.",
     "created_at": "2009-12-08T17:12:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40322",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40243",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -326,15 +326,15 @@ Sounds good to me.
 
 ---
 
-archive/issue_comments_040323.json:
+archive/issue_comments_040244.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-12-08T17:12:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5254",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40323",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5254#issuecomment-40244",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

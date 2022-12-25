@@ -6,15 +6,14 @@ archive/issues_008105.json:
     "body": "Assignee: tbd\n\nCC:  @jasongrout @dandrake @jhpalmieri @robert-marik @kcrisman\n\nThis is an experimental process for converting Latex documents into Sage worksheets.\n\nAttached archive contains code, configuration files, templates and hints to begin using the system.  See README.txt to get started.\n\nOver time, this should get easier through automation of some of the tasks, and more general with cross-worksheet linking.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8105\n\n",
     "created_at": "2010-01-28T04:55:08Z",
     "labels": [
-        "packages: experimental",
-        "minor",
-        "enhancement"
+        "component: packages: experimental",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "LaTex to Sage worksheet conversion system",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8105",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: tbd
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8105
 
 ---
 
-archive/issue_comments_071116.json:
+archive/issue_comments_070995.json:
 ```json
 {
     "body": "Attachment [latex2sage-20100127.tar.gz](tarball://root/attachments/some-uuid/ticket8105/latex2sage-20100127.tar.gz) by @rbeezer created at 2010-01-28 06:43:02\n\nCode like the following, added to the Python script, will automate the cut/paste final step, producing a Sage worksheet as the final output.  (Ignore the line outputting W's cells.)\n\nNote that the `.edit_save()` method needs a title as the first line of the string, and this clobbers the title given in the initialization.\n\n\n```\nsage: nb = sage.server.notebook.notebook.Notebook(\"/tmp\")\nsage: W = nb.create_new_worksheet('A Weird Worksheet', 'admin')\nsage: W.edit_save('Weirder Title\\n`2+3\\n///\\n5\\n`')\nsage: W\n[Cell 0; in=2+3, out=\n5]\nsage: nb.export_worksheet(W.filename(), \"/tmp/weird.sws\", verbose=False)\nsage: nb.delete()\n```\n",
     "created_at": "2010-01-28T06:43:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71116",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-70995",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -70,15 +69,15 @@ sage: nb.delete()
 
 ---
 
-archive/issue_comments_071117.json:
+archive/issue_comments_070996.json:
 ```json
 {
     "body": "This is nice! It worked on the example file.\n\nNow you should put that stuff into Mercurial and put it up on bitbucket.org so Jason and I can hack on it and send you patches. :)\n\nI am guessing that you'd like this to eventually be an optional spkg, which might let the user do something like\n\n```\nsage -tex2sws foo.tex\n```\n\nwhich would spit out a proper .sws file. Sound right?",
     "created_at": "2010-01-28T09:00:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71117",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-70996",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -98,15 +97,15 @@ which would spit out a proper .sws file. Sound right?
 
 ---
 
-archive/issue_comments_071118.json:
+archive/issue_comments_070997.json:
 ```json
 {
     "body": "Attachment [tex2sws-20100129.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100129.tar.gz) by @rbeezer created at 2010-01-30 07:13:05\n\nThe notebook code above works for the *old* notebook.  But I've added the right code for the *new* notebook and have the script creating an sws file as output.\n\nSo there are now just two inputs to the script (see the README), and one less manual step, but at the small cost that you now need Sage in your path.  Though one could install the new notebook locally and have the script run as pure Python rather than within Sage.\n\nThere's now a Mercurial repo in the archive, and I'll work on a bitbucket site soon.",
     "created_at": "2010-01-30T07:13:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71118",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-70997",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -122,15 +121,15 @@ There's now a Mercurial repo in the archive, and I'll work on a bitbucket site s
 
 ---
 
-archive/issue_comments_071119.json:
+archive/issue_comments_070998.json:
 ```json
 {
     "body": "Dan,\n\nThanks for the testing!  Yes, some sort of optional package that allows for a simple one-step conversion should be the eventual goal.  Next step will be to hack up something that will allow for cross-worksheet links to work and try to convert something book-length.\n\nCan you tell me what you used for the tex4ht routines?  Custom install, or something provided by a distribution?  Either answer will be interesting.  Thanks.\n\nRob\n\nReplying to [comment:2 ddrake]:\n> This is nice! It worked on the example file.\n> \n> Now you should put that stuff into Mercurial and put it up on bitbucket.org so Jason and I can hack on it and send you patches. :)\n> \n> I am guessing that you'd like this to eventually be an optional spkg, which might let the user do something like\n> {{{\n> sage -tex2sws foo.tex\n> }}}\n> which would spit out a proper .sws file. Sound right?",
     "created_at": "2010-01-30T07:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71119",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-70998",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -157,15 +156,15 @@ Replying to [comment:2 ddrake]:
 
 ---
 
-archive/issue_comments_071120.json:
+archive/issue_comments_070999.json:
 ```json
 {
     "body": "Replying to [comment:4 rbeezer]:\n> Can you tell me what you used for the tex4ht routines?  Custom install, or something provided by a distribution?  Either answer will be interesting.  Thanks.\n\nI have TeXLive 2009 installed, separately from the Ubuntu package manager. TeXLive includes its own little package manager (\"tlmgr\") and I used that to install tex4ht -- I just searched for it, and hit \"install\".",
     "created_at": "2010-01-30T14:54:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71120",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-70999",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -178,15 +177,15 @@ I have TeXLive 2009 installed, separately from the Ubuntu package manager. TeXLi
 
 ---
 
-archive/issue_comments_071121.json:
+archive/issue_comments_071000.json:
 ```json
 {
     "body": "Changing assignee from tbd to @rbeezer.",
     "created_at": "2010-01-31T01:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71121",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71000",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -196,15 +195,15 @@ Changing assignee from tbd to @rbeezer.
 
 ---
 
-archive/issue_comments_071122.json:
+archive/issue_comments_071001.json:
 ```json
 {
     "body": "I've built a wiki page with some examples and I'll put code up at bitbucket soon.\n\nThe third example on the wiki page shows some odd behavior if anybody is interested in current roadblocks.\n\nhttp://wiki.sagemath.org/devel/LatexToWorksheet",
     "created_at": "2010-01-31T01:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71122",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71001",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -218,15 +217,15 @@ http://wiki.sagemath.org/devel/LatexToWorksheet
 
 ---
 
-archive/issue_comments_071123.json:
+archive/issue_comments_071002.json:
 ```json
 {
     "body": "Nice idea, thanks.\n\nThe oposite sws -> LaTeX conversion can be done with [sws2tex](http://bitbucket.org/whuss/sws2tex/), see [example](http://user.mendelu.cz/marik/sage/skolka.pdf).",
     "created_at": "2010-01-31T23:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71123",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71002",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -238,15 +237,15 @@ The oposite sws -> LaTeX conversion can be done with [sws2tex](http://bitbucket.
 
 ---
 
-archive/issue_comments_071124.json:
+archive/issue_comments_071003.json:
 ```json
 {
     "body": "Attachment [tex2sws-20100131.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100131.tar.gz) by @rbeezer created at 2010-02-01 05:09:02",
     "created_at": "2010-02-01T05:09:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71124",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71003",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -256,15 +255,15 @@ Attachment [tex2sws-20100131.tar.gz](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_071125.json:
+archive/issue_comments_071004.json:
 ```json
 {
     "body": "Hi Robert,\n\nThanks for the reminder, I'd forgotten about that.  I added these links to the wiki page I have going.\n\nRob\n\nReplying to [comment:9 robert.marik]:\n> The oposite sws -> LaTeX conversion can be done with [sws2tex](http://bitbucket.org/whuss/sws2tex/), see [example](http://user.mendelu.cz/marik/sage/skolka.pdf).",
     "created_at": "2010-02-01T05:10:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71125",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71004",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -281,15 +280,15 @@ Replying to [comment:9 robert.marik]:
 
 ---
 
-archive/issue_comments_071126.json:
+archive/issue_comments_071005.json:
 ```json
 {
     "body": "I've got graphics written in tikz being converted to SVG by tex4ht and then the custom conversion script puts them in the data directory of the worksheet.  However, while the worksheet *looks* good, the Javascript (or something) is not working and the code cells will not evaluate (even though this works in other examples).  But progress nonetheless.",
     "created_at": "2010-02-01T05:18:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71126",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71005",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -299,15 +298,15 @@ I've got graphics written in tikz being converted to SVG by tex4ht and then the 
 
 ---
 
-archive/issue_comments_071127.json:
+archive/issue_comments_071006.json:
 ```json
 {
     "body": "the version which does not replace \\infty etc. by unicode characters",
     "created_at": "2010-02-01T14:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71127",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71006",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -317,15 +316,15 @@ the version which does not replace \infty etc. by unicode characters
 
 ---
 
-archive/issue_comments_071128.json:
+archive/issue_comments_071007.json:
 ```json
 {
     "body": "Attachment [tex4ht-sage.cfg](tarball://root/attachments/some-uuid/ticket8105/tex4ht-sage.cfg) by @robert-marik created at 2010-02-01 14:22:26\n\nI looked briefly at the converter. Two ideas: \n\n* \\infty and other characters are replaced by unicode characters. I fixed this few years before using \\HCode command, see the attached tex4ht-sage.cfg file. Another solution has been suggested by [Eitan Gurari](http://groups.google.cz/group/comp.text.tex/browse_thread/thread/221b01a29dc59745/f16d44bca4d0f20a). I remember that when I worked on my [materials](http://user.mendelu.cz/marik/mat-web/mat-web.html) (sorry for Czech language), I had to fix also align and similar enviroments. You can see my [jsmath config file](http://user.mendelu.cz/marik/latex/marik-jsmath.4ht)\n\n* $\\lim_{x\\to\\infty}$ hangs the compilation. Commenting out \\usepackage{syntax} and two following lines solves the problem - but breaks other things, of course :)",
     "created_at": "2010-02-01T14:22:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71128",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71007",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -341,15 +340,15 @@ I looked briefly at the converter. Two ideas:
 
 ---
 
-archive/issue_comments_071129.json:
+archive/issue_comments_071008.json:
 ```json
 {
     "body": "Replying to [comment:12 robert.marik]:\n> * $\\lim_{x\\to\\infty}$ hangs the compilation. Commenting out \\usepackage{syntax} and two following lines solves the problem - but breaks other things, of course :)\n\nthis second problem seems to be limited to older installations of TeX, texlive2009 works fine.",
     "created_at": "2010-02-01T15:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71129",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71008",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -362,15 +361,15 @@ this second problem seems to be limited to older installations of TeX, texlive20
 
 ---
 
-archive/issue_comments_071130.json:
+archive/issue_comments_071009.json:
 ```json
 {
     "body": "Attachment [tex2sws-20100203.tar.gz](tarball://root/attachments/some-uuid/ticket8105/tex2sws-20100203.tar.gz) by @rbeezer created at 2010-02-04 05:26:50",
     "created_at": "2010-02-04T05:26:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71130",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71009",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -380,15 +379,15 @@ Attachment [tex2sws-20100203.tar.gz](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_071131.json:
+archive/issue_comments_071010.json:
 ```json
 {
     "body": "Begin with latex source that includes tikz graphics, use the tools here, and the graphics become SVG files that are included in the data directory of the worksheet.  My problems with this earlier were due to a stray newline in the title.  See the wiki page for the working example and source.",
     "created_at": "2010-02-04T05:29:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71131",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71010",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -398,15 +397,15 @@ Begin with latex source that includes tikz graphics, use the tools here, and the
 
 ---
 
-archive/issue_comments_071132.json:
+archive/issue_comments_071011.json:
 ```json
 {
     "body": "Replying to [comment:13 robert.marik]:\n> this second problem seems to be limited to older installations of TeX, texlive2009 works fine.\n\nHi Robert,\n\nThanks for testing this out.  I've been basically using tex4ht from source, for the reasons you mentioned above.\n\nMy current example uses some tkz-graph code, which builds on the tikz package.\n\ntex4ht complains about some of this code (which I do not think is a surprise since I have no reason to believe tex4ht has any extra support for tkz-graph)\n\n\n```\nl.197 --- TeX4ht warning --- missing \\Configure{HColor}{col_lab_a11}{...} (in LaTeX: rgb 0 0 0) --- \n```\n\n\nthis is tkz-graph code to color a vertex label (I think).  I get garbage in the CSS file produced by tex4ht, but everything seems to work - but the labels are absent from the SVG graphics meant for the worksheet.\n\nDo you have lots of experience configuring tex4ht?  It seems a bit of a black art to me sometimes.\n\nRob",
     "created_at": "2010-02-04T05:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71132",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71011",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -437,15 +436,15 @@ Rob
 
 ---
 
-archive/issue_comments_071133.json:
+archive/issue_comments_071012.json:
 ```json
 {
     "body": "I've updated this considerably over the weekend.  Wiki page now contains my entire linear algebra book as a tar archive of linked worksheets.  There are instructions for creating a scratch notebook and inserting these worksheets into this notebook.\n\nThe bitbucket repository is updated, the README.txt is updated and the calling command has changed.  This is now reasonably stable for converting to a single worksheet as an sws file.  Multiple worksheets is still experimental since there is no notebook support.\n\nI'm going to stop posting snapshots here on the assumption that folks can clone and pull from the bitbucket repo - correct me if that is wrong.\n\nI'll probably get a general announcement out later today, and ship Robert an example of the tkz-graph code.\n\nAny testing would be appreciated.  Thanks for everybody's interest.\n\nRob",
     "created_at": "2010-02-07T23:30:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71133",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71012",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -465,15 +464,15 @@ Rob
 
 ---
 
-archive/issue_comments_071134.json:
+archive/issue_comments_071013.json:
 ```json
 {
     "body": "Attachment [mini-graph.tex](tarball://root/attachments/some-uuid/ticket8105/mini-graph.tex) by @rbeezer created at 2010-02-08 03:11:06\n\ntkz-graph example unrecognized by tex4ht",
     "created_at": "2010-02-08T03:11:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71134",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71013",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -485,15 +484,15 @@ tkz-graph example unrecognized by tex4ht
 
 ---
 
-archive/issue_comments_071135.json:
+archive/issue_comments_071014.json:
 ```json
 {
     "body": "Robert,\n\nI've posted on the ticket a small example of a combinatorial graph that htlatex complains about, though it does produce a legitimate HTML file and an SVG graphic, though lacking vertex labels.  The calling command is in a comment in the file.  You'll see three complaints, one per vertex, then repeated on each of the three passes.\n\nIf you flip the \"worksheet\" switch it should produce a good PDF version.\n\nLearning how to configure tex4ht to handle this sort of thing would be real helpful.  Thanks for offering to look at this.\n\nRob",
     "created_at": "2010-02-08T03:16:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71135",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71014",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -511,15 +510,15 @@ Rob
 
 ---
 
-archive/issue_comments_071136.json:
+archive/issue_comments_071015.json:
 ```json
 {
     "body": "Rob, \n\nI sent you the answer to your email. In short: disable \n\n```\n\\SetVertexNoLabel\n```\n\nFor example, adding something like \n\n```\n\\let\\SetVertexNoLabel\\relax\n```\n\nnear the end of preamble helps. \n\nAdding the same to the config file for tex4ht should help as well (config fie not tested).\n\nI wonder, if it is possible to check Typeset button and execute all cells in worksheet before saving into sws file.",
     "created_at": "2010-02-09T18:53:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71136",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71015",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -547,15 +546,15 @@ I wonder, if it is possible to check Typeset button and execute all cells in wor
 
 ---
 
-archive/issue_comments_071137.json:
+archive/issue_comments_071016.json:
 ```json
 {
     "body": "Concerning Typeset button and my previous message:\n\n```\nW.set_pretty_print('true')\n```\n\nprobably [does](http://www.sagemath.org/doc/reference/sagenb/notebook/worksheet.html#sagenb.notebook.worksheet.Worksheet.set_pretty_print) the magic.\n\nI asked about evaluating all cells in sagenb [forum](http://groups.google.cz/group/sage-notebook/browse_thread/thread/649c845f39a0a528#)",
     "created_at": "2010-02-10T10:32:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71137",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71016",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -573,15 +572,15 @@ I asked about evaluating all cells in sagenb [forum](http://groups.google.cz/gro
 
 ---
 
-archive/issue_comments_071138.json:
+archive/issue_comments_071017.json:
 ```json
 {
     "body": "New [tex4ht-sage.cfg](http://user.mendelu.cz/marik/sage/tex4ht-sage.cfg) file\n\nWith this file the input is the same as for SageTeX. See\n[example.tex](http://user.mendelu.cz/marik/sage/example.tex) (from SageTeX distribution, fixed only some whitespaces), [PDF](http://user.mendelu.cz/marik/sage/example.pdf) produced by pdflatex and [sws](http://user.mendelu.cz/marik/sage/example.sws) produced by \n\n```\nlatex -interaction=nonstopmode example\nsage example.sage\nhtlatex example.tex \"tex4ht-sage.cfg\"\n./tex2sws.py\n```\n\nYou get input fileds from commands like \\sage{},  \\sagestr{}, \\sageplot{}. You get also dolars as delimiters for inline math.",
     "created_at": "2010-02-17T22:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71138",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71017",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -603,15 +602,15 @@ You get input fileds from commands like \sage{},  \sagestr{}, \sageplot{}. You g
 
 ---
 
-archive/issue_comments_071139.json:
+archive/issue_comments_071018.json:
 ```json
 {
     "body": "Using the attached file jsmath-noexpand.4ht and adding \\input{jsmath-noexpand.4ht} to tex4ht-sage.cfg prevents TeX4ht to replace expressions like \\int or \\alpha by unicode characters and functions like \\cos remain intact and are not replaced by \\mathop{cos}. \n\nAll this gives better rendering in the browser.",
     "created_at": "2010-02-20T21:35:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71139",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71018",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -623,15 +622,15 @@ All this gives better rendering in the browser.
 
 ---
 
-archive/issue_comments_071140.json:
+archive/issue_comments_071019.json:
 ```json
 {
     "body": "Attachment [jsmath-noexpand.4ht](tarball://root/attachments/some-uuid/ticket8105/jsmath-noexpand.4ht) by @robert-marik created at 2010-02-20 21:37:02",
     "created_at": "2010-02-20T21:37:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71140",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71019",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -641,15 +640,15 @@ Attachment [jsmath-noexpand.4ht](tarball://root/attachments/some-uuid/ticket8105
 
 ---
 
-archive/issue_comments_071141.json:
+archive/issue_comments_071020.json:
 ```json
 {
     "body": "Replying to [comment:21 robert.marik]:\n> Using the attached file jsmath-noexpand.4ht and adding \\input{jsmath-noexpand.4ht} to tex4ht-sage.cfg prevents TeX4ht to replace expressions like \\int or \\alpha by unicode characters and functions like \\cos remain intact and are not replaced by \\mathop{cos}. \n> \n> All this gives better rendering in the browser.\n\nThanks, Robert.  that sounds great.  I'll try to get it incorporated later today.  I'm close to having something stable put together for others to test, and which I'll use to add a few more examples to the wiki.\n\nRob",
     "created_at": "2010-02-20T21:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71141",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71020",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -666,15 +665,15 @@ Rob
 
 ---
 
-archive/issue_comments_071142.json:
+archive/issue_comments_071021.json:
 ```json
 {
     "body": "Recent changes:\n\n(1) Command-line switches, so conversion is not restricted to working directory.\n\n(2) Support for SageTeX (by Robert Marik, very impressive).\n\n(3) Better support for more graphic types.\n\n(4) A pure Python script for greater portability and faster startup.\n\nThis should work quite well now for converting article-length latex docs into Sage worksheets.  Multi-section documents (books) are probably busted at the moment due to making single worksheets work better, but it'll come back.\n\nRob",
     "created_at": "2010-02-28T06:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71142",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71021",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -696,15 +695,15 @@ Rob
 
 ---
 
-archive/issue_comments_071143.json:
+archive/issue_comments_071022.json:
 ```json
 {
     "body": "Hey Rob - I note that you kept working on this until 2011/12.  Think it's ready for inclusion in Sage proper, given that you've moved on to the XML stuff?",
     "created_at": "2014-09-18T16:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71143",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71022",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -714,15 +713,15 @@ Hey Rob - I note that you kept working on this until 2011/12.  Think it's ready 
 
 ---
 
-archive/issue_comments_071144.json:
+archive/issue_comments_071023.json:
 ```json
 {
     "body": "See #17473 about sws2tex.",
     "created_at": "2014-12-09T02:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8105",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71144",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8105#issuecomment-71023",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

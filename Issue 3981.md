@@ -6,7 +6,7 @@ archive/issues_003981.json:
     "body": "Assignee: @cswiercz\n\nCC:  @cswiercz\n\nKeywords: finance\n\nA candlestick plot is a nice way of visualizing open, high, low, and close stock information over intervals in a time series. The attached patch adds the method TimeSeries.plot_candlestick(bins) to do exactly that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3981\n\n",
     "created_at": "2008-08-28T23:12:46Z",
     "labels": [
-        "finance",
+        "component: finance",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003981.json:
     "title": "finance.TimeSeries - Add candlestick plot method.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3981",
-    "user": "@cswiercz"
+    "user": "https://github.com/cswiercz"
 }
 ```
 Assignee: @cswiercz
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3981
 
 ---
 
-archive/issue_comments_028635.json:
+archive/issue_comments_028577.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-08-29T17:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28635",
-    "user": "@cswiercz"
+    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28577",
+    "user": "https://github.com/cswiercz"
 }
 ```
 
@@ -51,15 +51,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_028636.json:
+archive/issue_comments_028578.json:
 ```json
 {
     "body": "Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sage-3981.patch) by @cswiercz created at 2008-08-29 17:14:41",
     "created_at": "2008-08-29T17:14:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28636",
-    "user": "@cswiercz"
+    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28578",
+    "user": "https://github.com/cswiercz"
 }
 ```
 
@@ -69,15 +69,15 @@ Attachment [sage-3981.patch](tarball://root/attachments/some-uuid/ticket3981/sag
 
 ---
 
-archive/issue_comments_028637.json:
+archive/issue_comments_028579.json:
 ```json
 {
     "body": "Attachment [trac_3981-2.patch](tarball://root/attachments/some-uuid/ticket3981/trac_3981-2.patch) by @mwhansen created at 2008-09-18 23:56:57",
     "created_at": "2008-09-18T23:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28637",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28579",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -87,15 +87,15 @@ Attachment [trac_3981-2.patch](tarball://root/attachments/some-uuid/ticket3981/t
 
 ---
 
-archive/issue_comments_028638.json:
+archive/issue_comments_028580.json:
 ```json
 {
     "body": "Looks good to me.  I added a patch which does a few tiny cleanups.  Apply both patches.",
     "created_at": "2008-09-18T23:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28638",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28580",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -105,15 +105,15 @@ Looks good to me.  I added a patch which does a few tiny cleanups.  Apply both p
 
 ---
 
-archive/issue_comments_028639.json:
+archive/issue_comments_028581.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-19T03:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28639",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -123,15 +123,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028640.json:
+archive/issue_comments_028582.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.1.3.alpha0",
     "created_at": "2008-09-19T03:13:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3981",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28640",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3981#issuecomment-28582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

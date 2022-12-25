@@ -6,15 +6,14 @@ archive/issues_000563.json:
     "body": "Assignee: mabshoff\n\nHello folks,\n\n```\nfor n in range(10,100): a=ModularSymbols(n,sign=1).decomposition(); print n, get_memory_usage()\n```\n\ncauses (among other things) the following:\n\n```\n==5107== 684,128 (349,720 direct, 334,408 indirect) bytes in 1,249 blocks are definitely lost in loss record 2,897 of 2,944\n==5107==    at 0x4A06019: operator new(unsigned long) (vg_replace_malloc.c:167)\n==5107==    by 0x1FA16467: LinBox::MatrixHom::BlasBlackboxMAP<LinBox::Modular<double>, LinBox::DenseMatrix<LinBox::Unparamet\nricField<Integer> >, LinBox::MatrixContainerCategory::Container>::operator()(LinBox::BlasBlackbox<LinBox::Modular<double> >*\n&, LinBox::DenseMatrix<LinBox::UnparametricField<Integer> > const&, LinBox::Modular<double> const&, LinBox::MatrixContainerC\nategory::Container) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/liblinboxwrap.so.0.0.0)\n==5107==    by 0x1FA16685: void LinBox::MatrixHom::map<LinBox::Modular<double>, LinBox::DenseMatrix<LinBox::UnparametricFiel\nd<Integer> > >(LinBox::BlasBlackbox<LinBox::Modular<double> >*&, LinBox::DenseMatrix<LinBox::UnparametricField<Integer> > co\nnst&, LinBox::Modular<double> const&) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/liblinboxwrap.so.0.0.0)\n==5107==    by 0x1FA64331: LinBox::GivPolynomial<Integer>& LinBox::cia<LinBox::GivPolynomial<Integer>, LinBox::DenseMatrix<L\ninBox::UnparametricField<Integer> > >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<Integer\n> > const&, LinBox::BlasEliminationTraits const&) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/liblinboxwrap.so.0.0.0)\n==5107==    by 0x1FA64B97: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::GivPolynomial<Integer>, LinBox::DenseMat\nrix<LinBox::UnparametricField<Integer> > >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> > const&, LinBox::RingCategories::IntegerTag const&, LinBox::BlasEliminationTraits const&) (in /tmp/Work2/sage-2.8.3.\nrc3/local/lib/liblinboxwrap.so.0.0.0)\n==5107==    by 0x1FA64BD9: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::GivPolynomial<Integer>, LinBox::Unparame\ntricField<Integer>, LinBox::RingCategories::IntegerTag>(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::Unparam\netricField<Integer> > const&, LinBox::RingCategories::IntegerTag const&, LinBox::HybridSpecifier const&) (in /tmp/Work2/sage\n-2.8.3.rc3/local/lib/liblinboxwrap.so.0.0.0)\n==5107==    by 0x1FA64C0D: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> >, LinBox::GivPolynomial<Integer>, LinBox::HybridSpecifier>(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinB\nox::UnparametricField<Integer> > const&, LinBox::HybridSpecifier const&) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/liblinboxwr\nap.so.0.0.0)\n==5107==    by 0x1FA64C39: LinBox::GivPolynomial<Integer>& LinBox::charpoly<LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> >, LinBox::GivPolynomial<Integer> >(LinBox::GivPolynomial<Integer>&, LinBox::DenseMatrix<LinBox::UnparametricField<In\nteger> > const&) (in /tmp/Work2/sage-2.8.3.rc3/local/lib/liblinboxwrap.so.0.0.0)\n==5107==    by 0x1F9AF567: linbox_integer_dense_charpoly (in /tmp/Work2/sage-2.8.3.rc3/local/lib/liblinboxwrap.so.0.0.0)\n==5107==    by 0x1F6CB0F6: __pyx_f_6linbox_20Linbox_integer_dense__poly(_object*, _object*) (linbox.cpp:1124)\n==5107==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==5107==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n```\n\nThis one looks scary, too.\n\nCheers,\n\nTagged for 2.8.4\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/563\n\n",
     "created_at": "2007-09-02T00:20:13Z",
     "labels": [
-        "memleak",
-        "major",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.13",
     "title": "memleak in LinBox::MatrixHom::BlasBlackboxMAP exposed by ModularSymbols(n,sign=1).decomposition()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/563",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -77,15 +76,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/563
 
 ---
 
-archive/issue_comments_002916.json:
+archive/issue_comments_002904.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-02T00:30:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/563",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/563#issuecomment-2916",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/563#issuecomment-2904",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -95,15 +94,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002917.json:
+archive/issue_comments_002905.json:
 ```json
 {
     "body": "The issue has been fixed in LinBox by Clement Pernet, an updated spkg with the backported fix is at \n\nhttp://sage.math.washington.edu/home/mabshoff/linbox-20070915.p2.spkg\n\nCheers,\n\nMichael",
     "created_at": "2007-11-17T05:54:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/563",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/563#issuecomment-2917",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/563#issuecomment-2905",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +118,15 @@ Michael
 
 ---
 
-archive/issue_comments_002918.json:
+archive/issue_comments_002906.json:
 ```json
 {
     "body": "Merged in 2.8.13.alpha0.",
     "created_at": "2007-11-18T06:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/563",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/563#issuecomment-2918",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/563#issuecomment-2906",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +136,15 @@ Merged in 2.8.13.alpha0.
 
 ---
 
-archive/issue_comments_002919.json:
+archive/issue_comments_002907.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-18T06:06:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/563",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/563#issuecomment-2919",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/563#issuecomment-2907",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

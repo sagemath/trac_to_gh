@@ -6,15 +6,14 @@ archive/issues_006557.json:
     "body": "Assignee: @williamstein\n\n\n```\nHere are two independent Sage 4.1 sessions which demonstrate that the\nconstruction of NumberField's is context dependent:\n\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1 over its base field\n\n       sage: W1 = NumberField(x^2+1,'a')\n       sage: K.<x> = CyclotomicField(5)[]\n       sage: W.<a> = NumberField(x^2 + 1)\n       sage: W\n       Number Field in a with defining polynomial x^2 + 1\n\nIn fact:\n\n       sage: W1 is W0\n       True\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6557\n\n",
     "created_at": "2009-07-18T22:07:13Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "fix bug in number field caching",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6557",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6557
 
 ---
 
-archive/issue_comments_053467.json:
+archive/issue_comments_053367.json:
 ```json
 {
     "body": "Attachment [trac_6557.patch](tarball://root/attachments/some-uuid/ticket6557/trac_6557.patch) by @williamstein created at 2009-07-18 22:18:47",
     "created_at": "2009-07-18T22:18:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6557#issuecomment-53467",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6557#issuecomment-53367",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -68,15 +67,15 @@ Attachment [trac_6557.patch](tarball://root/attachments/some-uuid/ticket6557/tra
 
 ---
 
-archive/issue_comments_053468.json:
+archive/issue_comments_053368.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"Number fields\".",
     "created_at": "2009-07-19T12:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6557#issuecomment-53468",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6557#issuecomment-53368",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -86,15 +85,15 @@ Changing keywords from "" to "Number fields".
 
 ---
 
-archive/issue_comments_053469.json:
+archive/issue_comments_053369.json:
 ```json
 {
     "body": "Positive review.  Applies to 4.1 and all tests in sage/rings/number_fields pass.",
     "created_at": "2009-07-19T12:19:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6557#issuecomment-53469",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6557#issuecomment-53369",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -104,15 +103,15 @@ Positive review.  Applies to 4.1 and all tests in sage/rings/number_fields pass.
 
 ---
 
-archive/issue_comments_053470.json:
+archive/issue_comments_053370.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-19T14:19:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6557",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6557#issuecomment-53470",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6557#issuecomment-53370",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

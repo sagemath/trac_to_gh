@@ -6,15 +6,14 @@ archive/issues_004560.json:
     "body": "Assignee: @burcin\n\nCC:  @mwhansen\n\nThis is bad\n\n\n```\nsage: sqrt(2) in CC\nFalse\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4560\n\n",
     "created_at": "2008-11-20T01:35:11Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "SR and containment broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4560",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @burcin
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4560
 
 ---
 
-archive/issue_comments_034161.json:
+archive/issue_comments_034094.json:
 ```json
 {
     "body": "Attachment [4560](tarball://root/attachments/some-uuid/ticket4560/4560) by @roed314 created at 2009-01-23 02:47:35",
     "created_at": "2009-01-23T02:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34161",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34094",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -56,15 +55,15 @@ Attachment [4560](tarball://root/attachments/some-uuid/ticket4560/4560) by @roed
 
 ---
 
-archive/issue_comments_034162.json:
+archive/issue_comments_034095.json:
 ```json
 {
     "body": "Though seeing `SymbolicEquation` in parent.pyx is very scary at first, this is a good solution. :)",
     "created_at": "2009-01-23T08:00:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34162",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34095",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -74,15 +73,15 @@ Though seeing `SymbolicEquation` in parent.pyx is very scary at first, this is a
 
 ---
 
-archive/issue_comments_034163.json:
+archive/issue_comments_034096.json:
 ```json
 {
     "body": "The above patch causes the following doctest failure in tut.tex:\n\n```\nThere is one subtlety in defining complex numbers: as mentioned above,\nthe symbol \\code{i} represents a square root of \\minusone, but it is a\n\\emph{formal} square root of \\minusone; it is not in the complex numbers.\nCalling \\code{CC(i)} returns the complex square root of \\minusone.\n%link\n\\begin{verbatim}\nsage: i in CC\nFalse\n```\n\nnow returns true. After some discussion with William it was decided to change the doctest.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-23T08:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34163",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34096",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +108,15 @@ Michael
 
 ---
 
-archive/issue_comments_034164.json:
+archive/issue_comments_034097.json:
 ```json
 {
     "body": "Attachment [4560-doc.patch](tarball://root/attachments/some-uuid/ticket4560/4560-doc.patch) by @roed314 created at 2009-01-24 14:49:16\n\nDocumentation fix",
     "created_at": "2009-01-24T14:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34164",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34097",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -129,15 +128,15 @@ Documentation fix
 
 ---
 
-archive/issue_comments_034165.json:
+archive/issue_comments_034098.json:
 ```json
 {
     "body": "Rebased verison of Roed's patch",
     "created_at": "2009-01-29T02:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34165",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34098",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -147,15 +146,15 @@ Rebased verison of Roed's patch
 
 ---
 
-archive/issue_comments_034166.json:
+archive/issue_comments_034099.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-29T02:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34166",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34099",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -165,15 +164,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_034167.json:
+archive/issue_comments_034100.json:
 ```json
 {
     "body": "Attachment [trac_4560.patch](tarball://root/attachments/some-uuid/ticket4560/trac_4560.patch) by mabshoff created at 2009-01-29 02:46:54\n\nMerged 4560-doc.patch and trac_4560.patch in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-29T02:46:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4560",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34167",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4560#issuecomment-34100",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

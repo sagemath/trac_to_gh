@@ -6,15 +6,13 @@ archive/issues_009245.json:
     "body": "Assignee: @aghitza\n\nCC:  @novoselt\n\nHere is some initial shot at constructing toric varieties \"by name\". It might be useful to write doctests for the toric varieties. Once the dust has settled we might want to load pickled objects, but for now we construct the fans from generating cones.\n\nObviously this relies on #8988, which isn't finished yet. Also, I haven't added the import to `all.py` to avoid patch rejects.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9245\n\n",
     "created_at": "2010-06-15T15:22:17Z",
     "labels": [
-        "algebraic geometry",
-        "major",
-        "enhancement"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Add library of toric varieties",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9245",
-    "user": "@vbraun"
+    "user": "https://github.com/vbraun"
 }
 ```
 Assignee: @aghitza
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9245
 
 ---
 
-archive/issue_comments_086967.json:
+archive/issue_comments_086828.json:
 ```json
 {
     "body": "Attachment [named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/named_toric_varieties.py) by @vbraun created at 2010-06-15 15:22:55\n\nInitial patch",
     "created_at": "2010-06-15T15:22:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86967",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86828",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -53,15 +51,15 @@ Initial patch
 
 ---
 
-archive/issue_comments_086968.json:
+archive/issue_comments_086829.json:
 ```json
 {
     "body": "I think all fans should have `check=False` option at construction, since you know what you are doing and the input should be correct. Also, after constructing the fan, but before passing it to the toric variety, it would be good to set `fan._is_complete = True` when it is indeed true. Perhaps, to avoid explicit setting of a private attribute (which is going to migrate to the shared cache of related fans eventually), we should allow an optional argument to `fan.is_complete(known=None)`, and if it is given, then we assume that the user indeed knows whether it is true or false and save it instead of computing, which can be costly. Let me know if you are OK with it and I'll include it into the final version of #8987.\n\nWith these tweaks there should be no need for pickling as everything should be fast enough anyway (and pickled objects are not allowed into the Sage tarball anymore, so either we will need to have an spkg constructing them, or will have to save them on the first run).\n\nThe last five names are very cryptic, but I suppose it can be OK, if they are eventually described in the docstring.",
     "created_at": "2010-06-15T16:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86968",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86829",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -75,15 +73,15 @@ The last five names are very cryptic, but I suppose it can be OK, if they are ev
 
 ---
 
-archive/issue_comments_086969.json:
+archive/issue_comments_086830.json:
 ```json
 {
     "body": "I agree about disabling checks eventually, but for now I think its good to catch potential bugs elsewhere.\n\nInstead of repurposing `fan.is_complete()`, how about an extra optional argument to `RationalPolyhedralFan.__init__(assume_complete=False)`. Once `Fan` is finished I can migrate the construction from `Fan` to `RationalPolyhedralFan` to speed things up further.",
     "created_at": "2010-06-15T16:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86969",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86830",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -95,15 +93,15 @@ Instead of repurposing `fan.is_complete()`, how about an extra optional argument
 
 ---
 
-archive/issue_comments_086970.json:
+archive/issue_comments_086831.json:
 ```json
 {
     "body": "Replying to [comment:2 vbraun]:\n> I agree about disabling checks eventually, but for now I think its good to catch potential bugs elsewhere.\n\nGood point!\n\n> Instead of repurposing `fan.is_complete()`, how about an extra optional argument to `RationalPolyhedralFan.__init__(assume_complete=False)`.\n\nOK!\n\n> Once `Fan` is finished I can migrate the construction from `Fan` to `RationalPolyhedralFan` to speed things up further.\n\nThat can make things fragile and lead to extra works of putting rays into proper spaces and making them immutable. That's exactly what `Fan(..., check=False)` is taking care of, if it does it in a slow way - it is a bug that should be fixed ;-)\n\nIt may be a good idea to keep a dictionary of these named varieties, so that repetitive calls to, say, `P1xP1` will return the same object. Another option is to make `ToricVariety` to return unique varieties if they were already constructed before, but it can be quite tedious compared to affine and projective spaces.",
     "created_at": "2010-06-15T16:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86970",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86831",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -126,15 +124,15 @@ It may be a good idea to keep a dictionary of these named varieties, so that rep
 
 ---
 
-archive/issue_comments_086971.json:
+archive/issue_comments_086832.json:
 ```json
 {
     "body": "Since all of the named toric varieties seem to have valid Python identifiers for names, it seems more consistent to follow the interfaces of named graphs.\n\n\n```\nsage: graphs.CompleteGraph(4)\n```\n\n\nYou could have something like\n\n\n```\nsage: toric_varieties.Conifold()\n```\n",
     "created_at": "2010-06-20T02:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86971",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86832",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -158,15 +156,15 @@ sage: toric_varieties.Conifold()
 
 ---
 
-archive/issue_comments_086972.json:
+archive/issue_comments_086833.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-22T10:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86972",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86833",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -176,15 +174,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_086973.json:
+archive/issue_comments_086834.json:
 ```json
 {
     "body": "I've taken mhansen's advice and rewrote the patch accordingly. Now has 100% documentation and tests, and adds itself to `all.py` and the documentation.\n\nThe variable `toric_varieties._check` determines whether the fans are constructed with checking or not. For now it defaults to `True`.",
     "created_at": "2010-06-22T10:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86973",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86834",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -196,15 +194,15 @@ The variable `toric_varieties._check` determines whether the fans are constructe
 
 ---
 
-archive/issue_comments_086974.json:
+archive/issue_comments_086835.json:
 ```json
 {
     "body": "I like the general organization of the current patch, but names are still a bit strange. Especially `Cube3` which is not a polyhedral fan at all. Is it possible to insert a detailed mathematical description into docstrings? I mean not the cones/rays, which are given, but what exactly has to be done to the \"usual\" cube to get `Cube2` and `Cube3`. For varieties coming from arXiv papers, it would be nice to have complete references including all authors and the title of the paper.\n\nAlso technical detail about the posted patch file itself: it seems that it is taken directly from the queue and lacks some header information, including the commit message.",
     "created_at": "2010-06-22T22:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86974",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86835",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -216,15 +214,15 @@ Also technical detail about the posted patch file itself: it seems that it is ta
 
 ---
 
-archive/issue_comments_086975.json:
+archive/issue_comments_086836.json:
 ```json
 {
     "body": "Now with commit message. What is the recommended way of extracting a patch from the Mercurial queue?\n\n* I've added more explanations to the `Cube` examples and changed their names.\n* References are improved.\n* New example: weighted projective space P4_11169 and its resolution.",
     "created_at": "2010-06-25T15:57:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86975",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86836",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -238,15 +236,15 @@ Now with commit message. What is the recommended way of extracting a patch from 
 
 ---
 
-archive/issue_comments_086976.json:
+archive/issue_comments_086837.json:
 ```json
 {
     "body": "Attachment [trac_9245_named_toric_varieties.py](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.py) by @vbraun created at 2010-06-25 15:58:20\n\nImproved patch",
     "created_at": "2010-06-25T15:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86976",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86837",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -258,15 +256,15 @@ Improved patch
 
 ---
 
-archive/issue_comments_086977.json:
+archive/issue_comments_086838.json:
 ```json
 {
     "body": "Replying to [comment:7 vbraun]:\n> Now with commit message. What is the recommended way of extracting a patch from the Mercurial queue?\n\nI am not sure. I always put the patch in question on the top, then run Sage and use `hg_sage.export(\"tip\", \"trac_xxxx_description\")` command.",
     "created_at": "2010-06-26T00:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86977",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86838",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -279,15 +277,15 @@ I am not sure. I always put the patch in question on the top, then run Sage and 
 
 ---
 
-archive/issue_comments_086978.json:
+archive/issue_comments_086839.json:
 ```json
 {
     "body": "It probably makes sense to return `CPRFanoToricVariety` objects for those varieties that fall into this class, it will be also useful for writing more examples and tests for them. This will make this ticket to depend on #8989, but that one is pretty much settled already anyway.\nIf you are OK with this dependence, I don't mind making necessary changes here myself.",
     "created_at": "2010-06-29T06:16:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86978",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86839",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -298,15 +296,15 @@ If you are OK with this dependence, I don't mind making necessary changes here m
 
 ---
 
-archive/issue_comments_086979.json:
+archive/issue_comments_086840.json:
 ```json
 {
     "body": "Agree! I'll make the changes later today.",
     "created_at": "2010-06-29T13:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86979",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86840",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -316,15 +314,15 @@ Agree! I'll make the changes later today.
 
 ---
 
-archive/issue_comments_086980.json:
+archive/issue_comments_086841.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-29T13:09:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86980",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86841",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -334,15 +332,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_086981.json:
+archive/issue_comments_086842.json:
 ```json
 {
     "body": "One potential drawback to be aware of: for CPR-Fano toric varieties rays will have to be given as indices of points of the corresponding lattice polytope with vertices in front. You do have control over the order of vertices, but points are listed in the way in which PALP returns them. Of course, it matters only for (partially) resolved varieties, when you do need to have rays corresponding to points.",
     "created_at": "2010-06-29T14:29:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86981",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86842",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -352,15 +350,15 @@ One potential drawback to be aware of: for CPR-Fano toric varieties rays will ha
 
 ---
 
-archive/issue_comments_086982.json:
+archive/issue_comments_086843.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-29T19:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86982",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86843",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -370,15 +368,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_086983.json:
+archive/issue_comments_086844.json:
 ```json
 {
     "body": "Here is the new patch. The `_make_CPRFanoToricVariety` method renumber the cones to refer to point indices.",
     "created_at": "2010-06-29T19:54:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86983",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86844",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -388,15 +386,15 @@ Here is the new patch. The `_make_CPRFanoToricVariety` method renumber the cones
 
 ---
 
-archive/issue_comments_086984.json:
+archive/issue_comments_086845.json:
 ```json
 {
     "body": "* I don't think that `coordinate_points=ray2point.values()` does what you want - the order of elements in the dictionary is unpredictable. I think that \n\n```\nray2point = dict([ (i, points.index(r)) for i,r in enumerate(rays)]) \n```\n\n should be replaced with\n\n```\nray2point = [points.index(r) for r in rays]\n```\n\n\n* Is there any reason why coordinate names are given in constructor functions? It seems to me that they would look better next to the rays in the data block.",
     "created_at": "2010-06-29T21:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86984",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86845",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -419,15 +417,15 @@ ray2point = [points.index(r) for r in rays]
 
 ---
 
-archive/issue_comments_086985.json:
+archive/issue_comments_086846.json:
 ```json
 {
     "body": "Thanks, good catch... I was somehow under the impression that the dict sorts by keys. In any case, your solution is cleaner.\n\nMy reason for splitting off the ray/cones data into a separate structure was that one could use it to reverse lookup a toric variety. The first step would be to check the \"combinatorial\" isomorphism of the cones, and only later the slower \"lattice\" isomorphism of the fan. For the coordinate names, on the other hand, we don't need a fast way to list them all, so that data can just stay in the individual methods.",
     "created_at": "2010-06-30T09:09:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86985",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86846",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -439,15 +437,15 @@ My reason for splitting off the ray/cones data into a separate structure was tha
 
 ---
 
-archive/issue_comments_086986.json:
+archive/issue_comments_086847.json:
 ```json
 {
     "body": "Refreshed patch to work correctly with the final version of the `CPRFanoToricVarieties` patch.",
     "created_at": "2010-07-02T10:41:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86986",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86847",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -457,15 +455,15 @@ Refreshed patch to work correctly with the final version of the `CPRFanoToricVar
 
 ---
 
-archive/issue_comments_086987.json:
+archive/issue_comments_086848.json:
 ```json
 {
     "body": "Attachment [trac_9245_named_toric_varieties.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.patch) by @vbraun created at 2010-07-02 10:41:44\n\nUpdated patch",
     "created_at": "2010-07-02T10:41:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86987",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86848",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -477,15 +475,15 @@ Updated patch
 
 ---
 
-archive/issue_comments_086988.json:
+archive/issue_comments_086849.json:
 ```json
 {
     "body": "1) Can we replace C with A whenever it refers to complex numbers, e.g. `C2` ===> `A2` with documentation \"Return the affine plane `\\mathbb{A}^2` as a toric variety. ...\"? I know that usually one thinks of complex numbers in toric geometry (I do it always), but the default field is the rational one and I think it would be better to have \"neutral\" names. Note that there is already no reference to the base field in all projective spaces, which is good, I think.\n\n2) I think the module looks better in the documentation if its description on the first line is \"Library of toric varieties\" without \"a\". Although I can't really judge how bad it is from the English point of view not to have an article ;-)\n\n3) In general the module docstring should include more information according to http://sagemath.org/doc/developer/conventions.html#headings-of-sage-library-code-files\nAt the very least you should add yourself as the initial author, some description of how it works also can be nice.\n\n4) Unfortunately, it is not very consistent in Sage, but I try to follow http://www.python.org/dev/peps/pep-0257/ cited in the beginning of http://sagemath.org/doc/developer/conventions.html#python-coding-conventions in the part of having a single line \"command type\" description in the beginning of docstrings, i.e. in most cases \"Return ...\" In many cases Sage uses \"Returns ...\" and the example in Developer's Guide is even worse: \"This function returns ...\" I definitely do not require you to follow the style I have chosen, but it can be nice if you follow it anyway for consistency purposes ;-)\n\n5) Following Developer's Guide, the input block of `Cube_deformation` should look like\n\n```\nINPUT:\n\n    - ``k`` -- integer. The case ``k=0`` is :meth:`Cube_face_fan`. \n```\n\n\n6) I think it will be good for cross-linking compiled documentation if all functions have one of these output blocks (in addition to the more mathematical description of the output which they already have):\n\n```\nOUTPUT:\n\n- :class:`toric variety\n  <sage.schemes.generic.toric_variety.ToricVariety_field>`.\n\nOUTPUT:\n\n- :class:`CPR-Fano toric variety\n  <sage.schemes.generic.fano_toric_variety.CPRFanoToricVariety_field>`.\n```\n\n\n7) I think it will be good if all examples displayed rays and names of coordinates, like\n\n```\nsage: Conifold = toric_varieties.Conifold()\nsage: Conifold\n3-d affine toric variety\nsage: Conifold.fan().ray_matrix()\n[0 0 1 1]\n[0 1 0 1]\n[1 1 1 1]\nsage: Conifold.gens()\n(u, x, y, v)\n```\n\nIt will make the compiled documentation more informative.\n\n8) `check=self._check` should be passed to constructors of toric varieties as well. Once we are confident that the rest of the code is correct and set `self._check=False` by default, my hope is that there will be no \"# long time\" comments in this module.\n\n9) `sage -coverage` shows doctests of private functions as possibly wrong, there should be a comment \"# indirect doctest\" in their examples.\n\n10) It also shows `TestSuite` error which I propose to ignore so far. There isn't really anything to test for such a class and I don't think there is any point in pickling it. If somebody disagrees, at least it will be easy for them to track down this module and do whatever is necessary.\n\nLet me know what you think!",
     "created_at": "2010-07-02T20:41:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86988",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86849",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -550,15 +548,15 @@ Let me know what you think!
 
 ---
 
-archive/issue_comments_086989.json:
+archive/issue_comments_086850.json:
 ```json
 {
     "body": "11) In addition to low-dimensional spaces, it may be nice to add `A(n)` and `P(n)` constructors for affine and projective spaces of arbitrary dimension with `(-1,...,-1)` always being the first (i.e. the zeroth) ray for `P(n)`. This is optional and can wait, of course.",
     "created_at": "2010-07-02T20:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86989",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86850",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -568,15 +566,15 @@ archive/issue_comments_086989.json:
 
 ---
 
-archive/issue_comments_086990.json:
+archive/issue_comments_086851.json:
 ```json
 {
     "body": "1) On the issue of default base field: Having something else as the complex numbers as base field is going to haunt us soon. In my \"cohomology\" patch I just treated any characteristic zero field as C since working over rational numbers is going to be much harder. The topology over R is already much more complicated... Considering that most people will want the base field to be complex numbers, how are we going to deal with that?\n\nI'm fine with your remaining comments.",
     "created_at": "2010-07-02T20:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86990",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86851",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -588,15 +586,15 @@ I'm fine with your remaining comments.
 
 ---
 
-archive/issue_comments_086991.json:
+archive/issue_comments_086852.json:
 ```json
 {
     "body": "I have already though about it quite a bit and I think that we should just explain in the documentation of all relevant functions that the base field is considered to be complex no matter what it actually is. I wrote some comments about it in the beginning of `toric_variety` module.\n\nChanging the default base field to `CC` is not as good a solution as it may seem to be at first, since it is nice to have exact representation and in many cases `QQ` is exactly what one wants to use. I have also played with finite fields a month ago and they do seem to be useful.\n\nAnother issue is with \"parameters\" - for example, generic anticanonical hypersurfaces are realized as subschemes of toric varieties over things like Frac(QQ[a1, a2, a3]). I am not aware of a better representaion in Sage when I need to keep some coefficients undetermined (and I do need it almost always, usually I switch to all-numbers only for analysis of singularities).\n\nMy original plan was even to allow working over polynomial rings and use integers as default, since it may be faster, but that seems to be too much of a deviation from real life.\n\nTo summarize - I think that `QQ` is the best default choice and when possible we should avoid putting any assumptions on the base field, but when we really want it to be `CC`, we should think (and document it) that mathematically our variety is over `CC`, but on the computer it may be represented differently.",
     "created_at": "2010-07-02T21:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86991",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86852",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -614,15 +612,15 @@ To summarize - I think that `QQ` is the best default choice and when possible we
 
 ---
 
-archive/issue_comments_086992.json:
+archive/issue_comments_086853.json:
 ```json
 {
     "body": "Note: `ToricVariety()` has no `check=` argument, only `CPRFanoToricVariety()` has.\n\nUpdated patch follows.",
     "created_at": "2010-07-02T21:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86992",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86853",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -634,15 +632,15 @@ Updated patch follows.
 
 ---
 
-archive/issue_comments_086993.json:
+archive/issue_comments_086854.json:
 ```json
 {
     "body": "Attachment [trac_9245_named_toric_varieties.2.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.2.patch) by @vbraun created at 2010-07-02 21:56:18\n\nUpdated patch",
     "created_at": "2010-07-02T21:56:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86993",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86854",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -654,15 +652,15 @@ Updated patch
 
 ---
 
-archive/issue_comments_086994.json:
+archive/issue_comments_086855.json:
 ```json
 {
     "body": "Looks great!\n\nJust a couple more little picks:\n\n* `Cube_deformation(k)` does NOT \"Construct a sequence of toric varieties with torsion in the Chow group\" since for every given `k` it will return only a particular element of the sequence. In the OUTPUT block of this function, can we turn \"toric variety\" into a hyperlink?\n\n* I don't quite like that other outputs will look in the documentation like \"An instance of toric variety.\" I am totally fine without the dash in the beginning, but I'd prefer either plain-language \"Toric variety.\" or a longer but more code-accurate \"An instance of `ToricVariety_field`.\" given by one of these:\n\n```\nOUTPUT:\n\n:class:`Toric variety\n<sage.schemes.generic.toric_variety.ToricVariety_field>`.\n\nOUTPUT:\n\nAn instance of\n:class:`~sage.schemes.generic.toric_variety.ToricVariety_field`.\n```\n\n\nThe second point is optional, if \"An instance of toric variety.\" is exactly what you want, it is OK with me.",
     "created_at": "2010-07-02T22:40:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86994",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86855",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -693,15 +691,15 @@ The second point is optional, if "An instance of toric variety." is exactly what
 
 ---
 
-archive/issue_comments_086995.json:
+archive/issue_comments_086856.json:
 ```json
 {
     "body": "Hmm... Now that the choice of rays and coordinates is nicely shown:\n\n   * Why does `A2` list basis vectors in the reverse order, (0,1) first and then (1,0)? Wouldn't it be better if the ray matrix of affine spaces was the identity one?\n\n   * For `P2` my choice of coordinates would be x-(1,0), y-(0,1), z-(-1,-1) so that z is the \"extra\" coordinate compared to the affine space.\n\n   * For `P1xP1` I used (s:t) as coordinates on one copy and (x:y) on another. Here it is (s:x) and (t:y). I don't really have a strong preference, but it does bug me it this case that notation is different.\n\n   * `A2_Z2` got missed while adding ray matrices and coordinates.",
     "created_at": "2010-07-02T23:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86995",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86856",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -719,15 +717,15 @@ Hmm... Now that the choice of rays and coordinates is nicely shown:
 
 ---
 
-archive/issue_comments_086996.json:
+archive/issue_comments_086857.json:
 ```json
 {
     "body": "I settled on \"INPUT: A toric variety\" since I like articles... I also beautified some coordinate choices. Finally, new methods `ToricVarietyFactory.A(n)` and `ToricVarietyFactory.P(n)` added.",
     "created_at": "2010-07-03T12:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86996",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86857",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -737,15 +735,15 @@ I settled on "INPUT: A toric variety" since I like articles... I also beautified
 
 ---
 
-archive/issue_comments_086997.json:
+archive/issue_comments_086858.json:
 ```json
 {
     "body": "Attachment [trac_9245_named_toric_varieties.3.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_named_toric_varieties.3.patch) by @vbraun created at 2010-07-03 12:22:54\n\nUpdated patch",
     "created_at": "2010-07-03T12:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86997",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86858",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -757,15 +755,15 @@ Updated patch
 
 ---
 
-archive/issue_comments_086998.json:
+archive/issue_comments_086859.json:
 ```json
 {
     "body": "Attachment [trac_9245_toric_library_reviewer.patch](tarball://root/attachments/some-uuid/ticket9245/trac_9245_toric_library_reviewer.patch) by @novoselt created at 2010-07-03 18:50:10",
     "created_at": "2010-07-03T18:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86998",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86859",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -775,15 +773,15 @@ Attachment [trac_9245_toric_library_reviewer.patch](tarball://root/attachments/s
 
 ---
 
-archive/issue_comments_086999.json:
+archive/issue_comments_086860.json:
 ```json
 {
     "body": "I have added extra checks to constructors with parameters and made `P(n)` to return a Fano variety, as it was described in the documentation, but the code was for a plain toric variety.\n\nI have also put (-1,-1,-1) as the last ray of `P(3)`. I have no idea what I was thinking when I asked to have it first. Maybe I was thinking about `z1, z2, z3` coordinates for `A(3)` and `z0, z1, z2, z3` for `P(3)`, but I think it is more consistent to let `A(3)` have default coordinates `z0, z1, z2` and then projectivization adds `z3` in the end. On the level of fans it definitely makes more sense to put the extra element in the back.\n\nAll tests pass for me on 4.5.alpha1, positive review once you approve (hopefully ;-)) my patch!",
     "created_at": "2010-07-03T19:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86999",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86860",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -797,15 +795,15 @@ All tests pass for me on 4.5.alpha1, positive review once you approve (hopefully
 
 ---
 
-archive/issue_comments_087000.json:
+archive/issue_comments_086861.json:
 ```json
 {
     "body": "looks good to me!",
     "created_at": "2010-07-03T19:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-87000",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86861",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -815,15 +813,15 @@ looks good to me!
 
 ---
 
-archive/issue_comments_087001.json:
+archive/issue_comments_086862.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-03T19:06:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-87001",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86862",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -833,15 +831,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_087002.json:
+archive/issue_comments_086863.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-20T10:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-87002",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86863",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -851,15 +849,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_087003.json:
+archive/issue_comments_086864.json:
 ```json
 {
     "body": "I've merged\n\n* [attachment:trac_9245_named_toric_varieties.3.patch]\n* [attachment:trac_9245_toric_library_reviewer.patch]\n\ninto 4.5.2.alpha0.",
     "created_at": "2010-07-20T10:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9245",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-87003",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9245#issuecomment-86864",
+    "user": "https://github.com/qed777"
 }
 ```
 

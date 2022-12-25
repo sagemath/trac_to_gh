@@ -6,7 +6,7 @@ archive/issues_002376.json:
     "body": "Assignee: failure\n\nWe have various doctest failures in\n\n```\nsage -t -long devel/sage-main/sage/modular/abvar/abvar.py\nsage -t -long devel/sage-main/sage/modular/abvar/finite_subgroup.py\nsage -t -long devel/sage-main/sage/modular/abvar/torsion_subgroup.py\n```\n\n\nThe attached patch fixes those.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/2376\n\n",
     "created_at": "2008-03-03T16:54:38Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002376.json:
     "title": "[with patch, needs review] Sage 2.10.3.rc1: various doctest failure in abvar",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2376",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: failure
@@ -42,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2376
 
 ---
 
-archive/issue_comments_016030.json:
+archive/issue_comments_015995.json:
 ```json
 {
     "body": "Changing assignee from failure to mabshoff.",
     "created_at": "2008-03-03T16:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16030",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-15995",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -60,15 +60,15 @@ Changing assignee from failure to mabshoff.
 
 ---
 
-archive/issue_comments_016031.json:
+archive/issue_comments_015996.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-03T16:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16031",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-15996",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -78,15 +78,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_016032.json:
+archive/issue_comments_015997.json:
 ```json
 {
     "body": "Attachment [trac_2376.patch](tarball://root/attachments/some-uuid/ticket2376/trac_2376.patch) by mabshoff created at 2008-03-03 17:01:31",
     "created_at": "2008-03-03T17:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16032",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-15997",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -96,15 +96,15 @@ Attachment [trac_2376.patch](tarball://root/attachments/some-uuid/ticket2376/tra
 
 ---
 
-archive/issue_comments_016033.json:
+archive/issue_comments_015998.json:
 ```json
 {
     "body": "Looks great!",
     "created_at": "2008-03-03T17:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16033",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-15998",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -114,15 +114,15 @@ Looks great!
 
 ---
 
-archive/issue_comments_016034.json:
+archive/issue_comments_015999.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-03T17:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16034",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-15999",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +132,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_016035.json:
+archive/issue_comments_016000.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc1",
     "created_at": "2008-03-03T17:21:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16035",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16000",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -150,15 +150,15 @@ Merged in Sage 2.10.3.rc1
 
 ---
 
-archive/issue_comments_016036.json:
+archive/issue_comments_016001.json:
 ```json
 {
     "body": "Attachment [trac_2376-2.patch](tarball://root/attachments/some-uuid/ticket2376/trac_2376-2.patch) by mabshoff created at 2008-03-03 19:21:56\n\nI just attached another trivial, \"obviously\" correct doctest fix related to trac-2245-lseries.patch to this ticket. It has already been merged, but feel free to review it.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-03T19:21:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2376",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16036",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2376#issuecomment-16001",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

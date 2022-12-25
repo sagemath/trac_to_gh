@@ -6,7 +6,7 @@ archive/issues_006946.json:
     "body": "Assignee: mabshoff\n\nCC:  @jasongrout\n\nThe delaunay packages appears to be the same, with just some name changes.\n\nBut the mpmath while providing the same feature, has a significant large amount of patches.\n\nIn either case, if patching sage to use sympy/mpmath and mpatplotlib/delaunay, the doctests works, but there may exit some special reason to use mpmath instead of sympy/mpmath.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6946\n\n",
     "created_at": "2009-09-16T20:19:33Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006946.json:
     "title": "Duplicated mpmath <-> sympy/mpmath and delaunay <-> matplotlib/delaunay",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6946",
-    "user": "pcpa"
+    "user": "https://trac.sagemath.org/admin/accounts/users/pcpa"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6946
 
 ---
 
-archive/issue_comments_057430.json:
+archive/issue_comments_057322.json:
 ```json
 {
     "body": "Attachment [sage-4.1.1-list_plot.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-list_plot.patch) by pcpa created at 2009-09-16 20:20:40\n\ndelaunay rpm patch",
     "created_at": "2009-09-16T20:20:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57430",
-    "user": "pcpa"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57322",
+    "user": "https://trac.sagemath.org/admin/accounts/users/pcpa"
 }
 ```
 
@@ -55,15 +55,15 @@ delaunay rpm patch
 
 ---
 
-archive/issue_comments_057431.json:
+archive/issue_comments_057323.json:
 ```json
 {
     "body": "(Sorry, accidentally changed the description instead of posting a comment. Restored the original description.)\n\nsympy/mpmath should probably be regarded as an internal module of sympy. It includes some sympy-specific changes and is updated less frequently. More likely sympy/mpmath will go away some time in the future.",
     "created_at": "2009-09-17T16:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57431",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57323",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -75,15 +75,15 @@ sympy/mpmath should probably be regarded as an internal module of sympy. It incl
 
 ---
 
-archive/issue_comments_057432.json:
+archive/issue_comments_057324.json:
 ```json
 {
     "body": "Replying to [comment:2 fredrik.johansson]:\n> (Sorry, accidentally changed the description instead of posting a comment. Restored the original description.)\n> \n> sympy/mpmath should probably be regarded as an internal module of sympy. It includes some sympy-specific changes and is updated less frequently. More likely sympy/mpmath will go away some time in the future.\n\nMany thanks for the reply. I was unsure if I should create a mandriva package for mpmath, or assume it was unintended duplication of code. I even just updated the mpmath patch to also use sympy.mpmath from sage/libs/mpmath/utils.pyx\n\nI will add a python-mpmath package to mandriva, and revert the patch to use sympy.mpmath from my rpm. Guess for now it will also have duplicated %py_platsitedir/sympy/mpath and %py_platsitedir/mpath, what may be a source of confusion...",
     "created_at": "2009-09-17T23:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57432",
-    "user": "pcpa"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57324",
+    "user": "https://trac.sagemath.org/admin/accounts/users/pcpa"
 }
 ```
 
@@ -100,15 +100,15 @@ I will add a python-mpmath package to mandriva, and revert the patch to use symp
 
 ---
 
-archive/issue_comments_057433.json:
+archive/issue_comments_057325.json:
 ```json
 {
     "body": "just for documentation - but this patch should be no longer applied, and instead, create the python-mpmath rpm package",
     "created_at": "2009-09-17T23:43:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57433",
-    "user": "pcpa"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/pcpa"
 }
 ```
 
@@ -118,15 +118,15 @@ just for documentation - but this patch should be no longer applied, and instead
 
 ---
 
-archive/issue_comments_057434.json:
+archive/issue_comments_057326.json:
 ```json
 {
     "body": "Attachment [sage-4.1.1-mpmath.patch](tarball://root/attachments/some-uuid/ticket6946/sage-4.1.1-mpmath.patch) by @jasongrout created at 2011-03-15 05:34:41",
     "created_at": "2011-03-15T05:34:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57434",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57326",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -136,15 +136,15 @@ Attachment [sage-4.1.1-mpmath.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_057435.json:
+archive/issue_comments_057327.json:
 ```json
 {
     "body": "Apparently `sympy.mpmath` no longer exists, nor does `delaunay`.",
     "created_at": "2015-04-13T13:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57435",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57327",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -154,15 +154,15 @@ Apparently `sympy.mpmath` no longer exists, nor does `delaunay`.
 
 ---
 
-archive/issue_comments_057436.json:
+archive/issue_comments_057328.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2015-04-13T13:30:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57436",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57328",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -172,15 +172,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_057437.json:
+archive/issue_comments_057329.json:
 ```json
 {
     "body": "But it is still mentioned in the sympy documentation [http://docs.sympy.org/dev/modules/mpmath/setup.html#mpmath-under-sympy](http://docs.sympy.org/dev/modules/mpmath/setup.html#mpmath-under-sympy). Weird!",
     "created_at": "2015-04-24T21:43:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57437",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57329",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -190,15 +190,15 @@ But it is still mentioned in the sympy documentation [http://docs.sympy.org/dev/
 
 ---
 
-archive/issue_comments_057438.json:
+archive/issue_comments_057330.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-05-29T02:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57438",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57330",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -208,15 +208,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_057439.json:
+archive/issue_comments_057331.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-06-19T08:41:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6946",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57439",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/6946#issuecomment-57331",
+    "user": "https://github.com/vbraun"
 }
 ```
 

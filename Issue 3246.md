@@ -6,15 +6,14 @@ archive/issues_003246.json:
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3246\n\n",
     "created_at": "2008-05-17T20:52:12Z",
     "labels": [
-        "porting: Cygwin",
-        "major",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "[with patch; needs review] cygwin -- fix broken gsl.ode setup.py code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3246",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3246
 
 ---
 
-archive/issue_comments_022468.json:
+archive/issue_comments_022421.json:
 ```json
 {
     "body": "Attachment [sage-3246.patch](tarball://root/attachments/some-uuid/ticket3246/sage-3246.patch) by @williamstein created at 2008-05-17 20:52:41",
     "created_at": "2008-05-17T20:52:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3246#issuecomment-22468",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3246#issuecomment-22421",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [sage-3246.patch](tarball://root/attachments/some-uuid/ticket3246/sag
 
 ---
 
-archive/issue_comments_022469.json:
+archive/issue_comments_022422.json:
 ```json
 {
     "body": "Positive review.",
     "created_at": "2008-05-17T21:40:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3246#issuecomment-22469",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3246#issuecomment-22422",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -65,15 +64,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_022470.json:
+archive/issue_comments_022423.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-17T21:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3246#issuecomment-22470",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3246#issuecomment-22423",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +82,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022471.json:
+archive/issue_comments_022424.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.alpha1",
     "created_at": "2008-05-17T21:40:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3246",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3246#issuecomment-22471",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3246#issuecomment-22424",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002010.json:
     "body": "Assignee: mabshoff\n\n\n```\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._Y2KINFO\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._TODO\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/._test-pngtest.sh\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._smakefile.ppc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._SCOPTIONS.ppc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngw32.rc\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngw32.def\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._pngos2.def\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makevms.com\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.watcom\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcwin32\nsage-2.10.1.rc3/spkg/standard/libpng-1.2.22.p3/src/scripts/._makefile.vcawin32\n...\nAND MANY MORE\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2010\n\n",
     "created_at": "2008-01-31T23:21:33Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "crap -- libpng contains lots and lots of weird (OS X?) temp or meta files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2010",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2010
 
 ---
 
-archive/issue_comments_012995.json:
+archive/issue_comments_012964.json:
 ```json
 {
     "body": "The updated spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10.1/rc4/libpng-1.2.22.p4.spkg\n\nremoves the offending files.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-31T23:49:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2010#issuecomment-12995",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2010#issuecomment-12964",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -72,15 +71,15 @@ Michael
 
 ---
 
-archive/issue_comments_012996.json:
+archive/issue_comments_012965.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-31T23:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2010#issuecomment-12996",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2010#issuecomment-12965",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -90,15 +89,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_012997.json:
+archive/issue_comments_012966.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-01T02:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2010#issuecomment-12997",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2010#issuecomment-12966",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -108,15 +107,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_012998.json:
+archive/issue_comments_012967.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc4",
     "created_at": "2008-02-01T02:01:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2010",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2010#issuecomment-12998",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2010#issuecomment-12967",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005953.json:
     "body": "Assignee: tba\n\nThis is what the ReST documentation looks like:\n\n```\nEXAMPLES:\nsage: victor_miller_basis(1, 6) [] sage: victor_miller_basis(0, 6) [ 1 + O(q^6) ] sage: victor_miller_basis(2, 6) [] sage: victor_miller_basis(4, 6) [ 1 + 240*q + 2160*q^2 + 6720*q^3 + 17520*q^4 + 30240*q^5 + O(q^6) ]\n\nsage: victor_miller_basis(6, 6, var=\u2019w\u2019) [ 1 - 504*w - 16632*w^2 - 122976*w^3 - 532728*w^4 - 1575504*w^5 + O(w^6) ]\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5953\n\n",
     "created_at": "2009-05-01T05:03:46Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.2",
     "title": "sage/modular/modform/vm_basis.py is missing verbatim areas for doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5953",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: tba
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5953
 
 ---
 
-archive/issue_comments_047087.json:
+archive/issue_comments_046997.json:
 ```json
 {
     "body": "Attachment [trac_5953.patch](tarball://root/attachments/some-uuid/ticket5953/trac_5953.patch) by mabshoff created at 2009-05-01 05:34:49",
     "created_at": "2009-05-01T05:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47087",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-46997",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -59,15 +58,15 @@ Attachment [trac_5953.patch](tarball://root/attachments/some-uuid/ticket5953/tra
 
 ---
 
-archive/issue_comments_047088.json:
+archive/issue_comments_046998.json:
 ```json
 {
     "body": "I think that in INPUT and AUTHOR blocks, the lines shouldn't be indented. I'm attaching a referee's patch changing this, and also changing an instance of `$blah$` to ``blah``.  If you're happy with my patch, I'm happy with yours.",
     "created_at": "2009-05-01T05:43:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47088",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-46998",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -77,15 +76,15 @@ I think that in INPUT and AUTHOR blocks, the lines shouldn't be indented. I'm at
 
 ---
 
-archive/issue_comments_047089.json:
+archive/issue_comments_046999.json:
 ```json
 {
     "body": "referee's patch",
     "created_at": "2009-05-01T05:44:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47089",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-46999",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -95,15 +94,15 @@ referee's patch
 
 ---
 
-archive/issue_comments_047090.json:
+archive/issue_comments_047000.json:
 ```json
 {
     "body": "Attachment [ref_5953.patch](tarball://root/attachments/some-uuid/ticket5953/ref_5953.patch) by mabshoff created at 2009-05-01 05:50:23\n\nFor the record: Reviewer patch looks good to me.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-01T05:50:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47090",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47000",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +118,15 @@ Michael
 
 ---
 
-archive/issue_comments_047091.json:
+archive/issue_comments_047001.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-01T05:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47091",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47001",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +136,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_047092.json:
+archive/issue_comments_047002.json:
 ```json
 {
     "body": "Changing assignee from tba to mabshoff.",
     "created_at": "2009-05-01T05:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47092",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47002",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -155,15 +154,15 @@ Changing assignee from tba to mabshoff.
 
 ---
 
-archive/issue_comments_047093.json:
+archive/issue_comments_047003.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.4.2.final.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-01T05:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47093",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47003",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -177,15 +176,15 @@ Michael
 
 ---
 
-archive/issue_comments_047094.json:
+archive/issue_comments_047004.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-01T05:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5953",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47094",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5953#issuecomment-47004",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

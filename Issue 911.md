@@ -6,15 +6,14 @@ archive/issues_000911.json:
     "body": "Assignee: somebody\n\nThis is bad:\n\n```\nsage: foo = Graph()\nsage: hash(foo)\n1033452963\nsage: foo.add_vertex(1)\nsage: hash(foo)\n1537218837\n```\n\n\n__hash__ on Graph objects should be overridden to raise a TypeError.\n\nIssue created by migration from https://trac.sagemath.org/ticket/911\n\n",
     "created_at": "2007-10-17T06:20:15Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "hash() on Graph objects changes as the object is mutated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/911",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: somebody
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/911
 
 ---
 
-archive/issue_comments_005595.json:
+archive/issue_comments_005577.json:
 ```json
 {
     "body": "From the python docs for __hash__ at http://docs.python.org/ref/customization.html :\n\n\"If a class defines mutable objects and implements a __cmp__() or __eq__() method, it should not implement __hash__(), since the dictionary implementation requires that a key's hash value is immutable (if the object's hash value changes, it will be in the wrong hash bucket).\"\n\nCurrently, a Graph object defines a __cmp__ method, but not a __hash__ method.  This seems to be in accordance with the python docs.  However, I guess we are inheriting the __hash__ method from SageObject, so we should redefine the __hash__ method?\n\nHere's a patch:\n\n\n```\ndiff -r 36489d2c9a2e sage/graphs/graph.py\n--- a/sage/graphs/graph.py      Tue Oct 16 09:50:59 2007 -0500\n+++ b/sage/graphs/graph.py      Wed Oct 17 10:19:53 2007 -0500\n@@ -359,6 +359,20 @@ class GenericGraph(SageObject):\n             return self._nxg.name\n         else:\n             return repr(self)\n+\n+    def __hash__(self):\n+        \"\"\"\n+       Since graphs are mutable, they should not be hashable, so we return a type error.\n+\n+       EXAMPLE:\n+           sage: hash(Graph())\n+            Traceback (most recent call last):\n+            ...\n+            TypeError: graphs are mutable, and so therefore are unhashable\n+    \n+       \"\"\"\n+       raise TypeError, \"graphs are mutable, and so therefore are unhashable\"\n+\n \n     def _latex_(self):\n         \"\"\"\n```\n",
     "created_at": "2007-10-17T15:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5595",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5577",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -94,15 +93,15 @@ diff -r 36489d2c9a2e sage/graphs/graph.py
 
 ---
 
-archive/issue_comments_005596.json:
+archive/issue_comments_005578.json:
 ```json
 {
     "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2007-10-17T15:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5596",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5578",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -112,15 +111,15 @@ Changing assignee from somebody to @williamstein.
 
 ---
 
-archive/issue_comments_005597.json:
+archive/issue_comments_005579.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"graphs\".",
     "created_at": "2007-10-17T15:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5597",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5579",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -130,15 +129,15 @@ Changing keywords from "" to "graphs".
 
 ---
 
-archive/issue_comments_005598.json:
+archive/issue_comments_005580.json:
 ```json
 {
     "body": "Changing component from basic arithmetic to combinatorics.",
     "created_at": "2007-10-17T15:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5598",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5580",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -148,15 +147,15 @@ Changing component from basic arithmetic to combinatorics.
 
 ---
 
-archive/issue_comments_005599.json:
+archive/issue_comments_005581.json:
 ```json
 {
     "body": "Attachment [graph_hash.patch](tarball://root/attachments/some-uuid/ticket911/graph_hash.patch) by ekirkman created at 2007-10-18 02:35:22",
     "created_at": "2007-10-18T02:35:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5599",
-    "user": "ekirkman"
+    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"
 }
 ```
 
@@ -166,15 +165,15 @@ Attachment [graph_hash.patch](tarball://root/attachments/some-uuid/ticket911/gra
 
 ---
 
-archive/issue_comments_005600.json:
+archive/issue_comments_005582.json:
 ```json
 {
     "body": "Defect resolved by attached patch.  Ready to include in 2.8.8!",
     "created_at": "2007-10-18T02:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5600",
-    "user": "ekirkman"
+    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"
 }
 ```
 
@@ -184,15 +183,15 @@ Defect resolved by attached patch.  Ready to include in 2.8.8!
 
 ---
 
-archive/issue_comments_005601.json:
+archive/issue_comments_005583.json:
 ```json
 {
     "body": "Please see http://groups.google.com/group/sage-devel/t/72ca87d027fb3e63 regarding the\n\n```\n[tested by ...]\n```\n\nbyline.\n\nCheers,\n\nMichael",
     "created_at": "2007-10-18T10:09:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5601",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -212,15 +211,15 @@ Michael
 
 ---
 
-archive/issue_comments_005602.json:
+archive/issue_comments_005584.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-21T00:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/911",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5602",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/911#issuecomment-5584",
+    "user": "https://github.com/williamstein"
 }
 ```
 

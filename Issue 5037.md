@@ -6,15 +6,13 @@ archive/issues_005037.json:
     "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\nAdd to Word Morphism the following functions :\n* `__add__()` that merges two Word Morphisms on disjoint domain.\n* `restriction(self, alphabet)` that returns a new Word Morphism constructed from self by restricting the domain to Words over the given alphabet.\n* `disjoint_alphabet(self)`, for involutions only, that returns a partition A,B,C of the alphabet s.t. self(A) = B, self(B)=A and self(C) = C.\n\n**Note : I am still not convince of those three names.**\n\nFix in Word Morphism the following function :\n* `is_involution(self)` : should first check that self is an endomorphism\n\nFix in word.py the following functions :\n* `colored_vector` : Fails on empty word.\n\nAdd in word.py the following possibilities:\n* `colored_vector` : Put a label on the graphical word displayed.\n \n\nIssue created by migration from https://trac.sagemath.org/ticket/5037\n\n",
     "created_at": "2009-01-20T19:27:34Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bug fixes and new functionalities for Words library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5037",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: @seblabbe
@@ -46,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5037
 
 ---
 
-archive/issue_comments_038345.json:
+archive/issue_comments_038273.json:
 ```json
 {
     "body": "This is the example of a bad ticket having many feature to fix/add. Fortunately, all of those were solved by #6519 merged in sage recently.\n\nIn fact, you can now glue word morphism together using the function `extend_by` :\n\n\n```\nsage: n = WordMorphism({0:1,1:0,'a':5})\nsage: m = WordMorphism('a->ab,b->ba')\nsage: print n.extend_by(m)\nWordMorphism: 0->1, 1->0, a->5, b->ba\nsage: \nsage: print m.extend_by(n)\nWordMorphism: 0->1, 1->0, a->ab, b->ba\n```\n\n\nYou can now restrict the domain of a morphism by using `restrict_domain` :\n\n```\nsage: print n.restrict_domain([0,'a'])\nWordMorphism: 0->1, a->5\n```\n\n\nYou can now get the partition of the domain alphabet defined (not uniquely) by a involution :\n\n\n```\nsage: inv = WordMorphism({0:1,1:0,2:2,3:3,4:5,5:4})\nsage: inv.is_involution()\nTrue\nsage: inv.partition_of_domain_alphabet()\n({0, 4}, {1, 5}, {2, 3})\n```\n\n\n\nThe code of `is_involution` first check that self is an endomorphism before comptuting the square of self, which gives a better error message :\n\n\n```\nsage: print n\nWordMorphism: 0->1, 1->0, a->5\nsage: n.is_involution()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/slabbe/.sage/temp/slabbe_laptop/8706/_home_slabbe__sage_init_sage_0.py in <module>()\n\n/home/slabbe/sage-4.1/local/lib/python2.6/site-packages/sage/combinat/words/morphism.pyc in is_involution(self)\n    973         \"\"\"\n    974         if not self.is_endomorphism():\n--> 975             raise TypeError, \"self (=%s) is not a endomorphism\"%self\n    976 \n    977         return (self*self).is_identity()\n\nTypeError: self (=WordMorphism: 0->1, 1->0, a->5) is not a endomorphism\n```\n\n\nThe colored vector is not broken anymore on the empty word :\n\n\n```\nsage: empty = Word(); empty\nword: \nsage: empty.colored_vector()\n\n```\n\n\nA label can now be added to the colored vector of a word (a graphic object useful to study equations on words) :\n\n\n```\nsage: w = Word([0..10]+[10,9..0])\nsage: w.colored_vector(label='a palindrome rainbow')\n\n```\n\n\nHence, I recommand that this ticket be closed.",
     "created_at": "2009-07-22T21:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5037",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5037#issuecomment-38345",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/5037#issuecomment-38273",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -145,15 +143,15 @@ Hence, I recommand that this ticket be closed.
 
 ---
 
-archive/issue_comments_038346.json:
+archive/issue_comments_038274.json:
 ```json
 {
     "body": "Closing this as a duplicate of #6519.",
     "created_at": "2009-07-22T21:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5037",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5037#issuecomment-38346",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5037#issuecomment-38274",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -163,15 +161,15 @@ Closing this as a duplicate of #6519.
 
 ---
 
-archive/issue_comments_038347.json:
+archive/issue_comments_038275.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-07-22T21:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5037",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5037#issuecomment-38347",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5037#issuecomment-38275",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

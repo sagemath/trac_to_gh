@@ -6,15 +6,14 @@ archive/issues_008518.json:
     "body": "Assignee: tbd\n\nCC:  @jhpalmieri @fchapoton @dimpase\n\n## Hardware & associated software\n\n* Sun Blade 1000\n* 2 x 900 MHz UltraSPARC III+ CPUs\n* 2 GB RAM\n* Solaris 10 03/2005 (first release of Solaris 10)\n* gcc 4.4.3 (uses Sun linker and assembler)\n\n == Sage version ==\n* 4.3.4.alpha1\n\nThis builds fully on Solaris 10, and passes all doc tests. This is the first version of Sage to do this. \n\n == The problem with the optional extra_docs-20070208 ==\n\n```\nextra_docs-20070208/zodb/hylton-warsaw-zodb.pdf\nextra_docs-20070208/zodb/zodb3.html\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS redstart 5.10 Generic sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.3/configure --prefix=/usr/local/gcc-4.4.3 --with-mpfr=/usr/local/gcc-4.4.3 --with-build-time-tools=/usr/ccs/bin --with-gmp=/usr/local/gcc-4.4.3 --enable-languages=c,c++,fortran\nThread model: posix\ngcc version 4.4.3 (GCC)\n****************************************************\n./spkg-install: /export/home/drkirkby/sage-4.3.4.alpha1/local/lib/gap-4.4.7/: does not exist\n\nreal    0m8.457s\nuser    0m0.143s\nsys     0m1.989s\nsage: An error occurred while installing extra_docs-20070208\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8518\n\n",
     "created_at": "2010-03-13T01:33:43Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Optional package extra_docs-20070208 fails to install on Solaris 10 SPARC",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8518",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -71,15 +70,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8518
 
 ---
 
-archive/issue_comments_076937.json:
+archive/issue_comments_076810.json:
 ```json
 {
     "body": "solaris tickets should be closed as outdated",
     "created_at": "2020-06-19T18:07:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8518#issuecomment-76937",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/8518#issuecomment-76810",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -89,15 +88,15 @@ solaris tickets should be closed as outdated
 
 ---
 
-archive/issue_comments_076938.json:
+archive/issue_comments_076811.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-06-19T18:07:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8518#issuecomment-76938",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/8518#issuecomment-76811",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -107,15 +106,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_076939.json:
+archive/issue_comments_076812.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-06-19T18:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8518#issuecomment-76939",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8518#issuecomment-76812",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

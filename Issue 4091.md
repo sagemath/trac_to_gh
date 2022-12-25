@@ -6,15 +6,14 @@ archive/issues_004091.json:
     "body": "Assignee: mabshoff\n\n\n```\n\n****************************************** \nFile \"/home/john/sage-3.1.2.rc1/tmp/matrix_real_double_dense.py\", line 493: \n    sage: b = e * v \nException raised: \n    Traceback (most recent call last): \n      File \"/home/john/sage-3.1.2.rc1/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_8[8]>\", line 1, in <module> \n        b = e * v###line 493: \n    sage: b = e * v \n      File \"element.pyx\", line 1384, in \nsage.structure.element.RingElement.__mul__ \n(sage/structure/element.c:9357) \n      File \"coerce.pyx\", line 662, in \nsage.structure.coerce.CoercionModel_cache_maps.bin_op \n(sage/structure/coerce.c:6364) \n    TypeError: unsupported operand parent(s) for '*': 'Complex Double \nField' and 'Vector space of degree 3 and dimension 1 over Real Double \nField \n    User basis matrix: \n    [0.440242867236 0.567868371314 0.695493875393]' \n********************************************************************** \nFile \"/home/john/sage-3.1.2.rc1/tmp/matrix_real_double_dense.py\", line 494: \n    sage: diff = a.change_ring(CDF) - b \nException raised: \n    Traceback (most recent call last): \n      File \"/home/john/sage-3.1.2.rc1/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_8[9]>\", line 1, in <module> \n        diff = a.change_ring(CDF) - b###line 494: \n    sage: diff = a.change_ring(CDF) - b \n    NameError: name 'b' is not defined \n********************************************************************** \nFile \"/home/john/sage-3.1.2.rc1/tmp/matrix_real_double_dense.py\", line 495: \n    sage: abs(abs(diff)) < 1e-10 \nException raised: \n    Traceback (most recent call last): \n      File \"/home/john/sage-3.1.2.rc1/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_8[10]>\", line 1, in <module> \n        abs(abs(diff)) < RealNumber('1e-10')###line 495: \n    sage: abs(abs(diff)) < 1e-10 \n    TypeError: bad operand type for abs(): 'function' \n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4091\n\n",
     "created_at": "2008-09-09T18:45:48Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Sage 3.1.2.rc1: matrix_real_double_dense.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4091",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -80,15 +79,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4091
 
 ---
 
-archive/issue_comments_029509.json:
+archive/issue_comments_029450.json:
 ```json
 {
     "body": "I wonder if that first bug has anything to do with #3058, which gives problems when dealing with things with custom bases.",
     "created_at": "2008-09-10T02:41:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29509",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29450",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -98,15 +97,15 @@ I wonder if that first bug has anything to do with #3058, which gives problems w
 
 ---
 
-archive/issue_comments_029510.json:
+archive/issue_comments_029451.json:
 ```json
 {
     "body": "Never mind, it's probably just something to do with the new coercion stuff, just like it says.",
     "created_at": "2008-09-10T02:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29510",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29451",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -116,15 +115,15 @@ Never mind, it's probably just something to do with the new coercion stuff, just
 
 ---
 
-archive/issue_comments_029511.json:
+archive/issue_comments_029452.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2008-09-11T08:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29511",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29452",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -134,15 +133,15 @@ Changing assignee from mabshoff to @craigcitro.
 
 ---
 
-archive/issue_comments_029512.json:
+archive/issue_comments_029453.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-11T08:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29512",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29453",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -152,15 +151,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_029513.json:
+archive/issue_comments_029454.json:
 ```json
 {
     "body": "Actually, it wasn't coercion at all -- it was just as issue with linear algebra over inexact fields. Patch is attached. The issue had always been there, but it just became an issue since #3885 was fixed.\n\nI'm just running a testall, I'll check out any errors in the morning.",
     "created_at": "2008-09-11T08:24:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29513",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29454",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -172,15 +171,15 @@ I'm just running a testall, I'll check out any errors in the morning.
 
 ---
 
-archive/issue_comments_029514.json:
+archive/issue_comments_029455.json:
 ```json
 {
     "body": "Attachment [trac-4091.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091.patch) by @craigcitro created at 2008-09-11 08:24:25",
     "created_at": "2008-09-11T08:24:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29514",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29455",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -190,15 +189,15 @@ Attachment [trac-4091.patch](tarball://root/attachments/some-uuid/ticket4091/tra
 
 ---
 
-archive/issue_comments_029515.json:
+archive/issue_comments_029456.json:
 ```json
 {
     "body": "The patch fixes the errors in matrix/*.py[x] for me (ubuntu 8.04 32-bit).  In looking at the code, it seems okay.  However, something should be noted in the documentation that check only works if the ring is exact.",
     "created_at": "2008-09-11T09:49:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29515",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29456",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -208,15 +207,15 @@ The patch fixes the errors in matrix/*.py[x] for me (ubuntu 8.04 32-bit).  In lo
 
 ---
 
-archive/issue_comments_029516.json:
+archive/issue_comments_029457.json:
 ```json
 {
     "body": "Indeed, I should have added more documentation about this. I've added some documentation, and posted a second patch.",
     "created_at": "2008-09-11T10:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29516",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29457",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -226,15 +225,15 @@ Indeed, I should have added more documentation about this. I've added some docum
 
 ---
 
-archive/issue_comments_029517.json:
+archive/issue_comments_029458.json:
 ```json
 {
     "body": "Attachment [trac-4091-doc.patch](tarball://root/attachments/some-uuid/ticket4091/trac-4091-doc.patch) by mabshoff created at 2008-09-11 14:49:23\n\nI am happy with the second patch. Any followup should be dealt with via a new ticket since this one is holding up 3.1.2.rc2 :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-11T14:49:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29517",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29458",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -250,15 +249,15 @@ Michael
 
 ---
 
-archive/issue_comments_029518.json:
+archive/issue_comments_029459.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-12T23:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29518",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29459",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -268,15 +267,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029519.json:
+archive/issue_comments_029460.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc2",
     "created_at": "2008-09-12T23:29:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29519",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29460",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -286,15 +285,15 @@ Merged in Sage 3.1.2.rc2
 
 ---
 
-archive/issue_comments_029520.json:
+archive/issue_comments_029461.json:
 ```json
 {
     "body": "This patch fixes a couple noise issues",
     "created_at": "2008-09-13T00:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4091",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29520",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4091#issuecomment-29461",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_003076.json:
     "body": "Assignee: @timabbott\n\nThe spkg-debian script in the extcode spkg is not marked executable.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3076\n\n",
     "created_at": "2008-05-02T01:21:06Z",
     "labels": [
-        "debian-package",
+        "component: debian-package",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003076.json:
     "title": "spkg-debian in extcode spkg not executable",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3076",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3076
 
 ---
 
-archive/issue_comments_021227.json:
+archive/issue_comments_021183.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-02T09:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3076",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3076#issuecomment-21227",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3076#issuecomment-21183",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -47,15 +47,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_021228.json:
+archive/issue_comments_021184.json:
 ```json
 {
     "body": "Fixed in Sage 3.0.1.rc0",
     "created_at": "2008-05-02T09:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3076",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3076#issuecomment-21228",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3076#issuecomment-21184",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

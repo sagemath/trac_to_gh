@@ -6,15 +6,14 @@ archive/issues_002766.json:
     "body": "Assignee: @rlmill\n\nWhen a graph is small or dense, the adjacency matrix should be a dense matrix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2766\n\n",
     "created_at": "2008-04-02T02:24:18Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "graph adjacency matrix defaults to sparse",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2766",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2766
 
 ---
 
-archive/issue_comments_018996.json:
+archive/issue_comments_018956.json:
 ```json
 {
     "body": "This is the ONLY patch---ignore all others.",
     "created_at": "2008-04-02T03:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18996",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18956",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -47,15 +46,15 @@ This is the ONLY patch---ignore all others.
 
 ---
 
-archive/issue_comments_018997.json:
+archive/issue_comments_018957.json:
 ```json
 {
     "body": "Attachment [trac-2766-graph-am-dense.patch](tarball://root/attachments/some-uuid/ticket2766/trac-2766-graph-am-dense.patch) by @jasongrout created at 2008-04-02 03:14:47\n\nIgnore the .2.patch file---it contains unrelated changes by accident.",
     "created_at": "2008-04-02T03:14:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18997",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18957",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -67,15 +66,15 @@ Ignore the .2.patch file---it contains unrelated changes by accident.
 
 ---
 
-archive/issue_comments_018998.json:
+archive/issue_comments_018958.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-04-02T07:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18998",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18958",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -85,15 +84,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_018999.json:
+archive/issue_comments_018959.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha1",
     "created_at": "2008-04-02T19:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18999",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18959",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -103,15 +102,15 @@ Merged in Sage 3.0.alpha1
 
 ---
 
-archive/issue_comments_019000.json:
+archive/issue_comments_018960.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-02T19:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-19000",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18960",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +120,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_019001.json:
+archive/issue_comments_018961.json:
 ```json
 {
     "body": "Please mention the fact that you didn't doctest:\n\n```\nsage -t -long devel/sage-main/sage/graphs/graph.py\n*********************************************************************\nFile \"graph.py\", line 505:\n    sage: m = matrix(G); m.parent()\nExpected:\n    Full MatrixSpace of 5 by 5 sparse matrices over Integer Ring\nGot:\n    Full MatrixSpace of 5 by 5 dense matrices over Integer Ring\n```\n\nand \n\n```\nsage -t -long devel/sage-main/sage/matrix/constructor.py \n**********************************************************************\nFile \"constructor.py\", line 136:\n    sage: m = matrix(g); m; m.parent()\nExpected:\n    [0 1 0 0 1 1 0 0 0 0]\n    [1 0 1 0 0 0 1 0 0 0]\n    [0 1 0 1 0 0 0 1 0 0]\n    [0 0 1 0 1 0 0 0 1 0]\n    [1 0 0 1 0 0 0 0 0 1]\n    [1 0 0 0 0 0 0 1 1 0]\n    [0 1 0 0 0 0 0 0 1 1]\n    [0 0 1 0 0 1 0 0 0 1]\n    [0 0 0 1 0 1 1 0 0 0]\n    [0 0 0 0 1 0 1 1 0 0]\n    Full MatrixSpace of 10 by 10 sparse matrices over Integer Ring\nGot:\n    [0 1 0 0 1 1 0 0 0 0]\n    [1 0 1 0 0 0 1 0 0 0]\n    [0 1 0 1 0 0 0 1 0 0]\n    [0 0 1 0 1 0 0 0 1 0]\n    [1 0 0 1 0 0 0 0 0 1]\n    [1 0 0 0 0 0 0 1 1 0]\n    [0 1 0 0 0 0 0 0 1 1]\n    [0 0 1 0 0 1 0 0 0 1]\n    [0 0 0 1 0 1 1 0 0 0]\n    [0 0 0 0 1 0 1 1 0 0]\n    Full MatrixSpace of 10 by 10 dense matrices over Integer Ring\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-04-02T20:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-19001",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18961",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -189,15 +188,15 @@ Michael
 
 ---
 
-archive/issue_comments_019002.json:
+archive/issue_comments_018962.json:
 ```json
 {
     "body": "Reviewer asleep? :)",
     "created_at": "2008-04-02T20:52:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-19002",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18962",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -207,15 +206,15 @@ Reviewer asleep? :)
 
 ---
 
-archive/issue_comments_019003.json:
+archive/issue_comments_018963.json:
 ```json
 {
     "body": "Attachment [trac_2766-fix-doctests.patch](tarball://root/attachments/some-uuid/ticket2766/trac_2766-fix-doctests.patch) by mabshoff created at 2008-04-02 20:52:33\n\nMerged trac_2766-fix-doctests.patch in Sage 3.0.alpha1",
     "created_at": "2008-04-02T20:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2766",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-19003",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2766#issuecomment-18963",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_008232.json:
     "body": "Assignee: sage-combinat\n\nCC:  abmasse\n\nAs discussed on [sage-combinat-devel](http://groups.google.com/group/sage-combinat-devel/browse_thread/thread/9e90bbeb0328034c), cmp is broken for words. \n\n\n\n```\nAmusant: this boils down to:\n\nsage: W = Words(['a','b','c'])\nsage: W('a') == W([])\nTrue\nsage: W([]) == W('a')\nFalse\n```\n\n\nit causes problem else where :\n\n\n```\nsage: A = AlgebrasWithBasis(QQ).example(); A\nAn example of an algebra with basis: the free algebra on the\ngenerators ('a', 'b', 'c') over Rational Field\nsage: [a,b,c] = A.algebra_generators()\nsage: a.is_one()\nTrue\nsage: b.is_one()\nTrue\nsage: c.is_one()\nTrue\nsage: A.one().is_one()\nTrue\nsage: (a+b).is_one()\nFalse\nsage: (a+A.one()).is_one()\nFalse\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8232\n\n",
     "created_at": "2010-02-10T16:03:32Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.3",
     "title": "cmp function for words is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8232",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: sage-combinat
@@ -68,15 +67,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8232
 
 ---
 
-archive/issue_comments_072718.json:
+archive/issue_comments_072596.json:
 ```json
 {
     "body": "I just applied a patch which does the following things.\n\n1. Fixed `__cmp__` for `Word_class` which was broken.\n\n2. Remove the `__cmp__` from `FiniteWord_class` since the same function in `Word_class` does the job anyway and in a cleaner way : it doesn't use the (useless?) coerce function. Surprinsingly, removing it makes it faster :\n\n\n```\nBEFORE:\n\n    sage: w = Word([0]*10000)\n    sage: z = Word([0]*10000, alphabet=[0,1])\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: %timeit w.__cmp__(w)\n    125 loops, best of 3: 3.79 ms per loop\n    sage: %timeit w.__cmp__(z)\n    25 loops, best of 3: 13.3 ms per loop\n    sage: %timeit z.__cmp__(w)\n    5 loops, best of 3: 50.1 ms per loop\n    sage: %timeit z.__cmp__(z)\n    25 loops, best of 3: 35.7 ms per loop\n\n\nAFTER:\n\n    sage: w = Word([0]*10000)\n    sage: z = Word([0]*10000, alphabet=[0,1])\n    sage: type(w)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: type(z)\n    <class 'sage.combinat.words.word.FiniteWord_list'>\n    sage: %timeit w.__cmp__(w)\n    125 loops, best of 3: 3.89 ms per loop\n    sage: %timeit w.__cmp__(z)\n    125 loops, best of 3: 5.4 ms per loop\n    sage: %timeit z.__cmp__(w)\n    25 loops, best of 3: 35.9 ms per loop\n    sage: %timeit z.__cmp__(z)\n    25 loops, best of 3: 35.7 ms per loop\n```\n\n\nNOTE : The difference between w and z above is that the parent of w is the alphabet of all python objects which uses the cmp of python to compare the letters whereas z compares its letters relatively to the order of the letters defined by its parent (here 0 < 1 but one could also say 1 < 0) which is slower.\n\n3. The broken `__cmp__` was hidding one bug in `longest_common_prefix`. Indeed a doctest was passing while it wasn't supposed to:\n\n\n```\nBEFORE:\n\n    sage: w = Word('12345')\n    sage: w.longest_common_prefix(Word())\n    word: 1\n\nAFTER:\n\n    sage: w = Word('12345')\n    sage: w.longest_common_prefix(Word())\n    word: \n\n```\n",
     "created_at": "2010-02-10T17:42:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72718",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72596",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -150,15 +149,15 @@ AFTER:
 
 ---
 
-archive/issue_comments_072719.json:
+archive/issue_comments_072597.json:
 ```json
 {
     "body": "Depends on #8186",
     "created_at": "2010-02-10T17:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72719",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72597",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -168,15 +167,15 @@ Depends on #8186
 
 ---
 
-archive/issue_comments_072720.json:
+archive/issue_comments_072598.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-10T17:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72720",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72598",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -186,15 +185,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072721.json:
+archive/issue_comments_072599.json:
 ```json
 {
     "body": "Attachment [trac_8232_word_cmp_bug-sl.patch](tarball://root/attachments/some-uuid/ticket8232/trac_8232_word_cmp_bug-sl.patch) by @seblabbe created at 2010-02-10 17:55:29",
     "created_at": "2010-02-10T17:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72721",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72599",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -204,15 +203,15 @@ Attachment [trac_8232_word_cmp_bug-sl.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_072722.json:
+archive/issue_comments_072600.json:
 ```json
 {
     "body": "Hi, S\u00e9bastien !\n\nI finally got some time to look at your patch and everything seems fine, code makes sense, documentation builds without warning and the bugs mentionned in the description are fixed.\n\nThe only observation I would make is that it seems costly to use all those `try` and `catch` blocks in the `__cmp__(...)` function. Don't you think it may be better to use the `izip_longest` function of the `itertools` library, which fills the shortest iterator with a special character ? This way, you would only have to check if that character appear in `self_it or in `other_it` to choose which one is the smallest w.r.t the lexicographic order.",
     "created_at": "2010-02-16T11:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72722",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72600",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -226,15 +225,15 @@ The only observation I would make is that it seems costly to use all those `try`
 
 ---
 
-archive/issue_comments_072723.json:
+archive/issue_comments_072601.json:
 ```json
 {
     "body": "Never mind my last observation, it seems more complicated to use `izip_longest` since you have to choose a different character from the one occurring in the compared words... and there is no clean way that comes up to me since the letters of word can be any object.\n\nAnyway, the goal of the patch is reached, the documentation builds correctly, all tests pass, the bugs are fixed.\n\nPositive review !",
     "created_at": "2010-02-16T23:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72723",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72601",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -248,15 +247,15 @@ Positive review !
 
 ---
 
-archive/issue_comments_072724.json:
+archive/issue_comments_072602.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-16T23:35:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72724",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72602",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -266,15 +265,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_072725.json:
+archive/issue_comments_072603.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-17T20:38:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8232",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72725",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8232#issuecomment-72603",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

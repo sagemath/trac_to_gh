@@ -6,15 +6,14 @@ archive/issues_006848.json:
     "body": "Assignee: @jhpalmieri\n\nQuoted from #5726:\n\n```\nsage: RDF.random_element?\n...\nDefinition: RDF.random_element(min='-1', max='1')\n```\n\nNotice the stupid quotes around -1 and 1, which are very confusing!\n\nAlso, from the command line, if you type `RDF.random_element?`, you don't see a \"Definition\" line at all.  This patch fixes both issues: the first by using `eval(argument)`, as suggested by timdumol at #5726, and the second by setting \n\n```\nIPython.OInspect.getargspec = sageinspect.sage_getargspec\n```\n\nin sage.misc.interpreter.  Note that `sage_getargspec` is a modified version of `getargspec` to start with, so this modification should work in general.  (It was already in use, essentially, in the notebook -- introspection in the notebook calls `sage_getdef`, which in turn calls `sage_getargspec`.  See the function `docstring` in `sage.server.support`.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6848\n\n",
     "created_at": "2009-08-30T21:36:25Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs review] \"Definition:\" messed up in notebook and command line in cython code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6848",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jhpalmieri
@@ -46,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6848
 
 ---
 
-archive/issue_comments_056473.json:
+archive/issue_comments_056370.json:
 ```json
 {
     "body": "Attachment [trac_6848-defn.patch](tarball://root/attachments/some-uuid/ticket6848/trac_6848-defn.patch) by @jhpalmieri created at 2009-08-30 21:38:47\n\ndepends on patch at #5726",
     "created_at": "2009-08-30T21:38:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6848#issuecomment-56473",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6848#issuecomment-56370",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -66,15 +65,15 @@ depends on patch at #5726
 
 ---
 
-archive/issue_comments_056474.json:
+archive/issue_comments_056371.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-09-08T23:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6848#issuecomment-56474",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6848#issuecomment-56371",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -84,15 +83,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_056475.json:
+archive/issue_comments_056372.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-09T10:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6848#issuecomment-56475",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6848#issuecomment-56372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

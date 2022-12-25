@@ -6,7 +6,7 @@ archive/issues_000311.json:
     "body": "Assignee: @ncalexan\n\nKeywords: test examples run\n\nThe current testing architecture could use some spring cleaning.\n\nncalexan has started updating it, with the first cut having:\n\n* better error reporting\n* more flexible importing, so that, for example, a test can import its current file without full sage scoping\n* a Python API so testing is integrated into the SAGE shell (and into the notebook, although this is not particularly powerful at this time)\n\nSecondary tools might make it:\n\n* easier to order the tests in some way, such as most recently modified or last failing test first\n* easy to mine the examples for documenting\n* possible to generate statistics and other useful tidbits from the existing examples\n\nIf you're interested in a particular feature, please let ncalexan know.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/311\n\n",
     "created_at": "2007-03-07T19:01:16Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000311.json:
     "title": "Update sage -t testing structure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/311",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @ncalexan
@@ -46,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/311
 
 ---
 
-archive/issue_comments_001483.json:
+archive/issue_comments_001479.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-03-07T19:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1483",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1479",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -64,15 +64,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_001484.json:
+archive/issue_comments_001480.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-03-07T19:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1484",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1480",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -82,15 +82,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_001485.json:
+archive/issue_comments_001481.json:
 ```json
 {
     "body": "Request: it would be nice if Ctrl-C was better behaved.",
     "created_at": "2007-03-08T18:23:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1485",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1481",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -100,15 +100,15 @@ Request: it would be nice if Ctrl-C was better behaved.
 
 ---
 
-archive/issue_comments_001486.json:
+archive/issue_comments_001482.json:
 ```json
 {
     "body": "What is the status here? It has been a while.\n\nCheers,\n\nMichael",
     "created_at": "2007-09-10T02:44:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1486",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1482",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -122,15 +122,15 @@ Michael
 
 ---
 
-archive/issue_comments_001487.json:
+archive/issue_comments_001483.json:
 ```json
 {
     "body": "We should break this ticker up in bits that we want to get done and close this ticker as invalid since it is a hodgepodge of various things.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-16T09:02:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1487",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1483",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -144,15 +144,15 @@ Michael
 
 ---
 
-archive/issue_comments_001488.json:
+archive/issue_comments_001484.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-03-21T16:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1488",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1484",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -162,15 +162,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_001489.json:
+archive/issue_comments_001485.json:
 ```json
 {
     "body": "I have moved the Python API request to #2630.  #679 provides statistics and better error reporting.  I am closing this as the rest of the items are too vague to create individual tickets for.",
     "created_at": "2008-03-21T16:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1489",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1485",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -180,15 +180,15 @@ I have moved the Python API request to #2630.  #679 provides statistics and bett
 
 ---
 
-archive/issue_comments_001490.json:
+archive/issue_comments_001486.json:
 ```json
 {
     "body": "Do not invalidate tickets like this since it is certainly a borderline case. Me not objecting in IRC is *not* approval ;)\n\nCheers,\n\nMichael",
     "created_at": "2008-03-21T21:43:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/311",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1490",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/311#issuecomment-1486",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

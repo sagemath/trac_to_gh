@@ -6,15 +6,14 @@ archive/issues_002922.json:
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout @novoselt\n\nWhen plotting a vector field, it is useful to be able to scale the length of the arrows. This is similar to [mma:ScaleFunction](http://reference.wolfram.com/mathematica/VectorFieldPlots/ref/ScaleFunction.html). \n\ne.g.:\n* an upper therehold: `lambda x: min(1,x)`\n* logarithmic: `lambda x: log(1+x)`\n\nwhere x is the positive absolute length of the vector and each coordinate is divided by that - or some generalization of that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2922\n\n",
     "created_at": "2008-04-14T21:28:18Z",
     "labels": [
-        "graphics",
-        "minor",
-        "enhancement"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "scale function for plot_vector_field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2922",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2922
 
 ---
 
-archive/issue_comments_020115.json:
+archive/issue_comments_020074.json:
 ```json
 {
     "body": "This would be good.  There are two options for this.\n\n1. Rewrite the matplotlib scale to take either a number or a callable function, and somehow make the Sage interface to this make scaling do what one would expect (the mpl scale does NOT behave as expected, as it essentially makes its own adhoc function similar to ones above).\n\n2. Get at the underlying matplotlib object for each and every arrow in the Quiver and adjust the length. \n\nI'm not sure how the second one could even happen.  But the first one requires some non-trivial changes to matplotlib.quiver (since currently scale is an attribute only), and probably should be sent upstream if done.",
     "created_at": "2009-09-29T20:49:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20115",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20074",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -61,15 +60,15 @@ I'm not sure how the second one could even happen.  But the first one requires s
 
 ---
 
-archive/issue_comments_020116.json:
+archive/issue_comments_020075.json:
 ```json
 {
     "body": "So basically you want to give a function that gives the length of a vector?  That sounds reasonable.\n\nSince Sage is actually the thing that generates the vectors, and matplotlib just plots them, I think scaling the vectors in Sage to each have the length you want is the correct thing to do here, before passing them to matplotlib.\n\nplot_vector_field((-y,-x), (x,0,1),(y,0,1), norm=f)\n\nwhere f is a function defined to take f(v,w), where v is the vector, w is the point in space (as a vector).\n\nso your examples would be:\n\nf=lambda v,w: min(1,v.norm())\n\nf=lambda v,w: log(1+v.norm())\n\nWe could then adjust the scale parameter of the quiver plot so that the arrows would plot exactly the length you wanted (I believe units='x', scale=1 should do the job).",
     "created_at": "2009-09-29T21:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20116",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20075",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -93,15 +92,15 @@ We could then adjust the scale parameter of the quiver plot so that the arrows w
 
 ---
 
-archive/issue_comments_020117.json:
+archive/issue_comments_020076.json:
 ```json
 {
     "body": "Well, yeah, you can use the same thing you do in plot_slope_field to get the norm (in fact, numpy has this nice absolute() function that mpl uses).  But it looked to me like it might not be possible to get around the auto-scaling that mpl does (see matplotlib.quiver??), since ordinarily scale=1 is definitely *not* what one wants.  I will look to see if units='x' would actually get around that.",
     "created_at": "2009-09-30T00:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20117",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20076",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -111,15 +110,15 @@ Well, yeah, you can use the same thing you do in plot_slope_field to get the nor
 
 ---
 
-archive/issue_comments_020118.json:
+archive/issue_comments_020077.json:
 ```json
 {
     "body": "The scale argument says the ratio of length to units, where units are specified in the units parameter.  Usually the units are not in terms of data coordinates, I believe.  So what you want is to make the units equal to data coordinates (i.e., 'x' or 'y'), instead of a function of the plot size, like 'width' and 'height' are.",
     "created_at": "2009-09-30T00:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20118",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20077",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -129,15 +128,15 @@ The scale argument says the ratio of length to units, where units are specified 
 
 ---
 
-archive/issue_comments_020119.json:
+archive/issue_comments_020078.json:
 ```json
 {
     "body": "After playing with this a bit more, I decided that, while what matplotlib has makes sense, it isn't what we want.  I just sent a message to the matplotlib-users mailing list.",
     "created_at": "2009-09-30T01:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20119",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20078",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -147,15 +146,15 @@ After playing with this a bit more, I decided that, while what matplotlib has ma
 
 ---
 
-archive/issue_comments_020120.json:
+archive/issue_comments_020079.json:
 ```json
 {
     "body": "Eric Firing just committed the change to the matplotlib quiver function that allows us to scale arrows easily.  See http://www.nabble.com/scaling-arrows-in-quiver-tt25673613.html#a25673613\n\nNow we just need to update the matplotlib spkg and wrap it (the new scale_units function).  This might wait a while until the next release of matplotlib comes out, unless someone wants to update the spkg before then.",
     "created_at": "2009-10-01T04:09:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20120",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20079",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -167,15 +166,15 @@ Now we just need to update the matplotlib spkg and wrap it (the new scale_units 
 
 ---
 
-archive/issue_comments_020121.json:
+archive/issue_comments_020080.json:
 ```json
 {
     "body": "(his commit is here: http://github.com/astraw/matplotlib/commit/b24fa7c6aef0db82ae4c9108c86abf3ddd871e34 )",
     "created_at": "2009-10-01T04:13:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20121",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20080",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -185,15 +184,15 @@ archive/issue_comments_020121.json:
 
 ---
 
-archive/issue_comments_020122.json:
+archive/issue_comments_020081.json:
 ```json
 {
     "body": "I'd like to be able to pass the scale kwarg to quiver, is that what we're talking about doing?",
     "created_at": "2009-10-19T19:57:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20122",
-    "user": "edrex"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20081",
+    "user": "https://trac.sagemath.org/admin/accounts/users/edrex"
 }
 ```
 
@@ -203,15 +202,15 @@ I'd like to be able to pass the scale kwarg to quiver, is that what we're talkin
 
 ---
 
-archive/issue_comments_020123.json:
+archive/issue_comments_020082.json:
 ```json
 {
     "body": "Replying to [comment:8 edrex]:\n> I'd like to be able to pass the scale kwarg to quiver, is that what we're talking about doing?\n\nyes.",
     "created_at": "2009-10-20T15:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20123",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20082",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -224,15 +223,15 @@ yes.
 
 ---
 
-archive/issue_comments_020124.json:
+archive/issue_comments_020083.json:
 ```json
 {
     "body": "See also #11208, which is also about quivers.\n\nIs this ready to wrap?  We've definitely updated mpl since a year and a half ago.",
     "created_at": "2011-04-17T00:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20124",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20083",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -244,15 +243,15 @@ Is this ready to wrap?  We've definitely updated mpl since a year and a half ago
 
 ---
 
-archive/issue_comments_020125.json:
+archive/issue_comments_020084.json:
 ```json
 {
     "body": "Replying to [comment:10 kcrisman]:\n\n> Is this ready to wrap?  We've definitely updated mpl since a year and a half ago.\n\nYes, it should be ready to wrap now.",
     "created_at": "2011-04-17T00:42:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20125",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20084",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -266,15 +265,15 @@ Yes, it should be ready to wrap now.
 
 ---
 
-archive/issue_comments_020126.json:
+archive/issue_comments_020085.json:
 ```json
 {
     "body": "Just a note, this ticket would provide a nice solution to the issue raised at http://ask.sagemath.org/question/1816/visualize-vector-field-with-singularities.",
     "created_at": "2012-09-30T21:33:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20126",
-    "user": "@benjaminfjones"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20085",
+    "user": "https://github.com/benjaminfjones"
 }
 ```
 
@@ -284,15 +283,15 @@ Just a note, this ticket would provide a nice solution to the issue raised at ht
 
 ---
 
-archive/issue_comments_020127.json:
+archive/issue_comments_020086.json:
 ```json
 {
     "body": "Another thing requested somewhat often is that all have the same length, similar to slope field but with arrows.  #11208 is still relevant here.  (We may also be able to remove the hack there if we haven't already.)",
     "created_at": "2020-06-19T19:40:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20127",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20086",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -302,15 +301,15 @@ Another thing requested somewhat often is that all have the same length, similar
 
 ---
 
-archive/issue_comments_020128.json:
+archive/issue_comments_020087.json:
 ```json
 {
     "body": "Another note: Apparently `VectorField.plot()` from the Sage manifolds project has some of the things discussed here.",
     "created_at": "2022-07-28T15:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2922",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20128",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2922#issuecomment-20087",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

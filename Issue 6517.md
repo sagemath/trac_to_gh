@@ -6,15 +6,13 @@ archive/issues_006517.json:
     "body": "Assignee: tbd\n\nCC:  bpage @mwhansen @hemmecke\n\nThis is an update to fricas to use ecl and to update to the recent fricas release. The package is based on fricas-1.0.3.p0.spkg. \n\nThe package can be downloaded here: http://www.mediafire.com/file/im5zd201mh0/fricas-1.0.7.p0.spkg\n\nAdam\n\nIssue created by migration from https://trac.sagemath.org/ticket/6517\n\n",
     "created_at": "2009-07-12T11:52:39Z",
     "labels": [
-        "packages: optional",
-        "major",
-        "enhancement"
+        "component: packages: optional"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "[with SPKG, needs review] FriCAS 1.0.7",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6517",
-    "user": "@maxthemouse"
+    "user": "https://github.com/maxthemouse"
 }
 ```
 Assignee: tbd
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6517
 
 ---
 
-archive/issue_comments_053086.json:
+archive/issue_comments_052986.json:
 ```json
 {
     "body": "This might depends on or related to ticket #6318.",
     "created_at": "2009-07-12T12:08:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53086",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52986",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -53,15 +51,15 @@ This might depends on or related to ticket #6318.
 
 ---
 
-archive/issue_comments_053087.json:
+archive/issue_comments_052987.json:
 ```json
 {
     "body": "Ticket #6318 is related. The patches on that ticket were tested with this package.",
     "created_at": "2009-07-13T06:11:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53087",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52987",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -71,15 +69,15 @@ Ticket #6318 is related. The patches on that ticket were tested with this packag
 
 ---
 
-archive/issue_comments_053088.json:
+archive/issue_comments_052988.json:
 ```json
 {
     "body": "\n```\n79 FriCAS installation finished.\n\nreal\t46m21.303s\nuser\t34m38.652s\nsys\t4m30.484s\nSuccessfully installed fricas-1.0.7.p0\n\n```\n\n\nI tested the patches from #6318 related to fricas.\n\n./sage -t --long --optional devel/sage/sage/interface/fricas.py\n\nalls tests passed.\n\nPositive review.\n\nJaap",
     "created_at": "2009-07-14T15:45:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53088",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52988",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -109,15 +107,15 @@ Jaap
 
 ---
 
-archive/issue_comments_053089.json:
+archive/issue_comments_052989.json:
 ```json
 {
     "body": "Replying to [comment:3 awebb]:\n> Ticket #6318 is related. The patches on that ticket were tested with this package.\nSo what is the order of merging patches here? Is it\n1. merge the patches at #6318;\n2. then merge the spkg on this ticket in the optional spkg repository?\nIn that case, #6318 must get positive review first. On the other hand, is this ticket and its spkg not at all dependent on #6318?",
     "created_at": "2009-07-19T16:48:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53089",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52989",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -132,15 +130,15 @@ In that case, #6318 must get positive review first. On the other hand, is this t
 
 ---
 
-archive/issue_comments_053090.json:
+archive/issue_comments_052990.json:
 ```json
 {
     "body": "Replying to [comment:5 mvngu]:\n> Replying to [comment:3 awebb]:\n> > Ticket #6318 is related. The patches on that ticket were tested with this package.\n> So what is the order of merging patches here? Is it\n>  1. merge the patches at #6318;\n>  1. then merge the spkg on this ticket in the optional spkg repository?\n> In that case, #6318 must get positive review first. On the other hand, is this ticket and its spkg not at all dependent on #6318?\n\n\nI think it is independent of #6318 in the sense that it updates the fricas optional spkg.\n\nAnd than it fixes the fricas.py failures mentioned in #6318, Not the axiom issues.\n\nJaap",
     "created_at": "2009-07-19T16:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53090",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52990",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -163,15 +161,15 @@ Jaap
 
 ---
 
-archive/issue_comments_053091.json:
+archive/issue_comments_052991.json:
 ```json
 {
     "body": "I've uploaded Adam's FriCAS 1.0.7 spkg to\n\nhttp://sage.math.washington.edu/home/mvngu/patch/fricas-1.0.7.p0.spkg\n\nI install it as in the following transcript, but received \"configure: error: Unable to determine Lisp flavor\":\n\n```\n[mvngu@sage sage-4.1.1.alpha0]$ ./sage -f /home/mvngu/patch/fricas-1.0.7.p0.spkg\n<insall-messages>\naxiom_build_bindir = /scratch/mvngu/release/sage-4.1.1.alpha0/spkg/build/fricas-1.0.7.p0/build-dir/build/x86_64-unknown-linux/bin\nchecking Lisp implementation... ECL (Embeddable Common-Lisp) 9.4.1\nCopyright (C) 1984 Taiichi Yuasa and Masami Hagiya\nCopyright (C) 1993 Giuseppe Attardi\nCopyright (C) 2000 Juan J. Garcia-Ripoll\nECL is free software, and you are welcome to redistribute it\nunder certain conditions; see file 'Copyright' for details.\nType :h for Help.  Top level.\n> \n;;; Loading \"/scratch/mvngu/release/sage-4.1.1.alpha0/spkg/build/fricas-1.0.7.p0/src/config.lisp\"\nFilesystem error with pathname #P\"SYS:cmp.NEWEST\".\nEither\n 1) the file does not exist, or\n 2) we are not allow to access the file, or\n 3) the pathname points to a broken symbolic link.\nBroken at SI:BYTECODES.No restarts available.\nBroken at SI:BYTECODES. File: #P\"/scratch/mvngu/release/sage-4.1.1.alpha0/spkg/build/fricas-1.0.7.p0/src/config.lisp\" (Form #1)\n>> \nconfigure: error: Unable to determine Lisp flavor\n***********************************************************\nFailed to configure FriCAS.\n***********************************************************\n\nreal\t0m0.577s\nuser\t0m0.250s\nsys\t0m0.340s\nsage: An error occurred while installing fricas-1.0.7.p0\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /scratch/mvngu/release/sage-4.1.1.alpha0/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/scratch/mvngu/release/sage-4.1.1.alpha0/spkg/build/fricas-1.0.7.p0 and type 'make'.\nInstead type \"/scratch/mvngu/release/sage-4.1.1.alpha0/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/scratch/mvngu/release/sage-4.1.1.alpha0/spkg/build/fricas-1.0.7.p0\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\n```\n\nAm I doing something wrong or missing something?",
     "created_at": "2009-07-19T18:41:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53091",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52991",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -229,15 +227,15 @@ Am I doing something wrong or missing something?
 
 ---
 
-archive/issue_comments_053092.json:
+archive/issue_comments_052992.json:
 ```json
 {
     "body": "This package depends on #6318 for the fricas interface to work therefore that patch needs to go in first. \n\nadam",
     "created_at": "2009-07-24T06:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53092",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52992",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -249,15 +247,15 @@ adam
 
 ---
 
-archive/issue_comments_053093.json:
+archive/issue_comments_052993.json:
 ```json
 {
     "body": "In previous versions there was an install option for the lisp flavour but according to the fricas mailing list, this is depreciated and fricas is supposed to detect which lisp is used. I have not yet tested with 4.1.1.alpha0 but it worked for me on 4.0 and 4.1.",
     "created_at": "2009-07-24T15:13:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53093",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52993",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -267,15 +265,15 @@ In previous versions there was an install option for the lisp flavour but accord
 
 ---
 
-archive/issue_comments_053094.json:
+archive/issue_comments_052994.json:
 ```json
 {
     "body": "update: Tested package with 4.1.1.alpha0 and it worked. This could be sensitive to the lisp install but I am not an expert on this. The long path name might also be a problem but this only speculation.",
     "created_at": "2009-07-25T08:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53094",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52994",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -285,15 +283,15 @@ update: Tested package with 4.1.1.alpha0 and it worked. This could be sensitive 
 
 ---
 
-archive/issue_comments_053095.json:
+archive/issue_comments_052995.json:
 ```json
 {
     "body": "Could someone comment on the relation between the two pairs of issues:\n- this one, #6318\n- #4461, #4036 ?\n\nIs the package here built on the one at #4461? Are the changes on #4036 independent of the ones at #6318?\n\nThanks.\n\nBurcin",
     "created_at": "2009-08-05T08:00:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53095",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52995",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -311,15 +309,15 @@ Burcin
 
 ---
 
-archive/issue_comments_053096.json:
+archive/issue_comments_052996.json:
 ```json
 {
     "body": "Sorry, \nI think there is a bit of cross-posting of tickets. My bad. I did not see the the earlier ones (#4461 and #4036) and with the new versions of fricas it is not clear to me which is now needed. I agree that the axiom and fricas should be separate interfaces although at the moment the fricas interface is a basically a subclass of the axiom one. They are still very similar but it means that to test axiom.py one needs both axiom and fricas installed. \n\nAdam",
     "created_at": "2009-08-05T08:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53096",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52996",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -332,15 +330,15 @@ Adam
 
 ---
 
-archive/issue_comments_053097.json:
+archive/issue_comments_052997.json:
 ```json
 {
     "body": "Just a comment. \n#4461 deals with an issue with clisp which is no longer used. It seems that it could just be closed now. \n#4036 are independent of #6318. (I am not sure what they do.)\n#6318 fix some interface issues but perhaps should be added after #4036?\n\nAs a guess: 1. apply #4036 to a new version (and rebase), 2. apply #6318 and test, 3. check/make a new fricas spkg. \n\nAdam\n\nPS I will not have computer access for at least a week but can look at it after that if no one else has.",
     "created_at": "2009-08-09T12:52:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53097",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52997",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -359,15 +357,15 @@ PS I will not have computer access for at least a week but can look at it after 
 
 ---
 
-archive/issue_comments_053098.json:
+archive/issue_comments_052998.json:
 ```json
 {
     "body": "Replying to [comment:12 burcin]:\n> Could someone comment on the relation between the two pairs of issues:\n>  - this one, #6318\n>  - #4461, #4036 ?\n> \n> Is the package here built on the one at #4461? Are the changes on #4036 independent of the ones at #6318?\n> \n> Thanks.\n> \n> Burcin\n\nThe patches at #4036 are already in and I only added a few fricas tests. I would apply #6318 first, then #4036 (trac_4036-axiom_interface.patch only) and of course axiom and fricas need to be installed to test everything.\n\nAdam",
     "created_at": "2009-08-17T15:18:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53098",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52998",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -390,15 +388,15 @@ Adam
 
 ---
 
-archive/issue_comments_053099.json:
+archive/issue_comments_052999.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-15T00:18:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53099",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-52999",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -408,15 +406,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_053100.json:
+archive/issue_comments_053000.json:
 ```json
 {
     "body": "I've created an spkg builder at http://boxen.math.washington.edu:29792 .\nThis code is not an spkg itself but rather builds two spkg: fricas-VERSION.spkg and fricasaldor-VERSION.spkg. It requires a checkout of the FriCAS sources from SVN at sourceforge.\n\nOn sage.math the following should work.\n\nWARNING, before you start compiling FriCAS, you should read the top of the Makefile, in particular the part connected to an X server. It's unwise to have the X server running on a different machine from where you compile the spkg!!! The X server is not needed for actually installing the .spkg into Sage.\n\nGet the FriCAS sources:\n\n```\nsvn export https://fricas.svn.sourceforge.net/svnroot/fricas/trunk fricas-sources\n```\n\n\nUse the installed Aldor from my HOME (or install aldor from http://www.aldor.org).\n\n```\nexport ALDORROOT=/home/hemmecke/aldorroot\nexport PATH=$ALDORROOT/bin:$PATH\n```\n\n\nMake sure you have ecl 9.8.4.\n\n```\nexport PATH=$SAGE_ROOT/local/bin:$PATH\nexport LD_LIBRARY_PATH=$SAGE_ROOT/local/lib:$LD_LIBRARY_PATH\nhg clone http://boxen.math.washington.edu:29792 fricas-aldor-spkg\ncd fricas-aldor-spkg\nmake\n```\n\n\nInstalling FriCAS inside Sage\n\n```\ncp fricas-aldor-spkg/spkg/fricas*.spkg  $SAGE_ROOT/spkg/optional\nsage -i fricasaldor-VERSION\n```\n\n\nThe VERSION of the spkg will automatically be extracted from FriCAS configure script.\nVERSION is appropriate if you use a proper release version, i.e. (should work for a release > 1.0.7)\n\n```\nsvn export https://fricas.svn.sourceforge.net/svnroot/fricas/releases/1.0.8 fricas-sources\n```\n\nand running the fricas-aldor-spkg/Makefile will produce VERSION=1.0.8.\n\nRalf",
     "created_at": "2009-10-15T00:18:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53100",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53000",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -476,15 +474,15 @@ Ralf
 
 ---
 
-archive/issue_comments_053101.json:
+archive/issue_comments_053001.json:
 ```json
 {
     "body": "Ooops, you should give a pointer to the FriCAS sources...\nand you will probably have to download some additional files.\n\n```\nhg clone http://boxen.math.washington.edu:29792 fricas-aldor-spkg\ncd fricas-aldor-spkg\nmake spadhelp\nmake noweb\nmake FRICAS_SRC=../fricas-sources\n```\n",
     "created_at": "2009-10-15T00:26:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53101",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53001",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -504,15 +502,15 @@ make FRICAS_SRC=../fricas-sources
 
 ---
 
-archive/issue_comments_053102.json:
+archive/issue_comments_053002.json:
 ```json
 {
     "body": "Hi,\n\nI tried on sage.math and on my own machine. When doing \n\n```\nmake spadhelp\nmake noweb\n```\n\n\nI get messages like: \n\n```\ngrep: /home/awebb/configure.ac: No such file or directory\ngrep: /home/awebb/configure.ac: No such file or directory\n```\n\n\nSo it seems to be looking in the wrong place. I then get the following when I try to make.\n\n\n```\nsage subshell$ make FRICAS_SRC=../fricas-sources\nmkdir -p build\ntouch -t 199901010000 build/.dir\n(cd build; /home/awebb/test_fricas/fricas-sources/configure --enable-aldor --with-lisp=ecl)\nchecking build system type... x86_64-unknown-linux\nchecking host system type... x86_64-unknown-linux\nchecking target system type... x86_64-unknown-linux\nchecking for make... make\nchecking for gcc... gcc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables...\nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether gcc accepts -g... yes\nchecking for gcc option to accept ISO C89... none needed\nchecking for a BSD-compatible install... /usr/bin/install -c\nchecking for touch... touch\nchecking for mktemp... mktemp\nchecking for gawk... no\nchecking for mawk... mawk\nchecking for gtar... no\nchecking for tar... tar\nchecking for ranlib... ranlib\nchecking for ar... ar\nchecking for latex... /usr/bin/latex\nchecking for makeindex... makeindex\nchecking for notangle... no\nchecking for noweave... no\nconfigure: error: noweb utils and noweb sources missing\nmake: *** [build/src/aldor/al/libaxiom.al] Error 1\n/home/awebb/test_fricas/fricas-aldor-spkg\nsage subshell$ ls\nbuild        Makefile  spkg-install.fricas       SPKG.txt.fricas       zips\ngpl-3.0.txt  share     spkg-install.fricasaldor  SPKG.txt.fricasaldor\n/home/awebb/test_fricas/fricas-aldor-spkg\nsage subshell$ \n```\n\n\nnoweb-2.10a.tgz is in the zips directory. Is the script looking in the fricas-sources instead?\n\nCheers,\nAdam",
     "created_at": "2009-10-15T06:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53102",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53002",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -588,15 +586,15 @@ Adam
 
 ---
 
-archive/issue_comments_053103.json:
+archive/issue_comments_053003.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-18T10:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53103",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53003",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -606,15 +604,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_053104.json:
+archive/issue_comments_053004.json:
 ```json
 {
     "body": "Hi,\n\nI apologize if I misunderstood. My impression was that work was ongoing and packages would be made available when ready.\n\nWhen I tried making the packages on sage.math I eventually get to the following. \n\n\n```\nmake[3]: Entering directory `/scratch/awebb/fricas-aldor-spkg/build/src/aldor'\nMakefile:259: domains.mk: No such file or directory\necho \"domains := \\\\\" > domains.mk\necho ')lisp (dolist (c (|allConstructors|)) (format t \"~A \\\\~%\" (|constructor?| c))) (quit)'|(DAASE=/scratch/awebb/fricas-aldor-spkg/build/target/x86_64-unknown-linux /scratch/awebb/fricas-aldor-spkg/build/target/x86_64-unknown-linux/bin/AXIOMsys)|grep '\\\\'|grep -v '.*- \\\\'|grep -v NIL|sed -e 's/.*-> //'|sort >> domains.mk\necho >> domains.mk\nmake[3]: Leaving directory `/scratch/awebb/fricas-aldor-spkg/build/src/aldor'\nmake[3]: Entering directory `/scratch/awebb/fricas-aldor-spkg/build/src/aldor'\nsvn cat https://svn.origo.ethz.ch/algebraist/trunk/aldor/lib/libax0/axiom.as > axiom.as\nsvn: /usr/local/sage/local/lib/libcrypto.so.0.9.8: no version information available (required by /usr/lib/libpq.so.5)\nsvn: /usr/local/sage/local/lib/libssl.so.0.9.8: no version information available (required by /usr/lib/libpq.so.5)\nsvn: /usr/local/sage/local/lib/libssl.so.0.9.8: no version information available (required by /usr/lib/libneon.so.27)\nsvn: /usr/local/sage/local/lib/libcrypto.so.0.9.8: no version information available (required by /usr/lib/libneon.so.27)\nsvn: relocation error: /usr/lib/libneon.so.27: symbol SSL_CTX_set_client_cert_cb, version OPENSSL_0.9.8 not defined in file libssl.so.0.9.8 with link time reference\nmake[3]: *** [axiom.as] Error 127\nmake[3]: Leaving directory `/scratch/awebb/fricas-aldor-spkg/build/src/aldor'\nmake[2]: *** [all-aldor] Error 2\nmake[2]: Leaving directory `/scratch/awebb/fricas-aldor-spkg/build/src'\nmake[1]: *** [all-src] Error 2\nmake[1]: Leaving directory `/scratch/awebb/fricas-aldor-spkg/build'\nmake: *** [build/src/aldor/al/libaxiom.al] Error 2\n\n```\n\n\nI will try again on a local machine although my machine is much slower.\n\nAdam",
     "created_at": "2009-11-14T10:22:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53104",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53004",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -658,15 +656,15 @@ Adam
 
 ---
 
-archive/issue_comments_053105.json:
+archive/issue_comments_053005.json:
 ```json
 {
     "body": "I got the same result locally.  ~ Adam",
     "created_at": "2009-11-14T12:10:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53105",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53005",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -676,15 +674,15 @@ I got the same result locally.  ~ Adam
 
 ---
 
-archive/issue_comments_053106.json:
+archive/issue_comments_053006.json:
 ```json
 {
     "body": "I am not sure what the trouble was but I tried again and made the package. The package without the aldor interface is at http://sage.math.washington.edu/home/awebb/fricas-1.0.8.spkg. It installs and I can start the console.\n\nAdam",
     "created_at": "2009-11-14T13:42:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53106",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53006",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -696,15 +694,15 @@ Adam
 
 ---
 
-archive/issue_comments_053107.json:
+archive/issue_comments_053007.json:
 ```json
 {
     "body": "Replying to [comment:22 awebb]:\n\n> I apologize if I misunderstood. My impression was that work was ongoing and packages would be made available when ready.\n\nYes, that was the plan, and I volunteer to be the maintainer of the spkg-builder.\nThe fricasaldor stuff is just a question of time.\n \n> When I tried making the packages on sage.math I eventually get to the following. \n> {{{\n> svn cat https://svn.origo.ethz.ch/algebraist/trunk/aldor/lib/libax0/axiom.as > axiom.as\n> svn: /usr/local/sage/local/lib/libcrypto.so.0.9.8: no version information available (required by /usr/lib/libpq.so.5)\n> }}}\n\nI also experienced that, but this must be a problem with \"sage -sh\". One doesn't get such wierd messages when you simply do as I described above. In particular not 'sage -sh' but just\n\n```\nexport PATH=$SAGE_ROOT/local/bin:$PATH\nexport LD_LIBRARY_PATH=$SAGE_ROOT/local/lib:$LD_LIBRARY_PATH\n```\n",
     "created_at": "2009-11-14T18:54:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53107",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53007",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -733,15 +731,15 @@ export LD_LIBRARY_PATH=$SAGE_ROOT/local/lib:$LD_LIBRARY_PATH
 
 ---
 
-archive/issue_comments_053108.json:
+archive/issue_comments_053008.json:
 ```json
 {
     "body": "Replying to [comment:24 awebb]:\n> http://sage.math.washington.edu/home/awebb/fricas-1.0.8.spkg. It installs and I can start the console. \nIf it works, someone should upload it to http://sagemath.org/packages/optional/ .\nWhat is the workflow to get the package into the \"optional\" archive?",
     "created_at": "2009-11-14T18:58:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53108",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53008",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -754,15 +752,15 @@ What is the workflow to get the package into the "optional" archive?
 
 ---
 
-archive/issue_comments_053109.json:
+archive/issue_comments_053009.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-11-14T19:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53109",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53009",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -772,15 +770,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_053110.json:
+archive/issue_comments_053010.json:
 ```json
 {
     "body": "I think it just needs to be reviewed. If it works then it should be set to 'positive review' and then the current release manager looks at it. If they are happy than they put it in the optional packages. The package works for me and I ran a quick test from inside sage so I would give it a positive review. If the package also works for you than I guess the status can be changed. BTW I used sage 4.2.1.alpha0 for building the package and testing it. This includes ecl 9.10.2.\n\nAdam",
     "created_at": "2009-11-14T19:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53110",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53010",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -792,15 +790,15 @@ Adam
 
 ---
 
-archive/issue_comments_053111.json:
+archive/issue_comments_053011.json:
 ```json
 {
     "body": "Replying to [comment:27 awebb]:\n> I think it just needs to be reviewed. If it works then it should be set to 'positive review' and then the current release manager looks at it. If they are happy than they put it in the optional packages. The package works for me and I ran a quick test from inside sage so I would give it a positive review. If the package also works for you than I guess the status can be changed. BTW I used sage 4.2.1.alpha0 for building the package and testing it. This includes ecl 9.10.2.\n> \n> Adam\n\nExactly right.",
     "created_at": "2009-11-17T06:38:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53111",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53011",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -815,15 +813,15 @@ Exactly right.
 
 ---
 
-archive/issue_comments_053112.json:
+archive/issue_comments_053012.json:
 ```json
 {
     "body": "I just tried it on Solaris, and it fails very quickly:\n\n\n\n```\n\nfricas-1.0.8/src/src/ChangeLog.bu\nfricas-1.0.8/src/confignotes.tex\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/usr/local/gcc-4.4.1-sun-linker/bin/gcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.1/configure --prefix=/usr/local/gcc-4.4.1-sun-linker/ --with-as=/usr/ccs/bin/as --without-gnu-as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++,fortran --with-mpfr-include=/usr/local/include --with-mpfr-lib=/usr/local/lib --with-gmp-include=/usr/local/include --with-gmp-lib=/usr/local/lib CC=/usr/sfw/bin/gcc CXX=/usr/sfw/bin/g++ LDFLAGS='-R /usr/local/lib -L /usr/local/lib'\nThread model: posix\ngcc version 4.4.1 (GCC) \n****************************************************\nchecking build system type... sparc-sun-solaris2.10\nchecking host system type... sparc-sun-solaris2.10\nchecking target system type... sparc-sun-solaris2.10\nchecking for gmake... make\nGNU Make 3.80\nchecking for gcc... /usr/local/gcc-4.4.1-sun-linker/bin/gcc\nchecking for C compiler default output file name... a.out\nchecking whether the C compiler works... yes\nchecking whether we are cross compiling... no\nchecking for suffix of executables... \nchecking for suffix of object files... o\nchecking whether we are using the GNU C compiler... yes\nchecking whether /usr/local/gcc-4.4.1-sun-linker/bin/gcc accepts -g... yes\nchecking for /usr/local/gcc-4.4.1-sun-linker/bin/gcc option to accept ISO C89... none needed\nchecking for a BSD-compatible install... /usr/local/bin/ginstall -c\nchecking for touch... touch\nchecking for mktemp... mktemp\nchecking for gawk... no\nchecking for mawk... no\nchecking for nawk... nawk\nchecking for gtar... gtar\nchecking for ranlib... ranlib\nchecking for ar... ar\nchecking for latex... no\nchecking for makeindex... no\nchecking for bash... /usr/bin/bash\nchecking for notangle... no\nchecking for noweave... no\naxiom_build_bindir = /export/home/drkirkby/sage-4.2/spkg/build/fricas-1.0.8/build-dir/build/sparc-sun-solaris2.10/bin\nchecking Lisp implementation... ../src/configure: line 3955: ecl: command not found\nCan't open config_cl.out\nconfigure: error: Unable to determine Lisp flavor\n***********************************************************\nFailed to configure FriCAS.\n***********************************************************\n\nreal    0m2.871s\nuser    0m0.924s\nsys     0m1.561s\nsage: An error occurred while installing fricas-1.0.8\n\n```\n",
     "created_at": "2009-11-19T22:22:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53112",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53012",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -898,15 +896,15 @@ sage: An error occurred while installing fricas-1.0.8
 
 ---
 
-archive/issue_comments_053113.json:
+archive/issue_comments_053013.json:
 ```json
 {
     "body": "Oops, ignore that comment. I realised I downloaded the package into an incomplete build of Sage. \n\nDave",
     "created_at": "2009-11-19T22:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53113",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53013",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -918,15 +916,15 @@ Dave
 
 ---
 
-archive/issue_comments_053114.json:
+archive/issue_comments_053014.json:
 ```json
 {
     "body": "Replying to [comment:29 drkirkby]:\n> I just tried it on Solaris, and it fails very quickly:\n\n```\nchecking Lisp implementation... ../src/configure: line 3955: ecl: command not found\n```\n\n\nThe error message says it all. And http://boxen.math.washington.edu:29792/file/25ab4f31480e/SPKG.txt.fricas#l1 also lists ecl as a dependency.\n\nIf there were a proper package management in Sage, I would have made ecl a formal dependency, but adding \"sage -i ecl-9.8.4\" to the install script is also not fool proof, since specifying a version number is bad. Giving no version number is bad as well. I'd rather wish to be able to specify a range of versions that should work for the fricas-1.0.8.\nTry \n\n```\nsage -i http://sage.math.washington.edu/home/hemmecke/pub/ecl-9.8.4.spkg\n```\n",
     "created_at": "2009-11-19T22:37:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53114",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53014",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -952,15 +950,15 @@ sage -i http://sage.math.washington.edu/home/hemmecke/pub/ecl-9.8.4.spkg
 
 ---
 
-archive/issue_comments_053115.json:
+archive/issue_comments_053015.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-20T05:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53115",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53015",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -970,15 +968,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_053116.json:
+archive/issue_comments_053016.json:
 ```json
 {
     "body": "I've merged this into the optional packages.",
     "created_at": "2009-11-20T05:42:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53116",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53016",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -988,15 +986,15 @@ I've merged this into the optional packages.
 
 ---
 
-archive/issue_comments_053117.json:
+archive/issue_comments_053017.json:
 ```json
 {
     "body": "FriCAS 1.0.9 and FriCAS-Aldor is available from\n\n[http://sage.math.washington.edu/home/hemmecke/pub/fricas-1.0.9.spkg](http://sage.math.washington.edu/home/hemmecke/pub/fricas-1.0.9.spkg)\n\n[http://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.0.9.spkg](http://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.0.9.spkg)",
     "created_at": "2010-06-17T11:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53117",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53017",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -1010,15 +1008,15 @@ FriCAS 1.0.9 and FriCAS-Aldor is available from
 
 ---
 
-archive/issue_comments_053118.json:
+archive/issue_comments_053018.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2010-06-17T15:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53118",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53018",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -1028,15 +1026,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_053119.json:
+archive/issue_comments_053019.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2010-06-17T15:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53119",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53019",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -1046,15 +1044,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_053120.json:
+archive/issue_comments_053020.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-17T15:08:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53120",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53020",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -1064,15 +1062,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_053121.json:
+archive/issue_comments_053021.json:
 ```json
 {
     "body": "Thanks for the packages. I guess it is mentioned somewhere that installing fricasaldor depends on the source of fricas. This means that the following is needed:\n\n```\nsage -i -s fricas-1.0.9.spkg\nsage -i fricasaldor-1.0.9.spkg\n```\n\nI had a problem with an example for fricasaldor. \n\n```\n(1) -> )co fib.as\n   Compiling FriCAS source code from file /home/math/test/fib.as using\n      AXIOM-XL compiler and options\n-O -Fasy -Fao -Flsp -laxiom -Mno-ALDOR_W_WillObsolete -DAxiom -Y $AXIOM/algebra -I $AXIOM/algebra\n      Use the system command )set compiler args to change these\n      options.\n   Compiling Lisp source code from file fib.lsp\n   Issuing )library command for fib\n   Reading /home/math/test/fib.asy\n(1) -> fib 5\n\n   >> System error:\n   Error when using UNREAD-CHAR on stream #<string-input stream from \"3(1) ->\n```\n\n\nwhere fib.as is\n\n```\n#include \"axiom\"\nfib(n: Integer): Integer == {\n        n < 0 => 0;\n\tn < 3 => 1;\n\tfib(n-1) + fib(n-2);\n}\n```\n\n\nI get get this with ecl but not with sbcl but I think this is a known problem. Another example with a simple factorial function worked. I did some simple things and the fricas package seemed to work fine.\n\nAdam",
     "created_at": "2010-06-18T06:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53121",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53021",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -1122,15 +1120,15 @@ Adam
 
 ---
 
-archive/issue_comments_053122.json:
+archive/issue_comments_053022.json:
 ```json
 {
     "body": "There seems to be an API change. A few tests fail in the Sage interface. This is now ticket #9258. It appears to be a change in the return string. Note that these tests still work for axiom.\n\nAdam",
     "created_at": "2010-06-18T07:14:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53122",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53022",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -1142,15 +1140,15 @@ Adam
 
 ---
 
-archive/issue_comments_053123.json:
+archive/issue_comments_053023.json:
 ```json
 {
     "body": "Replying to [comment:37 awebb]:\n> Thanks for the packages. I guess it is mentioned somewhere that installing fricasaldor depends on the source of fricas. This means that the following is needed:\n> {{{\n> sage -i -s fricas-1.0.9.spkg\n> sage -i fricasaldor-1.0.9.spkg\n> }}}\n\nThat is **not** so! As explained [above](http://trac.sagemath.org/sage_trac/ticket/6517#comment:17), the commands are simply:\n\n\n```\ncp fricas-aldor-spkg/spkg/fricas*.spkg  $SAGE_ROOT/spkg/optional\nsage -i fricasaldor-X.Y.Z\n```\n\n\nDependency is included in the package fricasaldor.\n\n> I had a problem with an example for fricasaldor. \n> {{{\n> (1) -> )co fib.as\n>    Compiling FriCAS source code from file /home/math/test/fib.as using\n>       AXIOM-XL compiler and options\n> -O -Fasy -Fao -Flsp -laxiom -Mno-ALDOR_W_WillObsolete -DAxiom -Y $AXIOM/algebra -I $AXIOM/algebra\n>       Use the system command )set compiler args to change these\n>       options.\n>    Compiling Lisp source code from file fib.lsp\n>    Issuing )library command for fib\n>    Reading /home/math/test/fib.asy\n> (1) -> fib 5\n> \n>    >> System error:\n>    Error when using UNREAD-CHAR on stream #<string-input stream from \"3(1) ->\n> }}}\n\n> I get get this with ecl but not with sbcl but I think this is a known problem.\n\nYes that seems to be an ecl problem and I have no idea how to track that. So unfortunately, I cannot fix it. I think the link to Aldor is not as stable as it should be. There might also be a problem on 64bit machines with respect to internal hash codes. But since the Aldor sources are not free, it's up to a person who agrees with the Aldor Public License 2.0 to sync with FriCAS.\n\nRalf",
     "created_at": "2010-06-18T07:46:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53123",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53023",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -1199,15 +1197,15 @@ Ralf
 
 ---
 
-archive/issue_comments_053124.json:
+archive/issue_comments_053024.json:
 ```json
 {
     "body": "Replying to [comment:39 hemmecke]:\n\n> \n> That is **not** so! As explained [above](http://trac.sagemath.org/sage_trac/ticket/6517#comment:17), the commands are simply:\n> \n> {{{\n> cp fricas-aldor-spkg/spkg/fricas*.spkg  $SAGE_ROOT/spkg/optional\n> sage -i fricasaldor-X.Y.Z\n> }}}\n> \n> Dependency is included in the package fricasaldor.\n\nI got the following when installing fricasaldor. The message says that the build directory is missing so I assumed that I had made a mistake. \n\n\n\n```\n****************************************************\nInstalling -s fricas-1.0.9\nCalling sage-spkg on fricas-1.0.9\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nfricas-1.0.9\nMachine:\nLinux haso220w 2.6.18-92.1.6.el5 #1 SMP Wed Jun 25 12:46:39 EDT 2008 i686 i686 i386 GNU/Linux\nsage: /home/math/sage/spkg/build/fricasaldor-1.0.9/fricas-1.0.9 is already installed\ngrep: /home/math/sage/spkg/build/fricas-1.0.9/spkg-install: No such file or directory\ncp: cannot create regular file `/home/math/sage/spkg/build/fricas-1.0.9/build-dir/src/aldor/': No such file or directory\nmkdir: cannot create directory `/home/math/sage/spkg/build/fricas-1.0.9/build-dir/src/aldor/al': No such file or directory\ncp: cannot create regular file `/home/math/sage/spkg/build/fricas-1.0.9/build-dir/src/aldor/al': No such file or directory\n./spkg-install: line 60: cd: /home/math/sage/spkg/build/fricas-1.0.9/build-dir: No such file or directory\n./spkg-install: line 61: /home/math/sage/spkg/build/fricas-1.0.9/src/configure: No such file or directory\n***********************************************************\nFailed to configure FriCAS-Aldor interface.\n***********************************************************\n```\n\n\n\nAdam",
     "created_at": "2010-06-18T10:12:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53124",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53024",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -1255,15 +1253,15 @@ Adam
 
 ---
 
-archive/issue_comments_053125.json:
+archive/issue_comments_053025.json:
 ```json
 {
     "body": "Replying to [comment:39 hemmecke]:\n\n> Yes that seems to be an ecl problem and I have no idea how to track that. So unfortunately, I cannot fix it. I think the link to Aldor is not as stable as it should be. There might also be a problem on 64bit machines with respect to internal hash codes. But since the Aldor sources are not free, it's up to a person who agrees with the Aldor Public License 2.0 to sync with FriCAS.\n> \n> Ralf\n\nI agree\n\nAdam",
     "created_at": "2010-06-18T10:13:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53125",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53025",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -1281,15 +1279,15 @@ Adam
 
 ---
 
-archive/issue_comments_053126.json:
+archive/issue_comments_053026.json:
 ```json
 {
     "body": "> > Dependency is included in the package fricasaldor.\n \n> I got the following when installing fricasaldor. The message says that the build directory is missing so I assumed that I had made a mistake. \n\nYes. The whole problem is due to the Aldor Public License 2. :-( That's the only reason why there are two packages. The fricas spkg is mBSD and the fricasaldor spkg is APL2.\nThe other problem is that Sage does not provide a proper mechanism to deal with dependencies. (People should look at \"zc.buildout\".)\n\nIt's all not so easy since currently fricasaldor needs the build directory of the build of the fricas package. It basically copies copies some files into this directory and then starts the build.\n\nSo saying\n\n```\nsage -i fricas-X.Y.Z\nsage -i fricasaldor-X.Y.Z\n```\n\nwill not work, because the build directory of fricas is gone. I guess that might be the problem with your error.\n\nThe other thing is\n> {{{\n> ****************************************************\n> Installing -s fricas-1.0.9\n> Calling sage-spkg on fricas-1.0.9\n> Warning: Attempted to overwrite SAGE_ROOT environment variable\n> }}}\nDo you have an idea who is printing that warning?",
     "created_at": "2010-06-18T10:27:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53126",
-    "user": "@hemmecke"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53026",
+    "user": "https://github.com/hemmecke"
 }
 ```
 
@@ -1324,15 +1322,15 @@ Do you have an idea who is printing that warning?
 
 ---
 
-archive/issue_comments_053127.json:
+archive/issue_comments_053027.json:
 ```json
 {
     "body": "Replying to [comment:42 hemmecke]:\n\n> It's all not so easy since currently fricasaldor needs the build directory of the build of the fricas package. It basically copies copies some files into this directory and then starts the build.\n> \n> So saying\n> {{{\n> sage -i fricas-X.Y.Z\n> sage -i fricasaldor-X.Y.Z\n> }}}\n> will not work, because the build directory of fricas is gone. I guess that might be the problem with your error.\n\nExactly, \n\n```\nsage -i -s fricas-X.Y.Z\nsage -i fricasaldor-X.Y.Z\n```\n\n\nThis worked for me since the -s keeps the build directory in the first step. \n\n> \n> The other thing is\n> > {{{\n> > ****************************************************\n> > Installing -s fricas-1.0.9\n> > Calling sage-spkg on fricas-1.0.9\n> > Warning: Attempted to overwrite SAGE_ROOT environment variable\n> > }}}\n> Do you have an idea who is printing that warning?\n\nI think I see it everytime I use sage -i to install something. I assume that it is part of the Sage installing process somewhere. I don't know why the SAGE_ROOT would need to be changed though.",
     "created_at": "2010-06-18T10:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53127",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53027",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -1373,15 +1371,15 @@ I think I see it everytime I use sage -i to install something. I assume that it 
 
 ---
 
-archive/issue_comments_053128.json:
+archive/issue_comments_053028.json:
 ```json
 {
     "body": "I am not sure of the procedure of who should give the positive review and in any case several people should look at it. As I have not been very active lately I will just give a comment. This seems to be a simple upgrade of two optional packages and so I don't have any major concerns. I installed the packages on two Linux systems (32 bit SL 5.1, 64 bit Ubuntu 10.04) and ran some tests without severe problems (small issues noted above). I am aware that there are problems with the Sage interface but I think that is a separate issue. Therefore, I would give the packages a positive review.\n\nAdam",
     "created_at": "2010-06-19T12:07:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53128",
-    "user": "@maxthemouse"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53028",
+    "user": "https://github.com/maxthemouse"
 }
 ```
 
@@ -1393,15 +1391,15 @@ Adam
 
 ---
 
-archive/issue_comments_053129.json:
+archive/issue_comments_053029.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-27T20:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53129",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53029",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1411,15 +1409,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_053130.json:
+archive/issue_comments_053030.json:
 ```json
 {
     "body": "These look good to me.  I've made a new ticket at #9354 -- please don't reopen this ticket once it has been closed.  I'll post a fix to the issues at #9258.",
     "created_at": "2010-06-27T20:07:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6517",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53130",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6517#issuecomment-53030",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

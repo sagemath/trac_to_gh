@@ -6,15 +6,14 @@ archive/issues_008406.json:
     "body": "Assignee: @rlmill\n\ntwo examples:\n\n```\nsage: G=Graph()\nsage: R.<a>=GF(3^3)\nsage: G.add_vertex(a^2)\nsage: G.vertices()\n[9]\n```\n\nThis should be `[a]`, but `int(a)=9`\n\n```\nsage: R.<x>=GF(3^3,'a')[]\nsage: G.add_vertex(x)\nValueError\n```\n\nThis should work as `x` is hashable.\n\n`int(x)` return a `ValueError`, but the code only tests for `TypeError`.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8406\n\n",
     "created_at": "2010-03-01T08:28:27Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "problem with duck typing in c_graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8406",
-    "user": "ylchapuy"
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 Assignee: @rlmill
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8406
 
 ---
 
-archive/issue_comments_075310.json:
+archive/issue_comments_075186.json:
 ```json
 {
     "body": "line 638 of c_graph.pyx, we find:\n\n\n```\ntry:\n    u_int = u\nexcept TypeError:\n    return -1\n```\n\n\nI think we should instead do an explicit test:\n\n```\nif isinstance(u,(int,long,Integer))\n```\n\nto avoid coercions.\n\nThoughts?",
     "created_at": "2010-03-01T08:31:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75310",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75186",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -86,15 +85,15 @@ Thoughts?
 
 ---
 
-archive/issue_comments_075311.json:
+archive/issue_comments_075187.json:
 ```json
 {
     "body": "The only thing I could think of was that maybe this would effect the speed. To benchmark, I tried `g = graphs.CubeGraph(n)` for various `n`, since that calls the relevant function `2^n` times. There was no noticable change at all, so I say we definitely switch. Not to steal author credit, but here's what I tested:\n\n\n```\n-    try:\n+    \n+    if isinstance(u,(int,long,Integer)):\n         u_int = u\n-    except TypeError:\n+    else:\n         return -1\n-    if u_int < 0 or u_int >= G.active_vertices.size:\n-        return -1\n-    if u_int in vertex_labels:\n+    if u_int < 0 or u_int >= G.active_vertices.size or u_int in vertex_labels:\n```\n",
     "created_at": "2010-03-02T07:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75311",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75187",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -120,15 +119,15 @@ The only thing I could think of was that maybe this would effect the speed. To b
 
 ---
 
-archive/issue_comments_075312.json:
+archive/issue_comments_075188.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-02T08:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75312",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -138,15 +137,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_075313.json:
+archive/issue_comments_075189.json:
 ```json
 {
     "body": "Attachment [trac_8406.patch](tarball://root/attachments/some-uuid/ticket8406/trac_8406.patch) by ylchapuy created at 2010-03-02 08:53:27",
     "created_at": "2010-03-02T08:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75313",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75189",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -156,15 +155,15 @@ Attachment [trac_8406.patch](tarball://root/attachments/some-uuid/ticket8406/tra
 
 ---
 
-archive/issue_comments_075314.json:
+archive/issue_comments_075190.json:
 ```json
 {
     "body": "Every patch fixing a bug should include a doctest illustrating that bug. Can you make doctests for the two bugs you noted at the top of the page?",
     "created_at": "2010-03-06T21:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75314",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75190",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -174,15 +173,15 @@ Every patch fixing a bug should include a doctest illustrating that bug. Can you
 
 ---
 
-archive/issue_comments_075315.json:
+archive/issue_comments_075191.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-03-06T21:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75315",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75191",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -192,15 +191,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_075316.json:
+archive/issue_comments_075192.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-09T15:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75316",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75192",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -210,15 +209,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_075317.json:
+archive/issue_comments_075193.json:
 ```json
 {
     "body": "Attachment [trac_8406-doctests.patch](tarball://root/attachments/some-uuid/ticket8406/trac_8406-doctests.patch) by ylchapuy created at 2010-03-09 15:08:28\n\napply both patches in order.",
     "created_at": "2010-03-09T15:08:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75317",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75193",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -230,15 +229,15 @@ apply both patches in order.
 
 ---
 
-archive/issue_comments_075318.json:
+archive/issue_comments_075194.json:
 ```json
 {
     "body": "Thank you!",
     "created_at": "2010-03-09T16:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75318",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75194",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -248,15 +247,15 @@ Thank you!
 
 ---
 
-archive/issue_comments_075319.json:
+archive/issue_comments_075195.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-09T16:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75319",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75195",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -266,15 +265,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_075320.json:
+archive/issue_comments_075196.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-11T04:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75320",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75196",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -284,15 +283,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_075321.json:
+archive/issue_comments_075197.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. [trac_8406.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8406/trac_8406.patch)\n2. [trac_8406-doctests.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8406/trac_8406-doctests.patch)",
     "created_at": "2010-03-11T04:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75321",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75197",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -305,15 +304,15 @@ Merged in this order:
 
 ---
 
-archive/issue_comments_075322.json:
+archive/issue_comments_075198.json:
 ```json
 {
     "body": "see #9610",
     "created_at": "2010-07-27T12:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8406",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75322",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8406#issuecomment-75198",
+    "user": "https://github.com/rlmill"
 }
 ```
 

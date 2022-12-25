@@ -6,15 +6,14 @@ archive/issues_003924.json:
     "body": "Assignee: jkantor\n\nCC:  dphilp prabhu @cswiercz\n\nKeywords: framework\n\nI'm trying to build sage on mac with a shareable python library.  The current version, being built without the --enable-framework option, cannot be linked to other libraries because of the environ variable.  I think getting this working would be useful, and I would like eventually to see it the default build on OS X.\n\nThe following recipe works, though it is clearly a defective approach:\n\n1. build vanilla sage from source \n\n2. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework=SAGE_ROOT/local/Frameworks\n\n3. rebuild sage.  This creates SAGE_ROOT/Frameworks/Python.framework\n\n4. all doctests pass, and I can link to libpython from boost python\n\nIdeally, the following steps would work:\n\n1. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework= SAGE_ROOT/local/Frameworks\n\n2. build sage.\n\nIt doesn't work so simply.  I've managed to help it along a few steps, but am stuck with cvxopt\n\n1. The build of mercurial crashes.  When it crashes, create two symlinks:\n\n2a. local/lib/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/lib/python2.5/\n\n1b. local/include/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/include/python2.5/\n\n1c. Restart make\n\n2. The build of the sage package crashes, with a similar error.  \n\n2a. Delete the busted symlink at \nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n\n2b. Create a symlink:\nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n--->devel/sage/build/sage\n\n2c. Delete half-built files, restart make.\n\n3. The build of cvxopt crashes, with a duplicate symbol error.  I'm not in a position to debug this one.\n\nAny attention appreciated!  For my part, I can muddle along with the duplicate builds but I would like to get this working.\n\nD\n\nIssue created by migration from https://trac.sagemath.org/ticket/3924\n\n",
     "created_at": "2008-08-22T01:38:43Z",
     "labels": [
-        "build",
-        "minor",
-        "enhancement"
+        "component: build",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "making sage on os x build, when python is built as a framework",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3924",
-    "user": "dphilp"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 Assignee: jkantor
@@ -78,15 +77,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3924
 
 ---
 
-archive/issue_comments_028078.json:
+archive/issue_comments_028020.json:
 ```json
 {
     "body": "The duplicate symbol error is this:\nld: duplicate symbol _matrix_tp in build/temp.macosx-10.3-i386-2.5/C/dense.o and build/temp.macosx-10.3-i386-2.5/C/base.o\n\nIt is the first error, until then, gcc happily chugs along.",
     "created_at": "2008-08-25T02:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28078",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28020",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -99,15 +98,15 @@ It is the first error, until then, gcc happily chugs along.
 
 ---
 
-archive/issue_comments_028079.json:
+archive/issue_comments_028021.json:
 ```json
 {
     "body": "This is the command that pruduced the error.\n\ngcc -bundle -undefined dynamic_lookup build/temp.macosx-10.3-i386-2.5/C/base.o build/temp.macosx-10.3-i386-2.5/C/dense.o build/temp.macosx-10.3-i386-2.5/C/sparse.o -L/Users/dphilp/sage-3.0.3fo/local/lib -L/Users/dphilp/sage-3.0.3fo/local/lib/gcc-lib/i386-apple-darwin8.10.3/4.0.3/ -lm -llapack -lblas -lf95 -o build/lib.macosx-10.3-i386-2.5/cvxopt/base.so",
     "created_at": "2008-08-25T02:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28079",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28021",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -119,15 +118,15 @@ gcc -bundle -undefined dynamic_lookup build/temp.macosx-10.3-i386-2.5/C/base.o b
 
 ---
 
-archive/issue_comments_028080.json:
+archive/issue_comments_028022.json:
 ```json
 {
     "body": "Can crash tthrough the cvxopt errors by adding extern declarations in some of the source files.\n\nI think this is a complete list:\n\nin src/C/base.c, \n\n```\nPyTypeObject matrix_tp ;\nPyTypeObject spmatrix_tp ;\n```\n \nboth get an extern.\n\nIn dense.c, `PyTypeObject spmatrix_tp ;` gets an extern.\n\nIn dense.c and sparse.c, `PyObject *base_mod;` gets an extern.",
     "created_at": "2008-08-25T03:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28080",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28022",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -152,15 +151,15 @@ In dense.c and sparse.c, `PyObject *base_mod;` gets an extern.
 
 ---
 
-archive/issue_comments_028081.json:
+archive/issue_comments_028023.json:
 ```json
 {
     "body": "It builds and sage works with two warnings and some dsage badness:\n\n```\nWARNING: Readline services not available on this platform.\nWARNING: The auto-indent feature requires the readline library\n```\n\n\nfailed doctests:\n\n```\nsage -t  devel/sage/sage/dsage/tests/testdoc.py             \n**********************************************************************\nFile \"/Users/dphilp/sage-3.0.3fo/tmp/testdoc.py\", line 14:\n    sage: a\nExpected:\n    5\nGot:\n    No output.\n**********************************************************************\nFile \"/Users/dphilp/sage-3.0.3fo/tmp/testdoc.py\", line 33:\n    sage: j\nExpected:\n    10\nGot:\n    No output.\n**********************************************************************\n```\n",
     "created_at": "2008-08-25T04:33:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28081",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28023",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -198,15 +197,15 @@ Got:
 
 ---
 
-archive/issue_comments_028082.json:
+archive/issue_comments_028024.json:
 ```json
 {
     "body": "Readline fix.  Python's spkg needs a couple of lines:\n\n```\nLDFLAGS=\"-L/Users/dphilp/sage-3.0.3fo/local/lib $LDFLAGS\"\nexport LDFLAGS\n\nCPPFLAGS=\"-I/Users/dphilp/sage-3.0.3fo/local/include $CPPFLAGS\"\nexport CPPFLAGS\n```\n",
     "created_at": "2008-08-25T06:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28082",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28024",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -225,15 +224,15 @@ export CPPFLAGS
 
 ---
 
-archive/issue_comments_028083.json:
+archive/issue_comments_028025.json:
 ```json
 {
     "body": "The last has been committed as a general fix to python's build by mabshoff.",
     "created_at": "2008-08-25T07:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28083",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28025",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -243,15 +242,15 @@ The last has been committed as a general fix to python's build by mabshoff.
 
 ---
 
-archive/issue_comments_028084.json:
+archive/issue_comments_028026.json:
 ```json
 {
     "body": "And that also fixes dsage's doctest trouble.",
     "created_at": "2008-08-25T07:15:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28084",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28026",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -261,15 +260,15 @@ And that also fixes dsage's doctest trouble.
 
 ---
 
-archive/issue_comments_028085.json:
+archive/issue_comments_028027.json:
 ```json
 {
     "body": "Patches required to get this working.  (Sorry I don't know how to do the pretty red/green bizzo.)\n## python.spkg/spkg-install:\n\n```\n49a50,56\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK is set, compile sage as a framework\n> if [ `uname` = \"Darwin\" -a $SAGE_PYTHON_FRAMEWORK ] ; then\n>     echo \"Building python as a framework with --enable-framework=$SAGE_LOCAL/Frameworks\"\n>     FRAMEWORK_BUILD_OPTION=\"--enable-framework=$SAGE_LOCAL/Frameworks\"\n> fi\n> \n> \n74c81,82\n<         --with-gcc=\"gcc -m64\" --disable-toolbox-glue\n---\n>         --with-gcc=\"gcc -m64\" --disable-toolbox-glue \\\n>         $FRAMEWORK_BUILD_OPTION\n80c88,89\n<         ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng --enable-unicode=ucs4\n---\n>         ./configure $EXTRAFLAGS --prefix=\"$SAGE_LOCAL\" --without-libpng --enable-unicode=ucs4 \\\n>         $FRAMEWORK_BUILD_OPTION\n109a119,132\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK the symlink created above will be left dangling\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/lib/python2.5\n> fi\n> \n> \n> cd $SAGE_LOCAL/include\n> \n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK, we need to point to the framework headers\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/include/python2.5\n> fi\n> \n```\n\n\n## sage.spkg/sagebuild.py:\n\n```\n509c509,514\n<     safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n---\n>     if env.options['SAGE_PYTHON_FRAMEWORK'] != 'yes' :\n>         safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n>     else:\n>         safesymlink(\n>             '../../../../../../devel/sage/build/sage',\n>             'local/Frameworks/Python.framework/Versions/Current/lib/python/site-packages/sage')\n```\n\n\nAnd a bunch of edits to cvxopt, which are apparently fixed in version 1.0.",
     "created_at": "2008-08-25T12:33:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28085",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28027",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -333,15 +332,15 @@ And a bunch of edits to cvxopt, which are apparently fixed in version 1.0.
 
 ---
 
-archive/issue_comments_028086.json:
+archive/issue_comments_028028.json:
 ```json
 {
     "body": "Slightly better in python.spkg/spkg-install:\n\n```\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK is set, compile sage as a framework\n> if [ `uname` = \"Darwin\" -a \"$SAGE_PYTHON_FRAMEWORK\" = \"yes\" ] ; then\n>     echo \"Building python as a framework with --enable-framework=$SAGE_LOCAL/Frameworks\"\n>     FRAMEWORK_BUILD_OPTION=\"--enable-framework=$SAGE_LOCAL/Frameworks\"\n> fi\n```\n",
     "created_at": "2008-08-26T01:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28086",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28028",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -360,15 +359,15 @@ Slightly better in python.spkg/spkg-install:
 
 ---
 
-archive/issue_comments_028087.json:
+archive/issue_comments_028029.json:
 ```json
 {
     "body": "` if [ \"$SAGE_PYTHON_FRAMEWORK\" = \"yes\" ] ; then ` throughout",
     "created_at": "2008-08-26T02:00:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28087",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28029",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -378,15 +377,15 @@ archive/issue_comments_028087.json:
 
 ---
 
-archive/issue_comments_028088.json:
+archive/issue_comments_028030.json:
 ```json
 {
     "body": "correction to: ` sage.spkg/sagebuild.py `\n\n```\n>     if os.environ.get('SAGE_PYTHON_FRAMEWORK') != 'yes' :\n>         safesymlink('../../../../devel/sage/build/sage','local/lib/python/site-packages/sage')\n>     else:\n>         safesymlink(\n>             '../../../../../../devel/sage/build/sage',\n>             'local/Frameworks/Python.framework/Versions/Current/lib/python/site-packages/sage')\n```\n",
     "created_at": "2008-08-26T04:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28088",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28030",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -406,15 +405,15 @@ correction to: ` sage.spkg/sagebuild.py `
 
 ---
 
-archive/issue_comments_028089.json:
+archive/issue_comments_028031.json:
 ```json
 {
     "body": "I suck.  ` python.spkg/spkg-install `\n\n\n```\n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK the symlink created above will be left dangling\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/lib/python2.5\n> fi\n> \n> \n> cd $SAGE_LOCAL/include\n> \n> # (OS X only)  If SAGE_PYTHON_FRAMEWORK, we need to point to the framework headers\n> if [ $SAGE_PYTHON_FRAMEWORK ] ; then\n>     ln -s python2.5 ../Frameworks/Python.framework/Versions/Current/include/python2.5\n> fi\n```\n",
     "created_at": "2008-08-26T05:06:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28089",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28031",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -441,15 +440,15 @@ I suck.  ` python.spkg/spkg-install `
 
 ---
 
-archive/issue_comments_028090.json:
+archive/issue_comments_028032.json:
 ```json
 {
     "body": "Attachment [trac_sage_3924.patch](tarball://root/attachments/some-uuid/ticket3924/trac_sage_3924.patch) by dphilp created at 2008-08-27 03:52:43",
     "created_at": "2008-08-27T03:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28090",
-    "user": "dphilp"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28032",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dphilp"
 }
 ```
 
@@ -459,15 +458,15 @@ Attachment [trac_sage_3924.patch](tarball://root/attachments/some-uuid/ticket392
 
 ---
 
-archive/issue_comments_028091.json:
+archive/issue_comments_028033.json:
 ```json
 {
     "body": "Attachment [trac_python_3924.patch](tarball://root/attachments/some-uuid/ticket3924/trac_python_3924.patch) by @williamstein created at 2009-07-09 20:25:10\n\nThis was the original mess of a ticket description:\n\nI'm trying to build sage on mac with a shareable python library.  The current version, being built without the --enable-framework option, cannot be linked to other libraries because of the environ variable.  I think getting this working would be useful, and I would like eventually to see it the default build on OS X.\n\nThe following recipe works, though it is clearly a defective approach:\n\n1. build vanilla sage from source \n\n2. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework=SAGE_ROOT/local/Frameworks\n\n3. rebuild sage.  This creates SAGE_ROOT/Frameworks/Python.framework\n\n4. all doctests pass, and I can link to libpython from boost python\n\nIdeally, the following steps would work:\n\n1. edit the spkg/standard/python-2.5....spkg/spkg-install file to include the --enable-framework= SAGE_ROOT/local/Frameworks\n\n2. build sage.\n\nIt doesn't work so simply.  I've managed to help it along a few steps, but am stuck with cvxopt\n\n1. The build of mercurial crashes.  When it crashes, create two symlinks:\n\n2a. local/lib/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/lib/python2.5/\n\n1b. local/include/python2.5 \n---> local/Frameworks/Python.framework/Versions/Current/include/python2.5/\n\n1c. Restart make\n\n2. The build of the sage package crashes, with a similar error.  \n\n2a. Delete the busted symlink at \nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n\n2b. Create a symlink:\nlocal/Frameworks/Python.framework/Versions/Current/lib/python2.5/site-packages/sage\n--->devel/sage/build/sage\n\n2c. Delete half-built files, restart make.\n\n3. The build of cvxopt crashes, with a duplicate symbol error.  I'm not in a position to debug this one.\n\nAny attention appreciated!  For my part, I can muddle along with the duplicate builds but I would like to get this working.\n\nD",
     "created_at": "2009-07-09T20:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28091",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28033",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -526,15 +525,15 @@ D
 
 ---
 
-archive/issue_comments_028092.json:
+archive/issue_comments_028034.json:
 ```json
 {
     "body": "Since we have upgraded to python-2.6, I think this needs to be rebased at least.  I am interested in testing an updated version.",
     "created_at": "2009-10-29T19:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28092",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28034",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -544,15 +543,15 @@ Since we have upgraded to python-2.6, I think this needs to be rebased at least.
 
 ---
 
-archive/issue_comments_028093.json:
+archive/issue_comments_028035.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-10-29T19:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28093",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28035",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -562,15 +561,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_028094.json:
+archive/issue_comments_028036.json:
 ```json
 {
     "body": "[\u0432\u043e\u0441\u0442\u043e\u0447\u043d\u044b\u0435 \u0442\u0430\u043d\u0446\u044b](http://art-dance.com.ua/)",
     "created_at": "2010-05-26T08:41:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28094",
-    "user": "bascorp2"
+    "url": "https://github.com/sagemath/sagetest/issues/3924#issuecomment-28036",
+    "user": "https://trac.sagemath.org/admin/accounts/users/bascorp2"
 }
 ```
 

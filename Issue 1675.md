@@ -6,7 +6,7 @@ archive/issues_001675.json:
     "body": "Assignee: mabshoff\n\nThe attached patch fixes a memleak in pAdicCappedRelativeElement._set_from_Rational\n\nIssue created by migration from https://trac.sagemath.org/ticket/1675\n\n",
     "created_at": "2008-01-03T21:28:48Z",
     "labels": [
-        "memleak",
+        "component: memleak",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001675.json:
     "title": "memleak in pAdicCappedRelativeElement._set_from_Rational",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1675",
-    "user": "@wjp"
+    "user": "https://github.com/wjp"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1675
 
 ---
 
-archive/issue_comments_010628.json:
+archive/issue_comments_010601.json:
 ```json
 {
     "body": "Attachment [7916.patch](tarball://root/attachments/some-uuid/ticket1675/7916.patch) by mabshoff created at 2008-01-03 22:20:51\n\nWith this and the patch from 1676 applied I get:\nBefore:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\nAfter:\n\n```\n==6600== LEAK SUMMARY:\n==6600==    definitely lost: 264 bytes in 24 blocks.\n==6600==      possibly lost: 261,881 bytes in 713 blocks.\n==6600==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==6600==         suppressed: 0 bytes in 0 blocks.\n```\n\nPatch applied to Sage 2.9.2.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-03T22:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1675#issuecomment-10628",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1675#issuecomment-10601",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -74,15 +74,15 @@ Michael
 
 ---
 
-archive/issue_comments_010629.json:
+archive/issue_comments_010602.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-03T22:20:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1675#issuecomment-10629",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1675#issuecomment-10602",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -92,15 +92,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_010630.json:
+archive/issue_comments_010603.json:
 ```json
 {
     "body": "Oops:\n\nAfter:\n\n```\n==16192== LEAK SUMMARY:\n==16192==    definitely lost: 0 bytes in 0 blocks.\n==16192==      possibly lost: 261,881 bytes in 713 blocks.\n==16192==    still reachable: 39,070,317 bytes in 19,102 blocks.\n==16192==         suppressed: 0 bytes in 0 blocks.\n```\n",
     "created_at": "2008-01-03T22:21:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1675#issuecomment-10630",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1675#issuecomment-10603",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

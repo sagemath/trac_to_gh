@@ -6,15 +6,14 @@ archive/issues_004451.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\nWhen using the cursor to move between cells, the text cells stop the cursor, instead of the cursor skipping the text cells to move to the input cells beyond the text cell.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4451\n\n",
     "created_at": "2008-11-06T00:14:34Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "notebook - cursor keys do not navigate around text cells",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4451",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: boothby
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4451
 
 ---
 
-archive/issue_comments_032816.json:
+archive/issue_comments_032753.json:
 ```json
 {
     "body": "Is this still a problem?",
     "created_at": "2009-11-14T06:52:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4451",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32816",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32753",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -49,15 +48,15 @@ Is this still a problem?
 
 ---
 
-archive/issue_comments_032817.json:
+archive/issue_comments_032754.json:
 ```json
 {
     "body": "Not for me. Can anyone please confirm and close? Thanks.",
     "created_at": "2009-12-06T16:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4451",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32817",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32754",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -67,15 +66,15 @@ Not for me. Can anyone please confirm and close? Thanks.
 
 ---
 
-archive/issue_comments_032818.json:
+archive/issue_comments_032755.json:
 ```json
 {
     "body": "I'm closing this.",
     "created_at": "2009-12-09T16:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4451",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32818",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32755",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +84,15 @@ I'm closing this.
 
 ---
 
-archive/issue_comments_032819.json:
+archive/issue_comments_032756.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-09T16:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4451",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32819",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4451#issuecomment-32756",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_008477.json:
     "body": "Assignee: tbd\n\nCC:  drkirkby mvngu\n\nPALP fails to build in parallel with GNU `make`.  Some output from `make -d` (debug):\n\n```\n    Must remake target `poly.o'.\nNeed a job token; we don't have children\nmake[2]: Entering directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0-j20-par/spkg/build/palp-1.1.p2/src'\ngcc -O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE   -c -o poly.o poly.c\nPutting child 0x00651fb0 (poly.o) PID 7703 on the chain.\n    Commands of `poly.o' are being run.\n    Considering target file `Coord.o'.\n     File `Coord.o' does not exist.\n    Must remake target `Coord.o'.\nLive child 0x00651fb0 (poly.o) PID 7703 \nNeed a job token; we have children\nLive child 0x00651fb0 (poly.o) PID 7703 \nLive child 0x00651fb0 (poly.o) PID 7703 \nReaping winning child 0x00651fb0 PID 7703 \nRemoving child 0x00651fb0 PID 7703 from chain.\nmake[2]: Leaving directory `/mnt/usb1/scratch/mpatel/tmp/sage-4.3.4.alpha0-j20-par/spkg/build/palp-1.1.p2/src'\nError building PALP.\nsage: An error occurred while installing palp-1.1.p2\n```\n\n\nIt's not clear why this happens, but it breaks building spkgs in parallel (#8306).  As we've done with other packages, forcing a serial build helps.\n\nPALP has a `Makefile` and a `GNUmakefile`.  GNU `make` prefers the latter.  It seems that `export MAKE=\"make\"` in `spkg-install` is not enough to suppress a parallel build, but adding the special target [.NOTPARALLEL](http://www.gnu.org/software/automake/manual/make/Special-Targets.html#index-g_t_002eNOTPARALLEL-248) to `GNUmakefile` works.\n\nBuilding in parallel appears to work if I replace `GNUmakefile` with `Makefile`, but the compiler and compiler flags are different.  The package does not have an [obvious] test suite.\n\n#7071 is another PALP ticket. \n\nIssue created by migration from https://trac.sagemath.org/ticket/8477\n\n",
     "created_at": "2010-03-07T18:43:02Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008477.json:
     "title": "Force GNU make to build PALP serially",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8477",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: tbd
@@ -61,15 +61,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8477
 
 ---
 
-archive/issue_comments_076398.json:
+archive/issue_comments_076271.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-07T18:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76398",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76271",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -79,15 +79,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_076399.json:
+archive/issue_comments_076272.json:
 ```json
 {
     "body": "I've put the package at\n\n* http://sage.math.washington.edu/home/mpatel/trac/8477/palp-1.1.p2.spkg",
     "created_at": "2010-03-07T18:49:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76399",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76272",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -99,15 +99,15 @@ I've put the package at
 
 ---
 
-archive/issue_comments_076400.json:
+archive/issue_comments_076273.json:
 ```json
 {
     "body": "There's a similar problem on bsd.  Simply deleting `GNUmakefile` or copying it to `Makefile` fixes it.\n\nMaybe it'll help to fix this and #7071 together?",
     "created_at": "2010-03-11T03:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76400",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76273",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -119,15 +119,15 @@ Maybe it'll help to fix this and #7071 together?
 
 ---
 
-archive/issue_comments_076401.json:
+archive/issue_comments_076274.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-03-12T12:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76401",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76274",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -137,15 +137,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_076402.json:
+archive/issue_comments_076275.json:
 ```json
 {
     "body": "Your changes to SPKG.txt are good, but the mention of only \"GPL\" did cause me to check the license. \n\nA look at the file src/COPYING shows only a link to the GPL, which is of course now version 3. The file does not contain the usual contents of the file COPYING. \n\nLooking at the history of PALP\n\nhttp://hep.itp.tuwien.ac.at/~kreuzer/CY/CYpalp.html#History\n\nI can see that version 1.1 (the latest, and the release in Sage) is dated November 2, 2006, which was before the GPL 3 existed. \n\nI believe SPKG.txt's license information should indicate the license is GPL2+, rather than GPL, but the reason for this needs to be given. Something along the lines of \n\n* When released, GPL 2 was in force. \n* There is a link to a web page, which now points to GPL 3, but would have pointed to GPL 2 at the time of the package was released. \n* Therefore one can deduce the authors were happy for this to be released under GPL 2 or a later version. \n\nOne other minor point, it would be good to remove the line:\n\nCC=gcc\n\nfrom Makefile, as that would then allow one to at least attempt to build this with any compiler. The Makefile refers to $(CC) everywhere, so since CC is set by the Sage environment, this line could be usefully removed, but I realise this is unrelated to the main part of the change, so don't bother unless you feel inclined to. \n\nI will need to check the changes don't break the build (I can't believe they can do any harm whatsoever, but I can't actually check them just now). But once the SPKG.txt is revised, I'll give this a positive review, subject to me checking it does not break a serial build, which will take me a minute or two. (I'll check the parallel build issues as part of the #7071). \n\nPerhaps you could also attach a Mercurical patch file, which makes reviewing a little easier. \n\nOnce those changes are made, I'll check that the package builds serially. Then I'll revisit #7071, as that relies on this anyway. Hopefully this will allow #7071 to be resolved soon, as I believe that is a great enhancement, but we need to be sure it can't break anything. \n\nDave",
     "created_at": "2010-03-12T12:29:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76402",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76275",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -183,15 +183,15 @@ Dave
 
 ---
 
-archive/issue_comments_076403.json:
+archive/issue_comments_076276.json:
 ```json
 {
     "body": "`mv GNUmakefile` to `Makefile`.  palp spkg patch",
     "created_at": "2010-03-12T17:38:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76403",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76276",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -201,15 +201,15 @@ archive/issue_comments_076403.json:
 
 ---
 
-archive/issue_comments_076404.json:
+archive/issue_comments_076277.json:
 ```json
 {
     "body": "Attachment [spkg_8477-palp_makefile.patch](tarball://root/attachments/some-uuid/ticket8477/spkg_8477-palp_makefile.patch) by @qed777 created at 2010-03-12 17:58:02\n\nI've updated\n\n* http://sage.math.washington.edu/home/mpatel/trac/8477/palp-1.1.p2.spkg\n\nwith your suggestions, except for removing `CC=gcc`.  See the attached the patch, which also has a workaround for parallel spkg builds that seems to work on sage.math and bsd (at least).  The makefiles differ by\n\n```diff\n NEF_SRC= E_Poly.c Nefpart.c LG.c\n NEF_OBJ= $(NEF_SRC:.c=.o)\n \n-CC=cc \n+CC=gcc\n \n-CFLAGS=-O3 -fast\n+CFLAGS=-O3 -g -W -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE\n # CFLAGS=-O3 -g                                      # add -g for GNU debugger gdb\n # CFLAGS=-Ofast -O3 -mips4 -n32                      # SGI / 32 bit\n # CFLAGS=-Ofast -O3 -mips4 -64                # SGI / 64 bit\n```\n\nLooking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE` are intended for 32-bit architectures.  But it appears the first definition is not used and the makefiles don't check the architecture.",
     "created_at": "2010-03-12T17:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76404",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76277",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -241,15 +241,15 @@ Looking at the source, I think `-D_FILE_OFFSET_BITS=64` and `-D_LARGEFILE_SOURCE
 
 ---
 
-archive/issue_comments_076405.json:
+archive/issue_comments_076278.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-03-12T17:58:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76405",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76278",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -259,15 +259,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_076406.json:
+archive/issue_comments_076279.json:
 ```json
 {
     "body": "I assume that at #7071, you'll use the Sage environment's `CC` and `CFLAGS` or set them in `spkg-install`.",
     "created_at": "2010-03-12T18:01:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76406",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76279",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -277,15 +277,15 @@ I assume that at #7071, you'll use the Sage environment's `CC` and `CFLAGS` or s
 
 ---
 
-archive/issue_comments_076407.json:
+archive/issue_comments_076280.json:
 ```json
 {
     "body": "sage-env sets the environment variable CC to be gcc unless it is otherwise defined. \n\nObviously when the package was made, the compiler as assumed to be 'cc'. Someone has then set it to gcc. The best option is to unset it in the makefile, then the Makefile will use $(CC) which Sage has set. But it is a minor issue - I will fix that at a later date. \n\nOne of those gcc command lines look really odd - add -Wall to show all warnings, then add -W to suppress all warnings! So I'm not convinced the person that wrote that understood what they were doing! \n\nI'll take a look later today. I need to do a few jobs in the last remaining hours of daylight here in the UK. I can get back to the computer later today and will review this - I'm 99% sure it will be positive, but I'll convince myself first. \n\ndave",
     "created_at": "2010-03-12T18:07:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76407",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76280",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -303,15 +303,15 @@ dave
 
 ---
 
-archive/issue_comments_076408.json:
+archive/issue_comments_076281.json:
 ```json
 {
     "body": "Doesn't `-W` activate extra warnings?  From the manual page for gcc 4.4.1:\n\n```\n       -Wextra\n           This enables some extra warning flags that are not enabled by\n           -Wall. (This option used to be called -W.  The older name is still\n           supported, but the newer name is more descriptive.)\n```\n\nAnyway, whenever it's convenient is great.",
     "created_at": "2010-03-12T18:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76408",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76281",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -330,15 +330,15 @@ Anyway, whenever it's convenient is great.
 
 ---
 
-archive/issue_comments_076409.json:
+archive/issue_comments_076282.json:
 ```json
 {
     "body": "The revised SPKG.txt looks fine. \n\nThis builds fine in serial mode. I've not had chance to check the much more complex #7071. That will need extensive testing I believe, but I'm convinced this part is working fine. \n\nPositive review.",
     "created_at": "2010-03-13T11:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76409",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76282",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -352,15 +352,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_076410.json:
+archive/issue_comments_076283.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-13T11:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76410",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76283",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -370,15 +370,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_076411.json:
+archive/issue_comments_076284.json:
 ```json
 {
     "body": "Merged into 4.4.alpha2.",
     "created_at": "2010-04-23T17:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76411",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76284",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -388,15 +388,15 @@ Merged into 4.4.alpha2.
 
 ---
 
-archive/issue_comments_076412.json:
+archive/issue_comments_076285.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-23T17:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8477",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76412",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8477#issuecomment-76285",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

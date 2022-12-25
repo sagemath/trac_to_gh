@@ -6,15 +6,13 @@ archive/issues_009698.json:
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  @rlmill boothby @nathanncohen\n\nRandomized backtracking for finding hamiltonian cycles.\n\nA path P is maintained during the execution of the algorithm. Initially the path will contain an edge of the graph. Every 10 iterations the path is reversed. Every ``reset_bound`` iterations the path will be cleared and procedure is restarted. Every ``backtrack_bound`` steps we discard the last five vertices and continue with the procedure. The total number of steps in the algorithm is controlled by ``max_iter``. If a hamiltonian cycle is found it is returned. If the number of steps reaches ``max_iter`` \nthen a longest path is returned. See OUTPUT for more details.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9698\n\n",
     "created_at": "2010-08-06T19:17:39Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Hamiltonian cycles in undirected graphs - backtracking algorithm.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9698",
-    "user": "fidelbarrera"
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -34,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9698
 
 ---
 
-archive/issue_comments_094258.json:
+archive/issue_comments_094101.json:
 ```json
 {
     "body": "Attachment [trac_9698.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698.patch) by fidelbarrera created at 2010-08-06 19:20:41",
     "created_at": "2010-08-06T19:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94258",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94101",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -52,15 +50,15 @@ Attachment [trac_9698.patch](tarball://root/attachments/some-uuid/ticket9698/tra
 
 ---
 
-archive/issue_comments_094259.json:
+archive/issue_comments_094102.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-06T19:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94259",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94102",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -70,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_094260.json:
+archive/issue_comments_094103.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-08-07T02:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94260",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94103",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -88,15 +86,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_094261.json:
+archive/issue_comments_094104.json:
 ```json
 {
     "body": "Wow !!! This sounds great !! I promise I will give this patch a look as soon as possible ! :-)\n\nI have a few questions already...\n\n* I noticed you mentionned in the doc that the backtrack algorithm may not return an optimal hamiltonian path, but don't you think it may be better to create another function for it, rather than having a method whose answer may be exact or not depending on the algorithm used ?\n* If your algorithm is fast enough, could it be interesting to check when calling is_hamiltonian the answer given by your algorithm before solving the actual tsp problem (which is sometimes veeeeeery long) ?\n* Main question : as it is a backtracking algorithm, and this may require a lot of computational work... What would you think of making it a Cython function, to give t more energy ? :-)\n\nThaaaanksssssssss ! :-)\n\nNathann",
     "created_at": "2010-08-07T02:07:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94261",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94104",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -116,15 +114,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094262.json:
+archive/issue_comments_094105.json:
 ```json
 {
     "body": "Replying to [comment:2 ncohen]:\n> Wow !!! This sounds great !! I promise I will give this patch a look as soon as possible ! :-)\n> \n> I have a few questions already...\n> \n>  * I noticed you mentionned in the doc that the backtrack algorithm may not return an optimal hamiltonian path, but don't you think it may be better to create another function for it, rather than having a method whose answer may be exact or not depending on the algorithm used ?\n\nYes, this sounds OK. Would you think it is OK to call it `hamilton_cycle_heuristic`? Please let me know if you have a better suggestion for the name.\n\n>  * If your algorithm is fast enough, could it be interesting to check when calling is_hamiltonian the answer given by your algorithm before solving the actual tsp problem (which is sometimes veeeeeery long) ?\n\nI am not sure about this. I believe the algorithm is pretty fast on hamiltonian graphs whose vertices have low degree. But if not, the amount of time spent searching depends on `max_iter`. For the current default value of `max_iter`, it takes more than 20 seconds to stop searching for a hamilton cycle in the Petersen graph. Trying with the tsp algorithm it takes only 1/100 of a second.\n\n>  * Main question : as it is a backtracking algorithm, and this may require a lot of computational work... What would you think of making it a Cython function, to give t more energy ? :-)\n\nThis sounds great! I have never implemented anything in Cython, but I'll give it a try. :)\n\n\n> \n> Thaaaanksssssssss ! :-)\n> \n> Nathann\n\nCheers,\nFidel",
     "created_at": "2010-08-08T03:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94262",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94105",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -158,15 +156,15 @@ Fidel
 
 ---
 
-archive/issue_comments_094263.json:
+archive/issue_comments_094106.json:
 ```json
 {
     "body": "> Yes, this sounds OK. Would you think it is OK to call it `hamilton_cycle_heuristic`? Please let me know if you have a better suggestion for the name.\n\nHmm.. I was about to answer \"yes\" when I noticed that your algorithm, even though it may return an hamiltonian cycle when it finds one, will return the longest path it found otherwise.. Hence, here is a proposition : \n\nthere is a file named graphs/generic_graph_pyx.pyx (which is a Cython file), into which you could add your algorithm (using Cython to optimize it if possible). The methods added to this class are not directly accessible through the Graph class, which means that if you add your algorithm there, it will not appear as methods of the graphs objects. What you could do then, is add a method hamilton_cycle_heuristic and longest_path_heuristic to the generic_graph class (unifying both directed and undirected graphs), which would call your algorithm. The hamilton_cycle_heuristic would call this algorithm and return the hamiltonian path if found, and nothing otherwise. The hamiltonian_path method would call your algorithm, and return its result as the longest path found. \n\nThis, because otherwise people may not notice your hamiltonian_cycle_heuristic can also be useful to find longest paths...\n\nWell, this may be quite some work, but if I can help you at any step, please tell me :-)\n\n> I am not sure about this. I believe the algorithm is pretty fast on hamiltonian graphs whose vertices have low degree. But if not, the amount of time spent searching depends on `max_iter`. For the current default value of `max_iter`, it takes more than 20 seconds to stop searching for a hamilton cycle in the Petersen graph. Trying with the tsp algorithm it takes only 1/100 of a second.\n\nHmmm... I hope this could be very different after the algorithm is rewritten using Cython :-)\n\n> This sounds great! I have never implemented anything in Cython, but I'll give it a try. :)\n\nWell, if you know C, then Cython iss \"just\" a wonderful way to write C instructions among Python code.. And the C parts are.. FAST :-D\n\nI wrote an enumerative algorithm to find a given induced subgraph in a large graph. If you want to give a look to its source code, it is located in graphs/generic_graph_pyx.pyx. You will find there other examples of Cython code, but it is mainly that : you can write C code in Python file. Here again, send me an email if you think I can be of any assistance. Or you can post on sage-devel, to obtain answers from more knowledgeable developpers.\n\nNathann",
     "created_at": "2010-08-08T03:48:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94263",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94106",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -196,15 +194,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094264.json:
+archive/issue_comments_094107.json:
 ```json
 {
     "body": "Replying to [comment:5 ncohen]:\n> there is a file named graphs/generic_graph_pyx.pyx (which is a Cython file), into which you could add your algorithm (using Cython to optimize it if possible).\n\n`generic_graph` and `generic_graph_pyx` are for methods which are common to `Graph` and `DiGraph`. This algorithm is just for undirected graphs. What there needs to be are `graph_pyx` and `digraph_pyx` files, which there currently are not.*\n\n> The methods added to this class are not directly accessible through the Graph class\n\nThis is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` are inherited by `GenericGraph`, which are then inherited by `Graph` and `DiGraph`.\n\n> Well, this may be quite some work, but if I can help you at any step, please tell me :-)\n\n* - I'm not sure whether Cython supports multiple inheritance or not. It would be harder to have `graph_pyx` and `digraph_pyx` if not, because (I think) Cython cdef classes cannot inherit from Python classes...",
     "created_at": "2010-08-09T18:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94264",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94107",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -225,15 +223,15 @@ This is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` 
 
 ---
 
-archive/issue_comments_094265.json:
+archive/issue_comments_094108.json:
 ```json
 {
     "body": "Replying to [comment:6 rlm]:\n\n> `generic_graph` and `generic_graph_pyx` are for methods which are common to `Graph` and `DiGraph`. This algorithm is just for undirected graphs. What there needs to be are `graph_pyx` and `digraph_pyx` files, which there currently are not.*\n\nOh... I didn't notice that... Both longest path and hamiltonian cycle make sense in both settings though, and with some luck writing a version handling both does not require too much work.\n\n> This is just plain wrong. Any methods you add to the *class* `GenericGraph_pyx` are inherited by `GenericGraph`, which are then inherited by `Graph` and `DiGraph`.\n\nAfter giving it a look, it is indeed plainly wrong. It just shows I added methods to the file -- and not to the class --  when I edited the file... Sorryyyyy !! `^^;`\n\nNathann",
     "created_at": "2010-08-10T03:28:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94265",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94108",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -253,15 +251,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094266.json:
+archive/issue_comments_094109.json:
 ```json
 {
     "body": "Attachment [trac_9698_2.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_2.patch) by fidelbarrera created at 2010-09-02 19:34:39\n\nPlease apply instead of trac_9698.patch.",
     "created_at": "2010-09-02T19:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94266",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94109",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -273,15 +271,15 @@ Please apply instead of trac_9698.patch.
 
 ---
 
-archive/issue_comments_094267.json:
+archive/issue_comments_094110.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-09-02T19:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94267",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94110",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -291,15 +289,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_094268.json:
+archive/issue_comments_094111.json:
 ```json
 {
     "body": "Replying to [comment:5 ncohen]:\n\n> Hmmm... I hope this could be very different after the algorithm is rewritten using Cython :-)\n\nQuite amazed, it takes less than 2 seconds now, against 25s in Python :-O! \n\n> Well, if you know C, then Cython iss \"just\" a wonderful way to write C instructions among Python code.. And the C parts are.. FAST :-D\n\nStill a bit unsure about my Cython style (first timer), I would appreciate any comments you have about it.\n\n> I wrote an enumerative algorithm to find a given induced subgraph in a large graph. If you want to give a look to its source code, it is located in graphs/generic_graph_pyx.pyx. You will find there other examples of Cython code, but it is mainly that : you can write C code in Python file. Here again, send me an email if you think I can be of any assistance. Or you can post on sage-devel, to obtain answers from more knowledgeable developpers.\n\nThis one and the source code for Sparse and Dense graphs really helped. Thanks!\n\nPlease apply trac_9698_2.patch instead of trac_9698.patch.\n\nFidel",
     "created_at": "2010-09-02T19:44:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94268",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94111",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -325,15 +323,15 @@ Fidel
 
 ---
 
-archive/issue_comments_094269.json:
+archive/issue_comments_094112.json:
 ```json
 {
     "body": "Fidel,\n\nMay I suggest to put this code into `generic_graph.pyx` instead of creating a new Cython file for just this one function?",
     "created_at": "2010-09-02T19:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94269",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94112",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -345,15 +343,15 @@ May I suggest to put this code into `generic_graph.pyx` instead of creating a ne
 
 ---
 
-archive/issue_comments_094270.json:
+archive/issue_comments_094113.json:
 ```json
 {
     "body": "Please apply instead of trac_9698.patch and trac_9698_2.patch.",
     "created_at": "2010-09-02T20:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94270",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94113",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -363,15 +361,15 @@ Please apply instead of trac_9698.patch and trac_9698_2.patch.
 
 ---
 
-archive/issue_comments_094271.json:
+archive/issue_comments_094114.json:
 ```json
 {
     "body": "Attachment [trac_9698_3.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_3.patch) by fidelbarrera created at 2010-09-02 20:13:41\n\nReplying to [comment:9 rlm]:\n\n> Fidel, May I suggest to put this code into `generic_graph.pyx` instead of creating a new Cython file for just this one function?\n\nSure, please use trac_9698_3.patch instead of the previous ones.\n\nFidel",
     "created_at": "2010-09-02T20:13:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94271",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94114",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -389,15 +387,15 @@ Fidel
 
 ---
 
-archive/issue_comments_094272.json:
+archive/issue_comments_094115.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-04T13:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94272",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94115",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -407,15 +405,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_094273.json:
+archive/issue_comments_094116.json:
 ```json
 {
     "body": "Hello Fidel !!\n\nWell, first let me say that I am very glad to see you rewrote this piece of code in Cython, to find out it greatly improved its performances `:-)`\n\nI have been spending some time reading your code. I began by fixing one or two typo, then ended up having more important remarks, so I will list them as they sometimes need your answers :\n\n* Your doctest is \"too\" indented. The normal text should be aligned with the initial `\"\"\"` as for the other methods\n\n* Your explanation of the algorithm would deserve to follow a ``ALGORITHM:`` line, as in ``subgraph_search``\n\n* we are used to write ``OUTPUT:`` then its contents on the following lines, and not as you do on the same line. There is no good reason behind, that's just to keep the whole syntax in the whole code\n\n* If you have time, it would be nice to give several comments along with the examples `:-)`\n\n* it may be nice to cache the list of vertices instead of calling ``g.verts()`` very often. A \n  {{{\n  cdef list vertices = g.verts()\n  }}}\n  is all it requires, and it lets you replace ``g.verts()`` by ``vertices`` elsewhere in the code\n* I do not get why you list the possible extensions this way :\n  {{{\n  for u in g.out_neighbors( path[ length-1 ] ):\n  }}}\n\n  I expected the algorithm to pick a random neighbor which is not already in the path at this step. Why don't you first build the list of such elements, then pick one if there exists any ? As it is written, you algorithm may ignore some paths, as it always picks the \"first one\" as returned by the list of neighbors.\n\n* I understand the usefulness of path reversing, or resetting, or removing the last 5 vertices, but there is something else I do not understand in your code : let us imagine that your algorithm, at each loop, is increasing the current path from one element at each time for a long period. At some point, your algorithm will reset it, or remove the last vertices, even while it may still be possible to extend the path. Why so ? A way around :\n\n  Given a current \"path\", there could be a method named \"greedily_extend\" which, for as long as there exists a possible extension of the path (a neighbor of the last vertex not already in the path), picks one randomly and adds it to the path. This method ends when it is not possible to greedily extend the path anymore. It is not a very costly method, and at each iteration of it increases the current path's legngth, which is good. Your counters could then be \"when this method has been called 100 times, remove the last 5\", or reset, etc, etc... It would be a way to avoid the path to be increased while it is possible because of the counters (which are useful -- I do not deny this !). This would also avoid the following :\n\n* Each time a new vertex is added to the longest path, it is copied to be remembered. It is nice, but if your algorithm begins by building a path of length 20, you copy it 20 times ! By having a method like the previous one, you would call it just once, when the path can not be extended anymore. \n\n* If your code finds a hamiltonian path whith is not a cycle, it ends anyway.\n\n* About \n  {{{\n  for row in G.adjacency_matrix():\n  }}}\n\n  Why don't you prefer to list G's edges ?\n\n  The answer to that one may have to do with the following :\n\n* Here is what happens when the vertices of your graph are not integers :\n\n  {{{\n   sage: from sage.graphs.generic_graph_pyx import find_hamiltonian as fh\n   sage: fh(graphs.Grid2dGraph(5,5))\n   ERROR: An unexpected error occurred while tokenizing input\n   The following traceback may be corrupted or invalid\n   The error message is: ('EOF in multi-line statement', (636, 0))\n      \n   ERROR: An unexpected error occurred while tokenizing input\n   The following traceback may be corrupted or invalid\n   The error message is: ('EOF in multi-line statement', (555, 0))\n       \n   ---------------------------------------------------------------------------\n   TypeError                                 Traceback (most recent call last)\n       \n   /home/ncohen/<ipython console> in <module>()\n       \n   /home/ncohen/.Sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph_pyx.so in sage.graphs.generic_graph_pyx.find_hamiltonian (sage/graphs/generic_graph_pyx.c:9109)()\n       \n  /home/ncohen/.Sage/local/lib/python2.6/site-packages/sage/graphs/generic_graph_pyx.so in sage.graphs.generic_graph_pyx.find_hamiltonian (sage/graphs/generic_graph_pyx.c:7609)()\n      \n  TypeError: an integer is required\n  }}}\n\n  I have been told this an incredible amount of times myself `^^;`\n\nOverall, I stll do not understand why you call it an heuristic to find a hamiltonian cycle ! What you have written in a heuristic to find a hamiltonian path, which tries to return a hamiltonian cycle. What about renaming all of it accordingly ? What about writing a ``longest_path`` method ? I could write such a LP as an exact solver, and you could add your heuristic to it, exactly as you did for hamiltonian_cycle. You method is not only useful for hamiltonian cycle, but also for hamiltonian/longest paths ! Please give me your advice on this.\n\nOk, this was a long review... Sorry for the time it requires... `^^;`. I was away for one month and a half, but I should be more reactive now, and by email too if necessary... Thank you very much for your work, though `:-)` \n\nNathann",
     "created_at": "2010-09-04T13:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94273",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94116",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -499,15 +497,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094274.json:
+archive/issue_comments_094117.json:
 ```json
 {
     "body": "Please apply instead of previous patches.",
     "created_at": "2010-09-12T20:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94274",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94117",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -517,15 +515,15 @@ Please apply instead of previous patches.
 
 ---
 
-archive/issue_comments_094275.json:
+archive/issue_comments_094118.json:
 ```json
 {
     "body": "Attachment [trac_9698_4.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_4.patch) by fidelbarrera created at 2010-09-12 21:21:41\n\nReplying to [comment:11 ncohen]:\n\nHello Nathann,\n\n> I have been spending some time reading your code. I began by fixing one or two typo, then ended up having more important remarks, so I will list them as they sometimes need your answers :\n\nThanks!\n\nI have fixed the doctest indentation, added an ALGORITHM: line and fixed the OUTPUT: line.\n\nThe vertices are now cached in !``vertices!``. And every vertex is picked randomly, not as before, where the first available vertex was chosen.\n\n> * I understand the usefulness of path reversing, or resetting, or removing the last 5 vertices, but there is something else I do not understand in your code : let us imagine that your algorithm, at each loop, is increasing the current path from one element at each time for a long period. At some point, your algorithm will reset it, or remove the last vertices, even while it may still be possible to extend the path. Why so ? A way around :\n\nHere we rely on the !``backtrack_bound!`` and !``reset_bound!``, we should give \"appropriate\" values.\n\n> * Each time a new vertex is added to the longest path, it is copied to be remembered. It is nice, but if your algorithm begins by building a path of length 20, you copy it 20 times ! By having a method like the previous one, you would call it just once, when the path can not be extended anymore.\n\nNow, the longest path is only updated if the path cannot be extended anymore.\n\n> * If your code finds a hamiltonian path whith is not a cycle, it ends anyway.\n\nI think that when a hamiltonian path is found, we check if the two ends are adjacent, if so, then it ends. The test is done in:\n\n\n```\n            done = g.has_arc( path[n-1], path[0] )\n```\n\nIt also takes longer with non hamiltonian graphs, e.g. the Petersen graph, i.e. it stops until it hits the max_iter bound.\n\nI think the problem with the vertices not being integers is fixed now Although I did not get error messages as yours, I just got as output a list of integer vertices.\n\nI think I have removed the word heuristic. It would be great to write the longest_path method. The function is almost exactly the same as the one that is written, in fact it might be possible to adapt this one to do both ;)\n\nThanks, \n\nFidel",
     "created_at": "2010-09-12T21:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94275",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94118",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -574,15 +572,15 @@ Fidel
 
 ---
 
-archive/issue_comments_094276.json:
+archive/issue_comments_094119.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-12T21:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94276",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94119",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -592,15 +590,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094277.json:
+archive/issue_comments_094120.json:
 ```json
 {
     "body": "``longest_path`` written in #9910 `:-)`\n\nNathann",
     "created_at": "2010-09-14T19:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94277",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94120",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -612,15 +610,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094278.json:
+archive/issue_comments_094121.json:
 ```json
 {
     "body": "Please apply instead of previous patches.",
     "created_at": "2010-10-10T22:39:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94278",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94121",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -630,15 +628,15 @@ Please apply instead of previous patches.
 
 ---
 
-archive/issue_comments_094279.json:
+archive/issue_comments_094122.json:
 ```json
 {
     "body": "Attachment [trac_9698_5.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_5.patch) by fidelbarrera created at 2010-10-10 22:40:15\n\nReplying to [comment:13 ncohen]:\n> ``longest_path`` written in #9910 `:-)`\n> \n> Nathann\n\nHello Nathann,\n\nI have modified the function so it can obtain longest paths as well. Please let me know what you think, about it.\n\nThanks,\nFidel",
     "created_at": "2010-10-10T22:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94279",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94122",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -660,15 +658,15 @@ Fidel
 
 ---
 
-archive/issue_comments_094280.json:
+archive/issue_comments_094123.json:
 ```json
 {
     "body": "Hello !!!\n\nIt looks like you patch can not be applied on the brand-new 4.6.alpha3... As it is the second time in two days a patch does not apply on this release, I tried #10043 to notice it did no apply either -- it was THE patch I did not want to rebase :-/\n\nNathann",
     "created_at": "2010-10-11T07:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94280",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94123",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -682,15 +680,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094281.json:
+archive/issue_comments_094124.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-10-11T07:56:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94281",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94124",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -700,15 +698,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_094282.json:
+archive/issue_comments_094125.json:
 ```json
 {
     "body": "Rebased version of trac_9698_5.patch",
     "created_at": "2010-10-17T04:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94282",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94125",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -718,15 +716,15 @@ Rebased version of trac_9698_5.patch
 
 ---
 
-archive/issue_comments_094283.json:
+archive/issue_comments_094126.json:
 ```json
 {
     "body": "Attachment [trac_9698_6.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698_6.patch) by fidelbarrera created at 2010-10-17 04:42:43\n\nHello Nathann,\n\n> It looks like you patch can not be applied on the brand-new 4.6.alpha3... \nI have rebased the patch, please see trac_9698_6.patch I hope it works now :)\n\nBest,\nFidel",
     "created_at": "2010-10-17T04:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94283",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94126",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -744,15 +742,15 @@ Fidel
 
 ---
 
-archive/issue_comments_094284.json:
+archive/issue_comments_094127.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-10-17T04:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94284",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94127",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -762,15 +760,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094285.json:
+archive/issue_comments_094128.json:
 ```json
 {
     "body": "Then I guess this is it ! I am adding a small patch with unimportant modifications, like adding backquotes, lists for enumerations, or changing the length of some lines. I also added a doctest, just in case. Whatever happens, I do not fear anything wrong from this method as it tests its output before returning it... Positive review to your patch ! Could you review mine ? `:-)`\n\nThanksssssss !!\n\nNathann",
     "created_at": "2010-10-17T13:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94285",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94128",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -784,15 +782,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094286.json:
+archive/issue_comments_094129.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-10-18T16:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94286",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94129",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -802,15 +800,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094287.json:
+archive/issue_comments_094130.json:
 ```json
 {
     "body": "Attachment [trac_9698 - smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698 - smallfixes.patch) by fidelbarrera created at 2010-10-18 16:16:23\n\nYour modifications look good. All doctests passed. Changing to positive review.\n\nThanks,\nFidel",
     "created_at": "2010-10-18T16:16:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94287",
-    "user": "fidelbarrera"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94130",
+    "user": "https://trac.sagemath.org/admin/accounts/users/fidelbarrera"
 }
 ```
 
@@ -825,15 +823,15 @@ Fidel
 
 ---
 
-archive/issue_comments_094288.json:
+archive/issue_comments_094131.json:
 ```json
 {
     "body": "Attachment [trac_9698-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9698/trac_9698-smallfixes.patch) by @jdemeyer created at 2010-10-23 12:09:48\n\nsame as trac_9698 - smallfixes.patch",
     "created_at": "2010-10-23T12:09:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94288",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94131",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -845,15 +843,15 @@ same as trac_9698 - smallfixes.patch
 
 ---
 
-archive/issue_comments_094289.json:
+archive/issue_comments_094132.json:
 ```json
 {
     "body": "Please don't put spaces in patch filenames",
     "created_at": "2010-10-23T12:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94289",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94132",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -863,15 +861,15 @@ Please don't put spaces in patch filenames
 
 ---
 
-archive/issue_comments_094290.json:
+archive/issue_comments_094133.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-11-01T10:10:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94290",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94133",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -881,15 +879,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_094291.json:
+archive/issue_comments_094134.json:
 ```json
 {
     "body": "Great patch! I was hoping for these functions. There are some spelling problems, though (these are all in the docstrings):\n\n1. All instances of \"hamiltonian\" should be changed to \"Hamiltonian\". This is because Hamilton is a proper noun, and the capitalization transfers to the term (see here: http://mathworld.wolfram.com/HamiltonianCycle.html). \"hypohamiltonian\" should be left lower-case, though.\n2. \"neccesary\" should be \"necessary\"\n3. \"non hamiltonian\" should be \"non-Hamiltonian\" (note the dash)\n4. \"Dodecahedral\" should not be capitalized; \"dodecahedral\"\n5. \"Running the algorithm on random instances, just to make sure the answers are still satisfiable path\". Should be \"paths\".\n6. \"ajacent\" should be \"adjacent\"\n7. \"Now, we try the algorithm on a non hamiltonian graph, the Petersen graph\" should be \"graph: the\".\n8. \"another known hypohamiltonian graph, the generalized Petersen\" should be \"graph: the\"\n\nSorry for having to reopen!",
     "created_at": "2011-01-05T04:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94291",
-    "user": "@eviatarbach"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94134",
+    "user": "https://github.com/eviatarbach"
 }
 ```
 
@@ -910,15 +908,15 @@ Sorry for having to reopen!
 
 ---
 
-archive/issue_comments_094292.json:
+archive/issue_comments_094135.json:
 ```json
 {
     "body": "Changing status from closed to needs_work.",
     "created_at": "2011-01-05T04:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94292",
-    "user": "@eviatarbach"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94135",
+    "user": "https://github.com/eviatarbach"
 }
 ```
 
@@ -928,15 +926,15 @@ Changing status from closed to needs_work.
 
 ---
 
-archive/issue_comments_094293.json:
+archive/issue_comments_094136.json:
 ```json
 {
     "body": "I created a new ticket for this: #10561",
     "created_at": "2011-01-05T08:19:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9698",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94293",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9698#issuecomment-94136",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

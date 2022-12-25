@@ -6,15 +6,14 @@ archive/issues_000351.json:
     "body": "Assignee: @williamstein\n\n\n```\nHello William:\n\nI was trying to compute with elliptic curves on SAGE (and\nwww.sagenb.com) and I have found a problem since in MAGMA works very fast.\n\nHere are the output of both programs:\n\n\n///////////////////////\nIN SAGE\n//////////////////////\n\n\nE=EllipticCurve(GF(2^192-2^64-1),[-3,100001010101])\nE\nsage: E=EllipticCurve(GF(2^192-2^64-1),[-3,100001010101])\nsage: E\nElliptic Curve defined by y^2  = x^3 +\n6277101735386680763835789423207666416083908700390324961276*x +\n100001010101 over Finite Field of size\n6277101735386680763835789423207666416083908700390324961279\nsage: n=E.cardinality()\nnsage: n.factor()\n2 * 3 * 5^2 * 7 * 29 * 83 * 642529 * 71354419 *\n54172661118016618880771252420611881049\nsage: E.abelian_group()\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/home/enrique/<ipython console> in <module>()\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin abelian_group(self)\n   334             pass\n   335         if self.base_ring().degree() == 1:\n--> 336             I, G = self._cremona_abgrp_data()\n   337             A = AbelianGroup(I)\n   338             G = tuple(reversed([self(P) for P in G]))\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin _cremona_abgrp_data(self)\n   297\n   298     def _cremona_abgrp_data(self):\n--> 299         E = self._gp()\n   300         gp = E.parent()\n   301         return eval(gp.eval('[%s.isotype,\nlift(%s.generators)]'%(E.name(), E.name())))\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/ell_finite_field.py\nin _gp(self)\n    77         if not F.is_prime():\n    78             raise NotImplementedError\n---> 79         self.__gp = gp_cremona.ellinit(self.a_invariants(),\nF.characteristic())\n    80         return self.__gp\n    81\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/schemes/elliptic_curves/gp_cremona.py\nin ellinit(e, p)\n    74     \"\"\"\n    75     init()\n---> 76     return gp(\"e=ellzpinit(%s,%s);\"%(e,p))\n    77\n    78\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\nin __call__(self, x)\n   490             return x\n   491         if isinstance(x, str):\n--> 492             return cls(self, x)\n   493         try:\n   494             return self._coerce_impl(x)\n\n/usr/local/sage-2.1.4/local/lib/python2.5/site-packages/sage/interfaces/expect.py\nin __init__(self, parent, value, is_name)\n   719             except (TypeError, KeyboardInterrupt, RuntimeError,\nValueError), x:\n   720                 self._session_number = -1\n--> 721                 raise TypeError, x\n   722         self._session_number = parent._session_number\n   723\n\n<type 'exceptions.TypeError'>: Error executing code in GP/PARI:\nCODE:\n       sage[1]=e=ellzpinit([0, 0, 0,\n6277101735386680763835789423207666416083908700390324961276,\n100001010101],6277101735386680763835789423207666416083908700390324961279);;\nGP/PARI ERROR:\n *** ellap: not enough memory\n\n\n///////////////////////\nIN MAGMA\n//////////////////////\n> K:=GF(2^192-2^64-1);\n> K;\nFinite field of size\n6277101735386680763835789423207666416083908700390324961279\n> E:=EllipticCurve([-3,K!100001010101])\n> ;\n> E;\nElliptic Curve defined by y^2 = x^3 +\n6277101735386680763835789423207666416083908700390324961276*x +\n100001010101 over\nGF(6277101735386680763835789423207666416083908700390324961279)\n> A:=AbelianGroup(E);\n> A;\nAbelian Group isomorphic to\nZ/6277101735386680763835789423079145837183917076777215537650\nDefined on 1 generator\nRelations:\n   6277101735386680763835789423079145837183917076777215537650*A.1 = 0\n> #A;\n6277101735386680763835789423079145837183917076777215537650\n\nTotal time: 6.629 seconds, Total memory usage: 5.53MB\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/351\n\n",
     "created_at": "2007-04-11T15:15:33Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "issue running cremona's abelian_group command and memory usage in gp",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/351",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -148,15 +147,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/351
 
 ---
 
-archive/issue_comments_001699.json:
+archive/issue_comments_001693.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @JohnCremona.",
     "created_at": "2007-08-18T09:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1699",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1693",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -166,15 +165,15 @@ Changing assignee from @williamstein to @JohnCremona.
 
 ---
 
-archive/issue_comments_001700.json:
+archive/issue_comments_001694.json:
 ```json
 {
     "body": "The problem is this:  The function uses pari's ellap() function to find the group order, and this does not work for huge primes.  I found that withh gp using a stack of 110M (my default) I could go to p=nextprim(2^78) but no further;  after increaasing the stack, p=nextprime(95) is ok but p=nextprime(100) produces an error message.\n\nI suggest that (1) the underlyi,ng call to gp initializes gp with a largish stack if the prime is medium-large;  (2) if the prime is greater than that (say >2^95) then raise a not-implemented error.\n\nI should also say that the implementation of abelian_group() in my gp script was not intended to handle such large primes -- it only uses baby-step-giant-step techniques and not fancier methods such as SEA.  Magma, by contrast, as better methods for large primes, so an alternative to (3) would be to use Magma's function instead if Magma is available.",
     "created_at": "2007-08-18T09:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1700",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1694",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -188,15 +187,15 @@ I should also say that the implementation of abelian_group() in my gp script was
 
 ---
 
-archive/issue_comments_001701.json:
+archive/issue_comments_001695.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-18T09:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1701",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1695",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -206,15 +205,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_001702.json:
+archive/issue_comments_001696.json:
 ```json
 {
     "body": "\n```\nGood!  If you send me a login to the trac system I might be able to\ncomment on a few items there, for example in\nhttp://www.sagemath.org:9002/sage_trac/ticket/351\nmy gp program was never intended to manage \"huge\" prime fields & hence\nhuge group orders.  Perhaps we should guesstimate what the largest\nprime is for which it makes sense to use my code and otherwise use\nMagma if available, or give a \"not implemented\" error or something.\n```\n",
     "created_at": "2007-08-18T10:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1702",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1696",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -234,15 +233,15 @@ Magma if available, or give a "not implemented" error or something.
 
 ---
 
-archive/issue_comments_001703.json:
+archive/issue_comments_001697.json:
 ```json
 {
     "body": "John -- SAGE includes a very good SEA implementation written in PARI.  You could load that and call it.",
     "created_at": "2007-08-19T01:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1703",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1697",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -252,15 +251,15 @@ John -- SAGE includes a very good SEA implementation written in PARI.  You could
 
 ---
 
-archive/issue_comments_001704.json:
+archive/issue_comments_001698.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-08-19T01:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1704",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1698",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -270,15 +269,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_001705.json:
+archive/issue_comments_001699.json:
 ```json
 {
     "body": "For example, in the above, SEA can compute the order in seconds (this only works on a 64-bit computer -- on a 32-bit one you can't even define the curve in pari using your script):\n\n```\nsage: E=EllipticCurve(GF(2^192-2^64-1),[-3,100001010101])                                                    \nsage: time c = E.cardinality()\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 3.40\nsage: c\n6277101735386680763835789423079145837183917076777215537650\nsage: factor(c)\n2 * 3 * 5^2 * 7 * 29 * 83 * 642529 * 71354419 * 54172661118016618880771252420611881049\nsage:\nKeyboardInterrupt\nsage:            \n```\n\n\n\nI'm changing this from a bug to an \"enhancement\", since after all any command with infinitely many inputs has it's limits in any program, and hence everything would be buggy.\n\nThat said, a better error message would be good.",
     "created_at": "2007-08-19T01:54:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1705",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1699",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -308,15 +307,15 @@ That said, a better error message would be good.
 
 ---
 
-archive/issue_comments_001706.json:
+archive/issue_comments_001700.json:
 ```json
 {
     "body": "Can we close this now?\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.alpha1, Release Date: 2008-04-04                  |\n| Type notebook() for the GUI, and license() for information.        |\nsage: E=EllipticCurve(GF(2^192-2^64-1),[-3,100001010101])\nsage: E\nElliptic Curve defined by y^2  = x^3 + 6277101735386680763835789423207666416083908700390324961276*x + 100001010101 over Finite Field of size 6277101735386680763835789423207666416083908700390324961279\nsage: n=E.cardinality()\nsage: n.factor()\n2 * 3 * 5^2 * 7 * 29 * 83 * 642529 * 71354419 * 54172661118016618880771252420611881049\nsage: E.abelian_group()\n\n(Multiplicative Abelian Group isomorphic to C6277101735386680763835789423079145837183917076777215537650,\n ((4153000426260909917154178788800583218670192457236809343835 : 2657174507413387032212810112685256696116491447557332765409 : 1),))\n```\n",
     "created_at": "2008-04-05T14:01:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1706",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1700",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -345,15 +344,15 @@ sage: E.abelian_group()
 
 ---
 
-archive/issue_comments_001707.json:
+archive/issue_comments_001701.json:
 ```json
 {
     "body": "I can confirm that this is fixed, so I am closing it. Can you tell me which ticket fixed the issue for the record and to assign proper credit?\n\nCheers,\n\nMichael",
     "created_at": "2008-04-05T14:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1707",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1701",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -367,15 +366,15 @@ Michael
 
 ---
 
-archive/issue_comments_001708.json:
+archive/issue_comments_001702.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-05T14:23:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1708",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/351#issuecomment-1702",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

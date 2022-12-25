@@ -6,14 +6,14 @@ archive/issues_000379.json:
     "body": "Assignee: @williamstein\n\nTimothy Clemans found the following bug:\n\n```\nsage: 3 == x\nFalse\nsage: x == 3\nx == 3\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/379\n\n",
     "created_at": "2007-05-26T02:27:53Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "minor",
         "bug"
     ],
     "title": "bug in formal equality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/379",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/379
 
 ---
 
-archive/issue_comments_001840.json:
+archive/issue_comments_001832.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-05-31T14:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/379",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/379#issuecomment-1840",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/379#issuecomment-1832",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -54,15 +54,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_001841.json:
+archive/issue_comments_001833.json:
 ```json
 {
     "body": "fixed.\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1180622669 25200\n# Node ID 872bacf13e2081c7f731ce8f4e23a244eba23ecb\n# Parent  84924f963b06ddc18de29c7d7f803a4554e46d81\nFix comparison bug in notebook where 3 == x and x == 3 were different.\n\ndiff -r 84924f963b06 -r 872bacf13e20 sage/calculus/calculus.py\n--- a/sage/calculus/calculus.py Thu May 31 07:07:20 2007 -0700\n+++ b/sage/calculus/calculus.py Thu May 31 07:44:29 2007 -0700\n@@ -570,6 +570,34 @@ class SymbolicExpression(RingElement):\n             0\n         \"\"\"\n         return cmp(maxima(self), maxima(right))\n+\n+    def _richcmp_(left, right, op):\n+        \"\"\"\n+        TESTS:\n+            sage: 3 < x\n+            3 < x\n+            sage: 3 <= x\n+            3 <= x\n+            sage: 3 == x\n+            3 == x\n+            sage: 3 >= x\n+            3 >= x\n+            sage: 3 > x\n+            3 > x\n+        \"\"\"\n+        if op == 0:  #<\n+            return left < right\n+        elif op == 2: #==\n+            return left == right\n+        elif op == 4: #>\n+            return left > right\n+        elif op == 1: #<=\n+            return left <= right\n+        elif op == 3: #!=\n+            return left != right\n+        elif op == 5: #>=\n+            return left >= right\n+\n\n     def _neg_(self):\n         \"\"\"\n```\n",
     "created_at": "2007-05-31T14:49:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/379",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/379#issuecomment-1841",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/379#issuecomment-1833",
+    "user": "https://github.com/williamstein"
 }
 ```
 

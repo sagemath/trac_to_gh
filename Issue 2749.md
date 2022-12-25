@@ -6,15 +6,14 @@ archive/issues_002749.json:
     "body": "Assignee: boothby\n\nUpgrade FLINT spkg to version 1.1.  A developer version is located at http://sage.math.washington.edu/home/boothby/SPKG/flint-1.1-devel.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/2749\n\n",
     "created_at": "2008-04-01T03:36:13Z",
     "labels": [
-        "packages: standard",
-        "minor",
-        "enhancement"
+        "component: packages: standard",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with spkg, not ready for review] Upgrade to FLINT-1.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2749",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: boothby
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2749
 
 ---
 
-archive/issue_comments_018884.json:
+archive/issue_comments_018845.json:
 ```json
 {
     "body": "Please note that Sage 3.0.alphaX will contain updated flint-1.06 spkgs, so this will likely need to be rebased vs. that spkg.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-02T00:03:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2749#issuecomment-18884",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2749#issuecomment-18845",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +50,15 @@ Michael
 
 ---
 
-archive/issue_comments_018885.json:
+archive/issue_comments_018846.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-06-27T14:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2749#issuecomment-18885",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2749#issuecomment-18846",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -69,15 +68,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_018886.json:
+archive/issue_comments_018847.json:
 ```json
 {
     "body": "I am closing this as invalid. We should only ship stable versions of flint unless there is a very compelling argument to the contrary.  See ticket #3523 for a stable version.",
     "created_at": "2008-06-27T14:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2749",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2749#issuecomment-18886",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2749#issuecomment-18847",
+    "user": "https://github.com/williamstein"
 }
 ```
 

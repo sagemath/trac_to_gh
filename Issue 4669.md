@@ -6,15 +6,14 @@ archive/issues_004669.json:
     "body": "Assignee: @williamstein\n\n\n```\n> What is really confusing me is that the docstring for\n> matrix_complex_double_dense.pyx\n> (presumably *complex* matrices) is more or less the same as the docstring for\n> matrix_real_double_dense.pyx at\n> http://www.sagemath.org/hg/sage-main/file/8b1d19463fc4/sage/matrix/matrix_real_double_dense.pyx\n> In other words, there are no examples of *complex* matrices in the\n> docstring for\n> matrix_complex_double_dense.pyx, which seems odd.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4669\n\n",
     "created_at": "2008-12-01T15:31:59Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "CDF matrices need complex doctests (see matrix/matrix_complex_double_dense.pyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4669",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4669
 
 ---
 
-archive/issue_comments_035169.json:
+archive/issue_comments_035100.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-01T16:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35169",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35100",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -59,15 +58,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_035170.json:
+archive/issue_comments_035101.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @jasongrout.",
     "created_at": "2008-12-01T16:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35170",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35101",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -77,15 +76,15 @@ Changing assignee from @williamstein to @jasongrout.
 
 ---
 
-archive/issue_comments_035171.json:
+archive/issue_comments_035102.json:
 ```json
 {
     "body": "Attachment [CDF-matrix-doctests.patch](tarball://root/attachments/some-uuid/ticket4669/CDF-matrix-doctests.patch) by @jasongrout created at 2008-12-05 08:40:13",
     "created_at": "2008-12-05T08:40:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35171",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35102",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -95,15 +94,15 @@ Attachment [CDF-matrix-doctests.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_035172.json:
+archive/issue_comments_035103.json:
 ```json
 {
     "body": "THANKS!!",
     "created_at": "2008-12-06T22:13:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35172",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35103",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -113,15 +112,15 @@ THANKS!!
 
 ---
 
-archive/issue_comments_035173.json:
+archive/issue_comments_035104.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.alpha1",
     "created_at": "2008-12-07T09:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35173",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35104",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -131,15 +130,15 @@ Merged in Sage 3.2.2.alpha1
 
 ---
 
-archive/issue_comments_035174.json:
+archive/issue_comments_035105.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-07T09:59:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35174",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4669#issuecomment-35105",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

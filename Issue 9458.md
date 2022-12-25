@@ -6,15 +6,14 @@ archive/issues_009458.json:
     "body": "Assignee: @aghitza\n\nKeywords: var solve name factorial\n\nSome variable names yield strange behavior with the solve() function. Here is an example:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: var('d2 d3 x')\n(d2, d3, x)\nsage: solve((d2+d3)*x==1, x)\n[x == factorial(2*k + 6*n)/(d3*factorial(2*k + 6*n) + factorial(k + 3*n - 1))]\n```\n\n| Sage Version 4.4.2, Release Date: 2010-05-19                       |\n| Type notebook() for the GUI, and license() for information.        |\nThese factorials are strange. They don't occur with other variable names, e.g.,\n\n\n```\nsage: var('y1 y2 x')\n(y1, y2, x)\nsage: solve((y1+y2)*x==1, x)\n[x == (1/(y1 + y2))]\n```\n\n\nDocumentation for solve() does not mention reserved variable names.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9458\n\n",
     "created_at": "2010-07-08T18:33:47Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Bug with variable names in solve()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9458",
-    "user": "tastalian"
+    "user": "https://trac.sagemath.org/admin/accounts/users/tastalian"
 }
 ```
 Assignee: @aghitza
@@ -56,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9458
 
 ---
 
-archive/issue_comments_090677.json:
+archive/issue_comments_090527.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-07-08T19:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9458#issuecomment-90677",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9458#issuecomment-90527",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -74,15 +73,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_090678.json:
+archive/issue_comments_090528.json:
 ```json
 {
     "body": "This is basically a duplicate of #8734.",
     "created_at": "2010-07-08T19:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9458",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9458#issuecomment-90678",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9458#issuecomment-90528",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

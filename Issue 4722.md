@@ -6,15 +6,14 @@ archive/issues_004722.json:
     "body": "Assignee: @williamstein\n\nI'm in a talk right now, and the speaker (Marco from Holland) just pointed out that\nSage's K.hilbert_class_polynomial() function, for K quadratic imaginary, is a *LIE*.\nIt returns a poly that defines that Hilbert class field, but it is *not* the Hilbert Class Polynomial.\n\nObserve:\n\n\n```\nsage: K.<a> =QuadraticField(-97)\nsage: K.hilbert_class_polynomial()\nx^4 + 9*x^2 - 6*x + 1\nsage: magma(K.discriminant()).HilbertClassPolynomial()\n$.1^4 - 750062398364686994581728000*$.1^3 - 20542159225989612130996373047535232000000*$.1^2 + 208224136957169320201407896480139264000000000*$.1 - 1121692648948590091501551223636881408000000000000\n```\n\n\nSolution: change the name of this function and add documentation clarifying this, say including the above example.\n\nThe difference is *very* important, given the use of the Hilbert class polynomial in computing elliptic curves with a given number of rational points. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4722\n\n",
     "created_at": "2008-12-05T23:04:07Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.2",
     "title": "BUG - number field K.hilbert_class_polynomial() is a *lie*",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4722",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -47,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4722
 
 ---
 
-archive/issue_comments_035645.json:
+archive/issue_comments_035575.json:
 ```json
 {
     "body": "Who to blame?  Either me or David Kohel, since this was done before Sage was under revision control.",
     "created_at": "2008-12-05T23:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35645",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35575",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +64,15 @@ Who to blame?  Either me or David Kohel, since this was done before Sage was und
 
 ---
 
-archive/issue_comments_035646.json:
+archive/issue_comments_035576.json:
 ```json
 {
     "body": "Replying to [comment:1 was]:\n> Who to blame?  Either me or David Kohel, since this was done before Sage was under revision control.  \n\nNot me. This is a wrapper for the Pari/gp function quadhilbert.  \n\nI find this unanswered question about what it returns:\n\nhttp://pari.math.u-bordeaux.fr/archives/pari-users-0402/msg00000.html\n\nCertainly it does not return the hilbert class polynomial (minimal \npolynomial of the j-invariant), rather it returns a \"nicer\" polynomial \nover QQ which generates the Hilbert class field over K.\n\nI agree that a name change is in order to avoid this confusion, but \nI don't have a suggestion other than \n\nhilbert_class_field_[relative_]defining_polynomial\n\nwhich is a bit long, but descriptive.  Note that the hilbert_class_field \ndoes not have this as a defining polynomial (hence the relative_), \nsince it is formed as a compositum of the quadratic and degree h \nextensions rather than a relative extension.\n\nThe documentation should also be corrected to say that Schertz's method \nis used (only) for D < 0.  A reference to Schertz's methods and whatever \nmethod (Stark units?) is used for D > 0 would be desirable.",
     "created_at": "2008-12-06T01:08:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35646",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35576",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -108,15 +107,15 @@ method (Stark units?) is used for D > 0 would be desirable.
 
 ---
 
-archive/issue_comments_035647.json:
+archive/issue_comments_035577.json:
 ```json
 {
     "body": "Hi,\n\nThere was a coding sprint project at SD 10 by Eduardo Ocampo-Alvarez and Andrey Timofeev that dealt with the Hilbert class polynomial. Those two guys mentioned to me toward the end of the sprint that the Sage implementation had issues and that they also had fast code written in Sage/Cython, but they never send the code in for review. Maybe someone with a better understanding then me with the math involved should ping them and get them to put their code up for review [and before anyone asks: no, the code isn't linked from the Days 10 coding sprint page :(].\n\nCheers,\n\nMichael",
     "created_at": "2008-12-06T01:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35647",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35577",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +131,15 @@ Michael
 
 ---
 
-archive/issue_comments_035648.json:
+archive/issue_comments_035578.json:
 ```json
 {
     "body": "Attachment [trac_4722.patch](tarball://root/attachments/some-uuid/ticket4722/trac_4722.patch) by @williamstein created at 2008-12-11 04:56:32",
     "created_at": "2008-12-11T04:56:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35648",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35578",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -150,15 +149,15 @@ Attachment [trac_4722.patch](tarball://root/attachments/some-uuid/ticket4722/tra
 
 ---
 
-archive/issue_comments_035649.json:
+archive/issue_comments_035579.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2008-12-11T10:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35649",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35579",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -168,15 +167,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_035650.json:
+archive/issue_comments_035580.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.alpha2",
     "created_at": "2008-12-11T11:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35650",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35580",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -186,15 +185,15 @@ Merged in Sage 3.2.2.alpha2
 
 ---
 
-archive/issue_comments_035651.json:
+archive/issue_comments_035581.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-11T11:10:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4722",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35651",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4722#issuecomment-35581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

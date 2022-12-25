@@ -6,15 +6,14 @@ archive/issues_006635.json:
     "body": "Assignee: @craigcitro\n\nImplement functions for computing saturations and discriminants.  \n\nI'll do this since it's needed for a paper I'm publishing very soon with Ken Ribet and Amod Agashe.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6635\n\n",
     "created_at": "2009-07-27T05:12:47Z",
     "labels": [
-        "modular forms",
-        "major",
+        "component: modular forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "implement more critical Hecke algebra functionality: index in saturation, discriminant",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6635",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @craigcitro
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6635
 
 ---
 
-archive/issue_comments_054365.json:
+archive/issue_comments_054264.json:
 ```json
 {
     "body": "part 1",
     "created_at": "2009-07-27T05:14:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6635",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6635#issuecomment-54365",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6635#issuecomment-54264",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ part 1
 
 ---
 
-archive/issue_comments_054366.json:
+archive/issue_comments_054265.json:
 ```json
 {
     "body": "Attachment [trac_6635.patch](tarball://root/attachments/some-uuid/ticket6635/trac_6635.patch) by @williamstein created at 2009-07-29 18:18:28",
     "created_at": "2009-07-29T18:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6635",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6635#issuecomment-54366",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6635#issuecomment-54265",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +66,15 @@ Attachment [trac_6635.patch](tarball://root/attachments/some-uuid/ticket6635/tra
 
 ---
 
-archive/issue_comments_054367.json:
+archive/issue_comments_054266.json:
 ```json
 {
     "body": "Attachment [trac_6635-part2.patch](tarball://root/attachments/some-uuid/ticket6635/trac_6635-part2.patch) by @williamstein created at 2009-07-29 18:19:58",
     "created_at": "2009-07-29T18:19:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6635",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6635#issuecomment-54367",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6635#issuecomment-54266",
+    "user": "https://github.com/williamstein"
 }
 ```
 

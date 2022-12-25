@@ -6,15 +6,14 @@ archive/issues_009873.json:
     "body": "Assignee: @burcin\n\nCC:  ktkohl @rwst @kcrisman @pelegm\n\nWe should define a new symbolic function for the derivative of `ceil` or `floor`. \n\nIn Maple:\n\n\n```\n> diff(floor(x),x);\n                                  floor(1, x)\n> diff(floor(x),x,x);\n                                  floor(1, x)\n> diff(ceil(x),x,x); \n                                  floor(1, x)\n> eval(diff(ceil(x),x,x),x=1.5);\n                                       0\n> eval(diff(ceil(x),x,x),x=0);  \nError, (in floor) floor is not differentiable at integers\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9874\n\n",
     "created_at": "2010-09-08T11:41:23Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "add a function for the derivative of ceil and floor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9873",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: @burcin
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9874
 
 ---
 
-archive/issue_comments_097695.json:
+archive/issue_comments_097533.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"sd35.5\".",
     "created_at": "2012-01-12T14:48:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9873",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9873#issuecomment-97695",
-    "user": "ktkohl"
+    "url": "https://github.com/sagemath/sagetest/issues/9873#issuecomment-97533",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ktkohl"
 }
 ```
 
@@ -66,15 +65,15 @@ Changing keywords from "" to "sd35.5".
 
 ---
 
-archive/issue_comments_097696.json:
+archive/issue_comments_097534.json:
 ```json
 {
     "body": "These give the right answer but also a runtime error:\n\n```\nsage: floor(x).derivative().subs(x=1.5)\nException RuntimeError: 'maximum recursion depth exceeded while calling a Python object' in 'sage.structure.parent.good_as_coerce_domain' ignored\n0\nsage: ceil(x).derivative().subs(x=1.5)\nException RuntimeError: 'maximum recursion depth exceeded while calling a Python object' in 'sage.structure.parent.good_as_coerce_domain' ignored\n0\n```\n\n\n----\nNew commits:",
     "created_at": "2015-05-25T18:44:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9873",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9873#issuecomment-97696",
-    "user": "ktkohl"
+    "url": "https://github.com/sagemath/sagetest/issues/9873#issuecomment-97534",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ktkohl"
 }
 ```
 
@@ -97,15 +96,15 @@ New commits:
 
 ---
 
-archive/issue_comments_097697.json:
+archive/issue_comments_097535.json:
 ```json
 {
     "body": "Just a quick note that there are empty examples and tests fields but you probably know that.",
     "created_at": "2015-05-26T06:11:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9873",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9873#issuecomment-97697",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/9873#issuecomment-97535",
+    "user": "https://github.com/rwst"
 }
 ```
 

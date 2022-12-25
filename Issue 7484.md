@@ -6,15 +6,14 @@ archive/issues_007484.json:
     "body": "Assignee: tbd\n\nCC:  @haraldschilly\n\nHere's a patch for README.txt to document this:\n\n\n```\n--- README.txt.orig     2009-11-17 20:02:26.833640422 -0600\n+++ README.txt  2009-11-17 20:07:26.763327405 -0600\n@@ -47,6 +47,14 @@\n      >= 10.4.x and certain Linux distributions are 100% supported.\n      See below for a complete list.\n  \n+     NOTE: If you're using Fortran on a platform for which the included g95 binaries\n+     do not work (e.g., Itanium or Ubuntu 9.10), you must use a system-wide gfortran.\n+     You must set the SAGE_FORTRAN and SAGE_FORTRAN_LIB environment variables before\n+     making Sage.  Do this by typing\n+\n+          export SAGE_FORTRAN=/exact/path/to/gfortran\n+          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n+\n    2. Extract the tarball:\n           tar xvf sage-*.tar\n \n@@ -75,13 +83,6 @@\n     Use Sage on Microsoft Windows via VMware.\n     We do not always test on OS X 10.4, but Sage should work there fine.\n \n-NOTE: If you're using Fortran on a platform without g95 binaries included\n-      with Sage, e.g., Itanium, you must use a system-wide gfortran.  You \n-      have to explicitly tell the build process about the fortran\n-      compiler and library location.  Do this by typing\n-\n-          export SAGE_FORTRAN=/exact/path/to/gfortran\n-          export SAGE_FORTRAN_LIB=/path/to/fortran/libs/libgfortran.so\n \n NOT OFFICIALLY SUPPORTED, BUT NEARLY WORKS:\n        PROCESSOR       OPERATING SYSTEM\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7484\n\n",
     "created_at": "2009-11-18T02:10:22Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sage does not build on stock Ubuntu 9.10 without installing gfortran and setting SAGE_FORTRAN(_LIB)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7484",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: tbd
@@ -67,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7484
 
 ---
 
-archive/issue_comments_063199.json:
+archive/issue_comments_063084.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-18T02:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63199",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63084",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_063200.json:
+archive/issue_comments_063085.json:
 ```json
 {
     "body": "Regarding this ticket:\n\n\n```\n> Don't bother, since sage-4.3 should require the user has installed\n> gfortran on *all* Linux platforms.\n\n\nOkay, great.  If that doesn't happen, then I already made the ticket and patch:\n\nhttp://trac.sagemath.org/sage_trac/ticket/7484\n\nThis can be closed (or modified) to indicate the need for gfortran on all platforms, whenever that patch is merged.\n```\n",
     "created_at": "2009-11-18T02:15:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63200",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63085",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -117,15 +116,15 @@ This can be closed (or modified) to indicate the need for gfortran on all platfo
 
 ---
 
-archive/issue_comments_063201.json:
+archive/issue_comments_063086.json:
 ```json
 {
     "body": "See #7485",
     "created_at": "2009-11-18T07:15:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63201",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63086",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -135,15 +134,15 @@ See #7485
 
 ---
 
-archive/issue_comments_063202.json:
+archive/issue_comments_063087.json:
 ```json
 {
     "body": "Due to #7485, Linux Fortran binaries are now removed from the Fortran spkg. This means that under Linux, Fortran is a pre-requisite for compiling Sage from source just as the GCC suite of compilers is a pre-requisite. The new [README.txt](http://trac.sagemath.org/sage_trac/attachment/ticket/7484/README.txt) states that Fortran is a pre-requisite for compiling Sage on Linux. This file is based on that in Sage 4.3.1.rc1. The diff file [README.diff](http://trac.sagemath.org/sage_trac/attachment/ticket/7484/README.diff) shows differences between the attached README.txt and the one in Sage 4.3.1.rc1. Don't apply this diff file. Just replace the current README.txt under SAGE_ROOT with the attached README.txt.",
     "created_at": "2010-01-20T20:34:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63202",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63087",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -153,15 +152,15 @@ Due to #7485, Linux Fortran binaries are now removed from the Fortran spkg. This
 
 ---
 
-archive/issue_comments_063203.json:
+archive/issue_comments_063088.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-21T12:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63203",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63088",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -171,15 +170,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_063204.json:
+archive/issue_comments_063089.json:
 ```json
 {
     "body": "I think it is important to add on platforms such as Solaris, AIX and HP-UX, where both 32 and 64-bit builds are supported, the library path **must** point to the 32-bit library if building 32-bit, and must point to a 64-bit library if building 64-bit. \n\n(How about OS X? Perhaps the fortran.spkg takes care of that.) \n\nOn Solaris that will probably be the following, though this would need checking.\n\n\n```\nSAGE_FORTRAN=/path/to/gcc/install/directory/bin/gfortran (SPARC and x86)\n\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/libgfortran.so (32-bit SPARC)\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/sparcv9/libgfortran.so (64-bit SPARC)\n\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/libgfortran.so (32-bit x86)\nSAGE_FORTRAN_LIB=/path/to/gcc/install/directory/lib/amd64/libgfortran.so (64-bit x64)\n```\n\n\nDave",
     "created_at": "2010-01-21T12:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63204",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63089",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -207,15 +206,15 @@ Dave
 
 ---
 
-archive/issue_comments_063205.json:
+archive/issue_comments_063090.json:
 ```json
 {
     "body": "> (How about OS X? Perhaps the fortran.spkg takes care of that.) \n\nDo *NOT* require gfortran on OS X, since we still supply it with Sage.",
     "created_at": "2010-01-21T16:53:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63205",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63090",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -227,15 +226,15 @@ Do *NOT* require gfortran on OS X, since we still supply it with Sage.
 
 ---
 
-archive/issue_comments_063206.json:
+archive/issue_comments_063091.json:
 ```json
 {
     "body": "William, you said on sage-devel, on the subject of SAGE_FORTRAN and OS X. \n\n*Use the binary included in Sage if SAGE_FORTRAN is not specified. Otherwise, use the one pointed to by the that environment variable. *\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/e2867ea2efe7e052\n\nTherefore, SAGE_FORTRAN_LIB might be important if someone wanted to use their own version of gcc, rather than the one in Sage. In which case, the question arises as to what would be the path to the library. Would it be different for 32 and 64-bit builds, as it is on Solaris and HP-UX? \n\nDave",
     "created_at": "2010-01-24T01:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63206",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63091",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -253,15 +252,15 @@ Dave
 
 ---
 
-archive/issue_comments_063207.json:
+archive/issue_comments_063092.json:
 ```json
 {
     "body": "Ticket #8080 updates the [Installation Guide](http://www.sagemath.org/doc/installation) to require gfortran as a pre-requisite for compiling Sage on Linux.",
     "created_at": "2010-01-26T16:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63207",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63092",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -271,15 +270,15 @@ Ticket #8080 updates the [Installation Guide](http://www.sagemath.org/doc/instal
 
 ---
 
-archive/issue_comments_063208.json:
+archive/issue_comments_063093.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-14T18:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63208",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63093",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -289,15 +288,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_063209.json:
+archive/issue_comments_063094.json:
 ```json
 {
     "body": "Replying to [comment:5 drkirkby]:\n> I think it is important to add on platforms such as Solaris, AIX and HP-UX, where both 32 and 64-bit builds are supported, the library path **must** point to the 32-bit library if building 32-bit, and must point to a 64-bit library if building 64-bit. \n\nDone. Fixed in the updated README.txt.\n\n\n\n\n\n> (How about OS X? Perhaps the fortran.spkg takes care of that.) \n\nAlso fixed in the updated README.txt. For Mac OS X, I have removed the reference to ticket #7095, as the issue contained therein has been fixed.",
     "created_at": "2010-02-14T18:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63209",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63094",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -318,15 +317,15 @@ Also fixed in the updated README.txt. For Mac OS X, I have removed the reference
 
 ---
 
-archive/issue_comments_063210.json:
+archive/issue_comments_063095.json:
 ```json
 {
     "body": "[README.txt](http://trac.sagemath.org/sage_trac/attachment/ticket/7484/README.txt) also fixes #8106.",
     "created_at": "2010-02-14T19:03:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63210",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63095",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -336,15 +335,15 @@ archive/issue_comments_063210.json:
 
 ---
 
-archive/issue_comments_063211.json:
+archive/issue_comments_063096.json:
 ```json
 {
     "body": "Attachment [README.txt](tarball://root/attachments/some-uuid/ticket7484/README.txt) by mvngu created at 2010-02-15 03:58:45\n\nbased on Sage 4.3.3.alpha0",
     "created_at": "2010-02-15T03:58:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63211",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63096",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -356,15 +355,15 @@ based on Sage 4.3.3.alpha0
 
 ---
 
-archive/issue_comments_063212.json:
+archive/issue_comments_063097.json:
 ```json
 {
     "body": "based on Sage 4.3.3.alpha0",
     "created_at": "2010-02-15T03:59:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63212",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63097",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -374,15 +373,15 @@ based on Sage 4.3.3.alpha0
 
 ---
 
-archive/issue_comments_063213.json:
+archive/issue_comments_063098.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-02-21T06:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63213",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63098",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -392,15 +391,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_063214.json:
+archive/issue_comments_063099.json:
 ```json
 {
     "body": "Attachment [README.diff](tarball://root/attachments/some-uuid/ticket7484/README.diff) by drkirkby created at 2010-02-21 06:01:12\n\nA few comments: Those in bold are specifically about Fortran. The others are not, so you can ignore them for this ticket, tough you might chose to update them, as they are minor changes:\n\n* Line 22: says Sage is distributed under the GPL, but does say what version. I believe it should be GPL 2 (or at your option any later version). \n* Line 110 should make it clear Sage 4.3.0.1 does work on Solaris 10 SPARC and more recent versions nearly work. \n* **Line 113 mentions gFortran. I believe the F should be changed to lower case**\n* Line 127 should make it clear this port is for x64. OpenSolaris does exist on SPARC, though I do not believe it has many users. \n* **Lines 144 + 145. Again refers to a gFortran. Also, there is no reason gfortran needs to be installed system wide. Someone can create their own private copy of gcc with Fortran support.**\n* **Line 168. I think changing 32- to 32-bit would be preferable.**\n*  Line 299. I would change to simply Sage needs GCC >= 4.0.1\n* Line 300 seems a bit pointless, as long as we say Sage needs gcc >=4.0.1\n* Line 301 can be removed, as it is totally impossible to build Sage with that. The 'prereq' script will exit immediately with an error. \n\nDave",
     "created_at": "2010-02-21T06:01:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63214",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63099",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -424,15 +423,15 @@ Dave
 
 ---
 
-archive/issue_comments_063215.json:
+archive/issue_comments_063100.json:
 ```json
 {
     "body": "From IRC:\n\n```\n04:31 < schilly> mvngu: the README.txt still says that arch linux is not \n                 supported. i guess we can drop that ^^\n```\n",
     "created_at": "2010-03-17T11:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63215",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63100",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -448,15 +447,15 @@ From IRC:
 
 ---
 
-archive/issue_comments_063216.json:
+archive/issue_comments_063101.json:
 ```json
 {
     "body": "README.txt was recently updated, so this will need to be rebased again.  Is the original problem still a problem, given the latest one?\n\nWith respect to drkirkby's comments, I think the following remain:\n>  * Line 22: says Sage is distributed under the GPL, but does say what version. I believe it should be GPL 2 (or at your option any later version). \nThis seems reasonable to change.\n>  * **Lines 144 + 145. Again refers to a gFortran. Also, there is no reason gfortran needs to be installed system wide. Someone can create their own private copy of gcc with Fortran support.**\nI have no idea if this is true, but at any rate we still use the phrase \"system-wide\" in line 137.\n>  *  Line 299. I would change to simply Sage needs GCC >= 4.0.1\n>  * Line 300 seems a bit pointless, as long as we say Sage needs gcc >=4.0.1\n>  * Line 301 can be removed, as it is totally impossible to build Sage with that. The 'prereq' script will exit immediately with an error. \nThese three seem to be a matter of taste.  As long as we accurately document what Sage builds with, we might as well leave it alone.  And warnings of things that fail are good if they prevent people from wasting time trying to make them fail :)",
     "created_at": "2010-05-26T20:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63216",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63101",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -476,15 +475,15 @@ These three seem to be a matter of taste.  As long as we accurately document wha
 
 ---
 
-archive/issue_comments_063217.json:
+archive/issue_comments_063102.json:
 ```json
 {
     "body": "This has already been taken care of at least as of Sage 4.5.2.  I'm going to mark it as invalid now.",
     "created_at": "2010-08-19T17:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63217",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63102",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -494,15 +493,15 @@ This has already been taken care of at least as of Sage 4.5.2.  I'm going to mar
 
 ---
 
-archive/issue_comments_063218.json:
+archive/issue_comments_063103.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-08-19T17:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7484",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63218",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7484#issuecomment-63103",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

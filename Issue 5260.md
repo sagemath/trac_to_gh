@@ -6,15 +6,14 @@ archive/issues_005260.json:
     "body": "Assignee: cwitty\n\nThis is motivated by http://groups.google.com/group/sage-devel/browse_thread/thread/ef0eecd9f3473215\n\n```\nHi everyone, \nbeing a new Sage user under Mac OS X, I spent a whole day trying to \nget the examples for using compiled code from \nhttp://www.math.washington.edu/~jkantor/Numerical_Sage/node10.html to \nwork. Trying to make sense of the error messages and googling for \nfixes, I did not realise the most simple explanation - until I ran \n\"which gcc\" in the terminal and got no result. I simply didn't have \ngcc installed! Unless I'm blind, there is no hint to check if gcc is \ninstalled in an obvious place on website or in the documentation. Of \ncourse, the problem was fixed easily by installing XcodeTools. \nI think it would be very helpful for new users to have a remark in the \nreadme or on the download page, that sage does not include gcc, but \nrequires it for certain features. Maybe this is so obvious, that \nnobody thought of it before. \nOtherwise, Sage seems to be a great piece of Software, keep on the \ngreat Work \nFelix \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5260\n\n",
     "created_at": "2009-02-13T22:14:35Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "document the requirement for a compiler better for f2py/weave/ctypes and error out with a sensible error message when no compiler is present",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5260",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: cwitty
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5260
 
 ---
 
-archive/issue_comments_040371.json:
+archive/issue_comments_040292.json:
 ```json
 {
     "body": "Changing component from misc to documentation.",
     "created_at": "2009-02-13T22:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40371",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40292",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -68,15 +67,15 @@ Changing component from misc to documentation.
 
 ---
 
-archive/issue_comments_040372.json:
+archive/issue_comments_040293.json:
 ```json
 {
     "body": "D'oh, this is probably better assigned to component \"documentation\".\n\nCheers,\n\nMichael",
     "created_at": "2009-02-13T22:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40372",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40293",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -90,15 +89,15 @@ Michael
 
 ---
 
-archive/issue_comments_040373.json:
+archive/issue_comments_040294.json:
 ```json
 {
     "body": "Changing assignee from cwitty to tba.",
     "created_at": "2009-02-13T22:30:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40373",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40294",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -108,15 +107,15 @@ Changing assignee from cwitty to tba.
 
 ---
 
-archive/issue_comments_040374.json:
+archive/issue_comments_040295.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2015-09-07T19:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40374",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40295",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -126,15 +125,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_040375.json:
+archive/issue_comments_040296.json:
 ```json
 {
     "body": "`gcc` is included with Sage now.",
     "created_at": "2015-09-07T19:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40375",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40296",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -144,15 +143,15 @@ archive/issue_comments_040375.json:
 
 ---
 
-archive/issue_comments_040376.json:
+archive/issue_comments_040297.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-09-07T19:06:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40376",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40297",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -162,15 +161,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_040377.json:
+archive/issue_comments_040298.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-09-12T13:57:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40377",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/5260#issuecomment-40298",
+    "user": "https://github.com/vbraun"
 }
 ```
 

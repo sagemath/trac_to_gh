@@ -6,15 +6,14 @@ archive/issues_009520.json:
     "body": "Assignee: GeorgSWeber\n\nCC:  @nexttime @qed777 mvngu @jhpalmieri\n\nBuilding Sage 4.5 on a Sun Blade 2000, with dual UltraSPARC III+ processors in 64-bit mode, the build process produces some obvious **error** messages when building scipy_sandbox-20071020.p5. These are not warnings, but errors. \n\n\n```\nscipy_sandbox-20071020.p5/spkg-debian\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_141444-09 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: sparc-sun-solaris2.10\nConfigured with: ../gcc-4.4.4/configure --with-pkgversion='GCC-4.4.4 with GMP-5.0.1 and MPFR-2.4.2-p2' --prefix=/usr/local/gcc-4.4.4 --with-as=/usr/ccs/bin/as --with-ld=/usr/cc\ns/bin/ld\nThread model: posix\ngcc version 4.4.4 (GCC-4.4.4 with GMP-5.0.1 and MPFR-2.4.2-p2)\n****************************************************\n/export/home/drkirkby/64/sage-4.5/local/lib/python2.6/site-packages/numpy/distutils/command/config.py:361: DeprecationWarning:\n+++++++++++++++++++++++++++++++++++++++++++++++++\nUsage of get_output is deprecated: please do not\nuse it anymore, and avoid configuration checks\ninvolving running executable on the target machine.\n+++++++++++++++++++++++++++++++++++++++++++++++++\n\n  DeprecationWarning)\nld: fatal: file _configtest.o: wrong ELF class: ELFCLASS64\nld: fatal: File processing errors. No output written to _configtest\ncollect2: ld returned 1 exit status\ncompiling '_configtest.c':\n```\n\n\n`wrong ELF class:` messages mean an attempt was made to link a mixture of 32-bit and 64-bit object files. \n\nBut the build process still goes on to report that scipy_sandbox-20071020.p5 has installed OK. \n\nWhat is odd, is that `spkg-install` looks to be OK to me. \n\n\n```\npython setup.py install\n\nif [ $? -ne 0 ]; then\n    echo \"Error building arpack \\n\"\n    exit 1\nfi\n\ncd ..\ncd delaunay\npython setup.py install\n\nif [ $? -ne 0 ]; then\n    echo \"Error building delaunay triangulation code \\n\"\n    exit 1\nfi\n```\n\n\nHas anyone got any ideas? Could it be that the _configtest tries various ways to compile, so despite these being errors, this is actually OK? I somewhat doubt that is the case, but I don't know. \n\nLike a very similar issue with scipy (#9519), I'm not sure if this is an upstream bug or not. I suspect it is. \n\nDave \n\nIssue created by migration from https://trac.sagemath.org/ticket/9520\n\n",
     "created_at": "2010-07-16T22:57:14Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "scipy_sandbox does not exit if there are build failures, but spkg-install looks OK",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9520",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: GeorgSWeber
@@ -97,15 +96,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9520
 
 ---
 
-archive/issue_comments_091523.json:
+archive/issue_comments_091370.json:
 ```json
 {
     "body": "This spkg is now only in the list of archived packages, so we're all done.",
     "created_at": "2013-04-26T01:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9520#issuecomment-91523",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9520#issuecomment-91370",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -115,15 +114,15 @@ This spkg is now only in the list of archived packages, so we're all done.
 
 ---
 
-archive/issue_comments_091524.json:
+archive/issue_comments_091371.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-04-26T01:44:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9520#issuecomment-91524",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9520#issuecomment-91371",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -133,15 +132,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_091525.json:
+archive/issue_comments_091372.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-04-26T01:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9520#issuecomment-91525",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9520#issuecomment-91372",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -151,15 +150,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_091526.json:
+archive/issue_comments_091373.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-04-28T12:47:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9520",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9520#issuecomment-91526",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9520#issuecomment-91373",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,14 +6,13 @@ archive/issues_000001.json:
     "body": "Assignee: somebody\n\nThe sage notebook restart often leaves \"dead Python\" process running.\nThis is especially bad on OS X, where there is a 100 process limit by\ndefault (at least on my laptop). \n\nIssue created by migration from https://trac.sagemath.org/ticket/1\n\n",
     "created_at": "2006-09-11T03:58:42Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "SAGE Notebook leaves dead processes on OS X",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -38,7 +37,7 @@ archive/issue_comments_000001.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1#issuecomment-1",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -78,7 +77,7 @@ archive/issue_comments_000002.json:
     "issue": "https://github.com/sagemath/sagetest/issues/1",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/1#issuecomment-2",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 

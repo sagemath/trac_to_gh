@@ -6,15 +6,14 @@ archive/issues_002559.json:
     "body": "Assignee: @malb\n\nCC:  @ncalexan\n\nKeywords: algebraic real roots\n\nI can't say much about this one:\n\n\n```\nsage: M\n\n[[-1.2859513130484710 .. -1.2859513130484707] [0.48604391035188904 .. 0.48604391035188910]]\n[  [2.8742392060133346 .. 2.8742392060133351] [0.18370733043549580 .. 0.18370733043549584]]\nsage: M.parent()\nFull MatrixSpace of 2 by 2 dense matrices over Algebraic Real Field\nsage: M.charpoly()\nx^2 + [1.1022439826129748 .. 1.1022439826129751]*x + [-1.6332451457675854 .. -1.6332451457675851]\nsage: M.charpoly().parent()\nUnivariate Polynomial Ring in x over Algebraic Real Field\nsage: M.charpoly().roots()\nException exceptions.AttributeError: \"'sage.rings.complex_interval.ComplexIntervalFieldEl' object has no attribute 'lower'\" in 'sage.rings.polynomial.polynomial_element.Polynomial_generic_dense.__normalize' ignored\n---------------------------------------------------------------------------\n<type 'exceptions.AttributeError'>        Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.roots()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/real_roots.pyx in sage.rings.polynomial.real_roots.real_roots()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial.squarefree_decomposition()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.PrincipalIdealDomainElement.gcd()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element_generic.py in _gcd(self, other)\n    542         Return the GCD of self and other, as a monic polynomial.\n    543         \"\"\"\n--> 544         g = EuclideanDomainElement._gcd(self, other)\n    545         c = g.leading_coefficient()\n    546         if c.is_unit():\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.EuclideanDomainElement._gcd()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_element_generic.py in quo_rem(self, other)\n    533             aaa = (R.leading_coefficient()/B.leading_coefficient())\n    534             bbb = X**(R.degree()-B.degree())\n--> 535             S = aaa * bbb\n    536             Q += S\n    537             R -= S*B            \n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.RingElement.__mul__()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.CoercionModel_cache_maps.bin_op_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/action.pyx in sage.categories.action.Action._call_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pyx in sage.structure.coerce.LeftModuleAction._call_c_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/coerce.pxi in sage.structure.coerce._rmul_c()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.ModuleElement._rmul_()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/polynomial_element.pyx in sage.rings.polynomial.polynomial_element.Polynomial_generic_dense._rmul_c_impl()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.Element.__nonzero__()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.Element.__richcmp__()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/element.pyx in sage.structure.element.Element._richcmp()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/rings/qqbar.py in __cmp__(self, other)\n   2752         if self is other: return 0\n   2753         if other._descr.is_rational() and other._descr.rational_value() == 0:\n-> 2754             return self.sign()\n   2755         elif self._descr.is_rational() and self._descr.rational_value() == 0:\n   2756             return -other.sign()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/rings/qqbar.py in sign(self)\n   2855             0\n   2856         \"\"\"\n-> 2857         if self._value.lower() > 0:\n   2858             return 1\n   2859         elif self._value.upper() < 0:\n\n<type 'exceptions.AttributeError'>: 'sage.rings.complex_interval.ComplexIntervalFieldEl' object has no attribute 'lower'\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2559\n\n",
     "created_at": "2008-03-16T22:08:38Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "issue with roots() over Algebraic Real field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2559",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @malb
@@ -114,15 +113,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2559
 
 ---
 
-archive/issue_comments_017448.json:
+archive/issue_comments_017411.json:
 ```json
 {
     "body": "Remove assignee @malb.",
     "created_at": "2008-06-03T14:20:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2559#issuecomment-17448",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2559#issuecomment-17411",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -132,15 +131,15 @@ Remove assignee @malb.
 
 ---
 
-archive/issue_comments_017449.json:
+archive/issue_comments_017412.json:
 ```json
 {
     "body": "Nick doesn't remember how to reproduce this, so he said to invalidate it.",
     "created_at": "2009-01-23T20:41:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2559#issuecomment-17449",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2559#issuecomment-17412",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -150,15 +149,15 @@ Nick doesn't remember how to reproduce this, so he said to invalidate it.
 
 ---
 
-archive/issue_comments_017450.json:
+archive/issue_comments_017413.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-01-23T20:43:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2559#issuecomment-17450",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2559#issuecomment-17413",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -168,15 +167,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_017451.json:
+archive/issue_comments_017414.json:
 ```json
 {
     "body": "[picture of jesus](http://like-search.info/)",
     "created_at": "2010-05-26T08:40:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2559",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2559#issuecomment-17451",
-    "user": "bascorp2"
+    "url": "https://github.com/sagemath/sagetest/issues/2559#issuecomment-17414",
+    "user": "https://trac.sagemath.org/admin/accounts/users/bascorp2"
 }
 ```
 

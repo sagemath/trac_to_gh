@@ -6,15 +6,13 @@ archive/issues_002794.json:
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori, magma\n\nThis now works:\n\n```\nsage: B.<a,b,z> = BooleanPolynomialRing(3)\nsage: B._magma_()\n\nAffine Algebra of rank 3 over GF(2)\nLexicographical Order\nVariables: a, b, z\nQuotient relations:\n[\na^2 + a,\nb^2 + b,\nz^2 + z\n]\nsage: magma(a+b)\na + b\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2794\n\n",
     "created_at": "2008-04-04T09:50:44Z",
     "labels": [
-        "interfaces",
-        "major",
-        "enhancement"
+        "component: interfaces"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] PolyBoRi to Magma conversion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2794",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -51,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2794
 
 ---
 
-archive/issue_comments_019185.json:
+archive/issue_comments_019144.json:
 ```json
 {
     "body": "Attachment [polybori_2_magma.patch](tarball://root/attachments/some-uuid/ticket2794/polybori_2_magma.patch) by @malb created at 2008-04-04 09:50:57",
     "created_at": "2008-04-04T09:50:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2794",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19185",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19144",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -69,15 +67,15 @@ Attachment [polybori_2_magma.patch](tarball://root/attachments/some-uuid/ticket2
 
 ---
 
-archive/issue_comments_019186.json:
+archive/issue_comments_019145.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-04-04T21:29:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2794",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19186",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19145",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -87,15 +85,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_019187.json:
+archive/issue_comments_019146.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-04T22:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2794",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19187",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19146",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +103,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_019188.json:
+archive/issue_comments_019147.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha1",
     "created_at": "2008-04-04T22:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2794",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19188",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2794#issuecomment-19147",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

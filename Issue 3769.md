@@ -6,7 +6,7 @@ archive/issues_003769.json:
     "body": "Assignee: mabshoff\n\nPresumably, dsage should be installed under SAGE_LOCAL like everything else.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3769\n\n",
     "created_at": "2008-08-03T19:30:17Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003769.json:
     "title": "dsage gets installed to SAGE_ROOT/usr",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3769",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3769
 
 ---
 
-archive/issue_comments_026825.json:
+archive/issue_comments_026767.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-01-19T10:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3769",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3769#issuecomment-26825",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/3769#issuecomment-26767",
+    "user": "https://github.com/TimDumol"
 }
 ```
 

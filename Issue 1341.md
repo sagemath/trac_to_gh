@@ -6,15 +6,14 @@ archive/issues_001341.json:
     "body": "Assignee: @williamstein\n\nI added a script to the fortran package which gets installed to local/bin\n\nwhich_fortran\n\nwill return g95 or gfortran.\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/fortran-20071120.p1.spkg\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1341\n\n",
     "created_at": "2007-11-30T05:25:59Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[with spkg] add script so that which_fortran returns g95 or gfortran",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1341",
-    "user": "jkantor"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 Assignee: @williamstein
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1341
 
 ---
 
-archive/issue_comments_008603.json:
+archive/issue_comments_008579.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to numerical.",
     "created_at": "2007-11-30T05:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8603",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8579",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -54,15 +53,15 @@ Changing component from algebraic geometry to numerical.
 
 ---
 
-archive/issue_comments_008604.json:
+archive/issue_comments_008580.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2007-11-30T05:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8604",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8580",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -72,15 +71,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_008605.json:
+archive/issue_comments_008581.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2007-11-30T05:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8605",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8581",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -90,15 +89,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_008606.json:
+archive/issue_comments_008582.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to jkantor.",
     "created_at": "2007-11-30T05:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8606",
-    "user": "jkantor"
+    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8582",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 
@@ -108,15 +107,15 @@ Changing assignee from @williamstein to jkantor.
 
 ---
 
-archive/issue_comments_008607.json:
+archive/issue_comments_008583.json:
 ```json
 {
     "body": "Merged in 2.8.15.alpha1.",
     "created_at": "2007-12-01T19:54:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8607",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8583",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -126,15 +125,15 @@ Merged in 2.8.15.alpha1.
 
 ---
 
-archive/issue_comments_008608.json:
+archive/issue_comments_008584.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-01T19:54:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8608",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1341#issuecomment-8584",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

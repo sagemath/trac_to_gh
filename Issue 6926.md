@@ -6,15 +6,14 @@ archive/issues_006926.json:
     "body": "Assignee: @williamstein\n\nCC:  @rlmill\n\nThis is a bug:\n\n```\nsage: plot(abs(exp(i*x)), xmin=1,xmax=2)\nTraceback (most recent call last):\n...\nTypeError: float() argument must be a string or a number\n```\n\nThe above should never happen, since the outputs of the function should be floats.   \n\nDoing the obvious workaround yields another totally different bug!\n\n```\nsage: plot(lambda x: float(abs(exp(i*x))), xmin=1,xmax=2)\nTraceback (most recent call last):\n...\nZeroDivisionError: float division\n```\n\n\nThe above ZeroDivisionError comes from trying incorrectly to scale the y-axis!\n\nThe following works, where we do two things explicitly, both of which should be completely automatic. \n\n```\nsage: plot(lambda x: float(abs(exp(i*x))), xmin=1,xmax=2, ymin=0,ymax=1)\n```\n\n\nThis was reported by Andi Walz on sage-support.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6926\n\n",
     "created_at": "2009-09-12T19:27:44Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "multiple bugs in plotting symbolic expressions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6926",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -61,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6926
 
 ---
 
-archive/issue_comments_057234.json:
+archive/issue_comments_057126.json:
 ```json
 {
     "body": "The second bug is fixed in the latest alpha of Sage.  It was fixed by moving the axes drawing to matplotlib by #5448.",
     "created_at": "2009-09-12T19:49:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6926",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6926#issuecomment-57234",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6926#issuecomment-57126",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -79,15 +78,15 @@ The second bug is fixed in the latest alpha of Sage.  It was fixed by moving the
 
 ---
 
-archive/issue_comments_057235.json:
+archive/issue_comments_057127.json:
 ```json
 {
     "body": "The first bug is now fixed, I believe by #7614.  This ticket can be closed as fixed now.",
     "created_at": "2010-01-17T10:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6926",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6926#issuecomment-57235",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6926#issuecomment-57127",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -97,15 +96,15 @@ The first bug is now fixed, I believe by #7614.  This ticket can be closed as fi
 
 ---
 
-archive/issue_comments_057236.json:
+archive/issue_comments_057128.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-17T10:32:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6926",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6926#issuecomment-57236",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6926#issuecomment-57128",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -115,15 +114,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_057237.json:
+archive/issue_comments_057129.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-17T11:00:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6926",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6926#issuecomment-57237",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6926#issuecomment-57129",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

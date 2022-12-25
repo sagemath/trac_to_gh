@@ -6,15 +6,13 @@ archive/issues_006897.json:
     "body": "Assignee: boothby\n\nCC:  rkirov @mwhansen\n\nMoving Notebook to Django will abstract the server and  user authentication, and give us a free admin interface, as well as a large support codebase.\n\n1On Aug 31, 11:20 pm, William Stein <wst...`@`gmail.com> wrote:\n> <SNIP>\n> \n> I'm not at all convinced that using twisted in any way (web or web2) is a\n> good idea for the Sage notebook.   I plan to revisit this in late\n> September.    The first thing I plan to do is consider switching from\n> twisted to Django, as is done in codenode -- seehttp://codenode.org/--\n> hopefully, even sharing code with that project.   Of course, twisted could\n> still get used at a certain level behind the scenes, but the Sage notebook\n> would then no longer explicitly use it.\n> \n> So if you want to help as you describe above, perhaps you could accelerate\n> this.  This involves:\n> \n>   (1) getting familiar with Django, if you don't already know it.\n> \n>   (2) reading through the current codenode codebase\n> \n>   (3) then formulating a plan to replace server/notebook/twist.py with\n> something based either directly on Django, or possibly using codenode in\n> some way.\n> \n> The above is what I would do, but if you do it first that would be\n> spectacular.\n> \n> William\n\nIssue created by migration from https://trac.sagemath.org/ticket/6897\n\n",
     "created_at": "2009-09-06T03:18:54Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Migrate Notebook to Django",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6897",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: boothby
@@ -58,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6897
 
 ---
 
-archive/issue_comments_056967.json:
+archive/issue_comments_056859.json:
 ```json
 {
     "body": "Changing assignee from boothby to @TimDumol.",
     "created_at": "2009-09-09T13:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56967",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56859",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -76,15 +74,15 @@ Changing assignee from boothby to @TimDumol.
 
 ---
 
-archive/issue_comments_056968.json:
+archive/issue_comments_056860.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-09-09T13:16:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56968",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56860",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -94,15 +92,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_056969.json:
+archive/issue_comments_056861.json:
 ```json
 {
     "body": "A naive question:  Does Django support asynchronous responses?",
     "created_at": "2009-09-11T02:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56969",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56861",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -112,15 +110,15 @@ A naive question:  Does Django support asynchronous responses?
 
 ---
 
-archive/issue_comments_056970.json:
+archive/issue_comments_056862.json:
 ```json
 {
     "body": "If you mean AJAX (pull), then yes, Django supports AJAX. If you mean Comet (push) though, then no, as far as I can tell. From what I know, Comet can only be done with event-based servers (e.g., Twisted, Orbited). We can, however, let Twisted deal with async responses, while Django can deal with everything else -- as is done in Codenode. We still get the benefits of a pluggable database architecture, user authentication, url routing, etc.",
     "created_at": "2009-09-11T10:42:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56970",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56862",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -130,15 +128,15 @@ If you mean AJAX (pull), then yes, Django supports AJAX. If you mean Comet (push
 
 ---
 
-archive/issue_comments_056971.json:
+archive/issue_comments_056863.json:
 ```json
 {
     "body": "Preliminary work at http://github.com/TimDumol/sage-notebook-django-branch/tree/master",
     "created_at": "2009-09-11T14:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56971",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56863",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -148,15 +146,15 @@ Preliminary work at http://github.com/TimDumol/sage-notebook-django-branch/tree/
 
 ---
 
-archive/issue_comments_056972.json:
+archive/issue_comments_056864.json:
 ```json
 {
     "body": "Thanks very much for the explanation.  I'm not familiar with Python web frameworks, so I don't have a strong opinion about what's best for Sage.  I'm definitely not arguing against migrating to Django.\n\nMy interest stems from #6855, which I'd like to implement with [Comet](http://en.wikipedia.org/wiki/Comet_%28programming%29), if possible.  I think I'll take a closer look at [Twisted's](http://twistedmatrix.com/projects/core/documentation/howto/async.html) [deferreds](http://twistedmatrix.com/projects/web/documentation/howto/index.html).  Is [this](http://popcnt.org/2007/12/asynchronous-django-responses-comet-yes.html) possibly relevant?\n\nBy the way, what are your thoughts about [FirePython](http://firepython.binaryage.com/)?  I think we can use the middleware part to send [logging](http://docs.python.org/library/logging.html) information to the browser.  As far as I'm aware, Sage does not yet use Python's logging module, although #6187 uses it in the doc builder.  Having a [\"unified\" logging facility](http://groups.google.com/group/sage-devel/browse_thread/thread/5a17a7244380405e/dcb25d3b5b775a69?#dcb25d3b5b775a69) in the Sage library could be useful.\n\nBy another way, it appears there's a new, event-based server from Facebook called [Tornado](http://www.tornadoweb.org/).  I'm not sure yet why they didn't use Twisted.",
     "created_at": "2009-09-11T14:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56972",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56864",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -172,15 +170,15 @@ By another way, it appears there's a new, event-based server from Facebook calle
 
 ---
 
-archive/issue_comments_056973.json:
+archive/issue_comments_056865.json:
 ```json
 {
     "body": "I'm not too experienced in async programming, so I'm afraid I can't answer your question regarding deferreds. There is an abundance of tutorials on using [Orbited](http://orbited.org) for comet, but none that I see for Twisted. Code will be needed for the client in Javascript (I believe there are libraries for this), and for the server. Orbited can provide both -- although that will mean adding another package to Sage. It may be worth looking into it. [Here's](http://anirudhsanjeev.org/tutorialhow-to-django-comet-orbited-stomp-morbidq-jsio/) an example on using Twisted, Django and Orbited together.\n\nFirePython looks great! It will be *very* handy. It seems to be easy to add once the Django work is done too.\n\nThe reasons for creating Tornado instead of Twisted are outlined [here](http://bret.appspot.com.sharedcopy.com/entry/b49e738e301cf669416324f53a34febd.html) in the comments. The developers found Twisted's web support messy.",
     "created_at": "2009-09-11T15:38:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56973",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56865",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -194,15 +192,15 @@ The reasons for creating Tornado instead of Twisted are outlined [here](http://b
 
 ---
 
-archive/issue_comments_056974.json:
+archive/issue_comments_056866.json:
 ```json
 {
     "body": "Thanks again.  I'll try to investigate.\n\nCan the migration subsume or simplify some of the tasks listed on the [Sage Usability page](http://wiki.sagemath.org/SageUsability)?  If so, please feel free to add comments.  I think your input would be greatly appreciated.",
     "created_at": "2009-09-11T16:25:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56974",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56866",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -214,15 +212,15 @@ Can the migration subsume or simplify some of the tasks listed on the [Sage Usab
 
 ---
 
-archive/issue_comments_056975.json:
+archive/issue_comments_056867.json:
 ```json
 {
     "body": "Django migration should help with the ff. issues:\n\n* Streamlined deployment - account management, fewer bugs, etc.\n\n* [Captcha](http://en.wikipedia.org/wiki/Captcha) for notebook sign-up - [reCAPTCHA](http://recaptcha.net/).\n\n* LDAP Authentication.\n\n* Add users as admins. (fprimex)\n\n* User groups.\n\n* See http://routes.groovie.org/ to handle URLS (which is basically all twist.py is doing a lot of).\n  *Well, Django has its own url router.*",
     "created_at": "2009-09-12T09:25:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56975",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56867",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -245,15 +243,15 @@ Django migration should help with the ff. issues:
 
 ---
 
-archive/issue_comments_056976.json:
+archive/issue_comments_056868.json:
 ```json
 {
     "body": "Apparently, we need the Twisted-trunk to run on Django. Twisted-trunk has some fixes that make it possible to use Django that have not been included in Twisted 8.2.0. Notably, POST requests don't seem to get passed on to Django in 8.2.0. I have uploaded spkg's at http://drop.io/trac_6897_reqs that are needed to run this. Jinja 2 is also reuired (which should not be a problem, since I expect #6586 to be merged in before this gets done).\n\n[Codenode](http://codenode.org) also includes the Twisted-trunk in its package.",
     "created_at": "2009-09-16T14:45:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56976",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56868",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -265,15 +263,15 @@ Apparently, we need the Twisted-trunk to run on Django. Twisted-trunk has some f
 
 ---
 
-archive/issue_comments_056977.json:
+archive/issue_comments_056869.json:
 ```json
 {
     "body": "Doesn't Twisted.web2 officially support WSGI?  That was my naive understanding, though I haven't tested it.   This is a good sign:\n\n```\nsage: import twisted.web2.wsgi\nsage: help(twisted.web2.wsgi)\n    class WSGIResource(__builtin__.object)\n     |  A web2 Resource which wraps the given WSGI application callable.\n     |  \n     |  The WSGI application will be called in a separate thread (using\n     |  the reactor threadpool) whenever a request for this resource or\n     |  any lower part of the url hierarchy is received.\n     |  \n     |  Methods defined here:\n```\n",
     "created_at": "2009-11-18T09:39:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56977",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56869",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -297,15 +295,15 @@ sage: help(twisted.web2.wsgi)
 
 ---
 
-archive/issue_comments_056978.json:
+archive/issue_comments_056870.json:
 ```json
 {
     "body": "As far as I know, yes, Twisted.web2 does support WSGI. I have only used Twisted.web, though. I was/am under the impression that Twisted.web2 is not supported upstream anymore, and thus we should avoid using it.",
     "created_at": "2009-11-18T13:36:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56978",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56870",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -315,15 +313,15 @@ As far as I know, yes, Twisted.web2 does support WSGI. I have only used Twisted.
 
 ---
 
-archive/issue_comments_056979.json:
+archive/issue_comments_056871.json:
 ```json
 {
     "body": "Twisted 9.0 has finally been released, which means that WSGI is now supported by Twisted.web.",
     "created_at": "2009-11-29T07:45:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56979",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56871",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -333,15 +331,15 @@ Twisted 9.0 has finally been released, which means that WSGI is now supported by
 
 ---
 
-archive/issue_comments_056980.json:
+archive/issue_comments_056872.json:
 ```json
 {
     "body": "Replying to [comment:13 timdumol]:\n> As far as I know, yes, Twisted.web2 does support WSGI. I have only used Twisted.web, though. I was/am under the impression that Twisted.web2 is not supported upstream anymore, and thus we should avoid using it.\n\nTrue.  We should port the notebook back from Twisted.web2 to Twisted.web.  This will be some significant work but it should get done.",
     "created_at": "2009-12-10T01:22:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56980",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56872",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -354,15 +352,15 @@ True.  We should port the notebook back from Twisted.web2 to Twisted.web.  This 
 
 ---
 
-archive/issue_comments_056981.json:
+archive/issue_comments_056873.json:
 ```json
 {
     "body": "Another point about performance of python options: http://nichol.as/asynchronous-servers-in-python",
     "created_at": "2010-10-13T02:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56981",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56873",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -372,15 +370,15 @@ Another point about performance of python options: http://nichol.as/asynchronous
 
 ---
 
-archive/issue_comments_056982.json:
+archive/issue_comments_056874.json:
 ```json
 {
     "body": "This seems like a relevant ticket to the move to a flask-based notebook.  Well, at least the title is relevant, even if most of the content is outdated now.",
     "created_at": "2011-03-18T23:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56982",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56874",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -390,15 +388,15 @@ This seems like a relevant ticket to the move to a flask-based notebook.  Well, 
 
 ---
 
-archive/issue_comments_056983.json:
+archive/issue_comments_056875.json:
 ```json
 {
     "body": "Was a decision made here regarding which python middleware to go with? Was flask decided on elsewhere (could you point me to where if that is the case)?",
     "created_at": "2011-11-15T22:02:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56983",
-    "user": "@mboratko"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56875",
+    "user": "https://github.com/mboratko"
 }
 ```
 
@@ -408,15 +406,15 @@ Was a decision made here regarding which python middleware to go with? Was flask
 
 ---
 
-archive/issue_comments_056984.json:
+archive/issue_comments_056876.json:
 ```json
 {
     "body": "We are using flask in the \"new\" notebook server.  This decision was made at least by Jan 2011; I don't know of a specific place to point you, but there have been lots of discussions on the sage-notebook mailing list about it.  I think this ticket should be closed as it isn't helpful at all at this point.  The ticket is too vague.  I'm not sure who the release manager is right now, though, so I don't know who to CC.",
     "created_at": "2011-11-15T22:11:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56984",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56876",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -426,15 +424,15 @@ We are using flask in the "new" notebook server.  This decision was made at leas
 
 ---
 
-archive/issue_comments_056985.json:
+archive/issue_comments_056877.json:
 ```json
 {
     "body": "Jeroeon is the current release manager.",
     "created_at": "2011-11-15T22:33:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56985",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56877",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -444,15 +442,15 @@ Jeroeon is the current release manager.
 
 ---
 
-archive/issue_comments_056986.json:
+archive/issue_comments_056878.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-05-16T07:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6897",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56986",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6897#issuecomment-56878",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

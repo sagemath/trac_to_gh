@@ -6,7 +6,7 @@ archive/issues_001783.json:
     "body": "Assignee: @malb\n\n\n```\nsage:             sage: R = PolynomialRing(QQ, 'x').fraction_field()\nsage:             sage: x = R.gen()\nsage:             sage: a = 1/x\nsage:             sage: a._FractionFieldElement__numerator = R(0)\nsage:             sage: latex(a)\n\\frac{0}{x}\n```\n\n\nIt should instead give 0.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1783\n\n",
     "created_at": "2008-01-15T19:06:52Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001783.json:
     "title": "fix latex errors with fraction field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1783",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @malb
@@ -40,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1783
 
 ---
 
-archive/issue_comments_011288.json:
+archive/issue_comments_011260.json:
 ```json
 {
     "body": "Attachment [1783.patch](tarball://root/attachments/some-uuid/ticket1783/1783.patch) by @mwhansen created at 2008-01-15 19:08:09",
     "created_at": "2008-01-15T19:08:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11288",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11260",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -58,15 +58,15 @@ Attachment [1783.patch](tarball://root/attachments/some-uuid/ticket1783/1783.pat
 
 ---
 
-archive/issue_comments_011289.json:
+archive/issue_comments_011261.json:
 ```json
 {
     "body": "Attachment [1783-doctests.patch](tarball://root/attachments/some-uuid/ticket1783/1783-doctests.patch) by @mwhansen created at 2008-01-15 19:22:39",
     "created_at": "2008-01-15T19:22:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11289",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11261",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -76,15 +76,15 @@ Attachment [1783-doctests.patch](tarball://root/attachments/some-uuid/ticket1783
 
 ---
 
-archive/issue_comments_011290.json:
+archive/issue_comments_011262.json:
 ```json
 {
     "body": "This should go in.",
     "created_at": "2008-01-15T19:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11290",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11262",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -94,15 +94,15 @@ This should go in.
 
 ---
 
-archive/issue_comments_011291.json:
+archive/issue_comments_011263.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-15T19:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11291",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11263",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -112,15 +112,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011292.json:
+archive/issue_comments_011264.json:
 ```json
 {
     "body": "Both patches merged in Sage 2.10.alpha4",
     "created_at": "2008-01-15T19:47:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11292",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1783#issuecomment-11264",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

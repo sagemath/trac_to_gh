@@ -6,15 +6,13 @@ archive/issues_009328.json:
     "body": "Assignee: @malb\n\nOnce #6922 is merged we'll have Matrix term orderings but only for the very slow `PolyDict` based polynomials. Singular does support matrix term orderings thus it should be relatively easy to add them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9328\n\n",
     "created_at": "2010-06-24T12:57:41Z",
     "labels": [
-        "commutative algebra",
-        "major",
-        "enhancement"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "implement matrix term orderings for libsingular polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9328",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9328
 
 ---
 
-archive/issue_comments_087990.json:
+archive/issue_comments_087851.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-06-25T09:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9328",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9328#issuecomment-87990",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/9328#issuecomment-87851",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -47,15 +45,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_087991.json:
+archive/issue_comments_087852.json:
 ```json
 {
     "body": "This is taken care of in #6922.",
     "created_at": "2010-06-25T09:00:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9328",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9328#issuecomment-87991",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/9328#issuecomment-87852",
+    "user": "https://github.com/malb"
 }
 ```
 

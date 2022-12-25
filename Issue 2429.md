@@ -6,15 +6,13 @@ archive/issues_002429.json:
     "body": "Assignee: @williamstein\n\nCC:  @jdemeyer\n\nThe block matrix command uses a slightly different syntax than the matrix command, leading to confusion.  It would be great to fix it so that the following examples would work.  Assume that the xi variables below are matrices\n\n\n```\nsage: # Throw an error if the dimensions of the blocks don't match up correctly.\nsage: # explicitly specify the positions of the blocks\nsage: block_matrix([[x1,x2],[x3,x4]])\nsage: block_matrix([[x1,x2,x3],[x4,x5,x6]])\nsage: # dimensions are the numbers of block rows and columns\nsage: block_matrix(2,3, [x1,x2,x3,x4,x5,x6])\nsage: # coerce the matrix to a specific ring\nsage: block_matrix(QQ,2,3,[x1,x2,x3,x4,x5,x6])\nsage: # 1 and 0 should still be interpreted as the identity and zero matrices\nsage: block_matrix([[x1,1],[1,x2]])\nsage: # if only one dimension is given, assume the matrix is square\nsage: block_matrix(QQ,2,[x1,x2,x3,x4])\nsage: block_matrix(2,[x1,x2,x3,x4])\nsage: # the following works now\nsage: block_matrix([x1,x2,x3,x4])\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2429\n\n",
     "created_at": "2008-03-08T20:23:19Z",
     "labels": [
-        "linear algebra",
-        "major",
-        "enhancement"
+        "component: linear algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "block_matrix command should be consistent with the syntax of the matrix command",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2429",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -52,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2429
 
 ---
 
-archive/issue_comments_016436.json:
+archive/issue_comments_016401.json:
 ```json
 {
     "body": "As commented in the original patch, the command \n\n```\nsage:  block_matrix([x1,x2,x3,x4])\n```\n\n\"works\" where \"works\" means that it makes a 2x2 matrix of submatrices.  While that was what I expected when I used the command, it is quite ambiguous and I felt like I was on shaky ground while writing my own code on top of it.  I do not like the ambiguity of that.\n\nNote that it is also inconsistent with the matrix command:\n\n```\nsage: matrix([1,2,3,4])\n[1 2 3 4]\n```\n\nwhich makes a 1x4 matrix.\n\nI'd say they should both make an 1xn matrix (or matrix of submatrices).  Indeed, I'd almost rather that the syntax with a simple list and no explicit dimensions be banned outright when we don't know the dimensions from some parent object due to ambiguity.  Seems to go along with \"Explicit is better than implicit.\"",
     "created_at": "2008-11-11T15:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16436",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16401",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -87,15 +85,15 @@ I'd say they should both make an 1xn matrix (or matrix of submatrices).  Indeed,
 
 ---
 
-archive/issue_comments_016437.json:
+archive/issue_comments_016402.json:
 ```json
 {
     "body": "There is now a patch at #4492 that handles this issue too.",
     "created_at": "2011-01-12T01:48:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16437",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16402",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -105,15 +103,15 @@ There is now a patch at #4492 that handles this issue too.
 
 ---
 
-archive/issue_comments_016438.json:
+archive/issue_comments_016403.json:
 ```json
 {
     "body": "Since ticket #4492 has been merged, this can now be closed too. Jeroen, could you do so?",
     "created_at": "2011-02-16T10:09:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16438",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16403",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -123,15 +121,15 @@ Since ticket #4492 has been merged, this can now be closed too. Jeroen, could yo
 
 ---
 
-archive/issue_comments_016439.json:
+archive/issue_comments_016404.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2011-02-16T10:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2429",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16439",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2429#issuecomment-16404",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

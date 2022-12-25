@@ -6,15 +6,14 @@ archive/issues_002712.json:
     "body": "Assignee: mabshoff\n\nFollowing John Cremona's suggestion, I've added 'scalar_part()\", 'pure_part()', and 'is_pure()' for quaternions.\n\nThe method 'is_scalar()' is already implemented, so in a sense, this completes the picture.  This was spurred on by a request on the support list (from Chris Godsil).\n\nThe implementation assumes characteristic not 2, which is OK since it's implicitly or explicitly assumed throughout the quaternion code.\n\nI think the terms 'scalar' and 'pure', for a value in the base ring and having trace 0 (and being non-zero), respectively, is fairly standard.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2712\n\n",
     "created_at": "2008-03-28T21:39:20Z",
     "labels": [
-        "Cygwin",
-        "major",
+        "component: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "Add 'scalar_part()' and other methods for quaternion elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2712",
-    "user": "justin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 Assignee: mabshoff
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2712
 
 ---
 
-archive/issue_comments_018694.json:
+archive/issue_comments_018655.json:
 ```json
 {
     "body": "Adding patch.  The patch includes doctests, and the file passes the \"-t\" test.  The resulting file has 57% coverage (I did not add tests where there were none).\n\nThe patch is against a clean 2.10.4 tree.",
     "created_at": "2008-03-28T21:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18694",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18655",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -58,15 +57,15 @@ The patch is against a clean 2.10.4 tree.
 
 ---
 
-archive/issue_comments_018695.json:
+archive/issue_comments_018656.json:
 ```json
 {
     "body": "Attachment [Trac2712.patch](tarball://root/attachments/some-uuid/ticket2712/Trac2712.patch) by justin created at 2008-03-28 23:04:38\n\nPatch implementing the element methods described above.",
     "created_at": "2008-03-28T23:04:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18695",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18656",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -78,15 +77,15 @@ Patch implementing the element methods described above.
 
 ---
 
-archive/issue_comments_018696.json:
+archive/issue_comments_018657.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-03-29T00:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18696",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18657",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -96,15 +95,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_018697.json:
+archive/issue_comments_018658.json:
 ```json
 {
     "body": "Changing component from Cygwin to misc.",
     "created_at": "2008-03-29T00:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18697",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18658",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +113,15 @@ Changing component from Cygwin to misc.
 
 ---
 
-archive/issue_comments_018698.json:
+archive/issue_comments_018659.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to cwitty.",
     "created_at": "2008-03-29T00:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18698",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18659",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +131,15 @@ Changing assignee from mabshoff to cwitty.
 
 ---
 
-archive/issue_comments_018699.json:
+archive/issue_comments_018660.json:
 ```json
 {
     "body": "Not sure about the component - feel free to reclassify.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-29T00:11:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18699",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18660",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -154,15 +153,15 @@ Michael
 
 ---
 
-archive/issue_comments_018700.json:
+archive/issue_comments_018661.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha2",
     "created_at": "2008-03-29T00:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18700",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18661",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -172,15 +171,15 @@ Merged in Sage 2.11.alpha2
 
 ---
 
-archive/issue_comments_018701.json:
+archive/issue_comments_018662.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-29T00:44:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2712",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18701",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2712#issuecomment-18662",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

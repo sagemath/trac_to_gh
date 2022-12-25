@@ -6,15 +6,14 @@ archive/issues_006523.json:
     "body": "CC:  @mwhansen\n\nIf a symbolic expression contains \u00a0symbolic derivative then\nchecking whether it is zero, raises error:\n\n```\nsage: x.diff(x,2).is_zero()\nTrue\n\nsage: f(x) = function('f',x)\nsage: f(x).diff(x).is_zero()\n....\nNotImplementedError: derivative\n```\n\n\nThis fails because new symbolics tries to convert it to maxima\nexpression for checking the relation.\n\nIt works fine for any other expression not involving symbolic\nderivative and without invoking maxima.\n\nIt seems to me, pynac relational test needs to be fixed.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6523\n\n",
     "created_at": "2009-07-13T11:39:09Z",
     "labels": [
-        "symbolics",
-        "major",
+        "component: symbolics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": ".is_zero() method raises error for symbolic expression involving derivative",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6523",
-    "user": "@golam-m-hossain"
+    "user": "https://github.com/golam-m-hossain"
 }
 ```
 CC:  @mwhansen
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6523
 
 ---
 
-archive/issue_comments_053198.json:
+archive/issue_comments_053098.json:
 ```json
 {
     "body": "Attachment [trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patch) by @golam-m-hossain created at 2009-07-15 15:56:46",
     "created_at": "2009-07-15T15:56:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53198",
-    "user": "@golam-m-hossain"
+    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53098",
+    "user": "https://github.com/golam-m-hossain"
 }
 ```
 
@@ -67,15 +66,15 @@ Attachment [trac_6523-fixes-error-in-is_zero_method_for_symbolic_derivative.patc
 
 ---
 
-archive/issue_comments_053199.json:
+archive/issue_comments_053099.json:
 ```json
 {
     "body": "Unfortunately, the fact that an expression contains a symbolic derivative doesn't guarantee that it is nonzero:\n\n\n```\nsage: t = f(x).derivative(x)\nsage: (x*t +(1-x)*t - t)\n-(x - 1)*D[1](f)(x) + x*D[1](f)(x) - D[1](f)(x)\nsage: (x*t +(1-x)*t - t).collect(x)\n0\n```\n\n\nThe right fix for this is to either implement the `.derivative()` method in `sage/symbolic/expression_conversions.py` or to change pynac to allow different parents in `evalf()`, so that conversion to `CIF` can be done without the code in `expression_conversions.pyx`. \n\nI was planning to do this for #6243, but ended up using a different/better fix there.",
     "created_at": "2009-08-01T11:16:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53199",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53099",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -99,15 +98,15 @@ I was planning to do this for #6243, but ended up using a different/better fix t
 
 ---
 
-archive/issue_comments_053200.json:
+archive/issue_comments_053100.json:
 ```json
 {
     "body": "Attachment [trac_6523-derivative_is_zero.patch](tarball://root/attachments/some-uuid/ticket6523/trac_6523-derivative_is_zero.patch) by @burcin created at 2009-11-21 11:20:32\n\nadd doctests",
     "created_at": "2009-11-21T11:20:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53200",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53100",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -119,15 +118,15 @@ add doctests
 
 ---
 
-archive/issue_comments_053201.json:
+archive/issue_comments_053101.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-21T11:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53201",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53101",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -137,15 +136,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_053202.json:
+archive/issue_comments_053102.json:
 ```json
 {
     "body": "This is fixed by #7490, since we don't use the `expression_conversions` module to convert to `RIF` any more.\n\nattachment:trac_6523-derivative_is_zero.patch adds a doctest with the example in the description.",
     "created_at": "2009-11-21T11:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53202",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53102",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -157,15 +156,15 @@ attachment:trac_6523-derivative_is_zero.patch adds a doctest with the example in
 
 ---
 
-archive/issue_comments_053203.json:
+archive/issue_comments_053103.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-06T08:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53203",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53103",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -175,15 +174,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_053204.json:
+archive/issue_comments_053104.json:
 ```json
 {
     "body": "Looks good to me.\n\nMerged trac_6523-derivative_is_zero.patch.",
     "created_at": "2009-12-06T08:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6523",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53204",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6523#issuecomment-53104",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

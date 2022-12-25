@@ -6,15 +6,13 @@ archive/issues_005976.json:
     "body": "Assignee: @williamstein\n\nCC:  kohel\n\nKeywords: Elliptic Curves\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5976\n\n",
     "created_at": "2009-05-04T05:40:10Z",
     "labels": [
-        "number theory",
-        "major",
-        "enhancement"
+        "component: number theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "[with patch; needs work] Add an Elliptic Curve Isogeny object",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5976",
-    "user": "shumow"
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5976
 
 ---
 
-archive/issue_comments_047424.json:
+archive/issue_comments_047333.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to shumow.",
     "created_at": "2009-05-04T05:46:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47424",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47333",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing assignee from @williamstein to shumow.
 
 ---
 
-archive/issue_comments_047425.json:
+archive/issue_comments_047334.json:
 ```json
 {
     "body": "Attachment [isogeny.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny.patch) by shumow created at 2009-05-04 05:46:45",
     "created_at": "2009-05-04T05:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47425",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47334",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -69,15 +67,15 @@ Attachment [isogeny.patch](tarball://root/attachments/some-uuid/ticket5976/isoge
 
 ---
 
-archive/issue_comments_047426.json:
+archive/issue_comments_047335.json:
 ```json
 {
     "body": "I am interested in getting feed back for this patch, namely:\n\n1) I have just made these objects inherit from sage object.  I am certain that this is not the best object to inherit from.  However, I do not know which is.  I think that the morphism object from the category module seems most reasonable, but I am interested in more feedback.\n\n2) Any other functions these objects should implement.\n\n3) If adding these objects to the sage.schemes.elliptic_curves module is the correct place.\n\n4) Any other feed back.",
     "created_at": "2009-05-04T05:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47426",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47335",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -95,15 +93,15 @@ I am interested in getting feed back for this patch, namely:
 
 ---
 
-archive/issue_comments_047427.json:
+archive/issue_comments_047336.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-04T05:48:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47427",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47336",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -113,15 +111,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_047428.json:
+archive/issue_comments_047337.json:
 ```json
 {
     "body": "I am changing the tag on this from \"needs work\" to \"needs review\", since that's the way to get people to look at it and review it!  Which I now intend to do.\n\nAt a first read through this looks really excellent and useful.  One question:  why do you allow as input the list of coefficients of the kernel poly but not a suitable kernel poly itself?  For example, I would expect to compute a 3-isogeny (for example) by forming the 3-division polynomial, factoring it and passing any degree 1 factors to your code.\n\nSecond minor point:  it would be sufficient for the two allowed values of the algorithm parameter to be \"velu\" and \"kohel\" rather than the longer forms you use.  (Do you check that the supplied value is one of the two allowed values and raise an error if not?)\n\nLastly, one of the things to do next is to insert member functions into either ell_generic or ell_field to allow computation of an isogeny from a given curve.  i.e. if E is the curve and (say) poly is a suitable kernel poly then I would like to be able to do E.isogeny(poly) which would return your isogeny class object.  There are more things one would do after that.\n\nThis is an excellent contribution to Sage.  I will finish the review when I have finished building 3.4.2 and can test it.",
     "created_at": "2009-05-04T15:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47428",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47337",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -139,15 +137,15 @@ This is an excellent contribution to Sage.  I will finish the review when I have
 
 ---
 
-archive/issue_comments_047429.json:
+archive/issue_comments_047338.json:
 ```json
 {
     "body": "Attachment [trac_5976.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976.patch) by @JohnCremona created at 2009-05-04 17:14:32\n\nApply after previous (reviewer's patch)",
     "created_at": "2009-05-04T17:14:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47429",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47338",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -159,15 +157,15 @@ Apply after previous (reviewer's patch)
 
 ---
 
-archive/issue_comments_047430.json:
+archive/issue_comments_047339.json:
 ```json
 {
     "body": "Review:  applies fine to 3.4.2.rc0 and tests pass.\n\nMy reviewer's patch just does the following:\n\n1. Corrects spelling of \"separable\" throughout\n2. simplifies algorithm strings to \"velu\" and \"kohel\"\n3. Corrects some ReST glitches, and added to reference  manual\n4. removed semicolons from ens of lines (redundant in python!)\n\nI think this should go in -- then we can develop it and add other functionality later.  So I have given it a positive review.",
     "created_at": "2009-05-04T17:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47430",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47339",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -186,15 +184,15 @@ I think this should go in -- then we can develop it and add other functionality 
 
 ---
 
-archive/issue_comments_047431.json:
+archive/issue_comments_047340.json:
 ```json
 {
     "body": "All the private functions with leading double underscore aren't doctested, so this is \"needs work\". Dan never intended to put this up for review so quickly, but I guess once the coverage is at 100% it ought to go in since John is happy.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T17:34:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47431",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47340",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -208,15 +206,15 @@ Michael
 
 ---
 
-archive/issue_comments_047432.json:
+archive/issue_comments_047341.json:
 ```json
 {
     "body": "Michael is quite right (of course).  I went for dinner and realised too late that I had forgotten to complain about the <100% coverage.  I will be happy to review it again when that is seen to.\n\nI have another problem:\n\n```\nsage: E=EllipticCurve('11a1')\nsage: phi=EllipticCurveIsogeny(E,E.division_polynomial(2).list(),algorithm='kohel')\nsage: phi\nIsogeny of degree 4 from Elliptic Curve defined by y^2 + y = x^3 - x^2 - 10*x - 20 over Rational Field to Elliptic Curve defined by y^2 + y = x^3 - x^2 - 1260*x - 13797 over Rational Field\nsage: phi.domain_curve().j_invariant()\n-122023936/161051\nsage: phi.range_curve().j_invariant()\n221401204903936/40810683805\n```\n\nHere, I was expecting that phi would be the multiplication-by-2 map from E to itself. but it clearly is not:\n\n```\nsage: phi.rational_maps()\n\n((64*x^7 - 192*x^6 - 1088*x^5 - 80*x^4 + 10240*x^3 + 17312*x^2 + 3476*x - 24628)/(16*x^6 - 32*x^5 - 304*x^4 - 312*x^3 + 2232*x^2 + 6320*x + 6241),\n (1024*x^9*y + 512*x^9 - 3584*x^8*y - 1792*x^8 - 20992*x^7*y - 10496*x^7 + 15744*x^6*y + 7864*x^6 + 265728*x^5*y + 132880*x^5 + 329152*x^4*y + 164728*x^4 - 821728*x^3*y - 410708*x^3 - 2809920*x^2*y - 1406076*x^2 - 2932320*x*y - 1469320*x - 1259724*y - 1265965/2)/(64*x^9 - 192*x^8 - 1728*x^7 - 16*x^6 + 24864*x^5 + 52848*x^4 - 64948*x^3 - 454092*x^2 - 748920*x - 493039))\n```\n\nso I think this is actually wrong.\n\nWhen this is fixed it would be nice to make it easier to construct this multiplication as an isgeny from E to itself (and not just from E to an isomorphic curve).  Which would suggest making the isogeny code work alongside the weierstrass map code (since weierstrass isomorphisms [u,r,s,t] are nothing other than isogenies of degree 1), for example by allowing the construction of an isogeny from a urst and vice versa for isogenies of degree 1.",
     "created_at": "2009-05-04T18:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47432",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47341",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -252,15 +250,15 @@ When this is fixed it would be nice to make it easier to construct this multipli
 
 ---
 
-archive/issue_comments_047433.json:
+archive/issue_comments_047342.json:
 ```json
 {
     "body": "Replying to [comment:2 shumow]:\n> I am interested in getting feed back for this patch, namely:\n> \n> 1) I have just made these objects inherit from sage object.  I am certain that this is not the best object to inherit from.  However, I do not know which is.  I think that the morphism object from the category module seems most reasonable, but I am interested in more feedback.\n> \n\nI would think that SchemeMorphism or one of its descendants in schemes/generic/morphism.py would be a natural choice.  I'm working on fixing a number of things in that file, so it might not be a good idea to make your isogeny object inherit from it just yet.  I'll try to be done soon, though.",
     "created_at": "2009-05-05T00:23:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47433",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47342",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -276,15 +274,15 @@ I would think that SchemeMorphism or one of its descendants in schemes/generic/m
 
 ---
 
-archive/issue_comments_047434.json:
+archive/issue_comments_047343.json:
 ```json
 {
     "body": "Replying to [comment:6 mabshoff]:\n> All the private functions with leading double underscore aren't doctested, so this is \"needs work\". Dan never intended to put this up for review so quickly, but I guess once the coverage is at 100% it ought to go in since John is happy.\n> \n\nYup, mabshoff is one hundred percent correct.  I just got done w/ the velu / kohel algorithms and figured I'd get thoughts from the real sage number theory devs on how I was doing.\n\nSo far this feed back has been great, thanks everyone!\n\n\nReplying to [comment:7 cremona]:\n\n> When this is fixed it would be nice to make it easier to construct this multiplication as an isgeny from E to itself (and not just from E to an isomorphic curve).  Which would suggest making the isogeny code work alongside the weierstrass map code (since weierstrass isomorphisms [u,r,s,t] are nothing other than isogenies of degree 1), for example by allowing the construction of an isogeny from a urst and vice versa for isogenies of degree 1.\n\nYes, I totally see what you are saying.  And this is a point of clarification that I need on some of the math here:  All the algorithms that I have been looking at for isogenies are for computing \"normalized\" isogenies.  It is my partial (possibly incorrect) understanding that the multiplication by \"m\" map is not a normalized isogeny, and as such, these algorithms don't work.\n\nI was in fact planning on trying to rectify this when I figured out how to do the correct inheritance.\n\nReplying to [comment:8 AlexGhitza]:\n> Replying to [comment:2 shumow]:\n \n> I would think that SchemeMorphism or one of its descendants in schemes/generic/morphism.py would be a natural choice.  I'm working on fixing a number of things in that file, so it might not be a good idea to make your isogeny object inherit from it just yet.  I'll try to be done soon, though.\n\nCool, do you have an ETA on that?\n\nReplying to [comment:4 cremona]:\n> My reviewer's patch just does the following:\n> \n>     1. Corrects spelling of \"separable\" throughout\n\nUgh, embarrassing.  I never was very good at spelling.  It's why I liked maths more in school...",
     "created_at": "2009-05-06T07:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47434",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47343",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -323,15 +321,15 @@ Ugh, embarrassing.  I never was very good at spelling.  It's why I liked maths m
 
 ---
 
-archive/issue_comments_047435.json:
+archive/issue_comments_047344.json:
 ```json
 {
     "body": "That is probably right, but how do you define \"normalised\"?  I think the definition is that the pull-back of the standard differential w_E = dx/(2y+a1*x+a3) under the isgeny is again the standard differential;  for [m] the pull-back of w is m*w.  Obviously this only makes sense for separable isogenies, since otherwise the pull-back of w is 0.\n\nOr do you in fact mean \"cyclic\" isogeny?\n\nWe definitely need to be able to handle non-normalised isogenies, if only because the dual of a normalised isogeny is not normalised (using my definition above).\n\nI'm in a rush, so apologise if this is nonsense.",
     "created_at": "2009-05-06T11:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47435",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47344",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -347,15 +345,15 @@ I'm in a rush, so apologise if this is nonsense.
 
 ---
 
-archive/issue_comments_047436.json:
+archive/issue_comments_047345.json:
 ```json
 {
     "body": "Replying to [comment:10 cremona]:\n> That is probably right, but how do you define \"normalised\"?  I think the definition is that the pull-back of the standard differential w_E = dx/(2y+a1*x+a3) under the isgeny is again the standard differential;  for [m] the pull-back of w is m*w.  Obviously this only makes sense for separable isogenies, since otherwise the pull-back of w is 0.\n> \n> Or do you in fact mean \"cyclic\" isogeny?\n> \n> We definitely need to be able to handle non-normalised isogenies, if only because the dual of a normalised isogeny is not normalised (using my definition above).\n> \n> I'm in a rush, so apologise if this is nonsense.\n\nI don't mean \"cyclic\" isogeny.  Yes, I meant the definition using the pullback of the invariant differential, which I believe is equivalent to that characterization that the isogeny map is defined by: (I(x), c*y*I'(x))  and c == 1.  Where I(x) is a rational map given by the various different formulas/algorithms.\n\nI agree with you that we should support non normalized.  When I was doing some testing, I was calculating the \"normalized dual\" meaning the normalized isogeny to an isomorphic curve, and post composing w/ an isomorphism, to make sure I had the right thing.\n\nI think the way to handle non-normalized isogenies is to have a post isomorphism (and possibly pre isomorphism) that gets applied after the normalized isogeny does.  I'm not sure the best way to specify this in the constructor, but I haven't thought about it a lot.  What are your thoughts on this?\n\nI as well am in a hurry, so apologies if what I am saying here didn't make sense.",
     "created_at": "2009-05-06T16:40:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47436",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47345",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -380,15 +378,15 @@ I as well am in a hurry, so apologies if what I am saying here didn't make sense
 
 ---
 
-archive/issue_comments_047437.json:
+archive/issue_comments_047346.json:
 ```json
 {
     "body": "Replying to [comment:11 shumow]:\n> Replying to [comment:10 cremona]:\n> > That is probably right, but how do you define \"normalised\"?  I think the definition is that the pull-back of the standard differential w_E = dx/(2y+a1*x+a3) under the isgeny is again the standard differential;  for [m] the pull-back of w is m*w.  Obviously this only makes sense for separable isogenies, since otherwise the pull-back of w is 0.\n> > \n> > Or do you in fact mean \"cyclic\" isogeny?\n> > \n> > We definitely need to be able to handle non-normalised isogenies, if only because the dual of a normalised isogeny is not normalised (using my definition above).\n> > \n> > I'm in a rush, so apologise if this is nonsense.\n> \n> I don't mean \"cyclic\" isogeny.  Yes, I meant the definition using the pullback of the invariant differential, which I believe is equivalent to that characterization that the isogeny map is defined by: (I(x), c*y*I'(x))  and c == 1.  Where I(x) is a rational map given by the various different formulas/algorithms.\n\nOK, that's the definition I meant.  (e.g. with this definition, multiplication-by-m is normalised iff m=1, since c=m).  Except that the precise characterization you give is only correct when the curve has short Weierstrass form (y^2=f(x)).  Otherwise it something like (I(x), cI'(x)(y+(a1*x+a3)/2) - (A1*I(x)+A3)/2)  where E=[a1,a2,a3,...] and the isogenous curve is [A1,A2,...].\n\n> \n> I agree with you that we should support non normalized.  When I was doing some testing, I was calculating the \"normalized dual\" meaning the normalized isogeny to an isomorphic curve, and post composing w/ an isomorphism, to make sure I had the right thing.\n> \n> I think the way to handle non-normalized isogenies is to have a post isomorphism (and possibly pre isomorphism) that gets applied after the normalized isogeny does.  I'm not sure the best way to specify this in the constructor, but I haven't thought about it a lot.  What are your thoughts on this?\n\nSince we are specifying the isogeny from its kernel, it is well-defined up to an automorphism, so usually up to +/-1 (with the usual awkward special cases).  So if the user asks for an isogeny with a given kernel they surely don't get to specify whether or not it is normalised (except for the sign)?\n\n> \n> I as well am in a hurry, so apologies if what I am saying here didn't make sense.\n\nI am hoping that David Kohel will comment,  since he is the real expert on all this!",
     "created_at": "2009-05-06T17:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47437",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47346",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -422,15 +420,15 @@ I am hoping that David Kohel will comment,  since he is the real expert on all t
 
 ---
 
-archive/issue_comments_047438.json:
+archive/issue_comments_047347.json:
 ```json
 {
     "body": "Replying to [comment:12 cremona]:\n> Replying to [comment:11 shumow]:\n> > Replying to [comment:10 cremona]:\n> > > That is probably right, but how do you define \"normalised\"?  I think the definition is that the pull-back of the standard differential w_E = dx/(2y+a1*x+a3) under the isgeny is again the standard differential;  for [m] the pull-back of w is m*w.  Obviously this only makes sense for separable isogenies, since otherwise the pull-back of w is 0.\n> > > \n> > > Or do you in fact mean \"cyclic\" isogeny?\n> > > \n> > > We definitely need to be able to handle non-normalised isogenies, if only because the dual of a normalised isogeny is not normalised (using my definition above).\n> > > \n> > > I'm in a rush, so apologise if this is nonsense.\n> > \n> > I don't mean \"cyclic\" isogeny.  Yes, I meant the definition using the pullback of the invariant differential, which I believe is equivalent to that characterization that the isogeny map is defined by: (I(x), c*y*I'(x))  and c == 1.  Where I(x) is a rational map given by the various different formulas/algorithms.\n> \n> OK, that's the definition I meant.  (e.g. with this definition, multiplication-by-m is normalised iff m=1, since c=m).  Except that the precise characterization you give is only correct when the curve has short Weierstrass form (y^2=f(x)).  Otherwise it something like (I(x), cI'(x)(y+(a1*x+a3)/2) - (A1*I(x)+A3)/2)  where E=[a1,a2,a3,...] and the isogenous curve is [A1,A2,...].\n> \n\nI think this is correct.  My apologies for using the short form, I just grabbed the first one I saw in my notes.\n\n> Since we are specifying the isogeny from its kernel, it is well-defined up to an automorphism, so usually up to +/-1 (with the usual awkward special cases).  So if the user asks for an isogeny with a given kernel they surely don't get to specify whether or not it is normalised (except for the sign)?\n\nDo you think it would be nice to give the expected isogeny even if it isn't normalized in some cases?\n\nFor example, if the user asks for the dual isogeny, then we can use the algorithms for computing normalized isogenies, and figure out what the post isomorphism is to get back to the original Weierstrass model.  This addresses the problem of wanting to get the dual isogeny such that the composition provides the expected multiplication by d map (where d is the degree of the isogeny.)\n\nWe could also provide an option that if the domain and range curves are isomorphic, then the code determines the isomorphism and post-composes appropriately.\n\nIn the usual case, when the user specifies just the Kernel, then I agree, they surely should not get to specify whether or not it is normalized (except up to sign.)\n\nI think that this solution is a good balance between allowing users who want to naturally use non normalized isogenies in simple cases, and not making the interface over complicated by trying to be overly flexible.\n\nThoughts?",
     "created_at": "2009-05-06T19:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47438",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47347",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -470,15 +468,15 @@ Thoughts?
 
 ---
 
-archive/issue_comments_047439.json:
+archive/issue_comments_047348.json:
 ```json
 {
     "body": "That all sounds very sensible to me.  Thanks for working on this!",
     "created_at": "2009-05-06T21:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47439",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47348",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -488,15 +486,15 @@ That all sounds very sensible to me.  Thanks for working on this!
 
 ---
 
-archive/issue_comments_047440.json:
+archive/issue_comments_047349.json:
 ```json
 {
     "body": "Comments by David Kohel, posted by John Cremona from an email:\n\nThere's not too much for me to comment on, except that given (E,G), the\nisogeny \\phi_G: E -> E' is well-defined up to isomorphism of the codomain.\nThe condition on the pull-back of the standard invariant differential\nrigidifies the choice of E' up to affine translations fixing leading\ncoefficients of x and y and possible automorphisms which are 1 mod (pi)\n[pi = Frobenius], e.g. -1 = 1 mod (pi) in characteristic 2.\n\nOn notation, I've called my isogeny from kernel function Velu's isogeny.\nIn retrospect it might be useful to just plug in a point, or points,\nand construct the kernel from the group elements using Velu's original\nalgorithm or by constructing the kernel polynomial psi(x) and applying\nthe algorithms of my thesis (which just reformulates Velu's construction\nin terms of psi(x) rather than its roots).\n\nNote that Velu retains the first coefficients a1, a2, a3, which makes\nthe codomain curve more rigid (killing off the affine translation).\n\nI suggest a syntax like (note that I haven't actually inspected the\nalgorithm which has been implemented or its syntax):\n\nE.isogeny_from_kernel(\n       kernel,\n       codomain=None,\n       order=None,\n       pullback_scalar=None,\n       algorithm=None)\n\nThe inputs are thus:\n  kernel : which is a kernel polynomial, a torsion point, or\n    list of torsion points; or, once such an class is created,\n    a torsion subgroup scheme.\n  codomain : the codomain curve, if one other than Velu's choice\n    is desired.\n  order : the order of the kernel (this can be inferred, but can\n    bypass a gcd with the 2-torsion polynomial).\n  pullback_scalar : [find a better name] the scalar f^*(w')/w\n    of the pullback of the standard invariant differential w'\n    on the codomain divided by that on the domain E.\n  algorithm : this was 'velu' or 'kohel', but is now redundant,\n    if I understand correctly the intended difference, since\n    it can be determined from the input type (to kernel).\n\nMaybe an abelian_invariants=None (a list of one or two integers,\nthe first dividing the second, to indicate the group structure)\ncould be added, to differentiate cyclic and acyclic groups of the\nsame order.  I think this may only be relevant to the algorithm\nif 4 divides the order.\n\nUnlike Magma, the returned object should be the isogeny (not the\ncodomain curve + isogeny).  The codomain curve is part of the\nisogeny data: E.isogeny_from_kernel(psi).codomain().\n\nOne could also define:\n\nE.isogeny_codomain_from_kernel(...)\n\nwhich only constructs the codomain (this is much more efficient,\nand sometimes the isogeny is not desired).\n\nNote that if one is interested in defining endomorphisms, then\none can define a homomorphism c of O = End(E) to R = E.base_ring()\n(with kernel generated by Frobenius is finite characteristic),\nand set the pullback scalar to c(alpha) when constructing an\nisogeny from ker(alpha).  This gives one control to determine\nthe right pullback scalar for endomorphisms.  Is one then specifies\nthe codomain to be E (the domain curve), then one should be able\nto recognize a a trivial identity isomorphism to tehis given\ncodomain.\n\nCheers,\n\nDavid\n\nP.S. I have my original Magma code for Velu isogenies if this\nis of any use.  In terms of notation, I tend to prefer torsion\npolynomial as clearer in meaning to the standard term division\npolynomial (which I have imposed on Magma and Sage).",
     "created_at": "2009-05-07T08:57:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47440",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47349",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -584,15 +582,15 @@ polynomial (which I have imposed on Magma and Sage).
 
 ---
 
-archive/issue_comments_047441.json:
+archive/issue_comments_047350.json:
 ```json
 {
     "body": "I realized this morning that I had been saying confusing things about this \"normalization\" question.  This is really superseded by David's suggestions, but anyway:  while it is true that E and the kernel G uniquely determine the isogenous curve E' = E/G up to isomorphism, if we replace E' by an isomorphic curve E\", isomorphic to E' via [u,r,s,t], then the scaling constant gets multiplied (possibly divided) by u.\n\nThis means that if we do not care in advance about the model we use for E' we can always replace E' by a suitable E\" such that the scaling constant is 1;  then it seems to me that E\" and the isogeny are uniquely determined up to translations (as David says), i.e. [u,r,s,t] with u=1.  (And _not_ up to general automorphisms of E\", since these may multiply the scaling constant by a root of unity (or order at most 6 of course).\n\nIn the context of finite fields, there is no reason to choose any one scaling of a Weierstrass model over another, so it is harmless to insist that isogenies are normalized (or at least to reduce to that case).  Indeed, the only place I have seen the adjective \"normalized\" applied to isogenies was precisely in this context (e.g. papers of Morain).\n\nThe situation is different over number fields:  when the class number is 1 and global minimal models exist we may well want to insist that E' is a minimal model, which fixes the scaling constant up to a unit in the field only.  We cannot therefore normalize the isogeny without sacrificing integrality or minimality of the model.  For example, given an isogeny of prime degree ell, and its dual, the product of the two scaling constants is ell.  Over Q with minimal (or at least ell-minimal) models, one of them has constant ell and the other has constant 1.  (Or they could be -ell and -1, but we could then compose with [u,r,s,t]=[-1,0,0,0], the negation map.)  In this context I think one says that the isogeny with constant 1 is etale, rather than normalized.\n\nI think David's proposed framework allows for all these possibilities.  Over finite fields, given E and G the default would be to return a normalised isogeny.  Over Q the default would be (I think?) to return an isogeny whose codomain is a minimal model.  I'm not sure about other number fields.  And teh user could override this if they provide their own codomain.",
     "created_at": "2009-05-07T09:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47441",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47350",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -610,15 +608,15 @@ I think David's proposed framework allows for all these possibilities.  Over fin
 
 ---
 
-archive/issue_comments_047442.json:
+archive/issue_comments_047351.json:
 ```json
 {
     "body": "Just one additional comment on John's message: we could add \"model\" as\nan option to specify the desired model of the codomain: \"minimal_model\",\n\"short_weierstrass\", etc.; in characteristic 2 there are some special\nWeierstrass models used in crypto.\n\nThere are numerous other models which are becoming trendy in crypto\napplications: http://www.hyperelliptic.org/EFD/\n\nBut not all of them are isogeny invariant, even over a finite field.\nE.g. the Edward's model has a rational 4-torsion subgroup, which\nmight change to a subgroup Z/2Z x Z/2Z under a 2-isogeny, but it is\nstable under odd degree isogenies.\n\nAlthough such special models are not yet implemented as classes in\nSage, it is good to keep them in mind when determining the optional\nparameters one might want to feed into an isogeny.  Obviously one\nwould also want to generalise the isomorphisms [u,r.s,t] of the\nWeierstrass models (as well as the translation-by-P maps which are\nisomorphisms of curves but not of elliptic curves, since they don't\nfix the base point).\n\n--David\n\nP.S. I have a question:\n\nIf one starts with a minimal Weierstrass model (over QQ or a number\nfield), and applies a Velu isogeny phi (fixing a1, a2, a3) with pullback\nscalar 1.  How close or far from a minimal model is it -- e.g. is it\nimmediately p-minimal for all p coprime to the deg(phi)?  What happens\nat 2 and 3?  John's argument shows that we can lose p-minimality since\nthe Velu isogeny with kernel E[p] is not [p] which has pullback scalar p,\nso we must lose minimality at p. In short, how much or how little work\nis needed to transform the codomain to a minimal model?",
     "created_at": "2009-05-07T11:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47442",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47351",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -660,15 +658,15 @@ is needed to transform the codomain to a minimal model?
 
 ---
 
-archive/issue_comments_047443.json:
+archive/issue_comments_047352.json:
 ```json
 {
     "body": "Answering the question:   over Q I think I answered this in my book;  if deg(phi)=ell (prime) then Velu gives a modal integral away from ell and either integral at ell or nearly so (such that scaling by ell makes it integral).  Over general number fields I guess it would depend on the ramification degree.  There is also a nice related result by Samir Siksek (On standardised models of isogenous elliptic curves, Math Comp 74 # 250 pp 949--951, 2004) but that is only over Q.",
     "created_at": "2009-05-07T12:21:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47443",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47352",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -678,15 +676,15 @@ Answering the question:   over Q I think I answered this in my book;  if deg(phi
 
 ---
 
-archive/issue_comments_047444.json:
+archive/issue_comments_047353.json:
 ```json
 {
     "body": "I can't say anything cogent about the math, from an API perspective, what I would say is the following:\n\n1) When determining the codomain model, I think that the default behavior should be to do whatever the underlying formulas do.  However, if the user wishes this to be overridden they should be able to do so.  It sounds like the two cases of interest are:\n  a) If the user explicitly specifies an isomorphic model to the calculated codomain.  This would be specified by setting the codomain parameter in the Isogeny constructor.\n  b) In the case of curves over the rationals, if the user sets a flag named something like compute_minimal_codomain, the isogeny should be setup to compute evaulate to the minimal model of the codomain.\n2) D. Kohel's advice re: a function that just calculates the codomain only is a good idea.  I will implement that.\n\nI am mainly interested in the finite field case, so I have a question:  In the rational case, is the option to compute the isogeny to the minimal model something that would be useful?\n\nI think doing what the underlying formulas say be default is the clearest thing from the perspective of the API.  But we still definitely want to give users the ability to override this.\n\nAlso, I am not concerned about finding a canonical codomain model in the numberfield case.  That seems somewhat out of the scope of this class, unless there is something that is clearly the right choice?  (From the above interchange it seems like there is not a clear choice.)\n\nTo give a rough idea of the signature of the constructor I am thinking of:\n\nisogeny_from_kernel(\n\n    kernel, codomain=None, order=None, compute_minimal_model=False, algorithm=None)\n\nThe inputs are thus:\n\n    kernel : the kernel of the isogeny, necessary, unless the codomain is specified and one of the isogeny from domain/codomain algorithms is used.\n\n    codomain : the codomain curve, if one other than Velu's choice is desired, OR if we are calculating the isogeny based on the domain/codomain algorithm\n\n    order : the order of the kernel (this can be inferred, but can bypass a gcd with the 2-torsion polynomial).  Also necessary in the case that a domain/codomain algorithm is used.\n\n    compute_minimal_model : In the case of a curve over the rationals this calculates the isogeny such that the codomain model is the minimal weierstrass model.\n\n    algorithm : this was 'velu' or 'kohel', but is now partially redundant.  I plan to write the code to look at this, and if it is NOT present then it will try to determine the algorithm from the input parameters.\n\n\nDoes this sound good to everyone?",
     "created_at": "2009-05-12T01:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47444",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47353",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -728,15 +726,15 @@ Does this sound good to everyone?
 
 ---
 
-archive/issue_comments_047445.json:
+archive/issue_comments_047354.json:
 ```json
 {
     "body": "That all sounds very good to me.  Yes, over the rationals (and number fields) one is definitely interested in having specific models of the codomain.  We can add extra bits for the number field case later.\n\nThere are of course some striking differences between the number field and finite field cases.  Over finite fields, when two curves are isogenous there are infinitely many isogenies (e.g.in the ordinary case, the isogenies form a rank 1 projective module over the endommorphism ring), so it would not be sufficient just to give the two curves;  one might also want to give a possible degree.  While over number fields (amd more generally in char. 0) there is less choice.\n\nJohn",
     "created_at": "2009-05-12T08:06:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47445",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47354",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -750,15 +748,15 @@ John
 
 ---
 
-archive/issue_comments_047446.json:
+archive/issue_comments_047355.json:
 ```json
 {
     "body": "Replying to [comment:20 cremona]:\n> That all sounds very good to me.  Yes, over the rationals (and number fields) one is definitely interested in having specific models of the codomain.  We can add extra bits for the number field case later.\n\nOver finite fields too -- if one begins with a given model then one often wants to have that model for the codomain.\n\n> There are of course some striking differences between the number field and finite field cases.  Over finite fields, when two curves are isogenous there are infinitely many isogenies (e.g.in the ordinary case, the isogenies form a rank 1 projective module over the endomorphism ring), so it would not be sufficient just to give the two curves;  one might also want to give a possible degree.  While over number fields (and more generally in char. 0) there is less choice.\n\nIt is a much harder problem to determine an isogeny given two curves (over a finite field or not).  I don't think we're discussing this (interesting) problem, rather, given a curve, kernel polynomial, the possibly a codomain curve (e.g. the domain, if the kernel polynomial is known to determine an endomorphism).\n\nAnyway, I don't find the number field and finite field cases that dissimilar.  Ordinary curves at least lift to CM curves over H/K (or a local field) over which the isogenies lift from finite characteristic, and even in the generic (non-CM) case, at primes of good reduction, the (few) isogenies which exist over the ground field are just  the rational points in an infinite graph which is a universal cover (containing the l+1-regular tree for each prime degree l) of the isogeny graph the residue field.  Over the number field, one just wants finer control over what happens simultaneously at all primes, and I view isogenies over number fields as an 'intersection' over all finite primes of reduction (a global isogeny with image in the product of all local isogenies).\n\nIn all cases, Velu gives a preferred choice of normalization, which we can efficiently modify with a pullback scalar, or by requesting a particular codomain model such as the minimal model.\n\nOn that note, rather than 'compute_minimal_model', I would suggest just 'model' (default None or 'velu') so that one can do:\n\nE.isogeny_from_kernel(psi,model='minimal') \n\nin order to induce the computation of a minimal model (for the codomain).  I think it is clear that 'model' only refers to the codomain which is that which is computed.  This is flexible enough to also allow for standard models {'edwards', 'montgomery', 'hessian', 'legendre', 'short_weierstrass', 'binary_weierstrass', etc.} in vogue in cryptographic settings.",
     "created_at": "2009-05-12T13:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47446",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47355",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -785,15 +783,15 @@ in order to induce the computation of a minimal model (for the codomain).  I thi
 
 ---
 
-archive/issue_comments_047447.json:
+archive/issue_comments_047356.json:
 ```json
 {
     "body": "Attachment [isogeny_v2.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v2.patch) by shumow created at 2009-05-14 07:33:00\n\nsecond version of the isogeny code",
     "created_at": "2009-05-14T07:33:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47447",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47356",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -805,15 +803,15 @@ second version of the isogeny code
 
 ---
 
-archive/issue_comments_047448.json:
+archive/issue_comments_047357.json:
 ```json
 {
     "body": "I have uploaded a patch that has a few changes that we were discussing.\n\nI did:\n\n1) Change the constructor signature, as per our discussion\n2) added a function isogeny_codomain_from_kernel, that computes the codomain only\n3) Added a few doctests.\n4) refactored the code somewhat\n\nI did not:\n\n1) Write any code to map to a specified or minimal model yet.\n\nAt this point, this still needs work\n\nMy next TODOs are:\n \n1) To add a couple new algorithms for computing isogenies (from Morain's paper,)\n2) Write the code to map to the specified or a minimal model.\n3) add LOTS of doctests :-)",
     "created_at": "2009-05-14T07:37:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47448",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47357",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -842,15 +840,15 @@ My next TODOs are:
 
 ---
 
-archive/issue_comments_047449.json:
+archive/issue_comments_047358.json:
 ```json
 {
     "body": "I forgot to mention in my last post that I made the isogeny now inherit from Morphism.  I decided on this because of Alex Ghitza's warning that he is planning on changing the \"SchemeMorphism\" class.  Also, the Weierstrass isomorphism class derives from the morphism class, not from SchemeMorphism.",
     "created_at": "2009-05-14T16:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47449",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47358",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -860,15 +858,15 @@ I forgot to mention in my last post that I made the isogeny now inherit from Mor
 
 ---
 
-archive/issue_comments_047450.json:
+archive/issue_comments_047359.json:
 ```json
 {
     "body": "This is certainly coming along nicely.  To allow people (e.g. me) to play with it, it would be nice to add a member function to the class EllipticCurve_field (in ell_field.py) called isogeny so that one could do E.isogeny(args) instead of EllipticCurveIsogeny(E, args).",
     "created_at": "2009-05-20T13:55:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47450",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47359",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -878,15 +876,15 @@ This is certainly coming along nicely.  To allow people (e.g. me) to play with i
 
 ---
 
-archive/issue_comments_047451.json:
+archive/issue_comments_047360.json:
 ```json
 {
     "body": "Replying to [comment:24 cremona]:\n> This is certainly coming along nicely.  To allow people (e.g. me) to play with it, it would be nice to add a member function to the class EllipticCurve_field (in ell_field.py) called isogeny so that one could do E.isogeny(args) instead of EllipticCurveIsogeny(E, args).\n\nPS I could not get isogeny_v2.patch to apply.  Is it supposed to replace the previous twp patches (as I assumed)?\n\n```\nmasgaj@host-56-150%sage -hg qimport ~/isogeny_v2.patch\nadding isogeny_v2.patch to series file\nmasgaj@host-56-150%sage -hg qpush\napplying isogeny_v2.patch\npatching file doc/en/reference/plane_curves.rst\nHunk #1 succeeded at 33 with fuzz 2 (offset 12 lines).\npatching file sage/schemes/elliptic_curves/all.py\nHunk #1 FAILED at 34\n1 out of 1 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/all.py.rej\nunable to find 'sage/schemes/elliptic_curves/ell_curve_isogeny.py' for patching\n31 out of 31 hunks FAILED -- saving rejects to file sage/schemes/elliptic_curves/ell_curve_isogeny.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh isogeny_v2.patch\n```\n\nThis is with 4.0.alpha0",
     "created_at": "2009-05-20T13:56:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47451",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47360",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -918,15 +916,15 @@ This is with 4.0.alpha0
 
 ---
 
-archive/issue_comments_047452.json:
+archive/issue_comments_047361.json:
 ```json
 {
     "body": "Replying to [comment:25 cremona]:\n> Replying to [comment:24 cremona]:\n> > This is certainly coming along nicely.  To allow people (e.g. me) to play with it, it would be nice to add a member function to the class EllipticCurve_field (in ell_field.py) called isogeny so that one could do E.isogeny(args) instead of EllipticCurveIsogeny(E, args).\n> \n\nThank you!  Will do.\n\n> PS I could not get isogeny_v2.patch to apply.  Is it supposed to replace the previous twp patches (as I assumed)?\n\nHmm, yeah, I created the patch with 3.4, so I'm guessing that the patch is trying to jump too many versions at once.  Because most of everything in this change is in one new file, I can fairly easily update to the newest version, and recreate a patch.  But in general, is there an easy way to counter this type of patch rot?  I have heard other sage devs talking about \"rebasing patches.\"  Is this what they are talking about?\n\n\nAlso, when I release the fixed patch.  I have a few changes in the code that will improve things.  I might as well get your feedback on the ideas now.  As we discussed the isogenies (with specified kernel) are only specified upto a factor of +/-1, so that we have a problem if we want to create the multiplication_by_m isogeny (for example.)  Because it would be nice to easily switch between the two, I have added a few new member functions:\n\nset_post_isomorphism(isomorphism):\npost composes the isogeny object with WeierstrassIsomorphism isomorphism\n\nswitch_sign():\ncalls post compose with the weierstrass isomorphism (x,-y)\n\nAlso, I made it so that the unary operator -phi is defined, basically it deep copies phi, then calls switch_sign() on the copy, and returns it.\n\nThis seems to me like the best way to overcome the fact that the isomorphism is only defined up to +/-1 factor, while balancing people actually wanting to compute something specific.  Your thoughts?",
     "created_at": "2009-05-21T16:57:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47452",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47361",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -958,15 +956,15 @@ This seems to me like the best way to overcome the fact that the isomorphism is 
 
 ---
 
-archive/issue_comments_047453.json:
+archive/issue_comments_047362.json:
 ```json
 {
     "body": "Replying to [comment:26 shumow]:\n> Replying to [comment:25 cremona]:\n> > Replying to [comment:24 cremona]:\n> > > This is certainly coming along nicely.  To allow people (e.g. me) to play with it, it would be nice to add a member function to the class EllipticCurve_field (in ell_field.py) called isogeny so that one could do E.isogeny(args) instead of EllipticCurveIsogeny(E, args).\n> > \n> \n> Thank you!  Will do.\n> \n> > PS I could not get isogeny_v2.patch to apply.  Is it supposed to replace the previous twp patches (as I assumed)?\n> \n> Hmm, yeah, I created the patch with 3.4, so I'm guessing that the patch is trying to jump too many versions at once.  Because most of everything in this change is in one new file, I can fairly easily update to the newest version, and recreate a patch.  But in general, is there an easy way to counter this type of patch rot?  I have heard other sage devs talking about \"rebasing patches.\"  Is this what they are talking about?\n\nYes, precisely.  It should be pretty easy as you are mainly creating a new file.  It's just the changes to other files which will need to be redone if they have changed.\n\n> \n> \n> Also, when I release the fixed patch.  I have a few changes in the code that will improve things.  I might as well get your feedback on the ideas now.  As we discussed the isogenies (with specified kernel) are only specified upto a factor of +/-1, so that we have a problem if we want to create the multiplication_by_m isogeny (for example.)  Because it would be nice to easily switch between the two, I have added a few new member functions:\n> \n> set_post_isomorphism(isomorphism):\n> post composes the isogeny object with WeierstrassIsomorphism isomorphism\n> \n> switch_sign():\n> calls post compose with the weierstrass isomorphism (x,-y)\n> \n\nGood (except:  (x, -y-a1*x-a3) :)\n\n> Also, I made it so that the unary operator -phi is defined, basically it deep copies phi, then calls switch_sign() on the copy, and returns it.\n> \n> This seems to me like the best way to overcome the fact that the isomorphism is only defined up to +/-1 factor, while balancing people actually wanting to compute something specific.  Your thoughts?\n\nThat sounds good.  Pedantically one might want to post-compose with other autmorphisms (when j=0 or j=1728 and ...) but I cannot quote imagine needing that.  If there was the possibility to compose with any W. iso. that would be useful perhaps.\n\nDon't worry about doing everything now -- let's get something working (as you have) and  let people use it!",
     "created_at": "2009-05-21T18:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47453",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47362",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1009,15 +1007,15 @@ Don't worry about doing everything now -- let's get something working (as you ha
 
 ---
 
-archive/issue_comments_047454.json:
+archive/issue_comments_047363.json:
 ```json
 {
     "body": "3rd version of isogeny code - patch made with sage-4.0.rc0",
     "created_at": "2009-05-23T22:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47454",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47363",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -1027,15 +1025,15 @@ archive/issue_comments_047454.json:
 
 ---
 
-archive/issue_comments_047455.json:
+archive/issue_comments_047364.json:
 ```json
 {
     "body": "Attachment [isogeny_v3.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v3.patch) by shumow created at 2009-05-23 22:38:27\n\nI rebased the patch onto 4.0.rc0.  Hopefully this will not be jumping so many versions that it causes a problem.\n\nThe latest version is in isogeny_v3.patch.\n\nThe code I wrote that implemented \"switch_sign\" as well as unary negation, actually gives the ability to (post) compose with any W.iso, see the function set_post_isomorphism.\n\nThis still isn't ready to go in terms of being checked in, because I'm not at 100% doctests (I'm at 59% now.)  That said, the only things that I need to write doctests for at this point are internal functions, which I know have already been exercised by other doc tests.\n\nMy next \"to do\" items on this code are (in order of priority):\n\n-Finish doctests\n-add the isogeny function to ell_field\n-add a function \"is_normalized\"\n-finish implementing starks method\n-use starks method to implement computing the dual",
     "created_at": "2009-05-23T22:38:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47455",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47364",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -1061,15 +1059,15 @@ My next "to do" items on this code are (in order of priority):
 
 ---
 
-archive/issue_comments_047456.json:
+archive/issue_comments_047365.json:
 ```json
 {
     "body": "update of isogeny code - Apply after isogeny_v3.patch",
     "created_at": "2009-05-25T19:51:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47456",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47365",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -1079,15 +1077,15 @@ update of isogeny code - Apply after isogeny_v3.patch
 
 ---
 
-archive/issue_comments_047457.json:
+archive/issue_comments_047366.json:
 ```json
 {
     "body": "Attachment [isogeny_v4.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v4.patch) by shumow created at 2009-05-25 19:58:38\n\nJust uploaded isogeny_v4.patch,\n\nThis adds:\n\n-\"is_normalized\" function\n\n-isogeny and isogeny_codomain functions to the ell_field file, so that we can say E.isogeny(...)  and it returns EllipticCurveIsogeny(E, ...) and also E.isogeny_codomain(...) that returns the codomain only of the isogeny from E with given kernel data.\n\n-100% doctests\n\n\n\nNext, I will finish the Starks algorithm and a function to compute the dual.  After that I would say (modulo feedback from a review) that this will be good to checkin.",
     "created_at": "2009-05-25T19:58:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47457",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47366",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -1111,15 +1109,15 @@ Next, I will finish the Starks algorithm and a function to compute the dual.  Af
 
 ---
 
-archive/issue_comments_047458.json:
+archive/issue_comments_047367.json:
 ```json
 {
     "body": "Attachment [isogeny_v5.patch](tarball://root/attachments/some-uuid/ticket5976/isogeny_v5.patch) by shumow created at 2009-06-04 19:43:45\n\npatch made with sage-4.0 - apply this patch clean.  Ignore all previous patches",
     "created_at": "2009-06-04T19:43:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47458",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47367",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -1131,15 +1129,15 @@ patch made with sage-4.0 - apply this patch clean.  Ignore all previous patches
 
 ---
 
-archive/issue_comments_047459.json:
+archive/issue_comments_047368.json:
 ```json
 {
     "body": "I have attached a patch for review.  Please apply isogeny_v5.patch clean.\n\nThe latest update has stark's algorithm, the ability to compute the dual, and instantiate from domain and codomain.",
     "created_at": "2009-06-04T19:46:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47459",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47368",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -1151,15 +1149,15 @@ The latest update has stark's algorithm, the ability to compute the dual, and in
 
 ---
 
-archive/issue_comments_047460.json:
+archive/issue_comments_047369.json:
 ```json
 {
     "body": "Reviewer's patch;  apply *instead of* previous",
     "created_at": "2009-06-05T12:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47460",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47369",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1169,15 +1167,15 @@ Reviewer's patch;  apply *instead of* previous
 
 ---
 
-archive/issue_comments_047461.json:
+archive/issue_comments_047370.json:
 ```json
 {
     "body": "Attachment [trac_5976_review.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review.patch) by @JohnCremona created at 2009-06-05 12:05:44\n\nI don't have time at the moment to go into this in a lot of detail.  The patch applies fine;  the examples I tried (including a 37-isogeny over Q) worked perfectly.\n\nI have a few minor comments listed below.  I found a lot of minor glitches in the docstrings when building the reference manual, and have fixed these.  My patch was supposed to be applied after yours, but owing to a mistake on my part is is a self-contained patch including all your code.  Sorry about that, I know that it makes it harder to see what I changed -- docstrings only!\n\nIt might be a good idea if David K also looked at it, since he is more familiar with \"his\" algorithm than I am;  I also know nothing about Stark's algorithm.\n\nOverall this is a very impressive piece of work (over 4000 lines!) and I think it should go in as soon as possible, since it is only when people start to use it for real that problems (if there are any) will surface.\n\nNow for the (mainly) minor points:\n\n* Several ReST glitches (e.g. missing double ::). [fixed]\n\n* In the doctests for the helper functions I think it would be better to\n  have direct rather than indirect doctests.  For example in the tests at \n  lines 98-99 surely the fact that the twosides agree is a tautology\n  since the same code is used on both sides?  And in\n  compute_codomain_formula(), why not put in a direct doctest.  (In that\n  function you do not really need A1,A2,A3 and you can define a1,...,a6\n  in one line via a1,a2,a3,a4,a6=E.ainvs().  Similarly elsewhere.)\n\n* compute_vw_kohel_even_deg1() does not use parameter a6.\n\n* l.225: incomplete sentence! [look for \"missing text\" in the source, I put in at least 2]\n\n* I like the very clear list of private data for the isogeny class,\n  where all are set to None by default, though I suspect this is more\n  like C++ than Python.  It makes it *very* much easier to see what is\n  going on.\n\n* There are lots of good examples.\n\n* The docstring for the isogeny method for elliptic curves should say\n  more: it should certainly detail the input parameters and give more\n  examples (possibly copied from the EllipticCurveIsogeny\n  documentation).  The point is the when someone E.<tab> and sees\n  E.isogeny is available and then types E.isogeny? they need to see how\n  to use that function.",
     "created_at": "2009-06-05T12:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47461",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47370",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1225,15 +1223,15 @@ Now for the (mainly) minor points:
 
 ---
 
-archive/issue_comments_047462.json:
+archive/issue_comments_047371.json:
 ```json
 {
     "body": "apply *after* trac_5976_review.patch, incorporates J. Cremona's suggestions.",
     "created_at": "2009-06-06T03:46:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47462",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47371",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -1243,15 +1241,15 @@ apply *after* trac_5976_review.patch, incorporates J. Cremona's suggestions.
 
 ---
 
-archive/issue_comments_047463.json:
+archive/issue_comments_047372.json:
 ```json
 {
     "body": "Attachment [trac_5976_review2.patch](tarball://root/attachments/some-uuid/ticket5976/trac_5976_review2.patch) by shumow created at 2009-06-06 03:52:26\n\nI have just posted a patch incorporating J. Cremona's suggestions, after trac_5976_review.patch, apply trac_5976_review2.patch.\n\nvery explicitly, I have fixed the following things:\n\n* In the doctests for the helper functions I think it would be better to have direct rather than indirect doctests. For example in the tests at lines 98-99 surely the fact that the twosides agree is a tautology since the same code is used on both sides? And in compute_codomain_formula(), why not put in a direct doctest. (In that function you do not really need A1,A2,A3 and you can define a1,...,a6 in one line via a1,a2,a3,a4,a6=E.ainvs(). Similarly elsewhere.) [fixed, in particular, all private / helper functions now have doctests]\n\n* compute_vw_kohel_even_deg1() does not use parameter a6. [fixed]\n\n\n* l.225: incomplete sentence! [look for \"missing text\" in the source, I put in at least 2] [fixed the two \"missing texts\", didn't see others.]\n\n* The docstring for the isogeny method for elliptic curves should say more: it should certainly detail the input parameters and give more examples (possibly copied from the EllipticCurveIsogeny? documentation). The point is the when someone E.<tab> and sees E.isogeny is available and then types E.isogeny? they need to see how to use that function. [fixed]",
     "created_at": "2009-06-06T03:52:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47463",
-    "user": "shumow"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/shumow"
 }
 ```
 
@@ -1274,15 +1272,15 @@ very explicitly, I have fixed the following things:
 
 ---
 
-archive/issue_comments_047464.json:
+archive/issue_comments_047373.json:
 ```json
 {
     "body": "Positive review on the latest patch, which applies cleanly and passes all doctests in sage/schemes/elliptic_curves. I had some errors rebuilding the documentation but they were not from the files touched here so I think they were just a leftover from the past patches I was working on in the same clone.",
     "created_at": "2009-06-06T09:45:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47464",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47373",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1292,15 +1290,15 @@ Positive review on the latest patch, which applies cleanly and passes all doctes
 
 ---
 
-archive/issue_comments_047465.json:
+archive/issue_comments_047374.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-13T20:24:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47465",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/5976#issuecomment-47374",
+    "user": "https://github.com/ncalexan"
 }
 ```
 

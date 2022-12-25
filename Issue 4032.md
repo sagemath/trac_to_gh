@@ -6,15 +6,14 @@ archive/issues_004032.json:
     "body": "Assignee: mabshoff\n\nThe spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1.2/alpha4/singular-3-0-4-4-20080711.p1.spkg\n\nfixes three issues:\n\n* remove non-POSIX behavior of tail in spkg-install\n* add options to build libsingular on x86 Solaris\n* work around problem when installing libsingular headers when /usr/bin/install is not installed\n\nIssue created by migration from https://trac.sagemath.org/ticket/4032\n\n",
     "created_at": "2008-09-01T09:28:07Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with spkg, needs review] Add x86 Solaris build support for libSingular",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4032",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4032
 
 ---
 
-archive/issue_comments_029095.json:
+archive/issue_comments_029037.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-01T09:50:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4032",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4032#issuecomment-29095",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4032#issuecomment-29037",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +54,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_029096.json:
+archive/issue_comments_029038.json:
 ```json
 {
     "body": "Builds/runs fine on my 64-bit Debian/GNU Linux Core2Duo",
     "created_at": "2008-09-01T10:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4032",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4032#issuecomment-29096",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4032#issuecomment-29038",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -73,15 +72,15 @@ Builds/runs fine on my 64-bit Debian/GNU Linux Core2Duo
 
 ---
 
-archive/issue_comments_029097.json:
+archive/issue_comments_029039.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-01T10:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4032",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4032#issuecomment-29097",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4032#issuecomment-29039",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +90,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_029098.json:
+archive/issue_comments_029040.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha4",
     "created_at": "2008-09-01T10:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4032",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4032#issuecomment-29098",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4032#issuecomment-29040",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

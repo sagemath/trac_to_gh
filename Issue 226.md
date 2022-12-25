@@ -6,15 +6,14 @@ archive/issues_000226.json:
     "body": "Assignee: @williamstein\n\n\n```\nThe following code compiled just fine with 0.9.4.1\n \ncdef extern from \"whatever.h\":\n    ctypedef enum someenum_t:\n        ENUMVALUE_1\n        ENUMVALUE_2\n \ncdef somefunction(someenum_t val):\n    if val == ENUMVALUE_1:\n        print \"1\"\n    else:\n        print \"2\"\n \n \nWith 0.9.5 it gives the following error:\n/tmp/Pyrex-0.9.5/regression.pyx:8:11: Invalid types for '=='\n(someenum_t, someenum_t)\n \n \n anders\n \n \n_______________________________________________\nPyrex mailing list\nPyrex@lists.copyleft.no\nhttp://lists.copyleft.no/mailman/listinfo/pyrex\n--------\n\nI wrote:\n> /tmp/Pyrex-0.9.5/regression.pyx:8:11: Invalid types for '=='\n> (someenum_t, someenum_t)\n \nThis patch seems to help, but I don't know enough pyrex internals to\ntell if it is the correct solution.\n \n--- Pyrex-0.9.5/Pyrex/Compiler/ExprNodes.py     2007-01-27\n05:21:03.000000000 +0100\n+++ Pyrex-0.9.5-enumcmpfix/Pyrex/Compiler/ExprNodes.py  2007-01-28\n16:14:45.366599915 +0100\n@@ -2594,6 +2594,8 @@\n         elif (type1.is_numeric and type2.is_numeric\n                 and op not in ('is', 'is_not')):\n             return 1\n+        elif (type1.is_enum and type2.is_enum):\n+            return 1\n         else:\n             return 0\n \n \n \n_______________________________________________\nPyrex mailing list\nPyrex@lists.copyleft.no\nhttp://lists.copyleft.no/mailman/listinfo/pyrex\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/226\n\n",
     "created_at": "2007-01-28T20:27:20Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "sagex enum issue and solution",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/226",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -86,15 +85,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/226
 
 ---
 
-archive/issue_comments_001007.json:
+archive/issue_comments_001004.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-18T17:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/226",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/226#issuecomment-1007",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/226#issuecomment-1004",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -104,15 +103,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_001008.json:
+archive/issue_comments_001005.json:
 ```json
 {
     "body": "The problem has been fixed in a previous release of cython.\ncython regression.pyx now works fine.",
     "created_at": "2007-08-18T17:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/226",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/226#issuecomment-1008",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/226#issuecomment-1005",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

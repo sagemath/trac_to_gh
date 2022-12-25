@@ -6,7 +6,7 @@ archive/issues_001599.json:
     "body": "Assignee: cwitty\n\n\n```\nsage: 3.xgcd(0)\n(3, 1, 0)\nsage: 3._xgcd(0)\n------------------------------------------------------------\n   File \"<ipython console>\", line 1\n     RealNumber('3.')_xgcd(Integer(0))\n                         ^\n<type 'exceptions.SyntaxError'>: invalid syntax\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1599\n\n",
     "created_at": "2007-12-26T15:21:56Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001599.json:
     "title": "another preparser edge case",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1599",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: cwitty
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1599
 
 ---
 
-archive/issue_comments_010168.json:
+archive/issue_comments_010141.json:
 ```json
 {
     "body": "Rolled into #5079",
     "created_at": "2009-01-23T22:30:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1599#issuecomment-10168",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/1599#issuecomment-10141",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -59,15 +59,15 @@ Rolled into #5079
 
 ---
 
-archive/issue_comments_010169.json:
+archive/issue_comments_010142.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-01-23T22:30:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1599",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1599#issuecomment-10169",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/1599#issuecomment-10142",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005012.json:
     "body": "Assignee: mabshoff\n\nCC:  cwitty\n\nHere we go:\n\n```\n[4:36pm] mabs: cwitty: I have another interesting bug for you:\n[4:36pm] mabs: File \"/home/mabshoff/build-3.2.3.final/sage-3.2.3.final-fulvia/devel/sage/sage/rings/qqbar.py\", line 3826:\n[4:36pm] mabs:     sage: cp.complex_roots(30, 1)\n[4:36pm] mabs: Expected:\n[4:36pm] mabs:     [1.189207115002721?,\n[4:36pm] mabs:     -1.189207115002721?,\n[4:36pm] mabs:     1.189207115002721?*I,\n[4:36pm] mabs:     -1.189207115002721?*I]\n[4:36pm] mabs: Got:\n[4:36pm] mabs:     [1.189207115002721?, -1.189207115002722?, 1.189207115002721?*I, -1.189207115002721?*I]\n[4:37pm] mabs: Notice that the second and third entries are different?\n[4:37pm] mabs: Ehh, the second only\n[4:38pm] cwitty: Yes.  It's probably not a bug; complex_roots doesn't guarantee to find the tightest possible \ninterval, and it depends on ATLAS which doesn't guarantee identical results.\n[4:38pm] mabs: ok\n[4:38pm] mabs: Should I use \"...\" then?\n[4:38pm] cwitty: Yes.\n```\n\n\nPatch coming up. Credit is shared with cwitty.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5012\n\n",
     "created_at": "2009-01-18T06:50:40Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Solaris 10/x86: Numerical noise in sage/rings/qqbar.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5012",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5012
 
 ---
 
-archive/issue_comments_038200.json:
+archive/issue_comments_038128.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-18T06:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38200",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38128",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -72,15 +71,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_038201.json:
+archive/issue_comments_038129.json:
 ```json
 {
     "body": "Attachment [trac_5012_qqbar_numerical_noise.patch](tarball://root/attachments/some-uuid/ticket5012/trac_5012_qqbar_numerical_noise.patch) by @craigcitro created at 2009-01-18 12:38:11\n\nPatch looks pretty good, with one exception: guaranteed is misspelled in the patch. Once that is fixed, this looks good.",
     "created_at": "2009-01-18T12:38:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38201",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38129",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -92,15 +91,15 @@ Patch looks pretty good, with one exception: guaranteed is misspelled in the pat
 
 ---
 
-archive/issue_comments_038202.json:
+archive/issue_comments_038130.json:
 ```json
 {
     "body": "I fixed the spelling issue in the patch I applied.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-18T14:01:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38202",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38130",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -114,15 +113,15 @@ Michael
 
 ---
 
-archive/issue_comments_038203.json:
+archive/issue_comments_038131.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-18T14:01:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38203",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38131",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +131,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_038204.json:
+archive/issue_comments_038132.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha0",
     "created_at": "2009-01-18T14:01:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38204",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5012#issuecomment-38132",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

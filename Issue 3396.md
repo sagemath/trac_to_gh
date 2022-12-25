@@ -6,15 +6,14 @@ archive/issues_003396.json:
     "body": "Assignee: somebody\n\nKeywords: latex, view, print\n\nThis patch defines a function in sage.misc.latex, print_or_typeset, which runs 'view' if in notebook mode with the typeset box, and runs 'print' otherwise.  See the discussion toward the end of this thread:\n\n[http://groups.google.com/group/sage-support/browse_frm/thread/9698e83a1d1b22ac](http://groups.google.com/group/sage-support/browse_frm/thread/9698e83a1d1b22ac)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3396\n\n",
     "created_at": "2008-06-11T04:31:55Z",
     "labels": [
-        "misc",
-        "minor",
-        "enhancement"
+        "component: misc",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] new function in misc/latex.py: print_or_typeset",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3396",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3396
 
 ---
 
-archive/issue_comments_023781.json:
+archive/issue_comments_023733.json:
 ```json
 {
     "body": "new function, print_or_typeset",
     "created_at": "2008-06-11T04:32:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3396",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3396#issuecomment-23781",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3396#issuecomment-23733",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -53,15 +52,15 @@ new function, print_or_typeset
 
 ---
 
-archive/issue_comments_023782.json:
+archive/issue_comments_023734.json:
 ```json
 {
     "body": "Attachment [sage-3396-doctests.patch](tarball://root/attachments/some-uuid/ticket3396/sage-3396-doctests.patch) by @williamstein created at 2008-06-11 15:05:15\n\napply this after the other patch",
     "created_at": "2008-06-11T15:05:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3396",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3396#issuecomment-23782",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3396#issuecomment-23734",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -73,15 +72,15 @@ apply this after the other patch
 
 ---
 
-archive/issue_comments_023783.json:
+archive/issue_comments_023735.json:
 ```json
 {
     "body": "Merged both patch in Sage 3.0.3.rc0",
     "created_at": "2008-06-15T20:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3396",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3396#issuecomment-23783",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3396#issuecomment-23735",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +90,15 @@ Merged both patch in Sage 3.0.3.rc0
 
 ---
 
-archive/issue_comments_023784.json:
+archive/issue_comments_023736.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-15T20:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3396",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3396#issuecomment-23784",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3396#issuecomment-23736",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

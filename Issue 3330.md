@@ -6,15 +6,13 @@ archive/issues_003330.json:
     "body": "Assignee: @malb\n\nCC:  gaetan.bisson@loria.fr\n\nConsider this example:\n\n```\n  R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\n  h = R.base_ring().gen()    \n  S.<y> = R.fraction_field()[]\n  xgcd(y^2, a*h*y+b) \n```\n\n(reported by Ga\u00ebtan Bisson here: http://groups.google.com/group/sage-support/browse_thread/thread/5338608bd7508b00/cd1d6555592e472f#cd1d6555592e472f)\n\nThis fails because Sage attempts to find the GCD of multivariate polynomials over a relative number field using Singular, and Singular does not support relative number fields.  This should be implemented in Sage (probably by converting the relative number field into an absolute field, performing the computation, and converting back).\n\nSee also #3329, which is about the exact same test case, but requests only a better error message.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3330\n\n",
     "created_at": "2008-05-29T17:37:52Z",
     "labels": [
-        "commutative algebra",
-        "major",
-        "enhancement"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.5",
     "title": "multivariate polynomial GCD should work over more base rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3330",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @malb
@@ -44,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3330
 
 ---
 
-archive/issue_comments_023092.json:
+archive/issue_comments_023044.json:
 ```json
 {
     "body": "It does something now:\n\n\n```\nsage: R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\nsage: h = R.base_ring().gen()\nsage: S.<y> = R.fraction_field()[]\nsage: xgcd(y^2, a*h*y+b)\n(49*a^4*b^2/(343*a^6), 1, ((-1)/(h*a))*y + 49*a^4*b/(343*a^6))\n```\n",
     "created_at": "2009-01-23T07:23:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23092",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23044",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -72,15 +70,15 @@ sage: xgcd(y^2, a*h*y+b)
 
 ---
 
-archive/issue_comments_023093.json:
+archive/issue_comments_023045.json:
 ```json
 {
     "body": "And now:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\nsage: h = R.base_ring().gen()    \nsage: S.<y> = R.fraction_field()[]\nsage: xgcd(y^2, a*h*y+b)\n(b^2/(7*a^2), 1, ((-1)/(h*a))*y + b/(7*a^2))\n```\n\n| Sage Version 3.4, Release Date: 2009-03-11                         |\n| Type notebook() for the GUI, and license() for information.        |\nThis actually looks correct to me.  I'm cc-ing the original poster so he can comment on it.",
     "created_at": "2009-03-16T09:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23093",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23045",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -105,15 +103,15 @@ This actually looks correct to me.  I'm cc-ing the original poster so he can com
 
 ---
 
-archive/issue_comments_023094.json:
+archive/issue_comments_023046.json:
 ```json
 {
     "body": "Replying to [comment:2 AlexGhitza]:\n> This actually looks correct to me.  I'm cc-ing the original poster so he can comment on it.\n\nThanks for letting me know this issue has been fixed, and many thanks to the people who fixed it.\n\nSomething a little bit weird happens if I try to verify Sage's output:\n\n```\nsage: R.<a,b> = NumberField(x^2-3,'g').extension(x^2-7,'h')[]\nsage: h = R.base_ring().gen()\nsage: S.<y> = R.fraction_field()[]\nsage: xgcd(y^2, a*h*y+b)\n(b^2/(7*a^2), 1, ((-1)/(h*a))*y + b/(7*a^2))\n\nsage: y^2+(((-1)/(h*a))*y + b/(7*a^2))*(a*h*y+b)\nh*a*b^2/(7*h*a^3)\n```\n\nAs you see, the output is not simplified as b<sup>2</sup>/(7a<sup>2</sup>); is there a reason for that?\n\nI am not opening a new ticket because I would like to have your opinion on whether it really is a bug or not before possibly doing so.",
     "created_at": "2009-04-01T08:10:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23094",
-    "user": "bisson"
+    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23046",
+    "user": "https://trac.sagemath.org/admin/accounts/users/bisson"
 }
 ```
 
@@ -143,15 +141,15 @@ I am not opening a new ticket because I would like to have your opinion on wheth
 
 ---
 
-archive/issue_comments_023095.json:
+archive/issue_comments_023047.json:
 ```json
 {
     "body": "It seems indeed to work perfectly well now, so let us add a doctest to prevent its comeback.\n\nBy the way, replying to [comment:3 bisson]:\n> {{{\n> sage: y^2+(((-1)/(h*a))*y + b/(7*a^2))*(a*h*y+b)\n> h*a*b<sup>2/(7*h*a</sup>3)\n> }}}\n> As you see, the output is not simplified as b<sup>2</sup>/(7a<sup>2</sup>); is there a reason for that?\n\nNote that we now have:\n\n\n```\nsage: y^2+(((-1)/(h*a))*y + b/(7*a^2))*(a*h*y+b)\nb^2/(7*a^2)\n```\n\n\nas expected.\n----\nNew commits:",
     "created_at": "2018-10-28T13:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23095",
-    "user": "tmonteil"
+    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23047",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tmonteil"
 }
 ```
 
@@ -181,15 +179,15 @@ New commits:
 
 ---
 
-archive/issue_comments_023096.json:
+archive/issue_comments_023048.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2018-10-28T13:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23096",
-    "user": "tmonteil"
+    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23048",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tmonteil"
 }
 ```
 
@@ -199,15 +197,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_023097.json:
+archive/issue_comments_023049.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2018-10-29T18:05:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23097",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23049",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -217,15 +215,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_023098.json:
+archive/issue_comments_023050.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2018-10-30T22:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3330",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23098",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/3330#issuecomment-23050",
+    "user": "https://github.com/vbraun"
 }
 ```
 

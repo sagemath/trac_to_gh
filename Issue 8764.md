@@ -6,15 +6,13 @@ archive/issues_008764.json:
     "body": "Assignee: mvngu\n\nCC:  amca01@gmail.com\n\nAn implementation of the Data Encryption Standard (DES) for educational purposes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8764\n\n",
     "created_at": "2010-04-25T08:05:20Z",
     "labels": [
-        "cryptography",
-        "major",
-        "enhancement"
+        "component: cryptography"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "the full Data Encryption Standard (DES)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8764",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: mvngu
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8764
 
 ---
 
-archive/issue_comments_080180.json:
+archive/issue_comments_080050.json:
 ```json
 {
     "body": "Attachment [des.sage](tarball://root/attachments/some-uuid/ticket8764/des.sage) by mvngu created at 2010-04-25 08:05:52\n\noriginal Sage script by Alasdair McAndrew",
     "created_at": "2010-04-25T08:05:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80180",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80050",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -51,15 +49,15 @@ original Sage script by Alasdair McAndrew
 
 ---
 
-archive/issue_comments_080181.json:
+archive/issue_comments_080051.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-04-25T08:08:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80181",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80051",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -69,15 +67,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_080182.json:
+archive/issue_comments_080052.json:
 ```json
 {
     "body": "des.sage as a patch against Sage 4.4.rc0",
     "created_at": "2010-04-25T09:10:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80182",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80052",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -87,15 +85,15 @@ des.sage as a patch against Sage 4.4.rc0
 
 ---
 
-archive/issue_comments_080183.json:
+archive/issue_comments_080053.json:
 ```json
 {
     "body": "Attachment [trac_8764-original-des.patch](tarball://root/attachments/some-uuid/ticket8764/trac_8764-original-des.patch) by mvngu created at 2010-04-25 09:13:35\n\nThe patch [trac_8764-original-des.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/trac_8764-original-des.patch) contains essentially the same code as in [des.sage](http://trac.sagemath.org/sage_trac/attachment/ticket/8764/des.sage), but as a patch against the Sage library. The next task is to clean up that patch and organize the cryptography section of the reference manual in light of this implementation of DES.",
     "created_at": "2010-04-25T09:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80183",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80053",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -107,15 +105,15 @@ The patch [trac_8764-original-des.patch](http://trac.sagemath.org/sage_trac/atta
 
 ---
 
-archive/issue_comments_080184.json:
+archive/issue_comments_080054.json:
 ```json
 {
     "body": "I have cleaned up the patch a little bit.\n\nThere remains one doctest failing, and missing doctests.\n\napply trac_8764-original-des_v2.patch",
     "created_at": "2013-08-25T09:27:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80184",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80054",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -129,15 +127,15 @@ apply trac_8764-original-des_v2.patch
 
 ---
 
-archive/issue_comments_080185.json:
+archive/issue_comments_080055.json:
 ```json
 {
     "body": "apply only trac_8764-original-des_v2.patch",
     "created_at": "2013-08-25T11:30:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80185",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80055",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -147,15 +145,15 @@ apply only trac_8764-original-des_v2.patch
 
 ---
 
-archive/issue_comments_080186.json:
+archive/issue_comments_080056.json:
 ```json
 {
     "body": "Attachment [trac_8764-original-des_v2.patch](tarball://root/attachments/some-uuid/ticket8764/trac_8764-original-des_v2.patch) by @fchapoton created at 2013-08-25 12:43:23\n\nclean version",
     "created_at": "2013-08-25T12:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80186",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80056",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -167,15 +165,15 @@ clean version
 
 ---
 
-archive/issue_comments_080187.json:
+archive/issue_comments_080057.json:
 ```json
 {
     "body": "apply only trac_8764-original-des_v2.patch",
     "created_at": "2013-08-25T12:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80187",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80057",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -185,15 +183,15 @@ apply only trac_8764-original-des_v2.patch
 
 ---
 
-archive/issue_comments_080188.json:
+archive/issue_comments_080058.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"data encryption standard\".",
     "created_at": "2013-08-25T20:06:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80188",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80058",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -203,15 +201,15 @@ Changing keywords from "" to "data encryption standard".
 
 ---
 
-archive/issue_comments_080189.json:
+archive/issue_comments_080059.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2014-01-05T12:56:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80189",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80059",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -221,15 +219,15 @@ New commits:
 
 ---
 
-archive/issue_comments_080190.json:
+archive/issue_comments_080060.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-05-19T12:30:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80190",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80060",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -239,15 +237,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_080191.json:
+archive/issue_comments_080061.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2019-05-03T20:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80191",
-    "user": "@yhxnf"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80061",
+    "user": "https://github.com/yhxnf"
 }
 ```
 
@@ -257,15 +255,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_080192.json:
+archive/issue_comments_080062.json:
 ```json
 {
     "body": "this seems outdated and inactive and now there is ticket:27761",
     "created_at": "2019-05-03T20:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80192",
-    "user": "@yhxnf"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80062",
+    "user": "https://github.com/yhxnf"
 }
 ```
 
@@ -275,15 +273,15 @@ this seems outdated and inactive and now there is ticket:27761
 
 ---
 
-archive/issue_comments_080193.json:
+archive/issue_comments_080063.json:
 ```json
 {
     "body": "Agreed: this can be closed.",
     "created_at": "2021-04-28T05:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80193",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80063",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -293,15 +291,15 @@ Agreed: this can be closed.
 
 ---
 
-archive/issue_comments_080194.json:
+archive/issue_comments_080064.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2021-04-28T05:55:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80194",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80064",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -311,15 +309,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_080195.json:
+archive/issue_comments_080065.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2021-04-30T18:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8764",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80195",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8764#issuecomment-80065",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

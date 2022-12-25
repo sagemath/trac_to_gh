@@ -6,15 +6,14 @@ archive/issues_006324.json:
     "body": "Assignee: tbd\n\n\n```\nsage -t -long --optional devel/sage/sage/combinat/sloane_functions.py\n**********************************************************************\nFile \"/scratch/wstein/build/sage-4.0.2.alpha3/devel/sage-main/sage/combinat/sloane_functions.py\", line 354:\n    sage: sloane.A000001._eval(51) #optional requires database_gap\nExpected nothing\nGot:\n    1\n**********************************************************************\n1 items had failures:\n   1 of   4 in __main__.example_13\n***Test Failed*** 1 failures.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6324\n\n",
     "created_at": "2009-06-16T14:54:36Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "optional doctest failure -- sloane functions and gap database",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6324",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6324
 
 ---
 
-archive/issue_comments_050474.json:
+archive/issue_comments_050378.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2015-07-13T12:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50474",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50378",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -61,15 +60,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_050475.json:
+archive/issue_comments_050379.json:
 ```json
 {
     "body": "On sage-6.8.beta8, this problem seems fixed:\n\n\n```\n$ sage -t --long --optional=sage,database_gap,internet src/sage/combinat/sloane_functions.py\nRunning doctests with ID 2015-07-13-14-22-17-a3f279bb.\nGit branch: develop\nUsing --optional=database_gap,internet,sage\nDoctesting 1 file.\nsage -t --long --warn-long 2.3 src/sage/combinat/sloane_functions.py\n    [1241 tests, 0.93 s]\n----------------------------------------------------------------------\nAll tests passed!\n----------------------------------------------------------------------\nTotal time for all tests: 1.2 seconds\n    cpu time: 0.7 seconds\n    cumulative wall time: 0.9 seconds\n\n```\n",
     "created_at": "2015-07-13T12:24:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50475",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50379",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -98,15 +97,15 @@ Total time for all tests: 1.2 seconds
 
 ---
 
-archive/issue_comments_050476.json:
+archive/issue_comments_050380.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-07-13T13:39:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50476",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50380",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -116,15 +115,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_050477.json:
+archive/issue_comments_050381.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-07-17T20:05:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50477",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/6324#issuecomment-50381",
+    "user": "https://github.com/vbraun"
 }
 ```
 

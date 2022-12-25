@@ -6,7 +6,7 @@ archive/issues_003085.json:
     "body": "Assignee: @williamstein\n\nThe docs for identity matrix contain a \"\\t\", so the string should be a raw string so \\t doesn't expand to a tab.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3085\n\n",
     "created_at": "2008-05-02T22:08:38Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003085.json:
     "title": "[with patch, needs *really* easy review] identity matrix docs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3085",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3085
 
 ---
 
-archive/issue_comments_021302.json:
+archive/issue_comments_021258.json:
 ```json
 {
     "body": "Attachment [identity-matrix.patch](tarball://root/attachments/some-uuid/ticket3085/identity-matrix.patch) by @jasongrout created at 2008-05-02 22:09:00",
     "created_at": "2008-05-02T22:09:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21302",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21258",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [identity-matrix.patch](tarball://root/attachments/some-uuid/ticket30
 
 ---
 
-archive/issue_comments_021303.json:
+archive/issue_comments_021259.json:
 ```json
 {
     "body": "Credit goes to Geoff Tims for reporting this.",
     "created_at": "2008-05-02T22:09:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21303",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21259",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -65,15 +65,15 @@ Credit goes to Geoff Tims for reporting this.
 
 ---
 
-archive/issue_comments_021304.json:
+archive/issue_comments_021260.json:
 ```json
 {
     "body": "uh, in the interest of full disclosure, I didn't doctest this, but I did sage -br and check the docs to make sure they look better.",
     "created_at": "2008-05-02T22:13:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21304",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21260",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -83,15 +83,15 @@ uh, in the interest of full disclosure, I didn't doctest this, but I did sage -b
 
 ---
 
-archive/issue_comments_021305.json:
+archive/issue_comments_021261.json:
 ```json
 {
     "body": "After looking at the patch I am convinced it will not harm anybody when we merge this in 3.0.1.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-03T04:43:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21305",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21261",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +105,15 @@ Michael
 
 ---
 
-archive/issue_comments_021306.json:
+archive/issue_comments_021262.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.final",
     "created_at": "2008-05-03T13:34:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21306",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21262",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -123,15 +123,15 @@ Merged in Sage 3.0.1.final
 
 ---
 
-archive/issue_comments_021307.json:
+archive/issue_comments_021263.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-03T13:34:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3085",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21307",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3085#issuecomment-21263",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

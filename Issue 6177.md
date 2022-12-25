@@ -6,15 +6,13 @@ archive/issues_006177.json:
     "body": "Assignee: @malb\n\nCC:  polybori @burcin @rlmill boothby\n\nKeywords: M4RI, PolyBoRi\n\n\n```\n2009/04/06 The first release candidate of PolyBoRi 0.6 is available for download. It comes with a PEP8-conforming python interface and new algorithms: FGLM and (experimental) parallel processing of Gr\u00f6bner basis variants. In addition, the documentation was improved considerably: the tutorial is more extensive, and the TeX4ht-Support has been improved. Finally, built-in support for plotting the underlying decision diagrams has been added.\n```\n\n\nThis version also allows bigger systems to be solved using the M4RI library (due to an updated M4RI) and makes use of M4RI in shared library mode.\n\nThis ticket depends on #5510\n\nIssue created by migration from https://trac.sagemath.org/ticket/6177\n\n",
     "created_at": "2009-06-01T09:35:19Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "[with patch, needs work] Update PolyBoRi to newest upstream release",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6177",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -41,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6177
 
 ---
 
-archive/issue_comments_049245.json:
+archive/issue_comments_049150.json:
 ```json
 {
     "body": "The SPKG is here:\n\n   http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.spkg",
     "created_at": "2009-06-01T09:36:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49245",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49150",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -61,15 +59,15 @@ The SPKG is here:
 
 ---
 
-archive/issue_comments_049246.json:
+archive/issue_comments_049151.json:
 ```json
 {
     "body": "TODO:\n\n* write more documentation\n* fix FGLM (it doesn't do anything right now)\n* expose PolyBoRi ZDD plots",
     "created_at": "2009-06-04T09:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49246",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49151",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -83,15 +81,15 @@ TODO:
 
 ---
 
-archive/issue_comments_049247.json:
+archive/issue_comments_049152.json:
 ```json
 {
     "body": "Michael's notes on the docs:\n\n\n```\nall_spolys_in_next_degree()\npops all spolys with next sugar degree from the strategy \n\nclean_top_by_chain_criterion()\n\ncontains_one()\n1 \\in generating system?\n\nfaugere_step_dense()\nreduces a vector of polynomials using linear algebra\n\nimplications()\ncomputes useful implied polynomials of i-th generator, and adds them  to the strategy, if it finds any.\n\nll_reduce_all()\nuses the build in ll-encoded BooleSet of polynomials with linear lexicographical leading term, which coincides  \nwith leading term in current ordering, to reduce the tails of all polynomials in the strategy\n\nminimalize()\nreturns a vector of all polynomials with minimal leading terms use that if strat contains a GB\n\nminimalize_and_tail_reduce()\nreturns a vector of all polynomials with minimal leading terms and does tail reductions use that if strat contains a GB and you want a reduced GB\n\nnext_spoly()\n\nnf()\n\nnpairs()\nNumber of pairs in the pair queue\n\nreduction_strategy\nReductionStrategy member of GroebnerStrategy, does all the reductions\n\nsmall_spolys_in_next_degree()\nI am not sure, if it is still used, similar to the next one\n\nsome_spolys_in_next_degree(n)\n\nfetches upto n s-polynomials from the strategy, having all a sugar  \nvalue <= the sugar value of the first polynomial/pair in the queue.\n\nsuggest_plugin_variable()\nsome heuristic to suggest a variable, which could be plugged with 0 and 1 to branch the computation\n\nsymmGB_F2()\nout of date C++ implementation of symmgb, will revived at some point of time\n\ntop_sugar()\nsugar value of the first \"pair\" in the queue. Sugar is \"some estimated degree\".\n\nvariable_has_value()\nComputes, whether, there exists some polynomial of the form $v+c$ in the Strategy, where c is a constant\nin the list of generators\n\nelength()\nx+y*z -> 3\nfor lp (x>y>z)\nthe interesting case\n\nNote\n\nIf this function is called repeatedly with the same I then it is  \nadvised to use PolyBoRi\u2019s GroebnerStrategy object directly, since that  \nwill be faster. See the source code of this function for details.\n\n-> ReductionStrategy, as it is smaller and contains everything needed  \nfor reductions.\n```\n",
     "created_at": "2009-06-04T09:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49247",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49152",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -174,15 +172,15 @@ for reductions.
 
 ---
 
-archive/issue_comments_049248.json:
+archive/issue_comments_049153.json:
 ```json
 {
     "body": "More notes by Michael:\n\n\n```\nCan you please link: http://polybori.sourceforge.net/zdd.html\n\nA picture says more, than 1000 words.\n\n2. How is the pickling of Boolean polynomials done?\n\nHave a look at parallel.py:\n\ndef to_fast_pickable(l):\n     \"\"\"\n     to_fast_pickable(l) converts a list of polynomials into a builtin  \nPython value, which is fast pickable and compact.\n     INPUT:\n         - a list of Boolean polynomials\n     OUTPUT:\n         It is converted to a tuple consisting of\n         - codes referring to the polynomials\n         - list of conversions of nodes.\n             The nodes are sorted, that\n             n occurs before n.else_branch(), n.then_branch()\n             Nodes are only listed, if they are not constant.\n\n         A node is converted in this way:\n             0 -> 0\n             1 -> 1\n             if_then_else(v,t,e) -> (v, index of then branch +2, index of else branch +2)\n             The shift of +2 is for the constant values implicitly   contained in the list.\n         Each code c refers to the c-2-th position in the conversion   list, if c >=2, else to\n         the corresponding Boolean constant if c in {0, 1}\n     EXAMPLES:\n         >>> from polybori.PyPolyBoRi import Ring, Variable\n         >>> r=Ring(1000)\n         >>> x=Variable\n         >>> to_fast_pickable([Polynomial(1)])\n         [[1], []]\n         >>> to_fast_pickable([Polynomial(0)])\n         [[0], []]\n         >>> to_fast_pickable([x(0)])\n         [[2], [(0, 1, 0)]]\n         >>> to_fast_pickable([x(0)*x(1)+x(1)])\n         [[2], [(0, 3, 3), (1, 1, 0)]]\n         >>> to_fast_pickable([x(1)])\n         [[2], [(1, 1, 0)]]\n         >>> to_fast_pickable([x(0)+1])\n         [[2], [(0, 1, 1)]]\n         >>> to_fast_pickable([x(0)*x(1)])\n         [[2], [(0, 3, 0), (1, 1, 0)]]\n         >>> to_fast_pickable([x(0)*x(1)+x(1)])\n         [[2], [(0, 3, 3), (1, 1, 0)]]\n         >>> to_fast_pickable([x(0)*x(1)+x(2)])\n         [[2], [(0, 3, 4), (1, 1, 0), (2, 1, 0)]]\n         >>> p=x(5)*x(23) + x(5)*x(24)*x(59) + x(5) + x(6)*x(23)*x(89)   + x(6)*x(60)*x(89) + x(23) + x(24)*x(89) + x(24) + x(60)*x(89) + x(89)   + 1\n         >>> from_fast_pickable(to_fast_pickable([p]))==[p]\n         True\n         >>> to_fast_pickable([x(0)*x(1), Polynomial(0), Polynomial(1), x(3)])\n         [[2, 0, 1, 4], [(0, 3, 0), (1, 1, 0), (3, 1, 0)]]\n     \"\"\"\n```\n",
     "created_at": "2009-06-04T10:01:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49248",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49153",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -254,15 +252,15 @@ Python value, which is fast pickable and compact.
 
 ---
 
-archive/issue_comments_049249.json:
+archive/issue_comments_049154.json:
 ```json
 {
     "body": "Btw. I'm posting this all here because I might not get around to do the last required steps in the next 2 weeks.",
     "created_at": "2009-06-04T10:02:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49249",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49154",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -272,15 +270,15 @@ Btw. I'm posting this all here because I might not get around to do the last req
 
 ---
 
-archive/issue_comments_049250.json:
+archive/issue_comments_049155.json:
 ```json
 {
     "body": "Burcin, I came across the `RingProxy` class which we add to `PyPolyBori.py`. I don't understand why we need this.",
     "created_at": "2009-06-05T11:18:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49250",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49155",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -290,15 +288,15 @@ Burcin, I came across the `RingProxy` class which we add to `PyPolyBori.py`. I d
 
 ---
 
-archive/issue_comments_049251.json:
+archive/issue_comments_049156.json:
 ```json
 {
     "body": "AFAIR, the `global_ring()` function you see in that file is expected to return an object which has a `.set()` method. This method should change the ordering of the current ring. I didn't want to add a `.set()` method to the `BooleanPolynomialRing`, so decided to wrap it in a `RingProxy` class.\n\nOf course, this was centuries ago, and it's possible that I'm making up all that I wrote above. :)",
     "created_at": "2009-06-05T11:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49251",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49156",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -310,15 +308,15 @@ Of course, this was centuries ago, and it's possible that I'm making up all that
 
 ---
 
-archive/issue_comments_049252.json:
+archive/issue_comments_049157.json:
 ```json
 {
     "body": "I just ported the plotting to the jinja template engine, which is contained in Sage.\nThe only missing dependency is graphviz, which is an optional package.\nI hope that helps integrating it. I really would wish to be able to plot ZDDs in the Sage notebook.\nThat would be a nice extra feature and would probably help much about the understanding of ZDDs.",
     "created_at": "2009-06-23T06:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49252",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49157",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -331,15 +329,15 @@ That would be a nice extra feature and would probably help much about the unders
 
 ---
 
-archive/issue_comments_049253.json:
+archive/issue_comments_049158.json:
 ```json
 {
     "body": "plot.py patch for jinja, to be contained in a 0.6.2 release (hopefully soon)",
     "created_at": "2009-06-23T06:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49253",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49158",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -349,15 +347,15 @@ plot.py patch for jinja, to be contained in a 0.6.2 release (hopefully soon)
 
 ---
 
-archive/issue_comments_049254.json:
+archive/issue_comments_049159.json:
 ```json
 {
     "body": "Attachment [jinja.patch](tarball://root/attachments/some-uuid/ticket6177/jinja.patch) by @malb created at 2009-06-23 10:06:49\n\nCCing Robert Miller since he is the resident graph expert and is sitting like two seats next to me. Robert, the last two comments are about printing the decision diagrams used by PolyBoRi to represent polynomials, cf. http://polybori.sourceforge.net/zdd.html",
     "created_at": "2009-06-23T10:06:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49254",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49159",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -369,15 +367,15 @@ CCing Robert Miller since he is the resident graph expert and is sitting like tw
 
 ---
 
-archive/issue_comments_049255.json:
+archive/issue_comments_049160.json:
 ```json
 {
     "body": "Burcin, I just uploaded my current PolyBoRi SPKG to /home/malb/spkgs so all you should need is the this SPKG + the patch `polybori_0_6_1.patch`",
     "created_at": "2009-06-23T10:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49255",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49160",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -387,15 +385,15 @@ Burcin, I just uploaded my current PolyBoRi SPKG to /home/malb/spkgs so all you 
 
 ---
 
-archive/issue_comments_049256.json:
+archive/issue_comments_049161.json:
 ```json
 {
     "body": "Attachment [polybori_0_6_1.patch](tarball://root/attachments/some-uuid/ticket6177/polybori_0_6_1.patch) by @malb created at 2009-06-23 10:12:05\n\nmost recent version of the patch",
     "created_at": "2009-06-23T10:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49256",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49161",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -407,15 +405,15 @@ most recent version of the patch
 
 ---
 
-archive/issue_comments_049257.json:
+archive/issue_comments_049162.json:
 ```json
 {
     "body": "CCing Tom Boothby, because he loves decision diagrams for polynomials.",
     "created_at": "2009-06-23T10:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49257",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49162",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -425,15 +423,15 @@ CCing Tom Boothby, because he loves decision diagrams for polynomials.
 
 ---
 
-archive/issue_comments_049258.json:
+archive/issue_comments_049163.json:
 ```json
 {
     "body": "Hi!\nJust as a further motivation :-) :\nThat is, how the diagrams will look like.\nhttp://polybori.sourceforge.net/zdd.html\nMichael",
     "created_at": "2009-06-23T11:17:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49258",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49163",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -447,15 +445,15 @@ Michael
 
 ---
 
-archive/issue_comments_049259.json:
+archive/issue_comments_049164.json:
 ```json
 {
     "body": "The requires SPKG is available at\n\n   http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.3-20090728.spkg\n\nOnly apply `polybori-0-6-3.patch`.",
     "created_at": "2009-07-28T15:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49259",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49164",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -469,15 +467,15 @@ Only apply `polybori-0-6-3.patch`.
 
 ---
 
-archive/issue_comments_049260.json:
+archive/issue_comments_049165.json:
 ```json
 {
     "body": "See http://groups.google.com/group/sage-support/browse_thread/thread/fa3afaeff5444cf3 for a problem description.",
     "created_at": "2009-08-04T10:52:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49260",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49165",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -487,15 +485,15 @@ See http://groups.google.com/group/sage-support/browse_thread/thread/fa3afaeff54
 
 ---
 
-archive/issue_comments_049261.json:
+archive/issue_comments_049166.json:
 ```json
 {
     "body": "doesn't build for me (Mac OS X, 64 BIT, but it's not an 64 BIT issue).\nI have to set FORCE_HASH_MAP=True via custom.py or construct argument.\n\n```\ng++ -o groebner/src/groebner.o -c -m64 -O3 -Wno-long-long -Wreturn-type -g -fPIC -ftemplate-depth-100 -g -fPIC -m64 -O3 -Wno-long-long -Wreturn-type -g -fPIC -DNDEBUG -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DSIZEOF_VOID_P=8 -DSIZEOF_LONG=8 -DHAVE_IEEE_754 -I/Applications/sage/spkg/build/polybori-0.6.3-20090728/src/boost_1_34_1.cropped -I/Applications/sage/local/include -I/Applications/sage/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd groebner/src/groebner.cc\n/usr/include/c++/4.0.0/tr1/hashtable: In member function 'typename std::tr1::hashtable<Key, Value, Allocator, ExtractKey, Equal, H1, H2, H, RehashPolicy, cache_hash_code, mutable_iterators, unique_keys>::const_iterator std::tr1::hashtable<Key, Value, Allocator, ExtractKey, Equal, H1, H2, H, RehashPolicy, cache_hash_code, mutable_iterators, unique_keys>::find(const Key&) const [with Key = polybori::BooleExponent, Value = std::pair<const polybori::BooleExponent, int>, Allocator = std::allocator<std::pair<const polybori::BooleExponent, int> >, ExtractKey = Internal::extract1st<std::pair<const polybori::BooleExponent, int> >, Equal = std::equal_to<polybori::BooleExponent>, H1 = polybori::hashes<polybori::BooleExponent>, H2 = Internal::mod_range_hashing, H = Internal::default_ranged_hash, RehashPolicy = Internal::prime_rehash_policy, bool cache_hash_code = false, bool mutable_iterators = true, bool unique_keys = true]':\ngroebner/src/groebner_alg.h:267:   instantiated from here\n/usr/include/c++/4.0.0/tr1/hashtable:1135: error: passing 'const std::tr1::hashtable<polybori::BooleExponent, std::pair<const polybori::BooleExponent, int>, std::allocator<std::pair<const polybori::BooleExponent, int> >, Internal::extract1st<std::pair<const polybori::BooleExponent, int> >, std::equal_to<polybori::BooleExponent>, polybori::hashes<polybori::BooleExponent>, Internal::mod_range_hashing, Internal::default_ranged_hash, Internal::prime_rehash_policy, false, true, true>' as 'this' argument of 'typename std::tr1::hashtable<Key, Value, Allocator, ExtractKey, Equal, H1, H2, H, RehashPolicy, cache_hash_code, mutable_iterators, unique_keys>::node* std::tr1::hashtable<Key, Value, Allocator, ExtractKey, Equal, H1, H2, H, RehashPolicy, cache_hash_code, mutable_iterators, unique_keys>::find_node(Internal::hash_node<Value, cache_hash_code>*, const Key&, typename std::tr1::hashtable<Key, Value, Allocator, ExtractKey, Equal, H1, H2, H, RehashPolicy, cache_hash_code, mutable_iterators, unique_keys>::hash_code_t) [with Key = polybori::BooleExponent, Value = std::pair<const polybori::BooleExponent, int>, Allocator = std::allocator<std::pair<const polybori::BooleExponent, int> >, ExtractKey = Internal::extract1st<std::pair<const polybori::BooleExponent, int> >, Equal = std::equal_to<polybori::BooleExponent>, H1 = polybori::hashes<polybori::BooleExponent>, H2 = Internal::mod_range_hashing, H = Internal::default_ranged_hash, RehashPolicy = Internal::prime_rehash_policy, bool cache_hash_code = false, bool mutable_iterators = true, bool unique_keys = true]' discards qualifiers\nscons: *** [groebner/src/groebner.o] Error 1\n```\n",
     "created_at": "2009-08-05T12:44:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49261",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49166",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -515,15 +513,15 @@ scons: *** [groebner/src/groebner.o] Error 1
 
 ---
 
-archive/issue_comments_049262.json:
+archive/issue_comments_049167.json:
 ```json
 {
     "body": "fixes the issue",
     "created_at": "2009-08-05T13:35:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49262",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49167",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -533,15 +531,15 @@ fixes the issue
 
 ---
 
-archive/issue_comments_049263.json:
+archive/issue_comments_049168.json:
 ```json
 {
     "body": "Attachment [polybori-0-6-3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.patch) by @malb created at 2009-08-05 13:35:58\n\nThe attached patch fixes the wrong GB issue.",
     "created_at": "2009-08-05T13:35:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49263",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49168",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -553,15 +551,15 @@ The attached patch fixes the wrong GB issue.
 
 ---
 
-archive/issue_comments_049264.json:
+archive/issue_comments_049169.json:
 ```json
 {
     "body": "Replying to [comment:16 PolyBoRi]:\n> doesn't build for me (Mac OS X, 64 BIT, but it's not an 64 BIT issue).\n> I have to set FORCE_HASH_MAP=True via custom.py or construct argument.\n\nIs that a bug in PolyBoRi or how we build it?",
     "created_at": "2009-08-05T13:36:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49264",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49169",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -575,15 +573,15 @@ Is that a bug in PolyBoRi or how we build it?
 
 ---
 
-archive/issue_comments_049265.json:
+archive/issue_comments_049170.json:
 ```json
 {
     "body": "It seems some `const` is dropped somewhere which makes the C++ compiler choke?\n\n\n```\npassing 'const std::tr1::hashtable<... as 'this' argument of 'typename std::tr1::hashtable<Key, Valu ...  discards qualifiers\n```\n",
     "created_at": "2009-08-05T16:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49265",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49170",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -599,15 +597,15 @@ passing 'const std::tr1::hashtable<... as 'this' argument of 'typename std::tr1:
 
 ---
 
-archive/issue_comments_049266.json:
+archive/issue_comments_049171.json:
 ```json
 {
     "body": "Michael suggested to pass\n\n```\nscons  FORCE_HASH_MAP=True\n```\n\non OSX *only* to work around this issue.\n\nI can't work on this in the near future and would appreciate if someone else could take care of this.",
     "created_at": "2009-08-06T14:33:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49266",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49171",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -625,15 +623,15 @@ I can't work on this in the near future and would appreciate if someone else cou
 
 ---
 
-archive/issue_comments_049267.json:
+archive/issue_comments_049172.json:
 ```json
 {
     "body": "Hi!\nI have put a new spkg here:\n\nhttp://sage.math.washington.edu/home/bricken/polybori-0.6.3-20090806.spkg\nI have adjusted the custom.py.\nActually, I needed most time, until I noticed, that the patched SConstruct was outdated, which I have fixed.\n\nMay I ask, what you have fixed about the wrong results due to some interface issues?\n\nMichael",
     "created_at": "2009-08-06T15:24:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49267",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49172",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -652,15 +650,15 @@ Michael
 
 ---
 
-archive/issue_comments_049268.json:
+archive/issue_comments_049173.json:
 ```json
 {
     "body": "I added a new term ordering \"deglex_asc\" which is used instead of \"degrevlex\" if a Sage ring is constructed from a C++ ring. Also, I changed the hash to include the term ordering.",
     "created_at": "2009-08-06T15:27:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49268",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49173",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -670,15 +668,15 @@ I added a new term ordering "deglex_asc" which is used instead of "degrevlex" if
 
 ---
 
-archive/issue_comments_049269.json:
+archive/issue_comments_049174.json:
 ```json
 {
     "body": "`'sage.rings.polynomial.pbori.BooleanPolynomialRing' object has no attribute 'clone'`\nThe clone method is not wrapped, which does not give us access to our new ll-stuff, which is also very relevant to crypto.\nI just had a look at the present stuff and tried to speed it up.",
     "created_at": "2009-08-06T17:03:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49269",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49174",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -690,15 +688,15 @@ I just had a look at the present stuff and tried to speed it up.
 
 ---
 
-archive/issue_comments_049270.json:
+archive/issue_comments_049175.json:
 ```json
 {
     "body": "I checked in Michael's changes in the SPKG in \n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.3-20090807.spkg\n\nunder Michael's name.\n\n**My Todo List**\n* wrap `clone`\n* wrap `ll_red_nf_noredsb_single_recursive_call`\n* speed-up `Polynomial(p)` if `p` is a boolean polynomial\n* check for memory leaks with crypo scripts from bitbucket",
     "created_at": "2009-08-07T08:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49270",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49175",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -718,15 +716,15 @@ under Michael's name.
 
 ---
 
-archive/issue_comments_049271.json:
+archive/issue_comments_049176.json:
 ```json
 {
     "body": "Attachment [polybori-0-6-3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.2.patch) by @malb created at 2009-08-07 08:32:06\n\nThe latest patch links in gd",
     "created_at": "2009-08-07T08:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49271",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49176",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -738,15 +736,15 @@ The latest patch links in gd
 
 ---
 
-archive/issue_comments_049272.json:
+archive/issue_comments_049177.json:
 ```json
 {
     "body": "I have to add that also substitute_variables(vec, poly) is missing, which is\nan instantiation of\nsubstitute_variables<std::vector<BoolePolynomial>, BoolePolynomial>\n\nvar(i) (our polybori indices) is replaced by vec[i] in poly.\n\ndocs:\n\nBoolePolyRing::clone is a flat copy of the ring, as well as the normal copy constructor.\nIn contrast to using the constructor, the new ring will contain its own vector of variable names,\nso changing a variable name via `set_variable_name`\nwon't modify the original ring.\n\nll_red_nf_noredsb_single_recursive call has the same specification as ll_red_nf_noredsb, but a different implementation:\nThis is described in my PHD thesis, the corresponding chapter is available on demand.\nIt is very sensitive to the ordering of variables, however it has the very nice property, that it needs just one recursive call.\nWe provide utilities for determing an appropriate var ordering. It is a matter of research, to find good heuristics here.\nBut I think, that I have a good solution.",
     "created_at": "2009-08-07T08:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49272",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49177",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -773,15 +771,15 @@ But I think, that I have a good solution.
 
 ---
 
-archive/issue_comments_049273.json:
+archive/issue_comments_049178.json:
 ```json
 {
     "body": "Attachment [polybori-0-6-3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.3.patch) by @malb created at 2009-08-10 17:16:03\n\nadds the requested functions",
     "created_at": "2009-08-10T17:16:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49273",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49178",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -793,15 +791,15 @@ adds the requested functions
 
 ---
 
-archive/issue_comments_049274.json:
+archive/issue_comments_049179.json:
 ```json
 {
     "body": "The new patch in combination with http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.3-20090810.spkg provides the following additional features:\n* `Polynomial(p)` much faster if `p` is a `BooleanPolynomial`\n* added `substitute_variables`\n* added `BooleanPolynomialRing.clone`\n* added `ll_red_nf_noredsb_single_recursive`",
     "created_at": "2009-08-10T17:17:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49274",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49179",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -815,15 +813,15 @@ The new patch in combination with http://sage.math.washington.edu/home/malb/spkg
 
 ---
 
-archive/issue_comments_049275.json:
+archive/issue_comments_049180.json:
 ```json
 {
     "body": "the latest patch swallowed the 'gd' in modules_list.py, this one adds it back",
     "created_at": "2009-08-10T19:42:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49275",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49180",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -833,15 +831,15 @@ the latest patch swallowed the 'gd' in modules_list.py, this one adds it back
 
 ---
 
-archive/issue_comments_049276.json:
+archive/issue_comments_049181.json:
 ```json
 {
     "body": "Attachment [polybori-0-6-3.5.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.5.patch) by @malb created at 2009-08-11 15:40:49\n\nspeeds up comparison with zero and fixes a doctest failure",
     "created_at": "2009-08-11T15:40:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49276",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49181",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -853,15 +851,15 @@ speeds up comparison with zero and fixes a doctest failure
 
 ---
 
-archive/issue_comments_049277.json:
+archive/issue_comments_049182.json:
 ```json
 {
     "body": "If one doesn't have #6628 applied one hunk will fail which can safely be ignored.",
     "created_at": "2009-08-16T00:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49277",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49182",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -871,15 +869,15 @@ If one doesn't have #6628 applied one hunk will fail which can safely be ignored
 
 ---
 
-archive/issue_comments_049278.json:
+archive/issue_comments_049183.json:
 ```json
 {
     "body": "This appears to suffer the same issue earlier releases of PolyBoRi had on Solaris. Even if the Sun Studio compiler is not in the path, and CC, CXX are not set, so this attempts to use the Sun C++ compiler. That fails miserably. \n\nChanges had to be made to the earlier PolyBoRi code to allow this to build with gcc on Solaris if the Sun compiler was present. I assume those changes will need to be reintegrated. \n\nHere you can see CC and CXX are not set\n\n```\ndrkirkby@smudge:[~/sage/sage-4.1.1] $ echo $CC\n\ndrkirkby@smudge:[~/sage/sage-4.1.1] $ echo $CXX\n\ndrkirkby@smudge:[~/sage/sage-4.1.1] $\n```\n\n\nBut still the package uses Sun's C++ compiler. \n\n\n```\n/opt/sunstudio12.1/bin/CC -o polybori/src/BoolePolyRing.o -c -O3 -Wno-long-long -Wreturn-type -g -fPIC -ftemplate-depth-100 -g -fPIC -O3 -Wno-long-long -Wreturn -type -g -fPIC -DNDEBUG -DHAVE_GD -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754  -DBSD -I/export/home/drkirkby/sage/sage-4.1.1/spkg/build/polybori-0.6.3-2009081 0/src/boost_1_34_1.cropped -I/export/home/drkirkby/sage/sage-4.1.1/local/include  -I/export/home/drkirkby/sage/sage-4.1.1/local/include/python2.6 -Ipolybori/incl ude -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd polybori/ src/BoolePolyRing.cc\nCC: Warning: Option -Wno-long-long passed to ld, if ld is invoked, ignored other wise\nCC: Warning: Option -Wreturn-type passed to ld, if ld is invoked, ignored otherw ise\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nCC: Warning: Option -ftemplate-depth-100 passed to ld, if ld is invoked, ignored  otherwise\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\nCC: Warning: Option -Wno-long-long passed to ld, if ld is invoked, ignored other wise\nCC: Warning: Option -Wreturn-type passed to ld, if ld is invoked, ignored otherw ise\nCC: Warning: Option -fPIC passed to ld, if ld is invoked, ignored otherwise\n\"polybori/include/CDDManager.h\", line 103: Warning: Last line in file \"polybori/ include/cacheopts.h\" is not terminated with a newline.\n\"polybori/include/CCuddZDD.h\", line 308: Warning (Anachronism): Formal argument func of type DdNode*(*)(DdManager*,DdNode*,int) in call to polybori::CCuddDDBase <polybori::CCuddZDD>::apply(DdNode*(*)(DdManager*,DdNode*,int), int) const is be ing passed extern \"C\" DdNode*(*)(DdManager*,DdNode*,int).\n\"polybori/include/CCuddZDD.h\", line 308: Warning (Anachronism): Formal argument func of type DdNode*(*)(DdManager*,DdNode*,int) in call to polybori::CCuddDDBase <polybori::CCuddZDD>::apply(DdNode*(*)(DdManager*,DdNode*,int), int) const is be ing passed extern \"C\" DdNode*(*)(DdManager*,DdNode*,int).\n\"polybori/include/CCuddZDD.h\", line 308: Warning (Anachronism): Formal argument func of type DdNode*(*)(DdManager*,DdNode*,int) in call to polybori::CCuddDDBase <polybori::CCuddZDD>::apply(DdNode*(*)(DdManager*,DdNode*,int), int) const is be ing passed extern \"C\" DdNode*(*)(DdManager*,DdNode*,int).\n\"polybori/include/CCuddZDD.h\", line 313: Warning (Anachronism): Formal argument func of type DdNode*(*)(DdManager*,DdNode*,DdNode*,DdNode*) in call to polybori: :CCuddDDBase<polybori::CCuddZDD>::apply(DdNode*(*)(DdManager*,DdNode*,DdNode*,Dd Node*), const polybori::CCuddZDD&, const polybori::CCuddZDD&) const is being pas sed extern \"C\" DdNode*(*)(DdManager*,DdNode*,DdNode*,DdNode*).\n\"polybori/include/CCuddZDD.h\", line 322: Warning (Anachronism): Formal argument func of type int(*)(DdManager*,DdNode*) in call to polybori::CCuddDDBase<polybor i::CCuddZDD>::apply(int(*)(DdManager*,DdNode*)) const is being passed extern \"C\"  int(*)(DdManager*,DdNode*).\n\"polybori/include/CCuddZDD.h\", line 323: Warning (Anachronism): Formal argument func of type int(*)(DdManager*,DdNode*) in call to polybori::CCuddDDBase<polybor i::CCuddZDD>::apply(int(*)(DdManager*,DdNode*)) const is being passed extern \"C\"  int(*)(DdManager*,DdNode*).\n\"polybori/include/CCuddZDD.h\", line 327: Warning (Anachronism): Formal argument func of type int(*)(DdManager*,DdNode*) in call to polybori::CCuddDDBase<polybor i::CCuddZDD>::memApply<int>(int(*)(DdManager*,DdNode*)) const is being passed ex tern \"C\" int(*)(DdManager*,DdNode*).\n\"polybori/include/CCuddZDD.h\", line 330: Warning (Anachronism): Formal argument func of type double(*)(DdManager*,DdNode*) in call to polybori::CCuddDDBase<poly bori::CCuddZDD>::memApply<double>(double(*)(DdManager*,DdNode*)) const is being passed extern \"C\" double(*)(DdManager*,DdNode*).\n\"polybori/include/CCuddInterface.h\", line 192: Warning (Anachronism): Formal arg ument func of type DdNode*(*)(DdManager*,int) in call to polybori::CCuddInterfac e::apply(DdNode*(*)(DdManager*,int), int) const is being passed extern \"C\" DdNod e*(*)(DdManager*,int).\n\"polybori/include/CCuddInterface.h\", line 195: Warning (Anachronism): Formal arg ument func of type DdNode*(*)(DdManager*,int) in call to polybori::CCuddInterfac e::apply(DdNode*(*)(DdManager*,int), int) const is being passed extern \"C\" DdNod e*(*)(DdManager*,int).\n\"polybori/include/CCuddInterface.h\", line 198: Warning (Anachronism): Formal arg ument func of type DdNode*(*)(DdManager*) in call to polybori::CCuddInterface::a pply(DdNode*(*)(DdManager*)) const is being passed extern \"C\" DdNode*(*)(DdManag er*).\n\"polybori/include/CCuddNavigator.h\", line 157: Error: iterator_traits is not a m ember of std.\n\"polybori/include/CCuddNavigator.h\", line 157: Error: A declaration does not spe cify a tag or an identifier.\n\"polybori/include/CCuddNavigator.h\", line 157: Error: Use \";\" to terminate decla rations.\n\"polybori/include/CCuddNavigator.h\", line 157: Error: \"}\" expected instead of \"< \".\n\"polybori/include/CCuddNavigator.h\", line 157: Error: Use \";\" to terminate decla rations.\n\"polybori/include/CCuddNavigator.h\", line 157: Error: A declaration was expected  instead of \"<\".\n\"polybori/include/CCuddNavigator.h\", line 157: Error: \",\" expected instead of \"> \".\n\"polybori/include/CCuddNavigator.h\", line 159: Error: value_type is not defined.\n\"polybori/include/CCuddNavigator.h\", line 163: Error: There must be an identifie r to declare.\n\"polybori/include/CCuddNavigator.h\", line 171: Error: \"explicit\" is not allowed here.\n\"polybori/include/CCuddNavigator.h\", line 171: Error: \")\" expected instead of \"& \".\n\"polybori/include/CCuddNavigator.h\", line 174: Error: \")\" expected instead of \"& \".\n\"polybori/include/CCuddNavigator.h\", line 177: Error: Type name expected instead  of \"CCuddNavigator\".\n\"polybori/include/CCuddNavigator.h\", line 177: Error: Illegal number of argument s for ~file level().\n\"polybori/include/CCuddNavigator.h\", line 180: Error: \",\" expected instead of \"& \".\n\"polybori/include/CCuddNavigator.h\", line 183: Error: self is not defined.\n\"polybori/include/CCuddNavigator.h\", line 183: Error: The function \"thenBranch()  const\" cannot be declared const.\n\"polybori/include/CCuddNavigator.h\", line 183: Error: Can only use this within a  non-static member function.\n\"polybori/include/CCuddNavigator.h\", line 183: Error: Only a function may be cal led.\n\"polybori/include/CCuddNavigator.h\", line 183: Error: Only a function may be cal led.\n\"polybori/include/CCuddNavigator.h\", line 186: Error: Multiple declaration for s elf.\n\"polybori/include/CCuddNavigator.h\", line 186: Error: \",\" expected instead of \"& \".\n\"polybori/include/CCuddNavigator.h\", line 189: Error: self is not defined.\n\"polybori/include/CCuddNavigator.h\", line 189: Error: The function \"elseBranch()  const\" cannot be declared const.\n\"polybori/include/CCuddNavigator.h\", line 189: Error: Can only use this within a  non-static member function.\nCompilation aborted, too many Error messages.\nscons: *** [polybori/src/BoolePolyRing.o] Error 1\nscons: building terminated because of errors.\nError building PolyBoRi.\n\nreal    0m22.968s\nuser    0m17.385s\nsys     0m4.811s\nsage: An error occurred while installing polybori-0.6.3-20090810\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /export/home/drkirkby/sage/sage-4.1.1/install.log.  Describe your computer, o perating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/export/home/drkirkby/sage/sage-4.1.1/spkg/build/polybori-0.6.3-20090810 and typ e 'make'.\nInstead type \"/export/home/drkirkby/sage/sage-4.1.1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/export/home/drkirkby/sage/sage-4.1.1/spkg/build/polybori-0.6.3-20090810\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/polybori-0.6.3-20090810] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.1/spkg'\n```\n",
     "created_at": "2009-08-16T04:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49278",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49183",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -976,15 +974,15 @@ make[1]: Leaving directory `/export/home/drkirkby/sage/sage-4.1.1/spkg'
 
 ---
 
-archive/issue_comments_049279.json:
+archive/issue_comments_049184.json:
 ```json
 {
     "body": "If you are updating PolyBoRi, take a look at #6582 too.",
     "created_at": "2009-08-16T08:38:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49279",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49184",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -994,15 +992,15 @@ If you are updating PolyBoRi, take a look at #6582 too.
 
 ---
 
-archive/issue_comments_049280.json:
+archive/issue_comments_049185.json:
 ```json
 {
     "body": "I remember, that I used the SConstruct.patch to regenerate the patched SConstruct from a current version. Maybe someone has just hacked the fix into the patched SConstruct and ignored the patch?\n\nMichael",
     "created_at": "2009-08-17T07:21:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49280",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49185",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1014,15 +1012,15 @@ Michael
 
 ---
 
-archive/issue_comments_049281.json:
+archive/issue_comments_049186.json:
 ```json
 {
     "body": "Hi!\n\nFirst of all,\nit is difficult to test the Sage-Wrapper using our tests, since Sage checks the variable names from time to time.\n\n\n\n```\n/Applications/sage/local/lib/python2.6/site-packages/polybori/gbcore.pyc in clean_polys(I)\n    156     return make_wrapper\n    157 def clean_polys(I):\n--> 158     zero=Polynomial(0)\n    159     I=list(set((Polynomial(p) for p in I if p!=zero)))\n    160     return I\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/pbori.so in sage.rings.polynomial.pbori.PolynomialFactory.__call__ (sage/rings/polynomial/pbori.cpp:24232)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/pbori.so in sage.rings.polynomial.pbori.get_cring (sage/rings/polynomial/pbori.cpp:36518)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/pbori.so in sage.rings.polynomial.pbori.BooleanPolynomialRing_from_PBRing (sage/rings/polynomial/pbori.cpp:37213)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/rings/polynomial/multi_polynomial_ring_generic.so in sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic.__init__ (sage/rings/polynomial/multi_polynomial_ring_generic.c:1913)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens.__init__ (sage/structure/parent_gens.c:2342)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.ParentWithGens._assign_names (sage/structure/parent_gens.c:2830)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens.normalize_names (sage/structure/parent_gens.c:2068)()\n\n/Applications/sage/local/lib/python2.6/site-packages/sage/structure/parent_gens.so in sage.structure.parent_gens._certify_names (sage/structure/parent_gens.c:1601)()\n```\n\n\nFurthermore the ring wrapper has no method n_variables, which is equivalent to ngens.\n\nMichael",
     "created_at": "2009-08-18T08:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49281",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49186",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1067,15 +1065,15 @@ Michael
 
 ---
 
-archive/issue_comments_049282.json:
+archive/issue_comments_049187.json:
 ```json
 {
     "body": "Hi!\nThe following gives me a segfault:\n\n```\nfrom polybori import *\ndata=load_file(\"data/cook.py\")\n\nchange_ordering(block_dp_asc)\nappend_ring_block(25)\ngroebner_basis(data.ideal, prot=True, heuristic=False)\n```\n\n\n```\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\nsage.bin(2141) malloc: *** error for object 0x10ad1f000: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(2141) malloc: *** error for object 0x10ad52000: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\nsage.bin(2141) malloc: *** error for object 0x10ad53800: incorrect checksum for freed object - object was probably modified after being freed.\n*** set a breakpoint in malloc_error_break to debug\n```\n\n\nUsed it on Mac OS X 10.5 64BIT.\n\nI attach the example file",
     "created_at": "2009-08-18T09:51:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49282",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49187",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1119,15 +1117,15 @@ I attach the example file
 
 ---
 
-archive/issue_comments_049283.json:
+archive/issue_comments_049188.json:
 ```json
 {
     "body": "example for segfault",
     "created_at": "2009-08-18T09:52:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49283",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1137,15 +1135,15 @@ example for segfault
 
 ---
 
-archive/issue_comments_049284.json:
+archive/issue_comments_049189.json:
 ```json
 {
     "body": "Attachment [cook.py](tarball://root/attachments/some-uuid/ticket6177/cook.py) by @malb created at 2009-08-18 11:15:27\n\nadds n_variables and fixes segfault",
     "created_at": "2009-08-18T11:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49284",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49189",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1157,15 +1155,15 @@ adds n_variables and fixes segfault
 
 ---
 
-archive/issue_comments_049285.json:
+archive/issue_comments_049190.json:
 ```json
 {
     "body": "Attachment [polybori-0-6-3.6.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.6.patch) by @malb created at 2009-08-18 11:17:11\n\nThe newest version of the patch fixes the segfault and adds `n_variables`. Note that both Michael and myself are using this patch for more than two weeks now in our research (see above for issues discovered and fixed this way), so it should be (almost) good to go. It mainly needs a review from the Sage side.",
     "created_at": "2009-08-18T11:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49285",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49190",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1177,15 +1175,15 @@ The newest version of the patch fixes the segfault and adds `n_variables`. Note 
 
 ---
 
-archive/issue_comments_049286.json:
+archive/issue_comments_049191.json:
 ```json
 {
     "body": "Replying to [comment:34 malb]:\n> The newest version of the patch fixes the segfault and adds `n_variables`. Note that both Michael and myself are using this patch for more than two weeks now in our research (see above for issues discovered and fixed this way), so it should be (almost) good to go. It mainly needs a review from the Sage side.\n\nThis is also my point of view.\nThanks for the update.\nMichael",
     "created_at": "2009-08-18T11:53:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49286",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49191",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1200,15 +1198,15 @@ Michael
 
 ---
 
-archive/issue_comments_049287.json:
+archive/issue_comments_049192.json:
 ```json
 {
     "body": "I have found another subtle bug.\nThis is due to, that we are in the quite slow progress to make PolyBoRi more Pythonic:\nSince Python is dynamically typed,\nlen should be the same on polynomials and monomials, so it's the constant 1-function for us now.\n\n\n```python\nP=BooleanPolynomialRing(3,\"x\")\nsage: m=P.gen(1)*P.gen(2)\nsage: m.lead()\nx1*x2\nsage: len(m.lead())\n2\nsage: \nExiting SAGE (CPU time 0m0.13s, Wall time 0m20.23s).\n```\n\n\n```python\nginkgo:downloads michael$ ipbori\n\nIn [1]: p=x(1)*x(2)\n\nIn [2]: p.__class__\nOut[2]: <class 'polybori.dynamic.PyPolyBoRi.Monomial'>\n\nIn [3]: len(p)\nOut[3]: 1\n```\n\n\nFixing that will break the anf2cnf converter here:\n\n```python\n isinstance(m, BooleanPolynomial):\n            if len(m) == 1:\n                m = m.lm()\n            else:\n                raise TypeError, \"Input must be monomial.\"\n\n        if m == 1:\n            monomial = self._cnf_literal()\n            return (monomial,), ((monomial,),) # adding the clause that 1\n                                            # has to be True\n```\n\n\nJust use .deg instead of len there",
     "created_at": "2009-08-18T12:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49287",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49192",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1265,15 +1263,15 @@ Just use .deg instead of len there
 
 ---
 
-archive/issue_comments_049288.json:
+archive/issue_comments_049193.json:
 ```json
 {
     "body": "changes len(m) to be constant 1 if m is a monomial",
     "created_at": "2009-08-18T13:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49288",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49193",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1283,15 +1281,15 @@ changes len(m) to be constant 1 if m is a monomial
 
 ---
 
-archive/issue_comments_049289.json:
+archive/issue_comments_049194.json:
 ```json
 {
     "body": "Attachment [polybori-0-6-3.7.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0-6-3.7.patch) by @malb created at 2009-08-18 13:16:54\n\nThe attached patch fixes the issue (`len(m) == 1` if `m` is a monomial). I don't see how it breaks anf2cnf but I'll check now (this is orthogonal to accepting this patch anyway)",
     "created_at": "2009-08-18T13:16:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49289",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49194",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1303,15 +1301,15 @@ The attached patch fixes the issue (`len(m) == 1` if `m` is a monomial). I don't
 
 ---
 
-archive/issue_comments_049290.json:
+archive/issue_comments_049195.json:
 ```json
 {
     "body": "Alright, I saw and fixed it on bitbucket (th anf2ncf issue)",
     "created_at": "2009-08-18T13:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49290",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49195",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1321,15 +1319,15 @@ Alright, I saw and fixed it on bitbucket (th anf2ncf issue)
 
 ---
 
-archive/issue_comments_049291.json:
+archive/issue_comments_049196.json:
 ```json
 {
     "body": "Hi!\n\nIn a similar way as the polynomial constructor, Variable is really slow:\n\n```\ntimeit(\"Variable(0)\")\n25 loops, best of 3: 8.68 ms per loop\n```\n\n\nThis is no release blocker,\n\nbut the following is a bug:\n\n```python\n BooleSet([Monomial()])\nOut[1]: {}\n```\n\ncorrect would be\n\n```\nIn [1]: BooleSet([Monomial()])\nOut[1]: {{}}\n```\n\n\nThis is implemented in PyPolyBoRi.py",
     "created_at": "2009-08-19T12:42:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49291",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49196",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1366,15 +1364,15 @@ This is implemented in PyPolyBoRi.py
 
 ---
 
-archive/issue_comments_049292.json:
+archive/issue_comments_049197.json:
 ```json
 {
     "body": "Attachment [polybori-0.6.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.patch) by @malb created at 2009-08-20 13:45:47\n\nrebased and bugfix",
     "created_at": "2009-08-20T13:45:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49292",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49197",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1386,15 +1384,15 @@ rebased and bugfix
 
 ---
 
-archive/issue_comments_049293.json:
+archive/issue_comments_049198.json:
 ```json
 {
     "body": "The new SPKG \n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.3-20090820.spkg\n\nand the new patch `polybori-0.6.3.patch` improve the performance and fix the bug described above. However, I couldn't make `Variable(0)` faster because the main bottleneck for some reason is `BooleEnv::ring()` which we call to get the current ring. The code\n\n\n```c\n  BoolePolyRing __pyx_v__pbring;\n  //... some more other Cython stuff\n  __pyx_v__pbring = BooleEnv::ring();\n```\n\n\nseems to be the bottleneck. Any ideas?",
     "created_at": "2009-08-20T13:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49293",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49198",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1418,15 +1416,15 @@ seems to be the bottleneck. Any ideas?
 
 ---
 
-archive/issue_comments_049294.json:
+archive/issue_comments_049199.json:
 ```json
 {
     "body": "Hi!\nIt's damn hot here.\nAt the moment, I don't know any more, why you shouldn't just use the\nconstructor Variable(i).\nIs it, as you have to attach the parent?\nUnluckily, we use use Variable(i) in a lot of places from python.\nOf course, it would be cleaner to do something like ring.gen(i).\nMichael",
     "created_at": "2009-08-20T14:02:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49294",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49199",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1443,15 +1441,15 @@ Michael
 
 ---
 
-archive/issue_comments_049295.json:
+archive/issue_comments_049200.json:
 ```json
 {
     "body": "Replying to [comment:41 PolyBoRi]:\n> Is it, as you have to attach the parent?\n\nYep, it is still somewhat strange that the code above is so slow.",
     "created_at": "2009-08-20T14:04:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49295",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49200",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1464,15 +1462,15 @@ Yep, it is still somewhat strange that the code above is so slow.
 
 ---
 
-archive/issue_comments_049296.json:
+archive/issue_comments_049201.json:
 ```json
 {
     "body": "I think, we should wait for Alexander having a look on it, who might have an idea,\nwhat happens.\nMichael",
     "created_at": "2009-08-20T14:06:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49296",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49201",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1484,15 +1482,15 @@ Michael
 
 ---
 
-archive/issue_comments_049297.json:
+archive/issue_comments_049202.json:
 ```json
 {
     "body": "By the way, there happen at least two things:\nthe call BooleEnv::ring and\n\n```C++\nstatic ring_type& ring(){\n      return active_ring;\n  }\n```\n\nthe assigment operator.",
     "created_at": "2009-08-20T14:07:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49297",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49202",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1511,15 +1509,15 @@ the assigment operator.
 
 ---
 
-archive/issue_comments_049298.json:
+archive/issue_comments_049203.json:
 ```json
 {
     "body": "It must be the assignment operator (or the dummy constructor) then.",
     "created_at": "2009-08-20T14:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49298",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49203",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1529,15 +1527,15 @@ It must be the assignment operator (or the dummy constructor) then.
 
 ---
 
-archive/issue_comments_049299.json:
+archive/issue_comments_049204.json:
 ```json
 {
     "body": "Thanks, a lot, you did it.\nI didn't remember this Cython thingy.\nIt is the dummy constructor. The assignment doesn't do anything.\nIt is isn't defined. So it is the standard c++ behaviour.\nHowever the dummy constructors of the ring should construct a CuddManager, which means something like allocating a memory pool.\nMichael",
     "created_at": "2009-08-20T14:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49299",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49204",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1552,15 +1550,15 @@ Michael
 
 ---
 
-archive/issue_comments_049300.json:
+archive/issue_comments_049205.json:
 ```json
 {
     "body": "faster Variable(i)",
     "created_at": "2009-08-20T14:42:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49300",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49205",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1570,15 +1568,15 @@ faster Variable(i)
 
 ---
 
-archive/issue_comments_049301.json:
+archive/issue_comments_049206.json:
 ```json
 {
     "body": "Attachment [polybori-0.6.3.2.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.2.patch) by @malb created at 2009-08-20 14:43:51\n\nThe attached patch fixes the bottleneck by avoiding the dummy constructor. Note, that we still need to take care of that Solaris issue Dave reported where scons would pick up the Sun compiler instead of gcc.",
     "created_at": "2009-08-20T14:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49301",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49206",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1590,15 +1588,15 @@ The attached patch fixes the bottleneck by avoiding the dummy constructor. Note,
 
 ---
 
-archive/issue_comments_049302.json:
+archive/issue_comments_049207.json:
 ```json
 {
     "body": "Attachment [custom.py](tarball://root/attachments/some-uuid/ticket6177/custom.py) by PolyBoRi created at 2009-08-21 07:06:45\n\nSolaris fix for patches/custom.py",
     "created_at": "2009-08-21T07:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49302",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49207",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1610,15 +1608,15 @@ Solaris fix for patches/custom.py
 
 ---
 
-archive/issue_comments_049303.json:
+archive/issue_comments_049208.json:
 ```json
 {
     "body": "I added some lines to custom.py, s.th. C and C++ compiler are picked from the Sage environment (if any). This fixes the Solaris issue.\n\nRegards,\n  Alexander",
     "created_at": "2009-08-21T07:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49303",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49208",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1631,15 +1629,15 @@ Regards,
 
 ---
 
-archive/issue_comments_049304.json:
+archive/issue_comments_049209.json:
 ```json
 {
     "body": "I have added this fix to the newest SPKG available at:\n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.3-20090825.spkg",
     "created_at": "2009-08-25T10:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49304",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49209",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1651,15 +1649,15 @@ I have added this fix to the newest SPKG available at:
 
 ---
 
-archive/issue_comments_049305.json:
+archive/issue_comments_049210.json:
 ```json
 {
     "body": "There seems to be a pickling problem, try the following on sage.math:\n\n\n```\nsage -t -long devel/sage/sage/structure/sage_object.pyx\n```\n",
     "created_at": "2009-08-27T02:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49305",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49210",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1675,15 +1673,15 @@ sage -t -long devel/sage/sage/structure/sage_object.pyx
 
 ---
 
-archive/issue_comments_049306.json:
+archive/issue_comments_049211.json:
 ```json
 {
     "body": "I've found another Solaris issue. I tried a build of Sage from scratch on my Solaris machine, which has Sun Studio 12 update 1 in /opt/sunstudio12.1\n\nYou will note below that SCons can't write to the file sage-4.1.1/local/share/polybori/flags.conf, as it does not exist. \n\nIt strikes me the build process of this leaves a bit to be desired. Note in the following line, -fPIC is twice used as a flag (... -g -fPIC -fPIC -DNDEBUG), and the 'gd' library is linked no less than four times in the line following that (...-Lgroebner -LCudd -lm -lgd -lgd -lgd -lgd). Looking at install.log I see numerous instances of this. \n\nAnother thing that I believe would be helpful is if there was a space between the '-h' flag and the library name, which appears below as  \"-Wl,-hlibpboriCudd-0.6.3.so.0\". Although the Sun linker will accept that, I think having \"-Wl,-h libpboriCudd-0.6.3.so.0\" would be a bit neater. But all these are minor points compared to the fact polybori fails as it can't write to a file which does not exist. \n\n\n\n```\n\ngcc -o M4RI/brilliantrussian.pic.o -c -std=c99 -O3 -Wno-long-long -Wreturn-type -g -fPIC -fPIC -DNDEBUG -DHAVE_GD -DHAVE_TR1_UNORDERED_MAP -DPACKED -DHAVE_M4RI -DHAVE_GD -DHAVE_IEEE_754 -DBSD -I/export/home/drkirkby/sage/tmp/sage-4.1.1/spkg/build/polybori-0.6.3-20090825/src/boost_1_34_1.cropped -I/export/home/drkirkby/sage/tmp/sage-4.1.1/local/include -I/export/home/drkirkby/sage/tmp/sage-4.1.1/local/include/python2.6 -Ipolybori/include -IM4RI -ICudd/obj -ICudd/util -ICudd/cudd -ICudd/mtr -ICudd/st -ICudd/epd M4RI/brilliantrussian.c\ng++ -o groebner/libgroebner-0.6.3.so.0.0.0 -G -Wl,-hlibgroebner-0.6.3.so.0 Cudd/obj/cuddObj.pic.o Cudd/util/cpu_time.pic.o Cudd/util/state.pic.o Cudd/util/datalimit.pic.o Cudd/util/texpand.pic.o Cudd/util/pipefork.pic.o Cudd/util/strsav.pic.o Cudd/util/ptime.pic.o Cudd/util/tmpfile.pic.o Cudd/util/stub.pic.o Cudd/util/cpu_stats.pic.o Cudd/util/safe_mem.pic.o Cudd/util/getopt.pic.o Cudd/util/prtime.pic.o Cudd/util/pathsearch.pic.o Cudd/cudd/cuddApprox.pic.o Cudd/cudd/cuddRead.pic.o Cudd/cudd/cuddLevelQ.pic.o Cudd/cudd/cuddCof.pic.o Cudd/cudd/cuddGenetic.pic.o Cudd/cudd/cuddZddPort.pic.o Cudd/cudd/cuddMatMult.pic.o Cudd/cudd/cuddZddIsop.pic.o Cudd/cudd/cuddAPI.pic.o Cudd/cudd/cuddZddGroup.pic.o Cudd/cudd/cuddZddSymm.pic.o Cudd/cudd/cuddRef.pic.o Cudd/cudd/cuddZddMisc.pic.o Cudd/cudd/cuddDecomp.pic.o Cudd/cudd/cuddZddUtil.pic.o Cudd/cudd/cuddLiteral.pic.o Cudd/cudd/cuddAddNeg.pic.o Cudd/cudd/cuddPriority.pic.o Cudd/cudd/cuddAnneal.pic.o Cudd/cudd/cuddInit.pic.o Cudd/cudd/cuddZddSetop.pic.o Cudd/cudd/cuddReorder.pic.o Cudd/cudd/cuddSolve.pic.o Cudd/cudd/cuddBddCorr.pic.o Cudd/cudd/cuddAddFind.pic.o Cudd/cudd/cuddAddInv.pic.o Cudd/cudd/cuddWindow.pic.o Cudd/cudd/cuddAddIte.pic.o Cudd/cudd/cuddAddAbs.pic.o Cudd/cudd/cuddZddReord.pic.o Cudd/cudd/cuddBddAbs.pic.o Cudd/cudd/cuddBddIte.pic.o Cudd/cudd/cuddLinear.pic.o Cudd/cudd/cuddSign.pic.o Cudd/cudd/cuddCheck.pic.o Cudd/cudd/cuddZddCount.pic.o Cudd/cudd/cuddZddFuncs.pic.o Cudd/cudd/cuddEssent.pic.o Cudd/cudd/cuddGroup.pic.o Cudd/cudd/cuddSplit.pic.o Cudd/cudd/cuddSat.pic.o Cudd/cudd/cuddAddApply.pic.o Cudd/cudd/cuddLCache.pic.o Cudd/cudd/cuddCache.pic.o Cudd/cudd/cuddAndAbs.pic.o Cudd/cudd/cuddHarwell.pic.o Cudd/cudd/cuddBridge.pic.o Cudd/cudd/cuddUtil.pic.o Cudd/cudd/cuddExport.pic.o Cudd/cudd/cuddSubsetHB.pic.o Cudd/cudd/cuddAddWalsh.pic.o Cudd/cudd/cuddSymmetry.pic.o Cudd/cudd/cuddTable.pic.o Cudd/cudd/cuddApa.pic.o Cudd/cudd/cuddCompose.pic.o Cudd/cudd/cuddZddLin.pic.o Cudd/cudd/cuddExact.pic.o Cudd/cudd/cuddSubsetSP.pic.o Cudd/cudd/cuddGenCof.pic.o Cudd/cudd/cuddClip.pic.o Cudd/cudd/cuddInteract.pic.o Cudd/mtr/mtrBasic.pic.o Cudd/mtr/mtrGroup.pic.o Cudd/st/st.pic.o Cudd/epd/epd.pic.o polybori/src/BoolePolyRing.pic.o polybori/src/BooleEnv.pic.o polybori/src/BoolePolynomial.pic.o polybori/src/BooleVariable.pic.o polybori/src/CErrorInfo.pic.o polybori/src/PBoRiError.pic.o polybori/src/CCuddFirstIter.pic.o polybori/src/CCuddNavigator.pic.o polybori/src/BooleMonomial.pic.o polybori/src/BooleSet.pic.o polybori/src/LexOrder.pic.o polybori/src/CCuddLastIter.pic.o polybori/src/CCuddGetNode.pic.o polybori/src/BooleExponent.pic.o polybori/src/DegLexOrder.pic.o polybori/src/DegRevLexAscOrder.pic.o polybori/src/pbori_routines.pic.o polybori/src/BlockDegLexOrder.pic.o polybori/src/BlockDegRevLexAscOrder.pic.o groebner/src/groebner.pic.o groebner/src/literal_factorization.pic.o groebner/src/randomset.pic.o groebner/src/pairs.pic.o groebner/src/groebner_alg.pic.o groebner/src/fglm.pic.o groebner/src/polynomial_properties.pic.o groebner/src/lexbuckets.pic.o groebner/src/dlex4data.pic.o groebner/src/dp_asc4data.pic.o groebner/src/lp4data.pic.o groebner/src/nf.pic.o groebner/src/interpolate.pic.o M4RI/grayflex.pic.o M4RI/permutation.pic.o M4RI/packedmatrix.pic.o M4RI/strassen.pic.o M4RI/misc.pic.o M4RI/brilliantrussian.pic.o -L/export/home/drkirkby/sage/tmp/sage-4.1.1/local/lib -L/export/home/drkirkby/sage/tmp/sage-4.1.1/local/lib/python2.6/config -Lpolybori -Lgroebner -LCudd -lm -lgd -lgd -lgd -lgd\ng++ -o Cudd/libpboriCudd-0.6.3.so.0.0.0 -G -Wl,-hlibpboriCudd-0.6.3.so.0 Cudd/obj/cuddObj.pic.o Cudd/util/cpu_time.pic.o Cudd/util/state.pic.o Cudd/util/datalimit.pic.o Cudd/util/texpand.pic.o Cudd/util/pipefork.pic.o Cudd/util/strsav.pic.o Cudd/util/ptime.pic.o Cudd/util/tmpfile.pic.o Cudd/util/stub.pic.o Cudd/util/cpu_stats.pic.o Cudd/util/safe_mem.pic.o Cudd/util/getopt.pic.o Cudd/util/prtime.pic.o Cudd/util/pathsearch.pic.o Cudd/cudd/cuddApprox.pic.o Cudd/cudd/cuddRead.pic.o Cudd/cudd/cuddLevelQ.pic.o Cudd/cudd/cuddCof.pic.o Cudd/cudd/cuddGenetic.pic.o Cudd/cudd/cuddZddPort.pic.o Cudd/cudd/cuddMatMult.pic.o Cudd/cudd/cuddZddIsop.pic.o Cudd/cudd/cuddAPI.pic.o Cudd/cudd/cuddZddGroup.pic.o Cudd/cudd/cuddZddSymm.pic.o Cudd/cudd/cuddRef.pic.o Cudd/cudd/cuddZddMisc.pic.o Cudd/cudd/cuddDecomp.pic.o Cudd/cudd/cuddZddUtil.pic.o Cudd/cudd/cuddLiteral.pic.o Cudd/cudd/cuddAddNeg.pic.o Cudd/cudd/cuddPriority.pic.o Cudd/cudd/cuddAnneal.pic.o Cudd/cudd/cuddInit.pic.o Cudd/cudd/cuddZddSetop.pic.o Cudd/cudd/cuddReorder.pic.o Cudd/cudd/cuddSolve.pic.o Cudd/cudd/cuddBddCorr.pic.o Cudd/cudd/cuddAddFind.pic.o Cudd/cudd/cuddAddInv.pic.o Cudd/cudd/cuddWindow.pic.o Cudd/cudd/cuddAddIte.pic.o Cudd/cudd/cuddAddAbs.pic.o Cudd/cudd/cuddZddReord.pic.o Cudd/cudd/cuddBddAbs.pic.o Cudd/cudd/cuddBddIte.pic.o Cudd/cudd/cuddLinear.pic.o Cudd/cudd/cuddSign.pic.o Cudd/cudd/cuddCheck.pic.o Cudd/cudd/cuddZddCount.pic.o Cudd/cudd/cuddZddFuncs.pic.o Cudd/cudd/cuddEssent.pic.o Cudd/cudd/cuddGroup.pic.o Cudd/cudd/cuddSplit.pic.o Cudd/cudd/cuddSat.pic.o Cudd/cudd/cuddAddApply.pic.o Cudd/cudd/cuddLCache.pic.o Cudd/cudd/cuddCache.pic.o Cudd/cudd/cuddAndAbs.pic.o Cudd/cudd/cuddHarwell.pic.o Cudd/cudd/cuddBridge.pic.o Cudd/cudd/cuddUtil.pic.o Cudd/cudd/cuddExport.pic.o Cudd/cudd/cuddSubsetHB.pic.o Cudd/cudd/cuddAddWalsh.pic.o Cudd/cudd/cuddSymmetry.pic.o Cudd/cudd/cuddTable.pic.o Cudd/cudd/cuddApa.pic.o Cudd/cudd/cuddCompose.pic.o Cudd/cudd/cuddZddLin.pic.o Cudd/cudd/cuddExact.pic.o Cudd/cudd/cuddSubsetSP.pic.o Cudd/cudd/cuddGenCof.pic.o Cudd/cudd/cuddClip.pic.o Cudd/cudd/cuddInteract.pic.o Cudd/mtr/mtrBasic.pic.o Cudd/mtr/mtrGroup.pic.o Cudd/st/st.pic.o Cudd/epd/epd.pic.o -L/export/home/drkirkby/sage/tmp/sage-4.1.1/local/lib -L/export/home/drkirkby/sage/tmp/sage-4.1.1/local/lib/python2.6/config -Lpolybori -Lgroebner -LCudd -lm -lgd -lgd -lgd -lgd\nbuild_symlink([\"polybori/libpolybori-0.6.3.so.0\"], [\"polybori/libpolybori-0.6.3.so.0.0.0\"])\nSymlinking from libpolybori-0.6.3.so.0.0.0 to polybori/libpolybori-0.6.3.so.0\nbuild_symlink([\"polybori/libpolybori-0.6.3.so\"], [\"polybori/libpolybori-0.6.3.so.0\"])\nSymlinking from libpolybori-0.6.3.so.0 to polybori/libpolybori-0.6.3.so\nbuild_symlink([\"polybori/libpolybori.so\"], [\"polybori/libpolybori-0.6.3.so\"])\nSymlinking from libpolybori-0.6.3.so to polybori/libpolybori.so\nbuild_symlink([\"groebner/libgroebner-0.6.3.so.0\"], [\"groebner/libgroebner-0.6.3.so.0.0.0\"])\nSymlinking from libgroebner-0.6.3.so.0.0.0 to groebner/libgroebner-0.6.3.so.0\nbuild_symlink([\"groebner/libgroebner-0.6.3.so\"], [\"groebner/libgroebner-0.6.3.so.0\"])\nSymlinking from libgroebner-0.6.3.so.0 to groebner/libgroebner-0.6.3.so\nbuild_symlink([\"groebner/libgroebner.so\"], [\"groebner/libgroebner-0.6.3.so\"])\nSymlinking from libgroebner-0.6.3.so to groebner/libgroebner.so\nbuild_symlink([\"Cudd/libpboriCudd-0.6.3.so.0\"], [\"Cudd/libpboriCudd-0.6.3.so.0.0.0\"])\nSymlinking from libpboriCudd-0.6.3.so.0.0.0 to Cudd/libpboriCudd-0.6.3.so.0\nbuild_symlink([\"Cudd/libpboriCudd-0.6.3.so\"], [\"Cudd/libpboriCudd-0.6.3.so.0\"])\nSymlinking from libpboriCudd-0.6.3.so.0 to Cudd/libpboriCudd-0.6.3.so\nbuild_symlink([\"Cudd/libpboriCudd.so\"], [\"Cudd/libpboriCudd-0.6.3.so\"])\nSymlinking from libpboriCudd-0.6.3.so to Cudd/libpboriCudd.so\nscons: done building targets.\nDone build_polybori.\nInstalling PolyBoRi...\nscons: Reading SConscript files ...\nSun linker detected.\nChecking for C header file gd.h... (cached) yes\nChecking for C library gd... (cached) yes\nChecking for C++ header file unordered_map... (cached) no\nChecking for C++ header file tr1/unordered_map... (cached) yes\nWarning: No LaTeX to html converter found, Tutorial will not be installed\nChecking for C library m4ri... (cached) no\nChecking for C header file gd.h... (cached) yes\nChecking for C library gd... (cached) yes\nno python extension\nsetting umask to 022 (was 022)\n\nscons: *** Error writing options to file: /export/home/drkirkby/sage/tmp/sage-4.1.1/local/share/polybori/flags.conf\n[Errno 2] No such file or directory: '/export/home/drkirkby/sage/tmp/sage-4.1.1/local/share/polybori/flags.conf'\nFile \"/export/home/drkirkby/sage/tmp/sage-4.1.1/spkg/build/polybori-0.6.3-20090825/src/polybori-0.6/SConstruct\", line 1281, in <module>\nError installing PolyBoRi.\n\nreal    18m9.386s\nuser    16m29.417s\nsys     1m23.875s\nsage: An error occurred while installing polybori-0.6.3-20090825\n\n```\n",
     "created_at": "2009-08-27T06:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49306",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49211",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1753,15 +1751,15 @@ sage: An error occurred while installing polybori-0.6.3-20090825
 
 ---
 
-archive/issue_comments_049307.json:
+archive/issue_comments_049212.json:
 ```json
 {
     "body": "Patched the (patched) patch/SConstruct to fix the \"flags.conf\" issue",
     "created_at": "2009-08-27T09:25:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49307",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49212",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1771,15 +1769,15 @@ Patched the (patched) patch/SConstruct to fix the "flags.conf" issue
 
 ---
 
-archive/issue_comments_049308.json:
+archive/issue_comments_049213.json:
 ```json
 {
     "body": "Attachment [flags-conf.patch](tarball://root/attachments/some-uuid/ticket6177/flags-conf.patch) by PolyBoRi created at 2009-08-27 09:32:20\n\nIndeed, this is not a Solaris issue, but it will occur always, in the case, that PolyBoRi wasn't installed in the corresponding Sage before. Some patch from Sage adds the generation of `flags.conf`, but that goes wrong, if the installation directory does not exist before.  The flags-conf.patch above should fix the problem.\n\nRegards,\n  Alexander",
     "created_at": "2009-08-27T09:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49308",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49213",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1794,15 +1792,15 @@ Regards,
 
 ---
 
-archive/issue_comments_049309.json:
+archive/issue_comments_049214.json:
 ```json
 {
     "body": "I would suggest to postpone the minor issues (duplicated arguments, missing, but not mandatory space) to the next release of PolyBoRi.\n\nAlexander",
     "created_at": "2009-08-27T09:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49309",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49214",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -1814,15 +1812,15 @@ Alexander
 
 ---
 
-archive/issue_comments_049310.json:
+archive/issue_comments_049215.json:
 ```json
 {
     "body": "Alright, the new SPKG deals with the flags.conf issue (thanks Alexander)\n\n  http://sage.math.washington.edu/home/malb/spkgs/polybori-0.6.3-20090827.spkg\n\nI will postpone the fPIC issue for now and will concentrate on the pickling issue.",
     "created_at": "2009-08-27T09:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49310",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49215",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1836,15 +1834,15 @@ I will postpone the fPIC issue for now and will concentrate on the pickling issu
 
 ---
 
-archive/issue_comments_049311.json:
+archive/issue_comments_049216.json:
 ```json
 {
     "body": "Attachment [polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/polybori-0.6.3.3.patch) by @malb created at 2009-08-27 10:35:12\n\nfixes the pickling issue",
     "created_at": "2009-08-27T10:35:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49311",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49216",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1856,15 +1854,15 @@ fixes the pickling issue
 
 ---
 
-archive/issue_comments_049312.json:
+archive/issue_comments_049217.json:
 ```json
 {
     "body": "The attached patch fixes the pickling issue and now all doctests pass on sage.math.",
     "created_at": "2009-08-27T10:35:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49312",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49217",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1874,15 +1872,15 @@ The attached patch fixes the pickling issue and now all doctests pass on sage.ma
 
 ---
 
-archive/issue_comments_049313.json:
+archive/issue_comments_049218.json:
 ```json
 {
     "body": "Attachment [trac_6177_reviewer_patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer_patch) by @burcin created at 2009-09-10 09:38:04\n\nminor fixes",
     "created_at": "2009-09-10T09:38:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49313",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49218",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -1894,15 +1892,15 @@ minor fixes
 
 ---
 
-archive/issue_comments_049314.json:
+archive/issue_comments_049219.json:
 ```json
 {
     "body": "I added a patch with minor changes:\n\n- fix a doctest problem in `sage/crypto/mq/mpolynomialsystem.py`\n- eliminate use of Python `eval()` in `module_list.py`\n- remove commented code for which a newer version seems to be present somewhere else in the file\n\nI give Martin's patch and the package a positive review. Martin, if you're ok with my changes, please mark this positive review.\n\n\nOnly attachment:polybori-0.6.3.3.patch and attachment:trac_6177_reviewer_patch should be applied, with the package linked from comment:54.",
     "created_at": "2009-09-10T09:44:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49314",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49219",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -1921,15 +1919,15 @@ Only attachment:polybori-0.6.3.3.patch and attachment:trac_6177_reviewer_patch s
 
 ---
 
-archive/issue_comments_049315.json:
+archive/issue_comments_049220.json:
 ```json
 {
     "body": "Burcin's patch looks good, applies cleanly against 4.1.2.alpha1 and doctests pass.\n\nIts done, finally!",
     "created_at": "2009-09-10T12:35:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49315",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49220",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -1941,15 +1939,15 @@ Its done, finally!
 
 ---
 
-archive/issue_comments_049316.json:
+archive/issue_comments_049221.json:
 ```json
 {
     "body": "Merged patches in this order:\n\n1. `polybori-0.6.3.3.patch`\n2. `trac_6177_reviewer_patch`\n\nMerged `polybori-0.6.3-20090827.spkg` in the standard packages repository.",
     "created_at": "2009-09-11T16:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49316",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49221",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1964,15 +1962,15 @@ Merged `polybori-0.6.3-20090827.spkg` in the standard packages repository.
 
 ---
 
-archive/issue_comments_049317.json:
+archive/issue_comments_049222.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-11T16:33:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49317",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49222",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1982,15 +1980,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_049318.json:
+archive/issue_comments_049223.json:
 ```json
 {
     "body": "Attachment [trac_6177-polybori-0.6.3.3.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177-polybori-0.6.3.3.patch) by mvngu created at 2009-09-21 03:42:38\n\nrepo corrupt-free version",
     "created_at": "2009-09-21T03:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49318",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49223",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -2002,15 +2000,15 @@ repo corrupt-free version
 
 ---
 
-archive/issue_comments_049319.json:
+archive/issue_comments_049224.json:
 ```json
 {
     "body": "with the \".patch\" file extension",
     "created_at": "2009-09-21T03:43:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49319",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49224",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -2020,15 +2018,15 @@ with the ".patch" file extension
 
 ---
 
-archive/issue_comments_049320.json:
+archive/issue_comments_049225.json:
 ```json
 {
     "body": "Attachment [trac_6177_reviewer.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177_reviewer.patch) by mvngu created at 2009-09-21 04:07:06\n\nI have attached two new patches\n\n1. `trac_6177-polybori-0.6.3.3.patch` --- This is the same as `polybori-0.6.3.3.patch`. The only change is inserting the comment \n {{{\n# Insert a comment here to prevent repo corruption.\n }}}\n into the empty file `sage/libs/polybori/__init__.py` in order to prevent repository corruption as was reported on IRC by William Stein:\n {{{\n20:14 < williamstein> mvngu -- possible problem with alpha2\n20:14 < williamstein> i get /scratch/wstein/build/sage-4.1.2.alpha3/devel/sage-main/sage/rings/polynomial/pbori.pxd:10:0: 'sage.libs.polybori.decl.pxd' not found\n20:15 < williamstein> \"repo corruption\"?\n20:15 < williamstein> yep\n20:15 < williamstein> wstein`@`sage:~/build/sage-4.1.2.alpha3/devel/sage$ hg status\n20:15 < williamstein> ! sage/libs/polybori/__init__.py\n20:15 < williamstein> I fix it with:\n20:15 < williamstein> wstein`@`sage:~/build/sage-4.1.2.alpha3/devel/sage$ hg revert --all\n20:15 < williamstein> reverting sage/libs/polybori/__init__.py\n20:16 < mvngu> williamstein: yeah, I just do \"make\" again.\n20:16 < williamstein> mvngu -- that always bites you for some reason.\n20:17 < mvngu> I have been experiencing that problem on every machine I'm building on.\n20:17 < mvngu> It's always about polybori.\n }}}\n1. `trac_6177_reviewer.patch` --- This is the same as `trac_6177_reviewer_patch`. I put in the file extension \".patch\" so that the patch would be displayed with colour on trac.",
     "created_at": "2009-09-21T04:07:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49320",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49225",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -2062,15 +2060,15 @@ I have attached two new patches
 
 ---
 
-archive/issue_comments_049321.json:
+archive/issue_comments_049226.json:
 ```json
 {
     "body": "**Only merge these:**\n\n1. `trac_6177-polybori-0.6.3.3.patch`\n2. `trac_6177_reviewer.patch`",
     "created_at": "2009-09-21T04:41:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49321",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49226",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -2083,15 +2081,15 @@ archive/issue_comments_049321.json:
 
 ---
 
-archive/issue_comments_049322.json:
+archive/issue_comments_049227.json:
 ```json
 {
     "body": "add files to MANIFEST.in",
     "created_at": "2009-09-21T16:56:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49322",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49227",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -2101,15 +2099,15 @@ add files to MANIFEST.in
 
 ---
 
-archive/issue_comments_049323.json:
+archive/issue_comments_049228.json:
 ```json
 {
     "body": "Attachment [trac_6177-manifest.patch](tarball://root/attachments/some-uuid/ticket6177/trac_6177-manifest.patch) by mvngu created at 2009-09-21 16:59:53\n\nThe patch `trac_6177-manifest.patch` adds the following files to MANIFEST.in:\n\n* `sage/libs/polybori/__init__.py`\n* `sage/libs/polybori/decl.pxd`\n\nThis way, the files would be picked up when making a source release. By now, patches should be **merged in this order**:\n\n1. `trac_6177-polybori-0.6.3.3.patch`\n2. `trac_6177_reviewer.patch`\n3. `trac_6177-manifest.patch`",
     "created_at": "2009-09-21T16:59:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49323",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6177#issuecomment-49228",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

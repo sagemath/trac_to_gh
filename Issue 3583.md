@@ -6,7 +6,7 @@ archive/issues_003583.json:
     "body": "Assignee: failure\n\nOn Debian 64-bit vmware:\n\n\n```\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py\", line 2677:\n    sage: W.interrupt()\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/home/was/build/sage-3.0.4.alpha2/tmp/worksheet.py\", line 2681:\n    sage: W.check_comp()\nExpected:\n    ('e', None)\nGot:\n    ('w', Cell 0; in=factor(2^997-1), out=)\n**********************************************************************\n1 items had failures:\n   2 of  10 in __main__.example_85\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/was/build/sage-3.0.4.alpha2/tmp/.doctest_worksheet.py\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3583\n\n",
     "created_at": "2008-07-07T15:19:22Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003583.json:
     "title": "randomness in some worksheet doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3583",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: failure
@@ -54,15 +54,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3583
 
 ---
 
-archive/issue_comments_025297.json:
+archive/issue_comments_025247.json:
 ```json
 {
     "body": "Attachment [sage-3583.patch](tarball://root/attachments/some-uuid/ticket3583/sage-3583.patch) by @williamstein created at 2008-07-07 18:44:25",
     "created_at": "2008-07-07T18:44:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25297",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25247",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -72,15 +72,15 @@ Attachment [sage-3583.patch](tarball://root/attachments/some-uuid/ticket3583/sag
 
 ---
 
-archive/issue_comments_025298.json:
+archive/issue_comments_025248.json:
 ```json
 {
     "body": "After brief discussion with wstein in #sage-devel, this looks fine.",
     "created_at": "2008-07-07T18:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25298",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25248",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -90,15 +90,15 @@ After brief discussion with wstein in #sage-devel, this looks fine.
 
 ---
 
-archive/issue_comments_025299.json:
+archive/issue_comments_025249.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-07T21:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25299",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25249",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -108,15 +108,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_025300.json:
+archive/issue_comments_025250.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.rc0",
     "created_at": "2008-07-07T21:51:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3583",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25300",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3583#issuecomment-25250",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

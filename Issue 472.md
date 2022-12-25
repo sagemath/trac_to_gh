@@ -6,15 +6,14 @@ archive/issues_000472.json:
     "body": "Assignee: @jmbr\n\nTo build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/472\n\n",
     "created_at": "2007-08-20T23:13:13Z",
     "labels": [
-        "packages: standard",
-        "minor",
-        "enhancement"
+        "component: packages: standard",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "Drop dependencies on flex and bison",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/472",
-    "user": "@jmbr"
+    "user": "https://github.com/jmbr"
 }
 ```
 Assignee: @jmbr
@@ -30,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/472
 
 ---
 
-archive/issue_comments_002359.json:
+archive/issue_comments_002349.json:
 ```json
 {
     "body": "Replying to [ticket:472 jmbr]:\n> To build Singular we need flex and bison but we could make sure those programs are not needed by using some spkg-install trickery.\n\nMake will invoke flex and bison if the *.[ly] files are newer than the C++ files they generate.  Thus, we have to make sure the C++ files are fresher.",
     "created_at": "2007-08-23T00:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2359",
-    "user": "@jmbr"
+    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2349",
+    "user": "https://github.com/jmbr"
 }
 ```
 
@@ -51,15 +50,15 @@ Make will invoke flex and bison if the *.[ly] files are newer than the C++ files
 
 ---
 
-archive/issue_comments_002360.json:
+archive/issue_comments_002350.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2007-08-23T00:04:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2360",
-    "user": "@jmbr"
+    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2350",
+    "user": "https://github.com/jmbr"
 }
 ```
 
@@ -69,15 +68,15 @@ Resolution: worksforme
 
 ---
 
-archive/issue_comments_002361.json:
+archive/issue_comments_002351.json:
 ```json
 {
     "body": "This is not closed, since there isn't a singular spkg yet that implements it.",
     "created_at": "2007-08-29T03:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2361",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2351",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -87,15 +86,15 @@ This is not closed, since there isn't a singular spkg yet that implements it.
 
 ---
 
-archive/issue_comments_002362.json:
+archive/issue_comments_002352.json:
 ```json
 {
     "body": "Resolution changed from worksforme to ",
     "created_at": "2007-08-29T03:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2362",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2352",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +104,15 @@ Resolution changed from worksforme to
 
 ---
 
-archive/issue_comments_002363.json:
+archive/issue_comments_002353.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-08-29T03:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2363",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2353",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_002364.json:
+archive/issue_comments_002354.json:
 ```json
 {
     "body": "If malb's new singular.spkg goes in this is resolved.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-29T21:08:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2364",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2354",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -145,15 +144,15 @@ Michael
 
 ---
 
-archive/issue_comments_002365.json:
+archive/issue_comments_002355.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-29T21:13:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/472",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2365",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/472#issuecomment-2355",
+    "user": "https://github.com/williamstein"
 }
 ```
 

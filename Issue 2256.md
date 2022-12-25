@@ -6,15 +6,14 @@ archive/issues_002256.json:
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan @jasongrout cwitty @robertwb\n\nKeywords: matrix inverse CC complex\n\n\n```\nsage: M = matrix(CC, 2, 2, [(-1.00000000000000 - 2.00000000000000*I, 5.00000000000000 - 6.00000000000000*I), (-2.00000000000000 - 2.00000000000000*I, 7.00000000000000 - 8.00000000000000*I)])\nsage: M\n\n[-1.00000000000000 - 2.00000000000000*I  5.00000000000000 - 6.00000000000000*I]\n[-2.00000000000000 - 2.00000000000000*I  7.00000000000000 - 8.00000000000000*I]\nsage: M.determinant()\n-1.00000000000000 - 8.00000000000000*I\nsage: M.inverse()\n---------------------------------------------------------------------------\n<type 'exceptions.ZeroDivisionError'>     Traceback (most recent call last)\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/matrix2.pyx in sage.matrix.matrix2.Matrix.inverse()\n\n/Users/ncalexan/sage-2.10.2.alpha0/devel/sage-genus2cm/sage/schemes/plane_curves/matrix0.pyx in sage.matrix.matrix0.Matrix.__invert__()\n\n<type 'exceptions.ZeroDivisionError'>: self is not invertible\nsage: M.parent().change_ring(CDF)(M).inverse()\n\n[ 0.876923076923 + 0.984615384615*I -0.661538461538 - 0.707692307692*I]\n[-0.276923076923 + 0.215384615385*I 0.261538461538 - 0.0923076923077*I]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2256\n\n",
     "created_at": "2008-02-22T08:00:07Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "matrix inverse over CC raises ZeroDivisionError",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2256",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -58,15 +57,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2256
 
 ---
 
-archive/issue_comments_014938.json:
+archive/issue_comments_014906.json:
 ```json
 {
     "body": "I made a similar ticket with the same issue with RQDF.  I think the following is the underlying problem:\n\n\n```\nsage: me = M.echelon_form()\nsage: me\n\n[                         1.00000000000000                     -2.22044604925031e-16]\n[                                        0 1.00000000000000 - 5.55111512312578e-17*I]\nsage: me[0,0] == 1\nTrue\nsage: me[1,1] == 1\nFalse\n```\n",
     "created_at": "2008-02-22T21:33:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14938",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14906",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -90,15 +89,15 @@ False
 
 ---
 
-archive/issue_comments_014939.json:
+archive/issue_comments_014907.json:
 ```json
 {
     "body": "mhansen's comment is right on.  Indeed, SAGE is successfully computing the inverse, but the __invert__ method is throwing an exception because of the diagonal elements of the echelon form are not all ones.   This is simply because:\n\n\n```\nsage: a = CC(-1, -2); b = CC(5, -6); c = CC(-2,-2); d = CC(7, -8)\nsage: z = d - b*c/a\nsage: z * z^-1\n1.00000000000000 - 5.55111512312578e-17*I\n```\n\n\nAh, the joys of inexact fields.   See also the ticket #3162.",
     "created_at": "2008-05-12T02:46:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14939",
-    "user": "@NathanDunfield"
+    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14907",
+    "user": "https://github.com/NathanDunfield"
 }
 ```
 
@@ -119,15 +118,15 @@ Ah, the joys of inexact fields.   See also the ticket #3162.
 
 ---
 
-archive/issue_comments_014940.json:
+archive/issue_comments_014908.json:
 ```json
 {
     "body": "I'm attaching a patch which doesn't **completely** fix this, but makes it better -- I think. \n\nFirst, a brief description of the problem: the code creates an augmented matrix, puts it in echelon form, and asks if the lower right entry of the left half is equal to 1. This is correct over an exact field, but over an inexact ring like `CC`, this causes trouble. \n\nNow, if we're working over a base ring which we know is a field (or at least models a field), then we know the lower right entry of the matrix must be either 1 or 0. So rather than test to see if something equals 1, I simply test that the lower right entry is **not** 0. \n\nA better solution would be to ask that the determinant is nonzero -- unfortunately, our determinant over general inexact fields is a joke, and can't even deal with a `10x10` example, so that's a no-go. \n\nComments:\n\nThis still isn't perfect -- it's easy enough to imagine cases where numerical instability causes trouble. Note that the current behavior is basically always wrong (since it almost always claims the matrix isn't invertible when it is), and it's also pretty confusing to newcomers. The new code has the disadvantage that it can now offer to return an inverse for non-invertible matrices, based on numerical issues. However, I think that to someone who's used matrices over inexact rings before in their life, this isn't so surprising -- it's just the way it goes with approximations. \n\nI don't know what the \"right\" solution is -- we should probably ask someone who studies numerical analysis.\n\nI'm adding `jason`, `cwitty`, and `robertwb` to the ticket, because they're all likely to have interesting commentary and/or review the patch.",
     "created_at": "2009-06-09T09:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14940",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14908",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -151,15 +150,15 @@ I'm adding `jason`, `cwitty`, and `robertwb` to the ticket, because they're all 
 
 ---
 
-archive/issue_comments_014941.json:
+archive/issue_comments_014909.json:
 ```json
 {
     "body": "Attachment [trac-2256.patch](tarball://root/attachments/some-uuid/ticket2256/trac-2256.patch) by @jasongrout created at 2009-06-09 11:01:26\n\nThe LU decomposition patch at #3048 may go a long ways towards helping this.  At least the determinant then is much, much better.  Or even better, just examine the U of the LU decomposition and decide if a diagonal entry is zero (which avoids the overhead of a product).\n\nThe LU decomposition patch (#3048) also changes the inverse function to use sove_right (which uses LU decomposition) as in general, that should be faster anyway.\n\nThe real way to do this is to have a rank function which works by looking at the smallest singular value.  That requires having a singular value decomposition...",
     "created_at": "2009-06-09T11:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14941",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14909",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -175,15 +174,15 @@ The real way to do this is to have a rank function which works by looking at the
 
 ---
 
-archive/issue_comments_014942.json:
+archive/issue_comments_014910.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-14T22:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14942",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14910",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -193,15 +192,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014943.json:
+archive/issue_comments_014911.json:
 ```json
 {
     "body": "The LU stuff is not ready and this at least improves the situation.",
     "created_at": "2009-06-14T22:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2256",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14943",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2256#issuecomment-14911",
+    "user": "https://github.com/ncalexan"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_001169.json:
     "body": "Assignee: somebody\n\nCC:  @vbraun\n\nI've written a more cache-friendly version of NTL's FFT routines. This may speed up NTL's polynomial arithmetic for polynomials of very high degree (e.g. > 100000) with small coefficients. For example I get a speedup of about 2x on sage.math.\n\nBEFORE INCLUDING IN SAGE, someone needs to write some automatic tuning code, otherwise it might GREATLY SLOW DOWN arithmetic for small polynomials, which would be very stupid. See my website for code and more details:\n\nhttp://math.harvard.edu/~dmharvey/code/ntl-fft/\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1169\n\n",
     "created_at": "2007-11-14T14:48:16Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "NTL cache-friendly FFT routines",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1169",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1169
 
 ---
 
-archive/issue_comments_007164.json:
+archive/issue_comments_007142.json:
 ```json
 {
     "body": "David,\n\nwhat is the status here? It seems that your website does contain the code.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-28T08:54:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7164",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7142",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -60,15 +58,15 @@ Michael
 
 ---
 
-archive/issue_comments_007165.json:
+archive/issue_comments_007143.json:
 ```json
 {
     "body": "Yes it does, but it doesn't have tuning code and I don't have time to work on it now. Without proper tuning it is just as likely to make things slower.",
     "created_at": "2008-11-28T13:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7165",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7143",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -78,15 +76,15 @@ Yes it does, but it doesn't have tuning code and I don't have time to work on it
 
 ---
 
-archive/issue_comments_007166.json:
+archive/issue_comments_007144.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-10-09T09:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7166",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7144",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -96,15 +94,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_007167.json:
+archive/issue_comments_007145.json:
 ```json
 {
     "body": "I think this code has been integrated (somehow) into NTL 6.0.\nSo #14876 should supercede this.",
     "created_at": "2013-10-09T09:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7167",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7145",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -115,15 +113,15 @@ So #14876 should supercede this.
 
 ---
 
-archive/issue_comments_007168.json:
+archive/issue_comments_007146.json:
 ```json
 {
     "body": "NTL 6.0.0 is on its way.",
     "created_at": "2013-12-31T12:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7168",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7146",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -133,15 +131,15 @@ NTL 6.0.0 is on its way.
 
 ---
 
-archive/issue_comments_007169.json:
+archive/issue_comments_007147.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-12-31T12:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7169",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7147",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -151,15 +149,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_007170.json:
+archive/issue_comments_007148.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2014-01-04T02:22:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1169",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7170",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/1169#issuecomment-7148",
+    "user": "https://github.com/vbraun"
 }
 ```
 

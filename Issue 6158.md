@@ -6,7 +6,7 @@ archive/issues_006158.json:
     "body": "Assignee: tba\n\n\n```\nsphinx-build -b html -d /usr/local/sage/devel/sage/doc/output/doctrees/en/tutorial   .  /usr/local/sage/devel/sage/doc/output/html/en/tutorial\nSphinx v0.5.1, building html\nloading pickled environment... done\nbuilding [html]: targets for 0 source files that are out of date\nupdating environment: 0 added, 0 changed, 0 removed\nno targets are out of date.\nBuild finished.  The built documents can be found in /usr/local/sage/devel/sage/doc/output/html/en/tutorial\nTraceback (most recent call last):\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 667, in <module>\n    getattr(get_builder(name), type)()\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 258, in _wrapper\n    getattr(get_builder(document), name)(*args, **kwds)\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 348, in _wrapper\n    for module_name in self.get_modified_modules():\n  File \"/usr/local/sage/devel/sage/doc/common/builder.py\", line 415, in get_modified_modules\n    added, changed, removed = env.get_outdated_files(False)\n  File \"/usr/local/sage/local/lib/python2.5/site-packages/Sphinx-0.5.1-py2.5.egg/sphinx/environment.py\", line 400, in get_outdated_files\n    newmtime = path.getmtime(self.doc2path(docname))\n  File \"/usr/local/sage/local/lib/python2.5/posixpath.py\", line 143, in getmtime\n    return os.stat(filename).st_mtime\nOSError: [Errno 2] No such file or directory: '/usr/local/sage/devel/sage-main/doc/en/reference/rings_padic.rst'\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6158\n\n",
     "created_at": "2009-05-30T15:37:10Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006158.json:
     "title": "upgrading sphix problem: any upgrade to sage-4.0 ends this way",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6158",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -54,15 +54,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6158
 
 ---
 
-archive/issue_comments_049124.json:
+archive/issue_comments_049029.json:
 ```json
 {
     "body": "A temporary workaround is to just do \n\n```\ntouch /usr/local/sage/devel/sage-main/doc/en/reference/rings_padic.rst\n```\n\n(or whatever the path is to rings_padic.rst) and then things continue fine.",
     "created_at": "2009-05-30T17:16:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49124",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49029",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -78,15 +78,15 @@ touch /usr/local/sage/devel/sage-main/doc/en/reference/rings_padic.rst
 
 ---
 
-archive/issue_comments_049125.json:
+archive/issue_comments_049030.json:
 ```json
 {
     "body": "I think we just need to remove the existing output directory before building the documentation.",
     "created_at": "2009-05-31T19:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49125",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49030",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -96,15 +96,15 @@ I think we just need to remove the existing output directory before building the
 
 ---
 
-archive/issue_comments_049126.json:
+archive/issue_comments_049031.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-31T19:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49126",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49031",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -114,15 +114,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_049127.json:
+archive/issue_comments_049032.json:
 ```json
 {
     "body": "Changing assignee from tba to @mwhansen.",
     "created_at": "2009-05-31T19:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49127",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49032",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -132,15 +132,15 @@ Changing assignee from tba to @mwhansen.
 
 ---
 
-archive/issue_comments_049128.json:
+archive/issue_comments_049033.json:
 ```json
 {
     "body": "Also, we should remove all of the autogenerated files in devel/sage/doc/en/reference/sage .",
     "created_at": "2009-05-31T19:32:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49128",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49033",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -150,15 +150,15 @@ Also, we should remove all of the autogenerated files in devel/sage/doc/en/refer
 
 ---
 
-archive/issue_comments_049129.json:
+archive/issue_comments_049034.json:
 ```json
 {
     "body": "These changes should do it:\n\n\n```\n--- install_old\t2009-05-31 12:40:34.000000000 -0700\n+++ install\t2009-05-31 12:40:37.000000000 -0700\n@@ -356,6 +356,11 @@\n # NOW do the actual build\n \n time make -f standard/deps $1\n+\n+\n+#Build the documentation\n+rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/output/doctrees\n+rm -rf \"$SAGE_ROOT\"/devel/sage-main/doc/en/reference/sage/*\n \"$SAGE_ROOT\"/sage -docbuild --jsmath all html\n \n if [ \"$1\" = \"all\" -a $? = 0 ]; then\n```\n",
     "created_at": "2009-05-31T19:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49129",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49034",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -187,15 +187,15 @@ These changes should do it:
 
 ---
 
-archive/issue_comments_049130.json:
+archive/issue_comments_049035.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-01T00:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49130",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49035",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -205,15 +205,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_049131.json:
+archive/issue_comments_049036.json:
 ```json
 {
     "body": "Merged in 4.0.1.alpha0.",
     "created_at": "2009-06-01T00:48:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49131",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6158#issuecomment-49036",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

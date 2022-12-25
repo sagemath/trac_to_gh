@@ -6,7 +6,7 @@ archive/issues_004797.json:
     "body": "Assignee: mabshoff\n\nCC:  @robertwb\n\nWhen upgrading Cython like at #4639 we should really run a -ba on upgrade and not just a -b since the new Cython version in this case does fix some fundamental issues the way exceptions are handled. In general I would be sleep much better if we do this in general since many potentially odd Heisenbugs that disappear after either a partial -b or a -ba would be avoided that way.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4797\n\n",
     "created_at": "2008-12-14T14:44:14Z",
     "labels": [
-        "packages",
+        "component: packages",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004797.json:
     "title": "upgrade -- if upgrading Cython run -ba instead of -b",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4797",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4797
 
 ---
 
-archive/issue_comments_036361.json:
+archive/issue_comments_036290.json:
 ```json
 {
     "body": "I can live with this issue being fixed in 3.3 since we will not upgrade Cython in 3.2.2->3.2.3.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-26T22:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36361",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36290",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -57,15 +57,15 @@ Michael
 
 ---
 
-archive/issue_comments_036362.json:
+archive/issue_comments_036291.json:
 ```json
 {
     "body": "Ooops. Reassigned this time :)\n\nCheers,\n\nMichael",
     "created_at": "2008-12-26T22:54:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36362",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36291",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +79,15 @@ Michael
 
 ---
 
-archive/issue_comments_036363.json:
+archive/issue_comments_036292.json:
 ```json
 {
     "body": "Does anybody have any idea how to implement this?   Here is one idea.  We make it so there is a command like \"sage -ba\" that doesn't actually rebuild the sage library, then we make the cython spkg-install call that command.  It could be called \"sage -ba_nobuild\" or something.  This is way better, I think, than \"sage -ba\" trying to detect if cython was upgraded.  \n\nThe disadvantage is that it might make testing installing the cython SPKG inconvenient.",
     "created_at": "2008-12-29T06:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36363",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36292",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -99,15 +99,15 @@ The disadvantage is that it might make testing installing the cython SPKG inconv
 
 ---
 
-archive/issue_comments_036364.json:
+archive/issue_comments_036293.json:
 ```json
 {
     "body": "Yes, this would make testing Cython spkgs a major pain. I think this probably best belongs in the upgrade script--it could touch all .pyx files after upgrading the Cython script.",
     "created_at": "2008-12-29T19:38:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36364",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36293",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -117,15 +117,15 @@ Yes, this would make testing Cython spkgs a major pain. I think this probably be
 
 ---
 
-archive/issue_comments_036365.json:
+archive/issue_comments_036294.json:
 ```json
 {
     "body": "Yes and no. When I test Cython releases I delete the build tree and then do a -ba anyway since that is the only reliable way to test. Obviously if someone is testing \"just\" the spkg this ought to be not enforced, so RobertWB's idea seems the way to go.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-29T19:42:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36365",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36294",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +139,15 @@ Michael
 
 ---
 
-archive/issue_comments_036366.json:
+archive/issue_comments_036295.json:
 ```json
 {
     "body": "Yep, when you test a Cython release (assuming I've done my job) it should just work. That's different when I'm hunting down a bug and want to keep re-compiling a certain file (e.g. that last memory leak).",
     "created_at": "2008-12-29T20:14:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36366",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36295",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -157,15 +157,15 @@ Yep, when you test a Cython release (assuming I've done my job) it should just w
 
 ---
 
-archive/issue_comments_036367.json:
+archive/issue_comments_036296.json:
 ```json
 {
     "body": "Changing priority from blocker to critical.",
     "created_at": "2009-06-15T23:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36367",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36296",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -175,15 +175,15 @@ Changing priority from blocker to critical.
 
 ---
 
-archive/issue_comments_036368.json:
+archive/issue_comments_036297.json:
 ```json
 {
     "body": "If we've released for months and months without fixing this, it doesn't make sense to keep it as a blocker.",
     "created_at": "2009-06-15T23:23:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36368",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36297",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -193,15 +193,15 @@ If we've released for months and months without fixing this, it doesn't make sen
 
 ---
 
-archive/issue_comments_036369.json:
+archive/issue_comments_036298.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"upgrade cython\".",
     "created_at": "2010-11-02T22:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36369",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36298",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -211,15 +211,15 @@ Changing keywords from "" to "upgrade cython".
 
 ---
 
-archive/issue_comments_036370.json:
+archive/issue_comments_036299.json:
 ```json
 {
     "body": "Changing priority from critical to blocker.",
     "created_at": "2010-11-02T22:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36370",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36299",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -229,15 +229,15 @@ Changing priority from critical to blocker.
 
 ---
 
-archive/issue_comments_036371.json:
+archive/issue_comments_036300.json:
 ```json
 {
     "body": "Changing component from packages to build.",
     "created_at": "2010-11-02T22:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36371",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36300",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -247,15 +247,15 @@ Changing component from packages to build.
 
 ---
 
-archive/issue_comments_036372.json:
+archive/issue_comments_036301.json:
 ```json
 {
     "body": "This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)\n\nAt least for upgrades to final versions, this should IMHO **never** be necessary.",
     "created_at": "2010-11-03T20:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36372",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36301",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -267,15 +267,15 @@ At least for upgrades to final versions, this should IMHO **never** be necessary
 
 ---
 
-archive/issue_comments_036373.json:
+archive/issue_comments_036302.json:
 ```json
 {
     "body": "P.S.: Explicitly touching some files in `spkg-install` that *are* contained in the extension modules' `include_dirs` can also avoid `sage -ba`, though of course a hack.",
     "created_at": "2010-11-03T20:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36373",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36302",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -285,33 +285,15 @@ P.S.: Explicitly touching some files in `spkg-install` that *are* contained in t
 
 ---
 
-archive/issue_comments_036374.json:
-```json
-{
-    "body": "Changing priority from blocker to major.",
-    "created_at": "2010-11-04T20:38:37Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/4797",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36374",
-    "user": "@jdemeyer"
-}
-```
-
-Changing priority from blocker to major.
-
-
-
----
-
-archive/issue_comments_036375.json:
+archive/issue_comments_036303.json:
 ```json
 {
     "body": "Replying to [comment:11 leif]:\n> This is just due to missing dependencies in `module_list.py`, so if everybody updating spkgs carefully checked them and added missing ones, this would be a non-issue. (And I consider it as such. Perhaps worth a work-around hint in the Developer's and / or Installation Guide.)\n\nI created ticket #10124 to implement this.",
     "created_at": "2010-11-04T20:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36375",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36303",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -324,15 +306,15 @@ I created ticket #10124 to implement this.
 
 ---
 
-archive/issue_comments_036376.json:
+archive/issue_comments_036304.json:
 ```json
 {
     "body": "Replying to [comment:13 jdemeyer]:\n> I created ticket #10124 to implement this.\n\n#10214",
     "created_at": "2010-11-04T21:53:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36376",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36304",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -345,15 +327,15 @@ Replying to [comment:13 jdemeyer]:
 
 ---
 
-archive/issue_comments_036377.json:
+archive/issue_comments_036305.json:
 ```json
 {
     "body": "Running `sage -ba` *explicitly* is not even necessary upon (true) Cython upgrades, though we could implement this in `spkg/install`.\n\nWe just have to make any Cython file / extension module depend on a single, distinct file of the Cython distribution (e.g. header) and preferably make sure this is *only* touched when really necessary.\n\nTherefore it would make sense to use a Sage-specific file for such, which is created and managed by our `spkg-install` for Cython.\n\nPeople upgrading the Cython package will best know if a complete rebuild will be necessary, depending on the Cython version found in the current installation subject to upgrade.",
     "created_at": "2010-11-04T22:11:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36377",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36305",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -369,15 +351,15 @@ People upgrading the Cython package will best know if a complete rebuild will be
 
 ---
 
-archive/issue_comments_036378.json:
+archive/issue_comments_036306.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2012-10-05T08:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36378",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36306",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -387,15 +369,15 @@ Resolution: worksforme
 
 ---
 
-archive/issue_comments_036379.json:
+archive/issue_comments_036307.json:
 ```json
 {
     "body": "Closing this since I haven't seen this problem at all recently.",
     "created_at": "2012-10-05T08:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4797",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36379",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4797#issuecomment-36307",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

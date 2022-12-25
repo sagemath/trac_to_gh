@@ -6,15 +6,14 @@ archive/issues_001545.json:
     "body": "Assignee: @williamstein\n\nRichard B. Kreckel suggested in http://gmplib.org/list-archives/gmp-bugs/2007-December/000892.html to add `#include cstdio>` to `gmp.h`:\n\n```\nHi Torbjorn!\n\nThere's this line in gmp.h.\n\nBut std::FILE hasn't been defined and with a conforming C++ compiler it \nwon't be unless <cstdio> has been included before <gmp.h>. Note that \nincluding <stdio.h> is not enough, as it doesn't define namespace std. \nSo, defined(__cplusplus) and including <stdio.h> is not enough to \nguarantee that std::FILE is known to the compiler.\n\nApparently, the intent is to avoid including stdio.h or cstdio. Why? I \nwould suggest including it.\n\nBesides, these using declarations are considered bad practice in header \nfiles. It would be better defining GMP_FILE or similar to either expand \nto FILE or std::FILE and use that instead of FILE.\n\nCheers\n   -richy.\n```\n\nI can only second that and we should do it per default since I have been bitten by this issue numerous times during the gcc 4.3 port. This should be during while doing #542 \"get gmp-4.2.2 into SAGE\"\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1545\n\n",
     "created_at": "2007-12-17T03:36:06Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "gmp 4.2.2: add #include <cstdio> in gmp.h",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1545",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -57,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1545
 
 ---
 
-archive/issue_comments_009864.json:
+archive/issue_comments_009838.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-15T20:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1545#issuecomment-9864",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1545#issuecomment-9838",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -75,15 +74,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009865.json:
+archive/issue_comments_009839.json:
 ```json
 {
     "body": "This has been fixed in #2929.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-15T20:33:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1545",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1545#issuecomment-9865",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1545#issuecomment-9839",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

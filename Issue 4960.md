@@ -6,15 +6,14 @@ archive/issues_004960.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein @mwhansen\n\n\n```\nHello,\n\nI'm running my server with account creation disabled and when I want\nto add a user I restart it briefly with notebook(...,accounts=true)\n\nStage 1:\nI through the \"create a new account\" procedure without trying the\nnewly created user then immediately restarts the server with accounts\ndisabled (as I don't want to run too much with account creation open)\nI try to log in -> the user \"doesn't exist\".\n\nStage 2:\nI restart the server accounts=true, create the user and log in a first\ntime with the newly created account, then logout and restart the\nserver with accounts creation disabled.\nSame error, user doesn't exist anymore.\n\nStage 3:\n- Create account\n- Log in with it\n- Create a new (first) worksheet\n- Logout\n- Restart the server\n- Alleluia the user finally exists and can log in.\n\nApparently existence of the user seems to be linked to the existence\nof a first sheet or at least the user directory under .sage/\nsage_notebook/worksheets/\n\nI would rather expect stage1 to be enough to create a new account,\nmaybe creating the user directory during what is supposed to be the\ninitial user creation would be enough?\n\nPhil\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4960\n\n",
     "created_at": "2009-01-09T22:50:11Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "issue with user account creation in the notebook",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4960",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -68,15 +67,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4960
 
 ---
 
-archive/issue_comments_037703.json:
+archive/issue_comments_037631.json:
 ```json
 {
     "body": "I cannot replicate this issue anymore. Can someone confirm and close?",
     "created_at": "2010-01-17T09:05:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4960",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37703",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37631",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -86,15 +85,15 @@ I cannot replicate this issue anymore. Can someone confirm and close?
 
 ---
 
-archive/issue_comments_037704.json:
+archive/issue_comments_037632.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-17T11:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4960",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37704",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37632",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -104,15 +103,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_037705.json:
+archive/issue_comments_037633.json:
 ```json
 {
     "body": "Probably our rewrite fixed this...",
     "created_at": "2010-01-17T11:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4960",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37705",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4960#issuecomment-37633",
+    "user": "https://github.com/williamstein"
 }
 ```
 

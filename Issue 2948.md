@@ -6,7 +6,7 @@ archive/issues_002948.json:
     "body": "Assignee: @cswiercz\n\nKeywords: doctest, docstring, documentation, quotient_ring.py\n\nProvide missing docstrings and doctests for rings/quotient_ring.py. Also provide additional doctests for several functions i.e. imporve the quality of the doctests in this file.\n\n* SCORE quotient_ring.py: 54% (12 of 22)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2948\n\n",
     "created_at": "2008-04-17T22:36:52Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002948.json:
     "title": "(Additional) Docstrings and Doctests for rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2948",
-    "user": "@cswiercz"
+    "user": "https://github.com/cswiercz"
 }
 ```
 Assignee: @cswiercz
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2948
 
 ---
 
-archive/issue_comments_020330.json:
+archive/issue_comments_020288.json:
 ```json
 {
     "body": "Chris,\n\nIs this on top of #2507? If so you should clearly indicate that.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-17T23:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20330",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20288",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -57,15 +57,15 @@ Michael
 
 ---
 
-archive/issue_comments_020331.json:
+archive/issue_comments_020289.json:
 ```json
 {
     "body": "Attachment [2948.patch](tarball://root/attachments/some-uuid/ticket2948/2948.patch) by @jhpalmieri created at 2008-09-26 19:09:29\n\nI'm providing a patch. The doctesting that I'm providing is pretty superficial -- it doesn't show any of the limitations of the code, for example. If someone who knows the stuff better wants to add more, please go ahead.",
     "created_at": "2008-09-26T19:09:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20331",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20289",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -77,15 +77,15 @@ I'm providing a patch. The doctesting that I'm providing is pretty superficial -
 
 ---
 
-archive/issue_comments_020332.json:
+archive/issue_comments_020290.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha2",
     "created_at": "2008-09-27T00:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20332",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20290",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -95,15 +95,15 @@ Merged in Sage 3.1.3.alpha2
 
 ---
 
-archive/issue_comments_020333.json:
+archive/issue_comments_020291.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-27T00:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20333",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2948#issuecomment-20291",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

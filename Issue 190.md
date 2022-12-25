@@ -6,15 +6,14 @@ archive/issues_000190.json:
     "body": "Assignee: @williamstein\n\nBug reported by Andrey Novoseltsev\n\nThis is disturbing.\n\n\n```\na=matrix(2,2,[1,2,3,4]); a\n///\n[1 2]\n[3 4]\n```\n\n\n\n```\na.row(1.5)\n///\n(3, 4)\n```\n\n\n\n```\na[1.5]\n///\n(3, 4)\n```\n\n\n\n```\na[1]\n///\n(3, 4)\n```\n\n\n\n```\na[1.4, 0.8]\n///\n3\n```\n\n\n\n```\na[1,0]\n///\n3\n```\n\n\nThe unfortunate thing is that SageX converts things to Py_ssize_t without\nany type checking.  Maybe this is way faster ...  Anyway, it should be possible\nto instead call whatever C library function __getitem__ uses, which would then\nhave the right behavior. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/190\n\n",
     "created_at": "2007-01-13T09:05:16Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "fractional matrix indices are allowed ?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/190",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -87,15 +86,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/190
 
 ---
 
-archive/issue_comments_000858.json:
+archive/issue_comments_000855.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to linear algebra.",
     "created_at": "2007-08-18T17:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-858",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-855",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing component from algebraic geometry to linear algebra.
 
 ---
 
-archive/issue_comments_000859.json:
+archive/issue_comments_000856.json:
 ```json
 {
     "body": "Conclusion: call __index__\n\n\n```\n[10:28] <william> what do people think aabout #190?\n[10:28] <william> The issue is that detecting fractional matrix indices will slow matrix indexing down.\n[10:28] <dmharvey> that's pretty funny\n[10:28] <mabshoff> Not sure yet.\n[10:29] <william> Maybe a[0.5] could be the average of rows 0 and 1 ??  :-)\n[10:29] <mabshoff> I am checking if the patch for #226 still applies.\n[10:29] <robert457965> well, if it were a 0 by 0 matrix, you could just call iszero()\n[10:29] <dmharvey> where is the code for that indexing method?\n[10:29] <william> matrix/matrix0.pyx\n[10:29] <william> around line 538\n[10:30] <william> by the way, when people fix things, if you give them to me somehow, I can post them so\n[10:30] <william> everybody else can get them with hg_sage.pull().\n[10:30] <mabshoff> re #226 (with slight editing to account for pyrex->Cython:\n[10:30] <mabshoff> patching file Cython/Compiler/ExprNodes.py\n[10:30] <mabshoff> Hunk #1 succeeded at 2823 with fuzz 1 (offset 229 lines).\n[10:31] <mabshoff> I will rebuild cython and then sage-2.8\n[10:31] <william> does the bug still happen?\n[10:32] <william> are you sure the patch is needed?\n[10:32] <mabshoff> you mean: is it fixed without applying the patch?\n[10:32] <william> yes\n[10:32] <mabshoff> Not yet, but I will test with the original cython.\n[10:32] <william> what's your test input?\n[10:32] <william> i'll just wait..\n[10:33] <mabshoff> There is a regression.pyx attached to the ticket. Give me a minute to sort it all out.\n[10:34] <william> ok.\n[10:34] <william> dmharvey -- are you looking at #190?\n[10:34] <dmharvey> #190: do matrix subclasses generally override the getitem/setitme methods?\n[10:34] <william> one bad thing is:  return self.row(int(key))\n[10:35] <mabshoff> [mabshoff@m940 sage-2.8.1]$ cython regression.pyx\n[10:35] <mabshoff> [mabshoff@m940 sage-2.8.1]$\n[10:35] <william> no, they enver do.\n[10:35] <mabshoff> That is without the patch.\n[10:35] <dmharvey> ok\n[10:35] <william> (regarding #190)\n[10:35] <mabshoff> So #226 can be closed then.\n[10:35] <william> not until i have the patch and have tested it too :-)\n[10:36] <mabshoff> It was the original cython without the patch applied.\n[10:36] <dmharvey> #190: so I guess the real question is: if someone tries to index on something like a Rational, which happens to be an integer, should that be allowed?\n[10:36] <william> it's a simple patch.\n[10:36] <william> ok.\n[10:36] <william> #226 - oh -- it already works -- no patch needed?\n[10:36] <mabshoff> Yes.\n[10:36] <william> #190: yes.\n[10:37] <william> #226: where is regression.pyx\n[10:37] <mabshoff> The report for #226 was for pyrex 0.9.4.1, roughly 7 months old.\n[10:37] <william> ok. mabshoff - you can have the honors of closing the bug.\n[10:37] <mabshoff> attached to the ticket.\n[10:38] <dmharvey> #190: well then it's tricky.... at some point you need to just trying to coerce to an integer index. But floats get rounded when you do that.\n[10:38] <mabshoff> Mmh, I have to remember my trac password.\n[10:38] <william> #190: what does magma do?\n[10:39] <mabshoff> re #226: Reported by:  was\n[10:39] <dmharvey> #190: actually there are two separate issues. One is speed; we could make the pathway faster by adding special code to test for Integer/int index. Second is sanity; are fractional indices allowed.\n[10:39] <dmharvey> #190: let me check on magma; never done matrices before so gimme a few minutes\n[10:39] <william> you are convincing me that we should just give an error if the input isn't int,long,Integer.\n[10:39] <william> wait -- can't we have a fast version, and if that doesn't work, have a slow version?\n[10:40] <mabshoff> william: How should we handle fixed bugs?\n[10:40] <mabshoff> Add some text (in this case) stating: Was fixed in a previous release of cython.\n[10:40] <william> for the sage library, make them available to me in any way, and I'll (1) put them in the official\n[10:40] <mabshoff> cython regressioin.pyx works.\n[10:40] <william> hg repository; for other things, I'll put them in /home/was/bug/\n[10:41] <william> oh -- and post verbosely to trac!\n[10:41] --> ncalexan has joined this channel (n=user@d207-216-25-207.bchsia.telus.net).\n[10:41] <william> hi nick.\n[10:41] <william> where you at?\n[10:41] <ncalexan> Hi folks... I can't stay long, relaxing with the family, but thought I'd see how things were.\n[10:41] <ncalexan> Victoria, BC.\n[10:41] <dmharvey> #190: magma raises an error \"Runtime error in '[]': Bad argument types\"\n[10:41] <ncalexan> You?\n[10:41] <william> i wonder what nick things.\n[10:41] <william> nick thinks.\n[10:42] <william> nick, if a is a matrix, and n = QQ(5), should a[n,n] be an error or not?\n[10:42] <dmharvey> #190: my preference is to allow only int/long/Integer\n[10:42] <dmharvey> hi nick\n[10:42] --> paulolivier_sage has joined this channel (i=8143024e@gateway/web/cgi-irc/ircatwork.com/x-f7a7e0b894111559).\n[10:42] <william> wait!\n[10:42] <-- paulolivier_sage has left this server (Client Quit).\n[10:42] <william> we should do whatever python lists do, shouldn't we?\n[10:42] <ncalexan> Yes.  That's a reasonable answer.\n[10:43] <william> also, we should look at what numpy arrays and matrices do.\n[10:43] <dmharvey> sure\n[10:43] <ncalexan> That probably means calling __int__ or something similar, no?\n[10:43] <william> python lists have an __index__ protocol as of python 2.5.\n[10:43] --> pauloliviersage has joined this channel (i=8143024e@gateway/web/cgi-irc/ircatwork.com/x-539b7d4cf887a650).\n[10:43] <william> NO.\n[10:43] <ncalexan> Yeah, I think we best stick with that then.\n[10:43] <ncalexan> ?\n[10:43] <william> #190: A python list will call __index__ and if that works, use it. otherwise fail.\n[10:44] <william> So anybody can make their own new class that can index into lists, etc., if they want.\n[10:44] <dmharvey> #190: ah that explains why you can index on an Integer\n[10:44] <william> I used to have to do this crap in the preparser: v = [1,2,3]\n[10:44] <william> v[Integer(2)]\n[10:44] <william> it totally sucked.\n[10:44] <william> We don't want to make SAGE users who make new classes suffer that way.\n[10:44] <william> #190 -- where?\n[10:45] <dmharvey> #190: sorry, I mean for a python list\n[10:45] <william> there must be a python/c api call to get foo.__index__()\n[10:45] <dmharvey> #190, i.e. v[Integer(2)] works, but v[2.5] doesn't\n[10:45] <ncalexan> Why was it bad?\n[10:45] <william> #190: yep, that's good.\n[10:45] <william> but if somebody wanted to make their own \"2.5\" and define an index method on it, then it would work.\n[10:45] <william> That's the best way to go.\n[10:45] <mabshoff> Ok, I close #226\n[10:45] <mabshoff> +d\n[10:46] <william> thanks!\n[10:46] <william> 3 down.\n[10:46] <ncalexan> Ah, so it was too slow?\n[10:46] <mabshoff> But I think I found a bug in cython.\n[10:46] <william> 33 to go.\n[10:46] <william> report the cython bug to track\n[10:46] <mabshoff> cython -v doesn't work as expected.\n[10:46] <dmharvey> #190: so conclusion is that Matrix.__getitem__ should use call __index__? instead of coercing to int?\n[10:46] <william> #190: no -- the problem was that it wasn't meaningful\n[10:46] <mabshoff> It just prints the standard help text.\n[10:46] <william> #190 http://www.sagemath.org:9002/sage_trac/ticket/190\n[10:47] <william> mabshoff -- agreed.  report it.\n[10:47] <william> #190: use.\n[10:47] <william> #190: dmharvey -- yes.\n[10:47] <dmharvey> #190: ok I will try to code thisup\n[10:48] <william> thanks!!\n[10:48] <william> i'm pasting this part of the transcript from irc into trac, since it explains the decision well.\n```\n",
     "created_at": "2007-08-18T17:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-859",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-856",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -248,15 +247,15 @@ Conclusion: call __index__
 
 ---
 
-archive/issue_comments_000860.json:
+archive/issue_comments_000857.json:
 ```json
 {
     "body": "Attachment [trac190-1.patch](tarball://root/attachments/some-uuid/ticket190/trac190-1.patch) by dmharvey created at 2007-08-18 18:51:42\n\npartial fix for bug",
     "created_at": "2007-08-18T18:51:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-860",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-857",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -268,15 +267,15 @@ partial fix for bug
 
 ---
 
-archive/issue_comments_000861.json:
+archive/issue_comments_000858.json:
 ```json
 {
     "body": "I just attached a partial fix: this addresses the `M[1.5]` problem, but still doesn't deal with `M.row(1.5)` --- robertwb has proposed a cython language change to deal with this (changing `size_t` conversions to go via `__index__`)",
     "created_at": "2007-08-18T18:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-861",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-858",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -286,15 +285,15 @@ I just attached a partial fix: this addresses the `M[1.5]` problem, but still do
 
 ---
 
-archive/issue_comments_000862.json:
+archive/issue_comments_000859.json:
 ```json
 {
     "body": "see also #440, regarding speed of indexing off Integer objects",
     "created_at": "2007-08-18T18:57:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-862",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-859",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -304,15 +303,15 @@ see also #440, regarding speed of indexing off Integer objects
 
 ---
 
-archive/issue_comments_000863.json:
+archive/issue_comments_000860.json:
 ```json
 {
     "body": "fixed with the attached patch and improvements to cython.",
     "created_at": "2007-08-18T20:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-863",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-860",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -322,15 +321,15 @@ fixed with the attached patch and improvements to cython.
 
 ---
 
-archive/issue_comments_000864.json:
+archive/issue_comments_000861.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-18T20:58:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-864",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-861",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -340,15 +339,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000865.json:
+archive/issue_comments_000862.json:
 ```json
 {
     "body": "Replying to [comment:2 dmharvey]:\n> I just attached a partial fix: this addresses the `M[1.5]` problem, but still doesn't deal with `M.row(1.5)` --- robertwb has proposed a cython language change to deal with this (changing `size_t` conversions to go via `__index__`)\n\nThis has now been fixed in Cython.",
     "created_at": "2007-08-19T00:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/190",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-865",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/190#issuecomment-862",
+    "user": "https://github.com/robertwb"
 }
 ```
 

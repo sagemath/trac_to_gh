@@ -6,15 +6,14 @@ archive/issues_006852.json:
     "body": "Assignee: tbd\n\nKeywords: solaris SCons\n\nYet one more issue that arrises on Solaris with SCons. This is on an old Sun Ultra 80, 4 x 450 MHz, 4 GB RAM, running the very first release of Solaris 10 (03/2005).  \n\nSage 4.1.1\n\nThis is fresh install of Solaris 10. There is nothing added to this - no new gcc, no Sun Studio. It set the machine up specifically to help test Sage and ECL on Solaris 03/2005. \n\n\n```\n\nx cliquer-1.2/.hg/00changelog.i, 57 bytes, 1 tape blocks\nx cliquer-1.2/.hg/requires, 23 bytes, 1 tape blocks\nx cliquer-1.2/.hg/undo.branch, 7 bytes, 1 tape blocks\nx cliquer-1.2/.hg/dirstate, 147 bytes, 1 tape blocks\nx cliquer-1.2/.hg/undo.dirstate, 147 bytes, 1 tape blocks\nx cliquer-1.2/SConstruct, 301 bytes, 1 tape blocks\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS goose 5.10 Generic sun4u sparc SUNW,Ultra-80\n****************************************************\n****************************************************\nCC Version\n/usr/sfw/bin/gcc -v\nReading specs from /usr/sfw/lib/gcc/sparc-sun-solaris2.10/3.4.3/specs\nConfigured with: /gates/sfw10/builds/sfw10-gate/usr/src/cmd/gcc/gcc-3.4.3/configure --prefix=/usr/sfw --with-as=/usr/sfw/bin/gas --with-gnu-as --with-ld=/usr/ccs/bin/ld --without-gnu-ld --enable-languages=c,c++ --enable-shared\nThread model: posix\ngcc version 3.4.3 (csl-sol210-3_4-branch+sol_rpath)\n****************************************************\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Building targets ...\ncc -o src/so_cl.o -c -KPIC src/cl.c\nsh: cc: not found\nscons: *** [src/so_cl.o] Error 1\nscons: building terminated because of errors.\n\nreal    0m11.561s\nuser    0m9.580s\nsys     0m1.532s\nsage: An error occurred while installing cliquer-1.2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\nof /export/home/drkirkby/sage-4.1.1/install.log.  Describe your computer, operating system, etc.\nIf you want to try to fix the problem, yourself *don't* just cd to\n/export/home/drkirkby/sage-4.1.1/spkg/build/cliquer-1.2 and type 'make'.\nInstead type \"/export/home/drkirkby/sage-4.1.1/sage -sh\"\nin order to set all environment variables correctly, then cd to\n/export/home/drkirkby/sage-4.1.1/spkg/build/cliquer-1.2\n(When you are done debugging, you can type \"exit\" to leave the\nsubshell.)\nmake[1]: *** [installed/cliquer-1.2] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.1.1/spkg'\n\nreal    23m21.646s\nuser    18m45.421s\nsys     4m33.002s\nError building Sage.\n$ echo $CC\n/usr/sfw/bin/gcc\n$\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6852\n\n",
     "created_at": "2009-08-31T14:34:53Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cliquer-1.2 fails to build as it cant find Sun compiler (SCons issue)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6852",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -95,15 +94,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6852
 
 ---
 
-archive/issue_comments_056500.json:
+archive/issue_comments_056397.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-10-20T13:54:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6852",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6852#issuecomment-56500",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6852#issuecomment-56397",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

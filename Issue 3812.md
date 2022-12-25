@@ -6,15 +6,14 @@ archive/issues_003812.json:
     "body": "Assignee: @malb\n\nKeywords: ideal apply_morphism morphism apply\n\napply_morphism is so useful on matrices, and I didn't know that psi(J) was valid for ideals -- so here is documentation and tests for both functions for general ideals.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3812\n\n",
     "created_at": "2008-08-12T05:30:18Z",
     "labels": [
-        "commutative algebra",
-        "minor",
-        "enhancement"
+        "component: commutative algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "add apply_morphism to ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3812",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @malb
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3812
 
 ---
 
-archive/issue_comments_027094.json:
+archive/issue_comments_027036.json:
 ```json
 {
     "body": "Attachment [3812-ncalexan-number-field-ideal-apply-morphism.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism.patch) by @ncalexan created at 2008-08-12 05:31:04",
     "created_at": "2008-08-12T05:31:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27094",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27036",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [3812-ncalexan-number-field-ideal-apply-morphism.patch](tarball://roo
 
 ---
 
-archive/issue_comments_027095.json:
+archive/issue_comments_027037.json:
 ```json
 {
     "body": "The __call__ method on morphisms implements the same thing already.\n\n```\nsage: psi = CC['x'].hom([-CC['x'].0]) \nsage: J = ideal([CC['x'].0 + 1]); J \nPrincipal ideal (1.00000000000000*x + 1.00000000000000) of Univariate Polynomial Ring in x over Complex Field with 53 bits of precision\nsage: psi(J)\nPrincipal ideal ((-1.00000000000000)*x + 1.00000000000000) of Univariate Polynomial Ring in x over Complex Field with 53 bits of precision\n```\n\n\nThus it seems to me that  the following three lines \n\n\n```\n \t337\t        R = phi.codomain() \n \t338\t        image = R.ideal([phi(z) for z in self.gens()]) \n \t339\t        return image \n```\n\n\nshould be replaced by\n\n```\nreturn phi(R)\n```\n\n\n -- William",
     "created_at": "2008-08-13T02:48:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27095",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27037",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -95,15 +94,15 @@ return phi(R)
 
 ---
 
-archive/issue_comments_027096.json:
+archive/issue_comments_027038.json:
 ```json
 {
     "body": "Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://root/attachments/some-uuid/ticket3812/3812-ncalexan-number-field-ideal-apply-morphism-2.patch) by @ncalexan created at 2008-08-13 22:03:26\n\n`3812-ncalexan-number-field-ideal-apply-morphism-2.patch` replaces earlier patch and addresses referee comment.",
     "created_at": "2008-08-13T22:03:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27096",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27038",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -115,15 +114,15 @@ Attachment [3812-ncalexan-number-field-ideal-apply-morphism-2.patch](tarball://r
 
 ---
 
-archive/issue_comments_027097.json:
+archive/issue_comments_027039.json:
 ```json
 {
     "body": "Changing assignee from @malb to @ncalexan.",
     "created_at": "2008-08-18T14:06:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27097",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27039",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -133,15 +132,15 @@ Changing assignee from @malb to @ncalexan.
 
 ---
 
-archive/issue_comments_027098.json:
+archive/issue_comments_027040.json:
 ```json
 {
     "body": "In view of William's comment that this already works, do we need the patch at all?  In other words, why implement a function I.apply_morphism(tau) when all it does is tau(I)?\n\nHaving said that, the patch does apply ok and works.",
     "created_at": "2008-08-23T17:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27098",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27040",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -153,15 +152,15 @@ Having said that, the patch does apply ok and works.
 
 ---
 
-archive/issue_comments_027099.json:
+archive/issue_comments_027041.json:
 ```json
 {
     "body": "John: Is this a positive review? I am changing this to \"needs review\" so it is picked up by the right reports.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-06T05:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27099",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27041",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -175,15 +174,15 @@ Michael
 
 ---
 
-archive/issue_comments_027100.json:
+archive/issue_comments_027042.json:
 ```json
 {
     "body": "Attachment [3812_doctest.patch](tarball://root/attachments/some-uuid/ticket3812/3812_doctest.patch) by @JohnCremona created at 2009-04-06 09:35:00\n\nApply after previous patch",
     "created_at": "2009-04-06T09:35:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27100",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27042",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -195,15 +194,15 @@ Apply after previous patch
 
 ---
 
-archive/issue_comments_027101.json:
+archive/issue_comments_027043.json:
 ```json
 {
     "body": "Apologies.  My original thought had been that this was unnecessary, but now (in the light of many more months of Sage experience) I can see that it is a Good Thing, since anyone with an ideal can now see that apply_morphism() is something valid to do to the ideal.\n\nThe patch applies fine to 3.4.1.rc0.  Some doctests needed purely cosmetic adjustments (halrdly surprising after 8 months) which are in the patch 3812_doctest.patch (which need to be applied after Nick's patch).",
     "created_at": "2009-04-06T09:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27101",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27043",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -215,15 +214,15 @@ The patch applies fine to 3.4.1.rc0.  Some doctests needed purely cosmetic adjus
 
 ---
 
-archive/issue_comments_027102.json:
+archive/issue_comments_027044.json:
 ```json
 {
     "body": "Ok, looking at all the patches it seems that 3812_doctest.patch contains the previous latest release of Nick's patch with the doctest fix by John. The credit of the patch still goes to Nick, so assuming this patch only passes doctests for me I will merge it shortly. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-11T00:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27102",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27044",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -237,15 +236,15 @@ Michael
 
 ---
 
-archive/issue_comments_027103.json:
+archive/issue_comments_027045.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-11T01:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27103",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27045",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -255,15 +254,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_027104.json:
+archive/issue_comments_027046.json:
 ```json
 {
     "body": "Merged 3812_doctest.patch **only** in Sage 3.4.1.rc2.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-11T01:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27104",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27046",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -277,15 +276,15 @@ Michael
 
 ---
 
-archive/issue_comments_027105.json:
+archive/issue_comments_027047.json:
 ```json
 {
     "body": "Replying to [comment:9 mabshoff]:\n> Merged 3812_doctest.patch **only** in Sage 3.4.1.rc2.\n> \n> Cheers,\n> \n> Michael\nSorry for the confusion: you are right, 100% credit to Nick and the last patch on its own includes his original plus my trivial fix.  John",
     "created_at": "2009-04-11T13:46:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3812",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27105",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3812#issuecomment-27047",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 

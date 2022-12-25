@@ -6,15 +6,13 @@ archive/issues_006426.json:
     "body": "Assignee: tbd\n\nCC:  @JohnCremona @craigcitro @unzvfu @williamstein @ncalexan @mstreng\n\nThis is a repository of Magma code for arithmetic geometry and number theory.  The latest spkg is echidna-2.0.spkg, can be downloaded from:\n\nhttp://echidna.maths.usyd.edu.au/kohel/alg/\n\nThis should be tested with the Sage worksheet:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.sws\n\nA printed pdf version is here:\n\nhttp://echidna.maths.usyd.edu.au/kohel/doc/ECHIDNA.pdf\n\nThis spkg is submitted for consideration as an optional \npackage.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6426\n\n",
     "created_at": "2009-06-26T17:27:06Z",
     "labels": [
-        "algebra",
-        "major",
-        "enhancement"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "ECHIDNA (Elliptic Curves and Higher Dimensional Analogues)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6426",
-    "user": "kohel"
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 Assignee: tbd
@@ -45,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6426
 
 ---
 
-archive/issue_comments_051598.json:
+archive/issue_comments_051501.json:
 ```json
 {
     "body": "Attachment [echidna.patch](tarball://root/attachments/some-uuid/ticket6426/echidna.patch) by kohel created at 2009-06-26 17:27:22",
     "created_at": "2009-06-26T17:27:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51598",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51501",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -63,15 +61,15 @@ Attachment [echidna.patch](tarball://root/attachments/some-uuid/ticket6426/echid
 
 ---
 
-archive/issue_comments_051599.json:
+archive/issue_comments_051502.json:
 ```json
 {
     "body": "I was wondering why the 'sage.echinda.*' entries were added to setup.py.  Where are these modules coming from?",
     "created_at": "2009-06-26T17:44:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51599",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51502",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -81,15 +79,15 @@ I was wondering why the 'sage.echinda.*' entries were added to setup.py.  Where 
 
 ---
 
-archive/issue_comments_051600.json:
+archive/issue_comments_051503.json:
 ```json
 {
     "body": "I installed the spkg but got\n\n```\nUser error: Identifier 'attach_echidna' has not been declared or assigned\n```\n\nwhen trying `magma.attach_echidna()`.  Presumably my magma paths are not setup correctly?\n\nAlso, this patch might be malformed.  (Did you use the hg export -o option?  That stupidly appends rather than overwrites, causing me some grief for a time.)",
     "created_at": "2009-06-26T22:00:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51600",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51503",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -107,15 +105,15 @@ Also, this patch might be malformed.  (Did you use the hg export -o option?  Tha
 
 ---
 
-archive/issue_comments_051601.json:
+archive/issue_comments_051504.json:
 ```json
 {
     "body": "Sorry, out of the above patch one only needs the single new function:\n\n    def attach_echidna(self):\n        \"\"\"\n        Attach the ECHIDNA code repository.\n        \"\"\"\n        from sage.misc.misc import SAGE_ROOT\n        self.attach_spec(SAGE_ROOT + '/data/extcode/echidna/echidna.spec') # optional - magma\n\nin sage/interfaces/magma.py file; the other changes are irrelevant.  I attach this file, which \nalso incorporates William's patch #6395.",
     "created_at": "2009-06-26T23:21:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51601",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51504",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -135,15 +133,15 @@ also incorporates William's patch #6395.
 
 ---
 
-archive/issue_comments_051602.json:
+archive/issue_comments_051505.json:
 ```json
 {
     "body": "I added a patch, to replace the entire magma.py which David attached.  Note that the patch was made after applying the (positively reviewd) patch at #6395, so that needs to be applied first.  Both the first two attachments can probably now be deleted.  Trying this out now...",
     "created_at": "2009-06-28T10:41:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51602",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51505",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -153,15 +151,15 @@ I added a patch, to replace the entire magma.py which David attached.  Note that
 
 ---
 
-archive/issue_comments_051603.json:
+archive/issue_comments_051506.json:
 ```json
 {
     "body": "The function magma.attach_echidna tries to use $SAGE_ROOT/data/extcode/echidna/echidna.spec  but the directory into which echidna has been installed is called data/extcode/echidna-2.0/.  I suggest changing the spkg-install script to make these agree: probably better not to have the version number in that pathname (since then the file magma.py would need changing every time there's a new version).\n\nI did not try changing the spkg myself.  I'll be happy to try this again when David has.\n\nI also changed the milestone to 4.1.1 since the required patch at #6395 has that milestone, but there's still the possibility of both getting into 4.1.",
     "created_at": "2009-06-28T10:48:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51603",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51506",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -175,15 +173,15 @@ I also changed the milestone to 4.1.1 since the required patch at #6395 has that
 
 ---
 
-archive/issue_comments_051604.json:
+archive/issue_comments_051507.json:
 ```json
 {
     "body": "I changed the spkg-install in echidna-2.0.spkg:\n\nhttp://echidna.maths.usyd.edu.au/kohel/alg/echidna-2.0.spkg\n\nMoreover, I put in an example in the attached magma.2.py \nand, realising that there was no detach function, added \nboth detach_spec and detach_echidna, so users can get back \nto a clean version of magma.",
     "created_at": "2009-06-28T16:44:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51604",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51507",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -200,15 +198,15 @@ to a clean version of magma.
 
 ---
 
-archive/issue_comments_051605.json:
+archive/issue_comments_051508.json:
 ```json
 {
     "body": "Oops, I will attach an update, since I forgot to include the error \nmessage, which results after detaching echidna, in the example for \ndetach_echidna.  Moreover, I had to reattach the Magma package files \nsince ECHIDNA was overwriting some of Magma's files.\n\nMoreover sage -t magma.py run cleanly for the wrong reasons. Doing\n\nsage -t --optional magma.py\n\nI found that there were lots of errors due to printing changes in \nMagma (tested against version 2.15-7).  To fix the doctests, I had \nto change \" to ''.  It is possible that this breaks ReST syntax. \nDoes someone want to check and, if so, come up with a solution?",
     "created_at": "2009-06-28T18:49:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51605",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51508",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -230,15 +228,15 @@ Does someone want to check and, if so, come up with a solution?
 
 ---
 
-archive/issue_comments_051606.json:
+archive/issue_comments_051509.json:
 ```json
 {
     "body": "Attachment [magma.2.py](tarball://root/attachments/some-uuid/ticket6426/magma.2.py) by kohel created at 2009-06-28 18:53:21",
     "created_at": "2009-06-28T18:53:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51606",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51509",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -248,15 +246,15 @@ Attachment [magma.2.py](tarball://root/attachments/some-uuid/ticket6426/magma.2.
 
 ---
 
-archive/issue_comments_051607.json:
+archive/issue_comments_051510.json:
 ```json
 {
     "body": "I'll have a look.  David, it would make it simpler (or at least more standard) if you attached a patch instead of a replacement file.  It's better since that way the system can keep track of the changes made (and who made them).",
     "created_at": "2009-06-28T19:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51607",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51510",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -266,15 +264,15 @@ I'll have a look.  David, it would make it simpler (or at least more standard) i
 
 ---
 
-archive/issue_comments_051608.json:
+archive/issue_comments_051511.json:
 ```json
 {
     "body": "Replaces previous, applies to 4.1.alpha2",
     "created_at": "2009-06-28T21:55:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51608",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51511",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -284,15 +282,15 @@ Replaces previous, applies to 4.1.alpha2
 
 ---
 
-archive/issue_comments_051609.json:
+archive/issue_comments_051512.json:
 ```json
 {
     "body": "Attachment [trac_6426.patch](tarball://root/attachments/some-uuid/ticket6426/trac_6426.patch) by @JohnCremona created at 2009-06-28 21:55:52\n\nThe new spkg works, and the new magma.py is ok (one minor doctest filaure in the __iter__ function which I have fixed).  See my attached match, which applies to 4.1.alpha2 and yields a correct magma.py.\n\nI ran into a lot of problems trying to evaluate the worksheet cells -- some Sage functions ins there (e.g. FunctionField(ZZ)) do not exist.  David, can you include an ordinary python file with these tests and demos in?  And if you have extra stuff implemented in Sage which the worksheet example need, why not include them (on a separate ticket) in Sage?  (There are some in magma.py but not many).\n\nI rebuilt the ref manual and it looks fine.\n\nI don't know what the magma2.py file is for -- I ignored it.",
     "created_at": "2009-06-28T21:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51609",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51512",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -310,15 +308,15 @@ I don't know what the magma2.py file is for -- I ignored it.
 
 ---
 
-archive/issue_comments_051610.json:
+archive/issue_comments_051513.json:
 ```json
 {
     "body": "In order to run the complete worksheet, one needs a could of python\ncommands:\n\nhttp://echidna.maths.usyd.edu.au/kohel/alg/sage/elliptic_curves.tgz\nhttp://echidna.maths.usyd.edu.au/kohel/alg/sage/function_fields.tgz\n\nfor which I have yet to make a trac ticket (the former file is still \nunder development and the latter one is a trivial user convenience).\nOne just needs to load the all.py in each directory after untarring.\n\nMoreover, for the database commands, the underlying files needed are:\n\nhttp://echidna.maths.usyd.edu.au/kohel/dbs/CrvG2.tgz\nhttp://echidna.maths.usyd.edu.au/kohel/dbs/IgusaLIX.tgz\nhttp://echidna.maths.usyd.edu.au/kohel/dbs/FldCM.tgz\n\nThe file magma.2.py resulted from not choosing \"replace\" on my first \nresubmission of magma.py, after which I replaced it with a note to \nignore it (since now the file magma.py is the latest).",
     "created_at": "2009-06-29T07:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51610",
-    "user": "kohel"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51513",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kohel"
 }
 ```
 
@@ -346,15 +344,15 @@ ignore it (since now the file magma.py is the latest).
 
 ---
 
-archive/issue_comments_051611.json:
+archive/issue_comments_051514.json:
 ```json
 {
     "body": "Changing assignee from tbd to @williamstein.",
     "created_at": "2009-07-11T11:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51611",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51514",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -364,15 +362,15 @@ Changing assignee from tbd to @williamstein.
 
 ---
 
-archive/issue_comments_051612.json:
+archive/issue_comments_051515.json:
 ```json
 {
     "body": "Changing component from algebra to number theory.",
     "created_at": "2009-07-11T11:31:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51612",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51515",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -382,15 +380,15 @@ Changing component from algebra to number theory.
 
 ---
 
-archive/issue_comments_051613.json:
+archive/issue_comments_051516.json:
 ```json
 {
     "body": "Ping. Is there still interest in this?",
     "created_at": "2016-08-19T22:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6426",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51613",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/6426#issuecomment-51516",
+    "user": "https://github.com/kedlaya"
 }
 ```
 

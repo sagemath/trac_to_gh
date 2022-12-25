@@ -6,15 +6,14 @@ archive/issues_002577.json:
     "body": "Assignee: @williamstein\n\nCC:  @ncalexan\n\nKeywords: diagonal_matrix vector iterable\n\nI don't like either of these behaviours -- why can't any old iterable thing go into diagonal_matrix?\n\n\n```\nsage: x = ZZ['x'].gen()\nsage: temp = NumberField(x^4 + x^3 + x^2 + x + 1, 'a')\nsage: diagonal_matrix(vector(1, 2))\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.vector()\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/free_module_element.pyx in sage.modules.free_module_element.prepare()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/structure/sequence.py in __init__(self, x, universe, check, immutable, cr, cr_str)\n    201                  immutable=False, cr=False, cr_str=None):\n    202         if not isinstance(x, (list, tuple)):\n--> 203             x = list(x)\n    204             #raise TypeError, \"x must be a list or tuple\"\n    205         self.__hash = None\n\n<type 'exceptions.TypeError'>: 'sage.rings.integer.Integer' object is not iterable\nsage: diagonal_matrix(vector(temp(1), temp(2)))\n---------------------------------------------------------------------------\n<type 'exceptions.UnboundLocalError'>     Traceback (most recent call last)\n\n/Users/ncalexan/Documents/School/MATH235/genus2cm/<ipython console> in <module>()\n\n/Users/ncalexan/sage-2.10.3.rc3/local/lib/python2.5/site-packages/sage/matrix/constructor.py in diagonal_matrix(arg0, arg1, arg2, sparse)\n    565             v = arg2\n    566             \n--> 567     if isinstance(v, list):\n    568         w = {}\n    569         for i in range(len(v)):\n\n<type 'exceptions.UnboundLocalError'>: local variable 'v' referenced before assignment\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2577\n\n",
     "created_at": "2008-03-17T23:16:47Z",
     "labels": [
-        "linear algebra",
-        "minor",
-        "enhancement"
+        "component: linear algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "improving diagonal_matrix and vector (iterable) input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2577",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -72,15 +71,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2577
 
 ---
 
-archive/issue_comments_017613.json:
+archive/issue_comments_017575.json:
 ```json
 {
     "body": "Just to be clear: we are talking about 2 bugs here.\n* Vectors don't accept simple integers. Ie, `vector(1,2,3,4)` is not currently allowed. This annoys me too. I'll try to tackle it later.\n* For `diagonal_matrix`, only list and tuples are currently accepted. Vectors and matrices aren't (I checked). I'm currently working on this.",
     "created_at": "2008-03-18T15:48:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17613",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17575",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -92,15 +91,15 @@ Just to be clear: we are talking about 2 bugs here.
 
 ---
 
-archive/issue_comments_017614.json:
+archive/issue_comments_017576.json:
 ```json
 {
     "body": "Replying to [comment:1 dfdeshom]:\n>  * For `diagonal_matrix`, only list and tuples are currently accepted. Vectors and matrices aren't (I checked). I'm currently working on this.\n> \n\nI'm not sure we should accept matrices, since you can get teh job done with `bloc_diagonal_matrix` or `block_matrix`.",
     "created_at": "2008-03-18T16:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17614",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17576",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -114,15 +113,15 @@ I'm not sure we should accept matrices, since you can get teh job done with `blo
 
 ---
 
-archive/issue_comments_017615.json:
+archive/issue_comments_017577.json:
 ```json
 {
     "body": "I've added a patch that makes diagonal_matrix accept most iterable objects.",
     "created_at": "2008-03-19T00:39:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17615",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17577",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -132,15 +131,15 @@ I've added a patch that makes diagonal_matrix accept most iterable objects.
 
 ---
 
-archive/issue_comments_017616.json:
+archive/issue_comments_017578.json:
 ```json
 {
     "body": "I've added another patch (2577-2.patch) that makes this possible for vectors:\n\n```\nsage: vector(1,2,2.0)\n(1.00000000000000, 2.00000000000000, 2.00000000000000)\nsage: v=vector(1,2,2.0,RDF(32),23/3); v\n(1.00000000000000, 2.00000000000000, 2.00000000000000, 32.0000000000000, 7.66666666\\\n666667)\n\nsage: v = vector([1,2,3/5]); v\n(1, 2, 3/5)\nsage: w = vector(1,2,3/5) ; w == v\nTrue\n```\n\n\nI'm treating 1) and 2) as 2 separate issues, so apply each patch one at a time. Feel free to open another ticket for either patch.",
     "created_at": "2008-03-20T17:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17616",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17578",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -166,15 +165,15 @@ I'm treating 1) and 2) as 2 separate issues, so apply each patch one at a time. 
 
 ---
 
-archive/issue_comments_017617.json:
+archive/issue_comments_017579.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @dfdeshom.",
     "created_at": "2008-03-20T17:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17617",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17579",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -184,15 +183,15 @@ Changing assignee from @williamstein to @dfdeshom.
 
 ---
 
-archive/issue_comments_017618.json:
+archive/issue_comments_017580.json:
 ```json
 {
     "body": "Comments on 2577-1.patch (line numbers are the new line numbers): how come in line 579, you call `len(list(v)) `, but in lines 589 and 597, you left it at `len(v)`.  Do the latter two calls (and whatever other calls there are) need to be changed to len(list(v))?\n\n\n2577-2.patch: The \"python\" way to get a keyword value if set, but a default if not set, is the following:\n\n\n```\nsparse=kwds.get('sparse', None)\n```\n\n\nSee http://docs.python.org/lib/typesmapping.html",
     "created_at": "2008-04-09T03:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17618",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17580",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -213,15 +212,15 @@ See http://docs.python.org/lib/typesmapping.html
 
 ---
 
-archive/issue_comments_017619.json:
+archive/issue_comments_017581.json:
 ```json
 {
     "body": "BTW, +1 to the functionality enhancement proposed.  I keep getting annoyed that I can't do vector(1,2,3) too!",
     "created_at": "2008-04-09T03:14:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17619",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17581",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -231,15 +230,15 @@ BTW, +1 to the functionality enhancement proposed.  I keep getting annoyed that 
 
 ---
 
-archive/issue_comments_017620.json:
+archive/issue_comments_017582.json:
 ```json
 {
     "body": "Attachment [2577-1.patch](tarball://root/attachments/some-uuid/ticket2577/2577-1.patch) by @dfdeshom created at 2008-04-10 15:27:15",
     "created_at": "2008-04-10T15:27:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17620",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17582",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -249,15 +248,15 @@ Attachment [2577-1.patch](tarball://root/attachments/some-uuid/ticket2577/2577-1
 
 ---
 
-archive/issue_comments_017621.json:
+archive/issue_comments_017583.json:
 ```json
 {
     "body": "Replying to [comment:5 jason]:\n> Comments on 2577-1.patch (line numbers are the new line numbers): how come in line 579, you call `len(list(v)) `, but in lines 589 and 597, you left it at `len(v)`.  Do the latter two calls (and whatever other calls there are) need to be changed to len(list(v))?\n> \n> \n> 2577-2.patch: The \"python\" way to get a keyword value if set, but a default if not set, is the following:\n> \n> {{{\n> sparse=kwds.get('sparse', None)\n> }}}\n> \n> See http://docs.python.org/lib/typesmapping.html\n> \n\nThanks for the reviews. I've made the necessary changes to both patches. I've also added a way to construct a diagonal matrix from a matrix in 2577-1.patch",
     "created_at": "2008-04-10T15:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17621",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17583",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -280,15 +279,15 @@ Thanks for the reviews. I've made the necessary changes to both patches. I've al
 
 ---
 
-archive/issue_comments_017622.json:
+archive/issue_comments_017584.json:
 ```json
 {
     "body": "Changing keywords from \"diagonal_matrix vector iterable\" to \"diagonal_matrix vector iterable, editor_mhansen\".",
     "created_at": "2008-06-15T21:57:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17622",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17584",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -298,15 +297,15 @@ Changing keywords from "diagonal_matrix vector iterable" to "diagonal_matrix vec
 
 ---
 
-archive/issue_comments_017623.json:
+archive/issue_comments_017585.json:
 ```json
 {
     "body": "What is the relation between this patch and the one for #2577?",
     "created_at": "2008-08-10T13:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17623",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17585",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -316,15 +315,15 @@ What is the relation between this patch and the one for #2577?
 
 ---
 
-archive/issue_comments_017624.json:
+archive/issue_comments_017586.json:
 ```json
 {
     "body": "Replying to [comment:9 cremona]:\n> What is the relation between this patch and the one for #2577? \n\nCould you clariry your question? This *is* #2577.",
     "created_at": "2008-08-10T14:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17624",
-    "user": "@dfdeshom"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17586",
+    "user": "https://github.com/dfdeshom"
 }
 ```
 
@@ -337,15 +336,15 @@ Could you clariry your question? This *is* #2577.
 
 ---
 
-archive/issue_comments_017625.json:
+archive/issue_comments_017587.json:
 ```json
 {
     "body": "Replying to [comment:10 dfdeshom]:\n> Replying to [comment:9 cremona]:\n> > What is the relation between this patch and the one for #2577? \n> \n> Could you clariry your question? This *is* #2577.\n\nSorry, I meant #3704 which I reviewed recently, and seems to do the same kind of thing.  If that patch does what this one does, then this one can be marked \"duplicate\", perhaps.  But it would be best of you could look at both to make sure we get the best of both.",
     "created_at": "2008-08-10T14:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17625",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17587",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -361,15 +360,15 @@ Sorry, I meant #3704 which I reviewed recently, and seems to do the same kind of
 
 ---
 
-archive/issue_comments_017626.json:
+archive/issue_comments_017588.json:
 ```json
 {
     "body": "I'm comparing 2577-1.patch and the patch up at #3704.  I like the patch at #3704 better.  Here are the reasons:\n\n1. Much simpler function (it's not broken into cases, but instead passes off all the hard work to the matrix() constructor, which also makes it more consistent with the matrix() constructor).\n\n2. With the patch here, it looks like you still have the problem noted in the comments of #3704 of iterable objects giving weird answers, like a factored polynomial putting a factor in each element.  In #3704, I finally decided on just making it do this iterable thing (putting the elements down the diagonal) if the passed object was a list (or Sequence), tuple, or vector.  For all other cases, I think it is clearer to just say `diagonal_matrix(list(myobject))` or `diagonal_matrix(myobject.list())`.\n\n3. I honestly can't think of a reason why diagonal_matrix(matrix) would want to take the entries and put them down the diagonal.\n\n4. When I apply the patch here and do `diagonal_matrix(x^3+3, x+1)`, I get an error:\n\n```\n---------------------------------------------------------------------------\nUnboundLocalError                         Traceback (most recent call last)\n\n/home/jason/sage/devel/sage-main/sage/matrix/<ipython console> in <module>()\n\n/home/jason/sage/local/lib/python2.5/site-packages/sage/matrix/constructor.py in diagonal_matrix(*args, **kwds)\n    769             v = arg2\n    770 \n--> 771     if  hasattr(v, '_matrix_'):\n    772         # Format 5\n    773         v = v.list()\n\nUnboundLocalError: local variable 'v' referenced before assignment\n```\n\n\nSo I vote to take the patch 2577-2.patch here and the patch at #3704 and leave the 2577-1.patch.  I'd feel more comfortable if someone (preferably dfdeshom) expressed an opinion, though, since I wrote the patch over at #3704.",
     "created_at": "2008-08-15T23:18:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17626",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17588",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -406,15 +405,15 @@ So I vote to take the patch 2577-2.patch here and the patch at #3704 and leave t
 
 ---
 
-archive/issue_comments_017627.json:
+archive/issue_comments_017589.json:
 ```json
 {
     "body": "I should also say that I forgot that dfdeshom had already done the work here on diagonal_matrix when I wrote the patch at #3704; if I had not forgotten, I would have not duplicated the work.",
     "created_at": "2008-08-15T23:20:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17627",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17589",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -424,15 +423,15 @@ I should also say that I forgot that dfdeshom had already done the work here on 
 
 ---
 
-archive/issue_comments_017628.json:
+archive/issue_comments_017590.json:
 ```json
 {
     "body": "After playing around with 2577-2.patch, I have some concerns:\n\n1. I don't like arbitrarily getting the items of any iterable object.  There are many, many objects that are iterable in ways that don't make sense for vector().  For example:\n\n\n```\nsage: x=polygen(QQ)\nsage: vector(x^2-1)\n(-1, 0, 1)\nsage: vector(x^2-1, x)\n(-1, 0, 1)\nsage: vector(x^2-1, x,x)\n(x^2 - 1, x, x)\n```\n\n\nI would much rather that vector() *only* try to get the items in an iterable object if the object was a list, tuple, or another vector.  Otherwise you have funny things like the above happening.",
     "created_at": "2008-08-15T23:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17628",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17590",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -458,15 +457,15 @@ I would much rather that vector() *only* try to get the items in an iterable obj
 
 ---
 
-archive/issue_comments_017629.json:
+archive/issue_comments_017591.json:
 ```json
 {
     "body": "Sorry Didier,\n\nthis is \"wontfix\" since we will be merging #3704.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-02T13:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17629",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17591",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -482,15 +481,15 @@ Michael
 
 ---
 
-archive/issue_comments_017630.json:
+archive/issue_comments_017592.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-02T13:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2577",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17630",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2577#issuecomment-17592",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

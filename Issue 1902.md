@@ -6,15 +6,14 @@ archive/issues_001902.json:
     "body": "Assignee: somebody\n\n\n```\n> sage: sage.rings.finite_field_givaro.FiniteField_givaro.gen?\n> [...]\n> Docstring:\n> \n>             Return a generator of self. All elements x of self are\n>             expressed as log_{self.gen()}(p) internally. If self is\n>             a prime field this method returns 1.\n> \n> (The sentence \"If self is a prime field...\" is wrong, but the first\n> sentence is correct.)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1902\n\n",
     "created_at": "2008-01-24T00:37:08Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "mistake in the documentation for gens for Finite field givaro",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1902",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1902
 
 ---
 
-archive/issue_comments_012042.json:
+archive/issue_comments_012012.json:
 ```json
 {
     "body": "Attachment [8683.patch](tarball://root/attachments/some-uuid/ticket1902/8683.patch) by @JohnCremona created at 2008-03-01 16:31:24\n\nAttached patch corrects the docstring and adds a new doctest which is relevant,",
     "created_at": "2008-03-01T16:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12042",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12012",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -62,15 +61,15 @@ Attached patch corrects the docstring and adds a new doctest which is relevant,
 
 ---
 
-archive/issue_comments_012043.json:
+archive/issue_comments_012013.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-01T16:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12043",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12013",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -80,15 +79,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_012044.json:
+archive/issue_comments_012014.json:
 ```json
 {
     "body": "Changing assignee from somebody to @JohnCremona.",
     "created_at": "2008-03-01T16:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12044",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12014",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -98,15 +97,15 @@ Changing assignee from somebody to @JohnCremona.
 
 ---
 
-archive/issue_comments_012045.json:
+archive/issue_comments_012015.json:
 ```json
 {
     "body": "Attachment [edited-8683.patch](tarball://root/attachments/some-uuid/ticket1902/edited-8683.patch) by cwitty created at 2008-03-01 18:12:33\n\nI hand-edited John's original 8683.patch to create edited-8683.patch: I changed \"primitve\" -> \"primitive\".\n\nWith this revised patch: looks good, the doctest passes.",
     "created_at": "2008-03-01T18:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12045",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12015",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -120,15 +119,15 @@ With this revised patch: looks good, the doctest passes.
 
 ---
 
-archive/issue_comments_012046.json:
+archive/issue_comments_012016.json:
 ```json
 {
     "body": "Merged edited-8683.patch in Sage 2.10.3.rc1",
     "created_at": "2008-03-02T17:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12046",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12016",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -138,15 +137,15 @@ Merged edited-8683.patch in Sage 2.10.3.rc1
 
 ---
 
-archive/issue_comments_012047.json:
+archive/issue_comments_012017.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-02T17:12:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12047",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1902#issuecomment-12017",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

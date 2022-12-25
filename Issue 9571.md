@@ -6,7 +6,7 @@ archive/issues_009571.json:
     "body": "Assignee: mvngu\n\nCC:  @nathanncohen @wdjoyner\n\nThe forthcoming 4.5.2.alpha0's includes #9249, which yields this docbuild warning:\n\n```\nWarning: Missing title for sage.misc.exceptions\n```\n\nSphinx substitutes \"MISSING TITLE.\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/9571\n\n",
     "created_at": "2010-07-22T02:56:42Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009571.json:
     "title": "Sphinx Warning: Missing title for sage.misc.exceptions after #9249",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9571",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: mvngu
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9571
 
 ---
 
-archive/issue_comments_092427.json:
+archive/issue_comments_092273.json:
 ```json
 {
     "body": "Would this one suit you ? :-)\n\nNathann",
     "created_at": "2010-07-22T03:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92427",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92273",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -57,15 +57,15 @@ Nathann
 
 ---
 
-archive/issue_comments_092428.json:
+archive/issue_comments_092274.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-22T03:10:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92428",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92274",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -75,15 +75,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_092429.json:
+archive/issue_comments_092275.json:
 ```json
 {
     "body": "Can you remove \"==========\"?",
     "created_at": "2010-07-22T04:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92429",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92275",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -93,15 +93,15 @@ Can you remove "=========="?
 
 ---
 
-archive/issue_comments_092430.json:
+archive/issue_comments_092276.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-07-22T04:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92430",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92276",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -111,15 +111,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_092431.json:
+archive/issue_comments_092277.json:
 ```json
 {
     "body": "Done.",
     "created_at": "2010-07-22T04:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92431",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92277",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -129,15 +129,15 @@ Done.
 
 ---
 
-archive/issue_comments_092432.json:
+archive/issue_comments_092278.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-07-22T04:23:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92432",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92278",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -147,15 +147,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_092433.json:
+archive/issue_comments_092279.json:
 ```json
 {
     "body": "Attachment [trac_9571.patch](tarball://root/attachments/some-uuid/ticket9571/trac_9571.patch) by @jhpalmieri created at 2010-07-23 00:30:15\n\nLooks good.",
     "created_at": "2010-07-23T00:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92433",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92279",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -167,15 +167,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_092434.json:
+archive/issue_comments_092280.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-23T00:30:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92434",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92280",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -185,15 +185,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_092435.json:
+archive/issue_comments_092281.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-23T02:32:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9571",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92435",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/9571#issuecomment-92281",
+    "user": "https://github.com/dandrake"
 }
 ```
 

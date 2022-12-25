@@ -6,7 +6,7 @@ archive/issues_006351.json:
     "body": "Assignee: @rlmill\n\nreported by William\n\nIssue created by migration from https://trac.sagemath.org/ticket/6351\n\n",
     "created_at": "2009-06-17T22:55:44Z",
     "labels": [
-        "graph theory",
+        "component: graph theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006351.json:
     "title": "[with patch, needs review] typo in Graph.plot docstring",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6351",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6351
 
 ---
 
-archive/issue_comments_050780.json:
+archive/issue_comments_050683.json:
 ```json
 {
     "body": "Attachment [trac_6351.patch](tarball://root/attachments/some-uuid/ticket6351/trac_6351.patch) by @jhpalmieri created at 2009-06-17 23:03:25",
     "created_at": "2009-06-17T23:03:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6351#issuecomment-50780",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6351#issuecomment-50683",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [trac_6351.patch](tarball://root/attachments/some-uuid/ticket6351/tra
 
 ---
 
-archive/issue_comments_050781.json:
+archive/issue_comments_050684.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-24T10:12:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6351",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6351#issuecomment-50781",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6351#issuecomment-50684",
+    "user": "https://github.com/rlmill"
 }
 ```
 

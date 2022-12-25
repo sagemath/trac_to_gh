@@ -6,15 +6,14 @@ archive/issues_001772.json:
     "body": "Assignee: @williamstein\n\nThis is from Hector:\n\n\n```\nI also hit this bug while doing this (taken from the \"piecewise\"\ndocumentation):\n\nsage: f1 = lambda x:-1\nsage: f2 = lambda x:2\nsage: f = Piecewise([[(0,pi/2),f1],[(pi/2,pi),f2]])\nsage: P = f.plot_fourier_series_partial_sum(15,pi,-5,5)   # long time\nboom\n...\n\n/Users/was/s/local/lib/python2.5/site-packages/sage/calculus/calculus.py in <lambda>(i)\n   3607             # We need to do this maximum to correctly handle the case where\n   3608             # self is something like (sin+1)\n-> 3609             n = max( max(map(lambda i: i.number_of_arguments(), self._operands)+[0]), len(variables) )\n   3610         self.__number_of_args = n\n   3611         return n\n\n<type 'exceptions.AttributeError'>: 'Pi' object has no attribute 'number_of_arguments'\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1772\n\n",
     "created_at": "2008-01-14T05:58:16Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "bug somewhere in the symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1772",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1772
 
 ---
 
-archive/issue_comments_011203.json:
+archive/issue_comments_011176.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-15T01:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11203",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11176",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -72,15 +71,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_011204.json:
+archive/issue_comments_011177.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-01-15T01:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11204",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11177",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -90,15 +89,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_011205.json:
+archive/issue_comments_011178.json:
 ```json
 {
     "body": "Attachment [1772.patch](tarball://root/attachments/some-uuid/ticket1772/1772.patch) by @mwhansen created at 2008-01-18 21:02:31",
     "created_at": "2008-01-18T21:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11205",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11178",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -108,15 +107,15 @@ Attachment [1772.patch](tarball://root/attachments/some-uuid/ticket1772/1772.pat
 
 ---
 
-archive/issue_comments_011206.json:
+archive/issue_comments_011179.json:
 ```json
 {
     "body": "I also fixed this in the same way earlier today (as part of one my other patches), but my patch was just a few lines to actually fix the listed problem.  The patch attached to this ticket, fixes the problem and does a HUGE amount more to vastly improve doctesting in some files, etc.  I.e., this is _great_. \n\nI have not fully reviewed the patch yet, though I've looked it over by eye and it looks very good.",
     "created_at": "2008-01-18T21:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11206",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11179",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -128,15 +127,15 @@ I have not fully reviewed the patch yet, though I've looked it over by eye and i
 
 ---
 
-archive/issue_comments_011207.json:
+archive/issue_comments_011180.json:
 ```json
 {
     "body": "Attachment [1772-bug.patch](tarball://root/attachments/some-uuid/ticket1772/1772-bug.patch) by @rlmill created at 2008-01-20 00:37:31\n\nFixes the one doctest failure in constant.py",
     "created_at": "2008-01-20T00:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11207",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11180",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -148,15 +147,15 @@ Fixes the one doctest failure in constant.py
 
 ---
 
-archive/issue_comments_011208.json:
+archive/issue_comments_011181.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-20T01:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11208",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11181",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -166,15 +165,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011209.json:
+archive/issue_comments_011182.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha0",
     "created_at": "2008-01-20T01:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1772",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11209",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1772#issuecomment-11182",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

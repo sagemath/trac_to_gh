@@ -6,7 +6,7 @@ archive/issues_009895.json:
     "body": "Assignee: GeorgSWeber\n\nCC:  @JohnCremona drkirkby @jdemeyer @nexttime justin @mwhansen\n\nOn two separate machines running OS X 10.6, upgrading from 4.5.3 to 4.6.alpha0 seemed to work -- no errors were reported -- but Sage fails to start:\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\n  ***   bug in PARI/GP (Segmentation Fault), please report\n  ***   bug in PARI/GP (Segmentation Fault), please report\n```\n\n(Building from scratch works fine.)\n\nIssue created by migration from https://trac.sagemath.org/ticket/9896\n\n",
     "created_at": "2010-09-11T06:04:41Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009895.json:
     "title": "upgrading from 4.5.3 to 4.6.alpha0 fails on OS X 10.6",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9895",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: GeorgSWeber
@@ -45,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9896
 
 ---
 
-archive/issue_comments_098178.json:
+archive/issue_comments_098015.json:
 ```json
 {
     "body": "Can we somehow trace the PARI calls that lead to this?",
     "created_at": "2010-09-11T23:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98178",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98015",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -63,15 +63,15 @@ Can we somehow trace the PARI calls that lead to this?
 
 ---
 
-archive/issue_comments_098179.json:
+archive/issue_comments_098016.json:
 ```json
 {
     "body": "Replying to [comment:2 mpatel]:\n> Can we somehow trace the PARI calls that lead to this?\n\nRunning `sage -gdb` could help, but on bsd.math, I get\n\n```\n[...]\nWe need authorization from an admin user to run the debugger.\nThis will only happen once per login session.\nAdmin username (mpatel): \n```\n",
     "created_at": "2010-09-12T00:02:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98179",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98016",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -92,15 +92,15 @@ Admin username (mpatel):
 
 ---
 
-archive/issue_comments_098180.json:
+archive/issue_comments_098017.json:
 ```json
 {
     "body": "My problem is I don't know how to use gdb.  After running \"sage -gdb\", I see a ton of message like \n\n```\nReading symbols for shared libraries . done\n```\n\nand warnings like\n\n```\nwarning: Could not find object file \"/Applications/sage_builds/sage-4.5.3/spkg/build/gsl-1.14/src/.libs/libgsl.lax/libgslcdf.a/weibull.o\" - no debug information available for \"weibull.c\".\n```\n\nThen\n\n```\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0x0000000000000000\n0x000000010285aadc in err_leave ()\n(gdb) \n```\n\nNow what should I type to provide meaningful information?",
     "created_at": "2010-09-12T00:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98180",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98017",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -131,15 +131,15 @@ Now what should I type to provide meaningful information?
 
 ---
 
-archive/issue_comments_098181.json:
+archive/issue_comments_098018.json:
 ```json
 {
     "body": "What happens if you type `bt` (for a backtrace)?  I'm not very familiar with GDB, but perhaps [comment:ticket:9583:5 this] or David can help?",
     "created_at": "2010-09-12T00:54:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98181",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98018",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -149,15 +149,15 @@ What happens if you type `bt` (for a backtrace)?  I'm not very familiar with GDB
 
 ---
 
-archive/issue_comments_098182.json:
+archive/issue_comments_098019.json:
 ```json
 {
     "body": "`bt` (backtrace)?\n\nBtw, the segfault happens somewhere in `pari_init()`, because Sage afterwards disables PARI's signal handlers.",
     "created_at": "2010-09-12T00:55:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98182",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98019",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -169,15 +169,15 @@ Btw, the segfault happens somewhere in `pari_init()`, because Sage afterwards di
 
 ---
 
-archive/issue_comments_098183.json:
+archive/issue_comments_098020.json:
 ```json
 {
     "body": "Perhaps also first rebuild PARI with `CFLAGS=-fno-omit-frame-pointer`, and less optimization (`-O1` or `-O0`).",
     "created_at": "2010-09-12T01:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98183",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98020",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -187,15 +187,15 @@ Perhaps also first rebuild PARI with `CFLAGS=-fno-omit-frame-pointer`, and less 
 
 ---
 
-archive/issue_comments_098184.json:
+archive/issue_comments_098021.json:
 ```json
 {
     "body": "Well, I tried to rebuild PARI by setting CFLAGS=\"-fno-omit-frame-pointer -O0\" and then \"sage -f pari...\".  (I also tried running PARI's ./Configure with the \"-g\" debugging option, but it failed with\n\n```\nld: symbol(s) not found for inferred architecture x86_64\n```\n\nso I gave up on that.)  When I ran \"bt\", I got this:\n\n```\n\n(gdb) bt\n#0  0x000000010285aadc in err_leave ()\n#1  0x0000000102a72b5d in __pyx_pf_4sage_4libs_4pari_3gen_12PariInstance___init__ (__pyx_v_self=0x10211a4f0, __pyx_args=<value temporarily unavailable, due to optimizations>, __pyx_kwds=0x101f573b0) at sage/libs/pari/gen.c:36951\n#2  0x000000010006d8c5 in type_call ()\n#3  0x000000010000bcd2 in PyObject_Call ()\n#4  0x0000000102a424fc in initgen () at sage/libs/pari/gen.c:46847\n#5  0x00000001000d2e11 in _PyImport_LoadDynamicModule ()\n#6  0x00000001000d10bf in import_submodule ()\n#7  0x00000001000d15da in load_next ()\n#8  0x00000001000d1932 in PyImport_ImportModuleLevel ()\n#9  0x00000001000aeef3 in builtin___import__ ()\n#10 0x000000010000bcd2 in PyObject_Call ()\n#11 0x000000010000f825 in PyObject_CallFunction ()\n#12 0x00000001000d209b in PyImport_Import ()\n#13 0x000000010238cfeb in __Pyx_ImportModule [inlined] () at /Applications/sage_builds/sage-4.6.alpha0-upgrade/devel/sage-main/sage/rings/complex_double.c:15716\n#14 0x000000010238cfeb in __Pyx_ImportType (module_name=0x1023a8eb2 \"sage.libs.pari.gen\", class_name=0x1023a825b \"gen\", size=56, strict=1) at sage/rings/complex_double.c:15660\n#15 0x00000001023a3463 in initcomplex_double () at sage/rings/complex_double.c:14241\n#16 0x00000001000d2e11 in _PyImport_LoadDynamicModule ()\n#17 0x00000001000d10bf in import_submodule ()\n#18 0x00000001000d15da in load_next ()\n#19 0x00000001000d1932 in PyImport_ImportModuleLevel ()\n#20 0x00000001000aeef3 in builtin___import__ ()\n#21 0x000000010000bcd2 in PyObject_Call ()\n#22 0x00000001000b0147 in PyEval_CallObjectWithKeywords ()\n#23 0x00000001000b440e in PyEval_EvalFrameEx ()\n#24 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#25 0x00000001000b90f6 in PyEval_EvalCode ()\n#26 0x00000001000cdfb0 in PyImport_ExecCodeModuleEx ()\n#27 0x00000001000cf212 in load_source_module ()\n#28 0x00000001000d10bf in import_submodule ()\n#29 0x00000001000d15da in load_next ()\n#30 0x00000001000d1932 in PyImport_ImportModuleLevel ()\n#31 0x00000001000aeef3 in builtin___import__ ()\n#32 0x000000010000bcd2 in PyObject_Call ()\n#33 0x00000001000b0147 in PyEval_CallObjectWithKeywords ()\n#34 0x00000001000b440e in PyEval_EvalFrameEx ()\n#35 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#36 0x00000001000b90f6 in PyEval_EvalCode ()\n#37 0x00000001000cdfb0 in PyImport_ExecCodeModuleEx ()\n#38 0x00000001000cf212 in load_source_module ()\n#39 0x00000001000d10bf in import_submodule ()\n#40 0x00000001000d15da in load_next ()\n#41 0x00000001000d18ec in PyImport_ImportModuleLevel ()\n#42 0x00000001000aeef3 in builtin___import__ ()\n#43 0x000000010000bcd2 in PyObject_Call ()\n#44 0x00000001000b0147 in PyEval_CallObjectWithKeywords ()\n#45 0x00000001000b440e in PyEval_EvalFrameEx ()\n#46 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#47 0x00000001000b90f6 in PyEval_EvalCode ()\n#48 0x00000001000cdfb0 in PyImport_ExecCodeModuleEx ()\n#49 0x00000001000cf212 in load_source_module ()\n#50 0x00000001000d10bf in import_submodule ()\n#51 0x00000001000d15da in load_next ()\n#52 0x00000001000d1932 in PyImport_ImportModuleLevel ()\n#53 0x00000001000aeef3 in builtin___import__ ()\n#54 0x000000010000bcd2 in PyObject_Call ()\n#55 0x00000001000b0147 in PyEval_CallObjectWithKeywords ()\n#56 0x00000001000b440e in PyEval_EvalFrameEx ()\n#57 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#58 0x00000001000b90f6 in PyEval_EvalCode ()\n#59 0x00000001000cdfb0 in PyImport_ExecCodeModuleEx ()\n#60 0x00000001000cf212 in load_source_module ()\n#61 0x00000001000d10bf in import_submodule ()\n#62 0x00000001000d15da in load_next ()\n#63 0x00000001000d1932 in PyImport_ImportModuleLevel ()\n#64 0x00000001000aeef3 in builtin___import__ ()\n#65 0x000000010000bcd2 in PyObject_Call ()\n#66 0x00000001000b0147 in PyEval_CallObjectWithKeywords ()\n#67 0x00000001000b440e in PyEval_EvalFrameEx ()\n#68 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#69 0x00000001000b90f6 in PyEval_EvalCode ()\n#70 0x00000001000cdfb0 in PyImport_ExecCodeModuleEx ()\n#71 0x00000001000cf212 in load_source_module ()\n#72 0x00000001000d10bf in import_submodule ()\n#73 0x00000001000d15da in load_next ()\n#74 0x00000001000d1932 in PyImport_ImportModuleLevel ()\n#75 0x00000001000aeef3 in builtin___import__ ()\n#76 0x000000010000bcd2 in PyObject_Call ()\n#77 0x00000001000b0147 in PyEval_CallObjectWithKeywords ()\n#78 0x00000001000b440e in PyEval_EvalFrameEx ()\n#79 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#80 0x00000001000b90f6 in PyEval_EvalCode ()\n#81 0x00000001000cdfb0 in PyImport_ExecCodeModuleEx ()\n#82 0x00000001000cf212 in load_source_module ()\n#83 0x00000001000d10bf in import_submodule ()\n#84 0x00000001000d15da in load_next ()\n#85 0x00000001000d18ec in PyImport_ImportModuleLevel ()\n#86 0x00000001000aeef3 in builtin___import__ ()\n#87 0x00000001000b82b8 in PyEval_EvalFrameEx ()\n#88 0x00000001000b745a in PyEval_EvalFrameEx ()\n#89 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#90 0x00000001000b6ffd in PyEval_EvalFrameEx ()\n#91 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#92 0x000000010003b0ad in function_call ()\n#93 0x000000010000bcd2 in PyObject_Call ()\n#94 0x000000010001dd0d in instancemethod_call ()\n#95 0x000000010000bcd2 in PyObject_Call ()\n#96 0x00000001000b0147 in PyEval_CallObjectWithKeywords ()\n#97 0x0000000100020d0e in PyInstance_New ()\n#98 0x000000010000bcd2 in PyObject_Call ()\n#99 0x00000001000b457e in PyEval_EvalFrameEx ()\n#100 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#101 0x00000001000b6ffd in PyEval_EvalFrameEx ()\n#102 0x00000001000b9010 in PyEval_EvalCodeEx ()\n#103 0x00000001000b90f6 in PyEval_EvalCode ()\n#104 0x00000001000dde0e in PyRun_FileExFlags ()\n#105 0x00000001000de0c9 in PyRun_SimpleFileExFlags ()\n#106 0x00000001000eb5eb in Py_Main ()\n#107 0x0000000100000f14 in start ()\n```\n",
     "created_at": "2010-09-12T01:35:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98184",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98021",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -325,15 +325,15 @@ so I gave up on that.)  When I ran "bt", I got this:
 
 ---
 
-archive/issue_comments_098185.json:
+archive/issue_comments_098022.json:
 ```json
 {
     "body": "John, can you provide a link to the full PARI spkg install log?\n\nI also wonder if somehow PARI uses parts of its old installation (in `$SAGE_LOCAL/{lib,include/pari}/`) during the build (which one would not necessarily see in the log though). It would be safer to delete all these files prior to upgrading...\n\nDoes the stand-alone interpreter work?",
     "created_at": "2010-09-12T02:05:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98185",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98022",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -347,15 +347,15 @@ Does the stand-alone interpreter work?
 
 ---
 
-archive/issue_comments_098186.json:
+archive/issue_comments_098023.json:
 ```json
 {
     "body": "I found the problem, I think, thanks to one of your questions on [sage-release](http://groups.google.com/group/sage-release/browse_frm/thread/57d92da34ef89e69): in local/lib, I have\n\n```\n  -rwxr-xr-x    1 palmieri  admin   5249848 Sep 11 18:39 libpari-gmp-2.4.dylib\n  -rwxr-xr-x    1 palmieri  admin   3487624 Sep  8 21:53 libpari-gmp.dylib\n  -rw-r--r--    1 palmieri  admin  21398976 Sep 11 18:39 libpari.a\n  -rwxr-xr-x    1 palmieri  admin   5249848 Sep 11 18:39 libpari.dylib\n```\n\nNote the time-stamp on the file libpari-gmp.dylib: this is from the old PARI installation.  If I get rid of this file and then link libpari-gmp-2.4.dylib to libpari-gmp.dylib, then Sage starts with no trouble.  If I just delete the file, then Sage complains\n\n```\nImportError: dlopen(/Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage/rings/complex_double.so, 2): Library not loaded: libpari-gmp.dylib\n```\n\nI also get the complaint after running \"sage -ba\".  I don't see anything in the PARI install log about libpari-gmp.dylib, just libpari-gmp-2.4.dylib, so I'm a little confused about whether this link should be here.  Two things I might try next: running tests with the link, or deleting the old dylib file and then running \"sage -upgrade ...\" to see if that helps.",
     "created_at": "2010-09-12T02:23:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98186",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98023",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -380,15 +380,15 @@ I also get the complaint after running "sage -ba".  I don't see anything in the 
 
 ---
 
-archive/issue_comments_098187.json:
+archive/issue_comments_098024.json:
 ```json
 {
     "body": "The time stamps on pariport.h, paritype.h, and paripriv.h are all old, too.",
     "created_at": "2010-09-12T02:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98187",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98024",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -398,15 +398,15 @@ The time stamps on pariport.h, paritype.h, and paripriv.h are all old, too.
 
 ---
 
-archive/issue_comments_098188.json:
+archive/issue_comments_098025.json:
 ```json
 {
     "body": "Some part in John's build must have been linked against `libpari.*` when this still was a copy of / symbolic link to the old `libpari-gmp.*`, s.t. the old soname got recorded, and all PARI symbols were resolved from there before `libpari-gmp-2.4.*` was considered.\n\n`libcsage.*` is IMHO a good candidate... Did this really get updated in `local/lib`, i.e. got `devel/sage/c_lib/libcsage.*` rebuilt?",
     "created_at": "2010-09-12T04:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98188",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98025",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -418,15 +418,15 @@ Some part in John's build must have been linked against `libpari.*` when this st
 
 ---
 
-archive/issue_comments_098189.json:
+archive/issue_comments_098026.json:
 ```json
 {
     "body": "> Two things I might try next: running tests with the link, or deleting the old dylib file and then running \"sage -upgrade ...\" to see if that helps.\n\nI did these on two different machines.  With the link, all tests passed.  Deleting the old dylib file (and the old include files, just for kicks) and then upgrading caused problems: `ImportError` as above.\n\n> libcsage.* is IMHO a good candidate... Did this really get updated in local/lib, i.e. got devel/sage/c_lib/libcsage.* rebuilt?\n\nYes, it did.  After taking a clean 4.5.3 install and upgrading, here are the recent files in local/lib:\n\n```\n  lrwxr-xr-x    1 palmieri  admin        37 Sep 11 21:32 libcsage.dylib -> ../../devel/sage/c_lib/libcsage.dylib\n  -rwxr-xr-x    1 palmieri  admin     77488 Sep 11 21:32 libLfunction.so\n  -rwxr-xr-x    1 palmieri  admin   5249848 Sep 11 21:31 libpari-gmp-2.4.dylib\n  -rw-r--r--    1 palmieri  admin  21398976 Sep 11 21:31 libpari.a\n  -rwxr-xr-x    1 palmieri  admin   5249848 Sep 11 21:31 libpari.dylib\n```\n\nHere is the file to which libcsage.dylib links:\n\n```\n  -rwxr-xr-x   1 palmieri  admin    83864 Sep 11 21:32 libcsage.dylib\n```\n\nThe rest of the libraries in local/lib are old enough that they must have come from 4.5.3.",
     "created_at": "2010-09-12T04:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98189",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98026",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -458,15 +458,15 @@ The rest of the libraries in local/lib are old enough that they must have come f
 
 ---
 
-archive/issue_comments_098190.json:
+archive/issue_comments_098027.json:
 ```json
 {
     "body": "Justin reported successful upgrade from 4.5.3 on MacOS X 10.**5.8** on sage-release, though some doctests fail.",
     "created_at": "2010-09-13T11:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98190",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98027",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -476,15 +476,15 @@ Justin reported successful upgrade from 4.5.3 on MacOS X 10.**5.8** on sage-rele
 
 ---
 
-archive/issue_comments_098191.json:
+archive/issue_comments_098028.json:
 ```json
 {
     "body": "Replying to [comment:14 leif]:\n> Justin reported successful upgrade from 4.5.3 on MacOS X 10.**5.8** on sage-release, though some doctests fail.\n\n(... due to `eclib` not getting rebuilt.)",
     "created_at": "2010-09-13T12:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98191",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98028",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -497,15 +497,15 @@ Replying to [comment:14 leif]:
 
 ---
 
-archive/issue_comments_098192.json:
+archive/issue_comments_098029.json:
 ```json
 {
     "body": "Necessary steps to properly upgrade (from Sage 4.5.3) to Sage 4.6.alpha0:\n* Build Sage 4.5.3 from scratch ;-)\n* Run `./sage -upgrade http://sage.math.washington.edu/home/release/sage-4.6.alpha0/sage-4.6.alpha0/` \n\n (Unfortunately, modifying `spkg/standard/deps` before doing so doesn't help since this file gets overwritten during upgrade.)\n* Run `./sage -f eclib-20100711` (just to record the **new** PARI shared library name in its various shared libraries).\n* Touch the Sage library files that have to be rebuilt for the same reason:\n  {{{#!sh\ntouch devel/sage/sage/libs/cremona/homspace.pyx \ntouch devel/sage/sage/libs/cremona/newforms.pyx \ntouch devel/sage/sage/libs/mwrank/mwrank.pyx \n}}}\n   (Three command invocations just to make it readable without horizontal scrolling.)\n* Run `./sage -b` to rebuild them (i.e., their respective Python modules / shared libraries).\n\nDeleting the old PARI shared library files (`local/lib/libpari-gmp.*`) is not necessary, but will trigger Sage import errors if you omit one of the above steps... (unless you have a system-wide PARI library installed which matches the old version, i.e. 2.3.*)",
     "created_at": "2010-09-14T18:09:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98192",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98029",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -530,15 +530,15 @@ Deleting the old PARI shared library files (`local/lib/libpari-gmp.*`) is not ne
 
 ---
 
-archive/issue_comments_098193.json:
+archive/issue_comments_098030.json:
 ```json
 {
     "body": "> Necessary steps to properly upgrade (from Sage 4.5.3) to Sage 4.6.alpha0:\n\nThis didn't work for me; I get the same segmentation fault message.  (I think that when I tried \"sage -ba\" before, that would have rebuilt the files from all the pyx files, so I guess it's not a surprise that this failed.)",
     "created_at": "2010-09-14T20:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98193",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98030",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -550,15 +550,15 @@ This didn't work for me; I get the same segmentation fault message.  (I think th
 
 ---
 
-archive/issue_comments_098194.json:
+archive/issue_comments_098031.json:
 ```json
 {
     "body": "I consider the \"`touch` issue\" a bug in `module_list.py`, since PARI is not directly used by those extension modules (but listed in their `libraries`, and therefore gets recorded in the list of needed libraries).\n\nExplicitly linking against PARI would then only be necessary if we built some *statically* linked executable. Or is this also required on some systems like Cygwin? If so, we should make use of `uname_specific()` there, too.",
     "created_at": "2010-09-14T20:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98194",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98031",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -570,15 +570,15 @@ Explicitly linking against PARI would then only be necessary if we built some *s
 
 ---
 
-archive/issue_comments_098195.json:
+archive/issue_comments_098032.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2010-09-14T20:05:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98195",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98032",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -588,15 +588,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_098196.json:
+archive/issue_comments_098033.json:
 ```json
 {
     "body": "Replying to [comment:17 jhpalmieri]:\n> > Necessary steps to properly upgrade (from Sage 4.5.3) to Sage 4.6.alpha0:\n> \n> This didn't work for me; I get the same segmentation fault message.  (I think that when I tried \"sage -ba\" before, that would have rebuilt the files from all the pyx files, so I guess it's not a surprise that this failed.)\n\nMust be some bad environment... ;-)\n\nDoes `gp` work (after upgrading)?",
     "created_at": "2010-09-14T20:15:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98196",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98033",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -613,15 +613,15 @@ Does `gp` work (after upgrading)?
 
 ---
 
-archive/issue_comments_098197.json:
+archive/issue_comments_098034.json:
 ```json
 {
     "body": "> Does gp work (after upgrading)?\n\n`./sage -gp` starts up and can execute simple calculations.  No segfault.",
     "created_at": "2010-09-14T20:24:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98197",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98034",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -633,15 +633,15 @@ archive/issue_comments_098197.json:
 
 ---
 
-archive/issue_comments_098198.json:
+archive/issue_comments_098035.json:
 ```json
 {
     "body": "And what import errors do you now get after deleting the old PARI's dylibs (`libpari-gmp.*`)?",
     "created_at": "2010-09-14T20:32:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98198",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98035",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -651,15 +651,15 @@ And what import errors do you now get after deleting the old PARI's dylibs (`lib
 
 ---
 
-archive/issue_comments_098199.json:
+archive/issue_comments_098036.json:
 ```json
 {
     "body": "For me (Ubuntu 10.04 x86_64), upgrading with the above steps passes `ptestlong` with the original `module_list.py`, and also after deleting `\"pari\"` from the library lists of the mentioned extension modules, then again touching the `.pyx` files and running `./sage -b`.",
     "created_at": "2010-09-14T20:48:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98199",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98036",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -669,15 +669,15 @@ For me (Ubuntu 10.04 x86_64), upgrading with the above steps passes `ptestlong` 
 
 ---
 
-archive/issue_comments_098200.json:
+archive/issue_comments_098037.json:
 ```json
 {
     "body": "After going through the above steps, if I also delete the old libpari-gmp, then I get\n\n```\nImportError: dlopen(/Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage/rings/complex_double.so, 2): Library not loaded: libpari-gmp.dylib\n  Referenced from: /Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage/rings/complex_double.so\n  Reason: image not found\n```\n\nIf I touch complex_double.pyx and \"sage -b\", there is no change.  Touching all of the py, pyx, and pxd files in the libs/pari directory also triggers a rebuild of complex_double.pyx, and also doesn't help.",
     "created_at": "2010-09-14T21:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98200",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98037",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -695,15 +695,15 @@ If I touch complex_double.pyx and "sage -b", there is no change.  Touching all o
 
 ---
 
-archive/issue_comments_098201.json:
+archive/issue_comments_098038.json:
 ```json
 {
     "body": "And the files in `.../local/lib/python2.6/site-packages/...` got properly updated?!?\n\nCan you attach a log of the `./sage -b` run?\n\nThe only (other) thing I could imagine is some old PARI library in the linker/loader search path *during linking*, but not at run-time (i.e. dynamic loader search path). (Really) Environment issue?",
     "created_at": "2010-09-14T21:36:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98201",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98038",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -717,15 +717,15 @@ The only (other) thing I could imagine is some old PARI library in the linker/lo
 
 ---
 
-archive/issue_comments_098202.json:
+archive/issue_comments_098039.json:
 ```json
 {
     "body": "Replying to [comment:24 leif]:\n> And the files in `.../local/lib/python2.6/site-packages/...` got properly updated?!?\n\nAccording to the time stamps, yes.\n\n> Can you attach a log of the `./sage -b` run?\n\nWhich one?  Here's what happens if I follow your instructions, delete libpari-gmp.dylib, and touch complex_double.pyx:\n\n```\n$ ./sage -b\n\n----------------------------------------------------------\nsage: Building and installing modified Sage library files.\n\n\nInstalling c_lib\nscons: `install' is up to date.\nUpdating Cython code....\nBuilding modified file sage/rings/complex_double.pyx.\nExecute 1 commands (using 1 threads)\npython `which cython` --embed-positions --directive cdivision=True -I/Applications/sage_builds/sage-4.6.alpha0-upgrade/devel/sage-main -o sage/rings/complex_double.c sage/rings/complex_double.pyx\nsage/rings/complex_double.pyx --> /Applications/sage_builds/sage-4.6.alpha0-upgrade/local//lib/python/site-packages//sage/rings/complex_double.pyx\nTime to execute 1 commands: 4.32504701614 seconds\nFinished compiling Cython code (time = 4.87559199333 seconds)\nrunning install\nrunning build\nrunning build_py\nrunning build_ext\nbuilding 'sage.rings.complex_double' extension\ngcc -fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/Applications/sage_builds/sage-4.6.alpha0-upgrade/local//include -I/Applications/sage_builds/sage-4.6.alpha0-upgrade/local//include/csage -I/Applications/sage_builds/sage-4.6.alpha0-upgrade/devel//sage/sage/ext -I/Applications/sage_builds/sage-4.6.alpha0-upgrade/local/include/python2.6 -c sage/rings/complex_double.c -o build/temp.macosx-10.6-i386-2.6/sage/rings/complex_double.o -std=c99 -D_XPG6 -w\ngcc -L/Applications/sage_builds/sage-4.5.3/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.6-i386-2.6/sage/rings/complex_double.o -L/Applications/sage_builds/sage-4.6.alpha0-upgrade/local//lib -lcsage -lgsl -lcblas -latlas -lpari -lgmp -lm -lstdc++ -lntl -o build/lib.macosx-10.6-i386-2.6/sage/rings/complex_double.so\nTotal time spent compiling C/C++ extensions:  7.72538805008 seconds.\nrunning install_lib\ncopying build/lib.macosx-10.6-i386-2.6/sage/rings/complex_double.so -> /Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage/rings\nrunning install_egg_info\nRemoving /Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\nWriting /Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\n\nreal\t0m13.963s\nuser\t0m12.678s\nsys\t0m1.095s\n```\n\n\n> The only (other) thing I could imagine is some old PARI library in the linker/loader search path *during linking*, but not at run-time (i.e. dynamic loader search path). (Really) Environment issue?\n\nWell, I see it on two different machines. I don't have LD_LIBRARY_PATH or DYLD_LIBRARY_PATH set, and when I run \"./sage -sh\", I don't see anything odd in those variables.  I've posted what I get from \"export\" ordinarily and also after running \"./sage -sh\" at [http://sage.math.washington.edu/home/palmieri/misc/env.txt](http://sage.math.washington.edu/home/palmieri/misc/env.txt).  I'm going to try this all on bsd.math, which involves building sage 4.5.3 first, so it will take a while.  I've hardly used that machine, so my environment there is pretty vanilla.",
     "created_at": "2010-09-14T22:34:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98202",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98039",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -782,15 +782,15 @@ Well, I see it on two different machines. I don't have LD_LIBRARY_PATH or DYLD_L
 
 ---
 
-archive/issue_comments_098203.json:
+archive/issue_comments_098040.json:
 ```json
 {
     "body": "\n```\ngcc -L/Applications/sage_builds/sage-4.5.3/local/lib -bundle -undefined\n dynamic_lookup build/temp.macosx-10.6-i386-2.6/sage/rings/complex_double.o\n -L/Applications/sage_builds/sage-4.6.alpha0-upgrade/local//lib -lcsage\n -lgsl -lcblas -latlas -lpari -lgmp -lm -lstdc++ -lntl -o\n build/lib.macosx-10.6-i386-2.6/sage/rings/complex_double.so\n```\n\n\nThat's what I was thinking of. Looks as if the linker also (first!) searches the old lib dir.\n\nYou renamed the directory of the upgrade / copied the Sage tree to a new directory...\n\nCould you temporarily rename the 4.5.3 directory and rerun `./sage -b` (after again touching Cython files)?\n\n(I assume `/Applications/sage_builds/sage-4.5.3` still exists.)",
     "created_at": "2010-09-14T22:50:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98203",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98040",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -816,15 +816,15 @@ Could you temporarily rename the 4.5.3 directory and rerun `./sage -b` (after ag
 
 ---
 
-archive/issue_comments_098204.json:
+archive/issue_comments_098041.json:
 ```json
 {
     "body": "Replying to [comment:26 leif]:\n> You renamed the directory of the upgrade / copied the Sage tree to a new directory...\n\nYes, I copied it.  I always do this so if the upgrade screws up, I still have a working copy of Sage.\n \n> Could you temporarily rename the 4.5.3 directory and rerun `./sage -b` (after again touching Cython files)?\n\nOkay, I did that.  Here's part of the log from \"./sage -b\".  Note the warning, since I renamed the directory:\n\n```\ngcc -L/Applications/sage_builds/sage-4.5.3/local/lib -bundle -undefined dynamic_lookup build/temp.macosx-10.6-i386-2.6/sage/rings/complex_double.o -L/Applications/sage_builds/sage-4.6.alpha0-upgrade/local//lib -lcsage -lgsl -lcblas -latlas -lpari -lgmp -lm -lstdc++ -lntl -o build/lib.macosx-10.6-i386-2.6/sage/rings/complex_double.so\nld: warning: directory '/Applications/sage_builds/sage-4.5.3/local/lib' following -L not found\nTotal time spent compiling C/C++ extensions:  9.04102396965 seconds.\nrunning install_lib\ncopying build/lib.macosx-10.6-i386-2.6/sage/rings/complex_double.so -> /Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage/rings\nrunning install_egg_info\nRemoving /Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\nWriting /Applications/sage_builds/sage-4.6.alpha0-upgrade/local/lib/python2.6/site-packages/sage-0.0.0-py2.6.egg-info\n```\n\nI still get the import error, unfortunately.",
     "created_at": "2010-09-14T23:07:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98204",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98041",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -854,15 +854,15 @@ I still get the import error, unfortunately.
 
 ---
 
-archive/issue_comments_098205.json:
+archive/issue_comments_098042.json:
 ```json
 {
     "body": "Replying to [comment:27 jhpalmieri]:\n> I still get the import error, unfortunately.\n\nHopefully now from a different import?",
     "created_at": "2010-09-14T23:13:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98205",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98042",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -875,15 +875,15 @@ Hopefully now from a different import?
 
 ---
 
-archive/issue_comments_098206.json:
+archive/issue_comments_098043.json:
 ```json
 {
     "body": "Ah, if I touch libs/pari/gen.pxd and then do \"./sage -b\", it starts without an error.  That seems to clear up all of the dependencies.",
     "created_at": "2010-09-14T23:15:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98206",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98043",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -893,15 +893,15 @@ Ah, if I touch libs/pari/gen.pxd and then do "./sage -b", it starts without an e
 
 ---
 
-archive/issue_comments_098207.json:
+archive/issue_comments_098044.json:
 ```json
 {
     "body": "So I think I need to delete the old libpari-gmp library, move the old Sage directory, touch \n\n- devel/sage/sage/libs/cremona/homspace.pyx \n- devel/sage/sage/libs/cremona/newforms.pyx \n- devel/sage/sage/libs/mwrank/mwrank.pyx \n- devel/sage/sage/libs/pari/gen.pxd\n\nand then run \"./sage -b\".  Simple.",
     "created_at": "2010-09-14T23:27:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98207",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98044",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -918,15 +918,15 @@ and then run "./sage -b".  Simple.
 
 ---
 
-archive/issue_comments_098208.json:
+archive/issue_comments_098045.json:
 ```json
 {
     "body": "I still hate trac...\n\nHmmm, the preprocessor supports `-I-`, unfortunately the linker not `-L-`, so we have to modify the dumb Python default compiler settings to get rid of obsolete directories...",
     "created_at": "2010-09-14T23:29:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98208",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98045",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -938,15 +938,15 @@ Hmmm, the preprocessor supports `-I-`, unfortunately the linker not `-L-`, so we
 
 ---
 
-archive/issue_comments_098209.json:
+archive/issue_comments_098046.json:
 ```json
 {
     "body": "Replying to [comment:30 jhpalmieri]:\n> So I think I need to delete the old libpari-gmp library, move the old Sage directory, touch \n>  ...\n>  - devel/sage/sage/libs/pari/gen.pxd\n\nThe latter shouldn't be necessary.\n\n \n> Simple.\n\n;-) How many users will agree on that?",
     "created_at": "2010-09-14T23:31:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98209",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98046",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -966,15 +966,15 @@ The latter shouldn't be necessary.
 
 ---
 
-archive/issue_comments_098210.json:
+archive/issue_comments_098047.json:
 ```json
 {
     "body": "Also looks like a Python on Darwin bug; I have the opposite order of linker search directories.",
     "created_at": "2010-09-14T23:41:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98210",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98047",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -984,15 +984,15 @@ Also looks like a Python on Darwin bug; I have the opposite order of linker sear
 
 ---
 
-archive/issue_comments_098211.json:
+archive/issue_comments_098048.json:
 ```json
 {
     "body": "> The latter shouldn't be necessary.\n\nI guess you're right.\n\nWouldn't it be easier for upgrading to see if libpari-gmp.dylib exists, and if so, delete it and then link libpari-gmp-2.4.dylib to it?\n\nBy the way, on a linux box I see libpari-gmp.so.2 and libpari-gmp.so.2.3.5 lying around from the old install.  They don't seem to cause any trouble, but should they be removed also?",
     "created_at": "2010-09-14T23:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98211",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98048",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1008,15 +1008,15 @@ By the way, on a linux box I see libpari-gmp.so.2 and libpari-gmp.so.2.3.5 lying
 
 ---
 
-archive/issue_comments_098212.json:
+archive/issue_comments_098049.json:
 ```json
 {
     "body": "Replying to [comment:34 jhpalmieri]:\n> Wouldn't it be easier for upgrading to see if libpari-gmp.dylib exists, and if so, delete it and then link libpari-gmp-2.4.dylib to it?\n\nI was thinking of fixing this in general, not a specific work-around limited to updating to *this* release.\n\n> By the way, on a linux box I see libpari-gmp.so.2 and libpari-gmp.so.2.3.5 lying around from the old install.  They don't seem to cause any trouble, but should they be removed also?\n\nAs I said, on Linux we seem to have the correct order of library search dirs, so if all necessary files actually get rebuilt, the old libs shouldn't cause problems. In fact, you can use both versions \"at the same time\" (on Linux), i.e. some Sage modules using the old, and some the new version. The Darwin loader doesn't support this, at least with how the modules are currently built on Darwin.\n\nFor the directory renaming issue (perhaps typical for upgrades, but not limited to):\n\n```python\ndistutils.sysconfig.get_config_vars()[\"LDFLAGS\"]=\"\" # remove potentially obsolete \"-L$SAGE_LOCAL/lib\"\n```\n\n(To be added to `devel/sage/setup.py`; doesn't hurt on normal installations where it is redundant anyway.)",
     "created_at": "2010-09-15T00:19:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98212",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98049",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1041,15 +1041,15 @@ distutils.sysconfig.get_config_vars()["LDFLAGS"]="" # remove potentially obsolet
 
 ---
 
-archive/issue_comments_098213.json:
+archive/issue_comments_098050.json:
 ```json
 {
     "body": "Replying to [comment:35 leif]:\n>\n\n```python\ndistutils.sysconfig.get_config_vars()[\"LDFLAGS\"]=\"\" # remove potentially obsolete \"-L$SAGE_LOCAL/lib\"\n```\n\n\n*In theory...* We have to re-customize the compiler.",
     "created_at": "2010-09-15T00:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98213",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98050",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1067,15 +1067,15 @@ distutils.sysconfig.get_config_vars()["LDFLAGS"]="" # remove potentially obsolet
 
 ---
 
-archive/issue_comments_098214.json:
+archive/issue_comments_098051.json:
 ```json
 {
     "body": "I'm not sure where the 4.5.3 is coming from.  If I do `./sage -ipython`:\n\n```\nIn [1]: import distutils.sysconfig\n\nIn [2]: s=''.join([str(x) for x in distutils.sysconfig.get_config_vars().values()])\n\nIn [3]: s.find('4.5')\nOut[3]: -1\n```\n\nSo the string '4.5' is not in any value of any variable listed by `get_config_vars`.  (By inspection it wasn't in LDFLAGS.)  I'm assuming that running `./sage -ipython` sets all of the variables the same way as during the `./sage -b` process, but I suppose this could be wrong.\n\nSo where does 4.5.3 come from?  Is there some file which stores it which needs to be rebuilt?  I notice that devel/sage/module_list.pyc is old and seems to refer to the absolute path, but rebuilding it didn't help.  Any other ideas?",
     "created_at": "2010-09-15T01:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98214",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98051",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1098,15 +1098,15 @@ So where does 4.5.3 come from?  Is there some file which stores it which needs t
 
 ---
 
-archive/issue_comments_098215.json:
+archive/issue_comments_098052.json:
 ```json
 {
     "body": "I'm sorry, that's wrong, I was running it on the wrong machine.  4.5.3 appears in lots of places:\n\n```\n 'BINDIR': '/Applications/sage_builds/sage-4.5.3/local/bin',\n 'BINLIBDEST': '/Applications/sage_builds/sage-4.5.3/local/lib/python2.6',\n 'BLDSHARED': 'gcc -L/Applications/sage_builds/sage-4.5.3/local/lib -bundle -undefined dynamic_lookup',\n 'CONFIG_ARGS': \"'--enable-shared' '--prefix=/Applications/sage_builds/sage-4.5.3/local' '--enable-unicode=ucs4' '--disable-toolbox-glue' 'CC=gcc' 'LDFLAGS=-L/Applications/sage_builds/sage-4.5.3/local/lib ' 'CPPFLAGS=-I/Applications/sage_builds/sage-4.5.3/local/include '\",\n 'CONFINCLUDEDIR': '/Applications/sage_builds/sage-4.5.3/local/include',\n 'CONFINCLUDEPY': '/Applications/sage_builds/sage-4.5.3/local/include/python2.6',\n 'CPPFLAGS': '-I. -IInclude -I./Include -I/Applications/sage_builds/sage-4.5.3/local/include',\n 'DESTDIRS': '/Applications/sage_builds/sage-4.5.3/local /Applications/sage_builds/sage-4.5.3/local/lib /Applications/sage_builds/sage-4.5.3/local/lib/python2.6 /Applications/sage_builds/sage-4.5.3/local/lib/python2.6/lib-dynload',\n 'DESTLIB': '/Applications/sage_builds/sage-4.5.3/local/lib/python2.6',\n 'DESTSHARED': '/Applications/sage_builds/sage-4.5.3/local/lib/python2.6/lib-dynload'\n 'INCLDIRSTOMAKE': '/Applications/sage_builds/sage-4.5.3/local/include /Applications/sage_builds/sage-4.5.3/local/include /Applications/sage_builds/sage-4.5.3/local/include/python2.6 /Applications/sage_builds/sage-4.5.3/local/include/python2.6',\n 'INCLUDEDIR': '/Applications/sage_builds/sage-4.5.3/local/include',\n 'INCLUDEPY': '/Applications/sage_builds/sage-4.5.3/local/include/python2.6',\n 'LDFLAGS': '-L/Applications/sage_builds/sage-4.5.3/local/lib',\n 'LDSHARED': 'gcc -L/Applications/sage_builds/sage-4.5.3/local/lib -bundle -undefined dynamic_lookup',\n 'LIBDEST': '/Applications/sage_builds/sage-4.5.3/local/lib/python2.6'\n 'LIBDIR': '/Applications/sage_builds/sage-4.5.3/local/lib'\n 'LIBP': '/Applications/sage_builds/sage-4.5.3/local/lib/python2.6'\n 'LIBPL': '/Applications/sage_builds/sage-4.5.3/local/lib/python2.6/config'\n 'MACHDESTLIB': '/Applications/sage_builds/sage-4.5.3/local/lib/python2.6'\n 'MANDIR': '/Applications/sage_builds/sage-4.5.3/local/share/man'\n 'PY_CFLAGS': '-fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I. -IInclude -I./Include -I/Applications/sage_builds/sage-4.5.3/local/include  -DPy_BUILD_CORE'\n 'SCRIPTDIR': '/Applications/sage_builds/sage-4.5.3/local/lib'\n```\n",
     "created_at": "2010-09-15T01:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98215",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98052",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1143,15 +1143,15 @@ I'm sorry, that's wrong, I was running it on the wrong machine.  4.5.3 appears i
 
 ---
 
-archive/issue_comments_098216.json:
+archive/issue_comments_098053.json:
 ```json
 {
     "body": "I can get rid of the second dir by adding the following line in `devel/sage/setup.py`:\n\n```python\n        self.compiler.set_library_dirs([]) # may have contained obsolete ones\n\n        self.compiler.link_shared_object(\n        ...\n```\n\n\nBut your `LDSHARED` looks bad; mine is just\n\n```\n'gcc -march=native -O3 -fno-strict-aliasing -fomit-frame-pointer -DHONORS_CFLAGS -pthread -shared'\n```\n\nor simply (the relevant part)\n\n```\n'gcc -pthread -shared'\n```\n",
     "created_at": "2010-09-15T01:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98216",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98053",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1182,15 +1182,15 @@ or simply (the relevant part)
 
 ---
 
-archive/issue_comments_098217.json:
+archive/issue_comments_098054.json:
 ```json
 {
     "body": "You can also replace or modify the linker command (for shared libraries) in `setup.py` by e.g.\n\n```python\n        self.compiler.linker_so=[\"gcc\",\"-shared\",\"-pthread\"] # Linux\n\n        self.compiler.link_shared_object(\n        ...\n```\n\nIn your case, perhaps just delete the second list element (`\"-L/...\"`).\n\nSimilar things have perhaps to be done for other commands and args / parameters.",
     "created_at": "2010-09-15T02:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98217",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98054",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1211,15 +1211,15 @@ Similar things have perhaps to be done for other commands and args / parameters.
 
 ---
 
-archive/issue_comments_098218.json:
+archive/issue_comments_098055.json:
 ```json
 {
     "body": "Maybe doing the equivalent of `export LDSHARED='gcc -bundle -undefined dynamic_lookup'` will do it.  Actually running that in the shell, then touching a bunch of pyx files and typing \"./sage -b\", produces a version of sage which starts up without an import error.  It seems to use the correct command when building the Sage library files, and in distutils.sysconfig.customize_compiler, it says\n\n```\n        if 'LDSHARED' in os.environ:\n            ldshared = os.environ['LDSHARED']\n```\n\nI wish we knew why this is getting set wrong...",
     "created_at": "2010-09-15T03:57:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98218",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98055",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1236,15 +1236,15 @@ I wish we knew why this is getting set wrong...
 
 ---
 
-archive/issue_comments_098219.json:
+archive/issue_comments_098056.json:
 ```json
 {
     "body": "Replying to [comment:18 leif]:\n> I consider the \"`touch` issue\" a bug in `module_list.py`, since PARI is not directly used by those extension modules (but listed in their `libraries`, and therefore gets recorded in the list of needed libraries).\n\nI've opened #9914 to fix this; minimal patch up there, needs review.\n\n(Note that these extension modules also did not get rebuilt because they **don't** [directly] depend on PARI, despite that fact linked against it. Unless one links with `--as-needed`, which isn't very portable, the - *potentially later obsolete* - PARI library unnecessarily gets recorded as a prerequisite for those extension modules.)",
     "created_at": "2010-09-16T11:07:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98219",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98056",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1259,15 +1259,15 @@ I've opened #9914 to fix this; minimal patch up there, needs review.
 
 ---
 
-archive/issue_comments_098220.json:
+archive/issue_comments_098057.json:
 ```json
 {
     "body": "I have another possible data point.  I upgraded to 4.6.alpha1 (not alpha0) from 4.5.3 on OS X 10.6, and all seems well, except for failing doctests in `schemes/elliptic_curves/ell_rational_field.py` and `libs/mwrank/interface.py`.  Both errors are in mwrank.\n\nI have an updated Pynac (which would be time-consuming to revert) on this installation, which I suppose could have something to do with this.  But this seems fairly unlikely to me, so I thought I'd ask if anyone had tried the new upgrade possibility and seen something similar.",
     "created_at": "2010-09-22T02:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98220",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98057",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1279,15 +1279,15 @@ I have an updated Pynac (which would be time-consuming to revert) on this instal
 
 ---
 
-archive/issue_comments_098221.json:
+archive/issue_comments_098058.json:
 ```json
 {
     "body": "I should point out that the errors look like the ones here, segmentation fault in Pari and all that.  It's not the computer I'm on right now, so I won't laboriously type it all out.\n\nFor what it's worth, I get\n\n```\n\nsage -t  \"devel/sage/sage/libs/mwrank/interface.py\"         \nThe doctested process was killed by signal 4\n         [199.7 s]\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\nThe doctested process was killed by signal 4\n         [337.5 s]\n \n```\n\non OS X 10.4 with this same upgrade pattern, and without the new Pynac.  Also curious.",
     "created_at": "2010-09-22T02:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98221",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98058",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1312,15 +1312,15 @@ on OS X 10.4 with this same upgrade pattern, and without the new Pynac.  Also cu
 
 ---
 
-archive/issue_comments_098222.json:
+archive/issue_comments_098059.json:
 ```json
 {
     "body": "Replying to [comment:44 kcrisman]:\n> I should point out that the errors look like the ones here, segmentation fault in Pari and all that.  It's not the computer I'm on right now, so I won't laboriously type it all out.\n> \n> For what it's worth, I get\n\n```\n\nsage -t  \"devel/sage/sage/libs/mwrank/interface.py\"         \nThe doctested process was killed by signal 4\n         [199.7 s]\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\nThe doctested process was killed by signal 4\n         [337.5 s]\n \n```\n\n> on OS X 10.4 with this same upgrade pattern, and without the new Pynac.  Also curious.\n\nHmmm, not that surprising, except that signal 4 is \"illegal instruction\", not a segmentation fault (but perhaps Apple uses different numbers on Darwin 8).\n\nDid you\n* rebuild ECLIB (with `./sage -f ...`) (depends on PARI)\n* rename or copy the 4.5.3 directory? \n\nAs mentioned above, three extension modules do **not** get rebuilt though they link against PARI (and depend on ECLIB).\n\nIn case you copied the directory to keep the 4.5.3 installation, the linker on Darwin will **first** search `$SAGE_LOCAL/lib` of the **old** Sage installation, and therefore link against the wrong PARI library. You can export `LDSHARED` to prevent this (see above).\n\nI'm not sure if the setting differs on MacOS X 10.4, so you could do:\n\n```\nsage: import distutils.sysconfig\nsage: distutils.sysconfig.get_config_var(\"LDSHARED\")\n' (current setting) '\n```\n\nand set `LDSHARED` to what you see except the first `-L...` (and export it).\n\nThen force rebuilding ECLIB, touch the three Cython files listed above and do `./sage -b`.\n\n\nI - hate - trac ... 8| (once again just logged me off when replying s.t. my whole comment went to /dev/null)",
     "created_at": "2010-09-22T03:25:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98222",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98059",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1371,15 +1371,15 @@ I - hate - trac ... 8| (once again just logged me off when replying s.t. my whol
 
 ---
 
-archive/issue_comments_098223.json:
+archive/issue_comments_098060.json:
 ```json
 {
     "body": "> Did you\n>  * rebuild ECLIB (with `./sage -f ...`) (depends on PARI)\n>  * rename or copy the 4.5.3 directory? \nNope - like I said, it was a data point.\n> Then force rebuilding ECLIB, touch the three Cython files listed above and do `./sage -b`.\nI'll try this.",
     "created_at": "2010-09-22T12:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98223",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98060",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1394,15 +1394,15 @@ I'll try this.
 
 ---
 
-archive/issue_comments_098224.json:
+archive/issue_comments_098061.json:
 ```json
 {
     "body": "> > Then force rebuilding ECLIB, touch the three Cython files listed above and do `./sage -b`.\n> I'll try this.\n\nYup, this fixed it.  I hope you figure out how to fix this before 4.6 is released!  A lot of our clientele is likely to have precisely this platform.",
     "created_at": "2010-09-22T14:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98224",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98061",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1415,15 +1415,15 @@ Yup, this fixed it.  I hope you figure out how to fix this before 4.6 is release
 
 ---
 
-archive/issue_comments_098225.json:
+archive/issue_comments_098062.json:
 ```json
 {
     "body": "Karl-Dieter, could you add another data point, the output of\n\n```\ndistutils.sysconfig.get_config_var(\"LDSHARED\")\n```\n\non your MacOS X 10.**4** box? (Just to make sure it doesn't differ much from the settings on 10.5 and 10.6.)\n\nBtw, \"illegal instruction\" errors (signal 4) are also reasonable when the wrong PARI library is used, since memory might get corrupted and function pointers may point to some arbitrary location.\n\nThis upgrade problem isn't that hard to fix (since we now know the two rather unrelated causes), but I think I'll open a follow-up ticket for the necessary patches.",
     "created_at": "2010-09-22T15:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98225",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98062",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1443,15 +1443,15 @@ This upgrade problem isn't that hard to fix (since we now know the two rather un
 
 ---
 
-archive/issue_comments_098226.json:
+archive/issue_comments_098063.json:
 ```json
 {
     "body": "Replying to [comment:11 jhpalmieri]:\n> The time stamps on pariport.h, paritype.h, and paripriv.h are all old, too.\n\nJust for the record: `paripriv.h` is a patched Sage version which is copied with `-p` on Darwin, but that's in general ok (though we don't preserve the file attributes, including the modification time, on others systems).",
     "created_at": "2010-09-22T17:52:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98226",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98063",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1464,15 +1464,15 @@ Just for the record: `paripriv.h` is a patched Sage version which is copied with
 
 ---
 
-archive/issue_comments_098227.json:
+archive/issue_comments_098064.json:
 ```json
 {
     "body": "Replying to [comment:49 leif]:\n> Replying to [comment:11 jhpalmieri]:\n> > The time stamps on pariport.h, paritype.h, and paripriv.h are all old, too.\n> \n> Just for the record: `paripriv.h` is a patched Sage version which is copied with `-p` on Darwin, but that's in general ok (though we don't preserve the file attributes, including the modification time, on others systems).\n\nThe file `paripriv.h` is also patched on Solaris. \n\nNote William told me the file should be private to Pari (hence the \"priv\" in the name), so he is not surprised it needs patching for OS X and Solaris. \n\nI don't actually understand what this file does, but I rather get the feeling it is a hack of some sort.",
     "created_at": "2010-09-22T21:38:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98227",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98064",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -1492,15 +1492,15 @@ I don't actually understand what this file does, but I rather get the feeling it
 
 ---
 
-archive/issue_comments_098228.json:
+archive/issue_comments_098065.json:
 ```json
 {
     "body": "Replying to [comment:50 drkirkby]:\n> The file `paripriv.h` is also patched on Solaris.\n\nThe patched version only avoids a single name clash on MacOS X and Solaris.  \n\n> I don't actually understand what this file does, but I rather get the feeling it is a hack of some sort. \n\nIt defines more lower-level structures and functions of PARI that we use in `sage/libs/pari/gen.pyx`, the Python/Cython PARI *library* interface.",
     "created_at": "2010-09-22T23:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98228",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98065",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1517,15 +1517,15 @@ It defines more lower-level structures and functions of PARI that we use in `sag
 
 ---
 
-archive/issue_comments_098229.json:
+archive/issue_comments_098066.json:
 ```json
 {
     "body": "Replying to [comment:48 leif]:\n> Karl-Dieter, could you add another data point, the output of\n> {{{\n> distutils.sysconfig.get_config_var(\"LDSHARED\")\n> }}}\n> on your MacOS X 10.**4** box? (Just to make sure it doesn't differ much from the settings on 10.5 and 10.6.)\n> \n\n```\nsage: import distutils\nsage: distutils.sysconfig.get_config_var(\"LDSHARED\")\n'gcc -L/Users/crisman/Desktop/sage-4.5.3/local/lib -bundle -undefined dynamic_lookup'\n```\n\nIncidentally, I already changed the name of that folder to sage-4.6.alpha1, so that by itself is a little unsettling...",
     "created_at": "2010-09-23T00:13:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98229",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98066",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1549,15 +1549,15 @@ Incidentally, I already changed the name of that folder to sage-4.6.alpha1, so t
 
 ---
 
-archive/issue_comments_098230.json:
+archive/issue_comments_098067.json:
 ```json
 {
     "body": "Replying to [comment:45 leif]:\n> Replying to [comment:44 kcrisman]:\n> > I should point out that the errors look like the ones here, segmentation fault in Pari and all that.  It's not the computer I'm on right now, so I won't laboriously type it all out.\n> > \n> > For what it's worth, I get\n> {{{\n> \n> sage -t  \"devel/sage/sage/libs/mwrank/interface.py\"         \n> The doctested process was killed by signal 4\n>          [199.7 s]\n> sage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n> The doctested process was killed by signal 4\n>          [337.5 s]\n>  \n> }}}\n\nOk, did everything right and \n\n```\nsage -t  \"devel/sage/sage/libs/mwrank/interface.py\"         \n         [50.8 s]\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/ell_rational_field.py\"\n         [279.7 s]\n \n----------------------------------------------------------------------\nAll tests passed!\n```\n\nThanks!",
     "created_at": "2010-09-23T00:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98230",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98067",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -1595,15 +1595,15 @@ Thanks!
 
 ---
 
-archive/issue_comments_098231.json:
+archive/issue_comments_098068.json:
 ```json
 {
     "body": "Sage library patch. Fixes the relevant extension module dependencies. Based on Sage 4.6.alpha1.",
     "created_at": "2010-09-23T04:18:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98231",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98068",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1613,15 +1613,15 @@ Sage library patch. Fixes the relevant extension module dependencies. Based on S
 
 ---
 
-archive/issue_comments_098232.json:
+archive/issue_comments_098069.json:
 ```json
 {
     "body": "Attachment [trac_9896-propagate_upgrading_to_install_script-scripts_repo.patch](tarball://root/attachments/some-uuid/ticket9896/trac_9896-propagate_upgrading_to_install_script-scripts_repo.patch) by @nexttime created at 2010-09-23 06:45:42\n\nScripts repo patch (to sage-upgrade). Based on Sage 4.6.alpha1.",
     "created_at": "2010-09-23T06:45:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98232",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98069",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1633,15 +1633,15 @@ Scripts repo patch (to sage-upgrade). Based on Sage 4.6.alpha1.
 
 ---
 
-archive/issue_comments_098233.json:
+archive/issue_comments_098070.json:
 ```json
 {
     "body": "New `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision control.)",
     "created_at": "2010-09-23T06:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98233",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98070",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1651,15 +1651,15 @@ New `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision control.
 
 ---
 
-archive/issue_comments_098234.json:
+archive/issue_comments_098071.json:
 ```json
 {
     "body": "Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.diff) by @nexttime created at 2010-09-23 06:51:26\n\nDiff of new `spkg/standard/deps` against that of Sage 4.6.alpha1.",
     "created_at": "2010-09-23T06:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98234",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98071",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1671,15 +1671,15 @@ Diff of new `spkg/standard/deps` against that of Sage 4.6.alpha1.
 
 ---
 
-archive/issue_comments_098235.json:
+archive/issue_comments_098072.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"upgrade update dependencies PARI NewPARI\".",
     "created_at": "2010-09-23T07:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98235",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98072",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1689,15 +1689,15 @@ Changing keywords from "" to "upgrade update dependencies PARI NewPARI".
 
 ---
 
-archive/issue_comments_098236.json:
+archive/issue_comments_098073.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-09-23T07:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98236",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98073",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1707,15 +1707,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_098237.json:
+archive/issue_comments_098074.json:
 ```json
 {
     "body": "I've attached a few patches / files and their diffs that make upgrading from Sage < 4.6 (i.e. to the new PARI) work.\n\nI think this is a general improvement (not limited to PARI upgrade), though for e.g. the GMP/MPIR 2.1.2 upgrade (see #8664), more dependencies (or some other mechanism) have to be added to `module_list.py` to properly rebuild the Sage *library* (i.e. **all** *extension modules* that depend on MPIR). Sage *packages* depending on an upgraded spkg will now get rebuilt without the need to download unmodified \"new\" versions (with just the patch level bumped in order to get them rebuilt).\n\nI'm setting this to \"needs review\", though I've not yet uploaded a patch to get around the specific *Darwin* linker problem (but I'll provide one later).\n\nWhen doing an \"in-place\" upgrade (i.e. keeping the old directory name), the current patches should also fully work on MacOS X. A work-around to the linker problem (i.e. when the Sage to be upgraded is located in a new directory) is manually setting (and exporting) `LDSHARED` to the output of `distutils.sysconfig.get_config_var(\"LDSHARED\")` with the second \"word\" (`-L...`) either dropped or replaced by `-L` immediately followed by `$SAGE_ROOT/local/lib` (with `$SAGE_ROOT` the actual directory name, not the environment variable; see also comments above for more details).\n\nUnfortunately we'll have to set up a Sage package server (or a special directory on e.g. `www.sagemath.org`) to \"fully\" test this, i.e. by *really* running `sage -upgrade`.\n\nOn the other hand, the changes are quite small such that they should easily be reviewed. The behavior can be tested by e.g. running `make` with `SAGE_UPGRADING` set to \"yes\", faking some spkg was new (to see that all dependent spkgs really get rebuilt) etc. .\n\nOne can also test it by doing a real upgrade from some **vanilla** version to 4.6.alpha1, **after that** applying the patch to `module_list.py` and copying over the new `spkg/install` and `spkg/standard/deps`, then exporting `SAGE_UPGRADE=yes` and running `make`. Then everything should be properly [re]built.",
     "created_at": "2010-09-23T07:51:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98237",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98074",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1737,15 +1737,15 @@ One can also test it by doing a real upgrade from some **vanilla** version to 4.
 
 ---
 
-archive/issue_comments_098238.json:
+archive/issue_comments_098075.json:
 ```json
 {
     "body": "Replying to [comment:54 leif]:\n> Unfortunately we'll have to set up a Sage package server (or a special directory on e.g. `www.sagemath.org`) to \"fully\" test this, i.e. by *really* running `sage -upgrade`.\n\nI could probably do this.",
     "created_at": "2010-09-23T07:57:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98238",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98075",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1758,15 +1758,15 @@ I could probably do this.
 
 ---
 
-archive/issue_comments_098239.json:
+archive/issue_comments_098076.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-23T10:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98239",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98076",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1776,15 +1776,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_098240.json:
+archive/issue_comments_098077.json:
 ```json
 {
     "body": "Your `spkg/install` file gives trouble:\n\n```\ncd spkg && ./install all 2>&1 | tee -a ../install.log\n./install: line 90: syntax error near unexpected token `||'\n./install: line 90: `    || ([ -f \"$SAGE_LOCAL/bin/sage-upgrade\" ] &&'\n```\n",
     "created_at": "2010-09-23T10:57:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98240",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98077",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1801,15 +1801,15 @@ cd spkg && ./install all 2>&1 | tee -a ../install.log
 
 ---
 
-archive/issue_comments_098241.json:
+archive/issue_comments_098078.json:
 ```json
 {
     "body": "This is on a Gentoo Linux x86_64 system, with\n\n```\nGNU bash, version 3.2.39(1)-release (x86_64-pc-linux-gnu)\nCopyright (C) 2007 Free Software Foundation, Inc.\n```\n",
     "created_at": "2010-09-23T10:58:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98241",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98078",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1825,15 +1825,15 @@ Copyright (C) 2007 Free Software Foundation, Inc.
 
 ---
 
-archive/issue_comments_098242.json:
+archive/issue_comments_098079.json:
 ```json
 {
     "body": "I looks like lines 90 and 91 need a `\\` at the end of the line.",
     "created_at": "2010-09-23T11:01:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98242",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98079",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1843,15 +1843,15 @@ I looks like lines 90 and 91 need a `\` at the end of the line.
 
 ---
 
-archive/issue_comments_098243.json:
+archive/issue_comments_098080.json:
 ```json
 {
     "body": "New `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision control.)",
     "created_at": "2010-09-23T13:20:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98243",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98080",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1861,15 +1861,15 @@ New `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision control.)
 
 ---
 
-archive/issue_comments_098244.json:
+archive/issue_comments_098081.json:
 ```json
 {
     "body": "Attachment [trac_9896-SAGE_ROOT__spkg__install](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install) by @nexttime created at 2010-09-23 13:20:58\n\nDiff of new `spkg/install` against that of Sage 4.6.alpha1.",
     "created_at": "2010-09-23T13:20:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98244",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98081",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1881,15 +1881,15 @@ Diff of new `spkg/install` against that of Sage 4.6.alpha1.
 
 ---
 
-archive/issue_comments_098245.json:
+archive/issue_comments_098082.json:
 ```json
 {
     "body": "Attachment [trac_9896-SAGE_ROOT__spkg__install.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.diff) by @nexttime created at 2010-09-23 13:24:21\n\nReplying to [comment:54 leif]:\n> One can also test it by doing a real upgrade from some **vanilla** version to 4.6.alpha1, **after that** applying the patch to `module_list.py` and copying over the new `spkg/install` and `spkg/standard/deps`, then exporting `SAGE_UPGRADE=yes` and running `make`. Then everything should be properly [re]built.\n\ns/`SAGE_UPGRADE`/`SAGE_UPGRADING`/",
     "created_at": "2010-09-23T13:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98245",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98082",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1904,15 +1904,15 @@ s/`SAGE_UPGRADE`/`SAGE_UPGRADING`/
 
 ---
 
-archive/issue_comments_098246.json:
+archive/issue_comments_098083.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-23T13:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98246",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98083",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1922,15 +1922,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_098247.json:
+archive/issue_comments_098084.json:
 ```json
 {
     "body": "Replying to [comment:56 jdemeyer]:\n> Your `spkg/install` file gives trouble\n\nUpdated.",
     "created_at": "2010-09-23T13:25:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98247",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98084",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -1943,15 +1943,15 @@ Updated.
 
 ---
 
-archive/issue_comments_098248.json:
+archive/issue_comments_098085.json:
 ```json
 {
     "body": "I created a Sage distribution for testing this.\n\nPlease test:\n\n```\nsage -upgrade http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/\n```\n",
     "created_at": "2010-09-24T07:36:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98248",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98085",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1968,15 +1968,15 @@ sage -upgrade http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgrad
 
 ---
 
-archive/issue_comments_098249.json:
+archive/issue_comments_098086.json:
 ```json
 {
     "body": "Replying to [comment:61 jdemeyer]:\n> I created a Sage distribution for testing this.\n> \n> Please test:\n\n```\nsage -upgrade http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/\n```\n\n\nThanks!\n\nUpgrade path: http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/\n\nOn MacOS X, one should at the moment either do an \"in-place\" upgrade (without renaming the directory / copying the original installation) or follow the instructions given above (regarding `LDSHARED`).",
     "created_at": "2010-09-24T13:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98249",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98086",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2000,15 +2000,15 @@ On MacOS X, one should at the moment either do an "in-place" upgrade (without re
 
 ---
 
-archive/issue_comments_098250.json:
+archive/issue_comments_098087.json:
 ```json
 {
     "body": "Replying to [comment:62 leif]:\n> On MacOS X, one should at the moment either do an \"in-place\" upgrade (without renaming the directory / copying the original installation) or follow the instructions given above (regarding `LDSHARED`).\n\nIf one tests upgrading in a new directory (renamed or copied) on MacOS X, it should be suffient to do\n\n```sh\nexport LDSHARED=\"gcc -bundle -undefined dynamic_lookup\"\n```\n\n**before** running `./sage -upgrade ...` (with the upgrade path provided by Jeroen).",
     "created_at": "2010-09-24T14:11:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98250",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98087",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2027,15 +2027,15 @@ export LDSHARED="gcc -bundle -undefined dynamic_lookup"
 
 ---
 
-archive/issue_comments_098251.json:
+archive/issue_comments_098088.json:
 ```json
 {
     "body": "As is often the case with upgrading, I'm puzzled by the logic here.  How can any patches help an upgrade from 4.5.3 (for example) to 4.6?\n\n- Upgrading won't affect files like `spkg/standard/deps` or `spkg/install` as long as those files aren't tracked anywhere -- see #9433.\n- Upgrading will change scripts like `sage-upgrade`, but of course it has to be running the old versions during the upgrade process.\n\nI can understand that patches to these files might help in future versions, but is there any way to deal with 4.5.3 to 4.6?\n\n(Meanwhile, I'm building a vanilla 4.5.3 to test the new upgrade path.)",
     "created_at": "2010-09-24T16:12:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98251",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98088",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -2052,15 +2052,15 @@ I can understand that patches to these files might help in future versions, but 
 
 ---
 
-archive/issue_comments_098252.json:
+archive/issue_comments_098089.json:
 ```json
 {
     "body": "Replying to [comment:65 jhpalmieri]:\n> As is often the case with upgrading, I'm puzzled by the logic here.  How can any patches help an upgrade from 4.5.3 (for example) to 4.6?\n> \n>  - Upgrading won't affect files like `spkg/standard/deps` or `spkg/install` as long as those files aren't tracked anywhere -- see #9433.\n\n`sage-upgrade.py` also copies these two files (cf. the `pipestatus` issue with upgrading to 4.5[.1]).\n \n>  - Upgrading will change scripts like `sage-upgrade`, but of course it has to be running the old versions during the upgrade process.\n\nThe new `spkg/install` is aware of that, i.e. deals with an old `sage-upgrade`, too. (See comments in the patch to the former.)\n \n> I can understand that patches to these files might help in future versions, but is there any way to deal with 4.5.3 to 4.6?\n\nThe patches are intended to especially deal with this (and should ease future upgrades as well).\n \n> (Meanwhile, I'm building a vanilla 4.5.3 to test the new upgrade path.)\n\nFine. I've copied a 4.5.3 installation (*of course*<sup>TM</sup> first running out of disk space) on Ubuntu 9.04 x86 and am currently running the upgrade.\n\nNote that when teeing the output it appears to hang, since the user is prompted, but the output isn't flushed. (One has to type \"y\" and hit return to start upgrading.) I'll open a ticket for that.",
     "created_at": "2010-09-24T16:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98252",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98089",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2089,15 +2089,15 @@ Note that when teeing the output it appears to hang, since the user is prompted,
 
 ---
 
-archive/issue_comments_098253.json:
+archive/issue_comments_098090.json:
 ```json
 {
     "body": "Ooops, it's not `sage-upgrade.py`, its name is `sage-update` (a Python script though).",
     "created_at": "2010-09-24T16:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98253",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98090",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2107,15 +2107,15 @@ Ooops, it's not `sage-upgrade.py`, its name is `sage-update` (a Python script th
 
 ---
 
-archive/issue_comments_098254.json:
+archive/issue_comments_098091.json:
 ```json
 {
     "body": "Ouch!\n\nJeroen, you forgot to put the new `spkg/install` into the upgrade path.\n\n(http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/spkg/install is still the old one, which doesn't work.)",
     "created_at": "2010-09-24T16:48:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98254",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98091",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2129,15 +2129,15 @@ Jeroen, you forgot to put the new `spkg/install` into the upgrade path.
 
 ---
 
-archive/issue_comments_098255.json:
+archive/issue_comments_098092.json:
 ```json
 {
     "body": "Replying to [comment:58 jdemeyer]:\n> I looks like lines 90 and 91 need a `\\` at the end of the line.\n\nI shouldn't have moved the `||` to the next line (which I later found more readable). ;-)\n\nThe `\\` currently on line 90 (following `&&`) is superfluous, at least for POSIX-conformant shells.",
     "created_at": "2010-09-24T18:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98255",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98092",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2152,15 +2152,15 @@ The `\` currently on line 90 (following `&&`) is superfluous, at least for POSIX
 
 ---
 
-archive/issue_comments_098256.json:
+archive/issue_comments_098093.json:
 ```json
 {
     "body": "Replying to [comment:68 leif]:\n> Ouch!\n> \n> Jeroen, you forgot to put the new `spkg/install` into the upgrade path.\n> \n> (http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/spkg/install is still the old one, which doesn't work.)\n\nShould be fixed (let's hope I didn't mess up anything else).",
     "created_at": "2010-09-24T21:04:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98256",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98093",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2177,15 +2177,15 @@ Should be fixed (let's hope I didn't mess up anything else).
 
 ---
 
-archive/issue_comments_098257.json:
+archive/issue_comments_098094.json:
 ```json
 {
     "body": "Hmmm, this is really odd:\n\nSince the `sage_scripts` spkg has been updated, and is part of `$(BASE)`, and **all** standard packages depend on `$(BASE)`, **all** packages were rebuilt during upgrade.\n\n(This is \"correct\", but except for the number of packages that have to be downloaded, this isn't better than rebuilding the new Sage version from source. Unfortunately, for this release. I wonder if we can improve `spkg/standard/deps`, or avoid updating `sage_scripts` [to often] in the future.)",
     "created_at": "2010-09-25T02:16:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98257",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98094",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2199,15 +2199,15 @@ Since the `sage_scripts` spkg has been updated, and is part of `$(BASE)`, and **
 
 ---
 
-archive/issue_comments_098258.json:
+archive/issue_comments_098095.json:
 ```json
 {
     "body": "Which packages do *really* depend on `sage_scripts`?\n\n(I currently have no idea, except perhaps those depending on Python? Fortran?)",
     "created_at": "2010-09-25T02:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98258",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98095",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2219,15 +2219,15 @@ Which packages do *really* depend on `sage_scripts`?
 
 ---
 
-archive/issue_comments_098259.json:
+archive/issue_comments_098096.json:
 ```json
 {
     "body": "First, after doing\n\n```\n$ export LDSHARED=\"gcc -bundle -undefined dynamic_lookup\"\n$ ./sage -upgrade ...\n```\n\nSage starts without segfaulting.  However, it wasn't totally successful because eclib didn't get rebuilt (nor did most of the packages).  Every log file gets touched, typically with a message like `sage: eclib-20100711 is already installed`, but that's it.  It looks to me as though the upgrade path still doesn't have the right version of \"install\", either in SAGE_ROOT/spkg or in the scripts spkg (which I don't think matters for upgrading).\n\nSecond, of course every package depends on sage_scripts because the script sage-spkg (for example) must be present.  But for upgrading, I don't know which ones really might depend on changes made to it.",
     "created_at": "2010-09-25T03:43:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98259",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98096",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -2246,15 +2246,15 @@ Second, of course every package depends on sage_scripts because the script sage-
 
 ---
 
-archive/issue_comments_098260.json:
+archive/issue_comments_098097.json:
 ```json
 {
     "body": "Replying to [comment:73 jhpalmieri]:\n> [...] it wasn't totally successful because eclib didn't get rebuilt (nor did most of the packages).  Every log file gets touched, typically with a message like `sage: eclib-20100711 is already installed`, but that's it.  It looks to me as though the upgrade path still doesn't have the right version of \"install\", either in SAGE_ROOT/spkg or in the scripts spkg (which I don't think matters for upgrading).\n\nHmmm, did you upgrade to early? Or a cache issue? Worked for me (see above, the machine was completely \"clean\", i.e. lacking any new version of `spkg/install`, and that got properly updated by `sage-update`.\n\n \n> Second, of course every package depends on sage_scripts because the script sage-spkg (for example) must be present.\n\nBut a copy of that is already present (in `spkg/base/`), so it doesn't have to be extracted from an spkg, and is just copied over to `local/bin` (and later overwritten by the one from `sage_scripts`).\n\n> But for upgrading, I don't know which ones really might depend on changes made to it.\n\nI rather thought of dependencies on other scripts. I intentionally did *not* change `sage-spkg`. ;-)",
     "created_at": "2010-09-25T03:58:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98260",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98097",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2276,15 +2276,15 @@ I rather thought of dependencies on other scripts. I intentionally did *not* cha
 
 ---
 
-archive/issue_comments_098261.json:
+archive/issue_comments_098098.json:
 ```json
 {
     "body": "The copying is done in `spkg/base/dir-0.1-install`:\n\n```sh\n...\n   mymkdir \"../local/bin\"\n   mymkdir \"../local/include\"\n   mymkdir \"../tmp/\"\n   mymkdir \"$BUILD\"\n   mymkdir \"installed/\"\n\n   cp base/sage-* ../local/bin/\n...\n```\n",
     "created_at": "2010-09-25T04:03:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98261",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98098",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2307,15 +2307,15 @@ The copying is done in `spkg/base/dir-0.1-install`:
 
 ---
 
-archive/issue_comments_098262.json:
+archive/issue_comments_098099.json:
 ```json
 {
     "body": "... and the base packages are of course *not* installed with `sage-spkg`:\n\n```make\n########################################\n# Building the base system\n########################################\n$(INST)/$(DIR):\n\t$(INSTALL) \"base/$(DIR)-install 2>&1\" \"tee -a $(SAGE_LOGS)/$(DIR).log\"\n```\n",
     "created_at": "2010-09-25T04:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98262",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98099",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2334,15 +2334,15 @@ $(INST)/$(DIR):
 
 ---
 
-archive/issue_comments_098263.json:
+archive/issue_comments_098100.json:
 ```json
 {
     "body": "Replying to [comment:74 leif]:\n> I rather thought of dependencies on other scripts. I intentionally did *not* change `sage-spkg`. ;-)\n\nAn example is the (Python-related) `sage-make_relative`, but this could be run **once** at the end. (Or [also] integrated into `sage-spkg`, as suggested by Dave elsewhere.)",
     "created_at": "2010-09-25T04:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98263",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98100",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2355,15 +2355,15 @@ An example is the (Python-related) `sage-make_relative`, but this could be run *
 
 ---
 
-archive/issue_comments_098264.json:
+archive/issue_comments_098101.json:
 ```json
 {
     "body": "> Hmmm, did you upgrade to early?\n\nThe file [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/spkg/install](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/spkg/install) is still the old one.  Or maybe with the activity on sage.math (with William working on /home, etc.), it got changed back to the old one?",
     "created_at": "2010-09-25T05:00:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98264",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98101",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -2375,15 +2375,15 @@ The file [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetes
 
 ---
 
-archive/issue_comments_098265.json:
+archive/issue_comments_098102.json:
 ```json
 {
     "body": "Replying to [comment:78 jhpalmieri]:\n> > Hmmm, did you upgrade to early?\n> \n> The file [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/spkg/install](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/spkg/install) is still the old one.  Or maybe with the activity on sage.math (with William working on /home, etc.), it got changed back to the old one?\n\nThat's a total mess. It's not *still*, it's **again** the old one!\n\nHopefully trac isn't affected by such...\n\nI only wonder if `spkg/install` gets somehow again overwritten during the upgrade process, since **after** the upgrade, I again have the old version, though I verified the new one was downloaded in the first place (and otherwise I wouldn't have run into the *rebuild all* issue; `sage-spkg` was definitely called with `-f`).\n\nPerhaps it (i.e. the old version) got later again downloaded when doing the *Double-checking...*.\n\nAnd perhaps William should follow Dave and enable the ZIL (on an SSD).",
     "created_at": "2010-09-25T05:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98265",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98102",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2406,15 +2406,15 @@ And perhaps William should follow Dave and enable the ZIL (on an SSD).
 
 ---
 
-archive/issue_comments_098266.json:
+archive/issue_comments_098103.json:
 ```json
 {
     "body": "From `sage-sage`:\n\n```sh\nif [ \"$1\" = '-upgrade' -o \"$1\" = \"--upgrade\" ]; then\n    # People often move the Sage install right before doing the upgrade, so it's\n    # important to fix any path hardcoding issues first, or certain library\n    # links will fail.\n    \"$SAGE_ROOT/local/bin/\"sage-location\n\n    # Do it twice since when installing sage-scripts and a running\n    # script changes, it gets confused and exits with an error.\n    # Running again (with the script replaced) then fixes the problem.\n    # Run from a temporary copy of sage-sage\n    shift\n    sage-upgrade \"$@\"\n    if [ $? = 2 ]; then   # this exit codes means the user elected not to do the upgrade at all.\n        exit $?\n    fi\n    echo \"Double checking that all packages have been installed.\"\n    sage-upgrade \"$@\"\n    exit $?\nfi\n```\n\nBut `sage-update` won't download `spkg/install` twice if *\"No new spkgs\"* are available, which should be the case after a successful (first) upgrade.\n\nSo it must get overwritten from somewhere else...",
     "created_at": "2010-09-25T06:09:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98266",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98103",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2450,15 +2450,15 @@ So it must get overwritten from somewhere else...
 
 ---
 
-archive/issue_comments_098267.json:
+archive/issue_comments_098104.json:
 ```json
 {
     "body": "Replying to [comment:80 leif]:\n> So it must get overwritten from somewhere else...\n\nYep, it's overwritten in `sage_scripts-*`'s `spkg-install`, and Jeroen (also) forgot to put the new one into the `sage_scripts` spkg, s.t. **after** the upgrade, the old one is back.\n\n(`deps` and `sage-upgrade` are ok.)",
     "created_at": "2010-09-25T06:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98267",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98104",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2473,15 +2473,15 @@ Yep, it's overwritten in `sage_scripts-*`'s `spkg-install`, and Jeroen (also) fo
 
 ---
 
-archive/issue_comments_098268.json:
+archive/issue_comments_098105.json:
 ```json
 {
     "body": "I've successfully built and tested 4.6.alpha1 (from scratch) with a *modified* `deps` file where only the Sage library spkg depends on the Sage scripts, with 32 jobs on an already 50% loaded system.\n\nSo as I expected, adding the scripts to `$(BASE)` is obsolete.\n\nI'll upload a `...deps.v2` later, which then avoids rebuilding *all* packages on every upgrade.",
     "created_at": "2010-09-25T06:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98268",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98105",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2495,15 +2495,15 @@ I'll upload a `...deps.v2` later, which then avoids rebuilding *all* packages on
 
 ---
 
-archive/issue_comments_098269.json:
+archive/issue_comments_098106.json:
 ```json
 {
     "body": "Apologies for the mess, I'm having a look what's going on...",
     "created_at": "2010-09-25T08:48:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98269",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98106",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2513,15 +2513,15 @@ Apologies for the mess, I'm having a look what's going on...
 
 ---
 
-archive/issue_comments_098270.json:
+archive/issue_comments_098107.json:
 ```json
 {
     "body": "Could it be that `spkg/install` is overwritten by `make`?  I've patched `spkg/install` and then built Sage.",
     "created_at": "2010-09-25T08:55:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98270",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98107",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2531,15 +2531,15 @@ Could it be that `spkg/install` is overwritten by `make`?  I've patched `spkg/in
 
 ---
 
-archive/issue_comments_098271.json:
+archive/issue_comments_098108.json:
 ```json
 {
     "body": "Yes, `make` overwrites `spkg/install` some time in the very beginning of the installation.  Anybody knows where this `spkg/install` comes from?",
     "created_at": "2010-09-25T09:02:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98271",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98108",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2549,15 +2549,15 @@ Yes, `make` overwrites `spkg/install` some time in the very beginning of the ins
 
 ---
 
-archive/issue_comments_098272.json:
+archive/issue_comments_098109.json:
 ```json
 {
     "body": "Replying to [comment:81 leif]:\n> Replying to [comment:80 leif]:\n> > So it must get overwritten from somewhere else...\n> \n> Yep, it's overwritten in `sage_scripts-*`'s `spkg-install`, and Jeroen (also) forgot to put the new one into the `sage_scripts` spkg, s.t. **after** the upgrade, the old one is back.\n\nYes, this is exactly what happened.",
     "created_at": "2010-09-25T09:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98272",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98109",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2573,15 +2573,15 @@ Yes, this is exactly what happened.
 
 ---
 
-archive/issue_comments_098273.json:
+archive/issue_comments_098110.json:
 ```json
 {
     "body": "Replying to [comment:82 leif]:\n> I've successfully built and tested 4.6.alpha1 (from scratch) with a *modified* `deps` file where only the Sage library spkg depends on the Sage scripts, with 32 jobs on an already 50% loaded system.\n> \n> So as I expected, adding the scripts to `$(BASE)` is obsolete.\n\nI added the scripts to `$(BASE)` during the reorganization of `deps` at #8306, because of the problem mentioned in [comment:ticket:8306:29 this comment].  This may well have been overkill.\n\n> I'll upload a `...deps.v2` later, which then avoids rebuilding *all* packages on every upgrade.",
     "created_at": "2010-09-25T09:26:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98273",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98110",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -2598,15 +2598,15 @@ I added the scripts to `$(BASE)` during the reorganization of `deps` at #8306, b
 
 ---
 
-archive/issue_comments_098274.json:
+archive/issue_comments_098111.json:
 ```json
 {
     "body": "This morning, the upgrade procedure isn't working.  I'm getting this in the *termcap* install log (?!), after the new sage_scripts has been installed successfully:\n\n```\nar rc libtermcap.a termcap.o tparam.o version.o\nranlib libtermcap.a\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install -c -m 644 libtermcap.a /Applications/sage_builds/sage-4.6.alpha1-upgrade/local/lib/libtermcap.a\nCreating pipestatus.\ncp: base/sage-*: No such file or directory\ncp: base/testcc.sh: No such file or directory\ncp: base/testcxx.sh: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 105: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 108: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 111: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 120: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 123: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 126: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 129: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 132: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 135: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 138: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 141: standard/newest_version: No such file or directory\n/Applications/sage_builds/sage-4.6.alpha1-upgrade/local/bin/install: line 144: standard/newest_version: No such file or directory\nError determining package name using spkg/standard/newest_version script.\nmake[1]: *** [install] Error 1\n```\n\nLooks like a directory is not set correctly, because for example \"install\" is being run from local/bin/ rather than from spkg/.",
     "created_at": "2010-09-25T14:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98274",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98111",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -2642,15 +2642,15 @@ Looks like a directory is not set correctly, because for example "install" is be
 
 ---
 
-archive/issue_comments_098275.json:
+archive/issue_comments_098112.json:
 ```json
 {
     "body": "LOL, we should in any case rename our `install` which comes from `sage_scripts` and is first copied to `$SAGE_LOCAL/bin` (which is in the path!).\n\nSo it happened that the scripts spkg got installed during `libtermcap`s installation / `configure`, and that found **our** `install` as a BSD-compatible install.\n\nI'm happy removing `sage_scripts` from `$(BASE)` also solves this! :)",
     "created_at": "2010-09-25T14:46:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98275",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98112",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2664,15 +2664,15 @@ I'm happy removing `sage_scripts` from `$(BASE)` also solves this! :)
 
 ---
 
-archive/issue_comments_098276.json:
+archive/issue_comments_098113.json:
 ```json
 {
     "body": "(Or `libtermcap` simply ran the first `install` [currently] in the path, which happened to be ours.)\n\nI don't think testing with the upgrade (test) path currently makes sense, not to mention the filesystem trouble.",
     "created_at": "2010-09-25T14:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98276",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98113",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2684,15 +2684,15 @@ I don't think testing with the upgrade (test) path currently makes sense, not to
 
 ---
 
-archive/issue_comments_098277.json:
+archive/issue_comments_098114.json:
 ```json
 {
     "body": "In any case, I think I fixed the issues with `spkg/install` in my upgrade path\n[http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/)",
     "created_at": "2010-09-25T15:14:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98277",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98114",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2703,15 +2703,15 @@ In any case, I think I fixed the issues with `spkg/install` in my upgrade path
 
 ---
 
-archive/issue_comments_098278.json:
+archive/issue_comments_098115.json:
 ```json
 {
     "body": "I've long since thought that we need a way of stopping people upgrade from incomatible versions. One stratergy might be to only allow upgrades of the same major version, then ensure that incomatible changes are not permitted in the same version. \n\nI've personally given up tryig to use the upgrade option. \n\nDave",
     "created_at": "2010-09-25T15:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98278",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98115",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -2725,15 +2725,15 @@ Dave
 
 ---
 
-archive/issue_comments_098279.json:
+archive/issue_comments_098116.json:
 ```json
 {
     "body": "Replying to [comment:89 leif]:\n> I'm happy removing `sage_scripts` from `$(BASE)` also solves this! :)\n\nThat's not really true, but we definitely need a new `sage_scripts` spkg.\n\nI'll provide one later, together with a modified `deps`.\n\n`@`Dave: Nice attitude; I don't think many users will agree with you. If we can make upgrading work, we should IMHO do it.",
     "created_at": "2010-09-25T15:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98279",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98116",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2750,15 +2750,15 @@ I'll provide one later, together with a modified `deps`.
 
 ---
 
-archive/issue_comments_098280.json:
+archive/issue_comments_098117.json:
 ```json
 {
     "body": "Replying to [comment:91 jdemeyer]:\n> In any case, I think I fixed the issues with `spkg/install` in my upgrade path\n> [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/)\n\nWell, `spkg/install` and `spkg/standard/deps` are current again, but you've checked the (also current) `install` in (s.t. it's now in the Sage scripts repo, and also ends up in `$SAGE_ROOT/local/bin` where the scripts repo of the installation lives):\n\n```sh\nleif@quadriga:~/tmp/sage_scripts-4.6.upgradetest_alpha1$ hg log -v install     \nchangeset:   1582:876225f0dec8\ntag:         4.6.upgradetest_alpha1\nuser:        Jeroen Demeyer <jdemeyer@cage.ugent.be>\ndate:        Sat Sep 25 11:32:06 2010 +0200\nfiles:       install\ndescription:\n#9896: new spkg/install\n\n\nleif@quadriga:~/tmp/sage_scripts-4.6.upgradetest_alpha1$ \n```\n\n(The file should be in `.hgignore`.)\n\nI don't think the instance in the `sage_scripts` spkg should be copied over `spkg/install` during that spkg's installation; if at all (see below), we should do that **after** the running instance of `spkg/install` has terminated, i.e. from the scripts that start it (`sage-upgrade` and the top-level Makefile, perhaps some other scripts).\n\nBut in principle we don't have to copy it at all; we should just make sure that both are the same. If that's *not* the case, something went very wrong. This is true for both upgrades *and* builds from scratch.",
     "created_at": "2010-09-25T17:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98280",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98117",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2792,15 +2792,15 @@ But in principle we don't have to copy it at all; we should just make sure that 
 
 ---
 
-archive/issue_comments_098281.json:
+archive/issue_comments_098118.json:
 ```json
 {
     "body": "Replying to [comment:87 mpatel]:\n> Replying to [comment:82 leif]:\n> > So as I expected, adding the scripts to `$(BASE)` is obsolete.\n> \n> I added the scripts to `$(BASE)` during the reorganization of `deps` at #8306, because of the problem mentioned in [comment:ticket:8306:29 this comment].  This may well have been overkill.\n\nLOL (again), \"good catch\". That just happened because some !\"#$%& decided to put the Rpy package **into** R's spkg and recursively call `sage-spkg` from R's `spkg-install`. Perhaps #9906 should be a blocker... ;-)\n\n`sage-spkg` is copied over to `$SAGE_LOCAL/bin` early, in `dir-0.1-install` (and `$SAGE_ROOT/sage` is also present), but not `$SAGE_LOCAL/bin/sage-sage`:\n\n```sh\n...\necho \"Now install rpy\"\n\ncd \"$CUR\"\n\nRPY_VER=rpy2-2.0.8\n\nsage -f \"$RPY_VER\".spkg\nif [ ! -f \"$SAGE_ROOT\"/spkg/installed/\"$RPY_VER\" ]; then\n    echo \"Error installing rpy.\"\n    exit 1\nfi\n...\n```\n\n(From R's `spkg-install`. If we as a first step call `sage-spkg` there directly, the error from #8306 won't happen.)",
     "created_at": "2010-09-25T18:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98281",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98118",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2836,15 +2836,15 @@ fi
 
 ---
 
-archive/issue_comments_098282.json:
+archive/issue_comments_098119.json:
 ```json
 {
     "body": "The programs \"sage-download_package\", \"sage-latest-online-package\", \"sage-build-debian\" could conceivably be called by sage-spkg during installation, but they shouldn't for any standard packages.  The script \"sage-check-64\" is called by sage-env, so perhaps it should be added to spkg/base?\n\nThe sagetex package should depend on the scripts package, since its spkg-check file runs Sage, and so relies on the presence of the script sage-sage.",
     "created_at": "2010-09-25T19:13:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98282",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98119",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -2856,15 +2856,15 @@ The sagetex package should depend on the scripts package, since its spkg-check f
 
 ---
 
-archive/issue_comments_098283.json:
+archive/issue_comments_098120.json:
 ```json
 {
     "body": "Replying to [comment:96 jhpalmieri]:\n> The programs \"sage-download_package\", \"sage-latest-online-package\", \"sage-build-debian\" could conceivably be called by sage-spkg during installation, but they shouldn't for any standard packages.\n\nHopefully. ;-)\n\n> The script \"sage-check-64\" is called by sage-env, so perhaps it should be added to spkg/base?\n\nIf we keep it at all (we already had that discussion), it should be and certainly should have earlier been included in `base/`.\n\n> The sagetex package should depend on the scripts package, since its spkg-check file runs Sage, and so relies on the presence of the script sage-sage.\n\nI intended to make the Sage library depend on the Sage scripts; `sagetex` of course (also) depends on the former.",
     "created_at": "2010-09-25T19:47:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98283",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98120",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2885,15 +2885,15 @@ I intended to make the Sage library depend on the Sage scripts; `sagetex` of cou
 
 ---
 
-archive/issue_comments_098284.json:
+archive/issue_comments_098121.json:
 ```json
 {
     "body": "Analogous to `SAGE_UPGRADING`, we should perhaps set `SAGE_BUILDING` (or `SAGE_IN_BUILD`) to \"yes\" to prevent undesired behavior like downloading in scripts.",
     "created_at": "2010-09-25T19:59:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98284",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98121",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2903,15 +2903,15 @@ Analogous to `SAGE_UPGRADING`, we should perhaps set `SAGE_BUILDING` (or `SAGE_I
 
 ---
 
-archive/issue_comments_098285.json:
+archive/issue_comments_098122.json:
 ```json
 {
     "body": "Replying to [comment:95 leif]:\n> If we as a first step call `sage-spkg` there directly, the error from #8306 won't happen.\n\nA new R spkg (r-2.10.1.p4) that doesn't depend on the Sage scripts spkg can be found at #10016 (needs review).",
     "created_at": "2010-09-25T23:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98285",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98122",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2924,15 +2924,15 @@ A new R spkg (r-2.10.1.p4) that doesn't depend on the Sage scripts spkg can be f
 
 ---
 
-archive/issue_comments_098286.json:
+archive/issue_comments_098123.json:
 ```json
 {
     "body": "Replying to [comment:94 leif]:\n> Well, `spkg/install` and `spkg/standard/deps` are current again, but you've checked the (also current) `install` in (s.t. it's now in the Sage scripts repo, and also ends up in `$SAGE_ROOT/local/bin` where the scripts repo of the installation lives):\n\nBut why is it copied to `$SAGE_ROOT/local/bin`? Surely, putting the file under revision control should not have that as consequence?",
     "created_at": "2010-09-26T10:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98286",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98123",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2945,15 +2945,15 @@ But why is it copied to `$SAGE_ROOT/local/bin`? Surely, putting the file under r
 
 ---
 
-archive/issue_comments_098287.json:
+archive/issue_comments_098124.json:
 ```json
 {
     "body": "Replying to [comment:100 jdemeyer]:\n> Replying to [comment:94 leif]:\n> > Well, `spkg/install` and `spkg/standard/deps` are current again, but you've checked the (also current) `install` in (s.t. it's now in the Sage scripts repo, and also ends up in `$SAGE_ROOT/local/bin` where the scripts repo of the installation lives):\n> \n> But why is it copied to `$SAGE_ROOT/local/bin`? Surely, putting the file under revision control should not have that as consequence?\n\n`sage_scripts-*.spkg` *contains* the `local/bin/.hg` repository (at the *top* level), and **only** that. If during installation of the spkg a repository already exists in `$SAGE_LOCAL/bin`, it gets synchronized from that, so any file checked into the spkg's repo will be \"copied\" to `$SAGE_LOCAL/bin`. Other files in the spkg's top-level directory (i.e., in `.hgignore`) won't.\n\nIt would perhaps be less confusing if that spkg had the same structure as almost all others, i.e. the files *to be installed* in `src/` (including the `local/bin` repo), and the files that *manage the installation* in the top-level directory, `sage_scripts-*/`, along with their **own**, separate, Mercurial repository.",
     "created_at": "2010-09-26T13:52:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98287",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98124",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -2971,15 +2971,15 @@ It would perhaps be less confusing if that spkg had the same structure as almost
 
 ---
 
-archive/issue_comments_098288.json:
+archive/issue_comments_098125.json:
 ```json
 {
     "body": "Replying to [comment:101 leif]:\n> Replying to [comment:100 jdemeyer]:\n> > Replying to [comment:94 leif]:\n> > > Well, `spkg/install` and `spkg/standard/deps` are current again, but you've checked the (also current) `install` in (s.t. it's now in the Sage scripts repo, and also ends up in `$SAGE_ROOT/local/bin` where the scripts repo of the installation lives):\n> > \n> > But why is it copied to `$SAGE_ROOT/local/bin`? Surely, putting the file under revision control should not have that as consequence?\n> \n> `sage_scripts-*.spkg` *contains* the `local/bin/.hg` repository (at the *top* level), and **only** that. If during installation of the spkg a repository already exists in `$SAGE_LOCAL/bin`, it gets synchronized from that, so any file checked into the spkg's repo will be \"copied\" to `$SAGE_LOCAL/bin`. Other files in the spkg's top-level directory (i.e., in `.hgignore`) won't.\n\nSo, this means that `install` should be put in `.hgignore`, right?\n\n> It would perhaps be less confusing if that spkg had the same structure as almost all others, i.e. the files *to be installed* in `src/` (including the `local/bin` repo), and the files that *manage the installation* in the top-level directory, `sage_scripts-*/`, along with their **own**, separate, Mercurial repository.\n\nAny volunteers to do this? :-)",
     "created_at": "2010-09-27T10:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98288",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98125",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3002,15 +3002,15 @@ Any volunteers to do this? :-)
 
 ---
 
-archive/issue_comments_098289.json:
+archive/issue_comments_098126.json:
 ```json
 {
     "body": "Replying to [comment:102 jdemeyer]:\n> So, this means that `install` should be put in `.hgignore`, right?\n\nYep. (Or one could `hg rename` it to something else, s.t. it doesn't get confused with a BSD `install`.) \n\n> > It would perhaps be less confusing if that spkg had the same structure as almost all others, i.e. the files *to be installed* in `src/` (including the `local/bin` repo), and the files that *manage the installation* in the top-level directory, `sage_scripts-*/`, along with their **own**, separate, Mercurial repository.\n> \n> Any volunteers to do this? :-)\n\nYou? But that should be done **after** this ticket and especially #9433, which adds a new root repository (and deals with files like `install` currently *not* under revision control), have been merged.",
     "created_at": "2010-09-27T10:45:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98289",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98126",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3029,15 +3029,15 @@ You? But that should be done **after** this ticket and especially #9433, which a
 
 ---
 
-archive/issue_comments_098290.json:
+archive/issue_comments_098127.json:
 ```json
 {
     "body": "Replying to [comment:103 leif]:\n> Replying to [comment:102 jdemeyer]:\n> > So, this means that `install` should be put in `.hgignore`, right?\n> \n> Yep. (Or one could `hg rename` it to something else, s.t. it doesn't get confused with a BSD `install`.) \n\nP.S.: In case you rename it, if its name starts with `sage-`, it will also be copied during an *install/build from scratch* (but then also wouldn't be confused with some system tool).",
     "created_at": "2010-09-27T11:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98290",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98127",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3053,15 +3053,15 @@ P.S.: In case you rename it, if its name starts with `sage-`, it will also be co
 
 ---
 
-archive/issue_comments_098291.json:
+archive/issue_comments_098128.json:
 ```json
 {
     "body": "Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v2b](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v2b) by @nexttime created at 2010-09-27 21:01:40\n\nImproved new `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision control.)",
     "created_at": "2010-09-27T21:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98291",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98128",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3073,15 +3073,15 @@ Improved new `spkg/standard/deps`. Based on Sage 4.6.alpha1. (Not under revision
 
 ---
 
-archive/issue_comments_098292.json:
+archive/issue_comments_098129.json:
 ```json
 {
     "body": "Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v2b.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v2b.diff) by @nexttime created at 2010-09-27 21:02:28\n\nDiff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha1.",
     "created_at": "2010-09-27T21:02:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98292",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98129",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3093,15 +3093,15 @@ Diff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha1.
 
 ---
 
-archive/issue_comments_098293.json:
+archive/issue_comments_098130.json:
 ```json
 {
     "body": "Attachment [trac_9896-SAGE_ROOT__spkg__install.v2b](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.v2b) by @nexttime created at 2010-09-27 21:03:17\n\nImproved new `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision control.)",
     "created_at": "2010-09-27T21:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98293",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98130",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3113,15 +3113,15 @@ Improved new `spkg/install`. Based on Sage 4.6.alpha1. (Not under revision contr
 
 ---
 
-archive/issue_comments_098294.json:
+archive/issue_comments_098131.json:
 ```json
 {
     "body": "Attachment [trac_9896-SAGE_ROOT__spkg__install.v2b.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__install.v2b.diff) by @nexttime created at 2010-09-27 21:04:08\n\nDiff of improved new `spkg/install` against that of Sage 4.6.alpha1.",
     "created_at": "2010-09-27T21:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98294",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98131",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3133,15 +3133,15 @@ Diff of improved new `spkg/install` against that of Sage 4.6.alpha1.
 
 ---
 
-archive/issue_comments_098295.json:
+archive/issue_comments_098132.json:
 ```json
 {
     "body": "Updated upgrade path: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha1/)",
     "created_at": "2010-09-28T12:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98295",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98132",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3151,15 +3151,15 @@ Updated upgrade path: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4
 
 ---
 
-archive/issue_comments_098296.json:
+archive/issue_comments_098133.json:
 ```json
 {
     "body": "Upgraded succesfully from 4.5.3 on a Mac OS X 10.4 PPC system.",
     "created_at": "2010-09-29T08:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98296",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98133",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3169,15 +3169,15 @@ Upgraded succesfully from 4.5.3 on a Mac OS X 10.4 PPC system.
 
 ---
 
-archive/issue_comments_098297.json:
+archive/issue_comments_098134.json:
 ```json
 {
     "body": "Replying to [comment:107 jdemeyer]:\n> Upgraded succesfully from 4.5.3 on a Mac OS X 10.4 PPC system.\n\nI did so on Ubuntu 9.04 x86 (in-place), and on Ubuntu 10.04 x86_64 (in a renamed directory), too.\n\n`ptestlong` passed all tests, but Sphinx raises an exception related to `linear_programming` on both systems:\n\n```\n...\nsphinx-build -b html -d /home/leif/Sage/sage-4.5.3-for-v2b-upgraded/devel/sage/doc/output/doctrees/en/constructions    /home/leif/Sage/sage-4.5.3-for-v2b-upgraded/devel/sage/doc/en/constructions /home/leif/Sage/sage-4.5.3-for-v2b-upgraded/devel/sage/doc/output/html/en/constructions\nRunning Sphinx v0.6.3\nloading pickled environment... done\nbuilding [html]: targets for 18 source files that are out of date\nupdating environment: [config changed] 17 added, 0 changed, 1 removed\nreading sources... [  5%] algebraic_geometry\nreading sources... [ 11%] calculus\nreading sources... [ 17%] contributions\nreading sources... [ 23%] elliptic_curves\nreading sources... [ 29%] graph_theory\nreading sources... [ 35%] groups\nreading sources... [ 41%] index\nreading sources... [ 47%] interface_issues\nreading sources... [ 52%] linear_algebra\nreading sources... [ 58%] linear_codes\nreading sources... [ 64%] modular_forms\nreading sources... [ 70%] number_fields\nreading sources... [ 76%] number_theory\nreading sources... [ 82%] plotting\nreading sources... [ 88%] polynomials\nreading sources... [ 94%] rep_theory\nreading sources... [100%] rings\n\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [  5%] algebraic_geometry\nwriting output... [ 11%] calculus\nwriting output... [ 16%] contributions\nwriting output... [ 22%] elliptic_curves\nwriting output... [ 27%] graph_theory\nwriting output... [ 33%] groups\nwriting output... [ 38%] index\nwriting output... [ 44%] interface_issues\nwriting output... [ 50%] linear_algebra\nwriting output... [ 55%] linear_codes\nwriting output... [ 61%] linear_programming\n\nException occurred:\n  File \"/home/leif/Sage/sage-4.5.3-for-v2b-upgraded/local/lib/python2.6/site-packages/Sphinx-0.6.3-py2.6.egg/sphinx/environment.py\", line 934, in get_toc_for\n    toc = self.tocs[docname].deepcopy()\nKeyError: 'linear_programming'\nThe full traceback has been saved in /tmp/sphinx-err-BbYhGC.log, if you want to report the issue to the author.\nPlease also report this if it was a user error, so that a better error message can be provided next time.\nSend reports to sphinx-dev@googlegroups.com. Thanks!\nBuild finished.  The built documents can be found in /home/leif/Sage/sage-4.5.3-for-v2b-upgraded/devel/sage/doc/output/html/en/constructions\n...\n```\n\nAfter removing the doctrees and rebuilding the documentation, this doesn't happen; `linear_programming` had been moved from *Constructions* to the *Thematic Tutorials*. (Note that Sage completely ignores any Sphinx errors, but that's just another bug.)",
     "created_at": "2010-09-29T14:17:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98297",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98134",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3246,15 +3246,15 @@ After removing the doctrees and rebuilding the documentation, this doesn't happe
 
 ---
 
-archive/issue_comments_098298.json:
+archive/issue_comments_098135.json:
 ```json
 {
     "body": "Btw, if somebody reviewed #10016 (and that got merged into Sage 4.6), we could drop the dependency of R on `sage_scripts`, which would further decrease the number of packages that have to be rebuilt during an upgrade.\n\n(The `sage_scripts` spkg currently \"changes\" in **any** new Sage version, which is sub-optimal anyway.)",
     "created_at": "2010-09-29T14:47:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98298",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98135",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3266,15 +3266,15 @@ Btw, if somebody reviewed #10016 (and that got merged into Sage 4.6), we could d
 
 ---
 
-archive/issue_comments_098299.json:
+archive/issue_comments_098136.json:
 ```json
 {
     "body": "New upgrade path based on sage-4.6.alpha2:\n[http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha2/](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha2/)",
     "created_at": "2010-10-04T19:24:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98299",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98136",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3285,15 +3285,15 @@ New upgrade path based on sage-4.6.alpha2:
 
 ---
 
-archive/issue_comments_098300.json:
+archive/issue_comments_098137.json:
 ```json
 {
     "body": "I'm confused again.  On my mac, it seems like \n\n```sh\n$ export LDSHARED=\"gcc -bundle -undefined dynamic_lookup\"\n```\n\nsolves the problem: I did this and then upgraded from 4.5.3 to 4.6.alpha**3**, and did not have the reported problem and all tests pass in sage/libs/pari.  So do we need the various patches?  They may be good ideas, but are they necessary for this ticket?  (I have only seen a problem on OS X, so I can't easily test what works and what doesn't on other systems.)\n\nAlso, do we need to advertise the need to set LDSHARED like this?  Or can we set it automatically during the upgrade process?",
     "created_at": "2010-10-11T22:58:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98300",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98137",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -3311,15 +3311,15 @@ Also, do we need to advertise the need to set LDSHARED like this?  Or can we set
 
 ---
 
-archive/issue_comments_098301.json:
+archive/issue_comments_098138.json:
 ```json
 {
     "body": "Replying to [comment:109 leif]:\n> Btw, if somebody reviewed #10016 (and that got merged into Sage 4.6), we could drop the dependency of R on `sage_scripts`, which would further decrease the number of packages that have to be rebuilt during an upgrade.\n\nWith #10016 merged into 4.6.alpha2, should we update `deps`?",
     "created_at": "2010-10-17T01:45:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98301",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98138",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3332,15 +3332,15 @@ With #10016 merged into 4.6.alpha2, should we update `deps`?
 
 ---
 
-archive/issue_comments_098302.json:
+archive/issue_comments_098139.json:
 ```json
 {
     "body": "Replying to [comment:112 mpatel]:\n> Replying to [comment:109 leif]:\n> > Btw, if somebody reviewed #10016 (and that got merged into Sage 4.6), we could drop the dependency of R on `sage_scripts`, which would further decrease the number of packages that have to be rebuilt during an upgrade.\n> \n> With #10016 merged into 4.6.alpha2, should we update `deps`?\n\nYes, we can... ;-)\n\n(The modifications are already all in, but currently commented out, including the additions / changes we need once RPy becomes a stand-alone spkg. I can perhaps upload v3 versions tomorrow, or otherwise feel free to do it.)",
     "created_at": "2010-10-17T01:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98302",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98139",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3358,15 +3358,15 @@ Yes, we can... ;-)
 
 ---
 
-archive/issue_comments_098303.json:
+archive/issue_comments_098140.json:
 ```json
 {
     "body": "Replying to [comment:111 jhpalmieri]:\n> I'm confused again.  On my mac, it seems like \n\n```sh\n$ export LDSHARED=\"gcc -bundle -undefined dynamic_lookup\"\n```\n\n> solves the problem: I did this and then upgraded from 4.5.3 to 4.6.alpha**3**, and did not have the reported problem and all tests pass in sage/libs/pari.\n\n`ptestlong`? Some extension modules should still refer to the *old* PARI shared library, which can cause trouble. Did you do anything else except `export LDSHARED=...` and `./sage -upgrade /path/to/alpha3`?\n\n> So do we need the various patches?\n\nCurrently just four IIRC... ;-)\n\n> They may be good ideas, but are they necessary for this ticket?  (I have only seen a problem on OS X, so I can't easily test what works and what doesn't on other systems.)\n\nWhile setting `LDSHARED` is not necessary on systems other than MacOS X (at least as far as I know / on the supported platforms), the patches make upgrading more \"reliable\". (I personally had to play a little to make upgrading fail on my Linux boxes I must admit, but without the patches it definitely *can* fail. Also, we'd run into similar problems when it comes to upgrading e.g. MPIR; to make *that* work, we'll in addition have to add some more dependencies to `module_list.py`.)\n \n> Also, do we need to advertise the need to set LDSHARED like this?  Or can we set it automatically during the upgrade process?\n\nI intended to do so, there are just (too) many ways how one could do this. ;-) (Basically e.g. adding a few Darwin-specific lines to `devel/sage/setup.py`, which is part of the `sage-x.y.z.spkg`, which \"of course\" gets updated upon *every* upgrade, regardless if there are any changes to the Sage library at all - besides `version.py` which is or will become redundant anyway.)",
     "created_at": "2010-10-17T02:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98303",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98140",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3397,15 +3397,15 @@ I intended to do so, there are just (too) many ways how one could do this. ;-) (
 
 ---
 
-archive/issue_comments_098304.json:
+archive/issue_comments_098141.json:
 ```json
 {
     "body": "Replying to [comment:113 leif]:\n> (The modifications are already all in, but currently commented out, including the additions / changes we need once RPy becomes a stand-alone spkg. I can perhaps upload v3 versions tomorrow, or otherwise feel free to do it.)\n\nSetting status to \"needs_work\" because of this comment.",
     "created_at": "2010-10-18T07:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98304",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98141",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3418,15 +3418,15 @@ Setting status to "needs_work" because of this comment.
 
 ---
 
-archive/issue_comments_098305.json:
+archive/issue_comments_098142.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-10-18T07:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98305",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98142",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3436,15 +3436,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_098306.json:
+archive/issue_comments_098143.json:
 ```json
 {
     "body": "Improved new `spkg/standard/deps`. Based on Sage 4.6.alpha**3**, removes `sage_scripts` from R's deps. (Not under revision control.)",
     "created_at": "2010-10-18T13:13:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98306",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98143",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3454,15 +3454,15 @@ Improved new `spkg/standard/deps`. Based on Sage 4.6.alpha**3**, removes `sage_s
 
 ---
 
-archive/issue_comments_098307.json:
+archive/issue_comments_098144.json:
 ```json
 {
     "body": "Attachment [trac_9896-SAGE_ROOT__spkg__standard__deps.v3.diff](tarball://root/attachments/some-uuid/ticket9896/trac_9896-SAGE_ROOT__spkg__standard__deps.v3.diff) by @nexttime created at 2010-10-18 13:15:45\n\nDiff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha**3**.",
     "created_at": "2010-10-18T13:15:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98307",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98144",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3474,15 +3474,15 @@ Diff of improved new `spkg/standard/deps` against that of Sage 4.6.alpha**3**.
 
 ---
 
-archive/issue_comments_098308.json:
+archive/issue_comments_098145.json:
 ```json
 {
     "body": "Since #10016 has been merged into Sage 4.6.alpha2, I've attached a new version (v3) of `spkg/standard/deps`, which just removes the dependency of R on `sage_scripts`.\n\nHere's a diff between v2b and v3:\n\n```diff\n--- trac_9896-SAGE_ROOT__spkg__standard__deps.v2b\t2010-09-27 18:50:32.000000000 +0200\n+++ trac_9896-SAGE_ROOT__spkg__standard__deps.v3\t2010-10-18 14:57:44.000000000 +0200\n@@ -21,9 +21,7 @@\n # Rather than making *all* standard packages depend on SAGE_SCRIPTS (which\n # triggers the rebuild of *every* package on an upgrade), add SAGE_SCRIPTS\n # to the dependencies of only those packages that rely on them.\n-# These are:\n-# - R until #10016 is merged (replacing \"sage -f ...\" by a call to sage-spkg),\n-#     or until #9906 is merged (which moves the RPy spkg out of R's)\n+# These are (as of Sage 4.6.alpha3):\n # - The Sage library, $(SAGE)\n # - sagetex, but this in turn depends on $(SAGE)\n \n@@ -368,15 +366,10 @@\n $(INST)/$(MAXIMA): $(BASE) $(INST)/$(ECL)\n \t$(INSTALL) \"$(SAGE_SPKG) $(MAXIMA) 2>&1\" \"tee -a $(SAGE_LOGS)/$(MAXIMA).log\"\n \n-# Until #10016 (or #9906) gets merged, R depends on SAGE_SCRIPTS, because it\n-# installs the contained RPy spkg with \"sage -f\", which also requires sage-sage:\n-$(INST)/$(R): $(BASE) $(INST)/$(SAGE_SCRIPTS) \\\n-\t      $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV) $(INST)/$(FORTRAN)\n+# Note that even with a separate RPy spkg (#9906), Sage's R will still depend on\n+# Python (but does no longer on SAGE_SCRIPTS, #10016):\n+$(INST)/$(R): $(BASE) $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV) $(INST)/$(FORTRAN)\n \t$(INSTALL) \"$(SAGE_SPKG) $(R) 2>&1\" \"tee -a $(SAGE_LOGS)/$(R).log\"\n-# Note that even with a separate RPy spkg (#9906), Sage's R still depends on\n-# Python (but no longer on SAGE_SCRIPTS, see above):\n-# $(INST)/$(R): $(BASE) $(INST)/$(PYTHON) $(INST)/$(ATLAS) $(INST)/$(ICONV) $(INST)/$(FORTRAN)\n-# \t$(INSTALL) \"$(SAGE_SPKG) $(R) 2>&1\" \"tee -a $(SAGE_LOGS)/$(R).log\"\n \n # Needed when #9906 gets merged (moving RPy out of R's spkg):\n # $(INST)/$(RPY): $(BASE) $(INST)/$(PYTHON) $(INST)/$(R)\n```\n\n\n(Note that neither `spkg/install` nor `spkg/standard/deps` have changed between Sage 4.6.alpha1 and 4.6.alpha3, so there's no new v3 of the former, and the diffs apply to alpha1...alpha3. Also, although `devel/sage/module_list.py` has changed, the current patch here still applies to Sage 4.6.alpha3 without rejects.)",
     "created_at": "2010-10-18T13:49:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98308",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98145",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3532,15 +3532,15 @@ Here's a diff between v2b and v3:
 
 ---
 
-archive/issue_comments_098309.json:
+archive/issue_comments_098146.json:
 ```json
 {
     "body": "Add \"install\" to .hgignore, patch for sage-scripts",
     "created_at": "2010-10-18T16:02:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98309",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98146",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3550,15 +3550,15 @@ Add "install" to .hgignore, patch for sage-scripts
 
 ---
 
-archive/issue_comments_098310.json:
+archive/issue_comments_098147.json:
 ```json
 {
     "body": "Attachment [9896_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ticket9896/9896_scripts_hgignore.patch) by @jdemeyer created at 2010-10-18 16:04:19",
     "created_at": "2010-10-18T16:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98310",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98147",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3568,15 +3568,15 @@ Attachment [9896_scripts_hgignore.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_098311.json:
+archive/issue_comments_098148.json:
 ```json
 {
     "body": "Attachment [trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch](tarball://root/attachments/some-uuid/ticket9896/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch) by @nexttime created at 2010-10-19 10:03:31\n\nSage library patch. Fixes Darwin linker issue (in `setup.py`). Based on Sage 4.6.alpha3.",
     "created_at": "2010-10-19T10:03:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98311",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98148",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3588,15 +3588,15 @@ Sage library patch. Fixes Darwin linker issue (in `setup.py`). Based on Sage 4.6
 
 ---
 
-archive/issue_comments_098312.json:
+archive/issue_comments_098149.json:
 ```json
 {
     "body": "I've attached a patch that avoids manually setting `LDSHARED` on MacOS X.\n\nOf course the upgrade path has yet to be updated for testing this, but the patch can be reviewed.",
     "created_at": "2010-10-19T10:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98312",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98149",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3608,15 +3608,15 @@ Of course the upgrade path has yet to be updated for testing this, but the patch
 
 ---
 
-archive/issue_comments_098313.json:
+archive/issue_comments_098150.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-10-19T10:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98313",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98150",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3626,15 +3626,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_098314.json:
+archive/issue_comments_098151.json:
 ```json
 {
     "body": "Replying to [comment:120 leif]:\n> Of course the upgrade path has yet to be updated for testing this, but the patch can be reviewed.\n\nOne can also (partially) test the new patch by (optionally renaming the Sage directory of an installation to be upgraded, then) running `./sage -upgrade ...` with the *current* upgrade path, and **after that** applying [the new patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch) to the Sage library, then running `./sage -ba` and `make ptestlong` or alike. (Running just `./sage -b` would though show that the obsolete hard-coded directory gets replaced, of course only if `SAGE_ROOT` had been changed. Another way is to put fake directories into `LDSHARED`, e.g. by setting it to `\"gcc -bundle -L/foo/bar/ -undefined dynamic_lookup -Lbaz\"` on MacOS X, or e.g. `\"gcc -L/foo/bar -pthread -Lbaz/ -shared\"` on Linux.)",
     "created_at": "2010-10-19T10:40:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98314",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98151",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3647,15 +3647,15 @@ One can also (partially) test the new patch by (optionally renaming the Sage dir
 
 ---
 
-archive/issue_comments_098315.json:
+archive/issue_comments_098152.json:
 ```json
 {
     "body": "I am preparing a new upgrade path with the patches.",
     "created_at": "2010-10-19T12:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98315",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98152",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3665,15 +3665,15 @@ I am preparing a new upgrade path with the patches.
 
 ---
 
-archive/issue_comments_098316.json:
+archive/issue_comments_098153.json:
 ```json
 {
     "body": "Replying to [comment:122 jdemeyer]:\n> I am preparing a new upgrade path with the patches.\n\nThanks again. Do you keep the alpha2 upgrade path? Incidentally, I was just going to test *that* on another machine...",
     "created_at": "2010-10-19T12:59:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98316",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98153",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3686,15 +3686,15 @@ Thanks again. Do you keep the alpha2 upgrade path? Incidentally, I was just goin
 
 ---
 
-archive/issue_comments_098317.json:
+archive/issue_comments_098154.json:
 ```json
 {
     "body": "Replying to [comment:123 leif]:\n> Do you keep the alpha2 upgrade path?\nSure.",
     "created_at": "2010-10-19T13:01:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98317",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98154",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3706,15 +3706,15 @@ Sure.
 
 ---
 
-archive/issue_comments_098318.json:
+archive/issue_comments_098155.json:
 ```json
 {
     "body": "New upgrade path: [http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha3/](http://sage.math.washington.edu/home/jdemeyer/dist/sage-4.6.upgradetest_alpha3/)\n\nLeif: the stuff about LDSHARED in the description might be outdated, can you fix it?",
     "created_at": "2010-10-19T20:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98318",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98155",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3726,15 +3726,15 @@ Leif: the stuff about LDSHARED in the description might be outdated, can you fix
 
 ---
 
-archive/issue_comments_098319.json:
+archive/issue_comments_098156.json:
 ```json
 {
     "body": "Replying to [comment:125 jdemeyer]:\n> Leif: the stuff about LDSHARED in the description might be outdated, can you fix it?\n\nDone. Thanks.",
     "created_at": "2010-10-19T21:18:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98319",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98156",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3747,15 +3747,15 @@ Done. Thanks.
 
 ---
 
-archive/issue_comments_098320.json:
+archive/issue_comments_098157.json:
 ```json
 {
     "body": "Just for the record: I again did a fresh build of Sage 4.5.3, renamed the directory and then upgraded to Sage 4.6.alpha**2** with the (previous) test upgrade path (on Ubuntu 10.04 x86_64).\n\nThe upgrade failed in the first place, I then \"successfully\" ran `make` (all new packages are present) and now I get lots of doctest errors (`ptestlong`).\n\nMore to come (still running); currently testing the new alpha**3** test upgrade path on another machine.",
     "created_at": "2010-10-19T22:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98320",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98157",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3769,15 +3769,15 @@ More to come (still running); currently testing the new alpha**3** test upgrade 
 
 ---
 
-archive/issue_comments_098321.json:
+archive/issue_comments_098158.json:
 ```json
 {
     "body": "Replying to [comment:127 leif]:\n> Just for the record: I again did a fresh build of Sage 4.5.3, renamed the directory and then upgraded to Sage 4.6.alpha**2** with the (previous) test upgrade path (on Ubuntu 10.04 x86_64).\n\nMeaning: Did anybody test the alpha2 upgrade path? (I don't see reports here.)\n\n> The upgrade failed in the first place, I then \"successfully\" ran `make` (all new packages are present) and now I get lots of doctest errors (`ptestlong`).\n> \n> More to come (still running)\n\n\n```\nThe following tests failed:\n\n\tsage -t  -long devel/sage/sage/plot/misc.py # 4 doctests failed\n\tsage -t  -long devel/sage/sage/plot/plot.py # 12 doctests failed\n```\n\nAt least some end like this:\n\n```\n      File \"/home/leif/Sage/sage-4.5.3-4.6.alpha2/local/lib/python/site-packages/matplotlib/mathtext.py\", line 658, in __init__\n        self._stix_fallback = StixFonts(*args, **kwargs)\n      File \"/home/leif/Sage/sage-4.5.3-4.6.alpha2/local/lib/python/site-packages/matplotlib/mathtext.py\", line 900, in __init__\n        fullpath = findfont(name)\n      File \"/home/leif/Sage/sage-4.5.3-4.6.alpha2/local/lib/python/site-packages/matplotlib/font_manager.py\", line 1306, in findfont\n        if not os.path.exists(font):\n      File \"/home/leif/Sage/sage-4.5.3-4.6.alpha2/local/lib/python2.6/genericpath.py\", line 18, in exists\n        st = os.stat(path)\n    TypeError: coercing to Unicode: need string or buffer, dict found\n```\n",
     "created_at": "2010-10-19T22:21:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98321",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98158",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3817,15 +3817,15 @@ At least some end like this:
 
 ---
 
-archive/issue_comments_098322.json:
+archive/issue_comments_098159.json:
 ```json
 {
     "body": "Updated instructions for testing w.r.t. upgrades not performed in-place.",
     "created_at": "2010-10-20T21:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98322",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98159",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3835,15 +3835,15 @@ Updated instructions for testing w.r.t. upgrades not performed in-place.
 
 ---
 
-archive/issue_comments_098323.json:
+archive/issue_comments_098160.json:
 ```json
 {
     "body": "I've now successfully upgraded to Sage 4.6.alpha3 (from fresh builds of Sage 4.5.3) and (with the exception of the 32-bit system) `ptestlong` passed without errors on:\n\n* Ubuntu 9.04 x86 (in-place; after upgrading I now also get #10041, which doesn't occur when building from scratch)\n\n* Ubuntu 9.04 x86_64 (Sage installation moved before upgrading, with the work-around given in the description, i.e. also forcing a rebuild of freetype)\n\n* Ubuntu 10.04 x86_64 (in-place)\n\nI also \"repaired\" a failed upgrade from a moved Sage installation on the latter system by forcing reinstallation of freetype and running `make` afterwards; `ptestlong` then also passed without errors.\n\n----\n\nCurrently, the installation of matplotlib 1.0.0 (included in alpha3, #9221) breaks older versions of matplotlib in **other** Sage installations; this is now fixed by #6235.\n\nDeleting or renaming `$HOME/.matplotlib/` (probably each time) before running an older (or after running the new) version of Sage also avoids that problem (cf. traceback above, *\"TypeError: coercing to Unicode: need string or buffer, dict found\"*).",
     "created_at": "2010-10-21T03:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98323",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98160",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3867,15 +3867,15 @@ Deleting or renaming `$HOME/.matplotlib/` (probably each time) before running an
 
 ---
 
-archive/issue_comments_098324.json:
+archive/issue_comments_098161.json:
 ```json
 {
     "body": "Following Jeroen's [suggestion on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/2253505ea7ae98ae), I'm planning to merge this ticket into 4.6.rc0.",
     "created_at": "2010-10-21T09:46:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98324",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98161",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3885,15 +3885,15 @@ Following Jeroen's [suggestion on sage-devel](http://groups.google.com/group/sag
 
 ---
 
-archive/issue_comments_098325.json:
+archive/issue_comments_098162.json:
 ```json
 {
     "body": "Upgraded succesfully on a PPC Mac OS X 10.4 from sage-4.5.3 to sage-4.6.alpha3 and `ptestlong` passes.  This upgrade was done in place.",
     "created_at": "2010-10-21T15:08:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98325",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98162",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3903,15 +3903,15 @@ Upgraded succesfully on a PPC Mac OS X 10.4 from sage-4.5.3 to sage-4.6.alpha3 a
 
 ---
 
-archive/issue_comments_098326.json:
+archive/issue_comments_098163.json:
 ```json
 {
     "body": "Upgraded a copied directory on OS X 10.6 successfully.  Also an in-place upgrade on OpenSolaris, just to try a different platform and also to test that setting SAGE_ATLAS_LIB before the initial build wouldn't interfere with anything.",
     "created_at": "2010-10-21T15:43:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98326",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98163",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -3921,15 +3921,15 @@ Upgraded a copied directory on OS X 10.6 successfully.  Also an in-place upgrade
 
 ---
 
-archive/issue_comments_098327.json:
+archive/issue_comments_098164.json:
 ```json
 {
     "body": "Replying to [comment:133 mpatel]:\n> Following Jeroen's [suggestion on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/2253505ea7ae98ae), I'm planning to merge this ticket into 4.6.rc0.\n\nI'll merge all of the patches and files in the description's current \"How to merge this ticket\" section.",
     "created_at": "2010-10-21T21:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98327",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98164",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -3942,15 +3942,15 @@ I'll merge all of the patches and files in the description's current "How to mer
 
 ---
 
-archive/issue_comments_098328.json:
+archive/issue_comments_098165.json:
 ```json
 {
     "body": "Replying to [comment:137 mpatel]:\n> Replying to [comment:133 mpatel]:\n> > Following Jeroen's [suggestion on sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/2253505ea7ae98ae), I'm planning to merge this ticket into 4.6.rc0.\n> \n> I'll merge all of the patches and files in the description's current \"How to merge this ticket\" section.\n\nThanks!\n\nUpgrading from Sage 4.4.4 in a renamed directory (with the official rc0 upgrade path) fully worked for me on Ubuntu 9.04 x86_64 (Core2, gcc 4.3.3; parallel build with 16 jobs).\n\nQuite surprisingly, even `ptestlong` passed without any doctest errors. ;-) (Cf. sage-release.)\n\nDespite that, I guess there are still missing dependencies in `module_list.py` that will come into play when e.g. updating MPIR (#8664). (I primarily addressed upgrading to the new PARI on this ticket; more changes should IMHO be made on other / the respective spkg tickets.)",
     "created_at": "2010-10-22T10:23:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98328",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98165",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3972,15 +3972,15 @@ Despite that, I guess there are still missing dependencies in `module_list.py` t
 
 ---
 
-archive/issue_comments_098329.json:
+archive/issue_comments_098166.json:
 ```json
 {
     "body": "Replying to [comment:138 leif]:\n> Despite that, I guess there are still missing dependencies in `module_list.py` that will come into play when e.g. updating MPIR (#8664). (I primarily addressed upgrading to the new PARI on this ticket; more changes should IMHO be made on other / the respective spkg tickets.)\n\nNumPy and SciPy (#9808) are other candidates.",
     "created_at": "2010-10-22T10:39:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98329",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98166",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -3993,15 +3993,15 @@ NumPy and SciPy (#9808) are other candidates.
 
 ---
 
-archive/issue_comments_098330.json:
+archive/issue_comments_098167.json:
 ```json
 {
     "body": "Changing assignee from GeorgSWeber to @nexttime.",
     "created_at": "2010-10-22T20:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98330",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98167",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4011,15 +4011,15 @@ Changing assignee from GeorgSWeber to @nexttime.
 
 ---
 
-archive/issue_comments_098331.json:
+archive/issue_comments_098168.json:
 ```json
 {
     "body": "Also successfully upgraded a *copied* Sage 4.5.3 installation to 4.6.rc0 on Ubuntu 9.04 x86; `ptestlong` passed without errors (cf. sage-release).",
     "created_at": "2010-10-22T20:35:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98331",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98168",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4029,15 +4029,15 @@ Also successfully upgraded a *copied* Sage 4.5.3 installation to 4.6.rc0 on Ubun
 
 ---
 
-archive/issue_comments_098332.json:
+archive/issue_comments_098169.json:
 ```json
 {
     "body": "As far as reviewing goes, I'm happy with all of the patches except for two.\n\n- [/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch).  This seems fine, but the messages like \"Library dir found in dynamic linker command...\" don't actually appear in any log (unless you pipe the whole thing through tee, perhaps, but I haven't tried this yet).  (I'm assuming that, since I upgraded from 4.5.3 on OS X, the situation dealt with in the loop would occur, and I searched through all of the logs without finding this string.)  I was hoping that they would appear in the sage-4.6.rc0 log, but no.  Is there anything to be done about this?\n\n- [trac_9896-fix_extension_module_deps-sagelib.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-fix_extension_module_deps-sagelib.patch).  I just don't know enough about the Sage build process and the dependencies to be able to review this well, and I don't have the time to learn about it right now.  I'm hoping that someone else can do this.",
     "created_at": "2010-10-22T21:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98332",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98169",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4051,15 +4051,15 @@ As far as reviewing goes, I'm happy with all of the patches except for two.
 
 ---
 
-archive/issue_comments_098333.json:
+archive/issue_comments_098170.json:
 ```json
 {
     "body": "Replying to [comment:142 jhpalmieri]:\n> As far as reviewing goes, I'm happy with all of the patches except for two.\n> \n>  - [/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch](http://trac.sagemath.org/sage_trac/raw-attachment/ticket/9896/trac_9896-fix_hardcoded_libdirs_in_extmod_linker_cmd-sagelib.patch).  This seems fine, but the messages like \"Library dir found in dynamic linker command...\" don't actually appear in any log (unless you pipe the whole thing through tee, perhaps, but I haven't tried this yet).  (I'm assuming that, since I upgraded from 4.5.3 on OS X, the situation dealt with in the loop would occur, and I searched through all of the logs without finding this string.)  I was hoping that they would appear in the sage-4.6.rc0 log, but no.  Is there anything to be done about this?\n\n\n```python\n                if ldso_cmd[i][:2] == \"-L\":\n                    libdir = os.path.normpath(ldso_cmd[i][2:])\n                    self.debug_print(\n                      \"Library dir found in dynamic linker command: \" +\n                      \"\\\"%s\\\"\" % libdir)\n                    if libdir != sage_libdir:\n                        self.compiler.warn(\n                          \"Replacing library search directory in linker \" +\n                          \"command:\\n  \\\"%s\\\" -> \\\"%s\\\"\\n\" % (libdir,\n                                                              sage_libdir))\n                        ldso_cmd[i] = \"-L\"+sage_libdir\n                    \n```\n\n\nNo, that's intentional. `self.debug_print()` only produces output if `DISTUTILS_DEBUG` is set.\n\nIn contrast, `self.compiler.warn()` always prints a message, so you should find *\"warning: Replacing library search directory ...\"* in the logs of the installations you had moved:\n\n```sh\n$ grep \"^warning: \" install.log\n```\n\nor\n\n```sh\n$ grep \"^warning: Replacing\" spkg/logs/sage-*\n```\n\nshould show these.",
     "created_at": "2010-10-22T22:22:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98333",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98170",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4105,15 +4105,15 @@ should show these.
 
 ---
 
-archive/issue_comments_098334.json:
+archive/issue_comments_098171.json:
 ```json
 {
     "body": "Oh, sorry, that's what I meant by \"messages like ...\".  I don't see \"Replacing library\" in any log file, either.  (I copied my sage-4.5.3 directory to sage-4.6.rc0-upgrade and ran \"./sage -upgrade\".)",
     "created_at": "2010-10-22T22:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98334",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98171",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4123,15 +4123,15 @@ Oh, sorry, that's what I meant by "messages like ...".  I don't see "Replacing l
 
 ---
 
-archive/issue_comments_098335.json:
+archive/issue_comments_098172.json:
 ```json
 {
     "body": "Hmmm, what does\n\n```sh\n$ ./sage -b 2>&1 | grep -A2 \"^warning\"\n```\n\ngive (in a moved Sage installation)?\n\nYou could also do\n\n```sh\n$ env DISTUTILS_DEBUG=yes ./sage -b\n```\n\nbut that produces *a lot* of output.",
     "created_at": "2010-10-22T22:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98335",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98172",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4155,15 +4155,15 @@ but that produces *a lot* of output.
 
 ---
 
-archive/issue_comments_098336.json:
+archive/issue_comments_098173.json:
 ```json
 {
     "body": "`grep -A2` is a GNUism - it will not work with Sun's grep. It would be better to stick to only the options mandated by the POSIX specification on the OpenGroup web site. But I can say for sure that would break on Solaris. \n\nDave",
     "created_at": "2010-10-22T22:41:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98336",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98173",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -4175,15 +4175,15 @@ Dave
 
 ---
 
-archive/issue_comments_098337.json:
+archive/issue_comments_098174.json:
 ```json
 {
     "body": "I don't think John has Sun's `grep` installed on MacOS X... ;-)\n\n----\n\nOn topic again:\n\nThere are two reasons you (John) can't find such messages:\n\n* `./sage -upgrade` doesn't log to `install.log` (I used `script` to log what happened, also because of #10011.)\n\n* There's a less obvious indirect dependency of Python on iconv (via GNUTLS, libgpg_error), so the Python spkg got rebuilt, too, which of course also updated the library search path of distutils.",
     "created_at": "2010-10-22T23:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98337",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98174",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4203,15 +4203,15 @@ There are two reasons you (John) can't find such messages:
 
 ---
 
-archive/issue_comments_098338.json:
+archive/issue_comments_098175.json:
 ```json
 {
     "body": "Replying to [comment:147 leif]:\n> I don't think John has Sun's `grep` installed on MacOS X... ;-)\n\nI was just about to install it, but I guess I'll wait a bit now.  \n\n>  * There's a less obvious indirect dependency of Python on iconv (via GNUTLS, libgpg_error), so the Python spkg got rebuilt, too, which of course also updated the library search path of distutils.\n\nThe python spkg did get rebuilt.  I'm trying again, first touching spkg/installed/iconv-1.13.1.p3.",
     "created_at": "2010-10-22T23:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98338",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98175",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4228,15 +4228,15 @@ The python spkg did get rebuilt.  I'm trying again, first touching spkg/installe
 
 ---
 
-archive/issue_comments_098339.json:
+archive/issue_comments_098176.json:
 ```json
 {
     "body": "Replying to [comment:148 jhpalmieri]:\n> Replying to [comment:147 leif]:\n> > I don't think John has Sun's `grep` installed on MacOS X... ;-)\n> \n> I was just about to install it, but I guess I'll wait a bit now.  \n> \n> >  * There's a less obvious indirect dependency of Python on iconv (via GNUTLS, libgpg_error), so the Python spkg got rebuilt, too, which of course also updated the library search path of distutils.\n> \n> The python spkg did get rebuilt.  I'm trying again, first touching spkg/installed/iconv-1.13.1.p3.\n\nNote that I've updated the description on that (you have to run `make build` afterwards to make that work).",
     "created_at": "2010-10-22T23:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98339",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98176",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4256,15 +4256,15 @@ Note that I've updated the description on that (you have to run `make build` aft
 
 ---
 
-archive/issue_comments_098340.json:
+archive/issue_comments_098177.json:
 ```json
 {
     "body": "Replying to [comment:149 leif]:\n> Replying to [comment:148 jhpalmieri]:\n> > Replying to [comment:147 leif]:\n> > > I don't think John has Sun's `grep` installed on MacOS X... ;-)\n> > \n> > I was just about to install it, but I guess I'll wait a bit now.  \n> > \n> > >  * There's a less obvious indirect dependency of Python on iconv (via GNUTLS, libgpg_error), so the Python spkg got rebuilt, too, which of course also updated the library search path of distutils.\n> > \n> > The python spkg did get rebuilt.  I'm trying again, first touching spkg/installed/iconv-1.13.1.p3.\n> \n> Note that I've updated the description on that (you have to run `make build` afterwards to make that work).\n\nOoops, weird. That doesn't seem to be necessary... (And just touching the new iconv worked for me, i.e. e.g. Python did *not* get rebuilt.)",
     "created_at": "2010-10-23T00:20:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98340",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98177",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4287,15 +4287,15 @@ Ooops, weird. That doesn't seem to be necessary... (And just touching the new ic
 
 ---
 
-archive/issue_comments_098341.json:
+archive/issue_comments_098178.json:
 ```json
 {
     "body": "Replying to [comment:150 leif]:\n> Ooops, weird. That doesn't seem to be necessary... (And just touching the new iconv worked for me, i.e. e.g. Python did *not* get rebuilt.)\n\nFunny, that's because `newest_version` doesn't inspect `spkg/installed/*`, but e.g. `spkg/standard/*.spkg` (and therefore `make` concludes all is up-to-date).\n\nSo it works the way I originally described.",
     "created_at": "2010-10-23T00:34:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98341",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98178",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4310,15 +4310,15 @@ So it works the way I originally described.
 
 ---
 
-archive/issue_comments_098342.json:
+archive/issue_comments_098179.json:
 ```json
 {
     "body": "Replying to [comment:148 jhpalmieri]:\n> Replying to [comment:147 leif]:\n> > I don't think John has Sun's `grep` installed on MacOS X... ;-)\n> \n> I was just about to install it, but I guess I'll wait a bit now.  \n\nGiven the title title had the \"(not limited to OS X)\" I assumed this needed a solution to work on any platform. But I've not been following this ticket closely, so I'll shut up. \n\nIf John does manage to install Sun's grep on his OS X machine, let me know how. I might even buy a Mac then! \n\nDave",
     "created_at": "2010-10-23T00:54:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98342",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98179",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -4338,15 +4338,15 @@ Dave
 
 ---
 
-archive/issue_comments_098343.json:
+archive/issue_comments_098180.json:
 ```json
 {
     "body": "Okay, after touching iconv, I see the warning in the sage spkg log. (And this was on a machine where I didn't run \"make build\" before upgrading, as Leif says.)\n\n> Given the title title had the \"(not limited to OS X)\" I assumed this needed a solution to work on any platform. But I've not been following this ticket closely, so I'll shut up.\n\nAt that point, Leif was just suggesting something for me to try on one machine, a mac, to troubleshoot something, not as an actual solution to any problem. So it was a safe suggestion.\n\nAnyway, I guess now I'm happy with all but one of the patches (trac_9896-fix_extension_module_deps-sagelib.patch), and someone else will have to help with that.",
     "created_at": "2010-10-23T01:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98343",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98180",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4362,15 +4362,15 @@ Anyway, I guess now I'm happy with all but one of the patches (trac_9896-fix_ext
 
 ---
 
-archive/issue_comments_098344.json:
+archive/issue_comments_098181.json:
 ```json
 {
     "body": "Oh, on another OS X machine I did \"touch .../iconv...\" and then \"make build\" and then \"sage -upgrade ...\", and then during the upgrade, the linbox spkg failed to install.",
     "created_at": "2010-10-23T01:14:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98344",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98181",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4380,15 +4380,15 @@ Oh, on another OS X machine I did "touch .../iconv..." and then "make build" and
 
 ---
 
-archive/issue_comments_098345.json:
+archive/issue_comments_098182.json:
 ```json
 {
     "body": "Replying to [comment:154 jhpalmieri]:\n> Oh, on another OS X machine I did \"touch .../iconv...\" and then \"make build\" and then \"sage -upgrade ...\", and then during the upgrade, the linbox spkg failed to install.\n\nDetails? Perhaps just once again a race condition?\n\n(The `make build` should be a nop, i.e. have no influence, unless the installation hadn't been up-to-date before.)",
     "created_at": "2010-10-23T01:34:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98345",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98182",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4403,15 +4403,15 @@ Details? Perhaps just once again a race condition?
 
 ---
 
-archive/issue_comments_098346.json:
+archive/issue_comments_098183.json:
 ```json
 {
     "body": "The linbox log has messages like this:\n\n```\n/bin/sh ../../libtool --tag=CXX   --mode=link g++  -g -fPIC -I\"/Applications/sage_builds/sage-4.6.rc0-X/local/include\" -I\"/Applications/sage_builds/sage-4.6.rc0-X/local/include/linbox\"  -L\"/Applications/sage_builds/sage-4.6.rc0-X/local/lib\" -I/Applications/sage_builds/sage-4.6.rc0-X/spkg/build/linbox-1.1.6.p3/src -I/Applications/sage_builds/sage-4.6.rc0-X/spkg/build/linbox-1.1.6.p3/src/linbox  -I/Applications/sage_builds/sage-4.6.rc0-X/local/include  -I/Applications/sage_builds/sage-4.6.rc0-X/local/include -D__LINBOX_HAVE_CBLAS   -o libutil.la  timer.lo error.lo commentator.lo debug.lo  /usr/lib/libcblas.dylib -L/Applications/sage_builds/sage-4.6.rc0-X/local/lib -lgmpxx -lgmp -L/Applications/sage_builds/sage-4.6.rc0-X/local/lib -lgivaro\nlibtool: link: warning: library `/Applications/sage_builds/sage-4.6.rc0-X/local/lib/libgmpxx.la' was moved.\ngrep: /Applications/sage_builds/sage-4.5.3/local/lib/libgmp.la: No such file or directory\nsed: /Applications/sage_builds/sage-4.5.3/local/lib/libgmp.la: No such file or directory\nlibtool: link: `/Applications/sage_builds/sage-4.5.3/local/lib/libgmp.la' is not a valid libtool archive\nmake[4]: *** [libutil.la] Error 1\nmake[3]: *** [install-recursive] Error 1\nmake[2]: *** [install-recursive] Error 1\nmake[1]: *** [install-recursive] Error 1\nError installing linbox\n```\n",
     "created_at": "2010-10-23T03:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98346",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98183",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4435,15 +4435,15 @@ Error installing linbox
 
 ---
 
-archive/issue_comments_098347.json:
+archive/issue_comments_098184.json:
 ```json
 {
     "body": "Update: on one OS X 10.6 machine, after touching spkg/installed/iconv-1.13.1.p3, it doesn't matter whether I run \"make build\" or not before upgrading: I get the above error with linbox either way.  On another OS X 10.6 machine, I didn't run \"make build\" and it seemed to complete successfully; I haven't tried with \"make build\".  I'll run doctests to see if it's really successful.\n\nI don't know what's different about the two machines.  Maybe the 4.5.3 build got corrupted on the first one somehow?  I can try rebuilding 4.5.3 and doing it again...",
     "created_at": "2010-10-23T04:53:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98347",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98184",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4455,15 +4455,15 @@ I don't know what's different about the two machines.  Maybe the 4.5.3 build got
 
 ---
 
-archive/issue_comments_098348.json:
+archive/issue_comments_098185.json:
 ```json
 {
     "body": "Replying to [comment:156 jhpalmieri]:\n> The linbox log has messages like this:\n\n```\n/bin/sh ../../libtool --tag=CXX   --mode=link g++  -g -fPIC -I\"/Applications/sage_builds/sage-4.6.rc0-X/local/include\" -I\"/Applications/sage_builds/sage-4.6.rc0-X/local/include/linbox\"  -L\"/Applications/sage_builds/sage-4.6.rc0-X/local/lib\" -I/Applications/sage_builds/sage-4.6.rc0-X/spkg/build/linbox-1.1.6.p3/src -I/Applications/sage_builds/sage-4.6.rc0-X/spkg/build/linbox-1.1.6.p3/src/linbox  -I/Applications/sage_builds/sage-4.6.rc0-X/local/include  -I/Applications/sage_builds/sage-4.6.rc0-X/local/include -D__LINBOX_HAVE_CBLAS   -o libutil.la  timer.lo error.lo commentator.lo debug.lo  /usr/lib/libcblas.dylib -L/Applications/sage_builds/sage-4.6.rc0-X/local/lib -lgmpxx -lgmp -L/Applications/sage_builds/sage-4.6.rc0-X/local/lib -lgivaro\nlibtool: link: warning: library `/Applications/sage_builds/sage-4.6.rc0-X/local/lib/libgmpxx.la' was moved.\ngrep: /Applications/sage_builds/sage-4.5.3/local/lib/libgmp.la: No such file or directory\nsed: /Applications/sage_builds/sage-4.5.3/local/lib/libgmp.la: No such file or directory\nlibtool: link: `/Applications/sage_builds/sage-4.5.3/local/lib/libgmp.la' is not a valid libtool archive\nmake[4]: *** [libutil.la] Error 1\nmake[3]: *** [install-recursive] Error 1\nmake[2]: *** [install-recursive] Error 1\nmake[1]: *** [install-recursive] Error 1\nError installing linbox\n```\n\n\nI think this *should* have been fixed by `local/bin/sage-location`'s\n\n```python\ndef update_library_files(R):\n    LIB = '%s/local/lib/'%os.path.abspath(SAGE_ROOT)\n    # The .a files should be re-ranlib'd\n    os.system('cd \"%s\"; ranlib *.a 1>/dev/null 2>/dev/null'%LIB)\n\n    # The .la files hardcode path info.  Fix this.\n    for F in os.listdir(LIB):\n       if F[-3:] == \".la\":\n           G = open(LIB + F).read()\n           i = G.find('libdir=')\n           j = i+8 + G[i+8:].find(\"'\")\n           z = G[i+8:j].strip().strip(\"'\")\n           i = z.rfind('local/')\n           if i != -1:\n               z = z[:i]\n               H = G.replace(z, os.path.abspath(SAGE_ROOT) + '/')\n               open(LIB + F,'w').write(H)\n```\n\nwhich is (also) called from `sage -upgrade` (i.e. `sage-sage`) if the installation has (newly) moved. (I'm not sure how robust that code is, it's at least less readable.)\n\nDid you perhaps interrupt this in the first run?",
     "created_at": "2010-10-23T12:43:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98348",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98185",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4514,15 +4514,15 @@ Did you perhaps interrupt this in the first run?
 
 ---
 
-archive/issue_comments_098349.json:
+archive/issue_comments_098186.json:
 ```json
 {
     "body": "Ah, I see. The above code fixes just one instance of a hard-coded path in `libgmpxx.la`, namely `libdir=...`, but **not**:\n\n```sh\n# Libraries that this one depends upon.\ndependency_libs=' /home/leif/Sage/sage-4.6.rc0pre1/local/lib/libgmp.la'\n```\n\n\nI just wonder why this doesn't cause trouble on the other system.",
     "created_at": "2010-10-23T12:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98349",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98186",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4540,15 +4540,15 @@ I just wonder why this doesn't cause trouble on the other system.
 
 ---
 
-archive/issue_comments_098350.json:
+archive/issue_comments_098187.json:
 ```json
 {
     "body": "Replying to [comment:161 leif]:\n> Ah, I see. The above code fixes just one instance of a hard-coded path in `libgmpxx.la`, namely `libdir=...`, but **not**:\n\n```sh\n# Libraries that this one depends upon.\ndependency_libs=' /home/leif/Sage/sage-4.6.rc0pre1/local/lib/libgmp.la'\n```\n\n\nNot true. The above reads the old path from `libdir='...'`, but then replaces *all* occurrences of that (i.e. the old `$SAGE_ROOT`) by the new one. So perhaps really this was interrupted on the machine where LINBOX failed to build.",
     "created_at": "2010-10-23T13:12:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98350",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98187",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4567,15 +4567,15 @@ Not true. The above reads the old path from `libdir='...'`, but then replaces *a
 
 ---
 
-archive/issue_comments_098351.json:
+archive/issue_comments_098188.json:
 ```json
 {
     "body": "> Did you perhaps interrupt this in the first run?\n\nIt's possible.  In any case, I can't repeat it now.",
     "created_at": "2010-10-23T19:06:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98351",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98188",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4587,15 +4587,15 @@ It's possible.  In any case, I can't repeat it now.
 
 ---
 
-archive/issue_comments_098352.json:
+archive/issue_comments_098189.json:
 ```json
 {
     "body": "Replying to [comment:163 jhpalmieri]:\n> > Did you perhaps interrupt this in the first run?\n> \n> It's possible.  In any case, I can't repeat it now.\n\nIt would in any case be better to trap `SIGINT` / `KeyboardInterrupt` while doing `sage-location`, or make backup copies first.\n\nAlso, it would be helpful for such situations to\n* log `$SAGE_ROOT` changes / movement (in a history file) for debugging or even to get the previous one,\n* perhaps log what changes `sage-location` made (to some file, perhaps a summary on the screen),\n* log the whole upgrade process as we do for builds / spkg installations (I'd suggest `$SAGE_ROOT/upgrade.log`, but only after #10011 and #10157 have been merged).\n\nDo you still have the broken installation? If so, you could\n\n```sh\n$ ls -rtl local/lib/*.la # see which were changed last / when\n$ cat local/lib/libgmpxx.la # to see the wrong paths\n```\n\n(libtool's `.la` files are plain text files.",
     "created_at": "2010-10-23T19:41:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98352",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98189",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4624,15 +4624,15 @@ $ cat local/lib/libgmpxx.la # to see the wrong paths
 
 ---
 
-archive/issue_comments_098353.json:
+archive/issue_comments_098190.json:
 ```json
 {
     "body": "\n```sh\n$ ls -rtl local/lib/*.la\n```\n\nThe only difference between the broken one and the working one is that the two linbox files have been updated more recently in the working one, presumably when the linbox spkg was installed.  There are plenty of .la files with the wrong path in the working version.  The output from the working version:\n\n```\n-rwxr-xr-x@ 1 palmieri  admin   779 Feb 23  2008 local/lib/libgfortran.la*\n-rwxr-xr-x  1 palmieri  admin   975 Sep 24 08:23 local/lib/libpng12.la*\n-rwxr-xr-x  1 palmieri  admin   832 Sep 24 08:24 local/lib/libgc.la*\n-rwxr-xr-x  1 palmieri  admin   902 Sep 24 08:24 local/lib/libcord.la*\n-rwxr-xr-x  1 palmieri  admin   983 Sep 24 08:27 local/lib/libm4ri.la*\n-rwxr-xr-x  1 palmieri  admin   827 Sep 24 08:28 local/lib/libmpir.la*\n-rwxr-xr-x  1 palmieri  admin   897 Sep 24 08:28 local/lib/libmpirxx.la*\n-rwxr-xr-x  1 palmieri  admin   890 Sep 24 08:28 local/lib/libgmpxx.la*\n-rwxr-xr-x  1 palmieri  admin   821 Sep 24 08:28 local/lib/libgmp.la*\n-rwxr-xr-x  1 palmieri  admin   857 Sep 24 08:30 local/lib/libsqlite3.la*\n-rwxr-xr-x  1 palmieri  admin   887 Sep 24 08:31 local/lib/libgpg-error.la*\n-rwxr-xr-x  1 palmieri  admin   879 Sep 24 08:37 local/lib/libecm.la*\n-rwxr-xr-x  1 palmieri  admin  1066 Sep 24 08:38 local/lib/libmpfr.la*\n-rwxr-xr-x  1 palmieri  admin   980 Sep 24 08:42 local/lib/libgivaro.la*\n-rwxr-xr-x  1 palmieri  admin  1068 Sep 24 08:44 local/lib/libglpk.la*\n-rwxr-xr-x  1 palmieri  admin   852 Sep 24 08:44 local/lib/libmpfi.la*\n-rwxr-xr-x  1 palmieri  admin   982 Sep 24 08:55 local/lib/libgcrypt.la*\n-rwxr-xr-x  1 palmieri  admin  1023 Sep 24 09:01 local/lib/libfplll.la*\n-rwxr-xr-x  1 palmieri  admin  1053 Sep 24 09:01 local/lib/libopencdk.la*\n-rwxr-xr-x  1 palmieri  admin  1084 Sep 24 09:02 local/lib/libgnutls.la*\n-rwxr-xr-x  1 palmieri  admin  1272 Sep 24 09:02 local/lib/libgnutls-openssl.la*\n-rwxr-xr-x  1 palmieri  admin  1321 Sep 24 09:02 local/lib/libgnutls-extra.la*\n-rwxr-xr-x  1 palmieri  admin   945 Oct 23 10:46 local/lib/libcdd.la*\n-rwxr-xr-x  1 palmieri  admin  1075 Oct 23 10:46 local/lib/libcddgmp.la*\n-rwxr-xr-x  1 palmieri  admin   876 Oct 23 10:53 local/lib/libfreetype.la*\n-rwxr-xr-x  1 palmieri  admin  1087 Oct 23 10:54 local/lib/libgd.la*\n-rwxr-xr-x  1 palmieri  admin   979 Oct 23 10:59 local/lib/libgslcblas.la*\n-rwxr-xr-x  1 palmieri  admin   951 Oct 23 10:59 local/lib/libgsl.la*\n-rwxr-xr-x  1 palmieri  admin  1044 Oct 23 11:02 local/lib/libpynac.la*\n-rwxr-xr-x  1 palmieri  admin   951 Oct 23 11:37 local/lib/libiml.la*\n-rwxr-xr-x  1 palmieri  admin  1236 Oct 23 11:41 local/lib/liblinboxsage.la*\n-rwxr-xr-x  1 palmieri  admin  1206 Oct 23 11:41 local/lib/liblinbox.la*\n```\n\n\nI think this is the difference, although I haven't tested it: I had a directory \"/Applications/sage_builds/sage-4.5.3\".  In the broken one, I copied this to another directory, sage-4.6.rc0, and then I moved the original directory (so that any references to it would fail).  When upgrading the working version, I left the old directory in place.",
     "created_at": "2010-10-23T19:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98353",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98190",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4685,15 +4685,15 @@ I think this is the difference, although I haven't tested it: I had a directory 
 
 ---
 
-archive/issue_comments_098354.json:
+archive/issue_comments_098191.json:
 ```json
 {
     "body": "So it appears to be a bug in `sage-location`?\n\nCan you track this further down on a follow-up ticket? Works for me on Linuces...\n\nPerhaps copy all `.la` files to a temporary directory, move Sage (and run `./sage -c quit` to invoke `sage-location`), and then compare them.",
     "created_at": "2010-10-23T20:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98354",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98191",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4707,15 +4707,15 @@ Perhaps copy all `.la` files to a temporary directory, move Sage (and run `./sag
 
 ---
 
-archive/issue_comments_098355.json:
+archive/issue_comments_098192.json:
 ```json
 {
     "body": "Okay, the problem is this: if you build Sage but never run it, then the script sage-location doesn't get run, so the file SAGE_ROOT/local/lib/sage-location.txt doesn't get created.  Then if you move or copy that directory, the file isn't there, so sage-location thinks everything is okay, so it doesn't rewrite the .la files.\n\n(This is despite the comment in sage-location that the files in local/lib get written \"during the build\".  This is also not platform-specific: I just built on sage.math, and there is no file sage-location.txt until Sage gets run for the first time.  I was also wondering why I wasn't seeing the message \"The Sage install tree may have moved...\" at the start of the upgrade, and this explains it.)\n\nSee #10162 for a follow-up; it's a one-liner.",
     "created_at": "2010-10-23T21:15:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98355",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98192",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4729,15 +4729,15 @@ See #10162 for a follow-up; it's a one-liner.
 
 ---
 
-archive/issue_comments_098356.json:
+archive/issue_comments_098193.json:
 ```json
 {
     "body": "Replying to [comment:153 jhpalmieri]:\n> Anyway, I guess now I'm happy with all but one of the patches (trac_9896-fix_extension_module_deps-sagelib.patch), and someone else will have to help with that.\n\nI'll try to review this later today.",
     "created_at": "2010-10-27T09:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98356",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98193",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4750,15 +4750,15 @@ I'll try to review this later today.
 
 ---
 
-archive/issue_comments_098357.json:
+archive/issue_comments_098194.json:
 ```json
 {
     "body": "John Cremona, do you happen to see any problems in [attachment:trac_9896-fix_extension_module_deps-sagelib.patch]?",
     "created_at": "2010-10-27T10:24:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98357",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98194",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4768,15 +4768,15 @@ John Cremona, do you happen to see any problems in [attachment:trac_9896-fix_ext
 
 ---
 
-archive/issue_comments_098358.json:
+archive/issue_comments_098195.json:
 ```json
 {
     "body": "Replying to [comment:169 mpatel]:\n> John Cremona, do you happen to see any problems in [attachment:trac_9896-fix_extension_module_deps-sagelib.patch]?\n\nThanks for asking.  For the include files listed, I assume that someone has just gone through the relevant pyx files and listed which of my header files are actually used?  I am not sure whether the point here is that (a) if some files are omitted from this list then the build will fail, or (b) if some are omitted then upgrading will not know to recompile something.  If (a) then the test is just to see if Sage builds!  If (b) I hardly think it matters since either all of eclib is built or none of it, surely?\n\nIt is quite possible that everything I have just said is complete nonsense.  If so sorry.\n\nAbout including the pari library:  Leif explained this to some extent on sage-devel.  I don't know (especially not what may or may not happen on cygwin) sp perhaps it is safer to leave it in?\n\nIf anyone ever has suggestions for improving the Makefiles for eclib I am always happy to receive them.  They were created during SD6 by editing old Makefiles of my own which had been evolving over years, so there may well be stuff in there which should not be.\n\nShort answer: no.",
     "created_at": "2010-10-27T10:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98358",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98195",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -4797,15 +4797,15 @@ Short answer: no.
 
 ---
 
-archive/issue_comments_098359.json:
+archive/issue_comments_098196.json:
 ```json
 {
     "body": "I think we need to list eclib headers for these modules, so that during an upgrade, if the eclib package is rebuilt, because eclib and/or a dependent package has changed, the modules are also rebuilt.  Is this correct?\n\nI see\n\n```sh\n$ cd sage-4.6.rc0/devel/sage/sage/libs/mwrank\n$ grep \"eclib/\" *.c* *.h\nwrap.cc:#include \"eclib/htconst.h\"\nwrap.cc:#include \"eclib/interface.h\"\nwrap.h:#include \"eclib/curve.h\"\nwrap.h:#include \"eclib/egr.h\"    \nwrap.h:#include \"eclib/descent.h\"\nwrap.h:#include \"eclib/points.h\"\nwrap.h:#include \"eclib/isogs.h\"\nwrap.h:#include \"eclib/marith.h\" \nwrap.h:EXTERN void two_descent_saturate(struct two_descent* t, long sat_bd); // = -1 for default set in eclib/src/qcurves/saturate.h (currently 100)\n```\n\nand\n\n```sh\n$ cd sage-4.6.rc0/devel/sage/sage/libs/cremona\n$ grep \"eclib/\" *.cpp | grep -v cdef\nhomspace.cpp:#include \"eclib/moddata.h\"\nhomspace.cpp:#include \"eclib/symb.h\"\nhomspace.cpp:#include \"eclib/cusp.h\"\nhomspace.cpp:#include \"eclib/homspace.h\"\nmat.cpp:#include \"eclib/moddata.h\"\nmat.cpp:#include \"eclib/symb.h\"\nmat.cpp:#include \"eclib/cusp.h\"\nmat.cpp:#include \"eclib/homspace.h\"\nnewforms.cpp:#include \"eclib/interface.h\"\nnewforms.cpp:#include \"eclib/bigrat.h\"\nnewforms.cpp:#include \"eclib/rat.h\"\nnewforms.cpp:#include \"eclib/curve.h\"\nnewforms.cpp:#include \"eclib/moddata.h\"\nnewforms.cpp:#include \"eclib/symb.h\"\nnewforms.cpp:#include \"eclib/cusp.h\"\nnewforms.cpp:#include \"eclib/xsplit.h\"\nnewforms.cpp:#include \"eclib/method.h\"\nnewforms.cpp:#include \"eclib/oldforms.h\"\nnewforms.cpp:#include \"eclib/homspace.h\"\nnewforms.cpp:#include \"eclib/cperiods.h\"\nnewforms.cpp:#include \"eclib/newforms.h\"\n```\n\nFor `homspace` and `mat`, do we need to mention in `module_list.py` the `eclib/` headers that aren't listed above?",
     "created_at": "2010-10-27T12:03:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98359",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98196",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4861,15 +4861,15 @@ For `homspace` and `mat`, do we need to mention in `module_list.py` the `eclib/`
 
 ---
 
-archive/issue_comments_098360.json:
+archive/issue_comments_098197.json:
 ```json
 {
     "body": "I agree that these modules need to be rebuilt if eclib is rebuilt;  but I don't see why that means that we have to list header files individually.  Can't we make these modules depend on the spkg itself?",
     "created_at": "2010-10-27T14:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98360",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98197",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -4879,15 +4879,15 @@ I agree that these modules need to be rebuilt if eclib is rebuilt;  but I don't 
 
 ---
 
-archive/issue_comments_098361.json:
+archive/issue_comments_098198.json:
 ```json
 {
     "body": "Replying to [comment:170 cremona]:\n> Replying to [comment:169 mpatel]:\n> > John Cremona, do you happen to see any problems in [attachment:trac_9896-fix_extension_module_deps-sagelib.patch]?\n> \n> Thanks for asking.  For the include files listed, I assume that someone has just gone through the relevant pyx files and listed which of my header files are actually used?  \n\nExactly. I did that some weeks ago when debugging the original problem...\n\nIf any of these header files (to be precise, its modification time) changes, an extension module having it in its dependencies will get rebuilt. (The problem was this did not happen when ECLIB got rebuilt, such that these modules still used - or better: pulled-in - the old PARI library, which resulted in segfaults or import / dynamic linker errors.) \n\nPerhaps a little overkill (we just could rebuild all of these modules if *any* ECLIB header file changes), but as is may save some unnecessary rebuilds. ;-)\n\n> About including the pari library:  Leif explained this to some extent on sage-devel.  I don't know (especially not what may or may not happen on cygwin) so perhaps it is safer to leave it in?\n\nWell, I kept it for the moment (here; #9914 would remove the PARI library).\n\n> If anyone ever has suggestions for improving the Makefiles for eclib I am always happy to receive them.  They were created during SD6 by editing old Makefiles of my own which had been evolving over years, so there may well be stuff in there which should not be.\n\nOk, I have some patched ECLIB spkg somewhere around. Perhaps needs some more work though.",
     "created_at": "2010-10-27T15:58:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98361",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98198",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4915,15 +4915,15 @@ Ok, I have some patched ECLIB spkg somewhere around. Perhaps needs some more wor
 
 ---
 
-archive/issue_comments_098362.json:
+archive/issue_comments_098199.json:
 ```json
 {
     "body": "Replying to [comment:172 cremona]:\n> I agree that these modules need to be rebuilt if eclib is rebuilt;  but I don't see why that means that we have to list header files individually.  Can't we make these modules depend on the spkg itself?\n\nThe most generic way would be to make any extension module (explicitly) depend on the libraries it is linked to. (Though this certainly would also trigger unnecessary rebuilds, but is easy to implement and safe, assuming libraries change when there headers do.)\n\nRobert B. wanted to improve Cython s.t. we get rid of most of `module_list.py` (by using pragmas like `clib ...` etc. in the Cython files), which I think would also handle the true dependencies properly.\n\nSo I considered my change more or less temporary, and didn't address the dependencies of other modules **currently** not causing trouble. (As mentioned earlier, upgrading e.g. MPIR (#8664) will require further changes, and unless we get an improved Cython until then, I'll implement the above strategy in `setup.py`, but of course on another ticket. This one was at least originally meant to only or especially address the PARI upgrade, i.e. upgrading Sage to a version with the new PARI from one with the old.)",
     "created_at": "2010-10-27T16:19:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98362",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98199",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -4940,15 +4940,15 @@ So I considered my change more or less temporary, and didn't address the depende
 
 ---
 
-archive/issue_comments_098363.json:
+archive/issue_comments_098200.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-10-28T01:20:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98363",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98200",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -4958,15 +4958,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_098364.json:
+archive/issue_comments_098201.json:
 ```json
 {
     "body": "Thanks for finishing off the review.",
     "created_at": "2010-10-28T01:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98364",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98201",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4976,15 +4976,15 @@ Thanks for finishing off the review.
 
 ---
 
-archive/issue_comments_098365.json:
+archive/issue_comments_098202.json:
 ```json
 {
     "body": "Great!",
     "created_at": "2010-10-28T07:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98365",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98202",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -4994,15 +4994,15 @@ Great!
 
 ---
 
-archive/issue_comments_098366.json:
+archive/issue_comments_098203.json:
 ```json
 {
     "body": "Replying to [comment:177 jdemeyer]:\n> Great!\n\nThe final review? We've only reached comment !#178... ;-)\n\nYes, thanks to you for setting up the test upgrade paths, and the reviewers!\n\n(#9914 is still an open question.)",
     "created_at": "2010-10-28T07:39:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98366",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98203",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -5019,15 +5019,15 @@ Yes, thanks to you for setting up the test upgrade paths, and the reviewers!
 
 ---
 
-archive/issue_comments_098367.json:
+archive/issue_comments_098204.json:
 ```json
 {
     "body": "Given the number of things that look to be needed to update this, it would be good if one could create a small shell script, something like\n\n\n```/bin/sh\ncd devel/sage\nhg qimport /patch/to/raw-patch1\nhg qpush\nhg qimport /patch/to/raw-patch2\netc\n```\n\nso that we could check it easily. At the moment, looking at all those patches, it is rather off-putting!\n\nDave",
     "created_at": "2010-10-28T08:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98367",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98204",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -5050,15 +5050,15 @@ Dave
 
 ---
 
-archive/issue_comments_098368.json:
+archive/issue_comments_098205.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-10-30T09:39:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98368",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98205",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -5068,15 +5068,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_098369.json:
+archive/issue_comments_098206.json:
 ```json
 {
     "body": "A followup: on my mac, perhaps because of various symbolic links, whenever I run \"sage -b\", I see a message like\n\n```\nwarning: Replacing library search directory in linker command:\n  \"/Applications/sage_builds/sage-4.6/local/lib\" -> \"/Applications/sage/local/lib\"\n```\n\nI can run \"sage -b\" three times in a row, and I see this message all three times.\n\nThis may be because of symbolic links: \"/Applications/sage\" is a link pointing to \"/Applications/sage_builds/sage-4.6/\".\n\nPerhaps in setup.py, we should use os.path.realpath?  For example, \n\n```diff\ndiff -r cdc586ffbdfd setup.py\n--- a/setup.py  Mon Sep 13 00:52:40 2010 -0700\n+++ b/setup.py  Wed Nov 03 12:46:51 2010 -0700\n@@ -391,7 +391,7 @@\n                     self.debug_print(\n                       \"Library dir found in dynamic linker command: \" +\n                       \"\\\"%s\\\"\" % libdir)\n-                    if libdir != sage_libdir:\n+                    if os.path.realpath(libdir) != os.path.realpath(sage_libdir):\n                         self.compiler.warn(\n                           \"Replacing library search directory in linker \" +\n                           \"command:\\n  \\\"%s\\\" -> \\\"%s\\\"\\n\" % (libdir,\n```\n\nIf this sounds like a good idea, I can open a new ticket with this patch.",
     "created_at": "2010-11-03T19:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98369",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98206",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -5114,15 +5114,15 @@ If this sounds like a good idea, I can open a new ticket with this patch.
 
 ---
 
-archive/issue_comments_098370.json:
+archive/issue_comments_098207.json:
 ```json
 {
     "body": "Replying to [comment:181 jhpalmieri]:\n> A followup: on my mac, perhaps because of various symbolic links, whenever I run \"sage -b\", I see a message like\n\n```\nwarning: Replacing library search directory in linker command:\n  \"/Applications/sage_builds/sage-4.6/local/lib\" -> \"/Applications/sage/local/lib\"\n```\n\n> I can run \"sage -b\" three times in a row, and I see this message all three times.\n\nOf course. `distutils` reads the Python Makefile each time it is invoked by the Sage library's `setup()`; we do not (yet) patch that Makefile and `pyconfig,h`.\n\n\n> This may be because of symbolic links: \"/Applications/sage\" is a link pointing to \"/Applications/sage_builds/sage-4.6/\".\n\nYep.\n\n\n> Perhaps in setup.py, we should use os.path.realpath?\n> If this sounds like a good idea, I can open a new ticket with this patch.\n\nWell, it's just a warning; feel free to open a ticket for that, and I'll probably review it. ;-)",
     "created_at": "2010-11-03T20:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98370",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98207",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -5153,15 +5153,15 @@ Well, it's just a warning; feel free to open a ticket for that, and I'll probabl
 
 ---
 
-archive/issue_comments_098371.json:
+archive/issue_comments_098208.json:
 ```json
 {
     "body": "See #10208.  I agree that it is just a warning, but it's a warning when there is nothing actually wrong, which might be distracting...",
     "created_at": "2010-11-03T21:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9895",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98371",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9895#issuecomment-98208",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

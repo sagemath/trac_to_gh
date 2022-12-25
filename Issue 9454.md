@@ -6,15 +6,13 @@ archive/issues_009454.json:
     "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nThe attached patch adds support for a new token-based challenge mechanism for account creation in the sage notebook.\n\nWorkflow:\n\nThe admin enables challenges, and sets challenge_type to token.\n\nThe admin generates 50 tokens (through the user management interface) and distributes these to 50 people. (Students taking some class, for example.)\n\nEach person that receives a token can use that token (once) to create an account.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9454\n\n",
     "created_at": "2010-07-08T14:57:46Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Add support for account tokens",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9454",
-    "user": "@wjp"
+    "user": "https://github.com/wjp"
 }
 ```
 Assignee: jason, was
@@ -40,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9454
 
 ---
 
-archive/issue_comments_090591.json:
+archive/issue_comments_090442.json:
 ```json
 {
     "body": "Attachment [sagenb_account_tokens.patch](tarball://root/attachments/some-uuid/ticket9454/sagenb_account_tokens.patch) by @wjp created at 2010-07-08 14:58:26",
     "created_at": "2010-07-08T14:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90591",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90442",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -58,15 +56,15 @@ Attachment [sagenb_account_tokens.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_090592.json:
+archive/issue_comments_090443.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-08T14:58:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90592",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90443",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -76,15 +74,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_090593.json:
+archive/issue_comments_090444.json:
 ```json
 {
     "body": "Please fill in your real name as Author.",
     "created_at": "2012-07-27T20:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90593",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90444",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -94,15 +92,15 @@ Please fill in your real name as Author.
 
 ---
 
-archive/issue_comments_090594.json:
+archive/issue_comments_090445.json:
 ```json
 {
     "body": "This looks really cool, and some stuff could still be used directly [upstream](https://github.com/sagemath/sagenb/blob/master/sagenb/notebook/challenge.py), but it does need some rebasing or an upstream request or something.",
     "created_at": "2013-06-18T20:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90594",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90445",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -112,15 +110,15 @@ This looks really cool, and some stuff could still be used directly [upstream](h
 
 ---
 
-archive/issue_comments_090595.json:
+archive/issue_comments_090446.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2013-06-18T20:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90595",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90446",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -130,15 +128,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_090596.json:
+archive/issue_comments_090447.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2020-08-18T00:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90596",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90447",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -148,15 +146,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_090597.json:
+archive/issue_comments_090448.json:
 ```json
 {
     "body": "Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.",
     "created_at": "2020-08-18T00:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90597",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90448",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -166,15 +164,15 @@ Proposing to close all sagenb tickets as outdated, so that all remaining open ti
 
 ---
 
-archive/issue_comments_090598.json:
+archive/issue_comments_090449.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-09-09T09:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9454",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90598",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9454#issuecomment-90449",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000273.json:
     "body": "Assignee: @williamstein\n\nline 35 in sage-location tries to split off SAGE-ROOT by looking for the first occurrence of\n\"local/\" in the string. This fails if, for instance, sage is installed in\n\"/usr/local/sage/latestversion/...\"\n\nA fix that seems to work at present if to search for the last occurrence of \"local/\" instead:\n\n```\n           i = z.rfind('local/')\n```\n\n\nOne would have to check that no further \"local/\" can occur inside\n$SAGE_ROOT/local/\nin order for this criterion to work.\n\nIssue created by migration from https://trac.sagemath.org/ticket/273\n\n",
     "created_at": "2007-02-21T02:05:02Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.2",
     "title": "sage-location path extraction thrown off by extra \"local\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/273",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 Assignee: @williamstein
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/273
 
 ---
 
-archive/issue_comments_001298.json:
+archive/issue_comments_001294.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-02-24T03:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/273",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/273#issuecomment-1298",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/273#issuecomment-1294",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -60,15 +59,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_001299.json:
+archive/issue_comments_001295.json:
 ```json
 {
     "body": "Fixed for sage-2.2.",
     "created_at": "2007-02-24T03:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/273",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/273#issuecomment-1299",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/273#issuecomment-1295",
+    "user": "https://github.com/williamstein"
 }
 ```
 

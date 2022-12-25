@@ -6,15 +6,13 @@ archive/issues_001928.json:
     "body": "Assignee: @rlmill\n\n\n#1306 laid some of the groundwork for finishing this request, but it's not finished yet, so I'm opening another ticket with the original request.\n\n\n```\n>>> (e) Bundles: Start with a base graph G with vertices {1, . . . , n}.\n>>> For each\n>>> vertex i we are given a graph Ci . For each edge ij we are given a\n>>> bipartite\n>>> graph joining V (Ci ) to V (Cj ). (There is an implicit orientation here.)\n>>> Some examples:\n>>> (i) The Petersen graph: n = 2, C1 is the 5-cycle, C2 is its complement\n>>> and the bipartite graph is a 5-matching.\n>>> (ii) The Hoffman-Singleton graph can be constructed with n = 2, where\n>>> C1 is an independent set on 15 vertices, C2 is a nice distance regular\n>>> graph on 35 vertices,. . .\n>>> (iii) Covering graphs. Here the graphs Ci are empty on r vertices, and\n>>> each bipartite graphs is either an r-matching or is empty.\n>> Huh, I used this idea extensively in my dissertation and a research\n>> paper. I used the \"blowup graph\" terminology, though, from extremal\n>> graph theory. Is anyone working on this? If not, I'll make a trac ticket.\n> Nobody I know of. If you did this type of stuff in your dissertation,\n> then I nominate you! Create a ticket.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1928\n\n",
     "created_at": "2008-01-25T19:50:35Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-wishlist",
     "title": "Bundles of graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1928",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -53,15 +51,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1928
 
 ---
 
-archive/issue_comments_012238.json:
+archive/issue_comments_012208.json:
 ```json
 {
     "body": "\n```\n[11:28am] rlm: given two graphs, and a surjection from one to the other (not necessarily a graph hom.), we can construct a bundle\n[11:29am] rlm: further, all bundles arise in this way\n[11:29am] rlm: so instead of a partition, give both graphs and a map\n[11:29am] rlm: that allows for any bundle to be constructed, right?\n[11:34am] jason: rlm: the first graph is the petersen graph, for example, and the second is K_2, right?\n[11:34am] jason: Yes, I think you're right that every bundle can be described that way.\n[11:35am] rlm: so at least we have one way of constructing, so that nothing can't be constructed\n```\n",
     "created_at": "2008-01-26T19:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1928#issuecomment-12238",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1928#issuecomment-12208",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -81,15 +79,15 @@ archive/issue_comments_012238.json:
 
 ---
 
-archive/issue_comments_012239.json:
+archive/issue_comments_012209.json:
 ```json
 {
     "body": "\n```\n[11:55am] rlm: ok, G1 is a 5-cycle\n[11:55am] rlm: G2 is K(3,3)\n[11:55am] rlm: G3 is empty on 3 vertices\n[11:55am] rlm: there's an obvious bundle here, and it should be brainless to construct\n[11:56am] rlm: like GraphBundle(base=G1, edge_lifts=G2, vertex_lifts=G3)\n[11:56am] rlm: and it just works\n[11:56am] rlm: no matter how you glue, you'll get the same thing\n[11:57am] rlm: maybe instead of, if the vertices match up, just match them according to their orderings\n[11:57am] jason: That's what Chris was saying when he said \"(There is an implicit orientation here)\"\n```\n",
     "created_at": "2008-01-26T20:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1928#issuecomment-12239",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1928#issuecomment-12209",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -111,15 +109,15 @@ archive/issue_comments_012239.json:
 
 ---
 
-archive/issue_comments_012240.json:
+archive/issue_comments_012210.json:
 ```json
 {
     "body": "Also, there are several functions of generic graphs that should be overridden, especially things like add_vertex etc.",
     "created_at": "2008-01-26T20:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1928#issuecomment-12240",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1928#issuecomment-12210",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -129,15 +127,15 @@ Also, there are several functions of generic graphs that should be overridden, e
 
 ---
 
-archive/issue_comments_012241.json:
+archive/issue_comments_012211.json:
 ```json
 {
     "body": "See #18028",
     "created_at": "2015-03-21T12:30:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1928",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1928#issuecomment-12241",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/1928#issuecomment-12211",
+    "user": "https://github.com/vbraun"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_007109.json:
     "body": "Assignee: mhampton\n\nCC:  @cswiercz @novoselt\n\nKeywords: polyhedra\n\nThe Polyhedron class is an interface to cdd, but does not correctly map some of the features that go beyond compact, full-dimensional polyhedra. For starters, \"linearities\" means two different things for H- and V-representation (equalities or lines), but there is only one self.linearities() method. For reference:\n\n**H-representation: inequalities and equalities**\n\n**V-representation: conv(vertices) + IR_+{rays} + IR{lines}**\n\nIt is often confusing what has already been computed from the complementary representation and what has not been computed, and the package does not always get it right. For example:\n\n```\n  sage: vert_to_ieq(vertices=[[0]], rays=[[1]]).linearities()\n  [[0, 1]]\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).linearities() \n  []\n```\n\nAlso, the constructor by default eliminates redundant vertices but not other redundant data which can be confusing.\n\nFinally, ccd pivots and hence changes the enumeration of the data. This makes parsing the incidences and adjacencies tricky. \n\n### Proposal\n\nI propose to change the behaviour of Polyhedron such that the constructor automatically computes both an optimized H-representation and an optimized V-representation. Thereafter, no more calls to cdd would be necessary. \n\nIf one really wants to use Polyhedron as a container for only H-representation or only V-representation, then a special class constructing function can do that. Any calls to methods that require the complementary data shall then fail with an `AttributeError` exception.\n\n\n### cdd caveats\n\ncdd sometimes omits the origin as a vertex:\n\n```\n  sage: Polyhedron(ieqs=[[0, 1]]).vertices()\n  []\n```\n\ncdd also sometimes adds a \"inequality at infininty\"; Contrary to the output below, the half-line has only one face\n\n```\n  sage: Polyhedron(vertices=[[0]], rays=[[1]]).facial_incidences()\n  [[0, [0]], [1, [1]]]\n```\n\nGiven equations/inequalities without a solution, cdd will return an empty polyhedron (no vertices). But conversely, given an empty polyhedron, cdd will error out instead of producing equations without solution (one of the cases where the H-representation is not unique)\n\n### Plan\n\n1) Write a binary based on cddlib that acts as a filter stdin->stdout and computes an canonical H- and V-representation. I'll attach a suitable patch against the contents of cddlib-094f.spkg\n\n2) change polyhedra.py to run cdd only once in the constructor (TODO)\n\n3) compute incidence matrix within sage as cddlib does not have a convenient function to do so without adding an \"inequality at infinity\" (TODO)\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7109\n\n",
     "created_at": "2009-10-04T13:46:52Z",
     "labels": [
-        "geometry",
-        "major",
-        "enhancement"
+        "component: geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "polyhedra bugs with linearities, rewrite proposal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7109",
-    "user": "@vbraun"
+    "user": "https://github.com/vbraun"
 }
 ```
 Assignee: mhampton
@@ -85,15 +83,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7109
 
 ---
 
-archive/issue_comments_058854.json:
+archive/issue_comments_058743.json:
 ```json
 {
     "body": "Patch for cddlib-094f.spkg",
     "created_at": "2009-10-04T13:47:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58854",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58743",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -103,15 +101,15 @@ Patch for cddlib-094f.spkg
 
 ---
 
-archive/issue_comments_058855.json:
+archive/issue_comments_058744.json:
 ```json
 {
     "body": "Attachment [cddlib-094f.patch](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.patch) by mhampton created at 2009-10-04 15:05:48\n\nI think your proposal sounds very good.  I have been meaning to do something similar but haven't had time.  When I first started writing the Polyhedron class, I wasn't sure how much should be computed at initialization and how much on demand.  Now it seems clear that its worth it to compute the complementary representation right away.  Things like the face lattice, though, should be computed on-demand, but that is consistent with what you are proposing.\n\nRight now lrs is an optional package but I have been working on preparing to move it to be a standard component.  Then it should be possible to choose to use cddlib or lrs for the representation conversion.  That can wait, but I wanted to mention it so you have it in mind while writing any interface.\n\nAnother refactoring I have been thinking about would compute the dimension during initialization, and then only add methods like render_solid() if the dimension was 1,2, or 3.  At some point it would be good to integrate better with the code that Andrey Novoseltsev has for lattice polytopes (this uses PALP instead of cddlib).\n\nAnyway, go for it and I will be very happy to review.  I'm glad you are interested in improving this functionality in Sage.\n\nCheers,\nMarshall Hampton",
     "created_at": "2009-10-04T15:05:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58855",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58744",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -132,15 +130,15 @@ Marshall Hampton
 
 ---
 
-archive/issue_comments_058856.json:
+archive/issue_comments_058745.json:
 ```json
 {
     "body": "All the basic stuff works now, including the construction of the examples in the polytopes class. Missing bits are projections down to lower dimensions and the face lattice. I removed all triangulation-related code since a) it did not work in general and b) you can plot 3d solids without triangulating the facets.\n\nIf you have any suggestions for the general structure then now would be a good time to bring them up. I have attached the full file since it is easier to read than a patch.",
     "created_at": "2009-10-09T11:30:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58856",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58745",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -152,15 +150,15 @@ If you have any suggestions for the general structure then now would be a good t
 
 ---
 
-archive/issue_comments_058857.json:
+archive/issue_comments_058746.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2009-10-09T11:30:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58857",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58746",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -170,15 +168,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_058858.json:
+archive/issue_comments_058747.json:
 ```json
 {
     "body": "Attachment [polyhedra.py](tarball://root/attachments/some-uuid/ticket7109/polyhedra.py) by @vbraun created at 2009-10-12 17:08:54\n\nRefactored version of polyhedra.py",
     "created_at": "2009-10-12T17:08:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58858",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58747",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -190,15 +188,15 @@ Refactored version of polyhedra.py
 
 ---
 
-archive/issue_comments_058859.json:
+archive/issue_comments_058748.json:
 ```json
 {
     "body": "patch version of polyhedra.py, also touches manual and all.py",
     "created_at": "2009-10-12T17:14:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58859",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58748",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -208,15 +206,15 @@ patch version of polyhedra.py, also touches manual and all.py
 
 ---
 
-archive/issue_comments_058860.json:
+archive/issue_comments_058749.json:
 ```json
 {
     "body": "Attachment [polyhedron-v8.patch](tarball://root/attachments/some-uuid/ticket7109/polyhedron-v8.patch) by @vbraun created at 2009-10-12 17:16:37\n\nCurrent revision is final version, all goals accomplished.",
     "created_at": "2009-10-12T17:16:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58860",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58749",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -228,15 +226,15 @@ Current revision is final version, all goals accomplished.
 
 ---
 
-archive/issue_comments_058861.json:
+archive/issue_comments_058750.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-10-12T17:16:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58861",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58750",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -246,15 +244,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_058862.json:
+archive/issue_comments_058751.json:
 ```json
 {
     "body": "What is the reason for the \"automake-1.6 -f\" part of the cddlib patch? I don't have that installed on my macs, maybe I can add it but it would be a new dependency which I think is undesirable.  Can that be avoided somehow?",
     "created_at": "2009-10-15T17:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58862",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58751",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -264,15 +262,15 @@ What is the reason for the "automake-1.6 -f" part of the cddlib patch? I don't h
 
 ---
 
-archive/issue_comments_058863.json:
+archive/issue_comments_058752.json:
 ```json
 {
     "body": "The automake part is a bit of a kludge since I don't know how other spkgs handle this. The problem is that I am adding a program to the cdd library. To convince the make system to build this program, I added it to the .am files wich automake the configure which generates the makefile. So the minimally invasive step is to edit the .am only and then rerun automake. Though cddlib is a bit fickle and only worked with automake-1.6 for me. The more compatible way would be to patch the result of automake in, but that would add autogenerated stuff to a couple of files.\n\nThe third, and perhaps best option, would be to make this program a different project alltogether, and just compile it in from its own makefile. So put it in a different directory, not somewhere in cddlib.",
     "created_at": "2009-10-15T17:51:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58863",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58752",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -284,15 +282,15 @@ The third, and perhaps best option, would be to make this program a different pr
 
 ---
 
-archive/issue_comments_058864.json:
+archive/issue_comments_058753.json:
 ```json
 {
     "body": "New version has \"autoreconf -fiv\" run. I think this is the easiest way to distribute everything. That way, compiling doesn't require any autotools.",
     "created_at": "2009-10-15T20:52:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58864",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58753",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -302,15 +300,15 @@ New version has "autoreconf -fiv" run. I think this is the easiest way to distri
 
 ---
 
-archive/issue_comments_058865.json:
+archive/issue_comments_058754.json:
 ```json
 {
     "body": "OK, that works for me now.  I am hoping to review this tomorrow, looks very good so far.  I'm excited that this will really advance polytope support for sage.",
     "created_at": "2009-10-17T20:10:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58865",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58754",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -320,15 +318,15 @@ OK, that works for me now.  I am hoping to review this tomorrow, looks very good
 
 ---
 
-archive/issue_comments_058866.json:
+archive/issue_comments_058755.json:
 ```json
 {
     "body": "Sage -coverage reveals a lot of untested functions.  If you are willing, I'd be happy to write those, since it will force me to really understand what you've done.  It might take me a week or two though.\n\nI also get a test failure on polytopes.great_rhombicuboctahedron, which I think I understand and can fix - the rational vertices need to be explicitly cast.  Actually I don't really understand why this wasn't a problem before, since you didn't change much there, but my fix makes it more readable anyway.",
     "created_at": "2009-10-17T23:00:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58866",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58755",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -340,15 +338,15 @@ I also get a test failure on polytopes.great_rhombicuboctahedron, which I think 
 
 ---
 
-archive/issue_comments_058867.json:
+archive/issue_comments_058756.json:
 ```json
 {
     "body": "I didn't know about \"-coverage\", but it passed doctest without errors or warnings with sage-4.1.1. The cast problem must be from Sage 4.1.2, I guess. \n\nIf you want to add the missing test that would be great. Email me if you have questions / comments.\n\nI tried to stick to the following general philosophy for the polytopes class:\n\n* if the vertex coordinates can be chosen rational, then the polyhedron should be in QQ\n\n* otherwise, the polyhedron should be over RDF by default. A rational approximation can be optional via a \"field=QQ\" parameter.\n\nFloating point coordinates are fine with cddlib as long as the input is sufficiently nondegenerate, and polytopes defined by vertices are no problem.",
     "created_at": "2009-10-18T00:33:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58867",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58756",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -368,15 +366,15 @@ Floating point coordinates are fine with cddlib as long as the input is sufficie
 
 ---
 
-archive/issue_comments_058868.json:
+archive/issue_comments_058757.json:
 ```json
 {
     "body": "OK, I am beginning to add doctests to everything that needs them.\n\nOne thing I don't like so far is you preserved a lot of function names, but they return totally different things than they used to.  This breaks basically all of my existing use of the code, and presumably other people's as well.  For example, the vertices() function doesn't return a list of lists of numbers, but instead a generator, and the generator returns some higher-level object instead of a list.\n\nI think some break in back-compatability is definitely worth it, since I think your design is a lot cleaner and better, but it should be minimized.  A compromise would be if I modified some of those functions to behave as before, and we created some new functions that behave as yours do.  So for example, vertices() would return a list of lists as before (or perhaps a list of vectors, that would be different but wouldn't break everything), and there would be another function that returned the generator.  I don't know what a good name would be, perhaps something like vertex_generator().\n\n-Marshall",
     "created_at": "2009-10-20T21:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58868",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58757",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -392,15 +390,15 @@ I think some break in back-compatability is definitely worth it, since I think y
 
 ---
 
-archive/issue_comments_058869.json:
+archive/issue_comments_058758.json:
 ```json
 {
     "body": "I agree with you that compatibily should be preserved if possible. \n\nBut since the returned vertices/rays/... are now their own objects instead of just lists of numbers any old code will break even if we return lists instead of generators. On a more fundamental level, I think one should always return generators instead of lists if possible (unless one is just exposing some internal datastructure). That avoids unnecessary list creation and enables parallelism. This is why I always favoured generators over returning lists when I had the choice. \n\nThe alternative is to rewrite the code to always return lists instead of generators. I don't think anyone is going to use vertex_generator() if one can get a list out of the much shorter vertices() method.",
     "created_at": "2009-10-20T21:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58869",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58758",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -414,15 +412,15 @@ The alternative is to rewrite the code to always return lists instead of generat
 
 ---
 
-archive/issue_comments_058870.json:
+archive/issue_comments_058759.json:
 ```json
 {
     "body": "I don't think it will be all that hard to keep most things compatible.  Part of the point of doctests is to check back-compatibility, so I think if possible all the old doctests of things like vertices() should be put back in.  \n\nIts true that \"vertices\" might be chosen more often, but I think its worth it.  The present behavior has been around for almost 2 years, so its not a minor issue.  By caching lists I don't think this is terribly inefficient.  Also, anyone who can't understand what vertex_generator does probably doesn't want a generator object.  \n\nI will keep thinking about this; my understanding is improving as I write the doctests.\n\n-Marshall",
     "created_at": "2009-10-20T23:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58870",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58759",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -438,15 +436,15 @@ I will keep thinking about this; my understanding is improving as I write the do
 
 ---
 
-archive/issue_comments_058871.json:
+archive/issue_comments_058760.json:
 ```json
 {
     "body": "I am planning on changing things so that as many former doctests pass as possible.  I think this is doable without changing a whole lot.\n\nI am a little concerned about some major speed regressions.  I think more things need to be cached, but there might be other issues as well.  As just one example, the current polyhedra.py does:\n\n```\ntime p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(10)])\n```\n\nin about 0.05 seconds on my laptop, while the patched version takes about 3.5 seconds - a factor of 70.  This seems unacceptable.  I will try to profile this a bit but any  insights are appreciated.\n\nIn case my tone seems overly negative, I would like to re-iterate that I am still impressed and excited by this rewrite and I think polytopes in sage will be in much better shape after this is completed.",
     "created_at": "2009-10-27T00:59:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58871",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58760",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -466,15 +464,15 @@ In case my tone seems overly negative, I would like to re-iterate that I am stil
 
 ---
 
-archive/issue_comments_058872.json:
+archive/issue_comments_058761.json:
 ```json
 {
     "body": "Previously we only eliminated redundant vertices, now we also eliminate redundant (in)equalities. I added some timing to the output:\n\n\n```\nsage: time p = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(14)], verbose=true)\nV-representation\nbegin\n 14 6 rational\n 1 0 0 0 0 0\n 1 1 1 1 1 1\n 1 2 4 8 16 32\n[...]\n 1 13 169 2197 28561 371293\nend\n\n# walltime used for complementary representation: 0s\n# walltime used for canonical H-representation: 6s\n# walltime used for canonical V-representation: 0s\n\nV-representation\nbegin\n 14 6 rational\n 1 0 0 0 0 0\n 1 1 1 1 1 1\n[...]\n 1 13 169 2197 28561 371293\nend\n\nH-representation\nbegin\n 110 6 rational\n 0 11880 -4578 659 -42 1\n[...]\n 0 17160 -6026 791 -46 1\nend\n\nVertex graph\nbegin\n  14    14\n 1 13 : 2 3 4 5 6 7 8 9 10 11 12 13 14 \n[...]\n 14 13 : 1 2 3 4 5 6 7 8 9 10 11 12 13 \nend\n# walltime used for vertex adjacencies: 0s\n\nFacet graph\nbegin\n  110    110\n 1 5 : 9 45 91 105 110 \n 2 5 : 8 9 38 92 103 \n[...]\n 110 5 : 1 46 91 105 109 \nend\n# walltime used for facet adjacencies: 10s\n\n\nCPU times: user 0.01 s, sys: 0.01 s, total: 0.02 s\nWall time: 16.37 s\n```\n\n\nThe polyhedral input is one with relatively few vertices (and without any redundancies), but lots of inequalities. This is why reducing the inequalities to a minimal set takes relatively long.\n\nAbout 2/3 of the total time is spent on computing facet adjacencies. This part of the computation could be split off, but since it is less than one order of magnitude it is probably not worth the added complexity.",
     "created_at": "2009-10-28T17:10:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58872",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58761",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -547,15 +545,15 @@ About 2/3 of the total time is spent on computing facet adjacencies. This part o
 
 ---
 
-archive/issue_comments_058873.json:
+archive/issue_comments_058762.json:
 ```json
 {
     "body": "Attachment [cddlib-094f.spkg](tarball://root/attachments/some-uuid/ticket7109/cddlib-094f.spkg) by @vbraun created at 2009-10-28 17:11:56\n\ncdd_both_reps now reports timing information for individual operations",
     "created_at": "2009-10-28T17:11:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58873",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58762",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -567,15 +565,15 @@ cdd_both_reps now reports timing information for individual operations
 
 ---
 
-archive/issue_comments_058874.json:
+archive/issue_comments_058763.json:
 ```json
 {
     "body": "I haven't had as much time as I'd like but I've been working a little on the doctests.  I am still concerned about speed - even when computing the same quantities, the new code seems to be 2 to 3 times slower for most operations.  \n\nFor backwards compatibility, I changed the keyword \"ineqs\" back to \"ieqs\", and made the vertices function return a list of lists as before.  The function returning a generator of vertices I renamed vertex_generator.  Just those two changes help a lot with compatibility.  I think having vertices() cache the list will speed up some other functions too, once I rewrite them to take advantage of that.  One remaining issue is that the new code uses \"equations\" instead of \"linearities\".  I plan on changing that too, for backwards compatibility, although I like the keyword \"equations\" more.  I used \"linearities\" originally since that is  what they are called in cddlib.  One solution might be to have both keywords as options, and start deprecating the use of \"linearities\".  (The current Sage policy is to preserve compatability with former code for at least 1 year and 1 major release.)  I don't think that is worth the effort with \"ieqs\" and \"ineqs\".\n\nI will be posting my code as I go to \nhttp://sage.math.washington.edu/home/mhampton/polyhedra_latest.py\nin case someone wants to take a look at what I'm doing.  \n\n-Marshall",
     "created_at": "2009-11-09T15:36:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58874",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58763",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -593,15 +591,15 @@ in case someone wants to take a look at what I'm doing.
 
 ---
 
-archive/issue_comments_058875.json:
+archive/issue_comments_058764.json:
 ```json
 {
     "body": "I can rewrite the interface to always prefer returning lists over generators when I get back home in 2 weeks or so. Caching lists will not result in any noticeable speedup, though.\n\nPart of the reason why the old code is faster is that it sometimes returns the wrong answer when used with noncompact and/or degenerate polyhedra. We could do less computations at the constructor and more during the later lifetime of the polyhedra object at the cost of added code complexity. In any case, such optimizations can be added later; The first objective should be to yield the correct result.\n\nI definitely advise against using \"linearities\" and I made a special effort to avoid it in the rewrite. First of all it is not a word, and second cddlib uses it for two different concepts. Old code that accessed linearieties() likely gave the wrong result, so there is no point in backwards compatibility. Use of \"linearities\" is confusing to novices as well as to those familiar with cddlib.",
     "created_at": "2009-11-09T16:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58875",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58764",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -615,15 +613,15 @@ I definitely advise against using "linearities" and I made a special effort to a
 
 ---
 
-archive/issue_comments_058876.json:
+archive/issue_comments_058765.json:
 ```json
 {
     "body": "I don't think that the speed difference is entirely due to the correct handling of equalities - even for bounded polyhedra described by either vertices or inequalities it is slower by the factor of 2 to 3.  Maybe the list caching won't help this much, but then I wonder what is really responsible.  \n\nI agree, the linearities keyword was very fragile and often didn't work correctly, so perhaps its not necessary to keep it at all.\n\nFor back-compatibility I will add back the render_wireframe, render_solid, and schlegel_projection methods of Polyhedron.  We could put in deprecation warnings advising people to switch to the new functions for projections and rendering.  I would also like to make the new rendering commands more flexible, so that one can choose to display any combination of vertices, edges, and/or faces.  I am happy to do all that.  \n\nLooks like there are some other older methods missing, like simplicial_complex, but I haven't looked at all of them in detail yet.",
     "created_at": "2009-11-10T22:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58876",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58765",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -639,15 +637,15 @@ Looks like there are some other older methods missing, like simplicial_complex, 
 
 ---
 
-archive/issue_comments_058877.json:
+archive/issue_comments_058766.json:
 ```json
 {
     "body": "I should also mention that writing doctests has uncovered a number of small bugs, so I highly recommend working off the polyhedra_latest.py file I mentioned above.",
     "created_at": "2009-11-10T22:33:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58877",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58766",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -657,15 +655,15 @@ I should also mention that writing doctests has uncovered a number of small bugs
 
 ---
 
-archive/issue_comments_058878.json:
+archive/issue_comments_058767.json:
 ```json
 {
     "body": "I just noticed while writing a doctest for is_compact() that some valid inputs result in errors.  For example:\n\nsage: p = Polyhedron(ieqs = [[0,1,0,0],[0,0,1,0]])\n\ncrashes the _init_from_cdd_output function.  I'm not sure how to fix that on first glance but I'll keep looking at it.",
     "created_at": "2009-11-10T22:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58878",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58767",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -679,15 +677,15 @@ crashes the _init_from_cdd_output function.  I'm not sure how to fix that on fir
 
 ---
 
-archive/issue_comments_058879.json:
+archive/issue_comments_058768.json:
 ```json
 {
     "body": "I have been looking a bit more at the speed issues.  In cdd_both_reps.c, I wonder if the computation of the FacetGraph and VertexGraph is the problem.  If I understand correctly, the cddlib function dd_Matrix2Adjacency does not re-use all the previously computed information, it just requires a non-redundant V- or H- representation.  If so, that is very inefficient, and its better to use the dd_CopyIncidence and dd_CopyAdjacency functions of cddlib and then construct what we need ourselves.",
     "created_at": "2009-11-13T03:59:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58879",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58768",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -697,15 +695,15 @@ I have been looking a bit more at the speed issues.  In cdd_both_reps.c, I wonde
 
 ---
 
-archive/issue_comments_058880.json:
+archive/issue_comments_058769.json:
 ```json
 {
     "body": "I am wondering about putting the Projection class into the main namespace of Sage.  It makes more sense to me to have it as a method of polyhedra.  I have rewritten things with this change.  But maybe I am missing why it would be good to have this class imported - ?",
     "created_at": "2009-11-17T22:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58880",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58769",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -715,15 +713,15 @@ I am wondering about putting the Projection class into the main namespace of Sag
 
 ---
 
-archive/issue_comments_058881.json:
+archive/issue_comments_058770.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-12-10T03:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58881",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58770",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -733,15 +731,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_058882.json:
+archive/issue_comments_058771.json:
 ```json
 {
     "body": "I am almost done getting this to 100% coverage.  I am understanding the classes a lot better now so the final doctests should be fairly easy for me to do.\n\nI am checking the building the reference manual and that made me aware of the fact that a few other modules in sage depend on functions that are removed by this patch.  One example is that sage.rings.polynomial.groebner_fan imported the function ieq_to_vert which is deleted by this rewrite.  It should be fairly easy to convert that, but to be safe I think it should be included again, deprecated, and removed in sage-5.0.  \n\nOtherwise with a few more back-compatibility tweaks this should be ready for review soon, by the end of December at the latest.  I think vbraun should look over my changes and then we will really need a 3rd person to do a final review.",
     "created_at": "2009-12-10T03:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58882",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58771",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -755,15 +753,15 @@ Otherwise with a few more back-compatibility tweaks this should be ready for rev
 
 ---
 
-archive/issue_comments_058883.json:
+archive/issue_comments_058772.json:
 ```json
 {
     "body": "OK, this now passes all tests with 100% coverage.  Current issues I plan on addressing:\n\n1) Add old functions that are missing:\n\n```\nfacial_adjacencies\nfacial_incidences\ngraph\nlinearities\nn_facets\nrender_solid\nrender_wireframe\nschlegel_projection\nsimplicial_complex\ntriangulated_facial_incidences\nvertex_adjacencies\nvertex_incidences}}}\n\n2) Fix Groeber_fan.py to reflect these changes.  \n3) Fix newton_polytope function doctests.\n4) Add polyhedra.py to reference manual.\n5) Change some functions for back-compatibility.\n6) Deprecate overlaps where the new name/functionality is clearly better.",
     "created_at": "2009-12-10T12:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58883",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58772",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -795,15 +793,15 @@ vertex_incidences}}}
 
 ---
 
-archive/issue_comments_058884.json:
+archive/issue_comments_058773.json:
 ```json
 {
     "body": "I may be missing something, but I think the new version of the cddlib package you attached is missing \n\n```\npatch -p0 < patches/cdd_both_reps-make.patch\n```\n\nin its spkg-install.  I posted a modified version at:\n[http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg](http://sage.math.washington.edu/home/mhampton/cddlib-094f-p2.spkg)",
     "created_at": "2009-12-26T04:25:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58884",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58773",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -820,15 +818,15 @@ in its spkg-install.  I posted a modified version at:
 
 ---
 
-archive/issue_comments_058885.json:
+archive/issue_comments_058774.json:
 ```json
 {
     "body": "OK, I think I am basically happy with everything now.  I am attaching a cumulative patch for everything (I think), apart from the modified cddlib package.",
     "created_at": "2009-12-29T23:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58885",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58774",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -838,15 +836,15 @@ OK, I think I am basically happy with everything now.  I am attaching a cumulati
 
 ---
 
-archive/issue_comments_058886.json:
+archive/issue_comments_058775.json:
 ```json
 {
     "body": "Attachment [trac_7109_mh1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_mh1.patch) by mhampton created at 2009-12-29 23:33:30\n\nBased against 4.2.1, cumulative of all changes except cddlib spkg",
     "created_at": "2009-12-29T23:33:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58886",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58775",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -858,15 +856,15 @@ Based against 4.2.1, cumulative of all changes except cddlib spkg
 
 ---
 
-archive/issue_comments_058887.json:
+archive/issue_comments_058776.json:
 ```json
 {
     "body": "I just tested my patch against sage-4.3 and it works fine, so this is pretty much ready for review.",
     "created_at": "2009-12-30T03:26:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58887",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58776",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -876,15 +874,15 @@ I just tested my patch against sage-4.3 and it works fine, so this is pretty muc
 
 ---
 
-archive/issue_comments_058888.json:
+archive/issue_comments_058777.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-12-30T03:26:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58888",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58777",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -894,15 +892,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_058889.json:
+archive/issue_comments_058778.json:
 ```json
 {
     "body": "Apply after polyhedron-v8.patch; requires new gfan from 7820 to pass all doctests",
     "created_at": "2010-01-21T17:48:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58889",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58778",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -912,15 +910,15 @@ Apply after polyhedron-v8.patch; requires new gfan from 7820 to pass all doctest
 
 ---
 
-archive/issue_comments_058890.json:
+archive/issue_comments_058779.json:
 ```json
 {
     "body": "Attachment [trac_7109_referee_patch.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee_patch.patch) by mhampton created at 2010-01-21 17:50:06\n\nI added a \"referee\" patch at William Stein's request, to make it easier to see what I did as opposed to Volker (vbraun).  This also updates groebner_fan.py to be in accord with the changes from ticket 7820, the upgrade to gfan-0.4.",
     "created_at": "2010-01-21T17:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58890",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58779",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -932,15 +930,15 @@ I added a "referee" patch at William Stein's request, to make it easier to see w
 
 ---
 
-archive/issue_comments_058891.json:
+archive/issue_comments_058780.json:
 ```json
 {
     "body": "Ignore previous referee patch, I didn't do it correctly",
     "created_at": "2010-01-22T01:02:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58891",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58780",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -950,15 +948,15 @@ Ignore previous referee patch, I didn't do it correctly
 
 ---
 
-archive/issue_comments_058892.json:
+archive/issue_comments_058781.json:
 ```json
 {
     "body": "Attachment [trac_7109_referee2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_referee2.patch) by @vbraun created at 2010-01-22 22:51:24\n\nI looked through the patch and it looks pretty good! Some minor changes:\n\n* Beautified documentation\n* Made clear that ieqs() is an alias for inequalities().\n* Fixed the crash _init_from_cdd_output() for the input\n  sage: p = Polyhedron(ieqs = [[0,1,0,0],[0,0,1,0]]) \n* Renamed the generator for incident V-representation objects from\n  Hrepresentation.facet() to Hrepresentation.incident(). Wrote the\n  analogous Vrepresentation.incident()\n* Added aliases Hrepresentation.adjacent() for\n  Hrepresentation.neighbors() and Vrepresentation.adjacent() for\n  Vrepresentation.neighbors()\n* Hrepresentation now accepts an optional argumment: \n  Hrepresentation(i) now returns Hrepresentation()[i]. same with Vrepresentation\n* Rewrote facial_adjacencies(), facial_incidences(),\n  vertex_adjacencies(), vertex_incidences() to make use of the\n  Hrepresentation/Vrepresentation objects.\n* Equation._repr_() fixed.\n\nAs far as I am concerned, this is now ready for inclusion in sage.",
     "created_at": "2010-01-22T22:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58892",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58781",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -989,15 +987,15 @@ As far as I am concerned, this is now ready for inclusion in sage.
 
 ---
 
-archive/issue_comments_058893.json:
+archive/issue_comments_058782.json:
 ```json
 {
     "body": "Based on trac_7109_mh1.patch together with the (minor) changes outlined in my comment",
     "created_at": "2010-01-22T22:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58893",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58782",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1007,15 +1005,15 @@ Based on trac_7109_mh1.patch together with the (minor) changes outlined in my co
 
 ---
 
-archive/issue_comments_058894.json:
+archive/issue_comments_058783.json:
 ```json
 {
     "body": "Attachment [trac_7109_vb1.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_vb1.patch) by @aghitza created at 2010-01-22 23:35:03\n\nIt would help if somebody could write down which spkgs and patches need to be applied and in which order.  Also, since at least one patch depends on #7820, that ticket would need to be reviewed before any of this can be merged into Sage.  (The somewhat ugly alternative would be to make this independent of #7820, merge it, and then put the necessary changes at #7820.)\n\nAnyway, I think we're getting very close with this ticket.",
     "created_at": "2010-01-22T23:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58894",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58783",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1029,15 +1027,15 @@ Anyway, I think we're getting very close with this ticket.
 
 ---
 
-archive/issue_comments_058895.json:
+archive/issue_comments_058784.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2010-01-22T23:35:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58895",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58784",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1047,15 +1045,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_058896.json:
+archive/issue_comments_058785.json:
 ```json
 {
     "body": "Here is how (I think) everything should be applied. First, the patches from within sage\n\n\n```\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh1.patch')\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_vb1.patch')\n```\n\n\nNow the cddlib-094f.spkg update: in the sage home directory, do\n\n\n```\n[vbraun@volker-two sage]$ ls\nCOPYING.txt  data  devel  examples  install.log  ipython  local  makefile  README.txt  sage  sage-README-osx.txt  spkg\n[vbraun@volker-two sage]$ wget http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/cddlib-094f.spkg\n[...]\n[vbraun@volker-two sage]$ ./sage -f cddlib-094f.spkg \n[...]\n[vbraun@volker-two sage]$ ./sage -br\n```\n\n\nI did this in Sage version 4.3. I don't see any problem with gfan/#7820, doctests pass. It seems to me that trac_7109_referee2.patch unnecessarily includes the patch from #7820. In any case, #7820 only fixes output that is used in doctests and should be completely independent of this rewrite.",
     "created_at": "2010-01-23T01:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58896",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58785",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1088,15 +1086,15 @@ I did this in Sage version 4.3. I don't see any problem with gfan/#7820, doctest
 
 ---
 
-archive/issue_comments_058897.json:
+archive/issue_comments_058786.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2010-01-23T01:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58897",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58786",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1106,15 +1104,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_058898.json:
+archive/issue_comments_058787.json:
 ```json
 {
     "body": "I think the point of referee patches was to separate the work done by different people and make it possible to see what was actually changed by Marshall, as opposed to the code which he already carefully reviewed and accepted modulo his changes.\n\nIt would be also nice if Marshall looked over the new patch submitted by Volker, since he can understand it much better than anyone else (except for Volker, of course ;-))",
     "created_at": "2010-01-23T02:01:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58898",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58787",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1126,15 +1124,15 @@ It would be also nice if Marshall looked over the new patch submitted by Volker,
 
 ---
 
-archive/issue_comments_058899.json:
+archive/issue_comments_058788.json:
 ```json
 {
     "body": "Yes to both points - the only reason for the referee patch was to clarify what I did, so its irrelevant to actually applying things, and I will look over Volker's patch.  Then hopefully either Alex or Andrey can review the final changes.\n\nI will try to check out Volker's changes tomorrow (January 23) and summarize things after that, although family obligations might cause some delay.",
     "created_at": "2010-01-23T03:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58899",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58788",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1146,15 +1144,15 @@ I will try to check out Volker's changes tomorrow (January 23) and summarize thi
 
 ---
 
-archive/issue_comments_058900.json:
+archive/issue_comments_058789.json:
 ```json
 {
     "body": "All of Volker's changes look good to me.  He added two aliases without doctests, so I am adding those in so that it stays at 100% coverage.  I will submit a cumulative patch in a few minutes.  \n\nI am not adding the changes to #7820 this time to keep the two tickets separate.  I can rebase against it if it is merged first (quite likely since I just gave it a positive review, so it should be in 4.3.2).",
     "created_at": "2010-01-23T15:42:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58900",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58789",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1166,15 +1164,15 @@ I am not adding the changes to #7820 this time to keep the two tickets separate.
 
 ---
 
-archive/issue_comments_058901.json:
+archive/issue_comments_058790.json:
 ```json
 {
     "body": "Attachment [trac_7109_mh2.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_mh2.patch) by mhampton created at 2010-01-23 21:59:27\n\nCumulative patch, includes vbraun's latest additions + 2 doctests",
     "created_at": "2010-01-23T21:59:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58901",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58790",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1186,15 +1184,15 @@ Cumulative patch, includes vbraun's latest additions + 2 doctests
 
 ---
 
-archive/issue_comments_058902.json:
+archive/issue_comments_058791.json:
 ```json
 {
     "body": "The new spkg has a few minor issues:\n\n\n```\n[ghitza@artin cddlib-094f-p2]$ hg status\nM spkg-install\n? .DS_Store\n? patches/cdd_both_reps-make.patch\n? patches/cdd_both_reps.c\n```\n\n\nI fixed all of this and put up the new spkg at\n\nhttp://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg\n\nNote that SPKG.txt is not in the correct format, but this will be another ticket.\n\n\nNow:  There are obviously not enough patches on this ticket :)  So I'm adding another one.  It is small and consists mostly of very minor typo fixes.  It also addresses one major issue: when I ran long doctests on `geometry/polyhedra.py`, it timed out on me.  Here is the reason:\n\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: time c5_20 = Polyhedron(vertices = [[i,i^2,i^3,i^4,i^5] for i in range(1,21)])\nCPU times: user 0.04 s, sys: 0.00 s, total: 0.04 s\nWall time: 244.51 s\nsage: time c5_20_fl = c5_20.face_lattice() \nCPU times: user 64.62 s, sys: 0.06 s, total: 64.68 s\nWall time: 64.78 s\nsage: time [len(x) for x in c5_20_fl.level_sets()]\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22 s\n[1, 20, 190, 580, 680, 272, 1]\nsage: time p600 = polytopes.six_hundred_cell()\nCPU times: user 0.14 s, sys: 0.02 s, total: 0.16 s\nWall time: 3175.85 s\nsage: time len(list(p600.bounded_edges()))\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02 s\n720\n```\n\n| Sage Version 4.3.1, Release Date: 2010-01-20                       |\n| Type notebook() for the GUI, and license() for information.        |\nThese tests are not just long, they are way too long to include.  So I have marked them as `#not tested`.  If you can think of some way to get them under 30 seconds each, they can go back in.  I don't want to just delete them since they are examples of usage.\n\nOne thing that I noticed but not fixed is that none of the geometry code is in the reference manual at the moment.  This should be another ticket.\n\nIn summary: I'm giving a positive review to everything so far; someone needs to look at my patch.  We'll sort out authors/reviewers/etc when it's all done.\n\nSummary for the release manager who will have to merge this: once everything has a positive review, get the new spkg at\n\nhttp://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg\n\nthen apply `trac_7109_mh2.patch` and `trac_7109_ag.patch`.",
     "created_at": "2010-01-24T01:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58902",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58791",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1260,15 +1258,15 @@ then apply `trac_7109_mh2.patch` and `trac_7109_ag.patch`.
 
 ---
 
-archive/issue_comments_058903.json:
+archive/issue_comments_058792.json:
 ```json
 {
     "body": "apply after trac_7109_mh2.patch",
     "created_at": "2010-01-24T01:08:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58903",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58792",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1278,15 +1276,15 @@ apply after trac_7109_mh2.patch
 
 ---
 
-archive/issue_comments_058904.json:
+archive/issue_comments_058793.json:
 ```json
 {
     "body": "Attachment [trac_7109_ag.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_ag.patch) by mhampton created at 2010-01-24 02:40:47\n\nThanks Alex!  Your patch looks good, thanks for that attention to detail.\n\nI screwed up my initial trac_7109_mh2.patch by not including the reference manual changes, then overwrote it with a patch that did have them.  I think you must have downloaded the first one in the small window of time it was up.  Sorry about that!  I deleted polytope.py from the reference manual since the optional polymake package is broken, and even if it did work the interface is totally inferior to what is in polyhedra.py - and of course I added polyhedra.py to the reference manual.  I have tested the reference manual build with those changes.",
     "created_at": "2010-01-24T02:40:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58904",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58793",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1300,15 +1298,15 @@ I screwed up my initial trac_7109_mh2.patch by not including the reference manua
 
 ---
 
-archive/issue_comments_058905.json:
+archive/issue_comments_058794.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-24T02:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58905",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58794",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1318,15 +1316,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058906.json:
+archive/issue_comments_058795.json:
 ```json
 {
     "body": "OK, I've tested Alex's patch and I'm happy, I think Alex is happy, Volker seems happy, so I am going to move this to positive review.  \n\nWhile Volker probably did the most work, and I probably did the most reviewing, I think it would be fair to say that all three of us should be listed as both authors and reviewers.  This is an unusually large amount of changes for one ticket.",
     "created_at": "2010-01-24T02:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58906",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58795",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1338,15 +1336,15 @@ While Volker probably did the most work, and I probably did the most reviewing, 
 
 ---
 
-archive/issue_comments_058907.json:
+archive/issue_comments_058796.json:
 ```json
 {
     "body": "For future reference, in case of an a new cddlib version ever coming out: patches/cdd_both_reps-make.patch only modifies the Makefile.am's. So this patch is only necessary if you plan on running the autotools machinery to regenerate the actual configure and makefiles. Building the spkg uses the bundled configure/makefiles. Hence applying the patch is, strictly speaking, not necessary in spkg-install. Having said that, I'm happy with cddlib-094f-p2.spkg.\n\nI also like AlexGhitza's patch. My i7 desktop is more than twice as fast, but the 600 cell 4d polyhedron still takes a lot of time. Its just inherently complicated, and I think we can live without doctesting it. The other long tests didn't cover anything that wasn't covered already.\n\nSo I give it a green light as well, and I'm happy to share the blame with you guys :-)",
     "created_at": "2010-01-24T03:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58907",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58796",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1360,15 +1358,15 @@ So I give it a green light as well, and I'm happy to share the blame with you gu
 
 ---
 
-archive/issue_comments_058908.json:
+archive/issue_comments_058797.json:
 ```json
 {
     "body": "Just a trivial nit-pick: The spkg\n\nhttp://sage.math.washington.edu/home/ghitza/cddlib-094f-p2.spkg\n\ndoesn't follow naming convention for Sage packages. There should be a dot preceding \"p2\", not a dash. Here's the same spkg, but following naming convention:\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/cddlib/cddlib-094f.p2.spkg\n\nDo you also want to remove the \"dist/\" directory from the cddlib spkg? Or do you want to open another ticket for this removal? See #5903 for some background information on why \"dist/\" can be deleted.",
     "created_at": "2010-01-25T01:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58908",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58797",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1386,15 +1384,15 @@ Do you also want to remove the "dist/" directory from the cddlib spkg? Or do you
 
 ---
 
-archive/issue_comments_058909.json:
+archive/issue_comments_058798.json:
 ```json
 {
     "body": "Feel free to delete dist/ from the cddlib spkg! There is no reason to keep it around.",
     "created_at": "2010-01-25T02:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58909",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58798",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1404,15 +1402,15 @@ Feel free to delete dist/ from the cddlib spkg! There is no reason to keep it ar
 
 ---
 
-archive/issue_comments_058910.json:
+archive/issue_comments_058799.json:
 ```json
 {
     "body": "I am doing this now, and taking care of SPKG.txt as well (which is now #8050, but might as well be done here).",
     "created_at": "2010-01-25T02:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58910",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58799",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1422,15 +1420,15 @@ I am doing this now, and taking care of SPKG.txt as well (which is now #8050, bu
 
 ---
 
-archive/issue_comments_058911.json:
+archive/issue_comments_058800.json:
 ```json
 {
     "body": "OK, the new spkg at\n\nhttp://sage.math.washington.edu/home/ghitza/cddlib-094f.p2.spkg\n\ngets rid of dist/ and cleans up SPKG.txt.\n\nMarshall and Volker, I have put the two of you down as spkg maintainers, but you should feel free to un-volunteer yourselves (on the other hand, cddlib releases very rarely so it's probably not a high volume job).",
     "created_at": "2010-01-25T02:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58911",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58800",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1446,15 +1444,15 @@ Marshall and Volker, I have put the two of you down as spkg maintainers, but you
 
 ---
 
-archive/issue_comments_058912.json:
+archive/issue_comments_058801.json:
 ```json
 {
     "body": "Unfortunately, this ticket conflicts with #7535. I merged #7535 at about 8 hours before the current ticket was positively reviewed. So after merging the patches at #7535, merging the patch [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch) results in a long hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-errors-raise.patch && hg qpush\nadding trac_7535-errors-raise.patch to series file\napplying trac_7535-errors-raise.patch\nnow at: trac_7535-errors-raise.patch\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7535/trac_7535-part2.patch && hg qpush\nadding trac_7535-part2.patch to series file\napplying trac_7535-part2.patch\nnow at: trac_7535-part2.patch\n[mvngu@sage sage-main]$ \n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7109/trac_7109_mh2.patch && hg qpush\nadding trac_7109_mh2.patch to series file\napplying trac_7109_mh2.patch\npatching file sage/geometry/polyhedra.py\nHunk #8 FAILED at 2795\n1 out of 14 hunks FAILED -- saving rejects to file sage/geometry/polyhedra.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_7109_mh2.patch\n```\n\nSo what happens here is that you could wait for Sage 4.3.2.alpha0 to be released and then rebase the patches on this ticket against Sage 4.3.2.alpha0. Another option is to rebase [trac_7109_mh2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_mh2.patch), and possibly [trac_7109_ag.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109_ag.patch) as well, on top of #7535.",
     "created_at": "2010-01-25T04:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58912",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58801",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1487,15 +1485,15 @@ So what happens here is that you could wait for Sage 4.3.2.alpha0 to be released
 
 ---
 
-archive/issue_comments_058913.json:
+archive/issue_comments_058802.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-01-25T04:30:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58913",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58802",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1505,15 +1503,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_058914.json:
+archive/issue_comments_058803.json:
 ```json
 {
     "body": "Minh, I'll try to rebase on top of #7535 right now.",
     "created_at": "2010-01-25T04:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58914",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58803",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1523,15 +1521,15 @@ Minh, I'll try to rebase on top of #7535 right now.
 
 ---
 
-archive/issue_comments_058915.json:
+archive/issue_comments_058804.json:
 ```json
 {
     "body": "Attachment [trac_7109-rebase.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109-rebase.patch) by @aghitza created at 2010-01-25 05:34:30\n\ncumulative patch, rebased on top of #7535; apply only this patch",
     "created_at": "2010-01-25T05:34:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58915",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58804",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1543,15 +1541,15 @@ cumulative patch, rebased on top of #7535; apply only this patch
 
 ---
 
-archive/issue_comments_058916.json:
+archive/issue_comments_058805.json:
 ```json
 {
     "body": "OK, it was a really tiny rebase, but so annoying nevertheless.\n\nI've put up a combined patch that has everything in it.\n\nNo changes were really needed, since the piece that #7535 had modified simply didn't exist any more.  So I'm tempted to set this to positive review again, but maybe Minh can check that it indeed applies for him.",
     "created_at": "2010-01-25T05:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58916",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58805",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1565,15 +1563,15 @@ No changes were really needed, since the piece that #7535 had modified simply di
 
 ---
 
-archive/issue_comments_058917.json:
+archive/issue_comments_058806.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-25T05:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58917",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58806",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -1583,15 +1581,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_058918.json:
+archive/issue_comments_058807.json:
 ```json
 {
     "body": "Alex's cumulative patch applies OK.",
     "created_at": "2010-01-25T12:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58918",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58807",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1601,15 +1599,15 @@ Alex's cumulative patch applies OK.
 
 ---
 
-archive/issue_comments_058919.json:
+archive/issue_comments_058808.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-25T12:50:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58919",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58808",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1619,15 +1617,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058920.json:
+archive/issue_comments_058809.json:
 ```json
 {
     "body": "Merged in the following order:\n\n1. [cddlib-094f.p2.spkg](http://sage.math.washington.edu/home/ghitza/cddlib-094f.p2.spkg) in the standard spkg repository\n2. [trac_7109-rebase.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/7109/trac_7109-rebase.patch)",
     "created_at": "2010-01-25T12:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58920",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58809",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1640,15 +1638,15 @@ Merged in the following order:
 
 ---
 
-archive/issue_comments_058921.json:
+archive/issue_comments_058810.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-25T12:51:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58921",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58810",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1658,15 +1656,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_058922.json:
+archive/issue_comments_058811.json:
 ```json
 {
     "body": "Thanks Minh, I'm very happy this is going into 4.3.2.alpha0.",
     "created_at": "2010-01-25T15:56:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58922",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58811",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1676,15 +1674,15 @@ Thanks Minh, I'm very happy this is going into 4.3.2.alpha0.
 
 ---
 
-archive/issue_comments_058923.json:
+archive/issue_comments_058812.json:
 ```json
 {
     "body": "See #8115 for a follow-up to this ticket.",
     "created_at": "2010-01-29T10:10:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58923",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58812",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1694,15 +1692,15 @@ See #8115 for a follow-up to this ticket.
 
 ---
 
-archive/issue_comments_058924.json:
+archive/issue_comments_058813.json:
 ```json
 {
     "body": "Cumulative patch, with 7535, fixes deletions in multi_polynomial.pyx",
     "created_at": "2010-01-30T14:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58924",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58813",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -1712,15 +1710,15 @@ Cumulative patch, with 7535, fixes deletions in multi_polynomial.pyx
 
 ---
 
-archive/issue_comments_058925.json:
+archive/issue_comments_058814.json:
 ```json
 {
     "body": "Attachment [trac_7109_and_7535.patch](tarball://root/attachments/some-uuid/ticket7109/trac_7109_and_7535.patch) by @kini created at 2012-02-10 15:33:39\n\nI don't understand what the `Polyhedron().radius_square()` function included in this ticket is trying to do. I've rewritten it at #12492, if anyone wants to take a look.",
     "created_at": "2012-02-10T15:33:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7109",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58925",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/7109#issuecomment-58814",
+    "user": "https://github.com/kini"
 }
 ```
 

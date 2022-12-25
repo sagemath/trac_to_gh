@@ -6,15 +6,14 @@ archive/issues_004848.json:
     "body": "Assignee: mabshoff\n\nCC:  wstein\n\nThe file sage/schemes/elliptic_curves/heegner.py is mainly some comments and a bunch of Magma code. I don't see anything useful in there, so let's get rid of it.\n\nLong doctests pass with the file and its copies removed from build.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4848\n\n",
     "created_at": "2008-12-21T16:19:30Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.3",
     "title": "[with patch, needs review] Remove deadwood: sage/schemes/elliptic_curves/heegner.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4848",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4848
 
 ---
 
-archive/issue_comments_036760.json:
+archive/issue_comments_036688.json:
 ```json
 {
     "body": "Attachment [trac_4848.patch](tarball://root/attachments/some-uuid/ticket4848/trac_4848.patch) by mabshoff created at 2008-12-21 16:23:22\n\nThe file is also from 2005 and hasn't been touched for ages:\n\n```\nchangeset:   1097:e9c1649fcc14\nuser:        wstein@gmail.com\ndate:        Fri Sep 01 02:31:25 2006 +0000\nsummary:     [project @ wstein@ucsd.edu --> wstein@gmail.com (hundreds of changes)]\n\nchangeset:   0:039f6310c6fe\nuser:        tornaria@math.utexas.edu\ndate:        Sat Feb 11 01:13:08 2006 +0000\nsummary:     [project @ original sage-0.10.12]\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T16:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36760",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36688",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -74,15 +73,15 @@ Michael
 
 ---
 
-archive/issue_comments_036761.json:
+archive/issue_comments_036689.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-12-21T16:23:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36761",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36689",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -92,15 +91,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_036762.json:
+archive/issue_comments_036690.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2008-12-21T16:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36762",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36690",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -110,15 +109,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_036763.json:
+archive/issue_comments_036691.json:
 ```json
 {
     "body": "This is all magma code.  If it does something useful then it should be moved upstream or perhaps put in an optional spkg.  Since its William Stein's code perhaps he could bless its removal...",
     "created_at": "2008-12-21T16:35:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36763",
-    "user": "mhampton"
+    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36691",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mhampton"
 }
 ```
 
@@ -128,15 +127,15 @@ This is all magma code.  If it does something useful then it should be moved ups
 
 ---
 
-archive/issue_comments_036764.json:
+archive/issue_comments_036692.json:
 ```json
 {
     "body": "What should happen is that there should be a new *enhancement* ticket that is called \"add functionality for computing Heegner points to Sage\".   Then the file heegner.py should be attached to that ticket, since to do that ticket, one might want to port some of what's in there to Sage.   That said, it's not so simple, since better algorithms for computing Heegner points were found after that code was written. \n\nSo I am OK with this ticket if and only if the above enhancement ticket is created.",
     "created_at": "2008-12-21T17:52:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36764",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36692",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -148,15 +147,15 @@ So I am OK with this ticket if and only if the above enhancement ticket is creat
 
 ---
 
-archive/issue_comments_036765.json:
+archive/issue_comments_036693.json:
 ```json
 {
     "body": "Replying to [comment:3 was]:\n\n> So I am OK with this ticket if and only if the above enhancement ticket is created. \n\nSee #4849.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-21T22:11:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36765",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36693",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -174,15 +173,15 @@ Michael
 
 ---
 
-archive/issue_comments_036766.json:
+archive/issue_comments_036694.json:
 ```json
 {
     "body": "Merged in Sage 3.2.3.alpha0",
     "created_at": "2008-12-21T22:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36766",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36694",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -192,15 +191,15 @@ Merged in Sage 3.2.3.alpha0
 
 ---
 
-archive/issue_comments_036767.json:
+archive/issue_comments_036695.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-21T22:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36767",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4848#issuecomment-36695",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003954.json:
     "body": "Assignee: @williamstein\n\nCC:  alexghitza\n\n\n```\nHi,\n\nIs this a bug or am I doing something stupid? I get different\nprecisions the first and second time I run the same command.\n\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.6, Release Date: 2008-07-30                       |\n| Type notebook() for the GUI, and license() for information.        |\nsage: E = EllipticCurve('37a')\nsage: E.period_lattice().basis(prec=30)\n\n(2.993458646231959629832009979452508177797583791370132985340523378563250356987,\n\n2.451389381986790060854224831866525225349617289144796614656471406129152899999*I)\nsage: E.period_lattice().basis(prec=30)\n\n(2.9934586462319596298320099794525081777975837913701329853405233785632503569866829041203940673970514734358405271049472881941443872373720252543753766710932613753043332505965246252164473069072694510749057806365610445781725817135182427934263132488980086942438020870431669315,\n\n2.4513893819867900608542248318665252253496172891447966146564714061291528999992568928911321280291810887126842188696618479754751998666167558016789381647830306324546902881738259304962523119593946698932473794558796569481958707269691493740581897037588157844669302474334546641*I)\n\n\nBest regards,\n\nH\u00e5kan\n```\n\n\nThis is definitely a bug.  The output precision should be as given by the prec option.  The bug is caused by a mistake in the caching code, surely.   This will likely be easy to fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3954\n\n",
     "created_at": "2008-08-26T09:03:39Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "bug in elliptic curve period_lattice",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3954",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -61,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3954
 
 ---
 
-archive/issue_comments_028381.json:
+archive/issue_comments_028323.json:
 ```json
 {
     "body": "Attachment [3954-pari_curve_caching.patch](tarball://root/attachments/some-uuid/ticket3954/3954-pari_curve_caching.patch) by @aghitza created at 2008-08-29 10:03:40\n\nAs William pointed out, this was a caching problem.  The bug was actually in E.pari_curve, where the (somewhat convoluted) code logic did not agree with the specification from the docstring.  I've rewritten that code in a way that makes sense (to me) and that works.  I've added a doctest to pari_curve(), but also to period_lattice().basis(), illustrating both the issue reported here and the actual bug.\n\nI noticed that the next function, E.pari_mincurve, has the exact same problem, and I fixed it in the exact same way.  Finally, pari_mincurve and pari_curve are clearly parallel functions that should have the same behavior for consistency, but they didn't.  So I changed pari_mincurve to behave just like pari_curve.",
     "created_at": "2008-08-29T10:03:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28381",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28323",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -83,15 +82,15 @@ I noticed that the next function, E.pari_mincurve, has the exact same problem, a
 
 ---
 
-archive/issue_comments_028382.json:
+archive/issue_comments_028324.json:
 ```json
 {
     "body": "I applied this to 3.1.2.alpha4 + both patches for 3377 + both patches for 1115 (which have already been merged into 3.1.2.rc0), and miraculously they worked fine (just a little fuzz).  That was lucky since all these patches involve pari precision, pari curves, and period lattice precision.\n\nAll doctests in sage.schemes.elliptic_curves pass, and the patch looks good.  I say it should pass.",
     "created_at": "2008-09-03T19:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28382",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28324",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -103,15 +102,15 @@ All doctests in sage.schemes.elliptic_curves pass, and the patch looks good.  I 
 
 ---
 
-archive/issue_comments_028383.json:
+archive/issue_comments_028325.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.rc0",
     "created_at": "2008-09-04T01:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28383",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +120,15 @@ Merged in Sage 3.1.2.rc0
 
 ---
 
-archive/issue_comments_028384.json:
+archive/issue_comments_028326.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-04T01:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28384",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28326",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +138,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028385.json:
+archive/issue_comments_028327.json:
 ```json
 {
     "body": "There's still something strange going on which I'm going to have to wait until 3.1.2.rc0 since I've messed up my 3.1.2.alpha4 (ok, so I could rebuild it and apply all those patches...):\n\n```\nsage: E = EllipticCurve('37a')                     \nsage: E.period_lattice().basis(prec=30)[0].parent()\nReal Field with 896 bits of precision\nsage: E.period_lattice().basis(prec=100)[0].parent()\nReal Field with 3136 bits of precision\n```\n\nI discovered this after seeing that #1903 was a duplicate.\n\nIf mabshoff could run the above code with the latest rc0 build then we'd know if there was something needing to fix or not.",
     "created_at": "2008-09-04T16:53:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28385",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28327",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -169,15 +168,15 @@ If mabshoff could run the above code with the latest rc0 build then we'd know if
 
 ---
 
-archive/issue_comments_028386.json:
+archive/issue_comments_028328.json:
 ```json
 {
     "body": "This weird behavior was there before the patch as well.  Now, after the patch, it is weird but consistent :)\n\nThere's definitely a problem in communicating with pari regarding precision.  Part of it is that pari rounds up to the next word, so it often gives you a bit more precision than you asked for.  But there's more going on than just that, probably somewhere in the interface code.\n\nStrictly speaking, this ticket was about consistency of the period_lattice functions.  The issue that John found seems to be orthogonal to this, so I'm opening a new ticket for it: #4064.",
     "created_at": "2008-09-04T23:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28386",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28328",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -191,15 +190,15 @@ Strictly speaking, this ticket was about consistency of the period_lattice funct
 
 ---
 
-archive/issue_comments_028387.json:
+archive/issue_comments_028329.json:
 ```json
 {
     "body": "Replying to [comment:6 AlexGhitza]:\n> This weird behavior was there before the patch as well.  Now, after the patch, it is weird but consistent :)\n> \n> There's definitely a problem in communicating with pari regarding precision.  Part of it is that pari rounds up to the next word, so it often gives you a bit more precision than you asked for.  But there's more going on than just that, probably somewhere in the interface code.\n> \n> Strictly speaking, this ticket was about consistency of the period_lattice functions.  The issue that John found seems to be orthogonal to this, so I'm opening a new ticket for it: #4064.\n\nThanks, Alex.  I'm looking into it.",
     "created_at": "2008-09-05T08:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28387",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3954#issuecomment-28329",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 

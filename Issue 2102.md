@@ -6,7 +6,7 @@ archive/issues_002102.json:
     "body": "Assignee: mabshoff\n\nCC:  @jdemeyer\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2102\n\n",
     "created_at": "2008-02-08T07:14:11Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002102.json:
     "title": "add pull/incoming/outgoing wrappers to HG objects (like hg_sage)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2102",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: mabshoff
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2102
 
 ---
 
-archive/issue_comments_013695.json:
+archive/issue_comments_013664.json:
 ```json
 {
     "body": "Also add the queue functions, like qinit, qnew, qrefresh, etc.",
     "created_at": "2008-02-08T13:51:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2102",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13695",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13664",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -49,15 +49,15 @@ Also add the queue functions, like qinit, qnew, qrefresh, etc.
 
 ---
 
-archive/issue_comments_013696.json:
+archive/issue_comments_013665.json:
 ```json
 {
     "body": "The `push` command is implemented in a patch attached to a different ticket, http://trac.sagemath.org/sage_trac/ticket/1371.  William and I would like that ticket applied.\n\nThe other items are valid.",
     "created_at": "2008-02-09T03:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2102",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13696",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13665",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -69,15 +69,15 @@ The other items are valid.
 
 ---
 
-archive/issue_comments_013697.json:
+archive/issue_comments_013666.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2008-02-09T03:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2102",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13697",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13666",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -87,15 +87,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_013698.json:
+archive/issue_comments_013667.json:
 ```json
 {
     "body": "This ticket can be closed not since all of these things are already implemented as of Sage 4.8.  See #11142 and changsets cbf23a4344e8dbd2321502b98974860c2947ef42 and 16ce7802b5aa2bcd43548973abb04614d62c2396 for these.",
     "created_at": "2012-03-28T23:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2102",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13698",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13667",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -105,15 +105,15 @@ This ticket can be closed not since all of these things are already implemented 
 
 ---
 
-archive/issue_comments_013699.json:
+archive/issue_comments_013668.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-03-29T06:24:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2102",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13699",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13668",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -123,15 +123,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_013700.json:
+archive/issue_comments_013669.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-03-29T06:24:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2102",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13700",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13669",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -141,15 +141,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_013701.json:
+archive/issue_comments_013670.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2012-04-04T13:26:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2102",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13701",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2102#issuecomment-13670",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004654.json:
     "body": "Assignee: somebody\n\nKeywords: doctest\n\nEspecially with the improved ability to upgrade sage versions in place (from #4638), when running `sage -testall` it seems helpful to record the sage version in the file SAGE_ROOT/tmp/test.log.  The attached patch does this.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4654\n\n",
     "created_at": "2008-11-29T16:42:31Z",
     "labels": [
-        "doctest coverage",
-        "minor",
-        "enhancement"
+        "component: doctest coverage",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] for 'sage -testall': put sage version in test log",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4654",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4654
 
 ---
 
-archive/issue_comments_035051.json:
+archive/issue_comments_034983.json:
 ```json
 {
     "body": "Attachment [sagetest.patch](tarball://root/attachments/some-uuid/ticket4654/sagetest.patch) by mabshoff created at 2008-11-29 16:51:58\n\nYep, I agree that this is an excellent thing to do.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T16:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-35051",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-34983",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -57,15 +56,15 @@ Michael
 
 ---
 
-archive/issue_comments_035052.json:
+archive/issue_comments_034984.json:
 ```json
 {
     "body": "Arrg, typo.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T16:57:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-35052",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-34984",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +78,15 @@ Michael
 
 ---
 
-archive/issue_comments_035053.json:
+archive/issue_comments_034985.json:
 ```json
 {
     "body": "Sigh, I need to be awake when working :)\n\nCheers,\n\nMichael",
     "created_at": "2008-11-29T17:16:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-35053",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-34985",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -101,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_035054.json:
+archive/issue_comments_034986.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-29T21:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-35054",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-34986",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +118,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_035055.json:
+archive/issue_comments_034987.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1.rc1",
     "created_at": "2008-11-29T21:53:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4654",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-35055",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4654#issuecomment-34987",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

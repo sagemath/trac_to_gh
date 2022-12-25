@@ -6,7 +6,7 @@ archive/issues_005066.json:
     "body": "Assignee: @williamstein\n\nKeywords: relative number fields files\n\nThis has been some time coming, but let's separate relative number fields from generic/absolute number fields now, while I'm looking at them.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5066\n\n",
     "created_at": "2009-01-23T08:59:32Z",
     "labels": [
-        "number theory",
+        "component: number theory",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005066.json:
     "title": "[with patch, needs review] break out relative number fields into separate file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5066",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5066
 
 ---
 
-archive/issue_comments_038592.json:
+archive/issue_comments_038519.json:
 ```json
 {
     "body": "Attachment [trac_5066-relnf-file.patch](tarball://root/attachments/some-uuid/ticket5066/trac_5066-relnf-file.patch) by @ncalexan created at 2009-01-23 09:21:23\n\nFails a doctest, to be addressed by patches to #1357 (which will depend on this)",
     "created_at": "2009-01-23T09:21:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38592",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38519",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -51,15 +51,15 @@ Fails a doctest, to be addressed by patches to #1357 (which will depend on this)
 
 ---
 
-archive/issue_comments_038593.json:
+archive/issue_comments_038520.json:
 ```json
 {
     "body": "Looks good, assuming that the other patch you mentioned (which isn't #1357) gets in at the same time.  The only change that needs to be made is in sage.rings.polynomials.polynomial_quotient_ring_element, changing number_field to number_field_rel a couple places.",
     "created_at": "2009-01-24T09:47:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38593",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38520",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -69,15 +69,15 @@ Looks good, assuming that the other patch you mentioned (which isn't #1357) gets
 
 ---
 
-archive/issue_comments_038594.json:
+archive/issue_comments_038521.json:
 ```json
 {
     "body": "Patch should be at #1367, sorry.  With #5066 and #1367, all doctests pass on sage.math.",
     "created_at": "2009-01-24T10:00:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38594",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38521",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -87,15 +87,15 @@ Patch should be at #1367, sorry.  With #5066 and #1367, all doctests pass on sag
 
 ---
 
-archive/issue_comments_038595.json:
+archive/issue_comments_038522.json:
 ```json
 {
     "body": "Merged in Sage 3.3.alpha3.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-29T05:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38595",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38522",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +109,15 @@ Michael
 
 ---
 
-archive/issue_comments_038596.json:
+archive/issue_comments_038523.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-29T05:38:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5066",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38596",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5066#issuecomment-38523",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

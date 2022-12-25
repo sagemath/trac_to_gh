@@ -6,15 +6,14 @@ archive/issues_005783.json:
     "body": "Assignee: cwitty\n\nCC:  sage-combinat\n\nThe summary says it all.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5783\n\n",
     "created_at": "2009-04-14T06:55:25Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review]  Lazy attributes: fix infinite recursion bug + support for cpdefs methods",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5783",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: cwitty
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5783
 
 ---
 
-archive/issue_comments_045268.json:
+archive/issue_comments_045182.json:
 ```json
 {
     "body": "Changing assignee from cwitty to @nthiery.",
     "created_at": "2009-05-18T03:07:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45268",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45182",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing assignee from cwitty to @nthiery.
 
 ---
 
-archive/issue_comments_045269.json:
+archive/issue_comments_045183.json:
 ```json
 {
     "body": "Attachment [lazy_attributes-fixes-5783-final.patch](tarball://root/attachments/some-uuid/ticket5783/lazy_attributes-fixes-5783-final.patch) by @nthiery created at 2009-05-19 06:19:22",
     "created_at": "2009-05-19T06:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45269",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45183",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -67,15 +66,15 @@ Attachment [lazy_attributes-fixes-5783-final.patch](tarball://root/attachments/s
 
 ---
 
-archive/issue_comments_045270.json:
+archive/issue_comments_045184.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-19T06:21:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45270",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45184",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_045271.json:
+archive/issue_comments_045185.json:
 ```json
 {
     "body": "Updated patch:\n- fix ReST doc (indentation, ::, ...)\n- fix introspection\n- adds a hook for this in sage.misc.sageinspect.sage_getsourcelines",
     "created_at": "2009-05-19T06:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45271",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45185",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -106,15 +105,15 @@ Updated patch:
 
 ---
 
-archive/issue_comments_045272.json:
+archive/issue_comments_045186.json:
 ```json
 {
     "body": "Adds lots of good documentation, fixes some problems, though additional feature requests remain.  Positive review.",
     "created_at": "2009-05-19T08:00:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45272",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45186",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -124,15 +123,15 @@ Adds lots of good documentation, fixes some problems, though additional feature 
 
 ---
 
-archive/issue_comments_045273.json:
+archive/issue_comments_045187.json:
 ```json
 {
     "body": "David,\n\nplease remember to change the summary if you do reviews of tickets.\n\nMichael",
     "created_at": "2009-05-19T15:06:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45273",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45187",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -146,15 +145,15 @@ Michael
 
 ---
 
-archive/issue_comments_045274.json:
+archive/issue_comments_045188.json:
 ```json
 {
     "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-19T19:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45274",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -168,15 +167,15 @@ Michael
 
 ---
 
-archive/issue_comments_045275.json:
+archive/issue_comments_045189.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-19T19:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5783",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45275",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5783#issuecomment-45189",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_008715.json:
     "body": "Assignee: GeorgSWeber\n\nOn Linux, fortran-20100118.spkg's spkg-install ignores SAGE_FORTRAN and instead overrides it with the first \"gfortran\" it finds in $PATH.  In my environment this fortran compiler is (more or less) broken, so I have to it explicitly and I then want it to be used.  The simple attached fix executes the relevant code path only if SAGE_FORTRAN is not set yet.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8715\n\n",
     "created_at": "2010-04-19T13:14:38Z",
     "labels": [
-        "build",
+        "component: build",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008715.json:
     "title": "fortran-20100118 ignores SAGE_FORTRAN on Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8715",
-    "user": "logix"
+    "user": "https://trac.sagemath.org/admin/accounts/users/logix"
 }
 ```
 Assignee: GeorgSWeber
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8715
 
 ---
 
-archive/issue_comments_079542.json:
+archive/issue_comments_079412.json:
 ```json
 {
     "body": "Attachment [fortran-20100118_diff](tarball://root/attachments/some-uuid/ticket8715/fortran-20100118_diff) by logix created at 2010-04-19 13:15:50",
     "created_at": "2010-04-19T13:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79542",
-    "user": "logix"
+    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79412",
+    "user": "https://trac.sagemath.org/admin/accounts/users/logix"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [fortran-20100118_diff](tarball://root/attachments/some-uuid/ticket87
 
 ---
 
-archive/issue_comments_079543.json:
+archive/issue_comments_079413.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-22T14:20:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79543",
-    "user": "logix"
+    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79413",
+    "user": "https://trac.sagemath.org/admin/accounts/users/logix"
 }
 ```
 
@@ -65,15 +65,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_079544.json:
+archive/issue_comments_079414.json:
 ```json
 {
     "body": "Well, the patch you uploaded is not a Mercurial \"ChangeSet\"...\n\nhttp://www.sagemath.org/doc/developer/producing_patches.html",
     "created_at": "2010-04-22T19:33:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79544",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79414",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -85,15 +85,15 @@ http://www.sagemath.org/doc/developer/producing_patches.html
 
 ---
 
-archive/issue_comments_079545.json:
+archive/issue_comments_079415.json:
 ```json
 {
     "body": "and/or http://www.sagemath.org/doc/developer/patching_spkgs.html",
     "created_at": "2010-04-22T19:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79545",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79415",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -103,15 +103,15 @@ and/or http://www.sagemath.org/doc/developer/patching_spkgs.html
 
 ---
 
-archive/issue_comments_079546.json:
+archive/issue_comments_079416.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-28T22:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79546",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79416",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +121,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_079547.json:
+archive/issue_comments_079417.json:
 ```json
 {
     "body": "Good idea.  Looks good.  Thanks! Positive review, and merged into 4.4.1.alpha1.",
     "created_at": "2010-04-28T22:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79547",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/8715#issuecomment-79417",
+    "user": "https://github.com/williamstein"
 }
 ```
 

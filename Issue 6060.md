@@ -6,15 +6,14 @@ archive/issues_006060.json:
     "body": "Assignee: somebody\n\n\n```\nsage: divmod(10r,10)\n---------------------------------------------------------------------------\nAttributeError                            Traceback (most recent call last)\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/<ipython console> in <module>()\n\n/home/fredrik/sage-3.4.2-linux-Ubuntu_8.10-sse2-i686-Linux/local/lib/python2.5/site-packages/sage/structure/element.so in sage.structure.element.EuclideanDomainElement.__divmod__ (sage/structure/element.c:13777)()\n\nAttributeError: 'int' object has no attribute 'quo_rem'\n```\n\n\nAttaching a patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6060\n\n",
     "created_at": "2009-05-18T03:18:52Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "divmod fails when one argument is Integer and the other is a Python int",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6060",
-    "user": "@fredrik-johansson"
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 Assignee: somebody
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6060
 
 ---
 
-archive/issue_comments_048246.json:
+archive/issue_comments_048155.json:
 ```json
 {
     "body": "Attachment [divmod.patch](tarball://root/attachments/some-uuid/ticket6060/divmod.patch) by @fredrik-johansson created at 2009-05-18 03:19:22",
     "created_at": "2009-05-18T03:19:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6060",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48246",
-    "user": "@fredrik-johansson"
+    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48155",
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 
@@ -61,15 +60,15 @@ Attachment [divmod.patch](tarball://root/attachments/some-uuid/ticket6060/divmod
 
 ---
 
-archive/issue_comments_048247.json:
+archive/issue_comments_048156.json:
 ```json
 {
     "body": "All tests pass.  Looks good to me.",
     "created_at": "2009-05-19T04:38:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6060",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48247",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48156",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -79,15 +78,15 @@ All tests pass.  Looks good to me.
 
 ---
 
-archive/issue_comments_048248.json:
+archive/issue_comments_048157.json:
 ```json
 {
     "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-19T18:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6060",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48248",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48157",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -101,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_048249.json:
+archive/issue_comments_048158.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-19T18:24:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6060",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48249",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6060#issuecomment-48158",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

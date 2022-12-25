@@ -6,15 +6,14 @@ archive/issues_000522.json:
     "body": "Assignee: @craigcitro\n\nKeywords: singular\n\nOn my G4, singular won't start at all (and interestingly, sage -singular silently fails). The problem is a simple one: in the build scripts, $SAGE_ROOT/local/bin/Singular gets created with a command that uses \"tail -1\" ... this is now considered \"obselete\" usage on a mac, where tail -1 fails and tells you to use \"tail -n 1\" instead. \n\nA bundle with the fix is attached, and also at the address below:\n\nhttp://sage.math.washington.edu/home/citro/patches/tail_fix.hg\n\nNote: if tail -1 gets used in any other build scripts, we need to fix that.\n\nIssue created by migration from https://trac.sagemath.org/ticket/522\n\n",
     "created_at": "2007-08-29T22:33:08Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "singular build issues on a mac",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/522",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/522
 
 ---
 
-archive/issue_comments_002653.json:
+archive/issue_comments_002641.json:
 ```json
 {
     "body": "Actually, at William's request, I've uploaded the whole singular spkg. It's here:\n\nhttp://sage.math.washington.edu/home/citro/patches/singular-3-0-3-20070829.p1.spkg\n\nI think that should be good to go. Let me know if anyone runs into trouble.",
     "created_at": "2007-08-29T22:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/522#issuecomment-2653",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/522#issuecomment-2641",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -59,15 +58,15 @@ I think that should be good to go. Let me know if anyone runs into trouble.
 
 ---
 
-archive/issue_comments_002654.json:
+archive/issue_comments_002642.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-29T22:43:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/522#issuecomment-2654",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/522#issuecomment-2642",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -77,15 +76,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002655.json:
+archive/issue_comments_002643.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-29T23:55:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/522",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/522#issuecomment-2655",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/522#issuecomment-2643",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002222.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage -t  const.tex                                          **********************************************************************\nFile \"const.py\", line 4626:\n    : bessel_K(3,2,100)\nExpected:\n    0.64738539094863415315923557097\nGot:\n    0.647385390948634\n```\n\n\nNote that the later 100 input is totally ignored.  I think this is due\nto some use of scipy or something for some special functions by David\nJoyner recently??\n\nIssue created by migration from https://trac.sagemath.org/ticket/2222\n\n",
     "created_at": "2008-02-20T06:46:29Z",
     "labels": [
-        "calculus",
+        "component: calculus",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002222.json:
     "title": "sage-2.10.2.alpha1 -- bessel_K is now broken -- higher precision doesn't work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2222",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -43,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2222
 
 ---
 
-archive/issue_comments_014723.json:
+archive/issue_comments_014692.json:
 ```json
 {
     "body": "Yes. The correct syntax is bessel_K(3,2,\"pari\",100):\nsage: bessel_K(3,2,\"pari\",100)\n0.64738539094863415315923557097\nI ran \"sage -t\" on the file - I guess I should have run \"sage -testall\" also,\nto find things like this.",
     "created_at": "2008-02-20T11:23:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14723",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14692",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -65,15 +65,15 @@ to find things like this.
 
 ---
 
-archive/issue_comments_014724.json:
+archive/issue_comments_014693.json:
 ```json
 {
     "body": "You should just make pari the default algorithm, which would fix the issue in all other files.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T11:30:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14724",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14693",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +87,15 @@ Michael
 
 ---
 
-archive/issue_comments_014725.json:
+archive/issue_comments_014694.json:
 ```json
 {
     "body": "As I see it. pari is the default:\ndef bessel_K(nu,z,alg=\"pari\",prec=53):\nI must be missing something obvious or else const.tex needs to change.\n\nsage: bessel_K(3,2,\"pari\",100)\n0.64738539094863415315923557097\nsage: bessel_K(3,2,prec=100)\n0.64738539094863415315923557097\nsage: bessel_K(3,2,100)\n0.647385390948634\n\nI'm happy to be corrected but it seems to me that the patch is okay,\nit's just that it's broken const.tex.",
     "created_at": "2008-02-20T19:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14725",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14694",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -117,15 +117,15 @@ it's just that it's broken const.tex.
 
 ---
 
-archive/issue_comments_014726.json:
+archive/issue_comments_014695.json:
 ```json
 {
     "body": "The patch at #2246 fixes the issue -> close this ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-21T17:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14726",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14695",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +139,15 @@ Michael
 
 ---
 
-archive/issue_comments_014727.json:
+archive/issue_comments_014696.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-21T17:05:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2222",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14727",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2222#issuecomment-14696",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

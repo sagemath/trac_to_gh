@@ -6,15 +6,14 @@ archive/issues_009452.json:
     "body": "Assignee: tbd\n\nCC:  @williamstein\n\n> We wrote the strip_automount_prefix() function for\n> sage-test to get around problems with automounted\n> file system having wierd mount points.\n> Unfotunately the strip_automount_prefix() does not\n> work at all!\n>\n> Here is a patch:\n>\n> % diff sage-test.old sage-test.new\n> 20c20\n> <     return strip_automount_prefix(os.path.abspath(x))\n> ---\n>>     return os.path.abspath(x)\n> 57c57\n> <         f = g[len(SAGE_ROOT)+1:]\n> ---\n>>         f = g[g.find(SAGE_ROOT)+len(SAGE_ROOT)+1:]\n> %\n>\n> You can remove - or deprecate - the function strip_automount_prefix().\n\nIssue created by migration from https://trac.sagemath.org/ticket/9452\n\n",
     "created_at": "2010-07-08T08:00:49Z",
     "labels": [
-        "distribution",
-        "major",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7",
     "title": "strip_automount_prefix() is useless",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9452",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: tbd
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9452
 
 ---
 
-archive/issue_comments_090577.json:
+archive/issue_comments_090428.json:
 ```json
 {
     "body": "Attachment [trac-9452-strip_automount_prefix.patch](tarball://root/attachments/some-uuid/ticket9452/trac-9452-strip_automount_prefix.patch) by @jasongrout created at 2011-02-23 23:28:03",
     "created_at": "2011-02-23T23:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90577",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90428",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -68,15 +67,15 @@ Attachment [trac-9452-strip_automount_prefix.patch](tarball://root/attachments/s
 
 ---
 
-archive/issue_comments_090578.json:
+archive/issue_comments_090429.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-02-23T23:28:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90578",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90429",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -86,15 +85,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_090579.json:
+archive/issue_comments_090430.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-02-24T00:10:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90579",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90430",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -104,15 +103,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_090580.json:
+archive/issue_comments_090431.json:
 ```json
 {
     "body": "What exactly is the problem that this patch is supposed to fix?  The description is very unclear...",
     "created_at": "2011-02-24T10:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90580",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90431",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -122,15 +121,15 @@ What exactly is the problem that this patch is supposed to fix?  The description
 
 ---
 
-archive/issue_comments_090581.json:
+archive/issue_comments_090432.json:
 ```json
 {
     "body": "This patch is undoing a mysterious \"fix\" from a long time ago, which was required on some obscure filesystem somewhere.",
     "created_at": "2011-02-24T17:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90581",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90432",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -140,15 +139,15 @@ This patch is undoing a mysterious "fix" from a long time ago, which was require
 
 ---
 
-archive/issue_comments_090582.json:
+archive/issue_comments_090433.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-03-08T21:45:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9452",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90582",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9452#issuecomment-90433",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

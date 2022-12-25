@@ -6,15 +6,13 @@ archive/issues_009507.json:
     "body": "Assignee: GeorgSWeber\n\nSee trac #9368. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9507\n\n",
     "created_at": "2010-07-15T13:14:03Z",
     "labels": [
-        "build",
-        "major",
-        "enhancement"
+        "component: build"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.1",
     "title": "if spkg-install is a Python script, first check that SAGE_LOCAL/bin/python exists.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9507",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: GeorgSWeber
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9507
 
 ---
 
-archive/issue_comments_091338.json:
+archive/issue_comments_091185.json:
 ```json
 {
     "body": "How do you check if Python exists in a Python script? I would have thought the code to check Python exists would have relied on Python existing - a catch 22. Of course, if you happen to have a system wide Python, then you could use that to check for $SAGE_LOCAL/bin/python. But that's going to be far from reliable, since: \n* A system may have no Python\n* A system Python may be too old. \n* A system Python may not work properly, which is what appears to have happened in your sage_fortran setup. \n\nBut I guess it is more reliable than no test at all, but I can't think of a 100% sure-fire way of doing this. One could make all spkg-install's /bin/sh scripts, and use that to check for Python before calling a Python script. But that's a lot of messing around, and one probably more likely to introduce a bug than detect one. \n\nDave",
     "created_at": "2010-07-15T22:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91338",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91185",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -54,15 +52,15 @@ Dave
 
 ---
 
-archive/issue_comments_091339.json:
+archive/issue_comments_091186.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-15T23:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91339",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91186",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -72,15 +70,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_091340.json:
+archive/issue_comments_091187.json:
 ```json
 {
     "body": "It was easier to just post the solution than...",
     "created_at": "2010-07-15T23:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91340",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91187",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -90,15 +88,15 @@ It was easier to just post the solution than...
 
 ---
 
-archive/issue_comments_091341.json:
+archive/issue_comments_091188.json:
 ```json
 {
     "body": "Neat, I like it. \n\nWould it not be worth checking **all** files in the top-level directory, rather than just spkg-install? Several packages have both bash scripts and python scripts in them. I don't know of any packages that have spkg-install which is a bash script, and also a python script, but it would not surprise me if one or two existed.\n\nspkg-install in ATLAS is a small python script, which then calls a large bash script. What's to stop there being any packages with it the other way around, where a bash script calls a python script? \n\nDave",
     "created_at": "2010-07-16T00:33:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91341",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -114,15 +112,15 @@ Dave
 
 ---
 
-archive/issue_comments_091342.json:
+archive/issue_comments_091189.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-16T08:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91342",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91189",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -132,15 +130,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_091343.json:
+archive/issue_comments_091190.json:
 ```json
 {
     "body": "Looks good! I tried forcing Fortran to build before Python in 4.5.rc1, and got the following with this patch applied:\n\n\n```\nfortran-20100629/src/g95/g95_x86_osx.tar.bz2\nFinished extraction\n****************************************************\nHost system\nuname -a:\nLinux geom 2.6.24-24-server #1 SMP Tue Aug 18 16:51:43 UTC 2009 x86_64 GNU/Linux\n****************************************************\n****************************************************\nCC Version\ngcc -v\nUsing built-in specs.\nTarget: x86_64-linux-gnu\nConfigured with: ../src/configure -v --enable-languages=c,c++,fortran,objc,obj-c++,treelang --prefix=/usr --enable-shared --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --enable-nls --with-gxx-include-dir=/usr/include/c++/4.2 --program-suffix=-4.2 --enable-clocale=gnu --enable-libstdcxx-debug --enable-objc-gc --enable-mpfr --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu\nThread model: posix\ngcc version 4.2.4 (Ubuntu 4.2.4-1ubuntu4)\n****************************************************\nThe spkg-install script depends on Python, but Python is not\nyet installed.  If this is a standard package, you should\nproperly update the /scratch/rlmill/test/sage-4.5.rc1/spkg/standard/deps script.\n```\n",
     "created_at": "2010-07-16T08:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91343",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91190",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -174,15 +172,15 @@ properly update the /scratch/rlmill/test/sage-4.5.rc1/spkg/standard/deps script.
 
 ---
 
-archive/issue_comments_091344.json:
+archive/issue_comments_091191.json:
 ```json
 {
     "body": "To avoid confusion to users, we should perhaps clarify in the error message that ***Sage's** Python* is not yet installed. (Otherwise I expect reports like *\"I have a Python installed, but...\"*.)\n\nThe comment should read `# if not, ...` rather than `# if so, ...` (or `check if ...` should be negated).\n\nI'd prefer `[ -x $SAGE_LOCAL/bin/python]`. Hope this never gets a script (ending up in the scripts repo) that tries to call the binary located elsewhere. On the other hand, we could do just this (making it a bash script), and test for presence of the binary in that script. The advantage would be that `env python` would always find Sage's one (no matter if the binary is already installed), of course assuming `sage-env` has been sourced. But this would also introduce another stage of indirection...",
     "created_at": "2010-07-16T13:08:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91344",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91191",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -196,15 +194,15 @@ I'd prefer `[ -x $SAGE_LOCAL/bin/python]`. Hope this never gets a script (ending
 
 ---
 
-archive/issue_comments_091345.json:
+archive/issue_comments_091192.json:
 ```json
 {
     "body": "P.S.: In general, I think it's a bad idea to make Sage packages depend on Python despite the upstream package not depending on it. I.e., IMHO Python install scripts should only be used if the package depends on Python anyway.",
     "created_at": "2010-07-16T13:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91345",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91192",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -214,15 +212,15 @@ P.S.: In general, I think it's a bad idea to make Sage packages depend on Python
 
 ---
 
-archive/issue_comments_091346.json:
+archive/issue_comments_091193.json:
 ```json
 {
     "body": "Yet another one:\n\nPerhaps in addition to a slightly modified version of William's patch, put that as `$SAGE_LOCAL/bin/python` into the scripts repo:\n\n```sh\n#!/usr/bin/env bash\n\necho python $@ \":\"\n\necho \"Error: Sage's Python has not yet been installed!\"\necho \"       This is most probably due to incorrect dependencies in the Makefiles.\"\necho \"Please report this to ...\"\n\nexit 1\n```\n\nand let the Python spkg just overwrite it with the binary. (This avoids unnecessary indirection.)",
     "created_at": "2010-07-16T13:47:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91346",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91193",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -248,15 +246,15 @@ and let the Python spkg just overwrite it with the binary. (This avoids unnecess
 
 ---
 
-archive/issue_comments_091347.json:
+archive/issue_comments_091194.json:
 ```json
 {
     "body": "Unless this ticket gets immediately merged, please also consider [this bug](http://trac.sagemath.org/sage_trac/ticket/9281#comment:15) in `sage-spkg`, which is trivially fixed but not directly related to this ticket, so I'm not sure if I should upload a patch for that *here*.\n\n-Leif",
     "created_at": "2010-07-16T19:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91347",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91194",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -268,15 +266,15 @@ Unless this ticket gets immediately merged, please also consider [this bug](http
 
 ---
 
-archive/issue_comments_091348.json:
+archive/issue_comments_091195.json:
 ```json
 {
     "body": "Replying to [comment:7 leif]:\n> Yet another one:\n> \n> Perhaps in addition to a slightly modified version of William's patch, put that \n> as `$SAGE_LOCAL/bin/python` into the scripts repo:\n\nI definitely do not like this idea.  Though it seems good at first, it's really bad. \n\n  (1) it's hackish\n\n  (2) It means that once python is installed, the scripts repository is always confused/corrupted/etc.   In particular, it would completely break \"sage -upgrade\", since the scripts repo is upgraded via `hg pull`.",
     "created_at": "2010-07-17T12:58:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91348",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91195",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -296,15 +294,15 @@ I definitely do not like this idea.  Though it seems good at first, it's really 
 
 ---
 
-archive/issue_comments_091349.json:
+archive/issue_comments_091196.json:
 ```json
 {
     "body": "new version with better error message, as Lief suggested.",
     "created_at": "2010-07-17T13:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91349",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91196",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -314,15 +312,15 @@ new version with better error message, as Lief suggested.
 
 ---
 
-archive/issue_comments_091350.json:
+archive/issue_comments_091197.json:
 ```json
 {
     "body": "Attachment [trac_9507.patch](tarball://root/attachments/some-uuid/ticket9507/trac_9507.patch) by @rlmill created at 2010-07-19 11:20:34",
     "created_at": "2010-07-19T11:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91350",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91197",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -332,15 +330,15 @@ Attachment [trac_9507.patch](tarball://root/attachments/some-uuid/ticket9507/tra
 
 ---
 
-archive/issue_comments_091351.json:
+archive/issue_comments_091198.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-19T11:20:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9507",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91351",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9507#issuecomment-91198",
+    "user": "https://github.com/rlmill"
 }
 ```
 

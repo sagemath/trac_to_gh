@@ -6,15 +6,14 @@ archive/issues_008270.json:
     "body": "Assignee: GeorgSWeber\n\nThe iconv package, which will soon be added to sage (#8191) has the facility to run \n\n```\nmake check\n```\n\n\nHowever, despite getting a test failure on Solaris 10 (SPARC), the makefile is still exiting with an exit code of 0, so any scripts which rely on testing iconv by relying on a failure of 'make check' to exit properly with a non-zero exit code will not work as desired. \n\nI'll report this to the iconv developers. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8270\n\n",
     "created_at": "2010-02-15T10:23:56Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "'make check' on exits with 0 on a failure.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8270",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: GeorgSWeber
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8270
 
 ---
 
-archive/issue_comments_073208.json:
+archive/issue_comments_073085.json:
 ```json
 {
     "body": "Attachment [install](tarball://root/attachments/some-uuid/ticket8270/install) by drkirkby created at 2010-02-15 11:46:21\n\nThe file spkg/install  The iconv package is added.",
     "created_at": "2010-02-15T11:46:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73208",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73085",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -60,15 +59,15 @@ The file spkg/install  The iconv package is added.
 
 ---
 
-archive/issue_comments_073209.json:
+archive/issue_comments_073086.json:
 ```json
 {
     "body": "Attachment [install.diff](tarball://root/attachments/some-uuid/ticket8270/install.diff) by drkirkby created at 2010-02-15 11:47:06\n\nDiff between the old spkg/install and the updated spkg/install for iconv support",
     "created_at": "2010-02-15T11:47:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73209",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -80,15 +79,15 @@ Diff between the old spkg/install and the updated spkg/install for iconv support
 
 ---
 
-archive/issue_comments_073210.json:
+archive/issue_comments_073087.json:
 ```json
 {
     "body": "spkg/standard/deps to show packages which depend on iconv.",
     "created_at": "2010-02-15T11:47:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73210",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73087",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -98,15 +97,15 @@ spkg/standard/deps to show packages which depend on iconv.
 
 ---
 
-archive/issue_comments_073211.json:
+archive/issue_comments_073088.json:
 ```json
 {
     "body": "Attachment [deps](tarball://root/attachments/some-uuid/ticket8270/deps) by drkirkby created at 2010-02-15 11:48:36\n\nDiff between the old spkg/standard/deps and the new one with iconv",
     "created_at": "2010-02-15T11:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73211",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73088",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -118,15 +117,15 @@ Diff between the old spkg/standard/deps and the new one with iconv
 
 ---
 
-archive/issue_comments_073212.json:
+archive/issue_comments_073089.json:
 ```json
 {
     "body": "Attachment [deps.diff](tarball://root/attachments/some-uuid/ticket8270/deps.diff) by drkirkby created at 2010-02-15 11:49:49\n\nIgnore all these file - they were attached to the wrong ticket!! \nSorry about that.",
     "created_at": "2010-02-15T11:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73212",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73089",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -139,15 +138,15 @@ Sorry about that.
 
 ---
 
-archive/issue_comments_073213.json:
+archive/issue_comments_073090.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-02-16T23:30:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73213",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73090",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -157,15 +156,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_073214.json:
+archive/issue_comments_073091.json:
 ```json
 {
     "body": "I'm told by the iconv developers this is not a bug. The core dumps are expected and ignored.",
     "created_at": "2010-02-16T23:30:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8270",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73214",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/8270#issuecomment-73091",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 

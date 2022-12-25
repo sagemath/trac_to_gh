@@ -6,7 +6,7 @@ archive/issues_003976.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3976\n\n",
     "created_at": "2008-08-28T19:39:29Z",
     "labels": [
-        "interfaces",
+        "component: interfaces",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003976.json:
     "title": "[with patch, needs review] improve doctests to expect.py, maxima.py, and lie.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3976",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3976
 
 ---
 
-archive/issue_comments_028565.json:
+archive/issue_comments_028507.json:
 ```json
 {
     "body": "Attachment [trac_3976.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976.patch) by @mwhansen created at 2008-08-28 19:39:49",
     "created_at": "2008-08-28T19:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28565",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28507",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [trac_3976.patch](tarball://root/attachments/some-uuid/ticket3976/tra
 
 ---
 
-archive/issue_comments_028566.json:
+archive/issue_comments_028508.json:
 ```json
 {
     "body": "After discussion with mhansen, we decided it would be better to use `os.popen` instead of `os.system`, in order to remove many `#not tested` bits.",
     "created_at": "2008-08-28T22:06:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28566",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28508",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -65,15 +65,15 @@ After discussion with mhansen, we decided it would be better to use `os.popen` i
 
 ---
 
-archive/issue_comments_028567.json:
+archive/issue_comments_028509.json:
 ```json
 {
     "body": "Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-2.patch) by @mwhansen created at 2008-08-28 22:51:29",
     "created_at": "2008-08-28T22:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28567",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28509",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +83,15 @@ Attachment [trac_3976-2.patch](tarball://root/attachments/some-uuid/ticket3976/t
 
 ---
 
-archive/issue_comments_028568.json:
+archive/issue_comments_028510.json:
 ```json
 {
     "body": "Attachment [trac_3976-3.patch](tarball://root/attachments/some-uuid/ticket3976/trac_3976-3.patch) by @rlmill created at 2008-08-28 22:55:13\n\nThe patches apply cleanly (with some light fuzz for the first patch), and pass all tests. Apply this.",
     "created_at": "2008-08-28T22:55:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28568",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28510",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -103,15 +103,15 @@ The patches apply cleanly (with some light fuzz for the first patch), and pass a
 
 ---
 
-archive/issue_comments_028569.json:
+archive/issue_comments_028511.json:
 ```json
 {
     "body": "Merged all three patches in Sage 3.1.2.alpha2",
     "created_at": "2008-08-28T22:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28569",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28511",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -121,15 +121,15 @@ Merged all three patches in Sage 3.1.2.alpha2
 
 ---
 
-archive/issue_comments_028570.json:
+archive/issue_comments_028512.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-28T22:57:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3976",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28570",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3976#issuecomment-28512",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

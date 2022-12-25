@@ -6,15 +6,13 @@ archive/issues_003725.json:
     "body": "Assignee: @malb\n\nCC:  rpw\n\nAdd documentation what the variables in the SR equation systems stand for.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3725\n\n",
     "created_at": "2008-07-25T12:10:06Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "[with patch, needs trivial review] tiny doc improvement for mq.SR",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3725",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3725
 
 ---
 
-archive/issue_comments_026434.json:
+archive/issue_comments_026377.json:
 ```json
 {
     "body": "Attachment [sr_doc.patch](tarball://root/attachments/some-uuid/ticket3725/sr_doc.patch) by mabshoff created at 2008-07-31 03:49:22\n\nPositive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-31T03:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3725",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3725#issuecomment-26434",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3725#issuecomment-26377",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +53,15 @@ Michael
 
 ---
 
-archive/issue_comments_026435.json:
+archive/issue_comments_026378.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-31T03:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3725",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3725#issuecomment-26435",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3725#issuecomment-26378",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -73,15 +71,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_026436.json:
+archive/issue_comments_026379.json:
 ```json
 {
     "body": "Merged in Sage 3.1.alpha0",
     "created_at": "2008-07-31T03:50:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3725",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3725#issuecomment-26436",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3725#issuecomment-26379",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

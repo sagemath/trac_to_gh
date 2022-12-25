@@ -6,15 +6,14 @@ archive/issues_007968.json:
     "body": "Assignee: tbd\n\nOn cicero, Fedora 12, 32-bit, Pentium 4,\nand also on cleo, Red Hat Enterprise Linux Server 5.3, 64-bit, IA-64,\nas well as on Mac OS X 10.4, Core2Duo, 32 bit:\n\n[mvngu`@`cicero sage-4.3.1.rc0]$ ./sage -t -long\ndevel/sage-main/sage/schemes/elliptic_curves/heegner.py\nsage -t -long \"devel/sage-main/sage/schemes/elliptic_curves/heegner.py\"\n**********************************************************************\nFile \"/tmp/mvngu/sage-4.3.1.rc0/devel/sage-main/sage/schemes/elliptic_curves/heegner.py\",\nline 1486:\n    sage: s.__cmp__(0)\nExpected:\n    -1\nGot:\n    1\n**********************************************************************\n\nIssue created by migration from https://trac.sagemath.org/ticket/7968\n\n",
     "created_at": "2010-01-17T19:34:31Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "doctest failure in heegner.py (Sage-4.3.1.rc0)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7968",
-    "user": "GeorgSWeber"
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 Assignee: tbd
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7968
 
 ---
 
-archive/issue_comments_069515.json:
+archive/issue_comments_069395.json:
 ```json
 {
     "body": "Is this \"just\" some refactoring fallout?\nAnyone any ideas??\n(Fixing the doctest by itself is obviously trivial ...)",
     "created_at": "2010-01-17T19:37:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69515",
-    "user": "GeorgSWeber"
+    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69395",
+    "user": "https://trac.sagemath.org/admin/accounts/users/GeorgSWeber"
 }
 ```
 
@@ -64,15 +63,15 @@ Anyone any ideas??
 
 ---
 
-archive/issue_comments_069516.json:
+archive/issue_comments_069396.json:
 ```json
 {
     "body": "Attachment [trac_7968.patch](tarball://root/attachments/some-uuid/ticket7968/trac_7968.patch) by @williamstein created at 2010-01-17 22:41:18",
     "created_at": "2010-01-17T22:41:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69516",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69396",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -82,15 +81,15 @@ Attachment [trac_7968.patch](tarball://root/attachments/some-uuid/ticket7968/tra
 
 ---
 
-archive/issue_comments_069517.json:
+archive/issue_comments_069397.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2010-01-17T22:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69517",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69397",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -100,15 +99,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_069518.json:
+archive/issue_comments_069398.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-17T22:41:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69518",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69398",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -118,15 +117,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_069519.json:
+archive/issue_comments_069399.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-17T22:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69519",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69399",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -136,15 +135,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_069520.json:
+archive/issue_comments_069400.json:
 ```json
 {
     "body": "Yep, this looks good. As William pointed out to me when I asked, the issue is just that the ordering is random -- so just having the doctest confirm that they're not equal is the right thing to do.",
     "created_at": "2010-01-17T22:44:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69520",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69400",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -154,15 +153,15 @@ Yep, this looks good. As William pointed out to me when I asked, the issue is ju
 
 ---
 
-archive/issue_comments_069521.json:
+archive/issue_comments_069401.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-18T22:26:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7968",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69521",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7968#issuecomment-69401",
+    "user": "https://github.com/rlmill"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000204.json:
     "body": "Assignee: somebody\n\nfrom Yi\n\n\n```\nOk, here is a weird bug:\non sage.math.washington.edu\n \nsage: sys.maxint\n9223372036854775807\nsage: sys.maxint >= 0.01\nFalse\n \nsage: sys.maxint >= int(0.01)\nTrue\n \nLooks to be a problem with <type 'sage.rings.real_mpfr.RealNumber'>\n \nAny ideas on how to fix this?\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/204\n\n",
     "created_at": "2007-01-21T03:45:11Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-1.9",
     "title": "bug in real number comparison or coercion",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/204",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/204
 
 ---
 
-archive/issue_comments_000918.json:
+archive/issue_comments_000915.json:
 ```json
 {
     "body": "\n```\nIt's a coercion issue:\n\nimport sys\nsage: sys.maxint\n9223372036854775807\nsage: type(sys.maxint)\n<type 'int'>\nsage: RR(sys.maxint)\n-1.00000000000000\nsage: RDF(sys.maxint)\n9.22337203685e+18\nsage: RealField(100)(sys.maxint)\n-1.0000000000000000000000000000\n```\n",
     "created_at": "2007-01-21T03:47:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-918",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-915",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -82,15 +81,15 @@ sage: RealField(100)(sys.maxint)
 
 ---
 
-archive/issue_comments_000919.json:
+archive/issue_comments_000916.json:
 ```json
 {
     "body": "This is now fixed for sage > 1.8.  The problem in involved the \nreal number constructor.   While I was at it, I optimized that a lot.",
     "created_at": "2007-01-23T21:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-919",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-916",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -101,15 +100,15 @@ real number constructor.   While I was at it, I optimized that a lot.
 
 ---
 
-archive/issue_comments_000920.json:
+archive/issue_comments_000917.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-23T21:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/204",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-920",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/204#issuecomment-917",
+    "user": "https://github.com/williamstein"
 }
 ```
 

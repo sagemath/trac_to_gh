@@ -6,7 +6,7 @@ archive/issues_001324.json:
     "body": "Assignee: failure\n\nInitially Kate Minola reported the issue in http://groups.google.com/group/sage-support/t/ff6aa3efc272f40b\n\nValgrind tells us:\n\n```\n==6899== Conditional jump or move depends on uninitialised value(s)\n==6899==    at 0xC4BCC67: __pyx_f_4sage_5rings_9real_rqdf_17QuadDoubleElement__set(__pyx_obj_4sage_5rings_9real_rqdf_QuadDou\nbleElement*, _object*) (real_rqdf.cpp:2521)\n==6899==    by 0xC4B6037: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___init__(_object*, _object*, _object*) (real_\nrqdf.cpp:4282)\n==6899==    by 0x458E40: type_call (typeobject.c:436)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4B94F6: __pyx_pf_4sage_5rings_9real_rqdf_25RealQuadDoubleField_class___call__(_object*, _object*, _object*\n) (real_rqdf.cpp:2919)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x481AC1: PyEval_EvalFrameEx (ceval.c:3775)\n==6899==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==6899==    by 0x4838F4: PyEval_EvalFrameEx (ceval.c:494)\n==6899==    by 0x484B6A: PyEval_EvalCodeEx (ceval.c:2831)\n==6899==    by 0x48328C: PyEval_EvalFrameEx (ceval.c:3660)\n\n==6899== Invalid read of size 1\n==6899==    at 0x4A1CA13: strlen (mc_replace_strmem.c:242)\n==6899==    by 0x44D65A: PyString_FromString (stringobject.c:108)\n==6899==    by 0xC4B81B8: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___str_no_scientific(_object*, _object*) (real\n_rqdf.cpp:5315)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4BB34A: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement_str(_object*, _object*) (real_rqdf.cpp:5851)\n==6899==    by 0x415542: PyObject_Call (abstract.c:1860)\n==6899==    by 0x47C480: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==6899==    by 0xC4B595B: __pyx_pf_4sage_5rings_9real_rqdf_17QuadDoubleElement___repr__(_object*) (real_rqdf.cpp:5153)\n==6899==    by 0x443279: PyObject_Repr (object.c:361)\n==6899==    by 0x429B5B: PyFile_WriteObject (fileobject.c:2196)\n==6899==    by 0x4ABD88: sys_displayhook (sysmodule.c:114)\n```\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1324\n\n",
     "created_at": "2007-11-28T21:44:15Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001324.json:
     "title": "2.8.14: doctest failure in sage/rings/real_rqdf.pyx  on FC6, x86-64",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1324",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: failure
@@ -70,15 +70,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1324
 
 ---
 
-archive/issue_comments_008484.json:
+archive/issue_comments_008460.json:
 ```json
 {
     "body": "Attachment [1324.patch](tarball://root/attachments/some-uuid/ticket1324/1324.patch) by cwitty created at 2007-12-07 02:51:39\n\nThe attached patch fixes an off-by-one error in RR->RQDF conversion; the bug had the effect that depending on the stack layout chosen by the compiler, `RealField(53)->RQDF` conversion might always return NaN.  (The code read one past the end of an array on the stack, so it depended on what the compiler allocated after the array.)\n\nIt also includes a minor cleanup: \"cdef bint isnan\" was technically wrong, because we weren't using isnan as a boolean.",
     "created_at": "2007-12-07T02:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8484",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8460",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -92,15 +92,15 @@ It also includes a minor cleanup: "cdef bint isnan" was technically wrong, becau
 
 ---
 
-archive/issue_comments_008485.json:
+archive/issue_comments_008461.json:
 ```json
 {
     "body": "Changing assignee from failure to cwitty.",
     "created_at": "2007-12-07T02:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8485",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8461",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -110,15 +110,15 @@ Changing assignee from failure to cwitty.
 
 ---
 
-archive/issue_comments_008486.json:
+archive/issue_comments_008462.json:
 ```json
 {
     "body": "Looks good to me. Great work ;)\n\nCheers,\n\nMichael",
     "created_at": "2007-12-09T09:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8486",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8462",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -132,15 +132,15 @@ Michael
 
 ---
 
-archive/issue_comments_008487.json:
+archive/issue_comments_008463.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-09T12:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8487",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8463",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -150,15 +150,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_008488.json:
+archive/issue_comments_008464.json:
 ```json
 {
     "body": "Merged in 2.9.alpha2.",
     "created_at": "2007-12-09T12:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1324",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8488",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1324#issuecomment-8464",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

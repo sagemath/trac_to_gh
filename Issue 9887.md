@@ -6,14 +6,13 @@ archive/issues_009887.json:
     "body": "Assignee: tbd\n\nSage 4.5.3, 2.6GHz Opteron, Linux\n\nThis is ok:\n\n```\nsage: M1 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 45.6 ms per loop\n```\n\n\n(That's about 4 times slower than Magma, but I can put up with that, that's a ticket for another day.)\n\nHere is the problem:\n\n```\nsage: R = Integers(3^20)\nsage: M1 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 877 ms per loop\n```\n\n\nIn other words, I can multiply the matrices over R roughly 20x faster by multiplying over Z and then reducing! That's ridiculous!\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9888\n\n",
     "created_at": "2010-09-09T16:21:26Z",
     "labels": [
-        "performance",
-        "major",
+        "component: performance",
         "bug"
     ],
     "title": "matrix multiplication over integer mod ring is slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9887",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: tbd
@@ -54,15 +53,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9888
 
 ---
 
-archive/issue_comments_098013.json:
+archive/issue_comments_097851.json:
 ```json
 {
     "body": "I don't think anything has gone into non-word-sized modulus, so this is probably using totally generic per-element wrapping code :(. Should be an easy fix to get better than this, doing something real would be a bit more work.",
     "created_at": "2010-09-09T16:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-98013",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-97851",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -72,15 +71,15 @@ I don't think anything has gone into non-word-sized modulus, so this is probably
 
 ---
 
-archive/issue_comments_098014.json:
+archive/issue_comments_097852.json:
 ```json
 {
     "body": "I just tried the timings again:\n\n```\nsage: sage: M1 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: sage: M2 = Matrix([[randrange(3^20) for i in range(100)] for j in range(100)])\nsage: sage: timeit(\"M3 = M1 * M2\")\n125 loops, best of 3: 5.62 ms per loop\nsage: sage: R = Integers(3^20)\nsage: sage: M1 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: sage: M2 = Matrix([[R.random_element() for i in range(100)] for j in range(100)])\nsage: sage: timeit(\"M3 = M1 * M2\")\n5 loops, best of 3: 530 ms per loop\n```\n\nso now the discrepancy is up to a factor of 100!\n\nMy recollection is that lifting the multiplication up to Z is in fact the correct algorithmic approach. In practice, this hands the problem off to FLINT, where (in this size range) the multiplication is done multimodular.",
     "created_at": "2016-04-10T04:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-98014",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-97852",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -106,15 +105,15 @@ My recollection is that lifting the multiplication up to Z is in fact the correc
 
 ---
 
-archive/issue_comments_098015.json:
+archive/issue_comments_097853.json:
 ```json
 {
     "body": "See #12177 for a related discussion.",
     "created_at": "2016-08-17T01:08:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-98015",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-97853",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -124,15 +123,15 @@ See #12177 for a related discussion.
 
 ---
 
-archive/issue_comments_098016.json:
+archive/issue_comments_097854.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"sd90\".",
     "created_at": "2017-10-22T18:32:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-98016",
-    "user": "@adeines"
+    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-97854",
+    "user": "https://github.com/adeines"
 }
 ```
 
@@ -142,15 +141,15 @@ Changing keywords from "" to "sd90".
 
 ---
 
-archive/issue_comments_098017.json:
+archive/issue_comments_097855.json:
 ```json
 {
     "body": "There appears to be special-purpose code using Linbox for modulus up to 2<sup>23</sup> in `sage/matrix/matrix_modn_dense_double.pyx` and `sage/matrix/matrix_modn_dense_float.pyx`. To handle this issue, it would be best to create a file `sage/matrix/matrix_modn_dense.pyx` in which we create the class `Matrix_modn_dense` with a special `_mul_` method. But we should make sure not to create a regression by disconnecting the existing code for smaller moduli.",
     "created_at": "2017-10-24T04:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-98017",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/9887#issuecomment-97855",
+    "user": "https://github.com/kedlaya"
 }
 ```
 

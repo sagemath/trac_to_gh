@@ -6,7 +6,7 @@ archive/issues_007283.json:
     "body": "Assignee: tba\n\nIn http://www.sagemath.org/doc/reference/coercion.html\n\n\"Basic Arithmetic Rules\" has a duplicated paragraph. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7283\n\n",
     "created_at": "2009-10-25T01:37:24Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007283.json:
     "title": "typo in reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7283",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: tba
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7283
 
 ---
 
-archive/issue_comments_060612.json:
+archive/issue_comments_060499.json:
 ```json
 {
     "body": "Attachment [trac_7283-ref.patch](tarball://root/attachments/some-uuid/ticket7283/trac_7283-ref.patch) by @jhpalmieri created at 2009-11-24 18:15:09",
     "created_at": "2009-11-24T18:15:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60612",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60499",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -49,15 +49,15 @@ Attachment [trac_7283-ref.patch](tarball://root/attachments/some-uuid/ticket7283
 
 ---
 
-archive/issue_comments_060613.json:
+archive/issue_comments_060500.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-24T18:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60613",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60500",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060614.json:
+archive/issue_comments_060501.json:
 ```json
 {
     "body": "Thanks. I noticed this when I was in the thick of something else, meant to get back to it, but never did.",
     "created_at": "2009-11-24T18:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60614",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60501",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -85,15 +85,15 @@ Thanks. I noticed this when I was in the thick of something else, meant to get b
 
 ---
 
-archive/issue_comments_060615.json:
+archive/issue_comments_060502.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-24T18:24:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60615",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60502",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -103,15 +103,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060616.json:
+archive/issue_comments_060503.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-11-29T05:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60616",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60503",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -121,15 +121,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_060617.json:
+archive/issue_comments_060504.json:
 ```json
 {
     "body": "unique name please",
     "created_at": "2017-07-19T08:53:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7283",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60617",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7283#issuecomment-60504",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

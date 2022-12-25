@@ -6,15 +6,13 @@ archive/issues_006887.json:
     "body": "Assignee: @loefflerd\n\nCC:  @williamstein @categorie shumow kohel jcooley\n\nKeywords: elliptic curve isogeny\n\nThanks mainly to Dan Shumow, 4.1.1 has some very useful code for constructing elliptic curve isogenies.  Together with a summer student Jenny Cooley, I am implementing the following:\n\n1. For `l=2,3,5,7,13` over any field, find all `l`-isogenies of a given elliptic curve. (These are the `l` for which `X_0(l)` has genus 0).\n\n2. For the remaining `l` for which `l`-isogenies exist over QQ, similarly.\n\n3. Given an elliptic curve over QQ, find the whole isogeny class (this currently exists by wrapping some eclib code, but that it not very robust -- what we are writing will be!)\n\n4. Testing if two curves are isogenous (at least over QQ;  we can do something over other number fields but I am still working out how to make it rigorous.)\n\nAt the moment I am not planning anything over finite fields, where the situation is very different, though the generic code for `l=2,3,5,7,13` will work (as it is right now, only as long as the characteristic is not 2, 3 or `l`, but eventually that will change).\n\nSome of the methods we are implementing were worked out by  Mark Watkins and me in an unfinished preprint c.2005.\n\nAs one major test of the code for curves over QQ, we are intending to check that the databases are closed under isogeny (as they should be!  at least my own should be).\n\nIssue created by migration from https://trac.sagemath.org/ticket/6887\n\n",
     "created_at": "2009-09-04T11:59:29Z",
     "labels": [
-        "elliptic curves",
-        "major",
-        "enhancement"
+        "component: elliptic curves"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "Implement elliptic curve isogenies (continued)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6887",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @loefflerd
@@ -47,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6887
 
 ---
 
-archive/issue_comments_056905.json:
+archive/issue_comments_056797.json:
 ```json
 {
     "body": "Remove assignee @loefflerd.",
     "created_at": "2009-10-09T09:08:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56905",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56797",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -65,15 +63,15 @@ Remove assignee @loefflerd.
 
 ---
 
-archive/issue_comments_056906.json:
+archive/issue_comments_056798.json:
 ```json
 {
     "body": "Attachment [URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf](tarball://root/attachments/some-uuid/ticket6887/URSS_Poster_Computing_Elliptic_Curve_Isogenies_October_2009.pdf) by @JohnCremona created at 2009-11-09 09:22:51\n\nposter by Jenny for an exhibition at U of Warwick",
     "created_at": "2009-11-09T09:22:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56906",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56798",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -85,15 +83,15 @@ poster by Jenny for an exhibition at U of Warwick
 
 ---
 
-archive/issue_comments_056907.json:
+archive/issue_comments_056799.json:
 ```json
 {
     "body": "Apologies for taking so long to get the patch up here -- it has been a busy term.  To make up for that I have attached here the poster Jenny made for the local URSS (= Undergraduate Research Scholarship Scheme) exhibition, for which she received a certificate!",
     "created_at": "2009-11-09T09:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56907",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56799",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -103,15 +101,15 @@ Apologies for taking so long to get the patch up here -- it has been a busy term
 
 ---
 
-archive/issue_comments_056908.json:
+archive/issue_comments_056800.json:
 ```json
 {
     "body": "\"Mathematicians may continue to use the curves in the database without fear!\"",
     "created_at": "2009-11-09T17:22:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56908",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56800",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +119,15 @@ archive/issue_comments_056908.json:
 
 ---
 
-archive/issue_comments_056909.json:
+archive/issue_comments_056801.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-19T22:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56909",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56801",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -139,15 +137,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_056910.json:
+archive/issue_comments_056802.json:
 ```json
 {
     "body": "Here's the patch, ready for review. There's more to be done but this is a useful step in the right direction, I hope.  We did test the code over QQ against *all* curves in the database and it did fine.",
     "created_at": "2009-11-19T22:32:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56910",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56802",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -157,15 +155,15 @@ Here's the patch, ready for review. There's more to be done but this is a useful
 
 ---
 
-archive/issue_comments_056911.json:
+archive/issue_comments_056803.json:
 ```json
 {
     "body": "I got the following when I tried to apply the patch to 4.3.alpha0. Am I doing something wrong ?\n\n\n```\nsage: hg_sage.apply('trac_6887-isogeny.patch')\n...\n/usr/bin/patch: **** malformed patch at line 121: diff -r 465d8fc11bf5 -r ef97f71cd70b doc/en/introspect/__init__.py</pre>\n\nabort: patch command failed: exited with status 2\n```\n",
     "created_at": "2009-11-27T17:34:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56911",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56803",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -185,15 +183,15 @@ abort: patch command failed: exited with status 2
 
 ---
 
-archive/issue_comments_056912.json:
+archive/issue_comments_056804.json:
 ```json
 {
     "body": "Replying to [comment:5 wuthrich]:\n> I got the following when I tried to apply the patch to 4.3.alpha0. Am I doing something wrong ?\n> \n> {{{\n> sage: hg_sage.apply('trac_6887-isogeny.patch')\n> ...\n> /usr/bin/patch: **** malformed patch at line 121: diff -r 465d8fc11bf5 -r ef97f71cd70b doc/en/introspect/__init__.py</pre>\n> \n> abort: patch command failed: exited with status 2\n> }}}\n\nHow weird -- I did not edit any \"introspect\" files.  I will try to edit the patch, and try the result myself against 4.3.alpha0, and repost it.",
     "created_at": "2009-11-27T20:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56912",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56804",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -214,15 +212,15 @@ How weird -- I did not edit any "introspect" files.  I will try to edit the patc
 
 ---
 
-archive/issue_comments_056913.json:
+archive/issue_comments_056805.json:
 ```json
 {
     "body": "Attachment [trac_6887-isogeny.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny.patch) by @JohnCremona created at 2009-11-27 20:44:35\n\napplies to 4.3.alpha0",
     "created_at": "2009-11-27T20:44:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56913",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56805",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -234,15 +232,15 @@ applies to 4.3.alpha0
 
 ---
 
-archive/issue_comments_056914.json:
+archive/issue_comments_056806.json:
 ```json
 {
     "body": "Please try the new version.  Thanks!  John",
     "created_at": "2009-11-27T20:45:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56914",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56806",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -252,15 +250,15 @@ Please try the new version.  Thanks!  John
 
 ---
 
-archive/issue_comments_056915.json:
+archive/issue_comments_056807.json:
 ```json
 {
     "body": "Sorry for being so slow in reviewing this. This is a very good and long patch, so I will allow myself a bit more time to look at it. So far I only spotted a few minor issues. \n\n* Coverage issue which should be easy to fix :\n\n  {{{\n  ell_curve_isogeny.py\n  SCORE ell_curve_isogeny.py: 98% (79 of 80)\n\n  Missing doctests:\n        * _isogeny_machine(Ew, f, ker, a, iso=None, E=None):\n\n\n  Possibly wrong (function name doesn't occur in doctests):\n        * unfill_isogeny_matrix(M):\n  }}}\n\n* The patch applies fine and the first few tests I did pass. But when you deleted the top part of the patch you (=John) probably deleted a little bit too much, the presentation here is missing something in the beginning. I don't think that it harms the patch though.\n\n* Naming : Do you want to call it l_isogenies ? I agree that prime_degree_isogenies is a bit long, but would have the advantage of being clear about what l can be and about the possible confusion with 1 and I (depending on the font). Or isogenies_of_prime_degree that would make the function appear in .isog<tab>. \n\n* In line 1266 of ell_number_field.py, docstring of is_isogenous, you write\n    *If ``True``, this test should be followed by a rigorous test (not fully implemented).*\n  What do you mean by should ? Do you mean \"this test is followed by a rigourous test if it is implemented for the given curve...\" ? I think I know what goes on from the second to last example, but maybe it would be good to have a sentence or two about it.\n\nOf course, these are very minor things. once I have played around a little with the code and read a bit more of it, I will give a positive review....\n\nChris.",
     "created_at": "2009-12-03T23:19:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56915",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56807",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -296,15 +294,15 @@ Chris.
 
 ---
 
-archive/issue_comments_056916.json:
+archive/issue_comments_056808.json:
 ```json
 {
     "body": "Many thanks, Chris.  I wil sort out the issues you mention easily.  No time for fuller reply now as I'm about to checkout of Luminy.  While here I discussed the special cases of l=5,7,13 and j=0,1728 with Mark Watkins (with whom most of the rest was developed) and see a better way to do that, without having crazy special cases such as char. 53 for (l,j)=(7,1728).  So the revised patch may have that in too.",
     "created_at": "2009-12-04T06:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56916",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56808",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -314,15 +312,15 @@ Many thanks, Chris.  I wil sort out the issues you mention easily.  No time for 
 
 ---
 
-archive/issue_comments_056917.json:
+archive/issue_comments_056809.json:
 ```json
 {
     "body": "I have almost finished revising the patch.  I have fixed all the points raised above except (so far) changing the name l_isogenies, which I agree should have a name starting isog*.  My new patch still has the strange problem in its header, but I do not know how to fix that so if it does not prevent it being applied I may give up on that part.\n\nIn addition, I changed the code for l=5,7,13 and j=0,1728 to avoid the weird \"feature\" where a few random characteristics had to be excluded.  I remove my isogeny_machine function, opting instead for 6 separate functions for these 6 cases, despite some repetition of code, since it just got too complicated to write one function which handled all 6 cases plus subcases (for endomorphisms and non-endos).\n\nHope to finish and re-post patch on Wednesday.",
     "created_at": "2009-12-08T22:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56917",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56809",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -336,15 +334,15 @@ Hope to finish and re-post patch on Wednesday.
 
 ---
 
-archive/issue_comments_056918.json:
+archive/issue_comments_056810.json:
 ```json
 {
     "body": "Attachment [trac_6887-isogeny2.patch](tarball://root/attachments/some-uuid/ticket6887/trac_6887-isogeny2.patch) by @JohnCremona created at 2009-12-09 20:20:46\n\nReplaces previous, applies to 4.3.alpha1",
     "created_at": "2009-12-09T20:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56918",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56810",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -356,15 +354,15 @@ Replaces previous, applies to 4.3.alpha1
 
 ---
 
-archive/issue_comments_056919.json:
+archive/issue_comments_056811.json:
 ```json
 {
     "body": "I have dealt with the referee (Chris)'s points;  in addition to the things listed above, I changed \"l_isogenies\" to \"isogenies_prime_degree\" throughout.\n\nA small further review needed, please!",
     "created_at": "2009-12-09T20:24:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56919",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56811",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -376,15 +374,15 @@ A small further review needed, please!
 
 ---
 
-archive/issue_comments_056920.json:
+archive/issue_comments_056812.json:
 ```json
 {
     "body": "I will look at it.",
     "created_at": "2009-12-09T20:27:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56920",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56812",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -394,15 +392,15 @@ I will look at it.
 
 ---
 
-archive/issue_comments_056921.json:
+archive/issue_comments_056813.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-10T00:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56921",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56813",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -412,15 +410,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_056922.json:
+archive/issue_comments_056814.json:
 ```json
 {
     "body": "All tests passed. (at least it did not have an effect on my testall results)\n\nAlso the minor issues above are all solved. I have not checked in details all the algorithms, but I am confident that they are correct. Especially because they give back the original results in the table.\n\nWhen testing if the `isogeny_graph()` was not affected by this, I noticed that the graphs are now not well plotted anymore: the picture is cut off too close to the graph. Of course, this has nothing to do with the patch here. I will search tomorrow if a ticket exists already for this.\n\nGreat work, Jenny. I wish I would find summer students of that level myself !",
     "created_at": "2009-12-10T00:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56922",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56814",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -436,15 +434,15 @@ Great work, Jenny. I wish I would find summer students of that level myself !
 
 ---
 
-archive/issue_comments_056923.json:
+archive/issue_comments_056815.json:
 ```json
 {
     "body": "> I will search tomorrow if a ticket exists already for this. \n\nThis is \"well known\".  I'm not sure whose patch broke this, but I sure as heck wish this would get fixed!",
     "created_at": "2009-12-10T07:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56923",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56815",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -456,15 +454,15 @@ This is "well known".  I'm not sure whose patch broke this, but I sure as heck w
 
 ---
 
-archive/issue_comments_056924.json:
+archive/issue_comments_056816.json:
 ```json
 {
     "body": "This has been sitting with a positive review for nearly two weeks, and I just noticed that it had no milestone set.  So I set it to 4.3 (ever optimistic).  Of course it could be bumped to 4.3.1...",
     "created_at": "2009-12-22T17:42:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56924",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56816",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -474,15 +472,15 @@ This has been sitting with a positive review for nearly two weeks, and I just no
 
 ---
 
-archive/issue_comments_056925.json:
+archive/issue_comments_056817.json:
 ```json
 {
     "body": "This will be merged in first thing for 4.3.1.",
     "created_at": "2009-12-24T07:12:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56925",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56817",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -492,15 +490,15 @@ This will be merged in first thing for 4.3.1.
 
 ---
 
-archive/issue_comments_056926.json:
+archive/issue_comments_056818.json:
 ```json
 {
     "body": "Replying to [comment:16 was]:\n> This will be merged in first thing for 4.3.1.\nThat's fine -- thanks!",
     "created_at": "2009-12-24T10:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56926",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56818",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -512,15 +510,15 @@ That's fine -- thanks!
 
 ---
 
-archive/issue_comments_056927.json:
+archive/issue_comments_056819.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-04T04:09:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6887",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56927",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6887#issuecomment-56819",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

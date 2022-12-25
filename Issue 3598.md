@@ -6,7 +6,7 @@ archive/issues_003598.json:
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3598\n\n",
     "created_at": "2008-07-08T00:21:19Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003598.json:
     "title": "clisp -- fix building on RHEL5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3598",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3598
 
 ---
 
-archive/issue_comments_025420.json:
+archive/issue_comments_025370.json:
 ```json
 {
     "body": "We will deal with this in 3.0.5.\n\nCheers,\n\nMichael",
     "created_at": "2008-07-08T00:42:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3598",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25420",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25370",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +51,15 @@ Michael
 
 ---
 
-archive/issue_comments_025421.json:
+archive/issue_comments_025371.json:
 ```json
 {
     "body": "If Sage is switching to ecl over clisp, is this still important?",
     "created_at": "2008-11-27T09:28:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3598",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25421",
-    "user": "@tjl"
+    "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25371",
+    "user": "https://github.com/tjl"
 }
 ```
 
@@ -69,15 +69,15 @@ If Sage is switching to ecl over clisp, is this still important?
 
 ---
 
-archive/issue_comments_025422.json:
+archive/issue_comments_025372.json:
 ```json
 {
     "body": "Replying to [comment:2 tjlahey]:\n> If Sage is switching to ecl over clisp, is this still important?\n\nIt will be closed as invalid once we have switched to ecl. There are also other clisp ticket which will then be invalidated.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-27T09:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3598",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25422",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -94,15 +94,15 @@ Michael
 
 ---
 
-archive/issue_comments_025423.json:
+archive/issue_comments_025373.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-06-04T00:06:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3598",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25423",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3598#issuecomment-25373",
+    "user": "https://github.com/williamstein"
 }
 ```
 

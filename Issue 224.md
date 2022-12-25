@@ -6,15 +6,14 @@ archive/issues_000224.json:
     "body": "Assignee: boothby\n\n\n```\nTimothy clemens:\nWhy is some code just as on\nhttp://sage.math.washington.edu:8100/doc_browser?/prog/?node43.html\nnon-excutable in that worksheet?\n```\n\n\nBecause the doc parser doesn't know about \"notebook input format\",\nironically.\n\nIssue created by migration from https://trac.sagemath.org/ticket/224\n\n",
     "created_at": "2007-01-28T04:54:42Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "doc browser -- doesn't parse \"notebook input notation\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/224",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/224
 
 ---
 
-archive/issue_comments_000998.json:
+archive/issue_comments_000995.json:
 ```json
 {
     "body": "This ticket might actually be two questions.\n\n\n#### First, why does the doc browser not parse notebook input formatting?\nParsing \"notebook input format\" by the doc browser can be implemented very easily; but should it?\n\nIn the Programming guide: 5. Writing Optimized Compiled Code: A simple loop example: Sum of Squares, the example assumes the reader is not using an interactive tutorial, thus, the explicit explanation of notebook input notation would be confusing because the { and } braces would never actually be visible to the user; also, there would be an evaluable input cell with the content \"INPUT TEXT\" and corresponding output cell with \"OUTPUT TEXT\" which would return a Syntax Error upon an actual evaluation.\n\nPossible solutions are:\n- Re-write the relevant documentation with explanations of notebook notation removed where ever you really want the docHTMLprocessor to make an example cell.\n- OR, Leave it unevaluatable for the purpose of showing how the notebook works.\n\n#### Second, why are some code block examples not converted into cells?\nCode example blocks (<div class=\"verbatim\">) that don't begin with \"sage:\" are not parsed into cells because sometimes these examples really should not be cells (e.g. ref/module-sage.combinat.combinat.html; the parts that start \"INPUT:\")\n\nThis could be fixed by refining the dochtmlprocessor rules for what should be input.\n\n\nReplying to [ticket:224 was]:\n> {{{\n> Timothy clemens:\n> Why is some code just as on\n> http://sage.math.washington.edu:8100/doc_browser?/prog/?node43.html\n> non-excutable in that worksheet?\n> }}}\n> \n> Because the doc parser doesn't know about \"notebook input format\",\n> ironically.",
     "created_at": "2007-09-08T21:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-998",
-    "user": "dorian"
+    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-995",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dorian"
 }
 ```
 
@@ -84,15 +83,15 @@ Replying to [ticket:224 was]:
 
 ---
 
-archive/issue_comments_000999.json:
+archive/issue_comments_000996.json:
 ```json
 {
     "body": "Could we do the following:\n\n  a verbatim environment with both ` and ` in it is converted to a notebook cell,\n  unless %nocell appears in the previous line?  In the vast majority of cases, in the\n  long run, we'll want verbatim cells with {{{'s to be converted directly to notebook cells.\n\nE.g., where below the {{ should be thought of as {{{:\n\n\n```\nThis is how to write notebook mode:\n%nocell\n\\begin{verbatim}\n{{\n2+2\n///\n4\n}}\n\\end{verbatim}\n```\n",
     "created_at": "2007-09-09T15:51:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-999",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-996",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -122,15 +121,15 @@ This is how to write notebook mode:
 
 ---
 
-archive/issue_comments_001000.json:
+archive/issue_comments_000997.json:
 ```json
 {
     "body": "I think this is intentional.",
     "created_at": "2007-10-21T02:38:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-1000",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-997",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -140,15 +139,15 @@ I think this is intentional.
 
 ---
 
-archive/issue_comments_001001.json:
+archive/issue_comments_000998.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-01-19T13:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-1001",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-998",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -158,15 +157,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_001002.json:
+archive/issue_comments_000999.json:
 ```json
 {
     "body": "I think this is intentional as well.  I'm closing this as invalid.",
     "created_at": "2009-01-19T13:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/224",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-1002",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/224#issuecomment-999",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

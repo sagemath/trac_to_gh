@@ -6,15 +6,13 @@ archive/issues_004692.json:
     "body": "Assignee: somebody\n\nDepends on #4276\n\nIssue created by migration from https://trac.sagemath.org/ticket/4692\n\n",
     "created_at": "2008-12-04T07:04:27Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "embeddings not implemented for relative number fields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4692",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: somebody
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4692
 
 ---
 
-archive/issue_comments_035364.json:
+archive/issue_comments_035295.json:
 ```json
 {
     "body": "Changing assignee from somebody to @williamstein.",
     "created_at": "2009-06-07T13:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35364",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35295",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -47,15 +45,15 @@ Changing assignee from somebody to @williamstein.
 
 ---
 
-archive/issue_comments_035365.json:
+archive/issue_comments_035296.json:
 ```json
 {
     "body": "Changing component from basic arithmetic to number theory.",
     "created_at": "2009-06-07T13:20:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35365",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35296",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -65,15 +63,15 @@ Changing component from basic arithmetic to number theory.
 
 ---
 
-archive/issue_comments_035366.json:
+archive/issue_comments_035297.json:
 ```json
 {
     "body": "Changing component from number theory to number fields.",
     "created_at": "2009-07-20T20:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35366",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35297",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -83,15 +81,15 @@ Changing component from number theory to number fields.
 
 ---
 
-archive/issue_comments_035367.json:
+archive/issue_comments_035298.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @loefflerd.",
     "created_at": "2009-07-20T20:21:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35367",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4692#issuecomment-35298",
+    "user": "https://github.com/loefflerd"
 }
 ```
 

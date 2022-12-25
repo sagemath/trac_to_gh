@@ -6,7 +6,7 @@ archive/issues_003027.json:
     "body": "Assignee: @timabbott\n\nI ran lintian (the Debian packaging error checking tool) on all my packages, and found a bunch of bugs.  I guess the Debian build system is too automated for me to notice these normally.  I've attached a bunch of patches to fix many of these bugs (some others I reported upstream).\n\nIssue created by migration from https://trac.sagemath.org/ticket/3027\n\n",
     "created_at": "2008-04-26T01:30:09Z",
     "labels": [
-        "debian-package",
+        "component: debian-package",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003027.json:
     "title": "[with patches; needs review] Debian lintian fixes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3027",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3027
 
 ---
 
-archive/issue_comments_020811.json:
+archive/issue_comments_020768.json:
 ```json
 {
     "body": "Attachment [cddlib-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/cddlib-lintian.patch) by @timabbott created at 2008-04-26 01:30:17",
     "created_at": "2008-04-26T01:30:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20811",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20768",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [cddlib-lintian.patch](tarball://root/attachments/some-uuid/ticket302
 
 ---
 
-archive/issue_comments_020812.json:
+archive/issue_comments_020769.json:
 ```json
 {
     "body": "Attachment [flint-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/flint-lintian.patch) by @timabbott created at 2008-04-26 01:30:28",
     "created_at": "2008-04-26T01:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20812",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20769",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -65,15 +65,15 @@ Attachment [flint-lintian.patch](tarball://root/attachments/some-uuid/ticket3027
 
 ---
 
-archive/issue_comments_020813.json:
+archive/issue_comments_020770.json:
 ```json
 {
     "body": "Attachment [guava-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/guava-lintian.patch) by @timabbott created at 2008-04-26 01:31:00",
     "created_at": "2008-04-26T01:31:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20813",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20770",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -83,15 +83,15 @@ Attachment [guava-lintian.patch](tarball://root/attachments/some-uuid/ticket3027
 
 ---
 
-archive/issue_comments_020814.json:
+archive/issue_comments_020771.json:
 ```json
 {
     "body": "Attachment [linbox-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/linbox-lintian.patch) by @timabbott created at 2008-04-26 01:31:09",
     "created_at": "2008-04-26T01:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20814",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20771",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -101,15 +101,15 @@ Attachment [linbox-lintian.patch](tarball://root/attachments/some-uuid/ticket302
 
 ---
 
-archive/issue_comments_020815.json:
+archive/issue_comments_020772.json:
 ```json
 {
     "body": "Attachment [ntl-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/ntl-lintian.patch) by @timabbott created at 2008-04-26 01:31:27",
     "created_at": "2008-04-26T01:31:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20815",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20772",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -119,15 +119,15 @@ Attachment [ntl-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/n
 
 ---
 
-archive/issue_comments_020816.json:
+archive/issue_comments_020773.json:
 ```json
 {
     "body": "Attachment [palp-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/palp-lintian.patch) by @timabbott created at 2008-04-26 01:31:36",
     "created_at": "2008-04-26T01:31:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20816",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20773",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -137,15 +137,15 @@ Attachment [palp-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/
 
 ---
 
-archive/issue_comments_020817.json:
+archive/issue_comments_020774.json:
 ```json
 {
     "body": "Attachment [scipy_sandbox-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/scipy_sandbox-lintian.patch) by @timabbott created at 2008-04-26 01:31:56",
     "created_at": "2008-04-26T01:31:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20817",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20774",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -155,15 +155,15 @@ Attachment [scipy_sandbox-lintian.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_020818.json:
+archive/issue_comments_020775.json:
 ```json
 {
     "body": "Attachment [singular-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/singular-lintian.patch) by @timabbott created at 2008-04-26 01:32:13",
     "created_at": "2008-04-26T01:32:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20818",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20775",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -173,15 +173,15 @@ Attachment [singular-lintian.patch](tarball://root/attachments/some-uuid/ticket3
 
 ---
 
-archive/issue_comments_020819.json:
+archive/issue_comments_020776.json:
 ```json
 {
     "body": "Attachment [flintqs-lintian.patch](tarball://root/attachments/some-uuid/ticket3027/flintqs-lintian.patch) by @timabbott created at 2008-04-26 01:34:27",
     "created_at": "2008-04-26T01:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20819",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20776",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -191,15 +191,15 @@ Attachment [flintqs-lintian.patch](tarball://root/attachments/some-uuid/ticket30
 
 ---
 
-archive/issue_comments_020820.json:
+archive/issue_comments_020777.json:
 ```json
 {
     "body": "Patches look good to me. I have slipped them all into their respective spkg without bumping the patch level to avoid forces rebuilds on upgrade. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-26T02:45:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20820",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20777",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -213,15 +213,15 @@ Michael
 
 ---
 
-archive/issue_comments_020821.json:
+archive/issue_comments_020778.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-26T02:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20821",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20778",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -231,15 +231,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020822.json:
+archive/issue_comments_020779.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.alpha0",
     "created_at": "2008-04-26T02:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3027",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20822",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3027#issuecomment-20779",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

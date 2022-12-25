@@ -6,15 +6,14 @@ archive/issues_007029.json:
     "body": "Assignee: tbd\n\nCC:  @dimpase\n\nUsing\n\n* Solaris 10 update 7 on SPARC\n* sage-4.1.2.alpha2\n* Sun Studio 12.1\n* An updated configure script to allow the Sun compiler to be used\n\nI found that pynac-0.1.8.p2 will not build. It appears the Sun C++ compiler simply does not like the C++ code in \n\n\n```\n /opt/xxxsunstudio12.1/bin/CC -DHAVE_CONFIG_H -I. -I.. -I/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/python2.6 -g -c add.cpp  -KPIC -DPIC -o .libs/add.o\n\"/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/local/include/python2.6/pyconfig.h\", line 1004: Warning (Anachronism): Attempt to redefine _FILE_OFFSET_BITS without using #undef.\n\"numeric.h\", line 328: Warning: GiNaC::numeric::compare hides the virtual function GiNaC::basic::compare(const GiNaC::basic&) const.\n\"container.h\", line 692: Error: Could not find a match for std::list<GiNaC::ex>::unique(GiNaC::ex_is_equal) needed in GiNaC::container<std::list<std::_T, std::_Allocator>>::unique_().\n\"matrix.h\", line 108: Error: Operand for operator \"++\" must be an lvalue.\n\"matrix.h\", line 108: Error: Cannot cast from int to GiNaC::matrix_init<GiNaC::ex, GiNaC::ex*>.\n\"symbol.h\", line 108: Warning: GiNaC::symbol::evalf hides the virtual function GiNaC::basic::evalf(int, int) const.\n\"add.cpp\", line 46: Error: Could not find a match for GiNaC::registered_class_options::print_func<GiNaC::registered_class_options::Ctx, GiNaC::registered_class_options::T, GiNaC::registered_class_options::C>(void(GiNaC::add::*)(const GiNaC::print_context&,unsigned)const) needed in<no tag>.\n\"add.cpp\", line 46: Error: Unexpected type name \"GiNaC::print_latex\" encountered.\n\"add.cpp\", line 46: Error: Unexpected type name \"GiNaC::print_csrc\" encountered.\n\"add.cpp\", line 46: Error: Unexpected type name \"GiNaC::print_tree\" encountered.\n\"add.cpp\", line 46: Error: Unexpected type name \"GiNaC::print_python_repr\" encountered.\n\"add.cpp\", line 46: Error: Could not find a match for GiNaC::registered_class_options::print_func<GiNaC::registered_class_options::Ctx, GiNaC::registered_class_options::T, GiNaC::registered_class_options::C>(void(GiNaC::add::*)(const GiNaC::print_context&,unsigned)const) needed in<no tag>.\n\"add.cpp\", line 46: Error: void(GiNaC::add::*)(const GiNaC::print_latex&,unsigned)const is not a structure type.\n\"add.cpp\", line 46: Error: void(GiNaC::add::*)(const GiNaC::print_csrc&,unsigned)const is not a structure type.\n\"add.cpp\", line 46: Error: void(GiNaC::expairseq::*)(const GiNaC::print_tree&,unsigned)const is not a structure type.\n\"add.cpp\", line 46: Error: Cannot cast from int to GiNaC::class_info<GiNaC::registered_class_options>.\n13 Error(s) and 3 Warning(s) detected.\nmake[4]: *** [add.lo] Error 1\nmake[4]: Leaving directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/pynac-0.1.8.p2/src/ginac'\nmake[3]: *** [all-recursive] Error 1\nmake[3]: Leaving directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/pynac-0.1.8.p2/src'\nmake[2]: *** [all] Error 2\nmake[2]: Leaving directory `/export/home/drkirkby/sage/gcc32/sage-4.1.2.alpha2/spkg/build/pynac-0.1.8.p2/src'\nError building pynac.\n\nreal    0m39.101s\nuser    0m20.604s\nsys     0m17.258s\nsage: An error occurred while installing pynac-0.1.8.p2\n```\n\n\nI do not know C++ myself. \n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7029\n\n",
     "created_at": "2009-09-27T13:35:58Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Sun C++ compiler does not accept  pynac C++ code",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7029",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -77,15 +76,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7029
 
 ---
 
-archive/issue_comments_058222.json:
+archive/issue_comments_058113.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7029",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58222",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58113",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -95,15 +94,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_058223.json:
+archive/issue_comments_058114.json:
 ```json
 {
     "body": "Outdated, should be closed",
     "created_at": "2020-07-08T16:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7029",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58223",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58114",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -113,15 +112,15 @@ Outdated, should be closed
 
 ---
 
-archive/issue_comments_058224.json:
+archive/issue_comments_058115.json:
 ```json
 {
     "body": "The goal of these tickets is laudable, but:\n\n* We need at least one user who is able to test.\n* The package/OS information on this ticket is outdated beyond usefulness.\n* Upstream is a better place to report portability issues these days.",
     "created_at": "2020-07-12T20:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7029",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58224",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58115",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -135,15 +134,15 @@ The goal of these tickets is laudable, but:
 
 ---
 
-archive/issue_comments_058225.json:
+archive/issue_comments_058116.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-07-12T20:02:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7029",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58225",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58116",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -153,15 +152,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058226.json:
+archive/issue_comments_058117.json:
 ```json
 {
     "body": "Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.",
     "created_at": "2020-07-15T07:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7029",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58226",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58117",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -171,15 +170,15 @@ Closing very old sun/solaris tickets. Any tentative for this OS should start afr
 
 ---
 
-archive/issue_comments_058227.json:
+archive/issue_comments_058118.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-07-15T07:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7029",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58227",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/7029#issuecomment-58118",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002287.json:
     "body": "Assignee: mabshoff\n\nLog:\nsizekoc1.c: In function \u2018main\u2019:\nsizekoc1.c:134: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\nsizekoc1.c:153: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\nsizekoc1.c:230: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc1 sizekoc1.o\nsize sizekoc1\n   text    data     bss     dec     hex filename\n  14622     296 82244256        82259174        4e72ce6 sizekoc1\ngcc -O -DLARGE_MEM -DVERBOSE -DCCPERM -DIPERM -c sizekoc2.c\nsizekoc2.c: In function \u2018main\u2019:\nsizekoc2.c:171: warning: incompatible implicit declaration of built-in function \u2018exit\u2019sizekoc2.c:190: warning: incompatible implicit declaration of built-in function \u2018exit\u2019sizekoc2.c:267: warning: incompatible implicit declaration of built-in function \u2018exit\u2019\ngcc -O -DLARGE_MEM -DVERBOSE -o sizekoc2 sizekoc2.o\nsize sizekoc2\n   text    data     bss     dec     hex filename\n  15212     296 409577600       409593108       1869e514        sizekoc2\nmake[3]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/dik'\nmake[3]: Entering directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/reid'\nmake[3]: Nothing to be done for `all'. \nmake[3]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src/reid'\nmkdir -p /home/yqiang/Software/sage-2.10.2/local/bin\n/usr/bin/install reid/optimal /home/yqiang/Software/sage-2.10.2/local/bin\nmake[2]: /usr/bin/install: Command not found\nmake[2]: *** [install] Error 127\nmake[2]: Leaving directory `/home/yqiang/Software/sage-2.10.2/spkg/build/rubiks-20070912.p2/src'\n\nreal    0m29.404s\nuser    0m28.275s\nsys     0m1.107s\nsage: An error occurred while installing rubiks-20070912.p2\nPlease email sage-devel http://groups.google.com/group/sage-devel\nexplaining the problem and send the relevant part of\n\n\n-------------------------\n\nOn my distribution 'install' is in /bin/install instead of /usr/bin/install. Maybe the script needs to check where 'install' actually is.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2287\n\n",
     "created_at": "2008-02-24T01:10:30Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "error installing rubiks",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2287",
-    "user": "@yqiang"
+    "user": "https://github.com/yqiang"
 }
 ```
 Assignee: mabshoff
@@ -65,15 +64,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2287
 
 ---
 
-archive/issue_comments_015168.json:
+archive/issue_comments_015135.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-02-24T02:52:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2287",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15168",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15135",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_015169.json:
+archive/issue_comments_015136.json:
 ```json
 {
     "body": "An updated spkg can be found at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.11/alpha1/rubiks-20070912.p3.spkg\n\nChanges:\n* SAGE_LOCAL check (#633)\n* remove binary crap\n* rename cube to dikcube to avoid name clash with polymake (#2595)\n* detect the location of install instead of hardcoding it (#2287)",
     "created_at": "2008-03-21T13:00:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2287",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15169",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15136",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +108,15 @@ Changes:
 
 ---
 
-archive/issue_comments_015170.json:
+archive/issue_comments_015137.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2008-03-21T13:05:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2287",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15170",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15137",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -127,15 +126,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_015171.json:
+archive/issue_comments_015138.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-21T13:17:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2287",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15171",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15138",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -145,15 +144,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_015172.json:
+archive/issue_comments_015139.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha1",
     "created_at": "2008-03-21T13:17:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2287",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15172",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2287#issuecomment-15139",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

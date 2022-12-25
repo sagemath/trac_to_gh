@@ -6,15 +6,14 @@ archive/issues_000333.json:
     "body": "Assignee: boothby\n\nWilliam's idea: Notebook splash page should show last cell evaluated.\n\nTom's addition: a \"privacy\" flag should be added to worksheets, so people can prevent their worksheets from broadcasting to the splash page.  This is less important.\n\nIssue created by migration from https://trac.sagemath.org/ticket/333\n\n",
     "created_at": "2007-03-26T07:03:46Z",
     "labels": [
-        "notebook",
-        "trivial",
-        "enhancement"
+        "component: notebook",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Notebook monitor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/333",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: boothby
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/333
 
 ---
 
-archive/issue_comments_001641.json:
+archive/issue_comments_001636.json:
 ```json
 {
     "body": "I think this ticket should be set to invalid because the notebook has a multi-user model now.",
     "created_at": "2008-03-18T10:07:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/333#issuecomment-1641",
-    "user": "TimothyClemans"
+    "url": "https://github.com/sagemath/sagetest/issues/333#issuecomment-1636",
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 
@@ -49,15 +48,15 @@ I think this ticket should be set to invalid because the notebook has a multi-us
 
 ---
 
-archive/issue_comments_001642.json:
+archive/issue_comments_001637.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-03-18T10:10:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/333",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/333#issuecomment-1642",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/333#issuecomment-1637",
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_007194.json:
     "body": "Assignee: @malb\n\nCC:  @malb @burcin hannes@mathematik.uni-kl.de\n\nKeywords: singular\n\nwrapped list, use intvec as input, wrapped ring (RingWrap for return)...\nThis can wrap a lot more of Singular functions now.\n\nThis needs the header file lists.h, which is not installed by default.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7194\n\n",
     "created_at": "2009-10-12T12:23:23Z",
     "labels": [
-        "commutative algebra",
-        "major",
-        "enhancement"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "extended singular functions interface, needs work",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7194",
-    "user": "PolyBoRi"
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 Assignee: @malb
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7194
 
 ---
 
-archive/issue_comments_059652.json:
+archive/issue_comments_059540.json:
 ```json
 {
     "body": "Attachment [singular_list.2.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.2.patch) by PolyBoRi created at 2009-10-13 09:08:55",
     "created_at": "2009-10-13T09:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59652",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59540",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -54,15 +52,15 @@ Attachment [singular_list.2.patch](tarball://root/attachments/some-uuid/ticket71
 
 ---
 
-archive/issue_comments_059653.json:
+archive/issue_comments_059541.json:
 ```json
 {
     "body": "I updated the patch. It now supports matrices as well :-).\nI also fixes some problem when returning polynomials.\nCheers,\nMichael\n\nP.S.: Next targets are intmat and letter place.",
     "created_at": "2009-10-13T09:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59653",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59541",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -77,15 +75,15 @@ P.S.: Next targets are intmat and letter place.
 
 ---
 
-archive/issue_comments_059654.json:
+archive/issue_comments_059542.json:
 ```json
 {
     "body": "Hi!\nA small demonstration of the copy and paste feature:\n\nSingular:\n\n```\nproc content(f)\n\"USAGE:   content(f); f polynomial/vector\nRETURN:  number, the content (greatest common factor of coefficients)\n         of the polynomial/vector f\nSEE ALSO: cleardenom\nEXAMPLE: example content; shows an example\n\"\n{\n  if (f==0) { return(number(1)); }\n  return(leadcoef(f)/leadcoef(cleardenom(f)));\n}\nexample\n{ \"EXAMPLE:\"; echo = 2;\n   ring r=0,(x,y,z),(c,lp);\n   content(3x2+18xy-27xyz);\n   vector v=[3x2+18xy-27xyz,15x2+12y4,3];\n   content(v);\n}\n```\n\n\nSage:\n\n```python\n\nfrom sage.libs.singular.function import singular_function, lib\nleadcoef =  singular_function(\"leadcoef\")\ncleardenom = singular_function(\"cleardenom\")\n\ndef content(f):\n    \"\"\"\n    Examples:\n    sage: P.<x,y,z>=PolynomialRing(QQ)\n    sage: content(3*x**2+18*x*y-27*x*y*z)\n    -3\n    \"\"\"\n    if f==0:\n        return 1\n    return leadcoef(f)/leadcoef(cleardenom(f))\n\n```\n",
     "created_at": "2009-10-13T11:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59654",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59542",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -142,15 +140,15 @@ def content(f):
 
 ---
 
-archive/issue_comments_059655.json:
+archive/issue_comments_059543.json:
 ```json
 {
     "body": "Attachment [singular_list.3.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.3.patch) by PolyBoRi created at 2009-10-13 12:27:30",
     "created_at": "2009-10-13T12:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59655",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59543",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -160,15 +158,15 @@ Attachment [singular_list.3.patch](tarball://root/attachments/some-uuid/ticket71
 
 ---
 
-archive/issue_comments_059656.json:
+archive/issue_comments_059544.json:
 ```json
 {
     "body": "How to construct ring with parameters\n\n```python\nP.<x,y,z>=PolynomialRing(QQ)\ncharacteristic=0\nnumber_of_variables=1\nnumber_of_parameters=3\nl=[\n    [0, ['a','b','c'], [['dp', number_of_parameters*(1,)], ['C', (0,)]], P.ideal([0])]\n, ['x', 'y', 'z'], [['dp', number_of_parameters*(1,)], ['C', (0,)]], P.ideal([0])]\nring=singular_function(\"ring\")\nring(l, ring=P)\n```\n",
     "created_at": "2009-10-13T13:07:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59656",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59544",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -191,15 +189,15 @@ ring(l, ring=P)
 
 ---
 
-archive/issue_comments_059657.json:
+archive/issue_comments_059545.json:
 ```json
 {
     "body": "how to make letter place\nsage: from sage.libs.singular.function import lib, singular_function\nsage: P.<x,y,z>=QQ[]\nsage: lib(\"freegb.lib\")\nsage: make_letter_place_ring = singular_function(\"makeLetterplaceRing\")\nsage: make_letter_place_ring(10, ring=P)\n<RingWrap>",
     "created_at": "2009-10-13T13:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59657",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59545",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -215,15 +213,15 @@ sage: make_letter_place_ring(10, ring=P)
 
 ---
 
-archive/issue_comments_059658.json:
+archive/issue_comments_059546.json:
 ```json
 {
     "body": "sorry:\n\n\n```python\n\nsage: from sage.libs.singular.function import lib, singular_function\nsage: P.<x,y,z>=QQ[]\nsage: lib(\"freegb.lib\")\nsage: \nsage: make_letter_place_ring = singular_function(\"makeLetterplaceRing\")\nsage: make_letter_place_ring(10, ring=P)\n<RingWrap>\n```\n",
     "created_at": "2009-10-13T13:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59658",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59546",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -246,15 +244,15 @@ sage: make_letter_place_ring(10, ring=P)
 
 ---
 
-archive/issue_comments_059659.json:
+archive/issue_comments_059547.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2009-10-15T11:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59659",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59547",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -264,15 +262,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_059660.json:
+archive/issue_comments_059548.json:
 ```json
 {
     "body": "the latest patch supports intvec/intmat\nCheers,\nMichael",
     "created_at": "2009-10-15T11:18:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59660",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59548",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -284,15 +282,15 @@ Michael
 
 ---
 
-archive/issue_comments_059661.json:
+archive/issue_comments_059549.json:
 ```json
 {
     "body": "Attachment [singular_list.4.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.4.patch) by PolyBoRi created at 2009-10-15 11:19:31",
     "created_at": "2009-10-15T11:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59661",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59549",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -302,15 +300,15 @@ Attachment [singular_list.4.patch](tarball://root/attachments/some-uuid/ticket71
 
 ---
 
-archive/issue_comments_059662.json:
+archive/issue_comments_059550.json:
 ```json
 {
     "body": "Attachment [singular_list.5.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.5.patch) by PolyBoRi created at 2009-10-15 15:08:13\n\nthe recent version wraps vectors over P**n in both direction.\nNow, I am about hunting the modules.",
     "created_at": "2009-10-15T15:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59662",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59550",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -323,15 +321,15 @@ Now, I am about hunting the modules.
 
 ---
 
-archive/issue_comments_059663.json:
+archive/issue_comments_059551.json:
 ```json
 {
     "body": "Attachment [singular_list.7.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.7.patch) by PolyBoRi created at 2009-10-16 13:01:50",
     "created_at": "2009-10-16T13:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59663",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59551",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -341,15 +339,15 @@ Attachment [singular_list.7.patch](tarball://root/attachments/some-uuid/ticket71
 
 ---
 
-archive/issue_comments_059664.json:
+archive/issue_comments_059552.json:
 ```json
 {
     "body": "The latest version supports also modules and free resolution objects.\n\nFree resolution objects form some lazy blackbox in Singular, so I just did some basic blackbox. The rest can be accessed via singular functions using this interface.\nSo, we might extend Resolution object interface at some time, when it is needed.\nCheers,\nMichael",
     "created_at": "2009-10-16T13:06:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59664",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59552",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -364,15 +362,15 @@ Michael
 
 ---
 
-archive/issue_comments_059665.json:
+archive/issue_comments_059553.json:
 ```json
 {
     "body": "Attachment [singular_list.8.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.8.patch) by PolyBoRi created at 2009-10-16 14:15:40",
     "created_at": "2009-10-16T14:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59665",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59553",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -382,15 +380,15 @@ Attachment [singular_list.8.patch](tarball://root/attachments/some-uuid/ticket71
 
 ---
 
-archive/issue_comments_059666.json:
+archive/issue_comments_059554.json:
 ```json
 {
     "body": "Attachment [singular_list.9.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.9.patch) by @malb created at 2009-11-18 17:10:23\n\nA new SPKG installing `Singular/lists.h` is available here\n\n   http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.p2.spkg",
     "created_at": "2009-11-18T17:10:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59666",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59554",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -404,15 +402,15 @@ A new SPKG installing `Singular/lists.h` is available here
 
 ---
 
-archive/issue_comments_059667.json:
+archive/issue_comments_059555.json:
 ```json
 {
     "body": "Attachment [singular_lists_referee.patch](tarball://root/attachments/some-uuid/ticket7194/singular_lists_referee.patch) by @malb created at 2009-11-18 17:45:30\n\nI give Michael's patch a positive review. However, somebody needs to review my documentation/cleanup patch and the SPKG.\n\nHow to apply:\n* install http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.p2.spkg\n* apply singular_list.10.patch\n* apply singular_lists_referee.patch",
     "created_at": "2009-11-18T17:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59667",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59555",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -429,15 +427,15 @@ How to apply:
 
 ---
 
-archive/issue_comments_059668.json:
+archive/issue_comments_059556.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-11-18T17:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59668",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59556",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -447,15 +445,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_059669.json:
+archive/issue_comments_059557.json:
 ```json
 {
     "body": "Michael, Burcin, any takers for looking at my referee patch?",
     "created_at": "2009-12-01T16:39:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59669",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59557",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -465,15 +463,15 @@ Michael, Burcin, any takers for looking at my referee patch?
 
 ---
 
-archive/issue_comments_059670.json:
+archive/issue_comments_059558.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-01T18:19:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59670",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59558",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -483,15 +481,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_059671.json:
+archive/issue_comments_059559.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2009-12-01T18:19:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59671",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59559",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -501,15 +499,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_059672.json:
+archive/issue_comments_059560.json:
 ```json
 {
     "body": "I get all sorts of Cython errors in function.pyx about cdef functions not being declared.\n\nDid you try this on 4.3.alpha0?",
     "created_at": "2009-12-02T08:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59672",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59560",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -521,15 +519,15 @@ Did you try this on 4.3.alpha0?
 
 ---
 
-archive/issue_comments_059673.json:
+archive/issue_comments_059561.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2009-12-02T08:29:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59673",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59561",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -539,15 +537,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_059674.json:
+archive/issue_comments_059562.json:
 ```json
 {
     "body": "Attachment [singular_list.10.patch](tarball://root/attachments/some-uuid/ticket7194/singular_list.10.patch) by @malb created at 2009-12-02 11:12:03\n\nfixed to work with 4.3",
     "created_at": "2009-12-02T11:12:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59674",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59562",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -559,15 +557,15 @@ fixed to work with 4.3
 
 ---
 
-archive/issue_comments_059675.json:
+archive/issue_comments_059563.json:
 ```json
 {
     "body": "I fixed the compilation failures under 4.3, strange that it compiled with 4.2. The instructions remain the same:\n\n* install  http://sage.math.washington.edu/home/malb/spkgs/singular-3-1-0-4-20090818.p2.spkg \n* apply `singular_list.10.patch` (fixed)\n* apply `singular_lists_referee.patch`",
     "created_at": "2009-12-02T11:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59675",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59563",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -581,15 +579,15 @@ I fixed the compilation failures under 4.3, strange that it compiled with 4.2. T
 
 ---
 
-archive/issue_comments_059676.json:
+archive/issue_comments_059564.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-02T11:39:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59676",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59564",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -599,15 +597,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_059677.json:
+archive/issue_comments_059565.json:
 ```json
 {
     "body": "Thanks to all, who helped to get that code into Sage (while I was in holidays).\nYou made me really happy :-).\n\nCheers,\nMichael",
     "created_at": "2009-12-07T13:27:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7194",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59677",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/7194#issuecomment-59565",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 

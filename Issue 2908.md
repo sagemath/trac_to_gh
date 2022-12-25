@@ -6,15 +6,14 @@ archive/issues_002908.json:
     "body": "Assignee: somebody\n\nWith 3.0.alpha2 I get the following:\n\n\n```\nsage: R.<x> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\nsage: R.<x> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = QQ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n\nsage: R.<x,y> = ZZ[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\n2*x\n\nsage: R.<x,y> = GF(5)[]\nsage: p = 2*x; q = 2*x\nsage: p.gcd(q)\nx\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2908\n\n",
     "created_at": "2008-04-13T17:47:25Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Polynomial gcd doesn't take coefficients into account",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2908",
-    "user": "@burcin"
+    "user": "https://github.com/burcin"
 }
 ```
 Assignee: somebody
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2908
 
 ---
 
-archive/issue_comments_020041.json:
+archive/issue_comments_020000.json:
 ```json
 {
     "body": "I think that GCDs for polynomials over a field should return monic polynomials (which seems to be the current behavior); that is, I think this bug is invalid.\n\n(According to *Algorithms for Computer Algebra*, for instance, GCD is defined only up to units; so for your first problem, x, 2*x, and 22/7*x would all be GCDs of p and q.  We need to pick one, and picking the monic polynomial seems like the best choice.)\n\nWhat do you think this should return?\n\n```\nsage: R.<x> = QQ[]\nsage: p = (5*x + 7) * (3*x + 1)\nsage: q = (x/7 + 1/5) * (2*x + 2)\nsage: p.gcd(q)\nx + 7/5\n```\n",
     "created_at": "2008-04-13T18:16:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20041",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20000",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -95,15 +94,15 @@ x + 7/5
 
 ---
 
-archive/issue_comments_020042.json:
+archive/issue_comments_020001.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-04-13T18:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20042",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20001",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -113,15 +112,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_020043.json:
+archive/issue_comments_020002.json:
 ```json
 {
     "body": "You're right, GCD is defined up to units and this is invalid.",
     "created_at": "2008-04-13T18:51:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20043",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/2908#issuecomment-20002",
+    "user": "https://github.com/burcin"
 }
 ```
 

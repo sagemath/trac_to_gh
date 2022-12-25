@@ -6,14 +6,12 @@ archive/issues_009669.json:
     "body": "Assignee: olazo\n\nCC:  @kcrisman\n\nThere is an excelent 2d contour_plot. We should also have 3d one.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9669\n\n",
     "created_at": "2010-08-02T16:09:00Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "title": "Create contour_plot3d",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9669",
-    "user": "olazo"
+    "user": "https://trac.sagemath.org/admin/accounts/users/olazo"
 }
 ```
 Assignee: olazo
@@ -30,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9669
 
 ---
 
-archive/issue_comments_093923.json:
+archive/issue_comments_093766.json:
 ```json
 {
     "body": "Can you attach a picture or two of exactly what you would have in mind for this?",
     "created_at": "2011-04-20T02:52:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9669#issuecomment-93923",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9669#issuecomment-93766",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -48,15 +46,15 @@ Can you attach a picture or two of exactly what you would have in mind for this?
 
 ---
 
-archive/issue_comments_093924.json:
+archive/issue_comments_093767.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2011-04-20T02:53:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9669",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9669#issuecomment-93924",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9669#issuecomment-93767",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_000902.json:
     "body": "Assignee: @robertwb\n\nDo this by numerical approximation, algdep, checking equality.\n\nNOTE: Robert Bradshaw has already done this!! I haven't seen any code, etc.\n\nIssue created by migration from https://trac.sagemath.org/ticket/902\n\n",
     "created_at": "2007-10-15T16:54:15Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.8",
     "title": "implement computation of minpoly of symbolics",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/902",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @robertwb
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/902
 
 ---
 
-archive/issue_comments_005541.json:
+archive/issue_comments_005523.json:
 ```json
 {
     "body": "Attachment [symbolic-minpoly.hg](tarball://root/attachments/some-uuid/ticket902/symbolic-minpoly.hg) by @robertwb created at 2007-10-15 19:49:01\n\nThe above patch implements this. \n\nI also added a bit of code to the ring __getitem__ method so constructions like ZZ[sqrt(2)] and QQ[I] work. I have not yet run \"sage -testall\"to make sure that it doesn't ruin any doctests elsewhere, but it should be good. It is also unclear how to handle names in this case, so the code there just names generators a, b, c, ... except for a couple of special cases.",
     "created_at": "2007-10-15T19:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/902#issuecomment-5541",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/902#issuecomment-5523",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -53,15 +51,15 @@ I also added a bit of code to the ring __getitem__ method so constructions like 
 
 ---
 
-archive/issue_comments_005542.json:
+archive/issue_comments_005524.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-19T02:29:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/902#issuecomment-5542",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/902#issuecomment-5524",
+    "user": "https://github.com/williamstein"
 }
 ```
 

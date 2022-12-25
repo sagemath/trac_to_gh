@@ -6,15 +6,14 @@ archive/issues_001966.json:
     "body": "Assignee: mabshoff\n\nProbably around the upgrade to 1.0.4 the inline_fortran command broke on osx.\n\nThe following spkg fixes it\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/numpy-20080104-1.0.4.p2.spkg\n\nalso I changed the inline_fortran.py file so the inline_fortran doctests is no longer optional (it was optional when fortran wasn't required, but now it is, so there is no reason for it to be optional).\n\nhttp://sage.math.washington.edu/home/jkantor/spkgs/inline_fortran.patch\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1966\n\n",
     "created_at": "2008-01-29T07:09:15Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "[with spkgs,patch ] inline_fortran broke on OSX",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1966",
-    "user": "jkantor"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkantor"
 }
 ```
 Assignee: mabshoff
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1966
 
 ---
 
-archive/issue_comments_012735.json:
+archive/issue_comments_012704.json:
 ```json
 {
     "body": "Builds and testall passes with scipy* rebuild on Linux and OSX. `testall` passes.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-30T08:30:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1966",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1966#issuecomment-12735",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1966#issuecomment-12704",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -60,15 +59,15 @@ Michael
 
 ---
 
-archive/issue_comments_012736.json:
+archive/issue_comments_012705.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-30T08:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1966",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1966#issuecomment-12736",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1966#issuecomment-12705",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -78,15 +77,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_012737.json:
+archive/issue_comments_012706.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.rc3",
     "created_at": "2008-01-30T08:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1966",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1966#issuecomment-12737",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1966#issuecomment-12706",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

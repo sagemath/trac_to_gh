@@ -6,15 +6,14 @@ archive/issues_004480.json:
     "body": "Assignee: mabshoff\n\nCC:  @tornaria\n\nThe attached patch builds the entire dependency tree from scratch in 0.6 seconds, and caches it to disk so subsequent dependency checking takes 0.05 seconds to verify. \n\nIssue created by migration from https://trac.sagemath.org/ticket/4480\n\n",
     "created_at": "2008-11-09T12:45:56Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] cython dependancy checking is too slow",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4480",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: mabshoff
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4480
 
 ---
 
-archive/issue_comments_033092.json:
+archive/issue_comments_033027.json:
 ```json
 {
     "body": "Attachment [4480-cython-deps.patch](tarball://root/attachments/some-uuid/ticket4480/4480-cython-deps.patch) by @robertwb created at 2008-11-09 13:07:50",
     "created_at": "2008-11-09T13:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33092",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33027",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [4480-cython-deps.patch](tarball://root/attachments/some-uuid/ticket4
 
 ---
 
-archive/issue_comments_033093.json:
+archive/issue_comments_033028.json:
 ```json
 {
     "body": "So Gonzalo and I are in the middle of writing the build process in `setup.py`. Luckily, the business of finding includes is the one piece of code we were reusing! So I'll review/merge this into our patch once we're done, which should be today.",
     "created_at": "2008-11-09T16:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33093",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33028",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -67,15 +66,15 @@ So Gonzalo and I are in the middle of writing the build process in `setup.py`. L
 
 ---
 
-archive/issue_comments_033094.json:
+archive/issue_comments_033029.json:
 ```json
 {
     "body": "Attachment [trac-4480-rc0.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-rc0.patch) by @craigcitro created at 2008-11-13 13:42:14\n\nHere we go! So this patch applies on top of `rc0` + the patch at #4500, because it was a needed fix. With this patch in, we've got it all: fast cached dependency checking, parallel calls to Cython, and dozens of small improvements to the build system thrown in, too. I also reorganized `setup.py` and created a `module_list.py` to have the list of extension modules. \n\nRobert, I've looked at (probably every line of) your code which is now in here -- can you review the rest? I did make small changes to one or two of your functions; in particular, `parse_deps`, I think.\n\nI've run it through some paces, but I'm happy to fix any bugs that pop up.\n\nCredit should go to Rob, Gonzalo, and me.",
     "created_at": "2008-11-13T13:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33094",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33029",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -93,15 +92,15 @@ Credit should go to Rob, Gonzalo, and me.
 
 ---
 
-archive/issue_comments_033095.json:
+archive/issue_comments_033030.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-11-13T13:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33095",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33030",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_033096.json:
+archive/issue_comments_033031.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2008-11-13T13:42:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33096",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33031",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -129,15 +128,15 @@ Changing assignee from mabshoff to @craigcitro.
 
 ---
 
-archive/issue_comments_033097.json:
+archive/issue_comments_033032.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2008-11-13T13:42:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33097",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33032",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -147,15 +146,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_033098.json:
+archive/issue_comments_033033.json:
 ```json
 {
     "body": "I am giving a positive review to all the changes that move the extensions to the new file. But we need a formal review for Robert's changes and since Craig was involved here, too, I am not so sure who would review what portion of those.\n\nI am testing a vanilla tree with the fixes here and #4500 applied, so I should be able to at least see if everything works as expected when combining all pieces into a virgin  build.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-13T16:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33098",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33033",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -173,15 +172,15 @@ Michael
 
 ---
 
-archive/issue_comments_033099.json:
+archive/issue_comments_033034.json:
 ```json
 {
     "body": "I'll look at this today. I only apply the last patch, right?",
     "created_at": "2008-11-13T18:03:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33099",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33034",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -191,15 +190,15 @@ I'll look at this today. I only apply the last patch, right?
 
 ---
 
-archive/issue_comments_033100.json:
+archive/issue_comments_033035.json:
 ```json
 {
     "body": "Yes, but you should also apply \n\nhttp://trac.sagemath.org/sage_trac/attachment/ticket/4500/trac-4500.patch\n\nin this context. I found an issue when building from vanilla with both the last patch here and trac-4500.patch applied and there is an issue that I mentioned on the other ticket with a work around fix, but I am not sure if it is the correct fix. It does work, but that does not mean that it is either elegant or proper.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-13T18:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33100",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33035",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -217,15 +216,15 @@ Michael
 
 ---
 
-archive/issue_comments_033101.json:
+archive/issue_comments_033036.json:
 ```json
 {
     "body": "It looks good to me...this is a much needed cleanup! \n\nI think mabshoff's fix proposed #4500 is good, and should also be applied.",
     "created_at": "2008-11-13T22:27:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33101",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33036",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -237,15 +236,15 @@ I think mabshoff's fix proposed #4500 is good, and should also be applied.
 
 ---
 
-archive/issue_comments_033102.json:
+archive/issue_comments_033037.json:
 ```json
 {
     "body": "Ditto on mabshoff's fix at #4500.",
     "created_at": "2008-11-13T22:36:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33102",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33037",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -255,15 +254,15 @@ Ditto on mabshoff's fix at #4500.
 
 ---
 
-archive/issue_comments_033103.json:
+archive/issue_comments_033038.json:
 ```json
 {
     "body": "In addition to mabshoff's fix at #4500, I think we should add the following:\n\n\n```\ndiff -r c543000d6447 setup.py\n--- a/setup.py  Thu Nov 13 05:32:07 2008 -0800\n+++ b/setup.py  Thu Nov 13 16:26:41 2008 -0800\n@@ -13,11 +13,11 @@\n else:\n     sdist = False\n \n-# uncomment to turn warnings off\n-# import distutils.sysconfig\n-# NO_WARN = True\n-# if NO_WARN and distutils.sysconfig.get_config_var('CC').startswith(\"gcc\"):\n-#     extra_compile_args = ['-w']\n+# comment these four lines out to turn on warnings from gcc\n+import distutils.sysconfig\n+NO_WARN = True\n+if NO_WARN and distutils.sysconfig.get_config_var('CC').startswith(\"gcc\"):\n+    extra_compile_args = ['-w']\n \n if not os.environ.has_key('SAGE_ROOT'):\n     print \"    ERROR: The environment variable SAGE_ROOT must be defined.\"\n```\n\n\nThis just turns warnings back off -- as William points out, it's a lot of output for the unsuspecting. Michael and I had discussed this when we changed it, and it would be good to sit down and actually look at the warnings once to see if anything interesting is being turned up. In the interim, though, let's not spam. ;)",
     "created_at": "2008-11-14T00:31:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33103",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33038",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -300,15 +299,15 @@ This just turns warnings back off -- as William points out, it's a lot of output
 
 ---
 
-archive/issue_comments_033104.json:
+archive/issue_comments_033039.json:
 ```json
 {
     "body": "I'm OK with that.",
     "created_at": "2008-11-14T01:17:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33104",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33039",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -318,15 +317,15 @@ I'm OK with that.
 
 ---
 
-archive/issue_comments_033105.json:
+archive/issue_comments_033040.json:
 ```json
 {
     "body": "Can somebody post a cumulative patch here?\n\nCheers,\n\nMichael",
     "created_at": "2008-11-14T03:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33105",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33040",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -340,15 +339,15 @@ Michael
 
 ---
 
-archive/issue_comments_033106.json:
+archive/issue_comments_033041.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-14T04:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33106",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33041",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -358,15 +357,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_033107.json:
+archive/issue_comments_033042.json:
 ```json
 {
     "body": "Attachment [trac-4480-cumulative.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-cumulative.patch) by mabshoff created at 2008-11-14 04:02:40\n\nMerged trac-4480-cumulative.patch in Sage 3.2.rc1",
     "created_at": "2008-11-14T04:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33107",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33042",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -378,15 +377,15 @@ Merged trac-4480-cumulative.patch in Sage 3.2.rc1
 
 ---
 
-archive/issue_comments_033108.json:
+archive/issue_comments_033043.json:
 ```json
 {
     "body": "okay, maybe it only feels like part 18. :)",
     "created_at": "2008-11-14T05:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33108",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33043",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -396,15 +395,15 @@ okay, maybe it only feels like part 18. :)
 
 ---
 
-archive/issue_comments_033109.json:
+archive/issue_comments_033044.json:
 ```json
 {
     "body": "Attachment [trac-4480-pt18.patch](tarball://root/attachments/some-uuid/ticket4480/trac-4480-pt18.patch) by mabshoff created at 2008-11-14 05:24:29\n\nMerged trac-4480-pt18.patch in Sage 3.2.rc1.\n\nThanks Craig.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-14T05:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4480",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33109",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4480#issuecomment-33044",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

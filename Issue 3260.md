@@ -6,15 +6,14 @@ archive/issues_003260.json:
     "body": "Assignee: failure\n\nCC:  @mezzarobba\n\nWhen adding optional spkgs to Sage, it is necessary to go through the Python interface file and put #optional on every single line of every single doctest, to indicate that those doctests should not be run.\n\nIt would be nice to be able to put #optional at, say, the top of the file, or in the docstring for the module or class, and then have that imply that every doctest within is optional.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3260\n\n",
     "created_at": "2008-05-20T12:20:28Z",
     "labels": [
-        "doctest",
-        "minor",
-        "enhancement"
+        "component: doctest",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make #optional usable at a higher level",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3260",
-    "user": "broune"
+    "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
 Assignee: failure
@@ -34,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3260
 
 ---
 
-archive/issue_comments_022551.json:
+archive/issue_comments_022504.json:
 ```json
 {
     "body": "COMMENTS:\n1. This is \"already supported\", but in an obscure way, which might very well be broken (?).  In local/bin/sage-doctest we have:\n\n```\n    if not optional and sl.find(\"optional\") != -1 and \\\n               sl.find('package') != -1 and sl.find('installed'):\n        return ''\n```\n\nThus if you put anywhere in the docstring for a function (or the top of the file) all\nthree works optional, package, and installed, then everything is considered optional.\n\n\n2. I don't really like your proposal, even though I once implemented it somewhat.  Generally speaking I think it's better that every example makes it crystal clear that the line of code being illustrated will NOT work without the user installing an optional package.    Users (like me) absolutely hate pasting in random lines and having them fail for no obvious reason.  It is, of course, good if error messages for optional code clearly indicate their optionality, but sometimes people don't read error messages.   This is a usability/psychology sort of thing.",
     "created_at": "2008-05-21T12:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22551",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22504",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +64,15 @@ three works optional, package, and installed, then everything is considered opti
 
 ---
 
-archive/issue_comments_022552.json:
+archive/issue_comments_022505.json:
 ```json
 {
     "body": "If it already works, then one way to resolve this ticket is to document that in the appropriate places.\n\nAs for your number 2, I understand your objection to be that the docstring gotten when using Sage's built-in help-system should warn users that a particular doctest requires some optional package to work.\n\nI can get behind that. It should not be hard to inject a notice of that into the docstring shown in the help system, without having them sprinkled all over the Python file. This notice could be much more helpful than a comment saying \"#optional\", since it is not obvious what a comment saying #optional means, if you do not already know. E.g. Sage could inject a string before each optional doctest saying \"This example depends on an optional package being installed.\" Or it could preserve the status quo by injecting #optional on each line.",
     "created_at": "2008-05-21T13:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22552",
-    "user": "broune"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22505",
+    "user": "https://trac.sagemath.org/admin/accounts/users/broune"
 }
 ```
 
@@ -87,15 +86,15 @@ I can get behind that. It should not be hard to inject a notice of that into the
 
 ---
 
-archive/issue_comments_022553.json:
+archive/issue_comments_022506.json:
 ```json
 {
     "body": "Wow, 5 years.  This ticket should be re-examined now that #12415 is finished.  Some solutions may be more tractable now.",
     "created_at": "2013-03-14T22:01:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22553",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22506",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -105,15 +104,15 @@ Wow, 5 years.  This ticket should be re-examined now that #12415 is finished.  S
 
 ---
 
-archive/issue_comments_022554.json:
+archive/issue_comments_022507.json:
 ```json
 {
     "body": "Changing component from doctest to doctest framework.",
     "created_at": "2013-03-28T23:15:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22554",
-    "user": "@roed314"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22507",
+    "user": "https://github.com/roed314"
 }
 ```
 
@@ -123,15 +122,15 @@ Changing component from doctest to doctest framework.
 
 ---
 
-archive/issue_comments_022555.json:
+archive/issue_comments_022508.json:
 ```json
 {
     "body": "Duplicate of #20427.",
     "created_at": "2016-08-12T09:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22555",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22508",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -141,15 +140,15 @@ Duplicate of #20427.
 
 ---
 
-archive/issue_comments_022556.json:
+archive/issue_comments_022509.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2016-08-12T09:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22556",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22509",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -159,15 +158,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_022557.json:
+archive/issue_comments_022510.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2016-08-12T09:14:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22557",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22510",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -177,15 +176,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_022558.json:
+archive/issue_comments_022511.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2016-08-30T13:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22558",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22511",
+    "user": "https://github.com/embray"
 }
 ```
 
@@ -195,15 +194,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_022559.json:
+archive/issue_comments_022512.json:
 ```json
 {
     "body": "Determined to be invalid/duplicate/wontfix (closing as \"wontfix\" as a catch-all resolution).",
     "created_at": "2016-08-30T13:32:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3260",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22559",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/3260#issuecomment-22512",
+    "user": "https://github.com/embray"
 }
 ```
 

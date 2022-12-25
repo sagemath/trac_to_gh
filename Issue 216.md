@@ -6,14 +6,14 @@ archive/issues_000216.json:
     "body": "Assignee: boothby\n\nThe command optional_packages() raises an exception when run from the notebook:\n\n```\nFile \"/sage/local/lib/python2.5/site-packages/sage/misc/package.py\", line 77, in optional_packages\n    i = X.index('INSTALLED:')\nValueError: list.index(x): x not in list\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/216\n\n",
     "created_at": "2007-01-25T03:42:56Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
     "title": "optional_packages misparses",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/216",
-    "user": "@nbruin"
+    "user": "https://github.com/nbruin"
 }
 ```
 Assignee: boothby
@@ -36,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/216
 
 ---
 
-archive/issue_comments_000962.json:
+archive/issue_comments_000959.json:
 ```json
 {
     "body": "This was much more likely actually a problem with you maybe not having\na valid network connection, or the package list download getting corrupted (?).\n\nI've made the code more robust for sage > 1.8.2.1\n\n\n```\n# HG changeset patch\n# User William Stein <wstein@gmail.com>\n# Date 1169735785 28800\n# Node ID 9839fc0f4341de039cb16097a9d1b70f89a2ba9b\n# Parent  5b7c4027bc1e4f035ae4d8be69efc256721258a3\ntrac #216 -- make optional_packages() command more robust.\n\ndiff -r 5b7c4027bc1e -r 9839fc0f4341 sage/misc/package.py\n--- a/sage/misc/package.py      Thu Jan 25 06:25:41 2007 -0800\n+++ b/sage/misc/package.py      Thu Jan 25 06:36:25 2007 -0800\n@@ -73,9 +73,16 @@ def optional_packages():\n         upgrade -- upgrade to latest version of core packages\n                    (optional packages are not automatically upgraded).\n     \"\"\"\n-    X = os.popen('sage -optional').read().split('\\n')\n-    i = X.index('INSTALLED:')\n-    j = X.index('NOT INSTALLED:')\n+    R = os.popen('sage -optional').read()\n+    X = R.split('\\n')\n+    try:\n+        i = X.index('INSTALLED:')\n+        j = X.index('NOT INSTALLED:')\n+    except ValueError, msg:\n+        print R\n+        print \"Optional package list (shown above) appears to be currently not available or corrupted (network error?).\"\n+        return [], []\n+    \n     installed = []\n     for k in X[i+1:]:\n         if k == '':\n```\n",
     "created_at": "2007-01-25T14:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/216#issuecomment-962",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/216#issuecomment-959",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -92,15 +92,15 @@ diff -r 5b7c4027bc1e -r 9839fc0f4341 sage/misc/package.py
 
 ---
 
-archive/issue_comments_000963.json:
+archive/issue_comments_000960.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-25T14:40:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/216#issuecomment-963",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/216#issuecomment-960",
+    "user": "https://github.com/williamstein"
 }
 ```
 

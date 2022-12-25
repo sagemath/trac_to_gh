@@ -6,15 +6,14 @@ archive/issues_006086.json:
     "body": "Assignee: dperkinson\n\nCC:  ekirkman\n\nKeywords: kirchhoff laplacian matrix\n\nThe kirchhoff_matrix/laplacian_matrix did not handle graphs with loops correctly.\n\nThe patch fixes the bug and adds a doctest that fails without the patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6086\n\n",
     "created_at": "2009-05-19T19:51:13Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] fixed laplacian_matrix in graph.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6086",
-    "user": "dperkinson"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dperkinson"
 }
 ```
 Assignee: dperkinson
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6086
 
 ---
 
-archive/issue_comments_048492.json:
+archive/issue_comments_048400.json:
 ```json
 {
     "body": "Attachment [trac_6086_laplacian.patch](tarball://root/attachments/some-uuid/ticket6086/trac_6086_laplacian.patch) by dperkinson created at 2009-05-19 19:53:48",
     "created_at": "2009-05-19T19:53:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6086",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6086#issuecomment-48492",
-    "user": "dperkinson"
+    "url": "https://github.com/sagemath/sagetest/issues/6086#issuecomment-48400",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dperkinson"
 }
 ```
 
@@ -53,15 +52,15 @@ Attachment [trac_6086_laplacian.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_048493.json:
+archive/issue_comments_048401.json:
 ```json
 {
     "body": "Passes doctests and fixes bug.  Good job!",
     "created_at": "2009-05-19T20:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6086",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6086#issuecomment-48493",
-    "user": "ekirkman"
+    "url": "https://github.com/sagemath/sagetest/issues/6086#issuecomment-48401",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"
 }
 ```
 
@@ -71,15 +70,15 @@ Passes doctests and fixes bug.  Good job!
 
 ---
 
-archive/issue_comments_048494.json:
+archive/issue_comments_048402.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-19T20:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6086",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6086#issuecomment-48494",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6086#issuecomment-48402",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_048495.json:
+archive/issue_comments_048403.json:
 ```json
 {
     "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-19T20:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6086",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6086#issuecomment-48495",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6086#issuecomment-48403",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003208.json:
     "body": "Assignee: somebody\n\nKeywords: tutorial\n\nI've reworded a bunch of things in the first few sections of the tutorial, plus small changes scattered throughout (like changing Sage to \\sage).  As time permits, and if these changes are acceptable, I may get to the later parts.\n\nAside from random rewordings, I made the following changes and/or have the following comments:\n\n1. at various points, I replaced things like $BLAH$ with \\verb+BLAH+ or \\code{BLAH} or \\emph{BLAH}: when converted to html, these other things behave better than $BLAH$.\n\n2. In section 2.2, there is a sentence \"You do not have to specify the types of any of the input arguments.\"  This implies that it's possible to specify those types, I think, so I've removed the words \"have to\".\n\n3. In section 2.3, one of the examples says\n\n```\n sage: I = ComplexField().0\n```\n\nWhat does the '.0' do?  I can't find out where this might be documented.  Since it's not documented, I've removed its occurrences from this section.  (Replaced with CC(i), for instance.)\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3208\n\n",
     "created_at": "2008-05-15T01:48:59Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "[with patch, needs review] a bunch of small changes to the tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3208",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3208
 
 ---
 
-archive/issue_comments_022173.json:
+archive/issue_comments_022126.json:
 ```json
 {
     "body": "lots of little changes to the tutorial",
     "created_at": "2008-05-15T03:41:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22173",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22126",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -66,15 +65,15 @@ lots of little changes to the tutorial
 
 ---
 
-archive/issue_comments_022174.json:
+archive/issue_comments_022127.json:
 ```json
 {
     "body": "Attachment [tut.patch](tarball://root/attachments/some-uuid/ticket3208/tut.patch) by @JohnCremona created at 2008-05-15 19:54:59\n\nReview: a very worthy effort!  Just two points.  Here:\n\n\n```\nThe symbol \\code{I} represents a formal square root of $-1$, as does \n\\code{i}; of course this is not in $\\Q$.  Neither is the square root \nof $-1$ in the complex numbers: \n```\n\n\nthe last part sounds to me as though you are saying that the square root of $-1$ is not in the complex numbers!  Perhaps change that to\n\n```\nNeither is the (complex) square root of $-1$ rational:\n```\n\n\nSecondly, I agree that `ComplexField().0` is obscure, as is `CC.0`, but it is just a synonym for `CC.gen(0)` or `CC.gen()` since `CC` has exactly one \"generator\" (though we had better not start to revive the old argument about what generators are...).  It would never have occurred to me to write `CC(i)` but it works fine.\n\nI vote to accept this after the change of wording suggested (or similar).",
     "created_at": "2008-05-15T19:54:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22174",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22127",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -105,15 +104,15 @@ I vote to accept this after the change of wording suggested (or similar).
 
 ---
 
-archive/issue_comments_022175.json:
+archive/issue_comments_022128.json:
 ```json
 {
     "body": "We could finesse the whole issue and just say \"The square root of $-1$ is not rational\", followed by \n\n```\n sage: i in QQ\n False\n```\n\n\nThis ignores the fact that i is not actually an element of `CC` (which could mislead users, I suppose), but it means we don't have to use `CC(i)`, or `CC.0` which I think is more confusing, especially so early in the tutorial.  On the other hand, I've added the example\n\n```\n sage: c = GF(3)(1)    # c is the element 1 of the field GF(3)\n```\n\nso maybe `CC(i)` is not so obscure?\n\nI'm not sure what the right thing to do is.  I've changed it to the following:\n\nThe symbol \\code{I} represents the square root of $-1$; \\code{i} is a\nsynonym for \\code{I}.  Of course, this is not in $\\Q$:\n\n```\n sage: i  # square root of -1\n I     \n sage: i in QQ\n False\n```\n\n\nBecause of this change, I've re-inserted a mention of `CC` into the paragraph which follows this in the tutorial.\n\nI'll include a patch, but I'll keep the old patch too, in case people want to compare.",
     "created_at": "2008-05-15T21:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22175",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22128",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -154,15 +153,15 @@ I'll include a patch, but I'll keep the old patch too, in case people want to co
 
 ---
 
-archive/issue_comments_022176.json:
+archive/issue_comments_022129.json:
 ```json
 {
     "body": "new version of patch; this replaces the old patch, if people agree it's actually better",
     "created_at": "2008-05-15T21:56:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22176",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22129",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -172,15 +171,15 @@ new version of patch; this replaces the old patch, if people agree it's actually
 
 ---
 
-archive/issue_comments_022177.json:
+archive/issue_comments_022130.json:
 ```json
 {
     "body": "Attachment [tut-new.patch](tarball://root/attachments/some-uuid/ticket3208/tut-new.patch) by @jhpalmieri created at 2008-05-15 22:04:52\n\nNow I remember that I used `CC(i)` a few lines later, so I've added a sentence of explanation at the relevant place.",
     "created_at": "2008-05-15T22:04:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22177",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22130",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -192,15 +191,15 @@ Now I remember that I used `CC(i)` a few lines later, so I've added a sentence o
 
 ---
 
-archive/issue_comments_022178.json:
+archive/issue_comments_022131.json:
 ```json
 {
     "body": "Attachment [tut-new.2.patch](tarball://root/attachments/some-uuid/ticket3208/tut-new.2.patch) by @jhpalmieri created at 2008-05-15 22:05:03\n\nnew version of patch; this replaces the old patch, if people agree it's actually better",
     "created_at": "2008-05-15T22:05:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22178",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22131",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -212,15 +211,15 @@ new version of patch; this replaces the old patch, if people agree it's actually
 
 ---
 
-archive/issue_comments_022179.json:
+archive/issue_comments_022132.json:
 ```json
 {
     "body": "I vote for tut-new.2.patch.\n\nSome of the issues which are now better explained here relate to the recent discussion on sage-devel  where behavious such as this is being discussed:\n\n```\nsage: sqrt(-1) in ComplexField()\nFalse\nsage: sqrt(2) in RealField()\nFalse\n```\n",
     "created_at": "2008-05-16T08:05:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22179",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22132",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -240,15 +239,15 @@ False
 
 ---
 
-archive/issue_comments_022180.json:
+archive/issue_comments_022133.json:
 ```json
 {
     "body": "More patches, in response to a posting on sage-devel:\n\n[http://groups.google.com/group/sage-devel/browse_frm/thread/a58a55f7e8f1a25a](http://groups.google.com/group/sage-devel/browse_frm/thread/a58a55f7e8f1a25a)",
     "created_at": "2008-05-18T04:12:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22180",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22133",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -260,15 +259,15 @@ More patches, in response to a posting on sage-devel:
 
 ---
 
-archive/issue_comments_022181.json:
+archive/issue_comments_022134.json:
 ```json
 {
     "body": "Attachment [tut3.patch](tarball://root/attachments/some-uuid/ticket3208/tut3.patch) by @jhpalmieri created at 2008-05-20 18:43:48\n\nnew version; this incorporates the old patch, plus deals with issues from post on sage-devel",
     "created_at": "2008-05-20T18:43:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22181",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22134",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -280,15 +279,15 @@ new version; this incorporates the old patch, plus deals with issues from post o
 
 ---
 
-archive/issue_comments_022182.json:
+archive/issue_comments_022135.json:
 ```json
 {
     "body": "I am happy with tut3.patch (the previous ones may be ignored).\n\nNow if only users would read the tutorial, we may get fewer puzzled postings concerning complex numbers!",
     "created_at": "2008-05-26T11:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22182",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22135",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -300,15 +299,15 @@ Now if only users would read the tutorial, we may get fewer puzzled postings con
 
 ---
 
-archive/issue_comments_022183.json:
+archive/issue_comments_022136.json:
 ```json
 {
     "body": "Attachment [3208.patch](tarball://root/attachments/some-uuid/ticket3208/3208.patch) by @jhpalmieri created at 2008-05-26 16:37:31\n\n(this has the same content as tut3.patch, but is an hg patch file)",
     "created_at": "2008-05-26T16:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22183",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22136",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -320,15 +319,15 @@ Attachment [3208.patch](tarball://root/attachments/some-uuid/ticket3208/3208.pat
 
 ---
 
-archive/issue_comments_022184.json:
+archive/issue_comments_022137.json:
 ```json
 {
     "body": "Merged in Sage 3.0.3.alpha0. \n\nJohn: Please post mercurial patches in the future so that the changes are properly credited to you in the repo. In this particular case I noticed too late that this is \"only\" a diff. \n \nCheers,\n\nMichael",
     "created_at": "2008-05-26T17:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22184",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22137",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -344,15 +343,15 @@ Michael
 
 ---
 
-archive/issue_comments_022185.json:
+archive/issue_comments_022138.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-26T17:32:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3208",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22185",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3208#issuecomment-22138",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_009943.json:
     "body": "Assignee: @nthiery\n\nCC:  sage-combinat\n\nCurrently, they're always just commutative rings.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9944\n\n",
     "created_at": "2010-09-18T22:39:23Z",
     "labels": [
-        "categories",
-        "major",
+        "component: categories",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "categories for polynomial rings",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9943",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @nthiery
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9944
 
 ---
 
-archive/issue_comments_099003.json:
+archive/issue_comments_098838.json:
 ```json
 {
     "body": "Attachment [9944-poly-cat.patch](tarball://root/attachments/some-uuid/ticket9944/9944-poly-cat.patch) by @robertwb created at 2010-09-18 22:41:54",
     "created_at": "2010-09-18T22:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99003",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98838",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [9944-poly-cat.patch](tarball://root/attachments/some-uuid/ticket9944
 
 ---
 
-archive/issue_comments_099004.json:
+archive/issue_comments_098839.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-18T22:41:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99004",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98839",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_099005.json:
+archive/issue_comments_098840.json:
 ```json
 {
     "body": "Hi Robert!\n\nI have been through the patch, and it sounds good! I won't have the time to actually test it before some time, so please anyone beat me to it!\n\nJust one micro question: does PolynomialRing actually check that the ring is commutative?\n\nCheers",
     "created_at": "2010-09-19T21:00:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99005",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98840",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -91,15 +90,15 @@ Cheers
 
 ---
 
-archive/issue_comments_099006.json:
+archive/issue_comments_098841.json:
 ```json
 {
     "body": "Attachment [trac_9944.patch](tarball://root/attachments/some-uuid/ticket9944/trac_9944.patch) by @mwhansen created at 2010-09-20 05:22:42\n\nI went ahead and moved the functionality to it's own category since we want the mathematical information at the category level. \u00a0Could someone look over these changes?",
     "created_at": "2010-09-20T05:22:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99006",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98841",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -111,15 +110,15 @@ I went ahead and moved the functionality to it's own category since we want the 
 
 ---
 
-archive/issue_comments_099007.json:
+archive/issue_comments_098842.json:
 ```json
 {
     "body": "The first patch only concerned univarite polynomial rings, the logic is not all correct for multivariate polynomial rings (though on an orthogonal note, that could use some fixing up as well). It seems odd to have a category of univariate polynomial rings over a fixed basering, which is why I put the logic into the concrete object. I suppose the category should a be declared as a graded R-algebra as well (do we have join categories yet?). \n\nI don't know if PolynomialRing asserts its basering is commutative, but IIRC it's been assumed for a long time.",
     "created_at": "2010-09-20T22:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99007",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98842",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -131,15 +130,15 @@ I don't know if PolynomialRing asserts its basering is commutative, but IIRC it'
 
 ---
 
-archive/issue_comments_099008.json:
+archive/issue_comments_098843.json:
 ```json
 {
     "body": "Apply only 9944-poly-cat.patch",
     "created_at": "2010-12-03T19:41:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99008",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98843",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -149,15 +148,15 @@ Apply only 9944-poly-cat.patch
 
 ---
 
-archive/issue_comments_099009.json:
+archive/issue_comments_098844.json:
 ```json
 {
     "body": "Attachment [9944-poly-cat-doctests.patch](tarball://root/attachments/some-uuid/ticket9944/9944-poly-cat-doctests.patch) by @robertwb created at 2011-01-26 06:26:13",
     "created_at": "2011-01-26T06:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99009",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98844",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -167,15 +166,15 @@ Attachment [9944-poly-cat-doctests.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_099010.json:
+archive/issue_comments_098845.json:
 ```json
 {
     "body": "Apply 9944-poly-cat.patch and 9944-poly-cat-doctests.patch .",
     "created_at": "2011-01-26T06:27:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99010",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98845",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -185,15 +184,15 @@ Apply 9944-poly-cat.patch and 9944-poly-cat-doctests.patch .
 
 ---
 
-archive/issue_comments_099011.json:
+archive/issue_comments_098846.json:
 ```json
 {
     "body": "Attachment [trac-9944-poly-cat-review.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-poly-cat-review.patch) by mraum created at 2011-03-23 19:21:32\n\nI would give this a positive review for Robert's idea and I would open a new ticket for the multivariate rings. I'll just send a mail to Mike whether he is ok with that or no.",
     "created_at": "2011-03-23T19:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99011",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98846",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -205,15 +204,15 @@ I would give this a positive review for Robert's idea and I would open a new tic
 
 ---
 
-archive/issue_comments_099012.json:
+archive/issue_comments_098847.json:
 ```json
 {
     "body": "Replying to [comment:4 robertwb]:\n> The first patch only concerned univarite polynomial rings, the logic is not all correct for multivariate polynomial rings (though on an orthogonal note, that could use some fixing up as well). It seems odd to have a category of univariate polynomial rings over a fixed basering, which is why I put the logic into the concrete object. I suppose the category should a be declared as a graded R-algebra as well (do we have join categories yet?). \n\nSorry for the very late answer. In MuPAD, we had a category for\nunivariate polynomial rings: there are several possible\nimplementations of such, and it's natural to factor out the generic\ncode, together with the category inheritance logic, in a category.\n\nAnd yes, we have join categories. See Category.join.\n\nI let you see whether to create the UnivariatePolynomialRing category\nin this ticket or in a later ticket.",
     "created_at": "2011-03-29T09:23:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99012",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98847",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -234,15 +233,15 @@ in this ticket or in a later ticket.
 
 ---
 
-archive/issue_comments_099013.json:
+archive/issue_comments_098848.json:
 ```json
 {
     "body": "Replying to [comment:8 nthiery]:\n> Sorry for the very late answer. In MuPAD, we had a category for\n> univariate polynomial rings: there are several possible\n> implementations of such, and it's natural to factor out the generic\n> code, together with the category inheritance logic, in a category.\n\nAparently there is a doctest failure. I fixed it, but unfortunately it went into my patch submitted for #9138. Therefore, \"needs work\".\n\nQuestion: Do we really want a category of polynomial rings? Or do we want that (1) polynomial rings use the category framework (that's the purpose of my patch for #9138) and (2) the category to which a given polynomial ring belongs is a bit narrower than simply \"category of rings\"? I hope it is the latter.\n\nMy suggestion is that I submit a small patch fixing the doctests. Please tell whether my patch for #9138 improves the multivariate case. Then, perhaps it would be possible to give Roberts patches (+ doctest fix) a positive review, so that we can focus on #9138.",
     "created_at": "2011-03-29T15:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99013",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98848",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -262,15 +261,15 @@ My suggestion is that I submit a small patch fixing the doctests. Please tell wh
 
 ---
 
-archive/issue_comments_099014.json:
+archive/issue_comments_098849.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-03-29T16:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99014",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98849",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -280,15 +279,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_099015.json:
+archive/issue_comments_098850.json:
 ```json
 {
     "body": "At #9138, Jason Bandlow reported a slow-down, that is at least partially caused by the patches here. Do you have any idea what could be the reason?",
     "created_at": "2011-03-29T17:07:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99015",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98850",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -298,15 +297,15 @@ At #9138, Jason Bandlow reported a slow-down, that is at least partially caused 
 
 ---
 
-archive/issue_comments_099016.json:
+archive/issue_comments_098851.json:
 ```json
 {
     "body": "Replying to [comment:9 SimonKing]:\n> Aparently there is a doctest failure. I fixed it, but unfortunately it went into my patch submitted for #9138. Therefore, \"needs work\".\n\nStrange: Although the patch bot did see that error in one run, I can not reproduce it (but I had to change that test in my patch for #9138, because it turns `QQ['x'].category()` into the join of the category of euclidean domains and commutative algebras over `QQ`.\n\nThe other issue, namely the performance loss, was studied on [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/e4af3f1705b76955).\n\nFlorent Hivert found that a long mro does not matter for Python, but it *does* matter if the classes inherit from a cdef class. That is the case for most classes in Sage (inheriting from `SageObject`), so, we should address the problem of a long mro.\n\nEventually, that should be fixed in Cython (and I think Florent reported it upstream). But for now, it seems to me we should think of a work-around.\n\nWould it be acceptable coding practice to explicitly state in a derived class (say, `MPolynomialRing_generic`), that frequently used methods such as base or base_ring are the same as `Parent.base` or `Parent.base_ring`? David Roe stated that it might be dangerous to do so, at least if `cpdef` methods are involved.",
     "created_at": "2011-03-30T06:23:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99016",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98851",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -327,15 +326,15 @@ Would it be acceptable coding practice to explicitly state in a derived class (s
 
 ---
 
-archive/issue_comments_099017.json:
+archive/issue_comments_098852.json:
 ```json
 {
     "body": "Concerning performance loss:\n\nIt seems to me that part of the reason is the fact that with the patchse, `__init_extra__` is not executed when it should. Sometimes, the parent methods of a category provide a useful `__init_extra__`, for example the category of algebras.\n\nI am not sure yet why that happens, but I think it would happen if `Parent.__init__` is called without providing the category: Namely, doing `self._init_category_(...)` alone will *not* trigger the execution of `__init_extra__`.",
     "created_at": "2011-03-30T09:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99017",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98852",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -349,15 +348,15 @@ I am not sure yet why that happens, but I think it would happen if `Parent.__ini
 
 ---
 
-archive/issue_comments_099018.json:
+archive/issue_comments_098853.json:
 ```json
 {
     "body": "It seems I was right!\n\nNamely, the whole ring stuff is (unfortunately) inherited from `ParentWithGens`, which inherits from `ParentWithBase`, which inherits from `parent_old.Parent`.\n\nAnd `parent_old.Parent` inherits from \"the one and only Parent\" -- but forgets to call `Parent.__init__`!! Instead, it just does `self._init_category_(...)`.\n\nI'll change it and see what happens.",
     "created_at": "2011-03-30T10:01:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99018",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98853",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -373,15 +372,15 @@ I'll change it and see what happens.
 
 ---
 
-archive/issue_comments_099019.json:
+archive/issue_comments_098854.json:
 ```json
 {
     "body": "Very bad things happen. As soon as `parent.Parent.__init__` is called in `parent_old.Parent.__init__`, an infinite recursion occurs.",
     "created_at": "2011-03-30T10:17:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99019",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98854",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -391,15 +390,15 @@ Very bad things happen. As soon as `parent.Parent.__init__` is called in `parent
 
 ---
 
-archive/issue_comments_099020.json:
+archive/issue_comments_098855.json:
 ```json
 {
     "body": "Call Parent.__init__ during initialisation of a ring",
     "created_at": "2011-03-30T11:25:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99020",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98855",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -409,15 +408,15 @@ Call Parent.__init__ during initialisation of a ring
 
 ---
 
-archive/issue_comments_099021.json:
+archive/issue_comments_098856.json:
 ```json
 {
     "body": "Attachment [trac9944_second_referee.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_second_referee.patch) by @simon-king-jena created at 2011-03-30 11:31:40\n\nI attached a small patch to solve part of the problem of the missing parent initialisation: I call `Parent.__init__` and `ParentWithGens.__init__` explicitly, during initialisation of a ring. In that way, the `__init_extra__` methods are correctly picked up.\n\nHowever, that does not solve the performance problem.\n\nQuestion one: How can one come to speed?\n\nQuestion two: Is my patch really trivial enough to be called a referee patch?\n\nFor the patchbot:\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_second_referee.patch",
     "created_at": "2011-03-30T11:31:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99021",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98856",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -439,15 +438,15 @@ Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review
 
 ---
 
-archive/issue_comments_099022.json:
+archive/issue_comments_098857.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_info.",
     "created_at": "2011-03-30T13:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99022",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98857",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -457,15 +456,15 @@ Changing status from needs_work to needs_info.
 
 ---
 
-archive/issue_comments_099023.json:
+archive/issue_comments_098858.json:
 ```json
 {
     "body": "FWIW: The doc tests pass.\n\nHere is another idea what the slow down may come from. It was pointed out by Nicolas that the mro from the polynomial ring to `Parent` does not become longer by initialising the category properly: The inheritance from category parent classes comes *after* Python inheritance. However, when all the parent classes of all super categories must be searched, it takes considerably longer before an `AttributeError` can be raised.\n\nA similar issue has been studied at #10467. It seems to be important that an attribute error is raised as quickly as possible. That becomes difficult, if 60 parent classes need to be searched, before one eventually finds that the requested attribute does not exist.\n\nBut probably that question is out of the scope of this ticket.\n\nSo, what shall one do? Give it a positive review and accept the deceleration, or wait until someone has a model for improved attribute access?",
     "created_at": "2011-03-30T13:10:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99023",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98858",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -483,15 +482,15 @@ So, what shall one do? Give it a positive review and accept the deceleration, or
 
 ---
 
-archive/issue_comments_099024.json:
+archive/issue_comments_098859.json:
 ```json
 {
     "body": "Replying to [comment:17 SimonKing]:\n> A similar issue has been studied at #10467. It seems to be important that an attribute error is raised as quickly as possible. That becomes difficult, if 60 parent classes need to be searched, before one eventually finds that the requested attribute does not exist.\n\nNo, that is not the problem here! I was inserting print statements into `getattr_from_other_class` in order to find out what attributes are actually requested from the category when doing arithmetic. It turned out that, during the first computation of `(2*x-1)^2+5`, some attributes are requested. But when one repeats that computation, `getattr_from_other_class` is *not* involved.\n\nBut what else could be the reason?",
     "created_at": "2011-03-30T13:22:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99024",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98859",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -506,15 +505,15 @@ But what else could be the reason?
 
 ---
 
-archive/issue_comments_099025.json:
+archive/issue_comments_098860.json:
 ```json
 {
     "body": "Perhaps it is a conversion map that is slower than necessary?\n\nIf you look at `sage.categories.algebras.Algebras.ParentMethods.__init_extra__`, you see that it tries to register a certain set morphism as a coercion from the base ring into the algebra (that obviously works only if the algebra is unital). \n\nBut aparently a different coercion is used -- a slower coercion!\n\nNamely, together with my patch from #9138:\n\n```\nsage: R.<x> = ZZ[]\nsage: R.category() # the __init_extra__ was supposed to be used.\nJoin of Category of unique factorization domains and Category of commutative algebras over Integer Ring\nsage: c = R.convert_map_from(R.base_ring())\nsage: c\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nThat is not what `__init_extra__` attempted to register!\n\nLet us compare:\n\n```\nsage: from sage.categories.morphism import SetMorphism\nsage: H = R.base().Hom(R)\nsage: f = SetMorphism(H,R.from_base_ring)\nsage: timeit('c(100)',number=10^5)\n100000 loops, best of 3: 8.13 \u00c2\u00b5s per loop\nsage: timeit('f(100)',number=10^5)\n100000 loops, best of 3: 1.75 \u00c2\u00b5s per loop\n```\n\n\nSo, things could be considerably improved. Obvious questions: Will `from_base` always yield a faster approach than the base injection morphism? And can we enforce to use the faster coercion?\n\nAparently it is not so easy:\n\n```\nsage: AC = Algebras(ZZ).parent_class\nsage: R._unset_coercions_used()\nsage: AC.__init_extra__(R)\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\nsage: R._unset_coercions_used()\nsage: f.register_as_coercion()\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in x over Integer Ring\n```\n\n\nCan you explain how to force the use of a particular map for coercion of the base ring?",
     "created_at": "2011-03-30T19:12:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99025",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98860",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -580,15 +579,15 @@ Can you explain how to force the use of a particular map for coercion of the bas
 
 ---
 
-archive/issue_comments_099026.json:
+archive/issue_comments_098861.json:
 ```json
 {
     "body": "And aparently the univariate polynomial rings are special in their choice of a conversion from the base ring. Again with #9138\n\n```\nsage: R.<m> = ZZ[]\nsage: R.convert_map_from(R.base_ring())\nPolynomial base injection morphism:\n  From: Integer Ring\n  To:   Univariate Polynomial Ring in m over Integer Ring\nsage: R.<x,y> = QQ['t'][]\nsage: R.convert_map_from(R.base_ring())\nGeneric morphism:\n  From: Univariate Polynomial Ring in t over Rational Field\n  To:   Multivariate Polynomial Ring in x, y over Univariate Polynomial Ring in t over Rational Field\n```\n",
     "created_at": "2011-03-30T19:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99026",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98861",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -612,15 +611,15 @@ Generic morphism:
 
 ---
 
-archive/issue_comments_099027.json:
+archive/issue_comments_098862.json:
 ```json
 {
     "body": "I suggest to speed things up by modifying \"Polynomial base injection morphism\". Internally, it uses rather slow ways of creating a polynomial of degree zero. It is likely to be faster to do what `R.from_base` does: Take the One of the ring (if it exists!) and use its `_lmul_` method (if it has `_lmul_`).\n\nI also understand why `Algebras(...).parent_class.__init_extra__(R)` has no effect on the choice of a conversion map from `R.base()` to `R`: It calls `R.one()` in order to create a better coercion map; but `R.one()` will, internally, construct a conversion from the base to `R`. At that point, the \"better\" coercion is not defined, and thus the usual conversion is created and cached.\n\nIn other words, `R.from_base` will only be used for conversion if `R` does *not* obey the rules of the new coercion framework (e.g., if it has a custom `__call__`).\n\nSince the polynomial base injection morphism is a specialised method, it should be possible to internally construct the One of R without invoking coercion. My plan is to combine it with [attachment:trac9944_second_referee.patch] and submit a patch that then certainly needs a reviewer.",
     "created_at": "2011-03-31T05:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99027",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98862",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -636,15 +635,15 @@ Since the polynomial base injection morphism is a specialised method, it should 
 
 ---
 
-archive/issue_comments_099028.json:
+archive/issue_comments_098863.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_work.",
     "created_at": "2011-03-31T05:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99028",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98863",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -654,15 +653,15 @@ Changing status from needs_info to needs_work.
 
 ---
 
-archive/issue_comments_099029.json:
+archive/issue_comments_098864.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-03-31T11:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99029",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98864",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -672,15 +671,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_099030.json:
+archive/issue_comments_098865.json:
 ```json
 {
     "body": "Good news! Things are now *faster* than without the patches!\n\nI found that one can considerably improve the conversion of an element of the base ring into a polynomial ring. Some polynomial rings used a generic conversion map, some used a polynomial base injection map -- and both were slow.\n\nMy inspiration came from `Algebras.ParentMethods.__init_extra__`: If R is a polynomial ring, then multiplication of a scalar with `R.one()` often is a very fast method to convert the scalar into R.\n\nProblems:\n\n* We should not assume that any ring has a unit (ok, polynomial rings over a unital ring have...).\n* Calling `R.one()` will usually trigger the creation of a generic conversion - hence, it would be difficult to register it as conversion.\n* Not all flavours of polynomial elements have a `_rmul_` (polynomial_element_generic has not).\n* Sometimes, other conversion maps are registered when one wants to register the polynomial base injection map.\n\nSo, I implemented `_rmul_` and `_lmul_` for polynomial_element_generic, try various ways (old and new coercion model) of creating a One bypassing conversion maps, and in one init method of polynomial rings I decided to re-initialise the conversion maps.\n\n**__Timings__**\n\nI tried to test as many cases (multi- versus univariate, `libSingular` and others, different base rings,...). Without all the patches, we have the following:\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 23.4 \u00b5s per loop\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 24.6 \u00b5s per loop\nsage: R.<x> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 87.9 \u00b5s per loop\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 113 \u00b5s per loop\nsage: R.<x,y> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 13 \u00b5s per loop\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 16.6 \u00b5s per loop\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 10.8 \u00b5s per loop\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 238 \u00b5s per loop\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 511 \u00b5s per loop\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 1.06 ms per loop\n```\n\n\nWith the patches, I get\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.97 \u00b5s per loop\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.3 \u00b5s per loop\nsage: R.<x> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 70.3 \u00b5s per loop\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 82.6 \u00b5s per loop\nsage: R.<x,y> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 12.6 \u00b5s per loop\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 16.4 \u00b5s per loop\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 10.5 \u00b5s per loop\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 187 \u00b5s per loop\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 503 \u00b5s per loop\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 1.08 ms per loop\n```\n\n\nSo, there is no significant slow down at all, but a considerable speed up in most cases.\n\nI suppose it can now be reviewed. I understood that the Robert's patches essentially have a positive review, except for the slow-down. So, would it suffice if some of you test my patch?\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch",
     "created_at": "2011-03-31T11:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99030",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98865",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -783,15 +782,15 @@ Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review
 
 ---
 
-archive/issue_comments_099031.json:
+archive/issue_comments_098866.json:
 ```json
 {
     "body": "Wow, that is an amazingly good result! I will take my time to review this by next week. But if anybody is faster than me, feel free to go for it!",
     "created_at": "2011-03-31T11:43:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99031",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98866",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -801,15 +800,15 @@ Wow, that is an amazingly good result! I will take my time to review this by nex
 
 ---
 
-archive/issue_comments_099032.json:
+archive/issue_comments_098867.json:
 ```json
 {
     "body": "That's excellent indeed! Thanks!\n\nSimon: I guess I'll focus on the reviewing of the other patches.\n\n                              Nicolas",
     "created_at": "2011-03-31T17:48:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99032",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98867",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -823,15 +822,15 @@ Simon: I guess I'll focus on the reviewing of the other patches.
 
 ---
 
-archive/issue_comments_099033.json:
+archive/issue_comments_098868.json:
 ```json
 {
     "body": "Replying to [comment:22 SimonKing]:\n> Problems:\n> \n>  * We should not assume that any ring has a unit (ok, polynomial rings over a unital ring have...).\n\nRings() assumes its objects to be unital. If we want to support\npolynomials over non unital rings, then this should go through the use\nof Rngs(). If we make sure the coercion morphism from the base ring is always declared by Algebras(), all we will have to do is to use some new category NonUnitalAlgebras() when the base ring is just in Rngs(). Bwt: having a PolynomialRings() (PolynomialRngs?) category would be a good way to factor out this logic.\n\nBut one thing at a time :-)\n\nCheers,\n\t\t\tNicolas",
     "created_at": "2011-03-31T17:58:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99033",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98868",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -853,15 +852,15 @@ Cheers,
 
 ---
 
-archive/issue_comments_099034.json:
+archive/issue_comments_098869.json:
 ```json
 {
     "body": "Attachment [trac-9944-poly_cat_doctests.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-poly_cat_doctests.patch) by mraum created at 2011-04-01 00:33:33",
     "created_at": "2011-04-01T00:33:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99034",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98869",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -871,15 +870,15 @@ Attachment [trac-9944-poly_cat_doctests.patch](tarball://root/attachments/some-u
 
 ---
 
-archive/issue_comments_099035.json:
+archive/issue_comments_098870.json:
 ```json
 {
     "body": "I applied the second patch and exported the commit, so that Jeroen will have an easier life (http://groups.google.com/group/sage-devel/browse_thread/thread/f5a9c012f6299a9e).\n\nThe patchs are very good. I am waiting for the tests to finish, but I guess this will be through very soon.",
     "created_at": "2011-04-01T00:38:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99035",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98870",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -891,15 +890,15 @@ The patchs are very good. I am waiting for the tests to finish, but I guess this
 
 ---
 
-archive/issue_comments_099036.json:
+archive/issue_comments_098871.json:
 ```json
 {
     "body": "The speed up is significant and all tests pass. This gets a positive review.\n\nLet me point out the following (that won't show up in many use case, but still might deserve some consideration later):\n\nunpatched:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 94.5 \u00b5s per loop\n```\n\n\npatched:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 131 \u00b5s per loop\n```\n",
     "created_at": "2011-04-01T00:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99036",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98871",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -931,15 +930,15 @@ sage: timeit('(2*x - 1)^2 + 5', number = 10^4)
 
 ---
 
-archive/issue_comments_099037.json:
+archive/issue_comments_098872.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-04-01T00:53:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99037",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98872",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -949,15 +948,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_099038.json:
+archive/issue_comments_098873.json:
 ```json
 {
     "body": "The PDF documentation doesn't build:\n\n```\n! Missing { inserted.\n<to be read again>\n                   $\nl.358009 ...ment with the One by means of $_rmul_$\n                                                  .\n?\n! Emergency stop.\n<to be read again>\n                   $\nl.358009 ...ment with the One by means of $_rmul_$\n                                                  .\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on reference.log.\nmake[1]: *** [reference.pdf] Error 1\n```\n",
     "created_at": "2011-04-12T11:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99038",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98873",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -985,15 +984,15 @@ make[1]: *** [reference.pdf] Error 1
 
 ---
 
-archive/issue_comments_099039.json:
+archive/issue_comments_098874.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-04-12T11:51:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99039",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98874",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1003,15 +1002,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_099040.json:
+archive/issue_comments_098875.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2011-04-13T12:44:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99040",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98875",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1021,15 +1020,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_099041.json:
+archive/issue_comments_098876.json:
 ```json
 {
     "body": "It should now be fine. The problem was single back tick (Latex math mode) versus double back tick (verbose code).",
     "created_at": "2011-04-13T12:44:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99041",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98876",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1039,15 +1038,15 @@ It should now be fine. The problem was single back tick (Latex math mode) versus
 
 ---
 
-archive/issue_comments_099042.json:
+archive/issue_comments_098877.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-04-13T13:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99042",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98877",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1057,15 +1056,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_099043.json:
+archive/issue_comments_098878.json:
 ```json
 {
     "body": "Sorry, I changed but one instance of single back tick versus double back tick. But there are more left. So, needs work, for now.",
     "created_at": "2011-04-13T13:59:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99043",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98878",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1075,15 +1074,15 @@ Sorry, I changed but one instance of single back tick versus double back tick. B
 
 ---
 
-archive/issue_comments_099044.json:
+archive/issue_comments_098879.json:
 ```json
 {
     "body": "Speedup of polynomial arithmetic by improved base ring conversion",
     "created_at": "2011-04-13T14:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99044",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98879",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1093,15 +1092,15 @@ Speedup of polynomial arithmetic by improved base ring conversion
 
 ---
 
-archive/issue_comments_099045.json:
+archive/issue_comments_098880.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2011-04-13T14:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99045",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98880",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1111,15 +1110,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_099046.json:
+archive/issue_comments_098881.json:
 ```json
 {
     "body": "Attachment [trac9944_polynomial_speedup.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_polynomial_speedup.patch) by @simon-king-jena created at 2011-04-13 14:14:03\n\nNow it seems solved. `sage -docbuild all html` did not complain!\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch",
     "created_at": "2011-04-13T14:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99046",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98881",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1133,15 +1132,15 @@ Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review
 
 ---
 
-archive/issue_comments_099047.json:
+archive/issue_comments_098882.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-04-13T19:45:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99047",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98882",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1151,15 +1150,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_099048.json:
+archive/issue_comments_098883.json:
 ```json
 {
     "body": "For some obscure reason, this breaks the following test on 32-bit systems:\n\n```\nsage -t \"devel/sage-main/sage/modular/abvar/morphism.py\"\n```\n\n\nThe problem is that the following command hangs forever:\n\n```\nsage: J = J1(12345)\nsage: J.hecke_operator(997)\n```\n\n\nInterestingly, interrupting at this point makes the command return the **correct output** without raising a `KeyboardInterrupt` which is a bug within the bug.",
     "created_at": "2011-05-05T20:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99048",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98883",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1184,15 +1183,15 @@ Interestingly, interrupting at this point makes the command return the **correct
 
 ---
 
-archive/issue_comments_099049.json:
+archive/issue_comments_098884.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2011-05-05T20:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99049",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98884",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1202,15 +1201,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_099050.json:
+archive/issue_comments_098885.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2011-05-05T20:50:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99050",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98885",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1220,15 +1219,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_099051.json:
+archive/issue_comments_098886.json:
 ```json
 {
     "body": "Replying to [comment:34 jdemeyer]:\n> For some obscure reason, this breaks the following test on 32-bit systems:\n> The problem is that the following command hangs forever:\n> {{{\n> sage: J = J1(12345)\n> sage: J.hecke_operator(997)\n> }}}\n\nInteresting. If I remember correctly, I had problems with that exact doctest on my machine and was able to solve it. But my machine is 64 bit.\n\nSo, I'll try with a 32 bit installation on bsd.math.",
     "created_at": "2011-05-05T21:15:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99051",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98886",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1248,15 +1247,15 @@ So, I'll try with a 32 bit installation on bsd.math.
 
 ---
 
-archive/issue_comments_099052.json:
+archive/issue_comments_098887.json:
 ```json
 {
     "body": "I get a different error on bsd.math in 32bit mode:\n\n```\nsage: J = J1(12345)\nsage: J.hecke_operator(997)\npython(6506) malloc: *** mmap(size=1870024854642688) failed (error code=12)\n*** error: can't allocate region\n*** set a breakpoint in malloc_error_break to debug\npython(6506) malloc: *** mmap(size=1870024854642688) failed (error code=12)\n*** error: can't allocate region\n*** set a breakpoint in malloc_error_break to debug\nHecke operator T_997 on Abelian variety J1(12345) of dimension 5405473\n```\n\n\nSo, it reports problem with memory allocation, but in almost no time it still returns the correct answer!",
     "created_at": "2011-05-05T21:24:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99052",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98887",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1281,15 +1280,15 @@ So, it reports problem with memory allocation, but in almost no time it still re
 
 ---
 
-archive/issue_comments_099053.json:
+archive/issue_comments_098888.json:
 ```json
 {
     "body": "I think I remember what turned out to be the problem: In `J.hecke_operator(...)`, some matrix space is created - a very big one (kind of 5405473x5405473). And if I am not mistaken, the changes in the patch make the matrix space create a zero and a unit matrix - perhaps too much for 32 bit.\n\nBut perhaps I *am* mistaken. After all, the memory consumption is not big at all when I do the computation on my computer.",
     "created_at": "2011-05-06T07:19:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99053",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98888",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1301,15 +1300,15 @@ But perhaps I *am* mistaken. After all, the memory consumption is not big at all
 
 ---
 
-archive/issue_comments_099054.json:
+archive/issue_comments_098889.json:
 ```json
 {
     "body": "Replying to [comment:36 SimonKing]:\n> So, it reports problem with memory allocation, but in almost no time it still returns the correct answer!\n\nThe fact that errors (including interrupts) are ignored in this code is very bad in itself, I think there must be some `except:` catching all this.",
     "created_at": "2011-05-06T07:27:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99054",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98889",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1322,15 +1321,15 @@ The fact that errors (including interrupts) are ignored in this code is very bad
 
 ---
 
-archive/issue_comments_099055.json:
+archive/issue_comments_098890.json:
 ```json
 {
     "body": "Using `trace`, it seems to me that the error occurs in line 245 of `sage/matrix/matrix_space.py`:\n\n```\nif nrows >= 2**63 or ncols >= 2**63:\n```\n\n\nIs computing `2**63` (with Python ints) a problem on 32 bit?? Apparently not:\n\n```\nsage: int(2)**int(63)\n9223372036854775808L\n```\n\n\nSo, the problem isn't solved, yet.",
     "created_at": "2011-05-06T07:54:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99055",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98890",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1355,15 +1354,15 @@ So, the problem isn't solved, yet.
 
 ---
 
-archive/issue_comments_099056.json:
+archive/issue_comments_098891.json:
 ```json
 {
     "body": "Sorry, I had misinterpreted something.",
     "created_at": "2011-05-06T07:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99056",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98891",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1373,15 +1372,15 @@ Sorry, I had misinterpreted something.
 
 ---
 
-archive/issue_comments_099057.json:
+archive/issue_comments_098892.json:
 ```json
 {
     "body": "But there is something else:\n\n```\nsage: sage.misc.misc.is_64_bit\nTrue\nsage: os.environ['SAGE64']\n'no'\n```\n\n\nCould that be the problem?",
     "created_at": "2011-05-06T07:59:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99057",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98892",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1401,15 +1400,15 @@ Could that be the problem?
 
 ---
 
-archive/issue_comments_099058.json:
+archive/issue_comments_098893.json:
 ```json
 {
     "body": "It seems that trace does not show the whole story. I see that some memory errors are raise (when it is attempted to create huge zero or unit matrices), but I don't see where they are caught. So, there seems Cython code involved that is invisible to trace.",
     "created_at": "2011-05-06T08:41:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99058",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98893",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1419,15 +1418,15 @@ It seems that trace does not show the whole story. I see that some memory errors
 
 ---
 
-archive/issue_comments_099059.json:
+archive/issue_comments_098894.json:
 ```json
 {
     "body": "I think I found it!\n\nThe problem occurs during initialisation of `sage.modular.abvar.homspace.EndomorphismSubring`. It is first initialised as a homset with a specific category `cat` that does not belong to the category of rings, and then as a ring. The second initialisation tries to put it into the category of rings, which seems to be a bad idea after the first initialisation.\n\nSolution:\n\nForm the join of `cat` with the category of rings. Initialise it as a ring with that join category (which became possible with #9944!). Eventually, initialise it as a homspace, with the same category.\n\nWith that little magic, the error seems to disappear. But now I need to do tests.\n\nCheers,\n\nSimon",
     "created_at": "2011-05-06T13:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99059",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98894",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1449,15 +1448,15 @@ Simon
 
 ---
 
-archive/issue_comments_099060.json:
+archive/issue_comments_098895.json:
 ```json
 {
     "body": "Attachment [trac9944_abvar_endomorphism.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_abvar_endomorphism.patch) by @simon-king-jena created at 2011-05-06 13:41:21\n\nFix a problem with initialisation of endomorphism rings of abelian varieties on 32 bit",
     "created_at": "2011-05-06T13:41:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99060",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98895",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1469,15 +1468,15 @@ Fix a problem with initialisation of endomorphism rings of abelian varieties on 
 
 ---
 
-archive/issue_comments_099061.json:
+archive/issue_comments_098896.json:
 ```json
 {
     "body": "The problem seems solved.\n\nWhat I did: Initialise the endomorphism ring first as a ring, and provide it with the intended category. Then initialise it as a homset as well. That solves the problem in the sense that it disappears.\n\nAdmittedly I can not explain how exactly the problem has originally emerged. But I guess it makes sense that it is a problem if a homset gives itself a certain category and then sage.rings.ring.Ring tries to work with another category.\n\nWith the new patch, we have (also as an additional doc test)\n\n```\nsage: J = J1(12345)\nsage: J.endomorphism_ring()\nEndomorphism ring of Abelian variety J1(12345) of dimension 5405473\n```\n\nboth on my machine (x86_64 Linux) and on bsd.math in a 32 bit installation. Moreover, on both machines, the tests in sage.modular pass.\n\nNeeds review, I guess.\n\nApply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch trac9944_abvar_endomorphism.patch",
     "created_at": "2011-05-06T13:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99061",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98896",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1505,15 +1504,15 @@ Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review
 
 ---
 
-archive/issue_comments_099062.json:
+archive/issue_comments_098897.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-05-06T13:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99062",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98897",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1523,15 +1522,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_099063.json:
+archive/issue_comments_098898.json:
 ```json
 {
     "body": "FWIW: The long doctests pass on bsd.math in 32bit installation.",
     "created_at": "2011-05-06T15:41:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99063",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98898",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1541,15 +1540,15 @@ FWIW: The long doctests pass on bsd.math in 32bit installation.
 
 ---
 
-archive/issue_comments_099064.json:
+archive/issue_comments_098899.json:
 ```json
 {
     "body": "The patch at #11310 solves the \"exceptions are ignored\" problem.",
     "created_at": "2011-05-07T18:46:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99064",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98899",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1559,15 +1558,15 @@ The patch at #11310 solves the "exceptions are ignored" problem.
 
 ---
 
-archive/issue_comments_099065.json:
+archive/issue_comments_098900.json:
 ```json
 {
     "body": "There is a huge performance regression in creating iterated polynomial rings:\n\nBEFORE:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(11): S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```\n\n\nAFTER:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(11): S = PolynomialRing(S,'w')\nCPU times: user 53.38 s, sys: 0.19 s, total: 53.57 s\nWall time: 53.58 s\n```\n",
     "created_at": "2011-05-08T10:10:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99065",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98900",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1597,15 +1596,15 @@ Wall time: 53.58 s
 
 ---
 
-archive/issue_comments_099066.json:
+archive/issue_comments_098901.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-05-08T10:10:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99066",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98901",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1615,15 +1614,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_099067.json:
+archive/issue_comments_098902.json:
 ```json
 {
     "body": "Replying to [comment:47 jdemeyer]:\n> There is a huge performance regression in creating iterated polynomial rings:\n> ...\n> sage: %time for n in range(11): S = PolynomialRing(S,'w')\n\nNote that the whole point of this ticket is to do more things during initialisation of polynomial rings. So, no surprise that initialisation becomes a lot slower. However, I agree that it should not be *that* slow.",
     "created_at": "2011-05-08T11:20:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99067",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98902",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1638,15 +1637,15 @@ Note that the whole point of this ticket is to do more things during initialisat
 
 ---
 
-archive/issue_comments_099068.json:
+archive/issue_comments_098903.json:
 ```json
 {
     "body": "Strange. With the patches, I get\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(5): S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\n```\n\nSo, that's quick. Continuing:\n\n```\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.00 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 8.38 s, sys: 0.00 s, total: 8.38 s\nWall time: 8.38 s\n```\n\n\nSo, suddenly there is a jump in the initialisation time.",
     "created_at": "2011-05-08T11:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99068",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98903",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1686,15 +1685,15 @@ So, suddenly there is a jump in the initialisation time.
 
 ---
 
-archive/issue_comments_099069.json:
+archive/issue_comments_098904.json:
 ```json
 {
     "body": "Sorry, my fault. I did not restart before doing the test above, so, rings were found in the cache.\n\nAfter restart with all patches, I get\n\n```\nsage: S = GF(9,'a')\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.00 s, sys: 0.00 s, total: 0.00 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.01 s, sys: 0.00 s, total: 0.01 s\nWall time: 0.01 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.03 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.09 s, sys: 0.00 s, total: 0.09 s\nWall time: 0.10 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.22 s, sys: 0.00 s, total: 0.22 s\nWall time: 0.22 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 0.70 s, sys: 0.00 s, total: 0.70 s\nWall time: 0.70 s\nsage: %time S = PolynomialRing(S,'w')\nCPU times: user 2.58 s, sys: 0.00 s, total: 2.58 s\nWall time: 2.58 s\n```\n\n\nI found that the problem comes up with [attachment:trac9944-polynomial_speedup.patch]. So, let's work on it.",
     "created_at": "2011-05-08T11:28:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99069",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98904",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1740,15 +1739,15 @@ I found that the problem comes up with [attachment:trac9944-polynomial_speedup.p
 
 ---
 
-archive/issue_comments_099070.json:
+archive/issue_comments_098905.json:
 ```json
 {
     "body": "Using prun, I found for one case:\n\n```\n   Ordered by: internal time\n \n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.141    0.141    0.238    0.238 polynomial_ring.py:178(__init__)\n     1414    0.055    0.000    0.071    0.000 polynomial_ring.py:234(_element_constructor_)\n    11104    0.020    0.000    0.020    0.000 polynomial_ring.py:1821(modulus)\n     1420    0.005    0.000    0.005    0.000 finite_field_givaro.py:153(degree)\n...\n```\n\n\nIn other words: In order to construct just *one* polynomial ring over an iterated polynomial ring, the element constructor is called 1414 times and the modulus method 11104 times. At a different ticket, I suggested to turn the modulus method into a cached method. Perhaps that should already be done here. However, there should be no need to construct 1414 elements, just to initialise one ring!",
     "created_at": "2011-05-08T11:42:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99070",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98905",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1772,15 +1771,15 @@ In other words: In order to construct just *one* polynomial ring over an iterate
 
 ---
 
-archive/issue_comments_099071.json:
+archive/issue_comments_098906.json:
 ```json
 {
     "body": "Interesting. Now it seems to me that the element constructor is in fact called from the `_repr_` method of `sage.rings.polynomial.polynomial_element.Polynomial_generic_dense`. That sound like using the string representation of elements in order to convert something.",
     "created_at": "2011-05-08T11:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99071",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98906",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1790,15 +1789,15 @@ Interesting. Now it seems to me that the element constructor is in fact called f
 
 ---
 
-archive/issue_comments_099072.json:
+archive/issue_comments_098907.json:
 ```json
 {
     "body": "I think I somehow located the problem. I created recursively a univariate polynomial ring, as in your example, with a total of 8 variables:\n\n```\nsage: S\nUnivariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Univariate Polynomial Ring in w over Finite Field in a of size 3^2\n```\n\n\nThen, with the patches\n\n```\nsage: timeit(\"S(0)\")\n5 loops, best of 3: 83 ms per loop\n```\n\nbut without the patches\n\n```\nsage: timeit(\"S(0)\")\n625 loops, best of 3: 121 \u00b5s per loop\n```\n\n\nSince the above relies on coercion maps, which are compositions of polynomial base injection maps, and since my patch touched the polynomial base injection maps, it is conceivable that we'll find the problem there.\n\nNote, however, that it might be a better solution to let the composition of two polynomial base injection maps be another polynomial base injection map -- that ought to be a lot faster than a composite map.",
     "created_at": "2011-05-08T14:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99072",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98907",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1833,15 +1832,15 @@ Note, however, that it might be a better solution to let the composition of two 
 
 ---
 
-archive/issue_comments_099073.json:
+archive/issue_comments_098908.json:
 ```json
 {
     "body": "The original implementation of a polynomial basering injection relies on a method `_new_constant_poly`, which turns out to be rather slow in most cases except the case of dense univariate polynomials -- they have a custom version of `_new_constant_poly`, while the others rely on a generic implementation.\n\nSo, instead of my former suggestion (\"use `one._rmul_(x)` to coerce x into P with `one = P.one_element()`), it may be better to provide the other polynomial classes with a faster implementation of `_new_constant_poly`. That's what I am trying now.",
     "created_at": "2011-05-09T07:43:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99073",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98908",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1853,15 +1852,15 @@ So, instead of my former suggestion ("use `one._rmul_(x)` to coerce x into P wit
 
 ---
 
-archive/issue_comments_099074.json:
+archive/issue_comments_098909.json:
 ```json
 {
     "body": "Or, even better: Implement `_new_constant_poly` not (only) for the *elements* of a polynomial ring, but for the ring itself - that should be more natural, provided that there is only one possible polynomial class.",
     "created_at": "2011-05-09T09:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99074",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98909",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1871,15 +1870,15 @@ Or, even better: Implement `_new_constant_poly` not (only) for the *elements* of
 
 ---
 
-archive/issue_comments_099075.json:
+archive/issue_comments_098910.json:
 ```json
 {
     "body": "I am totally frustrated.\n\nI made some improvements to `_new_constant_poly`, whose purpose is to provide the quickest way in the given implementation to construct a constant polynomial, and made some other changes that should improve the coercions. There were improvements in all examples above.\n\nHowever, I am now getting tons of failures and even segfaults in sage/schemes.\n\nI tracked one type of error down, I thought. But apparently I only covered one special case of that one type of error.\n\nWhile I was at it, I fixed the documentation for `hyperelliptic_padic_field`, which is not yet included into the manual, and which had syntax errors in all doc strings.",
     "created_at": "2011-05-12T06:42:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99075",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98910",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1897,15 +1896,15 @@ While I was at it, I fixed the documentation for `hyperelliptic_padic_field`, wh
 
 ---
 
-archive/issue_comments_099076.json:
+archive/issue_comments_098911.json:
 ```json
 {
     "body": "Replying to [comment:56 SimonKing]:\n> While I was at it, I fixed the documentation for `hyperelliptic_padic_field`, which is not yet included into the manual, and which had syntax errors in all doc strings.\n\nOr perhaps the inclusion of sage/schemes into the manual should be on a different ticket, since most files are missing.",
     "created_at": "2011-05-12T06:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99076",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98911",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1918,15 +1917,15 @@ Or perhaps the inclusion of sage/schemes into the manual should be on a differen
 
 ---
 
-archive/issue_comments_099077.json:
+archive/issue_comments_098912.json:
 ```json
 {
     "body": "Replying to [comment:56 SimonKing]:\n> I am totally frustrated.\n\nStill the case, although I am already down to 251 doctest failures and one timeout. That's the disadvantage of doing changes in coercion.",
     "created_at": "2011-05-13T05:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99077",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98912",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1939,15 +1938,15 @@ Still the case, although I am already down to 251 doctest failures and one timeo
 
 ---
 
-archive/issue_comments_099078.json:
+archive/issue_comments_098913.json:
 ```json
 {
     "body": "Finally I got my new patch to work. Here are the new features and, in particular, the new timings. I think it was worth the effort!\n\n__Polynomial Construction Functors__\n\n\n```\nsage: R.<x> = PolynomialRing(GF(5), sparse=True)\nsage: F,B = R.construction()\nsage: F(B) is R\nTrue   # was False\n```\n\n\n__zero_element__\n\nIn various places, constructions such as self.parent()(0) are used. It should be more efficient to have self.parent().zero_element() instead, in particular if this is cached using the improved cached methods from #11115.\n\nThat means I had to introduce zero_element() for various classes, mostly in sage/modular.\n\n__Fix zero element of free module homomorphisms__\n\nThe following used to fail with an error:\n\n```\nsage: V = span([[1/2,1,1],[3/2,2,1],[0,0,1]],ZZ)\nsage: V.Hom(V).zero()\nFree module morphism defined by the matrix\n[0 0 0]\n[0 0 0]\n[0 0 0]\nDomain: Free module of degree 3 and rank 3 over Integer Ring\nEchelon ...\nCodomain: Free module of degree 3 and rank 3 over Integer Ring\nEchelon ...\n```\n\n\n__Calling any parent with None should return zero__\n\nThis used to be true for finite prime fields, but failed with an error\nfor finite non-prime fields:\n\n```\nsage: GF(5)(None)\n0\nsage: GF(5^2,'a')(None)\n0\n```\n\n\n__Implement/improve `_new_constant_poly` for various polynomial classes__\n\nThis is the main reason why the timings stated below have improved. I thought that `_new_constant_poly` should be a method of a polynomial ring, but I think it should better stay as a method of polynomials: Polynomials are often implemented in Cython, but polynomial rings in Python.\n\nIn order to get a little bit of more speed, I introduce another parameter to `_new_constant_poly`, namely the parent in which the new polynomial is supposed to be created. This is because often the parent `P` of a polynomial `self` is already known when calling `self._new_constant_poly(a, P)`, so that it would be a waste of time to call `self.parent()` internally to determine the parent.\n\n__Improve Polynomial Base Injection Morphisms and use it for coercion__\n\nConversion into a polynomial ring P from its base ring occurs frequently and should be as quick as possible.\n\nI had already improved the performance in the old patch version. However, it turned out to be better to use `_new_constant_poly`, rather than always using multiplication with `P.one()`.\n\nThe rule is now: If `P.an_element()` has a `_new_constant_poly` method then it is used. Otherwise, if one can construct a one element in `P` without calling coercion, and if it has `_rmul_` and if `_rmul_` does not return `None` then it is used. Otherwise, `P._element_constructor_` is used.\n\nPolynomial base injection morphisms are now always registered as coercion.\n\n__Call method for compiled polynomials__\n\nThe documentation for compiled polynomials states that it can be called, although the cdef method `.eval(...)` has less overhead. That was not true, there has been no `__call__` method. I added one.\n\n__Constant polynomial section__\n\nIt was stated that it uses the `constant_coefficient` method, which can be optimized for a particulare polynomial type. However, in fact a generic `constant_coefficient` method was **explicitly** called, even if a polynomial type did provide a more efficient method. That has now changed.\n\n__Sparse versus dense versus differently implemented polynomial rings__\n\nA univariate polynomial ring can be sparse or dense, and if it is dense and over `ZZ` (or also `QQ`) they can be implemented with `FLINT` or `NTL`. Dense and sparse rings used to be equal, but they were not identical - a violation to the unique parent assumption.\n\nMoreover, in the multivariate case, the `implementation` and `sparse` arguments had no effect on the resulting ring, but were used in the cache key, yielding another violation of the unique parent assumption.\n\nI resolved these violations. I was not sure whether one should silently ignore arguments that are not used, or should raise an error if they are provided. I decided to ignore `sparse` if it is not supported, and raise an error for dense or multivariate rings if an implementation is not supported.\n\nWe have, e.g.:\n\n```\nsage: S.<x,y> = PolynomialRing(ZZ,sparse=True)\nsage: S is ZZ['x','y']\nTrue  # used to be False\nsage: R.<x> = PolynomialRing(ZZ,sparse=True,implementation='FLINT')\nsage: S.<x> = PolynomialRing(ZZ,sparse=True,implementation='NTL')\nsage: R is S\nTrue  # used to be False\nsage: R == ZZ['x']\nFalse # used to be True\nsage: S.<x,y> = PolynomialRing(ZZ, implementation='NTL')\nTraceback (most recent call last):\n...\nValueError: The NTL implementation is not known for multivariate polynomial rings\n```\n\n\nThe last example used to return a ring that was equal but not identic to `ZZ['x','y']`!\n\nPolynomial rings are now equal if and only if they are identical. Coercions exist from the non-default to the default version of a ring (hence, from sparse to dense, from NTL to FLINT.\n\n```\nsage: R.<x> = PolynomialRing(ZZ)\nsage: S.<x> = PolynomialRing(ZZ, implementation='NTL')\nsage: R == S\nFalse\nsage: R.has_coerce_map_from(S)\nTrue\nsage: S.has_coerce_map_from(R)\nFalse\nsage: S.<x> = PolynomialRing(ZZ, sparse=True)\nsage: R == S\nFalse\nsage: R.has_coerce_map_from(S)\nTrue\nsage: S.has_coerce_map_from(R)\nFalse\n```\n\n\nBy consequence, the parent of a sum of polynomials is now unique - it used to depend on the summation order if dense and sparse summands were involved.\n\n__Documentation and examples__\n\nI think all changes are covered by doctests. Occasionally I fixed wrongly formatted docstrings.\n\n__Performance__\n\nHere are the new timings for the examples that we had discussed above. I use sage-4.7.alpha5 with the patches from this ticket applied, and I compare with timings that I had obtained with an unpatched version of sage-4.7.alpha5\n\nThere is no significant change in the startup time: I got `1.253` for sage.all in unpatched sage, but the margin of error seems rather wide.\n\n```\n$ sage -startuptime\n...\n## Slowest (including children)\n1.100 sage.all (None)\n0.279 sage.schemes.all (sage.all)\n0.178 twisted.persisted.styles (sage.all)\n0.164 elliptic_curves.all (sage.schemes.all)\n0.162 ell_rational_field (elliptic_curves.all)\n0.150 ell_number_field (ell_rational_field)\n...\n```\n\n\nHere is the example brought up by Jeroen. There is now a drastic speedup were previously was a drastic slow down:\n\n```\nsage: S = GF(9,'a')\nsage: %time for n in range(8): S = PolynomialRing(S,'w')\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.03 s\n# unpatched: 0.04 s\nsage: len(S.variable_names_recursive())\n8\nsage: timeit(\"S(0)\")\n625 loops, best of 3: 27.9 \u00b5s per loop\n# with only the other patches: 83 ms\n# unpatched: 121 \u00b5s\n```\n\n\nHere is the example brought up by Martin Raum:\n\n```\nsage: R = PolynomialRing(ZZ, ['a' + str(n) for n in range(10000)])\nsage: x = R.gen(0)\nsage: timeit('(2*x - 1)^2 + 5', number = 10^4)\n10000 loops, best of 3: 58.2 \u00b5s per loop\n# unpatched: 66.9 \u00b5s\n```\n\n\nHere are the arithmetic examples that I had provided earlier:\n\n```\nsage: R.<x> = ZZ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.58 \u00b5s per loop\n# unpatched: 23.6 \u00b5s\nsage: R.<x> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 8.4 \u00b5s per loop\n# unpatched: 25.8 \u00b5s\nsage: R.<x> = GF(3)[]   # sage.rings.polynomial.polynomial_zmod_flint.Polynomial_zmod_flint\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 66.4 \u00b5s per loop\n# unpatched: 90.1 \u00b5s\nsage: R.<x> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 75.4 \u00b5s per loop\n# unpatched: 117 \u00b5s\nsage: R.<x,y> = ZZ[]  # sage.rings.polynomial.multi_polynomial_libsingular.MPolynomial_libsingular\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 7.85 \u00b5s per loop\n# unpatched: 13.6 \u00b5s\nsage: R.<x,y> = QQ[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 7.33 \u00b5s per loop\n# unpatched: 16.9 \u00b5s\nsage: R.<x,y> = GF(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 6.59 \u00b5s per loop\n# unpatched: 11.2 \u00b5s\nsage: R.<x,y> = QQ['t'][]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 158 \u00b5s per loop\n# unpatched: 251 \u00b5s\nsage: R.<x,y> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 488 \u00b5s per loop\n# unpatched: 521 \u00b5s\nsage: R.<x> = Qp(3)[]\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 894 \u00b5s per loop\n# unpatched: 1.06 ms\nsage: R.<x> = PolynomialRing(GF(9,'a'), sparse=True)\nsage: timeit('(2*x-1)^2+5', number=10^4)\n10000 loops, best of 3: 236 \u00b5s per loop\n# unpatched: 265 \u00b5s\n```\n\n\nSo, in **all** examples there is a noticeable speedup.\n\n__Conclusion__\n\nThe new patch cleans coercion of polynomial rings, by enforcing uniqueness of parents.\n\nIt considerably improves the performance, even when comparing with the improvements that were introduced in the previous patches.\n\n`sage -testall -long` passed. So, it is finally ready for review again.\n\nDepends on sage-4.7\n\nApply Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-review.patch trac9944_polynomial_speedup.patch trac9944_abvar_endomorphism.patch trac9944_faster_and_cleaner_coercion.patch",
     "created_at": "2011-05-13T15:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99078",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98913",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2197,15 +2196,15 @@ Apply Apply 9944-poly-cat.patch 9944-poly-cat-doctests.patch trac-9944-poly-cat-
 
 ---
 
-archive/issue_comments_099079.json:
+archive/issue_comments_098914.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-05-13T15:44:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99079",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98914",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2215,15 +2214,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_099080.json:
+archive/issue_comments_098915.json:
 ```json
 {
     "body": "Replying to [comment:59 SimonKing]:\n> ...\n> __Improve Polynomial Base Injection Morphisms and use it for coercion__\n> \n>...\n> \n> The rule is now: If `P.an_element()` has a `_new_constant_poly` method then it is used. Otherwise, if one can construct a one element in `P` without calling coercion, and if it has `_rmul_` and if `_rmul_` does not return `None` then it is used. Otherwise, `P._element_constructor_` is used.\n\nI stand corrected. The above rule did hold for an intermediate (unpublished) patch version. With the new patch, all polynomial classes have `_new_constant_poly`, and it will *always* be used for basering injection.\n\nHence, there is a return statement after getting `_new_constant_poly`, and the subsequent lines of `sage.rings.polynomial.polynomial_element.PolynomialBaseInjection.__init__` will never be executed. I will remove them in the final patch version, but I first wait for input of a referee.",
     "created_at": "2011-05-13T17:02:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99080",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98915",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2243,15 +2242,15 @@ Hence, there is a return statement after getting `_new_constant_poly`, and the s
 
 ---
 
-archive/issue_comments_099081.json:
+archive/issue_comments_098916.json:
 ```json
 {
     "body": "Please rebase the last patch to #11139.",
     "created_at": "2011-05-16T08:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99081",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98916",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2261,15 +2260,15 @@ Please rebase the last patch to #11139.
 
 ---
 
-archive/issue_comments_099082.json:
+archive/issue_comments_098917.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-05-16T08:59:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99082",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98917",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2279,15 +2278,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_099083.json:
+archive/issue_comments_098918.json:
 ```json
 {
     "body": "This should clearly be reviewed as quick as possible, since otherwise it will need frequent rebaseing. I just don't have the time to do it all, but if anybody was willing to share the effort, I could spend some time on this in the next two or three days.",
     "created_at": "2011-05-16T09:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99083",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98918",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -2297,15 +2296,15 @@ This should clearly be reviewed as quick as possible, since otherwise it will ne
 
 ---
 
-archive/issue_comments_099084.json:
+archive/issue_comments_098919.json:
 ```json
 {
     "body": "So far I read till sage/rings/polynomial/laurent_polynomial_ring.py in the order that the patch is printed. Only one issue here:\nin free_module_homspace.py l.128 (new counting) a doctest is missing that checks that passing a function works fine.\n\nSimon, if you rebase this, could you also upload a diff file for the new and old patch? That would make my and possibly the life of all others easier.\n\nMartin\n\nPS: I am still building 4.7, so I haven't run any tests yet.",
     "created_at": "2011-05-16T11:00:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99084",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98919",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -2322,15 +2321,15 @@ PS: I am still building 4.7, so I haven't run any tests yet.
 
 ---
 
-archive/issue_comments_099085.json:
+archive/issue_comments_098920.json:
 ```json
 {
     "body": "Replying to [comment:64 mraum]:\n> So far I read till sage/rings/polynomial/laurent_polynomial_ring.py in the order that the patch is printed. Only one issue here:\n> in free_module_homspace.py l.128 (new counting) a doctest is missing that checks that passing a function works fine.\n\nIt **is** tested. The patch has added the following test:\n\n```\n\n            sage: V = span([[1/2,1,1],[3/2,2,1],[0,0,1]],ZZ)\n            sage: V.Hom(V).zero()\n            Free module morphism defined by the matrix\n            [0 0 0]\n            [0 0 0]\n            [0 0 0]\n            Domain: Free module of degree 3 and rank 3 over Integer Ring\n            Echelon ...\n            Codomain: Free module of degree 3 and rank 3 over Integer Ring\n            Echelon ...\n```\n\nIn unpatched sage-4.7.alpha5, you would get\n\n```\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (396, 0))\n\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (6924, 0))\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n...\nTypeError: 'function' object is not iterable\n```\n\n\n> Simon, if you rebase this, could you also upload a diff file for the new and old patch? That would make my and possibly the life of all others easier.\n\nOK.",
     "created_at": "2011-05-16T11:14:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99085",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98920",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2380,15 +2379,15 @@ OK.
 
 ---
 
-archive/issue_comments_099086.json:
+archive/issue_comments_098921.json:
 ```json
 {
     "body": "Patch's up!\n\nFor the record: I started with sage-4.7.alpha5, then the first five patches from here, then from #11139, and finally the sixth patch from here.\n\nI verified that the tests of sage.rings.ring pass, because that is what was modified, and sage.rings.ideal, because that is what the modification from #11139 is about.",
     "created_at": "2011-05-16T11:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99086",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98921",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2402,15 +2401,15 @@ I verified that the tests of sage.rings.ring pass, because that is what was modi
 
 ---
 
-archive/issue_comments_099087.json:
+archive/issue_comments_098922.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-05-16T11:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99087",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98922",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2420,15 +2419,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_099088.json:
+archive/issue_comments_098923.json:
 ```json
 {
     "body": "Replying to [comment:66 SimonKing]:\n> Patch's up!\n\nAnd diff file as well.",
     "created_at": "2011-05-16T11:24:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99088",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98923",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2441,15 +2440,15 @@ And diff file as well.
 
 ---
 
-archive/issue_comments_099089.json:
+archive/issue_comments_098924.json:
 ```json
 {
     "body": "With a freshly built 4.7 I get a reject in polynomial_element.pyx.  This only concerns the doctest for the BaseringInjection, so for the moment I leave it as it is and I run tests.",
     "created_at": "2011-05-16T19:42:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99089",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98924",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -2459,15 +2458,15 @@ With a freshly built 4.7 I get a reject in polynomial_element.pyx.  This only co
 
 ---
 
-archive/issue_comments_099090.json:
+archive/issue_comments_098925.json:
 ```json
 {
     "body": "Replying to [comment:68 mraum]:\n> With a freshly built 4.7 I get a reject in polynomial_element.pyx.\n\nStrange. I started with sage.4.7.alpha5, imported the patch from #11139 (it is only one, if I am not mistaken), and then the patches apply cleanly for me. Is there another merged ticket that interferes?",
     "created_at": "2011-05-17T21:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99090",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98925",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2480,15 +2479,15 @@ Strange. I started with sage.4.7.alpha5, imported the patch from #11139 (it is o
 
 ---
 
-archive/issue_comments_099091.json:
+archive/issue_comments_098926.json:
 ```json
 {
     "body": "For the record: I'm at sage/rings/polynomial/polynomial_zmod_flint.pxd\n\nSimon, you are completely right about the doctest with span. Could we add #indirect doctest so that attention is drawn to this?\n\nSome issues, that I encountered:\nin polynomial_element.pxy new line 5352 : what about p-adics? I haven't had the time to check, but perhaps you can already say something about it.\nin polynomial_element.pxy new line 6180ff : there are two returns that do not belong there\n\nin polynomial_real_mpfr_dense.pxy new line 57: Do you mean [0]?\nin polynomial_ring.py new line 468 : The coercing is the other way around.\n\nPlease don't forget to check the rejects that I've mentioned above. This could be a real problem for Jeroen.\n\nSo far, these are amazingly few issues for such a huge patch!\n\nHope to continue this by tomorrow (night).\n\nMartin",
     "created_at": "2011-05-17T21:57:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99091",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98926",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -2515,15 +2514,15 @@ Martin
 
 ---
 
-archive/issue_comments_099092.json:
+archive/issue_comments_098927.json:
 ```json
 {
     "body": "hg blame gives me that some changes were, for example, made to denominator. My last tags are 15689, so my version is the same as 4.7rc2.",
     "created_at": "2011-05-18T06:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99092",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98927",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -2533,15 +2532,15 @@ hg blame gives me that some changes were, for example, made to denominator. My l
 
 ---
 
-archive/issue_comments_099093.json:
+archive/issue_comments_098928.json:
 ```json
 {
     "body": "Replying to [comment:70 mraum]:\n> Simon, you are completely right about the doctest with span. Could we add #indirect doctest so that attention is drawn to this?\n\nOK, and perhaps I even add a comment like \"The method zero() calls this hom space with a function, not with a matrix, and that case had previously not been taken care of\".\n\n> Some issues, that I encountered:\n> in polynomial_element.pxy new line 5352 : what about p-adics? I haven't had the time to check, but perhaps you can already say something about it.\n\nYou mean the fact that I return `<Polynomial>self._parent(self[:n])` when it previously was `<Polynomial>self._parent(self[:n], check=False)`?\n\nI tried to reconstruct what made me do that change. It now seems to me that it was not because of a bug but because I thought `self[:n]` would return a truncated list of coefficients, which apparently is not the case (at least not always).\n\nAnyway. *If* you feed a truncated list of coefficients into the element constructor of a univariate polynomial ring, and if you give `check=False`, then you could create a polynomial whose list of coefficients ends with a zero. That is a problem for non-padic polynomials, since `valuation()` and other methods will result in an error.\n\nSo, `if` there are polynomials p so that `p[:n]` returns the list of the first n coefficients, then `check=False` is a bug.\n\nHowever, if `p[:n]` returns a polynomial that actually has the right parent, then the argument `check` will not be tested at all. So, `False` or `True` does not matter.\n\n**Conclusion:** Removing `check=True` should have no influence on performance, but may fix a potential problem (depending on the behaviour of `p[:n]`).\n\n\nIn any case, it can not be a problem for padics, even *if* `self[:n]` returns a list: I do not remove trailing zeroes from the coefficient list, but simply let the element constructor of `self._parent` decide what to do -- and the element constructor of padic and non-padic polynomial rings will do the right thing.\n\nHere is a padic example:\n\n```\nsage: P.<x> = Zp(5)[]\nsage: p = x^4\nsage: p.truncate(3).valuation()\n+Infinity\n```\n\nand that is because `p[:3].parent() is P`.\n\nI just found that the existing test for the `truncate` method in `sage.rings.polynomial.polynomial_element` does *not* test that method. Namely:\n\n```\nsage: R.<x> = ZZ[]; S.<y> = R[]\nsage: f = y^3 + x*y -3*x\nsage: from sage.misc.sageinspect import sage_getfile, sage_getsourcelines\nsage: sage_getfile(f.truncate)\n'/mnt/local/king/SAGE/sage-4.7.alpha5/devel/sage/sage/rings/polynomial/polynomial_element.pyx'\nsage: sage_getsourcelines(f.truncate)[1]\n6000\n```\n\n\nSo, `f.truncate` is a different truncate method. I'll change that doctest by making S a sparse polynomial ring:\n\n```\nsage: R.<x> = ZZ[]; S.<y> = PolynomialRing(R, sparse=True)\nsage: f = y^3 + x*y -3*x\nsage: sage_getfile(f.truncate)\n'/mnt/local/king/SAGE/sage-4.7.alpha5/devel/sage/sage/rings/polynomial/polynomial_element.pyx'\nsage: sage_getsourcelines(f.truncate)[1]\n5335\n```\n\n\n> in polynomial_element.pxy new line 6180ff : there are two returns that do not belong there\n\nYep. See post 60. I promised to remove the lines starting with the comment `# this is likely to be overridden below:` in the final patch version, but wanted to wait for input of a reviewer (thank you, reviewer!)\n\n> in polynomial_real_mpfr_dense.pxy new line 57: Do you mean [0]?\n\nYes, and I'm changing it, although `i` works as well:\n\n```\nsage: from sage.rings.polynomial.polynomial_real_mpfr_dense import PolynomialRealDense\nsage: PolynomialRealDense(RR['x'],None)\n0\n```\n\n\n> in polynomial_ring.py new line 468 : The coercing is the other way around.\n\nThank you!\n\n> Please don't forget to check the rejects that I've mentioned above. This could be a real problem for Jeroen.\n\nI'll try it, and will soon submit a new version of the last patch.",
     "created_at": "2011-05-18T07:25:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99093",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98928",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2631,15 +2630,15 @@ I'll try it, and will soon submit a new version of the last patch.
 
 ---
 
-archive/issue_comments_099094.json:
+archive/issue_comments_098929.json:
 ```json
 {
     "body": "Replying to [comment:71 mraum]:\n> hg blame gives me that some changes were, for example, made to denominator. My last tags are 15689, so my version is the same as 4.7rc2.\n\nI went through all patches that where merged since 4.7.alpha5 according to http://boxen.math.washington.edu/home/release/sage-4.7.rc2/tickets.html\n\nI found no patch touching sage.rings.polynomial.polynomial_element.pyx, actually no patch that contains the word fragment \"poly\".\n\nSo, I am still puzzled. Perhaps the release manager can state what ticket (in addition to #11139) I have to take into account.",
     "created_at": "2011-05-18T07:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99094",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98929",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2656,15 +2655,15 @@ So, I am still puzzled. Perhaps the release manager can state what ticket (in ad
 
 ---
 
-archive/issue_comments_099095.json:
+archive/issue_comments_098930.json:
 ```json
 {
     "body": "There shouldn't be any other patch to take into account (apart from #11139).  Could it be that you rebased to a non-clean sage-4.7.alpha5?\n\nActually, the best would be to rebase to [http://boxen.math.washington.edu/home/release/sage-4.7.1.alpha0/](http://boxen.math.washington.edu/home/release/sage-4.7.1.alpha0/).  It's not yet released, but it gives a good target for rebasing.",
     "created_at": "2011-05-18T10:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99095",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98930",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2676,15 +2675,15 @@ Actually, the best would be to rebase to [http://boxen.math.washington.edu/home/
 
 ---
 
-archive/issue_comments_099096.json:
+archive/issue_comments_098931.json:
 ```json
 {
     "body": "To be clear, I meant rebase to sage-4.7.1.alpha0 + #11139.",
     "created_at": "2011-05-18T10:41:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99096",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98931",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -2694,15 +2693,15 @@ To be clear, I meant rebase to sage-4.7.1.alpha0 + #11139.
 
 ---
 
-archive/issue_comments_099097.json:
+archive/issue_comments_098932.json:
 ```json
 {
     "body": "Replying to [comment:74 jdemeyer]:\n> There shouldn't be any other patch to take into account (apart from #11139).  Could it be that you rebased to a non-clean sage-4.7.alpha5?\n\nI don't think so.\n\nAnyway. I just finished the built of sage-4.7.rc2, and I found no problems at all with my patches. [attachment:trac9944_polynomial_speedup.patch] succeeded with a little fuzz, but there has been no rejection.\n\nTherefore I just submitted a new version of [attachment:trac9944_faster_and_cleaner_coercion.patch] that addresses Martin's comments, but the other patches can stay as they are, IMHO.",
     "created_at": "2011-05-18T12:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99097",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98932",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2719,15 +2718,15 @@ Therefore I just submitted a new version of [attachment:trac9944_faster_and_clea
 
 ---
 
-archive/issue_comments_099098.json:
+archive/issue_comments_098933.json:
 ```json
 {
     "body": "diff file for old and new patch version",
     "created_at": "2011-05-18T14:05:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99098",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98933",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2737,15 +2736,15 @@ diff file for old and new patch version
 
 ---
 
-archive/issue_comments_099099.json:
+archive/issue_comments_098934.json:
 ```json
 {
     "body": "Attachment [9944diff](tarball://root/attachments/some-uuid/ticket9944/9944diff) by @simon-king-jena created at 2011-05-18 14:06:56\n\nI also added the result of `diff trac9944_faster_and_cleaner_coercion.patch.orig trac9944_faster_and_cleaner_coercion.patch`, where `trac9944_faster_and_cleaner_coercion.patch.orig` is the patch version from before Mai 16, if that helps with the review.",
     "created_at": "2011-05-18T14:06:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99099",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98934",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2757,15 +2756,15 @@ I also added the result of `diff trac9944_faster_and_cleaner_coercion.patch.orig
 
 ---
 
-archive/issue_comments_099100.json:
+archive/issue_comments_098935.json:
 ```json
 {
     "body": "I'm done with reading. All tests (-long) passed, but with the latest version I want to try again. This might take some time.\n\nI encountered only two further issues:\nin polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this \"on the fly\". Can we have a doctest for this?\n\nI don't understand the changes to qqbar.py. And also I have the feeling I saw this kind of change already. Have you, perhaps, confused this change? If not, could you say, why you made it?\n\nThere is still the issue with the rejects. Will you rebase to 4.7.1? In that case the problem might disappear. I will start compiling the latest version right now. So by tomorrow, if you could provide a rebased version and all tests pass, I can give this a positive review.\nBut already: Greate work!\n\nMartin",
     "created_at": "2011-05-18T21:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99100",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98935",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -2785,15 +2784,15 @@ Martin
 
 ---
 
-archive/issue_comments_099101.json:
+archive/issue_comments_098936.json:
 ```json
 {
     "body": "Replying to [comment:78 mraum]:\n> I encountered only two further issues:\n> in polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this \"on the fly\". Can we have a doctest for this?\n\nI am trying. But probably you are right, it should probably be `except TypeError`.\n \n> I don't understand the changes to qqbar.py. And also I have the feeling I saw this kind of change already. Have you, perhaps, confused this change? If not, could you say, why you made it?\n\nThat change only concerns a doctest involving the function `sage_input`. Its purpose is to give a construction to any given object. Apparently, the coercion changes led to a different but equivalent construction in one of the examples.\n\n> There is still the issue with the rejects. \n\nIs there really? Meanwhile I got sage-4.7.rc2, and I did *not* get any rejects for any of the patches. I merely got an \"applied with fuzz\", but that's not a reject. Are you sure that you started with a fresh sage-4.7.rc2, applied #11139, and then applied the 6 patches in order as listed in the ticket description, and only these? Please do not apply [attachment:trac9944_second_referee.patch], if that was the problem.\n\n> Will you rebase to 4.7.1?\n\nI don't see the need, since it does apply to 4.7.rc2, IMHO.\n\nCheers,\nSimon",
     "created_at": "2011-05-19T06:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99101",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98936",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2822,15 +2821,15 @@ Simon
 
 ---
 
-archive/issue_comments_099102.json:
+archive/issue_comments_098937.json:
 ```json
 {
     "body": "Replying to [comment:79 SimonKing]:\n> Replying to [comment:78 mraum]:\n> > I encountered only two further issues:\n> > in polynomial_zz_pex.pyx new line 107f there is no specification of the except clause and I think raise TypeError ... is what belongs there. I know this is not your code, but it would be nice to fix this \"on the fly\". Can we have a doctest for this?\n> \n> I am trying. But probably you are right, it should probably be `except TypeError`.\n\nI think I misunderstood your remark: You do not complain about the fact that there is a bare `except`, but you noticed that the TypeError is constructed but not raised. That's odd, of course.\n\nI found the following example, in which the error should be raised:\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,'1234'])\n3*x + 3\n```\n\nHence, currently there is no error raised and the result is absolute nonsense.\n\nI'll fix that.",
     "created_at": "2011-05-19T06:19:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99102",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98937",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2860,15 +2859,15 @@ I'll fix that.
 
 ---
 
-archive/issue_comments_099103.json:
+archive/issue_comments_098938.json:
 ```json
 {
     "body": "The bug in polynomial_zz_pex.pyx is fixed, and the fix is doctested.\n\nBut having done that, I wonder whether raising an error is really what we want in this example. After all, the semantics of `R(...)` is: \"Make sense of the arguments, if possible at all - even if there is no coercion, there could still be a conversion.\"\n\nSo, here, `R([3,'1234'])` should perhaps better not result in an error but in `1234*x + 3`. What do you think?",
     "created_at": "2011-05-19T06:30:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99103",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98938",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2882,15 +2881,15 @@ So, here, `R([3,'1234'])` should perhaps better not result in an error but in `1
 
 ---
 
-archive/issue_comments_099104.json:
+archive/issue_comments_098939.json:
 ```json
 {
     "body": "To me this sounds reasonable.\n\nI have just made the changes to rebase to 4.7.1.alpha0. I think the point of Jeroen was that he will work with this version anyway and its only two tiny changes. Send your new patches, I will do the rebase and then I think Jeroen can imediatelly go for it (if he wants to).",
     "created_at": "2011-05-19T06:41:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99104",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98939",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -2902,15 +2901,15 @@ I have just made the changes to rebase to 4.7.1.alpha0. I think the point of Jer
 
 ---
 
-archive/issue_comments_099105.json:
+archive/issue_comments_098940.json:
 ```json
 {
     "body": "Replying to [comment:82 mraum]:\n> To me this sounds reasonable.\n\nWhat is \"this\"? Do you mean, raising an error is reasonable, or trying conversion rather than coercion is reasonable?",
     "created_at": "2011-05-19T06:50:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99105",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98940",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2923,15 +2922,15 @@ What is "this"? Do you mean, raising an error is reasonable, or trying conversio
 
 ---
 
-archive/issue_comments_099106.json:
+archive/issue_comments_098941.json:
 ```json
 {
     "body": "I found another bug in polynomial_zz_pex.pyx:\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,x])\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1154, 0))\nTraceback (most recent call last):\n...\nTypeError: polynomial() takes exactly one argument (0 given)\n```\n\n\nI suggest to not only catch an attribute error (namely when requesting `e.polynomial()`) but also a type error.\n\nAnd my preference is to do try a conversion, before raising an error on a failing coercion. If that sounds reasonable to you then I'll submit an update of my patch.",
     "created_at": "2011-05-19T08:38:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99106",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98941",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2958,15 +2957,15 @@ And my preference is to do try a conversion, before raising an error on a failin
 
 ---
 
-archive/issue_comments_099107.json:
+archive/issue_comments_098942.json:
 ```json
 {
     "body": "I would say this sounds indeed reasonable. No coercion was demanded for, so why to restrict to it. This was what you were talking about before, weren't you?",
     "created_at": "2011-05-19T09:58:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99107",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98942",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -2976,15 +2975,15 @@ I would say this sounds indeed reasonable. No coercion was demanded for, so why 
 
 ---
 
-archive/issue_comments_099108.json:
+archive/issue_comments_098943.json:
 ```json
 {
     "body": "Enforce uniqueness of parents for polynomial rings; further perfomance improvement for coercion",
     "created_at": "2011-05-19T10:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99108",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98943",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2994,15 +2993,15 @@ Enforce uniqueness of parents for polynomial rings; further perfomance improveme
 
 ---
 
-archive/issue_comments_099109.json:
+archive/issue_comments_098944.json:
 ```json
 {
     "body": "Attachment [trac9944_faster_and_cleaner_coercion.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_faster_and_cleaner_coercion.patch) by @simon-king-jena created at 2011-05-19 10:48:07\n\nWith the new patch version, we have\n\n```\nsage: K.<a>=GF(next_prime(2**60)**3)\nsage: R.<x> = PolynomialRing(K,implementation='NTL')\nsage: R([3,'1234'])\n1234*x + 3\nsage: R([3,'12e34'])\nTraceback (most recent call last):\n...\nTypeError: unable to convert '12e34' into the base ring\nsage: R([3,x])\nTraceback (most recent call last):\n...\nTypeError: unable to convert x into the base ring\n```\n\nSo, a conversion is attempted, and the error message is mentioning conversion and not coercion.\n\nThe tests of polynomial_zz_pex.pyx pass. I didn't test the rest of Sage.",
     "created_at": "2011-05-19T10:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99109",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98944",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3033,15 +3032,15 @@ The tests of polynomial_zz_pex.pyx pass. I didn't test the rest of Sage.
 
 ---
 
-archive/issue_comments_099110.json:
+archive/issue_comments_098945.json:
 ```json
 {
     "body": "Attachment [trac9944_faster_and_cleaner_coercion.2.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_faster_and_cleaner_coercion.2.patch) by mraum created at 2011-05-19 12:43:14\n\nRebase to 4.7.1.alpha0",
     "created_at": "2011-05-19T12:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99110",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98945",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3053,15 +3052,15 @@ Rebase to 4.7.1.alpha0
 
 ---
 
-archive/issue_comments_099111.json:
+archive/issue_comments_098946.json:
 ```json
 {
     "body": "Rebase to 4.7.1.alpha0",
     "created_at": "2011-05-19T12:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99111",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98946",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3071,15 +3070,15 @@ Rebase to 4.7.1.alpha0
 
 ---
 
-archive/issue_comments_099112.json:
+archive/issue_comments_098947.json:
 ```json
 {
     "body": "Attachment [trac-9944-polynomial_speedup.patch](tarball://root/attachments/some-uuid/ticket9944/trac-9944-polynomial_speedup.patch) by mraum created at 2011-05-19 12:47:37\n\nI couldn't replace the patches so the rebased versions have new names. I will attach a diff file in a second (only line numbers changed).\n\nEverything looks good to me now. I just want to run all tests one more time and then this can get a positive review.",
     "created_at": "2011-05-19T12:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99112",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98947",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3093,15 +3092,15 @@ Everything looks good to me now. I just want to run all tests one more time and 
 
 ---
 
-archive/issue_comments_099113.json:
+archive/issue_comments_098948.json:
 ```json
 {
     "body": "Attachment [coerce.diff](tarball://root/attachments/some-uuid/ticket9944/coerce.diff) by mraum created at 2011-05-19 12:48:11",
     "created_at": "2011-05-19T12:48:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99113",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98948",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3111,15 +3110,15 @@ Attachment [coerce.diff](tarball://root/attachments/some-uuid/ticket9944/coerce.
 
 ---
 
-archive/issue_comments_099114.json:
+archive/issue_comments_098949.json:
 ```json
 {
     "body": "Attachment [speedup.diff](tarball://root/attachments/some-uuid/ticket9944/speedup.diff) by mraum created at 2011-05-19 12:49:45\n\nUpdating the apply statements.",
     "created_at": "2011-05-19T12:49:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99114",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98949",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3131,15 +3130,15 @@ Updating the apply statements.
 
 ---
 
-archive/issue_comments_099115.json:
+archive/issue_comments_098950.json:
 ```json
 {
     "body": "Hi Martin,\n\ncould it be that you had worked with an old version of [attachment:trac9944_polynomial_speedup.patch]?\n\nThere was a misspelling that I had introduced into the documentation of polynomial base injection maps, in the original version of that patch: It was\n\n```\nWe use `_rmul_` and not `_lmul_` since...\n```\n\nwhere it should have been\n\n```\nWe use ``_rmul_`` and not ``_lmul_`` since...\n```\n\n\nI had corrected that typo and updated the patch. But in your version [attachment:trac-9944-polynomial_speedup.patch], you still have the single back tick.\n\nAnyway. If you apply my version or your version of the two patches, the result will be the same, namely two backticks around _rmul_ and _lmul_",
     "created_at": "2011-05-19T13:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99115",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98950",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3168,15 +3167,15 @@ Anyway. If you apply my version or your version of the two patches, the result w
 
 ---
 
-archive/issue_comments_099116.json:
+archive/issue_comments_098951.json:
 ```json
 {
     "body": "Replying to [comment:89 SimonKing]:\n> Anyway. If you apply my version or your version of the two patches, the result will be the same, namely two backticks around _rmul_ and _lmul_\n\nOr rather: The result will be in both cases that that text line will be completely removed.",
     "created_at": "2011-05-19T13:51:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99116",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98951",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3189,15 +3188,15 @@ Or rather: The result will be in both cases that that text line will be complete
 
 ---
 
-archive/issue_comments_099117.json:
+archive/issue_comments_098952.json:
 ```json
 {
     "body": "Ok, all tests still pass.",
     "created_at": "2011-05-19T13:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99117",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98952",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3207,15 +3206,15 @@ Ok, all tests still pass.
 
 ---
 
-archive/issue_comments_099118.json:
+archive/issue_comments_098953.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-05-19T13:55:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99118",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98953",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3225,15 +3224,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_099119.json:
+archive/issue_comments_098954.json:
 ```json
 {
     "body": "By now, all patches have a positive review, so, I am changing the distinction of patches with or without positive review in the list of to-be-applied patches in the ticket description.",
     "created_at": "2011-05-22T18:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99119",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98954",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3243,15 +3242,15 @@ By now, all patches have a positive review, so, I am changing the distinction of
 
 ---
 
-archive/issue_comments_099120.json:
+archive/issue_comments_098955.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-05-23T18:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99120",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98955",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3261,15 +3260,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_099121.json:
+archive/issue_comments_098956.json:
 ```json
 {
     "body": "I hope it is OK that I modified one test in sage.rings.polynomial.polynomial_ring, by the new patch [attachment:trac9944_addendum.patch].\n\nThat test used to be\n\n```\nsage: QQ['y'] < QQ['x']\nFalse\nsage: QQ['y'] < QQ['z']\nTrue\n```\n\n\nBut that is unsafe, because this ticket removes the custom `__cmp__` method of polynomial rings. So, the comparison relies on virtually random data such as `id(QQ['x'])`, if I am not mistaken.\n\nTherefore, it seems safer to me to replace it by\n\n```\nsage: QQ['y'] != QQ['x']\nTrue\nsage: QQ['y'] != QQ['z']\nTrue\n```\n",
     "created_at": "2011-05-23T18:46:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99121",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98956",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3301,15 +3300,15 @@ True
 
 ---
 
-archive/issue_comments_099122.json:
+archive/issue_comments_098957.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-05-23T18:46:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99122",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98957",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3319,15 +3318,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_099123.json:
+archive/issue_comments_098958.json:
 ```json
 {
     "body": "I'm not sure how happy the release manager is with changing tickets after positive review (except it is him who is doing it).\nBut I completely agree that this change makes sense. As expected, all tests pass, so I can change this back to positive review.",
     "created_at": "2011-05-23T20:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99123",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98958",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3338,15 +3337,15 @@ But I completely agree that this change makes sense. As expected, all tests pass
 
 ---
 
-archive/issue_comments_099124.json:
+archive/issue_comments_098959.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-05-23T20:00:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99124",
-    "user": "mraum"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98959",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mraum"
 }
 ```
 
@@ -3356,15 +3355,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_099125.json:
+archive/issue_comments_098960.json:
 ```json
 {
     "body": "Replying to [comment:96 mraum]:\n> I'm not sure how happy the release manager is with changing tickets after positive review (except it is him who is doing it).\n\nI reckon that it does not matter to the release manager, unless one re-opens a ticket that is already closed (but that has not been the case here).\n\n> But I completely agree that this change makes sense. As expected, all tests pass, so I can change this back to positive review.\n\nThank you!",
     "created_at": "2011-05-23T21:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99125",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98960",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3381,15 +3380,15 @@ Thank you!
 
 ---
 
-archive/issue_comments_099126.json:
+archive/issue_comments_098961.json:
 ```json
 {
     "body": "I removed the comment \"needs review\" from the ticket description.",
     "created_at": "2011-05-24T06:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99126",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98961",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3399,15 +3398,15 @@ I removed the comment "needs review" from the ticket description.
 
 ---
 
-archive/issue_comments_099127.json:
+archive/issue_comments_098962.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-05-24T12:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99127",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98962",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3417,15 +3416,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_099128.json:
+archive/issue_comments_098963.json:
 ```json
 {
     "body": "One minor issue: [attachment:trac9944_addendum.patch] needs a proper commit message.",
     "created_at": "2011-05-24T12:51:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99128",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98963",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -3435,15 +3434,15 @@ One minor issue: [attachment:trac9944_addendum.patch] needs a proper commit mess
 
 ---
 
-archive/issue_comments_099129.json:
+archive/issue_comments_098964.json:
 ```json
 {
     "body": "Attachment [trac9944_addendum.patch](tarball://root/attachments/some-uuid/ticket9944/trac9944_addendum.patch) by @simon-king-jena created at 2011-05-24 13:51:46\n\nMaking one doctest safer",
     "created_at": "2011-05-24T13:51:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99129",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98964",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3455,15 +3454,15 @@ Making one doctest safer
 
 ---
 
-archive/issue_comments_099130.json:
+archive/issue_comments_098965.json:
 ```json
 {
     "body": "Done!",
     "created_at": "2011-05-24T13:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99130",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98965",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3473,15 +3472,15 @@ Done!
 
 ---
 
-archive/issue_comments_099131.json:
+archive/issue_comments_098966.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2011-05-24T13:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99131",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98966",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3491,15 +3490,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_099132.json:
+archive/issue_comments_098967.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-05-31T09:50:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9943",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-99132",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9943#issuecomment-98967",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

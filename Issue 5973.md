@@ -6,7 +6,7 @@ archive/issues_005973.json:
     "body": "Assignee: mabshoff\n\nAs the title says. The spgk at #5817 has some issue, so resolve it now.\n\nSpkg coming up.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5973\n\n",
     "created_at": "2009-05-04T04:02:43Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005973.json:
     "title": "Fix spkg-check target for FLINT on OSX 64 bit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5973",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -35,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5973
 
 ---
 
-archive/issue_comments_047369.json:
+archive/issue_comments_047278.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-04T04:02:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5973",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5973#issuecomment-47369",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5973#issuecomment-47278",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +53,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_047370.json:
+archive/issue_comments_047279.json:
 ```json
 {
     "body": "The spkg at \n\n   http://sage.math.washington.edu/home/mabshoff/release-cycles-3.4.2/final/flint-1.2.4.p2.spkg\n\nfixes the problem. It only impacts OSX 64 bit.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T04:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5973",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5973#issuecomment-47370",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5973#issuecomment-47279",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -79,15 +79,15 @@ Michael
 
 ---
 
-archive/issue_comments_047371.json:
+archive/issue_comments_047280.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-04T05:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5973",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5973#issuecomment-47371",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5973#issuecomment-47280",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -97,15 +97,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_047372.json:
+archive/issue_comments_047281.json:
 ```json
 {
     "body": "Merged in Sage 3.4.2.final.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-04T05:25:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5973",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5973#issuecomment-47372",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5973#issuecomment-47281",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

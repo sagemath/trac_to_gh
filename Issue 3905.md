@@ -6,15 +6,13 @@ archive/issues_003905.json:
     "body": "Assignee: tba\n\nCC:  @robertwb @mwhansen\n\nKeywords: programming guide\n\nI've edited the programming guide; this has involved a fair amount of reorganization, some rewriting, some deleting, and some new stuff.  I hope I haven't removed anyone's favorite part.\n\nThe coercion section is unchanged, because of comments by craigcitro in #3738: I hope he produces a new coercion section for this document.\n\nThe section after coercion, on mutability, is unchanged, although it needs to be expanded.  I don't really understand the issues involved, so I don't think I'm the right person to do this.\n\nThe new version also has nothing on benchmarking or profiling.  Feel free to write something and produce a patch.\n\nMeanwhile, in addition to the patch, you can look at a PDF version of the guide here:\n[http://www.math.washington.edu/~palmieri/Sage/prog.pdf](http://www.math.washington.edu/~palmieri/Sage/prog.pdf)\n\nIssue created by migration from https://trac.sagemath.org/ticket/3905\n\n",
     "created_at": "2008-08-20T00:35:45Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] revision of programming guide",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3905",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: tba
@@ -42,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3905
 
 ---
 
-archive/issue_comments_027928.json:
+archive/issue_comments_027870.json:
 ```json
 {
     "body": "(By the way, this patch also fixes the issue raised in #3393.  If this patch gets merged into Sage, we should close that ticket, too.)",
     "created_at": "2008-08-20T00:38:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27928",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27870",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -60,15 +58,15 @@ archive/issue_comments_027928.json:
 
 ---
 
-archive/issue_comments_027929.json:
+archive/issue_comments_027871.json:
 ```json
 {
     "body": "Attachment [prog.patch](tarball://root/attachments/some-uuid/ticket3905/prog.patch) by @jhpalmieri created at 2008-08-20 02:40:00",
     "created_at": "2008-08-20T02:40:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27929",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27871",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -78,15 +76,15 @@ Attachment [prog.patch](tarball://root/attachments/some-uuid/ticket3905/prog.pat
 
 ---
 
-archive/issue_comments_027930.json:
+archive/issue_comments_027872.json:
 ```json
 {
     "body": "Page 1\n\n* either the list of authors should be extended (to include John\n  for example) or replaced by \"The Sage Group\" or something\n\nPage 2\n\n* Copyright 2008\n\nPage 3\n\n* \"Sage is a free mathematics software system. It is implemented\n  using Python, Cython, and C++, and uses GAP, GSL, Matplotlib,\n  Maxima, MWRANK, NetworkX, NTL, Numpy, PARI, Singular and many\n  specialized smaller systems and library. It is free and open\n  source, and is available under the terms of the GNU Public License\n  and compatible licenses.\"\n\nPage 9\n\n* Mention list of all available standard packages:\n  http://www.sagemath.org/links-components.html\n\n* \"Notably absent from this triad is a good system for exact linear\n  algebra (something MAGMA does extremely well), but this gap is\n  being \ufb01lled by code written for Sage or covered by specialsed\n  libraries like LinBox, IML and M4RI.\"\n\n* Again John needs to be added.\n\nPage 11\n\n* It might be worth mentioning that some methods do have uppercase\n  names, e.g. Matrix_integer_dense.LLL since it makes sense there.\n\nPage 12\n \n* I'm not sure about the encouragement of TXT files. It seems to be\n  hardly used and gets old quickly.\n\n* The AUTHORS block in the example doesn't contain dates and\n  descriptions of what the authors did\n\nPage 13\n\n* page overflow\n\nPage 14\n\n* right now it is actually GPLv2+\n\n* it might be a good idea to point to\n  http://www.sagemath.org/development-map.html\n\n* OUTPUT blocks are rarly present in practice, should that be fixed?\n\n* \"The EXAMPLES block doubles as doctests and each new function for\n  the Sage library must contain doctests.\"\n\n* In the example: strictly speaking, self isn't passed in explicitly\n  so I'd say it doesn't belong in the INPUT block. Discussions of\n  presupposed properties of self could/should be discussed in the\n  running text.\n\nPage 15\n\n* I think it is now valid to put LaTeX in the INPUT/OUTPUT blocks\n\nPage 16\n\n* again a strong emphasis: \"New code without examples/doctests will\n  not be accepted.\"\n\n* the randgen framework should be described in this document since\n  most random stuff doesn't need \"#random\".\n\nPage 17\n\n* page overflow\n\nPage 18\n\n* I think the numbers shown by the doctest framework are actually\n  correct\n\nPage 19\n\n* Do we actually run randomized tests regularly?\n\nPage 22\n\n* Maybe add: \"Do not include opening and closing $'s\"\n\n* It might be a good idea to showcase some special macros used in\n  Sage here.\n\n* the docstring is lacking the leading r\"\"\"\n\nPage 23\n\n* explain why we don't do __repr__\n\n* the \"am = adjancency_matrix\" contradicts the Python Zen: \"There\n  should be one|and preferably only one|obvious way to do\". It\n  shouldn't be encouraged in the development manual.\n\n* maybe the Python Zen should be cited? In any case: How about a link\n  to good Python docs?\n\nPage 24\n\n* these days Python ints are not much more efficient anymore,\n  sometimes more efficient yes, but not that badly.\n\n* The claim is not true anymore:\n  sage: time v = [ 2*i for i in range(1000000)]\n  CPU times: user 2.01 s, sys: 0.08 s, total: 2.09 s\n  Wall time: 2.12 s\n   \n  sage: time v = [ 2*i for i in range(1000000r)]\n  CPU times: user 2.15 s, sys: 0.10 s, total: 2.26 s\n  Wall time: 2.29 s\n\nPage 27\n\n* an example for a factory function + weakref is PolynomialRing in\n  sage.rings.polynomial.polynomial_ring\n\nPage 29\n\n* catching every exception might also hide a genuine error\n\n* page overflow\n\nPage 30\n\n* to avoid circular imports, maybe the \"late_import\" 'technique'\n  should be explained/outlined.\n\n* sage -optional is optional_packages() from within Sage.\n\nPage 31\n\n* what about Lisp?\n\n* one gets to use all C/C++ libraries shipped with Sage.\n\nPage 32\n\n* the extension also must be added to the packages list in setup.py\n\nPage 33\n\n* The timings aren't that different anymore (on my 2.6 Ghz Opteron):\n\n   sage: time [n for n in range(10^6) if is2pow(n)]\n   CPU times: user 0.60 s, sys: 0.00 s, total: 0.60 s\n   Wall time: 0.60 s\n\n   sage: time [n for n in range(10^6) if is2pow_slow(n)]\n   CPU times: user 1.01 s, sys: 0.04 s, total: 1.05 s\n   Wall time: 1.05 s\n\n* It is not necessarily true anymore that Pari does all of the heavy\n  lifting for matrices over ZZ. NTL, LinBox, IML and custom code took\n  over a fair part.\n\nPage 34\n \n* it needs to be explained why matfrobenius didn't need to be added\n  to a decl.pxi file.\n\n* the docstring of the matfrobenius method isn't up to Sage's\n  standards and should be fixed before being put in the Developer's\n  manual.\n\n* \"def matfrobenius\" doesn't have a docstring at all.\n\n* \"def frobenius\" has a bad docstring.\n\nPage 35\n\n* page overflow\n\nPage 38\n\n* are these examples still hard/valid?\n\n* Singular section needs update since we have libSingular now\n\nPage 41\n\n* program -> function\n\nPage 45\n\n* I'd suggest to only keep the \"Alternative\" version, since we want\n  users to use the convenience functions we added. No point in doing\n  it by hand if there are nice functions to help.\n\nPage 49\n\n* Programming manual -> Developer's manual\n\nPage 53\n\n* I don't think we need to cite ourselves when it comes to describing\n  the mailing lists. We can just leave out the quotes.\n\n* [sage-devel] is also used to discuss development issues and the\n  overall project direction\n\n* the IRC channels are missing: #sage-support and #sage-devel\n\n* the inclusion rules only apply to new SPKGs and not necessarily to\n  code in the Sage library\n\nPage 54\n\n* It would be good to describe what a SPKG is earlier and then give\n  the rules for inclusion of new SPKGs.\n\nPage 55\n\n* Mercurial doesn't need a password or am I missing something here?\n\n* Explain that HG mainly applies to the Sage library as opposed to  SPKGs\n\nPage 56\n\n* hg_sage.serve() listens on http://localhost:8000\n\nPage 60\n\n* maybe reproduce the skeleton of spkg-install scripts from:\n  http://wiki.sagemath.org/SPKG_Audit\n\n* mention/discussion of .hg repositories and SPKG.txt in SPKGs is\n  missing.\n\n* the proposed check for GAP is bad practice. Instead one should\n  check in SAGE_ROOT/spkgs/installed/ with \"latest_version\".\n\n* the spkg-install script given as an example is bad practice,\n  instead the skeleton from the Wiki should be used/fleshed out.\n\nPage 63\n\n* explain that the application for a Trac account is only to prevent\n  Spam, i.e. that everybody can have an account: entry barrier is low.\n\n* maybe link to the Google search pages to search in [sage-support]\n  and [sage-devel]\n\nPage 65\n \n* sage -ba is hardly needed. Its mention should be removed.\n\nPage 66\n\n* \"Sage administrator\" -> \"release manager\"",
     "created_at": "2008-08-20T15:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27930",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27872",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -356,15 +354,15 @@ Page 66
 
 ---
 
-archive/issue_comments_027931.json:
+archive/issue_comments_027873.json:
 ```json
 {
     "body": "Hi, I've posted my notes above. Please be soft on me w.r.t. to the wording which might be perceived as rude/commanding. I don't mean it that way rather these are just short notes with suggestions/impressions etc. I hope you don't take offense.",
     "created_at": "2008-08-20T15:03:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27931",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27873",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -374,15 +372,15 @@ Hi, I've posted my notes above. Please be soft on me w.r.t. to the wording which
 
 ---
 
-archive/issue_comments_027932.json:
+archive/issue_comments_027874.json:
 ```json
 {
     "body": "Thanks for the comments. I will be busy with some other work for a while, and then I'll have time to try to deal with these. I will probably have questions about some of them, because I don't understand everything that I probably should.\n\nMeanwhile, if you have more comments, please let me know.",
     "created_at": "2008-08-20T17:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27932",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27874",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -394,15 +392,15 @@ Meanwhile, if you have more comments, please let me know.
 
 ---
 
-archive/issue_comments_027933.json:
+archive/issue_comments_027875.json:
 ```json
 {
     "body": "my comments from trac as a patch",
     "created_at": "2008-08-23T22:49:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27933",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27875",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -412,15 +410,15 @@ my comments from trac as a patch
 
 ---
 
-archive/issue_comments_027934.json:
+archive/issue_comments_027876.json:
 ```json
 {
     "body": "Attachment [prog.2.patch](tarball://root/attachments/some-uuid/ticket3905/prog.2.patch) by @malb created at 2008-08-23 22:52:02\n\nHi there, I made my comments into a patch which ought to be applied after John's patch. This is not perfect or release quality and it still needs some heavy editing. Maybe someone can get through the new prog.tex and make sure it is not worse than what we currently ship and then we can apply both patches? Then, mhansen can convert the Developer's guide to Sphinx and we can go on editing it afterwards?",
     "created_at": "2008-08-23T22:52:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27934",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27876",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -432,15 +430,15 @@ Hi there, I made my comments into a patch which ought to be applied after John's
 
 ---
 
-archive/issue_comments_027935.json:
+archive/issue_comments_027877.json:
 ```json
 {
     "body": "As I said earlier, I don't have time to work on this right now, so thanks for doing this.  After a quick glance, malb's patch looks good to me (although I just looked at the diff, I didn't apply it and build the new documentation).  I was sort of thinking that the authors could be \"The Sage Hive Mind\" :), but the \"The Sage Group\" is okay, too.  I wonder if the lines\n\n```\nThis document was authored by William Stein, David Joyner, John Palmieri \nand others with the editorial help of Iftikhar Burhanuddin and Martin Albrecht. \n```\n\nshould be deleted altogether? Or replaced with (a footnote?)\n\n```\nThe first version of this document was authored by William Stein and David \nJoyner with the editorial help of ...; various members of the Sage group have \ncontributed to later editions, following the procedures outlined in \nChapters ?? and ??\n```\n\nI don't care that much about attribution, since I feel like I just reorganized and edited: I'm not sure that I added enough content to distinguish me from the rest of the Sage Group.  But I won't fight it if you want to keep my name there.  (The important thing from my point of view is that we're getting a more-or-less up-to-date version of this documentation, and that seems to be happening.)\n\nIn any case, I'm happy other people are working on this, too, and I'm looking forward to seeing the Sphinx version.",
     "created_at": "2008-08-24T16:24:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27935",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27877",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -468,15 +466,15 @@ In any case, I'm happy other people are working on this, too, and I'm looking fo
 
 ---
 
-archive/issue_comments_027936.json:
+archive/issue_comments_027878.json:
 ```json
 {
     "body": "Replying to [comment:7 jhpalmieri]:\n> In any case, I'm happy other people are working on this, too, and I'm looking forward to seeing the Sphinx version.\n\nLets sort out the attribution thing after the Sphinx-isation? But I also don't mind getting rid of that sentence.",
     "created_at": "2008-08-24T23:18:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27936",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27878",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -489,15 +487,15 @@ Lets sort out the attribution thing after the Sphinx-isation? But I also don't m
 
 ---
 
-archive/issue_comments_027937.json:
+archive/issue_comments_027879.json:
 ```json
 {
     "body": "By the way, do the patches here take care of #1647 and #1648? How about #2078? #2422?  (And I already pointed out #3393.)\n\nIf this is closed, I think those others should be as well.  (It's always fun to close a lot of tickets, right?)",
     "created_at": "2008-08-25T21:21:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27937",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27879",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -509,15 +507,15 @@ If this is closed, I think those others should be as well.  (It's always fun to 
 
 ---
 
-archive/issue_comments_027938.json:
+archive/issue_comments_027880.json:
 ```json
 {
     "body": "Thanks for pointing that out. I mentioned this ticket on the tickets you mentioned.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-25T21:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27938",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27880",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -531,15 +529,15 @@ Michael
 
 ---
 
-archive/issue_comments_027939.json:
+archive/issue_comments_027881.json:
 ```json
 {
     "body": "`mabshoff` is looking at the first patch, I've looked over the second patch, and the only complaint I have is that approx. line 312 isn't grammatical:\n\n\n```\nIt is {\\em very important} that you include your name in\nthe AUTHOR log, since everybody who submits code to \\sage\nto receive proper credit...\n```\n\n\nThey *should* receive proper credit...",
     "created_at": "2008-08-31T00:20:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27939",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27881",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -559,15 +557,15 @@ They *should* receive proper credit...
 
 ---
 
-archive/issue_comments_027940.json:
+archive/issue_comments_027882.json:
 ```json
 {
     "body": "Replying to [comment:11 rlm]:\n> They *should* receive proper credit...\n\nThat section is being deleted, so no harm done :)\n\nrlm and I read over the patches and it is better to get them in (even if they are slighly imperfect) than to let them bitrot. The remaining issues can be addressed via follow up tickets. This work by John and Martin is certainly long needed and a great improvement to the documentation.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T06:55:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27940",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27882",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -586,15 +584,15 @@ Michael
 
 ---
 
-archive/issue_comments_027941.json:
+archive/issue_comments_027883.json:
 ```json
 {
     "body": "Unfortunately Martin's patch breaks the doctests. Some of them can be fixed by adding \n\n```\nsage: K.<x> = QQ[]\nsage: G = PermutationGroup([[(1,2,3),(4,5)], [(1,2)]])\nsage: rgp = Gp()\nsage: def gap_randstring(n):\n...       current_randstate().set_seed_gap()\n...       return gap(n).SCRRandomString()\nsage: def rtest():\n...       current_randstate().set_seed_gp(rgp)\n...       return (ZZ.random_element(1000), RR.random_element(),\n...               K.random_element(), G.random_element(),\n...               gap_randstring(5),\n...               rgp.random(), ntl.ZZ_random(99999),\n...               random())\n```\n\nto a bunch of the randgen examples, but I consider that too ugly a solution to do it. \n\n\nWe could take out the randgen chapter for now and deal with it at a later ticket. Thoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T07:42:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27941",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27883",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -629,15 +627,15 @@ Michael
 
 ---
 
-archive/issue_comments_027942.json:
+archive/issue_comments_027884.json:
 ```json
 {
     "body": "The PRNG stuff is very well documented in the relevant modules. Perhaps a pointer in that direction is enough?",
     "created_at": "2008-08-31T07:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27942",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27884",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -647,15 +645,15 @@ The PRNG stuff is very well documented in the relevant modules. Perhaps a pointe
 
 ---
 
-archive/issue_comments_027943.json:
+archive/issue_comments_027885.json:
 ```json
 {
     "body": "Replying to [comment:14 rlm]:\n> The PRNG stuff is very well documented in the relevant modules. Perhaps a pointer in that direction is enough?\n\nI definitely agree, so I am merging malb's patch without the PRNG section. We will deal with that problem down the road. Time to get alpha3 out.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T07:53:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27943",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27885",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -672,15 +670,15 @@ Michael
 
 ---
 
-archive/issue_comments_027944.json:
+archive/issue_comments_027886.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.1.2.alpha3",
     "created_at": "2008-08-31T07:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27944",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27886",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -690,15 +688,15 @@ Merged both patches in Sage 3.1.2.alpha3
 
 ---
 
-archive/issue_comments_027945.json:
+archive/issue_comments_027887.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-31T07:54:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3905",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27945",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3905#issuecomment-27887",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

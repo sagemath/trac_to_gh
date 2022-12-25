@@ -6,7 +6,7 @@ archive/issues_004160.json:
     "body": "Assignee: mabshoff\n\n\n```\nserver2@sage:~$ sage -i polynomial-2.2.p4\nInstalling polynomial-2.2.p4\nCalling sage-spkg on polynomial-2.2.p4\nYou must set the SAGE_ROOT environment variable or\nrun this script from the SAGE_ROOT or \nSAGE_ROOT/local/bin/ directory.\npolynomial-2.2.p4\nMachine:\nLinux sage 2.6.18-6-amd64 #1 SMP Sun Feb 10 17:50:19 UTC 2008 x86_64 GNU/Linux\nDeleting directories from past builds of previous/current versions of polynomial-2.2.p4\n/home/server2/sage/local/bin/sage-spkg: file polynomial-2.2.p4 does not exist\nAttempting to download it.\nhttp://www.sagemath.org//packages/optional/polynomial-2.2.p4.spkg --> polynomial-2.2.p4.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/polynomial-2.2.p4.spkg --> polynomial-2.2.p4.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/polynomial-2.2.p4.spkg --> polynomial-2.2.p4.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/polynomial-2.2.p4.spkg --> polynomial-2.2.p4.spkg\n[ ]\n**********************************************************************\n* Unable to download polynomial-2.2.p4\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\nsage: Failed to download package polynomial-2.2.p4 from http://www.sagemath.org/\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4160\n\n",
     "created_at": "2008-09-20T18:38:53Z",
     "labels": [
-        "distribution",
+        "component: distribution",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004160.json:
     "title": "as of 2009-09-20 the polymake optional spkg fails to install",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4160",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -59,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4160
 
 ---
 
-archive/issue_comments_030198.json:
+archive/issue_comments_030137.json:
 ```json
 {
     "body": "This is a dupe of #3640. I have a fixed spkg-install that fixes this once and for all, but have not uploaded the spkg yet.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-20T20:30:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4160#issuecomment-30198",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4160#issuecomment-30137",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -81,15 +81,15 @@ Michael
 
 ---
 
-archive/issue_comments_030199.json:
+archive/issue_comments_030138.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-09-20T20:30:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4160",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4160#issuecomment-30199",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4160#issuecomment-30138",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

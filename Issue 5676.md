@@ -6,7 +6,7 @@ archive/issues_005676.json:
     "body": "Assignee: @williamstein\n\nCC:  @robertwb\n\n\n```\n    sage: 0xe\n    Traceback (most recent call last)\n    ...\n    TypeError: Unable to convert x (='0xe') to real number.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5676\n\n",
     "created_at": "2009-04-03T16:26:19Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_005676.json:
     "title": "Preparser identifies hex literals as floating point.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5676",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: @williamstein
@@ -38,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5676
 
 ---
 
-archive/issue_comments_044405.json:
+archive/issue_comments_044320.json:
 ```json
 {
     "body": "Unless someone is working on this I will bump it tomorrow. \n\nCheers,\n\nMichael",
     "created_at": "2009-04-15T04:15:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5676",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44405",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44320",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -60,15 +60,15 @@ Michael
 
 ---
 
-archive/issue_comments_044406.json:
+archive/issue_comments_044321.json:
 ```json
 {
     "body": "I have a fix for this, I'll post a patch in 1 hour.",
     "created_at": "2009-04-15T17:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5676",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44406",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44321",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -78,15 +78,15 @@ I have a fix for this, I'll post a patch in 1 hour.
 
 ---
 
-archive/issue_comments_044407.json:
+archive/issue_comments_044322.json:
 ```json
 {
     "body": "Attachment [sage-5676.patch](tarball://root/attachments/some-uuid/ticket5676/sage-5676.patch) by boothby created at 2009-04-15 18:39:53",
     "created_at": "2009-04-15T18:39:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5676",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44407",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44322",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -96,15 +96,15 @@ Attachment [sage-5676.patch](tarball://root/attachments/some-uuid/ticket5676/sag
 
 ---
 
-archive/issue_comments_044408.json:
+archive/issue_comments_044323.json:
 ```json
 {
     "body": "Yep, that works great.",
     "created_at": "2009-04-15T21:35:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5676",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44408",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44323",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -114,15 +114,15 @@ Yep, that works great.
 
 ---
 
-archive/issue_comments_044409.json:
+archive/issue_comments_044324.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.rc3.\n\nCheers,\n\nMichael",
     "created_at": "2009-04-15T23:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5676",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44409",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44324",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -136,15 +136,15 @@ Michael
 
 ---
 
-archive/issue_comments_044410.json:
+archive/issue_comments_044325.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-04-15T23:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5676",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44410",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5676#issuecomment-44325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

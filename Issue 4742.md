@@ -6,15 +6,14 @@ archive/issues_004742.json:
     "body": "Assignee: somebody\n\nCC:  @jdemeyer\n\nKeywords: elementary divisors\n\nPari has a function (\"nfsnf\" in GP, \"nfsmith\" in the C library) that calculates the generalised elementary divisors (a list of ideals rather than elements) for a matrix over the ring of integers of a number field. In the current pari stable (2.3.4) and testing (2.4.2) this is so broken as to be useless, but Karim Belabas has fixed it in svn, so when we catch up with Pari 2.4.3 it would be worth providing a Sage wrapper.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4742\n\n",
     "created_at": "2008-12-08T17:15:50Z",
     "labels": [
-        "number theory",
-        "minor",
-        "enhancement"
+        "component: number theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-feature",
     "title": "Wrap Pari's generalised Smith form (when it is fixed)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4742",
-    "user": "@loefflerd"
+    "user": "https://github.com/loefflerd"
 }
 ```
 Assignee: somebody
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4742
 
 ---
 
-archive/issue_comments_035873.json:
+archive/issue_comments_035802.json:
 ```json
 {
     "body": "Changing component from number theory to number fields.",
     "created_at": "2009-07-21T08:22:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35873",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35802",
+    "user": "https://github.com/loefflerd"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing component from number theory to number fields.
 
 ---
 
-archive/issue_comments_035874.json:
+archive/issue_comments_035803.json:
 ```json
 {
     "body": "Maybe one should look into this again after #9343 has been merged?",
     "created_at": "2010-08-01T21:52:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35874",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35803",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -69,15 +68,15 @@ Maybe one should look into this again after #9343 has been merged?
 
 ---
 
-archive/issue_comments_035875.json:
+archive/issue_comments_035804.json:
 ```json
 {
     "body": "is it fixed?",
     "created_at": "2019-04-01T22:19:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35875",
-    "user": "@simonbrandhorst"
+    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35804",
+    "user": "https://github.com/simonbrandhorst"
 }
 ```
 
@@ -87,15 +86,15 @@ is it fixed?
 
 ---
 
-archive/issue_comments_035876.json:
+archive/issue_comments_035805.json:
 ```json
 {
     "body": "I guess so....",
     "created_at": "2019-04-02T08:34:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35876",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35805",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -105,15 +104,15 @@ I guess so....
 
 ---
 
-archive/issue_comments_035877.json:
+archive/issue_comments_035806.json:
 ```json
 {
     "body": "I don't see how this is fixed?\n\nIt doesn't look to me that `nfsnf` or `nfsmith` is used anywhere in the sage library, and calling elementary_divisors on a matrix over a non-PID can fail, the following example is from the smith_form docstring\n\n\n```\n        Some examples over non-PID's work anyway::\n\n            sage: R.<s> = EquationOrder(x^2 + 5) # class number 2\n            sage: A = matrix(R, 2, 2, [s-1,-s,-s,2*s+1])\n            sage: D, U, V = A.smith_form()\n            sage: D, U, V\n            (\n            [     1      0]  [    4 s + 4]  [       1 -5*s + 6]\n            [     0 -s - 6], [    s s - 1], [       0        1]\n            )\n            sage: D == U*A*V\n            True\n\n        Others don't, but they fail quite constructively::\n\n            sage: matrix(R,2,2,[s-1,-s-2,-2*s,-s-2]).smith_form()\n            Traceback (most recent call last):\n            ...\n            ArithmeticError: Ideal Fractional ideal (2, s + 1) not principal\n```\n\n\nI assume the point of this ticket is that\n\n\n```\nmatrix(R,2,2,[s-1,-s-2,-2*s,-s-2]).elementary_divisors() # or .generalized_elementary_divisors()\n```\n\n\nshould return the output of PARI nfsnf called on the base field and the appropriate` Z_K` module?\n\nCurrently it tries to use Sage's generic algorithm which will only work if it runs on inputs where the ideals",
     "created_at": "2019-11-03T19:37:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35877",
-    "user": "@alexjbest"
+    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35806",
+    "user": "https://github.com/alexjbest"
 }
 ```
 
@@ -161,15 +160,15 @@ Currently it tries to use Sage's generic algorithm which will only work if it ru
 
 ---
 
-archive/issue_comments_035878.json:
+archive/issue_comments_035807.json:
 ```json
 {
     "body": "I was wondering, whether or not it is fixed in pari.",
     "created_at": "2019-11-04T13:38:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35878",
-    "user": "@simonbrandhorst"
+    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35807",
+    "user": "https://github.com/simonbrandhorst"
 }
 ```
 
@@ -179,15 +178,15 @@ I was wondering, whether or not it is fixed in pari.
 
 ---
 
-archive/issue_comments_035879.json:
+archive/issue_comments_035808.json:
 ```json
 {
     "body": "Oh I see, thank you. Sorry for the noise!\n\nBy way of an apology, I did some digging, the last time nfsnf was changed in pari was 2015 to fix a GC bug, and in 2008-12-06 `123- completely wrong results in nfsnf` was merged (also in 2014 `67- possibly wrong result in nfsnf`).\n\nSo I'd say definitely yes it was fixed, probably the Dec 08 commit.\n\nLooking at the original message of Davids to the Pari list https://pari.math.u-bordeaux.fr/archives/pari-users-0812/msg00004.html and Karim's simplified version of his example I can run his example under `sage -gp`\n\n\n```\n+? E = nfinit(x^2 - x + 2);\n+? M = [1, 0, x; 0, x, 0; 0,0,2+x];\n+?   MM = matalgtobasis(E, M);\n+? N = [[1, 0; 0, 1], [1, 0; 0, 1], [1, 0; 0, 1]];\n+? nfsnf(E, [MM, N, N])\n%7 = [[8, 2; 0, 1], [2, 0; 0, 1], [1, 0; 0, 1]]\n```\n\n\n\n```\n  E = nfinit(x^2 - x + 2);\n  M = [1, 0, x; 0, x, 0; 0,0,2+x];\n  N = [1, 1, 1];\n  nfsnf(E, [M, N, N])\n %16 = [[8, 2; 0, 1], [2, 0; 0, 1], [1, 0; 0, 1]]\n```\n\n\n\ntl; dr: yes!",
     "created_at": "2019-11-07T23:39:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4742",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35879",
-    "user": "@alexjbest"
+    "url": "https://github.com/sagemath/sagetest/issues/4742#issuecomment-35808",
+    "user": "https://github.com/alexjbest"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_006715.json:
     "body": "Assignee: tba\n\nAs the subject says.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6715\n\n",
     "created_at": "2009-08-09T16:09:50Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "spell-check all modules under sage/logic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6715",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6715
 
 ---
 
-archive/issue_comments_055114.json:
+archive/issue_comments_055012.json:
 ```json
 {
     "body": "Attachment [trac_6715-unix-endlines.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-unix-endlines.patch) by mvngu created at 2009-08-09 16:28:19\n\nbased on Sage 4.1.1.rc2",
     "created_at": "2009-08-09T16:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55114",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55012",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -49,15 +48,15 @@ based on Sage 4.1.1.rc2
 
 ---
 
-archive/issue_comments_055115.json:
+archive/issue_comments_055013.json:
 ```json
 {
     "body": "Patches should be applied in this order:\n1. `trac_6715-unix-endlines.patch` --- Most files under the directory `sage/logic` are in the DOS text file format. This patch converts all such files to the Unix text file format.\n2. `trac_6715-spell-check-logic.patch` --- This patch spell-checks all modules under `sage/logic`.",
     "created_at": "2009-08-09T16:42:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55115",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55013",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -69,15 +68,15 @@ Patches should be applied in this order:
 
 ---
 
-archive/issue_comments_055116.json:
+archive/issue_comments_055014.json:
 ```json
 {
     "body": "based on Sage 4.1.1.rc2",
     "created_at": "2009-08-11T12:23:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55116",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55014",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -87,15 +86,15 @@ based on Sage 4.1.1.rc2
 
 ---
 
-archive/issue_comments_055117.json:
+archive/issue_comments_055015.json:
 ```json
 {
     "body": "Attachment [trac_6715-spell-check-logic.patch](tarball://root/attachments/some-uuid/ticket6715/trac_6715-spell-check-logic.patch) by @haraldschilly created at 2009-08-14 10:18:39\n\nlooks good, only comments and doc-lines touched, no code or doctests.\n\nthere is just a \"newline missing\" note from mercurial at the bottom of the first part of the first patch. i think it is still ok, though (line 123 in sage/logic/booleval.py, first patch).",
     "created_at": "2009-08-14T10:18:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55117",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55015",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -109,15 +108,15 @@ there is just a "newline missing" note from mercurial at the bottom of the first
 
 ---
 
-archive/issue_comments_055118.json:
+archive/issue_comments_055016.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-08-14T10:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55118",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55016",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -127,15 +126,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_055119.json:
+archive/issue_comments_055017.json:
 ```json
 {
     "body": "Merged both patches.",
     "created_at": "2009-08-14T10:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55119",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6715#issuecomment-55017",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

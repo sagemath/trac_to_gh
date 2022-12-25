@@ -6,7 +6,7 @@ archive/issues_007840.json:
     "body": "Assignee: @williamstein\n\nCC:  @mwhansen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7840\n\n",
     "created_at": "2010-01-04T07:11:16Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007840.json:
     "title": "include sagenb-0.4.9 in sage-4.3.1.alpha0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7840",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7840
 
 ---
 
-archive/issue_comments_067909.json:
+archive/issue_comments_067792.json:
 ```json
 {
     "body": "The new spkg is here:\n\n   http://boxen.math.washington.edu/home/wstein/patches/sagenb/sagenb-0.4.9.spkg",
     "created_at": "2010-01-04T07:13:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7840#issuecomment-67909",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7840#issuecomment-67792",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -51,15 +51,15 @@ The new spkg is here:
 
 ---
 
-archive/issue_comments_067910.json:
+archive/issue_comments_067793.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-04T07:14:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7840",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7840#issuecomment-67910",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7840#issuecomment-67793",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

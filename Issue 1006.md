@@ -6,15 +6,14 @@ archive/issues_001006.json:
     "body": "Assignee: mabshoff\n\nKeywords: Leopard\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1006\n\n",
     "created_at": "2007-10-26T20:44:34Z",
     "labels": [
-        "distribution",
-        "major",
+        "component: distribution",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Port Sage to 64 bit OSX 10.5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1006",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1006
 
 ---
 
-archive/issue_comments_006149.json:
+archive/issue_comments_006129.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-10-26T20:44:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6149",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6129",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -49,15 +48,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_006150.json:
+archive/issue_comments_006130.json:
 ```json
 {
     "body": "When this is fixed, inst/inst.tex should be updated; I just changed that file to say that OS X 10.5 is not yet supported.",
     "created_at": "2007-10-27T03:55:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6150",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6130",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -67,15 +66,15 @@ When this is fixed, inst/inst.tex should be updated; I just changed that file to
 
 ---
 
-archive/issue_comments_006151.json:
+archive/issue_comments_006131.json:
 ```json
 {
     "body": "Changing keywords from \"Leopard\" to \"Leopard, 64 bit\".",
     "created_at": "2008-01-20T02:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6151",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6131",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing keywords from "Leopard" to "Leopard, 64 bit".
 
 ---
 
-archive/issue_comments_006152.json:
+archive/issue_comments_006132.json:
 ```json
 {
     "body": "A short update: I am tracking progress at http://wiki.sagemath.org/osx64\n\nSo far there are a couple problems:\n\n* libSingular segfaults on import\n* numpy fails to build\n* twistedweb2 depends on some OSX specfic python extensions\n\nOther than that it is mostly supplying the right flags in the build process. I am currently merging those OSX 10.5 64 bit build fixes for every spkg I touch.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-20T02:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6152",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6132",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -115,15 +114,15 @@ Michael
 
 ---
 
-archive/issue_comments_006153.json:
+archive/issue_comments_006133.json:
 ```json
 {
     "body": "Sage 3.0.2.alpha1 will contain a massive number of fixes. I cannot believe that it has been seven month since we opened this ticket.\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T05:55:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6153",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6133",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +136,15 @@ Michael
 
 ---
 
-archive/issue_comments_006154.json:
+archive/issue_comments_006134.json:
 ```json
 {
     "body": "And time marches on: ten months and counting, but 3.1.2 will get us very close to a working OSX 64 bit port. But we need to push hard to get it a fully working port.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-31T09:24:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6154",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6134",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -159,15 +158,15 @@ Michael
 
 ---
 
-archive/issue_comments_006155.json:
+archive/issue_comments_006135.json:
 ```json
 {
     "body": "Provided one uses the new experimental Fortran.spkg Sage 3.3.alpha5 and later build out of the box in 64 bit mode on OSX 10.5. There are some doctesting issues left, but those will be addressed via other tickets.\n\nSo I am closing this \"meta\" ticket - it took way too long to fix this.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-08T03:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6155",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6135",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -183,15 +182,15 @@ Michael
 
 ---
 
-archive/issue_comments_006156.json:
+archive/issue_comments_006136.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-08T03:14:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1006",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6156",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1006#issuecomment-6136",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

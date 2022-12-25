@@ -6,7 +6,7 @@ archive/issues_003860.json:
     "body": "Assignee: mabshoff\n\n\n```\nbuilding 'mercurial.osutil' extension\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/home/wstein/iras/build/sage-3.1.alpha2/local/include/python2.5 -c mercurial/osutil.c -o build/temp.linux-ia64-2.5/mercurial/osutil.o\ngcc -pthread -shared build/temp.linux-ia64-2.5/mercurial/osutil.o -o build/lib.linux-ia64-2.5/mercurial/osutil.so\nbuilding 'hgext.inotify.linux._inotify' extension\ncreating build/temp.linux-ia64-2.5/hgext\ncreating build/temp.linux-ia64-2.5/hgext/inotify\ncreating build/temp.linux-ia64-2.5/hgext/inotify/linux\ngcc -fno-strict-aliasing -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -fPIC -I/home/wstein/iras/build/sage-3.1.alpha2/loc\nal/include/python2.5 -c hgext/inotify/linux/_inotify.c -o build/temp.linux-ia64-2.5/hgext/inotify/linux/_inotify.o\nhgext/inotify/linux/_inotify.c:172: error: \u2018IN_ONLYDIR\u2019 undeclared here (not in a function)\nhgext/inotify/linux/_inotify.c:173: error: \u2018IN_DONT_FOLLOW\u2019 undeclared here (not in a function)\nhgext/inotify/linux/_inotify.c:174: error: \u2018IN_MASK_ADD\u2019 undeclared here (not in a function)\nhgext/inotify/linux/_inotify.c: In function \u2018define_consts\u2019:\nhgext/inotify/linux/_inotify.c:266: warning: passing argument 3 of \u2018define_const\u2019 makes integer from pointer without a\n cast\nhgext/inotify/linux/_inotify.c:267: warning: passing argument 3 of \u2018define_const\u2019 makes integer from pointer without a\n cast\nhgext/inotify/linux/_inotify.c:268: warning: passing argument 3 of \u2018define_const\u2019 makes integer from pointer without a\n cast\nerror: command 'gcc' failed with exit status 1\nError building mercurial\n\nreal    0m3.062s\nuser    0m2.308s\nsys     0m0.280s\nsage: An error occurred while installing mercurial-1.01.p0\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3860\n\n",
     "created_at": "2008-08-14T22:16:42Z",
     "labels": [
-        "build",
+        "component: build",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003860.json:
     "title": "itanium -- can't build mercurial extension",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3860",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -58,15 +58,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3860
 
 ---
 
-archive/issue_comments_027508.json:
+archive/issue_comments_027450.json:
 ```json
 {
     "body": "This is on IRAS.  It builds fine on Cleo.",
     "created_at": "2008-08-14T22:18:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3860",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27508",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27450",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -76,15 +76,15 @@ This is on IRAS.  It builds fine on Cleo.
 
 ---
 
-archive/issue_comments_027509.json:
+archive/issue_comments_027451.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-08-15T10:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3860",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27509",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27451",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -94,15 +94,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_027510.json:
+archive/issue_comments_027452.json:
 ```json
 {
     "body": "The spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.1/rc0/mercurial-1.01.p1.spkg\n\nfixes the issue by disabling the inotify extension which is broken on SLES 10 Itanium for some reason.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-15T10:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3860",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27510",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27452",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -120,15 +120,15 @@ Michael
 
 ---
 
-archive/issue_comments_027511.json:
+archive/issue_comments_027453.json:
 ```json
 {
     "body": "Merged in Sage 3.1.rc0",
     "created_at": "2008-08-15T11:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3860",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27511",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27453",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -138,15 +138,15 @@ Merged in Sage 3.1.rc0
 
 ---
 
-archive/issue_comments_027512.json:
+archive/issue_comments_027454.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-15T11:04:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3860",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27512",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3860#issuecomment-27454",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

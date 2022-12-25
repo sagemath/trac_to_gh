@@ -6,15 +6,14 @@ archive/issues_001110.json:
     "body": "Assignee: boothby\n\ntrivial patch, but everything is a trac ticket :-)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1110\n\n",
     "created_at": "2007-11-06T04:33:17Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "[with trivial patch] improve notebook help message",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1110",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1110
 
 ---
 
-archive/issue_comments_006715.json:
+archive/issue_comments_006695.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-06T22:10:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1110",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1110#issuecomment-6715",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1110#issuecomment-6695",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -47,15 +46,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_006716.json:
+archive/issue_comments_006696.json:
 ```json
 {
     "body": "Attachment [trac1110.patch](tarball://root/attachments/some-uuid/ticket1110/trac1110.patch) by mabshoff created at 2007-11-06 22:10:01\n\napplied to 2.8.12.rc0",
     "created_at": "2007-11-06T22:10:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1110",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1110#issuecomment-6716",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1110#issuecomment-6696",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

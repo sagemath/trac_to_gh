@@ -6,15 +6,14 @@ archive/issues_004012.json:
     "body": "Assignee: boothby\n\nEdit tab gives:\n\n```\n\n\nPrint a & b\nsystem:sage\n\n{{{id=3|\n%latex\nx^2\n///\n}}}\n\n{{{id=0|\nprint \"a\"\n///\na\n}}}\n\n{{{id=1|\nprint \"b\"\n///\nb\n}}}\n\n{{{id=2|\n\n///\n}}}\n\n\n\n```\n\n\nText tab gives:\n\n```\nsage: %latex\nsage: x^2\nsage: print \"a\"\na\nsage: print \"b\"\nb\n```\n\n\nThe Text tab should show a textual version similar to that of the Edit tab.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4012\n\n",
     "created_at": "2008-08-31T02:08:21Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "notebook -- Text tab gives bad text version of worksheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4012",
-    "user": "TimothyClemans"
+    "user": "https://trac.sagemath.org/admin/accounts/users/TimothyClemans"
 }
 ```
 Assignee: boothby
@@ -77,15 +76,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4012
 
 ---
 
-archive/issue_comments_028955.json:
+archive/issue_comments_028897.json:
 ```json
 {
     "body": "WT?\n\n1. Why does this ticket have \"major\" priority?\n2. Why is this a \"defect\"?\n3. Why would we have two buttons that do the same thing?\n4. The text tab *does* show a textual version of the notebook.\n\nThe edit tab allows one to edit the worksheet.  The text tab gives output similar to that which you would get by using the command line.  What's the problem?",
     "created_at": "2009-01-22T00:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4012#issuecomment-28955",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4012#issuecomment-28897",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -102,15 +101,15 @@ The edit tab allows one to edit the worksheet.  The text tab gives output simila
 
 ---
 
-archive/issue_comments_028956.json:
+archive/issue_comments_028898.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-01-22T00:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4012#issuecomment-28956",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/4012#issuecomment-28898",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005446.json:
     "body": "Assignee: somebody\n\n`real_mpfi.pyx` uses the wrong function to create `RealField`s, so it creates new ones instead of using the previously-cached ones.\n\nFixed in the attached patch.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5446\n\n",
     "created_at": "2009-03-06T02:16:10Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch, needs review] RealIntervalField creates non-unique RealFields",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5446",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: somebody
@@ -32,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5446
 
 ---
 
-archive/issue_comments_042105.json:
+archive/issue_comments_042023.json:
 ```json
 {
     "body": "Attachment [rif-sidesteps-rr-uniqueness.patch](tarball://root/attachments/some-uuid/ticket5446/rif-sidesteps-rr-uniqueness.patch) by @craigcitro created at 2009-03-15 23:27:03\n\nYep, this looks good. Out of curiousity, is there a reason `RIF` itself isn't unique (or just \"no one's gotten around to it\")?",
     "created_at": "2009-03-15T23:27:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5446#issuecomment-42105",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/5446#issuecomment-42023",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -52,15 +51,15 @@ Yep, this looks good. Out of curiousity, is there a reason `RIF` itself isn't un
 
 ---
 
-archive/issue_comments_042106.json:
+archive/issue_comments_042024.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-23T20:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5446#issuecomment-42106",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5446#issuecomment-42024",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -70,15 +69,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_042107.json:
+archive/issue_comments_042025.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T20:35:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5446",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5446#issuecomment-42107",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5446#issuecomment-42025",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

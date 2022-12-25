@@ -6,15 +6,13 @@ archive/issues_002215.json:
     "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nit seems like matrix(thing) should usually work if we can think of \"thing\" as a matrix.  In this case, we even already have a p.to_matrix() function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2215\n\n",
     "created_at": "2008-02-19T22:37:39Z",
     "labels": [
-        "algebraic geometry",
-        "major",
-        "enhancement"
+        "component: algebraic geometry"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "if p is a permutation, matrix(p) should call p.to_matrix()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2215",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2215
 
 ---
 
-archive/issue_comments_014630.json:
+archive/issue_comments_014599.json:
 ```json
 {
     "body": "The fix to this would be to add a _matrix_ method to Permutation_class ( which can call .to_matrix() )",
     "created_at": "2008-02-20T03:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14630",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14599",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +47,15 @@ The fix to this would be to add a _matrix_ method to Permutation_class ( which c
 
 ---
 
-archive/issue_comments_014631.json:
+archive/issue_comments_014600.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to combinatorics.",
     "created_at": "2008-02-20T03:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14631",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14600",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +65,15 @@ Changing component from algebraic geometry to combinatorics.
 
 ---
 
-archive/issue_comments_014632.json:
+archive/issue_comments_014601.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-02-20T03:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14632",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14601",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_014633.json:
+archive/issue_comments_014602.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2008-02-20T03:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14633",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14602",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -103,15 +101,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_014634.json:
+archive/issue_comments_014603.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @mwhansen.",
     "created_at": "2008-02-20T03:45:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14634",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14603",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -121,15 +119,15 @@ Changing assignee from @williamstein to @mwhansen.
 
 ---
 
-archive/issue_comments_014635.json:
+archive/issue_comments_014604.json:
 ```json
 {
     "body": "Attachment [2215.patch](tarball://root/attachments/some-uuid/ticket2215/2215.patch) by @wdjoyner created at 2008-02-20 18:17:02\n\nI created an hg bundle which modifies this patch. It makes it such that \nperm -> matrix(perm) is consistent with the corresponding map on perm gp\nelements and respects multiplication. It passes sage -t but sage -testall failed\nin *many* places, though none which seemed related to this patch.",
     "created_at": "2008-02-20T18:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14635",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14604",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -144,15 +142,15 @@ in *many* places, though none which seemed related to this patch.
 
 ---
 
-archive/issue_comments_014636.json:
+archive/issue_comments_014605.json:
 ```json
 {
     "body": "The bundle was too large to attach (if that makes any sense). It is posted to\nhttp://sage.math.washington.edu/home/wdj/patches/perms-mat_20-02-2008.hg",
     "created_at": "2008-02-20T18:20:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14636",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14605",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -163,15 +161,15 @@ http://sage.math.washington.edu/home/wdj/patches/perms-mat_20-02-2008.hg
 
 ---
 
-archive/issue_comments_014637.json:
+archive/issue_comments_014606.json:
 ```json
 {
     "body": "The bundle is against the *2.10.1 release*, ergo reverts all patches and bundle from the roughly 120 tickets closed so far against 2.10.2. Please export the commits you made after applying Mike Hansen's 2215.patch and attach those to the tickets.\n\nTo reiterate a message which I should be pushing on sage-devel: bundles are evil, especially for single commits.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T18:25:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14637",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14606",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -187,15 +185,15 @@ Michael
 
 ---
 
-archive/issue_comments_014638.json:
+archive/issue_comments_014607.json:
 ```json
 {
     "body": "(a) I have no idea how I used 2.10.1 instead of 2.10.2.a1.\n(b) I am missing something. Use patches not bundles? I don't even know how to make\na patch. I am used to following http://www.sagemath.org/doc/html/prog/node72.html\nIs there a corresponding list of commands for patches?",
     "created_at": "2008-02-20T18:43:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14638",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14607",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -208,15 +206,15 @@ Is there a corresponding list of commands for patches?
 
 ---
 
-archive/issue_comments_014639.json:
+archive/issue_comments_014608.json:
 ```json
 {
     "body": "To quote from that page:\n\n```\nYou can make all changes in the repository you're working in as a bundle by\ntyping hg_sage.bundle('mybundle') (this creates an hg bundle mybundle.hg). \nAlternatively, you can export any particular changeset as plain text \npatches by typing hg_sage.export(...); note that each individual changeset \nis recorded as a different patch. hg_sage.export(...) needs at least the \nargument revs - integer or list of integers (revision numbers); use the \nhg_sage.log() function to see them. An optional second argument is a \n'patch_filename', default is '(changeset_revision_number).patch'.\n```\n\nThe command `hg_sage.bundle('mybundle')` creates a bundle against the current main repo, which is at 2.10.1. Use `hg_sage.export(...)` with the right commit numbers, which `hg_sage.log()` does tell you.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T18:53:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14639",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14608",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -243,15 +241,15 @@ Michael
 
 ---
 
-archive/issue_comments_014640.json:
+archive/issue_comments_014609.json:
 ```json
 {
     "body": "Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2215/8631.patch) by @wdjoyner created at 2008-02-20 19:04:32",
     "created_at": "2008-02-20T19:04:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14640",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14609",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -261,15 +259,15 @@ Attachment [8631.patch](tarball://root/attachments/some-uuid/ticket2215/8631.pat
 
 ---
 
-archive/issue_comments_014641.json:
+archive/issue_comments_014610.json:
 ```json
 {
     "body": "Thanks! Please see attached.",
     "created_at": "2008-02-20T19:05:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14641",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14610",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -279,15 +277,15 @@ Thanks! Please see attached.
 
 ---
 
-archive/issue_comments_014642.json:
+archive/issue_comments_014611.json:
 ```json
 {
     "body": "I guess you are giving Mike's patch a positive review. If so please change the summary from \"[with patch, needs review]\" to \"[with patch, with positive review]\". It also looks like I need to apply only the second patch?\n\nCheers,\n\nMichael",
     "created_at": "2008-02-20T19:12:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14642",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14611",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -301,15 +299,15 @@ Michael
 
 ---
 
-archive/issue_comments_014643.json:
+archive/issue_comments_014612.json:
 ```json
 {
     "body": "Yes, only the 2nd one.",
     "created_at": "2008-02-20T21:09:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14643",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14612",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -319,15 +317,15 @@ Yes, only the 2nd one.
 
 ---
 
-archive/issue_comments_014644.json:
+archive/issue_comments_014613.json:
 ```json
 {
     "body": "I don't like that matrix(p) and p.to_matrix() will give out different things.  In the documentation for to_matrix(), I specifically said that matrix multiplication will only agree with the permutation  multiplication when the multiplication is not done \"English-style\".  The proper way to change things would be to modify to_matix() and its documentation, and make sure other things don't break.",
     "created_at": "2008-02-20T21:42:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14644",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14613",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -337,15 +335,15 @@ I don't like that matrix(p) and p.to_matrix() will give out different things.  I
 
 ---
 
-archive/issue_comments_014645.json:
+archive/issue_comments_014614.json:
 ```json
 {
     "body": "I tried to figure out to_matrix but failed. It seemed to me that it was\nimplicitly using a global variable, permutation_options or something like that.\nI though global variables were Bad. Is there a reason not to use optional\nparameters instead? Anyway, I think the matrix command of a permutation\nshould agree with the the matrix command of a permutation, when regarded as an element\nof permutation group.",
     "created_at": "2008-02-20T23:46:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14645",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14614",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -360,15 +358,15 @@ of permutation group.
 
 ---
 
-archive/issue_comments_014646.json:
+archive/issue_comments_014615.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_mhansen\".",
     "created_at": "2008-06-20T04:28:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14646",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14615",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -378,15 +376,15 @@ Changing keywords from "" to "editor_mhansen".
 
 ---
 
-archive/issue_comments_014647.json:
+archive/issue_comments_014616.json:
 ```json
 {
     "body": "Attachment [test.hg](tarball://root/attachments/some-uuid/ticket2215/test.hg) by mabshoff created at 2009-02-02 06:06:21\n\nIs anyone in favor of invalidating this? It seems to have hung around forever.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-02T06:06:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14647",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14616",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -402,15 +400,15 @@ Michael
 
 ---
 
-archive/issue_comments_014648.json:
+archive/issue_comments_014617.json:
 ```json
 {
     "body": "I've posted an email to sage-combinat-devel asking for additional inpu.",
     "created_at": "2010-07-10T16:48:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14648",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14617",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -420,15 +418,15 @@ I've posted an email to sage-combinat-devel asking for additional inpu.
 
 ---
 
-archive/issue_comments_014649.json:
+archive/issue_comments_014618.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2018-08-11T19:50:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14649",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14618",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -438,15 +436,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_014650.json:
+archive/issue_comments_014619.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2018-08-11T21:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14650",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14619",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -456,15 +454,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_014651.json:
+archive/issue_comments_014620.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2018-11-08T16:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2215",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14651",
-    "user": "@embray"
+    "url": "https://github.com/sagemath/sagetest/issues/2215#issuecomment-14620",
+    "user": "https://github.com/embray"
 }
 ```
 

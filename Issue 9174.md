@@ -6,15 +6,14 @@ archive/issues_009174.json:
     "body": "Assignee: tbd\n\nCC:  jpflori @dimpase @kcrisman\n\n\n```\n\nsage -t  \"devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\"\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1093:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1098:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1102:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    2*log(3)/log(2) - 2\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1195:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    1\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1198:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    2\nGot:\n    0\n**********************************************************************\nFile \"/home/wstein/sage-4.4.3/devel/sage/sage/schemes/elliptic_curves/descent_two_isogeny.pyx\", line 1201:\n    sage: log(n1,2) + log(n1_prime,2) - 2 # the rank\nExpected:\n    3\nGot:\n    log(3)/log(2) - 1\n**********************************************************************\n2 items had failures:\n   3 of  30 in __main__.example_18\n   3 of  11 in __main__.example_19\n***Test Failed*** 6 failures.\nFor whitespace errors, see the file /home/wstein/.sage//tmp/.doctest_descent_two_isogeny.py\n\t [29.1 s]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9174\n\n",
     "created_at": "2010-06-07T04:57:52Z",
     "labels": [
-        "porting: Cygwin",
-        "major",
+        "component: porting: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cygwin: robert miller's 2-descent is completely broken on cygwin",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9174",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tbd
@@ -85,15 +84,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9174
 
 ---
 
-archive/issue_comments_085811.json:
+archive/issue_comments_085673.json:
 ```json
 {
     "body": "This file passed doctests in a build of mine on XP.",
     "created_at": "2011-08-02T02:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85811",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85673",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -103,15 +102,15 @@ This file passed doctests in a build of mine on XP.
 
 ---
 
-archive/issue_comments_085812.json:
+archive/issue_comments_085674.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-08-19T14:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85812",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85674",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -121,15 +120,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_085813.json:
+archive/issue_comments_085675.json:
 ```json
 {
     "body": "And checking by hand works. \n\nSince this was undoubtedly an XP machine on which the original failure was reported, I will move this to sage-invalid.",
     "created_at": "2011-08-19T14:27:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85813",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85675",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -141,15 +140,15 @@ Since this was undoubtedly an XP machine on which the original failure was repor
 
 ---
 
-archive/issue_comments_085814.json:
+archive/issue_comments_085676.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-08-19T14:27:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85814",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85676",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -159,15 +158,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_085815.json:
+archive/issue_comments_085677.json:
 ```json
 {
     "body": "But doing anything other than the **first** one by hand doesn't work.  In fact, nasty things happen.",
     "created_at": "2011-08-19T14:40:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85815",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85677",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -177,15 +176,15 @@ But doing anything other than the **first** one by hand doesn't work.  In fact, 
 
 ---
 
-archive/issue_comments_085816.json:
+archive/issue_comments_085678.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-08-19T14:40:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85816",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85678",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -195,15 +194,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_085817.json:
+archive/issue_comments_085679.json:
 ```json
 {
     "body": "I attempted this, but got forking errors; that doesn't mean it doesn't actually work.  JP, want to give it a whirl?",
     "created_at": "2013-01-15T16:00:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85817",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85679",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -213,15 +212,15 @@ I attempted this, but got forking errors; that doesn't mean it doesn't actually 
 
 ---
 
-archive/issue_comments_085818.json:
+archive/issue_comments_085680.json:
 ```json
 {
     "body": "And the test passes for me (64bits W7 + 5.6.rc0).",
     "created_at": "2013-01-15T18:07:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85818",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85680",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -231,15 +230,15 @@ And the test passes for me (64bits W7 + 5.6.rc0).
 
 ---
 
-archive/issue_comments_085819.json:
+archive/issue_comments_085681.json:
 ```json
 {
     "body": "> And the test passes for me (64bits W7 + 5.6.rc0).\nDon't forget to try these by hand as well.  In the past I've had failures only in the terminal.",
     "created_at": "2013-01-15T18:11:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85819",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85681",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -250,15 +249,15 @@ Don't forget to try these by hand as well.  In the past I've had failures only i
 
 ---
 
-archive/issue_comments_085820.json:
+archive/issue_comments_085682.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-01-30T10:48:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85820",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85682",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -268,15 +267,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_085821.json:
+archive/issue_comments_085683.json:
 ```json
 {
     "body": "No problems on another 32 bits W7, let's close this one.",
     "created_at": "2013-02-08T12:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85821",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85683",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -286,15 +285,15 @@ No problems on another 32 bits W7, let's close this one.
 
 ---
 
-archive/issue_comments_085822.json:
+archive/issue_comments_085684.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-02-08T12:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85822",
-    "user": "jpflori"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85684",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jpflori"
 }
 ```
 
@@ -304,15 +303,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_085823.json:
+archive/issue_comments_085685.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2013-02-08T13:18:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9174",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85823",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9174#issuecomment-85685",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

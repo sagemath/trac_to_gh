@@ -6,15 +6,14 @@ archive/issues_009354.json:
     "body": "Assignee: @aghitza\n\nCC:  mvngu @williamstein\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricas-1.0.9.spkg\n\nhttp://sage.math.washington.edu/home/hemmecke/pub/fricasaldor-1.0.9.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9354\n\n",
     "created_at": "2010-06-27T20:06:19Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.3",
     "title": "Update FriCAS to 1.0.9",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9354",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @aghitza
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9354
 
 ---
 
-archive/issue_comments_088792.json:
+archive/issue_comments_088652.json:
 ```json
 {
     "body": "See comments at #6517",
     "created_at": "2010-06-27T20:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88792",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88652",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -51,15 +50,15 @@ See comments at #6517
 
 ---
 
-archive/issue_comments_088793.json:
+archive/issue_comments_088653.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-27T20:06:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88793",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88653",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_088794.json:
+archive/issue_comments_088654.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-27T20:07:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88794",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88654",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -87,15 +86,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_088795.json:
+archive/issue_comments_088655.json:
 ```json
 {
     "body": "I assume we need to replace the current optional FriCAS spkg with `fricas-1.0.9.spkg` and *add* `fricasaldor-1.0.9.spkg`.\n\nMinh and William, could one of you please update the repository?  I don't have the privileges to do this.",
     "created_at": "2010-08-07T06:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88795",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88655",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -107,15 +106,15 @@ Minh and William, could one of you please update the repository?  I don't have t
 
 ---
 
-archive/issue_comments_088796.json:
+archive/issue_comments_088656.json:
 ```json
 {
     "body": "Changing component from algebra to optional packages.",
     "created_at": "2010-08-07T06:26:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88796",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88656",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -125,15 +124,15 @@ Changing component from algebra to optional packages.
 
 ---
 
-archive/issue_comments_088797.json:
+archive/issue_comments_088657.json:
 ```json
 {
     "body": "Done.",
     "created_at": "2010-08-07T06:30:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88797",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88657",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -143,15 +142,15 @@ Done.
 
 ---
 
-archive/issue_comments_088798.json:
+archive/issue_comments_088658.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-08-07T06:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88798",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88658",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -161,15 +160,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_088799.json:
+archive/issue_comments_088659.json:
 ```json
 {
     "body": "Thanks!",
     "created_at": "2010-08-07T06:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9354",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88799",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9354#issuecomment-88659",
+    "user": "https://github.com/qed777"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_007640.json:
     "body": "Assignee: @rlmill\n\nCC:  @nathanncohen @rlmill @jasongrout mvngu\n\n\n```\nsage: G = graphs.CubeGraph(5)\nsage: C = G.copy(implementation='c_graph')\nsage: timeit(\"G.shortest_path('01001', '10100')\")\n625 loops, best of 3: 49.3 \u00b5s per loop\nsage: timeit(\"C.shortest_path('01001', '10100')\")\n625 loops, best of 3: 992 \u00b5s per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7640\n\n",
     "created_at": "2009-12-09T17:00:58Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "shortest_path should not use NetworkX if the underlying graph is a c_graph",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7640",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7640
 
 ---
 
-archive/issue_comments_065291.json:
+archive/issue_comments_065175.json:
 ```json
 {
     "body": "This is one of those functions that should probably be written in Cython, on as low a level as possible...",
     "created_at": "2009-12-09T17:03:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65291",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65175",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -58,15 +57,15 @@ This is one of those functions that should probably be written in Cython, on as 
 
 ---
 
-archive/issue_comments_065292.json:
+archive/issue_comments_065176.json:
 ```json
 {
     "body": "To be honest, I intended to write it as soon as your partch to make them the default format is merged :-)",
     "created_at": "2009-12-09T17:36:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65292",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65176",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -76,15 +75,15 @@ To be honest, I intended to write it as soon as your partch to make them the def
 
 ---
 
-archive/issue_comments_065293.json:
+archive/issue_comments_065177.json:
 ```json
 {
     "body": "It should be the other order: this ticket needs to be dealt with before we switch over. There are probably other issues like this one lurking...",
     "created_at": "2009-12-09T17:37:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65293",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65177",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -94,15 +93,15 @@ It should be the other order: this ticket needs to be dealt with before we switc
 
 ---
 
-archive/issue_comments_065294.json:
+archive/issue_comments_065178.json:
 ```json
 {
     "body": "One problem IMHO with `c_graph` is that as is (correct me if I'm wrong)\nwe won't be able to have a fast `in_neighbors`.\n\nAt least the current implementation is to test all vertices in the graph.",
     "created_at": "2009-12-09T19:31:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65294",
-    "user": "ylchapuy"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65178",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ylchapuy"
 }
 ```
 
@@ -115,15 +114,15 @@ At least the current implementation is to test all vertices in the graph.
 
 ---
 
-archive/issue_comments_065295.json:
+archive/issue_comments_065179.json:
 ```json
 {
     "body": "Replying to [comment:4 ylchapuy]:\n> One problem IMHO with `c_graph` is that as is (correct me if I'm wrong)\n> we won't be able to have a fast `in_neighbors`.\n> \n> At least the current implementation is to test all vertices in the graph.\n\nThis belongs here: http://groups.google.com/group/sage-devel/browse_thread/thread/8edd29e9bddc67e5\n\nSee my comments there.",
     "created_at": "2009-12-09T19:44:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65295",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65179",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -141,15 +140,15 @@ See my comments there.
 
 ---
 
-archive/issue_comments_065296.json:
+archive/issue_comments_065180.json:
 ```json
 {
     "body": "One less between Sage and c_graphs :-)\n\nHere is the result of the test given in the description of this ticket :\n\n\n```\nsage: sage: G = graphs.CubeGraph(5)\nsage: sage: C = G.copy(implementation='c_graph')\nsage: sage: timeit(\"G.shortest_path('01001', '10100')\")\n625 loops, best of 3: 51.6 \u00b5s per loop\nsage: sage: timeit(\"C.shortest_path('01001', '10100')\")\n625 loops, best of 3: 30.4 \u00b5s per loop\n```\n\n\nNathann",
     "created_at": "2009-12-12T17:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65296",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65180",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -174,15 +173,15 @@ Nathann
 
 ---
 
-archive/issue_comments_065297.json:
+archive/issue_comments_065181.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-12T17:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65297",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65181",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -192,15 +191,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_065298.json:
+archive/issue_comments_065182.json:
 ```json
 {
     "body": "Great work!\n\nA few comments:\n\n1. You can use `if self._backend.hasattr('_cg')` to test whether self is a `c_graph` or a `networkx` graph. This seems cleaner than a try-except block.\n\n2. It should be easy to implement something in the case `bidirectional=False`, and we should do this since the point is to replace NetworkX with our own functionality.\n\n3. We also need to handle the case `by_weight=True`: this is only relevant for `SparseGraph`s, since `DenseGraph`s don't support edge labeling.",
     "created_at": "2009-12-12T18:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65298",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65182",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -218,15 +217,15 @@ A few comments:
 
 ---
 
-archive/issue_comments_065299.json:
+archive/issue_comments_065183.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2009-12-12T18:20:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65299",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65183",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -236,15 +235,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_065300.json:
+archive/issue_comments_065184.json:
 ```json
 {
     "body": "Several answers, then :-)\n\n1. That's why I wanted to use at first but Martin Albrecht told me in #7637 that this version should be more efficient\n\n2. The version ``bidirectional = False`` is indeed very easy to write ( one only needs to remove variables ), but I wondered if this was useful... ``bidirectional=True`` is the default option, used in all the others call to it, and this second version is meant to be faster... :-)\n\n3. I started by trying to write the Dijkstra algorithm, and ended up wondering whether there was a Heap structure already written in Cython. I needed to maintain a sorted list, and found no reference about it ... If you know how to do it, I'll begin immediately ! :-)\n\nThis version of shortest_path seems to be the most used ( bidirectional=True, weights=False ), so I thought the most urgent was to make your c_graphs the default ones.. I just created two tickets in the graph section about functions that should be moved from networkx to c_graphs, we could just add these two ! Anyway I intend to take care of them :-)\n\nNathann",
     "created_at": "2009-12-12T18:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65300",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65184",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -264,15 +263,15 @@ Nathann
 
 ---
 
-archive/issue_comments_065301.json:
+archive/issue_comments_065185.json:
 ```json
 {
     "body": "I applied the patch here, together with the patch at #7634, (to `4.3.rc0`) in order to fully test the new functionality, and here are the results of `-t -long sage/graphs` (files not listed passed):\n\n\n```\nsage -t -long \"devel/sage-main/sage/graphs/graph.py\"        \n**********************************************************************\nFile \"/Users/rlmill/sage-4.3.rc0/devel/sage-main/sage/graphs/graph.py\", line 5838:\n    sage: H.is_isomorphic(graphs.CompleteGraph(n))\nExpected:\n    True\nGot:\n    False\n**********************************************************************\nFile \"/Users/rlmill/sage-4.3.rc0/devel/sage-main/sage/graphs/graph.py\", line 7329:\n    sage: g.transitive_reduction().size()\nExpected:\n    5\nGot:\n    6\n**********************************************************************\nFile \"/Users/rlmill/sage-4.3.rc0/devel/sage-main/sage/graphs/graph.py\", line 2206:\n    sage: o.in_degree()\nExpected:\n    [2, 2, 2, 2, 1, 2, 1, 1, 1, 1]\nGot:\n    [2, 2, 2, 2, 2, 1, 1, 1, 1, 1]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.3.rc0/devel/sage-main/sage/graphs/graph.py\", line 2208:\n    sage: o.out_degree()\nExpected:\n    [1, 1, 1, 1, 2, 1, 2, 2, 2, 2]\nGot:\n    [1, 1, 1, 1, 1, 2, 2, 2, 2, 2]\n**********************************************************************\nFile \"/Users/rlmill/sage-4.3.rc0/devel/sage-main/sage/graphs/graph.py\", line 4736:\n    sage: g.degree_sequence()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_96[3]>\", line 1, in <module>\n        g.degree_sequence()###line 4736:\n    sage: g.degree_sequence()\n      File \"/Users/rlmill/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 4754, in degree_sequence\n        return sorted(self.degree_iterator(), reverse=True)\n      File \"/Users/rlmill/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 4725, in degree_iterator\n        yield filter(v, self)\n      File \"/Users/rlmill/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 4723, in <lambda>\n        filter = lambda v, self: self._backend.degree(v, self._directed)\n      File \"c_graph.pyx\", line 751, in sage.graphs.base.c_graph.CGraphBackend.degree (sage/graphs/base/c_graph.c:7480)\n      File \"c_graph.pyx\", line 594, in sage.graphs.base.c_graph.CGraph._out_degree (sage/graphs/base/c_graph.c:6472)\n    RuntimeError: Vertex (5) is not a vertex of the graph.\n**********************************************************************\nFile \"/Users/rlmill/sage-4.3.rc0/devel/sage-main/sage/graphs/graph.py\", line 4742:\n    sage: g.degree_sequence()\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/rlmill/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.3.rc0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/rlmill/sage-4.3.rc0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_96[5]>\", line 1, in <module>\n        g.degree_sequence()###line 4742:\n    sage: g.degree_sequence()\n      File \"/Users/rlmill/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 4754, in degree_sequence\n        return sorted(self.degree_iterator(), reverse=True)\n      File \"/Users/rlmill/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 4725, in degree_iterator\n        yield filter(v, self)\n      File \"/Users/rlmill/sage-4.3.rc0/local/lib/python/site-packages/sage/graphs/graph.py\", line 4723, in <lambda>\n        filter = lambda v, self: self._backend.degree(v, self._directed)\n      File \"c_graph.pyx\", line 749, in sage.graphs.base.c_graph.CGraphBackend.degree (sage/graphs/base/c_graph.c:7433)\n      File \"c_graph.pyx\", line 580, in sage.graphs.base.c_graph.CGraph._in_degree (sage/graphs/base/c_graph.c:6372)\n    RuntimeError: Vertex (6) is not a vertex of the graph.\n**********************************************************************\n```\n\n\n\n```\nsage -t -long \"devel/sage-main/sage/graphs/linearextensions.py\"\n**********************************************************************\nFile \"/Users/rlmill/sage-4.3.rc0/devel/sage-main/sage/graphs/linearextensions.py\", line 360:\n    sage: l.incomparable(1,2)\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n```\n",
     "created_at": "2009-12-12T18:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65301",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65185",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -377,15 +376,15 @@ Got:
 
 ---
 
-archive/issue_comments_065302.json:
+archive/issue_comments_065186.json:
 ```json
 {
     "body": "Replying to [comment:9 ncohen]:\n> Several answers, then :-)\n> \n> 1. That's why I wanted to use at first but Martin Albrecht told me in #7637 that this version should be more efficient\n\nGreat!\n\n> 2. The version ``bidirectional = False`` is indeed very easy to write ( one only needs to remove variables ), but I wondered if this was useful... ``bidirectional=True`` is the default option, used in all the others call to it, and this second version is meant to be faster... :-)\n\nThis is indeed a good point. I wonder if anyone ever in the history of Sage has used bidirectional=False.\n\n> 3. I started by trying to write the Dijkstra algorithm, and ended up wondering whether there was a Heap structure already written in Cython. I needed to maintain a sorted list, and found no reference about it ... If you know how to do it, I'll begin immediately ! :-)\n\nI'm not sure...\n\n> This version of shortest_path seems to be the most used ( bidirectional=True, weights=False ), so I thought the most urgent was to make your c_graphs the default ones.. I just created two tickets in the graph section about functions that should be moved from networkx to c_graphs, we could just add these two ! Anyway I intend to take care of them :-)\n\nI don't think `bidirectional=False` is a showstopper at all (in fact we should ping sage-devel about removing this option, since it seems silly). However, `by_weights=True` is going to be necessary to make the switch. I also just noticed that the function `shortest_paths` needs to be implemented for `c_graph`s too.",
     "created_at": "2009-12-12T18:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65302",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65186",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -412,15 +411,15 @@ I don't think `bidirectional=False` is a showstopper at all (in fact we should p
 
 ---
 
-archive/issue_comments_065303.json:
+archive/issue_comments_065187.json:
 ```json
 {
     "body": "I'll take a look at those errors immediately. \n\nshortest_paths is but a slight modification of this function, but as it needs to be very fast I wondered about copying most of the code and adding the necessary details.. What's you advice ?\n\nNathann",
     "created_at": "2009-12-12T18:37:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65303",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65187",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -434,15 +433,15 @@ Nathann
 
 ---
 
-archive/issue_comments_065304.json:
+archive/issue_comments_065188.json:
 ```json
 {
     "body": "Replying to [comment:12 ncohen]:\n> I'll take a look at those errors immediately. \n> \n> shortest_paths is but a slight modification of this function, but as it needs to be very fast I wondered about copying most of the code and adding the necessary details.. What's you advice ?\n> \n> Nathann\n\nI would think about using the same code. Or factoring it out so that the redundant parts get written only once. (I don't know how familiar you are with Cython, but you can use `inline` in situations like these!)",
     "created_at": "2009-12-12T18:39:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65304",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65188",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -459,15 +458,15 @@ I would think about using the same code. Or factoring it out so that the redunda
 
 ---
 
-archive/issue_comments_065305.json:
+archive/issue_comments_065189.json:
 ```json
 {
     "body": "Replying to [comment:12 ncohen]:\n> I'll take a look at those errors immediately. \n \nNot remembering whether I tested #7634 with `-long` by itself, I'm checking to see how #7634 does on its own (on top of alpha0 of course, since rc0 has distance_graphs, which time out...)",
     "created_at": "2009-12-12T18:42:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65305",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65189",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -480,15 +479,15 @@ Not remembering whether I tested #7634 with `-long` by itself, I'm checking to s
 
 ---
 
-archive/issue_comments_065306.json:
+archive/issue_comments_065190.json:
 ```json
 {
     "body": "Replying to [comment:14 rlm]:\n> Replying to [comment:12 ncohen]:\n> > I'll take a look at those errors immediately. \n>  \n> Not remembering whether I tested #7634 with `-long` by itself, I'm checking to see how #7634 does on its own (on top of alpha0 of course, since rc0 has distance_graphs, which time out...)\n\nAll tests pass here, so it looks like all the issues above are relevant.",
     "created_at": "2009-12-12T19:01:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65306",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65190",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -504,15 +503,15 @@ All tests pass here, so it looks like all the issues above are relevant.
 
 ---
 
-archive/issue_comments_065307.json:
+archive/issue_comments_065191.json:
 ```json
 {
     "body": "The first (test of isomorphism) error was a mistake in the algorithm and is fixed already. I am dealing with the second one (transitive_reduction) which is related to the fact that we are dealing with a digraph... I am not worried by the RuntimeErrors that follow... I will update this patch as soon as possible :-)",
     "created_at": "2009-12-12T19:03:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65307",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65191",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -522,15 +521,15 @@ The first (test of isomorphism) error was a mistake in the algorithm and is fixe
 
 ---
 
-archive/issue_comments_065308.json:
+archive/issue_comments_065192.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-12-12T19:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65308",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65192",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -540,15 +539,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_065309.json:
+archive/issue_comments_065193.json:
 ```json
 {
     "body": "Well, in the end I corrected the first two errors, which were directly errors in the algorithm ( I ignored the direction of arcs, which is now fixed ).\n\nThe following ones are created by the enumeration of degree ( for example the error in eulerian_orientation is not really one. The result given is correct, but there is one inversion due to the fact that the order in the listing of neighbors is not the same when you patch is applied :-)\n\nThis reminded me that your patch for c_graphs had not actually been tested against the new Sage because of the slowness in the distance function.. As eulerian_orientation does not care about distances ( I wrote this one :-) ), I do not think shortest_path is responsible for this one... Could you take a look at the last bugs to see if it could come from the switching process ( it it for sure in the case of eulerian_orientation ) ?\n\nActually, as it is not possible to test your switching patch without the shortest)path functiom, perhaps we should merge the two in just one patch....\n\nWe're almost there !!!!!!!!!! :-)\n\nNathann",
     "created_at": "2009-12-12T19:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65309",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65193",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -568,15 +567,15 @@ Nathann
 
 ---
 
-archive/issue_comments_065310.json:
+archive/issue_comments_065194.json:
 ```json
 {
     "body": "Attachment [trac_7640.patch](tarball://root/attachments/some-uuid/ticket7640/trac_7640.patch) by @nathanncohen created at 2009-12-12 19:33:46",
     "created_at": "2009-12-12T19:33:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65310",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65194",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -586,15 +585,15 @@ Attachment [trac_7640.patch](tarball://root/attachments/some-uuid/ticket7640/tra
 
 ---
 
-archive/issue_comments_065311.json:
+archive/issue_comments_065195.json:
 ```json
 {
     "body": "Replying to [comment:17 ncohen]:\n> Actually, as it is not possible to test your switching patch without the shortest)path functiom, perhaps we should merge the two in just one patch....\n\nAbsolutely not! There is *much* work that needs to be done before #7634 gets merged (this is just one piece). Once this patch is finalized, we can say #7634 depends on this, and then the testing issue will be moot.\n\nReview of the current patch coming shortly...",
     "created_at": "2009-12-12T19:39:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65311",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65195",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -609,15 +608,15 @@ Review of the current patch coming shortly...
 
 ---
 
-archive/issue_comments_065312.json:
+archive/issue_comments_065196.json:
 ```json
 {
     "body": "I've created #7673 to deal with the `by_weight=True` case. I like this patch as it is, since it makes it possible to test #7634. Also, by itself it passes long tests in sage/graphs. Nice work!",
     "created_at": "2009-12-12T20:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65312",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65196",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -627,15 +626,15 @@ I've created #7673 to deal with the `by_weight=True` case. I like this patch as 
 
 ---
 
-archive/issue_comments_065313.json:
+archive/issue_comments_065197.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-12T20:02:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65313",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65197",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -645,15 +644,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_065314.json:
+archive/issue_comments_065198.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-14T16:41:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7640",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65314",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7640#issuecomment-65198",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

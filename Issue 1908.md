@@ -6,15 +6,13 @@ archive/issues_001908.json:
     "body": "Assignee: @williamstein\n\nCC:  ekirkman\n\nThis patch extends the functionality introduced in #1869 .  It lets you show lists of things as tiled images.  This does take out the default settings for graphs that were set in #1869, though.  Should those be in the system show() command?\n\n\n\n```\n        sage: show(graphs(3), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(list(graphs(3)), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show(graphs(4), layout='circular', vertex_size=50, vertex_labels=False, graph_border=True)\n        sage: show([plot(sin(i*x)) for i in range(30)]) # Two pages of images\n        sage: show([sin(i*x) for i in range(2)])\n        sage: show([sin(i*x) for i in range(30)], columns=1, rows=10)\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1908\n\n",
     "created_at": "2008-01-24T03:56:49Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "Make it so that show plots a list as a grid",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1908",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -44,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1908
 
 ---
 
-archive/issue_comments_012084.json:
+archive/issue_comments_012054.json:
 ```json
 {
     "body": "This should be applied after #1869.",
     "created_at": "2008-01-24T03:58:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12084",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12054",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -62,15 +60,15 @@ This should be applied after #1869.
 
 ---
 
-archive/issue_comments_012085.json:
+archive/issue_comments_012055.json:
 ```json
 {
     "body": "Attachment [show_list.patch](tarball://root/attachments/some-uuid/ticket1908/show_list.patch) by @jasongrout created at 2008-01-24 04:46:30\n\nUpdated patch to fix typo in doctests",
     "created_at": "2008-01-24T04:46:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12085",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12055",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -82,15 +80,15 @@ Updated patch to fix typo in doctests
 
 ---
 
-archive/issue_comments_012086.json:
+archive/issue_comments_012056.json:
 ```json
 {
     "body": "Jason,\n\nThe whole point of having the graphs_list functionality called from show is to take advantage of the code that is already written. Many hours were put into that code, and the fact that the show function might become bogged down is a good thing - the more things it can handle well, the better. There is no reason to undo all that hard work!",
     "created_at": "2008-01-24T16:17:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12086",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12056",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -102,15 +100,15 @@ The whole point of having the graphs_list functionality called from show is to t
 
 ---
 
-archive/issue_comments_012087.json:
+archive/issue_comments_012057.json:
 ```json
 {
     "body": "Robert,\n\nI agree that the graphs look very nice with those default parameters and it does look like it took a lot of work to get it to the state it is in now.  Let me see if I can rework my patch to include those defaults automatically.  Is there any other functionality provided in graphs_list that isn't provided for in the attached patch?  My purpose in this patch is to extend the great ideas in the graphs_list function to any sort of list of graphics objects.",
     "created_at": "2008-01-24T16:29:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12087",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12057",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -122,15 +120,15 @@ I agree that the graphs look very nice with those default parameters and it does
 
 ---
 
-archive/issue_comments_012088.json:
+archive/issue_comments_012058.json:
 ```json
 {
     "body": "Actually, if you look at `graph_list.py`, you'll notice that the bulk of the work isn't going on in `show_graphs()`, but in `to_graphics_arrays()`, which looks pretty similar to some of the code you wrote. Perhaps this code should be generalized-- note the clever use of `**kwds` here...",
     "created_at": "2008-01-24T16:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12088",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12058",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -140,15 +138,15 @@ Actually, if you look at `graph_list.py`, you'll notice that the bulk of the wor
 
 ---
 
-archive/issue_comments_012089.json:
+archive/issue_comments_012059.json:
 ```json
 {
     "body": "Yes, most of what I did was while I was looking at to_graphics_arrays().  Thanks for the tip about **kwds.",
     "created_at": "2008-01-24T19:03:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12089",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12059",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -158,15 +156,15 @@ Yes, most of what I did was while I was looking at to_graphics_arrays().  Thanks
 
 ---
 
-archive/issue_comments_012090.json:
+archive/issue_comments_012060.json:
 ```json
 {
     "body": "Attachment [show_list-updated.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated.patch) by @jasongrout created at 2008-01-24 22:14:09\n\nApply in place of show_list.patch",
     "created_at": "2008-01-24T22:14:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12090",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12060",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -178,15 +176,15 @@ Apply in place of show_list.patch
 
 ---
 
-archive/issue_comments_012091.json:
+archive/issue_comments_012061.json:
 ```json
 {
     "body": "I think I addressed in show_list-updated.patch the concerns that Robert had with the show() function not having nice defaults for graphs.  I pushed the defaults for a particular object into the class definition, though, instead of having a huge switch statement in show().  That way the defaults are not hardcoded, but could be easily changed on a per-object basis if the user wanted their graphs or other objects plotted a different way than the default (for example, if a user wanted their digraphs to look different from their graphs, or their BundleGraphs to look different from their normal graphs, etc.)\n\nTo define some defaults for plotting an object in an array, just assign the class variable object.graphics_array_defaults to a dictionary containing your default options to object.plot().  Any defaults are overridden with explicit keyword arguments to show().\n\n\n\nJason",
     "created_at": "2008-01-24T22:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12091",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12061",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -202,15 +200,15 @@ Jason
 
 ---
 
-archive/issue_comments_012092.json:
+archive/issue_comments_012062.json:
 ```json
 {
     "body": "I really like the idea of class defaults for list plots being in the classes themselves instead of in functional.py.... Good thinking!",
     "created_at": "2008-01-25T10:15:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12092",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12062",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -220,15 +218,15 @@ I really like the idea of class defaults for list plots being in the classes the
 
 ---
 
-archive/issue_comments_012093.json:
+archive/issue_comments_012063.json:
 ```json
 {
     "body": "Attachment [show_list-updated-ref.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref.patch) by @rlmill created at 2008-01-25 10:15:59",
     "created_at": "2008-01-25T10:15:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12093",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12063",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -238,15 +236,15 @@ Attachment [show_list-updated-ref.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_012094.json:
+archive/issue_comments_012064.json:
 ```json
 {
     "body": "show_list-updated-ref.patch should be applied after show_list-updated.patch.",
     "created_at": "2008-01-26T20:42:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12094",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12064",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -256,15 +254,15 @@ show_list-updated-ref.patch should be applied after show_list-updated.patch.
 
 ---
 
-archive/issue_comments_012095.json:
+archive/issue_comments_012065.json:
 ```json
 {
     "body": "Doctest for Robert's addition.",
     "created_at": "2008-01-28T19:16:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12095",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12065",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -274,15 +272,15 @@ Doctest for Robert's addition.
 
 ---
 
-archive/issue_comments_012096.json:
+archive/issue_comments_012066.json:
 ```json
 {
     "body": "Attachment [show_list-updated-ref-doctest.patch](tarball://root/attachments/some-uuid/ticket1908/show_list-updated-ref-doctest.patch) by @jasongrout created at 2008-01-28 19:18:11\n\nThere are three patches to be applied here, in this order:\n\n1.  show_list-updated.patch\n2.  show_list-updated-ref.patch\n3. show_list-updated-ref-doctest.patch",
     "created_at": "2008-01-28T19:18:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12096",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12066",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -298,15 +296,15 @@ There are three patches to be applied here, in this order:
 
 ---
 
-archive/issue_comments_012097.json:
+archive/issue_comments_012067.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-14T18:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12097",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12067",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -316,15 +314,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_012098.json:
+archive/issue_comments_012068.json:
 ```json
 {
     "body": "Merged the above three patches in Sage 2.10.2.alpha2",
     "created_at": "2008-02-14T18:37:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1908",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12098",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1908#issuecomment-12068",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

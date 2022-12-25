@@ -6,15 +6,14 @@ archive/issues_007824.json:
     "body": "Assignee: @peterjeremy\n\nCC:  nathann.cohen@gmail.com\n\ncliquer aborts with the error\n\n```\nCannot determine your platform or it is not supported... exiting\n```\n\nunless the platform is explicitly listed as supported.  This patch adds FreeBSD support - which is the same as Linux.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7824\n\n",
     "created_at": "2010-01-03T02:10:25Z",
     "labels": [
-        "porting: BSD",
-        "major",
+        "component: porting: bsd",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "cliquer-1.2.p2 - add FreeBSD support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7824",
-    "user": "@peterjeremy"
+    "user": "https://github.com/peterjeremy"
 }
 ```
 Assignee: @peterjeremy
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7824
 
 ---
 
-archive/issue_comments_067726.json:
+archive/issue_comments_067609.json:
 ```json
 {
     "body": "Attachment [7824.cliquer.patch](tarball://root/attachments/some-uuid/ticket7824/7824.cliquer.patch) by @peterjeremy created at 2010-01-03 02:17:31",
     "created_at": "2010-01-03T02:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67726",
-    "user": "@peterjeremy"
+    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67609",
+    "user": "https://github.com/peterjeremy"
 }
 ```
 
@@ -55,15 +54,15 @@ Attachment [7824.cliquer.patch](tarball://root/attachments/some-uuid/ticket7824/
 
 ---
 
-archive/issue_comments_067727.json:
+archive/issue_comments_067610.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-03T02:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67727",
-    "user": "@peterjeremy"
+    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67610",
+    "user": "https://github.com/peterjeremy"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_067728.json:
+archive/issue_comments_067611.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-12T17:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67728",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67611",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -91,15 +90,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_067729.json:
+archive/issue_comments_067612.json:
 ```json
 {
     "body": "I can't check it, not having FreeBSD installed, but it is clearly 100% safe as it only affects FreeBSD.",
     "created_at": "2010-01-12T17:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67729",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67612",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -109,15 +108,15 @@ I can't check it, not having FreeBSD installed, but it is clearly 100% safe as i
 
 ---
 
-archive/issue_comments_067730.json:
+archive/issue_comments_067613.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-24T14:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67730",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67613",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -127,15 +126,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_067731.json:
+archive/issue_comments_067614.json:
 ```json
 {
     "body": "An updated spkg is available at\n\nhttp://sage.math.washington.edu/home/mvngu/spkg/standard/cliquer/cliquer-1.2.p3.spkg\n\nAll changes are committed in pjeremy's name.",
     "created_at": "2010-01-24T14:38:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7824",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67731",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7824#issuecomment-67614",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

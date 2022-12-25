@@ -6,15 +6,14 @@ archive/issues_005589.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: combinat, binomial coefficients\n\nbinomial() returns zero when its \"numerator\" is a negative integer, but gets it right for floating point numbers:\n\n```\nsage: binomial(-1, 5)\n0\nsage: binomial(-2, 5)\n0\nsage: binomial(-2.0, 5)\n-6.00000000000000\nsage: binomial(-1.0, 5)\n-1.00000000000000\nsage: binomial(-7, 5)  \n0\nsage: binomial(-7.0, 5)\n-462.000000000000\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5589\n\n",
     "created_at": "2009-03-23T09:35:20Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "binomial() doesn't work with negative integers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5589",
-    "user": "@dandrake"
+    "user": "https://github.com/dandrake"
 }
 ```
 Assignee: @mwhansen
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5589
 
 ---
 
-archive/issue_comments_043556.json:
+archive/issue_comments_043472.json:
 ```json
 {
     "body": "Attachment [trac_5589.patch](tarball://root/attachments/some-uuid/ticket5589/trac_5589.patch) by @dandrake created at 2009-03-24 01:29:48",
     "created_at": "2009-03-24T01:29:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5589",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43556",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43472",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -67,15 +66,15 @@ Attachment [trac_5589.patch](tarball://root/attachments/some-uuid/ticket5589/tra
 
 ---
 
-archive/issue_comments_043557.json:
+archive/issue_comments_043473.json:
 ```json
 {
     "body": "All doctests pass, the code looks reasonable, the documentation fixes are nice.  Positive review.",
     "created_at": "2009-03-26T00:52:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5589",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43557",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43473",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -85,15 +84,15 @@ All doctests pass, the code looks reasonable, the documentation fixes are nice. 
 
 ---
 
-archive/issue_comments_043558.json:
+archive/issue_comments_043474.json:
 ```json
 {
     "body": "Merged in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-26T01:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5589",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43558",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43474",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +106,15 @@ Michael
 
 ---
 
-archive/issue_comments_043559.json:
+archive/issue_comments_043475.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-26T01:13:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5589",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43559",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5589#issuecomment-43475",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_008519.json:
     "body": "Assignee: nborie\n\nCC:  sage-combinat\n\nKeywords: positive integer\n\nWe have already a proper set with category of NonNegativeIntegers, let's use it to also define PositiveInteger\n\n\n```\nsage: NonNegativeIntegers()\nNon negative integers\nsage: PositiveInteger()\n---------------------------------------------------------------------------\nNameError                                 Traceback (most recent call last)\n\n/home/nicolas/<ipython console> in <module>()\n\nNameError: name 'PositiveInteger' is not defined\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8519\n\n",
     "created_at": "2010-03-13T11:33:46Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "Add a set of Positive Integer with categories (and factor the code with NonNegativeInteger)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8519",
-    "user": "nborie"
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 Assignee: nborie
@@ -47,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8519
 
 ---
 
-archive/issue_comments_076940.json:
+archive/issue_comments_076813.json:
 ```json
 {
     "body": "+1!\n\nThat will be useful for NCSF too (see the beginning of sage/combinat/ncsf/categories.py).\n\nJust mind the 's': PositiveIntegers\n\nLet me guess: TransitiveGroup(0,1) does not work, right? Maybe it should actually?",
     "created_at": "2010-03-13T11:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76940",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76813",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -71,15 +69,15 @@ Let me guess: TransitiveGroup(0,1) does not work, right? Maybe it should actuall
 
 ---
 
-archive/issue_comments_076941.json:
+archive/issue_comments_076814.json:
 ```json
 {
     "body": "Changing keywords from \"positive integer\" to \"range, categories, set, integer\".",
     "created_at": "2010-03-13T11:51:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76941",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76814",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -89,15 +87,15 @@ Changing keywords from "positive integer" to "range, categories, set, integer".
 
 ---
 
-archive/issue_comments_076942.json:
+archive/issue_comments_076815.json:
 ```json
 {
     "body": "Hello Nicolas, will you set a +2 with the new description ?",
     "created_at": "2010-03-13T11:53:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76942",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76815",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -107,15 +105,15 @@ Hello Nicolas, will you set a +2 with the new description ?
 
 ---
 
-archive/issue_comments_076943.json:
+archive/issue_comments_076816.json:
 ```json
 {
     "body": "Replying to [comment:5 nborie]:\n> Hello Nicolas, will you set a +2 with the new description ?\n\nYes. I just spent 5 minutes discussing about this with Florent over the phone. In the end, we vote for IntegerRange(a,b, step=c), and NonNegativeIntegers / PositiveIntegers being subclasses (to add further properties; like the fact that they are semigroups/monoids/semirings/....).",
     "created_at": "2010-03-13T12:15:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76943",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76816",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -128,15 +126,15 @@ Yes. I just spent 5 minutes discussing about this with Florent over the phone. I
 
 ---
 
-archive/issue_comments_076944.json:
+archive/issue_comments_076817.json:
 ```json
 {
     "body": "+1 for `IntegerRange` instead of `Range`.",
     "created_at": "2010-03-13T14:21:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76944",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76817",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -146,15 +144,15 @@ archive/issue_comments_076944.json:
 
 ---
 
-archive/issue_comments_076945.json:
+archive/issue_comments_076818.json:
 ```json
 {
     "body": "So guys,\n\nI add a patch with a first implementation...\n\nQuestions:\n- First, if you find a language mistake, please tell me.\n- What should I keep, what should I drop in NonNegativeIntegers ?\n- Does IntegerRange need an _element_constructor_ method ?\n- What should I had in PositiveIntegers (easy thing please) ?\n- Do you want to tell me about your day ?\n- Any comment ....\n\nThanks for further advises.",
     "created_at": "2010-03-13T16:13:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76945",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76818",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -176,15 +174,15 @@ Thanks for further advises.
 
 ---
 
-archive/issue_comments_076946.json:
+archive/issue_comments_076819.json:
 ```json
 {
     "body": "The __contains__ function is false. It works only for IntegerRange(-Infinity,Infinity,a,b)...",
     "created_at": "2010-03-13T17:14:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76946",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76819",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -194,15 +192,15 @@ The __contains__ function is false. It works only for IntegerRange(-Infinity,Inf
 
 ---
 
-archive/issue_comments_076947.json:
+archive/issue_comments_076820.json:
 ```json
 {
     "body": "Ok, after think a while...\n\nI will update this code and give IntegerRange the behavior of range() if and only if someone (else than me) can give me an empty set with categories which can pass the tests....\n\n```\nsage: TestSuite(Set([])).run()\nThe following tests failed: _test_an_element, _test_category, _test_elements, _test_some_elements\n```\n\nI need this feature for coherence!! Python range easily give out an empty list like:\n\n```\nsage: range(1,20,-1)\n[]\nsage: range(20,1,1)\n[]\n```\n\nAdding - and + Infinity, we will have a lot of arguments which will build an emptyset. Currently, I did not find a good empty set with categories.\n\nMy code does not allow negative ``step`` and check that ``begin`` < ``end`` to avoid the empty case.\n\nOn other hand, my current status is:\nBenchmarks for my PhD Thesis --> add number_of_transitive_group --> Add enumerated set of TransitiveGroups() --> Add PositiveInteger --> Add IntegerRange feature --> MAX DEPTH OF RECURSION...\n\nAs this EmptySet (with categories) is an empty thing, I have an idea of who can implemented that ?",
     "created_at": "2010-03-13T21:09:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76947",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76820",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -237,15 +235,15 @@ As this EmptySet (with categories) is an empty thing, I have an idea of who can 
 
 ---
 
-archive/issue_comments_076948.json:
+archive/issue_comments_076821.json:
 ```json
 {
     "body": "Replying to [comment:10 nborie]:\n> I will update this code and give IntegerRange the behavior of range() if and only if someone (else than me) can give me an empty set with categories which can pass the tests....\n> {{{\n> sage: TestSuite(Set([])).run()\n> The following tests failed: _test_an_element, _test_category, _test_elements, _test_some_elements\n> }}}\n\nFor consintency of the category you should use an `EnumeratedSet` rather than a `Set`:\n\n```\nsage: f = FiniteEnumeratedSet([])\nsage: TestSuite(f).run()\n[...]\nThe following tests failed: _test_an_element, _test_elements, _test_some_elements\n```\n\nYou can't expect to get anything better than that with the current specification of sets: All those three tests are buggy in the sense that they suppose that there is at least one element in the set. So forget about it and don't run TestSuite on an empty set until we fix this.",
     "created_at": "2010-03-13T22:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76948",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76821",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -271,15 +269,15 @@ You can't expect to get anything better than that with the current specification
 
 ---
 
-archive/issue_comments_076949.json:
+archive/issue_comments_076822.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-03-14T18:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76949",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76822",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -289,15 +287,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_076950.json:
+archive/issue_comments_076823.json:
 ```json
 {
     "body": "This last version begin to be final...\n\nI didn't manage to attach PositiveInteger to the reference manual. The docbuild was always saying :\nUNABLE TO FIND THE MODULE. Even after 3421 checks, I didn't succeed...",
     "created_at": "2010-03-14T18:56:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76950",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76823",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -310,15 +308,15 @@ UNABLE TO FIND THE MODULE. Even after 3421 checks, I didn't succeed...
 
 ---
 
-archive/issue_comments_076951.json:
+archive/issue_comments_076824.json:
 ```json
 {
     "body": "Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-nb.patch) by @hivert created at 2010-03-15 19:52:48",
     "created_at": "2010-03-15T19:52:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76951",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76824",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -328,15 +326,15 @@ Attachment [trac_8519_Range_factory-nb.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_076952.json:
+archive/issue_comments_076825.json:
 ```json
 {
     "body": "Attachment [trac_8519_Range_factory-review-fh.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.patch) by @hivert created at 2010-03-15 19:55:58\n\nHi Nicolas,\n\nI added a review patch which\n- Adds a class factory\n- Adds a cardinality method\n- Improves the doc\n- temporarily solve the handling of empty sets\n\nPlease review it,\n\nExcept for those issues your patch is good,\n\nFlorent",
     "created_at": "2010-03-15T19:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76952",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76825",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -360,15 +358,15 @@ Florent
 
 ---
 
-archive/issue_comments_076953.json:
+archive/issue_comments_076826.json:
 ```json
 {
     "body": "I had a second though and decided that `_from_integer_` was a little overkill. I removed it.\n\nCheers,\n\nFlorent",
     "created_at": "2010-03-15T20:18:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76953",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76826",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -382,15 +380,15 @@ Florent
 
 ---
 
-archive/issue_comments_076954.json:
+archive/issue_comments_076827.json:
 ```json
 {
     "body": "Attachment [trac_8519_Range_factory-review-fh.2.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review-fh.2.patch) by nborie created at 2010-03-15 23:37:52",
     "created_at": "2010-03-15T23:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76954",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76827",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -400,15 +398,15 @@ Attachment [trac_8519_Range_factory-review-fh.2.patch](tarball://root/attachment
 
 ---
 
-archive/issue_comments_076955.json:
+archive/issue_comments_076828.json:
 ```json
 {
     "body": "Attachment [trac_8519_Range_factory-review2-nb.patch](tarball://root/attachments/some-uuid/ticket8519/trac_8519_Range_factory-review2-nb.patch) by nborie created at 2010-03-15 23:41:52\n\nHi Florent,\n\nI am very Ok with your changes! To complete this review, please check the 3 hyperlinks I just fixed in positive_integers.py and non_negative_integers.py. That's will be a very easy review I think.\n\nPatchs to be applied :\n\ntrac_8519_Range_factory-nb.patch\ntrac_8519_Range_factory-review-fh.2.patch\ntrac_8519_Range_factory-review2-nb.patch\n\nThanks for all.",
     "created_at": "2010-03-15T23:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76955",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76828",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -430,15 +428,15 @@ Thanks for all.
 
 ---
 
-archive/issue_comments_076956.json:
+archive/issue_comments_076829.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-03-21T22:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76956",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76829",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -448,15 +446,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_076957.json:
+archive/issue_comments_076830.json:
 ```json
 {
     "body": "Patch looks good, ready to go.\n\nFlorent",
     "created_at": "2010-03-21T22:01:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76957",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76830",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -468,15 +466,15 @@ Florent
 
 ---
 
-archive/issue_comments_076958.json:
+archive/issue_comments_076831.json:
 ```json
 {
     "body": "My last comment was not well formatted, so for the release manager, please apply : \n\n*  trac_8519_Range_factory-nb.patch \n*  trac_8519_Range_factory-review-fh.2.patch \n*  trac_8519_Range_factory-review2-nb.patch\n\nThanks for all.\nNicolas.",
     "created_at": "2010-03-21T22:33:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76958",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76831",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -493,15 +491,15 @@ Nicolas.
 
 ---
 
-archive/issue_comments_076959.json:
+archive/issue_comments_076832.json:
 ```json
 {
     "body": "Replying to [comment:17 nborie]:\n> My last comment was not well formatted, so for the release manager, please apply : \n \n*  trac_8519_Range_factory-nb.patch \n*  trac_8519_Range_factory-review-fh.2.patch \n*  trac_8519_Range_factory-review2-nb.patch\n\nReviewing this I noticed that we forgot to mention that this depends on #8524\n\nFlorent",
     "created_at": "2010-04-16T12:33:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76959",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76832",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -520,15 +518,15 @@ Florent
 
 ---
 
-archive/issue_comments_076960.json:
+archive/issue_comments_076833.json:
 ```json
 {
     "body": "Replying to [comment:18 hivert]:\n> Reviewing this I noticed that we forgot to mention that this depends on #8524\n\nIn what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?",
     "created_at": "2010-04-16T18:28:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76960",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76833",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -541,15 +539,15 @@ In what way does it depend on it?  I've merged the three patches into a prototyp
 
 ---
 
-archive/issue_comments_076961.json:
+archive/issue_comments_076834.json:
 ```json
 {
     "body": "Replying to [comment:19 jhpalmieri]:\n> Replying to [comment:18 hivert]:\n> > Reviewing this I noticed that we forgot to mention that this depends on #8524\n> \n> In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?\n\nDone (well, almost; Florent just need to check my changes). The dependency is functional, not syntactical. I would have expected the tests to fail without #8524! Maybe the problem that was encountered and triggered the writting of #8524 did not end up being doctested, which would be bad!",
     "created_at": "2010-04-16T23:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76961",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76834",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -565,15 +563,15 @@ Done (well, almost; Florent just need to check my changes). The dependency is fu
 
 ---
 
-archive/issue_comments_076962.json:
+archive/issue_comments_076835.json:
 ```json
 {
     "body": "Replying to [comment:19 jhpalmieri]:\n> Replying to [comment:18 hivert]:\n> > Reviewing this I noticed that we forgot to mention that this depends on #8524\n> \n> In what way does it depend on it?  I've merged the three patches into a prototype for Sage 4.4.alpha0, and all tests pass.  Do I need to back that change out now?  Or can someone review #8524 quickly (and thoroughly)?\n\nMy mistake ! Forget about my comment.",
     "created_at": "2010-04-16T23:52:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76962",
-    "user": "@hivert"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76835",
+    "user": "https://github.com/hivert"
 }
 ```
 
@@ -589,15 +587,15 @@ My mistake ! Forget about my comment.
 
 ---
 
-archive/issue_comments_076963.json:
+archive/issue_comments_076836.json:
 ```json
 {
     "body": "Merged in 4.4.alpha0:\n- trac_8519_Range_factory-nb.patch \n- trac_8519_Range_factory-review-fh.2.patch\n- trac_8519_Range_factory-review2-nb.patch",
     "created_at": "2010-04-17T02:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76963",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76836",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -610,15 +608,15 @@ Merged in 4.4.alpha0:
 
 ---
 
-archive/issue_comments_076964.json:
+archive/issue_comments_076837.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-17T02:50:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8519",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76964",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8519#issuecomment-76837",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_004022.json:
     "body": "Assignee: @malb\n\nThe attached patch implements -- in a slow, lame way -- Gr\u00f6bner bases over `ZZ` and `IntegerModRing` as defined in the Becker & Weispfenning. This code should be replaced by the new Singular code soon-ish, but it can't hurt to have a clean toy implementation.\n\nWhile I think that the `d_basis` implementation is correct, I recommend somebody double checks. Particularly, the `MPolynomial_libsingular.reduce` implementation  for ZZ should receive some careful examination.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4022\n\n",
     "created_at": "2008-08-31T17:13:50Z",
     "labels": [
-        "commutative algebra",
-        "major",
-        "enhancement"
+        "component: commutative algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.3",
     "title": "[with patch, needs review] Gr\u00f6bner bases over Z and Z/nZ",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4022",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4022
 
 ---
 
-archive/issue_comments_029006.json:
+archive/issue_comments_028948.json:
 ```json
 {
     "body": "Attachment [d_basis.patch](tarball://root/attachments/some-uuid/ticket4022/d_basis.patch) by @malb created at 2008-08-31 17:14:13",
     "created_at": "2008-08-31T17:14:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29006",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-28948",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -49,15 +47,15 @@ Attachment [d_basis.patch](tarball://root/attachments/some-uuid/ticket4022/d_bas
 
 ---
 
-archive/issue_comments_029007.json:
+archive/issue_comments_028949.json:
 ```json
 {
     "body": "Quite likely the attached patch depends on #4021, I didn't check though whether it works stand alone too.",
     "created_at": "2008-08-31T17:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29007",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-28949",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -67,15 +65,15 @@ Quite likely the attached patch depends on #4021, I didn't check though whether 
 
 ---
 
-archive/issue_comments_029008.json:
+archive/issue_comments_028950.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-20T15:47:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29008",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-28950",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_029009.json:
+archive/issue_comments_028951.json:
 ```json
 {
     "body": "Applies cleanly on top of 3.1.3.alpha1 + patches at #686 and #4021.\n\nI *really* like the examples.",
     "created_at": "2008-09-28T07:00:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29009",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-28951",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -105,15 +103,15 @@ I *really* like the examples.
 
 ---
 
-archive/issue_comments_029010.json:
+archive/issue_comments_028952.json:
 ```json
 {
     "body": "Merged in Sage 3.1.3.alpha2",
     "created_at": "2008-09-28T18:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29010",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-28952",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -123,15 +121,15 @@ Merged in Sage 3.1.3.alpha2
 
 ---
 
-archive/issue_comments_029011.json:
+archive/issue_comments_028953.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-28T18:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4022",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-29011",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4022#issuecomment-28953",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

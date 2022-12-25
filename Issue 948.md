@@ -6,15 +6,14 @@ archive/issues_000948.json:
     "body": "Assignee: @malb\n\n\n```\n[11:50am] wstein2: hi: regarding #872.\n[11:50am] wstein2: the new spkg definitely fixes the bug reported there with factoring.\n[11:51am] wstein2: But I tried factoring in a 2-variable ring and it quickly runs out of steam.  E.g., this fails:\n[11:51am] wstein2: > ring r=(0,a),(x,y),dp;\n[11:51am] wstein2: > minpoly = a^2+1;\n[11:51am] wstein2: > factorize(x^12 + y^12);\n```\n\nSome magma timings:\n\n```\nbsd0:~ was$ magma\nMagma V2.13-10    Sat Oct 20 2007 11:53:54 on bsd0     [Seed = 3168908577]\nType ? for help.  Type <Ctrl>-D to quit.\nK<i> := NumberField(x^2 + 1^H>                            \n> \n> R<x> := PolynomialRing(RationalField());\n> K<i> := NumberField(x^2 + 1);\n> S<y,z> := PolynomialRing(K, 2);\n> time Factorization(y^4 - z^4);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>\n]\nTime: 0.030\n> time Factorization(y^12 - z^12);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^2 - y*z + z^2, 1>,\n    <y^2 + y*z + z^2, 1>,\n    <y^2 - i*y*z - z^2, 1>,\n    <y^2 + i*y*z - z^2, 1>\n]\nTime: 0.030\n> time Factorization(y^20 - z^20);\n[\n    <y - z, 1>,\n    <y + z, 1>,\n    <y - i*z, 1>,\n    <y + i*z, 1>,\n    <y^4 - y^3*z + y^2*z^2 - y*z^3 + z^4, 1>,\n    <y^4 + y^3*z + y^2*z^2 + y*z^3 + z^4, 1>,\n    <y^4 - i*y^3*z - y^2*z^2 + i*y*z^3 + z^4, 1>,\n    <y^4 + i*y^3*z - y^2*z^2 - i*y*z^3 + z^4, 1>\n]\nTime: 0.050\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/948\n\n",
     "created_at": "2007-10-20T19:01:17Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "very slow factorization over a numberfield in a 2-variable ring [singular related]",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/948",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @malb
@@ -83,15 +82,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/948
 
 ---
 
-archive/issue_comments_005787.json:
+archive/issue_comments_005769.json:
 ```json
 {
     "body": "Upstream tells me that there is no short time fix for this issue, it requires some rewrite of the factorisation code for number fields. However, for this particular case this can easily be fixed by de-homogenising the polynomial before factoring. Patch to SINGULAR to implement this is attached.\n\nI am retagging this as 2.8.10 which means applying the patch attached to this ticket to the version of Singular we ship. For anything else this ticket is best reassigned to the sage-wishlist milestone.",
     "created_at": "2007-10-25T15:32:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5787",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5769",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -103,15 +102,15 @@ I am retagging this as 2.8.10 which means applying the patch attached to this ti
 
 ---
 
-archive/issue_comments_005788.json:
+archive/issue_comments_005770.json:
 ```json
 {
     "body": "Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/singular-nf.patch) by @malb created at 2007-10-25 15:33:12",
     "created_at": "2007-10-25T15:33:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5788",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5770",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -121,15 +120,15 @@ Attachment [singular-nf.patch](tarball://root/attachments/some-uuid/ticket948/si
 
 ---
 
-archive/issue_comments_005789.json:
+archive/issue_comments_005771.json:
 ```json
 {
     "body": "The attached patch was applied to http://sage.math.washington.edu/home/malb/pkgs/singular-3-0-3-2-20071031.spkg\n\nTimings:\n\n```\nsage: f = (x^4 - y^4)\nsage: %time F = f.factor()\nCPU times: user 0.02 s, sys: 0.00 s, total: 0.02 s\nWall time: 0.02\n\nsage: f = (x^12 - y^12)\nsage: %time F = f.factor()\nCPU times: user 0.03 s, sys: 0.00 s, total: 0.03 s\nWall time: 0.05\n\nsage: f = (x^20 - y^20)\nsage: %time F = f.factor()\nCPU times: user 0.03 s, sys: 0.01 s, total: 0.03 s\nWall time: 0.07\n```\n",
     "created_at": "2007-10-31T12:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5789",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5771",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -159,15 +158,15 @@ Wall time: 0.07
 
 ---
 
-archive/issue_comments_005790.json:
+archive/issue_comments_005772.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-10-31T12:54:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5790",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5772",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -177,15 +176,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_005791.json:
+archive/issue_comments_005773.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-01T10:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5791",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5773",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -195,15 +194,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_005792.json:
+archive/issue_comments_005774.json:
 ```json
 {
     "body": "applied to 2.8.11.alpha0 - please read the comment section.",
     "created_at": "2007-11-01T10:34:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/948",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5792",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/948#issuecomment-5774",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

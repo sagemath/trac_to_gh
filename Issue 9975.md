@@ -6,15 +6,13 @@ archive/issues_009975.json:
     "body": "Assignee: mvngu\n\nCC:  @jasongrout @kcrisman @jhpalmieri @novoselt\n\nKeywords: sphinx, documentation\n\nFunctions or methods that have been decorated by generic decorators such as sage.misc.decorators.options (moved from sage.misc.plot.options with Trac #9907) degrade documentation by reducing the signature for these callables to the generic \"(*args, **kwargs)\".\n\nSee also the following sage.devel discussion: http://groups.google.com/group/sage-devel/browse_thread/thread/cbd888f0e60130ff/f533792113c45c2f\n\nIssue created by migration from https://trac.sagemath.org/ticket/9976\n\n",
     "created_at": "2010-09-23T12:07:21Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.7.1",
     "title": "Decorated functions/methods have generic signature in documentation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9975",
-    "user": "@johanrosenkilde"
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 Assignee: mvngu
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9976
 
 ---
 
-archive/issue_comments_100086.json:
+archive/issue_comments_099920.json:
 ```json
 {
     "body": "Fixes the issue by patching Sage's version of Sphinx to look for a custom attribute in functions and methods.",
     "created_at": "2010-09-23T12:15:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100086",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99920",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -53,15 +51,15 @@ Fixes the issue by patching Sage's version of Sphinx to look for a custom attrib
 
 ---
 
-archive/issue_comments_100087.json:
+archive/issue_comments_099921.json:
 ```json
 {
     "body": "Attachment [trac_9976_decorated_generic_sigs.patch](tarball://root/attachments/some-uuid/ticket9976/trac_9976_decorated_generic_sigs.patch) by @johanrosenkilde created at 2010-09-23 12:16:35\n\nNote that the attached patch assumes Trac #9907 (which in turn assumes #9919). Sorry for the chain of Tracs, but I believe the others are just about finished, so it seems like wasted extra work to first make a version without the dependency and then patch this.",
     "created_at": "2010-09-23T12:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100087",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99921",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -73,15 +71,15 @@ Note that the attached patch assumes Trac #9907 (which in turn assumes #9919). S
 
 ---
 
-archive/issue_comments_100088.json:
+archive/issue_comments_099922.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-23T12:16:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100088",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99922",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -91,15 +89,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_100089.json:
+archive/issue_comments_099923.json:
 ```json
 {
     "body": "Now I've finished, cleaned up and tested an alternative patch. It is a slightly more invasive change to the Sphinx autodoc algorithm, and it is a little less intuitive than the other, but it makes it easier for decorators to change the signature of the wrapped function (currently, only `@`option and `@`suboption uses this).\n\nIn the other patch we used the attribute _sage_decorating which returns the wrapped function to tell Sphinx that it should behave specially, but in the new patch, the decorating callable should now instead define an attribute _sage_getargspec. This should be a function returning an argspec (an argspec is an python.inspect.ArgSpec tuple as returned by python.inspect.getargspec -- basically describing the elements of a function's signature) with the help of an \"argspec-retrieving function\" taken as argument. This recursive way of doing things is for avoiding the logic within Sphinx of getting the argspec for various types of functions (e.g. Python, Cython or built-in). When Sphinx is asked to format the signature of a function, and that function defines _sage_getargspec, it formats in a standard way whatever _sage_getargspec(getter) returns, where getter is basically itself (that is, the Sphinx function currently being asked to find the argspec of some function).\n\nSo for example, `@`option defines an _sage_getargspec which takes Sphinx's own argspec-finding function -- let's call that getter. _sage_getargspec(getter) then uses getter on the wrapped function, getting the function's original argspec. To this, it adds the options given as arguments to the decorator. This is then returned to Sphinx which formats it and outputs that as the signature for the decorated function.",
     "created_at": "2010-10-07T12:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100089",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99923",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -113,15 +111,15 @@ So for example, `@`option defines an _sage_getargspec which takes Sphinx's own a
 
 ---
 
-archive/issue_comments_100090.json:
+archive/issue_comments_099924.json:
 ```json
 {
     "body": "I personally prefer the advanced and intrusive patch as it allows more flexibility for the usual developer. I hope that decorators could be more widely used after this patch is introduced, as they are really handy for many things.\nSo for the everyone -- and in particular the patch buildbot:\nApply trac_9976_decorated_generic_sigs_alternative.patch",
     "created_at": "2010-12-09T10:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100090",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99924",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -133,15 +131,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch
 
 ---
 
-archive/issue_comments_100091.json:
+archive/issue_comments_099925.json:
 ```json
 {
     "body": "I am currently working on a related problem, namely a Cython version of the cached_method decorators - see #11115.\n\nWhy is that related?\n\nWhat one would like to do in this case is to preserve the documentation (and also the source code, file and argspec) of the wrapped function. But if it is Cython, one can not simply override `__doc__`: Even if `__doc__` is defined cdef public, the doc builder would still pick up the the documentation of the decorator, not of the wrapped function.\n\nThe obvious solution is to consequently use `sage.misc.sageinspect.sage_getdoc` and related methods. Like `sage_getargspec`, it allows for more flexibility.\n\nSo, what I would like to do is to edit `doc/common/builder.py` and replace the calls to `inspect` by the corresponding calls to `sageinspect`, and also replace `__doc__`.\n\nBut shall I post that here, since it is related? Or shall I open a new ticket, since, after all, the patch here does not touch `builder.py`?\n\nBest regards,\n\nSimon",
     "created_at": "2011-04-04T13:39:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100091",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99925",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -165,15 +163,15 @@ Simon
 
 ---
 
-archive/issue_comments_100092.json:
+archive/issue_comments_099926.json:
 ```json
 {
     "body": "Replying to [comment:9 SimonKing]:\n> \n> So, what I would like to do is to edit `doc/common/builder.py` and replace the calls to `inspect` by the corresponding calls to `sageinspect`, and also replace `__doc__`.\n\nOops, me stupid!\n\nI just realised that I was not editing `builder.py` but `sage_autodoc.py`. So, we *do* work on the same file.\n\nI guess that means that I should post my patch here, right?\n\nBest regards,\nSimon",
     "created_at": "2011-04-04T13:41:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100092",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99926",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -194,15 +192,15 @@ Simon
 
 ---
 
-archive/issue_comments_100093.json:
+archive/issue_comments_099927.json:
 ```json
 {
     "body": "The part about decorators shadowing Cython callable's doc, source code, file, etc. definitely sounds like the same. I guessed that something similar would be wrong with Cython, but I don't write Cython so it was tedious to try and dig up. Good that you came across it. I don't see why this ticket shouldn't encompass both patches for completeness.\n\nI guess that your sage_autodoc patch is not about the cache functionality of your `@`cached_method decorator -- that is obviously not related to this ticket ;-)\n\nCheers,\nJohan",
     "created_at": "2011-04-04T14:30:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100093",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99927",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -217,15 +215,15 @@ Johan
 
 ---
 
-archive/issue_comments_100094.json:
+archive/issue_comments_099928.json:
 ```json
 {
     "body": "Replying to [comment:11 jsrn]:\n> I guess that your sage_autodoc patch is not about the cache functionality of your `@`cached_method decorator -- that is obviously not related to this ticket ;-)\n\nOf course! This ticket will eventually become a dependency for #11115.\n\nWhat I intend to do: Modify the `sage_get...` functions from `sage.misc.sageinspect` such that they also work on classes: If you have a class with an attribute `_sage_doc_` then this attribute would be called - resulting in a type error that is not caught:\n\n```\nsage: class MyClass:\n....:     def _sage_doc_(self):\n....:         return \"my doc\"\n....:\nsage: O = MyClass()\nsage: sage.misc.sageinspect.sage_getdoc(O)\n'my doc\\n'\nsage: sage.misc.sageinspect.sage_getdoc(MyClass)\nTraceback (most recent call last):\n...\nTypeError: unbound method _sage_doc_() must be called with MyClass instance as first argument (got nothing instead)\n```\n\n\nIf that is fixed (similarly in the other `sage_get...`) then I suggest to replace all calls to `inspect.get...` and to `...__doc__` by the corresponding function from `sage.misc.sageinspect`.\n\nBest regards,\n\nSimon",
     "created_at": "2011-04-04T16:39:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100094",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99928",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -261,15 +259,15 @@ Simon
 
 ---
 
-archive/issue_comments_100095.json:
+archive/issue_comments_099929.json:
 ```json
 {
     "body": "What I would like to have is:\n\n```\nsage: class MyClass:\n....:     \"Class documentation\"\n....:     def _sage_doc_(self):\n....:         return \"Instance documentation\"\n....:\nsage: sage.misc.sageinspect.sage_getdoc(MyClass())\n'Instance documention\\n'\nsage: sage.misc.sageinspect.sage_getdoc(MyClass)\n'Class documentation\\n'\n```\n\n\nThen, using `sage_getdoc` in `sage_autodoc.py` would mean that \"usual\" methods of a class would be documented according to their doc string. But if it is a decorated method (at least, the following holds true for ``@`cached_method`) then the attribute of the class is in fact a class instance:\n\n```\nsage: class MyClass:\n....:     @cached_method\n....:     def f(x):\n....:         return -x\n....:     def g(x):\n....:         return -x\n....:\nsage: MyClass.g.__class__\n<type 'instancemethod'>\nsage: MyClass.f.__class__\n<type 'sage.misc.cachefunc.CachedMethodCaller'>\n```\n\n\nSo, if the decorator has `_sage_doc_` and `_sage_argspec_` then it can be used when building the reference.",
     "created_at": "2011-04-04T17:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100095",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99929",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -311,15 +309,15 @@ So, if the decorator has `_sage_doc_` and `_sage_argspec_` then it can be used w
 
 ---
 
-archive/issue_comments_100096.json:
+archive/issue_comments_099930.json:
 ```json
 {
     "body": "I see this error when building the documentation:\n\n```\n/mnt/local/king/SAGE/broken/devel/sage/doc/en/reference/sage/plot/complex_plot.rst:7: (WARNING/2) error while formatting signature for sage.plot.complex_plot.complex_plot: 'tuple' object has no attribute 'args'\n```\n\n\nAdmittedly this is after I edited sage_autodoc to use more from sageinspect. However, it concerns a part that I did not touch, namely apparently the method `format_args(self)` in sage_autodoc.",
     "created_at": "2011-04-05T05:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100096",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99930",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -336,15 +334,15 @@ Admittedly this is after I edited sage_autodoc to use more from sageinspect. How
 
 ---
 
-archive/issue_comments_100097.json:
+archive/issue_comments_099931.json:
 ```json
 {
     "body": "How is the documentation of a class, method etc. actually obtained? There is a method  `get_doc` in sage_autodoc.py, but it was not called when I expected it.\n\nCould it by the the work is done by the method `find_attr_docs()` of `sphinx.pycode.ModuleAnalyzer`? That would be bad, because certainly it is ignorant to methods such as `_sage_doc_()`!\n\nBy consequence, if one has a method that is decorated by a cython class (something that I plan for the cached_method decorator) then the documentation will be that of the cython class, not that of the decorated method.\n\nSo, could it be that we have to replace `sphinx.pycode.ModuleAnalyzer`?",
     "created_at": "2011-04-05T07:10:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100097",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99931",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -360,15 +358,15 @@ So, could it be that we have to replace `sphinx.pycode.ModuleAnalyzer`?
 
 ---
 
-archive/issue_comments_100098.json:
+archive/issue_comments_099932.json:
 ```json
 {
     "body": "Replying to [comment:14 SimonKing]:\n> I see this error when building the documentation:\n> {{{\n> /mnt/local/king/SAGE/broken/devel/sage/doc/en/reference/sage/plot/complex_plot.rst:7: (WARNING/2) error while formatting signature for sage.plot.complex_plot.complex_plot: 'tuple' object has no attribute 'args'\n> }}}\n> \n> Admittedly this is after I edited sage_autodoc to use more from sageinspect. However, it concerns a part that I did not touch, namely apparently the method `format_args(self)` in sage_autodoc.\n\nI don't know about that error. On my current version of sage 4.6.2 it applies and compiles with no problems; I am currently updating to 4.7.alpha3 to test it there...",
     "created_at": "2011-04-05T09:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100098",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99932",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -386,15 +384,15 @@ I don't know about that error. On my current version of sage 4.6.2 it applies an
 
 ---
 
-archive/issue_comments_100099.json:
+archive/issue_comments_099933.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-05T10:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100099",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99933",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -404,15 +402,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100100.json:
+archive/issue_comments_099934.json:
 ```json
 {
     "body": "Replying to [comment:15 SimonKing]:\n> How is the documentation of a class, method etc. actually obtained? There is a method  `get_doc` in sage_autodoc.py, but it was not called when I expected it.\n\nThat is indeed surprising; I would have thought that was constructing the documentation. You are aware that there are two get_doc functions: one in the Documenter class (which is the father of all documenters), and the overwritten in the ClassLevelDocumenter subclass? So if you were monitoring Documenter's get_doc but were for the documentation of a method or attribute, you would not see the call (I'm compiling, so I can't test myself just now).\n\n> \n> Could it by the the work is done by the method `find_attr_docs()` of `sphinx.pycode.ModuleAnalyzer`? That would be bad, because certainly it is ignorant to methods such as `_sage_doc_()`!\n> \n> By consequence, if one has a method that is decorated by a cython class (something that I plan for the cached_method decorator) then the documentation will be that of the cython class, not that of the decorated method.\n> \n> So, could it be that we have to replace `sphinx.pycode.ModuleAnalyzer`?\n\nI hope not. For this ticket, I originally only looked at where the argument string was formatted and that is in sage_autodoc.py. ModuleAnalyzer is (only?) called on line 624 (unpatched) with the following comment: \"try to also get a source code analyzer for attribute docs\". If what you are suggesting above is true, we should be able to wrap these lines with some exceptions in the cases where a _sage_doc attribute has been set on the object.",
     "created_at": "2011-04-05T10:08:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100100",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99934",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -434,15 +432,15 @@ I hope not. For this ticket, I originally only looked at where the argument stri
 
 ---
 
-archive/issue_comments_100101.json:
+archive/issue_comments_099935.json:
 ```json
 {
     "body": "Replying to [comment:17 jsrn]:\n> Replying to [comment:15 SimonKing]:\n> > How is the documentation of a class, method etc. actually obtained? There is a method  `get_doc` in sage_autodoc.py, but it was not called when I expected it.\n> \n> That is indeed surprising; I would have thought that was constructing the documentation. You are aware that there are two get_doc functions: one in the Documenter class (which is the father of all documenters), and the overwritten in the ClassLevelDocumenter subclass?\n\nI inserted commands into both `get_doc` methods that I found in `sage_autodoc.py that should write some status reports into a file called \"simon_logfile\" somewhere in my home directory. After deleting one file in doc/output/html/en/reference and doing `sage -docbuild reference html`, no file called \"simon_logfile\" can be found anywhere on the disk (even outside my home directory).\n\nThen, I bumped it up, and inserted a `raise RuntimeError` into the first line of both methods. Nevertheless, the documentation builds as it did before.\n\nSo, I must conclude that neither version of `get_doc` is used to get documentation.",
     "created_at": "2011-04-05T15:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100101",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99935",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -462,15 +460,15 @@ So, I must conclude that neither version of `get_doc` is used to get documentati
 
 ---
 
-archive/issue_comments_100102.json:
+archive/issue_comments_099936.json:
 ```json
 {
     "body": "Replying to [comment:18 SimonKing]:\n> Then, I bumped it up, and inserted a `raise RuntimeError` into the first line of both methods. Nevertheless, the documentation builds as it did before.\n> \n> So, I must conclude that neither version of `get_doc` is used to get documentation.\n\nNo, the reason for that behaviour is that apparently the documentation is cached on disk. In other words, I had to delete the html file **and** to touch the code from which the documentation was taken, **and** to do \"sage -b\".\n\nAfter that preparation, things worked.\n\nMy question to you: How can I completely wipe the cache?\n\nI have to leave office now. But I guess a bit later today, or tomorrow, I will be able to provide a patch on top of yours. Its purpose is to allow for Cython objects to provide a documentation that is different from the documentation of their class, and it also provides the possibility to inspect Cython code that is defined during an interactive session.",
     "created_at": "2011-04-05T15:58:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100102",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99936",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -491,15 +489,15 @@ I have to leave office now. But I guess a bit later today, or tomorrow, I will b
 
 ---
 
-archive/issue_comments_100103.json:
+archive/issue_comments_099937.json:
 ```json
 {
     "body": "I added a patch that ought to be applied on top of the previous patch. In `sage_autodoc.py`, it replaces calls to the `inspect` module by the corresponding calls to the `sage.misc.sageinspect` module, and in particular it uses `_sage_getdoct_unformatted` rather than asking for the `__doc__` attribute. \n\nMoreover, it makes `sage_getdoc` and friends a little more stable. Namely, it catches the type error that resulted when calling `sage_getdoc` on a class:\n\n```\nsage: class MyClass:\n....:     def _sage_doc_(self):\n....:         return \"some doc\"\n....:     \nsage: sage.misc.sageinspect.sage_getdoc(MyClass())\n'some doc\\n'\nsage: sage.misc.sageinspect.sage_getdoc(MyClass)\n''    # This used to give a TypeError\n```\n\n\nThen, it also allows inspection of Cython code that is defined in an interactive session. Its code is defined in a temporary file, thus, not in the sage library tree. But the old algorithm would only try to find files in the library tree.\n\n```\n   sage: cython('''cpdef test_funct(x,y): return''') \n   sage: sage_getsourcelines(test_funct) \n   (['cpdef test_funct(x,y): return\\n'], 6) \n```\n\n\nI am building the documentation from scratch. If it works then I can give your patch a positive review. And I hope there will be a reviewer for my patch as well... But careful, my patch modifies something in the sage library, so, doc tests are needed.\n\nFor the patchbot:\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch",
     "created_at": "2011-04-05T16:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100103",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99937",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -538,15 +536,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100104.json:
+archive/issue_comments_099938.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-05T16:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100104",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99938",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -556,15 +554,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100105.json:
+archive/issue_comments_099939.json:
 ```json
 {
     "body": "Changing keywords from \"sphinx, documentation\" to \"sphinx, documentation, cython inspection\".",
     "created_at": "2011-04-05T16:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100105",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99939",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -574,15 +572,15 @@ Changing keywords from "sphinx, documentation" to "sphinx, documentation, cython
 
 ---
 
-archive/issue_comments_100106.json:
+archive/issue_comments_099940.json:
 ```json
 {
     "body": "Replying to [comment:19 SimonKing]:\n> Replying to [comment:18 SimonKing]:\n> > Then, I bumped it up, and inserted a `raise RuntimeError` into the first line of both methods. Nevertheless, the documentation builds as it did before.\n> > \n> > So, I must conclude that neither version of `get_doc` is used to get documentation.\n> \n> No, the reason for that behaviour is that apparently the documentation is cached on disk. In other words, I had to delete the html file **and** to touch the code from which the documentation was taken, **and** to do \"sage -b\".\n> \n> After that preparation, things worked.\n> \n> My question to you: How can I completely wipe the cache?\n\nYeah, that's true. I guess it works as a lot of other build-stuff does by only rebuilding something when the source files have changed; and I guess in this case, the source files are the *py[x] files resulting from running ./sage -b. At least, I found no quicker way for rebuilding the documentation of some file after changing sage_autodoc than what you did: edit sage_autodoc, touch some file, sage -b, build documentation.",
     "created_at": "2011-04-05T18:13:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100106",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99940",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -604,15 +602,15 @@ Yeah, that's true. I guess it works as a lot of other build-stuff does by only r
 
 ---
 
-archive/issue_comments_100107.json:
+archive/issue_comments_099941.json:
 ```json
 {
     "body": "After upgrade to 4.7.alpha3 from 4.6.2, applying both patches, rebuilding and then building documentation, it fails with the following error:\n\n\n```\nRunning Sphinx v1.0.4\nloading pickled environment... not yet created\nbuilding [html]: targets for 902 source files that are out of date\nupdating environment: 902 added, 0 changed, 0 removed\nreading sources... [ 69%] sage/plot/colors                                                     \nException occurred:\n  File \"/home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/plot/colors.py\", line 1358, in __getitem__\n    raise KeyError(\"no colormap with name '%s'\" % name)\nKeyError: \"no colormap with name '_sage_doc_'\"\nThe full traceback has been saved in /tmp/sphinx-err-0GNrXK.log, if you want to report the issue to the developers.\n```\n\n\nIt seems to be from a call to _sage_getdoc_unformatted in sageinspect.py on an object which does not support it.",
     "created_at": "2011-04-06T06:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100107",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99941",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -639,15 +637,15 @@ It seems to be from a call to _sage_getdoc_unformatted in sageinspect.py on an o
 
 ---
 
-archive/issue_comments_100108.json:
+archive/issue_comments_099942.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-06T06:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100108",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99942",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -657,15 +655,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100109.json:
+archive/issue_comments_099943.json:
 ```json
 {
     "body": "Replying to [comment:22 jsrn]:\n> \n> It seems to be from a call to _sage_getdoc_unformatted in sageinspect.py on an object which does not support it.\n\nSnap diagnose: That class raises a `KeyError` when it should raise an `AttributeError`.\n\nTwo ways of fixing:\n\n1. Replace the `raise KeyError(\"no colormap with name '%s'\"%name)` by an `AttributeError`.\n2. In `_sage_getdoc_unformatted`, catch not only `AttributeError`s but also `KeyError`s.\n\nCan you find out whether raising the `KeyError` is new in sage-4.7.alpha3, and what ticket is to blame?\n\nCheers,\nSimon",
     "created_at": "2011-04-06T06:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100109",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99943",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -689,15 +687,15 @@ Simon
 
 ---
 
-archive/issue_comments_100110.json:
+archive/issue_comments_099944.json:
 ```json
 {
     "body": "I have some other thoughts about our patches. The line numbers below are after patching with both patches:\n\n- In sage_autodoc.py:820, we catch a TypeError which might be thrown by sage_getargspec. However, as the comment on the following lines indicates, this is because the old method inspect.getargspec(obj) throws TypeErrors whenever obj is a class (as you demonstrated above). Is the nested try-catch-clauses on those lines still sensible?\n\n- You import _sage_getdoc_unformatted into sage_autodoc but isn't it bad Python practice to import a method indicated to be private? Should we just ignore this anyway?\n\n- Shouldn't the entire sage_autodoc.py be changed to use the sageinspect module instead of the python.inspect module? It seems a bit haphazard to use one some places and the other elsewhere. If this was never the intention of sageinspect, or if it would require a huge amount of effort, then I'm perfectly ok with not doing this ;-)\n\n- In sageinspect.py: 677, you call an object's _sage_argspec_ method. Is this an object attribute that you have invented or did I miss something? In my original patch, I invented the \"_sage_getargspec\" attribute for callables, which is not a method but a tuple property of the object, following the same format that inspec.getargspec would return. Shouldn't these two be merged to the same attribute, and wouldn't that imply a simplification in your patch of sage_autodoc's format_args functions? If they should indeed be different but it is something that you invented, it should be documented in some comments somewhere.\n\nCheers,\nJohan",
     "created_at": "2011-04-06T06:42:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100110",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99944",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -718,15 +716,15 @@ Johan
 
 ---
 
-archive/issue_comments_100111.json:
+archive/issue_comments_099945.json:
 ```json
 {
     "body": "Replying to [comment:22 jsrn]:\n> It seems to be from a call to _sage_getdoc_unformatted in sageinspect.py on an object which does not support it.\n\nI just looked at `sage/plot/colors.py`, and found that the two `__getattr__` methods defined there simply call `__getitem__` -- and this raises a `KeyError`, even before sage-4.7.\n\nSo, I suggested to replace the two `__getattr__` methods in this file by\n\n```\ntry:\n    return self.__getitem__(name)\nexcept KeyError:\n    raise AttributeError, \"'%s' has no attribute %s\"%(type(self),name)\n```\n",
     "created_at": "2011-04-06T06:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100111",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99945",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -749,15 +747,15 @@ except KeyError:
 
 ---
 
-archive/issue_comments_100112.json:
+archive/issue_comments_099946.json:
 ```json
 {
     "body": "Replying to [comment:23 SimonKing]:\n> Replying to [comment:22 jsrn]:\n> > \n> > It seems to be from a call to _sage_getdoc_unformatted in sageinspect.py on an object which does not support it.\n> \n> Snap diagnose: That class raises a `KeyError` when it should raise an `AttributeError`.\n> \n> Two ways of fixing:\n> \n>  1. Replace the `raise KeyError(\"no colormap with name '%s'\"%name)` by an `AttributeError`.\n>  2. In `_sage_getdoc_unformatted`, catch not only `AttributeError`s but also `KeyError`s.\n> \n> Can you find out whether raising the `KeyError` is new in sage-4.7.alpha3, and what ticket is to blame?\n> \n> Cheers,\n> Simon\n\nThe ticket is #5601 and more than a year old, but the KeyError might have been introduced even before. However, KeyError is clearly the wrong exception: according to Python documentation, it should be used for dictionaries (and derivatives) when asking for a non-present key. As you point out, it should be AttributeError. So I see two possibilities:\n\n1) Open a new ticket for fixing this and let this ticket depend on it, not changing this patch. \n2) Change this patch to allow KeyError but open a new ticket changing KeyError to AttributeError and adding a note that the catch for KeyError we just added should be removed in the new ticket's patch.\n\nThe second possibility is in case it for some reason becomes a problem changing the KeyError; a lot of code might (for sick reasons) depend on color throwing a KeyError :-S",
     "created_at": "2011-04-06T07:01:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100112",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99946",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -789,15 +787,15 @@ The second possibility is in case it for some reason becomes a problem changing 
 
 ---
 
-archive/issue_comments_100113.json:
+archive/issue_comments_099947.json:
 ```json
 {
     "body": "Hi Johan,\n\nReplying to [comment:24 jsrn]:\n> - In sage_autodoc.py:820, we catch a TypeError which might be thrown by sage_getargspec. However, as the comment on the following lines indicates, this is because the old method inspect.getargspec(obj) throws TypeErrors whenever obj is a class (as you demonstrated above). Is the nested try-catch-clauses on those lines still sensible?\n\nProbably it isn't needed, but I think it doesn't hurt, does it?\n \n> - You import _sage_getdoc_unformatted into sage_autodoc but isn't it bad Python practice to import a method indicated to be private? Should we just ignore this anyway?\n\nI don't know much about Python conventions. And actually it could be that \"sage_getdoc\" is more appropriate for \"sage_autodoc.py\" anyway. So, I'll try to change it.\n\n> - Shouldn't the entire sage_autodoc.py be changed to use the sageinspect module instead of the python.inspect module? It seems a bit haphazard to use one some places and the other elsewhere. If this was never the intention of sageinspect, or if it would require a huge amount of effort, then I'm perfectly ok with not doing this ;-)\n\nIf I am not mistaken, the sageinspect module is intended to replace only a part of the Python inspect module. And if you look into the patched sage_autodoc.py, you will find that we only use the following auxiliary methods from the inspect module\n\n```\ninspect.isbuiltin\ninspect.ismethoddescriptor\ninspect.isfunction\ninspect.isroutine\ninspect.ismethod\ninspect.formatargspec\n```\n\n\nThe only \"is*\"-function in sageinspect is \"sage.misc.sageinspect.isclassinstance\", and there is also no alternate version of \"formatargspec\". So, I think it is just fine to use these bits from the Python inspect module.\n\n> - In sageinspect.py: 677, you call an object's _sage_argspec_ method. Is this an object attribute that you have invented or did I miss something? In my original patch, I invented the \"_sage_getargspec\" attribute for callables, which is not a method but a tuple property of the object, following the same format that inspec.getargspec would return. Shouldn't these two be merged to the same attribute, and wouldn't that imply a simplification in your patch of sage_autodoc's format_args functions? If they should indeed be different but it is something that you invented, it should be documented in some comments somewhere.\n\nAs I mentioned above, I don't know much about Python conventions. But I thought it is considered bad practice to provide that type of data by arguments?\n\nAnyway, _sage_argspec_ is a *method*, and it is not my invention, but was used in sageinspect before. Other methods used are _sage_doc_, _sage_src_ and _sage_src_lines_.\n\nSo, actually it might be a good idea to change your patch so that it uses the existing _sage_argspec_ method, rather than introducing a _sage_getargspec attribute.",
     "created_at": "2011-04-06T07:03:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100113",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99947",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -840,15 +838,15 @@ So, actually it might be a good idea to change your patch so that it uses the ex
 
 ---
 
-archive/issue_comments_100114.json:
+archive/issue_comments_099948.json:
 ```json
 {
     "body": "Replying to [comment:25 SimonKing]:\n> Replying to [comment:22 jsrn]:\n> > It seems to be from a call to _sage_getdoc_unformatted in sageinspect.py on an object which does not support it.\n> \n> I just looked at `sage/plot/colors.py`, and found that the two `__getattr__` methods defined there simply call `__getitem__` -- and this raises a `KeyError`, even before sage-4.7.\n> \n> So, I suggested to replace the two `__getattr__` methods in this file by\n> {{{\n> try:\n>     return self.__getitem__(name)\n> except KeyError:\n>     raise AttributeError, \"'%s' has no attribute %s\"%(type(self),name)\n> }}}\n\nThat's a good fix! New ticket (on which this depends) or just go dirty and fix it here?",
     "created_at": "2011-04-06T07:04:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100114",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99948",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -872,15 +870,15 @@ That's a good fix! New ticket (on which this depends) or just go dirty and fix i
 
 ---
 
-archive/issue_comments_100115.json:
+archive/issue_comments_099949.json:
 ```json
 {
     "body": "Replying to [comment:27 SimonKing]:\n> Hi Johan,\n> \n> Replying to [comment:24 jsrn]:\n> > - In sage_autodoc.py:820, we catch a TypeError which might be thrown by sage_getargspec. However, as the comment on the following lines indicates, this is because the old method inspect.getargspec(obj) throws TypeErrors whenever obj is a class (as you demonstrated above). Is the nested try-catch-clauses on those lines still sensible?\n> \n> Probably it isn't needed, but I think it doesn't hurt, does it?\n\nI'll try to do some testing without it; if it causes problems, then we'll leave it. Otherwise, I don't care much for confusing and rotting code ;-)\n\n>  \n> > - You import _sage_getdoc_unformatted into sage_autodoc but isn't it bad Python practice to import a method indicated to be private? Should we just ignore this anyway?\n> \n> I don't know much about Python conventions. And actually it could be that \"sage_getdoc\" is more appropriate for \"sage_autodoc.py\" anyway. So, I'll try to change it.\n> \n> > - Shouldn't the entire sage_autodoc.py be changed to use the sageinspect module instead of the python.inspect module? It seems a bit haphazard to use one some places and the other elsewhere. If this was never the intention of sageinspect, or if it would require a huge amount of effort, then I'm perfectly ok with not doing this ;-)\n> \n> If I am not mistaken, the sageinspect module is intended to replace only a part of the Python inspect module. And if you look into the patched sage_autodoc.py, you will find that we only use the following auxiliary methods from the inspect module\n> {{{\n> inspect.isbuiltin\n> inspect.ismethoddescriptor\n> inspect.isfunction\n> inspect.isroutine\n> inspect.ismethod\n> inspect.formatargspec\n> }}}\n> \n> The only \"is*\"-function in sageinspect is \"sage.misc.sageinspect.isclassinstance\", and there is also no alternate version of \"formatargspec\". So, I think it is just fine to use these bits from the Python inspect module.\n\nSounds fine.\n\n> \n> > - In sageinspect.py: 677, you call an object's _sage_argspec_ method. Is this an object attribute that you have invented or did I miss something? In my original patch, I invented the \"_sage_getargspec\" attribute for callables, which is not a method but a tuple property of the object, following the same format that inspec.getargspec would return. Shouldn't these two be merged to the same attribute, and wouldn't that imply a simplification in your patch of sage_autodoc's format_args functions? If they should indeed be different but it is something that you invented, it should be documented in some comments somewhere.\n> \n> As I mentioned above, I don't know much about Python conventions. But I thought it is considered bad practice to provide that type of data by arguments?\n\nHuh, why oh why? Ok, I never really read those conventions, but if you say so ;-)\n> \n> Anyway, _sage_argspec_ is a *method*, and it is not my invention, but was used in sageinspect before. Other methods used are _sage_doc_, _sage_src_ and _sage_src_lines_.\n> \n> So, actually it might be a good idea to change your patch so that it uses the existing _sage_argspec_ method, rather than introducing a _sage_getargspec attribute.\n\nDefinitely, if that is the way Sage does it elsewhere; I weren't aware of that. I'll look into changing my patch; what kind of stuff does _sage_argspec_ usually return?",
     "created_at": "2011-04-06T07:08:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100115",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99949",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -932,15 +930,15 @@ Definitely, if that is the way Sage does it elsewhere; I weren't aware of that. 
 
 ---
 
-archive/issue_comments_100116.json:
+archive/issue_comments_099950.json:
 ```json
 {
     "body": "Replying to [comment:26 jsrn]:\n> 1) Open a new ticket for fixing this and let this ticket depend on it, not changing this patch. \n\n> 2) Change this patch to allow KeyError but open a new ticket changing KeyError to AttributeError and adding a note that the catch for KeyError we just added should be removed in the new ticket's patch.\n> \n> The second possibility is in case it for some reason becomes a problem changing the KeyError; a lot of code might (for sick reasons) depend on color throwing a KeyError :-S\n\nBoth solutions involve opening a new ticket. So, that should be done anyway. Can you do it?\n\nI already sketched a patch for the new ticket. If doc tests pass after changing the `KeyError` into an `AttributeError` (and of course if there is an additional doc test verifying the correct error type) then it can certainly be given a positive review and made a dependency for this ticket (hence, solution 1). Otherwise, we go for solution 2).",
     "created_at": "2011-04-06T07:09:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100116",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99950",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -959,15 +957,15 @@ I already sketched a patch for the new ticket. If doc tests pass after changing 
 
 ---
 
-archive/issue_comments_100117.json:
+archive/issue_comments_099951.json:
 ```json
 {
     "body": "Replying to [comment:28 jsrn]:\n> That's a good fix! New ticket (on which this depends) or just go dirty and fix it here?\n\nHm. We can try. If it breaks any old test (except trivial ones that test the wrong exception type) then it should be a new ticket. Otherwise, I think it is ok to include it here.",
     "created_at": "2011-04-06T07:10:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100117",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99951",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -980,15 +978,15 @@ Hm. We can try. If it breaks any old test (except trivial ones that test the wro
 
 ---
 
-archive/issue_comments_100118.json:
+archive/issue_comments_099952.json:
 ```json
 {
     "body": "Replying to [comment:29 jsrn]:\n> > As I mentioned above, I don't know much about Python conventions. But I thought it is considered bad practice to provide that type of data by arguments?\n> \n> Huh, why oh why? Ok, I never really read those conventions, but if you say so ;-)\n\nWell, I am no expert for Python conventions. It is just something that I think to remember to have heard...\n\n> Definitely, if that is the way Sage does it elsewhere; I weren't aware of that. I'll look into changing my patch; what kind of stuff does _sage_argspec_ usually return?\n\nIt is similar to the format that is returned by inspect.getargspec:\n\n```\nsage: def f(x,y, k=1,l=2, *args, **kwds): pass....: \nsage: inspect.getargspec(f)\nArgSpec(args=['x', 'y', 'k', 'l'], varargs='args', keywords='kwds', defaults=(1, 2))\nsage: sage.misc.sageinspect.sage_getargspec(f)\n(['x', 'y', 'k', 'l'], 'args', 'kwds', (1, 2))\n```\n\n\nSo, `self._sage_argspec_()` should return a tuple of the kind that is returned by `sage_getargspec(self)`.",
     "created_at": "2011-04-06T07:19:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100118",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99952",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1018,15 +1016,15 @@ So, `self._sage_argspec_()` should return a tuple of the kind that is returned b
 
 ---
 
-archive/issue_comments_100119.json:
+archive/issue_comments_099953.json:
 ```json
 {
     "body": "Replying to [comment:31 SimonKing]:\n> Replying to [comment:28 jsrn]:\n> > That's a good fix! New ticket (on which this depends) or just go dirty and fix it here?\n> \n> Hm. We can try. If it breaks any old test (except trivial ones that test the wrong exception type) then it should be a new ticket. Otherwise, I think it is ok to include it here.\n\nIt has been coded and I'm running doctests :-)",
     "created_at": "2011-04-06T07:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100119",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99953",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1042,15 +1040,15 @@ It has been coded and I'm running doctests :-)
 
 ---
 
-archive/issue_comments_100120.json:
+archive/issue_comments_099954.json:
 ```json
 {
     "body": "Let me try to condense the discussion above in a TODO list:\n\n* I'll try to replace `_sage_getdoc_unformatted` by `sage_getdoc`.\n* You already tried to let `__getattr__` in sage.plot raise the correct error, and see if doctests still pass. If they don't (except for trivial cases), you'll open a new ticket.\n* I'll remove the \"except TypeError\" from sage_autodoc.py, since it is caught in sageinspect.py anyway.\n* You'll try to replace the `_sage_getargspec` attribute by a `_sage_argspec_` method.",
     "created_at": "2011-04-06T07:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100120",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99954",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1065,15 +1063,15 @@ Let me try to condense the discussion above in a TODO list:
 
 ---
 
-archive/issue_comments_100121.json:
+archive/issue_comments_099955.json:
 ```json
 {
     "body": "Replying to [comment:34 SimonKing]:\n>  * I'll remove the \"except TypeError\" from sage_autodoc.py, since it is caught in sageinspect.py anyway.\n\nProbably better not. According to the comments in sage_autodoc.py, the reason for catching `TypeError` is something that is not taken care of in `sage_getargspec`, and it handles these cases using `self.env.config.autodoc_builtin_argspec`, which is something `sageinspect.py` doesn't know of.",
     "created_at": "2011-04-06T07:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100121",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99955",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1086,15 +1084,15 @@ Probably better not. According to the comments in sage_autodoc.py, the reason fo
 
 ---
 
-archive/issue_comments_100122.json:
+archive/issue_comments_099956.json:
 ```json
 {
     "body": "I already hit the first snag as I misremembered my patch (because I originally had two possible solutions): the _sage_getargspec I defined is a function taking a \"getter\" function, which is a function able to construct the argspec of an object. When called by sage_autodoc.format_args, the getter will be a local function in there, resulting in a recursive interplay between whatever is in _sage_getargspec and format_args. This is to avoid copying all the logic in sage_autodoc for how to produce argspecs for different \"basic\" objects.\nI see two possibilities for how to proceed:\n1) Change _sage_getargspec to be like _sage_argspec_: a no-argument function just returning a tuple. This would entail copying a lot of code from sage_autodoc to somewhere in the Sage library for easy reuse by sage_wraps or something.\n2) Change _sage_argspec_ to be like _sage_getargspec and take a getter-function, which is possibly ignored. I'm actually a bit confused about _sage_argspec_ as it seems to never be used anywhere; it is defined on two Cython classes (I forget where), but is never called by any code except your new patch. Therefore, this change would only change these two Cython classes' _sage_argspec_ functions to accept but ignore a getter argument.",
     "created_at": "2011-04-06T07:57:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100122",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99956",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1107,15 +1105,15 @@ I see two possibilities for how to proceed:
 
 ---
 
-archive/issue_comments_100123.json:
+archive/issue_comments_099957.json:
 ```json
 {
     "body": "Replying to [comment:35 SimonKing]:\n> Replying to [comment:34 SimonKing]:\n> >  * I'll remove the \"except TypeError\" from sage_autodoc.py, since it is caught in sageinspect.py anyway.\n> \n> Probably better not. According to the comments in sage_autodoc.py, the reason for catching `TypeError` is something that is not taken care of in `sage_getargspec`, and it handles these cases using `self.env.config.autodoc_builtin_argspec`, which is something `sageinspect.py` doesn't know of.\n\nNo, the TypeError is around the try which is after the logic possibly calling the builtin_argspec-thing: It first checks for a _sage_getarspec-attribute, then it checks if it is a builtin (in which case it uses the builtin_argspec), and if both fail, it tries to use inspect.getargspec (after your patch, sageinspect.sage_getargspec). Now, inspect.getargspec may throw a TypeError if the argument is class and this is then handled separately. But you already do than in sageinspec.sage_getarspec, right?",
     "created_at": "2011-04-06T08:13:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100123",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99957",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1131,15 +1129,15 @@ No, the TypeError is around the try which is after the logic possibly calling th
 
 ---
 
-archive/issue_comments_100124.json:
+archive/issue_comments_099958.json:
 ```json
 {
     "body": "Replying to [comment:36 jsrn]:\n> I already hit the first snag as I misremembered my patch (because I originally had two possible solutions): the _sage_getargspec I defined is a function taking a \"getter\" function, which is a function able to construct the argspec of an object. When called by sage_autodoc.format_args, the getter will be a local function in there, resulting in a recursive interplay between whatever is in _sage_getargspec and format_args. This is to avoid copying all the logic in sage_autodoc for how to produce argspecs for different \"basic\" objects.\n\nIn other words, the purpose of `_sage_getargspec` and `_sage_argspec_` is different: If an object knows its arguments, then it can simply return them with `_sage_argspec_`. Otherwise, the interplay between sage_autodoc and the getter method of `_sage_getargspec` will find out.\n\nI try to imagine what objects do not know their own arguments. Is it like this? If the object is in fact not a class instance but a class, then calling a method like `_sage_argspec_` would result in a type error. So, _sage_argspec_ would not be able to tell the arguments of a class.\n\nHowever, the arguments of a class are the arguments of its `__new__` or `__init__` method -- and both are actually considered in sage.misc.sageinspect.sage_getargspec.\n\nSo, is the purpose of `_sage_getargspec` and its getter method to deal with the case of a class, or what situation did you have in mind when you invented it?\n\nWhat would `_sage_getargspec` and its getter method be able to do that `sage_getargspec` (after my patch) can not do?",
     "created_at": "2011-04-06T08:24:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100124",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99958",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1160,15 +1158,15 @@ What would `_sage_getargspec` and its getter method be able to do that `sage_get
 
 ---
 
-archive/issue_comments_100125.json:
+archive/issue_comments_099959.json:
 ```json
 {
     "body": "Replying to [comment:37 jsrn]:\n> No, the TypeError is around the try which is after the logic possibly calling the builtin_argspec-thing: It first checks for a _sage_getarspec-attribute, then it checks if it is a builtin (in which case it uses the builtin_argspec), and if both fail, it tries to use inspect.getargspec (after your patch, sageinspect.sage_getargspec). Now, inspect.getargspec may throw a TypeError if the argument is class and this is then handled separately. But you already do than in sageinspec.sage_getarspec, right?\n\nSounds correct.\n\nWell, I'll try.",
     "created_at": "2011-04-06T08:30:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100125",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99959",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1183,15 +1181,15 @@ Well, I'll try.
 
 ---
 
-archive/issue_comments_100126.json:
+archive/issue_comments_099960.json:
 ```json
 {
     "body": "Replying to [comment:39 SimonKing]:\n> Replying to [comment:37 jsrn]:\n> > No, the TypeError is around the try which is after the logic possibly calling the builtin_argspec-thing: It first checks for a _sage_getarspec-attribute, then it checks if it is a builtin (in which case it uses the builtin_argspec), and if both fail, it tries to use inspect.getargspec (after your patch, sageinspect.sage_getargspec). Now, inspect.getargspec may throw a TypeError if the argument is class and this is then handled separately. But you already do than in sageinspec.sage_getarspec, right?\n> \n> Sounds correct.\n> \n> Well, I'll try.\n\nOn the other hand, if you see what is done after the \"`except TypeError`\", you'll find that something remains to do: Remove the argument \"self\" that sage_getargspec would return when being called on a class or class instance:\n\n```\nsage: from sage.misc.sageinspect import sage_getargspec\nsage: sage_getargspec(QQ)\n(['self', 'x', '*args', '**kwds'], None, None, (0,))\nsage: sage_getargspec(QQ.__class__)\n(['self', 'x', '*args', '**kwds'], None, None, (0,))\n```\n\n\nSo, I guess a better plan is to explicitly test (using `inspect.isclass` and whether we want the first argument to be stripped:\n\n```\nsage: import inspect\nsage: inspect.isclass(QQ.__class__)\nTrue\nsage: sage.misc.sageinspect.isclassinstance(QQ)\nTrue\n```\n\n\nThis is what I will replace the \"`except TypeError`\" with.",
     "created_at": "2011-04-06T08:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100126",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99960",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1231,15 +1229,15 @@ This is what I will replace the "`except TypeError`" with.
 
 ---
 
-archive/issue_comments_100127.json:
+archive/issue_comments_099961.json:
 ```json
 {
     "body": "> \n> So, I guess a better plan is to explicitly test (using `inspect.isclass` and whether we want the first argument to be stripped:\n> {{{\n> sage: import inspect\n> sage: inspect.isclass(QQ.__class__)\n> True\n> sage: sage.misc.sageinspect.isclassinstance(QQ)\n> True\n> }}}\n> \n> This is what I will replace the \"`except TypeError`\" with.\n\nThat sounds good. I guess we do not want this stripping down in sage_getargspec.\n\nI'll look into whether sage_getargspec already implements the logic in sage_autodoc that I was trying to avoid duplicating when inventing _sage_getargspec.",
     "created_at": "2011-04-06T09:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100127",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99961",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1263,15 +1261,15 @@ I'll look into whether sage_getargspec already implements the logic in sage_auto
 
 ---
 
-archive/issue_comments_100128.json:
+archive/issue_comments_099962.json:
 ```json
 {
     "body": "Currently (i.e., after replacing the \"except TypeError\"), I get the  following error when building the references:\n\n```\nreading sources... [  7%] sage/algebras/free_algebra_element                    \nException occurred:\n  File \"/mnt/local/king/SAGE/broken/local/lib/python2.6/site-packages/Sphinx-1.0.4-py2.6.egg/sphinx/config.py\", line 207, in __getattr__\n    raise AttributeError('No such config value: %s' % name)\nAttributeError: No such config value: autodoc_default_flags\nThe full traceback has been saved in /tmp/sphinx-err-5rJIPQ.log, if you want to report the issue to the developers.\n```\n\n\nDo you have an idea where \"autodoc_default_flags\" is requested? According to `grep autodoc_default -R .`, it occurs *nowhere* in the sage repository!",
     "created_at": "2011-04-06T10:23:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100128",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99962",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1293,15 +1291,15 @@ Do you have an idea where "autodoc_default_flags" is requested? According to `gr
 
 ---
 
-archive/issue_comments_100129.json:
+archive/issue_comments_099963.json:
 ```json
 {
     "body": "It turned out the the error resulted from using `sage_getdoc` -- one *should* actually use `_sage_getdoc_unformatted`, as I did in my original patch!",
     "created_at": "2011-04-06T10:42:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100129",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99963",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1311,15 +1309,15 @@ It turned out the the error resulted from using `sage_getdoc` -- one *should* ac
 
 ---
 
-archive/issue_comments_100130.json:
+archive/issue_comments_099964.json:
 ```json
 {
     "body": "Another bug: Since Python 2.6, inspect.getargspec should return a _named_ tuple ArgSpec(args, varargs, keywords, defaults) (see e.g. http://docs.python.org/library/inspect.html#inspect.getargspec). My patch expects such a tuple and returns such a tuple. However, sage_getargspec does not return a named argspec, and, apparently, inspect.formatargspec still accepts the unnamed one (so we don't see the error from here). \nWe have two possibilities:\n1) Change my patch so it doesn't rely on the tuple being named\n2) Change sageinspect to return named tuples for all returned argspecs.\nI vote for 2) as that seems to be the direction Python is going; I would expect inspect.formatargspec to change in later versions and no longer accept unnamed tuples.",
     "created_at": "2011-04-06T11:03:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100130",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99964",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1333,15 +1331,15 @@ I vote for 2) as that seems to be the direction Python is going; I would expect 
 
 ---
 
-archive/issue_comments_100131.json:
+archive/issue_comments_099965.json:
 ```json
 {
     "body": "Replying to [comment:44 jsrn]:\n> We have two possibilities:\n> 1) Change my patch so it doesn't rely on the tuple being named\n> 2) Change sageinspect to return named tuples for all returned argspecs.\n> I vote for 2) as that seems to be the direction Python is going; I would expect inspect.formatargspec to change in later versions and no longer accept unnamed tuples.\n\nHow does one create a named tuple?",
     "created_at": "2011-04-06T11:25:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100131",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99965",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1357,15 +1355,15 @@ How does one create a named tuple?
 
 ---
 
-archive/issue_comments_100132.json:
+archive/issue_comments_099966.json:
 ```json
 {
     "body": "Replying to [comment:45 SimonKing]:\n> How does one create a named tuple?\n\nI think I got it: One import `ArgSpec` from `inspect`, does not change the expected output of `_sage_argspec_` (it should still be a tuple, for backwards compatibility), and `sage_argspec` returns `ArgSpec(*obj._sage_argspec_())`.",
     "created_at": "2011-04-06T11:50:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100132",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99966",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1378,15 +1376,15 @@ I think I got it: One import `ArgSpec` from `inspect`, does not change the expec
 
 ---
 
-archive/issue_comments_100133.json:
+archive/issue_comments_099967.json:
 ```json
 {
     "body": "> I think I got it: One import `ArgSpec` from `inspect`, does not change the expected output of `_sage_argspec_` (it should still be a tuple, for backwards compatibility), and `sage_argspec` returns `ArgSpec(*obj._sage_argspec_())`.\n\nDo you mean sageinspect.sage_getargspec should return an ArgSpec, while _sage_argspec_ on objects should always return an unnamed tuple? I'm trying to use _sage_argspec_ instead of the _sage_getargspec I invented, but then in order to use sage_getargspec (as an alternative to the recursive getter-thingie I have now), I would have to unwrap the ArgSpec into a normal tuple? That would be clumsy and tedious.\n\nAlternatively, we could let both _sage_argspec_ and sageinspect.sage_getargspec use ArgSpec named tuples everywhere; named tuples exhibit the exact (I think) same behaviour as tuples, whenever one is ignorant that they are named tuples (for example, it returns true on isinstance(*, tuple)). Therefore, I would think no code would break by changing this, and it would be nicer and less clumsy. \n\nBtw, is there a chat-room or IRC channel recommended for this kind of communication? This is getting a bit old :-)",
     "created_at": "2011-04-06T12:30:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100133",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99967",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1402,15 +1400,15 @@ Btw, is there a chat-room or IRC channel recommended for this kind of communicat
 
 ---
 
-archive/issue_comments_100134.json:
+archive/issue_comments_099968.json:
 ```json
 {
     "body": "Ok, this seems to work (for me at least). I've made a patch for changing sageinspect into returning ArgSpec, and I've redone my original patch into using _sage_argspec as the place for decorators to put the ArgSpec of the wrapped callable. These patches might cause your later patches to not apply anymore, but the changes should be trivial.",
     "created_at": "2011-04-06T13:00:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100134",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99968",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1420,15 +1418,15 @@ Ok, this seems to work (for me at least). I've made a patch for changing sageins
 
 ---
 
-archive/issue_comments_100135.json:
+archive/issue_comments_099969.json:
 ```json
 {
     "body": "Attachment [9976_change_to_argspec.patch](tarball://root/attachments/some-uuid/ticket9976/9976_change_to_argspec.patch) by @johanrosenkilde created at 2011-04-06 13:01:35\n\nChanges sageinspect.sage_getargspec to return a named tuple ArgSpec",
     "created_at": "2011-04-06T13:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100135",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99969",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1440,15 +1438,15 @@ Changes sageinspect.sage_getargspec to return a named tuple ArgSpec
 
 ---
 
-archive/issue_comments_100136.json:
+archive/issue_comments_099970.json:
 ```json
 {
     "body": "Replying to [comment:48 jsrn]:\n> Ok, this seems to work (for me at least). I've made a patch for changing sageinspect into returning ArgSpec, and I've redone my original patch into using _sage_argspec as the place for decorators to put the ArgSpec of the wrapped callable. These patches might cause your later patches to not apply anymore, but the changes should be trivial.\n\nThat's not nice. I was working on replacing tuple by named tuple as well. So, now we have to merge patches.",
     "created_at": "2011-04-06T13:04:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100136",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99970",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1461,15 +1459,15 @@ That's not nice. I was working on replacing tuple by named tuple as well. So, no
 
 ---
 
-archive/issue_comments_100137.json:
+archive/issue_comments_099971.json:
 ```json
 {
     "body": "Replying to [comment:50 SimonKing]:\n> Replying to [comment:48 jsrn]:\n> > Ok, this seems to work (for me at least). I've made a patch for changing sageinspect into returning ArgSpec, and I've redone my original patch into using _sage_argspec as the place for decorators to put the ArgSpec of the wrapped callable. These patches might cause your later patches to not apply anymore, but the changes should be trivial.\n> \n> That's not nice. I was working on replacing tuple by named tuple as well. So, now we have to merge patches.\n\nPS: Your patch does not suffice, as one will need to change a doctest in element.pyx.",
     "created_at": "2011-04-06T13:06:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100137",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99971",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1485,15 +1483,15 @@ PS: Your patch does not suffice, as one will need to change a doctest in element
 
 ---
 
-archive/issue_comments_100138.json:
+archive/issue_comments_099972.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-06T13:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100138",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99972",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1503,15 +1501,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100139.json:
+archive/issue_comments_099973.json:
 ```json
 {
     "body": "Since [attachment:9976_change_to_argspec.patch] does not do the necessary changes in sage/structure/element.pyx and in sage/misc/lazy_import.pyx, it is hopefully OK that I suggest to replace it with the patch that I just updated.\n\nThat patch also contains the fix for plots: An `AttributeError` is raised, not a `KeyError` (and it is tested, of course).\n\nSince your patches changed, I am afraid I need to run long tests again. But I am fairly confident, and so I change the status into \"needs review\".\n\nFor the patchbot:\n\nApply trac_9976_decorated_generic_sigs_alternative.patch inspection_of_cython.patch",
     "created_at": "2011-04-06T13:32:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100139",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99973",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1529,15 +1527,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch inspection_of_cython.pa
 
 ---
 
-archive/issue_comments_100140.json:
+archive/issue_comments_099974.json:
 ```json
 {
     "body": "Replying to [comment:52 SimonKing]:\n> Since [attachment:9976_change_to_argspec.patch] does not do the necessary changes in sage/structure/element.pyx and in sage/misc/lazy_import.pyx, it is hopefully OK that I suggest to replace it with the patch that I just updated.\n\nSure. The double work was unfortunate -- would have been nice with a more direct communication channel to avoid this.\n\n> \n> That patch also contains the fix for plots: An `AttributeError` is raised, not a `KeyError` (and it is tested, of course).\n\nI also did that, so more double work. My patch was slightly different: I added doc-tests demonstrating the different exception class with different access methods (maps.punk vs maps['punk']). I also used self.__class__.__name__ instead of type(self) for the output string. I don't particularly feel strongly for either, though.\n\n> \n> Since your patches changed, I am afraid I need to run long tests again. But I am fairly confident, and so I change the status into \"needs review\".\n\nYup, me too; and compile all documentation again :-S But at long last we seem to be right about there...",
     "created_at": "2011-04-06T13:45:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100140",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99974",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1560,15 +1558,15 @@ Yup, me too; and compile all documentation again :-S But at long last we seem to
 
 ---
 
-archive/issue_comments_100141.json:
+archive/issue_comments_099975.json:
 ```json
 {
     "body": "Replying to [comment:53 jsrn]:\n> > That patch also contains the fix for plots: An `AttributeError` is raised, not a `KeyError` (and it is tested, of course).\n> \n> I also did that, so more double work. My patch was slightly different: I added doc-tests demonstrating the different exception class with different access methods (maps.punk vs maps['punk']). I also used self.__class__.__name__ instead of type(self) for the output string. I don't particularly feel strongly for either, though.\n\nThat might actually be a good idea. It would coincide with what \nsage.structure.parent.raise_attribute_error does. Moreover, I just saw that I actually forgot to add a new doctest (although there is a modified old doctest showing the error).\n\nSo, perhaps one of us (hopefully not both...) could add it. Perhaps you? I plan to move on to ticket #11115.",
     "created_at": "2011-04-06T14:00:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100141",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99975",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1586,15 +1584,15 @@ So, perhaps one of us (hopefully not both...) could add it. Perhaps you? I plan 
 
 ---
 
-archive/issue_comments_100142.json:
+archive/issue_comments_099976.json:
 ```json
 {
     "body": "> That might actually be a good idea. It would coincide with what \n> sage.structure.parent.raise_attribute_error does. Moreover, I just saw that I actually forgot to add a new doctest (although there is a modified old doctest showing the error).\n> \n> So, perhaps one of us (hopefully not both...) could add it. Perhaps you? I plan to move on to ticket #11115. \n> \n\nI'll do the change. But a new doc-test showing which error? In plot.colors? That would be superfluous, right? Or in sageinspect?",
     "created_at": "2011-04-06T14:09:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100142",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99976",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1610,15 +1608,15 @@ I'll do the change. But a new doc-test showing which error? In plot.colors? That
 
 ---
 
-archive/issue_comments_100143.json:
+archive/issue_comments_099977.json:
 ```json
 {
     "body": "Replying to [comment:55 jsrn]:\n> I'll do the change. But a new doc-test showing which error? In plot.colors? That would be superfluous, right?\n\nThank you!\n\nI thought that the `__getattr__` method in plot.colors should get a test, demonstrating that the correct error is raised. Of course, getting the correct error is also tested somewhere else, but in general I believe that a bug fix should be tested in the method that was fixed.\n\nGood and bad news: \n\nThe good news is that the long tests all pass.\n\nThe bad new is that I get 80 warnings when building the documentation.\n\nTypically, it is\n\n```\n.../doc/en/reference/sage/rings/polynomial/real_roots.rst:7: (WARNING/2) error while formatting signature for sage.rings.polynomial.real_roots.bernstein_polynomial_factory_ratlist.coeffs_bitsize: arg is not a code object\n```\n\nand I also obtain \n\n```\nWARNING: display latex u'\\\\R': latex exited with error:                         \n[stderr]\n...\n! Undefined control sequence.\n<recently read> \\R \n                   \nl.29 $\\R\n        $\n[1] (./math.aux) )\n(see the transcript file for additional information)\nOutput written on math.dvi (1 page, 152 bytes).\nTranscript written on math.log.\n\nWARNING: display latex u'\\\\R^+': latex exited with error:\n[stderr]\n\n[stdout]\n```\n\n\nDo you have an idea what happened there?",
     "created_at": "2011-04-06T14:48:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100143",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99977",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1670,15 +1668,15 @@ Do you have an idea what happened there?
 
 ---
 
-archive/issue_comments_100144.json:
+archive/issue_comments_099978.json:
 ```json
 {
     "body": "Concerning \"is not a code object\", it can be reproduced as follows:\n\n```\nsage: from sage.rings.polynomial.real_roots import bernstein_polynomial_factory_ratlist\nsage: sage.misc.sageinspect.sage_getargspec(bernstein_polynomial_factory_ratlist.coeffs_bitsize)\nTraceback (most recent call last):\n...\nTypeError: arg is not a code object\n```\n\n\nSo, it seems like it should be fixed in sage.misc.sageinspect.",
     "created_at": "2011-04-06T14:51:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100144",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99978",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1699,15 +1697,15 @@ So, it seems like it should be fixed in sage.misc.sageinspect.
 
 ---
 
-archive/issue_comments_100145.json:
+archive/issue_comments_099979.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-06T14:51:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100145",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99979",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1717,15 +1715,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100146.json:
+archive/issue_comments_099980.json:
 ```json
 {
     "body": "Replying to [comment:57 SimonKing]:\n> So, it seems like it should be fixed in sage.misc.sageinspect.\n\nAnd here is how it can be solved:\n\n```\nsage: from sage.misc.sageinspect import _sage_getargspec_from_ast, sage_getsource\nsage: _sage_getargspec_from_ast(sage_getsource(bernstein_polynomial_factory_ratlist.coeffs_bitsize))\nArgSpec(args=['self'], varargs=None, keywords=None, defaults=None)\n```\n\n\nDoing it now.",
     "created_at": "2011-04-06T14:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100146",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99980",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1747,15 +1745,15 @@ Doing it now.
 
 ---
 
-archive/issue_comments_100147.json:
+archive/issue_comments_099981.json:
 ```json
 {
     "body": "Fixed and doctested! The new doctest is:\n\n```\nsage: from sage.rings.polynomial.real_roots import bernstein_polynomial_factory_ratlist\nsage: sage.misc.sageinspect.sage_getargspec(bernstein_polynomial_factory_ratlist.coeffs_bitsize)\nArgSpec(args=['self'], varargs=None, keywords=None, defaults=None)\n```\n\n\nBack to needs review, and also back to building the docs.",
     "created_at": "2011-04-06T15:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100147",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99981",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1774,15 +1772,15 @@ Back to needs review, and also back to building the docs.
 
 ---
 
-archive/issue_comments_100148.json:
+archive/issue_comments_099982.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-06T15:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100148",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99982",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1792,15 +1790,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100149.json:
+archive/issue_comments_099983.json:
 ```json
 {
     "body": "Not good. The documentation does not build. I keep getting errors such as\n\n```\n/mnt/local/king/SAGE/broken/devel/sage/doc/en/reference/sage/rings/polynomial/pbori.rst:7: (WARNING/2) error while formatting signature for sage.rings.polynomial.pbori.BooleanMonomialMonoid.gen: ('invalid syntax', ('<unknown>', 1, 19, 'def gen(self, int i=0):\\n'))\n/mnt/local/king/SAGE/broken/devel/sage/doc/en/reference/sage/rings/polynomial/pbori.rst:7: (WARNING/2) error while formatting signature for sage.rings.polynomial.pbori.BooleanMonomialMonoid.gens: ('invalid syntax', ('<unknown>', 13, 45, '        return tuple([new_BM_from_DD(self, (<BooleanPolynomialRing>self._ring),\\n'))\n```\n",
     "created_at": "2011-04-06T15:28:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100149",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99983",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1816,15 +1814,15 @@ Not good. The documentation does not build. I keep getting errors such as
 
 ---
 
-archive/issue_comments_100150.json:
+archive/issue_comments_099984.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-06T15:28:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100150",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99984",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1834,15 +1832,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100151.json:
+archive/issue_comments_099985.json:
 ```json
 {
     "body": "It turns out that in that case, another method does the job: `_sage_getargspec_cython`. I guess the solution is to ask `sage_getfile(obj)` whether the source is Python or Cython, and then choose the appropriate solution.",
     "created_at": "2011-04-06T15:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100151",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99985",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1852,15 +1850,15 @@ It turns out that in that case, another method does the job: `_sage_getargspec_c
 
 ---
 
-archive/issue_comments_100152.json:
+archive/issue_comments_099986.json:
 ```json
 {
     "body": "Building the docs, I get some warnings:\n\n\n```\ndocstring of sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement:6: (ERROR/3) Unexpected indentation.\ndocstring of sage.rings.padics.padic_capped_relative_element:5: (ERROR/3) Unexpected indentation.\ndocstring of sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic:18: (WARNING/2) Literal block expected; none found.\n```\n\n\nBut worse is that the arguments of the `groebner_basis` method of multivariate ideals are not correctly provided: It is `(*args,**kwds)` again!!! Can you check whether this used to be fine with your original patch?\n\nAnyway, the reason for the failure is that the `cached_method` decorator does not provide `_sage_argspec_` yet (it will be, by #11115). I assume that one can inspect the source code, though.\n\nSo, it still needs work, but not today.\n\nMy plan for tomorrow:\n\n* Fix the warnings above (I already succeeded with two of them)\n* Fix the argument extraction in sageinspect.",
     "created_at": "2011-04-06T16:34:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100152",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99986",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1889,15 +1887,15 @@ My plan for tomorrow:
 
 ---
 
-archive/issue_comments_100153.json:
+archive/issue_comments_099987.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-06T18:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100153",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99987",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1907,15 +1905,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100154.json:
+archive/issue_comments_099988.json:
 ```json
 {
     "body": "I was able to submit new patches earlier than expected. \n\nFirst, there is another fix in sage_getargspec. It is now tested:\n\n```\nsage: from sage.rings.polynomial.real_roots import bernstein_polynomial_factory_ratlist \nsage: sage_getargspec(bernstein_polynomial_factory_ratlist.coeffs_bitsize) \nArgSpec(args=['self'], varargs=None, keywords=None, defaults=None) \nsage: from sage.rings.polynomial.pbori import BooleanMonomialMonoid \nsage: sage_getargspec(BooleanMonomialMonoid.gen) \nArgSpec(args=['self', 'i'], varargs=None, keywords=None, defaults=(0,)) \nsage: P.<x,y> = QQ[]\nsage: I = P*[x,y]\nsage: sage_getargspec(I.groebner_basis)\nArgSpec(args=['self', 'algorithm', 'deg_bound', 'mult_bound', 'prot', '*args', '**kwds'], varargs=None, keywords=None, defaults=('', None, None, False)) \n```\n\n\nWhen building the documentation, I got a couple of warnings. I fixed them in the other patch.\n\nI will only be able to look at the resulting reference manual tomorrow. However, if someone in a different time zone wants to look at it now, it shall be \"needs review\"...\n\nFor the patchbot:\n\nApply trac_9976_decorated_generic_sigs_alternative.patch inspection_of_cython.patch 9976_doc_fixes.patch",
     "created_at": "2011-04-06T18:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100154",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99988",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -1949,15 +1947,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch inspection_of_cython.pa
 
 ---
 
-archive/issue_comments_100155.json:
+archive/issue_comments_099989.json:
 ```json
 {
     "body": "Replying to [comment:62 SimonKing]:\n> Building the docs, I get some warnings:\n> \n> {{{\n> docstring of sage.rings.padics.padic_ZZ_pX_CA_element.pAdicZZpXCAElement:6: (ERROR/3) Unexpected indentation.\n> docstring of sage.rings.padics.padic_capped_relative_element:5: (ERROR/3) Unexpected indentation.\n> docstring of sage.rings.polynomial.multi_polynomial_ring_generic.MPolynomialRing_generic:18: (WARNING/2) Literal block expected; none found.\n> }}}\n> \n> But worse is that the arguments of the `groebner_basis` method of multivariate ideals are not correctly provided: It is `(*args,**kwds)` again!!! Can you check whether this used to be fine with your original patch?\n> \n> Anyway, the reason for the failure is that the `cached_method` decorator does not provide `_sage_argspec_` yet (it will be, by #11115). I assume that one can inspect the source code, though.\n> \n> So, it still needs work, but not today.\n> \n> My plan for tomorrow:\n> \n>  * Fix the warnings above (I already succeeded with two of them)\n>  * Fix the argument extraction in sageinspect.\n\nBack again :-)\n\nNo, groebner_basis has never worked with my patch; for my patch to work, it requires that the decorator use `@`sage_wraps on the wrapping function which is returned. cached_method doesn't do this. As far as I can see, however, it should be possible to make (the non-Cython version of) cached_method use sage_wraps; this would remove some lines in _common_init and replace it with a `@`sage_wraps somewhere. You have been working on this so what do you say?",
     "created_at": "2011-04-07T06:32:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100155",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99989",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1989,15 +1987,15 @@ No, groebner_basis has never worked with my patch; for my patch to work, it requ
 
 ---
 
-archive/issue_comments_100156.json:
+archive/issue_comments_099990.json:
 ```json
 {
     "body": "Attachment [9976-inspection_of_cython_v2.patch](tarball://root/attachments/some-uuid/ticket9976/9976-inspection_of_cython_v2.patch) by @johanrosenkilde created at 2011-04-07 06:43:28\n\nImprove inspection on Cython objects; let sage_getargspec return an *ArgSpec*; let a plot raise an *AttributeError* if an attribute is missing",
     "created_at": "2011-04-07T06:43:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100156",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99990",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2009,15 +2007,15 @@ Improve inspection on Cython objects; let sage_getargspec return an *ArgSpec*; l
 
 ---
 
-archive/issue_comments_100157.json:
+archive/issue_comments_099991.json:
 ```json
 {
     "body": "Replying to [comment:64 jsrn]:\n> No, groebner_basis has never worked with my patch; for my patch to work, it requires that the decorator use `@`sage_wraps on the wrapping function which is returned. \n\nDid you check whether it works with my latest patches? With them, `sage_getargspec` works on `groebner_basis()`.\n\nIn fact, I just checked that the documentation looks ok if I apply both our patches.\n\nBy the way, I asked at [sage-devel http://groups.google.com/group/sage-devel/browse_thread/thread/dd7de9c504c13164] whether it is ok if I review your patch and you review mine.\n\n> cached_method doesn't do this. As far as I can see, however, it should be possible to make (the non-Cython version of) cached_method use sage_wraps; this would remove some lines in _common_init and replace it with a `@`sage_wraps somewhere. You have been working on this so what do you say?\n\nI think that would be a waste of time. The to-be-submitted Cython version of `@`cached_method will be *vastly* superior to the old Python version, but you can't use a decorator such as `@`sage_wraps in Cython code. Moreover, if I am not mistaken, the problem is already solved with our patches.",
     "created_at": "2011-04-07T06:44:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100157",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99991",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2038,15 +2036,15 @@ I think that would be a waste of time. The to-be-submitted Cython version of `@`
 
 ---
 
-archive/issue_comments_100158.json:
+archive/issue_comments_099992.json:
 ```json
 {
     "body": "Ridiculous: I can't overwrite your 9976 as I don't have DELETE-privileges. So I've made a v2; it's like your latest version but with the doctest-changes we discussed in colors.py.\n\nPatchbot: Apply trac_9976_decorated_generic_sigs_alternative.patch inspection_of_cython_v2.patch 9976_doc_fixes.patch",
     "created_at": "2011-04-07T06:45:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100158",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99992",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2058,15 +2056,15 @@ Patchbot: Apply trac_9976_decorated_generic_sigs_alternative.patch inspection_of
 
 ---
 
-archive/issue_comments_100159.json:
+archive/issue_comments_099993.json:
 ```json
 {
     "body": "Replying to [comment:65 SimonKing]:\n> Replying to [comment:64 jsrn]:\n> > No, groebner_basis has never worked with my patch; for my patch to work, it requires that the decorator use `@`sage_wraps on the wrapping function which is returned. \n> \n> Did you check whether it works with my latest patches? With them, `sage_getargspec` works on `groebner_basis()`.\n\nI was being unclear before; what I meant to say was that a decorator should usually just use sage_wraps and then not worry any more about all this inheriting of __doc__, etc. However, another route is to do it manually as cached_method does. \n\nHowever, it doesn't seem to work for me. I still get some warnings (in sage.rings.padics.padic_ZZ_pX_CA_element, sage.rings.padics.padic_capped_relative_element, sage.rings.polynomial.multi_polynomial_ring_generic), and then a latex error like the ones you described earlier. I wasn't supposed to apply your 11115 patch, was I?\n\n> \n> In fact, I just checked that the documentation looks ok if I apply both our patches.\n> \n> By the way, I asked at [sage-devel http://groups.google.com/group/sage-devel/browse_thread/thread/dd7de9c504c13164] whether it is ok if I review your patch and you review mine.\nSounds good; I was thinking the same thing.\n\n> I think that would be a waste of time. The to-be-submitted Cython version of `@`cached_method will be *vastly* superior to the old Python version, but you can't use a decorator such as `@`sage_wraps in Cython code. Moreover, if I am not mistaken, the problem is already solved with our patches.\n\nConvinced; I hadn't really looked into the extend of your changes in cached_method. Good job.",
     "created_at": "2011-04-07T06:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100159",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99993",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2094,15 +2092,15 @@ Convinced; I hadn't really looked into the extend of your changes in cached_meth
 
 ---
 
-archive/issue_comments_100160.json:
+archive/issue_comments_099994.json:
 ```json
 {
     "body": "Replying to [comment:67 jsrn]:\n> > Did you check whether it works with my latest patches? With them, `sage_getargspec` works on `groebner_basis()`.\n> \n> I was being unclear before; what I meant to say was that a decorator should usually just use sage_wraps and then not worry any more about all this inheriting of __doc__, etc. However, another route is to do it manually as cached_method does. \n> \n> However, it doesn't seem to work for me. I still get some warnings (in sage.rings.padics.padic_ZZ_pX_CA_element, sage.rings.padics.padic_capped_relative_element, sage.rings.polynomial.multi_polynomial_ring_generic), and then a latex error like the ones you described earlier. I wasn't supposed to apply your 11115 patch, was I?\n\nThere is no patch posted at #11115, yet.\n\nConcerning the warnings: Did you also apply [attachment 9976_doc_fixes.patch]? That should fix it. Or at least, it did so for me.\n\nAnd does the argument list for groebner_basis look fine now?",
     "created_at": "2011-04-07T07:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100160",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99994",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2123,15 +2121,15 @@ And does the argument list for groebner_basis look fine now?
 
 ---
 
-archive/issue_comments_100161.json:
+archive/issue_comments_099995.json:
 ```json
 {
     "body": "Your changes to my patch look OK.\n\nFor some reason, the patchbot did not pick up the correct patches (it only considers two of them). So, again:\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython_v2.patch 9976_doc_fixes.patch",
     "created_at": "2011-04-07T07:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100161",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99995",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2145,15 +2143,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100162.json:
+archive/issue_comments_099996.json:
 ```json
 {
     "body": "After emptying my patch queue, applying our three patches, removing any reference to `cachefunc` in the `build` directories, touching `sage/rings/polynomial/multi_polynomial_ideal.py`, `sage/rings/polynomial/multi_polynomial_ideal_libsingular.pyx`, `sage/plot/contour_plot.py` and `sage/misc/cachefunc.py`, I did `sage -b` and then `sage -docbuild html`.\n\nSo, I can be sufficiently sure that there is no leftover from previous work, and that I am really only testing the effects of this ticket.\n\nI obtain:\n\n```\nsphinx-build -b html -d /mnt/local/king/SAGE/broken/devel/sage/doc/output/doctrees/en/reference    /mnt/local/king/SAGE/broken/devel/sage/doc/en/reference /mnt/local/king/SAGE/broken/devel/sage/doc/output/html/en/reference\nRunning Sphinx v1.0.4\nloading pickled environment... done\nbuilding [html]: targets for 98 source files that are out of date\nupdating environment: 0 added, 98 changed, 0 removed\nreading sources... [ 72%] sage/rings/polynomial/multi_polynomial_ideal_libsingulreading sources... [100%] sage/symbolic/ring                                    \n<autodoc>:0: (ERROR/3) Unexpected indentation.\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\nwriting output... [ 78%] sage/rings/polynomial/multi_polynomial_ideal_libsingulawriting output... [100%] structure                                              \nwriting additional files... genindex py-modindex search\ncopying static files... done\ndumping search index... done\ndumping object inventory... done\nbuild succeeded, 1 warning.\nBuild finished.  The built documents can be found in /mnt/local/king/SAGE/broken/devel/sage/doc/output/html/en/reference\n```\n\n\nI don't understand the warning about `autodoc`: It doesn't say which sage file it is from.\n\nThe arguments in the documentation of groebner_basis are given by:\n\n```\ngroebner_basis(algorithm, deg_bound, mult_bound='', prot=None, *args=None, **kwds=False)\n```\n\nand of sage.plot.contour_plot.contour_plot:\n\n```\nsage.plot.contour_plot.contour_plot(f, xrange, yrange, axes=False, linestyles=None, frame=True, labels=False, plot_points=100, linewidths=None, colorbar=False, contours=None, legend_label=None, fill=True, label_inline=None, label_fmt='%1.2f', label_fontsize=9, label_colors='blue', label_inline_spacing=3, colorbar_spacing=None, colorbar_orientation='vertical', colorbar_format=None, **options)\n```\n\n\nFrom my perspective, the problem is solved. I have already done the long tests yesterday, and to be on the safe side, I repeat them now.\n\nIf we are allowed to do cross reviewing, I would give your patch a positive review. Let's see what the fellow developers on sage-devel will tell us...",
     "created_at": "2011-04-07T07:50:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100162",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99996",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2208,15 +2206,15 @@ If we are allowed to do cross reviewing, I would give your patch a positive revi
 
 ---
 
-archive/issue_comments_100163.json:
+archive/issue_comments_099997.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-07T08:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100163",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99997",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2226,15 +2224,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100164.json:
+archive/issue_comments_099998.json:
 ```json
 {
     "body": "Replying to [comment:70 SimonKing]:\n> The arguments in the documentation of groebner_basis are given by:\n> groebner_basis(algorithm, deg_bound, mult_bound='', prot=None, *args=None, **kwds=False)\n\nNO! That's wrong again. It should be \"algorithm='', degbound=None, mult_bound=None, *args, **kwds\"!!\n\nWhat does that come from?? I see:\n\n```\nsage: P.<x,y> = QQ[]\nsage: I = P*[x,y]\nsage: sage.misc.sageinspect.sage_getargspec(I.groebner_basis)\nArgSpec(args=['self', 'algorithm', 'deg_bound', 'mult_bound', 'prot', '*args', '**kwds'], varargs=None, keywords=None, defaults=('', None, None, False))\n```\n\nand that's wrong.\n\nIt seems that the problem lies here:\n\n```\nsage: source = sage.misc.sageinspect.sage_getsource(I.groebner_basis)\nsage: sage.misc.sageinspect._sage_getargspec_cython(source)\n(['self', 'algorithm', 'deg_bound', 'mult_bound', 'prot', '*args', '**kwds'], None, None, ('', None, None, False))\n```\n\nHence, the bug is in _sage_getargspec_cython.\n\nToo bad.\n\nI guess the problem is that _sage_getargspec_cython does not consider `*args` and `**kwds`, since it is not supported by Cython. But `_sage_getargspec_from_ast` can not deal with the problem either.\n\nPotential approach: extend `_sage_getargspec_cython` so that it allows for `*args` and `**kwds` -- who knows, perhaps Cython will supported such arguments anyway, in future?",
     "created_at": "2011-04-07T08:01:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100164",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99998",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2275,15 +2273,15 @@ Potential approach: extend `_sage_getargspec_cython` so that it allows for `*arg
 
 ---
 
-archive/issue_comments_100165.json:
+archive/issue_comments_099999.json:
 ```json
 {
     "body": "I went for a different solution:\n\nIn sage_getargspec, if the object is no method or class but a class instance (which is the case for decorated methods), then the source code is taken, the definition is extracted, and then analyzed with `_sage_getargspec_from_ast`. That approach will both work on Cython and Python code, but to be on the safe side, I use `_sage_getargspec_cython` if an error occurs.\n\nWith that, we have (doctested)\n\n```\nsage: P.<x,y> = QQ[]\nsage: I = P*[x,y]\nsage: sage_getargspec(I.groebner_basis)\nArgSpec(args=['self', 'algorithm', 'deg_bound', 'mult_bound', 'prot'],\nvarargs='args', keywords='kwds', defaults=('', None, None, False))\nsage: cython(\"cpdef int foo(x,y) except -1: return 1\")\nsage: sage.misc.sageinspect.sage_getargspec(foo)\nArgSpec(args=['x', 'y'], varargs=None, keywords=None, defaults=None)\n```\n\n\nAnd the documentation of groebner_basis looks fine.\n\nOf course, due to missing rights, I can not replace your patch version 2, but I have replaced my patch version 1. It contains your additions, though. Hence:\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch 9976_doc_fixes.patch",
     "created_at": "2011-04-07T08:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100165",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-99999",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2315,15 +2313,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100166.json:
+archive/issue_comments_100000.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-07T08:38:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100166",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100000",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2333,15 +2331,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100167.json:
+archive/issue_comments_100001.json:
 ```json
 {
     "body": "hmm, ok, now I don't get the warnings anymore (I had indeed forgotten the doc-patch). But even with your new patch, I still get the wrong argument-string for groebner_basis:\n\n\n```\ngroebner_basis(algorithm, deg_bound, mult_bound='', prot=None, *args=None, **kwds=False)\n```\n\n\nI'm getting a headache :-S",
     "created_at": "2011-04-07T08:58:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100167",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100001",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2359,15 +2357,15 @@ I'm getting a headache :-S
 
 ---
 
-archive/issue_comments_100168.json:
+archive/issue_comments_100002.json:
 ```json
 {
     "body": "Sorry! Skip that; I must have messed up with the patches. After starting over and trying again it worked with groebner_basis.",
     "created_at": "2011-04-07T09:01:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100168",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100002",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2377,15 +2375,15 @@ Sorry! Skip that; I must have messed up with the patches. After starting over an
 
 ---
 
-archive/issue_comments_100169.json:
+archive/issue_comments_100003.json:
 ```json
 {
     "body": "FWIW, all tests pass for me.\n\nThe opinion on sage-devel seems to be that I can review your patch and you can review my patches, if we don't feel biased by the long discussion that we had yesterday.",
     "created_at": "2011-04-07T09:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100169",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100003",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2397,15 +2395,15 @@ The opinion on sage-devel seems to be that I can review your patch and you can r
 
 ---
 
-archive/issue_comments_100170.json:
+archive/issue_comments_100004.json:
 ```json
 {
     "body": "Can you please add doctests for your changes in sage/misc/decorators.py?",
     "created_at": "2011-04-07T09:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100170",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100004",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2415,15 +2413,15 @@ Can you please add doctests for your changes in sage/misc/decorators.py?
 
 ---
 
-archive/issue_comments_100171.json:
+archive/issue_comments_100005.json:
 ```json
 {
     "body": "Ok, sounds fine. I'm trying to review your patch right now.\n\nQuestion: On line 1064 of sage_autodoc.py after your patch, you remove self and cls if they are there. Why do you use that check:\n\n\n```\nif argspec is not None and argspec[0] and argspec[0][0] in ('cls', 'self'): \n```\n\n\ninstead of\n\n\n```\nif isclassinstance(obj) or inspect.isclass(obj): \n```\n\n\nwhich you have included, commented out, on the line above, and which you used on line 819 for something similar?\n\nI'll look into some doctests...",
     "created_at": "2011-04-07T09:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100171",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100005",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2453,15 +2451,15 @@ I'll look into some doctests...
 
 ---
 
-archive/issue_comments_100172.json:
+archive/issue_comments_100006.json:
 ```json
 {
     "body": "Replying to [comment:77 jsrn]:\n> Question: On line 1064 of sage_autodoc.py after your patch, you remove self and cls if they are there. Why do you use that check:\n> \n> {{{\n> if argspec is not None and argspec[0] and argspec[0][0] in ('cls', 'self'): \n> }}}\n> \n> instead of\n> \n> {{{\n> if isclassinstance(obj) or inspect.isclass(obj): \n> }}}\n> \n> which you have included, commented out, on the line above, and which you used on line 819 for something similar?\n\nGood question. I don't know if there was a concrete reason.\n\nI guess I did this because it is in `sage_autodoc.MethodDocumenter.format_args`, hence, we already know that we are dealing with a method. So, I was inclined to simply delete `argspec[0][0]`, but then I thought \"better safe than sorry\".\n\nThe commented-out line could be removed, if you wish.\n\n> I'll look into some doctests...\n\nLooking forward!",
     "created_at": "2011-04-07T10:12:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100172",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100006",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2494,15 +2492,15 @@ Looking forward!
 
 ---
 
-archive/issue_comments_100173.json:
+archive/issue_comments_100007.json:
 ```json
 {
     "body": "Ok, added some doctests and a bit better documentation in sage_wraps. Unfortunately, there was also a bug in suboptions, which I have fixed (I had forgotten to update it like I did options back when _sage_getargspec became _sage_argspec_. I'm not quite sure, but perhaps suboptions never really worked in the documentation; it does now (and plot.contour_plot looks pretty crazy)).\n\nPhew, I'm getting dizzy from pushing and popping patches everytime I need to change something in the bottom patch :-S",
     "created_at": "2011-04-07T10:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100173",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100007",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2514,15 +2512,15 @@ Phew, I'm getting dizzy from pushing and popping patches everytime I need to cha
 
 ---
 
-archive/issue_comments_100174.json:
+archive/issue_comments_100008.json:
 ```json
 {
     "body": "Changing assignee from mvngu to @johanrosenkilde.",
     "created_at": "2011-04-07T10:47:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100174",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100008",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2532,15 +2530,15 @@ Changing assignee from mvngu to @johanrosenkilde.
 
 ---
 
-archive/issue_comments_100175.json:
+archive/issue_comments_100009.json:
 ```json
 {
     "body": "inspect.getargspec is used two places that we haven't touched: plot.plot3d.plot3d and server.notebook.interact. I am wondering whether they should use sageinspect.sage_getargspec instead.\n\nplot3d uses it for getting information on the constructor of child classes of Coordinate; can these ever be Cython classes e.g.? I guess they could be decorated classes, which means that the inspection code in plot3d will fail, as it would see the decorator's constructor.\n\ninteract uses it for the `@`interact decorator to get information on what widgets to present to the user. I guess we have the same again: it might be an already decorated function we `@`interact with, meaning that code will fail. Can one write Cython code interactively in the notebook (I guess not; it would need to be compiled)?\n\nContinuing my review...",
     "created_at": "2011-04-07T10:56:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100175",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100009",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2556,15 +2554,15 @@ Continuing my review...
 
 ---
 
-archive/issue_comments_100176.json:
+archive/issue_comments_100010.json:
 ```json
 {
     "body": "The comment on line 515 of sage.misc.sageinspect._sage_getargspec_cython is out of date as the output of the function is now the named tuple ArgSpec. It should probably contain a reference to the inspect.getargspec of the Python  standard library.",
     "created_at": "2011-04-07T11:01:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100176",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100010",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2574,15 +2572,15 @@ The comment on line 515 of sage.misc.sageinspect._sage_getargspec_cython is out 
 
 ---
 
-archive/issue_comments_100177.json:
+archive/issue_comments_100011.json:
 ```json
 {
     "body": "Replying to [comment:81 jsrn]:\n> The comment on line 515 of sage.misc.sageinspect._sage_getargspec_cython is out of date as the output of the function is now the named tuple ArgSpec. It should probably contain a reference to the inspect.getargspec of the Python  standard library.\nArgh! Sorry -- you've changed it so that one still just returns a tuple :-S",
     "created_at": "2011-04-07T11:03:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100177",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100011",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2594,15 +2592,15 @@ Argh! Sorry -- you've changed it so that one still just returns a tuple :-S
 
 ---
 
-archive/issue_comments_100178.json:
+archive/issue_comments_100012.json:
 ```json
 {
     "body": "In sageinspect.sage_getargspec, you read the contents of _sage_argspec_() (if present) and transform it to a named tuple. But shouldn't it _always_ be a named tuple? I certainly assume so in the options decorators...",
     "created_at": "2011-04-07T11:07:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100178",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100012",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2612,15 +2610,15 @@ In sageinspect.sage_getargspec, you read the contents of _sage_argspec_() (if pr
 
 ---
 
-archive/issue_comments_100179.json:
+archive/issue_comments_100013.json:
 ```json
 {
     "body": "I'm worried about lines 722-725 of sage_getarcspec: that TypeError which you silently catch, is that only raised in case obj._sage_argspec_() does not fit inside an ArgSpec? In that case, as my above comment indicates, I think that should not be caught, but instead go to the user so we can see the bug and fix it. In that case, the try-catch block should be changed back into an hasattr-block so as not to confuse the reader into thinking that we expect the object to have the _sage_argspec_ attribute.",
     "created_at": "2011-04-07T11:19:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100179",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100013",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2630,15 +2628,15 @@ I'm worried about lines 722-725 of sage_getarcspec: that TypeError which you sil
 
 ---
 
-archive/issue_comments_100180.json:
+archive/issue_comments_100014.json:
 ```json
 {
     "body": "Ok, this might be nitpicking, but I'm not completely happy with your hack in lines 731-740: first off, the following function definition, I think, would cause the code to fail:\n\n\n```\ndef monkey2(a={(1+2) : 'wee'}):\n   return a[3]\n```\n\n\nand in general, there's no way to avoid that with your approach, as you can't match nested parentheses with regular expressions.\n\nOk, moving back to realism, is this then really what we want? I mean, if a decorator is so insightful so as to save the wrapped function's src in its own _sage_src_, but does not save its argspec in _sage_argspec_, aren't we asking for errors? (I'm talking in the future and not right now where of course _sage_argspec_ has just been introduced.) And wouldn't it be nice that this \"error\" is quite visible in the documentation so authors and reviewers can find the error? I would be perfectly happy and glad with groebner_basis and similar functions having documentation slightly off until cached_method is changed to write to _sage_argspec_ (which I guess will probably end up being in the same release as this ticket).\n\nOf course, we could also retain this fix until such time as the cached_method is fixed, and ticket #11115 could have the removal of this code in its ticket. Was this what you had in mind all along?",
     "created_at": "2011-04-07T11:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100180",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100014",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2661,15 +2659,15 @@ Of course, we could also retain this fix until such time as the cached_method is
 
 ---
 
-archive/issue_comments_100181.json:
+archive/issue_comments_100015.json:
 ```json
 {
     "body": "Replying to [comment:80 jsrn]:\n> inspect.getargspec is used two places that we haven't touched: plot.plot3d.plot3d and server.notebook.interact. I am wondering whether they should use sageinspect.sage_getargspec instead.\n\nBut I think that would better be on a new ticket.",
     "created_at": "2011-04-07T12:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100181",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100015",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2682,15 +2680,15 @@ But I think that would better be on a new ticket.
 
 ---
 
-archive/issue_comments_100182.json:
+archive/issue_comments_100016.json:
 ```json
 {
     "body": "> Can one write Cython code interactively in the notebook (I guess not; it would need to be compiled)?\n\nOk, duh! I just finished reading your patch and that pretty much answers my question ;-) Pretty cool.\n\nIt's a peculiar thing and a bit too bad that now one can introspect interactive cython objects but not interactive python objects :-)\n\nI'm through reading the code, and apart from my above comments, it looks good. I've also experimented a bit and that all worked. If the doctests all work and the documentation builds, then I'm close to a green light :-)\n\nOh, one more thing: I don't understand the \"except TypeError\" on line 763. When will the exception be thrown and why do you revert to Cython parsing in those cases?",
     "created_at": "2011-04-07T12:05:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100182",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100016",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2708,15 +2706,15 @@ Oh, one more thing: I don't understand the "except TypeError" on line 763. When 
 
 ---
 
-archive/issue_comments_100183.json:
+archive/issue_comments_100017.json:
 ```json
 {
     "body": "Replying to [comment:83 jsrn]:\n> In sageinspect.sage_getargspec, you read the contents of _sage_argspec_() (if present) and transform it to a named tuple. But shouldn't it _always_ be a named tuple? I certainly assume so in the options decorators...\n\nI wouldn't rely on the assumption that it is a named tuple.",
     "created_at": "2011-04-07T12:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100183",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100017",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2729,15 +2727,15 @@ I wouldn't rely on the assumption that it is a named tuple.
 
 ---
 
-archive/issue_comments_100184.json:
+archive/issue_comments_100018.json:
 ```json
 {
     "body": "Replying to [comment:84 jsrn]:\n> I'm worried about lines 722-725 of sage_getarcspec: that TypeError which you silently catch, is that only raised in case obj._sage_argspec_() does not fit inside an ArgSpec?\n\nNo, the type error silently tests whether the object is a class - in which case `obj._sage_argspec_()` would be called without an argument (which gives rise to a type error).\n\n`inspect.ArgSpec(*obj._sage_argspec_())` works regardless whether _sage_getargspec_ returns a tuple, a named tuple or a list.",
     "created_at": "2011-04-07T12:10:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100184",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100018",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2752,15 +2750,15 @@ No, the type error silently tests whether the object is a class - in which case 
 
 ---
 
-archive/issue_comments_100185.json:
+archive/issue_comments_100019.json:
 ```json
 {
     "body": "Replying to [comment:85 jsrn]:\n> Ok, this might be nitpicking, but I'm not completely happy with your hack in lines 731-740: first off, the following function definition, I think, would cause the code to fail:\n> \n> {{{\n> def monkey2(a={(1+2) : 'wee'}):\n>    return a[3]\n> }}}\n\nVoil\u00e0.\n\n\n```\nsage: def monkey2(a={(1+2) : 'wee'}):\n....:        return a[3]\n....: \nsage: sage.misc.sageinspect.sage_getargspec(monkey2)\nArgSpec(args=['a'], varargs=None, keywords=None, defaults=({3: 'wee'},))\n```\n\n\n> and in general, there's no way to avoid that with your approach, as you can't match nested parentheses with regular expressions.\n\nBy the way, it wasn't my trick. I copied it from the corresponding lines of _sage_getargspec_cython.\n \n> Ok, moving back to realism, is this then really what we want? I mean, if a decorator is so insightful so as to save the wrapped function's src in its own _sage_src_, but does not save its argspec in _sage_argspec_, aren't we asking for errors?\n\nIn the near future (#11115) the cached method decorators will have _sage_argspec_.\n\n> Of course, we could also retain this fix until such time as the cached_method is fixed, and ticket #11115 could have the removal of this code in its ticket. Was this what you had in mind all along?\n\nSomehow.",
     "created_at": "2011-04-07T12:13:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100185",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100019",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2800,15 +2798,15 @@ Somehow.
 
 ---
 
-archive/issue_comments_100186.json:
+archive/issue_comments_100020.json:
 ```json
 {
     "body": "Replying to [comment:87 jsrn]:\n> Oh, one more thing: I don't understand the \"except TypeError\" on line 763. When will the exception be thrown and why do you revert to Cython parsing in those cases?\n\nHere is an example where the code is used:\n\n```\nsage: from sage.rings.polynomial.real_roots import bernstein_polynomial_factory_ratlist\nsage: from sage.misc.sageinspect import sage_getargspec\nsage: sage_getargspec(bernstein_polynomial_factory_ratlist.coeffs_bitsize)\nArgSpec(args=['self'], varargs=None, keywords=None, defaults=None)\n```\n\n\nYou can see it when you insert some print statements in the relevant lines of code (that is what I just did). Note that this example is a doc test. I found it when in an early version of my patch the documentation did not build.",
     "created_at": "2011-04-07T12:25:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100186",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100020",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2831,15 +2829,15 @@ You can see it when you insert some print statements in the relevant lines of co
 
 ---
 
-archive/issue_comments_100187.json:
+archive/issue_comments_100021.json:
 ```json
 {
     "body": "Replying to [comment:90 SimonKing]:\n> By the way, it wasn't my trick. I copied it from the corresponding lines of _sage_getargspec_cython.\n\nRegarding the regular expression used: \n\nThe regular expression just extracts the line of code in which the function's arguments are defined (or cdefined, if it is Cython). Then, that definition is turned into a dummy Python function (even if it was Cython code). And _sage_argspec_from_ast knows how to deal with that case.\n\nIn particular, the regular expression is *not* used to extract the arguments directly! That would indeed be difficult.\n\nBy the way, providing typed arguments in Cython works as well:\n\n```\nsage: cython(\"cpdef int foo(bint x, int y=5) except -1: return 1\")\nsage: sage.misc.sageinspect.sage_getargspec(foo)\nArgSpec(args=['x', 'y'], varargs=None, keywords=None, defaults=(5,))\n```\n",
     "created_at": "2011-04-07T12:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100187",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100021",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2865,15 +2863,15 @@ ArgSpec(args=['x', 'y'], varargs=None, keywords=None, defaults=(5,))
 
 ---
 
-archive/issue_comments_100188.json:
+archive/issue_comments_100022.json:
 ```json
 {
     "body": "I seems that the patchbot caught the wrong order in which to apply the patches. Therefore:\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch 9976_doc_fixes.patch",
     "created_at": "2011-04-07T12:35:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100188",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100022",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -2885,15 +2883,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100189.json:
+archive/issue_comments_100023.json:
 ```json
 {
     "body": "> Voil\u00e0.\n> \n> {{{\n> sage: def monkey2(a={(1+2) : 'wee'}):\n> ....:        return a[3]\n> ....: \n> sage: sage.misc.sageinspect.sage_getargspec(monkey2)\n> ArgSpec(args=['a'], varargs=None, keywords=None, defaults=({3: 'wee'},))\n> }}}\n> \n> > and in general, there's no way to avoid that with your approach, as you can't match nested parentheses with regular expressions.\n> \n> By the way, it wasn't my trick. I copied it from the corresponding lines of _sage_getargspec_cython.\n\nI should have been more clear: the above example works with sage_getargspec as it never reaches the statement in question. What I meant was, that some object would reach the definition, then having that _sage_src_ (or something like it) would cause the regular-expression to fail. But now I'm pretty confused: which kind of objects did you envision are classinstances, are callable and have _sage_src_ attribute set? decorators which have not yet been applied to a function?\n\n>  \n> > Ok, moving back to realism, is this then really what we want? I mean, if a decorator is so insightful so as to save the wrapped function's src in its own _sage_src_, but does not save its argspec in _sage_argspec_, aren't we asking for errors?\n> \n> In the near future (#11115) the cached method decorators will have _sage_argspec_.\n> \n> > Of course, we could also retain this fix until such time as the cached_method is fixed, and ticket #11115 could have the removal of this code in its ticket. Was this what you had in mind all along?\n> \n> Somehow.\n\nGood :-)",
     "created_at": "2011-04-07T13:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100189",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100023",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2928,15 +2926,15 @@ Good :-)
 
 ---
 
-archive/issue_comments_100190.json:
+archive/issue_comments_100024.json:
 ```json
 {
     "body": "> You can see it when you insert some print statements in the relevant lines of code (that is what I just did). Note that this example is a doc test. I found it when in an early version of my patch the documentation did not build.\n\nOk, thanks for the example. I think I get it.\n\nI don't really have anything then; everything built fine and dandy and all tests passed. Green light from me.",
     "created_at": "2011-04-07T13:42:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100190",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100024",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -2950,15 +2948,15 @@ I don't really have anything then; everything built fine and dandy and all tests
 
 ---
 
-archive/issue_comments_100191.json:
+archive/issue_comments_100025.json:
 ```json
 {
     "body": "Replying to [comment:94 jsrn]:\n> I should have been more clear: the above example works with sage_getargspec as it never reaches the statement in question. What I meant was, that some object would reach the definition, then having that _sage_src_ (or something like it) would cause the regular-expression to fail.\n\nAgain, the regular expression is not directly extracting the arguments from the source code, but it is only extracting the \"head\" of the definition.\n\nPerhaps the following convinces you: We create an object with a _sage_src_ method returning the source code you suggested.\n\n```\nsage: cython('''\n....: cdef class MyClass:\n....:     def _sage_src_(self):\n....:         return \"def monkey2(a={(1+2) : 'wee'}):\\\\n    return a[3]\"\n....:     def __call__(self, x,y):\n....:         return \"something\"\n....: ''')\nsage: O = MyClass()\nsage: print O._sage_src_()\ndef monkey2(a={(1+2) : 'wee'}):\n    return a[3]\n```\n\n\nLet us test that the relevant part of sage_getargspec is really executed:\n\n```\nsage: callable(O)\nTrue\nsage: import inspect\nsage: hasattr(O,'_sage_argspec_')\nFalse\nsage: inspect.isfunction(O)\nFalse\nsage: inspect.ismethod(O)\nFalse\nsage: sage.misc.sageinspect.isclassinstance(O)\nTrue\nsage: hasattr(O,'_sage_src_')\nTrue\n```\n\n\nNow, we would expect that sage_getargspec relies on the (fake) source code returned by O, not on the actual arguments of its `__call__` method. But then, indeed something goes wrong:\n\n```\nsage: sage.misc.sageinspect.sage_getargspec(O)\nArgSpec(args=['a'], varargs=None, keywords=None, defaults=({None: 'wee'},))\n```\n\n\nWhy is it `{None: 'wee'}`, not `{3: 'wee'}`?\n\nI can not work on it right now, but I think that needs to be addressed. So, needs, work...\n\n> But now I'm pretty confused: which kind of objects did you envision are classinstances, are callable and have _sage_src_ attribute set? decorators which have not yet been applied to a function?\n\nNo. Decorators which *have* been applied to a function. For example (without any patches applied): \n\n```\nsage: P.<x,y> = QQ[]\nsage: I = P*[x,y]\nsage: sage.misc.sageinspect.isclassinstance(I.groebner_basis)\nTrue\nsage: hasattr(I.groebner_basis,'_sage_src_')\nTrue\n```\n\n\nSo, \"needs work\" because of the monkeys.",
     "created_at": "2011-04-07T16:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100191",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100025",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3035,15 +3033,15 @@ So, "needs work" because of the monkeys.
 
 ---
 
-archive/issue_comments_100192.json:
+archive/issue_comments_100026.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-07T16:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100192",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100026",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3053,15 +3051,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100193.json:
+archive/issue_comments_100027.json:
 ```json
 {
     "body": "OK, the monkey fails because the regular expression does not correctly determine where the colong belongs to. One obtains the string `\"def dummy(a={(1+2) :\\n    return\"`, which is then analyzed.\n\nToo bad.\n\nAnother solution should be found. How complicated? Is there a parsing tool that counts opening and closing brackets? Outside strings? By this I mean the following: \n\n```\ndef foo(a=\"):\", b=4):\n    return \"something\"\n```\n",
     "created_at": "2011-04-07T16:23:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100193",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100027",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3081,15 +3079,15 @@ def foo(a="):", b=4):
 
 ---
 
-archive/issue_comments_100194.json:
+archive/issue_comments_100028.json:
 ```json
 {
     "body": "What about using the following little function:\n\n```\ndef grep_parentheses(s):\n    out = []\n    single_quote = False\n    double_quote = False\n    level = 0\n    for c in s:\n        if level>0:\n            out.append(c)\n        if c=='(' and not single_quote and not double_quote:\n            level += 1\n        elif c=='\"':\n            double_quote = not double_quote\n        elif c==\"'\":\n            single_quote = not single_quote\n        elif c==')' and not single_quote and not double_quote:\n            if level == 1:\n                return '('+''.join(out)\n            level -= 1\n    raise SyntaxError, \"The given string does not contain balanced parentheses\"\n```\n\n\nWouldn't it correctly find the first pair of parentheses? And isn't the first pair of parentheses in the definition of a function exacty what we need?\n\nFor the exampe from my previous post, one gets:\n\n```\nsage: code = 'def foo(a=\"):\", b=4):\\n    return'\nsage: grep_parentheses(code)\n'(a=\"):\", b=4)'\n```\n",
     "created_at": "2011-04-07T19:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100194",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100028",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3133,15 +3131,15 @@ sage: grep_parentheses(code)
 
 ---
 
-archive/issue_comments_100195.json:
+archive/issue_comments_100029.json:
 ```json
 {
     "body": "Replying to [comment:98 SimonKing]:\n> What about using the following little function:\n\nNot there yet. It doesn't correctly recognises sillynesses such as\n`code = 'def foo(a=\"\\'):\", b=4):\\n    return'`.",
     "created_at": "2011-04-07T19:31:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100195",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100029",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3155,15 +3153,15 @@ Not there yet. It doesn't correctly recognises sillynesses such as
 
 ---
 
-archive/issue_comments_100196.json:
+archive/issue_comments_100030.json:
 ```json
 {
     "body": "Better:\n\n```\ndef grep_parentheses(s):\n    out = []\n    single_quote = False\n    double_quote = False\n    level = 0\n    for c in s:\n        if level>0:\n            out.append(c)\n        if c=='(' and not single_quote and not double_quote:\n            level += 1\n        elif c=='\"' and not single_quote:\n            double_quote = not double_quote\n        elif c==\"'\" and not double_quote:\n            single_quote = not single_quote\n        elif c==')' and not single_quote and not double_quote:\n            if level == 1:\n                return '('+''.join(out)\n            level -= 1\n    raise SyntaxError, \"The given string does not contain balanced parentheses\"\n```\n",
     "created_at": "2011-04-07T19:37:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100196",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100030",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3196,15 +3194,15 @@ def grep_parentheses(s):
 
 ---
 
-archive/issue_comments_100197.json:
+archive/issue_comments_100031.json:
 ```json
 {
     "body": "Even with the correct extraction of the head of a function's definition, `_sage_getargspec_from_ast` would not correctly parse some more difficult cases.\n\nAt some point, I think we have to accept that `sage_getargspec` can't solve all problems.",
     "created_at": "2011-04-07T20:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100197",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100031",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3216,15 +3214,15 @@ At some point, I think we have to accept that `sage_getargspec` can't solve all 
 
 ---
 
-archive/issue_comments_100198.json:
+archive/issue_comments_100032.json:
 ```json
 {
     "body": "Replying to [comment:101 SimonKing]:\n> Even with the correct extraction of the head of a function's definition, `_sage_getargspec_from_ast` would not correctly parse some more difficult cases.\n> \n> At some point, I think we have to accept that `sage_getargspec` can't solve all problems.\n\nWow, you really worked on this. But the incorrect parsing thing was exactly my problem. And the above point hits exactly: you can have an arbitrary expression in the default argument assignment, so you need to parse an arbitrary Python (Sage) expression for it to correctly determine the ending parenthesis in all cases -- and short of calling the correct method deep inside IPython or something, this should be avoided! As I mentioned in the beginning, this is probably nitpicking and not very realistic, though one __could__ try to catch \"argument weirdness\" and give an appropriate error message.\nPerhaps a wholly different approach in the given case should be considered; I will think about that later today. For now, I have some work to do (which I should have done yesterday ;-) )\n\nCheers",
     "created_at": "2011-04-08T06:27:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100198",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100032",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -3242,15 +3240,15 @@ Cheers
 
 ---
 
-archive/issue_comments_100199.json:
+archive/issue_comments_100033.json:
 ```json
 {
     "body": "I replaced the regular expression by the function that I sketched in my post above.\n\nHere is an example that still fails:\n\n```\nsage: cython_code = [\n... 'cdef class MyClass:',\n... '    def _sage_src_(self):',\n... '        return \"def foo(x, a=\\\\\\')\\\\\\\"\\\\\\', b={(2+1):\\\\\\'bar\\\\\\'}): return\\\\n\"',\n... '    def __call__(self, m,n): return \"something\"']\nsage: cython('\\n'.join(cython_code))\nsage: O = MyClass()\nsage: print O._sage_src_()\ndef foo(x, a=')\"', b={(2+1):'bar'}): return\n```\n\n\nWhen we use the \"fake\" source code to create a Python function, we can correctly analyse its arguments:\n\n```\nsage: def foo(x, a=')\"', b={(2+1):'bar'}): return\n...\nsage: sage.misc.sageinspect.sage_getargspec(foo)\nArgSpec(args=['x', 'a', 'b'], varargs=None, keywords=None, defaults=(')\"', {3: 'bar'}))\n```\n\n\nHowever, the analysis using `_sage_getargspec_from_ast` fails:\n\n```\nsage: sage.misc.sageinspect._sage_getargspec_from_ast(O._sage_src_())\nArgSpec(args=['x', 'a', 'b'], varargs=None, keywords=None, defaults=(')\"', {None: 'bar'}))\n```\n\n\nThis is why I believe that there is a bug in `_sage_getargspec_from_ast`.\n\nThe question is: Shall we start to debug it thoroughly, or shall we be happy that (with the patch that I am going to submit and in which I replace the regular expression by the parentheses finder) it will become less buggy.",
     "created_at": "2011-04-08T08:16:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100199",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100033",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3297,15 +3295,15 @@ The question is: Shall we start to debug it thoroughly, or shall we be happy tha
 
 ---
 
-archive/issue_comments_100200.json:
+archive/issue_comments_100034.json:
 ```json
 {
     "body": "I see that the problem is in sage.misc.sageinspect.SageArgSpecVisitor. It can analyse various types of abstract source trees -- this is implemented in the `visit_*` methods, for `*` in `List`, `Tuple`, `Dict`, `Num`. But `* == BinOp` is missing, and would be needed in the example.\n\nThe generic `visit` method from the `ast` module has a bug, I believe: It returns `None`, and this is the `None` that we see as key of the dictionary that is the default value of b in the example above.\n\nI am now trying to add that, and also for the `UnaryOp`. However, the question really is whether it would be worth the effort...",
     "created_at": "2011-04-08T09:12:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100200",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100034",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3319,15 +3317,15 @@ I am now trying to add that, and also for the `UnaryOp`. However, the question r
 
 ---
 
-archive/issue_comments_100201.json:
+archive/issue_comments_100035.json:
 ```json
 {
     "body": "It seems to work, and is not particularly difficult. So, I'll go for it.",
     "created_at": "2011-04-08T09:30:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100201",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100035",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3337,15 +3335,15 @@ It seems to work, and is not particularly difficult. So, I'll go for it.
 
 ---
 
-archive/issue_comments_100202.json:
+archive/issue_comments_100036.json:
 ```json
 {
     "body": "Cool that you're fixing a bug in SageArgSpecVisitor.\n\nBut just to get straight here, the weird case covered in lines 730-741 is only implemented to fix decorators like cached_method, which doesn't correctly set the inspection attributes (more precisely, sets their _sage_src_ correctly but not _sage_argspec_). But for cached_method, this is going to be fixed in #11115. And for other decorators (if they exist), this should also be fixed. And after these fixes, we will remove the code in lines 730-741? In that case, shouldn't we just keep it simple and say that something like your regular expression takes care of all cases needed, and it will be deleted soon anyway?",
     "created_at": "2011-04-08T10:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100202",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100036",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -3357,15 +3355,15 @@ But just to get straight here, the weird case covered in lines 730-741 is only i
 
 ---
 
-archive/issue_comments_100203.json:
+archive/issue_comments_100037.json:
 ```json
 {
     "body": "Replying to [comment:106 jsrn]:\n> Cool that you're fixing a bug in SageArgSpecVisitor.\n> \n> But just to get straight here, the weird case covered in lines 730-741 is only implemented to fix decorators like cached_method, which doesn't correctly set the inspection attributes (more precisely, sets their _sage_src_ correctly but not _sage_argspec_). But for cached_method, this is going to be fixed in #11115.\n\nRight.\n\n> And for other decorators (if they exist), this should also be fixed. And after these fixes, we will remove the code in lines 730-741?\n\nI don't think so. If I am not mistaken, these lines (and a similar set of lines in a different place) will be used in different cases as well. And since it is not particularly difficult to extend the functionality of the `SageArgSpecVisitor`, I think we should aim for sufficient generality.",
     "created_at": "2011-04-08T10:23:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100203",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100037",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3384,15 +3382,15 @@ I don't think so. If I am not mistaken, these lines (and a similar set of lines 
 
 ---
 
-archive/issue_comments_100204.json:
+archive/issue_comments_100038.json:
 ```json
 {
     "body": "The new patch version improves parsing of arguments a lot.\n\nIt provides a function `sage.misc.sageinspect._grep_first_pair_of_parentheses`, that is used to find the first matching pair of parentheses without being fooled by parentheses inside string variables. In other words, it finds the sub-string of a function definition that provides its arguments.\n\nThen, it also extends the capabilities of the `SageArgSpecVisitor`. This is a parser for the argspec of a function. It used to be able to parse dicts, lists and tuples. It is now also able to parse binary and boolean and unitary operations, and comparisons. Hence, if those type of things appear in the default arguments of a function, `SageArgSpecVisitor` will find them.\n\nThis is relevant for Cython code. From the doctests:\n\n```\nsage: cython('def foo(x, a=\\')\"\\', b={not (2+1==3):\\'bar\\'}): return')\nsage: print sage.misc.sageinspect.sage_getsource(foo)\ndef foo(x, a=')\"', b={not (2+1==3):'bar'}): return\nsage: sage.misc.sageinspect.sage_getargspec(foo)\nArgSpec(args=['x', 'a', 'b'], varargs=None, keywords=None, defaults=(')\"', {False: 'bar'}))\n```\n\n\nBoth lines would simply fail with an error, without the patch. With the old patch, the last line would give a wrong answer.\n\nI did not rebuild the documentation and I did not run long tests, yet. But I think it can be reviewed now.\n\nFor the patchbot:\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch 9976_doc_fixes.patch",
     "created_at": "2011-04-08T10:58:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100204",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100038",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3425,15 +3423,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100205.json:
+archive/issue_comments_100039.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-08T10:58:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100205",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100039",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3443,15 +3441,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100206.json:
+archive/issue_comments_100040.json:
 ```json
 {
     "body": "Here are some comments on your new patch:\n\nYou should add your name to the author list both in doc/common/sage_autodoc.py and sage/misc/decorators.py.\n\nYou demonstrate various underscore methods in your examples. While such methods should be documented, such that a developer can easily find out what needs to be implemented for obtaining a specific functionality, I think it would be better to use the \"official\" methods that use the underscore methods, such as sage.misc.sageinspect.sage_getsource or ...sage_getargspec. Simply mark them as indirect doctest.\n\nI suggest to edit the new examples, so that the comments appear as proper text. It should also mention the ticket number. Note that you can use unformatted text by using double back ticks, and also note the spelling correction below.Hence,\n\n```\n    EXAMPLES:\n\n    Demonstrate that ``_sage_src_`` and ``__doc__`` are retained from the\n    decorated function (see trac ticket #9976)::\n\n        sage: def square(f):\n        ...     @sage_wraps(f)\n        ...     def new_f(x):\n        ...         return f(x)*f(x)\n        ...     return new_f\n```\n\ninstead of\n\n```\n    EXAMPLES::\n\n        # Demonstrate the _sage_src_ and __doc__ are retained from the\n        # decorated function\n        sage: def square(f):\n        ...     @sage_wraps(f)\n        ...     def new_f(x):\n        ...         return f(x)*f(x)\n        ...     return new_f\n```\n",
     "created_at": "2011-04-08T11:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100206",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100040",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3495,15 +3493,15 @@ instead of
 
 ---
 
-archive/issue_comments_100207.json:
+archive/issue_comments_100041.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-08T11:21:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100207",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100041",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3513,15 +3511,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100208.json:
+archive/issue_comments_100042.json:
 ```json
 {
     "body": "Replying to [comment:109 SimonKing]:\n> Here are some comments on your new patch:\n\nThank you -- good comments; I'm still a rookie so thanks for the patience ;-)\n\n> \n> You should add your name to the author list both in doc/common/sage_autodoc.py and sage/misc/decorators.py.\n\nThere were no authors' list in sage_autodoc, so I made one. Documentation is not created for sage_autodoc.py (heh, recursive documentation), so I guess that was the reason. Anyway, I'm always in doubt as to when a change constitutes something that should be on the authors' list. In time those lists will be terribly bloated, I guess :-S\n\n> \n> You demonstrate various underscore methods in your examples. While such methods should be documented, such that a developer can easily find out what needs to be implemented for obtaining a specific functionality, I think it would be better to use the \"official\" methods that use the underscore methods, such as sage.misc.sageinspect.sage_getsource or ...sage_getargspec. Simply mark them as indirect doctest.\n\nI completely agree! I didn't know \"#indirect doctest\" but as far as I could gather, it's used when doctesting a method/function without actually calling that method/function. Since that not what we're doing here, is it really necessary?\n\n> \n> I suggest to edit the new examples, so that the comments appear as proper text. It should also mention the ticket number. Note that you can use unformatted text by using double back ticks, and also note the spelling correction below.Hence,\n> {{{\n>     EXAMPLES:\n> \n>     Demonstrate that ``_sage_src_`` and ``__doc__`` are retained from the\n>     decorated function (see trac ticket #9976)::\n> \n>         sage: def square(f):\n>         ...     `@`sage_wraps(f)\n>         ...     def new_f(x):\n>         ...         return f(x)*f(x)\n>         ...     return new_f\n> }}}\n> instead of\n> {{{\n>     EXAMPLES::\n> \n>         # Demonstrate the _sage_src_ and __doc__ are retained from the\n>         # decorated function\n>         sage: def square(f):\n>         ...     `@`sage_wraps(f)\n>         ...     def new_f(x):\n>         ...         return f(x)*f(x)\n>         ...     return new_f\n> }}}\n> \n\nYup, done (I think). It seems that decorators.py does not appear in the reference manual; shouldn't that be changed (other ticket)? Do you know how?",
     "created_at": "2011-04-08T12:01:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100208",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100042",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -3574,15 +3572,15 @@ Yup, done (I think). It seems that decorators.py does not appear in the referenc
 
 ---
 
-archive/issue_comments_100209.json:
+archive/issue_comments_100043.json:
 ```json
 {
     "body": "Replying to [comment:108 SimonKing]:\n> The new patch version improves parsing of arguments a lot.\n> \n> It provides a function `sage.misc.sageinspect._grep_first_pair_of_parentheses`, that is used to find the first matching pair of parentheses without being fooled by parentheses inside string variables. In other words, it finds the sub-string of a function definition that provides its arguments.\n\nI think there is still problems because you don't consider escaped quotes. For example, putting a single escaped ' in a string argument causes an error:\n\n\n```\nsage: sage: cython('def foo(x, a=\\'\\\\\\')\"\\', b={not (2+1==3):\\'bar\\'}): return')\nsage: sage: print sage.misc.sageinspect.sage_getsource(foo)\ndef foo(x, a='\\')\"', b={not (2+1==3):'bar'}): return\n\nsage: sage: sage.misc.sageinspect.sage_getargspec(foo)\nValueError\n...\nValueError: Could not parse cython argspec\n```\n\n\nI wish there was some other way than (re)implementing an almost full expression parser for this :-S \n\n> I don't think so. If I am not mistaken, these lines (and a similar set of lines in a different  place) will be used in different cases as well. And since it is not particularly difficult to extend the functionality of the SageArgSpecVisitor, I think we should aim for sufficient generality. \n\nWhen compiling all documentation, the _grep-function is only called from sage_getarcspec on the CachedMethod or RequireField decorators. After these are (eventually) patched, I think it would be a good idea if sage_getargspec threw an error in this case: for then a code author would know he did something which is essentially wrong. It seems you are right that the grep-function is called from the _cython-function on several methods (apparently, Python methods within Cython source files, but I am not sure).\n\nBtw, deleting the folder devel/sage/doc/output and running {{./sage -docbuild all html}} seems to rebuild the entire documentation from scratch. This produces a lot of warnings! They are all like this:\n\n\n```\n/home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/functions/transcendental.py:docstring of sage.functions.transcendental.Function_zetaderiv:18: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\n\n\nDid I do something wrong?",
     "created_at": "2011-04-08T12:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100209",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100043",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -3626,15 +3624,15 @@ Did I do something wrong?
 
 ---
 
-archive/issue_comments_100210.json:
+archive/issue_comments_100044.json:
 ```json
 {
     "body": "Replying to [comment:110 jsrn]:\n> ...\n> > You demonstrate various underscore methods in your examples. While such methods should be documented, such that a developer can easily find out what needs to be implemented for obtaining a specific functionality, I think it would be better to use the \"official\" methods that use the underscore methods, such as sage.misc.sageinspect.sage_getsource or ...sage_getargspec. Simply mark them as indirect doctest.\n> \n> I completely agree! I didn't know \"#indirect doctest\" but as far as I could gather, it's used when doctesting a method/function without actually calling that method/function. Since that not what we're doing here, is it really necessary?\n\n\"#indirect doctest\" makes the sage coverage script happy. Namely, if you do \"sage -coverage\" on some file, it will complain if any function or method appears to not being tested in its doc string. Hence, it will complain if in the `__str__` method of `Foo` you just have `sage: print Foo`, because there is no `__str__` visible. But when you do `sage: print Foo  # indirect doctest`, then you assert that the invisible method *is* actually tested.\n\nNote that `#indirect doctest` does *not* influence how the doctest is executed. It really is just for the coverage script.\n\nAnd yes, I do think that having an indirect test is necessary, since what we want is to enable `sage_getsource` and `sage_getargspec` -- there is no point in demonstrating that a certain object has an attribute `_sage_doc_`, because that is not what is supposed to be called by the user. Mind that the tests in the documentation are, at the same time, examples.\n\n> Yup, done (I think). It seems that decorators.py does not appear in the reference manual; shouldn't that be changed (other ticket)? Do you know how?\n\nProbably it should be a different ticket.\n\nHow to add it:\n\nThere are some hand-written `.rst` files in doc/en/reference/. Probably you want to edit `misc.rst`, and insert the line\n\n```\n   sage/misc/decorators\n```\n\nright before `sage/misc/cachefunc`. I guess that would be a good place, because `cachefunc` provides decorators (even though they do not inherit from the stuff in `decorators.py`). \n\nAnd that should already be it - after `sage -docbuild reference html`, it should be there.",
     "created_at": "2011-04-08T13:08:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100210",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100044",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3670,15 +3668,15 @@ And that should already be it - after `sage -docbuild reference html`, it should
 
 ---
 
-archive/issue_comments_100211.json:
+archive/issue_comments_100045.json:
 ```json
 {
     "body": "Replying to [comment:111 jsrn]:\n> I think there is still problems because you don't consider escaped quotes.\n\nRight. I have to think about that.\n\n> I wish there was some other way than (re)implementing an almost full expression parser for this :-S \n\nIndeed.\n\n> When compiling all documentation, the _grep-function is only called from sage_getarcspec on the CachedMethod or RequireField decorators. After these are (eventually) patched, I think it would be a good idea if sage_getargspec threw an error in this case: for then a code author would know he did something which is essentially wrong.\n\nI don't think so.\n\nIn some cases, `sage_getargspec` has to rely on source code. Here I am not talking about decorators and other fancy stuff (these can have `_sage_argspec_`), but about ordinary functions and methods. Also I am not talking about the output of some obscure `_sage_src_` method, but about actual source files.\n\nHence, `sage_getargspec` should be able to correctly parse anything that is valid code in Python or Cython. \n\n> Btw, deleting the folder devel/sage/doc/output and running {{./sage -docbuild all html}} seems to rebuild the entire documentation from scratch.\n\nBut \"from scratch\", it will be only for those parts that were recently rebuilt. So, when you want to re-build documentation of a file, you should touch it, do `sage -b`, and then `sage -docbuild ...`.\n\n> This produces a lot of warnings! They are all like this:\n> \n> {{{\n> /home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/functions/transcendental.py:docstring of sage.functions.transcendental.Function_zetaderiv:18: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n> }}}\n> \n> Did I do something wrong?\n\nI don't think so.\n\nAt `sage/functions/transcendental.py` in line 166, I see that the doc string starts with \"\"\", not with r\"\"\". Hence, it is not a raw string. But then, in the latex example in line 183, the \"\\right\" will be interpreted as a line break \"\\r\" followed by \"ight\". You can see this if you do\n\n```\nsage: sage.functions.transcendental.Function_zetaderiv?\n```\n\n\nSo, it is neither your nor my fault. But in a few seconds, I will upload a new version of my doc fixes patch.",
     "created_at": "2011-04-08T13:30:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100211",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100045",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3726,15 +3724,15 @@ So, it is neither your nor my fault. But in a few seconds, I will upload a new v
 
 ---
 
-archive/issue_comments_100212.json:
+archive/issue_comments_100046.json:
 ```json
 {
     "body": "Patch updated.\n\nFor the patchbot:\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch 9976_doc_fixes.patch",
     "created_at": "2011-04-08T13:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100212",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100046",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3748,15 +3746,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100213.json:
+archive/issue_comments_100047.json:
 ```json
 {
     "body": "My patch is updated, with a new doc test (demonstrating that your example with escaped quotes works):\n\n```\n        sage: cython('def foo(x, a=\\'\\\\\\')\"\\', b={not (2+1==3):\\'bar\\'}): return')\n        sage: print sage.misc.sageinspect.sage_getsource(foo)\n        def foo(x, a='\\')\"', b={not (2+1==3):'bar'}): return\n        <BLANKLINE>\n        sage: sage.misc.sageinspect.sage_getargspec(foo)\n        ArgSpec(args=['x', 'a', 'b'], varargs=None, keywords=None, defaults=('\\')\"', {False: 'bar'}))\n```\n",
     "created_at": "2011-04-08T13:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100213",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100047",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3776,15 +3774,15 @@ My patch is updated, with a new doc test (demonstrating that your example with e
 
 ---
 
-archive/issue_comments_100214.json:
+archive/issue_comments_100048.json:
 ```json
 {
     "body": "> I don't think so.\n> \n> In some cases, `sage_getargspec` has to rely on source code. Here I am not talking about decorators and other fancy stuff (these can have `_sage_argspec_`), but about ordinary functions and methods. Also I am not talking about the output of some obscure `_sage_src_` method, but about actual source files.\n> \n> Hence, `sage_getargspec` should be able to correctly parse anything that is valid code in Python or Cython. \n\nI think this leads to a long religious discussion on when to stop servicing and when to start putting restrictions on the freedom of writing code. One can do pretty sick things in Python, and there are both arguments for and against allowing/encouraging doing these things in a large system like Sage; and one of the \"mechanisms\" of controlling/limiting this could be via service functions like sage_getargspec. BUT: I definitely agree that the precedence already in sage_getargspec is to be as open-minded as possible, so your code and bugfix is an enhancement on the current trend. (one could always this religious discussion to sage-devel, probably leading to a long, pointless discussion with little outcome ;-) )\n\n> \n> > Btw, deleting the folder devel/sage/doc/output and running {{./sage -docbuild all html}} seems to rebuild the entire documentation from scratch.\n> \n> But \"from scratch\", it will be only for those parts that were recently rebuilt. So, when you want to re-build documentation of a file, you should touch it, do `sage -b`, and then `sage -docbuild ...`.\n\nI thought so too, but it doesn't seem like that. Possibly, like Make, the docbuilder will look for whether the source files changed OR the result files are gone. If either is true, it rebuilds. If trying to rebuild just one or few file's documentation, it is a lot easier just touching the files. \n\n> I don't think so.\n> \n> At `sage/functions/transcendental.py` in line 166, I see that the doc string starts with \"\"\", not with r\"\"\". Hence, it is not a raw string. But then, in the latex example in line 183, the \"\\right\" will be interpreted as a line break \"\\r\" followed by \"ight\". You can see this if you do\n> {{{\n> sage: sage.functions.transcendental.Function_zetaderiv?\n> }}}\n> \n> So, it is neither your nor my fault. But in a few seconds, I will upload a new version of my doc fixes patch.\n\nCool. Docbuilding....",
     "created_at": "2011-04-08T14:03:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100214",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100048",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -3818,15 +3816,15 @@ Cool. Docbuilding....
 
 ---
 
-archive/issue_comments_100215.json:
+archive/issue_comments_100049.json:
 ```json
 {
     "body": "Replying to [comment:112 SimonKing]\n> \"#indirect doctest\" makes the sage coverage script happy. Namely, if you do \"sage -coverage\" on some file, it will complain if any function or method appears to not being tested in its doc string. Hence, it will complain if in the `__str__` method of `Foo` you just have `sage: print Foo`, because there is no `__str__` visible. But when you do `sage: print Foo  # indirect doctest`, then you assert that the invisible method *is* actually tested.\n> \n> Note that `#indirect doctest` does *not* influence how the doctest is executed. It really is just for the coverage script.\n> \n> And yes, I do think that having an indirect test is necessary, since what we want is to enable `sage_getsource` and `sage_getargspec` -- there is no point in demonstrating that a certain object has an attribute `_sage_doc_`, because that is not what is supposed to be called by the user. Mind that the tests in the documentation are, at the same time, examples.\n\nOk, I get that. But as opposed to your __str__ example, the doc-examples/tests of decorators.py are on class documentation or in the sage_wraps function. Therefore, the coverage script will see that the class/function in question are in the test; it doesn't know my intention to test the _sage_src_ or _sage_argspec_ fields anyway.\n\n\n> \n> > Yup, done (I think). It seems that decorators.py does not appear in the reference manual; shouldn't that be changed (other ticket)? Do you know how?\n> \n> Probably it should be a different ticket.\n> \n> How to add it:\n> \n> There are some hand-written `.rst` files in doc/en/reference/. Probably you want to edit `misc.rst`, and insert the line\n> {{{\n>    sage/misc/decorators\n> }}}\n> right before `sage/misc/cachefunc`. I guess that would be a good place, because `cachefunc` provides decorators (even though they do not inherit from the stuff in `decorators.py`). \n> \n> And that should already be it - after `sage -docbuild reference html`, it should be there.\n\nThanks. I'll possibly look into this.",
     "created_at": "2011-04-08T14:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100215",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100049",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -3861,15 +3859,15 @@ Thanks. I'll possibly look into this.
 
 ---
 
-archive/issue_comments_100216.json:
+archive/issue_comments_100050.json:
 ```json
 {
     "body": "I still seem to get some warnings when compiling the documentation; as before, they do not seem to be because of either of our patches. I couldn't figure out what was wrong with the first (not a very helpful error message). These are the warnings I get:\n\n\n```\n/home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/categories/category_types.py:docstring of sage.categories.category_types:2: (ERROR/3) Unexpected indentation.\n<autodoc>:0: (ERROR/3) Unexpected indentation.\n/home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/combinat/sf/jack.py:docstring of sage.combinat.sf.jack.ZonalPolynomials:3: (WARNING/2) Literal block expected; none found.\n/home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/functions/hyperbolic.py:docstring of sage.functions.hyperbolic.Function_csch:16: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/modular/modform/submodule.py:docstring of sage.modular.modform.submodule:2: (ERROR/3) Unexpected indentation.\n/home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/schemes/generic/morphism.py:docstring of sage.schemes.generic.morphism.SchemeMorphism_structure_map:4: (WARNING/2) Bullet list ends without a blank line; unexpected unindent.\n/home/jsrn/sage-dev/devel/sagenb/sagenb/notebook/interact.py:docstring of sagenb.notebook.interact.ColorInput:4: (ERROR/3) Unexpected indentation.\n/home/jsrn/sage-dev/devel/sagenb/sagenb/notebook/interact.py:docstring of sagenb.notebook.interact.input_grid:26: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n/home/jsrn/sage-dev/devel/sagenb/sagenb/notebook/interact.py:docstring of sagenb.notebook.interact.input_grid:28: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n```\n",
     "created_at": "2011-04-09T08:54:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100216",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100050",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -3893,15 +3891,15 @@ I still seem to get some warnings when compiling the documentation; as before, t
 
 ---
 
-archive/issue_comments_100217.json:
+archive/issue_comments_100051.json:
 ```json
 {
     "body": "Replying to [comment:118 jsrn]:\n> {{{\n> /home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/categories/category_types.py:docstring of sage.categories.category_types:2: (ERROR/3) Unexpected indentation.\n> <autodoc>:0: (ERROR/3) Unexpected indentation.\n\nMysterious indeed.\n\n> /home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/combinat/sf/jack.py:docstring of sage.combinat.sf.jack.ZonalPolynomials:3: (WARNING/2) Literal block expected; none found.\n> ...\n> /home/jsrn/sage-dev/devel/sagenb/sagenb/notebook/interact.py:docstring of sagenb.notebook.interact.input_grid:28: (WARNING/2) Block quote ends without a blank line; unexpected unindent.\n\nThat looks like the doc bugs that I squashed in my second patch.\n\nHowever, I think the important question is: Do we get these warnings without our patches? If we do then it would be ok to accept these warnings. If we don't then it could also be that without our patches the documentation was based on the wrong doc string (e.g., if a method is wrapped by some decorator). But keep in mind that it is not the purpose of this ticket to clean up all doc strings!\n\nBy the way, I slightly lost track: Did you provide indirect doctests for your patch, exhibiting the way `_sage_argspec` is supposed to be used? It would also be possible that I do, by a reviewer patch.\n\nConcerning review: It seems that [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/dd7de9c504c13164) gave us permission that I review your patch and you review mine - provided that we honestly think we are non-biased with respect to the other person's patch.",
     "created_at": "2011-04-09T09:22:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100217",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100051",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3928,15 +3926,15 @@ Concerning review: It seems that [sage-devel](http://groups.google.com/group/sag
 
 ---
 
-archive/issue_comments_100218.json:
+archive/issue_comments_100052.json:
 ```json
 {
     "body": "Replying to [comment:118 jsrn]:\n> I still seem to get some warnings when compiling the documentation; as before, they do not seem to be because of either of our patches. I couldn't figure out what was wrong with the first (not a very helpful error message). These are the warnings I get:\n\nConcerning two of the warnings: \n\n> /home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/categories/category_types.py:docstring of sage.categories.category_types:2: (ERROR/3) Unexpected indentation.\n\nSee [here](http://sagemath.org/doc/reference/sage/categories/category_types.html#sage.categories.category_types.ChainComplexes) for a broken doc string in that module.\n\n> /home/jsrn/sage-dev/local/lib/python2.6/site-packages/sage/combinat/sf/jack.py:docstring of sage.combinat.sf.jack.ZonalPolynomials:3: (WARNING/2) Literal block expected; none found.\n\nSee [here](http://sagemath.org/doc/reference/sage/combinat/sf/jack.html#sage.combinat.sf.jack.JackPolynomials_p.scalar_jack_basis) for some broken doc string in that module. \n\nSo, it could really be that it has nothing to do with our patches.",
     "created_at": "2011-04-09T09:30:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100218",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100052",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -3959,15 +3957,15 @@ So, it could really be that it has nothing to do with our patches.
 
 ---
 
-archive/issue_comments_100219.json:
+archive/issue_comments_100053.json:
 ```json
 {
     "body": "Replying to [comment:120 SimonKing]:\n> So, it could really be that it has nothing to do with our patches.\n\nI'm afraid it must have (though I don't know how): I popped all three patches, rebuilt (./sage -b), deleted doc/output, and rebuilt documentation (./sage -docbuild reference html). No warnings. Then a reapplied all three patches, rebuilt, delete doc/output, rebuilt documentation: all the mentioned warnings \n:-(((\n\n> By the way, I slightly lost track: Did you provide indirect doctests for your patch, exhibiting the way _sage_argspec is supposed to be used? It would also be possible that I do, by a reviewer patch.\nYes I changed the old doctests to use sage_getargspec, though I did not flag them as #indirect doctest. As I wrote in comment 117, I don't understand why that flag needs to be used. \n\n> Concerning review: It seems that  sage-devel gave us permission that I review your patch and you review mine - provided that we honestly think we are non-biased with respect to the other person's patch. \nYes, I saw that and I agree. I think we have been appropriately critical and meticulous about each other's patches ;-)",
     "created_at": "2011-04-11T09:05:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100219",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100053",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -3987,15 +3985,15 @@ Yes, I saw that and I agree. I think we have been appropriately critical and met
 
 ---
 
-archive/issue_comments_100220.json:
+archive/issue_comments_100054.json:
 ```json
 {
     "body": "I did several corrections in sage/categories/category_types.py: Some wrong indentations, some non-raw strings containing backslashes, etc. It seems that at least one broken documentation, namely of `AbelianCategory`, is inherited from sage/categories/category.py.\n\nIn sage/categories/category.py, I found a huge number of mistakes in the doc strings. Its a mess. I am trying to clean that now.",
     "created_at": "2011-04-13T14:44:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100220",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100054",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4007,15 +4005,15 @@ In sage/categories/category.py, I found a huge number of mistakes in the doc str
 
 ---
 
-archive/issue_comments_100221.json:
+archive/issue_comments_100055.json:
 ```json
 {
     "body": "sage/functions/hyperbolic.py: Here I found another non-raw string containing backslashes.\n\nsage/modular/modform/submodule.py: That was caused by\n\n```\nEXAMPLE:\n    sage: ...\n```\n\nversus\n\n```\nEXAMPLE::\n\n    sage: ...\n```\n\n\nsage/schemes/generic/morphism.py was easy to fix.\n\nsagenb/notebook/interact.py: Again some non-raw strings, and `:` versus `::`.\n\nI am now updating my patch doc_fixes patch.",
     "created_at": "2011-04-13T15:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100221",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100055",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4047,15 +4045,15 @@ I am now updating my patch doc_fixes patch.
 
 ---
 
-archive/issue_comments_100222.json:
+archive/issue_comments_100056.json:
 ```json
 {
     "body": "Attachment [9976_notebook_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9976/9976_notebook_doc_fixes.patch) by @simon-king-jena created at 2011-04-13 15:21:07\n\nApply to devel/sagenb repository: Fix some syntax errors in interact documentation",
     "created_at": "2011-04-13T15:21:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100222",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100056",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4067,15 +4065,15 @@ Apply to devel/sagenb repository: Fix some syntax errors in interact documentati
 
 ---
 
-archive/issue_comments_100223.json:
+archive/issue_comments_100057.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-13T15:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100223",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100057",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4085,15 +4083,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100224.json:
+archive/issue_comments_100058.json:
 ```json
 {
     "body": "I updated my patch.\n\nIn fact I had to add another patch: It belongs to the devel/sagenb repository. So, be careful where you apply it!\n\nConcerning the indirect doctests: Meanhile I think that you are right. There is no class method `_sage_argspec_`, and hence no documentation for it. So, an indirect test makes no sense.\n\nI am now running long doctests (based on sage-4.7.alpha5). If they pass then I can give your patch a positive review. I hope that you will cross-verify the syntax fixes in the documentation.\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch 9976_doc_fixes.patch 9976_notebook_doc_fixes.patch",
     "created_at": "2011-04-13T15:25:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100224",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100058",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4111,15 +4109,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100225.json:
+archive/issue_comments_100059.json:
 ```json
 {
     "body": "The long tests pass all for me. The patch [attachment: trac_9976_decorated_generic_sigs_alternative.patch] looks fine to me, and it does what it claims. So, I give it a positive review.\n\nI hope you (or someone else) can say the same about my patches, after the recent documentation fixes.",
     "created_at": "2011-04-13T17:15:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100225",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100059",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4131,15 +4129,15 @@ I hope you (or someone else) can say the same about my patches, after the recent
 
 ---
 
-archive/issue_comments_100226.json:
+archive/issue_comments_100060.json:
 ```json
 {
     "body": "There is a lot on this ticket, and I haven't read most of it.  But here is one comment nonetheless: suppose I have this in a Sage library file:\n\n```\nfrom sage.misc.cachefunc import CachedFunction\n\ndef test1():\n    \"This is a docstring for test1\"\n    pass\n\ntest2 = CachedFunction(test1)\n\n@CachedFunction\ndef test3():\n    \"This is a docstring for test3\"\n    pass\n```\n\nThen if I import everything from this file, from the \"sage:\" prompt, I get the right docstrings for the right functions.  Great!  On the other hand, the function test3 is completely missing from the reference manual (as is test2, but I don't consider that as important).  This means that if you have a really important function that you want to cache, it seems as though you need to attach two names to it, a non-cached version for the reference manual and then a cached version for actual use.  Is that right?  Is there any way around it?  Or am I doing something wrong?",
     "created_at": "2011-04-13T20:54:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100226",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100060",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4166,15 +4164,15 @@ Then if I import everything from this file, from the "sage:" prompt, I get the r
 
 ---
 
-archive/issue_comments_100227.json:
+archive/issue_comments_100061.json:
 ```json
 {
     "body": "Or is this issue with cached functions dealt with by #11115?",
     "created_at": "2011-04-13T21:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100227",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100061",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4184,15 +4182,15 @@ Or is this issue with cached functions dealt with by #11115?
 
 ---
 
-archive/issue_comments_100228.json:
+archive/issue_comments_100062.json:
 ```json
 {
     "body": "Replying to [comment:127 jhpalmieri]:\n> There is a lot on this ticket, and I haven't read most of it.  But here is one comment nonetheless: suppose I have this in a Sage library file:\n> {{{\n> from sage.misc.cachefunc import CachedFunction\n> \n> def test1():\n>     \"This is a docstring for test1\"\n>     pass\n> \n> test2 = CachedFunction(test1)\n> \n> `@`CachedFunction\n> def test3():\n>     \"This is a docstring for test3\"\n>     pass\n> }}}\n> Then if I import everything from this file, from the \"sage:\" prompt, I get the right docstrings for the right functions.  Great!  On the other hand, the function test3 is completely missing from the reference manual\n\nWhy do you think test3 is missing? The cached version of test3 has the name test3, and when you do \"from mymodule import test3\" then you are supposed to get the cached version of test 3, with the documentation saying \"This is a docstring for test3\". If I am not mistaken, this was the case even without our patches.\n\nConcrete example, *without* our patches:\n\n```\nsage: sage.databases.cunningham_tables.cunningham_prime_factors?\nType:           CachedFunction\nBase Class:     <class 'sage.misc.cachefunc.CachedFunction'>\nString Form:    Cached version of <function cunningham_prime_factors at 0x38e62a\n8>\nNamespace:      Interactive\nFile:           /mnt/local/king/SAGE/sage-4.6.2/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\nDefinition:     sage.databases.cunningham_tables.cunningham_prime_factors(self, *args, **kwds)\nDocstring:\n       List of all the prime numbers occuring in the so called Cunningham\n       table. They occur in the factorization of numbers of type b^n+1 or\n       b^n-1 with b in {2,3,5,6,7,10,11,12}. Data from\n       http://cage.ugent.be/~jdemeyer/cunningham/\n\nClass Docstring:\n       Create a cached version of a function, which only recomputes values\n       it hasn't already computed. Synonyme: ``cached_function``\n...\n```\n\n\nIn other words, it does show you the documentation of the wrapped function. In addition, it also shows you the documentation of `CachedFunction`. \n\nIt seems that the Cunningham database was not included in the reference manual, but it *should* show the documentation of the wrapped function, not of the wrapper class.\n\nHowever, as you see, without our patches you will not get the correct argspec: It says \"sage.databases.cunningham_tables.cunningham_prime_factors(self, *args, **kwds)\", but should say \"sage.databases.cunningham_tables.cunningham_prime_factors()\". It also tells you that you find its definition in sage/misc/cachefunc.py, which is of course wrong.\n\nThe main point of this ticket is to improve the issue with argspec. Documentation as such worked before.",
     "created_at": "2011-04-13T21:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100228",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100062",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4252,15 +4250,15 @@ The main point of this ticket is to improve the issue with argspec. Documentatio
 
 ---
 
-archive/issue_comments_100229.json:
+archive/issue_comments_100063.json:
 ```json
 {
     "body": "Replying to [comment:129 SimonKing]:\n> Replying to [comment:127 jhpalmieri]:\n\n> > Then if I import everything from this file, from the \"sage:\" prompt, I get the right docstrings for the right functions.  Great!  On the other hand, the function test3 is completely missing from the reference manual\n> \n> Why do you think test3 is missing? \n\nIt's missing **from the reference manual**: I put this code at the bottom of sage/misc/latex.py (just to pick a file at random from among those included in the reference manual), ran \"sage -b\", and rebuilt the documentation.  The manual had test1 in it, but not test3.  I feel like this is a serious problem with decorated functions (or at least cached functions) and the reference manual: we shouldn't have to sacrifice quality and completeness of documentation to get better performance by caching things.",
     "created_at": "2011-04-13T21:31:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100229",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100063",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4277,15 +4275,15 @@ It's missing **from the reference manual**: I put this code at the bottom of sag
 
 ---
 
-archive/issue_comments_100230.json:
+archive/issue_comments_100064.json:
 ```json
 {
     "body": "Replying to [comment:128 jhpalmieri]:\n> Or is this issue with cached functions dealt with by #11115?\n\nAs I have demonstrated in my preceding post, documentation has not been an issue for cached functions or methods. The correct format of the argspec used to be a problem, which is addressed here.\n\nNote the following issue, without our patches:\n\n```\nsage: edit(sage.databases.cunningham_tables.cunningham_prime_factors,'vim')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (53, 0))\n...\nTypeError: arg is not a module, class, method, function, traceback, frame, or code object\n```\n\n\nI am not sure whether that problem is solved by the tickets from here, or whether you need my patch from #11115 in addition. It definitely works when you have *both* patches. I am now testing if the patches from here would suffice, but this will take a while.",
     "created_at": "2011-04-13T21:34:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100230",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100064",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4312,15 +4310,15 @@ I am not sure whether that problem is solved by the tickets from here, or whethe
 
 ---
 
-archive/issue_comments_100231.json:
+archive/issue_comments_100065.json:
 ```json
 {
     "body": "Replying to [comment:130 jhpalmieri]:\n> It's missing **from the reference manual**: I put this code at the bottom of sage/misc/latex.py (just to pick a file at random from among those included in the reference manual), ran \"sage -b\", and rebuilt the documentation.  The manual had test1 in it, but not test3. \n\nReally? That's odd.\n\n> I feel like this is a serious problem with decorated functions (or at least cached functions) and the reference manual: we shouldn't have to sacrifice quality and completeness of documentation to get better performance by caching things.\n\nPerhaps you confuse the purpose of the two tickets: Here, we have the purpose of getting the documentation of cached methods right, which also involves to broaden the capability of sage.misc.sageinspect -- it is not about performance at all. #11115 is about performance, but it should certainly not affect the documentation.\n\nSo, if a cached function really is not included into the references then that is a bug and should be addressed here. I'll be able to do some tests tomorrow.",
     "created_at": "2011-04-13T21:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100231",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100065",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4339,15 +4337,15 @@ So, if a cached function really is not included into the references then that is
 
 ---
 
-archive/issue_comments_100232.json:
+archive/issue_comments_100066.json:
 ```json
 {
     "body": "Replying to [comment:131 SimonKing]:\n> Replying to [comment:128 jhpalmieri]:\n> > Or is this issue with cached functions dealt with by #11115?\n> \n> As I have demonstrated in my preceding post, documentation has not been an issue for cached functions or methods. \n\nI think you and I are using the word \"documentation\" differently.  I would say that \"introspection\" has not been an issue for cached functions or methods, at least if I understand you correctly.  But the autodoc feature of the Sphinx-built reference manual doesn't seem to work properly with cached functions; I don't think it ever has.  So there is an issue.  Maybe it doesn't belong on this ticket, but I was hoping you were dealing with it here.  If it doesn't belong here, do you have any ideas how to fix it?\n\n> Perhaps you confuse the purpose of the two tickets: Here, we have the purpose of getting the documentation of cached methods right, which also involves to broaden the capability of sage.misc.sageinspect -- it is not about performance at all. #11115 is about performance, but it should certainly not affect the documentation.\n\nI was using \"performance\" to refer to the purpose behind cached functions in general, not just #11115.  You should cache results from a function to speed it up, right?",
     "created_at": "2011-04-13T21:44:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100232",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100066",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4367,15 +4365,15 @@ I was using "performance" to refer to the purpose behind cached functions in gen
 
 ---
 
-archive/issue_comments_100233.json:
+archive/issue_comments_100067.json:
 ```json
 {
     "body": "Before sleeping, a last data point: I've put your example into a file testmod.py. Even without our patches, one gets:\n\n```\nsage: import testmod\nsage: dir(testmod)\n['CachedFunction', '__builtins__', '__doc__', '__file__', '__name__', '__package__', 'test1', 'test2', 'test3']\n```\n\n\nAFAIK, the reference builder searches the members of a module, and thus should certainly include test1, test2 and test3.\n\nHm. Unless it skips class instances, which could very well be. If this was the case then (at least) we are not to blame for it, since it was like that before.\n\nI already have a potential solution (should it be the case that class instances are not included into the references): It should be reasonable to include a class instance if its documentation is different from the documentation of its class.",
     "created_at": "2011-04-13T21:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100233",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100067",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4398,15 +4396,15 @@ I already have a potential solution (should it be the case that class instances 
 
 ---
 
-archive/issue_comments_100234.json:
+archive/issue_comments_100068.json:
 ```json
 {
     "body": "Replying to [comment:133 jhpalmieri]:\n> But the autodoc feature of the Sphinx-built reference manual doesn't seem to work properly with cached functions; I don't think it ever has.  So there is an issue.  Maybe it doesn't belong on this ticket, but I was hoping you were dealing with it here.  If it doesn't belong here, do you have any ideas how to fix it?\n\nOn the one hand, the original purpose of this ticket was to fix the signature of decorated functions and methods - which means it does not belong here. On the other hand, it does say \"signature of decorated *functions*/methods\". So, if cached functions are not included in the references then it does belong here.\n\nMy snap diagnose is that the documentation builder skips class instances, unless they are members of another class. Hence, cached methods are documented, but cached functions aren't. By the way, it is no surprise that nobody complained about it, before, since `@`cached_method is hardly used, yet. Certainly not as frequently  as cached methods.\n\nIf it is easy to fix, I think we should try it here.",
     "created_at": "2011-04-13T22:03:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100234",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100068",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4423,15 +4421,15 @@ If it is easy to fix, I think we should try it here.
 
 ---
 
-archive/issue_comments_100235.json:
+archive/issue_comments_100069.json:
 ```json
 {
     "body": "Replying to [comment:135 SimonKing]:\n> By the way, it is no surprise that nobody complained about it, before, since `@`cached_method is hardly used, yet. Certainly not as frequently  as cached methods.\n\nTypo! I meant to write \"`@`cached_function is hardly used\".",
     "created_at": "2011-04-13T22:05:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100235",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100069",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4444,15 +4442,15 @@ Typo! I meant to write "`@`cached_function is hardly used".
 
 ---
 
-archive/issue_comments_100236.json:
+archive/issue_comments_100070.json:
 ```json
 {
     "body": "> Hm. Unless it skips class instances, which could very well be. If this was the case then (at least) we are not to blame for it, since it was like that before.\n\nOh, I wasn't blaming you at all, I just looked at the ticket and hoped that you might have fixed it along with the other issues here.\n\n> By the way, it is no surprise that nobody complained about it, before, since `@`cached_function is hardly used, yet.\n\nCorrection: if you look at the sage-devel discussion cited in the ticket description, you'll find a complaint from me about exactly this issue.  :)",
     "created_at": "2011-04-13T22:14:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100236",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100070",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -4468,15 +4466,15 @@ Correction: if you look at the sage-devel discussion cited in the ticket descrip
 
 ---
 
-archive/issue_comments_100237.json:
+archive/issue_comments_100071.json:
 ```json
 {
     "body": "I think I got it to work.\n\nI inserted at the end of sage/misc/latex.py:\n\n```\nfrom sage.misc.cachefunc import cached_function\n\ndef test1():\n    \"This is a docstring for test1\"\n    pass\n\ntest2 = cached_function(test1)\n\n@cached_function\ndef test3():\n    \"This is a docstring for test3\"\n    pass\n\nclass TestClass:\n    \"Some class documentation\"\n    def _sage_doc_(self):\n        return \"Some instance definition\"\n    def __call__(self):\n        return 1\n\nTestInstance = TestClass()\n```\n\n\nThen, I changed one line in doc/common/sage_autodoc.py, namely in `FunctionDocumenter.can_document_member()`: Instead of returning\n\n```\nreturn isinstance(member, (FunctionType, BuiltinFunctionType))\n```\n\nit should return\n\n```\nreturn isinstance(member, (FunctionType, BuiltinFunctionType)) or (isclassinstance(member) and _sage_getdoc_unformatted(member)!=_sage_getdoc_unformatted(member.__class__))\n```\n\n\nThen, in the reference page for sage/misc/latex.py, I find\n\n\n```\nclass sage.misc.latex.TestClass\u00b6\n\n    Some class documentation\n\nsage.misc.latex.TestInstance()\u00b6\n\n    Some instance definition\n```\n\nand\n\n```\nsage.misc.latex.test1()\u00b6\n\n    This is a docstring for test1\n\nsage.misc.latex.test2()\u00b6\n\n    This is a docstring for test1\n\nsage.misc.latex.test3()\u00b6\n\n    This is a docstring for test3\n```\n\n\n`test2 = cached_function(test1)` is not the recommended way of creating a cached function: It should be used as in the definition of test3. So, I think it is ok that the documentation of test1 appears twice. The above is just what we want, right?\n\nI am preparing a patch now, and posting in a few minutes.",
     "created_at": "2011-04-14T06:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100237",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100071",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4560,15 +4558,15 @@ I am preparing a patch now, and posting in a few minutes.
 
 ---
 
-archive/issue_comments_100238.json:
+archive/issue_comments_100072.json:
 ```json
 {
     "body": "OK, patch is posted.\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch 9976_doc_fixes.patch 9976_notebook_doc_fixes.patch",
     "created_at": "2011-04-14T06:26:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100238",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100072",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4580,15 +4578,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100239.json:
+archive/issue_comments_100073.json:
 ```json
 {
     "body": "Wow, a lot of action since I left work yesterday ;-)\n\nReplying to [comment:138 SimonKing]:\n> I think I got it to work.\n> ...\n> \n> `test2 = cached_function(test1)` is not the recommended way of creating a cached function: It should be used as in the definition of test3. So, I think it is ok that the documentation of test1 appears twice. The above is just what we want, right?\n> \n> I am preparing a patch now, and posting in a few minutes.\n\nYes, I agree that is a sensible documentation output. I'll run it and test it -- also with the earlier concerns we had. I will also test timing, as it seems that your fix -- though seems to be working fine -- might cost some time to compute for many callables. We'll see...",
     "created_at": "2011-04-14T06:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100239",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100073",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -4608,15 +4606,15 @@ Yes, I agree that is a sensible documentation output. I'll run it and test it --
 
 ---
 
-archive/issue_comments_100240.json:
+archive/issue_comments_100074.json:
 ```json
 {
     "body": "Replying to [comment:140 jsrn]:\n> Yes, I agree that is a sensible documentation output. I'll run it and test it -- also with the earlier concerns we had. I will also test timing, as it seems that your fix -- though seems to be working fine -- might cost some time to compute for many callables. We'll see...\n\nIs timing really an issue for building the documentation?\n\nAlso, I doubt that it will have a dramatic effect. After all, it just means to compare two strings for any callable class instance that happens to live on module level. It seems to me that such things do not occur very often.",
     "created_at": "2011-04-14T06:49:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100240",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100074",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4631,15 +4629,15 @@ Also, I doubt that it will have a dramatic effect. After all, it just means to c
 
 ---
 
-archive/issue_comments_100241.json:
+archive/issue_comments_100075.json:
 ```json
 {
     "body": "Replying to [comment:141 SimonKing]:\n> Replying to [comment:140 jsrn]:\n> Is timing really an issue for building the documentation?\nIt takes me about \u00bd hour to build the documentation; it would very be nice if this at least didn't get worse...\n> \n> Also, I doubt that it will have a dramatic effect. After all, it just means to compare two strings for any callable class instance that happens to live on module level. It seems to me that such things do not occur very often.\nAh, I had mixed up _sage_getdoc and _sage_getargspec -- as the latter sometimes parses the entire source code and builds an AST to go over, calls to this should not be too abundant. Indeed, the worst _sage_getdoc_unformatted seems to do is convert the string to unicode; this should not be very visible on timings.",
     "created_at": "2011-04-14T07:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100241",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100075",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -4655,15 +4653,15 @@ Ah, I had mixed up _sage_getdoc and _sage_getargspec -- as the latter sometimes 
 
 ---
 
-archive/issue_comments_100242.json:
+archive/issue_comments_100076.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-14T07:51:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100242",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100076",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -4673,15 +4671,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100243.json:
+archive/issue_comments_100077.json:
 ```json
 {
     "body": "When building the reference manual now, sage.combinat.partition_algebra fails explosively. This is due to it defines (on the top-level, to be included in the reference manual) functions applied using functools.partial. This method breaks different possibilities for later inspection; the error we see is due to Python's own inspect.getsourcelines throwing an error when given a function returned by functools.partial. Here is a minimal example:\n\n\n```\nsage: import functools, inspect\nsage: basetwo = functools.partial(int,base=2)\nsage: inspect.getsourcelines(basetwo)\n<BOOM>\n```\n\n\nI don't know exactly what part of the patch caused this error to be seen now and not earlier (looking at http://sagemath.org/doc/reference/sage/combinat/partition_algebra.html, we can see that before the patch, the offensive elements of the module (e.g.SetPartitionsAk)  were simply not included in the reference manual), but it seems as though it is something that needs fixing.\n\nIt seems there are two possibilities:\n1) Wrap the lines in sageinspect which causes the error and exits gracefully, producing some best-effort documentation in such weird cases.\n2) Write a wrapper/alternative version of functools.partial which properly sets _sage_doc_ and _sage_getargspec_ etc. such that this shouldn't happen. This might entail switching to this partial function instead of functools.partial in other places of Sage than just partition_algebra.\n\n1) should be easiest and perhaps is a good idea in any circumstance (owing to the discussion earlier on whether to service everything or service only well-formed callables). 2) should take some more effort and might be another ticket.",
     "created_at": "2011-04-14T07:51:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100243",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100077",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -4708,15 +4706,15 @@ It seems there are two possibilities:
 
 ---
 
-archive/issue_comments_100244.json:
+archive/issue_comments_100078.json:
 ```json
 {
     "body": "Replying to [comment:143 jsrn]:\n> When building the reference manual now, sage.combinat.partition_algebra fails explosively. \n> ...\n> I don't know exactly what part of the patch caused this error to be seen now and not earlier (looking at http://sagemath.org/doc/reference/sage/combinat/partition_algebra.html, we can see that before the patch, the offensive elements of the module (e.g.SetPartitionsAk)  were simply not included in the reference manual)\n\nOf course that's the reason why it has not been noticed before. It is something the *should* probably be included in the reference, but has been skipped, because it was not a class but a class instance.\n\n> 2) Write a wrapper/alternative version of functools.partial which properly sets _sage_doc_ and _sage_getargspec_ etc. such that this shouldn't happen. This might entail switching to this partial function instead of functools.partial in other places of Sage than just partition_algebra.\n\nWhy switching? I have not looked at the code of functools.partial, yet. But it sounds like providing a _sage_doc_ and _sage_getargspec_ in functools.partial would suffice for everything else that relies on it.\n\n> 1) should be easiest and perhaps is a good idea in any circumstance (owing to the discussion earlier on whether to service everything or service only well-formed callables). 2) should take some more effort and might be another ticket.\n\nIt might be acceptable that after our patches there are still some functions that are not documented as nicely as they should. However, an *error* building documentation is certainly not acceptable.",
     "created_at": "2011-04-14T08:45:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100244",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100078",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4739,15 +4737,15 @@ It might be acceptable that after our patches there are still some functions tha
 
 ---
 
-archive/issue_comments_100245.json:
+archive/issue_comments_100079.json:
 ```json
 {
     "body": "Replying to [comment:144 SimonKing]: \n> Of course that's the reason why it has not been noticed before. It is something the *should* probably be included in the reference, but has been skipped, because it was not a class but a class instance.\nProbably.\n> \n> Why switching? I have not looked at the code of functools.partial, yet. But it sounds like providing a _sage_doc_ and _sage_getargspec_ in functools.partial would suffice for everything else that relies on it.\nWe can't (or shouldn't) change functools.partial because it's from the Python standard library. We should make a wrapper and put that somewhere in sage.misc, I guess?\n\n> It might be acceptable that after our patches there are still some functions that are not documented as nicely as they should. However, an *error* building documentation is certainly not acceptable.\nYeah, I agree. We can't fix all the world's problems in this ticket ;-)",
     "created_at": "2011-04-14T08:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100245",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100079",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -4765,15 +4763,15 @@ Yeah, I agree. We can't fix all the world's problems in this ticket ;-)
 
 ---
 
-archive/issue_comments_100246.json:
+archive/issue_comments_100080.json:
 ```json
 {
     "body": "After preparing a lecture, I can now do some programming.\n\nI find:\n\n```\nsage: sage.combinat.partition_algebra.SetPartitionsAk\n<functools.partial object at 0x432d1b0>\nsage: inspect.getargspec(sage.combinat.partition_algebra.SetPartitionsAk)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/mnt/local/king/SAGE/sage-4.7.alpha5/devel/sage-main/<ipython console> in <module>()\n\n/mnt/local/king/SAGE/sage-4.7.alpha5/local/lib/python/inspect.pyc in getargspec(func)\n    801         func = func.im_func\n    802     if not isfunction(func):\n--> 803         raise TypeError('arg is not a Python function')\n    804     args, varargs, varkw = getargs(func.func_code)\n    805     return ArgSpec(args, varargs, varkw, func.func_defaults)\nsage: sage.combinat.partition_algebra.SetPartitionsAk.args\n('A',)\nsage: sage.combinat.partition_algebra.SetPartitionsAk.keywords\n```\n\n\nHence, even though `inspect` can not deal with `functools` (even though it is standard Python), it should be absolutely straight forward to extend `sage_getargspec` to that case.",
     "created_at": "2011-04-14T11:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100246",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100080",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4808,15 +4806,15 @@ Hence, even though `inspect` can not deal with `functools` (even though it is st
 
 ---
 
-archive/issue_comments_100247.json:
+archive/issue_comments_100081.json:
 ```json
 {
     "body": "No, it should be even easier. Instances of functools.partial behave well enough, so that sageinspect can instruct all relevant information: In particula, sage_getsource works. And if that works, then sage_getargspec can simply use the source code analysis (to be precise: Study just the head of the definition).",
     "created_at": "2011-04-14T11:52:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100247",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100081",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4826,15 +4824,15 @@ No, it should be even easier. Instances of functools.partial behave well enough,
 
 ---
 
-archive/issue_comments_100248.json:
+archive/issue_comments_100082.json:
 ```json
 {
     "body": "Sorry, I was mistaken. sage_getfile finds the wrong location, and so sage_getsource won't work either. But an instance of functools.partial has an attribute `.func`, which can then be used.",
     "created_at": "2011-04-14T12:00:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100248",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100082",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4844,15 +4842,15 @@ Sorry, I was mistaken. sage_getfile finds the wrong location, and so sage_getsou
 
 ---
 
-archive/issue_comments_100249.json:
+archive/issue_comments_100083.json:
 ```json
 {
     "body": "Attachment [9976_doc_fixes.patch](tarball://root/attachments/some-uuid/ticket9976/9976_doc_fixes.patch) by @simon-king-jena created at 2011-04-14 12:24:42\n\nFixing some wrongly formatted doc strings",
     "created_at": "2011-04-14T12:24:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100249",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100083",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4864,15 +4862,15 @@ Fixing some wrongly formatted doc strings
 
 ---
 
-archive/issue_comments_100250.json:
+archive/issue_comments_100084.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-14T12:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100250",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100084",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4882,15 +4880,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100251.json:
+archive/issue_comments_100085.json:
 ```json
 {
     "body": "I updated the inspection_of_cython.patch: In the relevant functions, I made a special case for instances of functools.partial.\n\nBy consequence, building the doc for sage.combinat.partition_algebra showed a couple of warnings, that were caused by syntax errors in the doc string (amazing, how often that occurs in sage/combinat...). It is fixed by an update of my doc_fixes.patch, so that its documentation builds without error, but includes the previously missing items.\n\nThe price to pay: Several items have the same documentation. I am willing to pay that price, for the alternative is to not have these docs in the references at all.\n\nApply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch 9976_doc_fixes.patch 9976_notebook_doc_fixes.patch",
     "created_at": "2011-04-14T12:30:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100251",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100085",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4906,15 +4904,15 @@ Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cyth
 
 ---
 
-archive/issue_comments_100252.json:
+archive/issue_comments_100086.json:
 ```json
 {
     "body": "PS: The following does not work yet.\n\n```\nsage: obj = sage.combinat.partition_algebra.SetPartitionsAk\nsage: edit(obj,'vim')\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (53, 0))\n...\n```\n\n\nBut that is a problem in the sage.misc.edit_module. I think it is out of the scope of this ticket. Better have a new one.",
     "created_at": "2011-04-14T12:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100252",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100086",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -4936,15 +4934,15 @@ But that is a problem in the sage.misc.edit_module. I think it is out of the sco
 
 ---
 
-archive/issue_comments_100253.json:
+archive/issue_comments_100087.json:
 ```json
 {
     "body": "Good job. Some questions:\n\n1) When doing my previous example and calling sageinspect.sage_getdoc(basetwo), I get the doc of functools.partial. Does this always happen or only in these toy examples?\n\n2) Why doesn't this work, and should it?\n\n\n```\nsage: import functools\nsage: import sage.misc.sageinspect as si\nsage: def mybase(x=1, y=2):\n....:     return x + y\nsage: deriv = functools.partial(mybase, x=3)\nsage: si.sage_getargspec(deriv)\n<BOOM>\nsage: si.sage_getsource(deriv)\n<BOOM>\n```\n\n\nWhat if I put the stuff in a file?\n\n3) Partial functions on partial functions seem to will never work with your patch; perhaps you should have the check in a while loop or call the method recursively. This might pertain to other checks in the codes as well!",
     "created_at": "2011-04-14T14:26:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100253",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100087",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -4976,15 +4974,15 @@ What if I put the stuff in a file?
 
 ---
 
-archive/issue_comments_100254.json:
+archive/issue_comments_100088.json:
 ```json
 {
     "body": "Replying to [comment:151 jsrn]:\n> Good job. Some questions:\n> \n> 1) When doing my previous example and calling sageinspect.sage_getdoc(basetwo), I get the doc of functools.partial. Does this always happen or only in these toy examples?\n>  \n> 2) Why doesn't this work, and should it?\n> ...\n> What if I put the stuff in a file?\n\nWhat I did was designed to work on files.\n\nConcerning doc: You did not provide `basetwo` with a custom documentation - if you modify its `__doc__` then it works:\n\n```\nsage: deriv.__doc__='blablabla'\nsage: si.sage_getdoc(deriv)\n'blablabla\\n'\n```\n\n\nCertainly sage_getsource can not work on your example, since you do not have a source file.\n\nI believe, however, that sage_getargspec should work on functools.partial, even if there is no source file.\n\n> 3) Partial functions on partial functions seem to will never work with your patch; perhaps you should have the check in a while loop or call the method recursively. This might pertain to other checks in the codes as well!\n\nWhen I recursively call sage_getargspec on the `.func` attribute then it should work fine. That would be better than asking for the source, in the first place.",
     "created_at": "2011-04-14T14:50:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100254",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100088",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5020,15 +5018,15 @@ When I recursively call sage_getargspec on the `.func` attribute then it should 
 
 ---
 
-archive/issue_comments_100255.json:
+archive/issue_comments_100089.json:
 ```json
 {
     "body": "No, it is not as easy.\n\nAgain, in your `deriv` example:\n\n```\nsage: sage_getargspec(deriv.func)\nArgSpec(args=['x', 'y'], varargs=None, keywords=None, defaults=(1, 2))\nsage: deriv.keywords\n{'x': 3}\n```\n\n\nSo, am I right that we want to have \n\n```\nsage: sage_getargspec(deriv)\nArgSpec(args=['x', 'y'], varargs=None, keywords=None, defaults=(3, 2))\n```\n\n?",
     "created_at": "2011-04-14T14:55:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100255",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100089",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5057,15 +5055,15 @@ ArgSpec(args=['x', 'y'], varargs=None, keywords=None, defaults=(3, 2))
 
 ---
 
-archive/issue_comments_100256.json:
+archive/issue_comments_100090.json:
 ```json
 {
     "body": "It is still more complicated.\n\nIn Argspec, it is assumed that the arguments with default values come last. Apparently, that assumption does not hold, in general, if you apply `partial`:\n\n```\nsage: def blablubb(x,y):\n....:     return x+y\n....: \nsage: f = functools.partial(blablubb,x=3)\nsage: f.keywords\n{'x': 3}\n```\n\n\nSo, what should sage_getargspec(f) return?? Should it raise an error, since the default values are in the wrong place?",
     "created_at": "2011-04-14T15:04:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100256",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100090",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5089,15 +5087,15 @@ So, what should sage_getargspec(f) return?? Should it raise an error, since the 
 
 ---
 
-archive/issue_comments_100257.json:
+archive/issue_comments_100091.json:
 ```json
 {
     "body": "If you agree that it does not make sense (or is impossible, in general), to use the functools.partial default values into the argspec, then I really think that both sage_getfile, sage_getsourcelines and sage_getargspec should work recursively.\n\nBy consequence, it may fail if you work with Python code that is given interactively, but should work if the code has a source file. That would be another price to pay.",
     "created_at": "2011-04-14T15:12:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100257",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100091",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5109,15 +5107,15 @@ By consequence, it may fail if you work with Python code that is given interacti
 
 ---
 
-archive/issue_comments_100258.json:
+archive/issue_comments_100092.json:
 ```json
 {
     "body": "I still don't know what answer I would expect from get_argspec on functools.partial, as in the following example:\n\n```\nsage: def f0(a,b,c,x,y,z): print a,b,c,x,y,z\n....:\nsage: f = functools.partial(f0,1,2,y=3)\n```\n\n\nNow, f can not be provided with a different value for a, b and y. It is possible to provide a value for c and x both by position and by name. A value for z must be provided by name, it is not possible by position.\n\nThat certainly does not fit into the scope of an `ArgSpec` named tuple, does it?\n\nDo you agree that in the reference manual, the arguments of f should appear exactly as the arguments of f0? I don't think that there is an easy way to express the fact that some arguments of f can only be provided by name. Therefore, I think it must be left to the module author to state in the doc string which assignments were made to the arguments.\n\nIf you tell me that you do agree then I'll provide an update of my patch.",
     "created_at": "2011-04-14T17:46:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100258",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100092",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5142,15 +5140,15 @@ If you tell me that you do agree then I'll provide an update of my patch.
 
 ---
 
-archive/issue_comments_100259.json:
+archive/issue_comments_100093.json:
 ```json
 {
     "body": "Phew, sometimes -- in the name of freedom -- Python standards have just not been thought through :-S Partial seems to be a *very* confusing function in general, and it seems surprising and very un-Guido Rossum like to have it in the standard library. Notice that Python can not itself figure these things out; if we make wrong calls to your f function above, we get cryptic error messages:\n\n\n```\nsage: f()\n...\nTypeError: f0() takes exactly 6 non-keyword arguments (2 given)\nsage: f(4,5)\n...\nTypeError: f0() takes exactly 6 non-keyword arguments (5 given)\n```\n\n\nso when I give no arguments, it thinks I gave 2 (to f0), but I have actually given 3. When I supply 2 arguments, it thinks I gave 5. Something is wrong here in the lines of what you have also found.\n\nI think the most generally non-confusing, always working, and easiest to implement solution would be to always use the ArgSpec of the partially applied function (that is, recursively call the sage_get* function). The author of the module should then indeed be wary that his \"hack\" didn't cause anything to be widely erroneous in the documentation.\n\nAlternatively, make a small heuristic that does the right thing in usual and well-behaved situations: Let e.g. f0 be a function with n positional arguments and m named arguments with default values. If a partial application of a funcion f0 sets the first s positional, sets the last t positional by name, and redefines a number of the m named arguments, then it is still possible to extract this information and enclose it in an ArgSpec. We might even consider giving a warning in cases where this is not done (as it is an error to write Sage code which doesn't document properly, or something). Thinking about it, I don't think this solution is very difficult to implement. However, one might argue that it will overly specialise the sageinspect functions to cater for one certain type of (misbehaving) wrapping, and that Sage authors in general should avoid applying partial to module-level entities.\n\nI would be satisfied with both. I don't think it is good programming practice to use obscure wrapping in module-level entities, so I would accept the first as fine. On the other hand, Sage in several places already take the stance that programmers should be allowed to do whatever works; and in this philosophy, we should aim for the second one.\n\nThis patch just keeps going on an on...",
     "created_at": "2011-04-15T06:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100259",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100093",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5181,15 +5179,15 @@ This patch just keeps going on an on...
 
 ---
 
-archive/issue_comments_100260.json:
+archive/issue_comments_100094.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-04-15T06:22:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100260",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100094",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5199,15 +5197,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_100261.json:
+archive/issue_comments_100095.json:
 ```json
 {
     "body": "Replying to [comment:157 jsrn]:\n> Alternatively, make a small heuristic that does the right thing in usual and well-behaved situations: Let e.g. f0 be a function with n positional arguments and m named arguments with default values. If a partial application of a funcion f0 sets the first s positional, sets the last t positional by name, and redefines a number of the m named arguments, then it is still possible to extract this information and enclose it in an ArgSpec.\n\nThe following example shows the problem with your suggestion:\n\n```\nsage: import functools\nsage: def f0(a,b,c,d,e,f,x=1,y=2,z=3): return\n....: \nsage: f = functools.partial(f0)\nsage: f = functools.partial(f0,1,e=4,f=5,z=6)\n```\n\nThat is as in your suggestion: Providing values for the first s positional arguments by position (here: partial(0,1,...)), and providing values for the last t positional arguments by name (here: partial(..., e=4,f=5,...)), and also providing values for some of those arguments that already have a default value (here: partial(...,z=6)).\n\nHowever, we can not have\n\n```\nsage: sage_getargspec(f)\nArgSpec(args=['c', 'd', 'x', 'y'], varargs=None, keywords=None, defaults=(1,2))\n```\n\nsince it would appear as if you could provide the arguments x and y by position. Also, we must not include the new default values in `defaults` and keep the associated argument names in `args`: There is no way to re-assign them, and so, they are no longer arguments to the function!\n\nIs there a way to express in an argspec that some arguments can *only* be provided by name?\n\nIf there is no such way, then we must be even more restrictive. Note that all arguments of f0 are positional - that the last few of them have a default does not change the fact that they are positional. So, we can only infer an argspec, if partial assigns values to the first s positions and to the last t positions. Such as here:\n\n\n```\nsage: f = functools.partial(f0,1,f=5,x=6,y=7,z=8)\nsage: sage_getargspec(f)    # not implemented\nArgSpec(args=['c', 'd', 'e'], varargs=None, keywords=None, defaults=None)\nsage: f = functools.partial(f0,1,y=7,z=8)\nsage: sage_getargspec(f)    # not implemented\nArgSpec(args=['c', 'd', 'e', 'f', 'x'], varargs=None, keywords=None, defaults=(1,))\n```\n\n\n> We might even consider giving a warning in cases where this is not done (as it is an error to write Sage code which doesn't document properly, or something). Thinking about it, I don't think this solution is very difficult to implement.\n\nLike a deprecation warning? I think that would be not so good. If people have the freedom to use functools.partial, then we should cope with it.\n\nSo, what do you think: Try to infer an argspec in the restricted way that I sketched above, and return the argspec of the underlying function if that is impossible? Or *always* return the argspec of the underlying function?\n\nCheers,\nSimon",
     "created_at": "2011-04-15T07:56:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100261",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100095",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5263,15 +5261,15 @@ Simon
 
 ---
 
-archive/issue_comments_100262.json:
+archive/issue_comments_100096.json:
 ```json
 {
     "body": "Replying to [comment:158 SimonKing]:\n> sage: f = functools.partial(f0,1,e=4,f=5,z=6)\n\nSorry, type: I meant `functools.partial(f0,1,2,e=4,f=5,z=6)`.",
     "created_at": "2011-04-15T08:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100262",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100096",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5284,15 +5282,15 @@ Sorry, type: I meant `functools.partial(f0,1,2,e=4,f=5,z=6)`.
 
 ---
 
-archive/issue_comments_100263.json:
+archive/issue_comments_100097.json:
 ```json
 {
     "body": "This is horrible! What were they thinking?!...\n\nOk, in this case I think it actually would be best to always return the argspec of the underlying function. It is bad to be forced to erase the default arguments from the argspec, even though they can still be set by name. There I would prefer these args to be in the documentation but then the doc text explained more in depth how it could be used. It is also easier to work around, once the code has been written in one way (and the code author suddenly discovers this documentation issue), I think.\n\n>>  We might even consider giving a warning in cases where this is not done (as it is an error to write Sage code which doesn't document properly, or something). Thinking about it, I don't think this solution is very difficult to implement.\n> \n> Like a deprecation warning? I think that would be not so good. If people have the freedom to use functools.partial, then we should cope with it. \n\nWhat I meant is to produce a warning in sage_autodoc or sageinspect.sage_* if we come upon a function with this behaviour -- but only on the module-level which is to be documented.\n\nThe rationale would be that functools.partial (in cases such as these) very much violates \"principle of least surprise\" and is therefore bad for the end-user. Code authors should be allowed to do whatever internally in the modules, but for the end-user, we wish them to have a straight-forward, Pythonic experience with Sage; suddenly having functions where arguments can _only_ be given by name and introspection and documentation strings is non-standard, lacking or broken is surprising and confusing. Even more so in a language such as Python, where we expect \"one way to do it\" and relatively well-behaved foundational syntax rules of the language (where, on the other hand, stuff like this would be practically mandatory in a Perl program ;-) ).\n\nOf course, we should never introduce such things without consulting sage-devel first.\n\nCheers",
     "created_at": "2011-04-15T08:27:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100263",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100097",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5316,15 +5314,15 @@ Cheers
 
 ---
 
-archive/issue_comments_100264.json:
+archive/issue_comments_100098.json:
 ```json
 {
     "body": "Replying to [comment:160 jsrn]:\n> Ok, in this case I think it actually would be best to always return the argspec of the underlying function.\n\nRight, let's do so. I'll update my patch accordingly.\n\n> What I meant is to produce a warning in sage_autodoc or sageinspect.sage_* if we come upon a function with this behaviour -- but only on the module-level which is to be documented.\n> \n> ...\n> Of course, we should never introduce such things without consulting sage-devel first.\n\nSure. And I think that introducing such warning should *really* be a different ticket. This here is already fat enough.",
     "created_at": "2011-04-15T08:40:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100264",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100098",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5344,15 +5342,15 @@ Sure. And I think that introducing such warning should *really* be a different t
 
 ---
 
-archive/issue_comments_100265.json:
+archive/issue_comments_100099.json:
 ```json
 {
     "body": "Replying to [comment:161 SimonKing]:\n> Sure. And I think that introducing such warning should *really* be a different ticket. This here is already fat enough.\nDefinitely! Let's get this monster out of the way...",
     "created_at": "2011-04-15T09:03:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100265",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100099",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5364,15 +5362,15 @@ Definitely! Let's get this monster out of the way...
 
 ---
 
-archive/issue_comments_100266.json:
+archive/issue_comments_100100.json:
 ```json
 {
     "body": "The patch is updated. It is now always (recursively) using the `.func` attribute of a `functools.partial` instance. With that change, things should look nice.\n\nOne idea concerning the warning: What one could do is modify `sage_getdoc`, so that it prepends a warning message to the doc string of any `functools.partial` instance. Then, the warning would both appear in the reference and in introspection via `?` (not via `??`, but I could be mistaken).\n\nBut that's a different ticket.\n\nNeeds review...",
     "created_at": "2011-04-15T12:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100266",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100100",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5388,15 +5386,15 @@ Needs review...
 
 ---
 
-archive/issue_comments_100267.json:
+archive/issue_comments_100101.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-04-15T12:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100267",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100101",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5406,15 +5404,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_100268.json:
+archive/issue_comments_100102.json:
 ```json
 {
     "body": "I'm running doctests now. I've read through the code, and it looks good with many good comments and tests.\n\nWhile we are waiting for the results, I do have one thing, though: I'm not really fond of the doc-tests that depend on completely unrelated code, like the ones demonstrating error in partition_algebra. It seems to incur a large penalty for developers in the long run, as any change in existing code will break doctests in completely unrelated modules.\n\nSure, most of these errors will be easy to fix, but then the doctest might become invalid (if e.g. partition_algebra moved away from using functools.partial), and the later developer would have to decide between 1) fixing the doctest and keeping it, even though it no longer serves its purpose, 2) remove the doctest, or 3) rewrite the doctest to use a different module or doctest-created objects. 1) and 2) would result in the error no longer being exercised, defeating the purpose of having this (non-educating) doctests lying around. 3) would be a huge and unwanted burden for the new developer to lift, and he might not have the prerequisites to do it.\n\nOne might disagree with this of course. So, is this something that you have seen many places in Sage (so that it is completely acceptable/encouraged doctesting)? Or is it because this particular doctest is impossible to write using dynamic objects (I haven't really yet fully understood which of the functions work on dynamic objects and which only on file-read ones)? Or is there a third reason?\n\nThanks for the green light on mine, by the way.\nCheers,\nJohan",
     "created_at": "2011-04-15T16:02:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100268",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100102",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5434,15 +5432,15 @@ Johan
 
 ---
 
-archive/issue_comments_100269.json:
+archive/issue_comments_100103.json:
 ```json
 {
     "body": "Replying to [comment:164 jsrn]:\n> ... doc-tests that depend on completely unrelated code, like the ones demonstrating error in partition_algebra.\nI meant to write \"demonstrating that there is no longer an error with \" ;-)",
     "created_at": "2011-04-15T16:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100269",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100103",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5454,15 +5452,15 @@ I meant to write "demonstrating that there is no longer an error with " ;-)
 
 ---
 
-archive/issue_comments_100270.json:
+archive/issue_comments_100104.json:
 ```json
 {
     "body": "Replying to [comment:164 jsrn]:\n> One might disagree with this of course. So, is this something that you have seen many places in Sage (so that it is completely acceptable/encouraged doctesting)? Or is it because this particular doctest is impossible to write using dynamic objects (I haven't really yet fully understood which of the functions work on dynamic objects and which only on file-read ones)? Or is there a third reason?\n\nCertainly the new test for sage_getfile, sage_getsource and sage_getsourcelines all have to use something that has a source file. So, a dynamic definition in Python would not work, since no file would be created - with the patch, introspection for Cython somehow works better than for Python, since there is always a file involved when you  compile Cython code.\n\nHowever, the functools.partial test for sage_getargspec and sage_getdoc could be replaced by a \"dynamic\" test, if you prefer.",
     "created_at": "2011-04-15T16:34:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100270",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100104",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5477,15 +5475,15 @@ However, the functools.partial test for sage_getargspec and sage_getdoc could be
 
 ---
 
-archive/issue_comments_100271.json:
+archive/issue_comments_100105.json:
 ```json
 {
     "body": "Back from weekend. All tests passed, so the code is good. I'd like dynamic tests for the two functools.partial doctests that you mentioned above, though. After that, it should be green light :-)",
     "created_at": "2011-04-18T07:24:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100271",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100105",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5495,15 +5493,15 @@ Back from weekend. All tests passed, so the code is good. I'd like dynamic tests
 
 ---
 
-archive/issue_comments_100272.json:
+archive/issue_comments_100106.json:
 ```json
 {
     "body": "Yo, listen up thar Patchbot: Apply trac_9976_decorated_generic_sigs_alternative.patch 9976-inspection_of_cython.patch 9976_doc_fixes.patch 9976_notebook_doc_fixes.patch",
     "created_at": "2011-04-18T07:26:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100272",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100106",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5513,15 +5511,15 @@ Yo, listen up thar Patchbot: Apply trac_9976_decorated_generic_sigs_alternative.
 
 ---
 
-archive/issue_comments_100273.json:
+archive/issue_comments_100107.json:
 ```json
 {
     "body": "Replying to [comment:168 jsrn]:\n> Yo, listen up thar Patchbot: \n\nI guess the problem is that the patchbot tries to apply the patches to sage-4.6.2. They do apply to sage-4.7.alpha5 (this is the version I am working with). So, I think we can review it, and if there is any problem merging the patches, the release manager will tell us.\n\nI am now preparing a new and largely extended patch for #11115. After that, I will provide the two \"dynamical\" tests for the patches here.",
     "created_at": "2011-04-18T11:33:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100273",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100107",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5536,15 +5534,15 @@ I am now preparing a new and largely extended patch for #11115. After that, I wi
 
 ---
 
-archive/issue_comments_100274.json:
+archive/issue_comments_100108.json:
 ```json
 {
     "body": "Attachment [9976-inspection_of_cython.patch](tarball://root/attachments/some-uuid/ticket9976/9976-inspection_of_cython.patch) by @simon-king-jena created at 2011-04-18 16:45:56\n\nImprove inspection on Cython objects, functools.partial and other class instances; let sage_getargspec return an ArgSpec?; improve argument parsing; let a plot raise an AttributeError? if an attribute is missing; include cached functions in references",
     "created_at": "2011-04-18T16:45:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100274",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100108",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5556,15 +5554,15 @@ Improve inspection on Cython objects, functools.partial and other class instance
 
 ---
 
-archive/issue_comments_100275.json:
+archive/issue_comments_100109.json:
 ```json
 {
     "body": "I have updated my inspection_of_cython patch, by providing two dynamical tests for functools.partial (namely sage_getdoc and sage_getargspec). Such dynamical tests are impossible for sage_getfile and sage_getsource, since interactive Python code won't create a source file to inspect.\n\nI already gave your patches a green light. So, I hope you are happy with my patches as well...",
     "created_at": "2011-04-18T16:48:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100275",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100109",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -5576,15 +5574,15 @@ I already gave your patches a green light. So, I hope you are happy with my patc
 
 ---
 
-archive/issue_comments_100276.json:
+archive/issue_comments_100110.json:
 ```json
 {
     "body": "Great, very nice. Everything applies and works fine here, and I already looked through everything more than once. It's a-go.",
     "created_at": "2011-04-19T11:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100276",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100110",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5594,15 +5592,15 @@ Great, very nice. Everything applies and works fine here, and I already looked t
 
 ---
 
-archive/issue_comments_100277.json:
+archive/issue_comments_100111.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-04-19T11:56:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100277",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100111",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5612,15 +5610,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_100278.json:
+archive/issue_comments_100112.json:
 ```json
 {
     "body": "Please change the commit message of [attachment:trac_9976_decorated_generic_sigs_alternative.patch] (use `hg qrefresh -e` for that).",
     "created_at": "2011-04-20T12:53:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100278",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100112",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -5630,15 +5628,15 @@ Please change the commit message of [attachment:trac_9976_decorated_generic_sigs
 
 ---
 
-archive/issue_comments_100279.json:
+archive/issue_comments_100113.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2011-04-20T12:55:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100279",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100113",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -5648,15 +5646,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_100280.json:
+archive/issue_comments_100114.json:
 ```json
 {
     "body": "Attachment [trac_9976_decorated_generic_sigs_alternative.patch](tarball://root/attachments/some-uuid/ticket9976/trac_9976_decorated_generic_sigs_alternative.patch) by @johanrosenkilde created at 2011-04-24 18:01:27\n\nAlternative patch: more intrusive Sphinx patch which makes it easier to let decorators change the signature of the wrapped function.",
     "created_at": "2011-04-24T18:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100280",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100114",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5668,15 +5666,15 @@ Alternative patch: more intrusive Sphinx patch which makes it easier to let deco
 
 ---
 
-archive/issue_comments_100281.json:
+archive/issue_comments_100115.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2011-04-24T18:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100281",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100115",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5686,15 +5684,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_100282.json:
+archive/issue_comments_100116.json:
 ```json
 {
     "body": "Fixed commit message.",
     "created_at": "2011-04-24T18:02:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100282",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100116",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -5704,15 +5702,15 @@ Fixed commit message.
 
 ---
 
-archive/issue_comments_100283.json:
+archive/issue_comments_100117.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-05-03T12:29:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100283",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100117",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -5722,15 +5720,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_100284.json:
+archive/issue_comments_100118.json:
 ```json
 {
     "body": "Patch rebased to sage-4.7",
     "created_at": "2011-05-24T10:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100284",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100118",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -5740,15 +5738,15 @@ Patch rebased to sage-4.7
 
 ---
 
-archive/issue_comments_100285.json:
+archive/issue_comments_100119.json:
 ```json
 {
     "body": "Attachment [9976_doc_fixes_v2.patch](tarball://root/attachments/some-uuid/ticket9976/9976_doc_fixes_v2.patch) by @jdemeyer created at 2011-05-24 10:36:19",
     "created_at": "2011-05-24T10:36:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9975",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100285",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9975#issuecomment-100119",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

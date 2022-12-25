@@ -6,14 +6,13 @@ archive/issues_000049.json:
     "body": "Assignee: somebody\n\nI'm not sure if this is a bug, but it sure is confusing to me.\n\n\n```\nsage: K = pAdicField(5, 10)\nsage: K(1/2, prec=20)\n 3 + 2*5 + 2*5^2 + 2*5^3 + 2*5^4 + 2*5^5 + 2*5^6 + 2*5^7 + 2*5^8 + 2*5^9 + O(5^10)\n```\n\n\nThe field's default precision seems to override the precision explicitly requested in the constructor. I can vaguely see how this might make sense, but it gets extremely confusing when you don't even supply the default precision:\n\n\n```\nsage: K = pAdicField(5)\nsage: K(1/2, prec=30)\n 3 + 2*5 + 2*5^2 + 2*5^3 + 2*5^4 + 2*5^5 + 2*5^6 + 2*5^7 + 2*5^8 + 2*5^9 + 2*5^10 + 2*5^11 + 2*5^12 + 2*5^13 + 2*5^14 + 2*5^15 + 2*5^16 + 2*5^17 + 2*5^18 + 2*5^19 + O(5^20)\n```\n\n\nI think it would be better if the precision requested in the constructor was always honoured, assuming that the input data had enough precision in the first place to support it (which in this case it does, being a Rational number).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/49\n\n",
     "created_at": "2006-09-13T14:36:50Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "possible bug with p-adic number constructor",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/49",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/49
 
 ---
 
-archive/issue_comments_000281.json:
+archive/issue_comments_000280.json:
 ```json
 {
     "body": "Another way of putting this is that the **only** time the default precision should be relevant is when coercing other objects into the field, and this should be overridable in the element constructor. At all other times, e.g. performing arithmetic on two elements, the precision of the **elements** should be the only relevant thing.",
     "created_at": "2006-09-13T14:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/49",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/49#issuecomment-281",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/49#issuecomment-280",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -67,15 +66,15 @@ Another way of putting this is that the **only** time the default precision shou
 
 ---
 
-archive/issue_comments_000282.json:
+archive/issue_comments_000281.json:
 ```json
 {
     "body": "Fixed.\n\nWed Sep 13 08:17:07 PDT 2006  dmharvey`@`math.harvard.edu\n* changed padic constructor precision behaviour:\n  * now pAdicField(5)(1/2, 40) actually returns a p-adic number with 40 digits instead of 20\n  * added some doctests for rational -> padic coercion",
     "created_at": "2006-09-16T05:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/49",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/49#issuecomment-282",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/49#issuecomment-281",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -90,15 +89,15 @@ Wed Sep 13 08:17:07 PDT 2006  dmharvey`@`math.harvard.edu
 
 ---
 
-archive/issue_comments_000283.json:
+archive/issue_comments_000282.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2006-09-16T05:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/49",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/49#issuecomment-283",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/49#issuecomment-282",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 

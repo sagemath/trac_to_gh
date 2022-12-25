@@ -6,15 +6,14 @@ archive/issues_000779.json:
     "body": "Assignee: @williamstein\n\nIf I create a matrix with Matrix_integer_dense(), and try to display it, sage blows chunks.  It appears to happen inside the gmp library.  This is with 2.8.5.1 on a Core 2 Duo (Mac OS X, 10.4.10).\n\nsage: from sage.matrix.matrix_integer_dense import Matrix_integer_dense\nsage: a = Matrix_integer_dense.__new__(Matrix_integer_dense, Mat(ZZ,3), 0,0,0)\nsage: a.ncols()\n3\nsage: a.nrows()\n3\nsage: a\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_INVALID_ADDRESS at address: 0x013af000\n0x00777991 in __gmpn_copyi ()\n(gdb) bt\n#0  0x00777991 in __gmpn_copyi ()\n#1  0x0075c4a0 in __gmpz_set ()\nPrevious frame inner to this frame (corrupt stack?)\n\n\nThen, there is\n\nsage: from sage.matrix.matrix_integer_dense import Matrix_integer_dense\nsage: a = Matrix_integer_dense.__new__(Matrix_integer_dense, Mat(ZZ,3), 0,0,0)\nsage: for i in range(a.nrows()):\n   ...:     for j in range(a.ncols()):\n   ...:         print a[i,j]\n   ...:         \n0\npython(16613) malloc: *** vm_allocate(size=1680302080) failed (error code=3)\npython(16613) malloc: *** error: can't allocate region\npython(16613) malloc: *** set a breakpoint in szone_error to debug\n\nProgram received signal EXC_BAD_ACCESS, Could not access memory.\nReason: KERN_PROTECTION_FAILURE at address: 0x00000000\n0x0076a0b7 in __gmpn_sqr_basecase ()\n(gdb) \n\nIssue created by migration from https://trac.sagemath.org/ticket/779\n\n",
     "created_at": "2007-10-02T01:58:14Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Matrix from Matrix_integer_dense() blows up",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/779",
-    "user": "justin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 Assignee: @williamstein
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/779
 
 ---
 
-archive/issue_comments_004650.json:
+archive/issue_comments_004634.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2007-10-02T02:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/779",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4650",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4634",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -82,15 +81,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_004651.json:
+archive/issue_comments_004635.json:
 ```json
 {
     "body": "I closed this because the formatting really sucks.  The new\nTrac# is 781.",
     "created_at": "2007-10-02T02:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/779",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4651",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4635",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -101,15 +100,15 @@ Trac# is 781.
 
 ---
 
-archive/issue_comments_004652.json:
+archive/issue_comments_004636.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-10-04T19:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/779",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4652",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4636",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +118,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_004653.json:
+archive/issue_comments_004637.json:
 ```json
 {
     "body": "Resolution changed from invalid to ",
     "created_at": "2007-10-04T19:48:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/779",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4653",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4637",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +136,15 @@ Resolution changed from invalid to
 
 ---
 
-archive/issue_comments_004654.json:
+archive/issue_comments_004638.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2007-10-04T19:48:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/779",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4654",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/779#issuecomment-4638",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

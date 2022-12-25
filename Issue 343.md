@@ -6,7 +6,7 @@ archive/issues_000343.json:
     "body": "Assignee: boothby\n\nIn Firefox, if you make a long (~50 line) input cell, with your cursor towards the bottom, and hit the tab key, focus (in the input cell) bounces to the top -- though the cursor stays where it was. In many cases, it actually scrolls the cursor out of view.\n\nIssue created by migration from https://trac.sagemath.org/ticket/343\n\n",
     "created_at": "2007-04-02T22:38:08Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000343.json:
     "title": "inserting tab messes scrolls to top of cell input",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/343",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: boothby
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/343
 
 ---
 
-archive/issue_comments_001674.json:
+archive/issue_comments_001669.json:
 ```json
 {
     "body": "hmm... just curious, is this still issue? I cannot reproduce it any more (window stays where it was, no jump to top), don't know if due to changes in notebook or in firefox (I use FF3)...",
     "created_at": "2008-09-02T00:04:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/343#issuecomment-1674",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/343#issuecomment-1669",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -47,15 +47,15 @@ hmm... just curious, is this still issue? I cannot reproduce it any more (window
 
 ---
 
-archive/issue_comments_001675.json:
+archive/issue_comments_001670.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-01-22T13:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/343#issuecomment-1675",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/343#issuecomment-1670",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +65,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_001676.json:
+archive/issue_comments_001671.json:
 ```json
 {
     "body": "I can't reproduce this either.  It's been quite awhile ago and the notebook has been reworked since then.  I'm going to mark this as invalid.",
     "created_at": "2009-01-22T13:53:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/343",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/343#issuecomment-1676",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/343#issuecomment-1671",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

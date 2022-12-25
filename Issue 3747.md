@@ -6,7 +6,7 @@ archive/issues_003747.json:
     "body": "Assignee: somebody\n\n\n```\nsage: R = Integers(17^5)\nsage: R(17)^5\n1419857\n```\n\n\nThe answer should be zero.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3747\n\n",
     "created_at": "2008-07-30T14:14:21Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003747.json:
     "title": "incorrect power in modular arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3747",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -38,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3747
 
 ---
 
-archive/issue_comments_026614.json:
+archive/issue_comments_026557.json:
 ```json
 {
     "body": "Attachment [3747.patch](tarball://root/attachments/some-uuid/ticket3747/3747.patch) by dmharvey created at 2008-07-30 14:28:37",
     "created_at": "2008-07-30T14:28:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26614",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26557",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -56,15 +56,15 @@ Attachment [3747.patch](tarball://root/attachments/some-uuid/ticket3747/3747.pat
 
 ---
 
-archive/issue_comments_026615.json:
+archive/issue_comments_026558.json:
 ```json
 {
     "body": "looks good!",
     "created_at": "2008-07-30T14:37:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26615",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26558",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -74,15 +74,15 @@ looks good!
 
 ---
 
-archive/issue_comments_026616.json:
+archive/issue_comments_026559.json:
 ```json
 {
     "body": "Looks good to me too.  I note that only the 32-bit code had this bug, not the 64-bit code.",
     "created_at": "2008-07-30T23:13:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26616",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26559",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -92,15 +92,15 @@ Looks good to me too.  I note that only the 32-bit code had this bug, not the 64
 
 ---
 
-archive/issue_comments_026617.json:
+archive/issue_comments_026560.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-07-30T23:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26617",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26560",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -110,15 +110,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_026618.json:
+archive/issue_comments_026561.json:
 ```json
 {
     "body": "Merged in Sage 3.1.alpha0",
     "created_at": "2008-07-30T23:15:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3747",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26618",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3747#issuecomment-26561",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

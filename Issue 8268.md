@@ -6,15 +6,13 @@ archive/issues_008268.json:
     "body": "Assignee: @seblabbe\n\nCC:  abmasse\n\nThis patch adds a new implementation for construction of Christoffel words using continued fraction :\n\n\n```\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='linear')\n625 loops, best of 3: 67.7 \u00b5s per loop\nsage: %timeit words.ChristoffelWord(5, 9, algorithm='cf')\n625 loops, best of 3: 309 \u00b5s per loop\n```\n\n\nFor large words, it is much faster than the actual implementation.\n\n\n```\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='linear')\n5 loops, best of 3: 111 ms per loop\nsage: %timeit words.ChristoffelWord(500, 90001, algorithm='cf')\n125 loops, best of 3: 4 ms per loop\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8268\n\n",
     "created_at": "2010-02-15T00:15:17Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "Improve speed of Christoffel word construction",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8268",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: @seblabbe
@@ -51,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8268
 
 ---
 
-archive/issue_comments_073185.json:
+archive/issue_comments_073062.json:
 ```json
 {
     "body": "Attachment [trac_8268_speed_up_Christoffel-sl.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_speed_up_Christoffel-sl.patch) by @seblabbe created at 2010-02-15 00:21:53",
     "created_at": "2010-02-15T00:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73185",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73062",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -69,15 +67,15 @@ Attachment [trac_8268_speed_up_Christoffel-sl.patch](tarball://root/attachments/
 
 ---
 
-archive/issue_comments_073186.json:
+archive/issue_comments_073063.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-15T00:21:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73186",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73063",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -87,15 +85,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_073187.json:
+archive/issue_comments_073064.json:
 ```json
 {
     "body": "I tested the improved function. It is indeed much faster, especially when the two prime numbers are big. The code makes sense, all tests passed, and I tried also other values with very big prime numbers: no problem. The doc builds fine too.\n\nI made very minor changes (typos, punctuation, etc.). Positive review.",
     "created_at": "2010-02-24T01:53:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73187",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73064",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -107,15 +105,15 @@ I made very minor changes (typos, punctuation, etc.). Positive review.
 
 ---
 
-archive/issue_comments_073188.json:
+archive/issue_comments_073065.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-24T01:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73188",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73065",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -125,15 +123,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_073189.json:
+archive/issue_comments_073066.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"christoffel words\".",
     "created_at": "2010-02-24T01:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73189",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73066",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -143,15 +141,15 @@ Changing keywords from "" to "christoffel words".
 
 ---
 
-archive/issue_comments_073190.json:
+archive/issue_comments_073067.json:
 ```json
 {
     "body": "Sorry, forgot two small things, uploading a new patch in a few minutes.",
     "created_at": "2010-02-24T01:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73190",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73067",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -161,15 +159,15 @@ Sorry, forgot two small things, uploading a new patch in a few minutes.
 
 ---
 
-archive/issue_comments_073191.json:
+archive/issue_comments_073068.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-02-24T01:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73191",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73068",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -179,15 +177,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_073192.json:
+archive/issue_comments_073069.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-02-24T02:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73192",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73069",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -197,15 +195,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_073193.json:
+archive/issue_comments_073070.json:
 ```json
 {
     "body": "Minor change -- apply on top",
     "created_at": "2010-02-24T02:08:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73193",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73070",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -215,15 +213,15 @@ Minor change -- apply on top
 
 ---
 
-archive/issue_comments_073194.json:
+archive/issue_comments_073071.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-24T02:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73194",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73071",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -233,15 +231,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_073195.json:
+archive/issue_comments_073072.json:
 ```json
 {
     "body": "Attachment [trac_8268_review-abm.patch](tarball://root/attachments/some-uuid/ticket8268/trac_8268_review-abm.patch) by abmasse created at 2010-02-24 02:09:36",
     "created_at": "2010-02-24T02:09:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73195",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73072",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -251,15 +249,15 @@ Attachment [trac_8268_review-abm.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_073196.json:
+archive/issue_comments_073073.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-02T21:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73196",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73073",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -269,15 +267,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_073197.json:
+archive/issue_comments_073074.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. [trac_8268_speed_up_Christoffel-sl.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8268/trac_8268_speed_up_Christoffel-sl.patch)\n2. [trac_8268_review-abm.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8268/trac_8268_review-abm.patch)",
     "created_at": "2010-03-02T21:30:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8268",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73197",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8268#issuecomment-73074",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

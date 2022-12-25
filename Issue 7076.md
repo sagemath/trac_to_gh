@@ -6,15 +6,13 @@ archive/issues_007076.json:
     "body": "Assignee: boothby\n\nKeywords: sagenb notebook\n\nThis increases security (prevents a DoS by introspecting constantly), and ensures that it is done in a separate process (which may be in an entirely different server)\n\nIssue created by migration from https://trac.sagemath.org/ticket/7076\n\n",
     "created_at": "2009-09-29T19:48:30Z",
     "labels": [
-        "notebook",
-        "major",
-        "enhancement"
+        "component: notebook"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "SageNB -- Do ReST introspection on a `worksheet_process`",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7076",
-    "user": "@TimDumol"
+    "user": "https://github.com/TimDumol"
 }
 ```
 Assignee: boothby
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7076
 
 ---
 
-archive/issue_comments_058518.json:
+archive/issue_comments_058408.json:
 ```json
 {
     "body": "Attachment [trac_7076-introspection-reimplementation.patch](tarball://root/attachments/some-uuid/ticket7076/trac_7076-introspection-reimplementation.patch) by @TimDumol created at 2009-09-29 19:49:59\n\nReimplements introspection.",
     "created_at": "2009-09-29T19:49:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7076",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58518",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58408",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -51,15 +49,15 @@ Reimplements introspection.
 
 ---
 
-archive/issue_comments_058519.json:
+archive/issue_comments_058409.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-29T20:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7076",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58519",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58409",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -69,15 +67,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_058520.json:
+archive/issue_comments_058410.json:
 ```json
 {
     "body": "I've applied this to the notebook.",
     "created_at": "2009-09-29T20:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7076",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58520",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7076#issuecomment-58410",
+    "user": "https://github.com/williamstein"
 }
 ```
 

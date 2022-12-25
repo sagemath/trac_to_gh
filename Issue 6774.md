@@ -6,15 +6,13 @@ archive/issues_006774.json:
     "body": "Assignee: tba\n\nHello !\n\nI thought it was a pity Sage contained nothing yet about Graph theory. This is what I have written to fix it... Merge any of your ideas in it, it can not hope to be complete !\n\nAnd.... If I forgot your country when coloring the map of Western Europe, or if you do not stand to watch Western Europe being colored while your country is not, just add the data to the document ;-)\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/6774\n\n",
     "created_at": "2009-08-18T17:08:45Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch, needs review] tour Graph Theory",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6774",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: tba
@@ -35,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6774
 
 ---
 
-archive/issue_comments_055772.json:
+archive/issue_comments_055670.json:
 ```json
 {
     "body": "Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/graph_tour.patch) by @nathanncohen created at 2009-08-18 17:09:01",
     "created_at": "2009-08-18T17:09:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55772",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55670",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -53,15 +51,15 @@ Attachment [graph_tour.patch](tarball://root/attachments/some-uuid/ticket6774/gr
 
 ---
 
-archive/issue_comments_055773.json:
+archive/issue_comments_055671.json:
 ```json
 {
     "body": "Attachment [trac-6774-graph-tour-review.patch](tarball://root/attachments/some-uuid/ticket6774/trac-6774-graph-tour-review.patch) by @jasongrout created at 2009-09-17 09:31:37\n\napply on top of previous patch",
     "created_at": "2009-09-17T09:31:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55773",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55671",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -73,15 +71,15 @@ apply on top of previous patch
 
 ---
 
-archive/issue_comments_055774.json:
+archive/issue_comments_055672.json:
 ```json
 {
     "body": "I added stylistic/punctuation corrections.  Positive review pending the examples actually working (I believe they need ncohen's patches to be merged in).",
     "created_at": "2009-09-17T09:32:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55774",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55672",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -91,15 +89,15 @@ I added stylistic/punctuation corrections.  Positive review pending the examples
 
 ---
 
-archive/issue_comments_055775.json:
+archive/issue_comments_055673.json:
 ```json
 {
     "body": "I guess I should change this to \"positive review\", and just say it depends on whatever tickets implement the functionality in the examples.",
     "created_at": "2009-09-17T19:17:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55775",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55673",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -109,15 +107,15 @@ I guess I should change this to "positive review", and just say it depends on wh
 
 ---
 
-archive/issue_comments_055776.json:
+archive/issue_comments_055674.json:
 ```json
 {
     "body": "Merged patches in this order:\n\n1. `graph_tour.patch`\n2. `trac-6774-graph-tour-review.patch`\n\nSee #6952 for a follow-up to this ticket.",
     "created_at": "2009-09-17T23:06:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55776",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55674",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -132,15 +130,15 @@ See #6952 for a follow-up to this ticket.
 
 ---
 
-archive/issue_comments_055777.json:
+archive/issue_comments_055675.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-17T23:06:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55777",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55675",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -150,15 +148,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_055778.json:
+archive/issue_comments_055676.json:
 ```json
 {
     "body": "I assume that you merged the tickets that define the functions listed here (i.e., you were able to run doctests on this file and everything was okay).  The functions in this file did not work for me with 4.1.1.alpha1, presumably because they hadn't been merged at that point.",
     "created_at": "2009-09-19T02:58:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55778",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55676",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -168,15 +166,15 @@ I assume that you merged the tickets that define the functions listed here (i.e.
 
 ---
 
-archive/issue_comments_055779.json:
+archive/issue_comments_055677.json:
 ```json
 {
     "body": "Replying to [comment:4 jason]:\n> I assume that you merged the tickets that define the functions listed here\nYes, I have done so.\n\n\n\n\n\n> (i.e., you were able to run doctests on this file and everything was okay).\nYes, with the two patches on this ticket all doctests in the tutorial pass.",
     "created_at": "2009-09-19T19:27:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55779",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55677",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -195,15 +193,15 @@ Yes, with the two patches on this ticket all doctests in the tutorial pass.
 
 ---
 
-archive/issue_comments_055780.json:
+archive/issue_comments_055678.json:
 ```json
 {
     "body": "Replying to [comment:5 mvngu]:\n> Replying to [comment:4 jason]:\n> > I assume that you merged the tickets that define the functions listed here\n> Yes, I have done so.\n\nNo, you haven't.  These functions are defined in #6679 and #6680, which haven't been reviewed, let alone merged.  This ticket should have been marked as \"depends on #6679 and #6680\": we can't have functions mentioned in the tutorial which are not yet part of Sage.  For now, the graph theory tour has been removed from the tutorial -- see #7149.\n\nWhen the tickets #6679 and #6680 have been merged, then open up a new ticket to reinstate the graph theory tour (the corrected version, as of #6952).  Before running doctests, apply the script patches from #6572 to make sure that everything is getting tested -- the current doctesting system is broken, so many doctests in .rst files are inadvertently skipped.",
     "created_at": "2009-10-08T02:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55780",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55678",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -220,15 +218,15 @@ When the tickets #6679 and #6680 have been merged, then open up a new ticket to 
 
 ---
 
-archive/issue_comments_055781.json:
+archive/issue_comments_055679.json:
 ```json
 {
     "body": "I would have prefered the fixing to be \"let's review these two patches now to have a good Graph Theory Tour\", but removing it for the moment is a good solution too..\nPerhaps Minh just meant that he had applied the corresponding patches to test the tutorial..\n\nThe thing is that patches #6679 and #6680 define for Sage some of the most important functions in Graph Theory ( Flows, matching, graph coloring, connectivity, etc .. )\n\nThe first version is two month old, and since then I have had to update them each time class MIP is modified. I do not even know myself how many things I have yet to write based on these functions.. What could we do about it ? If the code is not commented enough, if the only things you need are references, tell me and they'll be there in a few seconds :-)",
     "created_at": "2009-10-08T06:15:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55781",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55679",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -243,15 +241,15 @@ The first version is two month old, and since then I have had to update them eac
 
 ---
 
-archive/issue_comments_055782.json:
+archive/issue_comments_055680.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2009-11-24T23:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55782",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55680",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -261,15 +259,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_055783.json:
+archive/issue_comments_055681.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2009-11-24T23:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55783",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55681",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -279,15 +277,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_055784.json:
+archive/issue_comments_055682.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-24T23:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55784",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55682",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -297,15 +295,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_055785.json:
+archive/issue_comments_055683.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-11-29T10:15:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55785",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55683",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -315,15 +313,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_055786.json:
+archive/issue_comments_055684.json:
 ```json
 {
     "body": "I thought that we didn't want things in the tutorial that depended on optional packages.",
     "created_at": "2009-11-29T10:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55786",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55684",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -333,15 +331,15 @@ I thought that we didn't want things in the tutorial that depended on optional p
 
 ---
 
-archive/issue_comments_055787.json:
+archive/issue_comments_055685.json:
 ```json
 {
     "body": "Replying to [comment:11 mhansen]:\n> I thought that we didn't want things in the tutorial that depended on optional packages.\nThat is correct. Anything in the attached patches that uses optional packages should be removed. A new patch should be attached that still gives a tour of graph theory in Sage, but without using any optional packages.",
     "created_at": "2009-11-29T10:25:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55787",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55685",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -353,15 +351,15 @@ That is correct. Anything in the attached patches that uses optional packages sh
 
 ---
 
-archive/issue_comments_055788.json:
+archive/issue_comments_055686.json:
 ```json
 {
     "body": "Is it just because it would be a legal problem for Sage to claim as \"available\" functions that we cannot provide without the addition of a software we are not allowed to embed ?\n\nIn this case I understand this decision, but you have to consider the fact that it is very likely 99% of Sage's graph theoretical functions will depend on Linear Programming by the time people REWRITE the functions I defined using Linear Programming through other means.\n\nI'll just try again to find a free LP solver or an old version of GLPK. And in the meantine I'll just update my personnal tutorial on Graphs (available pretty soon).. :-)",
     "created_at": "2009-11-29T10:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55788",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55686",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -375,15 +373,15 @@ I'll just try again to find a free LP solver or an old version of GLPK. And in t
 
 ---
 
-archive/issue_comments_055789.json:
+archive/issue_comments_055687.json:
 ```json
 {
     "body": "Besides, this can be updated because of ticket #6813 which just got merged... We have much more that eastern europe in Sage now :-)",
     "created_at": "2009-11-29T10:44:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55789",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55687",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -393,15 +391,15 @@ Besides, this can be updated because of ticket #6813 which just got merged... We
 
 ---
 
-archive/issue_comments_055790.json:
+archive/issue_comments_055688.json:
 ```json
 {
     "body": "Replying to [comment:13 ncohen]:\n> Is it just because it would be a legal problem for Sage to claim as \"available\" functions that we cannot provide without the addition of a software we are not allowed to embed ?\n\nIt's because everything in the tutorial should \"just work\".  You shouldn't have to install anything extra, it should work right out of the box.",
     "created_at": "2009-11-29T16:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55790",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55688",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -414,15 +412,15 @@ It's because everything in the tutorial should "just work".  You shouldn't have 
 
 ---
 
-archive/issue_comments_055791.json:
+archive/issue_comments_055689.json:
 ```json
 {
     "body": "Can we close this as \"won't fix\"?",
     "created_at": "2009-12-22T00:12:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55791",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55689",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -432,15 +430,15 @@ Can we close this as "won't fix"?
 
 ---
 
-archive/issue_comments_055792.json:
+archive/issue_comments_055690.json:
 ```json
 {
     "body": "The graph theory tour as is cannot be added to the tutorial since it depends on an optional package. However, you can open a ticket to add that tour to the Constructions document.",
     "created_at": "2009-12-22T03:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55792",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55690",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -450,15 +448,15 @@ The graph theory tour as is cannot be added to the tutorial since it depends on 
 
 ---
 
-archive/issue_comments_055793.json:
+archive/issue_comments_055691.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2009-12-22T03:58:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6774",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55793",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6774#issuecomment-55691",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

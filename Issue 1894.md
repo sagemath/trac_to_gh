@@ -6,15 +6,14 @@ archive/issues_001894.json:
     "body": "Assignee: failure\n\n\n```\n\nFile \"toy_buchberger.py\", line 60:\n    sage: I = sage.rings.ideal.Katsura(P)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/x/build/sage-2.10.1.alpha1/local/lib/python2.5/doctest.py\", line 1212, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_0[12]>\", line 1, in <module>\n        I = sage.rings.ideal.Katsura(P)###line 60:\n    sage: I = sage.rings.ideal.Katsura(P)\n      File \"/home/x/build/sage-2.10.1.alpha1/local/lib/python2.5/site-packages/sage/rings/ideal.py\", line 520, in Katsura\n        return R.ideal(I)\n      File \"multi_polynomial_libsingular.pyx\", line 703, in sage.rings.polynomial.multi_polynomial_libsingular.MPolynomialRing_libsingular.ideal\n        gens = list(gens)\n      File \"/home/x/build/sage-2.10.1.alpha1/local/lib/python2.5/site-packages/sage/interfaces/singular.py\", line 1132, in __iter__\n        if self.type()=='matrix':\n      File \"/home/x/build/sage-2.10.1.alpha1/local/lib/python2.5/site-packages/sage/interfaces/singular.py\", line 1129, in type\n        return m.group(int(1))\n    AttributeError: 'NoneType' object has no attribute 'group'\n**********************************************************************\nFile \"toy_buchberger.py\", line 62:\n    sage: I\nExpected:\n    Ideal (a + 2*b + 2*c - 1, a^2 + 2*b^2 + 2*c^2 - a, 2*a*b + 2*b*c - b) of Multivariate Polynomial Ring in a, b, c over Finite Field of size 127\nGot:\n    Ideal (a + 2*b + 2*c + 2*e + 2*f + 2*g - 1, a^2 + 2*b^2 + 2*c^2 + 2*e^2 + 2*f^2 + 2*g^2 - a, 2*a*b + 2*b*c + 2*c*e + 2*e*f + 2*f*g - b, b^2 + 2*a*c + 2*b*e + 2*c*f + 2*e*g - c, 2*b*c + 2*a*e + 2*b*f + 2*c*g - e, c^2 + 2*b*e + 2*a*f + 2*b*g - f) of Multivariate Polynomial Ring in a, b, c, e, f, g, h, i, j, k over Finite Field of size 32003\n**********************************************************************\nFile \"toy_buchberger.py\", line 67:\n    sage: buchberger(I)\nExpected:\n    (a + 2*b + 2*c - 1, a^2 + 2*b^2 + 2*c^2 - a) => -2*b^2 - 6*b*c - 6*c^2 + b + 2*c\n    G: set([a + 2*b + 2*c - 1, 2*a*b + 2*b*c - b, a^2 + 2*b^2 + 2*c^2 - a, -2*b^2 - 6*b*c - 6*c^2 + b + 2*c])\n    <BLANKLINE>\n```\n\nMore follows for hundreds of lines\nGentoo  x64 gcc 4.2.2\n\nIssue created by migration from https://trac.sagemath.org/ticket/1894\n\n",
     "created_at": "2008-01-23T15:01:45Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.1",
     "title": "toy_buchberger failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1894",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: failure
@@ -67,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1894
 
 ---
 
-archive/issue_comments_011992.json:
+archive/issue_comments_011963.json:
 ```json
 {
     "body": "Attachment [trac_1894_toybuchberger.patch](tarball://root/attachments/some-uuid/ticket1894/trac_1894_toybuchberger.patch) by @malb created at 2008-01-23 16:50:05\n\nfixes bug and adapts doctest",
     "created_at": "2008-01-23T16:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1894#issuecomment-11992",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1894#issuecomment-11963",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -87,15 +86,15 @@ fixes bug and adapts doctest
 
 ---
 
-archive/issue_comments_011993.json:
+archive/issue_comments_011964.json:
 ```json
 {
     "body": "Patch looks good to me. Doctests pass now.",
     "created_at": "2008-01-23T22:16:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1894#issuecomment-11993",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1894#issuecomment-11964",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -105,15 +104,15 @@ Patch looks good to me. Doctests pass now.
 
 ---
 
-archive/issue_comments_011994.json:
+archive/issue_comments_011965.json:
 ```json
 {
     "body": "Merged in Sage 2.10.1.alpha2",
     "created_at": "2008-01-23T22:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1894#issuecomment-11994",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1894#issuecomment-11965",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -123,15 +122,15 @@ Merged in Sage 2.10.1.alpha2
 
 ---
 
-archive/issue_comments_011995.json:
+archive/issue_comments_011966.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-23T22:17:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1894",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1894#issuecomment-11995",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1894#issuecomment-11966",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

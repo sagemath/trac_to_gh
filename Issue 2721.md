@@ -6,15 +6,14 @@ archive/issues_002721.json:
     "body": "Assignee: failure\n\nI ran a parallel doctest while I was editing a file in Emacs.  Evidently Emacs creates strange symlinks that point to nowhere as a file locking mechanism:\n\n```\nlrwxrwxrwx 1 cwitty cwitty     46 2008-03-29 09:11 .#randstate.pyx -> cwitty@magnetar.newtonlabs.com.3701:1202495200\n```\n\n\nThe doctest runner tried to doctest \".#randstate.pyx\" and got this error message:\n\n```\nException in thread Thread-3:\nTraceback (most recent call last):\n  File \"/home/cwitty/sage/local/lib/python2.5/threading.py\", line 460, in __bootstrap\n    self.run()\n  File \"/home/cwitty/sage/local/bin/sage-ptest\", line 70, in run\n    e = test(F, 'doctest '+opts)\n  File \"/home/cwitty/sage/local/bin/sage-ptest\", line 140, in test\n    if not skip(F):\n  File \"/home/cwitty/sage/local/bin/sage-ptest\", line 116, in skip\n    G = abspath(F)\n  File \"/home/cwitty/sage/local/bin/sage-ptest\", line 86, in abspath\n    return strip_automount_prefix(os.path.abspath(x))\n  File \"/home/cwitty/sage/local/bin/sage-ptest\", line 103, in strip_automount_prefix\n    inode1 = os.stat(filename)[1]\nOSError: [Errno 2] No such file or directory: '/home/cwitty/sage/devel/sage-mq/sage/misc/.#randstate.pyx'\n```\n\n\nThere are a couple of problems here.\n\n1) I'm guessing that this crashed this doctest-running thread, so that I was running with one fewer thread than I wanted for the rest of the test run.\n\n2) The problem did not show up in the report at the end of the run.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2721\n\n",
     "created_at": "2008-03-29T17:23:13Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "parallel doctest not robust against filesystem issues",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2721",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: failure
@@ -62,15 +61,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2721
 
 ---
 
-archive/issue_comments_018759.json:
+archive/issue_comments_018720.json:
 ```json
 {
     "body": "Attachment [trac_2721.patch](tarball://root/attachments/some-uuid/ticket2721/trac_2721.patch) by cwitty created at 2008-03-29 21:32:28\n\nLooks good; I tested a couple of things (including my original problem case) and couldn't make it fail.",
     "created_at": "2008-03-29T21:32:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2721",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2721#issuecomment-18759",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2721#issuecomment-18720",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -82,15 +81,15 @@ Looks good; I tested a couple of things (including my original problem case) and
 
 ---
 
-archive/issue_comments_018760.json:
+archive/issue_comments_018721.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-29T21:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2721",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2721#issuecomment-18760",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2721#issuecomment-18721",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -100,15 +99,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018761.json:
+archive/issue_comments_018722.json:
 ```json
 {
     "body": "Merged in Sage 2.11.rc0",
     "created_at": "2008-03-29T21:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2721",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2721#issuecomment-18761",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2721#issuecomment-18722",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005474.json:
     "body": "Assignee: @jhpalmieri\n\nThere was a request on [sage-support](http://groups.google.com/group/sage-support/browse_frm/thread/f12feafb8e4285ce) for the option to change how matrices are displayed, from parentheses to square brackets.  William made this suggestion:\n\n```\nHow about adding a function to matrix0.pyx that sets a global variable\nin that file to the left and right delimiters for matrices?\n\nsage.matrix.matrix0.set_latex_delimiters('[',']')\n\nwould set them.  That's minimally intrusive.  Later on somebody could\ncome up with some grand scheme for customizing latex output, but\nplease don't until there are a few more use cases. \n```\n\nThe attached patch implements \"set_matrix_latex_delimiters\". (I changed the name slightly.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5474\n\n",
     "created_at": "2009-03-10T21:23:00Z",
     "labels": [
-        "linear algebra",
-        "minor",
-        "enhancement"
+        "component: linear algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4",
     "title": "[with patch, needs review] delimiters for LaTeX representation of matrices",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5474",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jhpalmieri
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5474
 
 ---
 
-archive/issue_comments_042466.json:
+archive/issue_comments_042383.json:
 ```json
 {
     "body": "Attachment [vector-latex-delimiters.patch](tarball://root/attachments/some-uuid/ticket5474/vector-latex-delimiters.patch) by @jhpalmieri created at 2009-03-10 21:46:13",
     "created_at": "2009-03-10T21:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42466",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42383",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -61,15 +60,15 @@ Attachment [vector-latex-delimiters.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_042467.json:
+archive/issue_comments_042384.json:
 ```json
 {
     "body": "Here's a vector version, too.",
     "created_at": "2009-03-10T21:46:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42467",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42384",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -79,15 +78,15 @@ Here's a vector version, too.
 
 ---
 
-archive/issue_comments_042468.json:
+archive/issue_comments_042385.json:
 ```json
 {
     "body": "Frickin' awesome!   NIce!",
     "created_at": "2009-03-10T22:37:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42468",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42385",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -97,15 +96,15 @@ Frickin' awesome!   NIce!
 
 ---
 
-archive/issue_comments_042469.json:
+archive/issue_comments_042386.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.4.final.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-11T00:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42469",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42386",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +118,15 @@ Michael
 
 ---
 
-archive/issue_comments_042470.json:
+archive/issue_comments_042387.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-11T00:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42470",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42387",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +136,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_042471.json:
+archive/issue_comments_042388.json:
 ```json
 {
     "body": "Thank you!  This has been a minor annoyance when using Sage in class, since we use different delimiters than Sage...",
     "created_at": "2009-03-11T00:48:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42471",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42388",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -155,15 +154,15 @@ Thank you!  This has been a minor annoyance when using Sage in class, since we u
 
 ---
 
-archive/issue_comments_042472.json:
+archive/issue_comments_042389.json:
 ```json
 {
     "body": "Replying to [comment:4 jason]:\n> Thank you!  This has been a minor annoyance when using Sage in class, since we use different delimiters than Sage...\n\nYou're welcome! I hope it works well for you.",
     "created_at": "2009-03-11T01:08:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42472",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/5474#issuecomment-42389",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

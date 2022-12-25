@@ -6,15 +6,14 @@ archive/issues_002667.json:
     "body": "Assignee: @williamstein\n\n\nWhen applying the patch for a overhauled matrix() function at \n#2651, I get doctest failures \nfrom sage/plot/plot3d/transform.pyx related to calling \nmatrix() with a list of rows, but specifying a number of rows that \nconflicts.\n\nYou can see these failures by applying the patch and running sage -t \n-long on \ndevel/sage/sage/plot/plot3d/shapes2.py (and the same failures make a \nwhole bunch of other doctests fail too).\n\nFor transform.pyx, the call to matrix on line 44 appears to flatten the \ntrans argument (i.e., list(trans)), but many times what is actually \npassed to Sage is a list containing a single RDF vector instead.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2667\n\n",
     "created_at": "2008-03-25T21:26:00Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "transform.pyx calls matrix() with an RDF vector inside of a list instead of a flat list.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2667",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2667
 
 ---
 
-archive/issue_comments_018358.json:
+archive/issue_comments_018319.json:
 ```json
 {
     "body": "Attachment [transform-trac2667.patch](tarball://root/attachments/some-uuid/ticket2667/transform-trac2667.patch) by @rhinton created at 2008-03-29 04:55:58\n\nI discussed this solution with robertwb and cwitty.  I added a `__list__()` method to RealDoubleVectorSpaceElement to allow its elements to be converted to a list.  This makes the hand-off between Transform and matrix() work (see transform.pyx line 44).  \n\nHowever, the vector was still coming into the Transform object wrapped in a one-element list.  The problem was that Graphics3d.translate() allows a variable number of arguments for convenience.  Before, if the first argument was a list or a tuple (note NOT a vector), this sequence was passed directly to self.transform().  As suggested by robertwb, replacing the code\n\n```\n        if isinstance(x[0], (tuple, list)):\n            x = x[0]\n```\n\nwith \n\n```\n        if len(x)==1:\n            x = x[0]\n```\n\nworks since a sequence is the only acceptable one-argument input in this case.  This solution also avoids having to check types.\n\nNote that changing the isinstance() call in the scale() method just below DOES NOT work.  I didn't take the time to figure out why; everything seems to be working now.  (The special-case code around line 627 and the fact that scale() is meaningful with only one input argument probably have something to do with it.)",
     "created_at": "2008-03-29T04:55:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18358",
-    "user": "@rhinton"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18319",
+    "user": "https://github.com/rhinton"
 }
 ```
 
@@ -82,15 +81,15 @@ Note that changing the isinstance() call in the scale() method just below DOES N
 
 ---
 
-archive/issue_comments_018359.json:
+archive/issue_comments_018320.json:
 ```json
 {
     "body": "I don't think __list__ does anything.  See #2626 .",
     "created_at": "2008-03-29T21:01:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18359",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18320",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -100,15 +99,15 @@ I don't think __list__ does anything.  See #2626 .
 
 ---
 
-archive/issue_comments_018360.json:
+archive/issue_comments_018321.json:
 ```json
 {
     "body": "Attachment [2667.patch](tarball://root/attachments/some-uuid/ticket2667/2667.patch) by @mwhansen created at 2008-03-31 19:35:07",
     "created_at": "2008-03-31T19:35:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18360",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18321",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -118,15 +117,15 @@ Attachment [2667.patch](tarball://root/attachments/some-uuid/ticket2667/2667.pat
 
 ---
 
-archive/issue_comments_018361.json:
+archive/issue_comments_018322.json:
 ```json
 {
     "body": "I've removed __list__.  The patch applies, and sage -t -long on devel/sage/sage/plot/plot3d/shapes2.py passes when #2651 is applied.",
     "created_at": "2008-03-31T19:36:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18361",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18322",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -136,15 +135,15 @@ I've removed __list__.  The patch applies, and sage -t -long on devel/sage/sage/
 
 ---
 
-archive/issue_comments_018362.json:
+archive/issue_comments_018323.json:
 ```json
 {
     "body": "apply just 2667.patch; rhinton and mhansen (and maybe robertwb and cwitty?) should all probably get credit.",
     "created_at": "2008-03-31T19:41:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18362",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18323",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -154,15 +153,15 @@ apply just 2667.patch; rhinton and mhansen (and maybe robertwb and cwitty?) shou
 
 ---
 
-archive/issue_comments_018363.json:
+archive/issue_comments_018324.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha0",
     "created_at": "2008-03-31T19:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18363",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18324",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -172,15 +171,15 @@ Merged in Sage 3.0.alpha0
 
 ---
 
-archive/issue_comments_018364.json:
+archive/issue_comments_018325.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-31T19:47:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18364",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18325",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -190,15 +189,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018365.json:
+archive/issue_comments_018326.json:
 ```json
 {
     "body": "Attachment [transform-trac2667.2.patch](tarball://root/attachments/some-uuid/ticket2667/transform-trac2667.2.patch) by @rhinton created at 2008-03-31 19:54:27\n\nGood catch, mhansen.  Apply this patch instead of the previous patch.",
     "created_at": "2008-03-31T19:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18365",
-    "user": "@rhinton"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18326",
+    "user": "https://github.com/rhinton"
 }
 ```
 
@@ -210,15 +209,15 @@ Good catch, mhansen.  Apply this patch instead of the previous patch.
 
 ---
 
-archive/issue_comments_018366.json:
+archive/issue_comments_018327.json:
 ```json
 {
     "body": "Sorry, my page must not have refreshed.  Ignore my last patch and use mhansen's instead.",
     "created_at": "2008-04-01T15:28:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2667",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18366",
-    "user": "@rhinton"
+    "url": "https://github.com/sagemath/sagetest/issues/2667#issuecomment-18327",
+    "user": "https://github.com/rhinton"
 }
 ```
 

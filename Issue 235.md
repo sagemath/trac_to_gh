@@ -6,14 +6,13 @@ archive/issues_000235.json:
     "body": "Assignee: @williamstein\n\nNeed to do \n\n    ranlib $SAGE_ROOT/local/lib/*.a \n\nin some cases when move sage. \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/235\n\n",
     "created_at": "2007-01-31T01:15:25Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "title": "ranlib and binaries",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/235",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/235
 
 ---
 
-archive/issue_comments_001038.json:
+archive/issue_comments_001035.json:
 ```json
 {
     "body": "this is not much of a bug report.  useless.",
     "created_at": "2007-08-18T09:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/235#issuecomment-1038",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/235#issuecomment-1035",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -51,15 +50,15 @@ this is not much of a bug report.  useless.
 
 ---
 
-archive/issue_comments_001039.json:
+archive/issue_comments_001036.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2007-08-18T09:55:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/235",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/235#issuecomment-1039",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/235#issuecomment-1036",
+    "user": "https://github.com/williamstein"
 }
 ```
 

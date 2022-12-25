@@ -6,15 +6,14 @@ archive/issues_009715.json:
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  dkirkby @jasongrout @qed777\n\nAs reported on :\n\nhttp://groups.google.com/group/sage-release/browse_thread/thread/fa2facb36603675a\n\nThe only random part being the graph generation, it shouldn't be hard to find a workaround....\n\n\n```\n>> sage -t  devel/sage-main/sage/graphs/graph.py\n>> **********************************************************************\n>> File \"/Volumes/E/sage-4.5.2.rc0/devel/sage-main/sage/graphs/graph.py\",\n>> line 1347:\n>>     sage: cycle.order() % 2 == 0\n>> Exception raised:\n>>     Traceback (most recent call last):\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1231, in run_one_test\n>>         self.run_one_example(test, example, filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/sagedoctest.py\", line\n>> 38, in run_one_example\n>>         OrigDocTestRunner.run_one_example(self, test, example,\n>> filename, compileflags)\n>>       File \"/Volumes/E/sage-4.5.2.rc0/local/bin/ncadoctest.py\", line\n>> 1172, in run_one_example\n>>         compileflags, 1) in test.globs\n>>       File \"<doctest __main__.example_6[9]>\", line 1, in <module>\n>>         cycle.order() % Integer(2) == Integer(0)###line 1347:\n>>     sage: cycle.order() % 2 == 0\n>>     AttributeError: 'bool' object has no attribute 'order' \n```\n\n\nNathann\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9715\n\n",
     "created_at": "2010-08-10T03:37:28Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Failing doctest in even_hole_free",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9715",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9715
 
 ---
 
-archive/issue_comments_094789.json:
+archive/issue_comments_094631.json:
 ```json
 {
     "body": "Attachment [trac_9715.patch](tarball://root/attachments/some-uuid/ticket9715/trac_9715.patch) by @nathanncohen created at 2010-08-10 04:10:14",
     "created_at": "2010-08-10T04:10:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94789",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94631",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -82,15 +81,15 @@ Attachment [trac_9715.patch](tarball://root/attachments/some-uuid/ticket9715/tra
 
 ---
 
-archive/issue_comments_094790.json:
+archive/issue_comments_094632.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-10T04:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94790",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94632",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -100,15 +99,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_094791.json:
+archive/issue_comments_094633.json:
 ```json
 {
     "body": "With this, the docstring does not depend on any -- possibly rare -- probabilistic event. Good to know that the docstrings reports errors that do not appear on 100 000 trials though. `:-D`\n\nNathann",
     "created_at": "2010-08-10T04:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94791",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94633",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -120,15 +119,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094792.json:
+archive/issue_comments_094634.json:
 ```json
 {
     "body": "This ticket is now invalid because of #10081 and #9422\n\nNathann",
     "created_at": "2010-10-19T14:41:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94792",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94634",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -140,15 +139,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094793.json:
+archive/issue_comments_094635.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-10-19T21:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94793",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94635",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -158,15 +157,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_094794.json:
+archive/issue_comments_094636.json:
 ```json
 {
     "body": "Replying to [comment:2 ncohen]:\n> This ticket is now invalid because of #10081 and #9422\n\nAlso related: #9925.",
     "created_at": "2010-10-19T21:54:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9715",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94794",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9715#issuecomment-94636",
+    "user": "https://github.com/qed777"
 }
 ```
 

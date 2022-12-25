@@ -6,15 +6,13 @@ archive/issues_005500.json:
     "body": "Assignee: tba\n\n\n```\nFolks,\n\nI have one suggestion for the Sage Tutorial.\n\nIn Section 2.3, after the text\n\n## sage: def is_even(n):\n...       return n%2 == 0\n## I suggest that you add an instruction to press [Enter/Return/Newline]\nafter the\n\n...       return n%2 == 0\n\nto conclude the definition.\n\nWhen I followed the instruction exactly as it is given, without\ninserting a blank line, I got an error like this:\n### sage: def is_even(n):\n....:     return n%2 == 0\n....: sage: is_even(2)\n------------------------------------------------------------\n   File \"<ipython console>\", line 3\n     sage: is_even(Integer(2))\n        ^\nSyntaxError: invalid syntax\n### It was only after I emailed sage-support that I was told I needed to\ninsert a blank line to conclude the definition. Because I am new to\nPython, this was not old hat to me. Hence my suggestion to append:\n#### Insert a blank line here by pressing [Return or Enter]\n\n(after the line\n\n...       return n%2 == 0)\n#### Many thanks.\n\nChandra\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5500\n\n",
     "created_at": "2009-03-12T05:57:58Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "add remark to tutorial to make defining functions at the command line much clearer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5500",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: tba
@@ -68,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5500
 
 ---
 
-archive/issue_comments_042722.json:
+archive/issue_comments_042639.json:
 ```json
 {
     "body": "Attachment [5500-tut.patch](tarball://root/attachments/some-uuid/ticket5500/5500-tut.patch) by @robertwb created at 2009-03-19 05:09:56\n\nI've incorporated the suggestions at \n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/5dd8364a8b069d6c/ebc01381136f476d\n\ninto a patch.",
     "created_at": "2009-03-19T05:09:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42722",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42639",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -92,15 +90,15 @@ into a patch.
 
 ---
 
-archive/issue_comments_042723.json:
+archive/issue_comments_042640.json:
 ```json
 {
     "body": "Fix doctest failure",
     "created_at": "2009-03-19T06:51:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42723",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42640",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -110,15 +108,15 @@ Fix doctest failure
 
 ---
 
-archive/issue_comments_042724.json:
+archive/issue_comments_042641.json:
 ```json
 {
     "body": "Attachment [trac_5500-referee.patch](tarball://root/attachments/some-uuid/ticket5500/trac_5500-referee.patch) by mvngu created at 2009-03-19 06:54:27\n\nREFEREE REPORT\n\n\n\nThe patch **5500-tut.patch** mostly looks good: it applies OK against Sage 3.4, but with one doctest failure:\n\n```\n[mvngu@sage ~]$ sage -t -long scratch/sage-3.4/devel/sage-5500/doc/en/tutorial/tour_help.rst\nsage -t -long \"devel/sage-5500/doc/en/tutorial/tour_help.rst\"\nTraceback (most recent call last):\n  File \"/home/mvngu/scratch/sage-3.4/tmp/tour_help.py\", line 296, in <module>\n    runner=runner)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/sagedoctest.py\", line 54, in testmod_returning_runner\n    runner=runner)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 1819, in testmod_returning_runner\n    for test in finder.find(m, name, globs=globs, extraglobs=extraglobs):\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 839, in find\n    self._find(tests, obj, name, module, source_lines, globs, {})\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 893, in _find\n    globs, seen)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 881, in _find\n    test = self._get_test(obj, name, module, globs, source_lines)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 965, in _get_test\n    filename, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 594, in get_doctest\n    return DocTest(self.get_examples(string, name), globs,\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 608, in get_examples\n    return [x for x in self.parse(string, name)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 570, in parse\n    self._parse_example(m, name, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 628, in _parse_example\n    self._check_prompt_blank(source_lines, indent, name, lineno)\n  File \"/home/mvngu/scratch/sage-3.4/local/bin/ncadoctest.py\", line 715, in _check_prompt_blank\n    line[indent:indent+3], line))\nValueError: line 9 of the docstring for __main__.example_0 lacks blank after ...: '    ...:      return n%Integer(2) == Integer(0)'\n\n\t [3.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t -long \"devel/sage-5500/doc/en/tutorial/tour_help.rst\"\nTotal time for all tests: 3.3 seconds\n```\n\nThis is caused by the following lines in the patch:\n\n```\n-    ...       return n%2 == 0\n+    ...:      return n%2 == 0\n+    ...:\n```\n\nThe other patch **trac_5500-referee.patch** should fix the above doctest failure.",
     "created_at": "2009-03-19T06:54:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42724",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42641",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -185,15 +183,15 @@ The other patch **trac_5500-referee.patch** should fix the above doctest failure
 
 ---
 
-archive/issue_comments_042725.json:
+archive/issue_comments_042642.json:
 ```json
 {
     "body": ":( I was trying to make things more explicit. New patch coming up.",
     "created_at": "2009-03-19T06:58:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42725",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42642",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -203,15 +201,15 @@ archive/issue_comments_042725.json:
 
 ---
 
-archive/issue_comments_042726.json:
+archive/issue_comments_042643.json:
 ```json
 {
     "body": "Nevermind, you already attached one. Looks good.",
     "created_at": "2009-03-19T06:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42726",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42643",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -221,15 +219,15 @@ Nevermind, you already attached one. Looks good.
 
 ---
 
-archive/issue_comments_042727.json:
+archive/issue_comments_042644.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-23T20:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42727",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42644",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -239,15 +237,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_042728.json:
+archive/issue_comments_042645.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-23T20:34:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5500",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42728",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5500#issuecomment-42645",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002733.json:
     "body": "Assignee: @timabbott\n\nIs this bug important enough to bother Bill Allombert (the maintainer of PARI in Debian) to upgrade PARI in Debian?\n\nsage -t  devel/sage-main/sage/matrix/tests.py               **********************************************************************\nFile \"tests.py\", line 55:\n    sage: a.mathnf(1)[1][1,] == gp('[4, 2, 1, 0, 3, 1, 1, 0, 1, 1, 2, 2, 3, 3, 0, 0, 1, 3]')\nExpected:\n    True\nGot:\n    False\n**********************************************************************\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2733\n\n",
     "created_at": "2008-03-30T05:14:16Z",
     "labels": [
-        "debian-package",
+        "component: debian-package",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002733.json:
     "title": "PARI in Debian has the mathnf bug",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2733",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2733
 
 ---
 
-archive/issue_comments_018808.json:
+archive/issue_comments_018769.json:
 ```json
 {
     "body": "This is not \"Sage Specific\": This is a packaging bug in Debian's pari.deb and should be filed as a bug report at the Debian bug tracker. See http://wiki.sagemath.org/TracGuidelines for the rules that up to now weren't written down.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-30T09:50:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2733",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2733#issuecomment-18808",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2733#issuecomment-18769",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -61,15 +61,15 @@ Michael
 
 ---
 
-archive/issue_comments_018809.json:
+archive/issue_comments_018770.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-03-30T09:50:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2733",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2733#issuecomment-18809",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2733#issuecomment-18770",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

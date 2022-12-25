@@ -6,15 +6,14 @@ archive/issues_002864.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nThe original Weyl group patch was described here:\n\nhttp://groups.google.com/group/sage-combinat-devel/browse_thread/thread/80515528dc9648fd?hl=en\n\nNo trac ticket was made, and the patch no longer applies without modification so I\nrevised it and am uploading it as this ticket.\n\nMike Hansen told me he wants to revise the patch in connection with a reorganization\nin which case this ticket might be superfluous. However I added one thing, which is\ninstructions for obtaining the character tables.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2864\n\n",
     "created_at": "2008-04-09T16:51:12Z",
     "labels": [
-        "combinatorics",
-        "minor",
-        "enhancement"
+        "component: combinatorics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "Weyl groups are implemented in rootsystem.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2864",
-    "user": "@dwbump"
+    "user": "https://github.com/dwbump"
 }
 ```
 Assignee: @mwhansen
@@ -40,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2864
 
 ---
 
-archive/issue_comments_019643.json:
+archive/issue_comments_019602.json:
 ```json
 {
     "body": "Attachment [weylgroup3.patch](tarball://root/attachments/some-uuid/ticket2864/weylgroup3.patch) by mabshoff created at 2008-04-09 17:17:33",
     "created_at": "2008-04-09T17:17:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19643",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19602",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -58,15 +57,15 @@ Attachment [weylgroup3.patch](tarball://root/attachments/some-uuid/ticket2864/we
 
 ---
 
-archive/issue_comments_019644.json:
+archive/issue_comments_019603.json:
 ```json
 {
     "body": "I realize this is \"not ready for review\" but I tested it out anyway. It down not apply to sage-3.0.alpga3 but can be applied \"manually\" (namely, read the man page for \"patch\" ...).\n\nI just checked that the above linked-to email does what it claims this patch does:\n\n\n```\nsage: G = WeylGroup(['F',4])\nsage: L = G.lattice()\nsage: G; L\nThe Weyl Group of type ['F', 4]\nAmbient lattice of the root system of type ['F', 4]\nsage: L = RootSystem(['F',4]).ambient_lattice()\nsage: G = L.weyl_group()\nsage: G; L\nThe Weyl Group of type ['F', 4]\nAmbient lattice of the root system of type ['F', 4]\nsage: G.order()\n1152\nsage: G.simple_reflections()\n\n[[1 0 0 0]\n[0 0 1 0]\n[0 1 0 0]\n[0 0 0 1],\n [1 0 0 0]\n[0 1 0 0]\n[0 0 0 1]\n[0 0 1 0],\n [ 1  0  0  0]\n[ 0  1  0  0]\n[ 0  0  1  0]\n[ 0  0  0 -1],\n [ 1/2  1/2  1/2  1/2]\n[ 1/2  1/2 -1/2 -1/2]\n[ 1/2 -1/2  1/2 -1/2]\n[ 1/2 -1/2 -1/2  1/2]]\nsage: g = G.simple_reflections()[0]*G.simple_reflections()[2]\nsage: g.order()\n2\nsage: g.length()\n2\nsage: L2 = G.lattice()\nsage: L == L2\nTrue\nsage: fw = L.fundamental_weights(); fw\n[(1, 1, 0, 0), (2, 1, 1, 0), (3/2, 1/2, 1/2, 1/2), (1, 0, 0, 0)]\nsage: rho = sum(fw); rho\n(11/2, 5/2, 3/2, 1/2)\nsage: g.action(rho)\n(11/2, 3/2, 5/2, -1/2)\n```\n\n\nVery nice so far! I'm posting the rebased patch to\nhttp://sage.math.washington.edu/home/wdj/patches/9467.patch\nin case it helps. (I hesitate to attach it to this ticket since I don't know if there are\nother plans in mind and don't want to confuse the issue.)",
     "created_at": "2008-04-09T18:27:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19644",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19603",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -132,15 +131,15 @@ other plans in mind and don't want to confuse the issue.)
 
 ---
 
-archive/issue_comments_019645.json:
+archive/issue_comments_019604.json:
 ```json
 {
     "body": "Replying to [comment:2 wdj]:\n\n>I realize this is \"not ready for review\" but I tested it out anyway. It down not apply to >sage-3.0.alpga3 but can be applied \"manually\" (namely, read the man page for \"patch\" ...).\n\nIt does apply directly to 3.0.alpha3 since it's a patch against 3.0.alpha3. \n\nFrom the combinat directory \"patch <weylgroup3.patch\" applies cleanly.\n\nI'm unsure why Michael Abshoff described it as not ready for review. One possible reason is that Mike Hanson intends reorganization of root_system.py.",
     "created_at": "2008-04-09T19:15:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19645",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19604",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -158,15 +157,15 @@ I'm unsure why Michael Abshoff described it as not ready for review. One possibl
 
 ---
 
-archive/issue_comments_019646.json:
+archive/issue_comments_019605.json:
 ```json
 {
     "body": "\"From the combinat directory \"patch <weylgroup3.patch\" applies cleanly.\"\n\nI would say that is the definition of \"applies manually\", so i agree with you!\nWhen I say it \"does not apply to sage-3.0.alpha3\" I mean that \nthe following does *not* occur:\n\n\n```\nsage: hg_sage.apply(\"/home/wdj/wdj/sagefiles/weylgroup3.patch\")\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg status\ncd \"/home/wdj/wdj/sagefiles/sage-3.0.alpha3/devel/sage\" && hg import   \"/home/wdj/wdj/sagefiles/weylgroup3.patch\"\napplying /home/wdj/wdj/sagefiles/weylgroup3.patch\ntransaction abort!\nrollback completed\nsage:\n```\n\nDid you create your patch using hg_sage.commit, hg_sage.bundle, hg_sage.log, hg_sage.export, as described (well, more-or-less described :-) on http://www.sagemath.org/doc/html/prog/node72.html ? If yes, then maybe my download was corrupted or something.",
     "created_at": "2008-04-09T19:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19646",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19605",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -194,15 +193,15 @@ Did you create your patch using hg_sage.commit, hg_sage.bundle, hg_sage.log, hg_
 
 ---
 
-archive/issue_comments_019647.json:
+archive/issue_comments_019606.json:
 ```json
 {
     "body": "Replying to [comment:3 bump]:\n> \n> I'm unsure why Michael Abshoff described it as not ready for review. One possible reason is that Mike Hanson intends reorganization of root_system.py.\n\nHi Dan,\n\nthis was the precise reason I marked it this way and I assume Mike will take care of this later.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-09T19:29:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19647",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19606",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -222,15 +221,15 @@ Michael
 
 ---
 
-archive/issue_comments_019648.json:
+archive/issue_comments_019607.json:
 ```json
 {
     "body": "Replying to [comment:4 wdj]:\n\nThe patch was made by running \"hg diff\". Michael Abshoff told me on IRC not to make patches that way so thanks for the doc link.\n\nBut to be clear, the patch didn't need to be rebased since it is a patch against 3.0-alpha3.",
     "created_at": "2008-04-09T19:39:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19648",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19607",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -244,15 +243,15 @@ But to be clear, the patch didn't need to be rebased since it is a patch against
 
 ---
 
-archive/issue_comments_019649.json:
+archive/issue_comments_019608.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-04-10T03:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19649",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19608",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -262,15 +261,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_019650.json:
+archive/issue_comments_019609.json:
 ```json
 {
     "body": "Attachment [2864.patch](tarball://root/attachments/some-uuid/ticket2864/2864.patch) by @mwhansen created at 2008-04-10 03:11:37\n\nI've done some work on the the patch (for example, caching the Weyl group, adding doctests to all the functions, etc.)  I've also put all the root_system code in  combinat/root_system/ which will be necessary as it grows.  This patch is made against 3.0.alpha3.",
     "created_at": "2008-04-10T03:11:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19650",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19609",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -282,15 +281,15 @@ I've done some work on the the patch (for example, caching the Weyl group, addin
 
 ---
 
-archive/issue_comments_019651.json:
+archive/issue_comments_019610.json:
 ```json
 {
     "body": "It's a big patch. I'll look at it today.\n\nMaybe Justin Walker should be added to the copyright in one file since he did a lot of work to code the exceptional root systems.",
     "created_at": "2008-04-10T13:55:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19651",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19610",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -302,15 +301,15 @@ Maybe Justin Walker should be added to the copyright in one file since he did a 
 
 ---
 
-archive/issue_comments_019652.json:
+archive/issue_comments_019611.json:
 ```json
 {
     "body": "Attachment [2864a.patch](tarball://root/attachments/some-uuid/ticket2864/2864a.patch) by @dwbump created at 2008-04-10 17:07:51\n\nAlthough the patch appears large, it is mostly reorganization. Apart from moving files around, a hash method is added to CartanType_simple and Weyl Groups are cached in improvement over the original patch. \n\nTwo minor problems:\n\n(1) the G2 patch (track #2808) was accidentally reverted.\n(2) Some words about how to get the character table were lost.\n\nThese are addressed by 2864a.patch which goes on top of 2864.patch.\n\nMy recommendation would be to merge 2864.patch + 2864a.patch.\n\nDan",
     "created_at": "2008-04-10T17:07:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19652",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19611",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -333,15 +332,15 @@ Dan
 
 ---
 
-archive/issue_comments_019653.json:
+archive/issue_comments_019612.json:
 ```json
 {
     "body": "Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2.patch) by @mwhansen created at 2008-04-10 20:30:10",
     "created_at": "2008-04-10T20:30:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19653",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19612",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -351,15 +350,15 @@ Attachment [2864.2.patch](tarball://root/attachments/some-uuid/ticket2864/2864.2
 
 ---
 
-archive/issue_comments_019654.json:
+archive/issue_comments_019613.json:
 ```json
 {
     "body": "Attachment [2864b.patch](tarball://root/attachments/some-uuid/ticket2864/2864b.patch) by mabshoff created at 2008-04-10 20:31:14\n\nMerged 2864.patch, 2864a.patch and 2864b.patch in Sage 3.0.alpha4",
     "created_at": "2008-04-10T20:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19654",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19613",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -371,15 +370,15 @@ Merged 2864.patch, 2864a.patch and 2864b.patch in Sage 3.0.alpha4
 
 ---
 
-archive/issue_comments_019655.json:
+archive/issue_comments_019614.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-10T20:31:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2864",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19655",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2864#issuecomment-19614",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

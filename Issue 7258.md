@@ -6,7 +6,7 @@ archive/issues_007258.json:
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7258\n\n",
     "created_at": "2009-10-21T07:37:35Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007258.json:
     "title": "sagenb notebook: fix \"When saving a worksheet, the default filename has \"...\" in it. \"; also change some menu items related to loading and saving worksheets to be clearer.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7258",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7258
 
 ---
 
-archive/issue_comments_060287.json:
+archive/issue_comments_060175.json:
 ```json
 {
     "body": "Attachment [sagenb-7258.patch](tarball://root/attachments/some-uuid/ticket7258/sagenb-7258.patch) by @williamstein created at 2009-10-21 07:37:58",
     "created_at": "2009-10-21T07:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60287",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60175",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +47,15 @@ Attachment [sagenb-7258.patch](tarball://root/attachments/some-uuid/ticket7258/s
 
 ---
 
-archive/issue_comments_060288.json:
+archive/issue_comments_060176.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-21T07:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60288",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60176",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +65,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060289.json:
+archive/issue_comments_060177.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-21T08:52:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60289",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60177",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -83,15 +83,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060290.json:
+archive/issue_comments_060178.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-25T06:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60290",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60178",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -101,15 +101,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_060291.json:
+archive/issue_comments_060179.json:
 ```json
 {
     "body": "merged into 4.2",
     "created_at": "2009-10-25T06:49:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7258",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60291",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7258#issuecomment-60179",
+    "user": "https://github.com/williamstein"
 }
 ```
 

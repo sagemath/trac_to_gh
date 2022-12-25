@@ -6,15 +6,13 @@ archive/issues_001286.json:
     "body": "Assignee: @williamstein\n\nThis sucks:\n\n```\nsage: SR(1.93902384092834082309480238482348293402384908) + SR(1)\n2.939023840928341\n```\n\n\nIt should do this:\n\n```\nsage: SR(1.93902384092834082309480238482348293402384908) + SR(1)\n2.93902384092834082309480238482348293402384908\n```\n\n\nHow to implement this?  Use bfloat in Maxima.  Here are some examples:\n\n```\n(%i41) block([fpprec:50], bfloat(%pi));\n(%o41)       3.1415926535897932384626433832795028841971693993751b0\n```\n\nHave to do some weird crap to coerce in mpfr's:\n\n```\n(%i1) block([fpprec:50], bfloat(1.93902384092834082309480238482348293402384908));\nWarning:  Float to bigfloat conversion of 1.939023840928341\n(%o1)        1.9390238409283409299344632850674846197472777518007b0\n(%i3) block([fpprec:50], bfloat(193902384092834082309480238482348293402384908)/10^44);\n(%o3)          1.93902384092834082309480238482348293402384908b0\n```\n\n\nWhen simplifying an expression be sure to compute the prec of it as\nthe min of the precs of all the leaves; integers have infinite precision.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1286\n\n",
     "created_at": "2007-11-27T00:35:16Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "fix maxima floating point precision handling",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1286",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -67,15 +65,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1286
 
 ---
 
-archive/issue_comments_008078.json:
+archive/issue_comments_008055.json:
 ```json
 {
     "body": "I'm not sure you really want to implement that. Here you mix:\n\n(1) the precision of a floating-point variable (the number of bits or digits used to store its significand)\n\n(2) the accuracy of a given value (a bound on the error with respect to the exact value)\n\nYour idea is that when the user enters 1.93902384092834082309480238482348293402384908, he/she tells you that there\nare as many significant digits. But if you do this, this means that mathematically equivalent values such that\n1.939 and 1.9390 would represent different values within SAGE. I don't like this. I much prefer that the user \nspecifies the precision of the computation as in RealField(23)(1.9390), or that there is a default precision \nfor all SAGE objects that are converted to floating-point.",
     "created_at": "2007-11-27T17:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8078",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8055",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -95,15 +93,15 @@ for all SAGE objects that are converted to floating-point.
 
 ---
 
-archive/issue_comments_008079.json:
+archive/issue_comments_008056.json:
 ```json
 {
     "body": "This works for me in sage-2.8.15alpha1.",
     "created_at": "2007-12-02T02:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8079",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8056",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -113,15 +111,15 @@ This works for me in sage-2.8.15alpha1.
 
 ---
 
-archive/issue_comments_008080.json:
+archive/issue_comments_008057.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2007-12-02T02:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8080",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8057",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -131,15 +129,15 @@ Resolution: worksforme
 
 ---
 
-archive/issue_comments_008081.json:
+archive/issue_comments_008058.json:
 ```json
 {
     "body": "\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 2.8.15.alpha1, Release Date: 2007-12-01               |\n| Type notebook() for the GUI, and license() for information.        |\nsage: sage: SR(1.93902384092834082309480238482348293402384908) + SR(1)\n2.93902384092834082309480238482348293402384908\nsage:\n```\n\nCheers,\n\nMichael",
     "created_at": "2007-12-02T02:43:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1286",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8081",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1286#issuecomment-8058",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_004784.json:
     "body": "Assignee: @jhpalmieri\n\nKeywords: reference manual\n\nmissing $ in a docstring screws up reference manual\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4784\n\n",
     "created_at": "2008-12-13T21:04:08Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004784.json:
     "title": "[with patch, needs review] trivial ref manual fix for 3.2.2.alpha2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4784",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: @jhpalmieri
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4784
 
 ---
 
-archive/issue_comments_036269.json:
+archive/issue_comments_036198.json:
 ```json
 {
     "body": "Attachment [4784.patch](tarball://root/attachments/some-uuid/ticket4784/4784.patch) by @jhpalmieri created at 2008-12-13 21:04:37",
     "created_at": "2008-12-13T21:04:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4784",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36269",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36198",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -51,15 +51,15 @@ Attachment [4784.patch](tarball://root/attachments/some-uuid/ticket4784/4784.pat
 
 ---
 
-archive/issue_comments_036270.json:
+archive/issue_comments_036199.json:
 ```json
 {
     "body": "Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-14T04:47:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4784",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36270",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36199",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -73,15 +73,15 @@ Michael
 
 ---
 
-archive/issue_comments_036271.json:
+archive/issue_comments_036200.json:
 ```json
 {
     "body": "Merged in Sage 3.2.2.rc0",
     "created_at": "2008-12-14T05:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4784",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36271",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36200",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +91,15 @@ Merged in Sage 3.2.2.rc0
 
 ---
 
-archive/issue_comments_036272.json:
+archive/issue_comments_036201.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-14T05:41:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4784",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36272",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4784#issuecomment-36201",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

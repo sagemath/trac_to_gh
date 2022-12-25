@@ -6,15 +6,13 @@ archive/issues_000744.json:
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nCurrently many functions which modify a graph return the value that was just set.  If instead the modified graph were returned, it would permit a very powerful chaining mechanism in programming.  This mechanism, for example, is one of the things that is best-loved about the jQuery javascript library and something that I personally like very much in Mathematica.\n\nFor example, if \"name\" and \"add_vertex\" both returned the modified graph, then the following code would make 10 copies of the graph g, labeling each appropriately, and add a new vertex that was hooked, successively, to the first 10 vertices of g.  Notice how nicely that chaining complements list comprehensions.\n\n\n```\n  sage: [g.copy().name(new=\"graph %d\"%i).add_vertex('center').add_edge(('center',i)) for i in [1..10] ]\n```\n\n\nIs there something that would break if we make this change (e.g., is there some functionality that depends on receiving back the change that was just made in the graph)?\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/744\n\n",
     "created_at": "2007-09-24T18:22:33Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "graphs: returning graph to allow chaining",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/744",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -42,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/744
 
 ---
 
-archive/issue_comments_004365.json:
+archive/issue_comments_004350.json:
 ```json
 {
     "body": "I understand python philosophy a little more now and am not so sure that this is a good idea any more.  As I understand it, methods which modify the state of an object generally don't return anything, like a.sort().  Someone (Robert Bradshaw?) said this made things nice since there isn't two copies of the same object floating about.\n\nThe example in the ticket is probably more clearly written as below.  It's definitely as compact, which may not be a bad thing.\n\n```\nsage: glist=[g.copy() for i in (1..10)]\nsage: for i in (1..10):\nsage:     h=glist[i]\nsage:     h.name(new=\"graph %d\"%i)\nsage:     h.add_vertex('center')\nsage:     h.add_edge(('center'),i))\n```\n\n\nShould there be a big performance difference between this code and the line given in the ticket?",
     "created_at": "2007-10-25T18:57:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/744",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4365",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4350",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -74,15 +72,15 @@ Should there be a big performance difference between this code and the line give
 
 ---
 
-archive/issue_comments_004366.json:
+archive/issue_comments_004351.json:
 ```json
 {
     "body": "(I meant, \"it's definitely __not__ as compact\")",
     "created_at": "2007-10-25T18:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/744",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4366",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4351",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -92,15 +90,15 @@ archive/issue_comments_004366.json:
 
 ---
 
-archive/issue_comments_004367.json:
+archive/issue_comments_004352.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2007-10-25T21:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/744",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4367",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4352",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -110,15 +108,15 @@ Resolution: wontfix
 
 ---
 
-archive/issue_comments_004368.json:
+archive/issue_comments_004353.json:
 ```json
 {
     "body": "I've tested a few cases and the performance for each of the above pieces of code (even when the list created is much bigger) is pretty much the same.  I'm closing the ticket since there is a \"python way\" that is just as fast and probably more readable.",
     "created_at": "2007-10-25T21:02:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/744",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4368",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/744#issuecomment-4353",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_003872.json:
     "body": "Assignee: @garyfurnish\n\nCC:  @burcin @robertwb\n\nThe goal of this ticket:\n\n1. Remove all dependency of ginac (http://www.ginac.de/) on CLN, so (a) Ginac builds in 2 minutes, (b) Ginac makes use of libraries like MPFR that are better than cln, and (c) in the future ginac will be able to work directly with *any* Sage objects. \n\n2. Create a purely optional symbolic arithmetic class that works like this in parallel with the existing sage symbolics, but is far from feature complete:\n\n\n```\nsage: var(\"x y\",ns=1)\n(x, y)\nsage: type(x)\n<type 'sage.symbolic.expression.Expression'>\nsage: expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)\ncos(y)^2-2*cos(y)*sin(y)-2*cos(y)*x^3*tan(y^x*x) + x^6*tan(y^x*x)^2 + sin(y)^2 + 2*x^3*sin(y)*tan(y^x*x)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n625 loops, best of 3: 107 \u00b5s per loop\n\n\nsage: var(\"x y\")\n(x, y)\nsage: timeit('expand((x^3*tan(x*y^x) + sin(y) - cos(y))^2)')\n5 loops, best of 3: 24.5 ms per loop\nsage: 24.5/(107*(10^(-3)))\n228.971962616822\n\n\nsage: x = sympy.var('x'); y = sympy.var('y')\nsage: timeit(\"((x^3r * sympy.tan(x*y^x) + sympy.sin(y) - sympy.cos(y))^2r).expand()\")\n625 loops, best of 3: 691 \u00b5s per loop\n```\n\n\n\nThe above would go in *before* any of this replaces the existing symbolic framework.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3872\n\n",
     "created_at": "2008-08-15T10:11:17Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "calculus -- incorporate ginac into without cln",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3872",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @garyfurnish
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3872
 
 ---
 
-archive/issue_comments_027597.json:
+archive/issue_comments_027539.json:
 ```json
 {
     "body": "Changing assignee from @garyfurnish to @williamstein.",
     "created_at": "2008-08-15T10:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27597",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27539",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -82,15 +81,15 @@ Changing assignee from @garyfurnish to @williamstein.
 
 ---
 
-archive/issue_comments_027598.json:
+archive/issue_comments_027540.json:
 ```json
 {
     "body": "NOTE: There is something wrong on Itanium Linux since the library has no .so.  I did\n\n```\n  ln -s libginac-1.4.0.0.3 libginac.so\n```\n\nin local/lib, and then it built.  Mabshoff says \"some autoconf problem\".",
     "created_at": "2008-08-15T10:42:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27598",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27540",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -106,15 +105,15 @@ in local/lib, and then it built.  Mabshoff says "some autoconf problem".
 
 ---
 
-archive/issue_comments_027599.json:
+archive/issue_comments_027541.json:
 ```json
 {
     "body": "This is impressive! Great job.\n\nThe patches look good to me in general. Just a naive question -- why do you need to call PY_NEW here:\n\n \t82\tcdef Expression new_Expression_from_GEx(GEx juice): \n \t83\t    cdef Expression nex \n \t84\t    nex = <Expression>PY_NEW(Expression) \n \t85\t    GEx_construct_ex(&nex._gobj, juice) \n \t86\t    nex._parent = ring.NSR \n \t87\t    return nex \n\n\n? Is it some defficiency in Cython?",
     "created_at": "2008-08-19T20:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27599",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27541",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -136,15 +135,15 @@ The patches look good to me in general. Just a naive question -- why do you need
 
 ---
 
-archive/issue_comments_027600.json:
+archive/issue_comments_027542.json:
 ```json
 {
     "body": "Sorry for the formatting, here:\n\n```\n \t82\tcdef Expression new_Expression_from_GEx(GEx juice): \n \t83\t    cdef Expression nex \n \t84\t    nex = <Expression>PY_NEW(Expression) \n \t85\t    GEx_construct_ex(&nex._gobj, juice) \n \t86\t    nex._parent = ring.NSR \n \t87\t    return nex \n```\n",
     "created_at": "2008-08-19T20:49:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27600",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27542",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -164,15 +163,15 @@ Sorry for the formatting, here:
 
 ---
 
-archive/issue_comments_027601.json:
+archive/issue_comments_027543.json:
 ```json
 {
     "body": "PY_NEW is a macro that creates a new object without calling any of the `__init__` methods (it calls the tp_new function pointer directly).",
     "created_at": "2008-08-20T02:04:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27601",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27543",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -182,15 +181,15 @@ PY_NEW is a macro that creates a new object without calling any of the `__init__
 
 ---
 
-archive/issue_comments_027602.json:
+archive/issue_comments_027544.json:
 ```json
 {
     "body": "Don't know if I am doing something wrong:\n\n```\ng++ -DHAVE_CONFIG_H -I. -I.. -I/home/ondra/ext/sage/local/include/python2.5/ -g -O2 -MT add.lo -MD -MP -MF .deps/add.Tpo -c add.cpp  -fPIC -DPIC -DPIC -o add.o\nIn file included from expair.h:27,\n                 from expairseq.h:32,\n                 from add.h:26,\n                 from add.cpp:28:\nnumeric.h:97: error: extra qualification 'GiNaC::Number_T::' on member 'Number_T'\nmake[2]: *** [add.lo] Error 1\n```\n\nI am using Sage 3.1.1. Changing this:\n\nNumber_T::~Number_T();\n\nto this:\n\n~Number_T();\n\nin numeric.h fixes the problem for me. Using:\n\n```\n$ g++ --version\ng++ (Debian 4.3.1-9) 4.3.1\nCopyright (C) 2008 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n```\n\n\nUnfortunately then it fails at:\n\n```\ng++ -DHAVE_CONFIG_H -I. -I.. -I/home/ondra/ext/sage/local/include/python2.5/ -g -O2 -MT numeric.lo -MD -MP -MF .deps/numeric.Tpo -c numeric.cpp  -fPIC -DPIC -DPIC -o numeric.o\nnumeric.cpp: In function 'std::ostream& GiNaC::operator<<(std::ostream&, const GiNaC::Number_T&)':\nnumeric.cpp:231: error: jump to case label\nnumeric.cpp:222: error:   crosses initialization of 'PyObject* o'\n```\n\n\nI don't have more time to investigate.",
     "created_at": "2008-08-20T11:06:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27602",
-    "user": "@certik"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27544",
+    "user": "https://github.com/certik"
 }
 ```
 
@@ -241,15 +240,15 @@ I don't have more time to investigate.
 
 ---
 
-archive/issue_comments_027603.json:
+archive/issue_comments_027545.json:
 ```json
 {
     "body": "Attachment [pynac.2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac.2.hg) by @burcin created at 2008-09-19 11:17:24\n\nattachment:pynac.2.hg (and also pynac.2.2.hg, thanks to trac) has a clean version of William's bundle, plus two changesets (one trivial).\n\nI give a positive review to William's patch, someone should review mine.\n\nThere is also a new package file here:\n\nhttp://www.risc.jku.at/people/berocal/sage/pynac-0.1.spkg\n\nThe only difference is a new SPKG.txt and an environment check on top of spkg-install.\n\nAs the ticket description states, these should go in after my changes are reviewed. I'll open new tickets for further additions to the pynac interface.",
     "created_at": "2008-09-19T11:17:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27603",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27545",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -271,15 +270,15 @@ As the ticket description states, these should go in after my changes are review
 
 ---
 
-archive/issue_comments_027604.json:
+archive/issue_comments_027546.json:
 ```json
 {
     "body": "Hi,\n\nI read through Burcin's two patches to my patches, which he wrote when refereeing my code,\nand I'm happy with them.\n\nMhansen, all mentioned to me that \"he's read through all of this\". \n\nI also tested building and running all this on the intel atom n270, and it works. \n\nSo --- positive review!  Let's get this in sage.",
     "created_at": "2008-09-23T23:39:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27604",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27546",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -298,15 +297,15 @@ So --- positive review!  Let's get this in sage.
 
 ---
 
-archive/issue_comments_027605.json:
+archive/issue_comments_027547.json:
 ```json
 {
     "body": "Replying to [comment:19 was]:\n\n> So --- positive review!  Let's get this in sage.\n\nAfter ghmm I want to do some wider build testing, especially on Linux Itanium, Solaris as well as Cygwin before merging this.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-23T23:51:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27605",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27547",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -324,15 +323,15 @@ Michael
 
 ---
 
-archive/issue_comments_027606.json:
+archive/issue_comments_027548.json:
 ```json
 {
     "body": "Trying to install the spkg on OS X 10.4\n\n\n```\n...\nConfiguration of GiNaC 1.4.3 done. Now type \"make\".\ncd . && /bin/sh /Users/robert/sage/current/spkg/build/pynac-0.1/src/missing --run autoheader\naclocal.m4:17: error: this file was generated for autoconf 2.61.\nYou have another version of autoconf.  If you want to use that,\nyou should regenerate the build system entirely.\naclocal.m4:17: the top level\nautom4te: /usr/bin/gm4 failed with exit status: 63\nautoheader: /usr/bin/autom4te failed with exit status: 63\nmake: *** [config.h.in] Error 1\nError building ginac.\n\nreal    0m20.315s\nuser    0m6.509s\nsys     0m11.412s\n```\n\n\nI could have sworn I tried this out a month ago (perhaps that was on sage.math).",
     "created_at": "2008-09-23T23:56:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27606",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27548",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -364,15 +363,15 @@ I could have sworn I tried this out a month ago (perhaps that was on sage.math).
 
 ---
 
-archive/issue_comments_027607.json:
+archive/issue_comments_027549.json:
 ```json
 {
     "body": "Well, the fix here is to run autoconf and friends with the --missing argument so that files that are linked and/or missing are instead copied into the archive. This will prevent the above problem from happening and also makes the spkg work in absence of autohell tools. If there is no script called autogen.sh we should add one so that rerunning those scripts is automated since one does tend to forget to run them all in the right order with the right parameters :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-24T00:07:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27607",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27549",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -386,15 +385,15 @@ Michael
 
 ---
 
-archive/issue_comments_027608.json:
+archive/issue_comments_027550.json:
 ```json
 {
     "body": "Since this spkg is known broken at least on OSX 10.4 this needs work.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-27T19:22:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27608",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27550",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -408,15 +407,15 @@ Michael
 
 ---
 
-archive/issue_comments_027609.json:
+archive/issue_comments_027551.json:
 ```json
 {
     "body": "A couple remarks:\n\n* pynac runs autoheader:\n\n```\nmake  all-recursive\nmake[1]: Entering directory `/scratch/mabshoff/release-cycle/review/pynac-0.1/src'\nMaking all in ginac\n```\n\n* CPPFLAGS and potentially LDFLAGS need to be set so we pick up Sage's Python:\n\n```\n/bin/sh ../libtool    --mode=compile g++ -DHAVE_CONFIG_H -I. -I.. \n-I/scratch/mabshoff/release-cycle/sage-3.1.2.rc5/local/include/python2.5/   \n-I/scratch/mabshoff/release-cycle/sage-3.1.2.rc5/local/include/python2.5  \n-g -O2 -MT ex.lo -MD -MP -MF .deps/ex.Tpo -c -o ex.lo ex.cpp\n```\n\n* spkg-install needs some cleanup, i.e. delete the PolyBoRi references, switch to #!/usr/bin/env bash, etc\n* SPKG.txt should explain which patches/changes were made to make Ginac work with Python types/remove the CLN dependency. That patch should be somewhere in a repo since at some point we will rebase on upstream\n* Ginac depends on dlopen, so this is a portability issue that needs to be taken into consideration and should be mentioned in SPKG.txt\n\nCheers,\n\nMichael",
     "created_at": "2008-09-30T09:49:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27609",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27551",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -451,15 +450,15 @@ Michael
 
 ---
 
-archive/issue_comments_027610.json:
+archive/issue_comments_027552.json:
 ```json
 {
     "body": "Attachment [pynac_3.1.3.alpha2.hg](tarball://root/attachments/some-uuid/ticket3872/pynac_3.1.3.alpha2.hg) by @burcin created at 2008-10-01 17:29:15\n\npynac bundle against 3.1.3.alpha2",
     "created_at": "2008-10-01T17:29:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27610",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27552",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -471,15 +470,15 @@ pynac bundle against 3.1.3.alpha2
 
 ---
 
-archive/issue_comments_027611.json:
+archive/issue_comments_027553.json:
 ```json
 {
     "body": "The spkg was split into ticket #4221.\n\nattachment:pynac_3.1.3.alpha2.hg contains a new bundle that applies cleanly against 3.1.3.alpha2. There is a small additional patch over pynac.2.hg, which has minor corrections for the library name and coercion model changes.",
     "created_at": "2008-10-01T17:34:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27611",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27553",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -491,15 +490,15 @@ attachment:pynac_3.1.3.alpha2.hg contains a new bundle that applies cleanly agai
 
 ---
 
-archive/issue_comments_027612.json:
+archive/issue_comments_027554.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2008-10-01T17:34:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27612",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27554",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -509,15 +508,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_027613.json:
+archive/issue_comments_027555.json:
 ```json
 {
     "body": "Positive review from me on pynac_3.1.3.alpha2.hg. Let's hope it still cleanly applies :)\n\nCheers,\n\nMichael",
     "created_at": "2008-10-16T12:51:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27613",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27555",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -531,15 +530,15 @@ Michael
 
 ---
 
-archive/issue_comments_027614.json:
+archive/issue_comments_027556.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-18T00:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27614",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27556",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -549,15 +548,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_027615.json:
+archive/issue_comments_027557.json:
 ```json
 {
     "body": "Merged pynac_3.1.3.alpha2.hg in Sage 3.2.alpha0",
     "created_at": "2008-10-18T00:01:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27615",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27557",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -567,15 +566,15 @@ Merged pynac_3.1.3.alpha2.hg in Sage 3.2.alpha0
 
 ---
 
-archive/issue_comments_027616.json:
+archive/issue_comments_027558.json:
 ```json
 {
     "body": "Can we release alpha0 as soon as possible so that people can play with pynac and try to find bugs?",
     "created_at": "2008-10-18T03:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27616",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27558",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -585,15 +584,15 @@ Can we release alpha0 as soon as possible so that people can play with pynac and
 
 ---
 
-archive/issue_comments_027617.json:
+archive/issue_comments_027559.json:
 ```json
 {
     "body": "Replying to [comment:28 jason]:\n> Can we release alpha0 as soon as possible so that people can play with pynac and try to find bugs?\n\nYes, the plan to do so is very soon, i.e. alpha0 today. But we need to have a review for #4243 and #4244 to catch up with the current state of the art here.\n\nCheers,\n\nMichael",
     "created_at": "2008-10-18T08:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3872",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27617",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3872#issuecomment-27559",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002290.json:
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2290\n\n",
     "created_at": "2008-02-24T09:48:13Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "[with easy patch] typo in calculus.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2290",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2290
 
 ---
 
-archive/issue_comments_015188.json:
+archive/issue_comments_015155.json:
 ```json
 {
     "body": "Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.patch) by @zimmermann6 created at 2008-02-24 09:48:36",
     "created_at": "2008-02-24T09:48:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15188",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15155",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [8681.patch](tarball://root/attachments/some-uuid/ticket2290/8681.pat
 
 ---
 
-archive/issue_comments_015189.json:
+archive/issue_comments_015156.json:
 ```json
 {
     "body": "Hmm, I am not convinced that the result is correct:\n\n```\n88\t88\t    We can also make \\class{CallableSymbolicExpressions}, which is a \\class{SymbolicExpression} \n89\t \t    that are functions of variables in a fixed order. Each \n \t89\t    that is function of variables in a fixed order. Each \n90\t90\t    \\class{SymbolicExpression} has a function() method used to create a \n91\t91\t    \\class{CallableSymbolicExpression}.\n```\n\nWhile I agree that it should be singular, I think an article is missing. I guess in British English the above without the article would be correct, but with my American English I would like to see an article there.\n\nThoughts?\n\nCheers,\n\nMichael",
     "created_at": "2008-02-24T17:40:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15189",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15156",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -81,15 +80,15 @@ Michael
 
 ---
 
-archive/issue_comments_015190.json:
+archive/issue_comments_015157.json:
 ```json
 {
     "body": "Attachment [sage-2290-english.patch](tarball://root/attachments/some-uuid/ticket2290/sage-2290-english.patch) by @williamstein created at 2008-02-24 20:47:18\n\nmy attempt, as a native english speaker",
     "created_at": "2008-02-24T20:47:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15190",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15157",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -101,15 +100,15 @@ my attempt, as a native english speaker
 
 ---
 
-archive/issue_comments_015191.json:
+archive/issue_comments_015158.json:
 ```json
 {
     "body": "I am neither an american nor a british english speaker, but the new patch seems definitively better\nto me (it also fixes the extra 's' in CallableSymbolicExpressions which I did not spot).",
     "created_at": "2008-02-25T14:31:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15191",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15158",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -120,15 +119,15 @@ to me (it also fixes the extra 's' in CallableSymbolicExpressions which I did no
 
 ---
 
-archive/issue_comments_015192.json:
+archive/issue_comments_015159.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-25T15:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15192",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15159",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -138,15 +137,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_015193.json:
+archive/issue_comments_015160.json:
 ```json
 {
     "body": "Merged sage-2290-english.patch in Sage 2.10.3.alpha0",
     "created_at": "2008-02-25T15:14:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2290",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15193",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2290#issuecomment-15160",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

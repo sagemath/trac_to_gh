@@ -6,15 +6,14 @@ archive/issues_006737.json:
     "body": "Assignee: tba\n\nAll occurrences of \"Pyrex\" should now be changed to \"Cython\". See this [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/b9b7eea2d9575a7f) thread for some background information.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6737\n\n",
     "created_at": "2009-08-11T20:04:35Z",
     "labels": [
-        "documentation",
-        "major",
+        "component: documentation",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "change occurrences of \"Pyrex\" to \"Cython\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6737",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6737
 
 ---
 
-archive/issue_comments_055213.json:
+archive/issue_comments_055111.json:
 ```json
 {
     "body": "\n```\nsage: search_src('pyrex')\nmatrix/matrix_modn_sparse.pyx:7:TODO: - move vectors into a pyrex vector class - add _add_ and\nserver/notebook/worksheet.py:3800:        elif system in ['cython', 'pyrex', 'sagex']:\ncombinat/expnums.pyx:126:    A vanilla python (but compiled via pyrex) implementation of\ncombinat/matrices/dancing_links.pyx:106:        # It is the *trick* needed to pickle pyrex extension types.\nrings/complex_interval.pyx:12:    -- Joel B. Mohler (2006-12-16): naive rewrite into pyrex\nrings/ring.pyx:1040:            #except AttributeError:   # for pyrex classes\nrings/rational.pyx:3172:def pyrex_rational_reconstruction(integer.Integer a, integer.Integer m):\nrings/rational.pyx:3194:        sage: sage.rings.rational.pyrex_rational_reconstruction(34, 100)\nrings/integer.pyx:596:                    # pyrex to play games with refcount for the None object, which\nrings/integer.pyx:622:                # we could skip the double lookup. Unfortunately pyrex doesn't\nrings/integer.pyx:670:        # It is the *trick* needed to pickle pyrex extension types.\nrings/integer.pyx:2616:        return rational.pyrex_rational_reconstruction(self, m)\nrings/complex_number.pyx:8:- Joel B. Mohler (2006-12-16): naive rewrite into pyrex\nrings/polynomial/polynomial_compiled.pyx:24:    pyrex.\ngraphs/generic_graph_pyx.pyx:74:    This kind of speed cannot be achieved by naive pyrexification of the\nmisc/all.py:74:pyrex = cython # synonym -- for now\ngsl/all.py:2:# http://wwwteor.mi.infn.it/%7Epernici/pyrexgsl/pyrexgsl.html\n```\n",
     "created_at": "2010-01-18T04:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55213",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55111",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -68,15 +67,15 @@ gsl/all.py:2:# http://wwwteor.mi.infn.it/%7Epernici/pyrexgsl/pyrexgsl.html
 
 ---
 
-archive/issue_comments_055214.json:
+archive/issue_comments_055112.json:
 ```json
 {
     "body": "Removes Pyrex",
     "created_at": "2010-01-18T06:19:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55214",
-    "user": "gaer"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55112",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gaer"
 }
 ```
 
@@ -86,15 +85,15 @@ Removes Pyrex
 
 ---
 
-archive/issue_comments_055215.json:
+archive/issue_comments_055113.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-18T06:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55215",
-    "user": "gaer"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55113",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gaer"
 }
 ```
 
@@ -104,15 +103,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_055216.json:
+archive/issue_comments_055114.json:
 ```json
 {
     "body": "Attachment [13638.patch](tarball://root/attachments/some-uuid/ticket6737/13638.patch) by gaer created at 2010-01-18 06:24:29",
     "created_at": "2010-01-18T06:24:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55216",
-    "user": "gaer"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55114",
+    "user": "https://trac.sagemath.org/admin/accounts/users/gaer"
 }
 ```
 
@@ -122,15 +121,15 @@ Attachment [13638.patch](tarball://root/attachments/some-uuid/ticket6737/13638.p
 
 ---
 
-archive/issue_comments_055217.json:
+archive/issue_comments_055115.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-18T06:25:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55217",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55115",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -140,15 +139,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_055218.json:
+archive/issue_comments_055116.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-01-18T23:46:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55218",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55116",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -158,15 +157,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_055219.json:
+archive/issue_comments_055117.json:
 ```json
 {
     "body": "rebased, apply only this patch",
     "created_at": "2010-01-19T00:15:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55219",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55117",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -176,15 +175,15 @@ rebased, apply only this patch
 
 ---
 
-archive/issue_comments_055220.json:
+archive/issue_comments_055118.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-19T00:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55220",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55118",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -194,15 +193,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_055221.json:
+archive/issue_comments_055119.json:
 ```json
 {
     "body": "Attachment [trac_6737.patch](tarball://root/attachments/some-uuid/ticket6737/trac_6737.patch) by @rlmill created at 2010-01-19 00:26:13",
     "created_at": "2010-01-19T00:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6737",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55221",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6737#issuecomment-55119",
+    "user": "https://github.com/rlmill"
 }
 ```
 

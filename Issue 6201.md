@@ -6,15 +6,14 @@ archive/issues_006201.json:
     "body": "Assignee: somebody\n\nThis is inconsistent:\n\n\n```\nZZ(); QQ(); RR(); CC()\n\n0\n0\n0.000000000000000\nTraceback (click to the left for traceback)\n...\nTypeError: __call__() takes at least 2 arguments (1 given)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6201\n\n",
     "created_at": "2009-06-03T21:14:11Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.2",
     "title": "CC() raises exception instead of returning 0",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6201",
-    "user": "@fredrik-johansson"
+    "user": "https://github.com/fredrik-johansson"
 }
 ```
 Assignee: somebody
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6201
 
 ---
 
-archive/issue_comments_049540.json:
+archive/issue_comments_049445.json:
 ```json
 {
     "body": "Changing assignee from somebody to @aghitza.",
     "created_at": "2009-06-03T23:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49540",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49445",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -60,15 +59,15 @@ Changing assignee from somebody to @aghitza.
 
 ---
 
-archive/issue_comments_049541.json:
+archive/issue_comments_049446.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-06-03T23:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49541",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49446",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -78,15 +77,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_049542.json:
+archive/issue_comments_049447.json:
 ```json
 {
     "body": "Simple fix up for review.",
     "created_at": "2009-06-03T23:09:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49542",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49447",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -96,15 +95,15 @@ Simple fix up for review.
 
 ---
 
-archive/issue_comments_049543.json:
+archive/issue_comments_049448.json:
 ```json
 {
     "body": "Attachment [trac_6201.patch](tarball://root/attachments/some-uuid/ticket6201/trac_6201.patch) by @jhpalmieri created at 2009-06-09 03:41:34\n\nSimple change to the code, includes a doctest, passes all tests, reference manual builds.  Positive review.\n\nNow should we do the same thing with GF(2)(), CDF(), etc.?",
     "created_at": "2009-06-09T03:41:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49543",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49448",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -118,15 +117,15 @@ Now should we do the same thing with GF(2)(), CDF(), etc.?
 
 ---
 
-archive/issue_comments_049544.json:
+archive/issue_comments_049449.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-13T21:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6201",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49544",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/6201#issuecomment-49449",
+    "user": "https://github.com/ncalexan"
 }
 ```
 

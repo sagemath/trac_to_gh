@@ -6,14 +6,13 @@ archive/issues_000108.json:
     "body": "Assignee: somebody\n\n\n```\nsage: R = Integers(125)\nsage: type(binomial(R(4), 2))\n <type 'integer_mod_pyx.IntegerMod_int'>\nsage: type(binomial(R(4), 1))\n <type 'integer_mod_pyx.IntegerMod_int'>\nsage: type(binomial(R(4), 0))\n <type 'rational.Rational'>\n```\n\n\nThe type/parent should always match that of the first argument. (Or I suppose it could lie in the fraction field. But the above behaviour is a bit confusing.)\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/108\n\n",
     "created_at": "2006-10-03T18:03:57Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "inconsistent return type for binomial function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/108",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/108
 
 ---
 
-archive/issue_comments_000510.json:
+archive/issue_comments_000508.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2006-10-05T08:15:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/108#issuecomment-510",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/108#issuecomment-508",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -59,15 +58,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_000511.json:
+archive/issue_comments_000509.json:
 ```json
 {
     "body": "Fixed trac Ticket #108: inconsistent return type for binomial function\n\nThis badness no longer happens:\n\n```\n  sage: R = Integers(125)\n  sage: type(binomial(R(4), 2))\n  <type 'integer_mod_pyx.IntegerMod_int'>\n  sage: type(binomial(R(4), 0))\n  <type 'rational.Rational'>\n```\n",
     "created_at": "2006-10-05T08:15:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/108",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/108#issuecomment-511",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/108#issuecomment-509",
+    "user": "https://github.com/williamstein"
 }
 ```
 

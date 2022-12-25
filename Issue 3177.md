@@ -6,15 +6,14 @@ archive/issues_003177.json:
     "body": "Assignee: mabshoff\n\nspkg coming up\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/3177\n\n",
     "created_at": "2008-05-13T11:07:35Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.2",
     "title": "fix 64 bit OSX build support for python",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3177",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3177
 
 ---
 
-archive/issue_comments_022001.json:
+archive/issue_comments_021954.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-05-13T11:17:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-22001",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-21954",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_022002.json:
+archive/issue_comments_021955.json:
 ```json
 {
     "body": "Attachment [python-2.5.2-spkg-install-64bit-osx.patch](tarball://root/attachments/some-uuid/ticket3177/python-2.5.2-spkg-install-64bit-osx.patch) by mabshoff created at 2008-05-19 02:56:10",
     "created_at": "2008-05-19T02:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-22002",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-21955",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Attachment [python-2.5.2-spkg-install-64bit-osx.patch](tarball://root/attachment
 
 ---
 
-archive/issue_comments_022003.json:
+archive/issue_comments_021956.json:
 ```json
 {
     "body": "The spkg is at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.0.2/alpha1/python-2.5.2.p0.spkg\n\nCheers,\n\nMichael",
     "created_at": "2008-05-19T03:02:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-22003",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-21956",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Michael
 
 ---
 
-archive/issue_comments_022004.json:
+archive/issue_comments_021957.json:
 ```json
 {
     "body": "Merged in Sage 3.0.2.alpha1",
     "created_at": "2008-05-19T03:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-22004",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-21957",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Merged in Sage 3.0.2.alpha1
 
 ---
 
-archive/issue_comments_022005.json:
+archive/issue_comments_021958.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-05-19T03:16:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3177",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-22005",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3177#issuecomment-21958",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

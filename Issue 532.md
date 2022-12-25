@@ -6,15 +6,14 @@ archive/issues_000532.json:
     "body": "Assignee: mabshoff\n\nFrom Sage 2.8.3rc3:\n\n```\n==24738== 16 bytes in 1 blocks are possibly lost in loss record 525 of 2,259\n==24738==    at 0x4A05809: malloc (vg_replace_malloc.c:149)\n==24738==    by 0x165368BD: mpfr_init2 (in /tmp/Work2/sage-2.8.3.rc3/devel/sage-main/build/sage/rings/real_mpfr.so)\n==24738==    by 0x16503260: __pyx_f_9real_mpfr_9RealField___init__ (real_mpfr.c:1410)\n==24738==    by 0x45A321: type_call (typeobject.c:436)\n==24738==    by 0x4156A2: PyObject_Call (abstract.c:1860)\n==24738==    by 0x47DB71: PyEval_CallObjectWithKeywords (ceval.c:3433)\n==24738==    by 0x18836269: initpolynomial_element (polynomial_element.c:21764)\n==24738==    by 0x49F762: _PyImport_LoadDynamicModule (importdl.c:53)\n==24738==    by 0x49D63E: import_submodule (import.c:2394)\n==24738==    by 0x49DB11: load_next (import.c:2214)\n==24738==    by 0x49DD6E: import_module_level (import.c:2002)\n==24738==    by 0x49E1A4: PyImport_ImportModuleLevel (import.c:2066)\n```\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/532\n\n",
     "created_at": "2007-08-30T18:50:02Z",
     "labels": [
-        "memleak",
-        "major",
+        "component: memleak",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "mkfr leak in RealField (from matrix/strassen.pyx)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/532",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/532
 
 ---
 
-archive/issue_comments_002717.json:
+archive/issue_comments_002705.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-08-30T18:50:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/532",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/532#issuecomment-2717",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/532#issuecomment-2705",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_002718.json:
+archive/issue_comments_002706.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2007-10-11T22:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/532",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/532#issuecomment-2718",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/532#issuecomment-2706",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -85,15 +84,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_002719.json:
+archive/issue_comments_002707.json:
 ```json
 {
     "body": "This is because polynomial_element.pyx has a global (well, module-level) variable holding a RealField:\n\n```\nRR = RealField()\n```\n\n(As a module-level variable, this never gets freed.)\n\nEach RealField holds two RealNumbers (._zero_element and ._one_element), so they never get freed either.",
     "created_at": "2007-10-11T22:02:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/532",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/532#issuecomment-2719",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/532#issuecomment-2707",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

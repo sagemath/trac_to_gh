@@ -6,15 +6,14 @@ archive/issues_008485.json:
     "body": "Assignee: @JohnCremona\n\nCC:  @robertwb @roed314 @williamstein @JohnCremona\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8485\n\n",
     "created_at": "2010-03-10T05:19:23Z",
     "labels": [
-        "elliptic curves",
-        "major",
+        "component: elliptic curves",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "port Jeechul Woo's gp script for 3-isogeny descent to Sage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8485",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @JohnCremona
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8485
 
 ---
 
-archive/issue_comments_076469.json:
+archive/issue_comments_076342.json:
 ```json
 {
     "body": "Attachment [trac_8485.patch](tarball://root/attachments/some-uuid/ticket8485/trac_8485.patch) by @rlmill created at 2010-07-18 09:24:40\n\nAdds an attempt to use this from BSD.py",
     "created_at": "2010-07-18T09:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8485#issuecomment-76469",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8485#issuecomment-76342",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -51,15 +50,15 @@ Adds an attempt to use this from BSD.py
 
 ---
 
-archive/issue_comments_076470.json:
+archive/issue_comments_076343.json:
 ```json
 {
     "body": "Attachment [trac_8485-BSD.patch](tarball://root/attachments/some-uuid/ticket8485/trac_8485-BSD.patch) by @jdemeyer created at 2013-08-13 15:35:53",
     "created_at": "2013-08-13T15:35:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8485",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8485#issuecomment-76470",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8485#issuecomment-76343",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

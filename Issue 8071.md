@@ -6,7 +6,7 @@ archive/issues_008071.json:
     "body": "Assignee: @williamstein\n\nCC:  @jasongrout\n\nMatrices with zero rows or zero columns, over rings that are not fields, try to construct vector spaces as return values.  The return value should be built as a `FreeModule` which seems to promote the result to a vector space when the ring is a field.\n\n\n```\nsage: A=matrix(Integers(6),[])\nsage: A.right_kernel()\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/rob/.sage/temp/wave/21471/_home_rob__sage_init_sage_0.py in <module>()\n\n/sage/four-three/local/lib/python2.6/site-packages/sage/matrix/matrix2.so in sage.matrix.matrix2.Matrix.right_kernel (sage/matrix/matrix2.c:12440)()\n\n/sage/four-three/local/lib/python2.6/site-packages/sage/modules/free_module.pyc in VectorSpace(K, dimension, sparse, inner_product_matrix)\n    400     \"\"\"\n    401     if not K.is_field():\n--> 402         raise TypeError, \"Argument K (= %s) must be a field.\" % K\n    403     if not sparse in (True,False):\n    404         raise TypeError, \"Argument sparse (= %s) must be a boolean.\"%sparse\n\nTypeError: Argument K (= Ring of integers modulo 6) must be a field.\n```\n\n\nPatch is in-progress.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8071\n\n",
     "created_at": "2010-01-26T04:48:34Z",
     "labels": [
-        "linear algebra",
+        "component: linear algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008071.json:
     "title": "Trivial kernel of a matrix over non-fields are broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8071",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: @williamstein
@@ -55,15 +55,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8071
 
 ---
 
-archive/issue_comments_070730.json:
+archive/issue_comments_070609.json:
 ```json
 {
     "body": "This patch adds a new helper function to compute the right kernel of a matrix in the trivial cases of zero rows or zero columns.  When the ring is not a field or a PID, it is not always possible to create the submodule needed as a return value.  So in these cases it gives an informative error message (which is the response to the bug).\n\nThis function has been called in four places, and various doctests have been added.  This is the first step in refactoring and cleaning up some of the matrix code for kernels of matrices.",
     "created_at": "2010-01-27T05:51:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70730",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70609",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -75,15 +75,15 @@ This function has been called in four places, and various doctests have been add
 
 ---
 
-archive/issue_comments_070731.json:
+archive/issue_comments_070610.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-27T05:51:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70731",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70610",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -93,15 +93,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_070732.json:
+archive/issue_comments_070611.json:
 ```json
 {
     "body": "Attachment [trac_8071-matrix-kernels-trivially.patch](tarball://root/attachments/some-uuid/ticket8071/trac_8071-matrix-kernels-trivially.patch) by @malb created at 2010-04-05 19:25:35\n\nPatch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?\n\nIf that's fixed then this patch gets a positive review.",
     "created_at": "2010-04-05T19:25:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70732",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70611",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -115,15 +115,15 @@ If that's fixed then this patch gets a positive review.
 
 ---
 
-archive/issue_comments_070733.json:
+archive/issue_comments_070612.json:
 ```json
 {
     "body": "Fixes class/meth in docstring",
     "created_at": "2010-04-06T03:08:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70733",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70612",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -133,15 +133,15 @@ Fixes class/meth in docstring
 
 ---
 
-archive/issue_comments_070734.json:
+archive/issue_comments_070613.json:
 ```json
 {
     "body": "Attachment [trac_8071-matrix-kernels-trivially-2.patch](tarball://root/attachments/some-uuid/ticket8071/trac_8071-matrix-kernels-trivially-2.patch) by @rbeezer created at 2010-04-06 03:13:50\n\nReplying to [comment:3 malb]:\n> Patch applies cleanly, looks good, doctests pass. The only nitpick I have is: shouldn't `:meth:`sage.modules.free_module.VectorSpace`` be `class:...`?\n> \n> If that's fixed then this patch gets a positive review.\n\nHi Martin,\n\nThanks for the review on this one.  New patch contains everything, plus two changes in the docstring for `_right_kernel_trivial()` in `sage/matrix/matrix2.py` - both substitute \"class\" for \"meth\".  I am forever making that mistake - thanks for catching these.\n\nRelease manager - apply only the \"dash-2\" patch.\n\nRob",
     "created_at": "2010-04-06T03:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70734",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70613",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -164,15 +164,15 @@ Rob
 
 ---
 
-archive/issue_comments_070735.json:
+archive/issue_comments_070614.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-06T08:50:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70735",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70614",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -182,15 +182,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_070736.json:
+archive/issue_comments_070615.json:
 ```json
 {
     "body": "Merged in 4.4.alpha0:\n\n- trac_8071-matrix-kernels-trivially-2.patch",
     "created_at": "2010-04-15T06:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70736",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70615",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -202,15 +202,15 @@ Merged in 4.4.alpha0:
 
 ---
 
-archive/issue_comments_070737.json:
+archive/issue_comments_070616.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-15T06:02:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8071",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70737",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/8071#issuecomment-70616",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_002543.json:
     "body": "Assignee: @craigcitro\n\nThere was a doctest that was broken in element.py; I think it was because something got moved around. In any event, this fixes it.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2543\n\n",
     "created_at": "2008-03-16T03:52:07Z",
     "labels": [
-        "modular forms",
+        "component: modular forms",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002543.json:
     "title": "[with patch, needs quick review] fix broken doctest in modular/modform/element.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2543",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: @craigcitro
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2543
 
 ---
 
-archive/issue_comments_017338.json:
+archive/issue_comments_017301.json:
 ```json
 {
     "body": "Attachment [trac-2543.patch](tarball://root/attachments/some-uuid/ticket2543/trac-2543.patch) by @aghitza created at 2008-03-16 04:00:05\n\nLooks good and doctests pass.",
     "created_at": "2008-03-16T04:00:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2543#issuecomment-17338",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/2543#issuecomment-17301",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -49,15 +49,15 @@ Looks good and doctests pass.
 
 ---
 
-archive/issue_comments_017339.json:
+archive/issue_comments_017302.json:
 ```json
 {
     "body": "Merged in Sage 2.10.4.rc0",
     "created_at": "2008-03-16T04:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2543#issuecomment-17339",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2543#issuecomment-17302",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +67,15 @@ Merged in Sage 2.10.4.rc0
 
 ---
 
-archive/issue_comments_017340.json:
+archive/issue_comments_017303.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-16T04:11:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2543",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2543#issuecomment-17340",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2543#issuecomment-17303",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

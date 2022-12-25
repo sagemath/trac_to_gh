@@ -6,15 +6,14 @@ archive/issues_003003.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nKeywords: crystals, tableaux\n\nCurrent behaviour:\n    sage: C = CrystalOfTableaux(['A',3],shape=[2,1])\n    sage: h = C.highest_weight_vector()\n    sage: t = h.to_tableau()\n    sage: w = t.to_word(); w\n    [2, 1, 1]\n    sage: type(w[0])\n    <class 'sage.combinat.crystals.letters.Crystal_of_letters_type_A_element'>\n    sage: t.evaluation()\n    <BOOM>\n\nThis patch ensures we get a tableau of integers instead of a tableau of crystal elements.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3003\n\n",
     "created_at": "2008-04-22T17:14:31Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.1",
     "title": "Bugfix for to_tableau() method of CrystalOfTableaux elements (with patch; needs review)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3003",
-    "user": "@jbandlow"
+    "user": "https://github.com/jbandlow"
 }
 ```
 Assignee: @mwhansen
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3003
 
 ---
 
-archive/issue_comments_020658.json:
+archive/issue_comments_020615.json:
 ```json
 {
     "body": "Attachment [to_tab.patch](tarball://root/attachments/some-uuid/ticket3003/to_tab.patch) by @jbandlow created at 2008-04-22 17:15:03",
     "created_at": "2008-04-22T17:15:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20658",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20615",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -62,15 +61,15 @@ Attachment [to_tab.patch](tarball://root/attachments/some-uuid/ticket3003/to_tab
 
 ---
 
-archive/issue_comments_020659.json:
+archive/issue_comments_020616.json:
 ```json
 {
     "body": "The elements of crystals of letters look like integers because their __repr__ method returns an integer string but they are not. Before the patch it is possible to accidentally build tableaux whose entries are crystal of letter elements. The patch looks obviously correct to me. I'm not sure  this bugfix requires a doctest.",
     "created_at": "2008-04-22T17:49:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20659",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20616",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -80,15 +79,15 @@ The elements of crystals of letters look like integers because their __repr__ me
 
 ---
 
-archive/issue_comments_020660.json:
+archive/issue_comments_020617.json:
 ```json
 {
     "body": "I know that Dan did a review, but we still need a formal vote. Since there is a test case that Jason posted we should add it as a doctest. If it runs long we should add #long to it.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-22T20:25:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20660",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20617",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -102,15 +101,15 @@ Michael
 
 ---
 
-archive/issue_comments_020661.json:
+archive/issue_comments_020618.json:
 ```json
 {
     "body": "Attachment [3003.patch](tarball://root/attachments/some-uuid/ticket3003/3003.patch) by @mwhansen created at 2008-04-22 22:45:10",
     "created_at": "2008-04-22T22:45:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20661",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20618",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -120,15 +119,15 @@ Attachment [3003.patch](tarball://root/attachments/some-uuid/ticket3003/3003.pat
 
 ---
 
-archive/issue_comments_020662.json:
+archive/issue_comments_020619.json:
 ```json
 {
     "body": "Looks good to me.  I added a little test in 3003.patch -- that's the one that should be applied.",
     "created_at": "2008-04-22T22:45:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20662",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20619",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -138,15 +137,15 @@ Looks good to me.  I added a little test in 3003.patch -- that's the one that sh
 
 ---
 
-archive/issue_comments_020663.json:
+archive/issue_comments_020620.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-23T11:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20663",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20620",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -156,15 +155,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_020664.json:
+archive/issue_comments_020621.json:
 ```json
 {
     "body": "Merged in Sage 3.0.1.alpha0",
     "created_at": "2008-04-23T11:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3003",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20664",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3003#issuecomment-20621",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

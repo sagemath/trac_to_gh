@@ -6,7 +6,7 @@ archive/issues_002348.json:
     "body": "Assignee: @wdjoyner\n\nCC:  @williamstein @wdjoyner\n\nKeywords: matrix group, cyclotomic field\n\nDefine the following:\n\n```\nsage: F = CyclotomicField(8)\nsage: z = F.gen()\nsage: a = z+1/z\nsage: MS = MatrixSpace(F, 2, 2)\nsage: g1 = MS([[1/a,1/a],[1/a,-1/a]])\nsage: b = z^2\nsage: g2 = MS([[1,0],[0,b]])\nsage: g3 = MS([[b,0],[0,1]])\nsage: G = MatrixGroup([g1,g2,g3])\n```\n\n\nThen, one obtains a traceback by the attempt to see G:\n\n```\nsage: G\n<traceback removed>\n<type 'exceptions.TypeError'>: Gap produced error output\nVariable: 'zeta8' must have a value\n\n\n   executing Read(\"/home/king/.sage//temp/mpc739/6870//interface//tmp\");\n```\n\n\nNote that in fact `zeta8` is known:\n\n```\nsage: G.base_ring().gen()\nzeta8\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2348\n\n",
     "created_at": "2008-02-28T18:36:58Z",
     "labels": [
-        "group_theory",
+        "component: group_theory",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002348.json:
     "title": "MatrixGroup over CyclotomicField is broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2348",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: @wdjoyner
@@ -68,15 +68,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2348
 
 ---
 
-archive/issue_comments_015753.json:
+archive/issue_comments_015718.json:
 ```json
 {
     "body": "Searching in `sage/groups/matrix_gps/matrix_group.py`, i found that `MatrixGroup([g1,g2,g3])` calls `MatrixGroup_gens.__init__`, which in turn calls `MatrixGroup_gap.__init__`. The latter has signature `(self, n, R, var='a')`. \n\nIn the above example, i guess `var` is supposed to be `'zeta8'`, and by consequence `G._var` should be `'zeta8'`. But it isn't, `G._var` will never be initialised with a value different from `'a'`.\n\nI thought this might be a source of trouble. But unfortunately, it doesn't help to change `MatrixGroup_gens.__init__` accordingly. \n\nBy the way, it seems that the attribute `_var` is not used somewhere.",
     "created_at": "2008-02-28T19:16:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15753",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15718",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -92,15 +92,15 @@ By the way, it seems that the attribute `_var` is not used somewhere.
 
 ---
 
-archive/issue_comments_015754.json:
+archive/issue_comments_015719.json:
 ```json
 {
     "body": "This is my guess:\nThe problem is buried in _gap_init_, which behaves incorrectly for cyclotomics:\n\nsage: F = GF(8,\"z\"); a = F.gen(); a._gap_init_()\n'Z(8)^1'\nsage: F = CyclotomicField(8); a = F.gen(); a._gap_init_()\n'zeta8'\n\nI don't know if fixing that will fix the problem though.",
     "created_at": "2008-02-28T19:47:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15754",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15719",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -118,15 +118,15 @@ I don't know if fixing that will fix the problem though.
 
 ---
 
-archive/issue_comments_015755.json:
+archive/issue_comments_015720.json:
 ```json
 {
     "body": "I should have added that in the last line of \n\n\n```\nsage: F = GF(8,\"z\"); a = F.gen(); a._gap_init_() \n'Z(8)1'\nsage: F = CyclotomicField?(8); a = F.gen(); a._gap_init_()\n'zeta8'\n```\n\nthe output should be 'E(8)', or possibly 'E(8)^1', since this\nis the GAP notation for a primitive 8th root of unity.",
     "created_at": "2008-02-28T19:55:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15755",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15720",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -147,15 +147,15 @@ is the GAP notation for a primitive 8th root of unity.
 
 ---
 
-archive/issue_comments_015756.json:
+archive/issue_comments_015721.json:
 ```json
 {
     "body": "Replying to [comment:2 wdj]:\n> This is my guess:\n> The problem is buried in _gap_init_, which behaves incorrectly for cyclotomics:\n\nIt seems to me that you are right that it is the gap interface. Therefore i change Summary, Component, and Keywords of the ticket, and send Cc to William.\n\nIn the above example, `G._repr_()` refers to `G.gens()`, and that is calling the gap interface for the matrices that have been used to define `G`.\n\nWhile the following works,\n\n```\nsage: F=CyclotomicField(8)\nsage: N=Matrix(F,[[1,0],[0,1]])\nsage: gap(N)\n[ [ 1, 0 ], [ 0, 1 ] ]\n```\n\nthe following crashes,\n\n```\nsage: M=Matrix(F,[[F.gen(),0],[0,F.gen()]])\nsage: M\n[zeta8     0]\n[    0 zeta8]\nsage: gap(M)\n```\n\nAgain, `gap` complains that `'zeta8'` has no value.\n\nFor solving the problem with `MatrixGroup` i would appreciate if someone could explain to me \n* how one can introduce `zeta8` to `gap`\nor\n* how `F.gen()` should be called in order to be understood by `gap`",
     "created_at": "2008-02-28T19:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15756",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15721",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -197,15 +197,15 @@ or
 
 ---
 
-archive/issue_comments_015757.json:
+archive/issue_comments_015722.json:
 ```json
 {
     "body": "Changing keywords from \"matrix group, cyclotomic field\" to \"gap interface, matrix group, cyclotomic field\".",
     "created_at": "2008-02-28T19:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15757",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15722",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -215,15 +215,15 @@ Changing keywords from "matrix group, cyclotomic field" to "gap interface, matri
 
 ---
 
-archive/issue_comments_015758.json:
+archive/issue_comments_015723.json:
 ```json
 {
     "body": "Changing component from group_theory to interfaces.",
     "created_at": "2008-02-28T19:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15758",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15723",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -233,15 +233,15 @@ Changing component from group_theory to interfaces.
 
 ---
 
-archive/issue_comments_015759.json:
+archive/issue_comments_015724.json:
 ```json
 {
     "body": "More and more it seems to me that the troubles come from gaps in the gap interface. So i think this ticket should really be focused on the interface.\n\nIn the above example, one has to tell `gap` that it shall create a field extension, namely the cyclotomic field. The following crashes:\n\n```\nsage: F=CyclotomicField(8)\nsage: gap(F)\n---------------------------------------------------------------------------\n<type 'exceptions.TypeError'>             Traceback (most recent call last)\n ...\nSyntax error: ; expected\n$sage7:=Cyclotomic Field of order 8 and degree 4;;\n                       ^\nVariable: 'of' must have a value\n\nVariable: 'degree' must have a value\n\n   executing $sage7:=Cyclotomic Field of order 8 and degree 4;;\n```\n\nApparently, `gap(F)` is equivalent to `gap(str(F))`, which of course yields nonsense.\n\nInstead, the `gap` related methods of the class `NumberField` and related classes should do something like that:\n\n```\nsage: PR=PolynomialRing(F.base_field(),F.gen())\nsage: pr=gap(PR)\nsage: bf=gap(F.base_field())\nsage: mp=gap(F.polynomial())\nsage: f=bf.AlgebraicExtension(mp)\nsage: f\n<algebraic extension over the Rationals of degree 4>\n```\n\nNow `f` is the `gap` version of `F`.",
     "created_at": "2008-02-29T08:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15759",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15724",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -285,15 +285,15 @@ Now `f` is the `gap` version of `F`.
 
 ---
 
-archive/issue_comments_015760.json:
+archive/issue_comments_015725.json:
 ```json
 {
     "body": "Changing keywords from \"gap interface, matrix group, cyclotomic field\" to \"gap, field extension\".",
     "created_at": "2008-02-29T08:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15760",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15725",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -303,15 +303,15 @@ Changing keywords from "gap interface, matrix group, cyclotomic field" to "gap, 
 
 ---
 
-archive/issue_comments_015761.json:
+archive/issue_comments_015726.json:
 ```json
 {
     "body": "I agree this needs fixing but, based on my reading of sage/interfaces/gap.py, I'm not sure how to do this. Do you have a suggestion William?",
     "created_at": "2008-02-29T11:51:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15761",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15726",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -321,15 +321,15 @@ I agree this needs fixing but, based on my reading of sage/interfaces/gap.py, I'
 
 ---
 
-archive/issue_comments_015762.json:
+archive/issue_comments_015727.json:
 ```json
 {
     "body": "I tried to figure out how the interfaces are used, and it seems to me that there will be much work to do.\n\nAm i right that, if `X` is some Sage object, `gap(X)` sends the value of `X._gap_init_()` (which is a string) through the gap interface; and similarly `singular(X)` sends `X._singular_init_()`?\n\nThe problem is that `_gap_init_` and `_singular_init_` often can not be interpreted by gap or by Singular. Examples:\n\n\n```\nsage: QQ._singular_init_()\n'Rationals'\n```\n\nThis is ok, since `gap` knows what Rationals means. But:\n\n```\nsage: QQ._singular_init_()\n'Rational Field'\n```\n\nThis is something that Singular does not understand! In fact, for Singular the rationals do not exist, except as the base field of a polynomial ring. So i believe there should be a `NotImplementedError` in that case.\n\n\n```\nsage: CyclotomicField(8)._gap_init_()\n'Cyclotomic Field of order 8 and degree 4'\nsage: CyclotomicField(8)._singular_init_()\n'Cyclotomic Field of order 8 and degree 4'\n```\n\nNeither gap nor Singular can interprete that string.\n\nSomething that seems inconsistent to me: the method `_singular_init_` is not always returning a string:\n\n```\nsage: QQ[x]._gap_init_()\n'PolynomialRing(Rationals, [\"x\"])'\nsage: QQ[x]._singular_init_()\n\n//   characteristic : 0\n//   number of vars : 1\n//        block   1 : ordering lp\n//                  : names    x\n//        block   2 : ordering C\nsage: type(QQ[x]._gap_init_())\n<type 'str'>\nsage: type(QQ[x]._singular_init_())\n<class 'sage.interfaces.singular.SingularElement'>\n```\n\n\nI found that in `sage/rings/number_field/number_field.py` there is no method `_singular_init_` or `_gap_init_`. Do you think it would solve the problem if one implements such methods?",
     "created_at": "2008-02-29T23:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15762",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15727",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -389,15 +389,15 @@ I found that in `sage/rings/number_field/number_field.py` there is no method `_s
 
 ---
 
-archive/issue_comments_015763.json:
+archive/issue_comments_015728.json:
 ```json
 {
     "body": "Attachment [numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.patch) by @simon-king-jena created at 2008-03-01 10:14:42\n\nThis solves only a part of the problem",
     "created_at": "2008-03-01T10:14:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15763",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15728",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -409,15 +409,15 @@ This solves only a part of the problem
 
 ---
 
-archive/issue_comments_015764.json:
+archive/issue_comments_015729.json:
 ```json
 {
     "body": "I was just attaching a patch (relative to 2.10.3.rc0) that adds a `_gap_init_` method to `NumberField_generic` and may be part of a solution. \n\nSometimes `_singular_init_` does not return a string but a SingularElement. I don't know whether it is possible to define a number field in gap in a single line (i.e., by a single string). So, it seemed reasonable to me to return a GapElement rather than a string.\n\nHowever, this would require many changes in other parts of the code. E.g., I also need a change in \n`/local/lib/python2.5/site-packages/sage/rings/polynomial/polynomial_ring.py`.\nThis seems not to be part of the mercurial repository, so i have no patch for it.\nHowever, the method `_gap_init_` of the class `PolynomialRing_general` should be like that:\n\n```\n    def _gap_init_(self):\n        br=self.base_ring()._gap_init_()\n        if isinstance(br,str):\n            return 'PolynomialRing(%s, [\"%s\"])'%(br, self.variable_name())\n        return br.PolynomialRing('[\"%s\"]'%(self.variable_name()))\n```\n\n\nWith these patches, the initial problem is almost solved:\n\n\n```\nsage: F = CyclotomicField(8)\nsage: gap(F)\n<algebraic extension over the Rationals of degree 4>\nsage: z = F.gen()\nsage: a = z+1/z\nsage: MS = MatrixSpace(F, 2, 2)\nsage: g1 = MS([[1/a,1/a],[1/a,-1/a]])\nsage: b = z^2\nsage: g2 = MS([[1,0],[0,b]])\nsage: g3 = MS([[b,0],[0,1]])\nsage: gap(g1)\n[ [ -1/2*zeta8^3+1/2*zeta8, -1/2*zeta8^3+1/2*zeta8 ],\n  [ -1/2*zeta8^3+1/2*zeta8, 1/2*zeta8^3-1/2*zeta8 ] ]\nsage: G = MatrixGroup([g1,g2,g3])\nsage: G\nMatrix group over Cyclotomic Field of order 8 and degree 4 with 3 generators:\n [[[-1/2*zeta8^3 + 1/2*zeta8, -1/2*zeta8^3 + 1/2*zeta8], [-1/2*zeta8^3 + 1/2*zeta8, 1/2*zeta8^3 - 1/2*zeta8]], [[1, 0], [0, zeta8^2]], [[zeta8^2, 0], [0, 1]]]\n```\n\n\nWhy is that only **almost** a solution? \nSince the line `sage: gap(F)` is necessary; otherwise `zeta8` would not be defined in gap. Hence, it would be needed to change the `_gap_init_` method of MatrixSpace, and so on and so on.\n\n*Conclusion*\n* What i do in the patch can't be a definite solution. \n* Is there a way to find a string s so that `gap(s)` returns a gap version of `F`, with the variable name `zeta8`? Having this would probably solve the problem.",
     "created_at": "2008-03-01T10:50:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15764",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15729",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -474,15 +474,15 @@ Since the line `sage: gap(F)` is necessary; otherwise `zeta8` would not be defin
 
 ---
 
-archive/issue_comments_015765.json:
+archive/issue_comments_015730.json:
 ```json
 {
     "body": "Attachment [numberfields_gap.2.patch](tarball://root/attachments/some-uuid/ticket2348/numberfields_gap.2.patch) by @simon-king-jena created at 2008-03-01 14:34:08\n\nThis may be close to a solution",
     "created_at": "2008-03-01T14:34:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15765",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15730",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -494,15 +494,15 @@ This may be close to a solution
 
 ---
 
-archive/issue_comments_015766.json:
+archive/issue_comments_015731.json:
 ```json
 {
     "body": "The second patch (again relative to rc0-version) may be close to a solution. The following now works:\n\n```\nsage: F=CyclotomicField(8)\nsage: z=F.gen()\nsage: a=z+1/z\nsage: b=z^2\nsage: MS=MatrixSpace(F,2,2)\nsage: g1=MS([[1/a,1/a],[1/a,-1/a]])\nsage: g2=MS([[1,0],[0,b]])\nsage: g3=MS([[b,0],[0,1]])\nsage: G = MatrixGroup([g1,g2,g3])\nsage: gap(g1)\n[ [ -1/2*zeta8^3+1/2*zeta8, -1/2*zeta8^3+1/2*zeta8 ],\n  [ -1/2*zeta8^3+1/2*zeta8, 1/2*zeta8^3-1/2*zeta8 ] ]\nsage: G\nMatrix group over Cyclotomic Field of order 8 and degree 4 with 3 generators:\n [[[-1/2*zeta8^3 + 1/2*zeta8, -1/2*zeta8^3 + 1/2*zeta8], [-1/2*zeta8^3 + 1/2*zeta8, 1/2*zeta8^3 - 1/2*zeta8]], [[1, 0], [0, zeta8^2]], [[zeta8^2, 0], [0, 1]]]\n```\n\n\nThe suggested solution works as follows.\n* F._gap_init_() returns the *name* of a gap object corresponding to F. That name is stored in the dictionary of F. If it does not exist in the dictionary, then the gap object is created first; so, that happens only once.\n* If g is an element of F, then `g._gap_init_()` first checks whether there is already a gap version of `g.parent()` (which is F). If there isn't, `F._gap_init_()` is called and creates that object. In either case, `g.__repr__()` is returned.\n* If M is a matrix with coefficients in F then the existing methods can remain unchanged.\n\nDo you think that approach makes sense? And by the way: I raise a NotImplementedError if F.is_absolute()==False, because gap can not deal with non-simple extensions.\n\nI still see some problems:\n* gap(G) does not work in the above example. So, the `_gap_init_` method for matrix groups needs being fixed.\n* In my suggested solution, it is not possible to work with non-standard gap interfaces: F._gap_init_() returns a name that is defined in the standard gap interface. Do you have an idea how this can be fixed?",
     "created_at": "2008-03-01T14:55:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15766",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15731",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -542,15 +542,15 @@ I still see some problems:
 
 ---
 
-archive/issue_comments_015767.json:
+archive/issue_comments_015732.json:
 ```json
 {
     "body": "Attachment [final_numberfields_gap.patch](tarball://root/attachments/some-uuid/ticket2348/final_numberfields_gap.patch) by @simon-king-jena created at 2008-03-01 23:52:33\n\nThe patch is relative to sage-2.10.3.rc0 and replaces the previous patches. I think it provides a solution of the problem",
     "created_at": "2008-03-01T23:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15767",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15732",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -562,15 +562,15 @@ The patch is relative to sage-2.10.3.rc0 and replaces the previous patches. I th
 
 ---
 
-archive/issue_comments_015768.json:
+archive/issue_comments_015733.json:
 ```json
 {
     "body": "I think that the last patch provides a solution. Now, simple algebraic extensions of the rationals and matrices over such extensions can by send through the gap interface. By consequence, Matrix Groups over such extensions work.\n\nExamples:\n\n```\nsage: F=CyclotomicField(8)\nsage: z=F.gen()\nsage: a=z+1/z\nsage: MS=MatrixSpace(F,2,2)\nsage: g1=MS([[1/a,1/a],[1/a,-1/a]])\nsage: b=z^2\nsage: g2=MS([[1,0],[0,b]])\nsage: g3=MS([[b,0],[0,1]])\nsage: gap(g1)*gap(g2)\n[ [ (1/2*a-1/2*a^3), (1/2*a+1/2*a^3) ], [ (1/2*a-1/2*a^3), (-1/2*a-1/2*a^3) ] ]\n```\n\nRemark: So far, the generator of the gap-version of F is alway displayed as 'a'. I did not learn yet how to make it being displayed by gap as 'zeta8', which is how sage displays the generator of F.\n\n```\nsage: (gap(g1)*gap(g2))^12\n[ [ !-1, !0 ], [ !0, !-1 ] ]\n```\n\nRemark: '!-1' is the integer -1 interpreted in the gap number field.\n\n```\nsage: G = MatrixGroup([g1,g2,g3])\nsage: G\nMatrix group over Cyclotomic Field of order 8 and degree 4 with 3 generators:\n [[[-1/2*zeta8^3 + 1/2*zeta8, -1/2*zeta8^3 + 1/2*zeta8], [-1/2*zeta8^3 + 1/2*zeta8, 1/2*zeta8^3 - 1/2*zeta8]], [[1, 0], [0, zeta8^2]], [[zeta8^2, 0], [0, 1]]]\nsage: G.order()\n192\n```\n\n\nThe last line is based on applying a gap method to G. So, it seems to me that everything works. Making the generator of gap(F) appear as 'a' would probably be a trivial change.",
     "created_at": "2008-03-02T00:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15768",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15733",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -616,15 +616,15 @@ The last line is based on applying a gap method to G. So, it seems to me that ev
 
 ---
 
-archive/issue_comments_015769.json:
+archive/issue_comments_015734.json:
 ```json
 {
     "body": "Applies cleanly and fixes the problem. Great job Simon!\nRecommend acceptance.",
     "created_at": "2008-03-02T11:45:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15769",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15734",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -635,15 +635,15 @@ Recommend acceptance.
 
 ---
 
-archive/issue_comments_015770.json:
+archive/issue_comments_015735.json:
 ```json
 {
     "body": "Replying to [comment:11 wdj]:\n> Applies cleanly and fixes the problem. Great job Simon!\n> Recommend acceptance.\n\nThere is one caveat: I had to fix the _gap_init_ method of matrices, since in gap an expression of the form [[field elements,...],[...]] is not a matrix. That expression becomes a matrix in gap only when multiplied with One(field).\n\nBy consequence, the doc test of the _gap_init_ method of MatrixGroup has to be modified. That modification is part of the patch provided in ticket #2367.",
     "created_at": "2008-03-02T14:14:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15770",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15735",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -659,15 +659,15 @@ By consequence, the doc test of the _gap_init_ method of MatrixGroup has to be m
 
 ---
 
-archive/issue_comments_015771.json:
+archive/issue_comments_015736.json:
 ```json
 {
     "body": "Replying to [comment:11 wdj]:\n> Recommend acceptance.\n\nI still think it may be premature to include the patch. Nathan Dunfield gave me a hint on sage-support http://groups.google.com/group/sage-support/browse_thread/thread/ee3c23ea1b86cfe9?hl=en\n\nI think it would be better to change _gap_init_() for number fields according to Nathan's hint. But i think the rest of the patch can stay as it is.\n\nI hope tomorrow i will be able to submit a \"cleaner\" patch.",
     "created_at": "2008-03-02T14:56:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15771",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15736",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -684,15 +684,15 @@ I hope tomorrow i will be able to submit a "cleaner" patch.
 
 ---
 
-archive/issue_comments_015772.json:
+archive/issue_comments_015737.json:
 ```json
 {
     "body": "Replying to [comment:13 SimonKing]:\n> I still think it may be premature to include the patch. Nathan Dunfield gave me a hint on sage-support http://groups.google.com/group/sage-support/browse_thread/thread/ee3c23ea1b86cfe9?hl=en\n> \n> I think it would be better to change _gap_init_() for number fields according to Nathan's hint. \n\nNo, it doesn't work. If field elements are created using inline functions, they belong to different (but isomorphic) fields in gap and thus can not be added. Note that in the following example, x1 and x2 have the same definition, but can't be added to each other.\n\n```\nsage: x1=gap('GeneratorsOfField(CallFuncList(function() local x,E; x:=Indeterminate(Rationals,\"x\"); E:=AlgebraicExtension(Rationals,x^4 + 1); return E; end, []))[1]')\nsage: x2=gap('GeneratorsOfField(CallFuncList(function() local x,E; x:=Indeterminate(Rationals,\"x\"); E:=AlgebraicExtension(Rationals,x^4 + 1); return E; end, []))[1]')\nsage: x2+x2\n(2*a)\nsage: x1+x2\n  <Traceback>\n```\n\n\nSo, i will return to my previous approach, but taking more care about the doc tests.",
     "created_at": "2008-03-02T17:33:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15772",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15737",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -719,15 +719,15 @@ So, i will return to my previous approach, but taking more care about the doc te
 
 ---
 
-archive/issue_comments_015773.json:
+archive/issue_comments_015738.json:
 ```json
 {
     "body": "First apply the previous patch, then this patch. It fixes and extends doc tests related with the gap interface of number fields",
     "created_at": "2008-03-02T22:05:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15773",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15738",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -737,15 +737,15 @@ First apply the previous patch, then this patch. It fixes and extends doc tests 
 
 ---
 
-archive/issue_comments_015774.json:
+archive/issue_comments_015739.json:
 ```json
 {
     "body": "Attachment [fix_doctests_gap_numberfield.patch](tarball://root/attachments/some-uuid/ticket2348/fix_doctests_gap_numberfield.patch) by @simon-king-jena created at 2008-03-02 22:18:28\n\nThe patch fix_doctests_gap_numberfield.patch should be applied after final_numberfields_gap.patch. \n\nThe new patch fixes some problems with doc tests. Also, it adds more doc tests. Moreover, now the generator of a number field gets the same name in gap and in sage, which may be convenient for the users.\n\nThe following doctests related with and extended by the patch pass:\nmatrix_group.py,\nnumber_field.py,\nnumber_field_element.pyx,\nmatrix1.pyx\n\n`@`wdj: Could you please see if your positive review still holds when adding the new patch?",
     "created_at": "2008-03-02T22:18:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15774",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15739",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -767,15 +767,15 @@ matrix1.pyx
 
 ---
 
-archive/issue_comments_015775.json:
+archive/issue_comments_015740.json:
 ```json
 {
     "body": "This applied cleanly against 2.10.3.rc0 and passed sage -testall.\nPositive review (again).",
     "created_at": "2008-03-02T23:37:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15775",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15740",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -786,15 +786,15 @@ Positive review (again).
 
 ---
 
-archive/issue_comments_015776.json:
+archive/issue_comments_015741.json:
 ```json
 {
     "body": "This ticket, together with #2367, is now ticket #2395. First reason is that we got a new sage pre-release. \n\nSecond reason is that my suggestions in this ticket for fixing the gap interface ought to be changed: By hints of Nathan Dunfield, i learned that _gap_init_ is in fact called only once, and the objects in the gap interface are cached. Hence, using gap inline functions work. This different approach is in ticket #2395.\n\nThird reason is that #2367 and this ticket belong closely together, hence, they should be worked on in one ticket.",
     "created_at": "2008-03-05T10:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15776",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15741",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -808,15 +808,15 @@ Third reason is that #2367 and this ticket belong closely together, hence, they 
 
 ---
 
-archive/issue_comments_015777.json:
+archive/issue_comments_015742.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-03-05T10:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2348",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15777",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2348#issuecomment-15742",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 

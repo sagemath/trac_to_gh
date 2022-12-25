@@ -6,7 +6,7 @@ archive/issues_002411.json:
     "body": "Assignee: tba\n\nOn the page\n\nhttp://www.sagemath.org/doc/html/tut/node16.html\n\nin the second paragraph the following sentence has problems.\n\n\"Note that the Sage kernel of a matrix $A$ is the ``left kernel'', i.e. the space of vectors 33#1 such that 34#2.\"\n\nI'm not exactly sure what 33#1 and 34#2 should be, but these symbols certainly don't make sense.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2411\n\n",
     "created_at": "2008-03-06T22:36:13Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002411.json:
     "title": "Missing references in Sage tutorial",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2411",
-    "user": "@rhinton"
+    "user": "https://github.com/rhinton"
 }
 ```
 Assignee: tba
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2411
 
 ---
 
-archive/issue_comments_016275.json:
+archive/issue_comments_016240.json:
 ```json
 {
     "body": "The tex file says:\n\n```\nNote that the \\sage kernel of a matrix $A$ is the ``left kernel'', i.e.\nthe space of vectors $w$ such that $wA=0$.\n```\n\nI assume that ```left kernel''` confuses tex2html, so changing that to emph might fix the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-07T22:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16275",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16240",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -66,15 +66,15 @@ Michael
 
 ---
 
-archive/issue_comments_016276.json:
+archive/issue_comments_016241.json:
 ```json
 {
     "body": "This was a latex2html issue.  It's been fixed by #3347, so this ticket should be closed.",
     "created_at": "2008-08-25T21:15:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16276",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16241",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -84,15 +84,15 @@ This was a latex2html issue.  It's been fixed by #3347, so this ticket should be
 
 ---
 
-archive/issue_comments_016277.json:
+archive/issue_comments_016242.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-25T21:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16277",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16242",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -102,15 +102,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_016278.json:
+archive/issue_comments_016243.json:
 ```json
 {
     "body": "Thanks  John. Closed as suggested.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-25T21:23:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2411",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16278",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2411#issuecomment-16243",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_000924.json:
     "body": "Assignee: @williamstein\n\nThe matplotlib spkg overwrites lib/matplotlib/ticker.py with its own version.  This breaks \"tick\" formatting (the numbers displayed on the X and Y axis); the result is that these numbers display in scientific notation far more often than is reasonable.  (Note that this does not affect most Sage usage, since Sage turns off the matplotlib axes and draws its own.  However, Sage users should still be able to use the matplotlib package with its documented interface if they prefer.)\n\nNote that fixing this (restoring the original ticker.py), and making no other changes, will break plotting for people who have old versions of .sage/matplotlibrc, because their matplotlibrc will not specify values for axes.formatter.limits (which is read by line 271 of ticker.py).  This should be fixed either by figuring out how to safely upgrade people's matplotlibrc (possibly hard), or by changing matplotlib so that default values for axes.formatter.limits are used if the matplotlibrc does not specify values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/924\n\n",
     "created_at": "2007-10-18T21:43:22Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.9.1",
     "title": "the matplotlib spkg patches break underlying functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/924",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/924
 
 ---
 
-archive/issue_comments_005660.json:
+archive/issue_comments_005642.json:
 ```json
 {
     "body": "Actually, looking closer, I see that matplotlib already has code to set a default for axes.formatter.limits, in lib/matplotlib/__init__.py; but that code is removed by overwriting __init__.py by a much older version from patches/.",
     "created_at": "2007-10-18T21:51:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5660",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5642",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -49,15 +48,15 @@ Actually, looking closer, I see that matplotlib already has code to set a defaul
 
 ---
 
-archive/issue_comments_005661.json:
+archive/issue_comments_005643.json:
 ```json
 {
     "body": "Changing to a closer milestone, since the bug affects somebody besides me: http://groups.google.com/group/sage-support/browse_thread/thread/edd4829f01dbbcf0/7dfec273f7ba4032#7dfec273f7ba4032",
     "created_at": "2007-12-19T15:42:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5661",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5643",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing to a closer milestone, since the bug affects somebody besides me: http:
 
 ---
 
-archive/issue_comments_005662.json:
+archive/issue_comments_005644.json:
 ```json
 {
     "body": "I have posted a new spkg here:\n\nhttp://sagemath.org/packages/experimental/matplotlib-0.91.1.spkg\n\nDO NOT Just apply this yet.  I tested building on many systems\nand it works.  However, some doctests in plot.py fail, due to changes\nin matplotlib.  So it is *essential* that this ticket not be closed\nand the above spkg not included in sage until a corresponding patch\nagainst the sage library is created and posted here.",
     "created_at": "2007-12-21T00:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5662",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5644",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -93,15 +92,15 @@ against the sage library is created and posted here.
 
 ---
 
-archive/issue_comments_005663.json:
+archive/issue_comments_005645.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-21T00:22:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5663",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5645",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_005664.json:
+archive/issue_comments_005646.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2007-12-21T19:31:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5664",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5646",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -129,15 +128,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_005665.json:
+archive/issue_comments_005647.json:
 ```json
 {
     "body": "Attachment [trac-924.patch](tarball://root/attachments/some-uuid/ticket924/trac-924.patch) by @williamstein created at 2007-12-21 23:34:28",
     "created_at": "2007-12-21T23:34:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5665",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5647",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -147,15 +146,15 @@ Attachment [trac-924.patch](tarball://root/attachments/some-uuid/ticket924/trac-
 
 ---
 
-archive/issue_comments_005666.json:
+archive/issue_comments_005648.json:
 ```json
 {
     "body": "merged in 2.9.1 alpha3",
     "created_at": "2007-12-22T00:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5666",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5648",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -165,15 +164,15 @@ merged in 2.9.1 alpha3
 
 ---
 
-archive/issue_comments_005667.json:
+archive/issue_comments_005649.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-22T00:43:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5667",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/924#issuecomment-5649",
+    "user": "https://github.com/rlmill"
 }
 ```
 

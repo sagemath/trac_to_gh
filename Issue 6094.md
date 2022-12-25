@@ -6,15 +6,14 @@ archive/issues_006094.json:
     "body": "Assignee: @rlmill\n\nCC:  @wdjoyner\n\nIn a discussion with David, we realized that he's been using \"method\" for \"algorithm\" in several places. This fix will follow up on #5701, and will probably depend on the patches there.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6094\n\n",
     "created_at": "2009-05-20T18:28:10Z",
     "labels": [
-        "coding theory",
-        "major",
+        "component: coding theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Change all occurrences of \"method\" to \"algorithm\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6094",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6094
 
 ---
 
-archive/issue_comments_048555.json:
+archive/issue_comments_048463.json:
 ```json
 {
     "body": "\"method\" is not only easier to say, but it's easier to spell, and probably is more memorable to people...",
     "created_at": "2009-05-20T22:06:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48555",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48463",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -49,15 +48,15 @@ archive/issue_comments_048555.json:
 
 ---
 
-archive/issue_comments_048556.json:
+archive/issue_comments_048464.json:
 ```json
 {
     "body": "Replying to [comment:1 jason]:\n> \"method\" is not only easier to say, but it's easier to spell, and probably is more memorable to people...\n\nIt is also *not* the standard arg name. If you think method is better, take it to the mailing list.",
     "created_at": "2009-05-21T14:23:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48556",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48464",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -70,15 +69,15 @@ It is also *not* the standard arg name. If you think method is better, take it t
 
 ---
 
-archive/issue_comments_048557.json:
+archive/issue_comments_048465.json:
 ```json
 {
     "body": "okay, I didn't realize there was a standard.  The weight of history changes the situation a bit.",
     "created_at": "2009-05-21T19:00:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48557",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48465",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -88,15 +87,15 @@ okay, I didn't realize there was a standard.  The weight of history changes the 
 
 ---
 
-archive/issue_comments_048558.json:
+archive/issue_comments_048466.json:
 ```json
 {
     "body": "Replying to [comment:3 jason]:\n> okay, I didn't realize there was a standard...\n\nActually, neither did I. But when David and I did a search for \"method=\", most of what we found were places where he was using that name.\n\nIn fact, here is a complete (I think) list of the functions which use this (4.0.alpha0):\n\n\n```\ncalculus/desolvers.py: eulers_method, eulers_method_2x2\ncoding/decoder.py: decode\ncoding/linear_code.py: decode, is_permutation_equivalent, permutation_automorphism_group, spectrum\nfinance/easter.py: easter\ncombinat/designs/block_design.py: ProjectiveGeometryDesign\ncombinat/designs/covering_design.py: __init__, method\ncombinat/designs/incidence_structures.py: dual_incidence_structure\ngroups/matrix_gps/matrix_group.py: as_permutation_group, module_composition_factors\nschemes/elliptic_curves/padic_lseries.py: frobenius\nmatrix/matrix_double_dense.pyx: exp\nmatrix/matrix_modn_sparse.pyx: _rank_linbox\nrings/polynomial/polynomial_compiled.pyx: __init__\n```\n",
     "created_at": "2009-05-22T04:39:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48558",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48466",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -128,15 +127,15 @@ rings/polynomial/polynomial_compiled.pyx: __init__
 
 ---
 
-archive/issue_comments_048559.json:
+archive/issue_comments_048467.json:
 ```json
 {
     "body": "Thanks. I'll get to these when #5701 is applied unless someone says I should just create a patch based on the patches there.",
     "created_at": "2009-05-25T15:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48559",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48467",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -146,15 +145,15 @@ Thanks. I'll get to these when #5701 is applied unless someone says I should jus
 
 ---
 
-archive/issue_comments_048560.json:
+archive/issue_comments_048468.json:
 ```json
 {
     "body": "based on 4.0.rc0 and all patches in #5701",
     "created_at": "2009-05-27T10:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48560",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48468",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -164,15 +163,15 @@ based on 4.0.rc0 and all patches in #5701
 
 ---
 
-archive/issue_comments_048561.json:
+archive/issue_comments_048469.json:
 ```json
 {
     "body": "Attachment [trac_6094-method-vs-algorithm.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-method-vs-algorithm.patch) by @wdjoyner created at 2009-05-27 10:16:12\n\nThe current patch passes sage -testall with guava removed and all patched on #5701 applied.",
     "created_at": "2009-05-27T10:16:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48561",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48469",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -184,15 +183,15 @@ The current patch passes sage -testall with guava removed and all patched on #57
 
 ---
 
-archive/issue_comments_048562.json:
+archive/issue_comments_048470.json:
 ```json
 {
     "body": "Fails to apply cleanly to Sage 4.0.1.\n\n```\napplying /home/palmieri/trac_6094-method-vs-algorithm.patch\npatching file sage/coding/linear_code.py\nHunk #1 FAILED at 315\nHunk #2 FAILED at 341\nHunk #3 FAILED at 351\nHunk #5 FAILED at 1144\nHunk #6 FAILED at 1165\nHunk #11 FAILED at 1636\nHunk #12 FAILED at 1651\nHunk #13 FAILED at 1668\nHunk #15 FAILED at 1758\nHunk #22 FAILED at 2179\n10 out of 23 hunks FAILED -- saving rejects to file sage/coding/linear_code.py.rej\npatching file sage/combinat/designs/block_design.py\nHunk #2 FAILED at 89\n1 out of 3 hunks FAILED -- saving rejects to file sage/combinat/designs/block_design.py.rej\nabort: patch failed to apply\n```\n",
     "created_at": "2009-06-09T03:42:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48562",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48470",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -223,15 +222,15 @@ abort: patch failed to apply
 
 ---
 
-archive/issue_comments_048563.json:
+archive/issue_comments_048471.json:
 ```json
 {
     "body": "I don't know how to rebase. Can someone point me to a reference? I might be able to do it this weekend.",
     "created_at": "2009-09-15T21:06:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48563",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48471",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -241,15 +240,15 @@ I don't know how to rebase. Can someone point me to a reference? I might be able
 
 ---
 
-archive/issue_comments_048564.json:
+archive/issue_comments_048472.json:
 ```json
 {
     "body": "Attachment [trac_6094-rebased_against_4.3.1.rc0.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-rebased_against_4.3.1.rc0.patch) by @williamstein created at 2010-01-17 11:59:50\n\nI rebased this against 4.3.1.rc0.",
     "created_at": "2010-01-17T11:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48564",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48472",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -261,15 +260,15 @@ I rebased this against 4.3.1.rc0.
 
 ---
 
-archive/issue_comments_048565.json:
+archive/issue_comments_048473.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-18T04:38:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48565",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48473",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -279,15 +278,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_048566.json:
+archive/issue_comments_048474.json:
 ```json
 {
     "body": "Passes all tests.  There are more instances of the use of `method=` in coding/code_bounds.py which will have a patch at #7971.  Positive review.",
     "created_at": "2010-01-18T05:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48566",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48474",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -297,15 +296,15 @@ Passes all tests.  There are more instances of the use of `method=` in coding/co
 
 ---
 
-archive/issue_comments_048567.json:
+archive/issue_comments_048475.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-18T05:14:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48567",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48475",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -315,15 +314,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_048568.json:
+archive/issue_comments_048476.json:
 ```json
 {
     "body": "It was pointed out by people in our status reports session that this patch violates our deprecation policy.  Yuck.  I.e., technically we should do\n\n```\ndef f(algorithm='default', method=None):\n    if method is not None:\n        deprecation('...')\n        algorithm = method\n```\n\nbasically *everywhere*, then remove them all in a year.  Hmmmm....",
     "created_at": "2010-01-18T09:16:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48568",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48476",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -342,15 +341,15 @@ basically *everywhere*, then remove them all in a year.  Hmmmm....
 
 ---
 
-archive/issue_comments_048569.json:
+archive/issue_comments_048477.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-01-18T21:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48569",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48477",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -360,15 +359,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_048570.json:
+archive/issue_comments_048478.json:
 ```json
 {
     "body": "I've sent this back to \"needs work\" to await deprecation warnings.  With more to do, include the changes in ccoding/code_bounds.py here as part of this ticket (see #7971).",
     "created_at": "2010-01-18T21:19:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48570",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48478",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -378,15 +377,15 @@ I've sent this back to "needs work" to await deprecation warnings.  With more to
 
 ---
 
-archive/issue_comments_048571.json:
+archive/issue_comments_048479.json:
 ```json
 {
     "body": "I wonder if it could be done with a decorator?\n\n```\n@deprecate_method\ndef f(..., method=\"foo\"):\n    ...\n\n```\n",
     "created_at": "2010-01-18T21:56:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48571",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48479",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -404,15 +403,15 @@ def f(..., method="foo"):
 
 ---
 
-archive/issue_comments_048572.json:
+archive/issue_comments_048480.json:
 ```json
 {
     "body": "Replying to [comment:15 was]:\n> I wonder if it could be done with a decorator?\n\nYep.  See the already-merged #8607.",
     "created_at": "2010-05-11T18:37:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48572",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48480",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -425,15 +424,15 @@ Yep.  See the already-merged #8607.
 
 ---
 
-archive/issue_comments_048573.json:
+archive/issue_comments_048481.json:
 ```json
 {
     "body": "Attachment [trac_6094-4.5.1.with_deprecation](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.1.with_deprecation) by @johanrosenkilde created at 2010-09-15 13:19:49\n\nRebased for 4.5.1. Change to more files and at more places as well as documentation. Added deprecation warnings.",
     "created_at": "2010-09-15T13:19:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48573",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48481",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -445,15 +444,15 @@ Rebased for 4.5.1. Change to more files and at more places as well as documentat
 
 ---
 
-archive/issue_comments_048574.json:
+archive/issue_comments_048482.json:
 ```json
 {
     "body": "I wrote a new patch which uses the decorator mentioned above. **This patch assumes applying the patch for Trac #9907!**\n\nI basically rewrote the patch, so it works for Sage 4.5.3 (accidentally wrote 4.5.1 in the patch message).\n\nI also did a grep on all Sage source which uncovered more places where method should be replaced with algorithm (I assume). I also changed the doc-texts to refer to \"algorithms\" instead of \"methods\" for the relevant functions changed.\n\nHope I can get a fast review on this; I plan to do major relocations to the coding theory library soon, and this trac touches a lot of code in a lot of places :-)\n\nCheers,\nJohan",
     "created_at": "2010-09-15T13:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48574",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48482",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -472,15 +471,15 @@ Johan
 
 ---
 
-archive/issue_comments_048575.json:
+archive/issue_comments_048483.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-15T13:27:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48575",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48483",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -490,15 +489,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_048576.json:
+archive/issue_comments_048484.json:
 ```json
 {
     "body": "Attachment [trac_6094-4.5.3.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.patch) by @rbeezer created at 2010-09-16 03:45:59\n\nRebased, renamed, commit message edited",
     "created_at": "2010-09-16T03:45:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48576",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48484",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -510,15 +509,15 @@ Rebased, renamed, commit message edited
 
 ---
 
-archive/issue_comments_048577.json:
+archive/issue_comments_048485.json:
 ```json
 {
     "body": "With #9907 applied, this applied to a 4.5.3 version with one failure (docstring change in `sage/schemes/elliptic_curves/padic_lseries.py, frobenius()`, which I fixed.  Also changed references to 4.5.1 to 4.5.3.  Finally, the filename needs a `.patch` extension to display nicely in the web page view.  All in a new attachment, preserving original author's ID.\n\nWith rebase, builds just fine.  Works as expected in trials with `as_permutation_group()` in `sage/matrix_gps/matrix_group.py`.  Running full tests right now.\n\nMinor complaint about how the decorator works, I'll put this on #9907.  More here once tests finish.",
     "created_at": "2010-09-16T04:57:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48577",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48485",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -532,15 +531,15 @@ Minor complaint about how the decorator works, I'll put this on #9907.  More her
 
 ---
 
-archive/issue_comments_048578.json:
+archive/issue_comments_048486.json:
 ```json
 {
     "body": "Decorator complaint is bigger than these tickets.  Its on sage-devel.\n\nsage -tp 4 devel/sage yields:\n\n\n```\n        sage -t  devel/sage/sage/schemes/elliptic_curves/padic_lseries.py # 1 doctests failed\n        sage -t  devel/sage/sage/misc/sagedoc.py # 3 doctests failed\n        sage -t  devel/sage/sage/structure/sage_object.pyx # 1 doctests failed\n```\n\n\nwhich are all reproducible on my machine.\n\nFirst is an easy fix, extra deprecation warning in a doctest elsewhere when using `frobenius()`.\n\nSecond is just me.  I nuked all my documentation while testing the new color scheme.  Ignore it.\n\nThird looks like something is pickling the two decorators and once they get moved the pickle breaks, so maybe this really belongs on #9907?  Complaint follows.  Parts look mysterious to me, other parts look like they involve these decorators.  It could be a false alarm from my development setup.\n\n\n```\nrob@wave:/sage/dev$ ./sage -t  devel/sage/sage/structure/sage_object.pyx\nsage -t  \"devel/sage/sage/structure/sage_object.pyx\"        \n**********************************************************************\nFile \"/sage/dev/devel/sage/sage/structure/sage_object.pyx\", line 1001:\n    sage: print \"x\"; sage.structure.sage_object.unpickle_all(std)\nExpected:\n    x...\n    Successfully unpickled ... objects.\n    Failed to unpickle 0 objects.\nGot:\n    x\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since FiniteWord_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since AbstractWord is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_Alphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: Your word object is saved in an old file format since Word_over_OrderedAlphabet is deprecated and will be deleted in a future version of Sage (you can use FiniteWord_list instead). You can re-save your word by typing \"word.save(filename)\" to ensure that it will load in future versions of Sage.\n    doctest:1: DeprecationWarning: ChristoffelWord_Lower is deprecated, use LowerChristoffelWord instead\n    ** failed:  _class__sage_plot_misc_options__.sobj\n    ** failed:  _class__sage_plot_misc_rename_keyword__.sobj\n    Failed:\n    _class__sage_plot_misc_options__.sobj\n    _class__sage_plot_misc_rename_keyword__.sobj\n    Successfully unpickled 584 objects.\n    Failed to unpickle 2 objects.\n**********************************************************************\n1 items had failures:\n   1 of   7 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/rob/.sage//tmp/.doctest_sage_object.py\n         [5.2 s]\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  \"devel/sage/sage/structure/sage_object.pyx\"\n\n```\n",
     "created_at": "2010-09-16T05:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48578",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48486",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -609,15 +608,15 @@ The following tests failed:
 
 ---
 
-archive/issue_comments_048579.json:
+archive/issue_comments_048487.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-16T05:05:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48579",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48487",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -627,15 +626,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_048580.json:
+archive/issue_comments_048488.json:
 ```json
 {
     "body": "Hi Rob\nGreat, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.\n\nsage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.\n\nCheers, Johan",
     "created_at": "2010-09-16T06:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48580",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48488",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -650,15 +649,15 @@ Cheers, Johan
 
 ---
 
-archive/issue_comments_048581.json:
+archive/issue_comments_048489.json:
 ```json
 {
     "body": "Replying to [comment:20 jsrn]:\n> Great, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.\n\nNo problem.  Just holler if you want to learn some new ropes.\n\n> sage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.\n\nIf you see how to contribute to the sage-devel thread, that would be great.  But don't let it delay this.\n\nPickling is a rat's nest.  #9907 is well-intentioned, but not strictly necessary.  You may not want this to depend on it?  In other words, can you proceed without the move and the fix for classes?  You really just want to ultimately do coding theory, right?\n\nRob",
     "created_at": "2010-09-16T07:08:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48581",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48489",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -679,15 +678,15 @@ Rob
 
 ---
 
-archive/issue_comments_048582.json:
+archive/issue_comments_048490.json:
 ```json
 {
     "body": "Replying to [comment:21 rbeezer]:\n> Replying to [comment:20 jsrn]:\n> > Great, thanks for looking into this. Sorry about the rudimentary stuff on the patch; I'm still learning the ropes.\n> \n> No problem.  Just holler if you want to learn some new ropes.\n> \n> > sage_object.pyx also fails on my machine -- don't know how I missed that when testing. I'll look into that and your sage-devel thread.\n> \n> If you see how to contribute to the sage-devel thread, that would be great.  But don't let it delay this.\n> \n> Pickling is a rat's nest.  #9907 is well-intentioned, but not strictly necessary.  You may not want this to depend on it?  In other words, can you proceed without the move and the fix for classes?  You really just want to ultimately do coding theory, right?\n> \n> Rob\n\nI'm also interested in cleaning up and improving Sage ;-) But you're right. This opened up a can of worms, I didn't expect. I've created a new Trac #9919 for making the workaround mentioned in #9907 general by patching sage_wraps. Then I can make this patch depend only on #9919. The future of #9907 can then be decided later (the current patch there would then have to be dependent on this patch and include patching the files patched here).",
     "created_at": "2010-09-16T14:25:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48582",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48490",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -711,15 +710,15 @@ I'm also interested in cleaning up and improving Sage ;-) But you're right. This
 
 ---
 
-archive/issue_comments_048583.json:
+archive/issue_comments_048491.json:
 ```json
 {
     "body": "Replying to [comment:22 jsrn]:\n> I'm also interested in cleaning up and improving Sage ;-) But you're right. This opened up a can of worms, I didn't expect. \n\nOf course - cleanup is definitely to be encouraged!  But too many times the clean-up and cans of worms are unavoidable.  When you can, best to avoid trouble and isolate the problem like you are doing.",
     "created_at": "2010-09-16T17:20:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48583",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48491",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -732,15 +731,15 @@ Of course - cleanup is definitely to be encouraged!  But too many times the clea
 
 ---
 
-archive/issue_comments_048584.json:
+archive/issue_comments_048492.json:
 ```json
 {
     "body": "Ok, now it gets hairy (and annoying). In plot.misc, several functions from sage.ext.fast_eval are imported; these in turn imports all sorts of stuff (e.g. rings), which means that there will be circular references from e.g. polynomial_ring when applying this patch. This just underlines the importance of moving the decorators to a general place in Trac #9907. It also means that unless e.g. this patch the one for Trac #9919 is expanded to (illogically) move the sage.ext.fast_eval import statements down into the functions in which they are used, this patch will have to depend on #9907 (which should now probably depend on #9919). Ye gods  -- isolating problems are nice in theory, but...\n\nOn the upside, I am pretty sure that the problem with #9907 is easily solved -- it seems to come down to how to update the standard pickle jar. I might be wrong in this, of course.",
     "created_at": "2010-09-17T08:26:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48584",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48492",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -752,15 +751,15 @@ On the upside, I am pretty sure that the problem with #9907 is easily solved -- 
 
 ---
 
-archive/issue_comments_048585.json:
+archive/issue_comments_048493.json:
 ```json
 {
     "body": "Attachment [trac_6094-4.5.3.with_deprecation.2.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.5.3.with_deprecation.2.patch) by @johanrosenkilde created at 2010-09-23 14:03:24\n\nRebased for 4.5.3. Change to more files and at more places as well as documentation. Added deprecation warnings.  Fixed frobenius doctest",
     "created_at": "2010-09-23T14:03:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48585",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48493",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -772,15 +771,15 @@ Rebased for 4.5.3. Change to more files and at more places as well as documentat
 
 ---
 
-archive/issue_comments_048586.json:
+archive/issue_comments_048494.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-23T14:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48586",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48494",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -790,15 +789,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_048587.json:
+archive/issue_comments_048495.json:
 ```json
 {
     "body": "Ok, so now I've posted fixes for Trac #9919 and #9907. I decided to assume both of those, as it seemed hard to get around either. So, assuming both of those, the just uploaded patch gives (me) no errors. The just uploaded is like yours, Rob, but with the frobenius() doctest fixed.\n\nAs I posted on sage.devel, I also wrote a patch for the decorator-complaints in Trac #9976.\n\nCheers, Johan",
     "created_at": "2010-09-23T14:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48587",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48495",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -812,15 +811,15 @@ Cheers, Johan
 
 ---
 
-archive/issue_comments_048588.json:
+archive/issue_comments_048496.json:
 ```json
 {
     "body": "By the way, this patch contains all changes which were at one point suggested to be contained in Trac #7971. That trac can therefore be closed/invalidated.",
     "created_at": "2010-10-20T11:44:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48588",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48496",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -830,15 +829,15 @@ By the way, this patch contains all changes which were at one point suggested to
 
 ---
 
-archive/issue_comments_048589.json:
+archive/issue_comments_048497.json:
 ```json
 {
     "body": "If I apply #6094, #9907, #9919, and #10107 together on top of sage-4.6, all long tests pass. The code looks good.\n\nI have also closed #7971.",
     "created_at": "2010-11-09T20:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48589",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48497",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -850,15 +849,15 @@ I have also closed #7971.
 
 ---
 
-archive/issue_comments_048590.json:
+archive/issue_comments_048498.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-11-09T20:22:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48590",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48498",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -868,15 +867,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_048591.json:
+archive/issue_comments_048499.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-11-10T09:43:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48591",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48499",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -886,15 +885,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_048592.json:
+archive/issue_comments_048500.json:
 ```json
 {
     "body": "The patch needs to be rebased to sage-4.6.1.alpha0:\n\n```\npatching file doc/en/constructions/linear_codes.rst\npatching file sage/calculus/desolvers.py\nHunk #1 succeeded at 61 (offset 3 lines).\nHunk #2 succeeded at 829 (offset 117 lines).\nHunk #3 succeeded at 854 (offset 117 lines).\nHunk #4 succeeded at 886 (offset 117 lines).\nHunk #5 succeeded at 900 (offset 117 lines).\nHunk #6 succeeded at 938 (offset 117 lines).\nHunk #7 succeeded at 994 (offset 117 lines).\npatching file sage/coding/code_bounds.py\npatching file sage/coding/decoder.py\npatching file sage/coding/linear_code.py\nHunk #1 succeeded at 202 (offset 2 lines).\nHunk #2 succeeded at 322 (offset 2 lines).\nHunk #3 succeeded at 359 (offset 2 lines).\nHunk #4 succeeded at 369 (offset 2 lines).\nHunk #5 succeeded at 1115 (offset 2 lines).\nHunk #6 succeeded at 1143 (offset 2 lines).\nHunk #7 succeeded at 1164 (offset 2 lines).\nHunk #8 succeeded at 1174 (offset 2 lines).\nHunk #9 succeeded at 1535 (offset 2 lines).\nHunk #10 succeeded at 1556 (offset 2 lines).\nHunk #11 succeeded at 1580 (offset 2 lines).\nHunk #12 succeeded at 1716 (offset 2 lines).\nHunk #13 succeeded at 1731 (offset 2 lines).\nHunk #14 succeeded at 1745 (offset 2 lines).\nHunk #15 succeeded at 1775 (offset 2 lines).\nHunk #16 succeeded at 1814 (offset 2 lines).\nHunk #17 succeeded at 1871 (offset 2 lines).\nHunk #18 succeeded at 1891 (offset 2 lines).\nHunk #19 succeeded at 1905 (offset 2 lines).\nHunk #20 succeeded at 1937 (offset 2 lines).\nHunk #21 succeeded at 1954 (offset 2 lines).\nHunk #22 succeeded at 2289 (offset 13 lines).\nHunk #23 succeeded at 2307 (offset 13 lines).\nHunk #24 succeeded at 2326 (offset 13 lines).\nHunk #25 succeeded at 2387 (offset 13 lines).\npatching file sage/combinat/designs/block_design.py\npatching file sage/combinat/designs/incidence_structures.py\npatching file sage/finance/easter.py\npatching file sage/groups/matrix_gps/matrix_group.py\npatching file sage/interfaces/ecm.py\npatching file sage/matrix/matrix_double_dense.pyx\nHunk #4 FAILED at 1524.\nHunk #5 succeeded at 1544 (offset 1 line).\nHunk #6 succeeded at 1567 (offset 1 line).\n1 out of 6 hunks FAILED -- saving rejects to file sage/matrix/matrix_double_dense.pyx.rej\npatching file sage/matrix/matrix_modn_sparse.pyx\nHunk #2 succeeded at 778 with fuzz 2.\nHunk #3 succeeded at 791 with fuzz 2.\npatching file sage/rings/polynomial/polynomial_compiled.pyx\npatching file sage/schemes/elliptic_curves/padic_lseries.py\npatching file sage/symbolic/expression.pyx\nHunk #2 succeeded at 6443 (offset 745 lines).\nHunk #3 succeeded at 6452 (offset 745 lines).\nHunk #4 succeeded at 6504 (offset 745 lines).\nHunk #5 succeeded at 6642 (offset 745 lines).\nHunk #6 succeeded at 6651 (offset 745 lines).\nHunk #7 succeeded at 6698 (offset 745 lines).\nHunk #8 succeeded at 6718 (offset 745 lines).\nHunk #9 succeeded at 6734 (offset 745 lines).\nHunk #10 succeeded at 6760 (offset 745 lines).\nHunk #11 succeeded at 6827 (offset 745 lines).\nHunk #12 succeeded at 6864 (offset 745 lines).\n```\n",
     "created_at": "2010-11-10T09:43:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48592",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48500",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -972,15 +971,15 @@ Hunk #12 succeeded at 6864 (offset 745 lines).
 
 ---
 
-archive/issue_comments_048593.json:
+archive/issue_comments_048501.json:
 ```json
 {
     "body": "Rebased for 4.6.1.alpha0. Still requires patches for #9919 and #9907 (in that order)",
     "created_at": "2010-11-16T09:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48593",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48501",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -990,15 +989,15 @@ Rebased for 4.6.1.alpha0. Still requires patches for #9919 and #9907 (in that or
 
 ---
 
-archive/issue_comments_048594.json:
+archive/issue_comments_048502.json:
 ```json
 {
     "body": "Attachment [trac_6094-4.6.1.alpha0.with_deprecation.patch](tarball://root/attachments/some-uuid/ticket6094/trac_6094-4.6.1.alpha0.with_deprecation.patch) by @johanrosenkilde created at 2010-11-16 10:00:02",
     "created_at": "2010-11-16T10:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48594",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48502",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1008,15 +1007,15 @@ Attachment [trac_6094-4.6.1.alpha0.with_deprecation.patch](tarball://root/attach
 
 ---
 
-archive/issue_comments_048595.json:
+archive/issue_comments_048503.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-11-16T10:00:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48595",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48503",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1026,15 +1025,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_048596.json:
+archive/issue_comments_048504.json:
 ```json
 {
     "body": "Robert Miller already gave the green light to the old version, so the review is only for the minor change in sage.matrix.matrix_double_dense made for rebasing.",
     "created_at": "2010-11-16T10:01:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48596",
-    "user": "@johanrosenkilde"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48504",
+    "user": "https://github.com/johanrosenkilde"
 }
 ```
 
@@ -1044,15 +1043,15 @@ Robert Miller already gave the green light to the old version, so the review is 
 
 ---
 
-archive/issue_comments_048597.json:
+archive/issue_comments_048505.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-11-26T13:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48597",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48505",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -1062,15 +1061,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_048598.json:
+archive/issue_comments_048506.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-12-02T16:08:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6094",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48598",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/6094#issuecomment-48506",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

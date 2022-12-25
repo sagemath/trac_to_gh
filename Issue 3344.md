@@ -6,7 +6,7 @@ archive/issues_003344.json:
     "body": "Assignee: somebody\n\nKeywords: erf, n, documentation\n\nThe attached patch should be pretty self-explanatory.  When I view the documention for erf, I see 'strong{only}' instead of the intended 'only'.  I also added a space to the math expression, to try to make it more readable.  Finally, in the documentation for n(-), I've emphasized that various of the arguments are optional.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3344\n\n",
     "created_at": "2008-05-31T21:52:40Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003344.json:
     "title": "small changes to documentation for erf, n",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3344",
-    "user": "@jhpalmieri"
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 Assignee: somebody
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3344
 
 ---
 
-archive/issue_comments_023224.json:
+archive/issue_comments_023176.json:
 ```json
 {
     "body": "Attachment [3344.patch](tarball://root/attachments/some-uuid/ticket3344/3344.patch) by mabshoff created at 2008-05-31 21:53:42",
     "created_at": "2008-05-31T21:53:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23224",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23176",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +51,15 @@ Attachment [3344.patch](tarball://root/attachments/some-uuid/ticket3344/3344.pat
 
 ---
 
-archive/issue_comments_023225.json:
+archive/issue_comments_023177.json:
 ```json
 {
     "body": "straight forward patch, positive review.",
     "created_at": "2008-06-03T14:31:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23225",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23177",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -69,15 +69,15 @@ straight forward patch, positive review.
 
 ---
 
-archive/issue_comments_023226.json:
+archive/issue_comments_023178.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-04T21:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23226",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23178",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +87,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_023227.json:
+archive/issue_comments_023179.json:
 ```json
 {
     "body": "Merged in Sage 3.0.3.alpha1",
     "created_at": "2008-06-04T21:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3344",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23227",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3344#issuecomment-23179",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

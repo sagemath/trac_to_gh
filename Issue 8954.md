@@ -6,15 +6,13 @@ archive/issues_008954.json:
     "body": "Assignee: @aghitza\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8954\n\n",
     "created_at": "2010-05-12T06:52:47Z",
     "labels": [
-        "algebra",
-        "major",
-        "enhancement"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Implementation of the affine nilTemperley Lieb algebra of type A",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8954",
-    "user": "@anneschilling"
+    "user": "https://github.com/anneschilling"
 }
 ```
 Assignee: @aghitza
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8954
 
 ---
 
-archive/issue_comments_082524.json:
+archive/issue_comments_082389.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-13T00:32:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82524",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82389",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -49,15 +47,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_082525.json:
+archive/issue_comments_082390.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-05-13T19:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82525",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82390",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -67,15 +65,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_082526.json:
+archive/issue_comments_082391.json:
 ```json
 {
     "body": "Hi Anne, here are some comments.  I think all of these should be easy to implement, and I'm happy to do them myself, if you like.  But I'd like to know what you think first.\n\n1. It looks like your implementation assumes ZZ as a base ring.  Any reason not to allow any ring?\n2. I would prefer the elements print as `a[0] a[1]` instead of `a0 a1` so that copy-paste can work.  Do you have a preference one way or the other?\n3. In the documentation for the class, you should mention that the relations should be understood mod n.\n4. In the _element_constructor, I would expect the presence of a braid relation trigger to return 0.  Is there a reason that you raise an error instead?\n\nThis will be useful to have in sage... thanks!",
     "created_at": "2010-05-13T19:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82526",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82391",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -92,15 +90,15 @@ This will be useful to have in sage... thanks!
 
 ---
 
-archive/issue_comments_082527.json:
+archive/issue_comments_082392.json:
 ```json
 {
     "body": "Hi Jason,\n\nThank you for your comments! I have uploaded a revised patch addressing the issues you raised:\n\n>   1. It looks like your implementation assumes ZZ as a base ring.  Any reason not to allow any ring?\n\nDone.\n\n>   2. I would prefer the elements print as `a[0] a[1]` instead of `a0 a1` so that copy-paste can work.  Do you have a preference one way or the other?\n\nThere is now an option in \n\n    def _repr_term(self, t, display = \"short\"):\n\nwhich allows to display the output in the long or short notation.\n\n>   3. In the documentation for the class, you should mention that the relations should be understood mod n.\n\nDone.\n\n>   4. In the _element_constructor, I would expect the presence of a braid relation trigger to return 0.  Is there a reason that you raise an error instead?\n\nDone now. As we discussed by e-mail in private, it might make more sense to eventually construct this algebra as a quotient algebra. This would depend on the 'functorial constructions' patch of Nicolas and Florent. I left a note about this in the code.\n\nOne slight warning: I now inserted a line\n\n        assert(self(w) != self.zero())\n\nin product_on_basis, which might slow down calculations, but is safer.\n\nCheers,\n\nAnne",
     "created_at": "2010-05-14T17:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82527",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82392",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -142,15 +140,15 @@ Anne
 
 ---
 
-archive/issue_comments_082528.json:
+archive/issue_comments_082393.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-05-14T17:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82528",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82393",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -160,15 +158,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_082529.json:
+archive/issue_comments_082394.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-21T14:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82529",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82394",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -178,15 +176,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_082530.json:
+archive/issue_comments_082395.json:
 ```json
 {
     "body": "Attachment [trac_8954-nilTemperley-as.patch](tarball://root/attachments/some-uuid/ticket8954/trac_8954-nilTemperley-as.patch) by @jbandlow created at 2010-05-21 14:06:40\n\nAnne,\n\nThanks for making the changes I suggested.  I'm happy with the code now, and I've run the tests on sage-4.4.2 and they all pass. Positive review!",
     "created_at": "2010-05-21T14:06:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82530",
-    "user": "@jbandlow"
+    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82395",
+    "user": "https://github.com/jbandlow"
 }
 ```
 
@@ -200,15 +198,15 @@ Thanks for making the changes I suggested.  I'm happy with the code now, and I'v
 
 ---
 
-archive/issue_comments_082531.json:
+archive/issue_comments_082396.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T01:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8954",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82531",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8954#issuecomment-82396",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

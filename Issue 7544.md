@@ -6,15 +6,14 @@ archive/issues_007544.json:
     "body": "Assignee: tbd\n\nAt least with Sage 4.3.alpha0, doing\n\n```\n./sage -i <url>/<package>-x.y.z.spkg\n```\n\nwon't download the given package name if `<url>/<package>-x.y.z.spkg` is a URL other than that on the Sage website. The issue was reported in [sage-devel](http://groups.google.com/group/sage-devel/browse_thread/thread/0df661d74b620901).\n\n\n\n\nWhen one issues the following command:\n\n```\nsage -i <package>\n```\n\nthen if <package> is already installed, one expects Sage to report that and quit trying to install `<package>`. In case, one really wants to install <package> regardless of whether or not `<package>` is already installed on one's local Sage installation, the following incantation should be used:\n\n```\nsage -f <package>\n```\n\nThe documentation for installing an spkg, as output by \"`sage -h | -advanced`\", clearly documents the behaviour of the options \"`-i`\" and \"`-f`\" so I think we need to document the specific values that `<package>` can take. \n\n\n\n\nSuppose for discussion that `<package>-x.y.z.spkg` is a Sage package, whether that be in the standard, optional or experimental repository. At the very least, one expects both of the options \"`-i`\" and \"`-f`\" to consider the following as valid values:\n\n1. `<package>-x.y.z`, i.e. the name of the package plus the package's version numbers.\n2. the full name `<package>-x.y.z.spkg`, i.e. the name of the package in addition to the version numbers and the \".spkg\" extension.\n3. `<URL>/<package>-x.y.z.spkg`, i.e. the full URL where the package is hosted. This can be a URL on the Sage website or somewhere else.\n4. `/path/to/<package>-x.y.z.spkg`, i.e. the package is found somewhere in your file system and you're giving an absolute or relative path to the package.\n\nAt least with Sage 4.3.alpha0, almost all of the above four values are valid. The exception is the reported issue, i.e. `<URL>/<package>-x.y.z.spkg` cannot be a URL other than that on the Sage website. Incidentally, with Sage 4.3.alpha0 one can also do \"`sage -i <package>`\", where `<package>` is just the package name without the version numbers nor the \".spkg\" extension. I think all of the above four values should be valid and the install script should process them as valid values.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7544\n\n",
     "created_at": "2009-11-27T16:17:40Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3",
     "title": "downloading packages with sage-spkg",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7544",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tbd
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7544
 
 ---
 
-archive/issue_comments_064029.json:
+archive/issue_comments_063913.json:
 ```json
 {
     "body": "based on Sage 4.3.alpha0",
     "created_at": "2009-11-27T16:25:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-64029",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-63913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -82,15 +81,15 @@ based on Sage 4.3.alpha0
 
 ---
 
-archive/issue_comments_064030.json:
+archive/issue_comments_063914.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-11-27T16:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-64030",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-63914",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -100,15 +99,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_064031.json:
+archive/issue_comments_063915.json:
 ```json
 {
     "body": "Attachment [trac_7544-sage-spkg.patch](tarball://root/attachments/some-uuid/ticket7544/trac_7544-sage-spkg.patch) by mvngu created at 2009-11-27 16:53:13\n\nThe patch `trac_7544-sage-spkg.patch` should be applied to the script repository. It changes the file `SAGE_ROOT/local/bin/sage-spkg` so that one can install an spkg by passing any of the above four values to the options \"`-i`\" and \"`-f`\".",
     "created_at": "2009-11-27T16:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-64031",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-63915",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -120,15 +119,15 @@ The patch `trac_7544-sage-spkg.patch` should be applied to the script repository
 
 ---
 
-archive/issue_comments_064032.json:
+archive/issue_comments_063916.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-12-01T05:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-64032",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-63916",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -138,15 +137,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_064033.json:
+archive/issue_comments_063917.json:
 ```json
 {
     "body": "Looks good.",
     "created_at": "2009-12-01T05:28:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-64033",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-63917",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -156,15 +155,15 @@ Looks good.
 
 ---
 
-archive/issue_comments_064034.json:
+archive/issue_comments_063918.json:
 ```json
 {
     "body": "This is a follow-up to #7355.",
     "created_at": "2009-12-09T01:09:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-64034",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-63918",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -174,15 +173,15 @@ This is a follow-up to #7355.
 
 ---
 
-archive/issue_comments_064035.json:
+archive/issue_comments_063919.json:
 ```json
 {
     "body": "Unfortunately, this patch breaks the functionality introduced at #7355. That ticket made it so that in sage-spkg, at line 195 (or so), `$PKG_NAME` (which we get from `$1`) has been munged so that if no version number was provided, the appropriate one has now been added. However, the patch here comments out the line that uses `$PKG_NAME` and simply uses `$1`, thereby bypassing everything that we try to do in #7355. This patch is supposed to be a followup to #7355, but it completely breaks everything that that ticket was intended to do! Even with a casual inspection of the code -- which amounts to changing one line -- it should have been pretty obvious that blithely using `$1` wasn't going to work.\n\nFor example, if you try `sage -i vtk`, you'll see that it searches and finds that version 5.0.2 is the current version -- but then goes and tries to download a bare \"vtk.spkg\":\n\n```\ndrake@klee:/opt/sage$ sage -i vtk\nInstalling vtk\nCalling sage-spkg on vtk\nWarning: Attempted to overwrite SAGE_ROOT environment variable\nvtk\nMachine:\nLinux klee 2.6.31-9-rt #152-Ubuntu SMP PREEMPT RT Thu Oct 15 13:22:24 UTC 2009 x86_64 GNU/Linux\nDeleting directories from past builds of previous/current versions of vtk\n/opt/sage/local/bin/sage-spkg: file vtk does not exist\nAttempting to download it.\nSearching for latest version of vtk\nFound package vtk-5.0.2\nhttp://www.sagemath.org//packages/optional/vtk.spkg --> vtk.spkg\n[ ]\nhttp://www.sagemath.org//packages/standard/vtk.spkg --> vtk.spkg\n[ ]\nhttp://www.sagemath.org//packages/experimental/vtk.spkg --> vtk.spkg\n[ ]\nhttp://www.sagemath.org//packages/archive/vtk.spkg --> vtk.spkg\n[ ]\n**********************************************************************\n* Unable to download vtk\n* Please see http://www.sagemath.org//packages for a list of valid\n* packages or check the package name.\n**********************************************************************\nsage: Failed to download package vtk-5.0.2 from http://www.sagemath.org/\n```\n\n\nI'll open another ticket to fix this.",
     "created_at": "2010-01-23T05:52:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-64035",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-63919",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -226,15 +225,15 @@ I'll open another ticket to fix this.
 
 ---
 
-archive/issue_comments_064036.json:
+archive/issue_comments_063920.json:
 ```json
 {
     "body": "The followup ticket is #8043.",
     "created_at": "2010-01-25T04:55:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7544",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-64036",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7544#issuecomment-63920",
+    "user": "https://github.com/dandrake"
 }
 ```
 

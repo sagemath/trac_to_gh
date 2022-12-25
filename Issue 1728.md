@@ -6,15 +6,14 @@ archive/issues_001728.json:
     "body": "Assignee: mabshoff\n\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycle/sage-2.10.alpha1$ ./sage -t  devel/sage-main/sage/rings/polynomial/complex_roots.py\nsage -t  devel/sage-main/sage/rings/polynomial/complex_roots.py\n**********************************************************************\nFile \"complex_roots.py\", line 21:\n    sage: (x^5 - x - 1).roots(ring=CIF)\nExpected:\n    [([1.1673039782614185 .. 1.16730397826141...], 1), ([0.18123244446987518 .. 0.18123244446987558] + [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([0.181232444469875... .. 0.1812324444698755...] - [1.083954101317710... .. 1.0839541013177110]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] + [0.35247154603172609 .. 0.35247154603172643]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] - [0.35247154603172609 .. 0.35247154603172643]*I, 1)]\nGot:\n    [([1.1673039782614185 .. 1.1673039782614188], 1), ([0.18123244446987518 .. 0.18123244446987558] + [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([0.18123244446987518 .. 0.18123244446987558] - [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] + [0.35247154603172609 .. 0.35247154603172648]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] - [0.35247154603172609 .. 0.35247154603172643]*I, 1)]\n**********************************************************************\nFile \"complex_roots.py\", line 267:\n    sage: complex_roots(x^5 - x - 1)\nExpected:\n    [([1.1673039782614185 .. 1.16730397826141...], 1), ([0.18123244446987518 .. 0.18123244446987558] + [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([0.181232444469875... .. 0.1812324444698755...] - [1.083954101317710... .. 1.0839541013177110]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] + [0.35247154603172609 .. 0.35247154603172643]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] - [0.35247154603172609 .. 0.35247154603172643]*I, 1)]\nGot:\n    [([1.1673039782614185 .. 1.1673039782614188], 1), ([0.18123244446987518 .. 0.18123244446987558] + [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([0.18123244446987518 .. 0.18123244446987558] - [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] + [0.35247154603172609 .. 0.35247154603172648]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] - [0.35247154603172609 .. 0.35247154603172643]*I, 1)]\n**********************************************************************\n```\n\nand\n\n```\nmabshoff@sage:/tmp/Work-mabshoff/release-cycle/sage-2.10.alpha1$ ./sage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\nsage -t  devel/sage-main/sage/rings/polynomial/polynomial_element.pyx\n**********************************************************************\nFile \"polynomial_element.pyx\", line 2539:\n    sage: f.roots(multiplicities=False)\nExpected:\n    [-1.6772670339941..., 0.19995479628..., 0.200045306115..., 1.5763035161844...]\nGot:\n    [-1.67726703399419, 0.199954796285371, 0.200045306114927, 1.57630351618444]\n**********************************************************************\nFile \"polynomial_element.pyx\", line 2545:\n    sage: f.roots(multiplicities=False)\nExpected:\n    [1.00000000000000 - ...*I,... 1.00000000000000*I]\nGot:\n    [2.22044604925031e-16 + 1.00000000000000*I, 1.00000000000000 + 8.32667268468867e-17*I]\n**********************************************************************\nFile \"polynomial_element.pyx\", line 2638:\n    sage: p.roots(ring=CIF)\nExpected:\n    [([1.1673039782614185 .. 1.16730397826141...], 1), ([0.18123244446987518 .. 0.18123244446987558] + [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([0.181232444469875... .. 0.1812324444698755...] - [1.083954101317710... .. 1.0839541013177110]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] + [0.35247154603172609 .. 0.35247154603172643]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] - [0.35247154603172609 .. 0.35247154603172643]*I, 1)]\nGot:\n    [([1.1673039782614185 .. 1.1673039782614188], 1), ([0.18123244446987518 .. 0.18123244446987558] + [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([0.18123244446987518 .. 0.18123244446987558] - [1.0839541013177103 .. 1.0839541013177110]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] + [0.35247154603172609 .. 0.35247154603172648]*I, 1), ([-0.76488443360058489 .. -0.76488443360058455] - [0.35247154603172609 .. 0.35247154603172643]*I, 1)]\n**********************************************************************\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1728\n\n",
     "created_at": "2008-01-09T00:55:05Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "numpy 1.0.4 causes various numerical noise doctest failures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1728",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -78,15 +77,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1728
 
 ---
 
-archive/issue_comments_010940.json:
+archive/issue_comments_010913.json:
 ```json
 {
     "body": "Attachment [Sage-2.10.alpha2-fix-numerical-noise-doctest-failure-from-numpy-1.0.4.patch](tarball://root/attachments/some-uuid/ticket1728/Sage-2.10.alpha2-fix-numerical-noise-doctest-failure-from-numpy-1.0.4.patch) by mabshoff created at 2008-01-09 01:49:51\n\nI don't like the part about\n\n```\n             sage: x = CC['x'].0\n             sage: i = CC.0\n             sage: f = (x - 1)*(x - i)\n             sage: f.roots(multiplicities=False)\n-            [1.00000000000000 - ...*I,... 1.00000000000000*I]\n+            [...1.00000000000000*I, 1.00000000000000...*I]\n```\n\nbut I don't see any viable alternative.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-09T01:49:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1728#issuecomment-10940",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1728#issuecomment-10913",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Michael
 
 ---
 
-archive/issue_comments_010941.json:
+archive/issue_comments_010914.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-09T01:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1728#issuecomment-10941",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1728#issuecomment-10914",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -131,15 +130,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_010942.json:
+archive/issue_comments_010915.json:
 ```json
 {
     "body": "Merged in Sage 2.10.alpha1.",
     "created_at": "2008-01-09T01:50:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1728#issuecomment-10942",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1728#issuecomment-10915",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -149,15 +148,15 @@ Merged in Sage 2.10.alpha1.
 
 ---
 
-archive/issue_comments_010943.json:
+archive/issue_comments_010916.json:
 ```json
 {
     "body": "Attachment [Sage-2.10.alpha1-fix-more-numerical-doctest-noise-from-numpy-merge.patch](tarball://root/attachments/some-uuid/ticket1728/Sage-2.10.alpha1-fix-more-numerical-doctest-noise-from-numpy-merge.patch) by mabshoff created at 2008-01-11 16:21:02\n\nAnother patch was needed to quiet the same doctest on OSX. I am inclient to either add `#random` to that test or alternatively change it to something that leads to something numerically more stable. Oh well.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-11T16:21:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1728",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1728#issuecomment-10943",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1728#issuecomment-10916",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

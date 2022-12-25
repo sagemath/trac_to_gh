@@ -6,15 +6,13 @@ archive/issues_002753.json:
     "body": "Assignee: somebody\n\nThe attached patch keeps track of the random number seed used on Sage startup, and lets you set a single random number seed, which gets propagated on demand into random number generators for GMP (+ MPFR), Python, NTL, Pari, gp, GAP, and libc (so far).\n\nAlso, it moves away from libc's random() in favor of the other generators mentioned above, which are portable across operating systems and architectures; this means that doctest results using random numbers are now reproducible, so I've removed many \"# random\" from the doctests.\n\nPasses testall on the platforms I have access to (32-bit x86 Linux, 64-bit x86 Linux, and 32-bit x86 OSX).\n\nIssue created by migration from https://trac.sagemath.org/ticket/2753\n\n",
     "created_at": "2008-04-01T14:28:37Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] new \"randstate\" framework for a global Sage random number seed",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2753",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: somebody
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2753
 
 ---
 
-archive/issue_comments_018909.json:
+archive/issue_comments_018869.json:
 ```json
 {
     "body": "Attachment [trac2753-randstate.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-randstate.patch) by cwitty created at 2008-04-01 14:29:43",
     "created_at": "2008-04-01T14:29:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18909",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18869",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -51,15 +49,15 @@ Attachment [trac2753-randstate.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_018910.json:
+archive/issue_comments_018870.json:
 ```json
 {
     "body": "Attachment [trac2753-hg_scripts-randstate-doctest.patch](tarball://root/attachments/some-uuid/ticket2753/trac2753-hg_scripts-randstate-doctest.patch) by @rlmill created at 2008-04-04 02:22:56\n\nApplies cleanly to Sage 2.11. I am taking cwitty's word on doctests- I haven't run any of my own. IMO, this greatly improves the robustness of our doctesting infrastructure.",
     "created_at": "2008-04-04T02:22:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18910",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18870",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -71,15 +69,15 @@ Applies cleanly to Sage 2.11. I am taking cwitty's word on doctests- I haven't r
 
 ---
 
-archive/issue_comments_018911.json:
+archive/issue_comments_018871.json:
 ```json
 {
     "body": "Patch should be rebased on 3.0.alpha0.",
     "created_at": "2008-04-04T02:27:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18911",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18871",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -89,15 +87,15 @@ Patch should be rebased on 3.0.alpha0.
 
 ---
 
-archive/issue_comments_018912.json:
+archive/issue_comments_018872.json:
 ```json
 {
     "body": "manula merges of the rejected hunks against my 3.0.alpha1 merge tree",
     "created_at": "2008-04-04T05:04:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18912",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18872",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -107,15 +105,15 @@ manula merges of the rejected hunks against my 3.0.alpha1 merge tree
 
 ---
 
-archive/issue_comments_018913.json:
+archive/issue_comments_018873.json:
 ```json
 {
     "body": "Attachment [trac_2753-reject-merges.patch](tarball://root/attachments/some-uuid/ticket2753/trac_2753-reject-merges.patch) by mabshoff created at 2008-04-04 05:05:09\n\nMerged all three patches in Sage 3.0.alpha1",
     "created_at": "2008-04-04T05:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18913",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18873",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -127,15 +125,15 @@ Merged all three patches in Sage 3.0.alpha1
 
 ---
 
-archive/issue_comments_018914.json:
+archive/issue_comments_018874.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-04T05:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2753",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18914",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2753#issuecomment-18874",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

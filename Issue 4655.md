@@ -6,15 +6,14 @@ archive/issues_004655.json:
     "body": "Assignee: @williamstein\n\nKeywords: plot\n\nThis test fails in 3.2.1.rc0:\n\n```\njec@host-57-89%./sage -t  \"devel/sage/sage/plot/plot.py\"\nsage -t  \"devel/sage/sage/plot/plot.py\"                     \n**********************************************************************\nFile \"/home/jec/sage-3.2.1.rc0/devel/sage/sage/plot/plot.py\", line 2283:\n    sage: adaptive_refinement(sin, (0,0), (pi,0), adaptive_tolerance=0.01)\nExpected:\n    [(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi, 0.831469612302545...), (0.375*pi, 0.92387953251128674), (0.4375*pi, 0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218), (0.875*pi, 0.3826834323650898...)]\nGot:\n    [(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi, 0.83146961230254524), (0.375*pi, 0.92387953251128674), (0.4375*pi, 0.98078528040323043), (0.5*pi, 1.0), (0.5625*pi, 0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, 0.70710678118654757), (0.8125*pi, 0.55557023301960218), (0.875*pi, 0.38268343236508989)]\n**********************************************************************\n1 items had failures:\n   1 of  10 in __main__.example_47\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/jec/sage-3.2.1.rc0/tmp/.doctest_plot.py\n\t [38.8 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n\tsage -t  \"devel/sage/sage/plot/plot.py\"\nTotal time for all tests: 38.8 seconds\n```\n\non this machine:\n\n```\njec@host-57-89%cat /proc/version \nLinux version 2.6.18.8-0.3-default (geeko@buildhost) (gcc version 4.1.2 20061115 (prerelease) (SUSE Linux)) #1 SMP Tue Apr 17 08:42:35 UTC 2007\n```\n\nwith this cpu (*4):\n\n```\nprocessor\t: 3\nvendor_id\t: AuthenticAMD\ncpu family\t: 15\nmodel\t\t: 65\nmodel name\t: Dual-Core AMD Opteron(tm) Processor 2220\nstepping\t: 3\ncpu MHz\t\t: 2800.168\ncache size\t: 1024 KB\nphysical id\t: 1\nsiblings\t: 2\ncore id\t\t: 1\ncpu cores\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 1\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp lm 3dnowext 3dnow pni cx16 lahf_lm cmp_legacy svm cr8_legacy\nbogomips\t: 5600.76\nTLB size\t: 1024 4K pages\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 40 bits physical, 48 bits virtual\npower management: ts fid vid ttp tm stc\n```\n\n\nStrange: to me the \"...\" processing should have dealt with that!\n\nIssue created by migration from https://trac.sagemath.org/ticket/4655\n\n",
     "created_at": "2008-11-29T18:36:05Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "doctest failure in plot.py with 3.2.1.rc0 on 64-bit SuSe linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4655",
-    "user": "@JohnCremona"
+    "user": "https://github.com/JohnCremona"
 }
 ```
 Assignee: @williamstein
@@ -95,15 +94,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4655
 
 ---
 
-archive/issue_comments_035056.json:
+archive/issue_comments_034988.json:
 ```json
 {
     "body": "Changing component from graphics to doctest.",
     "created_at": "2008-11-30T07:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35056",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34988",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +112,15 @@ Changing component from graphics to doctest.
 
 ---
 
-archive/issue_comments_035057.json:
+archive/issue_comments_034989.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to mabshoff.",
     "created_at": "2008-11-30T07:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35057",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34989",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -131,15 +130,15 @@ Changing assignee from @williamstein to mabshoff.
 
 ---
 
-archive/issue_comments_035058.json:
+archive/issue_comments_034990.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2008-11-30T07:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35058",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34990",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -149,15 +148,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_035059.json:
+archive/issue_comments_034991.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-11-30T07:15:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35059",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34991",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -167,15 +166,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_035060.json:
+archive/issue_comments_034992.json:
 ```json
 {
     "body": "John's problem is caused by\n\n```\n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, 0.70710678118654757), \n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, 0.70710678118654757), \n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T07:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35060",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34992",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -195,15 +194,15 @@ Michael
 
 ---
 
-archive/issue_comments_035061.json:
+archive/issue_comments_034993.json:
 ```json
 {
     "body": "I have a temporary account on John's machine, and have tested the attached patch on it.",
     "created_at": "2008-11-30T19:53:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35061",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34993",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -213,15 +212,15 @@ I have a temporary account on John's machine, and have tested the attached patch
 
 ---
 
-archive/issue_comments_035062.json:
+archive/issue_comments_034994.json:
 ```json
 {
     "body": "Attachment [trac_4655.patch](tarball://root/attachments/some-uuid/ticket4655/trac_4655.patch) by @JohnCremona created at 2008-11-30 20:03:27\n\nOK, so William's patch worked for me, but that's not much of a test since I tested on the same machine as he did (after applying to 3.2.1.rc0).  But I also applied it on a 32-bit linux machine and it worked fine there too.  It would be a good idea to test it elsewhere, I think.",
     "created_at": "2008-11-30T20:03:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35062",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34994",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -233,15 +232,15 @@ OK, so William's patch worked for me, but that's not much of a test since I test
 
 ---
 
-archive/issue_comments_035063.json:
+archive/issue_comments_034995.json:
 ```json
 {
     "body": "I have access to two more machines (varro and menas IIRC) where there is numerical noise in plot.py, so I will test it there shortly.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T20:08:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35063",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34995",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -255,15 +254,15 @@ Michael
 
 ---
 
-archive/issue_comments_035064.json:
+archive/issue_comments_034996.json:
 ```json
 {
     "body": "I am seeing the same failure as John on menas:\n\n```\n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254546), (0.75*pi, \n0.98078528040323043), (0.625*pi, 0.92387953251128674), (0.6875*pi, 0.83146961230254535), (0.75*pi, \n```\n\nOn varro we have a slightly different problem:\n\n```\n[(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654746), (0.3125*pi,\n[(0.125*pi, 0.38268343236508978), (0.1875*pi, 0.55557023301960218), (0.25*pi, 0.70710678118654757), (0.3125*pi, \n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-11-30T23:32:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35064",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34996",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -290,15 +289,15 @@ Michael
 
 ---
 
-archive/issue_comments_035065.json:
+archive/issue_comments_034997.json:
 ```json
 {
     "body": "Attachment [trac_4655.2.patch](tarball://root/attachments/some-uuid/ticket4655/trac_4655.2.patch) by mabshoff created at 2008-12-01 00:24:40\n\ntrac_4655.2.patch is a slightly updated version of John's patch that also fixes the varro issue. To test apply that patch only.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-01T00:24:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35065",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34997",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -314,15 +313,15 @@ Michael
 
 ---
 
-archive/issue_comments_035066.json:
+archive/issue_comments_034998.json:
 ```json
 {
     "body": "Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-12-01T00:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35066",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34998",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -336,15 +335,15 @@ Michael
 
 ---
 
-archive/issue_comments_035067.json:
+archive/issue_comments_034999.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1.rc1",
     "created_at": "2008-12-01T00:37:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35067",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-34999",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -354,15 +353,15 @@ Merged in Sage 3.2.1.rc1
 
 ---
 
-archive/issue_comments_035068.json:
+archive/issue_comments_035000.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-12-01T00:37:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35068",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4655#issuecomment-35000",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

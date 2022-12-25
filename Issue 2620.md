@@ -6,15 +6,14 @@ archive/issues_002620.json:
     "body": "Assignee: @malb\n\nPython has a generator type which is cool and now this works:\n\n\n```\nP.<a,b,c,d,e> = PolynomialRing(GF(2), 5, order='lex')\nI1 = ideal([a*b + c*d + 1, a*c*e + d*e, a*b*e + c*e, b*c + c*d*e + 1])\nQ = P.quotient( sage.rings.ideal.FieldIdeal(P) )\nI2 = ideal( Q(f) for f in I1.gens() ) # note we don't construct a list\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2620\n\n",
     "created_at": "2008-03-20T22:15:35Z",
     "labels": [
-        "commutative algebra",
-        "minor",
-        "enhancement"
+        "component: commutative algebra",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch, needs review] generator generator support for ideal",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2620",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2620
 
 ---
 
-archive/issue_comments_017995.json:
+archive/issue_comments_017956.json:
 ```json
 {
     "body": "Attachment [generator_generator.patch](tarball://root/attachments/some-uuid/ticket2620/generator_generator.patch) by mabshoff created at 2008-04-01 14:30:40\n\nPatch looks good to me. Doctests pass. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-01T14:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2620#issuecomment-17995",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2620#issuecomment-17956",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -62,15 +61,15 @@ Michael
 
 ---
 
-archive/issue_comments_017996.json:
+archive/issue_comments_017957.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha0",
     "created_at": "2008-04-01T14:30:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2620#issuecomment-17996",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2620#issuecomment-17957",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -80,15 +79,15 @@ Merged in Sage 3.0.alpha0
 
 ---
 
-archive/issue_comments_017997.json:
+archive/issue_comments_017958.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-01T14:30:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2620",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2620#issuecomment-17997",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2620#issuecomment-17958",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

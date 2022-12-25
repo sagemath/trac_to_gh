@@ -6,15 +6,14 @@ archive/issues_004564.json:
     "body": "Assignee: somebody\n\nFor some reason, there is no function to do this shipped with gmp...\n\nIssue created by migration from https://trac.sagemath.org/ticket/4564\n\n",
     "created_at": "2008-11-20T13:02:49Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2.1",
     "title": "[with patch, needs review] implement long long -> mpz_t",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4564",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: somebody
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4564
 
 ---
 
-archive/issue_comments_034182.json:
+archive/issue_comments_034115.json:
 ```json
 {
     "body": "Attachment [4564-mpz-longlong.patch](tarball://root/attachments/some-uuid/ticket4564/4564-mpz-longlong.patch) by @craigcitro created at 2008-11-20 23:00:09\n\nSo the code here looks good. I even pulled out my old G4 and tested it on a big-endian machine, and everything worked fine.\n\nI do have one question, though: doesn't the `mpz_set_longlong` belong somewhere more generic than `integer.pyx`? I would have put it somewhere in libcsage. Of course, then it wouldn't be so easy to raise the exception ...",
     "created_at": "2008-11-20T23:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34182",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34115",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -51,15 +50,15 @@ I do have one question, though: doesn't the `mpz_set_longlong` belong somewhere 
 
 ---
 
-archive/issue_comments_034183.json:
+archive/issue_comments_034116.json:
 ```json
 {
     "body": "Yeah, probably does belong in libcsage... I'm going to be moving stuff around when I split up cdefs anyways. I was just concentrating more on divisors at that point ;).",
     "created_at": "2008-11-20T23:11:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34183",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34116",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -69,15 +68,15 @@ Yeah, probably does belong in libcsage... I'm going to be moving stuff around wh
 
 ---
 
-archive/issue_comments_034184.json:
+archive/issue_comments_034117.json:
 ```json
 {
     "body": "That works. Let's merge this now, then, and worry about it later. Maybe open a ticket for the cdefs cleanup and mention this, so we don't forget?",
     "created_at": "2008-11-20T23:12:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34184",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34117",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -87,15 +86,15 @@ That works. Let's merge this now, then, and worry about it later. Maybe open a t
 
 ---
 
-archive/issue_comments_034185.json:
+archive/issue_comments_034118.json:
 ```json
 {
     "body": "See #846. I'm planning on doing that today.",
     "created_at": "2008-11-20T23:15:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34185",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34118",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -105,15 +104,15 @@ See #846. I'm planning on doing that today.
 
 ---
 
-archive/issue_comments_034186.json:
+archive/issue_comments_034119.json:
 ```json
 {
     "body": "I am seeing a doctest failure here:\n\n```\nsage -t -long devel/sage/sage/rings/integer.pyx             \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/devel/sage/sage/rings/integer.pyx\", line 199:\n    sage: sage: _test_mpz_set_longlong(100000000000)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mabshoff/release-cycle/sage-3.2.1.alpha0/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[6]>\", line 1\n         sage: _test_mpz_set_longlong(Integer(100000000000))###line 199:\n    sage: sage: _test_mpz_set_longlong(100000000000)\n          ^\n     SyntaxError: invalid syntax\n**********************************************************************\n1 items had failures:\n```\n\n\nI guess this is caused by an extra \"sage: \" in that line. I am editing the patch to fix this.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-21T05:47:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34186",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34119",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -152,15 +151,15 @@ Michael
 
 ---
 
-archive/issue_comments_034187.json:
+archive/issue_comments_034120.json:
 ```json
 {
     "body": "Merged in Sage 3.2.1.alpha0",
     "created_at": "2008-11-21T05:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34187",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34120",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -170,15 +169,15 @@ Merged in Sage 3.2.1.alpha0
 
 ---
 
-archive/issue_comments_034188.json:
+archive/issue_comments_034121.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-21T05:54:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4564",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34188",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4564#issuecomment-34121",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

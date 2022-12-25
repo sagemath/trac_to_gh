@@ -6,7 +6,7 @@ archive/issues_004843.json:
     "body": "Assignee: mabshoff\n\nThere are some small issues with Sage's readline and the one from OpenSUSE not playing well together. I have some temporary fix to get around this.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4843\n\n",
     "created_at": "2008-12-20T22:57:16Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004843.json:
     "title": "Fix readline related build problems on OpenSUSE 11.1",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4843",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4843
 
 ---
 
-archive/issue_comments_036727.json:
+archive/issue_comments_036655.json:
 ```json
 {
     "body": "Unfortunately this will be bumped to Sage 3.3.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-02T23:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36727",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36655",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +55,15 @@ Michael
 
 ---
 
-archive/issue_comments_036728.json:
+archive/issue_comments_036656.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-06T04:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36728",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36656",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -73,15 +73,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_036729.json:
+archive/issue_comments_036657.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/spkgs/readline-5.2.p5.spkg\n\nfixes the issue. It also cleans up SPKG.txt and brings it up to code.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-06T04:38:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36729",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36657",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -99,15 +99,15 @@ Michael
 
 ---
 
-archive/issue_comments_036730.json:
+archive/issue_comments_036658.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-06T06:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36730",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36658",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -117,15 +117,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_036731.json:
+archive/issue_comments_036659.json:
 ```json
 {
     "body": "Merged in Sage 3.2.3\n\nCheers,\n\nMichael",
     "created_at": "2009-01-06T06:39:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4843",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36731",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4843#issuecomment-36659",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

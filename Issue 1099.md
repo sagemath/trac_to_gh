@@ -6,15 +6,13 @@ archive/issues_001099.json:
     "body": "Assignee: @mwhansen\n\nKeywords: graphs\n\nCurrently there are four different functions to delete things from a graph: delete_edge, delete_edges, delete_vertex, and delete_vertices.  How about we consolidate these into one function, \"delete\", that looks like this:\n\ndelete(vertices=list_of_vertices, edges=list_of_edges) deletes the vertices specified, then the edges specified.\n\nSo:\n\n* delete_vertex(v) == delete(vertices=[v])\n\n* delete_vertices(list) == delete(vertices=list)\n\n* delete_edge(e) == delete(edges=[e])\n\n* delete_edges(list) == delete(edges=list)\n\n* deleting vertices and edges is accomplished by passing both parameters in.\n\nThis idea may be completely irrational, but I thought I'd throw it out in an effort to consolidate functions and make the interface simpler to remember.  What do you think?\n\n(I'm ignoring delete_multiedge here, though we could probably include that in as an option to delete).\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1099\n\n",
     "created_at": "2007-11-04T03:30:51Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graphs: consolidating delete functionality",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1099",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @mwhansen
@@ -50,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1099
 
 ---
 
-archive/issue_comments_006641.json:
+archive/issue_comments_006621.json:
 ```json
 {
     "body": "Changing assignee from @mwhansen to @rlmill.",
     "created_at": "2007-12-17T15:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6641",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6621",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -68,15 +66,15 @@ Changing assignee from @mwhansen to @rlmill.
 
 ---
 
-archive/issue_comments_006642.json:
+archive/issue_comments_006622.json:
 ```json
 {
     "body": "Changing component from combinatorics to graph theory.",
     "created_at": "2007-12-17T15:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6642",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6622",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -86,15 +84,15 @@ Changing component from combinatorics to graph theory.
 
 ---
 
-archive/issue_comments_006643.json:
+archive/issue_comments_006623.json:
 ```json
 {
     "body": "Changing keywords from \"graphs\" to \"\".",
     "created_at": "2007-12-17T15:11:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6643",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6623",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -104,15 +102,15 @@ Changing keywords from "graphs" to "".
 
 ---
 
-archive/issue_comments_006644.json:
+archive/issue_comments_006624.json:
 ```json
 {
     "body": "Attachment [delete.patch](tarball://root/attachments/some-uuid/ticket1099/delete.patch) by @rlmill created at 2008-01-27 03:11:02\n\nDefines the delete function, but does not remove any other functions",
     "created_at": "2008-01-27T03:11:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6644",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6624",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -124,15 +122,15 @@ Defines the delete function, but does not remove any other functions
 
 ---
 
-archive/issue_comments_006645.json:
+archive/issue_comments_006625.json:
 ```json
 {
     "body": "We still need to figure out what to do with delete_multiedge (perhaps just keep it). Also, is there any loss of functionality going from the other functions to this one?",
     "created_at": "2008-01-27T03:12:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6645",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6625",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -142,15 +140,15 @@ We still need to figure out what to do with delete_multiedge (perhaps just keep 
 
 ---
 
-archive/issue_comments_006646.json:
+archive/issue_comments_006626.json:
 ```json
 {
     "body": "Also note the somewhat arbitrary choice to support delete(edges=e) and delete(vertices=v) for vertex v and edge e. Should this stay?",
     "created_at": "2008-01-27T03:19:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6646",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6626",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -160,15 +158,15 @@ Also note the somewhat arbitrary choice to support delete(edges=e) and delete(ve
 
 ---
 
-archive/issue_comments_006647.json:
+archive/issue_comments_006627.json:
 ```json
 {
     "body": "I support removing all other delete methods -- tab completion on a graph produces a formidable list, and having a bunch of redundant functions adds to the clutter.  That said, there are some strange things about this patch that I could do without:\n\n\n```\nG.delete(1)       #deletes a node\nG.delete(1,2)     #deletes an edge\nG.delete(1,2,3)   #deletes three nodes\nG.delete(1,2,3,4) #deletes four nodes\n```\n\n\none of these is not like the other... maybe you could balance it out, so if they pass in an even number of arguments, it removes the edges between successive pairs; odd number of arguments deletes nodes?",
     "created_at": "2008-01-28T15:50:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6647",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6627",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -189,15 +187,15 @@ one of these is not like the other... maybe you could balance it out, so if they
 
 ---
 
-archive/issue_comments_006648.json:
+archive/issue_comments_006628.json:
 ```json
 {
     "body": "I propose the following:\n\n1. Add an option, `multiple_edges`, to `delete()`, which is a boolean. If True, for every edge given, it deletes all edges on those vertices.\n2. Make it so that `delete(arg)` deletes vertex `arg`, or fails silently if it is not there. Make it so that `delete(arg1, arg2)` deletes the edge `(arg1, arg2)` if it is there, or fails silently if it is not there. Due to edges being 3-tuples (two vertices and a label), also make it so that `delete(arg1, arg2, arg3)` deletes the edge `(arg1, arg2, arg3)` if it is there, or fails silently if it is not.\n3. Make it so that calling `delete` with more than 3 arguments is not supported.\n4. Make it so that only iterable containers can be passed in for `delete(vertices=[v])` and `delete(edges=[e])`, so that `delete(edges=e)` and `delete(vertices=v)` is also not supported.",
     "created_at": "2008-01-28T17:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6648",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6628",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -212,15 +210,15 @@ I propose the following:
 
 ---
 
-archive/issue_comments_006649.json:
+archive/issue_comments_006629.json:
 ```json
 {
     "body": "Attachment [delete-2.patch](tarball://root/attachments/some-uuid/ticket1099/delete-2.patch) by @rlmill created at 2008-01-28 19:08:56\n\nOn top of delete.patch",
     "created_at": "2008-01-28T19:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6649",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6629",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -232,15 +230,15 @@ On top of delete.patch
 
 ---
 
-archive/issue_comments_006650.json:
+archive/issue_comments_006630.json:
 ```json
 {
     "body": "Attachment [delete-3.patch](tarball://root/attachments/some-uuid/ticket1099/delete-3.patch) by @rlmill created at 2008-01-28 19:09:34\n\nOn top of delete-2.patch",
     "created_at": "2008-01-28T19:09:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6650",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6630",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -252,15 +250,15 @@ On top of delete-2.patch
 
 ---
 
-archive/issue_comments_006651.json:
+archive/issue_comments_006631.json:
 ```json
 {
     "body": "Attachment [delete-4.patch](tarball://root/attachments/some-uuid/ticket1099/delete-4.patch) by @jasongrout created at 2008-01-28 20:59:36\n\non top of delete-3.patch",
     "created_at": "2008-01-28T20:59:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6651",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6631",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -272,15 +270,15 @@ on top of delete-3.patch
 
 ---
 
-archive/issue_comments_006652.json:
+archive/issue_comments_006632.json:
 ```json
 {
     "body": "delete-4.patch should be applied on top of delete-3.patch.  It adds the following:\n\n1. extends the syntax so that delete((u,v)) or delete((u,v,label)) deletes an edge; this is so that we can do something like for e in g.edges(): g.delete(e)\n\n2. enhances the doctests for delete and also adds a doctest in another function that should have shown errors from the change we've made.\n\n3. Fix the errors from calling the old functions.  Robert, can you specifically look at the change in graph_generators?",
     "created_at": "2008-01-28T21:03:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6652",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6632",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -296,15 +294,15 @@ delete-4.patch should be applied on top of delete-3.patch.  It adds the followin
 
 ---
 
-archive/issue_comments_006653.json:
+archive/issue_comments_006633.json:
 ```json
 {
     "body": "I've run out of time today to work on this, but rlm and I agree that we should consolidate to two functions: delete_vertices and delete_edges, with a single non-list argument deleting a single vertex or edge.\n\nThat patch should be much simpler and should make much more sense in the long run.",
     "created_at": "2008-01-28T21:52:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6653",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6633",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -316,15 +314,15 @@ That patch should be much simpler and should make much more sense in the long ru
 
 ---
 
-archive/issue_comments_006654.json:
+archive/issue_comments_006634.json:
 ```json
 {
     "body": "> with a single non-list argument deleting a single vertex or edge.\n\nTo clarify, if there is only one argument, and it is either a list or of type types.GeneratorType...",
     "created_at": "2008-01-29T00:39:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6654",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6634",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -336,15 +334,15 @@ To clarify, if there is only one argument, and it is either a list or of type ty
 
 ---
 
-archive/issue_comments_006655.json:
+archive/issue_comments_006635.json:
 ```json
 {
     "body": "What is the status of this ticket? I am afraid this code has/will bitrot.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-08T15:59:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6655",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6635",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -358,15 +356,15 @@ Michael
 
 ---
 
-archive/issue_comments_006656.json:
+archive/issue_comments_006636.json:
 ```json
 {
     "body": "None of the patches for this ticket are or ever were quite ready. I also have to say that I still disagree with the ticket in general. It is much simpler to specify what you are deleting (especially if you happen to do a lot of actual coding with graphs, like me!).",
     "created_at": "2008-04-09T13:19:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6656",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6636",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -376,15 +374,15 @@ None of the patches for this ticket are or ever were quite ready. I also have to
 
 ---
 
-archive/issue_comments_006657.json:
+archive/issue_comments_006637.json:
 ```json
 {
     "body": "Jason,\n\nwhat is the status of this work? It this something you are working on? Did those patches rot in the meantime?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-13T02:08:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6657",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6637",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -400,15 +398,15 @@ Michael
 
 ---
 
-archive/issue_comments_006658.json:
+archive/issue_comments_006638.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2008-08-30T21:50:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1099",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6658",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1099#issuecomment-6638",
+    "user": "https://github.com/rlmill"
 }
 ```
 

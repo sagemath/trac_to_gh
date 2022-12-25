@@ -6,15 +6,14 @@ archive/issues_009695.json:
     "body": "Assignee: @aghitza\n\nCC:  @loefflerd @JohnCremona @williamstein\n\nThe `__call__` functions for `AdditiveAbelianGroup` and `AdditiveAbelianGroupWrapper` don't behave as I would expect, nor as the doctests would lead one to believe.\n\nDocumentation for the wrapper class says:\n\n```\n...or an iterable (in which case the result is the corresponding\nproduct of the generators of self).\n```\n\n\nIt seems that the iterable instead gives a linear combination of the generators used in the \"optimized\" version of the quotient modules.  Most (all?) of the doctests use examples where the number of invariants is equal to the number of original generators, so the optimization is trivial and the situations below are not exposed.\n\nSee #9694 for an example of working around this.\n\nHere, I'd expect `M([1,1,1])` to be `M.0+M.1+M.2`, and not an error\n\n```\nsage: E = EllipticCurve('30a2')\nsage: pts = [E(4,-7,1), E(7/4, -11/8, 1), E(3, -2, 1)]\nsage: M = AdditiveAbelianGroupWrapper(pts[0].parent(), pts, [3, 2, 2])\nsage: M.gens()\n((4 : -7 : 1), (7/4 : -11/8 : 1), (3 : -2 : 1))\nsage: M([1,1,1])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/sage/sage-4.5.2.rc1/devel/sage-main/<ipython console> in <module>()\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/groups/additive_abelian/additive_abelian_wrapper.pyc in __call__(self, x, check)\n    234             elif x.parent() is self.universe():\n    235                 return AdditiveAbelianGroupWrapperElement(self, self._discrete_log(x), element = x)\n--> 236         return addgp.AdditiveAbelianGroup_fixed_gens.__call__(self, x, check)\n    237\n    238 class AdditiveAbelianGroupWrapperElement(addgp.AdditiveAbelianGroupElement):\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/modules/fg_pid/fgp_module.pyc in __call__(self, x, check)\n    481                 x = self.optimized()[0].V().linear_combination_of_basis(x)\n    482             except ValueError, msg:\n--> 483                 raise TypeError, msg\n    484         elif isinstance(x, FGP_Element):\n    485             x = x.lift()\n\nTypeError: length of v must be at most the number of rows of self\n```\n\n\n\nNo problem when the number of invariants equal the number of generators:\n\n```\nsage: G=AdditiveAbelianGroup([17])\nsage: a=G([12])\nsage: a\n(12)\n```\n\n\nThe problem case again, up in the base class\n\n```\nsage: H=AdditiveAbelianGroup([3,7])\nsage: b=H([12])\nsage: b\n(0, 4)\n\nsage: c=H([2,3])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/sage/sage-4.5.2.rc1/devel/sage-main/<ipython console> in <module>()\n\n/sage/sage-4.5.2.rc1/local/lib/python2.6/site-packages/sage/modules/fg_pid/fgp_module.pyc in __call__(self, x, check)\n    481                 x = self.optimized()[0].V().linear_combination_of_basis(x)\n    482             except ValueError, msg:\n--> 483                 raise TypeError, msg\n    484         elif isinstance(x, FGP_Element):\n    485             x = x.lift()\n\nTypeError: length of v must be at most the number of rows of self\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9695\n\n",
     "created_at": "2010-08-06T03:16:32Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "AdditiveAbelianGroup, __call__ is misleading and complicated",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9695",
-    "user": "@rbeezer"
+    "user": "https://github.com/rbeezer"
 }
 ```
 Assignee: @aghitza
@@ -111,15 +110,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9695
 
 ---
 
-archive/issue_comments_094223.json:
+archive/issue_comments_094066.json:
 ```json
 {
     "body": "Mystery solved.  The `FGP_Module` class will accept an iterable in `__call__`, which it uses for a linear combination of a minimal set of generators.  It will also accept a vector (which is a module element) and use its entries as the scalars in a linear combination of the \"original\", \"obvious\", or \"non-minimal\" generators.  This distinction was hard to discern in the doctests.\n\nAs part of working on other documentation items, I have addressed this at #9783.  So this ticket could be closed once #9783 is merged, if not sooner.",
     "created_at": "2010-08-23T06:46:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94223",
-    "user": "@rbeezer"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94066",
+    "user": "https://github.com/rbeezer"
 }
 ```
 
@@ -131,15 +130,15 @@ As part of working on other documentation items, I have addressed this at #9783.
 
 ---
 
-archive/issue_comments_094224.json:
+archive/issue_comments_094067.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2010-08-23T09:42:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94224",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94067",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -149,15 +148,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_094225.json:
+archive/issue_comments_094068.json:
 ```json
 {
     "body": "Actually, now that I'm a bit more awake:  I'll close this ticket as a \"duplicate\" when #9783 is merged.  I'm changing this to `positive_review` so that it appears in reports {11} and {32}.",
     "created_at": "2010-08-23T09:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94225",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94068",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -167,15 +166,15 @@ Actually, now that I'm a bit more awake:  I'll close this ticket as a "duplicate
 
 ---
 
-archive/issue_comments_094226.json:
+archive/issue_comments_094069.json:
 ```json
 {
     "body": "Changing status from closed to new.",
     "created_at": "2010-08-23T09:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94226",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94069",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -185,15 +184,15 @@ Changing status from closed to new.
 
 ---
 
-archive/issue_comments_094227.json:
+archive/issue_comments_094070.json:
 ```json
 {
     "body": "Resolution changed from invalid to ",
     "created_at": "2010-08-23T09:49:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94227",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94070",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -203,15 +202,15 @@ Resolution changed from invalid to
 
 ---
 
-archive/issue_comments_094228.json:
+archive/issue_comments_094071.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-08-23T09:49:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94228",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94071",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -221,15 +220,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_094229.json:
+archive/issue_comments_094072.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-23T09:49:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94229",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94072",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -239,15 +238,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094230.json:
+archive/issue_comments_094073.json:
 ```json
 {
     "body": "# To the release manager\n\nPlease close this ticket when you merge #9783.",
     "created_at": "2010-08-23T09:52:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94230",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94073",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -259,15 +258,15 @@ Please close this ticket when you merge #9783.
 
 ---
 
-archive/issue_comments_094231.json:
+archive/issue_comments_094074.json:
 ```json
 {
     "body": "Replying to [comment:3 mpatel]:\n> Actually, now that I'm a bit more awake:  I'll close this ticket as a \"duplicate\" when #9783 is merged.  I'm changing this to `positive_review` so that it appears in reports {11} and {32}.\n\nThat looks good to me.",
     "created_at": "2010-08-23T09:57:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94231",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94074",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -280,15 +279,15 @@ That looks good to me.
 
 ---
 
-archive/issue_comments_094232.json:
+archive/issue_comments_094075.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-09-05T03:22:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9695",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94232",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9695#issuecomment-94075",
+    "user": "https://github.com/qed777"
 }
 ```
 

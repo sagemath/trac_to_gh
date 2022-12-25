@@ -6,15 +6,14 @@ archive/issues_003995.json:
     "body": "Assignee: @williamstein\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/3995\n\n",
     "created_at": "2008-08-29T21:55:40Z",
     "labels": [
-        "interfaces",
-        "minor",
-        "enhancement"
+        "component: interfaces",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] improve and doctest the MuPAD interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3995",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3995
 
 ---
 
-archive/issue_comments_028706.json:
+archive/issue_comments_028648.json:
 ```json
 {
     "body": "Attachment [trac_3995.patch](tarball://root/attachments/some-uuid/ticket3995/trac_3995.patch) by @mwhansen created at 2008-08-30 00:31:48",
     "created_at": "2008-08-30T00:31:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28706",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28648",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_3995.patch](tarball://root/attachments/some-uuid/ticket3995/tra
 
 ---
 
-archive/issue_comments_028707.json:
+archive/issue_comments_028649.json:
 ```json
 {
     "body": "Positive review. Mike and I went through the patch. Many descriptions are actually missing, but that can be addressed at followup tickets.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-30T00:53:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28707",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28649",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Michael
 
 ---
 
-archive/issue_comments_028708.json:
+archive/issue_comments_028650.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha3",
     "created_at": "2008-08-30T01:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28708",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28650",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +86,15 @@ Merged in Sage 3.1.2.alpha3
 
 ---
 
-archive/issue_comments_028709.json:
+archive/issue_comments_028651.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-30T01:15:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3995",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28709",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3995#issuecomment-28651",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

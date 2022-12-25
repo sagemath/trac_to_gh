@@ -6,15 +6,14 @@ archive/issues_001117.json:
     "body": "Assignee: @rlmill\n\nFixes a typo in 1088.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1117\n\n",
     "created_at": "2007-11-06T22:26:28Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.12",
     "title": "fix #1088",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1117",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1117
 
 ---
 
-archive/issue_comments_006754.json:
+archive/issue_comments_006734.json:
 ```json
 {
     "body": "Attachment [doc_1088_fix.patch](tarball://root/attachments/some-uuid/ticket1117/doc_1088_fix.patch) by @rlmill created at 2007-11-06 22:26:45",
     "created_at": "2007-11-06T22:26:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1117",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1117#issuecomment-6754",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1117#issuecomment-6734",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [doc_1088_fix.patch](tarball://root/attachments/some-uuid/ticket1117/
 
 ---
 
-archive/issue_comments_006755.json:
+archive/issue_comments_006735.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-06T22:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1117",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1117#issuecomment-6755",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1117#issuecomment-6735",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -65,15 +64,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_006756.json:
+archive/issue_comments_006736.json:
 ```json
 {
     "body": "applied to 2.8.12.rc0",
     "created_at": "2007-11-06T22:44:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1117",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1117#issuecomment-6756",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1117#issuecomment-6736",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

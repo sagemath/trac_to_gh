@@ -6,7 +6,7 @@ archive/issues_006465.json:
     "body": "In new symbolics, derivative operator does not know \nhow to act on symbolic integration.\n\n\n```\nsage: f(x) = function('f',x)\nsage: g = integrate(f(x),x)\nsage: g.diff(x)\nD[0](integrate)(f(x), x)*D[0](f)(x) + D[1](integrate)(f(x), x)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6465\n\n",
     "created_at": "2009-07-05T02:31:55Z",
     "labels": [
-        "symbolics",
+        "component: symbolics",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006465.json:
     "title": "Derivative D acts wrongly on symbolic integration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6465",
-    "user": "@golam-m-hossain"
+    "user": "https://github.com/golam-m-hossain"
 }
 ```
 In new symbolics, derivative operator does not know 
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6465
 
 ---
 
-archive/issue_comments_052248.json:
+archive/issue_comments_052150.json:
 ```json
 {
     "body": "support disabling chain rule for symbolic functions",
     "created_at": "2009-08-01T02:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52248",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52150",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -55,15 +55,15 @@ support disabling chain rule for symbolic functions
 
 ---
 
-archive/issue_comments_052249.json:
+archive/issue_comments_052151.json:
 ```json
 {
     "body": "Attachment [trac_6465-chain_rule.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-chain_rule.patch) by @burcin created at 2009-08-01 02:38:24\n\nattachment:trac_6465-chain_rule.patch adds support for disabling chain rule for symbolic functions. It depends on the new pynac package here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg",
     "created_at": "2009-08-01T02:38:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52249",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52151",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -77,15 +77,15 @@ http://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.8.p2.spkg
 
 ---
 
-archive/issue_comments_052250.json:
+archive/issue_comments_052152.json:
 ```json
 {
     "body": "Attachment [trac_6465-moves-integration-into-sfunction-subclass.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.patch) by @golam-m-hossain created at 2009-08-21 17:24:43\n\nShould be applied after the chain-rule patch",
     "created_at": "2009-08-21T17:24:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52250",
-    "user": "@golam-m-hossain"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52152",
+    "user": "https://github.com/golam-m-hossain"
 }
 ```
 
@@ -97,15 +97,15 @@ Should be applied after the chain-rule patch
 
 ---
 
-archive/issue_comments_052251.json:
+archive/issue_comments_052153.json:
 ```json
 {
     "body": "There need to be deprecation warnings for things like \n\n```\nsage: integral(sin(x), pi, 2*pi)\nsage: integral(sin(x)^3\n```\n",
     "created_at": "2009-09-10T15:23:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52251",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52153",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -121,15 +121,15 @@ sage: integral(sin(x)^3
 
 ---
 
-archive/issue_comments_052252.json:
+archive/issue_comments_052154.json:
 ```json
 {
     "body": "The sudden API change probably merits a deprecation warning, as kcrisman said. Also:\n\nDoctest failure:\n\n\n```\n\nsage -t -long devel/sage/sage/libs/ginac/decl.pxi         \n         [0.1 s]                                          \nsage -t -long devel/sage/sage/misc/functional.py          \n**********************************************************************\nFile \"/opt/sage-bin/devel/sage-deriv/sage/misc/functional.py\", line 412:\n    sage: integral(exp(-x), (x, 1, oo))                                 \nExpected:                                                               \n    e^(-1)                                                              \nGot:                                                                    \n    gamma_incomplete(1, 1)                                              \n**********************************************************************  \n1 items had failures:                                                   \n   1 of  15 in __main__.example_25                                      \n***Test Failed*** 1 failures.                                           \nFor whitespace errors, see the file /opt/sage-bin/tmp/.doctest_functional.py\n         [9.3 s]\n\n```\n",
     "created_at": "2009-09-22T10:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52252",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52154",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -164,15 +164,15 @@ For whitespace errors, see the file /opt/sage-bin/tmp/.doctest_functional.py
 
 ---
 
-archive/issue_comments_052253.json:
+archive/issue_comments_052155.json:
 ```json
 {
     "body": "That may be due to the Maxima upgrade - has it been patched elsewhere?  Just FYI, I'm not certain on this.",
     "created_at": "2009-09-22T12:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52253",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52155",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -182,15 +182,15 @@ That may be due to the Maxima upgrade - has it been patched elsewhere?  Just FYI
 
 ---
 
-archive/issue_comments_052254.json:
+archive/issue_comments_052156.json:
 ```json
 {
     "body": "This patch needs to be rebased on #6816. The doctest failure persists, but gamma_incomplete(1, 1) is equivalent to e^(-1) anyways.",
     "created_at": "2009-11-30T08:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52254",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52156",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -200,15 +200,15 @@ This patch needs to be rebased on #6816. The doctest failure persists, but gamma
 
 ---
 
-archive/issue_comments_052255.json:
+archive/issue_comments_052157.json:
 ```json
 {
     "body": "Both patches need major rebase after #7490. I'll take a look at this when I find some time.\n\nThe problem with `gamma_incomplete` might be related to/fixed by #7748.",
     "created_at": "2009-12-22T22:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52255",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52157",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -220,15 +220,15 @@ The problem with `gamma_incomplete` might be related to/fixed by #7748.
 
 ---
 
-archive/issue_comments_052256.json:
+archive/issue_comments_052158.json:
 ```json
 {
     "body": "> The problem with `gamma_incomplete` might be related to/fixed by #7748.\n\nYes, I think so, as Maxima 5.20.1 now returns this for both integrate(exp(-x),x,1,inf) and integrate(1/%e^x,x,1,inf).  Note that \n\n```\nsage: gamma_inc(1,1)\n0.367...\n```\n\nrather than 1/e at this point, so it really is the symbolic piece, not just having translation from Maxima, that would be important.",
     "created_at": "2009-12-23T04:39:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52256",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52158",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -247,15 +247,15 @@ rather than 1/e at this point, so it really is the symbolic piece, not just havi
 
 ---
 
-archive/issue_comments_052257.json:
+archive/issue_comments_052159.json:
 ```json
 {
     "body": "rebased to 4.3.rc0",
     "created_at": "2010-01-19T10:21:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52257",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52159",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -265,15 +265,15 @@ rebased to 4.3.rc0
 
 ---
 
-archive/issue_comments_052258.json:
+archive/issue_comments_052160.json:
 ```json
 {
     "body": "Attachment [trac_6465-chain_rule.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-chain_rule.take2.patch) by @burcin created at 2010-01-19 10:21:39\n\nrebased to 4.3.1.rc0",
     "created_at": "2010-01-19T10:21:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52258",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52160",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -285,15 +285,15 @@ rebased to 4.3.1.rc0
 
 ---
 
-archive/issue_comments_052259.json:
+archive/issue_comments_052161.json:
 ```json
 {
     "body": "Attachment [trac_6465-moves-integration-into-sfunction-subclass.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.take2.patch) by @burcin created at 2010-01-19 10:22:07\n\nreferee patch",
     "created_at": "2010-01-19T10:22:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52259",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52161",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -305,15 +305,15 @@ referee patch
 
 ---
 
-archive/issue_comments_052260.json:
+archive/issue_comments_052162.json:
 ```json
 {
     "body": "Attachment [trac_6465-integral.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.patch) by @burcin created at 2010-01-19 10:33:07\n\nI uploaded new versions of the two old patches, rebased to 4.3.1.rc0, and a referee patch. I consider this ready now, though someone needs to review my changes.\n\nUnfortunately attachment:trac_6465-chain_rule.take2.patch depends on the next version of pynac. I will release that real soon now. :)\n\nThe patches should be applied in this order:\n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take2.patch\n* attachment:trac_6465-integral.patch\n\nThey probably depend on other tickets. ATM, my queue contains: #7822, #6961, #7876, #7363, #7955, #7957, #7916 related to symbolics.",
     "created_at": "2010-01-19T10:33:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52260",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52162",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -334,15 +334,15 @@ They probably depend on other tickets. ATM, my queue contains: #7822, #6961, #78
 
 ---
 
-archive/issue_comments_052261.json:
+archive/issue_comments_052163.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-19T14:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52261",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52163",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -352,15 +352,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_052262.json:
+archive/issue_comments_052164.json:
 ```json
 {
     "body": "New pynac package available here:\n\nhttp://sage.math.washington.edu/home/burcin/pynac/pynac-0.1.11.spkg\n\nThe patches here depend on #7822, #7876, #7363, #7955, #7957 and #7916 (in this order).\n\nThe patches should be applied in this order:\n\n* attachment:trac_6465-chain_rule.take2.patch Download\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take2.patch Download\n* attachment:trac_6465-integral.patch",
     "created_at": "2010-01-19T14:15:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52262",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52164",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -380,15 +380,15 @@ The patches should be applied in this order:
 
 ---
 
-archive/issue_comments_052263.json:
+archive/issue_comments_052165.json:
 ```json
 {
     "body": "There is a reject on sage/symbolic/random_tests.py with the last patch.",
     "created_at": "2010-01-21T00:34:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52263",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52165",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -398,15 +398,15 @@ There is a reject on sage/symbolic/random_tests.py with the last patch.
 
 ---
 
-archive/issue_comments_052264.json:
+archive/issue_comments_052166.json:
 ```json
 {
     "body": "See #6559 for the correct order of patches to avoid the reject.",
     "created_at": "2010-01-21T01:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52264",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52166",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -416,15 +416,15 @@ See #6559 for the correct order of patches to avoid the reject.
 
 ---
 
-archive/issue_comments_052265.json:
+archive/issue_comments_052167.json:
 ```json
 {
     "body": "I've applied every one of Burcin's patches I could find, and get only one type of doctest failure with all of them (when applied in the right order).  So so far so good!  Unfortunately, I can't review any of them for two reasons - my understanding of C++/Pynac is not reliable enough to do a good job, and there are so many failures until one applies *all* the patches that it's hard to separate out what's what.\n\nThe reason I say that here is that I do get a significant failure, in a few different files, for the _tderivative_ method, though the actual failure occurs as a RuntimeError in line 216 of sage/misc/derivative.pyx (with no error message, more's the pity).  For instance, in line 99 of sage/symbolic/integration/integral.py, \n\n```\nsage: f = function('f'); a,b = var('a,b')\nsage: h = indefinite_integral(f(x), x)\nsage: h.diff(x)\nRuntimeError\n```\n\nI hope this helps track it down.",
     "created_at": "2010-01-21T02:36:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52265",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52167",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -445,15 +445,15 @@ I hope this helps track it down.
 
 ---
 
-archive/issue_comments_052266.json:
+archive/issue_comments_052168.json:
 ```json
 {
     "body": "Can you download the package file again and install it?\n\nI forgot to include a patch when I first put the release together. I fixed the spkg file once I realized the problem, assuming no one looked at it yet. You must have downloaded in that period.\n\nSorry for the inconvenience and many thanks for trying these patches out.",
     "created_at": "2010-01-21T07:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52266",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52168",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -467,15 +467,15 @@ Sorry for the inconvenience and many thanks for trying these patches out.
 
 ---
 
-archive/issue_comments_052267.json:
+archive/issue_comments_052169.json:
 ```json
 {
     "body": "Replying to [comment:14 burcin]:\n> Can you download the package file again and install it?\n> \n> I forgot to include a patch when I first put the release together. I fixed the spkg file once I realized the problem, assuming no one looked at it yet. You must have downloaded in that period.\n\nI now get\n\n```\nsage: h.diff(x)\nf(x)\n```\n\n\nHowever, I now get some errors after applying all patches up to and including this set.  Some should also be marked # optional - requires Internet (the mathematica_free ones).  They all seem to be related to some extra keyword being passed to the DeprecatedSFunction constructor.\n\n```\nsage -t  \"devel/sage/sage/symbolic/integration/integration.py\"\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 29:\n    sage: from sage.symbolic.integration.integration import _maxima_integrator\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[2]>\", line 1, in <module>\n        from sage.symbolic.integration.integration import _maxima_integrator###line 29:\n    sage: from sage.symbolic.integration.integration import _maxima_integrator\n      File \"/Users/.../sage-4.3.1/local/lib/python/site-packages/sage/symbolic/integration/integration.py\", line 316, in <module>\n        integral = SymbolicIntegration()\n      File \"/Users/.../sage-4.3.1/local/lib/python/site-packages/sage/symbolic/integration/integration.py\", line 152, in __init__\n        SFunction.__init__(self, \"integrate\", *args, **kwds)\n      File \"function.pyx\", line 1059, in sage.symbolic.function.DeprecatedSFunction.__init__ (sage/symbolic/function.cpp:8588)\n    TypeError: __init__() got an unexpected keyword argument 'built_in_function'\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 30:\n    sage: _maxima_integrator(sin(x), x)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[3]>\", line 1, in <module>\n        _maxima_integrator(sin(x), x)###line 30:\n    sage: _maxima_integrator(sin(x), x)\n    NameError: name '_maxima_integrator' is not defined\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 33:\n    sage: _maxima_integrator(f(x), x)\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError: Maxima failed to integrate\nGot:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_1[5]>\", line 1, in <module>\n        _maxima_integrator(f(x), x)###line 33:\n    sage: _maxima_integrator(f(x), x)\n    NameError: name '_maxima_integrator' is not defined\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 293:\n    sage: from sage.symbolic.integration.integration import integral\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[2]>\", line 1, in <module>\n        from sage.symbolic.integration.integration import integral###line 293:\n    sage: from sage.symbolic.integration.integration import integral\n      File \"/Users/.../sage-4.3.1/local/lib/python/site-packages/sage/symbolic/integration/integration.py\", line 316, in <module>\n        integral = SymbolicIntegration()\n      File \"/Users/.../sage-4.3.1/local/lib/python/site-packages/sage/symbolic/integration/integration.py\", line 152, in __init__\n        SFunction.__init__(self, \"integrate\", *args, **kwds)\n      File \"function.pyx\", line 1059, in sage.symbolic.function.DeprecatedSFunction.__init__ (sage/symbolic/function.cpp:8588)\n    TypeError: __init__() got an unexpected keyword argument 'built_in_function'\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 294:\n    sage: _ilatex = integral._print_latex_\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[3]>\", line 1, in <module>\n        _ilatex = integral._print_latex_###line 294:\n    sage: _ilatex = integral._print_latex_\n    AttributeError: 'function' object has no attribute '_print_latex_'\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 298:\n    sage: _ilatex(f(x),x)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[6]>\", line 1, in <module>\n        _ilatex(f(x),x)###line 298:\n    sage: _ilatex(f(x),x)\n    NameError: name '_ilatex' is not defined\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 300:\n    sage: _ilatex(f(x),x,a,b)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_10[7]>\", line 1, in <module>\n        _ilatex(f(x),x,a,b)###line 300:\n    sage: _ilatex(f(x),x,a,b)\n    NameError: name '_ilatex' is not defined\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 51:\n    sage: from sage.symbolic.integration.integration import _sympy_integrator\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[2]>\", line 1, in <module>\n        from sage.symbolic.integration.integration import _sympy_integrator###line 51:\n    sage: from sage.symbolic.integration.integration import _sympy_integrator\n      File \"/Users/.../sage-4.3.1/local/lib/python/site-packages/sage/symbolic/integration/integration.py\", line 316, in <module>\n        integral = SymbolicIntegration()\n      File \"/Users/.../sage-4.3.1/local/lib/python/site-packages/sage/symbolic/integration/integration.py\", line 152, in __init__\n        SFunction.__init__(self, \"integrate\", *args, **kwds)\n      File \"function.pyx\", line 1059, in sage.symbolic.function.DeprecatedSFunction.__init__ (sage/symbolic/function.cpp:8588)\n    TypeError: __init__() got an unexpected keyword argument 'built_in_function'\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 52:\n    sage: _sympy_integrator(sin(x), x)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[3]>\", line 1, in <module>\n        _sympy_integrator(sin(x), x)###line 52:\n    sage: _sympy_integrator(sin(x), x)\n    NameError: name '_sympy_integrator' is not defined\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 55:\n    sage: _sympy_integrator(f(x), x)\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError: Sympy failed to integrate\nGot:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_2[5]>\", line 1, in <module>\n        _sympy_integrator(f(x), x)###line 55:\n    sage: _sympy_integrator(f(x), x)\n    NameError: name '_sympy_integrator' is not defined\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 76:\n    sage: from sage.symbolic.integration.integration import _mathematica_free_integrator\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[2]>\", line 1, in <module>\n        from sage.symbolic.integration.integration import _mathematica_free_integrator###line 76:\n    sage: from sage.symbolic.integration.integration import _mathematica_free_integrator\n      File \"/Users/.../sage-4.3.1/local/lib/python/site-packages/sage/symbolic/integration/integration.py\", line 316, in <module>\n        integral = SymbolicIntegration()\n      File \"/Users/.../sage-4.3.1/local/lib/python/site-packages/sage/symbolic/integration/integration.py\", line 152, in __init__\n        SFunction.__init__(self, \"integrate\", *args, **kwds)\n      File \"function.pyx\", line 1059, in sage.symbolic.function.DeprecatedSFunction.__init__ (sage/symbolic/function.cpp:8588)\n    TypeError: __init__() got an unexpected keyword argument 'built_in_function'\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 77:\n    sage: _mathematica_free_integrator(sin(x), x)\nException raised:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[3]>\", line 1, in <module>\n        _mathematica_free_integrator(sin(x), x)###line 77:\n    sage: _mathematica_free_integrator(sin(x), x)\n    NameError: name '_mathematica_free_integrator' is not defined\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 80:\n    sage: _mathematica_free_integrator(f(x), x)\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError: mathematica_free failed to integrate\nGot:\n    Traceback (most recent call last):\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/Users/.../sage-4.3.1/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_3[5]>\", line 1, in <module>\n        _mathematica_free_integrator(f(x), x)###line 80:\n    sage: _mathematica_free_integrator(f(x), x)\n    NameError: name '_mathematica_free_integrator' is not defined\n**********************************************************************\nFile \"/Users/.../sage-4.3.1/devel/sage/sage/symbolic/integration/integration.py\", line 241:\n    sage: h.n()\nExpected:\n    0.472399177268953\nGot:\n    0.47239917726895253\n**********************************************************************\n5 items had failures:\n   3 of   6 in __main__.example_1\n   4 of   9 in __main__.example_10\n   3 of   6 in __main__.example_2\n   3 of   6 in __main__.example_3\n   1 of   4 in __main__.example_8\n***Test Failed*** 14 failures.\n\t [6.5 s]\n```\n\n\n> Sorry for the inconvenience and many thanks for trying these patches out.\n\nNo problem.  Although I *strongly* disagree with the removal of indefinite integration longterm without explicit variable, overall this set of changes will be a big improvement.  I am sorry again I cannot review much of the C++ related stuff, or the Pynac changes, though I am glad they are now up on [|pynac.sagemath.org] !",
     "created_at": "2010-01-28T21:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52267",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52169",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -750,15 +750,15 @@ No problem.  Although I *strongly* disagree with the removal of indefinite integ
 
 ---
 
-archive/issue_comments_052268.json:
+archive/issue_comments_052170.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-28T21:00:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52268",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52170",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -768,15 +768,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_052269.json:
+archive/issue_comments_052171.json:
 ```json
 {
     "body": "Attachment [trac_6465-integral.take2.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take2.patch) by @burcin created at 2010-01-31 21:13:20\n\nnew version",
     "created_at": "2010-01-31T21:13:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52269",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52171",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -788,15 +788,15 @@ new version
 
 ---
 
-archive/issue_comments_052270.json:
+archive/issue_comments_052172.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-31T21:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52270",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52172",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -806,15 +806,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_052271.json:
+archive/issue_comments_052173.json:
 ```json
 {
     "body": "attachment:trac_6465-integral.patch renames the file `sage/symbolic/integration/integration.py` to `sage/symbolic/integration/integral.py`. Are you sure you applied the patches correctly? Since these are git style diffs using `hg import` or `hg qimport` is recommended.\n\nI applied the whole batch of symbolics patches associated to pynac-0.11 to 4.3.2.alpha0, and tested the sage/{symbolic,calculus,functions} directories. The only doctest failure I got was in  `sage/symbolic/integration/external.py`. attachment:trac_6465-integral.take2.patch removes this dubious test.\n\nThe patches that need to be applied from this ticket are now:\n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take2.patch\n* attachment:trac_6465-integral.take2.patch",
     "created_at": "2010-01-31T21:23:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52271",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52173",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -831,15 +831,15 @@ The patches that need to be applied from this ticket are now:
 
 ---
 
-archive/issue_comments_052272.json:
+archive/issue_comments_052174.json:
 ```json
 {
     "body": "fix numerical problems in doctests",
     "created_at": "2010-02-03T10:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52272",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52174",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -849,15 +849,15 @@ fix numerical problems in doctests
 
 ---
 
-archive/issue_comments_052273.json:
+archive/issue_comments_052175.json:
 ```json
 {
     "body": "Attachment [trac_6465-integral.take3.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take3.patch) by @burcin created at 2010-02-03 11:57:30\n\nAfter testing on a 32-bit Debian box, I uploaded attachment:trac_6465-integral.take3.patch to replace attachment:trac_6465-integral.take2.patch. The only difference is the `...` used for the trailing digits of the numerical integral on line 188 of `sage/symbolic/integration/integral.py`.\n\nThe patches that need to be applied are: \n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take2.patch\n* attachment:trac_6465-integral.take2.patch",
     "created_at": "2010-02-03T11:57:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52273",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52175",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -874,15 +874,15 @@ The patches that need to be applied are:
 
 ---
 
-archive/issue_comments_052274.json:
+archive/issue_comments_052176.json:
 ```json
 {
     "body": "Oops, the last patch to be applied is attachment:trac_6465-integral.take3.patch! That was a typo in the list above.",
     "created_at": "2010-02-04T09:13:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52274",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52176",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -892,15 +892,15 @@ Oops, the last patch to be applied is attachment:trac_6465-integral.take3.patch!
 
 ---
 
-archive/issue_comments_052275.json:
+archive/issue_comments_052177.json:
 ```json
 {
     "body": "Attachment [trac_6465-integral.take4.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-integral.take4.patch) by @burcin created at 2010-02-09 10:56:52\n\nrebased to 4.3.2",
     "created_at": "2010-02-09T10:56:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52275",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52177",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -912,15 +912,15 @@ rebased to 4.3.2
 
 ---
 
-archive/issue_comments_052276.json:
+archive/issue_comments_052178.json:
 ```json
 {
     "body": "rebased to 4.3.2",
     "created_at": "2010-02-09T10:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52276",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52178",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -930,15 +930,15 @@ rebased to 4.3.2
 
 ---
 
-archive/issue_comments_052277.json:
+archive/issue_comments_052179.json:
 ```json
 {
     "body": "Attachment [trac_6465-moves-integration-into-sfunction-subclass.take3.patch](tarball://root/attachments/some-uuid/ticket6465/trac_6465-moves-integration-into-sfunction-subclass.take3.patch) by @burcin created at 2010-02-09 11:01:02\n\nI rebased the patches to 4.3.2. Patches to be applied are now:\n\n* attachment:trac_6465-chain_rule.take2.patch\n* attachment:trac_6465-moves-integration-into-sfunction-subclass.take3.patch\n* attachment:trac_6465-integral.take4.patch",
     "created_at": "2010-02-09T11:01:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52277",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52179",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -954,15 +954,15 @@ I rebased the patches to 4.3.2. Patches to be applied are now:
 
 ---
 
-archive/issue_comments_052278.json:
+archive/issue_comments_052180.json:
 ```json
 {
     "body": "The patch solves the stated problem without loss of functionality (at\nleast in the tests below). +1 for positive review.\n\n```\nsage: f(x) = function('f',x)\nsage: g = integrate(f(x),x)\nsage: g.diff(x)\nf(x)\nsage: integrate(f(x),x).diff(x)\nf(x)\n\nsage: h(x,y) = function('h',x,y)\nsage: kx = integrate(h(x,y),x)\nsage: kx\nintegrate(h(x, y), x)\nsage: kx.diff(x)\nh(x, y)\n\nsage: kxy = integrate( integrate(h(x,y),x), y)\nsage: kxy\nintegrate(integrate(h(x, y), x), y)\nsage: kxy.diff(y).diff(x)\nh(x, y)\nsage: kxy.diff(x).diff(y)\nh(x, y)\nsage: kxy.diff(x)\nintegrate(h(x, y), y)\n\nsage: integrate(1/(2*x+1)^2, x, 0, 1)\n1/3\n\nsage: loads(dumps(integrate(1/(2*x+1)^2, x, 0, 1))) == 1/3\nTrue\n\nsage: integrate(1/(2*x+1)^2, x, 0.0, 1.0)\n0.333333333333\n\nsage: integrate(1/(2*x+1)^2, x, 0, 1.0)\n0.333333333333\n\nsage: integrate(1/(2*x+1)^2, x, CC(0), 1.0)\n0.333333333333\n\nsage: integrate(x/(1+x^2),x)\n1/2*log(x^2 + 1)\n\nsage: integrate(tan(x),x)\nlog(sec(x))\n```\n\n\nThere is one issue (that is not necessarily a part of this ticket). \nI may be wrong but I'm reasonably sure that in general that \nintegrate( integrate(h(x,y),x), y).diff(y).diff(x) <>\nintegrate( integrate(h(x,y),x), y).diff(x).diff(y)\nBut the following seems to imply it is (both are equal to h(x, y) )\n\n```\nsage: kxy = integrate( integrate(h(x,y),x), y)\nsage: kxy\nintegrate(integrate(h(x, y), x), y)\nsage: kxy.diff(y).diff(x)\nh(x, y)\nsage: kxy.diff(x).diff(y)\nh(x, y)\n```\n",
     "created_at": "2010-02-18T14:03:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52278",
-    "user": "rossk"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52180",
+    "user": "https://trac.sagemath.org/admin/accounts/users/rossk"
 }
 ```
 
@@ -1038,15 +1038,15 @@ h(x, y)
 
 ---
 
-archive/issue_comments_052279.json:
+archive/issue_comments_052181.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-18T21:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52279",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52181",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1056,15 +1056,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_052280.json:
+archive/issue_comments_052182.json:
 ```json
 {
     "body": "The rebase looks good. See #6961 for the order in which to apply patches.",
     "created_at": "2010-02-18T21:29:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52280",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52182",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1074,15 +1074,15 @@ The rebase looks good. See #6961 for the order in which to apply patches.
 
 ---
 
-archive/issue_comments_052281.json:
+archive/issue_comments_052183.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. [trac_6465-chain_rule.take2.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6465/trac_6465-chain_rule.take2.patch)\n2. [trac_6465-moves-integration-into-sfunction-subclass.take3.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6465/trac_6465-moves-integration-into-sfunction-subclass.take3.patch)\n3. [trac_6465-integral.take4.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/6465/trac_6465-integral.take4.patch)",
     "created_at": "2010-02-18T21:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52281",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52183",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -1096,15 +1096,15 @@ Merged in this order:
 
 ---
 
-archive/issue_comments_052282.json:
+archive/issue_comments_052184.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-18T21:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6465",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52282",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6465#issuecomment-52184",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

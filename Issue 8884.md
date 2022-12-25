@@ -6,15 +6,14 @@ archive/issues_008884.json:
     "body": "Assignee: @JohnCremona\n\nCC:  @JohnCremona\n\nWe found inefficiency in isogeny_class function for elliptic curves over rational field. The patch will improve this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8884\n\n",
     "created_at": "2010-05-05T09:08:26Z",
     "labels": [
-        "elliptic curves",
-        "minor",
-        "enhancement"
+        "component: elliptic curves",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Inefficiency in isogeny_class function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8884",
-    "user": "kimi"
+    "user": "https://trac.sagemath.org/admin/accounts/users/kimi"
 }
 ```
 Assignee: @JohnCremona
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8884
 
 ---
 
-archive/issue_comments_081655.json:
+archive/issue_comments_081521.json:
 ```json
 {
     "body": "Attachment [trac_8884_isogeny_class.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.patch) by kimi created at 2010-05-05 09:49:22",
     "created_at": "2010-05-05T09:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81655",
-    "user": "kimi"
+    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81521",
+    "user": "https://trac.sagemath.org/admin/accounts/users/kimi"
 }
 ```
 
@@ -49,15 +48,15 @@ Attachment [trac_8884_isogeny_class.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_081656.json:
+archive/issue_comments_081522.json:
 ```json
 {
     "body": "Replaces previous patch; applies to 4.4.1",
     "created_at": "2010-05-11T10:36:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81656",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81522",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -67,15 +66,15 @@ Replaces previous patch; applies to 4.4.1
 
 ---
 
-archive/issue_comments_081657.json:
+archive/issue_comments_081523.json:
 ```json
 {
     "body": "Attachment [trac_8884_isogeny_class.2.patch](tarball://root/attachments/some-uuid/ticket8884/trac_8884_isogeny_class.2.patch) by @JohnCremona created at 2010-05-11 10:38:25\n\nThe second version of the patch just adds a useful comment and fixes some docstrings.",
     "created_at": "2010-05-11T10:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81657",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81523",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -87,15 +86,15 @@ The second version of the patch just adds a useful comment and fixes some docstr
 
 ---
 
-archive/issue_comments_081658.json:
+archive/issue_comments_081524.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-11T10:38:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81658",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81524",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_081659.json:
+archive/issue_comments_081525.json:
 ```json
 {
     "body": "All tests pass and it improves the code indeed. Thanks for the work.\n\nOnly the second patch has to be applied.",
     "created_at": "2010-05-23T23:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81659",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81525",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -125,15 +124,15 @@ Only the second patch has to be applied.
 
 ---
 
-archive/issue_comments_081660.json:
+archive/issue_comments_081526.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-23T23:04:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81660",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81526",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -143,15 +142,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_081661.json:
+archive/issue_comments_081527.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-06T08:45:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8884",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81661",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8884#issuecomment-81527",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

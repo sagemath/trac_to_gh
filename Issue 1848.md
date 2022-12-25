@@ -6,15 +6,14 @@ archive/issues_001848.json:
     "body": "Assignee: @williamstein\n\nCC:  @JohnCremona\n\nThe sha an function:\n\n```\nsage: E = EllipticCurve('37a')\nsage: Sha = E.sha(); Sha\n<class 'sage.schemes.elliptic_curves.sha.Sha'>\nsage: Sha.an()\n1    \n```\n\nhas help that at the beginning misleadingly suggests that it is provably correct when the analytic rank is 1.  Looking at the code, it is clear that currently it is not provably correct except when the rank is 0 and a Manin constant hypothesis holds (which does hold for Cremona's curves). \n\nFix: \n1. Have a proof=False flag that keeps the current implementation\n2. Have a proof=True flag that fails if the Manin constant isn't known by a theorem to be <=2, and which runs new provably correct code in the case of analytic rank 1. \n\nIssue created by migration from https://trac.sagemath.org/ticket/1848\n\n",
     "created_at": "2008-01-19T12:51:26Z",
     "labels": [
-        "number theory",
-        "major",
+        "component: number theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.2",
     "title": "Elliptic curve Sha an documentation misleading about proof",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1848",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -45,15 +44,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1848
 
 ---
 
-archive/issue_comments_011694.json:
+archive/issue_comments_011665.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-01-19T12:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1848#issuecomment-11694",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1848#issuecomment-11665",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -63,15 +62,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_011695.json:
+archive/issue_comments_011666.json:
 ```json
 {
     "body": "Changing component from number theory to elliptic curves.",
     "created_at": "2009-07-20T19:46:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1848",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1848#issuecomment-11695",
-    "user": "@loefflerd"
+    "url": "https://github.com/sagemath/sagetest/issues/1848#issuecomment-11666",
+    "user": "https://github.com/loefflerd"
 }
 ```
 

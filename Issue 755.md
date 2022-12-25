@@ -6,15 +6,14 @@ archive/issues_000755.json:
     "body": "Assignee: @williamstein\n\nKeywords: graphs\n\nA line in adjacency_matrix() calls self.multiple_edges instead of self.multiple_edges(), causing adjacency_matrix() to never return a matrix over IntegerModRing(2), like it apparently was designed to return.  However, kirchhoff_matrix() relies on this bug, as it does a list(-M), where M is the adjacency matrix, which doesn't work when M is a binary matrix.  So kirchhoff_matrix() needs to be fixed (so it doesn't rely on the faulty behavior).\n\nIssue created by migration from https://trac.sagemath.org/ticket/755\n\n",
     "created_at": "2007-09-26T15:49:08Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.6",
     "title": "graphs: adjacency_matrix() does not call multiple_edges correctly.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/755",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/755
 
 ---
 
-archive/issue_comments_004466.json:
+archive/issue_comments_004450.json:
 ```json
 {
     "body": "\n```\n--- a/sage/graphs/graph.py      Fri Sep 28 13:48:48 2007 -0500\n+++ b/sage/graphs/graph.py      Fri Sep 28 14:06:51 2007 -0500\n@@ -3411,6 +3411,9 @@ class Graph(GenericGraph):\n         represented by its position in the list returned by the vertices()\n         function.\n\n+        If the graph does not allow multiple edges, then the returned matrix is over\n+        the ring with two elements, otherwise it is over the integers.\n+\n         EXAMPLE:\n             sage: G = graphs.CubeGraph(4)\n             sage: G.adjacency_matrix()\n@@ -3448,7 +3451,7 @@ class Graph(GenericGraph):\n         from sage.rings.integer_mod_ring import IntegerModRing\n         from sage.rings.integer_ring import IntegerRing\n         from sage.matrix.constructor import matrix\n-        if self.multiple_edges:\n+        if self.multiple_edges():\n             R = IntegerRing()\n         else:\n             R = IntegerModRing(2)\n@@ -3552,10 +3555,13 @@ class Graph(GenericGraph):\n             [-1  0  0  1]\n\n         \"\"\"\n+        from sage.matrix.constructor import matrix\n+        from sage.rings.integer_ring import IntegerRing\n+\n         if weighted:\n             M = self.weighted_adjacency_matrix()\n         else:\n-            M = self.am()\n+            M = matrix(self,IntegerRing())\n         A = list(-M)\n         S = [sum(M[i]) for i in range(M.nrows())]\n         for i in range(len(A)):\n@@ -5344,8 +5350,8 @@ class DiGraph(GenericGraph):\n\n     def adjacency_matrix(self, sparse=True):\n         \"\"\"\n-        Returns the adjacency matrix of the digraph. Each vertex is\n-        represented by its position in the list returned by the vertices()\n+        Returns the adjacency matrix of the digraph as a matrix over the field of two elements.\n+        Each vertex is represented by its position in the list returned by the vertices()\n         function.\n\n         EXAMPLE:\n```\n",
     "created_at": "2007-09-28T19:15:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/755",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4466",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4450",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -99,15 +98,15 @@ archive/issue_comments_004466.json:
 
 ---
 
-archive/issue_comments_004467.json:
+archive/issue_comments_004451.json:
 ```json
 {
     "body": "Same patch as listed in the post.",
     "created_at": "2007-10-03T07:50:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/755",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4467",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4451",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -117,15 +116,15 @@ Same patch as listed in the post.
 
 ---
 
-archive/issue_comments_004468.json:
+archive/issue_comments_004452.json:
 ```json
 {
     "body": "Attachment [#755.patch](tarball://root/attachments/some-uuid/ticket755/#755.patch) by @williamstein created at 2007-10-04 14:55:01",
     "created_at": "2007-10-04T14:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/755",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4468",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4452",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -135,15 +134,15 @@ Attachment [#755.patch](tarball://root/attachments/some-uuid/ticket755/#755.patc
 
 ---
 
-archive/issue_comments_004469.json:
+archive/issue_comments_004453.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-04T19:52:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/755",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4469",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/755#issuecomment-4453",
+    "user": "https://github.com/rlmill"
 }
 ```
 

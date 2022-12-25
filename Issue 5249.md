@@ -6,15 +6,13 @@ archive/issues_005249.json:
     "body": "Assignee: @williamstein\n\nCC:  cwitty wcauchois alexghitza\n\nThis is code from Carl Witty, which (almost) implements an implicit_plot3d command to plot isosurfaces of a 3d function.  Carl, would it be fair to say the code is inspired by Jmol's code for generating and displaying isosurfaces?\n\nIssue created by migration from https://trac.sagemath.org/ticket/5249\n\n",
     "created_at": "2009-02-12T20:33:35Z",
     "labels": [
-        "graphics",
-        "major",
-        "enhancement"
+        "component: graphics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5249",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5249
 
 ---
 
-archive/issue_comments_040228.json:
+archive/issue_comments_040149.json:
 ```json
 {
     "body": "Attachment [implicit-surface.patch](tarball://root/attachments/some-uuid/ticket5249/implicit-surface.patch) by @jasongrout created at 2009-02-12 20:36:16",
     "created_at": "2009-02-12T20:36:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40228",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40149",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -49,15 +47,15 @@ Attachment [implicit-surface.patch](tarball://root/attachments/some-uuid/ticket5
 
 ---
 
-archive/issue_comments_040229.json:
+archive/issue_comments_040150.json:
 ```json
 {
     "body": "(I should say the code is posted here with Carl's permission).\n\nHere are a list of things that he thinks need to be done in order to have it be ready to be reviewed for inclusion in Sage in the shortest amount of time (the rest of this post is quoting Carl's email):\n\nThis is the least that I think is necessary to release the code.\nProbably (4) (add docstrings and doctests) is by far the most work.\n\n1) remove all mention of colors from the docstring (probably move the\ncurrent docstring text into the function body as comments, so it isn't\nlost)\n\n2) test NaNs in the function output, or remove the text about NaNs in\nthe docstring\n\n3) test the following (or, in some cases, remove the text from the docstring):\n\n* using the standard Sage 3d transforms to move the result around in 3D space\n* explicitly specifying a gradient function\n* using a triple for plot_points, to have separate X,Y,Z resolution\n* using different plot ranges in the different directions\n\nFor non-cubical voxels, (either of the last two tests) be sure to test\nwith tachyon to make sure the gradients are right (make sure that\nspecular-reflection highlights look correct).  Draw a sphere using the\nsphere primitive, and another sphere using implicit_plot3d, and make\nsure that the highlights look similar, even when you use very\nnon-cubical voxels.\n\n4) add docstrings and doctests (you hopefully wouldn't be able to get\nit into sage in its current almost-doctestless state, anyway)\n\n5) fix this:\n\nCurrently, we forbid giving variable names in the plot ranges.\nProbably we should either require them or make them optional.\n\n6) If the following two bugs/potential bugs aren't fixed, then tickets\nshould be opened against them so they aren't lost:\n\nFor surface normals (for smooth rendering in tachyon), it tries to\ndifferentiate the function to find the gradient.  This seems to work\nfor SR functions, but not for polynomials; it's probably easy to fix,\nbut I didn't look into it at all.\n\nThere's at least one bug that I think is there (but haven't verified):\nI think that if an implicit surface is given a transform that squishes\nor skews it, then the surface normals will be wrong.  (We transform\nthe surface normal by the transformation matrix; I seem to recall that\nyou're supposed to transform surface normals according to the inverse\nof the transpose of the transformation matrix.)  (Only the tachyon\nrenderer uses the surface normals, and only in smooth=True mode.)",
     "created_at": "2009-02-12T20:39:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40229",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40150",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -117,15 +115,15 @@ renderer uses the surface normals, and only in smooth=True mode.)
 
 ---
 
-archive/issue_comments_040230.json:
+archive/issue_comments_040151.json:
 ```json
 {
     "body": "Also, here is another thing that could be changed/enhanced:\n\n> Carl Witty wrote:\n>> >>        hole - If hole is given, it must be a python callable.\n>> >>            Segments of the surface where hole(x,y,z) returns a number >0\n>> >>            will be omitted.  (Note that returning a Python boolean\n>> >>            is acceptable, since as a number, True == 1 and False == 0.)\n>> >>\n> >\n> > I'm curious why you chose to implement a \"hole\" parameter instead of MMA's\n> > (opposite) RegionFunction parameter (see the ContourPlot3D docs).\n\n1) I hadn't even looked at the ContourPlot3D docs until I was mostly\ndone with the implementation.\n\n2) I was probably influenced by the JVXL-format mention of NaN's\nmaking holes in the surfaces; so I was thinking about how to replicate\nthis effect, and punch holes.\n\nIf whoever works on the code next wants to invert the \"hole\" into\n\"regionfunction\", that would be fine with me.\n\nNote the somewhat unusual specification of \"hole\", checking for >0\ninstead of for True.  I did this to perhaps make it easier to use a\nfast_float function for the hole.  (I didn't do much thinking about\nit, though.)",
     "created_at": "2009-02-12T20:40:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40230",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40151",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -160,15 +158,15 @@ it, though.)
 
 ---
 
-archive/issue_comments_040231.json:
+archive/issue_comments_040152.json:
 ```json
 {
     "body": "I hope to be able to finish this soon (i.e., in the next couple of weeks at the latest).  If anyone wants to work on it before the end of February 2009, please (1) feel free to do so! and (2) post a note on the ticket here so that we do not duplicate work.",
     "created_at": "2009-02-12T20:42:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40231",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40152",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -178,15 +176,15 @@ I hope to be able to finish this soon (i.e., in the next couple of weeks at the 
 
 ---
 
-archive/issue_comments_040232.json:
+archive/issue_comments_040153.json:
 ```json
 {
     "body": "> Carl, would it be fair to say the code is inspired by Jmol's code for \n> generating and displaying isosurfaces? \n\nDefinitely.  Plus, some of the non-code chunks (some nice ASCII art, and the triangle-generation table) are directly copied from the Jmol source.  (All such instances are nicely commented, and the file copyright explains the situation.)\n\nLet me get one more item into the permanent record here:\n\nThere is support that is mostly implemented, but doesn't quite work, for producing colored plots (where the color at each point comes from a separate function, producing either scalar or RGB values).  This is documented as working, but it doesn't.\n\nAs I mentioned above, one possibility would be to just remove the bits about color from the documentation.  But another would be to actually fix the color support.\n\nFor Jmol, I think this just involves feeding colors into the\nJVXLRunLenthEncoder in self.colors (using the same\nself.fraction_as_character() call as for the edge data), then changing\nsome text in the JVXL header and appending the text from self.colors\nafter the edge data.  (The JVXLRunLengthEncoder has never been tested;\nalternatively, you can just replace it with a StringIO, and that\nshould work -- the run length encoding is optional.)\n\nFor tachyon, at first I thought that it wouldn't be possible to get\nnice colors -- the documentation doesn't mention any triangle\nprimitive that lets you do smooth-shaded colors.  But I found the\nundocumented VCSTRI in the tachyon source, that looks like exactly\nwhat you would want.",
     "created_at": "2009-02-12T22:11:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40232",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40153",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -219,15 +217,15 @@ what you would want.
 
 ---
 
-archive/issue_comments_040233.json:
+archive/issue_comments_040154.json:
 ```json
 {
     "body": "1) There's a bug in the module_list entry, so that the patch won't build unless you have a system numpy installed; this (from Jason) explains how to fix it:\n\n\"\nThis looks like a typical problem with the path to include the numpy arrayobject.h.  I think the extension section for this Cython module in devel/sage/sage/module_list.py should have:\n\ninclude_dirs = numpy_include_dirs\n\nadded to it (search for that text to see examples of extension modules with this include directive)\n\"\n\n2) It sounds like William's student William Cauchois may start working on this, so I count three people (Alex Ghitza, Jason Grout, and William Cauchois) who might do some work on this patch whenever they get around to it.  You should probably coordinate with each other somehow, possibly by posting a note on this ticket when you actually do start working on it.",
     "created_at": "2009-02-21T19:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40233",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40154",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -247,15 +245,15 @@ added to it (search for that text to see examples of extension modules with this
 
 ---
 
-archive/issue_comments_040234.json:
+archive/issue_comments_040155.json:
 ```json
 {
     "body": "Hi, I just started working on this issue!\n\nOne thing I noticed is that the automated testing framework tests instances of Graphics3d by invoking the obj() method, which returns a representation in Wavefront OBJ format -- however, ImplicitSurface does not support this feature yet. So do you think we should add this feature (presumably by building off of MarchingCubesTachyon)? Or should we, for example, invoke export_jmol() inside of a stub obj_repr() method just to make the automated tests actually test something?\n\nI've attached a patch with some minor fixes which ensures the code will build and pass the doctests trivially -- obj_repr() is defined to return the empty string, for now.",
     "created_at": "2009-02-28T09:34:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40234",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40155",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -269,15 +267,15 @@ I've attached a patch with some minor fixes which ensures the code will build an
 
 ---
 
-archive/issue_comments_040235.json:
+archive/issue_comments_040156.json:
 ```json
 {
     "body": "Are you absolutely sure that it is the Wavefront obj format?  My guess is that it's actually supposed to return a Python pickled object, which usually has extension .obj.\n\nAs for exactly what to do, we should probably support some sort of saving so that things are consistent.  In other words, if c is an implicit plot, then c.save() should work.  Again, pickling is the thing to look up for this.",
     "created_at": "2009-02-28T09:56:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40235",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40156",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -289,15 +287,15 @@ As for exactly what to do, we should probably support some sort of saving so tha
 
 ---
 
-archive/issue_comments_040236.json:
+archive/issue_comments_040157.json:
 ```json
 {
     "body": "> supposed to return a Python pickled object, which usually has extension .obj. \n\nActually the extension is \".sobj\"",
     "created_at": "2009-02-28T16:27:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40236",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40157",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -309,15 +307,15 @@ Actually the extension is ".sobj"
 
 ---
 
-archive/issue_comments_040237.json:
+archive/issue_comments_040158.json:
 ```json
 {
     "body": "I'm sure its the Wavefront OBJ format; look at this output, from ParametricSurface.obj():\n\n```\ng obj_1\nusemtl texture16\nv 1 1 0\nv 1 0.996757 0.0804666\nv 1 0.98705 0.160411\nv 1 0.970942 0.239316\nv 1 0.948536 0.316668\n...\n```\n",
     "created_at": "2009-02-28T20:10:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40237",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40158",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -339,15 +337,15 @@ v 1 0.948536 0.316668
 
 ---
 
-archive/issue_comments_040238.json:
+archive/issue_comments_040159.json:
 ```json
 {
     "body": "(By the way, I was wrong about the way the automated testing works; it does the sensible thing, and tests every output format. All that's necessary is a stub obj_repr() method to keep it from complaining.)\n\nI\"ve attached a patch with what I have so far:\n* Added docstrings and tests to most of the major functions (in the new ReST format), with a few notable exceptions. MarchingCubes.process_slice and related methods are inherently stateful, and thus hard to test -- although they are indirectly tested by render_implicit and implicit_plot3d.\n* Removed all mention of colors from the docstring for implicit_plot3d.\n* Added support for explicitly specifying plot variables via extract_vars_ranges_and_adapt.\n* Added defaults for plot_points, render_params, and texture (the latter two in MarchingCubes.__init__).\n\nI did find a bug which is that MarchingCubesJVXL cannot handle heterogeneous plot ranges; try the last example under TESTS with show(viewer='tachyon') and then show(viewer='jmol').\n\nAlso, we need many more examples!\n\nI will see what I can do.",
     "created_at": "2009-03-09T23:50:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40238",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40159",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -369,15 +367,15 @@ I will see what I can do.
 
 ---
 
-archive/issue_comments_040239.json:
+archive/issue_comments_040160.json:
 ```json
 {
     "body": "what is the status of work on this ticket? I might have some time next week to work on something, and I'd like to see this get in.",
     "created_at": "2009-03-12T22:53:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40239",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40160",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -387,15 +385,15 @@ what is the status of work on this ticket? I might have some time next week to w
 
 ---
 
-archive/issue_comments_040240.json:
+archive/issue_comments_040161.json:
 ```json
 {
     "body": "Attachment [many-more-examples.tar](tarball://root/attachments/some-uuid/ticket5249/many-more-examples.tar) by wcauchois created at 2009-03-13 23:11:53\n\nI updated trac5249.patch. Apply it on top of implicit-surfaces.patch.\n\nI added 28 examples to the docstring for implicit_plot3d. I also attached many-more-examples.tar, which contains a simple script I used to format the examples. It can output the examples in a Sage notebook format, so if you want to see the examples, you should check it out.\n\nJason: Here's the status. I've done much of the work that Carl described in his original email. Currently, the major thing left to do is fixing bugs.\n\nAside from the two bugs Carl mentioned, which are still outstanding, there is one critical bug that I discovered. If you specify different X, Y or Z ranges, then Jmol rendering is radically wrong (although Tachyon is unaffected). For example, try this:\n\n\n```\nvar('x,y,z')\nimplicit_plot3d(x^2+y^2+z^2-4,(-2,0),(-2,2),(-2,2)).show(viewer='jmol')\n```\n\n\nGood luck, I hope you can make some headway!",
     "created_at": "2009-03-13T23:11:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40240",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40161",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -422,15 +420,15 @@ Good luck, I hope you can make some headway!
 
 ---
 
-archive/issue_comments_040241.json:
+archive/issue_comments_040162.json:
 ```json
 {
     "body": "I applied the above patches against Sage 3.4 in the following order:\n1. implicit-surface.patch\n2. trac5249-minorfixes.patch\n3. trac5249.patch\nBut 2 hunks failed:\n\n```\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/implicit-surface.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/implicit-surface.patch\"\napplying /home/mvngu/patch/5249/implicit-surface.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac\")\n/home/mvngu/patch/5249/trac5249-minorfixes.patch\n/home/mvngu/patch/5249/trac5249.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac5249-minorfixes.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/trac5249-minorfixes.patch\"\napplying /home/mvngu/patch/5249/trac5249-minorfixes.patch\nsage: hg_sage.apply(\"/home/mvngu/patch/5249/trac5249.patch\")\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg status\ncd \"/home/mvngu/scratch/sage-3.4/devel/sage\" && hg import   \"/home/mvngu/patch/5249/trac5249.patch\"\napplying /home/mvngu/patch/5249/trac5249.patch\npatching file module_list.py\nHunk #1 FAILED at 772\n1 out of 1 hunks FAILED -- saving rejects to file module_list.py.rej\npatching file sage/plot/plot3d/implicit_surface.pyx\nHunk #1 succeeded at 1150 with fuzz 2 (offset 5 lines).\nHunk #2 FAILED at 1227\nHunk #3 FAILED at 1248\n2 out of 3 hunks FAILED -- saving rejects to file sage/plot/plot3d/implicit_surface.pyx.rej\npatching file sage/plot/plot3d/implicit_surface.pyx\nHunk #14 succeeded at 1323 with fuzz 1 (offset 0 lines).\nabort: patch failed to apply\n```\n",
     "created_at": "2009-03-23T07:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40241",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40162",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -477,15 +475,15 @@ abort: patch failed to apply
 
 ---
 
-archive/issue_comments_040242.json:
+archive/issue_comments_040163.json:
 ```json
 {
     "body": "Replying to [comment:14 mvngu]:\n> I applied the above patches against Sage 3.4 in the following order:\n>  1. implicit-surface.patch\n>  1. trac5249-minorfixes.patch\n>  1. trac5249.patch\n\nI incorporated the changes from trac5249-minorfixes.patch into trac5249.patch, so the two were never meant to be applied together. William has deleted trac5249-minorfixes.patch from the ticket, so it should now be clear that in order to import implicit plot functionality, you should apply the patches in this order:\n1. implicit-surface.patch\n2. trac5249.patch",
     "created_at": "2009-04-02T23:09:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40242",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40163",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -503,15 +501,15 @@ I incorporated the changes from trac5249-minorfixes.patch into trac5249.patch, s
 
 ---
 
-archive/issue_comments_040243.json:
+archive/issue_comments_040164.json:
 ```json
 {
     "body": "Has anyone else noticed that some of the plots, when rendered using the Jmol backend, look very bumpy? The Tachyon renderings of the same plots, however, are fine. William thought the surface normals might be incorrect, but actually, if you zoom in on the model, you can perceive jagged edges in some cases. Is this a bug or a feature? Does anyone know what the problem might be?\n\nTo see what I mean, try this code:\n\n```\nvar('x,y,z')\nP = implicit_plot3d((x^2 + y^2 - 1) * ( x^2 + z^2 - 1) - 1, (x, -3, 3), (y, -3, 3), (z, -3, 3))\nP.show(viewer='jmol')\n# P.show(viewer='tachyon') # uncomment this\n```\n",
     "created_at": "2009-04-02T23:18:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40243",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40164",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -531,15 +529,15 @@ P.show(viewer='jmol')
 
 ---
 
-archive/issue_comments_040244.json:
+archive/issue_comments_040165.json:
 ```json
 {
     "body": "*Has anyone else noticed that some of the plots, when rendered using the Jmol backend, look very bumpy?*\n\nYes.  I saw this problem when drawing spheres, and made a random change to \"fix\" it.  Search for \"Make mysterious correction for Z edges\" in the code.  This may be a different problem with a similar symptom; or it may be the same problem, and my previous change was horribly wrong.  (But it did appear to fix the problem in the spheres I was drawing.)",
     "created_at": "2009-04-03T03:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40244",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40165",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -551,15 +549,15 @@ Yes.  I saw this problem when drawing spheres, and made a random change to "fix"
 
 ---
 
-archive/issue_comments_040245.json:
+archive/issue_comments_040166.json:
 ```json
 {
     "body": "Replying to [comment:17 cwitty]:\n> Yes.  I saw this problem when drawing spheres, and made a random change to \"fix\" it.  Search for \"Make mysterious correction for Z edges\" in the code.  This may be a different problem with a similar symptom; or it may be the same problem, and my previous change was horribly wrong.  (But it did appear to fix the problem in the spheres I was drawing.)\n\nInteresting. I took a look at some plots sans your correction, and it looks like it might be the same species of bug -- the plots have a kind of ripple distortion, radiating outward from a pole. Your change was not wrong, however, or at least its removal did not affect any other bugs.\n\nIs there anyone more knowledgeable about marching cubes and JVXL who is willing to work on this bug? I will do what I can. I'd like to see implicit_plot3d in Sage in the near future!",
     "created_at": "2009-04-07T04:37:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40245",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40166",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -574,15 +572,15 @@ Is there anyone more knowledgeable about marching cubes and JVXL who is willing 
 
 ---
 
-archive/issue_comments_040246.json:
+archive/issue_comments_040167.json:
 ```json
 {
     "body": "After thoroughly examining the code, I've come to believe that the jaggedness in the Jmol plots is due to a limitation of the JVXL file format. The interpolation values along the edges must be rounded to fit into a byte (actually, less than a byte -- there are 90 possible values), and I think that this loss of precision accounts for the incorrect plots. If that's the case, then MarchingCubesJVXL might be unsalvageable.\n\nWilliam suggested I write a backend for Jmol rendering that eschews the JVXL format in favor of a polygonal representation, and I think that would be the best course of action. Even if we lose some efficiency, we gain a measure of control. In fact, I would like to unify the Tachyon and Jmol backends by using IndexFaceSet. I could refactor MarchingCubesTachyon to make this happen. Another advantage of IndexFaceSet is that it gives us a number of features for free -- such as transparency, and mesh=True.\n\nCarl, does this sound like a good plan?",
     "created_at": "2009-04-15T01:01:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40246",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40167",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -596,15 +594,15 @@ Carl, does this sound like a good plan?
 
 ---
 
-archive/issue_comments_040247.json:
+archive/issue_comments_040168.json:
 ```json
 {
     "body": "I strongly suggest that you bounce this off of the author of JMOL.  It sounds like you've done a fair amount of research; they might have some ideas to address this issue as well.",
     "created_at": "2009-04-15T01:39:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40247",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40168",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -614,15 +612,15 @@ I strongly suggest that you bounce this off of the author of JMOL.  It sounds li
 
 ---
 
-archive/issue_comments_040248.json:
+archive/issue_comments_040169.json:
 ```json
 {
     "body": "I'm a little dubious about the rounding being the problem.  If you have plot_points=(20,20,20), and you have this plot zoomed to fill a 600x600 window, then the quantization error is about 600/(20*90) = 1/3 pixel.  The jaggedness I've seen seems a lot more than 1/3 pixel...\n\nBut killing off MarchingCubesJVXL in favor of something using `IndexFaceSet` does seem like a good idea (although it's a little sad, since we've both spent hours on MarchingCubesJVXL... oh well).  It will presumably fix the problem no matter what the problem is, since `IndexFaceSet` does seem to work OK with jmol in general, and the tachyon implicit_plot3d plots are not jagged.",
     "created_at": "2009-04-15T05:43:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40248",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40169",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -634,15 +632,15 @@ But killing off MarchingCubesJVXL in favor of something using `IndexFaceSet` doe
 
 ---
 
-archive/issue_comments_040249.json:
+archive/issue_comments_040170.json:
 ```json
 {
     "body": "jason: That's a great idea. I posted a message to the jmol-users mailing list. I'll let you all know if I get any useful replies.\n\ncwitty: I'll be sorry if I have to abandon MarchingCubesJVXL, but I think there are a number of advantages to an IndexFaceSet based approach. I just want to get this thing working well!",
     "created_at": "2009-04-15T23:41:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40249",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40170",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -654,15 +652,15 @@ cwitty: I'll be sorry if I have to abandon MarchingCubesJVXL, but I think there 
 
 ---
 
-archive/issue_comments_040250.json:
+archive/issue_comments_040171.json:
 ```json
 {
     "body": "Here's a status update:\n\nI posted to the jmol-users mailing list and Robert Hanson, who wrote most of the isosurface code in Jmol, helped me find the problem with our JVXL files. Apparently the JVXL specification is wrong. Where the spec says\n\n```\nfor (int x = voxelCountX; --x >= 0;) {\n for (int y = voxelCountY; --y >= 0;) {\n   for (int z = voxelCountZ; --z >= 0;) {\n```\n\nto demonstrate the order for visiting voxels (on page 7), it should be\n\n```\nfor (int x = 0; x < voxelCountX; x++) {\n for (int y = 0; y < voxelCountY; y++) {\n   for (int z = 0; z < voxelCountZ; z++) {\n```\n\n-- that is to say, the order is reversed. A quick fix for this is to reverse the order of the edge data stored in self.bitmap in MarchingCubesJVXL. I tried it and it worked.\n\nAnyhow, I also wrote a backend based on IndexFaceSet, and that works fine, and I've attached the patch. I think the IndexFaceSet backend should be the default for both Jmol and Tachyon, since it offers a number of features -- including mesh=True, transparency, and methods to manipulate the mesh programmatically. As long as MarchingCubesJVXL is working, shall we keep support for JVXL as a feature?\n\nThere is one outstanding issue with the IndexFaceSet backend, which is that the scale for the Jmol plots is incorrect. If you try to graph something, you can see that the figure will be larger than its bounding box by a factor of about 3. I believe the bounding box is correct, so the problem must be with the transformation matrix we are given through render_params or the way we apply that transformation. On line 317 of plot3d/base.pyx, in _prepare_for_jmol, I noticed that it applies some scaling factor \"s\" (=3). Do we have to account for that somehow? Does anyone have any insight into this issue?\n\nSo basically the major things left to do are to fix that bug, and add doctests for everything. I will continue to work on this.",
     "created_at": "2009-04-24T03:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40250",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40171",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -696,15 +694,15 @@ So basically the major things left to do are to fix that bug, and add doctests f
 
 ---
 
-archive/issue_comments_040251.json:
+archive/issue_comments_040172.json:
 ```json
 {
     "body": "Robert Bradshaw might be a good person to ask that _prepare_for_jmol question.",
     "created_at": "2009-04-24T03:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40251",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40172",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -714,15 +712,15 @@ Robert Bradshaw might be a good person to ask that _prepare_for_jmol question.
 
 ---
 
-archive/issue_comments_040252.json:
+archive/issue_comments_040173.json:
 ```json
 {
     "body": "Is there any reason why mesh and transparency can't work with jvxl files?  JVXL and the pmesh both give ways to specify a surface to jmol; I don't see why you shouldn't be able to specify mesh=True and transparency options when passing a jvxl file.  If not, can we request it?  Do you know the size difference between a (zipped) pmesh command file to jmol and the equivalent (zipped) jvxl command file?\n\nThanks for all of your work on this!",
     "created_at": "2009-04-24T03:40:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40252",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40173",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -734,15 +732,15 @@ Thanks for all of your work on this!
 
 ---
 
-archive/issue_comments_040253.json:
+archive/issue_comments_040174.json:
 ```json
 {
     "body": "I have no idea what the factor of 3 is about--William Stein wrote the _prepare_for_jmol functions--but I would guess it's something to do with trying to center the object in the middle 1/3 of the viewable area. I believe the bounding box functionality method on IndexFaceSet is correct, but it would be good to have some doctests asserting this.",
     "created_at": "2009-04-24T03:44:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40253",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40174",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -752,15 +750,15 @@ I have no idea what the factor of 3 is about--William Stein wrote the _prepare_f
 
 ---
 
-archive/issue_comments_040254.json:
+archive/issue_comments_040175.json:
 ```json
 {
     "body": "If I understand things correctly, page 2 of http://chemapps.stolaf.edu/jmol/docs/misc/JVXL-format.pdf shows several jvxl surfaces that are transparent.  So why is transparency an issue with jvxl format?",
     "created_at": "2009-04-24T04:24:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40254",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40175",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -770,15 +768,15 @@ If I understand things correctly, page 2 of http://chemapps.stolaf.edu/jmol/docs
 
 ---
 
-archive/issue_comments_040255.json:
+archive/issue_comments_040176.json:
 ```json
 {
     "body": "I'm sorry I wasn't clear. I'm pretty sure transparency is possible for JVXL files, we just haven't implemented it yet. I don't know how mesh=True works though. So I guess those points don't really count for the IFS based implementation.\n\nI will try to get the difference in size between a pmesh file and a JVXL file for you. But I can tell you now that the main advantage of JVXL is size, since efficient compression of isosurfaces was one of its primary design goals.",
     "created_at": "2009-04-24T07:56:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40255",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40176",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -790,15 +788,15 @@ I will try to get the difference in size between a pmesh file and a JVXL file fo
 
 ---
 
-archive/issue_comments_040256.json:
+archive/issue_comments_040177.json:
 ```json
 {
     "body": "I fixed the scaling issue for Jmol plots. The bug was due to render_params.transform being applied twice -- once in MarchingCubes, and once in IndexFaceSet.jmol_repr.",
     "created_at": "2009-04-26T23:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40256",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40177",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -808,15 +806,15 @@ I fixed the scaling issue for Jmol plots. The bug was due to render_params.trans
 
 ---
 
-archive/issue_comments_040257.json:
+archive/issue_comments_040178.json:
 ```json
 {
     "body": "I would like to rename the \"hole\" parameter so that it is consistent with me and Jason's work on #5514, which implements exclusions for parametric 3D plots. Is everybody OK with the term \"region\"? So the user provides a \"region\" parameter which returns True for all points that should be included. Note that this is an inversion of the logic for \"hole\", which returns False for all points that should be included. We currently use \"region_function\" in #5514, but I would like to change that as well to the more concise \"region\".",
     "created_at": "2009-04-29T23:30:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40257",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40178",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -826,15 +824,15 @@ I would like to rename the "hole" parameter so that it is consistent with me and
 
 ---
 
-archive/issue_comments_040258.json:
+archive/issue_comments_040179.json:
 ```json
 {
     "body": "Definitely it should use the same name as #5514.  I'm fine with changing the name and inverting the meaning of True/False.\n\nI have a slight preference for region_function over region, for two reasons: 1) to match Mathematica; and 2) because we do require a function.  (If region=(x<sup>2</sup>+y<sup>2</sup>+z<sup>2</sup><1) worked, then \"region\" would probably be better than \"region_function\".  And of course, it wouldn't be hard to make that work.)",
     "created_at": "2009-04-29T23:49:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40258",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40179",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -846,15 +844,15 @@ I have a slight preference for region_function over region, for two reasons: 1) 
 
 ---
 
-archive/issue_comments_040259.json:
+archive/issue_comments_040180.json:
 ```json
 {
     "body": "+1 on calling it \"region\" (and then followed by a patch or two that make it more general than a function :).\n\nand +1 on inverting the \"hole\" meaning.",
     "created_at": "2009-04-30T00:07:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40259",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40180",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -866,15 +864,15 @@ and +1 on inverting the "hole" meaning.
 
 ---
 
-archive/issue_comments_040260.json:
+archive/issue_comments_040181.json:
 ```json
 {
     "body": "So I think this patch is ready for review! Apply trac5249.patch.\n\nTest coverage is up to 100%, and I renamed the \"hole\" parameter to \"region\". This implementation uses only the IndexFaceSet based backend, but it is fully functional. I would like to get this into Sage, and then we can work on integrating MarchingCubesJVXL again. Robert Bradshaw had a good suggestion, which was that we should make ImplicitSurface more generic so that it can accept a user-specified array of voxels and triangulate that. I can open a ticket to address these potential features.",
     "created_at": "2009-05-01T07:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40260",
-    "user": "wcauchois"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40181",
+    "user": "https://trac.sagemath.org/admin/accounts/users/wcauchois"
 }
 ```
 
@@ -886,15 +884,15 @@ Test coverage is up to 100%, and I renamed the "hole" parameter to "region". Thi
 
 ---
 
-archive/issue_comments_040261.json:
+archive/issue_comments_040182.json:
 ```json
 {
     "body": "this applies cleanly against 3.4.2",
     "created_at": "2009-05-05T20:58:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40261",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40182",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -904,15 +902,15 @@ this applies cleanly against 3.4.2
 
 ---
 
-archive/issue_comments_040262.json:
+archive/issue_comments_040183.json:
 ```json
 {
     "body": "Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket5249/trac_5249-flat.patch) by @williamstein created at 2009-05-13 16:03:33",
     "created_at": "2009-05-13T16:03:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40262",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40183",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -922,15 +920,15 @@ Attachment [trac_5249-flat.patch](tarball://root/attachments/some-uuid/ticket524
 
 ---
 
-archive/issue_comments_040263.json:
+archive/issue_comments_040184.json:
 ```json
 {
     "body": "Two remarks, both of which should be addressed via followup tickets:\n\n* lots of docstrings of non-underscore methods consist only of tests, but no description what the function does\n* the new functionality has not been added to the reference manual, so it is hard to be aware that the functionality exists\n\nAlso: Is the following correct?\n\n* credit for authorship: Bill Cauchois, Carl Witty, Jason Grout\n* credit for review: William Stein\n\n\n\nCheers,\n\nMichael",
     "created_at": "2009-05-13T17:11:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40263",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40184",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -954,15 +952,15 @@ Michael
 
 ---
 
-archive/issue_comments_040264.json:
+archive/issue_comments_040185.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-13T17:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40264",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40185",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -972,15 +970,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_040265.json:
+archive/issue_comments_040186.json:
 ```json
 {
     "body": "Merged trac_5249-flat.patch only in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-13T17:39:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40265",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40186",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -994,15 +992,15 @@ Michael
 
 ---
 
-archive/issue_comments_040266.json:
+archive/issue_comments_040187.json:
 ```json
 {
     "body": "I don't think I wrote any actual code on this patch (unless someone remembers something that I didn't).  Carl Witty single-handedly wrote the initial patch (which I posted), and then Bill took it from there.  I think it would be fair to put me in as a reviewer, though.  Good job, guys!",
     "created_at": "2009-05-13T21:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40266",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40187",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -1012,15 +1010,15 @@ I don't think I wrote any actual code on this patch (unless someone remembers so
 
 ---
 
-archive/issue_comments_040267.json:
+archive/issue_comments_040188.json:
 ```json
 {
     "body": "Replying to [comment:38 jason]:\n> I don't think I wrote any actual code on this patch (unless someone remembers something that I didn't).  Carl Witty single-handedly wrote the initial patch (which I posted), and then Bill took it from there.  I think it would be fair to put me in as a reviewer, though.  Good job, guys!\n\nOk, credits fixed accordingly.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-14T05:15:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5249",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40267",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5249#issuecomment-40188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_009457.json:
     "body": "Assignee: @malb\n\nCC:  simonking @categorie\n\nComparison of power series uses list instead of padded_list; this means that power series equality can fail:\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, False, False, True, False, True] # should be all true\nsage: g.add_bigoh(3).list()\n[1]\nsage: g.add_bigoh(3).padded_list()\n[1, 0, 0]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9457\n\n",
     "created_at": "2010-07-08T15:35:20Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009457.json:
     "title": "power series comparison should use padded_list",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9457",
-    "user": "@nilesjohnson"
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 Assignee: @malb
@@ -45,15 +45,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9457
 
 ---
 
-archive/issue_comments_090634.json:
+archive/issue_comments_090485.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-08T15:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90634",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90485",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -63,15 +63,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_090635.json:
+archive/issue_comments_090486.json:
 ```json
 {
     "body": "Attachment [trac_9457_power_series_eq.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq.patch) by @nilesjohnson created at 2010-07-08 19:20:15\n\nchange list to padded_list in _richcmp_c_impl",
     "created_at": "2010-07-08T19:20:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90635",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90486",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -83,15 +83,15 @@ change list to padded_list in _richcmp_c_impl
 
 ---
 
-archive/issue_comments_090636.json:
+archive/issue_comments_090487.json:
 ```json
 {
     "body": "Replaced padded_list() with padded_list(prec) because of\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: f = t + t^2 + O(t^10)\nsage: f == f.truncate()\nFalse\nsage: f.truncate().padded_list()\n[0, 1, 1]\n```\n\n\nThis brought up a problem with padded_list(infinity), which is also now patched\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: f = t + t^2 + O(t**10)\nsage: f.padded_list()\n[0, 1, 1, 0, 0, 0, 0, 0, 0, 0]\nsage: f.padded_list(infinity)\nTraceback (most recent call last):\n...\nTypeError: unsupported operand parent(s) for '*': '<type 'list'>' and 'The Infinity Ring'\n```\n",
     "created_at": "2010-07-08T19:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90636",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90487",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -127,15 +127,15 @@ TypeError: unsupported operand parent(s) for '*': '<type 'list'>' and 'The Infin
 
 ---
 
-archive/issue_comments_090637.json:
+archive/issue_comments_090488.json:
 ```json
 {
     "body": "Replying to [comment:4 niles]: Code in the previous description made no sense; my apologies.  Here's what we have after applying the patch:\n\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n\n\nsage: f = t + t^2 + O(t^10)\nsage: f == f.truncate()\nTrue\nsage: f.padded_list()\n[0, 1, 1, 0, 0, 0, 0, 0, 0, 0]\nsage: f.padded_list(infinity)\n[0, 1, 1]\n```\n",
     "created_at": "2010-07-09T12:55:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90637",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90488",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -164,15 +164,15 @@ sage: f.padded_list(infinity)
 
 ---
 
-archive/issue_comments_090638.json:
+archive/issue_comments_090489.json:
 ```json
 {
     "body": "apply after previous patch; includes doctests",
     "created_at": "2010-07-12T16:21:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90638",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90489",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -182,15 +182,15 @@ apply after previous patch; includes doctests
 
 ---
 
-archive/issue_comments_090639.json:
+archive/issue_comments_090490.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-07-30T16:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90639",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90490",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -200,15 +200,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_090640.json:
+archive/issue_comments_090491.json:
 ```json
 {
     "body": "Attachment [trac_9457_power_series_eq_doctests.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_doctests.patch) by @simon-king-jena created at 2010-07-30 16:59:31\n\nHi!\n\nThe patches cleanly apply, and `sage -b` works.\n\nThe original problem is fixed:\n\n```\nsage: A.<t> = PowerSeriesRing(ZZ)\nsage: g = t + t^3 + t^5 + O(t^6); g\nt + t^3 + t^5 + O(t^6)\nsage:\nsage: [g == g.add_bigoh(i) for i in range(7)]\n[True, True, True, True, True, True, True]\n```\n\n\nThe code looks good to me. I am now running doctests.\n\nOne minor problem: Please mention the ticket number in the commit messages. So, please add something like \"#9457: \" to the commit messages of both patches",
     "created_at": "2010-07-30T16:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90640",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90491",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -238,15 +238,15 @@ One minor problem: Please mention the ticket number in the commit messages. So, 
 
 ---
 
-archive/issue_comments_090641.json:
+archive/issue_comments_090492.json:
 ```json
 {
     "body": "First, I applied the patches from #9443 and found that all doctests pass. Then, I applied the tickets from here, and got one doctest failure:\n\n```\nsage -t  -long devel/sage/sage/schemes/elliptic_curves/sha_tate.py\nSaturation index bound = 265\nWARNING: saturation at primes p > 100 will not be done;\npoints may be unsaturated at primes between 100 and index bound\nFailed to saturate MW basis at primes [ ]\n*** saturation possibly incomplete at primes [ ]\n**********************************************************************\nFile \"/home/king/SAGE/sage-4.4.2/devel/sage-main/sage/schemes/elliptic_curves/sha_tate.py\", line 393:\n    sage: EllipticCurve('53a1').sha().an_padic(5) # rank 1    (long time)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/home/king/SAGE/sage-4.4.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[13]>\", line 1, in <module>\n        EllipticCurve('53a1').sha().an_padic(Integer(5)) # rank 1    (long time)###line 393:\n    sage: EllipticCurve('53a1').sha().an_padic(5) # rank 1    (long time)\n      File \"/home/king/SAGE/sage-4.4.2/local/lib/python/site-packages/sage/schemes/elliptic_curves/sha_tate.py\", line 567, in an_padic\n        raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n    RuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n```\n\n\nSo, there will be some bug hunt needed.",
     "created_at": "2010-07-30T22:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90641",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90492",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -285,15 +285,15 @@ So, there will be some bug hunt needed.
 
 ---
 
-archive/issue_comments_090642.json:
+archive/issue_comments_090493.json:
 ```json
 {
     "body": "Here's the problem.\n\nWithout the patch:\n\n```\nsage: R.<T> = QQ.completion(5,5)[[]]\nsage: R\nPower Series Ring in T over 5-adic Field with capped relative precision 5\nsage: O(T^2) == 0\nFalse\n```\n\n\nWith the patch:\n\n```\nsage: R.<T> = QQ.completion(5,5)[[]]\nsage: R\nPower Series Ring in T over 5-adic Field with capped relative precision 5\nsage: O(T^2) == 0\nTrue\n```\n\n\nI guess that the second answer is correct. Unfortunately, Sha.an_padic relies on the wrong answer.",
     "created_at": "2010-07-31T12:58:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90642",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90493",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -327,15 +327,15 @@ I guess that the second answer is correct. Unfortunately, Sha.an_padic relies on
 
 ---
 
-archive/issue_comments_090643.json:
+archive/issue_comments_090494.json:
 ```json
 {
     "body": "Thanks, but I'm not sure I can tell how to fix this . . . I see in the code for `Sha.an_padic` the following lines:\n\n\n```\n# check consistency (the first two are only here to avoid a bug in the p-adic L-series\n# (namely the coefficients of zero-relative precision are treated as zero)\nif shan0 != 0 and shan1 != 0 and shan0 - shan1 != 0:\n    raise RuntimeError, \"There must be a bug in the supersingular routines for the p-adic BSD.\"\n```\n\n\nI suppose this is part of the problem but I don't see how to fix it . . . the two variables `shan0` and `shan1` are printed in the verbose output as \"the two values for Sha\"; the value of `shan1` is different depending on whether or not the patch is applied, but I have no idea which value is correct:\n\nWithout the patch:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]\n1 + O(5)\n```\n\n\n\nWith the patch:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 4 + O(5)]\n---------------------------------------------------------------------------\nTraceback (most recent call last)\n...\nRuntimeError: There must be a bug in the supersingular routines for the p-adic BSD.\n\n```\n\n\nNote that simply removing the conditions `shan0 != 0 and shan1 != 0` (as implied by the inline comment) does not resolve the problem, since `shan0 != shan1` is `True` with the patch.  The values of `shan0` and `shan1` are computed by the function `pAdicLseriesSupersingular.Dp_valued_series`, which gives different output with and without the patch; again I have no idea which is correct.\n\n\nWithout the patch:\n\n```\nsage: E = EllipticCurve('53a1')\nsage: Et, D = E.minimal_quadratic_twist()\nsage: lp = Et.padic_lseries(5)\nsage: lps = lp.Dp_valued_series(4,quadratic_twist=D, prec=4)\nsage: lps\n(O(5^4) + (3 + O(5))*T + O(5)*T^2 + (4 + O(5))*T^3 + O(T^4), O(T^4))\n```\n\n\nWith the patch:\n\n```\nsage: E = EllipticCurve('53a1')\nsage: Et, D = E.minimal_quadratic_twist()\nsage: lp = Et.padic_lseries(5)\nsage: lps = lp.Dp_valued_series(4,quadratic_twist=D, prec=4)\nsage: lps\n(O(5^4) + (3 + O(5))*T + O(5)*T^2 + (4 + O(5))*T^3 + O(T^4), O(5^5) + (4*5 + O(5^2))*T + O(5^2)*T^2 + (2*5 + O(5^2))*T^3 + O(T^4))\n```\n\n\nNote that every line of `pAdicLseriesSupersingular.Dp_valued_series` gives the same output with or without the patch, except for the very last one, which computes `lpv*eps.transpose()` where (with or without the patch)\n\n\n```\nlpv = (O(5^3) + (2*5^-1 + O(5^0))*T + O(5^0)*T^2 + (5^-1 + O(5^0))*T^3 + O(T^4), O(T^4))\n```\n\n\nand\n\n\n```\neps.transpose() = \n[  5/9 25/18]\n[-5/18   5/9]\n```\n\n\nBefore I try to chase this further, I think we should try to determine whether the patch is causing `Dp_valued_series` to give the wrong answer, or whether the conditions on `shan0` and `shan1` should be changed.  Ideas?  If I've missed the point of your previous comment, could you explain how you determined that was the problem?\n\np.s. I haven't forgotten about fixing the commit messages; I'll do it after this is sorted out.",
     "created_at": "2010-08-01T14:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90643",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90494",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -434,15 +434,15 @@ p.s. I haven't forgotten about fixing the commit messages; I'll do it after this
 
 ---
 
-archive/issue_comments_090644.json:
+archive/issue_comments_090495.json:
 ```json
 {
     "body": "Hi niles!\n\nReplying to [comment:9 niles]:\n> Thanks, but I'm not sure I can tell how to fix this . . . \n\nAt least your bug hunting was much deeper than mine.\n\n> Before I try to chase this further, I think we should try to determine whether the patch is causing `Dp_valued_series` to give the wrong answer, or whether the conditions on `shan0` and `shan1` should be changed.\n\nProbably `Dp_valued_series`, since the patch changes it, as you found out. But I am no expert for elliptic curves.\n\n>  Ideas?  If I've missed the point of your previous comment, could you explain how you determined that was the problem?\n\nI inserted some print statements into an_padic, I don't recall exactly where. And it told me that just before the error occured, `O(T^2)` occured and was tested for being zero. As this is something that the patch changed, I conluded that there is a problem (but perhaps not the only problem).",
     "created_at": "2010-08-01T15:13:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90644",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90495",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -465,15 +465,15 @@ I inserted some print statements into an_padic, I don't recall exactly where. An
 
 ---
 
-archive/issue_comments_090645.json:
+archive/issue_comments_090496.json:
 ```json
 {
     "body": "Hi Simon, thanks for the quick reply :)\n\nReplying to [comment:10 SimonKing]:\n> Probably `Dp_valued_series`, since the patch changes it, as you found out. But I am no expert for elliptic curves.\n\nThat's my guess too; I'll write an e-mail to sage-devel and see if someone can help",
     "created_at": "2010-08-01T15:20:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90645",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90496",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -488,15 +488,15 @@ That's my guess too; I'll write an e-mail to sage-devel and see if someone can h
 
 ---
 
-archive/issue_comments_090646.json:
+archive/issue_comments_090497.json:
 ```json
 {
     "body": "Replying to [comment:10 SimonKing]:\n\nHi Simon,\n\nI believe I have identified the problem; I think it is a problem with negative valuation for p-adics.  First, here is what `Dp_valued_series` does:\n\nWith or without the patch, we have\n\n```\nsage: import sage.matrix.all as matrix\nsage: p = 5\nsage: prec = 2\nsage: E = EllipticCurve('53a1')\nsage: L = E.padic_lseries(5)\nsage: lps = L.series(4)\nsage: R = lps.base_ring().base_ring()\nsage: QpT, T = PowerSeriesRing(R,'T',2).objgen()\nsage: G = QpT([lps[n][0] for n in range(0,lps.prec())], prec)\nsage: H = QpT([lps[n][1] for n in range(0,lps.prec())], prec)\nsage: phi = matrix.matrix([[0,-1/p],[1,E.ap(p)/p]])\nsage: lpv = vector([G  + (E.ap(p))*H  , - R(p) * H ])\nsage: eps = (1-phi)**(-2)\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: eps.transpose()\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\n\nNow `Dp_valued_series` ends by returning `lpv*eps.transpose()`.\n\nWithout the patch:\n\n```\nsage: lpv*eps.transpose()\n(O(5^4) + (3 + O(5))*T + O(T^2), O(T^2))\n```\n\n\nAnd with the patch:\n\n```\nsage: lpv*eps.transpose()\n(O(5^4) + (3 + O(5))*T + O(T^2), O(5^5) + (4*5 + O(5^2))*T + O(T^2))\n```\n\n\nI had thought the with-patch answer was clearly right, until I tried the following (without the patch):\n\n\n```\nsage: a = vector([O(5^3) + (R(2/5).add_bigoh(0))*T + O(T^2), O(T^2)])\nsage: M = matrix.matrix([[  0, 1],[0,  1]]); M\n[0 1]\n[0 1]\nsage: a\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: a*M\n(0, O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2))\nsage: lpv*M\n(0, O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2))\n\nsage: M = matrix.matrix([[  0, 5],[0,  1]])\nsage: a*M\n(0, O(5^4) + (2 + O(5))*T + O(T^2))\nsage: lpv*M\n(0, O(T^2))\n```\n\n\nNow note the way `lpv[1]` is constructed: pull certain coefficients from `lps` and make a power series (of precision 2) in `QpT` with them.  Here is the list of coefficients for `H`:\n\n```\nsage: [lps[n][1] for n in range(0,lps.prec())]\n[O(5^2), O(5^-1), O(5^-1), O(5^-1), O(5^-1)]\nsage: H\nO(T^2)\n```\n\n\nSo the `O(T^2)` in `lpv[1]` should really be `O(5^2) + O(5^-1)*T + O(T^2)`, and this explains why `lpv*M` really should be `(0, O(T^2))` (when M has a 5 in the upper-right entry).\n\nHere is a more direct test that passing to the power series ring over 5-adic field does not remember negative precision of 0 (this is without the patch):\n\n```\nsage: R(0).add_bigoh(-1)\nO(5^-1)\nsage: QpT(R(0).add_bigoh(-1))\n0\nsage: R(0).add_bigoh(-1).precision_absolute()\n-1\nsage: QpT(R(0).add_bigoh(-1))[0].precision_absolute()\n+Infinity\nsage: QpT(R(1/25).add_bigoh(-1))\n5^-2 + O(5^-1)\nsage: QpT(R(1/25).add_bigoh(-1))[0].precision_absolute()\n-1\n```\n\n\nI believe the correct arithmetic should be as follows:\n\n```\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(5^2) + O(5^-1)*T + O(T^2))*\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\nshould be\n\n```\n(O(5^3) + O(5^0)*T + O(T^2), O(5^3) + O(5^0)*T + O(T^2))\n```\n\nDoes this seem right?  If this were the output of `Dp_valued_series`, then `EllipticCurve('53a1').sha().an_padic(5)` would increase the precision of `Dp_valued_series` from 2 to 3 and run it again; I tested this, and with this precision `EllipticCurve('53a1').sha().an_padic(5)` succeeds (with the patch applied!) and gives the expected answer.\n \nSo I believe the problem is a bug with power series over p-adics, rather than with this patch or with the elliptic curves code.  Does this seem right to you?  If so, one possible route at this stage is to modify the `an_padic` code so that rather than throwing the error it first runs another loop with additional precision, and then submit a separate trac ticket for the p-adic problem.  This is sort of dodging the issue, but helps keep the individual bugs separated.",
     "created_at": "2010-08-03T13:53:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90646",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90497",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -625,15 +625,15 @@ So I believe the problem is a bug with power series over p-adics, rather than wi
 
 ---
 
-archive/issue_comments_090647.json:
+archive/issue_comments_090498.json:
 ```json
 {
     "body": "Replying to [comment:12 niles]:\n\n> So the `O(T^2)` in `lpv[1]` should really be `O(5^2) + O(5^-1)*T + O(T^2)`, and this explains why `lpv*M` really should be `(0, O(T^2))` (when M has a 5 in the upper-right entry).\n\noops, `lpv[1]` is `(-R(p)) * H`, so I guess it should be `O(5^3) + O(5^0)*T + O(T^2)`\n\nand the arithmetic is:\n\n\n```\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(5^3) + O(5^0)*T + O(T^2))*\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\nshould be\n\n```\n(O(5^4) + (3 + O(5))*T + O(T^2), O(5^4) + O(5)*T + O(T^2))\n```\n\nwhich will cause `an_padic` to still throw the error :(\n\nIn any case, computing with a higher precision does give the right answer with or without the patch.  I noticed there is an optional argument for this:\n\n```\nsage: set_verbose(1)\nsage: EllipticCurve('53a1').sha().an_padic(5, prec=5)\n ...\nverbose 1 (316: sha_tate.py, an_padic) the algebraic leading terms : (3 + 5 + 2*5^3 + 3*5^4 + 3*5^6 + 4*5^7 + 2*5^8 + 5^10 + 4*5^11 + 4*5^12 + 5^13 + 3*5^15 + 4*5^16 + 4*5^17 + 3*5^18 + 4*5^19 + O(5^20), 5 + 5^2 + 3*5^3 + 4*5^4 + 5^5 + 2*5^6 + 3*5^7 + 2*5^8 + 4*5^9 + 2*5^10 + 4*5^12 + 3*5^13 + 3*5^14 + 4*5^15 + 3*5^16 + 2*5^17 + 3*5^18 + 5^19 + O(5^20))\nverbose 1 (316: sha_tate.py, an_padic) ...computing the p-adic L-series\nverbose 1 (316: sha_tate.py, an_padic) r = 1\nverbose 1 (881: padic_lseries.py, series) using p-adic precision of 5\nverbose 1 (881: padic_lseries.py, series) Now iterating over 2500 summands\nverbose 1 (316: sha_tate.py, an_padic) the leading terms : [3 + O(5), 5 + O(5^2)]\nverbose 1 (316: sha_tate.py, an_padic) ...putting things together\nverbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 1 + O(5)]\n1 + O(5)\n```\n",
     "created_at": "2010-08-03T18:35:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90647",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90498",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -682,15 +682,15 @@ verbose 1 (316: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 1 + O
 
 ---
 
-archive/issue_comments_090648.json:
+archive/issue_comments_090499.json:
 ```json
 {
     "body": "A bug in p-adic vectors related to the problems here was noticed and filed at #8198.  Problems with power series having zero p-adic coefficients were noticed and filed at #4656.  These seem related to #5075 (polynomials over inexact rings should not truncate inexact leading zeroes) and #6084 (Improved p-adic polynomials).  When these are resolved, perhaps progress can be made here.",
     "created_at": "2010-08-03T23:34:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90648",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90499",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -700,15 +700,15 @@ A bug in p-adic vectors related to the problems here was noticed and filed at #8
 
 ---
 
-archive/issue_comments_090649.json:
+archive/issue_comments_090500.json:
 ```json
 {
     "body": "Attachment [trac_9457_power_series_eq_rebase.patch](tarball://root/attachments/some-uuid/ticket9457/trac_9457_power_series_eq_rebase.patch) by @nilesjohnson created at 2012-05-03 14:52:51\n\nrebased to 5.0.rc0",
     "created_at": "2012-05-03T14:52:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90649",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90500",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -720,15 +720,15 @@ rebased to 5.0.rc0
 
 ---
 
-archive/issue_comments_090650.json:
+archive/issue_comments_090501.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-05-03T14:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90650",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90501",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -738,15 +738,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_090651.json:
+archive/issue_comments_090502.json:
 ```json
 {
     "body": "Bugs in p-adics seem to have been fixed as of Sage 5.0.rc0, so this patch passes all long tests in sage/schemes/elliptic_curves.  Since `padded_list` is quite a bit slower than `list`, I've reworked the patch to keep using `list`, but to append zeroes to the end of those lists which are too short.\n\nPatchbot: apply [attachment: trac_9457_power_series_eq_rebase.patch]",
     "created_at": "2012-05-03T14:59:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90651",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90502",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -758,33 +758,15 @@ Patchbot: apply [attachment: trac_9457_power_series_eq_rebase.patch]
 
 ---
 
-archive/issue_comments_090652.json:
-```json
-{
-    "body": "Changing priority from minor to major.",
-    "created_at": "2012-05-03T15:02:16Z",
-    "issue": "https://github.com/sagemath/sagetest/issues/9457",
-    "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90652",
-    "user": "@nilesjohnson"
-}
-```
-
-Changing priority from minor to major.
-
-
-
----
-
-archive/issue_comments_090653.json:
+archive/issue_comments_090503.json:
 ```json
 {
     "body": "Patchbot: apply trac_9457_power_series_eq_rebase.patch",
     "created_at": "2012-05-03T15:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90653",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90503",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -794,15 +776,15 @@ Patchbot: apply trac_9457_power_series_eq_rebase.patch
 
 ---
 
-archive/issue_comments_090654.json:
+archive/issue_comments_090504.json:
 ```json
 {
     "body": "Oh bother!  When switching from `padded_list` to \n\n\n```\nx += [0]*(prec - len(x)) # x.list() does not include trailing zeroes \nx = x[:prec] # truncate x to common prec \n```\n\n\nI seem to be triggering the problem in `sha_tate.py` again . . .",
     "created_at": "2012-05-03T15:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90654",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90504",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -821,15 +803,15 @@ I seem to be triggering the problem in `sha_tate.py` again . . .
 
 ---
 
-archive/issue_comments_090655.json:
+archive/issue_comments_090505.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2012-05-03T15:11:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90655",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90505",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -839,15 +821,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_090656.json:
+archive/issue_comments_090506.json:
 ```json
 {
     "body": "Last 10 new commits:",
     "created_at": "2014-01-03T19:35:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90656",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90506",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -857,15 +839,15 @@ Last 10 new commits:
 
 ---
 
-archive/issue_comments_090657.json:
+archive/issue_comments_090507.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-01-03T19:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90657",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90507",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -875,15 +857,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_090658.json:
+archive/issue_comments_090508.json:
 ```json
 {
     "body": "I had hoped the changes at #12555 would magically resolve this, but they do not.  The other related tickets, listed in comment [comment:14]  are also not fixed by #12555.\n\nNote that the current version of the git branch for this ticket (commit \u200be221960) does *not* include the changes of #12555, although the initial version mistakenly did.",
     "created_at": "2014-01-03T19:55:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90658",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90508",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -895,15 +877,15 @@ Note that the current version of the git branch for this ticket (commit ​e2219
 
 ---
 
-archive/issue_comments_090659.json:
+archive/issue_comments_090509.json:
 ```json
 {
     "body": "The problem with Sha.an_padic may also be related to the bug in extended gcd at #13439 or one of its dependencies.",
     "created_at": "2014-01-27T20:42:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90659",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90509",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -913,15 +895,15 @@ The problem with Sha.an_padic may also be related to the bug in extended gcd at 
 
 ---
 
-archive/issue_comments_090660.json:
+archive/issue_comments_090510.json:
 ```json
 {
     "body": "Interesting. I just started to look at #4656 again this morning. And then I discovered this ticket. The problems there would get solved partially by this solution here and conversely, the problem there to fix it are with the supersingular case tested in this one case. Of course, I offer my help with this as I am at the origin of the code that causes troubles.",
     "created_at": "2014-01-29T21:39:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90660",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90510",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -931,15 +913,15 @@ Interesting. I just started to look at #4656 again this morning. And then I disc
 
 ---
 
-archive/issue_comments_090661.json:
+archive/issue_comments_090511.json:
 ```json
 {
     "body": "Replying to [comment:26 wuthrich]:\n> Of course, I offer my help with this as I am at the origin of the code that causes troubles.\n\nThanks :)  The last real progress I made in understanding this is up in comments [comment:13] and [comment:14], where I worked through the offending doctest by hand -- see [the block starting on line 632](https://github.com/sagemath/sage/blob/master/src/sage/schemes/elliptic_curves/sha_tate.py#L632).  \n\nOne helpful thing would be to verify the calculations below:\n\nUsing the objects constructed in comment [comment:13], sage says\n\n\n```\nsage: G\nO(5^3) + (2*5^-1 + O(5^0))*T + O(T^2)\nsage: H\nO(T^2)\nsage: lpv\n(O(5^3) + (2*5^-1 + O(5^0))*T + O(T^2), O(T^2))\nsage: eps.transpose()\n[  5/9 25/18]\n[-5/18   5/9]\n```\n\n\nI think that `H` is not correct, as it it built from the following list of coefficients\n\n```\nsage: [lps[n][1] for n in range(0,lps.prec())]\n[O(5^2), O(5^-1), O(5^-1), O(5^-1), O(5^-1)]\n```\n\n\nSo I think the correct value should be `H = O(5^2) + O(5^-1)*T + O(T^2)` and hence \n`-R(p) * H = O(5^3) + O(5^0)*T + O(T^2)`.  Converting `eps.transpose()` to the 5-adics `R`, so that I can check `lpv * eps.transpose()` by hand, I have\n\n\n```\nsage: Matrix(R,2,2,[R(_) for _ in eps.transpose().list()])\n[      4*5 + 2*5^2 + 5^4 + 2*5^5 + O(5^6)     2*5^2 + 5^3 + 3*5^5 + 3*5^6 + O(5^7)]\n[3*5 + 3*5^2 + 4*5^3 + 5^4 + 5^5 + O(5^6)       4*5 + 2*5^2 + 5^4 + 2*5^5 + O(5^6)]\n```\n\n\nTherefore `lpv * eps.transpose()` should be\n\n```\n( O(5^3) + (3 + O(5))*T + O(T^2) , O(5^4) + O(5^1)*T + O(T^2) )\n```\n\n\nCan you verify these calculations, and verify that if this were the output of `lpv*eps.transpose()`, then the rest of the code would work correctly and return `1`, as expected?  (I think I was confused about this last point when I made my comment [comment:14]; but this value for `lpv * eps.transpose()` should make `shan0 = 1` and `shan1 = 0`, and if I read the rest of that block correctly then this will lead to the expected output).\n\n\n----------\n\nIf the analysis above is right, then the only problem remaining to solve is why `H` is not computed correctly.  The problem seems to be that the power series ring over p-adics does not keep track of negative precision when there are no non-zero coefficients:\n\n\n```\nsage: R(0).add_bigoh(-1)\nO(5^-1)\nsage: QpT(R(0).add_bigoh(-1))\n0   # should be same as line above\n\nsage: QpT(1/25 + R(0).add_bigoh(-1))\n5^-2 + O(5^-1)  # precision remembered when non-zero coefficients are present\n```\n\n\nI guess there is some problem with positive precision too:\n\n```\nsage: QpT(R(0).add_bigoh(1))\n0\nsage: QpT(1 + R(0).add_bigoh(1))\n1 + O(5)\n```\n\n\nIs this issue already part of one of the other padic bug tickets?",
     "created_at": "2014-01-30T19:45:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90661",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90511",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -1027,15 +1009,15 @@ Is this issue already part of one of the other padic bug tickets?
 
 ---
 
-archive/issue_comments_090662.json:
+archive/issue_comments_090512.json:
 ```json
 {
     "body": "I try to remember what happened 4 years ago. I think I discovered exactly the same problem as you. First some bug, then fixing that gave an error for sha_tate in the supersingular case. This was due to the Dp_valued series return the wrong result. Chasing that I came to #8198, where I got stuck becasue (at the time) I did not know how I could fix that. \n\nSo let's make a list - as there are several overlapping tickets and issues:\n\n* (see #4656) is_zero is broken for power series. This causes your `QpT( O(5^-1))` to print as zero. It remembers that it is not, if you have .list you see its first coefficient is still `O(5^-1)`. We should change `__nonzero__` in power_series_poly.pyx\n\n* (see #4656, too) power series compare wrongly. Your suggestion to use padded_list above is better than what I tried to do in the other ticket. That is cmp in power_series_ring_element.pyx\n\n* (see #4656) power series also print wrongly. You would expect the inexact coefficients of the form `O(p^2)` to print, too. I tried to change that in the other ticket. That is `_repr_` in power_series_ring_element.pyx\n\n* (see #8198) Matrix multiplication on p-adics looses precision. I believe that is the heart of the problem for getting the right answer for this Dp_series. If I understand correctly you have spotted the same thing above.\n\n* There is also #5075 which I have never looked at myself.\n\nWe could take the out the doc-string in sha-tate out for now, so that this and #4656 can be closed. Then reintroduce it if we can fix #8198.",
     "created_at": "2014-02-02T14:51:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90662",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90512",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -1059,15 +1041,15 @@ We could take the out the doc-string in sha-tate out for now, so that this and #
 
 ---
 
-archive/issue_comments_090663.json:
+archive/issue_comments_090513.json:
 ```json
 {
     "body": "Replying to [comment:29 wuthrich]:\n\n> I try to remember what happened 4 years ago. \n\nThanks for putting this together :)\n\n> \n> So let's make a list - as there are several overlapping tickets and issues:\n> \n> * (see #4656) is_zero is broken for power series. This causes your `QpT( O(5^-1))` to print as zero. It remembers that it is not, if you have .list you see its first coefficient is still `O(5^-1)`. We should change `__nonzero__` in power_series_poly.pyx\n> \n\n#5075 addresses this too -- the patch there introduces 3 concepts of zero: exact zero (infinite precision), maximally zero (zero to maximal precision allowed by parent ring), and inexact zero (zero to precision less than maximal precision).  These are used to define some functions that are equal to degree for polynomials over exact rings, but more subtle over inexact rings, and these functions, in turn, are used to fix other functions . . . \n\nIn short, that ticket seems to me like a good place to start.\n\n> * (see #4656, too) power series compare wrongly. Your suggestion to use padded_list above is better than what I tried to do in the other ticket. That is cmp in power_series_ring_element.pyx\n\n`padded_list` works, but is substantially slower.  In the latest commit here, I have a more direct fix.  The patch at #5075 also has a fix that looks similar to mine, but I didn't compare them closely.\n\n> \n> * (see #4656) power series also print wrongly. You would expect the inexact coefficients of the form `O(p^2)` to print, too. I tried to change that in the other ticket. That is `_repr_` in power_series_ring_element.pyx\n> \n\n#5075 may address this too, at least judging by how some of the new doctests appear.\n\n> * (see #8198) Matrix multiplication on p-adics looses precision. I believe that is the heart of the problem for getting the right answer for this Dp_series. If I understand correctly you have spotted the same thing above.\n\nThis might be right . . . in my calculation above, the input to the vector*matrix multiplication is wrong, so I can't tell whether the matrix multiplication would also go wrong or not.\n\n> \n> * There is also #5075 which I have never looked at myself.\n\nI think we should go there :)\n\n> \n> We could take the out the doc-string in sha-tate out for now, so that this and #4656 can be closed. Then reintroduce it if we can fix #8198.\n\nHmmm . . . that doctest is holding up some pretty reasonable fixes, but it's also the only reason that we noticed these padic problems in the first place so I'm extremely reluctant to take it out.  I think it is especially bad to take it out before we fully understand where the problems are coming from.",
     "created_at": "2014-02-03T13:19:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90663",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90513",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -1115,15 +1097,15 @@ Hmmm . . . that doctest is holding up some pretty reasonable fixes, but it's als
 
 ---
 
-archive/issue_comments_090664.json:
+archive/issue_comments_090514.json:
 ```json
 {
     "body": "The only thing I see when I click on the green \" u/niles/ticket/9457 \" link in the branch field is a deletion of a file. What the hell, trac?",
     "created_at": "2014-03-01T03:41:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90664",
-    "user": "@darijgr"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90514",
+    "user": "https://github.com/darijgr"
 }
 ```
 
@@ -1133,15 +1115,15 @@ The only thing I see when I click on the green " u/niles/ticket/9457 " link in t
 
 ---
 
-archive/issue_comments_090665.json:
+archive/issue_comments_090515.json:
 ```json
 {
     "body": "The first commit in comment:21 shows `Bad object id: 83d1220`.",
     "created_at": "2014-03-01T09:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90665",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90515",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -1151,15 +1133,15 @@ The first commit in comment:21 shows `Bad object id: 83d1220`.
 
 ---
 
-archive/issue_comments_090666.json:
+archive/issue_comments_090516.json:
 ```json
 {
     "body": "Replying to [comment:33 rws]:\n> The first commit in comment:21 shows `Bad object id: 83d1220`.\n\n\nWeird; The commit linked by trac seems wrong, although the \"Commit\" field is correct.  The branch should point to [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f465ad79b098e4f923765ab791).  Here are some other links you can look at, which seem to have the branch pointing at the correct commit:\n\n* [log graph with u/niles/ticket/9457 at the top](http://git.sagemath.org/sage.git/log/?h=u/niles/ticket/9457)\n* [commit labeled u/niles/ticket/9457](http://git.sagemath.org/sage.git/commit/?h=u/niles/ticket/9457)\n\nI think the changes listed in comment [comment:21] came from trying to merge some other ticket branches with this one, which I think I should not have done.  Or rather, I should not have deleted that branch and replaced it with a new one having the same name -- that's probably causing confusion for trac.\n\nCommit [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f465ad79b098e4f923765ab791) makes just the changes necessary for fixing this ticket, so that's the correct starting point.  Later today I'll make a new branch pointing to it and fix the trac branch field.",
     "created_at": "2014-03-01T12:50:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90666",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90516",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -1180,15 +1162,15 @@ Commit [e2219602...](http://git.sagemath.org/sage.git/diff/?id=e2219602a9d360f46
 
 ---
 
-archive/issue_comments_090667.json:
+archive/issue_comments_090517.json:
 ```json
 {
     "body": "rebased to 6.2.beta2 and put changes on a completely new branch: u/niles/ticket/9457.2\n----\nNew commits:",
     "created_at": "2014-03-02T01:26:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90667",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90517",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -1200,15 +1182,15 @@ New commits:
 
 ---
 
-archive/issue_comments_090668.json:
+archive/issue_comments_090518.json:
 ```json
 {
     "body": "The doctest failure in `sha_tate.py` disappears when testing this ticket together with #8198.  Is this the only thing keeping this ticket from being ready to be reviewed?",
     "created_at": "2014-04-11T19:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90668",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90518",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1218,15 +1200,15 @@ The doctest failure in `sha_tate.py` disappears when testing this ticket togethe
 
 ---
 
-archive/issue_comments_090669.json:
+archive/issue_comments_090519.json:
 ```json
 {
     "body": "Yes, that is mine now. That may take me soem time to fix. This is really a new bug, which was not apparent with the bug fixed here. So my suggestion would be to comment out the failing test, to open a new ticket and to fix the new bug in a separate ticket as they are unrelated topics. Though I am not sure that is the way we should do it.\n\nIn any case, I start looking into the issue.",
     "created_at": "2014-04-12T19:35:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90669",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90519",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -1238,15 +1220,15 @@ In any case, I start looking into the issue.
 
 ---
 
-archive/issue_comments_090670.json:
+archive/issue_comments_090520.json:
 ```json
 {
     "body": "Replying to [comment:37 wuthrich]:\n> Yes, that is mine now. That may take me soem time to fix. This is really a new bug, which was not apparent with the bug fixed here.\nI'm not sure you interpreted my comment correctly.  I meant I merged #8198 and the branch for this, ran `make ptestlong`, and got NO doctest failures; I hope I made no mistakes there.  I.e. if that (former, after #8198) doctest failure in `sha_tate.py` was the only problem with this ticket, then there should be nothing stopping us from positively reviewing this one.",
     "created_at": "2014-04-12T19:53:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90670",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90520",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1258,15 +1240,15 @@ I'm not sure you interpreted my comment correctly.  I meant I merged #8198 and t
 
 ---
 
-archive/issue_comments_090671.json:
+archive/issue_comments_090521.json:
 ```json
 {
     "body": "Oh, I see. If so, we should change the branch on this one by merging #8198 into it, I think. Then a reviewer (e.g. me or you since you have done the work already) can give it a positive review.",
     "created_at": "2014-04-12T20:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90671",
-    "user": "@categorie"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90521",
+    "user": "https://github.com/categorie"
 }
 ```
 
@@ -1276,15 +1258,15 @@ Oh, I see. If so, we should change the branch on this one by merging #8198 into 
 
 ---
 
-archive/issue_comments_090672.json:
+archive/issue_comments_090522.json:
 ```json
 {
     "body": "OK, I'll do that and also add a reviewer patch to remove the stopgap that was made for this ticket.\n\nI also thought of replacing the use of `list()` by `padded_list()` as the stopgap warning suggests, but judging from some small experiments that seems to be much slower.",
     "created_at": "2014-04-12T20:46:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90672",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90522",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1296,15 +1278,15 @@ I also thought of replacing the use of `list()` by `padded_list()` as the stopga
 
 ---
 
-archive/issue_comments_090673.json:
+archive/issue_comments_090523.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2014-04-13T00:34:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90673",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90523",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1314,15 +1296,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_090674.json:
+archive/issue_comments_090524.json:
 ```json
 {
     "body": "OK, all tests still pass. 8-)  Just a reviewer patch, as promised.  I mostly edited the documentation a bit more to also mention the idea that comparing to the minimum of the two precisions is consistent with coercing the elements to a common parent.",
     "created_at": "2014-04-13T00:34:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90674",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90524",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1332,15 +1314,15 @@ OK, all tests still pass. 8-)  Just a reviewer patch, as promised.  I mostly edi
 
 ---
 
-archive/issue_comments_090675.json:
+archive/issue_comments_090525.json:
 ```json
 {
     "body": "This is fantastic!!  Thanks for seeing it through :)\n\n`padded_list` is indeed slower -- I just suggested it as a simple workaround for the stopgap warning.\n\nThe confounding doctest seems to be behaving correctly now -- the intermediate steps are consistent with my calculations by hand above, and the verbose output is as expected (given that there are still other problems with padics):\n\n\n```\nsage: EllipticCurve('53a1').sha().an_padic(5)\n...\nverbose 1 (431: sha_tate.py, an_padic) ...computing the p-adic L-series\nverbose 1 (1059: padic_lseries.py, series) using p-adic precision of 4\nverbose 1 (1059: padic_lseries.py, series) Now iterating over 100 summands\nverbose 1 (431: sha_tate.py, an_padic) the leading terms : [0, 0]\nverbose 1 (431: sha_tate.py, an_padic) increased precision to 4\nverbose 1 (1059: padic_lseries.py, series) using p-adic precision of 5\nverbose 1 (1059: padic_lseries.py, series) Now iterating over 500 summands\nverbose 1 (431: sha_tate.py, an_padic) the leading terms : [3 + O(5), 0]\nverbose 1 (431: sha_tate.py, an_padic) ...putting things together\nverbose 1 (431: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]\n1 + O(5)\n```\n",
     "created_at": "2014-04-14T16:47:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90675",
-    "user": "@nilesjohnson"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90525",
+    "user": "https://github.com/nilesjohnson"
 }
 ```
 
@@ -1372,15 +1354,15 @@ verbose 1 (431: sha_tate.py, an_padic) the two values for Sha : [1 + O(5), 0]
 
 ---
 
-archive/issue_comments_090676.json:
+archive/issue_comments_090526.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2014-04-14T16:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90676",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/9457#issuecomment-90526",
+    "user": "https://github.com/vbraun"
 }
 ```
 

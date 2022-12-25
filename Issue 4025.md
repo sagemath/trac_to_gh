@@ -6,7 +6,7 @@ archive/issues_004025.json:
     "body": "Assignee: mabshoff\n\nCC:  @wjp\n\nJohn Cremona reported:\n\n```\n********************************************************************** \nFile \"/home/jec/sage-3.1.2.alpha3/tmp/benchmark.py\", line 624: \n    sage: isinstance(B.maple()[1], float) \nException raised: \n    Traceback (most recent call last): \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_25[4]>\", line 1, in <module> \n        isinstance(B.maple()[Integer(1)], float)###line 624: \n    sage: isinstance(B.maple()[1], float) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/tests/b enchmark.py\", \nline 636, in maple \n        z0 = maple(str(z0)) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 963, in __call__ \n        return cls(self, x, name=name) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 1261, in __init__ \n        raise TypeError, x \n    TypeError: Unable to start maple because the command 'maple -t' failed. \n    In order to use the Maple interface you need to have Maple installed \n    and have a script in your PATH called \"maple\" that runs the \n    command-line version of Maple.  Alternatively, you could use a remote \n    connection to a server running Maple; for hints, type \n        print maple._install_hints_ssh() \n      (1) You might have to buy Maple (http://webstore.maplesoft.com/). \n      (2) * LINUX: The maple script comes standard with your Maple install. \n          * APPLE OS X: \n              (a) create a file called maple (in your PATH), with the \nfollowing contents: \n                 #!/bin/sh \n/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@ \n              (b) Save the file. \n              (c) Make the file executable. \n                    chmod +x maple \n          * WINDOWS: \n            You must install Maple-for-Linux into the VMware machine \n(sorry, that's \n            the only way at present). \n********************************************************************** \nFile \"/home/jec/sage-3.1.2.alpha3/tmp/benchmark.py\", line 964: \n    sage: isinstance(B.maple()[1], float) \nException raised: \n    Traceback (most recent call last): \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_41[4]>\", line 1, in <module> \n        isinstance(B.maple()[Integer(1)], float)###line 964: \n    sage: isinstance(B.maple()[1], float) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/tests/b enchmark.py\", \nline 968, in maple \n        n = maple('%s^%s'%(self.base,self.__ndigits)) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 963, in __call__ \n        return cls(self, x, name=name) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 1261, in __init__ \n        raise TypeError, x \n    TypeError: Unable to start maple because the command 'maple -t' failed. \n    In order to use the Maple interface you need to have Maple installed \n    and have a script in your PATH called \"maple\" that runs the \n    command-line version of Maple.  Alternatively, you could use a remote \n    connection to a server running Maple; for hints, type \n        print maple._install_hints_ssh() \n      (1) You might have to buy Maple (http://webstore.maplesoft.com/). \n      (2) * LINUX: The maple script comes standard with your Maple install. \n          * APPLE OS X: \n              (a) create a file called maple (in your PATH), with the \nfollowing contents: \n                 #!/bin/sh \n/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@ \n              (b) Save the file. \n              (c) Make the file executable. \n                    chmod +x maple \n          * WINDOWS: \n            You must install Maple-for-Linux into the VMware machine \n(sorry, that's \n            the only way at present). \n********************************************************************** \nFile \"/home/jec/sage-3.1.2.alpha3/tmp/benchmark.py\", line 1125: \n    sage: isinstance(B.maple()[1], float) \nException raised: \n    Traceback (most recent call last): \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/doctest.py\", \nline 1228, in __run \n        compileflags, 1) in test.globs \n      File \"<doctest __main__.example_50[4]>\", line 1, in <module> \n        isinstance(B.maple()[Integer(1)], float)###line 1125: \n    sage: isinstance(B.maple()[1], float) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/tests/b enchmark.py\", \nline 1129, in maple \n        n = maple(self.__n) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 965, in __call__ \n        return self._coerce_from_special_method(x) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 989, in _coerce_from_special_method \n        return (x.__getattribute__(s))(self) \n      File \"sage_object.pyx\", line 333, in \nsage.structure.sage_object.SageObject._maple_ \n(sage/structure/sage_object.c:3483) \n      File \"sage_object.pyx\", line 246, in \nsage.structure.sage_object.SageObject._interface_ \n(sage/structure/sage_object.c:2184) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 963, in __call__ \n        return cls(self, x, name=name) \n      File \"/home/jec/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfa ces/expect.py\", \nline 1261, in __init__ \n        raise TypeError, x \n    TypeError: Unable to start maple because the command 'maple -t' failed. \n    In order to use the Maple interface you need to have Maple installed \n    and have a script in your PATH called \"maple\" that runs the \n    command-line version of Maple.  Alternatively, you could use a remote \n    connection to a server running Maple; for hints, type \n        print maple._install_hints_ssh() \n      (1) You might have to buy Maple (http://webstore.maplesoft.com/). \n      (2) * LINUX: The maple script comes standard with your Maple install. \n          * APPLE OS X: \n              (a) create a file called maple (in your PATH), with the \nfollowing contents: \n                 #!/bin/sh \n/Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@ \n              (b) Save the file. \n              (c) Make the file executable. \n                    chmod +x maple \n          * WINDOWS: \n            You must install Maple-for-Linux into the VMware machine \n(sorry, that's \n            the only way at present). \n********************************************************************** \n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4025\n\n",
     "created_at": "2008-08-31T22:43:27Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004025.json:
     "title": "Sage 3.1.2.alpha3: benchmark.py runs Maple tests that should be optional",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4025",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -168,15 +168,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4025
 
 ---
 
-archive/issue_comments_029026.json:
+archive/issue_comments_028968.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-08-31T22:43:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-29026",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-28968",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -186,15 +186,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_029027.json:
+archive/issue_comments_028969.json:
 ```json
 {
     "body": "Patch is up. Please review.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T01:36:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-29027",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-28969",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -208,15 +208,15 @@ Michael
 
 ---
 
-archive/issue_comments_029028.json:
+archive/issue_comments_028970.json:
 ```json
 {
     "body": "Attachment [trac_4025.patch](tarball://root/attachments/some-uuid/ticket4025/trac_4025.patch) by @mwhansen created at 2008-09-01 01:42:20",
     "created_at": "2008-09-01T01:42:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-29028",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-28970",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -226,15 +226,15 @@ Attachment [trac_4025.patch](tarball://root/attachments/some-uuid/ticket4025/tra
 
 ---
 
-archive/issue_comments_029029.json:
+archive/issue_comments_028971.json:
 ```json
 {
     "body": "This did better (the unpatched sage failed 5 tests in benchmark) but still failed for me on amd64, hardy heron:\n\n\n```\n\nwdj@hera:~/sagefiles/sage-3.1.2.alpha3$ ./sage -t  devel/sage/sage/tests/benchmark.py\nsage -t  devel/sage/sage/tests/benchmark.py                 **********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.1.2.alpha3/tmp/benchmark.py\", line 332:\n    sage: isinstance(B.maple()[1], float)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-3.1.2.alpha3/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_14[4]>\", line 1, in <module>\n        isinstance(B.maple()[Integer(1)], float)###line 332:\n    sage: isinstance(B.maple()[1], float)\n      File \"/home/wdj/sagefiles/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/tests/benchmark.py\", line 337, in maple\n        z = maple(str(sum(R.gens())))\n      File \"/home/wdj/sagefiles/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 963, in __call__\n        return cls(self, x, name=name)\n      File \"/home/wdj/sagefiles/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1261, in __init__\n        raise TypeError, x\n    TypeError: Unable to start maple because the command 'maple -t' failed.\n\n\n    In order to use the Maple interface you need to have Maple installed\n    and have a script in your PATH called \"maple\" that runs the\n    command-line version of Maple.  Alternatively, you could use a remote\n    connection to a server running Maple; for hints, type\n        print maple._install_hints_ssh()\n\n      (1) You might have to buy Maple (http://webstore.maplesoft.com/).\n\n      (2) * LINUX: The maple script comes standard with your Maple install.\n\n          * APPLE OS X:\n              (a) create a file called maple (in your PATH), with the following contents:\n                 #!/bin/sh\n                 /Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@\n              (b) Save the file.\n              (c) Make the file executable.\n                    chmod +x maple\n\n          * WINDOWS:\n            You must install Maple-for-Linux into the VMware machine (sorry, that's\n            the only way at present).\n\n**********************************************************************\nFile \"/home/wdj/sagefiles/sage-3.1.2.alpha3/tmp/benchmark.py\", line 429:\n    sage: isinstance(B.maple()[1], float)\nException raised:\n    Traceback (most recent call last):\n      File \"/home/wdj/sagefiles/sage-3.1.2.alpha3/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_18[4]>\", line 1, in <module>\n        isinstance(B.maple()[Integer(1)], float)###line 429:\n    sage: isinstance(B.maple()[1], float)\n      File \"/home/wdj/sagefiles/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/tests/benchmark.py\", line 435, in maple\n        z0 = maple(str(sum(R.gens()[:k])))\n      File \"/home/wdj/sagefiles/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 963, in __call__\n        return cls(self, x, name=name)\n      File \"/home/wdj/sagefiles/sage-3.1.2.alpha3/local/lib/python2.5/site-packages/sage/interfaces/expect.py\", line 1261, in __init__\n        raise TypeError, x\n    TypeError: Unable to start maple because the command 'maple -t' failed.\n\n\n    In order to use the Maple interface you need to have Maple installed\n    and have a script in your PATH called \"maple\" that runs the\n    command-line version of Maple.  Alternatively, you could use a remote\n    connection to a server running Maple; for hints, type\n        print maple._install_hints_ssh()\n\n      (1) You might have to buy Maple (http://webstore.maplesoft.com/).\n\n      (2) * LINUX: The maple script comes standard with your Maple install.\n\n          * APPLE OS X:\n              (a) create a file called maple (in your PATH), with the following contents:\n                 #!/bin/sh\n                 /Library/Frameworks/Maple.framework/Versions/Current/bin/maple $@\n              (b) Save the file.\n              (c) Make the file executable.\n                    chmod +x maple\n\n          * WINDOWS:\n            You must install Maple-for-Linux into the VMware machine (sorry, that's\n            the only way at present).\n\n**********************************************************************\n2 items had failures:\n   1 of   5 in __main__.example_14\n   1 of   5 in __main__.example_18\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /home/wdj/sagefiles/sage-3.1.2.alpha3/tmp/.doctest_benchmark.py\n         [6.6 s]\nexit code: 1024\n\n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t  devel/sage/sage/tests/benchmark.py\nTotal time for all tests: 6.6 seconds\n```\n",
     "created_at": "2008-09-01T01:43:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-29029",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-28971",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -348,15 +348,15 @@ Total time for all tests: 6.6 seconds
 
 ---
 
-archive/issue_comments_029030.json:
+archive/issue_comments_028972.json:
 ```json
 {
     "body": "Mike found one issue while testing the patch, so he has updated the patch with an updated version. \n\nDavid: can you try again? It seems that the new patch and you testing happened simultaneously :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-01T01:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-29030",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-28972",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -372,15 +372,15 @@ Michael
 
 ---
 
-archive/issue_comments_029031.json:
+archive/issue_comments_028973.json:
 ```json
 {
     "body": "This second patch worked perfectly.\n\n\n```\nwdj@hera:~/sagefiles/sage-3.1.2.alpha3$ ./sage -t  devel/sage/sage/tests/benchmark.py\nsage -t  devel/sage/sage/tests/benchmark.py\n         [6.8 s]\n\n----------------------------------------------------------------------\nAll tests passed!\nTotal time for all tests: 6.8 seconds\n\n```\n",
     "created_at": "2008-09-01T01:58:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-29031",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-28973",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -403,15 +403,15 @@ Total time for all tests: 6.8 seconds
 
 ---
 
-archive/issue_comments_029032.json:
+archive/issue_comments_028974.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha4",
     "created_at": "2008-09-01T02:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-29032",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-28974",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -421,15 +421,15 @@ Merged in Sage 3.1.2.alpha4
 
 ---
 
-archive/issue_comments_029033.json:
+archive/issue_comments_028975.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-01T02:19:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4025",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-29033",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4025#issuecomment-28975",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

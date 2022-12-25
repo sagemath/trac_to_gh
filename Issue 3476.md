@@ -6,15 +6,13 @@ archive/issues_003476.json:
     "body": "Assignee: failure\n\nKeywords: testing doctest timing timeit profile regression\n\nThere are several parts to this patch.\n\nThe first is an update to `sage.misc.sage_timeit` that generalizes the interface to return an object that prints itself as a timing string rather than the string itself.  The advantage is that the information does not need to be parsed from the string later.  This patch is a requirement of the later ones but is conceptually independent.\n\nThe second adds a file `ncadoctest.py` to **scripts** that is a slightly modified version of Python's `doctest.py` file.  It is easier to subclass the various classes with this version.\n\nThe third uses `ncadoctest.py` to subclass the doctest architecture and updates `sage-doctest` to use these updated classes.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3476\n\n",
     "created_at": "2008-06-19T21:53:02Z",
     "labels": [
-        "doctest coverage",
-        "major",
-        "enhancement"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] save timeit information with sage -t -timeit",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3476",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: failure
@@ -37,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3476
 
 ---
 
-archive/issue_comments_024492.json:
+archive/issue_comments_024443.json:
 ```json
 {
     "body": "Attachment [3476-ncalexan-sage-scripts-doctest-1.patch](tarball://root/attachments/some-uuid/ticket3476/3476-ncalexan-sage-scripts-doctest-1.patch) by @ncalexan created at 2008-06-19 21:54:31",
     "created_at": "2008-06-19T21:54:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24492",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24443",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -55,15 +53,15 @@ Attachment [3476-ncalexan-sage-scripts-doctest-1.patch](tarball://root/attachmen
 
 ---
 
-archive/issue_comments_024493.json:
+archive/issue_comments_024444.json:
 ```json
 {
     "body": "Attachment [3476-ncalexan-sage-timeit-1.patch](tarball://root/attachments/some-uuid/ticket3476/3476-ncalexan-sage-timeit-1.patch) by @ncalexan created at 2008-06-19 21:56:06\n\nThe attachments came in the wrong order -- the one with `sage-scripts` applies to sage/local/bin.",
     "created_at": "2008-06-19T21:56:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24493",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24444",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -75,15 +73,15 @@ The attachments came in the wrong order -- the one with `sage-scripts` applies t
 
 ---
 
-archive/issue_comments_024494.json:
+archive/issue_comments_024445.json:
 ```json
 {
     "body": "Attachment [diff-python-doctest-to-ncadoctest](tarball://root/attachments/some-uuid/ticket3476/diff-python-doctest-to-ncadoctest) by @ncalexan created at 2008-06-19 22:18:26\n\n`diff-python-doctest-to-ncadoctest` records the changes from upstream Python `doctest.py` to `ncadoctest.py` for future reference.",
     "created_at": "2008-06-19T22:18:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24494",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24445",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -95,15 +93,15 @@ Attachment [diff-python-doctest-to-ncadoctest](tarball://root/attachments/some-u
 
 ---
 
-archive/issue_comments_024495.json:
+archive/issue_comments_024446.json:
 ```json
 {
     "body": "Changing keywords from \"testing doctest timing timeit profile regression\" to \"testing doctest timing timeit profile regression, editor_mabshoff\".",
     "created_at": "2008-07-06T10:56:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24495",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24446",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -113,15 +111,15 @@ Changing keywords from "testing doctest timing timeit profile regression" to "te
 
 ---
 
-archive/issue_comments_024496.json:
+archive/issue_comments_024447.json:
 ```json
 {
     "body": "Changing keywords from \"testing doctest timing timeit profile regression, editor_mabshoff\" to \"testing doctest timing timeit profile regression, editor_mabshoff, editor_gfurnish\".",
     "created_at": "2008-08-14T03:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24496",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24447",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -131,15 +129,15 @@ Changing keywords from "testing doctest timing timeit profile regression, editor
 
 ---
 
-archive/issue_comments_024497.json:
+archive/issue_comments_024448.json:
 ```json
 {
     "body": "This should be applied after #3982.",
     "created_at": "2008-08-28T23:34:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24497",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24448",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -149,15 +147,15 @@ This should be applied after #3982.
 
 ---
 
-archive/issue_comments_024498.json:
+archive/issue_comments_024449.json:
 ```json
 {
     "body": "Changing keywords from \"testing doctest timing timeit profile regression, editor_mabshoff, editor_gfurnish\" to \"testing doctest timing timeit profile regression, editor_mhansen\".",
     "created_at": "2008-08-28T23:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24498",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24449",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -167,15 +165,15 @@ Changing keywords from "testing doctest timing timeit profile regression, editor
 
 ---
 
-archive/issue_comments_024499.json:
+archive/issue_comments_024450.json:
 ```json
 {
     "body": "Since my one main concern at #3982 is taken care of, I think this can go in.",
     "created_at": "2008-09-04T03:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24499",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24450",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -185,15 +183,15 @@ Since my one main concern at #3982 is taken care of, I think this can go in.
 
 ---
 
-archive/issue_comments_024500.json:
+archive/issue_comments_024451.json:
 ```json
 {
     "body": "There is a reject apllying Nick's first patch:\n\n```\n--- sage-doctest\n+++ sage-doctest\n@@ -218,8 +241,8 @@ def extract_doc(file_name, module):\n             doc = doc_preparse(F[i:j+3])\n         except SyntaxError:\n             doc = F[i:j+3]\n-        if len(doc):\n-            doc = '\"\"\">>> set_random_seed(0L)\\n\\n' + doc[3:]\n+#         if len(doc):\n+#             doc = '\"\"\">>> print \"YYY\"; print random() # ; set_random_seed(0L)\\n\\n' + doc[3:]\n         s += \"\\tr\"+ doc + \"\\n\\n\"\n         F = F[j+3:]\n```\n\nI am attempting to merge this manually.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T23:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24500",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24451",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -224,15 +222,15 @@ Michael
 
 ---
 
-archive/issue_comments_024501.json:
+archive/issue_comments_024452.json:
 ```json
 {
     "body": "Ok, the reject seems to happen due to merging the warning patch into sage-doctest.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T23:43:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24501",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24452",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -246,15 +244,15 @@ Michael
 
 ---
 
-archive/issue_comments_024502.json:
+archive/issue_comments_024453.json:
 ```json
 {
     "body": "If I merge the patch without the troublesome hunk I see 4 doctests related to the random framework and timeit itself fail:\n\n```\n\tsage -t -long devel/sage/sage/misc/sage_timeit_class.pyx # 7 doctests failed\n\tsage -t -long devel/sage/sage/misc/sage_timeit.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/misc/prandom.py # 2 doctests failed\n\tsage -t -long devel/sage/sage/misc/randstate.pyx # 6 doctests failed\n```\n\n\nOh well, life sucks :)\n\nCheers,\n\nMichael",
     "created_at": "2008-09-05T00:06:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24502",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24453",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -278,15 +276,15 @@ Michael
 
 ---
 
-archive/issue_comments_024503.json:
+archive/issue_comments_024454.json:
 ```json
 {
     "body": "Attachment [trac_3476-scripts.patch](tarball://root/attachments/some-uuid/ticket3476/trac_3476-scripts.patch) by @mwhansen created at 2008-11-08 05:05:41",
     "created_at": "2008-11-08T05:05:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24503",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24454",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -296,15 +294,15 @@ Attachment [trac_3476-scripts.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_024504.json:
+archive/issue_comments_024455.json:
 ```json
 {
     "body": "I've added two updated patches which fix the issue.  The problem was that the 'timeit' in test.globs was set to \"False\" from the options in sage-doctest instead of being the actual timeit function from Sage.  Thus, you'd only hit the problem with doctests that used timeit.",
     "created_at": "2008-11-08T05:07:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24504",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24455",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -314,15 +312,15 @@ I've added two updated patches which fix the issue.  The problem was that the 't
 
 ---
 
-archive/issue_comments_024505.json:
+archive/issue_comments_024456.json:
 ```json
 {
     "body": "For \"sage -sdist\" to work we need to copy ncadoctest.py, sagedoctest.py in sage-make_devel_packages after \n\n```\n  cp -p $SAGE_ROOT/local/bin/SbuildHack.pm $SCRIPTS/\n```\n\nI will take care of this once the patch passes doctests.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-08T08:00:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24505",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24456",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -342,15 +340,15 @@ Michael
 
 ---
 
-archive/issue_comments_024506.json:
+archive/issue_comments_024457.json:
 ```json
 {
     "body": "Hi Mike,\n\nthere is one tiny easy to fix doctest issue left:\n\n```\nsage -t -long devel/sage/sage/misc/sage_timeit.py           \n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.2.rc0/devel/sage/sage/misc/sage_timeit.py\", line 48:\n    sage: sage_timeit(\"a = 2\\nb=131\\nfactor(a^b-1)\", globals(), number=10)\nExpected:\n    '10 loops, best of 3: ... per loop'\nGot:\n    10 loops, best of 3: 18.4 ms per loop\n**********************************************************************\n```\n\nI will fix this via a followup patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-08T17:22:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24506",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24457",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -380,15 +378,15 @@ Michael
 
 ---
 
-archive/issue_comments_024507.json:
+archive/issue_comments_024458.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-08T20:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24507",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24458",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -398,15 +396,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_024508.json:
+archive/issue_comments_024459.json:
 ```json
 {
     "body": "Merged in Sage 3.2.rc0",
     "created_at": "2008-11-08T20:11:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3476",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24508",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3476#issuecomment-24459",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

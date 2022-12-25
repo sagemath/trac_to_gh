@@ -6,15 +6,13 @@ archive/issues_000233.json:
     "body": "Assignee: somebody\n\nThis would be like the RealDoubleField in rings/real_double.pyx or like riungs/real_mpfr.pyx, except that the quad double library is a C++ library -- so actually this might be similar to the Givaro wrapper in rings/finite_field_givaro.*.  \n\nThe quaddouble library (and docs?) are available at \n\n    http://www.cs.berkeley.edu/~yozo/\n\nAlso, I made a SAGE package, which you get by doing\n    sage -i quaddouble-2.1.213.1.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/233\n\n",
     "created_at": "2007-01-30T19:08:51Z",
     "labels": [
-        "basic arithmetic",
-        "major",
-        "enhancement"
+        "component: basic arithmetic"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.3",
     "title": "Create QDRF -- quad double real field",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/233",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -36,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/233
 
 ---
 
-archive/issue_comments_001031.json:
+archive/issue_comments_001028.json:
 ```json
 {
     "body": "Changing assignee from somebody to didier deshommes.",
     "created_at": "2007-02-04T04:11:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1031",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1028",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -54,15 +52,15 @@ Changing assignee from somebody to didier deshommes.
 
 ---
 
-archive/issue_comments_001032.json:
+archive/issue_comments_001029.json:
 ```json
 {
     "body": "Hello,\n\nI assume this has been done, due to the fact that we have\n\n```\n-rw-rw-r--  1 mabshoff mabshoff 436943 Aug 22 09:22 real_rqdf.cpp\n-rw-r--r--  1 mabshoff mabshoff   3592 Jun 30 09:09 real_rqdf.pxd\n-rw-r--r--  1 mabshoff mabshoff  49291 Aug 18 06:41 real_rqdf.pyx\n```\n\nin sage-2.8.2.rc3/devel/sage/sage/rings.\n\nFeel free to correct me.\n\nCheers,\n\nMichael",
     "created_at": "2007-08-22T20:30:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1032",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1029",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -88,15 +86,15 @@ Michael
 
 ---
 
-archive/issue_comments_001033.json:
+archive/issue_comments_001030.json:
 ```json
 {
     "body": "Yep, I think this one can be closed:\n\nsage: RQDF(pi)\n3.141592653589793238462643383279502884197169399375105820974944590",
     "created_at": "2007-08-22T22:46:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1033",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1030",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -109,15 +107,15 @@ sage: RQDF(pi)
 
 ---
 
-archive/issue_comments_001034.json:
+archive/issue_comments_001031.json:
 ```json
 {
     "body": "closed, thanks to bradshaw and deshomme.",
     "created_at": "2007-08-23T05:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1034",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1031",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -127,15 +125,15 @@ closed, thanks to bradshaw and deshomme.
 
 ---
 
-archive/issue_comments_001035.json:
+archive/issue_comments_001032.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-23T05:47:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/233",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1035",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/233#issuecomment-1032",
+    "user": "https://github.com/williamstein"
 }
 ```
 

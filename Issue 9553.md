@@ -6,7 +6,7 @@ archive/issues_009553.json:
     "body": "Assignee: @williamstein\n\nWhen doing \"sage -ba\" from the shell, one gets a prompt:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n Do you want to proceed? [y/n]\n```\n\n\nSince this waits forever for user input, it is harder to use in non-interactive scripts.  I propose to change the prompt and add a timer such that \"sage -ba\" continues anyway when nothing has been typed for 30 seconds or so.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9553\n\n",
     "created_at": "2010-07-20T08:44:27Z",
     "labels": [
-        "user interface",
+        "component: user interface",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009553.json:
     "title": "sage -ba (build all) waits for input, making it harder to use in scripts",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9553",
-    "user": "@jdemeyer"
+    "user": "https://github.com/jdemeyer"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9553
 
 ---
 
-archive/issue_comments_092076.json:
+archive/issue_comments_091922.json:
 ```json
 {
     "body": "While looking at this bug, I discovered the -ba-force option, which is exactly what I was looking for.  So I propose a small patch to change the prompt to:\n\n```\n *** WARNING ***\n You are about to rebuild the entire Sage library.\n This will take a significant amount of time.\n (use -ba-force instead of -ba to skip this prompt.)\n Do you want to proceed? [y/n]\n```\n",
     "created_at": "2010-07-23T11:09:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92076",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91922",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -66,15 +66,15 @@ While looking at this bug, I discovered the -ba-force option, which is exactly w
 
 ---
 
-archive/issue_comments_092077.json:
+archive/issue_comments_091923.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-23T11:12:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92077",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91923",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -84,15 +84,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_092078.json:
+archive/issue_comments_091924.json:
 ```json
 {
     "body": "Attachment [9553.patch](tarball://root/attachments/some-uuid/ticket9553/9553.patch) by @jdemeyer created at 2010-07-23 11:13:46\n\nApply this to the local/bin branch",
     "created_at": "2010-07-23T11:13:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92078",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91924",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -104,15 +104,15 @@ Apply this to the local/bin branch
 
 ---
 
-archive/issue_comments_092079.json:
+archive/issue_comments_091925.json:
 ```json
 {
     "body": "Excellent idea -- I hate interactive prompts, especially ones that it isn't obvious how to get around. That said, I think this line\n\n```\necho \" (use -ba-force instead of -ba to skip this prompt.)\" \n```\n\nshould be\n\n```\necho \" (Use -ba-force instead of -ba to skip this prompt.)\" \n```\n",
     "created_at": "2010-07-23T20:17:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92079",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91925",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -133,15 +133,15 @@ echo " (Use -ba-force instead of -ba to skip this prompt.)"
 
 ---
 
-archive/issue_comments_092080.json:
+archive/issue_comments_091926.json:
 ```json
 {
     "body": "Replying to [comment:3 was]:\n> Excellent idea -- I hate interactive prompts, especially ones that it isn't obvious how to get around. That said, I think this line\n\nAs far as I'm concerned, we could even complete remove the prompt and make -ba act like -ba-force.  I never quite understood the point of that prompt anyway.",
     "created_at": "2010-07-24T00:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92080",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91926",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -154,15 +154,15 @@ As far as I'm concerned, we could even complete remove the prompt and make -ba a
 
 ---
 
-archive/issue_comments_092081.json:
+archive/issue_comments_091927.json:
 ```json
 {
     "body": "Attachment [trac_9553-use_the_baforce_message.patch](tarball://root/attachments/some-uuid/ticket9553/trac_9553-use_the_baforce_message.patch) by @qed777 created at 2010-08-19 21:49:34\n\n\"use\" --> \"Use\".  scripts repository.  Apply only this patch.",
     "created_at": "2010-08-19T21:49:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92081",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91927",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -174,15 +174,15 @@ Attachment [trac_9553-use_the_baforce_message.patch](tarball://root/attachments/
 
 ---
 
-archive/issue_comments_092082.json:
+archive/issue_comments_091928.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-08-19T21:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92082",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91928",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -192,15 +192,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_092083.json:
+archive/issue_comments_091929.json:
 ```json
 {
     "body": "I've attached an updated patch with William's suggested change.\n\n## To the release manager\nApply only [attachment:trac_9553-use_the_baforce_message.patch], to the scripts repository.",
     "created_at": "2010-08-19T21:52:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92083",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91929",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -213,15 +213,15 @@ Apply only [attachment:trac_9553-use_the_baforce_message.patch], to the scripts 
 
 ---
 
-archive/issue_comments_092084.json:
+archive/issue_comments_091930.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-08-31T03:20:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92084",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91930",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -231,15 +231,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_092085.json:
+archive/issue_comments_091931.json:
 ```json
 {
     "body": "What a ticket! I'm not sure if two reviewers are enough to merge this... :D\n\nSince despite its severity it now is, perhaps one should change the title and the description to reflect what the patch really does. ;-)",
     "created_at": "2010-08-31T05:11:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92085",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91931",
+    "user": "https://github.com/nexttime"
 }
 ```
 
@@ -251,15 +251,15 @@ Since despite its severity it now is, perhaps one should change the title and th
 
 ---
 
-archive/issue_comments_092086.json:
+archive/issue_comments_091932.json:
 ```json
 {
     "body": "Thanks!",
     "created_at": "2010-08-31T07:04:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-92086",
-    "user": "@nexttime"
+    "url": "https://github.com/sagemath/sagetest/issues/9553#issuecomment-91932",
+    "user": "https://github.com/nexttime"
 }
 ```
 

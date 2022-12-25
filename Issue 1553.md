@@ -6,15 +6,14 @@ archive/issues_001553.json:
     "body": "Assignee: @williamstein\n\nCC:  @burcin\n\nSee http://groups.google.com/group/sage-support/browse_thread/thread/cdf2ae8087d5637e?hl=en at  Dec 17, 8:37 am.\n\nIssue created by migration from https://trac.sagemath.org/ticket/1553\n\n",
     "created_at": "2007-12-17T15:00:38Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10",
     "title": "Investigate PolyBoRi on 64-bit RHEL5",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1553",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1553
 
 ---
 
-archive/issue_comments_009898.json:
+archive/issue_comments_009872.json:
 ```json
 {
     "body": "Hi Kiran,\n\n> I tried sage -upgrade on my 64-bit RHEL5 box (Opteron 246), and the\n> upgrade dies pretty definitively at PolyBoRi. As far as I can tell, on\n> the first file it is throwing lots of compile errors of the form\n\n> /tmp/cciylcHI.s:17647: Error: suffix or operands invalid for `push'\n> /tmp/cciylcHI.s:17697: Error: suffix or operands invalid for `pop'\n\n> I'm guessing/hoping this is probably some easy fix on my end. Any\n> suggestions?\n\nThat is a bashism that was supposedly fixed by Burcin. It might have\nsnuck back into the latest spkg. I will investigate this. rlm created\n#1553 for this.\n\n> Kiran\n\nCheers,\n\nMichael",
     "created_at": "2007-12-17T16:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9898",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9872",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Michael
 
 ---
 
-archive/issue_comments_009899.json:
+archive/issue_comments_009873.json:
 ```json
 {
     "body": "The `spkg-install` in `polybori-0.1-r5.spkg` does not contain `popd`, or `pushd`. The original error my changes fixed was:\n\n\n```\n./spkg-install: 69: pushd: not found\n```\n\n\nThe file names on the error message (`/tmp/cciylcHI.s`) indicates that this is a temporary file created during the build, not the `spkg-install` script.\n\nMore information from the build log would be helpful.",
     "created_at": "2007-12-27T11:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9899",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9873",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -97,15 +96,15 @@ More information from the build log would be helpful.
 
 ---
 
-archive/issue_comments_009900.json:
+archive/issue_comments_009874.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-27T11:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9900",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9874",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -115,15 +114,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_009901.json:
+archive/issue_comments_009875.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @burcin.",
     "created_at": "2007-12-27T11:09:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9901",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9875",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -133,15 +132,15 @@ Changing assignee from @williamstein to @burcin.
 
 ---
 
-archive/issue_comments_009902.json:
+archive/issue_comments_009876.json:
 ```json
 {
     "body": "The problem seems to be that my machine has an old version of gcc lying around (back when it was only running a 32-bit kernel) and SCons has set up its default path so that it hits /usr/local/bin (where the old gcc is) before /usr/bin (where the new one is). \n\nIt seems to fix things to change the line:\n\n```\nenv=Environment(options=opts,tools = tools, toolpath = '.')\n```\n\nin the SConstruct file to:\n\n```\nenv=Environment(ENV = {'PATH': os.environ['PATH']}, options=opts,tools = tools, toolpath = '.')\n```\n\nso that the local PATH gets imported. (This turns out to have been the same issue I had when we first switched to SCons, although I didn't recognize it as such at first.)",
     "created_at": "2008-01-02T19:54:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9902",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9876",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -165,15 +164,15 @@ so that the local PATH gets imported. (This turns out to have been the same issu
 
 ---
 
-archive/issue_comments_009903.json:
+archive/issue_comments_009877.json:
 ```json
 {
     "body": "This issue will be fixed along with #1663.",
     "created_at": "2008-01-03T15:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9903",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9877",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -183,15 +182,15 @@ This issue will be fixed along with #1663.
 
 ---
 
-archive/issue_comments_009904.json:
+archive/issue_comments_009878.json:
 ```json
 {
     "body": "Replying to [comment:6 comment 6]:\n> This issue will be fixed along with #1663.\n                                      \nThis should have been #1656, sorry for the noise.",
     "created_at": "2008-01-03T15:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9904",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9878",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -204,15 +203,15 @@ This should have been #1656, sorry for the noise.
 
 ---
 
-archive/issue_comments_009905.json:
+archive/issue_comments_009879.json:
 ```json
 {
     "body": "Some more info from Kiran:\n\n```\nf I describe my setup, it might seem less uncommon than you might\nhave previously thought.\n\nMine is a 64-bit box on a network consisting mostly of 32-bit\nmachines. On my machine, /usr/bin is locally mounted, and there is a\nlocal 64-bit gcc there.\n\nBut /usr/local is NFS mounted, and there is a 32-bit gcc in /usr/local/\nbin for the benefit of the benighted masses. Persuading my sysadmin to\ninstead install a local 32-bit gcc on every single 32-bit machine in\nthe department is not going to happen.\n\nSo I have to switch rather than fight. My $PATH has /usr/bin ahead of /\nusr/local/bin, so ordinarily (and even in SCons if I force it to\nimport my PATH environment variable) this causes no problems.\n\nBut SCons defaults not to importing any environment variables, which\nmeans it has to come up with its own guess for the path. And what it\ncomes up with on my box is:\n   /usr/local/bin:/opt/bin:/bin:/usr/bin\nI have no idea why. There isn't even a directory /opt/bin on my\nsystem! This might be some sort of hard-coded default (either in SCons\nor in the RHEL configs somewhere).\n\nAnyway, I'm able to manually patch the relevant SConstruct files to\nget around this, so it's not a high priority for me to get this fixed.\nBut I suspect that sooner or later, someone else will run into this if\nnothing is done about it. \n```\n\nAs it turns out SCons itself is at fault: `local/lib/scons-0.97/SCons/Platform/posix.py`:\n\n```\n    if not env.has_key('ENV'):\n        env['ENV']        = {}\n    env['ENV']['PATH']    = '/usr/local/bin:/opt/bin:/bin:/usr/bin'\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-01-04T17:02:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9905",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9879",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -266,15 +265,15 @@ Michael
 
 ---
 
-archive/issue_comments_009906.json:
+archive/issue_comments_009880.json:
 ```json
 {
     "body": "The new spkg at \n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-2.10/alpha0/polybori-0.1-r6.spkg\n\nfixes the issue as Kiran suggested.\n\nCheers,\n\nMichael",
     "created_at": "2008-01-08T01:54:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9906",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9880",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -292,15 +291,15 @@ Michael
 
 ---
 
-archive/issue_comments_009907.json:
+archive/issue_comments_009881.json:
 ```json
 {
     "body": "Merged in 2.10.alpha0.",
     "created_at": "2008-01-08T01:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9907",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9881",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -310,15 +309,15 @@ Merged in 2.10.alpha0.
 
 ---
 
-archive/issue_comments_009908.json:
+archive/issue_comments_009882.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-08T01:55:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1553",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9908",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1553#issuecomment-9882",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

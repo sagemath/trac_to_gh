@@ -6,15 +6,14 @@ archive/issues_003952.json:
     "body": "Assignee: @williamstein\n\nCurrently we have an error when calling these functions with constants.  Using fast_float will take care of this and presumably make the functions *way* faster to boot.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3952\n\n",
     "created_at": "2008-08-25T21:58:09Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "make plot() and parametric_plot() use fast_float on their functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3952",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3952
 
 ---
 
-archive/issue_comments_028369.json:
+archive/issue_comments_028311.json:
 ```json
 {
     "body": "See #2410 for an example of the error.",
     "created_at": "2008-08-25T21:58:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28369",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28311",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -47,15 +46,15 @@ See #2410 for an example of the error.
 
 ---
 
-archive/issue_comments_028370.json:
+archive/issue_comments_028312.json:
 ```json
 {
     "body": "This fixes #2409 and cuts the doctest time for plot.py in half.",
     "created_at": "2008-08-26T02:01:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28370",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28312",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ This fixes #2409 and cuts the doctest time for plot.py in half.
 
 ---
 
-archive/issue_comments_028371.json:
+archive/issue_comments_028313.json:
 ```json
 {
     "body": "Note that this depends on #2410 and #3853.",
     "created_at": "2008-08-26T02:09:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28371",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28313",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +82,15 @@ Note that this depends on #2410 and #3853.
 
 ---
 
-archive/issue_comments_028372.json:
+archive/issue_comments_028314.json:
 ```json
 {
     "body": "I've read through this patch, and it looks good to me.  Positive review, assuming the doctests pass (I didn't run the doctests).",
     "created_at": "2008-08-26T04:00:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28372",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28314",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -101,15 +100,15 @@ I've read through this patch, and it looks good to me.  Positive review, assumin
 
 ---
 
-archive/issue_comments_028373.json:
+archive/issue_comments_028315.json:
 ```json
 {
     "body": "With the patch applied I am seeing one doctest failure:\n\n```\nsage -t -long devel/sage/sage/calculus/desolvers.py\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/tmp/desolvers.py\", line 194:\n    sage: P2 = parametric_plot((solnx,solny),0,1)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/doctest.py\", line 1228, in __run\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_4[17]>\", line 1, in <module>\n        P2 = parametric_plot((solnx,solny),Integer(0),Integer(1))###line 194:\n    sage: P2 = parametric_plot((solnx,solny),0,1)\n      File \"/scratch/mabshoff/release-cycle/sage-3.1.2.alpha1/local/lib/python2.5/site-packages/sage/plot/plot.py\", line 3735, in parametric_plot\n        raise ValueError, \"there must be exactly one free variable in funcs\"\n    ValueError: there must be exactly one free variable in funcs \n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-08-26T04:19:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28373",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28315",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -142,15 +141,15 @@ Michael
 
 ---
 
-archive/issue_comments_028374.json:
+archive/issue_comments_028316.json:
 ```json
 {
     "body": "Until the doctest is fixed this needs some work :(\n\nCheers,\n\nMichael",
     "created_at": "2008-08-26T06:48:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28374",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28316",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -164,15 +163,15 @@ Michael
 
 ---
 
-archive/issue_comments_028375.json:
+archive/issue_comments_028317.json:
 ```json
 {
     "body": "Attachment [trac_3952.patch](tarball://root/attachments/some-uuid/ticket3952/trac_3952.patch) by @mwhansen created at 2008-08-26 21:26:57\n\nI've attached a new patch which fixes the issue.",
     "created_at": "2008-08-26T21:26:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28375",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28317",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -184,15 +183,15 @@ I've attached a new patch which fixes the issue.
 
 ---
 
-archive/issue_comments_028376.json:
+archive/issue_comments_028318.json:
 ```json
 {
     "body": "Positive review on the patch. The affected doctest now passes and Mike did explain to me in IRC what was fixed:\n\n```\n[2:41pm] mabshoff: mhansen: #3592 - what is changed?\n[2:41pm] mabshoff: Did you fix the doctest or did you do more?\n[2:42pm] mhansen: Oh, I changed a \"!= 1\" to a \" > 1\" in the new code (which is what is should have been).\n[2:42pm] mabshoff: ok\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-08-26T21:48:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28376",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28318",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -214,15 +213,15 @@ Michael
 
 ---
 
-archive/issue_comments_028377.json:
+archive/issue_comments_028319.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha1",
     "created_at": "2008-08-26T22:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28377",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28319",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -232,15 +231,15 @@ Merged in Sage 3.1.2.alpha1
 
 ---
 
-archive/issue_comments_028378.json:
+archive/issue_comments_028320.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-26T22:16:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3952",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28378",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3952#issuecomment-28320",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

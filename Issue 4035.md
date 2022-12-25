@@ -6,15 +6,14 @@ archive/issues_004035.json:
     "body": "Assignee: @malb\n\nCC:  @mwhansen\n\nSee attached patch.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4035\n\n",
     "created_at": "2008-09-01T09:55:46Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] fix optional doctests for multivariate polynomials",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4035",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4035
 
 ---
 
-archive/issue_comments_029107.json:
+archive/issue_comments_029049.json:
 ```json
 {
     "body": "Attachment [m2_optional_doctests.patch](tarball://root/attachments/some-uuid/ticket4035/m2_optional_doctests.patch) by @malb created at 2008-09-01 09:56:22\n\nGary, can you review this (I'm asking you since it involves M2)",
     "created_at": "2008-09-01T09:56:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29107",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29049",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -51,15 +50,15 @@ Gary, can you review this (I'm asking you since it involves M2)
 
 ---
 
-archive/issue_comments_029108.json:
+archive/issue_comments_029050.json:
 ```json
 {
     "body": "I assume this ticket depends on the series of changes you made starting with the number field support? As is the patch does not apply.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-04T00:22:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29108",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29050",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -73,15 +72,15 @@ Michael
 
 ---
 
-archive/issue_comments_029109.json:
+archive/issue_comments_029051.json:
 ```json
 {
     "body": "yeah, that could be.",
     "created_at": "2008-09-04T01:17:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29109",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29051",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -91,15 +90,15 @@ yeah, that could be.
 
 ---
 
-archive/issue_comments_029110.json:
+archive/issue_comments_029052.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-09-20T15:47:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29110",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29052",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -109,15 +108,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_029111.json:
+archive/issue_comments_029053.json:
 ```json
 {
     "body": "Unfortunately this patch has bitrotted:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.2.alpha1/devel/sage$ patch -p1 < trac_4035_m2_optional_doctests.patch \npatching file sage/rings/polynomial/multi_polynomial.pyx\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 60.\nHunk #2 succeeded at 1659 (offset 58 lines).\nHunk #3 succeeded at 1883 (offset 64 lines).\nHunk #4 FAILED at 2031.\n2 out of 4 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\npatching file sage/rings/polynomial/multi_polynomial_ring.py\n```\n\n\nMike: Once it is rebased can you review it?\n\nCheers,\n\nMichael",
     "created_at": "2008-10-26T21:39:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29111",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29053",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -146,15 +145,15 @@ Michael
 
 ---
 
-archive/issue_comments_029112.json:
+archive/issue_comments_029054.json:
 ```json
 {
     "body": "Fixed via the patch at #4420.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-02T16:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29112",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29054",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -168,15 +167,15 @@ Michael
 
 ---
 
-archive/issue_comments_029113.json:
+archive/issue_comments_029055.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-02T16:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4035",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29113",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4035#issuecomment-29055",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

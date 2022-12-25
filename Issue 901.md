@@ -6,7 +6,7 @@ archive/issues_000901.json:
     "body": "Assignee: @wdjoyner\n\nTo view a hg patch bundle as a text file, you can use the\nhg_sage.inspect('patchname.hg') command. This was added to \n\nhttp://www.sagemath.org/doc/html/prog/node72.html\n\nThe patch is at\nhttp://sage.math.washington.edu/home/wdj/patches/prog.tex.hg\n\nThough \"inspect\" seems to work on \"source code\" patches, it does not \nseem to work on doc patches.\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/901\n\n",
     "created_at": "2007-10-15T01:06:27Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000901.json:
     "title": "minor addition to prog.tex",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/901",
-    "user": "@wdjoyner"
+    "user": "https://github.com/wdjoyner"
 }
 ```
 Assignee: @wdjoyner
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/901
 
 ---
 
-archive/issue_comments_005535.json:
+archive/issue_comments_005517.json:
 ```json
 {
     "body": "To view a doc patch, you can use `hg_doc.inspect('pathname.hg')`.",
     "created_at": "2007-10-15T02:36:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5535",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5517",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -59,15 +59,15 @@ To view a doc patch, you can use `hg_doc.inspect('pathname.hg')`.
 
 ---
 
-archive/issue_comments_005536.json:
+archive/issue_comments_005518.json:
 ```json
 {
     "body": "This patch is against hg_sage again.  So it doesn't have any documentation in it, as claimed.",
     "created_at": "2007-10-21T00:45:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5536",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5518",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,15 +77,15 @@ This patch is against hg_sage again.  So it doesn't have any documentation in it
 
 ---
 
-archive/issue_comments_005537.json:
+archive/issue_comments_005519.json:
 ```json
 {
     "body": "I think the new version of this patch \nhttp://sage.math.washington.edu/home/wdj/patches/prog.tex.hg\nis the right one.",
     "created_at": "2007-10-21T00:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5537",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5519",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -97,15 +97,15 @@ is the right one.
 
 ---
 
-archive/issue_comments_005538.json:
+archive/issue_comments_005520.json:
 ```json
 {
     "body": "same as #899 -- no changes found.",
     "created_at": "2007-10-21T01:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5538",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5520",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -115,15 +115,15 @@ same as #899 -- no changes found.
 
 ---
 
-archive/issue_comments_005539.json:
+archive/issue_comments_005521.json:
 ```json
 {
     "body": "Possibly they are both in the patch\nhttp://sage.math.washington.edu/home/wdj/patches/inst-prog-2007-10-20.hg",
     "created_at": "2007-10-21T02:56:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5539",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5521",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -134,15 +134,15 @@ http://sage.math.washington.edu/home/wdj/patches/inst-prog-2007-10-20.hg
 
 ---
 
-archive/issue_comments_005540.json:
+archive/issue_comments_005522.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-27T04:55:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/901",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5540",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/901#issuecomment-5522",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

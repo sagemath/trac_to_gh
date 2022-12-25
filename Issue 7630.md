@@ -6,15 +6,14 @@ archive/issues_007630.json:
     "body": "Assignee: @williamstein\n\nRight now it says in the Settings page \"Require e-mail for account registration\".  This implies to me that an account will not be activated until a valid email address is added.  Furthermore, when this is checked, a new account screen says: \"Your email address is required for account confirmation and recovery. You will be emailed a confirmation link right after you successfully sign up.\"  This definitely implies that an account will not be activated until the user clicks on a link.\n\nHowever, the account is activated, whether or not the user clicks on the link in the email.\n\nIf we're going through the trouble of making a link and confirming email addresses, it makes sense to follow the well-established practice of not letting the user log in until they confirm their email address.\n\nIt seems that this could be a very easy check in the login stage, too.  Just check to see if \"require email address\" is set, and if so, check to make sure the user's email address is confirmed.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7630\n\n",
     "created_at": "2009-12-08T20:04:21Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Require email confirmation before account activation",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7630",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7630
 
 ---
 
-archive/issue_comments_065191.json:
+archive/issue_comments_065075.json:
 ```json
 {
     "body": "Patch up, please review. Sorry for the whitespace noise in the patch, I have nuke-trailing-whitespace on in emacs.\n\nSeveral issues I noticed while working on this:\n\n* The confirmation tokens are not saved across sessions, so if a user signs up, then you quit the notebook and restart, then the user clicks on the confirmation URL, the server says it doesn't know about that confirmation token. This may or may not be something we want to fix.\n* We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc. Perhaps another column in the suspend/reset user account page, so that the admin can just click to consider the email confirmed, or to bypass email confirmation for that user. Or, we might have a \"resend confirmation email\" feature. Perhaps we should have both.",
     "created_at": "2010-02-08T12:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65191",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65075",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -60,15 +59,15 @@ Several issues I noticed while working on this:
 
 ---
 
-archive/issue_comments_065192.json:
+archive/issue_comments_065076.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-08T12:05:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65192",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65076",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -78,15 +77,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_065193.json:
+archive/issue_comments_065077.json:
 ```json
 {
     "body": "Replying to [comment:1 ddrake]:\n> Patch up, please review. Sorry for the whitespace noise in the patch, I have nuke-trailing-whitespace on in emacs.\n> \n\n...\n\n>   * We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc. \n\n\nI totally agree. IMHO this is not a good feature unless it can be turned off. I also am unclear how the email is to be sent out. \nInstall a mail server too? (a) This is not allowed where I work, except on certain machines. (b) If I am using Sage on a local lan set up for a specific computer lab then I am not interested in wasting class time with confirmation emails. In my opinion, there should be something like accounts_with_confirmation=True to implement this and accounts = True does not. If the only option to setting up accounts once this patch is applied is to require email confirmation then I think this patch \"needs work\".\n\nHopefully I am just completely misunderstanding the entire purpose of this ticket.",
     "created_at": "2010-02-08T12:26:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65193",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65077",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -108,15 +107,15 @@ Hopefully I am just completely misunderstanding the entire purpose of this ticke
 
 ---
 
-archive/issue_comments_065194.json:
+archive/issue_comments_065078.json:
 ```json
 {
     "body": "Replying to [comment:2 wdj]:\n\n> >   * We should have a way of letting the admin user bypass the email confirmation, since email can get lost, etc.  \n> \n> I totally agree. IMHO this is not a good feature unless it can be turned off. I also am unclear how the email is to be sent out.\n\nTwisted includes an SMTP server.\n\n (b) If I am using Sage on a local lan set up for a specific computer lab then I am not interested in wasting class time with confirmation emails. In my opinion, there should be something like accounts_with_confirmation=True to implement this and accounts = True does not.\n\nAs the admin user, go to Settings -> Notebook Settings -> Require email for account registration. You can tick the box to require it, or leave it unticked.\n\n> Hopefully I am just completely misunderstanding the entire purpose of this ticket.\n\nRight now, the notebook server has the option to require email confirmation before logging in -- but you can log in anyway, even before the email has been confirmed. That's the purpose of this ticket. No one will be forced to do anything with email registration / confirmation.",
     "created_at": "2010-02-08T13:16:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65194",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65078",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -140,15 +139,15 @@ Right now, the notebook server has the option to require email confirmation befo
 
 ---
 
-archive/issue_comments_065195.json:
+archive/issue_comments_065079.json:
 ```json
 {
     "body": "BTW, with this patch, if the admin user adds a user on the \"Manage Users\" page when \"require email\" is checked, that user cannot log in until his email is confirmed...and since there's no email associated to the user, it's spectacularly unlikely that the user will ever be able to login.\n\nAlso, I don't know how this will work with existing users who have never had their email addresses confirmed. For backwards compatibility, it would be nice if there was some kind of \"has_logged_in_at_least_once\" boolean that we could test; if the user has already logged in somehow, email confirmation gets bypassed.",
     "created_at": "2010-02-08T13:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65195",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65079",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -160,15 +159,15 @@ Also, I don't know how this will work with existing users who have never had the
 
 ---
 
-archive/issue_comments_065196.json:
+archive/issue_comments_065080.json:
 ```json
 {
     "body": "attachment:trac_7630-with-debugging.patch is, I think, a working patch. It is still full of print statements that I used while working on this, and doesn't have any updated docstrings yet. But I think it works. It's against 4.3.2 (sagenb 0.7.4). \n\nIn this setup, if the admin user adds a user, no email confirmation is ever required. Each regular user has a email_confirmation variable, which replaces the old email_confirmed boolean, and can be one of three states: not_required, pending, and confirmed. All users get not_required, except those that register themselves while email confirmation is turned on; they get 'pending'.\n\nThis patch is not ready for a \"real\" review yet, but please test and look over the code.",
     "created_at": "2010-02-24T03:51:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65196",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65080",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -182,15 +181,15 @@ This patch is not ready for a "real" review yet, but please test and look over t
 
 ---
 
-archive/issue_comments_065197.json:
+archive/issue_comments_065081.json:
 ```json
 {
     "body": "version 2 of patch, with lots of print statements",
     "created_at": "2010-02-24T07:54:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65197",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65081",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -200,15 +199,15 @@ version 2 of patch, with lots of print statements
 
 ---
 
-archive/issue_comments_065198.json:
+archive/issue_comments_065082.json:
 ```json
 {
     "body": "Attachment [trac_7630-with-debugging.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630-with-debugging.patch) by @dandrake created at 2010-02-24 07:59:33\n\nCurrent version should pass doctests if you comment out the print statement in `add_user` in notebook.py (line 509).",
     "created_at": "2010-02-24T07:59:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65198",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65082",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -220,15 +219,15 @@ Current version should pass doctests if you comment out the print statement in `
 
 ---
 
-archive/issue_comments_065199.json:
+archive/issue_comments_065083.json:
 ```json
 {
     "body": "In #8454, we are updating the docstring for `notebook()`, which uses an outdated call for `add_user`. Since this patch alters that function's parameters, we should also make sure to update the generic instructions for `notebook()` if necessary.",
     "created_at": "2010-03-06T08:08:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65199",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65083",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -238,15 +237,15 @@ In #8454, we are updating the docstring for `notebook()`, which uses an outdated
 
 ---
 
-archive/issue_comments_065200.json:
+archive/issue_comments_065084.json:
 ```json
 {
     "body": "Is this really \"needs review\"?  The last few comments seem to indicate that it is still \"needs work\".",
     "created_at": "2010-04-15T03:56:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65200",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65084",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -256,15 +255,15 @@ Is this really "needs review"?  The last few comments seem to indicate that it i
 
 ---
 
-archive/issue_comments_065201.json:
+archive/issue_comments_065085.json:
 ```json
 {
     "body": "Replying to [comment:8 jason]:\n> Is this really \"needs review\"?  The last few comments seem to indicate that it is still \"needs work\".\n\nWell, there's lots of print statements throughout the code, and I decided to leave those in for reviewing purposes. When I was working on this, I found it very hard to follow the execution path, so I put in lots of \"prints\" -- it seems like a reviewer would also appreciate the help in seeing what's happening.\n\nAfter the patch gets a good review, I can add a small remove-all-the-prints patch.\n\n(Although I would like to see the notebook print more information; some kind of verbose logging option would be really useful.)",
     "created_at": "2010-04-15T11:47:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65201",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65085",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -281,15 +280,15 @@ After the patch gets a good review, I can add a small remove-all-the-prints patc
 
 ---
 
-archive/issue_comments_065202.json:
+archive/issue_comments_065086.json:
 ```json
 {
     "body": "Replying to [comment:9 ddrake]:\n> Replying to [comment:8 jason]:\n> > Is this really \"needs review\"?  The last few comments seem to indicate that it is still \"needs work\".\n> \n> Well, there's lots of print statements throughout the code, and I decided to leave those in for reviewing purposes. When I was working on this, I found it very hard to follow the execution path, so I put in lots of \"prints\" -- it seems like a reviewer would also appreciate the help in seeing what's happening.\n> \n> After the patch gets a good review, I can add a small remove-all-the-prints patch.\n\nPlease make all the print statements conditional, e.g., write a function\n\n```\n   def log_devel(s):\n        if VERBOSE: print s\n```\n\nand call that function everywhere.    Then make a file-scope variable VERBOSE which is False in your patch.\nExplain here (and in a comment) that by setting it to True, the reviewer can enable devel logging.  This'll get\nused elsewhere too. \n\n -- William",
     "created_at": "2010-04-24T23:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65202",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65086",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -318,15 +317,15 @@ used elsewhere too.
 
 ---
 
-archive/issue_comments_065203.json:
+archive/issue_comments_065087.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-04-24T23:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65203",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65087",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -336,15 +335,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_065204.json:
+archive/issue_comments_065088.json:
 ```json
 {
     "body": "Attachment [trac_7630.patch](tarball://root/attachments/some-uuid/ticket7630/trac_7630.patch) by @dandrake created at 2010-04-26 07:41:26\n\nversion 3 of patch. Apply only this.",
     "created_at": "2010-04-26T07:41:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65204",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65088",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -356,15 +355,15 @@ version 3 of patch. Apply only this.
 
 ---
 
-archive/issue_comments_065205.json:
+archive/issue_comments_065089.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-04-26T07:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65205",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65089",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -374,15 +373,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_065206.json:
+archive/issue_comments_065090.json:
 ```json
 {
     "body": "Replying to [comment:10 was]:\n> Please make all the print statements conditional, e.g., write a function\n> {{{\n>    def log_devel(s):\n>         if VERBOSE: print s\n> }}}\n> and call that function everywhere.    Then make a file-scope variable VERBOSE which is False in your patch.\n> Explain here (and in a comment) that by setting it to True, the reviewer can enable devel logging.  This'll get\n> used elsewhere too. \n\nOkay, done. I've rebased the patch so it applies to sagenb 0.8.1 (see #8727).",
     "created_at": "2010-04-26T07:42:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65206",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65090",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -402,15 +401,15 @@ Okay, done. I've rebased the patch so it applies to sagenb 0.8.1 (see #8727).
 
 ---
 
-archive/issue_comments_065207.json:
+archive/issue_comments_065091.json:
 ```json
 {
     "body": "Please fill in your real name as Author.",
     "created_at": "2012-07-27T20:42:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65207",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65091",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -420,15 +419,15 @@ Please fill in your real name as Author.
 
 ---
 
-archive/issue_comments_065208.json:
+archive/issue_comments_065092.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-02-05T19:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65208",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65092",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -438,15 +437,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_065209.json:
+archive/issue_comments_065093.json:
 ```json
 {
     "body": "I think this should be closed since the notebook is now a separate project and in any case, there is work on a completely new frontend.",
     "created_at": "2013-02-05T19:33:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65209",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65093",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -456,15 +455,15 @@ I think this should be closed since the notebook is now a separate project and i
 
 ---
 
-archive/issue_comments_065210.json:
+archive/issue_comments_065094.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2013-02-08T13:23:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7630",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65210",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/7630#issuecomment-65094",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

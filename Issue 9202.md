@@ -6,15 +6,14 @@ archive/issues_009202.json:
     "body": "Assignee: tbd\n\nCC:  drkirkby @kcrisman\n\nThis spkg updates matplotlib to 0.99.3.  I've attached the patch as well (don't apply; it's just for reviewing purposes).\n\nThe new spkg is at http://sage.math.washington.edu/home/jason/matplotlib-0.99.3.spkg\n\nIssue created by migration from https://trac.sagemath.org/ticket/9202\n\n",
     "created_at": "2010-06-10T12:17:15Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "update matplotlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9202",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: tbd
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9202
 
 ---
 
-archive/issue_comments_086102.json:
+archive/issue_comments_085964.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-06-10T12:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86102",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85964",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_086103.json:
+archive/issue_comments_085965.json:
 ```json
 {
     "body": "Hmmm...trying to run something from matplotlib says:\n\n\n```\nTraceback (most recent call last):    q=ax.scatter(x,y)\n  File \"\", line 1, in <module>\n    \n  File \"/private/var/folders/2J/2JGMKXefHFWmTZ1Ln92Z4U+++TI/-Tmp-/tmp_3GqZ9/___code___.py\", line 3, in <module>\n    import matplotlib.pyplot as plt\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/pyplot.py\", line 6, in <module>\n    from matplotlib.figure import Figure, figaspect\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/figure.py\", line 18, in <module>\n    from axes import Axes, SubplotBase, subplot_class_factory\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/axes.py\", line 12, in <module>\n    import matplotlib.axis as maxis\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/axis.py\", line 10, in <module>\n    import matplotlib.font_manager as font_manager\n  File \"/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/font_manager.py\", line 52, in <module>\n    from matplotlib import ft2font\nImportError: dlopen(/Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/ft2font.so, 2): Library not loaded: /opt/local/lib/libfreetype.6.dylib\n  Referenced from: /Users/grout/sage/local/lib/python2.6/site-packages/matplotlib/ft2font.so\n  Reason: Incompatible library version: ft2font.so requires version 11.0.0 or later, but libfreetype.6.dylib provides version 10.0.0\n```\n\n\nSo somehow this is picking up my macports version of freetype.  That's a problem.",
     "created_at": "2010-06-10T12:26:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86103",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85965",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -94,15 +93,15 @@ So somehow this is picking up my macports version of freetype.  That's a problem
 
 ---
 
-archive/issue_comments_086104.json:
+archive/issue_comments_085966.json:
 ```json
 {
     "body": "Not working on Solaris either. It still reports:\n\n\n```\nREQUIRED DEPENDENCIES\n                 numpy: 1.3.0\n             freetype2: 9.7.3\n```\n\n\nFreetype is really confusing in that there are 3 numbers associated with a release. Then to make matters worst, sometimes it called freetype, and other times freetype2. I think they are the same. \n\n```\n   release    libtool      so\n  -------------------------------\n     2.3.12     10.0.4    6.4.0\n     2.3.11     9.22.3    6.3.22\n     2.3.10     9.21.3    6.3.21\n     2.3.9      9.20.3    6.3.20\n     2.3.8      9.19.3    6.3.19\n     2.3.7      9.18.3    6.3.18\n     2.3.6      9.17.3    6.3.17\n     2.3.5      9.16.3    6.3.16\n     2.3.4      9.15.3    6.3.15\n     2.3.3      9.14.3    6.3.14\n     2.3.2      9.13.3    6.3.13\n     2.3.1      9.12.3    6.3.12\n     2.3.0      9.11.3    6.3.11\n     2.2.1      9.10.3    6.3.10\n     2.2.0      9.9.3     6.3.9\n     2.1.10     9.8.3     6.3.8\n     2.1.9      9.7.3     6.3.7\n     2.1.8      9.6.3     6.3.6 \n```\n\n\nfreetype2 9.7.3 is also known as version 2.1.8. Since Sage 4.4.3 includes freetype 2.3.5, matplotlib should report it has found freetype2 version 9.16.3 and not 9.7.3 as it does. \n\nRather inconveniently, the version of freetype globally installed on sage.math and boxen.math are the same as in Sage. This makes the message from matplotlib about the version of freetype will be the same in either case. \n\n||                   |                   |\n||-------------------|-------------------|\n||**release version**|**libtool version**|\n|Latest freeetype2|2.3.12|10.0.4|\n|sage.math|2.3.5|9.16.3|\n|In Sage 4.4.3|2.3.5|9.16.3|\n|As supplied on Solaris 10 03/05|2.1.9|9.7.3|\n**I think if you manage to get matplotlib to indicate it has found freetype2, but is unable to determine the version, I think you will have solved it.** At the moment matplotlib seems to be using pkg-config on Solaris and Linux (but not OS X) to look up the version, and find the directories of the include and library files. \n\nDave",
     "created_at": "2010-06-10T13:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86104",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85966",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -161,15 +160,15 @@ Dave
 
 ---
 
-archive/issue_comments_086105.json:
+archive/issue_comments_085967.json:
 ```json
 {
     "body": "I forgot to add, one other change that is needed, is a revised spkg-install, to ensure matplotlib builds 64-bit. \n\n\n```\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"64 bit MacIntel\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```\n\n\nshould be changed to:\n\n\n```\nif [ \"x$SAGE64\" = xyes ]; then\n   echo \"Building a 64-bit version of matplotlib\"\n   CFLAGS=\"-O2 -g -m64 \"; export CFLAGS\n   LDFLAGS=\"-m64 \"; export LDFLAGS\nfi\n```\n",
     "created_at": "2010-06-10T13:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86105",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85967",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -201,15 +200,15 @@ fi
 
 ---
 
-archive/issue_comments_086106.json:
+archive/issue_comments_085968.json:
 ```json
 {
     "body": "Changing assignee from tbd to drkirkby.",
     "created_at": "2010-06-10T13:36:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86106",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85968",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -219,15 +218,15 @@ Changing assignee from tbd to drkirkby.
 
 ---
 
-archive/issue_comments_086107.json:
+archive/issue_comments_085969.json:
 ```json
 {
     "body": "See #9208 for an update to sage-env which fixes the problem of matplotlib finding the wrong version of freetype - it requires no modification to the matplotlib source at all. This will probably not work on OS X, as OS X does not appear to have the pkg-config command that both Solaris and Linux have. (This is based on observations on sage.math, boxen.math, t2.math, bsd.math and my own Sun Blade 1000 running Solaris 10 03/05)",
     "created_at": "2010-06-10T23:29:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86107",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85969",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -237,15 +236,15 @@ See #9208 for an update to sage-env which fixes the problem of matplotlib findin
 
 ---
 
-archive/issue_comments_086108.json:
+archive/issue_comments_085970.json:
 ```json
 {
     "body": "Replying to [comment:2 drkirkby]:\n\n> **I think if you manage to get matplotlib to indicate it has found freetype2, but is unable to determine the version, I think you will have solved it.** At the moment matplotlib seems to be using pkg-config on Solaris and Linux (but not OS X) to look up the version, and find the directories of the include and library files. \n> \n> Dave \n\nThe best solution looks to be to get pkg-config to work properly, which requires it knows where the Sage files are to be found. That is done by setting the variable PKG_CONFIG_PATH. \n\nDave",
     "created_at": "2010-06-10T23:31:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86108",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85970",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -263,15 +262,15 @@ Dave
 
 ---
 
-archive/issue_comments_086109.json:
+archive/issue_comments_085971.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-11T06:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86109",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85971",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -281,15 +280,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_086110.json:
+archive/issue_comments_085972.json:
 ```json
 {
     "body": "I've uploaded a new spkg (same URL as in the description), and updated the patch attached to this ticket to reflect the total changes in this spkg.\n\nDepends on #9208 and #9210 (both applied to the sage-scripts repository!) to correctly identify freetype, even after moving the Sage directory.",
     "created_at": "2010-06-11T06:14:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86110",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85972",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -301,15 +300,15 @@ Depends on #9208 and #9210 (both applied to the sage-scripts repository!) to cor
 
 ---
 
-archive/issue_comments_086111.json:
+archive/issue_comments_085973.json:
 ```json
 {
     "body": "This spkg probably also solves #5873.",
     "created_at": "2010-06-11T06:31:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86111",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85973",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -319,15 +318,15 @@ This spkg probably also solves #5873.
 
 ---
 
-archive/issue_comments_086112.json:
+archive/issue_comments_085974.json:
 ```json
 {
     "body": "Yet another update, this time cleaning out a lot of the patches and replacing our kludges with matplotlib-supported setup config files.  I also put in the latest SVN, which has some fixes we've requested, and make the setup config files work.\n\nThe link in the description points to the new spkg: http://sage.math.washington.edu/home/jason/matplotlib-0.99.3-svn8415.spkg",
     "created_at": "2010-06-11T20:01:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86112",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85974",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -339,15 +338,15 @@ The link in the description points to the new spkg: http://sage.math.washington.
 
 ---
 
-archive/issue_comments_086113.json:
+archive/issue_comments_085975.json:
 ```json
 {
     "body": "This version from svn is causing a problem on the following system, which we should report to the developers. \n\n* Sun Blade 1000\n* 2 x 900 MHz\n* 2 GB RAM\n* Solaris 10 03/05 \n \n\n```\n/usr/include/stdlib.h:144: error: declaration of C function 'void swab(const char*, char*, ssize_t)' conflicts with\n/usr/include/unistd.h:480: error: previous declaration 'void swab(const void*, void*, ssize_t)' here\nerror: command 'gcc' failed with exit status 1\nError building matplotlib package.\n```\n\n\nThe Solaris header files are a lot stricter about what they do/do not declare than most systems, depending on the mode of compilation. An inspection of stdlib.h shows the problem. \n\n\n```\nextern int putenv(char *);\nextern void setkey(const char *);\n#endif /* defined(__EXTENSIONS__) || !defined(_STRICT_STDC) ... */\n\n/*\n * swab() has historically been in <stdlib.h> as delivered from AT&T\n * and continues to be visible in the default compilation environment.\n * As of Issue 4 of the X/Open Portability Guides, swab() was declared\n * in <unistd.h>. As a result, with respect to X/Open namespace the\n * swab() declaration in this header is only visible for the XPG3\n * environment.\n */\n#if (defined(__EXTENSIONS__) || \\\n        (!defined(_STRICT_STDC__) && !defined(_POSIX_C_SOURCE))) && \\\n        (!defined(_XOPEN_SOURCE) || (defined(_XPG3) && !defined(_XPG4)))\n#ifndef _SSIZE_T\n#define _SSIZE_T\n#if defined(_LP64) || defined(_I32LPx)\ntypedef long    ssize_t;        /* size of something in bytes or -1 */\n#else\ntypedef int     ssize_t;        /* (historical version) */\n#endif\n#endif  /* !_SSIZE_T */\n\nextern void swab(const char *, char *, ssize_t);\n#endif /* defined(__EXTENSIONS__) || !defined(_STRICT_STDC) ... */\n```\n\n\nand in unistd.h\n\n\n```\n#if defined(_XPG4)\n/* __EXTENSIONS__ makes the SVID Third Edition prototype in stdlib.h visible */\nextern void swab(const void *_RESTRICT_KYWD, void *_RESTRICT_KYWD, ssize_t);\n#endif /* defined(_XPG4) */\n```\n\n\nAs such, I think your previous version, based on the stable release, rather than a SVN snapshot is preferable. \n\nI'm attaching the two relevant header files to this ticket.",
     "created_at": "2010-06-11T20:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86113",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85975",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -419,15 +418,15 @@ I'm attaching the two relevant header files to this ticket.
 
 ---
 
-archive/issue_comments_086114.json:
+archive/issue_comments_085976.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-06-11T20:42:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86114",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85976",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -437,15 +436,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_086115.json:
+archive/issue_comments_085977.json:
 ```json
 {
     "body": "/usr/include/unistd.h from Solaris 10 on SPARC (03/05 release)",
     "created_at": "2010-06-11T20:43:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86115",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85977",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -455,15 +454,15 @@ archive/issue_comments_086115.json:
 
 ---
 
-archive/issue_comments_086116.json:
+archive/issue_comments_085978.json:
 ```json
 {
     "body": "Attachment [unistd.h](tarball://root/attachments/some-uuid/ticket9202/unistd.h) by drkirkby created at 2010-06-11 20:44:54\n\n/usr/include/stdlib.h from Solaris 10 on SPARC (03/05 release)",
     "created_at": "2010-06-11T20:44:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86116",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85978",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -475,15 +474,15 @@ Attachment [unistd.h](tarball://root/attachments/some-uuid/ticket9202/unistd.h) 
 
 ---
 
-archive/issue_comments_086117.json:
+archive/issue_comments_085979.json:
 ```json
 {
     "body": "Attachment [stdlib.h](tarball://root/attachments/some-uuid/ticket9202/stdlib.h) by drkirkby created at 2010-06-11 20:56:00\n\nI've stuck a bug report, with a link to this on the matplotlib mailing list.",
     "created_at": "2010-06-11T20:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86117",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85979",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -495,15 +494,15 @@ I've stuck a bug report, with a link to this on the matplotlib mailing list.
 
 ---
 
-archive/issue_comments_086118.json:
+archive/issue_comments_085980.json:
 ```json
 {
     "body": "I'd be happy to give your previous package, matplotlib-0.99.3.spkg (md5 checksum 2c8660d9d40f6759ece89c074bc0a351) positive review\n\nDave",
     "created_at": "2010-06-11T21:31:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86118",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85980",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -515,15 +514,15 @@ Dave
 
 ---
 
-archive/issue_comments_086119.json:
+archive/issue_comments_085981.json:
 ```json
 {
     "body": "Why don't you go ahead and do that, and I'll open up another ticket for the svn version.",
     "created_at": "2010-06-11T21:32:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86119",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85981",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -533,15 +532,15 @@ Why don't you go ahead and do that, and I'll open up another ticket for the svn 
 
 ---
 
-archive/issue_comments_086120.json:
+archive/issue_comments_085982.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-06-11T21:37:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86120",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85982",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -551,15 +550,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_086121.json:
+archive/issue_comments_085983.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-11T21:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86121",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85983",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -569,15 +568,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_086122.json:
+archive/issue_comments_085984.json:
 ```json
 {
     "body": "Done. This is fine.",
     "created_at": "2010-06-11T21:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86122",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85984",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -587,15 +586,15 @@ Done. This is fine.
 
 ---
 
-archive/issue_comments_086123.json:
+archive/issue_comments_085985.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-06-11T21:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86123",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85985",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -605,15 +604,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_086124.json:
+archive/issue_comments_085986.json:
 ```json
 {
     "body": "I've opened up #9221 for the SVN spkg.  Future updates for matplotlib should probably be based on the spkg up at #9221.",
     "created_at": "2010-06-11T21:40:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86124",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85986",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -623,15 +622,15 @@ I've opened up #9221 for the SVN spkg.  Future updates for matplotlib should pro
 
 ---
 
-archive/issue_comments_086125.json:
+archive/issue_comments_085987.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-25T15:44:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86125",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85987",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -641,15 +640,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_086126.json:
+archive/issue_comments_085988.json:
 ```json
 {
     "body": "Replying to [comment:7 jason]:\n> This spkg probably also solves #5873.\nOr at least some of it?  The [ticket](https://github.com/matplotlib/matplotlib/issues/225) upstream for one piece of it is now at github, but did this fix the searching for matplotlib issue?  \n\nSorry for the necropost.",
     "created_at": "2011-08-19T16:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9202",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-86126",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9202#issuecomment-85988",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002389.json:
     "body": "Assignee: @ClementPernet\n\nThe proposed linbox-1.1.5rc1.p0 crashes on OS X 10.5-intel for charpoly computations. The bug shows up at initialization of static variables, and may be related to the specific OS X gcc compiler behaviour.\n\nhttp://gcc.gnu.org/ml/gcc-bugs/2004-02/msg02055.html, may help. \n\nSame issue as #2388, but need a clean fix.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2389\n\n",
     "created_at": "2008-03-04T22:07:30Z",
     "labels": [
-        "Cygwin",
-        "major",
+        "component: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "linbox charpoly crashes on OS X 10.5-intel",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2389",
-    "user": "@ClementPernet"
+    "user": "https://github.com/ClementPernet"
 }
 ```
 Assignee: @ClementPernet
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2389
 
 ---
 
-archive/issue_comments_016122.json:
+archive/issue_comments_016087.json:
 ```json
 {
     "body": "Changing component from Cygwin to packages.",
     "created_at": "2008-03-04T22:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2389",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16122",
-    "user": "@ClementPernet"
+    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16087",
+    "user": "https://github.com/ClementPernet"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing component from Cygwin to packages.
 
 ---
 
-archive/issue_comments_016123.json:
+archive/issue_comments_016088.json:
 ```json
 {
     "body": "This ticket has been superseded by #2525 and ought to be closed once that ticket has been merged.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-15T05:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2389",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16123",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16088",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -73,15 +72,15 @@ Michael
 
 ---
 
-archive/issue_comments_016124.json:
+archive/issue_comments_016089.json:
 ```json
 {
     "body": "Changing assignee from @ClementPernet to mabshoff.",
     "created_at": "2008-03-15T05:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2389",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16124",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16089",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -91,15 +90,15 @@ Changing assignee from @ClementPernet to mabshoff.
 
 ---
 
-archive/issue_comments_016125.json:
+archive/issue_comments_016090.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-15T05:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2389",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16125",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16090",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -109,15 +108,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_016126.json:
+archive/issue_comments_016091.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-05T18:47:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2389",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16126",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2389#issuecomment-16091",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

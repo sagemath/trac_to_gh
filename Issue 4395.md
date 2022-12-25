@@ -6,15 +6,14 @@ archive/issues_004395.json:
     "body": "Assignee: @williamstein\n\n\n```\nsage -t -long -optional devel/sage/sage/rings/quotient_ring.py\n**********************************************************************\nFile \"/home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/quotient_ring.py\", line 647:\n    sage: Q._magma_() # optional requires Magma\nExpected:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y\n    ]\nGot:\n    Affine Algebra of rank 2 over GF(2)\n    Graded Reverse Lexicographical Order\n    Variables: x, y\n    Quotient relations:\n    [\n    0,\n    0\n    ]\n**********************************************************************\n1 items had failures:\n   1 of   5 in __main__.example_23\n***Test Failed*** 1 failures.\nFor whitespace errors, see the file /home/mabshoff/build-3.2.a1/sage-3.2.alpha1-iras/tmp/.doctest_quotient_ring.py\n\t [5.4 s]\nexit code: 1024\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4395\n\n",
     "created_at": "2008-10-30T16:56:35Z",
     "labels": [
-        "doctest coverage",
-        "major",
+        "component: doctest coverage",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "Sage 3.1.4: magma related optional doctest failure in sage/rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4395",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: @williamstein
@@ -61,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4395
 
 ---
 
-archive/issue_comments_032344.json:
+archive/issue_comments_032281.json:
 ```json
 {
     "body": "Apply this after #4394",
     "created_at": "2008-10-30T20:43:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4395",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32344",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32281",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -79,15 +78,15 @@ Apply this after #4394
 
 ---
 
-archive/issue_comments_032345.json:
+archive/issue_comments_032282.json:
 ```json
 {
     "body": "Where is the patch?\n\nCheers,\n\nMichael",
     "created_at": "2008-10-31T16:46:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4395",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32345",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32282",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -101,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_032346.json:
+archive/issue_comments_032283.json:
 ```json
 {
     "body": "This patch (one it is here :)) also likely fixes the following problem:\n\n```\nsage -t -long -optional devel/sage/sage/rings/polynomial/pbori.pyx\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/pbori.py\", line 988:\n    sage: B._magma_() # optional requires magma\nExpected:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y,\n    z^2 + z\n    ]\nGot:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    0,\n    0,\n    0\n    ]\n**********************************************************************\nFile \"/scratch/mabshoff/release-cycle/sage-3.1.3.final/tmp/pbori.py\", line 1024:\n    sage: B._magma_() # optional requires magma, indirect doctest\nExpected:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    x^2 + x,\n    y^2 + y,\n    z^2 + z\n    ]\nGot:\n    Affine Algebra of rank 3 over GF(2)\n    Lexicographical Order\n    Variables: x, y, z\n    Quotient relations:\n    [\n    0,\n    0,\n    0\n    ]\n**********************************************************************\n```\n",
     "created_at": "2008-10-31T21:33:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4395",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32346",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32283",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -171,15 +170,15 @@ Got:
 
 ---
 
-archive/issue_comments_032347.json:
+archive/issue_comments_032284.json:
 ```json
 {
     "body": "Attachment [sage-4395.patch](tarball://root/attachments/some-uuid/ticket4395/sage-4395.patch) by mabshoff created at 2008-11-09 17:39:30\n\nPositive review. It fixes the original problem reported, but not as I suspected the issue in \n\n```\ndevel/sage/sage/rings/polynomial/pbori.pyx\n```\n\nThat issue is now #4482.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-09T17:39:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4395",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32347",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32284",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -201,15 +200,15 @@ Michael
 
 ---
 
-archive/issue_comments_032348.json:
+archive/issue_comments_032285.json:
 ```json
 {
     "body": "Merged in Sage 3.2.rc0",
     "created_at": "2008-11-09T17:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4395",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32348",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32285",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -219,15 +218,15 @@ Merged in Sage 3.2.rc0
 
 ---
 
-archive/issue_comments_032349.json:
+archive/issue_comments_032286.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-09T17:39:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4395",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32349",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4395#issuecomment-32286",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

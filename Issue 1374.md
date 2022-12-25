@@ -6,15 +6,14 @@ archive/issues_001374.json:
     "body": "Assignee: somebody\n\nThis is the bug that was causing #1231; the fix there was easy, but as cwitty points out, the underlying bug is still there. It's something specifically to do with an entry becoming 0 in a matrix. I haven't looked into this at all; it's probably easy pickings for someone who knows the coercion code.\n\nHere's a sample session:\n\n\n```\nsage: M = MatrixSpace(GF(5),2,2)\n\nsage: A = M([1,0,0,1])\n\nsage: A - int(-1)\n \n[2 0]\n[0 2]\n\nsage: B = M([4,0,0,1])\n\nsage: B - int(-1)\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\nThis probably occured because a *compiled* component\nof SAGE has a bug in it (typically accessing invalid memory)\nor is not properly wrapped with _sig_on, _sig_off.\nYou might want to run SAGE under gdb with 'sage -gdb' to debug this.\nSAGE will now terminate (sorry).\n------------------------------------------------------------\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1374\n\n",
     "created_at": "2007-12-02T19:23:51Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "segfault in coercion with matrices and ints",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1374",
-    "user": "@craigcitro"
+    "user": "https://github.com/craigcitro"
 }
 ```
 Assignee: somebody
@@ -60,15 +59,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1374
 
 ---
 
-archive/issue_comments_008811.json:
+archive/issue_comments_008787.json:
 ```json
 {
     "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-12-02T19:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8811",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8787",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -78,15 +77,15 @@ Changing assignee from somebody to @robertwb.
 
 ---
 
-archive/issue_comments_008812.json:
+archive/issue_comments_008788.json:
 ```json
 {
     "body": "Changing component from basic arithmetic to coercion.",
     "created_at": "2007-12-02T19:26:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8812",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8788",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -96,15 +95,15 @@ Changing component from basic arithmetic to coercion.
 
 ---
 
-archive/issue_comments_008813.json:
+archive/issue_comments_008789.json:
 ```json
 {
     "body": "First obvious thing to do (on sage.math):\n\n\n```\nsage: matrix(GF(5), 2, [4,0,0,1]) - int(-1)\n\nProgram received signal SIGSEGV, Segmentation fault.\n[Switching to Thread 47703056093024 (LWP 5657)]\n__pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (__pyx_v_self=0x2b62cd298e30, __pyx_v_value=5)\n    at sage/rings/integer_mod.c:2750\n2750      Py_INCREF(__pyx_1);\n```\n",
     "created_at": "2007-12-02T19:32:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8813",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8789",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -126,15 +125,15 @@ __pyx_f_4sage_5rings_11integer_mod_15NativeIntStruct_lookup (__pyx_v_self=0x2b62
 
 ---
 
-archive/issue_comments_008814.json:
+archive/issue_comments_008790.json:
 ```json
 {
     "body": "Changing priority from major to critical.",
     "created_at": "2007-12-02T21:20:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8814",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8790",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -144,15 +143,15 @@ Changing priority from major to critical.
 
 ---
 
-archive/issue_comments_008815.json:
+archive/issue_comments_008791.json:
 ```json
 {
     "body": "The problem is very likely related to this:\n\n\n```\nsage: matrix(GF(5),2, [4,0,0,1]).parent()(int(6))\n[6 0]\n[0 6]\n```\n\n\nThis is over GF(5), so we should not see 6!",
     "created_at": "2007-12-02T21:26:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8815",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8791",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -172,15 +171,15 @@ This is over GF(5), so we should not see 6!
 
 ---
 
-archive/issue_comments_008816.json:
+archive/issue_comments_008792.json:
 ```json
 {
     "body": "\n```\nsage: m = matrix(GF(5),2, [4,0,0,1])\nsage: a = matrix(GF(5),2, [4,0,0,1]).parent()(int(7))\nsage: m[1,1]\n1\nsage: a[1,1]\n7\nsage: m[1,1] - a[1,1]\n\n\n------------------------------------------------------------\nUnhandled SIGBUS: A bus error occured in SAGE.\n```\n",
     "created_at": "2007-12-02T21:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8816",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8792",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -204,15 +203,15 @@ Unhandled SIGBUS: A bus error occured in SAGE.
 
 ---
 
-archive/issue_comments_008817.json:
+archive/issue_comments_008793.json:
 ```json
 {
     "body": "Attachment [trac-1374.patch](tarball://root/attachments/some-uuid/ticket1374/trac-1374.patch) by @williamstein created at 2007-12-02 21:32:57",
     "created_at": "2007-12-02T21:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8817",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8793",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -222,15 +221,15 @@ Attachment [trac-1374.patch](tarball://root/attachments/some-uuid/ticket1374/tra
 
 ---
 
-archive/issue_comments_008818.json:
+archive/issue_comments_008794.json:
 ```json
 {
     "body": "Merged in 2.8.15.rc0.",
     "created_at": "2007-12-02T21:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8818",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8794",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -240,15 +239,15 @@ Merged in 2.8.15.rc0.
 
 ---
 
-archive/issue_comments_008819.json:
+archive/issue_comments_008795.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-02T21:37:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8819",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8795",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -258,15 +257,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_008820.json:
+archive/issue_comments_008796.json:
 ```json
 {
     "body": "Attachment [1374-part2.patch](tarball://root/attachments/some-uuid/ticket1374/1374-part2.patch) by cwitty created at 2007-12-02 23:19:18",
     "created_at": "2007-12-02T23:19:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8820",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8796",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -276,15 +275,15 @@ Attachment [1374-part2.patch](tarball://root/attachments/some-uuid/ticket1374/13
 
 ---
 
-archive/issue_comments_008821.json:
+archive/issue_comments_008797.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2007-12-02T23:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8821",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8797",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -294,15 +293,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_008822.json:
+archive/issue_comments_008798.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2007-12-02T23:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8822",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8798",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -312,15 +311,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_008823.json:
+archive/issue_comments_008799.json:
 ```json
 {
     "body": "It's good that we don't crash any more; but maybe we should also give the right answer? :)\n\nI think we also need to apply my 1374-part2.patch",
     "created_at": "2007-12-02T23:20:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8823",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8799",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -332,15 +331,15 @@ I think we also need to apply my 1374-part2.patch
 
 ---
 
-archive/issue_comments_008824.json:
+archive/issue_comments_008800.json:
 ```json
 {
     "body": "Merged cwitty's patch in 2.8.15.rc0. All doctests pass.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-03T00:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8824",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8800",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -354,15 +353,15 @@ Michael
 
 ---
 
-archive/issue_comments_008825.json:
+archive/issue_comments_008801.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-03T00:28:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1374",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8825",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1374#issuecomment-8801",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

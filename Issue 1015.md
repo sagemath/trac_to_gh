@@ -6,15 +6,14 @@ archive/issues_001015.json:
     "body": "Assignee: @williamstein\n\nThe attached patch does the following:\n\n1)  Adds and improves latex output\n\n2)  Fixes a bad multiplication bug\n\n3)  Adds ability to substitute in values in a free algebra (via __call__)\n\nIssue created by migration from https://trac.sagemath.org/ticket/1015\n\n",
     "created_at": "2007-10-27T23:49:18Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.10",
     "title": "Free Monoid and Free Algebra Fixes and features",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1015",
-    "user": "jbmohler"
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 Assignee: @williamstein
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1015
 
 ---
 
-archive/issue_comments_006233.json:
+archive/issue_comments_006213.json:
 ```json
 {
     "body": "Attachment [free_algebra.hg](tarball://root/attachments/some-uuid/ticket1015/free_algebra.hg) by jbmohler created at 2007-10-27 23:49:35\n\nthe bundle",
     "created_at": "2007-10-27T23:49:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1015",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1015#issuecomment-6233",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/1015#issuecomment-6213",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -55,15 +54,15 @@ the bundle
 
 ---
 
-archive/issue_comments_006234.json:
+archive/issue_comments_006214.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to somebody.",
     "created_at": "2007-10-27T23:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1015",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1015#issuecomment-6234",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/1015#issuecomment-6214",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing assignee from @williamstein to somebody.
 
 ---
 
-archive/issue_comments_006235.json:
+archive/issue_comments_006215.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to basic arithmetic.",
     "created_at": "2007-10-27T23:51:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1015",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1015#issuecomment-6235",
-    "user": "jbmohler"
+    "url": "https://github.com/sagemath/sagetest/issues/1015#issuecomment-6215",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jbmohler"
 }
 ```
 
@@ -91,15 +90,15 @@ Changing component from algebraic geometry to basic arithmetic.
 
 ---
 
-archive/issue_comments_006236.json:
+archive/issue_comments_006216.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-10-28T18:03:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1015",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1015#issuecomment-6236",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1015#issuecomment-6216",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

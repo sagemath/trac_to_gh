@@ -6,7 +6,7 @@ archive/issues_007924.json:
     "body": "Assignee: @williamstein\n\nTry\n\n\n```\nprint \"___x___\"\n```\n\n\nIn a notebook cell. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7924\n\n",
     "created_at": "2010-01-14T04:16:48Z",
     "labels": [
-        "notebook",
+        "component: notebook",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007924.json:
     "title": "Notebook trims trailing underscores from output.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7924",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @williamstein
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7924
 
 ---
 
-archive/issue_comments_068970.json:
+archive/issue_comments_068851.json:
 ```json
 {
     "body": "More data:\n\n```python\nsage: from sagenb.interfaces.expect import WorksheetProcess_ExpectImplementation \nsage: wp = WorksheetProcess_ExpectImplementation() \nsage: wp.execute('print \"___x___\"')\nsage: wp.output_status()\nOutput Status:\n        output: '___x'\n        filenames: []\n        done: True\n```\n",
     "created_at": "2010-01-15T22:19:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68970",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68851",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -67,15 +67,15 @@ Output Status:
 
 ---
 
-archive/issue_comments_068971.json:
+archive/issue_comments_068852.json:
 ```json
 {
     "body": "[str.rstrip](http://docs.python.org/library/stdtypes.html#str.rstrip)",
     "created_at": "2010-01-15T22:37:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68971",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68852",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -85,15 +85,15 @@ archive/issue_comments_068971.json:
 
 ---
 
-archive/issue_comments_068972.json:
+archive/issue_comments_068853.json:
 ```json
 {
     "body": "This may be a duplicate of #7663.",
     "created_at": "2010-01-15T22:40:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68972",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68853",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -103,15 +103,15 @@ This may be a duplicate of #7663.
 
 ---
 
-archive/issue_comments_068973.json:
+archive/issue_comments_068854.json:
 ```json
 {
     "body": "The patch at #7663 should fix this.  If it does and that ticket merges, please close this one.",
     "created_at": "2010-01-15T23:08:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68973",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68854",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -121,15 +121,15 @@ The patch at #7663 should fix this.  If it does and that ticket merges, please c
 
 ---
 
-archive/issue_comments_068974.json:
+archive/issue_comments_068855.json:
 ```json
 {
     "body": "Works with sagenb-0.6.",
     "created_at": "2010-01-19T03:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68974",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68855",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -139,15 +139,15 @@ Works with sagenb-0.6.
 
 ---
 
-archive/issue_comments_068975.json:
+archive/issue_comments_068856.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-01-19T03:15:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7924",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68975",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/7924#issuecomment-68856",
+    "user": "https://github.com/TimDumol"
 }
 ```
 

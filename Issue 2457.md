@@ -6,15 +6,14 @@ archive/issues_002457.json:
     "body": "Assignee: @garyfurnish\n\n\n```\nFile \"ideal.py\", line 384:\n    sage: I.is_prime()\nExpected:\n    Traceback (most recent call last):\n    ...\n    NotImplementedError\nGot:\n    True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2457\n\n",
     "created_at": "2008-03-10T14:07:03Z",
     "labels": [
-        "group theory",
-        "major",
+        "component: group theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "ideal.py doctest failure",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2457",
-    "user": "@garyfurnish"
+    "user": "https://github.com/garyfurnish"
 }
 ```
 Assignee: @garyfurnish
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2457
 
 ---
 
-archive/issue_comments_016639.json:
+archive/issue_comments_016603.json:
 ```json
 {
     "body": "Attachment [trac_2457.patch](tarball://root/attachments/some-uuid/ticket2457/trac_2457.patch) by @garyfurnish created at 2008-03-10 14:08:33",
     "created_at": "2008-03-10T14:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16639",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16603",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -59,15 +58,15 @@ Attachment [trac_2457.patch](tarball://root/attachments/some-uuid/ticket2457/tra
 
 ---
 
-archive/issue_comments_016640.json:
+archive/issue_comments_016604.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-10T14:09:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16640",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16604",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -77,15 +76,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_016641.json:
+archive/issue_comments_016605.json:
 ```json
 {
     "body": "This doctest did not work because 7 is in a PID and thus has an is_prime function.",
     "created_at": "2008-03-10T14:09:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16641",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16605",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -95,15 +94,15 @@ This doctest did not work because 7 is in a PID and thus has an is_prime functio
 
 ---
 
-archive/issue_comments_016642.json:
+archive/issue_comments_016606.json:
 ```json
 {
     "body": "Patch looks good to me and fixes the issue.\n\nCheers,\n\nMichael",
     "created_at": "2008-03-10T14:54:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16642",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16606",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -117,15 +116,15 @@ Michael
 
 ---
 
-archive/issue_comments_016643.json:
+archive/issue_comments_016607.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-10T14:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16643",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16607",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -135,15 +134,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_016644.json:
+archive/issue_comments_016608.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc4",
     "created_at": "2008-03-10T14:55:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16644",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2457#issuecomment-16608",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

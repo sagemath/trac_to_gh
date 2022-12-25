@@ -6,15 +6,14 @@ archive/issues_006933.json:
     "body": "Assignee: tbd\n\nThe title pretty much says it all. The spkg-install is ignoring SAGE64 unless the OS is Darwin (OS X). \n\nit currently has:\n\n\n```\n\nif [ `uname` = \"Darwin\" -a \"$SAGE64\" = \"yes\" ]; then\n   echo \"Building 64 bit OSX version of Sage\"\n   CFLAGS=\"-O2 -g -m64 \" && export CFLAGS\n   LDFLAGS=\"-m64\"\nfi\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6933\n\n",
     "created_at": "2009-09-15T09:27:56Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "readline-5.2.p7 builds as 32-bit on Solaris even if SAGE64=yes",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6933",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6933
 
 ---
 
-archive/issue_comments_057291.json:
+archive/issue_comments_057183.json:
 ```json
 {
     "body": "Fixed by #6945.",
     "created_at": "2009-09-17T22:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6933",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6933#issuecomment-57291",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6933#issuecomment-57183",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -62,15 +61,15 @@ Fixed by #6945.
 
 ---
 
-archive/issue_comments_057292.json:
+archive/issue_comments_057184.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2009-09-17T22:13:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6933",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6933#issuecomment-57292",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6933#issuecomment-57184",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

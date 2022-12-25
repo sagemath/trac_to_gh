@@ -6,15 +6,14 @@ archive/issues_002692.json:
     "body": "Assignee: boothby\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2692\n\n",
     "created_at": "2008-03-28T00:39:36Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "[with patch; needs review] bug displaying list of published worksheets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2692",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2692
 
 ---
 
-archive/issue_comments_018525.json:
+archive/issue_comments_018486.json:
 ```json
 {
     "body": "Attachment [sage-2692.patch](tarball://root/attachments/some-uuid/ticket2692/sage-2692.patch) by mabshoff created at 2008-03-28 08:00:08\n\n\n```\n[08:24] <mabshoff> wstein: What was the issue with \"internal server error\" and the notebook?\n[08:24] <wstein> There was just a 1-line bug in making a list of user names.\n[08:24] <mabshoff> ok\n[08:24] <wstein> This came up in displaying the list of published notebooks.\n[08:25] <wstein> I think it was never hit before because whatever combinations of events needed hadn't\n[08:25] <wstein> been triggerd.\n[08:25] <wstein> But with 2,800 accounts on sagenb.org, that sort of thing is bound to come up, I guess.\n[08:25] <mabshoff> ok. is that a ticket yet?\n[08:25] <mabshoff> :)\n[08:25] <wstein> It's a ticket and fixed.\n[08:25] <mabshoff> ok. Did I miss that or isn't it merged yet?\n[08:25] <wstein> http://trac.sagemath.org/sage_trac/ticket/2692\n[08:26] <mabshoff> k\n[08:26] <mabshoff> So join() failed in that case?\n[08:26] <wstein> modabvar coverage is currently 77%\n[08:26] <wstein> Yes, since join takes strings.\n[08:27] <mabshoff> ok, positive review then.\n[08:27] <mabshoff> It seems that it worked by accident previously?\n[08:27] <wstein> yep\n[08:27] <mabshoff> :)\n```\n",
     "created_at": "2008-03-28T08:00:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2692#issuecomment-18525",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2692#issuecomment-18486",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -72,15 +71,15 @@ Attachment [sage-2692.patch](tarball://root/attachments/some-uuid/ticket2692/sag
 
 ---
 
-archive/issue_comments_018526.json:
+archive/issue_comments_018487.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-28T08:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2692#issuecomment-18526",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2692#issuecomment-18487",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -90,15 +89,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018527.json:
+archive/issue_comments_018488.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha2",
     "created_at": "2008-03-28T08:04:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2692",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2692#issuecomment-18527",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2692#issuecomment-18488",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

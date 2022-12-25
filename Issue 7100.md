@@ -6,15 +6,14 @@ archive/issues_007100.json:
     "body": "Assignee: justin\n\nCC:  @tornaria\n\nA rounding error causes an issue in `vectors_by_length()`. The square root of a very tiny negative number (which should be rounded to zero) is computed, creating a symbolic imaginary expression which floor can't round to a nearest integer (e.g. `floor(2.0 + 1.49011611938e-08*I)` below).\n\n```\n----------------------------------------------------------------------\n----------------------------------------------------------------------\nsage: Q = QuadraticForm(ZZ, 4, [1,1,1,1, 1,0,0, 1,0, 1])\nsage: Q.vectors_by_length(2)\nERROR: An unexpected error occurred while tokenizing input\nThe following traceback may be corrupted or invalid\nThe error message is: ('EOF in multi-line statement', (1093, 0))\n| Sage Version 4.1.1, Release Date: 2009-08-14                       |\n| Type notebook() for the GUI, and license() for information.        |\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/tornaria/.sage/temp/sage.math.washington.edu/20501/_home_tornaria__sage_init_sage_0.py in <module>()\n\n/home/tornaria/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/quadratic_forms/quadratic_form__split_local_covering.py in vectors_by_length(self, bound)\n    207             ## 2. Compute bounds\n    208             Z = sqrt(T[i] / Q[i][i])\n--> 209             L[i] = ZZ(floor(Z - U[i]))  \n    210             x[i] = ZZ(ceil(-Z - U[i]) - 0)  \n    211 \n\n/home/tornaria/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/structure/parent.so in sage.structure.parent.Parent.__call__ (sage/structure/parent.c:4171)()\n\n/home/tornaria/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/structure/coerce_maps.so in sage.structure.coerce_maps.NamedConvertMap._call_ (sage/structure/coerce_maps.c:4064)()\n\n/home/tornaria/sage-4.1.1-sage.math.washington.edu-x86_64-Linux/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._integer_ (sage/symbolic/expression.cpp:4136)()\n\nTypeError: unable to convert x (=floor(2.0 + 1.49011611938e-08*I)) to an integer\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7100\n\n",
     "created_at": "2009-10-03T13:35:57Z",
     "labels": [
-        "quadratic forms",
-        "major",
+        "component: quadratic forms",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "rounding error in QuadraticForm.vectors_by_length()",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7100",
-    "user": "@tornaria"
+    "user": "https://github.com/tornaria"
 }
 ```
 Assignee: justin
@@ -63,15 +62,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7100
 
 ---
 
-archive/issue_comments_058767.json:
+archive/issue_comments_058657.json:
 ```json
 {
     "body": "I changed it to take the abs of Z, but I don't know if this goes the right way for the bounds.  Someone familiar with the algorithm should check this.  All tests do pass.",
     "created_at": "2009-10-04T03:07:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58767",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58657",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -81,15 +80,15 @@ I changed it to take the abs of Z, but I don't know if this goes the right way f
 
 ---
 
-archive/issue_comments_058768.json:
+archive/issue_comments_058658.json:
 ```json
 {
     "body": "Replying to [comment:1 mhansen]:\n> I changed it to take the abs of Z, but I don't know if this goes the right way for the bounds.  Someone familiar with the algorithm should check this.  All tests do pass.\n\nActually, this is wrong:\n\n```\nQ = QuadraticForm(ZZ, 4, [1,1,1,1, 1,0,0, 1,0, 1]) \nsage: map(len, Q.vectors_by_length(2)) \n[1, 12, 11]\n```\n\nBecause it's missing one of the vectors of norm 2 (namely `[0, -1, 0, -1]`) due to roundoff errors.\n\nThe way to fix this is to use a bound for searching which is an epsilon larger than an integer --- enough to cover the roundoff errors. Pari uses `1e-6` for this epsilon.\n\nI'll post a patch in a moment.",
     "created_at": "2010-01-14T15:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58768",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58658",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -114,15 +113,15 @@ I'll post a patch in a moment.
 
 ---
 
-archive/issue_comments_058769.json:
+archive/issue_comments_058659.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-14T15:31:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58769",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58659",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -132,15 +131,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_058770.json:
+archive/issue_comments_058660.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-14T15:41:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58770",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58660",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -150,15 +149,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_058771.json:
+archive/issue_comments_058661.json:
 ```json
 {
     "body": "Use this patch instead of the other one (updated)",
     "created_at": "2010-01-14T16:55:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58771",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58661",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -168,15 +167,15 @@ Use this patch instead of the other one (updated)
 
 ---
 
-archive/issue_comments_058772.json:
+archive/issue_comments_058662.json:
 ```json
 {
     "body": "Attachment [trac_7100b.patch](tarball://root/attachments/some-uuid/ticket7100/trac_7100b.patch) by @tornaria created at 2010-01-14 16:57:46\n\nAll tests pass with my patch on top of a clean sage-4.3.",
     "created_at": "2010-01-14T16:57:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58772",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58662",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -188,15 +187,15 @@ All tests pass with my patch on top of a clean sage-4.3.
 
 ---
 
-archive/issue_comments_058773.json:
+archive/issue_comments_058663.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-14T17:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58773",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58663",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -206,15 +205,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_058774.json:
+archive/issue_comments_058664.json:
 ```json
 {
     "body": "Looks good.  Thanks for looking over this!",
     "created_at": "2010-01-14T17:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58774",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58664",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -224,15 +223,15 @@ Looks good.  Thanks for looking over this!
 
 ---
 
-archive/issue_comments_058775.json:
+archive/issue_comments_058665.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-16T02:48:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7100",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58775",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7100#issuecomment-58665",
+    "user": "https://github.com/rlmill"
 }
 ```
 

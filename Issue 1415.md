@@ -6,15 +6,14 @@ archive/issues_001415.json:
     "body": "Assignee: @williamstein\n\nI tried to compile Sage 2.9.alpha1 with:\n\n```\ngcc version 4.3.0 20071130 (experimental) [trunk revision 130545] (Debian 4.3-20071130-1) \n```\n\non my 64-bit x86 Linux Debian testing box, and compilation failed.\n\nHere's the important chunk from the middle of the FLINT build log:\n\n```\ngcc -std=c99 -I/home/cwitty/gcc43-sage-2.9.alpha1/local/include/ -mtune=opteron -march=opteron -fPIC -funroll-loops  -O3 -c ZmodF_poly.c -o ZmodF_poly.o\ngcc -std=c99 -I/home/cwitty/gcc43-sage-2.9.alpha1/local/include/ -mtune=opteron -march=opteron -fPIC -funroll-loops  -O3 -c long_extras.c -o long_extras.o\ngcc -std=c99 -fPIC -shared -o libflint.so mpn_extras.o mpz_extras.o memory-manager.o ZmodF.o ZmodF_mul.o ZmodF_mul-tuning.o fmpz.o fmpz_poly.o mpz_poly-tuning.o mpz_poly.o ZmodF_poly.o long_extras.o -L/home/cwitty/gcc43-sage-2.9.alpha1/local/lib/  -lgmp -lpthread -lm\nmpz_extras.o: In function `__gmpz_fits_uint_p':\nmpz_extras.c:(.text+0x0): multiple definition of `__gmpz_fits_uint_p'\nmpn_extras.o:mpn_extras.c:(.text+0x0): first defined here\nmpz_extras.o: In function `__gmpz_fits_ulong_p':\nmpz_extras.c:(.text+0x30): multiple definition of `__gmpz_fits_ulong_p'\nmpn_extras.o:mpn_extras.c:(.text+0x30): first defined here\n```\n\nfollowed by many, many more \"multiple definition\" errors.\n\nPresumably this is caused by the following (from the gcc 4.2 NEWS file):\n\n```\n- In the next release of GCC, 4.3, -std=c99 or -std=gnu99 will direct\n  GCC to handle inline functions as specified in the C99 standard.  In\n  preparation for this, GCC 4.2 will warn about any use of non-static\n  inline functions in gnu99 or c99 mode.  This new warning may be\n  disabled with the new gnu_inline function attribute or the new\n  -fgnu89-inline command line option.  Also, GCC 4.2 and later will\n  define one of the preprocessor macros __GNUC_GNU_INLINE__ or\n  __GNUC_STDC_INLINE__ to indicate the semantics of inline functions\n  in the current compilation.\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1415\n\n",
     "created_at": "2007-12-07T03:02:43Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "FLINT 1.0 (from 2.9.alpha1) fails to compile with gcc 4.3 prerelease",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1415",
-    "user": "cwitty"
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 Assignee: @williamstein
@@ -67,15 +66,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1415
 
 ---
 
-archive/issue_comments_009126.json:
+archive/issue_comments_009102.json:
 ```json
 {
     "body": "Presumably this will get fixed by upgrading to gmp 4.2.2 which is planned for the 2.9.1 release. That should squash a whole lot of gcc 4.3 related issues.\n\nCheers,\n\nMichael",
     "created_at": "2007-12-07T08:13:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1415",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1415#issuecomment-9126",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1415#issuecomment-9102",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -89,15 +88,15 @@ Michael
 
 ---
 
-archive/issue_comments_009127.json:
+archive/issue_comments_009103.json:
 ```json
 {
     "body": "The problem is in the gmp headers related to inline definitions. Since we have to apply the same fix on OSX 10.5 we can work around it, but the trouble is really upstream.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-15T23:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1415",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1415#issuecomment-9127",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1415#issuecomment-9103",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -111,15 +110,15 @@ Michael
 
 ---
 
-archive/issue_comments_009128.json:
+archive/issue_comments_009104.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-20T06:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1415",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1415#issuecomment-9128",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1415#issuecomment-9104",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -129,15 +128,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_009129.json:
+archive/issue_comments_009105.json:
 ```json
 {
     "body": "This has been fixed in Sage 3.0.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-20T06:27:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1415",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1415#issuecomment-9129",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1415#issuecomment-9105",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

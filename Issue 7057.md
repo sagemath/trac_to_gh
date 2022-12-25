@@ -6,15 +6,14 @@ archive/issues_007057.json:
     "body": "Assignee: tbd\n\ncliquer seems one seriously messed up package! Under some circumstances (see #6852) it can fail to build as it can't find the Sun C compiler cc. On other occasions, it can build with gcc, even though CC is set to the Sun compiler. \n\nIn the example below, CC was set to the Sun compiler, but cliquer uses gcc instead!\n\n\n```\ncliquer-1.2/.hg/undo.dirstate\ncliquer-1.2/SConstruct\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS swan 5.10 Generic_139555-08 sun4u sparc SUNW,Sun-Blade-1000\n****************************************************\n****************************************************\nCC Version\n/opt/xxxsunstudio12.1/bin/cc -v\nusage: cc [ options] files.  Use 'cc -flags' for details\n****************************************************\nscons: Reading SConscript files ...\nscons: done reading SConscript files.\nscons: Building targets ...\ngcc -o src/cl.pic.o -c -fPIC src/cl.c\ngcc -o src/cliquer.pic.o -c -fPIC src/cliquer.c\ngcc -o src/graph.pic.o -c -fPIC src/graph.c\ngcc -o src/reorder.pic.o -c -fPIC src/reorder.c\ngcc -G -o libcliquer.so src/cl.pic.o src/cliquer.pic.o src/graph.pic.o src/reorder.pic.o\nInstall file: \"libcliquer.so\" as \"Build/libcliquer.so\"\nscons: done building targets.\n\nreal    0m7.963s\nuser    0m5.668s\nsys     0m1.410s\nSuccessfully installed cliquer-1.2\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7057\n\n",
     "created_at": "2009-09-28T21:11:04Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "cliquer-1.2 ignores CC and uses gcc instead of Sun compiler.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7057",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7057
 
 ---
 
-archive/issue_comments_058405.json:
+archive/issue_comments_058295.json:
 ```json
 {
     "body": "That's because cliquer-1.2.spkg is using SCons. The package cliquer-1.2.p0.spkg at #6681 doesn't use SCons at all.",
     "created_at": "2009-09-29T17:00:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7057",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7057#issuecomment-58405",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7057#issuecomment-58295",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -82,15 +81,15 @@ That's because cliquer-1.2.spkg is using SCons. The package cliquer-1.2.p0.spkg 
 
 ---
 
-archive/issue_comments_058406.json:
+archive/issue_comments_058296.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-10-20T13:54:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7057",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7057#issuecomment-58406",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7057#issuecomment-58296",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

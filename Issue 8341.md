@@ -6,15 +6,14 @@ archive/issues_008341.json:
     "body": "Assignee: @williamstein\n\nCC:  whuss @robert-marik\n\nIt seems like this should show a vertical asymptote at x=1, but it doesn't:\n\n\n```\nplot(1/((x-1)^2), (x, -3.5, 3.5), detect_poles='show', ymin = -5, ymax = 5) \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8341\n\n",
     "created_at": "2010-02-24T01:07:10Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "detect_poles doesn't find a vertical asymptote where both sides go to infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8341",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8341
 
 ---
 
-archive/issue_comments_074456.json:
+archive/issue_comments_074332.json:
 ```json
 {
     "body": "It would be nice to fix this. But current detect_poles simply skips the lines with slope close to pi/2 and draws the vertical asyptote, if the function changes sign (skips from -infinity to +infinity). I think that using this idea it is not possible to detect vertical asymptote. \n\nJust some attempts: If we drop the condition which requires change in sign, \nwe get \"interval of asymptotes\" - the asymptote is too thick.\nMaking epsilon smaller introduces problems with other graphs.\n\nThis is the diff with my experiments, if someone is interested\n\n```\ndiff -r a1d167a37d52 sage/plot/plot.py\n--- a/sage/plot/plot.py Thu Feb 25 13:42:16 2010 -0600\n+++ b/sage/plot/plot.py Sat Mar 06 15:23:11 2010 +0100\n@@ -2698,17 +2698,16 @@\n             x0, y0 = exclude_data[i]\n             x1, y1 = exclude_data[i+1]\n             # detect poles\n-            if (not (polar or parametric)) and detect_poles != False \\\n-               and ((y1 > 0 and y0 < 0) or (y1 < 0 and y0 > 0)):\n+            if (not (polar or parametric)) and detect_poles != False:\n                 # calculate the slope of the line segment\n                 dy = abs(y1-y0)\n                 dx = x1 - x0\n                 alpha = (RDF(dy)/RDF(dx)).arctan()\n-                if alpha >= RDF(pi/2) - epsilon:\n+                if alpha >= RDF(pi/2) - 0.00001:\n                     G += line(data[start_index:i], **options)\n                     if detect_poles == 'show':\n                         # draw a vertical asymptote\n-                        G += line([(x0, y0), (x1, y1)], **pole_options)\n+                        G += line([(x0, -1e100), (x1, 1e100)], **pole_options)\n                     start_index = i+2\n```\n",
     "created_at": "2010-03-06T14:26:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8341#issuecomment-74456",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/8341#issuecomment-74332",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -88,15 +87,15 @@ diff -r a1d167a37d52 sage/plot/plot.py
 
 ---
 
-archive/issue_comments_074457.json:
+archive/issue_comments_074333.json:
 ```json
 {
     "body": "See also #3985.",
     "created_at": "2013-01-14T15:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8341",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8341#issuecomment-74457",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/8341#issuecomment-74333",
+    "user": "https://github.com/kcrisman"
 }
 ```
 

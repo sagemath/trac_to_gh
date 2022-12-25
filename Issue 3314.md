@@ -6,15 +6,14 @@ archive/issues_003314.json:
     "body": "Assignee: mabshoff\n\ntwisted changed it's conch interface and I forgot to toString the pubkey object in some instances. \n\nIssue created by migration from https://trac.sagemath.org/ticket/3314\n\n",
     "created_at": "2008-05-27T05:43:21Z",
     "labels": [
-        "Cygwin",
-        "major",
+        "component: cygwin",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.3",
     "title": "dsage.setup() add_default_client broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3314",
-    "user": "@yqiang"
+    "user": "https://github.com/yqiang"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3314
 
 ---
 
-archive/issue_comments_022952.json:
+archive/issue_comments_022904.json:
 ```json
 {
     "body": "Attachment [3314_default_users.patch](tarball://root/attachments/some-uuid/ticket3314/3314_default_users.patch) by @yqiang created at 2008-05-27 06:04:49",
     "created_at": "2008-05-27T06:04:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22952",
-    "user": "@yqiang"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22904",
+    "user": "https://github.com/yqiang"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [3314_default_users.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_022953.json:
+archive/issue_comments_022905.json:
 ```json
 {
     "body": "Changing component from Cygwin to dsage.",
     "created_at": "2008-05-28T12:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22953",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22905",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing component from Cygwin to dsage.
 
 ---
 
-archive/issue_comments_022954.json:
+archive/issue_comments_022906.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @yqiang.",
     "created_at": "2008-05-28T12:04:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22954",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22906",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing assignee from mabshoff to @yqiang.
 
 ---
 
-archive/issue_comments_022955.json:
+archive/issue_comments_022907.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"editor_gfurnish\".",
     "created_at": "2008-06-15T21:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22955",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22907",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -101,15 +100,15 @@ Changing keywords from "" to "editor_gfurnish".
 
 ---
 
-archive/issue_comments_022956.json:
+archive/issue_comments_022908.json:
 ```json
 {
     "body": "DSage is completely broken in 3.0.2 and 3.0.3!!!!!  Make me some patches so that I can actually run dsage.",
     "created_at": "2008-06-16T20:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22956",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22908",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -119,15 +118,15 @@ DSage is completely broken in 3.0.2 and 3.0.3!!!!!  Make me some patches so that
 
 ---
 
-archive/issue_comments_022957.json:
+archive/issue_comments_022909.json:
 ```json
 {
     "body": "DSage is not completely broken in Sage 3.0.2 with the patch applied and in 3.3.0.rc0. If you make claims like that you should back them up with details.\n\nCheers,\n\nMichael",
     "created_at": "2008-06-16T21:50:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22957",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22909",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -141,15 +140,15 @@ Michael
 
 ---
 
-archive/issue_comments_022958.json:
+archive/issue_comments_022910.json:
 ```json
 {
     "body": "If you do not have an existing known good .sage directory with existing dsage materials from some previous version (unknown), dsage is completely broken.",
     "created_at": "2008-06-16T22:15:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22958",
-    "user": "@garyfurnish"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22910",
+    "user": "https://github.com/garyfurnish"
 }
 ```
 
@@ -159,15 +158,15 @@ If you do not have an existing known good .sage directory with existing dsage ma
 
 ---
 
-archive/issue_comments_022959.json:
+archive/issue_comments_022911.json:
 ```json
 {
     "body": "Ok, the bug is the following *after* deleting the dsage directory in DOT_SAGE:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.0.3.rc0$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n| SAGE Version 3.0.3.rc0, Release Date: 2008-06-16                   |\n| Type notebook() for the GUI, and license() for information.        |\nsage: dsage.setup()\n==================================================\nGenerating public/private key pair for authentication...\nYour key will be stored in /home/mabshoff/.sage/dsage/dsage_key\nJust hit enter when prompted for a passphrase\n==================================================\n<SNIP>\nsage: dsage.start_all()\nSpawned twistd -d /home/mabshoff/.sage/dsage --pidfile=server.pid --logfile=/home/mabshoff/.sage/dsage/server.log -y dsage_server.tac (pid = 26784)\n\nSpawned python /scratch/mabshoff/release-cycle/sage-3.0.3.rc0/local/bin/dsage_worker.py -s localhost -p 8087 -u mabshoff -w 2 --poll 1.0 -l 0 -f /home/mabshoff/.sage/dsage/worker.log --privkey=/home/mabshoff/.sage/dsage/dsage_key --pubkey=/home/mabshoff/.sage/dsage/dsage_key.pub --priority=20 --ssl --noblock (pid = 26801)\n\nNot connected.\nsage: \n```\n\n\nThe DSage server log says:\n\n```\n2008-06-16 17:08:52-0700 [-] Log opened.\n2008-06-16 17:08:52-0700 [-] twistd 8.0.1 (/scratch/mabshoff/release-cycle/sage-3.0.3.rc0/local/bin/python 2.5.2) starting up\n2008-06-16 17:08:52-0700 [-] reactor class: <class 'twisted.internet.selectreactor.SelectReactor'>\n2008-06-16 17:08:52-0700 [-] twisted.spread.pb.PBServerFactory starting on 8087\n2008-06-16 17:08:52-0700 [-] Starting factory <twisted.spread.pb.PBServerFactory instance at 0x2b54f6e88998>\n2008-06-16 17:08:52-0700 [-] twisted.web2.channel.http.HTTPFactory starting on 8088\n2008-06-16 17:08:52-0700 [-] Starting factory <twisted.web2.channel.http.HTTPFactory instance at 0x2b54f6e88e60>\n2008-06-16 17:08:52-0700 [Broker,1,127.0.0.1] <client:'mabshoff'> connected\n2008-06-16 17:08:53-0700 [Broker,2,127.0.0.1] <unauthenticated_worker:'Anonymous'> connected\n2008-06-16 17:12:03-0700 [Broker,1,127.0.0.1] <client:'mabshoff'> disconnected\n2008-06-16 17:12:03-0700 [Broker,2,127.0.0.1] <unauthenticated_worker:'Anonymous'> disconnected\n```\n\n\n\nCheers,\n\nMichael",
     "created_at": "2008-06-17T00:15:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22959",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22911",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -222,15 +221,15 @@ Michael
 
 ---
 
-archive/issue_comments_022960.json:
+archive/issue_comments_022912.json:
 ```json
 {
     "body": "Michael, Gary, did you test this after applying the patch I posted?",
     "created_at": "2008-06-17T22:04:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22960",
-    "user": "@yqiang"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22912",
+    "user": "https://github.com/yqiang"
 }
 ```
 
@@ -240,15 +239,15 @@ Michael, Gary, did you test this after applying the patch I posted?
 
 ---
 
-archive/issue_comments_022961.json:
+archive/issue_comments_022913.json:
 ```json
 {
     "body": "Ok. I tried this with 3.0.3rc0 after applying both #3312 and #3314 and can't repro this.",
     "created_at": "2008-06-17T23:00:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22961",
-    "user": "@yqiang"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22913",
+    "user": "https://github.com/yqiang"
 }
 ```
 
@@ -258,15 +257,15 @@ Ok. I tried this with 3.0.3rc0 after applying both #3312 and #3314 and can't rep
 
 ---
 
-archive/issue_comments_022962.json:
+archive/issue_comments_022914.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-18T04:39:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22962",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22914",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -276,15 +275,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_022963.json:
+archive/issue_comments_022915.json:
 ```json
 {
     "body": "Merged in Sage 3.0.3.final",
     "created_at": "2008-06-18T23:18:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3314",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22963",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3314#issuecomment-22915",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

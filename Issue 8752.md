@@ -6,15 +6,14 @@ archive/issues_008752.json:
     "body": "Assignee: @burcin\n\nKeywords: integral, numerical conversion\n\nConsider the following (in sage 4.3.5):\n\n\n```\nsage: integral(exp(-x^2), x, 17, 42)   \n-1/2*sqrt(pi)*erf(17) + 1/2*sqrt(pi)*erf(42)\nsage: N(-1/2*sqrt(pi)*erf(17) + 1/2*sqrt(pi)*erf(42))\n0.000000000000000\n```\n\nBut:\n\n```\nsage: N(integral(exp(-x^2), x, 17, 42))              \n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/opt/sage-4.3.5/<ipython console> in <module>()\n\n/opt/sage-4.3.5/local/lib/python2.6/site-packages/sage/misc/functional.pyc in numerical_approx(x, prec, digits)\n   1161             prec = int((digits+1) * 3.32192) + 1\n   1162     try:\n-> 1163         return x.numerical_approx(prec)\n   1164     except AttributeError:\n   1165         from sage.rings.complex_double import is_ComplexDoubleElement\n\n/opt/sage-4.3.5/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression.n (sage/symbolic/expression.cpp:17043)()\n\nTypeError: cannot evaluate symbolic expression numerically\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8752\n\n",
     "created_at": "2010-04-23T15:33:48Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Can't evaluate numerically symbolic expression resulting from integral().",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8752",
-    "user": "lfousse"
+    "user": "https://trac.sagemath.org/admin/accounts/users/lfousse"
 }
 ```
 Assignee: @burcin
@@ -61,15 +60,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8752
 
 ---
 
-archive/issue_comments_080072.json:
+archive/issue_comments_079942.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-04-23T18:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8752",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8752#issuecomment-80072",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8752#issuecomment-79942",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -79,15 +78,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_080073.json:
+archive/issue_comments_079943.json:
 ```json
 {
     "body": "In 4.4.alpha1:\n\n\n```\nsage: N(integral(exp(-x^2), x, 17, 42))   \n0.000000000000000\n```\n\n\nI believe this was taken care of in #3863.",
     "created_at": "2010-04-23T18:21:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8752",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8752#issuecomment-80073",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/8752#issuecomment-79943",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -106,15 +105,15 @@ I believe this was taken care of in #3863.
 
 ---
 
-archive/issue_comments_080074.json:
+archive/issue_comments_079944.json:
 ```json
 {
     "body": "Indeed, it is fixed. Thanks for the prompt reply, sorry for the duplicate.",
     "created_at": "2010-04-25T09:18:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8752",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8752#issuecomment-80074",
-    "user": "lfousse"
+    "url": "https://github.com/sagemath/sagetest/issues/8752#issuecomment-79944",
+    "user": "https://trac.sagemath.org/admin/accounts/users/lfousse"
 }
 ```
 

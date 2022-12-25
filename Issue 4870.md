@@ -6,7 +6,7 @@ archive/issues_004870.json:
     "body": "Assignee: mabshoff\n\nThis is a followup to #4861 so we don't forget to turn off the FLINT test suite we run automatically.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/4870\n\n",
     "created_at": "2008-12-24T14:00:46Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "blocker",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_004870.json:
     "title": "Sage 3.2.3: turn off FLINT test suite in the final build",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4870",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -33,15 +33,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4870
 
 ---
 
-archive/issue_comments_036888.json:
+archive/issue_comments_036816.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-01-03T06:33:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4870#issuecomment-36888",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4870#issuecomment-36816",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -51,15 +51,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_036889.json:
+archive/issue_comments_036817.json:
 ```json
 {
     "body": "The spkg at\n\nhttp://sage.math.washington.edu/home/mabshoff/release-cycles-3.2.3/final/flint-1.0.21.p0.spkg\n\nturns the test suite off.\n\nCheers,\n\nMichael",
     "created_at": "2009-01-03T06:33:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4870#issuecomment-36889",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4870#issuecomment-36817",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +77,15 @@ Michael
 
 ---
 
-archive/issue_comments_036890.json:
+archive/issue_comments_036818.json:
 ```json
 {
     "body": "Merged in Sage 3.2.3.final",
     "created_at": "2009-01-03T06:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4870#issuecomment-36890",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4870#issuecomment-36818",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -95,15 +95,15 @@ Merged in Sage 3.2.3.final
 
 ---
 
-archive/issue_comments_036891.json:
+archive/issue_comments_036819.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-01-03T06:36:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4870",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4870#issuecomment-36891",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4870#issuecomment-36819",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

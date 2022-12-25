@@ -6,15 +6,14 @@ archive/issues_000457.json:
     "body": "Assignee: @williamstein\n\n\nHello,\n\nthere is another issue with gp:\n\nFile \"gp.py\", line 324:\n   sage: ComplexField(10)(gp(11243.9812+15*I))\nException raised:\n   Traceback (most recent call last):\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/\ndoctest.py\", line 1212, in __run\n       compileflags, 1) in test.globs\n     File \"<doctest __main__.example_10[2]>\", line 1, in <module>\n       ComplexField(Integer(10))(gp(RealNumber('11243.9812')\n+Integer(15)*I))###line 324:\n   sage: ComplexField(10)(gp(11243.9812+15*I))\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/site-\npackages/sage/rings/complex_field.py\", line 178, in __call__\n       return x._complex_mpfr_field_( self )\n     File \"/tmp/Work2/sage-2.8.1/sage-2.8.1/local/lib/python2.5/site-\npackages/sage/interfaces/gp.py\", line 333, in _complex_mpfr_field_\n       return sage.rings.all.ComplexNumber( CC, real, imag )\n   TypeError: an integer is required\n\nCheers,\n\nMichael\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/457\n\n",
     "created_at": "2007-08-19T14:23:17Z",
     "labels": [
-        "interfaces",
-        "major",
+        "component: interfaces",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.2",
     "title": "gp interface: TypeError: an integer is required",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/457",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -57,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/457
 
 ---
 
-archive/issue_comments_002284.json:
+archive/issue_comments_002274.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-08-19T18:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/457#issuecomment-2284",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/457#issuecomment-2274",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -75,15 +74,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_002285.json:
+archive/issue_comments_002275.json:
 ```json
 {
     "body": "it's been fixed now and the fix has been pushed out.",
     "created_at": "2007-08-19T18:49:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/457",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/457#issuecomment-2285",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/457#issuecomment-2275",
+    "user": "https://github.com/williamstein"
 }
 ```
 

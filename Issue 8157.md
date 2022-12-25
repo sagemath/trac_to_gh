@@ -6,15 +6,14 @@ archive/issues_008157.json:
     "body": "Assignee: @aghitza\n\n\n```\nsage: R = RealField(16777217)\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n\n/users/caramel/zimmerma/.sage/temp/patate.loria.fr/31828/_users_caramel_zimmerm\\\na__sage_init_sage_0.py in <module>()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField_constructor (sage/rings/real_mpfr.c:3723)()\n\n/usr/local/sage-core2/local/lib/python2.6/site-packages/sage/rings/real_mpfr.so\\\n in sage.rings.real_mpfr.RealField.__init__ (sage/rings/real_mpfr.c:3945)()\n\nValueError: prec (=16777217) must be >= 2 and <= 16777216.\n```\n\nNote that 2^24 bits is only slightly above 5M digits, which is\nquite small (Fabrice Bellard recently computed 2700 billions of digits of Pi on a personal desktop, i.e., about 500,000 times more).\nof Pi\n\nIssue created by migration from https://trac.sagemath.org/ticket/8157\n\n",
     "created_at": "2010-02-02T21:23:35Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.4",
     "title": "why the bit limit of 2^24 in RealField?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8157",
-    "user": "@zimmermann6"
+    "user": "https://github.com/zimmermann6"
 }
 ```
 Assignee: @aghitza
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8157
 
 ---
 
-archive/issue_comments_071738.json:
+archive/issue_comments_071617.json:
 ```json
 {
     "body": "Attachment [trac_8157.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157.patch) by @zimmermann6 created at 2010-02-23 21:51:07",
     "created_at": "2010-02-23T21:51:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71738",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71617",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -67,15 +66,15 @@ Attachment [trac_8157.patch](tarball://root/attachments/some-uuid/ticket8157/tra
 
 ---
 
-archive/issue_comments_071739.json:
+archive/issue_comments_071618.json:
 ```json
 {
     "body": "The attached patch solves this problem, for example:\n\n```\nsage: time a=n(pi,digits=10^7)\nCPU times: user 113.52 s, sys: 0.22 s, total: 113.73 s\nWall time: 114.21 s\n```\n",
     "created_at": "2010-02-23T21:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71739",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71618",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -92,15 +91,15 @@ Wall time: 114.21 s
 
 ---
 
-archive/issue_comments_071740.json:
+archive/issue_comments_071619.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-23T21:53:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71740",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71619",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -110,15 +109,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_071741.json:
+archive/issue_comments_071620.json:
 ```json
 {
     "body": "Looks good and passes tests.\n\nThe referee patch adds a couple of doctests (bug fixes should be accompanied by doctests so that we don't regress again).  The slightly weird \"OverflowError: ...\" in the second test is due to the fact that the error messages are slightly different on 32-bit than on 64-bit machines.",
     "created_at": "2010-02-25T10:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71741",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71620",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -130,15 +129,15 @@ The referee patch adds a couple of doctests (bug fixes should be accompanied by 
 
 ---
 
-archive/issue_comments_071742.json:
+archive/issue_comments_071621.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-25T10:49:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71742",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71621",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -148,15 +147,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_071743.json:
+archive/issue_comments_071622.json:
 ```json
 {
     "body": "Attachment [trac_8157-doctest.patch](tarball://root/attachments/some-uuid/ticket8157/trac_8157-doctest.patch) by @aghitza created at 2010-02-25 10:49:40\n\napply after the first patch",
     "created_at": "2010-02-25T10:49:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71743",
-    "user": "@aghitza"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71622",
+    "user": "https://github.com/aghitza"
 }
 ```
 
@@ -168,15 +167,15 @@ apply after the first patch
 
 ---
 
-archive/issue_comments_071744.json:
+archive/issue_comments_071623.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-02T21:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71744",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71623",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -186,15 +185,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_071745.json:
+archive/issue_comments_071624.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. [trac_8157.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8157/trac_8157.patch)\n2. [trac_8157-doctest.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8157/trac_8157-doctest.patch)\n\nPaul: I merged [trac_8157.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8157/trac_8157.patch), putting the ticket number in the commit message.",
     "created_at": "2010-03-02T21:11:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71745",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71624",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -209,15 +208,15 @@ Paul: I merged [trac_8157.patch](http://trac.sagemath.org/sage_trac/attachment/t
 
 ---
 
-archive/issue_comments_071746.json:
+archive/issue_comments_071625.json:
 ```json
 {
     "body": "cedille",
     "created_at": "2017-07-19T08:34:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8157",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71746",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/8157#issuecomment-71625",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

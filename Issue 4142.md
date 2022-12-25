@@ -6,15 +6,14 @@ archive/issues_004142.json:
     "body": "Assignee: @burcin\n\nAs discussed in http://groups.google.com/group/sage-devel/browse_thread/thread/7afc9f414413906 , some limits are not evaluated correctly:\n\n\n```\nsage: f = sqrt(1-x^2)\nsage: g = diff(f, x); g\n-x/sqrt(1 - x^2)\nsage: limit(g, x=1, dir='below')\n+Infinity\n```\n\n\nThe last command should give -Infinity, of course, since `f` is a semicircle. At the other endpoint, the limit is correct (+Infinity). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4142\n\n",
     "created_at": "2008-09-18T06:14:18Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "limit bug: should be -Infinity, but gives +Infinity",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4142",
-    "user": "@dandrake"
+    "user": "https://github.com/dandrake"
 }
 ```
 Assignee: @burcin
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4142
 
 ---
 
-archive/issue_comments_030073.json:
+archive/issue_comments_030013.json:
 ```json
 {
     "body": "As it happens, this is still a problem in Sage 4.1.x - but the problem is somewhat more subtle than just some Maxima bug, or Sage incorrectly parsing Maxima output:\n\n```\n(%i1) limit(-x/sqrt(1-x^2),x,1,minus);\n(%o1)                                            infinity\n```\n\nBUT Maxima's infinity is not Sage's infinity; it is the complex infinity!  If the answer is +infinity, Maxima would return 'inf'.   I've asked the Maxima list about this, so we'll see what happens.",
     "created_at": "2009-09-29T16:02:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30073",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30013",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -66,15 +65,15 @@ BUT Maxima's infinity is not Sage's infinity; it is the complex infinity!  If th
 
 ---
 
-archive/issue_comments_030074.json:
+archive/issue_comments_030014.json:
 ```json
 {
     "body": "This is fixed in the latest Maxima CVS version, so whenever we upgrade again, this one will hopefully be closed.\n\n```\nMaxima 5.19post http://maxima.sourceforge.net\nusing Lisp SBCL 1.0.24\nDistributed under the GNU Public License. See the file COPYING.\nDedicated to the memory of William Schelter.\nThe function bug_report() provides bug reporting information.\n(%i1) limit(-x/sqrt(1-x^2),x,1,minus);\n(%o1)                                minf\n```\n",
     "created_at": "2009-10-05T18:13:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30074",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30014",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -95,15 +94,15 @@ The function bug_report() provides bug reporting information.
 
 ---
 
-archive/issue_comments_030075.json:
+archive/issue_comments_030015.json:
 ```json
 {
     "body": "This is now correct in Maxima 5.20.1, so it just needs a doctest once the new spkg is merged.",
     "created_at": "2009-12-22T17:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30075",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30015",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -113,15 +112,15 @@ This is now correct in Maxima 5.20.1, so it just needs a doctest once the new sp
 
 ---
 
-archive/issue_comments_030076.json:
+archive/issue_comments_030016.json:
 ```json
 {
     "body": "The patch here depends on the spkg at #7745 to work properly.  It also depends on the patch there, and at #6423, but will probably still apply if someone forgot to apply them first.",
     "created_at": "2009-12-22T21:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30076",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30016",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -131,15 +130,15 @@ The patch here depends on the spkg at #7745 to work properly.  It also depends o
 
 ---
 
-archive/issue_comments_030077.json:
+archive/issue_comments_030017.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-12-22T21:27:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30077",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30017",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -149,15 +148,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_030078.json:
+archive/issue_comments_030018.json:
 ```json
 {
     "body": "Based on 4.3.alpha1",
     "created_at": "2009-12-22T21:27:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30078",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30018",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -167,15 +166,15 @@ Based on 4.3.alpha1
 
 ---
 
-archive/issue_comments_030079.json:
+archive/issue_comments_030019.json:
 ```json
 {
     "body": "Attachment [trac_4142-limit-sqrt.patch](tarball://root/attachments/some-uuid/ticket4142/trac_4142-limit-sqrt.patch) by @dandrake created at 2009-12-23 08:12:20\n\nThe spkg and patch at #7745 fix this problem, and the doctest passes. Positive review; this can be merged as soon as #7745 is in.",
     "created_at": "2009-12-23T08:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30079",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30019",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -187,15 +186,15 @@ The spkg and patch at #7745 fix this problem, and the doctest passes. Positive r
 
 ---
 
-archive/issue_comments_030080.json:
+archive/issue_comments_030020.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-12-23T08:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30080",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30020",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -205,15 +204,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_030081.json:
+archive/issue_comments_030021.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-04T03:09:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4142",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30081",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4142#issuecomment-30021",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

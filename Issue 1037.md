@@ -6,15 +6,14 @@ archive/issues_001037.json:
     "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nFor example,\n\n\n```\nsage: X([3,2,1])*X([4,3,2,1])\nX[6, 4, 2, 1, 3, 5, 7]\n```\n\n\nshould be\n\n\n```\nsage: X([3,2,1])*X([4,3,2,1])\nX[6, 4, 2, 1, 3, 5]\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1037\n\n",
     "created_at": "2007-10-30T22:49:41Z",
     "labels": [
-        "algebraic geometry",
-        "major",
+        "component: algebraic geometry",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.11",
     "title": "arithmetic with Schubert polynomials includes extra fixed points in the permutations",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1037",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: @williamstein
@@ -47,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1037
 
 ---
 
-archive/issue_comments_006332.json:
+archive/issue_comments_006312.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2007-10-30T23:19:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1037",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6332",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6312",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_006333.json:
+archive/issue_comments_006313.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-11-01T09:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1037",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6333",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6313",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +82,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_006334.json:
+archive/issue_comments_006314.json:
 ```json
 {
     "body": "Attachment [schubert.patch](tarball://root/attachments/some-uuid/ticket1037/schubert.patch) by mabshoff created at 2007-11-01 09:22:16\n\napplied to 2.8.11.alpha0",
     "created_at": "2007-11-01T09:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1037",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6334",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6314",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -103,15 +102,15 @@ applied to 2.8.11.alpha0
 
 ---
 
-archive/issue_comments_006335.json:
+archive/issue_comments_006315.json:
 ```json
 {
     "body": "Changing component from algebraic geometry to combinatorics.",
     "created_at": "2007-11-01T09:22:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1037",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6335",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1037#issuecomment-6315",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

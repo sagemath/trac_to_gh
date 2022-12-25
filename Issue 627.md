@@ -6,7 +6,7 @@ archive/issues_000627.json:
     "body": "Assignee: mabshoff\n\npari needs a single line patch to build properly on 32 bit PPC Linux so that the linker doesn't throw a fit. Aside from trivial DSage that makes all doctests pass on that platform and elevates it to a fully supported platform.\n\nThe obvious next step is to get Sage to also build in 64 bit mode.\n\nA patch will be attached to this ticket in the next 12 hours.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/627\n\n",
     "created_at": "2007-09-09T05:39:28Z",
     "labels": [
-        "packages: standard",
+        "component: packages: standard",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_000627.json:
     "title": "fix pari build on PPC 32bit Linux",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/627",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/627
 
 ---
 
-archive/issue_comments_003221.json:
+archive/issue_comments_003208.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-09T05:39:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/627",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3221",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3208",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -55,15 +55,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_003222.json:
+archive/issue_comments_003209.json:
 ```json
 {
     "body": "A patch for the issue can be found at:\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/patches/pari-add_-fPIC_to_DLCFLAGS_for_PPC_Linux.patch\n\nAn updated pari.spkg can be found at:\n\nhttp://fsmath.mathematik.uni-dortmund.de/~mabshoff/sage/pari-2.3.2.p2.spkg\n\nCheers,\n\nMichael",
     "created_at": "2007-09-09T10:51:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/627",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3222",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3209",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -83,15 +83,15 @@ Michael
 
 ---
 
-archive/issue_comments_003223.json:
+archive/issue_comments_003210.json:
 ```json
 {
     "body": "I made a couple of cosmetic changes to this patch to make pari-2.3.2.p3.spkg, which is available\nat sagemath.org at patches/standard:\n\n1. mv get_dlcflags into patches/\n2. apply get_tdlcflags at build time\n3. put the original get_dlcflags back in src/config, since src/ is supposed to be 100% plain vanilla sources.\n4. did \"hg ci\" which was forgotten.",
     "created_at": "2007-09-09T14:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/627",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3223",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3210",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -107,15 +107,15 @@ at sagemath.org at patches/standard:
 
 ---
 
-archive/issue_comments_003224.json:
+archive/issue_comments_003211.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-09T14:27:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/627",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3224",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3211",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -125,15 +125,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_003225.json:
+archive/issue_comments_003212.json:
 ```json
 {
     "body": "actually the patch is at:\n  http://sage.math.washington.edu/tmp/",
     "created_at": "2007-09-09T14:31:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/627",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3225",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/627#issuecomment-3212",
+    "user": "https://github.com/williamstein"
 }
 ```
 

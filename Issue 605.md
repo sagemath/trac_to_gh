@@ -6,15 +6,14 @@ archive/issues_000605.json:
     "body": "Assignee: was, dmharvey\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/605\n\n",
     "created_at": "2007-09-06T22:17:26Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.4",
     "title": "GMP build -- get the gmp spkg in shape again (in particular, make sure patches are properly applied)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/605",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: was, dmharvey
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/605
 
 ---
 
-archive/issue_comments_003112.json:
+archive/issue_comments_003100.json:
 ```json
 {
     "body": "hopefully this is fixed by the `fastgcd.hg` patch on ticket #424",
     "created_at": "2007-09-07T01:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/605",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/605#issuecomment-3112",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/605#issuecomment-3100",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -47,15 +46,15 @@ hopefully this is fixed by the `fastgcd.hg` patch on ticket #424
 
 ---
 
-archive/issue_comments_003113.json:
+archive/issue_comments_003101.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-09-07T07:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/605",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/605#issuecomment-3113",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/605#issuecomment-3101",
+    "user": "https://github.com/williamstein"
 }
 ```
 

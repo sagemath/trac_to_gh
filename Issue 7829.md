@@ -6,7 +6,7 @@ archive/issues_007829.json:
     "body": "Assignee: @aghitza\n\n\n```\nsage: float(e).hex()\n'0x1.5bf0a8b145769p+1'\nsage: RR(e).hex()\n------------------------------------------------------------\nTraceback (most recent call last):\n  File \"<ipython console>\", line 1, in <module>\nAttributeError: 'sage.rings.real_mpfr.RealNumber' object has no attribute 'hex'\n```\n\n\nThere should probably be a __hex__ method as well, so hex(2.3) works. \n\nIssue created by migration from https://trac.sagemath.org/ticket/7829\n\n",
     "created_at": "2010-01-03T05:37:30Z",
     "labels": [
-        "algebra",
+        "component: algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_007829.json:
     "title": "implement hex for real numbers",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7829",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: @aghitza
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7829
 
 ---
 
-archive/issue_comments_067790.json:
+archive/issue_comments_067673.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2014-05-29T07:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67790",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67673",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -59,15 +59,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_067791.json:
+archive/issue_comments_067674.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2014-05-29T07:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67791",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67674",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -77,15 +77,15 @@ New commits:
 
 ---
 
-archive/issue_comments_067792.json:
+archive/issue_comments_067675.json:
 ```json
 {
     "body": "Changing component from algebra to basic arithmetic.",
     "created_at": "2014-05-29T07:07:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67792",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67675",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -95,15 +95,15 @@ Changing component from algebra to basic arithmetic.
 
 ---
 
-archive/issue_comments_067793.json:
+archive/issue_comments_067676.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-05-29T07:16:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67793",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67676",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -113,15 +113,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_067794.json:
+archive/issue_comments_067677.json:
 ```json
 {
     "body": "Does the C string need to be freed in the error case as well? In that case you could use a finally clause (and just \"return s\")\n\nCould you add a test showing that hex(RR(x)) works too?",
     "created_at": "2014-05-29T16:14:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67794",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67677",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -133,15 +133,15 @@ Could you add a test showing that hex(RR(x)) works too?
 
 ---
 
-archive/issue_comments_067795.json:
+archive/issue_comments_067678.json:
 ```json
 {
     "body": "Just a short comment: I think the new syntax for exceptions should be used, i.e. `raise RuntimeError(\"...\")`.",
     "created_at": "2014-05-29T18:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67795",
-    "user": "jkeitel"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67678",
+    "user": "https://trac.sagemath.org/admin/accounts/users/jkeitel"
 }
 ```
 
@@ -151,15 +151,15 @@ Just a short comment: I think the new syntax for exceptions should be used, i.e.
 
 ---
 
-archive/issue_comments_067796.json:
+archive/issue_comments_067679.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2014-05-30T07:55:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67796",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67679",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -169,15 +169,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_067797.json:
+archive/issue_comments_067680.json:
 ```json
 {
     "body": "Replying to [comment:3 robertwb]:\n> Does the C string need to be freed in the error case as well?\n\nAs far as I understand, no, it doesn't.\n\n> Could you add a test showing that hex(RR(x)) works too?\n\nDone.\n\n\nReplying to [comment:4 jkeitel]:\n> I think the new syntax for exceptions should be used, i.e. raise RuntimeError(\"...\").\n\nFixed, thanks!",
     "created_at": "2014-05-30T07:56:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67797",
-    "user": "@mezzarobba"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67680",
+    "user": "https://github.com/mezzarobba"
 }
 ```
 
@@ -200,15 +200,15 @@ Fixed, thanks!
 
 ---
 
-archive/issue_comments_067798.json:
+archive/issue_comments_067681.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2014-06-04T07:24:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67798",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67681",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -218,15 +218,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_067799.json:
+archive/issue_comments_067682.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2014-06-04T14:48:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7829",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67799",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7829#issuecomment-67682",
+    "user": "https://github.com/vbraun"
 }
 ```
 

@@ -6,15 +6,13 @@ archive/issues_009216.json:
     "body": "Assignee: @seblabbe\n\nCC:  sage-combinat\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9216\n\n",
     "created_at": "2010-06-11T11:47:38Z",
     "labels": [
-        "documentation",
-        "major",
-        "enhancement"
+        "component: documentation"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5.2",
     "title": "Bring doc coverage of groups/group.pyx to 100%",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9216",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: @seblabbe
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9216
 
 ---
 
-archive/issue_comments_086357.json:
+archive/issue_comments_086219.json:
 ```json
 {
     "body": "Attachment [trac_9216_doc_group_pyx-sl.patch](tarball://root/attachments/some-uuid/ticket9216/trac_9216_doc_group_pyx-sl.patch) by @seblabbe created at 2010-06-11 11:50:55",
     "created_at": "2010-06-11T11:50:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86357",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86219",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -49,15 +47,15 @@ Attachment [trac_9216_doc_group_pyx-sl.patch](tarball://root/attachments/some-uu
 
 ---
 
-archive/issue_comments_086358.json:
+archive/issue_comments_086220.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-11T11:53:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86358",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86220",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -67,15 +65,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_086359.json:
+archive/issue_comments_086221.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-11T14:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86359",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86221",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -85,15 +83,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_086360.json:
+archive/issue_comments_086222.json:
 ```json
 {
     "body": "ok.\n\nreviewed against 4.4.3.",
     "created_at": "2010-06-11T14:13:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86360",
-    "user": "@saliola"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86222",
+    "user": "https://github.com/saliola"
 }
 ```
 
@@ -105,15 +103,15 @@ reviewed against 4.4.3.
 
 ---
 
-archive/issue_comments_086361.json:
+archive/issue_comments_086223.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-07-06T09:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86361",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86223",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -123,15 +121,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_086362.json:
+archive/issue_comments_086224.json:
 ```json
 {
     "body": "Perhaps you should have an example of `__contains__` working, not just failing. Should just return true or false, right?\n\n-- RLM, and the audience at SD 23.",
     "created_at": "2010-07-06T09:39:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86362",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86224",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -143,15 +141,15 @@ Perhaps you should have an example of `__contains__` working, not just failing. 
 
 ---
 
-archive/issue_comments_086363.json:
+archive/issue_comments_086225.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2010-07-06T09:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86363",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86225",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -161,15 +159,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_086364.json:
+archive/issue_comments_086226.json:
 ```json
 {
     "body": "Oops -- WJP just pointed out that I was wrong.",
     "created_at": "2010-07-06T09:41:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86364",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86226",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -179,15 +177,15 @@ Oops -- WJP just pointed out that I was wrong.
 
 ---
 
-archive/issue_comments_086365.json:
+archive/issue_comments_086227.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-21T09:55:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9216",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86365",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9216#issuecomment-86227",
+    "user": "https://github.com/qed777"
 }
 ```
 

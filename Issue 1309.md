@@ -6,15 +6,13 @@ archive/issues_001309.json:
     "body": "Assignee: @rlmill\n\nKeywords: graphs\n\nFrom Chris Godsil's wishlist (with final reply by Robert Miller):\n\n\n```\n> \n>>> A database of trees, or a generator for trees. I think it would be\n>>> reasonably\n>>> straightforward to generate rooted trees, and hence get trees. The\n>>> generators\n>>> would be more useful than the database. It is not impossible that\n>>> something\n>>> in the nauty package generates trees.\n> If you look into the code that graphs(7) calls, you will notice that\n> you can pass it any vertex-hereditary property, including being a\n> tree. So in some sense, this is already implemented. However, this\n> could be its own constructor, and more importantly, I know of a way to\n> optimize the generation of trees to go much faster than it would with\n> what I described above. Create a ticket, and assign it to me.\n> \n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1309\n\n",
     "created_at": "2007-11-28T19:58:44Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "[graphs] generate trees",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1309",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @rlmill
@@ -52,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1309
 
 ---
 
-archive/issue_comments_008238.json:
+archive/issue_comments_008214.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-02T04:52:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1309",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8238",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8214",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -70,15 +68,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_008239.json:
+archive/issue_comments_008215.json:
 ```json
 {
     "body": "There are still significant bugs from the patch from\n\nhttp://trac.sagemath.org/sage_trac/ticket/1361\n\nthat I am working on now. I discovered them while implementing this ticket, so the fixes will be in the patch for this.",
     "created_at": "2007-12-02T21:59:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1309",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8239",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8215",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -92,15 +90,15 @@ that I am working on now. I discovered them while implementing this ticket, so t
 
 ---
 
-archive/issue_comments_008240.json:
+archive/issue_comments_008216.json:
 ```json
 {
     "body": "Attachment [trees.patch](tarball://root/attachments/some-uuid/ticket1309/trees.patch) by @rlmill created at 2007-12-03 01:53:26",
     "created_at": "2007-12-03T01:53:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1309",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8240",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8216",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -110,15 +108,15 @@ Attachment [trees.patch](tarball://root/attachments/some-uuid/ticket1309/trees.p
 
 ---
 
-archive/issue_comments_008241.json:
+archive/issue_comments_008217.json:
 ```json
 {
     "body": "Merged in 2.8.15.rc0.",
     "created_at": "2007-12-03T02:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1309",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8241",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8217",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -128,15 +126,15 @@ Merged in 2.8.15.rc0.
 
 ---
 
-archive/issue_comments_008242.json:
+archive/issue_comments_008218.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-03T02:07:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1309",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8242",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1309#issuecomment-8218",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

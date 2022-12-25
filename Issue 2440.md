@@ -6,7 +6,7 @@ archive/issues_002440.json:
     "body": "Assignee: @cswiercz\n\nKeywords: docstring, doctest\n\nProvide missing docstrings and doctests for rings/quotient_ring.py.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2440\n\n",
     "created_at": "2008-03-09T18:38:38Z",
     "labels": [
-        "doctest coverage",
+        "component: doctest coverage",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_002440.json:
     "title": "Doctests for rings/quotient_ring.py",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2440",
-    "user": "@cswiercz"
+    "user": "https://github.com/cswiercz"
 }
 ```
 Assignee: @cswiercz
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2440
 
 ---
 
-archive/issue_comments_016506.json:
+archive/issue_comments_016471.json:
 ```json
 {
     "body": "When testing QuotientRing_generic.cover_ring, I ran into an issue with evaluating the cover ring of a polynomial quotient ring. Apparently, the PolynomialQuotientRings_field object doesn't have a \"cover_ring\" function! Can the class just \"borrow\" from the QuotientRing_generic class?",
     "created_at": "2008-03-09T19:01:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16506",
-    "user": "@cswiercz"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16471",
+    "user": "https://github.com/cswiercz"
 }
 ```
 
@@ -49,15 +49,15 @@ When testing QuotientRing_generic.cover_ring, I ran into an issue with evaluatin
 
 ---
 
-archive/issue_comments_016507.json:
+archive/issue_comments_016472.json:
 ```json
 {
     "body": "The above observation was written as a TODO in rings/quotient_ring.py under the cover_ring function.",
     "created_at": "2008-03-09T19:02:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16507",
-    "user": "@cswiercz"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16472",
+    "user": "https://github.com/cswiercz"
 }
 ```
 
@@ -67,15 +67,15 @@ The above observation was written as a TODO in rings/quotient_ring.py under the 
 
 ---
 
-archive/issue_comments_016508.json:
+archive/issue_comments_016473.json:
 ```json
 {
     "body": "Looking at the code for QuotientRing_generic.ideal, it seems that this is not the \"general\" code for creating an ideal in a ring. There are several Singular related calls. I'm not sure what some of these things mean so hopefully someone will be willing to take a look and provide some documentation.",
     "created_at": "2008-03-09T19:08:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16508",
-    "user": "@cswiercz"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16473",
+    "user": "https://github.com/cswiercz"
 }
 ```
 
@@ -85,15 +85,15 @@ Looking at the code for QuotientRing_generic.ideal, it seems that this is not th
 
 ---
 
-archive/issue_comments_016509.json:
+archive/issue_comments_016474.json:
 ```json
 {
     "body": "Docstrings and doctests for non-underscore functions in rings/quotient_ring.py. Some functions returning NotImplementedError have been documented as TODO items.",
     "created_at": "2008-03-09T19:35:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16509",
-    "user": "@cswiercz"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16474",
+    "user": "https://github.com/cswiercz"
 }
 ```
 
@@ -103,15 +103,15 @@ Docstrings and doctests for non-underscore functions in rings/quotient_ring.py. 
 
 ---
 
-archive/issue_comments_016510.json:
+archive/issue_comments_016475.json:
 ```json
 {
     "body": "Attachment [rings.quotient_ring.patch](tarball://root/attachments/some-uuid/ticket2440/rings.quotient_ring.patch) by @cswiercz created at 2008-03-09 19:38:43",
     "created_at": "2008-03-09T19:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16510",
-    "user": "@cswiercz"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16475",
+    "user": "https://github.com/cswiercz"
 }
 ```
 
@@ -121,15 +121,15 @@ Attachment [rings.quotient_ring.patch](tarball://root/attachments/some-uuid/tick
 
 ---
 
-archive/issue_comments_016511.json:
+archive/issue_comments_016476.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-03-09T19:38:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16511",
-    "user": "@cswiercz"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16476",
+    "user": "https://github.com/cswiercz"
 }
 ```
 
@@ -139,15 +139,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_016512.json:
+archive/issue_comments_016477.json:
 ```json
 {
     "body": "Review:\n\nExcellent.\n\nAbout characteristic():  should not be hard to implement in at least one case:  Set c = self.base_ring().characteristic().  If c is prime then self's char is also p.  If c>0 but is not prime one could loop through divisors d of c to see if self(d)==self(0).   But if c==0 I cannot see an easy way of doing this.\n\nAbout gens(): I agree that it is not nice having 0 in the list of gens, but deleting them would break the correspondance between the gens of R and the gens of R/I, which the user will probably expect.\n\nI also noticed one thing which is not purely a docstring/test:  when R is a field you inserted a short-cut.  That looks fine to me.\n\nPositive review, should be accepted.",
     "created_at": "2008-03-09T20:37:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16512",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16477",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -167,15 +167,15 @@ Positive review, should be accepted.
 
 ---
 
-archive/issue_comments_016513.json:
+archive/issue_comments_016478.json:
 ```json
 {
     "body": "Merged in Sage 2.10.3.rc4",
     "created_at": "2008-03-09T21:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16513",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16478",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -185,15 +185,15 @@ Merged in Sage 2.10.3.rc4
 
 ---
 
-archive/issue_comments_016514.json:
+archive/issue_comments_016479.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-09T21:04:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2440",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16514",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2440#issuecomment-16479",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

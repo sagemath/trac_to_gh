@@ -6,15 +6,14 @@ archive/issues_005265.json:
     "body": "Assignee: mabshoff\n\nRight now we link the matrix_mod2_dense.pyx aginst libpng:\n\n```\n     Extension('sage.matrix.matrix_mod2_dense',\n               sources = ['sage/matrix/matrix_mod2_dense.pyx'],\n               libraries = ['gmp','m4ri', 'png', 'gd']),\n```\n\nWe need to link against png12 since the new libpng.spkg will only provide libpng12.*.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5265\n\n",
     "created_at": "2009-02-14T09:53:07Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.3",
     "title": "Link the matrix_mod2_dense extension against png12",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5265",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5265
 
 ---
 
-archive/issue_comments_040419.json:
+archive/issue_comments_040340.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-14T09:53:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40419",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40340",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -59,15 +58,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_040420.json:
+archive/issue_comments_040341.json:
 ```json
 {
     "body": "Attachment [trac_5265.patch](tarball://root/attachments/some-uuid/ticket5265/trac_5265.patch) by mabshoff created at 2009-02-14 09:54:45",
     "created_at": "2009-02-14T09:54:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40420",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40341",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -77,15 +76,15 @@ Attachment [trac_5265.patch](tarball://root/attachments/some-uuid/ticket5265/tra
 
 ---
 
-archive/issue_comments_040421.json:
+archive/issue_comments_040342.json:
 ```json
 {
     "body": "Attachment [trac_5265-part2.patch](tarball://root/attachments/some-uuid/ticket5265/trac_5265-part2.patch) by mabshoff created at 2009-02-14 10:01:03\n\nPlease review both patches. The second patch is needed to make 100% the extension is rebuild in case of an upgrade. Sorry for the two patches, but I couldn't fold them since I committed the first one to my local repo already.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T10:01:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40421",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40342",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -101,15 +100,15 @@ Michael
 
 ---
 
-archive/issue_comments_040422.json:
+archive/issue_comments_040343.json:
 ```json
 {
     "body": "I applied both patches, touched matrix_mod2_dense.pyx, did sage -b, and then ran the tests in matrix_mod2_dense.pyx, and everything passed.  If that's all that is needed to review this patch, then positive review.  If not, the take my positive review off.",
     "created_at": "2009-02-14T10:11:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40422",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40343",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -119,15 +118,15 @@ I applied both patches, touched matrix_mod2_dense.pyx, did sage -b, and then ran
 
 ---
 
-archive/issue_comments_040423.json:
+archive/issue_comments_040344.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-02-14T13:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40423",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40344",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -137,15 +136,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_040424.json:
+archive/issue_comments_040345.json:
 ```json
 {
     "body": "Merged both patches in Sage 3.3.rc1.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-14T13:24:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5265",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40424",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5265#issuecomment-40345",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

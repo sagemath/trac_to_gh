@@ -6,15 +6,13 @@ archive/issues_005993.json:
     "body": "Assignee: @burcin\n\nThis email snippet pretty much describes the issue:\n\n```\n\n\nOn Tue, May 5, 2009 at 11:16 PM, Henryk Trappmann <bo198214@googlemail.com> wrote:\n>\n> Ah now I see, you mean though it displays 1/384 it is internally still\n> the above sum, which is computed when evaluated with n.\n\nTrue.  In Sage right now the internal form of the expression (not the simplified form) is used by the \"n\" command.  This will change when Sage switches from using maxima-based symbolics to Pynac. \n\nBy the way, you can use the real interval field to get a floating point approximation to any symbolic expression to a given number of digits of precision.  Every digit is definitely right except the one right before the question mark:\n\nsage: a = 1/(48*sqrt(1)) - 7/(96*1**(3/2)) + 3/(32*1**(5/2)) - 5/ (128*1**(7/2))\nsage: RealIntervalField(100)(a)             # increase 100 for more digits\n0.002604166666666666666666666667?\n\nI think the n function (numerical_approx) for symbolics should be changed to using interval arithmetic.  This will be a huge improvement.  Notice, e.g., that interval arithmetic very nicely gives the right answer for the infamous sin(10^50):\n\nsage: a = sin(10^50)\nsage: a.n(53)\n-0.480500143493759\nsage: a.n(100)\n0.60974154556722786199645650055\nsage: RealIntervalField(100)(a)\n0.?\nsage: RealIntervalField(1000)(a)\n-0.7896724934293100827102895399174077539600834046214027191457808736221899969800609898633436757589688470442999273506152178357769064871103469499564331175635613221319397479785737324994506546860108913238488404198306006819757685879489185272089985858148036954222175628785469474395231359019098600625732453528693?\nsage: RealIntervalField(2000)(a)\n-0.78967249342931008271028953991740775396008340462140271914578087362218999698006098986334367575896884704429992735061521783577690648711034694995643311756356132213193974797857373249945065468601089132384884041983060068197576858794891852720899858581480369542221756287854694743952313590190986006257324535286926640214204183176856658976160340849634781130568053474154330242776565926107540133198976420887112928640131582614537425282391078909233424580311555104358881651194953182665408243214532152322603956371555619997139323527489307648072219268176687894373677502675114853503742816202001868587837402822439060931321957?\n\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5993\n\n",
     "created_at": "2009-05-06T06:30:59Z",
     "labels": [
-        "calculus",
-        "major",
-        "enhancement"
+        "component: calculus"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "rewrite numerical_approx (the n function) to use interval arithmetic",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5993",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @burcin
@@ -64,15 +62,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5993
 
 ---
 
-archive/issue_comments_047628.json:
+archive/issue_comments_047537.json:
 ```json
 {
     "body": "Disagree, primarily because it's been this way for quite a while now, and because a lot of users would be *really* confused by the question mark.  We certainly could update the documentation to make it clear how to get much more accurate answers using RIF.",
     "created_at": "2011-03-16T15:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5993#issuecomment-47628",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5993#issuecomment-47537",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -82,15 +80,15 @@ Disagree, primarily because it's been this way for quite a while now, and becaus
 
 ---
 
-archive/issue_comments_047629.json:
+archive/issue_comments_047538.json:
 ```json
 {
     "body": "Changing priority from major to minor.",
     "created_at": "2011-03-16T15:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5993#issuecomment-47629",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/5993#issuecomment-47538",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -100,15 +98,15 @@ Changing priority from major to minor.
 
 ---
 
-archive/issue_comments_047630.json:
+archive/issue_comments_047539.json:
 ```json
 {
     "body": "Changing assignee from @burcin to mvngu.",
     "created_at": "2015-02-01T15:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5993#issuecomment-47630",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/5993#issuecomment-47539",
+    "user": "https://github.com/rwst"
 }
 ```
 
@@ -118,15 +116,15 @@ Changing assignee from @burcin to mvngu.
 
 ---
 
-archive/issue_comments_047631.json:
+archive/issue_comments_047540.json:
 ```json
 {
     "body": "Changing component from calculus to documentation.",
     "created_at": "2015-02-01T15:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5993",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5993#issuecomment-47631",
-    "user": "@rwst"
+    "url": "https://github.com/sagemath/sagetest/issues/5993#issuecomment-47540",
+    "user": "https://github.com/rwst"
 }
 ```
 

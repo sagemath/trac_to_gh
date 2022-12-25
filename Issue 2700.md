@@ -6,15 +6,14 @@ archive/issues_002700.json:
     "body": "Assignee: @williamstein\n\n\n```\n>>  I have tried to plot a graphic in the notebook with a small scale (<1)\n>>  and it end up by showing up nothing:\n>>    sage: var('x')\n>>    sage: plot(sin(x), 0, 0.01)\n>>\n> \n> Try this:\n> \n> sage: plot(sin(x), 0, 0.01).show(0,0.01, 0, 0.01)\n> \n> The problem is plot's default scale isn't good enough.  using show you can force\n> something more useful.\n\n\n(turning this into a dev discussion :)\n\nYou know, we do evaluate the function for lots of points in the interval, so we ought to have a pretty intelligent idea of the max and min of the function.  This ought to let us get a pretty good guess at a ymin and ymax.  If we really wanted to get fancy, we could do a small statistical analysis to throw out outliers too.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2700\n\n",
     "created_at": "2008-03-28T17:13:40Z",
     "labels": [
-        "graphics",
-        "minor",
-        "enhancement"
+        "component: graphics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1",
     "title": "scaling y-axis of plots to fit the data",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2700",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2700
 
 ---
 
-archive/issue_comments_018623.json:
+archive/issue_comments_018584.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-02T19:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2700#issuecomment-18623",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2700#issuecomment-18584",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -67,15 +66,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018624.json:
+archive/issue_comments_018585.json:
 ```json
 {
     "body": "This was fixed by #3806.",
     "created_at": "2008-09-02T19:49:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2700",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2700#issuecomment-18624",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2700#issuecomment-18585",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

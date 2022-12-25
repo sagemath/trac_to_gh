@@ -6,7 +6,7 @@ archive/issues_001807.json:
     "body": "Assignee: tba\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1807\n\n",
     "created_at": "2008-01-17T20:18:04Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_001807.json:
     "title": "fix combinatorics section of the reference manual",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1807",
-    "user": "@mwhansen"
+    "user": "https://github.com/mwhansen"
 }
 ```
 Assignee: tba
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1807
 
 ---
 
-archive/issue_comments_011432.json:
+archive/issue_comments_011403.json:
 ```json
 {
     "body": "Attachment [1807-doc.patch](tarball://root/attachments/some-uuid/ticket1807/1807-doc.patch) by @mwhansen created at 2008-01-17 20:20:06\n\nAlso, the following commands need to be run under ref/\n\n\n\n```\ntouch sage.combinat.sf.sfa.tex\ntouch sage.combinat.sf.kfpoly.tex\ntouch sage.combinat.sf.hall-littlewood.tex\n```\n",
     "created_at": "2008-01-17T20:20:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1807#issuecomment-11432",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/1807#issuecomment-11403",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -58,15 +58,15 @@ touch sage.combinat.sf.hall-littlewood.tex
 
 ---
 
-archive/issue_comments_011433.json:
+archive/issue_comments_011404.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-01-17T20:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1807#issuecomment-11433",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1807#issuecomment-11404",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -76,15 +76,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_011434.json:
+archive/issue_comments_011405.json:
 ```json
 {
     "body": "Merged in Sage 2.10.alpha4",
     "created_at": "2008-01-17T20:34:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1807",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1807#issuecomment-11434",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1807#issuecomment-11405",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

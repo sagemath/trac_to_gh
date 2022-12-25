@@ -6,15 +6,14 @@ archive/issues_008655.json:
     "body": "Assignee: jason, ncohen, rlm\n\n\n```\nsage: G = Graph(multiedges=True)\nsage: G.add_edge(0,1)\nsage: G.add_edge(0,1)\nsage: G.genus()\n1\nsage: G.to_simple().genus()\n0\n```\n\n\nAdding parallel edges to a graph never changes the minimal genus.  I'm concerned that genus() might be entirely broken... but maybe it's just on multigraphs?  At the very least, removing parallel edges will speed things up and fix this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8655\n\n",
     "created_at": "2010-04-06T19:42:13Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "Fix graph genus (broken on multigraphs?)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8655",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8655
 
 ---
 
-archive/issue_comments_078536.json:
+archive/issue_comments_078406.json:
 ```json
 {
     "body": "Attachment [8655_genus.patch](tarball://root/attachments/some-uuid/ticket8655/8655_genus.patch) by boothby created at 2010-05-21 21:32:12\n\nDepends on #8691",
     "created_at": "2010-05-21T21:32:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78536",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78406",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -61,15 +60,15 @@ Depends on #8691
 
 ---
 
-archive/issue_comments_078537.json:
+archive/issue_comments_078407.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-21T21:35:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78537",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78407",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -79,15 +78,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_078538.json:
+archive/issue_comments_078408.json:
 ```json
 {
     "body": "Everything applies cleanly and tests pass. I'll be willing to give this the thumbs up if the author wants to walk me through the code a little at Sage Days.",
     "created_at": "2010-05-25T23:55:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78538",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78408",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -97,15 +96,15 @@ Everything applies cleanly and tests pass. I'll be willing to give this the thum
 
 ---
 
-archive/issue_comments_078539.json:
+archive/issue_comments_078409.json:
 ```json
 {
     "body": "Changing assignee from jason, ncohen, rlm to @rlmill.",
     "created_at": "2010-05-27T21:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78539",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78409",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -115,15 +114,15 @@ Changing assignee from jason, ncohen, rlm to @rlmill.
 
 ---
 
-archive/issue_comments_078540.json:
+archive/issue_comments_078410.json:
 ```json
 {
     "body": "line 220 (raise MemoryError, \"Error allocating memory for graph genus a\")\nalso 228 (...)\n\n --> insert comment regarding free-ing automatically via dealloc\n\n\nline 231 -> probably a bitset way to do this faster\n\n\nline 296 -> memcpy = better good doing thing\n\ncdef list darts_to_verts (orbit_v?) in line 327",
     "created_at": "2010-05-27T21:48:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78540",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78410",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -144,15 +143,15 @@ cdef list darts_to_verts (orbit_v?) in line 327
 
 ---
 
-archive/issue_comments_078541.json:
+archive/issue_comments_078411.json:
 ```json
 {
     "body": "ammendments to satisfy reviewer",
     "created_at": "2010-05-27T22:48:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78541",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78411",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -162,15 +161,15 @@ ammendments to satisfy reviewer
 
 ---
 
-archive/issue_comments_078542.json:
+archive/issue_comments_078412.json:
 ```json
 {
     "body": "Attachment [8655_genus_2.patch](tarball://root/attachments/some-uuid/ticket8655/8655_genus_2.patch) by boothby created at 2010-05-27 22:49:29\n\nRegarding \"line 231 -> probably a bitset way to do this faster\", I agree, there probably is, but I'd rather not peek any further into the cgraph structure than necessary.",
     "created_at": "2010-05-27T22:49:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78542",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78412",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -182,15 +181,15 @@ Regarding "line 231 -> probably a bitset way to do this faster", I agree, there 
 
 ---
 
-archive/issue_comments_078543.json:
+archive/issue_comments_078413.json:
 ```json
 {
     "body": "Maths speeds up!",
     "created_at": "2010-05-27T23:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78543",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78413",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -200,15 +199,15 @@ Maths speeds up!
 
 ---
 
-archive/issue_comments_078544.json:
+archive/issue_comments_078414.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-27T23:03:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78544",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78414",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -218,15 +217,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_078545.json:
+archive/issue_comments_078415.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-05T22:07:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8655",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78545",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8655#issuecomment-78415",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

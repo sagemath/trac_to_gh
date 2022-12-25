@@ -6,15 +6,14 @@ archive/issues_003471.json:
     "body": "Assignee: @rlmill\n\nAs promised at Sage Days 7.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3471\n\n",
     "created_at": "2008-06-19T19:23:00Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0.4",
     "title": "[with patch, needs review] Backends for compiled graph structures",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3471",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: @rlmill
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3471
 
 ---
 
-archive/issue_comments_024473.json:
+archive/issue_comments_024424.json:
 ```json
 {
     "body": "Attachment [trac3471-graph_backends_flat.patch](tarball://root/attachments/some-uuid/ticket3471/trac3471-graph_backends_flat.patch) by @rlmill created at 2008-06-20 17:35:11\n\nReplaces the previous two patches.",
     "created_at": "2008-06-20T17:35:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24473",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24424",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -49,15 +48,15 @@ Replaces the previous two patches.
 
 ---
 
-archive/issue_comments_024474.json:
+archive/issue_comments_024425.json:
 ```json
 {
     "body": "+1",
     "created_at": "2008-06-22T07:15:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24474",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24425",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -67,15 +66,15 @@ archive/issue_comments_024474.json:
 
 ---
 
-archive/issue_comments_024475.json:
+archive/issue_comments_024426.json:
 ```json
 {
     "body": "Merged in Sage 3.0.4.alpha0",
     "created_at": "2008-06-23T03:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24475",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24426",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -85,15 +84,15 @@ Merged in Sage 3.0.4.alpha0
 
 ---
 
-archive/issue_comments_024476.json:
+archive/issue_comments_024427.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-06-23T03:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3471",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24476",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3471#issuecomment-24427",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

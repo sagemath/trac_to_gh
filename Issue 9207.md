@@ -6,7 +6,7 @@ archive/issues_009207.json:
     "body": "Assignee: @malb\n\nrandom_element does not work for BooleanPolynomialRing of degree 1 or 2; for example,\n\n\n```\nsage: n = 2\nsage: S = BooleanPolynomialRing(n,'y','lex')\nsage: S.random_element()\n---------------------------------------------------------------------------\nValueError                                Traceback (most recent call last)\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9207\n\n",
     "created_at": "2010-06-10T20:03:45Z",
     "labels": [
-        "commutative algebra",
+        "component: commutative algebra",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_009207.json:
     "title": "random_element does not work for BooleanPolynomialRing of degree 1 or 2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9207",
-    "user": "mariah"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 Assignee: @malb
@@ -39,15 +39,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9207
 
 ---
 
-archive/issue_comments_086172.json:
+archive/issue_comments_086034.json:
 ```json
 {
     "body": "Attachment [trac_9207.patch](tarball://root/attachments/some-uuid/ticket9207/trac_9207.patch) by @malb created at 2010-07-12 15:53:34",
     "created_at": "2010-07-12T15:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86172",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86034",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -57,15 +57,15 @@ Attachment [trac_9207.patch](tarball://root/attachments/some-uuid/ticket9207/tra
 
 ---
 
-archive/issue_comments_086173.json:
+archive/issue_comments_086035.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-07-12T15:53:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86173",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86035",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -75,15 +75,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_086174.json:
+archive/issue_comments_086036.json:
 ```json
 {
     "body": "\n```\nThis patch fixed the reported problem.\n\nsage-4.4.4.1 with this patch pass all tests\nwhen I do 'make testlong'\n\nThe patch code looks reasonable.\n\nPositive review.\n```\n",
     "created_at": "2010-07-13T14:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86174",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86036",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -104,15 +104,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_086175.json:
+archive/issue_comments_086037.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-07-13T14:13:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86175",
-    "user": "mariah"
+    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86037",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mariah"
 }
 ```
 
@@ -122,15 +122,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_086176.json:
+archive/issue_comments_086038.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-21T01:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9207",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86176",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/9207#issuecomment-86038",
+    "user": "https://github.com/qed777"
 }
 ```
 

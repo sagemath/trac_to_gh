@@ -6,15 +6,14 @@ archive/issues_009189.json:
     "body": "Assignee: GeorgSWeber\n\n\n```\nHi Maurice,\n\n> I'm trying to install sage-4.3.3 on fedora 13.\n> Compiling the source i got the message :\n> ------------------------------------------------------------------------\n>\n> /usr/bin/ld: register.o: undefined reference to symbol 'gpg_strerror'\n> /usr/bin/ld: note: 'gpg_strerror' is defined in DSO\n> /home/maurice/Public/sage-4.3.3/local/lib/libgpg-error.so.0 so try\n> adding it to the linker command line\n> /home/maurice/Public/sage-4.3.3/local/lib/libgpg-error.so.0: could not\n> read symbols: Invalid operation\n> collect2: ld returned 1 exit status\n> make[4]: *** [register] Erreur 1\n> make[4]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src/tests \u00bb\n> make[3]: *** [all-recursive] Erreur 1\n> make[3]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src \u00bb\n> make[2]: *** [all] Erreur 2\n> make[2]: quittant le r\u00e9pertoire \u00ab\n> /home/maurice/Public/sage-4.3.3/spkg/build/libgcrypt-1.4.4.p2/src \u00bb\n> failed to build libgcrypt\n>\n> real 1m51.070s\n> user 1m4.656s\n> sys 0m33.780s\n>\n> ------------------------------------------------------------------------\n>\n> If somebody knows what is missing ...\n> Thanks\n> Maurice\n>\n>\n\nSame here on Fedora 13, 32 bit. I'll open a ticket.\n\nJaap\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9189\n\n",
     "created_at": "2010-06-08T14:07:19Z",
     "labels": [
-        "build",
-        "major",
+        "component: build",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4.4",
     "title": "libgcrypt fails to build on Fedora 13",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9189",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: GeorgSWeber
@@ -73,15 +72,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9189
 
 ---
 
-archive/issue_comments_085987.json:
+archive/issue_comments_085849.json:
 ```json
 {
     "body": "See http://groups.google.com/group/sage-support/browse_thread/thread/98ca4f3f25e223e9/a87f3e4c536871e0?lnk=raot for info on a fix.",
     "created_at": "2010-06-08T18:31:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85987",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85849",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -91,15 +90,15 @@ See http://groups.google.com/group/sage-support/browse_thread/thread/98ca4f3f25e
 
 ---
 
-archive/issue_comments_085988.json:
+archive/issue_comments_085850.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-06-08T19:19:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85988",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85850",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -109,15 +108,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_085989.json:
+archive/issue_comments_085851.json:
 ```json
 {
     "body": "I've put an spkg at http://sage.math.washington.edu/home/mhansen/libgcrypt-1.4.4.p3.spkg which should hopefully fix this issue.  I don't have access to a Fedora 13 box so someone needs to test it.",
     "created_at": "2010-06-08T19:19:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85989",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85851",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -127,15 +126,15 @@ I've put an spkg at http://sage.math.washington.edu/home/mhansen/libgcrypt-1.4.4
 
 ---
 
-archive/issue_comments_085990.json:
+archive/issue_comments_085852.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-08T20:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85990",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85852",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -145,15 +144,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_085991.json:
+archive/issue_comments_085853.json:
 ```json
 {
     "body": "This works on Fedora 13, 32 bit\n\n\n```\nSuccessfully installed libgcrypt-1.4.4.p3\nYou can safely delete the temporary build directory\n/home/jaap/downloads/sage-4.4.3/spkg/build/libgcrypt-1.4.4.p3\nMaking Sage/Python scripts relocatable...\nMaking script relocatable\nFinished installing libgcrypt-1.4.4.p3.spkg\n[jaap@paix sage-4.4.3]$ \n\n```\n\n\n\nPositive review.\n\nJaap",
     "created_at": "2010-06-08T20:28:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85991",
-    "user": "@jaapspies"
+    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85853",
+    "user": "https://github.com/jaapspies"
 }
 ```
 
@@ -181,15 +180,15 @@ Jaap
 
 ---
 
-archive/issue_comments_085992.json:
+archive/issue_comments_085854.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-09T02:14:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9189",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85992",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/9189#issuecomment-85854",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

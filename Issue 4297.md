@@ -6,15 +6,13 @@ archive/issues_004297.json:
     "body": "Assignee: mabshoff\n\nCC:  @rlmill\n\nThis adds the path information, and is handy for invoking cython directly (e.g. to produce an annotation). \n\nIssue created by migration from https://trac.sagemath.org/ticket/4297\n\n",
     "created_at": "2008-10-15T14:41:05Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "[with patch, needs review] make sage -cython work on .spyx and library files",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4297",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: mabshoff
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4297
 
 ---
 
-archive/issue_comments_031435.json:
+archive/issue_comments_031373.json:
 ```json
 {
     "body": "Attachment [4297-sage-cython.patch](tarball://root/attachments/some-uuid/ticket4297/4297-sage-cython.patch) by @rlmill created at 2008-10-15 14:50:44\n\nMakes annotating the Sage library much easier. Good work!",
     "created_at": "2008-10-15T14:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4297",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4297#issuecomment-31435",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/4297#issuecomment-31373",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -51,15 +49,15 @@ Makes annotating the Sage library much easier. Good work!
 
 ---
 
-archive/issue_comments_031436.json:
+archive/issue_comments_031374.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-10-18T20:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4297",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4297#issuecomment-31436",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4297#issuecomment-31374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +67,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_031437.json:
+archive/issue_comments_031375.json:
 ```json
 {
     "body": "Merged in Sage 3.2.alpha0",
     "created_at": "2008-10-18T20:31:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4297",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4297#issuecomment-31437",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4297#issuecomment-31375",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

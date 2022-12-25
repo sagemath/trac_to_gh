@@ -6,15 +6,13 @@ archive/issues_009702.json:
     "body": "Assignee: jason, ncohen, rlm\n\nCC:  boothby @nathanncohen\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/9702\n\n",
     "created_at": "2010-08-07T03:20:23Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.2",
     "title": "Matching polynomials for graphs",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9702",
-    "user": "@rlmill"
+    "user": "https://github.com/rlmill"
 }
 ```
 Assignee: jason, ncohen, rlm
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9702
 
 ---
 
-archive/issue_comments_094342.json:
+archive/issue_comments_094185.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-08-07T03:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94342",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94185",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -49,15 +47,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_094343.json:
+archive/issue_comments_094186.json:
 ```json
 {
     "body": "But it's very close!",
     "created_at": "2010-08-07T03:24:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94343",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94186",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -67,15 +65,15 @@ But it's very close!
 
 ---
 
-archive/issue_comments_094344.json:
+archive/issue_comments_094187.json:
 ```json
 {
     "body": "Replaces trac_9702-{1, 2, 3 and 4}.patch",
     "created_at": "2010-10-30T11:44:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94344",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94187",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -85,15 +83,15 @@ Replaces trac_9702-{1, 2, 3 and 4}.patch
 
 ---
 
-archive/issue_comments_094345.json:
+archive/issue_comments_094188.json:
 ```json
 {
     "body": "Attachment [trac_9702-flat.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-flat.patch) by @rlmill created at 2010-10-30 11:49:43",
     "created_at": "2010-10-30T11:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94345",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94188",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -103,15 +101,15 @@ Attachment [trac_9702-flat.patch](tarball://root/attachments/some-uuid/ticket970
 
 ---
 
-archive/issue_comments_094346.json:
+archive/issue_comments_094189.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-10-30T11:49:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94346",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94189",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -121,15 +119,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094347.json:
+archive/issue_comments_094190.json:
 ```json
 {
     "body": "Here is where I am at the moment `:-)`\n\nNathann",
     "created_at": "2010-11-04T15:38:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94347",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94190",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -141,15 +139,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094348.json:
+archive/issue_comments_094191.json:
 ```json
 {
     "body": "Helloooooooo !!!\n\nWell, it seemed fuxxy it my mind last time I had a look at it, and it may have been because I was trying to understand how your data structure worked.... Knowing this, I opened it again today and it seemed crystal clear `:-)`\n\nI changed nothing since the last version of my patch, short of a new doctest in the method computing the polynomials of the complete graph, using the formula given at\n\nhttp://mathworld.wolfram.com/MatchingPolynomial.html\n\nIf anybody can review my patch, this ticket is good to go !\n\nNathann",
     "created_at": "2010-11-16T16:32:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94348",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94191",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -169,15 +167,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094349.json:
+archive/issue_comments_094192.json:
 ```json
 {
     "body": "Attachment [trac_9702-smallfixes.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.patch) by @rlmill created at 2010-11-26 16:42:19",
     "created_at": "2010-11-26T16:42:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94349",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94192",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -187,15 +185,15 @@ Attachment [trac_9702-smallfixes.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_094350.json:
+archive/issue_comments_094193.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-11-26T16:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94350",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94193",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -205,15 +203,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094351.json:
+archive/issue_comments_094194.json:
 ```json
 {
     "body": "Nathann,\n\nThanks for the help! I've changed the indentation in your patch for three lines, otherwise it's the same.",
     "created_at": "2010-11-26T16:42:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94351",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94194",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -225,15 +223,15 @@ Thanks for the help! I've changed the indentation in your patch for three lines,
 
 ---
 
-archive/issue_comments_094352.json:
+archive/issue_comments_094195.json:
 ```json
 {
     "body": "> Thanks for the help! I've changed the indentation in your patch for three lines, otherwise it's the same.\n\nYeah, let's skip reviewing those changes `:-D`\n\nNathann",
     "created_at": "2010-11-26T16:55:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94352",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94195",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -247,15 +245,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094353.json:
+archive/issue_comments_094196.json:
 ```json
 {
     "body": "Please fix the Sphinx WARNING:\n\n```\n/mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/matchpoly.rst:215: WARNING: duplicate citation Godsil93, other instance in /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/graph.rst\n```\n",
     "created_at": "2010-12-06T13:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94353",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94196",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -270,15 +268,15 @@ Please fix the Sphinx WARNING:
 
 ---
 
-archive/issue_comments_094354.json:
+archive/issue_comments_094197.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-12-06T13:41:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94354",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94197",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -288,15 +286,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_094355.json:
+archive/issue_comments_094198.json:
 ```json
 {
     "body": "Replying to [comment:9 jdemeyer]:\n> Please fix the Sphinx WARNING:\n> {{{\n> /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/matchpoly.rst:215: WARNING: duplicate citation Godsil93, other instance in /mnt/usb1/scratch/jdemeyer/merger/sage-4.6.2.alpha0/devel/sage/doc/en/reference/sage/graphs/graph.rst\n> }}}\n\nNathann,\n\nCan you fix this?",
     "created_at": "2010-12-06T16:59:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94355",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94198",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -314,15 +312,15 @@ Can you fix this?
 
 ---
 
-archive/issue_comments_094356.json:
+archive/issue_comments_094199.json:
 ```json
 {
     "body": "I will do that asap -- I was compiling Sage when I began to run the -testall on your patch for bitsets, I am now running a testall for my own patch on directed cycles, and thos one's next on the list `:-)`\n\nNathann",
     "created_at": "2010-12-06T17:04:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94356",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94199",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -334,15 +332,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094357.json:
+archive/issue_comments_094200.json:
 ```json
 {
     "body": "Attachment [trac_9702-smallfixes.2.patch](tarball://root/attachments/some-uuid/ticket9702/trac_9702-smallfixes.2.patch) by @nathanncohen created at 2010-12-06 17:17:00\n\nPatch updated !\n\nNathann",
     "created_at": "2010-12-06T17:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94357",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94200",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -356,15 +354,15 @@ Nathann
 
 ---
 
-archive/issue_comments_094358.json:
+archive/issue_comments_094201.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-12-06T17:17:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94358",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94201",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -374,15 +372,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_094359.json:
+archive/issue_comments_094202.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-12-06T17:26:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94359",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94202",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -392,15 +390,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_094360.json:
+archive/issue_comments_094203.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-01-12T06:32:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94360",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94203",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -410,15 +408,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_094361.json:
+archive/issue_comments_094204.json:
 ```json
 {
     "body": "See #12028 for a follow-up (sometimes `matching_polynomial` just hangs).",
     "created_at": "2011-11-14T08:58:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9702",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94361",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/9702#issuecomment-94204",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

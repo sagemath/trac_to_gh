@@ -6,15 +6,14 @@ archive/issues_009033.json:
     "body": "Assignee: drkirkby\n\nCC:  @jaapspies @dimpase\n\nOn a Sun Ultra 27 running OpenSolaris x64, Singular is not attempting to build as a 64-bit binary, but also fails to build fully as a 32-bit binary. (It does however build partially as 32-bit).\n\n\n```\nsingular-3-1-0-4-20100214/src/svd/tests/\nsingular-3-1-0-4-20100214/src/svd/tests/testsvdunit.h\nFinished extraction\n****************************************************\nHost system\nuname -a:\nSunOS hawk 5.11 snv_134 i86pc i386 i86pc\n****************************************************\n****************************************************\n\n<snip>\ngcc -O3 -g -fPIC -I. -I/export/home/drkirkby/sage-4.4.2/local/include  -I/export/home/drkirkby/sage-4.4.2/local/include -DHAVE_CONFIG_H -c omBinPage.c\n<snip>\ng++ -c cf_factor.cc -w -fno-implicit-templates -I. -I. -I/export/home/drkirkby/sage-4.4.2/local/include -DHAVE_CONFIG_H -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include -I/export/home/drkirkby/sage-4.4.2/local/include  -I/export/home/drkirkby/sage-4.4.2/local/include -O3 -g -fPIC -o cf_factor.o\nIn file included from /export/home/drkirkby/sage-4.4.2/local/include/NTL/vec_ZZ.h:5,\n                 from /export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZX.h:5,\n                 from /export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZXFactoring.h:5,\n                 from NTLconvert.h:23,\n                 from cf_factor.cc:33:\n/export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZ.h: In function \u2018long int NTL::MulModPrecon(long int, long int, long int, long unsigned int)\u2019:\n/export/home/drkirkby/sage-4.4.2/local/include/NTL/ZZ.h:1795: error: \u2018MulHiUL\u2019 was not declared in this scope\nmake[2]: *** [cf_factor.o] Error 1\nmake[2]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/singular-3-1-0-4-20100214/src/factory'\nmake[1]: *** [install] Error 1\nmake[1]: Leaving directory `/export/home/drkirkby/sage-4.4.2/spkg/build/singular-3-1-0-4-20100214/src'\nmake: *** [/export/home/drkirkby/sage-4.4.2/local/bin/Singular-3-1-0] Error 2\nUnable to build Singular.\n\nreal    0m13.142s\nuser    0m8.853s\nsys     0m4.226s\nsage: An error occurred while installing singular-3-1-0-4-20100214\n```\n\n\nThe files \n\n```\n$SAGE_LOCAL/lib/omalloc_debug.o\n$SAGE_LOCAL/lib/omalloc.o\n```\n\n\nare being installed as 32-bit bit objects. \n\nIt's somewhat worrying this does not build fully. If it built fully as 32-bit, one would expect converting it to 64-bit would be relatively easy (add option -m64), but the problem could be a bit more serious than this. I've not investigated yet. \n\nIssue created by migration from https://trac.sagemath.org/ticket/9033\n\n",
     "created_at": "2010-05-24T10:43:56Z",
     "labels": [
-        "porting: Solaris",
-        "major",
+        "component: porting: solaris",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Singular does not try to build 64-bit on OpenSolaris.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9033",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: drkirkby
@@ -80,15 +79,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9033
 
 ---
 
-archive/issue_comments_083631.json:
+archive/issue_comments_083495.json:
 ```json
 {
     "body": "For other OpenSolaris issues, see #9026",
     "created_at": "2010-05-24T18:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9033",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83631",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83495",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -98,15 +97,15 @@ For other OpenSolaris issues, see #9026
 
 ---
 
-archive/issue_comments_083632.json:
+archive/issue_comments_083496.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-07-08T16:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9033",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83632",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83496",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -116,15 +115,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_083633.json:
+archive/issue_comments_083497.json:
 ```json
 {
     "body": "outdated, should be closed",
     "created_at": "2020-07-08T16:33:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9033",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83633",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83497",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -134,15 +133,15 @@ outdated, should be closed
 
 ---
 
-archive/issue_comments_083634.json:
+archive/issue_comments_083498.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-07-08T18:37:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9033",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83634",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83498",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -152,15 +151,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_083635.json:
+archive/issue_comments_083499.json:
 ```json
 {
     "body": "Closing very old sun/solaris tickets. Any tentative for this OS should start afresh.",
     "created_at": "2020-07-15T07:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9033",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83635",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83499",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -170,15 +169,15 @@ Closing very old sun/solaris tickets. Any tentative for this OS should start afr
 
 ---
 
-archive/issue_comments_083636.json:
+archive/issue_comments_083500.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-07-15T07:18:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9033",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83636",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9033#issuecomment-83500",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

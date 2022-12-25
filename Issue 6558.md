@@ -6,15 +6,14 @@ archive/issues_006558.json:
     "body": "Assignee: tbd\n\nKeywords: solaris atlas sun4v\n\nTrac ticket #6276 was a patch I added to the ATLAS code, as the tuning process had dumped core on a Sun T5240 machine called ('t2'). This machine is based on the latest T2+ processor from Sun. The patch was suggested by Clint Whaley - the main ATLAS developer.\n\nDespite no known problems with ATLAS dumping core on any of the older systems, or Solaris systems based on the x86 processor, I had applied this patch to all Solaris systems. However, it is really a hack more than a patch, as it allows ATLAS to build by returning a reasonable value for a parameter that the system could not tune properly. \n\nThis patch is an improvement, which simply checks if the system is Solaris and the architecture is 'sun4v' before applying the hack. So only Solaris systems with Sun T1, T2 or T2+ processors will be patched. Those would form only a small fraction of the Solaris machines. On the vast majority of systems in use today, the patch will no longer be applied, so the tuning process will be more accurate. \n\nA patch for this will be very simple. Although I have not checked it yet, I believe changing:\n\n\n\n\n```\nif os.uname()[0] == 'SunOS' :    \n   shutil.copy2('patches/mmsearch-with-temp-Solaris-fix.c','src/tune/blas/gemm/mmsearch.c')\n\n\n```\n\n\nto \n\n\n\n```\nif os.uname()[0] == 'SunOS' and os.uname()[4] == 'sun4v':\n   shutil.copy2('patches/mmsearch-with-temp-Solaris-fix.c','src/tune/blas/gemm/mmsearch.c')\n\n```\n\n\nwill fix this. \n\nI'll attach a patch for review, once its operation has been carefully checked both on a Sun T5240 (a sun4v machine called 't2') and a Sun Blade 2000 (a sun4u machine called 'kestrel'). \n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6558\n\n",
     "created_at": "2009-07-19T00:39:23Z",
     "labels": [
-        "porting: Solaris",
-        "minor",
-        "enhancement"
+        "component: porting: solaris",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.1",
     "title": "Be more selective in patching ATLAS on Solaris",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6558",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: tbd
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6558
 
 ---
 
-archive/issue_comments_053471.json:
+archive/issue_comments_053371.json:
 ```json
 {
     "body": "Changing keywords from \"solaris atlas sun4v\" to \"solaris atlas sun4v sun4m\".",
     "created_at": "2009-07-19T16:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6558",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53471",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53371",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -82,15 +81,15 @@ Changing keywords from "solaris atlas sun4v" to "solaris atlas sun4v sun4m".
 
 ---
 
-archive/issue_comments_053472.json:
+archive/issue_comments_053372.json:
 ```json
 {
     "body": "Here's the patch directory, giving the patch, a rebuild .spkg and an updated SPKG.txt\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/atlas-3.8.3.p6/\n\nhere's the actual patch:\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/atlas-3.8.3.p6/atlas-3.8.3.p6.spkg\n\nIt should be very simple to review, as the only change of code is to one small line. \n\n\n```\n import shutil\n-if os.uname()[0] == 'SunOS':\n+if os.uname()[0] == 'SunOS' and os.uname()[4] == 'sun4v':\n    shutil.copy2('patches/mmsearch-with-temp-Solaris-fix.c','src/tune/blas/gemm/mmsearch.c')\n\n```\n\n(There's also a change in a comment, since atlas-3.8.3.p5.spkg had a comment which stopped in mid-sentence. I just completed the sentence.)\n\nThe patch is based on the fact that python's os.uname() prints the architecture, and on Solaris that will be sun4v on 't2' and similar machines, but different on machines which do not use the T1, T2 or T2+ processors. These processors, with \n\nHere's the output of os.uname() on 't2', which is a Sun T5240 the T2+ processors.\n\n```\nkirkby@t2:[~] $ python\nPython 2.4.4 (#1, Jan 10 2007, 01:25:01) [C] on sunos5\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import os\n>>> os.uname()\n('SunOS', 't2', '5.10', 'Generic_141414-02', 'sun4v')\n>>>\n```\n\nand here is is on an older machine, a Sun Blade 2000 with UltraSPARC III Cu CPU's, which are the older sun4u architecture. \n\n```\ndrkirkby@kestrel:[~] $ python\nPython 2.4.4 (#1, Jan 10 2007, 01:25:01) [C] on sunos5\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import os\n>>> os.uname()\n('SunOS', 'kestrel', '5.10', 'Generic_139555-08', 'sun4u')\n>>>\n```\n\n\nDave",
     "created_at": "2009-07-19T16:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6558",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53472",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53372",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -148,15 +147,15 @@ Dave
 
 ---
 
-archive/issue_comments_053473.json:
+archive/issue_comments_053373.json:
 ```json
 {
     "body": "Changing assignee from tbd to drkirkby.",
     "created_at": "2009-07-19T16:57:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6558",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53473",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53373",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -166,15 +165,15 @@ Changing assignee from tbd to drkirkby.
 
 ---
 
-archive/issue_comments_053474.json:
+archive/issue_comments_053374.json:
 ```json
 {
     "body": "After uncompressing the SPKG at\n\nhttp://sage.math.washington.edu/home/kirkby/Solaris-fixes/atlas-3.8.3.p6/atlas-3.8.3.p6.spkg\n\nI see some junk:\n\n```\n[mvngu@sage atlas-3.8.3.p6]$ hg st\nM SPKG.txt\nM spkg-install\n? patches/mmsearch-with-temp-Solaris-fix.c\n? patches/mmsearch-with-temp-Solaris-fix.c.patch\n? spkg-install-script.orig\n```\n\nDavid, can you remove junks from the SPKG. After that, I can deal with checking in changes if you want.",
     "created_at": "2009-07-21T13:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6558",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53474",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -199,15 +198,15 @@ David, can you remove junks from the SPKG. After that, I can deal with checking 
 
 ---
 
-archive/issue_comments_053475.json:
+archive/issue_comments_053375.json:
 ```json
 {
     "body": "Updated SPKG up at\n\nhttp://sage.math.washington.edu/home/mvngu/patch/atlas-3.8.3.p6.spkg\n\nAll changes have been committed in the name of David Kirkby.",
     "created_at": "2009-07-22T18:56:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6558",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53475",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53375",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -221,15 +220,15 @@ All changes have been committed in the name of David Kirkby.
 
 ---
 
-archive/issue_comments_053476.json:
+archive/issue_comments_053376.json:
 ```json
 {
     "body": "Builds on Solaris on the machine t2. (It also compiles without problems on Linux.)",
     "created_at": "2009-07-23T23:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6558",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53476",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53376",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -239,15 +238,15 @@ Builds on Solaris on the machine t2. (It also compiles without problems on Linux
 
 ---
 
-archive/issue_comments_053477.json:
+archive/issue_comments_053377.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-07-23T23:38:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6558",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53477",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6558#issuecomment-53377",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

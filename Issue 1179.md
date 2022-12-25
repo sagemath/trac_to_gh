@@ -6,15 +6,14 @@ archive/issues_001179.json:
     "body": "Assignee: mabshoff\n\nThis is related to Solaris:\n\nKlas writes:\n\n```\n\nI've tried started it from bash and tcsh, if that matters.\nBut please note that on Solaris /bin/sh is not bash, so\nif scripts start with\n\n#!/bin/sh\n\nsome things may not work as expected. \n```\n\n\nOn neron, i.e. William's Sun we replaced /bin/sh by /bin/bash because the original /bin/sh caused all kinds of problems during the build.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/1179\n\n",
     "created_at": "2007-11-15T16:28:49Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.8.15",
     "title": "change all #!/bin/sh to #!/bin/bash in $SAGE_LOCAL/bin (Solaris related)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1179",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -49,15 +48,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1179
 
 ---
 
-archive/issue_comments_007280.json:
+archive/issue_comments_007258.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-11-15T16:28:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7280",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7258",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +66,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_007281.json:
+archive/issue_comments_007259.json:
 ```json
 {
     "body": "Attachment [bash.patch](tarball://root/attachments/some-uuid/ticket1179/bash.patch) by @williamstein created at 2007-12-02 02:56:34\n\nLooks good to me.",
     "created_at": "2007-12-02T02:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7281",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7259",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -87,15 +86,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_007282.json:
+archive/issue_comments_007260.json:
 ```json
 {
     "body": "Testall successful.",
     "created_at": "2007-12-02T03:59:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7282",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7260",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -105,15 +104,15 @@ Testall successful.
 
 ---
 
-archive/issue_comments_007283.json:
+archive/issue_comments_007261.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-12-02T04:10:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7283",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1179#issuecomment-7261",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

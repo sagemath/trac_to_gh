@@ -6,15 +6,14 @@ archive/issues_008431.json:
     "body": "Assignee: @videlec\n\nCC:  sage-combinat @seblabbe abmasse tmonteil\n\nKeywords: word morphism\n\nThinking about it for a long time and motivated by\u00a0[#8423](http://trac.sagemath.org/sage_trac/ticket/8423&usg=AFQjCNG8_y-UlT3ON3unoD3utIEHQfTYbQ) this ticket stands for\n* the creation of WordMorphismExtension and WordMorphismExtensionDual (from [an article of Sano-Arnoux-Ito](http://iml.univ-mrs.fr/~arnoux/AISrev.pdf))\n* Have easy to use function for plotting Rauzy fractals using those algebraic tools\n\nIssue created by migration from https://trac.sagemath.org/ticket/8431\n\n",
     "created_at": "2010-03-03T23:49:21Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.6.1",
     "title": "Rauzy fractal (discrete planes and broken lines)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8431",
-    "user": "@videlec"
+    "user": "https://github.com/videlec"
 }
 ```
 Assignee: @videlec
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8431
 
 ---
 
-archive/issue_comments_075593.json:
+archive/issue_comments_075468.json:
 ```json
 {
     "body": "Changing type from defect to task.",
     "created_at": "2010-03-04T00:08:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75593",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75468",
+    "user": "https://github.com/videlec"
 }
 ```
 
@@ -53,15 +52,15 @@ Changing type from defect to task.
 
 ---
 
-archive/issue_comments_075594.json:
+archive/issue_comments_075469.json:
 ```json
 {
     "body": "I add myself in cc because I am interested.",
     "created_at": "2010-03-08T11:20:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75594",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75469",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -71,15 +70,15 @@ I add myself in cc because I am interested.
 
 ---
 
-archive/issue_comments_075595.json:
+archive/issue_comments_075470.json:
 ```json
 {
     "body": "Changing keywords from \"word morphism\" to \"word morphism unit face generalized substitution rauzy fractal\".",
     "created_at": "2010-09-17T11:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75595",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75470",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -89,15 +88,15 @@ Changing keywords from "word morphism" to "word morphism unit face generalized s
 
 ---
 
-archive/issue_comments_075596.json:
+archive/issue_comments_075471.json:
 ```json
 {
     "body": "Changing assignee from @videlec to tjolivet.",
     "created_at": "2010-09-17T11:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75596",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75471",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -107,15 +106,15 @@ Changing assignee from @videlec to tjolivet.
 
 ---
 
-archive/issue_comments_075597.json:
+archive/issue_comments_075472.json:
 ```json
 {
     "body": "Attachment [trac_8431_E1Star.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_E1Star.patch) by tjolivet created at 2010-09-17 11:11:48",
     "created_at": "2010-09-17T11:11:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75597",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75472",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -125,15 +124,15 @@ Attachment [trac_8431_E1Star.patch](tarball://root/attachments/some-uuid/ticket8
 
 ---
 
-archive/issue_comments_075598.json:
+archive/issue_comments_075473.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-09-17T11:12:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75598",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75473",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -143,15 +142,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_075599.json:
+archive/issue_comments_075474.json:
 ```json
 {
     "body": "I feel like `Patch`, `Face`, `E1Star` might be too domain specific to import into the global namespace.",
     "created_at": "2010-09-17T18:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75599",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75474",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -161,15 +160,15 @@ I feel like `Patch`, `Face`, `E1Star` might be too domain specific to import int
 
 ---
 
-archive/issue_comments_075600.json:
+archive/issue_comments_075475.json:
 ```json
 {
     "body": "Cher Timo,\n\nThanks a lot for your recent effort in polishing that code. I am actually needing it rigth now!! It will be of great help to me. \n\nI just read through the patch from my web browser and got those comments :\n\n1. As Mike Hanson, I think those three classes should not be in the global namespace. To create a E1Star, I recommand to add a method in the `WordMorphism` class.\n2. Add the file to the documentation. To do this you must edit the file sage-your-branch/doc/en/reference/combinat.rst\n3. Each sage block must be preceded by ::.\n4. No example using color in Face `__init__` function.\n5. Examples of all the possible drawings.\n6. Rename `_image_by_substitution` to `_apply_substitution` in Face class.\n7. Face._image_by_substitution should only accept E1Star object. If not, it should  raise an `TypeError` and not try to coerce the input to an E1Star object.\n8. Patch.translate method forgets the color of the faces.\n9. Patch.apply_substitution should only accept E1Star object. If not, it should raise an `TypeError` and not try to coerce the input to an E1Star object.\n10. `_M` and `_inv_M` should become `lazy_attributes`\n11. `_inv_M` should be computed from _M\n12. For the matrix method of E1Star, should `_inv_M` be the \"matrix associated with self\" more than `_M` ?\n13. When I used these classes last week, I needed the method `__eq__` for Patch. Here is my code :\n\n\n```\n    def __eq__(self, other):\n        r\"\"\"\n        EXAMPLES::\n\n            TODO!!\n\n        \"\"\"\n        return (isinstance(other, Patch) and\n                set(self) == set(other) )\n```\n\n\nI am going to download, apply and use the patch real soon...and I guess I will have more comments...",
     "created_at": "2010-09-17T21:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75600",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75475",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -213,15 +212,15 @@ I am going to download, apply and use the patch real soon...and I guess I will h
 
 ---
 
-archive/issue_comments_075601.json:
+archive/issue_comments_075476.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-17T21:38:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75601",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75476",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -231,15 +230,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_075602.json:
+archive/issue_comments_075477.json:
 ```json
 {
     "body": "I suggest to add this example for the method `__eq__` for Patch class :\n\n\n```\n    def __eq__(self, other):\n        r\"\"\"\n        EXAMPLES::\n            \n            sage: from sage.combinat.e_one_star import E1Star, Face, Patch\n            sage: x = WordMorphism('0->02,1->012,2->2')\n            sage: y = WordMorphism('0->012,1->12,2->2')\n            sage: p = Patch([Face((0,0,0),1), Face((0,0,0),2), Face((0,0,0),3)])\n            sage: E1Star(x) (p) == E1Star(y) (p)\n            False\n            sage: E1Star(x * y) (p) == E1Star(y) (E1Star(x) (p))\n            True\n\n        \"\"\"\n        return (isinstance(other, Patch) and\n                set(self) == set(other) )\n\n```\n\n\nI also suggest to add a `__len__` method and change the `__repr__` to behave like Graphs (Graph of 45 vertices).\n\n\n```\n    def __repr__(self):\n        r\"\"\"\n        String representation of a patch.\n\n        EXAMPLES:\n\n            sage: x = [Face((0,0,0),t) for t in [1,2,3]]\n            sage: P = Patch(x)\n            sage: P\n            Patch of 3 faces\n        \"\"\"\n        return \"Patch of %s faces\"%len(self)\n\n    def __len__(self):\n        r\"\"\"\n        Returns the number of faces.\n\n        EXAMPLES::\n\n            sage: x = [Face((0,0,0),t) for t in [1,2,3]]\n            sage: P = Patch(x)\n            sage: len(P)       #indirect doctest\n            3\n        \"\"\"\n        return len(self._faces)\n```\n",
     "created_at": "2010-09-18T17:36:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75602",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75477",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -303,15 +302,15 @@ I also suggest to add a `__len__` method and change the `__repr__` to behave lik
 
 ---
 
-archive/issue_comments_075603.json:
+archive/issue_comments_075478.json:
 ```json
 {
     "body": "The method `__call__` of E1Star should pass the possible kwds to `apply_substitution method` : \n\n\n```\n    def __call__(self, patch, **kwds):\n        r\"\"\"\n        EXAMPLES:\n\n            sage: p = Patch([Face((0,0,0),t) for t in [1,2,3]])\n            sage: sigma = WordMorphism('1->12,2->13,3->1')\n            sage: E = E1Star(sigma)\n            sage: E(p)\n            Patch: [[(1, 0, -1), 1]*, [(0, 1, -1), 2]*, [(0, 0, 0), 3]*, [(0, 0, 0), 1]*, [(0, 0, 0), 2]*]\n        \"\"\"\n        patch = Patch(patch)\n        patch.apply_substitution(self, **kwds)\n        return patch\n```\n",
     "created_at": "2010-09-18T17:52:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75603",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75478",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -339,15 +338,15 @@ The method `__call__` of E1Star should pass the possible kwds to `apply_substitu
 
 ---
 
-archive/issue_comments_075604.json:
+archive/issue_comments_075479.json:
 ```json
 {
     "body": "The last lines of plot_tikz should be : \n\n\n```\n        s += '\\\\end{tikzpicture}\\n'\n        return LatexExpr(s)\n```\n\n\nMake sure to add the following line in the beginning of the file :\n\n\n```\nfrom sage.misc.latex import LatexExpr\n```\n\n\nThis is to avoid `latex(a_patch.plot_tikz())` be edited wrongly.",
     "created_at": "2010-09-18T20:52:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75604",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75479",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -374,15 +373,15 @@ This is to avoid `latex(a_patch.plot_tikz())` be edited wrongly.
 
 ---
 
-archive/issue_comments_075605.json:
+archive/issue_comments_075480.json:
 ```json
 {
     "body": "The function `plot_tikz` should be renamed `_latex_`.\n\nA graph in Sage has methods `plot`, `plot3d` and `_latex_` and I think we can follow the same behavior.",
     "created_at": "2010-09-18T20:56:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75605",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75480",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -394,15 +393,15 @@ A graph in Sage has methods `plot`, `plot3d` and `_latex_` and I think we can fo
 
 ---
 
-archive/issue_comments_075606.json:
+archive/issue_comments_075481.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-09-19T12:08:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75606",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75481",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -412,15 +411,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_075607.json:
+archive/issue_comments_075482.json:
 ```json
 {
     "body": "> **EDIT (2010-09-19):** a new version of the patch is attached (`trac_8431_e_one_star.patch`), taking into account the suggestions given in the comments. Documentation compiles fine, except for the following warning, which I don't think comes from an error in `e_one_star.py`:\n> \n>   `/home/timo/sage-4.5.3/local/lib/python2.6/site-packages/sage/combinat/e_one_star.py:docstring of sage.combinat.e_one_star:56: (WARNING/2) Literal block expected; none found.`\n\nActually, it does. If you don't write a sage block after the line `EXAMPLES:`, then you must write only one colon:\n\n\n```\nEXAMPLES:\n\nWe start by drawing a simple three-face patch::\n```\n\n\ninstead of\n\n\n```\nEXAMPLES::\n\nWe start by drawing a simple three-face patch::\n```\n\n\nOne more detail about ReST :\n\n\n```\nThis module implements the `E_1^*(\\sigma)` substitution\nassociated with a one-dimensional substitution `\\sigma`,\nthat acts on unit faces of dimension `(d-1)` in `\\mathbb R^d`.\n```\n\n\nThe macro `\\RR`, as well as `\\ZZ` and `\\QQ` is defined to get the doc more readable in the terminal, so the following should work : ``\\RR^d``.",
     "created_at": "2010-09-23T19:06:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75607",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75482",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -464,15 +463,15 @@ The macro `\RR`, as well as `\ZZ` and `\QQ` is defined to get the doc more reada
 
 ---
 
-archive/issue_comments_075608.json:
+archive/issue_comments_075483.json:
 ```json
 {
     "body": "Attachment [trac_8431_e_one_star.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_e_one_star.patch) by tjolivet created at 2010-09-23 20:05:29\n\nOkay, thanks again for the useful comments!\n\nI've updated the patch.",
     "created_at": "2010-09-23T20:05:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75608",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75483",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -486,15 +485,15 @@ I've updated the patch.
 
 ---
 
-archive/issue_comments_075609.json:
+archive/issue_comments_075484.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-09-24T00:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75609",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75484",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -504,15 +503,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_075610.json:
+archive/issue_comments_075485.json:
 ```json
 {
     "body": "I just uploaded a patch which fixes some syntax stuff but I did a little bit more than that. More importantly, I :\n \n- moved `Face._apply_substitution` to the method `E1Star._call_on_face` because that is where that code belongs.\n- reworked `Patch.apply_substitution` and moved the code that was repainting the faces to a method called `Patch.repaint`\n- moved the code of `Patch.apply_substitution` to `E1Star.__call__` because it *was* creating a copy anyway. `Patch.apply_substitution` works as before. `E1Star.__call__` works twice as fast as before because it doesn't do two copies but only one.\n- added some cached method and lazy attributes in `E1Star` class\n\nI still see one possible problem before giving a positive review, but didn't have time enough to test/fix it. The attribute `E1Star._base_iter` seems to assume some conditions on the values of faces types. That they are integer for instance. Haven't tested it. \n\nFor the tikz output code, I think the `\\newcommand` in the code is not compatible with sagetex package. If I am not mistaken, `\\newcommand` are not possible in an input file.\n\nTimo, now that I uploaded a new patch, you will have to create a new separate patch that applies over yours and mine if you want to modify anything.",
     "created_at": "2010-09-24T00:57:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75610",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75485",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -533,15 +532,15 @@ Timo, now that I uploaded a new patch, you will have to create a new separate pa
 
 ---
 
-archive/issue_comments_075611.json:
+archive/issue_comments_075486.json:
 ```json
 {
     "body": "Attachment [trac_8431_review-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_review-sl.patch) by @seblabbe created at 2010-09-24 19:51:51\n\nApplies over the trac_8431_e_one_star.patch",
     "created_at": "2010-09-24T19:51:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75611",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75486",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -553,15 +552,15 @@ Applies over the trac_8431_e_one_star.patch
 
 ---
 
-archive/issue_comments_075612.json:
+archive/issue_comments_075487.json:
 ```json
 {
     "body": "Okay, I just re-uploaded my review patch. The faces type is now considered as an arbitrary object. It can be any hashable object. Doing this, the code is more readable (e.g. the method `_base_iter`)  and more versatile (no such `type + 1` assuming type is an integer).\n\nIn order to do so, I changed the way `E1Star._base_iter` behave. It now returns a dict.\n\nAnd now, the domain alphabet of the substitution used must correspond to the type of faces. No more '1' -> rank('1') = 0 -> + 1 -> 1 = type of a face. The type of faces iff domain alphabet. If one wants to use integer type of faces, he must define a substitution on integers which is possible using dictionary.\n\nI also moved `orig_coords` to an attribute of Patch called `face_contour`. Code gets cleaner that way also. `face_contour` now gets assigned at the creation of a Patch.\n\nI also added `#not tested` to many plot test so that the time of testing for that file is decreased from 24s to 7s on my computer. I kept some plot tested at minimum.\n\nMy very last concern about the actual state of the ticket is about the methods outputting tikz code. I want to make sure that they work well. I will do more test later (I'm done for the day). The necessity of `\\newcommand` needs to be studied.\n\nSorry Timo, I am very serious on the review. But I think it is better and easier to do changes now than after inclusion in Sage.\n\nCheers,",
     "created_at": "2010-09-24T20:08:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75612",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75487",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -585,15 +584,15 @@ Cheers,
 
 ---
 
-archive/issue_comments_075613.json:
+archive/issue_comments_075488.json:
 ```json
 {
     "body": "Okay I'll continue working on it! Thanks again for all you advices and improvements!\n\nI'll do the remaining things we talked about and upload a new patch.\n\nAs for the tikz code, I am sure that it compiles fine (with a normal texlive installation). The \\newcommand is nice because then one face is reprensented by a small line instead of three bulky ones. It could be *two* lines, but in tikz there is no other way to specify an RGB color than using \\definecolor, which takes one more line. (Something similar to `black!30!green` for RGB would be the great...)",
     "created_at": "2010-09-24T23:26:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75613",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75488",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -607,15 +606,15 @@ As for the tikz code, I am sure that it compiles fine (with a normal texlive ins
 
 ---
 
-archive/issue_comments_075614.json:
+archive/issue_comments_075489.json:
 ```json
 {
     "body": "Hello, Timo and S\u00e9bastien !\n\nReplying to [comment:18 tjolivet]:\n> As for the tikz code, I am sure that it compiles fine (with a normal texlive installation). The \\newcommand is nice because then one face is reprensented by a small line instead of three bulky ones. It could be *two* lines, but in tikz there is no other way to specify an RGB color than using \\definecolor, which takes one more line. (Something similar to `black!30!green` for RGB would be the great...)\n\nI agree with you that the `\\newcommand` makes the output much lighter. On the other hand, it doesn't compile correctly... I tried it with a normal Latex distribution, but I had to move the three `\\newcommand` statements outside the tikzpicture environment.\n\nI might have a solution that would avoid using them, but which is not as neat. You could use\n\n```\n\\foreach \\x / \\y / \\z / \\c1 / \\c2 / \\c3 in {...}\n```\n\nand replace the `...` by the appropriate very long list of parameters for each face and then put in the body of the `\\foreach` command the 3-lines Latex statement that draws the face with these parameters.\n\nWhat do you say? Do you understand what I'm talking about (I don't feel my explanation is very clear)?",
     "created_at": "2010-09-25T02:17:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75614",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75489",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -640,15 +639,15 @@ What do you say? Do you understand what I'm talking about (I don't feel my expla
 
 ---
 
-archive/issue_comments_075615.json:
+archive/issue_comments_075490.json:
 ```json
 {
     "body": "Replying to [abmasse](http://trac.sagemath.org/search/opensearch?q=comment%3A19):\n\n\n> I agree with you that the `\\newcommand`  makes the output much lighter. On the other hand, it doesn't compile  correctly... I tried it with a normal Latex distribution, but I had to  move the three `\\newcommand` statements outside the tikzpicture environment. I might have a solution that would avoid using them, but which is not as neat. You could use !` \\foreach \\x / \\y / \\z / \\c1 / \\c2 / \\c3 in {...} ` and replace the `...` by the appropriate very long list of parameters for each face and then put in the body of the `\\foreach` command the 3-lines Latex statement that draws the face with these parameters. What do you say? Do you understand what I'm talking about (I don't feel my explanation is very clear)?\n\nYes, you made yourself  clear, and it seems like a  good idea. I'll try it on  big instances, and if it works, I'll make it that way in the new patch. Otherwise, moving the \\newcommand outside the tikzpicture is not a problem at all (it should have been that way, I probably made a !``typo!''...).",
     "created_at": "2010-09-25T12:03:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75615",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75490",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -663,15 +662,15 @@ Yes, you made yourself  clear, and it seems like a  good idea. I'll try it on  b
 
 ---
 
-archive/issue_comments_075616.json:
+archive/issue_comments_075491.json:
 ```json
 {
     "body": "Replying to [comment:20 tjolivet]:\n> Replying to [abmasse](http://trac.sagemath.org/search/opensearch?q=comment%3A19):\n> \n> Yes, you made yourself  clear, and it seems like a  good idea. I'll try it on  big instances, and if it works, I'll make it that way in the new patch. Otherwise, moving the \\newcommand outside the tikzpicture is not a problem at all (it should have been that way, I probably made a !``typo!''...).\n\nThe problem is that if you use the `tikz_plot` twice in the document with `sagetex` there will be a compilation problem (since you can't use `\\newcommand` on an already define command (you need local variables!).\n\nThere might be another solution, using `\\def\\loza#1#2#3#4#5#6` (which is local when included in a `tikzpicture` environment), but I haven't tried it out.",
     "created_at": "2010-09-25T12:15:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75616",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75491",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -688,15 +687,15 @@ There might be another solution, using `\def\loza#1#2#3#4#5#6` (which is local w
 
 ---
 
-archive/issue_comments_075617.json:
+archive/issue_comments_075492.json:
 ```json
 {
     "body": "Replying to [abmasse](http://trac.sagemath.org/search/opensearch?q=comment%3A21):\n\n\n\n> The problem is that if you use the `tikz_plot` twice in the document with `sagetex` there will be a compilation problem (since you can't use `\\newcommand` on an already define command (you need local variables!). There might be another solution, using `\\def\\loza#1#2#3#4#5#6` (which is local when included in a `tikzpicture` environment), but I haven't tried it out.\n\nOkay, so I'll get rid of the `\\newcommand` in any case, and  use either the `\\foreach` or the `\\def` solution; I admit I also like the idea of outputing a `tikzpicture` that works !``out of the box!''. Thanks for the suggestions and comments.",
     "created_at": "2010-09-25T12:30:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75617",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75492",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -712,15 +711,15 @@ Okay, so I'll get rid of the `\newcommand` in any case, and  use either the `\fo
 
 ---
 
-archive/issue_comments_075618.json:
+archive/issue_comments_075493.json:
 ```json
 {
     "body": "Hello, I uploaded a new patch (that applies over !``e_one_star and !`` and !``review-sl!``).\n\n* It changes the `plot_tikz` function. There are no more `\\newcommand`'s, but only `\\def`'s that are inside the `tikzpicture` environment. (No more global annoyance, and it should work fine with `sagetex` now.) Also, RGB colors a printed with two decimals only.\n\n* In response to \"the domain alphabet of the substitution used must correspond to the type of faces\": now, every substitution defining an `E1Star` object is converted to an equivalent substitution on alphabet `'1'`, ..., `'d'`. The type of a face can be specified by a positive integer or a string representing a positive integer, and is converted to a string when the `Face` object is created. This allows us to assume that the type of a face in 3D is in {`'1'`, `'2'`, `'3'`}, which is very useful for plotting functions.\n\n* An option to color face according to their type has been added.\n\n* It is possible to choose whether to (or not to) print the `tikzpicture` environment definition, and the `\\def` macros.\n\n* Some other minor fixes, and small documentation fixes.",
     "created_at": "2010-09-28T12:25:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75618",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75493",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -740,15 +739,15 @@ Hello, I uploaded a new patch (that applies over !``e_one_star and !`` and !``re
 
 ---
 
-archive/issue_comments_075619.json:
+archive/issue_comments_075494.json:
 ```json
 {
     "body": "Salut Timo,\n\nI look at the patch and still have comments. \n\n>  * It changes the `plot_tikz` function. There are no more `\\newcommand`'s,\n>  but only `\\def`'s that are inside the `tikzpicture` environment. (No more\n>  global annoyance, and it should work fine with `sagetex` now.) Also, RGB\n>  colors a printed with two decimals only.\n\nGreat for the `\\def` instead of `\\newcommand`. \n\n>  * In response to \"the domain alphabet of the substitution used must\n>  correspond to the type of faces\": \n\nWhen I wrote that comment, I was meaning that I fixed it in my patch. In fact, I removed the coercion of the face type into the integer ring which allows the user to use the type of object he wants for the face types.\n\n> now, every substitution defining an `E1Star` object is converted to an\n> equivalent substitution on alphabet `'1'`, ..., `'d'`. The type of a face can\n> be specified by a positive integer or a string representing a positive\n> integer, and is converted to a string when the `Face` object is created. \n\nI do not agree with this. I do not want the type face to be converted to an integer nor to a str. I want it to stays as it is given by the user. I want the correspondance between the faces type and the domain alphabet of the morphism to be clean. I do not want the correspondance appear by coincidence. Here are three examples to clarify my point :\n\nGOOD (integer faces type with integers for the domain of the substitution) :\n\n```\n    sage: from sage.combinat.e_one_star import E1Star, Face, Patch\n    sage: x = [Face((0,0,0),1), Face((0,0,0),2), Face((0,0,0),3)]\n    sage: P = Patch(x)\n    sage: sigma = WordMorphism({1:[1,2], 2:[1,3], 3:[1]})\n    sage: E = E1Star(sigma)\n    sage: E(P)\n    Patch: [[(1, 0, -1), 1]*, [(0, 1, -1), 2]*, [(0, 0, 0), 3]*, [(0, 0, 0), 1]*, [(0, 0, 0), 2]*]\n```\n\n\nGOOD (str faces type with str for the domain of the substitution) :\n\n```\n    sage: from sage.combinat.e_one_star import E1Star, Face, Patch\n    sage: x = [Face((0,0,0),'1'), Face((0,0,0),'2'), Face((0,0,0),'3')]\n    sage: P = Patch(x)\n    sage: sigma = WordMorphism('1->12,2->13,3->1')\n    sage: E = E1Star(sigma)\n    sage: E(P)\n    Patch: [[(1, 0, -1), 1]*, [(0, 1, -1), 2]*, [(0, 0, 0), 3]*, [(0, 0, 0), 1]*, [(0, 0, 0), 2]*]\n```\n\n\nBAD (integer faces type with str for the domain of the substitution). Correspondance is lost. If the following is suppported, it makes the code less usable for potential future uses by others.\n\n```\n    sage: from sage.combinat.e_one_star import E1Star, Face, Patch\n    sage: x = [Face((0,0,0),1), Face((0,0,0),2), Face((0,0,0),3)]\n    sage: P = Patch(x)\n    sage: sigma = WordMorphism('1->12,2->13,3->1')\n    sage: E = E1Star(sigma)\n    sage: E(P)\n    Patch: [[(1, 0, -1), 1]*, [(0, 1, -1), 2]*, [(0, 0, 0), 3]*, [(0, 0, 0), 1]*, [(0, 0, 0), 2]*]\n```\n\n\nThe reason is that the code we write is *always* used differently by the others. And the coercion of the face type to a str object is an unneccessary restriction. Do you agree with me?\n\n> This allows us to assume that the type of a face in 3D is in {`'1'`, `'2'`,\n> `'3'`}, which is very useful for plotting functions.\n\nCan you explain me why it is useful for plotting functions? Is it because digits can not be used in a definition like `\\def\\loz1{...}` ? But then, I don't understand why `'1'` is better than `1`. I am sure we can find a solution for the plotting problem that will not restrict the usability of the code.\n\n>  * An option to color face according to their type has been added.\n\nThanks for fixing this in the `__call__` method. Small suggestions : coloring='color_from_type' is redundant. I suggest that the following \n\n\n```\n-  ``color_from_type`` - boolean (default: False). Colors the faces \n     according to their type. \n```\n\n\nbecomes \n\n\n```\n-  ``'face_type'`` - boolean (default: False). Colors the faces \n     according to their type. \n```\n\n\nFor the `repaint` method. I dislike the addition of a new argument to the function. The reason is that the user should never use the argument `cmap` at the same time as the argument `color_from_type`. Hence, inconstencies in the arguments can happen and should be considered. This tells us that it should be only one argument that plays the role for either one or the other. Python is great for that because it is not a typed language. Moreover, I was disappointed that it is not possible for the user to specify which color he can give to each faces type. Hence, I suggest to do the following which should fix all the problems I mention::\n\n\n```\n    def repaint(self, cmap='hsv'):\n        r\"\"\"\n        Repaint all the faces of self from the given color map.\n\n        This changes self.\n\n        INPUT:\n\n        -  ``cmap`` - color map (default: 'hsv'). It can be one of the\n           following :\n           \n\t   - string - A color map. For available color map names type: ``import\n\t     matplotlib.cm; matplotlib.cm.datad.keys()``. Each face will be\n             given a color according to their rank in the patch.\n\t   - list - a list of color to assign to the faces in order.\n\t   - dict - a dict of faces type mapped to colors.\n\t   - ``{}``, the empty dict - the dict ``{'1':'red', '2':'green', '3':'blue'}``              is used.\n```\n\n\n>  * It is possible to choose whether to (or not to) print the `tikzpicture`\n>  environment definition, and the `\\def` macros.\n\nOk. And by default, they are printed : great.\n\n>  * Some other minor fixes, and small documentation fixes.\n\nGreat.\n\nFinally, lines like\n\n\n```\nif print_macros == True: \n```\n\n\nshould be replaced by\n\n\n```\nif print_macros:\n```\n\n\nThat is it for now.\n\nIf you rework on it, you can reload your last patch or add a new one. It is as you wish. I do not have any local modifications.\n\nCheers!",
     "created_at": "2010-09-29T14:14:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75619",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75494",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -900,15 +899,15 @@ Cheers!
 
 ---
 
-archive/issue_comments_075620.json:
+archive/issue_comments_075495.json:
 ```json
 {
     "body": "Attachment [trac_8431_might_be_final_tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_might_be_final_tj.patch) by tjolivet created at 2010-09-30 15:26:54\n\nHi S\u00e9bastien and the others,\n\n*[We had a long discussion on skype with S\u00e9bastien regarding his last reply.]*\n\nI just uploaded a new version of the last patch. The face types are now integers, and only integers (from 1 to d), and the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) associated with an E1Star object is also defined on integers.\n\nSome other things I changed:\n\n* I removed the `coloring` option in `apply_substitution`. Why? Because we can use `repaint`, and it is better that all the \"color business\" is taken care of by `repaint`. The colors of a face in an image by a substitution is automatically the color of its preimage (which enables to get the interesting coloring given by the substitution). If we want to change the color of a patch obtained by iteration, `repaint`!\n\n* I took care of the above remarks concerning `color_from_preimage`, and used the clever solution suggested by S\u00e9bastien: dictionaries `{types:colors}`.\n\n* Some small fixes.\n\n**Now, a last and important remark**. Writing\n\n\n```\nsigma = WordMorphism('1->12,2->13,3->1')\n```\n\nis less painful than writing\n\n\n```\nsigma = WordMorphism({1:[1,2], 2:[1,3], 3:[1]})\n```\n\nSince all the face types are integers and the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) defining an `E1Star` must be on integers, we are supposed to use the latter way to define `sigma`. However, I find it very inconvenient, so we allow the user to give a `sigma` defined on an **arbitrary** alphabet. When `E1Star` is defined, it is converted and stored as a substitution on the alphabet `[1, ..., d]` (so that there is a correspondence between the types of the faces and the alphabet of the substitutions). It really makes the definitions much more convenient and I don't think that it harms `sage` so much.\n\nAlso, I don't think that it would be useful to allow the user to specify an arbitrary alphabet for the faces, since they are not used as the letters of a word, but as three-dimensional objects, which we *call* of type `1`, `2` or `3`. (This is why all the types are represented by integers.) It corresponds to the mathematical definition of the object.\n\nI strongly insist on this last remark!",
     "created_at": "2010-09-30T15:26:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75620",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75495",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -952,15 +951,15 @@ I strongly insist on this last remark!
 
 ---
 
-archive/issue_comments_075621.json:
+archive/issue_comments_075496.json:
 ```json
 {
     "body": "Hi, Timo and S\u00e9bastien !\n\nReplying to [comment:25 tjolivet]:\n> Hi S\u00e9bastien and the others,\n> \n> **Now, a last and important remark**. Writing\n> \n> {{{\n> sigma = WordMorphism('1->12,2->13,3->1')\n> }}}\n> is less painful than writing\n> \n> {{{\n> sigma = WordMorphism({1:[1,2], 2:[1,3], 3:[1]})\n> }}}\n\nI agree with you on that one. This is something I've noticed too when using `WordMorphism`'s. The thing is: the problem comes from the object WordMorphism, and it's where it should be solved, in my opinion, and not in the class `E1Star`.\n\n> Since all the face types are integers and the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) defining an `E1Star` must be on integers, we are supposed to use the latter way to define `sigma`. However, I find it very inconvenient, so we allow the user to give a `sigma` defined on an **arbitrary** alphabet. When `E1Star` is defined, it is converted and stored as a substitution on the alphabet `[1, ..., d]` (so that there is a correspondence between the types of the faces and the alphabet of the substitutions). It really makes the definitions much more convenient and I don't think that it harms `sage` so much.\n> \n> Also, I don't think that it would be useful to allow the user to specify an arbitrary alphabet for the faces, since they are not used as the letters of a word, but as three-dimensional objects, which we *call* of type `1`, `2` or `3`. (This is why all the types are represented by integers.) It corresponds to the mathematical definition of the object.\n> \n\nI disagree. If I'm not mistaken, the integer meaning of 1, 2, 3 is never used in the construction of patches and discrete plane. I mean, we could use a,b,c and everything would work the same, there is no gain from encoding it with integers, since no additive group structure is used (correct me if I'm wrong, though, that could be a good argument).\n\nIn fact, I think it's quite the opposite. It would be better to allow the user to have any alphabet, so that he can use any structure he wants (additive group, for instance, or any other operation that might encode interesting discrete plane construction).\n\n> I strongly insist on this last remark!\n\nWhat I propose you is that either S\u00e9bastien or I work on the improvement of the construction of `WordMorphism` in order to offer something like\n\n```\nsigma = WordMorphism('1->12,2->13,3->1', type='integer')\n```\n\n\nDoes that seem reasonable?\n\nP.S. I'm following your discussion and I see the progress... Keep the good work!",
     "created_at": "2010-10-01T19:28:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75621",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75496",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -1008,15 +1007,15 @@ P.S. I'm following your discussion and I see the progress... Keep the good work!
 
 ---
 
-archive/issue_comments_075622.json:
+archive/issue_comments_075497.json:
 ```json
 {
     "body": "Thanks for you answer and hello!\n\nReplying to [comment:26 abmasse]:\n\n> I disagree. If I'm not mistaken, the integer meaning of 1, 2, 3 is never used in the construction of patches and discrete plane. I mean, we could use a,b,c and everything would work the same, there is no gain from encoding it with integers, since no additive group structure is used (correct me if I'm wrong, though, that could be a good argument). In fact, I think it's quite the opposite. It would be better to allow the user to have any alphabet, so that he can use any structure he wants (additive group, for instance, or any other operation that might encode interesting discrete plane construction).\n\nYes, the types are just names, so anything else could be used. But I'm not sure that it would be very useful, it's not comparable to allowing any choice of letters for words, for example. If you (or anybody else) want to implement it, it's OK, but please make sure that if integer faces are given, it works as in the current patch by default (to make it \"easy-usable\").\n\n> What I propose you is that either S\u00e9bastien or I work on the improvement of the construction of `WordMorphism` in order to offer something like ` sigma = WordMorphism('1->12,2->13,3->1', type='integer') ` Does that seem reasonable? P.S. I'm following your discussion and I see the progress... Keep the good work!\n\nThis a  good idea, even with respect to [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) only. I'm just a bit saddened that we will have to add \"`type='integer'`\") when specifying a substitution to work with the default integers, but I can live with it!\n\n---\n\nI think that apart from the possible option to leave the choice of the alphabet, and the \"`type='integer'`\" feature to be added to [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism), the work on this patch is over. Do you agree? I leave these two last points up to you.\n\nThanks for all your help, work and comments on this (it's my first patch, as you know), I'm learning a lot. And I'm ready to work more if there is something more that I forgot!",
     "created_at": "2010-10-01T20:07:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75622",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75497",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1042,15 +1041,15 @@ Thanks for all your help, work and comments on this (it's my first patch, as you
 
 ---
 
-archive/issue_comments_075623.json:
+archive/issue_comments_075498.json:
 ```json
 {
     "body": "Hi Timo,\n\n>  * I removed the `coloring` option in `apply_substitution`. Why? Because we\n>  can use `repaint`, and it is better that all the \"color business\" is taken\n>  care of by `repaint`. The colors of a face in an image by a substitution is\n>  automatically the color of its preimage (which enables to get the\n>  interesting coloring given by the substitution). If we want to change the\n>  color of a patch obtained by iteration, `repaint`!\n\nGreat idea! Very very good. That is really upgrading the quality of the code. The design is converging!\n\n>  * I took care of the above remarks concerning `color_from_preimage`, and\n>  used the clever solution suggested by S\u00e9bastien: dictionaries\n>  `{types:colors}`.\n\nGreat. I am just wondering if we could avoid to use a list of one color to change the color of every faces. If their is no intersection between the list of available color and the list of available color map, then simply a color string could be used for coloring every faces the same color.\n\n> **Now, a last and important remark**. Writing\n> \n> {{{\n> sigma = WordMorphism('1->12,2->13,3->1')\n> }}}\n> is less painful than writing\n> \n> {{{\n> sigma = WordMorphism({1:[1,2], 2:[1,3], 3:[1]})\n> }}}\n\nI agree.\n\n> Since all the face types are integers and the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism) defining an `E1Star` must be on integers, we are supposed to use the latter way to define `sigma`. However, I find it very inconvenient, so we allow the user to give a `sigma` defined on an **arbitrary** alphabet. When `E1Star` is defined, it is converted and stored as a substitution on the alphabet `[1, ..., d]` (so that there is a correspondence between the types of the faces and the alphabet of the substitutions). It really makes the definitions much more convenient and I don't think that it harms `sage` so much.\n> \n> Also, I don't think that it would be useful to allow the user to specify an arbitrary alphabet for the faces, since they are not used as the letters of a word, but as three-dimensional objects, which we *call* of type `1`, `2` or `3`. (This is why all the types are represented by integers.) It corresponds to the mathematical definition of the object.\n> \n> I strongly insist on this last remark!\n\nOne solution is to allow face type '1', '2' and '3' which would work easily with such expressions : `WordMorphism('1->12,2->13,3->1')`. But I know you don't like this solution.\n\nOn the other side, as I already explained, I dislike the solution you propose because (1) it is getting the code less efficient for those who specify a WordMorphism already defined on integers, (2) because those translation of object gets the code less versatile and reusable by others and (3) it may leads to conceptual problems for the user when letters gets translated not in the way he expected.\n\nPersonnaly, I can not give a positive review with this translation of alphabet.\n\nI think Alexandre's ideas for improving the definition of `WordMorphism` might be a good compromise.\n\n\n\nMoreover, in the code of `plot_tikz`, I suggest to use the following ideas :\n\n\n```\nsage: P = Patch([Face((0,0,0),t) for t in [1,2,3]])\nsage: d = P._face_contour\nsage: ' -- '.join(map(str, d[1])) + ' -- cycle;\\n'\n'(0, 0, 0) -- (0, 1, 0) -- (0, 1, 1) -- (0, 0, 1) -- cycle;\\n'\n```\n\n\nrather than hardcoding the face contour points:\n\n\n```\n        if print_macros:\n            s += '\\\\def\\\\loza#1#2#3#4#5#6{\\n'\n            s += '  \\\\definecolor{facecolor}{rgb}{#4,#5,#6}\\n'\n            s += '  \\\\fill[fill=facecolor, draw=black, shift={(#1, #2, #3)}]\\n'\n            s += '  (0,0,0) -- (0,1,0) -- (0,1,1) -- (0,0,1) -- cycle;\\n'\n            s += '}\\n'\n```\n",
     "created_at": "2010-10-01T20:13:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75623",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75498",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1128,15 +1127,15 @@ rather than hardcoding the face contour points:
 
 ---
 
-archive/issue_comments_075624.json:
+archive/issue_comments_075499.json:
 ```json
 {
     "body": "Just added a patch that improves the color map manipulations and tikz code. I removed the `Face._plot_tikz` method that was not really usable on its own and moved its code into the `Patch.plot_tikz`.\n\nPatches apply in this order :\n\n1. trac_8431_e_one_star.patch \n2. trac_8431_review-sl.patch \n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch \n\nEarlier, I wrote :\n\n> Great. I am just wondering if we could avoid to use a list of one color to change the color of every faces. If their is no intersection between the list of available color and the list of available color map, then simply a color string could be used for coloring every faces the same color. \n\nForget about that, I was wrong. I like the way it is.",
     "created_at": "2010-10-01T23:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75624",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75499",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1159,15 +1158,15 @@ Forget about that, I was wrong. I like the way it is.
 
 ---
 
-archive/issue_comments_075625.json:
+archive/issue_comments_075500.json:
 ```json
 {
     "body": "Attachment [trac_8431_colors_tikz-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_colors_tikz-sl.patch) by @seblabbe created at 2010-10-01 23:30:26\n\nApplies over the precedent 3 patches",
     "created_at": "2010-10-01T23:30:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75625",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75500",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1179,15 +1178,15 @@ Applies over the precedent 3 patches
 
 ---
 
-archive/issue_comments_075626.json:
+archive/issue_comments_075501.json:
 ```json
 {
     "body": "So, now, I can say that I give a positive review to this ticket if the following 5 lines of `E1Star.__init__` are removed.\n\n\n```\n        # changing the alphabet of sigma to [1, ..., d]\n        A = sigma.domain().alphabet()\n        change_alphabet = WordMorphism(dict([(A[i], [Integer(i+1)]) for i in range(len(A))]))\n        D = dict([(change_alphabet(a)[0], list(change_alphabet(sigma(a)))) for a in A])\n        sigma = WordMorphism(D)\n```\n\n\nOf course, my two patches also have to get a positive review by Timo or Alexandre (preferably both) before the ticket be ready to be merged into Sage.",
     "created_at": "2010-10-01T23:40:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75626",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75501",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1209,15 +1208,15 @@ Of course, my two patches also have to get a positive review by Timo or Alexandr
 
 ---
 
-archive/issue_comments_075627.json:
+archive/issue_comments_075502.json:
 ```json
 {
     "body": "OK, I uploaded a last patch to fix the type of the [WordMorphism](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMorphism). The `__init__` method of `E1Star` accepts only integer substitutions. I have changed the doc accordingly. I hope that the `type='integer'` option of [WordMosphim](http://trac.sagemath.org/sage_trac/search/opensearch?q=wiki%3AWordMosphim) will be available soon!\n\nThe patch seems to be ready. How do we give positive review of an individual patch, and not to the whole ticket? How long will it take before it is integrated to sage?\n\nTo recap, the patches apply in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n\n(Can we remove the useless trac_8431_E1Star.patch patch?)",
     "created_at": "2010-10-02T13:17:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75627",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75502",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1239,15 +1238,15 @@ To recap, the patches apply in this order:
 
 ---
 
-archive/issue_comments_075628.json:
+archive/issue_comments_075503.json:
 ```json
 {
     "body": "sigma type fix",
     "created_at": "2010-10-02T13:21:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75628",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75503",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1257,15 +1256,15 @@ sigma type fix
 
 ---
 
-archive/issue_comments_075629.json:
+archive/issue_comments_075504.json:
 ```json
 {
     "body": "Attachment [trac_8431_sigma_type_fix.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_sigma_type_fix.patch) by tmonteil created at 2010-10-02 23:09:11",
     "created_at": "2010-10-02T23:09:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75629",
-    "user": "tmonteil"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75504",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tmonteil"
 }
 ```
 
@@ -1275,15 +1274,15 @@ Attachment [trac_8431_sigma_type_fix.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_comments_075630.json:
+archive/issue_comments_075505.json:
 ```json
 {
     "body": "Replying to [comment:31 tjolivet]:\n> The patch seems to be ready. How do we give positive review of an individual patch, and not to the whole ticket? How long will it take before it is integrated to sage?\n>\nNormally, when two people work on the same ticket and both of them provide patches, the last person cannot make the final positive review, so in that case, it's S\u00e9bastien that should do it. However, I will probably do it this week since both you and S\u00e9bastien worked on it. This way, it will give a different point of view.\n \nThe patch probably won't be merged in sage-4.6 as it is already in its alpha stage, but should be included in the next version. \n\n> To recap, the patches apply in this order:\n> \n>  1. trac_8431_e_one_star.patch\n>  1. trac_8431_review-sl.patch\n>  1. trac_8431_might_be_final_tj.patch\n>  1. trac_8431_colors_tikz-sl.patch\n>  1. trac_8431_sigma_type_fix.patch\n> \n> (Can we remove the useless trac_8431_E1Star.patch patch?)\n\nUnfortunately, you can't.",
     "created_at": "2010-10-03T05:49:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75630",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75505",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -1310,15 +1309,15 @@ Unfortunately, you can't.
 
 ---
 
-archive/issue_comments_075631.json:
+archive/issue_comments_075506.json:
 ```json
 {
     "body": "Applies over the precedent 5 patches",
     "created_at": "2010-10-05T00:34:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75631",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75506",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1328,15 +1327,15 @@ Applies over the precedent 5 patches
 
 ---
 
-archive/issue_comments_075632.json:
+archive/issue_comments_075507.json:
 ```json
 {
     "body": "Attachment [trac_8431-wordmorphism-sl.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-wordmorphism-sl.patch) by @seblabbe created at 2010-10-05 00:39:40\n\nJust added a new patch that adds two methods that might be useful : `E1Star.__mul__` and `WordMorphism.dual_map`.\n\nPatches need to be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch \n6. trac_8431-wordmorphism-sl.patch",
     "created_at": "2010-10-05T00:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75632",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75507",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1357,15 +1356,15 @@ Patches need to be applied in this order:
 
 ---
 
-archive/issue_comments_075633.json:
+archive/issue_comments_075508.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-10-05T00:39:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75633",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75508",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1375,15 +1374,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_075634.json:
+archive/issue_comments_075509.json:
 ```json
 {
     "body": "small fixes",
     "created_at": "2010-11-04T16:38:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75634",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75509",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1393,15 +1392,15 @@ small fixes
 
 ---
 
-archive/issue_comments_075635.json:
+archive/issue_comments_075510.json:
 ```json
 {
     "body": "Attachment [trac_8431-smallfixes-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-smallfixes-tj.patch) by tjolivet created at 2010-11-04 16:56:49\n\nHi,\n\nThis patch (trac_8431-smallfixes-tj.patch) corrects three bugs and adds three minor features:\n\n* in `.plot_tikz`, the option `edgecolor='facecolor'` didnt't work\n* in `.plot_tikz`, the option `print_tikz_env=False` caused an error message\n* in `.plot3d`, the plot was rotated uselessly (it was confusing)\n* patches can now be added (which gives their union)\n* `E1Star` morphisms can now be multiplied (according to the rule *E1Star(s*t) = E1Star(t)*E1Star(s)*)\n\nPatches need to be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_8431-smallfixes-tj.patch",
     "created_at": "2010-11-04T16:56:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75635",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75510",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1431,15 +1430,15 @@ Patches need to be applied in this order:
 
 ---
 
-archive/issue_comments_075636.json:
+archive/issue_comments_075511.json:
 ```json
 {
     "body": "Replying to [tjolivet](http://trac.sagemath.org/sage_trac/search/opensearch?q=comment%3A36):\n\n> * in `.plot3d`, the plot was rotated uselessly (it was confusing)\n\nA precision about the `.plot3d` fix, the removal of these two lines:\n\n`911 P.aspect_ratio((1,1,1))`\n`912 P = P.rotateY(pi/2).rotateX(pi/2)`\n\nThe first line doesn't change anything. The only way to control the aspect ratio of the rendered object in Jmol is to include it into a cube that contains everything, because Jmol will automatically take the smallest 3D rectangle that contains the object, and deform it to a cube (hence changing the aspect ratio). If a cube bounds everything, we get an actual aspect ratio of (1,1,1).\n\nThe second line was initally written to \"turn\" the patch so that it faces the viewer when Jmol opens. The problem is that `rotate` does not change the point of view, but rotates the object itself, which is very confusing when we want to plot something else with the Patch (normal vectors or contracting planes, for example).",
     "created_at": "2010-11-05T11:31:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75636",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75511",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1460,15 +1459,15 @@ The second line was initally written to "turn" the patch so that it faces the vi
 
 ---
 
-archive/issue_comments_075637.json:
+archive/issue_comments_075512.json:
 ```json
 {
     "body": "Attachment [trac_8431-alphaset-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431-alphaset-tj.patch) by tjolivet created at 2010-11-10 15:22:40",
     "created_at": "2010-11-10T15:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75637",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75512",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1478,15 +1477,15 @@ Attachment [trac_8431-alphaset-tj.patch](tarball://root/attachments/some-uuid/ti
 
 ---
 
-archive/issue_comments_075638.json:
+archive/issue_comments_075513.json:
 ```json
 {
     "body": "I just added a new patch (trac_8431-alphaset-tj.patch) that applies over the previous ones, and that allows to set the `alpha` parameter in the `.plot` method. It is useful if we want to plot fractals without seeing the unit cube edges.",
     "created_at": "2010-11-10T15:25:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75638",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75513",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1496,15 +1495,15 @@ I just added a new patch (trac_8431-alphaset-tj.patch) that applies over the pre
 
 ---
 
-archive/issue_comments_075639.json:
+archive/issue_comments_075514.json:
 ```json
 {
     "body": "Hi, Timo !\n\nI tried applying the various patches on a sage-4.6 clone and the patch trac_8431-smallfixes-tj.patch fails. Here's what I get.\n\n\n```\nlabo [~/Applications/sage/devel/sage-t8431/sage/combinat]\n $ hg qseries\ntrac_8431_e_one_star.patch\ntrac_8431_review-sl.patch\ntrac_8431_might_be_final_tj.patch\ntrac_8431_colors_tikz-sl.patch\ntrac_8431_sigma_type_fix.patch\ntrac_8431-wordmorphism-sl.patch\ntrac_8431-smallfixes-tj.patch\n\nlabo [~/Applications/sage/devel/sage-t8431/sage/combinat]\n $ hg qtop\ntrac_8431-smallfixes-tj.patch\n\nlabo [~/Applications/sage/devel/sage-t8431/sage/combinat]\n $ hg qpop\nnow at: trac_8431-wordmorphism-sl.patch\n\nlabo [~/Applications/sage/devel/sage-t8431/sage/combinat]\n $ hg qpush\napplying trac_8431-smallfixes-tj.patch\npatching file sage/combinat/e_one_star.py\nHunk #6 FAILED at 1337\n1 out of 7 hunks FAILED -- saving rejects to file sage/combinat/e_one_star.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nerrors during apply, please fix and refresh trac_8431-smallfixes-tj.patch\n```\n\n\nCould you please fix it? Or is it because the order is not correct? Here's the output for the rejected hunk:\n\n\n```\nlabo [~/Applications/sage/devel/sage-t8431/sage/combinat]\n $ cat e_one_star.py.rej \n--- e_one_star.py\n+++ e_one_star.py\n@@ -1230,49 +1338,6 @@\n                 X[letter].append((v, k))\n         return X\n \n-    def __call__(self, patch, iterations=1):\n-        r\"\"\"\n-        Apply a generalized substitution to a Patch; this returns a new\n-        object.\n-        \n-        The color of every new face in the image is given the same color as its preimage.\n-\n-        INPUT:\n-\n-        - ``patch`` - a patch\n-        - ``iterations`` - integer (optional, default: 1) number of iterations\n-\n-        OUTPUT:\n-            \n-            a patch\n-\n-        EXAMPLES::\n-\n-            sage: from sage.combinat.e_one_star import E1Star, Face, Patch\n-            sage: P = Patch([Face((0,0,0),t) for t in [1,2,3]])\n-            sage: sigma = WordMorphism({1:[1,2], 2:[1,3], 3:[1]})\n-            sage: E = E1Star(sigma)\n-            sage: R = E(P)\n-            sage: len(R)\n-            5\n-\n-        ::\n-\n-            sage: x = (0,0,0)\n-            sage: p = Patch([Face(x, 1, 'red'), Face(x, 2, 'yellow'), Face(x, 3, 'green')])\n-            sage: p = E(p, iterations=4)\n-            sage: p\n-            Patch of 31 faces\n-        \"\"\"\n-        old_faces = patch\n-        for i in xrange(iterations):\n-            new_faces = []\n-            for f in old_faces:\n-                new_faces.extend(self._call_on_face(f, color=f.color()))\n-            old_faces = new_faces\n-\n-        return Patch(new_faces)\n-\n     def _call_on_face(self, face, color=None):\n         r\"\"\"\n         Returns an iterator of faces obtained by applying self on the face.\n```\n",
     "created_at": "2010-11-12T17:03:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75639",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75514",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -1609,15 +1608,15 @@ labo [~/Applications/sage/devel/sage-t8431/sage/combinat]
 
 ---
 
-archive/issue_comments_075640.json:
+archive/issue_comments_075515.json:
 ```json
 {
     "body": "Hi !\n\nWell, that's very strange: I just compiled 4.6, made a fresh clone, and I could apply all the patches without any problem:\n\n\n```\ntimo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qseries\ntrac_8431_e_one_star.patch\ntrac_8431_review-sl.patch\ntrac_8431_might_be_final_tj.patch\ntrac_8431_colors_tikz-sl.patch\ntrac_8431_sigma_type_fix.patch\ntrac_8431-wordmorphism-sl.patch\ntrac_8431-smallfixes-tj.patch\ntrac_8431-alphaset-tj.patch\ntimo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qtop\ntrac_8431-alphaset-tj.patch\ntimo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpop\nnow at: trac_8431-smallfixes-tj.patch\ntimo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpop\nnow at: trac_8431-wordmorphism-sl.patch\ntimo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpush\napplying trac_8431-smallfixes-tj.patch\nnow at: trac_8431-smallfixes-tj.patch\ntimo@ukko:~/sage-4.6/devel/sage-haha$ ../../sage -hg qpush\napplying trac_8431-alphaset-tj.patch\nnow at: trac_8431-alphaset-tj.patch\n```\n\nCould you try it again? There's no reason that it works for me but not for you!\n\n(And don't forget the last patch `trac_8431-alphaset-tj.patch` !)\n\nTo recap, the order is:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_8431-smallfixes-tj.patch\n8. trac_8431-alphaset-tj.patch\n\n[BTW, a question: when I need to apply such a sequence of patches, do I have to do \"`import, qpush, import, qpush, import, qpush, ...`\", with an `import` and a `qpush` for each patch ?]",
     "created_at": "2010-11-12T22:37:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75640",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75515",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1671,15 +1670,15 @@ To recap, the order is:
 
 ---
 
-archive/issue_comments_075641.json:
+archive/issue_comments_075516.json:
 ```json
 {
     "body": "Attachment [trac_new-fixes-final-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_new-fixes-final-tj.patch) by tjolivet created at 2010-11-13 11:45:04\n\nHi. Sorry, this error message was because of a manipulation error from my part. (I misapplied the wordmorphism-sl patch, and my two last patches were based on this misapplying.)\n\nI made a new patch that applies correctly over wordmorphism-sl, and that takes into account my two last patches (which should now be ignored; it's a shame that we can't delete patches from the ticket!).\n\nPatches should be applied in this order:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_new-fixes-final-tj.patch\n\n(Sorry for misnaming the last patch, I forgot \"8431\"... And sorry if this made you lose some time!)",
     "created_at": "2010-11-13T11:45:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75641",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75516",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1705,15 +1704,15 @@ Patches should be applied in this order:
 
 ---
 
-archive/issue_comments_075642.json:
+archive/issue_comments_075517.json:
 ```json
 {
     "body": "Attachment [trac_8431_typos-docfix-tj.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_typos-docfix-tj.patch) by tjolivet created at 2010-11-13 16:45:30",
     "created_at": "2010-11-13T16:45:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75642",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75517",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1723,15 +1722,15 @@ Attachment [trac_8431_typos-docfix-tj.patch](tarball://root/attachments/some-uui
 
 ---
 
-archive/issue_comments_075643.json:
+archive/issue_comments_075518.json:
 ```json
 {
     "body": "Thanks for you final remarks. The last patch is trac_8431_typos-docfix-tj.patch, and the sequence is:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_new-fixes-final-tj.patch\n8. trac_8431_typos-docfix-tj.patch",
     "created_at": "2010-11-13T16:46:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75643",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75518",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1750,15 +1749,15 @@ Thanks for you final remarks. The last patch is trac_8431_typos-docfix-tj.patch,
 
 ---
 
-archive/issue_comments_075644.json:
+archive/issue_comments_075519.json:
 ```json
 {
     "body": "Apply on top of preceding patches",
     "created_at": "2010-11-13T17:08:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75644",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75519",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -1768,15 +1767,15 @@ Apply on top of preceding patches
 
 ---
 
-archive/issue_comments_075645.json:
+archive/issue_comments_075520.json:
 ```json
 {
     "body": "Attachment [trac_8431_doctest_fix-abm.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_doctest_fix-abm.patch) by abmasse created at 2010-11-13 17:24:36\n\nHi Timo and S\u00e9bastien !\n\nI just uploaded a (I hope last) patch that fixes a minor doctest failure (decimal number, on my computer but not Timo's).\n\nI tested all of it on sage-4.6. I'm satisfied with the code and the documentation looks good (no warning neither).\n\nBefore setting this ticket to \"positive review\", I want to know if S\u00e9bastien is ok with it, since he reviewed big parts, and if Timo agrees with my last patch (Timo, just make sure it still passes on your machine).",
     "created_at": "2010-11-13T17:24:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75645",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75520",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -1794,15 +1793,15 @@ Before setting this ticket to "positive review", I want to know if Sébastien is
 
 ---
 
-archive/issue_comments_075646.json:
+archive/issue_comments_075521.json:
 ```json
 {
     "body": "Yes, the patch applies fine, and the doctest passes. Everything seems to be fine now.\n\nJust a recap:\n\n1. trac_8431_e_one_star.patch\n2. trac_8431_review-sl.patch\n3. trac_8431_might_be_final_tj.patch\n4. trac_8431_colors_tikz-sl.patch\n5. trac_8431_sigma_type_fix.patch\n6. trac_8431-wordmorphism-sl.patch\n7. trac_new-fixes-final-tj.patch\n8. trac_8431_typos-docfix-tj.patch\n9. trac_8431_doctest_fix-abm.patch",
     "created_at": "2010-11-13T18:02:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75646",
-    "user": "tjolivet"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75521",
+    "user": "https://trac.sagemath.org/admin/accounts/users/tjolivet"
 }
 ```
 
@@ -1824,15 +1823,15 @@ Just a recap:
 
 ---
 
-archive/issue_comments_075647.json:
+archive/issue_comments_075522.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-11-14T01:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75647",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75522",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1842,15 +1841,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_075648.json:
+archive/issue_comments_075523.json:
 ```json
 {
     "body": "> Before setting this ticket to \"positive review\", I want to know if S\u00e9bastien is ok with it, since he reviewed big parts, and if Timo agrees with my last patch (Timo, just make sure it still passes on your machine).\n\nAll test pass on my machine. Coverage is 100%. Documentation builds fine. Positive review!\n\nI just folded the 9 patches into one : trac_8431_folded.patch. It might be easier for the release manager.\n\nGreat work!",
     "created_at": "2010-11-14T01:17:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75648",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75523",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1866,15 +1865,15 @@ Great work!
 
 ---
 
-archive/issue_comments_075649.json:
+archive/issue_comments_075524.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2010-11-15T12:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75649",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75524",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1884,15 +1883,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_075650.json:
+archive/issue_comments_075525.json:
 ```json
 {
     "body": "1) Please update the commit message of the folded patch (use `hg qrefresh -e` for that).  Make sure the first line contains the ticket number and a short summary of the whole patch.  The next lines can contain a longer description.\n\n2) The copyright message in the files MUST be changed to state\n\n```\n#  Distributed under the terms of the GNU General Public License (GPL) \n#  as published by the Free Software Foundation; either version 2 of \n#  the License, or (at your option) any later version.  \n#                  http://www.gnu.org/licenses/  \n#***************************************************************************** \n```\n",
     "created_at": "2010-11-15T12:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75650",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75525",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1913,15 +1912,15 @@ archive/issue_comments_075650.json:
 
 ---
 
-archive/issue_comments_075651.json:
+archive/issue_comments_075526.json:
 ```json
 {
     "body": "Folded all the 9 appropriate patches.",
     "created_at": "2010-11-15T14:12:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75651",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75526",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1931,15 +1930,15 @@ Folded all the 9 appropriate patches.
 
 ---
 
-archive/issue_comments_075652.json:
+archive/issue_comments_075527.json:
 ```json
 {
     "body": "Attachment [trac_8431_folded.patch](tarball://root/attachments/some-uuid/ticket8431/trac_8431_folded.patch) by @seblabbe created at 2010-11-15 14:15:31\n\nI just re-uploaded the folded patch.\n\n> 1) Please update the commit message of the folded patch (use `hg qrefresh -e` for that).\n\nDone.\n\n> 2) The copyright message in the files MUST be changed to state\n\nDone. I did not know the copyright message changed.\n\nNeeds review.",
     "created_at": "2010-11-15T14:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75652",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75527",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1961,15 +1960,15 @@ Needs review.
 
 ---
 
-archive/issue_comments_075653.json:
+archive/issue_comments_075528.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-11-15T14:15:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75653",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75528",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -1979,15 +1978,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_075654.json:
+archive/issue_comments_075529.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-11-15T14:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75654",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75529",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -1997,15 +1996,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_075655.json:
+archive/issue_comments_075530.json:
 ```json
 {
     "body": "I just checked that the fixes required by the release manager have indeed been done.\n\nAll tests still pass.\n\nPositive review.",
     "created_at": "2010-11-15T14:53:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75655",
-    "user": "abmasse"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75530",
+    "user": "https://trac.sagemath.org/admin/accounts/users/abmasse"
 }
 ```
 
@@ -2019,15 +2018,15 @@ Positive review.
 
 ---
 
-archive/issue_comments_075656.json:
+archive/issue_comments_075531.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-11-19T07:53:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8431",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75656",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/8431#issuecomment-75531",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

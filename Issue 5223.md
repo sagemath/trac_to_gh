@@ -6,15 +6,14 @@ archive/issues_005223.json:
     "body": "Assignee: somebody\n\nCC:  @roed314\n\nBEFORE:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 228 \u00b5s per loop\n```\n\n\nAFTER:\n\n```\nsage: R.<x> = ZZ['x']\nsage: f = 389*R.random_element(1000)\nsage: timeit('f//389')\n625 loops, best of 3: 48.3 \u00b5s per loop\n```\n\n\nThe bug was doing the shortcut case, but then not returning and hence doing the long case *as well*.\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5223\n\n",
     "created_at": "2009-02-09T20:03:19Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.4.1",
     "title": "[with patch; needs review] silly bug in flint wrapper makes it a factor of 10 slower for division of a polynomial by an integer",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5223",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -53,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5223
 
 ---
 
-archive/issue_comments_040028.json:
+archive/issue_comments_039950.json:
 ```json
 {
     "body": "Attachment [trac_5223.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.patch) by @burcin created at 2009-02-09 20:18:21\n\nPatch looks good. Fixes obvious mistake on my part. :)",
     "created_at": "2009-02-09T20:18:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40028",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39950",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -73,15 +72,15 @@ Patch looks good. Fixes obvious mistake on my part. :)
 
 ---
 
-archive/issue_comments_040029.json:
+archive/issue_comments_039951.json:
 ```json
 {
     "body": "This patch causes the following doctest failure:\n\n```\nmabshoff@sage:/scratch/mabshoff/sage-3.3.rc0$ ./sage -t -long devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\nsage -t -long \"devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\"\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 592:\n    sage: b = a.rshift_coeffs(1); b\nExpected:\n    (O(13^3))*t^2 + (1 + O(13^2))*t + (13 + O(13^5))\nGot:\n    (O(13^3))*t^2 + (9 + 8*13 + O(13^2))*t + (7 + 12*13 + 7*13^2 + 6*13^3 + O(13^4))\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 594:\n    sage: b.list()\nExpected:\n    [13 + O(13^5), 1 + O(13^2), O(13^3)]\nGot:\n    [7 + 12*13 + 7*13^2 + 6*13^3 + O(13^4), 9 + 8*13 + O(13^2), O(13^3)]\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 596:\n    sage: b = a.rshift_coeffs(2); b\nExpected:\n    (O(13^2))*t^2 + (O(13))*t + (1 + O(13^4))\nGot:\n    (O(13^2))*t^2 + (7 + O(13))*t + (8 + 3*13 + 10*13^2 + 9*13^3 + O(13^4))\n**********************************************************************\nFile \"/scratch/mabshoff/sage-3.3.rc0/devel/sage/sage/rings/polynomial/padics/polynomial_padic_capped_relative_dense.py\", line 598:\n    sage: b.list()\nExpected:\n    [1 + O(13^4), O(13), O(13^2)]\nGot:\n    [8 + 3*13 + 10*13^2 + 9*13^3 + O(13^4), 7 + O(13), O(13^2)]\n**********************************************************************\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2009-02-10T07:13:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40029",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39951",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -130,15 +129,15 @@ Michael
 
 ---
 
-archive/issue_comments_040030.json:
+archive/issue_comments_039952.json:
 ```json
 {
     "body": "Bumped to 3.4.1.\n\nCheers,\n\nMichael",
     "created_at": "2009-02-20T07:42:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40030",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39952",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -152,15 +151,15 @@ Michael
 
 ---
 
-archive/issue_comments_040031.json:
+archive/issue_comments_039953.json:
 ```json
 {
     "body": "Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket5223/trac_5223.take2.patch) by @burcin created at 2009-03-15 13:38:45",
     "created_at": "2009-03-15T13:38:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40031",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39953",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -170,15 +169,15 @@ Attachment [trac_5223.take2.patch](tarball://root/attachments/some-uuid/ticket52
 
 ---
 
-archive/issue_comments_040032.json:
+archive/issue_comments_039954.json:
 ```json
 {
     "body": "Wrong function was called for scalar division in the existing code, so we returned wrong results if division was not exact. Using `fmpz_poly_scalar_div_mpz()` fixes this problem and removes the limit on the size of the divisor. I didn't measure it's effects on speed.\n\nAll tests under sage/rings/polynomial pass with attachment:trac_5223.take2.patch.",
     "created_at": "2009-03-15T13:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40032",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39954",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -190,15 +189,15 @@ All tests under sage/rings/polynomial pass with attachment:trac_5223.take2.patch
 
 ---
 
-archive/issue_comments_040033.json:
+archive/issue_comments_039955.json:
 ```json
 {
     "body": "Changing assignee from somebody to @burcin.",
     "created_at": "2009-03-15T13:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40033",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39955",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -208,15 +207,15 @@ Changing assignee from somebody to @burcin.
 
 ---
 
-archive/issue_comments_040034.json:
+archive/issue_comments_039956.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-03-15T13:43:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40034",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39956",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -226,15 +225,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_040035.json:
+archive/issue_comments_039957.json:
 ```json
 {
     "body": "Looks good to me, even gets the degree right when the higher terms are truncated away.",
     "created_at": "2009-03-17T00:04:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40035",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39957",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -244,15 +243,15 @@ Looks good to me, even gets the degree right when the higher terms are truncated
 
 ---
 
-archive/issue_comments_040036.json:
+archive/issue_comments_039958.json:
 ```json
 {
     "body": "Merged trac_5223.take2.patch in Sage 3.4.1.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-20T20:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40036",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39958",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -266,15 +265,15 @@ Michael
 
 ---
 
-archive/issue_comments_040037.json:
+archive/issue_comments_039959.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-03-20T20:14:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-40037",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5223#issuecomment-39959",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

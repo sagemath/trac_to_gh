@@ -6,14 +6,13 @@ archive/issues_000006.json:
     "body": "Assignee: somebody\n\nPowerSeriesRing(QQ, 10) crashes SAGE:\n\nTraceback (most recent call last):\n    PowerSeriesRing(QQ, 10)\n  File \"/home/server/\", line 1, in ?\n    \n  File \"/sage/local/lib/python2.4/site-packages/sage/rings/power_series_ring.py\",\nline 44, in PowerSeriesRing\n    R = PowerSeriesRing_over_field(base_ring, name, default_prec)\n  File \"/sage/local/lib/python2.4/site-packages/sage/rings/power_series_ring.py\",\nline 171, in __init__\n    PowerSeriesRing_generic.__init__(self, base_ring, name, default_prec)\n  File \"/sage/local/lib/python2.4/site-packages/sage/rings/power_series_ring.py\",\nline 63, in __init__\n    self.__generator = self.__power_series_class(self, [0,1], check=True,\nis_gen=True)\n  File\n\"/sage/local/lib/python2.4/site-packages/sage/rings/power_series_ring_element.py\",\nline 506, in __init__\n    f = R(f, check=check)\n  File \"/sage/local/lib/python2.4/site-packages/sage/rings/multi_polynomial_ring.py\",\nline 481, in __call__\n    c = self.base_ring()(x)\n  File \"/sage/local/lib/python2.4/site-packages/sage/rings/rational_field.py\", line\n155, in __call__\n    return sage.rings.rational.Rational(x, base)\n  File \"rational.pyx\", line 105, in rational.Rational.__init__\n  File \"rational.pyx\", line 183, in rational.Rational.__set_value\nTypeError: Unable to coerce [0, 1] (<type 'list'>) to Rational\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6\n\n",
     "created_at": "2006-09-12T01:11:15Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "title": "PowerSeriesRing(QQ, 10) crashes SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -65,7 +64,7 @@ archive/issue_comments_000020.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6#issuecomment-20",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -126,7 +125,7 @@ archive/issue_comments_000021.json:
     "issue": "https://github.com/sagemath/sagetest/issues/6",
     "type": "issue_comment",
     "url": "https://github.com/sagemath/sagetest/issues/6#issuecomment-21",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_001171.json:
     "body": "Assignee: somebody\n\n`NumberFieldElement_quadratic` should override `_new()` to copy the D attribute from the source object; currently every call to _new() actually calls the base class implementation and then D is copied manually.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1171\n\n",
     "created_at": "2007-11-14T22:37:20Z",
     "labels": [
-        "basic arithmetic",
-        "minor",
-        "enhancement"
+        "component: basic arithmetic",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.2",
     "title": "_new() method for quadratic field elements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1171",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: somebody
@@ -30,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1171
 
 ---
 
-archive/issue_comments_007176.json:
+archive/issue_comments_007154.json:
 ```json
 {
     "body": "Attachment [1171-quadratic-field-new.patch](tarball://root/attachments/some-uuid/ticket1171/1171-quadratic-field-new.patch) by @robertwb created at 2007-12-02 09:32:20",
     "created_at": "2007-12-02T09:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7176",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7154",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -48,15 +47,15 @@ Attachment [1171-quadratic-field-new.patch](tarball://root/attachments/some-uuid
 
 ---
 
-archive/issue_comments_007177.json:
+archive/issue_comments_007155.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-12-02T09:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7177",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7155",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -66,15 +65,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_007178.json:
+archive/issue_comments_007156.json:
 ```json
 {
     "body": "Changing assignee from somebody to @robertwb.",
     "created_at": "2007-12-02T09:32:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7178",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7156",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -84,15 +83,15 @@ Changing assignee from somebody to @robertwb.
 
 ---
 
-archive/issue_comments_007179.json:
+archive/issue_comments_007157.json:
 ```json
 {
     "body": "Applying this after #1141 means that `NumberFieldElement_quadratic` values will have uninitialized `__fld_numerator` and `__fld_denominator` members.  While this seems not to be a problem now (the doctests do pass), it seems like it could be a problem in the future.  This should either be documented (`\"watch out!  __fld_numerator is not initialized in NumberFieldElement_quadratic values!\"`) or fixed.\n\nAlso, you could remove the TODO from the top of the file :)",
     "created_at": "2007-12-02T20:29:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7179",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7157",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -104,15 +103,15 @@ Also, you could remove the TODO from the top of the file :)
 
 ---
 
-archive/issue_comments_007180.json:
+archive/issue_comments_007158.json:
 ```json
 {
     "body": "Currently quadratic field elements don't have __numerator or __denominator (or any other ntl variables) defined, so I'm not sure if this is really an issue. \n\nSee, however, #1385",
     "created_at": "2007-12-03T20:32:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7180",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7158",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -124,15 +123,15 @@ See, however, #1385
 
 ---
 
-archive/issue_comments_007181.json:
+archive/issue_comments_007159.json:
 ```json
 {
     "body": "Robert convinced me in email that the patch is fine as-is, but he said it wasn't worth merging this code since #1385 would happen soon and the code would all be rewritten anyway.\n\nSince it's been two months and #1385 hasn't happened, it's time to go ahead and merge this patch; I'm changing my review to positive.  (Note that my positive review is, essentially, from early December; I have not tested that doctests still pass, or even that the patch still applies to a current Sage.)",
     "created_at": "2008-02-16T02:04:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7181",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7159",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -144,15 +143,15 @@ Since it's been two months and #1385 hasn't happened, it's time to go ahead and 
 
 ---
 
-archive/issue_comments_007182.json:
+archive/issue_comments_007160.json:
 ```json
 {
     "body": "Merged in Sage 2.10.2.alpha1. Patch applies with minimal offset, running doctests now.",
     "created_at": "2008-02-16T02:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7182",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7160",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -162,15 +161,15 @@ Merged in Sage 2.10.2.alpha1. Patch applies with minimal offset, running doctest
 
 ---
 
-archive/issue_comments_007183.json:
+archive/issue_comments_007161.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-02-16T02:10:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7183",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7161",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -180,15 +179,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_007184.json:
+archive/issue_comments_007162.json:
 ```json
 {
     "body": "Mmmh, maybe I was too optimistic: This patch does cause some doctest failures in `tut.tex` that potentially indicate much more trouble than it is worth for 2.10.2, so I might still revert the patch.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T02:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7184",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7162",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -202,15 +201,15 @@ Michael
 
 ---
 
-archive/issue_comments_007185.json:
+archive/issue_comments_007163.json:
 ```json
 {
     "body": "The doctest failure I saw in `tut.tex` seems unrelated to this patch, at least it didn't cause any other doctest failures.\n\nCheers,\n\nMichael",
     "created_at": "2008-02-16T14:17:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1171",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7185",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/1171#issuecomment-7163",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

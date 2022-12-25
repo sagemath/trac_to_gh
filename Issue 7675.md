@@ -6,15 +6,13 @@ archive/issues_007675.json:
     "body": "Assignee: @rlmill\n\nCC:  @dimpase @dcoudert\n\nThis modification would avoid the building of the shortest path, which is interesting for a function so often used !\n\nNathann\n\nIssue created by migration from https://trac.sagemath.org/ticket/7675\n\n",
     "created_at": "2009-12-13T11:05:00Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.1",
     "title": "shortest_path in c_graph should have an optional flag distance=False to return only the distance",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7675",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7675
 
 ---
 
-archive/issue_comments_065785.json:
+archive/issue_comments_065669.json:
 ```json
 {
     "body": "Changing status from new to needs_work.",
     "created_at": "2010-06-06T11:00:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65785",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65669",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing status from new to needs_work.
 
 ---
 
-archive/issue_comments_065786.json:
+archive/issue_comments_065670.json:
 ```json
 {
     "body": "Hi\n\nI am Lokesh. I wanted to work on this ticket. I have made the changes in c_graph.pyx and generic_graph.py . I had an issue that changes I have made in generic_graph.py do not appear in the git status output. Further the shortest_paths function in generic_graph.py uses functions from boost_graph.pyx . Am I supposed to make the changes in boost_graph.pyx functions as well because internally they call boost library functions. For networkx I replaced the function call to an appropriate one which returns the distance. Should I try to do something similar here as well?",
     "created_at": "2017-05-17T18:06:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65786",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65670",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -71,15 +69,15 @@ I am Lokesh. I wanted to work on this ticket. I have made the changes in c_graph
 
 ---
 
-archive/issue_comments_065787.json:
+archive/issue_comments_065671.json:
 ```json
 {
     "body": "Replying to [comment:6 jlokesh]:\n> Hi\n> \n> I am Lokesh.\nWelcome to Sagemath\n\n> I wanted to work on this ticket. I have made the changes in c_graph.pyx and generic_graph.py . I had an issue that changes I have made in generic_graph.py do not appear in the git status output. \nI'm not a git guru, so others may have better ideas of what's going on\n* Have you created a new branch first?\n* Do you see your changes with `git diff` ?\n* To commit your changes, I recommend to write `git commit -m \"trac #7675: short and relevant description of this commit\" -a`\n* then push your branch for instance in `u/jlokesh/7675`\n* the page http://doc.sagemath.org/html/en/developer/manual_git.html is very useful\n\nAlso, to test your changes, you can do (other methods might also be good/better)\n* `./sage -btp src/sage/graphs/` or `./sage -btp src/sage/graphs/generic_graph.py` to both compile the code and check if it passes all tests\n* `./sage -docbuild reference/graphs html` to rebuild the documentation of the graph module only. Be aware that from time to time you will be forced to rebuild the doc from scratch with `make doc-clean && make`\n\n\n> Further the shortest_paths function in generic_graph.py uses functions from boost_graph.pyx . Am I supposed to make the changes in boost_graph.pyx functions as well because internally they call boost library functions. For networkx I replaced the function call to an appropriate one which returns the distance. Should I try to do something similar here as well?\n\nThe changes you do should be consistent for all algorithms.",
     "created_at": "2017-05-18T07:01:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65787",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65671",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -110,15 +108,15 @@ The changes you do should be consistent for all algorithms.
 
 ---
 
-archive/issue_comments_065788.json:
+archive/issue_comments_065672.json:
 ```json
 {
     "body": "I have added the distance_flag parameter to the shortest_path function of generic_graph.py and all the functions which are called from this function. I couldn't add it to boost_graph.pyx function as it returns both distance and path dictionaries in a list. Any changes to these functions lead to failure of doctests as they are used by other functions.\nIf distance_flag is True and u,v are not connected then the shortest_path function returns None or an exception based on the algorithm used. Networkx returns an exception. Should I also raise an exception for such a case?\n----\nNew commits:",
     "created_at": "2017-05-20T09:29:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65788",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65672",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -131,15 +129,15 @@ New commits:
 
 ---
 
-archive/issue_comments_065789.json:
+archive/issue_comments_065673.json:
 ```json
 {
     "body": "Hello,\n\nYou have apparently not seen that we have methods like `shortest_path_length` and `shortest_path_lengths` to get the shortest path length from `u` to `v` and from `u` to all reachable vertices. So you should not add `distance_flag` to `shortest_path` in `generic_graph`.\n\nThe original motivation for this ticket is to get a faster method for computing shortest path length(s) with `c_graph`, avoiding to first compute and return the shortest path and then compute its length as is currently done in `shortest_path_length` and `shortest_path_lengths` (except for boost methods).\n\nThis said, in `c_graph.pyx`:\n* in method `shortest_path`, you don't need to add a `else`. Indeed, if `distance_flag==True`, then you return the distance. Otherwise you continue. So don't change the indentation of subsequent lines.\n* I don't understand why you condition the operation `pred_current, pred_other = pred_other, pred_current` to the value of `distance_flag`. This is only a exchange of pointers, no?\n* Same remarks for `bidirectional_dijkstra`\n* Concerning method `shortest_path_all_vertices`, you should use the variable `d` (but move it's +1 earlier in the loop) to write `distances_int[self.vertex_label(v_int)] = d`\n\nIn `generic_graph.py`:\n* don't modify methods `shortest_path` and `shortest_paths`\n* do the appropriate changes in methods `shortest_path_length` and `shortest_path_lengths`\n\nFinally, please use a shorter name for the branch like `u/jlokesh/7675` and adopt the good practice of `git commit -m \"trac #7675: short but relevant description of this commit\" -a`. You can also make multiple commits.",
     "created_at": "2017-05-20T10:37:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65789",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65673",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -165,15 +163,15 @@ Finally, please use a shorter name for the branch like `u/jlokesh/7675` and adop
 
 ---
 
-archive/issue_comments_065790.json:
+archive/issue_comments_065674.json:
 ```json
 {
     "body": "I just wanted to point out that there are cases where a one-line commit message is not appropriate, and you would add a multi-line explanation there (without using `-m` flag, \nbut letting git pop-up an editor to write the commit message in).\n\nAnother handy thing is `git commit --amend` to change the last commit (can be only the message, or also actual changes).",
     "created_at": "2017-05-20T10:53:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65790",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65674",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -186,15 +184,15 @@ Another handy thing is `git commit --amend` to change the last commit (can be on
 
 ---
 
-archive/issue_comments_065791.json:
+archive/issue_comments_065675.json:
 ```json
 {
     "body": "Hi\n\nThanks for the review. I have incorporated the changes in c_graph.pyx. For generic_graph.py I had made the changes for networkx function calls for example I had replaced networkx.single_source_dijkstra_path(G, u) with networkx.single_source_dijkstra_path_length(G, u). Similarly for boost function call I had done away with the code which builds the path in shortest_paths. If you want these changes as well I can just call shortest_path in shortest_path_length with distance_flag as True or I can include all these changes of networkx in shortest_path_length and shortest_path_lengths.",
     "created_at": "2017-05-20T12:41:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65791",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65675",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -206,15 +204,15 @@ Thanks for the review. I have incorporated the changes in c_graph.pyx. For gener
 
 ---
 
-archive/issue_comments_065792.json:
+archive/issue_comments_065676.json:
 ```json
 {
     "body": "I'm not sure to understand what you have changed or not.\n\nFor sure, you should not modify the `shortest_path` method in `generic_graph`, but change the `shortest_path_length` method.",
     "created_at": "2017-05-20T15:19:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65792",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65676",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -226,15 +224,15 @@ For sure, you should not modify the `shortest_path` method in `generic_graph`, b
 
 ---
 
-archive/issue_comments_065793.json:
+archive/issue_comments_065677.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-05-21T10:04:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65793",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65677",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -244,15 +242,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_065794.json:
+archive/issue_comments_065678.json:
 ```json
 {
     "body": "Hi\n\nI have uploaded changes for shortest_path_length and shortest_path_lengths. Sorry, I couldn't figure out the command for changing the remote branch name.",
     "created_at": "2017-05-21T10:10:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65794",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65678",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -264,15 +262,15 @@ I have uploaded changes for shortest_path_length and shortest_path_lengths. Sorr
 
 ---
 
-archive/issue_comments_065795.json:
+archive/issue_comments_065679.json:
 ```json
 {
     "body": "Replying to [comment:15 jlokesh]:\n> Hi\n> \n> I have uploaded changes for shortest_path_length and shortest_path_lengths. Sorry, I couldn't figure out the command for changing the remote branch name.\n\nread on remote branches in git.\ne.g you can remove a remote branch via `git push` with --delete option.",
     "created_at": "2017-05-21T11:09:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65795",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65679",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -288,15 +286,15 @@ e.g you can remove a remote branch via `git push` with --delete option.
 
 ---
 
-archive/issue_comments_065796.json:
+archive/issue_comments_065680.json:
 ```json
 {
     "body": "This is much better. It passes all tests (graphs, matroid, sandpile, knots) and the doc builds properly.\n\nCould you adopt the following convention:\n\n```\n        - ``distance_flag`` -- boolean (default: ``False``). When set to ``True``, the\n          shortest path distance from ``x`` to ``y`` is returned instead of the path.\n```\n\n\n\nAlso, I'm wondering if we could return 5 instead of 5.0. May be Dima can answer this question ?\n----\nNew commits:",
     "created_at": "2017-05-21T15:25:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65796",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65680",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -319,15 +317,15 @@ New commits:
 
 ---
 
-archive/issue_comments_065797.json:
+archive/issue_comments_065681.json:
 ```json
 {
     "body": "I think it's actually a bug introduced in the branch of this ticket that makes `Dijkstra_Bid` return `float` (there is `cdef float...` there). While I cannot find explicit documentation on the type of weights allowed, I cannot imagine `float` being the right type. This type depends upon the type of weight of a particular graph. \nBy common sense, one needs weights to satisfy certain basic properties: one should be able to add them, and to compare them for `<`, and there should be `0` in this type, but that's all; e.g. certainly `float` is a wrong type to use if weights are, say, rational numbers.\n\nIt would be good to dig up whether the code does any kind of checking on weights, and document this. If there are no checks done, i.e. you can get weird results, or perhaps even crashes, by using weights which are, say, integers mod 3, this ought to be documented as well.",
     "created_at": "2017-05-22T09:01:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65797",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65681",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -340,15 +338,15 @@ It would be good to dig up whether the code does any kind of checking on weights
 
 ---
 
-archive/issue_comments_065798.json:
+archive/issue_comments_065682.json:
 ```json
 {
     "body": "One certain thing to check in doctests is whether cycles of negative length in the graph lead to a crash---if an implementation does not check whether it creates loops in \"shortest\" paths it is building, then it would not terminate (normally).",
     "created_at": "2017-05-22T09:05:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65798",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65682",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -358,15 +356,15 @@ One certain thing to check in doctests is whether cycles of negative length in t
 
 ---
 
-archive/issue_comments_065799.json:
+archive/issue_comments_065683.json:
 ```json
 {
     "body": "Hello,\n\n* The goal of this ticket is to speed up some calls when asking for the distance and not the path. We do not change the behavior of the algorithms. That is, if the algorithm was not able to detect negative cycles before, it will be the same after. If it was able to detect negative cycles, then it will continue to do so. If a correction of a shortest path algorithm has to be performed, it must be done in another ticket.\n* Concerning the use of `float` in `bidirectional_dijkstra`. I agree it is certainly not the good type here. May be we should simply remove the type for variables `distance` and `f_tmp` and let Python/Cython decide ? Or may be there is a more suitable type to use here ? Who should we ask ?\n* Concerning the possibility edge labels are integer mod 3. Yes, one can certainly do it and as far as I know, no graph algorithm is protected against such weird use. If one wants to protect graphs against such weird use, a specific ticket should be opened, for instance to improve method `_check_weight_function` or to add an extra method like `_check_edge_labels`",
     "created_at": "2017-05-22T10:51:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65799",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65683",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -380,15 +378,15 @@ Hello,
 
 ---
 
-archive/issue_comments_065800.json:
+archive/issue_comments_065684.json:
 ```json
 {
     "body": "Hi\n\nAre the documentation changes the only changes required for this ticket currently?",
     "created_at": "2017-05-31T04:32:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65800",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65684",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -400,15 +398,15 @@ Are the documentation changes the only changes required for this ticket currentl
 
 ---
 
-archive/issue_comments_065801.json:
+archive/issue_comments_065685.json:
 ```json
 {
     "body": "can you try to fix the tyep float issue discussed above ?",
     "created_at": "2017-05-31T10:24:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65801",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65685",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -418,15 +416,15 @@ can you try to fix the tyep float issue discussed above ?
 
 ---
 
-archive/issue_comments_065802.json:
+archive/issue_comments_065686.json:
 ```json
 {
     "body": "It should suffice to remove the declaration of that `float` variable.\nThen its type will be handled dynamically by Python.",
     "created_at": "2017-05-31T14:54:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65802",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65686",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -437,15 +435,15 @@ Then its type will be handled dynamically by Python.
 
 ---
 
-archive/issue_comments_065803.json:
+archive/issue_comments_065687.json:
 ```json
 {
     "body": "I have removed the declarations and it is working correctly now. Its also able to handle rational numbers as weights.",
     "created_at": "2017-05-31T14:56:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65803",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65687",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -455,15 +453,15 @@ I have removed the declarations and it is working correctly now. Its also able t
 
 ---
 
-archive/issue_comments_065804.json:
+archive/issue_comments_065688.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-06-01T17:52:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65804",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65688",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -473,15 +471,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_065805.json:
+archive/issue_comments_065689.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2017-06-02T00:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65805",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65689",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -491,15 +489,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_065806.json:
+archive/issue_comments_065690.json:
 ```json
 {
     "body": "OK, this looks good. Please do not forget to fill in \"Authors:\" field next time (I copied the name from your email, hopefully it's the way prefer it written).",
     "created_at": "2017-06-02T00:01:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65806",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65690",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -509,15 +507,15 @@ OK, this looks good. Please do not forget to fill in "Authors:" field next time 
 
 ---
 
-archive/issue_comments_065807.json:
+archive/issue_comments_065691.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2017-06-03T06:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65807",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65691",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -527,15 +525,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_065808.json:
+archive/issue_comments_065692.json:
 ```json
 {
     "body": "Sorry to post a little late with comments, but there are a few small things I think need to be addressed.\n\nI don't see the need or desire to have a separate dict `distances_int` in `shortest_path_all_vertices`. Just add an extra `if` statement when initializing `distances[v]`. IMO it is cleaner code and doesn't require allocating an unnecessary object.\n\nThis is both the wrong type of error (for the message) and the wrong statement:\n\n```\n            raise ValueError(\"Algorithm \" + algorithm + \" not yet \" +\n                             \"implemented. Please, contribute!\")\n```\n\nFor example, `algorithm='foobar'` says we should implement a fictitious algorithm. A `ValueError` is the correct error message, but it should say something like `'unknown algorithm \"{}\"'.format(algorithm)`. (Edit: Yes, no capital letter. Bad splicing of my post.)\n\nMinor point, but for easier readability (PEP8), use `a == b` instead of `a==b` and similarly:\n\n```\ndef shortest_path_all_vertices(self, v, cutoff=None, distance_flag=False):\n```\n",
     "created_at": "2017-06-03T06:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65808",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65692",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -563,15 +561,15 @@ def shortest_path_all_vertices(self, v, cutoff=None, distance_flag=False):
 
 ---
 
-archive/issue_comments_065809.json:
+archive/issue_comments_065693.json:
 ```json
 {
     "body": "I agree that we can safely get ride of the `distances_int` dict using an extra `if`. It will be cleaner.\n\nFor the error message, the convention to follow is `raise ValueError('unknown algorithm \"{}\"'.format(algorithm))`, so without capital letter for the first word and no `.` at the end.\n\nSo you also have to change `raise ValueError(\"The 'BFS_Bid' algorithm does not work on weighted graphs.\"` to `raise ValueError(\"the 'BFS_Bid' algorithm does not work on weighted graphs\")`",
     "created_at": "2017-06-03T11:33:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65809",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65693",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -585,15 +583,15 @@ So you also have to change `raise ValueError("The 'BFS_Bid' algorithm does not w
 
 ---
 
-archive/issue_comments_065810.json:
+archive/issue_comments_065694.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-06-03T15:18:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65810",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65694",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -603,15 +601,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_065811.json:
+archive/issue_comments_065695.json:
 ```json
 {
     "body": "One last thing (well, in 2 places):\n\n```diff\n-distance_flag = False):\n+distance_flag=False):\n```\n",
     "created_at": "2017-06-03T22:19:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65811",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65695",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -627,15 +625,15 @@ One last thing (well, in 2 places):
 
 ---
 
-archive/issue_comments_065812.json:
+archive/issue_comments_065696.json:
 ```json
 {
     "body": "Hi\n\n\n\n```\nraise ValueError(\"Algorithm \" + algorithm + \" not yet \" +\n                             \"implemented. Please, contribute!\")\n```\n\nis used by other algorithms like triangles_count, shortest_paths and shortest_path_all_pairs. Should I make the corresponding change in those algorithms as well?",
     "created_at": "2017-06-04T07:03:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65812",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65696",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -654,15 +652,15 @@ is used by other algorithms like triangles_count, shortest_paths and shortest_pa
 
 ---
 
-archive/issue_comments_065813.json:
+archive/issue_comments_065697.json:
 ```json
 {
     "body": "While we should be wary of \"ticket creep\", I think in this case it isn't so bad to change it across the board in graphs here for simplicity.",
     "created_at": "2017-06-04T08:18:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65813",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65697",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -672,15 +670,15 @@ While we should be wary of "ticket creep", I think in this case it isn't so bad 
 
 ---
 
-archive/issue_comments_065814.json:
+archive/issue_comments_065698.json:
 ```json
 {
     "body": "It should be ok to do so, but be aware that some tickets like #23124 are currently modifying many files in `graphs`.\n\nIn `shortest_paths`, please change \n`if self.num_verts()==1 and self.vertices()[0]==u` to\n`if self.order() == 1 and self.has_vertex(u):`",
     "created_at": "2017-06-04T08:28:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65814",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65698",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -694,15 +692,15 @@ In `shortest_paths`, please change
 
 ---
 
-archive/issue_comments_065815.json:
+archive/issue_comments_065699.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-06-05T17:45:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65815",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65699",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -712,15 +710,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_065816.json:
+archive/issue_comments_065700.json:
 ```json
 {
     "body": "don't forget to update the tests with the new error message.",
     "created_at": "2017-06-05T17:47:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65816",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65700",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -730,15 +728,15 @@ don't forget to update the tests with the new error message.
 
 ---
 
-archive/issue_comments_065817.json:
+archive/issue_comments_065701.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-06-05T18:54:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65817",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65701",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -748,15 +746,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_065818.json:
+archive/issue_comments_065702.json:
 ```json
 {
     "body": "I forgot to update the tests for the changes made to the error message. The second commit makes those changes.",
     "created_at": "2017-06-05T18:56:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65818",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65702",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -766,15 +764,15 @@ I forgot to update the tests for the changes made to the error message. The seco
 
 ---
 
-archive/issue_comments_065819.json:
+archive/issue_comments_065703.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2017-06-06T00:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65819",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65703",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -784,15 +782,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_065820.json:
+archive/issue_comments_065704.json:
 ```json
 {
     "body": "LGTM.",
     "created_at": "2017-06-06T00:06:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65820",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65704",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -802,15 +800,15 @@ LGTM.
 
 ---
 
-archive/issue_comments_065821.json:
+archive/issue_comments_065705.json:
 ```json
 {
     "body": "Looking at the code, I realize that we have the following problem:\n\n```\nsage: G = Graph()\nsage: 2 in G\nFalse\nsage: G.shortest_path(2,2)\n[2]\nsage: G.shortest_path_length(2,2)\n0\n```\n\nI don't know why it has not been reported before.\n\nCan you add necessary tests to check that u and v are in the graph and raise an error if it is not the case.\n\nThanks.",
     "created_at": "2017-06-06T07:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65821",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65705",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -836,15 +834,15 @@ Thanks.
 
 ---
 
-archive/issue_comments_065822.json:
+archive/issue_comments_065706.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2017-06-06T07:35:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65822",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65706",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -854,15 +852,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_065823.json:
+archive/issue_comments_065707.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-06-06T18:02:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65823",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65707",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -872,15 +870,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_065824.json:
+archive/issue_comments_065708.json:
 ```json
 {
     "body": "In the diff, I see the following modifications that must be cancelled.\n\n```\n-.. csv-table::\n+ v\\sv-table::\n```\n\n\n```\n-    :meth:`~GenericGraph.add_vertex` | Create an isolated vertex.\n+*-* :meth:`~GenericGraph.add_vertex` | Create an isolated vertex.\n```\n\n\nIn case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n\n\nConcerning the tests, I would prefer something like that (and \n\n```\nif not self.has_vertex(u):\n    raise ValueError(\"vertex '{}' is not in the (di)graph\".format(u))\nif not self.has_vertex(v):\n    raise ValueError(\"vertex '{}' is not in the (di)graph\".format(v))\n```\n",
     "created_at": "2017-06-06T21:22:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65824",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65708",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -915,15 +913,15 @@ if not self.has_vertex(v):
 
 ---
 
-archive/issue_comments_065825.json:
+archive/issue_comments_065709.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2017-06-07T02:03:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65825",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65709",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -933,15 +931,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_065826.json:
+archive/issue_comments_065710.json:
 ```json
 {
     "body": "Sorry for the modifications. I have deleted the previous commit.\n\n> \n> In case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n> \nI have built the documentation. Is there anything specific I need to do with it?",
     "created_at": "2017-06-07T02:50:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65826",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65710",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -956,15 +954,15 @@ I have built the documentation. Is there anything specific I need to do with it?
 
 ---
 
-archive/issue_comments_065827.json:
+archive/issue_comments_065711.json:
 ```json
 {
     "body": "Replying to [comment:46 jlokesh]:\n> Sorry for the modifications. I have deleted the previous commit.\n\nok, but you have not put the tests ;)\n\n> > In case, you can \"quickly\" rebuild the html documentation of the graph module using `./sage -docbuild reference/graphs html`.\n> > \n> I have built the documentation. Is there anything specific I need to do with it?\n\nFirst it tells you that it builds correctly. Then, since you have a local version of the full html documentation, you can check that the pages generated for the files you have modified display properly / look nice. If it is the case, you have nothing else to do.",
     "created_at": "2017-06-07T07:11:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65827",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65711",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -983,15 +981,15 @@ First it tells you that it builds correctly. Then, since you have a local versio
 
 ---
 
-archive/issue_comments_065828.json:
+archive/issue_comments_065712.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-06-07T16:14:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65828",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65712",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1001,15 +999,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_065829.json:
+archive/issue_comments_065713.json:
 ```json
 {
     "body": "I have committed the tests. I hope there are no errors this time :)",
     "created_at": "2017-06-07T16:16:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65829",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65713",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -1019,15 +1017,15 @@ I have committed the tests. I hope there are no errors this time :)
 
 ---
 
-archive/issue_comments_065830.json:
+archive/issue_comments_065714.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2017-06-07T16:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65830",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65714",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -1037,15 +1035,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_065831.json:
+archive/issue_comments_065715.json:
 ```json
 {
     "body": "For me it is now good to go (passes all tests, docbuild). Let's hope we are done this time and congratulation for your first contribution to Sagemath.",
     "created_at": "2017-06-07T16:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65831",
-    "user": "@dcoudert"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65715",
+    "user": "https://github.com/dcoudert"
 }
 ```
 
@@ -1055,15 +1053,15 @@ For me it is now good to go (passes all tests, docbuild). Let's hope we are done
 
 ---
 
-archive/issue_comments_065832.json:
+archive/issue_comments_065716.json:
 ```json
 {
     "body": "Thanks.",
     "created_at": "2017-06-07T17:13:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65832",
-    "user": "@lokeshj1703"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65716",
+    "user": "https://github.com/lokeshj1703"
 }
 ```
 
@@ -1073,15 +1071,15 @@ Thanks.
 
 ---
 
-archive/issue_comments_065833.json:
+archive/issue_comments_065717.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2017-06-09T18:38:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7675",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65833",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/7675#issuecomment-65717",
+    "user": "https://github.com/vbraun"
 }
 ```
 

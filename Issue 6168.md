@@ -6,15 +6,14 @@ archive/issues_006168.json:
     "body": "Assignee: tbd\n\nIt is possible to create FLINT `zmod_poly` objects whose coefficients are not reduced mod n (where n is the modulus). This is difficult to show directly in Sage, but here is an example symptom:\n\n\n```\nsage: R.<x> = PolynomialRing(Integers(15))\nsage: S.<y> = PolynomialRing(Integers(5))\nsage: f = S(5*x)\nsage: f\n0\nsage: f == 0\nFalse\nsage: f.degree()\n1\n```\n\n\nInternally the coefficient 5 is not reduced, but it prints as reduced.\n\nThis bug is probably the main cause of #5817.\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6168\n\n",
     "created_at": "2009-05-31T05:40:26Z",
     "labels": [
-        "algebra",
-        "major",
+        "component: algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0.1",
     "title": "FLINT wrapper not reducing coefficients properly",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6168",
-    "user": "dmharvey"
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 Assignee: tbd
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6168
 
 ---
 
-archive/issue_comments_049205.json:
+archive/issue_comments_049110.json:
 ```json
 {
     "body": "See also\n\nhttp://groups.google.com/group/sage-devel/browse_thread/thread/3d1e310b021c1620",
     "created_at": "2009-05-31T05:42:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49205",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49110",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -68,15 +67,15 @@ http://groups.google.com/group/sage-devel/browse_thread/thread/3d1e310b021c1620
 
 ---
 
-archive/issue_comments_049206.json:
+archive/issue_comments_049111.json:
 ```json
 {
     "body": "Changing component from algebra to basic arithmetic.",
     "created_at": "2009-05-31T20:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49206",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49111",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -86,15 +85,15 @@ Changing component from algebra to basic arithmetic.
 
 ---
 
-archive/issue_comments_049207.json:
+archive/issue_comments_049112.json:
 ```json
 {
     "body": "Attachment [zmod_poly_set_fix.patch](tarball://root/attachments/some-uuid/ticket6168/zmod_poly_set_fix.patch) by @williamstein created at 2009-05-31 20:51:33",
     "created_at": "2009-05-31T20:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49207",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49112",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -104,15 +103,15 @@ Attachment [zmod_poly_set_fix.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_049208.json:
+archive/issue_comments_049113.json:
 ```json
 {
     "body": "Changing assignee from tbd to somebody.",
     "created_at": "2009-05-31T20:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49208",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49113",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -122,15 +121,15 @@ Changing assignee from tbd to somebody.
 
 ---
 
-archive/issue_comments_049209.json:
+archive/issue_comments_049114.json:
 ```json
 {
     "body": "Changing priority from major to critical.",
     "created_at": "2009-05-31T20:51:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49209",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49114",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -140,15 +139,15 @@ Changing priority from major to critical.
 
 ---
 
-archive/issue_comments_049210.json:
+archive/issue_comments_049115.json:
 ```json
 {
     "body": "The patch applies against 4.0, and fixes the bug:\n\n```\nsage: R.<x> = PolynomialRing(Integers(15))\nsage: S.<y> = PolynomialRing(Integers(5))\nsage: f = S(5*x)\nsage: f\n0\nsage: f == 0\nTrue\nsage: f.degree()\n-1\n```\n\nMoreover, with this patch in, the spkg at #5817 passes all doctests. Positive review.",
     "created_at": "2009-06-02T01:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49210",
-    "user": "@kedlaya"
+    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49115",
+    "user": "https://github.com/kedlaya"
 }
 ```
 
@@ -172,15 +171,15 @@ Moreover, with this patch in, the spkg at #5817 passes all doctests. Positive re
 
 ---
 
-archive/issue_comments_049211.json:
+archive/issue_comments_049116.json:
 ```json
 {
     "body": "Merged in 4.0.1.rc0.",
     "created_at": "2009-06-03T18:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49211",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49116",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -190,15 +189,15 @@ Merged in 4.0.1.rc0.
 
 ---
 
-archive/issue_comments_049212.json:
+archive/issue_comments_049117.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-03T18:26:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6168",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49212",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6168#issuecomment-49117",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

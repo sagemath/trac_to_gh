@@ -6,15 +6,13 @@ archive/issues_007012.json:
     "body": "Assignee: jkantor\n\nCC:  @nathanncohen @mwhansen\n\nAs the subject says. This is a follow up to #6869 to address mhansen's suggestions:\n\n```\n\n\nAfter going through this patch, I think it would be best to revert it before 4.1.2 is released. There is still a lot of things that need to be done to get it cleaned up. Some of the things,\n\n1. Almost all of the docstrings are incorrectly formatted.\n\n1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n\n1. Some of the naming conventions do not match Sage's conventions. (isbinary vs. is_binary). Also, names like the more explicit MixedIntegerProgram? are preferred over the shortened MIP.\n\n1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n\nI have some code that addresses some of these things that I'll put up shortly.\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7012\n\n",
     "created_at": "2009-09-25T08:04:10Z",
     "labels": [
-        "numerical",
-        "major",
-        "enhancement"
+        "component: numerical"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "clean up sage/numerical/mip.pyx",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7012",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: jkantor
@@ -48,15 +46,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7012
 
 ---
 
-archive/issue_comments_057976.json:
+archive/issue_comments_057868.json:
 ```json
 {
     "body": "Hello !!!\n\nCould I have more information about some points :\n\n1. Almost all of the docstrings are incorrectly formatted.\n\nCould you tell me in which way ? I am still learning how to write these, and may have learnt a few things since this patch but I would like to know what you have in mind.\n\n1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n\n- I understand that there may be very few reasons left ( now ) for keeping this as a Cython module. Here is the reason why I built it this way : initially, I thought the GLPK package would be merged immediately merged to standard Sage, and the function sending the LP problem to the solver GLPK ( necessarily written in Cython as it uses C functions ) was at this time contained in the file numerical.mip. I did not know how to change this when I learnt GLPK was to be optional for a while, and this is the reason why I just moved the function solveGLPK to the optional package. This, though, is way less handy when I need to improve functions like solveGLPK or solveCBC, as I always need to update the whole package.. I intended to move function solveGLPK to the file numerical.MIP as soon as GLPK is accepted as a standard spkg.\n\n1. Some of the naming conventions do not match Sage's conventions. (isbinary vs. is_binary). Also, names like the more explicit MixedIntegerProgram? are preferred over the shortened MIP.\n\n- I quite agree\n\n1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n\nI wrote to many people to get informations about how best these things should be done. I am not happy either with the way it is now... What would you advise ? I know nothing of ctypes-glpk ! I just visited its front page and I can only see that it makes C functions available under python, which Cython can already do.\n\n\nOn top of all this, I have a \"personal\" request.... I intend to write a lot of things that will be added to the MIP class ( soon to be MixedIntegerProgram ), but I initially wrote this class just to write new Graph-related functions. I have still a lot of patches waiting to be reviewed/accepted ( #6764 #6763 #6680 #6679 #6765 #6962 ), all using this class. Each time a modification is brought to the main class MIP, I have to rewrite patches for all of these tickets to make them coherent with the \"current\" state of the MIP Class. Could this ticket wait for these patches to be merged ? It would be easier, later, to change MIP to MixedIntegerProgram, isbinary to is_binary, and many other problems/bugs I already noticed in an unique patch to correct them all at once.... :-)\n\nThank you a lot for your interest, though :-)\n\nNathann",
     "created_at": "2009-09-26T14:50:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57976",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57868",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -91,15 +89,15 @@ Nathann
 
 ---
 
-archive/issue_comments_057977.json:
+archive/issue_comments_057869.json:
 ```json
 {
     "body": "Replying to [comment:1 ncohen]:\n> Hello !!!\n> \n> Could I have more information about some points :\n> \n> 1. Almost all of the docstrings are incorrectly formatted.\n> \n> Could you tell me in which way ? I am still learning how to write these, and may have learnt a few things since this patch but I would like to know what you have in mind.\n\nThe Developers' Guide has a section on [docstring](http://www.sagemath.org/doc/developer/conventions.html#documentation-strings). You should follow the conventions listed in that section.\n\n\n\n\n\n> 1. This module should _definitely_ not be a Cython module as it does not gain any benefit from Cython. It just makes Sage slower to compile and things harder to debug.\n> \n> - I understand that there may be very few reasons left ( now ) for keeping this as a Cython module. Here is the reason why I built it this way : initially, I thought the GLPK package would be merged immediately merged to standard Sage, and the function sending the LP problem to the solver GLPK ( necessarily written in Cython as it uses C functions ) was at this time contained in the file numerical.mip. I did not know how to change this when I learnt GLPK was to be optional for a while, and this is the reason why I just moved the function solveGLPK to the optional package. This, though, is way less handy when I need to improve functions like solveGLPK or solveCBC, as I always need to update the whole package.. I intended to move function solveGLPK to the file numerical.MIP as soon as GLPK is accepted as a standard spkg.\nIn light of the recent discussion about making a package standard, a package that is to be a standard spkg must satisfy at minimum the following requirements:\n\n1. Build as 32-bit with GCC on SPARC\n2. Build as 64-bit with GCC on SPARC\n3. Build as 32-bit with Sun's compiler on SPARC\n4. Build as 64-bit with Sun's compiler on SPARC\n5. Build as 32-bit with GCC on x86\n6. Build as 64-bit with GCC on x86_64\n7. Build as 32-bit with Sun's compiler on x86\n8. Build as 64-bit with Sun's compiler on x86_64\n\nNote that satisfying the first four would likely satisfy the remaining criteria. It much less work to have GLPK and CBC be optional packages and hence improve on the MIP module. As far as I can tell, both of these packages are already optional spkg's and they satisfy the minimum of being optional packages, namely they build on supported Linux distributions and Mac OS X 10.5. I have not tried building and using them on OS X 10.6 yet. But if you have an account on bsd.math which runs OS X 10.6 now, you could test on that machine. See [here](http://groups.google.com/group/sage-devel/browse_thread/thread/15c461b1355a8460/d9660e265ad982d8) and [here](http://groups.google.com/group/sage-devel/browse_thread/thread/b54a6b4317add033/bf7224be375df49f) for the discussions about making a package standard.\n\n\n\n\n\n> 1. The optional spkgs should not install modules into the sage.* namespace (sage.numerical.mipGlpk). This is not the right way to do things and will eventually break. I think it also makes sense to use (and contribute to) something like ctypes-glpk to allow greater functionality and not reinvent the wheel.\n> \n> I wrote to many people to get informations about how best these things should be done. I am not happy either with the way it is now... What would you advise ? I know nothing of ctypes-glpk ! I just visited its front page and I can only see that it makes C functions available under python, which Cython can already do.\nI have little experience with Cython and much less with maintaining an optional package. Since I'm busy with release management in the next week or so, I won't have time to investigate this issue. After finishing the 4.1.2 release, I won't be able to work on anything but my thesis project.\n\n\n\n\n\n> On top of all this, I have a \"personal\" request.... I intend to write a lot of things that will be added to the MIP class ( soon to be MixedIntegerProgram ), but I initially wrote this class just to write new Graph-related functions. I have still a lot of patches waiting to be reviewed/accepted ( #6764 #6763 #6680 #6679 #6765 #6962 ), all using this class. Each time a modification is brought to the main class MIP, I have to rewrite patches for all of these tickets to make them coherent with the \"current\" state of the MIP Class. Could this ticket wait for these patches to be merged ? It would be easier, later, to change MIP to MixedIntegerProgram, isbinary to is_binary, and many other problems/bugs I already noticed in an unique patch to correct them all at once.... :-)\nI think a good way about this is to look through how Simon King produced his optional p_group_cohomology package. You should ask Simon about his experiences with writing a self-contained package.\n\n\n\n\nI do intend to clean up the MIP class before releasing Sage 4.1.2. Any help is appreciated.",
     "created_at": "2009-09-26T22:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57977",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57869",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -159,15 +157,15 @@ I do intend to clean up the MIP class before releasing Sage 4.1.2. Any help is a
 
 ---
 
-archive/issue_comments_057978.json:
+archive/issue_comments_057870.json:
 ```json
 {
     "body": "Ok... I will be trying to send some coherent patch in the next few days, so it would be better if I am the only one working on this so our modification do not overlap. I changed some methods like setmin to set_min to let them be more Sage-like, and this involves modifying once more the packages CBC and GLPK ( which will have to be reviewed again... )\n\nI may bring several other modifications too, while I'm at it. How close is next release ?\n\nNathann",
     "created_at": "2009-09-28T07:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57978",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57870",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -181,15 +179,15 @@ Nathann
 
 ---
 
-archive/issue_comments_057979.json:
+archive/issue_comments_057871.json:
 ```json
 {
     "body": "Replying to [comment:3 ncohen]:\n> Ok... I will be trying to send some coherent patch in the next few days, so it would be better if I am the only one working on this so our modification do not overlap. \n\nThanks letting me know. I'll leave it to you to clean up MIP. Inform me when it's ready and I'll take a look.\n\n\n\n\n\n> I changed some methods like setmin to set_min to let them be more Sage-like, and this involves modifying once more the packages CBC and GLPK ( which will have to be reviewed again... )\n\nInform me when it's ready and I'll take a look.\n\n\n\n\n\n> I may bring several other modifications too, while I'm at it. How close is next release ?\n\nThe upcoming rc0 is in about 3 days or so.",
     "created_at": "2009-09-28T08:00:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57979",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57871",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -218,15 +216,15 @@ The upcoming rc0 is in about 3 days or so.
 
 ---
 
-archive/issue_comments_057980.json:
+archive/issue_comments_057872.json:
 ```json
 {
     "body": "Changing type from enhancement to defect.",
     "created_at": "2009-09-28T09:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57980",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57872",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -236,15 +234,15 @@ Changing type from enhancement to defect.
 
 ---
 
-archive/issue_comments_057981.json:
+archive/issue_comments_057873.json:
 ```json
 {
     "body": "What this patch does :\n* renames function getmin to get_min, isinteger to is_integer, etc ....\n* renames class MIP to MixedIntegerLinearProgram\n* function \n* Typos\n* stupid bugfix 1 : setinteger was setting variables as binary in some cases ...\n* stupid bugfix 2 : setinteger(x) did not set x[2] as integer if x[2] had not been mentionned before setinteger() \n* Some \":\" replaced by \"::\", some '' by ``",
     "created_at": "2009-09-28T09:34:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57981",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57873",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -261,15 +259,15 @@ What this patch does :
 
 ---
 
-archive/issue_comments_057982.json:
+archive/issue_comments_057874.json:
 ```json
 {
     "body": "Attachment [trac_7012.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012.patch) by @nathanncohen created at 2009-09-28 09:35:25",
     "created_at": "2009-09-28T09:35:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57982",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57874",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -279,15 +277,15 @@ Attachment [trac_7012.patch](tarball://root/attachments/some-uuid/ticket7012/tra
 
 ---
 
-archive/issue_comments_057983.json:
+archive/issue_comments_057875.json:
 ```json
 {
     "body": "I forgot to mention this new patch can only be used through GLPK at #7049 as many methods had to be renamed and brek compatibility with old spkg.",
     "created_at": "2009-09-28T09:36:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57983",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57875",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -297,15 +295,15 @@ I forgot to mention this new patch can only be used through GLPK at #7049 as man
 
 ---
 
-archive/issue_comments_057984.json:
+archive/issue_comments_057876.json:
 ```json
 {
     "body": "Nathann, can you sign into #sage-devel on IRC?",
     "created_at": "2009-09-28T09:51:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57984",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57876",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -315,15 +313,15 @@ Nathann, can you sign into #sage-devel on IRC?
 
 ---
 
-archive/issue_comments_057985.json:
+archive/issue_comments_057877.json:
 ```json
 {
     "body": "rebased against Sage 4.1.2.rc0",
     "created_at": "2009-10-01T11:29:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57985",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57877",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -333,15 +331,15 @@ rebased against Sage 4.1.2.rc0
 
 ---
 
-archive/issue_comments_057986.json:
+archive/issue_comments_057878.json:
 ```json
 {
     "body": "Attachment [trac_7012-rebased.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-rebased.patch) by mvngu created at 2009-10-01 11:33:53\n\nApplying the patch `trac_7012.patch` results in a hunk failure:\n\n```\n[mvngu@sage sage-main]$ hg qimport http://trac.sagemath.org/sage_trac/raw-attachment/ticket/7012/trac_7012.patch && hg qpush\nadding trac_7012.patch to series file\napplying trac_7012.patch\npatching file sage/numerical/knapsack.py\nHunk #1 FAILED at 640\n1 out of 1 hunks FAILED -- saving rejects to file sage/numerical/knapsack.py.rej\npatch failed, unable to continue (try -v)\npatch failed, rejects left in working dir\nErrors during apply, please fix and refresh trac_7012.patch\n```\n\nThe hunk in question is:\n\n```\n[mvngu@sage sage-main]$ cat sage/numerical/knapsack.py.rej\n--- knapsack.py\n+++ knapsack.py\n@@ -641,16 +641,16 @@\n     if reals:\n         seq=[(x,1) for x in seq]\n \n-    from sage.numerical.mip import MIP\n-    p=MIP(sense=1)\n-    present=p.newvar()\n-    p.setobj(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n-    p.addconstraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n+    from sage.numerical.mip import MixedIntegerLinearProgram\n+    p=MixedIntegerLinearProgram(sense=1)\n+    present=p.new_variable()\n+    p.set_objective(sum([present[i]*seq[i][1] for i in range(len(seq))]))\n+    p.add_constraint(sum([present[i]*seq[i][0] for i in range(len(seq))]),max=max)\n \n     if binary:\n-        p.setbinary(present)\n+        p.set_binary(present)\n     else:\n-        p.setinteger(present)\n+        p.set_integer(present)\n \n     if value_only:\n         return p.solve(objective_only=True)\n```\n\nI have rebased the patch against Sage 4.1.2.rc0; see `trac_7012-rebased.patch`.",
     "created_at": "2009-10-01T11:33:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57986",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57878",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -399,15 +397,15 @@ I have rebased the patch against Sage 4.1.2.rc0; see `trac_7012-rebased.patch`.
 
 ---
 
-archive/issue_comments_057987.json:
+archive/issue_comments_057879.json:
 ```json
 {
     "body": "Attachment [trac_7012-reviewer.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-reviewer.patch) by mvngu created at 2009-10-01 17:37:46\n\nreviewer patch; apply on top of previous patch",
     "created_at": "2009-10-01T17:37:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57987",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57879",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -419,15 +417,15 @@ reviewer patch; apply on top of previous patch
 
 ---
 
-archive/issue_comments_057988.json:
+archive/issue_comments_057880.json:
 ```json
 {
     "body": "I have uploaded a reviewer patch that makes the following changes (see `trac_7012-reviewer.patch`):\n\n1. Consistent use of double quotation marks in `sage/numerical/mip.pyx`.\n2. Doesn't use trailing white spaces.\n3. Limit the line width to about 75 characters. Don't go over 75 or so characters per line if you don't need to.\n4. Some typo fixes.\n5. Add `sage/numerical/mip.pyx` to the reference manual.\n6. Use 4-space indentation.\n7. Proper ReST formatting so the module appears nicely when rendered.\n8. Use `ValueError` instead of `Exception`. `ValueError` is more explicit, whereas `Exception` would catch anything.\n9. Use `maximization` with boolean values, instead of `sense` with either 1 or -1. This was suggested by Mike Hansen on IRC. So I would credit Mike and myself as reviewers for this ticket.\n\nNow my patch needs some reviewing by anyone other than me.",
     "created_at": "2009-10-01T17:43:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57988",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57880",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -449,15 +447,15 @@ Now my patch needs some reviewing by anyone other than me.
 
 ---
 
-archive/issue_comments_057989.json:
+archive/issue_comments_057881.json:
 ```json
 {
     "body": "Minh you're really amazing !! Thank you for your work ! :-)",
     "created_at": "2009-10-01T18:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57989",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57881",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -467,15 +465,15 @@ Minh you're really amazing !! Thank you for your work ! :-)
 
 ---
 
-archive/issue_comments_057990.json:
+archive/issue_comments_057882.json:
 ```json
 {
     "body": "I tested it with #7049 :\n* I updated #7049 because the change from variable sense to variable maximization had to be mentionned there\n* There was a wrong docstring report because GLPK sometines returns 1.684643648434 * 10^(-16) instead of 0 ( as CBC does )\n  I added a \"random\" near the \"optional\" as GLPK and CBC do not agree on this.\n* sense->minimization needed changing in knapsack too\n\nThe docstrings are perfect !!!\n\nHere is a new flattened patch with those two modifications included",
     "created_at": "2009-10-02T16:32:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57990",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57882",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -493,15 +491,15 @@ Here is a new flattened patch with those two modifications included
 
 ---
 
-archive/issue_comments_057991.json:
+archive/issue_comments_057883.json:
 ```json
 {
     "body": "flattened patch; include rebased patch and reviewer patch",
     "created_at": "2009-10-04T15:14:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57991",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57883",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -511,15 +509,15 @@ flattened patch; include rebased patch and reviewer patch
 
 ---
 
-archive/issue_comments_057992.json:
+archive/issue_comments_057884.json:
 ```json
 {
     "body": "Attachment [trac_7012-details.patch](tarball://root/attachments/some-uuid/ticket7012/trac_7012-details.patch) by @nathanncohen created at 2009-10-04 15:23:55",
     "created_at": "2009-10-04T15:23:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57992",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57884",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -529,15 +527,15 @@ Attachment [trac_7012-details.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_057993.json:
+archive/issue_comments_057885.json:
 ```json
 {
     "body": "This ticket depends on #7049",
     "created_at": "2009-10-14T23:52:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57993",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57885",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -547,15 +545,15 @@ This ticket depends on #7049
 
 ---
 
-archive/issue_comments_057994.json:
+archive/issue_comments_057886.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2009-10-21T22:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57994",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57886",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -565,15 +563,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_057995.json:
+archive/issue_comments_057887.json:
 ```json
 {
     "body": "I applied patches against Sage 4.2.alpha0 in the following order:\n\n1. `trac_7012-flattened.patch`\n2. `trac_7012-details.patch`\n \nThese two patches touch modules under `sage/numerical`. All doctests under this directory pass with the two patches. Doctesting the whole Sage library results in the following failure:\n\n```\n[mvngu@sage sage-4.2.alpha0-sage.math]$ sage -t -long devel/sage-main/sage/modules/vector_real_double_dense.pyx\nsage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nA mysterious error (perhaps a memory error?) occurred, which may have crashed doctest.\n         [3.1 s]\nexit code: 768\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-main/sage/modules/vector_real_double_dense.pyx\"\nTotal time for all tests: 3.1 seconds\n```\n\nThis is a known failure and has been reported before at ticket #6825. I then installed the optional GLPK package at #7049. All doctests passed when doctesting the whole Sage library. If the above two patches are merged, then the updated GLPK package at #7049 should also be merged in the optional spkg repository.",
     "created_at": "2009-10-21T22:36:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57995",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57887",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -605,15 +603,15 @@ This is a known failure and has been reported before at ticket #6825. I then ins
 
 ---
 
-archive/issue_comments_057996.json:
+archive/issue_comments_057888.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-23T09:05:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7012",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57996",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/7012#issuecomment-57888",
+    "user": "https://github.com/mwhansen"
 }
 ```
 

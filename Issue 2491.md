@@ -6,15 +6,14 @@ archive/issues_002491.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat\n\nFrom IRC #sage-devel\n\n\n```\n<mhansen> jaap: There's a difference between sloane.A000001?? and sage.combinat.sloane_functions.A000001??\n<jaap> mhansen sage: sloane.A000001??\n<jaap> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n<mhansen> jaap: A bit earlier I had said that  sloane.A000001?? doesn't work because of the way the sloane object works.\n<jaap> ok, but how about the OEIS user who wants to see how things work?\n<mhansen> If it's a bug, then it should be reported.\n<jaap> I think so\n```\n\n\n\n\n\n```\nsage: sloane.A000045\n Fibonacci numbers with index n >= 0\n\nsage: sloane.A000045?\n\nsage: sloane.A000045??\nError getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\nsage: sage.combinat.sloane_functions.A000045??\n\nworks ok.\n\n\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2491\n\n",
     "created_at": "2008-03-12T14:13:50Z",
     "labels": [
-        "combinatorics",
-        "major",
+        "component: combinatorics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "Showing source from sloane_functions",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2491",
-    "user": "@jaapspies"
+    "user": "https://github.com/jaapspies"
 }
 ```
 Assignee: @mwhansen
@@ -64,15 +63,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2491
 
 ---
 
-archive/issue_comments_016879.json:
+archive/issue_comments_016843.json:
 ```json
 {
     "body": "> sage: sloane.A000045??\n> Error getting source: arg is not a module, class, method, function, traceback, frame, or code object\n\nThat this doesn't work should be considered a bug.   The actual introspection is simply some python code I wrote, so it's fixable.  Nick also knows something about it.",
     "created_at": "2008-03-12T15:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16879",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16843",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +84,15 @@ That this doesn't work should be considered a bug.   The actual introspection is
 
 ---
 
-archive/issue_comments_016880.json:
+archive/issue_comments_016844.json:
 ```json
 {
     "body": "Attachment [trac_2491.patch](tarball://root/attachments/some-uuid/ticket2491/trac_2491.patch) by @mwhansen created at 2008-08-27 01:56:10",
     "created_at": "2008-08-27T01:56:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16880",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16844",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -103,15 +102,15 @@ Attachment [trac_2491.patch](tarball://root/attachments/some-uuid/ticket2491/tra
 
 ---
 
-archive/issue_comments_016881.json:
+archive/issue_comments_016845.json:
 ```json
 {
     "body": "Positive review. Works for me.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-27T01:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16881",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16845",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -125,15 +124,15 @@ Michael
 
 ---
 
-archive/issue_comments_016882.json:
+archive/issue_comments_016846.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-27T02:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16882",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16846",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -143,15 +142,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_016883.json:
+archive/issue_comments_016847.json:
 ```json
 {
     "body": "Merged in Sage 3.1.2.alpha1",
     "created_at": "2008-08-27T02:17:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2491",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16883",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2491#issuecomment-16847",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

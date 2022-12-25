@@ -6,14 +6,12 @@ archive/issues_008561.json:
     "body": "Assignee: @williamstein\n\nCC:  sage-combinat\n\nKeywords: Pickling, lambda, interactively defined functions\n\nExtend sage.misc.fpickle.pyx with a PicklableFunction class wrapping\ninteractively defined (simple) functions to make them picklable:\n\n\n```\n    sage: f = lambda x: x^2\n    sage: loads(dumps(f))\n    ------------------------------------------------------------\n    Traceback (most recent call last):\n      File \"<ipython console>\", line 1, in <module>\n      File \"sage_object.pyx\", line 792, in sage.structure.sage_object.dumps (sage/structure/sage_object.c:8357)\n    PicklingError: Can't pickle <type 'function'>: attribute lookup __builtin__.function failed\n\n    sage: f = PicklableFunction(f)\n    sage: f(3)\n    9\n    sage: f == loads(dumps(f))\n    True\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/8561\n\n",
     "created_at": "2010-03-19T15:52:59Z",
     "labels": [
-        "pickling",
-        "major",
-        "enhancement"
+        "component: pickling"
     ],
     "title": "Implement PicklableFunction(interactive_function)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8561",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: @williamstein
@@ -52,15 +50,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8561
 
 ---
 
-archive/issue_comments_077512.json:
+archive/issue_comments_077384.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @nthiery.",
     "created_at": "2010-03-19T15:53:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8561#issuecomment-77512",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/8561#issuecomment-77384",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -70,15 +68,15 @@ Changing assignee from @williamstein to @nthiery.
 
 ---
 
-archive/issue_comments_077513.json:
+archive/issue_comments_077385.json:
 ```json
 {
     "body": "See #11845 for some code in this direction and for warnings why this should never be allowed in \"standard\" pickles.",
     "created_at": "2013-01-09T23:45:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8561",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8561#issuecomment-77513",
-    "user": "@nbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/8561#issuecomment-77385",
+    "user": "https://github.com/nbruin"
 }
 ```
 

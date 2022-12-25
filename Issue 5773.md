@@ -6,15 +6,14 @@ archive/issues_005773.json:
     "body": "Assignee: boothby\n\nCC:  @williamstein\n\nI uploaded a corrupted tarball and get a blank screen from the server instead of a useful error.  I also get this in the server logs\n\n```\n2009-04-12 21:12:35-0700 [-] cd \"/Users/wstein/.sage/temp/teragon.local/61279/dir_1\"; tar -jxf \"/Users/wstein/.sage/temp/teragon.local/61279/dir_0/Homework_1____Devon_McMinn.sws\"\n\nbzip2: Data integrity error when decompressing.\n\tInput file = (stdin), output file = (stdout)\n\nIt is possible that the compressed file(s) have become corrupted.\nYou can use the -tvv option to test integrity of such files.\n\nYou can use the `bzip2recover' program to attempt to recover\ndata from undamaged sections of corrupted files.\n\ntar: Child returned status 2\ntar: Error exit delayed from previous errors\n\n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5773\n\n",
     "created_at": "2009-04-13T04:13:46Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "notebook -- uploading a corrupted worksheet (sws file) results in blank screen (no useful error message)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5773",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -50,15 +49,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5773
 
 ---
 
-archive/issue_comments_045151.json:
+archive/issue_comments_045065.json:
 ```json
 {
     "body": "This is already fixed. Try:\n\n\n```\n\n$ echo '!@#rsfdsagarbage' > foo.sws\n\n```\n\n\nand try uploading it.",
     "created_at": "2010-01-18T04:29:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5773",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45151",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45065",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -78,15 +77,15 @@ and try uploading it.
 
 ---
 
-archive/issue_comments_045152.json:
+archive/issue_comments_045066.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-01-19T03:05:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5773",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45152",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45066",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -96,15 +95,15 @@ Resolution: duplicate
 
 ---
 
-archive/issue_comments_045153.json:
+archive/issue_comments_045067.json:
 ```json
 {
     "body": "Resolution changed from duplicate to fixed",
     "created_at": "2010-01-19T03:37:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5773",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45153",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/5773#issuecomment-45067",
+    "user": "https://github.com/TimDumol"
 }
 ```
 

@@ -6,14 +6,14 @@ archive/issues_000036.json:
     "body": "Assignee: somebody\n\n\n```\n   sage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2])\nw = %e^-x*(3*sin(x) + cos(x))\nsage: maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2]).display2d()\n(output looks funny)\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/36\n\n",
     "created_at": "2006-09-12T23:29:29Z",
     "labels": [
-        "basic arithmetic",
+        "component: basic arithmetic",
         "minor",
         "bug"
     ],
     "title": "Bug in display2d for maxima interface",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/36",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: somebody
@@ -37,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/36
 
 ---
 
-archive/issue_comments_000232.json:
+archive/issue_comments_000231.json:
 ```json
 {
     "body": "Works fine now.\n\n```\nsage: print maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2])\nsage: print maxima.de_solve('diff(w,x,2) + 2*diff(w,x)+2*w = 0', ['x','w'], [0,1,2]).display2d()\nw = %e^-x*(3*sin(x) + cos(x))\n\t\t\t       - x\n       \t\t\t w = %e\t   (3 sin(x) + cos(x))\n\n```\n",
     "created_at": "2007-01-13T02:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/36",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/36#issuecomment-232",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/36#issuecomment-231",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -65,15 +65,15 @@ w = %e^-x*(3*sin(x) + cos(x))
 
 ---
 
-archive/issue_comments_000233.json:
+archive/issue_comments_000232.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2007-01-13T02:08:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/36",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/36#issuecomment-233",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/36#issuecomment-232",
+    "user": "https://github.com/williamstein"
 }
 ```
 

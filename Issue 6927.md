@@ -6,15 +6,13 @@ archive/issues_006927.json:
     "body": "Assignee: cwitty\n\nCC:  @williamstein @craigcitro\n\nKeywords: cache database\n\nThe CachedFunction class is a wonderful decorator that provides cacheing of computations, unique rings, etc.  However, for any number of databases, it would be useful if the computed data was to persist between sessions.  So, we should extend the CachedFunction class to enable disk caches, too.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6927\n\n",
     "created_at": "2009-09-12T23:24:42Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.4",
     "title": "extend CachedFunction to handle disk-cache",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6927",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: cwitty
@@ -33,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6927
 
 ---
 
-archive/issue_comments_057238.json:
+archive/issue_comments_057130.json:
 ```json
 {
     "body": "Changing assignee from cwitty to boothby.",
     "created_at": "2009-09-12T23:27:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57238",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57130",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -51,15 +49,15 @@ Changing assignee from cwitty to boothby.
 
 ---
 
-archive/issue_comments_057239.json:
+archive/issue_comments_057131.json:
 ```json
 {
     "body": "Comments on the first patch:\n\n```\nyo\n[4:32pm] williamstein:\nDo you break pickling?  I'm curious.\n[4:32pm] williamstein:\nthat lambda scares me.\n[4:32pm] williamstein:\nYou could do: \"stringify = lambda k: arguments_to_string(f,k) \"\n[4:33pm] williamstein:\nvia a partial function evaluation object (which is also somewhere in Python -- see ref guide) and avoid the lambda whilst making sure to not break pickling.\n[4:33pm] williamstein:\nPickling would of course only be an issue if you generalize this to methods of a class.\n[4:33pm] williamstein:\nOh, it could also be a problem if you say combine this with @parallel and multiprocessing.\n[4:33pm] williamstein:\nHave you tried that?\n[4:34pm] williamstein:\nboothby_ -- ping\n[4:34pm] williamstein:\nI don't like this: \"if isinstance(cache, FileCache) and clear_disk_cache_too != 'yes I mean it':\"\n[4:34pm] williamstein:\nIt needs to be broken down a little more so that one gets an error if clear_disk_cache_too is true but not that string.\n[4:35pm] williamstein:\nAs is, it is undocumented and you would never know how to use it without reading the source.\n[4:36pm] williamstein:\nthe empty line 560 should be deleted, I think.\n```\n",
     "created_at": "2009-09-12T23:36:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57239",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57131",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -98,15 +96,15 @@ the empty line 560 should be deleted, I think.
 
 ---
 
-archive/issue_comments_057240.json:
+archive/issue_comments_057132.json:
 ```json
 {
     "body": "I tried to apply this to a clean 4.1.2.alpha1 and got nowhere:\n\n```\nwstein@sage:~/build/sage-4.1.2.alpha1$ ./sage\n----------------------------------------------------------------------\n----------------------------------------------------------------------\n**********************************************************************\n*                                                                    *\n* Warning: this is a prerelease version, and it may be unstable.     *\n*                                                                    *\n**********************************************************************\nLoading Sage library. Current Mercurial branch is: referee\nsage: hg_sage.apply('http://trac.sagemath.org/sage_trac/attachment/ticket/6927/6927-disk-cache.patch')\nAttempting to load remote file: http://trac.sagemath.org/sage_trac/raw-attachment/ticket/6927/6927-disk-cache.patch\nLoading: [.....]\ncd \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage\" && hg status\n/scratch/wstein/build/sage-4.1.2.alpha1/local/lib/python2.6/site-packages/sage/misc/hg.py:240: DeprecationWarning: os.popen3 is deprecated.  Use the subprocess module.\n  x = os.popen3(s)\ncd \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage\" && hg status\ncd \"/scratch/wstein/build/sage-4.1.2.alpha1/devel/sage\" && hg import   \"/scratch/wstein/sage/temp/sage.math.washington.edu/22785/tmp_1.patch\"\napplying /scratch/wstein/sage/temp/sage.math.washington.edu/22785/tmp_1.patch\nunable to find 'sage/misc/function_mangling.py' for patching\n3 out of 3 hunks FAILED -- saving rejects to file sage/misc/function_mangling.py.rej\npatching file sage/misc/all.py\nHunk #1 succeeded at 154 with fuzz 2 (offset 2 lines).\npatching file sage/misc/all.py\nHunk #1 FAILED at 149\n1 out of 1 hunks FAILED -- saving rejects to file sage/misc/all.py.rej\npatching file sage/misc/cachefunc.py\nHunk #1 FAILED at 3\nHunk #2 FAILED at 13\nHunk #3 succeeded at 219 with fuzz 2 (offset 20 lines).\n2 out of 4 hunks FAILED -- saving rejects to file sage/misc/cachefunc.py.rej\nsage/misc/function_mangling.py: No such file or directory\nabort: patch failed to apply\n```\n\n| Sage Version 4.1.2.alpha1, Release Date: 2009-09-07                |\n| Type notebook() for the GUI, and license() for information.        |\n\nYour patch contains changes to function_mangling.py, but doesn't even contain that file in the first place.",
     "created_at": "2009-09-19T09:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57240",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57132",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -156,15 +154,15 @@ Your patch contains changes to function_mangling.py, but doesn't even contain th
 
 ---
 
-archive/issue_comments_057241.json:
+archive/issue_comments_057133.json:
 ```json
 {
     "body": "replaces previous patch, based on #6937",
     "created_at": "2009-09-20T04:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57241",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57133",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -174,15 +172,15 @@ replaces previous patch, based on #6937
 
 ---
 
-archive/issue_comments_057242.json:
+archive/issue_comments_057134.json:
 ```json
 {
     "body": "Attachment [6927-disk_cache.patch](tarball://root/attachments/some-uuid/ticket6927/6927-disk_cache.patch) by @TimDumol created at 2009-09-22 12:34:45\n\nI'm not sure if this problem is local to this patch, but running:\n\n\n```\n@cached_function\ndef oddprime_factors(n):\n     l = [p for p,e in factor(n) if p != 2]\n     return len(l)\noddprime_factors.precompute(range(1,100), 4)\n```\n\n\n, which is in the doctets of `cachefunc.py`, in the Notebook throws a `NameError`:\n\n\n```\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/deadlyx/.sage/sage_notebook/worksheets/admin/0/code/1.py\", line 13, in <module>\n    oddprime_factors.precompute(range(_sage_const_1 ,_sage_const_100 ), _sage_const_4 )\n  File \"\", line 1, in <module>\n    \n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 226, in precompute\n    for ((args,kwargs), val) in P(arglist):\n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/sage/parallel/multiprocessing.py\", line 66, in parallel_iter\n    for res in result:\n  File \"/opt/sage-bin/local/lib/python2.6/site-packages/processing/pool.py\", line 470, in next\n    raise value\nNameError: global name '_sage_const_2' is not defined\n```\n\n\nRunning it in the command line works perfectly.\n\n* The paths for `FileCache` are not OS agnostic: Windows uses backslashes, instead of slashes. Using `os.sep` instead should fix it.\n* The examples in the docstrings are not properly formatted. To display them as a code block, please use the ff. format:\n\n\n```\n\nEXAMPLES::\n\n    sage: foo()\n    bar\n    sage: bar()\n    baz\n\n:: # Another code block\n\n    sage: foo()\n    foo\n\n```\n\n\nEverything else seems to work well. Oh, it may be worth hashing the function being cached and adding that to the key. It should prevent problems with using the same directory for the cache folder.",
     "created_at": "2009-09-22T12:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57242",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57134",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -249,15 +247,15 @@ Everything else seems to work well. Oh, it may be worth hashing the function bei
 
 ---
 
-archive/issue_comments_057243.json:
+archive/issue_comments_057135.json:
 ```json
 {
     "body": "This patch should fix the issues regarding the docstrings. The NameError is due to the implementation of `@`parallel. I am not sure if it is feasible to fix the error. In any case, this is orthogonal to this patch. Positive review so far as I can do.\n\nCan anyone review the referee patch?",
     "created_at": "2009-11-30T07:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57243",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57135",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -269,15 +267,15 @@ Can anyone review the referee patch?
 
 ---
 
-archive/issue_comments_057244.json:
+archive/issue_comments_057136.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2009-11-30T07:50:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57244",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57136",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -287,15 +285,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_057245.json:
+archive/issue_comments_057137.json:
 ```json
 {
     "body": "Oh, I made `multiprocessing.py` import from stdlib's `multiprocessing` instead of `processing`. It may be worth considering removing the `processing` package, since its contents are now in stdlib with the name `multiprocessing`.",
     "created_at": "2009-11-30T09:05:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57245",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57137",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -305,15 +303,15 @@ Oh, I made `multiprocessing.py` import from stdlib's `multiprocessing` instead o
 
 ---
 
-archive/issue_comments_057246.json:
+archive/issue_comments_057138.json:
 ```json
 {
     "body": "Attachment [6927-disk_cache-ref.patch](tarball://root/attachments/some-uuid/ticket6927/6927-disk_cache-ref.patch) by @TimDumol created at 2009-11-30 16:30:28\n\nFixes docstrings and OS agnosticism issues. Also changes `processing` import to stdlib's `multiprocessing`",
     "created_at": "2009-11-30T16:30:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57246",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57138",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -325,15 +323,15 @@ Fixes docstrings and OS agnosticism issues. Also changes `processing` import to 
 
 ---
 
-archive/issue_comments_057247.json:
+archive/issue_comments_057139.json:
 ```json
 {
     "body": "Attachment [trac_6927-disk_cache_combined.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk_cache_combined.patch) by @qed777 created at 2010-01-31 04:21:27\n\nRelocate an import.  Fixed doctest failure. Rebased vs. 4.3.2.alpha0. Combined patch replaces all previous.",
     "created_at": "2010-01-31T04:21:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57247",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57139",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -345,15 +343,15 @@ Relocate an import.  Fixed doctest failure. Rebased vs. 4.3.2.alpha0. Combined p
 
 ---
 
-archive/issue_comments_057248.json:
+archive/issue_comments_057140.json:
 ```json
 {
     "body": "I've attached a combined, rebased patch.  I've removed\n\n```python\n        return P(arglist) \n```\n\nfrom the \"ref\" patch.  Otherwise, the precomputed values are not cached.  Or am I mistaken?\n\nI've also relocated\n\n```python\nfrom sage.structure.sage_object import save, load\n```\n\nto avoid a circular import problem with `sage -docbuild reference html -j`:\n\n```python\nTraceback (most recent call last):\n  File \"/home/apps/sage/devel/sage/doc/common/builder.py\", line 11, in <module>\n    from sage.misc.cachefunc import cached_method\n  File \"/home/apps/sage/local/lib/python2.6/site-packages/sage/misc/cachefunc.py\", line 20, in <module>\n    from sage.structure.sage_object import save, load\n  File \"/home/apps/sage/local/lib/python2.6/site-packages/sage/structure/__init__.py\", line 1, in <module>\n    import dynamic_class # allows for sage.structure.dynamic_class?\n  File \"/home/apps/sage/local/lib/python2.6/site-packages/sage/structure/dynamic_class.py\", line 119, in <module>\n    from sage.misc.cachefunc import cached_method, cached_function\nImportError: cannot import name cached_method\n```\n\n\nTo the extent it counts, my review is positive, but someone should check the combined patch.",
     "created_at": "2010-01-31T04:24:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57248",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57140",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -393,15 +391,15 @@ To the extent it counts, my review is positive, but someone should check the com
 
 ---
 
-archive/issue_comments_057249.json:
+archive/issue_comments_057141.json:
 ```json
 {
     "body": "Attachment [trac_6927-disk_cache_combined.2.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk_cache_combined.2.patch) by @qed777 created at 2010-02-03 05:35:41\n\nAvoid `sage -startuptime` error.  Replaces previous.",
     "created_at": "2010-02-03T05:35:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57249",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57141",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -413,15 +411,15 @@ Avoid `sage -startuptime` error.  Replaces previous.
 
 ---
 
-archive/issue_comments_057250.json:
+archive/issue_comments_057142.json:
 ```json
 {
     "body": "V2 of the combined patch is an attempt to work around an absolute import problem with `sage -startuptime`.  Diff of the diffs:\n\n```diff\n@@ -639,7 +639,7 @@ diff --git a/sage/parallel/multiprocessi\n -from processing import Pool\n +from __future__ import absolute_import\n +\n-+from multiprocessing import Pool\n++import multiprocessing\n  from functools import partial\n  from sage.misc.fpickle import pickle_function, call_pickled_function\n -import ncpus\n@@ -647,8 +647,12 @@ diff --git a/sage/parallel/multiprocessi\n  \n  def pyprocessing(processes=0):\n      \"\"\"\n-@@ -62,7 +64,7 @@ def parallel_iter(processes, f, inputs):\n-     p = Pool(processes)\n+@@ -59,10 +61,10 @@ def parallel_iter(processes, f, inputs):\n+         [(((2,), {}), 4), (((3,), {}), 6)]\n+     \"\"\"\n+     if processes == 0: processes = ncpus.ncpus()\n+-    p = Pool(processes)\n++    p = multiprocessing.Pool(processes)\n      fp = pickle_function(f)\n```\n",
     "created_at": "2010-02-03T05:48:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57250",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57142",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -457,15 +455,15 @@ V2 of the combined patch is an attempt to work around an absolute import problem
 
 ---
 
-archive/issue_comments_057251.json:
+archive/issue_comments_057143.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-04-18T13:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57251",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57143",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -475,15 +473,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_057252.json:
+archive/issue_comments_057144.json:
 ```json
 {
     "body": "Nice catch on `P(arglist)`, which was for debugging only. Positive review for your changes. Here's a rebase on #6927, which consists on basically removing the multiprocessing.py part.",
     "created_at": "2010-04-18T13:43:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57252",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57144",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -493,15 +491,15 @@ Nice catch on `P(arglist)`, which was for debugging only. Positive review for yo
 
 ---
 
-archive/issue_comments_057253.json:
+archive/issue_comments_057145.json:
 ```json
 {
     "body": "Attachment [trac_6927-disk-cache-rebase.patch](tarball://root/attachments/some-uuid/ticket6927/trac_6927-disk-cache-rebase.patch) by @TimDumol created at 2010-04-18 13:44:07\n\nRebase on sage-4.4.alpha0. Apply this patch only.",
     "created_at": "2010-04-18T13:44:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57253",
-    "user": "@TimDumol"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57145",
+    "user": "https://github.com/TimDumol"
 }
 ```
 
@@ -513,15 +511,15 @@ Rebase on sage-4.4.alpha0. Apply this patch only.
 
 ---
 
-archive/issue_comments_057254.json:
+archive/issue_comments_057146.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-04-19T05:20:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57254",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57146",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -531,15 +529,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_057255.json:
+archive/issue_comments_057147.json:
 ```json
 {
     "body": "Merged \"trac_6927-disk-cache-rebase.patch\" into 4.4.alpha1.",
     "created_at": "2010-04-19T05:20:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57255",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57147",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -549,15 +547,15 @@ Merged "trac_6927-disk-cache-rebase.patch" into 4.4.alpha1.
 
 ---
 
-archive/issue_comments_057256.json:
+archive/issue_comments_057148.json:
 ```json
 {
     "body": "I'm changing the author name of this patch to re-establish trust with the patchbot.",
     "created_at": "2017-01-06T21:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6927",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57256",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/6927#issuecomment-57148",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

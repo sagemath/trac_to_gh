@@ -6,15 +6,13 @@ archive/issues_006808.json:
     "body": "Assignee: cwitty\n\nCC:  @haraldschilly\n\nKeywords: benchmark\n\nKarl Unterkofler has implemented various benchmarks for Mathematica. These are for specific versions of MMA 2.2, 3, 4, 5 6 and 7. \n\nhttp://www2.staff.fh-vorarlberg.ac.at/~ku/karl/timings70.html\n\nMaking one for Sage comparable to his latest Mathematica 7 benchmark would be useful, as it would allow a direct comparison of Sage and Mathematica on 15 specific tests. \n\nWe have Karl's permission to do this. In an email send to me today it said:\n\n\n**-- Email from Karl Unterkofler to David Kirkby August 22nd 2009 ---**\n\n\n*Dear Dave,*\n\n*the aim of my MMA benchmark is to give Mathematica users a decision support which platform is most suitable for their needs, e.g., should one use Vista or XP?, can one use Linux or Mac OS X?, which processor should one use 32- or 64-bit?, etc.*\n\n*Some time ago (1994) I also made a corresponding Maple benchmark (google: \"Comparison of Mathematica on Various Computers\") but there wasn't enough input from other users to keep this ongoing.*\n\n*I had to update the benchmark for new versions of MMA for several reasons, speed improvements, syntax changes, bugs, parallelization, etc., though I tried to keep as much as possible from the old code.*\n\n''I have no problem if you adopt my benchmark for use with Sage.\nHowever a  reference to the original source would be nice.''\n\n*Karl*\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6808\n\n",
     "created_at": "2009-08-22T22:20:35Z",
     "labels": [
-        "misc",
-        "major",
-        "enhancement"
+        "component: misc"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Implement a benchmark based on Karl Unterkofler's Mathematica benchmark",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6808",
-    "user": "drkirkby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 Assignee: cwitty
@@ -58,15 +56,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6808
 
 ---
 
-archive/issue_comments_056044.json:
+archive/issue_comments_055942.json:
 ```json
 {
     "body": "I thought it work putting alist of the thing Karl'sbenchmark does.\n\n\n```\nFollowing calculations are performed\n\n   1. Timing[N[Pi, 5000000]]][[1]]\n   2. Timing[N[Sin[1/2], 3000000]][[1]]\n   3. Timing[10000000!][[1]]\n   4. Timing[FactorInteger[2^256 - 1]][[1]]\n   5. Timing[PrimeQ[2^19937 - 1]][[1]]\n   6. Timing[Eigenvalues[Table[Random[], {1200}, {1200}]]][[1]]\n   7. Timing[Nest[BesselJ[0, #] &, 2, 11000]][[1]]\n   8. Timing[Table[Together[c[k]], {k, 4, 24}]][[1]]\n   9. Timing[Integrate[1/(1 + x^1005), x]][[1]]\n  10. Timing[Table[N[WeierstrassP[n, {1, 1}]], {n, 40000}]][[1]]\n  11. Sum[2 / Pi Integrate[Log[2 Cos[x/2]] * Cos[n x], {x, 0, Pi}], {n, 0, 15}]][[1]]\n  12. Timing[Sum[HermiteH[n, z], {n, 1500}]][[1]]\n  13. Timing[Expand[(a1 + a2 + a3 + a4 + a5 + a6 + a7)^29]][[1]]\n  14. Timing[LinearSolve[RandomReal[{0, 1}, {6000, 6000}], RandomReal[{0, 1}, 6000]]][[1]]\n  15. Timing[Eliminate[{a0*b0 == g0, a1*b0 + a0*b1 == g1,\n      a2*b0 + 2*a1*b1 + a0*b2 == g2,\n      3*a2*b1 + 3*a1*b2 - q1*g1 - g0*q11 == g3,\n      -3*z*(a1*b0 - a0*b1) - q1*g2 - 7/2*q11*g1 - g0*q12 + 6*a2*b2 - 6*a1*b1*q1 == g4,\n      g2 - 3*a1*b1 + q1*g0 == -1}, {a0, a1, a2, b0, b1, b2}]][[1]] \n\nwhere\nc[2]   := c2; c[3] := c3; \nc[k_]  := 3/((2*k + 1)*(k - 3))*Sum[c[m]*c[k - m], {m, 2, k - 2}];\n```\n",
     "created_at": "2010-08-29T01:29:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6808",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6808#issuecomment-56044",
-    "user": "drkirkby"
+    "url": "https://github.com/sagemath/sagetest/issues/6808#issuecomment-55942",
+    "user": "https://trac.sagemath.org/admin/accounts/users/drkirkby"
 }
 ```
 
@@ -106,15 +104,15 @@ c[k_]  := 3/((2*k + 1)*(k - 3))*Sum[c[m]*c[k - m], {m, 2, k - 2}];
 
 ---
 
-archive/issue_comments_056045.json:
+archive/issue_comments_055943.json:
 ```json
 {
     "body": "See http://www.mail-archive.com/sage-devel`@`googlegroups.com/msg27249.html for a long thread about this.",
     "created_at": "2010-08-29T02:28:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6808",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6808#issuecomment-56045",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/6808#issuecomment-55943",
+    "user": "https://github.com/jasongrout"
 }
 ```
 

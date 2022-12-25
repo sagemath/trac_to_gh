@@ -6,15 +6,14 @@ archive/issues_003436.json:
     "body": "Assignee: @williamstein\n\nCC:  @craigcitro\n\nMatrices with prescribed density are not generated correctly:\n\n\n```\nsage: M = random_matrix(GF(65537), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n940\nsage: M = random_matrix(GF(2), 100, 100, sparse=True, density=0.1)\nsage: len(M.nonzero_positions())\n465\n```\n\n\nTo wit: the actual density of the matrix over GF(2) is only approximately half of what we expect. This happens because the randomize() function populating the entries does not check whether the random element picked actually is non-zero. Apparently, all of the matrix classes are affected by this bug.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3436\n\n",
     "created_at": "2008-06-16T04:56:11Z",
     "labels": [
-        "linear algebra",
-        "major",
+        "component: linear algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.2",
     "title": "random_matrix() with prescribed density buggy",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3436",
-    "user": "rpw"
+    "user": "https://trac.sagemath.org/admin/accounts/users/rpw"
 }
 ```
 Assignee: @williamstein
@@ -44,15 +43,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3436
 
 ---
 
-archive/issue_comments_024214.json:
+archive/issue_comments_024165.json:
 ```json
 {
     "body": "I'll also point out that the documentation for random_matrix says that density should be an integer, not a float -- see also randomize in matrix2.pyx and random_element in matrix_space.py -- while in matrix_integer_dense.pyx, randomize says that density should be a float.",
     "created_at": "2009-02-07T00:11:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24214",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24165",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -62,15 +61,15 @@ I'll also point out that the documentation for random_matrix says that density s
 
 ---
 
-archive/issue_comments_024215.json:
+archive/issue_comments_024166.json:
 ```json
 {
     "body": "Some more examples with sage 4.1.  The last few examples show that the density is about an order of magnitude smaller than what we asked for.\n\n\n```\nsage: A=random_matrix(ZZ,1000,density=1e-3,sparse=True)  \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n0.000814000000000000\nsage: A=random_matrix(ZZ,10000,density=1e-4,sparse=True)  \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n0.0000796700000000000\nsage: A=random_matrix(ZZ,100000,density=1e-5,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.13230000000000e-6\nsage: A=random_matrix(ZZ,100000,density=1e-6,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.12600000000000e-7\nsage: A=random_matrix(ZZ,100000,density=1e-7,sparse=True) \nsage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())\n1.08000000000000e-8\n```\n",
     "created_at": "2009-07-20T14:15:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24215",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24166",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -100,15 +99,15 @@ sage: RR(len(A.nonzero_positions()))/(A.nrows()*A.ncols())
 
 ---
 
-archive/issue_comments_024216.json:
+archive/issue_comments_024167.json:
 ```json
 {
     "body": "Replying to [comment:3 jason]:\n> Some more examples with sage 4.1.  The last few examples show that the density is about an order of magnitude smaller than what we asked for.\n\nWhen I tried this, I got answers like the first two: the ratio of (fraction of nonzero entries) / (density) was about 4/5.  This is consistent with the observation in the ticket description that the randomize function doesn't check whether the random element is zero: for integers, the documentation for `random_element` says that the default distribution gives `Pr(X = 0) = 1/5`. \n\nI would try to write a patch for this but pretty much all of the matrix code is written in Cython, which I don't know, so anything I write would likely be buggy and slow things down by a factor of 100.",
     "created_at": "2009-09-30T03:40:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24216",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24167",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -123,15 +122,15 @@ I would try to write a patch for this but pretty much all of the matrix code is 
 
 ---
 
-archive/issue_comments_024217.json:
+archive/issue_comments_024168.json:
 ```json
 {
     "body": "Attached a patch.  It introduces a new method in ``ring.pyx``, ``_random_nonzero_element``, which by default calls ``random_element`` until a non-zero element has been obtained.\n\nOn the matrix end, I've introduced a new parameter ``nonzero`` to the ``randomize`` methods in the various matrix implementations.  If this is set to ``True``, the modified entries are guaranteed to be non-zero, whereas if it is set to ``False`` they are not.  The method ``random_element`` on a matrix space now calls ``randomize`` on a zero matrix with ``nonzero=True``.\n\nFinally, this is now also used to ensure that generating a fraction field element does not cause a division by zero error.\n\nSebastian",
     "created_at": "2010-01-17T10:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24217",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24168",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -147,15 +146,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_024218.json:
+archive/issue_comments_024169.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-01-17T10:18:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24218",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24169",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -165,15 +164,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_024219.json:
+archive/issue_comments_024170.json:
 ```json
 {
     "body": "Attachment [trac3436_a.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_a.patch) by spancratz created at 2010-01-17 10:52:52\n\nFirst patch",
     "created_at": "2010-01-17T10:52:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24219",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24170",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -185,15 +184,15 @@ First patch
 
 ---
 
-archive/issue_comments_024220.json:
+archive/issue_comments_024171.json:
 ```json
 {
     "body": "I've attached the patch now.  I've called it \"First patch\" since I've only doctested ``sage/matrix/`` and adjusted some docstrings as needed, but I expect that a few more such little changes might come up during a full test.\n\nSebastian",
     "created_at": "2010-01-17T10:54:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24220",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24171",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -205,15 +204,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_024221.json:
+archive/issue_comments_024172.json:
 ```json
 {
     "body": "Attachment [trac3436_b.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_b.patch) by spancratz created at 2010-01-17 19:46:56\n\nAdditional patch (more doctests)",
     "created_at": "2010-01-17T19:46:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24221",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24172",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -225,15 +224,15 @@ Additional patch (more doctests)
 
 ---
 
-archive/issue_comments_024222.json:
+archive/issue_comments_024173.json:
 ```json
 {
     "body": "The additional patch takes care of the remaining three doctest failures.  This should now pass all doctests done with ``./sage -t devel/sage/sage``.\n\nSebastian",
     "created_at": "2010-01-17T19:48:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24222",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24173",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -245,15 +244,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_024223.json:
+archive/issue_comments_024174.json:
 ```json
 {
     "body": "This looks good with one notable exception.  Due to implementation details, Matrix_cyclo_dense.randomize() makes overly dense matrices.  This should be pretty easy to fix.",
     "created_at": "2010-01-18T08:18:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24223",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24174",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -263,15 +262,15 @@ This looks good with one notable exception.  Due to implementation details, Matr
 
 ---
 
-archive/issue_comments_024224.json:
+archive/issue_comments_024175.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2010-01-18T08:18:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24224",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24175",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -281,15 +280,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_024225.json:
+archive/issue_comments_024176.json:
 ```json
 {
     "body": "I mentioned this to Tom, but just in case no one gets to it: implementing this for cyclotomic matrices should be pretty easy once you find out about the `set_unsafe` method on dense cyclotomic matrices. You can use the same generic code that loops over any other matrix, but use `set_unsafe` and (as long as you're really not going outside the bounds of the matrix!) it'll take care of setting the entry in the matrix correctly and quickly.",
     "created_at": "2010-01-18T08:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24225",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24176",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -299,15 +298,15 @@ I mentioned this to Tom, but just in case no one gets to it: implementing this f
 
 ---
 
-archive/issue_comments_024226.json:
+archive/issue_comments_024177.json:
 ```json
 {
     "body": "Craig:  the approach you suggest does not seem to work out quite as nicely, since the ``randomize`` method accepts two parameters ``num_bound`` and ``den_bound``, which are accept by the rational field but *not* by the cyclotomic field.  A way around this problem is to generate the cyclotomic numbers ourselves in the matrix method, as a sequence of rationals of length the degree of the field extension.  I'll write that now.\n\nSebastian",
     "created_at": "2010-01-18T18:59:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24226",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24177",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -319,15 +318,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_024227.json:
+archive/issue_comments_024178.json:
 ```json
 {
     "body": "I'm a little confused -- why aren't we just using `K.random_element()` where `K` is whatever ring the entries lie in? The `num_bound` and `den_bound` definitely aren't uniform, though we could definitely easily add them for cyclotomic fields ...",
     "created_at": "2010-01-18T19:11:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24227",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24178",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -337,15 +336,15 @@ I'm a little confused -- why aren't we just using `K.random_element()` where `K`
 
 ---
 
-archive/issue_comments_024228.json:
+archive/issue_comments_024179.json:
 ```json
 {
     "body": "I think that is the same reason why certain matrices have their ``randomize`` methods implemented themselves in the very first place:  speed.\n\nPersonally, I don't really care about this (the speed of generating random matrices), but since others do, I don't think this patch should make anything significantly slower.",
     "created_at": "2010-01-18T20:27:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24228",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24179",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -357,15 +356,15 @@ Personally, I don't really care about this (the speed of generating random matri
 
 ---
 
-archive/issue_comments_024229.json:
+archive/issue_comments_024180.json:
 ```json
 {
     "body": "> Personally, I don't really care about this (the speed of generating random matrices),\n\nI care because this gets used a *LOT* in benchmarking and automated testing of linear algebra algorithms.",
     "created_at": "2010-01-18T22:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24229",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24180",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -377,15 +376,15 @@ I care because this gets used a *LOT* in benchmarking and automated testing of l
 
 ---
 
-archive/issue_comments_024230.json:
+archive/issue_comments_024181.json:
 ```json
 {
     "body": "all that has to happen here is\n\n1) write a for loop that fills in the entries with set_unsafe\n\n2) update the polynomial quotient ring and numberfield random_element methods to pass *args and **kwargs down the line.",
     "created_at": "2010-01-18T22:44:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24230",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24181",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -399,15 +398,15 @@ all that has to happen here is
 
 ---
 
-archive/issue_comments_024231.json:
+archive/issue_comments_024182.json:
 ```json
 {
     "body": "Tom, before you wrote your message, I already wrote the code for the randomize method, by including a _randomize_column method in matrix_rational_dense, and this is then used in the cyclotomic matrix code.  This way, the code doesn't have to modify any more classes than it does already.  I'll do some testing and upload it later.\n\nAlso, I talked to Robert Miller and he said this patch needs to be re-based to 4.3.1.rc0, so I'll do that, too.\n\nSebastian",
     "created_at": "2010-01-18T23:16:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24231",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24182",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -421,15 +420,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_024232.json:
+archive/issue_comments_024183.json:
 ```json
 {
     "body": "I view the fact that the random_element methods don't pass *args and **kwargs down the line as a bug -- and if you have to rebase, we might as well fix those up too.  Moreover, I'm not convinced that randomizing columns is the right way to go -- though I haven't seen your implementation, so I might be wrong.",
     "created_at": "2010-01-19T01:22:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24232",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24183",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -439,15 +438,15 @@ I view the fact that the random_element methods don't pass *args and **kwargs do
 
 ---
 
-archive/issue_comments_024233.json:
+archive/issue_comments_024184.json:
 ```json
 {
     "body": "I've now finished the implementation, but I still need to re-base it.  Here are some timings.  First, the old implementation:\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: timeit('A = MS.random_element()')\n25 loops, best of 3: 17.5 ms per loop\nsage: timeit('A = MS.random_element(density=0.1)')\n25 loops, best of 3: 8.89 ms per loop\nsage: A = MS.random_element(density=0.1)\nsage: n(len(A.nonzero_positions())/10000)\n0.231700000000000\n```\n\nSecond, the new implementation:\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: timeit('A = MS.random_element()')\n25 loops, best of 3: 22 ms per loop\nsage: timeit('A = MS.random_element(density=0.1)')\n25 loops, best of 3: 9.36 ms per loop\nsage: timeit('A = MS.random_element(density=0.1, nonzero=True)')\n25 loops, best of 3: 9.35 ms per loop\nsage: timeit('A = MS.random_element(density=0.1, nonzero=False)')\n25 loops, best of 3: 9.37 ms per loop\nsage: A = MS.random_element(density=0.1, nonzero=True)\nsage: n(len(A.nonzero_positions())/10000)\n0.0963000000000000\n```\n",
     "created_at": "2010-01-19T01:56:47Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24233",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24184",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -486,15 +485,15 @@ sage: n(len(A.nonzero_positions())/10000)
 
 ---
 
-archive/issue_comments_024234.json:
+archive/issue_comments_024185.json:
 ```json
 {
     "body": "Third patch, for matrices over cyclotomic fields",
     "created_at": "2010-01-19T01:59:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24234",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24185",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -504,15 +503,15 @@ Third patch, for matrices over cyclotomic fields
 
 ---
 
-archive/issue_comments_024235.json:
+archive/issue_comments_024186.json:
 ```json
 {
     "body": "Attachment [trac3436_rb.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb.patch) by spancratz created at 2010-01-19 02:22:57\n\nRebase of the first three patches to 4.3.1.rc0",
     "created_at": "2010-01-19T02:22:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24235",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24186",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -524,15 +523,15 @@ Rebase of the first three patches to 4.3.1.rc0
 
 ---
 
-archive/issue_comments_024236.json:
+archive/issue_comments_024187.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2010-01-19T02:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24236",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24187",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -542,15 +541,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_024237.json:
+archive/issue_comments_024188.json:
 ```json
 {
     "body": "I've now re-based the patch.  I still need to run tests, I'll write back later to confirm if everything passes.\n\nTom, which random element methods are you referring to?\n\nSebastian",
     "created_at": "2010-01-19T02:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24237",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24188",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -564,15 +563,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_024238.json:
+archive/issue_comments_024189.json:
 ```json
 {
     "body": "The re-base makes *lots* of doctests fail, I'll update the patch and post another one when I am done.\n\nSebastian",
     "created_at": "2010-01-19T02:56:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24238",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24189",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -584,15 +583,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_024239.json:
+archive/issue_comments_024190.json:
 ```json
 {
     "body": "Fixes the doctests for the rebase",
     "created_at": "2010-01-19T03:52:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24239",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24190",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -602,15 +601,15 @@ Fixes the doctests for the rebase
 
 ---
 
-archive/issue_comments_024240.json:
+archive/issue_comments_024191.json:
 ```json
 {
     "body": "Attachment [trac3436_rb_doctests.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_doctests.patch) by spancratz created at 2010-01-19 04:16:22\n\nrandom_element method in polynomial quotient rings (and number fields) passes on args and kwds",
     "created_at": "2010-01-19T04:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24240",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24191",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -622,15 +621,15 @@ random_element method in polynomial quotient rings (and number fields) passes on
 
 ---
 
-archive/issue_comments_024241.json:
+archive/issue_comments_024192.json:
 ```json
 {
     "body": "Attachment [trac3436_rb_poly.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_poly.patch) by spancratz created at 2010-01-19 04:19:45\n\nTom suggested that we should change the code for random matrix generation over cyclotomic fields to rely on the random element generation code in the cyclotomic field, mostly in order to reduce code size.\n\nThe patch above now ensures that the polynomial quotient rings (and number fields) pass on additional arguments.\n\nThis patch should be applied in addition to all the other ones, in any case.\n\nThe next step is to compare the timings of the above code to Tom's suggestion.  If there is no noticeable speed difference, we should go with Tom's suggestion as it provides for cleaner code.  Otherwise, we should leave it done in the above patches.  We'll see.",
     "created_at": "2010-01-19T04:19:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24241",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24192",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -648,15 +647,15 @@ The next step is to compare the timings of the above code to Tom's suggestion.  
 
 ---
 
-archive/issue_comments_024242.json:
+archive/issue_comments_024193.json:
 ```json
 {
     "body": "Attachment [trac3436-tb.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436-tb.patch) by boothby created at 2010-01-19 04:22:09",
     "created_at": "2010-01-19T04:22:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24242",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24193",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -666,15 +665,15 @@ Attachment [trac3436-tb.patch](tarball://root/attachments/some-uuid/ticket3436/t
 
 ---
 
-archive/issue_comments_024243.json:
+archive/issue_comments_024194.json:
 ```json
 {
     "body": "Addendum to the last patch on polynomial quotients",
     "created_at": "2010-01-19T04:34:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24243",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24194",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -684,15 +683,15 @@ Addendum to the last patch on polynomial quotients
 
 ---
 
-archive/issue_comments_024244.json:
+archive/issue_comments_024195.json:
 ```json
 {
     "body": "Attachment [trac3436_rb_poly2.2.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_rb_poly2.2.patch) by spancratz created at 2010-01-19 04:49:46\n\nHere are the timings for the code that Tom wrote, which gets rid of the \"ugly\" code I wrote for generating the random matrices over cyclotomic fields and instead uses the generic code of random elements in cyclotomic fields (implemented by two of the patches above):\n\n\n```\nsage: MS = MatrixSpace(CyclotomicField(10), 100, 100)\nsage: time A = MS.random_element()\nCPU times: user 27.11 s, sys: 0.35 s, total: 27.46 s\nWall time: 27.46 s\n```\n\n\nI suspect that the slowness of this code is largely due to the fact that for every random element of the cyclotomic field, two conversions take place.  One of a random list of rationals into the polynomial ring, and then another of that polynomial into the polynomial quotient ring.\n\nI don't think there is much we can do about this at the moment.  Thus, I propose that we should apply all of the patches on this ticket apart from ``trac3436-tb.patch``.  I'll flatten them a little, (1) main patch (2) ``random_element`` in polynomial rings, polynomial quotient rings, and number fields.  Hopefully, this will then pass all doctests and we'll be done.\n\nAny comments?\n\nPS: Of course, I'll include the fixed doctests (64-bit difference) from Tom's patch.",
     "created_at": "2010-01-19T04:49:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24244",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24195",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -721,15 +720,15 @@ PS: Of course, I'll include the fixed doctests (64-bit difference) from Tom's pa
 
 ---
 
-archive/issue_comments_024245.json:
+archive/issue_comments_024196.json:
 ```json
 {
     "body": "I'll eat crow here -- spancratz's implementation is so much faster, we'd be dumb not to use it.  I'll test a clean build once you post the new patches.",
     "created_at": "2010-01-19T04:54:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24245",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24196",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -739,15 +738,15 @@ I'll eat crow here -- spancratz's implementation is so much faster, we'd be dumb
 
 ---
 
-archive/issue_comments_024246.json:
+archive/issue_comments_024197.json:
 ```json
 {
     "body": "Main patch",
     "created_at": "2010-01-19T05:25:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24246",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24197",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -757,15 +756,15 @@ Main patch
 
 ---
 
-archive/issue_comments_024247.json:
+archive/issue_comments_024198.json:
 ```json
 {
     "body": "Attachment [trac3436_poly.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_poly.patch) by spancratz created at 2010-01-19 05:26:18\n\nPolynomial part",
     "created_at": "2010-01-19T05:26:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24247",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24198",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -777,15 +776,15 @@ Polynomial part
 
 ---
 
-archive/issue_comments_024248.json:
+archive/issue_comments_024199.json:
 ```json
 {
     "body": "I've now uploaded all the work we did in two patches, one for the matrix generation (and all the additional code all over the place necessary) as ``trac3436_main.patch`` and another one for the polynomial quotient ring (and number field) part as ``trac3436_poly.patch``.\n\nI am running tests now.  I've got the feeling that it might fail doctests in two files on the remote machine at Oxford but that it'll pass those on my local machine.  But we'll see.  I'll report back once that's done.\n\nSebastian",
     "created_at": "2010-01-19T05:32:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24248",
-    "user": "spancratz"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24199",
+    "user": "https://trac.sagemath.org/admin/accounts/users/spancratz"
 }
 ```
 
@@ -799,15 +798,15 @@ Sebastian
 
 ---
 
-archive/issue_comments_024249.json:
+archive/issue_comments_024200.json:
 ```json
 {
     "body": "So I'm tempted to (re-)propose a fix in the other direction. As Tom noted, the problem with the \"smaller\" bit of code is that generating random elements in a cyclotomic field is insanely slow. Rather than program around that, why not fix it? I'm going to sit down and look at this now ...",
     "created_at": "2010-01-19T05:42:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24249",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24200",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -817,15 +816,15 @@ So I'm tempted to (re-)propose a fix in the other direction. As Tom noted, the p
 
 ---
 
-archive/issue_comments_024250.json:
+archive/issue_comments_024201.json:
 ```json
 {
     "body": "Attachment [trac3436_whitespace.patch](tarball://root/attachments/some-uuid/ticket3436/trac3436_whitespace.patch) by @wjp created at 2010-01-19 06:00:34\n\nI attached a minor patch that fixes two whitespace problems in the doctests that caused failures.\n\nCurrent patch list:\n\ntrac3436_main.patch\ntrac3436_poly.patch\ntrac3436_whitespace.patch",
     "created_at": "2010-01-19T06:00:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24250",
-    "user": "@wjp"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24201",
+    "user": "https://github.com/wjp"
 }
 ```
 
@@ -843,15 +842,15 @@ trac3436_whitespace.patch
 
 ---
 
-archive/issue_comments_024251.json:
+archive/issue_comments_024202.json:
 ```json
 {
     "body": "Okay, so I'm finally convinced. I just spent some time optimizing generation of random number field elements, and got something like a ~150X speedup -- and the resulting randomization for cyclotomic matrices was **still** something like six times slower than the original version. So I'm going to make a new ticket with that code, but I think the code that Sebastian's been writing is definitely the winner. (Tom said he was going to review it in the morning, so I'll let him do that.)\n\nThe underlying reason for the speed difference is easy to understand -- we represent elements of number fields as NTL polynomials, so the process of randomly generating the matrix entries involves a huge number of copies of the data: once from sage Integers to NTL integers in generating a random element of the number field, and then *two* copies (due to the way things are getting moved around) in moving the values from the NTL polynomial into the matrix entries. There's just no way this is going to beat code that just generates entries down the line right in the matrix.\n\nI'll add a note on this ticket once I clean up and post the faster number field random element code ...",
     "created_at": "2010-01-19T09:16:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24251",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24202",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -865,15 +864,15 @@ I'll add a note on this ticket once I clean up and post the faster number field 
 
 ---
 
-archive/issue_comments_024252.json:
+archive/issue_comments_024203.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-01-19T20:53:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24252",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24203",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -883,15 +882,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_024253.json:
+archive/issue_comments_024204.json:
 ```json
 {
     "body": "Looks good / all tests pass.",
     "created_at": "2010-01-19T20:53:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24253",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24204",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -901,15 +900,15 @@ Looks good / all tests pass.
 
 ---
 
-archive/issue_comments_024254.json:
+archive/issue_comments_024205.json:
 ```json
 {
     "body": "For the sake of it, I thought I'd mention that I posted my random number field element code at #8007. If we one day move away from NTL for representing elements of polynomials, I think that the \"generic\" approach Tom and I were trying to push above would probably be a good thing.",
     "created_at": "2010-01-20T04:54:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24254",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24205",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -919,15 +918,15 @@ For the sake of it, I thought I'd mention that I posted my random number field e
 
 ---
 
-archive/issue_comments_024255.json:
+archive/issue_comments_024206.json:
 ```json
 {
     "body": "Merged patches in this order:\n\n1. [trac3436_main.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3436/trac3436_main.patch)\n2. [trac3436_poly.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3436/trac3436_poly.patch)\n3. [trac3436_whitespace.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/3436/trac3436_whitespace.patch)",
     "created_at": "2010-01-24T00:28:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24255",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24206",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -941,15 +940,15 @@ Merged patches in this order:
 
 ---
 
-archive/issue_comments_024256.json:
+archive/issue_comments_024207.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-01-24T00:28:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3436",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24256",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/3436#issuecomment-24207",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

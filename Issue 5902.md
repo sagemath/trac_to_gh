@@ -6,15 +6,14 @@ archive/issues_005902.json:
     "body": "Assignee: mabshoff\n\nRunning\n\n```\nsage -t devel/sage/sage/rings/polynomial/pbori.pyx\n```\n\nseems to not work for me sometimes when the current working directory is not SAGE_ROOT.  I don't really understand what is going wrong here, since there is a \"cd\" in $SAGE_ROOT/sage, but I've heard other people complain about issues with this.\n\nThe attached patch caused the problems to go away for me.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5902\n\n",
     "created_at": "2009-04-26T05:51:28Z",
     "labels": [
-        "doctest coverage",
-        "minor",
-        "enhancement"
+        "component: doctest coverage",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1",
     "title": "[with patch, needs review] Try SAGE_ROOT as base of argument to \"sage -t\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5902",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: mabshoff
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5902
 
 ---
 
-archive/issue_comments_046651.json:
+archive/issue_comments_046562.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @mwhansen.",
     "created_at": "2009-06-20T01:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46651",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46562",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -55,15 +54,15 @@ Changing assignee from mabshoff to @mwhansen.
 
 ---
 
-archive/issue_comments_046652.json:
+archive/issue_comments_046563.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-06-20T01:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46652",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46563",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -73,15 +72,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_046653.json:
+archive/issue_comments_046564.json:
 ```json
 {
     "body": "Attachment [sage_scripts-sage-test-path.patch](tarball://root/attachments/some-uuid/ticket5902/sage_scripts-sage-test-path.patch) by @mwhansen created at 2009-06-20 01:57:34\n\nLooks good to me!",
     "created_at": "2009-06-20T01:57:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46653",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46564",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -93,15 +92,15 @@ Looks good to me!
 
 ---
 
-archive/issue_comments_046654.json:
+archive/issue_comments_046565.json:
 ```json
 {
     "body": "> Running\n>\n> sage -t devel/sage/sage/rings/polynomial/pbori.pyx\n>\n> seems to not work for me sometimes when the current working directory is not SAGE_ROOT.\n\nIt should not work.  \"sage -t\" is supposed to take the path to a file.  If you're not in SAGE_ROOT, then devel/sage/sage/rings/polynomial/pbori.pyx is not a file.  It's like with any other unix command.  E.g., you wouldn't expect \n\n```\ncat devel/sage/sage/rings/polynomial/pbori.pyx\n```\n\nto magically work if you're not in SAGE_ROOT.\n\nNote that Mike Hansen just gave this a positive review.  I strongly disagree.",
     "created_at": "2009-06-20T14:44:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46654",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46565",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -125,15 +124,15 @@ Note that Mike Hansen just gave this a positive review.  I strongly disagree.
 
 ---
 
-archive/issue_comments_046655.json:
+archive/issue_comments_046566.json:
 ```json
 {
     "body": "Hi William,\n\nMy motivation for this change was that when you run \"sage -testall\", for each test it prints out what it is running as \n\nsage -t devel/sage/sage/rings/polynomial/pbori.py\n\nsince $SAGE_ROOT/sage changes directory to SAGE_ROOT before proceeding.\n\nSo that if you copy-and-paste that output from \"sage -testall\" to run the test a second time, it doesn't work.",
     "created_at": "2009-06-20T15:33:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46655",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46566",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -151,15 +150,15 @@ So that if you copy-and-paste that output from "sage -testall" to run the test a
 
 ---
 
-archive/issue_comments_046656.json:
+archive/issue_comments_046567.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-06-26T17:46:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5902",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46656",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/5902#issuecomment-46567",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 

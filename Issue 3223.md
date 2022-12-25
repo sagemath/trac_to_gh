@@ -6,15 +6,14 @@ archive/issues_003223.json:
     "body": "Assignee: boothby\n\nNow I think left or right parenthesis sends carriage return.  I think this likely has something to do with updating the keyboard support for the new safari browser.  \n\nIssue created by migration from https://trac.sagemath.org/ticket/3223\n\n",
     "created_at": "2008-05-16T18:45:37Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.2",
     "title": "notebook -- it is now broken on the iphone",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3223",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: boothby
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3223
 
 ---
 
-archive/issue_comments_022307.json:
+archive/issue_comments_022260.json:
 ```json
 {
     "body": "Attachment [sage-3223.patch](tarball://root/attachments/some-uuid/ticket3223/sage-3223.patch) by @williamstein created at 2008-11-17 15:46:10",
     "created_at": "2008-11-17T15:46:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22307",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22260",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [sage-3223.patch](tarball://root/attachments/some-uuid/ticket3223/sag
 
 ---
 
-archive/issue_comments_022308.json:
+archive/issue_comments_022261.json:
 ```json
 {
     "body": "I fixed this by disabling *all* keyboard shortcut handling on the iphone.  This is a good idea, since the iphone does not have any of the keys needed to send any of the keyboard shortcuts, and it gets around the problem.  \n\nTo referee this 3-line patch, just verify that clearly I didn't break anything, since all I did was add a special case to check for the iphone string in the browser UA tag, and only then disable keyboard shortcut handling.",
     "created_at": "2008-11-17T15:47:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22308",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22261",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -67,15 +66,15 @@ To referee this 3-line patch, just verify that clearly I didn't break anything, 
 
 ---
 
-archive/issue_comments_022309.json:
+archive/issue_comments_022262.json:
 ```json
 {
     "body": "I'm moving this back to 3.2.  It's harmless (famous last words), and I really think having iphone support working again is an extremely important bug fix.",
     "created_at": "2008-11-17T15:49:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22309",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22262",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -85,15 +84,15 @@ I'm moving this back to 3.2.  It's harmless (famous last words), and I really th
 
 ---
 
-archive/issue_comments_022310.json:
+archive/issue_comments_022263.json:
 ```json
 {
     "body": "+1",
     "created_at": "2008-11-17T20:23:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22310",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22263",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -103,15 +102,15 @@ archive/issue_comments_022310.json:
 
 ---
 
-archive/issue_comments_022311.json:
+archive/issue_comments_022264.json:
 ```json
 {
     "body": "Changing priority from major to blocker.",
     "created_at": "2008-11-18T06:49:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22311",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22264",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -121,15 +120,15 @@ Changing priority from major to blocker.
 
 ---
 
-archive/issue_comments_022312.json:
+archive/issue_comments_022265.json:
 ```json
 {
     "body": "Merged in Sage 3.2.rc2",
     "created_at": "2008-11-18T18:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22312",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22265",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -139,15 +138,15 @@ Merged in Sage 3.2.rc2
 
 ---
 
-archive/issue_comments_022313.json:
+archive/issue_comments_022266.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-11-18T18:13:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3223",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22313",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3223#issuecomment-22266",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_005352.json:
     "body": "Assignee: cwitty\n\nCC:  @orlitzky\n\nFix it so that the logs end up in DOT_SAGE since that does not have to be $HOME/.sage as hard coded for the log files.\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/5352\n\n",
     "created_at": "2009-02-23T22:37:41Z",
     "labels": [
-        "misc",
-        "major",
+        "component: misc",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.8",
     "title": "the valgrind log files in sage-doctest are written to $HOME/.sage instead of $DOT_SAGE",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5352",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: cwitty
@@ -35,15 +34,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5352
 
 ---
 
-archive/issue_comments_041227.json:
+archive/issue_comments_041146.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-02-23T22:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41227",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41146",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -53,15 +52,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_041228.json:
+archive/issue_comments_041147.json:
 ```json
 {
     "body": "Changing assignee from cwitty to mabshoff.",
     "created_at": "2009-02-23T22:37:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41228",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41147",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -71,15 +70,15 @@ Changing assignee from cwitty to mabshoff.
 
 ---
 
-archive/issue_comments_041229.json:
+archive/issue_comments_041148.json:
 ```json
 {
     "body": "Better luck in 3.4.1.\n\nCheers,\n\nMichael",
     "created_at": "2009-03-01T02:27:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41229",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41148",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -93,15 +92,15 @@ Michael
 
 ---
 
-archive/issue_comments_041230.json:
+archive/issue_comments_041149.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2011-01-05T17:03:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41230",
-    "user": "@a-andre"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41149",
+    "user": "https://github.com/a-andre"
 }
 ```
 
@@ -111,15 +110,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_041231.json:
+archive/issue_comments_041150.json:
 ```json
 {
     "body": "Patch tested successfully on 4.6.1, however (beginner question) what is the correct procedure\nfor reviewing such an out of sage-library/ issue ?",
     "created_at": "2011-02-08T10:33:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41231",
-    "user": "rochelol2"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41150",
+    "user": "https://trac.sagemath.org/admin/accounts/users/rochelol2"
 }
 ```
 
@@ -130,15 +129,15 @@ for reviewing such an out of sage-library/ issue ?
 
 ---
 
-archive/issue_comments_041232.json:
+archive/issue_comments_041151.json:
 ```json
 {
     "body": "Replying to [comment:4 rochelol2]:\n> Patch tested successfully on 4.6.1, however (beginner question) what is the correct procedure\n> for reviewing such an out of sage-library/ issue ?\n\nThere is a repository, referred to as the script repository, in `$SAGE_LOCAL/bin`. The patch should apply cleanly to this repo, have proper mercurial headers, etc.\n\nAttached patch does not fix all the problem places. The script `sage-valgrind` still refers to `$HOME/.sage`. Could you fix that and use \"hg export\" to create the patch?",
     "created_at": "2011-05-31T13:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41232",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41151",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -154,15 +153,15 @@ Attached patch does not fix all the problem places. The script `sage-valgrind` s
 
 ---
 
-archive/issue_comments_041233.json:
+archive/issue_comments_041152.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-05-31T13:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41233",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41152",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -172,15 +171,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_041234.json:
+archive/issue_comments_041153.json:
 ```json
 {
     "body": "Attachment [trac_5352_valgrind_log.patch](tarball://root/attachments/some-uuid/ticket5352/trac_5352_valgrind_log.patch) by @a-andre created at 2011-06-02 15:34:50",
     "created_at": "2011-06-02T15:34:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41234",
-    "user": "@a-andre"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41153",
+    "user": "https://github.com/a-andre"
 }
 ```
 
@@ -190,15 +189,15 @@ Attachment [trac_5352_valgrind_log.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_041235.json:
+archive/issue_comments_041154.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-06-02T15:36:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41235",
-    "user": "@a-andre"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41154",
+    "user": "https://github.com/a-andre"
 }
 ```
 
@@ -208,15 +207,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_041236.json:
+archive/issue_comments_041155.json:
 ```json
 {
     "body": "I think all of the affected scripts need to source sage-env for the default value of `$DOT_SAGE`. As is,\n\n\n```\n$ ./local/bin/sage-valgrind \n/local/bin/sage-ipython\nmkdir: cannot create directory `/valgrind': Permission denied\n```\n",
     "created_at": "2011-12-04T03:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41236",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41155",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -234,15 +233,15 @@ mkdir: cannot create directory `/valgrind': Permission denied
 
 ---
 
-archive/issue_comments_041237.json:
+archive/issue_comments_041156.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-12-04T03:25:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41237",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41156",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -252,15 +251,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_041238.json:
+archive/issue_comments_041157.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-12-04T17:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41238",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41157",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -270,15 +269,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_041239.json:
+archive/issue_comments_041158.json:
 ```json
 {
     "body": "Replying to [comment:7 mjo]:\n> I think all of the affected scripts need to source sage-env for the default value of `$DOT_SAGE`.\n\nAfter RTFMing, I see that I shouldn't be running the script from bash anyway, so this criticism is invalid.",
     "created_at": "2011-12-04T17:47:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41239",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41158",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -291,15 +290,15 @@ After RTFMing, I see that I shouldn't be running the script from bash anyway, so
 
 ---
 
-archive/issue_comments_041240.json:
+archive/issue_comments_041159.json:
 ```json
 {
     "body": "I think this looks good. Here's how I tested:\n\n1. Install valgrind.\n2. Rebuild sage with SAGE_VALGRIND=\"yes\".\n3. Create an empty suppressions file (Trac #11918)\n4. Remove my ~/.sage/valgrind\n5. Create and export DOT_SAGE=~/grind\n6. Execute,\n   * sage -valgrind\n   * sage -cachegrind\n   * sage -callgrind\n   * sage -massif\n   * sage -tp 4 -long -valgrind devel/sage/sage (Killed this one prematurely since it was going to take a month)\n7. Tried to run sage -omega, but the exp-omega tool has been removed from recent versions of valgrind.\n8. Checked my ~/.sage and ~/grind directories to make sure all of the log files wound up in the right places.\n9. make ptestlong, no failures\n10. Grep for leftover '$HOME/.sage' instances in local/bin",
     "created_at": "2011-12-05T04:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41240",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41159",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -325,15 +324,15 @@ I think this looks good. Here's how I tested:
 
 ---
 
-archive/issue_comments_041241.json:
+archive/issue_comments_041160.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2011-12-05T04:58:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41241",
-    "user": "@orlitzky"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41160",
+    "user": "https://github.com/orlitzky"
 }
 ```
 
@@ -343,15 +342,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_041242.json:
+archive/issue_comments_041161.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2011-12-09T10:21:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5352",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41242",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5352#issuecomment-41161",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

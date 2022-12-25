@@ -6,7 +6,7 @@ archive/issues_008179.json:
     "body": "Assignee: tbd\n\nCC:  @vbraun mhampton\n\nThe package cddlib-094f.p?.spkg places two new binaries under the directory $SAGE_LOCAL/bin, in particular:\n\n```\n[mvngu@mod bin]$ pwd\n/scratch/mvngu/release/sage-4.3.2.alpha1/local/bin\n[mvngu@mod bin]$ hg st\n? cdd_both_reps\n? cdd_both_reps_gmp\n```\n\nThese are required by the rewritten polyhedra package at #7109. A patch to $SAGE_LOCAL/bin/.hgignore is attached.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8179\n\n",
     "created_at": "2010-02-03T19:41:59Z",
     "labels": [
-        "misc",
+        "component: misc",
         "critical",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008179.json:
     "title": "configure Mercurial to ignore two binaries by cddlib",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8179",
-    "user": "mvngu"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 Assignee: tbd
@@ -41,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8179
 
 ---
 
-archive/issue_comments_072082.json:
+archive/issue_comments_071960.json:
 ```json
 {
     "body": "apply to script repository",
     "created_at": "2010-02-03T19:43:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-72082",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-71960",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -59,15 +59,15 @@ apply to script repository
 
 ---
 
-archive/issue_comments_072083.json:
+archive/issue_comments_071961.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-03T19:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-72083",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-71961",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -77,15 +77,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_072084.json:
+archive/issue_comments_071962.json:
 ```json
 {
     "body": "Attachment [trac_8179-cddlib-local-bin-hgignore.patch](tarball://root/attachments/some-uuid/ticket8179/trac_8179-cddlib-local-bin-hgignore.patch) by mvngu created at 2010-02-03 19:45:00",
     "created_at": "2010-02-03T19:45:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-72084",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-71962",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -95,15 +95,15 @@ Attachment [trac_8179-cddlib-local-bin-hgignore.patch](tarball://root/attachment
 
 ---
 
-archive/issue_comments_072085.json:
+archive/issue_comments_071963.json:
 ```json
 {
     "body": "Looks good to me.",
     "created_at": "2010-02-03T22:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-72085",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-71963",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -113,15 +113,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_072086.json:
+archive/issue_comments_071964.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-03T22:11:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-72086",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-71964",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -131,15 +131,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_072087.json:
+archive/issue_comments_071965.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-03T22:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-72087",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-71965",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -149,15 +149,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_072088.json:
+archive/issue_comments_071966.json:
 ```json
 {
     "body": "Merged [trac_8179-cddlib-local-bin-hgignore.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8179/trac_8179-cddlib-local-bin-hgignore.patch). vbraun --- please remember to put your username and the ticket number on your patches. I have committed the above patch in your name.",
     "created_at": "2010-02-03T22:12:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8179",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-72088",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8179#issuecomment-71966",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

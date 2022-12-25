@@ -6,14 +6,13 @@ archive/issues_000474.json:
     "body": "Assignee: mabshoff\n\nAt the moment the valgrind tool and flags are hardcoded in various scripts. So add checks for environment flag SAGE_VALGRIND_FLAGS to overwrite default.\n\nTo illustrate what you can do with other tools from the valgrind suite have a look at the two attached graphs created by the heap profiler massif.\n\nIt might also be nice to add a -valgrind to \"sage -testall\" to valgrind the whole test suite.\n\nFor two examples look at:\n\nhttp://sage.math.washington.edu/home/mabshoff/massif.19869.ps\nhttp://sage.math.washington.edu/home/mabshoff/massif.19966.ps\n\n\nCheers,\n\nMichael\n\nIssue created by migration from https://trac.sagemath.org/ticket/474\n\n",
     "created_at": "2007-08-21T01:16:58Z",
     "labels": [
-        "packages: standard",
-        "minor",
-        "enhancement"
+        "component: packages: standard",
+        "minor"
     ],
     "title": "make the -valgrind target more flexible, add massif support",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/474",
-    "user": "mabshoff"
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 Assignee: mabshoff
@@ -42,15 +41,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/474
 
 ---
 
-archive/issue_comments_002372.json:
+archive/issue_comments_002362.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2007-08-21T01:17:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/474",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/474#issuecomment-2372",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/474#issuecomment-2362",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

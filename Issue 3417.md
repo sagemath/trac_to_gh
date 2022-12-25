@@ -6,7 +6,7 @@ archive/issues_003417.json:
     "body": "Assignee: Mike Hansen\n\nCC:  sage-combinat\n\nKeywords: promotion; reflection\n\nI added a two new functions \npromotion and promotion_inverse\nfor rectangular tableaux.\n\nI also added a reflection operator\nfor the crystal library.\n\nIssue created by migration from https://trac.sagemath.org/ticket/3417\n\n",
     "created_at": "2008-06-13T18:29:47Z",
     "labels": [
-        "combinatorics",
+        "component: combinatorics",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_003417.json:
     "title": "added new combinatorial functions for tableaux and crystals",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3417",
-    "user": "@anneschilling"
+    "user": "https://github.com/anneschilling"
 }
 ```
 Assignee: Mike Hansen
@@ -38,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3417
 
 ---
 
-archive/issue_comments_024058.json:
+archive/issue_comments_024010.json:
 ```json
 {
     "body": "Hi Anne,\n\ntrac is a little tricky when pressing the submit button, so you did create a dupe. Don't worry about that, everybody did at some point.\n\nThis is a dupe of #3418.",
     "created_at": "2008-06-13T18:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3417#issuecomment-24058",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3417#issuecomment-24010",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -60,15 +60,15 @@ This is a dupe of #3418.
 
 ---
 
-archive/issue_comments_024059.json:
+archive/issue_comments_024011.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2008-06-13T18:33:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3417",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3417#issuecomment-24059",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3417#issuecomment-24011",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

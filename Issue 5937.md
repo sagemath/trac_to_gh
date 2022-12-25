@@ -6,15 +6,14 @@ archive/issues_005937.json:
     "body": "Assignee: @rlmill\n\nHere is *yet another* example of non-tested code being totally broken.  Try this in the notebook.\n\n\n```\nQ = GraphQuery(display_cols=['graph6','num_vertices','degree_sequence'],\n   num_edges=['<=',5],min_degree=1)\n\nQ.show(with_picture=True)\n```\n\n\nthis silently outputs absolutely nothing. \n\nThe doctests don't test this -- they only test that this fails (with a message) on the command line. \n\nShorterm fix: completely remove this option from the documentation and code.\n\nLonterm fix: actually track down and fix the bug -- this would be nice, since I know the output looks good (I've seen Emily demo it).\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/5937\n\n",
     "created_at": "2009-04-29T16:05:22Z",
     "labels": [
-        "graph theory",
-        "major",
+        "component: graph theory",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "graph theory -- showing the result of a database query with_picture=True is totally broken",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5937",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @rlmill
@@ -48,15 +47,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5937
 
 ---
 
-archive/issue_comments_046937.json:
+archive/issue_comments_046848.json:
 ```json
 {
     "body": "I am unable to duplicate this bug.  I'm using a clean branch of 4.0alpha0.  Can someone else give this a try?",
     "created_at": "2009-05-21T21:54:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46937",
-    "user": "ekirkman"
+    "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46848",
+    "user": "https://trac.sagemath.org/admin/accounts/users/ekirkman"
 }
 ```
 
@@ -66,15 +65,15 @@ I am unable to duplicate this bug.  I'm using a clean branch of 4.0alpha0.  Can 
 
 ---
 
-archive/issue_comments_046938.json:
+archive/issue_comments_046849.json:
 ```json
 {
     "body": "I have the same result. Everything looks fine for me.\n\nWilliam -- Could you try reproducing this? If you can, can we get what machine/version it is on?",
     "created_at": "2009-05-21T22:02:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46938",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46849",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -86,15 +85,15 @@ William -- Could you try reproducing this? If you can, can we get what machine/v
 
 ---
 
-archive/issue_comments_046939.json:
+archive/issue_comments_046850.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2009-07-13T21:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46939",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46850",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -104,15 +103,15 @@ Resolution: invalid
 
 ---
 
-archive/issue_comments_046940.json:
+archive/issue_comments_046851.json:
 ```json
 {
     "body": "This has been open for 8 weeks with zero comment, so I'm assuming this is no longer valid.",
     "created_at": "2009-07-13T21:40:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46940",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/5937#issuecomment-46851",
+    "user": "https://github.com/rlmill"
 }
 ```
 

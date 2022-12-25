@@ -6,14 +6,13 @@ archive/issues_000146.json:
     "body": "Assignee: @williamstein\n\nThe build breaks here because of missing includes:\n\n    gcc -fno-strict-aliasing -Wno-long-double -no-cpp-precomp -mno-fused-madd \\\n         -DNDEBUG -g -O3 -Wall -Wstrict-prototypes -DSOYA_BIG_ENDIAN=big -Iode-0.5/include \\\n         -I/usr/include -I/usr/local/include -I/usr/X11R6/include -I/usr/include/freetype2 \\\n         -I/usr/local/include/freetype2 -I/usr/include/cal3d -I/usr/local/include/cal3d \\\n         -I/sw/include -I/SandBox/Justin/sb/sage-1.4/local/include/python2.5 -c _soya.c \\\n         -o build/temp.macosx-10.3-ppc-2.5/_soya.o -w\n    _soya.c:22:21: error: GL/glew.h: No such file or directory\n    _soya.c:23:28: error: SDL/SDL_endian.h: No such file or directory\n    _soya.c:24:21: error: SDL/SDL.h: No such file or directory\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/146\n\n",
     "created_at": "2006-10-21T20:49:46Z",
     "labels": [
-        "packages: standard",
-        "major",
+        "component: packages: standard",
         "bug"
     ],
     "title": "Soya build breaks on sage-1.4.1.2",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/146",
-    "user": "justin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 Assignee: @williamstein
@@ -39,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/146
 
 ---
 
-archive/issue_comments_000669.json:
+archive/issue_comments_000666.json:
 ```json
 {
     "body": "Attachment [Soya.errlog](tarball://root/attachments/some-uuid/ticket146/Soya.errlog) by justin created at 2006-10-21 20:50:36\n\nBuild log for soya build",
     "created_at": "2006-10-21T20:50:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/146#issuecomment-669",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/146#issuecomment-666",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -59,15 +58,15 @@ Build log for soya build
 
 ---
 
-archive/issue_comments_000670.json:
+archive/issue_comments_000667.json:
 ```json
 {
     "body": "Deprecated this to an experimental package.  We shouldn't be supporting this...",
     "created_at": "2007-01-12T23:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/146#issuecomment-670",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/146#issuecomment-667",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -77,15 +76,15 @@ Deprecated this to an experimental package.  We shouldn't be supporting this...
 
 ---
 
-archive/issue_comments_000671.json:
+archive/issue_comments_000668.json:
 ```json
 {
     "body": "Resolution: wontfix",
     "created_at": "2007-01-12T23:38:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/146",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/146#issuecomment-671",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/146#issuecomment-668",
+    "user": "https://github.com/williamstein"
 }
 ```
 

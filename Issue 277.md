@@ -6,15 +6,14 @@ archive/issues_000277.json:
     "body": "Assignee: @williamstein\n\nKeywords: discrete log shanks pollard rho order group structure\n\nThe computational cost of Shanks' Baby-Step Giant-Step algorithm and Pollard's rho and lambda algorithms are more or less the same, but the memory costs is much worse for Shanks' algorithm.  It would be nice to have better discrete log algos and group structure computations, ala E. Teske, A Space Efficient Algorithm for Group Structure Computation (1998).\n\nIssue created by migration from https://trac.sagemath.org/ticket/277\n\n",
     "created_at": "2007-02-22T23:53:02Z",
     "labels": [
-        "number theory",
-        "minor",
-        "enhancement"
+        "component: number theory",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.10.3",
     "title": "Add generic_discrete_logarithm and order computation using Pollard's rho algorithm",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/277",
-    "user": "@ncalexan"
+    "user": "https://github.com/ncalexan"
 }
 ```
 Assignee: @williamstein
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/277
 
 ---
 
-archive/issue_comments_001314.json:
+archive/issue_comments_001310.json:
 ```json
 {
     "body": "Remove assignee @williamstein.",
     "created_at": "2007-02-24T03:04:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1314",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1310",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -49,15 +48,15 @@ Remove assignee @williamstein.
 
 ---
 
-archive/issue_comments_001315.json:
+archive/issue_comments_001311.json:
 ```json
 {
     "body": "See also Sutherland's thesis\n\nhttp://theory.lcs.mit.edu/~cis/theses/sutherland-phd.pdf\n\nwhich gives a better algorithm for computing group orders",
     "created_at": "2007-08-29T18:48:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1315",
-    "user": "dmharvey"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1311",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dmharvey"
 }
 ```
 
@@ -71,15 +70,15 @@ which gives a better algorithm for computing group orders
 
 ---
 
-archive/issue_comments_001316.json:
+archive/issue_comments_001312.json:
 ```json
 {
     "body": "Attachment [8758.patch](tarball://root/attachments/some-uuid/ticket277/8758.patch) by @JohnCremona created at 2008-03-02 22:31:12\n\npatch applies to 2.10.3.rc0 after 8682.patch in #2356",
     "created_at": "2008-03-02T22:31:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1316",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1312",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -91,15 +90,15 @@ patch applies to 2.10.3.rc0 after 8682.patch in #2356
 
 ---
 
-archive/issue_comments_001317.json:
+archive/issue_comments_001313.json:
 ```json
 {
     "body": "The attached patch (8758.patch) is a first stab at doing these things more generically.  For any multiplicative or additive situation the new version of discrete_log_generic() now works, using a baby-step-giant-step approach.  For example (see doctest) this gives a BSGS implementation of DLOGS for elliptic curves.\n\nIf people think this is a reasonable way to go (and it is certainly a simple interface) then there is more which can be added very easily:  a more general BSGS function (solve `a=b^n` with `n` in some specified interval) which would be called by discrete_log() and also allow for computation of orders of elements in any group, etc.\n\nThen one could have other algorithms implemented in the same framework such as Pollard Rho or the more sophisticated ones mentioned in earlier comments.\n\nMore comments please!",
     "created_at": "2008-03-02T22:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1317",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1313",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -115,15 +114,15 @@ More comments please!
 
 ---
 
-archive/issue_comments_001318.json:
+archive/issue_comments_001314.json:
 ```json
 {
     "body": "Changing component from number theory to group_theory.",
     "created_at": "2008-03-02T22:37:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1318",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1314",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -133,15 +132,15 @@ Changing component from number theory to group_theory.
 
 ---
 
-archive/issue_comments_001319.json:
+archive/issue_comments_001315.json:
 ```json
 {
     "body": "I like it. \n\nOne comment I have is that you might want to look at the python `operator` module rather than using lambda functions. \n\n\n```\nsage: _ = var('x,y')\nsage: operator.neg(x)\n-x\nsage: operator.add(x,y) # the order is actually respected, this is just a maxima thing\ny + x\nsage: operator.invert(x)\n1/x\nsage: operator.mul(x,y)\nx*y\n```\n",
     "created_at": "2008-03-04T06:16:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1319",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1315",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -167,15 +166,15 @@ x*y
 
 ---
 
-archive/issue_comments_001320.json:
+archive/issue_comments_001316.json:
 ```json
 {
     "body": "apply after 8758.patch",
     "created_at": "2008-03-04T09:22:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1320",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1316",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -185,15 +184,15 @@ apply after 8758.patch
 
 ---
 
-archive/issue_comments_001321.json:
+archive/issue_comments_001317.json:
 ```json
 {
     "body": "Attachment [8759.patch](tarball://root/attachments/some-uuid/ticket277/8759.patch) by @JohnCremona created at 2008-03-04 09:26:20\n\nI liked the suggestion of using operators: 8759.patch does that (needs to be applied after 8758.patch).  At the same time it adds some more doctests, and makes a couple of minor efficiency savings.\n\nIf there are going to be more generic functions like this (and I hope there are) we need a better place for them than rings/arith.py.  I see that in structure/element.pyx there are also some generic things, including generic powering.  Perhaps this function should be moved to a new .py file under structures?  Or at least renamed generic.py.",
     "created_at": "2008-03-04T09:26:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1321",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1317",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -207,15 +206,15 @@ If there are going to be more generic functions like this (and I hope there are)
 
 ---
 
-archive/issue_comments_001322.json:
+archive/issue_comments_001318.json:
 ```json
 {
     "body": "Looks and works great. \n\nAs far as your comments of a new .py file for generic functions, most of them will make sense in a category and will go there (in which case they will be automatically attached to every element and/or object of that category).",
     "created_at": "2008-03-04T11:30:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1322",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1318",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -227,15 +226,15 @@ As far as your comments of a new .py file for generic functions, most of them wi
 
 ---
 
-archive/issue_comments_001323.json:
+archive/issue_comments_001319.json:
 ```json
 {
     "body": "Thanks for the positive review.\n\nNote that these patches do not fulfill all the wish-list requirements, so while I hope they can be merged as soon as possible, the ticket should be be closed.  If that is possible!",
     "created_at": "2008-03-04T18:01:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1323",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1319",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -247,15 +246,15 @@ Note that these patches do not fulfill all the wish-list requirements, so while 
 
 ---
 
-archive/issue_comments_001324.json:
+archive/issue_comments_001320.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-05T00:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1324",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1320",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -265,15 +264,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_001325.json:
+archive/issue_comments_001321.json:
 ```json
 {
     "body": "Merged both patches in Sage 2.10.3.rc2",
     "created_at": "2008-03-05T00:21:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/277",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1325",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/277#issuecomment-1321",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

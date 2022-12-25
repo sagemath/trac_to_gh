@@ -6,15 +6,13 @@ archive/issues_004020.json:
     "body": "Assignee: mabshoff\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/4020\n\n",
     "created_at": "2008-08-31T10:29:58Z",
     "labels": [
-        "doctest coverage",
-        "major",
-        "enhancement"
+        "component: doctest coverage"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "fraction field doctests",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4020",
-    "user": "@robertwb"
+    "user": "https://github.com/robertwb"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +27,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4020
 
 ---
 
-archive/issue_comments_028992.json:
+archive/issue_comments_028934.json:
 ```json
 {
     "body": "Attachment [4020-fracfield-doctests.patch](tarball://root/attachments/some-uuid/ticket4020/4020-fracfield-doctests.patch) by @robertwb created at 2008-08-31 10:30:40",
     "created_at": "2008-08-31T10:30:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28992",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28934",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -47,15 +45,15 @@ Attachment [4020-fracfield-doctests.patch](tarball://root/attachments/some-uuid/
 
 ---
 
-archive/issue_comments_028993.json:
+archive/issue_comments_028935.json:
 ```json
 {
     "body": "Depends on #4019.",
     "created_at": "2008-08-31T10:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28993",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28935",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -65,15 +63,15 @@ Depends on #4019.
 
 ---
 
-archive/issue_comments_028994.json:
+archive/issue_comments_028936.json:
 ```json
 {
     "body": "Attachment [trac_4020.patch](tarball://root/attachments/some-uuid/ticket4020/trac_4020.patch) by @mwhansen created at 2008-08-31 22:12:55",
     "created_at": "2008-08-31T22:12:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28994",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28936",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -83,15 +81,15 @@ Attachment [trac_4020.patch](tarball://root/attachments/some-uuid/ticket4020/tra
 
 ---
 
-archive/issue_comments_028995.json:
+archive/issue_comments_028937.json:
 ```json
 {
     "body": "Looks good to me.  I put up trac_4020.patch which fixes one minor typo.  Only apply that patch.",
     "created_at": "2008-08-31T22:13:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28995",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28937",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -101,15 +99,15 @@ Looks good to me.  I put up trac_4020.patch which fixes one minor typo.  Only ap
 
 ---
 
-archive/issue_comments_028996.json:
+archive/issue_comments_028938.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-09-01T22:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28996",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28938",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -119,15 +117,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_028997.json:
+archive/issue_comments_028939.json:
 ```json
 {
     "body": "Merged trac_4020.patch in Sage 3.1.2.alpha4",
     "created_at": "2008-09-01T22:08:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4020",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28997",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4020#issuecomment-28939",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

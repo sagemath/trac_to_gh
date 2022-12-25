@@ -6,15 +6,13 @@ archive/issues_006636.json:
     "body": "CC:  @jbandlow @burcin @mwhansen\n\nKeywords: symbolics, factorials, binomial coefficients\n\nMaple can simplify all but the first of the following examples:\n\n\n```\n%maple\nprint(simplify(binomial(n,2)+binomial(n+1,2)));\nprint(simplify(factorial(n)/factorial(n-2)/2 + factorial(n+1)/factorial(n-1)/2));\nprint(simplify(factorial(n+1)/factorial(n)));\nprint(simplify(binomial(n,k)*factorial(k)*factorial(n-k)));\n```\n\n\nreturns\n\n```\nbinomial(n,2)+binomial(n+1,2)\nn^2\nn+1\nn!\n```\n\n\nSage can simplify only the first:\n\n```\nvar('n,k')\nprint (binomial(n,2) + binomial(n+1,2)).simplify_full()\nprint (factorial(n)/factorial(n-2)/2 + factorial(n+1)/factorial(n)/2).simplify_full()\nprint (factorial(n+1)/factorial(n)).simplify_full()\nprint (binomial(n,k)*factorial(k)*factorial(n-k)).simplify_full()\n```\n\n\nreturns\n\n```\nn^2\n1/2*(factorial(n - 2)*factorial(n + 1) + factorial(n)^2)/(factorial(n - 2)*factorial(n))\nfactorial(n + 1)/factorial(n)\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"/home/jason/.sage/sage_notebook/worksheets/admin/10/code/49.py\", line 11, in <module>\n    exec compile(ur'print (binomial(n,k)*factorial(k)*factorial(n-k)).simplify_full()' + '\\n', '', 'single')\n  File \"\", line 1, in <module>\n    \n  File \"expression.pyx\", line 4837, in sage.symbolic.expression.Expression.simplify_full (sage/symbolic/expression.cpp:19979)\n  File \"expression.pyx\", line 4864, in sage.symbolic.expression.Expression.simplify_trig (sage/symbolic/expression.cpp:20076)\n  File \"expression.pyx\", line 418, in sage.symbolic.expression.Expression._maxima_ (sage/symbolic/expression.cpp:3415)\n  File \"sage_object.pyx\", line 364, in sage.structure.sage_object.SageObject._interface_ (sage/structure/sage_object.c:3384)\n  File \"sage_object.pyx\", line 451, in sage.structure.sage_object.SageObject._maxima_init_ (sage/structure/sage_object.c:5065)\n  File \"expression.pyx\", line 443, in sage.symbolic.expression.Expression._interface_init_ (sage/symbolic/expression.cpp:3544)\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 214, in __call__\n    return self.arithmetic(ex, operator)\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 497, in arithmetic\n    args = [\"(%s)\"%self(op) for op in ex.operands()]\n  File \"/home/jason/sage-4.0/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.py\", line 206, in __call__\n    operator = ex.operator()\n  File \"expression.pyx\", line 3088, in sage.symbolic.expression.Expression.operator (sage/symbolic/expression.cpp:15127)\nRuntimeError: cannot find SFunction in table\n```\n\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/6636\n\n",
     "created_at": "2009-07-27T11:34:50Z",
     "labels": [
-        "symbolics",
-        "major",
-        "enhancement"
+        "component: symbolics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.1.2",
     "title": "Simplification of factorials and binomial coefficients is not very good",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6636",
-    "user": "@jbandlow"
+    "user": "https://github.com/jbandlow"
 }
 ```
 CC:  @jbandlow @burcin @mwhansen
@@ -93,15 +91,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6636
 
 ---
 
-archive/issue_comments_054368.json:
+archive/issue_comments_054267.json:
 ```json
 {
     "body": "A related discussion on sage-devel is [http://groups.google.com/group/sage-devel/browse_thread/thread/58db110fc55b11e5](http://groups.google.com/group/sage-devel/browse_thread/thread/58db110fc55b11e5).\n\nThe lack of simplification is a bug, or at least very poorly exposed functionality, in Maxima.  One would think that simplify would include this... but instead one needs to expose Maxima's *minfactorial*:\n\n```\n(%i1) fullratsimp(factorial(n)/factorial(n-1));\n                                      n!\n(%o1)                              --------\n                                   (n - 1)!\n(%i2) minfactorial(factorial(n)/factorial(n-1));\n(%o2)                                  n\n```\n\nThis should not be hard to add to simplify_full, though.\n\nAlso note that the last issue is addressed by #6197.",
     "created_at": "2009-09-02T14:58:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54368",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54267",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -126,15 +124,15 @@ Also note that the last issue is addressed by #6197.
 
 ---
 
-archive/issue_comments_054369.json:
+archive/issue_comments_054268.json:
 ```json
 {
     "body": "The following patch should fix all of the issues on this ticket - Maxima has quite a bit of simplifying capability, but prefers to leave things unsimplified for further processing, as a rule.  See examples for what now works.   I have also changed simplify_full() to take this in, and hope that simplification of binomials and factorials first is best.  This needs the patch at #6197 to function properly, since otherwise binomial isn't recognized by sage as something it can pass to Maxima.",
     "created_at": "2009-09-02T17:30:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54369",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54268",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -144,15 +142,15 @@ The following patch should fix all of the issues on this ticket - Maxima has qui
 
 ---
 
-archive/issue_comments_054370.json:
+archive/issue_comments_054269.json:
 ```json
 {
     "body": "Attachment [trac_6636-factorial-simplify.patch](tarball://root/attachments/some-uuid/ticket6636/trac_6636-factorial-simplify.patch) by @kcrisman created at 2009-09-08 13:54:50\n\nNeeds #6197",
     "created_at": "2009-09-08T13:54:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54370",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54269",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -164,15 +162,15 @@ Needs #6197
 
 ---
 
-archive/issue_comments_054371.json:
+archive/issue_comments_054270.json:
 ```json
 {
     "body": "This has been slightly changed because the doctest fix here actually belonged in #6197.  Otherwise still ready for review!",
     "created_at": "2009-09-08T13:55:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54371",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54270",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -182,15 +180,15 @@ This has been slightly changed because the doctest fix here actually belonged in
 
 ---
 
-archive/issue_comments_054372.json:
+archive/issue_comments_054271.json:
 ```json
 {
     "body": "Looks good to me.\n\nWe might want to improve simplify_full so that we don't have 4 round trips to Maxima (convert to maxima, run all of the simplification commands on the MaximaElement, and then finally convert back to an Expression.)",
     "created_at": "2009-09-08T19:42:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54372",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54271",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -202,15 +200,15 @@ We might want to improve simplify_full so that we don't have 4 round trips to Ma
 
 ---
 
-archive/issue_comments_054373.json:
+archive/issue_comments_054272.json:
 ```json
 {
     "body": "> We might want to improve simplify_full so that we don't have 4 round trips to Maxima (convert to maxima, run all of the simplification commands on the MaximaElement, and then finally convert back to an Expression.)\n\nThat makes a lot of sense.  Once this is merged, do you mind opening a ticket on that?",
     "created_at": "2009-09-08T19:55:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54373",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54272",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -222,15 +220,15 @@ That makes a lot of sense.  Once this is merged, do you mind opening a ticket on
 
 ---
 
-archive/issue_comments_054374.json:
+archive/issue_comments_054273.json:
 ```json
 {
     "body": "Sure thing.",
     "created_at": "2009-09-08T20:11:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54374",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54273",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -240,15 +238,15 @@ Sure thing.
 
 ---
 
-archive/issue_comments_054375.json:
+archive/issue_comments_054274.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-09T09:23:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6636",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54375",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6636#issuecomment-54274",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

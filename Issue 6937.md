@@ -6,7 +6,7 @@ archive/issues_006937.json:
     "body": "Assignee: boothby\n\nCC:  @craigcitro\n\nWe expect the following example to take about 10 seconds:\n\n\n```\nsage: @cached_function\nsage: def foo(x = 5):\n...       print \"computing foo(%s)\"%x\n...       sleep(10)\n...       return 0\nsage: w = walltime()\nsage: foo()\ncomputing foo(5)\nsage: foo(5)\ncomputing foo(5)\nsage: foo(x=5)\ncomputing foo(5)\nsage: print \"that took %s seconds!\"%walltime(w)\nthat took 29.9967029095 seconds!\n```\n\n\n... but that obviously isn't the case.  fix it!\n\nIssue created by migration from https://trac.sagemath.org/ticket/6937\n\n",
     "created_at": "2009-09-15T20:06:23Z",
     "labels": [
-        "misc",
+        "component: misc",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_006937.json:
     "title": "Fixed cached_function to handle defaults better.",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6937",
-    "user": "boothby"
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 Assignee: boothby
@@ -52,15 +52,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6937
 
 ---
 
-archive/issue_comments_057342.json:
+archive/issue_comments_057234.json:
 ```json
 {
     "body": "Here's a problem:\n\n\n```\nsage: class Foo:\n    def bar(self, a, b, c=0, d=None):\n        return a\nsage: A = Foo()\nsage: A.bar(1,2,3,4)\n1\nsage: from sage.misc.function_mangling import ArgumentFixer\nsage: AA = ArgumentFixer(A.bar)\nsage: AA.fix_to_named(1,2,3,4)\n((), (('self', 1), ('a', 2), ('b', 3), ('c', 4), ('d', None)))\n\n```\n\n\nHere, self isn't 1. a should be 1.",
     "created_at": "2009-09-19T20:05:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57342",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57234",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -88,15 +88,15 @@ Here, self isn't 1. a should be 1.
 
 ---
 
-archive/issue_comments_057343.json:
+archive/issue_comments_057235.json:
 ```json
 {
     "body": "Sorry, my gripe should be that \"classmethod\" is undocumented.",
     "created_at": "2009-09-19T20:18:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57343",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57235",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -106,15 +106,15 @@ Sorry, my gripe should be that "classmethod" is undocumented.
 
 ---
 
-archive/issue_comments_057344.json:
+archive/issue_comments_057236.json:
 ```json
 {
     "body": "Attachment [6937-improve_cache_with_defaults.patch](tarball://root/attachments/some-uuid/ticket6937/6937-improve_cache_with_defaults.patch) by boothby created at 2009-09-20 03:44:48",
     "created_at": "2009-09-20T03:44:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57344",
-    "user": "boothby"
+    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57236",
+    "user": "https://trac.sagemath.org/admin/accounts/users/boothby"
 }
 ```
 
@@ -124,15 +124,15 @@ Attachment [6937-improve_cache_with_defaults.patch](tarball://root/attachments/s
 
 ---
 
-archive/issue_comments_057345.json:
+archive/issue_comments_057237.json:
 ```json
 {
     "body": "Bing!",
     "created_at": "2009-09-20T05:14:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57345",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57237",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -142,15 +142,15 @@ Bing!
 
 ---
 
-archive/issue_comments_057346.json:
+archive/issue_comments_057238.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-09-22T20:02:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57346",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57238",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -160,15 +160,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_057347.json:
+archive/issue_comments_057239.json:
 ```json
 {
     "body": "There is no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's release for working on the making the notebook a standalone package.",
     "created_at": "2009-09-27T09:31:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6937",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57347",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6937#issuecomment-57239",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

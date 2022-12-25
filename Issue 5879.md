@@ -6,15 +6,13 @@ archive/issues_005879.json:
     "body": "Assignee: @anneschilling\n\nCC:  sage-combinat-commits\n\nKeywords: combinat, crystals\n\nThis patch adds crystal of letters for type E corresponding to\nthe highest weight crystal B(\\Lambda_1) and its dual B(\\Lambda_6) (in the sage labeling convention of the Dynkin nodes).\n\nIssue created by migration from https://trac.sagemath.org/ticket/5879\n\n",
     "created_at": "2009-04-23T19:27:33Z",
     "labels": [
-        "combinatorics",
-        "major",
-        "enhancement"
+        "component: combinatorics"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "[with patch, needs review] Added crystal of letters for type E",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5879",
-    "user": "@anneschilling"
+    "user": "https://github.com/anneschilling"
 }
 ```
 Assignee: @anneschilling
@@ -34,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5879
 
 ---
 
-archive/issue_comments_046449.json:
+archive/issue_comments_046360.json:
 ```json
 {
     "body": "For what it's worth, here's a picture of this crystal:\n\nhttp://sporadic.stanford.edu/bump/xtal/e6.pdf\n\nWhat is the logic of the representations of the elements? That is, why [-5,2,6]?",
     "created_at": "2009-04-24T14:20:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46449",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46360",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -56,15 +54,15 @@ What is the logic of the representations of the elements? That is, why [-5,2,6]?
 
 ---
 
-archive/issue_comments_046450.json:
+archive/issue_comments_046361.json:
 ```json
 {
     "body": "After some testing I am confident that the crystal is correct.\n\nAdding this one crystal (with its dual) actually gives access to\nall E6 crystals (modulo computational complexity) since they can\nbe obtained as subcrystals of tensor products of these two. For\nexample, the second fundamental weight corresponds to a representation\nof degree 351 whose crystal can be obtained thus:\n\n\n```\nsage: C = CrystalOfLetters(\"E6\")\nsage: T = TensorProductOfCrystals(C,C,generators=[[C[0],C[0]]])\nsage: T.cardinality()\n351\n```\n\n\nThe fact that this process (using both crystals) is complete to give all crystals is\nconfirmed here:\n\nhttp://groups.google.com/group/sage-combinat-devel/msg/8ef5b6b5b529e51b?hl=en\n\nThis crystal is also interesting because the action of the E6 Weyl group on this \ncrystal of degree 27 must be equivalent to the action of E6 on the 27 lines on a cubic surface.",
     "created_at": "2009-04-25T00:21:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46450",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46361",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -97,15 +95,15 @@ crystal of degree 27 must be equivalent to the action of E6 on the 27 lines on a
 
 ---
 
-archive/issue_comments_046451.json:
+archive/issue_comments_046362.json:
 ```json
 {
     "body": "> What is the logic of the representations of the elements? That is, why [-5,2,6]?\n\nThe nodes of this crystal are labeled by their weights. [-5,2,6] indicates that \na 5-arrow is coming in, and a 2-arrow and 6-arrow is leaving the vertex.\n\nI now also added a __repr__ method that allows for concise printing of the nodes by\n+abcdefghijklmnopqrstuvwxyz and -ABCDEFGHIJKLMNOPQRSTUVWXYZ in the dual crystal.",
     "created_at": "2009-04-25T07:05:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46451",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46362",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -121,15 +119,15 @@ I now also added a __repr__ method that allows for concise printing of the nodes
 
 ---
 
-archive/issue_comments_046452.json:
+archive/issue_comments_046363.json:
 ```json
 {
     "body": "The revision of the patch implementing concise representation is important since\nfor tensor products of crystals the names of elements would be very cumbersome.\nThe crystal at hand has highest weight the first fundamental weight, lambda1 in the\nBourbaki notation. The dual crystal has highest weight lambda6:\n\n```\n        O 2\n        |\n        |\nO---O---O---O---O\n1   3   4   5   6\nE6\n```\n\nThese both have degree 27. The adjoint representation has highest weight lambda2\nhas degree 78 and can be constructed as follows:\n\n```\nsage: C = CrystalOfLetters(['E',6], element_print_style = 'compact')\nsage: D = CrystalOfLetters(['E',6], element_print_style = 'compact', dual=True)\nsage: hwv=TensorProductOfCrystals(C,D).highest_weight_vectors(); hwv\n[[+, -], [j, -], [x, -]]\nsage: T = TensorProductOfCrystals(C,D,generators=[hwv[1]])\nsage: T.cardinality()\n78\nsage: T.latex_file(\"/home/bump/tmp/e6-78.tex\")\n```\n\nThe last step assumes you have dot2tex installed. (Why isn't this\nbundled with SAGE?)\nHere is the resulting crystal of the adjoint representation:\n\nhttp://sporadic.stanford.edu/bump/xtal/e6-78.pdf",
     "created_at": "2009-05-02T17:55:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46452",
-    "user": "@dwbump"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46363",
+    "user": "https://github.com/dwbump"
 }
 ```
 
@@ -171,15 +169,15 @@ http://sporadic.stanford.edu/bump/xtal/e6-78.pdf
 
 ---
 
-archive/issue_comments_046453.json:
+archive/issue_comments_046364.json:
 ```json
 {
     "body": "Mhh, what is the credit situation here? \"Brant Jones\" was added to the list of authors, so is this shared credit for Anne and Brant for authorship?\n\nCheers,\n\nMichael",
     "created_at": "2009-05-07T06:37:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46453",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46364",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -193,15 +191,15 @@ Michael
 
 ---
 
-archive/issue_comments_046454.json:
+archive/issue_comments_046365.json:
 ```json
 {
     "body": "Yes, shared authorship please.\n\nAnne",
     "created_at": "2009-05-07T06:53:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46454",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46365",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -213,15 +211,15 @@ Anne
 
 ---
 
-archive/issue_comments_046455.json:
+archive/issue_comments_046366.json:
 ```json
 {
     "body": "This breaks pickling for me (and #5120 by itself did not):\n\n```\n    ** failed:  _class__sage_combinat_crystals_letters_ClassicalCrystalOfLetters__.sobj\n    ** failed:  _class__sage_combinat_crystals_tensor_product_CrystalOfTableauxElement__.sobj\n    ** failed:  _class__sage_combinat_crystals_tensor_product_CrystalOfTableaux__.sobj\n    ** failed:  _class__sage_combinat_crystals_tensor_product_FullTensorProductOfClassicalCrystals__.sobj\n    ** failed:  _class__sage_combinat_crystals_tensor_product_TensorProductOfClassicalCrystalsWithGenerators__.sobj\n    doctest:1172: DeprecationWarning: RQDF is deprecated; use RealField(212) instead.\n    Failed:\n    _class__sage_combinat_crystals_letters_ClassicalCrystalOfLetters__.sobj\n    _class__sage_combinat_crystals_tensor_product_CrystalOfTableauxElement__.sobj\n    _class__sage_combinat_crystals_tensor_product_CrystalOfTableaux__.sobj\n    _class__sage_combinat_crystals_tensor_product_FullTensorProductOfClassicalCrystals__.sobj\n    _class__sage_combinat_crystals_tensor_product_TensorProductOfClassicalCrystalsWithGenerators__.sobj\n```\n\nAlso:\n\n```\n\tfrom sage.quadratic_forms.extras import sgn \n```\n\nis going away since it is basically cmp(a,b).\n\nCheers,\n\nMichael",
     "created_at": "2009-05-07T06:59:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46455",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46366",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -258,15 +256,15 @@ Michael
 
 ---
 
-archive/issue_comments_046456.json:
+archive/issue_comments_046367.json:
 ```json
 {
     "body": "Replying to [comment:7 aschilling]:\n> Yes, shared authorship please.\n> \n> Anne\n\nCool. Please specify shared authorship when you post the patch via the comment section during the file upload. That makes it just easier for me to keep track of credit.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-07T07:06:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46456",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46367",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -285,15 +283,15 @@ Michael
 
 ---
 
-archive/issue_comments_046457.json:
+archive/issue_comments_046368.json:
 ```json
 {
     "body": "I just talked to Nicolas about the pickling problem; this is a shortcoming of the current\nunique representation patch and he will try to find a solution to the problem in patch 5120.",
     "created_at": "2009-05-08T00:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46457",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46368",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -304,15 +302,15 @@ unique representation patch and he will try to find a solution to the problem in
 
 ---
 
-archive/issue_comments_046458.json:
+archive/issue_comments_046369.json:
 ```json
 {
     "body": "Attachment [trac_5879-crystal-E-as.patch](tarball://root/attachments/some-uuid/ticket5879/trac_5879-crystal-E-as.patch) by @anneschilling created at 2009-05-08 00:57:04",
     "created_at": "2009-05-08T00:57:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46458",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46369",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -322,15 +320,15 @@ Attachment [trac_5879-crystal-E-as.patch](tarball://root/attachments/some-uuid/t
 
 ---
 
-archive/issue_comments_046459.json:
+archive/issue_comments_046370.json:
 ```json
 {
     "body": "The revised patch fixes the sgn versus comparison issue.\nThe pickling problem will hopefully be fixed by modifications in unique representations!",
     "created_at": "2009-05-08T00:59:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46459",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46370",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -341,15 +339,15 @@ The pickling problem will hopefully be fixed by modifications in unique represen
 
 ---
 
-archive/issue_comments_046460.json:
+archive/issue_comments_046371.json:
 ```json
 {
     "body": "Nicolas is about to submit a new version of patch #5120 which should fix the pickling problem Michael mentioned above. We checked this by hand, but Michael, could you run your automatic pickling tests again?",
     "created_at": "2009-05-08T21:37:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46460",
-    "user": "@anneschilling"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46371",
+    "user": "https://github.com/anneschilling"
 }
 ```
 
@@ -359,15 +357,15 @@ Nicolas is about to submit a new version of patch #5120 which should fix the pic
 
 ---
 
-archive/issue_comments_046461.json:
+archive/issue_comments_046372.json:
 ```json
 {
     "body": "Pickling seems fine and #5120 got a positive review.  So I reinstate the positive review.",
     "created_at": "2009-05-20T01:19:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46461",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46372",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -377,15 +375,15 @@ Pickling seems fine and #5120 got a positive review.  So I reinstate the positiv
 
 ---
 
-archive/issue_comments_046462.json:
+archive/issue_comments_046373.json:
 ```json
 {
     "body": "Merged in Sage 4.0.rc0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-21T00:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46462",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46373",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -399,15 +397,15 @@ Michael
 
 ---
 
-archive/issue_comments_046463.json:
+archive/issue_comments_046374.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-21T00:59:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5879",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46463",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/5879#issuecomment-46374",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

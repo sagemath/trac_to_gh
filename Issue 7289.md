@@ -6,15 +6,13 @@ archive/issues_007289.json:
     "body": "Assignee: @rlmill\n\nTHe multiway cut is a NP-complete problem which could be solved using Linear Programming, or a more efficient algorithm if possible.\n\nhttp://www.d.kth.se/~viggo/wwwcompendium/node92.html\n\nIssue created by migration from https://trac.sagemath.org/ticket/7289\n\n",
     "created_at": "2009-10-25T09:16:07Z",
     "labels": [
-        "graph theory",
-        "major",
-        "enhancement"
+        "component: graph theory"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Multiway cut",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7289",
-    "user": "@nathanncohen"
+    "user": "https://github.com/nathanncohen"
 }
 ```
 Assignee: @rlmill
@@ -31,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7289
 
 ---
 
-archive/issue_comments_060687.json:
+archive/issue_comments_060574.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-04-04T13:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60687",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60574",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -49,15 +47,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_060688.json:
+archive/issue_comments_060575.json:
 ```json
 {
     "body": "Here it is !!!\n\nNathann",
     "created_at": "2010-04-04T13:21:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60688",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60575",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -69,15 +67,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060689.json:
+archive/issue_comments_060576.json:
 ```json
 {
     "body": "Attachment [trac_7289-rebased.patch](tarball://root/attachments/some-uuid/ticket7289/trac_7289-rebased.patch) by @rlmill created at 2010-06-18 23:06:42",
     "created_at": "2010-06-18T23:06:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60689",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60576",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -87,15 +85,15 @@ Attachment [trac_7289-rebased.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_060690.json:
+archive/issue_comments_060577.json:
 ```json
 {
     "body": "Attachment [trac_7289-part2.patch](tarball://root/attachments/some-uuid/ticket7289/trac_7289-part2.patch) by @rlmill created at 2010-06-18 23:30:38\n\nLooks good to me.\n\nApply attachment:trac_7289-rebased.patch and attachment:trac_7289-part2.patch\n\nNathann, Can I get your approval for the second patch? Switch it to positive if you're happy with it.",
     "created_at": "2010-06-18T23:30:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60690",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60577",
+    "user": "https://github.com/rlmill"
 }
 ```
 
@@ -111,15 +109,15 @@ Nathann, Can I get your approval for the second patch? Switch it to positive if 
 
 ---
 
-archive/issue_comments_060691.json:
+archive/issue_comments_060578.json:
 ```json
 {
     "body": "I *am* happy with it ! Thankssssssssss !!\n\nNathann",
     "created_at": "2010-06-20T17:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60691",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60578",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -131,15 +129,15 @@ Nathann
 
 ---
 
-archive/issue_comments_060692.json:
+archive/issue_comments_060579.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-06-20T17:44:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60692",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60579",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -149,15 +147,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_060693.json:
+archive/issue_comments_060580.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-06-29T16:42:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7289",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60693",
-    "user": "@rlmill"
+    "url": "https://github.com/sagemath/sagetest/issues/7289#issuecomment-60580",
+    "user": "https://github.com/rlmill"
 }
 ```
 

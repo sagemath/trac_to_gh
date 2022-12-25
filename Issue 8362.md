@@ -6,7 +6,7 @@ archive/issues_008362.json:
     "body": "Assignee: @seblabbe\n\nCC:  nborie @nthiery\n\nThere is a typo in the doc of `cardinality` function.\n\nIssue created by migration from https://trac.sagemath.org/ticket/8362\n\n",
     "created_at": "2010-02-25T13:31:02Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "trivial",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008362.json:
     "title": "Fix typo in documentation of Disjoint Union of Enumerated Sets",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8362",
-    "user": "@seblabbe"
+    "user": "https://github.com/seblabbe"
 }
 ```
 Assignee: @seblabbe
@@ -31,15 +31,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8362
 
 ---
 
-archive/issue_comments_074717.json:
+archive/issue_comments_074593.json:
 ```json
 {
     "body": "I put my name in Cc as I really want to follow the status of this ticket.",
     "created_at": "2010-02-25T13:44:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74717",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74593",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -49,15 +49,15 @@ I put my name in Cc as I really want to follow the status of this ticket.
 
 ---
 
-archive/issue_comments_074718.json:
+archive/issue_comments_074594.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-02-25T13:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74718",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74594",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_074719.json:
+archive/issue_comments_074595.json:
 ```json
 {
     "body": "I post a patch, can somebody review it!?",
     "created_at": "2010-02-25T13:55:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74719",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74595",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -85,15 +85,15 @@ I post a patch, can somebody review it!?
 
 ---
 
-archive/issue_comments_074720.json:
+archive/issue_comments_074596.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-02-25T22:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74720",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74596",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -103,15 +103,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_074721.json:
+archive/issue_comments_074597.json:
 ```json
 {
     "body": "The commit message is nonsensical:\n\n```\n[mq]: trac_8362_doc_fix-sl.patch\n```\n\n**Note to release manager:** When merging the patch, qrefresh and replace the above message with a sensible commit message such as:\n\n```\n#8362: Fix typo in documentation of Disjoint Union of Enumerated Sets\n```\n",
     "created_at": "2010-02-26T01:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74721",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74597",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -132,15 +132,15 @@ The commit message is nonsensical:
 
 ---
 
-archive/issue_comments_074722.json:
+archive/issue_comments_074598.json:
 ```json
 {
     "body": "Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/ticket8362/trac_8362_doc_fix-sl.patch) by @seblabbe created at 2010-02-26 15:50:44",
     "created_at": "2010-02-26T15:50:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74722",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74598",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -150,15 +150,15 @@ Attachment [trac_8362_doc_fix-sl.patch](tarball://root/attachments/some-uuid/tic
 
 ---
 
-archive/issue_comments_074723.json:
+archive/issue_comments_074599.json:
 ```json
 {
     "body": "Replying to [comment:4 mvngu]:\n> The commit message is nonsensical:\n\nI just fixed the commit message. The release manager won't need to do it.\n\nS\u00e9bstien",
     "created_at": "2010-02-26T15:53:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74723",
-    "user": "@seblabbe"
+    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74599",
+    "user": "https://github.com/seblabbe"
 }
 ```
 
@@ -173,15 +173,15 @@ Sébstien
 
 ---
 
-archive/issue_comments_074724.json:
+archive/issue_comments_074600.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-03-02T22:22:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8362",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74724",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8362#issuecomment-74600",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

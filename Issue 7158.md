@@ -6,15 +6,14 @@ archive/issues_007158.json:
     "body": "Assignee: boothby\n\nCC:  @TimDumol @williamstein\n\nKeywords: sagenb captcha\n\nSee\n\n* [CAPTCHA](http://en.wikipedia.org/wiki/CAPTCHA)\n* [reCAPTCHA](http://recaptcha.net/)\n\nfor descriptions and examples.\n\nIssue created by migration from https://trac.sagemath.org/ticket/7158\n\n",
     "created_at": "2009-10-08T17:07:10Z",
     "labels": [
-        "notebook",
-        "minor",
-        "enhancement"
+        "component: notebook",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.2",
     "title": "SageNB -- Set up challenge-response, such as a CAPTCHA, for account registration",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7158",
-    "user": "@qed777"
+    "user": "https://github.com/qed777"
 }
 ```
 Assignee: boothby
@@ -38,15 +37,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7158
 
 ---
 
-archive/issue_comments_059309.json:
+archive/issue_comments_059197.json:
 ```json
 {
     "body": "Attachment [trac_7158-captcha.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha.patch) by @qed777 created at 2009-10-08 17:16:28\n\nAdd challenge-response to notebook registration page. Depends on #7110.",
     "created_at": "2009-10-08T17:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59309",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59197",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -58,15 +57,15 @@ Add challenge-response to notebook registration page. Depends on #7110.
 
 ---
 
-archive/issue_comments_059310.json:
+archive/issue_comments_059198.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2009-10-08T17:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59310",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59198",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -76,15 +75,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_059311.json:
+archive/issue_comments_059199.json:
 ```json
 {
     "body": "The attached patch, which depends \"somewhat\" (`twist.py`) on #7110, adds two challenge-response methods for new user registration:\n\n* Simple question and answer, e.g., \"How many bits are in one byte?\"\n* [reCAPTCHA](http://recaptcha.net/).\n\nThe code for both is in the new file `sagenb.notebook.challenge.py`.  I've also\n\n* Rewritten `twist.RegistrationPage` for linearity.\n* Modified `registration.html` and added the template `recaptcha.html`.\n* Added several options to `sagenb.notebook.server_conf.defaults`:\n\n```python\ndefaults = {\n             [...]\n             'email': True,\n             'challenge': True,\n             'challenge_type': 'simple',\n#             'challenge_type': 'recaptcha',\n             'recaptcha_public_key': '',\n             'recaptcha_private_key': '',\n            }\n```\n\n\nOne way to test the \"simple\" challenge, after applying the patch:\n\n* Backup `~/.sage`\n* Delete `~/.sage`\n* `sage`\n* `sage: import sagenb.notebook.notebook_object as n; n.notebook(accounts=True)`\n* Enter admin's password twice.\n* Browse to `http://localhost:8000`\n* Log out, if necessary, and click on \"Sign up for a new Sage Notebook account\".\n* Try to sign up for new accounts.\n\nTo test the \"recaptcha\" challenge, [sign up](http://recaptcha.net/whyrecaptcha.html) for a [reCAPTCHA](http://recaptcha.net/) key, update `server_conf.py`, and follow the steps above.",
     "created_at": "2009-10-08T17:38:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59311",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59199",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -129,15 +128,15 @@ To test the "recaptcha" challenge, [sign up](http://recaptcha.net/whyrecaptcha.h
 
 ---
 
-archive/issue_comments_059312.json:
+archive/issue_comments_059200.json:
 ```json
 {
     "body": "To do\n\n* Add the new `challenge` module to the reference manual.",
     "created_at": "2009-10-08T17:47:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59312",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59200",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -149,15 +148,15 @@ To do
 
 ---
 
-archive/issue_comments_059313.json:
+archive/issue_comments_059201.json:
 ```json
 {
     "body": "Reminder: Rebase against the outcome of #7196.",
     "created_at": "2009-10-12T18:40:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59313",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59201",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -167,15 +166,15 @@ Reminder: Rebase against the outcome of #7196.
 
 ---
 
-archive/issue_comments_059314.json:
+archive/issue_comments_059202.json:
 ```json
 {
     "body": "Rebased for #7196.  Added regexp test for simple challenge.  Apply only this patch.",
     "created_at": "2009-10-14T08:45:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59314",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59202",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -185,15 +184,15 @@ Rebased for #7196.  Added regexp test for simple challenge.  Apply only this pat
 
 ---
 
-archive/issue_comments_059315.json:
+archive/issue_comments_059203.json:
 ```json
 {
     "body": "Attachment [trac_7158-captcha_v2.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2.patch) by @qed777 created at 2009-10-14 08:49:42\n\nPatch v2:\n\n* Uses regular expressions to verify \"simple\" challenge responses.\n* Rebased against #7196.\n\nAs before, please edit `sagenb.notebook.server_conf.py` to set up and enable the new feature.",
     "created_at": "2009-10-14T08:49:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59315",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59203",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -210,15 +209,15 @@ As before, please edit `sagenb.notebook.server_conf.py` to set up and enable the
 
 ---
 
-archive/issue_comments_059316.json:
+archive/issue_comments_059204.json:
 ```json
 {
     "body": "Reminder: Fix doctests, e.g.,\n\n```\nsage: tmp = tmp_dir() \nsage: import sagenb.notebook.notebook as n \nsage: nb = n.Notebook(tmp) \n```\n\nbroken by the new `.sagenb` directory name requirement(?).",
     "created_at": "2009-10-14T11:52:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59316",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59204",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -236,15 +235,15 @@ broken by the new `.sagenb` directory name requirement(?).
 
 ---
 
-archive/issue_comments_059317.json:
+archive/issue_comments_059205.json:
 ```json
 {
     "body": "Attachment [trac_7158-captcha_v2-REFEREE.patch](tarball://root/attachments/some-uuid/ticket7158/trac_7158-captcha_v2-REFEREE.patch) by @williamstein created at 2009-10-17 05:57:43\n\napply this *after* applying trac_7158-captcha_v2.patch; it just makes a few minor changes I made during refereeing",
     "created_at": "2009-10-17T05:57:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59317",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59205",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -256,15 +255,15 @@ apply this *after* applying trac_7158-captcha_v2.patch; it just makes a few mino
 
 ---
 
-archive/issue_comments_059318.json:
+archive/issue_comments_059206.json:
 ```json
 {
     "body": "I refereed this.  All of it completely works precisely as advertised.  I fixed all the doctests as mentioned above in the \"broken by the new .sagenb directory name\" remark.  I also made the default dumb questions dumber, so as not to discourage new users by default.   In my experience any measure at all is enough to prevent spammers, but one will definitely use real reCaptcha (which is easy to setup and works well) in any serious setting.   Very nice!  I love how this patch really provides a solid mature feature to the notebook.  \n\nIt's critically important that usage of this is documented and that we make a notebook server settings page that can configure all this stuff.  I had no clue how to configure these things, except for the very helpful directions on this trac ticket (which were excellent). \n\nThis is merged into sagenb-0.3.2 as part of sage-4.2",
     "created_at": "2009-10-17T06:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59318",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59206",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -278,15 +277,15 @@ This is merged into sagenb-0.3.2 as part of sage-4.2
 
 ---
 
-archive/issue_comments_059319.json:
+archive/issue_comments_059207.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-10-17T06:01:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7158",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59319",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/7158#issuecomment-59207",
+    "user": "https://github.com/williamstein"
 }
 ```
 

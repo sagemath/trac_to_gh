@@ -6,15 +6,14 @@ archive/issues_009144.json:
     "body": "Assignee: jason, was\n\nCC:  @fchapoton\n\nIf we did this, then we could maybe just eliminate the \"Print\" button?  I don't know; maybe.\n\nSee http://groups.google.com/group/sage-devel/browse_frm/thread/98969b6b9035bf6d/3c5d4c2647e974b7 for a discussion of how to do this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9144\n\n",
     "created_at": "2010-06-05T03:40:03Z",
     "labels": [
-        "notebook",
-        "major",
+        "component: notebook",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "Make printing automatically load a print stylesheet",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9144",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: jason, was
@@ -33,15 +32,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9144
 
 ---
 
-archive/issue_comments_085389.json:
+archive/issue_comments_085252.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2010-06-05T03:40:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85389",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85252",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -51,15 +50,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_085390.json:
+archive/issue_comments_085253.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2020-08-18T00:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85390",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85253",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -69,15 +68,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_085391.json:
+archive/issue_comments_085254.json:
 ```json
 {
     "body": "Proposing to close all sagenb tickets as outdated, so that all remaining open tickets in the notebook component are about the Jupyter notebook.",
     "created_at": "2020-08-18T00:36:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85391",
-    "user": "@mkoeppe"
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85254",
+    "user": "https://github.com/mkoeppe"
 }
 ```
 
@@ -87,15 +86,15 @@ Proposing to close all sagenb tickets as outdated, so that all remaining open ti
 
 ---
 
-archive/issue_comments_085392.json:
+archive/issue_comments_085255.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2020-08-25T09:24:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85392",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85255",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -105,15 +104,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_085393.json:
+archive/issue_comments_085256.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2020-08-27T08:43:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9144",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85393",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/9144#issuecomment-85256",
+    "user": "https://github.com/fchapoton"
 }
 ```
 

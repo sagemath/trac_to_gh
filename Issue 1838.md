@@ -6,15 +6,14 @@ archive/issues_001838.json:
     "body": "Assignee: cwitty\n\nnormally, after writing a \",\" follows a space. latex needs this explicitly as \"\\,\"\n\nIssue created by migration from https://trac.sagemath.org/ticket/1838\n\n",
     "created_at": "2008-01-18T21:45:02Z",
     "labels": [
-        "misc",
-        "trivial",
-        "enhancement"
+        "component: misc",
+        "trivial"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "[with patch] comma in latex lists need a trailing space",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1838",
-    "user": "@haraldschilly"
+    "user": "https://github.com/haraldschilly"
 }
 ```
 Assignee: cwitty
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1838
 
 ---
 
-archive/issue_comments_011634.json:
+archive/issue_comments_011605.json:
 ```json
 {
     "body": "Attachment [latex-lists-and-tables-with-a-space-after-the-comma.diff](tarball://root/attachments/some-uuid/ticket1838/latex-lists-and-tables-with-a-space-after-the-comma.diff) by @haraldschilly created at 2008-01-18 21:45:50",
     "created_at": "2008-01-18T21:45:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11634",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11605",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [latex-lists-and-tables-with-a-space-after-the-comma.diff](tarball://
 
 ---
 
-archive/issue_comments_011635.json:
+archive/issue_comments_011606.json:
 ```json
 {
     "body": "This seems strange -- I never use explicit spaces (\"\\,\") in latex, preferring the system to do the layout as it sees best.  Is this really necessary?\n\nAlso, I can't believe this doesn't touch lots of doctests throughout the system.  It also has no doctests.",
     "created_at": "2008-01-22T18:10:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11635",
-    "user": "@ncalexan"
+    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11606",
+    "user": "https://github.com/ncalexan"
 }
 ```
 
@@ -67,15 +66,15 @@ Also, I can't believe this doesn't touch lots of doctests throughout the system.
 
 ---
 
-archive/issue_comments_011636.json:
+archive/issue_comments_011607.json:
 ```json
 {
     "body": "well, i just thought this could be an easy fix without dependencies. i don't know where the doctests for latex expressions are, i have to look at them.\n\nlatex doesn't do it the right way. it just does what it is told to do but has no intelligence and white space is ignored inside formulas. that's why packages like amsmath redefine a lot, or introduce new commands for rather normal things (dots, triple integrals, ...). they all do a lot of \"intelligent\" white space management. an also well known example are matrices, where it defines the pmatrix environment. there all the spacings are corrected with negative spaces. or you need a \"\\;\" after the inner part before the \"dx\" when you type an integral. \n\nso, you have to do something but it's not crucial. trusting latex doesn't do the job.",
     "created_at": "2008-01-22T20:57:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11636",
-    "user": "@haraldschilly"
+    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11607",
+    "user": "https://github.com/haraldschilly"
 }
 ```
 
@@ -89,15 +88,15 @@ so, you have to do something but it's not crucial. trusting latex doesn't do the
 
 ---
 
-archive/issue_comments_011637.json:
+archive/issue_comments_011608.json:
 ```json
 {
     "body": "I don't think the \"right way\" is well defined--without the explicit space there is a bit more space after a comma than before, but just barely, and I think it looks fine. \n\nUnless things look really bad, I think we should error on the side of producing the cleanest, simplest latex--as something to avoid just look at the state of auto-generated HTML that tries to be faithful to a given WYSIWYG editor.",
     "created_at": "2008-01-23T04:00:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11637",
-    "user": "@robertwb"
+    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11608",
+    "user": "https://github.com/robertwb"
 }
 ```
 
@@ -109,15 +108,15 @@ Unless things look really bad, I think we should error on the side of producing 
 
 ---
 
-archive/issue_comments_011638.json:
+archive/issue_comments_011609.json:
 ```json
 {
     "body": "I don't think we want this patch at all.  While LaTeX does sometimes need some help with spacing, I've never heard of this being one of the problem cases.  Since Nick, Robert, and I agree (I think), I'm closing this bug as invalid for now.\n\nFeel free to reopen it if you get some more support for your position (like an example that looks a lot better with the spacing than without, or a style guide that requires the spacing).",
     "created_at": "2008-01-29T00:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11638",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11609",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 
@@ -129,15 +128,15 @@ Feel free to reopen it if you get some more support for your position (like an e
 
 ---
 
-archive/issue_comments_011639.json:
+archive/issue_comments_011610.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-01-29T00:02:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1838",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11639",
-    "user": "cwitty"
+    "url": "https://github.com/sagemath/sagetest/issues/1838#issuecomment-11610",
+    "user": "https://trac.sagemath.org/admin/accounts/users/cwitty"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002607.json:
     "body": "Assignee: @williamstein\n\nCC:  @robert-marik @kcrisman\n\nThis was reported by Dean Moore on sage-support.  Consider:\n\n\n```\nsage: f(x) = -x*sin(x^2)\nsage: f.find_minimum_on_interval(-2.5, 2)\n(-1.3076194129914434, 1.35521114057)\nsage: f.find_minimum_on_interval(-2.5, -1)\n(-2.1827697846777219, -2.19450274985)\n```\n\n\nSo find_minimum_on_interval() returns a local minimum as opposed to the global one.  (The same issue applies to find_maximum_on_interval.)  This is due to the fact that the function wraps scipy.optimize.fminbound, which is only a local optimizer (Carl Witty pointed this out).  We should instead use one of the global optimizers, i.e. scipy.optimize.anneal or scipy.optimize.brute.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2607\n\n",
     "created_at": "2008-03-19T22:17:25Z",
     "labels": [
-        "calculus",
-        "major",
+        "component: calculus",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.3",
     "title": "find_minimum_on_interval() uses the wrong scipy function",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2607",
-    "user": "@aghitza"
+    "user": "https://github.com/aghitza"
 }
 ```
 Assignee: @williamstein
@@ -43,15 +42,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2607
 
 ---
 
-archive/issue_comments_017818.json:
+archive/issue_comments_017780.json:
 ```json
 {
     "body": "Changing component from calculus to numerical.",
     "created_at": "2008-08-31T14:30:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17818",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17780",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -61,15 +60,15 @@ Changing component from calculus to numerical.
 
 ---
 
-archive/issue_comments_017819.json:
+archive/issue_comments_017781.json:
 ```json
 {
     "body": "Changing component from numerical to calculus.",
     "created_at": "2008-08-31T15:08:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17819",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17781",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -79,15 +78,15 @@ Changing component from numerical to calculus.
 
 ---
 
-archive/issue_comments_017820.json:
+archive/issue_comments_017782.json:
 ```json
 {
     "body": "It seems that there are two global optimizers in scipy: scipy.optimize.anneal and scipy.optimize.brute. Does anybody more experienced in numerics know, which one is better for including into Sage?",
     "created_at": "2010-08-25T21:24:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17820",
-    "user": "@robert-marik"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17782",
+    "user": "https://github.com/robert-marik"
 }
 ```
 
@@ -97,15 +96,15 @@ It seems that there are two global optimizers in scipy: scipy.optimize.anneal an
 
 ---
 
-archive/issue_comments_017821.json:
+archive/issue_comments_017783.json:
 ```json
 {
     "body": "Robert, that sounds like a great question for either sage-devel or the scipy list.",
     "created_at": "2010-08-25T22:28:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17821",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17783",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -115,15 +114,15 @@ Robert, that sounds like a great question for either sage-devel or the scipy lis
 
 ---
 
-archive/issue_comments_017822.json:
+archive/issue_comments_017784.json:
 ```json
 {
     "body": "This [Scipy tutorial page](http://docs.scipy.org/doc/scipy/reference/tutorial/optimize.html) should be relevant.  I will try to resolve this soon.",
     "created_at": "2011-06-15T21:56:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17822",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17784",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -133,15 +132,15 @@ This [Scipy tutorial page](http://docs.scipy.org/doc/scipy/reference/tutorial/op
 
 ---
 
-archive/issue_comments_017823.json:
+archive/issue_comments_017785.json:
 ```json
 {
     "body": "Changing keywords from \"\" to \"sd31\".",
     "created_at": "2011-06-15T21:56:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17823",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17785",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -151,15 +150,15 @@ Changing keywords from "" to "sd31".
 
 ---
 
-archive/issue_comments_017824.json:
+archive/issue_comments_017786.json:
 ```json
 {
     "body": "#5960 was a dup.   Here are the examples from there.\n\n```\nsage: h(x) =  -sin(x) - 2*sin(2*x)\nsage: h.find_minimum_on_interval(0, 2*pi)\n(-1.3271810224585345, 3.8298351449342838)\nBut there is another local minimum at h(0.8666760871050464) = -2.73581510406\n\n\nsage: find_minimum_on_interval(x*(x-1)*(x+1), -2, 2)\n(-0.38490017945975047, 0.57735026913115706)\nThe minimum on this interval is the endpoint h(-2) = 6.\n\n\nsage: find_minimum_on_interval((x-2)*(x-1)*x*(x+1) - x, -2, 2)\n(-0.43749999999999994, -0.49999999973911674)\n\nbut\nsage: find_minimum_on_interval((x-2)*(x-1)*x*(x+1) - x, 0, 2)\n(-2.6642135623730949, 1.7071067879138031)\n```\n",
     "created_at": "2011-06-16T00:07:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17824",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17786",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -190,15 +189,15 @@ sage: find_minimum_on_interval((x-2)*(x-1)*x*(x+1) - x, 0, 2)
 
 ---
 
-archive/issue_comments_017825.json:
+archive/issue_comments_017787.json:
 ```json
 {
     "body": "The `brent` algorithm will also not work.\n\n```\nTriple (a,b,c) where (a<b<c) and func(b) < func(a),func(c). If bracket consists of two numbers (a,c) then they are assumed to be a starting interval for a downhill bracket search (see bracket); it doesn\u2019t always mean that the obtained solution will satisfy a<=x<=c.\n```\n\nWhich is not the same as constrained minimization, for us.",
     "created_at": "2011-06-16T00:12:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17825",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17787",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -214,15 +213,15 @@ Which is not the same as constrained minimization, for us.
 
 ---
 
-archive/issue_comments_017826.json:
+archive/issue_comments_017788.json:
 ```json
 {
     "body": "It seems like finding a local minimum might be the best you can hope for with a general function. Wouldn't finding an absolute minimum (on an interval) be intractable unless you can exploit some special structure of the function?",
     "created_at": "2011-06-16T00:18:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17826",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17788",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -232,15 +231,15 @@ It seems like finding a local minimum might be the best you can hope for with a 
 
 ---
 
-archive/issue_comments_017827.json:
+archive/issue_comments_017789.json:
 ```json
 {
     "body": "Answering the question first...\n\nSure, but it would be nice if we at least got the 'right' answer for 'easy' functions.  That's all I'm looking for here, not things like finding a minimum on a set of measure zero...\n\n----\n\n\nI think we can fix Brent to use this.  Compare:\n\n```\nsage: optimize.fminbound(h._fast_float_(x),0,6,full_output=True)\n(3.8298366870225147, -1.327181022449951, 0, 10)\nsage: optimize.fminbound(h._fast_float_(x),0,3,full_output=True)\n(0.86667541098916612, -2.7358151040622416, 0, 9)\nsage: optimize.brent(h._fast_float_(x),brack=(0,6),full_output=True)\n(0.86667608708813437, -2.73581510406422, 11, 12)\n```\n\nThis shows that brent does give the 'right' answer in this case.   So when does it give a 'wrong' answer?\n\n```\nsage: j(x) = sin(x)\nsage: optimize.brent(j._fast_float_(x),brack=(0,6),full_output=True)\n(10.995574367047061, -0.99999999999999689, 10, 11)\nsage: 3.5*pi.n()\n10.9955742875643\n```\n\nWell, of course - there IS no calculus-style minimum of sin between 0 and pi!  Only a minimum relative to the interval itself.  Interesting that it goes all the way to 7/2*pi, rather than 3/2*pi, but oh well!\n\nSo the fix is to switch to Brent, and then if it gives an answer outside the interval, pick the 'lower' endpoint.  This would need lots of testing with well-behaved functions to make sure they actually work correctly.",
     "created_at": "2011-06-16T00:26:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17827",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17789",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -280,15 +279,15 @@ So the fix is to switch to Brent, and then if it gives an answer outside the int
 
 ---
 
-archive/issue_comments_017828.json:
+archive/issue_comments_017790.json:
 ```json
 {
     "body": "Changing assignee from @williamstein to @jicama.",
     "created_at": "2011-06-16T00:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17828",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17790",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -298,15 +297,15 @@ Changing assignee from @williamstein to @jicama.
 
 ---
 
-archive/issue_comments_017829.json:
+archive/issue_comments_017791.json:
 ```json
 {
     "body": "But how will you explain to users which functions are 'easy', and when they should expect to get the 'right' answer? I think it's better design to just change the contract of this function to admit that it is only looking for local minima.",
     "created_at": "2011-06-16T00:58:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17829",
-    "user": "@jicama"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17791",
+    "user": "https://github.com/jicama"
 }
 ```
 
@@ -316,15 +315,15 @@ But how will you explain to users which functions are 'easy', and when they shou
 
 ---
 
-archive/issue_comments_017830.json:
+archive/issue_comments_017792.json:
 ```json
 {
     "body": "It doesn't matter.  Or, at worst, we add some documentation to clarify that.  \n\nThe reason it doesn't matter is that this is still *better* than the other.  Unless you can produce some (natural) examples where optimize.brent does the same.  \n\nThe Scipy documentation is not 100% clear on what is done, and it's conceivable they are the same.  It's certainly possible that in fact using optimize.brent in the way I'm suggesting would be just as 'bad' as the previous one, or even essentially equivalent.  But it would be nice to have an explicit example of this before we resort to that.",
     "created_at": "2011-06-16T01:06:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17830",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17792",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -338,15 +337,15 @@ The Scipy documentation is not 100% clear on what is done, and it's conceivable 
 
 ---
 
-archive/issue_comments_017831.json:
+archive/issue_comments_017793.json:
 ```json
 {
     "body": "Here's another example where `brent` does better.\n\n```\nsage: j(x) = sin(x^8)-.1*x\nsage: optimize.brent(j._fast_float_(x),brack=(0,2),full_output=True)\n(2.0000389609484905, -1.2000038913452364, 22, 23)\nsage: optimize.fminbound(j._fast_float_(x),0,2,full_output=True)\n(1.5288339777087034, -1.152883200877608, 0, 16)\n```\n\nOf course, this does cause problems for my supposed algorithm to then go back to an endpoint, since it's *just* outside of it...",
     "created_at": "2011-06-16T01:10:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17831",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17793",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -366,15 +365,15 @@ Of course, this does cause problems for my supposed algorithm to then go back to
 
 ---
 
-archive/issue_comments_017832.json:
+archive/issue_comments_017794.json:
 ```json
 {
     "body": "I just ran into this bug with the following input:\n\n```\n   find_maximum_on_interval(fast_float(8*e^(-x)*sin(x) - 1, x), 0, 8)\n    (1.5791755355586754, 0.78539817769603915)\n\n    find_maximum_on_interval(fast_float(8*e^(-x)*sin(x) - 1, x), 0, 9)\n    (-0.9951835373923219, 7.0685835435476418)\n```\n\n...and was truly surprised that `find_maximum_on_interval` is not monotonic (in the sense that a bigger interval should always give a (weakly) bigger maximum)!\n\nAt the VERY LEAST, we should fix the documentation to specify that this finds *local* extrema, and perhaps change the name of the function, too, since it does *not* always find the actual maximum value on the interval!\n\nNote that one strange workaround is to simply plot the function; something like:\n\n```\ndef find_maximum_on_interval(f, a, b):\n    return plot(f, a, b).ymax()\n```\n\nseems like it would be pretty effective, despite being inelegant and crude!",
     "created_at": "2012-04-23T01:57:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17832",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17794",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -405,15 +404,15 @@ seems like it would be pretty effective, despite being inelegant and crude!
 
 ---
 
-archive/issue_comments_017833.json:
+archive/issue_comments_017795.json:
 ```json
 {
     "body": "Changing keywords from \"sd31\" to \"sd31, sd40.5\".",
     "created_at": "2012-05-25T00:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17833",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17795",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -423,15 +422,15 @@ Changing keywords from "sd31" to "sd31, sd40.5".
 
 ---
 
-archive/issue_comments_017834.json:
+archive/issue_comments_017796.json:
 ```json
 {
     "body": "Patch up, please review. I have just changed the documentation and added some suggestions for a workaround using `plot(...).ymin()`. I think we should at least merge something like this right away and worry about fixing the algorithm later.",
     "created_at": "2012-05-25T00:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17834",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17796",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -441,15 +440,15 @@ Patch up, please review. I have just changed the documentation and added some su
 
 ---
 
-archive/issue_comments_017835.json:
+archive/issue_comments_017797.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2012-05-25T00:47:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17835",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17797",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -459,15 +458,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_017836.json:
+archive/issue_comments_017798.json:
 ```json
 {
     "body": "Suggestions in person about how to further enhance the messages in documentation.  Thank you so much for doing this - don't forget to open a followup ticket.",
     "created_at": "2012-05-25T00:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17836",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17798",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -477,15 +476,15 @@ Suggestions in person about how to further enhance the messages in documentation
 
 ---
 
-archive/issue_comments_017837.json:
+archive/issue_comments_017799.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2012-05-25T00:55:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17837",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17799",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -495,15 +494,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_017838.json:
+archive/issue_comments_017800.json:
 ```json
 {
     "body": "I fixed the versions of this function in `symbolic.expression` to specify that they call the `numerical.optimize` version. Please check the documentation; I looked at the bare html, but am working remotely and haven't viewed the result.",
     "created_at": "2012-05-25T02:42:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17838",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17800",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -513,15 +512,15 @@ I fixed the versions of this function in `symbolic.expression` to specify that t
 
 ---
 
-archive/issue_comments_017839.json:
+archive/issue_comments_017801.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-05-25T02:42:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17839",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17801",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -531,15 +530,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017840.json:
+archive/issue_comments_017802.json:
 ```json
 {
     "body": "The whitespace patch removes trailing whitespace (and tabs! **TABS**!) from the relevant source files.",
     "created_at": "2012-05-25T03:34:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17840",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17802",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -549,15 +548,15 @@ The whitespace patch removes trailing whitespace (and tabs! **TABS**!) from the 
 
 ---
 
-archive/issue_comments_017841.json:
+archive/issue_comments_017803.json:
 ```json
 {
     "body": "Needs work for sentence that doesn't end and `:trac:` thing...",
     "created_at": "2012-05-25T03:50:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17841",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17803",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -567,15 +566,15 @@ Needs work for sentence that doesn't end and `:trac:` thing...
 
 ---
 
-archive/issue_comments_017842.json:
+archive/issue_comments_017804.json:
 ```json
 {
     "body": "apply to Sage library",
     "created_at": "2012-05-25T05:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17842",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17804",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -585,15 +584,15 @@ apply to Sage library
 
 ---
 
-archive/issue_comments_017843.json:
+archive/issue_comments_017805.json:
 ```json
 {
     "body": "Attachment [trac2607.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607.patch) by @dandrake created at 2012-05-25 05:35:39\n\nAdd a \"...\" to fix doctest on OS X.",
     "created_at": "2012-05-25T05:35:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17843",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17805",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -605,15 +604,15 @@ Add a "..." to fix doctest on OS X.
 
 ---
 
-archive/issue_comments_017844.json:
+archive/issue_comments_017806.json:
 ```json
 {
     "body": "should `trac2607.2.patch` be removed?\n\nPaul",
     "created_at": "2012-05-25T07:46:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17844",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17806",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -625,15 +624,15 @@ Paul
 
 ---
 
-archive/issue_comments_017845.json:
+archive/issue_comments_017807.json:
 ```json
 {
     "body": "after applying both patches on Sage 5.0, I still get:\n\n```\nsage: f(x) = -x*sin(x^2)                 \nsage: f.find_minimum_on_interval(-2.5, 2)\n(-1.3076194129914434, 1.3552111405712108)\n```\n\nDid I something wrong?\n\nPaul",
     "created_at": "2012-05-25T08:03:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17845",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17807",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -653,15 +652,15 @@ Paul
 
 ---
 
-archive/issue_comments_017846.json:
+archive/issue_comments_017808.json:
 ```json
 {
     "body": "The patch doesn't change the behaviour, it only warns the user that it only returns some local minimum.",
     "created_at": "2012-05-25T13:15:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17846",
-    "user": "dsm"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17808",
+    "user": "https://trac.sagemath.org/admin/accounts/users/dsm"
 }
 ```
 
@@ -671,15 +670,15 @@ The patch doesn't change the behaviour, it only warns the user that it only retu
 
 ---
 
-archive/issue_comments_017847.json:
+archive/issue_comments_017809.json:
 ```json
 {
     "body": "Replying to [comment:25 dsm]:\n> The patch doesn't change the behaviour, it only warns the user that it only returns some local minimum.\n\nthen I don't get any warning (see comment [comment:24]).\n\nPaul",
     "created_at": "2012-05-25T13:23:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17847",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17809",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -694,15 +693,15 @@ Paul
 
 ---
 
-archive/issue_comments_017848.json:
+archive/issue_comments_017810.json:
 ```json
 {
     "body": "`@`dsm: Correct, and we HAVE to open a new ticket to get something better eventually.  But that turns out to be hard with the current tools.\n\nHmm, maybe Paul is suggesting we should use the new \"system warning that you won't get what you think/mathematically correct result\" in Sage whose name I forget?  Paul, the warning is just in the documentation, not the function itself.\n\nI also have a tiny change to this so that the documentation looks better coming up.",
     "created_at": "2012-05-25T13:26:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17848",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17810",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -716,15 +715,15 @@ I also have a tiny change to this so that the documentation looks better coming 
 
 ---
 
-archive/issue_comments_017849.json:
+archive/issue_comments_017811.json:
 ```json
 {
     "body": "Actually, if we need to do more along the lines of warnings, I'll just put it here.  The point is the tilde, as opposed to having the big long thing show up in the doc (while still telling people that it's in another place, which I imagine was the point of not having the tilde before).\n\n```\n-Uses :func:`sage.numerical.optimize.find_minimum_on_interval`\n+Uses the :func:`~sage.numerical.optimize.find_minimum_on_interval`\n+function in the numerical optimization module of Sage.\n```\n",
     "created_at": "2012-05-25T13:29:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17849",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17811",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -741,15 +740,15 @@ Actually, if we need to do more along the lines of warnings, I'll just put it he
 
 ---
 
-archive/issue_comments_017850.json:
+archive/issue_comments_017812.json:
 ```json
 {
     "body": "Karl-Dieter, you mean the \"stopgap\" mechanism?\n\nPaul",
     "created_at": "2012-05-25T14:10:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17850",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17812",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -761,15 +760,15 @@ Paul
 
 ---
 
-archive/issue_comments_017851.json:
+archive/issue_comments_017813.json:
 ```json
 {
     "body": "I think so.  I've not yet used it, so I don't know if it would be appropriate here.",
     "created_at": "2012-05-25T14:22:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17851",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17813",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -779,15 +778,15 @@ I think so.  I've not yet used it, so I don't know if it would be appropriate he
 
 ---
 
-archive/issue_comments_017852.json:
+archive/issue_comments_017814.json:
 ```json
 {
     "body": "Replying to [comment:23 zimmerma]:\n> should `trac2607.2.patch` be removed?\n\nYes. Or simply ignored.\n\nReplying to [comment:26 zimmerma]:\n> then I don't get any warning\n\nThe warning is in the documentation, which isn't the best...but it's better than right now, where it's impossible to figure out without reading a lot of code. There will, of course, be a followup ticket that actually fixes the functionality.",
     "created_at": "2012-05-25T15:42:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17852",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17814",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -805,15 +804,15 @@ The warning is in the documentation, which isn't the best...but it's better than
 
 ---
 
-archive/issue_comments_017853.json:
+archive/issue_comments_017815.json:
 ```json
 {
     "body": "I'm not in favour of giving a positive review, since the proposed patch does not solve the problem described in the description of that ticket.\n\nPaul",
     "created_at": "2012-05-25T18:14:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17853",
-    "user": "@zimmermann6"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17815",
+    "user": "https://github.com/zimmermann6"
 }
 ```
 
@@ -825,15 +824,15 @@ Paul
 
 ---
 
-archive/issue_comments_017854.json:
+archive/issue_comments_017816.json:
 ```json
 {
     "body": "Replying to [comment:32 zimmerma]:\n> I'm not in favour of giving a positive review, since the proposed patch does not solve the problem described in the description of that ticket.\n\nFair enough. However, no one is offerring a fix to the code; it looks like we are going to change the documentation, and then later fix the actual function. This will require two tickets. We could use this ticket for the documentation and a new ticket for the code, or vice versa. We can change the description of this ticket if we want.\n\nThe exact way we do this doesn't seem very important to me, as long as we fix the documentation and later fix the code. If you would like to make a new ticket and move attachment:trac2607.patch and attachment:trac2607-whitespace.patch over, that's fine.",
     "created_at": "2012-05-25T22:09:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17854",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17816",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -848,15 +847,15 @@ The exact way we do this doesn't seem very important to me, as long as we fix th
 
 ---
 
-archive/issue_comments_017855.json:
+archive/issue_comments_017817.json:
 ```json
 {
     "body": "It seems reasonable to me to fix the docs now, add `stopgap`, and open a new ticket to address the global / local optimization issue; especially given how old this ticket is. In this case the added documentation that refers to \"See :trac:`2607`\" should be updated to point to the new ticket.",
     "created_at": "2012-05-26T02:56:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17855",
-    "user": "@benjaminfjones"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17817",
+    "user": "https://github.com/benjaminfjones"
 }
 ```
 
@@ -866,15 +865,15 @@ It seems reasonable to me to fix the docs now, add `stopgap`, and open a new tic
 
 ---
 
-archive/issue_comments_017856.json:
+archive/issue_comments_017818.json:
 ```json
 {
     "body": "Here's a relevant sage-support thread, showing some other problems with these functions: https://groups.google.com/forum/#!topic/sage-support/KCjW5QlB_sA",
     "created_at": "2012-05-26T17:37:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17856",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17818",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -884,15 +883,15 @@ Here's a relevant sage-support thread, showing some other problems with these fu
 
 ---
 
-archive/issue_comments_017857.json:
+archive/issue_comments_017819.json:
 ```json
 {
     "body": "patchbot: apply trac2607.patch trac2607-whitespace.patch",
     "created_at": "2012-05-26T19:54:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17857",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17819",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -902,15 +901,15 @@ patchbot: apply trac2607.patch trac2607-whitespace.patch
 
 ---
 
-archive/issue_comments_017858.json:
+archive/issue_comments_017820.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2012-05-27T05:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17858",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17820",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -920,15 +919,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_017859.json:
+archive/issue_comments_017821.json:
 ```json
 {
     "body": "I talked to Dan and plan to write the following patch:\n* rename this functions to clearly mark that they compute local extrema;\n* keep old names with deprecation warning and explanation of their behaviour.\n\nWill do it on top of the current patches, so no changes please!",
     "created_at": "2012-05-27T05:07:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17859",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17821",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -942,15 +941,15 @@ Will do it on top of the current patches, so no changes please!
 
 ---
 
-archive/issue_comments_017860.json:
+archive/issue_comments_017822.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-05-27T05:40:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17860",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17822",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -960,15 +959,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017861.json:
+archive/issue_comments_017823.json:
 ```json
 {
     "body": "Apply trac2607.patch trac2607-whitespace.patch trac_2607_renaming.patch",
     "created_at": "2012-05-27T05:40:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17861",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17823",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -978,15 +977,15 @@ Apply trac2607.patch trac2607-whitespace.patch trac_2607_renaming.patch
 
 ---
 
-archive/issue_comments_017862.json:
+archive/issue_comments_017824.json:
 ```json
 {
     "body": "According to the patchbot, these patches introduce some trailing whitespace :-)  Otherwise, it looks good to me.",
     "created_at": "2012-05-28T19:41:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17862",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17824",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -996,15 +995,15 @@ According to the patchbot, these patches introduce some trailing whitespace :-) 
 
 ---
 
-archive/issue_comments_017863.json:
+archive/issue_comments_017825.json:
 ```json
 {
     "body": "Given how many whitespaces were removed, I think these are fine to go...",
     "created_at": "2012-05-28T19:44:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17863",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17825",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1014,15 +1013,15 @@ Given how many whitespaces were removed, I think these are fine to go...
 
 ---
 
-archive/issue_comments_017864.json:
+archive/issue_comments_017826.json:
 ```json
 {
     "body": "Okay, sounds good to me.  Everything looks good.",
     "created_at": "2012-05-28T21:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17864",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17826",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1032,15 +1031,15 @@ Okay, sounds good to me.  Everything looks good.
 
 ---
 
-archive/issue_comments_017865.json:
+archive/issue_comments_017827.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-05-28T21:10:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17865",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17827",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -1050,15 +1049,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_017866.json:
+archive/issue_comments_017828.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2012-06-01T09:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17866",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17828",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1068,15 +1067,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_017867.json:
+archive/issue_comments_017829.json:
 ```json
 {
     "body": "Why [attachment:trac2607-whitespace.patch]?  These kind of patches are very annoying for rebasing.  Removing whitespace *from code which you change* is fine (and even encouraged!), simply removing whitespace all over the place is bad.",
     "created_at": "2012-06-01T09:38:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17867",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17829",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1086,15 +1085,15 @@ Why [attachment:trac2607-whitespace.patch]?  These kind of patches are very anno
 
 ---
 
-archive/issue_comments_017868.json:
+archive/issue_comments_017830.json:
 ```json
 {
     "body": "Hi Jeroen, this patch removes some surprising TABs and I already rebased another patch on top of this whitespace removal, so maybe we can leave it... (Although in general I agree that meddling with whitespaces only complicates life and perhaps patchbot plugin was not such a great idea.)",
     "created_at": "2012-06-01T21:24:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17868",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17830",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1104,15 +1103,15 @@ Hi Jeroen, this patch removes some surprising TABs and I already rebased another
 
 ---
 
-archive/issue_comments_017869.json:
+archive/issue_comments_017831.json:
 ```json
 {
     "body": "What's wrong with the patchbot plugin? It only checks whether you added new trailing whitespace. I'm pretty sure everyone agrees you should at least try to avoid doing that.",
     "created_at": "2012-06-01T22:22:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17869",
-    "user": "@kini"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17831",
+    "user": "https://github.com/kini"
 }
 ```
 
@@ -1122,15 +1121,15 @@ What's wrong with the patchbot plugin? It only checks whether you added new trai
 
 ---
 
-archive/issue_comments_017870.json:
+archive/issue_comments_017832.json:
 ```json
 {
     "body": "Replying to [comment:44 kini]:\n> What's wrong with the patchbot plugin? It only checks whether you added new trailing whitespace. I'm pretty sure everyone agrees you should at least try to avoid doing that.\n\nThe problem is that some people get too eager to remove whitespace or insist on patchbot not showing any whitespace mistakes while others don't want to work on new patches if whitespaces are the only issue, and I cannot blame them. I am pretty sure that nobody adds whitespaces on purpose, but having some is not such a problem. Perhaps limiting the overall line length would be better. By the way - will the switch to git help somehow with whitespaces and patches that have conflicts because of them only?",
     "created_at": "2012-06-01T22:37:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17870",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17832",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1143,15 +1142,15 @@ The problem is that some people get too eager to remove whitespace or insist on 
 
 ---
 
-archive/issue_comments_017871.json:
+archive/issue_comments_017833.json:
 ```json
 {
     "body": "In any case, this should be rebased to #12950.",
     "created_at": "2012-06-01T22:51:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17871",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17833",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1161,15 +1160,15 @@ In any case, this should be rebased to #12950.
 
 ---
 
-archive/issue_comments_017872.json:
+archive/issue_comments_017834.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-06-07T04:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17872",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17834",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -1179,15 +1178,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017873.json:
+archive/issue_comments_017835.json:
 ```json
 {
     "body": "The new whitespace patch now only affects the relevant functions and removes a couple tabs from `expression.pyx`. It's far less invasive. All three relevant patches apply to 5.1.beta2.",
     "created_at": "2012-06-07T04:55:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17873",
-    "user": "@dandrake"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17835",
+    "user": "https://github.com/dandrake"
 }
 ```
 
@@ -1197,15 +1196,15 @@ The new whitespace patch now only affects the relevant functions and removes a c
 
 ---
 
-archive/issue_comments_017874.json:
+archive/issue_comments_017836.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-06-07T20:38:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17874",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17836",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1215,15 +1214,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_017875.json:
+archive/issue_comments_017837.json:
 ```json
 {
     "body": "If in this ticket find_maximum_on_interval is renamed to find_local_maximum_on_interval, why not use the change to name it just find_local_maximum and keep it consistent with find_root? After all they both work same:\n\n\n```\nfind_root(f, a, b)\nfind_local_maximum(f, a, b)\n```\n\n\nfind_local_maximum_on_interval is 31 characters long, I think that such long names become hard to type. I know, it works on interval, but find_root also looks for root on [a,b] and isn't called find_root_on_interval.",
     "created_at": "2012-06-09T09:05:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17875",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17837",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1242,15 +1241,15 @@ find_local_maximum_on_interval is 31 characters long, I think that such long nam
 
 ---
 
-archive/issue_comments_017876.json:
+archive/issue_comments_017838.json:
 ```json
 {
     "body": "Makes sense to me, new patch is attached. Please review!",
     "created_at": "2012-06-09T18:43:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17876",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17838",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1260,15 +1259,15 @@ Makes sense to me, new patch is attached. Please review!
 
 ---
 
-archive/issue_comments_017877.json:
+archive/issue_comments_017839.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2012-06-09T18:43:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17877",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17839",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1278,15 +1277,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_017878.json:
+archive/issue_comments_017840.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-06-09T18:43:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17878",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17840",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1296,15 +1295,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017879.json:
+archive/issue_comments_017841.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-06-11T10:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17879",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17841",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1314,15 +1313,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_017880.json:
+archive/issue_comments_017842.json:
 ```json
 {
     "body": "I'd say it looks good now, applies cleanly, all tests passed, and new name is way easier to remember.",
     "created_at": "2012-06-11T10:29:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17880",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17842",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1332,15 +1331,15 @@ I'd say it looks good now, applies cleanly, all tests passed, and new name is wa
 
 ---
 
-archive/issue_comments_017881.json:
+archive/issue_comments_017843.json:
 ```json
 {
     "body": "[attachment:trac2607-whitespace.patch] needs a proper commit message.",
     "created_at": "2012-06-18T07:50:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17881",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17843",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1350,15 +1349,15 @@ archive/issue_comments_017881.json:
 
 ---
 
-archive/issue_comments_017882.json:
+archive/issue_comments_017844.json:
 ```json
 {
     "body": "More importantly, this fails on OS X 10.4 ppc with numerical noise:\n\n```\nsage -t  --long -force_lib devel/sage/sage/numerical/optimize.py\n**********************************************************************\nFile \"/Users/buildbot/build/sage/moufang-1/moufang_full/build/sage-5.1.beta5/devel/sage-main/sage/numerical/optimize.py\", line 135:\n    sage: find_local_maximum(fast_float(8*e^(-x)*sin(x) - 1, x), 0, 8)\nExpected:\n    (1.5791755355586754, 0.78539817769603...)\nGot:\n    (1.5791755355586754, 0.7853981777050254)\nGLPK Simplex Optimizer, v4.44\n6 rows, 3 columns, 8 non-zeros\nPreprocessing...\n2 rows, 2 columns, 4 non-zeros\nScaling...\n A: min|aij| =  2.400e+01  max|aij| =  5.000e+01  ratio =  2.083e+00\nGM: min|aij| =  8.128e-01  max|aij| =  1.230e+00  ratio =  1.514e+00\nEQ: min|aij| =  6.606e-01  max|aij| =  1.000e+00  ratio =  1.514e+00\nConstructing initial basis...\nSize of triangular part = 2\n*     0: obj =  -5.100000000e+01  infeas =  0.000e+00 (0)\n*     1: obj =  -5.225000000e+01  infeas =  0.000e+00 (0)\nOPTIMAL SOLUTION FOUND\n**********************************************************************\n```\n",
     "created_at": "2012-06-18T07:51:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17882",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17844",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1394,15 +1393,15 @@ OPTIMAL SOLUTION FOUND
 
 ---
 
-archive/issue_comments_017883.json:
+archive/issue_comments_017845.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2012-06-18T07:58:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17883",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17845",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -1412,15 +1411,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_017884.json:
+archive/issue_comments_017846.json:
 ```json
 {
     "body": "patch trac2607-whitespace.patch with commit message",
     "created_at": "2012-06-24T10:07:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17884",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17846",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1430,15 +1429,15 @@ patch trac2607-whitespace.patch with commit message
 
 ---
 
-archive/issue_comments_017885.json:
+archive/issue_comments_017847.json:
 ```json
 {
     "body": "Attachment [trac2607-whitespace.2.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607-whitespace.2.patch) by aginiewicz created at 2012-06-24 10:08:30\n\npatch trac_2607_renaming.2.patch rebased on top of trac2607-whitespace.2.patch",
     "created_at": "2012-06-24T10:08:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17885",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17847",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1450,15 +1449,15 @@ patch trac_2607_renaming.2.patch rebased on top of trac2607-whitespace.2.patch
 
 ---
 
-archive/issue_comments_017886.json:
+archive/issue_comments_017848.json:
 ```json
 {
     "body": "Attachment [trac_2607_renaming.3.patch](tarball://root/attachments/some-uuid/ticket2607/trac_2607_renaming.3.patch) by aginiewicz created at 2012-06-24 10:08:56\n\ndoctest and spacing cleanup",
     "created_at": "2012-06-24T10:08:56Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17886",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17848",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1470,15 +1469,15 @@ doctest and spacing cleanup
 
 ---
 
-archive/issue_comments_017887.json:
+archive/issue_comments_017849.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-06-24T10:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17887",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17849",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1488,15 +1487,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017888.json:
+archive/issue_comments_017850.json:
 ```json
 {
     "body": "Attachment [trac2607-doctest-and-spacing.patch](tarball://root/attachments/some-uuid/ticket2607/trac2607-doctest-and-spacing.patch) by aginiewicz created at 2012-06-24 10:13:11\n\nI added the commit message to whitespace patch and rebased renaming patch based on it (keeping original authors/dates, I did not wanted to claim their work and it was minor rebase only to accommodate the commit message taken from comment by Dan).\n\nI also uploaded trac2607-doctest-and-spacing.patch, which adjusts doctest for numerical noise, fixes spacing to be more consistent (3 places, spaces between arguments - i.e. \"0,5\" looks very close to \"0.5\" instead of \"0, 5\") and changed \"f.find_local_minimum(\" to \"find_local_minimum(f\" - because after all this test occurs in definition of find_local_minimum function, not method.",
     "created_at": "2012-06-24T10:13:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17888",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17850",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1510,15 +1509,15 @@ I also uploaded trac2607-doctest-and-spacing.patch, which adjusts doctest for nu
 
 ---
 
-archive/issue_comments_017889.json:
+archive/issue_comments_017851.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-06-25T12:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17889",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17851",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1528,15 +1527,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_017890.json:
+archive/issue_comments_017852.json:
 ```json
 {
     "body": "Looks good and all tests pass.",
     "created_at": "2012-06-25T12:41:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17890",
-    "user": "@novoselt"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17852",
+    "user": "https://github.com/novoselt"
 }
 ```
 
@@ -1546,15 +1545,15 @@ Looks good and all tests pass.
 
 ---
 
-archive/issue_comments_017891.json:
+archive/issue_comments_017853.json:
 ```json
 {
     "body": "Added patch to switch the deprecation to the new syntax.",
     "created_at": "2012-06-30T18:26:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17891",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17853",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1564,15 +1563,15 @@ Added patch to switch the deprecation to the new syntax.
 
 ---
 
-archive/issue_comments_017892.json:
+archive/issue_comments_017854.json:
 ```json
 {
     "body": "Updated patch",
     "created_at": "2012-06-30T18:28:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17892",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17854",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1582,15 +1581,15 @@ Updated patch
 
 ---
 
-archive/issue_comments_017893.json:
+archive/issue_comments_017855.json:
 ```json
 {
     "body": "Attachment [trac_2607_update_deprecation.patch](tarball://root/attachments/some-uuid/ticket2607/trac_2607_update_deprecation.patch) by @vbraun created at 2012-06-30 18:31:26",
     "created_at": "2012-06-30T18:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17893",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17855",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1600,15 +1599,15 @@ Attachment [trac_2607_update_deprecation.patch](tarball://root/attachments/some-
 
 ---
 
-archive/issue_comments_017894.json:
+archive/issue_comments_017856.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2012-06-30T18:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17894",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17856",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1618,15 +1617,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_017895.json:
+archive/issue_comments_017857.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2012-06-30T18:31:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17895",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17857",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -1636,15 +1635,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_017896.json:
+archive/issue_comments_017858.json:
 ```json
 {
     "body": "Deprecation changes look good to me.",
     "created_at": "2012-06-30T19:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17896",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17858",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1654,15 +1653,15 @@ Deprecation changes look good to me.
 
 ---
 
-archive/issue_comments_017897.json:
+archive/issue_comments_017859.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2012-06-30T19:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17897",
-    "user": "@jhpalmieri"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17859",
+    "user": "https://github.com/jhpalmieri"
 }
 ```
 
@@ -1672,15 +1671,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_017898.json:
+archive/issue_comments_017860.json:
 ```json
 {
     "body": "(and all tests still pass)",
     "created_at": "2012-06-30T19:43:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17898",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17860",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1690,15 +1689,15 @@ archive/issue_comments_017898.json:
 
 ---
 
-archive/issue_comments_017899.json:
+archive/issue_comments_017861.json:
 ```json
 {
     "body": "As I understand that ticket moved to sage-pending together with #13109 because it depends on it. But #13109 is back in 5.2 with positive review, so let's move this one back too.",
     "created_at": "2012-07-08T12:19:30Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17899",
-    "user": "aginiewicz"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17861",
+    "user": "https://trac.sagemath.org/admin/accounts/users/aginiewicz"
 }
 ```
 
@@ -1708,15 +1707,15 @@ As I understand that ticket moved to sage-pending together with #13109 because i
 
 ---
 
-archive/issue_comments_017900.json:
+archive/issue_comments_017862.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2012-08-01T12:08:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2607",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17900",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/2607#issuecomment-17862",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

@@ -6,7 +6,7 @@ archive/issues_008449.json:
     "body": "Assignee: mvngu\n\nThis docstring should be a raw string (i.e., r\"\"\" ... \"\"\")\n\nIssue created by migration from https://trac.sagemath.org/ticket/8449\n\n",
     "created_at": "2010-03-05T21:53:57Z",
     "labels": [
-        "documentation",
+        "component: documentation",
         "minor",
         "bug"
     ],
@@ -14,7 +14,7 @@ archive/issues_008449.json:
     "title": "real_part? has an unescaped \\r",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/8449",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: mvngu
@@ -29,15 +29,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/8449
 
 ---
 
-archive/issue_comments_075955.json:
+archive/issue_comments_075829.json:
 ```json
 {
     "body": "Attachment [trac_8449.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.patch) by mvngu created at 2010-05-09 23:36:00\n\nbased on Sage 4.4.2.alpha0",
     "created_at": "2010-05-09T23:36:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75955",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75829",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -49,15 +49,15 @@ based on Sage 4.4.2.alpha0
 
 ---
 
-archive/issue_comments_075956.json:
+archive/issue_comments_075830.json:
 ```json
 {
     "body": "Changing priority from minor to trivial.",
     "created_at": "2010-05-09T23:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75956",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75830",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -67,15 +67,15 @@ Changing priority from minor to trivial.
 
 ---
 
-archive/issue_comments_075957.json:
+archive/issue_comments_075831.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2010-05-09T23:36:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75957",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75831",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -85,15 +85,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_075958.json:
+archive/issue_comments_075832.json:
 ```json
 {
     "body": "Attachment [trac_8449.more_rs.patch](tarball://root/attachments/some-uuid/ticket8449/trac_8449.more_rs.patch) by @burcin created at 2010-05-10 03:23:01",
     "created_at": "2010-05-10T03:23:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75958",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75832",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -103,15 +103,15 @@ Attachment [trac_8449.more_rs.patch](tarball://root/attachments/some-uuid/ticket
 
 ---
 
-archive/issue_comments_075959.json:
+archive/issue_comments_075833.json:
 ```json
 {
     "body": "There were a few more docstrings in that file with the same problem. Positive review to Minh's patch. Someone needs to review mine now. :)",
     "created_at": "2010-05-10T03:24:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75959",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75833",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -121,15 +121,15 @@ There were a few more docstrings in that file with the same problem. Positive re
 
 ---
 
-archive/issue_comments_075960.json:
+archive/issue_comments_075834.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2010-05-10T04:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75960",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75834",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -139,15 +139,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_075961.json:
+archive/issue_comments_075835.json:
 ```json
 {
     "body": "Looks good. Burcin's patch clearly takes care of the others I missed.",
     "created_at": "2010-05-10T04:28:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75961",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75835",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -157,15 +157,15 @@ Looks good. Burcin's patch clearly takes care of the others I missed.
 
 ---
 
-archive/issue_comments_075962.json:
+archive/issue_comments_075836.json:
 ```json
 {
     "body": "Merged in this order:\n\n1. [trac_8449.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8449/trac_8449.patch)\n2. [trac_8449.more_rs.patch](http://trac.sagemath.org/sage_trac/attachment/ticket/8449/trac_8449.more_rs.patch)",
     "created_at": "2010-05-11T05:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75962",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75836",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -178,15 +178,15 @@ Merged in this order:
 
 ---
 
-archive/issue_comments_075963.json:
+archive/issue_comments_075837.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-05-11T05:16:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/8449",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75963",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/8449#issuecomment-75837",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

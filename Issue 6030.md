@@ -6,15 +6,14 @@ archive/issues_006030.json:
     "body": "Assignee: tba\n\nBring plot/circle.py to 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/6030\n\n",
     "created_at": "2009-05-12T16:06:29Z",
     "labels": [
-        "documentation",
-        "minor",
-        "enhancement"
+        "component: documentation",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.0",
     "title": "Bring plot/circle.py to 100% coverage",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/6030",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: tba
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/6030
 
 ---
 
-archive/issue_comments_048010.json:
+archive/issue_comments_047919.json:
 ```json
 {
     "body": "Attachment [trac_6030.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030.patch) by @kcrisman created at 2009-05-12 16:09:13",
     "created_at": "2009-05-12T16:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48010",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47919",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [trac_6030.patch](tarball://root/attachments/some-uuid/ticket6030/tra
 
 ---
 
-archive/issue_comments_048011.json:
+archive/issue_comments_047920.json:
 ```json
 {
     "body": "Brings plot/circle.py to 100% coverage and improves 3D plotting potential. \n\nSee [http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43](http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031b140/c36f1f8a7c8a9b43#c36f1f8a7c8a9b43) for why there is no loads(dumps()) test.",
     "created_at": "2009-05-12T16:11:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48011",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47920",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -67,15 +66,15 @@ See [http://groups.google.com/group/sage-devel/browse_thread/thread/1adac4035031
 
 ---
 
-archive/issue_comments_048012.json:
+archive/issue_comments_047921.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2009-05-12T16:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48012",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47921",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -85,15 +84,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_048013.json:
+archive/issue_comments_047922.json:
 ```json
 {
     "body": "Changing assignee from tba to @kcrisman.",
     "created_at": "2009-05-12T16:11:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48013",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47922",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -103,15 +102,15 @@ Changing assignee from tba to @kcrisman.
 
 ---
 
-archive/issue_comments_048014.json:
+archive/issue_comments_047923.json:
 ```json
 {
     "body": "Some doctest failures:\n\n```\n[mvngu@sage sage-3.4.2]$ ./sage -t -long devel/sage-6030/sage/plot/circle.py \nsage -t -long \"devel/sage-6030/sage/plot/circle.py\"         \n**********************************************************************\nFile \"/scratch/mvngu/sage-3.4.2/devel/sage-6030/sage/plot/circle.py\", line 150:\n    sage: d = c.plot3d(z=2)\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mvngu/sage-3.4.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mvngu/sage-3.4.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mvngu/sage-3.4.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[6]>\", line 1, in <module>\n        d = c.plot3d(z=Integer(2))###line 150:\n    sage: d = c.plot3d(z=2)\n      File \"/scratch/mvngu/sage-3.4.2/local/lib/python2.5/site-packages/sage/plot/circle.py\", line 176, in plot3d\n        return Polygon(xdata, ydata, options).plot3d(z)\n    TypeError: plot3d() takes exactly 1 argument (2 given)\n**********************************************************************\nFile \"/scratch/mvngu/sage-3.4.2/devel/sage-6030/sage/plot/circle.py\", line 151:\n    sage: d.texture.opacity\nException raised:\n    Traceback (most recent call last):\n      File \"/scratch/mvngu/sage-3.4.2/local/bin/ncadoctest.py\", line 1231, in run_one_test\n        self.run_one_example(test, example, filename, compileflags)\n      File \"/scratch/mvngu/sage-3.4.2/local/bin/sagedoctest.py\", line 38, in run_one_example\n        OrigDocTestRunner.run_one_example(self, test, example, filename, compileflags)\n      File \"/scratch/mvngu/sage-3.4.2/local/bin/ncadoctest.py\", line 1172, in run_one_example\n        compileflags, 1) in test.globs\n      File \"<doctest __main__.example_6[7]>\", line 1, in <module>\n        d.texture.opacity###line 151:\n    sage: d.texture.opacity\n    NameError: name 'd' is not defined\n**********************************************************************\n1 items had failures:\n   2 of  12 in __main__.example_6\n***Test Failed*** 2 failures.\nFor whitespace errors, see the file /scratch/mvngu/sage-3.4.2/tmp/.doctest_circle.py\n         [5.3 s]\nexit code: 1024\n \n----------------------------------------------------------------------\nThe following tests failed:\n\n\n        sage -t -long \"devel/sage-6030/sage/plot/circle.py\"\nTotal time for all tests: 5.3 seconds\n```\n",
     "created_at": "2009-05-13T03:59:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48014",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47923",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -173,15 +172,15 @@ Total time for all tests: 5.3 seconds
 
 ---
 
-archive/issue_comments_048015.json:
+archive/issue_comments_047924.json:
 ```json
 {
     "body": "I should have pointed out that this patch depends on # 6023, which I mistakenly thought had been merged.  I believe that will fix both doctest failures above.\n\nAlso, I assume the same comment applies as did with # 6006 and # 6023 regarding Sphinx.",
     "created_at": "2009-05-13T13:31:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48015",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47924",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -193,15 +192,15 @@ Also, I assume the same comment applies as did with # 6006 and # 6023 regarding 
 
 ---
 
-archive/issue_comments_048016.json:
+archive/issue_comments_047925.json:
 ```json
 {
     "body": "No, the issue with `__init__` not showing up in the documentation will be fixed in the future, i.e. sphinx 0.6.\n\nCheer,s\n\nMichael",
     "created_at": "2009-05-13T17:19:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48016",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47925",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -215,15 +214,15 @@ Michael
 
 ---
 
-archive/issue_comments_048017.json:
+archive/issue_comments_047926.json:
 ```json
 {
     "body": "No review, no milestone 4.0 ;)\n\nCheers,\n\nMichael",
     "created_at": "2009-05-14T05:36:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48017",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47926",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -237,15 +236,15 @@ Michael
 
 ---
 
-archive/issue_comments_048018.json:
+archive/issue_comments_047927.json:
 ```json
 {
     "body": "Attachment [trac_6030-fix.patch](tarball://root/attachments/some-uuid/ticket6030/trac_6030-fix.patch) by @kcrisman created at 2009-05-14 16:17:21\n\nBoth depend on #6023",
     "created_at": "2009-05-14T16:17:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48018",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47927",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -257,15 +256,15 @@ Both depend on #6023
 
 ---
 
-archive/issue_comments_048019.json:
+archive/issue_comments_047928.json:
 ```json
 {
     "body": "Positive review! Apply patches in the following order:\n1. `trac_6023.patch` at #6023\n2. `trac_6023-fix.patch` at #6023\n3. `trac_6030.patch`\n4. `trac_6030-fix.patch`",
     "created_at": "2009-05-15T07:04:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48019",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47928",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -279,15 +278,15 @@ Positive review! Apply patches in the following order:
 
 ---
 
-archive/issue_comments_048020.json:
+archive/issue_comments_047929.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2009-05-15T07:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48020",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47929",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -297,15 +296,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_048021.json:
+archive/issue_comments_047930.json:
 ```json
 {
     "body": "Merged both patches in Sage 4.0.alpha0.\n\nCheers,\n\nMichael",
     "created_at": "2009-05-15T07:55:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/6030",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-48021",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/6030#issuecomment-47930",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

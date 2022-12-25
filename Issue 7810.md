@@ -6,15 +6,14 @@ archive/issues_007810.json:
     "body": "Assignee: @aghitza\n\nCC:  cwitty @burcin\n\n\n```\nsage: var('x,y')\nsage: fast_float(-1/x-1/y+1/(x*y),x,y)\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/2056/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_eval.so in sage.ext.fast_eval.fast_float (sage/ext/fast_eval.c:8434)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.fast_callable (sage/ext/fast_callable.c:3134)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._fast_callable_ (sage/symbolic/expression.cpp:24715)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1353 \n   1354     \"\"\"\n-> 1355     return FastCallableConverter(ex, etb)()\n   1356 \n   1357 class RingConverter(Converter):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    212                 div = self.get_fake_div(ex)\n    213                 return self.arithmetic(div, div.operator())\n--> 214             return self.arithmetic(ex, operator)\n    215         elif operator in relation_operators:\n    216             return self.relation(ex, operator)\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in arithmetic(self, ex, operator)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in <lambda>(x, y)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.ExpressionTreeBuilder.call (sage/ext/fast_callable.c:4986)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.ExpressionTreeBuilder.__call__ (sage/ext/fast_callable.c:4313)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._fast_callable_ (sage/symbolic/expression.cpp:24715)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1353 \n   1354     \"\"\"\n-> 1355     return FastCallableConverter(ex, etb)()\n   1356 \n   1357 class RingConverter(Converter):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    211             if getattr(self, 'use_fake_div', False) and operator is _operator.mul:\n    212                 div = self.get_fake_div(ex)\n--> 213                 return self.arithmetic(div, div.operator())\n    214             return self.arithmetic(ex, operator)\n    215         elif operator in relation_operators:\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in arithmetic(self, ex, operator)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in <lambda>(x, y)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.ExpressionTreeBuilder.call (sage/ext/fast_callable.c:4986)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.ExpressionTreeBuilder.__call__ (sage/ext/fast_callable.c:4313)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in _fast_callable_(self, etb)\n    119             [('load_arg', 0), ('load_arg', 1), 'div', 'return']\n    120         \"\"\"\n--> 121         return fast_callable(self, etb)\n    122 \n    123     def _fast_float_(self, *vars):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1353 \n   1354     \"\"\"\n-> 1355     return FastCallableConverter(ex, etb)()\n   1356 \n   1357 class RingConverter(Converter):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    211             if getattr(self, 'use_fake_div', False) and operator is _operator.mul:\n    212                 div = self.get_fake_div(ex)\n--> 213                 return self.arithmetic(div, div.operator())\n    214             return self.arithmetic(ex, operator)\n    215         elif operator in relation_operators:\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in arithmetic(self, ex, operator)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\nTypeError: reduce() of empty sequence with no initial value\nsage: fast_callable(-1/x-1/y+1/(x*y),vars=[x,y])\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n\n/home/grout/.sage/temp/tiny/2056/_home_grout__sage_init_sage_0.py in <module>()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.fast_callable (sage/ext/fast_callable.c:3134)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._fast_callable_ (sage/symbolic/expression.cpp:24715)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1353 \n   1354     \"\"\"\n-> 1355     return FastCallableConverter(ex, etb)()\n   1356 \n   1357 class RingConverter(Converter):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    212                 div = self.get_fake_div(ex)\n    213                 return self.arithmetic(div, div.operator())\n--> 214             return self.arithmetic(ex, operator)\n    215         elif operator in relation_operators:\n    216             return self.relation(ex, operator)\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in arithmetic(self, ex, operator)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in <lambda>(x, y)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.ExpressionTreeBuilder.call (sage/ext/fast_callable.c:4986)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.ExpressionTreeBuilder.__call__ (sage/ext/fast_callable.c:4313)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression.so in sage.symbolic.expression.Expression._fast_callable_ (sage/symbolic/expression.cpp:24715)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1353 \n   1354     \"\"\"\n-> 1355     return FastCallableConverter(ex, etb)()\n   1356 \n   1357 class RingConverter(Converter):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    211             if getattr(self, 'use_fake_div', False) and operator is _operator.mul:\n    212                 div = self.get_fake_div(ex)\n--> 213                 return self.arithmetic(div, div.operator())\n    214             return self.arithmetic(ex, operator)\n    215         elif operator in relation_operators:\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in arithmetic(self, ex, operator)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in <lambda>(x, y)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.ExpressionTreeBuilder.call (sage/ext/fast_callable.c:4986)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/ext/fast_callable.so in sage.ext.fast_callable.ExpressionTreeBuilder.__call__ (sage/ext/fast_callable.c:4313)()\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in _fast_callable_(self, etb)\n    119             [('load_arg', 0), ('load_arg', 1), 'div', 'return']\n    120         \"\"\"\n--> 121         return fast_callable(self, etb)\n    122 \n    123     def _fast_float_(self, *vars):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in fast_callable(ex, etb)\n   1353 \n   1354     \"\"\"\n-> 1355     return FastCallableConverter(ex, etb)()\n   1356 \n   1357 class RingConverter(Converter):\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in __call__(self, ex)\n    211             if getattr(self, 'use_fake_div', False) and operator is _operator.mul:\n    212                 div = self.get_fake_div(ex)\n--> 213                 return self.arithmetic(div, div.operator())\n    214             return self.arithmetic(ex, operator)\n    215         elif operator in relation_operators:\n\n/home/grout/downloads/sage-4.3/local/lib/python2.6/site-packages/sage/symbolic/expression_conversions.pyc in arithmetic(self, ex, operator)\n   1293         elif operator is _operator.neg:\n   1294             return self.etb.call(operator, operands[0])\n-> 1295         return reduce(lambda x,y: self.etb.call(operator, x,y), operands)\n   1296 \n   1297     def symbol(self, ex):\n\nTypeError: reduce() of empty sequence with no initial value\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/7810\n\n",
     "created_at": "2010-01-01T18:53:48Z",
     "labels": [
-        "basic arithmetic",
-        "major",
+        "component: basic arithmetic",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "bug in fast_callable (reducing empty sequence)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/7810",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @aghitza
@@ -247,15 +246,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/7810
 
 ---
 
-archive/issue_comments_067580.json:
+archive/issue_comments_067463.json:
 ```json
 {
     "body": "This works for me after applying the patch at #8056. Since the patch is attached there, I suggest we close this as a duplicate.\n\n\n```\nsage: var('x,y')\n(x, y)\nsage: fast_float(-1/x-1/y+1/(x*y),x,y)\n<sage.ext.interpreters.wrapper_rdf.Wrapper_rdf object at 0x7fc3b89ba248>\n```\n",
     "created_at": "2010-01-26T15:15:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7810",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7810#issuecomment-67580",
-    "user": "@burcin"
+    "url": "https://github.com/sagemath/sagetest/issues/7810#issuecomment-67463",
+    "user": "https://github.com/burcin"
 }
 ```
 
@@ -274,15 +273,15 @@ sage: fast_float(-1/x-1/y+1/(x*y),x,y)
 
 ---
 
-archive/issue_comments_067581.json:
+archive/issue_comments_067464.json:
 ```json
 {
     "body": "This works for me in 4.3.3 too.  This ticket should be closed.",
     "created_at": "2010-03-17T05:05:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7810",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7810#issuecomment-67581",
-    "user": "@jasongrout"
+    "url": "https://github.com/sagemath/sagetest/issues/7810#issuecomment-67464",
+    "user": "https://github.com/jasongrout"
 }
 ```
 
@@ -292,15 +291,15 @@ This works for me in 4.3.3 too.  This ticket should be closed.
 
 ---
 
-archive/issue_comments_067582.json:
+archive/issue_comments_067465.json:
 ```json
 {
     "body": "Close as a duplicate of #8056.",
     "created_at": "2010-03-17T05:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7810",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7810#issuecomment-67582",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7810#issuecomment-67465",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -310,15 +309,15 @@ Close as a duplicate of #8056.
 
 ---
 
-archive/issue_comments_067583.json:
+archive/issue_comments_067466.json:
 ```json
 {
     "body": "Resolution: duplicate",
     "created_at": "2010-03-17T05:07:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/7810",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/7810#issuecomment-67583",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/7810#issuecomment-67466",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

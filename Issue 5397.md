@@ -6,15 +6,14 @@ archive/issues_005397.json:
     "body": "Assignee: mabshoff\n\nKeywords: SmallGroups library gap package\n\nAs I reported at http://groups.google.com/group/sage-support/browse_thread/thread/b82584e0ee6ba733, it seems that the `SmallGroups` library can not be used in `sage 3.3`.\n\nMore precisely: I installed `database_gap-4.4.10`\nand `gap_packages-4.4.10_6` -- apparently with success. But when I tried to use it, say, with `gap('NumberSmallGroups(128)')`, an error is raised, complaining about the `SmallGroups` library being missing.\n\nThis occurs in the following settings:\n- sage-3.3 built from source on x86_64 GNU/Linux, Dual Core AMD Opteron(tm) Processor 270, gcc (GCC) 4.1.2 20061115 (prerelease) (SUSE Linux)\n- sage-3.3 obtained by an upgrade of sage-3.1.2 (built from source) on the same machine\n- sage-3.3 obtained by an upgrade of sage-3.2.3 (built from source) on x86_64 GNU/Linux, AMD Athlon(tm) 64 Processor 3700+, gcc (GCC) 4.2.1 \n\nIt does not occur in a sage-3.3.rc0 install on `sage.math`. Perhaps this helps to locate the source of trouble.\n\nIssue created by migration from https://trac.sagemath.org/ticket/5397\n\n",
     "created_at": "2009-02-27T21:06:24Z",
     "labels": [
-        "packages: optional",
-        "major",
+        "component: packages: optional",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "SmallGroups library can't be used in Sage-3.3",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/5397",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: mabshoff
@@ -41,15 +40,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/5397
 
 ---
 
-archive/issue_comments_041679.json:
+archive/issue_comments_041597.json:
 ```json
 {
     "body": "The tarball at http://sage.math.washington.edu/home/wdj/patches/gap_packages-4.4.12_1.spkg fixes this for sage-3.4.alpha0 running on an amd 64 ubuntu 8.10 system. It probably works for other recent versions of sage running on other linux os computers. It fails on an OS 10.4 macbook running sage-3.2.3 (which had gap-4.4.10).\n\nHope this helps some.",
     "created_at": "2009-03-03T02:39:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41679",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41597",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -61,15 +60,15 @@ Hope this helps some.
 
 ---
 
-archive/issue_comments_041680.json:
+archive/issue_comments_041598.json:
 ```json
 {
     "body": "I mislabled this as needs review. I don't know how to fix the patch for an os 10.4 macbook. I tried a few possibilities (uncommenting a line which installs patches) but nothing I tried worked and I'm not sure what the solution is.",
     "created_at": "2009-03-03T12:56:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41680",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41598",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -79,15 +78,15 @@ I mislabled this as needs review. I don't know how to fix the patch for an os 10
 
 ---
 
-archive/issue_comments_041681.json:
+archive/issue_comments_041599.json:
 ```json
 {
     "body": "I have posted the patch for the databases as well: http://sage.math.washington.edu/home/wdj/patches/database_gap-4.4.12.spkg. \n\nThis also fails for an intel macbook running OS 10.4 and sage-3.3.alpha2 (I mistakenly said sage-3.2.3 before). I have not a clue why these fail for a macbook and not linux, so I don't know how to proceed further with this.\n\nHope this helps a little anyway.",
     "created_at": "2009-03-03T13:43:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41681",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41599",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -101,15 +100,15 @@ Hope this helps a little anyway.
 
 ---
 
-archive/issue_comments_041682.json:
+archive/issue_comments_041600.json:
 ```json
 {
     "body": "Can this be closed? I did not have any trouble with database_gap recently...",
     "created_at": "2010-07-05T11:49:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41682",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41600",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -119,15 +118,15 @@ Can this be closed? I did not have any trouble with database_gap recently...
 
 ---
 
-archive/issue_comments_041683.json:
+archive/issue_comments_041601.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2012-03-02T10:16:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41683",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41601",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -137,15 +136,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_041684.json:
+archive/issue_comments_041602.json:
 ```json
 {
     "body": "I'm giving a positive review, in the sense that I don't see a problem with the small groups library since many months.\n\nI suggest to resolve it as duplicate, even though I couldn't point my finger to a ticket in which the problem had been solved.",
     "created_at": "2012-03-02T10:16:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41684",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41602",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -157,15 +156,15 @@ I suggest to resolve it as duplicate, even though I couldn't point my finger to 
 
 ---
 
-archive/issue_comments_041685.json:
+archive/issue_comments_041603.json:
 ```json
 {
     "body": "Resolution: worksforme",
     "created_at": "2012-03-02T13:54:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/5397",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41685",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/5397#issuecomment-41603",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 

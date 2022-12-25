@@ -6,15 +6,13 @@ archive/issues_004120.json:
     "body": "Assignee: tbd\n\nCC:  justin @jonhanke tornaria@math.utexas.edu\n\nThe code supporting binary quadratic forms, in quadratic_forms/binary_qf.py, is missing some functionality, and relies on Magma and Pari.  The patch in this ticket provides the following changes:\n- tests for equivalence, normal, positive and negative definite, indefinite, primitive forms\n- normalize a form\n- action of matrix on a form\n- find content; factor indefinite forms\nIn addition: \n- reduce() no longer calls Pari\n- some cleanup: is_reduced() is rewritten; polynomial() replaced with an instance variable (poly)\n\nDoctests are in place for the new code, so the file remains at 100% coverage.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4120\n\n",
     "created_at": "2008-09-14T19:31:00Z",
     "labels": [
-        "algebra",
-        "major",
-        "enhancement"
+        "component: algebra"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-8.3",
     "title": "New code for binary quadratic forms",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4120",
-    "user": "justin"
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 Assignee: tbd
@@ -40,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4120
 
 ---
 
-archive/issue_comments_029824.json:
+archive/issue_comments_029765.json:
 ```json
 {
     "body": "Context diff of new, old versions of quadratic_forms/binary_qf.py",
     "created_at": "2008-09-14T19:32:11Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29824",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29765",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -58,15 +56,15 @@ Context diff of new, old versions of quadratic_forms/binary_qf.py
 
 ---
 
-archive/issue_comments_029825.json:
+archive/issue_comments_029766.json:
 ```json
 {
     "body": "Attachment [diff](tarball://root/attachments/some-uuid/ticket4120/diff) by mabshoff created at 2008-09-14 19:48:35",
     "created_at": "2008-09-14T19:48:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29825",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29766",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -76,15 +74,15 @@ Attachment [diff](tarball://root/attachments/some-uuid/ticket4120/diff) by mabsh
 
 ---
 
-archive/issue_comments_029826.json:
+archive/issue_comments_029767.json:
 ```json
 {
     "body": "Justin,\n\nthe diff is inverse and you should also add an extension patch to the file.\n\nCheers,\n\nMichael",
     "created_at": "2008-09-14T19:59:39Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29826",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29767",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -100,15 +98,15 @@ Michael
 
 ---
 
-archive/issue_comments_029827.json:
+archive/issue_comments_029768.json:
 ```json
 {
     "body": "Attachment [sage-4120.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120.patch) by justin created at 2008-09-24 02:56:05",
     "created_at": "2008-09-24T02:56:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29827",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29768",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -118,15 +116,15 @@ Attachment [sage-4120.patch](tarball://root/attachments/some-uuid/ticket4120/sag
 
 ---
 
-archive/issue_comments_029828.json:
+archive/issue_comments_029769.json:
 ```json
 {
     "body": "Updated patch, works with 3.1.1 and 3.1.2.  Needs review.  And maybe testing :-}  Also incorporated performance changes from Holdsworth's changes.",
     "created_at": "2008-09-24T02:59:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29828",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29769",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -136,15 +134,15 @@ Updated patch, works with 3.1.1 and 3.1.2.  Needs review.  And maybe testing :-}
 
 ---
 
-archive/issue_comments_029829.json:
+archive/issue_comments_029770.json:
 ```json
 {
     "body": "I am planning to review this, which looks pretty good.  First, some preliminary questions/comments:\n* I see that we now have some, but not all, support for indefinite forms.  (e.g. no equivalence testing, no class number).  Why not use pari interface for those, at least until we do our own?  (I would have thought that pari was pretty efficient for these things).\n* Your action of 2x2 matrices is a left action.  Do we want to allow users to use a right action (say, by having RMul and LMul with Mul an alias for one of them)?\n* Your action includes multiplication by det(A).  Now there are lots of application for this code, some will like that and some will want something else.  So why don't we have another parameter for Mul() which is the power of the determinant to be used.  Personally I would set the default to 0 but if you wanted it to be 1 (as in your code) I could live with that.\n* I still think that quite a lot of the functionality could be factored out into a more general binary form class, but that can be done later by someone (e.g. me) who uses higher degree forms.",
     "created_at": "2008-09-24T13:53:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29829",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29770",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -158,15 +156,15 @@ I am planning to review this, which looks pretty good.  First, some preliminary 
 
 ---
 
-archive/issue_comments_029830.json:
+archive/issue_comments_029771.json:
 ```json
 {
     "body": "The patch also works with 3.1.3.alpha1.  Doctests succeed.",
     "created_at": "2008-09-24T21:01:55Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29830",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29771",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -176,15 +174,15 @@ The patch also works with 3.1.3.alpha1.  Doctests succeed.
 
 ---
 
-archive/issue_comments_029831.json:
+archive/issue_comments_029772.json:
 ```json
 {
     "body": "Here's a second patch, to be applied on top of sage-4120.patch.\n\nThis one fixes some bugs and typos in the first, cleans up some code, and adds more support for indefinite forms (equivalence checking, in particular).  Probably adds a few bugs as well, but that's just a by-product.",
     "created_at": "2008-10-03T06:05:57Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29831",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29772",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -196,15 +194,15 @@ This one fixes some bugs and typos in the first, cleans up some code, and adds m
 
 ---
 
-archive/issue_comments_029832.json:
+archive/issue_comments_029773.json:
 ```json
 {
     "body": "To be applied on top of sage-4120.patch",
     "created_at": "2008-10-03T06:06:51Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29832",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29773",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -214,15 +212,15 @@ To be applied on top of sage-4120.patch
 
 ---
 
-archive/issue_comments_029833.json:
+archive/issue_comments_029774.json:
 ```json
 {
     "body": "Attachment [sage-4120-2.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120-2.patch) by justin created at 2008-10-07 04:22:34\n\nThis is a third patch, applied on sage-4120-2.patch.\n\nThis one extends support for indefinite forms and fixes a few bugs (both in code and in the Buchmann/Vollmer algorithms).\n\nOne change in particular deserves discussion: I have changed the normalization and reduction procedures to return both the form in question and the transformation matrix used to derive that form.  This makes things a bit more awkward in the code, so there are two questions: is this really useful, and if yes, is there a better way to do it?\n\nAlso, I assigned this to me :-}.",
     "created_at": "2008-10-07T04:22:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29833",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29774",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -240,15 +238,15 @@ Also, I assigned this to me :-}.
 
 ---
 
-archive/issue_comments_029834.json:
+archive/issue_comments_029775.json:
 ```json
 {
     "body": "Changing assignee from tbd to justin.",
     "created_at": "2008-10-07T04:22:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29834",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29775",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -258,15 +256,15 @@ Changing assignee from tbd to justin.
 
 ---
 
-archive/issue_comments_029835.json:
+archive/issue_comments_029776.json:
 ```json
 {
     "body": "To be applied on top of sage-4120-2.patch",
     "created_at": "2008-10-07T04:23:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29835",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29776",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -276,15 +274,15 @@ To be applied on top of sage-4120-2.patch
 
 ---
 
-archive/issue_comments_029836.json:
+archive/issue_comments_029777.json:
 ```json
 {
     "body": "Attachment [sage-4120-3.patch](tarball://root/attachments/some-uuid/ticket4120/sage-4120-3.patch) by justin created at 2008-10-14 04:31:21\n\nApplied all three patches against 3.1.3.rc0, one at a time, running the doctests each time.  All doctests succeeded.  No problems noted.",
     "created_at": "2008-10-14T04:31:21Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29836",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29777",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -296,15 +294,15 @@ Applied all three patches against 3.1.3.rc0, one at a time, running the doctests
 
 ---
 
-archive/issue_comments_029837.json:
+archive/issue_comments_029778.json:
 ```json
 {
     "body": "Attachment [sage-trac4120.new.patch](tarball://root/attachments/some-uuid/ticket4120/sage-trac4120.new.patch) by @JohnCremona created at 2008-10-28 20:46:13\n\nREPLACES earlier patches",
     "created_at": "2008-10-28T20:46:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29837",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29778",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -316,15 +314,15 @@ REPLACES earlier patches
 
 ---
 
-archive/issue_comments_029838.json:
+archive/issue_comments_029779.json:
 ```json
 {
     "body": "My patch sage-trac4120new.patch combines the three earlier ones and adds the following:\n* Fixing various bugs and typos\n* Sorting out a lot of formatting issues in doctests\n* Adds some new functions\n* Renames Mul to `__mul__` so one can say Q*M to apply matrix M to form Q\n\nRegarding the latter I relented and removed the scale parameter;  since the det is either +1 or -1 I am happy with multiplying (or dividing) by the determinant.\n\nIssues do remain:\n* The various transform function which return a new form Q and a transform T really must satisfy self.T==Q, but they don't.  Hence the commented out assertions.\n* We must decide whether we are talking about weak or strict equivalence (GL or SL(2,ZZ)).  At the moment it is hard to tell which.\n* For indefinite forms there are several different notions of \"reduced\".  OK to to stick to one, but we should make this explicit.\n* The class number function looks inefficient to me, it should be replaced by the fast code by Skoruppa to list reduced forms (in the definite case at least).\n\nThat's all I can remember, but this will need more work before it can go in.",
     "created_at": "2008-10-28T20:53:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29838",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29779",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -348,15 +346,15 @@ That's all I can remember, but this will need more work before it can go in.
 
 ---
 
-archive/issue_comments_029839.json:
+archive/issue_comments_029780.json:
 ```json
 {
     "body": "See also #4470 for Jon Hanke's work on quadratic forms.\n\nCheers,\n\nMichael",
     "created_at": "2008-11-08T21:30:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29839",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29780",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -370,15 +368,15 @@ Michael
 
 ---
 
-archive/issue_comments_029840.json:
+archive/issue_comments_029781.json:
 ```json
 {
     "body": "Changing component from algebra to quadratic forms.",
     "created_at": "2008-11-08T21:32:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29840",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29781",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -388,15 +386,15 @@ Changing component from algebra to quadratic forms.
 
 ---
 
-archive/issue_comments_029841.json:
+archive/issue_comments_029782.json:
 ```json
 {
     "body": "To comment on the relationship with #4470:\n\n```\nAFAIK the binary quadratic forms are untouched by Jon's work. We\nshould rename the file to bring it more in line with what is coming\nfrom Jon, i.e. all I have left to do to post a patch is to rename\nvarious files to qf_ from quadratic_forms_, fix the imports and rebase\nthe extensions to module_list.py. All trivial, it just needs to be\ndone :p\n```\n\n\nCheers,\n\nMichael",
     "created_at": "2008-11-28T22:40:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29841",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29782",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -420,15 +418,15 @@ Michael
 
 ---
 
-archive/issue_comments_029842.json:
+archive/issue_comments_029783.json:
 ```json
 {
     "body": "I've reviewed the code from the last patch as submitted by John Cremona (sage-trac4120.new.patch). It applies cleanly on 3.3 and also on top of the first two patches in #4470.\n\nBelow are some comments about the code in `binary_qf.py`. I didn't make a difference between old code and code in the patch, since most of the code is in the patch, anyway.\n\n- Constructor:\n  - BinaryQF([1,2,3], 4, 5) should raise an error\n  - I would like to suggest an additional constructor:\n    {{{\n       sage: BinaryQF(2, 1, disc = -23)\n       2*x^2 + x*y + 3*y^2\n    }}}\n    this is handy when the discriminant is fixed and one knows the first two coefficients\n    of a form\n\n- `__repr__`:\n   \n  I don't like the fact that a quadratic form is represented by a polynomial, may lead\n  to potential confusion. What about something like:\n  \"`Binary quadratic form over Integer Ring with coefficients [a, b, c]`\"\n  ?\n\n- polynomial:\n  - the variables for the polynomial are hardcoded... 'x' and 'y'... not very important (I rather not have a \"polynomial\" function... I'd replace it by a `__call__` function which works for elements in any ring, then one can call e.g. `Q(x,y)` where x and y are in `ZZ['x,y']`, etc.\n\n- action by matrices:\n  - Q * M is a left action --> more natural to be right action!!\n    I.e. right now\n    {{{\n       sage: Q = BinaryQF(4,-4,15)\n       sage: M = matrix(ZZ, 2, [1, 1, 0, 1])\n       sage: M1 = matrix(ZZ, 2, [1, 0, 1, 1])\n       sage: Q * M * M1 == Q * (M * M1)\n       False\n       sage: Q * M * M1 == Q * (M1 * M)\n       True\n    }}}\n  - I like the notation `Q(M)` for the action of matrices -- this is consitent with the\n    notation for general quadratic forms and representation by vectors or sublattices (#4470)\n     \n\n    Maybe * should be reserved for composition?\n\n- is_normal: he doctest doesn't explain what it is\n\n- is_equivalent\n  - IMO should return True or False\n  - have extra parameter to request transformation matrix\n  - needs more doctests (in particular indefinite, etc)\n  - sage: Q * Q.is_equivalent(Q1)[1].transpose() == Q1 /// should be True\n   this is just an issue with the action of matrices being left action\n  - for indefinite: should not compute the cycle for every form!!\n   instead, compute `self * other^(-1)`  (in the class group), and check if it is in the\n   principal cycle, which should of course be cached once for each discriminant. This is\n   helpful since one will probably use many forms of the same discriminant together.\n    \n\n   Not sure about how to do memory management though: it'd be nice if every indefinite\n   form of discriminant D holds a reference to the principal cycle of discriminant D, so\n   the cycle is deleted when the last indefinite form of discriminant D is deleted ???\n    \n\n   ALSO: IMO the caching of the cycle should be done by the function Cycle() itself, not by\n   is_equivalent.\n    \n\n   Moreover, the cycle needs to cache the transformation matrix as well, so we can\n   actually figure out the correct transformation matrix.\n\n- matrix: should be the Hessian for consistency with the rest of the code ???\n  the advantage is that it makes the matrix over ZZ (with even diagonal)\n\n- is_zero: should not need a gcd to decide if it is 0\n\n- s and ss: internal, should be prepended with `__` ???\n\n- class number computation should use pari\n\n- implement conversions between pari <--> sage   for BinaryQF and Qfb\n  maybe try to wrap around pari functionality as much as possible, for speed ??? (both\n  runtime and development!!) E.g. composition, etc.",
     "created_at": "2009-02-24T02:36:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29842",
-    "user": "@tornaria"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29783",
+    "user": "https://github.com/tornaria"
 }
 ```
 
@@ -517,15 +515,15 @@ Below are some comments about the code in `binary_qf.py`. I didn't make a differ
 
 ---
 
-archive/issue_comments_029843.json:
+archive/issue_comments_029784.json:
 ```json
 {
     "body": "Attachment [4120-110324.patch](tarball://root/attachments/some-uuid/ticket4120/4120-110324.patch) by justin created at 2011-03-24 22:55:02\n\nNew patch; replaces previous patches.",
     "created_at": "2011-03-24T22:55:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29843",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29784",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -537,15 +535,15 @@ New patch; replaces previous patches.
 
 ---
 
-archive/issue_comments_029844.json:
+archive/issue_comments_029785.json:
 ```json
 {
     "body": "New patch.  Primary content is support for indefinite binary forms.",
     "created_at": "2011-03-24T22:56:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29844",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29785",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -555,15 +553,15 @@ New patch.  Primary content is support for indefinite binary forms.
 
 ---
 
-archive/issue_comments_029845.json:
+archive/issue_comments_029786.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2011-03-24T22:57:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29845",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29786",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -573,15 +571,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_029846.json:
+archive/issue_comments_029787.json:
 ```json
 {
     "body": "Forgot to make this explicit: Previous patches include a lot more changes than are in the new one, but to simplify the review process (and my life), I've decided to break it up into smaller chunks.  More changes will be forthcoming (new trac tickets).",
     "created_at": "2011-03-24T23:12:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29846",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29787",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -591,15 +589,15 @@ Forgot to make this explicit: Previous patches include a lot more changes than a
 
 ---
 
-archive/issue_comments_029847.json:
+archive/issue_comments_029788.json:
 ```json
 {
     "body": "NOTE: And another thing: this patch should be applied against Sage 4.7.alpha2 or later (the release with the patch from #10741).",
     "created_at": "2011-03-24T23:21:58Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29847",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29788",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -609,15 +607,15 @@ NOTE: And another thing: this patch should be applied against Sage 4.7.alpha2 or
 
 ---
 
-archive/issue_comments_029848.json:
+archive/issue_comments_029789.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2011-03-25T19:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29848",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29789",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -627,15 +625,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_029849.json:
+archive/issue_comments_029790.json:
 ```json
 {
     "body": "Patch applies and tests pass.\n\nMy only suggestion is that for invalid input you should raise an appropriate error (ValueError) rather than printing something and returning [].  And all integers =0,1(mod 4) should be allowed, even squares?  The docstring should specify exactly what valid inputs are, in any case.",
     "created_at": "2011-03-25T19:24:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29849",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29790",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -647,15 +645,15 @@ My only suggestion is that for invalid input you should raise an appropriate err
 
 ---
 
-archive/issue_comments_029850.json:
+archive/issue_comments_029791.json:
 ```json
 {
     "body": "I will make the changes to raise errors rather than return unexpected values; that makes sense.\n\nThere may be cases where restrictions on discriminants make sense.  For example, I don't think that reduction for a degenerate form makes sense, and there are cases where we don't have an implementation for for a specific class of forms (indefinite, say).  Thoughts?",
     "created_at": "2011-03-25T20:35:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29850",
-    "user": "justin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29791",
+    "user": "https://trac.sagemath.org/admin/accounts/users/justin"
 }
 ```
 
@@ -667,15 +665,15 @@ There may be cases where restrictions on discriminants make sense.  For example,
 
 ---
 
-archive/issue_comments_029851.json:
+archive/issue_comments_029792.json:
 ```json
 {
     "body": "Replying to [comment:23 justin]:\n> I will make the changes to raise errors rather than return unexpected values; that makes sense.\n\nGood!  Thanks.\n\n> \n> There may be cases where restrictions on discriminants make sense.  For example, I don't think that reduction for a degenerate form makes sense, and there are cases where we don't have an implementation for for a specific class of forms (indefinite, say).  Thoughts?\n\nOK by me to restrict to B which are 0 or 1 mod 4 and not squares.",
     "created_at": "2011-03-25T21:59:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29851",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29792",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -693,15 +691,15 @@ OK by me to restrict to B which are 0 or 1 mod 4 and not squares.
 
 ---
 
-archive/issue_comments_029852.json:
+archive/issue_comments_029793.json:
 ```json
 {
     "body": "I tried to do some computations with binary quadratic forms of positive discriminant, discovered that a lot of functionality was missing, and then found this ticket, which has been inactive for 3 years...  Is anyone planning to work on it?\n\nSee also #6106.",
     "created_at": "2014-02-26T17:32:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29852",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29793",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -713,15 +711,15 @@ See also #6106.
 
 ---
 
-archive/issue_comments_029853.json:
+archive/issue_comments_029794.json:
 ```json
 {
     "body": "Converted the patch to a Git branch; small fixes to make everything compile and pass tests.\n\nStill `needs_work` in view of comment:22.",
     "created_at": "2014-02-26T21:13:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29853",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29794",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -733,15 +731,15 @@ Still `needs_work` in view of comment:22.
 
 ---
 
-archive/issue_comments_029854.json:
+archive/issue_comments_029795.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-02-26T23:18:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29854",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29795",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -751,15 +749,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029855.json:
+archive/issue_comments_029796.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-02-27T14:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29855",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29796",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -769,15 +767,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029856.json:
+archive/issue_comments_029797.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2014-02-27T14:29:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29856",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29797",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -787,15 +785,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_029857.json:
+archive/issue_comments_029798.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-04-25T00:02:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29857",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29798",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -805,15 +803,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029858.json:
+archive/issue_comments_029799.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2014-11-27T23:32:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29858",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29799",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -823,15 +821,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029859.json:
+archive/issue_comments_029800.json:
 ```json
 {
     "body": "I guess my commits can count as reviewer patches.  However, I haven't reviewed all the new code in detail, so the branch should probably still be reviewed as a whole.",
     "created_at": "2014-11-27T23:40:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29859",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29800",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -841,15 +839,15 @@ I guess my commits can count as reviewer patches.  However, I haven't reviewed a
 
 ---
 
-archive/issue_comments_029860.json:
+archive/issue_comments_029801.json:
 ```json
 {
     "body": "This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.",
     "created_at": "2015-03-27T08:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29860",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29801",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -859,15 +857,15 @@ This ticket currently confuses the patchbot. Temporarily putting to **needs info
 
 ---
 
-archive/issue_comments_029861.json:
+archive/issue_comments_029802.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_info.",
     "created_at": "2015-03-27T08:18:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29861",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29802",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -877,15 +875,15 @@ Changing status from needs_review to needs_info.
 
 ---
 
-archive/issue_comments_029862.json:
+archive/issue_comments_029803.json:
 ```json
 {
     "body": "Replying to [comment:38 chapoton]:\n> This ticket currently confuses the patchbot. Temporarily putting to **needs info** to stop the bot loop-testing it.\nIt seems that at least the patchbot \"eddy\" is testing this ticket without adverse effects.  Let's see what happens if I set it back to \"needs_review\".  (There was a failure in the last patchbot run, but it seems to be unrelated to this ticket.)",
     "created_at": "2015-06-04T11:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29862",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29803",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -897,15 +895,15 @@ It seems that at least the patchbot "eddy" is testing this ticket without advers
 
 ---
 
-archive/issue_comments_029863.json:
+archive/issue_comments_029804.json:
 ```json
 {
     "body": "Changing status from needs_info to needs_review.",
     "created_at": "2015-06-04T11:12:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29863",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29804",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -915,15 +913,15 @@ Changing status from needs_info to needs_review.
 
 ---
 
-archive/issue_comments_029864.json:
+archive/issue_comments_029805.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-01-22T20:34:42Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29864",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29805",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -933,15 +931,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029865.json:
+archive/issue_comments_029806.json:
 ```json
 {
     "body": "[qfbcompraw](http://doc.sagemath.org/html/en/reference/libs/sage/libs/pari/gen.html#sage.libs.pari.gen.gen_auto.qfbcompraw) is now wrapped, so calling pari directly to use it is no longer necessary, and should be fixed.\n\ncf. the patch part:\n\n```\n+            # There could be more elegant ways, but qfbcompraw isn't\n+            # wrapped yet in the PARI C library.  We may as well settle\n+            # for the below, until somebody simply implements composition\n+            # from scratch in Cython.\n+            v = list(pari('qfbcompraw(%s,%s)'%(self._pari_init_(),\n+                                            right._pari_init_())))\n```\n",
     "created_at": "2016-11-21T10:41:07Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29865",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29806",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -963,15 +961,15 @@ cf. the patch part:
 
 ---
 
-archive/issue_comments_029866.json:
+archive/issue_comments_029807.json:
 ```json
 {
     "body": "and the same for `qfbred`, which is now also wrapped.",
     "created_at": "2016-11-21T11:30:14Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29866",
-    "user": "@dimpase"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29807",
+    "user": "https://github.com/dimpase"
 }
 ```
 
@@ -981,15 +979,15 @@ and the same for `qfbred`, which is now also wrapped.
 
 ---
 
-archive/issue_comments_029867.json:
+archive/issue_comments_029808.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2016-11-21T13:51:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29867",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29808",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -999,15 +997,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029868.json:
+archive/issue_comments_029809.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-09-08T05:42:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29868",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29809",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1017,15 +1015,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029869.json:
+archive/issue_comments_029810.json:
 ```json
 {
     "body": "(added the accent to Gonzalo Tornar\u00eda's name; maybe this will also convince the patchbot to test this ticket)",
     "created_at": "2017-09-13T15:52:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29869",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29810",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1035,15 +1033,15 @@ archive/issue_comments_029869.json:
 
 ---
 
-archive/issue_comments_029870.json:
+archive/issue_comments_029811.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2017-09-19T05:46:02Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29870",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29811",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1053,15 +1051,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029871.json:
+archive/issue_comments_029812.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2018-05-15T07:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29871",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29812",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1071,15 +1069,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_029872.json:
+archive/issue_comments_029813.json:
 ```json
 {
     "body": "branch does not apply, needs rebase",
     "created_at": "2018-05-15T07:34:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29872",
-    "user": "@fchapoton"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29813",
+    "user": "https://github.com/fchapoton"
 }
 ```
 
@@ -1089,15 +1087,15 @@ branch does not apply, needs rebase
 
 ---
 
-archive/issue_comments_029873.json:
+archive/issue_comments_029814.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2018-05-21T12:16:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29873",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29814",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1107,15 +1105,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029874.json:
+archive/issue_comments_029815.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2018-05-21T12:17:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29874",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29815",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1125,15 +1123,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_029875.json:
+archive/issue_comments_029816.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2018-06-03T17:12:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29875",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29816",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1143,15 +1141,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029876.json:
+archive/issue_comments_029817.json:
 ```json
 {
     "body": "Some changes I made:\n- removed ``@`cached_method` in `polynomial` as we already cache in `_poly`\n- `reduced_form(self, matrix=False, implementation=None):` `matrix` seems missleading to me. \n  changed the keywords to `transformation` and `algorithm` to stay consistent with other \n  parts of sage (for example .`hermite_form`)   \n- used long names for methods like `is_indef` but keep the short alias\n- ``_RhoTau(self, proper=False)``\n  removed the `proper` keyword as it is not used.\n- use a better bound for `a` in BinaryQF_reduced_representatives from the Buchmann/Vollmer book\n- added a keyword proper for is_equivalent as for indefinite forms we only test improper \n  equivalence, we check if the form is in the cycle of the other form but that cycle is improper\n\nQuestion:\n- This requires a deprecation - do we really want to change it? This ticket changes so much   \n  already I would vote against it:\n  {{{\n  -def BinaryQF_reduced_representatives(D, primitive_only=False):\n  +def BinaryQF_reduced_representatives(D, primitive_only=True):\n  }}}",
     "created_at": "2018-06-03T17:21:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29876",
-    "user": "@simonbrandhorst"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29817",
+    "user": "https://github.com/simonbrandhorst"
 }
 ```
 
@@ -1179,15 +1177,15 @@ Question:
 
 ---
 
-archive/issue_comments_029877.json:
+archive/issue_comments_029818.json:
 ```json
 {
     "body": "The ticket is not perfect but I think it is okay.\nAs the perfect is the enemy of the good - positive review on my part if you are happy with my changes and resolve the issue with the primitive_only keyword.",
     "created_at": "2018-06-03T17:22:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29877",
-    "user": "@simonbrandhorst"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29818",
+    "user": "https://github.com/simonbrandhorst"
 }
 ```
 
@@ -1198,15 +1196,15 @@ As the perfect is the enemy of the good - positive review on my part if you are 
 
 ---
 
-archive/issue_comments_029878.json:
+archive/issue_comments_029819.json:
 ```json
 {
     "body": "Note on my machine tests pass, doc builds and looks reasonable.",
     "created_at": "2018-06-03T17:23:45Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29878",
-    "user": "@simonbrandhorst"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29819",
+    "user": "https://github.com/simonbrandhorst"
 }
 ```
 
@@ -1216,15 +1214,15 @@ Note on my machine tests pass, doc builds and looks reasonable.
 
 ---
 
-archive/issue_comments_029879.json:
+archive/issue_comments_029820.json:
 ```json
 {
     "body": "I agree with the decision not to change the default for the primitive-only parameter.",
     "created_at": "2018-06-04T21:20:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29879",
-    "user": "@JohnCremona"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29820",
+    "user": "https://github.com/JohnCremona"
 }
 ```
 
@@ -1234,15 +1232,15 @@ I agree with the decision not to change the default for the primitive-only param
 
 ---
 
-archive/issue_comments_029880.json:
+archive/issue_comments_029821.json:
 ```json
 {
     "body": "I agree too.",
     "created_at": "2018-06-04T21:20:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29880",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29821",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1252,15 +1250,15 @@ I agree too.
 
 ---
 
-archive/issue_comments_029881.json:
+archive/issue_comments_029822.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2018-06-05T06:53:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29881",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29822",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1270,15 +1268,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029882.json:
+archive/issue_comments_029823.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2018-06-05T06:54:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29882",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29823",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -1288,15 +1286,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_029883.json:
+archive/issue_comments_029824.json:
 ```json
 {
     "body": "Then let us finally get this reviewed :)",
     "created_at": "2018-06-05T06:55:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29883",
-    "user": "@simonbrandhorst"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29824",
+    "user": "https://github.com/simonbrandhorst"
 }
 ```
 
@@ -1306,15 +1304,15 @@ Then let us finally get this reviewed :)
 
 ---
 
-archive/issue_comments_029884.json:
+archive/issue_comments_029825.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2018-06-12T05:43:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29884",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29825",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1324,15 +1322,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_029885.json:
+archive/issue_comments_029826.json:
 ```json
 {
     "body": "Fixed a SEEALSO block (causing docbuild to fail) and two pyflakes complaints.  Let's get this ticket in before its 10-year anniversary.",
     "created_at": "2018-06-12T05:43:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29885",
-    "user": "@pjbruin"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29826",
+    "user": "https://github.com/pjbruin"
 }
 ```
 
@@ -1342,15 +1340,15 @@ Fixed a SEEALSO block (causing docbuild to fail) and two pyflakes complaints.  L
 
 ---
 
-archive/issue_comments_029886.json:
+archive/issue_comments_029827.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2018-06-14T07:41:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4120",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29886",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/4120#issuecomment-29827",
+    "user": "https://github.com/vbraun"
 }
 ```
 

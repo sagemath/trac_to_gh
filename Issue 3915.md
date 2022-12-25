@@ -6,15 +6,14 @@ archive/issues_003915.json:
     "body": "Assignee: @malb\n\nCC:  @burcin\n\nKeywords: polybori\n\nThe attached patch\n* adds an `interpolation_polynomial` method to `BooleanPolynomialRing`\n* adds `reduce` methods to `BooleanPolynomial` and `BooleanPolynomialIdeal`\n* improves the documentation slightly\n* makes `f in I` work for f a `BooleanPolynomial`\n\nIssue created by migration from https://trac.sagemath.org/ticket/3915\n\n",
     "created_at": "2008-08-20T20:02:48Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.1.2",
     "title": "[with patch, needs review] PolyBoRi interface improvements",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/3915",
-    "user": "@malb"
+    "user": "https://github.com/malb"
 }
 ```
 Assignee: @malb
@@ -37,15 +36,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/3915
 
 ---
 
-archive/issue_comments_028000.json:
+archive/issue_comments_027942.json:
 ```json
 {
     "body": "oh, it also adds a `_latex_` method to `BooleanPolynomial`",
     "created_at": "2008-08-20T20:03:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28000",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27942",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -55,15 +54,15 @@ oh, it also adds a `_latex_` method to `BooleanPolynomial`
 
 ---
 
-archive/issue_comments_028001.json:
+archive/issue_comments_027943.json:
 ```json
 {
     "body": "The line:\n\n```\ng.minimalizeAndTailReduce()\n```\n\nis nearly meaningless, as it ignores the result.\nFor having a reduced system set\nthe keyword\nredsb=True\nfor the groebner_basis call.\nFurthermore, your reduce implementation doesn't necessarily yield a unique (reduced) normal form.\nFor PolyBoRi >0.4 set\nstrat.optRedTail=True\nfor PolyBoRi <0.4\napply\np=red_tail(strat,p)\nto a normal form.\nMichael",
     "created_at": "2008-08-27T14:21:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28001",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27943",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -91,15 +90,15 @@ Michael
 
 ---
 
-archive/issue_comments_028002.json:
+archive/issue_comments_027944.json:
 ```json
 {
     "body": "Thanks for the review. The updated patch should address your comments.",
     "created_at": "2008-08-27T16:30:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28002",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27944",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -109,15 +108,15 @@ Thanks for the review. The updated patch should address your comments.
 
 ---
 
-archive/issue_comments_028003.json:
+archive/issue_comments_027945.json:
 ```json
 {
     "body": "Looks good,\nthere is still some minor thing, I detected.\nBut this is nothing about the patch, as it was buggy before:\n\nIt is possible to pass a deg_bound to\ngroebner_basis\n.\nSo the result is not garantied to be a GB.\nIn this case it looks strange to set\n\n```\nself.__gb = g\n```\n\n\nmaybe you can check this\nvia\n\n```\nif kwds.get(\"deg_bound\",False) is False:\n  self.__gb = g\n```\n\n\nThen I'll give it a positive review.\nMichael",
     "created_at": "2008-08-28T06:54:15Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28003",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27945",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -152,15 +151,15 @@ Michael
 
 ---
 
-archive/issue_comments_028004.json:
+archive/issue_comments_027946.json:
 ```json
 {
     "body": "ups: still, comments regarding the patch:\nThese are optional, as they only concern performance:\n\npbori.pyxline 3144\n\n```\n            s = sum([prod([x[i] for i in xrange(n) if v[i]],  \n\t            B.one_element()) for v in s],  \n                    B.zero_element()) \n            s = s.set()\n```\n\nshould be faster with\n\n```\n            s=BooleSet(sum([prod([x[i] for i in xrange(n) if v[i]],  \n\t            B.one_element()) for v in s]\n```\n\nHowever, you will have to handle the case of the empty set seperately(when there are no monomials) to make sure, that it is the right ring.\nI think, if we can make this easier upstream.\n\nFurthermore, if you really want to be clever: The use of prod is quite unoptimal here.\nIf you really want get these multiplications for variables fast, you should\nmultiply them in this way:\nx1*(x2*(x3*x4)))\nSo first use the indices behind. Note, that indices in PolyBoRi don't have to be identical to those in sage/Singular\nlex, degree lex: identical\ndp(dp_asc): reversed.\nBlocks of degree lexicographical: identical\nBlocks of degree reverse lex. : reversed in each block, so quite strange\n(if it is correctly implemented in sage)",
     "created_at": "2008-08-28T07:14:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28004",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27946",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -201,15 +200,15 @@ Blocks of degree reverse lex. : reversed in each block, so quite strange
 
 ---
 
-archive/issue_comments_028005.json:
+archive/issue_comments_027947.json:
 ```json
 {
     "body": "Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/pbori_improvements.patch) by @malb created at 2008-08-28 10:35:04",
     "created_at": "2008-08-28T10:35:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28005",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27947",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -219,15 +218,15 @@ Attachment [pbori_improvements.patch](tarball://root/attachments/some-uuid/ticke
 
 ---
 
-archive/issue_comments_028006.json:
+archive/issue_comments_027948.json:
 ```json
 {
     "body": "Replying to [comment:4 PolyBoRi]:\n> It is possible to pass a deg_bound to groebner_basis.\n\nI check for `deg_bound` in the updated patch. Thanks a lot for your detailed criticism, it helps (me) a lot! I give the patch a positive review now, since you wrote:\n\n> Then I'll give it a positive review. Michael",
     "created_at": "2008-08-28T10:36:46Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28006",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27948",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -242,15 +241,15 @@ I check for `deg_bound` in the updated patch. Thanks a lot for your detailed cri
 
 ---
 
-archive/issue_comments_028007.json:
+archive/issue_comments_027949.json:
 ```json
 {
     "body": "Replying to [comment:5 PolyBoRi]:\n> ups: still, comments regarding the patch:\n> These are optional, as they only concern performance:\n> \n> pbori.pyxline 3144\n> s=BooleSet(sum([prod([x[i] for i in xrange(n) if v[i]], B.one_element()) for v in s]\n\nIt seems we didn't implement BooleSet(BooleanPolynomial) in Sage. I'll check the upstream implementation and fix that.\n\n> If you really want get these multiplications for variables fast, you should\n> multiply them in this way:\n> x1*(x2*(x3*x4)))\n\nI don't do anything fancy for now, but I reversed the order of the product. This might be faster in the normal case which is lex if I understand your comment correctly.",
     "created_at": "2008-08-28T10:38:37Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28007",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27949",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -273,15 +272,15 @@ I don't do anything fancy for now, but I reversed the order of the product. This
 
 ---
 
-archive/issue_comments_028008.json:
+archive/issue_comments_027950.json:
 ```json
 {
     "body": "> \n> It seems we didn't implement BooleSet(BooleanPolynomial) in Sage. I'll check the upstream implementation and fix that.\n\nsorry, the line was long, without the sum:\njust\n\n```\nBooleSet([prod([x[i] for ...]\n```\n\n\nA BooleSet is a set of monomials.\nIt uses a more sophisticated addition.\n\n> \n> > If you really want get these multiplications for variables fast, you should\n> > multiply them in this way:\n> > x1*(x2*(x3*x4)))\n> \n> I don't do anything fancy for now, but I reversed the order of the product. This might be faster in the normal case which is lex if I understand your comment correctly.\n\nyes, it is much faster in Lex, even from a Python interpreter with boost::python calling overhead (in large examples, high degree monomials)\n\nYou have my positive review :-).",
     "created_at": "2008-08-28T10:43:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28008",
-    "user": "PolyBoRi"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27950",
+    "user": "https://trac.sagemath.org/admin/accounts/users/PolyBoRi"
 }
 ```
 
@@ -314,15 +313,15 @@ You have my positive review :-).
 
 ---
 
-archive/issue_comments_028009.json:
+archive/issue_comments_027951.json:
 ```json
 {
     "body": "I am seeing slight merge issues with my current alpha2 tree:\n\n```\nmabshoff@sage:/scratch/mabshoff/release-cycle/sage-3.1.2.alpha2/devel/sage$ patch -p1 < trac_3915_pbori_improvements.patch\npatching file sage/rings/polynomial/multi_polynomial_ideal.py\nHunk #1 FAILED at 391.\nHunk #2 succeeded at 1948 (offset 47 lines).\n1 out of 2 hunks FAILED -- saving rejects to file sage/rings/polynomial/multi_polynomial_ideal.py.rej\n```\n\nThe failing hunk deletes `contains`, so this should be easy to rebase.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-28T10:59:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28009",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27951",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -346,15 +345,15 @@ Michael
 
 ---
 
-archive/issue_comments_028010.json:
+archive/issue_comments_027952.json:
 ```json
 {
     "body": "Martin suggested in IRC just to delete the hunk that fails to apply manually. The reject is cause by some other code being applied in alpha2, so I will sort this out by posting an updated patch of Martin's patch and a second patch that deletes the hunk in question.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-28T22:30:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28010",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27952",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -368,15 +367,15 @@ Michael
 
 ---
 
-archive/issue_comments_028011.json:
+archive/issue_comments_027953.json:
 ```json
 {
     "body": "rebased patch of malb's - all that needed fixing was plot's parameter list",
     "created_at": "2008-08-29T01:42:44Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28011",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27953",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -386,15 +385,15 @@ rebased patch of malb's - all that needed fixing was plot's parameter list
 
 ---
 
-archive/issue_comments_028012.json:
+archive/issue_comments_027954.json:
 ```json
 {
     "body": "Attachment [trac_3915_pbori_improvements.patch](tarball://root/attachments/some-uuid/ticket3915/trac_3915_pbori_improvements.patch) by mabshoff created at 2008-08-29 01:43:08\n\nMerged trac_3915_pbori_improvements.patch in Sage 3.1.2.alpha2",
     "created_at": "2008-08-29T01:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28012",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27954",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -406,15 +405,15 @@ Merged trac_3915_pbori_improvements.patch in Sage 3.1.2.alpha2
 
 ---
 
-archive/issue_comments_028013.json:
+archive/issue_comments_027955.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-29T01:43:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/3915",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-28013",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/3915#issuecomment-27955",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

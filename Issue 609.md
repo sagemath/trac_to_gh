@@ -6,15 +6,13 @@ archive/issues_000609.json:
     "body": "Assignee: mabshoff\n\nEither remove the dependency on curses, or make curses a standard sage package.  Test building on more architectures.\n\nAnd, there should be some sort of voting on this in sage-devel by the people who would maintain it.\n\n\n```\n18:01 < sage> it's different.\n18:01 < sage> getting it to build is different than moving it into standard.\n18:01 < mabshoff> So we use ncurses for now, but once it becomes standard we should remove the dependency.\n18:01 < sage> moving into standard presupposes removing dependencies, worrying about longterm quality and\n              stability, etc.\n}}}}\n\nIssue created by migration from https://trac.sagemath.org/ticket/609\n\n",
     "created_at": "2007-09-07T01:04:33Z",
     "labels": [
-        "packages: standard",
-        "major",
-        "enhancement"
+        "component: packages: standard"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-duplicate/invalid/wontfix",
     "title": "make lie part a standard SAGE package",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/609",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -40,15 +38,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/609
 
 ---
 
-archive/issue_comments_003133.json:
+archive/issue_comments_003120.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2007-09-07T01:05:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3133",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3120",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -58,15 +56,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_003134.json:
+archive/issue_comments_003121.json:
 ```json
 {
     "body": "I am not sure this is desired any longer. William?\n\nCheers,\n\nMichael",
     "created_at": "2008-08-02T03:07:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3134",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3121",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -80,15 +78,15 @@ Michael
 
 ---
 
-archive/issue_comments_003135.json:
+archive/issue_comments_003122.json:
 ```json
 {
     "body": "You could also ask, for example, Dan Bump or Mike Hansen how much the combinat code covers the computations implemented in lie.",
     "created_at": "2008-08-02T11:51:54Z",
     "issue": "https://github.com/sagemath/sagetest/issues/609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3135",
-    "user": "@wdjoyner"
+    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3122",
+    "user": "https://github.com/wdjoyner"
 }
 ```
 
@@ -98,15 +96,15 @@ You could also ask, for example, Dan Bump or Mike Hansen how much the combinat c
 
 ---
 
-archive/issue_comments_003136.json:
+archive/issue_comments_003123.json:
 ```json
 {
     "body": "This is definitely not desired anymore.  Lie is not maintained or developed anymore.",
     "created_at": "2008-08-03T17:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3136",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3123",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -116,15 +114,15 @@ This is definitely not desired anymore.  Lie is not maintained or developed anym
 
 ---
 
-archive/issue_comments_003137.json:
+archive/issue_comments_003124.json:
 ```json
 {
     "body": "Resolution: invalid",
     "created_at": "2008-08-03T17:25:16Z",
     "issue": "https://github.com/sagemath/sagetest/issues/609",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3137",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/609#issuecomment-3124",
+    "user": "https://github.com/williamstein"
 }
 ```
 

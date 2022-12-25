@@ -6,15 +6,14 @@ archive/issues_009719.json:
     "body": "Assignee: itolkov, jason\n\nCC:  @videlec\n\nSee worksheet designed for testing #9203 and #9076 at #9023.  This should be added to our interact library, if the author is okay with this.\n\nIssue created by migration from https://trac.sagemath.org/ticket/9719\n\n",
     "created_at": "2010-08-10T15:08:50Z",
     "labels": [
-        "interact",
-        "minor",
-        "enhancement"
+        "component: interact",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.4",
     "title": "Add ellipse and arc bounding box examples to interact library",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/9719",
-    "user": "@kcrisman"
+    "user": "https://github.com/kcrisman"
 }
 ```
 Assignee: itolkov, jason
@@ -31,15 +30,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/9719
 
 ---
 
-archive/issue_comments_094856.json:
+archive/issue_comments_094698.json:
 ```json
 {
     "body": "Attachment [arcs and ellipses.sws](tarball://root/attachments/some-uuid/ticket9719/arcs and ellipses.sws) by @kcrisman created at 2010-08-10 15:09:13\n\nFrom #9203, by Vincent Delecroix",
     "created_at": "2010-08-10T15:09:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94856",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94698",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -51,15 +50,15 @@ From #9203, by Vincent Delecroix
 
 ---
 
-archive/issue_comments_094857.json:
+archive/issue_comments_094699.json:
 ```json
 {
     "body": "This worksheet would be the basis for anything done with this.",
     "created_at": "2010-08-10T15:10:01Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94857",
-    "user": "@kcrisman"
+    "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94699",
+    "user": "https://github.com/kcrisman"
 }
 ```
 
@@ -69,15 +68,15 @@ This worksheet would be the basis for anything done with this.
 
 ---
 
-archive/issue_comments_094858.json:
+archive/issue_comments_094700.json:
 ```json
 {
     "body": "It is all right for me, any suggestion for improvement welcome!",
     "created_at": "2010-08-16T17:47:34Z",
     "issue": "https://github.com/sagemath/sagetest/issues/9719",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94858",
-    "user": "@videlec"
+    "url": "https://github.com/sagemath/sagetest/issues/9719#issuecomment-94700",
+    "user": "https://github.com/videlec"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_001811.json:
     "body": "Assignee: @williamstein\n\n\n```\n\n\nOn Jan 17, 2008 12:08 AM, Dan Drake <dr.dan.drake@gmail.com> wrote:\n> Hello,\n> \n> I'd like to unattach a file that is currently attached. The\n\nThe command to do this used to be called \"detach\".  It has mysteriously completely\nvanished from Sage since when I wrote it!  It's in the notebook still, but it isn't available\nfrom the command line anymore.  \n\nAnyway, I've reported this as trac #\n\nIn the meantime you can work around this problem as illustrated below:\n\nsage: sage: attach example.sage\nThis is a simple SAGE example script.\n...\nsage: import sage.misc.interpreter\nsage: sage.misc.interpreter.attached\n{'/home2/sage/build/sage-2.10.alpha4/example.sage': 1197908255.0}\nsage: del sage.misc.interpreter.attached['/home2/sage/build/sage-2.10.alpha4/example.sage']\nsage: attached_files()\n[]\n\n\n\n\n> documentation for attach says that I can remove files from\n> attached_files() to do this, but that doesn't seem to work:\n> \n>   sage: attached_files()\n>   ['/home/drake/code/sage/foo.sage']\n>   sage: attached_files().pop()\n>   '/home/drake/code/sage/foo.sage'\n>   sage: attached_files()\n>   ['/home/drake/code/sage/foo.sage']\n> \n> It doesn't work because I'm accessing the list *returned by*\n> attached_files; I need to access whatever attached_files() looks at to\n> get that list. I used ??attached_files, but I don't seem to have access\n> to the 'attached' variable.\n> \n> What I'd really like, though, is an 'unattach' function!\n> \n\n```\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/1811\n\n",
     "created_at": "2008-01-17T21:59:31Z",
     "labels": [
-        "user interface",
-        "major",
+        "component: user interface",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.3.1",
     "title": "command line detach -- completely missing from Sage!?",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/1811",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: @williamstein
@@ -78,15 +77,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/1811
 
 ---
 
-archive/issue_comments_011451.json:
+archive/issue_comments_011422.json:
 ```json
 {
     "body": "Changing type from defect to enhancement.",
     "created_at": "2009-01-22T22:37:35Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11451",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11422",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -96,15 +95,15 @@ Changing type from defect to enhancement.
 
 ---
 
-archive/issue_comments_011452.json:
+archive/issue_comments_011423.json:
 ```json
 {
     "body": "With #7514 merged, should we close this ticket?",
     "created_at": "2010-01-16T19:45:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11452",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11423",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -114,15 +113,15 @@ With #7514 merged, should we close this ticket?
 
 ---
 
-archive/issue_comments_011453.json:
+archive/issue_comments_011424.json:
 ```json
 {
     "body": "Changing status from new to needs_info.",
     "created_at": "2010-01-16T19:45:36Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11453",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11424",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -132,15 +131,15 @@ Changing status from new to needs_info.
 
 ---
 
-archive/issue_comments_011454.json:
+archive/issue_comments_011425.json:
 ```json
 {
     "body": "Yes, #7514 does this, I think.",
     "created_at": "2010-01-17T14:12:12Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11454",
-    "user": "@williamstein"
+    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11425",
+    "user": "https://github.com/williamstein"
 }
 ```
 
@@ -150,15 +149,15 @@ Yes, #7514 does this, I think.
 
 ---
 
-archive/issue_comments_011455.json:
+archive/issue_comments_011426.json:
 ```json
 {
     "body": "Quirk: Use `detach('test.sage')` to detach `test.sage`.",
     "created_at": "2010-01-20T11:18:49Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11455",
-    "user": "@qed777"
+    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11426",
+    "user": "https://github.com/qed777"
 }
 ```
 
@@ -168,15 +167,15 @@ Quirk: Use `detach('test.sage')` to detach `test.sage`.
 
 ---
 
-archive/issue_comments_011456.json:
+archive/issue_comments_011427.json:
 ```json
 {
     "body": "Close as fixed by #7514.",
     "created_at": "2010-02-01T01:41:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11456",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11427",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 
@@ -186,15 +185,15 @@ Close as fixed by #7514.
 
 ---
 
-archive/issue_comments_011457.json:
+archive/issue_comments_011428.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-02-01T01:41:09Z",
     "issue": "https://github.com/sagemath/sagetest/issues/1811",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11457",
-    "user": "mvngu"
+    "url": "https://github.com/sagemath/sagetest/issues/1811#issuecomment-11428",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mvngu"
 }
 ```
 

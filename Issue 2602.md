@@ -6,15 +6,14 @@ archive/issues_002602.json:
     "body": "Assignee: @williamstein\n\nSee the patch for updated examples.  No new functionality is introduced; the examples are just updated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/2602\n\n",
     "created_at": "2008-03-19T19:19:00Z",
     "labels": [
-        "graphics",
-        "major",
+        "component: graphics",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-2.11",
     "title": "plot_vector_field docs are unnecessarily complicated (and use the slow lambda functions!)",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2602",
-    "user": "@jasongrout"
+    "user": "https://github.com/jasongrout"
 }
 ```
 Assignee: @williamstein
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2602
 
 ---
 
-archive/issue_comments_017804.json:
+archive/issue_comments_017766.json:
 ```json
 {
     "body": "Attachment [plot_vector_field-docs.patch](tarball://root/attachments/some-uuid/ticket2602/plot_vector_field-docs.patch) by @mwhansen created at 2008-03-19 19:28:38\n\nLooks good to me.",
     "created_at": "2008-03-19T19:28:38Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2602",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17804",
-    "user": "@mwhansen"
+    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17766",
+    "user": "https://github.com/mwhansen"
 }
 ```
 
@@ -49,15 +48,15 @@ Looks good to me.
 
 ---
 
-archive/issue_comments_017805.json:
+archive/issue_comments_017767.json:
 ```json
 {
     "body": "Merged in Sage 2.11.alpha0",
     "created_at": "2008-03-19T23:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2602",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17805",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17767",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -67,15 +66,15 @@ Merged in Sage 2.11.alpha0
 
 ---
 
-archive/issue_comments_017806.json:
+archive/issue_comments_017768.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-03-19T23:40:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2602",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17806",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2602#issuecomment-17768",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

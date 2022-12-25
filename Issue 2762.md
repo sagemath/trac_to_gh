@@ -6,15 +6,14 @@ archive/issues_002762.json:
     "body": "Assignee: @timabbott\n\nThis fix makes the Debian build of FLINT on amd64 (and makes it run with the right CFLAGS on i386, too)\n\nIssue created by migration from https://trac.sagemath.org/ticket/2762\n\n",
     "created_at": "2008-04-01T21:31:17Z",
     "labels": [
-        "debian-package",
-        "major",
+        "component: debian-package",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-3.0",
     "title": "[with patch; needs review] Debian amd64 fixes for FLINT",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2762",
-    "user": "@timabbott"
+    "user": "https://github.com/timabbott"
 }
 ```
 Assignee: @timabbott
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2762
 
 ---
 
-archive/issue_comments_018975.json:
+archive/issue_comments_018935.json:
 ```json
 {
     "body": "Attachment [flint-cflags.patch](tarball://root/attachments/some-uuid/ticket2762/flint-cflags.patch) by @timabbott created at 2008-04-01 21:31:24",
     "created_at": "2008-04-01T21:31:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2762#issuecomment-18975",
-    "user": "@timabbott"
+    "url": "https://github.com/sagemath/sagetest/issues/2762#issuecomment-18935",
+    "user": "https://github.com/timabbott"
 }
 ```
 
@@ -47,15 +46,15 @@ Attachment [flint-cflags.patch](tarball://root/attachments/some-uuid/ticket2762/
 
 ---
 
-archive/issue_comments_018976.json:
+archive/issue_comments_018936.json:
 ```json
 {
     "body": "Patch looks good to me. Positive review.\n\nCheers,\n\nMichael",
     "created_at": "2008-04-02T00:25:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2762#issuecomment-18976",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2762#issuecomment-18936",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -69,15 +68,15 @@ Michael
 
 ---
 
-archive/issue_comments_018977.json:
+archive/issue_comments_018937.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-04-02T00:28:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2762#issuecomment-18977",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2762#issuecomment-18937",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -87,15 +86,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_018978.json:
+archive/issue_comments_018938.json:
 ```json
 {
     "body": "Merged in Sage 3.0.alpha0",
     "created_at": "2008-04-02T00:28:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2762",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2762#issuecomment-18978",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2762#issuecomment-18938",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_004327.json:
     "body": "Assignee: @mwhansen\n\nCC:  sage-combinat alubovsky\n\nPort from MuPAD-Combinat the plotting facilities for (affine) root systems.\n\nThis will require in particular the port of:\n- row/column annihilator\n- a,acheck,c coeffs\n- translation factors\n\nIssue created by migration from https://trac.sagemath.org/ticket/4327\n\n",
     "created_at": "2008-10-20T08:40:33Z",
     "labels": [
-        "combinatorics",
-        "minor",
-        "enhancement"
+        "component: combinatorics",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-5.10",
     "title": "Root systems plots",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4327",
-    "user": "@nthiery"
+    "user": "https://github.com/nthiery"
 }
 ```
 Assignee: @mwhansen
@@ -36,15 +35,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4327
 
 ---
 
-archive/issue_comments_031711.json:
+archive/issue_comments_031649.json:
 ```json
 {
     "body": "I find this ticket is completely integrated inside #4326\n\nI remember that i did this job. So feel free to merge/destroy/erase this ticket. I don't know the current way to dealt with such ticket...",
     "created_at": "2009-07-29T08:22:04Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31711",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31649",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -56,15 +55,15 @@ I remember that i did this job. So feel free to merge/destroy/erase this ticket.
 
 ---
 
-archive/issue_comments_031712.json:
+archive/issue_comments_031650.json:
 ```json
 {
     "body": "Actually, there is still room for improvement to the current plots. So let's keep this open. I'll just update the description.",
     "created_at": "2009-07-30T13:45:17Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31712",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31650",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -74,15 +73,15 @@ Actually, there is still room for improvement to the current plots. So let's kee
 
 ---
 
-archive/issue_comments_031713.json:
+archive/issue_comments_031651.json:
 ```json
 {
     "body": "Hello,\n\nHere is a patch which realize the  porting of what was done in MuPAD... I tried to do my best but this patch really need a strong English language review. For anybody interssinting in reviewing, commenting, or anything... here are some pointers :\n\nMuPAD example :\nhttp://wstein.org/home/wstein/www/home/nthiery/2008-03-01-RootSystemPlots.html\n\nSage-support discussion :\nhttps://groups.google.com/forum/?hl=fr&fromgroups=#!topic/sage-support/fRTEE_IECzU",
     "created_at": "2012-09-13T12:30:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31713",
-    "user": "nborie"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31651",
+    "user": "https://trac.sagemath.org/admin/accounts/users/nborie"
 }
 ```
 
@@ -100,15 +99,15 @@ https://groups.google.com/forum/?hl=fr&fromgroups=#!topic/sage-support/fRTEE_IEC
 
 ---
 
-archive/issue_comments_031714.json:
+archive/issue_comments_031652.json:
 ```json
 {
     "body": "Hellooooooooooo !!\n\nNicolas M. Thi\u00e9ry : that's the ticket that should have been set to `needs_review` ages ago and never was. It would be nice to have this into Sage, if only to be able to print beautifu Sage-combinat posters with fancy pictures inside.\n\nNathann",
     "created_at": "2013-01-21T14:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31714",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31652",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -122,15 +121,15 @@ Nathann
 
 ---
 
-archive/issue_comments_031715.json:
+archive/issue_comments_031653.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2013-01-21T14:02:29Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31715",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31653",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
@@ -140,15 +139,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_031716.json:
+archive/issue_comments_031654.json:
 ```json
 {
     "body": "I'll upload a (quite heavily) refactored patch shortly.",
     "created_at": "2013-02-25T01:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31716",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31654",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -158,15 +157,15 @@ I'll upload a (quite heavily) refactored patch shortly.
 
 ---
 
-archive/issue_comments_031717.json:
+archive/issue_comments_031655.json:
 ```json
 {
     "body": "Changing status from needs_review to needs_work.",
     "created_at": "2013-02-25T01:37:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31717",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31655",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -176,15 +175,15 @@ Changing status from needs_review to needs_work.
 
 ---
 
-archive/issue_comments_031718.json:
+archive/issue_comments_031656.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-03-04T03:50:41Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31718",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31656",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -194,15 +193,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_031719.json:
+archive/issue_comments_031657.json:
 ```json
 {
     "body": "So, the test pass, but the startup module complains about the new module that is imported on startup. I'll try with a lazy import tomorrow. I leave it as needs review, as the review of all the rest can continue!",
     "created_at": "2013-03-05T05:32:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31719",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31657",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -212,15 +211,15 @@ So, the test pass, but the startup module complains about the new module that is
 
 ---
 
-archive/issue_comments_031720.json:
+archive/issue_comments_031658.json:
 ```json
 {
     "body": "Replying to [comment:8 nthiery]:\n> So, the test pass, but the startup module complains about the new module that is imported on startup. I'll try with a lazy import tomorrow. I leave it as needs review, as the review of all the rest can continue!\n\nHmm, I just had a look, but am not sure how to handle this. Lazy importing works just fine for the code, but then:\n\n```\n    sage: sage.combinat.root_system.plot?\n```\n\n\nfails, whereas I think we want to support this natural way to access\nthis tutorial.\n\nThe seemingly natural solution would be to lazy import the full module. However:\n\n```\nsage: sage.misc.lazy_import.lazy_import('sage.combinat.root_system', 'plot')\nsage: type(plot)\nsage.misc.lazy_import.LazyImport\nsage: plot\n/opt/sage/sage : ligne 135 :  6989 Erreur de segmentation  (core dumped) \"$SAGE_ROOT/spkg/bin/sage\" \"$@\"\nProcess SAGE exited abnormally with code 139\n```\n\n\nI'll post on Sage-devel on this topic. In the mean time the rest of\nthe review can continue!\n\nIf we can't get a good solution shortly, I am at this point in favor\nof sticking to a non lazy import in order to allow for accessing the\ntutorial as above, even if the price is to import (yet another) new\nmodule in Sage.\n\nCheers,\n                         Nicolas",
     "created_at": "2013-03-06T03:22:40Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31720",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31658",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -264,15 +263,15 @@ Cheers,
 
 ---
 
-archive/issue_comments_031721.json:
+archive/issue_comments_031659.json:
 ```json
 {
     "body": "The updated patch implements wireframe drawing for 3D alcoves, and specifying a color as None to disable certain pieces. It also fixes a couple typos here and there in the doc.",
     "created_at": "2013-03-11T03:32:31Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31721",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31659",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -282,15 +281,15 @@ The updated patch implements wireframe drawing for 3D alcoves, and specifying a 
 
 ---
 
-archive/issue_comments_031722.json:
+archive/issue_comments_031660.json:
 ```json
 {
     "body": "Hey Nicolas<sup>2</sup>,\n\nDoes this conflict with #2023, and if so, which patch do you want to have the dependency?\n\nThanks,\n\nTravis",
     "created_at": "2013-04-13T20:22:50Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31722",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31660",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -306,15 +305,15 @@ Travis
 
 ---
 
-archive/issue_comments_031723.json:
+archive/issue_comments_031661.json:
 ```json
 {
     "body": "It could possibly conflict. Both patches should get soon into Sage, and I already had a good look at #2023. So once we have had that little discussion with Dan, we should just get it in. And then #4327 which is already based on it anyway.",
     "created_at": "2013-04-13T20:31:53Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31723",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31661",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -324,15 +323,15 @@ It could possibly conflict. Both patches should get soon into Sage, and I alread
 
 ---
 
-archive/issue_comments_031724.json:
+archive/issue_comments_031662.json:
 ```json
 {
     "body": "Folded in Travis' reviewers patch and reuploaded.",
     "created_at": "2013-05-07T20:12:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31724",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31662",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -342,15 +341,15 @@ Folded in Travis' reviewers patch and reuploaded.
 
 ---
 
-archive/issue_comments_031725.json:
+archive/issue_comments_031663.json:
 ```json
 {
     "body": "Looks good. Thank you.",
     "created_at": "2013-05-07T20:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31725",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31663",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -360,15 +359,15 @@ Looks good. Thank you.
 
 ---
 
-archive/issue_comments_031726.json:
+archive/issue_comments_031664.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-05-07T20:41:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31726",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31664",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -378,15 +377,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_031727.json:
+archive/issue_comments_031665.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2013-05-08T18:04:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31727",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31665",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -396,15 +395,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_031728.json:
+archive/issue_comments_031666.json:
 ```json
 {
     "body": "Uploaded a new version (double checked by Travis) fixing one of the long doctest failure on 5.10. It was caused by the new matplotlib that emits a warning for arrows of length 0:\n\n```\nsage: arrow([1,1],[1,1])\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3039: RuntimeWarning: invalid value encountered in double_scalars\n  ddx = pad_projected * dx / cp_distance\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3040: RuntimeWarning: invalid value encountered in double_scalars\n  ddy = pad_projected * dy / cp_distance\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3043: RuntimeWarning: invalid value encountered in double_scalars\n  dx = dx / cp_distance * head_dist\n/home/nthiery/sage-5.10.beta1/local/lib/python2.7/site-packages/matplotlib/patches.py:3044: RuntimeWarning: invalid value encountered in double_scalars\n  dy = dy / cp_distance * head_dist\n```\n\n\nThe other failure is due to some doctests being ignored. See:\n\n https://groups.google.com/forum/?fromgroups=#!topic/sage-devel/4m1ydGdiGf8",
     "created_at": "2013-05-08T19:34:00Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31728",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31666",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -431,15 +430,15 @@ The other failure is due to some doctests being ignored. See:
 
 ---
 
-archive/issue_comments_031729.json:
+archive/issue_comments_031667.json:
 ```json
 {
     "body": "Changing status from needs_work to needs_review.",
     "created_at": "2013-05-09T01:50:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31729",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31667",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -449,15 +448,15 @@ Changing status from needs_work to needs_review.
 
 ---
 
-archive/issue_comments_031730.json:
+archive/issue_comments_031668.json:
 ```json
 {
     "body": "Hi Travis,\n\nThe updated patch fixes the doc so that later on doctests won't be\nignored, and update the number of ignored doctests in the mean time.\n\nAll long tests passed.\n\nHere is the metadiff:\n\n```\ndiff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_system_plot_refactor-nt.patch\n--- a/trac_4327-root_system_plot_refactor-nt.patch\n+++ b/trac_4327-root_system_plot_refactor-nt.patch\n@@ -1,5 +1,5 @@\n # HG changeset patch\n-# Parent aa718acb2dbac8faab463c994aa7f4052a546363\n+# Parent 89d0e0f941ae79ca2d8dd83d3ac6d20a4b82382a\n #4327: Refactor and extend root systems plots\n \n diff --git a/doc/en/reference/combinat/root_systems.rst b/doc/en/reference/combinat/root_systems.rst\n@@ -2569,7 +2569,7 @@ diff --git a/sage/combinat/root_system/t\n  import ambient_space\n  \n  class AmbientSpace(ambient_space.AmbientSpace):\n-@@ -135,13 +136,38 @@ class AmbientSpace(ambient_space.Ambient\n+@@ -135,13 +136,36 @@ class AmbientSpace(ambient_space.Ambient\n          given, returns (k, ... ,k), the k-th power of the\n          determinant.\n  \n@@ -2582,14 +2582,8 @@ diff --git a/sage/combinat/root_system/t\n          \"\"\"\n          return self.sum(self.monomial(j)*k for j in range(self.n))\n  \n-+    \"\"\"\n-+    Use barycentric projection by default\n-+\n-+    .. SEEALSO::\n-+\n-+        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations._plot_projection`\n-+\n-+    EXAMPLES::\n++    __doc__ += \"\"\"\n++    By default, this ambient space uses the barycentric projection for plotting::\n +\n +        sage: L = RootSystem([\"A\",2]).ambient_space()\n +        sage: e = L.basis()\n@@ -2604,6 +2598,10 @@ diff --git a/sage/combinat/root_system/t\n +        (2, 2, 3, 0)\n +        sage: L._plot_projection(l)\n +        (0, -1121/1189, 7/3)\n++\n++    .. SEEALSO::\n++\n++        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ParentMethods._plot_projection`\n +    \"\"\"\n +    _plot_projection = RootLatticeRealizations.ParentMethods.__dict__['_plot_projection_barycentric']\n  \n@@ -2621,18 +2619,12 @@ diff --git a/sage/combinat/root_system/t\n  class AmbientSpace(ambient_space.AmbientSpace):\n      \"\"\"\n      EXAMPLES::\n-@@ -82,6 +82,32 @@ class AmbientSpace(ambient_space.Ambient\n+@@ -82,6 +82,30 @@ class AmbientSpace(ambient_space.Ambient\n          return Family({ 1: self([1,0,-1]),\n                          2: self([2,-1,-1])})\n  \n-+    \"\"\"\n-+    Use barycentric projection by default\n-+\n-+    .. SEEALSO::\n-+\n-+        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations._plot_projection`\n-+\n-+    EXAMPLES::\n++    __doc__ += \"\"\"\n++    By default, this ambient space uses the barycentric projection for plotting::\n +\n +        sage: L = RootSystem([\"G\",2]).ambient_space()\n +        sage: e = L.basis()\n@@ -2647,6 +2639,10 @@ diff --git a/sage/combinat/root_system/t\n +        (2, 2, 3, 0)\n +        sage: L._plot_projection(l)\n +        (0, -1121/1189, 7/3)\n++\n++    .. SEEALSO::\n++\n++        - :meth:`sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.ParentMethods._plot_projection`\n +    \"\"\"\n +    _plot_projection = RootLatticeRealizations.ParentMethods.__dict__['_plot_projection_barycentric']\n +\n@@ -3011,3 +3007,15 @@ diff --git a/sage/combinat/root_system/w\n -            G.axes(False)\n -            return G\n -\n+diff --git a/sage/doctest/sources.py b/sage/doctest/sources.py\n+--- a/sage/doctest/sources.py\n++++ b/sage/doctest/sources.py\n+@@ -675,6 +675,8 @@ class FileDocTestSource(DocTestSource):\n+             There are 18 tests in sage/combinat/partition.py that are not being run\n+             There are 12 tests in sage/combinat/tableau.py that are not being run\n+             There are 15 tests in sage/combinat/root_system/cartan_type.py that are not being run\n++            There are 8 tests in sage/combinat/root_system/type_A.py that are not being run\n++            There are 8 tests in sage/combinat/root_system/type_G.py that are not being run\n+             There are 3 unexpected tests being run in sage/doctest/parsing.py\n+             There are 1 unexpected tests being run in sage/doctest/reporting.py\n+             There are 9 tests in sage/graphs/graph_plot.py that are not being run\n```\n",
     "created_at": "2013-05-09T01:50:28Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31730",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31668",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -574,15 +573,15 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
 
 ---
 
-archive/issue_comments_031731.json:
+archive/issue_comments_031669.json:
 ```json
 {
     "body": "Looks good to me. Thanks Nicolas.",
     "created_at": "2013-05-09T14:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31731",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31669",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -592,15 +591,15 @@ Looks good to me. Thanks Nicolas.
 
 ---
 
-archive/issue_comments_031732.json:
+archive/issue_comments_031670.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2013-05-09T14:45:27Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31732",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31670",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -610,15 +609,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_031733.json:
+archive/issue_comments_031671.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2013-05-13T16:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31733",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31671",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -628,15 +627,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_031734.json:
+archive/issue_comments_031672.json:
 ```json
 {
     "body": "The PDF documentation doesn't build:\n\n```\n! Package inputenc Error: Keyboard character used is undefined\n(inputenc)                in inputencoding `utf8x'.\n\nSee the inputenc package documentation for explanation.\nType  H <return>  for immediate help.\n ...\n\nl.96802 ...}1\\PYGZcb{}\\$' at the point (0.0,1.0)]}\n\n?  [54]\n! Emergency stop.\n ...\n\nl.96802 ...}1\\PYGZcb{}\\$' at the point (0.0,1.0)]}\n\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on combinat.log.\n```\n",
     "created_at": "2013-05-13T16:16:22Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31734",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31672",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -667,15 +666,15 @@ Transcript written on combinat.log.
 
 ---
 
-archive/issue_comments_031735.json:
+archive/issue_comments_031673.json:
 ```json
 {
     "body": "Attachment [trac_4327-root_system_plot_refactor-nt.patch](tarball://root/attachments/some-uuid/ticket4327/trac_4327-root_system_plot_refactor-nt.patch) by @nthiery created at 2013-05-13 20:02:43",
     "created_at": "2013-05-13T20:02:43Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31735",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31673",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -685,15 +684,15 @@ Attachment [trac_4327-root_system_plot_refactor-nt.patch](tarball://root/attachm
 
 ---
 
-archive/issue_comments_031736.json:
+archive/issue_comments_031674.json:
 ```json
 {
     "body": "Replying to [comment:23 jdemeyer]:\n> The PDF documentation doesn't build:\n> {{{\n> ! Package inputenc Error: Keyboard character used is undefined\n> (inputenc)                in inputencoding `utf8x'.\n> ...\n> }}}\n\nAh shoot, sorry about that. The docstrings for this method was missing its starting 'r', and which caused a `\\a` in it to be misinterpreted as a non UTF-8 character.\n\nThe newly updated patch fixes this. While I was at it, it fixes half a dozen other missing 'r' in other methods introduced by this patch.\n\nSince the change is trivial, I am allowing myself to put it back to positive review.\n\nFor the record, here is the diff between the two patches:\n\n```\ndiff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_system_plot_refactor-nt.patch\n--- a/trac_4327-root_system_plot_refactor-nt.patch\n+++ b/trac_4327-root_system_plot_refactor-nt.patch\n@@ -1,5 +1,5 @@\n # HG changeset patch\n-# Parent 89d0e0f941ae79ca2d8dd83d3ac6d20a4b82382a\n+# Parent 75e26170e32bcbb5f78e1784a1df985ecb71e1db\n #4327: Refactor and extend root systems plots\n \n diff --git a/doc/en/reference/combinat/root_systems.rst b/doc/en/reference/combinat/root_systems.rst\n@@ -631,7 +631,7 @@ new file mode 100644\n +lazy_import(\"sage.combinat.root_system.root_lattice_realizations\", \"RootLatticeRealizations\")\n +\n +class PlotOptions:\n-+    \"\"\"\n++    r\"\"\"\n +    A class for plotting options for root lattice realizations.\n +\n +    .. SEEALSO::\n@@ -740,7 +740,7 @@ new file mode 100644\n +\n +    @cached_method\n +    def in_bounding_box(self, x):\n-+        \"\"\"\n++        r\"\"\"\n +        Return whether ``x`` is in the bounding box.\n +\n +        INPUT:\n@@ -763,7 +763,7 @@ new file mode 100644\n +        return self.bounding_box.contains(self.projection(x))\n +\n +    def text(self, label, position):\n-+        \"\"\"\n++        r\"\"\"\n +        Return text widget with label ``label`` at position ``position``\n +\n +        INPUT:\n@@ -851,7 +851,7 @@ new file mode 100644\n +                return self._color(\"other\")\n +\n +    def projection(self, v):\n-+        \"\"\"\n++        r\"\"\"\n +        Return the projection of ``v``.\n +\n +        INPUT:\n@@ -880,7 +880,7 @@ new file mode 100644\n +        return v\n +\n +    def intersection_at_level_1(self, x):\n-+        \"\"\"\n++        r\"\"\"\n +        Return ``x`` scaled at the appropriate level, if level is set;\n +        otherwise return ``x``.\n +\n@@ -912,7 +912,7 @@ new file mode 100644\n +            return x\n +\n +    def empty(self, *args):\n-+        \"\"\"\n++        r\"\"\"\n +        Return an empty plot.\n +\n +        EXAMPLES::\n@@ -1255,7 +1255,7 @@ new file mode 100644\n +\n +@cached_function\n +def barycentric_projection_matrix(n, angle=0):\n-+    \"\"\"\n++    r\"\"\"\n +    Returns a family of `n+1` vectors evenly spaced in a real vector space of dimension `n`\n +\n +    Those vectors are of norm `1`, the scalar product between any two\n@@ -2339,7 +2339,7 @@ diff --git a/sage/combinat/root_system/r\n +\n +\n +        def plot_bounding_box(self, **options):\n-+            \"\"\"\n++            r\"\"\"\n +            Plot the bounding box.\n +\n +            INPUT:\n\n```\n",
     "created_at": "2013-05-13T20:08:13Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31736",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31674",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -804,15 +803,15 @@ diff --git a/trac_4327-root_system_plot_refactor-nt.patch b/trac_4327-root_syste
 
 ---
 
-archive/issue_comments_031737.json:
+archive/issue_comments_031675.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2013-05-13T20:08:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31737",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31675",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -822,15 +821,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_031738.json:
+archive/issue_comments_031676.json:
 ```json
 {
     "body": "Replying to [comment:24 nthiery]:\n> Since the change is trivial, I am allowing myself to put it back to positive review.\n\nAssuming that you checked that the PDF documentation does build, that's okay.",
     "created_at": "2013-05-13T20:18:18Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31738",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31676",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -843,15 +842,15 @@ Assuming that you checked that the PDF documentation does build, that's okay.
 
 ---
 
-archive/issue_comments_031739.json:
+archive/issue_comments_031677.json:
 ```json
 {
     "body": "Replying to [comment:26 jdemeyer]:\n> Assuming that you checked that the PDF documentation does build, that's okay.\n\nYup, I did. Well at least for reference/combinat.",
     "created_at": "2013-05-13T21:09:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31739",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31677",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -864,15 +863,15 @@ Yup, I did. Well at least for reference/combinat.
 
 ---
 
-archive/issue_comments_031740.json:
+archive/issue_comments_031678.json:
 ```json
 {
     "body": "Changing status from positive_review to needs_work.",
     "created_at": "2013-05-16T06:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31740",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31678",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -882,15 +881,15 @@ Changing status from positive_review to needs_work.
 
 ---
 
-archive/issue_comments_031741.json:
+archive/issue_comments_031679.json:
 ```json
 {
     "body": "\n```\nsage -t devel/sage/sage/combinat/root_system/root_lattice_realizations.py\n**********************************************************************\nFile \"devel/sage/sage/combinat/root_system/root_lattice_realizations.py\", line 1840, in sage.combinat.root_system.root_lattice_realizations.RootLatticeRealizations.Pare\nntMethods.plot_roots\nFailed example:\n    list(RootSystem([\"A\",2]).root_lattice().plot_roots(\"all\"))\nExpected:\n    [Arrow from (0.0,0.0) to (1.0,0.0),\n     Text '$\\alpha_{1}$' at the point (1.05,0.0),\n     Arrow from (0.0,0.0) to (0.0,1.0),\n     Text '$\\alpha_{2}$' at the point (0.0,1.05),\n     Arrow from (0.0,0.0) to (1.0,1.0),\n     Text '$\\alpha_{1} + \\alpha_{2}$' at the point (1.05,1.05),\n     Arrow from (0.0,0.0) to (-1.0,0.0),\n     Text '$\\left(-1\\right)\\alpha_{1}$' at the point (-1.05,0.0),\n     Arrow from (0.0,0.0) to (0.0,-1.0),\n     Text '$\\left(-1\\right)\\alpha_{2}$' at the point (0.0,-1.05),\n     Arrow from (0.0,0.0) to (-1.0,-1.0),\n     Text '$\\left(-1\\right)\\alpha_{1} + \\left(-1\\right)\\alpha_{2}$' at the point (-1.05,-1.05)]\nGot:\n    [Arrow from (0.0,0.0) to (1.0,0.0), Text '$\\alpha_{1}$' at the point (1.05,0.0), Arrow from (0.0,0.0) to (0.0,1.0), Text '$\\alpha_{2}$' at the point (0.0,1.05), Arr\now from (0.0,0.0) to (1.0,1.0), Text '$\\alpha_{1} + \\alpha_{2}$' at the point (1.05,1.05), Arrow from (0.0,0.0) to (-1.0,0.0), Text '$-\\alpha_{1}$' at the point (-1.05,\n0.0), Arrow from (0.0,0.0) to (0.0,-1.0), Text '$-\\alpha_{2}$' at the point (0.0,-1.05), Arrow from (0.0,0.0) to (-1.0,-1.0), Text '$-\\alpha_{1} - \\alpha_{2}$' at the p\noint (-1.05,-1.05)]\n**********************************************************************\n```\n",
     "created_at": "2013-05-16T06:19:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31741",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31679",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -928,15 +927,15 @@ oint (-1.05,-1.05)]
 
 ---
 
-archive/issue_comments_031742.json:
+archive/issue_comments_031680.json:
 ```json
 {
     "body": "Never mind, last doctest failure is because of #13735.",
     "created_at": "2013-05-16T06:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31742",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31680",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -946,15 +945,15 @@ Never mind, last doctest failure is because of #13735.
 
 ---
 
-archive/issue_comments_031743.json:
+archive/issue_comments_031681.json:
 ```json
 {
     "body": "Changing status from needs_work to positive_review.",
     "created_at": "2013-05-16T06:28:33Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31743",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31681",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -964,15 +963,15 @@ Changing status from needs_work to positive_review.
 
 ---
 
-archive/issue_comments_031744.json:
+archive/issue_comments_031682.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2013-05-17T06:33:19Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31744",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31682",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -982,15 +981,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_031745.json:
+archive/issue_comments_031683.json:
 ```json
 {
     "body": "Yippee!\n\nThanks Nicolas, Travis, and everyone who contributed to get this done!",
     "created_at": "2013-05-19T22:16:25Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31745",
-    "user": "@nthiery"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31683",
+    "user": "https://github.com/nthiery"
 }
 ```
 
@@ -1002,15 +1001,15 @@ Thanks Nicolas, Travis, and everyone who contributed to get this done!
 
 ---
 
-archive/issue_comments_031746.json:
+archive/issue_comments_031684.json:
 ```json
 {
     "body": "The `plot_expose()` function should be a method of plot objects. Its definitely useful outside of root lattices. See #14640",
     "created_at": "2013-05-25T10:57:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4327",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31746",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/4327#issuecomment-31684",
+    "user": "https://github.com/vbraun"
 }
 ```
 

@@ -6,15 +6,14 @@ archive/issues_002151.json:
     "body": "Assignee: @malb\n\nKeywords: load quotient ring\n\nCreate a ring, an ideal and the quotient ring, and save ideal and quotient:\n\n```\nsage: Ring = PolynomialRing(QQ,'x,y,z')\nsage: R = PolynomialRing(QQ,'x,y,z')\nsage: Rel=R.ideal('x*y*z-1')\nsage: QR=R.quotient_ring(Rel)\nsage: QR('y')\nybar\nsage: save(Rel,'Relation')\nsage: save(QR,'Quotient')\nsage: quit\n```\n\n\nAfter restart, try to reconstruct R,Rel and QR:\n\n```\nsage: Rel=load('Relation.sobj')\nsage: Rel\nIdeal (x*y*z - 1) of Multivariate Polynomial Ring in x, y, z over Rational Field\nsage: R=Rel.ring()\nsage: R('y')\ny\nsage: QR=R.quotient_ring(Rel)\nsage: QR\nQuotient of Multivariate Polynomial Ring in x, y, z over Rational Field by the ideal (x*y*z - 1)\nsage: QR('y')\nsage: QR.gens()\n```\n\n\nBoth the last two commands result in a traceback, ending with\n\n```\n<type 'exceptions.TypeError'>: Singular error:\n   ? `x` is not defined\n   ? error occurred in STDIN line 21: `def sage10=[x*y*z - 1];`\n```\n\n\nAlso the other saved data do not help:\n\n```\nsage: QR = load('Quotient')\nsage: QR('y')\n```\n\nresulting in the same error.\n\nWilliam Stein suggested the following workaround, which may also help to track down the bug:\n\n```\nsage: R._singular_()\n\n//   characteristic : 0\n//   number of vars : 3\n//        block   1 : ordering dp\n//                  : names    x y z\n//        block   2 : ordering C\nsage: QR('y')\nybar\n```\n\n\n\nIssue created by migration from https://trac.sagemath.org/ticket/2151\n\n",
     "created_at": "2008-02-13T20:54:50Z",
     "labels": [
-        "commutative algebra",
-        "major",
+        "component: commutative algebra",
         "bug"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-4.5",
     "title": "Error in quotient ring loaded from a file",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/2151",
-    "user": "@simon-king-jena"
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 Assignee: @malb
@@ -95,15 +94,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/2151
 
 ---
 
-archive/issue_comments_014114.json:
+archive/issue_comments_014083.json:
 ```json
 {
     "body": "Addendum: The workaround does not solve all problems.\n\nFirst session:\n\n```\nsage: R=PolynomialRing(QQ,'x0,y0,z0')\nsage: Rel=R.ideal('z0**2-1','x0*y0-1')\nsage: QR=R.quotient_ring(Rel)\nsage: QR('x0*y0')\n1\nsage: save(Rel,'Relation.sobj')\nsage: quit \n```\n\nSecond session:\n\n```\nsage: Rel=load('Relation.sobj')\nsage: R=Rel.ring()\nsage: R._singular_()\n\n//   characteristic : 0\n//   number of vars : 3\n//        block   1 : ordering dp\n//                  : names    x0 y0 z0\n//        block   2 : ordering C\nsage: QR=R.quotient_ring(Rel)\nsage: QR('x0*y0')\nx0bar*y0bar\n```\n\n\nBut the result should be 1, as in the first session!",
     "created_at": "2008-02-13T21:26:52Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14114",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14083",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -145,15 +144,15 @@ But the result should be 1, as in the first session!
 
 ---
 
-archive/issue_comments_014115.json:
+archive/issue_comments_014084.json:
 ```json
 {
     "body": "I don't know who did it, but it seems that the problem is solved! \n\nI tried the above failing examples with 3.1.alpha0, and it all worked fine.\n\nThank you very much!",
     "created_at": "2008-08-14T11:38:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14115",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14084",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -167,15 +166,15 @@ Thank you very much!
 
 ---
 
-archive/issue_comments_014116.json:
+archive/issue_comments_014085.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2008-08-14T11:38:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14116",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14085",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -185,15 +184,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014117.json:
+archive/issue_comments_014086.json:
 ```json
 {
     "body": "Simon,\n\nwe do not just close tickets. Please add a patch adding a doctest that verifies that this functionality is fixed.\n\nCheers,\n\nMichael",
     "created_at": "2008-08-14T14:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14117",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14086",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -209,15 +208,15 @@ Michael
 
 ---
 
-archive/issue_comments_014118.json:
+archive/issue_comments_014087.json:
 ```json
 {
     "body": "Changing status from closed to reopened.",
     "created_at": "2008-08-14T14:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14118",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14087",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -227,15 +226,15 @@ Changing status from closed to reopened.
 
 ---
 
-archive/issue_comments_014119.json:
+archive/issue_comments_014088.json:
 ```json
 {
     "body": "Resolution changed from fixed to ",
     "created_at": "2008-08-14T14:25:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14119",
-    "user": "mabshoff"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14088",
+    "user": "https://trac.sagemath.org/admin/accounts/users/mabshoff"
 }
 ```
 
@@ -245,15 +244,15 @@ Resolution changed from fixed to
 
 ---
 
-archive/issue_comments_014120.json:
+archive/issue_comments_014089.json:
 ```json
 {
     "body": "I don't see how this can be doctested, since it requires two Sage sessions.",
     "created_at": "2008-08-18T12:14:24Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14120",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14089",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -263,15 +262,15 @@ I don't see how this can be doctested, since it requires two Sage sessions.
 
 ---
 
-archive/issue_comments_014121.json:
+archive/issue_comments_014090.json:
 ```json
 {
     "body": "Replying to [comment:4 malb]:\n> I don't see how this can be doctested, since it requires two Sage sessions.\n\nIt is about pickling/unpickling, hence it should be testable with loads(dumps(...)). I'll see if I succeed in finding a test. \n\nAnd sorry for closing the ticket. A question: Is it possible to modify the trac system such that *only* administrators are able to close a ticket? This would have prevented me from a couple of errors.",
     "created_at": "2008-08-18T13:12:23Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14121",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14090",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -286,15 +285,15 @@ And sorry for closing the ticket. A question: Is it possible to modify the trac 
 
 ---
 
-archive/issue_comments_014122.json:
+archive/issue_comments_014091.json:
 ```json
 {
     "body": "Replying to [comment:5 SimonKing]:\n> Replying to [comment:4 malb]:\n> > I don't see how this can be doctested, since it requires two Sage sessions.\n> \n> It is about pickling/unpickling, hence it should be testable with loads(dumps(...)). I'll see if I succeed in finding a test. \n\nI thought the issue was only present if the dump is unpickled from a different session, nevermind then & know yourself out writing doctests :-)\n\n> And sorry for closing the ticket. A question: Is it possible to modify the trac system such that *only* administrators are able to close a ticket? This would have prevented me from a couple of errors.\n\nAFAIK no, there is repeated talk about a new Trac version which matches our process better, but nothing solid has emerged.",
     "created_at": "2008-08-18T13:36:59Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14122",
-    "user": "@malb"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14091",
+    "user": "https://github.com/malb"
 }
 ```
 
@@ -314,15 +313,15 @@ AFAIK no, there is repeated talk about a new Trac version which matches our proc
 
 ---
 
-archive/issue_comments_014123.json:
+archive/issue_comments_014092.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2010-07-05T11:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14123",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14092",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 
@@ -332,15 +331,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_014124.json:
+archive/issue_comments_014093.json:
 ```json
 {
     "body": "Replying to [comment:2 SimonKing]:\n> I don't know who did it, but it seems that the problem is solved! \n> \n> I tried the above failing examples with 3.1.alpha0, and it all worked fine.\n\nI tried again, with sage 4.4.3, and it still works. So, can please someone finally close this ticket? I hope I am at least entitled to resolve it as \"fixed\".",
     "created_at": "2010-07-05T11:45:05Z",
     "issue": "https://github.com/sagemath/sagetest/issues/2151",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14124",
-    "user": "@simon-king-jena"
+    "url": "https://github.com/sagemath/sagetest/issues/2151#issuecomment-14093",
+    "user": "https://github.com/simon-king-jena"
 }
 ```
 

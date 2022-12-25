@@ -6,15 +6,14 @@ archive/issues_004518.json:
     "body": "Assignee: mabshoff\n\nModify the execute_list_of_commands function in setup.py so that it prints somehow the percent of them that have been completed so far every once in a while.  Nothing too complicated.\n\nIssue created by migration from https://trac.sagemath.org/ticket/4518\n\n",
     "created_at": "2008-11-14T00:33:35Z",
     "labels": [
-        "build",
-        "minor",
-        "enhancement"
+        "component: build",
+        "minor"
     ],
     "milestone": "https://github.com/sagemath/sagetest/milestones/sage-6.8",
     "title": "progress indicator for \"sage -br\"",
     "type": "issue",
     "url": "https://github.com/sagemath/sagetest/issues/4518",
-    "user": "@williamstein"
+    "user": "https://github.com/williamstein"
 }
 ```
 Assignee: mabshoff
@@ -29,15 +28,15 @@ Issue created by migration from https://trac.sagemath.org/ticket/4518
 
 ---
 
-archive/issue_comments_033529.json:
+archive/issue_comments_033464.json:
 ```json
 {
     "body": "Changing status from new to assigned.",
     "created_at": "2008-11-14T00:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33529",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33464",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -47,15 +46,15 @@ Changing status from new to assigned.
 
 ---
 
-archive/issue_comments_033530.json:
+archive/issue_comments_033465.json:
 ```json
 {
     "body": "Changing assignee from mabshoff to @craigcitro.",
     "created_at": "2008-11-14T00:35:06Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33530",
-    "user": "@craigcitro"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33465",
+    "user": "https://github.com/craigcitro"
 }
 ```
 
@@ -65,15 +64,15 @@ Changing assignee from mabshoff to @craigcitro.
 
 ---
 
-archive/issue_comments_033531.json:
+archive/issue_comments_033466.json:
 ```json
 {
     "body": "Changing status from new to needs_review.",
     "created_at": "2015-04-26T08:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33531",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33466",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -83,15 +82,15 @@ Changing status from new to needs_review.
 
 ---
 
-archive/issue_comments_033532.json:
+archive/issue_comments_033467.json:
 ```json
 {
     "body": "New commits:",
     "created_at": "2015-04-26T08:12:20Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33532",
-    "user": "@jdemeyer"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33467",
+    "user": "https://github.com/jdemeyer"
 }
 ```
 
@@ -101,15 +100,15 @@ New commits:
 
 ---
 
-archive/issue_comments_033533.json:
+archive/issue_comments_033468.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. New commits:",
     "created_at": "2015-04-28T07:03:03Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33533",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33468",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -119,15 +118,15 @@ Branch pushed to git repo; I updated commit sha1. New commits:
 
 ---
 
-archive/issue_comments_033534.json:
+archive/issue_comments_033469.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2015-05-23T11:21:48Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33534",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33469",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -137,15 +136,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_033535.json:
+archive/issue_comments_033470.json:
 ```json
 {
     "body": "Branch pushed to git repo; I updated commit sha1. This was a forced push. New commits:",
     "created_at": "2015-05-29T20:08:26Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33535",
-    "user": "git"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33470",
+    "user": "https://trac.sagemath.org/admin/accounts/users/git"
 }
 ```
 
@@ -155,15 +154,15 @@ Branch pushed to git repo; I updated commit sha1. This was a forced push. New co
 
 ---
 
-archive/issue_comments_033536.json:
+archive/issue_comments_033471.json:
 ```json
 {
     "body": "Finally! :D",
     "created_at": "2015-05-30T21:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33536",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33471",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -173,15 +172,15 @@ Finally! :D
 
 ---
 
-archive/issue_comments_033537.json:
+archive/issue_comments_033472.json:
 ```json
 {
     "body": "Changing status from needs_review to positive_review.",
     "created_at": "2015-05-30T21:45:32Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33537",
-    "user": "@tscrim"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33472",
+    "user": "https://github.com/tscrim"
 }
 ```
 
@@ -191,15 +190,15 @@ Changing status from needs_review to positive_review.
 
 ---
 
-archive/issue_comments_033538.json:
+archive/issue_comments_033473.json:
 ```json
 {
     "body": "Resolution: fixed",
     "created_at": "2015-06-02T22:09:10Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33538",
-    "user": "@vbraun"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33473",
+    "user": "https://github.com/vbraun"
 }
 ```
 
@@ -209,15 +208,15 @@ Resolution: fixed
 
 ---
 
-archive/issue_comments_033539.json:
+archive/issue_comments_033474.json:
 ```json
 {
     "body": "Wow `O_o`\n\nI don't know what this looks like in pracice, but it sounds *COOL* `O_O`",
     "created_at": "2015-06-03T07:27:08Z",
     "issue": "https://github.com/sagemath/sagetest/issues/4518",
     "type": "issue_comment",
-    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33539",
-    "user": "@nathanncohen"
+    "url": "https://github.com/sagemath/sagetest/issues/4518#issuecomment-33474",
+    "user": "https://github.com/nathanncohen"
 }
 ```
 
